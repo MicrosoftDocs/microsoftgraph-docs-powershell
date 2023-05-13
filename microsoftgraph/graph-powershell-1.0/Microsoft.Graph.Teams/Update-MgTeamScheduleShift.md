@@ -1,14 +1,16 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/update-mgteamscheduleshift
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamscheduleshift
 schema: 2.0.0
 ---
 
 # Update-MgTeamScheduleShift
 
 ## SYNOPSIS
-Update the navigation property shifts in teams
+Replace an existing shift.
+If the specified shift doesn't exist, this method returns `404 Not found`.
+The duration of a shift cannot be less than 1 minute or longer than 24 hours.
 
 ## SYNTAX
 
@@ -16,36 +18,38 @@ Update the navigation property shifts in teams
 ```
 Update-MgTeamScheduleShift -ShiftId <String> -TeamId <String> [-AdditionalProperties <Hashtable>]
  [-DraftShift <IMicrosoftGraphShiftItem>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-SchedulingGroupId <String>] [-SharedShift <IMicrosoftGraphShiftItem>] [-UserId <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SchedulingGroupId <String>] [-SharedShift <IMicrosoftGraphShiftItem>] [-UserId <String>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgTeamScheduleShift -ShiftId <String> -TeamId <String> -BodyParameter <IMicrosoftGraphShift> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgTeamScheduleShift -ShiftId <String> -TeamId <String> -BodyParameter <IMicrosoftGraphShift> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgTeamScheduleShift -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
  [-DraftShift <IMicrosoftGraphShiftItem>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-SchedulingGroupId <String>] [-SharedShift <IMicrosoftGraphShiftItem>] [-UserId <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SchedulingGroupId <String>] [-SharedShift <IMicrosoftGraphShiftItem>] [-UserId <String>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgTeamScheduleShift -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphShift> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgTeamScheduleShift -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphShift> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property shifts in teams
+Replace an existing shift.
+If the specified shift doesn't exist, this method returns `404 Not found`.
+The duration of a shift cannot be less than 1 minute or longer than 24 hours.
 
 ## EXAMPLES
 
-### Example 1: Using the Update-MgTeamScheduleShift Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
 $params = @{
@@ -99,9 +103,6 @@ $params = @{
 Update-MgTeamScheduleShift -TeamId $teamId -ShiftId $shiftId -BodyParameter $params
 ```
 
-This example shows how to use the Update-MgTeamScheduleShift Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -121,7 +122,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 shift
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphShift
@@ -137,7 +138,7 @@ Accept wildcard characters: False
 
 ### -DraftShift
 shiftItem
-To construct, please use Get-Help -Online and see NOTES section for DRAFTSHIFT properties and create a hash table.
+To construct, see NOTES section for DRAFTSHIFT properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphShiftItem
@@ -169,7 +170,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ITeamsIdentity
@@ -185,26 +186,11 @@ Accept wildcard characters: False
 
 ### -LastModifiedBy
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBY properties and create a hash table.
+To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -232,7 +218,7 @@ Accept wildcard characters: False
 
 ### -SharedShift
 shiftItem
-To construct, please use Get-Help -Online and see NOTES section for SHAREDSHIFT properties and create a hash table.
+To construct, see NOTES section for SHAREDSHIFT properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphShiftItem
@@ -332,7 +318,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphShift
 ## NOTES
 
 ALIASES
@@ -342,7 +328,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphShift>`: shift
+`BODYPARAMETER <IMicrosoftGraphShift>`: shift
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -371,7 +357,7 @@ BODYPARAMETER `<IMicrosoftGraphShift>`: shift
   - `[SharedShift <IMicrosoftGraphShiftItem>]`: shiftItem
   - `[UserId <String>]`: ID of the user assigned to the shift. Required.
 
-DRAFTSHIFT `<IMicrosoftGraphShiftItem>`: shiftItem
+`DRAFTSHIFT <IMicrosoftGraphShiftItem>`: shiftItem
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[EndDateTime <DateTime?>]`: 
   - `[StartDateTime <DateTime?>]`: 
@@ -386,7 +372,7 @@ DRAFTSHIFT `<IMicrosoftGraphShiftItem>`: shiftItem
   - `[DisplayName <String>]`: The shift label of the shiftItem.
   - `[Notes <String>]`: The shift notes for the shiftItem.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat
@@ -400,24 +386,18 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[OpenShiftChangeRequestId <String>]`: The unique identifier of openShiftChangeRequest
   - `[OpenShiftId <String>]`: The unique identifier of openShift
   - `[PinnedChatMessageInfoId <String>]`: The unique identifier of pinnedChatMessageInfo
-  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SchedulingGroupId <String>]`: The unique identifier of schedulingGroup
   - `[SharedWithChannelTeamInfoId <String>]`: The unique identifier of sharedWithChannelTeamInfo
   - `[ShiftId <String>]`: The unique identifier of shift
   - `[SwapShiftsChangeRequestId <String>]`: The unique identifier of swapShiftsChangeRequest
   - `[TeamId <String>]`: The unique identifier of team
-  - `[TeamTemplateDefinitionId <String>]`: The unique identifier of teamTemplateDefinition
-  - `[TeamTemplateId <String>]`: The unique identifier of teamTemplate
   - `[TeamsAppDefinitionId <String>]`: The unique identifier of teamsAppDefinition
   - `[TeamsAppId <String>]`: The unique identifier of teamsApp
   - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
   - `[TeamsAsyncOperationId <String>]`: The unique identifier of teamsAsyncOperation
   - `[TeamsTabId <String>]`: The unique identifier of teamsTab
-  - `[TeamworkDeviceId <String>]`: The unique identifier of teamworkDevice
-  - `[TeamworkDeviceOperationId <String>]`: The unique identifier of teamworkDeviceOperation
   - `[TeamworkTagId <String>]`: The unique identifier of teamworkTag
   - `[TeamworkTagMemberId <String>]`: The unique identifier of teamworkTagMember
-  - `[TimeCardId <String>]`: The unique identifier of timeCard
   - `[TimeOffId <String>]`: The unique identifier of timeOff
   - `[TimeOffReasonId <String>]`: The unique identifier of timeOffReason
   - `[TimeOffRequestId <String>]`: The unique identifier of timeOffRequest
@@ -425,7 +405,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+`LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -434,7 +414,7 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-SHAREDSHIFT `<IMicrosoftGraphShiftItem>`: shiftItem
+`SHAREDSHIFT <IMicrosoftGraphShiftItem>`: shiftItem
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[EndDateTime <DateTime?>]`: 
   - `[StartDateTime <DateTime?>]`: 

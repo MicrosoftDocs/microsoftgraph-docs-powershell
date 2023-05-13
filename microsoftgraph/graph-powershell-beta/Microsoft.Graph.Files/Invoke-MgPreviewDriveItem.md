@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Files-help.xml
-Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/invoke-mgpreviewdriveitem
+﻿---
+external help file: Microsoft.Graph.Beta.Files-help.xml
+Module Name: Microsoft.Graph.Beta.Files
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetapreviewdriveitem
 schema: 2.0.0
 ---
 
-# Invoke-MgPreviewDriveItem
+# Invoke-MgBetaPreviewDriveItem
 
 ## SYNOPSIS
 Invoke action preview
@@ -14,27 +14,27 @@ Invoke action preview
 
 ### PreviewExpanded (Default)
 ```
-Invoke-MgPreviewDriveItem -DriveId <String> -DriveItemId <String> [-AdditionalProperties <Hashtable>]
+Invoke-MgBetaPreviewDriveItem -DriveId <String> -DriveItemId <String> [-AdditionalProperties <Hashtable>]
  [-AllowEdit] [-Chromeless] [-Page <String>] [-Viewer <String>] [-Zoom <Double>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Preview
 ```
-Invoke-MgPreviewDriveItem -DriveId <String> -DriveItemId <String>
+Invoke-MgBetaPreviewDriveItem -DriveId <String> -DriveItemId <String>
  -BodyParameter <IPathsGw56D1DrivesDriveIdItemsDriveitemIdMicrosoftGraphPreviewPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### PreviewViaIdentityExpanded
 ```
-Invoke-MgPreviewDriveItem -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>] [-AllowEdit]
+Invoke-MgBetaPreviewDriveItem -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>] [-AllowEdit]
  [-Chromeless] [-Page <String>] [-Viewer <String>] [-Zoom <Double>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### PreviewViaIdentity
 ```
-Invoke-MgPreviewDriveItem -InputObject <IFilesIdentity>
+Invoke-MgBetaPreviewDriveItem -InputObject <IFilesIdentity>
  -BodyParameter <IPathsGw56D1DrivesDriveIdItemsDriveitemIdMicrosoftGraphPreviewPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -43,6 +43,20 @@ Invoke-MgPreviewDriveItem -InputObject <IFilesIdentity>
 Invoke action preview
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -78,7 +92,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPathsGw56D1DrivesDriveIdItemsDriveitemIdMicrosoftGraphPreviewPostRequestbodyContentApplicationJsonSchema
@@ -139,7 +153,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IFilesIdentity
@@ -234,11 +248,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-### Microsoft.Graph.PowerShell.Models.IPathsGw56D1DrivesDriveIdItemsDriveitemIdMicrosoftGraphPreviewPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsGw56D1DrivesDriveIdItemsDriveitemIdMicrosoftGraphPreviewPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemPreviewInfo
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItemPreviewInfo
 ## NOTES
 
 ALIASES
@@ -248,7 +262,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsGw56D1DrivesDriveIdItemsDriveitemIdMicrosoftGraphPreviewPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsGw56D1DrivesDriveIdItemsDriveitemIdMicrosoftGraphPreviewPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowEdit <Boolean?>]`: 
   - `[Chromeless <Boolean?>]`: 
@@ -256,7 +270,7 @@ BODYPARAMETER `<IPathsGw56D1DrivesDriveIdItemsDriveitemIdMicrosoftGraphPreviewPo
   - `[Viewer <String>]`: 
   - `[Zoom <Double?>]`: 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+`INPUTOBJECT <IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType

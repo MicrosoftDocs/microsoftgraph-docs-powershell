@@ -1,62 +1,52 @@
----
-external help file: Microsoft.Graph.Groups-help.xml
-Module Name: Microsoft.Graph.Groups
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/get-mggroupendpoint
+﻿---
+external help file: Microsoft.Graph.Beta.Groups-help.xml
+Module Name: Microsoft.Graph.Beta.Groups
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupendpoint
 schema: 2.0.0
 ---
 
-# Get-MgGroupEndpoint
+# Get-MgBetaGroupEndpoint
 
 ## SYNOPSIS
-Endpoints for the group.
-Read-only.
-Nullable.
+Retrieve the properties and relationships of a specific endpoint object.
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgGroupEndpoint -GroupId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [<CommonParameters>]
+Get-MgBetaGroupEndpoint -GroupId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
+ [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgGroupEndpoint -EndpointId <String> -GroupId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
+Get-MgBetaGroupEndpoint -EndpointId <String> -GroupId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgGroupEndpoint -InputObject <IGroupsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaGroupEndpoint -InputObject <IGroupsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Endpoints for the group.
-Read-only.
-Nullable.
+Retrieve the properties and relationships of a specific endpoint object.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgGroupEndpoint Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Groups
-Get-MgGroupEndpoint -GroupId $groupId -EndpointId $endpointId
+Import-Module Microsoft.Graph.Beta.Groups
+Get-MgBetaGroupEndpoint -GroupId $groupId -EndpointId $endpointId
 ```
 
-This example shows how to use the Get-MgGroupEndpoint Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Get-MgGroupEndpoint Cmdlet
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Groups
-Get-MgGroupEndpoint -GroupId $groupId
+Import-Module Microsoft.Graph.Beta.Groups
+Get-MgBetaGroupEndpoint -GroupId $groupId
 ```
-
-This example shows how to use the Get-MgGroupEndpoint Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -153,7 +143,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IGroupsIdentity
@@ -262,10 +252,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEndpoint
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEndpoint
 ## NOTES
 
 ALIASES
@@ -275,7 +265,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+`INPUTOBJECT <IGroupsIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[ConversationId <String>]`: The unique identifier of conversation
@@ -297,11 +287,9 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
   - `[Interval <String>]`: Usage: interval='{interval}'
   - `[ListId <String>]`: The unique identifier of list
-  - `[ListId1 <String>]`: Usage: listId='{listId}'
   - `[ListItemId <String>]`: The unique identifier of listItem
   - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
   - `[MentionId <String>]`: The unique identifier of mention
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
   - `[NotebookId <String>]`: The unique identifier of notebook
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
@@ -314,7 +302,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[Q <String>]`: Usage: q='{q}'
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
   - `[SiteId <String>]`: The unique identifier of site
   - `[SitePageId <String>]`: The unique identifier of sitePage
   - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'

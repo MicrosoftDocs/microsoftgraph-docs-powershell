@@ -1,53 +1,53 @@
----
-external help file: Microsoft.Graph.Users-help.xml
-Module Name: Microsoft.Graph.Users
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/update-mgusertodolisttasklinkedresource
+﻿---
+external help file: Microsoft.Graph.Beta.Users-help.xml
+Module Name: Microsoft.Graph.Beta.Users
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausertodolisttasklinkedresource
 schema: 2.0.0
 ---
 
-# Update-MgUserTodoListTaskLinkedResource
+# Update-MgBetaUserTodoListTaskLinkedResource
 
 ## SYNOPSIS
-Update the navigation property linkedResources in users
+Update the properties of a linkedResource object.
 
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
-Update-MgUserTodoListTaskLinkedResource -LinkedResourceId <String> -TodoTaskId <String>
+Update-MgBetaUserTodoListTaskLinkedResource -LinkedResourceId <String> -TodoTaskId <String>
  -TodoTaskListId <String> -UserId <String> [-AdditionalProperties <Hashtable>] [-ApplicationName <String>]
- [-DisplayName <String>] [-ExternalId <String>] [-Id <String>] [-WebUrl <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-DisplayName <String>] [-ExternalId <String>] [-Id <String>] [-WebUrl <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgUserTodoListTaskLinkedResource -LinkedResourceId <String> -TodoTaskId <String>
- -TodoTaskListId <String> -UserId <String> -BodyParameter <IMicrosoftGraphLinkedResource> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgBetaUserTodoListTaskLinkedResource -LinkedResourceId <String> -TodoTaskId <String>
+ -TodoTaskListId <String> -UserId <String> -BodyParameter <IMicrosoftGraphLinkedResource> [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgUserTodoListTaskLinkedResource -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>]
+Update-MgBetaUserTodoListTaskLinkedResource -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>]
  [-ApplicationName <String>] [-DisplayName <String>] [-ExternalId <String>] [-Id <String>] [-WebUrl <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgUserTodoListTaskLinkedResource -InputObject <IUsersIdentity>
- -BodyParameter <IMicrosoftGraphLinkedResource> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaUserTodoListTaskLinkedResource -InputObject <IUsersIdentity>
+ -BodyParameter <IMicrosoftGraphLinkedResource> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property linkedResources in users
+Update the properties of a linkedResource object.
 
 ## EXAMPLES
 
-### Example 1: Using the Update-MgUserTodoListTaskLinkedResource Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Users
+Import-Module Microsoft.Graph.Beta.Users
 $params = @{
 	"@odata.type" = "#microsoft.graph.linkedResource"
 	WebUrl = "http://microsoft.com"
@@ -55,11 +55,8 @@ $params = @{
 	DisplayName = "Microsoft"
 }
 # A UPN can also be used as -UserId.
-Update-MgUserTodoListTaskLinkedResource -UserId $userId -TodoTaskListId $todoTaskListId -TodoTaskId $todoTaskId -LinkedResourceId $linkedResourceId -BodyParameter $params
+Update-MgBetaUserTodoListTaskLinkedResource -UserId $userId -TodoTaskListId $todoTaskListId -TodoTaskId $todoTaskId -LinkedResourceId $linkedResourceId -BodyParameter $params
 ```
-
-This example shows how to use the Update-MgUserTodoListTaskLinkedResource Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -95,7 +92,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 linkedResource
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphLinkedResource
@@ -140,7 +137,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -157,7 +154,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersIdentity
@@ -180,21 +177,6 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -297,11 +279,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphLinkedResource
-### Microsoft.Graph.PowerShell.Models.IUsersIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphLinkedResource
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersIdentity
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphLinkedResource
 ## NOTES
 
 ALIASES
@@ -311,15 +293,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphLinkedResource>`: linkedResource
+`BODYPARAMETER <IMicrosoftGraphLinkedResource>`: linkedResource
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ApplicationName <String>]`: The app name of the source that sends the linkedResource.
   - `[DisplayName <String>]`: The title of the linkedResource.
   - `[ExternalId <String>]`: ID of the object that is associated with this task on the third-party/partner system.
   - `[WebUrl <String>]`: Deep link to the linkedResource.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersIdentity>`: Identity Parameter
   - `[AttachmentBaseId <String>]`: The unique identifier of attachmentBase
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[AttachmentSessionId <String>]`: The unique identifier of attachmentSession
@@ -328,7 +310,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
   - `[LinkedResourceId <String>]`: The unique identifier of linkedResource
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
   - `[NotificationId <String>]`: The unique identifier of notification
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[OutlookCategoryId <String>]`: The unique identifier of outlookCategory
@@ -336,7 +317,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
   - `[TodoTaskId <String>]`: The unique identifier of todoTask
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
   - `[UserId <String>]`: The unique identifier of user

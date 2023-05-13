@@ -1,58 +1,52 @@
----
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/get-mgsecuritytiindicator
+﻿---
+external help file: Microsoft.Graph.Beta.Security-help.xml
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritytiindicator
 schema: 2.0.0
 ---
 
-# Get-MgSecurityTiIndicator
+# Get-MgBetaSecurityTiIndicator
 
 ## SYNOPSIS
-Get tiIndicators from security
+Retrieve the properties and relationships of a tiIndicator object.
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgSecurityTiIndicator [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
+Get-MgBetaSecurityTiIndicator [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
  [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgSecurityTiIndicator -TiIndicatorId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaSecurityTiIndicator -TiIndicatorId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgSecurityTiIndicator -InputObject <ISecurityIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
+Get-MgBetaSecurityTiIndicator -InputObject <ISecurityIdentity> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get tiIndicators from security
+Retrieve the properties and relationships of a tiIndicator object.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgSecurityTiIndicator Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Security
-Get-MgSecurityTiIndicator -TiIndicatorId $tiIndicatorId
+Import-Module Microsoft.Graph.Beta.Security
+Get-MgBetaSecurityTiIndicator -TiIndicatorId $tiIndicatorId
 ```
 
-This example shows how to use the Get-MgSecurityTiIndicator Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Get-MgSecurityTiIndicator Cmdlet
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Security
-Get-MgSecurityTiIndicator
+Import-Module Microsoft.Graph.Beta.Security
+Get-MgBetaSecurityTiIndicator
 ```
-
-This example shows how to use the Get-MgSecurityTiIndicator Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -119,7 +113,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ISecurityIdentity
@@ -243,10 +237,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTiIndicator
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTiIndicator
 ## NOTES
 
 ALIASES
@@ -256,7 +250,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+`INPUTOBJECT <ISecurityIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
   - `[ArticleId <String>]`: The unique identifier of article
   - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator

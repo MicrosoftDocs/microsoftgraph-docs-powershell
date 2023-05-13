@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mginformationprotection
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetainformationprotection
 schema: 2.0.0
 ---
 
-# Get-MgInformationProtection
+# Get-MgBetaInformationProtection
 
 ## SYNOPSIS
 Get informationProtection
@@ -13,13 +13,27 @@ Get informationProtection
 ## SYNTAX
 
 ```
-Get-MgInformationProtection [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaInformationProtection [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get informationProtection
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -60,7 +74,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInformationProtection1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInformationProtection
 ## NOTES
 
 ALIASES

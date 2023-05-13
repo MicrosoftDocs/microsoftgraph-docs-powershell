@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgdevicemanagementdeviceconfigurationassignedaccessmultimodeprofile
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetadevicemanagementdeviceconfigurationassignedaccessmultimodeprofile
 schema: 2.0.0
 ---
 
-# Invoke-MgDeviceManagementDeviceConfigurationAssignedAccessMultiModeProfile
+# Invoke-MgBetaDeviceManagementDeviceConfigurationAssignedAccessMultiModeProfile
 
 ## SYNOPSIS
 Invoke action assignedAccessMultiModeProfiles
@@ -14,7 +14,7 @@ Invoke action assignedAccessMultiModeProfiles
 
 ### AccessExpanded (Default)
 ```
-Invoke-MgDeviceManagementDeviceConfigurationAssignedAccessMultiModeProfile -DeviceConfigurationId <String>
+Invoke-MgBetaDeviceManagementDeviceConfigurationAssignedAccessMultiModeProfile -DeviceConfigurationId <String>
  [-AdditionalProperties <Hashtable>]
  [-AssignedAccessMultiModeProfiles <IMicrosoftGraphWindowsAssignedAccessProfile[]>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -22,14 +22,14 @@ Invoke-MgDeviceManagementDeviceConfigurationAssignedAccessMultiModeProfile -Devi
 
 ### Access
 ```
-Invoke-MgDeviceManagementDeviceConfigurationAssignedAccessMultiModeProfile -DeviceConfigurationId <String>
+Invoke-MgBetaDeviceManagementDeviceConfigurationAssignedAccessMultiModeProfile -DeviceConfigurationId <String>
  -BodyParameter <IPathsJifkymDevicemanagementDeviceconfigurationsDeviceconfigurationIdMicrosoftGraphAssignedaccessmultimodeprofilesPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### AccessViaIdentityExpanded
 ```
-Invoke-MgDeviceManagementDeviceConfigurationAssignedAccessMultiModeProfile
+Invoke-MgBetaDeviceManagementDeviceConfigurationAssignedAccessMultiModeProfile
  -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>]
  [-AssignedAccessMultiModeProfiles <IMicrosoftGraphWindowsAssignedAccessProfile[]>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -37,7 +37,7 @@ Invoke-MgDeviceManagementDeviceConfigurationAssignedAccessMultiModeProfile
 
 ### AccessViaIdentity
 ```
-Invoke-MgDeviceManagementDeviceConfigurationAssignedAccessMultiModeProfile
+Invoke-MgBetaDeviceManagementDeviceConfigurationAssignedAccessMultiModeProfile
  -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPathsJifkymDevicemanagementDeviceconfigurationsDeviceconfigurationIdMicrosoftGraphAssignedaccessmultimodeprofilesPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -47,6 +47,20 @@ Invoke-MgDeviceManagementDeviceConfigurationAssignedAccessMultiModeProfile
 Invoke action assignedAccessMultiModeProfiles
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -67,7 +81,7 @@ Accept wildcard characters: False
 
 ### -AssignedAccessMultiModeProfiles
 .
-To construct, please use Get-Help -Online and see NOTES section for ASSIGNEDACCESSMULTIMODEPROFILES properties and create a hash table.
+To construct, see NOTES section for ASSIGNEDACCESSMULTIMODEPROFILES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphWindowsAssignedAccessProfile[]
@@ -83,7 +97,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPathsJifkymDevicemanagementDeviceconfigurationsDeviceconfigurationIdMicrosoftGraphAssignedaccessmultimodeprofilesPostRequestbodyContentApplicationJsonSchema
@@ -114,7 +128,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementActionsIdentity
@@ -179,8 +193,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-### Microsoft.Graph.PowerShell.Models.IPathsJifkymDevicemanagementDeviceconfigurationsDeviceconfigurationIdMicrosoftGraphAssignedaccessmultimodeprofilesPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsJifkymDevicemanagementDeviceconfigurationsDeviceconfigurationIdMicrosoftGraphAssignedaccessmultimodeprofilesPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### System.Boolean
@@ -193,8 +207,8 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ASSIGNEDACCESSMULTIMODEPROFILES <IMicrosoftGraphWindowsAssignedAccessProfile\[]>: .
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`ASSIGNEDACCESSMULTIMODEPROFILES <IMicrosoftGraphWindowsAssignedAccessProfile[]>`: .
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AppUserModelIds <String[]>]`: These are the only Windows Store Apps that will be available to launch from the Start menu.
   - `[DesktopAppPaths <String[]>]`: These are the paths of the Desktop Apps that will be available on the Start menu and the only apps the user will be able to launch.
   - `[ProfileName <String>]`: This is a friendly name used to identify a group of applications, the layout of these apps on the start menu and the users to whom this kiosk configuration is assigned.
@@ -202,10 +216,10 @@ ASSIGNEDACCESSMULTIMODEPROFILES <IMicrosoftGraphWindowsAssignedAccessProfile\[]>
   - `[StartMenuLayoutXml <Byte[]>]`: Allows admins to override the default Start layout and prevents the user from changing it. The layout is modified by specifying an XML file based on a layout modification schema. XML needs to be in Binary format.
   - `[UserAccounts <String[]>]`: The user accounts that will be locked to this kiosk configuration.
 
-BODYPARAMETER `<IPathsJifkymDevicemanagementDeviceconfigurationsDeviceconfigurationIdMicrosoftGraphAssignedaccessmultimodeprofilesPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsJifkymDevicemanagementDeviceconfigurationsDeviceconfigurationIdMicrosoftGraphAssignedaccessmultimodeprofilesPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AssignedAccessMultiModeProfiles <IMicrosoftGraphWindowsAssignedAccessProfile[]>]`: 
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[AppUserModelIds <String[]>]`: These are the only Windows Store Apps that will be available to launch from the Start menu.
     - `[DesktopAppPaths <String[]>]`: These are the paths of the Desktop Apps that will be available on the Start menu and the only apps the user will be able to launch.
     - `[ProfileName <String>]`: This is a friendly name used to identify a group of applications, the layout of these apps on the start menu and the users to whom this kiosk configuration is assigned.
@@ -213,7 +227,7 @@ BODYPARAMETER `<IPathsJifkymDevicemanagementDeviceconfigurationsDeviceconfigurat
     - `[StartMenuLayoutXml <Byte[]>]`: Allows admins to override the default Start layout and prevents the user from changing it. The layout is modified by specifying an XML file based on a layout modification schema. XML needs to be in Binary format.
     - `[UserAccounts <String[]>]`: The user accounts that will be locked to this kiosk configuration.
 
-INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[AlertRecordId <String>]`: The unique identifier of alertRecord
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: The unique identifier of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: The unique identifier of androidForWorkEnrollmentProfile
@@ -257,7 +271,6 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[MicrosoftTunnelSiteId <String>]`: The unique identifier of microsoftTunnelSite
   - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
   - `[NotificationMessageTemplateId <String>]`: The unique identifier of notificationMessageTemplate
-  - `[OemWarrantyInformationOnboardingId <String>]`: The unique identifier of oemWarrantyInformationOnboarding
   - `[RemoteAssistancePartnerId <String>]`: The unique identifier of remoteAssistancePartner
   - `[RoleScopeTagId <String>]`: The unique identifier of roleScopeTag
   - `[WindowsAutopilotDeploymentProfileId <String>]`: The unique identifier of windowsAutopilotDeploymentProfile

@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/resize-mgdevicemanagementmanageddevicecloudpc
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/resize-mgbetadevicemanagementmanageddevicecloudpc
 schema: 2.0.0
 ---
 
-# Resize-MgDeviceManagementManagedDeviceCloudPc
+# Resize-MgBetaDeviceManagementManagedDeviceCloudPc
 
 ## SYNOPSIS
 Upgrade or downgrade an existing Cloud PC to another configuration with a new virtual CPU (vCPU) and storage size.
@@ -14,27 +14,27 @@ Upgrade or downgrade an existing Cloud PC to another configuration with a new vi
 
 ### ResizeExpanded (Default)
 ```
-Resize-MgDeviceManagementManagedDeviceCloudPc -ManagedDeviceId <String> [-AdditionalProperties <Hashtable>]
+Resize-MgBetaDeviceManagementManagedDeviceCloudPc -ManagedDeviceId <String> [-AdditionalProperties <Hashtable>]
  [-TargetServicePlanId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Resize
 ```
-Resize-MgDeviceManagementManagedDeviceCloudPc -ManagedDeviceId <String>
+Resize-MgBetaDeviceManagementManagedDeviceCloudPc -ManagedDeviceId <String>
  -BodyParameter <IPaths1Xt2Z82DevicemanagementManageddevicesManageddeviceIdMicrosoftGraphResizecloudpcPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ResizeViaIdentityExpanded
 ```
-Resize-MgDeviceManagementManagedDeviceCloudPc -InputObject <IDeviceManagementActionsIdentity>
+Resize-MgBetaDeviceManagementManagedDeviceCloudPc -InputObject <IDeviceManagementActionsIdentity>
  [-AdditionalProperties <Hashtable>] [-TargetServicePlanId <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### ResizeViaIdentity
 ```
-Resize-MgDeviceManagementManagedDeviceCloudPc -InputObject <IDeviceManagementActionsIdentity>
+Resize-MgBetaDeviceManagementManagedDeviceCloudPc -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPaths1Xt2Z82DevicemanagementManageddevicesManageddeviceIdMicrosoftGraphResizecloudpcPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -44,17 +44,14 @@ Upgrade or downgrade an existing Cloud PC to another configuration with a new vi
 
 ## EXAMPLES
 
-### Example 1: Using the Resize-MgDeviceManagementManagedDeviceCloudPc Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.DeviceManagement.Actions
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
 $params = @{
 	TargetServicePlanId = "30d0e128-de93-41dc-89ec-33d84bb662a0"
 }
-Resize-MgDeviceManagementManagedDeviceCloudPc -ManagedDeviceId $managedDeviceId -BodyParameter $params
+Resize-MgBetaDeviceManagementManagedDeviceCloudPc -ManagedDeviceId $managedDeviceId -BodyParameter $params
 ```
-
-This example shows how to use the Resize-MgDeviceManagementManagedDeviceCloudPc Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -75,7 +72,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths1Xt2Z82DevicemanagementManageddevicesManageddeviceIdMicrosoftGraphResizecloudpcPostRequestbodyContentApplicationJsonSchema
@@ -91,7 +88,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementActionsIdentity
@@ -186,8 +183,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths1Xt2Z82DevicemanagementManageddevicesManageddeviceIdMicrosoftGraphResizecloudpcPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Xt2Z82DevicemanagementManageddevicesManageddeviceIdMicrosoftGraphResizecloudpcPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### System.Boolean
@@ -200,11 +197,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Xt2Z82DevicemanagementManageddevicesManageddeviceIdMicrosoftGraphResizecloudpcPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1Xt2Z82DevicemanagementManageddevicesManageddeviceIdMicrosoftGraphResizecloudpcPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[TargetServicePlanId <String>]`: 
 
-INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[AlertRecordId <String>]`: The unique identifier of alertRecord
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: The unique identifier of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: The unique identifier of androidForWorkEnrollmentProfile
@@ -248,7 +245,6 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[MicrosoftTunnelSiteId <String>]`: The unique identifier of microsoftTunnelSite
   - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
   - `[NotificationMessageTemplateId <String>]`: The unique identifier of notificationMessageTemplate
-  - `[OemWarrantyInformationOnboardingId <String>]`: The unique identifier of oemWarrantyInformationOnboarding
   - `[RemoteAssistancePartnerId <String>]`: The unique identifier of remoteAssistancePartner
   - `[RoleScopeTagId <String>]`: The unique identifier of roleScopeTag
   - `[WindowsAutopilotDeploymentProfileId <String>]`: The unique identifier of windowsAutopilotDeploymentProfile

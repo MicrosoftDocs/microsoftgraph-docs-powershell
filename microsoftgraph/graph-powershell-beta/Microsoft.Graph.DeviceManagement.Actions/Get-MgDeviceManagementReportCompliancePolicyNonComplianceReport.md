@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementreportcompliancepolicynoncompliancereport
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportcompliancepolicynoncompliancereport
 schema: 2.0.0
 ---
 
-# Get-MgDeviceManagementReportCompliancePolicyNonComplianceReport
+# Get-MgBetaDeviceManagementReportCompliancePolicyNonComplianceReport
 
 ## SYNOPSIS
 Invoke action getCompliancePolicyNonComplianceReport
@@ -14,7 +14,7 @@ Invoke action getCompliancePolicyNonComplianceReport
 
 ### GetExpanded (Default)
 ```
-Get-MgDeviceManagementReportCompliancePolicyNonComplianceReport -OutFile <String>
+Get-MgBetaDeviceManagementReportCompliancePolicyNonComplianceReport -OutFile <String>
  [-AdditionalProperties <Hashtable>] [-Filter <String>] [-GroupBy <String[]>] [-Name <String>]
  [-Property <String[]>] [-Search <String>] [-SessionId <String>] [-Skip <Int32>] [-Sort <String[]>]
  [-Top <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -22,8 +22,8 @@ Get-MgDeviceManagementReportCompliancePolicyNonComplianceReport -OutFile <String
 
 ### Get
 ```
-Get-MgDeviceManagementReportCompliancePolicyNonComplianceReport -OutFile <String>
- -BodyParameter <IPaths1Pvn7TwDevicemanagementReportsMicrosoftGraphGetcompliancepolicynoncompliancereportPostRequestbodyContentApplicationJsonSchema1>
+Get-MgBetaDeviceManagementReportCompliancePolicyNonComplianceReport -OutFile <String>
+ -BodyParameter <IPaths1Pvn7TwDevicemanagementReportsMicrosoftGraphGetcompliancepolicynoncompliancereportPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -31,6 +31,20 @@ Get-MgDeviceManagementReportCompliancePolicyNonComplianceReport -OutFile <String
 Invoke action getCompliancePolicyNonComplianceReport
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -51,10 +65,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Pvn7TwDevicemanagementReportsMicrosoftGraphGetcompliancepolicynoncompliancereportPostRequestbodyContentApplicationJsonSchema1
+Type: IPaths1Pvn7TwDevicemanagementReportsMicrosoftGraphGetcompliancepolicynoncompliancereportPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Get
 Aliases:
 
@@ -266,7 +280,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1Pvn7TwDevicemanagementReportsMicrosoftGraphGetcompliancepolicynoncompliancereportPostRequestbodyContentApplicationJsonSchema1
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Pvn7TwDevicemanagementReportsMicrosoftGraphGetcompliancepolicynoncompliancereportPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### System.Boolean
@@ -279,7 +293,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Pvn7TwDevicemanagementReportsMicrosoftGraphGetcompliancepolicynoncompliancereportPostRequestbodyContentApplicationJsonSchema1>`: .
+`BODYPARAMETER <IPaths1Pvn7TwDevicemanagementReportsMicrosoftGraphGetcompliancepolicynoncompliancereportPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Filter <String>]`: 
   - `[GroupBy <String[]>]`: 

@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mguploaddevicemanagementdeponboardingsettingdeptoken
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetauploaddevicemanagementdeponboardingsettingdeptoken
 schema: 2.0.0
 ---
 
-# Invoke-MgUploadDeviceManagementDepOnboardingSettingDepToken
+# Invoke-MgBetaUploadDeviceManagementDepOnboardingSettingDepToken
 
 ## SYNOPSIS
 Uploads a new Device Enrollment Program token
@@ -14,28 +14,28 @@ Uploads a new Device Enrollment Program token
 
 ### UploadExpanded (Default)
 ```
-Invoke-MgUploadDeviceManagementDepOnboardingSettingDepToken -DepOnboardingSettingId <String>
+Invoke-MgBetaUploadDeviceManagementDepOnboardingSettingDepToken -DepOnboardingSettingId <String>
  [-AdditionalProperties <Hashtable>] [-AppleId <String>] [-DepToken <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Upload
 ```
-Invoke-MgUploadDeviceManagementDepOnboardingSettingDepToken -DepOnboardingSettingId <String>
+Invoke-MgBetaUploadDeviceManagementDepOnboardingSettingDepToken -DepOnboardingSettingId <String>
  -BodyParameter <IPaths7Ytj24DevicemanagementDeponboardingsettingsDeponboardingsettingIdMicrosoftGraphUploaddeptokenPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UploadViaIdentityExpanded
 ```
-Invoke-MgUploadDeviceManagementDepOnboardingSettingDepToken -InputObject <IDeviceManagementActionsIdentity>
+Invoke-MgBetaUploadDeviceManagementDepOnboardingSettingDepToken -InputObject <IDeviceManagementActionsIdentity>
  [-AdditionalProperties <Hashtable>] [-AppleId <String>] [-DepToken <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### UploadViaIdentity
 ```
-Invoke-MgUploadDeviceManagementDepOnboardingSettingDepToken -InputObject <IDeviceManagementActionsIdentity>
+Invoke-MgBetaUploadDeviceManagementDepOnboardingSettingDepToken -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPaths7Ytj24DevicemanagementDeponboardingsettingsDeponboardingsettingIdMicrosoftGraphUploaddeptokenPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -44,6 +44,20 @@ Invoke-MgUploadDeviceManagementDepOnboardingSettingDepToken -InputObject <IDevic
 Uploads a new Device Enrollment Program token
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -79,7 +93,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths7Ytj24DevicemanagementDeponboardingsettingsDeponboardingsettingIdMicrosoftGraphUploaddeptokenPostRequestbodyContentApplicationJsonSchema
@@ -125,7 +139,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementActionsIdentity
@@ -190,8 +204,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths7Ytj24DevicemanagementDeponboardingsettingsDeponboardingsettingIdMicrosoftGraphUploaddeptokenPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths7Ytj24DevicemanagementDeponboardingsettingsDeponboardingsettingIdMicrosoftGraphUploaddeptokenPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### System.Boolean
@@ -204,12 +218,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths7Ytj24DevicemanagementDeponboardingsettingsDeponboardingsettingIdMicrosoftGraphUploaddeptokenPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths7Ytj24DevicemanagementDeponboardingsettingsDeponboardingsettingIdMicrosoftGraphUploaddeptokenPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AppleId <String>]`: 
   - `[DepToken <String>]`: 
 
-INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[AlertRecordId <String>]`: The unique identifier of alertRecord
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: The unique identifier of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: The unique identifier of androidForWorkEnrollmentProfile
@@ -253,7 +267,6 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[MicrosoftTunnelSiteId <String>]`: The unique identifier of microsoftTunnelSite
   - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
   - `[NotificationMessageTemplateId <String>]`: The unique identifier of notificationMessageTemplate
-  - `[OemWarrantyInformationOnboardingId <String>]`: The unique identifier of oemWarrantyInformationOnboarding
   - `[RemoteAssistancePartnerId <String>]`: The unique identifier of remoteAssistancePartner
   - `[RoleScopeTagId <String>]`: The unique identifier of roleScopeTag
   - `[WindowsAutopilotDeploymentProfileId <String>]`: The unique identifier of windowsAutopilotDeploymentProfile

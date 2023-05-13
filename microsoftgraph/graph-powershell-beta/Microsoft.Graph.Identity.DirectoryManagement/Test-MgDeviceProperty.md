@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/test-mgdeviceproperty
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/test-mgbetadeviceproperty
 schema: 2.0.0
 ---
 
-# Test-MgDeviceProperty
+# Test-MgBetaDeviceProperty
 
 ## SYNOPSIS
 Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
@@ -22,13 +22,13 @@ However, you can validate both the mail nickname and the display name and receiv
 
 ### ValidateExpanded (Default)
 ```
-Test-MgDeviceProperty [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-EntityType <String>]
+Test-MgBetaDeviceProperty [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-EntityType <String>]
  [-MailNickname <String>] [-OnBehalfOfUserId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Validate
 ```
-Test-MgDeviceProperty
+Test-MgBetaDeviceProperty
  -BodyParameter <IPaths7X6XkrDevicesMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -46,9 +46,10 @@ However, you can validate both the mail nickname and the display name and receiv
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.DirectoryObjects
+Import-Module Microsoft.Graph.Beta.DirectoryObjects
+```
 
 $params = @{
 	EntityType = "Group"
@@ -57,12 +58,7 @@ $params = @{
 	OnBehalfOfUserId = "onBehalfOfUserId-value"
 }
 
-Test-MgDirectoryObjectProperty -BodyParameter $params
-```
-
-This example shows how to use the Test-MgDeviceProperty Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Test-MgBetaDirectoryObjectProperty -BodyParameter $params
 
 ## PARAMETERS
 
@@ -83,7 +79,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths7X6XkrDevicesMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema
@@ -208,7 +204,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths7X6XkrDevicesMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths7X6XkrDevicesMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### System.Boolean
@@ -221,7 +217,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths7X6XkrDevicesMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths7X6XkrDevicesMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: 
   - `[EntityType <String>]`: 

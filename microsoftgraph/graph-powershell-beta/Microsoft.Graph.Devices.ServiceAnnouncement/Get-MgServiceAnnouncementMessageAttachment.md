@@ -1,59 +1,52 @@
----
-external help file: Microsoft.Graph.Devices.ServiceAnnouncement-help.xml
-Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.serviceannouncement/get-mgserviceannouncementmessageattachment
+﻿---
+external help file: Microsoft.Graph.Beta.Devices.ServiceAnnouncement-help.xml
+Module Name: Microsoft.Graph.Beta.Devices.ServiceAnnouncement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/get-mgbetaserviceannouncementmessageattachment
 schema: 2.0.0
-ms.prod: service-communications
 ---
 
-# Get-MgServiceAnnouncementMessageAttachment
+# Get-MgBetaServiceAnnouncementMessageAttachment
 
 ## SYNOPSIS
-A collection of serviceAnnouncementAttachments.
+Read the properties and relationships of a serviceAnnouncementAttachment object.
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgServiceAnnouncementMessageAttachment -ServiceUpdateMessageId <String> [-ExpandProperty <String[]>]
+Get-MgBetaServiceAnnouncementMessageAttachment -ServiceUpdateMessageId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgServiceAnnouncementMessageAttachment -ServiceAnnouncementAttachmentId <String>
+Get-MgBetaServiceAnnouncementMessageAttachment -ServiceAnnouncementAttachmentId <String>
  -ServiceUpdateMessageId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgServiceAnnouncementMessageAttachment -InputObject <IDevicesServiceAnnouncementIdentity>
+Get-MgBetaServiceAnnouncementMessageAttachment -InputObject <IDevicesServiceAnnouncementIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-A collection of serviceAnnouncementAttachments.
+Read the properties and relationships of a serviceAnnouncementAttachment object.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgServiceAnnouncementMessageAttachment Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
-Get-MgServiceAnnouncementMessageAttachment -ServiceUpdateMessageId $serviceUpdateMessageId -ServiceAnnouncementAttachmentId $serviceAnnouncementAttachmentId
+Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
+Get-MgBetaServiceAnnouncementMessageAttachment -ServiceUpdateMessageId $serviceUpdateMessageId -ServiceAnnouncementAttachmentId $serviceAnnouncementAttachmentId
 ```
 
-This example shows how to use the Get-MgServiceAnnouncementMessageAttachment Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Get-MgServiceAnnouncementMessageAttachment Cmdlet
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
-Get-MgServiceAnnouncementMessageAttachment -ServiceUpdateMessageId $serviceUpdateMessageId
+Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
+Get-MgBetaServiceAnnouncementMessageAttachment -ServiceUpdateMessageId $serviceUpdateMessageId
 ```
-
-This example shows how to use the Get-MgServiceAnnouncementMessageAttachment Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -120,7 +113,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDevicesServiceAnnouncementIdentity
@@ -259,10 +252,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDevicesServiceAnnouncementIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IDevicesServiceAnnouncementIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServiceAnnouncementAttachment
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphServiceAnnouncementAttachment
 ## NOTES
 
 ALIASES
@@ -272,7 +265,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
+`INPUTOBJECT <IDevicesServiceAnnouncementIdentity>`: Identity Parameter
   - `[ServiceAnnouncementAttachmentId <String>]`: The unique identifier of serviceAnnouncementAttachment
   - `[ServiceHealthId <String>]`: The unique identifier of serviceHealth
   - `[ServiceHealthIssueId <String>]`: The unique identifier of serviceHealthIssue

@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/new-mgsecuritythreatsubmissionemailthreatsubmissionpolicy
+﻿---
+external help file: Microsoft.Graph.Beta.Security-help.xml
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatsubmissionemailthreatsubmissionpolicy
 schema: 2.0.0
 ---
 
-# New-MgSecurityThreatSubmissionEmailThreatSubmissionPolicy
+# New-MgBetaSecurityThreatSubmissionEmailThreatSubmissionPolicy
 
 ## SYNOPSIS
 Create new navigation property to emailThreatSubmissionPolicies for security
@@ -14,7 +14,7 @@ Create new navigation property to emailThreatSubmissionPolicies for security
 
 ### CreateExpanded (Default)
 ```
-New-MgSecurityThreatSubmissionEmailThreatSubmissionPolicy [-AdditionalProperties <Hashtable>]
+New-MgBetaSecurityThreatSubmissionEmailThreatSubmissionPolicy [-AdditionalProperties <Hashtable>]
  [-CustomizedNotificationSenderEmailAddress <String>] [-CustomizedReportRecipientEmailAddress <String>]
  [-Id <String>] [-IsAlwaysReportEnabledForUsers] [-IsAskMeEnabledForUsers] [-IsCustomizedMessageEnabled]
  [-IsCustomizedMessageEnabledForPhishing] [-IsCustomizedNotificationSenderEnabled]
@@ -25,7 +25,7 @@ New-MgSecurityThreatSubmissionEmailThreatSubmissionPolicy [-AdditionalProperties
 
 ### Create
 ```
-New-MgSecurityThreatSubmissionEmailThreatSubmissionPolicy
+New-MgBetaSecurityThreatSubmissionEmailThreatSubmissionPolicy
  -BodyParameter <IMicrosoftGraphSecurityEmailThreatSubmissionPolicy> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -34,17 +34,14 @@ Create new navigation property to emailThreatSubmissionPolicies for security
 
 ## EXAMPLES
 
-### Example 1: Using the New-MgSecurityThreatSubmissionEmailThreatSubmissionPolicy Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Security
+Import-Module Microsoft.Graph.Beta.Security
 $params = @{
 	IsReportToMicrosoftEnabled = $true
 }
-New-MgSecurityThreatSubmissionEmailThreatSubmissionPolicy -BodyParameter $params
+New-MgBetaSecurityThreatSubmissionEmailThreatSubmissionPolicy -BodyParameter $params
 ```
-
-This example shows how to use the New-MgSecurityThreatSubmissionEmailThreatSubmissionPolicy Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -65,7 +62,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 emailThreatSubmissionPolicy
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSecurityEmailThreatSubmissionPolicy
@@ -114,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -352,10 +349,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEmailThreatSubmissionPolicy
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityEmailThreatSubmissionPolicy
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEmailThreatSubmissionPolicy
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityEmailThreatSubmissionPolicy
 ## NOTES
 
 ALIASES
@@ -365,9 +362,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSecurityEmailThreatSubmissionPolicy>`: emailThreatSubmissionPolicy
+`BODYPARAMETER <IMicrosoftGraphSecurityEmailThreatSubmissionPolicy>`: emailThreatSubmissionPolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[CustomizedNotificationSenderEmailAddress <String>]`: Specifies the email address of the sender from which email notifications will be sent to end users to inform them whether an email is spam, phish or clean. The default value is null. Optional for creation.
   - `[CustomizedReportRecipientEmailAddress <String>]`: Specifies the destination where the reported messages from end users will land whenever they report something as phish, junk or not junk. The default value is null. Optional for creation.
   - `[IsAlwaysReportEnabledForUsers <Boolean?>]`: Indicates whether end users can report a message as spam, phish or junk directly without a confirmation(popup). The default value is true.  Optional for creation.

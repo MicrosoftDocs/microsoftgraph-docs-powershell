@@ -1,7 +1,7 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mginformationprotection
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mginformationprotection
 schema: 2.0.0
 ---
 
@@ -20,6 +20,20 @@ Get-MgInformationProtection [-ExpandProperty <String[]>] [-Property <String[]>] 
 Get informationProtection
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 

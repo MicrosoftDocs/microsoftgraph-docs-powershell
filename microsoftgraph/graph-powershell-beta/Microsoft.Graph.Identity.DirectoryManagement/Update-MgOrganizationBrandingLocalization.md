@@ -1,20 +1,20 @@
----
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganizationbrandinglocalization
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaorganizationbrandinglocalization
 schema: 2.0.0
 ---
 
-# Update-MgOrganizationBrandingLocalization
+# Update-MgBetaOrganizationBrandingLocalization
 
 ## SYNOPSIS
-Update the navigation property localizations in organization
+Update the properties of an organizationalBrandingLocalization object for a specific localization.
 
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
-Update-MgOrganizationBrandingLocalization -OrganizationId <String>
+Update-MgBetaOrganizationBrandingLocalization -OrganizationId <String>
  -OrganizationalBrandingLocalizationId <String> [-AdditionalProperties <Hashtable>] [-BackgroundColor <String>]
  [-BackgroundImageInputFile <String>] [-BackgroundImageRelativeUrl <String>] [-BannerLogoInputFile <String>]
  [-BannerLogoRelativeUrl <String>] [-CdnList <String[]>] [-CustomAccountResetCredentialsUrl <String>]
@@ -27,20 +27,19 @@ Update-MgOrganizationBrandingLocalization -OrganizationId <String>
  [-LoginPageLayoutConfiguration <IMicrosoftGraphLoginPageLayoutConfiguration>]
  [-LoginPageTextVisibilitySettings <IMicrosoftGraphLoginPageTextVisibilitySettings>] [-SignInPageText <String>]
  [-SquareLogoDarkInputFile <String>] [-SquareLogoDarkRelativeUrl <String>] [-SquareLogoInputFile <String>]
- [-SquareLogoRelativeUrl <String>] [-UsernameHintText <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-SquareLogoRelativeUrl <String>] [-UsernameHintText <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgOrganizationBrandingLocalization -OrganizationId <String>
- -OrganizationalBrandingLocalizationId <String> -BodyParameter <Hashtable> [-PassThru] [-WhatIf] [-Confirm]
+Update-MgBetaOrganizationBrandingLocalization -OrganizationId <String>
+ -OrganizationalBrandingLocalizationId <String> -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgOrganizationBrandingLocalization -InputObject <IIdentityDirectoryManagementIdentity>
+Update-MgBetaOrganizationBrandingLocalization -InputObject <IIdentityDirectoryManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-BackgroundColor <String>] [-BackgroundImageInputFile <String>]
  [-BackgroundImageRelativeUrl <String>] [-BannerLogoInputFile <String>] [-BannerLogoRelativeUrl <String>]
  [-CdnList <String[]>] [-CustomAccountResetCredentialsUrl <String>]
@@ -53,46 +52,39 @@ Update-MgOrganizationBrandingLocalization -InputObject <IIdentityDirectoryManage
  [-LoginPageLayoutConfiguration <IMicrosoftGraphLoginPageLayoutConfiguration>]
  [-LoginPageTextVisibilitySettings <IMicrosoftGraphLoginPageTextVisibilitySettings>] [-SignInPageText <String>]
  [-SquareLogoDarkInputFile <String>] [-SquareLogoDarkRelativeUrl <String>] [-SquareLogoInputFile <String>]
- [-SquareLogoRelativeUrl <String>] [-UsernameHintText <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-SquareLogoRelativeUrl <String>] [-UsernameHintText <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgOrganizationBrandingLocalization -InputObject <IIdentityDirectoryManagementIdentity>
- -BodyParameter <Hashtable> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaOrganizationBrandingLocalization -InputObject <IIdentityDirectoryManagementIdentity>
+ -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property localizations in organization
+Update the properties of an organizationalBrandingLocalization object for a specific localization.
 
 ## EXAMPLES
 
-### Example 1: Using the Update-MgOrganizationBrandingLocalization Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 $params = @{
 	BackgroundColor = "#00000F"
 	SignInPageText = "Welcome to Contoso France"
 }
-Update-MgOrganizationBrandingLocalization -OrganizationId $organizationId -OrganizationalBrandingLocalizationId $organizationalBrandingLocalizationId -BodyParameter $params
+Update-MgBetaOrganizationBrandingLocalization -OrganizationId $organizationId -OrganizationalBrandingLocalizationId $organizationalBrandingLocalizationId -BodyParameter $params
 ```
 
-This example shows how to use the Update-MgOrganizationBrandingLocalization Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Update-MgOrganizationBrandingLocalization Cmdlet
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 $params = @{
 	SignInPageText = "Welcome to Contoso France."
 	UsernameHintText = " "
 }
-Update-MgOrganizationBrandingLocalization -OrganizationId $organizationId -OrganizationalBrandingLocalizationId $organizationalBrandingLocalizationId -BodyParameter $params
+Update-MgBetaOrganizationBrandingLocalization -OrganizationId $organizationId -OrganizationalBrandingLocalizationId $organizationalBrandingLocalizationId -BodyParameter $params
 ```
-
-This example shows how to use the Update-MgOrganizationBrandingLocalization Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -485,7 +477,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -502,7 +494,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IIdentityDirectoryManagementIdentity
@@ -518,7 +510,7 @@ Accept wildcard characters: False
 
 ### -LoginPageLayoutConfiguration
 loginPageLayoutConfiguration
-To construct, please use Get-Help -Online and see NOTES section for LOGINPAGELAYOUTCONFIGURATION properties and create a hash table.
+To construct, see NOTES section for LOGINPAGELAYOUTCONFIGURATION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphLoginPageLayoutConfiguration
@@ -534,7 +526,7 @@ Accept wildcard characters: False
 
 ### -LoginPageTextVisibilitySettings
 loginPageTextVisibilitySettings
-To construct, please use Get-Help -Online and see NOTES section for LOGINPAGETEXTVISIBILITYSETTINGS properties and create a hash table.
+To construct, see NOTES section for LOGINPAGETEXTVISIBILITYSETTINGS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphLoginPageTextVisibilitySettings
@@ -572,21 +564,6 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -728,11 +705,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
 ### System.Collections.Hashtable
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOrganizationalBrandingLocalization
 ## NOTES
 
 ALIASES
@@ -742,7 +719,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
@@ -778,13 +755,13 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UsageRightId <String>]`: The unique identifier of usageRight
   - `[UserId <String>]`: The unique identifier of user
 
-LOGINPAGELAYOUTCONFIGURATION `<IMicrosoftGraphLoginPageLayoutConfiguration>`: loginPageLayoutConfiguration
+`LOGINPAGELAYOUTCONFIGURATION <IMicrosoftGraphLoginPageLayoutConfiguration>`: loginPageLayoutConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[IsFooterShown <Boolean?>]`: Option to show the footer on the sign-in page.
   - `[IsHeaderShown <Boolean?>]`: Option to show the header on the sign-in page.
   - `[LayoutTemplateType <String>]`: layoutTemplateType
 
-LOGINPAGETEXTVISIBILITYSETTINGS `<IMicrosoftGraphLoginPageTextVisibilitySettings>`: loginPageTextVisibilitySettings
+`LOGINPAGETEXTVISIBILITYSETTINGS <IMicrosoftGraphLoginPageTextVisibilitySettings>`: loginPageTextVisibilitySettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[HideAccountResetCredentials <Boolean?>]`: Option to hide the self-service password reset (SSPR) hyperlinks such as 'Can't access your account?', 'Forgot my password' and 'Reset it now' on the sign-in form.
   - `[HideCannotAccessYourAccount <Boolean?>]`: Option to hide the self-service password reset (SSPR) 'Can't access your account?' hyperlink on the sign-in form.

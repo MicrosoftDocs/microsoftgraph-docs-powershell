@@ -1,17 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.notes/get-mguseronenotenotebook
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotenotebook
 schema: 2.0.0
-ms.prod: onenote
 ---
 
 # Get-MgUserOnenoteNotebook
 
 ## SYNOPSIS
-The collection of OneNote notebooks that are owned by the user or group.
-Read-only.
-Nullable.
+Retrieve the properties and relationships of a notebook object.
 
 ## SYNTAX
 
@@ -35,41 +32,30 @@ Get-MgUserOnenoteNotebook -InputObject <INotesIdentity> [-ExpandProperty <String
 ```
 
 ## DESCRIPTION
-The collection of OneNote notebooks that are owned by the user or group.
-Read-only.
-Nullable.
+Retrieve the properties and relationships of a notebook object.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgUserOnenoteNotebook Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Notes
 # A UPN can also be used as -UserId.
 Get-MgUserOnenoteNotebook -UserId $userId -NotebookId $notebookId
 ```
 
-This example shows how to use the Get-MgUserOnenoteNotebook Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Get-MgUserOnenoteNotebook Cmdlet
+### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Notes
 # A UPN can also be used as -UserId.
 Get-MgUserOnenoteNotebook -UserId $userId
 ```
 
-This example shows how to use the Get-MgUserOnenoteNotebook Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Using the Get-MgUserOnenoteNotebook Cmdlet
+### EXAMPLE 3
 ```powershell
 Import-Module Microsoft.Graph.Notes
 # A UPN can also be used as -UserId.
 Get-MgUserOnenoteNotebook -UserId $userId -NotebookId $notebookId
 ```
-
-This example shows how to use the Get-MgUserOnenoteNotebook Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -136,7 +122,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: INotesIdentity
@@ -288,7 +274,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<INotesIdentity>`: Identity Parameter
+`INPUTOBJECT <INotesIdentity>`: Identity Parameter
   - `[GroupId <String>]`: The unique identifier of group
   - `[NotebookId <String>]`: The unique identifier of notebook
   - `[OnenoteOperationId <String>]`: The unique identifier of onenoteOperation

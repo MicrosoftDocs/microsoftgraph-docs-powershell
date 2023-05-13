@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Mail-help.xml
-Module Name: Microsoft.Graph.Mail
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.mail/update-mguserinferenceclassification
+﻿---
+external help file: Microsoft.Graph.Beta.Mail-help.xml
+Module Name: Microsoft.Graph.Beta.Mail
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetauserinferenceclassification
 schema: 2.0.0
 ---
 
-# Update-MgUserInferenceClassification
+# Update-MgBetaUserInferenceClassification
 
 ## SYNOPSIS
 Update the navigation property inferenceClassification in users
@@ -14,34 +14,47 @@ Update the navigation property inferenceClassification in users
 
 ### UpdateExpanded (Default)
 ```
-Update-MgUserInferenceClassification -UserId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Overrides <IMicrosoftGraphInferenceClassificationOverride[]>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaUserInferenceClassification -UserId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-Overrides <IMicrosoftGraphInferenceClassificationOverride[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgUserInferenceClassification -UserId <String> -BodyParameter <IMicrosoftGraphInferenceClassification>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaUserInferenceClassification -UserId <String>
+ -BodyParameter <IMicrosoftGraphInferenceClassification> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgUserInferenceClassification -InputObject <IMailIdentity> [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-Overrides <IMicrosoftGraphInferenceClassificationOverride[]>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgBetaUserInferenceClassification -InputObject <IMailIdentity> [-AdditionalProperties <Hashtable>]
+ [-Id <String>] [-Overrides <IMicrosoftGraphInferenceClassificationOverride[]>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgUserInferenceClassification -InputObject <IMailIdentity>
- -BodyParameter <IMicrosoftGraphInferenceClassification> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaUserInferenceClassification -InputObject <IMailIdentity>
+ -BodyParameter <IMicrosoftGraphInferenceClassification> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property inferenceClassification in users
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -62,7 +75,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 inferenceClassification
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphInferenceClassification
@@ -77,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -94,7 +107,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IMailIdentity
@@ -112,26 +125,11 @@ Accept wildcard characters: False
 A set of overrides for a user to always classify messages from specific senders in certain ways: focused, or other.
 Read-only.
 Nullable.
-To construct, please use Get-Help -Online and see NOTES section for OVERRIDES properties and create a hash table.
+To construct, see NOTES section for OVERRIDES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphInferenceClassificationOverride[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -192,11 +190,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMailIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInferenceClassification
+### Microsoft.Graph.Beta.PowerShell.Models.IMailIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInferenceClassification
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInferenceClassification
 ## NOTES
 
 ALIASES
@@ -206,18 +204,18 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphInferenceClassification>`: inferenceClassification
+`BODYPARAMETER <IMicrosoftGraphInferenceClassification>`: inferenceClassification
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Overrides <IMicrosoftGraphInferenceClassificationOverride[]>]`: A set of overrides for a user to always classify messages from specific senders in certain ways: focused, or other. Read-only. Nullable.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[ClassifyAs <String>]`: inferenceClassificationType
     - `[SenderEmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Address <String>]`: The email address of the person or entity.
-      - `[Name <String>]`: The display name of the person or entity.
+      - `[Address <String>]`: The email address of an entity instance.
+      - `[Name <String>]`: The display name of an entity instance.
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+`INPUTOBJECT <IMailIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[InferenceClassificationOverrideId <String>]`: The unique identifier of inferenceClassificationOverride
@@ -226,17 +224,15 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
   - `[MentionId <String>]`: The unique identifier of mention
   - `[MessageId <String>]`: The unique identifier of message
   - `[MessageRuleId <String>]`: The unique identifier of messageRule
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
   - `[UserConfigurationId <String>]`: The unique identifier of userConfiguration
   - `[UserId <String>]`: The unique identifier of user
 
-OVERRIDES <IMicrosoftGraphInferenceClassificationOverride\[]>: A set of overrides for a user to always classify messages from specific senders in certain ways: focused, or other. Read-only. Nullable.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`OVERRIDES <IMicrosoftGraphInferenceClassificationOverride[]>`: A set of overrides for a user to always classify messages from specific senders in certain ways: focused, or other. Read-only. Nullable.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ClassifyAs <String>]`: inferenceClassificationType
   - `[SenderEmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Address <String>]`: The email address of the person or entity.
-    - `[Name <String>]`: The display name of the person or entity.
+    - `[Address <String>]`: The email address of an entity instance.
+    - `[Name <String>]`: The display name of an entity instance.
 
 ## RELATED LINKS

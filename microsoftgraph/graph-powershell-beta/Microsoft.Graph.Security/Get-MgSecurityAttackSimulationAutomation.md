@@ -1,49 +1,46 @@
----
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationautomation
+﻿---
+external help file: Microsoft.Graph.Beta.Security-help.xml
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityattacksimulationautomation
 schema: 2.0.0
 ---
 
-# Get-MgSecurityAttackSimulationAutomation
+# Get-MgBetaSecurityAttackSimulationAutomation
 
 ## SYNOPSIS
-Represents simulation automation created to run on a tenant.
+Get an attack simulation automation for a tenant.
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgSecurityAttackSimulationAutomation [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [<CommonParameters>]
+Get-MgBetaSecurityAttackSimulationAutomation [-ExpandProperty <String[]>] [-Property <String[]>]
+ [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
+ [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgSecurityAttackSimulationAutomation -SimulationAutomationId <String> [-ExpandProperty <String[]>]
+Get-MgBetaSecurityAttackSimulationAutomation -SimulationAutomationId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgSecurityAttackSimulationAutomation -InputObject <ISecurityIdentity> [-ExpandProperty <String[]>]
+Get-MgBetaSecurityAttackSimulationAutomation -InputObject <ISecurityIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Represents simulation automation created to run on a tenant.
+Get an attack simulation automation for a tenant.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgSecurityAttackSimulationAutomation Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Security
-Get-MgSecurityAttackSimulationAutomation
+Import-Module Microsoft.Graph.Beta.Security
+Get-MgBetaSecurityAttackSimulationAutomation
 ```
-
-This example shows how to use the Get-MgSecurityAttackSimulationAutomation Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -110,7 +107,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ISecurityIdentity
@@ -234,10 +231,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSimulationAutomation
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSimulationAutomation
 ## NOTES
 
 ALIASES
@@ -247,7 +244,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+`INPUTOBJECT <ISecurityIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
   - `[ArticleId <String>]`: The unique identifier of article
   - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator

@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Users.Actions-help.xml
-Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/send-mgusermanageddevicecustomnotificationtocompanyportal
+﻿---
+external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.Users.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetausermanageddevicecustomnotificationtocompanyportal
 schema: 2.0.0
 ---
 
-# Send-MgUserManagedDeviceCustomNotificationToCompanyPortal
+# Send-MgBetaUserManagedDeviceCustomNotificationToCompanyPortal
 
 ## SYNOPSIS
 Invoke action sendCustomNotificationToCompanyPortal
@@ -14,28 +14,28 @@ Invoke action sendCustomNotificationToCompanyPortal
 
 ### SendExpanded (Default)
 ```
-Send-MgUserManagedDeviceCustomNotificationToCompanyPortal -ManagedDeviceId <String> -UserId <String>
+Send-MgBetaUserManagedDeviceCustomNotificationToCompanyPortal -ManagedDeviceId <String> -UserId <String>
  [-AdditionalProperties <Hashtable>] [-NotificationBody <String>] [-NotificationTitle <String>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Send
 ```
-Send-MgUserManagedDeviceCustomNotificationToCompanyPortal -ManagedDeviceId <String> -UserId <String>
+Send-MgBetaUserManagedDeviceCustomNotificationToCompanyPortal -ManagedDeviceId <String> -UserId <String>
  -BodyParameter <IPaths1Cnuhc3UsersUserIdManageddevicesManageddeviceIdMicrosoftGraphSendcustomnotificationtocompanyportalPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SendViaIdentityExpanded
 ```
-Send-MgUserManagedDeviceCustomNotificationToCompanyPortal -InputObject <IUsersActionsIdentity>
+Send-MgBetaUserManagedDeviceCustomNotificationToCompanyPortal -InputObject <IUsersActionsIdentity>
  [-AdditionalProperties <Hashtable>] [-NotificationBody <String>] [-NotificationTitle <String>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SendViaIdentity
 ```
-Send-MgUserManagedDeviceCustomNotificationToCompanyPortal -InputObject <IUsersActionsIdentity>
+Send-MgBetaUserManagedDeviceCustomNotificationToCompanyPortal -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths1Cnuhc3UsersUserIdManageddevicesManageddeviceIdMicrosoftGraphSendcustomnotificationtocompanyportalPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -44,6 +44,20 @@ Send-MgUserManagedDeviceCustomNotificationToCompanyPortal -InputObject <IUsersAc
 Invoke action sendCustomNotificationToCompanyPortal
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -64,7 +78,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths1Cnuhc3UsersUserIdManageddevicesManageddeviceIdMicrosoftGraphSendcustomnotificationtocompanyportalPostRequestbodyContentApplicationJsonSchema
@@ -80,7 +94,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersActionsIdentity
@@ -205,8 +219,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1Cnuhc3UsersUserIdManageddevicesManageddeviceIdMicrosoftGraphSendcustomnotificationtocompanyportalPostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Cnuhc3UsersUserIdManageddevicesManageddeviceIdMicrosoftGraphSendcustomnotificationtocompanyportalPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
 ## OUTPUTS
 
 ### System.Boolean
@@ -219,12 +233,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Cnuhc3UsersUserIdManageddevicesManageddeviceIdMicrosoftGraphSendcustomnotificationtocompanyportalPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1Cnuhc3UsersUserIdManageddevicesManageddeviceIdMicrosoftGraphSendcustomnotificationtocompanyportalPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[NotificationBody <String>]`: 
   - `[NotificationTitle <String>]`: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
@@ -258,7 +272,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription

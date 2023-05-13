@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mgappcatalogteamapp
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgappcatalogteamapp
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # New-MgAppCatalogTeamApp
@@ -15,14 +14,14 @@ Admins can approve or reject these apps via this API or the Microsoft Teams admi
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
 New-MgAppCatalogTeamApp [-AdditionalProperties <Hashtable>]
  [-AppDefinitions <IMicrosoftGraphTeamsAppDefinition[]>] [-DisplayName <String>] [-DistributionMethod <String>]
  [-ExternalId <String>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
 New-MgAppCatalogTeamApp -BodyParameter <IMicrosoftGraphTeamsApp> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -34,14 +33,11 @@ Admins can approve or reject these apps via this API or the Microsoft Teams admi
 
 ## EXAMPLES
 
-### Example 1: Using the New-MgAppCatalogTeamApp Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
 New-MgAppCatalogTeamApp -Requiresreview true
 ```
-
-This example shows how to use the New-MgAppCatalogTeamApp Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -50,7 +46,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -62,11 +58,11 @@ Accept wildcard characters: False
 
 ### -AppDefinitions
 The details for each version of the app.
-To construct, please use Get-Help -Online and see NOTES section for APPDEFINITIONS properties and create a hash table.
+To construct, see NOTES section for APPDEFINITIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphTeamsAppDefinition[]
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -78,11 +74,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 teamsApp
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphTeamsApp
-Parameter Sets: Create1
+Parameter Sets: Create
 Aliases:
 
 Required: True
@@ -97,7 +93,7 @@ The name of the catalog app provided by the app developer in the Microsoft Teams
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -112,7 +108,7 @@ teamsAppDistributionMethod
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -127,7 +123,7 @@ The ID of the catalog provided by the app developer in the Microsoft Teams zip a
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -143,7 +139,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -202,7 +198,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-APPDEFINITIONS <IMicrosoftGraphTeamsAppDefinition\[]>: The details for each version of the app.
+`APPDEFINITIONS <IMicrosoftGraphTeamsAppDefinition[]>`: The details for each version of the app.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Bot <IMicrosoftGraphTeamworkBot>]`: teamworkBot
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -223,7 +219,7 @@ APPDEFINITIONS <IMicrosoftGraphTeamsAppDefinition\[]>: The details for each vers
   - `[TeamsAppId <String>]`: The ID from the Teams app manifest.
   - `[Version <String>]`: The version number of the application.
 
-BODYPARAMETER `<IMicrosoftGraphTeamsApp>`: teamsApp
+`BODYPARAMETER <IMicrosoftGraphTeamsApp>`: teamsApp
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AppDefinitions <IMicrosoftGraphTeamsAppDefinition[]>]`: The details for each version of the app.

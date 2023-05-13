@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/set-mgorganizationmobiledevicemanagementauthority
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/set-mgbetaorganizationmobiledevicemanagementauthority
 schema: 2.0.0
 ---
 
-# Set-MgOrganizationMobileDeviceManagementAuthority
+# Set-MgBetaOrganizationMobileDeviceManagementAuthority
 
 ## SYNOPSIS
 Set mobile device management authority
@@ -14,14 +14,14 @@ Set mobile device management authority
 
 ### Set (Default)
 ```
-Set-MgOrganizationMobileDeviceManagementAuthority -OrganizationId <String> [-WhatIf] [-Confirm]
+Set-MgBetaOrganizationMobileDeviceManagementAuthority -OrganizationId <String> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
-Set-MgOrganizationMobileDeviceManagementAuthority -InputObject <IIdentityDirectoryManagementIdentity> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Set-MgBetaOrganizationMobileDeviceManagementAuthority -InputObject <IIdentityDirectoryManagementIdentity>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -29,11 +29,25 @@ Set mobile device management authority
 
 ## EXAMPLES
 
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IIdentityDirectoryManagementIdentity
@@ -98,7 +112,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
 ## OUTPUTS
 
 ### System.Int32
@@ -111,7 +125,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet

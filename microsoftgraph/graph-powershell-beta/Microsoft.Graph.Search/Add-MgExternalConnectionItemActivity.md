@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Search-help.xml
-Module Name: Microsoft.Graph.Search
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/add-mgexternalconnectionitemactivity
+﻿---
+external help file: Microsoft.Graph.Beta.Search-help.xml
+Module Name: Microsoft.Graph.Beta.Search
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/add-mgbetaexternalconnectionitemactivity
 schema: 2.0.0
 ---
 
-# Add-MgExternalConnectionItemActivity
+# Add-MgBetaExternalConnectionItemActivity
 
 ## SYNOPSIS
 Invoke action addActivities
@@ -14,28 +14,28 @@ Invoke action addActivities
 
 ### AddExpanded (Default)
 ```
-Add-MgExternalConnectionItemActivity -ExternalConnectionId <String> -ExternalItemId <String>
+Add-MgBetaExternalConnectionItemActivity -ExternalConnectionId <String> -ExternalItemId <String>
  [-Activities <IMicrosoftGraphExternalConnectorsExternalActivity[]>] [-AdditionalProperties <Hashtable>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Add
 ```
-Add-MgExternalConnectionItemActivity -ExternalConnectionId <String> -ExternalItemId <String>
+Add-MgBetaExternalConnectionItemActivity -ExternalConnectionId <String> -ExternalItemId <String>
  -BodyParameter <IPaths5Uv0B2ExternalConnectionsExternalconnectionIdItemsExternalitemIdMicrosoftGraphExternalconnectorsAddactivitiesPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### AddViaIdentityExpanded
 ```
-Add-MgExternalConnectionItemActivity -InputObject <ISearchIdentity>
+Add-MgBetaExternalConnectionItemActivity -InputObject <ISearchIdentity>
  [-Activities <IMicrosoftGraphExternalConnectorsExternalActivity[]>] [-AdditionalProperties <Hashtable>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### AddViaIdentity
 ```
-Add-MgExternalConnectionItemActivity -InputObject <ISearchIdentity>
+Add-MgBetaExternalConnectionItemActivity -InputObject <ISearchIdentity>
  -BodyParameter <IPaths5Uv0B2ExternalConnectionsExternalconnectionIdItemsExternalitemIdMicrosoftGraphExternalconnectorsAddactivitiesPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -45,11 +45,25 @@ Invoke action addActivities
 
 ## EXAMPLES
 
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -Activities
 .
-To construct, please use Get-Help -Online and see NOTES section for ACTIVITIES properties and create a hash table.
+To construct, see NOTES section for ACTIVITIES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphExternalConnectorsExternalActivity[]
@@ -80,7 +94,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths5Uv0B2ExternalConnectionsExternalconnectionIdItemsExternalitemIdMicrosoftGraphExternalconnectorsAddactivitiesPostRequestbodyContentApplicationJsonSchema
@@ -126,7 +140,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ISearchIdentity
@@ -176,11 +190,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths5Uv0B2ExternalConnectionsExternalconnectionIdItemsExternalitemIdMicrosoftGraphExternalconnectorsAddactivitiesPostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.ISearchIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths5Uv0B2ExternalConnectionsExternalconnectionIdItemsExternalitemIdMicrosoftGraphExternalconnectorsAddactivitiesPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.ISearchIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalActivityResult
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalActivityResult
 ## NOTES
 
 ALIASES
@@ -190,27 +204,27 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ACTIVITIES <IMicrosoftGraphExternalConnectorsExternalActivity\[]>: .
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`ACTIVITIES <IMicrosoftGraphExternalConnectorsExternalActivity[]>`: .
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[PerformedBy <IMicrosoftGraphExternalConnectorsIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Type <String>]`: identityType
-  - `[StartDateTime <DateTime?>]`: When the particular activity occurred.
+  - `[StartDateTime <DateTime?>]`: The date and time when the particular activity occurred. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Type <String>]`: externalActivityType
 
-BODYPARAMETER `<IPaths5Uv0B2ExternalConnectionsExternalconnectionIdItemsExternalitemIdMicrosoftGraphExternalconnectorsAddactivitiesPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths5Uv0B2ExternalConnectionsExternalconnectionIdItemsExternalitemIdMicrosoftGraphExternalconnectorsAddactivitiesPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Activities <IMicrosoftGraphExternalConnectorsExternalActivity[]>]`: 
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[PerformedBy <IMicrosoftGraphExternalConnectorsIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Type <String>]`: identityType
-    - `[StartDateTime <DateTime?>]`: When the particular activity occurred.
+    - `[StartDateTime <DateTime?>]`: The date and time when the particular activity occurred. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[Type <String>]`: externalActivityType
 
-INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
+`INPUTOBJECT <ISearchIdentity>`: Identity Parameter
   - `[AcronymId <String>]`: The unique identifier of acronym
   - `[BookmarkId <String>]`: The unique identifier of bookmark
   - `[ConnectionOperationId <String>]`: The unique identifier of connectionOperation

@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.Governance-help.xml
-Module Name: Microsoft.Graph.Identity.Governance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceaccessreviewpolicy
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.Governance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceaccessreviewpolicy
 schema: 2.0.0
 ---
 
-# Update-MgIdentityGovernanceAccessReviewPolicy
+# Update-MgBetaIdentityGovernanceAccessReviewPolicy
 
 ## SYNOPSIS
 Update the properties of an accessReviewPolicy object.
@@ -14,15 +14,15 @@ Update the properties of an accessReviewPolicy object.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgIdentityGovernanceAccessReviewPolicy [-AdditionalProperties <Hashtable>] [-Description <String>]
- [-DisplayName <String>] [-Id <String>] [-IsGroupOwnerManagementEnabled] [-PassThru] [-WhatIf] [-Confirm]
+Update-MgBetaIdentityGovernanceAccessReviewPolicy [-AdditionalProperties <Hashtable>] [-Description <String>]
+ [-DisplayName <String>] [-Id <String>] [-IsGroupOwnerManagementEnabled] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgIdentityGovernanceAccessReviewPolicy -BodyParameter <IMicrosoftGraphAccessReviewPolicy> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaIdentityGovernanceAccessReviewPolicy -BodyParameter <IMicrosoftGraphAccessReviewPolicy> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -30,17 +30,14 @@ Update the properties of an accessReviewPolicy object.
 
 ## EXAMPLES
 
-### Example 1: Using the Update-MgIdentityGovernanceAccessReviewPolicy Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Identity.Governance
+Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{
 	IsGroupOwnerManagementEnabled = $true
 }
-Update-MgIdentityGovernanceAccessReviewPolicy -BodyParameter $params
+Update-MgBetaIdentityGovernanceAccessReviewPolicy -BodyParameter $params
 ```
-
-This example shows how to use the Update-MgIdentityGovernanceAccessReviewPolicy Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -61,7 +58,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 accessReviewPolicy
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAccessReviewPolicy
@@ -108,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -129,21 +126,6 @@ If true, group owners can create and manage access reviews on groups they own.
 ```yaml
 Type: SwitchParameter
 Parameter Sets: UpdateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -189,10 +171,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessReviewPolicy
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessReviewPolicy
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessReviewPolicy
 ## NOTES
 
 ALIASES
@@ -202,9 +184,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphAccessReviewPolicy>`: accessReviewPolicy
+`BODYPARAMETER <IMicrosoftGraphAccessReviewPolicy>`: accessReviewPolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Description <String>]`: Description for this policy. Read-only.
   - `[DisplayName <String>]`: Display name for this policy. Read-only.
   - `[IsGroupOwnerManagementEnabled <Boolean?>]`: If true, group owners can create and manage access reviews on groups they own.

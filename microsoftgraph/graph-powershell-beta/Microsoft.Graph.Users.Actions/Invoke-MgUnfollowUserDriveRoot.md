@@ -1,26 +1,26 @@
----
-external help file: Microsoft.Graph.Users.Actions-help.xml
-Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgunfollowuserdriveroot
+﻿---
+external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.Users.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaunfollowuserdriveroot
 schema: 2.0.0
 ---
 
-# Invoke-MgUnfollowUserDriveRoot
+# Invoke-MgBetaUnfollowUserDriveRoot
 
 ## SYNOPSIS
 Unfollow a driveItem.
 
 ## SYNTAX
 
-### Unfollow1 (Default)
+### Unfollow (Default)
 ```
-Invoke-MgUnfollowUserDriveRoot -DriveId <String> -UserId <String> [-PassThru] [-WhatIf] [-Confirm]
+Invoke-MgBetaUnfollowUserDriveRoot -DriveId <String> -UserId <String> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### UnfollowViaIdentity1
+### UnfollowViaIdentity
 ```
-Invoke-MgUnfollowUserDriveRoot -InputObject <IUsersActionsIdentity> [-PassThru] [-WhatIf] [-Confirm]
+Invoke-MgBetaUnfollowUserDriveRoot -InputObject <IUsersActionsIdentity> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -29,6 +29,20 @@ Unfollow a driveItem.
 
 ## EXAMPLES
 
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -DriveId
@@ -36,7 +50,7 @@ The unique identifier of drive
 
 ```yaml
 Type: String
-Parameter Sets: Unfollow1
+Parameter Sets: Unfollow
 Aliases:
 
 Required: True
@@ -48,11 +62,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: UnfollowViaIdentity1
+Parameter Sets: UnfollowViaIdentity
 Aliases:
 
 Required: True
@@ -82,7 +96,7 @@ The unique identifier of user
 
 ```yaml
 Type: String
-Parameter Sets: Unfollow1
+Parameter Sets: Unfollow
 Aliases:
 
 Required: True
@@ -128,7 +142,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
 ## OUTPUTS
 
 ### System.Boolean
@@ -141,7 +155,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
@@ -175,7 +189,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription

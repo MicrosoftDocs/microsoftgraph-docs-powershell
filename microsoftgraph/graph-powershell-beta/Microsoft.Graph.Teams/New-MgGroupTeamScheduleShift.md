@@ -1,12 +1,11 @@
----
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mggroupteamscheduleshift
+﻿---
+external help file: Microsoft.Graph.Beta.Teams-help.xml
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamscheduleshift
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
-# New-MgGroupTeamScheduleShift
+# New-MgBetaGroupTeamScheduleShift
 
 ## SYNOPSIS
 Create a new shift instance in a schedule.
@@ -14,31 +13,31 @@ The duration of a shift cannot be less than 1 minute or longer than 24 hours.
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
-New-MgGroupTeamScheduleShift -GroupId <String> [-AdditionalProperties <Hashtable>]
+New-MgBetaGroupTeamScheduleShift -GroupId <String> [-AdditionalProperties <Hashtable>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-DraftShift <IMicrosoftGraphShiftItem>] [-Id <String>]
  [-IsStagedForDeletion] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-SchedulingGroupId <String>]
  [-SharedShift <IMicrosoftGraphShiftItem>] [-UserId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
-New-MgGroupTeamScheduleShift -GroupId <String> -BodyParameter <IMicrosoftGraphShift1> [-WhatIf] [-Confirm]
+New-MgBetaGroupTeamScheduleShift -GroupId <String> -BodyParameter <IMicrosoftGraphShift> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded1
+### CreateViaIdentityExpanded
 ```
-New-MgGroupTeamScheduleShift -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
+New-MgBetaGroupTeamScheduleShift -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-DraftShift <IMicrosoftGraphShiftItem>] [-Id <String>]
  [-IsStagedForDeletion] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-SchedulingGroupId <String>]
  [-SharedShift <IMicrosoftGraphShiftItem>] [-UserId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentity1
+### CreateViaIdentity
 ```
-New-MgGroupTeamScheduleShift -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphShift1> [-WhatIf]
+New-MgBetaGroupTeamScheduleShift -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphShift> [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -48,16 +47,12 @@ The duration of a shift cannot be less than 1 minute or longer than 24 hours.
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Teams
-
-Get-MgTeamScheduleShift -TeamId $teamId -Filter "sharedShift/startDateTime ge 2019-03-11T00:00:00.000Z and sharedShift/endDateTime le 2019-03-18T00:00:00.000Z and draftShift/startDateTime ge 2019-03-11T00:00:00.000Z and draftShift/endDateTime le 2019-03-18T00:00:00.000Z"
+Import-Module Microsoft.Graph.Beta.Teams
 ```
 
-This example shows how to use the New-MgGroupTeamScheduleShift Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Get-MgBetaTeamScheduleShift -TeamId $teamId -Filter "sharedShift/startDateTime ge 2019-03-11T00:00:00.000Z and sharedShift/endDateTime le 2019-03-18T00:00:00.000Z and draftShift/startDateTime ge 2019-03-11T00:00:00.000Z and draftShift/endDateTime le 2019-03-18T00:00:00.000Z"
 
 ## PARAMETERS
 
@@ -66,7 +61,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -78,11 +73,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 shift
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphShift1
-Parameter Sets: Create1, CreateViaIdentity1
+Type: IMicrosoftGraphShift
+Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -94,11 +89,11 @@ Accept wildcard characters: False
 
 ### -CreatedBy
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
+To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -110,11 +105,11 @@ Accept wildcard characters: False
 
 ### -DraftShift
 shiftItem
-To construct, please use Get-Help -Online and see NOTES section for DRAFTSHIFT properties and create a hash table.
+To construct, see NOTES section for DRAFTSHIFT properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphShiftItem
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -129,7 +124,7 @@ The unique identifier of group
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, Create1
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -140,12 +135,12 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -157,11 +152,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -176,7 +171,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -188,11 +183,11 @@ Accept wildcard characters: False
 
 ### -LastModifiedBy
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBY properties and create a hash table.
+To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -203,12 +198,11 @@ Accept wildcard characters: False
 ```
 
 ### -SchedulingGroupId
-ID of the scheduling group the shift is part of.
-Required.
+.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -220,11 +214,11 @@ Accept wildcard characters: False
 
 ### -SharedShift
 shiftItem
-To construct, please use Get-Help -Online and see NOTES section for SHAREDSHIFT properties and create a hash table.
+To construct, see NOTES section for SHAREDSHIFT properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphShiftItem
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -235,12 +229,11 @@ Accept wildcard characters: False
 ```
 
 ### -UserId
-ID of the user assigned to the shift.
-Required.
+.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -286,11 +279,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphShift1
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphShift
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphShift1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphShift
 ## NOTES
 
 ALIASES
@@ -300,7 +293,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphShift1>`: shift
+`BODYPARAMETER <IMicrosoftGraphShift>`: shift
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -311,7 +304,7 @@ BODYPARAMETER `<IMicrosoftGraphShift1>`: shift
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DraftShift <IMicrosoftGraphShiftItem>]`: shiftItem
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[EndDateTime <DateTime?>]`: 
@@ -327,11 +320,11 @@ BODYPARAMETER `<IMicrosoftGraphShift1>`: shift
     - `[DisplayName <String>]`: The shift label of the shiftItem.
     - `[Notes <String>]`: The shift notes for the shiftItem.
   - `[IsStagedForDeletion <Boolean?>]`: 
-  - `[SchedulingGroupId <String>]`: ID of the scheduling group the shift is part of. Required.
+  - `[SchedulingGroupId <String>]`: 
   - `[SharedShift <IMicrosoftGraphShiftItem>]`: shiftItem
-  - `[UserId <String>]`: ID of the user assigned to the shift. Required.
+  - `[UserId <String>]`: 
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+`CREATEDBY <IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -340,7 +333,7 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-DRAFTSHIFT `<IMicrosoftGraphShiftItem>`: shiftItem
+`DRAFTSHIFT <IMicrosoftGraphShiftItem>`: shiftItem
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[EndDateTime <DateTime?>]`: 
   - `[StartDateTime <DateTime?>]`: 
@@ -355,7 +348,7 @@ DRAFTSHIFT `<IMicrosoftGraphShiftItem>`: shiftItem
   - `[DisplayName <String>]`: The shift label of the shiftItem.
   - `[Notes <String>]`: The shift notes for the shiftItem.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat
@@ -394,7 +387,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+`LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -403,7 +396,7 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-SHAREDSHIFT `<IMicrosoftGraphShiftItem>`: shiftItem
+`SHAREDSHIFT <IMicrosoftGraphShiftItem>`: shiftItem
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[EndDateTime <DateTime?>]`: 
   - `[StartDateTime <DateTime?>]`: 

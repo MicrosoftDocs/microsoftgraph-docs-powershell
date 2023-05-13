@@ -1,7 +1,7 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/restore-mgdriveitemlistitemversion
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/restore-mgdriveitemlistitemversion
 schema: 2.0.0
 ---
 
@@ -13,13 +13,13 @@ This will create a new version with the contents of the previous version, but pr
 
 ## SYNTAX
 
-### Restore1 (Default)
+### Restore (Default)
 ```
 Restore-MgDriveItemListItemVersion -DriveId <String> -DriveItemId <String> -ListItemVersionId <String>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### RestoreViaIdentity1
+### RestoreViaIdentity
 ```
 Restore-MgDriveItemListItemVersion -InputObject <IFilesIdentity> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -31,6 +31,20 @@ This will create a new version with the contents of the previous version, but pr
 
 ## EXAMPLES
 
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -DriveId
@@ -38,7 +52,7 @@ The unique identifier of drive
 
 ```yaml
 Type: String
-Parameter Sets: Restore1
+Parameter Sets: Restore
 Aliases:
 
 Required: True
@@ -53,7 +67,7 @@ The unique identifier of driveItem
 
 ```yaml
 Type: String
-Parameter Sets: Restore1
+Parameter Sets: Restore
 Aliases:
 
 Required: True
@@ -65,11 +79,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IFilesIdentity
-Parameter Sets: RestoreViaIdentity1
+Parameter Sets: RestoreViaIdentity
 Aliases:
 
 Required: True
@@ -84,7 +98,7 @@ The unique identifier of listItemVersion
 
 ```yaml
 Type: String
-Parameter Sets: Restore1
+Parameter Sets: Restore
 Aliases:
 
 Required: True
@@ -158,7 +172,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+`INPUTOBJECT <IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType

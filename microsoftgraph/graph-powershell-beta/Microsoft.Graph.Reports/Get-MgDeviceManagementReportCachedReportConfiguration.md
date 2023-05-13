@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Reports-help.xml
-Module Name: Microsoft.Graph.Reports
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreportcachedreportconfiguration
+﻿---
+external help file: Microsoft.Graph.Beta.Reports-help.xml
+Module Name: Microsoft.Graph.Beta.Reports
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportcachedreportconfiguration
 schema: 2.0.0
 ---
 
-# Get-MgDeviceManagementReportCachedReportConfiguration
+# Get-MgBetaDeviceManagementReportCachedReportConfiguration
 
 ## SYNOPSIS
 Entity representing the configuration of a cached report
@@ -14,20 +14,20 @@ Entity representing the configuration of a cached report
 
 ### List (Default)
 ```
-Get-MgDeviceManagementReportCachedReportConfiguration [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaDeviceManagementReportCachedReportConfiguration [-ExpandProperty <String[]>] [-Property <String[]>]
  [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
  [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgDeviceManagementReportCachedReportConfiguration -DeviceManagementCachedReportConfigurationId <String>
+Get-MgBetaDeviceManagementReportCachedReportConfiguration -DeviceManagementCachedReportConfigurationId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgDeviceManagementReportCachedReportConfiguration -InputObject <IReportsIdentity>
+Get-MgBetaDeviceManagementReportCachedReportConfiguration -InputObject <IReportsIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
@@ -35,6 +35,20 @@ Get-MgDeviceManagementReportCachedReportConfiguration -InputObject <IReportsIden
 Entity representing the configuration of a cached report
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -116,7 +130,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IReportsIdentity
@@ -225,10 +239,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IReportsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IReportsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementCachedReportConfiguration
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementCachedReportConfiguration
 ## NOTES
 
 ALIASES
@@ -238,7 +252,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+`INPUTOBJECT <IReportsIdentity>`: Identity Parameter
   - `[ApplicationSignInDetailedSummaryId <String>]`: The unique identifier of applicationSignInDetailedSummary
   - `[CredentialUserRegistrationDetailsId <String>]`: The unique identifier of credentialUserRegistrationDetails
   - `[Date <DateTime?>]`: Usage: date={date}

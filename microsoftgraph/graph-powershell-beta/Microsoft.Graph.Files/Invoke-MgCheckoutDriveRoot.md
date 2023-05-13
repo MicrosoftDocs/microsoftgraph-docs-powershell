@@ -1,31 +1,46 @@
----
-external help file: Microsoft.Graph.Files-help.xml
-Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/invoke-mgcheckoutdriveroot
+﻿---
+external help file: Microsoft.Graph.Beta.Files-help.xml
+Module Name: Microsoft.Graph.Beta.Files
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetacheckoutdriveroot
 schema: 2.0.0
 ---
 
-# Invoke-MgCheckoutDriveRoot
+# Invoke-MgBetaCheckoutDriveRoot
 
 ## SYNOPSIS
 Check out a **driveItem** resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
 
 ## SYNTAX
 
-### Checkout1 (Default)
+### Checkout (Default)
 ```
-Invoke-MgCheckoutDriveRoot -DriveId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgBetaCheckoutDriveRoot -DriveId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CheckoutViaIdentity1
+### CheckoutViaIdentity
 ```
-Invoke-MgCheckoutDriveRoot -InputObject <IFilesIdentity> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgBetaCheckoutDriveRoot -InputObject <IFilesIdentity> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Check out a **driveItem** resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -34,7 +49,7 @@ The unique identifier of drive
 
 ```yaml
 Type: String
-Parameter Sets: Checkout1
+Parameter Sets: Checkout
 Aliases:
 
 Required: True
@@ -46,11 +61,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IFilesIdentity
-Parameter Sets: CheckoutViaIdentity1
+Parameter Sets: CheckoutViaIdentity
 Aliases:
 
 Required: True
@@ -111,7 +126,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IFilesIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
 ## OUTPUTS
 
 ### System.Boolean
@@ -124,7 +139,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+`INPUTOBJECT <IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType

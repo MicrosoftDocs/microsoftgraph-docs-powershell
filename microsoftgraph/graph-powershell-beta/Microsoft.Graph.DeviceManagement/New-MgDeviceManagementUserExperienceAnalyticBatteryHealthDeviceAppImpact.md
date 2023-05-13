@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticbatteryhealthdeviceappimpact
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticbatteryhealthdeviceappimpact
 schema: 2.0.0
 ---
 
-# New-MgDeviceManagementUserExperienceAnalyticBatteryHealthDeviceAppImpact
+# New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDeviceAppImpact
 
 ## SYNOPSIS
 Create new navigation property to userExperienceAnalyticsBatteryHealthDeviceAppImpact for deviceManagement
@@ -14,14 +14,15 @@ Create new navigation property to userExperienceAnalyticsBatteryHealthDeviceAppI
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementUserExperienceAnalyticBatteryHealthDeviceAppImpact [-AdditionalProperties <Hashtable>]
- [-AppDisplayName <String>] [-AppName <String>] [-AppPublisher <String>] [-BatteryUsagePercentage <Double>]
- [-DeviceId <String>] [-Id <String>] [-IsForegroundApp] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDeviceAppImpact
+ [-AdditionalProperties <Hashtable>] [-AppDisplayName <String>] [-AppName <String>] [-AppPublisher <String>]
+ [-BatteryUsagePercentage <Double>] [-DeviceId <String>] [-Id <String>] [-IsForegroundApp] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceManagementUserExperienceAnalyticBatteryHealthDeviceAppImpact
+New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDeviceAppImpact
  -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDeviceAppImpact> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
@@ -30,6 +31,20 @@ New-MgDeviceManagementUserExperienceAnalyticBatteryHealthDeviceAppImpact
 Create new navigation property to userExperienceAnalyticsBatteryHealthDeviceAppImpact for deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -115,7 +130,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 The user experience analytics battery health device app impact entity contains battery usage related information at an app level for a given device.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDeviceAppImpact
@@ -145,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -211,10 +226,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDeviceAppImpact
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDeviceAppImpact
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDeviceAppImpact
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDeviceAppImpact
 ## NOTES
 
 ALIASES
@@ -224,9 +239,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDeviceAppImpact>`: The user experience analytics battery health device app impact entity contains battery usage related information at an app level for a given device.
+`BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDeviceAppImpact>`: The user experience analytics battery health device app impact entity contains battery usage related information at an app level for a given device.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AppDisplayName <String>]`: User friendly display name for the app. Eg: Outlook
   - `[AppName <String>]`: App name. Eg: oltk.exe
   - `[AppPublisher <String>]`: App publisher. Eg: Microsoft Corporation

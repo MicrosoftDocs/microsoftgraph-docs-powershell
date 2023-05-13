@@ -1,7 +1,7 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectory
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectory
 schema: 2.0.0
 ---
 
@@ -12,26 +12,40 @@ Update directory
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### UpdateExpanded (Default)
 ```
 Update-MgDirectory [-AdditionalProperties <Hashtable>]
- [-AdministrativeUnits <IMicrosoftGraphAdministrativeUnit[]>]
+ [-AdministrativeUnits <IMicrosoftGraphAdministrativeUnit[]>] [-AttributeSets <IMicrosoftGraphAttributeSet[]>]
+ [-CustomSecurityAttributeDefinitions <IMicrosoftGraphCustomSecurityAttributeDefinition[]>]
  [-DeletedItems <IMicrosoftGraphDirectoryObject[]>]
  [-FederationConfigurations <IMicrosoftGraphIdentityProviderBase[]>] [-Id <String>]
- [-OnPremisesSynchronization <IMicrosoftGraphOnPremisesDirectorySynchronization[]>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-OnPremisesSynchronization <IMicrosoftGraphOnPremisesDirectorySynchronization[]>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
-### Update1
+### Update
 ```
-Update-MgDirectory -BodyParameter <IMicrosoftGraphDirectory1> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgDirectory -BodyParameter <IMicrosoftGraphDirectory> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update directory
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -40,7 +54,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded1
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -52,11 +66,27 @@ Accept wildcard characters: False
 
 ### -AdministrativeUnits
 Conceptual container for user and group directory objects.
-To construct, please use Get-Help -Online and see NOTES section for ADMINISTRATIVEUNITS properties and create a hash table.
+To construct, see NOTES section for ADMINISTRATIVEUNITS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAdministrativeUnit[]
-Parameter Sets: UpdateExpanded1
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AttributeSets
+.
+To construct, see NOTES section for ATTRIBUTESETS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphAttributeSet[]
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -68,11 +98,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 directory
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectory1
-Parameter Sets: Update1
+Type: IMicrosoftGraphDirectory
+Parameter Sets: Update
 Aliases:
 
 Required: True
@@ -82,15 +112,31 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -CustomSecurityAttributeDefinitions
+.
+To construct, see NOTES section for CUSTOMSECURITYATTRIBUTEDEFINITIONS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphCustomSecurityAttributeDefinition[]
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -DeletedItems
 Recently deleted items.
 Read-only.
 Nullable.
-To construct, please use Get-Help -Online and see NOTES section for DELETEDITEMS properties and create a hash table.
+To construct, see NOTES section for DELETEDITEMS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDirectoryObject[]
-Parameter Sets: UpdateExpanded1
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -102,11 +148,11 @@ Accept wildcard characters: False
 
 ### -FederationConfigurations
 Configure domain federation with organizations whose identity provider (IdP) supports either the SAML or WS-Fed protocol.
-To construct, please use Get-Help -Online and see NOTES section for FEDERATIONCONFIGURATIONS properties and create a hash table.
+To construct, see NOTES section for FEDERATIONCONFIGURATIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIdentityProviderBase[]
-Parameter Sets: UpdateExpanded1
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -122,7 +168,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -134,26 +180,11 @@ Accept wildcard characters: False
 
 ### -OnPremisesSynchronization
 A container for on-premises directory synchronization functionalities that are available for the organization.
-To construct, please use Get-Help -Online and see NOTES section for ONPREMISESSYNCHRONIZATION properties and create a hash table.
+To construct, see NOTES section for ONPREMISESSYNCHRONIZATION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphOnPremisesDirectorySynchronization[]
-Parameter Sets: UpdateExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -199,10 +230,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectory1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectory
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectory
 ## NOTES
 
 ALIASES
@@ -212,7 +243,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ADMINISTRATIVEUNITS <IMicrosoftGraphAdministrativeUnit\[]>: Conceptual container for user and group directory objects.
+`ADMINISTRATIVEUNITS <IMicrosoftGraphAdministrativeUnit[]>`: Conceptual container for user and group directory objects.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Description <String>]`: An optional description for the administrative unit. Supports $filter (eq, ne, in, startsWith), $search.
@@ -232,7 +263,12 @@ ADMINISTRATIVEUNITS <IMicrosoftGraphAdministrativeUnit\[]>: Conceptual container
       - `[Id <String>]`: Unique identifier for the identity.
   - `[Visibility <String>]`: Controls whether the administrative unit and its members are hidden or public. Can be set to HiddenMembership. If not set (value is null), the default behavior is public. When set to HiddenMembership, only members of the administrative unit can list other members of the administrative unit.
 
-BODYPARAMETER `<IMicrosoftGraphDirectory1>`: directory
+`ATTRIBUTESETS <IMicrosoftGraphAttributeSet[]>`: .
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Description <String>]`: 
+  - `[MaxAttributesPerSet <Int32?>]`: 
+
+`BODYPARAMETER <IMicrosoftGraphDirectory>`: directory
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AdministrativeUnits <IMicrosoftGraphAdministrativeUnit[]>]`: Conceptual container for user and group directory objects.
@@ -254,6 +290,23 @@ BODYPARAMETER `<IMicrosoftGraphDirectory1>`: directory
         - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
         - `[Id <String>]`: Unique identifier for the identity.
     - `[Visibility <String>]`: Controls whether the administrative unit and its members are hidden or public. Can be set to HiddenMembership. If not set (value is null), the default behavior is public. When set to HiddenMembership, only members of the administrative unit can list other members of the administrative unit.
+  - `[AttributeSets <IMicrosoftGraphAttributeSet[]>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Description <String>]`: 
+    - `[MaxAttributesPerSet <Int32?>]`: 
+  - `[CustomSecurityAttributeDefinitions <IMicrosoftGraphCustomSecurityAttributeDefinition[]>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[AllowedValues <IMicrosoftGraphAllowedValue[]>]`: 
+      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[IsActive <Boolean?>]`: 
+    - `[AttributeSet <String>]`: 
+    - `[Description <String>]`: 
+    - `[IsCollection <Boolean?>]`: 
+    - `[IsSearchable <Boolean?>]`: 
+    - `[Name <String>]`: 
+    - `[Status <String>]`: 
+    - `[Type <String>]`: 
+    - `[UsePreDefinedValuesOnly <Boolean?>]`: 
   - `[DeletedItems <IMicrosoftGraphDirectoryObject[]>]`: Recently deleted items. Read-only. Nullable.
   - `[FederationConfigurations <IMicrosoftGraphIdentityProviderBase[]>]`: Configure domain federation with organizations whose identity provider (IdP) supports either the SAML or WS-Fed protocol.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -288,15 +341,29 @@ BODYPARAMETER `<IMicrosoftGraphDirectory1>`: directory
       - `[UserForcePasswordChangeOnLogonEnabled <Boolean?>]`: Used to indicate that feature to force password change for a user on logon is enabled while synchronizing on-premise credentials.
       - `[UserWritebackEnabled <Boolean?>]`: Used to indicate that user writeback is enabled.
 
-DELETEDITEMS <IMicrosoftGraphDirectoryObject\[]>: Recently deleted items. Read-only. Nullable.
+`CUSTOMSECURITYATTRIBUTEDEFINITIONS <IMicrosoftGraphCustomSecurityAttributeDefinition[]>`: .
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[AllowedValues <IMicrosoftGraphAllowedValue[]>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[IsActive <Boolean?>]`: 
+  - `[AttributeSet <String>]`: 
+  - `[Description <String>]`: 
+  - `[IsCollection <Boolean?>]`: 
+  - `[IsSearchable <Boolean?>]`: 
+  - `[Name <String>]`: 
+  - `[Status <String>]`: 
+  - `[Type <String>]`: 
+  - `[UsePreDefinedValuesOnly <Boolean?>]`: 
+
+`DELETEDITEMS <IMicrosoftGraphDirectoryObject[]>`: Recently deleted items. Read-only. Nullable.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
-FEDERATIONCONFIGURATIONS <IMicrosoftGraphIdentityProviderBase\[]>: Configure domain federation with organizations whose identity provider (IdP) supports either the SAML or WS-Fed protocol.
+`FEDERATIONCONFIGURATIONS <IMicrosoftGraphIdentityProviderBase[]>`: Configure domain federation with organizations whose identity provider (IdP) supports either the SAML or WS-Fed protocol.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DisplayName <String>]`: The display name of the identity provider.
 
-ONPREMISESSYNCHRONIZATION <IMicrosoftGraphOnPremisesDirectorySynchronization\[]>: A container for on-premises directory synchronization functionalities that are available for the organization.
+`ONPREMISESSYNCHRONIZATION <IMicrosoftGraphOnPremisesDirectorySynchronization[]>`: A container for on-premises directory synchronization functionalities that are available for the organization.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Configuration <IMicrosoftGraphOnPremisesDirectorySynchronizationConfiguration>]`: onPremisesDirectorySynchronizationConfiguration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

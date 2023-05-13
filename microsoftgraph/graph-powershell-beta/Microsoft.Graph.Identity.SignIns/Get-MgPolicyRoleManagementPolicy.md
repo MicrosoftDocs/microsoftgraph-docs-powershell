@@ -1,59 +1,54 @@
----
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgpolicyrolemanagementpolicy
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyrolemanagementpolicy
 schema: 2.0.0
-ms.prod: governance
 ---
 
-# Get-MgPolicyRoleManagementPolicy
+# Get-MgBetaPolicyRoleManagementPolicy
 
 ## SYNOPSIS
-Represents the role management policies.
+Retrieve the details of a role management policy.
+To read a policy that applies to Azure RBAC, use the Azure REST PIM API for role management policies.
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgPolicyRoleManagementPolicy [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
+Get-MgBetaPolicyRoleManagementPolicy [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
  [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgPolicyRoleManagementPolicy -UnifiedRoleManagementPolicyId <String> [-ExpandProperty <String[]>]
+Get-MgBetaPolicyRoleManagementPolicy -UnifiedRoleManagementPolicyId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgPolicyRoleManagementPolicy -InputObject <IIdentitySignInsIdentity> [-ExpandProperty <String[]>]
+Get-MgBetaPolicyRoleManagementPolicy -InputObject <IIdentitySignInsIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Represents the role management policies.
+Retrieve the details of a role management policy.
+To read a policy that applies to Azure RBAC, use the Azure REST PIM API for role management policies.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgPolicyRoleManagementPolicy Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
-Get-MgPolicyRoleManagementPolicy -UnifiedRoleManagementPolicyId $unifiedRoleManagementPolicyId
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+Get-MgBetaPolicyRoleManagementPolicy -UnifiedRoleManagementPolicyId $unifiedRoleManagementPolicyId
 ```
 
-This example shows how to use the Get-MgPolicyRoleManagementPolicy Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Get-MgPolicyRoleManagementPolicy Cmdlet
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
-Get-MgPolicyRoleManagementPolicy -Filter "scopeId eq '/' and scopeType eq 'DirectoryRole'"
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+Get-MgBetaPolicyRoleManagementPolicy -Filter "scopeId eq '/' and scopeType eq 'DirectoryRole'"
 ```
-
-This example shows how to use the Get-MgPolicyRoleManagementPolicy Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -120,7 +115,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IIdentitySignInsIdentity
@@ -244,10 +239,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementPolicy1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementPolicy
 ## NOTES
 
 ALIASES
@@ -257,7 +252,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentitySignInsIdentity>`: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: The unique identifier of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
@@ -294,6 +289,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[IdentityUserFlowAttributeId <String>]`: The unique identifier of identityUserFlowAttribute
   - `[IdentityUserFlowId <String>]`: The unique identifier of identityUserFlow
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
+  - `[InvitationId <String>]`: The unique identifier of invitation
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   - `[MobilityManagementPolicyId <String>]`: The unique identifier of mobilityManagementPolicy

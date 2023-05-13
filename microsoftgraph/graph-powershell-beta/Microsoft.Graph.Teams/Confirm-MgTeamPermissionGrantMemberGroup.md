@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/confirm-mgteampermissiongrantmembergroup
+﻿---
+external help file: Microsoft.Graph.Beta.Teams-help.xml
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/confirm-mgbetateampermissiongrantmembergroup
 schema: 2.0.0
 ---
 
-# Confirm-MgTeamPermissionGrantMemberGroup
+# Confirm-MgBetaTeamPermissionGrantMemberGroup
 
 ## SYNOPSIS
 Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
@@ -18,26 +18,26 @@ Because Microsoft 365 groups cannot contain other groups, membership in a Micros
 
 ### CheckExpanded (Default)
 ```
-Confirm-MgTeamPermissionGrantMemberGroup -ResourceSpecificPermissionGrantId <String> -TeamId <String>
+Confirm-MgBetaTeamPermissionGrantMemberGroup -ResourceSpecificPermissionGrantId <String> -TeamId <String>
  [-AdditionalProperties <Hashtable>] [-GroupIds <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Check
 ```
-Confirm-MgTeamPermissionGrantMemberGroup -ResourceSpecificPermissionGrantId <String> -TeamId <String>
+Confirm-MgBetaTeamPermissionGrantMemberGroup -ResourceSpecificPermissionGrantId <String> -TeamId <String>
  -BodyParameter <IPaths1Ej5GioTeamsTeamIdPermissiongrantsResourcespecificpermissiongrantIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CheckViaIdentityExpanded
 ```
-Confirm-MgTeamPermissionGrantMemberGroup -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
+Confirm-MgBetaTeamPermissionGrantMemberGroup -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
  [-GroupIds <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CheckViaIdentity
 ```
-Confirm-MgTeamPermissionGrantMemberGroup -InputObject <ITeamsIdentity>
+Confirm-MgBetaTeamPermissionGrantMemberGroup -InputObject <ITeamsIdentity>
  -BodyParameter <IPaths1Ej5GioTeamsTeamIdPermissiongrantsResourcespecificpermissiongrantIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -50,6 +50,20 @@ This function supports all groups provisioned in Azure AD.
 Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -70,7 +84,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths1Ej5GioTeamsTeamIdPermissiongrantsResourcespecificpermissiongrantIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema
@@ -101,7 +115,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ITeamsIdentity
@@ -181,8 +195,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1Ej5GioTeamsTeamIdPermissiongrantsResourcespecificpermissiongrantIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Ej5GioTeamsTeamIdPermissiongrantsResourcespecificpermissiongrantIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
 ## OUTPUTS
 
 ### System.String
@@ -195,11 +209,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Ej5GioTeamsTeamIdPermissiongrantsResourcespecificpermissiongrantIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1Ej5GioTeamsTeamIdPermissiongrantsResourcespecificpermissiongrantIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[GroupIds <String[]>]`: 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat

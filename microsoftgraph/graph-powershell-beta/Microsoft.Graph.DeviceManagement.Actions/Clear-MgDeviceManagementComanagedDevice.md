@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/clear-mgdevicemanagementcomanageddevice
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/clear-mgbetadevicemanagementcomanageddevice
 schema: 2.0.0
 ---
 
-# Clear-MgDeviceManagementComanagedDevice
+# Clear-MgBetaDeviceManagementComanagedDevice
 
 ## SYNOPSIS
 Wipe a device
@@ -14,28 +14,30 @@ Wipe a device
 
 ### WipeExpanded (Default)
 ```
-Clear-MgDeviceManagementComanagedDevice -ManagedDeviceId <String> [-AdditionalProperties <Hashtable>]
- [-KeepEnrollmentData] [-KeepUserData] [-MacOSUnlockCode <String>] [-PersistEsimDataPlan] [-UseProtectedWipe]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Clear-MgBetaDeviceManagementComanagedDevice -ManagedDeviceId <String> [-AdditionalProperties <Hashtable>]
+ [-KeepEnrollmentData] [-KeepUserData] [-MacOSUnlockCode <String>]
+ [-ObliterationBehavior <ObliterationBehavior>] [-PersistEsimDataPlan] [-UseProtectedWipe] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Wipe
 ```
-Clear-MgDeviceManagementComanagedDevice -ManagedDeviceId <String>
+Clear-MgBetaDeviceManagementComanagedDevice -ManagedDeviceId <String>
  -BodyParameter <IPaths7IuefzDevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphWipePostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### WipeViaIdentityExpanded
 ```
-Clear-MgDeviceManagementComanagedDevice -InputObject <IDeviceManagementActionsIdentity>
+Clear-MgBetaDeviceManagementComanagedDevice -InputObject <IDeviceManagementActionsIdentity>
  [-AdditionalProperties <Hashtable>] [-KeepEnrollmentData] [-KeepUserData] [-MacOSUnlockCode <String>]
- [-PersistEsimDataPlan] [-UseProtectedWipe] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ObliterationBehavior <ObliterationBehavior>] [-PersistEsimDataPlan] [-UseProtectedWipe] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### WipeViaIdentity
 ```
-Clear-MgDeviceManagementComanagedDevice -InputObject <IDeviceManagementActionsIdentity>
+Clear-MgBetaDeviceManagementComanagedDevice -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPaths7IuefzDevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphWipePostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -44,6 +46,20 @@ Clear-MgDeviceManagementComanagedDevice -InputObject <IDeviceManagementActionsId
 Wipe a device
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -64,7 +80,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths7IuefzDevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphWipePostRequestbodyContentApplicationJsonSchema
@@ -80,7 +96,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementActionsIdentity
@@ -148,6 +164,25 @@ Parameter Sets: WipeExpanded, Wipe
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ObliterationBehavior
+In macOS 12 and later, this command uses Erase All Content and Settings (EACS) on Mac computers with the Apple M1 chip or the Apple T2 Security Chip.
+On those devices, if EACS can't run, the device can use obliteration (macOS 11.x behavior).
+This key has no effect on machines prior to the T2 chip.
+Upon receiving this command, the device performs preflight checks to determine if the device is in a state that allows EACS.
+The ObliterationBehavior value defines the device's fallback behavior.
+
+```yaml
+Type: ObliterationBehavior
+Parameter Sets: WipeExpanded, WipeViaIdentityExpanded
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -235,8 +270,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths7IuefzDevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphWipePostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths7IuefzDevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphWipePostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### System.Boolean
@@ -249,15 +284,16 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths7IuefzDevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphWipePostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths7IuefzDevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphWipePostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[KeepEnrollmentData <Boolean?>]`: 
   - `[KeepUserData <Boolean?>]`: 
   - `[MacOSUnlockCode <String>]`: 
+  - `[ObliterationBehavior <ObliterationBehavior?>]`: In macOS 12 and later, this command uses Erase All Content and Settings (EACS) on Mac computers with the Apple M1 chip or the Apple T2 Security Chip. On those devices, if EACS can't run, the device can use obliteration (macOS 11.x behavior). This key has no effect on machines prior to the T2 chip. Upon receiving this command, the device performs preflight checks to determine if the device is in a state that allows EACS. The ObliterationBehavior value defines the device's fallback behavior.
   - `[PersistEsimDataPlan <Boolean?>]`: 
   - `[UseProtectedWipe <Boolean?>]`: 
 
-INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[AlertRecordId <String>]`: The unique identifier of alertRecord
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: The unique identifier of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: The unique identifier of androidForWorkEnrollmentProfile
@@ -301,7 +337,6 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[MicrosoftTunnelSiteId <String>]`: The unique identifier of microsoftTunnelSite
   - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
   - `[NotificationMessageTemplateId <String>]`: The unique identifier of notificationMessageTemplate
-  - `[OemWarrantyInformationOnboardingId <String>]`: The unique identifier of oemWarrantyInformationOnboarding
   - `[RemoteAssistancePartnerId <String>]`: The unique identifier of remoteAssistancePartner
   - `[RoleScopeTagId <String>]`: The unique identifier of roleScopeTag
   - `[WindowsAutopilotDeploymentProfileId <String>]`: The unique identifier of windowsAutopilotDeploymentProfile

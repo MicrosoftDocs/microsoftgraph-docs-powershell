@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Compliance-help.xml
-Module Name: Microsoft.Graph.Compliance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/get-mgcomplianceediscoverycasesourcecollection
+﻿---
+external help file: Microsoft.Graph.Beta.Compliance-help.xml
+Module Name: Microsoft.Graph.Beta.Compliance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasesourcecollection
 schema: 2.0.0
 ---
 
-# Get-MgComplianceEdiscoveryCaseSourceCollection
+# Get-MgBetaComplianceEdiscoveryCaseSourceCollection
 
 ## SYNOPSIS
 Returns a list of sourceCollection objects associated with this case.
@@ -14,21 +14,21 @@ Returns a list of sourceCollection objects associated with this case.
 
 ### List (Default)
 ```
-Get-MgComplianceEdiscoveryCaseSourceCollection -CaseId <String> [-ExpandProperty <String[]>]
+Get-MgBetaComplianceEdiscoveryCaseSourceCollection -CaseId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgComplianceEdiscoveryCaseSourceCollection -CaseId <String> -SourceCollectionId <String>
+Get-MgBetaComplianceEdiscoveryCaseSourceCollection -CaseId <String> -SourceCollectionId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgComplianceEdiscoveryCaseSourceCollection -InputObject <IComplianceIdentity> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaComplianceEdiscoveryCaseSourceCollection -InputObject <IComplianceIdentity>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -36,23 +36,17 @@ Returns a list of sourceCollection objects associated with this case.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgComplianceEdiscoveryCaseSourceCollection Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Compliance
-Get-MgComplianceEdiscoveryCaseSourceCollection -CaseId $caseId -SourceCollectionId $sourceCollectionId -ExpandProperty "addToReviewSetOperation,custodianSources,lastEstimateStatisticsOperation"
+Import-Module Microsoft.Graph.Beta.Compliance
+Get-MgBetaComplianceEdiscoveryCaseSourceCollection -CaseId $caseId -SourceCollectionId $sourceCollectionId -ExpandProperty "addToReviewSetOperation,custodianSources,lastEstimateStatisticsOperation"
 ```
 
-This example shows how to use the Get-MgComplianceEdiscoveryCaseSourceCollection Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Get-MgComplianceEdiscoveryCaseSourceCollection Cmdlet
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Compliance
-Get-MgComplianceEdiscoveryCaseSourceCollection -CaseId $caseId
+Import-Module Microsoft.Graph.Beta.Compliance
+Get-MgBetaComplianceEdiscoveryCaseSourceCollection -CaseId $caseId
 ```
-
-This example shows how to use the Get-MgComplianceEdiscoveryCaseSourceCollection Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -134,7 +128,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IComplianceIdentity
@@ -258,10 +252,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IComplianceIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoverySourceCollection
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEdiscoverySourceCollection
 ## NOTES
 
 ALIASES
@@ -271,7 +265,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
+`INPUTOBJECT <IComplianceIdentity>`: Identity Parameter
   - `[CaseId <String>]`: The unique identifier of case
   - `[CaseOperationId <String>]`: The unique identifier of caseOperation
   - `[CustodianId <String>]`: The unique identifier of custodian

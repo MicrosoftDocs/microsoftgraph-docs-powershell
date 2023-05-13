@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgpolicymobileappmanagementpolicyincludedgroup
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicymobileappmanagementpolicyincludedgroup
 schema: 2.0.0
 ---
 
-# Get-MgPolicyMobileAppManagementPolicyIncludedGroup
+# Get-MgBetaPolicyMobileAppManagementPolicyIncludedGroup
 
 ## SYNOPSIS
 Get the list of groups that are included in a mobile app management policy.
@@ -13,7 +13,7 @@ Get the list of groups that are included in a mobile app management policy.
 ## SYNTAX
 
 ```
-Get-MgPolicyMobileAppManagementPolicyIncludedGroup -MobilityManagementPolicyId <String>
+Get-MgBetaPolicyMobileAppManagementPolicyIncludedGroup -MobilityManagementPolicyId <String>
  [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
  [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
@@ -23,23 +23,17 @@ Get the list of groups that are included in a mobile app management policy.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgPolicyMobileAppManagementPolicyIncludedGroup Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
-Get-MgPolicyMobileAppManagementPolicyIncludedGroup -MobilityManagementPolicyId $mobilityManagementPolicyId -OutFile $outFileId
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+Get-MgBetaPolicyMobileAppManagementPolicyIncludedGroup -MobilityManagementPolicyId $mobilityManagementPolicyId -OutFile $outFileId
 ```
 
-This example shows how to use the Get-MgPolicyMobileAppManagementPolicyIncludedGroup Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Get-MgPolicyMobileAppManagementPolicyIncludedGroup Cmdlet
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
-Get-MgPolicyMobileAppManagementPolicyIncludedGroup -MobilityManagementPolicyId $mobilityManagementPolicyId
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+Get-MgBetaPolicyMobileAppManagementPolicyIncludedGroup -MobilityManagementPolicyId $mobilityManagementPolicyId
 ```
-
-This example shows how to use the Get-MgPolicyMobileAppManagementPolicyIncludedGroup Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -216,7 +210,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroup1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroup
 ## NOTES
 
 ALIASES

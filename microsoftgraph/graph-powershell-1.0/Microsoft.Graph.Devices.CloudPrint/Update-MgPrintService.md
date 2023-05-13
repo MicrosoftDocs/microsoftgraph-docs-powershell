@@ -1,7 +1,7 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintservice
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintservice
 schema: 2.0.0
 ---
 
@@ -15,33 +15,45 @@ Update the navigation property services in print
 ### UpdateExpanded (Default)
 ```
 Update-MgPrintService -PrintServiceId <String> [-AdditionalProperties <Hashtable>]
- [-Endpoints <IMicrosoftGraphPrintServiceEndpoint1[]>] [-Id <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Endpoints <IMicrosoftGraphPrintServiceEndpoint[]>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgPrintService -PrintServiceId <String> -BodyParameter <IMicrosoftGraphPrintService> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgPrintService -PrintServiceId <String> -BodyParameter <IMicrosoftGraphPrintService> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgPrintService -InputObject <IDevicesCloudPrintIdentity> [-AdditionalProperties <Hashtable>]
- [-Endpoints <IMicrosoftGraphPrintServiceEndpoint1[]>] [-Id <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Endpoints <IMicrosoftGraphPrintServiceEndpoint[]>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgPrintService -InputObject <IDevicesCloudPrintIdentity> -BodyParameter <IMicrosoftGraphPrintService>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property services in print
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -62,7 +74,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 printService
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPrintService
@@ -80,10 +92,10 @@ Accept wildcard characters: False
 Endpoints that can be used to access the service.
 Read-only.
 Nullable.
-To construct, please use Get-Help -Online and see NOTES section for ENDPOINTS properties and create a hash table.
+To construct, see NOTES section for ENDPOINTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrintServiceEndpoint1[]
+Type: IMicrosoftGraphPrintServiceEndpoint[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -112,7 +124,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDevicesCloudPrintIdentity
@@ -123,21 +135,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -196,7 +193,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintService
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintService
 ## NOTES
 
 ALIASES
@@ -206,22 +203,24 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPrintService>`: printService
+`BODYPARAMETER <IMicrosoftGraphPrintService>`: printService
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[Endpoints <IMicrosoftGraphPrintServiceEndpoint1[]>]`: Endpoints that can be used to access the service. Read-only. Nullable.
+  - `[Endpoints <IMicrosoftGraphPrintServiceEndpoint[]>]`: Endpoints that can be used to access the service. Read-only. Nullable.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[DisplayName <String>]`: A human-readable display name for the endpoint.
     - `[Uri <String>]`: The URI that can be used to access the service.
 
-ENDPOINTS <IMicrosoftGraphPrintServiceEndpoint1\[]>: Endpoints that can be used to access the service. Read-only. Nullable.
+`ENDPOINTS <IMicrosoftGraphPrintServiceEndpoint[]>`: Endpoints that can be used to access the service. Read-only. Nullable.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DisplayName <String>]`: A human-readable display name for the endpoint.
   - `[Uri <String>]`: The URI that can be used to access the service.
 
-INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
+`INPUTOBJECT <IDevicesCloudPrintIdentity>`: Identity Parameter
   - `[GroupId <String>]`: The unique identifier of group
   - `[PrintConnectorId <String>]`: The unique identifier of printConnector
+  - `[PrintDocumentId <String>]`: The unique identifier of printDocument
+  - `[PrintJobId <String>]`: The unique identifier of printJob
   - `[PrintOperationId <String>]`: The unique identifier of printOperation
   - `[PrintServiceEndpointId <String>]`: The unique identifier of printServiceEndpoint
   - `[PrintServiceId <String>]`: The unique identifier of printService

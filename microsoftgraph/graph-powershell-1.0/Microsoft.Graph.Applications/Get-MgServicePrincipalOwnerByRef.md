@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgserviceprincipalownerbyref
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalownerbyref
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # Get-MgServicePrincipalOwnerByRef
@@ -32,16 +31,12 @@ Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count 
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Applications
-
-Get-MgServicePrincipalOwner -ServicePrincipalId $servicePrincipalId
 ```
 
-This example shows how to use the Get-MgServicePrincipalOwnerByRef Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Get-MgServicePrincipalOwner -ServicePrincipalId $servicePrincipalId
 
 ## PARAMETERS
 

@@ -1,12 +1,11 @@
----
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mggroupteamscheduleoffershiftrequest
+﻿---
+external help file: Microsoft.Graph.Beta.Teams-help.xml
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamscheduleoffershiftrequest
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
-# New-MgGroupTeamScheduleOfferShiftRequest
+# New-MgBetaGroupTeamScheduleOfferShiftRequest
 
 ## SYNOPSIS
 Create new navigation property to offerShiftRequests for groups
@@ -15,7 +14,7 @@ Create new navigation property to offerShiftRequests for groups
 
 ### CreateExpanded (Default)
 ```
-New-MgGroupTeamScheduleOfferShiftRequest -GroupId <String> [-AdditionalProperties <Hashtable>]
+New-MgBetaGroupTeamScheduleOfferShiftRequest -GroupId <String> [-AdditionalProperties <Hashtable>]
  [-AssignedTo <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-Id <String>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-ManagerActionMessage <String>]
  [-RecipientActionMessage <String>] [-RecipientUserId <String>] [-SenderMessage <String>]
@@ -24,13 +23,13 @@ New-MgGroupTeamScheduleOfferShiftRequest -GroupId <String> [-AdditionalPropertie
 
 ### Create
 ```
-New-MgGroupTeamScheduleOfferShiftRequest -GroupId <String> -BodyParameter <IMicrosoftGraphOfferShiftRequest1>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaGroupTeamScheduleOfferShiftRequest -GroupId <String>
+ -BodyParameter <IMicrosoftGraphOfferShiftRequest> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgGroupTeamScheduleOfferShiftRequest -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
+New-MgBetaGroupTeamScheduleOfferShiftRequest -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
  [-AssignedTo <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-Id <String>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-ManagerActionMessage <String>]
  [-RecipientActionMessage <String>] [-RecipientUserId <String>] [-SenderMessage <String>]
@@ -39,8 +38,8 @@ New-MgGroupTeamScheduleOfferShiftRequest -InputObject <ITeamsIdentity> [-Additio
 
 ### CreateViaIdentity
 ```
-New-MgGroupTeamScheduleOfferShiftRequest -InputObject <ITeamsIdentity>
- -BodyParameter <IMicrosoftGraphOfferShiftRequest1> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaGroupTeamScheduleOfferShiftRequest -InputObject <ITeamsIdentity>
+ -BodyParameter <IMicrosoftGraphOfferShiftRequest> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -48,16 +47,12 @@ Create new navigation property to offerShiftRequests for groups
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Teams
-
-Get-MgTeamScheduleOfferShiftRequest -TeamId $teamId
+Import-Module Microsoft.Graph.Beta.Teams
 ```
 
-This example shows how to use the New-MgGroupTeamScheduleOfferShiftRequest Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Get-MgBetaTeamScheduleOfferShiftRequest -TeamId $teamId
 
 ## PARAMETERS
 
@@ -93,10 +88,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 offerShiftRequest
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOfferShiftRequest1
+Type: IMicrosoftGraphOfferShiftRequest
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -109,7 +104,7 @@ Accept wildcard characters: False
 
 ### -CreatedBy
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
+To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet
@@ -139,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -156,7 +151,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ITeamsIdentity
@@ -172,7 +167,7 @@ Accept wildcard characters: False
 
 ### -LastModifiedBy
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBY properties and create a hash table.
+To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet
@@ -312,11 +307,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOfferShiftRequest1
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOfferShiftRequest
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOfferShiftRequest1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOfferShiftRequest
 ## NOTES
 
 ALIASES
@@ -326,7 +321,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphOfferShiftRequest1>`: offerShiftRequest
+`BODYPARAMETER <IMicrosoftGraphOfferShiftRequest>`: offerShiftRequest
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AssignedTo <String>]`: scheduleChangeRequestActor
   - `[ManagerActionMessage <String>]`: 
@@ -341,12 +336,12 @@ BODYPARAMETER `<IMicrosoftGraphOfferShiftRequest1>`: offerShiftRequest
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[RecipientActionMessage <String>]`: Custom message sent by recipient of the offer shift request.
   - `[RecipientUserId <String>]`: User id of the recipient of the offer shift request.
   - `[SenderShiftId <String>]`: User id of the sender of the offer shift request.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+`CREATEDBY <IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -355,7 +350,7 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat
@@ -394,7 +389,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+`LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

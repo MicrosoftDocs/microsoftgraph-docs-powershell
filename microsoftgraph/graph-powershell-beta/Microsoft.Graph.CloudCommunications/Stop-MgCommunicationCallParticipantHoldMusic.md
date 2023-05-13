@@ -1,39 +1,39 @@
----
-external help file: Microsoft.Graph.CloudCommunications-help.xml
-Module Name: Microsoft.Graph.CloudCommunications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/stop-mgcommunicationcallparticipantholdmusic
+﻿---
+external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
+Module Name: Microsoft.Graph.Beta.CloudCommunications
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/stop-mgbetacommunicationcallparticipantholdmusic
 schema: 2.0.0
 ---
 
-# Stop-MgCommunicationCallParticipantHoldMusic
+# Stop-MgBetaCommunicationCallParticipantHoldMusic
 
 ## SYNOPSIS
 Reincorporate a participant previously put on hold to the call.
 
 ## SYNTAX
 
-### StopExpanded1 (Default)
+### StopExpanded (Default)
 ```
-Stop-MgCommunicationCallParticipantHoldMusic -CallId <String> -ParticipantId <String>
+Stop-MgBetaCommunicationCallParticipantHoldMusic -CallId <String> -ParticipantId <String>
  [-AdditionalProperties <Hashtable>] [-ClientContext <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Stop1
+### Stop
 ```
-Stop-MgCommunicationCallParticipantHoldMusic -CallId <String> -ParticipantId <String>
+Stop-MgBetaCommunicationCallParticipantHoldMusic -CallId <String> -ParticipantId <String>
  -BodyParameter <IPaths1AuzqgwCommunicationsCallsCallIdParticipantsParticipantIdMicrosoftGraphStopholdmusicPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### StopViaIdentityExpanded1
+### StopViaIdentityExpanded
 ```
-Stop-MgCommunicationCallParticipantHoldMusic -InputObject <ICloudCommunicationsIdentity>
+Stop-MgBetaCommunicationCallParticipantHoldMusic -InputObject <ICloudCommunicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-ClientContext <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### StopViaIdentity1
+### StopViaIdentity
 ```
-Stop-MgCommunicationCallParticipantHoldMusic -InputObject <ICloudCommunicationsIdentity>
+Stop-MgBetaCommunicationCallParticipantHoldMusic -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IPaths1AuzqgwCommunicationsCallsCallIdParticipantsParticipantIdMicrosoftGraphStopholdmusicPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -43,17 +43,14 @@ Reincorporate a participant previously put on hold to the call.
 
 ## EXAMPLES
 
-### Example 1: Using the Stop-MgCommunicationCallParticipantHoldMusic Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.CloudCommunications
+Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
 	ClientContext = "d45324c1-fcb5-430a-902c-f20af696537c"
 }
-Stop-MgCommunicationCallParticipantHoldMusic -CallId $callId -ParticipantId $participantId -BodyParameter $params
+Stop-MgBetaCommunicationCallParticipantHoldMusic -CallId $callId -ParticipantId $participantId -BodyParameter $params
 ```
-
-This example shows how to use the Stop-MgCommunicationCallParticipantHoldMusic Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -62,7 +59,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: StopExpanded1, StopViaIdentityExpanded1
+Parameter Sets: StopExpanded, StopViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -74,11 +71,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths1AuzqgwCommunicationsCallsCallIdParticipantsParticipantIdMicrosoftGraphStopholdmusicPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Stop1, StopViaIdentity1
+Parameter Sets: Stop, StopViaIdentity
 Aliases:
 
 Required: True
@@ -93,7 +90,7 @@ The unique identifier of call
 
 ```yaml
 Type: String
-Parameter Sets: StopExpanded1, Stop1
+Parameter Sets: StopExpanded, Stop
 Aliases:
 
 Required: True
@@ -108,7 +105,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: StopExpanded1, StopViaIdentityExpanded1
+Parameter Sets: StopExpanded, StopViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -120,11 +117,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ICloudCommunicationsIdentity
-Parameter Sets: StopViaIdentityExpanded1, StopViaIdentity1
+Parameter Sets: StopViaIdentityExpanded, StopViaIdentity
 Aliases:
 
 Required: True
@@ -139,7 +136,7 @@ The unique identifier of participant
 
 ```yaml
 Type: String
-Parameter Sets: StopExpanded1, Stop1
+Parameter Sets: StopExpanded, Stop
 Aliases:
 
 Required: True
@@ -185,11 +182,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths1AuzqgwCommunicationsCallsCallIdParticipantsParticipantIdMicrosoftGraphStopholdmusicPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1AuzqgwCommunicationsCallsCallIdParticipantsParticipantIdMicrosoftGraphStopholdmusicPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphStopHoldMusicOperation
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphStopHoldMusicOperation
 ## NOTES
 
 ALIASES
@@ -199,11 +196,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1AuzqgwCommunicationsCallsCallIdParticipantsParticipantIdMicrosoftGraphStopholdmusicPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1AuzqgwCommunicationsCallsCallIdParticipantsParticipantIdMicrosoftGraphStopholdmusicPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ClientContext <String>]`: 
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+`INPUTOBJECT <ICloudCommunicationsIdentity>`: Identity Parameter
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
   - `[CallId <String>]`: The unique identifier of call
@@ -213,6 +210,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
   - `[FromDateTime <DateTime?>]`: Usage: fromDateTime={fromDateTime}
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[MeetingRegistrantBaseId <String>]`: The unique identifier of meetingRegistrantBase
   - `[MeetingRegistrationQuestionId <String>]`: The unique identifier of meetingRegistrationQuestion
   - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
   - `[ParticipantId <String>]`: The unique identifier of participant

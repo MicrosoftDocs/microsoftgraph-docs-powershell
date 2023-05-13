@@ -1,44 +1,54 @@
----
-external help file: Microsoft.Graph.Files-help.xml
-Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/get-mgdriveitem
+﻿---
+external help file: Microsoft.Graph.Beta.Files-help.xml
+Module Name: Microsoft.Graph.Beta.Files
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveitem
 schema: 2.0.0
 ---
 
-# Get-MgDriveItem
+# Get-MgBetaDriveItem
 
 ## SYNOPSIS
-All items contained in the drive.
-Read-only.
-Nullable.
+Retrieve the metadata for a [bundle][] based on the unique ID of the bundle.
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgDriveItem -DriveId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
+Get-MgBetaDriveItem -DriveId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
  [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgDriveItem -DriveId <String> -DriveItemId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaDriveItem -DriveId <String> -DriveItemId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgDriveItem -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaDriveItem -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-All items contained in the drive.
-Read-only.
-Nullable.
+Retrieve the metadata for a [bundle][] based on the unique ID of the bundle.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -135,7 +145,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IFilesIdentity
@@ -244,10 +254,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IFilesIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDriveItem1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDriveItem
 ## NOTES
 
 ALIASES
@@ -257,7 +267,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+`INPUTOBJECT <IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType

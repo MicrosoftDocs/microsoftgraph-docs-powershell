@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgreorderdevicemanagementconfigurationpolicy
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetareorderdevicemanagementconfigurationpolicy
 schema: 2.0.0
 ---
 
-# Invoke-MgReorderDeviceManagementConfigurationPolicy
+# Invoke-MgBetaReorderDeviceManagementConfigurationPolicy
 
 ## SYNOPSIS
 Invoke action reorder
@@ -14,26 +14,26 @@ Invoke action reorder
 
 ### ReorderExpanded (Default)
 ```
-Invoke-MgReorderDeviceManagementConfigurationPolicy -DeviceManagementConfigurationPolicyId <String>
+Invoke-MgBetaReorderDeviceManagementConfigurationPolicy -DeviceManagementConfigurationPolicyId <String>
  [-AdditionalProperties <Hashtable>] [-Priority <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Reorder
 ```
-Invoke-MgReorderDeviceManagementConfigurationPolicy -DeviceManagementConfigurationPolicyId <String>
- -BodyParameter <IPaths14OmrrbDevicemanagementConfigurationpoliciesDevicemanagementconfigurationpolicyIdMicrosoftGraphReorderPostRequestbodyContentApplicationJsonSchema>
+Invoke-MgBetaReorderDeviceManagementConfigurationPolicy -DeviceManagementConfigurationPolicyId <String>
+ -Body <IPaths14OmrrbDevicemanagementConfigurationpoliciesDevicemanagementconfigurationpolicyIdMicrosoftGraphReorderPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ReorderViaIdentityExpanded
 ```
-Invoke-MgReorderDeviceManagementConfigurationPolicy -InputObject <IDeviceManagementActionsIdentity>
+Invoke-MgBetaReorderDeviceManagementConfigurationPolicy -InputObject <IDeviceManagementActionsIdentity>
  [-AdditionalProperties <Hashtable>] [-Priority <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ReorderViaIdentity
 ```
-Invoke-MgReorderDeviceManagementConfigurationPolicy -InputObject <IDeviceManagementActionsIdentity>
+Invoke-MgBetaReorderDeviceManagementConfigurationPolicy -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPaths14OmrrbDevicemanagementConfigurationpoliciesDevicemanagementconfigurationpolicyIdMicrosoftGraphReorderPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -42,6 +42,16 @@ Invoke-MgReorderDeviceManagementConfigurationPolicy -InputObject <IDeviceManagem
 Invoke action reorder
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -60,13 +70,29 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -BodyParameter
+### -Body
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
 Type: IPaths14OmrrbDevicemanagementConfigurationpoliciesDevicemanagementconfigurationpolicyIdMicrosoftGraphReorderPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Reorder, ReorderViaIdentity
+Parameter Sets: Reorder
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -BodyParameter
+.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+```yaml
+Type: IPaths14OmrrbDevicemanagementConfigurationpoliciesDevicemanagementconfigurationpolicyIdMicrosoftGraphReorderPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: ReorderViaIdentity
 Aliases:
 
 Required: True
@@ -93,7 +119,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementActionsIdentity
@@ -173,8 +199,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths14OmrrbDevicemanagementConfigurationpoliciesDevicemanagementconfigurationpolicyIdMicrosoftGraphReorderPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths14OmrrbDevicemanagementConfigurationpoliciesDevicemanagementconfigurationpolicyIdMicrosoftGraphReorderPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### System.Boolean
@@ -187,11 +213,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths14OmrrbDevicemanagementConfigurationpoliciesDevicemanagementconfigurationpolicyIdMicrosoftGraphReorderPostRequestbodyContentApplicationJsonSchema>`: .
+`BODY <IPaths14OmrrbDevicemanagementConfigurationpoliciesDevicemanagementconfigurationpolicyIdMicrosoftGraphReorderPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Priority <Int32?>]`: 
 
-INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
+`BODYPARAMETER <IPaths14OmrrbDevicemanagementConfigurationpoliciesDevicemanagementconfigurationpolicyIdMicrosoftGraphReorderPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Priority <Int32?>]`: 
+
+`INPUTOBJECT <IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[AlertRecordId <String>]`: The unique identifier of alertRecord
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: The unique identifier of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: The unique identifier of androidForWorkEnrollmentProfile
@@ -235,7 +265,6 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[MicrosoftTunnelSiteId <String>]`: The unique identifier of microsoftTunnelSite
   - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
   - `[NotificationMessageTemplateId <String>]`: The unique identifier of notificationMessageTemplate
-  - `[OemWarrantyInformationOnboardingId <String>]`: The unique identifier of oemWarrantyInformationOnboarding
   - `[RemoteAssistancePartnerId <String>]`: The unique identifier of remoteAssistancePartner
   - `[RoleScopeTagId <String>]`: The unique identifier of roleScopeTag
   - `[WindowsAutopilotDeploymentProfileId <String>]`: The unique identifier of windowsAutopilotDeploymentProfile

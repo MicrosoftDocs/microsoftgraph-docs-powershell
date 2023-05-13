@@ -1,6 +1,6 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Enrolment
+﻿---
+external help file: Microsoft.Graph.Identity.Governance-help.xml
+Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/update-mgrolemanagementdirectory
 schema: 2.0.0
 ---
@@ -12,7 +12,7 @@ Update the navigation property directory in roleManagement
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### UpdateExpanded (Default)
 ```
 Update-MgRoleManagementDirectory [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-ResourceNamespaces <IMicrosoftGraphUnifiedRbacResourceNamespace[]>]
@@ -20,17 +20,17 @@ Update-MgRoleManagementDirectory [-AdditionalProperties <Hashtable>] [-Id <Strin
  [-RoleAssignmentScheduleRequests <IMicrosoftGraphUnifiedRoleAssignmentScheduleRequest[]>]
  [-RoleAssignmentSchedules <IMicrosoftGraphUnifiedRoleAssignmentSchedule[]>]
  [-RoleAssignments <IMicrosoftGraphUnifiedRoleAssignment[]>]
- [-RoleDefinitions <IMicrosoftGraphUnifiedRoleDefinition1[]>]
+ [-RoleDefinitions <IMicrosoftGraphUnifiedRoleDefinition[]>]
  [-RoleEligibilityScheduleInstances <IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance[]>]
  [-RoleEligibilityScheduleRequests <IMicrosoftGraphUnifiedRoleEligibilityScheduleRequest[]>]
- [-RoleEligibilitySchedules <IMicrosoftGraphUnifiedRoleEligibilitySchedule[]>] [-PassThru] [-WhatIf] [-Confirm]
+ [-RoleEligibilitySchedules <IMicrosoftGraphUnifiedRoleEligibilitySchedule[]>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### Update1
+### Update
 ```
-Update-MgRoleManagementDirectory -BodyParameter <IMicrosoftGraphRbacApplication1> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgRoleManagementDirectory -BodyParameter <IMicrosoftGraphRbacApplication> [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -45,7 +45,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded1
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -60,8 +60,8 @@ rbacApplication
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRbacApplication1
-Parameter Sets: Update1
+Type: IMicrosoftGraphRbacApplication
+Parameter Sets: Update
 Aliases:
 
 Required: True
@@ -77,22 +77,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -108,7 +93,7 @@ To construct, please use Get-Help -Online and see NOTES section for RESOURCENAME
 
 ```yaml
 Type: IMicrosoftGraphUnifiedRbacResourceNamespace[]
-Parameter Sets: UpdateExpanded1
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -124,7 +109,7 @@ To construct, please use Get-Help -Online and see NOTES section for ROLEASSIGNME
 
 ```yaml
 Type: IMicrosoftGraphUnifiedRoleAssignment[]
-Parameter Sets: UpdateExpanded1
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -140,7 +125,7 @@ To construct, please use Get-Help -Online and see NOTES section for ROLEASSIGNME
 
 ```yaml
 Type: IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance[]
-Parameter Sets: UpdateExpanded1
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -156,7 +141,7 @@ To construct, please use Get-Help -Online and see NOTES section for ROLEASSIGNME
 
 ```yaml
 Type: IMicrosoftGraphUnifiedRoleAssignmentScheduleRequest[]
-Parameter Sets: UpdateExpanded1
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -172,7 +157,7 @@ To construct, please use Get-Help -Online and see NOTES section for ROLEASSIGNME
 
 ```yaml
 Type: IMicrosoftGraphUnifiedRoleAssignmentSchedule[]
-Parameter Sets: UpdateExpanded1
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -187,8 +172,8 @@ Resource representing the roles allowed by RBAC providers and the permissions as
 To construct, please use Get-Help -Online and see NOTES section for ROLEDEFINITIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUnifiedRoleDefinition1[]
-Parameter Sets: UpdateExpanded1
+Type: IMicrosoftGraphUnifiedRoleDefinition[]
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -204,7 +189,7 @@ To construct, please use Get-Help -Online and see NOTES section for ROLEELIGIBIL
 
 ```yaml
 Type: IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance[]
-Parameter Sets: UpdateExpanded1
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -220,7 +205,7 @@ To construct, please use Get-Help -Online and see NOTES section for ROLEELIGIBIL
 
 ```yaml
 Type: IMicrosoftGraphUnifiedRoleEligibilityScheduleRequest[]
-Parameter Sets: UpdateExpanded1
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -236,7 +221,7 @@ To construct, please use Get-Help -Online and see NOTES section for ROLEELIGIBIL
 
 ```yaml
 Type: IMicrosoftGraphUnifiedRoleEligibilitySchedule[]
-Parameter Sets: UpdateExpanded1
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -282,10 +267,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRbacApplication1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRbacApplication
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRbacApplication
 ## NOTES
 
 ALIASES
@@ -998,5 +983,8 @@ ROLEELIGIBILITYSCHEDULES <IMicrosoftGraphUnifiedRoleEligibilitySchedule\[]>: Sch
     - `[StartDateTime <DateTime?>]`: When the  eligible or active assignment becomes active.
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS

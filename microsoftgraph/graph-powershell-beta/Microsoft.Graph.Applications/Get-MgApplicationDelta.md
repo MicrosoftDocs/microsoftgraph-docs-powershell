@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Applications-help.xml
-Module Name: Microsoft.Graph.Applications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgapplicationdelta
+﻿---
+external help file: Microsoft.Graph.Beta.Applications-help.xml
+Module Name: Microsoft.Graph.Beta.Applications
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationdelta
 schema: 2.0.0
 ---
 
-# Get-MgApplicationDelta
+# Get-MgBetaApplicationDelta
 
 ## SYNOPSIS
 Invoke function delta
@@ -13,7 +13,7 @@ Invoke function delta
 ## SYNTAX
 
 ```
-Get-MgApplicationDelta [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
+Get-MgBetaApplicationDelta [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
  [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
@@ -22,14 +22,11 @@ Invoke function delta
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgApplicationDelta Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Applications
-Get-MgApplicationDelta
+Import-Module Microsoft.Graph.Beta.Applications
+Get-MgBetaApplicationDelta
 ```
-
-This example shows how to use the Get-MgApplicationDelta Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -176,7 +173,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphApplication1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphApplication
 ## NOTES
 
 ALIASES

@@ -1,7 +1,7 @@
----
+﻿---
 Module Name: Microsoft.Graph.PersonalContacts
-Module Guid: d2ad9986-d798-457f-a030-a01a923ff010
-Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.personalcontacts
+Module Guid: a3841056-01c0-46f5-ba9d-6ba4a84b883d
+Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts
 Help Version: 1.0.0.0
 Locale: en-US
 ---
@@ -12,19 +12,23 @@ Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.PersonalContacts Cmdlets
 ### [Get-MgUserContact](Get-MgUserContact.md)
-The user's contacts.
-Read-only.
-Nullable.
+Retrieve the properties and relationships of a contact object.
+There are two scenarios where an app can get a contact in another user's contact folder:
+
+### [Get-MgUserContactCount](Get-MgUserContactCount.md)
+Get the number of the resource
 
 ### [Get-MgUserContactExtension](Get-MgUserContactExtension.md)
 The collection of open extensions defined for the contact.
 Read-only.
 Nullable.
 
+### [Get-MgUserContactExtensionCount](Get-MgUserContactExtensionCount.md)
+Get the number of the resource
+
 ### [Get-MgUserContactFolder](Get-MgUserContactFolder.md)
-The user's contacts folders.
-Read-only.
-Nullable.
+Get a contact folder by using the contact folder ID.
+There are two scenarios where an app can get another user's contact folder:
 
 ### [Get-MgUserContactFolderChildFolder](Get-MgUserContactFolderChildFolder.md)
 The collection of child folders in the folder.
@@ -38,10 +42,16 @@ Navigation property.
 Read-only.
 Nullable.
 
+### [Get-MgUserContactFolderChildFolderContactCount](Get-MgUserContactFolderChildFolderContactCount.md)
+Get the number of the resource
+
 ### [Get-MgUserContactFolderChildFolderContactExtension](Get-MgUserContactFolderChildFolderContactExtension.md)
 The collection of open extensions defined for the contact.
 Read-only.
 Nullable.
+
+### [Get-MgUserContactFolderChildFolderContactExtensionCount](Get-MgUserContactFolderChildFolderContactExtensionCount.md)
+Get the number of the resource
 
 ### [Get-MgUserContactFolderChildFolderContactMultiValueExtendedProperty](Get-MgUserContactFolderChildFolderContactMultiValueExtendedProperty.md)
 The collection of multi-value extended properties defined for the contact.
@@ -60,6 +70,9 @@ The collection of single-value extended properties defined for the contact.
 Read-only.
 Nullable.
 
+### [Get-MgUserContactFolderChildFolderCount](Get-MgUserContactFolderChildFolderCount.md)
+Get the number of the resource
+
 ### [Get-MgUserContactFolderChildFolderMultiValueExtendedProperty](Get-MgUserContactFolderChildFolderMultiValueExtendedProperty.md)
 The collection of multi-value extended properties defined for the contactFolder.
 Read-only.
@@ -76,10 +89,16 @@ Navigation property.
 Read-only.
 Nullable.
 
+### [Get-MgUserContactFolderContactCount](Get-MgUserContactFolderContactCount.md)
+Get the number of the resource
+
 ### [Get-MgUserContactFolderContactExtension](Get-MgUserContactFolderContactExtension.md)
 The collection of open extensions defined for the contact.
 Read-only.
 Nullable.
+
+### [Get-MgUserContactFolderContactExtensionCount](Get-MgUserContactFolderContactExtensionCount.md)
+Get the number of the resource
 
 ### [Get-MgUserContactFolderContactMultiValueExtendedProperty](Get-MgUserContactFolderContactMultiValueExtendedProperty.md)
 The collection of multi-value extended properties defined for the contact.
@@ -97,6 +116,9 @@ Get media content for the navigation property photo from users
 The collection of single-value extended properties defined for the contact.
 Read-only.
 Nullable.
+
+### [Get-MgUserContactFolderCount](Get-MgUserContactFolderCount.md)
+Get the number of the resource
 
 ### [Get-MgUserContactFolderMultiValueExtendedProperty](Get-MgUserContactFolderMultiValueExtendedProperty.md)
 The collection of multi-value extended properties defined for the contactFolder.
@@ -182,13 +204,13 @@ Create new navigation property to multiValueExtendedProperties for users
 Create new navigation property to singleValueExtendedProperties for users
 
 ### [Remove-MgUserContact](Remove-MgUserContact.md)
-Delete navigation property contacts for users
+Delete a contact.
 
 ### [Remove-MgUserContactExtension](Remove-MgUserContactExtension.md)
 Delete navigation property extensions for users
 
 ### [Remove-MgUserContactFolder](Remove-MgUserContactFolder.md)
-Delete navigation property contactFolders for users
+Delete contactFolder other than the default contactFolder.
 
 ### [Remove-MgUserContactFolderChildFolder](Remove-MgUserContactFolderChildFolder.md)
 Delete navigation property childFolders for users
@@ -245,13 +267,13 @@ Update media content for the navigation property photo in users
 Update media content for the navigation property photo in users
 
 ### [Update-MgUserContact](Update-MgUserContact.md)
-Update the navigation property contacts in users
+Update the properties of a contact object.
 
 ### [Update-MgUserContactExtension](Update-MgUserContactExtension.md)
 Update the navigation property extensions in users
 
 ### [Update-MgUserContactFolder](Update-MgUserContactFolder.md)
-Update the navigation property contactFolders in users
+Update the properties of contactfolder object.
 
 ### [Update-MgUserContactFolderChildFolder](Update-MgUserContactFolderChildFolder.md)
 Update the navigation property childFolders in users

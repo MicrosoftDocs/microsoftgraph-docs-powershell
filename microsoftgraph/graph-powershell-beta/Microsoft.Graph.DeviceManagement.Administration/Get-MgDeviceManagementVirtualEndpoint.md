@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Administration
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpoint
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpoint
 schema: 2.0.0
 ---
 
-# Get-MgDeviceManagementVirtualEndpoint
+# Get-MgBetaDeviceManagementVirtualEndpoint
 
 ## SYNOPSIS
 Get virtualEndpoint from deviceManagement
@@ -13,13 +13,28 @@ Get virtualEndpoint from deviceManagement
 ## SYNTAX
 
 ```
-Get-MgDeviceManagementVirtualEndpoint [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaDeviceManagementVirtualEndpoint [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get virtualEndpoint from deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -60,7 +75,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphVirtualEndpoint
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVirtualEndpoint
 ## NOTES
 
 ALIASES

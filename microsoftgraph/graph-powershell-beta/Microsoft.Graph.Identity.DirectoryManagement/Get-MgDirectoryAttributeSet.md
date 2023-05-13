@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryattributeset
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryattributeset
 schema: 2.0.0
 ---
 
-# Get-MgDirectoryAttributeSet
+# Get-MgBetaDirectoryAttributeSet
 
 ## SYNOPSIS
 Group of related custom security attribute definitions.
@@ -14,21 +14,21 @@ Group of related custom security attribute definitions.
 
 ### List (Default)
 ```
-Get-MgDirectoryAttributeSet [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
+Get-MgBetaDirectoryAttributeSet [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
  [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgDirectoryAttributeSet -AttributeSetId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaDirectoryAttributeSet -AttributeSetId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgDirectoryAttributeSet -InputObject <IIdentityDirectoryManagementIdentity> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaDirectoryAttributeSet -InputObject <IIdentityDirectoryManagementIdentity>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -36,41 +36,29 @@ Group of related custom security attribute definitions.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgDirectoryAttributeSet Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
-Get-MgDirectoryAttributeSet -AttributeSetId $attributeSetId
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+Get-MgBetaDirectoryAttributeSet -AttributeSetId $attributeSetId
 ```
 
-This example shows how to use the Get-MgDirectoryAttributeSet Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Get-MgDirectoryAttributeSet Cmdlet
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
-Get-MgDirectoryAttributeSet
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+Get-MgBetaDirectoryAttributeSet
 ```
 
-This example shows how to use the Get-MgDirectoryAttributeSet Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Using the Get-MgDirectoryAttributeSet Cmdlet
+### EXAMPLE 3
 ```powershell
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
-Get-MgDirectoryAttributeSet -Sort "id"
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+Get-MgBetaDirectoryAttributeSet -Sort "id"
 ```
 
-This example shows how to use the Get-MgDirectoryAttributeSet Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 4: Using the Get-MgDirectoryAttributeSet Cmdlet
+### EXAMPLE 4
 ```powershell
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
-Get-MgDirectoryAttributeSet -Top 10
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+Get-MgBetaDirectoryAttributeSet -Top 10
 ```
-
-This example shows how to use the Get-MgDirectoryAttributeSet Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -152,7 +140,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IIdentityDirectoryManagementIdentity
@@ -261,10 +249,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttributeSet
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAttributeSet
 ## NOTES
 
 ALIASES
@@ -274,7 +262,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet

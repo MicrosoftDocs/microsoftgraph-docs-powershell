@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementreportconfigmanagerdevicepolicystatusreport
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportconfigmanagerdevicepolicystatusreport
 schema: 2.0.0
 ---
 
-# Get-MgDeviceManagementReportConfigManagerDevicePolicyStatusReport
+# Get-MgBetaDeviceManagementReportConfigManagerDevicePolicyStatusReport
 
 ## SYNOPSIS
 Invoke action getConfigManagerDevicePolicyStatusReport
@@ -14,7 +14,7 @@ Invoke action getConfigManagerDevicePolicyStatusReport
 
 ### GetExpanded (Default)
 ```
-Get-MgDeviceManagementReportConfigManagerDevicePolicyStatusReport -OutFile <String>
+Get-MgBetaDeviceManagementReportConfigManagerDevicePolicyStatusReport -OutFile <String>
  [-AdditionalProperties <Hashtable>] [-Filter <String>] [-GroupBy <String[]>] [-Name <String>]
  [-Property <String[]>] [-Search <String>] [-SessionId <String>] [-Skip <Int32>] [-Sort <String[]>]
  [-Top <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -22,7 +22,7 @@ Get-MgDeviceManagementReportConfigManagerDevicePolicyStatusReport -OutFile <Stri
 
 ### Get
 ```
-Get-MgDeviceManagementReportConfigManagerDevicePolicyStatusReport -OutFile <String>
+Get-MgBetaDeviceManagementReportConfigManagerDevicePolicyStatusReport -OutFile <String>
  -BodyParameter <IPathsYuwr1TDevicemanagementReportsMicrosoftGraphGetconfigmanagerdevicepolicystatusreportPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -31,6 +31,20 @@ Get-MgDeviceManagementReportConfigManagerDevicePolicyStatusReport -OutFile <Stri
 Invoke action getConfigManagerDevicePolicyStatusReport
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -51,7 +65,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPathsYuwr1TDevicemanagementReportsMicrosoftGraphGetconfigmanagerdevicepolicystatusreportPostRequestbodyContentApplicationJsonSchema
@@ -266,7 +280,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsYuwr1TDevicemanagementReportsMicrosoftGraphGetconfigmanagerdevicepolicystatusreportPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsYuwr1TDevicemanagementReportsMicrosoftGraphGetconfigmanagerdevicepolicystatusreportPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### System.Boolean
@@ -279,7 +293,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsYuwr1TDevicemanagementReportsMicrosoftGraphGetconfigmanagerdevicepolicystatusreportPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsYuwr1TDevicemanagementReportsMicrosoftGraphGetconfigmanagerdevicepolicystatusreportPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Filter <String>]`: 
   - `[GroupBy <String[]>]`: 

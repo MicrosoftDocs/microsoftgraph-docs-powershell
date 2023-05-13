@@ -1,7 +1,7 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/set-mgusertodolisttaskattachmentcontent
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/set-mgusertodolisttaskattachmentcontent
 schema: 2.0.0
 ---
 
@@ -12,23 +12,37 @@ Update media content for the navigation property attachments in users
 
 ## SYNTAX
 
-### Set1 (Default)
+### Set (Default)
 ```
 Set-MgUserTodoListTaskAttachmentContent -AttachmentBaseId <String> -TodoTaskId <String>
- -TodoTaskListId <String> -UserId <String> [-BodyParameter <Stream>] -InFile <String> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -TodoTaskListId <String> -UserId <String> [-Data <Stream>] -InFile <String> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
-### SetViaIdentity1
+### SetViaIdentity
 ```
-Set-MgUserTodoListTaskAttachmentContent -InputObject <IUsersIdentity> [-BodyParameter <Stream>]
- -InFile <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-MgUserTodoListTaskAttachmentContent -InputObject <IUsersIdentity> [-Data <Stream>] -InFile <String>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update media content for the navigation property attachments in users
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -37,7 +51,7 @@ The unique identifier of attachmentBase
 
 ```yaml
 Type: String
-Parameter Sets: Set1
+Parameter Sets: Set
 Aliases:
 
 Required: True
@@ -47,7 +61,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -BodyParameter
+### -Data
 .
 
 ```yaml
@@ -81,11 +95,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersIdentity
-Parameter Sets: SetViaIdentity1
+Parameter Sets: SetViaIdentity
 Aliases:
 
 Required: True
@@ -115,7 +129,7 @@ The unique identifier of todoTask
 
 ```yaml
 Type: String
-Parameter Sets: Set1
+Parameter Sets: Set
 Aliases:
 
 Required: True
@@ -130,7 +144,7 @@ The unique identifier of todoTaskList
 
 ```yaml
 Type: String
-Parameter Sets: Set1
+Parameter Sets: Set
 Aliases:
 
 Required: True
@@ -145,7 +159,7 @@ The unique identifier of user
 
 ```yaml
 Type: String
-Parameter Sets: Set1
+Parameter Sets: Set
 Aliases:
 
 Required: True
@@ -205,24 +219,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersIdentity>`: Identity Parameter
   - `[AttachmentBaseId <String>]`: The unique identifier of attachmentBase
-  - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[AttachmentSessionId <String>]`: The unique identifier of attachmentSession
   - `[ChecklistItemId <String>]`: The unique identifier of checklistItem
   - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
   - `[LinkedResourceId <String>]`: The unique identifier of linkedResource
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
-  - `[NotificationId <String>]`: The unique identifier of notification
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[OutlookCategoryId <String>]`: The unique identifier of outlookCategory
-  - `[OutlookTaskFolderId <String>]`: The unique identifier of outlookTaskFolder
-  - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
-  - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
   - `[TodoTaskId <String>]`: The unique identifier of todoTask
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
   - `[UserId <String>]`: The unique identifier of user

@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Sites-help.xml
-Module Name: Microsoft.Graph.Sites
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/get-mgsitelistactivity
+﻿---
+external help file: Microsoft.Graph.Beta.Sites-help.xml
+Module Name: Microsoft.Graph.Beta.Sites
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistactivity
 schema: 2.0.0
 ---
 
-# Get-MgSiteListActivity
+# Get-MgBetaSiteListActivity
 
 ## SYNOPSIS
 The recent activities that took place within this list.
@@ -13,7 +13,7 @@ The recent activities that took place within this list.
 ## SYNTAX
 
 ```
-Get-MgSiteListActivity -ListId <String> -SiteId <String> [-ExpandProperty <String[]>] [-Filter <String>]
+Get-MgBetaSiteListActivity -ListId <String> -SiteId <String> [-ExpandProperty <String[]>] [-Filter <String>]
  [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
@@ -22,6 +22,20 @@ Get-MgSiteListActivity -ListId <String> -SiteId <String> [-ExpandProperty <Strin
 The recent activities that took place within this list.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -213,7 +227,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemActivityOld
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItemActivityOld
 ## NOTES
 
 ALIASES

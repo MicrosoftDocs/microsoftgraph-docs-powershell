@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
-Module Name: Microsoft.Graph.Devices.CloudPrint
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintshareallowedgroupbyref
+﻿---
+external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
+Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintshareallowedgroupbyref
 schema: 2.0.0
 ---
 
-# Get-MgPrintShareAllowedGroupByRef
+# Get-MgBetaPrintShareAllowedGroupByRef
 
 ## SYNOPSIS
 Retrieve a list of groups that have been granted access to submit print jobs to the associated printerShare.
@@ -13,7 +13,7 @@ Retrieve a list of groups that have been granted access to submit print jobs to 
 ## SYNTAX
 
 ```
-Get-MgPrintShareAllowedGroupByRef -PrinterShareId <String> [-Filter <String>] [-Search <String>]
+Get-MgBetaPrintShareAllowedGroupByRef -PrinterShareId <String> [-Filter <String>] [-Search <String>]
  [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
  [<CommonParameters>]
 ```
@@ -22,6 +22,20 @@ Get-MgPrintShareAllowedGroupByRef -PrinterShareId <String> [-Filter <String>] [-
 Retrieve a list of groups that have been granted access to submit print jobs to the associated printerShare.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 

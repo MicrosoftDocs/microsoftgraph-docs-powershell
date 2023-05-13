@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementuserexperienceanalyticworkfromanywherehardwarereadinessmetric
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementuserexperienceanalyticworkfromanywherehardwarereadinessmetric
 schema: 2.0.0
 ---
 
-# Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric
+# Get-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric
 
 ## SYNOPSIS
 User experience analytics work from anywhere hardware readiness metrics.
@@ -13,7 +13,7 @@ User experience analytics work from anywhere hardware readiness metrics.
 ## SYNTAX
 
 ```
-Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric
+Get-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
@@ -21,6 +21,20 @@ Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMet
 User experience analytics work from anywhere hardware readiness metrics.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -61,7 +75,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric
 ## NOTES
 
 ALIASES

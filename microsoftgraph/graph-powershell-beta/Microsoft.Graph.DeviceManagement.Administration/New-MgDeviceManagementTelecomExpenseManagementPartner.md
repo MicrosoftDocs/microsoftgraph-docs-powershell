@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Administration
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementtelecomexpensemanagementpartner
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementtelecomexpensemanagementpartner
 schema: 2.0.0
 ---
 
-# New-MgDeviceManagementTelecomExpenseManagementPartner
+# New-MgBetaDeviceManagementTelecomExpenseManagementPartner
 
 ## SYNOPSIS
 Create new navigation property to telecomExpenseManagementPartners for deviceManagement
@@ -14,14 +14,14 @@ Create new navigation property to telecomExpenseManagementPartners for deviceMan
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementTelecomExpenseManagementPartner [-AdditionalProperties <Hashtable>] [-AppAuthorized]
+New-MgBetaDeviceManagementTelecomExpenseManagementPartner [-AdditionalProperties <Hashtable>] [-AppAuthorized]
  [-DisplayName <String>] [-Enabled] [-Id <String>] [-LastConnectionDateTime <DateTime>] [-Url <String>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceManagementTelecomExpenseManagementPartner
+New-MgBetaDeviceManagementTelecomExpenseManagementPartner
  -BodyParameter <IMicrosoftGraphTelecomExpenseManagementPartner> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -29,6 +29,20 @@ New-MgDeviceManagementTelecomExpenseManagementPartner
 Create new navigation property to telecomExpenseManagementPartners for deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -65,7 +79,7 @@ Accept wildcard characters: False
 ### -BodyParameter
 telecomExpenseManagementPartner resources represent the metadata and status of a given TEM service.
 Once your organization has onboarded with a partner, the partner can be enabled or disabled to switch TEM functionality on or off.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphTelecomExpenseManagementPartner
@@ -110,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -191,10 +205,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTelecomExpenseManagementPartner
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTelecomExpenseManagementPartner
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTelecomExpenseManagementPartner
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTelecomExpenseManagementPartner
 ## NOTES
 
 ALIASES
@@ -204,9 +218,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphTelecomExpenseManagementPartner>`: telecomExpenseManagementPartner resources represent the metadata and status of a given TEM service. Once your organization has onboarded with a partner, the partner can be enabled or disabled to switch TEM functionality on or off.
+`BODYPARAMETER <IMicrosoftGraphTelecomExpenseManagementPartner>`: telecomExpenseManagementPartner resources represent the metadata and status of a given TEM service. Once your organization has onboarded with a partner, the partner can be enabled or disabled to switch TEM functionality on or off.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AppAuthorized <Boolean?>]`: Whether the partner's AAD app has been authorized to access Intune.
   - `[DisplayName <String>]`: Display name of the TEM partner.
   - `[Enabled <Boolean?>]`: Whether Intune's connection to the TEM service is currently enabled or disabled.

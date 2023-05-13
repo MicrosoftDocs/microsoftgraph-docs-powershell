@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Administration
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementgrouppolicymigrationreport
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementgrouppolicymigrationreport
 schema: 2.0.0
 ---
 
-# Update-MgDeviceManagementGroupPolicyMigrationReport
+# Update-MgBetaDeviceManagementGroupPolicyMigrationReport
 
 ## SYNOPSIS
 Update the navigation property groupPolicyMigrationReports in deviceManagement
@@ -14,48 +14,60 @@ Update the navigation property groupPolicyMigrationReports in deviceManagement
 
 ### UpdateExpanded (Default)
 ```
-Update-MgDeviceManagementGroupPolicyMigrationReport -GroupPolicyMigrationReportId <String>
+Update-MgBetaDeviceManagementGroupPolicyMigrationReport -GroupPolicyMigrationReportId <String>
  [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-DisplayName <String>]
  [-GroupPolicyCreatedDateTime <DateTime>] [-GroupPolicyLastModifiedDateTime <DateTime>]
  [-GroupPolicyObjectId <String>] [-GroupPolicySettingMappings <IMicrosoftGraphGroupPolicySettingMapping[]>]
  [-Id <String>] [-LastModifiedDateTime <DateTime>] [-MigrationReadiness <GroupPolicyMigrationReadiness>]
  [-OuDistinguishedName <String>] [-RoleScopeTagIds <String[]>] [-SupportedSettingsCount <Int32>]
  [-SupportedSettingsPercent <Int32>] [-TargetedInActiveDirectory] [-TotalSettingsCount <Int32>]
- [-UnsupportedGroupPolicyExtensions <IMicrosoftGraphUnsupportedGroupPolicyExtension[]>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-UnsupportedGroupPolicyExtensions <IMicrosoftGraphUnsupportedGroupPolicyExtension[]>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgDeviceManagementGroupPolicyMigrationReport -GroupPolicyMigrationReportId <String>
- -BodyParameter <IMicrosoftGraphGroupPolicyMigrationReport> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaDeviceManagementGroupPolicyMigrationReport -GroupPolicyMigrationReportId <String>
+ -BodyParameter <IMicrosoftGraphGroupPolicyMigrationReport> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgDeviceManagementGroupPolicyMigrationReport -InputObject <IDeviceManagementAdministrationIdentity>
+Update-MgBetaDeviceManagementGroupPolicyMigrationReport -InputObject <IDeviceManagementAdministrationIdentity>
  [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-DisplayName <String>]
  [-GroupPolicyCreatedDateTime <DateTime>] [-GroupPolicyLastModifiedDateTime <DateTime>]
  [-GroupPolicyObjectId <String>] [-GroupPolicySettingMappings <IMicrosoftGraphGroupPolicySettingMapping[]>]
  [-Id <String>] [-LastModifiedDateTime <DateTime>] [-MigrationReadiness <GroupPolicyMigrationReadiness>]
  [-OuDistinguishedName <String>] [-RoleScopeTagIds <String[]>] [-SupportedSettingsCount <Int32>]
  [-SupportedSettingsPercent <Int32>] [-TargetedInActiveDirectory] [-TotalSettingsCount <Int32>]
- [-UnsupportedGroupPolicyExtensions <IMicrosoftGraphUnsupportedGroupPolicyExtension[]>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-UnsupportedGroupPolicyExtensions <IMicrosoftGraphUnsupportedGroupPolicyExtension[]>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgDeviceManagementGroupPolicyMigrationReport -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphGroupPolicyMigrationReport> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaDeviceManagementGroupPolicyMigrationReport -InputObject <IDeviceManagementAdministrationIdentity>
+ -BodyParameter <IMicrosoftGraphGroupPolicyMigrationReport> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property groupPolicyMigrationReports in deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -76,7 +88,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 The Group Policy migration report.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphGroupPolicyMigrationReport
@@ -182,7 +194,7 @@ Accept wildcard characters: False
 
 ### -GroupPolicySettingMappings
 A list of group policy settings to MDM/Intune mappings.
-To construct, please use Get-Help -Online and see NOTES section for GROUPPOLICYSETTINGMAPPINGS properties and create a hash table.
+To construct, see NOTES section for GROUPPOLICYSETTINGMAPPINGS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphGroupPolicySettingMapping[]
@@ -197,7 +209,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -214,7 +226,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementAdministrationIdentity
@@ -264,21 +276,6 @@ The distinguished name of the OU.
 ```yaml
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -365,7 +362,7 @@ Accept wildcard characters: False
 
 ### -UnsupportedGroupPolicyExtensions
 A list of unsupported group policy extensions inside the Group Policy Object.
-To construct, please use Get-Help -Online and see NOTES section for UNSUPPORTEDGROUPPOLICYEXTENSIONS properties and create a hash table.
+To construct, see NOTES section for UNSUPPORTEDGROUPPOLICYEXTENSIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUnsupportedGroupPolicyExtension[]
@@ -415,11 +412,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupPolicyMigrationReport
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementAdministrationIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicyMigrationReport
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicyMigrationReport
 ## NOTES
 
 ALIASES
@@ -429,16 +426,16 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphGroupPolicyMigrationReport>`: The Group Policy migration report.
+`BODYPARAMETER <IMicrosoftGraphGroupPolicyMigrationReport>`: The Group Policy migration report.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[CreatedDateTime <DateTime?>]`: The date and time at which the GroupPolicyMigrationReport was created.
   - `[DisplayName <String>]`: The name of Group Policy Object from the GPO Xml Content
   - `[GroupPolicyCreatedDateTime <DateTime?>]`: The date and time at which the GroupPolicyMigrationReport was created.
   - `[GroupPolicyLastModifiedDateTime <DateTime?>]`: The date and time at which the GroupPolicyMigrationReport was last modified.
   - `[GroupPolicyObjectId <String>]`: The Group Policy Object GUID from GPO Xml content
   - `[GroupPolicySettingMappings <IMicrosoftGraphGroupPolicySettingMapping[]>]`: A list of group policy settings to MDM/Intune mappings.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[AdmxSettingDefinitionId <String>]`: Admx Group Policy Id
     - `[ChildIdList <String[]>]`: List of Child Ids of the group policy setting.
     - `[IntuneSettingDefinitionId <String>]`: The Intune Setting Definition Id
@@ -468,14 +465,14 @@ BODYPARAMETER `<IMicrosoftGraphGroupPolicyMigrationReport>`: The Group Policy mi
   - `[TargetedInActiveDirectory <Boolean?>]`: The Targeted in AD property from GPO Xml Content
   - `[TotalSettingsCount <Int32?>]`: The total number of Group Policy Settings from GPO file.
   - `[UnsupportedGroupPolicyExtensions <IMicrosoftGraphUnsupportedGroupPolicyExtension[]>]`: A list of unsupported group policy extensions inside the Group Policy Object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[ExtensionType <String>]`: ExtensionType of the unsupported extension.
     - `[NamespaceUrl <String>]`: Namespace Url of the unsupported extension.
     - `[NodeName <String>]`: Node name of the unsupported extension.
     - `[SettingScope <GroupPolicySettingScope?>]`: Scope of the group policy setting.
 
-GROUPPOLICYSETTINGMAPPINGS <IMicrosoftGraphGroupPolicySettingMapping\[]>: A list of group policy settings to MDM/Intune mappings.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`GROUPPOLICYSETTINGMAPPINGS <IMicrosoftGraphGroupPolicySettingMapping[]>`: A list of group policy settings to MDM/Intune mappings.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AdmxSettingDefinitionId <String>]`: Admx Group Policy Id
   - `[ChildIdList <String[]>]`: List of Child Ids of the group policy setting.
   - `[IntuneSettingDefinitionId <String>]`: The Intune Setting Definition Id
@@ -497,7 +494,7 @@ GROUPPOLICYSETTINGMAPPINGS <IMicrosoftGraphGroupPolicySettingMapping\[]>: A list
   - `[SettingValueDisplayUnits <String>]`: The display units of this group policy setting value
   - `[SettingValueType <String>]`: The value type of this group policy setting.
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[AuditEventId <String>]`: The unique identifier of auditEvent
   - `[CartToClassAssociationId <String>]`: The unique identifier of cartToClassAssociation
   - `[CloudPcAuditEventId <String>]`: The unique identifier of cloudPcAuditEvent
@@ -554,8 +551,8 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[UserPfxCertificateId <String>]`: The unique identifier of userPFXCertificate
 
-UNSUPPORTEDGROUPPOLICYEXTENSIONS <IMicrosoftGraphUnsupportedGroupPolicyExtension\[]>: A list of unsupported group policy extensions inside the Group Policy Object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`UNSUPPORTEDGROUPPOLICYEXTENSIONS <IMicrosoftGraphUnsupportedGroupPolicyExtension[]>`: A list of unsupported group policy extensions inside the Group Policy Object.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ExtensionType <String>]`: ExtensionType of the unsupported extension.
   - `[NamespaceUrl <String>]`: Namespace Url of the unsupported extension.
   - `[NodeName <String>]`: Node name of the unsupported extension.

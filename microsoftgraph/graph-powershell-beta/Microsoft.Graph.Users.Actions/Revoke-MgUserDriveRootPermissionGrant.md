@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Users.Actions-help.xml
-Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/revoke-mguserdriverootpermissiongrant
+﻿---
+external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.Users.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/revoke-mgbetauserdriverootpermissiongrant
 schema: 2.0.0
 ---
 
-# Revoke-MgUserDriveRootPermissionGrant
+# Revoke-MgBetaUserDriveRootPermissionGrant
 
 ## SYNOPSIS
 Revoke access to a [listItem][] or [driveItem][] granted via a sharing link by removing the specified [recipient][] from the link.
@@ -14,27 +14,28 @@ Revoke access to a [listItem][] or [driveItem][] granted via a sharing link by r
 
 ### RevokeExpanded (Default)
 ```
-Revoke-MgUserDriveRootPermissionGrant -DriveId <String> -PermissionId <String> -UserId <String>
+Revoke-MgBetaUserDriveRootPermissionGrant -DriveId <String> -PermissionId <String> -UserId <String>
  [-AdditionalProperties <Hashtable>] [-Grantees <IMicrosoftGraphDriveRecipient[]>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Revoke
 ```
-Revoke-MgUserDriveRootPermissionGrant -DriveId <String> -PermissionId <String> -UserId <String>
+Revoke-MgBetaUserDriveRootPermissionGrant -DriveId <String> -PermissionId <String> -UserId <String>
  -BodyParameter <IPaths18Gi85XUsersUserIdDrivesDriveIdRootPermissionsPermissionIdMicrosoftGraphRevokegrantsPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### RevokeViaIdentityExpanded
 ```
-Revoke-MgUserDriveRootPermissionGrant -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-Grantees <IMicrosoftGraphDriveRecipient[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Revoke-MgBetaUserDriveRootPermissionGrant -InputObject <IUsersActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-Grantees <IMicrosoftGraphDriveRecipient[]>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### RevokeViaIdentity
 ```
-Revoke-MgUserDriveRootPermissionGrant -InputObject <IUsersActionsIdentity>
+Revoke-MgBetaUserDriveRootPermissionGrant -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths18Gi85XUsersUserIdDrivesDriveIdRootPermissionsPermissionIdMicrosoftGraphRevokegrantsPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -43,6 +44,20 @@ Revoke-MgUserDriveRootPermissionGrant -InputObject <IUsersActionsIdentity>
 Revoke access to a [listItem][] or [driveItem][] granted via a sharing link by removing the specified [recipient][] from the link.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -63,7 +78,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths18Gi85XUsersUserIdDrivesDriveIdRootPermissionsPermissionIdMicrosoftGraphRevokegrantsPostRequestbodyContentApplicationJsonSchema
@@ -94,7 +109,7 @@ Accept wildcard characters: False
 
 ### -Grantees
 .
-To construct, please use Get-Help -Online and see NOTES section for GRANTEES properties and create a hash table.
+To construct, see NOTES section for GRANTEES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDriveRecipient[]
@@ -110,7 +125,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersActionsIdentity
@@ -190,11 +205,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths18Gi85XUsersUserIdDrivesDriveIdRootPermissionsPermissionIdMicrosoftGraphRevokegrantsPostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths18Gi85XUsersUserIdDrivesDriveIdRootPermissionsPermissionIdMicrosoftGraphRevokegrantsPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPermission
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPermission
 ## NOTES
 
 ALIASES
@@ -204,19 +219,19 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths18Gi85XUsersUserIdDrivesDriveIdRootPermissionsPermissionIdMicrosoftGraphRevokegrantsPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths18Gi85XUsersUserIdDrivesDriveIdRootPermissionsPermissionIdMicrosoftGraphRevokegrantsPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Grantees <IMicrosoftGraphDriveRecipient[]>]`: 
     - `[Alias <String>]`: The alias of the domain object, for cases where an email address is unavailable (e.g. security groups).
     - `[Email <String>]`: The email address for the recipient, if the recipient has an associated email address.
     - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
 
-GRANTEES <IMicrosoftGraphDriveRecipient\[]>: .
+`GRANTEES <IMicrosoftGraphDriveRecipient[]>`: .
   - `[Alias <String>]`: The alias of the domain object, for cases where an email address is unavailable (e.g. security groups).
   - `[Email <String>]`: The email address for the recipient, if the recipient has an associated email address.
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
@@ -250,7 +265,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription

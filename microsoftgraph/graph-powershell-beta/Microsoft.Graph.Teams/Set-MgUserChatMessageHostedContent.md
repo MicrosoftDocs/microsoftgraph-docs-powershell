@@ -1,27 +1,27 @@
----
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/set-mguserchatmessagehostedcontent
+﻿---
+external help file: Microsoft.Graph.Beta.Teams-help.xml
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetauserchatmessagehostedcontent
 schema: 2.0.0
 ---
 
-# Set-MgUserChatMessageHostedContent
+# Set-MgBetaUserChatMessageHostedContent
 
 ## SYNOPSIS
 Update media content for the navigation property hostedContents in users
 
 ## SYNTAX
 
-### Set1 (Default)
+### Set (Default)
 ```
-Set-MgUserChatMessageHostedContent -ChatId <String> -ChatMessageHostedContentId <String>
- -ChatMessageId <String> -UserId <String> [-BodyParameter <Stream>] -InFile <String> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Set-MgBetaUserChatMessageHostedContent -ChatId <String> -ChatMessageHostedContentId <String>
+ -ChatMessageId <String> -UserId <String> [-Data <Stream>] -InFile <String> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
-### SetViaIdentity1
+### SetViaIdentity
 ```
-Set-MgUserChatMessageHostedContent -InputObject <ITeamsIdentity> [-BodyParameter <Stream>] -InFile <String>
+Set-MgBetaUserChatMessageHostedContent -InputObject <ITeamsIdentity> [-Data <Stream>] -InFile <String>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -30,29 +30,24 @@ Update media content for the navigation property hostedContents in users
 
 ## EXAMPLES
 
-## PARAMETERS
-
-### -BodyParameter
-.
-
-```yaml
-Type: Stream
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
 ```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+## PARAMETERS
 
 ### -ChatId
 The unique identifier of chat
 
 ```yaml
 Type: String
-Parameter Sets: Set1
+Parameter Sets: Set
 Aliases:
 
 Required: True
@@ -67,7 +62,7 @@ The unique identifier of chatMessageHostedContent
 
 ```yaml
 Type: String
-Parameter Sets: Set1
+Parameter Sets: Set
 Aliases:
 
 Required: True
@@ -82,13 +77,28 @@ The unique identifier of chatMessage
 
 ```yaml
 Type: String
-Parameter Sets: Set1
+Parameter Sets: Set
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Data
+.
+
+```yaml
+Type: Stream
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -111,11 +121,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: SetViaIdentity1
+Parameter Sets: SetViaIdentity
 Aliases:
 
 Required: True
@@ -145,7 +155,7 @@ The unique identifier of user
 
 ```yaml
 Type: String
-Parameter Sets: Set1
+Parameter Sets: Set
 Aliases:
 
 Required: True
@@ -191,7 +201,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
 ### System.IO.Stream
 ## OUTPUTS
 
@@ -205,7 +215,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat

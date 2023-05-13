@@ -1,86 +1,74 @@
----
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mggroupteamprimarychannelmessagehostedcontent
+﻿---
+external help file: Microsoft.Graph.Beta.Teams-help.xml
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamprimarychannelmessagehostedcontent
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
-# Get-MgGroupTeamPrimaryChannelMessageHostedContent
+# Get-MgBetaGroupTeamPrimaryChannelMessageHostedContent
 
 ## SYNOPSIS
-Content in a message hosted by Microsoft Teams - for example, images or code snippets.
+Retrieve the properties and relationships of chatMessageHostedContent object.
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgGroupTeamPrimaryChannelMessageHostedContent -ChatMessageId <String> -GroupId <String>
+Get-MgBetaGroupTeamPrimaryChannelMessageHostedContent -ChatMessageId <String> -GroupId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
  [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get1
 ```
-Get-MgGroupTeamPrimaryChannelMessageHostedContent -ChatMessageHostedContentId <String> -ChatMessageId <String>
- -GroupId <String> -OutFile <String> [-PassThru] [<CommonParameters>]
+Get-MgBetaGroupTeamPrimaryChannelMessageHostedContent -ChatMessageHostedContentId <String>
+ -ChatMessageId <String> -GroupId <String> -OutFile <String> [-PassThru] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgGroupTeamPrimaryChannelMessageHostedContent -ChatMessageHostedContentId <String> -ChatMessageId <String>
- -GroupId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaGroupTeamPrimaryChannelMessageHostedContent -ChatMessageHostedContentId <String>
+ -ChatMessageId <String> -GroupId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
 ```
-Get-MgGroupTeamPrimaryChannelMessageHostedContent -InputObject <ITeamsIdentity> -OutFile <String> [-PassThru]
- [<CommonParameters>]
+Get-MgBetaGroupTeamPrimaryChannelMessageHostedContent -InputObject <ITeamsIdentity> -OutFile <String>
+ [-PassThru] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgGroupTeamPrimaryChannelMessageHostedContent -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaGroupTeamPrimaryChannelMessageHostedContent -InputObject <ITeamsIdentity>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Content in a message hosted by Microsoft Teams - for example, images or code snippets.
+Retrieve the properties and relationships of chatMessageHostedContent object.
 
 ## EXAMPLES
 
-### Example 1: List hosted content for a channel message
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Teams
-
-Get-MgTeamChannelMessageHostedContent -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId
+Import-Module Microsoft.Graph.Beta.Teams
 ```
 
-This example shows how to use the Get-MgGroupTeamPrimaryChannelMessageHostedContent Cmdlet.
+Get-MgBetaTeamChannelMessageHostedContent -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: List hosted content for reply to a channel message
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Teams
-
-Get-MgTeamChannelMessageReplyHostedContent -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -ChatMessageId1 $chatMessageId1
+Import-Module Microsoft.Graph.Beta.Teams
 ```
 
-This example shows how to use the Get-MgGroupTeamPrimaryChannelMessageHostedContent Cmdlet.
+Get-MgBetaTeamChannelMessageReplyHostedContent -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -ChatMessageId1 $chatMessageId1
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: List hosted content for message in a chat
+### EXAMPLE 3
 ```powershell
-Import-Module Microsoft.Graph.Teams
-
-Get-MgChatMessageHostedContent -ChatId $chatId -ChatMessageId $chatMessageId
+Import-Module Microsoft.Graph.Beta.Teams
 ```
 
-This example shows how to use the Get-MgGroupTeamPrimaryChannelMessageHostedContent Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Get-MgBetaChatMessageHostedContent -ChatId $chatId -ChatMessageId $chatMessageId
 
 ## PARAMETERS
 
@@ -192,7 +180,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ITeamsIdentity
@@ -331,10 +319,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChatMessageHostedContent
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphChatMessageHostedContent
 ### System.Boolean
 ## NOTES
 
@@ -345,7 +333,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat

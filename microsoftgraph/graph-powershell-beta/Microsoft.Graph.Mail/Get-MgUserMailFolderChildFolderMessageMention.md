@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Mail-help.xml
-Module Name: Microsoft.Graph.Mail
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.mail/get-mgusermailfolderchildfoldermessagemention
+﻿---
+external help file: Microsoft.Graph.Beta.Mail-help.xml
+Module Name: Microsoft.Graph.Beta.Mail
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfolderchildfoldermessagemention
 schema: 2.0.0
 ---
 
-# Get-MgUserMailFolderChildFolderMessageMention
+# Get-MgBetaUserMailFolderChildFolderMessageMention
 
 ## SYNOPSIS
 A collection of mentions in the message, ordered by the createdDateTime from the newest to the oldest.
@@ -15,7 +15,7 @@ By default, a GET /messages does not return this property unless you apply $expa
 
 ### List (Default)
 ```
-Get-MgUserMailFolderChildFolderMessageMention -MailFolderId <String> -MailFolderId1 <String>
+Get-MgBetaUserMailFolderChildFolderMessageMention -MailFolderId <String> -MailFolderId1 <String>
  -MessageId <String> -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
  [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
  [<CommonParameters>]
@@ -23,14 +23,14 @@ Get-MgUserMailFolderChildFolderMessageMention -MailFolderId <String> -MailFolder
 
 ### Get
 ```
-Get-MgUserMailFolderChildFolderMessageMention -MailFolderId <String> -MailFolderId1 <String>
+Get-MgBetaUserMailFolderChildFolderMessageMention -MailFolderId <String> -MailFolderId1 <String>
  -MentionId <String> -MessageId <String> -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgUserMailFolderChildFolderMessageMention -InputObject <IMailIdentity> [-ExpandProperty <String[]>]
+Get-MgBetaUserMailFolderChildFolderMessageMention -InputObject <IMailIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
@@ -39,6 +39,20 @@ A collection of mentions in the message, ordered by the createdDateTime from the
 By default, a GET /messages does not return this property unless you apply $expand on the property.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -105,7 +119,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IMailIdentity
@@ -274,10 +288,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMailIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMailIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMention
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMention
 ## NOTES
 
 ALIASES
@@ -287,7 +301,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+`INPUTOBJECT <IMailIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[InferenceClassificationOverrideId <String>]`: The unique identifier of inferenceClassificationOverride
@@ -296,8 +310,6 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
   - `[MentionId <String>]`: The unique identifier of mention
   - `[MessageId <String>]`: The unique identifier of message
   - `[MessageRuleId <String>]`: The unique identifier of messageRule
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
   - `[UserConfigurationId <String>]`: The unique identifier of userConfiguration
   - `[UserId <String>]`: The unique identifier of user
 

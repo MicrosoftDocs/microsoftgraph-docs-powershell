@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdeviceconfigurationconflictsummary
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementdeviceconfigurationconflictsummary
 schema: 2.0.0
 ---
 
-# New-MgDeviceManagementDeviceConfigurationConflictSummary
+# New-MgBetaDeviceManagementDeviceConfigurationConflictSummary
 
 ## SYNOPSIS
 Create new navigation property to deviceConfigurationConflictSummary for deviceManagement
@@ -14,14 +14,14 @@ Create new navigation property to deviceConfigurationConflictSummary for deviceM
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementDeviceConfigurationConflictSummary [-AdditionalProperties <Hashtable>]
+New-MgBetaDeviceManagementDeviceConfigurationConflictSummary [-AdditionalProperties <Hashtable>]
  [-ConflictingDeviceConfigurations <IMicrosoftGraphSettingSource[]>] [-ContributingSettings <String[]>]
  [-DeviceCheckinsImpacted <Int32>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceManagementDeviceConfigurationConflictSummary
+New-MgBetaDeviceManagementDeviceConfigurationConflictSummary
  -BodyParameter <IMicrosoftGraphDeviceConfigurationConflictSummary> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -29,6 +29,20 @@ New-MgDeviceManagementDeviceConfigurationConflictSummary
 Create new navigation property to deviceConfigurationConflictSummary for deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -49,7 +63,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Conflict summary for a set of device configuration policies.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceConfigurationConflictSummary
@@ -65,7 +79,7 @@ Accept wildcard characters: False
 
 ### -ConflictingDeviceConfigurations
 The set of policies in conflict with the given setting
-To construct, please use Get-Help -Online and see NOTES section for CONFLICTINGDEVICECONFIGURATIONS properties and create a hash table.
+To construct, see NOTES section for CONFLICTINGDEVICECONFIGURATIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSettingSource[]
@@ -110,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -161,10 +175,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceConfigurationConflictSummary
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceConfigurationConflictSummary
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceConfigurationConflictSummary
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceConfigurationConflictSummary
 ## NOTES
 
 ALIASES
@@ -174,9 +188,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDeviceConfigurationConflictSummary>`: Conflict summary for a set of device configuration policies.
+`BODYPARAMETER <IMicrosoftGraphDeviceConfigurationConflictSummary>`: Conflict summary for a set of device configuration policies.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ConflictingDeviceConfigurations <IMicrosoftGraphSettingSource[]>]`: The set of policies in conflict with the given setting
     - `[DisplayName <String>]`: Not yet documented
     - `[Id <String>]`: Not yet documented
@@ -184,7 +198,7 @@ BODYPARAMETER `<IMicrosoftGraphDeviceConfigurationConflictSummary>`: Conflict su
   - `[ContributingSettings <String[]>]`: The set of settings in conflict with the given policies
   - `[DeviceCheckinsImpacted <Int32?>]`: The count of checkins impacted by the conflicting policies and settings
 
-CONFLICTINGDEVICECONFIGURATIONS <IMicrosoftGraphSettingSource\[]>: The set of policies in conflict with the given setting
+`CONFLICTINGDEVICECONFIGURATIONS <IMicrosoftGraphSettingSource[]>`: The set of policies in conflict with the given setting
   - `[DisplayName <String>]`: Not yet documented
   - `[Id <String>]`: Not yet documented
   - `[SourceType <String>]`: settingSourceType

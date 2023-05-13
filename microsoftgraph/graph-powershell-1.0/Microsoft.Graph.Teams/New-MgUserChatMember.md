@@ -1,60 +1,68 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mguserchatmember
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mguserchatinstalledapp
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
-# New-MgUserChatMember
+# New-MgUserChatInstalledApp
 
 ## SYNOPSIS
-Add a conversationMember to a chat.
+Install a teamsApp to the specified chat.
 
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
-New-MgUserChatMember -ChatId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-DisplayName <String>] [-Id <String>] [-Roles <String[]>] [-VisibleHistoryStartDateTime <DateTime>] [-WhatIf]
+New-MgUserChatInstalledApp -ChatId <String> -UserId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-TeamsApp <IMicrosoftGraphTeamsApp>] [-TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgUserChatMember -ChatId <String> -UserId <String> -BodyParameter <IMicrosoftGraphConversationMember>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgUserChatInstalledApp -ChatId <String> -UserId <String>
+ -BodyParameter <IMicrosoftGraphTeamsAppInstallation> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgUserChatMember -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
- [-Id <String>] [-Roles <String[]>] [-VisibleHistoryStartDateTime <DateTime>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgUserChatInstalledApp -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-TeamsApp <IMicrosoftGraphTeamsApp>] [-TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgUserChatMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphConversationMember> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgUserChatInstalledApp -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTeamsAppInstallation>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Add a conversationMember to a chat.
+Install a teamsApp to the specified chat.
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-
-# A UPN can also be used as -UserId.
-Get-MgUserChatMember -UserId $userId -ChatId $chatId
 ```
 
-This example shows how to use the New-MgUserChatMember Cmdlet.
+Get-MgChatInstalledApp -ChatId $chatId
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### EXAMPLE 2
+```powershell
+Import-Module Microsoft.Graph.Teams
+```
+
+Get-MgChatInstalledApp -ChatId $chatId -ExpandProperty "teamsAppDefinition(`$expand=bot)"
+
+### EXAMPLE 3
+```powershell
+Import-Module Microsoft.Graph.Teams
+```
+
+Get-MgChatInstalledApp -ChatId $chatId -ExpandProperty "teamsApp,teamsAppDefinition" -Filter "teamsApp/externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'"
 
 ## PARAMETERS
 
@@ -74,11 +82,11 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-conversationMember
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+teamsAppInstallation
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphConversationMember
+Type: IMicrosoftGraphTeamsAppInstallation
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -104,21 +112,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DisplayName
-The display name of the user.
-
-```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Id
 The unique idenfier for an entity.
 Read-only.
@@ -137,7 +130,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ITeamsIdentity
@@ -151,14 +144,28 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Roles
-The roles for that user.
-This property only contains additional qualifiers when relevant - for example, if the member has owner privileges, the roles property contains owner as one of the values.
-Similarly, if the member is a guest, the roles property contains guest as one of the values.
-A basic member should not have any values specified in the roles property.
+### -TeamsApp
+teamsApp
+To construct, see NOTES section for TEAMSAPP properties and create a hash table.
 
 ```yaml
-Type: String[]
+Type: IMicrosoftGraphTeamsApp
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -TeamsAppDefinition
+teamsAppDefinition
+To construct, see NOTES section for TEAMSAPPDEFINITION properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphTeamsAppDefinition
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -178,22 +185,6 @@ Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -VisibleHistoryStartDateTime
-The timestamp denoting how far back a conversation's history is shared with the conversation member.
-This property is settable only for members of a chat.
-
-```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -236,11 +227,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConversationMember
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsAppInstallation
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConversationMember
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsAppInstallation
 ## NOTES
 
 ALIASES
@@ -250,14 +241,38 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphConversationMember>`: conversationMember
+`BODYPARAMETER <IMicrosoftGraphTeamsAppInstallation>`: teamsAppInstallation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[DisplayName <String>]`: The display name of the user.
-  - `[Roles <String[]>]`: The roles for that user. This property only contains additional qualifiers when relevant - for example, if the member has owner privileges, the roles property contains owner as one of the values. Similarly, if the member is a guest, the roles property contains guest as one of the values. A basic member should not have any values specified in the roles property.
-  - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat.
+  - `[TeamsApp <IMicrosoftGraphTeamsApp>]`: teamsApp
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[AppDefinitions <IMicrosoftGraphTeamsAppDefinition[]>]`: The details for each version of the app.
+      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Bot <IMicrosoftGraphTeamworkBot>]`: teamworkBot
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Application <IMicrosoftGraphIdentity>]`: identity
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+          - `[Id <String>]`: Unique identifier for the identity.
+        - `[Device <IMicrosoftGraphIdentity>]`: identity
+        - `[User <IMicrosoftGraphIdentity>]`: identity
+      - `[Description <String>]`: Verbose description of the application.
+      - `[DisplayName <String>]`: The name of the app provided by the app developer.
+      - `[LastModifiedDateTime <DateTime?>]`: 
+      - `[PublishingState <String>]`: teamsAppPublishingState
+      - `[ShortDescription <String>]`: Short description of the application.
+      - `[TeamsAppId <String>]`: The ID from the Teams app manifest.
+      - `[Version <String>]`: The version number of the application.
+    - `[DisplayName <String>]`: The name of the catalog app provided by the app developer in the Microsoft Teams zip app package.
+    - `[DistributionMethod <String>]`: teamsAppDistributionMethod
+    - `[ExternalId <String>]`: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
+  - `[TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition>]`: teamsAppDefinition
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat
@@ -271,29 +286,72 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[OpenShiftChangeRequestId <String>]`: The unique identifier of openShiftChangeRequest
   - `[OpenShiftId <String>]`: The unique identifier of openShift
   - `[PinnedChatMessageInfoId <String>]`: The unique identifier of pinnedChatMessageInfo
-  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SchedulingGroupId <String>]`: The unique identifier of schedulingGroup
   - `[SharedWithChannelTeamInfoId <String>]`: The unique identifier of sharedWithChannelTeamInfo
   - `[ShiftId <String>]`: The unique identifier of shift
   - `[SwapShiftsChangeRequestId <String>]`: The unique identifier of swapShiftsChangeRequest
   - `[TeamId <String>]`: The unique identifier of team
-  - `[TeamTemplateDefinitionId <String>]`: The unique identifier of teamTemplateDefinition
-  - `[TeamTemplateId <String>]`: The unique identifier of teamTemplate
   - `[TeamsAppDefinitionId <String>]`: The unique identifier of teamsAppDefinition
   - `[TeamsAppId <String>]`: The unique identifier of teamsApp
   - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
   - `[TeamsAsyncOperationId <String>]`: The unique identifier of teamsAsyncOperation
   - `[TeamsTabId <String>]`: The unique identifier of teamsTab
-  - `[TeamworkDeviceId <String>]`: The unique identifier of teamworkDevice
-  - `[TeamworkDeviceOperationId <String>]`: The unique identifier of teamworkDeviceOperation
   - `[TeamworkTagId <String>]`: The unique identifier of teamworkTag
   - `[TeamworkTagMemberId <String>]`: The unique identifier of teamworkTagMember
-  - `[TimeCardId <String>]`: The unique identifier of timeCard
   - `[TimeOffId <String>]`: The unique identifier of timeOff
   - `[TimeOffReasonId <String>]`: The unique identifier of timeOffReason
   - `[TimeOffRequestId <String>]`: The unique identifier of timeOffRequest
   - `[UserId <String>]`: The unique identifier of user
   - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
+
+`TEAMSAPP <IMicrosoftGraphTeamsApp>`: teamsApp
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[AppDefinitions <IMicrosoftGraphTeamsAppDefinition[]>]`: The details for each version of the app.
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Bot <IMicrosoftGraphTeamworkBot>]`: teamworkBot
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Application <IMicrosoftGraphIdentity>]`: identity
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        - `[Id <String>]`: Unique identifier for the identity.
+      - `[Device <IMicrosoftGraphIdentity>]`: identity
+      - `[User <IMicrosoftGraphIdentity>]`: identity
+    - `[Description <String>]`: Verbose description of the application.
+    - `[DisplayName <String>]`: The name of the app provided by the app developer.
+    - `[LastModifiedDateTime <DateTime?>]`: 
+    - `[PublishingState <String>]`: teamsAppPublishingState
+    - `[ShortDescription <String>]`: Short description of the application.
+    - `[TeamsAppId <String>]`: The ID from the Teams app manifest.
+    - `[Version <String>]`: The version number of the application.
+  - `[DisplayName <String>]`: The name of the catalog app provided by the app developer in the Microsoft Teams zip app package.
+  - `[DistributionMethod <String>]`: teamsAppDistributionMethod
+  - `[ExternalId <String>]`: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
+
+`TEAMSAPPDEFINITION <IMicrosoftGraphTeamsAppDefinition>`: teamsAppDefinition
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Bot <IMicrosoftGraphTeamworkBot>]`: teamworkBot
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
+    - `[Device <IMicrosoftGraphIdentity>]`: identity
+    - `[User <IMicrosoftGraphIdentity>]`: identity
+  - `[Description <String>]`: Verbose description of the application.
+  - `[DisplayName <String>]`: The name of the app provided by the app developer.
+  - `[LastModifiedDateTime <DateTime?>]`: 
+  - `[PublishingState <String>]`: teamsAppPublishingState
+  - `[ShortDescription <String>]`: Short description of the application.
+  - `[TeamsAppId <String>]`: The ID from the Teams app manifest.
+  - `[Version <String>]`: The version number of the application.
 
 ## RELATED LINKS

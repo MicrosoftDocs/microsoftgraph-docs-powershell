@@ -1,12 +1,11 @@
----
-external help file: Microsoft.Graph.Groups-help.xml
-Module Name: Microsoft.Graph.Groups
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/get-mggroupownerbyref
+﻿---
+external help file: Microsoft.Graph.Beta.Groups-help.xml
+Module Name: Microsoft.Graph.Beta.Groups
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupownerbyref
 schema: 2.0.0
-ms.prod: groups
 ---
 
-# Get-MgGroupOwnerByRef
+# Get-MgBetaGroupOwnerByRef
 
 ## SYNOPSIS
 The owners of the group who can be users or service principals.
@@ -18,7 +17,7 @@ For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayNa
 ## SYNTAX
 
 ```
-Get-MgGroupOwnerByRef -GroupId <String> [-Filter <String>] [-Search <String>] [-Skip <Int32>]
+Get-MgBetaGroupOwnerByRef -GroupId <String> [-Filter <String>] [-Search <String>] [-Skip <Int32>]
  [-Sort <String[]>] [-Top <Int32>] [-ConsistencyLevel <String>] [-PageSize <Int32>] [-All]
  [-CountVariable <String>] [<CommonParameters>]
 ```
@@ -32,16 +31,12 @@ For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayNa
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Groups
-
-Get-MgGroupOwner -GroupId $groupId
+Import-Module Microsoft.Graph.Beta.Groups
 ```
 
-This example shows how to use the Get-MgGroupOwnerByRef Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Get-MgBetaGroupOwner -GroupId $groupId
 
 ## PARAMETERS
 

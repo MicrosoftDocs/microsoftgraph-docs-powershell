@@ -1,59 +1,73 @@
----
-external help file: Microsoft.Graph.Files-help.xml
-Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/get-mgsharelistitemdocumentsetversion
+﻿---
+external help file: Microsoft.Graph.Beta.Files-help.xml
+Module Name: Microsoft.Graph.Beta.Files
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharelistitemdocumentsetversion
 schema: 2.0.0
 ---
 
-# Get-MgShareListItemDocumentSetVersion
+# Get-MgBetaShareListItemDocumentSetVersion
 
 ## SYNOPSIS
-Version information for a document set version created by a user.
+Read the properties and relationships of a documentSetVersion object.
 
 ## SYNTAX
 
-### List3 (Default)
+### List1 (Default)
 ```
-Get-MgShareListItemDocumentSetVersion -SharedDriveItemId <String> [-ExpandProperty <String[]>]
+Get-MgBetaShareListItemDocumentSetVersion -SharedDriveItemId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### Get3
+### Get1
 ```
-Get-MgShareListItemDocumentSetVersion -DocumentSetVersionId <String> -SharedDriveItemId <String>
+Get-MgBetaShareListItemDocumentSetVersion -DocumentSetVersionId <String> -SharedDriveItemId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
-### Get2
+### Get
 ```
-Get-MgShareListItemDocumentSetVersion -DocumentSetVersionId <String> -ListItemId <String>
+Get-MgBetaShareListItemDocumentSetVersion -DocumentSetVersionId <String> -ListItemId <String>
  -SharedDriveItemId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
-### List2
+### List
 ```
-Get-MgShareListItemDocumentSetVersion -ListItemId <String> -SharedDriveItemId <String>
+Get-MgBetaShareListItemDocumentSetVersion -ListItemId <String> -SharedDriveItemId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
  [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### GetViaIdentity3
+### GetViaIdentity1
 ```
-Get-MgShareListItemDocumentSetVersion -InputObject <IFilesIdentity> [-ExpandProperty <String[]>]
+Get-MgBetaShareListItemDocumentSetVersion -InputObject <IFilesIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity2
+### GetViaIdentity
 ```
-Get-MgShareListItemDocumentSetVersion -InputObject <IFilesIdentity> [-ExpandProperty <String[]>]
+Get-MgBetaShareListItemDocumentSetVersion -InputObject <IFilesIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Version information for a document set version created by a user.
+Read the properties and relationships of a documentSetVersion object.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -62,7 +76,7 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: List3, List2
+Parameter Sets: List1, List
 Aliases:
 
 Required: False
@@ -78,7 +92,7 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: List3, List2
+Parameter Sets: List1, List
 Aliases: CV
 
 Required: False
@@ -93,7 +107,7 @@ The unique identifier of documentSetVersion
 
 ```yaml
 Type: String
-Parameter Sets: Get3, Get2
+Parameter Sets: Get1, Get
 Aliases:
 
 Required: True
@@ -123,7 +137,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List3, List2
+Parameter Sets: List1, List
 Aliases:
 
 Required: False
@@ -135,11 +149,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IFilesIdentity
-Parameter Sets: GetViaIdentity3, GetViaIdentity2
+Parameter Sets: GetViaIdentity1, GetViaIdentity
 Aliases:
 
 Required: True
@@ -154,7 +168,7 @@ The unique identifier of listItem
 
 ```yaml
 Type: String
-Parameter Sets: Get2, List2
+Parameter Sets: Get, List
 Aliases:
 
 Required: True
@@ -169,7 +183,7 @@ Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: List3, List2
+Parameter Sets: List1, List
 Aliases:
 
 Required: False
@@ -199,7 +213,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: List3, List2
+Parameter Sets: List1, List
 Aliases:
 
 Required: False
@@ -214,7 +228,7 @@ The unique identifier of sharedDriveItem
 
 ```yaml
 Type: String
-Parameter Sets: List3, Get3, Get2, List2
+Parameter Sets: List1, Get1, Get, List
 Aliases:
 
 Required: True
@@ -229,7 +243,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List3, List2
+Parameter Sets: List1, List
 Aliases: OrderBy
 
 Required: False
@@ -244,7 +258,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List3, List2
+Parameter Sets: List1, List
 Aliases: Limit
 
 Required: False
@@ -259,7 +273,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List3, List2
+Parameter Sets: List1, List
 Aliases:
 
 Required: False
@@ -274,10 +288,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IFilesIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDocumentSetVersion
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDocumentSetVersion
 ## NOTES
 
 ALIASES
@@ -287,7 +301,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+`INPUTOBJECT <IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType

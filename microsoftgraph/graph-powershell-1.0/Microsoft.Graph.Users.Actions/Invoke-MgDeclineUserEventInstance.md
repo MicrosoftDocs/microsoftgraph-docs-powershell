@@ -1,11 +1,11 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgdeclineusereventinstance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgdeclineuserevent
 schema: 2.0.0
 ---
 
-# Invoke-MgDeclineUserEventInstance
+# Invoke-MgDeclineUserEvent
 
 ## SYNOPSIS
 Decline invitation to the specified event in a user calendar.
@@ -14,31 +14,31 @@ For more information on how to propose a time, and how to receive and accept a n
 
 ## SYNTAX
 
-### DeclineExpanded1 (Default)
+### DeclineExpanded (Default)
 ```
-Invoke-MgDeclineUserEventInstance -EventId <String> -EventId1 <String> -UserId <String>
- [-AdditionalProperties <Hashtable>] [-Comment <String>] [-ProposedNewTime <IMicrosoftGraphTimeSlot>]
- [-SendResponse] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Decline1
-```
-Invoke-MgDeclineUserEventInstance -EventId <String> -EventId1 <String> -UserId <String>
- -BodyParameter <IPathsYv35ByUsersUserIdEventsEventIdInstancesEventId1MicrosoftGraphDeclinePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### DeclineViaIdentityExpanded1
-```
-Invoke-MgDeclineUserEventInstance -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
+Invoke-MgDeclineUserEvent -EventId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
  [-Comment <String>] [-ProposedNewTime <IMicrosoftGraphTimeSlot>] [-SendResponse] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
-### DeclineViaIdentity1
+### Decline
 ```
-Invoke-MgDeclineUserEventInstance -InputObject <IUsersActionsIdentity>
- -BodyParameter <IPathsYv35ByUsersUserIdEventsEventIdInstancesEventId1MicrosoftGraphDeclinePostRequestbodyContentApplicationJsonSchema>
+Invoke-MgDeclineUserEvent -EventId <String> -UserId <String>
+ -BodyParameter <IPathsT4Hh9DUsersUserIdEventsEventIdMicrosoftGraphDeclinePostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### DeclineViaIdentityExpanded
+```
+Invoke-MgDeclineUserEvent -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
+ [-Comment <String>] [-ProposedNewTime <IMicrosoftGraphTimeSlot>] [-SendResponse] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### DeclineViaIdentity
+```
+Invoke-MgDeclineUserEvent -InputObject <IUsersActionsIdentity>
+ -BodyParameter <IPathsT4Hh9DUsersUserIdEventsEventIdMicrosoftGraphDeclinePostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -49,10 +49,9 @@ For more information on how to propose a time, and how to receive and accept a n
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
-
 $params = @{
 	Comment = "I won't be able to make this week. How about next week?"
 	SendResponse = $true
@@ -67,14 +66,9 @@ $params = @{
 		}
 	}
 }
-
 # A UPN can also be used as -UserId.
 Invoke-MgDeclineUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
 ```
-
-This example shows how to use the Invoke-MgDeclineUserEventInstance Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -83,7 +77,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: DeclineExpanded1, DeclineViaIdentityExpanded1
+Parameter Sets: DeclineExpanded, DeclineViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -95,11 +89,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsYv35ByUsersUserIdEventsEventIdInstancesEventId1MicrosoftGraphDeclinePostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Decline1, DeclineViaIdentity1
+Type: IPathsT4Hh9DUsersUserIdEventsEventIdMicrosoftGraphDeclinePostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Decline, DeclineViaIdentity
 Aliases:
 
 Required: True
@@ -114,7 +108,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: DeclineExpanded1, DeclineViaIdentityExpanded1
+Parameter Sets: DeclineExpanded, DeclineViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -129,22 +123,7 @@ The unique identifier of event
 
 ```yaml
 Type: String
-Parameter Sets: DeclineExpanded1, Decline1
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -EventId1
-The unique identifier of event
-
-```yaml
-Type: String
-Parameter Sets: DeclineExpanded1, Decline1
+Parameter Sets: DeclineExpanded, Decline
 Aliases:
 
 Required: True
@@ -156,11 +135,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: DeclineViaIdentityExpanded1, DeclineViaIdentity1
+Parameter Sets: DeclineViaIdentityExpanded, DeclineViaIdentity
 Aliases:
 
 Required: True
@@ -187,11 +166,11 @@ Accept wildcard characters: False
 
 ### -ProposedNewTime
 timeSlot
-To construct, please use Get-Help -Online and see NOTES section for PROPOSEDNEWTIME properties and create a hash table.
+To construct, see NOTES section for PROPOSEDNEWTIME properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphTimeSlot
-Parameter Sets: DeclineExpanded1, DeclineViaIdentityExpanded1
+Parameter Sets: DeclineExpanded, DeclineViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -206,7 +185,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: DeclineExpanded1, DeclineViaIdentityExpanded1
+Parameter Sets: DeclineExpanded, DeclineViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -221,7 +200,7 @@ The unique identifier of user
 
 ```yaml
 Type: String
-Parameter Sets: DeclineExpanded1, Decline1
+Parameter Sets: DeclineExpanded, Decline
 Aliases:
 
 Required: True
@@ -267,7 +246,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsYv35ByUsersUserIdEventsEventIdInstancesEventId1MicrosoftGraphDeclinePostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.PowerShell.Models.IPathsT4Hh9DUsersUserIdEventsEventIdMicrosoftGraphDeclinePostRequestbodyContentApplicationJsonSchema
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
 ## OUTPUTS
 
@@ -281,7 +260,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsYv35ByUsersUserIdEventsEventIdInstancesEventId1MicrosoftGraphDeclinePostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsT4Hh9DUsersUserIdEventsEventIdMicrosoftGraphDeclinePostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Comment <String>]`: 
   - `[ProposedNewTime <IMicrosoftGraphTimeSlot>]`: timeSlot
@@ -293,20 +272,13 @@ BODYPARAMETER `<IPathsYv35ByUsersUserIdEventsEventIdInstancesEventId1MicrosoftGr
     - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
   - `[SendResponse <Boolean?>]`: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
-  - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
-  - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
-  - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
+`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AuthenticationMethodId <String>]`: The unique identifier of authenticationMethod
   - `[CalendarId <String>]`: The unique identifier of calendar
   - `[ChatId <String>]`: The unique identifier of chat
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
   - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
-  - `[CloudPcId <String>]`: The unique identifier of cloudPC
   - `[ContentTypeId <String>]`: The unique identifier of contentType
-  - `[DeviceEnrollmentConfigurationId <String>]`: The unique identifier of deviceEnrollmentConfiguration
-  - `[DeviceId <String>]`: The unique identifier of device
-  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
   - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
   - `[DriveId <String>]`: The unique identifier of drive
   - `[DriveItemId <String>]`: The unique identifier of driveItem
@@ -319,24 +291,18 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
   - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
   - `[MessageId <String>]`: The unique identifier of message
-  - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
   - `[NotebookId <String>]`: The unique identifier of notebook
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
-  - `[OutlookTaskFolderId <String>]`: The unique identifier of outlookTaskFolder
-  - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
-  - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
-  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
-  - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
   - `[TodoTaskId <String>]`: The unique identifier of todoTask
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
   - `[UserId <String>]`: The unique identifier of user
 
-PROPOSEDNEWTIME `<IMicrosoftGraphTimeSlot>`: timeSlot
+`PROPOSEDNEWTIME <IMicrosoftGraphTimeSlot>`: timeSlot
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

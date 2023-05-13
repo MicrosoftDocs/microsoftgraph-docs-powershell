@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/new-mgdevicemanagementdeviceenrollmentconfigurationenrollmentnotificationconfiguration
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/new-mgbetadevicemanagementdeviceenrollmentconfigurationenrollmentnotificationconfiguration
 schema: 2.0.0
 ---
 
-# New-MgDeviceManagementDeviceEnrollmentConfigurationEnrollmentNotificationConfiguration
+# New-MgBetaDeviceManagementDeviceEnrollmentConfigurationEnrollmentNotificationConfiguration
 
 ## SYNOPSIS
 Invoke action createEnrollmentNotificationConfiguration
@@ -14,7 +14,7 @@ Invoke action createEnrollmentNotificationConfiguration
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementDeviceEnrollmentConfigurationEnrollmentNotificationConfiguration
+New-MgBetaDeviceManagementDeviceEnrollmentConfigurationEnrollmentNotificationConfiguration
  [-AdditionalProperties <Hashtable>]
  [-DeviceEnrollmentNotificationConfigurations <IMicrosoftGraphDeviceEnrollmentConfiguration[]>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -22,7 +22,7 @@ New-MgDeviceManagementDeviceEnrollmentConfigurationEnrollmentNotificationConfigu
 
 ### Create
 ```
-New-MgDeviceManagementDeviceEnrollmentConfigurationEnrollmentNotificationConfiguration
+New-MgBetaDeviceManagementDeviceEnrollmentConfigurationEnrollmentNotificationConfiguration
  -BodyParameter <IPaths7Rv6Q9DevicemanagementDeviceenrollmentconfigurationsMicrosoftGraphCreateenrollmentnotificationconfigurationPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -31,6 +31,20 @@ New-MgDeviceManagementDeviceEnrollmentConfigurationEnrollmentNotificationConfigu
 Invoke action createEnrollmentNotificationConfiguration
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -51,7 +65,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths7Rv6Q9DevicemanagementDeviceenrollmentconfigurationsMicrosoftGraphCreateenrollmentnotificationconfigurationPostRequestbodyContentApplicationJsonSchema
@@ -67,7 +81,7 @@ Accept wildcard characters: False
 
 ### -DeviceEnrollmentNotificationConfigurations
 .
-To construct, please use Get-Help -Online and see NOTES section for DEVICEENROLLMENTNOTIFICATIONCONFIGURATIONS properties and create a hash table.
+To construct, see NOTES section for DEVICEENROLLMENTNOTIFICATIONCONFIGURATIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceEnrollmentConfiguration[]
@@ -132,7 +146,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths7Rv6Q9DevicemanagementDeviceenrollmentconfigurationsMicrosoftGraphCreateenrollmentnotificationconfigurationPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths7Rv6Q9DevicemanagementDeviceenrollmentconfigurationsMicrosoftGraphCreateenrollmentnotificationconfigurationPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### System.Boolean
@@ -145,15 +159,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths7Rv6Q9DevicemanagementDeviceenrollmentconfigurationsMicrosoftGraphCreateenrollmentnotificationconfigurationPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths7Rv6Q9DevicemanagementDeviceenrollmentconfigurationsMicrosoftGraphCreateenrollmentnotificationconfigurationPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeviceEnrollmentNotificationConfigurations <IMicrosoftGraphDeviceEnrollmentConfiguration[]>]`: 
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-    - `[Assignments <IMicrosoftGraphEnrollmentConfigurationAssignment1[]>]`: The list of group assignments for the device configuration profile
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[Assignments <IMicrosoftGraphEnrollmentConfigurationAssignment[]>]`: The list of group assignments for the device configuration profile
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Source <DeviceAndAppManagementAssignmentSource?>]`: Represents source of assignment.
       - `[SourceId <String>]`: Identifier for resource used for deployment to a group
-      - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
+      - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
         - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
@@ -166,13 +180,13 @@ BODYPARAMETER `<IPaths7Rv6Q9DevicemanagementDeviceenrollmentconfigurationsMicros
     - `[RoleScopeTagIds <String[]>]`: Optional role scope tags for the enrollment restrictions.
     - `[Version <Int32?>]`: The version of the device enrollment configuration
 
-DEVICEENROLLMENTNOTIFICATIONCONFIGURATIONS <IMicrosoftGraphDeviceEnrollmentConfiguration\[]>: .
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[Assignments <IMicrosoftGraphEnrollmentConfigurationAssignment1[]>]`: The list of group assignments for the device configuration profile
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`DEVICEENROLLMENTNOTIFICATIONCONFIGURATIONS <IMicrosoftGraphDeviceEnrollmentConfiguration[]>`: .
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
+  - `[Assignments <IMicrosoftGraphEnrollmentConfigurationAssignment[]>]`: The list of group assignments for the device configuration profile
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Source <DeviceAndAppManagementAssignmentSource?>]`: Represents source of assignment.
     - `[SourceId <String>]`: Identifier for resource used for deployment to a group
-    - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
+    - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
       - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.

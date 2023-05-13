@@ -1,12 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdeviceregistereduser
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadeviceregistereduser
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
-# Get-MgDeviceRegisteredUser
+# Get-MgBetaDeviceRegisteredUser
 
 ## SYNOPSIS
 Collection of registered users of the device.
@@ -18,7 +17,7 @@ Supports $expand.
 ## SYNTAX
 
 ```
-Get-MgDeviceRegisteredUser -DeviceId <String> [-ExpandProperty <String[]>] [-Filter <String>]
+Get-MgBetaDeviceRegisteredUser -DeviceId <String> [-ExpandProperty <String[]>] [-Filter <String>]
  [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-ConsistencyLevel <String>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
@@ -32,14 +31,11 @@ Supports $expand.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgDeviceRegisteredUser Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
-Get-MgDeviceRegisteredUser -DeviceId $deviceId
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+Get-MgBetaDeviceRegisteredUser -DeviceId $deviceId
 ```
-
-This example shows how to use the Get-MgDeviceRegisteredUser Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -232,7 +228,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryObject
 ## NOTES
 
 ALIASES

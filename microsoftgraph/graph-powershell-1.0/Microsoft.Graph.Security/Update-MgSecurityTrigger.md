@@ -1,7 +1,7 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecuritytrigger
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritytrigger
 schema: 2.0.0
 ---
 
@@ -12,16 +12,15 @@ Update the navigation property triggers in security
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### UpdateExpanded (Default)
 ```
 Update-MgSecurityTrigger [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-RetentionEvents <IMicrosoftGraphSecurityRetentionEvent[]>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-RetentionEvents <IMicrosoftGraphSecurityRetentionEvent[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Update1
+### Update
 ```
-Update-MgSecurityTrigger -BodyParameter <IMicrosoftGraphSecurityTriggersRoot> [-PassThru] [-WhatIf] [-Confirm]
+Update-MgSecurityTrigger -BodyParameter <IMicrosoftGraphSecurityTriggersRoot> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -30,6 +29,16 @@ Update the navigation property triggers in security
 
 ## EXAMPLES
 
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -37,7 +46,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded1
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -49,11 +58,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 triggersRoot
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSecurityTriggersRoot
-Parameter Sets: Update1
+Parameter Sets: Update
 Aliases:
 
 Required: True
@@ -69,22 +78,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -96,11 +90,11 @@ Accept wildcard characters: False
 
 ### -RetentionEvents
 .
-To construct, please use Get-Help -Online and see NOTES section for RETENTIONEVENTS properties and create a hash table.
+To construct, see NOTES section for RETENTIONEVENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSecurityRetentionEvent[]
-Parameter Sets: UpdateExpanded1
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -149,7 +143,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityTriggersRoot
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityTriggersRoot
 ## NOTES
 
 ALIASES
@@ -159,7 +153,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSecurityTriggersRoot>`: triggersRoot
+`BODYPARAMETER <IMicrosoftGraphSecurityTriggersRoot>`: triggersRoot
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[RetentionEvents <IMicrosoftGraphSecurityRetentionEvent[]>]`: 
@@ -215,7 +209,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityTriggersRoot>`: triggersRoot
       - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[LastModifiedDateTime <DateTime?>]`: The latest date time when the retentionEventType was modified.
 
-RETENTIONEVENTS <IMicrosoftGraphSecurityRetentionEvent\[]>: .
+`RETENTIONEVENTS <IMicrosoftGraphSecurityRetentionEvent[]>`: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

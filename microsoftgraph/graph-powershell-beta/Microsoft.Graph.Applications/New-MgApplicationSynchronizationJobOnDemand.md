@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Applications-help.xml
-Module Name: Microsoft.Graph.Applications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/new-mgapplicationsynchronizationjobondemand
+﻿---
+external help file: Microsoft.Graph.Beta.Applications-help.xml
+Module Name: Microsoft.Graph.Beta.Applications
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationsynchronizationjobondemand
 schema: 2.0.0
 ---
 
-# New-MgApplicationSynchronizationJobOnDemand
+# New-MgBetaApplicationSynchronizationJobOnDemand
 
 ## SYNOPSIS
 Select a user and provision the account on-demand.
@@ -16,28 +16,28 @@ No user or group will be provisioned on-demand that would not have been provisio
 
 ### ProvisionExpanded (Default)
 ```
-New-MgApplicationSynchronizationJobOnDemand -ApplicationId <String> -SynchronizationJobId <String>
+New-MgBetaApplicationSynchronizationJobOnDemand -ApplicationId <String> -SynchronizationJobId <String>
  [-AdditionalProperties <Hashtable>] [-Parameters <IMicrosoftGraphSynchronizationJobApplicationParameters[]>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Provision
 ```
-New-MgApplicationSynchronizationJobOnDemand -ApplicationId <String> -SynchronizationJobId <String>
+New-MgBetaApplicationSynchronizationJobOnDemand -ApplicationId <String> -SynchronizationJobId <String>
  -BodyParameter <IPaths1A5O87GApplicationsApplicationIdSynchronizationJobsSynchronizationjobIdMicrosoftGraphProvisionondemandPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ProvisionViaIdentityExpanded
 ```
-New-MgApplicationSynchronizationJobOnDemand -InputObject <IApplicationsIdentity>
+New-MgBetaApplicationSynchronizationJobOnDemand -InputObject <IApplicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-Parameters <IMicrosoftGraphSynchronizationJobApplicationParameters[]>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ProvisionViaIdentity
 ```
-New-MgApplicationSynchronizationJobOnDemand -InputObject <IApplicationsIdentity>
+New-MgBetaApplicationSynchronizationJobOnDemand -InputObject <IApplicationsIdentity>
  -BodyParameter <IPaths1A5O87GApplicationsApplicationIdSynchronizationJobsSynchronizationjobIdMicrosoftGraphProvisionondemandPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -48,6 +48,20 @@ The rate limit for this API is 5 requests per 10 seconds.
 No user or group will be provisioned on-demand that would not have been provisioned through the regular provisioning cycles.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -83,7 +97,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths1A5O87GApplicationsApplicationIdSynchronizationJobsSynchronizationjobIdMicrosoftGraphProvisionondemandPostRequestbodyContentApplicationJsonSchema
@@ -99,7 +113,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IApplicationsIdentity
@@ -115,7 +129,7 @@ Accept wildcard characters: False
 
 ### -Parameters
 .
-To construct, please use Get-Help -Online and see NOTES section for PARAMETERS properties and create a hash table.
+To construct, see NOTES section for PARAMETERS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSynchronizationJobApplicationParameters[]
@@ -180,11 +194,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths1A5O87GApplicationsApplicationIdSynchronizationJobsSynchronizationjobIdMicrosoftGraphProvisionondemandPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1A5O87GApplicationsApplicationIdSynchronizationJobsSynchronizationjobIdMicrosoftGraphProvisionondemandPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphStringKeyStringValuePair
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphStringKeyStringValuePair
 ## NOTES
 
 ALIASES
@@ -194,7 +208,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1A5O87GApplicationsApplicationIdSynchronizationJobsSynchronizationjobIdMicrosoftGraphProvisionondemandPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1A5O87GApplicationsApplicationIdSynchronizationJobsSynchronizationjobIdMicrosoftGraphProvisionondemandPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Parameters <IMicrosoftGraphSynchronizationJobApplicationParameters[]>]`: 
     - `[RuleId <String>]`: The identifier of the synchronizationRule to be applied. This rule ID is defined in the schema for a given synchronization job or template.
@@ -207,7 +221,7 @@ BODYPARAMETER `<IPaths1A5O87GApplicationsApplicationIdSynchronizationJobsSynchro
       - `[ObjectId <String>]`: The identifier of an object to which a synchronizationJob is to be applied. Can be one of the following: An onPremisesDistinguishedName for synchronization from Active Directory to Azure AD.The user ID for synchronization from Azure AD to a third-party.The Worker ID of the Workday worker for synchronization from Workday to either Active Directory or Azure AD.
       - `[ObjectTypeName <String>]`: The type of the object to which a synchronizationJob is to be applied. Can be one of the following: user for synchronizing between Active Directory and Azure AD.User for synchronizing a user between Azure AD and a third-party application. Worker for synchronization a user between Workday and either Active Directory or Azure AD.Group for synchronizing a group between Azure AD and a third-party application.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+`INPUTOBJECT <IApplicationsIdentity>`: Identity Parameter
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
   - `[ApplicationId <String>]`: The unique identifier of application
@@ -237,7 +251,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[UserId <String>]`: The unique identifier of user
 
-PARAMETERS <IMicrosoftGraphSynchronizationJobApplicationParameters\[]>: .
+`PARAMETERS <IMicrosoftGraphSynchronizationJobApplicationParameters[]>`: .
   - `[RuleId <String>]`: The identifier of the synchronizationRule to be applied. This rule ID is defined in the schema for a given synchronization job or template.
   - `[Subjects <IMicrosoftGraphSynchronizationJobSubject[]>]`: The identifiers of one or more objects to which a synchronizationJob is to be applied.
     - `[Links <IMicrosoftGraphSynchronizationLinkedObjects>]`: synchronizationLinkedObjects

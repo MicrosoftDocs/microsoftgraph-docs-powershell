@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mginformationprotectionpolicy
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetainformationprotectionpolicy
 schema: 2.0.0
 ---
 
-# Update-MgInformationProtectionPolicy
+# Update-MgBetaInformationProtectionPolicy
 
 ## SYNOPSIS
 Update the navigation property policy in informationProtection
@@ -14,20 +14,34 @@ Update the navigation property policy in informationProtection
 
 ### UpdateExpanded (Default)
 ```
-Update-MgInformationProtectionPolicy [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Labels <IMicrosoftGraphInformationProtectionLabel[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaInformationProtectionPolicy [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-Labels <IMicrosoftGraphInformationProtectionLabel[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgInformationProtectionPolicy -BodyParameter <IMicrosoftGraphInformationProtectionPolicy> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaInformationProtectionPolicy -BodyParameter <IMicrosoftGraphInformationProtectionPolicy> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property policy in informationProtection
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -48,7 +62,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 informationProtectionPolicy
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphInformationProtectionPolicy
@@ -63,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -80,26 +94,11 @@ Accept wildcard characters: False
 
 ### -Labels
 .
-To construct, please use Get-Help -Online and see NOTES section for LABELS properties and create a hash table.
+To construct, see NOTES section for LABELS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphInformationProtectionLabel[]
 Parameter Sets: UpdateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -145,10 +144,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInformationProtectionPolicy
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInformationProtectionPolicy
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInformationProtectionPolicy
 ## NOTES
 
 ALIASES
@@ -158,11 +157,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphInformationProtectionPolicy>`: informationProtectionPolicy
+`BODYPARAMETER <IMicrosoftGraphInformationProtectionPolicy>`: informationProtectionPolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Labels <IMicrosoftGraphInformationProtectionLabel[]>]`: 
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Color <String>]`: The color that the UI should display for the label, if configured.
     - `[Description <String>]`: The admin-defined description for the label.
     - `[IsActive <Boolean?>]`: Indicates whether the label is active or not. Active labels should be hidden or disabled in UI.
@@ -180,8 +179,8 @@ BODYPARAMETER `<IMicrosoftGraphInformationProtectionPolicy>`: informationProtect
     - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
     - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a UI.
 
-LABELS <IMicrosoftGraphInformationProtectionLabel\[]>: .
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`LABELS <IMicrosoftGraphInformationProtectionLabel[]>`: .
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Color <String>]`: The color that the UI should display for the label, if configured.
   - `[Description <String>]`: The admin-defined description for the label.
   - `[IsActive <Boolean?>]`: Indicates whether the label is active or not. Active labels should be hidden or disabled in UI.

@@ -1,7 +1,7 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/new-mgusertodolisttask
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusertodolisttask
 schema: 2.0.0
 ---
 
@@ -12,7 +12,7 @@ Create a new task object in a specified todoTaskList.
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
 New-MgUserTodoListTask -TodoTaskListId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
  [-AttachmentSessions <IMicrosoftGraphAttachmentSession[]>] [-Attachments <IMicrosoftGraphAttachmentBase[]>]
@@ -26,13 +26,13 @@ New-MgUserTodoListTask -TodoTaskListId <String> -UserId <String> [-AdditionalPro
  [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
 New-MgUserTodoListTask -TodoTaskListId <String> -UserId <String> -BodyParameter <IMicrosoftGraphTodoTask>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded1
+### CreateViaIdentityExpanded
 ```
 New-MgUserTodoListTask -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>]
  [-AttachmentSessions <IMicrosoftGraphAttachmentSession[]>] [-Attachments <IMicrosoftGraphAttachmentBase[]>]
@@ -46,7 +46,7 @@ New-MgUserTodoListTask -InputObject <IUsersIdentity> [-AdditionalProperties <Has
  [<CommonParameters>]
 ```
 
-### CreateViaIdentity1
+### CreateViaIdentity
 ```
 New-MgUserTodoListTask -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphTodoTask> [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -57,7 +57,7 @@ Create a new task object in a specified todoTaskList.
 
 ## EXAMPLES
 
-### Example 1: Using the New-MgUserTodoListTask Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Users
 $params = @{
@@ -77,9 +77,6 @@ $params = @{
 New-MgUserTodoListTask -UserId $userId -TodoTaskListId $todoTaskListId -BodyParameter $params
 ```
 
-This example shows how to use the New-MgUserTodoListTask Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -87,7 +84,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -99,11 +96,11 @@ Accept wildcard characters: False
 
 ### -Attachments
 A collection of file attachments for the task.
-To construct, please use Get-Help -Online and see NOTES section for ATTACHMENTS properties and create a hash table.
+To construct, see NOTES section for ATTACHMENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAttachmentBase[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -115,11 +112,11 @@ Accept wildcard characters: False
 
 ### -AttachmentSessions
 .
-To construct, please use Get-Help -Online and see NOTES section for ATTACHMENTSESSIONS properties and create a hash table.
+To construct, see NOTES section for ATTACHMENTSESSIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAttachmentSession[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -131,11 +128,11 @@ Accept wildcard characters: False
 
 ### -Body
 itemBody
-To construct, please use Get-Help -Online and see NOTES section for BODY properties and create a hash table.
+To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphItemBody
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -154,7 +151,7 @@ For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -166,11 +163,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 todoTask
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphTodoTask
-Parameter Sets: Create1, CreateViaIdentity1
+Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -186,7 +183,7 @@ Each category corresponds to the displayName property of an outlookCategory that
 
 ```yaml
 Type: String[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -198,11 +195,11 @@ Accept wildcard characters: False
 
 ### -ChecklistItems
 A collection of checklistItems linked to a task.
-To construct, please use Get-Help -Online and see NOTES section for CHECKLISTITEMS properties and create a hash table.
+To construct, see NOTES section for CHECKLISTITEMS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphChecklistItem[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -214,11 +211,11 @@ Accept wildcard characters: False
 
 ### -CompletedDateTime
 dateTimeTimeZone
-To construct, please use Get-Help -Online and see NOTES section for COMPLETEDDATETIME properties and create a hash table.
+To construct, see NOTES section for COMPLETEDDATETIME properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDateTimeZone
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -237,7 +234,7 @@ For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -249,11 +246,11 @@ Accept wildcard characters: False
 
 ### -DueDateTime
 dateTimeTimeZone
-To construct, please use Get-Help -Online and see NOTES section for DUEDATETIME properties and create a hash table.
+To construct, see NOTES section for DUEDATETIME properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDateTimeZone
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -266,11 +263,11 @@ Accept wildcard characters: False
 ### -Extensions
 The collection of open extensions defined for the task.
 Nullable.
-To construct, please use Get-Help -Online and see NOTES section for EXTENSIONS properties and create a hash table.
+To construct, see NOTES section for EXTENSIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphExtension[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -285,7 +282,7 @@ Indicates whether the task has attachments.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -301,7 +298,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -316,7 +313,7 @@ importance
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -328,11 +325,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersIdentity
-Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -347,7 +344,7 @@ Set to true if an alert is set to remind the user of the task.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -366,7 +363,7 @@ For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -378,11 +375,11 @@ Accept wildcard characters: False
 
 ### -LinkedResources
 A collection of resources linked to the task.
-To construct, please use Get-Help -Online and see NOTES section for LINKEDRESOURCES properties and create a hash table.
+To construct, see NOTES section for LINKEDRESOURCES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphLinkedResource[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -394,11 +391,11 @@ Accept wildcard characters: False
 
 ### -Recurrence
 patternedRecurrence
-To construct, please use Get-Help -Online and see NOTES section for RECURRENCE properties and create a hash table.
+To construct, see NOTES section for RECURRENCE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPatternedRecurrence
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -410,11 +407,11 @@ Accept wildcard characters: False
 
 ### -ReminderDateTime
 dateTimeTimeZone
-To construct, please use Get-Help -Online and see NOTES section for REMINDERDATETIME properties and create a hash table.
+To construct, see NOTES section for REMINDERDATETIME properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDateTimeZone
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -426,11 +423,11 @@ Accept wildcard characters: False
 
 ### -StartDateTime
 dateTimeTimeZone
-To construct, please use Get-Help -Online and see NOTES section for STARTDATETIME properties and create a hash table.
+To construct, see NOTES section for STARTDATETIME properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDateTimeZone
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -445,7 +442,7 @@ taskStatus
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -460,7 +457,7 @@ A brief description of the task.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -475,7 +472,7 @@ The unique identifier of todoTaskList
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, Create1
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -490,7 +487,7 @@ The unique identifier of user
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, Create1
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -550,25 +547,25 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ATTACHMENTS <IMicrosoftGraphAttachmentBase\[]>: A collection of file attachments for the task.
+`ATTACHMENTS <IMicrosoftGraphAttachmentBase[]>`: A collection of file attachments for the task.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ContentType <String>]`: The MIME type.
   - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
   - `[Size <Int32?>]`: The length of the attachment in bytes.
 
-ATTACHMENTSESSIONS <IMicrosoftGraphAttachmentSession\[]>: .
+`ATTACHMENTSESSIONS <IMicrosoftGraphAttachmentSession[]>`: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Content <Byte[]>]`: The content streams that are uploaded.
   - `[ExpirationDateTime <DateTime?>]`: The date and time in UTC when the upload session will expire. The complete file must be uploaded before this expiration time is reached.
   - `[NextExpectedRanges <String[]>]`: Indicates a single value {start} that represents the location in the file where the next upload should begin.
 
-BODY `<IMicrosoftGraphItemBody>`: itemBody
+`BODY <IMicrosoftGraphItemBody>`: itemBody
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Content <String>]`: The content of the item.
   - `[ContentType <String>]`: bodyType
 
-BODYPARAMETER `<IMicrosoftGraphTodoTask>`: todoTask
+`BODYPARAMETER <IMicrosoftGraphTodoTask>`: todoTask
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AttachmentSessions <IMicrosoftGraphAttachmentSession[]>]`: 
@@ -635,56 +632,49 @@ BODYPARAMETER `<IMicrosoftGraphTodoTask>`: todoTask
   - `[Status <String>]`: taskStatus
   - `[Title <String>]`: A brief description of the task.
 
-CHECKLISTITEMS <IMicrosoftGraphChecklistItem\[]>: A collection of checklistItems linked to a task.
+`CHECKLISTITEMS <IMicrosoftGraphChecklistItem[]>`: A collection of checklistItems linked to a task.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CheckedDateTime <DateTime?>]`: The date and time when the checklistItem was finished.
   - `[CreatedDateTime <DateTime?>]`: The date and time when the checklistItem was created.
   - `[DisplayName <String>]`: Field indicating the title of checklistItem.
   - `[IsChecked <Boolean?>]`: State indicating whether the item is checked off or not.
 
-COMPLETEDDATETIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
+`COMPLETEDDATETIME <IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
   - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
 
-DUEDATETIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
+`DUEDATETIME <IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
   - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
 
-EXTENSIONS <IMicrosoftGraphExtension\[]>: The collection of open extensions defined for the task. Nullable.
+`EXTENSIONS <IMicrosoftGraphExtension[]>`: The collection of open extensions defined for the task. Nullable.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersIdentity>`: Identity Parameter
   - `[AttachmentBaseId <String>]`: The unique identifier of attachmentBase
-  - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[AttachmentSessionId <String>]`: The unique identifier of attachmentSession
   - `[ChecklistItemId <String>]`: The unique identifier of checklistItem
   - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
   - `[LinkedResourceId <String>]`: The unique identifier of linkedResource
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
-  - `[NotificationId <String>]`: The unique identifier of notification
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[OutlookCategoryId <String>]`: The unique identifier of outlookCategory
-  - `[OutlookTaskFolderId <String>]`: The unique identifier of outlookTaskFolder
-  - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
-  - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
   - `[TodoTaskId <String>]`: The unique identifier of todoTask
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
   - `[UserId <String>]`: The unique identifier of user
 
-LINKEDRESOURCES <IMicrosoftGraphLinkedResource\[]>: A collection of resources linked to the task.
+`LINKEDRESOURCES <IMicrosoftGraphLinkedResource[]>`: A collection of resources linked to the task.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ApplicationName <String>]`: The app name of the source that sends the linkedResource.
   - `[DisplayName <String>]`: The title of the linkedResource.
   - `[ExternalId <String>]`: ID of the object that is associated with this task on the third-party/partner system.
   - `[WebUrl <String>]`: Deep link to the linkedResource.
 
-RECURRENCE `<IMicrosoftGraphPatternedRecurrence>`: patternedRecurrence
+`RECURRENCE <IMicrosoftGraphPatternedRecurrence>`: patternedRecurrence
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -703,12 +693,12 @@ RECURRENCE `<IMicrosoftGraphPatternedRecurrence>`: patternedRecurrence
     - `[StartDate <DateTime?>]`: The date to start applying the recurrence pattern. The first occurrence of the meeting may be this date or later, depending on the recurrence pattern of the event. Must be the same value as the start property of the recurring event. Required.
     - `[Type <String>]`: recurrenceRangeType
 
-REMINDERDATETIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
+`REMINDERDATETIME <IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
   - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
 
-STARTDATETIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
+`STARTDATETIME <IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
   - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.

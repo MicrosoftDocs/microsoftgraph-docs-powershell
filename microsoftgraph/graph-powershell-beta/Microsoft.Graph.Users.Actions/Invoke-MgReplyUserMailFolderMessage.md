@@ -1,90 +1,76 @@
----
-external help file: Microsoft.Graph.Users.Actions-help.xml
-Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgreplyusermailfoldermessage
+﻿---
+external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.Users.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetareplyallusermessage
 schema: 2.0.0
 ---
 
-# Invoke-MgReplyUserMailFolderMessage
+# Invoke-MgBetaReplyAllUserMessage
 
 ## SYNOPSIS
-Reply to the sender of a message using either JSON or MIME format.
-When using JSON format:\n* Specify either a comment or the **body** property of the `message` parameter.
-Specifying both will return an HTTP `400 Bad Request` error.\n* If the original message specifies a recipient in the **replyTo** property, per Internet Message Format (RFC 2822), send the reply to the recipients in **replyTo** and not the recipient in the **from** property.
+Reply to all recipients of a message using either JSON or MIME format.
+When using JSON format:\n- Specify either a comment or the **body** property of the `message` parameter.
+Specifying both will return an HTTP 400 Bad Request error.\n- If the original message specifies a recipient in the **replyTo** property, per Internet Message Format (RFC 2822), send the reply to the recipients in **replyTo** and not the recipient in the **from** property.
 When using MIME format:\n- Provide the applicable Internet message headers and the MIME content, all encoded in **base64** format in the request body.\n- Add any attachments and S/MIME properties to the MIME content.
 This method saves the message in the **Sent Items** folder.
-Alternatively, create a draft to reply to a message, and send it later.
+Alternatively, create a draft to reply-all to a message, and send it later.
 
 ## SYNTAX
 
-### ReplyExpanded (Default)
+### ReplyExpanded1 (Default)
 ```
-Invoke-MgReplyUserMailFolderMessage -MailFolderId <String> -MessageId <String> -UserId <String>
- [-AdditionalProperties <Hashtable>] [-Comment <String>] [-Message <IMicrosoftGraphMessage>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Reply
-```
-Invoke-MgReplyUserMailFolderMessage -MailFolderId <String> -MessageId <String> -UserId <String>
- -BodyParameter <IPaths6Zjq1HUsersUserIdMailfoldersMailfolderIdMessagesMessageIdMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema1>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### ReplyViaIdentityExpanded
-```
-Invoke-MgReplyUserMailFolderMessage -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
+Invoke-MgBetaReplyAllUserMessage -MessageId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
  [-Comment <String>] [-Message <IMicrosoftGraphMessage>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ReplyViaIdentity
+### Reply1
 ```
-Invoke-MgReplyUserMailFolderMessage -InputObject <IUsersActionsIdentity>
- -BodyParameter <IPaths6Zjq1HUsersUserIdMailfoldersMailfolderIdMessagesMessageIdMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema1>
+Invoke-MgBetaReplyAllUserMessage -MessageId <String> -UserId <String>
+ -BodyParameter <IPathsKn6R94UsersUserIdMessagesMessageIdMicrosoftGraphReplyallPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### ReplyViaIdentityExpanded1
+```
+Invoke-MgBetaReplyAllUserMessage -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
+ [-Comment <String>] [-Message <IMicrosoftGraphMessage>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### ReplyViaIdentity1
+```
+Invoke-MgBetaReplyAllUserMessage -InputObject <IUsersActionsIdentity>
+ -BodyParameter <IPathsKn6R94UsersUserIdMessagesMessageIdMicrosoftGraphReplyallPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Reply to the sender of a message using either JSON or MIME format.
-When using JSON format:\n* Specify either a comment or the **body** property of the `message` parameter.
-Specifying both will return an HTTP `400 Bad Request` error.\n* If the original message specifies a recipient in the **replyTo** property, per Internet Message Format (RFC 2822), send the reply to the recipients in **replyTo** and not the recipient in the **from** property.
+Reply to all recipients of a message using either JSON or MIME format.
+When using JSON format:\n- Specify either a comment or the **body** property of the `message` parameter.
+Specifying both will return an HTTP 400 Bad Request error.\n- If the original message specifies a recipient in the **replyTo** property, per Internet Message Format (RFC 2822), send the reply to the recipients in **replyTo** and not the recipient in the **from** property.
 When using MIME format:\n- Provide the applicable Internet message headers and the MIME content, all encoded in **base64** format in the request body.\n- Add any attachments and S/MIME properties to the MIME content.
 This method saves the message in the **Sent Items** folder.
-Alternatively, create a draft to reply to a message, and send it later.
+Alternatively, create a draft to reply-all to a message, and send it later.
 
 ## EXAMPLES
 
-### Example 1: Reply in JSON format to an existing message
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Users.Actions
-
+Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
 	Message = @{
-		ToRecipients = @(
+		Attachments = @(
 			@{
-				EmailAddress = @{
-					Address = "samanthab@contoso.onmicrosoft.com"
-					Name = "Samantha Booth"
-				}
-			}
-			@{
-				EmailAddress = @{
-					Address = "randiw@contoso.onmicrosoft.com"
-					Name = "Randi Welch"
-				}
+				"@odata.type" = "#microsoft.graph.fileAttachment"
+				Name = "guidelines.txt"
+				ContentBytes = "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
 			}
 		)
 	}
-	Comment = "Samantha, Randi, would you name the group please?"
+	Comment = "Please take a look at the attached guidelines before you decide on the name."
 }
-
 # A UPN can also be used as -UserId.
-Invoke-MgReplyUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
+Invoke-MgBetaReplyAllUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
 ```
-
-This example shows how to use the Invoke-MgReplyUserMailFolderMessage Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -93,7 +79,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: ReplyExpanded, ReplyViaIdentityExpanded
+Parameter Sets: ReplyExpanded1, ReplyViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -105,11 +91,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths6Zjq1HUsersUserIdMailfoldersMailfolderIdMessagesMessageIdMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema1
-Parameter Sets: Reply, ReplyViaIdentity
+Type: IPathsKn6R94UsersUserIdMessagesMessageIdMicrosoftGraphReplyallPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Reply1, ReplyViaIdentity1
 Aliases:
 
 Required: True
@@ -124,7 +110,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: ReplyExpanded, ReplyViaIdentityExpanded
+Parameter Sets: ReplyExpanded1, ReplyViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -136,11 +122,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: ReplyViaIdentityExpanded, ReplyViaIdentity
+Parameter Sets: ReplyViaIdentityExpanded1, ReplyViaIdentity1
 Aliases:
 
 Required: True
@@ -150,28 +136,13 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -MailFolderId
-The unique identifier of mailFolder
-
-```yaml
-Type: String
-Parameter Sets: ReplyExpanded, Reply
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Message
 message
-To construct, please use Get-Help -Online and see NOTES section for MESSAGE properties and create a hash table.
+To construct, see NOTES section for MESSAGE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphMessage
-Parameter Sets: ReplyExpanded, ReplyViaIdentityExpanded
+Parameter Sets: ReplyExpanded1, ReplyViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -186,7 +157,7 @@ The unique identifier of message
 
 ```yaml
 Type: String
-Parameter Sets: ReplyExpanded, Reply
+Parameter Sets: ReplyExpanded1, Reply1
 Aliases:
 
 Required: True
@@ -216,7 +187,7 @@ The unique identifier of user
 
 ```yaml
 Type: String
-Parameter Sets: ReplyExpanded, Reply
+Parameter Sets: ReplyExpanded1, Reply1
 Aliases:
 
 Required: True
@@ -262,8 +233,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths6Zjq1HUsersUserIdMailfoldersMailfolderIdMessagesMessageIdMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema1
-### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsKn6R94UsersUserIdMessagesMessageIdMicrosoftGraphReplyallPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
 ## OUTPUTS
 
 ### System.Boolean
@@ -276,28 +247,28 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths6Zjq1HUsersUserIdMailfoldersMailfolderIdMessagesMessageIdMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema1>`: .
+`BODYPARAMETER <IPathsKn6R94UsersUserIdMessagesMessageIdMicrosoftGraphReplyallPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Comment <String>]`: 
   - `[Message <IMicrosoftGraphMessage>]`: message
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Categories <String[]>]`: The categories associated with the item
-    - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
+    - `[Categories <String[]>]`: 
+    - `[ChangeKey <String>]`: 
     - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Attachments <IMicrosoftGraphAttachment[]>]`: The fileAttachment and itemAttachment attachments for the message.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[ContentType <String>]`: The MIME type.
       - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
       - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-      - `[Name <String>]`: The attachment's file name.
+      - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
       - `[Size <Int32?>]`: The length of the attachment in bytes.
     - `[BccRecipients <IMicrosoftGraphRecipient[]>]`: The Bcc: recipients for the message.
       - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Address <String>]`: The email address of the person or entity.
-        - `[Name <String>]`: The display name of the person or entity.
+        - `[Address <String>]`: The email address of an entity instance.
+        - `[Name <String>]`: The display name of an entity instance.
     - `[Body <IMicrosoftGraphItemBody>]`: itemBody
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Content <String>]`: The content of the item.
@@ -307,13 +278,13 @@ BODYPARAMETER `<IPaths6Zjq1HUsersUserIdMailfoldersMailfolderIdMessagesMessageIdM
     - `[ConversationId <String>]`: The ID of the conversation the email belongs to.
     - `[ConversationIndex <Byte[]>]`: Indicates the position of the message within the conversation.
     - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the message. Nullable.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Flag <IMicrosoftGraphFollowupFlag>]`: followupFlag
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CompletedDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
-        - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
+        - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
+        - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
       - `[DueDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
       - `[FlagStatus <String>]`: followupFlagStatus
       - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
@@ -330,7 +301,7 @@ BODYPARAMETER `<IPaths6Zjq1HUsersUserIdMailfoldersMailfolderIdMessagesMessageIdM
     - `[IsRead <Boolean?>]`: 
     - `[IsReadReceiptRequested <Boolean?>]`: 
     - `[Mentions <IMicrosoftGraphMention[]>]`: A collection of mentions in the message, ordered by the createdDateTime from the newest to the oldest. By default, a GET /messages does not return this property unless you apply $expand on the property.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Application <String>]`: The name of the application where the mention is created. Optional. Not used and defaulted as null for message.
       - `[ClientReference <String>]`: A unique identifier that represents a parent of the resource instance. Optional. Not used and defaulted as null for message.
       - `[CreatedBy <IMicrosoftGraphEmailAddress>]`: emailAddress
@@ -343,7 +314,7 @@ BODYPARAMETER `<IPaths6Zjq1HUsersUserIdMailfoldersMailfolderIdMessagesMessageIdM
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[IsMentioned <Boolean?>]`: True if the signed-in user is mentioned in the parent resource instance. Read-only. Supports filter.
     - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the message. Nullable.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Value <String[]>]`: A collection of property values.
     - `[ParentFolderId <String>]`: 
     - `[ReceivedDateTime <DateTime?>]`: 
@@ -351,7 +322,7 @@ BODYPARAMETER `<IPaths6Zjq1HUsersUserIdMailfoldersMailfolderIdMessagesMessageIdM
     - `[Sender <IMicrosoftGraphRecipient>]`: recipient
     - `[SentDateTime <DateTime?>]`: 
     - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the message. Nullable.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Value <String>]`: A property value.
     - `[Subject <String>]`: 
     - `[ToRecipients <IMicrosoftGraphRecipient[]>]`: 
@@ -360,7 +331,7 @@ BODYPARAMETER `<IPaths6Zjq1HUsersUserIdMailfoldersMailfolderIdMessagesMessageIdM
     - `[UnsubscribeEnabled <Boolean?>]`: 
     - `[WebLink <String>]`: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
@@ -394,7 +365,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription
@@ -403,25 +373,25 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
   - `[UserId <String>]`: The unique identifier of user
 
-MESSAGE `<IMicrosoftGraphMessage>`: message
+`MESSAGE <IMicrosoftGraphMessage>`: message
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Categories <String[]>]`: The categories associated with the item
-  - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
+  - `[Categories <String[]>]`: 
+  - `[ChangeKey <String>]`: 
   - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Attachments <IMicrosoftGraphAttachment[]>]`: The fileAttachment and itemAttachment attachments for the message.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[ContentType <String>]`: The MIME type.
     - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
     - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[Name <String>]`: The attachment's file name.
+    - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
     - `[Size <Int32?>]`: The length of the attachment in bytes.
   - `[BccRecipients <IMicrosoftGraphRecipient[]>]`: The Bcc: recipients for the message.
     - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Address <String>]`: The email address of the person or entity.
-      - `[Name <String>]`: The display name of the person or entity.
+      - `[Address <String>]`: The email address of an entity instance.
+      - `[Name <String>]`: The display name of an entity instance.
   - `[Body <IMicrosoftGraphItemBody>]`: itemBody
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Content <String>]`: The content of the item.
@@ -431,13 +401,13 @@ MESSAGE `<IMicrosoftGraphMessage>`: message
   - `[ConversationId <String>]`: The ID of the conversation the email belongs to.
   - `[ConversationIndex <Byte[]>]`: Indicates the position of the message within the conversation.
   - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the message. Nullable.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Flag <IMicrosoftGraphFollowupFlag>]`: followupFlag
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[CompletedDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
-      - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
+      - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
+      - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
     - `[DueDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
     - `[FlagStatus <String>]`: followupFlagStatus
     - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
@@ -454,7 +424,7 @@ MESSAGE `<IMicrosoftGraphMessage>`: message
   - `[IsRead <Boolean?>]`: 
   - `[IsReadReceiptRequested <Boolean?>]`: 
   - `[Mentions <IMicrosoftGraphMention[]>]`: A collection of mentions in the message, ordered by the createdDateTime from the newest to the oldest. By default, a GET /messages does not return this property unless you apply $expand on the property.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Application <String>]`: The name of the application where the mention is created. Optional. Not used and defaulted as null for message.
     - `[ClientReference <String>]`: A unique identifier that represents a parent of the resource instance. Optional. Not used and defaulted as null for message.
     - `[CreatedBy <IMicrosoftGraphEmailAddress>]`: emailAddress
@@ -467,7 +437,7 @@ MESSAGE `<IMicrosoftGraphMessage>`: message
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[IsMentioned <Boolean?>]`: True if the signed-in user is mentioned in the parent resource instance. Read-only. Supports filter.
   - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the message. Nullable.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Value <String[]>]`: A collection of property values.
   - `[ParentFolderId <String>]`: 
   - `[ReceivedDateTime <DateTime?>]`: 
@@ -475,7 +445,7 @@ MESSAGE `<IMicrosoftGraphMessage>`: message
   - `[Sender <IMicrosoftGraphRecipient>]`: recipient
   - `[SentDateTime <DateTime?>]`: 
   - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the message. Nullable.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Value <String>]`: A property value.
   - `[Subject <String>]`: 
   - `[ToRecipients <IMicrosoftGraphRecipient[]>]`: 

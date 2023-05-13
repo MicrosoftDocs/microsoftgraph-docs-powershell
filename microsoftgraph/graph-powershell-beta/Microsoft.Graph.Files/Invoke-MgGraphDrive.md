@@ -1,26 +1,26 @@
----
-external help file: Microsoft.Graph.Files-help.xml
-Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/invoke-mggraphdrive
+﻿---
+external help file: Microsoft.Graph.Beta.Files-help.xml
+Module Name: Microsoft.Graph.Beta.Files
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetagraphdrive
 schema: 2.0.0
 ---
 
-# Invoke-MgGraphDrive
+# Invoke-MgBetaGraphDrive
 
 ## SYNOPSIS
 Invoke function sharedWithMe
 
 ## SYNTAX
 
-### Graph1 (Default)
+### Graph (Default)
 ```
-Invoke-MgGraphDrive -DriveId <String> [-Count] [-Filter <String>] [-Property <String[]>] [-Search <String>]
+Invoke-MgBetaGraphDrive -DriveId <String> [-Count] [-Filter <String>] [-Property <String[]>] [-Search <String>]
  [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
 ```
 
-### GraphViaIdentity1
+### GraphViaIdentity
 ```
-Invoke-MgGraphDrive -InputObject <IFilesIdentity> [-Count] [-Filter <String>] [-Property <String[]>]
+Invoke-MgBetaGraphDrive -InputObject <IFilesIdentity> [-Count] [-Filter <String>] [-Property <String[]>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
 ```
 
@@ -28,6 +28,20 @@ Invoke-MgGraphDrive -InputObject <IFilesIdentity> [-Count] [-Filter <String>] [-
 Invoke function sharedWithMe
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -51,7 +65,7 @@ The unique identifier of drive
 
 ```yaml
 Type: String
-Parameter Sets: Graph1
+Parameter Sets: Graph
 Aliases:
 
 Required: True
@@ -78,11 +92,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IFilesIdentity
-Parameter Sets: GraphViaIdentity1
+Parameter Sets: GraphViaIdentity
 Aliases:
 
 Required: True
@@ -172,10 +186,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IFilesIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDriveItem1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDriveItem
 ## NOTES
 
 ALIASES
@@ -185,7 +199,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+`INPUTOBJECT <IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType

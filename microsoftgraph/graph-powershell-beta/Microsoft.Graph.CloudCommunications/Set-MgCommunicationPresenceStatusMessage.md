@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.CloudCommunications-help.xml
-Module Name: Microsoft.Graph.CloudCommunications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/set-mgcommunicationpresencestatusmessage
+﻿---
+external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
+Module Name: Microsoft.Graph.Beta.CloudCommunications
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/set-mgbetacommunicationpresencestatusmessage
 schema: 2.0.0
 ---
 
-# Set-MgCommunicationPresenceStatusMessage
+# Set-MgBetaCommunicationPresenceStatusMessage
 
 ## SYNOPSIS
 Set a presence status message for a user.
@@ -15,27 +15,27 @@ An optional expiration date and time can be supplied.
 
 ### SetExpanded (Default)
 ```
-Set-MgCommunicationPresenceStatusMessage -PresenceId <String> [-AdditionalProperties <Hashtable>]
+Set-MgBetaCommunicationPresenceStatusMessage -PresenceId <String> [-AdditionalProperties <Hashtable>]
  [-StatusMessage <IMicrosoftGraphPresenceStatusMessage>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Set
 ```
-Set-MgCommunicationPresenceStatusMessage -PresenceId <String>
+Set-MgBetaCommunicationPresenceStatusMessage -PresenceId <String>
  -BodyParameter <IPaths1Hq60HmCommunicationsPresencesPresenceIdMicrosoftGraphSetstatusmessagePostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentityExpanded
 ```
-Set-MgCommunicationPresenceStatusMessage -InputObject <ICloudCommunicationsIdentity>
+Set-MgBetaCommunicationPresenceStatusMessage -InputObject <ICloudCommunicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-StatusMessage <IMicrosoftGraphPresenceStatusMessage>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
-Set-MgCommunicationPresenceStatusMessage -InputObject <ICloudCommunicationsIdentity>
+Set-MgBetaCommunicationPresenceStatusMessage -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IPaths1Hq60HmCommunicationsPresencesPresenceIdMicrosoftGraphSetstatusmessagePostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -45,6 +45,16 @@ Set a presence status message for a user.
 An optional expiration date and time can be supplied.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -65,7 +75,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths1Hq60HmCommunicationsPresencesPresenceIdMicrosoftGraphSetstatusmessagePostRequestbodyContentApplicationJsonSchema
@@ -81,7 +91,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ICloudCommunicationsIdentity
@@ -127,7 +137,7 @@ Accept wildcard characters: False
 
 ### -StatusMessage
 presenceStatusMessage
-To construct, please use Get-Help -Online and see NOTES section for STATUSMESSAGE properties and create a hash table.
+To construct, see NOTES section for STATUSMESSAGE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPresenceStatusMessage
@@ -177,8 +187,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths1Hq60HmCommunicationsPresencesPresenceIdMicrosoftGraphSetstatusmessagePostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Hq60HmCommunicationsPresencesPresenceIdMicrosoftGraphSetstatusmessagePostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### System.Boolean
@@ -191,7 +201,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Hq60HmCommunicationsPresencesPresenceIdMicrosoftGraphSetstatusmessagePostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1Hq60HmCommunicationsPresencesPresenceIdMicrosoftGraphSetstatusmessagePostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[StatusMessage <IMicrosoftGraphPresenceStatusMessage>]`: presenceStatusMessage
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -205,7 +215,7 @@ BODYPARAMETER `<IPaths1Hq60HmCommunicationsPresencesPresenceIdMicrosoftGraphSets
       - `[ContentType <String>]`: bodyType
     - `[PublishedDateTime <DateTime?>]`: Time in which the status message was published.Read-only.publishedDateTime is not available when requesting presence of another user.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+`INPUTOBJECT <ICloudCommunicationsIdentity>`: Identity Parameter
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
   - `[CallId <String>]`: The unique identifier of call
@@ -215,6 +225,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
   - `[FromDateTime <DateTime?>]`: Usage: fromDateTime={fromDateTime}
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[MeetingRegistrantBaseId <String>]`: The unique identifier of meetingRegistrantBase
   - `[MeetingRegistrationQuestionId <String>]`: The unique identifier of meetingRegistrationQuestion
   - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
   - `[ParticipantId <String>]`: The unique identifier of participant
@@ -223,7 +234,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[ToDateTime <DateTime?>]`: Usage: toDateTime={toDateTime}
   - `[UserId <String>]`: The unique identifier of user
 
-STATUSMESSAGE `<IMicrosoftGraphPresenceStatusMessage>`: presenceStatusMessage
+`STATUSMESSAGE <IMicrosoftGraphPresenceStatusMessage>`: presenceStatusMessage
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ExpiryDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

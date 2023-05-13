@@ -1,7 +1,7 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/add-mgsecuritycaseediscoverycasereviewsettoreviewset
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/add-mgsecuritycaseediscoverycasereviewsettoreviewset
 schema: 2.0.0
 ---
 
@@ -14,31 +14,31 @@ The location provides a URL that will return a Add to review set operation.
 
 ## SYNTAX
 
-### AddExpanded1 (Default)
+### AddExpanded (Default)
 ```
 Add-MgSecurityCaseEdiscoveryCaseReviewSetToReviewSet -EdiscoveryCaseId <String> -EdiscoveryReviewSetId <String>
  [-AdditionalDataOptions <String>] [-AdditionalProperties <Hashtable>]
  [-Search <IMicrosoftGraphSecurityEdiscoverySearch>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Add1
+### Add
 ```
 Add-MgSecurityCaseEdiscoveryCaseReviewSetToReviewSet -EdiscoveryCaseId <String> -EdiscoveryReviewSetId <String>
- -BodyParameter <IPathsZszldxSecurityCasesEdiscoverycasesEdiscoverycaseIdReviewsetsEdiscoveryreviewsetIdMicrosoftGraphSecurityAddtoreviewsetPostRequestbodyContentApplicationJsonSchema1>
+ -BodyParameter <IPathsZszldxSecurityCasesEdiscoverycasesEdiscoverycaseIdReviewsetsEdiscoveryreviewsetIdMicrosoftGraphSecurityAddtoreviewsetPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### AddViaIdentityExpanded1
+### AddViaIdentityExpanded
 ```
 Add-MgSecurityCaseEdiscoveryCaseReviewSetToReviewSet -InputObject <ISecurityIdentity>
  [-AdditionalDataOptions <String>] [-AdditionalProperties <Hashtable>]
  [-Search <IMicrosoftGraphSecurityEdiscoverySearch>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### AddViaIdentity1
+### AddViaIdentity
 ```
 Add-MgSecurityCaseEdiscoveryCaseReviewSetToReviewSet -InputObject <ISecurityIdentity>
- -BodyParameter <IPathsZszldxSecurityCasesEdiscoverycasesEdiscoverycaseIdReviewsetsEdiscoveryreviewsetIdMicrosoftGraphSecurityAddtoreviewsetPostRequestbodyContentApplicationJsonSchema1>
+ -BodyParameter <IPathsZszldxSecurityCasesEdiscoverycasesEdiscoverycaseIdReviewsetsEdiscoveryreviewsetIdMicrosoftGraphSecurityAddtoreviewsetPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -49,7 +49,7 @@ The location provides a URL that will return a Add to review set operation.
 
 ## EXAMPLES
 
-### Example 1: Using the Add-MgSecurityCaseEdiscoveryCaseReviewSetToReviewSet Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Security
 $params = @{
@@ -61,9 +61,6 @@ $params = @{
 Add-MgSecurityCaseEdiscoveryCaseReviewSetToReviewSet -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryReviewSetId $ediscoveryReviewSetId -BodyParameter $params
 ```
 
-This example shows how to use the Add-MgSecurityCaseEdiscoveryCaseReviewSetToReviewSet Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ## PARAMETERS
 
 ### -AdditionalDataOptions
@@ -71,7 +68,7 @@ additionalDataOptions
 
 ```yaml
 Type: String
-Parameter Sets: AddExpanded1, AddViaIdentityExpanded1
+Parameter Sets: AddExpanded, AddViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -86,7 +83,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: AddExpanded1, AddViaIdentityExpanded1
+Parameter Sets: AddExpanded, AddViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -98,11 +95,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsZszldxSecurityCasesEdiscoverycasesEdiscoverycaseIdReviewsetsEdiscoveryreviewsetIdMicrosoftGraphSecurityAddtoreviewsetPostRequestbodyContentApplicationJsonSchema1
-Parameter Sets: Add1, AddViaIdentity1
+Type: IPathsZszldxSecurityCasesEdiscoverycasesEdiscoverycaseIdReviewsetsEdiscoveryreviewsetIdMicrosoftGraphSecurityAddtoreviewsetPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Add, AddViaIdentity
 Aliases:
 
 Required: True
@@ -117,7 +114,7 @@ The unique identifier of ediscoveryCase
 
 ```yaml
 Type: String
-Parameter Sets: AddExpanded1, Add1
+Parameter Sets: AddExpanded, Add
 Aliases:
 
 Required: True
@@ -132,7 +129,7 @@ The unique identifier of ediscoveryReviewSet
 
 ```yaml
 Type: String
-Parameter Sets: AddExpanded1, Add1
+Parameter Sets: AddExpanded, Add
 Aliases:
 
 Required: True
@@ -144,11 +141,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ISecurityIdentity
-Parameter Sets: AddViaIdentityExpanded1, AddViaIdentity1
+Parameter Sets: AddViaIdentityExpanded, AddViaIdentity
 Aliases:
 
 Required: True
@@ -175,11 +172,11 @@ Accept wildcard characters: False
 
 ### -Search
 ediscoverySearch
-To construct, please use Get-Help -Online and see NOTES section for SEARCH properties and create a hash table.
+To construct, see NOTES section for SEARCH properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSecurityEdiscoverySearch
-Parameter Sets: AddExpanded1, AddViaIdentityExpanded1
+Parameter Sets: AddExpanded, AddViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -225,7 +222,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsZszldxSecurityCasesEdiscoverycasesEdiscoverycaseIdReviewsetsEdiscoveryreviewsetIdMicrosoftGraphSecurityAddtoreviewsetPostRequestbodyContentApplicationJsonSchema1
+### Microsoft.Graph.PowerShell.Models.IPathsZszldxSecurityCasesEdiscoverycasesEdiscoverycaseIdReviewsetsEdiscoveryreviewsetIdMicrosoftGraphSecurityAddtoreviewsetPostRequestbodyContentApplicationJsonSchema
 ### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
 ## OUTPUTS
 
@@ -239,7 +236,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsZszldxSecurityCasesEdiscoverycasesEdiscoverycaseIdReviewsetsEdiscoveryreviewsetIdMicrosoftGraphSecurityAddtoreviewsetPostRequestbodyContentApplicationJsonSchema1>`: .
+`BODYPARAMETER <IPathsZszldxSecurityCasesEdiscoverycasesEdiscoverycaseIdReviewsetsEdiscoveryreviewsetIdMicrosoftGraphSecurityAddtoreviewsetPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AdditionalDataOptions <String>]`: additionalDataOptions
   - `[Search <IMicrosoftGraphSecurityEdiscoverySearch>]`: ediscoverySearch
@@ -334,65 +331,31 @@ BODYPARAMETER `<IPathsZszldxSecurityCasesEdiscoverycasesEdiscoverycaseIdReviewse
         - `[Status <String>]`: caseOperationStatus
         - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+`INPUTOBJECT <ISecurityIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
-  - `[ArticleId <String>]`: The unique identifier of article
-  - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator
-  - `[AttackSimulationOperationId <String>]`: The unique identifier of attackSimulationOperation
-  - `[AuthoredNoteId <String>]`: The unique identifier of authoredNote
   - `[CaseOperationId <String>]`: The unique identifier of caseOperation
-  - `[CloudAppSecurityProfileId <String>]`: The unique identifier of cloudAppSecurityProfile
   - `[DataSourceId <String>]`: The unique identifier of dataSource
-  - `[DispositionReviewStageId <String>]`: The unique identifier of dispositionReviewStage
-  - `[DomainSecurityProfileId <String>]`: The unique identifier of domainSecurityProfile
   - `[EdiscoveryCaseId <String>]`: The unique identifier of ediscoveryCase
   - `[EdiscoveryCustodianId <String>]`: The unique identifier of ediscoveryCustodian
-  - `[EdiscoveryFileId <String>]`: The unique identifier of ediscoveryFile
-  - `[EdiscoveryHoldPolicyId <String>]`: The unique identifier of ediscoveryHoldPolicy
   - `[EdiscoveryNoncustodialDataSourceId <String>]`: The unique identifier of ediscoveryNoncustodialDataSource
   - `[EdiscoveryReviewSetId <String>]`: The unique identifier of ediscoveryReviewSet
   - `[EdiscoveryReviewSetQueryId <String>]`: The unique identifier of ediscoveryReviewSetQuery
   - `[EdiscoveryReviewTagId <String>]`: The unique identifier of ediscoveryReviewTag
   - `[EdiscoveryReviewTagId1 <String>]`: The unique identifier of ediscoveryReviewTag
   - `[EdiscoverySearchId <String>]`: The unique identifier of ediscoverySearch
-  - `[EmailThreatSubmissionId <String>]`: The unique identifier of emailThreatSubmission
-  - `[EmailThreatSubmissionPolicyId <String>]`: The unique identifier of emailThreatSubmissionPolicy
-  - `[FileSecurityProfileId <String>]`: The unique identifier of fileSecurityProfile
-  - `[FileThreatSubmissionId <String>]`: The unique identifier of fileThreatSubmission
-  - `[HostComponentId <String>]`: The unique identifier of hostComponent
-  - `[HostCookieId <String>]`: The unique identifier of hostCookie
-  - `[HostId <String>]`: The unique identifier of host
-  - `[HostSecurityProfileId <String>]`: The unique identifier of hostSecurityProfile
-  - `[HostTrackerId <String>]`: The unique identifier of hostTracker
-  - `[IPSecurityProfileId <String>]`: The unique identifier of ipSecurityProfile
   - `[IncidentId <String>]`: The unique identifier of incident
-  - `[IntelligenceProfileId <String>]`: The unique identifier of intelligenceProfile
-  - `[IntelligenceProfileIndicatorId <String>]`: The unique identifier of intelligenceProfileIndicator
-  - `[PassiveDnsRecordId <String>]`: The unique identifier of passiveDnsRecord
-  - `[PayloadId <String>]`: The unique identifier of payload
-  - `[ProviderTenantSettingId <String>]`: The unique identifier of providerTenantSetting
   - `[RetentionEventId <String>]`: The unique identifier of retentionEvent
   - `[RetentionEventTypeId <String>]`: The unique identifier of retentionEventType
-  - `[RetentionLabelId <String>]`: The unique identifier of retentionLabel
   - `[SecureScoreControlProfileId <String>]`: The unique identifier of secureScoreControlProfile
   - `[SecureScoreId <String>]`: The unique identifier of secureScore
-  - `[SecurityActionId <String>]`: The unique identifier of securityAction
-  - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SimulationAutomationId <String>]`: The unique identifier of simulationAutomation
   - `[SimulationAutomationRunId <String>]`: The unique identifier of simulationAutomationRun
   - `[SimulationId <String>]`: The unique identifier of simulation
   - `[SiteSourceId <String>]`: The unique identifier of siteSource
-  - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
-  - `[TiIndicatorId <String>]`: The unique identifier of tiIndicator
   - `[UnifiedGroupSourceId <String>]`: The unique identifier of unifiedGroupSource
-  - `[UrlThreatSubmissionId <String>]`: The unique identifier of urlThreatSubmission
-  - `[UserId <String>]`: The unique identifier of user
-  - `[UserSecurityProfileId <String>]`: The unique identifier of userSecurityProfile
   - `[UserSourceId <String>]`: The unique identifier of userSource
-  - `[VulnerabilityComponentId <String>]`: The unique identifier of vulnerabilityComponent
-  - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
-SEARCH `<IMicrosoftGraphSecurityEdiscoverySearch>`: ediscoverySearch
+`SEARCH <IMicrosoftGraphSecurityEdiscoverySearch>`: ediscoverySearch
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ContentQuery <String>]`: 
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet

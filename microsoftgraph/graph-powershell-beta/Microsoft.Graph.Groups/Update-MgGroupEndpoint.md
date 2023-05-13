@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Groups-help.xml
-Module Name: Microsoft.Graph.Groups
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/update-mggroupendpoint
+﻿---
+external help file: Microsoft.Graph.Beta.Groups-help.xml
+Module Name: Microsoft.Graph.Beta.Groups
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupendpoint
 schema: 2.0.0
 ---
 
-# Update-MgGroupEndpoint
+# Update-MgBetaGroupEndpoint
 
 ## SYNOPSIS
 Update the navigation property endpoints in groups
@@ -14,36 +14,50 @@ Update the navigation property endpoints in groups
 
 ### UpdateExpanded (Default)
 ```
-Update-MgGroupEndpoint -EndpointId <String> -GroupId <String> [-AdditionalProperties <Hashtable>]
+Update-MgBetaGroupEndpoint -EndpointId <String> -GroupId <String> [-AdditionalProperties <Hashtable>]
  [-Capability <String>] [-DeletedDateTime <DateTime>] [-Id <String>] [-ProviderId <String>]
- [-ProviderName <String>] [-ProviderResourceId <String>] [-Uri <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [-ProviderName <String>] [-ProviderResourceId <String>] [-Uri <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgGroupEndpoint -EndpointId <String> -GroupId <String> -BodyParameter <IMicrosoftGraphEndpoint>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaGroupEndpoint -EndpointId <String> -GroupId <String> -BodyParameter <IMicrosoftGraphEndpoint>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgGroupEndpoint -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
+Update-MgBetaGroupEndpoint -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
  [-Capability <String>] [-DeletedDateTime <DateTime>] [-Id <String>] [-ProviderId <String>]
- [-ProviderName <String>] [-ProviderResourceId <String>] [-Uri <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [-ProviderName <String>] [-ProviderResourceId <String>] [-Uri <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgGroupEndpoint -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftGraphEndpoint> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaGroupEndpoint -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftGraphEndpoint> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property endpoints in groups
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -64,7 +78,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 endpoint
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEndpoint
@@ -79,7 +93,10 @@ Accept wildcard characters: False
 ```
 
 ### -Capability
-.
+Describes the capability that is associated with this resource.
+(e.g.
+Messages, Conversations, etc.) Not nullable.
+Read-only.
 
 ```yaml
 Type: String
@@ -140,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -157,7 +174,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IGroupsIdentity
@@ -171,23 +188,10 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ProviderId
-.
+Application id of the publishing underlying service.
+Not nullable.
+Read-only.
 
 ```yaml
 Type: String
@@ -202,7 +206,8 @@ Accept wildcard characters: False
 ```
 
 ### -ProviderName
-.
+Name of the publishing underlying service.
+Read-only.
 
 ```yaml
 Type: String
@@ -217,7 +222,10 @@ Accept wildcard characters: False
 ```
 
 ### -ProviderResourceId
-.
+For Microsoft 365 groups, this is set to a well-known name for the resource (e.g.
+Yammer.FeedURL etc.).
+Not nullable.
+Read-only.
 
 ```yaml
 Type: String
@@ -232,7 +240,9 @@ Accept wildcard characters: False
 ```
 
 ### -Uri
-.
+URL of the published resource.
+Not nullable.
+Read-only.
 
 ```yaml
 Type: String
@@ -282,11 +292,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEndpoint
+### Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEndpoint
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEndpoint
 ## NOTES
 
 ALIASES
@@ -296,17 +306,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphEndpoint>`: endpoint
+`BODYPARAMETER <IMicrosoftGraphEndpoint>`: endpoint
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[Capability <String>]`: 
-  - `[ProviderId <String>]`: 
-  - `[ProviderName <String>]`: 
-  - `[ProviderResourceId <String>]`: 
-  - `[Uri <String>]`: 
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
+  - `[Capability <String>]`: Describes the capability that is associated with this resource. (e.g. Messages, Conversations, etc.) Not nullable. Read-only.
+  - `[ProviderId <String>]`: Application id of the publishing underlying service. Not nullable. Read-only.
+  - `[ProviderName <String>]`: Name of the publishing underlying service. Read-only.
+  - `[ProviderResourceId <String>]`: For Microsoft 365 groups, this is set to a well-known name for the resource (e.g. Yammer.FeedURL etc.). Not nullable. Read-only.
+  - `[Uri <String>]`: URL of the published resource. Not nullable. Read-only.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+`INPUTOBJECT <IGroupsIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[ConversationId <String>]`: The unique identifier of conversation
@@ -328,11 +338,9 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
   - `[Interval <String>]`: Usage: interval='{interval}'
   - `[ListId <String>]`: The unique identifier of list
-  - `[ListId1 <String>]`: Usage: listId='{listId}'
   - `[ListItemId <String>]`: The unique identifier of listItem
   - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
   - `[MentionId <String>]`: The unique identifier of mention
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
   - `[NotebookId <String>]`: The unique identifier of notebook
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
@@ -345,7 +353,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[Q <String>]`: Usage: q='{q}'
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
   - `[SiteId <String>]`: The unique identifier of site
   - `[SitePageId <String>]`: The unique identifier of sitePage
   - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'

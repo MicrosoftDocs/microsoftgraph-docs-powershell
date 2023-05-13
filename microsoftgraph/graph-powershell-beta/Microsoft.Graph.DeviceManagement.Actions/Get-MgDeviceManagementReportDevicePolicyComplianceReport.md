@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementreportdevicepolicycompliancereport
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportdevicepolicycompliancereport
 schema: 2.0.0
 ---
 
-# Get-MgDeviceManagementReportDevicePolicyComplianceReport
+# Get-MgBetaDeviceManagementReportDevicePolicyComplianceReport
 
 ## SYNOPSIS
 Invoke action getDevicePoliciesComplianceReport
@@ -14,14 +14,15 @@ Invoke action getDevicePoliciesComplianceReport
 
 ### GetExpanded (Default)
 ```
-Get-MgDeviceManagementReportDevicePolicyComplianceReport -OutFile <String> [-AdditionalProperties <Hashtable>]
- [-Filter <String>] [-GroupBy <String[]>] [-Property <String[]>] [-Search <String>] [-SessionId <String>]
- [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Get-MgBetaDeviceManagementReportDevicePolicyComplianceReport -OutFile <String>
+ [-AdditionalProperties <Hashtable>] [-Filter <String>] [-GroupBy <String[]>] [-Property <String[]>]
+ [-Search <String>] [-SessionId <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgDeviceManagementReportDevicePolicyComplianceReport -OutFile <String>
+Get-MgBetaDeviceManagementReportDevicePolicyComplianceReport -OutFile <String>
  -BodyParameter <IPaths1Kf4N2KDevicemanagementReportsMicrosoftGraphGetdevicepoliciescompliancereportPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -30,6 +31,16 @@ Get-MgDeviceManagementReportDevicePolicyComplianceReport -OutFile <String>
 Invoke action getDevicePoliciesComplianceReport
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -50,7 +61,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths1Kf4N2KDevicemanagementReportsMicrosoftGraphGetdevicepoliciescompliancereportPostRequestbodyContentApplicationJsonSchema
@@ -250,7 +261,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1Kf4N2KDevicemanagementReportsMicrosoftGraphGetdevicepoliciescompliancereportPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Kf4N2KDevicemanagementReportsMicrosoftGraphGetdevicepoliciescompliancereportPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### System.Boolean
@@ -263,7 +274,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Kf4N2KDevicemanagementReportsMicrosoftGraphGetdevicepoliciescompliancereportPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1Kf4N2KDevicemanagementReportsMicrosoftGraphGetdevicepoliciescompliancereportPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Filter <String>]`: 
   - `[GroupBy <String[]>]`: 

@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Users.Actions-help.xml
-Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgsignuserinformationprotectiondigest
+﻿---
+external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.Users.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetasignuserinformationprotectiondigest
 schema: 2.0.0
 ---
 
-# Invoke-MgSignUserInformationProtectionDigest
+# Invoke-MgBetaSignUserInformationProtectionDigest
 
 ## SYNOPSIS
 Invoke action signDigest
@@ -14,26 +14,26 @@ Invoke action signDigest
 
 ### SignExpanded (Default)
 ```
-Invoke-MgSignUserInformationProtectionDigest -UserId <String> [-AdditionalProperties <Hashtable>]
+Invoke-MgBetaSignUserInformationProtectionDigest -UserId <String> [-AdditionalProperties <Hashtable>]
  [-DigestInputFile <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Sign
 ```
-Invoke-MgSignUserInformationProtectionDigest -UserId <String>
- -BodyParameter <IPaths8U0Ks2UsersUserIdInformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema>
+Invoke-MgBetaSignUserInformationProtectionDigest -UserId <String>
+ -Body <IPaths8U0Ks2UsersUserIdInformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SignViaIdentityExpanded
 ```
-Invoke-MgSignUserInformationProtectionDigest -InputObject <IUsersActionsIdentity>
+Invoke-MgBetaSignUserInformationProtectionDigest -InputObject <IUsersActionsIdentity>
  [-AdditionalProperties <Hashtable>] [-DigestInputFile <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SignViaIdentity
 ```
-Invoke-MgSignUserInformationProtectionDigest -InputObject <IUsersActionsIdentity>
+Invoke-MgBetaSignUserInformationProtectionDigest -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths8U0Ks2UsersUserIdInformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -42,6 +42,20 @@ Invoke-MgSignUserInformationProtectionDigest -InputObject <IUsersActionsIdentity
 Invoke action signDigest
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -60,13 +74,29 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -BodyParameter
+### -Body
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
 Type: IPaths8U0Ks2UsersUserIdInformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Sign, SignViaIdentity
+Parameter Sets: Sign
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -BodyParameter
+.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+```yaml
+Type: IPaths8U0Ks2UsersUserIdInformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: SignViaIdentity
 Aliases:
 
 Required: True
@@ -93,7 +123,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersActionsIdentity
@@ -158,11 +188,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths8U0Ks2UsersUserIdInformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths8U0Ks2UsersUserIdInformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSigningResult
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSigningResult
 ## NOTES
 
 ALIASES
@@ -172,11 +202,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths8U0Ks2UsersUserIdInformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema>`: .
+`BODY <IPaths8U0Ks2UsersUserIdInformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Digest <Byte[]>]`: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+`BODYPARAMETER <IPaths8U0Ks2UsersUserIdInformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Digest <Byte[]>]`: 
+
+`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
@@ -210,7 +244,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription

@@ -1,12 +1,11 @@
----
-external help file: Microsoft.Graph.Groups-help.xml
-Module Name: Microsoft.Graph.Groups
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/get-mggroup
+﻿---
+external help file: Microsoft.Graph.Beta.Groups-help.xml
+Module Name: Microsoft.Graph.Beta.Groups
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroup
 schema: 2.0.0
-ms.prod: groups
 ---
 
-# Get-MgGroup
+# Get-MgBetaGroup
 
 ## SYNOPSIS
 Get the properties and relationships of a group object.
@@ -17,21 +16,21 @@ Because the **group** resource supports extensions, you can also use the `GET` o
 
 ## SYNTAX
 
-### List1 (Default)
+### List (Default)
 ```
-Get-MgGroup [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>]
+Get-MgBetaGroup [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>]
  [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ConsistencyLevel <String>] [-PageSize <Int32>] [-All]
  [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgGroup -GroupId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaGroup -GroupId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgGroup -InputObject <IGroupsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaGroup -InputObject <IGroupsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
@@ -44,11 +43,12 @@ Because the **group** resource supports extensions, you can also use the `GET` o
 
 ## EXAMPLES
 
-### Example 1: Get a list of groups
+### EXAMPLE 1
 ```powershell
-Connect-MgGraph -Scopes 'Group.Read.All'
-Get-MgGroup | 
+Connect-MgBetaGraph -Scopes 'Group.Read.All'
+Get-MgBetaGroup | 
   Format-List Id, DisplayName, Description, GroupTypes
+```
 
 Id          : 0a1c8435-40a3-4a72-8586-e916c12b613a
 DisplayName : Marketing
@@ -59,38 +59,24 @@ Id          : a8fbb1b5-b994-4835-9183-c7421d149132
 DisplayName : Business Development
 Description : Welcome to the BizDev team.
 GroupTypes  : {Unified}
-```
 
-This examples retrieves a list of groups.
-
-To learn about other permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-To consent to any of these permissions run `Connect-MgGraph -Scopes Permission`.
-For example, `Connect-MgGraph -Scopes GroupMember.Read.All, Group.Read.All`.
-
-### Example 2: Get a group by the display name
+### EXAMPLE 2
 ```powershell
-Connect-MgGraph -Scopes 'Group.Read.All'
-Get-MgGroup -Filter "DisplayName eq 'Business Development'" | 
+Connect-MgBetaGraph -Scopes 'Group.Read.All'
+Get-MgBetaGroup -Filter "DisplayName eq 'Business Development'" | 
   Format-List Id, DisplayName, Description, GroupTypes
+```
 
 Id          : a8fbb1b5-b994-4835-9183-c7421d149132
 DisplayName : Business Development
 Description : Welcome to the BizDev team.
 GroupTypes  : {Unified}
-```
 
-This example gets a group by the specified display name.
-
-To learn about other permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-To consent to any of these permissions run `Connect-MgGraph -Scopes Permission`.
-For example, `Connect-MgGraph -Scopes GroupMember.Read.All, Group.Read.All`.
-
-### Example 3: Get a count of all groups
+### EXAMPLE 3
 ```powershell
-Connect-MgGraph -Scopes 'Group.Read.All'
-Get-MgGroup -ConsistencyLevel eventual -Count groupCount
+Connect-MgBetaGraph -Scopes 'Group.Read.All'
+Get-MgBetaGroup -ConsistencyLevel eventual -Count groupCount
+```
 
 Id                                   DisplayName          Description                                                            GroupTypes          AccessType
 --                                   -----------          -----------                                                            ----------          ----------
@@ -98,64 +84,36 @@ Id                                   DisplayName          Description           
 0d5832d1-536d-4c5d-9435-e57413d9167f Test Group 1         This is a test group                                                   {}
 0e06b38f-931a-47db-9a9a-60ab5f492005 Executives                                                                                  {}
 1cb7317c-9c49-4dc8-a358-67ad8e95217c Finance Team                                                                                {}
-2692d278-8323-4094-b286-e0ffce5e54a5 Marketing            A group to synthesize, analyze, and synchronize our marketing efforts. {Unified}
+2692d278-8323-4094-b286-e0ffce5e54a5 Marketing            A group to synthesize, analyze, and synchronize our marketing efforts.
+{Unified}
 300a5486-9c58-422f-97a0-d2453977bcec Marketing resources  Marketing resources                                                    {}
-4d5f57a1-85e0-41dd-8282-ff995ad5e1c3 Business Development Welcome to the BizDev team.                                            {Unified}
-```
+4d5f57a1-85e0-41dd-8282-ff995ad5e1c3 Business Development Welcome to the BizDev team.
+                                          {Unified}
 
-The example gets a list of all groups.
-The $groupCount variable contains the count of the objects in the result.
-Advanced query requires the ConsistencyLevel parameter set to `eventual` and the Count parameter in the command.
-For more information about *ConsistencyLevel* and *Count*, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
-
-To learn about other permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-To consent to any of these permissions run `Connect-MgGraph -Scopes Permission`.
-For example, `Connect-MgGraph -Scopes GroupMember.Read.All, Group.Read.All`.
-
-### Example 4: Use -Search to get all the groups whose display name contains 'Market' including a count of the returned users
+### EXAMPLE 4
 ```powershell
-Connect-MgGraph -Scopes 'Group.Read.All'
-Get-MgGroup -ConsistencyLevel eventual -Count groupCount -Search '"DisplayName:Market"'
+Connect-MgBetaGraph -Scopes 'Group.Read.All'
+Get-MgBetaGroup -ConsistencyLevel eventual -Count groupCount -Search '"DisplayName:Market"'
+```
 
 Id                                   DisplayName         Description                                                            GroupTypes AccessType
 --                                   -----------         -----------                                                            ---------- ----------
-2692d278-8323-4094-b286-e0ffce5e54a5 Marketing           A group to synthesize, analyze, and synchronize our marketing efforts. {Unified}
+2692d278-8323-4094-b286-e0ffce5e54a5 Marketing           A group to synthesize, analyze, and synchronize our marketing efforts.
+{Unified}
 300a5486-9c58-422f-97a0-d2453977bcec Marketing resources Marketing resources                                                    {}
 74a7bfca-7fbc-4a67-b4bb-3ef115b114f1 Sales & Marketing   This is the sales and marketing team                                   {}
-```
 
-This example returns all groups whose display name contains 'Market'.
-The $groupCount variable contains the count of the objects in the result.
-Advanced query requires the ConsistencyLevel parameter set to `eventual` and the Count parameter in the command.
-For more information about *ConsistencyLevel* and *Count*, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
-
-To learn about other permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-To consent to any of these permissions run `Connect-MgGraph -Scopes Permission`.
-For example, `Connect-MgGraph -Scopes GroupMember.Read.All, Group.Read.All`.
-
-### Example 5: Use -Filter to get all the applications with a display name that starts with 'A' including a count of the returned users, with the results ordered by display name
+### EXAMPLE 5
 ```powershell
-Connect-MgGraph -Scopes 'Group.Read.All'
-Get-MgGroup -ConsistencyLevel eventual -Count groupCount -Filter "startsWith(DisplayName, 'A')" -OrderBy DisplayName
+Connect-MgBetaGraph -Scopes 'Group.Read.All'
+Get-MgBetaGroup -ConsistencyLevel eventual -Count groupCount -Filter "startsWith(DisplayName, 'A')" -OrderBy DisplayName
+```
 
 Id                                   DisplayName   Description                                           GroupTypes          AccessType
 --                                   -----------   -----------                                           ----------          ----------
 7fbcfd32-d930-4968-aa42-924bf462a305 All Company   This is the default group for everyone in the network {Unified}
 f07a8d78-f18c-4c02-b339-9ebace025122 All Employees                                                       {}
 bbfa9226-a965-47e1-9db2-bcfcb2c202e6 All Users
-```
-
-This example returns all groups whose display name starts with 'A'.
-The $groupCount variable contains the count of the objects in the result.
-Advanced query requires the ConsistencyLevel parameter set to `eventual` and the Count parameter in the command.
-For more information about *ConsistencyLevel* and *Count*, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
-
-To learn about other permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-To consent to any of these permissions run `Connect-MgGraph -Scopes Permission`.
-For example, `Connect-MgGraph -Scopes GroupMember.Read.All, Group.Read.All`.
 
 ## PARAMETERS
 
@@ -164,7 +122,7 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -180,7 +138,7 @@ Documentation URL: https://docs.microsoft.com/graph/aad-advanced-queries
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -196,7 +154,7 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: List
 Aliases: CV
 
 Required: False
@@ -226,7 +184,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -253,7 +211,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IGroupsIdentity
@@ -272,7 +230,7 @@ Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -302,7 +260,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -317,7 +275,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List1
+Parameter Sets: List
 Aliases: OrderBy
 
 Required: False
@@ -332,7 +290,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Parameter Sets: List
 Aliases: Limit
 
 Required: False
@@ -347,7 +305,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -362,10 +320,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroup1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroup
 ## NOTES
 
 ALIASES
@@ -375,7 +333,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+`INPUTOBJECT <IGroupsIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[ConversationId <String>]`: The unique identifier of conversation
@@ -397,11 +355,9 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
   - `[Interval <String>]`: Usage: interval='{interval}'
   - `[ListId <String>]`: The unique identifier of list
-  - `[ListId1 <String>]`: Usage: listId='{listId}'
   - `[ListItemId <String>]`: The unique identifier of listItem
   - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
   - `[MentionId <String>]`: The unique identifier of mention
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
   - `[NotebookId <String>]`: The unique identifier of notebook
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
@@ -414,7 +370,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[Q <String>]`: Usage: q='{q}'
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
   - `[SiteId <String>]`: The unique identifier of site
   - `[SitePageId <String>]`: The unique identifier of sitePage
   - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'

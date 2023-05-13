@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Users.Actions-help.xml
-Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/new-mguseroutlooktaskfoldertaskattachmentuploadsession
+﻿---
+external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.Users.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetauseroutlooktaskfoldertaskattachmentuploadsession
 schema: 2.0.0
 ---
 
-# New-MgUserOutlookTaskFolderTaskAttachmentUploadSession
+# New-MgBetaUserOutlookTaskFolderTaskAttachmentUploadSession
 
 ## SYNOPSIS
 Create an upload session that allows an app to iteratively upload ranges of a file, so as to attach the file to an Outlook item.
@@ -21,29 +21,29 @@ The following are the steps to attach a file to an Outlook item using an upload 
 
 ### CreateExpanded (Default)
 ```
-New-MgUserOutlookTaskFolderTaskAttachmentUploadSession -OutlookTaskFolderId <String> -OutlookTaskId <String>
- -UserId <String> [-AdditionalProperties <Hashtable>] [-AttachmentItem <IMicrosoftGraphAttachmentItem>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaUserOutlookTaskFolderTaskAttachmentUploadSession -OutlookTaskFolderId <String>
+ -OutlookTaskId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
+ [-AttachmentItem <IMicrosoftGraphAttachmentItem>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgUserOutlookTaskFolderTaskAttachmentUploadSession -OutlookTaskFolderId <String> -OutlookTaskId <String>
- -UserId <String>
+New-MgBetaUserOutlookTaskFolderTaskAttachmentUploadSession -OutlookTaskFolderId <String>
+ -OutlookTaskId <String> -UserId <String>
  -BodyParameter <IPaths93Ov0OUsersUserIdOutlookTaskfoldersOutlooktaskfolderIdTasksOutlooktaskIdAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgUserOutlookTaskFolderTaskAttachmentUploadSession -InputObject <IUsersActionsIdentity>
+New-MgBetaUserOutlookTaskFolderTaskAttachmentUploadSession -InputObject <IUsersActionsIdentity>
  [-AdditionalProperties <Hashtable>] [-AttachmentItem <IMicrosoftGraphAttachmentItem>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgUserOutlookTaskFolderTaskAttachmentUploadSession -InputObject <IUsersActionsIdentity>
+New-MgBetaUserOutlookTaskFolderTaskAttachmentUploadSession -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths93Ov0OUsersUserIdOutlookTaskfoldersOutlooktaskfolderIdTasksOutlooktaskIdAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -59,6 +59,20 @@ This allows transfer to be resumed, in case the network connection is dropped du
 The following are the steps to attach a file to an Outlook item using an upload session: See attach large files to Outlook messages or events for an example.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -79,7 +93,7 @@ Accept wildcard characters: False
 
 ### -AttachmentItem
 attachmentItem
-To construct, please use Get-Help -Online and see NOTES section for ATTACHMENTITEM properties and create a hash table.
+To construct, see NOTES section for ATTACHMENTITEM properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAttachmentItem
@@ -95,7 +109,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths93Ov0OUsersUserIdOutlookTaskfoldersOutlooktaskfolderIdTasksOutlooktaskIdAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema
@@ -111,7 +125,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersActionsIdentity
@@ -206,11 +220,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths93Ov0OUsersUserIdOutlookTaskfoldersOutlooktaskfolderIdTasksOutlooktaskIdAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths93Ov0OUsersUserIdOutlookTaskfoldersOutlooktaskfolderIdTasksOutlooktaskIdAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUploadSession
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUploadSession
 ## NOTES
 
 ALIASES
@@ -220,7 +234,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ATTACHMENTITEM `<IMicrosoftGraphAttachmentItem>`: attachmentItem
+`ATTACHMENTITEM <IMicrosoftGraphAttachmentItem>`: attachmentItem
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AttachmentType <String>]`: attachmentType
   - `[ContentId <String>]`: The CID or Content-Id of the attachment for referencing in case of in-line attachments using <img src='cid:contentId'> tag in HTML messages. Optional.
@@ -229,7 +243,7 @@ ATTACHMENTITEM `<IMicrosoftGraphAttachmentItem>`: attachmentItem
   - `[Name <String>]`: The display name of the attachment. This can be a descriptive string and does not have to be the actual file name. Required.
   - `[Size <Int64?>]`: The length of the attachment in bytes. Required.
 
-BODYPARAMETER `<IPaths93Ov0OUsersUserIdOutlookTaskfoldersOutlooktaskfolderIdTasksOutlooktaskIdAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths93Ov0OUsersUserIdOutlookTaskfoldersOutlooktaskfolderIdTasksOutlooktaskIdAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AttachmentItem <IMicrosoftGraphAttachmentItem>]`: attachmentItem
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -240,7 +254,7 @@ BODYPARAMETER `<IPaths93Ov0OUsersUserIdOutlookTaskfoldersOutlooktaskfolderIdTask
     - `[Name <String>]`: The display name of the attachment. This can be a descriptive string and does not have to be the actual file name. Required.
     - `[Size <Int64?>]`: The length of the attachment in bytes. Required.
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
@@ -274,7 +288,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription

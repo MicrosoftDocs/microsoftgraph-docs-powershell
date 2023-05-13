@@ -1,7 +1,7 @@
----
+﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgreportsecurity
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsecurity
 schema: 2.0.0
 ---
 
@@ -20,6 +20,20 @@ Get-MgReportSecurity [-ExpandProperty <String[]>] [-Property <String[]>] [<Commo
 Get security from reports
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 

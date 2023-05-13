@@ -1,7 +1,7 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.ServiceAnnouncement-help.xml
 Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.serviceannouncement/invoke-mgarchiveserviceannouncementmessage
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/invoke-mgarchiveserviceannouncementmessage
 schema: 2.0.0
 ---
 
@@ -12,13 +12,13 @@ Archive a list of serviceUpdateMessages for the signed in user.
 
 ## SYNTAX
 
-### ArchiveExpanded1 (Default)
+### ArchiveExpanded (Default)
 ```
 Invoke-MgArchiveServiceAnnouncementMessage [-AdditionalProperties <Hashtable>] [-MessageIds <String[]>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Archive1
+### Archive
 ```
 Invoke-MgArchiveServiceAnnouncementMessage
  -BodyParameter <IPaths19OsejwAdminServiceannouncementMessagesMicrosoftGraphArchivePostRequestbodyContentApplicationJsonSchema>
@@ -30,7 +30,7 @@ Archive a list of serviceUpdateMessages for the signed in user.
 
 ## EXAMPLES
 
-### Example 1: Using the Invoke-MgArchiveServiceAnnouncementMessage Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
 $params = @{
@@ -42,9 +42,6 @@ $params = @{
 Invoke-MgArchiveServiceAnnouncementMessage -BodyParameter $params
 ```
 
-This example shows how to use the Invoke-MgArchiveServiceAnnouncementMessage Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -52,7 +49,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: ArchiveExpanded1
+Parameter Sets: ArchiveExpanded
 Aliases:
 
 Required: False
@@ -64,11 +61,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths19OsejwAdminServiceannouncementMessagesMicrosoftGraphArchivePostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Archive1
+Parameter Sets: Archive
 Aliases:
 
 Required: True
@@ -83,7 +80,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String[]
-Parameter Sets: ArchiveExpanded1
+Parameter Sets: ArchiveExpanded
 Aliases:
 
 Required: False
@@ -142,7 +139,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths19OsejwAdminServiceannouncementMessagesMicrosoftGraphArchivePostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths19OsejwAdminServiceannouncementMessagesMicrosoftGraphArchivePostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[MessageIds <String[]>]`: 
 

@@ -1,26 +1,26 @@
----
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecuritycaseediscoverycasecustodianindex
+﻿---
+external help file: Microsoft.Graph.Beta.Security-help.xml
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycasecustodianindex
 schema: 2.0.0
 ---
 
-# Update-MgSecurityCaseEdiscoveryCaseCustodianIndex
+# Update-MgBetaSecurityCaseEdiscoveryCaseCustodianIndex
 
 ## SYNOPSIS
 Trigger an indexOperation
 
 ## SYNTAX
 
-### Update1 (Default)
+### Update (Default)
 ```
-Update-MgSecurityCaseEdiscoveryCaseCustodianIndex -EdiscoveryCaseId <String> -EdiscoveryCustodianId <String>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaSecurityCaseEdiscoveryCaseCustodianIndex -EdiscoveryCaseId <String>
+ -EdiscoveryCustodianId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity1
+### UpdateViaIdentity
 ```
-Update-MgSecurityCaseEdiscoveryCaseCustodianIndex -InputObject <ISecurityIdentity> [-PassThru] [-WhatIf]
+Update-MgBetaSecurityCaseEdiscoveryCaseCustodianIndex -InputObject <ISecurityIdentity> [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -29,14 +29,11 @@ Trigger an indexOperation
 
 ## EXAMPLES
 
-### Example 1: Using the Update-MgSecurityCaseEdiscoveryCaseCustodianIndex Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Security
-Update-MgSecurityCaseEdiscoveryCaseCustodianIndex -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId
+Import-Module Microsoft.Graph.Beta.Security
+Update-MgBetaSecurityCaseEdiscoveryCaseCustodianIndex -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId
 ```
-
-This example shows how to use the Update-MgSecurityCaseEdiscoveryCaseCustodianIndex Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -45,7 +42,7 @@ The unique identifier of ediscoveryCase
 
 ```yaml
 Type: String
-Parameter Sets: Update1
+Parameter Sets: Update
 Aliases:
 
 Required: True
@@ -60,7 +57,7 @@ The unique identifier of ediscoveryCustodian
 
 ```yaml
 Type: String
-Parameter Sets: Update1
+Parameter Sets: Update
 Aliases:
 
 Required: True
@@ -72,11 +69,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ISecurityIdentity
-Parameter Sets: UpdateViaIdentity1
+Parameter Sets: UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -137,7 +134,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
 ## OUTPUTS
 
 ### System.Boolean
@@ -150,7 +147,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+`INPUTOBJECT <ISecurityIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
   - `[ArticleId <String>]`: The unique identifier of article
   - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator

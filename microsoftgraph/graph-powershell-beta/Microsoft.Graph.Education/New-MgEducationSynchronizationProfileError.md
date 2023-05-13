@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Education-help.xml
-Module Name: Microsoft.Graph.Education
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/new-mgeducationsynchronizationprofileerror
+﻿---
+external help file: Microsoft.Graph.Beta.Education-help.xml
+Module Name: Microsoft.Graph.Beta.Education
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationsynchronizationprofileerror
 schema: 2.0.0
 ---
 
-# New-MgEducationSynchronizationProfileError
+# New-MgBetaEducationSynchronizationProfileError
 
 ## SYNOPSIS
 Create new navigation property to errors for education
@@ -14,7 +14,7 @@ Create new navigation property to errors for education
 
 ### CreateExpanded (Default)
 ```
-New-MgEducationSynchronizationProfileError -EducationSynchronizationProfileId <String>
+New-MgBetaEducationSynchronizationProfileError -EducationSynchronizationProfileId <String>
  [-AdditionalProperties <Hashtable>] [-EntryType <String>] [-ErrorCode <String>] [-ErrorMessage <String>]
  [-Id <String>] [-JoiningValue <String>] [-RecordedDateTime <DateTime>] [-ReportableIdentifier <String>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -22,13 +22,13 @@ New-MgEducationSynchronizationProfileError -EducationSynchronizationProfileId <S
 
 ### Create
 ```
-New-MgEducationSynchronizationProfileError -EducationSynchronizationProfileId <String>
+New-MgBetaEducationSynchronizationProfileError -EducationSynchronizationProfileId <String>
  -BodyParameter <IMicrosoftGraphEducationSynchronizationError> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgEducationSynchronizationProfileError -InputObject <IEducationIdentity>
+New-MgBetaEducationSynchronizationProfileError -InputObject <IEducationIdentity>
  [-AdditionalProperties <Hashtable>] [-EntryType <String>] [-ErrorCode <String>] [-ErrorMessage <String>]
  [-Id <String>] [-JoiningValue <String>] [-RecordedDateTime <DateTime>] [-ReportableIdentifier <String>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -36,7 +36,7 @@ New-MgEducationSynchronizationProfileError -InputObject <IEducationIdentity>
 
 ### CreateViaIdentity
 ```
-New-MgEducationSynchronizationProfileError -InputObject <IEducationIdentity>
+New-MgBetaEducationSynchronizationProfileError -InputObject <IEducationIdentity>
  -BodyParameter <IMicrosoftGraphEducationSynchronizationError> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -44,6 +44,20 @@ New-MgEducationSynchronizationProfileError -InputObject <IEducationIdentity>
 Create new navigation property to errors for education
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -64,7 +78,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 educationSynchronizationError
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEducationSynchronizationError
@@ -139,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -156,7 +170,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IEducationIdentity
@@ -251,11 +265,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IEducationIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationSynchronizationError
+### Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationSynchronizationError
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationSynchronizationError
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationSynchronizationError
 ## NOTES
 
 ALIASES
@@ -265,9 +279,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphEducationSynchronizationError>`: educationSynchronizationError
+`BODYPARAMETER <IMicrosoftGraphEducationSynchronizationError>`: educationSynchronizationError
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[EntryType <String>]`: Represents the sync entity (school, section, student, teacher).
   - `[ErrorCode <String>]`: Represents the error code for this error.
   - `[ErrorMessage <String>]`: Contains a description of the error.
@@ -275,11 +289,12 @@ BODYPARAMETER `<IMicrosoftGraphEducationSynchronizationError>`: educationSynchro
   - `[RecordedDateTime <DateTime?>]`: The time of occurrence of this error.
   - `[ReportableIdentifier <String>]`: The identifier of this error entry.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+`INPUTOBJECT <IEducationIdentity>`: Identity Parameter
   - `[EducationAssignmentId <String>]`: The unique identifier of educationAssignment
   - `[EducationAssignmentResourceId <String>]`: The unique identifier of educationAssignmentResource
   - `[EducationCategoryId <String>]`: The unique identifier of educationCategory
   - `[EducationClassId <String>]`: The unique identifier of educationClass
+  - `[EducationGradingCategoryId <String>]`: The unique identifier of educationGradingCategory
   - `[EducationOutcomeId <String>]`: The unique identifier of educationOutcome
   - `[EducationRubricId <String>]`: The unique identifier of educationRubric
   - `[EducationSchoolId <String>]`: The unique identifier of educationSchool

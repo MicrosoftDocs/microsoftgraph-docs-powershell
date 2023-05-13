@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementembeddedsimactivationcodepool
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementembeddedsimactivationcodepool
 schema: 2.0.0
 ---
 
-# New-MgDeviceManagementEmbeddedSimActivationCodePool
+# New-MgBetaDeviceManagementEmbeddedSimActivationCodePool
 
 ## SYNOPSIS
 Create new navigation property to embeddedSIMActivationCodePools for deviceManagement
@@ -14,7 +14,7 @@ Create new navigation property to embeddedSIMActivationCodePools for deviceManag
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementEmbeddedSimActivationCodePool [-ActivationCodeCount <Int32>]
+New-MgBetaDeviceManagementEmbeddedSimActivationCodePool [-ActivationCodeCount <Int32>]
  [-ActivationCodes <IMicrosoftGraphEmbeddedSimActivationCode[]>] [-AdditionalProperties <Hashtable>]
  [-Assignments <IMicrosoftGraphEmbeddedSimActivationCodePoolAssignment[]>] [-CreatedDateTime <DateTime>]
  [-DeviceStates <IMicrosoftGraphEmbeddedSimDeviceState[]>] [-DisplayName <String>] [-Id <String>]
@@ -23,7 +23,7 @@ New-MgDeviceManagementEmbeddedSimActivationCodePool [-ActivationCodeCount <Int32
 
 ### Create
 ```
-New-MgDeviceManagementEmbeddedSimActivationCodePool
+New-MgBetaDeviceManagementEmbeddedSimActivationCodePool
  -BodyParameter <IMicrosoftGraphEmbeddedSimActivationCodePool> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -31,6 +31,20 @@ New-MgDeviceManagementEmbeddedSimActivationCodePool
 Create new navigation property to embeddedSIMActivationCodePools for deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -52,7 +66,7 @@ Accept wildcard characters: False
 ### -ActivationCodes
 The activation codes which belong to this pool.
 This navigation property is used to post activation codes to Intune but cannot be used to read activation codes from Intune.
-To construct, please use Get-Help -Online and see NOTES section for ACTIVATIONCODES properties and create a hash table.
+To construct, see NOTES section for ACTIVATIONCODES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEmbeddedSimActivationCode[]
@@ -83,7 +97,7 @@ Accept wildcard characters: False
 
 ### -Assignments
 Navigational property to a list of targets to which this pool is assigned.
-To construct, please use Get-Help -Online and see NOTES section for ASSIGNMENTS properties and create a hash table.
+To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEmbeddedSimActivationCodePoolAssignment[]
@@ -99,7 +113,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 A pool represents a group of embedded SIM activation codes.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEmbeddedSimActivationCodePool
@@ -131,7 +145,7 @@ Accept wildcard characters: False
 
 ### -DeviceStates
 Navigational property to a list of device states for this pool.
-To construct, please use Get-Help -Online and see NOTES section for DEVICESTATES properties and create a hash table.
+To construct, see NOTES section for DEVICESTATES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEmbeddedSimDeviceState[]
@@ -161,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -228,10 +242,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEmbeddedSimActivationCodePool
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEmbeddedSimActivationCodePool
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEmbeddedSimActivationCodePool
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEmbeddedSimActivationCodePool
 ## NOTES
 
 ALIASES
@@ -241,35 +255,35 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ACTIVATIONCODES <IMicrosoftGraphEmbeddedSimActivationCode\[]>: The activation codes which belong to this pool. This navigation property is used to post activation codes to Intune but cannot be used to read activation codes from Intune.
+`ACTIVATIONCODES <IMicrosoftGraphEmbeddedSimActivationCode[]>`: The activation codes which belong to this pool. This navigation property is used to post activation codes to Intune but cannot be used to read activation codes from Intune.
   - `[IntegratedCircuitCardIdentifier <String>]`: The Integrated Circuit Card Identifier (ICCID) for this embedded SIM activation code as provided by the mobile operator.
   - `[MatchingIdentifier <String>]`: The MatchingIdentifier (MatchingID) as specified in the GSMA Association SGP.22 RSP Technical Specification section 4.1.
   - `[SmdpPlusServerAddress <String>]`: The fully qualified domain name of the SM-DP+ server as specified in the GSM Association SPG .22 RSP Technical Specification.
 
-ASSIGNMENTS <IMicrosoftGraphEmbeddedSimActivationCodePoolAssignment\[]>: Navigational property to a list of targets to which this pool is assigned.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
+`ASSIGNMENTS <IMicrosoftGraphEmbeddedSimActivationCodePoolAssignment[]>`: Navigational property to a list of targets to which this pool is assigned.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
+  - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
     - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
-BODYPARAMETER `<IMicrosoftGraphEmbeddedSimActivationCodePool>`: A pool represents a group of embedded SIM activation codes.
+`BODYPARAMETER <IMicrosoftGraphEmbeddedSimActivationCodePool>`: A pool represents a group of embedded SIM activation codes.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ActivationCodeCount <Int32?>]`: The total count of activation codes which belong to this pool.
   - `[ActivationCodes <IMicrosoftGraphEmbeddedSimActivationCode[]>]`: The activation codes which belong to this pool. This navigation property is used to post activation codes to Intune but cannot be used to read activation codes from Intune.
     - `[IntegratedCircuitCardIdentifier <String>]`: The Integrated Circuit Card Identifier (ICCID) for this embedded SIM activation code as provided by the mobile operator.
     - `[MatchingIdentifier <String>]`: The MatchingIdentifier (MatchingID) as specified in the GSMA Association SGP.22 RSP Technical Specification section 4.1.
     - `[SmdpPlusServerAddress <String>]`: The fully qualified domain name of the SM-DP+ server as specified in the GSM Association SPG .22 RSP Technical Specification.
   - `[Assignments <IMicrosoftGraphEmbeddedSimActivationCodePoolAssignment[]>]`: Navigational property to a list of targets to which this pool is assigned.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-    - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
       - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
   - `[CreatedDateTime <DateTime?>]`: The time the embedded SIM activation code pool was created. Generated service side.
   - `[DeviceStates <IMicrosoftGraphEmbeddedSimDeviceState[]>]`: Navigational property to a list of device states for this pool.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[CreatedDateTime <DateTime?>]`: The time the embedded SIM device status was created. Generated service side.
     - `[DeviceName <String>]`: Device name to which the subscription was provisioned e.g. DESKTOP-JOE
     - `[LastSyncDateTime <DateTime?>]`: The time the embedded SIM device last checked in. Updated service side.
@@ -281,8 +295,8 @@ BODYPARAMETER `<IMicrosoftGraphEmbeddedSimActivationCodePool>`: A pool represent
   - `[DisplayName <String>]`: The admin defined name of the embedded SIM activation code pool.
   - `[ModifiedDateTime <DateTime?>]`: The time the embedded SIM activation code pool was last modified. Updated service side.
 
-DEVICESTATES <IMicrosoftGraphEmbeddedSimDeviceState\[]>: Navigational property to a list of device states for this pool.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`DEVICESTATES <IMicrosoftGraphEmbeddedSimDeviceState[]>`: Navigational property to a list of device states for this pool.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[CreatedDateTime <DateTime?>]`: The time the embedded SIM device status was created. Generated service side.
   - `[DeviceName <String>]`: Device name to which the subscription was provisioned e.g. DESKTOP-JOE
   - `[LastSyncDateTime <DateTime?>]`: The time the embedded SIM device last checked in. Updated service side.

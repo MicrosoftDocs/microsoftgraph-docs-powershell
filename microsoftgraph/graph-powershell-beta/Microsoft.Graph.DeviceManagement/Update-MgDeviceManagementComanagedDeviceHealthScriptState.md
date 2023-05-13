@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementcomanageddevicehealthscriptstate
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementcomanageddevicehealthscriptstate
 schema: 2.0.0
 ---
 
-# Update-MgDeviceManagementComanagedDeviceHealthScriptState
+# Update-MgBetaDeviceManagementComanagedDeviceHealthScriptState
 
 ## SYNOPSIS
 Update the navigation property deviceHealthScriptStates in deviceManagement
@@ -14,48 +14,56 @@ Update the navigation property deviceHealthScriptStates in deviceManagement
 
 ### UpdateExpanded (Default)
 ```
-Update-MgDeviceManagementComanagedDeviceHealthScriptState -DeviceId <String> -Id <String>
+Update-MgBetaDeviceManagementComanagedDeviceHealthScriptState -DeviceId <String> -Id <String>
  -ManagedDeviceId <String> -PolicyId <String> [-AdditionalProperties <Hashtable>]
  [-AssignmentFilterIds <String[]>] [-DetectionState <RunState>] [-DeviceId1 <String>] [-DeviceName <String>]
  [-ExpectedStateUpdateDateTime <DateTime>] [-Id1 <String>] [-LastStateUpdateDateTime <DateTime>]
  [-LastSyncDateTime <DateTime>] [-OSVersion <String>] [-PolicyId1 <String>] [-PolicyName <String>]
  [-PostRemediationDetectionScriptError <String>] [-PostRemediationDetectionScriptOutput <String>]
  [-PreRemediationDetectionScriptError <String>] [-PreRemediationDetectionScriptOutput <String>]
- [-RemediationScriptError <String>] [-RemediationState <RemediationState>] [-UserName <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-RemediationScriptError <String>] [-RemediationState <RemediationState>] [-UserName <String>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgDeviceManagementComanagedDeviceHealthScriptState [-DeviceId <String>] [-Id <String>]
+Update-MgBetaDeviceManagementComanagedDeviceHealthScriptState [-DeviceId <String>] [-Id <String>]
  [-PolicyId <String>] -InputObject <IDeviceManagementIdentity> [-AdditionalProperties <Hashtable>]
  [-AssignmentFilterIds <String[]>] [-DetectionState <RunState>] [-DeviceName <String>]
  [-ExpectedStateUpdateDateTime <DateTime>] [-LastStateUpdateDateTime <DateTime>] [-LastSyncDateTime <DateTime>]
  [-OSVersion <String>] [-PolicyName <String>] [-PostRemediationDetectionScriptError <String>]
  [-PostRemediationDetectionScriptOutput <String>] [-PreRemediationDetectionScriptError <String>]
  [-PreRemediationDetectionScriptOutput <String>] [-RemediationScriptError <String>]
- [-RemediationState <RemediationState>] [-UserName <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-RemediationState <RemediationState>] [-UserName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgDeviceManagementComanagedDeviceHealthScriptState -DeviceId <String> -Id <String>
+Update-MgBetaDeviceManagementComanagedDeviceHealthScriptState -DeviceId <String> -Id <String>
  -ManagedDeviceId <String> -PolicyId <String> -BodyParameter <IMicrosoftGraphDeviceHealthScriptPolicyState>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgDeviceManagementComanagedDeviceHealthScriptState -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceHealthScriptPolicyState> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaDeviceManagementComanagedDeviceHealthScriptState -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphDeviceHealthScriptPolicyState> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property deviceHealthScriptStates in deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -91,7 +99,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Contains properties for policy run state of the device health script.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceHealthScriptPolicyState
@@ -236,7 +244,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementIdentity
@@ -301,21 +309,6 @@ Value of the OS Version in string
 ```yaml
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -523,11 +516,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceHealthScriptPolicyState
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceHealthScriptPolicyState
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceHealthScriptPolicyState
 ## NOTES
 
 ALIASES
@@ -537,7 +530,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDeviceHealthScriptPolicyState>`: Contains properties for policy run state of the device health script.
+`BODYPARAMETER <IMicrosoftGraphDeviceHealthScriptPolicyState>`: Contains properties for policy run state of the device health script.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AssignmentFilterIds <String[]>]`: A list of the assignment filter ids used for health script applicability evaluation
   - `[DetectionState <RunState?>]`: Indicates the type of execution status of the device management script.
@@ -558,7 +551,7 @@ BODYPARAMETER `<IMicrosoftGraphDeviceHealthScriptPolicyState>`: Contains propert
   - `[RemediationState <RemediationState?>]`: Indicates the type of execution status of the device management script.
   - `[UserName <String>]`: Name of the user whom ran the device health script
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementIdentity>`: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: The unique identifier of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: The unique identifier of androidManagedStoreAppConfigurationSchema
@@ -690,6 +683,8 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionAppLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionAppLearningSummary
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
+  - `[WindowsQualityUpdateProfileAssignmentId <String>]`: The unique identifier of windowsQualityUpdateProfileAssignment
+  - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
 ## RELATED LINKS
 

@@ -1,12 +1,11 @@
----
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mgappcatalogteamapp
+﻿---
+external help file: Microsoft.Graph.Beta.Teams-help.xml
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaappcatalogteamapp
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
-# Get-MgAppCatalogTeamApp
+# Get-MgBetaAppCatalogTeamApp
 
 ## SYNOPSIS
 Get teamsApps from appCatalogs
@@ -15,20 +14,20 @@ Get teamsApps from appCatalogs
 
 ### List (Default)
 ```
-Get-MgAppCatalogTeamApp [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
+Get-MgBetaAppCatalogTeamApp [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
  [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgAppCatalogTeamApp -TeamsAppId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaAppCatalogTeamApp -TeamsAppId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgAppCatalogTeamApp -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaAppCatalogTeamApp -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
@@ -37,59 +36,41 @@ Get teamsApps from appCatalogs
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgAppCatalogTeamApp Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Teams
-Get-MgAppCatalogTeamApp -Filter "externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'"
+Import-Module Microsoft.Graph.Beta.Teams
+Get-MgBetaAppCatalogTeamApp -Filter "externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'"
 ```
 
-This example shows how to use the Get-MgAppCatalogTeamApp Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Get-MgAppCatalogTeamApp Cmdlet
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Teams
-Get-MgAppCatalogTeamApp -Filter "id eq 'b1c5353a-7aca-41b3-830f-27d5218fe0e5'"
+Import-Module Microsoft.Graph.Beta.Teams
+Get-MgBetaAppCatalogTeamApp -Filter "id eq 'b1c5353a-7aca-41b3-830f-27d5218fe0e5'"
 ```
 
-This example shows how to use the Get-MgAppCatalogTeamApp Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Using the Get-MgAppCatalogTeamApp Cmdlet
+### EXAMPLE 3
 ```powershell
-Import-Module Microsoft.Graph.Teams
-Get-MgAppCatalogTeamApp -ExpandProperty "appDefinitions(`$select=id,displayName,allowedInstallationScopes)" -Filter "appDefinitions/any(a:a/allowedInstallationScopes has 'personal')"
+Import-Module Microsoft.Graph.Beta.Teams
+Get-MgBetaAppCatalogTeamApp -ExpandProperty "appDefinitions(`$select=id,displayName,allowedInstallationScopes)" -Filter "appDefinitions/any(a:a/allowedInstallationScopes has 'personal')"
 ```
 
-This example shows how to use the Get-MgAppCatalogTeamApp Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 4: Using the Get-MgAppCatalogTeamApp Cmdlet
+### EXAMPLE 4
 ```powershell
-Import-Module Microsoft.Graph.Teams
-Get-MgAppCatalogTeamApp -ExpandProperty "appDefinitions(`$expand=bot)" -Filter "appDefinitions/any(a:a/bot ne null)"
+Import-Module Microsoft.Graph.Beta.Teams
+Get-MgBetaAppCatalogTeamApp -ExpandProperty "appDefinitions(`$expand=bot)" -Filter "appDefinitions/any(a:a/bot ne null)"
 ```
 
-This example shows how to use the Get-MgAppCatalogTeamApp Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 5: Using the Get-MgAppCatalogTeamApp Cmdlet
+### EXAMPLE 5
 ```powershell
-Import-Module Microsoft.Graph.Teams
-Get-MgAppCatalogTeamApp -Filter "id eq '876df28f-2e78-423b-94a5-44181bd0e225'" -ExpandProperty "appDefinitions"
+Import-Module Microsoft.Graph.Beta.Teams
+Get-MgBetaAppCatalogTeamApp -Filter "id eq '876df28f-2e78-423b-94a5-44181bd0e225'" -ExpandProperty "appDefinitions"
 ```
 
-This example shows how to use the Get-MgAppCatalogTeamApp Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 6: Using the Get-MgAppCatalogTeamApp Cmdlet
+### EXAMPLE 6
 ```powershell
-Import-Module Microsoft.Graph.Teams
-Get-MgAppCatalogTeamApp -Filter "distributionMethod eq 'organization'"
+Import-Module Microsoft.Graph.Beta.Teams
+Get-MgBetaAppCatalogTeamApp -Filter "distributionMethod eq 'organization'"
 ```
-
-This example shows how to use the Get-MgAppCatalogTeamApp Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -156,7 +137,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ITeamsIdentity
@@ -280,10 +261,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsApp1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamsApp
 ## NOTES
 
 ALIASES
@@ -293,7 +274,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat

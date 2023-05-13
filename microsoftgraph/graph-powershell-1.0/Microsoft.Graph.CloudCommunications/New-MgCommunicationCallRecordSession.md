@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcallrecordsession
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcallrecordsession
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # New-MgCommunicationCallRecordSession
@@ -49,27 +48,19 @@ Create new navigation property to sessions for communications
 
 ## EXAMPLES
 
-### Example 1: Get session list
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 Get-MgCommunicationCallRecordSession -CallRecordId $callRecordId
-```
 
-This example shows how to use the New-MgCommunicationCallRecordSession Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Get session list with segments
+### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
-
-Get-MgCommunicationCallRecordSession -CallRecordId $callRecordId -ExpandProperty "segments"
 ```
 
-This example shows how to use the New-MgCommunicationCallRecordSession Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Get-MgCommunicationCallRecordSession -CallRecordId $callRecordId -ExpandProperty "segments"
 
 ## PARAMETERS
 
@@ -90,7 +81,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 session
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphCallRecordsSession
@@ -106,7 +97,7 @@ Accept wildcard characters: False
 
 ### -Callee
 endpoint
-To construct, please use Get-Help -Online and see NOTES section for CALLEE properties and create a hash table.
+To construct, see NOTES section for CALLEE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphCallRecordsEndpoint
@@ -122,7 +113,7 @@ Accept wildcard characters: False
 
 ### -Caller
 endpoint
-To construct, please use Get-Help -Online and see NOTES section for CALLER properties and create a hash table.
+To construct, see NOTES section for CALLER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphCallRecordsEndpoint
@@ -170,7 +161,7 @@ Accept wildcard characters: False
 
 ### -FailureInfo
 failureInfo
-To construct, please use Get-Help -Online and see NOTES section for FAILUREINFO properties and create a hash table.
+To construct, see NOTES section for FAILUREINFO properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphCallRecordsFailureInfo
@@ -202,7 +193,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ICloudCommunicationsIdentity
@@ -236,7 +227,7 @@ Accept wildcard characters: False
 The list of segments involved in the session.
 Read-only.
 Nullable.
-To construct, please use Get-Help -Online and see NOTES section for SEGMENTS properties and create a hash table.
+To construct, see NOTES section for SEGMENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphCallRecordsSegment[]
@@ -317,7 +308,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphCallRecordsSession>`: session
+`BODYPARAMETER <IMicrosoftGraphCallRecordsSession>`: session
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Callee <IMicrosoftGraphCallRecordsEndpoint>]`: endpoint
@@ -428,44 +419,40 @@ BODYPARAMETER `<IMicrosoftGraphCallRecordsSession>`: session
     - `[StartDateTime <DateTime?>]`: UTC time when the segment started. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[StartDateTime <DateTime?>]`: UTC time when the first user joined the session. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
-CALLEE `<IMicrosoftGraphCallRecordsEndpoint>`: endpoint
+`CALLEE <IMicrosoftGraphCallRecordsEndpoint>`: endpoint
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[UserAgent <IMicrosoftGraphCallRecordsUserAgent>]`: userAgent
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ApplicationVersion <String>]`: Identifies the version of application software used by this endpoint.
     - `[HeaderValue <String>]`: User-agent header value reported by this endpoint.
 
-CALLER `<IMicrosoftGraphCallRecordsEndpoint>`: endpoint
+`CALLER <IMicrosoftGraphCallRecordsEndpoint>`: endpoint
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[UserAgent <IMicrosoftGraphCallRecordsUserAgent>]`: userAgent
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ApplicationVersion <String>]`: Identifies the version of application software used by this endpoint.
     - `[HeaderValue <String>]`: User-agent header value reported by this endpoint.
 
-FAILUREINFO `<IMicrosoftGraphCallRecordsFailureInfo>`: failureInfo
+`FAILUREINFO <IMicrosoftGraphCallRecordsFailureInfo>`: failureInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Reason <String>]`: Classification of why a call or portion of a call failed.
   - `[Stage <String>]`: failureStage
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+`INPUTOBJECT <ICloudCommunicationsIdentity>`: Identity Parameter
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
   - `[CallId <String>]`: The unique identifier of call
   - `[CallRecordId <String>]`: The unique identifier of callRecord
-  - `[CallTranscriptId <String>]`: The unique identifier of callTranscript
   - `[CommsOperationId <String>]`: The unique identifier of commsOperation
   - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
-  - `[FromDateTime <DateTime?>]`: Usage: fromDateTime={fromDateTime}
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
-  - `[MeetingRegistrationQuestionId <String>]`: The unique identifier of meetingRegistrationQuestion
   - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
   - `[ParticipantId <String>]`: The unique identifier of participant
   - `[PresenceId <String>]`: The unique identifier of presence
   - `[SessionId <String>]`: The unique identifier of session
-  - `[ToDateTime <DateTime?>]`: Usage: toDateTime={toDateTime}
   - `[UserId <String>]`: The unique identifier of user
 
-SEGMENTS <IMicrosoftGraphCallRecordsSegment\[]>: The list of segments involved in the session. Read-only. Nullable.
+`SEGMENTS <IMicrosoftGraphCallRecordsSegment[]>`: The list of segments involved in the session. Read-only. Nullable.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Callee <IMicrosoftGraphCallRecordsEndpoint>]`: endpoint
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

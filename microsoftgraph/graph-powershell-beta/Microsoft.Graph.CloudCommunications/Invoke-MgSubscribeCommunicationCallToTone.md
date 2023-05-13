@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.CloudCommunications-help.xml
-Module Name: Microsoft.Graph.CloudCommunications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/invoke-mgsubscribecommunicationcalltotone
+﻿---
+external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
+Module Name: Microsoft.Graph.Beta.CloudCommunications
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetasubscribecommunicationcalltotone
 schema: 2.0.0
 ---
 
-# Invoke-MgSubscribeCommunicationCallToTone
+# Invoke-MgBetaSubscribeCommunicationCallToTone
 
 ## SYNOPSIS
 Subscribe to DTMF (dual-tone multi-frequency signaling).
@@ -13,28 +13,28 @@ This allows you to be notified when the user presses keys on a 'Dialpad'.
 
 ## SYNTAX
 
-### SubscribeExpanded1 (Default)
+### SubscribeExpanded (Default)
 ```
-Invoke-MgSubscribeCommunicationCallToTone -CallId <String> [-AdditionalProperties <Hashtable>]
+Invoke-MgBetaSubscribeCommunicationCallToTone -CallId <String> [-AdditionalProperties <Hashtable>]
  [-ClientContext <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Subscribe1
+### Subscribe
 ```
-Invoke-MgSubscribeCommunicationCallToTone -CallId <String>
+Invoke-MgBetaSubscribeCommunicationCallToTone -CallId <String>
  -BodyParameter <IPathsXyl6WiCommunicationsCallsCallIdMicrosoftGraphSubscribetotonePostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### SubscribeViaIdentityExpanded1
+### SubscribeViaIdentityExpanded
 ```
-Invoke-MgSubscribeCommunicationCallToTone -InputObject <ICloudCommunicationsIdentity>
+Invoke-MgBetaSubscribeCommunicationCallToTone -InputObject <ICloudCommunicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-ClientContext <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### SubscribeViaIdentity1
+### SubscribeViaIdentity
 ```
-Invoke-MgSubscribeCommunicationCallToTone -InputObject <ICloudCommunicationsIdentity>
+Invoke-MgBetaSubscribeCommunicationCallToTone -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IPathsXyl6WiCommunicationsCallsCallIdMicrosoftGraphSubscribetotonePostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -45,17 +45,14 @@ This allows you to be notified when the user presses keys on a 'Dialpad'.
 
 ## EXAMPLES
 
-### Example 1: Using the Invoke-MgSubscribeCommunicationCallToTone Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.CloudCommunications
+Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
 	ClientContext = "fd1c7836-4d84-4e24-b6aa-23188688cc54"
 }
-Invoke-MgSubscribeCommunicationCallToTone -CallId $callId -BodyParameter $params
+Invoke-MgBetaSubscribeCommunicationCallToTone -CallId $callId -BodyParameter $params
 ```
-
-This example shows how to use the Invoke-MgSubscribeCommunicationCallToTone Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -64,7 +61,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: SubscribeExpanded1, SubscribeViaIdentityExpanded1
+Parameter Sets: SubscribeExpanded, SubscribeViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -76,11 +73,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPathsXyl6WiCommunicationsCallsCallIdMicrosoftGraphSubscribetotonePostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Subscribe1, SubscribeViaIdentity1
+Parameter Sets: Subscribe, SubscribeViaIdentity
 Aliases:
 
 Required: True
@@ -95,7 +92,7 @@ The unique identifier of call
 
 ```yaml
 Type: String
-Parameter Sets: SubscribeExpanded1, Subscribe1
+Parameter Sets: SubscribeExpanded, Subscribe
 Aliases:
 
 Required: True
@@ -110,7 +107,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: SubscribeExpanded1, SubscribeViaIdentityExpanded1
+Parameter Sets: SubscribeExpanded, SubscribeViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -122,11 +119,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ICloudCommunicationsIdentity
-Parameter Sets: SubscribeViaIdentityExpanded1, SubscribeViaIdentity1
+Parameter Sets: SubscribeViaIdentityExpanded, SubscribeViaIdentity
 Aliases:
 
 Required: True
@@ -172,11 +169,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
-### Microsoft.Graph.PowerShell.Models.IPathsXyl6WiCommunicationsCallsCallIdMicrosoftGraphSubscribetotonePostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsXyl6WiCommunicationsCallsCallIdMicrosoftGraphSubscribetotonePostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSubscribeToToneOperation
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSubscribeToToneOperation
 ## NOTES
 
 ALIASES
@@ -186,11 +183,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsXyl6WiCommunicationsCallsCallIdMicrosoftGraphSubscribetotonePostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsXyl6WiCommunicationsCallsCallIdMicrosoftGraphSubscribetotonePostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ClientContext <String>]`: 
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+`INPUTOBJECT <ICloudCommunicationsIdentity>`: Identity Parameter
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
   - `[CallId <String>]`: The unique identifier of call
@@ -200,6 +197,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
   - `[FromDateTime <DateTime?>]`: Usage: fromDateTime={fromDateTime}
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[MeetingRegistrantBaseId <String>]`: The unique identifier of meetingRegistrantBase
   - `[MeetingRegistrationQuestionId <String>]`: The unique identifier of meetingRegistrationQuestion
   - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
   - `[ParticipantId <String>]`: The unique identifier of participant

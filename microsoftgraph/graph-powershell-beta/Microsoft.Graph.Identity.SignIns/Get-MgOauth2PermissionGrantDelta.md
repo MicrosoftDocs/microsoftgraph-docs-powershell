@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgoauth2permissiongrantdelta
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaoauth2permissiongrantdelta
 schema: 2.0.0
 ---
 
-# Get-MgOauth2PermissionGrantDelta
+# Get-MgBetaOauth2PermissionGrantDelta
 
 ## SYNOPSIS
 Invoke function delta
@@ -13,8 +13,9 @@ Invoke function delta
 ## SYNTAX
 
 ```
-Get-MgOauth2PermissionGrantDelta [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+Get-MgBetaOauth2PermissionGrantDelta [-Filter <String>] [-Property <String[]>] [-Search <String>]
+ [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -22,14 +23,11 @@ Invoke function delta
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgOauth2PermissionGrantDelta Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
-Get-MgOauth2PermissionGrantDelta
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+Get-MgBetaOauth2PermissionGrantDelta
 ```
-
-This example shows how to use the Get-MgOauth2PermissionGrantDelta Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -176,7 +174,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOAuth2PermissionGrant1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOAuth2PermissionGrant
 ## NOTES
 
 ALIASES

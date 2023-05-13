@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Search-help.xml
-Module Name: Microsoft.Graph.Search
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/get-mgexternalindustrydatarunactivity
+﻿---
+external help file: Microsoft.Graph.Beta.Search-help.xml
+Module Name: Microsoft.Graph.Beta.Search
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatarunactivity
 schema: 2.0.0
 ---
 
-# Get-MgExternalIndustryDataRunActivity
+# Get-MgBetaExternalIndustryDataRunActivity
 
 ## SYNOPSIS
 The set of activities performed during the run.
@@ -14,32 +14,32 @@ The set of activities performed during the run.
 
 ### List (Default)
 ```
-Get-MgExternalIndustryDataRunActivity -IndustryDataRunId <String> [-ExpandProperty <String[]>]
+Get-MgBetaExternalIndustryDataRunActivity -IndustryDataRunId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get1
 ```
-Get-MgExternalIndustryDataRunActivity -IndustryDataRunActivityId <String> -IndustryDataRunId <String>
+Get-MgBetaExternalIndustryDataRunActivity -IndustryDataRunActivityId <String> -IndustryDataRunId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgExternalIndustryDataRunActivity -IndustryDataRunActivityId <String> -IndustryDataRunId <String>
+Get-MgBetaExternalIndustryDataRunActivity -IndustryDataRunActivityId <String> -IndustryDataRunId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
 ```
-Get-MgExternalIndustryDataRunActivity -InputObject <ISearchIdentity> [-ExpandProperty <String[]>]
+Get-MgBetaExternalIndustryDataRunActivity -InputObject <ISearchIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgExternalIndustryDataRunActivity -InputObject <ISearchIdentity> [-ExpandProperty <String[]>]
+Get-MgBetaExternalIndustryDataRunActivity -InputObject <ISearchIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
@@ -47,6 +47,16 @@ Get-MgExternalIndustryDataRunActivity -InputObject <ISearchIdentity> [-ExpandPro
 The set of activities performed during the run.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -143,7 +153,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ISearchIdentity
@@ -252,11 +262,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ISearchIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ISearchIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIndustryDataActivity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIndustryDataRunActivity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIndustryDataActivity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIndustryDataRunActivity
 ## NOTES
 
 ALIASES
@@ -266,7 +276,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
+`INPUTOBJECT <ISearchIdentity>`: Identity Parameter
   - `[AcronymId <String>]`: The unique identifier of acronym
   - `[BookmarkId <String>]`: The unique identifier of bookmark
   - `[ConnectionOperationId <String>]`: The unique identifier of connectionOperation

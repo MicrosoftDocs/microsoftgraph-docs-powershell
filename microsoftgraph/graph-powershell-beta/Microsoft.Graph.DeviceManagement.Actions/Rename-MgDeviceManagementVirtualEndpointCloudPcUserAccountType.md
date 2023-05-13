@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/rename-mgdevicemanagementvirtualendpointcloudpcuseraccounttype
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/rename-mgbetadevicemanagementvirtualendpointcloudpcuseraccounttype
 schema: 2.0.0
 ---
 
-# Rename-MgDeviceManagementVirtualEndpointCloudPcUserAccountType
+# Rename-MgBetaDeviceManagementVirtualEndpointCloudPcUserAccountType
 
 ## SYNOPSIS
 Change the account type of the user on a specific Cloud PC.
@@ -14,28 +14,29 @@ Change the account type of the user on a specific Cloud PC.
 
 ### ChangeExpanded (Default)
 ```
-Rename-MgDeviceManagementVirtualEndpointCloudPcUserAccountType -CloudPcId <String>
+Rename-MgBetaDeviceManagementVirtualEndpointCloudPcUserAccountType -CloudPcId <String>
  [-AdditionalProperties <Hashtable>] [-UserAccountType <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Change
 ```
-Rename-MgDeviceManagementVirtualEndpointCloudPcUserAccountType -CloudPcId <String>
+Rename-MgBetaDeviceManagementVirtualEndpointCloudPcUserAccountType -CloudPcId <String>
  -BodyParameter <IPathsFjf5ZaDevicemanagementVirtualendpointCloudpcsCloudpcIdMicrosoftGraphChangeuseraccounttypePostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ChangeViaIdentityExpanded
 ```
-Rename-MgDeviceManagementVirtualEndpointCloudPcUserAccountType -InputObject <IDeviceManagementActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-UserAccountType <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Rename-MgBetaDeviceManagementVirtualEndpointCloudPcUserAccountType
+ -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>]
+ [-UserAccountType <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ChangeViaIdentity
 ```
-Rename-MgDeviceManagementVirtualEndpointCloudPcUserAccountType -InputObject <IDeviceManagementActionsIdentity>
+Rename-MgBetaDeviceManagementVirtualEndpointCloudPcUserAccountType
+ -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPathsFjf5ZaDevicemanagementVirtualendpointCloudpcsCloudpcIdMicrosoftGraphChangeuseraccounttypePostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -45,17 +46,14 @@ Change the account type of the user on a specific Cloud PC.
 
 ## EXAMPLES
 
-### Example 1: Using the Rename-MgDeviceManagementVirtualEndpointCloudPcUserAccountType Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.DeviceManagement.Actions
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
 $params = @{
 	UserAccountType = "administrator"
 }
-Rename-MgDeviceManagementVirtualEndpointCloudPcUserAccountType -CloudPCId $cloudPCId -BodyParameter $params
+Rename-MgBetaDeviceManagementVirtualEndpointCloudPcUserAccountType -CloudPCId $cloudPCId -BodyParameter $params
 ```
-
-This example shows how to use the Rename-MgDeviceManagementVirtualEndpointCloudPcUserAccountType Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -76,7 +74,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPathsFjf5ZaDevicemanagementVirtualendpointCloudpcsCloudpcIdMicrosoftGraphChangeuseraccounttypePostRequestbodyContentApplicationJsonSchema
@@ -107,7 +105,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementActionsIdentity
@@ -187,8 +185,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-### Microsoft.Graph.PowerShell.Models.IPathsFjf5ZaDevicemanagementVirtualendpointCloudpcsCloudpcIdMicrosoftGraphChangeuseraccounttypePostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsFjf5ZaDevicemanagementVirtualendpointCloudpcsCloudpcIdMicrosoftGraphChangeuseraccounttypePostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### System.Boolean
@@ -201,11 +199,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsFjf5ZaDevicemanagementVirtualendpointCloudpcsCloudpcIdMicrosoftGraphChangeuseraccounttypePostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsFjf5ZaDevicemanagementVirtualendpointCloudpcsCloudpcIdMicrosoftGraphChangeuseraccounttypePostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[UserAccountType <String>]`: cloudPcUserAccountType
 
-INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[AlertRecordId <String>]`: The unique identifier of alertRecord
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: The unique identifier of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: The unique identifier of androidForWorkEnrollmentProfile
@@ -249,7 +247,6 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[MicrosoftTunnelSiteId <String>]`: The unique identifier of microsoftTunnelSite
   - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
   - `[NotificationMessageTemplateId <String>]`: The unique identifier of notificationMessageTemplate
-  - `[OemWarrantyInformationOnboardingId <String>]`: The unique identifier of oemWarrantyInformationOnboarding
   - `[RemoteAssistancePartnerId <String>]`: The unique identifier of remoteAssistancePartner
   - `[RoleScopeTagId <String>]`: The unique identifier of roleScopeTag
   - `[WindowsAutopilotDeploymentProfileId <String>]`: The unique identifier of windowsAutopilotDeploymentProfile

@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Functions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Functions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.functions/invoke-mgdownloaddevicemanagementapplepushnotificationcertificateapplepushnotificationcertificatesigningrequest
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Functions-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Functions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/invoke-mgbetadownloaddevicemanagementapplepushnotificationcertificateapplepushnotificationcertificatesigningrequest
 schema: 2.0.0
 ---
 
-# Invoke-MgDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest
+# Invoke-MgBetaDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest
 
 ## SYNOPSIS
 Download Apple push notification certificate signing request
@@ -13,7 +13,7 @@ Download Apple push notification certificate signing request
 ## SYNTAX
 
 ```
-Invoke-MgDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest
+Invoke-MgBetaDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest
  [<CommonParameters>]
 ```
 
@@ -21,6 +21,20 @@ Invoke-MgDownloadDeviceManagementApplePushNotificationCertificateApplePushNotifi
 Download Apple push notification certificate signing request
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 

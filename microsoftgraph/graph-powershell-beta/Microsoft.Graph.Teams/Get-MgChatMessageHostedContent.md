@@ -1,70 +1,64 @@
----
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mgchatmessagehostedcontent
+﻿---
+external help file: Microsoft.Graph.Beta.Teams-help.xml
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatmessagehostedcontent
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
-# Get-MgChatMessageHostedContent
+# Get-MgBetaChatMessageHostedContent
 
 ## SYNOPSIS
-Content in a message hosted by Microsoft Teams - for example, images or code snippets.
+Retrieve the properties and relationships of chatMessageHostedContent object.
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgChatMessageHostedContent -ChatId <String> -ChatMessageId <String> [-ExpandProperty <String[]>]
+Get-MgBetaChatMessageHostedContent -ChatId <String> -ChatMessageId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get1
 ```
-Get-MgChatMessageHostedContent -ChatId <String> -ChatMessageHostedContentId <String> -ChatMessageId <String>
- -OutFile <String> [-PassThru] [<CommonParameters>]
+Get-MgBetaChatMessageHostedContent -ChatId <String> -ChatMessageHostedContentId <String>
+ -ChatMessageId <String> -OutFile <String> [-PassThru] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgChatMessageHostedContent -ChatId <String> -ChatMessageHostedContentId <String> -ChatMessageId <String>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaChatMessageHostedContent -ChatId <String> -ChatMessageHostedContentId <String>
+ -ChatMessageId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
 ```
-Get-MgChatMessageHostedContent -InputObject <ITeamsIdentity> -OutFile <String> [-PassThru] [<CommonParameters>]
+Get-MgBetaChatMessageHostedContent -InputObject <ITeamsIdentity> -OutFile <String> [-PassThru]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgChatMessageHostedContent -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>]
+Get-MgBetaChatMessageHostedContent -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Content in a message hosted by Microsoft Teams - for example, images or code snippets.
+Retrieve the properties and relationships of chatMessageHostedContent object.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgChatMessageHostedContent Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Teams
-Get-MgChatMessageHostedContent -ChatId $chatId -ChatMessageId $chatMessageId -ChatMessageHostedContentId $chatMessageHostedContentId
+Import-Module Microsoft.Graph.Beta.Teams
+Get-MgBetaChatMessageHostedContent -ChatId $chatId -ChatMessageId $chatMessageId -ChatMessageHostedContentId $chatMessageHostedContentId
 ```
 
-This example shows how to use the Get-MgChatMessageHostedContent Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Get-MgChatMessageHostedContent Cmdlet
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Teams
-Get-MgChatMessageHostedContent -ChatId $chatId -ChatMessageId $chatMessageId
+Import-Module Microsoft.Graph.Beta.Teams
+Get-MgBetaChatMessageHostedContent -ChatId $chatId -ChatMessageId $chatMessageId
 ```
-
-This example shows how to use the Get-MgChatMessageHostedContent Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -176,7 +170,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ITeamsIdentity
@@ -315,10 +309,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChatMessageHostedContent
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphChatMessageHostedContent
 ### System.Boolean
 ## NOTES
 
@@ -329,7 +323,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat

@@ -1,12 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgoauth2permissiongrant
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaoauth2permissiongrant
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
-# New-MgOauth2PermissionGrant
+# New-MgBetaOauth2PermissionGrant
 
 ## SYNOPSIS
 Create a delegated permission grant, represented by an oAuth2PermissionGrant object.
@@ -16,14 +15,14 @@ A delegated permission grant authorizes a client service principal (representing
 
 ### CreateExpanded (Default)
 ```
-New-MgOauth2PermissionGrant [-AdditionalProperties <Hashtable>] [-ClientId <String>] [-ConsentType <String>]
- [-ExpiryTime <DateTime>] [-Id <String>] [-PrincipalId <String>] [-ResourceId <String>] [-Scope <String>]
- [-StartTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaOauth2PermissionGrant [-AdditionalProperties <Hashtable>] [-ClientId <String>]
+ [-ConsentType <String>] [-ExpiryTime <DateTime>] [-Id <String>] [-PrincipalId <String>] [-ResourceId <String>]
+ [-Scope <String>] [-StartTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgOauth2PermissionGrant -BodyParameter <IMicrosoftGraphOAuth2PermissionGrant1> [-WhatIf] [-Confirm]
+New-MgBetaOauth2PermissionGrant -BodyParameter <IMicrosoftGraphOAuth2PermissionGrant> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -33,9 +32,9 @@ A delegated permission grant authorizes a client service principal (representing
 
 ## EXAMPLES
 
-### Example 1: Using the New-MgOauth2PermissionGrant Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
 	ClientId = "ef969797-201d-4f6b-960c-e9ed5f31dab5"
 	ConsentType = "AllPrincipals"
@@ -44,11 +43,8 @@ $params = @{
 	StartTime = [System.DateTime]::Parse("2022-03-17T00:00:00Z")
 	ExpiryTime = [System.DateTime]::Parse("2023-03-17T00:00:00Z")
 }
-New-MgOauth2PermissionGrant -BodyParameter $params
+New-MgBetaOauth2PermissionGrant -BodyParameter $params
 ```
-
-This example shows how to use the New-MgOauth2PermissionGrant Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -69,10 +65,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 oAuth2PermissionGrant
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOAuth2PermissionGrant1
+Type: IMicrosoftGraphOAuth2PermissionGrant
 Parameter Sets: Create
 Aliases:
 
@@ -138,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -258,10 +254,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOAuth2PermissionGrant1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOAuth2PermissionGrant
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOAuth2PermissionGrant1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOAuth2PermissionGrant
 ## NOTES
 
 ALIASES
@@ -271,9 +267,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphOAuth2PermissionGrant1>`: oAuth2PermissionGrant
+`BODYPARAMETER <IMicrosoftGraphOAuth2PermissionGrant>`: oAuth2PermissionGrant
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ClientId <String>]`: The id of the client service principal for the application which is authorized to act on behalf of a signed-in user when accessing an API. Required. Supports $filter (eq only).
   - `[ConsentType <String>]`: Indicates whether authorization is granted for the client application to impersonate all users or only a specific user. AllPrincipals indicates authorization to impersonate all users. Principal indicates authorization to impersonate a specific user. Consent on behalf of all users can be granted by an administrator. Non-admin users may be authorized to consent on behalf of themselves in some cases, for some delegated permissions. Required. Supports $filter (eq only).
   - `[ExpiryTime <DateTime?>]`: Currently, the end time value is ignored, but a value is required when creating an oAuth2PermissionGrant. Required.

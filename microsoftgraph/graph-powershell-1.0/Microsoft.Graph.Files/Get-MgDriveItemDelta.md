@@ -1,7 +1,7 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/get-mgdriveitemdelta
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemdelta
 schema: 2.0.0
 ---
 
@@ -12,27 +12,27 @@ Invoke function delta
 
 ## SYNTAX
 
-### Delta2 (Default)
+### Delta (Default)
 ```
 Get-MgDriveItemDelta -DriveId <String> -DriveItemId <String> [-Filter <String>] [-Property <String[]>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
  [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### Delta3
+### Delta1
 ```
 Get-MgDriveItemDelta -DriveId <String> -DriveItemId <String> -Token <String> [-Filter <String>]
  [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### DeltaViaIdentity3
+### DeltaViaIdentity1
 ```
 Get-MgDriveItemDelta -InputObject <IFilesIdentity> [-Filter <String>] [-Property <String[]>] [-Search <String>]
  [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-Count] [<CommonParameters>]
 ```
 
-### DeltaViaIdentity2
+### DeltaViaIdentity
 ```
 Get-MgDriveItemDelta -InputObject <IFilesIdentity> [-Filter <String>] [-Property <String[]>] [-Search <String>]
  [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-Count] [<CommonParameters>]
@@ -43,6 +43,20 @@ Invoke function delta
 
 ## EXAMPLES
 
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -All
@@ -50,7 +64,7 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: Delta2, Delta3
+Parameter Sets: Delta, Delta1
 Aliases:
 
 Required: False
@@ -65,7 +79,7 @@ Include count of items
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: DeltaViaIdentity3, DeltaViaIdentity2
+Parameter Sets: DeltaViaIdentity1, DeltaViaIdentity
 Aliases:
 
 Required: False
@@ -81,7 +95,7 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: Delta2, Delta3
+Parameter Sets: Delta, Delta1
 Aliases: CV
 
 Required: False
@@ -96,7 +110,7 @@ The unique identifier of drive
 
 ```yaml
 Type: String
-Parameter Sets: Delta2, Delta3
+Parameter Sets: Delta, Delta1
 Aliases:
 
 Required: True
@@ -111,7 +125,7 @@ The unique identifier of driveItem
 
 ```yaml
 Type: String
-Parameter Sets: Delta2, Delta3
+Parameter Sets: Delta, Delta1
 Aliases:
 
 Required: True
@@ -138,11 +152,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IFilesIdentity
-Parameter Sets: DeltaViaIdentity3, DeltaViaIdentity2
+Parameter Sets: DeltaViaIdentity1, DeltaViaIdentity
 Aliases:
 
 Required: True
@@ -157,7 +171,7 @@ Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: Delta2, Delta3
+Parameter Sets: Delta, Delta1
 Aliases:
 
 Required: False
@@ -217,7 +231,7 @@ Usage: token='{token}'
 
 ```yaml
 Type: String
-Parameter Sets: Delta3
+Parameter Sets: Delta1
 Aliases:
 
 Required: True
@@ -275,7 +289,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+`INPUTOBJECT <IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType

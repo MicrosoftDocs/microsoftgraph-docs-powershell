@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgpolicyauthenticationmethodpolicyauthenticationmethodconfiguration
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyauthenticationmethodpolicyauthenticationmethodconfiguration
 schema: 2.0.0
 ---
 
-# New-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration
+# New-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration
 
 ## SYNOPSIS
 Create new navigation property to authenticationMethodConfigurations for policies
@@ -14,14 +14,14 @@ Create new navigation property to authenticationMethodConfigurations for policie
 
 ### CreateExpanded (Default)
 ```
-New-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration [-AdditionalProperties <Hashtable>]
+New-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration [-AdditionalProperties <Hashtable>]
  [-ExcludeTargets <IMicrosoftGraphExcludeTarget[]>] [-Id <String>] [-State <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration
+New-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration
  -BodyParameter <IMicrosoftGraphAuthenticationMethodConfiguration> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -29,6 +29,20 @@ New-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration
 Create new navigation property to authenticationMethodConfigurations for policies
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -49,7 +63,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 authenticationMethodConfiguration
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAuthenticationMethodConfiguration
@@ -65,7 +79,7 @@ Accept wildcard characters: False
 
 ### -ExcludeTargets
 Groups of users that are excluded from a policy.
-To construct, please use Get-Help -Online and see NOTES section for EXCLUDETARGETS properties and create a hash table.
+To construct, see NOTES section for EXCLUDETARGETS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphExcludeTarget[]
@@ -80,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -146,10 +160,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthenticationMethodConfiguration
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthenticationMethodConfiguration
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthenticationMethodConfiguration
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthenticationMethodConfiguration
 ## NOTES
 
 ALIASES
@@ -159,16 +173,16 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphAuthenticationMethodConfiguration>`: authenticationMethodConfiguration
+`BODYPARAMETER <IMicrosoftGraphAuthenticationMethodConfiguration>`: authenticationMethodConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ExcludeTargets <IMicrosoftGraphExcludeTarget[]>]`: Groups of users that are excluded from a policy.
-    - `[Id <String>]`: The object identifier of an Azure Active Directory user or group.
+    - `[Id <String>]`: The object identifier of an Azure AD group.
     - `[TargetType <String>]`: authenticationMethodTargetType
   - `[State <String>]`: authenticationMethodState
 
-EXCLUDETARGETS <IMicrosoftGraphExcludeTarget\[]>: Groups of users that are excluded from a policy.
-  - `[Id <String>]`: The object identifier of an Azure Active Directory user or group.
+`EXCLUDETARGETS <IMicrosoftGraphExcludeTarget[]>`: Groups of users that are excluded from a policy.
+  - `[Id <String>]`: The object identifier of an Azure AD group.
   - `[TargetType <String>]`: authenticationMethodTargetType
 
 ## RELATED LINKS

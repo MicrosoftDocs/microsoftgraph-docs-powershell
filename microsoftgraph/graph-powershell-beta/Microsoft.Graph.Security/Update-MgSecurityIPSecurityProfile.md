@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecurityipsecurityprofile
+﻿---
+external help file: Microsoft.Graph.Beta.Security-help.xml
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityipsecurityprofile
 schema: 2.0.0
 ---
 
-# Update-MgSecurityIPSecurityProfile
+# Update-MgBetaSecurityIPSecurityProfile
 
 ## SYNOPSIS
 Update the navigation property ipSecurityProfiles in security
@@ -14,42 +14,54 @@ Update the navigation property ipSecurityProfiles in security
 
 ### UpdateExpanded (Default)
 ```
-Update-MgSecurityIPSecurityProfile -IPSecurityProfileId <String> [-ActivityGroupNames <String[]>]
+Update-MgBetaSecurityIPSecurityProfile -IPSecurityProfileId <String> [-ActivityGroupNames <String[]>]
  [-AdditionalProperties <Hashtable>] [-Address <String>] [-AzureSubscriptionId <String>]
  [-AzureTenantId <String>] [-CountHits <Int32>] [-CountHosts <Int32>] [-FirstSeenDateTime <DateTime>]
  [-IPCategories <IMicrosoftGraphIPCategory[]>] [-IPReferenceData <IMicrosoftGraphIPReferenceData[]>]
  [-Id <String>] [-LastSeenDateTime <DateTime>] [-RiskScore <String>] [-Tags <String[]>]
- [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgSecurityIPSecurityProfile -IPSecurityProfileId <String>
- -BodyParameter <IMicrosoftGraphIPSecurityProfile> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaSecurityIPSecurityProfile -IPSecurityProfileId <String>
+ -BodyParameter <IMicrosoftGraphIPSecurityProfile> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgSecurityIPSecurityProfile -InputObject <ISecurityIdentity> [-ActivityGroupNames <String[]>]
+Update-MgBetaSecurityIPSecurityProfile -InputObject <ISecurityIdentity> [-ActivityGroupNames <String[]>]
  [-AdditionalProperties <Hashtable>] [-Address <String>] [-AzureSubscriptionId <String>]
  [-AzureTenantId <String>] [-CountHits <Int32>] [-CountHosts <Int32>] [-FirstSeenDateTime <DateTime>]
  [-IPCategories <IMicrosoftGraphIPCategory[]>] [-IPReferenceData <IMicrosoftGraphIPReferenceData[]>]
  [-Id <String>] [-LastSeenDateTime <DateTime>] [-RiskScore <String>] [-Tags <String[]>]
- [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgSecurityIPSecurityProfile -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphIPSecurityProfile> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaSecurityIPSecurityProfile -InputObject <ISecurityIdentity>
+ -BodyParameter <IMicrosoftGraphIPSecurityProfile> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property ipSecurityProfiles in security
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -130,7 +142,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 ipSecurityProfile
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIPSecurityProfile
@@ -190,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -207,7 +219,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ISecurityIdentity
@@ -223,7 +235,7 @@ Accept wildcard characters: False
 
 ### -IPCategories
 .
-To construct, please use Get-Help -Online and see NOTES section for IPCATEGORIES properties and create a hash table.
+To construct, see NOTES section for IPCATEGORIES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIPCategory[]
@@ -239,7 +251,7 @@ Accept wildcard characters: False
 
 ### -IPReferenceData
 .
-To construct, please use Get-Help -Online and see NOTES section for IPREFERENCEDATA properties and create a hash table.
+To construct, see NOTES section for IPREFERENCEDATA properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIPReferenceData[]
@@ -283,21 +295,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -RiskScore
 .
 
@@ -330,7 +327,7 @@ Accept wildcard characters: False
 
 ### -VendorInformation
 securityVendorInformation
-To construct, please use Get-Help -Online and see NOTES section for VENDORINFORMATION properties and create a hash table.
+To construct, see NOTES section for VENDORINFORMATION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSecurityVendorInformation
@@ -380,11 +377,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIPSecurityProfile
-### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIPSecurityProfile
+### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIPSecurityProfile
 ## NOTES
 
 ALIASES
@@ -394,9 +391,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphIPSecurityProfile>`: ipSecurityProfile
+`BODYPARAMETER <IMicrosoftGraphIPSecurityProfile>`: ipSecurityProfile
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ActivityGroupNames <String[]>]`: 
   - `[Address <String>]`: 
   - `[AzureSubscriptionId <String>]`: 
@@ -425,7 +422,7 @@ BODYPARAMETER `<IMicrosoftGraphIPSecurityProfile>`: ipSecurityProfile
     - `[SubProvider <String>]`: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
     - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye). Required
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+`INPUTOBJECT <ISecurityIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
   - `[ArticleId <String>]`: The unique identifier of article
   - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator
@@ -483,12 +480,12 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[VulnerabilityComponentId <String>]`: The unique identifier of vulnerabilityComponent
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
-IPCATEGORIES <IMicrosoftGraphIPCategory\[]>: .
+`IPCATEGORIES <IMicrosoftGraphIPCategory[]>`: .
   - `[Description <String>]`: 
   - `[Name <String>]`: 
   - `[Vendor <String>]`: 
 
-IPREFERENCEDATA <IMicrosoftGraphIPReferenceData\[]>: .
+`IPREFERENCEDATA <IMicrosoftGraphIPReferenceData[]>`: .
   - `[Asn <Int64?>]`: 
   - `[City <String>]`: 
   - `[CountryOrRegionCode <String>]`: 
@@ -496,7 +493,7 @@ IPREFERENCEDATA <IMicrosoftGraphIPReferenceData\[]>: .
   - `[State <String>]`: 
   - `[Vendor <String>]`: 
 
-VENDORINFORMATION `<IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
+`VENDORINFORMATION <IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Provider <String>]`: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
   - `[ProviderVersion <String>]`: Version of the provider or subprovider, if it exists, that generated the alert. Required

@@ -1,33 +1,33 @@
----
-external help file: Microsoft.Graph.Reports-help.xml
-Module Name: Microsoft.Graph.Reports
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgreportdailyprintusagebyuser
+﻿---
+external help file: Microsoft.Graph.Beta.Reports-help.xml
+Module Name: Microsoft.Graph.Beta.Reports
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportdailyprintusagebyuser
 schema: 2.0.0
 ---
 
-# Get-MgReportDailyPrintUsageByUser
+# Get-MgBetaReportDailyPrintUsageByUser
 
 ## SYNOPSIS
 Get dailyPrintUsageByUser from reports
 
 ## SYNTAX
 
-### List1 (Default)
+### List (Default)
 ```
-Get-MgReportDailyPrintUsageByUser [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
+Get-MgBetaReportDailyPrintUsageByUser [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
  [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### Get1
+### Get
 ```
-Get-MgReportDailyPrintUsageByUser -PrintUsageByUserId <String> [-ExpandProperty <String[]>]
+Get-MgBetaReportDailyPrintUsageByUser -PrintUsageByUserId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### GetViaIdentity
 ```
-Get-MgReportDailyPrintUsageByUser -InputObject <IReportsIdentity> [-ExpandProperty <String[]>]
+Get-MgBetaReportDailyPrintUsageByUser -InputObject <IReportsIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
@@ -36,16 +36,12 @@ Get dailyPrintUsageByUser from reports
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Reports
-
-Get-MgReportDailyPrintUsageByUser
+Import-Module Microsoft.Graph.Beta.Reports
 ```
 
-This example shows how to use the Get-MgReportDailyPrintUsageByUser Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Get-MgBetaReportDailyPrintUsageByUser
 
 ## PARAMETERS
 
@@ -54,7 +50,7 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -70,7 +66,7 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: List
 Aliases: CV
 
 Required: False
@@ -100,7 +96,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -112,11 +108,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IReportsIdentity
-Parameter Sets: GetViaIdentity1
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
@@ -131,7 +127,7 @@ Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -146,7 +142,7 @@ The unique identifier of printUsageByUser
 
 ```yaml
 Type: String
-Parameter Sets: Get1
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -176,7 +172,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -191,7 +187,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List1
+Parameter Sets: List
 Aliases: OrderBy
 
 Required: False
@@ -206,7 +202,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Parameter Sets: List
 Aliases: Limit
 
 Required: False
@@ -221,7 +217,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -236,10 +232,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IReportsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IReportsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintUsageByUser1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrintUsageByUser
 ## NOTES
 
 ALIASES
@@ -249,7 +245,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+`INPUTOBJECT <IReportsIdentity>`: Identity Parameter
   - `[ApplicationSignInDetailedSummaryId <String>]`: The unique identifier of applicationSignInDetailedSummary
   - `[CredentialUserRegistrationDetailsId <String>]`: The unique identifier of credentialUserRegistrationDetails
   - `[Date <DateTime?>]`: Usage: date={date}

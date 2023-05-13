@@ -1,6 +1,6 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Enrolment
+﻿---
+external help file: Microsoft.Graph.Identity.Governance-help.xml
+Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/remove-mgrolemanagemententitlementmanagement
 schema: 2.0.0
 ---

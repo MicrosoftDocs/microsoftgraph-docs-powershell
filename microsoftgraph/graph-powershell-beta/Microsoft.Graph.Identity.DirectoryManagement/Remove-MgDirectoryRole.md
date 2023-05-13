@@ -1,12 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryrole
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectoryrole
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
-# Remove-MgDirectoryRole
+# Remove-MgBetaDirectoryRole
 
 ## SYNOPSIS
 Delete entity from directoryRoles
@@ -15,13 +14,13 @@ Delete entity from directoryRoles
 
 ### Delete (Default)
 ```
-Remove-MgDirectoryRole -DirectoryRoleId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+Remove-MgBetaDirectoryRole -DirectoryRoleId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgDirectoryRole -InputObject <IIdentityDirectoryManagementIdentity> [-IfMatch <String>] [-PassThru]
+Remove-MgBetaDirectoryRole -InputObject <IIdentityDirectoryManagementIdentity> [-IfMatch <String>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -30,16 +29,12 @@ Delete entity from directoryRoles
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
-
-Get-MgDirectoryRole -DirectoryRoleId $directoryRoleId
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 ```
 
-This example shows how to use the Remove-MgDirectoryRole Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Get-MgBetaDirectoryRole -DirectoryRoleId $directoryRoleId
 
 ## PARAMETERS
 
@@ -75,7 +70,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IIdentityDirectoryManagementIdentity
@@ -140,7 +135,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
 ## OUTPUTS
 
 ### System.Boolean
@@ -153,7 +148,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet

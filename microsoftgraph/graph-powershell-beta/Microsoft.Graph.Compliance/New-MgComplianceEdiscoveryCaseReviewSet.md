@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Compliance-help.xml
-Module Name: Microsoft.Graph.Compliance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/new-mgcomplianceediscoverycasereviewset
+﻿---
+external help file: Microsoft.Graph.Beta.Compliance-help.xml
+Module Name: Microsoft.Graph.Beta.Compliance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetacomplianceediscoverycasereviewset
 schema: 2.0.0
 ---
 
-# New-MgComplianceEdiscoveryCaseReviewSet
+# New-MgBetaComplianceEdiscoveryCaseReviewSet
 
 ## SYNOPSIS
 Create a new reviewSet object.
@@ -15,27 +15,28 @@ The request body contains the display name of the review set, which is the only 
 
 ### CreateExpanded (Default)
 ```
-New-MgComplianceEdiscoveryCaseReviewSet -CaseId <String> [-AdditionalProperties <Hashtable>]
+New-MgBetaComplianceEdiscoveryCaseReviewSet -CaseId <String> [-AdditionalProperties <Hashtable>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>]
  [-Queries <IMicrosoftGraphEdiscoveryReviewSetQuery[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgComplianceEdiscoveryCaseReviewSet -CaseId <String> -BodyParameter <IMicrosoftGraphEdiscoveryReviewSet>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaComplianceEdiscoveryCaseReviewSet -CaseId <String>
+ -BodyParameter <IMicrosoftGraphEdiscoveryReviewSet> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgComplianceEdiscoveryCaseReviewSet -InputObject <IComplianceIdentity> [-AdditionalProperties <Hashtable>]
- [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>]
- [-Queries <IMicrosoftGraphEdiscoveryReviewSetQuery[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaComplianceEdiscoveryCaseReviewSet -InputObject <IComplianceIdentity>
+ [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
+ [-DisplayName <String>] [-Id <String>] [-Queries <IMicrosoftGraphEdiscoveryReviewSetQuery[]>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgComplianceEdiscoveryCaseReviewSet -InputObject <IComplianceIdentity>
+New-MgBetaComplianceEdiscoveryCaseReviewSet -InputObject <IComplianceIdentity>
  -BodyParameter <IMicrosoftGraphEdiscoveryReviewSet> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -45,17 +46,14 @@ The request body contains the display name of the review set, which is the only 
 
 ## EXAMPLES
 
-### Example 1: Using the New-MgComplianceEdiscoveryCaseReviewSet Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Compliance
+Import-Module Microsoft.Graph.Beta.Compliance
 $params = @{
 	DisplayName = "My Reviewset 3"
 }
-New-MgComplianceEdiscoveryCaseReviewSet -CaseId $caseId -BodyParameter $params
+New-MgBetaComplianceEdiscoveryCaseReviewSet -CaseId $caseId -BodyParameter $params
 ```
-
-This example shows how to use the New-MgComplianceEdiscoveryCaseReviewSet Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -76,7 +74,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 reviewSet
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEdiscoveryReviewSet
@@ -107,7 +105,7 @@ Accept wildcard characters: False
 
 ### -CreatedBy
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
+To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet
@@ -173,7 +171,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IComplianceIdentity
@@ -189,7 +187,7 @@ Accept wildcard characters: False
 
 ### -Queries
 .
-To construct, please use Get-Help -Online and see NOTES section for QUERIES properties and create a hash table.
+To construct, see NOTES section for QUERIES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEdiscoveryReviewSetQuery[]
@@ -239,11 +237,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryReviewSet
+### Microsoft.Graph.Beta.PowerShell.Models.IComplianceIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEdiscoveryReviewSet
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryReviewSet
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEdiscoveryReviewSet
 ## NOTES
 
 ALIASES
@@ -253,7 +251,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphEdiscoveryReviewSet>`: reviewSet
+`BODYPARAMETER <IMicrosoftGraphEdiscoveryReviewSet>`: reviewSet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -275,7 +273,7 @@ BODYPARAMETER `<IMicrosoftGraphEdiscoveryReviewSet>`: reviewSet
     - `[LastModifiedDateTime <DateTime?>]`: The date and time the query was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[Query <String>]`: The query string in KQL (Keyword Query Language) query. For details, see Document metadata fields in Advanced eDiscovery.  This field maps directly to the keywords condition.  You can refine searches by using fields listed in the searchable field name paired with values; for example, subject:'Quarterly Financials' AND Date>=06/01/2016 AND Date<=07/01/2016.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+`CREATEDBY <IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -284,7 +282,7 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
+`INPUTOBJECT <IComplianceIdentity>`: Identity Parameter
   - `[CaseId <String>]`: The unique identifier of case
   - `[CaseOperationId <String>]`: The unique identifier of caseOperation
   - `[CustodianId <String>]`: The unique identifier of custodian
@@ -300,7 +298,7 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
   - `[UnifiedGroupSourceId <String>]`: The unique identifier of unifiedGroupSource
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
-QUERIES <IMicrosoftGraphEdiscoveryReviewSetQuery\[]>: .
+`QUERIES <IMicrosoftGraphEdiscoveryReviewSetQuery[]>`: .
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

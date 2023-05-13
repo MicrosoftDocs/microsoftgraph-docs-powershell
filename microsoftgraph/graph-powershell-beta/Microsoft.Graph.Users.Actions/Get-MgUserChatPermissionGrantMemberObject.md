@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Users.Actions-help.xml
-Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/get-mguserchatpermissiongrantmemberobject
+﻿---
+external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.Users.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetauserchatpermissiongrantmemberobject
 schema: 2.0.0
 ---
 
-# Get-MgUserChatPermissionGrantMemberObject
+# Get-MgBetaUserChatPermissionGrantMemberObject
 
 ## SYNOPSIS
 Invoke action getMemberObjects
@@ -14,14 +14,14 @@ Invoke action getMemberObjects
 
 ### GetExpanded (Default)
 ```
-Get-MgUserChatPermissionGrantMemberObject -ChatId <String> -ResourceSpecificPermissionGrantId <String>
+Get-MgBetaUserChatPermissionGrantMemberObject -ChatId <String> -ResourceSpecificPermissionGrantId <String>
  -UserId <String> [-AdditionalProperties <Hashtable>] [-SecurityEnabledOnly] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgUserChatPermissionGrantMemberObject -ChatId <String> -ResourceSpecificPermissionGrantId <String>
+Get-MgBetaUserChatPermissionGrantMemberObject -ChatId <String> -ResourceSpecificPermissionGrantId <String>
  -UserId <String>
  -BodyParameter <IPathsSq4ZygUsersUserIdChatsChatIdPermissiongrantsResourcespecificpermissiongrantIdMicrosoftGraphGetmemberobjectsPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -29,13 +29,13 @@ Get-MgUserChatPermissionGrantMemberObject -ChatId <String> -ResourceSpecificPerm
 
 ### GetViaIdentityExpanded
 ```
-Get-MgUserChatPermissionGrantMemberObject -InputObject <IUsersActionsIdentity>
+Get-MgBetaUserChatPermissionGrantMemberObject -InputObject <IUsersActionsIdentity>
  [-AdditionalProperties <Hashtable>] [-SecurityEnabledOnly] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgUserChatPermissionGrantMemberObject -InputObject <IUsersActionsIdentity>
+Get-MgBetaUserChatPermissionGrantMemberObject -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPathsSq4ZygUsersUserIdChatsChatIdPermissiongrantsResourcespecificpermissiongrantIdMicrosoftGraphGetmemberobjectsPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -44,6 +44,20 @@ Get-MgUserChatPermissionGrantMemberObject -InputObject <IUsersActionsIdentity>
 Invoke action getMemberObjects
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -64,7 +78,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPathsSq4ZygUsersUserIdChatsChatIdPermissiongrantsResourcespecificpermissiongrantIdMicrosoftGraphGetmemberobjectsPostRequestbodyContentApplicationJsonSchema
@@ -95,7 +109,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersActionsIdentity
@@ -190,8 +204,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsSq4ZygUsersUserIdChatsChatIdPermissiongrantsResourcespecificpermissiongrantIdMicrosoftGraphGetmemberobjectsPostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsSq4ZygUsersUserIdChatsChatIdPermissiongrantsResourcespecificpermissiongrantIdMicrosoftGraphGetmemberobjectsPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
 ## OUTPUTS
 
 ### System.String
@@ -204,11 +218,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsSq4ZygUsersUserIdChatsChatIdPermissiongrantsResourcespecificpermissiongrantIdMicrosoftGraphGetmemberobjectsPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsSq4ZygUsersUserIdChatsChatIdPermissiongrantsResourcespecificpermissiongrantIdMicrosoftGraphGetmemberobjectsPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[SecurityEnabledOnly <Boolean?>]`: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
@@ -242,7 +256,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription

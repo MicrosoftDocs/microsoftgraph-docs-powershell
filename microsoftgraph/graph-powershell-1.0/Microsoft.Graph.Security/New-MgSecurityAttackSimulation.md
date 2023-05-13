@@ -1,7 +1,7 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/new-mgsecurityattacksimulation
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityattacksimulation
 schema: 2.0.0
 ---
 
@@ -12,7 +12,7 @@ Create new navigation property to simulations for security
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
 New-MgSecurityAttackSimulation [-AdditionalProperties <Hashtable>] [-AttackTechnique <String>]
  [-AttackType <String>] [-AutomationId <String>] [-CompletionDateTime <DateTime>]
@@ -22,7 +22,7 @@ New-MgSecurityAttackSimulation [-AdditionalProperties <Hashtable>] [-AttackTechn
  [-Report <IMicrosoftGraphSimulationReport>] [-Status <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
 New-MgSecurityAttackSimulation -BodyParameter <IMicrosoftGraphSimulation> [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -33,6 +33,20 @@ Create new navigation property to simulations for security
 
 ## EXAMPLES
 
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -40,7 +54,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -55,7 +69,7 @@ simulationAttackTechnique
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -70,7 +84,7 @@ simulationAttackType
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -85,7 +99,7 @@ Unique identifier for the attack simulation automation.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -97,11 +111,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 simulation
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSimulation
-Parameter Sets: Create1
+Parameter Sets: Create
 Aliases:
 
 Required: True
@@ -117,7 +131,7 @@ Supports $filter and $orderby.
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -129,11 +143,11 @@ Accept wildcard characters: False
 
 ### -CreatedBy
 emailIdentity
-To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
+To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEmailIdentity
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -148,7 +162,7 @@ Date and time of creation of the attack simulation and training campaign.
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -163,7 +177,7 @@ Description of the attack simulation and training campaign.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -179,7 +193,7 @@ Supports $filter and $orderby.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -195,7 +209,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -211,7 +225,7 @@ Supports $filter and $orderby.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -223,11 +237,11 @@ Accept wildcard characters: False
 
 ### -LastModifiedBy
 emailIdentity
-To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBY properties and create a hash table.
+To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEmailIdentity
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -242,7 +256,7 @@ Date and time of the most recent modification of the attack simulation and train
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -258,7 +272,7 @@ Supports $filter and $orderby.
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -273,7 +287,7 @@ payloadDeliveryPlatform
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -285,11 +299,11 @@ Accept wildcard characters: False
 
 ### -Report
 simulationReport
-To construct, please use Get-Help -Online and see NOTES section for REPORT properties and create a hash table.
+To construct, see NOTES section for REPORT properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSimulationReport
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -304,7 +318,7 @@ simulationStatus
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -363,7 +377,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSimulation>`: simulation
+`BODYPARAMETER <IMicrosoftGraphSimulation>`: simulation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AttackTechnique <String>]`: simulationAttackTechnique
@@ -437,19 +451,19 @@ BODYPARAMETER `<IMicrosoftGraphSimulation>`: simulation
         - `[TrainingUpdatedProperties <IMicrosoftGraphUserTrainingContentEventInfo>]`: userTrainingContentEventInfo
   - `[Status <String>]`: simulationStatus
 
-CREATEDBY `<IMicrosoftGraphEmailIdentity>`: emailIdentity
+`CREATEDBY <IMicrosoftGraphEmailIdentity>`: emailIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
   - `[Id <String>]`: Unique identifier for the identity.
   - `[Email <String>]`: Email address of the user.
 
-LASTMODIFIEDBY `<IMicrosoftGraphEmailIdentity>`: emailIdentity
+`LASTMODIFIEDBY <IMicrosoftGraphEmailIdentity>`: emailIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
   - `[Id <String>]`: Unique identifier for the identity.
   - `[Email <String>]`: Email address of the user.
 
-REPORT `<IMicrosoftGraphSimulationReport>`: simulationReport
+`REPORT <IMicrosoftGraphSimulationReport>`: simulationReport
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Overview <IMicrosoftGraphSimulationReportOverview>]`: simulationReportOverview
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

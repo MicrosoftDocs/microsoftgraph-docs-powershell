@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/new-mgexternalconnection
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnection
 schema: 2.0.0
-ms.prod: search
 ---
 
 # New-MgExternalConnection
@@ -26,7 +25,7 @@ New-MgExternalConnection [-AdditionalProperties <Hashtable>]
 
 ### Create
 ```
-New-MgExternalConnection -BodyParameter <IMicrosoftGraphExternalConnectorsExternalConnection1> [-WhatIf]
+New-MgExternalConnection -BodyParameter <IMicrosoftGraphExternalConnectorsExternalConnection> [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -35,7 +34,7 @@ Create a new externalConnection object.
 
 ## EXAMPLES
 
-### Example 1: Using the New-MgExternalConnection Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Search
 $params = @{
@@ -45,9 +44,6 @@ $params = @{
 }
 New-MgExternalConnection -BodyParameter $params
 ```
-
-This example shows how to use the New-MgExternalConnection Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -68,10 +64,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 externalConnection
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExternalConnectorsExternalConnection1
+Type: IMicrosoftGraphExternalConnectorsExternalConnection
 Parameter Sets: Create
 Aliases:
 
@@ -84,7 +80,7 @@ Accept wildcard characters: False
 
 ### -Configuration
 configuration
-To construct, please use Get-Help -Online and see NOTES section for CONFIGURATION properties and create a hash table.
+To construct, see NOTES section for CONFIGURATION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphExternalConnectorsConfiguration
@@ -116,7 +112,7 @@ Accept wildcard characters: False
 
 ### -Groups
 .
-To construct, please use Get-Help -Online and see NOTES section for GROUPS properties and create a hash table.
+To construct, see NOTES section for GROUPS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphExternalConnectorsExternalGroup[]
@@ -148,7 +144,7 @@ Accept wildcard characters: False
 
 ### -Items
 .
-To construct, please use Get-Help -Online and see NOTES section for ITEMS properties and create a hash table.
+To construct, see NOTES section for ITEMS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphExternalConnectorsExternalItem[]
@@ -181,7 +177,7 @@ Accept wildcard characters: False
 
 ### -Operations
 .
-To construct, please use Get-Help -Online and see NOTES section for OPERATIONS properties and create a hash table.
+To construct, see NOTES section for OPERATIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphExternalConnectorsConnectionOperation[]
@@ -197,7 +193,7 @@ Accept wildcard characters: False
 
 ### -Schema
 schema
-To construct, please use Get-Help -Online and see NOTES section for SCHEMA properties and create a hash table.
+To construct, see NOTES section for SCHEMA properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphExternalConnectorsSchema
@@ -262,10 +258,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalConnection1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalConnection
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalConnection1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalConnection
 ## NOTES
 
 ALIASES
@@ -275,9 +271,18 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternalConnection1>`: externalConnection
+`ACTIVITYSETTINGS <IMicrosoftGraphExternalConnectorsActivitySettings>`: activitySettings
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[UrlToItemResolvers <IMicrosoftGraphExternalConnectorsUrlToItemResolverBase[]>]`: Specifies configurations to identify an externalItem based on a shared URL.
+    - `[Priority <Int32?>]`: The priority which defines the sequence in which the urlToItemResolverBase instances are evaluated.
+
+`BODYPARAMETER <IMicrosoftGraphExternalConnectorsExternalConnection>`: externalConnection
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[ActivitySettings <IMicrosoftGraphExternalConnectorsActivitySettings>]`: activitySettings
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[UrlToItemResolvers <IMicrosoftGraphExternalConnectorsUrlToItemResolverBase[]>]`: Specifies configurations to identify an externalItem based on a shared URL.
+      - `[Priority <Int32?>]`: The priority which defines the sequence in which the urlToItemResolverBase instances are evaluated.
   - `[Configuration <IMicrosoftGraphExternalConnectorsConfiguration>]`: configuration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AuthorizedAppIds <String[]>]`: A collection of application IDs for registered Azure Active Directory apps that are allowed to manage the externalConnection and to index content in the externalConnection.
@@ -333,13 +338,25 @@ BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternalConnection1>`: external
       - `[Labels <String[]>]`: Specifies one or more well-known tags added against a property. Labels help Microsoft Search understand the semantics of the data in the connection. Adding appropriate labels would result in an enhanced search experience (e.g. better relevance). The possible values are: title, url, createdBy, lastModifiedBy, authors, createdDateTime, lastModifiedDateTime, fileName, fileExtension, unknownFutureValue. Optional.
       - `[Name <String>]`: The name of the property. Maximum 32 characters. Only alphanumeric characters allowed. For example, each string may not contain control characters, whitespace, or any of the following: :, ;, ,, (, ), [, ], {, }, %, $, +, !, *, =, &, ?, @, #, /, ~, ', ', <, >, `, ^.  Required.
       - `[Type <String>]`: propertyType
+  - `[SearchSettings <IMicrosoftGraphExternalConnectorsSearchSettings>]`: searchSettings
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[SearchResultTemplates <IMicrosoftGraphExternalConnectorsDisplayTemplate[]>]`: Enables the developer to define the appearance of the content and configure conditions that dictate when the template should be displayed. Maximum of 2 search result templates per connection.
+      - `[Id <String>]`: The text identifier for the display template; for example, contosoTickets. Maximum 16 characters. Only alphanumeric characters allowed.
+      - `[Layout <IMicrosoftGraphJson>]`: Json
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Priority <Int32?>]`: Defines the priority of a display template. A display template with priority 1 is evaluated before a template with priority 4. Gaps in priority values are supported. Must be positive value.
+      - `[Rules <IMicrosoftGraphExternalConnectorsPropertyRule[]>]`: Specifies additional rules for selecting this display template based on the item schema. Optional.
+        - `[Operation <String>]`: ruleOperation
+        - `[Property <String>]`: The property from the externalItem schema. Required.
+        - `[Values <String[]>]`: A collection with one or many strings. The specified string(s) will be matched with the specified property using the specified operation. Required.
+        - `[ValuesJoinedBy <String>]`: binaryOperator
   - `[State <String>]`: connectionState
 
-CONFIGURATION `<IMicrosoftGraphExternalConnectorsConfiguration>`: configuration
+`CONFIGURATION <IMicrosoftGraphExternalConnectorsConfiguration>`: configuration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AuthorizedAppIds <String[]>]`: A collection of application IDs for registered Azure Active Directory apps that are allowed to manage the externalConnection and to index content in the externalConnection.
 
-GROUPS <IMicrosoftGraphExternalConnectorsExternalGroup\[]>: .
+`GROUPS <IMicrosoftGraphExternalConnectorsExternalGroup[]>`: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Description <String>]`: The description of the external group. Optional.
   - `[DisplayName <String>]`: The friendly name of the external group. Optional.
@@ -347,7 +364,7 @@ GROUPS <IMicrosoftGraphExternalConnectorsExternalGroup\[]>: .
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[Type <String>]`: identityType
 
-ITEMS <IMicrosoftGraphExternalConnectorsExternalItem\[]>: .
+`ITEMS <IMicrosoftGraphExternalConnectorsExternalItem[]>`: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Acl <IMicrosoftGraphExternalConnectorsAcl[]>]`: An array of access control entries. Each entry specifies the access granted to a user or group. Required.
     - `[AccessType <String>]`: accessType
@@ -360,7 +377,7 @@ ITEMS <IMicrosoftGraphExternalConnectorsExternalItem\[]>: .
   - `[Properties <IMicrosoftGraphExternalConnectorsProperties>]`: properties
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
-OPERATIONS <IMicrosoftGraphExternalConnectorsConnectionOperation\[]>: .
+`OPERATIONS <IMicrosoftGraphExternalConnectorsConnectionOperation[]>`: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Error <IMicrosoftGraphPublicError>]`: publicError
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -379,7 +396,7 @@ OPERATIONS <IMicrosoftGraphExternalConnectorsConnectionOperation\[]>: .
     - `[Target <String>]`: The target of the error.
   - `[Status <String>]`: connectionOperationStatus
 
-SCHEMA `<IMicrosoftGraphExternalConnectorsSchema>`: schema
+`SCHEMA <IMicrosoftGraphExternalConnectorsSchema>`: schema
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[BaseType <String>]`: Must be set to microsoft.graph.externalConnector.externalItem. Required.
@@ -392,6 +409,19 @@ SCHEMA `<IMicrosoftGraphExternalConnectorsSchema>`: schema
     - `[Labels <String[]>]`: Specifies one or more well-known tags added against a property. Labels help Microsoft Search understand the semantics of the data in the connection. Adding appropriate labels would result in an enhanced search experience (e.g. better relevance). The possible values are: title, url, createdBy, lastModifiedBy, authors, createdDateTime, lastModifiedDateTime, fileName, fileExtension, unknownFutureValue. Optional.
     - `[Name <String>]`: The name of the property. Maximum 32 characters. Only alphanumeric characters allowed. For example, each string may not contain control characters, whitespace, or any of the following: :, ;, ,, (, ), [, ], {, }, %, $, +, !, *, =, &, ?, @, #, /, ~, ', ', <, >, `, ^.  Required.
     - `[Type <String>]`: propertyType
+
+`SEARCHSETTINGS <IMicrosoftGraphExternalConnectorsSearchSettings>`: searchSettings
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[SearchResultTemplates <IMicrosoftGraphExternalConnectorsDisplayTemplate[]>]`: Enables the developer to define the appearance of the content and configure conditions that dictate when the template should be displayed. Maximum of 2 search result templates per connection.
+    - `[Id <String>]`: The text identifier for the display template; for example, contosoTickets. Maximum 16 characters. Only alphanumeric characters allowed.
+    - `[Layout <IMicrosoftGraphJson>]`: Json
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Priority <Int32?>]`: Defines the priority of a display template. A display template with priority 1 is evaluated before a template with priority 4. Gaps in priority values are supported. Must be positive value.
+    - `[Rules <IMicrosoftGraphExternalConnectorsPropertyRule[]>]`: Specifies additional rules for selecting this display template based on the item schema. Optional.
+      - `[Operation <String>]`: ruleOperation
+      - `[Property <String>]`: The property from the externalItem schema. Required.
+      - `[Values <String[]>]`: A collection with one or many strings. The specified string(s) will be matched with the specified property using the specified operation. Required.
+      - `[ValuesJoinedBy <String>]`: binaryOperator
 
 ## RELATED LINKS
 

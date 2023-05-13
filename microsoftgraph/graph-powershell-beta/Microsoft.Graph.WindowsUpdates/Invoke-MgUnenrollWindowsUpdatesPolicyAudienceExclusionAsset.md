@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.WindowsUpdates-help.xml
-Module Name: Microsoft.Graph.WindowsUpdates
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/invoke-mgunenrollwindowsupdatespolicyaudienceexclusionasset
+﻿---
+external help file: Microsoft.Graph.Beta.WindowsUpdates-help.xml
+Module Name: Microsoft.Graph.Beta.WindowsUpdates
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/invoke-mgbetaunenrollwindowsupdatespolicyaudienceexclusionasset
 schema: 2.0.0
 ---
 
-# Invoke-MgUnenrollWindowsUpdatesPolicyAudienceExclusionAsset
+# Invoke-MgBetaUnenrollWindowsUpdatesPolicyAudienceExclusionAsset
 
 ## SYNOPSIS
 Invoke action unenrollAssets
@@ -14,28 +14,28 @@ Invoke action unenrollAssets
 
 ### UnenrollExpanded (Default)
 ```
-Invoke-MgUnenrollWindowsUpdatesPolicyAudienceExclusionAsset -UpdatePolicyId <String>
+Invoke-MgBetaUnenrollWindowsUpdatesPolicyAudienceExclusionAsset -UpdatePolicyId <String>
  [-AdditionalProperties <Hashtable>] [-Assets <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>]
  [-UpdateCategory <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Unenroll
 ```
-Invoke-MgUnenrollWindowsUpdatesPolicyAudienceExclusionAsset -UpdatePolicyId <String>
- -BodyParameter <IPaths14C25SeAdminWindowsUpdatesUpdatepoliciesUpdatepolicyIdAudienceExclusionsMicrosoftGraphWindowsupdatesUnenrollassetsPostRequestbodyContentApplicationJsonSchema>
+Invoke-MgBetaUnenrollWindowsUpdatesPolicyAudienceExclusionAsset -UpdatePolicyId <String>
+ -Body <IPaths14C25SeAdminWindowsUpdatesUpdatepoliciesUpdatepolicyIdAudienceExclusionsMicrosoftGraphWindowsupdatesUnenrollassetsPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UnenrollViaIdentityExpanded
 ```
-Invoke-MgUnenrollWindowsUpdatesPolicyAudienceExclusionAsset -InputObject <IWindowsUpdatesIdentity>
+Invoke-MgBetaUnenrollWindowsUpdatesPolicyAudienceExclusionAsset -InputObject <IWindowsUpdatesIdentity>
  [-AdditionalProperties <Hashtable>] [-Assets <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>]
  [-UpdateCategory <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UnenrollViaIdentity
 ```
-Invoke-MgUnenrollWindowsUpdatesPolicyAudienceExclusionAsset -InputObject <IWindowsUpdatesIdentity>
+Invoke-MgBetaUnenrollWindowsUpdatesPolicyAudienceExclusionAsset -InputObject <IWindowsUpdatesIdentity>
  -BodyParameter <IPaths14C25SeAdminWindowsUpdatesUpdatepoliciesUpdatepolicyIdAudienceExclusionsMicrosoftGraphWindowsupdatesUnenrollassetsPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -45,12 +45,15 @@ Invoke action unenrollAssets
 
 ## EXAMPLES
 
-### Example 1
+### EXAMPLE 1
 ```powershell
-PS C:\> {{ Add example code here }}
+{{ Add code here }}
 ```
 
-{{ Add example description here }}
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -71,7 +74,7 @@ Accept wildcard characters: False
 
 ### -Assets
 .
-To construct, please use Get-Help -Online and see NOTES section for ASSETS properties and create a hash table.
+To construct, see NOTES section for ASSETS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphWindowsUpdatesUpdatableAsset[]
@@ -85,13 +88,29 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -BodyParameter
+### -Body
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
 Type: IPaths14C25SeAdminWindowsUpdatesUpdatepoliciesUpdatepolicyIdAudienceExclusionsMicrosoftGraphWindowsupdatesUnenrollassetsPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Unenroll, UnenrollViaIdentity
+Parameter Sets: Unenroll
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -BodyParameter
+.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+```yaml
+Type: IPaths14C25SeAdminWindowsUpdatesUpdatepoliciesUpdatepolicyIdAudienceExclusionsMicrosoftGraphWindowsupdatesUnenrollassetsPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: UnenrollViaIdentity
 Aliases:
 
 Required: True
@@ -103,7 +122,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IWindowsUpdatesIdentity
@@ -127,7 +146,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -198,15 +217,43 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths14C25SeAdminWindowsUpdatesUpdatepoliciesUpdatepolicyIdAudienceExclusionsMicrosoftGraphWindowsupdatesUnenrollassetsPostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.IWindowsUpdatesIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths14C25SeAdminWindowsUpdatesUpdatepoliciesUpdatepolicyIdAudienceExclusionsMicrosoftGraphWindowsupdatesUnenrollassetsPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IWindowsUpdatesIdentity
 ## OUTPUTS
 
 ### System.Boolean
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+Invoke-MgBetaUnenrollWuPolicyAudienceExclusionAsset
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+`ASSETS <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>`: .
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
+
+`BODY <IPaths14C25SeAdminWindowsUpdatesUpdatepoliciesUpdatepolicyIdAudienceExclusionsMicrosoftGraphWindowsupdatesUnenrollassetsPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Assets <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>]`: 
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+  - `[UpdateCategory <String>]`: updateCategory
+
+`BODYPARAMETER <IPaths14C25SeAdminWindowsUpdatesUpdatepoliciesUpdatepolicyIdAudienceExclusionsMicrosoftGraphWindowsupdatesUnenrollassetsPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Assets <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>]`: 
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+  - `[UpdateCategory <String>]`: updateCategory
+
+`INPUTOBJECT <IWindowsUpdatesIdentity>`: Identity Parameter
+  - `[CatalogEntryId <String>]`: The unique identifier of catalogEntry
+  - `[ComplianceChangeId <String>]`: The unique identifier of complianceChange
+  - `[DeploymentId <String>]`: The unique identifier of deployment
+  - `[ResourceConnectionId <String>]`: The unique identifier of resourceConnection
+  - `[UpdatableAssetId <String>]`: The unique identifier of updatableAsset
+  - `[UpdatePolicyId <String>]`: The unique identifier of updatePolicy
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/invoke-mgunenrollwindowsupdatespolicyaudienceexclusionasset](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/invoke-mgunenrollwindowsupdatespolicyaudienceexclusionasset)
-

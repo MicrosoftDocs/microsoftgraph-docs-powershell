@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Administration
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementndeconnector
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementndeconnector
 schema: 2.0.0
 ---
 
-# New-MgDeviceManagementNdeConnector
+# New-MgBetaDeviceManagementNdeConnector
 
 ## SYNOPSIS
 Create new navigation property to ndesConnectors for deviceManagement
@@ -14,7 +14,7 @@ Create new navigation property to ndesConnectors for deviceManagement
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementNdeConnector [-AdditionalProperties <Hashtable>] [-ConnectorVersion <String>]
+New-MgBetaDeviceManagementNdeConnector [-AdditionalProperties <Hashtable>] [-ConnectorVersion <String>]
  [-DisplayName <String>] [-EnrolledDateTime <DateTime>] [-Id <String>] [-LastConnectionDateTime <DateTime>]
  [-MachineName <String>] [-RoleScopeTagIds <String[]>] [-State <NdesConnectorState>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -22,7 +22,7 @@ New-MgDeviceManagementNdeConnector [-AdditionalProperties <Hashtable>] [-Connect
 
 ### Create
 ```
-New-MgDeviceManagementNdeConnector -BodyParameter <IMicrosoftGraphNdesConnector> [-WhatIf] [-Confirm]
+New-MgBetaDeviceManagementNdeConnector -BodyParameter <IMicrosoftGraphNdesConnector> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -30,6 +30,20 @@ New-MgDeviceManagementNdeConnector -BodyParameter <IMicrosoftGraphNdesConnector>
 Create new navigation property to ndesConnectors for deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -50,7 +64,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Entity which represents an OnPrem Ndes connector.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphNdesConnector
@@ -110,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -221,10 +235,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphNdesConnector
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphNdesConnector
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphNdesConnector
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphNdesConnector
 ## NOTES
 
 ALIASES
@@ -234,9 +248,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphNdesConnector>`: Entity which represents an OnPrem Ndes connector.
+`BODYPARAMETER <IMicrosoftGraphNdesConnector>`: Entity which represents an OnPrem Ndes connector.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ConnectorVersion <String>]`: The build version of the Ndes Connector.
   - `[DisplayName <String>]`: The friendly name of the Ndes Connector.
   - `[EnrolledDateTime <DateTime?>]`: Timestamp when on-prem certificate connector was enrolled in Intune.

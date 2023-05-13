@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.WindowsUpdates-help.xml
-Module Name: Microsoft.Graph.WindowsUpdates
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/new-mgwindowsupdatespolicyaudienceexclusion
+﻿---
+external help file: Microsoft.Graph.Beta.WindowsUpdates-help.xml
+Module Name: Microsoft.Graph.Beta.WindowsUpdates
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/new-mgbetawindowsupdatespolicyaudienceexclusion
 schema: 2.0.0
 ---
 
-# New-MgWindowsUpdatesPolicyAudienceExclusion
+# New-MgBetaWindowsUpdatesPolicyAudienceExclusion
 
 ## SYNOPSIS
 Create new navigation property to exclusions for admin
@@ -14,26 +14,26 @@ Create new navigation property to exclusions for admin
 
 ### CreateExpanded (Default)
 ```
-New-MgWindowsUpdatesPolicyAudienceExclusion -UpdatePolicyId <String> [-AdditionalProperties <Hashtable>]
+New-MgBetaWindowsUpdatesPolicyAudienceExclusion -UpdatePolicyId <String> [-AdditionalProperties <Hashtable>]
  [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgWindowsUpdatesPolicyAudienceExclusion -UpdatePolicyId <String> -BodyParameter <Hashtable> [-WhatIf]
+New-MgBetaWindowsUpdatesPolicyAudienceExclusion -UpdatePolicyId <String> -BodyParameter <Hashtable> [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgWindowsUpdatesPolicyAudienceExclusion -InputObject <IWindowsUpdatesIdentity>
+New-MgBetaWindowsUpdatesPolicyAudienceExclusion -InputObject <IWindowsUpdatesIdentity>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgWindowsUpdatesPolicyAudienceExclusion -InputObject <IWindowsUpdatesIdentity> -BodyParameter <Hashtable>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaWindowsUpdatesPolicyAudienceExclusion -InputObject <IWindowsUpdatesIdentity>
+ -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -41,12 +41,15 @@ Create new navigation property to exclusions for admin
 
 ## EXAMPLES
 
-### Example 1
+### EXAMPLE 1
 ```powershell
-PS C:\> {{ Add example code here }}
+{{ Add code here }}
 ```
 
-{{ Add example description here }}
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IWindowsUpdatesIdentity
@@ -163,15 +166,28 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IWindowsUpdatesIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IWindowsUpdatesIdentity
 ### System.Collections.Hashtable
 ## OUTPUTS
 
 ### System.String
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+New-MgBetaWuPolicyAudienceExclusion
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+`INPUTOBJECT <IWindowsUpdatesIdentity>`: Identity Parameter
+  - `[CatalogEntryId <String>]`: The unique identifier of catalogEntry
+  - `[ComplianceChangeId <String>]`: The unique identifier of complianceChange
+  - `[DeploymentId <String>]`: The unique identifier of deployment
+  - `[ResourceConnectionId <String>]`: The unique identifier of resourceConnection
+  - `[UpdatableAssetId <String>]`: The unique identifier of updatableAsset
+  - `[UpdatePolicyId <String>]`: The unique identifier of updatePolicy
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/new-mgwindowsupdatespolicyaudienceexclusion](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/new-mgwindowsupdatespolicyaudienceexclusion)
-

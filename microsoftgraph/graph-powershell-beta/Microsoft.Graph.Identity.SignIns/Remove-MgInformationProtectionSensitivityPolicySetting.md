@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/remove-mginformationprotectionsensitivitypolicysetting
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetainformationprotectionsensitivitypolicysetting
 schema: 2.0.0
 ---
 
-# Remove-MgInformationProtectionSensitivityPolicySetting
+# Remove-MgBetaInformationProtectionSensitivityPolicySetting
 
 ## SYNOPSIS
 Delete navigation property sensitivityPolicySettings for informationProtection
@@ -13,7 +13,7 @@ Delete navigation property sensitivityPolicySettings for informationProtection
 ## SYNTAX
 
 ```
-Remove-MgInformationProtectionSensitivityPolicySetting [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+Remove-MgBetaInformationProtectionSensitivityPolicySetting [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -21,6 +21,20 @@ Remove-MgInformationProtectionSensitivityPolicySetting [-IfMatch <String>] [-Pas
 Delete navigation property sensitivityPolicySettings for informationProtection
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 

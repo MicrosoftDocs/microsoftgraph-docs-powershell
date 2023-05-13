@@ -1,12 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgpolicycrosstenantaccesspolicy
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicycrosstenantaccesspolicy
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
-# Get-MgPolicyCrossTenantAccessPolicy
+# Get-MgBetaPolicyCrossTenantAccessPolicy
 
 ## SYNOPSIS
 Read the properties and relationships of a crossTenantAccessPolicy object.
@@ -14,7 +13,8 @@ Read the properties and relationships of a crossTenantAccessPolicy object.
 ## SYNTAX
 
 ```
-Get-MgPolicyCrossTenantAccessPolicy [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaPolicyCrossTenantAccessPolicy [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -22,14 +22,11 @@ Read the properties and relationships of a crossTenantAccessPolicy object.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgPolicyCrossTenantAccessPolicy Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
-Get-MgPolicyCrossTenantAccessPolicy
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+Get-MgBetaPolicyCrossTenantAccessPolicy
 ```
-
-This example shows how to use the Get-MgPolicyCrossTenantAccessPolicy Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -70,7 +67,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCrossTenantAccessPolicy1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCrossTenantAccessPolicy
 ## NOTES
 
 ALIASES

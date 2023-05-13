@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Administration
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementndeconnector
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementndeconnector
 schema: 2.0.0
 ---
 
-# Update-MgDeviceManagementNdeConnector
+# Update-MgBetaDeviceManagementNdeConnector
 
 ## SYNOPSIS
 Update the navigation property ndesConnectors in deviceManagement
@@ -14,37 +14,50 @@ Update the navigation property ndesConnectors in deviceManagement
 
 ### UpdateExpanded (Default)
 ```
-Update-MgDeviceManagementNdeConnector -NdesConnectorId <String> [-AdditionalProperties <Hashtable>]
+Update-MgBetaDeviceManagementNdeConnector -NdesConnectorId <String> [-AdditionalProperties <Hashtable>]
  [-ConnectorVersion <String>] [-DisplayName <String>] [-EnrolledDateTime <DateTime>] [-Id <String>]
  [-LastConnectionDateTime <DateTime>] [-MachineName <String>] [-RoleScopeTagIds <String[]>]
- [-State <NdesConnectorState>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-State <NdesConnectorState>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgDeviceManagementNdeConnector -NdesConnectorId <String> -BodyParameter <IMicrosoftGraphNdesConnector>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaDeviceManagementNdeConnector -NdesConnectorId <String>
+ -BodyParameter <IMicrosoftGraphNdesConnector> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgDeviceManagementNdeConnector -InputObject <IDeviceManagementAdministrationIdentity>
+Update-MgBetaDeviceManagementNdeConnector -InputObject <IDeviceManagementAdministrationIdentity>
  [-AdditionalProperties <Hashtable>] [-ConnectorVersion <String>] [-DisplayName <String>]
  [-EnrolledDateTime <DateTime>] [-Id <String>] [-LastConnectionDateTime <DateTime>] [-MachineName <String>]
- [-RoleScopeTagIds <String[]>] [-State <NdesConnectorState>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-RoleScopeTagIds <String[]>] [-State <NdesConnectorState>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgDeviceManagementNdeConnector -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphNdesConnector> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaDeviceManagementNdeConnector -InputObject <IDeviceManagementAdministrationIdentity>
+ -BodyParameter <IMicrosoftGraphNdesConnector> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property ndesConnectors in deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -65,7 +78,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Entity which represents an OnPrem Ndes connector.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphNdesConnector
@@ -125,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -142,7 +155,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementAdministrationIdentity
@@ -195,21 +208,6 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -282,11 +280,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphNdesConnector
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementAdministrationIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphNdesConnector
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphNdesConnector
 ## NOTES
 
 ALIASES
@@ -296,9 +294,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphNdesConnector>`: Entity which represents an OnPrem Ndes connector.
+`BODYPARAMETER <IMicrosoftGraphNdesConnector>`: Entity which represents an OnPrem Ndes connector.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ConnectorVersion <String>]`: The build version of the Ndes Connector.
   - `[DisplayName <String>]`: The friendly name of the Ndes Connector.
   - `[EnrolledDateTime <DateTime?>]`: Timestamp when on-prem certificate connector was enrolled in Intune.
@@ -307,7 +305,7 @@ BODYPARAMETER `<IMicrosoftGraphNdesConnector>`: Entity which represents an OnPre
   - `[RoleScopeTagIds <String[]>]`: List of Scope Tags for this Entity instance.
   - `[State <NdesConnectorState?>]`: The current status of the Ndes Connector.
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[AuditEventId <String>]`: The unique identifier of auditEvent
   - `[CartToClassAssociationId <String>]`: The unique identifier of cartToClassAssociation
   - `[CloudPcAuditEventId <String>]`: The unique identifier of cloudPcAuditEvent

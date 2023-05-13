@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryfeaturerolloutpolicyapplytobyref
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryfeaturerolloutpolicyapplytobyref
 schema: 2.0.0
 ---
 
-# Get-MgDirectoryFeatureRolloutPolicyApplyToByRef
+# Get-MgBetaDirectoryFeatureRolloutPolicyApplyToByRef
 
 ## SYNOPSIS
 Nullable.
@@ -14,7 +14,7 @@ Specifies a list of directoryObjects that feature is enabled for.
 ## SYNTAX
 
 ```
-Get-MgDirectoryFeatureRolloutPolicyApplyToByRef -FeatureRolloutPolicyId <String> [-Filter <String>]
+Get-MgBetaDirectoryFeatureRolloutPolicyApplyToByRef -FeatureRolloutPolicyId <String> [-Filter <String>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
  [-CountVariable <String>] [<CommonParameters>]
 ```
@@ -24,6 +24,20 @@ Nullable.
 Specifies a list of directoryObjects that feature is enabled for.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 

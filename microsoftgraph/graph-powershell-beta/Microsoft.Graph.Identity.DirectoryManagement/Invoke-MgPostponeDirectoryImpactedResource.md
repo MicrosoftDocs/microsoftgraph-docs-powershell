@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/invoke-mgpostponedirectoryimpactedresource
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetapostponedirectoryimpactedresource
 schema: 2.0.0
 ---
 
-# Invoke-MgPostponeDirectoryImpactedResource
+# Invoke-MgBetaPostponeDirectoryImpactedResource
 
 ## SYNOPSIS
 Invoke action postpone
@@ -14,27 +14,27 @@ Invoke action postpone
 
 ### PostponeExpanded (Default)
 ```
-Invoke-MgPostponeDirectoryImpactedResource -ImpactedResourceId <String> [-AdditionalProperties <Hashtable>]
+Invoke-MgBetaPostponeDirectoryImpactedResource -ImpactedResourceId <String> [-AdditionalProperties <Hashtable>]
  [-PostponeUntilDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Postpone
 ```
-Invoke-MgPostponeDirectoryImpactedResource -ImpactedResourceId <String>
+Invoke-MgBetaPostponeDirectoryImpactedResource -ImpactedResourceId <String>
  -BodyParameter <IPaths190Xwu6DirectoryImpactedresourcesImpactedresourceIdMicrosoftGraphPostponePostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### PostponeViaIdentityExpanded
 ```
-Invoke-MgPostponeDirectoryImpactedResource -InputObject <IIdentityDirectoryManagementIdentity>
+Invoke-MgBetaPostponeDirectoryImpactedResource -InputObject <IIdentityDirectoryManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-PostponeUntilDateTime <DateTime>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### PostponeViaIdentity
 ```
-Invoke-MgPostponeDirectoryImpactedResource -InputObject <IIdentityDirectoryManagementIdentity>
+Invoke-MgBetaPostponeDirectoryImpactedResource -InputObject <IIdentityDirectoryManagementIdentity>
  -BodyParameter <IPaths190Xwu6DirectoryImpactedresourcesImpactedresourceIdMicrosoftGraphPostponePostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -43,6 +43,20 @@ Invoke-MgPostponeDirectoryImpactedResource -InputObject <IIdentityDirectoryManag
 Invoke action postpone
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -63,7 +77,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths190Xwu6DirectoryImpactedresourcesImpactedresourceIdMicrosoftGraphPostponePostRequestbodyContentApplicationJsonSchema
@@ -94,7 +108,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IIdentityDirectoryManagementIdentity
@@ -159,11 +173,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths190Xwu6DirectoryImpactedresourcesImpactedresourceIdMicrosoftGraphPostponePostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths190Xwu6DirectoryImpactedresourcesImpactedresourceIdMicrosoftGraphPostponePostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphImpactedResource
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphImpactedResource
 ## NOTES
 
 ALIASES
@@ -173,11 +187,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths190Xwu6DirectoryImpactedresourcesImpactedresourceIdMicrosoftGraphPostponePostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths190Xwu6DirectoryImpactedresourcesImpactedresourceIdMicrosoftGraphPostponePostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[PostponeUntilDateTime <DateTime?>]`: 
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet

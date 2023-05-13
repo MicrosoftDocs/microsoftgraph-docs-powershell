@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Bookings-help.xml
-Module Name: Microsoft.Graph.Bookings
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.bookings/update-mgbusinessscenarioplannertaskconfiguration
+﻿---
+external help file: Microsoft.Graph.Beta.Bookings-help.xml
+Module Name: Microsoft.Graph.Beta.Bookings
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabusinessscenarioplannertaskconfiguration
 schema: 2.0.0
 ---
 
-# Update-MgBusinessScenarioPlannerTaskConfiguration
+# Update-MgBetaBusinessScenarioPlannerTaskConfiguration
 
 ## SYNOPSIS
 Update the properties of a plannerTaskConfiguration object.
@@ -14,34 +14,44 @@ Update the properties of a plannerTaskConfiguration object.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBusinessScenarioPlannerTaskConfiguration -BusinessScenarioId <String>
- [-AdditionalProperties <Hashtable>] [-EditPolicy <IMicrosoftGraphPlannerTaskPolicy>] [-Id <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaBusinessScenarioPlannerTaskConfiguration -BusinessScenarioId <String>
+ [-AdditionalProperties <Hashtable>] [-EditPolicy <IMicrosoftGraphPlannerTaskPolicy>] [-Id <String>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBusinessScenarioPlannerTaskConfiguration -BusinessScenarioId <String>
- -BodyParameter <IMicrosoftGraphPlannerTaskConfiguration> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaBusinessScenarioPlannerTaskConfiguration -BusinessScenarioId <String>
+ -BodyParameter <IMicrosoftGraphPlannerTaskConfiguration> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBusinessScenarioPlannerTaskConfiguration -InputObject <IBookingsIdentity>
- [-AdditionalProperties <Hashtable>] [-EditPolicy <IMicrosoftGraphPlannerTaskPolicy>] [-Id <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaBusinessScenarioPlannerTaskConfiguration -InputObject <IBookingsIdentity>
+ [-AdditionalProperties <Hashtable>] [-EditPolicy <IMicrosoftGraphPlannerTaskPolicy>] [-Id <String>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgBusinessScenarioPlannerTaskConfiguration -InputObject <IBookingsIdentity>
- -BodyParameter <IMicrosoftGraphPlannerTaskConfiguration> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaBusinessScenarioPlannerTaskConfiguration -InputObject <IBookingsIdentity>
+ -BodyParameter <IMicrosoftGraphPlannerTaskConfiguration> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of a plannerTaskConfiguration object.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -62,7 +72,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 plannerTaskConfiguration
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPlannerTaskConfiguration
@@ -93,7 +103,7 @@ Accept wildcard characters: False
 
 ### -EditPolicy
 plannerTaskPolicy
-To construct, please use Get-Help -Online and see NOTES section for EDITPOLICY properties and create a hash table.
+To construct, see NOTES section for EDITPOLICY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPlannerTaskPolicy
@@ -108,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -125,7 +135,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IBookingsIdentity
@@ -136,21 +146,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -190,11 +185,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IBookingsIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerTaskConfiguration
+### Microsoft.Graph.Beta.PowerShell.Models.IBookingsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerTaskConfiguration
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerTaskConfiguration
 ## NOTES
 
 ALIASES
@@ -204,9 +199,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPlannerTaskConfiguration>`: plannerTaskConfiguration
+`BODYPARAMETER <IMicrosoftGraphPlannerTaskConfiguration>`: plannerTaskConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[EditPolicy <IMicrosoftGraphPlannerTaskPolicy>]`: plannerTaskPolicy
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Rules <IMicrosoftGraphPlannerTaskRoleBasedRule[]>]`: The rules that should be enforced on the tasks when they are being changed outside of the scenario, based on the role of the caller.
@@ -237,7 +232,7 @@ BODYPARAMETER `<IMicrosoftGraphPlannerTaskConfiguration>`: plannerTaskConfigurat
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[RoleKind <String>]`: plannerUserRoleKind
 
-EDITPOLICY `<IMicrosoftGraphPlannerTaskPolicy>`: plannerTaskPolicy
+`EDITPOLICY <IMicrosoftGraphPlannerTaskPolicy>`: plannerTaskPolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Rules <IMicrosoftGraphPlannerTaskRoleBasedRule[]>]`: The rules that should be enforced on the tasks when they are being changed outside of the scenario, based on the role of the caller.
     - `[DefaultRule <String>]`: Default rule that applies when a property or action-specific rule is not provided. Possible values are: Allow, Block
@@ -267,15 +262,13 @@ EDITPOLICY `<IMicrosoftGraphPlannerTaskPolicy>`: plannerTaskPolicy
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[RoleKind <String>]`: plannerUserRoleKind
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+`INPUTOBJECT <IBookingsIdentity>`: Identity Parameter
   - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
   - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness
   - `[BookingCurrencyId <String>]`: The unique identifier of bookingCurrency
   - `[BookingCustomQuestionId <String>]`: The unique identifier of bookingCustomQuestion
-  - `[BookingCustomerBaseId <String>]`: The unique identifier of bookingCustomerBase
   - `[BookingCustomerId <String>]`: The unique identifier of bookingCustomer
   - `[BookingServiceId <String>]`: The unique identifier of bookingService
-  - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
   - `[BookingStaffMemberId <String>]`: The unique identifier of bookingStaffMember
   - `[BusinessScenarioId <String>]`: The unique identifier of businessScenario
   - `[BusinessScenarioTaskId <String>]`: The unique identifier of businessScenarioTask

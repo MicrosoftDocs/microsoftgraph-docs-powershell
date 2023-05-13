@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.Governance-help.xml
-Module Name: Microsoft.Graph.Identity.Governance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/invoke-mgmyprivilegedroleassignment
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.Governance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetamyprivilegedroleassignment
 schema: 2.0.0
 ---
 
-# Invoke-MgMyPrivilegedRoleAssignment
+# Invoke-MgBetaMyPrivilegedRoleAssignment
 
 ## SYNOPSIS
 Invoke function my
@@ -13,7 +13,7 @@ Invoke function my
 ## SYNTAX
 
 ```
-Invoke-MgMyPrivilegedRoleAssignment [-Count] [-Filter <String>] [-Property <String[]>] [-Search <String>]
+Invoke-MgBetaMyPrivilegedRoleAssignment [-Count] [-Filter <String>] [-Property <String[]>] [-Search <String>]
  [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
 ```
 
@@ -22,14 +22,11 @@ Invoke function my
 
 ## EXAMPLES
 
-### Example 1: Using the Invoke-MgMyPrivilegedRoleAssignment Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Identity.Governance
-Invoke-MgMyPrivilegedRoleAssignment
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+Invoke-MgBetaMyPrivilegedRoleAssignment
 ```
-
-This example shows how to use the Invoke-MgMyPrivilegedRoleAssignment Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -145,7 +142,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrivilegedRoleAssignment
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedRoleAssignment
 ## NOTES
 
 ALIASES

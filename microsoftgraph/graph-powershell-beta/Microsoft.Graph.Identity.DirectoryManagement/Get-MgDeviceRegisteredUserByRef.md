@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdeviceregistereduserbyref
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadeviceregistereduserbyref
 schema: 2.0.0
 ---
 
-# Get-MgDeviceRegisteredUserByRef
+# Get-MgBetaDeviceRegisteredUserByRef
 
 ## SYNOPSIS
 Collection of registered users of the device.
@@ -17,7 +17,7 @@ Supports $expand.
 ## SYNTAX
 
 ```
-Get-MgDeviceRegisteredUserByRef -DeviceId <String> [-Filter <String>] [-Search <String>] [-Skip <Int32>]
+Get-MgBetaDeviceRegisteredUserByRef -DeviceId <String> [-Filter <String>] [-Search <String>] [-Skip <Int32>]
  [-Sort <String[]>] [-Top <Int32>] [-ConsistencyLevel <String>] [-PageSize <Int32>] [-All]
  [-CountVariable <String>] [<CommonParameters>]
 ```
@@ -30,6 +30,16 @@ Nullable.
 Supports $expand.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 

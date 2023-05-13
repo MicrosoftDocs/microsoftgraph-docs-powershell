@@ -1,41 +1,41 @@
----
-external help file: Microsoft.Graph.Files-help.xml
-Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/get-mgsharelistitemactivitybyinterval
+﻿---
+external help file: Microsoft.Graph.Beta.Files-help.xml
+Module Name: Microsoft.Graph.Beta.Files
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharelistitemactivitybyinterval
 schema: 2.0.0
 ---
 
-# Get-MgShareListItemActivityByInterval
+# Get-MgBetaShareListItemActivityByInterval
 
 ## SYNOPSIS
 Invoke function getActivitiesByInterval
 
 ## SYNTAX
 
-### Get5 (Default)
+### Get1 (Default)
 ```
-Get-MgShareListItemActivityByInterval -EndDateTime <String> -Interval <String> -SharedDriveItemId <String>
+Get-MgBetaShareListItemActivityByInterval -EndDateTime <String> -Interval <String> -SharedDriveItemId <String>
  -StartDateTime <String> [-Count] [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
  [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
 ```
 
-### Get4
+### Get
 ```
-Get-MgShareListItemActivityByInterval -EndDateTime <String> -Interval <String> -ListItemId <String>
+Get-MgBetaShareListItemActivityByInterval -EndDateTime <String> -Interval <String> -ListItemId <String>
  -SharedDriveItemId <String> -StartDateTime <String> [-Count] [-Filter <String>] [-Property <String[]>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
 ```
 
-### GetViaIdentity5
+### GetViaIdentity1
 ```
-Get-MgShareListItemActivityByInterval -InputObject <IFilesIdentity> [-Count] [-Filter <String>]
+Get-MgBetaShareListItemActivityByInterval -InputObject <IFilesIdentity> [-Count] [-Filter <String>]
  [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [<CommonParameters>]
 ```
 
-### GetViaIdentity4
+### GetViaIdentity
 ```
-Get-MgShareListItemActivityByInterval -InputObject <IFilesIdentity> [-Count] [-Filter <String>]
+Get-MgBetaShareListItemActivityByInterval -InputObject <IFilesIdentity> [-Count] [-Filter <String>]
  [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [<CommonParameters>]
 ```
@@ -44,6 +44,20 @@ Get-MgShareListItemActivityByInterval -InputObject <IFilesIdentity> [-Count] [-F
 Invoke function getActivitiesByInterval
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -67,7 +81,7 @@ Usage: endDateTime='{endDateTime}'
 
 ```yaml
 Type: String
-Parameter Sets: Get5, Get4
+Parameter Sets: Get1, Get
 Aliases:
 
 Required: True
@@ -94,11 +108,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IFilesIdentity
-Parameter Sets: GetViaIdentity5, GetViaIdentity4
+Parameter Sets: GetViaIdentity1, GetViaIdentity
 Aliases:
 
 Required: True
@@ -113,7 +127,7 @@ Usage: interval='{interval}'
 
 ```yaml
 Type: String
-Parameter Sets: Get5, Get4
+Parameter Sets: Get1, Get
 Aliases:
 
 Required: True
@@ -128,7 +142,7 @@ The unique identifier of listItem
 
 ```yaml
 Type: String
-Parameter Sets: Get4
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -173,7 +187,7 @@ The unique identifier of sharedDriveItem
 
 ```yaml
 Type: String
-Parameter Sets: Get5, Get4
+Parameter Sets: Get1, Get
 Aliases:
 
 Required: True
@@ -203,7 +217,7 @@ Usage: startDateTime='{startDateTime}'
 
 ```yaml
 Type: String
-Parameter Sets: Get5, Get4
+Parameter Sets: Get1, Get
 Aliases:
 
 Required: True
@@ -248,10 +262,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IFilesIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemActivityStat1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItemActivityStat
 ## NOTES
 
 ALIASES
@@ -261,7 +275,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+`INPUTOBJECT <IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType

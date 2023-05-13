@@ -1,45 +1,59 @@
----
-external help file: Microsoft.Graph.Files-help.xml
-Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/remove-mgsharelistitemdocumentsetversion
+﻿---
+external help file: Microsoft.Graph.Beta.Files-help.xml
+Module Name: Microsoft.Graph.Beta.Files
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetasharelistitemdocumentsetversion
 schema: 2.0.0
 ---
 
-# Remove-MgShareListItemDocumentSetVersion
+# Remove-MgBetaShareListItemDocumentSetVersion
 
 ## SYNOPSIS
-Delete navigation property documentSetVersions for shares
+Delete a version of a document set in a list.
 
 ## SYNTAX
 
-### Delete3 (Default)
+### Delete1 (Default)
 ```
-Remove-MgShareListItemDocumentSetVersion -DocumentSetVersionId <String> -SharedDriveItemId <String>
+Remove-MgBetaShareListItemDocumentSetVersion -DocumentSetVersionId <String> -SharedDriveItemId <String>
  [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Delete2
+### Delete
 ```
-Remove-MgShareListItemDocumentSetVersion -DocumentSetVersionId <String> -ListItemId <String>
+Remove-MgBetaShareListItemDocumentSetVersion -DocumentSetVersionId <String> -ListItemId <String>
  -SharedDriveItemId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity3
+### DeleteViaIdentity1
 ```
-Remove-MgShareListItemDocumentSetVersion -InputObject <IFilesIdentity> [-IfMatch <String>] [-PassThru]
+Remove-MgBetaShareListItemDocumentSetVersion -InputObject <IFilesIdentity> [-IfMatch <String>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity2
+### DeleteViaIdentity
 ```
-Remove-MgShareListItemDocumentSetVersion -InputObject <IFilesIdentity> [-IfMatch <String>] [-PassThru]
+Remove-MgBetaShareListItemDocumentSetVersion -InputObject <IFilesIdentity> [-IfMatch <String>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete navigation property documentSetVersions for shares
+Delete a version of a document set in a list.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -48,7 +62,7 @@ The unique identifier of documentSetVersion
 
 ```yaml
 Type: String
-Parameter Sets: Delete3, Delete2
+Parameter Sets: Delete1, Delete
 Aliases:
 
 Required: True
@@ -75,11 +89,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IFilesIdentity
-Parameter Sets: DeleteViaIdentity3, DeleteViaIdentity2
+Parameter Sets: DeleteViaIdentity1, DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -94,7 +108,7 @@ The unique identifier of listItem
 
 ```yaml
 Type: String
-Parameter Sets: Delete2
+Parameter Sets: Delete
 Aliases:
 
 Required: True
@@ -124,7 +138,7 @@ The unique identifier of sharedDriveItem
 
 ```yaml
 Type: String
-Parameter Sets: Delete3, Delete2
+Parameter Sets: Delete1, Delete
 Aliases:
 
 Required: True
@@ -170,7 +184,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IFilesIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
 ## OUTPUTS
 
 ### System.Boolean
@@ -183,7 +197,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+`INPUTOBJECT <IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType

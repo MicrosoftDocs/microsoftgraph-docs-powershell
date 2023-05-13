@@ -1,59 +1,55 @@
----
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgpolicypermissiongrantpolicy
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicypermissiongrantpolicy
 schema: 2.0.0
 ---
 
-# Update-MgPolicyPermissionGrantPolicy
+# Update-MgBetaPolicyPermissionGrantPolicy
 
 ## SYNOPSIS
-Update the navigation property permissionGrantPolicies in policies
+Update properties of a  permissionGrantPolicy.
 
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
-Update-MgPolicyPermissionGrantPolicy -PermissionGrantPolicyId <String> [-AdditionalProperties <Hashtable>]
+Update-MgBetaPolicyPermissionGrantPolicy -PermissionGrantPolicyId <String> [-AdditionalProperties <Hashtable>]
  [-DeletedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
- [-Excludes <IMicrosoftGraphPermissionGrantConditionSet1[]>] [-Id <String>]
- [-Includes <IMicrosoftGraphPermissionGrantConditionSet1[]>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Excludes <IMicrosoftGraphPermissionGrantConditionSet[]>] [-Id <String>]
+ [-Includes <IMicrosoftGraphPermissionGrantConditionSet[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgPolicyPermissionGrantPolicy -PermissionGrantPolicyId <String>
- -BodyParameter <IMicrosoftGraphPermissionGrantPolicy1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaPolicyPermissionGrantPolicy -PermissionGrantPolicyId <String>
+ -BodyParameter <IMicrosoftGraphPermissionGrantPolicy> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgPolicyPermissionGrantPolicy -InputObject <IIdentitySignInsIdentity>
+Update-MgBetaPolicyPermissionGrantPolicy -InputObject <IIdentitySignInsIdentity>
  [-AdditionalProperties <Hashtable>] [-DeletedDateTime <DateTime>] [-Description <String>]
- [-DisplayName <String>] [-Excludes <IMicrosoftGraphPermissionGrantConditionSet1[]>] [-Id <String>]
- [-Includes <IMicrosoftGraphPermissionGrantConditionSet1[]>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-DisplayName <String>] [-Excludes <IMicrosoftGraphPermissionGrantConditionSet[]>] [-Id <String>]
+ [-Includes <IMicrosoftGraphPermissionGrantConditionSet[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgPolicyPermissionGrantPolicy -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphPermissionGrantPolicy1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaPolicyPermissionGrantPolicy -InputObject <IIdentitySignInsIdentity>
+ -BodyParameter <IMicrosoftGraphPermissionGrantPolicy> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property permissionGrantPolicies in policies
+Update properties of a  permissionGrantPolicy.
 
 ## EXAMPLES
 
-### Example 1: Update a permission grant policy
+### EXAMPLE 1
 ```powershell
-Connect-MgGraph -Scopes "Policy.Read.PermissionGrant,Policy.ReadWrite.PermissionGrant"  
-Update-MgPolicyPermissionGrantPolicy -PermissionGrantPolicyId "testtenant-sampleapp-permissions" -Description "Permissions for sample app in test tenant with new updates" -DisplayName "Sample app permissions with new updates"
+Connect-MgBetaGraph -Scopes "Policy.Read.PermissionGrant,Policy.ReadWrite.PermissionGrant"  
+Update-MgBetaPolicyPermissionGrantPolicy -PermissionGrantPolicyId "testtenant-sampleapp-permissions" -Description "Permissions for sample app in test tenant with new updates" -DisplayName "Sample app permissions with new updates"
 ```
-
-This command replaces the existing values with the provided new values for the specified properties in the specified permission grant policy in Azure AD.
 
 ## PARAMETERS
 
@@ -74,10 +70,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 permissionGrantPolicy
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPermissionGrantPolicy1
+Type: IMicrosoftGraphPermissionGrantPolicy
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -139,10 +135,10 @@ Accept wildcard characters: False
 ### -Excludes
 Condition sets which are excluded in this permission grant policy.
 Automatically expanded on GET.
-To construct, please use Get-Help -Online and see NOTES section for EXCLUDES properties and create a hash table.
+To construct, see NOTES section for EXCLUDES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPermissionGrantConditionSet1[]
+Type: IMicrosoftGraphPermissionGrantConditionSet[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -154,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -172,10 +168,10 @@ Accept wildcard characters: False
 ### -Includes
 Condition sets which are included in this permission grant policy.
 Automatically expanded on GET.
-To construct, please use Get-Help -Online and see NOTES section for INCLUDES properties and create a hash table.
+To construct, see NOTES section for INCLUDES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPermissionGrantConditionSet1[]
+Type: IMicrosoftGraphPermissionGrantConditionSet[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -188,7 +184,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IIdentitySignInsIdentity
@@ -199,21 +195,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -268,11 +249,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPermissionGrantPolicy1
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPermissionGrantPolicy
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPermissionGrantPolicy
 ## NOTES
 
 ALIASES
@@ -282,14 +263,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPermissionGrantPolicy1>`: permissionGrantPolicy
+`BODYPARAMETER <IMicrosoftGraphPermissionGrantPolicy>`: permissionGrantPolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Description <String>]`: Description for this policy. Required.
   - `[DisplayName <String>]`: Display name for this policy. Required.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[Excludes <IMicrosoftGraphPermissionGrantConditionSet1[]>]`: Condition sets which are excluded in this permission grant policy. Automatically expanded on GET.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
+  - `[Excludes <IMicrosoftGraphPermissionGrantConditionSet[]>]`: Condition sets which are excluded in this permission grant policy. Automatically expanded on GET.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[CertifiedClientApplicationsOnly <Boolean?>]`: Set to true to only match on client applications that are Microsoft 365 certified. Set to false to match on any other client app. Default is false.
     - `[ClientApplicationIds <String[]>]`: A list of appId values for the client applications to match with, or a list with the single value all to match any client application. Default is the single value all.
     - `[ClientApplicationPublisherIds <String[]>]`: A list of Microsoft Partner Network (MPN) IDs for verified publishers of the client application, or a list with the single value all to match with client apps from any publisher. Default is the single value all.
@@ -299,10 +280,10 @@ BODYPARAMETER `<IMicrosoftGraphPermissionGrantPolicy1>`: permissionGrantPolicy
     - `[PermissionType <String>]`: permissionType
     - `[Permissions <String[]>]`: The list of id values for the specific permissions to match with, or a list with the single value all to match with any permission. The id of delegated permissions can be found in the publishedPermissionScopes property of the API's **servicePrincipal** object. The id of application permissions can be found in the appRoles property of the API's **servicePrincipal** object. The id of resource-specific application permissions can be found in the resourceSpecificApplicationPermissions property of the API's **servicePrincipal** object. Default is the single value all.
     - `[ResourceApplication <String>]`: The appId of the resource application (e.g. the API) for which a permission is being granted, or any to match with any resource application or API. Default is any.
-  - `[Includes <IMicrosoftGraphPermissionGrantConditionSet1[]>]`: Condition sets which are included in this permission grant policy. Automatically expanded on GET.
+  - `[Includes <IMicrosoftGraphPermissionGrantConditionSet[]>]`: Condition sets which are included in this permission grant policy. Automatically expanded on GET.
 
-EXCLUDES <IMicrosoftGraphPermissionGrantConditionSet1\[]>: Condition sets which are excluded in this permission grant policy. Automatically expanded on GET.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`EXCLUDES <IMicrosoftGraphPermissionGrantConditionSet[]>`: Condition sets which are excluded in this permission grant policy. Automatically expanded on GET.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[CertifiedClientApplicationsOnly <Boolean?>]`: Set to true to only match on client applications that are Microsoft 365 certified. Set to false to match on any other client app. Default is false.
   - `[ClientApplicationIds <String[]>]`: A list of appId values for the client applications to match with, or a list with the single value all to match any client application. Default is the single value all.
   - `[ClientApplicationPublisherIds <String[]>]`: A list of Microsoft Partner Network (MPN) IDs for verified publishers of the client application, or a list with the single value all to match with client apps from any publisher. Default is the single value all.
@@ -313,8 +294,8 @@ EXCLUDES <IMicrosoftGraphPermissionGrantConditionSet1\[]>: Condition sets which 
   - `[Permissions <String[]>]`: The list of id values for the specific permissions to match with, or a list with the single value all to match with any permission. The id of delegated permissions can be found in the publishedPermissionScopes property of the API's **servicePrincipal** object. The id of application permissions can be found in the appRoles property of the API's **servicePrincipal** object. The id of resource-specific application permissions can be found in the resourceSpecificApplicationPermissions property of the API's **servicePrincipal** object. Default is the single value all.
   - `[ResourceApplication <String>]`: The appId of the resource application (e.g. the API) for which a permission is being granted, or any to match with any resource application or API. Default is any.
 
-INCLUDES <IMicrosoftGraphPermissionGrantConditionSet1\[]>: Condition sets which are included in this permission grant policy. Automatically expanded on GET.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`INCLUDES <IMicrosoftGraphPermissionGrantConditionSet[]>`: Condition sets which are included in this permission grant policy. Automatically expanded on GET.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[CertifiedClientApplicationsOnly <Boolean?>]`: Set to true to only match on client applications that are Microsoft 365 certified. Set to false to match on any other client app. Default is false.
   - `[ClientApplicationIds <String[]>]`: A list of appId values for the client applications to match with, or a list with the single value all to match any client application. Default is the single value all.
   - `[ClientApplicationPublisherIds <String[]>]`: A list of Microsoft Partner Network (MPN) IDs for verified publishers of the client application, or a list with the single value all to match with client apps from any publisher. Default is the single value all.
@@ -325,7 +306,7 @@ INCLUDES <IMicrosoftGraphPermissionGrantConditionSet1\[]>: Condition sets which 
   - `[Permissions <String[]>]`: The list of id values for the specific permissions to match with, or a list with the single value all to match with any permission. The id of delegated permissions can be found in the publishedPermissionScopes property of the API's **servicePrincipal** object. The id of application permissions can be found in the appRoles property of the API's **servicePrincipal** object. The id of resource-specific application permissions can be found in the resourceSpecificApplicationPermissions property of the API's **servicePrincipal** object. Default is the single value all.
   - `[ResourceApplication <String>]`: The appId of the resource application (e.g. the API) for which a permission is being granted, or any to match with any resource application or API. Default is any.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentitySignInsIdentity>`: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: The unique identifier of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
@@ -362,6 +343,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[IdentityUserFlowAttributeId <String>]`: The unique identifier of identityUserFlowAttribute
   - `[IdentityUserFlowId <String>]`: The unique identifier of identityUserFlow
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
+  - `[InvitationId <String>]`: The unique identifier of invitation
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   - `[MobilityManagementPolicyId <String>]`: The unique identifier of mobilityManagementPolicy

@@ -1,61 +1,58 @@
----
-external help file: Microsoft.Graph.Bookings-help.xml
-Module Name: Microsoft.Graph.Bookings
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.bookings/update-mgbookingbusinesscustomer
+﻿---
+external help file: Microsoft.Graph.Beta.Bookings-help.xml
+Module Name: Microsoft.Graph.Beta.Bookings
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusinesscustomer
 schema: 2.0.0
 ---
 
-# Update-MgBookingBusinessCustomer
+# Update-MgBetaBookingBusinessCustomer
 
 ## SYNOPSIS
-Update the navigation property customers in bookingBusinesses
+Update the properties of a bookingCustomer object.
 
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBookingBusinessCustomer -BookingBusinessId <String> -BookingCustomerId <String>
- [-AdditionalProperties <Hashtable>] [-Addresses <IMicrosoftGraphPhysicalAddress1[]>] [-DisplayName <String>]
- [-EmailAddress <String>] [-Id <String>] [-Phones <IMicrosoftGraphPhone[]>] [-PassThru] [-WhatIf] [-Confirm]
+Update-MgBetaBookingBusinessCustomer -BookingBusinessId <String> -BookingCustomerId <String>
+ [-AdditionalProperties <Hashtable>] [-Addresses <IMicrosoftGraphPhysicalAddress[]>] [-DisplayName <String>]
+ [-EmailAddress <String>] [-Id <String>] [-Phones <IMicrosoftGraphPhone[]>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBookingBusinessCustomer -BookingBusinessId <String> -BookingCustomerId <String>
- -BodyParameter <IMicrosoftGraphBookingCustomer> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaBookingBusinessCustomer -BookingBusinessId <String> -BookingCustomerId <String>
+ -BodyParameter <IMicrosoftGraphBookingCustomer> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBookingBusinessCustomer -InputObject <IBookingsIdentity> [-AdditionalProperties <Hashtable>]
- [-Addresses <IMicrosoftGraphPhysicalAddress1[]>] [-DisplayName <String>] [-EmailAddress <String>]
- [-Id <String>] [-Phones <IMicrosoftGraphPhone[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaBookingBusinessCustomer -InputObject <IBookingsIdentity> [-AdditionalProperties <Hashtable>]
+ [-Addresses <IMicrosoftGraphPhysicalAddress[]>] [-DisplayName <String>] [-EmailAddress <String>]
+ [-Id <String>] [-Phones <IMicrosoftGraphPhone[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgBookingBusinessCustomer -InputObject <IBookingsIdentity>
- -BodyParameter <IMicrosoftGraphBookingCustomer> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaBookingBusinessCustomer -InputObject <IBookingsIdentity>
+ -BodyParameter <IMicrosoftGraphBookingCustomer> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property customers in bookingBusinesses
+Update the properties of a bookingCustomer object.
 
 ## EXAMPLES
 
-### Example 1: Using the Update-MgBookingBusinessCustomer Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Bookings
+Import-Module Microsoft.Graph.Beta.Bookings
 $params = @{
 	DisplayName = "Adele"
 	EmailAddress = "adele@relecloud.com"
 }
-Update-MgBookingBusinessCustomer -BookingBusinessId $bookingBusinessId -BookingCustomerId $bookingCustomerId -BodyParameter $params
+Update-MgBetaBookingBusinessCustomer -BookingBusinessId $bookingBusinessId -BookingCustomerId $bookingCustomerId -BodyParameter $params
 ```
-
-This example shows how to use the Update-MgBookingBusinessCustomer Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -76,10 +73,10 @@ Accept wildcard characters: False
 
 ### -Addresses
 Addresses associated with the customer, including home, business and other addresses.
-To construct, please use Get-Help -Online and see NOTES section for ADDRESSES properties and create a hash table.
+To construct, see NOTES section for ADDRESSES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPhysicalAddress1[]
+Type: IMicrosoftGraphPhysicalAddress[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -92,7 +89,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Represents a customer of the business.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphBookingCustomer
@@ -167,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -184,7 +181,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IBookingsIdentity
@@ -198,24 +195,9 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Phones
 Phone numbers associated with the customer, including home, business and mobile numbers.
-To construct, please use Get-Help -Online and see NOTES section for PHONES properties and create a hash table.
+To construct, see NOTES section for PHONES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPhone[]
@@ -265,11 +247,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IBookingsIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBookingCustomer
+### Microsoft.Graph.Beta.PowerShell.Models.IBookingsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBookingCustomer
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBookingCustomer
 ## NOTES
 
 ALIASES
@@ -279,7 +261,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ADDRESSES <IMicrosoftGraphPhysicalAddress1\[]>: Addresses associated with the customer, including home, business and other addresses.
+`ADDRESSES <IMicrosoftGraphPhysicalAddress[]>`: Addresses associated with the customer, including home, business and other addresses.
   - `[City <String>]`: The city.
   - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
   - `[PostOfficeBox <String>]`: The post office box number.
@@ -288,12 +270,12 @@ ADDRESSES <IMicrosoftGraphPhysicalAddress1\[]>: Addresses associated with the cu
   - `[Street <String>]`: The street.
   - `[Type <String>]`: physicalAddressType
 
-BODYPARAMETER `<IMicrosoftGraphBookingCustomer>`: Represents a customer of the business.
+`BODYPARAMETER <IMicrosoftGraphBookingCustomer>`: Represents a customer of the business.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[EmailAddress <String>]`: The email address of the person.
   - `[DisplayName <String>]`: A name for the derived entity, which interfaces with customers.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[Addresses <IMicrosoftGraphPhysicalAddress1[]>]`: Addresses associated with the customer, including home, business and other addresses.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
+  - `[Addresses <IMicrosoftGraphPhysicalAddress[]>]`: Addresses associated with the customer, including home, business and other addresses.
     - `[City <String>]`: The city.
     - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
     - `[PostOfficeBox <String>]`: The post office box number.
@@ -305,21 +287,19 @@ BODYPARAMETER `<IMicrosoftGraphBookingCustomer>`: Represents a customer of the b
     - `[Number <String>]`: The phone number.
     - `[Type <String>]`: phoneType
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+`INPUTOBJECT <IBookingsIdentity>`: Identity Parameter
   - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
   - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness
   - `[BookingCurrencyId <String>]`: The unique identifier of bookingCurrency
   - `[BookingCustomQuestionId <String>]`: The unique identifier of bookingCustomQuestion
-  - `[BookingCustomerBaseId <String>]`: The unique identifier of bookingCustomerBase
   - `[BookingCustomerId <String>]`: The unique identifier of bookingCustomer
   - `[BookingServiceId <String>]`: The unique identifier of bookingService
-  - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
   - `[BookingStaffMemberId <String>]`: The unique identifier of bookingStaffMember
   - `[BusinessScenarioId <String>]`: The unique identifier of businessScenario
   - `[BusinessScenarioTaskId <String>]`: The unique identifier of businessScenarioTask
   - `[PlannerPlanConfigurationLocalizationId <String>]`: The unique identifier of plannerPlanConfigurationLocalization
 
-PHONES <IMicrosoftGraphPhone\[]>: Phone numbers associated with the customer, including home, business and mobile numbers.
+`PHONES <IMicrosoftGraphPhone[]>`: Phone numbers associated with the customer, including home, business and mobile numbers.
   - `[Number <String>]`: The phone number.
   - `[Type <String>]`: phoneType
 

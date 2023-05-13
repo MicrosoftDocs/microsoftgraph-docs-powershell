@@ -1,68 +1,65 @@
----
-external help file: Microsoft.Graph.People-help.xml
-Module Name: Microsoft.Graph.People
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.people/update-mguserprofileposition
+﻿---
+external help file: Microsoft.Graph.Beta.People-help.xml
+Module Name: Microsoft.Graph.Beta.People
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileposition
 schema: 2.0.0
 ---
 
-# Update-MgUserProfilePosition
+# Update-MgBetaUserProfilePosition
 
 ## SYNOPSIS
-Update the navigation property positions in users
+Update the properties of a workPosition object in a user's profile.
 
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
-Update-MgUserProfilePosition -UserId <String> -WorkPositionId <String> [-AdditionalProperties <Hashtable>]
+Update-MgBetaUserProfilePosition -UserId <String> -WorkPositionId <String> [-AdditionalProperties <Hashtable>]
  [-AllowedAudiences <String>] [-Categories <String[]>] [-Colleagues <IMicrosoftGraphRelatedPerson[]>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
  [-Detail <IMicrosoftGraphPositionDetail>] [-Id <String>] [-Inference <IMicrosoftGraphInferenceData>]
  [-IsCurrent] [-IsSearchable] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
- [-Manager <IMicrosoftGraphRelatedPerson>] [-Source <IMicrosoftGraphPersonDataSources>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-Manager <IMicrosoftGraphRelatedPerson>] [-Source <IMicrosoftGraphPersonDataSources>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgUserProfilePosition -UserId <String> -WorkPositionId <String>
- -BodyParameter <IMicrosoftGraphWorkPosition> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaUserProfilePosition -UserId <String> -WorkPositionId <String>
+ -BodyParameter <IMicrosoftGraphWorkPosition> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgUserProfilePosition -InputObject <IPeopleIdentity> [-AdditionalProperties <Hashtable>]
+Update-MgBetaUserProfilePosition -InputObject <IPeopleIdentity> [-AdditionalProperties <Hashtable>]
  [-AllowedAudiences <String>] [-Categories <String[]>] [-Colleagues <IMicrosoftGraphRelatedPerson[]>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
  [-Detail <IMicrosoftGraphPositionDetail>] [-Id <String>] [-Inference <IMicrosoftGraphInferenceData>]
  [-IsCurrent] [-IsSearchable] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
- [-Manager <IMicrosoftGraphRelatedPerson>] [-Source <IMicrosoftGraphPersonDataSources>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-Manager <IMicrosoftGraphRelatedPerson>] [-Source <IMicrosoftGraphPersonDataSources>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgUserProfilePosition -InputObject <IPeopleIdentity> -BodyParameter <IMicrosoftGraphWorkPosition>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaUserProfilePosition -InputObject <IPeopleIdentity> -BodyParameter <IMicrosoftGraphWorkPosition>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property positions in users
+Update the properties of a workPosition object in a user's profile.
 
 ## EXAMPLES
 
-### Example 1: Using the Update-MgUserProfilePosition Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.People
+Import-Module Microsoft.Graph.Beta.People
 $params = @{
 	IsCurrent = $true
 }
 # A UPN can also be used as -UserId.
-Update-MgUserProfilePosition -UserId $userId -WorkPositionId $workPositionId -BodyParameter $params
+Update-MgBetaUserProfilePosition -UserId $userId -WorkPositionId $workPositionId -BodyParameter $params
 ```
-
-This example shows how to use the Update-MgUserProfilePosition Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -98,7 +95,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 workPosition
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphWorkPosition
@@ -129,7 +126,7 @@ Accept wildcard characters: False
 
 ### -Colleagues
 Colleagues that are associated with this position.
-To construct, please use Get-Help -Online and see NOTES section for COLLEAGUES properties and create a hash table.
+To construct, see NOTES section for COLLEAGUES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRelatedPerson[]
@@ -145,7 +142,7 @@ Accept wildcard characters: False
 
 ### -CreatedBy
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
+To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet
@@ -176,7 +173,7 @@ Accept wildcard characters: False
 
 ### -Detail
 positionDetail
-To construct, please use Get-Help -Online and see NOTES section for DETAIL properties and create a hash table.
+To construct, see NOTES section for DETAIL properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPositionDetail
@@ -191,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -208,7 +205,7 @@ Accept wildcard characters: False
 
 ### -Inference
 inferenceData
-To construct, please use Get-Help -Online and see NOTES section for INFERENCE properties and create a hash table.
+To construct, see NOTES section for INFERENCE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphInferenceData
@@ -224,7 +221,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IPeopleIdentity
@@ -270,7 +267,7 @@ Accept wildcard characters: False
 
 ### -LastModifiedBy
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBY properties and create a hash table.
+To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet
@@ -301,7 +298,7 @@ Accept wildcard characters: False
 
 ### -Manager
 relatedPerson
-To construct, please use Get-Help -Online and see NOTES section for MANAGER properties and create a hash table.
+To construct, see NOTES section for MANAGER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRelatedPerson
@@ -315,24 +312,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Source
 personDataSources
-To construct, please use Get-Help -Online and see NOTES section for SOURCE properties and create a hash table.
+To construct, see NOTES section for SOURCE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPersonDataSources
@@ -412,11 +394,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWorkPosition
-### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWorkPosition
+### Microsoft.Graph.Beta.PowerShell.Models.IPeopleIdentity
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWorkPosition
 ## NOTES
 
 ALIASES
@@ -426,7 +408,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphWorkPosition>`: workPosition
+`BODYPARAMETER <IMicrosoftGraphWorkPosition>`: workPosition
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowedAudiences <String>]`: allowedAudiences
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -448,7 +430,7 @@ BODYPARAMETER `<IMicrosoftGraphWorkPosition>`: workPosition
   - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Type <String[]>]`: 
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Categories <String[]>]`: Categories that the user has associated with this position.
   - `[Colleagues <IMicrosoftGraphRelatedPerson[]>]`: Colleagues that are associated with this position.
     - `[DisplayName <String>]`: Name of the person.
@@ -458,7 +440,7 @@ BODYPARAMETER `<IMicrosoftGraphWorkPosition>`: workPosition
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Company <IMicrosoftGraphCompanyDetail>]`: companyDetail
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Address <IMicrosoftGraphPhysicalAddress1>]`: physicalAddress
+      - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[City <String>]`: The city.
         - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
@@ -481,12 +463,12 @@ BODYPARAMETER `<IMicrosoftGraphWorkPosition>`: workPosition
   - `[IsCurrent <Boolean?>]`: Denotes whether or not the position is current.
   - `[Manager <IMicrosoftGraphRelatedPerson>]`: relatedPerson
 
-COLLEAGUES <IMicrosoftGraphRelatedPerson\[]>: Colleagues that are associated with this position.
+`COLLEAGUES <IMicrosoftGraphRelatedPerson[]>`: Colleagues that are associated with this position.
   - `[DisplayName <String>]`: Name of the person.
   - `[Relationship <String>]`: personRelationship
   - `[UserPrincipalName <String>]`: Email address or reference to person within organization.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+`CREATEDBY <IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -495,11 +477,11 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-DETAIL `<IMicrosoftGraphPositionDetail>`: positionDetail
+`DETAIL <IMicrosoftGraphPositionDetail>`: positionDetail
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Company <IMicrosoftGraphCompanyDetail>]`: companyDetail
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Address <IMicrosoftGraphPhysicalAddress1>]`: physicalAddress
+    - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[City <String>]`: The city.
       - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
@@ -520,12 +502,12 @@ DETAIL `<IMicrosoftGraphPositionDetail>`: positionDetail
   - `[StartMonthYear <DateTime?>]`: The start month and year of the position.
   - `[Summary <String>]`: Short summary of the position.
 
-INFERENCE `<IMicrosoftGraphInferenceData>`: inferenceData
+`INFERENCE <IMicrosoftGraphInferenceData>`: inferenceData
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ConfidenceScore <Double?>]`: Confidence score reflecting the accuracy of the data inferred about the user.
   - `[UserHasVerifiedAccuracy <Boolean?>]`: Records if the user has confirmed this inference as being True or False.
 
-INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
+`INPUTOBJECT <IPeopleIdentity>`: Identity Parameter
   - `[ActivityStatisticsId <String>]`: The unique identifier of activityStatistics
   - `[EducationalActivityId <String>]`: The unique identifier of educationalActivity
   - `[ItemAddressId <String>]`: The unique identifier of itemAddress
@@ -543,16 +525,13 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
   - `[PersonNameId <String>]`: The unique identifier of personName
   - `[PersonWebsiteId <String>]`: The unique identifier of personWebsite
   - `[ProjectParticipationId <String>]`: The unique identifier of projectParticipation
-  - `[SharedInsightId <String>]`: The unique identifier of sharedInsight
   - `[SkillProficiencyId <String>]`: The unique identifier of skillProficiency
-  - `[TrendingId <String>]`: The unique identifier of trending
-  - `[UsedInsightId <String>]`: The unique identifier of usedInsight
   - `[UserAccountInformationId <String>]`: The unique identifier of userAccountInformation
   - `[UserId <String>]`: The unique identifier of user
   - `[WebAccountId <String>]`: The unique identifier of webAccount
   - `[WorkPositionId <String>]`: The unique identifier of workPosition
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+`LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -561,13 +540,13 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-MANAGER `<IMicrosoftGraphRelatedPerson>`: relatedPerson
+`MANAGER <IMicrosoftGraphRelatedPerson>`: relatedPerson
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: Name of the person.
   - `[Relationship <String>]`: personRelationship
   - `[UserPrincipalName <String>]`: Email address or reference to person within organization.
 
-SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
+`SOURCE <IMicrosoftGraphPersonDataSources>`: personDataSources
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Type <String[]>]`: 
 

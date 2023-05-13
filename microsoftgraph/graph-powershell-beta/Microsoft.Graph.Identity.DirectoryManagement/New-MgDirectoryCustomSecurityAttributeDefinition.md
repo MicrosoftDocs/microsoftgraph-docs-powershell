@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectorycustomsecurityattributedefinition
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorycustomsecurityattributedefinition
 schema: 2.0.0
 ---
 
-# New-MgDirectoryCustomSecurityAttributeDefinition
+# New-MgBetaDirectoryCustomSecurityAttributeDefinition
 
 ## SYNOPSIS
 Create a new customSecurityAttributeDefinition object.
@@ -14,7 +14,7 @@ Create a new customSecurityAttributeDefinition object.
 
 ### CreateExpanded (Default)
 ```
-New-MgDirectoryCustomSecurityAttributeDefinition [-AdditionalProperties <Hashtable>]
+New-MgBetaDirectoryCustomSecurityAttributeDefinition [-AdditionalProperties <Hashtable>]
  [-AllowedValues <IMicrosoftGraphAllowedValue[]>] [-AttributeSet <String>] [-Description <String>]
  [-Id <String>] [-IsCollection] [-IsSearchable] [-Name <String>] [-Status <String>] [-Type <String>]
  [-UsePreDefinedValuesOnly] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -22,7 +22,7 @@ New-MgDirectoryCustomSecurityAttributeDefinition [-AdditionalProperties <Hashtab
 
 ### Create
 ```
-New-MgDirectoryCustomSecurityAttributeDefinition
+New-MgBetaDirectoryCustomSecurityAttributeDefinition
  -BodyParameter <IMicrosoftGraphCustomSecurityAttributeDefinition> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -31,9 +31,9 @@ Create a new customSecurityAttributeDefinition object.
 
 ## EXAMPLES
 
-### Example 1: Using the New-MgDirectoryCustomSecurityAttributeDefinition Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 $params = @{
 	AttributeSet = "Engineering"
 	Description = "Active projects for user"
@@ -58,15 +58,12 @@ $params = @{
 		}
 	)
 }
-New-MgDirectoryCustomSecurityAttributeDefinition -BodyParameter $params
+New-MgBetaDirectoryCustomSecurityAttributeDefinition -BodyParameter $params
 ```
 
-This example shows how to use the New-MgDirectoryCustomSecurityAttributeDefinition Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the New-MgDirectoryCustomSecurityAttributeDefinition Cmdlet
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 $params = @{
 	AttributeSet = "Engineering"
 	Description = "Target completion date"
@@ -77,15 +74,12 @@ $params = @{
 	Type = "String"
 	UsePreDefinedValuesOnly = $false
 }
-New-MgDirectoryCustomSecurityAttributeDefinition -BodyParameter $params
+New-MgBetaDirectoryCustomSecurityAttributeDefinition -BodyParameter $params
 ```
 
-This example shows how to use the New-MgDirectoryCustomSecurityAttributeDefinition Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Using the New-MgDirectoryCustomSecurityAttributeDefinition Cmdlet
+### EXAMPLE 3
 ```powershell
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 $params = @{
 	AttributeSet = "Engineering"
 	Description = "Active projects for user"
@@ -96,11 +90,8 @@ $params = @{
 	Type = "String"
 	UsePreDefinedValuesOnly = $true
 }
-New-MgDirectoryCustomSecurityAttributeDefinition -BodyParameter $params
+New-MgBetaDirectoryCustomSecurityAttributeDefinition -BodyParameter $params
 ```
-
-This example shows how to use the New-MgDirectoryCustomSecurityAttributeDefinition Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -122,7 +113,7 @@ Accept wildcard characters: False
 ### -AllowedValues
 Values that are predefined for this custom security attribute.This navigation property is not returned by default and must be specified in an $expand query.
 For example, /directory/customSecurityAttributeDefinitions$expand=allowedValues.
-To construct, please use Get-Help -Online and see NOTES section for ALLOWEDVALUES properties and create a hash table.
+To construct, see NOTES section for ALLOWEDVALUES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAllowedValue[]
@@ -154,7 +145,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 customSecurityAttributeDefinition
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphCustomSecurityAttributeDefinition
@@ -186,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -342,10 +333,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCustomSecurityAttributeDefinition
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCustomSecurityAttributeDefinition
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCustomSecurityAttributeDefinition
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCustomSecurityAttributeDefinition
 ## NOTES
 
 ALIASES
@@ -355,15 +346,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ALLOWEDVALUES <IMicrosoftGraphAllowedValue\[]>: Values that are predefined for this custom security attribute.This navigation property is not returned by default and must be specified in an $expand query. For example, /directory/customSecurityAttributeDefinitions$expand=allowedValues.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`ALLOWEDVALUES <IMicrosoftGraphAllowedValue[]>`: Values that are predefined for this custom security attribute.This navigation property is not returned by default and must be specified in an $expand query. For example, /directory/customSecurityAttributeDefinitions$expand=allowedValues.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[IsActive <Boolean?>]`: Indicates whether the predefined value is active or deactivated. If set to false, this predefined value cannot be assigned to any additional supported directory objects.
 
-BODYPARAMETER `<IMicrosoftGraphCustomSecurityAttributeDefinition>`: customSecurityAttributeDefinition
+`BODYPARAMETER <IMicrosoftGraphCustomSecurityAttributeDefinition>`: customSecurityAttributeDefinition
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AllowedValues <IMicrosoftGraphAllowedValue[]>]`: Values that are predefined for this custom security attribute.This navigation property is not returned by default and must be specified in an $expand query. For example, /directory/customSecurityAttributeDefinitions?$expand=allowedValues.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[IsActive <Boolean?>]`: Indicates whether the predefined value is active or deactivated. If set to false, this predefined value cannot be assigned to any additional supported directory objects.
   - `[AttributeSet <String>]`: Name of the attribute set. Case insensitive.
   - `[Description <String>]`: Description of the custom security attribute. Can be up to 128 characters long and include Unicode characters. Can be changed later.

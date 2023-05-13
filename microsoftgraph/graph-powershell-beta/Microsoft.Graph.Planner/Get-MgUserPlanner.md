@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Planner-help.xml
-Module Name: Microsoft.Graph.Planner
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/get-mguserplanner
+﻿---
+external help file: Microsoft.Graph.Beta.Planner-help.xml
+Module Name: Microsoft.Graph.Beta.Planner
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetauserplanner
 schema: 2.0.0
 ---
 
-# Get-MgUserPlanner
+# Get-MgBetaUserPlanner
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a plannerUser object.
@@ -13,33 +13,33 @@ The returned properties include the user's favorite plans and recently viewed pl
 
 ## SYNTAX
 
-### Get1 (Default)
+### Get (Default)
 ```
-Get-MgUserPlanner -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaUserPlanner -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### List
 ```
-Get-MgUserPlanner -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
+Get-MgBetaUserPlanner -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
  [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### Get2
+### Get1
 ```
-Get-MgUserPlanner -UserId <String> -PlannerDeltaId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
-```
-
-### GetViaIdentity2
-```
-Get-MgUserPlanner -InputObject <IPlannerIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
+Get-MgBetaUserPlanner -UserId <String> -PlannerDeltaId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
 ```
-Get-MgUserPlanner -InputObject <IPlannerIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaUserPlanner -InputObject <IPlannerIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
+```
+
+### GetViaIdentity
+```
+Get-MgBetaUserPlanner -InputObject <IPlannerIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
@@ -49,15 +49,12 @@ The returned properties include the user's favorite plans and recently viewed pl
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgUserPlanner Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Planner
+Import-Module Microsoft.Graph.Beta.Planner
 # A UPN can also be used as -UserId.
-Get-MgUserPlanner -UserId $userId
+Get-MgBetaUserPlanner -UserId $userId
 ```
-
-This example shows how to use the Get-MgUserPlanner Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -124,11 +121,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IPlannerIdentity
-Parameter Sets: GetViaIdentity2, GetViaIdentity1
+Parameter Sets: GetViaIdentity1, GetViaIdentity
 Aliases:
 
 Required: True
@@ -158,7 +155,7 @@ The unique identifier of plannerDelta
 
 ```yaml
 Type: String
-Parameter Sets: Get2
+Parameter Sets: Get1
 Aliases:
 
 Required: True
@@ -233,7 +230,7 @@ The unique identifier of user
 
 ```yaml
 Type: String
-Parameter Sets: Get1, List, Get2
+Parameter Sets: Get, List, Get1
 Aliases:
 
 Required: True
@@ -263,11 +260,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPlannerIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerDelta
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerUser
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerDelta
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerUser
 ### System.String
 ## NOTES
 
@@ -278,7 +275,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
+`INPUTOBJECT <IPlannerIdentity>`: Identity Parameter
   - `[GroupId <String>]`: The unique identifier of group
   - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket
   - `[PlannerDeltaId <String>]`: The unique identifier of plannerDelta

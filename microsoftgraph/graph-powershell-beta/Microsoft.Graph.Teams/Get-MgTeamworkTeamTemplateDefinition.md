@@ -1,49 +1,46 @@
----
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mgteamworkteamtemplatedefinition
+﻿---
+external help file: Microsoft.Graph.Beta.Teams-help.xml
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkteamtemplatedefinition
 schema: 2.0.0
 ---
 
-# Get-MgTeamworkTeamTemplateDefinition
+# Get-MgBetaTeamworkTeamTemplateDefinition
 
 ## SYNOPSIS
-Get definitions from teamwork
+Read the properties and relationships of a teamTemplateDefinition object.
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgTeamworkTeamTemplateDefinition -TeamTemplateId <String> [-ExpandProperty <String[]>]
+Get-MgBetaTeamworkTeamTemplateDefinition -TeamTemplateId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgTeamworkTeamTemplateDefinition -TeamTemplateDefinitionId <String> -TeamTemplateId <String>
+Get-MgBetaTeamworkTeamTemplateDefinition -TeamTemplateDefinitionId <String> -TeamTemplateId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgTeamworkTeamTemplateDefinition -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>]
+Get-MgBetaTeamworkTeamTemplateDefinition -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get definitions from teamwork
+Read the properties and relationships of a teamTemplateDefinition object.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgTeamworkTeamTemplateDefinition Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Teams
-Get-MgTeamworkTeamTemplateDefinition -TeamTemplateId $teamTemplateId -TeamTemplateDefinitionId $teamTemplateDefinitionId
+Import-Module Microsoft.Graph.Beta.Teams
+Get-MgBetaTeamworkTeamTemplateDefinition -TeamTemplateId $teamTemplateId -TeamTemplateDefinitionId $teamTemplateDefinitionId
 ```
-
-This example shows how to use the Get-MgTeamworkTeamTemplateDefinition Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -110,7 +107,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ITeamsIdentity
@@ -249,10 +246,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamTemplateDefinition
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamTemplateDefinition
 ## NOTES
 
 ALIASES
@@ -262,7 +259,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat

@@ -1,52 +1,49 @@
----
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mgteamprimarychannelsharedwithteam
+﻿---
+external help file: Microsoft.Graph.Beta.Teams-help.xml
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamprimarychannelsharedwithteam
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
-# Get-MgTeamPrimaryChannelSharedWithTeam
+# Get-MgBetaTeamPrimaryChannelSharedWithTeam
 
 ## SYNOPSIS
-A collection of teams with which a channel is shared.
+Get a team that has been shared with a specified channel.
+This operation is allowed only for channels with a **membershipType** value of `shared`.
 
 ## SYNTAX
 
-### List1 (Default)
+### List (Default)
 ```
-Get-MgTeamPrimaryChannelSharedWithTeam -TeamId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaTeamPrimaryChannelSharedWithTeam -TeamId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
  [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### Get1
+### Get
 ```
-Get-MgTeamPrimaryChannelSharedWithTeam -SharedWithChannelTeamInfoId <String> -TeamId <String>
+Get-MgBetaTeamPrimaryChannelSharedWithTeam -SharedWithChannelTeamInfoId <String> -TeamId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### GetViaIdentity
 ```
-Get-MgTeamPrimaryChannelSharedWithTeam -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>]
+Get-MgBetaTeamPrimaryChannelSharedWithTeam -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-A collection of teams with which a channel is shared.
+Get a team that has been shared with a specified channel.
+This operation is allowed only for channels with a **membershipType** value of `shared`.
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Teams
-
-Get-MgTeamChannelSharedWithTeam -TeamId $teamId -ChannelId $channelId
+Import-Module Microsoft.Graph.Beta.Teams
 ```
 
-This example shows how to use the Get-MgTeamPrimaryChannelSharedWithTeam Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Get-MgBetaTeamChannelSharedWithTeam -TeamId $teamId -ChannelId $channelId
 
 ## PARAMETERS
 
@@ -55,7 +52,7 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -71,7 +68,7 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: List
 Aliases: CV
 
 Required: False
@@ -101,7 +98,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -113,11 +110,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: GetViaIdentity1
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
@@ -132,7 +129,7 @@ Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -162,7 +159,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -177,7 +174,7 @@ The unique identifier of sharedWithChannelTeamInfo
 
 ```yaml
 Type: String
-Parameter Sets: Get1
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -192,7 +189,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List1
+Parameter Sets: List
 Aliases: OrderBy
 
 Required: False
@@ -207,7 +204,7 @@ The unique identifier of team
 
 ```yaml
 Type: String
-Parameter Sets: List1, Get1
+Parameter Sets: List, Get
 Aliases:
 
 Required: True
@@ -222,7 +219,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Parameter Sets: List
 Aliases: Limit
 
 Required: False
@@ -237,7 +234,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -252,10 +249,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSharedWithChannelTeamInfo1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSharedWithChannelTeamInfo
 ## NOTES
 
 ALIASES
@@ -265,7 +262,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat

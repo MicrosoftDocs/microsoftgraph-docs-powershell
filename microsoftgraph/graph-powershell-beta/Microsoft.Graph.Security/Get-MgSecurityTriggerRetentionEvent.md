@@ -1,58 +1,52 @@
----
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/get-mgsecuritytriggerretentionevent
+﻿---
+external help file: Microsoft.Graph.Beta.Security-help.xml
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritytriggerretentionevent
 schema: 2.0.0
 ---
 
-# Get-MgSecurityTriggerRetentionEvent
+# Get-MgBetaSecurityTriggerRetentionEvent
 
 ## SYNOPSIS
-Get retentionEvents from security
+Read the properties and relationships of a retentionEvent object.
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgSecurityTriggerRetentionEvent [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
+Get-MgBetaSecurityTriggerRetentionEvent [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
  [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgSecurityTriggerRetentionEvent -RetentionEventId <String> [-ExpandProperty <String[]>]
+Get-MgBetaSecurityTriggerRetentionEvent -RetentionEventId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgSecurityTriggerRetentionEvent -InputObject <ISecurityIdentity> [-ExpandProperty <String[]>]
+Get-MgBetaSecurityTriggerRetentionEvent -InputObject <ISecurityIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get retentionEvents from security
+Read the properties and relationships of a retentionEvent object.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgSecurityTriggerRetentionEvent Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Security
-Get-MgSecurityTriggerRetentionEvent -RetentionEventId $retentionEventId
+Import-Module Microsoft.Graph.Beta.Security
+Get-MgBetaSecurityTriggerRetentionEvent -RetentionEventId $retentionEventId
 ```
 
-This example shows how to use the Get-MgSecurityTriggerRetentionEvent Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Get-MgSecurityTriggerRetentionEvent Cmdlet
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Security
-Get-MgSecurityTriggerRetentionEvent
+Import-Module Microsoft.Graph.Beta.Security
+Get-MgBetaSecurityTriggerRetentionEvent
 ```
-
-This example shows how to use the Get-MgSecurityTriggerRetentionEvent Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -119,7 +113,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ISecurityIdentity
@@ -243,10 +237,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityRetentionEvent
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityRetentionEvent
 ## NOTES
 
 ALIASES
@@ -256,7 +250,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+`INPUTOBJECT <ISecurityIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
   - `[ArticleId <String>]`: The unique identifier of article
   - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator

@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/initialize-mgdevicemanagementmanageddeviceesim
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/initialize-mgbetadevicemanagementmanageddeviceesim
 schema: 2.0.0
 ---
 
-# Initialize-MgDeviceManagementManagedDeviceEsim
+# Initialize-MgBetaDeviceManagementManagedDeviceEsim
 
 ## SYNOPSIS
 Activate eSIM on the device.
@@ -14,27 +14,28 @@ Activate eSIM on the device.
 
 ### ActivateExpanded (Default)
 ```
-Initialize-MgDeviceManagementManagedDeviceEsim -ManagedDeviceId <String> [-AdditionalProperties <Hashtable>]
- [-CarrierUrl <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Initialize-MgBetaDeviceManagementManagedDeviceEsim -ManagedDeviceId <String>
+ [-AdditionalProperties <Hashtable>] [-CarrierUrl <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Activate
 ```
-Initialize-MgDeviceManagementManagedDeviceEsim -ManagedDeviceId <String>
+Initialize-MgBetaDeviceManagementManagedDeviceEsim -ManagedDeviceId <String>
  -BodyParameter <IPathsL7OsalDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphActivatedeviceesimPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ActivateViaIdentityExpanded
 ```
-Initialize-MgDeviceManagementManagedDeviceEsim -InputObject <IDeviceManagementActionsIdentity>
+Initialize-MgBetaDeviceManagementManagedDeviceEsim -InputObject <IDeviceManagementActionsIdentity>
  [-AdditionalProperties <Hashtable>] [-CarrierUrl <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### ActivateViaIdentity
 ```
-Initialize-MgDeviceManagementManagedDeviceEsim -InputObject <IDeviceManagementActionsIdentity>
+Initialize-MgBetaDeviceManagementManagedDeviceEsim -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPathsL7OsalDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphActivatedeviceesimPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -43,6 +44,20 @@ Initialize-MgDeviceManagementManagedDeviceEsim -InputObject <IDeviceManagementAc
 Activate eSIM on the device.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -63,7 +78,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPathsL7OsalDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphActivatedeviceesimPostRequestbodyContentApplicationJsonSchema
@@ -94,7 +109,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementActionsIdentity
@@ -174,8 +189,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-### Microsoft.Graph.PowerShell.Models.IPathsL7OsalDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphActivatedeviceesimPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsL7OsalDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphActivatedeviceesimPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### System.Boolean
@@ -188,11 +203,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsL7OsalDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphActivatedeviceesimPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsL7OsalDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphActivatedeviceesimPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CarrierUrl <String>]`: 
 
-INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[AlertRecordId <String>]`: The unique identifier of alertRecord
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: The unique identifier of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: The unique identifier of androidForWorkEnrollmentProfile
@@ -236,7 +251,6 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[MicrosoftTunnelSiteId <String>]`: The unique identifier of microsoftTunnelSite
   - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
   - `[NotificationMessageTemplateId <String>]`: The unique identifier of notificationMessageTemplate
-  - `[OemWarrantyInformationOnboardingId <String>]`: The unique identifier of oemWarrantyInformationOnboarding
   - `[RemoteAssistancePartnerId <String>]`: The unique identifier of remoteAssistancePartner
   - `[RoleScopeTagId <String>]`: The unique identifier of roleScopeTag
   - `[WindowsAutopilotDeploymentProfileId <String>]`: The unique identifier of windowsAutopilotDeploymentProfile

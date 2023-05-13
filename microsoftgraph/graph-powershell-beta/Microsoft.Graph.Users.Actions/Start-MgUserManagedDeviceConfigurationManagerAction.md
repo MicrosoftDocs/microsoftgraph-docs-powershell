@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Users.Actions-help.xml
-Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/start-mgusermanageddeviceconfigurationmanageraction
+﻿---
+external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.Users.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/start-mgbetausermanageddeviceconfigurationmanageraction
 schema: 2.0.0
 ---
 
-# Start-MgUserManagedDeviceConfigurationManagerAction
+# Start-MgBetaUserManagedDeviceConfigurationManagerAction
 
 ## SYNOPSIS
 Trigger action on ConfigurationManager client
@@ -14,28 +14,28 @@ Trigger action on ConfigurationManager client
 
 ### TriggerExpanded (Default)
 ```
-Start-MgUserManagedDeviceConfigurationManagerAction -ManagedDeviceId <String> -UserId <String>
+Start-MgBetaUserManagedDeviceConfigurationManagerAction -ManagedDeviceId <String> -UserId <String>
  [-AdditionalProperties <Hashtable>] [-ConfigurationManagerAction <IMicrosoftGraphConfigurationManagerAction>]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Trigger
 ```
-Start-MgUserManagedDeviceConfigurationManagerAction -ManagedDeviceId <String> -UserId <String>
+Start-MgBetaUserManagedDeviceConfigurationManagerAction -ManagedDeviceId <String> -UserId <String>
  -BodyParameter <IPathsA6Tcp7UsersUserIdManageddevicesManageddeviceIdMicrosoftGraphTriggerconfigurationmanageractionPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### TriggerViaIdentityExpanded
 ```
-Start-MgUserManagedDeviceConfigurationManagerAction -InputObject <IUsersActionsIdentity>
+Start-MgBetaUserManagedDeviceConfigurationManagerAction -InputObject <IUsersActionsIdentity>
  [-AdditionalProperties <Hashtable>] [-ConfigurationManagerAction <IMicrosoftGraphConfigurationManagerAction>]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### TriggerViaIdentity
 ```
-Start-MgUserManagedDeviceConfigurationManagerAction -InputObject <IUsersActionsIdentity>
+Start-MgBetaUserManagedDeviceConfigurationManagerAction -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPathsA6Tcp7UsersUserIdManageddevicesManageddeviceIdMicrosoftGraphTriggerconfigurationmanageractionPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -44,6 +44,20 @@ Start-MgUserManagedDeviceConfigurationManagerAction -InputObject <IUsersActionsI
 Trigger action on ConfigurationManager client
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -64,7 +78,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPathsA6Tcp7UsersUserIdManageddevicesManageddeviceIdMicrosoftGraphTriggerconfigurationmanageractionPostRequestbodyContentApplicationJsonSchema
@@ -80,7 +94,7 @@ Accept wildcard characters: False
 
 ### -ConfigurationManagerAction
 Parameter for action triggerConfigurationManagerAction
-To construct, please use Get-Help -Online and see NOTES section for CONFIGURATIONMANAGERACTION properties and create a hash table.
+To construct, see NOTES section for CONFIGURATIONMANAGERACTION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphConfigurationManagerAction
@@ -96,7 +110,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersActionsIdentity
@@ -191,8 +205,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsA6Tcp7UsersUserIdManageddevicesManageddeviceIdMicrosoftGraphTriggerconfigurationmanageractionPostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsA6Tcp7UsersUserIdManageddevicesManageddeviceIdMicrosoftGraphTriggerconfigurationmanageractionPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
 ## OUTPUTS
 
 ### System.Boolean
@@ -205,17 +219,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsA6Tcp7UsersUserIdManageddevicesManageddeviceIdMicrosoftGraphTriggerconfigurationmanageractionPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsA6Tcp7UsersUserIdManageddevicesManageddeviceIdMicrosoftGraphTriggerconfigurationmanageractionPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ConfigurationManagerAction <IMicrosoftGraphConfigurationManagerAction>]`: Parameter for action triggerConfigurationManagerAction
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Action <ConfigurationManagerActionType?>]`: Action type on Configuration Manager client
 
-CONFIGURATIONMANAGERACTION `<IMicrosoftGraphConfigurationManagerAction>`: Parameter for action triggerConfigurationManagerAction
+`CONFIGURATIONMANAGERACTION <IMicrosoftGraphConfigurationManagerAction>`: Parameter for action triggerConfigurationManagerAction
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Action <ConfigurationManagerActionType?>]`: Action type on Configuration Manager client
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
@@ -249,7 +263,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription

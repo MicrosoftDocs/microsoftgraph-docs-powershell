@@ -1,56 +1,49 @@
----
-external help file: Microsoft.Graph.Calendar-help.xml
-Module Name: Microsoft.Graph.Calendar
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/get-mggroupevent
+﻿---
+external help file: Microsoft.Graph.Beta.Calendar-help.xml
+Module Name: Microsoft.Graph.Beta.Calendar
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupevent
 schema: 2.0.0
-ms.prod: outlook
 ---
 
-# Get-MgGroupEvent
+# Get-MgBetaGroupEvent
 
 ## SYNOPSIS
-The group's events.
+Get an event object.
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgGroupEvent -GroupId <String> [-Property <String[]>] [-Filter <String>] [-Skip <Int32>] [-Sort <String[]>]
- [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+Get-MgBetaGroupEvent -GroupId <String> [-Property <String[]>] [-Filter <String>] [-Skip <Int32>]
+ [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgGroupEvent -EventId <String> -GroupId <String> [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaGroupEvent -EventId <String> -GroupId <String> [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgGroupEvent -InputObject <ICalendarIdentity> [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaGroupEvent -InputObject <ICalendarIdentity> [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The group's events.
+Get an event object.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgGroupEvent Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Calendar
-Get-MgGroupEvent -GroupId $groupId -EventId $eventId
+Import-Module Microsoft.Graph.Beta.Calendar
+Get-MgBetaGroupEvent -GroupId $groupId -EventId $eventId
 ```
 
-This example shows how to use the Get-MgGroupEvent Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Get-MgGroupEvent Cmdlet
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Calendar
-Get-MgGroupEvent -GroupId $groupId
+Import-Module Microsoft.Graph.Beta.Calendar
+Get-MgBetaGroupEvent -GroupId $groupId
 ```
-
-This example shows how to use the Get-MgGroupEvent Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -132,7 +125,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ICalendarIdentity
@@ -226,10 +219,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ICalendarIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEvent
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEvent
 ## NOTES
 
 ALIASES
@@ -239,7 +232,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+`INPUTOBJECT <ICalendarIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[CalendarGroupId <String>]`: The unique identifier of calendarGroup
   - `[CalendarId <String>]`: The unique identifier of calendar
@@ -249,9 +242,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[EventId2 <String>]`: The unique identifier of event
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[GroupId <String>]`: The unique identifier of group
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
   - `[PlaceId <String>]`: The unique identifier of place
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS

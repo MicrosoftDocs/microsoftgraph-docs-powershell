@@ -1,67 +1,57 @@
----
-external help file: Microsoft.Graph.Groups-help.xml
-Module Name: Microsoft.Graph.Groups
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/invoke-mgsnoozegroupcalendareventreminder
+﻿---
+external help file: Microsoft.Graph.Beta.Groups-help.xml
+Module Name: Microsoft.Graph.Beta.Groups
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetasigngroupsiteinformationprotectiondigest
 schema: 2.0.0
 ---
 
-# Invoke-MgSnoozeGroupCalendarEventReminder
+# Invoke-MgBetaSignGroupSiteInformationProtectionDigest
 
 ## SYNOPSIS
-Postpone a reminder for an event in a user calendar until a new time.
+Invoke action signDigest
 
 ## SYNTAX
 
-### SnoozeExpanded (Default)
+### SignExpanded (Default)
 ```
-Invoke-MgSnoozeGroupCalendarEventReminder -EventId <String> -GroupId <String>
- [-AdditionalProperties <Hashtable>] [-NewReminderTime <IMicrosoftGraphDateTimeZone>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### Snooze
-```
-Invoke-MgSnoozeGroupCalendarEventReminder -EventId <String> -GroupId <String>
- -BodyParameter <IPathsLo9YtuGroupsGroupIdCalendarEventsEventIdMicrosoftGraphSnoozereminderPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgBetaSignGroupSiteInformationProtectionDigest -GroupId <String> -SiteId <String>
+ [-AdditionalProperties <Hashtable>] [-DigestInputFile <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### SnoozeViaIdentityExpanded
+### Sign
 ```
-Invoke-MgSnoozeGroupCalendarEventReminder -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
- [-NewReminderTime <IMicrosoftGraphDateTimeZone>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgBetaSignGroupSiteInformationProtectionDigest -GroupId <String> -SiteId <String>
+ -Body <IPaths1VaajyuGroupsGroupIdSitesSiteIdInformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### SnoozeViaIdentity
+### SignViaIdentityExpanded
 ```
-Invoke-MgSnoozeGroupCalendarEventReminder -InputObject <IGroupsIdentity>
- -BodyParameter <IPathsLo9YtuGroupsGroupIdCalendarEventsEventIdMicrosoftGraphSnoozereminderPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgBetaSignGroupSiteInformationProtectionDigest -InputObject <IGroupsIdentity>
+ [-AdditionalProperties <Hashtable>] [-DigestInputFile <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### SignViaIdentity
+```
+Invoke-MgBetaSignGroupSiteInformationProtectionDigest -InputObject <IGroupsIdentity>
+ -BodyParameter <IPaths1VaajyuGroupsGroupIdSitesSiteIdInformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Postpone a reminder for an event in a user calendar until a new time.
+Invoke action signDigest
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Users.Actions
-
-$params = @{
-	NewReminderTime = @{
-		DateTime = "dateTime-value"
-		TimeZone = "timeZone-value"
-	}
-}
-
-# A UPN can also be used as -UserId.
-Invoke-MgSnoozeUserEventReminder -UserId $userId -EventId $eventId -BodyParameter $params
+{{ Add code here }}
 ```
 
-This example shows how to use the Invoke-MgSnoozeGroupCalendarEventReminder Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -70,7 +60,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: SnoozeExpanded, SnoozeViaIdentityExpanded
+Parameter Sets: SignExpanded, SignViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -80,13 +70,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -BodyParameter
+### -Body
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
-Type: IPathsLo9YtuGroupsGroupIdCalendarEventsEventIdMicrosoftGraphSnoozereminderPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Snooze, SnoozeViaIdentity
+Type: IPaths1VaajyuGroupsGroupIdSitesSiteIdInformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Sign
 Aliases:
 
 Required: True
@@ -96,15 +86,31 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -EventId
-The unique identifier of event
+### -BodyParameter
+.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: String
-Parameter Sets: SnoozeExpanded, Snooze
+Type: IPaths1VaajyuGroupsGroupIdSitesSiteIdInformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: SignViaIdentity
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -DigestInputFile
+Input File for Digest (.)
+
+```yaml
+Type: String
+Parameter Sets: SignExpanded, SignViaIdentityExpanded
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -116,7 +122,7 @@ The unique identifier of group
 
 ```yaml
 Type: String
-Parameter Sets: SnoozeExpanded, Snooze
+Parameter Sets: SignExpanded, Sign
 Aliases:
 
 Required: True
@@ -128,11 +134,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IGroupsIdentity
-Parameter Sets: SnoozeViaIdentityExpanded, SnoozeViaIdentity
+Parameter Sets: SignViaIdentityExpanded, SignViaIdentity
 Aliases:
 
 Required: True
@@ -142,31 +148,15 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -NewReminderTime
-dateTimeTimeZone
-To construct, please use Get-Help -Online and see NOTES section for NEWREMINDERTIME properties and create a hash table.
+### -SiteId
+The unique identifier of site
 
 ```yaml
-Type: IMicrosoftGraphDateTimeZone
-Parameter Sets: SnoozeExpanded, SnoozeViaIdentityExpanded
+Type: String
+Parameter Sets: SignExpanded, Sign
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -209,11 +199,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-### Microsoft.Graph.PowerShell.Models.IPathsLo9YtuGroupsGroupIdCalendarEventsEventIdMicrosoftGraphSnoozereminderPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1VaajyuGroupsGroupIdSitesSiteIdInformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSigningResult
 ## NOTES
 
 ALIASES
@@ -223,14 +213,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsLo9YtuGroupsGroupIdCalendarEventsEventIdMicrosoftGraphSnoozereminderPostRequestbodyContentApplicationJsonSchema>`: .
+`BODY <IPaths1VaajyuGroupsGroupIdSitesSiteIdInformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[NewReminderTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
-    - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
+  - `[Digest <Byte[]>]`: 
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+`BODYPARAMETER <IPaths1VaajyuGroupsGroupIdSitesSiteIdInformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Digest <Byte[]>]`: 
+
+`INPUTOBJECT <IGroupsIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[ConversationId <String>]`: The unique identifier of conversation
@@ -252,11 +243,9 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
   - `[Interval <String>]`: Usage: interval='{interval}'
   - `[ListId <String>]`: The unique identifier of list
-  - `[ListId1 <String>]`: Usage: listId='{listId}'
   - `[ListItemId <String>]`: The unique identifier of listItem
   - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
   - `[MentionId <String>]`: The unique identifier of mention
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
   - `[NotebookId <String>]`: The unique identifier of notebook
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
@@ -269,7 +258,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[Q <String>]`: Usage: q='{q}'
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
   - `[SiteId <String>]`: The unique identifier of site
   - `[SitePageId <String>]`: The unique identifier of sitePage
   - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
@@ -278,10 +266,5 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[User <String>]`: Usage: User='{User}'
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
-
-NEWREMINDERTIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
-  - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
 
 ## RELATED LINKS

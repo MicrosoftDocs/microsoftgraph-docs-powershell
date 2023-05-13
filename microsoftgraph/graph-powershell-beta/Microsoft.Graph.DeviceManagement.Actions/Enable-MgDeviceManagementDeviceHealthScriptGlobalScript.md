@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/enable-mgdevicemanagementdevicehealthscriptglobalscript
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/enable-mgbetadevicemanagementdevicehealthscriptglobalscript
 schema: 2.0.0
 ---
 
-# Enable-MgDeviceManagementDeviceHealthScriptGlobalScript
+# Enable-MgBetaDeviceManagementDeviceHealthScriptGlobalScript
 
 ## SYNOPSIS
 Invoke action enableGlobalScripts
@@ -13,13 +13,28 @@ Invoke action enableGlobalScripts
 ## SYNTAX
 
 ```
-Enable-MgDeviceManagementDeviceHealthScriptGlobalScript [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Enable-MgBetaDeviceManagementDeviceHealthScriptGlobalScript [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action enableGlobalScripts
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 

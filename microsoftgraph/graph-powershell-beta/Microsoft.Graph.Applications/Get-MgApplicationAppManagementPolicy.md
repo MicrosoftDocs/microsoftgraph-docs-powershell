@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Applications-help.xml
-Module Name: Microsoft.Graph.Applications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgapplicationappmanagementpolicy
+﻿---
+external help file: Microsoft.Graph.Beta.Applications-help.xml
+Module Name: Microsoft.Graph.Beta.Applications
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationappmanagementpolicy
 schema: 2.0.0
 ---
 
-# Get-MgApplicationAppManagementPolicy
+# Get-MgBetaApplicationAppManagementPolicy
 
 ## SYNOPSIS
 The appManagementPolicy applied to this application.
@@ -13,8 +13,8 @@ The appManagementPolicy applied to this application.
 ## SYNTAX
 
 ```
-Get-MgApplicationAppManagementPolicy -ApplicationId <String> [-ExpandProperty <String[]>] [-Filter <String>]
- [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+Get-MgBetaApplicationAppManagementPolicy -ApplicationId <String> [-ExpandProperty <String[]>]
+ [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
@@ -22,6 +22,20 @@ Get-MgApplicationAppManagementPolicy -ApplicationId <String> [-ExpandProperty <S
 The appManagementPolicy applied to this application.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -198,7 +212,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppManagementPolicy1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAppManagementPolicy
 ## NOTES
 
 ALIASES

@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/invoke-mgavailabledirectoryfederationconfigurationprovidertype
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetaavailabledirectoryfederationconfigurationprovidertype
 schema: 2.0.0
 ---
 
-# Invoke-MgAvailableDirectoryFederationConfigurationProviderType
+# Invoke-MgBetaAvailableDirectoryFederationConfigurationProviderType
 
 ## SYNOPSIS
 Invoke function availableProviderTypes
@@ -13,14 +13,28 @@ Invoke function availableProviderTypes
 ## SYNTAX
 
 ```
-Invoke-MgAvailableDirectoryFederationConfigurationProviderType [-Count] [-Filter <String>] [-Search <String>]
- [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
+Invoke-MgBetaAvailableDirectoryFederationConfigurationProviderType [-Count] [-Filter <String>]
+ [-Search <String>] [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke function availableProviderTypes
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 

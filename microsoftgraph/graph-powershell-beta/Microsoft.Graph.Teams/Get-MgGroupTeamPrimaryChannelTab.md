@@ -1,12 +1,11 @@
----
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mggroupteamprimarychanneltab
+﻿---
+external help file: Microsoft.Graph.Beta.Teams-help.xml
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamprimarychanneltab
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
-# Get-MgGroupTeamPrimaryChannelTab
+# Get-MgBetaGroupTeamPrimaryChannelTab
 
 ## SYNOPSIS
 A collection of all the tabs in the channel.
@@ -16,20 +15,20 @@ A navigation property.
 
 ### List (Default)
 ```
-Get-MgGroupTeamPrimaryChannelTab -GroupId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaGroupTeamPrimaryChannelTab -GroupId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
  [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgGroupTeamPrimaryChannelTab -GroupId <String> -TeamsTabId <String> [-ExpandProperty <String[]>]
+Get-MgBetaGroupTeamPrimaryChannelTab -GroupId <String> -TeamsTabId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgGroupTeamPrimaryChannelTab -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>]
+Get-MgBetaGroupTeamPrimaryChannelTab -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
@@ -39,27 +38,19 @@ A navigation property.
 
 ## EXAMPLES
 
-### Example 1: List all the tabs in the channel along with associated Teams app
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Teams
-
-Get-MgTeamChannelTab -TeamId $teamId -ChannelId $channelId -ExpandProperty "teamsApp"
+Import-Module Microsoft.Graph.Beta.Teams
 ```
 
-This example shows how to use the Get-MgGroupTeamPrimaryChannelTab Cmdlet.
+Get-MgBetaTeamChannelTab -TeamId $teamId -ChannelId $channelId -ExpandProperty "teamsApp"
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: List all the tabs belonging to a specific app in a channel
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Teams
-
-Get-MgTeamChannelTab -TeamId $teamId -ChannelId $channelId -ExpandProperty "teamsApp" -Filter "teamsApp/id eq 'com.microsoft.teamspace.tab.planner'"
+Import-Module Microsoft.Graph.Beta.Teams
 ```
 
-This example shows how to use the Get-MgGroupTeamPrimaryChannelTab Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Get-MgBetaTeamChannelTab -TeamId $teamId -ChannelId $channelId -ExpandProperty "teamsApp" -Filter "teamsApp/id eq 'com.microsoft.teamspace.tab.planner'"
 
 ## PARAMETERS
 
@@ -141,7 +132,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ITeamsIdentity
@@ -265,10 +256,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsTab1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamsTab
 ## NOTES
 
 ALIASES
@@ -278,7 +269,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat

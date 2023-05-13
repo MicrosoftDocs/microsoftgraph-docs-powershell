@@ -1,27 +1,27 @@
----
-external help file: Microsoft.Graph.Applications-help.xml
-Module Name: Microsoft.Graph.Applications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/invoke-mgfunctionserviceprincipalsynchronizationjobschema
+﻿---
+external help file: Microsoft.Graph.Beta.Applications-help.xml
+Module Name: Microsoft.Graph.Beta.Applications
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetafunctionserviceprincipalsynchronizationjobschema
 schema: 2.0.0
 ---
 
-# Invoke-MgFunctionServicePrincipalSynchronizationJobSchema
+# Invoke-MgBetaFunctionServicePrincipalSynchronizationJobSchema
 
 ## SYNOPSIS
 Invoke function functions
 
 ## SYNTAX
 
-### Functions (Default)
+### Function (Default)
 ```
-Invoke-MgFunctionServicePrincipalSynchronizationJobSchema -ServicePrincipalId <String>
+Invoke-MgBetaFunctionServicePrincipalSynchronizationJobSchema -ServicePrincipalId <String>
  -SynchronizationJobId <String> [-Count] [-Filter <String>] [-Property <String[]>] [-Search <String>]
  [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
 ```
 
-### FunctionsViaIdentity
+### FunctionViaIdentity
 ```
-Invoke-MgFunctionServicePrincipalSynchronizationJobSchema -InputObject <IApplicationsIdentity> [-Count]
+Invoke-MgBetaFunctionServicePrincipalSynchronizationJobSchema -InputObject <IApplicationsIdentity> [-Count]
  [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [<CommonParameters>]
 ```
@@ -31,14 +31,11 @@ Invoke function functions
 
 ## EXAMPLES
 
-### Example 1: Using the Invoke-MgFunctionServicePrincipalSynchronizationJobSchema Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Applications
-Invoke-MgFunctionServicePrincipalSynchronizationJobSchema -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId
+Import-Module Microsoft.Graph.Beta.Applications
+Invoke-MgBetaFunctionServicePrincipalSynchronizationJobSchema -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId
 ```
-
-This example shows how to use the Invoke-MgFunctionServicePrincipalSynchronizationJobSchema Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -74,11 +71,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IApplicationsIdentity
-Parameter Sets: FunctionsViaIdentity
+Parameter Sets: FunctionViaIdentity
 Aliases:
 
 Required: True
@@ -123,7 +120,7 @@ The unique identifier of servicePrincipal
 
 ```yaml
 Type: String
-Parameter Sets: Functions
+Parameter Sets: Function
 Aliases:
 
 Required: True
@@ -153,7 +150,7 @@ The unique identifier of synchronizationJob
 
 ```yaml
 Type: String
-Parameter Sets: Functions
+Parameter Sets: Function
 Aliases:
 
 Required: True
@@ -198,10 +195,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttributeMappingFunctionSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAttributeMappingFunctionSchema
 ## NOTES
 
 ALIASES
@@ -211,7 +208,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+`INPUTOBJECT <IApplicationsIdentity>`: Identity Parameter
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
   - `[ApplicationId <String>]`: The unique identifier of application

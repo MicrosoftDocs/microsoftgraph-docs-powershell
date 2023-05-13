@@ -1,60 +1,54 @@
----
-external help file: Microsoft.Graph.People-help.xml
-Module Name: Microsoft.Graph.People
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.people/get-mguserprofileposition
+﻿---
+external help file: Microsoft.Graph.Beta.People-help.xml
+Module Name: Microsoft.Graph.Beta.People
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofileposition
 schema: 2.0.0
 ---
 
-# Get-MgUserProfilePosition
+# Get-MgBetaUserProfilePosition
 
 ## SYNOPSIS
-Represents detailed information about work positions associated with a user's profile.
+Retrieve the properties and relationships of a workPosition object in a user's profile.
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgUserProfilePosition -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaUserProfilePosition -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
  [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgUserProfilePosition -UserId <String> -WorkPositionId <String> [-ExpandProperty <String[]>]
+Get-MgBetaUserProfilePosition -UserId <String> -WorkPositionId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgUserProfilePosition -InputObject <IPeopleIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
+Get-MgBetaUserProfilePosition -InputObject <IPeopleIdentity> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Represents detailed information about work positions associated with a user's profile.
+Retrieve the properties and relationships of a workPosition object in a user's profile.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgUserProfilePosition Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.People
+Import-Module Microsoft.Graph.Beta.People
 # A UPN can also be used as -UserId.
-Get-MgUserProfilePosition -UserId $userId
+Get-MgBetaUserProfilePosition -UserId $userId
 ```
 
-This example shows how to use the Get-MgUserProfilePosition Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Get-MgUserProfilePosition Cmdlet
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.People
+Import-Module Microsoft.Graph.Beta.People
 # A UPN can also be used as -UserId.
-Get-MgUserProfilePosition -UserId $userId -WorkPositionId $workPositionId
+Get-MgBetaUserProfilePosition -UserId $userId -WorkPositionId $workPositionId
 ```
-
-This example shows how to use the Get-MgUserProfilePosition Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -121,7 +115,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IPeopleIdentity
@@ -260,10 +254,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPeopleIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWorkPosition
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWorkPosition
 ## NOTES
 
 ALIASES
@@ -273,7 +267,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
+`INPUTOBJECT <IPeopleIdentity>`: Identity Parameter
   - `[ActivityStatisticsId <String>]`: The unique identifier of activityStatistics
   - `[EducationalActivityId <String>]`: The unique identifier of educationalActivity
   - `[ItemAddressId <String>]`: The unique identifier of itemAddress
@@ -291,10 +285,7 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
   - `[PersonNameId <String>]`: The unique identifier of personName
   - `[PersonWebsiteId <String>]`: The unique identifier of personWebsite
   - `[ProjectParticipationId <String>]`: The unique identifier of projectParticipation
-  - `[SharedInsightId <String>]`: The unique identifier of sharedInsight
   - `[SkillProficiencyId <String>]`: The unique identifier of skillProficiency
-  - `[TrendingId <String>]`: The unique identifier of trending
-  - `[UsedInsightId <String>]`: The unique identifier of usedInsight
   - `[UserAccountInformationId <String>]`: The unique identifier of userAccountInformation
   - `[UserId <String>]`: The unique identifier of user
   - `[WebAccountId <String>]`: The unique identifier of webAccount

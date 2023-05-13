@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementandroidforworkappconfigurationschema
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementandroidforworkappconfigurationschema
 schema: 2.0.0
 ---
 
-# Update-MgDeviceManagementAndroidForWorkAppConfigurationSchema
+# Update-MgBetaDeviceManagementAndroidForWorkAppConfigurationSchema
 
 ## SYNOPSIS
 Update the navigation property androidForWorkAppConfigurationSchemas in deviceManagement
@@ -14,38 +14,52 @@ Update the navigation property androidForWorkAppConfigurationSchemas in deviceMa
 
 ### UpdateExpanded (Default)
 ```
-Update-MgDeviceManagementAndroidForWorkAppConfigurationSchema -AndroidForWorkAppConfigurationSchemaId <String>
- [-AdditionalProperties <Hashtable>] [-ExampleJsonInputFile <String>] [-Id <String>]
- [-SchemaItems <IMicrosoftGraphAndroidForWorkAppConfigurationSchemaItem[]>] [-PassThru] [-WhatIf] [-Confirm]
+Update-MgBetaDeviceManagementAndroidForWorkAppConfigurationSchema
+ -AndroidForWorkAppConfigurationSchemaId <String> [-AdditionalProperties <Hashtable>]
+ [-ExampleJsonInputFile <String>] [-Id <String>]
+ [-SchemaItems <IMicrosoftGraphAndroidForWorkAppConfigurationSchemaItem[]>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgDeviceManagementAndroidForWorkAppConfigurationSchema -AndroidForWorkAppConfigurationSchemaId <String>
- -BodyParameter <IMicrosoftGraphAndroidForWorkAppConfigurationSchema> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaDeviceManagementAndroidForWorkAppConfigurationSchema
+ -AndroidForWorkAppConfigurationSchemaId <String>
+ -BodyParameter <IMicrosoftGraphAndroidForWorkAppConfigurationSchema> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgDeviceManagementAndroidForWorkAppConfigurationSchema -InputObject <IDeviceManagementIdentity>
+Update-MgBetaDeviceManagementAndroidForWorkAppConfigurationSchema -InputObject <IDeviceManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-ExampleJsonInputFile <String>] [-Id <String>]
- [-SchemaItems <IMicrosoftGraphAndroidForWorkAppConfigurationSchemaItem[]>] [-PassThru] [-WhatIf] [-Confirm]
+ [-SchemaItems <IMicrosoftGraphAndroidForWorkAppConfigurationSchemaItem[]>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgDeviceManagementAndroidForWorkAppConfigurationSchema -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphAndroidForWorkAppConfigurationSchema> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaDeviceManagementAndroidForWorkAppConfigurationSchema -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphAndroidForWorkAppConfigurationSchema> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property androidForWorkAppConfigurationSchemas in deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -81,7 +95,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Schema describing an Android for Work application's custom configurations.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAndroidForWorkAppConfigurationSchema
@@ -111,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -128,7 +142,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementIdentity
@@ -142,24 +156,9 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -SchemaItems
 Collection of items each representing a named configuration option in the schema
-To construct, please use Get-Help -Online and see NOTES section for SCHEMAITEMS properties and create a hash table.
+To construct, see NOTES section for SCHEMAITEMS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAndroidForWorkAppConfigurationSchemaItem[]
@@ -209,11 +208,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAndroidForWorkAppConfigurationSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAndroidForWorkAppConfigurationSchema
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAndroidForWorkAppConfigurationSchema
 ## NOTES
 
 ALIASES
@@ -223,9 +222,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphAndroidForWorkAppConfigurationSchema>`: Schema describing an Android for Work application's custom configurations.
+`BODYPARAMETER <IMicrosoftGraphAndroidForWorkAppConfigurationSchema>`: Schema describing an Android for Work application's custom configurations.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ExampleJson <Byte[]>]`: UTF8 encoded byte array containing example JSON string conforming to this schema that demonstrates how to set the configuration for this app
   - `[SchemaItems <IMicrosoftGraphAndroidForWorkAppConfigurationSchemaItem[]>]`: Collection of items each representing a named configuration option in the schema
     - `[DataType <String>]`: Data type for a configuration item inside an Android for Work application's custom configuration schema
@@ -240,7 +239,7 @@ BODYPARAMETER `<IMicrosoftGraphAndroidForWorkAppConfigurationSchema>`: Schema de
       - `[Name <String>]`: Name for this key-value pair
       - `[Value <String>]`: Value for this key-value pair
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementIdentity>`: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: The unique identifier of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: The unique identifier of androidManagedStoreAppConfigurationSchema
@@ -372,8 +371,10 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionAppLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionAppLearningSummary
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
+  - `[WindowsQualityUpdateProfileAssignmentId <String>]`: The unique identifier of windowsQualityUpdateProfileAssignment
+  - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
-SCHEMAITEMS <IMicrosoftGraphAndroidForWorkAppConfigurationSchemaItem\[]>: Collection of items each representing a named configuration option in the schema
+`SCHEMAITEMS <IMicrosoftGraphAndroidForWorkAppConfigurationSchemaItem[]>`: Collection of items each representing a named configuration option in the schema
   - `[DataType <String>]`: Data type for a configuration item inside an Android for Work application's custom configuration schema
   - `[DefaultBoolValue <Boolean?>]`: Default value for boolean type items, if specified by the app developer
   - `[DefaultIntValue <Int32?>]`: Default value for integer type items, if specified by the app developer

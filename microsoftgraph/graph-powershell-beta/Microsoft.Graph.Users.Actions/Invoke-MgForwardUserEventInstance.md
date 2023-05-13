@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Users.Actions-help.xml
-Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgforwardusereventinstance
+﻿---
+external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.Users.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaforwarduserevent
 schema: 2.0.0
 ---
 
-# Invoke-MgForwardUserEventInstance
+# Invoke-MgBetaForwardUserEvent
 
 ## SYNOPSIS
 This action allows the organizer or attendee of a meeting event to forward the \nmeeting request to a new recipient.
@@ -16,29 +16,29 @@ This convenience is not available when forwarding from an Outlook.com account.
 
 ### ForwardExpanded (Default)
 ```
-Invoke-MgForwardUserEventInstance -EventId <String> -EventId1 <String> -UserId <String>
- [-AdditionalProperties <Hashtable>] [-Comment <String>] [-ToRecipients <IMicrosoftGraphRecipient[]>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgBetaForwardUserEvent -EventId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
+ [-Comment <String>] [-ToRecipients <IMicrosoftGraphRecipient[]>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Forward
 ```
-Invoke-MgForwardUserEventInstance -EventId <String> -EventId1 <String> -UserId <String>
- -BodyParameter <IPaths1K9ImduUsersUserIdEventsEventIdInstancesEventId1MicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>
+Invoke-MgBetaForwardUserEvent -EventId <String> -UserId <String>
+ -BodyParameter <IPathsPg3HzyUsersUserIdEventsEventIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ForwardViaIdentityExpanded
 ```
-Invoke-MgForwardUserEventInstance -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
+Invoke-MgBetaForwardUserEvent -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
  [-Comment <String>] [-ToRecipients <IMicrosoftGraphRecipient[]>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### ForwardViaIdentity
 ```
-Invoke-MgForwardUserEventInstance -InputObject <IUsersActionsIdentity>
- -BodyParameter <IPaths1K9ImduUsersUserIdEventsEventIdInstancesEventId1MicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>
+Invoke-MgBetaForwardUserEvent -InputObject <IUsersActionsIdentity>
+ -BodyParameter <IPathsPg3HzyUsersUserIdEventsEventIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -49,10 +49,9 @@ This convenience is not available when forwarding from an Outlook.com account.
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Users.Actions
-
+Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
 	ToRecipients = @(
 		@{
@@ -64,14 +63,9 @@ $params = @{
 	)
 	Comment = "Dana, hope you can make this meeting."
 }
-
 # A UPN can also be used as -UserId.
-Invoke-MgForwardUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
+Invoke-MgBetaForwardUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
 ```
-
-This example shows how to use the Invoke-MgForwardUserEventInstance Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -92,10 +86,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1K9ImduUsersUserIdEventsEventIdInstancesEventId1MicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema
+Type: IPathsPg3HzyUsersUserIdEventsEventIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Forward, ForwardViaIdentity
 Aliases:
 
@@ -136,24 +130,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -EventId1
-The unique identifier of event
-
-```yaml
-Type: String
-Parameter Sets: ForwardExpanded, Forward
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersActionsIdentity
@@ -184,7 +163,7 @@ Accept wildcard characters: False
 
 ### -ToRecipients
 .
-To construct, please use Get-Help -Online and see NOTES section for TORECIPIENTS properties and create a hash table.
+To construct, see NOTES section for TORECIPIENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRecipient[]
@@ -249,8 +228,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1K9ImduUsersUserIdEventsEventIdInstancesEventId1MicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsPg3HzyUsersUserIdEventsEventIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
 ## OUTPUTS
 
 ### System.Boolean
@@ -263,16 +242,16 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1K9ImduUsersUserIdEventsEventIdInstancesEventId1MicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsPg3HzyUsersUserIdEventsEventIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Comment <String>]`: 
   - `[ToRecipients <IMicrosoftGraphRecipient[]>]`: 
     - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Address <String>]`: The email address of the person or entity.
-      - `[Name <String>]`: The display name of the person or entity.
+      - `[Address <String>]`: The email address of an entity instance.
+      - `[Name <String>]`: The display name of an entity instance.
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
@@ -306,7 +285,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription
@@ -315,10 +293,10 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
   - `[UserId <String>]`: The unique identifier of user
 
-TORECIPIENTS <IMicrosoftGraphRecipient\[]>: .
+`TORECIPIENTS <IMicrosoftGraphRecipient[]>`: .
   - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Address <String>]`: The email address of the person or entity.
-    - `[Name <String>]`: The display name of the person or entity.
+    - `[Address <String>]`: The email address of an entity instance.
+    - `[Name <String>]`: The display name of an entity instance.
 
 ## RELATED LINKS

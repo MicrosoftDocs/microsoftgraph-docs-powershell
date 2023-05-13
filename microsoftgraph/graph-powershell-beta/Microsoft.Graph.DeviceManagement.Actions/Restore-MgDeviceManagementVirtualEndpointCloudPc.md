@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/restore-mgdevicemanagementvirtualendpointcloudpc
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/restore-mgbetadevicemanagementvirtualendpointcloudpc
 schema: 2.0.0
 ---
 
-# Restore-MgDeviceManagementVirtualEndpointCloudPc
+# Restore-MgBetaDeviceManagementVirtualEndpointCloudPc
 
 ## SYNOPSIS
 Restore a specific Cloud PC.
@@ -15,27 +15,27 @@ Use this API to trigger a remote action that restores a Cloud PC device to a pre
 
 ### RestoreExpanded (Default)
 ```
-Restore-MgDeviceManagementVirtualEndpointCloudPc -CloudPcId <String> [-AdditionalProperties <Hashtable>]
+Restore-MgBetaDeviceManagementVirtualEndpointCloudPc -CloudPcId <String> [-AdditionalProperties <Hashtable>]
  [-CloudPcSnapshotId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Restore
 ```
-Restore-MgDeviceManagementVirtualEndpointCloudPc -CloudPcId <String>
+Restore-MgBetaDeviceManagementVirtualEndpointCloudPc -CloudPcId <String>
  -BodyParameter <IPathsM2Hnp9DevicemanagementVirtualendpointCloudpcsCloudpcIdMicrosoftGraphRestorePostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### RestoreViaIdentityExpanded
 ```
-Restore-MgDeviceManagementVirtualEndpointCloudPc -InputObject <IDeviceManagementActionsIdentity>
+Restore-MgBetaDeviceManagementVirtualEndpointCloudPc -InputObject <IDeviceManagementActionsIdentity>
  [-AdditionalProperties <Hashtable>] [-CloudPcSnapshotId <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### RestoreViaIdentity
 ```
-Restore-MgDeviceManagementVirtualEndpointCloudPc -InputObject <IDeviceManagementActionsIdentity>
+Restore-MgBetaDeviceManagementVirtualEndpointCloudPc -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPathsM2Hnp9DevicemanagementVirtualendpointCloudpcsCloudpcIdMicrosoftGraphRestorePostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -46,17 +46,14 @@ Use this API to trigger a remote action that restores a Cloud PC device to a pre
 
 ## EXAMPLES
 
-### Example 1: Using the Restore-MgDeviceManagementVirtualEndpointCloudPc Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.DeviceManagement.Actions
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
 $params = @{
 	CloudPcSnapshotId = "A00009UV000_93aff428-61f2-467f-a879-1102af6fd4a8"
 }
-Restore-MgDeviceManagementVirtualEndpointCloudPc -CloudPCId $cloudPCId -BodyParameter $params
+Restore-MgBetaDeviceManagementVirtualEndpointCloudPc -CloudPCId $cloudPCId -BodyParameter $params
 ```
-
-This example shows how to use the Restore-MgDeviceManagementVirtualEndpointCloudPc Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -77,7 +74,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPathsM2Hnp9DevicemanagementVirtualendpointCloudpcsCloudpcIdMicrosoftGraphRestorePostRequestbodyContentApplicationJsonSchema
@@ -123,7 +120,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementActionsIdentity
@@ -188,8 +185,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-### Microsoft.Graph.PowerShell.Models.IPathsM2Hnp9DevicemanagementVirtualendpointCloudpcsCloudpcIdMicrosoftGraphRestorePostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsM2Hnp9DevicemanagementVirtualendpointCloudpcsCloudpcIdMicrosoftGraphRestorePostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### System.Boolean
@@ -202,11 +199,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsM2Hnp9DevicemanagementVirtualendpointCloudpcsCloudpcIdMicrosoftGraphRestorePostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsM2Hnp9DevicemanagementVirtualendpointCloudpcsCloudpcIdMicrosoftGraphRestorePostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CloudPcSnapshotId <String>]`: 
 
-INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[AlertRecordId <String>]`: The unique identifier of alertRecord
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: The unique identifier of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: The unique identifier of androidForWorkEnrollmentProfile
@@ -250,7 +247,6 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[MicrosoftTunnelSiteId <String>]`: The unique identifier of microsoftTunnelSite
   - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
   - `[NotificationMessageTemplateId <String>]`: The unique identifier of notificationMessageTemplate
-  - `[OemWarrantyInformationOnboardingId <String>]`: The unique identifier of oemWarrantyInformationOnboarding
   - `[RemoteAssistancePartnerId <String>]`: The unique identifier of remoteAssistancePartner
   - `[RoleScopeTagId <String>]`: The unique identifier of roleScopeTag
   - `[WindowsAutopilotDeploymentProfileId <String>]`: The unique identifier of windowsAutopilotDeploymentProfile

@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/remove-mgteamworkteamappsetting
+﻿---
+external help file: Microsoft.Graph.Beta.Teams-help.xml
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamworkteamappsetting
 schema: 2.0.0
 ---
 
-# Remove-MgTeamworkTeamAppSetting
+# Remove-MgBetaTeamworkTeamAppSetting
 
 ## SYNOPSIS
 Delete navigation property teamsAppSettings for teamwork
@@ -13,13 +13,27 @@ Delete navigation property teamsAppSettings for teamwork
 ## SYNTAX
 
 ```
-Remove-MgTeamworkTeamAppSetting [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgBetaTeamworkTeamAppSetting [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Delete navigation property teamsAppSettings for teamwork
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 

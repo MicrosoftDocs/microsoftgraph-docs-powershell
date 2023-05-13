@@ -1,12 +1,11 @@
----
-external help file: Microsoft.Graph.Groups-help.xml
-Module Name: Microsoft.Graph.Groups
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/get-mggroupmember
+﻿---
+external help file: Microsoft.Graph.Beta.Groups-help.xml
+Module Name: Microsoft.Graph.Beta.Groups
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupmember
 schema: 2.0.0
-ms.prod: groups
 ---
 
-# Get-MgGroupMember
+# Get-MgBetaGroupMember
 
 ## SYNOPSIS
 Direct members of this group, who can be users, devices, other groups, or service principals.
@@ -18,7 +17,7 @@ For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayNa
 ## SYNTAX
 
 ```
-Get-MgGroupMember -GroupId <String> [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>]
+Get-MgBetaGroupMember -GroupId <String> [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ConsistencyLevel <String>]
  [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
@@ -32,9 +31,10 @@ For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayNa
 
 ## EXAMPLES
 
-### Example 1: Get members of a group
+### EXAMPLE 1
 ```powershell
-Get-MgGroupMember -GroupId '7b7be3ab-d2b3-441c-8111-2e89b8493fff'
+Get-MgBetaGroupMember -GroupId '7b7be3ab-d2b3-441c-8111-2e89b8493fff'
+```
 
 Id                                   DeletedDateTime
 --                                   ---------------
@@ -42,9 +42,6 @@ Id                                   DeletedDateTime
 0107d1b2-0402-4ef9-a58c-eb0661c5d596
 f9f1bd4f-16ca-4404-925e-5b08b6a3832f
 5441e919-583c-4292-aa3f-98250d8d217b
-```
-
-This examples gets the members of the specified group.
 
 ## PARAMETERS
 
@@ -237,7 +234,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryObject
 ## NOTES
 
 ALIASES

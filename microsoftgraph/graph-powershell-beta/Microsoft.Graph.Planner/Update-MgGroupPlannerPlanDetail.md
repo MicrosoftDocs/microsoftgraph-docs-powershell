@@ -1,12 +1,11 @@
----
-external help file: Microsoft.Graph.Planner-help.xml
-Module Name: Microsoft.Graph.Planner
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/update-mggroupplannerplandetail
+﻿---
+external help file: Microsoft.Graph.Beta.Planner-help.xml
+Module Name: Microsoft.Graph.Beta.Planner
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetagroupplannerplandetail
 schema: 2.0.0
-ms.prod: planner
 ---
 
-# Update-MgGroupPlannerPlanDetail
+# Update-MgBetaGroupPlannerPlanDetail
 
 ## SYNOPSIS
 Update the navigation property details in groups
@@ -15,30 +14,30 @@ Update the navigation property details in groups
 
 ### UpdateExpanded (Default)
 ```
-Update-MgGroupPlannerPlanDetail -GroupId <String> -PlannerPlanId <String> -IfMatch <String>
+Update-MgBetaGroupPlannerPlanDetail -GroupId <String> -PlannerPlanId <String> -IfMatch <String>
  [-AdditionalProperties <Hashtable>] [-CategoryDescriptions <IMicrosoftGraphPlannerCategoryDescriptions>]
- [-ContextDetails <Hashtable>] [-Id <String>] [-SharedWith <Hashtable>] [-PassThru] [-WhatIf] [-Confirm]
+ [-ContextDetails <Hashtable>] [-Id <String>] [-SharedWith <Hashtable>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgGroupPlannerPlanDetail -GroupId <String> -PlannerPlanId <String> -IfMatch <String>
- -BodyParameter <IMicrosoftGraphPlannerPlanDetails1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaGroupPlannerPlanDetail -GroupId <String> -PlannerPlanId <String> -IfMatch <String>
+ -BodyParameter <IMicrosoftGraphPlannerPlanDetails> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgGroupPlannerPlanDetail -InputObject <IPlannerIdentity> -IfMatch <String>
+Update-MgBetaGroupPlannerPlanDetail -InputObject <IPlannerIdentity> -IfMatch <String>
  [-AdditionalProperties <Hashtable>] [-CategoryDescriptions <IMicrosoftGraphPlannerCategoryDescriptions>]
- [-ContextDetails <Hashtable>] [-Id <String>] [-SharedWith <Hashtable>] [-PassThru] [-WhatIf] [-Confirm]
+ [-ContextDetails <Hashtable>] [-Id <String>] [-SharedWith <Hashtable>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgGroupPlannerPlanDetail -InputObject <IPlannerIdentity> -IfMatch <String>
- -BodyParameter <IMicrosoftGraphPlannerPlanDetails1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaGroupPlannerPlanDetail -InputObject <IPlannerIdentity> -IfMatch <String>
+ -BodyParameter <IMicrosoftGraphPlannerPlanDetails> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -46,9 +45,10 @@ Update the navigation property details in groups
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Planner
+Import-Module Microsoft.Graph.Beta.Planner
+```
 
 $params = @{
 	SharedWith = @{
@@ -61,12 +61,7 @@ $params = @{
 	}
 }
 
-Update-MgPlannerPlanDetail -PlannerPlanId $plannerPlanId -BodyParameter $params
-```
-
-This example shows how to use the Update-MgGroupPlannerPlanDetail Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Update-MgBetaPlannerPlanDetail -PlannerPlanId $plannerPlanId -BodyParameter $params
 
 ## PARAMETERS
 
@@ -87,10 +82,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 plannerPlanDetails
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerPlanDetails1
+Type: IMicrosoftGraphPlannerPlanDetails
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -103,7 +98,7 @@ Accept wildcard characters: False
 
 ### -CategoryDescriptions
 plannerCategoryDescriptions
-To construct, please use Get-Help -Online and see NOTES section for CATEGORYDESCRIPTIONS properties and create a hash table.
+To construct, see NOTES section for CATEGORYDESCRIPTIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPlannerCategoryDescriptions
@@ -148,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -180,7 +175,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IPlannerIdentity
@@ -191,21 +186,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -275,11 +255,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerPlanDetails1
-### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerPlanDetails
+### Microsoft.Graph.Beta.PowerShell.Models.IPlannerIdentity
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerPlanDetails
 ## NOTES
 
 ALIASES
@@ -289,9 +269,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPlannerPlanDetails1>`: plannerPlanDetails
+`BODYPARAMETER <IMicrosoftGraphPlannerPlanDetails>`: plannerPlanDetails
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[CategoryDescriptions <IMicrosoftGraphPlannerCategoryDescriptions>]`: plannerCategoryDescriptions
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Category1 <String>]`: The label associated with Category 1
@@ -324,7 +304,7 @@ BODYPARAMETER `<IMicrosoftGraphPlannerPlanDetails1>`: plannerPlanDetails
   - `[SharedWith <IMicrosoftGraphPlannerUserIds>]`: plannerUserIds
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
-CATEGORYDESCRIPTIONS `<IMicrosoftGraphPlannerCategoryDescriptions>`: plannerCategoryDescriptions
+`CATEGORYDESCRIPTIONS <IMicrosoftGraphPlannerCategoryDescriptions>`: plannerCategoryDescriptions
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Category1 <String>]`: The label associated with Category 1
   - `[Category10 <String>]`: The label associated with Category 10
@@ -352,7 +332,7 @@ CATEGORYDESCRIPTIONS `<IMicrosoftGraphPlannerCategoryDescriptions>`: plannerCate
   - `[Category8 <String>]`: The label associated with Category 8
   - `[Category9 <String>]`: The label associated with Category 9
 
-INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
+`INPUTOBJECT <IPlannerIdentity>`: Identity Parameter
   - `[GroupId <String>]`: The unique identifier of group
   - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket
   - `[PlannerDeltaId <String>]`: The unique identifier of plannerDelta

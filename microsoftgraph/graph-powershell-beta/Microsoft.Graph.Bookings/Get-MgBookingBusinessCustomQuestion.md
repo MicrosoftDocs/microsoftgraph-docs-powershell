@@ -1,63 +1,52 @@
----
-external help file: Microsoft.Graph.Bookings-help.xml
-Module Name: Microsoft.Graph.Bookings
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.bookings/get-mgbookingbusinesscustomquestion
+﻿---
+external help file: Microsoft.Graph.Beta.Bookings-help.xml
+Module Name: Microsoft.Graph.Beta.Bookings
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabookingbusinesscustomquestion
 schema: 2.0.0
-ms.prod: bookings
 ---
 
-# Get-MgBookingBusinessCustomQuestion
+# Get-MgBetaBookingBusinessCustomQuestion
 
 ## SYNOPSIS
-All the custom questions of this business.
-Read-only.
-Nullable.
+Read the properties and relationships of a bookingCustomQuestion object.
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgBookingBusinessCustomQuestion -BookingBusinessId <String> [-ExpandProperty <String[]>]
+Get-MgBetaBookingBusinessCustomQuestion -BookingBusinessId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgBookingBusinessCustomQuestion -BookingBusinessId <String> -BookingCustomQuestionId <String>
+Get-MgBetaBookingBusinessCustomQuestion -BookingBusinessId <String> -BookingCustomQuestionId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgBookingBusinessCustomQuestion -InputObject <IBookingsIdentity> [-ExpandProperty <String[]>]
+Get-MgBetaBookingBusinessCustomQuestion -InputObject <IBookingsIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-All the custom questions of this business.
-Read-only.
-Nullable.
+Read the properties and relationships of a bookingCustomQuestion object.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgBookingBusinessCustomQuestion Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Bookings
-Get-MgBookingBusinessCustomQuestion -BookingBusinessId $bookingBusinessId -BookingCustomQuestionId $bookingCustomQuestionId
+Import-Module Microsoft.Graph.Beta.Bookings
+Get-MgBetaBookingBusinessCustomQuestion -BookingBusinessId $bookingBusinessId -BookingCustomQuestionId $bookingCustomQuestionId
 ```
 
-This example shows how to use the Get-MgBookingBusinessCustomQuestion Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Get-MgBookingBusinessCustomQuestion Cmdlet
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Bookings
-Get-MgBookingBusinessCustomQuestion -BookingBusinessId $bookingBusinessId
+Import-Module Microsoft.Graph.Beta.Bookings
+Get-MgBetaBookingBusinessCustomQuestion -BookingBusinessId $bookingBusinessId
 ```
-
-This example shows how to use the Get-MgBookingBusinessCustomQuestion Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -154,7 +143,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IBookingsIdentity
@@ -263,10 +252,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IBookingsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IBookingsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBookingCustomQuestion
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBookingCustomQuestion
 ## NOTES
 
 ALIASES
@@ -276,15 +265,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+`INPUTOBJECT <IBookingsIdentity>`: Identity Parameter
   - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
   - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness
   - `[BookingCurrencyId <String>]`: The unique identifier of bookingCurrency
   - `[BookingCustomQuestionId <String>]`: The unique identifier of bookingCustomQuestion
-  - `[BookingCustomerBaseId <String>]`: The unique identifier of bookingCustomerBase
   - `[BookingCustomerId <String>]`: The unique identifier of bookingCustomer
   - `[BookingServiceId <String>]`: The unique identifier of bookingService
-  - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
   - `[BookingStaffMemberId <String>]`: The unique identifier of bookingStaffMember
   - `[BusinessScenarioId <String>]`: The unique identifier of businessScenario
   - `[BusinessScenarioTaskId <String>]`: The unique identifier of businessScenarioTask

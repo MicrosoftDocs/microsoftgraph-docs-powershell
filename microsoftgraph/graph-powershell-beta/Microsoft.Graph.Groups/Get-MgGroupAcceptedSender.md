@@ -1,12 +1,11 @@
----
-external help file: Microsoft.Graph.Groups-help.xml
-Module Name: Microsoft.Graph.Groups
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/get-mggroupacceptedsender
+﻿---
+external help file: Microsoft.Graph.Beta.Groups-help.xml
+Module Name: Microsoft.Graph.Beta.Groups
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupacceptedsender
 schema: 2.0.0
-ms.prod: groups
 ---
 
-# Get-MgGroupAcceptedSender
+# Get-MgBetaGroupAcceptedSender
 
 ## SYNOPSIS
 Get a list of users or groups that are in the accepted-senders list for this group.
@@ -16,7 +15,7 @@ Make sure you do not specify the same user or group in the accepted senders and 
 ## SYNTAX
 
 ```
-Get-MgGroupAcceptedSender -GroupId <String> [-Filter <String>] [-Property <String[]>] [-Skip <Int32>]
+Get-MgBetaGroupAcceptedSender -GroupId <String> [-Filter <String>] [-Property <String[]>] [-Skip <Int32>]
  [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
@@ -27,14 +26,11 @@ Make sure you do not specify the same user or group in the accepted senders and 
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgGroupAcceptedSender Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Groups
-Get-MgGroupAcceptedSender -GroupId $groupId
+Import-Module Microsoft.Graph.Beta.Groups
+Get-MgBetaGroupAcceptedSender -GroupId $groupId
 ```
-
-This example shows how to use the Get-MgGroupAcceptedSender Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -181,7 +177,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryObject
 ## NOTES
 
 ALIASES

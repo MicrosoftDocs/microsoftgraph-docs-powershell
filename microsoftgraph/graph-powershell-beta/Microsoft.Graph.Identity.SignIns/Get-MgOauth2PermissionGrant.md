@@ -1,12 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgoauth2permissiongrant
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaoauth2permissiongrant
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
-# Get-MgOauth2PermissionGrant
+# Get-MgBetaOauth2PermissionGrant
 
 ## SYNOPSIS
 Retrieve the properties of a single delegated permission grant represented by an oAuth2PermissionGrant object.
@@ -16,20 +15,20 @@ An **oAuth2PermissionGrant** represents delegated permissions which have been gr
 
 ### List (Default)
 ```
-Get-MgOauth2PermissionGrant [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
+Get-MgBetaOauth2PermissionGrant [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
  [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgOauth2PermissionGrant -OAuth2PermissionGrantId <String> [-ExpandProperty <String[]>]
+Get-MgBetaOauth2PermissionGrant -OAuth2PermissionGrantId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgOauth2PermissionGrant -InputObject <IIdentitySignInsIdentity> [-ExpandProperty <String[]>]
+Get-MgBetaOauth2PermissionGrant -InputObject <IIdentitySignInsIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
@@ -39,23 +38,17 @@ An **oAuth2PermissionGrant** represents delegated permissions which have been gr
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgOauth2PermissionGrant Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
-Get-MgOauth2PermissionGrant -OAuth2PermissionGrantId $oAuth2PermissionGrantId
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+Get-MgBetaOauth2PermissionGrant -OAuth2PermissionGrantId $oAuth2PermissionGrantId
 ```
 
-This example shows how to use the Get-MgOauth2PermissionGrant Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Get-MgOauth2PermissionGrant Cmdlet
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
-Get-MgOauth2PermissionGrant
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+Get-MgBetaOauth2PermissionGrant
 ```
-
-This example shows how to use the Get-MgOauth2PermissionGrant Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -122,7 +115,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IIdentitySignInsIdentity
@@ -246,10 +239,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOAuth2PermissionGrant1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOAuth2PermissionGrant
 ## NOTES
 
 ALIASES
@@ -259,7 +252,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentitySignInsIdentity>`: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: The unique identifier of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
@@ -296,6 +289,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[IdentityUserFlowAttributeId <String>]`: The unique identifier of identityUserFlowAttribute
   - `[IdentityUserFlowId <String>]`: The unique identifier of identityUserFlow
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
+  - `[InvitationId <String>]`: The unique identifier of invitation
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   - `[MobilityManagementPolicyId <String>]`: The unique identifier of mobilityManagementPolicy

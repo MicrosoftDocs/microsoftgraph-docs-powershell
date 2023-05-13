@@ -1,12 +1,11 @@
----
-external help file: Microsoft.Graph.Devices.ServiceAnnouncement-help.xml
-Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.serviceannouncement/new-mgserviceannouncementmessageattachment
+﻿---
+external help file: Microsoft.Graph.Beta.Devices.ServiceAnnouncement-help.xml
+Module Name: Microsoft.Graph.Beta.Devices.ServiceAnnouncement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/new-mgbetaserviceannouncementmessageattachment
 schema: 2.0.0
-ms.prod: service-communications
 ---
 
-# New-MgServiceAnnouncementMessageAttachment
+# New-MgBetaServiceAnnouncementMessageAttachment
 
 ## SYNOPSIS
 Create new navigation property to attachments for admin
@@ -15,27 +14,27 @@ Create new navigation property to attachments for admin
 
 ### CreateExpanded (Default)
 ```
-New-MgServiceAnnouncementMessageAttachment -ServiceUpdateMessageId <String> [-AdditionalProperties <Hashtable>]
- [-ContentInputFile <String>] [-ContentType <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
- [-Name <String>] [-Size <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaServiceAnnouncementMessageAttachment -ServiceUpdateMessageId <String>
+ [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>] [-ContentType <String>] [-Id <String>]
+ [-LastModifiedDateTime <DateTime>] [-Name <String>] [-Size <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgServiceAnnouncementMessageAttachment -ServiceUpdateMessageId <String>
+New-MgBetaServiceAnnouncementMessageAttachment -ServiceUpdateMessageId <String>
  -BodyParameter <IMicrosoftGraphServiceAnnouncementAttachment> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgServiceAnnouncementMessageAttachment -InputObject <IDevicesServiceAnnouncementIdentity>
+New-MgBetaServiceAnnouncementMessageAttachment -InputObject <IDevicesServiceAnnouncementIdentity>
  [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>] [-ContentType <String>] [-Id <String>]
  [-LastModifiedDateTime <DateTime>] [-Name <String>] [-Size <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgServiceAnnouncementMessageAttachment -InputObject <IDevicesServiceAnnouncementIdentity>
+New-MgBetaServiceAnnouncementMessageAttachment -InputObject <IDevicesServiceAnnouncementIdentity>
  -BodyParameter <IMicrosoftGraphServiceAnnouncementAttachment> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -44,27 +43,19 @@ Create new navigation property to attachments for admin
 
 ## EXAMPLES
 
-### Example 1: Get all attachments of a message in a collection
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
-
-Get-MgServiceAnnouncementMessageAttachment -ServiceUpdateMessageId $serviceUpdateMessageId
+Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 ```
 
-This example shows how to use the New-MgServiceAnnouncementMessageAttachment Cmdlet.
+Get-MgBetaServiceAnnouncementMessageAttachment -ServiceUpdateMessageId $serviceUpdateMessageId
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Get a zip file of all attachments in stream for a message
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
-
-Get-MgServiceAnnouncementMessageAttachmentArchive -ServiceUpdateMessageId $serviceUpdateMessageId
+Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 ```
 
-This example shows how to use the New-MgServiceAnnouncementMessageAttachment Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Get-MgBetaServiceAnnouncementMessageAttachmentArchive -ServiceUpdateMessageId $serviceUpdateMessageId
 
 ## PARAMETERS
 
@@ -85,7 +76,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 serviceAnnouncementAttachment
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphServiceAnnouncementAttachment
@@ -130,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -147,7 +138,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDevicesServiceAnnouncementIdentity
@@ -257,11 +248,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDevicesServiceAnnouncementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServiceAnnouncementAttachment
+### Microsoft.Graph.Beta.PowerShell.Models.IDevicesServiceAnnouncementIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphServiceAnnouncementAttachment
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServiceAnnouncementAttachment
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphServiceAnnouncementAttachment
 ## NOTES
 
 ALIASES
@@ -271,16 +262,16 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphServiceAnnouncementAttachment>`: serviceAnnouncementAttachment
+`BODYPARAMETER <IMicrosoftGraphServiceAnnouncementAttachment>`: serviceAnnouncementAttachment
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Content <Byte[]>]`: The attachment content.
   - `[ContentType <String>]`: 
   - `[LastModifiedDateTime <DateTime?>]`: 
   - `[Name <String>]`: 
   - `[Size <Int32?>]`: 
 
-INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
+`INPUTOBJECT <IDevicesServiceAnnouncementIdentity>`: Identity Parameter
   - `[ServiceAnnouncementAttachmentId <String>]`: The unique identifier of serviceAnnouncementAttachment
   - `[ServiceHealthId <String>]`: The unique identifier of serviceHealth
   - `[ServiceHealthIssueId <String>]`: The unique identifier of serviceHealthIssue

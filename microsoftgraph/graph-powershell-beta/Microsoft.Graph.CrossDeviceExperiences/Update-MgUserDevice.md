@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.CrossDeviceExperiences-help.xml
-Module Name: Microsoft.Graph.CrossDeviceExperiences
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.crossdeviceexperiences/update-mguserdevice
+﻿---
+external help file: Microsoft.Graph.Beta.CrossDeviceExperiences-help.xml
+Module Name: Microsoft.Graph.Beta.CrossDeviceExperiences
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/update-mgbetauserdevice
 schema: 2.0.0
 ---
 
-# Update-MgUserDevice
+# Update-MgBetaUserDevice
 
 ## SYNOPSIS
 Update the navigation property devices in users
@@ -14,12 +14,12 @@ Update the navigation property devices in users
 
 ### UpdateExpanded (Default)
 ```
-Update-MgUserDevice -DeviceId <String> -UserId <String> [-AccountEnabled] [-AdditionalProperties <Hashtable>]
- [-AlternativeSecurityIds <IMicrosoftGraphAlternativeSecurityId[]>] [-ApproximateLastSignInDateTime <DateTime>]
- [-Commands <IMicrosoftGraphCommand[]>] [-ComplianceExpirationDateTime <DateTime>]
- [-DeletedDateTime <DateTime>] [-DeviceCategory <String>] [-DeviceId1 <String>] [-DeviceMetadata <String>]
- [-DeviceOwnership <String>] [-DeviceVersion <Int32>] [-DisplayName <String>] [-DomainName <String>]
- [-EnrollmentProfileName <String>] [-EnrollmentType <String>]
+Update-MgBetaUserDevice -DeviceId <String> -UserId <String> [-AccountEnabled]
+ [-AdditionalProperties <Hashtable>] [-AlternativeSecurityIds <IMicrosoftGraphAlternativeSecurityId[]>]
+ [-ApproximateLastSignInDateTime <DateTime>] [-Commands <IMicrosoftGraphCommand[]>]
+ [-ComplianceExpirationDateTime <DateTime>] [-DeletedDateTime <DateTime>] [-DeviceCategory <String>]
+ [-DeviceId1 <String>] [-DeviceMetadata <String>] [-DeviceOwnership <String>] [-DeviceVersion <Int32>]
+ [-DisplayName <String>] [-DomainName <String>] [-EnrollmentProfileName <String>] [-EnrollmentType <String>]
  [-ExtensionAttributes <IMicrosoftGraphOnPremisesExtensionAttributes>]
  [-Extensions <IMicrosoftGraphExtension[]>] [-Hostnames <String[]>] [-Id <String>] [-IsCompliant] [-IsManaged]
  [-IsManagementRestricted] [-IsRooted] [-Kind <String>] [-ManagementType <String>] [-Manufacturer <String>]
@@ -29,12 +29,12 @@ Update-MgUserDevice -DeviceId <String> -UserId <String> [-AccountEnabled] [-Addi
  [-RegisteredOwners <IMicrosoftGraphDirectoryObject[]>] [-RegisteredUsers <IMicrosoftGraphDirectoryObject[]>]
  [-RegistrationDateTime <DateTime>] [-Status <String>] [-SystemLabels <String[]>]
  [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>] [-TrustType <String>]
- [-UsageRights <IMicrosoftGraphUsageRight[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UsageRights <IMicrosoftGraphUsageRight[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgUserDevice [-DeviceId <String>] -InputObject <ICrossDeviceExperiencesIdentity> [-AccountEnabled]
+Update-MgBetaUserDevice [-DeviceId <String>] -InputObject <ICrossDeviceExperiencesIdentity> [-AccountEnabled]
  [-AdditionalProperties <Hashtable>] [-AlternativeSecurityIds <IMicrosoftGraphAlternativeSecurityId[]>]
  [-ApproximateLastSignInDateTime <DateTime>] [-Commands <IMicrosoftGraphCommand[]>]
  [-ComplianceExpirationDateTime <DateTime>] [-DeletedDateTime <DateTime>] [-DeviceCategory <String>]
@@ -49,25 +49,39 @@ Update-MgUserDevice [-DeviceId <String>] -InputObject <ICrossDeviceExperiencesId
  [-RegisteredOwners <IMicrosoftGraphDirectoryObject[]>] [-RegisteredUsers <IMicrosoftGraphDirectoryObject[]>]
  [-RegistrationDateTime <DateTime>] [-Status <String>] [-SystemLabels <String[]>]
  [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>] [-TrustType <String>]
- [-UsageRights <IMicrosoftGraphUsageRight[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UsageRights <IMicrosoftGraphUsageRight[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgUserDevice -DeviceId <String> -UserId <String> -BodyParameter <IMicrosoftGraphDevice> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaUserDevice -DeviceId <String> -UserId <String> -BodyParameter <IMicrosoftGraphDevice> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgUserDevice -InputObject <ICrossDeviceExperiencesIdentity> -BodyParameter <IMicrosoftGraphDevice>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaUserDevice -InputObject <ICrossDeviceExperiencesIdentity> -BodyParameter <IMicrosoftGraphDevice>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property devices in users
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -108,7 +122,7 @@ Accept wildcard characters: False
 For internal use only.
 Not nullable.
 Supports $filter (eq, not, ge, le).
-To construct, please use Get-Help -Online and see NOTES section for ALTERNATIVESECURITYIDS properties and create a hash table.
+To construct, see NOTES section for ALTERNATIVESECURITYIDS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAlternativeSecurityId[]
@@ -142,7 +156,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 device
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDevice
@@ -158,7 +172,7 @@ Accept wildcard characters: False
 
 ### -Commands
 Set of commands sent to this device.
-To construct, please use Get-Help -Online and see NOTES section for COMMANDS properties and create a hash table.
+To construct, see NOTES section for COMMANDS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphCommand[]
@@ -382,7 +396,7 @@ Accept wildcard characters: False
 
 ### -ExtensionAttributes
 onPremisesExtensionAttributes
-To construct, please use Get-Help -Online and see NOTES section for EXTENSIONATTRIBUTES properties and create a hash table.
+To construct, see NOTES section for EXTENSIONATTRIBUTES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphOnPremisesExtensionAttributes
@@ -400,7 +414,7 @@ Accept wildcard characters: False
 The collection of open extensions defined for the device.
 Read-only.
 Nullable.
-To construct, please use Get-Help -Online and see NOTES section for EXTENSIONS properties and create a hash table.
+To construct, see NOTES section for EXTENSIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphExtension[]
@@ -430,7 +444,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -447,7 +461,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ICrossDeviceExperiencesIdentity
@@ -598,7 +612,7 @@ Groups and administrative units that this device is a member of.
 Read-only.
 Nullable.
 Supports $expand.
-To construct, please use Get-Help -Online and see NOTES section for MEMBEROF properties and create a hash table.
+To construct, see NOTES section for MEMBEROF properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDirectoryObject[]
@@ -713,21 +727,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -PhysicalIds
 For internal use only.
 Not nullable.
@@ -781,11 +780,10 @@ Accept wildcard characters: False
 ### -RegisteredOwners
 The user that cloud joined the device or registered their personal device.
 The registered owner is set at the time of registration.
-Currently, there can be only one owner.
 Read-only.
 Nullable.
 Supports $expand.
-To construct, please use Get-Help -Online and see NOTES section for REGISTEREDOWNERS properties and create a hash table.
+To construct, see NOTES section for REGISTEREDOWNERS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDirectoryObject[]
@@ -805,7 +803,7 @@ For cloud joined devices and registered personal devices, registered users are s
 Read-only.
 Nullable.
 Supports $expand.
-To construct, please use Get-Help -Online and see NOTES section for REGISTEREDUSERS properties and create a hash table.
+To construct, see NOTES section for REGISTEREDUSERS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDirectoryObject[]
@@ -873,7 +871,7 @@ Accept wildcard characters: False
 Groups and administrative units that this device is a member of.
 This operation is transitive.
 Supports $expand.
-To construct, please use Get-Help -Online and see NOTES section for TRANSITIVEMEMBEROF properties and create a hash table.
+To construct, see NOTES section for TRANSITIVEMEMBEROF properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDirectoryObject[]
@@ -907,7 +905,7 @@ Accept wildcard characters: False
 
 ### -UsageRights
 Represents the usage rights a device has been granted.
-To construct, please use Get-Help -Online and see NOTES section for USAGERIGHTS properties and create a hash table.
+To construct, see NOTES section for USAGERIGHTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUsageRight[]
@@ -972,11 +970,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ICrossDeviceExperiencesIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDevice
+### Microsoft.Graph.Beta.PowerShell.Models.ICrossDeviceExperiencesIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDevice
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDevice
 ## NOTES
 
 ALIASES
@@ -986,15 +984,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ALTERNATIVESECURITYIDS <IMicrosoftGraphAlternativeSecurityId\[]>: For internal use only. Not nullable. Supports $filter (eq, not, ge, le).
+`ALTERNATIVESECURITYIDS <IMicrosoftGraphAlternativeSecurityId[]>`: For internal use only. Not nullable. Supports $filter (eq, not, ge, le).
   - `[IdentityProvider <String>]`: For internal use only
   - `[Key <Byte[]>]`: For internal use only
   - `[Type <Int32?>]`: For internal use only
 
-BODYPARAMETER `<IMicrosoftGraphDevice>`: device
+`BODYPARAMETER <IMicrosoftGraphDevice>`: device
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AccountEnabled <Boolean?>]`: true if the account is enabled; otherwise, false. Default is true.  Supports $filter (eq, ne, not, in). Only callers in Global Administrator and Cloud Device Administrator roles can set this property.
   - `[AlternativeSecurityIds <IMicrosoftGraphAlternativeSecurityId[]>]`: For internal use only. Not nullable. Supports $filter (eq, not, ge, le).
     - `[IdentityProvider <String>]`: For internal use only
@@ -1002,7 +1000,7 @@ BODYPARAMETER `<IMicrosoftGraphDevice>`: device
     - `[Type <Int32?>]`: For internal use only
   - `[ApproximateLastSignInDateTime <DateTime?>]`: The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only. Supports $filter (eq, ne, not, ge, le, and eq on null values) and $orderBy.
   - `[Commands <IMicrosoftGraphCommand[]>]`: Set of commands sent to this device.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[AppServiceName <String>]`: 
     - `[Error <String>]`: 
     - `[PackageFamilyName <String>]`: 
@@ -1012,7 +1010,7 @@ BODYPARAMETER `<IMicrosoftGraphDevice>`: device
     - `[PostBackUri <String>]`: 
     - `[Responsepayload <IMicrosoftGraphPayloadResponse>]`: payloadResponse
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Status <String>]`: 
     - `[Type <String>]`: 
   - `[ComplianceExpirationDateTime <DateTime?>]`: The timestamp when the device is no longer deemed compliant. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
@@ -1043,7 +1041,7 @@ BODYPARAMETER `<IMicrosoftGraphDevice>`: device
     - `[ExtensionAttribute8 <String>]`: Eighth customizable extension attribute.
     - `[ExtensionAttribute9 <String>]`: Ninth customizable extension attribute.
   - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the device. Read-only. Nullable.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Hostnames <String[]>]`: List of hostNames for the device.
   - `[IsCompliant <Boolean?>]`: true if the device complies with Mobile Device Management (MDM) policies; otherwise, false. Read-only. This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices. Supports $filter (eq, ne, not).
   - `[IsManaged <Boolean?>]`: true if the device is managed by a Mobile Device Management (MDM) app; otherwise, false. This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices. Supports $filter (eq, ne, not).
@@ -1054,7 +1052,7 @@ BODYPARAMETER `<IMicrosoftGraphDevice>`: device
   - `[Manufacturer <String>]`: Manufacturer of the device. Read-only.
   - `[MdmAppId <String>]`: Application identifier used to register device into MDM. Read-only. Supports $filter (eq, ne, not, startsWith).
   - `[MemberOf <IMicrosoftGraphDirectoryObject[]>]`: Groups and administrative units that this device is a member of. Read-only. Nullable. Supports $expand.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[Model <String>]`: Model of the device. Read-only.
   - `[Name <String>]`: Friendly name of a device. Only returned if user signs in with a Microsoft account as part of Project Rome.
@@ -1065,7 +1063,7 @@ BODYPARAMETER `<IMicrosoftGraphDevice>`: device
   - `[PhysicalIds <String[]>]`: For internal use only. Not nullable. Supports $filter (eq, not, ge, le, startsWith, /$count eq 0, /$count ne 0.
   - `[Platform <String>]`: Platform of device. Only returned if user signs in with a Microsoft account as part of Project Rome. Only returned if user signs in with a Microsoft account as part of Project Rome.
   - `[ProfileType <String>]`: The profile type of the device. Possible values: RegisteredDevice (default), SecureVM, Printer, Shared, IoT.
-  - `[RegisteredOwners <IMicrosoftGraphDirectoryObject[]>]`: The user that cloud joined the device or registered their personal device. The registered owner is set at the time of registration. Currently, there can be only one owner. Read-only. Nullable. Supports $expand.
+  - `[RegisteredOwners <IMicrosoftGraphDirectoryObject[]>]`: The user that cloud joined the device or registered their personal device. The registered owner is set at the time of registration. Read-only. Nullable. Supports $expand.
   - `[RegisteredUsers <IMicrosoftGraphDirectoryObject[]>]`: Collection of registered users of the device. For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration. Read-only. Nullable. Supports $expand.
   - `[RegistrationDateTime <DateTime?>]`: Date and time of when the device was registered. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
   - `[Status <String>]`: Device is online or offline. Only returned if user signs in with a Microsoft account as part of Project Rome.
@@ -1073,13 +1071,13 @@ BODYPARAMETER `<IMicrosoftGraphDevice>`: device
   - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]`: Groups and administrative units that this device is a member of. This operation is transitive. Supports $expand.
   - `[TrustType <String>]`: Type of trust for the joined device. Read-only. Possible values: Workplace (indicates bring your own personal devices), AzureAd (Cloud only joined devices), ServerAd (on-premises domain joined devices joined to Azure AD). For more details, see Introduction to device management in Azure Active Directory
   - `[UsageRights <IMicrosoftGraphUsageRight[]>]`: Represents the usage rights a device has been granted.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[CatalogId <String>]`: Product id corresponding to the usage right.
     - `[ServiceIdentifier <String>]`: Identifier of the service corresponding to the usage right.
     - `[State <String>]`: usageRightState
 
-COMMANDS <IMicrosoftGraphCommand\[]>: Set of commands sent to this device.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`COMMANDS <IMicrosoftGraphCommand[]>`: Set of commands sent to this device.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AppServiceName <String>]`: 
   - `[Error <String>]`: 
   - `[PackageFamilyName <String>]`: 
@@ -1089,11 +1087,11 @@ COMMANDS <IMicrosoftGraphCommand\[]>: Set of commands sent to this device.
   - `[PostBackUri <String>]`: 
   - `[Responsepayload <IMicrosoftGraphPayloadResponse>]`: payloadResponse
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Status <String>]`: 
   - `[Type <String>]`: 
 
-EXTENSIONATTRIBUTES `<IMicrosoftGraphOnPremisesExtensionAttributes>`: onPremisesExtensionAttributes
+`EXTENSIONATTRIBUTES <IMicrosoftGraphOnPremisesExtensionAttributes>`: onPremisesExtensionAttributes
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ExtensionAttribute1 <String>]`: First customizable extension attribute.
   - `[ExtensionAttribute10 <String>]`: Tenth customizable extension attribute.
@@ -1111,10 +1109,10 @@ EXTENSIONATTRIBUTES `<IMicrosoftGraphOnPremisesExtensionAttributes>`: onPremises
   - `[ExtensionAttribute8 <String>]`: Eighth customizable extension attribute.
   - `[ExtensionAttribute9 <String>]`: Ninth customizable extension attribute.
 
-EXTENSIONS <IMicrosoftGraphExtension\[]>: The collection of open extensions defined for the device. Read-only. Nullable.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`EXTENSIONS <IMicrosoftGraphExtension[]>`: The collection of open extensions defined for the device. Read-only. Nullable.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
 
-INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
+`INPUTOBJECT <ICrossDeviceExperiencesIdentity>`: Identity Parameter
   - `[ActivityHistoryItemId <String>]`: The unique identifier of activityHistoryItem
   - `[CommandId <String>]`: The unique identifier of command
   - `[DeviceId <String>]`: The unique identifier of device
@@ -1124,24 +1122,24 @@ INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
   - `[UserActivityId <String>]`: The unique identifier of userActivity
   - `[UserId <String>]`: The unique identifier of user
 
-MEMBEROF <IMicrosoftGraphDirectoryObject\[]>: Groups and administrative units that this device is a member of. Read-only. Nullable. Supports $expand.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`MEMBEROF <IMicrosoftGraphDirectoryObject[]>`: Groups and administrative units that this device is a member of. Read-only. Nullable. Supports $expand.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
-REGISTEREDOWNERS <IMicrosoftGraphDirectoryObject\[]>: The user that cloud joined the device or registered their personal device. The registered owner is set at the time of registration. Currently, there can be only one owner. Read-only. Nullable. Supports $expand.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`REGISTEREDOWNERS <IMicrosoftGraphDirectoryObject[]>`: The user that cloud joined the device or registered their personal device. The registered owner is set at the time of registration. Read-only. Nullable. Supports $expand.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
-REGISTEREDUSERS <IMicrosoftGraphDirectoryObject\[]>: Collection of registered users of the device. For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration. Read-only. Nullable. Supports $expand.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`REGISTEREDUSERS <IMicrosoftGraphDirectoryObject[]>`: Collection of registered users of the device. For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration. Read-only. Nullable. Supports $expand.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
-TRANSITIVEMEMBEROF <IMicrosoftGraphDirectoryObject\[]>: Groups and administrative units that this device is a member of. This operation is transitive. Supports $expand.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`TRANSITIVEMEMBEROF <IMicrosoftGraphDirectoryObject[]>`: Groups and administrative units that this device is a member of. This operation is transitive. Supports $expand.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
-USAGERIGHTS <IMicrosoftGraphUsageRight\[]>: Represents the usage rights a device has been granted.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`USAGERIGHTS <IMicrosoftGraphUsageRight[]>`: Represents the usage rights a device has been granted.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[CatalogId <String>]`: Product id corresponding to the usage right.
   - `[ServiceIdentifier <String>]`: Identifier of the service corresponding to the usage right.
   - `[State <String>]`: usageRightState

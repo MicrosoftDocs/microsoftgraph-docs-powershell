@@ -1,17 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/get-mgplannertask
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannertask
 schema: 2.0.0
-ms.prod: planner
 ---
 
 # Get-MgPlannerTask
 
 ## SYNOPSIS
-Read-only.
-Nullable.
-Returns a collection of the specified tasks
+Retrieve the properties and relationships of plannerTask object.
 
 ## SYNTAX
 
@@ -35,29 +32,21 @@ Get-MgPlannerTask -InputObject <IPlannerIdentity> [-ExpandProperty <String[]>] [
 ```
 
 ## DESCRIPTION
-Read-only.
-Nullable.
-Returns a collection of the specified tasks
+Retrieve the properties and relationships of plannerTask object.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgPlannerTask Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Planner
 Get-MgPlannerTask -PlannerTaskId $plannerTaskId
 ```
 
-This example shows how to use the Get-MgPlannerTask Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Get-MgPlannerTask Cmdlet
+### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Planner
 Get-MgPlannerTask
 ```
-
-This example shows how to use the Get-MgPlannerTask Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -124,7 +113,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IPlannerIdentity
@@ -261,13 +250,10 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
+`INPUTOBJECT <IPlannerIdentity>`: Identity Parameter
   - `[GroupId <String>]`: The unique identifier of group
   - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket
-  - `[PlannerDeltaId <String>]`: The unique identifier of plannerDelta
   - `[PlannerPlanId <String>]`: The unique identifier of plannerPlan
-  - `[PlannerRosterId <String>]`: The unique identifier of plannerRoster
-  - `[PlannerRosterMemberId <String>]`: The unique identifier of plannerRosterMember
   - `[PlannerTaskId <String>]`: The unique identifier of plannerTask
   - `[UserId <String>]`: The unique identifier of user
 

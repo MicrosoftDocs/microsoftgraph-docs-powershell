@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticdevicescore
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticdevicescore
 schema: 2.0.0
 ---
 
-# New-MgDeviceManagementUserExperienceAnalyticDeviceScore
+# New-MgBetaDeviceManagementUserExperienceAnalyticDeviceScore
 
 ## SYNOPSIS
 Create new navigation property to userExperienceAnalyticsDeviceScores for deviceManagement
@@ -14,7 +14,7 @@ Create new navigation property to userExperienceAnalyticsDeviceScores for device
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementUserExperienceAnalyticDeviceScore [-AdditionalProperties <Hashtable>]
+New-MgBetaDeviceManagementUserExperienceAnalyticDeviceScore [-AdditionalProperties <Hashtable>]
  [-AppReliabilityScore <Double>] [-BatteryHealthScore <Double>] [-DeviceName <String>]
  [-EndpointAnalyticsScore <Double>] [-HealthStatus <UserExperienceAnalyticsHealthState>] [-Id <String>]
  [-Manufacturer <String>] [-Model <String>] [-StartupPerformanceScore <Double>]
@@ -23,7 +23,7 @@ New-MgDeviceManagementUserExperienceAnalyticDeviceScore [-AdditionalProperties <
 
 ### Create
 ```
-New-MgDeviceManagementUserExperienceAnalyticDeviceScore
+New-MgBetaDeviceManagementUserExperienceAnalyticDeviceScore
  -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceScores> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -31,6 +31,20 @@ New-MgDeviceManagementUserExperienceAnalyticDeviceScore
 Create new navigation property to userExperienceAnalyticsDeviceScores for deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -83,7 +97,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 The user experience analytics device scores entity consolidates the various endpoint analytics scores.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserExperienceAnalyticsDeviceScores
@@ -144,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -257,10 +271,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceScores
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceScores
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceScores
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceScores
 ## NOTES
 
 ALIASES
@@ -270,9 +284,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsDeviceScores>`: The user experience analytics device scores entity consolidates the various endpoint analytics scores.
+`BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsDeviceScores>`: The user experience analytics device scores entity consolidates the various endpoint analytics scores.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AppReliabilityScore <Double?>]`: The user experience analytics device app reliability score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
   - `[BatteryHealthScore <Double?>]`: The user experience analytics device battery health score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
   - `[DeviceName <String>]`: The user experience analytics device name.

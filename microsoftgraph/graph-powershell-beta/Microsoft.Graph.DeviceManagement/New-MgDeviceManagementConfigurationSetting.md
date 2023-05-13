@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementconfigurationsetting
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementconfigurationsetting
 schema: 2.0.0
 ---
 
-# New-MgDeviceManagementConfigurationSetting
+# New-MgBetaDeviceManagementConfigurationSetting
 
 ## SYNOPSIS
 Create new navigation property to configurationSettings for deviceManagement
@@ -14,7 +14,7 @@ Create new navigation property to configurationSettings for deviceManagement
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementConfigurationSetting [-AccessTypes <String>] [-AdditionalProperties <Hashtable>]
+New-MgBetaDeviceManagementConfigurationSetting [-AccessTypes <String>] [-AdditionalProperties <Hashtable>]
  [-Applicability <IMicrosoftGraphDeviceManagementConfigurationSettingApplicability>] [-BaseUri <String>]
  [-CategoryId <String>] [-Description <String>] [-DisplayName <String>] [-HelpText <String>] [-Id <String>]
  [-InfoUrls <String[]>] [-Keywords <String[]>] [-Name <String>]
@@ -27,7 +27,7 @@ New-MgDeviceManagementConfigurationSetting [-AccessTypes <String>] [-AdditionalP
 
 ### Create
 ```
-New-MgDeviceManagementConfigurationSetting
+New-MgBetaDeviceManagementConfigurationSetting
  -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
@@ -36,6 +36,20 @@ New-MgDeviceManagementConfigurationSetting
 Create new navigation property to configurationSettings for deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -71,7 +85,7 @@ Accept wildcard characters: False
 
 ### -Applicability
 deviceManagementConfigurationSettingApplicability
-To construct, please use Get-Help -Online and see NOTES section for APPLICABILITY properties and create a hash table.
+To construct, see NOTES section for APPLICABILITY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementConfigurationSettingApplicability
@@ -102,7 +116,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 deviceManagementConfigurationSettingDefinition
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementConfigurationSettingDefinition
@@ -177,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -239,7 +253,7 @@ Accept wildcard characters: False
 
 ### -Occurrence
 deviceManagementConfigurationSettingOccurrence
-To construct, please use Get-Help -Online and see NOTES section for OCCURRENCE properties and create a hash table.
+To construct, see NOTES section for OCCURRENCE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementConfigurationSettingOccurrence
@@ -270,7 +284,7 @@ Accept wildcard characters: False
 
 ### -ReferredSettingInformationList
 List of referred setting information.
-To construct, please use Get-Help -Online and see NOTES section for REFERREDSETTINGINFORMATIONLIST properties and create a hash table.
+To construct, see NOTES section for REFERREDSETTINGINFORMATIONLIST properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation[]
@@ -395,10 +409,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationSettingDefinition
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationSettingDefinition
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationSettingDefinition
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationSettingDefinition
 ## NOTES
 
 ALIASES
@@ -408,16 +422,16 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-APPLICABILITY `<IMicrosoftGraphDeviceManagementConfigurationSettingApplicability>`: deviceManagementConfigurationSettingApplicability
+`APPLICABILITY <IMicrosoftGraphDeviceManagementConfigurationSettingApplicability>`: deviceManagementConfigurationSettingApplicability
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Description <String>]`: description of the setting
   - `[DeviceMode <DeviceManagementConfigurationDeviceMode?>]`: Describes applicability for the mode the device is in
   - `[Platform <DeviceManagementConfigurationPlatforms?>]`: Supported platform types.
   - `[Technologies <DeviceManagementConfigurationTechnologies?>]`: Describes which technology this setting can be deployed with
 
-BODYPARAMETER `<IMicrosoftGraphDeviceManagementConfigurationSettingDefinition>`: deviceManagementConfigurationSettingDefinition
+`BODYPARAMETER <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition>`: deviceManagementConfigurationSettingDefinition
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AccessTypes <String>]`: deviceManagementConfigurationSettingAccessTypes
   - `[Applicability <IMicrosoftGraphDeviceManagementConfigurationSettingApplicability>]`: deviceManagementConfigurationSettingApplicability
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -446,12 +460,12 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagementConfigurationSettingDefinition>`:
   - `[Version <String>]`: Item Version
   - `[Visibility <DeviceManagementConfigurationSettingVisibility?>]`: Supported setting types
 
-OCCURRENCE `<IMicrosoftGraphDeviceManagementConfigurationSettingOccurrence>`: deviceManagementConfigurationSettingOccurrence
+`OCCURRENCE <IMicrosoftGraphDeviceManagementConfigurationSettingOccurrence>`: deviceManagementConfigurationSettingOccurrence
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[MaxDeviceOccurrence <Int32?>]`: Maximum times setting can be set on device.
   - `[MinDeviceOccurrence <Int32?>]`: Minimum times setting can be set on device. A MinDeviceOccurrence of 0 means setting is optional
 
-REFERREDSETTINGINFORMATIONLIST <IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation\[]>: List of referred setting information.
+`REFERREDSETTINGINFORMATIONLIST <IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation[]>`: List of referred setting information.
   - `[SettingDefinitionId <String>]`: Setting definition id that is being referred to a setting. Applicable for reusable setting
 
 ## RELATED LINKS

@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mgteamworkteamappsetting
+﻿---
+external help file: Microsoft.Graph.Beta.Teams-help.xml
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkteamappsetting
 schema: 2.0.0
 ---
 
-# Get-MgTeamworkTeamAppSetting
+# Get-MgBetaTeamworkTeamAppSetting
 
 ## SYNOPSIS
 Read the properties and relationships of a teamsAppSettings object.
@@ -13,7 +13,7 @@ Read the properties and relationships of a teamsAppSettings object.
 ## SYNTAX
 
 ```
-Get-MgTeamworkTeamAppSetting [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaTeamworkTeamAppSetting [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -21,14 +21,11 @@ Read the properties and relationships of a teamsAppSettings object.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgTeamworkTeamAppSetting Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Teams
-Get-MgTeamworkTeamAppSetting
+Import-Module Microsoft.Graph.Beta.Teams
+Get-MgBetaTeamworkTeamAppSetting
 ```
-
-This example shows how to use the Get-MgTeamworkTeamAppSetting Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -69,7 +66,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsAppSettings
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamsAppSettings
 ## NOTES
 
 ALIASES

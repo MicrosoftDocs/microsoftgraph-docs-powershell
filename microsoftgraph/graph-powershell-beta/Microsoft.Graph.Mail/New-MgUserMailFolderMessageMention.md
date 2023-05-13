@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Mail-help.xml
-Module Name: Microsoft.Graph.Mail
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.mail/new-mgusermailfoldermessagemention
+﻿---
+external help file: Microsoft.Graph.Beta.Mail-help.xml
+Module Name: Microsoft.Graph.Beta.Mail
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfoldermessagemention
 schema: 2.0.0
 ---
 
-# New-MgUserMailFolderMessageMention
+# New-MgBetaUserMailFolderMessageMention
 
 ## SYNOPSIS
 Create new navigation property to mentions for users
@@ -14,7 +14,7 @@ Create new navigation property to mentions for users
 
 ### CreateExpanded (Default)
 ```
-New-MgUserMailFolderMessageMention -MailFolderId <String> -MessageId <String> -UserId <String>
+New-MgBetaUserMailFolderMessageMention -MailFolderId <String> -MessageId <String> -UserId <String>
  [-AdditionalProperties <Hashtable>] [-Application <String>] [-ClientReference <String>]
  [-CreatedBy <IMicrosoftGraphEmailAddress>] [-CreatedDateTime <DateTime>] [-DeepLink <String>] [-Id <String>]
  [-MentionText <String>] [-Mentioned <IMicrosoftGraphEmailAddress>] [-ServerCreatedDateTime <DateTime>]
@@ -23,13 +23,13 @@ New-MgUserMailFolderMessageMention -MailFolderId <String> -MessageId <String> -U
 
 ### Create
 ```
-New-MgUserMailFolderMessageMention -MailFolderId <String> -MessageId <String> -UserId <String>
+New-MgBetaUserMailFolderMessageMention -MailFolderId <String> -MessageId <String> -UserId <String>
  -BodyParameter <IMicrosoftGraphMention> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgUserMailFolderMessageMention -InputObject <IMailIdentity> [-AdditionalProperties <Hashtable>]
+New-MgBetaUserMailFolderMessageMention -InputObject <IMailIdentity> [-AdditionalProperties <Hashtable>]
  [-Application <String>] [-ClientReference <String>] [-CreatedBy <IMicrosoftGraphEmailAddress>]
  [-CreatedDateTime <DateTime>] [-DeepLink <String>] [-Id <String>] [-MentionText <String>]
  [-Mentioned <IMicrosoftGraphEmailAddress>] [-ServerCreatedDateTime <DateTime>] [-WhatIf] [-Confirm]
@@ -38,7 +38,7 @@ New-MgUserMailFolderMessageMention -InputObject <IMailIdentity> [-AdditionalProp
 
 ### CreateViaIdentity
 ```
-New-MgUserMailFolderMessageMention -InputObject <IMailIdentity> -BodyParameter <IMicrosoftGraphMention>
+New-MgBetaUserMailFolderMessageMention -InputObject <IMailIdentity> -BodyParameter <IMicrosoftGraphMention>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -46,6 +46,20 @@ New-MgUserMailFolderMessageMention -InputObject <IMailIdentity> -BodyParameter <
 Create new navigation property to mentions for users
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -83,7 +97,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 mention
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphMention
@@ -116,7 +130,7 @@ Accept wildcard characters: False
 
 ### -CreatedBy
 emailAddress
-To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
+To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEmailAddress
@@ -163,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -180,7 +194,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IMailIdentity
@@ -211,7 +225,7 @@ Accept wildcard characters: False
 
 ### -Mentioned
 emailAddress
-To construct, please use Get-Help -Online and see NOTES section for MENTIONED properties and create a hash table.
+To construct, see NOTES section for MENTIONED properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEmailAddress
@@ -325,11 +339,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMailIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMention
+### Microsoft.Graph.Beta.PowerShell.Models.IMailIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMention
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMention
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMention
 ## NOTES
 
 ALIASES
@@ -339,27 +353,27 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphMention>`: mention
+`BODYPARAMETER <IMicrosoftGraphMention>`: mention
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Application <String>]`: The name of the application where the mention is created. Optional. Not used and defaulted as null for message.
   - `[ClientReference <String>]`: A unique identifier that represents a parent of the resource instance. Optional. Not used and defaulted as null for message.
   - `[CreatedBy <IMicrosoftGraphEmailAddress>]`: emailAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Address <String>]`: The email address of the person or entity.
-    - `[Name <String>]`: The display name of the person or entity.
+    - `[Address <String>]`: The email address of an entity instance.
+    - `[Name <String>]`: The display name of an entity instance.
   - `[CreatedDateTime <DateTime?>]`: The date and time that the mention is created on the client.
   - `[DeepLink <String>]`: A deep web link to the context of the mention in the resource instance. Optional. Not used and defaulted as null for message.
   - `[MentionText <String>]`: Optional. Not used and defaulted as null for message. To get the mentions in a message, see the bodyPreview property of the message instead.
   - `[Mentioned <IMicrosoftGraphEmailAddress>]`: emailAddress
   - `[ServerCreatedDateTime <DateTime?>]`: The date and time that the mention is created on the server. Optional. Not used and defaulted as null for message.
 
-CREATEDBY `<IMicrosoftGraphEmailAddress>`: emailAddress
+`CREATEDBY <IMicrosoftGraphEmailAddress>`: emailAddress
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Address <String>]`: The email address of the person or entity.
-  - `[Name <String>]`: The display name of the person or entity.
+  - `[Address <String>]`: The email address of an entity instance.
+  - `[Name <String>]`: The display name of an entity instance.
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+`INPUTOBJECT <IMailIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[InferenceClassificationOverrideId <String>]`: The unique identifier of inferenceClassificationOverride
@@ -368,14 +382,12 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
   - `[MentionId <String>]`: The unique identifier of mention
   - `[MessageId <String>]`: The unique identifier of message
   - `[MessageRuleId <String>]`: The unique identifier of messageRule
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
   - `[UserConfigurationId <String>]`: The unique identifier of userConfiguration
   - `[UserId <String>]`: The unique identifier of user
 
-MENTIONED `<IMicrosoftGraphEmailAddress>`: emailAddress
+`MENTIONED <IMicrosoftGraphEmailAddress>`: emailAddress
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Address <String>]`: The email address of the person or entity.
-  - `[Name <String>]`: The display name of the person or entity.
+  - `[Address <String>]`: The email address of an entity instance.
+  - `[Name <String>]`: The display name of an entity instance.
 
 ## RELATED LINKS

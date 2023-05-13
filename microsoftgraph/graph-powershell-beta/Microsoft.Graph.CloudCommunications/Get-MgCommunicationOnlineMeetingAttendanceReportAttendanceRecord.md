@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.CloudCommunications-help.xml
-Module Name: Microsoft.Graph.CloudCommunications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationonlinemeetingattendancereportattendancerecord
+﻿---
+external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
+Module Name: Microsoft.Graph.Beta.CloudCommunications
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeetingattendancereportattendancerecord
 schema: 2.0.0
 ---
 
-# Get-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord
+# Get-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecord
 
 ## SYNOPSIS
 List of attendance records of an attendance report.
@@ -13,44 +13,46 @@ Read-only.
 
 ## SYNTAX
 
-### List2 (Default)
+### List1 (Default)
 ```
-Get-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord -OnlineMeetingId <String>
+Get-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecord -OnlineMeetingId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
  [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### Get2
+### Get1
 ```
-Get-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord -AttendanceRecordId <String>
+Get-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecord -AttendanceRecordId <String>
  -OnlineMeetingId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
-### Get1
+### Get
 ```
-Get-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord -AttendanceRecordId <String>
+Get-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecord -AttendanceRecordId <String>
  -MeetingAttendanceReportId <String> -OnlineMeetingId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
-### List1
+### List
 ```
-Get-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord -MeetingAttendanceReportId <String>
+Get-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecord -MeetingAttendanceReportId <String>
  -OnlineMeetingId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
  [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### GetViaIdentity2
-```
-Get-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord -InputObject <ICloudCommunicationsIdentity>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
-```
-
 ### GetViaIdentity1
 ```
-Get-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord -InputObject <ICloudCommunicationsIdentity>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecord
+ -InputObject <ICloudCommunicationsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
+```
+
+### GetViaIdentity
+```
+Get-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecord
+ -InputObject <ICloudCommunicationsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -59,6 +61,20 @@ Read-only.
 
 ## EXAMPLES
 
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -All
@@ -66,7 +82,7 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: List2, List1
+Parameter Sets: List1, List
 Aliases:
 
 Required: False
@@ -81,7 +97,7 @@ The unique identifier of attendanceRecord
 
 ```yaml
 Type: String
-Parameter Sets: Get2, Get1
+Parameter Sets: Get1, Get
 Aliases:
 
 Required: True
@@ -97,7 +113,7 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: List2, List1
+Parameter Sets: List1, List
 Aliases: CV
 
 Required: False
@@ -127,7 +143,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List2, List1
+Parameter Sets: List1, List
 Aliases:
 
 Required: False
@@ -139,11 +155,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ICloudCommunicationsIdentity
-Parameter Sets: GetViaIdentity2, GetViaIdentity1
+Parameter Sets: GetViaIdentity1, GetViaIdentity
 Aliases:
 
 Required: True
@@ -158,7 +174,7 @@ The unique identifier of meetingAttendanceReport
 
 ```yaml
 Type: String
-Parameter Sets: Get1, List1
+Parameter Sets: Get, List
 Aliases:
 
 Required: True
@@ -173,7 +189,7 @@ The unique identifier of onlineMeeting
 
 ```yaml
 Type: String
-Parameter Sets: List2, Get2, Get1, List1
+Parameter Sets: List1, Get1, Get, List
 Aliases:
 
 Required: True
@@ -188,7 +204,7 @@ Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: List2, List1
+Parameter Sets: List1, List
 Aliases:
 
 Required: False
@@ -218,7 +234,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: List2, List1
+Parameter Sets: List1, List
 Aliases:
 
 Required: False
@@ -233,7 +249,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List2, List1
+Parameter Sets: List1, List
 Aliases: OrderBy
 
 Required: False
@@ -248,7 +264,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List2, List1
+Parameter Sets: List1, List
 Aliases: Limit
 
 Required: False
@@ -263,7 +279,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List2, List1
+Parameter Sets: List1, List
 Aliases:
 
 Required: False
@@ -278,10 +294,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttendanceRecord1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAttendanceRecord
 ## NOTES
 
 ALIASES
@@ -291,7 +307,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+`INPUTOBJECT <ICloudCommunicationsIdentity>`: Identity Parameter
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
   - `[CallId <String>]`: The unique identifier of call
@@ -301,6 +317,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
   - `[FromDateTime <DateTime?>]`: Usage: fromDateTime={fromDateTime}
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[MeetingRegistrantBaseId <String>]`: The unique identifier of meetingRegistrantBase
   - `[MeetingRegistrationQuestionId <String>]`: The unique identifier of meetingRegistrationQuestion
   - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
   - `[ParticipantId <String>]`: The unique identifier of participant

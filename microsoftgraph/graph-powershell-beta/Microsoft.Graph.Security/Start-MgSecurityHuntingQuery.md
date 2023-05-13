@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/start-mgsecurityhuntingquery
+﻿---
+external help file: Microsoft.Graph.Beta.Security-help.xml
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/start-mgbetasecurityhuntingquery
 schema: 2.0.0
 ---
 
-# Start-MgSecurityHuntingQuery
+# Start-MgBetaSecurityHuntingQuery
 
 ## SYNOPSIS
 Invoke action runHuntingQuery
@@ -14,13 +14,13 @@ Invoke action runHuntingQuery
 
 ### RunExpanded (Default)
 ```
-Start-MgSecurityHuntingQuery [-AdditionalProperties <Hashtable>] [-Query <String>] [-WhatIf] [-Confirm]
+Start-MgBetaSecurityHuntingQuery [-AdditionalProperties <Hashtable>] [-Query <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Run
 ```
-Start-MgSecurityHuntingQuery
+Start-MgBetaSecurityHuntingQuery
  -BodyParameter <IPathsU5PqctSecurityMicrosoftGraphSecurityRunhuntingqueryPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -29,6 +29,20 @@ Start-MgSecurityHuntingQuery
 Invoke action runHuntingQuery
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -49,7 +63,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPathsU5PqctSecurityMicrosoftGraphSecurityRunhuntingqueryPostRequestbodyContentApplicationJsonSchema
@@ -114,10 +128,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsU5PqctSecurityMicrosoftGraphSecurityRunhuntingqueryPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsU5PqctSecurityMicrosoftGraphSecurityRunhuntingqueryPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityHuntingQueryResults
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityHuntingQueryResults
 ## NOTES
 
 ALIASES
@@ -127,7 +141,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsU5PqctSecurityMicrosoftGraphSecurityRunhuntingqueryPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsU5PqctSecurityMicrosoftGraphSecurityRunhuntingqueryPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Query <String>]`: 
 

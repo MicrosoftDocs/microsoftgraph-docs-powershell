@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.CrossDeviceExperiences-help.xml
-Module Name: Microsoft.Graph.CrossDeviceExperiences
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.crossdeviceexperiences/new-mguserdevicecommand
+﻿---
+external help file: Microsoft.Graph.Beta.CrossDeviceExperiences-help.xml
+Module Name: Microsoft.Graph.Beta.CrossDeviceExperiences
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/new-mgbetauserdevicecommand
 schema: 2.0.0
 ---
 
-# New-MgUserDeviceCommand
+# New-MgBetaUserDeviceCommand
 
 ## SYNOPSIS
 Create new navigation property to commands for users
@@ -14,7 +14,7 @@ Create new navigation property to commands for users
 
 ### CreateExpanded (Default)
 ```
-New-MgUserDeviceCommand -DeviceId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
+New-MgBetaUserDeviceCommand -DeviceId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
  [-AppServiceName <String>] [-Error <String>] [-Id <String>] [-PackageFamilyName <String>]
  [-Payload <Hashtable>] [-PermissionTicket <String>] [-PostBackUri <String>] [-Responsepayload <Hashtable>]
  [-Status <String>] [-Type <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -22,13 +22,13 @@ New-MgUserDeviceCommand -DeviceId <String> -UserId <String> [-AdditionalProperti
 
 ### Create
 ```
-New-MgUserDeviceCommand -DeviceId <String> -UserId <String> -BodyParameter <IMicrosoftGraphCommand> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaUserDeviceCommand -DeviceId <String> -UserId <String> -BodyParameter <IMicrosoftGraphCommand>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgUserDeviceCommand -InputObject <ICrossDeviceExperiencesIdentity> [-AdditionalProperties <Hashtable>]
+New-MgBetaUserDeviceCommand -InputObject <ICrossDeviceExperiencesIdentity> [-AdditionalProperties <Hashtable>]
  [-AppServiceName <String>] [-Error <String>] [-Id <String>] [-PackageFamilyName <String>]
  [-Payload <Hashtable>] [-PermissionTicket <String>] [-PostBackUri <String>] [-Responsepayload <Hashtable>]
  [-Status <String>] [-Type <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -36,14 +36,28 @@ New-MgUserDeviceCommand -InputObject <ICrossDeviceExperiencesIdentity> [-Additio
 
 ### CreateViaIdentity
 ```
-New-MgUserDeviceCommand -InputObject <ICrossDeviceExperiencesIdentity> -BodyParameter <IMicrosoftGraphCommand>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaUserDeviceCommand -InputObject <ICrossDeviceExperiencesIdentity>
+ -BodyParameter <IMicrosoftGraphCommand> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to commands for users
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -79,7 +93,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 command
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphCommand
@@ -124,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -141,7 +155,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ICrossDeviceExperiencesIdentity
@@ -311,11 +325,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ICrossDeviceExperiencesIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCommand
+### Microsoft.Graph.Beta.PowerShell.Models.ICrossDeviceExperiencesIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCommand
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCommand
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCommand
 ## NOTES
 
 ALIASES
@@ -325,9 +339,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphCommand>`: command
+`BODYPARAMETER <IMicrosoftGraphCommand>`: command
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AppServiceName <String>]`: 
   - `[Error <String>]`: 
   - `[PackageFamilyName <String>]`: 
@@ -337,11 +351,11 @@ BODYPARAMETER `<IMicrosoftGraphCommand>`: command
   - `[PostBackUri <String>]`: 
   - `[Responsepayload <IMicrosoftGraphPayloadResponse>]`: payloadResponse
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Status <String>]`: 
   - `[Type <String>]`: 
 
-INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
+`INPUTOBJECT <ICrossDeviceExperiencesIdentity>`: Identity Parameter
   - `[ActivityHistoryItemId <String>]`: The unique identifier of activityHistoryItem
   - `[CommandId <String>]`: The unique identifier of command
   - `[DeviceId <String>]`: The unique identifier of device

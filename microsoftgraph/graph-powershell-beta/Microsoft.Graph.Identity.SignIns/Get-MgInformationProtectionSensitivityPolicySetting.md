@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mginformationprotectionsensitivitypolicysetting
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetainformationprotectionsensitivitypolicysetting
 schema: 2.0.0
 ---
 
-# Get-MgInformationProtectionSensitivityPolicySetting
+# Get-MgBetaInformationProtectionSensitivityPolicySetting
 
 ## SYNOPSIS
 Get sensitivityPolicySettings from informationProtection
@@ -13,7 +13,7 @@ Get sensitivityPolicySettings from informationProtection
 ## SYNTAX
 
 ```
-Get-MgInformationProtectionSensitivityPolicySetting [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaInformationProtectionSensitivityPolicySetting [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
@@ -21,6 +21,20 @@ Get-MgInformationProtectionSensitivityPolicySetting [-ExpandProperty <String[]>]
 Get sensitivityPolicySettings from informationProtection
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -61,7 +75,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSensitivityPolicySettings
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSensitivityPolicySettings
 ## NOTES
 
 ALIASES

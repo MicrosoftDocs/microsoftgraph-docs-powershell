@@ -1,7 +1,7 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/get-mggroupsitetermstoresetparentgroupsetchildrelationfromterm
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitetermstoresetparentgroupsetchildrelationfromterm
 schema: 2.0.0
 ---
 
@@ -17,14 +17,40 @@ A null value would indicate the relation is directly with the [set].
 ### Get1 (Default)
 ```
 Get-MgGroupSiteTermStoreSetParentGroupSetChildRelationFromTerm -GroupId <String> -RelationId <String>
- -SetId <String> -SetId1 <String> -SiteId <String> -StoreId <String> -TermId <String>
+ -SetId <String> -SetId1 <String> -SiteId <String> -TermId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
+```
+
+### Get3
+```
+Get-MgGroupSiteTermStoreSetParentGroupSetChildRelationFromTerm -GroupId <String> -RelationId <String>
+ -SetId <String> -SetId1 <String> -SiteId <String> -TermId <String> -StoreId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+```
+
+### Get2
+```
+Get-MgGroupSiteTermStoreSetParentGroupSetChildRelationFromTerm -GroupId <String> -RelationId <String>
+ -SetId <String> -SetId1 <String> -SiteId <String> -TermId <String> -TermId1 <String> -StoreId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgGroupSiteTermStoreSetParentGroupSetChildRelationFromTerm -GroupId <String> -RelationId <String>
- -SetId <String> -SetId1 <String> -SiteId <String> -StoreId <String> -TermId <String> -TermId1 <String>
+ -SetId <String> -SetId1 <String> -SiteId <String> -TermId <String> -TermId1 <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+```
+
+### GetViaIdentity3
+```
+Get-MgGroupSiteTermStoreSetParentGroupSetChildRelationFromTerm -InputObject <ISitesIdentity>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+```
+
+### GetViaIdentity2
+```
+Get-MgGroupSiteTermStoreSetParentGroupSetChildRelationFromTerm -InputObject <ISitesIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
@@ -46,6 +72,20 @@ The term from which the relationship is defined.
 A null value would indicate the relation is directly with the [set].
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -69,7 +109,7 @@ The unique identifier of group
 
 ```yaml
 Type: String
-Parameter Sets: Get1, Get
+Parameter Sets: Get1, Get3, Get2, Get
 Aliases:
 
 Required: True
@@ -81,11 +121,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: GetViaIdentity1, GetViaIdentity
+Parameter Sets: GetViaIdentity3, GetViaIdentity2, GetViaIdentity1, GetViaIdentity
 Aliases:
 
 Required: True
@@ -115,7 +155,7 @@ The unique identifier of relation
 
 ```yaml
 Type: String
-Parameter Sets: Get1, Get
+Parameter Sets: Get1, Get3, Get2, Get
 Aliases:
 
 Required: True
@@ -130,7 +170,7 @@ The unique identifier of set
 
 ```yaml
 Type: String
-Parameter Sets: Get1, Get
+Parameter Sets: Get1, Get3, Get2, Get
 Aliases:
 
 Required: True
@@ -145,7 +185,7 @@ The unique identifier of set
 
 ```yaml
 Type: String
-Parameter Sets: Get1, Get
+Parameter Sets: Get1, Get3, Get2, Get
 Aliases:
 
 Required: True
@@ -160,7 +200,7 @@ The unique identifier of site
 
 ```yaml
 Type: String
-Parameter Sets: Get1, Get
+Parameter Sets: Get1, Get3, Get2, Get
 Aliases:
 
 Required: True
@@ -175,7 +215,7 @@ The unique identifier of store
 
 ```yaml
 Type: String
-Parameter Sets: Get1, Get
+Parameter Sets: Get3, Get2
 Aliases:
 
 Required: True
@@ -190,7 +230,7 @@ The unique identifier of term
 
 ```yaml
 Type: String
-Parameter Sets: Get1, Get
+Parameter Sets: Get1, Get3, Get2, Get
 Aliases:
 
 Required: True
@@ -205,7 +245,7 @@ The unique identifier of term
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get2, Get
 Aliases:
 
 Required: True
@@ -233,51 +273,44 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+`INPUTOBJECT <ISitesIdentity>`: Identity Parameter
   - `[BaseItemId <String>]`: The unique identifier of baseItem
-  - `[BitlockerRecoveryKeyId <String>]`: The unique identifier of bitlockerRecoveryKey
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[ContentTypeId1 <String>]`: The unique identifier of contentType
-  - `[DataLossPreventionPolicyId <String>]`: The unique identifier of dataLossPreventionPolicy
   - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
   - `[DriveId <String>]`: The unique identifier of drive
   - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
   - `[GroupId <String>]`: The unique identifier of group
   - `[GroupId1 <String>]`: The unique identifier of group
-  - `[HorizontalSectionColumnId <String>]`: The unique identifier of horizontalSectionColumn
-  - `[HorizontalSectionId <String>]`: The unique identifier of horizontalSection
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
-  - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
   - `[Interval <String>]`: Usage: interval='{interval}'
+  - `[ItemActivityId <String>]`: The unique identifier of itemActivity
+  - `[ItemActivityStatId <String>]`: The unique identifier of itemActivityStat
   - `[ListId <String>]`: The unique identifier of list
-  - `[ListId1 <String>]`: Usage: listId='{listId}'
   - `[ListItemId <String>]`: The unique identifier of listItem
   - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
   - `[NotebookId <String>]`: The unique identifier of notebook
+  - `[OnenoteOperationId <String>]`: The unique identifier of onenoteOperation
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
+  - `[OnenoteResourceId <String>]`: The unique identifier of onenoteResource
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
   - `[Path <String>]`: Usage: path='{path}'
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[RelationId <String>]`: The unique identifier of relation
   - `[RichLongRunningOperationId <String>]`: The unique identifier of richLongRunningOperation
-  - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
-  - `[SensitivityLabelId1 <String>]`: The unique identifier of sensitivityLabel
+  - `[SectionGroupId <String>]`: The unique identifier of sectionGroup
+  - `[SectionGroupId1 <String>]`: The unique identifier of sectionGroup
   - `[SetId <String>]`: The unique identifier of set
   - `[SetId1 <String>]`: The unique identifier of set
   - `[SiteId <String>]`: The unique identifier of site
   - `[SiteId1 <String>]`: The unique identifier of site
-  - `[SitePageId <String>]`: The unique identifier of sitePage
   - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
   - `[StoreId <String>]`: The unique identifier of store
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
-  - `[ThreatAssessmentRequestId <String>]`: The unique identifier of threatAssessmentRequest
-  - `[ThreatAssessmentResultId <String>]`: The unique identifier of threatAssessmentResult
-  - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
-  - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS

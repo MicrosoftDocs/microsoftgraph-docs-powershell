@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/invoke-mgpromotedomain
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetapromotedomain
 schema: 2.0.0
 ---
 
-# Invoke-MgPromoteDomain
+# Invoke-MgBetaPromoteDomain
 
 ## SYNOPSIS
 Promote a verified subdomain to the root domain.
@@ -15,12 +15,12 @@ A verified domain has its **isVerified** property set to `true`.
 
 ### Promote (Default)
 ```
-Invoke-MgPromoteDomain -DomainId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgBetaPromoteDomain -DomainId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### PromoteViaIdentity
 ```
-Invoke-MgPromoteDomain -InputObject <IIdentityDirectoryManagementIdentity> [-WhatIf] [-Confirm]
+Invoke-MgBetaPromoteDomain -InputObject <IIdentityDirectoryManagementIdentity> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -30,14 +30,11 @@ A verified domain has its **isVerified** property set to `true`.
 
 ## EXAMPLES
 
-### Example 1: Using the Invoke-MgPromoteDomain Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
-Invoke-MgPromoteDomain -DomainId $domainId
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+Invoke-MgBetaPromoteDomain -DomainId $domainId
 ```
-
-This example shows how to use the Invoke-MgPromoteDomain Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -58,7 +55,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IIdentityDirectoryManagementIdentity
@@ -108,7 +105,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
 ## OUTPUTS
 
 ### System.Boolean
@@ -121,7 +118,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet

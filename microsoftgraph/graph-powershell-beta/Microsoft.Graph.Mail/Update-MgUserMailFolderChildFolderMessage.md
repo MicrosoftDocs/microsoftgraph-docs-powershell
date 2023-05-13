@@ -1,49 +1,21 @@
----
-external help file: Microsoft.Graph.Mail-help.xml
-Module Name: Microsoft.Graph.Mail
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.mail/update-mgusermailfolderchildfoldermessage
+﻿---
+external help file: Microsoft.Graph.Beta.Mail-help.xml
+Module Name: Microsoft.Graph.Beta.Mail
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetausermailfolderchildfoldermessage
 schema: 2.0.0
 ---
 
-# Update-MgUserMailFolderChildFolderMessage
+# Update-MgBetaUserMailFolderChildFolderMessage
 
 ## SYNOPSIS
 Update the navigation property messages in users
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### UpdateExpanded (Default)
 ```
-Update-MgUserMailFolderChildFolderMessage -MailFolderId <String> -MailFolderId1 <String> -MessageId <String>
- -UserId <String> [-AdditionalProperties <Hashtable>] [-Attachments <IMicrosoftGraphAttachment[]>]
- [-BccRecipients <IMicrosoftGraphRecipient[]>] [-Body <IMicrosoftGraphItemBody>] [-BodyPreview <String>]
- [-Categories <String[]>] [-CcRecipients <IMicrosoftGraphRecipient[]>] [-ChangeKey <String>]
- [-ConversationId <String>] [-ConversationIndexInputFile <String>] [-CreatedDateTime <DateTime>]
- [-Extensions <IMicrosoftGraphExtension[]>] [-Flag <IMicrosoftGraphFollowupFlag>]
- [-From <IMicrosoftGraphRecipient>] [-HasAttachments] [-Id <String>] [-Importance <String>]
- [-InferenceClassification <String>] [-InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader[]>]
- [-InternetMessageId <String>] [-IsDeliveryReceiptRequested] [-IsDraft] [-IsRead] [-IsReadReceiptRequested]
- [-LastModifiedDateTime <DateTime>] [-Mentions <IMicrosoftGraphMention[]>]
- [-MentionsPreview <IMicrosoftGraphMentionsPreview>]
- [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-ParentFolderId <String>]
- [-ReceivedDateTime <DateTime>] [-ReplyTo <IMicrosoftGraphRecipient[]>] [-Sender <IMicrosoftGraphRecipient>]
- [-SentDateTime <DateTime>]
- [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-Subject <String>]
- [-ToRecipients <IMicrosoftGraphRecipient[]>] [-UniqueBody <IMicrosoftGraphItemBody>]
- [-UnsubscribeData <String[]>] [-UnsubscribeEnabled] [-WebLink <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### Update1
-```
-Update-MgUserMailFolderChildFolderMessage -MailFolderId <String> -MailFolderId1 <String> -MessageId <String>
- -UserId <String> -BodyParameter <IMicrosoftGraphMessage1> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded1
-```
-Update-MgUserMailFolderChildFolderMessage -InputObject <IMailIdentity> [-AdditionalProperties <Hashtable>]
+Update-MgBetaUserMailFolderChildFolderMessage -MailFolderId <String> -MailFolderId1 <String>
+ -MessageId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
  [-Attachments <IMicrosoftGraphAttachment[]>] [-BccRecipients <IMicrosoftGraphRecipient[]>]
  [-Body <IMicrosoftGraphItemBody>] [-BodyPreview <String>] [-Categories <String[]>]
  [-CcRecipients <IMicrosoftGraphRecipient[]>] [-ChangeKey <String>] [-ConversationId <String>]
@@ -59,20 +31,63 @@ Update-MgUserMailFolderChildFolderMessage -InputObject <IMailIdentity> [-Additio
  [-SentDateTime <DateTime>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-Subject <String>]
  [-ToRecipients <IMicrosoftGraphRecipient[]>] [-UniqueBody <IMicrosoftGraphItemBody>]
- [-UnsubscribeData <String[]>] [-UnsubscribeEnabled] [-WebLink <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [-UnsubscribeData <String[]>] [-UnsubscribeEnabled] [-WebLink <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### UpdateViaIdentity1
+### Update
 ```
-Update-MgUserMailFolderChildFolderMessage -InputObject <IMailIdentity> -BodyParameter <IMicrosoftGraphMessage1>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaUserMailFolderChildFolderMessage -MailFolderId <String> -MailFolderId1 <String>
+ -MessageId <String> -UserId <String> -BodyParameter <IMicrosoftGraphMessage> [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaUserMailFolderChildFolderMessage -InputObject <IMailIdentity> [-AdditionalProperties <Hashtable>]
+ [-Attachments <IMicrosoftGraphAttachment[]>] [-BccRecipients <IMicrosoftGraphRecipient[]>]
+ [-Body <IMicrosoftGraphItemBody>] [-BodyPreview <String>] [-Categories <String[]>]
+ [-CcRecipients <IMicrosoftGraphRecipient[]>] [-ChangeKey <String>] [-ConversationId <String>]
+ [-ConversationIndexInputFile <String>] [-CreatedDateTime <DateTime>]
+ [-Extensions <IMicrosoftGraphExtension[]>] [-Flag <IMicrosoftGraphFollowupFlag>]
+ [-From <IMicrosoftGraphRecipient>] [-HasAttachments] [-Id <String>] [-Importance <String>]
+ [-InferenceClassification <String>] [-InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader[]>]
+ [-InternetMessageId <String>] [-IsDeliveryReceiptRequested] [-IsDraft] [-IsRead] [-IsReadReceiptRequested]
+ [-LastModifiedDateTime <DateTime>] [-Mentions <IMicrosoftGraphMention[]>]
+ [-MentionsPreview <IMicrosoftGraphMentionsPreview>]
+ [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-ParentFolderId <String>]
+ [-ReceivedDateTime <DateTime>] [-ReplyTo <IMicrosoftGraphRecipient[]>] [-Sender <IMicrosoftGraphRecipient>]
+ [-SentDateTime <DateTime>]
+ [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-Subject <String>]
+ [-ToRecipients <IMicrosoftGraphRecipient[]>] [-UniqueBody <IMicrosoftGraphItemBody>]
+ [-UnsubscribeData <String[]>] [-UnsubscribeEnabled] [-WebLink <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaUserMailFolderChildFolderMessage -InputObject <IMailIdentity>
+ -BodyParameter <IMicrosoftGraphMessage> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property messages in users
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -81,7 +96,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -93,11 +108,11 @@ Accept wildcard characters: False
 
 ### -Attachments
 The fileAttachment and itemAttachment attachments for the message.
-To construct, please use Get-Help -Online and see NOTES section for ATTACHMENTS properties and create a hash table.
+To construct, see NOTES section for ATTACHMENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAttachment[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -109,11 +124,11 @@ Accept wildcard characters: False
 
 ### -BccRecipients
 The Bcc: recipients for the message.
-To construct, please use Get-Help -Online and see NOTES section for BCCRECIPIENTS properties and create a hash table.
+To construct, see NOTES section for BCCRECIPIENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRecipient[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -125,11 +140,11 @@ Accept wildcard characters: False
 
 ### -Body
 itemBody
-To construct, please use Get-Help -Online and see NOTES section for BODY properties and create a hash table.
+To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphItemBody
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -141,11 +156,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 message
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMessage1
-Parameter Sets: Update1, UpdateViaIdentity1
+Type: IMicrosoftGraphMessage
+Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -162,7 +177,7 @@ If the message contains instances of mention, this property would contain a conc
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -173,11 +188,11 @@ Accept wildcard characters: False
 ```
 
 ### -Categories
-The categories associated with the item
+.
 
 ```yaml
 Type: String[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -189,11 +204,11 @@ Accept wildcard characters: False
 
 ### -CcRecipients
 The Cc: recipients for the message.
-To construct, please use Get-Help -Online and see NOTES section for CCRECIPIENTS properties and create a hash table.
+To construct, see NOTES section for CCRECIPIENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRecipient[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -204,14 +219,11 @@ Accept wildcard characters: False
 ```
 
 ### -ChangeKey
-Identifies the version of the item.
-Every time the item is changed, changeKey changes as well.
-This allows Exchange to apply changes to the correct version of the object.
-Read-only.
+.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -226,7 +238,7 @@ The ID of the conversation the email belongs to.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -241,7 +253,7 @@ Input File for ConversationIndex (Indicates the position of the message within t
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -257,7 +269,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
 Type: DateTime
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -270,11 +282,11 @@ Accept wildcard characters: False
 ### -Extensions
 The collection of open extensions defined for the message.
 Nullable.
-To construct, please use Get-Help -Online and see NOTES section for EXTENSIONS properties and create a hash table.
+To construct, see NOTES section for EXTENSIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphExtension[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -286,11 +298,11 @@ Accept wildcard characters: False
 
 ### -Flag
 followupFlag
-To construct, please use Get-Help -Online and see NOTES section for FLAG properties and create a hash table.
+To construct, see NOTES section for FLAG properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphFollowupFlag
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -302,11 +314,11 @@ Accept wildcard characters: False
 
 ### -From
 recipient
-To construct, please use Get-Help -Online and see NOTES section for FROM properties and create a hash table.
+To construct, see NOTES section for FROM properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRecipient
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -323,7 +335,7 @@ To verify the existence of inline attachments, parse the body property to look f
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -334,12 +346,12 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -354,7 +366,7 @@ importance
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -369,7 +381,7 @@ inferenceClassificationType
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -381,11 +393,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IMailIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -397,11 +409,11 @@ Accept wildcard characters: False
 
 ### -InternetMessageHeaders
 .
-To construct, please use Get-Help -Online and see NOTES section for INTERNETMESSAGEHEADERS properties and create a hash table.
+To construct, see NOTES section for INTERNETMESSAGEHEADERS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphInternetMessageHeader[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -416,7 +428,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -431,7 +443,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -446,7 +458,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -461,7 +473,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -476,7 +488,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -492,7 +504,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
 Type: DateTime
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -507,7 +519,7 @@ The unique identifier of mailFolder
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -522,7 +534,7 @@ The unique identifier of mailFolder
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -535,11 +547,11 @@ Accept wildcard characters: False
 ### -Mentions
 A collection of mentions in the message, ordered by the createdDateTime from the newest to the oldest.
 By default, a GET /messages does not return this property unless you apply $expand on the property.
-To construct, please use Get-Help -Online and see NOTES section for MENTIONS properties and create a hash table.
+To construct, see NOTES section for MENTIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphMention[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -551,11 +563,11 @@ Accept wildcard characters: False
 
 ### -MentionsPreview
 mentionsPreview
-To construct, please use Get-Help -Online and see NOTES section for MENTIONSPREVIEW properties and create a hash table.
+To construct, see NOTES section for MENTIONSPREVIEW properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphMentionsPreview
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -570,7 +582,7 @@ The unique identifier of message
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -583,11 +595,11 @@ Accept wildcard characters: False
 ### -MultiValueExtendedProperties
 The collection of multi-value extended properties defined for the message.
 Nullable.
-To construct, please use Get-Help -Online and see NOTES section for MULTIVALUEEXTENDEDPROPERTIES properties and create a hash table.
+To construct, see NOTES section for MULTIVALUEEXTENDEDPROPERTIES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphMultiValueLegacyExtendedProperty[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -602,22 +614,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -632,7 +629,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: DateTime
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -644,11 +641,11 @@ Accept wildcard characters: False
 
 ### -ReplyTo
 .
-To construct, please use Get-Help -Online and see NOTES section for REPLYTO properties and create a hash table.
+To construct, see NOTES section for REPLYTO properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRecipient[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -660,11 +657,11 @@ Accept wildcard characters: False
 
 ### -Sender
 recipient
-To construct, please use Get-Help -Online and see NOTES section for SENDER properties and create a hash table.
+To construct, see NOTES section for SENDER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRecipient
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -679,7 +676,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: DateTime
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -692,11 +689,11 @@ Accept wildcard characters: False
 ### -SingleValueExtendedProperties
 The collection of single-value extended properties defined for the message.
 Nullable.
-To construct, please use Get-Help -Online and see NOTES section for SINGLEVALUEEXTENDEDPROPERTIES properties and create a hash table.
+To construct, see NOTES section for SINGLEVALUEEXTENDEDPROPERTIES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSingleValueLegacyExtendedProperty[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -711,7 +708,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -723,11 +720,11 @@ Accept wildcard characters: False
 
 ### -ToRecipients
 .
-To construct, please use Get-Help -Online and see NOTES section for TORECIPIENTS properties and create a hash table.
+To construct, see NOTES section for TORECIPIENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRecipient[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -739,11 +736,11 @@ Accept wildcard characters: False
 
 ### -UniqueBody
 itemBody
-To construct, please use Get-Help -Online and see NOTES section for UNIQUEBODY properties and create a hash table.
+To construct, see NOTES section for UNIQUEBODY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphItemBody
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -758,7 +755,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -773,7 +770,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -788,7 +785,7 @@ The unique identifier of user
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -803,7 +800,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -849,11 +846,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMailIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMessage1
+### Microsoft.Graph.Beta.PowerShell.Models.IMailIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMessage
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMessage
 ## NOTES
 
 ALIASES
@@ -863,44 +860,44 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ATTACHMENTS <IMicrosoftGraphAttachment\[]>: The fileAttachment and itemAttachment attachments for the message.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`ATTACHMENTS <IMicrosoftGraphAttachment[]>`: The fileAttachment and itemAttachment attachments for the message.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ContentType <String>]`: The MIME type.
   - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
   - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[Name <String>]`: The attachment's file name.
+  - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
   - `[Size <Int32?>]`: The length of the attachment in bytes.
 
-BCCRECIPIENTS <IMicrosoftGraphRecipient\[]>: The Bcc: recipients for the message.
+`BCCRECIPIENTS <IMicrosoftGraphRecipient[]>`: The Bcc: recipients for the message.
   - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Address <String>]`: The email address of the person or entity.
-    - `[Name <String>]`: The display name of the person or entity.
+    - `[Address <String>]`: The email address of an entity instance.
+    - `[Name <String>]`: The display name of an entity instance.
 
-BODY `<IMicrosoftGraphItemBody>`: itemBody
+`BODY <IMicrosoftGraphItemBody>`: itemBody
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Content <String>]`: The content of the item.
   - `[ContentType <String>]`: bodyType
 
-BODYPARAMETER `<IMicrosoftGraphMessage1>`: message
+`BODYPARAMETER <IMicrosoftGraphMessage>`: message
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Categories <String[]>]`: The categories associated with the item
-  - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
+  - `[Categories <String[]>]`: 
+  - `[ChangeKey <String>]`: 
   - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Attachments <IMicrosoftGraphAttachment[]>]`: The fileAttachment and itemAttachment attachments for the message.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[ContentType <String>]`: The MIME type.
     - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
     - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[Name <String>]`: The attachment's file name.
+    - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
     - `[Size <Int32?>]`: The length of the attachment in bytes.
   - `[BccRecipients <IMicrosoftGraphRecipient[]>]`: The Bcc: recipients for the message.
     - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Address <String>]`: The email address of the person or entity.
-      - `[Name <String>]`: The display name of the person or entity.
+      - `[Address <String>]`: The email address of an entity instance.
+      - `[Name <String>]`: The display name of an entity instance.
   - `[Body <IMicrosoftGraphItemBody>]`: itemBody
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Content <String>]`: The content of the item.
@@ -910,13 +907,13 @@ BODYPARAMETER `<IMicrosoftGraphMessage1>`: message
   - `[ConversationId <String>]`: The ID of the conversation the email belongs to.
   - `[ConversationIndex <Byte[]>]`: Indicates the position of the message within the conversation.
   - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the message. Nullable.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Flag <IMicrosoftGraphFollowupFlag>]`: followupFlag
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[CompletedDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
-      - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
+      - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
+      - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
     - `[DueDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
     - `[FlagStatus <String>]`: followupFlagStatus
     - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
@@ -933,7 +930,7 @@ BODYPARAMETER `<IMicrosoftGraphMessage1>`: message
   - `[IsRead <Boolean?>]`: 
   - `[IsReadReceiptRequested <Boolean?>]`: 
   - `[Mentions <IMicrosoftGraphMention[]>]`: A collection of mentions in the message, ordered by the createdDateTime from the newest to the oldest. By default, a GET /messages does not return this property unless you apply $expand on the property.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Application <String>]`: The name of the application where the mention is created. Optional. Not used and defaulted as null for message.
     - `[ClientReference <String>]`: A unique identifier that represents a parent of the resource instance. Optional. Not used and defaulted as null for message.
     - `[CreatedBy <IMicrosoftGraphEmailAddress>]`: emailAddress
@@ -946,7 +943,7 @@ BODYPARAMETER `<IMicrosoftGraphMessage1>`: message
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[IsMentioned <Boolean?>]`: True if the signed-in user is mentioned in the parent resource instance. Read-only. Supports filter.
   - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the message. Nullable.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Value <String[]>]`: A collection of property values.
   - `[ParentFolderId <String>]`: 
   - `[ReceivedDateTime <DateTime?>]`: 
@@ -954,7 +951,7 @@ BODYPARAMETER `<IMicrosoftGraphMessage1>`: message
   - `[Sender <IMicrosoftGraphRecipient>]`: recipient
   - `[SentDateTime <DateTime?>]`: 
   - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the message. Nullable.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Value <String>]`: A property value.
   - `[Subject <String>]`: 
   - `[ToRecipients <IMicrosoftGraphRecipient[]>]`: 
@@ -963,33 +960,33 @@ BODYPARAMETER `<IMicrosoftGraphMessage1>`: message
   - `[UnsubscribeEnabled <Boolean?>]`: 
   - `[WebLink <String>]`: 
 
-CCRECIPIENTS <IMicrosoftGraphRecipient\[]>: The Cc: recipients for the message.
+`CCRECIPIENTS <IMicrosoftGraphRecipient[]>`: The Cc: recipients for the message.
   - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Address <String>]`: The email address of the person or entity.
-    - `[Name <String>]`: The display name of the person or entity.
+    - `[Address <String>]`: The email address of an entity instance.
+    - `[Name <String>]`: The display name of an entity instance.
 
-EXTENSIONS <IMicrosoftGraphExtension\[]>: The collection of open extensions defined for the message. Nullable.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`EXTENSIONS <IMicrosoftGraphExtension[]>`: The collection of open extensions defined for the message. Nullable.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
 
-FLAG `<IMicrosoftGraphFollowupFlag>`: followupFlag
+`FLAG <IMicrosoftGraphFollowupFlag>`: followupFlag
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CompletedDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
-    - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
+    - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
+    - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
   - `[DueDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
   - `[FlagStatus <String>]`: followupFlagStatus
   - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
 
-FROM `<IMicrosoftGraphRecipient>`: recipient
+`FROM <IMicrosoftGraphRecipient>`: recipient
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Address <String>]`: The email address of the person or entity.
-    - `[Name <String>]`: The display name of the person or entity.
+    - `[Address <String>]`: The email address of an entity instance.
+    - `[Name <String>]`: The display name of an entity instance.
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+`INPUTOBJECT <IMailIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[InferenceClassificationOverrideId <String>]`: The unique identifier of inferenceClassificationOverride
@@ -998,61 +995,59 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
   - `[MentionId <String>]`: The unique identifier of mention
   - `[MessageId <String>]`: The unique identifier of message
   - `[MessageRuleId <String>]`: The unique identifier of messageRule
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
   - `[UserConfigurationId <String>]`: The unique identifier of userConfiguration
   - `[UserId <String>]`: The unique identifier of user
 
-INTERNETMESSAGEHEADERS <IMicrosoftGraphInternetMessageHeader\[]>: .
+`INTERNETMESSAGEHEADERS <IMicrosoftGraphInternetMessageHeader[]>`: .
   - `[Name <String>]`: Represents the key in a key-value pair.
   - `[Value <String>]`: The value in a key-value pair.
 
-MENTIONS <IMicrosoftGraphMention\[]>: A collection of mentions in the message, ordered by the createdDateTime from the newest to the oldest. By default, a GET /messages does not return this property unless you apply $expand on the property.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`MENTIONS <IMicrosoftGraphMention[]>`: A collection of mentions in the message, ordered by the createdDateTime from the newest to the oldest. By default, a GET /messages does not return this property unless you apply $expand on the property.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Application <String>]`: The name of the application where the mention is created. Optional. Not used and defaulted as null for message.
   - `[ClientReference <String>]`: A unique identifier that represents a parent of the resource instance. Optional. Not used and defaulted as null for message.
   - `[CreatedBy <IMicrosoftGraphEmailAddress>]`: emailAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Address <String>]`: The email address of the person or entity.
-    - `[Name <String>]`: The display name of the person or entity.
+    - `[Address <String>]`: The email address of an entity instance.
+    - `[Name <String>]`: The display name of an entity instance.
   - `[CreatedDateTime <DateTime?>]`: The date and time that the mention is created on the client.
   - `[DeepLink <String>]`: A deep web link to the context of the mention in the resource instance. Optional. Not used and defaulted as null for message.
   - `[MentionText <String>]`: Optional. Not used and defaulted as null for message. To get the mentions in a message, see the bodyPreview property of the message instead.
   - `[Mentioned <IMicrosoftGraphEmailAddress>]`: emailAddress
   - `[ServerCreatedDateTime <DateTime?>]`: The date and time that the mention is created on the server. Optional. Not used and defaulted as null for message.
 
-MENTIONSPREVIEW `<IMicrosoftGraphMentionsPreview>`: mentionsPreview
+`MENTIONSPREVIEW <IMicrosoftGraphMentionsPreview>`: mentionsPreview
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[IsMentioned <Boolean?>]`: True if the signed-in user is mentioned in the parent resource instance. Read-only. Supports filter.
 
-MULTIVALUEEXTENDEDPROPERTIES <IMicrosoftGraphMultiValueLegacyExtendedProperty\[]>: The collection of multi-value extended properties defined for the message. Nullable.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`MULTIVALUEEXTENDEDPROPERTIES <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>`: The collection of multi-value extended properties defined for the message. Nullable.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Value <String[]>]`: A collection of property values.
 
-REPLYTO <IMicrosoftGraphRecipient\[]>: .
+`REPLYTO <IMicrosoftGraphRecipient[]>`: .
   - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Address <String>]`: The email address of the person or entity.
-    - `[Name <String>]`: The display name of the person or entity.
+    - `[Address <String>]`: The email address of an entity instance.
+    - `[Name <String>]`: The display name of an entity instance.
 
-SENDER `<IMicrosoftGraphRecipient>`: recipient
+`SENDER <IMicrosoftGraphRecipient>`: recipient
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Address <String>]`: The email address of the person or entity.
-    - `[Name <String>]`: The display name of the person or entity.
+    - `[Address <String>]`: The email address of an entity instance.
+    - `[Name <String>]`: The display name of an entity instance.
 
-SINGLEVALUEEXTENDEDPROPERTIES <IMicrosoftGraphSingleValueLegacyExtendedProperty\[]>: The collection of single-value extended properties defined for the message. Nullable.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`SINGLEVALUEEXTENDEDPROPERTIES <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>`: The collection of single-value extended properties defined for the message. Nullable.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Value <String>]`: A property value.
 
-TORECIPIENTS <IMicrosoftGraphRecipient\[]>: .
+`TORECIPIENTS <IMicrosoftGraphRecipient[]>`: .
   - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Address <String>]`: The email address of the person or entity.
-    - `[Name <String>]`: The display name of the person or entity.
+    - `[Address <String>]`: The email address of an entity instance.
+    - `[Name <String>]`: The display name of an entity instance.
 
-UNIQUEBODY `<IMicrosoftGraphItemBody>`: itemBody
+`UNIQUEBODY <IMicrosoftGraphItemBody>`: itemBody
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Content <String>]`: The content of the item.
   - `[ContentType <String>]`: bodyType

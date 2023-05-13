@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryinboundshareduserprofile
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryinboundshareduserprofile
 schema: 2.0.0
 ---
 
-# New-MgDirectoryInboundSharedUserProfile
+# New-MgBetaDirectoryInboundSharedUserProfile
 
 ## SYNOPSIS
 Create new navigation property to inboundSharedUserProfiles for directory
@@ -14,14 +14,14 @@ Create new navigation property to inboundSharedUserProfiles for directory
 
 ### CreateExpanded (Default)
 ```
-New-MgDirectoryInboundSharedUserProfile [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
+New-MgBetaDirectoryInboundSharedUserProfile [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
  [-HomeTenantId <String>] [-UserId <String>] [-UserPrincipalName <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDirectoryInboundSharedUserProfile -BodyParameter <IMicrosoftGraphInboundSharedUserProfile> [-WhatIf]
+New-MgBetaDirectoryInboundSharedUserProfile -BodyParameter <IMicrosoftGraphInboundSharedUserProfile> [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -29,6 +29,20 @@ New-MgDirectoryInboundSharedUserProfile -BodyParameter <IMicrosoftGraphInboundSh
 Create new navigation property to inboundSharedUserProfiles for directory
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -49,7 +63,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 inboundSharedUserProfile
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphInboundSharedUserProfile
@@ -163,10 +177,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInboundSharedUserProfile
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInboundSharedUserProfile
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInboundSharedUserProfile
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInboundSharedUserProfile
 ## NOTES
 
 ALIASES
@@ -176,7 +190,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphInboundSharedUserProfile>`: inboundSharedUserProfile
+`BODYPARAMETER <IMicrosoftGraphInboundSharedUserProfile>`: inboundSharedUserProfile
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: The name displayed in the address book for teh user at the time when the sharing record was created. Read-only.
   - `[HomeTenantId <String>]`: The home tenant id of the external user. Read-only.

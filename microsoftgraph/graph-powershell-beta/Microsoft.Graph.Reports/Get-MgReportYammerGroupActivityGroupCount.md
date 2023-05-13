@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Reports-help.xml
-Module Name: Microsoft.Graph.Reports
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgreportyammergroupactivitygroupcount
+﻿---
+external help file: Microsoft.Graph.Beta.Reports-help.xml
+Module Name: Microsoft.Graph.Beta.Reports
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportyammergroupactivitygroupcount
 schema: 2.0.0
 ---
 
-# Get-MgReportYammerGroupActivityGroupCount
+# Get-MgBetaReportYammerGroupActivityGroupCount
 
 ## SYNOPSIS
 Invoke function getYammerGroupsActivityGroupCounts
@@ -14,12 +14,13 @@ Invoke function getYammerGroupsActivityGroupCounts
 
 ### Get (Default)
 ```
-Get-MgReportYammerGroupActivityGroupCount -Period <String> -OutFile <String> [-PassThru] [<CommonParameters>]
+Get-MgBetaReportYammerGroupActivityGroupCount -Period <String> -OutFile <String> [-PassThru]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgReportYammerGroupActivityGroupCount -InputObject <IReportsIdentity> -OutFile <String> [-PassThru]
+Get-MgBetaReportYammerGroupActivityGroupCount -InputObject <IReportsIdentity> -OutFile <String> [-PassThru]
  [<CommonParameters>]
 ```
 
@@ -28,11 +29,25 @@ Invoke function getYammerGroupsActivityGroupCounts
 
 ## EXAMPLES
 
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IReportsIdentity
@@ -96,7 +111,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IReportsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IReportsIdentity
 ## OUTPUTS
 
 ### System.Boolean
@@ -109,7 +124,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+`INPUTOBJECT <IReportsIdentity>`: Identity Parameter
   - `[ApplicationSignInDetailedSummaryId <String>]`: The unique identifier of applicationSignInDetailedSummary
   - `[CredentialUserRegistrationDetailsId <String>]`: The unique identifier of credentialUserRegistrationDetails
   - `[Date <DateTime?>]`: Usage: date={date}

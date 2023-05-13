@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/set-mgsecuritycaseediscoverycasereviewsetfilecontent
+﻿---
+external help file: Microsoft.Graph.Beta.Security-help.xml
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/set-mgbetasecuritycaseediscoverycasereviewsetfilecontent
 schema: 2.0.0
 ---
 
-# Set-MgSecurityCaseEdiscoveryCaseReviewSetFileContent
+# Set-MgBetaSecurityCaseEdiscoveryCaseReviewSetFileContent
 
 ## SYNOPSIS
 Update content for the navigation property files in security
@@ -14,15 +14,14 @@ Update content for the navigation property files in security
 
 ### Set (Default)
 ```
-Set-MgSecurityCaseEdiscoveryCaseReviewSetFileContent -EdiscoveryCaseId <String> -EdiscoveryFileId <String>
- -EdiscoveryReviewSetId <String> [-BodyParameter <Stream>] -InFile <String> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Set-MgBetaSecurityCaseEdiscoveryCaseReviewSetFileContent -EdiscoveryCaseId <String> -EdiscoveryFileId <String>
+ -EdiscoveryReviewSetId <String> [-Data <Stream>] -InFile <String> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
-Set-MgSecurityCaseEdiscoveryCaseReviewSetFileContent -InputObject <ISecurityIdentity> [-BodyParameter <Stream>]
- -InFile <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-MgBetaSecurityCaseEdiscoveryCaseReviewSetFileContent -InputObject <ISecurityIdentity> [-Data <Stream>]
+ -InFile <String> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -30,9 +29,23 @@ Update content for the navigation property files in security
 
 ## EXAMPLES
 
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
-### -BodyParameter
+### -Data
 .
 
 ```yaml
@@ -111,7 +124,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ISecurityIdentity
@@ -122,21 +135,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -176,11 +174,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
 ### System.IO.Stream
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryFile
 ## NOTES
 
 ALIASES
@@ -190,7 +188,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+`INPUTOBJECT <ISecurityIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
   - `[ArticleId <String>]`: The unique identifier of article
   - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator

@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementcomanageddevicesecuritybaselinestate
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementcomanageddevicesecuritybaselinestate
 schema: 2.0.0
 ---
 
-# New-MgDeviceManagementComanagedDeviceSecurityBaselineState
+# New-MgBetaDeviceManagementComanagedDeviceSecurityBaselineState
 
 ## SYNOPSIS
 Create new navigation property to securityBaselineStates for deviceManagement
@@ -14,7 +14,7 @@ Create new navigation property to securityBaselineStates for deviceManagement
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementComanagedDeviceSecurityBaselineState -ManagedDeviceId <String>
+New-MgBetaDeviceManagementComanagedDeviceSecurityBaselineState -ManagedDeviceId <String>
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
  [-SecurityBaselineTemplateId <String>] [-SettingStates <IMicrosoftGraphSecurityBaselineSettingState[]>]
  [-State <SecurityBaselineComplianceState>] [-UserPrincipalName <String>] [-WhatIf] [-Confirm]
@@ -23,13 +23,13 @@ New-MgDeviceManagementComanagedDeviceSecurityBaselineState -ManagedDeviceId <Str
 
 ### Create
 ```
-New-MgDeviceManagementComanagedDeviceSecurityBaselineState -ManagedDeviceId <String>
+New-MgBetaDeviceManagementComanagedDeviceSecurityBaselineState -ManagedDeviceId <String>
  -BodyParameter <IMicrosoftGraphSecurityBaselineState> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgDeviceManagementComanagedDeviceSecurityBaselineState -InputObject <IDeviceManagementIdentity>
+New-MgBetaDeviceManagementComanagedDeviceSecurityBaselineState -InputObject <IDeviceManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
  [-SecurityBaselineTemplateId <String>] [-SettingStates <IMicrosoftGraphSecurityBaselineSettingState[]>]
  [-State <SecurityBaselineComplianceState>] [-UserPrincipalName <String>] [-WhatIf] [-Confirm]
@@ -38,7 +38,7 @@ New-MgDeviceManagementComanagedDeviceSecurityBaselineState -InputObject <IDevice
 
 ### CreateViaIdentity
 ```
-New-MgDeviceManagementComanagedDeviceSecurityBaselineState -InputObject <IDeviceManagementIdentity>
+New-MgBetaDeviceManagementComanagedDeviceSecurityBaselineState -InputObject <IDeviceManagementIdentity>
  -BodyParameter <IMicrosoftGraphSecurityBaselineState> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -46,6 +46,20 @@ New-MgDeviceManagementComanagedDeviceSecurityBaselineState -InputObject <IDevice
 Create new navigation property to securityBaselineStates for deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -66,7 +80,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Security baseline state for a device.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSecurityBaselineState
@@ -96,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -113,7 +127,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementIdentity
@@ -159,7 +173,7 @@ Accept wildcard characters: False
 
 ### -SettingStates
 The security baseline state for different settings for a device
-To construct, please use Get-Help -Online and see NOTES section for SETTINGSTATES properties and create a hash table.
+To construct, see NOTES section for SETTINGSTATES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSecurityBaselineSettingState[]
@@ -239,11 +253,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityBaselineState
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityBaselineState
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityBaselineState
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityBaselineState
 ## NOTES
 
 ALIASES
@@ -253,13 +267,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSecurityBaselineState>`: Security baseline state for a device.
+`BODYPARAMETER <IMicrosoftGraphSecurityBaselineState>`: Security baseline state for a device.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DisplayName <String>]`: The display name of the security baseline
   - `[SecurityBaselineTemplateId <String>]`: The security baseline template id
   - `[SettingStates <IMicrosoftGraphSecurityBaselineSettingState[]>]`: The security baseline state for different settings for a device
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[ContributingPolicies <IMicrosoftGraphSecurityBaselineContributingPolicy[]>]`: The policies that contribute to this setting instance
       - `[DisplayName <String>]`: Name of the policy
       - `[SourceId <String>]`: Unique identifier of the policy
@@ -277,7 +291,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityBaselineState>`: Security baseline state 
   - `[State <SecurityBaselineComplianceState?>]`: Security Baseline Compliance State
   - `[UserPrincipalName <String>]`: User Principal Name
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementIdentity>`: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: The unique identifier of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: The unique identifier of androidManagedStoreAppConfigurationSchema
@@ -409,9 +423,11 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionAppLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionAppLearningSummary
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
+  - `[WindowsQualityUpdateProfileAssignmentId <String>]`: The unique identifier of windowsQualityUpdateProfileAssignment
+  - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
-SETTINGSTATES <IMicrosoftGraphSecurityBaselineSettingState\[]>: The security baseline state for different settings for a device
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`SETTINGSTATES <IMicrosoftGraphSecurityBaselineSettingState[]>`: The security baseline state for different settings for a device
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ContributingPolicies <IMicrosoftGraphSecurityBaselineContributingPolicy[]>]`: The policies that contribute to this setting instance
     - `[DisplayName <String>]`: Name of the policy
     - `[SourceId <String>]`: Unique identifier of the policy

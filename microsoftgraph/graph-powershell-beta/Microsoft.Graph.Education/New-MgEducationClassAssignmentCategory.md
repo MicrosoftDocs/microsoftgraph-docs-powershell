@@ -1,82 +1,81 @@
----
-external help file: Microsoft.Graph.Education-help.xml
-Module Name: Microsoft.Graph.Education
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/new-mgeducationclassassignmentcategory
+﻿---
+external help file: Microsoft.Graph.Beta.Education-help.xml
+Module Name: Microsoft.Graph.Beta.Education
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassassignmentcategory
 schema: 2.0.0
-ms.prod: education
 ---
 
-# New-MgEducationClassAssignmentCategory
+# New-MgBetaEducationClassAssignmentCategory
 
 ## SYNOPSIS
-Create new navigation property to categories for education
+Creates a new educationCategory on an educationClass.
+Only teachers can perform this operation.
 
 ## SYNTAX
 
-### CreateExpanded3 (Default)
+### CreateExpanded (Default)
 ```
-New-MgEducationClassAssignmentCategory -EducationClassId <String> [-AdditionalProperties <Hashtable>]
+New-MgBetaEducationClassAssignmentCategory -EducationClassId <String> [-AdditionalProperties <Hashtable>]
  [-DisplayName <String>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CreateExpanded
+### CreateExpanded1
 ```
-New-MgEducationClassAssignmentCategory -EducationAssignmentId <String> -EducationClassId <String>
+New-MgBetaEducationClassAssignmentCategory -EducationClassId <String> -EducationAssignmentId <String>
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
+### Create1
+```
+New-MgBetaEducationClassAssignmentCategory -EducationClassId <String> -EducationAssignmentId <String>
+ -BodyParameter <IMicrosoftGraphEducationCategory> [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### Create
 ```
-New-MgEducationClassAssignmentCategory -EducationAssignmentId <String> -EducationClassId <String>
+New-MgBetaEducationClassAssignmentCategory -EducationClassId <String>
  -BodyParameter <IMicrosoftGraphEducationCategory> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create3
+### CreateViaIdentityExpanded1
 ```
-New-MgEducationClassAssignmentCategory -EducationClassId <String>
- -BodyParameter <IMicrosoftGraphEducationCategory> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded3
-```
-New-MgEducationClassAssignmentCategory -InputObject <IEducationIdentity> [-AdditionalProperties <Hashtable>]
- [-DisplayName <String>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaEducationClassAssignmentCategory -InputObject <IEducationIdentity>
+ [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgEducationClassAssignmentCategory -InputObject <IEducationIdentity> [-AdditionalProperties <Hashtable>]
- [-DisplayName <String>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaEducationClassAssignmentCategory -InputObject <IEducationIdentity>
+ [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
-### CreateViaIdentity3
+### CreateViaIdentity1
 ```
-New-MgEducationClassAssignmentCategory -InputObject <IEducationIdentity>
+New-MgBetaEducationClassAssignmentCategory -InputObject <IEducationIdentity>
  -BodyParameter <IMicrosoftGraphEducationCategory> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgEducationClassAssignmentCategory -InputObject <IEducationIdentity>
+New-MgBetaEducationClassAssignmentCategory -InputObject <IEducationIdentity>
  -BodyParameter <IMicrosoftGraphEducationCategory> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create new navigation property to categories for education
+Creates a new educationCategory on an educationClass.
+Only teachers can perform this operation.
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Education
-
-Get-MgEducationClassAssignmentCategory -EducationClassId $educationClassId
+Import-Module Microsoft.Graph.Beta.Education
 ```
 
-This example shows how to use the New-MgEducationClassAssignmentCategory Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Get-MgBetaEducationClassAssignmentCategory -EducationClassId $educationClassId
 
 ## PARAMETERS
 
@@ -85,7 +84,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded3, CreateExpanded, CreateViaIdentityExpanded3, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -97,11 +96,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 educationCategory
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEducationCategory
-Parameter Sets: Create, Create3, CreateViaIdentity3, CreateViaIdentity
+Parameter Sets: Create1, Create, CreateViaIdentity1, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -116,7 +115,7 @@ Unique identifier for the category.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded3, CreateExpanded, CreateViaIdentityExpanded3, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -131,7 +130,7 @@ The unique identifier of educationAssignment
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, Create
+Parameter Sets: CreateExpanded1, Create1
 Aliases:
 
 Required: True
@@ -146,7 +145,7 @@ The unique identifier of educationClass
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded3, CreateExpanded, Create, Create3
+Parameter Sets: CreateExpanded, CreateExpanded1, Create1, Create
 Aliases:
 
 Required: True
@@ -157,12 +156,12 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded3, CreateExpanded, CreateViaIdentityExpanded3, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -174,11 +173,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IEducationIdentity
-Parameter Sets: CreateViaIdentityExpanded3, CreateViaIdentityExpanded, CreateViaIdentity3, CreateViaIdentity
+Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentityExpanded, CreateViaIdentity1, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -224,11 +223,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IEducationIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationCategory
+### Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationCategory
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationCategory
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationCategory
 ## NOTES
 
 ALIASES
@@ -238,16 +237,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphEducationCategory>`: educationCategory
+`BODYPARAMETER <IMicrosoftGraphEducationCategory>`: educationCategory
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DisplayName <String>]`: Unique identifier for the category.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+`INPUTOBJECT <IEducationIdentity>`: Identity Parameter
   - `[EducationAssignmentId <String>]`: The unique identifier of educationAssignment
   - `[EducationAssignmentResourceId <String>]`: The unique identifier of educationAssignmentResource
   - `[EducationCategoryId <String>]`: The unique identifier of educationCategory
   - `[EducationClassId <String>]`: The unique identifier of educationClass
+  - `[EducationGradingCategoryId <String>]`: The unique identifier of educationGradingCategory
   - `[EducationOutcomeId <String>]`: The unique identifier of educationOutcome
   - `[EducationRubricId <String>]`: The unique identifier of educationRubric
   - `[EducationSchoolId <String>]`: The unique identifier of educationSchool

@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/invoke-mgmessageteam
+﻿---
+external help file: Microsoft.Graph.Beta.Teams-help.xml
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetamessageteam
 schema: 2.0.0
 ---
 
-# Invoke-MgMessageTeam
+# Invoke-MgBetaMessageTeam
 
 ## SYNOPSIS
 Invoke function allMessages
@@ -13,7 +13,7 @@ Invoke function allMessages
 ## SYNTAX
 
 ```
-Invoke-MgMessageTeam [-Count] [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
+Invoke-MgBetaMessageTeam [-Count] [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
  [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
 ```
 
@@ -21,6 +21,20 @@ Invoke-MgMessageTeam [-Count] [-Filter <String>] [-Property <String[]>] [-Search
 Invoke function allMessages
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -136,7 +150,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChatMessage1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphChatMessage
 ## NOTES
 
 ALIASES

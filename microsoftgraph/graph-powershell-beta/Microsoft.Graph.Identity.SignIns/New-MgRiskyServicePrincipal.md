@@ -1,12 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgriskyserviceprincipal
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetariskyserviceprincipal
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
-# New-MgRiskyServicePrincipal
+# New-MgBetaRiskyServicePrincipal
 
 ## SYNOPSIS
 Create new navigation property to riskyServicePrincipals for identityProtection
@@ -15,8 +14,8 @@ Create new navigation property to riskyServicePrincipals for identityProtection
 
 ### CreateExpanded (Default)
 ```
-New-MgRiskyServicePrincipal [-AccountEnabled] [-AdditionalProperties <Hashtable>] [-AppId <String>]
- [-DisplayName <String>] [-History <IMicrosoftGraphRiskyServicePrincipalHistoryItem1[]>] [-Id <String>]
+New-MgBetaRiskyServicePrincipal [-AccountEnabled] [-AdditionalProperties <Hashtable>] [-AppId <String>]
+ [-DisplayName <String>] [-History <IMicrosoftGraphRiskyServicePrincipalHistoryItem[]>] [-Id <String>]
  [-IsEnabled] [-IsProcessing] [-RiskDetail <String>] [-RiskLastUpdatedDateTime <DateTime>]
  [-RiskLevel <String>] [-RiskState <String>] [-ServicePrincipalType <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -24,7 +23,7 @@ New-MgRiskyServicePrincipal [-AccountEnabled] [-AdditionalProperties <Hashtable>
 
 ### Create
 ```
-New-MgRiskyServicePrincipal -BodyParameter <IMicrosoftGraphRiskyServicePrincipal1> [-WhatIf] [-Confirm]
+New-MgBetaRiskyServicePrincipal -BodyParameter <IMicrosoftGraphRiskyServicePrincipal> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -33,16 +32,12 @@ Create new navigation property to riskyServicePrincipals for identityProtection
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
-
-Get-MgRiskyServicePrincipal
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
 ```
 
-This example shows how to use the New-MgRiskyServicePrincipal Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Get-MgBetaRiskyServicePrincipal
 
 ## PARAMETERS
 
@@ -93,10 +88,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 riskyServicePrincipal
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRiskyServicePrincipal1
+Type: IMicrosoftGraphRiskyServicePrincipal
 Parameter Sets: Create
 Aliases:
 
@@ -124,10 +119,10 @@ Accept wildcard characters: False
 
 ### -History
 Represents the risk history of Azure AD service principals.
-To construct, please use Get-Help -Online and see NOTES section for HISTORY properties and create a hash table.
+To construct, see NOTES section for HISTORY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRiskyServicePrincipalHistoryItem1[]
+Type: IMicrosoftGraphRiskyServicePrincipalHistoryItem[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -139,7 +134,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -299,10 +294,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRiskyServicePrincipal1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRiskyServicePrincipal
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRiskyServicePrincipal1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRiskyServicePrincipal
 ## NOTES
 
 ALIASES
@@ -312,17 +307,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphRiskyServicePrincipal1>`: riskyServicePrincipal
+`BODYPARAMETER <IMicrosoftGraphRiskyServicePrincipal>`: riskyServicePrincipal
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AccountEnabled <Boolean?>]`: true if the service principal account is enabled; otherwise, false.
   - `[AppId <String>]`: The globally unique identifier for the associated application (its appId property), if any.
   - `[DisplayName <String>]`: The display name for the service principal.
-  - `[History <IMicrosoftGraphRiskyServicePrincipalHistoryItem1[]>]`: Represents the risk history of Azure AD service principals.
+  - `[History <IMicrosoftGraphRiskyServicePrincipalHistoryItem[]>]`: Represents the risk history of Azure AD service principals.
     - `[AccountEnabled <Boolean?>]`: true if the service principal account is enabled; otherwise, false.
     - `[AppId <String>]`: The globally unique identifier for the associated application (its appId property), if any.
     - `[DisplayName <String>]`: The display name for the service principal.
-    - `[History <IMicrosoftGraphRiskyServicePrincipalHistoryItem1[]>]`: Represents the risk history of Azure AD service principals.
+    - `[History <IMicrosoftGraphRiskyServicePrincipalHistoryItem[]>]`: Represents the risk history of Azure AD service principals.
     - `[IsEnabled <Boolean?>]`: 
     - `[IsProcessing <Boolean?>]`: Indicates whether Azure AD is currently processing the service principal's risky state.
     - `[RiskDetail <String>]`: riskDetail
@@ -330,7 +325,7 @@ BODYPARAMETER `<IMicrosoftGraphRiskyServicePrincipal1>`: riskyServicePrincipal
     - `[RiskLevel <String>]`: riskLevel
     - `[RiskState <String>]`: riskState
     - `[ServicePrincipalType <String>]`: Identifies whether the service principal represents an Application, a ManagedIdentity, or a legacy application (socialIdp). This is set by Azure AD internally and is inherited from servicePrincipal.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Activity <IMicrosoftGraphRiskServicePrincipalActivity>]`: riskServicePrincipalActivity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Detail <String>]`: riskDetail
@@ -345,11 +340,11 @@ BODYPARAMETER `<IMicrosoftGraphRiskyServicePrincipal1>`: riskyServicePrincipal
   - `[RiskState <String>]`: riskState
   - `[ServicePrincipalType <String>]`: Identifies whether the service principal represents an Application, a ManagedIdentity, or a legacy application (socialIdp). This is set by Azure AD internally and is inherited from servicePrincipal.
 
-HISTORY <IMicrosoftGraphRiskyServicePrincipalHistoryItem1\[]>: Represents the risk history of Azure AD service principals.
+`HISTORY <IMicrosoftGraphRiskyServicePrincipalHistoryItem[]>`: Represents the risk history of Azure AD service principals.
   - `[AccountEnabled <Boolean?>]`: true if the service principal account is enabled; otherwise, false.
   - `[AppId <String>]`: The globally unique identifier for the associated application (its appId property), if any.
   - `[DisplayName <String>]`: The display name for the service principal.
-  - `[History <IMicrosoftGraphRiskyServicePrincipalHistoryItem1[]>]`: Represents the risk history of Azure AD service principals.
+  - `[History <IMicrosoftGraphRiskyServicePrincipalHistoryItem[]>]`: Represents the risk history of Azure AD service principals.
   - `[IsEnabled <Boolean?>]`: 
   - `[IsProcessing <Boolean?>]`: Indicates whether Azure AD is currently processing the service principal's risky state.
   - `[RiskDetail <String>]`: riskDetail
@@ -357,7 +352,7 @@ HISTORY <IMicrosoftGraphRiskyServicePrincipalHistoryItem1\[]>: Represents the ri
   - `[RiskLevel <String>]`: riskLevel
   - `[RiskState <String>]`: riskState
   - `[ServicePrincipalType <String>]`: Identifies whether the service principal represents an Application, a ManagedIdentity, or a legacy application (socialIdp). This is set by Azure AD internally and is inherited from servicePrincipal.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Activity <IMicrosoftGraphRiskServicePrincipalActivity>]`: riskServicePrincipalActivity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Detail <String>]`: riskDetail

@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/confirm-mgteamscheduletimecard
+﻿---
+external help file: Microsoft.Graph.Beta.Teams-help.xml
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/confirm-mgbetateamscheduletimecard
 schema: 2.0.0
 ---
 
-# Confirm-MgTeamScheduleTimeCard
+# Confirm-MgBetaTeamScheduleTimeCard
 
 ## SYNOPSIS
 Confirm a specific timeCard.
@@ -14,12 +14,13 @@ Confirm a specific timeCard.
 
 ### Confirm (Default)
 ```
-Confirm-MgTeamScheduleTimeCard -TeamId <String> -TimeCardId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
+Confirm-MgBetaTeamScheduleTimeCard -TeamId <String> -TimeCardId <String> [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### ConfirmViaIdentity
 ```
-Confirm-MgTeamScheduleTimeCard -InputObject <ITeamsIdentity> [-WhatIf] [-Confirm] [<CommonParameters>]
+Confirm-MgBetaTeamScheduleTimeCard -InputObject <ITeamsIdentity> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -27,20 +28,17 @@ Confirm a specific timeCard.
 
 ## EXAMPLES
 
-### Example 1: Using the Confirm-MgTeamScheduleTimeCard Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Teams
-Confirm-MgTeamScheduleTimeCard -TeamId $teamId -TimeCardId $timeCardId
+Import-Module Microsoft.Graph.Beta.Teams
+Confirm-MgBetaTeamScheduleTimeCard -TeamId $teamId -TimeCardId $timeCardId
 ```
-
-This example shows how to use the Confirm-MgTeamScheduleTimeCard Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ITeamsIdentity
@@ -120,10 +118,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTimeCard
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTimeCard
 ## NOTES
 
 ALIASES
@@ -133,7 +131,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat

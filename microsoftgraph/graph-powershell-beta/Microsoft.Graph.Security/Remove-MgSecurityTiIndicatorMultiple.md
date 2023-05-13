@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/remove-mgsecuritytiindicatormultiple
+﻿---
+external help file: Microsoft.Graph.Beta.Security-help.xml
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritytiindicatormultiple
 schema: 2.0.0
 ---
 
-# Remove-MgSecurityTiIndicatorMultiple
+# Remove-MgBetaSecurityTiIndicatorMultiple
 
 ## SYNOPSIS
 Delete multiple threat intelligence (TI) indicators in one request instead of multiple requests.
@@ -14,13 +14,13 @@ Delete multiple threat intelligence (TI) indicators in one request instead of mu
 
 ### DeleteExpanded (Default)
 ```
-Remove-MgSecurityTiIndicatorMultiple [-AdditionalProperties <Hashtable>] [-Value <String[]>] [-WhatIf]
+Remove-MgBetaSecurityTiIndicatorMultiple [-AdditionalProperties <Hashtable>] [-Value <String[]>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### Delete1
 ```
-Remove-MgSecurityTiIndicatorMultiple
+Remove-MgBetaSecurityTiIndicatorMultiple
  -BodyParameter <IPaths9Mf33ASecurityTiindicatorsMicrosoftGraphDeletetiindicatorsPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -30,20 +30,17 @@ Delete multiple threat intelligence (TI) indicators in one request instead of mu
 
 ## EXAMPLES
 
-### Example 1: Using the Remove-MgSecurityTiIndicatorMultiple Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Security
+Import-Module Microsoft.Graph.Beta.Security
 $params = @{
 	Value = @(
 		"id-value1"
 		"id-value2"
 	)
 }
-Remove-MgSecurityTiIndicatorMultiple -BodyParameter $params
+Remove-MgBetaSecurityTiIndicatorMultiple -BodyParameter $params
 ```
-
-This example shows how to use the Remove-MgSecurityTiIndicatorMultiple Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -64,7 +61,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths9Mf33ASecurityTiindicatorsMicrosoftGraphDeletetiindicatorsPostRequestbodyContentApplicationJsonSchema
@@ -129,10 +126,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths9Mf33ASecurityTiindicatorsMicrosoftGraphDeletetiindicatorsPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths9Mf33ASecurityTiindicatorsMicrosoftGraphDeletetiindicatorsPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphResultInfo
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphResultInfo
 ## NOTES
 
 ALIASES
@@ -142,7 +139,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths9Mf33ASecurityTiindicatorsMicrosoftGraphDeletetiindicatorsPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths9Mf33ASecurityTiindicatorsMicrosoftGraphDeletetiindicatorsPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Value <String[]>]`: 
 

@@ -1,7 +1,7 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/grant-mgdriveitempermission
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/grant-mgdriveitempermission
 schema: 2.0.0
 ---
 
@@ -12,27 +12,27 @@ Grant users access to a link represented by a [permission][].
 
 ## SYNTAX
 
-### GrantExpanded1 (Default)
+### GrantExpanded (Default)
 ```
 Grant-MgDriveItemPermission -DriveId <String> -DriveItemId <String> -PermissionId <String>
  [-AdditionalProperties <Hashtable>] [-Recipients <IMicrosoftGraphDriveRecipient[]>] [-Roles <String[]>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Grant1
+### Grant
 ```
 Grant-MgDriveItemPermission -DriveId <String> -DriveItemId <String> -PermissionId <String>
  -BodyParameter <IPaths4RfypzDrivesDriveIdItemsDriveitemIdPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### GrantViaIdentityExpanded1
+### GrantViaIdentityExpanded
 ```
 Grant-MgDriveItemPermission -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
  [-Recipients <IMicrosoftGraphDriveRecipient[]>] [-Roles <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### GrantViaIdentity1
+### GrantViaIdentity
 ```
 Grant-MgDriveItemPermission -InputObject <IFilesIdentity>
  -BodyParameter <IPaths4RfypzDrivesDriveIdItemsDriveitemIdPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema>
@@ -44,6 +44,20 @@ Grant users access to a link represented by a [permission][].
 
 ## EXAMPLES
 
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -51,7 +65,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: GrantExpanded1, GrantViaIdentityExpanded1
+Parameter Sets: GrantExpanded, GrantViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -63,11 +77,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths4RfypzDrivesDriveIdItemsDriveitemIdPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Grant1, GrantViaIdentity1
+Parameter Sets: Grant, GrantViaIdentity
 Aliases:
 
 Required: True
@@ -82,7 +96,7 @@ The unique identifier of drive
 
 ```yaml
 Type: String
-Parameter Sets: GrantExpanded1, Grant1
+Parameter Sets: GrantExpanded, Grant
 Aliases:
 
 Required: True
@@ -97,7 +111,7 @@ The unique identifier of driveItem
 
 ```yaml
 Type: String
-Parameter Sets: GrantExpanded1, Grant1
+Parameter Sets: GrantExpanded, Grant
 Aliases:
 
 Required: True
@@ -109,11 +123,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IFilesIdentity
-Parameter Sets: GrantViaIdentityExpanded1, GrantViaIdentity1
+Parameter Sets: GrantViaIdentityExpanded, GrantViaIdentity
 Aliases:
 
 Required: True
@@ -128,7 +142,7 @@ The unique identifier of permission
 
 ```yaml
 Type: String
-Parameter Sets: GrantExpanded1, Grant1
+Parameter Sets: GrantExpanded, Grant
 Aliases:
 
 Required: True
@@ -140,11 +154,11 @@ Accept wildcard characters: False
 
 ### -Recipients
 .
-To construct, please use Get-Help -Online and see NOTES section for RECIPIENTS properties and create a hash table.
+To construct, see NOTES section for RECIPIENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDriveRecipient[]
-Parameter Sets: GrantExpanded1, GrantViaIdentityExpanded1
+Parameter Sets: GrantExpanded, GrantViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -159,7 +173,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String[]
-Parameter Sets: GrantExpanded1, GrantViaIdentityExpanded1
+Parameter Sets: GrantExpanded, GrantViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -219,7 +233,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths4RfypzDrivesDriveIdItemsDriveitemIdPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths4RfypzDrivesDriveIdItemsDriveitemIdPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Recipients <IMicrosoftGraphDriveRecipient[]>]`: 
     - `[Alias <String>]`: The alias of the domain object, for cases where an email address is unavailable (e.g. security groups).
@@ -227,7 +241,7 @@ BODYPARAMETER `<IPaths4RfypzDrivesDriveIdItemsDriveitemIdPermissionsPermissionId
     - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
   - `[Roles <String[]>]`: 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+`INPUTOBJECT <IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType
@@ -253,7 +267,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
 
-RECIPIENTS <IMicrosoftGraphDriveRecipient\[]>: .
+`RECIPIENTS <IMicrosoftGraphDriveRecipient[]>`: .
   - `[Alias <String>]`: The alias of the domain object, for cases where an email address is unavailable (e.g. security groups).
   - `[Email <String>]`: The email address for the recipient, if the recipient has an associated email address.
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.

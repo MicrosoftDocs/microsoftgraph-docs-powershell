@@ -1,40 +1,40 @@
----
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/invoke-mgmarkchatreadforuser
+﻿---
+external help file: Microsoft.Graph.Beta.Teams-help.xml
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetamarkchatreadforuser
 schema: 2.0.0
 ---
 
-# Invoke-MgMarkChatReadForUser
+# Invoke-MgBetaMarkChatReadForUser
 
 ## SYNOPSIS
 Mark a chat as read for a user.
 
 ## SYNTAX
 
-### MarkExpanded1 (Default)
+### MarkExpanded (Default)
 ```
-Invoke-MgMarkChatReadForUser -ChatId <String> [-AdditionalProperties <Hashtable>] [-TenantId <String>]
- [-User <IMicrosoftGraphTeamworkUserIdentity1>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgBetaMarkChatReadForUser -ChatId <String> [-AdditionalProperties <Hashtable>] [-TenantId <String>]
+ [-User <IMicrosoftGraphTeamworkUserIdentity>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Mark1
+### Mark
 ```
-Invoke-MgMarkChatReadForUser -ChatId <String>
+Invoke-MgBetaMarkChatReadForUser -ChatId <String>
  -BodyParameter <IPathsFbbr3UChatsChatIdMicrosoftGraphMarkchatreadforuserPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### MarkViaIdentityExpanded1
+### MarkViaIdentityExpanded
 ```
-Invoke-MgMarkChatReadForUser -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-TenantId <String>] [-User <IMicrosoftGraphTeamworkUserIdentity1>] [-PassThru] [-WhatIf] [-Confirm]
+Invoke-MgBetaMarkChatReadForUser -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
+ [-TenantId <String>] [-User <IMicrosoftGraphTeamworkUserIdentity>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### MarkViaIdentity1
+### MarkViaIdentity
 ```
-Invoke-MgMarkChatReadForUser -InputObject <ITeamsIdentity>
+Invoke-MgBetaMarkChatReadForUser -InputObject <ITeamsIdentity>
  -BodyParameter <IPathsFbbr3UChatsChatIdMicrosoftGraphMarkchatreadforuserPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -44,20 +44,17 @@ Mark a chat as read for a user.
 
 ## EXAMPLES
 
-### Example 1: Using the Invoke-MgMarkChatReadForUser Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Teams
+Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
 	User = @{
 		Id = "d864e79f-a516-4d0f-9fee-0eeb4d61fdc2"
 	}
 	TenantId = "2a690434-97d9-4eed-83a6-f5f13600199a"
 }
-Invoke-MgMarkChatReadForUser -ChatId $chatId -BodyParameter $params
+Invoke-MgBetaMarkChatReadForUser -ChatId $chatId -BodyParameter $params
 ```
-
-This example shows how to use the Invoke-MgMarkChatReadForUser Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -66,7 +63,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: MarkExpanded1, MarkViaIdentityExpanded1
+Parameter Sets: MarkExpanded, MarkViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -78,11 +75,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPathsFbbr3UChatsChatIdMicrosoftGraphMarkchatreadforuserPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Mark1, MarkViaIdentity1
+Parameter Sets: Mark, MarkViaIdentity
 Aliases:
 
 Required: True
@@ -97,7 +94,7 @@ The unique identifier of chat
 
 ```yaml
 Type: String
-Parameter Sets: MarkExpanded1, Mark1
+Parameter Sets: MarkExpanded, Mark
 Aliases:
 
 Required: True
@@ -109,11 +106,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: MarkViaIdentityExpanded1, MarkViaIdentity1
+Parameter Sets: MarkViaIdentityExpanded, MarkViaIdentity
 Aliases:
 
 Required: True
@@ -143,7 +140,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: MarkExpanded1, MarkViaIdentityExpanded1
+Parameter Sets: MarkExpanded, MarkViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -155,11 +152,11 @@ Accept wildcard characters: False
 
 ### -User
 teamworkUserIdentity
-To construct, please use Get-Help -Online and see NOTES section for USER properties and create a hash table.
+To construct, see NOTES section for USER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamworkUserIdentity1
-Parameter Sets: MarkExpanded1, MarkViaIdentityExpanded1
+Type: IMicrosoftGraphTeamworkUserIdentity
+Parameter Sets: MarkExpanded, MarkViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -205,8 +202,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsFbbr3UChatsChatIdMicrosoftGraphMarkchatreadforuserPostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsFbbr3UChatsChatIdMicrosoftGraphMarkchatreadforuserPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
 ## OUTPUTS
 
 ### System.Boolean
@@ -219,16 +216,16 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsFbbr3UChatsChatIdMicrosoftGraphMarkchatreadforuserPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsFbbr3UChatsChatIdMicrosoftGraphMarkchatreadforuserPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[TenantId <String>]`: 
-  - `[User <IMicrosoftGraphTeamworkUserIdentity1>]`: teamworkUserIdentity
+  - `[User <IMicrosoftGraphTeamworkUserIdentity>]`: teamworkUserIdentity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
     - `[Id <String>]`: Unique identifier for the identity.
-    - `[UserIdentityType <String>]`: 
+    - `[UserIdentityType <String>]`: teamworkUserIdentityType
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat
@@ -267,10 +264,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
-USER `<IMicrosoftGraphTeamworkUserIdentity1>`: teamworkUserIdentity
+`USER <IMicrosoftGraphTeamworkUserIdentity>`: teamworkUserIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
   - `[Id <String>]`: Unique identifier for the identity.
-  - `[UserIdentityType <String>]`: 
+  - `[UserIdentityType <String>]`: teamworkUserIdentityType
 
 ## RELATED LINKS

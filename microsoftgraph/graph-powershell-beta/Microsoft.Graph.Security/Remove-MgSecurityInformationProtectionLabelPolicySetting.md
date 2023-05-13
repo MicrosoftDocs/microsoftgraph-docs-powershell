@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/remove-mgsecurityinformationprotectionlabelpolicysetting
+﻿---
+external help file: Microsoft.Graph.Beta.Security-help.xml
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityinformationprotectionlabelpolicysetting
 schema: 2.0.0
 ---
 
-# Remove-MgSecurityInformationProtectionLabelPolicySetting
+# Remove-MgBetaSecurityInformationProtectionLabelPolicySetting
 
 ## SYNOPSIS
 Delete navigation property labelPolicySettings for security
@@ -13,14 +13,28 @@ Delete navigation property labelPolicySettings for security
 ## SYNTAX
 
 ```
-Remove-MgSecurityInformationProtectionLabelPolicySetting [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Remove-MgBetaSecurityInformationProtectionLabelPolicySetting [-IfMatch <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Delete navigation property labelPolicySettings for security
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 

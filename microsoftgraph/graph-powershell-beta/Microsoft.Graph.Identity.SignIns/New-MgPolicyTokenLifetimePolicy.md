@@ -1,12 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgpolicytokenlifetimepolicy
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicytokenlifetimepolicy
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
-# New-MgPolicyTokenLifetimePolicy
+# New-MgBetaPolicyTokenLifetimePolicy
 
 ## SYNOPSIS
 Create a new tokenLifetimePolicy object.
@@ -15,7 +14,7 @@ Create a new tokenLifetimePolicy object.
 
 ### CreateExpanded (Default)
 ```
-New-MgPolicyTokenLifetimePolicy [-AdditionalProperties <Hashtable>]
+New-MgBetaPolicyTokenLifetimePolicy [-AdditionalProperties <Hashtable>]
  [-AppliesTo <IMicrosoftGraphDirectoryObject[]>] [-Definition <String[]>] [-DeletedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>] [-Id <String>] [-IsOrganizationDefault] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -23,7 +22,7 @@ New-MgPolicyTokenLifetimePolicy [-AdditionalProperties <Hashtable>]
 
 ### Create
 ```
-New-MgPolicyTokenLifetimePolicy -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaPolicyTokenLifetimePolicy -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -31,9 +30,9 @@ Create a new tokenLifetimePolicy object.
 
 ## EXAMPLES
 
-### Example 1: Using the New-MgPolicyTokenLifetimePolicy Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
 	Definition = @(
 		"definition-value"
@@ -41,11 +40,8 @@ $params = @{
 	DisplayName = "displayName-value"
 	IsOrganizationDefault = $true
 }
-New-MgPolicyTokenLifetimePolicy -BodyParameter $params
+New-MgBetaPolicyTokenLifetimePolicy -BodyParameter $params
 ```
-
-This example shows how to use the New-MgPolicyTokenLifetimePolicy Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -66,7 +62,7 @@ Accept wildcard characters: False
 
 ### -AppliesTo
 .
-To construct, please use Get-Help -Online and see NOTES section for APPLIESTO properties and create a hash table.
+To construct, see NOTES section for APPLIESTO properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDirectoryObject[]
@@ -161,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -232,7 +228,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### System.Collections.Hashtable
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTokenLifetimePolicy1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTokenLifetimePolicy
 ## NOTES
 
 ALIASES
@@ -242,8 +238,8 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-APPLIESTO <IMicrosoftGraphDirectoryObject\[]>: .
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`APPLIESTO <IMicrosoftGraphDirectoryObject[]>`: .
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
 ## RELATED LINKS

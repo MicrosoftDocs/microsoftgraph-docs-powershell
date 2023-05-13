@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmobileapptroubleshootingevent
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmobileapptroubleshootingevent
 schema: 2.0.0
 ---
 
-# New-MgDeviceManagementMobileAppTroubleshootingEvent
+# New-MgBetaDeviceManagementMobileAppTroubleshootingEvent
 
 ## SYNOPSIS
 Create new navigation property to mobileAppTroubleshootingEvents for deviceManagement
@@ -14,9 +14,10 @@ Create new navigation property to mobileAppTroubleshootingEvents for deviceManag
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementMobileAppTroubleshootingEvent [-AdditionalInformation <IMicrosoftGraphKeyValuePair[]>]
- [-AdditionalProperties <Hashtable>] [-AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest[]>]
- [-ApplicationId <String>] [-CorrelationId <String>] [-EventDateTime <DateTime>] [-EventName <String>]
+New-MgBetaDeviceManagementMobileAppTroubleshootingEvent
+ [-AdditionalInformation <IMicrosoftGraphKeyValuePair[]>] [-AdditionalProperties <Hashtable>]
+ [-AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest[]>] [-ApplicationId <String>]
+ [-CorrelationId <String>] [-DeviceId <String>] [-EventDateTime <DateTime>] [-EventName <String>]
  [-History <IMicrosoftGraphMobileAppTroubleshootingHistoryItem[]>] [-Id <String>]
  [-ManagedDeviceIdentifier <String>]
  [-TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>] [-UserId <String>]
@@ -25,7 +26,7 @@ New-MgDeviceManagementMobileAppTroubleshootingEvent [-AdditionalInformation <IMi
 
 ### Create
 ```
-New-MgDeviceManagementMobileAppTroubleshootingEvent
+New-MgBetaDeviceManagementMobileAppTroubleshootingEvent
  -BodyParameter <IMicrosoftGraphMobileAppTroubleshootingEvent> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -34,11 +35,25 @@ Create new navigation property to mobileAppTroubleshootingEvents for deviceManag
 
 ## EXAMPLES
 
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalInformation
 A set of string key and string value pairs which provides additional information on the Troubleshooting event
-To construct, please use Get-Help -Online and see NOTES section for ADDITIONALINFORMATION properties and create a hash table.
+To construct, see NOTES section for ADDITIONALINFORMATION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphKeyValuePair[]
@@ -84,7 +99,7 @@ Accept wildcard characters: False
 
 ### -AppLogCollectionRequests
 The collection property of AppLogUploadRequest.
-To construct, please use Get-Help -Online and see NOTES section for APPLOGCOLLECTIONREQUESTS properties and create a hash table.
+To construct, see NOTES section for APPLOGCOLLECTIONREQUESTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAppLogCollectionRequest[]
@@ -100,7 +115,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Event representing a users device application install status.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphMobileAppTroubleshootingEvent
@@ -116,6 +131,21 @@ Accept wildcard characters: False
 
 ### -CorrelationId
 Id used for tracing the failure in the service.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DeviceId
+Device identifier created or collected by Intune.
 
 ```yaml
 Type: String
@@ -162,7 +192,7 @@ Accept wildcard characters: False
 
 ### -History
 Intune Mobile Application Troubleshooting History Item
-To construct, please use Get-Help -Online and see NOTES section for HISTORY properties and create a hash table.
+To construct, see NOTES section for HISTORY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphMobileAppTroubleshootingHistoryItem[]
@@ -177,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -209,7 +239,7 @@ Accept wildcard characters: False
 
 ### -TroubleshootingErrorDetails
 Object containing detailed information about the error and its remediation.
-To construct, please use Get-Help -Online and see NOTES section for TROUBLESHOOTINGERRORDETAILS properties and create a hash table.
+To construct, see NOTES section for TROUBLESHOOTINGERRORDETAILS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails
@@ -274,10 +304,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileAppTroubleshootingEvent
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMobileAppTroubleshootingEvent
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileAppTroubleshootingEvent
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMobileAppTroubleshootingEvent
 ## NOTES
 
 ALIASES
@@ -287,18 +317,18 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ADDITIONALINFORMATION <IMicrosoftGraphKeyValuePair\[]>: A set of string key and string value pairs which provides additional information on the Troubleshooting event
+`ADDITIONALINFORMATION <IMicrosoftGraphKeyValuePair[]>`: A set of string key and string value pairs which provides additional information on the Troubleshooting event
   - `[Name <String>]`: Name for this key-value pair
   - `[Value <String>]`: Value for this key-value pair
 
-APPLOGCOLLECTIONREQUESTS <IMicrosoftGraphAppLogCollectionRequest\[]>: The collection property of AppLogUploadRequest.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`APPLOGCOLLECTIONREQUESTS <IMicrosoftGraphAppLogCollectionRequest[]>`: The collection property of AppLogUploadRequest.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
   - `[CustomLogFolders <String[]>]`: List of log folders.
   - `[ErrorMessage <String>]`: Indicates error message if any during the upload process.
   - `[Status <AppLogUploadState?>]`: AppLogUploadStatus
 
-BODYPARAMETER `<IMicrosoftGraphMobileAppTroubleshootingEvent>`: Event representing a users device application install status.
+`BODYPARAMETER <IMicrosoftGraphMobileAppTroubleshootingEvent>`: Event representing a users device application install status.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AdditionalInformation <IMicrosoftGraphKeyValuePair[]>]`: A set of string key and string value pairs which provides additional information on the Troubleshooting event
     - `[Name <String>]`: Name for this key-value pair
@@ -315,21 +345,22 @@ BODYPARAMETER `<IMicrosoftGraphMobileAppTroubleshootingEvent>`: Event representi
     - `[Resources <IMicrosoftGraphDeviceManagementTroubleshootingErrorResource[]>]`: Links to helpful documentation about this failure.
       - `[Link <String>]`: The link to the web resource. Can contain any of the following formatters: {{UPN}}, {{DeviceGUID}}, {{UserGUID}}
       - `[Text <String>]`: Not yet documented
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest[]>]`: The collection property of AppLogUploadRequest.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
     - `[CustomLogFolders <String[]>]`: List of log folders.
     - `[ErrorMessage <String>]`: Indicates error message if any during the upload process.
     - `[Status <AppLogUploadState?>]`: AppLogUploadStatus
   - `[ApplicationId <String>]`: Intune application identifier.
+  - `[DeviceId <String>]`: Device identifier created or collected by Intune.
   - `[History <IMicrosoftGraphMobileAppTroubleshootingHistoryItem[]>]`: Intune Mobile Application Troubleshooting History Item
     - `[OccurrenceDateTime <DateTime?>]`: Time when the history item occurred.
     - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
   - `[ManagedDeviceIdentifier <String>]`: Device identifier created or collected by Intune.
   - `[UserId <String>]`: Identifier for the user that tried to enroll the device.
 
-HISTORY <IMicrosoftGraphMobileAppTroubleshootingHistoryItem\[]>: Intune Mobile Application Troubleshooting History Item
+`HISTORY <IMicrosoftGraphMobileAppTroubleshootingHistoryItem[]>`: Intune Mobile Application Troubleshooting History Item
   - `[OccurrenceDateTime <DateTime?>]`: Time when the history item occurred.
   - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -341,7 +372,7 @@ HISTORY <IMicrosoftGraphMobileAppTroubleshootingHistoryItem\[]>: Intune Mobile A
       - `[Link <String>]`: The link to the web resource. Can contain any of the following formatters: {{UPN}}, {{DeviceGUID}}, {{UserGUID}}
       - `[Text <String>]`: Not yet documented
 
-TROUBLESHOOTINGERRORDETAILS `<IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>`: Object containing detailed information about the error and its remediation.
+`TROUBLESHOOTINGERRORDETAILS <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>`: Object containing detailed information about the error and its remediation.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Context <String>]`: Not yet documented
   - `[Failure <String>]`: Not yet documented

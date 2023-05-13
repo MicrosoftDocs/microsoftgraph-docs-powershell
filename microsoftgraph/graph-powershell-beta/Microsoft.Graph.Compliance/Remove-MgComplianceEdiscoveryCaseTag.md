@@ -1,42 +1,39 @@
----
-external help file: Microsoft.Graph.Compliance-help.xml
-Module Name: Microsoft.Graph.Compliance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/remove-mgcomplianceediscoverycasetag
+﻿---
+external help file: Microsoft.Graph.Beta.Compliance-help.xml
+Module Name: Microsoft.Graph.Beta.Compliance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycasetag
 schema: 2.0.0
 ---
 
-# Remove-MgComplianceEdiscoveryCaseTag
+# Remove-MgBetaComplianceEdiscoveryCaseTag
 
 ## SYNOPSIS
-Delete navigation property tags for compliance
+Delete a tag object.
 
 ## SYNTAX
 
 ### Delete (Default)
 ```
-Remove-MgComplianceEdiscoveryCaseTag -CaseId <String> -TagId <String> [-IfMatch <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Remove-MgBetaComplianceEdiscoveryCaseTag -CaseId <String> -TagId <String> [-IfMatch <String>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgComplianceEdiscoveryCaseTag -InputObject <IComplianceIdentity> [-IfMatch <String>] [-PassThru]
+Remove-MgBetaComplianceEdiscoveryCaseTag -InputObject <IComplianceIdentity> [-IfMatch <String>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete navigation property tags for compliance
+Delete a tag object.
 
 ## EXAMPLES
 
-### Example 1: Using the Remove-MgComplianceEdiscoveryCaseTag Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Compliance
-Remove-MgComplianceEdiscoveryCaseTag -CaseId $caseId -TagId $tagId -Forcedelete true
+Import-Module Microsoft.Graph.Beta.Compliance
+Remove-MgBetaComplianceEdiscoveryCaseTag -CaseId $caseId -TagId $tagId -Forcedelete true
 ```
-
-This example shows how to use the Remove-MgComplianceEdiscoveryCaseTag Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -72,7 +69,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IComplianceIdentity
@@ -152,7 +149,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IComplianceIdentity
 ## OUTPUTS
 
 ### System.Boolean
@@ -165,7 +162,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
+`INPUTOBJECT <IComplianceIdentity>`: Identity Parameter
   - `[CaseId <String>]`: The unique identifier of case
   - `[CaseOperationId <String>]`: The unique identifier of caseOperation
   - `[CustodianId <String>]`: The unique identifier of custodian

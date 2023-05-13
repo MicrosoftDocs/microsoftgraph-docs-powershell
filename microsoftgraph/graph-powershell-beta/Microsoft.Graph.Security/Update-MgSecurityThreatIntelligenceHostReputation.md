@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencehostreputation
+﻿---
+external help file: Microsoft.Graph.Beta.Security-help.xml
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligencehostreputation
 schema: 2.0.0
 ---
 
-# Update-MgSecurityThreatIntelligenceHostReputation
+# Update-MgBetaSecurityThreatIntelligenceHostReputation
 
 ## SYNOPSIS
 Update the navigation property reputation in security
@@ -14,35 +14,45 @@ Update the navigation property reputation in security
 
 ### UpdateExpanded (Default)
 ```
-Update-MgSecurityThreatIntelligenceHostReputation -HostId <String> [-AdditionalProperties <Hashtable>]
+Update-MgBetaSecurityThreatIntelligenceHostReputation -HostId <String> [-AdditionalProperties <Hashtable>]
  [-Classification <String>] [-Id <String>] [-Rules <IMicrosoftGraphSecurityHostReputationRule[]>]
- [-Score <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Score <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgSecurityThreatIntelligenceHostReputation -HostId <String>
- -BodyParameter <IMicrosoftGraphSecurityHostReputation> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaSecurityThreatIntelligenceHostReputation -HostId <String>
+ -BodyParameter <IMicrosoftGraphSecurityHostReputation> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgSecurityThreatIntelligenceHostReputation -InputObject <ISecurityIdentity>
+Update-MgBetaSecurityThreatIntelligenceHostReputation -InputObject <ISecurityIdentity>
  [-AdditionalProperties <Hashtable>] [-Classification <String>] [-Id <String>]
- [-Rules <IMicrosoftGraphSecurityHostReputationRule[]>] [-Score <Int32>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Rules <IMicrosoftGraphSecurityHostReputationRule[]>] [-Score <Int32>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgSecurityThreatIntelligenceHostReputation -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityHostReputation> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaSecurityThreatIntelligenceHostReputation -InputObject <ISecurityIdentity>
+ -BodyParameter <IMicrosoftGraphSecurityHostReputation> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property reputation in security
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -63,7 +73,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 hostReputation
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSecurityHostReputation
@@ -108,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -125,7 +135,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ISecurityIdentity
@@ -139,24 +149,9 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Rules
 A collection of rules that have been used to calculate the classification and score.
-To construct, please use Get-Help -Online and see NOTES section for RULES properties and create a hash table.
+To construct, see NOTES section for RULES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSecurityHostReputationRule[]
@@ -222,11 +217,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityHostReputation
-### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityHostReputation
+### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityHostReputation
 ## NOTES
 
 ALIASES
@@ -236,9 +231,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSecurityHostReputation>`: hostReputation
+`BODYPARAMETER <IMicrosoftGraphSecurityHostReputation>`: hostReputation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Classification <String>]`: hostReputationClassification
   - `[Rules <IMicrosoftGraphSecurityHostReputationRule[]>]`: A collection of rules that have been used to calculate the classification and score.
     - `[Description <String>]`: The description of the rule that gives more context.
@@ -247,7 +242,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityHostReputation>`: hostReputation
     - `[Severity <String>]`: hostReputationRuleSeverity
   - `[Score <Int32?>]`: The calculated score (0-100) of the requested host. A higher value indicates that this host is more likely to be suspicious or malicious.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+`INPUTOBJECT <ISecurityIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
   - `[ArticleId <String>]`: The unique identifier of article
   - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator
@@ -305,7 +300,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[VulnerabilityComponentId <String>]`: The unique identifier of vulnerabilityComponent
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
-RULES <IMicrosoftGraphSecurityHostReputationRule\[]>: A collection of rules that have been used to calculate the classification and score.
+`RULES <IMicrosoftGraphSecurityHostReputationRule[]>`: A collection of rules that have been used to calculate the classification and score.
   - `[Description <String>]`: The description of the rule that gives more context.
   - `[Name <String>]`: The name of the rule.
   - `[RelatedDetailsUrl <String>]`: Link to a web page with details related to this rule.

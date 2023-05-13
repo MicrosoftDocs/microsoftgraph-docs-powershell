@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/invoke-mgextractsecurityinformationprotectionsensitivitylabelcontentlabel
+﻿---
+external help file: Microsoft.Graph.Beta.Security-help.xml
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaextractsecurityinformationprotectionsensitivitylabelcontentlabel
 schema: 2.0.0
 ---
 
-# Invoke-MgExtractSecurityInformationProtectionSensitivityLabelContentLabel
+# Invoke-MgBetaExtractSecurityInformationProtectionSensitivityLabelContentLabel
 
 ## SYNOPSIS
 Use the metadata that exists on an already-labeled piece of information to resolve the metadata to a specific sensitivity label.
@@ -15,13 +15,14 @@ The contentInfo input is resolved to informationProtectionContentLabel.
 
 ### ExtractExpanded (Default)
 ```
-Invoke-MgExtractSecurityInformationProtectionSensitivityLabelContentLabel [-AdditionalProperties <Hashtable>]
- [-ContentInfo <IMicrosoftGraphSecurityContentInfo>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgBetaExtractSecurityInformationProtectionSensitivityLabelContentLabel
+ [-AdditionalProperties <Hashtable>] [-ContentInfo <IMicrosoftGraphSecurityContentInfo>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Extract
 ```
-Invoke-MgExtractSecurityInformationProtectionSensitivityLabelContentLabel
+Invoke-MgBetaExtractSecurityInformationProtectionSensitivityLabelContentLabel
  -BodyParameter <IPathsQlapx7SecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityExtractcontentlabelPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -31,6 +32,20 @@ Use the metadata that exists on an already-labeled piece of information to resol
 The contentInfo input is resolved to informationProtectionContentLabel.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -51,7 +66,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPathsQlapx7SecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityExtractcontentlabelPostRequestbodyContentApplicationJsonSchema
@@ -67,7 +82,7 @@ Accept wildcard characters: False
 
 ### -ContentInfo
 contentInfo
-To construct, please use Get-Help -Online and see NOTES section for CONTENTINFO properties and create a hash table.
+To construct, see NOTES section for CONTENTINFO properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSecurityContentInfo
@@ -117,10 +132,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsQlapx7SecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityExtractcontentlabelPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsQlapx7SecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityExtractcontentlabelPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityContentLabel
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityContentLabel
 ## NOTES
 
 ALIASES
@@ -130,7 +145,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsQlapx7SecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityExtractcontentlabelPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsQlapx7SecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityExtractcontentlabelPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ContentInfo <IMicrosoftGraphSecurityContentInfo>]`: contentInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -141,7 +156,7 @@ BODYPARAMETER `<IPathsQlapx7SecurityInformationprotectionSensitivitylabelsMicros
       - `[Value <String>]`: Value for this key-value pair.
     - `[State <String>]`: contentState
 
-CONTENTINFO `<IMicrosoftGraphSecurityContentInfo>`: contentInfo
+`CONTENTINFO <IMicrosoftGraphSecurityContentInfo>`: contentInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ContentFormat <String>]`: The format of the content to be labeled. Possible values are: file, email.
   - `[Identifier <String>]`: Identifier used for Azure Information Protection Analytics.

@@ -1,7 +1,7 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/test-mgdriveitempermission
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/test-mgdriveitempermission
 schema: 2.0.0
 ---
 
@@ -12,26 +12,26 @@ Invoke action validatePermission
 
 ## SYNTAX
 
-### ValidateExpanded1 (Default)
+### ValidateExpanded (Default)
 ```
 Test-MgDriveItemPermission -DriveId <String> -DriveItemId <String> [-AdditionalProperties <Hashtable>]
  [-ChallengeToken <String>] [-Password <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Validate1
+### Validate
 ```
 Test-MgDriveItemPermission -DriveId <String> -DriveItemId <String>
  -BodyParameter <IPathsJjps9NDrivesDriveIdItemsDriveitemIdMicrosoftGraphValidatepermissionPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ValidateViaIdentityExpanded1
+### ValidateViaIdentityExpanded
 ```
 Test-MgDriveItemPermission -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
  [-ChallengeToken <String>] [-Password <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ValidateViaIdentity1
+### ValidateViaIdentity
 ```
 Test-MgDriveItemPermission -InputObject <IFilesIdentity>
  -BodyParameter <IPathsJjps9NDrivesDriveIdItemsDriveitemIdMicrosoftGraphValidatepermissionPostRequestbodyContentApplicationJsonSchema>
@@ -43,6 +43,20 @@ Invoke action validatePermission
 
 ## EXAMPLES
 
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -50,7 +64,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: ValidateExpanded1, ValidateViaIdentityExpanded1
+Parameter Sets: ValidateExpanded, ValidateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -62,11 +76,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPathsJjps9NDrivesDriveIdItemsDriveitemIdMicrosoftGraphValidatepermissionPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Validate1, ValidateViaIdentity1
+Parameter Sets: Validate, ValidateViaIdentity
 Aliases:
 
 Required: True
@@ -81,7 +95,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: ValidateExpanded1, ValidateViaIdentityExpanded1
+Parameter Sets: ValidateExpanded, ValidateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -96,7 +110,7 @@ The unique identifier of drive
 
 ```yaml
 Type: String
-Parameter Sets: ValidateExpanded1, Validate1
+Parameter Sets: ValidateExpanded, Validate
 Aliases:
 
 Required: True
@@ -111,7 +125,7 @@ The unique identifier of driveItem
 
 ```yaml
 Type: String
-Parameter Sets: ValidateExpanded1, Validate1
+Parameter Sets: ValidateExpanded, Validate
 Aliases:
 
 Required: True
@@ -123,11 +137,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IFilesIdentity
-Parameter Sets: ValidateViaIdentityExpanded1, ValidateViaIdentity1
+Parameter Sets: ValidateViaIdentityExpanded, ValidateViaIdentity
 Aliases:
 
 Required: True
@@ -157,7 +171,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: ValidateExpanded1, ValidateViaIdentityExpanded1
+Parameter Sets: ValidateExpanded, ValidateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -217,12 +231,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsJjps9NDrivesDriveIdItemsDriveitemIdMicrosoftGraphValidatepermissionPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsJjps9NDrivesDriveIdItemsDriveitemIdMicrosoftGraphValidatepermissionPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ChallengeToken <String>]`: 
   - `[Password <String>]`: 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+`INPUTOBJECT <IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType

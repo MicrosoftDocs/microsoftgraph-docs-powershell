@@ -1,86 +1,70 @@
----
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mguserteamworkinstalledapp
+﻿---
+external help file: Microsoft.Graph.Beta.Teams-help.xml
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserteamworkinstalledapp
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
-# Get-MgUserTeamworkInstalledApp
+# Get-MgBetaUserTeamworkInstalledApp
 
 ## SYNOPSIS
-The apps installed in the personal scope of this user.
+Retrieve the app installed in the personal scope of the specified user.
 
 ## SYNTAX
 
-### List1 (Default)
+### List (Default)
 ```
-Get-MgUserTeamworkInstalledApp -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaUserTeamworkInstalledApp -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
  [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### Get1
+### Get
 ```
-Get-MgUserTeamworkInstalledApp -UserId <String> -UserScopeTeamsAppInstallationId <String>
+Get-MgBetaUserTeamworkInstalledApp -UserId <String> -UserScopeTeamsAppInstallationId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### GetViaIdentity
 ```
-Get-MgUserTeamworkInstalledApp -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>]
+Get-MgBetaUserTeamworkInstalledApp -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The apps installed in the personal scope of this user.
+Retrieve the app installed in the personal scope of the specified user.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgUserTeamworkInstalledApp Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Teams
-Get-MgUserTeamworkInstalledApp -UserId $userId -UserScopeTeamsAppInstallationId $userScopeTeamsAppInstallationId
+Import-Module Microsoft.Graph.Beta.Teams
+Get-MgBetaUserTeamworkInstalledApp -UserId $userId -UserScopeTeamsAppInstallationId $userScopeTeamsAppInstallationId
 ```
 
-This example shows how to use the Get-MgUserTeamworkInstalledApp Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Get-MgUserTeamworkInstalledApp Cmdlet
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Teams
-Get-MgUserTeamworkInstalledApp -UserId $userId
+Import-Module Microsoft.Graph.Beta.Teams
+Get-MgBetaUserTeamworkInstalledApp -UserId $userId
 ```
 
-This example shows how to use the Get-MgUserTeamworkInstalledApp Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Using the Get-MgUserTeamworkInstalledApp Cmdlet
+### EXAMPLE 3
 ```powershell
-Import-Module Microsoft.Graph.Teams
-Get-MgUserTeamworkInstalledApp -UserId $userId -UserScopeTeamsAppInstallationId $userScopeTeamsAppInstallationId -ExpandProperty "teamsAppDefinition"
+Import-Module Microsoft.Graph.Beta.Teams
+Get-MgBetaUserTeamworkInstalledApp -UserId $userId -UserScopeTeamsAppInstallationId $userScopeTeamsAppInstallationId -ExpandProperty "teamsAppDefinition"
 ```
 
-This example shows how to use the Get-MgUserTeamworkInstalledApp Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 4: Using the Get-MgUserTeamworkInstalledApp Cmdlet
+### EXAMPLE 4
 ```powershell
-Import-Module Microsoft.Graph.Teams
-Get-MgUserTeamworkInstalledApp -UserId $userId -ExpandProperty "teamsAppDefinition(`$expand=bot)"
+Import-Module Microsoft.Graph.Beta.Teams
+Get-MgBetaUserTeamworkInstalledApp -UserId $userId -ExpandProperty "teamsAppDefinition(`$expand=bot)"
 ```
 
-This example shows how to use the Get-MgUserTeamworkInstalledApp Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 5: Using the Get-MgUserTeamworkInstalledApp Cmdlet
+### EXAMPLE 5
 ```powershell
-Import-Module Microsoft.Graph.Teams
-Get-MgUserTeamworkInstalledApp -UserId $userId -ExpandProperty "teamsApp,teamsAppDefinition" -Filter "teamsApp/externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'"
+Import-Module Microsoft.Graph.Beta.Teams
+Get-MgBetaUserTeamworkInstalledApp -UserId $userId -ExpandProperty "teamsApp,teamsAppDefinition" -Filter "teamsApp/externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'"
 ```
-
-This example shows how to use the Get-MgUserTeamworkInstalledApp Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -89,7 +73,7 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -105,7 +89,7 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: List
 Aliases: CV
 
 Required: False
@@ -135,7 +119,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -147,11 +131,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: GetViaIdentity1
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
@@ -166,7 +150,7 @@ Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -196,7 +180,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -211,7 +195,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List1
+Parameter Sets: List
 Aliases: OrderBy
 
 Required: False
@@ -226,7 +210,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Parameter Sets: List
 Aliases: Limit
 
 Required: False
@@ -241,7 +225,7 @@ The unique identifier of user
 
 ```yaml
 Type: String
-Parameter Sets: List1, Get1
+Parameter Sets: List, Get
 Aliases:
 
 Required: True
@@ -256,7 +240,7 @@ The unique identifier of userScopeTeamsAppInstallation
 
 ```yaml
 Type: String
-Parameter Sets: Get1
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -271,7 +255,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -286,10 +270,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserScopeTeamsAppInstallation1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserScopeTeamsAppInstallation
 ## NOTES
 
 ALIASES
@@ -299,7 +283,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat

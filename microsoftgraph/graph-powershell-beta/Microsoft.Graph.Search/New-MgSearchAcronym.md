@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Search-help.xml
-Module Name: Microsoft.Graph.Search
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/new-mgsearchacronym
+﻿---
+external help file: Microsoft.Graph.Beta.Search-help.xml
+Module Name: Microsoft.Graph.Beta.Search
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetasearchacronym
 schema: 2.0.0
 ---
 
-# New-MgSearchAcronym
+# New-MgBetaSearchAcronym
 
 ## SYNOPSIS
 Create a new acronym object.
@@ -14,14 +14,14 @@ Create a new acronym object.
 
 ### CreateExpanded (Default)
 ```
-New-MgSearchAcronym [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>]
+New-MgBetaSearchAcronym [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>]
  [-Id <String>] [-LastModifiedBy <IMicrosoftGraphSearchIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-StandsFor <String>] [-State <String>] [-WebUrl <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgSearchAcronym -BodyParameter <IMicrosoftGraphSearchAcronym> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaSearchAcronym -BodyParameter <IMicrosoftGraphSearchAcronym> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -29,9 +29,9 @@ Create a new acronym object.
 
 ## EXAMPLES
 
-### Example 1: Using the New-MgSearchAcronym Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Search
+Import-Module Microsoft.Graph.Beta.Search
 $params = @{
 	DisplayName = "DNN"
 	StandsFor = "Deep Neural Network"
@@ -39,11 +39,8 @@ $params = @{
 	WebUrl = "http://microsoft.com/deep-neural-network"
 	State = "draft"
 }
-New-MgSearchAcronym -BodyParameter $params
+New-MgBetaSearchAcronym -BodyParameter $params
 ```
-
-This example shows how to use the New-MgSearchAcronym Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -64,7 +61,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 acronym
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSearchAcronym
@@ -109,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -126,7 +123,7 @@ Accept wildcard characters: False
 
 ### -LastModifiedBy
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBY properties and create a hash table.
+To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSearchIdentitySet
@@ -238,10 +235,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSearchAcronym
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSearchAcronym
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSearchAcronym
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSearchAcronym
 ## NOTES
 
 ALIASES
@@ -251,7 +248,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSearchAcronym>`: acronym
+`BODYPARAMETER <IMicrosoftGraphSearchAcronym>`: acronym
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Description <String>]`: Search answer description shown on search results page.
   - `[DisplayName <String>]`: Search answer name displayed in search results.
@@ -265,11 +262,11 @@ BODYPARAMETER `<IMicrosoftGraphSearchAcronym>`: acronym
     - `[User <IMicrosoftGraphSearchIdentity>]`: identity
   - `[LastModifiedDateTime <DateTime?>]`: Timestamp of when the search answer is created or edited. Read-only.
   - `[WebUrl <String>]`: Search answer URL link. When users click this search answer in search results, they will go to this URL.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[StandsFor <String>]`: What the acronym stands for.
   - `[State <String>]`: answerState
 
-LASTMODIFIEDBY `<IMicrosoftGraphSearchIdentitySet>`: identitySet
+`LASTMODIFIEDBY <IMicrosoftGraphSearchIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphSearchIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

@@ -1,14 +1,15 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/remove-mgeducationclassassignmentrubricbyref
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationclassassignmentrubricbyref
 schema: 2.0.0
 ---
 
 # Remove-MgEducationClassAssignmentRubricByRef
 
 ## SYNOPSIS
-Delete ref of navigation property rubric for education
+Remove an educationRubric from an educationAssignment.
+This method does not delete the rubric itself and can only be performed by teachers.
 
 ## SYNTAX
 
@@ -25,18 +26,16 @@ Remove-MgEducationClassAssignmentRubricByRef -InputObject <IEducationIdentity> [
 ```
 
 ## DESCRIPTION
-Delete ref of navigation property rubric for education
+Remove an educationRubric from an educationAssignment.
+This method does not delete the rubric itself and can only be performed by teachers.
 
 ## EXAMPLES
 
-### Example 1: Using the Remove-MgEducationClassAssignmentRubricByRef Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Education
 Remove-MgEducationClassAssignmentRubricByRef -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId
 ```
-
-This example shows how to use the Remove-MgEducationClassAssignmentRubricByRef Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -87,7 +86,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IEducationIdentity
@@ -165,7 +164,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+`INPUTOBJECT <IEducationIdentity>`: Identity Parameter
   - `[EducationAssignmentId <String>]`: The unique identifier of educationAssignment
   - `[EducationAssignmentResourceId <String>]`: The unique identifier of educationAssignmentResource
   - `[EducationCategoryId <String>]`: The unique identifier of educationCategory
@@ -175,8 +174,6 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationSchoolId <String>]`: The unique identifier of educationSchool
   - `[EducationSubmissionId <String>]`: The unique identifier of educationSubmission
   - `[EducationSubmissionResourceId <String>]`: The unique identifier of educationSubmissionResource
-  - `[EducationSynchronizationErrorId <String>]`: The unique identifier of educationSynchronizationError
-  - `[EducationSynchronizationProfileId <String>]`: The unique identifier of educationSynchronizationProfile
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS

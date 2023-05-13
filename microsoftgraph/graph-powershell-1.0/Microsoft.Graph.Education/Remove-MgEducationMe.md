@@ -1,7 +1,7 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/remove-mgeducationme
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationme
 schema: 2.0.0
 ---
 
@@ -20,6 +20,20 @@ Remove-MgEducationMe [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<Comm
 Delete navigation property me for education
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 

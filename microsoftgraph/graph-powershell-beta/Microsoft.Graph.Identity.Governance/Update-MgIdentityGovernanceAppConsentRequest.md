@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.Governance-help.xml
-Module Name: Microsoft.Graph.Identity.Governance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceappconsentrequest
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.Governance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceappconsentrequest
 schema: 2.0.0
 ---
 
-# Update-MgIdentityGovernanceAppConsentRequest
+# Update-MgBetaIdentityGovernanceAppConsentRequest
 
 ## SYNOPSIS
 Update the navigation property appConsentRequests in identityGovernance
@@ -14,38 +14,50 @@ Update the navigation property appConsentRequests in identityGovernance
 
 ### UpdateExpanded (Default)
 ```
-Update-MgIdentityGovernanceAppConsentRequest -AppConsentRequestId <String> [-AdditionalProperties <Hashtable>]
- [-AppDisplayName <String>] [-AppId <String>] [-ConsentType <String>] [-Id <String>]
- [-PendingScopes <IMicrosoftGraphAppConsentRequestScope[]>]
- [-UserConsentRequests <IMicrosoftGraphUserConsentRequest1[]>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaIdentityGovernanceAppConsentRequest -AppConsentRequestId <String>
+ [-AdditionalProperties <Hashtable>] [-AppDisplayName <String>] [-AppId <String>] [-ConsentType <String>]
+ [-Id <String>] [-PendingScopes <IMicrosoftGraphAppConsentRequestScope[]>]
+ [-UserConsentRequests <IMicrosoftGraphUserConsentRequest[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgIdentityGovernanceAppConsentRequest -AppConsentRequestId <String>
- -BodyParameter <IMicrosoftGraphAppConsentRequest1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaIdentityGovernanceAppConsentRequest -AppConsentRequestId <String>
+ -BodyParameter <IMicrosoftGraphAppConsentRequest> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgIdentityGovernanceAppConsentRequest -InputObject <IIdentityGovernanceIdentity>
+Update-MgBetaIdentityGovernanceAppConsentRequest -InputObject <IIdentityGovernanceIdentity>
  [-AdditionalProperties <Hashtable>] [-AppDisplayName <String>] [-AppId <String>] [-ConsentType <String>]
  [-Id <String>] [-PendingScopes <IMicrosoftGraphAppConsentRequestScope[]>]
- [-UserConsentRequests <IMicrosoftGraphUserConsentRequest1[]>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-UserConsentRequests <IMicrosoftGraphUserConsentRequest[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgIdentityGovernanceAppConsentRequest -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAppConsentRequest1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaIdentityGovernanceAppConsentRequest -InputObject <IIdentityGovernanceIdentity>
+ -BodyParameter <IMicrosoftGraphAppConsentRequest> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property appConsentRequests in identityGovernance
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -115,10 +127,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 appConsentRequest
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAppConsentRequest1
+Type: IMicrosoftGraphAppConsentRequest
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -149,7 +161,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -166,7 +178,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IIdentityGovernanceIdentity
@@ -180,26 +192,11 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -PendingScopes
 A list of pending scopes waiting for approval.
 This is empty if the consentType is Static.
 Required.
-To construct, please use Get-Help -Online and see NOTES section for PENDINGSCOPES properties and create a hash table.
+To construct, see NOTES section for PENDINGSCOPES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAppConsentRequestScope[]
@@ -216,10 +213,10 @@ Accept wildcard characters: False
 ### -UserConsentRequests
 A list of pending user consent requests.
 Supports $filter (eq).
-To construct, please use Get-Help -Online and see NOTES section for USERCONSENTREQUESTS properties and create a hash table.
+To construct, see NOTES section for USERCONSENTREQUESTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserConsentRequest1[]
+Type: IMicrosoftGraphUserConsentRequest[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -266,11 +263,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppConsentRequest1
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAppConsentRequest
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAppConsentRequest
 ## NOTES
 
 ALIASES
@@ -280,15 +277,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphAppConsentRequest1>`: appConsentRequest
+`BODYPARAMETER <IMicrosoftGraphAppConsentRequest>`: appConsentRequest
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AppDisplayName <String>]`: The display name of the app for which consent is requested. Required. Supports $filter (eq only) and $orderby.
   - `[AppId <String>]`: The identifier of the application. Required. Supports $filter (eq only) and $orderby.
   - `[ConsentType <String>]`: The consent type of the request. Possible values are: Static and Dynamic. These represent static and dynamic permissions, respectively, requested in the consent workflow. Supports $filter (eq only) and $orderby. Required.
   - `[PendingScopes <IMicrosoftGraphAppConsentRequestScope[]>]`: A list of pending scopes waiting for approval. This is empty if the consentType is Static. Required.
     - `[DisplayName <String>]`: The name of the scope.
-  - `[UserConsentRequests <IMicrosoftGraphUserConsentRequest1[]>]`: A list of pending user consent requests. Supports $filter (eq).
+  - `[UserConsentRequests <IMicrosoftGraphUserConsentRequest[]>]`: A list of pending user consent requests. Supports $filter (eq).
     - `[ApprovalId <String>]`: The identifier of the approval of the request.
     - `[CompletedDateTime <DateTime?>]`: The request completion date time.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -302,12 +299,12 @@ BODYPARAMETER `<IMicrosoftGraphAppConsentRequest1>`: appConsentRequest
     - `[CreatedDateTime <DateTime?>]`: The request creation date time.
     - `[CustomData <String>]`: Free text field to define any custom data for the request. Not used.
     - `[Status <String>]`: The status of the request. Not nullable. The possible values are: Canceled, Denied, Failed, Granted, PendingAdminDecision, PendingApproval, PendingProvisioning, PendingScheduleCreation, Provisioned, Revoked, and ScheduleCreated. Not nullable.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-    - `[Approval <IMicrosoftGraphApproval1>]`: approval
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[Approval <IMicrosoftGraphApproval>]`: approval
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Steps <IMicrosoftGraphApprovalStep[]>]`: 
-        - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[AssignedToMe <Boolean?>]`: Indicates whether the step is assigned to the calling user to review. Read-only.
         - `[DisplayName <String>]`: The label provided by the policy creator to identify an approval step. Read-only.
         - `[Justification <String>]`: The justification associated with the approval step decision.
@@ -317,7 +314,7 @@ BODYPARAMETER `<IMicrosoftGraphAppConsentRequest1>`: appConsentRequest
         - `[Status <String>]`: The step status. Possible values: InProgress, Initializing, Completed, Expired. Read-only.
     - `[Reason <String>]`: The user's justification for requiring access to the app. Supports $filter (eq only) and $orderby.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentityGovernanceIdentity>`: Identity Parameter
   - `[AccessPackageAssignmentId <String>]`: The unique identifier of accessPackageAssignment
   - `[AccessPackageAssignmentPolicyId <String>]`: The unique identifier of accessPackageAssignmentPolicy
   - `[AccessPackageAssignmentRequestId <String>]`: The unique identifier of accessPackageAssignmentRequest
@@ -325,8 +322,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[AccessPackageCatalogId <String>]`: The unique identifier of accessPackageCatalog
   - `[AccessPackageId <String>]`: The unique identifier of accessPackage
   - `[AccessPackageId1 <String>]`: The unique identifier of accessPackage
-  - `[AccessPackageId2 <String>]`: Usage: accessPackageId='{accessPackageId}'
-  - `[AccessPackageQuestionId <String>]`: The unique identifier of accessPackageQuestion
   - `[AccessPackageResourceEnvironmentId <String>]`: The unique identifier of accessPackageResourceEnvironment
   - `[AccessPackageResourceId <String>]`: The unique identifier of accessPackageResource
   - `[AccessPackageResourceRequestId <String>]`: The unique identifier of accessPackageResourceRequest
@@ -351,7 +346,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[AgreementId <String>]`: The unique identifier of agreement
   - `[AppConsentRequestId <String>]`: The unique identifier of appConsentRequest
   - `[ApprovalId <String>]`: The unique identifier of approval
-  - `[ApprovalStageId <String>]`: The unique identifier of approvalStage
   - `[ApprovalStepId <String>]`: The unique identifier of approvalStep
   - `[BusinessFlowTemplateId <String>]`: The unique identifier of businessFlowTemplate
   - `[ConnectedOrganizationId <String>]`: The unique identifier of connectedOrganization
@@ -389,12 +383,24 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[ProgramControlId1 <String>]`: The unique identifier of programControl
   - `[ProgramControlTypeId <String>]`: The unique identifier of programControlType
   - `[ProgramId <String>]`: The unique identifier of program
+  - `[RbacApplicationId <String>]`: The unique identifier of rbacApplication
   - `[RunId <String>]`: The unique identifier of run
   - `[StartDateTime <DateTime?>]`: Usage: startDateTime={startDateTime}
   - `[TaskDefinitionId <String>]`: The unique identifier of taskDefinition
   - `[TaskId <String>]`: The unique identifier of task
   - `[TaskProcessingResultId <String>]`: The unique identifier of taskProcessingResult
   - `[TaskReportId <String>]`: The unique identifier of taskReport
+  - `[UnifiedRbacResourceActionId <String>]`: The unique identifier of unifiedRbacResourceAction
+  - `[UnifiedRbacResourceNamespaceId <String>]`: The unique identifier of unifiedRbacResourceNamespace
+  - `[UnifiedRoleAssignmentId <String>]`: The unique identifier of unifiedRoleAssignment
+  - `[UnifiedRoleAssignmentScheduleId <String>]`: The unique identifier of unifiedRoleAssignmentSchedule
+  - `[UnifiedRoleAssignmentScheduleInstanceId <String>]`: The unique identifier of unifiedRoleAssignmentScheduleInstance
+  - `[UnifiedRoleAssignmentScheduleRequestId <String>]`: The unique identifier of unifiedRoleAssignmentScheduleRequest
+  - `[UnifiedRoleDefinitionId <String>]`: The unique identifier of unifiedRoleDefinition
+  - `[UnifiedRoleDefinitionId1 <String>]`: The unique identifier of unifiedRoleDefinition
+  - `[UnifiedRoleEligibilityScheduleId <String>]`: The unique identifier of unifiedRoleEligibilitySchedule
+  - `[UnifiedRoleEligibilityScheduleInstanceId <String>]`: The unique identifier of unifiedRoleEligibilityScheduleInstance
+  - `[UnifiedRoleEligibilityScheduleRequestId <String>]`: The unique identifier of unifiedRoleEligibilityScheduleRequest
   - `[UnifiedRoleManagementAlertConfigurationId <String>]`: The unique identifier of unifiedRoleManagementAlertConfiguration
   - `[UnifiedRoleManagementAlertDefinitionId <String>]`: The unique identifier of unifiedRoleManagementAlertDefinition
   - `[UnifiedRoleManagementAlertId <String>]`: The unique identifier of unifiedRoleManagementAlert
@@ -406,10 +412,10 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowTemplateId <String>]`: The unique identifier of workflowTemplate
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
-PENDINGSCOPES <IMicrosoftGraphAppConsentRequestScope\[]>: A list of pending scopes waiting for approval. This is empty if the consentType is Static. Required.
+`PENDINGSCOPES <IMicrosoftGraphAppConsentRequestScope[]>`: A list of pending scopes waiting for approval. This is empty if the consentType is Static. Required.
   - `[DisplayName <String>]`: The name of the scope.
 
-USERCONSENTREQUESTS <IMicrosoftGraphUserConsentRequest1\[]>: A list of pending user consent requests. Supports $filter (eq).
+`USERCONSENTREQUESTS <IMicrosoftGraphUserConsentRequest[]>`: A list of pending user consent requests. Supports $filter (eq).
   - `[ApprovalId <String>]`: The identifier of the approval of the request.
   - `[CompletedDateTime <DateTime?>]`: The request completion date time.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -423,12 +429,12 @@ USERCONSENTREQUESTS <IMicrosoftGraphUserConsentRequest1\[]>: A list of pending u
   - `[CreatedDateTime <DateTime?>]`: The request creation date time.
   - `[CustomData <String>]`: Free text field to define any custom data for the request. Not used.
   - `[Status <String>]`: The status of the request. Not nullable. The possible values are: Canceled, Denied, Failed, Granted, PendingAdminDecision, PendingApproval, PendingProvisioning, PendingScheduleCreation, Provisioned, Revoked, and ScheduleCreated. Not nullable.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[Approval <IMicrosoftGraphApproval1>]`: approval
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
+  - `[Approval <IMicrosoftGraphApproval>]`: approval
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Steps <IMicrosoftGraphApprovalStep[]>]`: 
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[AssignedToMe <Boolean?>]`: Indicates whether the step is assigned to the calling user to review. Read-only.
       - `[DisplayName <String>]`: The label provided by the policy creator to identify an approval step. Read-only.
       - `[Justification <String>]`: The justification associated with the approval step decision.

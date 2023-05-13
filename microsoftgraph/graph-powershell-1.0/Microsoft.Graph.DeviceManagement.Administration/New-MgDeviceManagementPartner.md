@@ -1,7 +1,7 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementpartner
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementpartner
 schema: 2.0.0
 ---
 
@@ -12,7 +12,7 @@ Create new navigation property to deviceManagementPartners for deviceManagement
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
 New-MgDeviceManagementPartner [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
  [-GroupsRequiringPartnerEnrollment <IMicrosoftGraphDeviceManagementPartnerAssignment[]>] [-Id <String>]
@@ -22,9 +22,9 @@ New-MgDeviceManagementPartner [-AdditionalProperties <Hashtable>] [-DisplayName 
  [-WhenPartnerDevicesWillBeRemovedDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
-New-MgDeviceManagementPartner -BodyParameter <IMicrosoftGraphDeviceManagementPartner1> [-WhatIf] [-Confirm]
+New-MgDeviceManagementPartner -BodyParameter <IMicrosoftGraphDeviceManagementPartner> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -33,6 +33,20 @@ Create new navigation property to deviceManagementPartners for deviceManagement
 
 ## EXAMPLES
 
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -40,7 +54,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -52,11 +66,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Entity which represents a connection to device management partner.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementPartner1
-Parameter Sets: Create1
+Type: IMicrosoftGraphDeviceManagementPartner
+Parameter Sets: Create
 Aliases:
 
 Required: True
@@ -71,7 +85,7 @@ Partner display name
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -83,11 +97,11 @@ Accept wildcard characters: False
 
 ### -GroupsRequiringPartnerEnrollment
 User groups that specifies whether enrollment is through partner.
-To construct, please use Get-Help -Online and see NOTES section for GROUPSREQUIRINGPARTNERENROLLMENT properties and create a hash table.
+To construct, see NOTES section for GROUPSREQUIRINGPARTNERENROLLMENT properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementPartnerAssignment[]
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -103,7 +117,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -118,7 +132,7 @@ Whether device management partner is configured or not
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -133,7 +147,7 @@ Timestamp of last heartbeat after admin enabled option Connect to Device managem
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -148,7 +162,7 @@ Partner App Type.
 
 ```yaml
 Type: DeviceManagementPartnerAppType
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -163,7 +177,7 @@ Partner state of this tenant.
 
 ```yaml
 Type: DeviceManagementPartnerTenantState
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -178,7 +192,7 @@ Partner Single tenant App id
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -193,7 +207,7 @@ DateTime in UTC when PartnerDevices will be marked as NonCompliant
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -208,7 +222,7 @@ DateTime in UTC when PartnerDevices will be removed
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -254,10 +268,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementPartner1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementPartner
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementPartner1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementPartner
 ## NOTES
 
 ALIASES
@@ -267,7 +281,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDeviceManagementPartner1>`: Entity which represents a connection to device management partner.
+`BODYPARAMETER <IMicrosoftGraphDeviceManagementPartner>`: Entity which represents a connection to device management partner.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DisplayName <String>]`: Partner display name
@@ -282,7 +296,7 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagementPartner1>`: Entity which represen
   - `[WhenPartnerDevicesWillBeMarkedAsNonCompliantDateTime <DateTime?>]`: DateTime in UTC when PartnerDevices will be marked as NonCompliant
   - `[WhenPartnerDevicesWillBeRemovedDateTime <DateTime?>]`: DateTime in UTC when PartnerDevices will be removed
 
-GROUPSREQUIRINGPARTNERENROLLMENT <IMicrosoftGraphDeviceManagementPartnerAssignment\[]>: User groups that specifies whether enrollment is through partner.
+`GROUPSREQUIRINGPARTNERENROLLMENT <IMicrosoftGraphDeviceManagementPartnerAssignment[]>`: User groups that specifies whether enrollment is through partner.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 

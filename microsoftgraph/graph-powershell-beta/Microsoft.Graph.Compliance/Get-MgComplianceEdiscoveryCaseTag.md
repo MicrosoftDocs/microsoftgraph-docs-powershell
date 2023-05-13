@@ -1,58 +1,52 @@
----
-external help file: Microsoft.Graph.Compliance-help.xml
-Module Name: Microsoft.Graph.Compliance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/get-mgcomplianceediscoverycasetag
+﻿---
+external help file: Microsoft.Graph.Beta.Compliance-help.xml
+Module Name: Microsoft.Graph.Beta.Compliance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasetag
 schema: 2.0.0
 ---
 
-# Get-MgComplianceEdiscoveryCaseTag
+# Get-MgBetaComplianceEdiscoveryCaseTag
 
 ## SYNOPSIS
-Returns a list of tag objects associated to this case.
+Read the properties and relationships of a tag object.
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgComplianceEdiscoveryCaseTag -CaseId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaComplianceEdiscoveryCaseTag -CaseId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
  [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgComplianceEdiscoveryCaseTag -CaseId <String> -TagId <String> [-ExpandProperty <String[]>]
+Get-MgBetaComplianceEdiscoveryCaseTag -CaseId <String> -TagId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgComplianceEdiscoveryCaseTag -InputObject <IComplianceIdentity> [-ExpandProperty <String[]>]
+Get-MgBetaComplianceEdiscoveryCaseTag -InputObject <IComplianceIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Returns a list of tag objects associated to this case.
+Read the properties and relationships of a tag object.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgComplianceEdiscoveryCaseTag Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Compliance
-Get-MgComplianceEdiscoveryCaseTag -CaseId $caseId -TagId $tagId
+Import-Module Microsoft.Graph.Beta.Compliance
+Get-MgBetaComplianceEdiscoveryCaseTag -CaseId $caseId -TagId $tagId
 ```
 
-This example shows how to use the Get-MgComplianceEdiscoveryCaseTag Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Get-MgComplianceEdiscoveryCaseTag Cmdlet
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Compliance
-Get-MgComplianceEdiscoveryCaseTag -CaseId $caseId
+Import-Module Microsoft.Graph.Beta.Compliance
+Get-MgBetaComplianceEdiscoveryCaseTag -CaseId $caseId
 ```
-
-This example shows how to use the Get-MgComplianceEdiscoveryCaseTag Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -134,7 +128,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IComplianceIdentity
@@ -258,10 +252,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IComplianceIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryTag
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEdiscoveryTag
 ## NOTES
 
 ALIASES
@@ -271,7 +265,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
+`INPUTOBJECT <IComplianceIdentity>`: Identity Parameter
   - `[CaseId <String>]`: The unique identifier of case
   - `[CaseOperationId <String>]`: The unique identifier of caseOperation
   - `[CustodianId <String>]`: The unique identifier of custodian

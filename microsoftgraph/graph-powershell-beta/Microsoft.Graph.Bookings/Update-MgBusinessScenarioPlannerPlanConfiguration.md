@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Bookings-help.xml
-Module Name: Microsoft.Graph.Bookings
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.bookings/update-mgbusinessscenarioplannerplanconfiguration
+﻿---
+external help file: Microsoft.Graph.Beta.Bookings-help.xml
+Module Name: Microsoft.Graph.Beta.Bookings
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabusinessscenarioplannerplanconfiguration
 schema: 2.0.0
 ---
 
-# Update-MgBusinessScenarioPlannerPlanConfiguration
+# Update-MgBetaBusinessScenarioPlannerPlanConfiguration
 
 ## SYNOPSIS
 Update the properties of a plannerPlanConfiguration object for a businessScenario.
@@ -14,40 +14,50 @@ Update the properties of a plannerPlanConfiguration object for a businessScenari
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBusinessScenarioPlannerPlanConfiguration -BusinessScenarioId <String>
+Update-MgBetaBusinessScenarioPlannerPlanConfiguration -BusinessScenarioId <String>
  [-AdditionalProperties <Hashtable>] [-Buckets <IMicrosoftGraphPlannerPlanConfigurationBucketDefinition[]>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-DefaultLanguage <String>]
  [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
- [-Localizations <IMicrosoftGraphPlannerPlanConfigurationLocalization[]>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Localizations <IMicrosoftGraphPlannerPlanConfigurationLocalization[]>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBusinessScenarioPlannerPlanConfiguration -BusinessScenarioId <String>
- -BodyParameter <IMicrosoftGraphPlannerPlanConfiguration> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaBusinessScenarioPlannerPlanConfiguration -BusinessScenarioId <String>
+ -BodyParameter <IMicrosoftGraphPlannerPlanConfiguration> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBusinessScenarioPlannerPlanConfiguration -InputObject <IBookingsIdentity>
+Update-MgBetaBusinessScenarioPlannerPlanConfiguration -InputObject <IBookingsIdentity>
  [-AdditionalProperties <Hashtable>] [-Buckets <IMicrosoftGraphPlannerPlanConfigurationBucketDefinition[]>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-DefaultLanguage <String>]
  [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
- [-Localizations <IMicrosoftGraphPlannerPlanConfigurationLocalization[]>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Localizations <IMicrosoftGraphPlannerPlanConfigurationLocalization[]>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgBusinessScenarioPlannerPlanConfiguration -InputObject <IBookingsIdentity>
- -BodyParameter <IMicrosoftGraphPlannerPlanConfiguration> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaBusinessScenarioPlannerPlanConfiguration -InputObject <IBookingsIdentity>
+ -BodyParameter <IMicrosoftGraphPlannerPlanConfiguration> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of a plannerPlanConfiguration object for a businessScenario.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -68,7 +78,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 plannerPlanConfiguration
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPlannerPlanConfiguration
@@ -84,7 +94,7 @@ Accept wildcard characters: False
 
 ### -Buckets
 List the buckets that should be created in the plan.
-To construct, please use Get-Help -Online and see NOTES section for BUCKETS properties and create a hash table.
+To construct, see NOTES section for BUCKETS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPlannerPlanConfigurationBucketDefinition[]
@@ -115,7 +125,7 @@ Accept wildcard characters: False
 
 ### -CreatedBy
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
+To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet
@@ -162,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -179,7 +189,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IBookingsIdentity
@@ -195,7 +205,7 @@ Accept wildcard characters: False
 
 ### -LastModifiedBy
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBY properties and create a hash table.
+To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet
@@ -228,26 +238,11 @@ Accept wildcard characters: False
 
 ### -Localizations
 Localized names for the plan configuration.
-To construct, please use Get-Help -Online and see NOTES section for LOCALIZATIONS properties and create a hash table.
+To construct, see NOTES section for LOCALIZATIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPlannerPlanConfigurationLocalization[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -293,11 +288,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IBookingsIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerPlanConfiguration
+### Microsoft.Graph.Beta.PowerShell.Models.IBookingsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerPlanConfiguration
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerPlanConfiguration
 ## NOTES
 
 ALIASES
@@ -307,9 +302,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPlannerPlanConfiguration>`: plannerPlanConfiguration
+`BODYPARAMETER <IMicrosoftGraphPlannerPlanConfiguration>`: plannerPlanConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Buckets <IMicrosoftGraphPlannerPlanConfigurationBucketDefinition[]>]`: List the buckets that should be created in the plan.
     - `[ExternalBucketId <String>]`: Application-specified identifier of the bucket.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -325,17 +320,17 @@ BODYPARAMETER `<IMicrosoftGraphPlannerPlanConfiguration>`: plannerPlanConfigurat
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[LastModifiedDateTime <DateTime?>]`: The date and time when the plan configuration was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Localizations <IMicrosoftGraphPlannerPlanConfigurationLocalization[]>]`: Localized names for the plan configuration.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Buckets <IMicrosoftGraphPlannerPlanConfigurationBucketLocalization[]>]`: Localized names for configured buckets in the plan configuration.
       - `[ExternalBucketId <String>]`: Application-specified identifier of the bucket.
       - `[Name <String>]`: Name of the bucket.
     - `[LanguageTag <String>]`: The language code associated with the localized names in this object.
     - `[PlanTitle <String>]`: Localized title of the plan.
 
-BUCKETS <IMicrosoftGraphPlannerPlanConfigurationBucketDefinition\[]>: List the buckets that should be created in the plan.
+`BUCKETS <IMicrosoftGraphPlannerPlanConfigurationBucketDefinition[]>`: List the buckets that should be created in the plan.
   - `[ExternalBucketId <String>]`: Application-specified identifier of the bucket.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+`CREATEDBY <IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -344,21 +339,19 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+`INPUTOBJECT <IBookingsIdentity>`: Identity Parameter
   - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
   - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness
   - `[BookingCurrencyId <String>]`: The unique identifier of bookingCurrency
   - `[BookingCustomQuestionId <String>]`: The unique identifier of bookingCustomQuestion
-  - `[BookingCustomerBaseId <String>]`: The unique identifier of bookingCustomerBase
   - `[BookingCustomerId <String>]`: The unique identifier of bookingCustomer
   - `[BookingServiceId <String>]`: The unique identifier of bookingService
-  - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
   - `[BookingStaffMemberId <String>]`: The unique identifier of bookingStaffMember
   - `[BusinessScenarioId <String>]`: The unique identifier of businessScenario
   - `[BusinessScenarioTaskId <String>]`: The unique identifier of businessScenarioTask
   - `[PlannerPlanConfigurationLocalizationId <String>]`: The unique identifier of plannerPlanConfigurationLocalization
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+`LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -367,8 +360,8 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-LOCALIZATIONS <IMicrosoftGraphPlannerPlanConfigurationLocalization\[]>: Localized names for the plan configuration.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`LOCALIZATIONS <IMicrosoftGraphPlannerPlanConfigurationLocalization[]>`: Localized names for the plan configuration.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Buckets <IMicrosoftGraphPlannerPlanConfigurationBucketLocalization[]>]`: Localized names for configured buckets in the plan configuration.
     - `[ExternalBucketId <String>]`: Application-specified identifier of the bucket.
     - `[Name <String>]`: Name of the bucket.

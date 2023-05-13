@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.CrossDeviceExperiences-help.xml
-Module Name: Microsoft.Graph.CrossDeviceExperiences
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.crossdeviceexperiences/get-mguserdevice
+﻿---
+external help file: Microsoft.Graph.Beta.CrossDeviceExperiences-help.xml
+Module Name: Microsoft.Graph.Beta.CrossDeviceExperiences
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/get-mgbetauserdevice
 schema: 2.0.0
 ---
 
-# Get-MgUserDevice
+# Get-MgBetaUserDevice
 
 ## SYNOPSIS
 Get devices from users
@@ -14,20 +14,20 @@ Get devices from users
 
 ### List (Default)
 ```
-Get-MgUserDevice -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
+Get-MgBetaUserDevice -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
  [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgUserDevice -DeviceId <String> -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaUserDevice -DeviceId <String> -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgUserDevice -InputObject <ICrossDeviceExperiencesIdentity> [-ExpandProperty <String[]>]
+Get-MgBetaUserDevice -InputObject <ICrossDeviceExperiencesIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
@@ -35,6 +35,20 @@ Get-MgUserDevice -InputObject <ICrossDeviceExperiencesIdentity> [-ExpandProperty
 Get devices from users
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -116,7 +130,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ICrossDeviceExperiencesIdentity
@@ -240,10 +254,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ICrossDeviceExperiencesIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ICrossDeviceExperiencesIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDevice
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDevice
 ## NOTES
 
 ALIASES
@@ -253,7 +267,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
+`INPUTOBJECT <ICrossDeviceExperiencesIdentity>`: Identity Parameter
   - `[ActivityHistoryItemId <String>]`: The unique identifier of activityHistoryItem
   - `[CommandId <String>]`: The unique identifier of command
   - `[DeviceId <String>]`: The unique identifier of device

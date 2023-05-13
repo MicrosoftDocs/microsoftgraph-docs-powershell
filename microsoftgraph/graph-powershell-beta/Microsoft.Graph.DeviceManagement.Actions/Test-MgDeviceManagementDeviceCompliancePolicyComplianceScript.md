@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/test-mgdevicemanagementdevicecompliancepolicycompliancescript
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/test-mgbetadevicemanagementdevicecompliancepolicycompliancescript
 schema: 2.0.0
 ---
 
-# Test-MgDeviceManagementDeviceCompliancePolicyComplianceScript
+# Test-MgBetaDeviceManagementDeviceCompliancePolicyComplianceScript
 
 ## SYNOPSIS
 Invoke action validateComplianceScript
@@ -14,14 +14,14 @@ Invoke action validateComplianceScript
 
 ### ValidateExpanded (Default)
 ```
-Test-MgDeviceManagementDeviceCompliancePolicyComplianceScript [-AdditionalProperties <Hashtable>]
+Test-MgBetaDeviceManagementDeviceCompliancePolicyComplianceScript [-AdditionalProperties <Hashtable>]
  [-DeviceCompliancePolicyScript <IMicrosoftGraphDeviceCompliancePolicyScript>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Validate
 ```
-Test-MgDeviceManagementDeviceCompliancePolicyComplianceScript
+Test-MgBetaDeviceManagementDeviceCompliancePolicyComplianceScript
  -BodyParameter <IPathsV2Sh76DevicemanagementDevicecompliancepoliciesMicrosoftGraphValidatecompliancescriptPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -30,6 +30,20 @@ Test-MgDeviceManagementDeviceCompliancePolicyComplianceScript
 Invoke action validateComplianceScript
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -50,7 +64,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPathsV2Sh76DevicemanagementDevicecompliancepoliciesMicrosoftGraphValidatecompliancescriptPostRequestbodyContentApplicationJsonSchema
@@ -66,7 +80,7 @@ Accept wildcard characters: False
 
 ### -DeviceCompliancePolicyScript
 deviceCompliancePolicyScript
-To construct, please use Get-Help -Online and see NOTES section for DEVICECOMPLIANCEPOLICYSCRIPT properties and create a hash table.
+To construct, see NOTES section for DEVICECOMPLIANCEPOLICYSCRIPT properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceCompliancePolicyScript
@@ -116,10 +130,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsV2Sh76DevicemanagementDevicecompliancepoliciesMicrosoftGraphValidatecompliancescriptPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsV2Sh76DevicemanagementDevicecompliancepoliciesMicrosoftGraphValidatecompliancescriptPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceComplianceScriptValidationResult
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceComplianceScriptValidationResult
 ## NOTES
 
 ALIASES
@@ -129,14 +143,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsV2Sh76DevicemanagementDevicecompliancepoliciesMicrosoftGraphValidatecompliancescriptPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsV2Sh76DevicemanagementDevicecompliancepoliciesMicrosoftGraphValidatecompliancescriptPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeviceCompliancePolicyScript <IMicrosoftGraphDeviceCompliancePolicyScript>]`: deviceCompliancePolicyScript
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DeviceComplianceScriptId <String>]`: Device compliance script Id.
     - `[RulesContent <Byte[]>]`: Json of the rules.
 
-DEVICECOMPLIANCEPOLICYSCRIPT `<IMicrosoftGraphDeviceCompliancePolicyScript>`: deviceCompliancePolicyScript
+`DEVICECOMPLIANCEPOLICYSCRIPT <IMicrosoftGraphDeviceCompliancePolicyScript>`: deviceCompliancePolicyScript
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeviceComplianceScriptId <String>]`: Device compliance script Id.
   - `[RulesContent <Byte[]>]`: Json of the rules.

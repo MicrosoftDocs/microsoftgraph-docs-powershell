@@ -1,16 +1,15 @@
----
-external help file: Microsoft.Graph.CrossDeviceExperiences-help.xml
-Module Name: Microsoft.Graph.CrossDeviceExperiences
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.crossdeviceexperiences/get-mguserdeviceregisteredownerbyref
+﻿---
+external help file: Microsoft.Graph.Beta.CrossDeviceExperiences-help.xml
+Module Name: Microsoft.Graph.Beta.CrossDeviceExperiences
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/get-mgbetauserdeviceregisteredownerbyref
 schema: 2.0.0
 ---
 
-# Get-MgUserDeviceRegisteredOwnerByRef
+# Get-MgBetaUserDeviceRegisteredOwnerByRef
 
 ## SYNOPSIS
 The user that cloud joined the device or registered their personal device.
 The registered owner is set at the time of registration.
-Currently, there can be only one owner.
 Read-only.
 Nullable.
 Supports $expand.
@@ -18,20 +17,33 @@ Supports $expand.
 ## SYNTAX
 
 ```
-Get-MgUserDeviceRegisteredOwnerByRef -DeviceId <String> -UserId <String> [-Filter <String>] [-Search <String>]
- [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ConsistencyLevel <String>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [<CommonParameters>]
+Get-MgBetaUserDeviceRegisteredOwnerByRef -DeviceId <String> -UserId <String> [-Filter <String>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ConsistencyLevel <String>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 The user that cloud joined the device or registered their personal device.
 The registered owner is set at the time of registration.
-Currently, there can be only one owner.
 Read-only.
 Nullable.
 Supports $expand.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 

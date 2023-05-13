@@ -1,59 +1,69 @@
----
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencearticleindicator
+﻿---
+external help file: Microsoft.Graph.Beta.Security-help.xml
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencearticleindicator
 schema: 2.0.0
 ---
 
-# Get-MgSecurityThreatIntelligenceArticleIndicator
+# Get-MgBetaSecurityThreatIntelligenceArticleIndicator
 
 ## SYNOPSIS
-Refers to indicators of threat or compromise highlighted in an microsoft.graph.security.article.Note: List retrieval is not yet supported.
+Read the properties and relationships of an articleIndicator object.
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgSecurityThreatIntelligenceArticleIndicator [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaSecurityThreatIntelligenceArticleIndicator [-ExpandProperty <String[]>] [-Property <String[]>]
  [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
  [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get1
 ```
-Get-MgSecurityThreatIntelligenceArticleIndicator -ArticleIndicatorId <String> -ArticleId <String>
+Get-MgBetaSecurityThreatIntelligenceArticleIndicator -ArticleIndicatorId <String> -ArticleId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgSecurityThreatIntelligenceArticleIndicator -ArticleIndicatorId <String> [-ExpandProperty <String[]>]
+Get-MgBetaSecurityThreatIntelligenceArticleIndicator -ArticleIndicatorId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### List1
 ```
-Get-MgSecurityThreatIntelligenceArticleIndicator -ArticleId <String> [-ExpandProperty <String[]>]
+Get-MgBetaSecurityThreatIntelligenceArticleIndicator -ArticleId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
 ```
-Get-MgSecurityThreatIntelligenceArticleIndicator -InputObject <ISecurityIdentity> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaSecurityThreatIntelligenceArticleIndicator -InputObject <ISecurityIdentity>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgSecurityThreatIntelligenceArticleIndicator -InputObject <ISecurityIdentity> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaSecurityThreatIntelligenceArticleIndicator -InputObject <ISecurityIdentity>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Refers to indicators of threat or compromise highlighted in an microsoft.graph.security.article.Note: List retrieval is not yet supported.
+Read the properties and relationships of an articleIndicator object.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -150,7 +160,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ISecurityIdentity
@@ -259,10 +269,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityArticleIndicator
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityArticleIndicator
 ## NOTES
 
 ALIASES
@@ -272,7 +282,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+`INPUTOBJECT <ISecurityIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
   - `[ArticleId <String>]`: The unique identifier of article
   - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator

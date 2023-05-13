@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementuserexperienceanalyticworkfromanywherehardwarereadinessmetric
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementuserexperienceanalyticworkfromanywherehardwarereadinessmetric
 schema: 2.0.0
 ---
 
-# Remove-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric
+# Remove-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric
 
 ## SYNOPSIS
 Delete navigation property userExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric for deviceManagement
@@ -13,7 +13,7 @@ Delete navigation property userExperienceAnalyticsWorkFromAnywhereHardwareReadin
 ## SYNTAX
 
 ```
-Remove-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric [-IfMatch <String>]
+Remove-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric [-IfMatch <String>]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -21,6 +21,20 @@ Remove-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadiness
 Delete navigation property userExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric for deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 

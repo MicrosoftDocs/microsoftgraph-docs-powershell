@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Users.Actions-help.xml
-Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/get-mguserownedobjectbytype
+﻿---
+external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.Users.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetauserownedobjectbytype
 schema: 2.0.0
 ---
 
-# Get-MgUserOwnedObjectByType
+# Get-MgBetaUserOwnedObjectByType
 
 ## SYNOPSIS
 Retrieve a list of recently deleted application and group objects owned by the specified user.
@@ -15,13 +15,13 @@ This API returns up to 1,000 deleted objects owned by the user, sorted by ID, an
 
 ### GetExpanded (Default)
 ```
-Get-MgUserOwnedObjectByType [-AdditionalProperties <Hashtable>] [-Type <String>] [-UserId <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Get-MgBetaUserOwnedObjectByType [-AdditionalProperties <Hashtable>] [-Type <String>] [-UserId <String>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgUserOwnedObjectByType
+Get-MgBetaUserOwnedObjectByType
  -BodyParameter <IPathsSidp1OUsersMicrosoftGraphGetuserownedobjectsPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -31,6 +31,20 @@ Retrieve a list of recently deleted application and group objects owned by the s
 This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -51,7 +65,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPathsSidp1OUsersMicrosoftGraphGetuserownedobjectsPostRequestbodyContentApplicationJsonSchema
@@ -131,10 +145,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsSidp1OUsersMicrosoftGraphGetuserownedobjectsPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsSidp1OUsersMicrosoftGraphGetuserownedobjectsPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryObject
 ## NOTES
 
 ALIASES
@@ -144,7 +158,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsSidp1OUsersMicrosoftGraphGetuserownedobjectsPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsSidp1OUsersMicrosoftGraphGetuserownedobjectsPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Type <String>]`: 
   - `[UserId <String>]`: 

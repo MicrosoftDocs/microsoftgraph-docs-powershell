@@ -1,131 +1,104 @@
----
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgidentityprovider
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityprovider
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
-# Get-MgIdentityProvider
+# Get-MgBetaIdentityProvider
 
 ## SYNOPSIS
-Represents entry point for identity provider base.
+Get the properties and relationships of the specified identity provider configured in the tenant.
+Among the types of providers derived from identityProviderBase, you can currently get a socialIdentityProvider or a builtinIdentityProvider resource in Azure AD.
+In Azure AD B2C, this operation can currently get a socialIdentityProvider, openIdConnectIdentityProvider, or an appleManagedIdentityProvider resource.
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgIdentityProvider [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
+Get-MgBetaIdentityProvider [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
  [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgIdentityProvider -IdentityProviderBaseId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaIdentityProvider -IdentityProviderBaseId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgIdentityProvider -InputObject <IIdentitySignInsIdentity> [-ExpandProperty <String[]>]
+Get-MgBetaIdentityProvider -InputObject <IIdentitySignInsIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Represents entry point for identity provider base.
+Get the properties and relationships of the specified identity provider configured in the tenant.
+Among the types of providers derived from identityProviderBase, you can currently get a socialIdentityProvider or a builtinIdentityProvider resource in Azure AD.
+In Azure AD B2C, this operation can currently get a socialIdentityProvider, openIdConnectIdentityProvider, or an appleManagedIdentityProvider resource.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgIdentityProvider Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
-Get-MgIdentityProvider -IdentityProviderBaseId $identityProviderBaseId
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+Get-MgBetaIdentityProvider -IdentityProviderBaseId $identityProviderBaseId
 ```
 
-This example shows how to use the Get-MgIdentityProvider Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Get-MgIdentityProvider Cmdlet
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
-Get-MgIdentityProvider -IdentityProviderBaseId $identityProviderBaseId
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+Get-MgBetaIdentityProvider -IdentityProviderBaseId $identityProviderBaseId
 ```
 
-This example shows how to use the Get-MgIdentityProvider Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Using the Get-MgIdentityProvider Cmdlet
+### EXAMPLE 3
 ```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
-Get-MgIdentityProvider -IdentityProviderId $identityProviderId
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+Get-MgBetaIdentityProvider -IdentityProviderId $identityProviderId
 ```
 
-This example shows how to use the Get-MgIdentityProvider Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 4: Using the Get-MgIdentityProvider Cmdlet
+### EXAMPLE 4
 ```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
-Get-MgIdentityProvider -IdentityProviderId $identityProviderId
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+Get-MgBetaIdentityProvider -IdentityProviderId $identityProviderId
 ```
 
-This example shows how to use the Get-MgIdentityProvider Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 5: Using the Get-MgIdentityProvider Cmdlet
+### EXAMPLE 5
 ```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
-Get-MgIdentityProvider
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+Get-MgBetaIdentityProvider
 ```
 
-This example shows how to use the Get-MgIdentityProvider Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 6: Using the Get-MgIdentityProvider Cmdlet
+### EXAMPLE 6
 ```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
-Get-MgIdentityProvider
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+Get-MgBetaIdentityProvider
 ```
 
-This example shows how to use the Get-MgIdentityProvider Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 7: Using the Get-MgIdentityProvider Cmdlet
+### EXAMPLE 7
 ```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
-Get-MgIdentityProvider
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+Get-MgBetaIdentityProvider
 ```
 
-This example shows how to use the Get-MgIdentityProvider Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 8: Using the Get-MgIdentityProvider Cmdlet
+### EXAMPLE 8
 ```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
-Get-MgIdentityProvider -OutFile $outFileId
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+Get-MgBetaIdentityProvider -OutFile $outFileId
 ```
 
-This example shows how to use the Get-MgIdentityProvider Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 9: Using the Get-MgIdentityProvider Cmdlet
+### EXAMPLE 9
 ```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
-Get-MgIdentityProvider -IdentityProviderBaseId $identityProviderBaseId
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+Get-MgBetaIdentityProvider -IdentityProviderBaseId $identityProviderBaseId
 ```
 
-This example shows how to use the Get-MgIdentityProvider Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 10: Using the Get-MgIdentityProvider Cmdlet
+### EXAMPLE 10
 ```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
-Get-MgIdentityProvider -IdentityProviderBaseId $identityProviderBaseId
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+Get-MgBetaIdentityProvider -IdentityProviderBaseId $identityProviderBaseId
 ```
-
-This example shows how to use the Get-MgIdentityProvider Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -207,7 +180,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IIdentitySignInsIdentity
@@ -316,10 +289,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentityProviderBase
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentityProviderBase
 ## NOTES
 
 ALIASES
@@ -329,7 +302,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentitySignInsIdentity>`: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: The unique identifier of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
@@ -366,6 +339,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[IdentityUserFlowAttributeId <String>]`: The unique identifier of identityUserFlowAttribute
   - `[IdentityUserFlowId <String>]`: The unique identifier of identityUserFlow
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
+  - `[InvitationId <String>]`: The unique identifier of invitation
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   - `[MobilityManagementPolicyId <String>]`: The unique identifier of mobilityManagementPolicy

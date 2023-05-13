@@ -1,12 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryroletemplate
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryroletemplate
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
-# New-MgDirectoryRoleTemplate
+# New-MgBetaDirectoryRoleTemplate
 
 ## SYNOPSIS
 Add new entity to directoryRoleTemplates
@@ -15,13 +14,13 @@ Add new entity to directoryRoleTemplates
 
 ### CreateExpanded (Default)
 ```
-New-MgDirectoryRoleTemplate [-AdditionalProperties <Hashtable>] [-DeletedDateTime <DateTime>]
+New-MgBetaDirectoryRoleTemplate [-AdditionalProperties <Hashtable>] [-DeletedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDirectoryRoleTemplate -BodyParameter <IMicrosoftGraphDirectoryRoleTemplate> [-WhatIf] [-Confirm]
+New-MgBetaDirectoryRoleTemplate -BodyParameter <IMicrosoftGraphDirectoryRoleTemplate> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -30,16 +29,12 @@ Add new entity to directoryRoleTemplates
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
-
-Get-MgDirectoryRoleTemplate
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 ```
 
-This example shows how to use the New-MgDirectoryRoleTemplate Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Get-MgBetaDirectoryRoleTemplate
 
 ## PARAMETERS
 
@@ -60,7 +55,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 directoryRoleTemplate
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDirectoryRoleTemplate
@@ -123,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -174,10 +169,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryRoleTemplate
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryRoleTemplate
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryRoleTemplate
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryRoleTemplate
 ## NOTES
 
 ALIASES
@@ -187,10 +182,10 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDirectoryRoleTemplate>`: directoryRoleTemplate
+`BODYPARAMETER <IMicrosoftGraphDirectoryRoleTemplate>`: directoryRoleTemplate
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Description <String>]`: The description to set for the directory role. Read-only.
   - `[DisplayName <String>]`: The display name to set for the directory role. Read-only.
 

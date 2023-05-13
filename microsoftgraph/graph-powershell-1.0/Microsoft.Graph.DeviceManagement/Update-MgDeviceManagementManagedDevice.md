@@ -1,7 +1,7 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementmanageddevice
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementmanageddevice
 schema: 2.0.0
 ---
 
@@ -12,60 +12,101 @@ Update the navigation property managedDevices in deviceManagement
 
 ## SYNTAX
 
-### UpdateExpanded (Default)
+### UpdateExpanded1 (Default)
 ```
 Update-MgDeviceManagementManagedDevice -ManagedDeviceId <String> [-AdditionalProperties <Hashtable>]
+ [-AssignmentFilterEvaluationStatusDetails <IMicrosoftGraphAssignmentFilterEvaluationStatusDetails[]>]
+ [-ChassisType <ChassisType>] [-ChromeOSDeviceInfo <IMicrosoftGraphChromeOSDeviceProperty[]>]
+ [-CloudPcRemoteActionResults <IMicrosoftGraphCloudPcRemoteActionResult[]>]
  [-ComplianceState <ComplianceState>]
- [-ConfigurationManagerClientEnabledFeatures <IMicrosoftGraphConfigurationManagerClientEnabledFeatures>]
- [-DeviceCategory <IMicrosoftGraphDeviceCategory>]
- [-DeviceCompliancePolicyStates <IMicrosoftGraphDeviceCompliancePolicyState[]>]
- [-DeviceConfigurationStates <IMicrosoftGraphDeviceConfigurationState[]>]
- [-DeviceEnrollmentType <DeviceEnrollmentType>]
+ [-ConfigurationManagerClientEnabledFeatures <IMicrosoftGraphConfigurationManagerClientEnabledFeatures1>]
+ [-ConfigurationManagerClientHealthState <IMicrosoftGraphConfigurationManagerClientHealthState>]
+ [-ConfigurationManagerClientInformation <IMicrosoftGraphConfigurationManagerClientInformation>]
+ [-DetectedApps <IMicrosoftGraphDetectedApp1[]>] [-DeviceCategory <IMicrosoftGraphDeviceCategory1>]
+ [-DeviceCompliancePolicyStates <IMicrosoftGraphDeviceCompliancePolicyState1[]>]
+ [-DeviceConfigurationStates <IMicrosoftGraphDeviceConfigurationState1[]>]
+ [-DeviceEnrollmentType <DeviceEnrollmentType>] [-DeviceFirmwareConfigurationInterfaceManaged]
  [-DeviceHealthAttestationState <IMicrosoftGraphDeviceHealthAttestationState>]
- [-DeviceRegistrationState <DeviceRegistrationState>]
+ [-DeviceHealthScriptStates <IMicrosoftGraphDeviceHealthScriptPolicyState[]>]
+ [-DeviceRegistrationState <DeviceRegistrationState>] [-DeviceType <DeviceType>]
  [-ExchangeAccessState <DeviceManagementExchangeAccessState>]
- [-ExchangeAccessStateReason <DeviceManagementExchangeAccessStateReason>] [-Id <String>]
+ [-ExchangeAccessStateReason <DeviceManagementExchangeAccessStateReason>]
+ [-HardwareInformation <IMicrosoftGraphHardwareInformation>] [-Id <String>] [-JoinType <JoinType>]
+ [-LogCollectionRequests <IMicrosoftGraphDeviceLogCollectionResponse[]>] [-LostModeState <LostModeState>]
+ [-ManagedDeviceMobileAppConfigurationStates <IMicrosoftGraphManagedDeviceMobileAppConfigurationState[]>]
  [-ManagedDeviceName <String>] [-ManagedDeviceOwnerType <ManagedDeviceOwnerType>]
- [-ManagementAgent <ManagementAgentType>] [-Notes <String>]
- [-PartnerReportedThreatState <ManagedDevicePartnerReportedHealthState>] [-Users <IMicrosoftGraphUser[]>]
+ [-ManagementAgent <ManagementAgentType>] [-ManagementFeatures <ManagedDeviceManagementFeatures>]
+ [-ManagementState <ManagementState>] [-Notes <String>] [-OwnerType <OwnerType>]
+ [-PartnerReportedThreatState <ManagedDevicePartnerReportedHealthState>]
+ [-ProcessorArchitecture <ManagedDeviceArchitecture>] [-RoleScopeTagIds <String[]>]
+ [-SecurityBaselineStates <IMicrosoftGraphSecurityBaselineState[]>] [-SkuFamily <String>]
+ [-Users <IMicrosoftGraphUser1[]>] [-WindowsProtectionState <IMicrosoftGraphWindowsProtectionState>]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Update
+### Update1
 ```
-Update-MgDeviceManagementManagedDevice -ManagedDeviceId <String> -BodyParameter <IMicrosoftGraphManagedDevice>
+Update-MgDeviceManagementManagedDevice -ManagedDeviceId <String> -BodyParameter <IMicrosoftGraphManagedDevice1>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded
+### UpdateViaIdentityExpanded1
 ```
 Update-MgDeviceManagementManagedDevice -InputObject <IDeviceManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-ComplianceState <ComplianceState>]
- [-ConfigurationManagerClientEnabledFeatures <IMicrosoftGraphConfigurationManagerClientEnabledFeatures>]
- [-DeviceCategory <IMicrosoftGraphDeviceCategory>]
- [-DeviceCompliancePolicyStates <IMicrosoftGraphDeviceCompliancePolicyState[]>]
- [-DeviceConfigurationStates <IMicrosoftGraphDeviceConfigurationState[]>]
- [-DeviceEnrollmentType <DeviceEnrollmentType>]
+ [-AdditionalProperties <Hashtable>]
+ [-AssignmentFilterEvaluationStatusDetails <IMicrosoftGraphAssignmentFilterEvaluationStatusDetails[]>]
+ [-ChassisType <ChassisType>] [-ChromeOSDeviceInfo <IMicrosoftGraphChromeOSDeviceProperty[]>]
+ [-CloudPcRemoteActionResults <IMicrosoftGraphCloudPcRemoteActionResult[]>]
+ [-ComplianceState <ComplianceState>]
+ [-ConfigurationManagerClientEnabledFeatures <IMicrosoftGraphConfigurationManagerClientEnabledFeatures1>]
+ [-ConfigurationManagerClientHealthState <IMicrosoftGraphConfigurationManagerClientHealthState>]
+ [-ConfigurationManagerClientInformation <IMicrosoftGraphConfigurationManagerClientInformation>]
+ [-DetectedApps <IMicrosoftGraphDetectedApp1[]>] [-DeviceCategory <IMicrosoftGraphDeviceCategory1>]
+ [-DeviceCompliancePolicyStates <IMicrosoftGraphDeviceCompliancePolicyState1[]>]
+ [-DeviceConfigurationStates <IMicrosoftGraphDeviceConfigurationState1[]>]
+ [-DeviceEnrollmentType <DeviceEnrollmentType>] [-DeviceFirmwareConfigurationInterfaceManaged]
  [-DeviceHealthAttestationState <IMicrosoftGraphDeviceHealthAttestationState>]
- [-DeviceRegistrationState <DeviceRegistrationState>]
+ [-DeviceHealthScriptStates <IMicrosoftGraphDeviceHealthScriptPolicyState[]>]
+ [-DeviceRegistrationState <DeviceRegistrationState>] [-DeviceType <DeviceType>]
  [-ExchangeAccessState <DeviceManagementExchangeAccessState>]
- [-ExchangeAccessStateReason <DeviceManagementExchangeAccessStateReason>] [-Id <String>]
+ [-ExchangeAccessStateReason <DeviceManagementExchangeAccessStateReason>]
+ [-HardwareInformation <IMicrosoftGraphHardwareInformation>] [-Id <String>] [-JoinType <JoinType>]
+ [-LogCollectionRequests <IMicrosoftGraphDeviceLogCollectionResponse[]>] [-LostModeState <LostModeState>]
+ [-ManagedDeviceMobileAppConfigurationStates <IMicrosoftGraphManagedDeviceMobileAppConfigurationState[]>]
  [-ManagedDeviceName <String>] [-ManagedDeviceOwnerType <ManagedDeviceOwnerType>]
- [-ManagementAgent <ManagementAgentType>] [-Notes <String>]
- [-PartnerReportedThreatState <ManagedDevicePartnerReportedHealthState>] [-Users <IMicrosoftGraphUser[]>]
+ [-ManagementAgent <ManagementAgentType>] [-ManagementFeatures <ManagedDeviceManagementFeatures>]
+ [-ManagementState <ManagementState>] [-Notes <String>] [-OwnerType <OwnerType>]
+ [-PartnerReportedThreatState <ManagedDevicePartnerReportedHealthState>]
+ [-ProcessorArchitecture <ManagedDeviceArchitecture>] [-RoleScopeTagIds <String[]>]
+ [-SecurityBaselineStates <IMicrosoftGraphSecurityBaselineState[]>] [-SkuFamily <String>]
+ [-Users <IMicrosoftGraphUser1[]>] [-WindowsProtectionState <IMicrosoftGraphWindowsProtectionState>]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity
+### UpdateViaIdentity1
 ```
 Update-MgDeviceManagementManagedDevice -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphManagedDevice> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedDevice1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property managedDevices in deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -74,7 +115,23 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AssignmentFilterEvaluationStatusDetails
+Managed device mobile app configuration states for this device.
+To construct, please use Get-Help -Online and see NOTES section for ASSIGNMENTFILTEREVALUATIONSTATUSDETAILS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphAssignmentFilterEvaluationStatusDetails[]
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -86,11 +143,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Devices that are managed or pre-enrolled through Intune
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedDevice
-Parameter Sets: Update, UpdateViaIdentity
+Type: IMicrosoftGraphManagedDevice1
+Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
 Required: True
@@ -100,12 +157,59 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ChassisType
+Chassis type.
+
+```yaml
+Type: ChassisType
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ChromeOSDeviceInfo
+List of properties of the ChromeOS Device.
+To construct, please use Get-Help -Online and see NOTES section for CHROMEOSDEVICEINFO properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphChromeOSDeviceProperty[]
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CloudPcRemoteActionResults
+.
+To construct, please use Get-Help -Online and see NOTES section for CLOUDPCREMOTEACTIONRESULTS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphCloudPcRemoteActionResult[]
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ComplianceState
 Compliance state.
 
 ```yaml
 Type: ComplianceState
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -117,11 +221,59 @@ Accept wildcard characters: False
 
 ### -ConfigurationManagerClientEnabledFeatures
 configuration Manager client enabled features
-To construct, please use Get-Help -Online and see NOTES section for CONFIGURATIONMANAGERCLIENTENABLEDFEATURES properties and create a hash table.
+To construct, see NOTES section for CONFIGURATIONMANAGERCLIENTENABLEDFEATURES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphConfigurationManagerClientEnabledFeatures
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: IMicrosoftGraphConfigurationManagerClientEnabledFeatures1
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ConfigurationManagerClientHealthState
+Configuration manager client health state
+To construct, please use Get-Help -Online and see NOTES section for CONFIGURATIONMANAGERCLIENTHEALTHSTATE properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphConfigurationManagerClientHealthState
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ConfigurationManagerClientInformation
+Configuration Manager client information synced from SCCM
+To construct, please use Get-Help -Online and see NOTES section for CONFIGURATIONMANAGERCLIENTINFORMATION properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphConfigurationManagerClientInformation
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DetectedApps
+All applications currently installed on the device
+To construct, please use Get-Help -Online and see NOTES section for DETECTEDAPPS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphDetectedApp1[]
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -136,11 +288,11 @@ Device categories provides a way to organize your devices.
 Using device categories, company administrators can define their own categories that make sense to their company.
 These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment.
 You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
-To construct, please use Get-Help -Online and see NOTES section for DEVICECATEGORY properties and create a hash table.
+To construct, see NOTES section for DEVICECATEGORY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceCategory
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: IMicrosoftGraphDeviceCategory1
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -152,11 +304,11 @@ Accept wildcard characters: False
 
 ### -DeviceCompliancePolicyStates
 Device compliance policy states for this device.
-To construct, please use Get-Help -Online and see NOTES section for DEVICECOMPLIANCEPOLICYSTATES properties and create a hash table.
+To construct, see NOTES section for DEVICECOMPLIANCEPOLICYSTATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceCompliancePolicyState[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: IMicrosoftGraphDeviceCompliancePolicyState1[]
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -168,11 +320,11 @@ Accept wildcard characters: False
 
 ### -DeviceConfigurationStates
 Device configuration states for this device.
-To construct, please use Get-Help -Online and see NOTES section for DEVICECONFIGURATIONSTATES properties and create a hash table.
+To construct, see NOTES section for DEVICECONFIGURATIONSTATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceConfigurationState[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: IMicrosoftGraphDeviceConfigurationState1[]
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -187,7 +339,7 @@ Possible ways of adding a mobile device to management.
 
 ```yaml
 Type: DeviceEnrollmentType
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -197,13 +349,49 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -DeviceFirmwareConfigurationInterfaceManaged
+Indicates whether the device is DFCI managed.
+When TRUE the device is DFCI managed.
+When FALSE, the device is not DFCI managed.
+The default value is FALSE.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -DeviceHealthAttestationState
 deviceHealthAttestationState
-To construct, please use Get-Help -Online and see NOTES section for DEVICEHEALTHATTESTATIONSTATE properties and create a hash table.
+To construct, see NOTES section for DEVICEHEALTHATTESTATIONSTATE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceHealthAttestationState
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DeviceHealthScriptStates
+Results of device health scripts that ran for this device.
+Default is empty list.
+This property is read-only.
+To construct, please use Get-Help -Online and see NOTES section for DEVICEHEALTHSCRIPTSTATES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphDeviceHealthScriptPolicyState[]
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -218,7 +406,22 @@ Device registration status.
 
 ```yaml
 Type: DeviceRegistrationState
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DeviceType
+Device type.
+
+```yaml
+Type: DeviceType
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -233,7 +436,7 @@ Device Exchange Access State.
 
 ```yaml
 Type: DeviceManagementExchangeAccessState
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -248,7 +451,23 @@ Device Exchange Access State Reason.
 
 ```yaml
 Type: DeviceManagementExchangeAccessStateReason
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -HardwareInformation
+Hardware information of a given device.
+To construct, please use Get-Help -Online and see NOTES section for HARDWAREINFORMATION properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphHardwareInformation
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -264,7 +483,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -276,11 +495,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
 Aliases:
 
 Required: True
@@ -290,15 +509,77 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -JoinType
+Device enrollment join type.
+
+```yaml
+Type: JoinType
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -LogCollectionRequests
+List of log collection requests
+To construct, please use Get-Help -Online and see NOTES section for LOGCOLLECTIONREQUESTS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphDeviceLogCollectionResponse[]
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -LostModeState
+State of lost mode, indicating if lost mode is enabled or disabled
+
+```yaml
+Type: LostModeState
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ManagedDeviceId
 The unique identifier of managedDevice
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, Update
+Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ManagedDeviceMobileAppConfigurationStates
+Managed device mobile app configuration states for this device.
+To construct, please use Get-Help -Online and see NOTES section for MANAGEDDEVICEMOBILEAPPCONFIGURATIONSTATES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphManagedDeviceMobileAppConfigurationState[]
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -311,7 +592,7 @@ Can be overwritten to a user friendly name.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -326,7 +607,7 @@ Owner type of device.
 
 ```yaml
 Type: ManagedDeviceOwnerType
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -337,11 +618,41 @@ Accept wildcard characters: False
 ```
 
 ### -ManagementAgent
-Management agent type.
+managementAgentType
 
 ```yaml
 Type: ManagementAgentType
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ManagementFeatures
+Device management features.
+
+```yaml
+Type: ManagedDeviceManagementFeatures
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ManagementState
+Management state of device in Microsoft Intune.
+
+```yaml
+Type: ManagementState
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -360,7 +671,22 @@ $Search is not supported.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -OwnerType
+Owner type of device.
+
+```yaml
+Type: OwnerType
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -375,7 +701,7 @@ Available health states for the Device Health API
 
 ```yaml
 Type: ManagedDevicePartnerReportedHealthState
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -395,6 +721,67 @@ Aliases:
 
 Required: False
 Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProcessorArchitecture
+Processor architecture
+
+```yaml
+Type: ManagedDeviceArchitecture
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RoleScopeTagIds
+List of Scope Tag IDs for this Device instance.
+
+```yaml
+Type: String[]
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SecurityBaselineStates
+Security baseline states for this device.
+To construct, please use Get-Help -Online and see NOTES section for SECURITYBASELINESTATES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphSecurityBaselineState[]
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SkuFamily
+Device sku family
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
@@ -402,11 +789,27 @@ Accept wildcard characters: False
 
 ### -Users
 The primary users associated with the managed device.
-To construct, please use Get-Help -Online and see NOTES section for USERS properties and create a hash table.
+To construct, see NOTES section for USERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUser[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: IMicrosoftGraphUser1[]
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WindowsProtectionState
+Device protection status entity.
+To construct, please use Get-Help -Online and see NOTES section for WINDOWSPROTECTIONSTATE properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphWindowsProtectionState
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -453,7 +856,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedDevice
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedDevice1
 ## OUTPUTS
 
 ### System.Boolean
@@ -466,7 +869,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphManagedDevice>`: Devices that are managed or pre-enrolled through Intune
+`BODYPARAMETER <IMicrosoftGraphManagedDevice>`: Devices that are managed or pre-enrolled through Intune
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ComplianceState <ComplianceState?>]`: Compliance state.
@@ -566,7 +969,7 @@ BODYPARAMETER `<IMicrosoftGraphManagedDevice>`: Devices that are managed or pre-
   - `[ExchangeAccessStateReason <DeviceManagementExchangeAccessStateReason?>]`: Device Exchange Access State Reason.
   - `[ManagedDeviceName <String>]`: Automatically generated name to identify a device. Can be overwritten to a user friendly name.
   - `[ManagedDeviceOwnerType <ManagedDeviceOwnerType?>]`: Owner type of device.
-  - `[ManagementAgent <ManagementAgentType?>]`: Management agent type.
+  - `[ManagementAgent <ManagementAgentType?>]`: managementAgentType
   - `[Notes <String>]`: Notes on the device created by IT Admin. Return default value null in LIST managedDevices. Real value only returned in singel device GET call with device id and included in select parameter. Supports: $select.  $Search is not supported.
   - `[PartnerReportedThreatState <ManagedDevicePartnerReportedHealthState?>]`: Available health states for the Device Health API
   - `[Users <IMicrosoftGraphUser[]>]`: The primary users associated with the managed device.
@@ -676,10 +1079,13 @@ BODYPARAMETER `<IMicrosoftGraphManagedDevice>`: Devices that are managed or pre-
             - `[Type <Int32?>]`: For internal use only
           - `[ApproximateLastSignInDateTime <DateTime?>]`: The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only. Supports $filter (eq, ne, not, ge, le, and eq on null values) and $orderBy.
           - `[ComplianceExpirationDateTime <DateTime?>]`: The timestamp when the device is no longer deemed compliant. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+          - `[DeviceCategory <String>]`: User-defined property set by Intune to automatically add devices to groups and simplify managing devices.
           - `[DeviceId <String>]`: Unique identifier set by Azure Device Registration Service at the time of registration. This is an alternate key that can be used to reference the device object. Supports $filter (eq, ne, not, startsWith).
           - `[DeviceMetadata <String>]`: For internal use only. Set to null.
+          - `[DeviceOwnership <String>]`: Ownership of the device. This property is set by Intune. Possible values are: unknown, company, personal.
           - `[DeviceVersion <Int32?>]`: For internal use only.
           - `[DisplayName <String>]`: The display name for the device. Required. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderBy.
+          - `[EnrollmentProfileName <String>]`: Enrollment profile applied to the device. For example, Apple Device Enrollment Profile, Device enrollment - Corporate device identifiers, or Windows Autopilot profile name. This property is set by Intune.
           - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the device. Read-only. Nullable.
             - `[Id <String>]`: The unique idenfier for an entity. Read-only.
           - `[IsCompliant <Boolean?>]`: true if the device complies with Mobile Device Management (MDM) policies; otherwise, false. Read-only. This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices. Supports $filter (eq, ne, not).
@@ -694,8 +1100,9 @@ BODYPARAMETER `<IMicrosoftGraphManagedDevice>`: Devices that are managed or pre-
           - `[OperatingSystemVersion <String>]`: The version of the operating system on the device. Required. Supports $filter (eq, ne, not, ge, le, startsWith, and eq on null values).
           - `[PhysicalIds <String[]>]`: For internal use only. Not nullable. Supports $filter (eq, not, ge, le, startsWith,/$count eq 0, /$count ne 0).
           - `[ProfileType <String>]`: The profile type of the device. Possible values: RegisteredDevice (default), SecureVM, Printer, Shared, IoT.
-          - `[RegisteredOwners <IMicrosoftGraphDirectoryObject[]>]`: The user that cloud joined the device or registered their personal device. The registered owner is set at the time of registration. Currently, there can be only one owner. Read-only. Nullable. Supports $expand.
+          - `[RegisteredOwners <IMicrosoftGraphDirectoryObject[]>]`: The user that cloud joined the device or registered their personal device. The registered owner is set at the time of registration. Read-only. Nullable. Supports $expand.
           - `[RegisteredUsers <IMicrosoftGraphDirectoryObject[]>]`: Collection of registered users of the device. For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration. Read-only. Nullable. Supports $expand.
+          - `[RegistrationDateTime <DateTime?>]`: Date and time of when the device was registered. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
           - `[SystemLabels <String[]>]`: List of labels applied to the device by the system. Supports $filter (/$count eq 0, /$count ne 0).
           - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]`: Groups and administrative units that the device is a member of. This operation is transitive. Supports $expand.
           - `[TrustType <String>]`: Type of trust for the joined device. Read-only. Possible values:  Workplace (indicates bring your own personal devices), AzureAd (Cloud only joined devices), ServerAd (on-premises domain joined devices joined to Azure AD). For more details, see Introduction to device management in Azure Active Directory
@@ -981,12 +1388,12 @@ BODYPARAMETER `<IMicrosoftGraphManagedDevice>`: Devices that are managed or pre-
           - `[ContentBytes <Byte[]>]`: Write only. Bytes for the hosted content (such as images).
           - `[ContentType <String>]`: Write only. Content type. sicj as image/png, image/jpg.
           - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-        - `[Importance <String>]`: 
+        - `[Importance <String>]`: chatMessageImportance
         - `[LastEditedDateTime <DateTime?>]`: Read only. Timestamp when edits to the chat message were made. Triggers an 'Edited' flag in the Teams UI. If no edits are made the value is null.
         - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
         - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
         - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
-          - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+          - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
           - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
           - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1036,7 +1443,7 @@ BODYPARAMETER `<IMicrosoftGraphManagedDevice>`: Devices that are managed or pre-
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
           - `[Id <String>]`: Unique identifier for the identity.
-          - `[UserIdentityType <String>]`: 
+          - `[UserIdentityType <String>]`: teamworkUserIdentityType
       - `[PinnedMessages <IMicrosoftGraphPinnedChatMessageInfo[]>]`: A collection of all the pinned messages in the chat. Nullable.
         - `[Id <String>]`: The unique idenfier for an entity. Read-only.
         - `[Message <IMicrosoftGraphChatMessage>]`: chatMessage
@@ -1430,7 +1837,7 @@ BODYPARAMETER `<IMicrosoftGraphManagedDevice>`: Devices that are managed or pre-
           - `[LatestSupportedTlsVersion <String>]`: Optional. Specifies the latest version of Transport Layer Security (TLS) that the notification endpoint, specified by notificationUrl, supports. The possible values are: v1_0, v1_1, v1_2, v1_3. For subscribers whose notification endpoint supports a version lower than the currently recommended version (TLS 1.2), specifying this property by a set timeline allows them to temporarily use their deprecated version of TLS before completing their upgrade to TLS 1.2. For these subscribers, not setting this property per the timeline would result in subscription operations failing. For subscribers whose notification endpoint already supports TLS 1.2, setting this property is optional. In such cases, Microsoft Graph defaults the property to v1_2.
           - `[LifecycleNotificationUrl <String>]`: Optional. The URL of the endpoint that receives lifecycle notifications, including subscriptionRemoved, reauthorizationRequired, and missed notifications. This URL must make use of the HTTPS protocol.
           - `[NotificationQueryOptions <String>]`: Optional. OData query options for specifying value for the targeting resource. Clients receive notifications when resource reaches the state matching the query options provided here. With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property. For example, when the print job is completed or when a print job resource isFetchable property value becomes true etc.  Supported only for Universal Print Service. For more information, see Subscribe to change notifications from cloud printing APIs using Microsoft Graph.
-          - `[NotificationUrl <String>]`: Required. The URL of the endpoint that will receive the change notifications. This URL must make use of the HTTPS protocol.
+          - `[NotificationUrl <String>]`: Required. The URL of the endpoint that will receive the change notifications. This URL must make use of the HTTPS protocol. Any query string parameter included in the notificationUrl property will be included in the HTTP POST request when Microsoft Graph sends the change notifications.
           - `[NotificationUrlAppId <String>]`: Optional. The app ID that the subscription service can use to generate the validation token. This allows the client to validate the authenticity of the notification received.
           - `[Resource <String>]`: Required. Specifies the resource that will be monitored for changes. Do not include the base URL (https://graph.microsoft.com/v1.0/). See the possible resource path values for each supported resource.
         - `[Thumbnails <IMicrosoftGraphThumbnailSet[]>]`: Collection containing [ThumbnailSet][] objects associated with the item. For more info, see [getting thumbnails][]. Read-only. Nullable.
@@ -1568,7 +1975,7 @@ BODYPARAMETER `<IMicrosoftGraphManagedDevice>`: Devices that are managed or pre-
                   - `[Position <String>]`: Represents the position of the legend on the chart. The possible values are: Top, Bottom, Left, Right, Corner, Custom.
                   - `[Visible <Boolean?>]`: A boolean value the represents the visibility of a ChartLegend object.
                 - `[Name <String>]`: Represents the name of a chart object.
-                - `[Series <IMicrosoftGraphWorkbookChartSeries1[]>]`: Represents either a single series or collection of series in the chart. Read-only.
+                - `[Series <IMicrosoftGraphWorkbookChartSeries[]>]`: Represents either a single series or collection of series in the chart. Read-only.
                   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
                   - `[Format <IMicrosoftGraphWorkbookChartSeriesFormat>]`: workbookChartSeriesFormat
                     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1787,7 +2194,7 @@ BODYPARAMETER `<IMicrosoftGraphManagedDevice>`: Devices that are managed or pre-
               - `[Relations <IMicrosoftGraphTermStoreRelation[]>]`: To indicate which terms are related to the current term as either pinned or reused.
                 - `[Id <String>]`: The unique idenfier for an entity. Read-only.
                 - `[FromTerm <IMicrosoftGraphTermStoreTerm>]`: term
-                - `[Relationship <String>]`: 
+                - `[Relationship <String>]`: relationType
                 - `[Set <IMicrosoftGraphTermStoreSet>]`: set
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
                   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -1804,7 +2211,7 @@ BODYPARAMETER `<IMicrosoftGraphManagedDevice>`: Devices that are managed or pre-
                     - `[Description <String>]`: Description that gives details on the term usage.
                     - `[DisplayName <String>]`: Name of the group.
                     - `[ParentSiteId <String>]`: ID of the parent site of this group.
-                    - `[Scope <String>]`: 
+                    - `[Scope <String>]`: termGroupScope
                     - `[Sets <IMicrosoftGraphTermStoreSet[]>]`: All sets under the group in a term [store].
                   - `[Properties <IMicrosoftGraphKeyValue[]>]`: Custom properties for the set.
                   - `[Relations <IMicrosoftGraphTermStoreRelation[]>]`: Indicates which terms have been pinned or reused directly under the set.
@@ -2346,7 +2753,7 @@ BODYPARAMETER `<IMicrosoftGraphManagedDevice>`: Devices that are managed or pre-
             - `[Container <IMicrosoftGraphPlannerPlanContainer>]`: plannerPlanContainer
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[ContainerId <String>]`: The identifier of the resource that contains the plan. Optional.
-              - `[Type <String>]`: 
+              - `[Type <String>]`: plannerContainerType
               - `[Url <String>]`: The full canonical URL of the container. Optional.
             - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
             - `[CreatedDateTime <DateTime?>]`: Read-only. Date and time at which the plan is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -2440,7 +2847,7 @@ BODYPARAMETER `<IMicrosoftGraphManagedDevice>`: Devices that are managed or pre-
           - `[Code <String>]`: Operation error code.
           - `[Message <String>]`: Operation error message.
         - `[LastActionDateTime <DateTime?>]`: Time when the async operation was last updated.
-        - `[OperationType <String>]`: 
+        - `[OperationType <String>]`: teamsAsyncOperationType
         - `[Status <String>]`: teamsAsyncOperationStatus
         - `[TargetResourceId <String>]`: The ID of the object that's created or modified as result of this async operation, typically a team.
         - `[TargetResourceLocation <String>]`: The location of the object that's created or modified as result of this async operation. This URL should be treated as an opaque value and not parsed into its component paths.
@@ -2726,7 +3133,7 @@ BODYPARAMETER `<IMicrosoftGraphManagedDevice>`: Devices that are managed or pre-
         - `[Locale <String>]`: A locale representation for the user, which includes the user's preferred language and country/region. For example, 'en-us'. The language component follows 2-letter codes as defined in ISO 639-1, and the country component follows 2-letter codes as defined in ISO 3166-1 alpha-2.
       - `[TimeFormat <String>]`: The time format for the user's mailbox.
       - `[TimeZone <String>]`: The default time zone for the user's mailbox.
-      - `[UserPurpose <String>]`: 
+      - `[UserPurpose <String>]`: userPurpose
       - `[WorkingHours <IMicrosoftGraphWorkingHours>]`: workingHours
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DaysOfWeek <String[]>]`: The days of the week on which the user works.
@@ -2820,7 +3227,7 @@ BODYPARAMETER `<IMicrosoftGraphManagedDevice>`: Devices that are managed or pre-
             - `[DurationInSeconds <Int32?>]`: Duration of the meeting interval in seconds; that is, the difference between joinDateTime and leaveDateTime.
             - `[JoinDateTime <DateTime?>]`: The time the attendee joined in UTC.
             - `[LeaveDateTime <DateTime?>]`: The time the attendee left in UTC.
-          - `[EmailAddress <String>]`: Email address of the user associated with this atttendance record.
+          - `[EmailAddress <String>]`: Email address of the user associated with this attendance record.
           - `[Identity <IMicrosoftGraphIdentity>]`: identity
           - `[Role <String>]`: Role of the attendee. Possible values are: None, Attendee, Presenter, and Organizer.
           - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.
@@ -2980,9 +3387,9 @@ BODYPARAMETER `<IMicrosoftGraphManagedDevice>`: Devices that are managed or pre-
     - `[ShowInAddressList <Boolean?>]`: Do not use in Microsoft Graph. Manage this property through the Microsoft 365 admin center instead. Represents whether the user should be included in the Outlook global address list. See Known issue.
     - `[SignInActivity <IMicrosoftGraphSignInActivity>]`: signInActivity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[LastNonInteractiveSignInDateTime <DateTime?>]`: The last non-interactive sign-in date for a specific user. You can use this field to calculate the last time a client signed in to the directory on behalf of a user. Because some users may use clients to access tenant resources rather than signing into your tenant directly, you can use the non-interactive sign-in date to along with lastSignInDateTime to identify inactive users. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'. Azure AD maintains non-interactive sign-ins going back to May 2020. For more information about using the value of this property, see Manage inactive user accounts in Azure AD.
+      - `[LastNonInteractiveSignInDateTime <DateTime?>]`: The last non-interactive sign-in date for a specific user. You can use this field to calculate the last time a client attempted to sign into the directory on behalf of a user. Because some users may use clients to access tenant resources rather than signing into your tenant directly, you can use the non-interactive sign-in date to along with lastSignInDateTime to identify inactive users. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'. Azure AD maintains non-interactive sign-ins going back to May 2020. For more information about using the value of this property, see Manage inactive user accounts in Azure AD.
       - `[LastNonInteractiveSignInRequestId <String>]`: Request identifier of the last non-interactive sign-in performed by this user.
-      - `[LastSignInDateTime <DateTime?>]`: The last interactive sign-in date and time for a specific user. You can use this field to calculate the last time a user signed in to the directory with an interactive authentication method. This field can be used to build reports, such as inactive users. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'. Azure AD maintains interactive sign-ins going back to April 2020. For more information about using the value of this property, see Manage inactive user accounts in Azure AD.
+      - `[LastSignInDateTime <DateTime?>]`: The last interactive sign-in date and time for a specific user. You can use this field to calculate the last time a user attempted to sign into the directory with an interactive authentication method. This field can be used to build reports, such as inactive users. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'. Azure AD maintains interactive sign-ins going back to April 2020. For more information about using the value of this property, see Manage inactive user accounts in Azure AD.
       - `[LastSignInRequestId <String>]`: Request identifier of the last interactive sign-in performed by this user.
     - `[SignInSessionsValidFromDateTime <DateTime?>]`: Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications will get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph).  If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint. Read-only. Use revokeSignInSessions to reset. Returned only on $select.
     - `[Skills <String[]>]`: A list for the user to enumerate their skills. Returned only on $select.
@@ -3058,7 +3465,7 @@ BODYPARAMETER `<IMicrosoftGraphManagedDevice>`: Devices that are managed or pre-
     - `[UserPrincipalName <String>]`: The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant's collection of verified domains. This property is required when a user is created. The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property cannot contain accent characters. Only the following characters are allowed A - Z, a - z, 0 - 9, ' . - _ ! # ^ ~. For the complete list of allowed characters, see username policies. Returned by default. Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderBy.
     - `[UserType <String>]`: A string value that can be used to classify user types in your directory, such as Member and Guest. Returned only on $select. Supports $filter (eq, ne, not, in, and eq on null values). NOTE: For more information about the permissions for member and guest users, see What are the default user permissions in Azure Active Directory?
 
-CONFIGURATIONMANAGERCLIENTENABLEDFEATURES `<IMicrosoftGraphConfigurationManagerClientEnabledFeatures>`: configuration Manager client enabled features
+`CONFIGURATIONMANAGERCLIENTENABLEDFEATURES <IMicrosoftGraphConfigurationManagerClientEnabledFeatures>`: configuration Manager client enabled features
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CompliancePolicy <Boolean?>]`: Whether compliance policy is managed by Intune
   - `[DeviceConfiguration <Boolean?>]`: Whether device configuration is managed by Intune
@@ -3067,13 +3474,13 @@ CONFIGURATIONMANAGERCLIENTENABLEDFEATURES `<IMicrosoftGraphConfigurationManagerC
   - `[ResourceAccess <Boolean?>]`: Whether resource access is managed by Intune
   - `[WindowsUpdateForBusiness <Boolean?>]`: Whether Windows Update for Business is managed by Intune
 
-DEVICECATEGORY `<IMicrosoftGraphDeviceCategory>`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
+`DEVICECATEGORY <IMicrosoftGraphDeviceCategory>`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Description <String>]`: Optional description for the device category.
   - `[DisplayName <String>]`: Display name for the device category.
 
-DEVICECOMPLIANCEPOLICYSTATES <IMicrosoftGraphDeviceCompliancePolicyState\[]>: Device compliance policy states for this device.
+`DEVICECOMPLIANCEPOLICYSTATES <IMicrosoftGraphDeviceCompliancePolicyState[]>`: Device compliance policy states for this device.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DisplayName <String>]`: The name of the policy for this policyBase
   - `[PlatformType <PolicyPlatformType?>]`: Supported platform types for policies.
@@ -3097,7 +3504,7 @@ DEVICECOMPLIANCEPOLICYSTATES <IMicrosoftGraphDeviceCompliancePolicyState\[]>: De
   - `[State <String>]`: complianceStatus
   - `[Version <Int32?>]`: The version of the policy
 
-DEVICECONFIGURATIONSTATES <IMicrosoftGraphDeviceConfigurationState\[]>: Device configuration states for this device.
+`DEVICECONFIGURATIONSTATES <IMicrosoftGraphDeviceConfigurationState[]>`: Device configuration states for this device.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DisplayName <String>]`: The name of the policy for this policyBase
   - `[PlatformType <PolicyPlatformType?>]`: Supported platform types for policies.
@@ -3121,7 +3528,7 @@ DEVICECONFIGURATIONSTATES <IMicrosoftGraphDeviceConfigurationState\[]>: Device c
   - `[State <String>]`: complianceStatus
   - `[Version <Int32?>]`: The version of the policy
 
-DEVICEHEALTHATTESTATIONSTATE `<IMicrosoftGraphDeviceHealthAttestationState>`: deviceHealthAttestationState
+`DEVICEHEALTHATTESTATIONSTATE <IMicrosoftGraphDeviceHealthAttestationState>`: deviceHealthAttestationState
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AttestationIdentityKey <String>]`: TWhen an Attestation Identity Key (AIK) is present on a device, it indicates that the device has an endorsement key (EK) certificate.
   - `[BitLockerStatus <String>]`: On or Off of BitLocker Drive Encryption
@@ -3156,15 +3563,8 @@ DEVICEHEALTHATTESTATIONSTATE `<IMicrosoftGraphDeviceHealthAttestationState>`: de
   - `[VirtualSecureMode <String>]`: VSM is a container that protects high value assets from a compromised kernel
   - `[WindowsPe <String>]`: Operating system running with limited services that is used to prepare a computer for Windows
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
-  - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
-  - `[AndroidForWorkAppConfigurationSchemaId <String>]`: The unique identifier of androidForWorkAppConfigurationSchema
-  - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: The unique identifier of androidManagedStoreAppConfigurationSchema
-  - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
-  - `[AssignmentFilterEvaluationStatusDetailsId <String>]`: The unique identifier of assignmentFilterEvaluationStatusDetails
-  - `[DataSharingConsentId <String>]`: The unique identifier of dataSharingConsent
+`INPUTOBJECT <IDeviceManagementIdentity>`: Identity Parameter
   - `[DetectedAppId <String>]`: The unique identifier of detectedApp
-  - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The unique identifier of deviceAndAppManagementAssignmentFilter
   - `[DeviceCategoryId <String>]`: The unique identifier of deviceCategory
   - `[DeviceComplianceActionItemId <String>]`: The unique identifier of deviceComplianceActionItem
   - `[DeviceComplianceDeviceStatusId <String>]`: The unique identifier of deviceComplianceDeviceStatus
@@ -3176,120 +3576,19 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[DeviceComplianceSettingStateId <String>]`: The unique identifier of deviceComplianceSettingState
   - `[DeviceComplianceUserStatusId <String>]`: The unique identifier of deviceComplianceUserStatus
   - `[DeviceConfigurationAssignmentId <String>]`: The unique identifier of deviceConfigurationAssignment
-  - `[DeviceConfigurationConflictSummaryId <String>]`: The unique identifier of deviceConfigurationConflictSummary
   - `[DeviceConfigurationDeviceStatusId <String>]`: The unique identifier of deviceConfigurationDeviceStatus
-  - `[DeviceConfigurationGroupAssignmentId <String>]`: The unique identifier of deviceConfigurationGroupAssignment
   - `[DeviceConfigurationId <String>]`: The unique identifier of deviceConfiguration
   - `[DeviceConfigurationStateId <String>]`: The unique identifier of deviceConfigurationState
   - `[DeviceConfigurationUserStatusId <String>]`: The unique identifier of deviceConfigurationUserStatus
-  - `[DeviceHealthScriptAssignmentId <String>]`: The unique identifier of deviceHealthScriptAssignment
-  - `[DeviceHealthScriptDeviceStateId <String>]`: The unique identifier of deviceHealthScriptDeviceState
-  - `[DeviceHealthScriptId <String>]`: The unique identifier of deviceHealthScript
-  - `[DeviceId <String>]`: Property in multi-part unique identifier of deviceHealthScriptPolicyState
-  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
-  - `[DeviceManagementComplianceActionItemId <String>]`: The unique identifier of deviceManagementComplianceActionItem
-  - `[DeviceManagementCompliancePolicyId <String>]`: The unique identifier of deviceManagementCompliancePolicy
-  - `[DeviceManagementComplianceScheduledActionForRuleId <String>]`: The unique identifier of deviceManagementComplianceScheduledActionForRule
-  - `[DeviceManagementConfigurationPolicyAssignmentId <String>]`: The unique identifier of deviceManagementConfigurationPolicyAssignment
-  - `[DeviceManagementConfigurationPolicyId <String>]`: The unique identifier of deviceManagementConfigurationPolicy
-  - `[DeviceManagementConfigurationPolicyTemplateId <String>]`: The unique identifier of deviceManagementConfigurationPolicyTemplate
-  - `[DeviceManagementConfigurationSettingDefinitionId <String>]`: The unique identifier of deviceManagementConfigurationSettingDefinition
-  - `[DeviceManagementConfigurationSettingId <String>]`: The unique identifier of deviceManagementConfigurationSetting
-  - `[DeviceManagementConfigurationSettingTemplateId <String>]`: The unique identifier of deviceManagementConfigurationSettingTemplate
-  - `[DeviceManagementDerivedCredentialSettingsId <String>]`: The unique identifier of deviceManagementDerivedCredentialSettings
-  - `[DeviceManagementIntentAssignmentId <String>]`: The unique identifier of deviceManagementIntentAssignment
-  - `[DeviceManagementIntentDeviceSettingStateSummaryId <String>]`: The unique identifier of deviceManagementIntentDeviceSettingStateSummary
-  - `[DeviceManagementIntentDeviceStateId <String>]`: The unique identifier of deviceManagementIntentDeviceState
-  - `[DeviceManagementIntentId <String>]`: The unique identifier of deviceManagementIntent
-  - `[DeviceManagementIntentSettingCategoryId <String>]`: The unique identifier of deviceManagementIntentSettingCategory
-  - `[DeviceManagementIntentUserStateId <String>]`: The unique identifier of deviceManagementIntentUserState
-  - `[DeviceManagementResourceAccessProfileAssignmentId <String>]`: The unique identifier of deviceManagementResourceAccessProfileAssignment
-  - `[DeviceManagementResourceAccessProfileBaseId <String>]`: The unique identifier of deviceManagementResourceAccessProfileBase
-  - `[DeviceManagementScriptAssignmentId <String>]`: The unique identifier of deviceManagementScriptAssignment
-  - `[DeviceManagementScriptDeviceStateId <String>]`: The unique identifier of deviceManagementScriptDeviceState
-  - `[DeviceManagementScriptGroupAssignmentId <String>]`: The unique identifier of deviceManagementScriptGroupAssignment
-  - `[DeviceManagementScriptId <String>]`: The unique identifier of deviceManagementScript
-  - `[DeviceManagementScriptUserStateId <String>]`: The unique identifier of deviceManagementScriptUserState
-  - `[DeviceManagementSettingCategoryId <String>]`: The unique identifier of deviceManagementSettingCategory
-  - `[DeviceManagementSettingDefinitionId <String>]`: The unique identifier of deviceManagementSettingDefinition
-  - `[DeviceManagementSettingInstanceId <String>]`: The unique identifier of deviceManagementSettingInstance
-  - `[DeviceManagementTemplateId <String>]`: The unique identifier of deviceManagementTemplate
-  - `[DeviceManagementTemplateId1 <String>]`: The unique identifier of deviceManagementTemplate
-  - `[DeviceManagementTemplateSettingCategoryId <String>]`: The unique identifier of deviceManagementTemplateSettingCategory
   - `[DeviceManagementTroubleshootingEventId <String>]`: The unique identifier of deviceManagementTroubleshootingEvent
-  - `[DeviceShellScriptId <String>]`: The unique identifier of deviceShellScript
-  - `[EmbeddedSimActivationCodePoolAssignmentId <String>]`: The unique identifier of embeddedSIMActivationCodePoolAssignment
-  - `[EmbeddedSimActivationCodePoolId <String>]`: The unique identifier of embeddedSIMActivationCodePool
-  - `[EmbeddedSimDeviceStateId <String>]`: The unique identifier of embeddedSIMDeviceState
-  - `[GroupPolicyConfigurationAssignmentId <String>]`: The unique identifier of groupPolicyConfigurationAssignment
-  - `[GroupPolicyConfigurationId <String>]`: The unique identifier of groupPolicyConfiguration
-  - `[GroupPolicyDefinitionValueId <String>]`: The unique identifier of groupPolicyDefinitionValue
-  - `[GroupPolicyPresentationValueId <String>]`: The unique identifier of groupPolicyPresentationValue
-  - `[Id <String>]`: Property in multi-part unique identifier of deviceHealthScriptPolicyState
   - `[LocalizedNotificationMessageId <String>]`: The unique identifier of localizedNotificationMessage
-  - `[MacOSSoftwareUpdateAccountSummaryId <String>]`: The unique identifier of macOSSoftwareUpdateAccountSummary
-  - `[MacOSSoftwareUpdateCategorySummaryId <String>]`: The unique identifier of macOSSoftwareUpdateCategorySummary
-  - `[MacOSSoftwareUpdateStateSummaryId <String>]`: The unique identifier of macOSSoftwareUpdateStateSummary
-  - `[MalwareStateForWindowsDeviceId <String>]`: The unique identifier of malwareStateForWindowsDevice
-  - `[ManagedDeviceEncryptionStateId <String>]`: The unique identifier of managedDeviceEncryptionState
   - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
-  - `[ManagedDeviceMobileAppConfigurationStateId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationState
-  - `[MicrosoftTunnelConfigurationId <String>]`: The unique identifier of microsoftTunnelConfiguration
-  - `[MicrosoftTunnelHealthThresholdId <String>]`: The unique identifier of microsoftTunnelHealthThreshold
-  - `[MicrosoftTunnelServerId <String>]`: The unique identifier of microsoftTunnelServer
-  - `[MicrosoftTunnelServerLogCollectionResponseId <String>]`: The unique identifier of microsoftTunnelServerLogCollectionResponse
-  - `[MicrosoftTunnelSiteId <String>]`: The unique identifier of microsoftTunnelSite
-  - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
   - `[NotificationMessageTemplateId <String>]`: The unique identifier of notificationMessageTemplate
-  - `[PolicyId <String>]`: Property in multi-part unique identifier of deviceHealthScriptPolicyState
-  - `[RemoteActionAuditId <String>]`: The unique identifier of remoteActionAudit
-  - `[SecurityBaselineSettingStateId <String>]`: The unique identifier of securityBaselineSettingState
-  - `[SecurityBaselineStateId <String>]`: The unique identifier of securityBaselineState
   - `[SettingStateDeviceSummaryId <String>]`: The unique identifier of settingStateDeviceSummary
-  - `[UserExperienceAnalyticsAnomalyDeviceId <String>]`: The unique identifier of userExperienceAnalyticsAnomalyDevice
-  - `[UserExperienceAnalyticsAnomalyId <String>]`: The unique identifier of userExperienceAnalyticsAnomaly
-  - `[UserExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetailsId <String>]`: The unique identifier of userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails
-  - `[UserExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId <String>]`: The unique identifier of userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId
-  - `[UserExperienceAnalyticsAppHealthAppPerformanceByAppVersionId <String>]`: The unique identifier of userExperienceAnalyticsAppHealthAppPerformanceByAppVersion
-  - `[UserExperienceAnalyticsAppHealthAppPerformanceByOSVersionId <String>]`: The unique identifier of userExperienceAnalyticsAppHealthAppPerformanceByOSVersion
-  - `[UserExperienceAnalyticsAppHealthApplicationPerformanceId <String>]`: The unique identifier of userExperienceAnalyticsAppHealthApplicationPerformance
-  - `[UserExperienceAnalyticsAppHealthDeviceModelPerformanceId <String>]`: The unique identifier of userExperienceAnalyticsAppHealthDeviceModelPerformance
-  - `[UserExperienceAnalyticsAppHealthDevicePerformanceDetailsId <String>]`: The unique identifier of userExperienceAnalyticsAppHealthDevicePerformanceDetails
-  - `[UserExperienceAnalyticsAppHealthDevicePerformanceId <String>]`: The unique identifier of userExperienceAnalyticsAppHealthDevicePerformance
-  - `[UserExperienceAnalyticsAppHealthOSVersionPerformanceId <String>]`: The unique identifier of userExperienceAnalyticsAppHealthOSVersionPerformance
-  - `[UserExperienceAnalyticsBaselineId <String>]`: The unique identifier of userExperienceAnalyticsBaseline
-  - `[UserExperienceAnalyticsBatteryHealthAppImpactId <String>]`: The unique identifier of userExperienceAnalyticsBatteryHealthAppImpact
-  - `[UserExperienceAnalyticsBatteryHealthDeviceAppImpactId <String>]`: The unique identifier of userExperienceAnalyticsBatteryHealthDeviceAppImpact
-  - `[UserExperienceAnalyticsBatteryHealthDevicePerformanceId <String>]`: The unique identifier of userExperienceAnalyticsBatteryHealthDevicePerformance
-  - `[UserExperienceAnalyticsBatteryHealthDeviceRuntimeHistoryId <String>]`: The unique identifier of userExperienceAnalyticsBatteryHealthDeviceRuntimeHistory
-  - `[UserExperienceAnalyticsBatteryHealthModelPerformanceId <String>]`: The unique identifier of userExperienceAnalyticsBatteryHealthModelPerformance
-  - `[UserExperienceAnalyticsBatteryHealthOSPerformanceId <String>]`: The unique identifier of userExperienceAnalyticsBatteryHealthOsPerformance
-  - `[UserExperienceAnalyticsCategoryId <String>]`: The unique identifier of userExperienceAnalyticsCategory
-  - `[UserExperienceAnalyticsDevicePerformanceId <String>]`: The unique identifier of userExperienceAnalyticsDevicePerformance
-  - `[UserExperienceAnalyticsDeviceScopeId <String>]`: The unique identifier of userExperienceAnalyticsDeviceScope
-  - `[UserExperienceAnalyticsDeviceScoresId <String>]`: The unique identifier of userExperienceAnalyticsDeviceScores
-  - `[UserExperienceAnalyticsDeviceStartupHistoryId <String>]`: The unique identifier of userExperienceAnalyticsDeviceStartupHistory
-  - `[UserExperienceAnalyticsDeviceStartupProcessId <String>]`: The unique identifier of userExperienceAnalyticsDeviceStartupProcess
-  - `[UserExperienceAnalyticsDeviceStartupProcessPerformanceId <String>]`: The unique identifier of userExperienceAnalyticsDeviceStartupProcessPerformance
-  - `[UserExperienceAnalyticsDeviceTimelineEventId <String>]`: The unique identifier of userExperienceAnalyticsDeviceTimelineEvent
-  - `[UserExperienceAnalyticsDeviceWithoutCloudIdentityId <String>]`: The unique identifier of userExperienceAnalyticsDeviceWithoutCloudIdentity
-  - `[UserExperienceAnalyticsImpactingProcessId <String>]`: The unique identifier of userExperienceAnalyticsImpactingProcess
-  - `[UserExperienceAnalyticsMetricHistoryId <String>]`: The unique identifier of userExperienceAnalyticsMetricHistory
-  - `[UserExperienceAnalyticsMetricId <String>]`: The unique identifier of userExperienceAnalyticsMetric
-  - `[UserExperienceAnalyticsModelScoresId <String>]`: The unique identifier of userExperienceAnalyticsModelScores
-  - `[UserExperienceAnalyticsNotAutopilotReadyDeviceId <String>]`: The unique identifier of userExperienceAnalyticsNotAutopilotReadyDevice
-  - `[UserExperienceAnalyticsRemoteConnectionId <String>]`: The unique identifier of userExperienceAnalyticsRemoteConnection
-  - `[UserExperienceAnalyticsResourcePerformanceId <String>]`: The unique identifier of userExperienceAnalyticsResourcePerformance
-  - `[UserExperienceAnalyticsScoreHistoryId <String>]`: The unique identifier of userExperienceAnalyticsScoreHistory
-  - `[UserExperienceAnalyticsWorkFromAnywhereDeviceId <String>]`: The unique identifier of userExperienceAnalyticsWorkFromAnywhereDevice
-  - `[UserExperienceAnalyticsWorkFromAnywhereMetricId <String>]`: The unique identifier of userExperienceAnalyticsWorkFromAnywhereMetric
-  - `[UserExperienceAnalyticsWorkFromAnywhereModelPerformanceId <String>]`: The unique identifier of userExperienceAnalyticsWorkFromAnywhereModelPerformance
-  - `[WindowsDeviceMalwareStateId <String>]`: The unique identifier of windowsDeviceMalwareState
   - `[WindowsInformationProtectionAppLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionAppLearningSummary
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionNetworkLearningSummary
-  - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
-USERS <IMicrosoftGraphUser\[]>: The primary users associated with the managed device.
+`USERS <IMicrosoftGraphUser[]>`: The primary users associated with the managed device.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AboutMe <String>]`: A freeform text entry field for the user to describe themselves. Returned only on $select.
@@ -3396,10 +3695,13 @@ USERS <IMicrosoftGraphUser\[]>: The primary users associated with the managed de
           - `[Type <Int32?>]`: For internal use only
         - `[ApproximateLastSignInDateTime <DateTime?>]`: The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only. Supports $filter (eq, ne, not, ge, le, and eq on null values) and $orderBy.
         - `[ComplianceExpirationDateTime <DateTime?>]`: The timestamp when the device is no longer deemed compliant. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+        - `[DeviceCategory <String>]`: User-defined property set by Intune to automatically add devices to groups and simplify managing devices.
         - `[DeviceId <String>]`: Unique identifier set by Azure Device Registration Service at the time of registration. This is an alternate key that can be used to reference the device object. Supports $filter (eq, ne, not, startsWith).
         - `[DeviceMetadata <String>]`: For internal use only. Set to null.
+        - `[DeviceOwnership <String>]`: Ownership of the device. This property is set by Intune. Possible values are: unknown, company, personal.
         - `[DeviceVersion <Int32?>]`: For internal use only.
         - `[DisplayName <String>]`: The display name for the device. Required. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderBy.
+        - `[EnrollmentProfileName <String>]`: Enrollment profile applied to the device. For example, Apple Device Enrollment Profile, Device enrollment - Corporate device identifiers, or Windows Autopilot profile name. This property is set by Intune.
         - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the device. Read-only. Nullable.
           - `[Id <String>]`: The unique idenfier for an entity. Read-only.
         - `[IsCompliant <Boolean?>]`: true if the device complies with Mobile Device Management (MDM) policies; otherwise, false. Read-only. This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices. Supports $filter (eq, ne, not).
@@ -3414,8 +3716,9 @@ USERS <IMicrosoftGraphUser\[]>: The primary users associated with the managed de
         - `[OperatingSystemVersion <String>]`: The version of the operating system on the device. Required. Supports $filter (eq, ne, not, ge, le, startsWith, and eq on null values).
         - `[PhysicalIds <String[]>]`: For internal use only. Not nullable. Supports $filter (eq, not, ge, le, startsWith,/$count eq 0, /$count ne 0).
         - `[ProfileType <String>]`: The profile type of the device. Possible values: RegisteredDevice (default), SecureVM, Printer, Shared, IoT.
-        - `[RegisteredOwners <IMicrosoftGraphDirectoryObject[]>]`: The user that cloud joined the device or registered their personal device. The registered owner is set at the time of registration. Currently, there can be only one owner. Read-only. Nullable. Supports $expand.
+        - `[RegisteredOwners <IMicrosoftGraphDirectoryObject[]>]`: The user that cloud joined the device or registered their personal device. The registered owner is set at the time of registration. Read-only. Nullable. Supports $expand.
         - `[RegisteredUsers <IMicrosoftGraphDirectoryObject[]>]`: Collection of registered users of the device. For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration. Read-only. Nullable. Supports $expand.
+        - `[RegistrationDateTime <DateTime?>]`: Date and time of when the device was registered. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
         - `[SystemLabels <String[]>]`: List of labels applied to the device by the system. Supports $filter (/$count eq 0, /$count ne 0).
         - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]`: Groups and administrative units that the device is a member of. This operation is transitive. Supports $expand.
         - `[TrustType <String>]`: Type of trust for the joined device. Read-only. Possible values:  Workplace (indicates bring your own personal devices), AzureAd (Cloud only joined devices), ServerAd (on-premises domain joined devices joined to Azure AD). For more details, see Introduction to device management in Azure Active Directory
@@ -3701,12 +4004,12 @@ USERS <IMicrosoftGraphUser\[]>: The primary users associated with the managed de
         - `[ContentBytes <Byte[]>]`: Write only. Bytes for the hosted content (such as images).
         - `[ContentType <String>]`: Write only. Content type. sicj as image/png, image/jpg.
         - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-      - `[Importance <String>]`: 
+      - `[Importance <String>]`: chatMessageImportance
       - `[LastEditedDateTime <DateTime?>]`: Read only. Timestamp when edits to the chat message were made. Triggers an 'Edited' flag in the Teams UI. If no edits are made the value is null.
       - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
       - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
       - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
-        - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+        - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
         - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
         - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -3756,7 +4059,7 @@ USERS <IMicrosoftGraphUser\[]>: The primary users associated with the managed de
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
         - `[Id <String>]`: Unique identifier for the identity.
-        - `[UserIdentityType <String>]`: 
+        - `[UserIdentityType <String>]`: teamworkUserIdentityType
     - `[PinnedMessages <IMicrosoftGraphPinnedChatMessageInfo[]>]`: A collection of all the pinned messages in the chat. Nullable.
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
       - `[Message <IMicrosoftGraphChatMessage>]`: chatMessage
@@ -4150,7 +4453,7 @@ USERS <IMicrosoftGraphUser\[]>: The primary users associated with the managed de
         - `[LatestSupportedTlsVersion <String>]`: Optional. Specifies the latest version of Transport Layer Security (TLS) that the notification endpoint, specified by notificationUrl, supports. The possible values are: v1_0, v1_1, v1_2, v1_3. For subscribers whose notification endpoint supports a version lower than the currently recommended version (TLS 1.2), specifying this property by a set timeline allows them to temporarily use their deprecated version of TLS before completing their upgrade to TLS 1.2. For these subscribers, not setting this property per the timeline would result in subscription operations failing. For subscribers whose notification endpoint already supports TLS 1.2, setting this property is optional. In such cases, Microsoft Graph defaults the property to v1_2.
         - `[LifecycleNotificationUrl <String>]`: Optional. The URL of the endpoint that receives lifecycle notifications, including subscriptionRemoved, reauthorizationRequired, and missed notifications. This URL must make use of the HTTPS protocol.
         - `[NotificationQueryOptions <String>]`: Optional. OData query options for specifying value for the targeting resource. Clients receive notifications when resource reaches the state matching the query options provided here. With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property. For example, when the print job is completed or when a print job resource isFetchable property value becomes true etc.  Supported only for Universal Print Service. For more information, see Subscribe to change notifications from cloud printing APIs using Microsoft Graph.
-        - `[NotificationUrl <String>]`: Required. The URL of the endpoint that will receive the change notifications. This URL must make use of the HTTPS protocol.
+        - `[NotificationUrl <String>]`: Required. The URL of the endpoint that will receive the change notifications. This URL must make use of the HTTPS protocol. Any query string parameter included in the notificationUrl property will be included in the HTTP POST request when Microsoft Graph sends the change notifications.
         - `[NotificationUrlAppId <String>]`: Optional. The app ID that the subscription service can use to generate the validation token. This allows the client to validate the authenticity of the notification received.
         - `[Resource <String>]`: Required. Specifies the resource that will be monitored for changes. Do not include the base URL (https://graph.microsoft.com/v1.0/). See the possible resource path values for each supported resource.
       - `[Thumbnails <IMicrosoftGraphThumbnailSet[]>]`: Collection containing [ThumbnailSet][] objects associated with the item. For more info, see [getting thumbnails][]. Read-only. Nullable.
@@ -4288,7 +4591,7 @@ USERS <IMicrosoftGraphUser\[]>: The primary users associated with the managed de
                 - `[Position <String>]`: Represents the position of the legend on the chart. The possible values are: Top, Bottom, Left, Right, Corner, Custom.
                 - `[Visible <Boolean?>]`: A boolean value the represents the visibility of a ChartLegend object.
               - `[Name <String>]`: Represents the name of a chart object.
-              - `[Series <IMicrosoftGraphWorkbookChartSeries1[]>]`: Represents either a single series or collection of series in the chart. Read-only.
+              - `[Series <IMicrosoftGraphWorkbookChartSeries[]>]`: Represents either a single series or collection of series in the chart. Read-only.
                 - `[Id <String>]`: The unique idenfier for an entity. Read-only.
                 - `[Format <IMicrosoftGraphWorkbookChartSeriesFormat>]`: workbookChartSeriesFormat
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -4507,7 +4810,7 @@ USERS <IMicrosoftGraphUser\[]>: The primary users associated with the managed de
             - `[Relations <IMicrosoftGraphTermStoreRelation[]>]`: To indicate which terms are related to the current term as either pinned or reused.
               - `[Id <String>]`: The unique idenfier for an entity. Read-only.
               - `[FromTerm <IMicrosoftGraphTermStoreTerm>]`: term
-              - `[Relationship <String>]`: 
+              - `[Relationship <String>]`: relationType
               - `[Set <IMicrosoftGraphTermStoreSet>]`: set
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -4524,7 +4827,7 @@ USERS <IMicrosoftGraphUser\[]>: The primary users associated with the managed de
                   - `[Description <String>]`: Description that gives details on the term usage.
                   - `[DisplayName <String>]`: Name of the group.
                   - `[ParentSiteId <String>]`: ID of the parent site of this group.
-                  - `[Scope <String>]`: 
+                  - `[Scope <String>]`: termGroupScope
                   - `[Sets <IMicrosoftGraphTermStoreSet[]>]`: All sets under the group in a term [store].
                 - `[Properties <IMicrosoftGraphKeyValue[]>]`: Custom properties for the set.
                 - `[Relations <IMicrosoftGraphTermStoreRelation[]>]`: Indicates which terms have been pinned or reused directly under the set.
@@ -5066,7 +5369,7 @@ USERS <IMicrosoftGraphUser\[]>: The primary users associated with the managed de
           - `[Container <IMicrosoftGraphPlannerPlanContainer>]`: plannerPlanContainer
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[ContainerId <String>]`: The identifier of the resource that contains the plan. Optional.
-            - `[Type <String>]`: 
+            - `[Type <String>]`: plannerContainerType
             - `[Url <String>]`: The full canonical URL of the container. Optional.
           - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[CreatedDateTime <DateTime?>]`: Read-only. Date and time at which the plan is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -5160,7 +5463,7 @@ USERS <IMicrosoftGraphUser\[]>: The primary users associated with the managed de
         - `[Code <String>]`: Operation error code.
         - `[Message <String>]`: Operation error message.
       - `[LastActionDateTime <DateTime?>]`: Time when the async operation was last updated.
-      - `[OperationType <String>]`: 
+      - `[OperationType <String>]`: teamsAsyncOperationType
       - `[Status <String>]`: teamsAsyncOperationStatus
       - `[TargetResourceId <String>]`: The ID of the object that's created or modified as result of this async operation, typically a team.
       - `[TargetResourceLocation <String>]`: The location of the object that's created or modified as result of this async operation. This URL should be treated as an opaque value and not parsed into its component paths.
@@ -5446,7 +5749,7 @@ USERS <IMicrosoftGraphUser\[]>: The primary users associated with the managed de
       - `[Locale <String>]`: A locale representation for the user, which includes the user's preferred language and country/region. For example, 'en-us'. The language component follows 2-letter codes as defined in ISO 639-1, and the country component follows 2-letter codes as defined in ISO 3166-1 alpha-2.
     - `[TimeFormat <String>]`: The time format for the user's mailbox.
     - `[TimeZone <String>]`: The default time zone for the user's mailbox.
-    - `[UserPurpose <String>]`: 
+    - `[UserPurpose <String>]`: userPurpose
     - `[WorkingHours <IMicrosoftGraphWorkingHours>]`: workingHours
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DaysOfWeek <String[]>]`: The days of the week on which the user works.
@@ -5583,7 +5886,7 @@ USERS <IMicrosoftGraphUser\[]>: The primary users associated with the managed de
     - `[ExchangeAccessStateReason <DeviceManagementExchangeAccessStateReason?>]`: Device Exchange Access State Reason.
     - `[ManagedDeviceName <String>]`: Automatically generated name to identify a device. Can be overwritten to a user friendly name.
     - `[ManagedDeviceOwnerType <ManagedDeviceOwnerType?>]`: Owner type of device.
-    - `[ManagementAgent <ManagementAgentType?>]`: Management agent type.
+    - `[ManagementAgent <ManagementAgentType?>]`: managementAgentType
     - `[Notes <String>]`: Notes on the device created by IT Admin. Return default value null in LIST managedDevices. Real value only returned in singel device GET call with device id and included in select parameter. Supports: $select.  $Search is not supported.
     - `[PartnerReportedThreatState <ManagedDevicePartnerReportedHealthState?>]`: Available health states for the Device Health API
     - `[Users <IMicrosoftGraphUser[]>]`: The primary users associated with the managed device.
@@ -5642,7 +5945,7 @@ USERS <IMicrosoftGraphUser\[]>: The primary users associated with the managed de
           - `[DurationInSeconds <Int32?>]`: Duration of the meeting interval in seconds; that is, the difference between joinDateTime and leaveDateTime.
           - `[JoinDateTime <DateTime?>]`: The time the attendee joined in UTC.
           - `[LeaveDateTime <DateTime?>]`: The time the attendee left in UTC.
-        - `[EmailAddress <String>]`: Email address of the user associated with this atttendance record.
+        - `[EmailAddress <String>]`: Email address of the user associated with this attendance record.
         - `[Identity <IMicrosoftGraphIdentity>]`: identity
         - `[Role <String>]`: Role of the attendee. Possible values are: None, Attendee, Presenter, and Organizer.
         - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.
@@ -5802,9 +6105,9 @@ USERS <IMicrosoftGraphUser\[]>: The primary users associated with the managed de
   - `[ShowInAddressList <Boolean?>]`: Do not use in Microsoft Graph. Manage this property through the Microsoft 365 admin center instead. Represents whether the user should be included in the Outlook global address list. See Known issue.
   - `[SignInActivity <IMicrosoftGraphSignInActivity>]`: signInActivity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[LastNonInteractiveSignInDateTime <DateTime?>]`: The last non-interactive sign-in date for a specific user. You can use this field to calculate the last time a client signed in to the directory on behalf of a user. Because some users may use clients to access tenant resources rather than signing into your tenant directly, you can use the non-interactive sign-in date to along with lastSignInDateTime to identify inactive users. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'. Azure AD maintains non-interactive sign-ins going back to May 2020. For more information about using the value of this property, see Manage inactive user accounts in Azure AD.
+    - `[LastNonInteractiveSignInDateTime <DateTime?>]`: The last non-interactive sign-in date for a specific user. You can use this field to calculate the last time a client attempted to sign into the directory on behalf of a user. Because some users may use clients to access tenant resources rather than signing into your tenant directly, you can use the non-interactive sign-in date to along with lastSignInDateTime to identify inactive users. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'. Azure AD maintains non-interactive sign-ins going back to May 2020. For more information about using the value of this property, see Manage inactive user accounts in Azure AD.
     - `[LastNonInteractiveSignInRequestId <String>]`: Request identifier of the last non-interactive sign-in performed by this user.
-    - `[LastSignInDateTime <DateTime?>]`: The last interactive sign-in date and time for a specific user. You can use this field to calculate the last time a user signed in to the directory with an interactive authentication method. This field can be used to build reports, such as inactive users. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'. Azure AD maintains interactive sign-ins going back to April 2020. For more information about using the value of this property, see Manage inactive user accounts in Azure AD.
+    - `[LastSignInDateTime <DateTime?>]`: The last interactive sign-in date and time for a specific user. You can use this field to calculate the last time a user attempted to sign into the directory with an interactive authentication method. This field can be used to build reports, such as inactive users. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'. Azure AD maintains interactive sign-ins going back to April 2020. For more information about using the value of this property, see Manage inactive user accounts in Azure AD.
     - `[LastSignInRequestId <String>]`: Request identifier of the last interactive sign-in performed by this user.
   - `[SignInSessionsValidFromDateTime <DateTime?>]`: Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications will get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph).  If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint. Read-only. Use revokeSignInSessions to reset. Returned only on $select.
   - `[Skills <String[]>]`: A list for the user to enumerate their skills. Returned only on $select.

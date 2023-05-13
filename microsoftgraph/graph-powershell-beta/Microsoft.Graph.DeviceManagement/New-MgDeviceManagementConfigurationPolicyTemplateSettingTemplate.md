@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementconfigurationpolicytemplatesettingtemplate
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementconfigurationpolicytemplatesettingtemplate
 schema: 2.0.0
 ---
 
-# New-MgDeviceManagementConfigurationPolicyTemplateSettingTemplate
+# New-MgBetaDeviceManagementConfigurationPolicyTemplateSettingTemplate
 
 ## SYNOPSIS
 Create new navigation property to settingTemplates for deviceManagement
@@ -14,7 +14,7 @@ Create new navigation property to settingTemplates for deviceManagement
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementConfigurationPolicyTemplateSettingTemplate
+New-MgBetaDeviceManagementConfigurationPolicyTemplateSettingTemplate
  -DeviceManagementConfigurationPolicyTemplateId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-SettingDefinitions <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition[]>]
  [-SettingInstanceTemplate <IMicrosoftGraphDeviceManagementConfigurationSettingInstanceTemplate>] [-WhatIf]
@@ -23,7 +23,7 @@ New-MgDeviceManagementConfigurationPolicyTemplateSettingTemplate
 
 ### Create
 ```
-New-MgDeviceManagementConfigurationPolicyTemplateSettingTemplate
+New-MgBetaDeviceManagementConfigurationPolicyTemplateSettingTemplate
  -DeviceManagementConfigurationPolicyTemplateId <String>
  -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationSettingTemplate> [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -31,7 +31,7 @@ New-MgDeviceManagementConfigurationPolicyTemplateSettingTemplate
 
 ### CreateViaIdentityExpanded
 ```
-New-MgDeviceManagementConfigurationPolicyTemplateSettingTemplate -InputObject <IDeviceManagementIdentity>
+New-MgBetaDeviceManagementConfigurationPolicyTemplateSettingTemplate -InputObject <IDeviceManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-SettingDefinitions <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition[]>]
  [-SettingInstanceTemplate <IMicrosoftGraphDeviceManagementConfigurationSettingInstanceTemplate>] [-WhatIf]
@@ -40,7 +40,7 @@ New-MgDeviceManagementConfigurationPolicyTemplateSettingTemplate -InputObject <I
 
 ### CreateViaIdentity
 ```
-New-MgDeviceManagementConfigurationPolicyTemplateSettingTemplate -InputObject <IDeviceManagementIdentity>
+New-MgBetaDeviceManagementConfigurationPolicyTemplateSettingTemplate -InputObject <IDeviceManagementIdentity>
  -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationSettingTemplate> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
@@ -49,6 +49,20 @@ New-MgDeviceManagementConfigurationPolicyTemplateSettingTemplate -InputObject <I
 Create new navigation property to settingTemplates for deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -69,7 +83,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Setting Template
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementConfigurationSettingTemplate
@@ -99,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -116,7 +130,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementIdentity
@@ -132,7 +146,7 @@ Accept wildcard characters: False
 
 ### -SettingDefinitions
 List of related Setting Definitions
-To construct, please use Get-Help -Online and see NOTES section for SETTINGDEFINITIONS properties and create a hash table.
+To construct, see NOTES section for SETTINGDEFINITIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementConfigurationSettingDefinition[]
@@ -148,7 +162,7 @@ Accept wildcard characters: False
 
 ### -SettingInstanceTemplate
 Setting Instance Template
-To construct, please use Get-Help -Online and see NOTES section for SETTINGINSTANCETEMPLATE properties and create a hash table.
+To construct, see NOTES section for SETTINGINSTANCETEMPLATE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementConfigurationSettingInstanceTemplate
@@ -198,11 +212,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationSettingTemplate
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationSettingTemplate
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationSettingTemplate
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationSettingTemplate
 ## NOTES
 
 ALIASES
@@ -212,11 +226,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDeviceManagementConfigurationSettingTemplate>`: Setting Template
+`BODYPARAMETER <IMicrosoftGraphDeviceManagementConfigurationSettingTemplate>`: Setting Template
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[SettingDefinitions <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition[]>]`: List of related Setting Definitions
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[AccessTypes <String>]`: deviceManagementConfigurationSettingAccessTypes
     - `[Applicability <IMicrosoftGraphDeviceManagementConfigurationSettingApplicability>]`: deviceManagementConfigurationSettingApplicability
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -250,7 +264,7 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagementConfigurationSettingTemplate>`: S
     - `[SettingDefinitionId <String>]`: Setting Definition Id
     - `[SettingInstanceTemplateId <String>]`: Setting Instance Template Id
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementIdentity>`: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: The unique identifier of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: The unique identifier of androidManagedStoreAppConfigurationSchema
@@ -382,9 +396,11 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionAppLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionAppLearningSummary
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
+  - `[WindowsQualityUpdateProfileAssignmentId <String>]`: The unique identifier of windowsQualityUpdateProfileAssignment
+  - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
-SETTINGDEFINITIONS <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition\[]>: List of related Setting Definitions
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`SETTINGDEFINITIONS <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition[]>`: List of related Setting Definitions
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AccessTypes <String>]`: deviceManagementConfigurationSettingAccessTypes
   - `[Applicability <IMicrosoftGraphDeviceManagementConfigurationSettingApplicability>]`: deviceManagementConfigurationSettingApplicability
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -413,7 +429,7 @@ SETTINGDEFINITIONS <IMicrosoftGraphDeviceManagementConfigurationSettingDefinitio
   - `[Version <String>]`: Item Version
   - `[Visibility <DeviceManagementConfigurationSettingVisibility?>]`: Supported setting types
 
-SETTINGINSTANCETEMPLATE `<IMicrosoftGraphDeviceManagementConfigurationSettingInstanceTemplate>`: Setting Instance Template
+`SETTINGINSTANCETEMPLATE <IMicrosoftGraphDeviceManagementConfigurationSettingInstanceTemplate>`: Setting Instance Template
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[IsRequired <Boolean?>]`: Indicates if a policy must specify this setting.
   - `[SettingDefinitionId <String>]`: Setting Definition Id

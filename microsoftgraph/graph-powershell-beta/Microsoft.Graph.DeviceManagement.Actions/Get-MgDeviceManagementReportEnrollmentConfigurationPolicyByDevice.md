@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementreportenrollmentconfigurationpolicybydevice
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportenrollmentconfigurationpolicybydevice
 schema: 2.0.0
 ---
 
-# Get-MgDeviceManagementReportEnrollmentConfigurationPolicyByDevice
+# Get-MgBetaDeviceManagementReportEnrollmentConfigurationPolicyByDevice
 
 ## SYNOPSIS
 Invoke action getEnrollmentConfigurationPoliciesByDevice
@@ -14,7 +14,7 @@ Invoke action getEnrollmentConfigurationPoliciesByDevice
 
 ### GetExpanded (Default)
 ```
-Get-MgDeviceManagementReportEnrollmentConfigurationPolicyByDevice -OutFile <String>
+Get-MgBetaDeviceManagementReportEnrollmentConfigurationPolicyByDevice -OutFile <String>
  [-AdditionalProperties <Hashtable>] [-Filter <String>] [-GroupBy <String[]>] [-Name <String>]
  [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -22,7 +22,7 @@ Get-MgDeviceManagementReportEnrollmentConfigurationPolicyByDevice -OutFile <Stri
 
 ### Get
 ```
-Get-MgDeviceManagementReportEnrollmentConfigurationPolicyByDevice -OutFile <String>
+Get-MgBetaDeviceManagementReportEnrollmentConfigurationPolicyByDevice -OutFile <String>
  -BodyParameter <IPathsD7TdnyDevicemanagementReportsMicrosoftGraphGetenrollmentconfigurationpoliciesbydevicePostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -31,6 +31,20 @@ Get-MgDeviceManagementReportEnrollmentConfigurationPolicyByDevice -OutFile <Stri
 Invoke action getEnrollmentConfigurationPoliciesByDevice
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -51,7 +65,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPathsD7TdnyDevicemanagementReportsMicrosoftGraphGetenrollmentconfigurationpoliciesbydevicePostRequestbodyContentApplicationJsonSchema
@@ -251,7 +265,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsD7TdnyDevicemanagementReportsMicrosoftGraphGetenrollmentconfigurationpoliciesbydevicePostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsD7TdnyDevicemanagementReportsMicrosoftGraphGetenrollmentconfigurationpoliciesbydevicePostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### System.Boolean
@@ -264,7 +278,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsD7TdnyDevicemanagementReportsMicrosoftGraphGetenrollmentconfigurationpoliciesbydevicePostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsD7TdnyDevicemanagementReportsMicrosoftGraphGetenrollmentconfigurationpoliciesbydevicePostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Filter <String>]`: 
   - `[GroupBy <String[]>]`: 

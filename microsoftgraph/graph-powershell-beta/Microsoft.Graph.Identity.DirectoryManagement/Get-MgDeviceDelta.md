@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevicedelta
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadevicedelta
 schema: 2.0.0
 ---
 
-# Get-MgDeviceDelta
+# Get-MgBetaDeviceDelta
 
 ## SYNOPSIS
 Invoke function delta
@@ -13,7 +13,7 @@ Invoke function delta
 ## SYNTAX
 
 ```
-Get-MgDeviceDelta [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
+Get-MgBetaDeviceDelta [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
  [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
@@ -21,6 +21,20 @@ Get-MgDeviceDelta [-Filter <String>] [-Property <String[]>] [-Search <String>] [
 Invoke function delta
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -167,7 +181,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDevice1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDevice
 ## NOTES
 
 ALIASES

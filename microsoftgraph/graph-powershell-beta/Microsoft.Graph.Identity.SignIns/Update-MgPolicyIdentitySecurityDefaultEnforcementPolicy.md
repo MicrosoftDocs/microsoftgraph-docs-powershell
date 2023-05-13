@@ -1,12 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgpolicyidentitysecuritydefaultenforcementpolicy
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyidentitysecuritydefaultenforcementpolicy
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
-# Update-MgPolicyIdentitySecurityDefaultEnforcementPolicy
+# Update-MgBetaPolicyIdentitySecurityDefaultEnforcementPolicy
 
 ## SYNOPSIS
 Update the properties of an identitySecurityDefaultsEnforcementPolicy object.
@@ -15,15 +14,15 @@ Update the properties of an identitySecurityDefaultsEnforcementPolicy object.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgPolicyIdentitySecurityDefaultEnforcementPolicy [-AdditionalProperties <Hashtable>]
+Update-MgBetaPolicyIdentitySecurityDefaultEnforcementPolicy [-AdditionalProperties <Hashtable>]
  [-DeletedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>] [-IsEnabled]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgPolicyIdentitySecurityDefaultEnforcementPolicy
- -BodyParameter <IMicrosoftGraphIdentitySecurityDefaultsEnforcementPolicy1> [-PassThru] [-WhatIf] [-Confirm]
+Update-MgBetaPolicyIdentitySecurityDefaultEnforcementPolicy
+ -BodyParameter <IMicrosoftGraphIdentitySecurityDefaultsEnforcementPolicy> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -32,17 +31,14 @@ Update the properties of an identitySecurityDefaultsEnforcementPolicy object.
 
 ## EXAMPLES
 
-### Example 1: Using the Update-MgPolicyIdentitySecurityDefaultEnforcementPolicy Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
 	IsEnabled = $false
 }
-Update-MgPolicyIdentitySecurityDefaultEnforcementPolicy -BodyParameter $params
+Update-MgBetaPolicyIdentitySecurityDefaultEnforcementPolicy -BodyParameter $params
 ```
-
-This example shows how to use the Update-MgPolicyIdentitySecurityDefaultEnforcementPolicy Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -63,10 +59,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 identitySecurityDefaultsEnforcementPolicy
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySecurityDefaultsEnforcementPolicy1
+Type: IMicrosoftGraphIdentitySecurityDefaultsEnforcementPolicy
 Parameter Sets: Update
 Aliases:
 
@@ -126,7 +122,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -147,21 +143,6 @@ If set to true, Azure Active Directory security defaults is enabled for the tena
 ```yaml
 Type: SwitchParameter
 Parameter Sets: UpdateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -207,10 +188,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentitySecurityDefaultsEnforcementPolicy1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentitySecurityDefaultsEnforcementPolicy
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentitySecurityDefaultsEnforcementPolicy
 ## NOTES
 
 ALIASES
@@ -220,12 +201,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphIdentitySecurityDefaultsEnforcementPolicy1>`: identitySecurityDefaultsEnforcementPolicy
+`BODYPARAMETER <IMicrosoftGraphIdentitySecurityDefaultsEnforcementPolicy>`: identitySecurityDefaultsEnforcementPolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Description <String>]`: Description for this policy. Required.
   - `[DisplayName <String>]`: Display name for this policy. Required.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[IsEnabled <Boolean?>]`: If set to true, Azure Active Directory security defaults is enabled for the tenant.
 
 ## RELATED LINKS

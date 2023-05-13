@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Education-help.xml
-Module Name: Microsoft.Graph.Education
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/get-mgeducationschooldelta
+﻿---
+external help file: Microsoft.Graph.Beta.Education-help.xml
+Module Name: Microsoft.Graph.Beta.Education
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationschooldelta
 schema: 2.0.0
 ---
 
-# Get-MgEducationSchoolDelta
+# Get-MgBetaEducationSchoolDelta
 
 ## SYNOPSIS
 Invoke function delta
@@ -13,7 +13,7 @@ Invoke function delta
 ## SYNTAX
 
 ```
-Get-MgEducationSchoolDelta [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
+Get-MgBetaEducationSchoolDelta [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
  [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
@@ -22,14 +22,11 @@ Invoke function delta
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgEducationSchoolDelta Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Education
-Get-MgEducationSchoolDelta
+Import-Module Microsoft.Graph.Beta.Education
+Get-MgBetaEducationSchoolDelta
 ```
-
-This example shows how to use the Get-MgEducationSchoolDelta Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -176,7 +173,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationSchool
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationSchool
 ## NOTES
 
 ALIASES

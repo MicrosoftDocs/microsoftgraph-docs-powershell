@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgquerydevicemanagementresourceaccessprofilebyplatformtype
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetaquerydevicemanagementresourceaccessprofilebyplatformtype
 schema: 2.0.0
 ---
 
-# Invoke-MgQueryDeviceManagementResourceAccessProfileByPlatformType
+# Invoke-MgBetaQueryDeviceManagementResourceAccessProfileByPlatformType
 
 ## SYNOPSIS
 Invoke action queryByPlatformType
@@ -14,14 +14,14 @@ Invoke action queryByPlatformType
 
 ### QueryExpanded (Default)
 ```
-Invoke-MgQueryDeviceManagementResourceAccessProfileByPlatformType [-AdditionalProperties <Hashtable>]
+Invoke-MgBetaQueryDeviceManagementResourceAccessProfileByPlatformType [-AdditionalProperties <Hashtable>]
  [-PlatformType <PolicyPlatformType>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Query
 ```
-Invoke-MgQueryDeviceManagementResourceAccessProfileByPlatformType
- -BodyParameter <IPaths1Aw4396DevicemanagementResourceaccessprofilesMicrosoftGraphQuerybyplatformtypePostRequestbodyContentApplicationJsonSchema>
+Invoke-MgBetaQueryDeviceManagementResourceAccessProfileByPlatformType
+ -Body <IPaths1Aw4396DevicemanagementResourceaccessprofilesMicrosoftGraphQuerybyplatformtypePostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -29,6 +29,20 @@ Invoke-MgQueryDeviceManagementResourceAccessProfileByPlatformType
 Invoke action queryByPlatformType
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -47,9 +61,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -BodyParameter
+### -Body
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
 Type: IPaths1Aw4396DevicemanagementResourceaccessprofilesMicrosoftGraphQuerybyplatformtypePostRequestbodyContentApplicationJsonSchema
@@ -114,10 +128,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1Aw4396DevicemanagementResourceaccessprofilesMicrosoftGraphQuerybyplatformtypePostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Aw4396DevicemanagementResourceaccessprofilesMicrosoftGraphQuerybyplatformtypePostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementResourceAccessProfileBase
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementResourceAccessProfileBase
 ## NOTES
 
 ALIASES
@@ -127,7 +141,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Aw4396DevicemanagementResourceaccessprofilesMicrosoftGraphQuerybyplatformtypePostRequestbodyContentApplicationJsonSchema>`: .
+`BODY <IPaths1Aw4396DevicemanagementResourceaccessprofilesMicrosoftGraphQuerybyplatformtypePostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[PlatformType <PolicyPlatformType?>]`: Supported platform types for policies.
 

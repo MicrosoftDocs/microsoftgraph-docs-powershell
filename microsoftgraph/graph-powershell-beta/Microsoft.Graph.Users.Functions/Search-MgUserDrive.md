@@ -1,34 +1,49 @@
----
-external help file: Microsoft.Graph.Users.Functions-help.xml
-Module Name: Microsoft.Graph.Users.Functions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/search-mguserdrive
+﻿---
+external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
+Module Name: Microsoft.Graph.Beta.Users.Functions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/search-mgbetauserdrive
 schema: 2.0.0
 ---
 
-# Search-MgUserDrive
+# Search-MgBetaUserDrive
 
 ## SYNOPSIS
 Invoke function search
 
 ## SYNTAX
 
-### Search1 (Default)
+### Search (Default)
 ```
-Search-MgUserDrive -DriveId <String> -Q <String> -UserId <String> [-Count] [-Filter <String>]
+Search-MgBetaUserDrive -DriveId <String> -Q <String> -UserId <String> [-Count] [-Filter <String>]
  [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [<CommonParameters>]
 ```
 
-### SearchViaIdentity1
+### SearchViaIdentity
 ```
-Search-MgUserDrive -InputObject <IUsersFunctionsIdentity> [-Count] [-Filter <String>] [-Property <String[]>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
+Search-MgBetaUserDrive -InputObject <IUsersFunctionsIdentity> [-Count] [-Filter <String>]
+ [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke function search
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -52,7 +67,7 @@ The unique identifier of drive
 
 ```yaml
 Type: String
-Parameter Sets: Search1
+Parameter Sets: Search
 Aliases:
 
 Required: True
@@ -79,11 +94,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersFunctionsIdentity
-Parameter Sets: SearchViaIdentity1
+Parameter Sets: SearchViaIdentity
 Aliases:
 
 Required: True
@@ -113,7 +128,7 @@ Usage: q='{q}'
 
 ```yaml
 Type: String
-Parameter Sets: Search1
+Parameter Sets: Search
 Aliases:
 
 Required: True
@@ -173,7 +188,7 @@ The unique identifier of user
 
 ```yaml
 Type: String
-Parameter Sets: Search1
+Parameter Sets: Search
 Aliases:
 
 Required: True
@@ -203,10 +218,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersFunctionsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDriveItem1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDriveItem
 ## NOTES
 
 ALIASES
@@ -216,7 +231,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersFunctionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AppConsentRequestId <String>]`: The unique identifier of appConsentRequest
   - `[CalendarId <String>]`: The unique identifier of calendar
@@ -228,8 +243,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[DriveId <String>]`: The unique identifier of drive
   - `[DriveItemId <String>]`: The unique identifier of driveItem
-  - `[EndDateTime <String>]`: Usage: EndDateTime='{EndDateTime}'
-  - `[EndDateTime1 <String>]`: Usage: endDateTime='{endDateTime}'
+  - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
   - `[EventId <String>]`: The unique identifier of event
   - `[GroupId <String>]`: Usage: groupId='{groupId}'
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
@@ -240,15 +254,14 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
   - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
   - `[On <String>]`: Usage: on='{on}'
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
+  - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
   - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket
   - `[PlannerPlanId <String>]`: The unique identifier of plannerPlan
   - `[Q <String>]`: Usage: q='{q}'
   - `[RoomList <String>]`: Usage: RoomList='{RoomList}'
   - `[ServicePlanId <String>]`: Usage: servicePlanId='{servicePlanId}'
-  - `[SessionKey <String>]`: Usage: sessionKey='{sessionKey}'
   - `[Skip <Int32?>]`: Usage: skip={skip}
-  - `[StartDateTime <String>]`: Usage: StartDateTime='{StartDateTime}'
-  - `[StartDateTime1 <String>]`: Usage: startDateTime='{startDateTime}'
+  - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
   - `[TimeZoneStandard <String>]`: Usage: TimeZoneStandard='{TimeZoneStandard}'
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
   - `[Token <String>]`: Usage: token='{token}'

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintservice
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintservice
 schema: 2.0.0
-ms.prod: cloud-printing
 ---
 
 # New-MgPrintService
@@ -15,7 +14,7 @@ Create new navigation property to services for print
 
 ### CreateExpanded (Default)
 ```
-New-MgPrintService [-AdditionalProperties <Hashtable>] [-Endpoints <IMicrosoftGraphPrintServiceEndpoint1[]>]
+New-MgPrintService [-AdditionalProperties <Hashtable>] [-Endpoints <IMicrosoftGraphPrintServiceEndpoint[]>]
  [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -29,16 +28,12 @@ Create new navigation property to services for print
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Devices.CloudPrint
-
-Get-MgPrintService
 ```
 
-This example shows how to use the New-MgPrintService Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Get-MgPrintService
 
 ## PARAMETERS
 
@@ -59,7 +54,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 printService
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPrintService
@@ -77,10 +72,10 @@ Accept wildcard characters: False
 Endpoints that can be used to access the service.
 Read-only.
 Nullable.
-To construct, please use Get-Help -Online and see NOTES section for ENDPOINTS properties and create a hash table.
+To construct, see NOTES section for ENDPOINTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrintServiceEndpoint1[]
+Type: IMicrosoftGraphPrintServiceEndpoint[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -156,15 +151,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPrintService>`: printService
+`BODYPARAMETER <IMicrosoftGraphPrintService>`: printService
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[Endpoints <IMicrosoftGraphPrintServiceEndpoint1[]>]`: Endpoints that can be used to access the service. Read-only. Nullable.
+  - `[Endpoints <IMicrosoftGraphPrintServiceEndpoint[]>]`: Endpoints that can be used to access the service. Read-only. Nullable.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[DisplayName <String>]`: A human-readable display name for the endpoint.
     - `[Uri <String>]`: The URI that can be used to access the service.
 
-ENDPOINTS <IMicrosoftGraphPrintServiceEndpoint1\[]>: Endpoints that can be used to access the service. Read-only. Nullable.
+`ENDPOINTS <IMicrosoftGraphPrintServiceEndpoint[]>`: Endpoints that can be used to access the service. Read-only. Nullable.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DisplayName <String>]`: A human-readable display name for the endpoint.
   - `[Uri <String>]`: The URI that can be used to access the service.

@@ -1,12 +1,11 @@
----
-external help file: Microsoft.Graph.Calendar-help.xml
-Module Name: Microsoft.Graph.Calendar
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/get-mguserdefaultcalendar
+﻿---
+external help file: Microsoft.Graph.Beta.Calendar-help.xml
+Module Name: Microsoft.Graph.Beta.Calendar
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetauserdefaultcalendar
 schema: 2.0.0
-ms.prod: outlook
 ---
 
-# Get-MgUserDefaultCalendar
+# Get-MgBetaUserDefaultCalendar
 
 ## SYNOPSIS
 Get the properties and relationships of a calendar object.
@@ -17,12 +16,12 @@ There are two scenarios where an app can get another user's calendar:
 
 ### Get (Default)
 ```
-Get-MgUserDefaultCalendar -UserId <String> [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaUserDefaultCalendar -UserId <String> [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgUserDefaultCalendar -InputObject <ICalendarIdentity> [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaUserDefaultCalendar -InputObject <ICalendarIdentity> [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -32,21 +31,18 @@ There are two scenarios where an app can get another user's calendar:
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgUserDefaultCalendar Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Calendar
+Import-Module Microsoft.Graph.Beta.Calendar
 # A UPN can also be used as -UserId.
-Get-MgUserDefaultCalendar -UserId $userId
+Get-MgBetaUserDefaultCalendar -UserId $userId
 ```
-
-This example shows how to use the Get-MgUserDefaultCalendar Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ICalendarIdentity
@@ -95,10 +91,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ICalendarIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCalendar1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCalendar
 ## NOTES
 
 ALIASES
@@ -108,7 +104,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+`INPUTOBJECT <ICalendarIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[CalendarGroupId <String>]`: The unique identifier of calendarGroup
   - `[CalendarId <String>]`: The unique identifier of calendar
@@ -118,9 +114,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[EventId2 <String>]`: The unique identifier of event
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[GroupId <String>]`: The unique identifier of group
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
   - `[PlaceId <String>]`: The unique identifier of place
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS

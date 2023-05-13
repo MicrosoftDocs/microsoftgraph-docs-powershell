@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryfeaturerolloutpolicyapplytobyid
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryfeaturerolloutpolicyapplytobyid
 schema: 2.0.0
 ---
 
-# Get-MgDirectoryFeatureRolloutPolicyApplyToById
+# Get-MgBetaDirectoryFeatureRolloutPolicyApplyToById
 
 ## SYNOPSIS
 Return the directory objects specified in a list of IDs.
@@ -15,28 +15,28 @@ Some common uses for this function are to:
 
 ### GetExpanded (Default)
 ```
-Get-MgDirectoryFeatureRolloutPolicyApplyToById -FeatureRolloutPolicyId <String>
+Get-MgBetaDirectoryFeatureRolloutPolicyApplyToById -FeatureRolloutPolicyId <String>
  [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-Types <String[]>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgDirectoryFeatureRolloutPolicyApplyToById -FeatureRolloutPolicyId <String>
+Get-MgBetaDirectoryFeatureRolloutPolicyApplyToById -FeatureRolloutPolicyId <String>
  -BodyParameter <IPaths1Kje0C3DirectoryFeaturerolloutpoliciesFeaturerolloutpolicyIdAppliestoMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### GetViaIdentityExpanded
 ```
-Get-MgDirectoryFeatureRolloutPolicyApplyToById -InputObject <IIdentityDirectoryManagementIdentity>
+Get-MgBetaDirectoryFeatureRolloutPolicyApplyToById -InputObject <IIdentityDirectoryManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-Types <String[]>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgDirectoryFeatureRolloutPolicyApplyToById -InputObject <IIdentityDirectoryManagementIdentity>
+Get-MgBetaDirectoryFeatureRolloutPolicyApplyToById -InputObject <IIdentityDirectoryManagementIdentity>
  -BodyParameter <IPaths1Kje0C3DirectoryFeaturerolloutpoliciesFeaturerolloutpolicyIdAppliestoMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -46,6 +46,20 @@ Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -66,7 +80,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths1Kje0C3DirectoryFeaturerolloutpoliciesFeaturerolloutpolicyIdAppliestoMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema
@@ -112,7 +126,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IIdentityDirectoryManagementIdentity
@@ -177,11 +191,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths1Kje0C3DirectoryFeaturerolloutpoliciesFeaturerolloutpolicyIdAppliestoMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Kje0C3DirectoryFeaturerolloutpoliciesFeaturerolloutpolicyIdAppliestoMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryObject
 ## NOTES
 
 ALIASES
@@ -191,12 +205,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Kje0C3DirectoryFeaturerolloutpoliciesFeaturerolloutpolicyIdAppliestoMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1Kje0C3DirectoryFeaturerolloutpoliciesFeaturerolloutpolicyIdAppliestoMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Ids <String[]>]`: 
   - `[Types <String[]>]`: 
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet

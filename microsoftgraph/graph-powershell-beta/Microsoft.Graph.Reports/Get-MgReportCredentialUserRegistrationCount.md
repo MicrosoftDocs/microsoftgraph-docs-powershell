@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Reports-help.xml
-Module Name: Microsoft.Graph.Reports
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgreportcredentialuserregistrationcount
+﻿---
+external help file: Microsoft.Graph.Beta.Reports-help.xml
+Module Name: Microsoft.Graph.Beta.Reports
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportcredentialuserregistrationcount
 schema: 2.0.0
 ---
 
-# Get-MgReportCredentialUserRegistrationCount
+# Get-MgBetaReportCredentialUserRegistrationCount
 
 ## SYNOPSIS
 Report the current state of how many users in your organization are registered for self-service password reset and multi-factor authentication (MFA) capabilities.
@@ -13,7 +13,7 @@ Report the current state of how many users in your organization are registered f
 ## SYNTAX
 
 ```
-Get-MgReportCredentialUserRegistrationCount [-Count] [-Filter <String>] [-Property <String[]>]
+Get-MgBetaReportCredentialUserRegistrationCount [-Count] [-Filter <String>] [-Property <String[]>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
 ```
 
@@ -22,14 +22,11 @@ Report the current state of how many users in your organization are registered f
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgReportCredentialUserRegistrationCount Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Reports
-Get-MgReportCredentialUserRegistrationCount
+Import-Module Microsoft.Graph.Beta.Reports
+Get-MgBetaReportCredentialUserRegistrationCount
 ```
-
-This example shows how to use the Get-MgReportCredentialUserRegistrationCount Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -145,7 +142,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCredentialUserRegistrationCount
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCredentialUserRegistrationCount
 ## NOTES
 
 ALIASES

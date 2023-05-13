@@ -1,7 +1,7 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mgteamworkdeletedteammessage
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamworkdeletedteammessage
 schema: 2.0.0
 ---
 
@@ -21,6 +21,16 @@ Get-MgTeamworkDeletedTeamMessage [-Count] [-Filter <String>] [-Property <String[
 Invoke function getAllMessages
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 

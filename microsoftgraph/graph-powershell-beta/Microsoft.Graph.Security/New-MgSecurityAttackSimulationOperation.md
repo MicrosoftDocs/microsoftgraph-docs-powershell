@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/new-mgsecurityattacksimulationoperation
+﻿---
+external help file: Microsoft.Graph.Beta.Security-help.xml
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationoperation
 schema: 2.0.0
 ---
 
-# New-MgSecurityAttackSimulationOperation
+# New-MgBetaSecurityAttackSimulationOperation
 
 ## SYNOPSIS
 Create new navigation property to operations for security
@@ -14,7 +14,7 @@ Create new navigation property to operations for security
 
 ### CreateExpanded (Default)
 ```
-New-MgSecurityAttackSimulationOperation [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
+New-MgBetaSecurityAttackSimulationOperation [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
  [-Id <String>] [-LastActionDateTime <DateTime>] [-PercentageCompleted <Int32>] [-ResourceLocation <String>]
  [-Status <String>] [-StatusDetail <String>] [-TenantId <String>] [-Type <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -22,7 +22,7 @@ New-MgSecurityAttackSimulationOperation [-AdditionalProperties <Hashtable>] [-Cr
 
 ### Create
 ```
-New-MgSecurityAttackSimulationOperation -BodyParameter <IMicrosoftGraphAttackSimulationOperation> [-WhatIf]
+New-MgBetaSecurityAttackSimulationOperation -BodyParameter <IMicrosoftGraphAttackSimulationOperation> [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -30,6 +30,16 @@ New-MgSecurityAttackSimulationOperation -BodyParameter <IMicrosoftGraphAttackSim
 Create new navigation property to operations for security
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -50,7 +60,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 attackSimulationOperation
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAttackSimulationOperation
@@ -82,7 +92,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -240,10 +250,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttackSimulationOperation
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAttackSimulationOperation
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttackSimulationOperation
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAttackSimulationOperation
 ## NOTES
 
 ALIASES
@@ -253,14 +263,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphAttackSimulationOperation>`: attackSimulationOperation
+`BODYPARAMETER <IMicrosoftGraphAttackSimulationOperation>`: attackSimulationOperation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CreatedDateTime <DateTime?>]`: The start time of the operation. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[LastActionDateTime <DateTime?>]`: The time of the last action in the operation. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[ResourceLocation <String>]`: URI of the resource that the operation is performed on.
   - `[Status <String>]`: longRunningOperationStatus
   - `[StatusDetail <String>]`: Details about the status of the operation.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[PercentageCompleted <Int32?>]`: Percentage of completion of the respective operation.
   - `[TenantId <String>]`: Tenant identifier.
   - `[Type <String>]`: attackSimulationOperationType

@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.CrossDeviceExperiences-help.xml
-Module Name: Microsoft.Graph.CrossDeviceExperiences
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.crossdeviceexperiences/new-mguserdeviceextension
+﻿---
+external help file: Microsoft.Graph.Beta.CrossDeviceExperiences-help.xml
+Module Name: Microsoft.Graph.Beta.CrossDeviceExperiences
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/new-mgbetauserdeviceextension
 schema: 2.0.0
 ---
 
-# New-MgUserDeviceExtension
+# New-MgBetaUserDeviceExtension
 
 ## SYNOPSIS
 Create new navigation property to extensions for users
@@ -14,32 +14,46 @@ Create new navigation property to extensions for users
 
 ### CreateExpanded (Default)
 ```
-New-MgUserDeviceExtension -DeviceId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
+New-MgBetaUserDeviceExtension -DeviceId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
  [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgUserDeviceExtension -DeviceId <String> -UserId <String> -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaUserDeviceExtension -DeviceId <String> -UserId <String> -BodyParameter <Hashtable> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgUserDeviceExtension -InputObject <ICrossDeviceExperiencesIdentity> [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaUserDeviceExtension -InputObject <ICrossDeviceExperiencesIdentity>
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgUserDeviceExtension -InputObject <ICrossDeviceExperiencesIdentity> -BodyParameter <Hashtable> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaUserDeviceExtension -InputObject <ICrossDeviceExperiencesIdentity> -BodyParameter <Hashtable>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to extensions for users
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -89,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -106,7 +120,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ICrossDeviceExperiencesIdentity
@@ -171,7 +185,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ICrossDeviceExperiencesIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ICrossDeviceExperiencesIdentity
 ### System.Collections.Hashtable
 ## OUTPUTS
 
@@ -185,7 +199,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
+`INPUTOBJECT <ICrossDeviceExperiencesIdentity>`: Identity Parameter
   - `[ActivityHistoryItemId <String>]`: The unique identifier of activityHistoryItem
   - `[CommandId <String>]`: The unique identifier of command
   - `[DeviceId <String>]`: The unique identifier of device

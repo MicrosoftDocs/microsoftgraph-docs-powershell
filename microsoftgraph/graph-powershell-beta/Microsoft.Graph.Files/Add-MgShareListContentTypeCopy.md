@@ -1,39 +1,39 @@
----
-external help file: Microsoft.Graph.Files-help.xml
-Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/add-mgsharelistcontenttypecopy
+﻿---
+external help file: Microsoft.Graph.Beta.Files-help.xml
+Module Name: Microsoft.Graph.Beta.Files
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/add-mgbetasharelistcontenttypecopy
 schema: 2.0.0
 ---
 
-# Add-MgShareListContentTypeCopy
+# Add-MgBetaShareListContentTypeCopy
 
 ## SYNOPSIS
 Add a copy of a [content type][contentType] from a [site][site] to a [list][list].
 
 ## SYNTAX
 
-### AddExpanded1 (Default)
+### AddExpanded (Default)
 ```
-Add-MgShareListContentTypeCopy -SharedDriveItemId <String> [-AdditionalProperties <Hashtable>]
+Add-MgBetaShareListContentTypeCopy -SharedDriveItemId <String> [-AdditionalProperties <Hashtable>]
  [-ContentType <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Add1
+### Add
 ```
-Add-MgShareListContentTypeCopy -SharedDriveItemId <String>
+Add-MgBetaShareListContentTypeCopy -SharedDriveItemId <String>
  -BodyParameter <IPaths1Bpb7SxSharesShareddriveitemIdListContenttypesMicrosoftGraphAddcopyPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### AddViaIdentityExpanded1
+### AddViaIdentityExpanded
 ```
-Add-MgShareListContentTypeCopy -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
+Add-MgBetaShareListContentTypeCopy -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
  [-ContentType <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### AddViaIdentity1
+### AddViaIdentity
 ```
-Add-MgShareListContentTypeCopy -InputObject <IFilesIdentity>
+Add-MgBetaShareListContentTypeCopy -InputObject <IFilesIdentity>
  -BodyParameter <IPaths1Bpb7SxSharesShareddriveitemIdListContenttypesMicrosoftGraphAddcopyPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -43,6 +43,20 @@ Add a copy of a [content type][contentType] from a [site][site] to a [list][list
 
 ## EXAMPLES
 
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -50,7 +64,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: AddExpanded1, AddViaIdentityExpanded1
+Parameter Sets: AddExpanded, AddViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -62,11 +76,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths1Bpb7SxSharesShareddriveitemIdListContenttypesMicrosoftGraphAddcopyPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Add1, AddViaIdentity1
+Parameter Sets: Add, AddViaIdentity
 Aliases:
 
 Required: True
@@ -81,7 +95,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: AddExpanded1, AddViaIdentityExpanded1
+Parameter Sets: AddExpanded, AddViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -93,11 +107,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IFilesIdentity
-Parameter Sets: AddViaIdentityExpanded1, AddViaIdentity1
+Parameter Sets: AddViaIdentityExpanded, AddViaIdentity
 Aliases:
 
 Required: True
@@ -112,7 +126,7 @@ The unique identifier of sharedDriveItem
 
 ```yaml
 Type: String
-Parameter Sets: AddExpanded1, Add1
+Parameter Sets: AddExpanded, Add
 Aliases:
 
 Required: True
@@ -158,11 +172,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths1Bpb7SxSharesShareddriveitemIdListContenttypesMicrosoftGraphAddcopyPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Bpb7SxSharesShareddriveitemIdListContenttypesMicrosoftGraphAddcopyPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContentType1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphContentType
 ## NOTES
 
 ALIASES
@@ -172,11 +186,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Bpb7SxSharesShareddriveitemIdListContenttypesMicrosoftGraphAddcopyPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1Bpb7SxSharesShareddriveitemIdListContenttypesMicrosoftGraphAddcopyPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ContentType <String>]`: 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+`INPUTOBJECT <IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType

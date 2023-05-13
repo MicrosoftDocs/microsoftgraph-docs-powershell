@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/export-mgsecuritycaseediscoverycasereviewset
+﻿---
+external help file: Microsoft.Graph.Beta.Security-help.xml
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/export-mgbetasecuritycaseediscoverycasereviewset
 schema: 2.0.0
 ---
 
-# Export-MgSecurityCaseEdiscoveryCaseReviewSet
+# Export-MgBetaSecurityCaseEdiscoveryCaseReviewSet
 
 ## SYNOPSIS
 Initiate an export from a **reviewSet**.
@@ -15,7 +15,7 @@ For details, see Export documents from a review set in eDiscovery (Premium).
 
 ### ExportExpanded (Default)
 ```
-Export-MgSecurityCaseEdiscoveryCaseReviewSet -EdiscoveryCaseId <String> -EdiscoveryReviewSetId <String>
+Export-MgBetaSecurityCaseEdiscoveryCaseReviewSet -EdiscoveryCaseId <String> -EdiscoveryReviewSetId <String>
  [-AdditionalProperties <Hashtable>] [-AzureBlobContainer <String>] [-AzureBlobToken <String>]
  [-Description <String>] [-ExportOptions <String>] [-ExportStructure <String>] [-OutputName <String>]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -23,14 +23,14 @@ Export-MgSecurityCaseEdiscoveryCaseReviewSet -EdiscoveryCaseId <String> -Ediscov
 
 ### Export
 ```
-Export-MgSecurityCaseEdiscoveryCaseReviewSet -EdiscoveryCaseId <String> -EdiscoveryReviewSetId <String>
+Export-MgBetaSecurityCaseEdiscoveryCaseReviewSet -EdiscoveryCaseId <String> -EdiscoveryReviewSetId <String>
  -BodyParameter <IPathsZvgmw9SecurityCasesEdiscoverycasesEdiscoverycaseIdReviewsetsEdiscoveryreviewsetIdMicrosoftGraphSecurityExportPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ExportViaIdentityExpanded
 ```
-Export-MgSecurityCaseEdiscoveryCaseReviewSet -InputObject <ISecurityIdentity>
+Export-MgBetaSecurityCaseEdiscoveryCaseReviewSet -InputObject <ISecurityIdentity>
  [-AdditionalProperties <Hashtable>] [-AzureBlobContainer <String>] [-AzureBlobToken <String>]
  [-Description <String>] [-ExportOptions <String>] [-ExportStructure <String>] [-OutputName <String>]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -38,7 +38,7 @@ Export-MgSecurityCaseEdiscoveryCaseReviewSet -InputObject <ISecurityIdentity>
 
 ### ExportViaIdentity
 ```
-Export-MgSecurityCaseEdiscoveryCaseReviewSet -InputObject <ISecurityIdentity>
+Export-MgBetaSecurityCaseEdiscoveryCaseReviewSet -InputObject <ISecurityIdentity>
  -BodyParameter <IPathsZvgmw9SecurityCasesEdiscoverycasesEdiscoverycaseIdReviewsetsEdiscoveryreviewsetIdMicrosoftGraphSecurityExportPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -49,20 +49,17 @@ For details, see Export documents from a review set in eDiscovery (Premium).
 
 ## EXAMPLES
 
-### Example 1: Using the Export-MgSecurityCaseEdiscoveryCaseReviewSet Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Security
+Import-Module Microsoft.Graph.Beta.Security
 $params = @{
 	OutputName = "Export via API"
 	Description = "Export for the Contoso investigation"
 	ExportOptions = "originalFiles,fileInfo,tags"
 	ExportStructure = "directory"
 }
-Export-MgSecurityCaseEdiscoveryCaseReviewSet -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryReviewSetId $ediscoveryReviewSetId -BodyParameter $params
+Export-MgBetaSecurityCaseEdiscoveryCaseReviewSet -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryReviewSetId $ediscoveryReviewSetId -BodyParameter $params
 ```
-
-This example shows how to use the Export-MgSecurityCaseEdiscoveryCaseReviewSet Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -113,7 +110,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPathsZvgmw9SecurityCasesEdiscoverycasesEdiscoverycaseIdReviewsetsEdiscoveryreviewsetIdMicrosoftGraphSecurityExportPostRequestbodyContentApplicationJsonSchema
@@ -204,7 +201,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ISecurityIdentity
@@ -284,8 +281,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsZvgmw9SecurityCasesEdiscoverycasesEdiscoverycaseIdReviewsetsEdiscoveryreviewsetIdMicrosoftGraphSecurityExportPostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsZvgmw9SecurityCasesEdiscoverycasesEdiscoverycaseIdReviewsetsEdiscoveryreviewsetIdMicrosoftGraphSecurityExportPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
 ## OUTPUTS
 
 ### System.Boolean
@@ -298,7 +295,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsZvgmw9SecurityCasesEdiscoverycasesEdiscoverycaseIdReviewsetsEdiscoveryreviewsetIdMicrosoftGraphSecurityExportPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsZvgmw9SecurityCasesEdiscoverycasesEdiscoverycaseIdReviewsetsEdiscoveryreviewsetIdMicrosoftGraphSecurityExportPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AzureBlobContainer <String>]`: 
   - `[AzureBlobToken <String>]`: 
@@ -307,7 +304,7 @@ BODYPARAMETER `<IPathsZvgmw9SecurityCasesEdiscoverycasesEdiscoverycaseIdReviewse
   - `[ExportStructure <String>]`: exportFileStructure
   - `[OutputName <String>]`: 
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+`INPUTOBJECT <ISecurityIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
   - `[ArticleId <String>]`: The unique identifier of article
   - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator

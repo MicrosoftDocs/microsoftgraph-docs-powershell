@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Sites-help.xml
-Module Name: Microsoft.Graph.Sites
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/update-mggroupsiteinformationprotectionpolicylabel
+﻿---
+external help file: Microsoft.Graph.Beta.Sites-help.xml
+Module Name: Microsoft.Graph.Beta.Sites
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsiteinformationprotectionpolicylabel
 schema: 2.0.0
 ---
 
-# Update-MgGroupSiteInformationProtectionPolicyLabel
+# Update-MgBetaGroupSiteInformationProtectionPolicyLabel
 
 ## SYNOPSIS
 Update the navigation property labels in groups
@@ -14,38 +14,47 @@ Update the navigation property labels in groups
 
 ### UpdateExpanded (Default)
 ```
-Update-MgGroupSiteInformationProtectionPolicyLabel -GroupId <String> -InformationProtectionLabelId <String>
+Update-MgBetaGroupSiteInformationProtectionPolicyLabel -GroupId <String> -InformationProtectionLabelId <String>
  -SiteId <String> [-AdditionalProperties <Hashtable>] [-Color <String>] [-Description <String>] [-Id <String>]
  [-IsActive] [-Name <String>] [-Parent <IMicrosoftGraphParentLabelDetails>] [-Sensitivity <Int32>]
- [-Tooltip <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Tooltip <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgGroupSiteInformationProtectionPolicyLabel -GroupId <String> -InformationProtectionLabelId <String>
- -SiteId <String> -BodyParameter <IMicrosoftGraphInformationProtectionLabel> [-PassThru] [-WhatIf] [-Confirm]
+Update-MgBetaGroupSiteInformationProtectionPolicyLabel -GroupId <String> -InformationProtectionLabelId <String>
+ -SiteId <String> -BodyParameter <IMicrosoftGraphInformationProtectionLabel> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgGroupSiteInformationProtectionPolicyLabel -InputObject <ISitesIdentity>
+Update-MgBetaGroupSiteInformationProtectionPolicyLabel -InputObject <ISitesIdentity>
  [-AdditionalProperties <Hashtable>] [-Color <String>] [-Description <String>] [-Id <String>] [-IsActive]
  [-Name <String>] [-Parent <IMicrosoftGraphParentLabelDetails>] [-Sensitivity <Int32>] [-Tooltip <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgGroupSiteInformationProtectionPolicyLabel -InputObject <ISitesIdentity>
- -BodyParameter <IMicrosoftGraphInformationProtectionLabel> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaGroupSiteInformationProtectionPolicyLabel -InputObject <ISitesIdentity>
+ -BodyParameter <IMicrosoftGraphInformationProtectionLabel> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property labels in groups
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -66,7 +75,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 informationProtectionLabel
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphInformationProtectionLabel
@@ -126,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -158,7 +167,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ISitesIdentity
@@ -205,26 +214,11 @@ Accept wildcard characters: False
 
 ### -Parent
 parentLabelDetails
-To construct, please use Get-Help -Online and see NOTES section for PARENT properties and create a hash table.
+To construct, see NOTES section for PARENT properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphParentLabelDetails
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -315,11 +309,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInformationProtectionLabel
-### Microsoft.Graph.PowerShell.Models.ISitesIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInformationProtectionLabel
+### Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInformationProtectionLabel
 ## NOTES
 
 ALIASES
@@ -329,9 +323,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphInformationProtectionLabel>`: informationProtectionLabel
+`BODYPARAMETER <IMicrosoftGraphInformationProtectionLabel>`: informationProtectionLabel
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Color <String>]`: The color that the UI should display for the label, if configured.
   - `[Description <String>]`: The admin-defined description for the label.
   - `[IsActive <Boolean?>]`: Indicates whether the label is active or not. Active labels should be hidden or disabled in UI.
@@ -349,7 +343,7 @@ BODYPARAMETER `<IMicrosoftGraphInformationProtectionLabel>`: informationProtecti
   - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
   - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a UI.
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+`INPUTOBJECT <ISitesIdentity>`: Identity Parameter
   - `[BaseItemId <String>]`: The unique identifier of baseItem
   - `[BitlockerRecoveryKeyId <String>]`: The unique identifier of bitlockerRecoveryKey
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
@@ -367,17 +361,23 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
   - `[Interval <String>]`: Usage: interval='{interval}'
+  - `[ItemActivityId <String>]`: The unique identifier of itemActivity
+  - `[ItemActivityOldId <String>]`: The unique identifier of itemActivityOLD
+  - `[ItemActivityStatId <String>]`: The unique identifier of itemActivityStat
   - `[ListId <String>]`: The unique identifier of list
-  - `[ListId1 <String>]`: Usage: listId='{listId}'
   - `[ListItemId <String>]`: The unique identifier of listItem
   - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
   - `[NotebookId <String>]`: The unique identifier of notebook
+  - `[OnenoteOperationId <String>]`: The unique identifier of onenoteOperation
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
+  - `[OnenoteResourceId <String>]`: The unique identifier of onenoteResource
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
   - `[Path <String>]`: Usage: path='{path}'
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[RelationId <String>]`: The unique identifier of relation
   - `[RichLongRunningOperationId <String>]`: The unique identifier of richLongRunningOperation
+  - `[SectionGroupId <String>]`: The unique identifier of sectionGroup
+  - `[SectionGroupId1 <String>]`: The unique identifier of sectionGroup
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SensitivityLabelId1 <String>]`: The unique identifier of sensitivityLabel
   - `[SetId <String>]`: The unique identifier of set
@@ -386,7 +386,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SiteId1 <String>]`: The unique identifier of site
   - `[SitePageId <String>]`: The unique identifier of sitePage
   - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
-  - `[StoreId <String>]`: The unique identifier of store
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
@@ -396,7 +395,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
-PARENT `<IMicrosoftGraphParentLabelDetails>`: parentLabelDetails
+`PARENT <IMicrosoftGraphParentLabelDetails>`: parentLabelDetails
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Color <String>]`: The color that the user interface should display for the label, if configured.
   - `[Description <String>]`: The admin-defined description for the label.

@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Notes-help.xml
-Module Name: Microsoft.Graph.Notes
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.notes/get-mggrouponenotepage
+﻿---
+external help file: Microsoft.Graph.Beta.Notes-help.xml
+Module Name: Microsoft.Graph.Beta.Notes
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetagrouponenotepage
 schema: 2.0.0
 ---
 
-# Get-MgGroupOnenotePage
+# Get-MgBetaGroupOnenotePage
 
 ## SYNOPSIS
 The pages in all OneNote notebooks that are owned by the user or group.
@@ -16,20 +16,20 @@ Nullable.
 
 ### List (Default)
 ```
-Get-MgGroupOnenotePage -GroupId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [<CommonParameters>]
+Get-MgBetaGroupOnenotePage -GroupId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
+ [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgGroupOnenotePage -GroupId <String> -OnenotePageId <String> [-ExpandProperty <String[]>]
+Get-MgBetaGroupOnenotePage -GroupId <String> -OnenotePageId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgGroupOnenotePage -InputObject <INotesIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaGroupOnenotePage -InputObject <INotesIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
@@ -39,6 +39,20 @@ Read-only.
 Nullable.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -120,7 +134,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: INotesIdentity
@@ -244,10 +258,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.INotesIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.INotesIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnenotePage1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnenotePage
 ## NOTES
 
 ALIASES
@@ -257,7 +271,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<INotesIdentity>`: Identity Parameter
+`INPUTOBJECT <INotesIdentity>`: Identity Parameter
   - `[GroupId <String>]`: The unique identifier of group
   - `[NotebookId <String>]`: The unique identifier of notebook
   - `[OnenoteOperationId <String>]`: The unique identifier of onenoteOperation

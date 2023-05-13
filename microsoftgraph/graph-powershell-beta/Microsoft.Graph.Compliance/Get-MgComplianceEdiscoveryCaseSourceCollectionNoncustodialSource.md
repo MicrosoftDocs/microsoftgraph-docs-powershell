@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Compliance-help.xml
-Module Name: Microsoft.Graph.Compliance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/get-mgcomplianceediscoverycasesourcecollectionnoncustodialsource
+﻿---
+external help file: Microsoft.Graph.Beta.Compliance-help.xml
+Module Name: Microsoft.Graph.Beta.Compliance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasesourcecollectionnoncustodialsource
 schema: 2.0.0
 ---
 
-# Get-MgComplianceEdiscoveryCaseSourceCollectionNoncustodialSource
+# Get-MgBetaComplianceEdiscoveryCaseSourceCollectionNoncustodialSource
 
 ## SYNOPSIS
 noncustodialDataSource sources that are included in the sourceCollection
@@ -14,21 +14,22 @@ noncustodialDataSource sources that are included in the sourceCollection
 
 ### List (Default)
 ```
-Get-MgComplianceEdiscoveryCaseSourceCollectionNoncustodialSource -CaseId <String> -SourceCollectionId <String>
- [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+Get-MgBetaComplianceEdiscoveryCaseSourceCollectionNoncustodialSource -CaseId <String>
+ -SourceCollectionId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgComplianceEdiscoveryCaseSourceCollectionNoncustodialSource -CaseId <String>
+Get-MgBetaComplianceEdiscoveryCaseSourceCollectionNoncustodialSource -CaseId <String>
  -NoncustodialDataSourceId <String> -SourceCollectionId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgComplianceEdiscoveryCaseSourceCollectionNoncustodialSource -InputObject <IComplianceIdentity>
+Get-MgBetaComplianceEdiscoveryCaseSourceCollectionNoncustodialSource -InputObject <IComplianceIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
@@ -37,23 +38,17 @@ noncustodialDataSource sources that are included in the sourceCollection
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgComplianceEdiscoveryCaseSourceCollectionNoncustodialSource Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Compliance
-Get-MgComplianceEdiscoveryCaseSourceCollectionNoncustodialSource -CaseId $caseId -SourceCollectionId $sourceCollectionId
+Import-Module Microsoft.Graph.Beta.Compliance
+Get-MgBetaComplianceEdiscoveryCaseSourceCollectionNoncustodialSource -CaseId $caseId -SourceCollectionId $sourceCollectionId
 ```
 
-This example shows how to use the Get-MgComplianceEdiscoveryCaseSourceCollectionNoncustodialSource Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Get-MgComplianceEdiscoveryCaseSourceCollectionNoncustodialSource Cmdlet
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Compliance
-Get-MgComplianceEdiscoveryCaseSourceCollectionNoncustodialSource -CaseId $caseId -SourceCollectionId $sourceCollectionId -OutFile $outFileId
+Import-Module Microsoft.Graph.Beta.Compliance
+Get-MgBetaComplianceEdiscoveryCaseSourceCollectionNoncustodialSource -CaseId $caseId -SourceCollectionId $sourceCollectionId -OutFile $outFileId
 ```
-
-This example shows how to use the Get-MgComplianceEdiscoveryCaseSourceCollectionNoncustodialSource Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -135,7 +130,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IComplianceIdentity
@@ -274,10 +269,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IComplianceIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryNoncustodialDataSource
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEdiscoveryNoncustodialDataSource
 ## NOTES
 
 ALIASES
@@ -287,7 +282,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
+`INPUTOBJECT <IComplianceIdentity>`: Identity Parameter
   - `[CaseId <String>]`: The unique identifier of case
   - `[CaseOperationId <String>]`: The unique identifier of caseOperation
   - `[CustodianId <String>]`: The unique identifier of custodian

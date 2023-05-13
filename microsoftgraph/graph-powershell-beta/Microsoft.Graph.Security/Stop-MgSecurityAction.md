@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/stop-mgsecurityaction
+﻿---
+external help file: Microsoft.Graph.Beta.Security-help.xml
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/stop-mgbetasecurityaction
 schema: 2.0.0
 ---
 
-# Stop-MgSecurityAction
+# Stop-MgBetaSecurityAction
 
 ## SYNOPSIS
 Cancel a security operation.
@@ -14,12 +14,13 @@ Cancel a security operation.
 
 ### Cancel (Default)
 ```
-Stop-MgSecurityAction -SecurityActionId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Stop-MgBetaSecurityAction -SecurityActionId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CancelViaIdentity
 ```
-Stop-MgSecurityAction -InputObject <ISecurityIdentity> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Stop-MgBetaSecurityAction -InputObject <ISecurityIdentity> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -27,20 +28,17 @@ Cancel a security operation.
 
 ## EXAMPLES
 
-### Example 1: Using the Stop-MgSecurityAction Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Security
-Stop-MgSecurityAction -SecurityActionId $securityActionId
+Import-Module Microsoft.Graph.Beta.Security
+Stop-MgBetaSecurityAction -SecurityActionId $securityActionId
 ```
-
-This example shows how to use the Stop-MgSecurityAction Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ISecurityIdentity
@@ -120,7 +118,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
 ## OUTPUTS
 
 ### System.Boolean
@@ -133,7 +131,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+`INPUTOBJECT <ISecurityIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
   - `[ArticleId <String>]`: The unique identifier of article
   - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator

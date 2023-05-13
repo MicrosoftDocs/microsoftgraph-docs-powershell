@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Sites-help.xml
-Module Name: Microsoft.Graph.Sites
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/update-mggroupsiteinformationprotection
+﻿---
+external help file: Microsoft.Graph.Beta.Sites-help.xml
+Module Name: Microsoft.Graph.Beta.Sites
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsiteinformationprotection
 schema: 2.0.0
 ---
 
-# Update-MgGroupSiteInformationProtection
+# Update-MgBetaGroupSiteInformationProtection
 
 ## SYNOPSIS
 Update the navigation property informationProtection in groups
@@ -14,44 +14,54 @@ Update the navigation property informationProtection in groups
 
 ### UpdateExpanded (Default)
 ```
-Update-MgGroupSiteInformationProtection -GroupId <String> -SiteId <String> [-AdditionalProperties <Hashtable>]
- [-Bitlocker <IMicrosoftGraphBitlocker>]
+Update-MgBetaGroupSiteInformationProtection -GroupId <String> -SiteId <String>
+ [-AdditionalProperties <Hashtable>] [-Bitlocker <IMicrosoftGraphBitlocker>]
  [-DataLossPreventionPolicies <IMicrosoftGraphDataLossPreventionPolicy[]>] [-Id <String>]
  [-Policy <IMicrosoftGraphInformationProtectionPolicy>]
  [-SensitivityLabels <IMicrosoftGraphSensitivityLabel[]>]
  [-SensitivityPolicySettings <IMicrosoftGraphSensitivityPolicySettings>]
- [-ThreatAssessmentRequests <IMicrosoftGraphThreatAssessmentRequest[]>] [-PassThru] [-WhatIf] [-Confirm]
+ [-ThreatAssessmentRequests <IMicrosoftGraphThreatAssessmentRequest[]>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgGroupSiteInformationProtection -GroupId <String> -SiteId <String>
- -BodyParameter <IMicrosoftGraphInformationProtection> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaGroupSiteInformationProtection -GroupId <String> -SiteId <String>
+ -BodyParameter <IMicrosoftGraphInformationProtection> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgGroupSiteInformationProtection -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
+Update-MgBetaGroupSiteInformationProtection -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
  [-Bitlocker <IMicrosoftGraphBitlocker>]
  [-DataLossPreventionPolicies <IMicrosoftGraphDataLossPreventionPolicy[]>] [-Id <String>]
  [-Policy <IMicrosoftGraphInformationProtectionPolicy>]
  [-SensitivityLabels <IMicrosoftGraphSensitivityLabel[]>]
  [-SensitivityPolicySettings <IMicrosoftGraphSensitivityPolicySettings>]
- [-ThreatAssessmentRequests <IMicrosoftGraphThreatAssessmentRequest[]>] [-PassThru] [-WhatIf] [-Confirm]
+ [-ThreatAssessmentRequests <IMicrosoftGraphThreatAssessmentRequest[]>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgGroupSiteInformationProtection -InputObject <ISitesIdentity>
- -BodyParameter <IMicrosoftGraphInformationProtection> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaGroupSiteInformationProtection -InputObject <ISitesIdentity>
+ -BodyParameter <IMicrosoftGraphInformationProtection> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property informationProtection in groups
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -72,7 +82,7 @@ Accept wildcard characters: False
 
 ### -Bitlocker
 bitlocker
-To construct, please use Get-Help -Online and see NOTES section for BITLOCKER properties and create a hash table.
+To construct, see NOTES section for BITLOCKER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphBitlocker
@@ -88,7 +98,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 informationProtection
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphInformationProtection
@@ -104,7 +114,7 @@ Accept wildcard characters: False
 
 ### -DataLossPreventionPolicies
 .
-To construct, please use Get-Help -Online and see NOTES section for DATALOSSPREVENTIONPOLICIES properties and create a hash table.
+To construct, see NOTES section for DATALOSSPREVENTIONPOLICIES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDataLossPreventionPolicy[]
@@ -134,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -151,7 +161,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ISitesIdentity
@@ -165,24 +175,9 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Policy
 informationProtectionPolicy
-To construct, please use Get-Help -Online and see NOTES section for POLICY properties and create a hash table.
+To construct, see NOTES section for POLICY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphInformationProtectionPolicy
@@ -198,7 +193,7 @@ Accept wildcard characters: False
 
 ### -SensitivityLabels
 .
-To construct, please use Get-Help -Online and see NOTES section for SENSITIVITYLABELS properties and create a hash table.
+To construct, see NOTES section for SENSITIVITYLABELS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSensitivityLabel[]
@@ -214,7 +209,7 @@ Accept wildcard characters: False
 
 ### -SensitivityPolicySettings
 sensitivityPolicySettings
-To construct, please use Get-Help -Online and see NOTES section for SENSITIVITYPOLICYSETTINGS properties and create a hash table.
+To construct, see NOTES section for SENSITIVITYPOLICYSETTINGS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSensitivityPolicySettings
@@ -245,7 +240,7 @@ Accept wildcard characters: False
 
 ### -ThreatAssessmentRequests
 .
-To construct, please use Get-Help -Online and see NOTES section for THREATASSESSMENTREQUESTS properties and create a hash table.
+To construct, see NOTES section for THREATASSESSMENTREQUESTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphThreatAssessmentRequest[]
@@ -295,11 +290,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInformationProtection
-### Microsoft.Graph.PowerShell.Models.ISitesIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInformationProtection
+### Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInformationProtection
 ## NOTES
 
 ALIASES
@@ -309,36 +304,36 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BITLOCKER `<IMicrosoftGraphBitlocker>`: bitlocker
+`BITLOCKER <IMicrosoftGraphBitlocker>`: bitlocker
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[RecoveryKeys <IMicrosoftGraphBitlockerRecoveryKey[]>]`: The recovery keys associated with the bitlocker entity.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[CreatedDateTime <DateTime?>]`: The date and time when the key was originally backed up to Azure Active Directory.
     - `[DeviceId <String>]`: ID of the device the BitLocker key is originally backed up from.
     - `[Key <String>]`: The BitLocker recovery key.
     - `[VolumeType <String>]`: volumeType
 
-BODYPARAMETER `<IMicrosoftGraphInformationProtection>`: informationProtection
+`BODYPARAMETER <IMicrosoftGraphInformationProtection>`: informationProtection
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Bitlocker <IMicrosoftGraphBitlocker>]`: bitlocker
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[RecoveryKeys <IMicrosoftGraphBitlockerRecoveryKey[]>]`: The recovery keys associated with the bitlocker entity.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[CreatedDateTime <DateTime?>]`: The date and time when the key was originally backed up to Azure Active Directory.
       - `[DeviceId <String>]`: ID of the device the BitLocker key is originally backed up from.
       - `[Key <String>]`: The BitLocker recovery key.
       - `[VolumeType <String>]`: volumeType
   - `[DataLossPreventionPolicies <IMicrosoftGraphDataLossPreventionPolicy[]>]`: 
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Name <String>]`: 
   - `[Policy <IMicrosoftGraphInformationProtectionPolicy>]`: informationProtectionPolicy
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Labels <IMicrosoftGraphInformationProtectionLabel[]>]`: 
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Color <String>]`: The color that the UI should display for the label, if configured.
       - `[Description <String>]`: The admin-defined description for the label.
       - `[IsActive <Boolean?>]`: Indicates whether the label is active or not. Active labels should be hidden or disabled in UI.
@@ -356,7 +351,7 @@ BODYPARAMETER `<IMicrosoftGraphInformationProtection>`: informationProtection
       - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
       - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a UI.
   - `[SensitivityLabels <IMicrosoftGraphSensitivityLabel[]>]`: 
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[ApplicableTo <String>]`: sensitivityLabelTarget
     - `[ApplicationMode <String>]`: applicationMode
     - `[AssignedPolicies <IMicrosoftGraphLabelPolicy[]>]`: 
@@ -378,13 +373,13 @@ BODYPARAMETER `<IMicrosoftGraphInformationProtection>`: informationProtection
     - `[ToolTip <String>]`: 
   - `[SensitivityPolicySettings <IMicrosoftGraphSensitivityPolicySettings>]`: sensitivityPolicySettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[ApplicableTo <String>]`: sensitivityLabelTarget
     - `[DowngradeSensitivityRequiresJustification <Boolean?>]`: 
     - `[HelpWebUrl <String>]`: 
     - `[IsMandatory <Boolean?>]`: 
   - `[ThreatAssessmentRequests <IMicrosoftGraphThreatAssessmentRequest[]>]`: 
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Category <String>]`: threatCategory
     - `[ContentType <String>]`: threatAssessmentContentType
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -399,17 +394,17 @@ BODYPARAMETER `<IMicrosoftGraphInformationProtection>`: informationProtection
     - `[ExpectedAssessment <String>]`: threatExpectedAssessment
     - `[RequestSource <String>]`: threatAssessmentRequestSource
     - `[Results <IMicrosoftGraphThreatAssessmentResult[]>]`: A collection of threat assessment results. Read-only. By default, a GET /threatAssessmentRequests/{id} does not return this property unless you apply $expand on it.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Message <String>]`: The result message for each threat assessment.
       - `[ResultType <String>]`: threatAssessmentResultType
     - `[Status <String>]`: threatAssessmentStatus
 
-DATALOSSPREVENTIONPOLICIES <IMicrosoftGraphDataLossPreventionPolicy\[]>: .
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`DATALOSSPREVENTIONPOLICIES <IMicrosoftGraphDataLossPreventionPolicy[]>`: .
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Name <String>]`: 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+`INPUTOBJECT <ISitesIdentity>`: Identity Parameter
   - `[BaseItemId <String>]`: The unique identifier of baseItem
   - `[BitlockerRecoveryKeyId <String>]`: The unique identifier of bitlockerRecoveryKey
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
@@ -427,17 +422,23 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
   - `[Interval <String>]`: Usage: interval='{interval}'
+  - `[ItemActivityId <String>]`: The unique identifier of itemActivity
+  - `[ItemActivityOldId <String>]`: The unique identifier of itemActivityOLD
+  - `[ItemActivityStatId <String>]`: The unique identifier of itemActivityStat
   - `[ListId <String>]`: The unique identifier of list
-  - `[ListId1 <String>]`: Usage: listId='{listId}'
   - `[ListItemId <String>]`: The unique identifier of listItem
   - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
   - `[NotebookId <String>]`: The unique identifier of notebook
+  - `[OnenoteOperationId <String>]`: The unique identifier of onenoteOperation
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
+  - `[OnenoteResourceId <String>]`: The unique identifier of onenoteResource
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
   - `[Path <String>]`: Usage: path='{path}'
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[RelationId <String>]`: The unique identifier of relation
   - `[RichLongRunningOperationId <String>]`: The unique identifier of richLongRunningOperation
+  - `[SectionGroupId <String>]`: The unique identifier of sectionGroup
+  - `[SectionGroupId1 <String>]`: The unique identifier of sectionGroup
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SensitivityLabelId1 <String>]`: The unique identifier of sensitivityLabel
   - `[SetId <String>]`: The unique identifier of set
@@ -446,7 +447,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SiteId1 <String>]`: The unique identifier of site
   - `[SitePageId <String>]`: The unique identifier of sitePage
   - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
-  - `[StoreId <String>]`: The unique identifier of store
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
@@ -456,11 +456,11 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
-POLICY `<IMicrosoftGraphInformationProtectionPolicy>`: informationProtectionPolicy
+`POLICY <IMicrosoftGraphInformationProtectionPolicy>`: informationProtectionPolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Labels <IMicrosoftGraphInformationProtectionLabel[]>]`: 
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Color <String>]`: The color that the UI should display for the label, if configured.
     - `[Description <String>]`: The admin-defined description for the label.
     - `[IsActive <Boolean?>]`: Indicates whether the label is active or not. Active labels should be hidden or disabled in UI.
@@ -478,8 +478,8 @@ POLICY `<IMicrosoftGraphInformationProtectionPolicy>`: informationProtectionPoli
     - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
     - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a UI.
 
-SENSITIVITYLABELS <IMicrosoftGraphSensitivityLabel\[]>: .
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`SENSITIVITYLABELS <IMicrosoftGraphSensitivityLabel[]>`: .
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ApplicableTo <String>]`: sensitivityLabelTarget
   - `[ApplicationMode <String>]`: applicationMode
   - `[AssignedPolicies <IMicrosoftGraphLabelPolicy[]>]`: 
@@ -500,16 +500,16 @@ SENSITIVITYLABELS <IMicrosoftGraphSensitivityLabel\[]>: .
   - `[Sublabels <IMicrosoftGraphSensitivityLabel[]>]`: 
   - `[ToolTip <String>]`: 
 
-SENSITIVITYPOLICYSETTINGS `<IMicrosoftGraphSensitivityPolicySettings>`: sensitivityPolicySettings
+`SENSITIVITYPOLICYSETTINGS <IMicrosoftGraphSensitivityPolicySettings>`: sensitivityPolicySettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ApplicableTo <String>]`: sensitivityLabelTarget
   - `[DowngradeSensitivityRequiresJustification <Boolean?>]`: 
   - `[HelpWebUrl <String>]`: 
   - `[IsMandatory <Boolean?>]`: 
 
-THREATASSESSMENTREQUESTS <IMicrosoftGraphThreatAssessmentRequest\[]>: .
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`THREATASSESSMENTREQUESTS <IMicrosoftGraphThreatAssessmentRequest[]>`: .
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Category <String>]`: threatCategory
   - `[ContentType <String>]`: threatAssessmentContentType
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -524,7 +524,7 @@ THREATASSESSMENTREQUESTS <IMicrosoftGraphThreatAssessmentRequest\[]>: .
   - `[ExpectedAssessment <String>]`: threatExpectedAssessment
   - `[RequestSource <String>]`: threatAssessmentRequestSource
   - `[Results <IMicrosoftGraphThreatAssessmentResult[]>]`: A collection of threat assessment results. Read-only. By default, a GET /threatAssessmentRequests/{id} does not return this property unless you apply $expand on it.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[Message <String>]`: The result message for each threat assessment.
     - `[ResultType <String>]`: threatAssessmentResultType

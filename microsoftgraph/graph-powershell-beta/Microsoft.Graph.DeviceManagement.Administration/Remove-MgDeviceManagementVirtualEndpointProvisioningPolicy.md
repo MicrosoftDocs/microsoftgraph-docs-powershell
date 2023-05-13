@@ -1,43 +1,42 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Administration
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementvirtualendpointprovisioningpolicy
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/remove-mgbetadevicemanagementvirtualendpointprovisioningpolicy
 schema: 2.0.0
 ---
 
-# Remove-MgDeviceManagementVirtualEndpointProvisioningPolicy
+# Remove-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy
 
 ## SYNOPSIS
-Delete navigation property provisioningPolicies for deviceManagement
+Delete a cloudPcProvisioningPolicy object.
+You can't delete a policy that's in use.
 
 ## SYNTAX
 
 ### Delete (Default)
 ```
-Remove-MgDeviceManagementVirtualEndpointProvisioningPolicy -CloudPcProvisioningPolicyId <String>
+Remove-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy -CloudPcProvisioningPolicyId <String>
  [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgDeviceManagementVirtualEndpointProvisioningPolicy
+Remove-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy
  -InputObject <IDeviceManagementAdministrationIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete navigation property provisioningPolicies for deviceManagement
+Delete a cloudPcProvisioningPolicy object.
+You can't delete a policy that's in use.
 
 ## EXAMPLES
 
-### Example 1: Using the Remove-MgDeviceManagementVirtualEndpointProvisioningPolicy Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.DeviceManagement.Administration
-Remove-MgDeviceManagementVirtualEndpointProvisioningPolicy -CloudPcProvisioningPolicyId $cloudPcProvisioningPolicyId
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
+Remove-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy -CloudPcProvisioningPolicyId $cloudPcProvisioningPolicyId
 ```
-
-This example shows how to use the Remove-MgDeviceManagementVirtualEndpointProvisioningPolicy Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -73,7 +72,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementAdministrationIdentity
@@ -138,7 +137,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementAdministrationIdentity
 ## OUTPUTS
 
 ### System.Boolean
@@ -151,7 +150,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[AuditEventId <String>]`: The unique identifier of auditEvent
   - `[CartToClassAssociationId <String>]`: The unique identifier of cartToClassAssociation
   - `[CloudPcAuditEventId <String>]`: The unique identifier of cloudPcAuditEvent

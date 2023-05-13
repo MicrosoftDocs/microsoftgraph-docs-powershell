@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Sites-help.xml
-Module Name: Microsoft.Graph.Sites
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/invoke-mgbuffersiteinformationprotectiondecrypt
+﻿---
+external help file: Microsoft.Graph.Beta.Sites-help.xml
+Module Name: Microsoft.Graph.Beta.Sites
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/invoke-mgbetabuffersiteinformationprotectiondecrypt
 schema: 2.0.0
 ---
 
-# Invoke-MgBufferSiteInformationProtectionDecrypt
+# Invoke-MgBetaBufferSiteInformationProtectionDecrypt
 
 ## SYNOPSIS
 Invoke action decryptBuffer
@@ -14,28 +14,28 @@ Invoke action decryptBuffer
 
 ### BufferExpanded (Default)
 ```
-Invoke-MgBufferSiteInformationProtectionDecrypt -SiteId <String> -OutFile <String>
+Invoke-MgBetaBufferSiteInformationProtectionDecrypt -SiteId <String> -OutFile <String>
  [-AdditionalProperties <Hashtable>] [-EncryptedBufferInputFile <String>]
  [-PublishingLicenseInputFile <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Buffer
 ```
-Invoke-MgBufferSiteInformationProtectionDecrypt -SiteId <String> -OutFile <String>
- -BodyParameter <IPaths62Zq4LSitesSiteIdInformationprotectionMicrosoftGraphDecryptbufferPostRequestbodyContentApplicationJsonSchema>
+Invoke-MgBetaBufferSiteInformationProtectionDecrypt -SiteId <String> -OutFile <String>
+ -Body <IPaths62Zq4LSitesSiteIdInformationprotectionMicrosoftGraphDecryptbufferPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### BufferViaIdentityExpanded
 ```
-Invoke-MgBufferSiteInformationProtectionDecrypt -InputObject <ISitesIdentity> -OutFile <String>
+Invoke-MgBetaBufferSiteInformationProtectionDecrypt -InputObject <ISitesIdentity> -OutFile <String>
  [-AdditionalProperties <Hashtable>] [-EncryptedBufferInputFile <String>]
  [-PublishingLicenseInputFile <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### BufferViaIdentity
 ```
-Invoke-MgBufferSiteInformationProtectionDecrypt -InputObject <ISitesIdentity> -OutFile <String>
+Invoke-MgBetaBufferSiteInformationProtectionDecrypt -InputObject <ISitesIdentity> -OutFile <String>
  -BodyParameter <IPaths62Zq4LSitesSiteIdInformationprotectionMicrosoftGraphDecryptbufferPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -44,6 +44,16 @@ Invoke-MgBufferSiteInformationProtectionDecrypt -InputObject <ISitesIdentity> -O
 Invoke action decryptBuffer
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -62,13 +72,29 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -BodyParameter
+### -Body
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
 Type: IPaths62Zq4LSitesSiteIdInformationprotectionMicrosoftGraphDecryptbufferPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Buffer, BufferViaIdentity
+Parameter Sets: Buffer
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -BodyParameter
+.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+```yaml
+Type: IPaths62Zq4LSitesSiteIdInformationprotectionMicrosoftGraphDecryptbufferPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: BufferViaIdentity
 Aliases:
 
 Required: True
@@ -95,7 +121,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ISitesIdentity
@@ -205,8 +231,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths62Zq4LSitesSiteIdInformationprotectionMicrosoftGraphDecryptbufferPostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.ISitesIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths62Zq4LSitesSiteIdInformationprotectionMicrosoftGraphDecryptbufferPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
 ## OUTPUTS
 
 ### System.Boolean
@@ -219,12 +245,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths62Zq4LSitesSiteIdInformationprotectionMicrosoftGraphDecryptbufferPostRequestbodyContentApplicationJsonSchema>`: .
+`BODY <IPaths62Zq4LSitesSiteIdInformationprotectionMicrosoftGraphDecryptbufferPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[EncryptedBuffer <Byte[]>]`: 
   - `[PublishingLicense <Byte[]>]`: 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+`BODYPARAMETER <IPaths62Zq4LSitesSiteIdInformationprotectionMicrosoftGraphDecryptbufferPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[EncryptedBuffer <Byte[]>]`: 
+  - `[PublishingLicense <Byte[]>]`: 
+
+`INPUTOBJECT <ISitesIdentity>`: Identity Parameter
   - `[BaseItemId <String>]`: The unique identifier of baseItem
   - `[BitlockerRecoveryKeyId <String>]`: The unique identifier of bitlockerRecoveryKey
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
@@ -242,17 +273,23 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
   - `[Interval <String>]`: Usage: interval='{interval}'
+  - `[ItemActivityId <String>]`: The unique identifier of itemActivity
+  - `[ItemActivityOldId <String>]`: The unique identifier of itemActivityOLD
+  - `[ItemActivityStatId <String>]`: The unique identifier of itemActivityStat
   - `[ListId <String>]`: The unique identifier of list
-  - `[ListId1 <String>]`: Usage: listId='{listId}'
   - `[ListItemId <String>]`: The unique identifier of listItem
   - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
   - `[NotebookId <String>]`: The unique identifier of notebook
+  - `[OnenoteOperationId <String>]`: The unique identifier of onenoteOperation
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
+  - `[OnenoteResourceId <String>]`: The unique identifier of onenoteResource
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
   - `[Path <String>]`: Usage: path='{path}'
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[RelationId <String>]`: The unique identifier of relation
   - `[RichLongRunningOperationId <String>]`: The unique identifier of richLongRunningOperation
+  - `[SectionGroupId <String>]`: The unique identifier of sectionGroup
+  - `[SectionGroupId1 <String>]`: The unique identifier of sectionGroup
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SensitivityLabelId1 <String>]`: The unique identifier of sensitivityLabel
   - `[SetId <String>]`: The unique identifier of set
@@ -261,7 +298,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SiteId1 <String>]`: The unique identifier of site
   - `[SitePageId <String>]`: The unique identifier of sitePage
   - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
-  - `[StoreId <String>]`: The unique identifier of store
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term

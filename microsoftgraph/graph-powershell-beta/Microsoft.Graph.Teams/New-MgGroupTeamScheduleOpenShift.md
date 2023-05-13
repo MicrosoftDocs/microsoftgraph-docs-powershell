@@ -1,21 +1,20 @@
----
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mggroupteamscheduleopenshift
+﻿---
+external help file: Microsoft.Graph.Beta.Teams-help.xml
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamscheduleopenshift
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
-# New-MgGroupTeamScheduleOpenShift
+# New-MgBetaGroupTeamScheduleOpenShift
 
 ## SYNOPSIS
-Create new navigation property to openShifts for groups
+Create an instance of an openshift object.
 
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
-New-MgGroupTeamScheduleOpenShift -GroupId <String> [-AdditionalProperties <Hashtable>]
+New-MgBetaGroupTeamScheduleOpenShift -GroupId <String> [-AdditionalProperties <Hashtable>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-DraftOpenShift <IMicrosoftGraphOpenShiftItem>] [-Id <String>]
  [-IsStagedForDeletion] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-SchedulingGroupId <String>]
  [-SharedOpenShift <IMicrosoftGraphOpenShiftItem>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -23,13 +22,13 @@ New-MgGroupTeamScheduleOpenShift -GroupId <String> [-AdditionalProperties <Hasht
 
 ### Create
 ```
-New-MgGroupTeamScheduleOpenShift -GroupId <String> -BodyParameter <IMicrosoftGraphOpenShift1> [-WhatIf]
+New-MgBetaGroupTeamScheduleOpenShift -GroupId <String> -BodyParameter <IMicrosoftGraphOpenShift> [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgGroupTeamScheduleOpenShift -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
+New-MgBetaGroupTeamScheduleOpenShift -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-DraftOpenShift <IMicrosoftGraphOpenShiftItem>] [-Id <String>]
  [-IsStagedForDeletion] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-SchedulingGroupId <String>]
  [-SharedOpenShift <IMicrosoftGraphOpenShiftItem>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -37,25 +36,21 @@ New-MgGroupTeamScheduleOpenShift -InputObject <ITeamsIdentity> [-AdditionalPrope
 
 ### CreateViaIdentity
 ```
-New-MgGroupTeamScheduleOpenShift -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphOpenShift1>
+New-MgBetaGroupTeamScheduleOpenShift -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphOpenShift>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create new navigation property to openShifts for groups
+Create an instance of an openshift object.
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Teams
-
-Get-MgTeamScheduleOpenShift -TeamId $teamId
+Import-Module Microsoft.Graph.Beta.Teams
 ```
 
-This example shows how to use the New-MgGroupTeamScheduleOpenShift Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Get-MgBetaTeamScheduleOpenShift -TeamId $teamId
 
 ## PARAMETERS
 
@@ -76,10 +71,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 openShift
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOpenShift1
+Type: IMicrosoftGraphOpenShift
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -92,7 +87,7 @@ Accept wildcard characters: False
 
 ### -CreatedBy
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
+To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet
@@ -108,7 +103,7 @@ Accept wildcard characters: False
 
 ### -DraftOpenShift
 openShiftItem
-To construct, please use Get-Help -Online and see NOTES section for DRAFTOPENSHIFT properties and create a hash table.
+To construct, see NOTES section for DRAFTOPENSHIFT properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphOpenShiftItem
@@ -138,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -155,7 +150,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ITeamsIdentity
@@ -186,7 +181,7 @@ Accept wildcard characters: False
 
 ### -LastModifiedBy
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBY properties and create a hash table.
+To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet
@@ -217,7 +212,7 @@ Accept wildcard characters: False
 
 ### -SharedOpenShift
 openShiftItem
-To construct, please use Get-Help -Online and see NOTES section for SHAREDOPENSHIFT properties and create a hash table.
+To construct, see NOTES section for SHAREDOPENSHIFT properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphOpenShiftItem
@@ -267,11 +262,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOpenShift1
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOpenShift
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOpenShift1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOpenShift
 ## NOTES
 
 ALIASES
@@ -281,7 +276,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphOpenShift1>`: openShift
+`BODYPARAMETER <IMicrosoftGraphOpenShift>`: openShift
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -292,7 +287,7 @@ BODYPARAMETER `<IMicrosoftGraphOpenShift1>`: openShift
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DraftOpenShift <IMicrosoftGraphOpenShiftItem>]`: openShiftItem
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Activities <IMicrosoftGraphShiftActivity[]>]`: An incremental part of a shift which can cover details of when and where an employee is during their shift. For example, an assignment or a scheduled break or lunch. Required.
@@ -312,7 +307,7 @@ BODYPARAMETER `<IMicrosoftGraphOpenShift1>`: openShift
   - `[SchedulingGroupId <String>]`: ID for the scheduling group that the open shift belongs to.
   - `[SharedOpenShift <IMicrosoftGraphOpenShiftItem>]`: openShiftItem
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+`CREATEDBY <IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -321,7 +316,7 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-DRAFTOPENSHIFT `<IMicrosoftGraphOpenShiftItem>`: openShiftItem
+`DRAFTOPENSHIFT <IMicrosoftGraphOpenShiftItem>`: openShiftItem
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Activities <IMicrosoftGraphShiftActivity[]>]`: An incremental part of a shift which can cover details of when and where an employee is during their shift. For example, an assignment or a scheduled break or lunch. Required.
     - `[Code <String>]`: Customer defined code for the shiftActivity. Required.
@@ -337,7 +332,7 @@ DRAFTOPENSHIFT `<IMicrosoftGraphOpenShiftItem>`: openShiftItem
   - `[Theme <String>]`: scheduleEntityTheme
   - `[OpenSlotCount <Int32?>]`: Count of the number of slots for the given open shift.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat
@@ -376,7 +371,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+`LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -385,7 +380,7 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-SHAREDOPENSHIFT `<IMicrosoftGraphOpenShiftItem>`: openShiftItem
+`SHAREDOPENSHIFT <IMicrosoftGraphOpenShiftItem>`: openShiftItem
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Activities <IMicrosoftGraphShiftActivity[]>]`: An incremental part of a shift which can cover details of when and where an employee is during their shift. For example, an assignment or a scheduled break or lunch. Required.
     - `[Code <String>]`: Customer defined code for the shiftActivity. Required.

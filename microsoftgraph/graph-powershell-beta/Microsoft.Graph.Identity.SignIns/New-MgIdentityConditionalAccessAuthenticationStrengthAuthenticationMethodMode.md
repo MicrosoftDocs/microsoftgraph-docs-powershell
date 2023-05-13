@@ -1,27 +1,27 @@
----
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgidentityconditionalaccessauthenticationstrengthauthenticationmethodmode
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccessauthenticationstrengthauthenticationmethodmode
 schema: 2.0.0
 ---
 
-# New-MgIdentityConditionalAccessAuthenticationStrengthAuthenticationMethodMode
+# New-MgBetaIdentityConditionalAccessAuthenticationStrengthAuthenticationMethodMode
 
 ## SYNOPSIS
 Create new navigation property to authenticationMethodModes for identity
 
 ## SYNTAX
 
-### CreateExpanded (Default)
+### CreateExpanded1 (Default)
 ```
-New-MgIdentityConditionalAccessAuthenticationStrengthAuthenticationMethodMode
+New-MgBetaIdentityConditionalAccessAuthenticationStrengthAuthenticationMethodMode
  [-AdditionalProperties <Hashtable>] [-AuthenticationMethod <String>] [-DisplayName <String>] [-Id <String>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create
+### Create1
 ```
-New-MgIdentityConditionalAccessAuthenticationStrengthAuthenticationMethodMode
+New-MgBetaIdentityConditionalAccessAuthenticationStrengthAuthenticationMethodMode
  -BodyParameter <IMicrosoftGraphAuthenticationMethodModeDetail> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -30,6 +30,20 @@ Create new navigation property to authenticationMethodModes for identity
 
 ## EXAMPLES
 
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -37,7 +51,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -52,7 +66,7 @@ baseAuthenticationMethod
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -64,11 +78,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 authenticationMethodModeDetail
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAuthenticationMethodModeDetail
-Parameter Sets: Create
+Parameter Sets: Create1
 Aliases:
 
 Required: True
@@ -83,7 +97,7 @@ The display name of this mode
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -94,12 +108,12 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -145,10 +159,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthenticationMethodModeDetail
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthenticationMethodModeDetail
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthenticationMethodModeDetail
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthenticationMethodModeDetail
 ## NOTES
 
 ALIASES
@@ -158,9 +172,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphAuthenticationMethodModeDetail>`: authenticationMethodModeDetail
+`BODYPARAMETER <IMicrosoftGraphAuthenticationMethodModeDetail>`: authenticationMethodModeDetail
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AuthenticationMethod <String>]`: baseAuthenticationMethod
   - `[DisplayName <String>]`: The display name of this mode
 

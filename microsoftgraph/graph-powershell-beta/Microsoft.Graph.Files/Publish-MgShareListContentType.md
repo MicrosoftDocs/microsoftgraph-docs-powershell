@@ -1,26 +1,26 @@
----
-external help file: Microsoft.Graph.Files-help.xml
-Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/publish-mgsharelistcontenttype
+﻿---
+external help file: Microsoft.Graph.Beta.Files-help.xml
+Module Name: Microsoft.Graph.Beta.Files
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/publish-mgbetasharelistcontenttype
 schema: 2.0.0
 ---
 
-# Publish-MgShareListContentType
+# Publish-MgBetaShareListContentType
 
 ## SYNOPSIS
 Publishes a [contentType][] present in a content type hub site.
 
 ## SYNTAX
 
-### Publish1 (Default)
+### Publish (Default)
 ```
-Publish-MgShareListContentType -ContentTypeId <String> -SharedDriveItemId <String> [-PassThru] [-WhatIf]
+Publish-MgBetaShareListContentType -ContentTypeId <String> -SharedDriveItemId <String> [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
-### PublishViaIdentity1
+### PublishViaIdentity
 ```
-Publish-MgShareListContentType -InputObject <IFilesIdentity> [-PassThru] [-WhatIf] [-Confirm]
+Publish-MgBetaShareListContentType -InputObject <IFilesIdentity> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -29,6 +29,20 @@ Publishes a [contentType][] present in a content type hub site.
 
 ## EXAMPLES
 
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -36,7 +50,7 @@ The unique identifier of contentType
 
 ```yaml
 Type: String
-Parameter Sets: Publish1
+Parameter Sets: Publish
 Aliases:
 
 Required: True
@@ -48,11 +62,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IFilesIdentity
-Parameter Sets: PublishViaIdentity1
+Parameter Sets: PublishViaIdentity
 Aliases:
 
 Required: True
@@ -82,7 +96,7 @@ The unique identifier of sharedDriveItem
 
 ```yaml
 Type: String
-Parameter Sets: Publish1
+Parameter Sets: Publish
 Aliases:
 
 Required: True
@@ -128,7 +142,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IFilesIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
 ## OUTPUTS
 
 ### System.Boolean
@@ -141,7 +155,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+`INPUTOBJECT <IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType

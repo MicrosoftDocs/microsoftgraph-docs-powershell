@@ -1,12 +1,11 @@
----
-external help file: Microsoft.Graph.Calendar-help.xml
-Module Name: Microsoft.Graph.Calendar
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/new-mggroupeventextension
+﻿---
+external help file: Microsoft.Graph.Beta.Calendar-help.xml
+Module Name: Microsoft.Graph.Beta.Calendar
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetagroupeventextension
 schema: 2.0.0
-ms.prod: extensions
 ---
 
-# New-MgGroupEventExtension
+# New-MgBetaGroupEventExtension
 
 ## SYNOPSIS
 Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
@@ -16,27 +15,27 @@ The table in the Permissions section lists the resources that support open exten
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
-New-MgGroupEventExtension -EventId <String> -GroupId <String> [-AdditionalProperties <Hashtable>]
+New-MgBetaGroupEventExtension -EventId <String> -GroupId <String> [-AdditionalProperties <Hashtable>]
  [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
-New-MgGroupEventExtension -EventId <String> -GroupId <String> -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded1
-```
-New-MgGroupEventExtension -InputObject <ICalendarIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaGroupEventExtension -EventId <String> -GroupId <String> -BodyParameter <Hashtable> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentity1
+### CreateViaIdentityExpanded
 ```
-New-MgGroupEventExtension -InputObject <ICalendarIdentity> -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
+New-MgBetaGroupEventExtension -InputObject <ICalendarIdentity> [-AdditionalProperties <Hashtable>]
+ [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgBetaGroupEventExtension -InputObject <ICalendarIdentity> -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -48,9 +47,9 @@ The table in the Permissions section lists the resources that support open exten
 
 ## EXAMPLES
 
-### Example 1: Using the New-MgGroupEventExtension Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Calendar
+Import-Module Microsoft.Graph.Beta.Calendar
 $params = @{
 	"@odata.type" = "microsoft.graph.openTypeExtension"
 	ExtensionName = "Com.Contoso.Deal"
@@ -58,11 +57,8 @@ $params = @{
 	DealValue = 
 	ExpirationDate = "2015-07-03T13:04:00.000Z"
 }
-New-MgGroupEventExtension -GroupId $groupId -EventId $eventId -BodyParameter $params
+New-MgBetaGroupEventExtension -GroupId $groupId -EventId $eventId -BodyParameter $params
 ```
-
-This example shows how to use the New-MgGroupEventExtension Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -71,7 +67,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -86,7 +82,7 @@ extension
 
 ```yaml
 Type: Hashtable
-Parameter Sets: Create1, CreateViaIdentity1
+Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -101,7 +97,7 @@ The unique identifier of event
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, Create1
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -116,7 +112,7 @@ The unique identifier of group
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, Create1
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -127,12 +123,12 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -144,11 +140,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ICalendarIdentity
-Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -194,7 +190,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ICalendarIdentity
 ### System.Collections.Hashtable
 ## OUTPUTS
 
@@ -208,7 +204,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+`INPUTOBJECT <ICalendarIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[CalendarGroupId <String>]`: The unique identifier of calendarGroup
   - `[CalendarId <String>]`: The unique identifier of calendar
@@ -218,9 +214,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[EventId2 <String>]`: The unique identifier of event
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[GroupId <String>]`: The unique identifier of group
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
   - `[PlaceId <String>]`: The unique identifier of place
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS

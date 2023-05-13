@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mgteamprimarychannelemail
+﻿---
+external help file: Microsoft.Graph.Beta.Teams-help.xml
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamprimarychannelemail
 schema: 2.0.0
 ---
 
-# New-MgTeamPrimaryChannelEmail
+# New-MgBetaTeamPrimaryChannelEmail
 
 ## SYNOPSIS
 Provision an email address for a channel.
@@ -15,14 +15,14 @@ To remove the email address of a **channel**, use the removeEmail method.
 
 ## SYNTAX
 
-### Provision1 (Default)
+### Provision (Default)
 ```
-New-MgTeamPrimaryChannelEmail -TeamId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaTeamPrimaryChannelEmail -TeamId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ProvisionViaIdentity1
+### ProvisionViaIdentity
 ```
-New-MgTeamPrimaryChannelEmail -InputObject <ITeamsIdentity> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaTeamPrimaryChannelEmail -InputObject <ITeamsIdentity> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -33,26 +33,22 @@ To remove the email address of a **channel**, use the removeEmail method.
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Teams
-
-New-MgTeamChannelEmail -TeamId $teamId -ChannelId $channelId
+Import-Module Microsoft.Graph.Beta.Teams
 ```
 
-This example shows how to use the New-MgTeamPrimaryChannelEmail Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+New-MgBetaTeamChannelEmail -TeamId $teamId -ChannelId $channelId
 
 ## PARAMETERS
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: ProvisionViaIdentity1
+Parameter Sets: ProvisionViaIdentity
 Aliases:
 
 Required: True
@@ -67,7 +63,7 @@ The unique identifier of team
 
 ```yaml
 Type: String
-Parameter Sets: Provision1
+Parameter Sets: Provision
 Aliases:
 
 Required: True
@@ -113,7 +109,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
 ## OUTPUTS
 
 ### System.String
@@ -126,7 +122,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat

@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Users.Actions-help.xml
-Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/get-mgusermailtip
+﻿---
+external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.Users.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetausermailtip
 schema: 2.0.0
 ---
 
-# Get-MgUserMailTip
+# Get-MgBetaUserMailTip
 
 ## SYNOPSIS
 Get the MailTips of one or more recipients as available to the signed-in user.
@@ -16,26 +16,26 @@ The requested MailTips are returned in a mailTips collection.
 
 ### GetExpanded (Default)
 ```
-Get-MgUserMailTip -UserId <String> [-AdditionalProperties <Hashtable>] [-EmailAddresses <String[]>]
+Get-MgBetaUserMailTip -UserId <String> [-AdditionalProperties <Hashtable>] [-EmailAddresses <String[]>]
  [-MailTipsOptions <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgUserMailTip -UserId <String>
+Get-MgBetaUserMailTip -UserId <String>
  -BodyParameter <IComponentsM2Vn8QRequestbodiesGetmailtipsrequestbodyContentApplicationJsonSchema> [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### GetViaIdentityExpanded
 ```
-Get-MgUserMailTip -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
+Get-MgBetaUserMailTip -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
  [-EmailAddresses <String[]>] [-MailTipsOptions <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgUserMailTip -InputObject <IUsersActionsIdentity>
+Get-MgBetaUserMailTip -InputObject <IUsersActionsIdentity>
  -BodyParameter <IComponentsM2Vn8QRequestbodiesGetmailtipsrequestbodyContentApplicationJsonSchema> [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
@@ -47,9 +47,9 @@ The requested MailTips are returned in a mailTips collection.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgUserMailTip Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Users.Actions
+Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
 	EmailAddresses = @(
 		"danas@contoso.onmicrosoft.com"
@@ -58,11 +58,8 @@ $params = @{
 	MailTipsOptions = "automaticReplies, mailboxFullStatus"
 }
 # A UPN can also be used as -UserId.
-Get-MgUserMailTip -UserId $userId -BodyParameter $params
+Get-MgBetaUserMailTip -UserId $userId -BodyParameter $params
 ```
-
-This example shows how to use the Get-MgUserMailTip Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -83,7 +80,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IComponentsM2Vn8QRequestbodiesGetmailtipsrequestbodyContentApplicationJsonSchema
@@ -114,7 +111,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersActionsIdentity
@@ -194,11 +191,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IComponentsM2Vn8QRequestbodiesGetmailtipsrequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IComponentsM2Vn8QRequestbodiesGetmailtipsrequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMailTips
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMailTips
 ## NOTES
 
 ALIASES
@@ -208,12 +205,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IComponentsM2Vn8QRequestbodiesGetmailtipsrequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IComponentsM2Vn8QRequestbodiesGetmailtipsrequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[EmailAddresses <String[]>]`: 
   - `[MailTipsOptions <String>]`: mailTipsType
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
@@ -247,7 +244,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription

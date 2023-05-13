@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mgappcatalogteamappdefinitionoutlineiconhostedcontent
+﻿---
+external help file: Microsoft.Graph.Beta.Teams-help.xml
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaappcatalogteamappdefinitionoutlineiconhostedcontent
 schema: 2.0.0
 ---
 
-# Get-MgAppCatalogTeamAppDefinitionOutlineIconHostedContent
+# Get-MgBetaAppCatalogTeamAppDefinitionOutlineIconHostedContent
 
 ## SYNOPSIS
 Retrieve the hosted content in an app's icon.
@@ -14,25 +14,25 @@ Retrieve the hosted content in an app's icon.
 
 ### Get (Default)
 ```
-Get-MgAppCatalogTeamAppDefinitionOutlineIconHostedContent -TeamsAppDefinitionId <String> -TeamsAppId <String>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaAppCatalogTeamAppDefinitionOutlineIconHostedContent -TeamsAppDefinitionId <String>
+ -TeamsAppId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### Get1
 ```
-Get-MgAppCatalogTeamAppDefinitionOutlineIconHostedContent -TeamsAppDefinitionId <String> -TeamsAppId <String>
- -OutFile <String> [-PassThru] [<CommonParameters>]
+Get-MgBetaAppCatalogTeamAppDefinitionOutlineIconHostedContent -TeamsAppDefinitionId <String>
+ -TeamsAppId <String> -OutFile <String> [-PassThru] [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
 ```
-Get-MgAppCatalogTeamAppDefinitionOutlineIconHostedContent -InputObject <ITeamsIdentity> -OutFile <String>
+Get-MgBetaAppCatalogTeamAppDefinitionOutlineIconHostedContent -InputObject <ITeamsIdentity> -OutFile <String>
  [-PassThru] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgAppCatalogTeamAppDefinitionOutlineIconHostedContent -InputObject <ITeamsIdentity>
+Get-MgBetaAppCatalogTeamAppDefinitionOutlineIconHostedContent -InputObject <ITeamsIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
@@ -40,6 +40,20 @@ Get-MgAppCatalogTeamAppDefinitionOutlineIconHostedContent -InputObject <ITeamsId
 Retrieve the hosted content in an app's icon.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -60,7 +74,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ITeamsIdentity
@@ -154,10 +168,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamworkHostedContent
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamworkHostedContent
 ### System.Boolean
 ## NOTES
 
@@ -168,7 +182,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat

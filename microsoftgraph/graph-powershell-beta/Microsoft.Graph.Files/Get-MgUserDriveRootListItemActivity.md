@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Files-help.xml
-Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/get-mguserdriverootlistitemactivity
+﻿---
+external help file: Microsoft.Graph.Beta.Files-help.xml
+Module Name: Microsoft.Graph.Beta.Files
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriverootlistitemactivity
 schema: 2.0.0
 ---
 
-# Get-MgUserDriveRootListItemActivity
+# Get-MgBetaUserDriveRootListItemActivity
 
 ## SYNOPSIS
 The list of recent activities that took place on this item.
@@ -13,7 +13,7 @@ The list of recent activities that took place on this item.
 ## SYNTAX
 
 ```
-Get-MgUserDriveRootListItemActivity -DriveId <String> -UserId <String> [-ExpandProperty <String[]>]
+Get-MgBetaUserDriveRootListItemActivity -DriveId <String> -UserId <String> [-ExpandProperty <String[]>]
  [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
@@ -22,6 +22,20 @@ Get-MgUserDriveRootListItemActivity -DriveId <String> -UserId <String> [-ExpandP
 The list of recent activities that took place on this item.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -213,7 +227,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemActivityOld
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItemActivityOld
 ## NOTES
 
 ALIASES

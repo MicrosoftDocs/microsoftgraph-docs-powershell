@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/new-mgdevicemanagementmanageddevicelogcollectionrequest
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/new-mgbetadevicemanagementmanageddevicelogcollectionrequest
 schema: 2.0.0
 ---
 
-# New-MgDeviceManagementManagedDeviceLogCollectionRequest
+# New-MgBetaDeviceManagementManagedDeviceLogCollectionRequest
 
 ## SYNOPSIS
 Invoke action createDeviceLogCollectionRequest
@@ -14,28 +14,28 @@ Invoke action createDeviceLogCollectionRequest
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementManagedDeviceLogCollectionRequest -ManagedDeviceId <String>
+New-MgBetaDeviceManagementManagedDeviceLogCollectionRequest -ManagedDeviceId <String>
  [-AdditionalProperties <Hashtable>] [-TemplateType <IMicrosoftGraphDeviceLogCollectionRequest>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceManagementManagedDeviceLogCollectionRequest -ManagedDeviceId <String>
+New-MgBetaDeviceManagementManagedDeviceLogCollectionRequest -ManagedDeviceId <String>
  -BodyParameter <IPaths1Bfb5Z4DevicemanagementManageddevicesManageddeviceIdMicrosoftGraphCreatedevicelogcollectionrequestPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgDeviceManagementManagedDeviceLogCollectionRequest -InputObject <IDeviceManagementActionsIdentity>
+New-MgBetaDeviceManagementManagedDeviceLogCollectionRequest -InputObject <IDeviceManagementActionsIdentity>
  [-AdditionalProperties <Hashtable>] [-TemplateType <IMicrosoftGraphDeviceLogCollectionRequest>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgDeviceManagementManagedDeviceLogCollectionRequest -InputObject <IDeviceManagementActionsIdentity>
+New-MgBetaDeviceManagementManagedDeviceLogCollectionRequest -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPaths1Bfb5Z4DevicemanagementManageddevicesManageddeviceIdMicrosoftGraphCreatedevicelogcollectionrequestPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -44,6 +44,20 @@ New-MgDeviceManagementManagedDeviceLogCollectionRequest -InputObject <IDeviceMan
 Invoke action createDeviceLogCollectionRequest
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -64,7 +78,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths1Bfb5Z4DevicemanagementManageddevicesManageddeviceIdMicrosoftGraphCreatedevicelogcollectionrequestPostRequestbodyContentApplicationJsonSchema
@@ -80,7 +94,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementActionsIdentity
@@ -111,7 +125,7 @@ Accept wildcard characters: False
 
 ### -TemplateType
 Windows Log Collection request entity.
-To construct, please use Get-Help -Online and see NOTES section for TEMPLATETYPE properties and create a hash table.
+To construct, see NOTES section for TEMPLATETYPE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceLogCollectionRequest
@@ -161,11 +175,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths1Bfb5Z4DevicemanagementManageddevicesManageddeviceIdMicrosoftGraphCreatedevicelogcollectionrequestPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Bfb5Z4DevicemanagementManageddevicesManageddeviceIdMicrosoftGraphCreatedevicelogcollectionrequestPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceLogCollectionResponse
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceLogCollectionResponse
 ## NOTES
 
 ALIASES
@@ -175,14 +189,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Bfb5Z4DevicemanagementManageddevicesManageddeviceIdMicrosoftGraphCreatedevicelogcollectionrequestPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1Bfb5Z4DevicemanagementManageddevicesManageddeviceIdMicrosoftGraphCreatedevicelogcollectionrequestPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[TemplateType <IMicrosoftGraphDeviceLogCollectionRequest>]`: Windows Log Collection request entity.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier
     - `[TemplateType <DeviceLogCollectionTemplateType?>]`: Enum for the template type used for collecting logs
 
-INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[AlertRecordId <String>]`: The unique identifier of alertRecord
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: The unique identifier of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: The unique identifier of androidForWorkEnrollmentProfile
@@ -226,7 +240,6 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[MicrosoftTunnelSiteId <String>]`: The unique identifier of microsoftTunnelSite
   - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
   - `[NotificationMessageTemplateId <String>]`: The unique identifier of notificationMessageTemplate
-  - `[OemWarrantyInformationOnboardingId <String>]`: The unique identifier of oemWarrantyInformationOnboarding
   - `[RemoteAssistancePartnerId <String>]`: The unique identifier of remoteAssistancePartner
   - `[RoleScopeTagId <String>]`: The unique identifier of roleScopeTag
   - `[WindowsAutopilotDeploymentProfileId <String>]`: The unique identifier of windowsAutopilotDeploymentProfile
@@ -236,7 +249,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
-TEMPLATETYPE `<IMicrosoftGraphDeviceLogCollectionRequest>`: Windows Log Collection request entity.
+`TEMPLATETYPE <IMicrosoftGraphDeviceLogCollectionRequest>`: Windows Log Collection request entity.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier
   - `[TemplateType <DeviceLogCollectionTemplateType?>]`: Enum for the template type used for collecting logs

@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Compliance-help.xml
-Module Name: Microsoft.Graph.Compliance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/new-mgcomplianceediscoverycasecustodianusersource
+﻿---
+external help file: Microsoft.Graph.Beta.Compliance-help.xml
+Module Name: Microsoft.Graph.Beta.Compliance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetacomplianceediscoverycasecustodianusersource
 schema: 2.0.0
 ---
 
-# New-MgComplianceEdiscoveryCaseCustodianUserSource
+# New-MgBetaComplianceEdiscoveryCaseCustodianUserSource
 
 ## SYNOPSIS
 Create a new custodian userSource object.
@@ -14,7 +14,7 @@ Create a new custodian userSource object.
 
 ### CreateExpanded (Default)
 ```
-New-MgComplianceEdiscoveryCaseCustodianUserSource -CaseId <String> -CustodianId <String>
+New-MgBetaComplianceEdiscoveryCaseCustodianUserSource -CaseId <String> -CustodianId <String>
  [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
  [-DisplayName <String>] [-Email <String>] [-HoldStatus <String>] [-Id <String>] [-IncludedSources <String>]
  [-SiteWebUrl <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -22,13 +22,13 @@ New-MgComplianceEdiscoveryCaseCustodianUserSource -CaseId <String> -CustodianId 
 
 ### Create
 ```
-New-MgComplianceEdiscoveryCaseCustodianUserSource -CaseId <String> -CustodianId <String>
+New-MgBetaComplianceEdiscoveryCaseCustodianUserSource -CaseId <String> -CustodianId <String>
  -BodyParameter <IMicrosoftGraphEdiscoveryUserSource> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgComplianceEdiscoveryCaseCustodianUserSource -InputObject <IComplianceIdentity>
+New-MgBetaComplianceEdiscoveryCaseCustodianUserSource -InputObject <IComplianceIdentity>
  [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
  [-DisplayName <String>] [-Email <String>] [-HoldStatus <String>] [-Id <String>] [-IncludedSources <String>]
  [-SiteWebUrl <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -36,7 +36,7 @@ New-MgComplianceEdiscoveryCaseCustodianUserSource -InputObject <IComplianceIdent
 
 ### CreateViaIdentity
 ```
-New-MgComplianceEdiscoveryCaseCustodianUserSource -InputObject <IComplianceIdentity>
+New-MgBetaComplianceEdiscoveryCaseCustodianUserSource -InputObject <IComplianceIdentity>
  -BodyParameter <IMicrosoftGraphEdiscoveryUserSource> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -45,18 +45,15 @@ Create a new custodian userSource object.
 
 ## EXAMPLES
 
-### Example 1: Using the New-MgComplianceEdiscoveryCaseCustodianUserSource Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Compliance
+Import-Module Microsoft.Graph.Beta.Compliance
 $params = @{
 	Email = "megan@contoso.com"
 	IncludedSources = "mailbox, site"
 }
-New-MgComplianceEdiscoveryCaseCustodianUserSource -CaseId $caseId -CustodianId $custodianId -BodyParameter $params
+New-MgBetaComplianceEdiscoveryCaseCustodianUserSource -CaseId $caseId -CustodianId $custodianId -BodyParameter $params
 ```
-
-This example shows how to use the New-MgComplianceEdiscoveryCaseCustodianUserSource Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -77,7 +74,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 userSource
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEdiscoveryUserSource
@@ -108,7 +105,7 @@ Accept wildcard characters: False
 
 ### -CreatedBy
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
+To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet
@@ -231,7 +228,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IComplianceIdentity
@@ -297,11 +294,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryUserSource
+### Microsoft.Graph.Beta.PowerShell.Models.IComplianceIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEdiscoveryUserSource
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryUserSource
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEdiscoveryUserSource
 ## NOTES
 
 ALIASES
@@ -311,7 +308,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphEdiscoveryUserSource>`: userSource
+`BODYPARAMETER <IMicrosoftGraphEdiscoveryUserSource>`: userSource
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -329,7 +326,7 @@ BODYPARAMETER `<IMicrosoftGraphEdiscoveryUserSource>`: userSource
   - `[IncludedSources <String>]`: sourceType
   - `[SiteWebUrl <String>]`: The URL of the user's OneDrive for Business site. Read-only.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+`CREATEDBY <IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -338,7 +335,7 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
+`INPUTOBJECT <IComplianceIdentity>`: Identity Parameter
   - `[CaseId <String>]`: The unique identifier of case
   - `[CaseOperationId <String>]`: The unique identifier of caseOperation
   - `[CustodianId <String>]`: The unique identifier of custodian

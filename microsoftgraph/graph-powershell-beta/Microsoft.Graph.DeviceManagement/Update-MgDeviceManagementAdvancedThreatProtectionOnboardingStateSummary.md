@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementadvancedthreatprotectiononboardingstatesummary
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementadvancedthreatprotectiononboardingstatesummary
 schema: 2.0.0
 ---
 
-# Update-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummary
+# Update-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummary
 
 ## SYNOPSIS
 Update the navigation property advancedThreatProtectionOnboardingStateSummary in deviceManagement
@@ -14,25 +14,38 @@ Update the navigation property advancedThreatProtectionOnboardingStateSummary in
 
 ### UpdateExpanded (Default)
 ```
-Update-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummary [-AdditionalProperties <Hashtable>]
+Update-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummary [-AdditionalProperties <Hashtable>]
  [-AdvancedThreatProtectionOnboardingDeviceSettingStates <IMicrosoftGraphAdvancedThreatProtectionOnboardingDeviceSettingState[]>]
  [-CompliantDeviceCount <Int32>] [-ConflictDeviceCount <Int32>] [-ErrorDeviceCount <Int32>] [-Id <String>]
  [-NonCompliantDeviceCount <Int32>] [-NotApplicableDeviceCount <Int32>] [-NotAssignedDeviceCount <Int32>]
- [-RemediatedDeviceCount <Int32>] [-UnknownDeviceCount <Int32>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-RemediatedDeviceCount <Int32>] [-UnknownDeviceCount <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummary
- -BodyParameter <IMicrosoftGraphAdvancedThreatProtectionOnboardingStateSummary> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummary
+ -BodyParameter <IMicrosoftGraphAdvancedThreatProtectionOnboardingStateSummary> [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property advancedThreatProtectionOnboardingStateSummary in deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -53,7 +66,7 @@ Accept wildcard characters: False
 
 ### -AdvancedThreatProtectionOnboardingDeviceSettingStates
 Not yet documented
-To construct, please use Get-Help -Online and see NOTES section for ADVANCEDTHREATPROTECTIONONBOARDINGDEVICESETTINGSTATES properties and create a hash table.
+To construct, see NOTES section for ADVANCEDTHREATPROTECTIONONBOARDINGDEVICESETTINGSTATES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAdvancedThreatProtectionOnboardingDeviceSettingState[]
@@ -69,7 +82,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Windows defender advanced threat protection onboarding state summary across the account.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAdvancedThreatProtectionOnboardingStateSummary
@@ -129,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -180,21 +193,6 @@ Number of not assigned devices
 ```yaml
 Type: Int32
 Parameter Sets: UpdateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -270,10 +268,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAdvancedThreatProtectionOnboardingStateSummary
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAdvancedThreatProtectionOnboardingStateSummary
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAdvancedThreatProtectionOnboardingStateSummary
 ## NOTES
 
 ALIASES
@@ -283,8 +281,8 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ADVANCEDTHREATPROTECTIONONBOARDINGDEVICESETTINGSTATES <IMicrosoftGraphAdvancedThreatProtectionOnboardingDeviceSettingState\[]>: Not yet documented
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`ADVANCEDTHREATPROTECTIONONBOARDINGDEVICESETTINGSTATES <IMicrosoftGraphAdvancedThreatProtectionOnboardingDeviceSettingState[]>`: Not yet documented
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires
   - `[DeviceId <String>]`: The Device Id that is being reported
   - `[DeviceModel <String>]`: The device model that is being reported
@@ -298,11 +296,11 @@ ADVANCEDTHREATPROTECTIONONBOARDINGDEVICESETTINGSTATES <IMicrosoftGraphAdvancedTh
   - `[UserName <String>]`: The User Name that is being reported
   - `[UserPrincipalName <String>]`: The User PrincipalName that is being reported
 
-BODYPARAMETER `<IMicrosoftGraphAdvancedThreatProtectionOnboardingStateSummary>`: Windows defender advanced threat protection onboarding state summary across the account.
+`BODYPARAMETER <IMicrosoftGraphAdvancedThreatProtectionOnboardingStateSummary>`: Windows defender advanced threat protection onboarding state summary across the account.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStates <IMicrosoftGraphAdvancedThreatProtectionOnboardingDeviceSettingState[]>]`: Not yet documented
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires
     - `[DeviceId <String>]`: The Device Id that is being reported
     - `[DeviceModel <String>]`: The device model that is being reported

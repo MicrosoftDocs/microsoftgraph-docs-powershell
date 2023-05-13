@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgbulkdevicemanagementvirtualendpointcloudpcresize
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetabulkdevicemanagementvirtualendpointcloudpcresize
 schema: 2.0.0
 ---
 
-# Invoke-MgBulkDeviceManagementVirtualEndpointCloudPcResize
+# Invoke-MgBetaBulkDeviceManagementVirtualEndpointCloudPcResize
 
 ## SYNOPSIS
 Invoke action bulkResize
@@ -14,13 +14,13 @@ Invoke action bulkResize
 
 ### BulkExpanded (Default)
 ```
-Invoke-MgBulkDeviceManagementVirtualEndpointCloudPcResize [-AdditionalProperties <Hashtable>]
+Invoke-MgBetaBulkDeviceManagementVirtualEndpointCloudPcResize [-AdditionalProperties <Hashtable>]
  [-CloudPcIds <String[]>] [-TargetServicePlanId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Bulk
 ```
-Invoke-MgBulkDeviceManagementVirtualEndpointCloudPcResize
+Invoke-MgBetaBulkDeviceManagementVirtualEndpointCloudPcResize
  -BodyParameter <IPathsRwbgwyDevicemanagementVirtualendpointCloudpcsMicrosoftGraphBulkresizePostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -29,6 +29,16 @@ Invoke-MgBulkDeviceManagementVirtualEndpointCloudPcResize
 Invoke action bulkResize
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -49,7 +59,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPathsRwbgwyDevicemanagementVirtualendpointCloudpcsMicrosoftGraphBulkresizePostRequestbodyContentApplicationJsonSchema
@@ -129,10 +139,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsRwbgwyDevicemanagementVirtualendpointCloudpcsMicrosoftGraphBulkresizePostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsRwbgwyDevicemanagementVirtualendpointCloudpcsMicrosoftGraphBulkresizePostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCloudPcRemoteActionResult
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcRemoteActionResult
 ## NOTES
 
 ALIASES
@@ -142,7 +152,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsRwbgwyDevicemanagementVirtualendpointCloudpcsMicrosoftGraphBulkresizePostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsRwbgwyDevicemanagementVirtualendpointCloudpcsMicrosoftGraphBulkresizePostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CloudPcIds <String[]>]`: 
   - `[TargetServicePlanId <String>]`: 

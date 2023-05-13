@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Reports-help.xml
-Module Name: Microsoft.Graph.Reports
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgreportteamactivitydetail
+﻿---
+external help file: Microsoft.Graph.Beta.Reports-help.xml
+Module Name: Microsoft.Graph.Beta.Reports
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportteamactivitydetail
 schema: 2.0.0
 ---
 
-# Get-MgReportTeamActivityDetail
+# Get-MgBetaReportTeamActivityDetail
 
 ## SYNOPSIS
 Invoke function getTeamsTeamActivityDetail
@@ -14,23 +14,23 @@ Invoke function getTeamsTeamActivityDetail
 
 ### Get (Default)
 ```
-Get-MgReportTeamActivityDetail -Date <DateTime> -OutFile <String> [-PassThru] [<CommonParameters>]
+Get-MgBetaReportTeamActivityDetail -Date <DateTime> -OutFile <String> [-PassThru] [<CommonParameters>]
 ```
 
 ### Get1
 ```
-Get-MgReportTeamActivityDetail -Period <String> -OutFile <String> [-PassThru] [<CommonParameters>]
+Get-MgBetaReportTeamActivityDetail -Period <String> -OutFile <String> [-PassThru] [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
 ```
-Get-MgReportTeamActivityDetail -InputObject <IReportsIdentity> -OutFile <String> [-PassThru]
+Get-MgBetaReportTeamActivityDetail -InputObject <IReportsIdentity> -OutFile <String> [-PassThru]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgReportTeamActivityDetail -InputObject <IReportsIdentity> -OutFile <String> [-PassThru]
+Get-MgBetaReportTeamActivityDetail -InputObject <IReportsIdentity> -OutFile <String> [-PassThru]
  [<CommonParameters>]
 ```
 
@@ -38,6 +38,20 @@ Get-MgReportTeamActivityDetail -InputObject <IReportsIdentity> -OutFile <String>
 Invoke function getTeamsTeamActivityDetail
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -58,7 +72,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IReportsIdentity
@@ -122,7 +136,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IReportsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IReportsIdentity
 ## OUTPUTS
 
 ### System.Boolean
@@ -135,7 +149,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+`INPUTOBJECT <IReportsIdentity>`: Identity Parameter
   - `[ApplicationSignInDetailedSummaryId <String>]`: The unique identifier of applicationSignInDetailedSummary
   - `[CredentialUserRegistrationDetailsId <String>]`: The unique identifier of credentialUserRegistrationDetails
   - `[Date <DateTime?>]`: Usage: date={date}

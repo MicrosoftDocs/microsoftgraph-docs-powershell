@@ -1,41 +1,39 @@
----
-external help file: Microsoft.Graph.Search-help.xml
-Module Name: Microsoft.Graph.Search
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/remove-mgsearchqna
+﻿---
+external help file: Microsoft.Graph.Beta.Search-help.xml
+Module Name: Microsoft.Graph.Beta.Search
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetasearchqna
 schema: 2.0.0
 ---
 
-# Remove-MgSearchQna
+# Remove-MgBetaSearchQna
 
 ## SYNOPSIS
-Delete navigation property qnas for search
+Delete a qna object.
 
 ## SYNTAX
 
 ### Delete (Default)
 ```
-Remove-MgSearchQna -QnaId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgBetaSearchQna -QnaId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgSearchQna -InputObject <ISearchIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+Remove-MgBetaSearchQna -InputObject <ISearchIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete navigation property qnas for search
+Delete a qna object.
 
 ## EXAMPLES
 
-### Example 1: Using the Remove-MgSearchQna Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Search
-Remove-MgSearchQna -QnaId $qnaId
+Import-Module Microsoft.Graph.Beta.Search
+Remove-MgBetaSearchQna -QnaId $qnaId
 ```
-
-This example shows how to use the Remove-MgSearchQna Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -56,7 +54,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ISearchIdentity
@@ -136,7 +134,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ISearchIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ISearchIdentity
 ## OUTPUTS
 
 ### System.Boolean
@@ -149,7 +147,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
+`INPUTOBJECT <ISearchIdentity>`: Identity Parameter
   - `[AcronymId <String>]`: The unique identifier of acronym
   - `[BookmarkId <String>]`: The unique identifier of bookmark
   - `[ConnectionOperationId <String>]`: The unique identifier of connectionOperation

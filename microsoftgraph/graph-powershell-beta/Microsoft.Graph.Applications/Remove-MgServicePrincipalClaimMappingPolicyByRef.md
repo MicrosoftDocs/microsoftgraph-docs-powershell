@@ -1,42 +1,40 @@
----
-external help file: Microsoft.Graph.Applications-help.xml
-Module Name: Microsoft.Graph.Applications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalclaimmappingpolicybyref
+﻿---
+external help file: Microsoft.Graph.Beta.Applications-help.xml
+Module Name: Microsoft.Graph.Beta.Applications
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalclaimmappingpolicybyref
 schema: 2.0.0
 ---
 
-# Remove-MgServicePrincipalClaimMappingPolicyByRef
+# Remove-MgBetaServicePrincipalClaimMappingPolicyByRef
 
 ## SYNOPSIS
-Delete ref of navigation property claimsMappingPolicies for servicePrincipals
+Remove a claimsMappingPolicy from a servicePrincipal.
 
 ## SYNTAX
 
 ### Delete (Default)
 ```
-Remove-MgServicePrincipalClaimMappingPolicyByRef -ClaimsMappingPolicyId <String> -ServicePrincipalId <String>
- [-Id <String>] [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgBetaServicePrincipalClaimMappingPolicyByRef -ClaimsMappingPolicyId <String>
+ -ServicePrincipalId <String> [-Id <String>] [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgServicePrincipalClaimMappingPolicyByRef -InputObject <IApplicationsIdentity> [-Id <String>]
+Remove-MgBetaServicePrincipalClaimMappingPolicyByRef -InputObject <IApplicationsIdentity> [-Id <String>]
  [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete ref of navigation property claimsMappingPolicies for servicePrincipals
+Remove a claimsMappingPolicy from a servicePrincipal.
 
 ## EXAMPLES
 
-### Example 1: Using the Remove-MgServicePrincipalClaimMappingPolicyByRef Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Applications
-Remove-MgServicePrincipalClaimMappingPolicyByRef -ServicePrincipalId $servicePrincipalId -ClaimsMappingPolicyId $claimsMappingPolicyId
+Import-Module Microsoft.Graph.Beta.Applications
+Remove-MgBetaServicePrincipalClaimMappingPolicyByRef -ServicePrincipalId $servicePrincipalId -ClaimsMappingPolicyId $claimsMappingPolicyId
 ```
-
-This example shows how to use the Remove-MgServicePrincipalClaimMappingPolicyByRef Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -87,7 +85,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IApplicationsIdentity
@@ -167,7 +165,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
 ## OUTPUTS
 
 ### System.Boolean
@@ -180,7 +178,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+`INPUTOBJECT <IApplicationsIdentity>`: Identity Parameter
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
   - `[ApplicationId <String>]`: The unique identifier of application

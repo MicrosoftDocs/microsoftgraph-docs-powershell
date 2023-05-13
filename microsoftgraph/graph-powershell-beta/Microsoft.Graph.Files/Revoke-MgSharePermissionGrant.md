@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Files-help.xml
-Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/revoke-mgsharepermissiongrant
+﻿---
+external help file: Microsoft.Graph.Beta.Files-help.xml
+Module Name: Microsoft.Graph.Beta.Files
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/revoke-mgbetasharepermissiongrant
 schema: 2.0.0
 ---
 
-# Revoke-MgSharePermissionGrant
+# Revoke-MgBetaSharePermissionGrant
 
 ## SYNOPSIS
 Revoke access to a [listItem][] or [driveItem][] granted via a sharing link by removing the specified [recipient][] from the link.
@@ -14,26 +14,26 @@ Revoke access to a [listItem][] or [driveItem][] granted via a sharing link by r
 
 ### RevokeExpanded (Default)
 ```
-Revoke-MgSharePermissionGrant -SharedDriveItemId <String> [-AdditionalProperties <Hashtable>]
+Revoke-MgBetaSharePermissionGrant -SharedDriveItemId <String> [-AdditionalProperties <Hashtable>]
  [-Grantees <IMicrosoftGraphDriveRecipient[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Revoke
 ```
-Revoke-MgSharePermissionGrant -SharedDriveItemId <String>
+Revoke-MgBetaSharePermissionGrant -SharedDriveItemId <String>
  -BodyParameter <IPaths50Xy75SharesShareddriveitemIdPermissionMicrosoftGraphRevokegrantsPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### RevokeViaIdentityExpanded
 ```
-Revoke-MgSharePermissionGrant -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
+Revoke-MgBetaSharePermissionGrant -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
  [-Grantees <IMicrosoftGraphDriveRecipient[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### RevokeViaIdentity
 ```
-Revoke-MgSharePermissionGrant -InputObject <IFilesIdentity>
+Revoke-MgBetaSharePermissionGrant -InputObject <IFilesIdentity>
  -BodyParameter <IPaths50Xy75SharesShareddriveitemIdPermissionMicrosoftGraphRevokegrantsPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -42,6 +42,20 @@ Revoke-MgSharePermissionGrant -InputObject <IFilesIdentity>
 Revoke access to a [listItem][] or [driveItem][] granted via a sharing link by removing the specified [recipient][] from the link.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -62,7 +76,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths50Xy75SharesShareddriveitemIdPermissionMicrosoftGraphRevokegrantsPostRequestbodyContentApplicationJsonSchema
@@ -78,7 +92,7 @@ Accept wildcard characters: False
 
 ### -Grantees
 .
-To construct, please use Get-Help -Online and see NOTES section for GRANTEES properties and create a hash table.
+To construct, see NOTES section for GRANTEES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDriveRecipient[]
@@ -94,7 +108,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IFilesIdentity
@@ -159,11 +173,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths50Xy75SharesShareddriveitemIdPermissionMicrosoftGraphRevokegrantsPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths50Xy75SharesShareddriveitemIdPermissionMicrosoftGraphRevokegrantsPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPermission1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPermission
 ## NOTES
 
 ALIASES
@@ -173,19 +187,19 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths50Xy75SharesShareddriveitemIdPermissionMicrosoftGraphRevokegrantsPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths50Xy75SharesShareddriveitemIdPermissionMicrosoftGraphRevokegrantsPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Grantees <IMicrosoftGraphDriveRecipient[]>]`: 
     - `[Alias <String>]`: The alias of the domain object, for cases where an email address is unavailable (e.g. security groups).
     - `[Email <String>]`: The email address for the recipient, if the recipient has an associated email address.
     - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
 
-GRANTEES <IMicrosoftGraphDriveRecipient\[]>: .
+`GRANTEES <IMicrosoftGraphDriveRecipient[]>`: .
   - `[Alias <String>]`: The alias of the domain object, for cases where an email address is unavailable (e.g. security groups).
   - `[Email <String>]`: The email address for the recipient, if the recipient has an associated email address.
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+`INPUTOBJECT <IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType

@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Users-help.xml
-Module Name: Microsoft.Graph.Users
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/update-mgusersettingregionalandlanguagesetting
+﻿---
+external help file: Microsoft.Graph.Beta.Users-help.xml
+Module Name: Microsoft.Graph.Beta.Users
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingregionalandlanguagesetting
 schema: 2.0.0
 ---
 
-# Update-MgUserSettingRegionalAndLanguageSetting
+# Update-MgBetaUserSettingRegionalAndLanguageSetting
 
 ## SYNOPSIS
 Update some or all of the properties of a regionalAndLanguageSettings object.
@@ -14,39 +14,35 @@ Update some or all of the properties of a regionalAndLanguageSettings object.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgUserSettingRegionalAndLanguageSetting -UserId <String> [-AdditionalProperties <Hashtable>]
+Update-MgBetaUserSettingRegionalAndLanguageSetting -UserId <String> [-AdditionalProperties <Hashtable>]
  [-AuthoringLanguages <IMicrosoftGraphLocaleInfo[]>] [-DefaultDisplayLanguage <IMicrosoftGraphLocaleInfo>]
  [-DefaultRegionalFormat <IMicrosoftGraphLocaleInfo>] [-DefaultSpeechInputLanguage <IMicrosoftGraphLocaleInfo>]
  [-DefaultTranslationLanguage <IMicrosoftGraphLocaleInfo>] [-Id <String>]
  [-RegionalFormatOverrides <IMicrosoftGraphRegionalFormatOverrides>]
- [-TranslationPreferences <IMicrosoftGraphTranslationPreferences>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-TranslationPreferences <IMicrosoftGraphTranslationPreferences>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgUserSettingRegionalAndLanguageSetting -UserId <String>
- -BodyParameter <IMicrosoftGraphRegionalAndLanguageSettings> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaUserSettingRegionalAndLanguageSetting -UserId <String>
+ -BodyParameter <IMicrosoftGraphRegionalAndLanguageSettings> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgUserSettingRegionalAndLanguageSetting -InputObject <IUsersIdentity>
+Update-MgBetaUserSettingRegionalAndLanguageSetting -InputObject <IUsersIdentity>
  [-AdditionalProperties <Hashtable>] [-AuthoringLanguages <IMicrosoftGraphLocaleInfo[]>]
  [-DefaultDisplayLanguage <IMicrosoftGraphLocaleInfo>] [-DefaultRegionalFormat <IMicrosoftGraphLocaleInfo>]
  [-DefaultSpeechInputLanguage <IMicrosoftGraphLocaleInfo>]
  [-DefaultTranslationLanguage <IMicrosoftGraphLocaleInfo>] [-Id <String>]
  [-RegionalFormatOverrides <IMicrosoftGraphRegionalFormatOverrides>]
- [-TranslationPreferences <IMicrosoftGraphTranslationPreferences>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-TranslationPreferences <IMicrosoftGraphTranslationPreferences>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgUserSettingRegionalAndLanguageSetting -InputObject <IUsersIdentity>
- -BodyParameter <IMicrosoftGraphRegionalAndLanguageSettings> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaUserSettingRegionalAndLanguageSetting -InputObject <IUsersIdentity>
+ -BodyParameter <IMicrosoftGraphRegionalAndLanguageSettings> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -54,9 +50,9 @@ Update some or all of the properties of a regionalAndLanguageSettings object.
 
 ## EXAMPLES
 
-### Example 1: Using the Update-MgUserSettingRegionalAndLanguageSetting Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Users
+Import-Module Microsoft.Graph.Beta.Users
 $params = @{
 	AuthoringLanguages = @(
 		@{
@@ -71,11 +67,8 @@ $params = @{
 	}
 }
 # A UPN can also be used as -UserId.
-Update-MgUserSettingRegionalAndLanguageSetting -UserId $userId -BodyParameter $params
+Update-MgBetaUserSettingRegionalAndLanguageSetting -UserId $userId -BodyParameter $params
 ```
-
-This example shows how to use the Update-MgUserSettingRegionalAndLanguageSetting Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -97,7 +90,7 @@ Accept wildcard characters: False
 ### -AuthoringLanguages
 Prioritized list of languages the user reads and authors in.Returned by default.
 Not nullable.
-To construct, please use Get-Help -Online and see NOTES section for AUTHORINGLANGUAGES properties and create a hash table.
+To construct, see NOTES section for AUTHORINGLANGUAGES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphLocaleInfo[]
@@ -113,7 +106,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 regionalAndLanguageSettings
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRegionalAndLanguageSettings
@@ -129,7 +122,7 @@ Accept wildcard characters: False
 
 ### -DefaultDisplayLanguage
 localeInfo
-To construct, please use Get-Help -Online and see NOTES section for DEFAULTDISPLAYLANGUAGE properties and create a hash table.
+To construct, see NOTES section for DEFAULTDISPLAYLANGUAGE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphLocaleInfo
@@ -145,7 +138,7 @@ Accept wildcard characters: False
 
 ### -DefaultRegionalFormat
 localeInfo
-To construct, please use Get-Help -Online and see NOTES section for DEFAULTREGIONALFORMAT properties and create a hash table.
+To construct, see NOTES section for DEFAULTREGIONALFORMAT properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphLocaleInfo
@@ -161,7 +154,7 @@ Accept wildcard characters: False
 
 ### -DefaultSpeechInputLanguage
 localeInfo
-To construct, please use Get-Help -Online and see NOTES section for DEFAULTSPEECHINPUTLANGUAGE properties and create a hash table.
+To construct, see NOTES section for DEFAULTSPEECHINPUTLANGUAGE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphLocaleInfo
@@ -177,7 +170,7 @@ Accept wildcard characters: False
 
 ### -DefaultTranslationLanguage
 localeInfo
-To construct, please use Get-Help -Online and see NOTES section for DEFAULTTRANSLATIONLANGUAGE properties and create a hash table.
+To construct, see NOTES section for DEFAULTTRANSLATIONLANGUAGE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphLocaleInfo
@@ -192,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -209,7 +202,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersIdentity
@@ -223,24 +216,9 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -RegionalFormatOverrides
 regionalFormatOverrides
-To construct, please use Get-Help -Online and see NOTES section for REGIONALFORMATOVERRIDES properties and create a hash table.
+To construct, see NOTES section for REGIONALFORMATOVERRIDES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRegionalFormatOverrides
@@ -256,7 +234,7 @@ Accept wildcard characters: False
 
 ### -TranslationPreferences
 translationPreferences
-To construct, please use Get-Help -Online and see NOTES section for TRANSLATIONPREFERENCES properties and create a hash table.
+To construct, see NOTES section for TRANSLATIONPREFERENCES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphTranslationPreferences
@@ -321,11 +299,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRegionalAndLanguageSettings
-### Microsoft.Graph.PowerShell.Models.IUsersIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRegionalAndLanguageSettings
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersIdentity
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRegionalAndLanguageSettings
 ## NOTES
 
 ALIASES
@@ -335,13 +313,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-AUTHORINGLANGUAGES <IMicrosoftGraphLocaleInfo\[]>: Prioritized list of languages the user reads and authors in.Returned by default. Not nullable.
+`AUTHORINGLANGUAGES <IMicrosoftGraphLocaleInfo[]>`: Prioritized list of languages the user reads and authors in.Returned by default. Not nullable.
   - `[DisplayName <String>]`: A name representing the user's locale in natural language, for example, 'English (United States)'.
   - `[Locale <String>]`: A locale representation for the user, which includes the user's preferred language and country/region. For example, 'en-us'. The language component follows 2-letter codes as defined in ISO 639-1, and the country component follows 2-letter codes as defined in ISO 3166-1 alpha-2.
 
-BODYPARAMETER `<IMicrosoftGraphRegionalAndLanguageSettings>`: regionalAndLanguageSettings
+`BODYPARAMETER <IMicrosoftGraphRegionalAndLanguageSettings>`: regionalAndLanguageSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AuthoringLanguages <IMicrosoftGraphLocaleInfo[]>]`: Prioritized list of languages the user reads and authors in.Returned by default. Not nullable.
     - `[DisplayName <String>]`: A name representing the user's locale in natural language, for example, 'English (United States)'.
     - `[Locale <String>]`: A locale representation for the user, which includes the user's preferred language and country/region. For example, 'en-us'. The language component follows 2-letter codes as defined in ISO 639-1, and the country component follows 2-letter codes as defined in ISO 3166-1 alpha-2.
@@ -366,27 +344,27 @@ BODYPARAMETER `<IMicrosoftGraphRegionalAndLanguageSettings>`: regionalAndLanguag
     - `[TranslationBehavior <String>]`: translationBehavior
     - `[UntranslatedLanguages <String[]>]`: The list of languages the user does not need translated. This is computed from the authoringLanguages collection in regionalAndLanguageSettings, and the languageOverrides collection in translationPreferences. The list specifies neutral culture values that include the language code without any country or region association. For example, it would specify 'fr' for the neutral French culture, but not 'fr-FR' for the French culture in France. Returned by default. Read only.
 
-DEFAULTDISPLAYLANGUAGE `<IMicrosoftGraphLocaleInfo>`: localeInfo
+`DEFAULTDISPLAYLANGUAGE <IMicrosoftGraphLocaleInfo>`: localeInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: A name representing the user's locale in natural language, for example, 'English (United States)'.
   - `[Locale <String>]`: A locale representation for the user, which includes the user's preferred language and country/region. For example, 'en-us'. The language component follows 2-letter codes as defined in ISO 639-1, and the country component follows 2-letter codes as defined in ISO 3166-1 alpha-2.
 
-DEFAULTREGIONALFORMAT `<IMicrosoftGraphLocaleInfo>`: localeInfo
+`DEFAULTREGIONALFORMAT <IMicrosoftGraphLocaleInfo>`: localeInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: A name representing the user's locale in natural language, for example, 'English (United States)'.
   - `[Locale <String>]`: A locale representation for the user, which includes the user's preferred language and country/region. For example, 'en-us'. The language component follows 2-letter codes as defined in ISO 639-1, and the country component follows 2-letter codes as defined in ISO 3166-1 alpha-2.
 
-DEFAULTSPEECHINPUTLANGUAGE `<IMicrosoftGraphLocaleInfo>`: localeInfo
+`DEFAULTSPEECHINPUTLANGUAGE <IMicrosoftGraphLocaleInfo>`: localeInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: A name representing the user's locale in natural language, for example, 'English (United States)'.
   - `[Locale <String>]`: A locale representation for the user, which includes the user's preferred language and country/region. For example, 'en-us'. The language component follows 2-letter codes as defined in ISO 639-1, and the country component follows 2-letter codes as defined in ISO 3166-1 alpha-2.
 
-DEFAULTTRANSLATIONLANGUAGE `<IMicrosoftGraphLocaleInfo>`: localeInfo
+`DEFAULTTRANSLATIONLANGUAGE <IMicrosoftGraphLocaleInfo>`: localeInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: A name representing the user's locale in natural language, for example, 'English (United States)'.
   - `[Locale <String>]`: A locale representation for the user, which includes the user's preferred language and country/region. For example, 'en-us'. The language component follows 2-letter codes as defined in ISO 639-1, and the country component follows 2-letter codes as defined in ISO 3166-1 alpha-2.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersIdentity>`: Identity Parameter
   - `[AttachmentBaseId <String>]`: The unique identifier of attachmentBase
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[AttachmentSessionId <String>]`: The unique identifier of attachmentSession
@@ -395,7 +373,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
   - `[LinkedResourceId <String>]`: The unique identifier of linkedResource
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
   - `[NotificationId <String>]`: The unique identifier of notification
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[OutlookCategoryId <String>]`: The unique identifier of outlookCategory
@@ -403,12 +380,11 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
   - `[TodoTaskId <String>]`: The unique identifier of todoTask
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
   - `[UserId <String>]`: The unique identifier of user
 
-REGIONALFORMATOVERRIDES `<IMicrosoftGraphRegionalFormatOverrides>`: regionalFormatOverrides
+`REGIONALFORMATOVERRIDES <IMicrosoftGraphRegionalFormatOverrides>`: regionalFormatOverrides
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Calendar <String>]`: The calendar to use, e.g., Gregorian Calendar.Returned by default.
   - `[FirstDayOfWeek <String>]`: The first day of the week to use, e.g., Sunday.Returned by default.
@@ -418,7 +394,7 @@ REGIONALFORMATOVERRIDES `<IMicrosoftGraphRegionalFormatOverrides>`: regionalForm
   - `[ShortTimeFormat <String>]`: The short time format to be used for displaying time.Returned by default.
   - `[TimeZone <String>]`: The timezone to be used for displaying time.Returned by default.
 
-TRANSLATIONPREFERENCES `<IMicrosoftGraphTranslationPreferences>`: translationPreferences
+`TRANSLATIONPREFERENCES <IMicrosoftGraphTranslationPreferences>`: translationPreferences
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[LanguageOverrides <IMicrosoftGraphTranslationLanguageOverride[]>]`: Translation override behavior for languages, if any.Returned by default.
     - `[LanguageTag <String>]`: The language to apply the override.Returned by default. Not nullable.

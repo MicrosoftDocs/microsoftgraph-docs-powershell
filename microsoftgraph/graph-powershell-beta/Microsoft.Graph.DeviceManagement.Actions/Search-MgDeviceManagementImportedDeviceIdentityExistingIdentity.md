@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/search-mgdevicemanagementimporteddeviceidentityexistingidentity
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/search-mgbetadevicemanagementimporteddeviceidentityexistingidentity
 schema: 2.0.0
 ---
 
-# Search-MgDeviceManagementImportedDeviceIdentityExistingIdentity
+# Search-MgBetaDeviceManagementImportedDeviceIdentityExistingIdentity
 
 ## SYNOPSIS
 Invoke action searchExistingIdentities
@@ -14,14 +14,14 @@ Invoke action searchExistingIdentities
 
 ### SearchExpanded (Default)
 ```
-Search-MgDeviceManagementImportedDeviceIdentityExistingIdentity [-AdditionalProperties <Hashtable>]
+Search-MgBetaDeviceManagementImportedDeviceIdentityExistingIdentity [-AdditionalProperties <Hashtable>]
  [-ImportedDeviceIdentities <IMicrosoftGraphImportedDeviceIdentity[]>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Search
 ```
-Search-MgDeviceManagementImportedDeviceIdentityExistingIdentity
+Search-MgBetaDeviceManagementImportedDeviceIdentityExistingIdentity
  -BodyParameter <IPathsHi19O6DevicemanagementImporteddeviceidentitiesMicrosoftGraphSearchexistingidentitiesPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -30,6 +30,20 @@ Search-MgDeviceManagementImportedDeviceIdentityExistingIdentity
 Invoke action searchExistingIdentities
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -50,7 +64,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPathsHi19O6DevicemanagementImporteddeviceidentitiesMicrosoftGraphSearchexistingidentitiesPostRequestbodyContentApplicationJsonSchema
@@ -66,7 +80,7 @@ Accept wildcard characters: False
 
 ### -ImportedDeviceIdentities
 .
-To construct, please use Get-Help -Online and see NOTES section for IMPORTEDDEVICEIDENTITIES properties and create a hash table.
+To construct, see NOTES section for IMPORTEDDEVICEIDENTITIES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphImportedDeviceIdentity[]
@@ -116,10 +130,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsHi19O6DevicemanagementImporteddeviceidentitiesMicrosoftGraphSearchexistingidentitiesPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsHi19O6DevicemanagementImporteddeviceidentitiesMicrosoftGraphSearchexistingidentitiesPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphImportedDeviceIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphImportedDeviceIdentity
 ## NOTES
 
 ALIASES
@@ -129,10 +143,10 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsHi19O6DevicemanagementImporteddeviceidentitiesMicrosoftGraphSearchexistingidentitiesPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsHi19O6DevicemanagementImporteddeviceidentitiesMicrosoftGraphSearchexistingidentitiesPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ImportedDeviceIdentities <IMicrosoftGraphImportedDeviceIdentity[]>]`: 
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[CreatedDateTime <DateTime?>]`: Created Date Time of the device
     - `[Description <String>]`: The description of the device
     - `[EnrollmentState <EnrollmentState?>]`: enrollmentState
@@ -142,8 +156,8 @@ BODYPARAMETER `<IPathsHi19O6DevicemanagementImporteddeviceidentitiesMicrosoftGra
     - `[LastModifiedDateTime <DateTime?>]`: Last Modified DateTime of the description
     - `[Platform <Platform?>]`: platform
 
-IMPORTEDDEVICEIDENTITIES <IMicrosoftGraphImportedDeviceIdentity\[]>: .
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`IMPORTEDDEVICEIDENTITIES <IMicrosoftGraphImportedDeviceIdentity[]>`: .
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[CreatedDateTime <DateTime?>]`: Created Date Time of the device
   - `[Description <String>]`: The description of the device
   - `[EnrollmentState <EnrollmentState?>]`: enrollmentState

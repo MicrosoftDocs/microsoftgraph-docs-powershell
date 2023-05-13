@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/new-mgsecurityincident
+﻿---
+external help file: Microsoft.Graph.Beta.Security-help.xml
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityincident
 schema: 2.0.0
 ---
 
-# New-MgSecurityIncident
+# New-MgBetaSecurityIncident
 
 ## SYNOPSIS
 Create new navigation property to incidents for security
@@ -14,7 +14,7 @@ Create new navigation property to incidents for security
 
 ### CreateExpanded (Default)
 ```
-New-MgSecurityIncident [-AdditionalProperties <Hashtable>] [-Alerts <IMicrosoftGraphSecurityAlert1[]>]
+New-MgBetaSecurityIncident [-AdditionalProperties <Hashtable>] [-Alerts <IMicrosoftGraphSecurityAlert[]>]
  [-AssignedTo <String>] [-Classification <String>] [-Comments <IMicrosoftGraphSecurityAlertComment[]>]
  [-CreatedDateTime <DateTime>] [-CustomTags <String[]>] [-Description <String>] [-Determination <String>]
  [-DisplayName <String>] [-Id <String>] [-IncidentWebUrl <String>] [-LastUpdateDateTime <DateTime>]
@@ -25,7 +25,7 @@ New-MgSecurityIncident [-AdditionalProperties <Hashtable>] [-Alerts <IMicrosoftG
 
 ### Create
 ```
-New-MgSecurityIncident -BodyParameter <IMicrosoftGraphSecurityIncident1> [-WhatIf] [-Confirm]
+New-MgBetaSecurityIncident -BodyParameter <IMicrosoftGraphSecurityIncident> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -33,6 +33,20 @@ New-MgSecurityIncident -BodyParameter <IMicrosoftGraphSecurityIncident1> [-WhatI
 Create new navigation property to incidents for security
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -54,10 +68,10 @@ Accept wildcard characters: False
 ### -Alerts
 The list of related alerts.
 Supports $expand.
-To construct, please use Get-Help -Online and see NOTES section for ALERTS properties and create a hash table.
+To construct, see NOTES section for ALERTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityAlert1[]
+Type: IMicrosoftGraphSecurityAlert[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -86,10 +100,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 incident
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityIncident1
+Type: IMicrosoftGraphSecurityIncident
 Parameter Sets: Create
 Aliases:
 
@@ -117,7 +131,7 @@ Accept wildcard characters: False
 
 ### -Comments
 Array of comments created by the Security Operations (SecOps) team when the incident is managed.
-To construct, please use Get-Help -Online and see NOTES section for COMMENTS properties and create a hash table.
+To construct, see NOTES section for COMMENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSecurityAlertComment[]
@@ -207,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -269,7 +283,7 @@ Accept wildcard characters: False
 
 ### -RecommendedHuntingQueries
 .
-To construct, please use Get-Help -Online and see NOTES section for RECOMMENDEDHUNTINGQUERIES properties and create a hash table.
+To construct, see NOTES section for RECOMMENDEDHUNTINGQUERIES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSecurityRecommendedHuntingQuery[]
@@ -395,10 +409,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityIncident1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityIncident
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityIncident1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityIncident
 ## NOTES
 
 ALIASES
@@ -408,8 +422,8 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ALERTS <IMicrosoftGraphSecurityAlert1\[]>: The list of related alerts. Supports $expand.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`ALERTS <IMicrosoftGraphSecurityAlert[]>`: The list of related alerts. Supports $expand.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ActorDisplayName <String>]`: The adversary or activity group that is associated with this alert.
   - `[AlertWebUrl <String>]`: URL for the alert page in the Microsoft 365 Defender portal.
   - `[AssignedTo <String>]`: Owner of the alert, or null if no owner is assigned.
@@ -424,7 +438,7 @@ ALERTS <IMicrosoftGraphSecurityAlert1\[]>: The list of related alerts. Supports 
   - `[DetectionSource <String>]`: detectionSource
   - `[DetectorId <String>]`: The ID of the detector that triggered the alert.
   - `[Determination <String>]`: alertDetermination
-  - `[Evidence <IMicrosoftGraphSecurityAlertEvidence1[]>]`: Collection of evidence related to the alert.
+  - `[Evidence <IMicrosoftGraphSecurityAlertEvidence[]>]`: Collection of evidence related to the alert.
     - `[CreatedDateTime <DateTime?>]`: The time the evidence was created and added to the alert.
     - `[RemediationStatus <String>]`: evidenceRemediationStatus
     - `[RemediationStatusDetails <String>]`: Details about the remediation status.
@@ -449,11 +463,11 @@ ALERTS <IMicrosoftGraphSecurityAlert1\[]>: The list of related alerts. Supports 
   - `[ThreatFamilyName <String>]`: Threat family associated with this alert.
   - `[Title <String>]`: Brief identifying string value describing the alert.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityIncident1>`: incident
+`BODYPARAMETER <IMicrosoftGraphSecurityIncident>`: incident
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[Alerts <IMicrosoftGraphSecurityAlert1[]>]`: The list of related alerts. Supports $expand.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
+  - `[Alerts <IMicrosoftGraphSecurityAlert[]>]`: The list of related alerts. Supports $expand.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[ActorDisplayName <String>]`: The adversary or activity group that is associated with this alert.
     - `[AlertWebUrl <String>]`: URL for the alert page in the Microsoft 365 Defender portal.
     - `[AssignedTo <String>]`: Owner of the alert, or null if no owner is assigned.
@@ -468,7 +482,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityIncident1>`: incident
     - `[DetectionSource <String>]`: detectionSource
     - `[DetectorId <String>]`: The ID of the detector that triggered the alert.
     - `[Determination <String>]`: alertDetermination
-    - `[Evidence <IMicrosoftGraphSecurityAlertEvidence1[]>]`: Collection of evidence related to the alert.
+    - `[Evidence <IMicrosoftGraphSecurityAlertEvidence[]>]`: Collection of evidence related to the alert.
       - `[CreatedDateTime <DateTime?>]`: The time the evidence was created and added to the alert.
       - `[RemediationStatus <String>]`: evidenceRemediationStatus
       - `[RemediationStatusDetails <String>]`: Details about the remediation status.
@@ -511,12 +525,12 @@ BODYPARAMETER `<IMicrosoftGraphSecurityIncident1>`: incident
   - `[SystemTags <String[]>]`: 
   - `[TenantId <String>]`: The Azure Active Directory tenant in which the alert was created.
 
-COMMENTS <IMicrosoftGraphSecurityAlertComment\[]>: Array of comments created by the Security Operations (SecOps) team when the incident is managed.
+`COMMENTS <IMicrosoftGraphSecurityAlertComment[]>`: Array of comments created by the Security Operations (SecOps) team when the incident is managed.
   - `[Comment <String>]`: The comment text.
   - `[CreatedByDisplayName <String>]`: The person or app name that submitted the comment.
   - `[CreatedDateTime <DateTime?>]`: The time when the comment was submitted.
 
-RECOMMENDEDHUNTINGQUERIES <IMicrosoftGraphSecurityRecommendedHuntingQuery\[]>: .
+`RECOMMENDEDHUNTINGQUERIES <IMicrosoftGraphSecurityRecommendedHuntingQuery[]>`: .
   - `[KqlText <String>]`: 
 
 ## RELATED LINKS

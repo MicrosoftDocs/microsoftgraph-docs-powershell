@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementembeddedsimactivationcodepooldevicestate
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementembeddedsimactivationcodepooldevicestate
 schema: 2.0.0
 ---
 
-# Update-MgDeviceManagementEmbeddedSimActivationCodePoolDeviceState
+# Update-MgBetaDeviceManagementEmbeddedSimActivationCodePoolDeviceState
 
 ## SYNOPSIS
 Update the navigation property deviceStates in deviceManagement
@@ -14,40 +14,54 @@ Update the navigation property deviceStates in deviceManagement
 
 ### UpdateExpanded (Default)
 ```
-Update-MgDeviceManagementEmbeddedSimActivationCodePoolDeviceState -EmbeddedSimActivationCodePoolId <String>
+Update-MgBetaDeviceManagementEmbeddedSimActivationCodePoolDeviceState -EmbeddedSimActivationCodePoolId <String>
  -EmbeddedSimDeviceStateId <String> [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
  [-DeviceName <String>] [-Id <String>] [-LastSyncDateTime <DateTime>] [-ModifiedDateTime <DateTime>]
  [-State <EmbeddedSimDeviceStateValue>] [-StateDetails <String>]
- [-UniversalIntegratedCircuitCardIdentifier <String>] [-UserName <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [-UniversalIntegratedCircuitCardIdentifier <String>] [-UserName <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgDeviceManagementEmbeddedSimActivationCodePoolDeviceState -EmbeddedSimActivationCodePoolId <String>
- -EmbeddedSimDeviceStateId <String> -BodyParameter <IMicrosoftGraphEmbeddedSimDeviceState> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaDeviceManagementEmbeddedSimActivationCodePoolDeviceState -EmbeddedSimActivationCodePoolId <String>
+ -EmbeddedSimDeviceStateId <String> -BodyParameter <IMicrosoftGraphEmbeddedSimDeviceState> [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgDeviceManagementEmbeddedSimActivationCodePoolDeviceState -InputObject <IDeviceManagementIdentity>
+Update-MgBetaDeviceManagementEmbeddedSimActivationCodePoolDeviceState -InputObject <IDeviceManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-DeviceName <String>] [-Id <String>]
  [-LastSyncDateTime <DateTime>] [-ModifiedDateTime <DateTime>] [-State <EmbeddedSimDeviceStateValue>]
- [-StateDetails <String>] [-UniversalIntegratedCircuitCardIdentifier <String>] [-UserName <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-StateDetails <String>] [-UniversalIntegratedCircuitCardIdentifier <String>] [-UserName <String>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgDeviceManagementEmbeddedSimActivationCodePoolDeviceState -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphEmbeddedSimDeviceState> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaDeviceManagementEmbeddedSimActivationCodePoolDeviceState -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphEmbeddedSimDeviceState> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property deviceStates in deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -68,7 +82,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Describes the embedded SIM activation code deployment state in relation to a device.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEmbeddedSimDeviceState
@@ -145,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -162,7 +176,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementIdentity
@@ -199,21 +213,6 @@ Updated service side.
 ```yaml
 Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -320,11 +319,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEmbeddedSimDeviceState
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEmbeddedSimDeviceState
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEmbeddedSimDeviceState
 ## NOTES
 
 ALIASES
@@ -334,9 +333,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphEmbeddedSimDeviceState>`: Describes the embedded SIM activation code deployment state in relation to a device.
+`BODYPARAMETER <IMicrosoftGraphEmbeddedSimDeviceState>`: Describes the embedded SIM activation code deployment state in relation to a device.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[CreatedDateTime <DateTime?>]`: The time the embedded SIM device status was created. Generated service side.
   - `[DeviceName <String>]`: Device name to which the subscription was provisioned e.g. DESKTOP-JOE
   - `[LastSyncDateTime <DateTime?>]`: The time the embedded SIM device last checked in. Updated service side.
@@ -346,7 +345,7 @@ BODYPARAMETER `<IMicrosoftGraphEmbeddedSimDeviceState>`: Describes the embedded 
   - `[UniversalIntegratedCircuitCardIdentifier <String>]`: The Universal Integrated Circuit Card Identifier (UICCID) identifying the hardware onto which a profile is to be deployed.
   - `[UserName <String>]`: Username which the subscription was provisioned to e.g. joe@contoso.com
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementIdentity>`: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: The unique identifier of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: The unique identifier of androidManagedStoreAppConfigurationSchema
@@ -478,6 +477,8 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionAppLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionAppLearningSummary
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
+  - `[WindowsQualityUpdateProfileAssignmentId <String>]`: The unique identifier of windowsQualityUpdateProfileAssignment
+  - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
 ## RELATED LINKS
 

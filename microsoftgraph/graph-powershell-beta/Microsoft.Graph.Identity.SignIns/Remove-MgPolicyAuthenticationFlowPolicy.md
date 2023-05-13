@@ -1,12 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/remove-mgpolicyauthenticationflowpolicy
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyauthenticationflowpolicy
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
-# Remove-MgPolicyAuthenticationFlowPolicy
+# Remove-MgBetaPolicyAuthenticationFlowPolicy
 
 ## SYNOPSIS
 Delete navigation property authenticationFlowsPolicy for policies
@@ -14,7 +13,7 @@ Delete navigation property authenticationFlowsPolicy for policies
 ## SYNTAX
 
 ```
-Remove-MgPolicyAuthenticationFlowPolicy [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+Remove-MgBetaPolicyAuthenticationFlowPolicy [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -23,9 +22,10 @@ Delete navigation property authenticationFlowsPolicy for policies
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 $params = @{
 	SelfServiceSignUp = @{
@@ -33,12 +33,7 @@ $params = @{
 	}
 }
 
-Update-MgPolicyAuthenticationFlowPolicy -BodyParameter $params
-```
-
-This example shows how to use the Remove-MgPolicyAuthenticationFlowPolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Update-MgBetaPolicyAuthenticationFlowPolicy -BodyParameter $params
 
 ## PARAMETERS
 

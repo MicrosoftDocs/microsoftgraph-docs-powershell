@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Education-help.xml
-Module Name: Microsoft.Graph.Education
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/invoke-mgreturneducationmeassignmentsubmission
+﻿---
+external help file: Microsoft.Graph.Beta.Education-help.xml
+Module Name: Microsoft.Graph.Beta.Education
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetareturneducationmeassignmentsubmission
 schema: 2.0.0
 ---
 
-# Invoke-MgReturnEducationMeAssignmentSubmission
+# Invoke-MgBetaReturnEducationMeAssignmentSubmission
 
 ## SYNOPSIS
 Make the grade and feedback associated with this submission available to the student.
@@ -16,13 +16,13 @@ This action can only be done by the teacher.
 
 ### Return (Default)
 ```
-Invoke-MgReturnEducationMeAssignmentSubmission -EducationAssignmentId <String> -EducationSubmissionId <String>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgBetaReturnEducationMeAssignmentSubmission -EducationAssignmentId <String>
+ -EducationSubmissionId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ReturnViaIdentity
 ```
-Invoke-MgReturnEducationMeAssignmentSubmission -InputObject <IEducationIdentity> [-WhatIf] [-Confirm]
+Invoke-MgBetaReturnEducationMeAssignmentSubmission -InputObject <IEducationIdentity> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -33,16 +33,12 @@ This action can only be done by the teacher.
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Education
-
-Invoke-MgReturnEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
+Import-Module Microsoft.Graph.Beta.Education
 ```
 
-This example shows how to use the Invoke-MgReturnEducationMeAssignmentSubmission Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Invoke-MgBetaReturnEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
 
 ## PARAMETERS
 
@@ -78,7 +74,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IEducationIdentity
@@ -128,10 +124,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IEducationIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationSubmission
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationSubmission
 ## NOTES
 
 ALIASES
@@ -141,11 +137,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+`INPUTOBJECT <IEducationIdentity>`: Identity Parameter
   - `[EducationAssignmentId <String>]`: The unique identifier of educationAssignment
   - `[EducationAssignmentResourceId <String>]`: The unique identifier of educationAssignmentResource
   - `[EducationCategoryId <String>]`: The unique identifier of educationCategory
   - `[EducationClassId <String>]`: The unique identifier of educationClass
+  - `[EducationGradingCategoryId <String>]`: The unique identifier of educationGradingCategory
   - `[EducationOutcomeId <String>]`: The unique identifier of educationOutcome
   - `[EducationRubricId <String>]`: The unique identifier of educationRubric
   - `[EducationSchoolId <String>]`: The unique identifier of educationSchool

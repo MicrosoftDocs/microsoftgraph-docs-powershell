@@ -1,27 +1,27 @@
----
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/invoke-mgmessageteamworkdeletedteamchannel
+﻿---
+external help file: Microsoft.Graph.Beta.Teams-help.xml
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetamessageteamworkdeletedteamchannel
 schema: 2.0.0
 ---
 
-# Invoke-MgMessageTeamworkDeletedTeamChannel
+# Invoke-MgBetaMessageTeamworkDeletedTeamChannel
 
 ## SYNOPSIS
 Invoke function allMessages
 
 ## SYNTAX
 
-### Messages (Default)
+### Message (Default)
 ```
-Invoke-MgMessageTeamworkDeletedTeamChannel -DeletedTeamId <String> [-Count] [-Filter <String>]
+Invoke-MgBetaMessageTeamworkDeletedTeamChannel -DeletedTeamId <String> [-Count] [-Filter <String>]
  [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [<CommonParameters>]
 ```
 
-### MessagesViaIdentity
+### MessageViaIdentity
 ```
-Invoke-MgMessageTeamworkDeletedTeamChannel -InputObject <ITeamsIdentity> [-Count] [-Filter <String>]
+Invoke-MgBetaMessageTeamworkDeletedTeamChannel -InputObject <ITeamsIdentity> [-Count] [-Filter <String>]
  [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [<CommonParameters>]
 ```
@@ -30,6 +30,20 @@ Invoke-MgMessageTeamworkDeletedTeamChannel -InputObject <ITeamsIdentity> [-Count
 Invoke function allMessages
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -53,7 +67,7 @@ The unique identifier of deletedTeam
 
 ```yaml
 Type: String
-Parameter Sets: Messages
+Parameter Sets: Message
 Aliases:
 
 Required: True
@@ -80,11 +94,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: MessagesViaIdentity
+Parameter Sets: MessageViaIdentity
 Aliases:
 
 Required: True
@@ -174,10 +188,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChatMessage1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphChatMessage
 ## NOTES
 
 ALIASES
@@ -187,7 +201,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat

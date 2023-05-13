@@ -1,75 +1,64 @@
----
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mgteamchannelmessage
+﻿---
+external help file: Microsoft.Graph.Beta.Teams-help.xml
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchannelmessage
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
-# Get-MgTeamChannelMessage
+# Get-MgBetaTeamChannelMessage
 
 ## SYNOPSIS
-A collection of all the messages in the channel.
-A navigation property.
-Nullable.
+Retrieve a single message or a message reply in a channel or a chat.
 
 ## SYNTAX
 
-### Get3 (Default)
+### Get1 (Default)
 ```
-Get-MgTeamChannelMessage -TeamId <String> [-Property <String[]>] [-Count] [-Filter <String>] [-Search <String>]
- [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
+Get-MgBetaTeamChannelMessage -TeamId <String> [-Property <String[]>] [-Count] [-Filter <String>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
 ```
 
-### List1
+### List
 ```
-Get-MgTeamChannelMessage -ChannelId <String> -TeamId <String> [-ExpandProperty <String[]>]
+Get-MgBetaTeamChannelMessage -ChannelId <String> -TeamId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### Get2
+### Get
 ```
-Get-MgTeamChannelMessage -ChannelId <String> -ChatMessageId <String> -TeamId <String>
+Get-MgBetaTeamChannelMessage -ChannelId <String> -ChatMessageId <String> -TeamId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity3
+### GetViaIdentity1
 ```
-Get-MgTeamChannelMessage -InputObject <ITeamsIdentity> [-Property <String[]>] [-Count] [-Filter <String>]
+Get-MgBetaTeamChannelMessage -InputObject <ITeamsIdentity> [-Property <String[]>] [-Count] [-Filter <String>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
 ```
 
-### GetViaIdentity2
+### GetViaIdentity
 ```
-Get-MgTeamChannelMessage -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaTeamChannelMessage -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-A collection of all the messages in the channel.
-A navigation property.
-Nullable.
+Retrieve a single message or a message reply in a channel or a chat.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgTeamChannelMessage Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Teams
-Get-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId
+Import-Module Microsoft.Graph.Beta.Teams
+Get-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId
 ```
 
-This example shows how to use the Get-MgTeamChannelMessage Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Get-MgTeamChannelMessage Cmdlet
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Teams
-Get-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -Top 3
+Import-Module Microsoft.Graph.Beta.Teams
+Get-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -Top 3
 ```
-
-This example shows how to use the Get-MgTeamChannelMessage Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -78,7 +67,7 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -93,7 +82,7 @@ The unique identifier of channel
 
 ```yaml
 Type: String
-Parameter Sets: List1, Get2
+Parameter Sets: List, Get
 Aliases:
 
 Required: True
@@ -108,7 +97,7 @@ The unique identifier of chatMessage
 
 ```yaml
 Type: String
-Parameter Sets: Get2
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -123,7 +112,7 @@ Include count of items
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: Get3, GetViaIdentity3
+Parameter Sets: Get1, GetViaIdentity1
 Aliases:
 
 Required: False
@@ -139,7 +128,7 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: List
 Aliases: CV
 
 Required: False
@@ -154,7 +143,7 @@ Expand related entities
 
 ```yaml
 Type: String[]
-Parameter Sets: List1, Get2, GetViaIdentity2
+Parameter Sets: List, Get, GetViaIdentity
 Aliases: Expand
 
 Required: False
@@ -169,7 +158,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: Get3, List1, GetViaIdentity3
+Parameter Sets: Get1, List, GetViaIdentity1
 Aliases:
 
 Required: False
@@ -181,11 +170,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: GetViaIdentity3, GetViaIdentity2
+Parameter Sets: GetViaIdentity1, GetViaIdentity
 Aliases:
 
 Required: True
@@ -200,7 +189,7 @@ Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -230,7 +219,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: Get3, List1, GetViaIdentity3
+Parameter Sets: Get1, List, GetViaIdentity1
 Aliases:
 
 Required: False
@@ -245,7 +234,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: Get3, List1, GetViaIdentity3
+Parameter Sets: Get1, List, GetViaIdentity1
 Aliases: OrderBy
 
 Required: False
@@ -260,7 +249,7 @@ The unique identifier of team
 
 ```yaml
 Type: String
-Parameter Sets: Get3, List1, Get2
+Parameter Sets: Get1, List, Get
 Aliases:
 
 Required: True
@@ -275,7 +264,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: Get3, List1, GetViaIdentity3
+Parameter Sets: Get1, List, GetViaIdentity1
 Aliases: Limit
 
 Required: False
@@ -290,7 +279,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: Get3, List1, GetViaIdentity3
+Parameter Sets: Get1, List, GetViaIdentity1
 Aliases:
 
 Required: False
@@ -305,10 +294,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChatMessage1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphChatMessage
 ## NOTES
 
 ALIASES
@@ -318,7 +307,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat

@@ -1,61 +1,56 @@
----
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mguserauthenticationemailmethod
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetauserauthenticationemailmethod
 schema: 2.0.0
 ---
 
-# Update-MgUserAuthenticationEmailMethod
+# Update-MgBetaUserAuthenticationEmailMethod
 
 ## SYNOPSIS
-Update the navigation property emailMethods in users
+Update a user's email address associated with an email Authentication Method object.
 
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
-Update-MgUserAuthenticationEmailMethod -EmailAuthenticationMethodId <String> -UserId <String>
- [-AdditionalProperties <Hashtable>] [-EmailAddress <String>] [-Id <String>] [-PassThru] [-WhatIf] [-Confirm]
+Update-MgBetaUserAuthenticationEmailMethod -EmailAuthenticationMethodId <String> -UserId <String>
+ [-AdditionalProperties <Hashtable>] [-EmailAddress <String>] [-Id <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgUserAuthenticationEmailMethod -EmailAuthenticationMethodId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphEmailAuthenticationMethod> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaUserAuthenticationEmailMethod -EmailAuthenticationMethodId <String> -UserId <String>
+ -BodyParameter <IMicrosoftGraphEmailAuthenticationMethod> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgUserAuthenticationEmailMethod -InputObject <IIdentitySignInsIdentity>
- [-AdditionalProperties <Hashtable>] [-EmailAddress <String>] [-Id <String>] [-PassThru] [-WhatIf] [-Confirm]
+Update-MgBetaUserAuthenticationEmailMethod -InputObject <IIdentitySignInsIdentity>
+ [-AdditionalProperties <Hashtable>] [-EmailAddress <String>] [-Id <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgUserAuthenticationEmailMethod -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphEmailAuthenticationMethod> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaUserAuthenticationEmailMethod -InputObject <IIdentitySignInsIdentity>
+ -BodyParameter <IMicrosoftGraphEmailAuthenticationMethod> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property emailMethods in users
+Update a user's email address associated with an email Authentication Method object.
 
 ## EXAMPLES
 
-### Example 1: Using the Update-MgUserAuthenticationEmailMethod Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
 	EmailAddress = "kim@contoso.com"
 }
-Update-MgUserAuthenticationEmailMethod -UserId $userId -EmailAuthenticationMethodId $emailAuthenticationMethodId -BodyParameter $params
+Update-MgBetaUserAuthenticationEmailMethod -UserId $userId -EmailAuthenticationMethodId $emailAuthenticationMethodId -BodyParameter $params
 ```
-
-This example shows how to use the Update-MgUserAuthenticationEmailMethod Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -76,7 +71,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 emailAuthenticationMethod
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEmailAuthenticationMethod
@@ -121,7 +116,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -138,7 +133,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IIdentitySignInsIdentity
@@ -149,21 +144,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -218,11 +198,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEmailAuthenticationMethod
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEmailAuthenticationMethod
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEmailAuthenticationMethod
 ## NOTES
 
 ALIASES
@@ -232,12 +212,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphEmailAuthenticationMethod>`: emailAuthenticationMethod
+`BODYPARAMETER <IMicrosoftGraphEmailAuthenticationMethod>`: emailAuthenticationMethod
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[EmailAddress <String>]`: The email address registered to this user.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentitySignInsIdentity>`: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: The unique identifier of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
@@ -274,6 +254,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[IdentityUserFlowAttributeId <String>]`: The unique identifier of identityUserFlowAttribute
   - `[IdentityUserFlowId <String>]`: The unique identifier of identityUserFlow
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
+  - `[InvitationId <String>]`: The unique identifier of invitation
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   - `[MobilityManagementPolicyId <String>]`: The unique identifier of mobilityManagementPolicy

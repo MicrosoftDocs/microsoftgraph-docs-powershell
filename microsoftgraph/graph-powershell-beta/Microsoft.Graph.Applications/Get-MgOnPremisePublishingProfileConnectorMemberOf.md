@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Applications-help.xml
-Module Name: Microsoft.Graph.Applications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgonpremisepublishingprofileconnectormemberof
+﻿---
+external help file: Microsoft.Graph.Beta.Applications-help.xml
+Module Name: Microsoft.Graph.Beta.Applications
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofileconnectormemberof
 schema: 2.0.0
 ---
 
-# Get-MgOnPremisePublishingProfileConnectorMemberOf
+# Get-MgBetaOnPremisePublishingProfileConnectorMemberOf
 
 ## SYNOPSIS
 The connectorGroup that the connector is a member of.
@@ -14,9 +14,10 @@ Read-only.
 ## SYNTAX
 
 ```
-Get-MgOnPremisePublishingProfileConnectorMemberOf -ConnectorId <String> -OnPremisesPublishingProfileId <String>
- [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+Get-MgBetaOnPremisePublishingProfileConnectorMemberOf -ConnectorId <String>
+ -OnPremisesPublishingProfileId <String> [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -25,14 +26,11 @@ Read-only.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgOnPremisePublishingProfileConnectorMemberOf Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Applications
-Get-MgOnPremisePublishingProfileConnectorMemberOf -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -ConnectorId $connectorId
+Import-Module Microsoft.Graph.Beta.Applications
+Get-MgBetaOnPremisePublishingProfileConnectorMemberOf -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -ConnectorId $connectorId
 ```
-
-This example shows how to use the Get-MgOnPremisePublishingProfileConnectorMemberOf Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -224,7 +222,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConnectorGroup
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConnectorGroup
 ## NOTES
 
 ALIASES

@@ -1,7 +1,7 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/move-mgusermailfolder
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/move-mgusermailfolder
 schema: 2.0.0
 ---
 
@@ -12,26 +12,26 @@ Move a mailfolder and its contents to another mailfolder.
 
 ## SYNTAX
 
-### MoveExpanded1 (Default)
+### MoveExpanded (Default)
 ```
 Move-MgUserMailFolder -MailFolderId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
  [-DestinationId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Move1
+### Move
 ```
 Move-MgUserMailFolder -MailFolderId <String> -UserId <String>
  -BodyParameter <IPaths1Adv2SrUsersUserIdMailfoldersMailfolderIdMicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### MoveViaIdentityExpanded1
+### MoveViaIdentityExpanded
 ```
 Move-MgUserMailFolder -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
  [-DestinationId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### MoveViaIdentity1
+### MoveViaIdentity
 ```
 Move-MgUserMailFolder -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths1Adv2SrUsersUserIdMailfoldersMailfolderIdMicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema>
@@ -43,7 +43,7 @@ Move a mailfolder and its contents to another mailfolder.
 
 ## EXAMPLES
 
-### Example 1: Using the Move-MgUserMailFolder Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{
@@ -53,9 +53,6 @@ $params = @{
 Move-MgUserMailFolder -UserId $userId -MailFolderId $mailFolderId -BodyParameter $params
 ```
 
-This example shows how to use the Move-MgUserMailFolder Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -63,7 +60,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: MoveExpanded1, MoveViaIdentityExpanded1
+Parameter Sets: MoveExpanded, MoveViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -75,11 +72,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths1Adv2SrUsersUserIdMailfoldersMailfolderIdMicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Move1, MoveViaIdentity1
+Parameter Sets: Move, MoveViaIdentity
 Aliases:
 
 Required: True
@@ -94,7 +91,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: MoveExpanded1, MoveViaIdentityExpanded1
+Parameter Sets: MoveExpanded, MoveViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -106,11 +103,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: MoveViaIdentityExpanded1, MoveViaIdentity1
+Parameter Sets: MoveViaIdentityExpanded, MoveViaIdentity
 Aliases:
 
 Required: True
@@ -125,7 +122,7 @@ The unique identifier of mailFolder
 
 ```yaml
 Type: String
-Parameter Sets: MoveExpanded1, Move1
+Parameter Sets: MoveExpanded, Move
 Aliases:
 
 Required: True
@@ -140,7 +137,7 @@ The unique identifier of user
 
 ```yaml
 Type: String
-Parameter Sets: MoveExpanded1, Move1
+Parameter Sets: MoveExpanded, Move
 Aliases:
 
 Required: True
@@ -190,7 +187,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMailFolder1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMailFolder
 ## NOTES
 
 ALIASES
@@ -200,24 +197,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Adv2SrUsersUserIdMailfoldersMailfolderIdMicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1Adv2SrUsersUserIdMailfoldersMailfolderIdMicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DestinationId <String>]`: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
-  - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
-  - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
-  - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
+`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AuthenticationMethodId <String>]`: The unique identifier of authenticationMethod
   - `[CalendarId <String>]`: The unique identifier of calendar
   - `[ChatId <String>]`: The unique identifier of chat
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
   - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
-  - `[CloudPcId <String>]`: The unique identifier of cloudPC
   - `[ContentTypeId <String>]`: The unique identifier of contentType
-  - `[DeviceEnrollmentConfigurationId <String>]`: The unique identifier of deviceEnrollmentConfiguration
-  - `[DeviceId <String>]`: The unique identifier of device
-  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
   - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
   - `[DriveId <String>]`: The unique identifier of drive
   - `[DriveItemId <String>]`: The unique identifier of driveItem
@@ -230,17 +220,11 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
   - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
   - `[MessageId <String>]`: The unique identifier of message
-  - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
   - `[NotebookId <String>]`: The unique identifier of notebook
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
-  - `[OutlookTaskFolderId <String>]`: The unique identifier of outlookTaskFolder
-  - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
-  - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
-  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
-  - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
   - `[TodoTaskId <String>]`: The unique identifier of todoTask

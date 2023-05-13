@@ -1,20 +1,20 @@
----
-external help file: Microsoft.Graph.Devices.ServiceAnnouncement-help.xml
-Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.serviceannouncement/new-mgserviceannouncementhealthoverviewissue
+﻿---
+external help file: Microsoft.Graph.Beta.Devices.ServiceAnnouncement-help.xml
+Module Name: Microsoft.Graph.Beta.Devices.ServiceAnnouncement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/new-mgbetaserviceannouncementhealthoverviewissue
 schema: 2.0.0
 ---
 
-# New-MgServiceAnnouncementHealthOverviewIssue
+# New-MgBetaServiceAnnouncementHealthOverviewIssue
 
 ## SYNOPSIS
 Create new navigation property to issues for admin
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
-New-MgServiceAnnouncementHealthOverviewIssue -ServiceHealthId <String> [-AdditionalProperties <Hashtable>]
+New-MgBetaServiceAnnouncementHealthOverviewIssue -ServiceHealthId <String> [-AdditionalProperties <Hashtable>]
  [-Classification <String>] [-Details <IMicrosoftGraphKeyValuePair[]>] [-EndDateTime <DateTime>]
  [-Feature <String>] [-FeatureGroup <String>] [-Id <String>] [-ImpactDescription <String>] [-IsResolved]
  [-LastModifiedDateTime <DateTime>] [-Origin <String>] [-Posts <IMicrosoftGraphServiceHealthIssuePost[]>]
@@ -22,15 +22,15 @@ New-MgServiceAnnouncementHealthOverviewIssue -ServiceHealthId <String> [-Additio
  [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
-New-MgServiceAnnouncementHealthOverviewIssue -ServiceHealthId <String>
+New-MgBetaServiceAnnouncementHealthOverviewIssue -ServiceHealthId <String>
  -BodyParameter <IMicrosoftGraphServiceHealthIssue> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded1
+### CreateViaIdentityExpanded
 ```
-New-MgServiceAnnouncementHealthOverviewIssue -InputObject <IDevicesServiceAnnouncementIdentity>
+New-MgBetaServiceAnnouncementHealthOverviewIssue -InputObject <IDevicesServiceAnnouncementIdentity>
  [-AdditionalProperties <Hashtable>] [-Classification <String>] [-Details <IMicrosoftGraphKeyValuePair[]>]
  [-EndDateTime <DateTime>] [-Feature <String>] [-FeatureGroup <String>] [-Id <String>]
  [-ImpactDescription <String>] [-IsResolved] [-LastModifiedDateTime <DateTime>] [-Origin <String>]
@@ -38,9 +38,9 @@ New-MgServiceAnnouncementHealthOverviewIssue -InputObject <IDevicesServiceAnnoun
  [-Status <String>] [-Title <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentity1
+### CreateViaIdentity
 ```
-New-MgServiceAnnouncementHealthOverviewIssue -InputObject <IDevicesServiceAnnouncementIdentity>
+New-MgBetaServiceAnnouncementHealthOverviewIssue -InputObject <IDevicesServiceAnnouncementIdentity>
  -BodyParameter <IMicrosoftGraphServiceHealthIssue> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -49,6 +49,20 @@ Create new navigation property to issues for admin
 
 ## EXAMPLES
 
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -56,7 +70,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -68,11 +82,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 serviceHealthIssue
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphServiceHealthIssue
-Parameter Sets: Create1, CreateViaIdentity1
+Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -87,7 +101,7 @@ serviceHealthClassificationType
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -100,11 +114,11 @@ Accept wildcard characters: False
 ### -Details
 Additional details about service event.
 This property doesn't support filters.
-To construct, please use Get-Help -Online and see NOTES section for DETAILS properties and create a hash table.
+To construct, see NOTES section for DETAILS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphKeyValuePair[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -119,7 +133,7 @@ The end time of the service event.
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -134,7 +148,7 @@ The feature name of the service issue.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -149,7 +163,7 @@ The feature group name of the service issue.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -160,12 +174,12 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -180,7 +194,7 @@ The description of the service issue impact.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -192,11 +206,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDevicesServiceAnnouncementIdentity
-Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -211,7 +225,7 @@ Indicates whether the issue is resolved.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -226,7 +240,7 @@ The last modified time of the service event.
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -241,7 +255,7 @@ serviceHealthOrigin
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -253,11 +267,11 @@ Accept wildcard characters: False
 
 ### -Posts
 Collection of historical posts for the service issue.
-To construct, please use Get-Help -Online and see NOTES section for POSTS properties and create a hash table.
+To construct, see NOTES section for POSTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphServiceHealthIssuePost[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -272,7 +286,7 @@ Indicates the service affected by the issue.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -287,7 +301,7 @@ The unique identifier of serviceHealth
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, Create1
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -302,7 +316,7 @@ The start time of the service event.
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -317,7 +331,7 @@ serviceHealthStatus
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -332,7 +346,7 @@ The title of the service event.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -378,11 +392,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDevicesServiceAnnouncementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServiceHealthIssue
+### Microsoft.Graph.Beta.PowerShell.Models.IDevicesServiceAnnouncementIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphServiceHealthIssue
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServiceHealthIssue
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphServiceHealthIssue
 ## NOTES
 
 ALIASES
@@ -392,7 +406,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphServiceHealthIssue>`: serviceHealthIssue
+`BODYPARAMETER <IMicrosoftGraphServiceHealthIssue>`: serviceHealthIssue
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Details <IMicrosoftGraphKeyValuePair[]>]`: Additional details about service event. This property doesn't support filters.
     - `[Name <String>]`: Name for this key-value pair
@@ -401,7 +415,7 @@ BODYPARAMETER `<IMicrosoftGraphServiceHealthIssue>`: serviceHealthIssue
   - `[LastModifiedDateTime <DateTime?>]`: The last modified time of the service event.
   - `[StartDateTime <DateTime?>]`: The start time of the service event.
   - `[Title <String>]`: The title of the service event.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Classification <String>]`: serviceHealthClassificationType
   - `[Feature <String>]`: The feature name of the service issue.
   - `[FeatureGroup <String>]`: The feature group name of the service issue.
@@ -418,17 +432,17 @@ BODYPARAMETER `<IMicrosoftGraphServiceHealthIssue>`: serviceHealthIssue
   - `[Service <String>]`: Indicates the service affected by the issue.
   - `[Status <String>]`: serviceHealthStatus
 
-DETAILS <IMicrosoftGraphKeyValuePair\[]>: Additional details about service event. This property doesn't support filters.
+`DETAILS <IMicrosoftGraphKeyValuePair[]>`: Additional details about service event. This property doesn't support filters.
   - `[Name <String>]`: Name for this key-value pair
   - `[Value <String>]`: Value for this key-value pair
 
-INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
+`INPUTOBJECT <IDevicesServiceAnnouncementIdentity>`: Identity Parameter
   - `[ServiceAnnouncementAttachmentId <String>]`: The unique identifier of serviceAnnouncementAttachment
   - `[ServiceHealthId <String>]`: The unique identifier of serviceHealth
   - `[ServiceHealthIssueId <String>]`: The unique identifier of serviceHealthIssue
   - `[ServiceUpdateMessageId <String>]`: The unique identifier of serviceUpdateMessage
 
-POSTS <IMicrosoftGraphServiceHealthIssuePost\[]>: Collection of historical posts for the service issue.
+`POSTS <IMicrosoftGraphServiceHealthIssuePost[]>`: Collection of historical posts for the service issue.
   - `[CreatedDateTime <DateTime?>]`: The published time of the post.
   - `[Description <IMicrosoftGraphItemBody>]`: itemBody
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticworkfromanywheremetric
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticworkfromanywheremetric
 schema: 2.0.0
 ---
 
-# New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric
+# New-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric
 
 ## SYNOPSIS
 Create new navigation property to userExperienceAnalyticsWorkFromAnywhereMetrics for deviceManagement
@@ -14,14 +14,14 @@ Create new navigation property to userExperienceAnalyticsWorkFromAnywhereMetrics
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric [-AdditionalProperties <Hashtable>]
+New-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric [-AdditionalProperties <Hashtable>]
  [-Id <String>] [-MetricDevices <IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereDevice[]>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric
+New-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric
  -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereMetric> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
@@ -30,6 +30,20 @@ New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric
 Create new navigation property to userExperienceAnalyticsWorkFromAnywhereMetrics for deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -50,7 +64,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 The user experience analytics metric for work from anywhere report
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereMetric
@@ -65,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -82,7 +96,7 @@ Accept wildcard characters: False
 
 ### -MetricDevices
 The work from anywhere metric devices.
-To construct, please use Get-Help -Online and see NOTES section for METRICDEVICES properties and create a hash table.
+To construct, see NOTES section for METRICDEVICES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereDevice[]
@@ -132,10 +146,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereMetric
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereMetric
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereMetric
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereMetric
 ## NOTES
 
 ALIASES
@@ -145,11 +159,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereMetric>`: The user experience analytics metric for work from anywhere report
+`BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereMetric>`: The user experience analytics metric for work from anywhere report
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[MetricDevices <IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereDevice[]>]`: The work from anywhere metric devices.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[AutoPilotProfileAssigned <Boolean?>]`: The user experience analytics work from anywhere intune device's autopilotProfileAssigned.
     - `[AutoPilotRegistered <Boolean?>]`: The user experience work from anywhere intune device's autopilotRegistered.
     - `[AzureAdDeviceId <String>]`: The user experience work from anywhere azure Ad device Id.
@@ -185,8 +199,8 @@ BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereMetric>`: 
     - `[WindowsScore <Double?>]`: The user experience work from anywhere per device windows score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
     - `[WorkFromAnywhereScore <Double?>]`: The user experience work from anywhere per device overall score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
-METRICDEVICES <IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereDevice\[]>: The work from anywhere metric devices.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`METRICDEVICES <IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereDevice[]>`: The work from anywhere metric devices.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AutoPilotProfileAssigned <Boolean?>]`: The user experience analytics work from anywhere intune device's autopilotProfileAssigned.
   - `[AutoPilotRegistered <Boolean?>]`: The user experience work from anywhere intune device's autopilotRegistered.
   - `[AzureAdDeviceId <String>]`: The user experience work from anywhere azure Ad device Id.

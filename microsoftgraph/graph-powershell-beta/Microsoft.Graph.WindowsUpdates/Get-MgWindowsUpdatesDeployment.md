@@ -1,51 +1,51 @@
----
-external help file: Microsoft.Graph.WindowsUpdates-help.xml
-Module Name: Microsoft.Graph.WindowsUpdates
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/get-mgwindowsupdatesdeployment
+﻿---
+external help file: Microsoft.Graph.Beta.WindowsUpdates-help.xml
+Module Name: Microsoft.Graph.Beta.WindowsUpdates
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/get-mgbetawindowsupdatesdeployment
 schema: 2.0.0
 ---
 
-# Get-MgWindowsUpdatesDeployment
+# Get-MgBetaWindowsUpdatesDeployment
 
 ## SYNOPSIS
-Deployments created using the deployment service.
+Read the properties and relationships of a deployment object.
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgWindowsUpdatesDeployment [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
+Get-MgBetaWindowsUpdatesDeployment [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
  [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgWindowsUpdatesDeployment -DeploymentId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaWindowsUpdatesDeployment -DeploymentId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgWindowsUpdatesDeployment -InputObject <IWindowsUpdatesIdentity> [-ExpandProperty <String[]>]
+Get-MgBetaWindowsUpdatesDeployment -InputObject <IWindowsUpdatesIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Deployments created using the deployment service.
+Read the properties and relationships of a deployment object.
 
 ## EXAMPLES
 
 ### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.WindowsUpdates
-Get-MgWindowsUpdatesDeployment -DeploymentId $deploymentId
+```powershell
+Import-Module Microsoft.Graph.Beta.WindowsUpdates
+Get-MgBetaWindowsUpdatesDeployment -DeploymentId $deploymentId
 ```
 
 ### EXAMPLE 2
-```
-Import-Module Microsoft.Graph.WindowsUpdates
-Get-MgWindowsUpdatesDeployment
+```powershell
+Import-Module Microsoft.Graph.Beta.WindowsUpdates
+Get-MgBetaWindowsUpdatesDeployment
 ```
 
 ## PARAMETERS
@@ -60,7 +60,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IWindowsUpdatesIdentity
@@ -152,7 +152,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: 0
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -212,7 +212,7 @@ Aliases: Limit
 
 Required: False
 Position: Named
-Default value: 0
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -227,7 +227,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: 0
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -237,14 +237,27 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IWindowsUpdatesIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IWindowsUpdatesIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsUpdatesDeployment
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsUpdatesDeployment
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+Get-MgBetaWuDeployment
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+`INPUTOBJECT <IWindowsUpdatesIdentity>`: Identity Parameter
+  - `[CatalogEntryId <String>]`: The unique identifier of catalogEntry
+  - `[ComplianceChangeId <String>]`: The unique identifier of complianceChange
+  - `[DeploymentId <String>]`: The unique identifier of deployment
+  - `[ResourceConnectionId <String>]`: The unique identifier of resourceConnection
+  - `[UpdatableAssetId <String>]`: The unique identifier of updatableAsset
+  - `[UpdatePolicyId <String>]`: The unique identifier of updatePolicy
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/get-mgwindowsupdatesdeployment](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/get-mgwindowsupdatesdeployment)
-

@@ -1,12 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgpolicyadminconsentrequestpolicy
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyadminconsentrequestpolicy
 schema: 2.0.0
-ms.prod: governance
 ---
 
-# Get-MgPolicyAdminConsentRequestPolicy
+# Get-MgBetaPolicyAdminConsentRequestPolicy
 
 ## SYNOPSIS
 Read the properties and relationships of an adminConsentRequestPolicy object.
@@ -14,7 +13,8 @@ Read the properties and relationships of an adminConsentRequestPolicy object.
 ## SYNTAX
 
 ```
-Get-MgPolicyAdminConsentRequestPolicy [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaPolicyAdminConsentRequestPolicy [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -22,14 +22,11 @@ Read the properties and relationships of an adminConsentRequestPolicy object.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgPolicyAdminConsentRequestPolicy Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
-Get-MgPolicyAdminConsentRequestPolicy
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+Get-MgBetaPolicyAdminConsentRequestPolicy
 ```
-
-This example shows how to use the Get-MgPolicyAdminConsentRequestPolicy Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -70,7 +67,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAdminConsentRequestPolicy1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAdminConsentRequestPolicy
 ## NOTES
 
 ALIASES

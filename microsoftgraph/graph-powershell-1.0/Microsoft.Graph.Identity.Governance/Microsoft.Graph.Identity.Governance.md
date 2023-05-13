@@ -1,7 +1,7 @@
----
+﻿---
 Module Name: Microsoft.Graph.Identity.Governance
-Module Guid: 3e429bbf-4765-4d7b-a20d-3f239eb30df7
-Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance
+Module Guid: a2bfdf14-b11f-4f35-b599-7d2038ece471
+Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance
 Help Version: 1.0.0.0
 Locale: en-US
 ---
@@ -22,29 +22,61 @@ Get entity from agreements by key
 Read-only.
 Information about acceptances of this agreement.
 
+### [Get-MgAgreementAcceptanceCount](Get-MgAgreementAcceptanceCount.md)
+Get the number of the resource
+
 ### [Get-MgAgreementFile](Get-MgAgreementFile.md)
 Retrieve the details of the default file for an agreement, including the language and version information.
 The file information is specified through the agreementFile object.
 
+### [Get-MgAgreementFileCount](Get-MgAgreementFileCount.md)
+Get the number of the resource
+
 ### [Get-MgAgreementFileLocalization](Get-MgAgreementFileLocalization.md)
 The localized version of the terms of use agreement files attached to the agreement.
+
+### [Get-MgAgreementFileLocalizationCount](Get-MgAgreementFileLocalizationCount.md)
+Get the number of the resource
 
 ### [Get-MgAgreementFileLocalizationVersion](Get-MgAgreementFileLocalizationVersion.md)
 Read-only.
 Customized versions of the terms of use agreement in the Azure AD tenant.
 
+### [Get-MgAgreementFileLocalizationVersionCount](Get-MgAgreementFileLocalizationVersionCount.md)
+Get the number of the resource
+
+### [Get-MgAgreementFileVersion](Get-MgAgreementFileVersion.md)
+Read-only.
+Customized versions of the terms of use agreement in the Azure AD tenant.
+
+### [Get-MgAgreementFileVersionCount](Get-MgAgreementFileVersionCount.md)
+Get the number of the resource
+
 ### [Get-MgEntitlementManagementAccessPackage](Get-MgEntitlementManagementAccessPackage.md)
-Access packages define the collection of resource roles and the policies for which subjects can request or be assigned access to those resources.
+Retrieve the properties and relationships of an accessPackage object.
 
 ### [Get-MgEntitlementManagementAccessPackageApplicablePolicyRequirement](Get-MgEntitlementManagementAccessPackageApplicablePolicyRequirement.md)
 In Azure AD entitlement management, this action retrieves a list of accessPackageAssignmentRequestRequirements objects that the currently signed-in user can use to create an accessPackageAssignmentRequest.
 Each requirement object corresponds to an access package assignment policy that the currently signed-in user is allowed to request an assignment for.
 
+### [Get-MgEntitlementManagementAccessPackageAssignmentApprovalCount](Get-MgEntitlementManagementAccessPackageAssignmentApprovalCount.md)
+Get the number of the resource
+
 ### [Get-MgEntitlementManagementAccessPackageAssignmentApprovalStage](Get-MgEntitlementManagementAccessPackageAssignmentApprovalStage.md)
-A collection of stages in the approval decision.
+In Azure AD entitlement management, retrieve the properties of an approvalStage object.
+An approval stage is contained within an approval object.
+
+### [Get-MgEntitlementManagementAccessPackageAssignmentApprovalStageCount](Get-MgEntitlementManagementAccessPackageAssignmentApprovalStageCount.md)
+Get the number of the resource
+
+### [Get-MgEntitlementManagementAccessPackageAssignmentPolicy](Get-MgEntitlementManagementAccessPackageAssignmentPolicy.md)
+Get assignmentPolicies from identityGovernance
 
 ### [Get-MgEntitlementManagementAccessPackageCatalog](Get-MgEntitlementManagementAccessPackageCatalog.md)
 Get catalog from identityGovernance
+
+### [Get-MgEntitlementManagementAccessPackageCount](Get-MgEntitlementManagementAccessPackageCount.md)
+Get the number of the resource
 
 ### [Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackage](Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackage.md)
 Retrieve a list of the accessPackage objects that have been marked as incompatible on an accessPackage.
@@ -63,14 +95,16 @@ The access packages that are incompatible with this package.
 Read-only.
 
 ### [Get-MgEntitlementManagementAssignment](Get-MgEntitlementManagementAssignment.md)
-The assignment of an access package to a subject for a period of time.
+In Azure AD entitlement management, retrieve the properties and relationships of an accessPackageAssignment object.
 
 ### [Get-MgEntitlementManagementAssignmentAdditional](Get-MgEntitlementManagementAssignmentAdditional.md)
 Invoke function additionalAccess
 
+### [Get-MgEntitlementManagementAssignmentCount](Get-MgEntitlementManagementAssignmentCount.md)
+Get the number of the resource
+
 ### [Get-MgEntitlementManagementAssignmentPolicy](Get-MgEntitlementManagementAssignmentPolicy.md)
-Read-only.
-Supports $filter (eq) on the id property and $expand query parameters.
+In Azure AD entitlement management, retrieve the properties and relationships of an\n accessPackageAssignmentPolicy object.
 
 ### [Get-MgEntitlementManagementAssignmentPolicyAccessPackage](Get-MgEntitlementManagementAssignmentPolicyAccessPackage.md)
 Access package containing this policy.
@@ -80,14 +114,23 @@ Read-only.
 Catalog of the access package containing this policy.
 Read-only.
 
+### [Get-MgEntitlementManagementAssignmentPolicyCount](Get-MgEntitlementManagementAssignmentPolicyCount.md)
+Get the number of the resource
+
 ### [Get-MgEntitlementManagementAssignmentPolicyQuestion](Get-MgEntitlementManagementAssignmentPolicyQuestion.md)
 Questions that are posed to the  requestor.
 
+### [Get-MgEntitlementManagementAssignmentPolicyQuestionCount](Get-MgEntitlementManagementAssignmentPolicyQuestionCount.md)
+Get the number of the resource
+
 ### [Get-MgEntitlementManagementAssignmentRequest](Get-MgEntitlementManagementAssignmentRequest.md)
-Access package assignment requests created by or on behalf of a subject.
+In Azure AD entitlement management, retrieve the properties and relationships of an  accessPackageAssignmentRequest object.
+
+### [Get-MgEntitlementManagementAssignmentRequestCount](Get-MgEntitlementManagementAssignmentRequestCount.md)
+Get the number of the resource
 
 ### [Get-MgEntitlementManagementCatalog](Get-MgEntitlementManagementCatalog.md)
-A container for access packages.
+Retrieve the properties and relationships of an accessPackageCatalog object.
 
 ### [Get-MgEntitlementManagementCatalogAccessPackageApplicablePolicyRequirement](Get-MgEntitlementManagementCatalogAccessPackageApplicablePolicyRequirement.md)
 In Azure AD entitlement management, this action retrieves a list of accessPackageAssignmentRequestRequirements objects that the currently signed-in user can use to create an accessPackageAssignmentRequest.
@@ -107,6 +150,9 @@ Read-only.
 ### [Get-MgEntitlementManagementCatalogAccessPackageAssignmentPolicyQuestion](Get-MgEntitlementManagementCatalogAccessPackageAssignmentPolicyQuestion.md)
 Questions that are posed to the  requestor.
 
+### [Get-MgEntitlementManagementCatalogAccessPackageCount](Get-MgEntitlementManagementCatalogAccessPackageCount.md)
+Get the number of the resource
+
 ### [Get-MgEntitlementManagementCatalogAccessPackageIncompatibleAccessPackage](Get-MgEntitlementManagementCatalogAccessPackageIncompatibleAccessPackage.md)
 Retrieve a list of the accessPackage objects that have been marked as incompatible on an accessPackage.
 
@@ -123,16 +169,18 @@ Retrieve a list of the group objects that have been marked as incompatible on an
 The access packages that are incompatible with this package.
 Read-only.
 
+### [Get-MgEntitlementManagementCatalogCount](Get-MgEntitlementManagementCatalogCount.md)
+Get the number of the resource
+
 ### [Get-MgEntitlementManagementConnectedOrganization](Get-MgEntitlementManagementConnectedOrganization.md)
-References to a directory or domain of another organization whose users can request access.
+Retrieve the properties and relationships of a connectedOrganization object.
+
+### [Get-MgEntitlementManagementConnectedOrganizationCount](Get-MgEntitlementManagementConnectedOrganizationCount.md)
+Get the number of the resource
 
 ### [Get-MgEntitlementManagementConnectedOrganizationExternalSponsor](Get-MgEntitlementManagementConnectedOrganizationExternalSponsor.md)
 Retrieve a list of a connectedOrganization's external sponsors.
 The external sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
-
-### [Get-MgEntitlementManagementConnectedOrganizationExternalSponsorAvailableExtensionProperty](Get-MgEntitlementManagementConnectedOrganizationExternalSponsorAvailableExtensionProperty.md)
-Return all directory extension definitions that have been registered in a directory, including through multi-tenant apps.
-The following entities support extension properties:\n+ user\n+ group\n+ administrativeUnit\n+ application\n+ device\n+ organization
 
 ### [Get-MgEntitlementManagementConnectedOrganizationExternalSponsorById](Get-MgEntitlementManagementConnectedOrganizationExternalSponsorById.md)
 Return the directory objects specified in a list of IDs.
@@ -142,16 +190,15 @@ Some common uses for this function are to:
 Retrieve a list of a connectedOrganization's external sponsors.
 The external sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
 
+### [Get-MgEntitlementManagementConnectedOrganizationExternalSponsorCount](Get-MgEntitlementManagementConnectedOrganizationExternalSponsorCount.md)
+Get the number of the resource
+
 ### [Get-MgEntitlementManagementConnectedOrganizationExternalSponsorDelta](Get-MgEntitlementManagementConnectedOrganizationExternalSponsorDelta.md)
 Invoke function delta
 
 ### [Get-MgEntitlementManagementConnectedOrganizationInternalSponsor](Get-MgEntitlementManagementConnectedOrganizationInternalSponsor.md)
 Retrieve a list of a connectedOrganization's internal sponsors.
 The internal sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
-
-### [Get-MgEntitlementManagementConnectedOrganizationInternalSponsorAvailableExtensionProperty](Get-MgEntitlementManagementConnectedOrganizationInternalSponsorAvailableExtensionProperty.md)
-Return all directory extension definitions that have been registered in a directory, including through multi-tenant apps.
-The following entities support extension properties:\n+ user\n+ group\n+ administrativeUnit\n+ application\n+ device\n+ organization
 
 ### [Get-MgEntitlementManagementConnectedOrganizationInternalSponsorById](Get-MgEntitlementManagementConnectedOrganizationInternalSponsorById.md)
 Return the directory objects specified in a list of IDs.
@@ -161,6 +208,9 @@ Some common uses for this function are to:
 Retrieve a list of a connectedOrganization's internal sponsors.
 The internal sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
 
+### [Get-MgEntitlementManagementConnectedOrganizationInternalSponsorCount](Get-MgEntitlementManagementConnectedOrganizationInternalSponsorCount.md)
+Get the number of the resource
+
 ### [Get-MgEntitlementManagementConnectedOrganizationInternalSponsorDelta](Get-MgEntitlementManagementConnectedOrganizationInternalSponsorDelta.md)
 Invoke function delta
 
@@ -168,13 +218,14 @@ Invoke function delta
 Retrieve the properties of an entitlementManagementSettings object.
 
 ### [Get-MgIdentityGovernanceAccessReviewDefinition](Get-MgIdentityGovernanceAccessReviewDefinition.md)
-Represents the template and scheduling for an access review.
+Read the properties and relationships of an accessReviewScheduleDefinition object.
+To retrieve the instances of the access review series, use the list accessReviewInstance API.
+
+### [Get-MgIdentityGovernanceAccessReviewDefinitionCount](Get-MgIdentityGovernanceAccessReviewDefinitionCount.md)
+Get the number of the resource
 
 ### [Get-MgIdentityGovernanceAccessReviewDefinitionInstance](Get-MgIdentityGovernanceAccessReviewDefinitionInstance.md)
-If the accessReviewScheduleDefinition is a recurring access review, instances represent each recurrence.
-A review that does not recur will have exactly one instance.
-Instances also represent each unique resource under review in the accessReviewScheduleDefinition.
-If a review has multiple resources and multiple instances, each resource will have a unique instance for each recurrence.
+Read the properties and relationships of an accessReviewInstance object.
 
 ### [Get-MgIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer](Get-MgIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer.md)
 Returns the collection of reviewers who were contacted to complete this review.
@@ -182,58 +233,415 @@ While the reviewers and fallbackReviewers properties of the accessReviewSchedule
 Supports $select.
 Read-only.
 
+### [Get-MgIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewerCount](Get-MgIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewerCount.md)
+Get the number of the resource
+
+### [Get-MgIdentityGovernanceAccessReviewDefinitionInstanceCount](Get-MgIdentityGovernanceAccessReviewDefinitionInstanceCount.md)
+Get the number of the resource
+
 ### [Get-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision](Get-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision.md)
-Each user reviewed in an accessReviewInstance has a decision item representing if they were approved, denied, or not yet reviewed.
+Read the properties and relationships of an accessReviewInstanceDecisionItem object.
+
+### [Get-MgIdentityGovernanceAccessReviewDefinitionInstanceDecisionCount](Get-MgIdentityGovernanceAccessReviewDefinitionInstanceDecisionCount.md)
+Get the number of the resource
 
 ### [Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStage](Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStage.md)
-If the instance has multiple stages, this returns the collection of stages.
-A new stage will only be created when the previous stage ends.
-The existence, number, and settings of stages on a review instance are created based on the accessReviewStageSettings on the parent accessReviewScheduleDefinition.
+Retrieve the properties and relationships of an accessReviewStage object.
+
+### [Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStageCount](Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStageCount.md)
+Get the number of the resource
 
 ### [Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision](Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision.md)
 Each user reviewed in an accessReviewStage has a decision item representing if they were approved, denied, or not yet reviewed.
 
+### [Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecisionCount](Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecisionCount.md)
+Get the number of the resource
+
 ### [Get-MgIdentityGovernanceAccessReviewHistoryDefinition](Get-MgIdentityGovernanceAccessReviewHistoryDefinition.md)
-Represents a collection of access review history data and the scopes used to collect that data.
+Retrieve an accessReviewHistoryDefinition object by its identifier.
+All the properties of the access review history definition object are returned.
+If the definition is 30 days or older, a `404 Not Found` error is returned.
+
+### [Get-MgIdentityGovernanceAccessReviewHistoryDefinitionCount](Get-MgIdentityGovernanceAccessReviewHistoryDefinitionCount.md)
+Get the number of the resource
 
 ### [Get-MgIdentityGovernanceAccessReviewHistoryDefinitionInstance](Get-MgIdentityGovernanceAccessReviewHistoryDefinitionInstance.md)
 If the accessReviewHistoryDefinition is a recurring definition, instances represent each recurrence.
 A definition that does not recur will have exactly one instance.
 
+### [Get-MgIdentityGovernanceAccessReviewHistoryDefinitionInstanceCount](Get-MgIdentityGovernanceAccessReviewHistoryDefinitionInstanceCount.md)
+Get the number of the resource
+
 ### [Get-MgIdentityGovernanceAppConsentRequest](Get-MgIdentityGovernanceAppConsentRequest.md)
-A collection of userConsentRequest objects for a specific application.
+Read the properties and relationships of an appConsentRequest object.
+
+### [Get-MgIdentityGovernanceAppConsentRequestCount](Get-MgIdentityGovernanceAppConsentRequestCount.md)
+Get the number of the resource
 
 ### [Get-MgIdentityGovernanceAppConsentRequestUserConsentRequest](Get-MgIdentityGovernanceAppConsentRequestUserConsentRequest.md)
-A list of pending user consent requests.
-Supports $filter (eq).
+Read the properties and relationships of a userConsentRequest object.
 
 ### [Get-MgIdentityGovernanceAppConsentRequestUserConsentRequestApproval](Get-MgIdentityGovernanceAppConsentRequestUserConsentRequestApproval.md)
 Approval decisions associated with a request.
 
 ### [Get-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStage](Get-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStage.md)
-A collection of stages in the approval decision.
+In Azure AD entitlement management, retrieve the properties of an approvalStage object.
+An approval stage is contained within an approval object.
 
-### [Get-MgIdentityGovernanceTermOfUseAgreement](Get-MgIdentityGovernanceTermOfUseAgreement.md)
-Represents a tenant's customizable terms of use agreement that's created and managed with Azure Active Directory (Azure AD).
+### [Get-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStageCount](Get-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStageCount.md)
+Get the number of the resource
 
-### [Get-MgIdentityGovernanceTermOfUseAgreementAcceptance](Get-MgIdentityGovernanceTermOfUseAgreementAcceptance.md)
+### [Get-MgIdentityGovernanceAppConsentRequestUserConsentRequestCount](Get-MgIdentityGovernanceAppConsentRequestUserConsentRequestCount.md)
+Get the number of the resource
+
+### [Get-MgIdentityGovernanceTermsOfUseAgreement](Get-MgIdentityGovernanceTermsOfUseAgreement.md)
+Retrieve all localized files related to an agreement.
+
+### [Get-MgIdentityGovernanceTermsOfUseAgreementAcceptance](Get-MgIdentityGovernanceTermsOfUseAgreementAcceptance.md)
 Represents the current status of a user's response to a company's customizable terms of use agreement.
 
-### [Get-MgIdentityGovernanceTermOfUseAgreementFile](Get-MgIdentityGovernanceTermOfUseAgreementFile.md)
+### [Get-MgIdentityGovernanceTermsOfUseAgreementAcceptanceCount](Get-MgIdentityGovernanceTermsOfUseAgreementAcceptanceCount.md)
+Get the number of the resource
+
+### [Get-MgIdentityGovernanceTermsOfUseAgreementCount](Get-MgIdentityGovernanceTermsOfUseAgreementCount.md)
+Get the number of the resource
+
+### [Get-MgIdentityGovernanceTermsOfUseAgreementFile](Get-MgIdentityGovernanceTermsOfUseAgreementFile.md)
 Retrieve the details of the default file for an agreement, including the language and version information.
 The file information is specified through the agreementFile object.
 
-### [Get-MgIdentityGovernanceTermOfUseAgreementFileLocalization](Get-MgIdentityGovernanceTermOfUseAgreementFileLocalization.md)
+### [Get-MgIdentityGovernanceTermsOfUseAgreementFileCount](Get-MgIdentityGovernanceTermsOfUseAgreementFileCount.md)
+Get the number of the resource
+
+### [Get-MgIdentityGovernanceTermsOfUseAgreementFileLocalization](Get-MgIdentityGovernanceTermsOfUseAgreementFileLocalization.md)
 The localized version of the terms of use agreement files attached to the agreement.
 
-### [Get-MgIdentityGovernanceTermOfUseAgreementFileLocalizationVersion](Get-MgIdentityGovernanceTermOfUseAgreementFileLocalizationVersion.md)
+### [Get-MgIdentityGovernanceTermsOfUseAgreementFileLocalizationCount](Get-MgIdentityGovernanceTermsOfUseAgreementFileLocalizationCount.md)
+Get the number of the resource
+
+### [Get-MgIdentityGovernanceTermsOfUseAgreementFileLocalizationVersion](Get-MgIdentityGovernanceTermsOfUseAgreementFileLocalizationVersion.md)
 Read-only.
 Customized versions of the terms of use agreement in the Azure AD tenant.
+
+### [Get-MgIdentityGovernanceTermsOfUseAgreementFileLocalizationVersionCount](Get-MgIdentityGovernanceTermsOfUseAgreementFileLocalizationVersionCount.md)
+Get the number of the resource
+
+### [Get-MgIdentityGovernanceTermsOfUseAgreementFileVersion](Get-MgIdentityGovernanceTermsOfUseAgreementFileVersion.md)
+Read-only.
+Customized versions of the terms of use agreement in the Azure AD tenant.
+
+### [Get-MgIdentityGovernanceTermsOfUseAgreementFileVersionCount](Get-MgIdentityGovernanceTermsOfUseAgreementFileVersionCount.md)
+Get the number of the resource
+
+### [Get-MgRoleManagementDirectory](Get-MgRoleManagementDirectory.md)
+Get directory from roleManagement
+
+### [Get-MgRoleManagementDirectoryResourceNamespace](Get-MgRoleManagementDirectoryResourceNamespace.md)
+Get resourceNamespaces from roleManagement
+
+### [Get-MgRoleManagementDirectoryResourceNamespaceCount](Get-MgRoleManagementDirectoryResourceNamespaceCount.md)
+Get the number of the resource
+
+### [Get-MgRoleManagementDirectoryResourceNamespaceResourceAction](Get-MgRoleManagementDirectoryResourceNamespaceResourceAction.md)
+Get resourceActions from roleManagement
+
+### [Get-MgRoleManagementDirectoryResourceNamespaceResourceActionCount](Get-MgRoleManagementDirectoryResourceNamespaceResourceActionCount.md)
+Get the number of the resource
+
+### [Get-MgRoleManagementDirectoryRoleAssignment](Get-MgRoleManagementDirectoryRoleAssignment.md)
+Retrieve the properties and relationships of a unifiedRoleAssignment object.
+
+### [Get-MgRoleManagementDirectoryRoleAssignmentAppScope](Get-MgRoleManagementDirectoryRoleAssignmentAppScope.md)
+Read-only property with details of the app specific scope when the assignment scope is app specific.
+Containment entity.
+Supports $expand.
+
+### [Get-MgRoleManagementDirectoryRoleAssignmentCount](Get-MgRoleManagementDirectoryRoleAssignmentCount.md)
+Get the number of the resource
+
+### [Get-MgRoleManagementDirectoryRoleAssignmentDirectoryScope](Get-MgRoleManagementDirectoryRoleAssignmentDirectoryScope.md)
+The directory object that is the scope of the assignment.
+Read-only.
+Supports $expand.
+
+### [Get-MgRoleManagementDirectoryRoleAssignmentPrincipal](Get-MgRoleManagementDirectoryRoleAssignmentPrincipal.md)
+Referencing the assigned principal.
+Read-only.
+Supports $expand.
+
+### [Get-MgRoleManagementDirectoryRoleAssignmentRoleDefinition](Get-MgRoleManagementDirectoryRoleAssignmentRoleDefinition.md)
+The roleDefinition the assignment is for.
+Supports $expand.
+roleDefinition.Id will be auto expanded.
+
+### [Get-MgRoleManagementDirectoryRoleAssignmentSchedule](Get-MgRoleManagementDirectoryRoleAssignmentSchedule.md)
+Retrieve the schedule for an active role assignment operation.
+
+### [Get-MgRoleManagementDirectoryRoleAssignmentScheduleActivatedUsing](Get-MgRoleManagementDirectoryRoleAssignmentScheduleActivatedUsing.md)
+If the request is from an eligible administrator to activate a role, this parameter will show the related eligible assignment for that activation.
+Otherwise, it is null.
+Supports $expand.
+
+### [Get-MgRoleManagementDirectoryRoleAssignmentScheduleCount](Get-MgRoleManagementDirectoryRoleAssignmentScheduleCount.md)
+Get the number of the resource
+
+### [Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstance](Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstance.md)
+Get the instance of an active role assignment.
+
+### [Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstanceActivatedUsing](Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstanceActivatedUsing.md)
+If the request is from an eligible administrator to activate a role, this parameter will show the related eligible assignment for that activation.
+Otherwise, it is null.
+Supports $expand.
+
+### [Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstanceCount](Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstanceCount.md)
+Get the number of the resource
+
+### [Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequest](Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequest.md)
+In PIM, read the details of a request for an active and persistent role assignment made through the unifiedRoleAssignmentScheduleRequest object.
+
+### [Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestActivatedUsing](Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestActivatedUsing.md)
+If the request is from an eligible administrator to activate a role, this parameter will show the related eligible assignment for that activation.
+Otherwise, it's null.
+Supports $expand.
+
+### [Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestAppScope](Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestAppScope.md)
+Read-only property with details of the app-specific scope when the assignment is scoped to an app.
+Nullable.
+Supports $expand.
+
+### [Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestCount](Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestCount.md)
+Get the number of the resource
+
+### [Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestDirectoryScope](Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestDirectoryScope.md)
+The directory object that is the scope of the assignment.
+Read-only.
+Supports $expand.
+
+### [Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestPrincipal](Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestPrincipal.md)
+The principal that's getting a role assignment through the request.
+Supports $expand.
+
+### [Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestRoleDefinition](Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestRoleDefinition.md)
+Detailed information for the unifiedRoleDefinition object that is referenced through the roleDefinitionId property.
+Supports $expand.
+
+### [Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestTargetSchedule](Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestTargetSchedule.md)
+The schedule for an eligible role assignment that is referenced through the targetScheduleId property.
+Supports $expand.
+
+### [Get-MgRoleManagementDirectoryRoleDefinition](Get-MgRoleManagementDirectoryRoleDefinition.md)
+Read the properties and relationships of a unifiedRoleDefinition object.
+The following role-based access control (RBAC) providers are currently supported:
+
+### [Get-MgRoleManagementDirectoryRoleDefinitionCount](Get-MgRoleManagementDirectoryRoleDefinitionCount.md)
+Get the number of the resource
+
+### [Get-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFrom](Get-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFrom.md)
+Read-only collection of role definitions that the given role definition inherits from.
+Only Azure AD built-in roles (isBuiltIn is true) support this attribute.
+Supports $expand.
+
+### [Get-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFromCount](Get-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFromCount.md)
+Get the number of the resource
+
+### [Get-MgRoleManagementDirectoryRoleEligibilitySchedule](Get-MgRoleManagementDirectoryRoleEligibilitySchedule.md)
+Retrieve the schedule for a role eligibility operation.
+
+### [Get-MgRoleManagementDirectoryRoleEligibilityScheduleCount](Get-MgRoleManagementDirectoryRoleEligibilityScheduleCount.md)
+Get the number of the resource
+
+### [Get-MgRoleManagementDirectoryRoleEligibilityScheduleInstance](Get-MgRoleManagementDirectoryRoleEligibilityScheduleInstance.md)
+Get the instance of a role eligibility.
+
+### [Get-MgRoleManagementDirectoryRoleEligibilityScheduleInstanceCount](Get-MgRoleManagementDirectoryRoleEligibilityScheduleInstanceCount.md)
+Get the number of the resource
+
+### [Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequest](Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequest.md)
+In PIM, read the details of a request for for a role eligibility request made through the unifiedRoleEligibilityScheduleRequest object.
+
+### [Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequestAppScope](Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequestAppScope.md)
+Read-only property with details of the app-specific scope when the role eligibility is scoped to an app.
+Nullable.
+Supports $expand.
+
+### [Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequestCount](Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequestCount.md)
+Get the number of the resource
+
+### [Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequestDirectoryScope](Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequestDirectoryScope.md)
+The directory object that is the scope of the role eligibility.
+Read-only.
+Supports $expand.
+
+### [Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequestPrincipal](Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequestPrincipal.md)
+The principal that's getting a role eligibility through the request.
+Supports $expand.
+
+### [Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequestRoleDefinition](Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequestRoleDefinition.md)
+Detailed information for the unifiedRoleDefinition object that is referenced through the roleDefinitionId property.
+Supports $expand.
+
+### [Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequestTargetSchedule](Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequestTargetSchedule.md)
+The schedule for a role eligibility that is referenced through the targetScheduleId property.
+Supports $expand.
+
+### [Get-MgRoleManagementEntitlementManagement](Get-MgRoleManagementEntitlementManagement.md)
+Container for roles and assignments for entitlement management resources.
+
+### [Get-MgRoleManagementEntitlementManagementResourceNamespace](Get-MgRoleManagementEntitlementManagementResourceNamespace.md)
+Get resourceNamespaces from roleManagement
+
+### [Get-MgRoleManagementEntitlementManagementResourceNamespaceCount](Get-MgRoleManagementEntitlementManagementResourceNamespaceCount.md)
+Get the number of the resource
+
+### [Get-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction](Get-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction.md)
+Get resourceActions from roleManagement
+
+### [Get-MgRoleManagementEntitlementManagementResourceNamespaceResourceActionCount](Get-MgRoleManagementEntitlementManagementResourceNamespaceResourceActionCount.md)
+Get the number of the resource
+
+### [Get-MgRoleManagementEntitlementManagementRoleAssignment](Get-MgRoleManagementEntitlementManagementRoleAssignment.md)
+Retrieve the properties and relationships of a unifiedRoleAssignment object.
+
+### [Get-MgRoleManagementEntitlementManagementRoleAssignmentAppScope](Get-MgRoleManagementEntitlementManagementRoleAssignmentAppScope.md)
+Read-only property with details of the app specific scope when the assignment scope is app specific.
+Containment entity.
+Supports $expand.
+
+### [Get-MgRoleManagementEntitlementManagementRoleAssignmentCount](Get-MgRoleManagementEntitlementManagementRoleAssignmentCount.md)
+Get the number of the resource
+
+### [Get-MgRoleManagementEntitlementManagementRoleAssignmentDirectoryScope](Get-MgRoleManagementEntitlementManagementRoleAssignmentDirectoryScope.md)
+The directory object that is the scope of the assignment.
+Read-only.
+Supports $expand.
+
+### [Get-MgRoleManagementEntitlementManagementRoleAssignmentPrincipal](Get-MgRoleManagementEntitlementManagementRoleAssignmentPrincipal.md)
+Referencing the assigned principal.
+Read-only.
+Supports $expand.
+
+### [Get-MgRoleManagementEntitlementManagementRoleAssignmentRoleDefinition](Get-MgRoleManagementEntitlementManagementRoleAssignmentRoleDefinition.md)
+The roleDefinition the assignment is for.
+Supports $expand.
+roleDefinition.Id will be auto expanded.
+
+### [Get-MgRoleManagementEntitlementManagementRoleAssignmentSchedule](Get-MgRoleManagementEntitlementManagementRoleAssignmentSchedule.md)
+Retrieve the schedule for an active role assignment operation.
+
+### [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleActivatedUsing](Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleActivatedUsing.md)
+If the request is from an eligible administrator to activate a role, this parameter will show the related eligible assignment for that activation.
+Otherwise, it is null.
+Supports $expand.
+
+### [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleCount](Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleCount.md)
+Get the number of the resource
+
+### [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance](Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance.md)
+Get the instance of an active role assignment.
+
+### [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceActivatedUsing](Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceActivatedUsing.md)
+If the request is from an eligible administrator to activate a role, this parameter will show the related eligible assignment for that activation.
+Otherwise, it is null.
+Supports $expand.
+
+### [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceCount](Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceCount.md)
+Get the number of the resource
+
+### [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest](Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest.md)
+In PIM, read the details of a request for an active and persistent role assignment made through the unifiedRoleAssignmentScheduleRequest object.
+
+### [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestActivatedUsing](Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestActivatedUsing.md)
+If the request is from an eligible administrator to activate a role, this parameter will show the related eligible assignment for that activation.
+Otherwise, it's null.
+Supports $expand.
+
+### [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestAppScope](Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestAppScope.md)
+Read-only property with details of the app-specific scope when the assignment is scoped to an app.
+Nullable.
+Supports $expand.
+
+### [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestCount](Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestCount.md)
+Get the number of the resource
+
+### [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestDirectoryScope](Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestDirectoryScope.md)
+The directory object that is the scope of the assignment.
+Read-only.
+Supports $expand.
+
+### [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestPrincipal](Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestPrincipal.md)
+The principal that's getting a role assignment through the request.
+Supports $expand.
+
+### [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestRoleDefinition](Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestRoleDefinition.md)
+Detailed information for the unifiedRoleDefinition object that is referenced through the roleDefinitionId property.
+Supports $expand.
+
+### [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestTargetSchedule](Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestTargetSchedule.md)
+The schedule for an eligible role assignment that is referenced through the targetScheduleId property.
+Supports $expand.
+
+### [Get-MgRoleManagementEntitlementManagementRoleDefinition](Get-MgRoleManagementEntitlementManagementRoleDefinition.md)
+Read the properties and relationships of a unifiedRoleDefinition object.
+The following role-based access control (RBAC) providers are currently supported:
+
+### [Get-MgRoleManagementEntitlementManagementRoleDefinitionCount](Get-MgRoleManagementEntitlementManagementRoleDefinitionCount.md)
+Get the number of the resource
+
+### [Get-MgRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom](Get-MgRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom.md)
+Read-only collection of role definitions that the given role definition inherits from.
+Only Azure AD built-in roles (isBuiltIn is true) support this attribute.
+Supports $expand.
+
+### [Get-MgRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFromCount](Get-MgRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFromCount.md)
+Get the number of the resource
+
+### [Get-MgRoleManagementEntitlementManagementRoleEligibilitySchedule](Get-MgRoleManagementEntitlementManagementRoleEligibilitySchedule.md)
+Retrieve the schedule for a role eligibility operation.
+
+### [Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleCount](Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleCount.md)
+Get the number of the resource
+
+### [Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstance](Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstance.md)
+Get the instance of a role eligibility.
+
+### [Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstanceCount](Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstanceCount.md)
+Get the number of the resource
+
+### [Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest](Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest.md)
+In PIM, read the details of a request for for a role eligibility request made through the unifiedRoleEligibilityScheduleRequest object.
+
+### [Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestAppScope](Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestAppScope.md)
+Read-only property with details of the app-specific scope when the role eligibility is scoped to an app.
+Nullable.
+Supports $expand.
+
+### [Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestCount](Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestCount.md)
+Get the number of the resource
+
+### [Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestDirectoryScope](Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestDirectoryScope.md)
+The directory object that is the scope of the role eligibility.
+Read-only.
+Supports $expand.
+
+### [Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestPrincipal](Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestPrincipal.md)
+The principal that's getting a role eligibility through the request.
+Supports $expand.
+
+### [Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestRoleDefinition](Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestRoleDefinition.md)
+Detailed information for the unifiedRoleDefinition object that is referenced through the roleDefinitionId property.
+Supports $expand.
+
+### [Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestTargetSchedule](Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestTargetSchedule.md)
+The schedule for a role eligibility that is referenced through the targetScheduleId property.
+Supports $expand.
 
 ### [Get-MgUserAgreementAcceptance](Get-MgUserAgreementAcceptance.md)
 The user's terms of use acceptance statuses.
 Read-only.
 Nullable.
+
+### [Get-MgUserAgreementAcceptanceCount](Get-MgUserAgreementAcceptanceCount.md)
+Get the number of the resource
 
 ### [Invoke-MgAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation](Invoke-MgAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation.md)
 Allows the acceptance of recommendations on all accessReviewInstanceDecisionItem objects that have not been reviewed on an accessReviewInstance object for which the calling user is a reviewer.
@@ -268,10 +676,49 @@ Invoke function filterByCurrentUser
 ### [Invoke-MgFilterIdentityGovernanceAccessReviewDefinitionInstanceStageByCurrentUser](Invoke-MgFilterIdentityGovernanceAccessReviewDefinitionInstanceStageByCurrentUser.md)
 Invoke function filterByCurrentUser
 
+### [Invoke-MgFilterIdentityGovernanceAccessReviewDefinitionInstanceStageDecisionByCurrentUser](Invoke-MgFilterIdentityGovernanceAccessReviewDefinitionInstanceStageDecisionByCurrentUser.md)
+Invoke function filterByCurrentUser
+
 ### [Invoke-MgFilterIdentityGovernanceAppConsentRequestByCurrentUser](Invoke-MgFilterIdentityGovernanceAppConsentRequestByCurrentUser.md)
 Invoke function filterByCurrentUser
 
 ### [Invoke-MgFilterIdentityGovernanceAppConsentRequestUserConsentRequestByCurrentUser](Invoke-MgFilterIdentityGovernanceAppConsentRequestUserConsentRequestByCurrentUser.md)
+Invoke function filterByCurrentUser
+
+### [Invoke-MgFilterRoleManagementDirectoryRoleAssignmentScheduleByCurrentUser](Invoke-MgFilterRoleManagementDirectoryRoleAssignmentScheduleByCurrentUser.md)
+Invoke function filterByCurrentUser
+
+### [Invoke-MgFilterRoleManagementDirectoryRoleAssignmentScheduleInstanceByCurrentUser](Invoke-MgFilterRoleManagementDirectoryRoleAssignmentScheduleInstanceByCurrentUser.md)
+Invoke function filterByCurrentUser
+
+### [Invoke-MgFilterRoleManagementDirectoryRoleAssignmentScheduleRequestByCurrentUser](Invoke-MgFilterRoleManagementDirectoryRoleAssignmentScheduleRequestByCurrentUser.md)
+Invoke function filterByCurrentUser
+
+### [Invoke-MgFilterRoleManagementDirectoryRoleEligibilityScheduleByCurrentUser](Invoke-MgFilterRoleManagementDirectoryRoleEligibilityScheduleByCurrentUser.md)
+Invoke function filterByCurrentUser
+
+### [Invoke-MgFilterRoleManagementDirectoryRoleEligibilityScheduleInstanceByCurrentUser](Invoke-MgFilterRoleManagementDirectoryRoleEligibilityScheduleInstanceByCurrentUser.md)
+Invoke function filterByCurrentUser
+
+### [Invoke-MgFilterRoleManagementDirectoryRoleEligibilityScheduleRequestByCurrentUser](Invoke-MgFilterRoleManagementDirectoryRoleEligibilityScheduleRequestByCurrentUser.md)
+Invoke function filterByCurrentUser
+
+### [Invoke-MgFilterRoleManagementEntitlementManagementRoleAssignmentScheduleByCurrentUser](Invoke-MgFilterRoleManagementEntitlementManagementRoleAssignmentScheduleByCurrentUser.md)
+Invoke function filterByCurrentUser
+
+### [Invoke-MgFilterRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceByCurrentUser](Invoke-MgFilterRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceByCurrentUser.md)
+Invoke function filterByCurrentUser
+
+### [Invoke-MgFilterRoleManagementEntitlementManagementRoleAssignmentScheduleRequestByCurrentUser](Invoke-MgFilterRoleManagementEntitlementManagementRoleAssignmentScheduleRequestByCurrentUser.md)
+Invoke function filterByCurrentUser
+
+### [Invoke-MgFilterRoleManagementEntitlementManagementRoleEligibilityScheduleByCurrentUser](Invoke-MgFilterRoleManagementEntitlementManagementRoleEligibilityScheduleByCurrentUser.md)
+Invoke function filterByCurrentUser
+
+### [Invoke-MgFilterRoleManagementEntitlementManagementRoleEligibilityScheduleInstanceByCurrentUser](Invoke-MgFilterRoleManagementEntitlementManagementRoleEligibilityScheduleInstanceByCurrentUser.md)
+Invoke function filterByCurrentUser
+
+### [Invoke-MgFilterRoleManagementEntitlementManagementRoleEligibilityScheduleRequestByCurrentUser](Invoke-MgFilterRoleManagementEntitlementManagementRoleEligibilityScheduleRequestByCurrentUser.md)
 Invoke function filterByCurrentUser
 
 ### [New-MgAgreement](New-MgAgreement.md)
@@ -280,10 +727,16 @@ Add new entity to agreements
 ### [New-MgAgreementAcceptance](New-MgAgreementAcceptance.md)
 Create new navigation property to acceptances for agreements
 
+### [New-MgAgreementFile](New-MgAgreementFile.md)
+Create a new localized agreement file.
+
 ### [New-MgAgreementFileLocalization](New-MgAgreementFileLocalization.md)
 Create new navigation property to localizations for agreements
 
 ### [New-MgAgreementFileLocalizationVersion](New-MgAgreementFileLocalizationVersion.md)
+Create new navigation property to versions for agreements
+
+### [New-MgAgreementFileVersion](New-MgAgreementFileVersion.md)
 Create new navigation property to versions for agreements
 
 ### [New-MgEntitlementManagementAccessPackage](New-MgEntitlementManagementAccessPackage.md)
@@ -293,11 +746,14 @@ The access package will be added to an existing accessPackageCatalog.
 ### [New-MgEntitlementManagementAccessPackageAssignmentApprovalStage](New-MgEntitlementManagementAccessPackageAssignmentApprovalStage.md)
 Create new navigation property to stages for identityGovernance
 
+### [New-MgEntitlementManagementAccessPackageAssignmentPolicy](New-MgEntitlementManagementAccessPackageAssignmentPolicy.md)
+Create new navigation property to assignmentPolicies for identityGovernance
+
 ### [New-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef](New-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef.md)
-Create new navigation property ref to incompatibleAccessPackages for identityGovernance
+Add an accessPackage to the list of access packages that have been marked as incompatible on an accessPackage.
 
 ### [New-MgEntitlementManagementAccessPackageIncompatibleGroupByRef](New-MgEntitlementManagementAccessPackageIncompatibleGroupByRef.md)
-Create new navigation property ref to incompatibleGroups for identityGovernance
+Add a group to the list of groups that have been marked as incompatible on an accessPackage.
 
 ### [New-MgEntitlementManagementAssignment](New-MgEntitlementManagementAssignment.md)
 Create new navigation property to assignments for identityGovernance
@@ -332,10 +788,12 @@ Create new navigation property ref to incompatibleGroups for identityGovernance
 Create new navigation property to connectedOrganizations for identityGovernance
 
 ### [New-MgEntitlementManagementConnectedOrganizationExternalSponsorByRef](New-MgEntitlementManagementConnectedOrganizationExternalSponsorByRef.md)
-Create new navigation property ref to externalSponsors for identityGovernance
+Add a user or a group to the connected organization's external sponsors.
+The external sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
 
 ### [New-MgEntitlementManagementConnectedOrganizationInternalSponsorByRef](New-MgEntitlementManagementConnectedOrganizationInternalSponsorByRef.md)
-Create new navigation property ref to internalSponsors for identityGovernance
+Add a user or a group to the connected organization's internal sponsors.
+The internal sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
 
 ### [New-MgIdentityGovernanceAccessReviewDefinition](New-MgIdentityGovernanceAccessReviewDefinition.md)
 Create a new accessReviewScheduleDefinition object.
@@ -375,17 +833,97 @@ Create new navigation property to userConsentRequests for identityGovernance
 ### [New-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStage](New-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStage.md)
 Create new navigation property to stages for identityGovernance
 
-### [New-MgIdentityGovernanceTermOfUseAgreement](New-MgIdentityGovernanceTermOfUseAgreement.md)
+### [New-MgIdentityGovernanceTermsOfUseAgreement](New-MgIdentityGovernanceTermsOfUseAgreement.md)
 Create a new agreement object.
 
-### [New-MgIdentityGovernanceTermOfUseAgreementAcceptance](New-MgIdentityGovernanceTermOfUseAgreementAcceptance.md)
+### [New-MgIdentityGovernanceTermsOfUseAgreementAcceptance](New-MgIdentityGovernanceTermsOfUseAgreementAcceptance.md)
 Create new navigation property to agreementAcceptances for identityGovernance
 
-### [New-MgIdentityGovernanceTermOfUseAgreementFileLocalization](New-MgIdentityGovernanceTermOfUseAgreementFileLocalization.md)
+### [New-MgIdentityGovernanceTermsOfUseAgreementFile](New-MgIdentityGovernanceTermsOfUseAgreementFile.md)
+Create a new localized agreement file.
+
+### [New-MgIdentityGovernanceTermsOfUseAgreementFileLocalization](New-MgIdentityGovernanceTermsOfUseAgreementFileLocalization.md)
 Create new navigation property to localizations for identityGovernance
 
-### [New-MgIdentityGovernanceTermOfUseAgreementFileLocalizationVersion](New-MgIdentityGovernanceTermOfUseAgreementFileLocalizationVersion.md)
+### [New-MgIdentityGovernanceTermsOfUseAgreementFileLocalizationVersion](New-MgIdentityGovernanceTermsOfUseAgreementFileLocalizationVersion.md)
 Create new navigation property to versions for identityGovernance
+
+### [New-MgIdentityGovernanceTermsOfUseAgreementFileVersion](New-MgIdentityGovernanceTermsOfUseAgreementFileVersion.md)
+Create new navigation property to versions for identityGovernance
+
+### [New-MgRoleManagementDirectoryResourceNamespace](New-MgRoleManagementDirectoryResourceNamespace.md)
+Create new navigation property to resourceNamespaces for roleManagement
+
+### [New-MgRoleManagementDirectoryResourceNamespaceResourceAction](New-MgRoleManagementDirectoryResourceNamespaceResourceAction.md)
+Create new navigation property to resourceActions for roleManagement
+
+### [New-MgRoleManagementDirectoryRoleAssignment](New-MgRoleManagementDirectoryRoleAssignment.md)
+Create a new unifiedRoleAssignment object.
+
+### [New-MgRoleManagementDirectoryRoleAssignmentSchedule](New-MgRoleManagementDirectoryRoleAssignmentSchedule.md)
+Create new navigation property to roleAssignmentSchedules for roleManagement
+
+### [New-MgRoleManagementDirectoryRoleAssignmentScheduleInstance](New-MgRoleManagementDirectoryRoleAssignmentScheduleInstance.md)
+Create new navigation property to roleAssignmentScheduleInstances for roleManagement
+
+### [New-MgRoleManagementDirectoryRoleAssignmentScheduleRequest](New-MgRoleManagementDirectoryRoleAssignmentScheduleRequest.md)
+In PIM, carry out the following operations through the unifiedRoleAssignmentScheduleRequest object:\n+ Request active and persistent role assignments for a principal, with or without expiry dates.\n+ Activate, deactivate, extend, or renew an eligible role assignment for a principal.
+To call this API to update, renew, and extend assignments for yourself, you must have multi-factor authentication (MFA) enforced, and running the query in a session in which they were challenged for MFA.
+See Enable per-user Azure AD Multi-Factor Authentication to secure sign-in events.
+
+### [New-MgRoleManagementDirectoryRoleDefinition](New-MgRoleManagementDirectoryRoleDefinition.md)
+Create a new custom unifiedRoleDefinition object.
+This feature requires an Azure AD Premium P1 or P2 license.
+
+### [New-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFrom](New-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFrom.md)
+Create new navigation property to inheritsPermissionsFrom for roleManagement
+
+### [New-MgRoleManagementDirectoryRoleEligibilitySchedule](New-MgRoleManagementDirectoryRoleEligibilitySchedule.md)
+Create new navigation property to roleEligibilitySchedules for roleManagement
+
+### [New-MgRoleManagementDirectoryRoleEligibilityScheduleInstance](New-MgRoleManagementDirectoryRoleEligibilityScheduleInstance.md)
+Create new navigation property to roleEligibilityScheduleInstances for roleManagement
+
+### [New-MgRoleManagementDirectoryRoleEligibilityScheduleRequest](New-MgRoleManagementDirectoryRoleEligibilityScheduleRequest.md)
+In PIM, request for a role eligibility for a principal through the unifiedRoleEligibilityScheduleRequest object.
+This operation allows both admins and eligible users to add, revoke, or extend eligible assignments.
+
+### [New-MgRoleManagementEntitlementManagementResourceNamespace](New-MgRoleManagementEntitlementManagementResourceNamespace.md)
+Create new navigation property to resourceNamespaces for roleManagement
+
+### [New-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction](New-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction.md)
+Create new navigation property to resourceActions for roleManagement
+
+### [New-MgRoleManagementEntitlementManagementRoleAssignment](New-MgRoleManagementEntitlementManagementRoleAssignment.md)
+Create a new unifiedRoleAssignment object.
+
+### [New-MgRoleManagementEntitlementManagementRoleAssignmentSchedule](New-MgRoleManagementEntitlementManagementRoleAssignmentSchedule.md)
+Create new navigation property to roleAssignmentSchedules for roleManagement
+
+### [New-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance](New-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance.md)
+Create new navigation property to roleAssignmentScheduleInstances for roleManagement
+
+### [New-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest](New-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest.md)
+In PIM, carry out the following operations through the unifiedRoleAssignmentScheduleRequest object:\n+ Request active and persistent role assignments for a principal, with or without expiry dates.\n+ Activate, deactivate, extend, or renew an eligible role assignment for a principal.
+To call this API to update, renew, and extend assignments for yourself, you must have multi-factor authentication (MFA) enforced, and running the query in a session in which they were challenged for MFA.
+See Enable per-user Azure AD Multi-Factor Authentication to secure sign-in events.
+
+### [New-MgRoleManagementEntitlementManagementRoleDefinition](New-MgRoleManagementEntitlementManagementRoleDefinition.md)
+Create a new custom unifiedRoleDefinition object.
+This feature requires an Azure AD Premium P1 or P2 license.
+
+### [New-MgRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom](New-MgRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom.md)
+Create new navigation property to inheritsPermissionsFrom for roleManagement
+
+### [New-MgRoleManagementEntitlementManagementRoleEligibilitySchedule](New-MgRoleManagementEntitlementManagementRoleEligibilitySchedule.md)
+Create new navigation property to roleEligibilitySchedules for roleManagement
+
+### [New-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstance](New-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstance.md)
+Create new navigation property to roleEligibilityScheduleInstances for roleManagement
+
+### [New-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest](New-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest.md)
+In PIM, request for a role eligibility for a principal through the unifiedRoleEligibilityScheduleRequest object.
+This operation allows both admins and eligible users to add, revoke, or extend eligible assignments.
 
 ### [Remove-MgAgreement](Remove-MgAgreement.md)
 Delete entity from agreements
@@ -402,8 +940,12 @@ Delete navigation property localizations for agreements
 ### [Remove-MgAgreementFileLocalizationVersion](Remove-MgAgreementFileLocalizationVersion.md)
 Delete navigation property versions for agreements
 
+### [Remove-MgAgreementFileVersion](Remove-MgAgreementFileVersion.md)
+Delete navigation property versions for agreements
+
 ### [Remove-MgEntitlementManagementAccessPackage](Remove-MgEntitlementManagementAccessPackage.md)
-Delete navigation property accessPackages for identityGovernance
+Delete an accessPackage object.
+You cannot delete an access package if it has any **accessPackageAssignment**.
 
 ### [Remove-MgEntitlementManagementAccessPackageAssignmentApproval](Remove-MgEntitlementManagementAccessPackageAssignmentApproval.md)
 Delete navigation property accessPackageAssignmentApprovals for identityGovernance
@@ -411,26 +953,31 @@ Delete navigation property accessPackageAssignmentApprovals for identityGovernan
 ### [Remove-MgEntitlementManagementAccessPackageAssignmentApprovalStage](Remove-MgEntitlementManagementAccessPackageAssignmentApprovalStage.md)
 Delete navigation property stages for identityGovernance
 
+### [Remove-MgEntitlementManagementAccessPackageAssignmentPolicy](Remove-MgEntitlementManagementAccessPackageAssignmentPolicy.md)
+Delete navigation property assignmentPolicies for identityGovernance
+
 ### [Remove-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef](Remove-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef.md)
-Delete ref of navigation property incompatibleAccessPackages for identityGovernance
+Remove an access package from the list of access packages that have been marked as incompatible on an accessPackage.
 
 ### [Remove-MgEntitlementManagementAccessPackageIncompatibleGroupByRef](Remove-MgEntitlementManagementAccessPackageIncompatibleGroupByRef.md)
-Delete ref of navigation property incompatibleGroups for identityGovernance
+Remove a group from the list of groups that have been marked as incompatible on an accessPackage.
 
 ### [Remove-MgEntitlementManagementAssignment](Remove-MgEntitlementManagementAssignment.md)
 Delete navigation property assignments for identityGovernance
 
 ### [Remove-MgEntitlementManagementAssignmentPolicy](Remove-MgEntitlementManagementAssignmentPolicy.md)
-Delete navigation property assignmentPolicies for identityGovernance
+In Azure AD entitlement management, delete an accessPackageAssignmentPolicy.
 
 ### [Remove-MgEntitlementManagementAssignmentPolicyQuestion](Remove-MgEntitlementManagementAssignmentPolicyQuestion.md)
 Delete navigation property questions for identityGovernance
 
 ### [Remove-MgEntitlementManagementAssignmentRequest](Remove-MgEntitlementManagementAssignmentRequest.md)
-Delete navigation property assignmentRequests for identityGovernance
+Delete an accessPackageAssignmentRequest object.
+This request can be made to remove a denied or completed request.
+You cannot delete an access package assignment request if it has any **accessPackageAssignment** objects.
 
 ### [Remove-MgEntitlementManagementCatalog](Remove-MgEntitlementManagementCatalog.md)
-Delete navigation property catalogs for identityGovernance
+Delete an accessPackageCatalog.
 
 ### [Remove-MgEntitlementManagementCatalogAccessPackageAssignmentPolicy](Remove-MgEntitlementManagementCatalogAccessPackageAssignmentPolicy.md)
 Delete navigation property assignmentPolicies for identityGovernance
@@ -445,16 +992,18 @@ Delete ref of navigation property incompatibleAccessPackages for identityGoverna
 Delete ref of navigation property incompatibleGroups for identityGovernance
 
 ### [Remove-MgEntitlementManagementConnectedOrganization](Remove-MgEntitlementManagementConnectedOrganization.md)
-Delete navigation property connectedOrganizations for identityGovernance
+Delete a connectedOrganization object.
 
 ### [Remove-MgEntitlementManagementConnectedOrganizationExternalSponsorByRef](Remove-MgEntitlementManagementConnectedOrganizationExternalSponsorByRef.md)
-Delete ref of navigation property externalSponsors for identityGovernance
+Remove a user or a group from the connected organization's external sponsors.
+The external sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
 
 ### [Remove-MgEntitlementManagementConnectedOrganizationInternalSponsorByRef](Remove-MgEntitlementManagementConnectedOrganizationInternalSponsorByRef.md)
-Delete ref of navigation property internalSponsors for identityGovernance
+Remove a user or a group from the connected organization's internal sponsors.
+The internal sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
 
 ### [Remove-MgIdentityGovernanceAccessReviewDefinition](Remove-MgIdentityGovernanceAccessReviewDefinition.md)
-Delete navigation property definitions for identityGovernance
+Deletes an accessReviewScheduleDefinition object.
 
 ### [Remove-MgIdentityGovernanceAccessReviewDefinitionInstance](Remove-MgIdentityGovernanceAccessReviewDefinitionInstance.md)
 Delete navigation property instances for identityGovernance
@@ -489,20 +1038,105 @@ Delete navigation property approval for identityGovernance
 ### [Remove-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStage](Remove-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStage.md)
 Delete navigation property stages for identityGovernance
 
-### [Remove-MgIdentityGovernanceTermOfUseAgreement](Remove-MgIdentityGovernanceTermOfUseAgreement.md)
-Delete navigation property agreements for identityGovernance
+### [Remove-MgIdentityGovernanceTermsOfUseAgreement](Remove-MgIdentityGovernanceTermsOfUseAgreement.md)
+Delete an agreement object.
 
-### [Remove-MgIdentityGovernanceTermOfUseAgreementAcceptance](Remove-MgIdentityGovernanceTermOfUseAgreementAcceptance.md)
+### [Remove-MgIdentityGovernanceTermsOfUseAgreementAcceptance](Remove-MgIdentityGovernanceTermsOfUseAgreementAcceptance.md)
 Delete navigation property agreementAcceptances for identityGovernance
 
-### [Remove-MgIdentityGovernanceTermOfUseAgreementFile](Remove-MgIdentityGovernanceTermOfUseAgreementFile.md)
+### [Remove-MgIdentityGovernanceTermsOfUseAgreementFile](Remove-MgIdentityGovernanceTermsOfUseAgreementFile.md)
 Delete navigation property file for identityGovernance
 
-### [Remove-MgIdentityGovernanceTermOfUseAgreementFileLocalization](Remove-MgIdentityGovernanceTermOfUseAgreementFileLocalization.md)
+### [Remove-MgIdentityGovernanceTermsOfUseAgreementFileLocalization](Remove-MgIdentityGovernanceTermsOfUseAgreementFileLocalization.md)
 Delete navigation property localizations for identityGovernance
 
-### [Remove-MgIdentityGovernanceTermOfUseAgreementFileLocalizationVersion](Remove-MgIdentityGovernanceTermOfUseAgreementFileLocalizationVersion.md)
+### [Remove-MgIdentityGovernanceTermsOfUseAgreementFileLocalizationVersion](Remove-MgIdentityGovernanceTermsOfUseAgreementFileLocalizationVersion.md)
 Delete navigation property versions for identityGovernance
+
+### [Remove-MgIdentityGovernanceTermsOfUseAgreementFileVersion](Remove-MgIdentityGovernanceTermsOfUseAgreementFileVersion.md)
+Delete navigation property versions for identityGovernance
+
+### [Remove-MgRoleManagementDirectory](Remove-MgRoleManagementDirectory.md)
+Delete navigation property directory for roleManagement
+
+### [Remove-MgRoleManagementDirectoryResourceNamespace](Remove-MgRoleManagementDirectoryResourceNamespace.md)
+Delete navigation property resourceNamespaces for roleManagement
+
+### [Remove-MgRoleManagementDirectoryResourceNamespaceResourceAction](Remove-MgRoleManagementDirectoryResourceNamespaceResourceAction.md)
+Delete navigation property resourceActions for roleManagement
+
+### [Remove-MgRoleManagementDirectoryRoleAssignment](Remove-MgRoleManagementDirectoryRoleAssignment.md)
+Delete a unifiedRoleAssignment object.
+
+### [Remove-MgRoleManagementDirectoryRoleAssignmentAppScope](Remove-MgRoleManagementDirectoryRoleAssignmentAppScope.md)
+Delete navigation property appScope for roleManagement
+
+### [Remove-MgRoleManagementDirectoryRoleAssignmentSchedule](Remove-MgRoleManagementDirectoryRoleAssignmentSchedule.md)
+Delete navigation property roleAssignmentSchedules for roleManagement
+
+### [Remove-MgRoleManagementDirectoryRoleAssignmentScheduleInstance](Remove-MgRoleManagementDirectoryRoleAssignmentScheduleInstance.md)
+Delete navigation property roleAssignmentScheduleInstances for roleManagement
+
+### [Remove-MgRoleManagementDirectoryRoleAssignmentScheduleRequest](Remove-MgRoleManagementDirectoryRoleAssignmentScheduleRequest.md)
+Delete navigation property roleAssignmentScheduleRequests for roleManagement
+
+### [Remove-MgRoleManagementDirectoryRoleDefinition](Remove-MgRoleManagementDirectoryRoleDefinition.md)
+Delete a unifiedRoleDefinition object.
+You cannot delete built-in roles.
+This feature requires an Azure AD Premium P1 or P2 license.
+
+### [Remove-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFrom](Remove-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFrom.md)
+Delete navigation property inheritsPermissionsFrom for roleManagement
+
+### [Remove-MgRoleManagementDirectoryRoleEligibilitySchedule](Remove-MgRoleManagementDirectoryRoleEligibilitySchedule.md)
+Delete navigation property roleEligibilitySchedules for roleManagement
+
+### [Remove-MgRoleManagementDirectoryRoleEligibilityScheduleInstance](Remove-MgRoleManagementDirectoryRoleEligibilityScheduleInstance.md)
+Delete navigation property roleEligibilityScheduleInstances for roleManagement
+
+### [Remove-MgRoleManagementDirectoryRoleEligibilityScheduleRequest](Remove-MgRoleManagementDirectoryRoleEligibilityScheduleRequest.md)
+Delete navigation property roleEligibilityScheduleRequests for roleManagement
+
+### [Remove-MgRoleManagementEntitlementManagement](Remove-MgRoleManagementEntitlementManagement.md)
+Delete navigation property entitlementManagement for roleManagement
+
+### [Remove-MgRoleManagementEntitlementManagementResourceNamespace](Remove-MgRoleManagementEntitlementManagementResourceNamespace.md)
+Delete navigation property resourceNamespaces for roleManagement
+
+### [Remove-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction](Remove-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction.md)
+Delete navigation property resourceActions for roleManagement
+
+### [Remove-MgRoleManagementEntitlementManagementRoleAssignment](Remove-MgRoleManagementEntitlementManagementRoleAssignment.md)
+Delete a unifiedRoleAssignment object.
+
+### [Remove-MgRoleManagementEntitlementManagementRoleAssignmentAppScope](Remove-MgRoleManagementEntitlementManagementRoleAssignmentAppScope.md)
+Delete navigation property appScope for roleManagement
+
+### [Remove-MgRoleManagementEntitlementManagementRoleAssignmentSchedule](Remove-MgRoleManagementEntitlementManagementRoleAssignmentSchedule.md)
+Delete navigation property roleAssignmentSchedules for roleManagement
+
+### [Remove-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance](Remove-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance.md)
+Delete navigation property roleAssignmentScheduleInstances for roleManagement
+
+### [Remove-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest](Remove-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest.md)
+Delete navigation property roleAssignmentScheduleRequests for roleManagement
+
+### [Remove-MgRoleManagementEntitlementManagementRoleDefinition](Remove-MgRoleManagementEntitlementManagementRoleDefinition.md)
+Delete a unifiedRoleDefinition object.
+You cannot delete built-in roles.
+This feature requires an Azure AD Premium P1 or P2 license.
+
+### [Remove-MgRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom](Remove-MgRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom.md)
+Delete navigation property inheritsPermissionsFrom for roleManagement
+
+### [Remove-MgRoleManagementEntitlementManagementRoleEligibilitySchedule](Remove-MgRoleManagementEntitlementManagementRoleEligibilitySchedule.md)
+Delete navigation property roleEligibilitySchedules for roleManagement
+
+### [Remove-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstance](Remove-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstance.md)
+Delete navigation property roleEligibilityScheduleInstances for roleManagement
+
+### [Remove-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest](Remove-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest.md)
+Delete navigation property roleEligibilityScheduleRequests for roleManagement
 
 ### [Reset-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision](Reset-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision.md)
 Resets all accessReviewInstanceDecisionItem objects on an accessReviewInstance to `notReviewed`.
@@ -530,6 +1164,22 @@ Stop an access review stage that is `inProgress`.
 After the access review stage stops, the stage **status** will be `Completed` and the reviewers can no longer give input.
 If there are subsequent stages that depend on the completed stage, the next stage will be created.
 The accessReviewInstanceDecisionItem objects will always reflect the last decisions recorded across all stages at that given time, regardless of the status of the stages.
+
+### [Stop-MgRoleManagementDirectoryRoleAssignmentScheduleRequest](Stop-MgRoleManagementDirectoryRoleAssignmentScheduleRequest.md)
+Immediately cancel a unifiedRoleAssignmentScheduleRequest object that is in a `Granted` status, and have the system automatically delete the canceled request after 30 days.
+After calling this action, the **status** of the canceled **unifiedRoleAssignmentScheduleRequest** changes to `Canceled`.
+
+### [Stop-MgRoleManagementDirectoryRoleEligibilityScheduleRequest](Stop-MgRoleManagementDirectoryRoleEligibilityScheduleRequest.md)
+Immediately cancel a unifiedRoleEligibilityScheduleRequest object whose status is `Granted` and have the system automatically delete the cancelled request after 30 days.
+After calling this action, the **status** of the cancelled **unifiedRoleEligibilityScheduleRequest** changes to `Revoked`.
+
+### [Stop-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest](Stop-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest.md)
+Immediately cancel a unifiedRoleAssignmentScheduleRequest object that is in a `Granted` status, and have the system automatically delete the canceled request after 30 days.
+After calling this action, the **status** of the canceled **unifiedRoleAssignmentScheduleRequest** changes to `Canceled`.
+
+### [Stop-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest](Stop-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest.md)
+Immediately cancel a unifiedRoleEligibilityScheduleRequest object whose status is `Granted` and have the system automatically delete the cancelled request after 30 days.
+After calling this action, the **status** of the cancelled **unifiedRoleEligibilityScheduleRequest** changes to `Revoked`.
 
 ### [Test-MgEntitlementManagementConnectedOrganizationExternalSponsorProperty](Test-MgEntitlementManagementConnectedOrganizationExternalSponsorProperty.md)
 Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
@@ -570,14 +1220,20 @@ Update the navigation property localizations in agreements
 ### [Update-MgAgreementFileLocalizationVersion](Update-MgAgreementFileLocalizationVersion.md)
 Update the navigation property versions in agreements
 
+### [Update-MgAgreementFileVersion](Update-MgAgreementFileVersion.md)
+Update the navigation property versions in agreements
+
 ### [Update-MgEntitlementManagementAccessPackage](Update-MgEntitlementManagementAccessPackage.md)
-Update the navigation property accessPackages in identityGovernance
+Update an existing accessPackage object to change one or more of its properties, such as the display name or description.
 
 ### [Update-MgEntitlementManagementAccessPackageAssignmentApproval](Update-MgEntitlementManagementAccessPackageAssignmentApproval.md)
 Update the navigation property accessPackageAssignmentApprovals in identityGovernance
 
 ### [Update-MgEntitlementManagementAccessPackageAssignmentApprovalStage](Update-MgEntitlementManagementAccessPackageAssignmentApprovalStage.md)
-Update the navigation property stages in identityGovernance
+In Azure AD entitlement management, approve or deny an approvalStage object in an approval.
+
+### [Update-MgEntitlementManagementAccessPackageAssignmentPolicy](Update-MgEntitlementManagementAccessPackageAssignmentPolicy.md)
+Update the navigation property assignmentPolicies in identityGovernance
 
 ### [Update-MgEntitlementManagementAssignment](Update-MgEntitlementManagementAssignment.md)
 Invoke action reprocess
@@ -589,7 +1245,7 @@ Update the navigation property questions in identityGovernance
 Invoke action reprocess
 
 ### [Update-MgEntitlementManagementCatalog](Update-MgEntitlementManagementCatalog.md)
-Update the navigation property catalogs in identityGovernance
+Update an existing accessPackageCatalog object to change one or more of its properties, such as the display name or description.
 
 ### [Update-MgEntitlementManagementCatalogAccessPackageAssignmentPolicy](Update-MgEntitlementManagementCatalogAccessPackageAssignmentPolicy.md)
 Update the navigation property assignmentPolicies in identityGovernance
@@ -598,16 +1254,19 @@ Update the navigation property assignmentPolicies in identityGovernance
 Update the navigation property questions in identityGovernance
 
 ### [Update-MgEntitlementManagementConnectedOrganization](Update-MgEntitlementManagementConnectedOrganization.md)
-Update the navigation property connectedOrganizations in identityGovernance
+Update a connectedOrganization object to change one or more of its properties.
 
 ### [Update-MgEntitlementManagementSetting](Update-MgEntitlementManagementSetting.md)
 Update an existing entitlementManagementSettings object to change one or more of its properties.
 
 ### [Update-MgIdentityGovernanceAccessReviewDefinition](Update-MgIdentityGovernanceAccessReviewDefinition.md)
-Update the navigation property definitions in identityGovernance
+Update an existing accessReviewScheduleDefinition object to change one or more of its properties.
 
 ### [Update-MgIdentityGovernanceAccessReviewDefinitionInstance](Update-MgIdentityGovernanceAccessReviewDefinitionInstance.md)
-Update the navigation property instances in identityGovernance
+Update the properties of an accessReviewInstance object.
+Only the **reviewers** and **fallbackReviewers** properties can be updated but the **scope** property is also required in the request body.
+You can only add reviewers to the **fallbackReviewers** property but can't remove existing **fallbackReviewers**.
+To update an **accessReviewInstance**, it's **status** must be `InProgress`.
 
 ### [Update-MgIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer](Update-MgIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer.md)
 Update the navigation property contactedReviewers in identityGovernance
@@ -616,10 +1275,13 @@ Update the navigation property contactedReviewers in identityGovernance
 Update the navigation property decisions in identityGovernance
 
 ### [Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStage](Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStage.md)
-Update the navigation property stages in identityGovernance
+Update the properties of an accessReviewStage object.
+Only the **reviewers** and **fallbackReviewers** properties can be updated.
+You can only add reviewers to the **fallbackReviewers** property but can't remove existing **fallbackReviewers**.
+To update an **accessReviewStage**, its **status** must be `NotStarted`, `Initializing`, or `InProgress`.
 
 ### [Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision](Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision.md)
-Update the navigation property decisions in identityGovernance
+Update access decisions, known as accessReviewInstanceDecisionItems, for which the user is the reviewer.
 
 ### [Update-MgIdentityGovernanceAccessReviewHistoryDefinition](Update-MgIdentityGovernanceAccessReviewHistoryDefinition.md)
 Update the navigation property historyDefinitions in identityGovernance
@@ -637,20 +1299,105 @@ Update the navigation property userConsentRequests in identityGovernance
 Update the navigation property approval in identityGovernance
 
 ### [Update-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStage](Update-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStage.md)
-Update the navigation property stages in identityGovernance
+In Azure AD entitlement management, approve or deny an approvalStage object in an approval.
 
-### [Update-MgIdentityGovernanceTermOfUseAgreement](Update-MgIdentityGovernanceTermOfUseAgreement.md)
-Update the navigation property agreements in identityGovernance
+### [Update-MgIdentityGovernanceTermsOfUseAgreement](Update-MgIdentityGovernanceTermsOfUseAgreement.md)
+Update the properties of an agreement object.
 
-### [Update-MgIdentityGovernanceTermOfUseAgreementAcceptance](Update-MgIdentityGovernanceTermOfUseAgreementAcceptance.md)
+### [Update-MgIdentityGovernanceTermsOfUseAgreementAcceptance](Update-MgIdentityGovernanceTermsOfUseAgreementAcceptance.md)
 Update the navigation property agreementAcceptances in identityGovernance
 
-### [Update-MgIdentityGovernanceTermOfUseAgreementFile](Update-MgIdentityGovernanceTermOfUseAgreementFile.md)
+### [Update-MgIdentityGovernanceTermsOfUseAgreementFile](Update-MgIdentityGovernanceTermsOfUseAgreementFile.md)
 Update the navigation property file in identityGovernance
 
-### [Update-MgIdentityGovernanceTermOfUseAgreementFileLocalization](Update-MgIdentityGovernanceTermOfUseAgreementFileLocalization.md)
+### [Update-MgIdentityGovernanceTermsOfUseAgreementFileLocalization](Update-MgIdentityGovernanceTermsOfUseAgreementFileLocalization.md)
 Update the navigation property localizations in identityGovernance
 
-### [Update-MgIdentityGovernanceTermOfUseAgreementFileLocalizationVersion](Update-MgIdentityGovernanceTermOfUseAgreementFileLocalizationVersion.md)
+### [Update-MgIdentityGovernanceTermsOfUseAgreementFileLocalizationVersion](Update-MgIdentityGovernanceTermsOfUseAgreementFileLocalizationVersion.md)
 Update the navigation property versions in identityGovernance
+
+### [Update-MgIdentityGovernanceTermsOfUseAgreementFileVersion](Update-MgIdentityGovernanceTermsOfUseAgreementFileVersion.md)
+Update the navigation property versions in identityGovernance
+
+### [Update-MgRoleManagementDirectory](Update-MgRoleManagementDirectory.md)
+Update the navigation property directory in roleManagement
+
+### [Update-MgRoleManagementDirectoryResourceNamespace](Update-MgRoleManagementDirectoryResourceNamespace.md)
+Update the navigation property resourceNamespaces in roleManagement
+
+### [Update-MgRoleManagementDirectoryResourceNamespaceResourceAction](Update-MgRoleManagementDirectoryResourceNamespaceResourceAction.md)
+Update the navigation property resourceActions in roleManagement
+
+### [Update-MgRoleManagementDirectoryRoleAssignment](Update-MgRoleManagementDirectoryRoleAssignment.md)
+Update the navigation property roleAssignments in roleManagement
+
+### [Update-MgRoleManagementDirectoryRoleAssignmentAppScope](Update-MgRoleManagementDirectoryRoleAssignmentAppScope.md)
+Update the navigation property appScope in roleManagement
+
+### [Update-MgRoleManagementDirectoryRoleAssignmentSchedule](Update-MgRoleManagementDirectoryRoleAssignmentSchedule.md)
+Update the navigation property roleAssignmentSchedules in roleManagement
+
+### [Update-MgRoleManagementDirectoryRoleAssignmentScheduleInstance](Update-MgRoleManagementDirectoryRoleAssignmentScheduleInstance.md)
+Update the navigation property roleAssignmentScheduleInstances in roleManagement
+
+### [Update-MgRoleManagementDirectoryRoleAssignmentScheduleRequest](Update-MgRoleManagementDirectoryRoleAssignmentScheduleRequest.md)
+Update the navigation property roleAssignmentScheduleRequests in roleManagement
+
+### [Update-MgRoleManagementDirectoryRoleDefinition](Update-MgRoleManagementDirectoryRoleDefinition.md)
+Update the properties of a unifiedRoleDefinition object.
+You cannot update built-in roles.
+This feature requires an Azure AD Premium P1 or P2 license.
+
+### [Update-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFrom](Update-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFrom.md)
+Update the navigation property inheritsPermissionsFrom in roleManagement
+
+### [Update-MgRoleManagementDirectoryRoleEligibilitySchedule](Update-MgRoleManagementDirectoryRoleEligibilitySchedule.md)
+Update the navigation property roleEligibilitySchedules in roleManagement
+
+### [Update-MgRoleManagementDirectoryRoleEligibilityScheduleInstance](Update-MgRoleManagementDirectoryRoleEligibilityScheduleInstance.md)
+Update the navigation property roleEligibilityScheduleInstances in roleManagement
+
+### [Update-MgRoleManagementDirectoryRoleEligibilityScheduleRequest](Update-MgRoleManagementDirectoryRoleEligibilityScheduleRequest.md)
+Update the navigation property roleEligibilityScheduleRequests in roleManagement
+
+### [Update-MgRoleManagementEntitlementManagement](Update-MgRoleManagementEntitlementManagement.md)
+Update the navigation property entitlementManagement in roleManagement
+
+### [Update-MgRoleManagementEntitlementManagementResourceNamespace](Update-MgRoleManagementEntitlementManagementResourceNamespace.md)
+Update the navigation property resourceNamespaces in roleManagement
+
+### [Update-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction](Update-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction.md)
+Update the navigation property resourceActions in roleManagement
+
+### [Update-MgRoleManagementEntitlementManagementRoleAssignment](Update-MgRoleManagementEntitlementManagementRoleAssignment.md)
+Update the navigation property roleAssignments in roleManagement
+
+### [Update-MgRoleManagementEntitlementManagementRoleAssignmentAppScope](Update-MgRoleManagementEntitlementManagementRoleAssignmentAppScope.md)
+Update the navigation property appScope in roleManagement
+
+### [Update-MgRoleManagementEntitlementManagementRoleAssignmentSchedule](Update-MgRoleManagementEntitlementManagementRoleAssignmentSchedule.md)
+Update the navigation property roleAssignmentSchedules in roleManagement
+
+### [Update-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance](Update-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance.md)
+Update the navigation property roleAssignmentScheduleInstances in roleManagement
+
+### [Update-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest](Update-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest.md)
+Update the navigation property roleAssignmentScheduleRequests in roleManagement
+
+### [Update-MgRoleManagementEntitlementManagementRoleDefinition](Update-MgRoleManagementEntitlementManagementRoleDefinition.md)
+Update the properties of a unifiedRoleDefinition object.
+You cannot update built-in roles.
+This feature requires an Azure AD Premium P1 or P2 license.
+
+### [Update-MgRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom](Update-MgRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom.md)
+Update the navigation property inheritsPermissionsFrom in roleManagement
+
+### [Update-MgRoleManagementEntitlementManagementRoleEligibilitySchedule](Update-MgRoleManagementEntitlementManagementRoleEligibilitySchedule.md)
+Update the navigation property roleEligibilitySchedules in roleManagement
+
+### [Update-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstance](Update-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstance.md)
+Update the navigation property roleEligibilityScheduleInstances in roleManagement
+
+### [Update-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest](Update-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest.md)
+Update the navigation property roleEligibilityScheduleRequests in roleManagement
 

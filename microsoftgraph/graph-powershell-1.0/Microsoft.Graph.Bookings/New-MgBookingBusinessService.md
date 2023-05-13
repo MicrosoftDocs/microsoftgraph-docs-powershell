@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.bookings/new-mgbookingbusinessservice
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinessservice
 schema: 2.0.0
-ms.prod: bookings
 ---
 
 # New-MgBookingBusinessService
@@ -56,7 +55,7 @@ Create a new bookingService for the specified bookingBusiness.
 
 ## EXAMPLES
 
-### Example 1: Using the New-MgBookingBusinessService Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Bookings
 $params = @{
@@ -123,9 +122,6 @@ $params = @{
 New-MgBookingBusinessService -BookingBusinessId $bookingBusinessId -BodyParameter $params
 ```
 
-This example shows how to use the New-MgBookingBusinessService Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ## PARAMETERS
 
 ### -AdditionalInformation
@@ -160,7 +156,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Represents a particular service offered by a booking business.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphBookingService
@@ -191,7 +187,7 @@ Accept wildcard characters: False
 
 ### -CustomQuestions
 Contains the set of custom questions associated with a particular service.
-To construct, please use Get-Help -Online and see NOTES section for CUSTOMQUESTIONS properties and create a hash table.
+To construct, see NOTES section for CUSTOMQUESTIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphBookingQuestionAssignment[]
@@ -223,7 +219,7 @@ Accept wildcard characters: False
 
 ### -DefaultLocation
 location
-To construct, please use Get-Help -Online and see NOTES section for DEFAULTLOCATION properties and create a hash table.
+To construct, see NOTES section for DEFAULTLOCATION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphLocation
@@ -270,7 +266,7 @@ Accept wildcard characters: False
 ### -DefaultReminders
 The default set of reminders for an appointment of this service.
 The value of this property is available only when reading this bookingService by its ID.
-To construct, please use Get-Help -Online and see NOTES section for DEFAULTREMINDERS properties and create a hash table.
+To construct, see NOTES section for DEFAULTREMINDERS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphBookingReminder[]
@@ -332,7 +328,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IBookingsIdentity
@@ -471,7 +467,7 @@ Accept wildcard characters: False
 
 ### -SchedulingPolicy
 This type represents the set of policies that dictate how bookings can be created in a Booking Calendar.
-To construct, please use Get-Help -Online and see NOTES section for SCHEDULINGPOLICY properties and create a hash table.
+To construct, see NOTES section for SCHEDULINGPOLICY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphBookingSchedulingPolicy
@@ -566,7 +562,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphBookingService>`: Represents a particular service offered by a booking business.
+`BODYPARAMETER <IMicrosoftGraphBookingService>`: Represents a particular service offered by a booking business.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AdditionalInformation <String>]`: Additional information that is sent to the customer when an appointment is confirmed.
@@ -601,7 +597,7 @@ BODYPARAMETER `<IMicrosoftGraphBookingService>`: Represents a particular service
   - `[DefaultReminders <IMicrosoftGraphBookingReminder[]>]`: The default set of reminders for an appointment of this service. The value of this property is available only when reading this bookingService by its ID.
     - `[Message <String>]`: The message in the reminder.
     - `[Offset <TimeSpan?>]`: The amount of time before the start of an appointment that the reminder should be sent. It's denoted in ISO 8601 format.
-    - `[Recipients <String>]`: 
+    - `[Recipients <String>]`: bookingReminderRecipients
   - `[Description <String>]`: A text description for the service.
   - `[DisplayName <String>]`: A service name.
   - `[IsAnonymousJoinEnabled <Boolean?>]`: True if the URL to join the appointment anonymously (anonymousJoinWebUrl) will be generated for the appointment booked for this service.
@@ -622,11 +618,11 @@ BODYPARAMETER `<IMicrosoftGraphBookingService>`: Represents a particular service
   - `[SmsNotificationsEnabled <Boolean?>]`: True indicates SMS notifications can be sent to the customers for the appointment of the service. Default value is false.
   - `[StaffMemberIds <String[]>]`: Represents those staff members who provide this service.
 
-CUSTOMQUESTIONS <IMicrosoftGraphBookingQuestionAssignment\[]>: Contains the set of custom questions associated with a particular service.
+`CUSTOMQUESTIONS <IMicrosoftGraphBookingQuestionAssignment[]>`: Contains the set of custom questions associated with a particular service.
   - `[IsRequired <Boolean?>]`: The ID of the custom question.
   - `[QuestionId <String>]`: Indicates whether it is mandatory to answer the custom question.
 
-DEFAULTLOCATION `<IMicrosoftGraphLocation>`: location
+`DEFAULTLOCATION <IMicrosoftGraphLocation>`: location
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -649,33 +645,26 @@ DEFAULTLOCATION `<IMicrosoftGraphLocation>`: location
   - `[UniqueId <String>]`: For internal use only.
   - `[UniqueIdType <String>]`: locationUniqueIdType
 
-DEFAULTREMINDERS <IMicrosoftGraphBookingReminder\[]>: The default set of reminders for an appointment of this service. The value of this property is available only when reading this bookingService by its ID.
+`DEFAULTREMINDERS <IMicrosoftGraphBookingReminder[]>`: The default set of reminders for an appointment of this service. The value of this property is available only when reading this bookingService by its ID.
   - `[Message <String>]`: The message in the reminder.
   - `[Offset <TimeSpan?>]`: The amount of time before the start of an appointment that the reminder should be sent. It's denoted in ISO 8601 format.
-  - `[Recipients <String>]`: 
+  - `[Recipients <String>]`: bookingReminderRecipients
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+`INPUTOBJECT <IBookingsIdentity>`: Identity Parameter
   - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
   - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness
   - `[BookingCurrencyId <String>]`: The unique identifier of bookingCurrency
   - `[BookingCustomQuestionId <String>]`: The unique identifier of bookingCustomQuestion
   - `[BookingCustomerBaseId <String>]`: The unique identifier of bookingCustomerBase
-  - `[BookingCustomerId <String>]`: The unique identifier of bookingCustomer
   - `[BookingServiceId <String>]`: The unique identifier of bookingService
   - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
-  - `[BookingStaffMemberId <String>]`: The unique identifier of bookingStaffMember
-  - `[BusinessScenarioId <String>]`: The unique identifier of businessScenario
-  - `[BusinessScenarioTaskId <String>]`: The unique identifier of businessScenarioTask
-  - `[PlannerPlanConfigurationLocalizationId <String>]`: The unique identifier of plannerPlanConfigurationLocalization
 
-SCHEDULINGPOLICY `<IMicrosoftGraphBookingSchedulingPolicy>`: This type represents the set of policies that dictate how bookings can be created in a Booking Calendar.
+`SCHEDULINGPOLICY <IMicrosoftGraphBookingSchedulingPolicy>`: This type represents the set of policies that dictate how bookings can be created in a Booking Calendar.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowStaffSelection <Boolean?>]`: True if to allow customers to choose a specific person for the booking.
   - `[MaximumAdvance <TimeSpan?>]`: Maximum number of days in advance that a booking can be made. It follows the ISO 8601 format.
   - `[MinimumLeadTime <TimeSpan?>]`: The minimum amount of time before which bookings and cancellations must be made. It follows the ISO 8601 format.
   - `[SendConfirmationsToOwner <Boolean?>]`: True to notify the business via email when a booking is created or changed. Use the email address specified in the email property of the bookingBusiness entity for the business.
   - `[TimeSlotInterval <TimeSpan?>]`: Duration of each time slot, denoted in ISO 8601 format.
-
-## RELATED LINKS
 
 ## RELATED LINKS

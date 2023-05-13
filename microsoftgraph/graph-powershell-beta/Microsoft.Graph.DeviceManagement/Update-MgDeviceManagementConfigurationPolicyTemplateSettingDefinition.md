@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementconfigurationpolicytemplatesettingdefinition
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementconfigurationpolicytemplatesettingdefinition
 schema: 2.0.0
 ---
 
-# Update-MgDeviceManagementConfigurationPolicyTemplateSettingDefinition
+# Update-MgBetaDeviceManagementConfigurationPolicyTemplateSettingDefinition
 
 ## SYNOPSIS
 Update the navigation property settingDefinitions in deviceManagement
@@ -14,7 +14,7 @@ Update the navigation property settingDefinitions in deviceManagement
 
 ### UpdateExpanded (Default)
 ```
-Update-MgDeviceManagementConfigurationPolicyTemplateSettingDefinition
+Update-MgBetaDeviceManagementConfigurationPolicyTemplateSettingDefinition
  -DeviceManagementConfigurationPolicyTemplateId <String>
  -DeviceManagementConfigurationSettingDefinitionId <String>
  -DeviceManagementConfigurationSettingTemplateId <String> [-AccessTypes <String>]
@@ -26,24 +26,23 @@ Update-MgDeviceManagementConfigurationPolicyTemplateSettingDefinition
  [-ReferredSettingInformationList <IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation[]>]
  [-RootDefinitionId <String>] [-SettingUsage <DeviceManagementConfigurationSettingUsage>]
  [-UxBehavior <DeviceManagementConfigurationControlType>] [-Version <String>]
- [-Visibility <DeviceManagementConfigurationSettingVisibility>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Visibility <DeviceManagementConfigurationSettingVisibility>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgDeviceManagementConfigurationPolicyTemplateSettingDefinition
+Update-MgBetaDeviceManagementConfigurationPolicyTemplateSettingDefinition
  -DeviceManagementConfigurationPolicyTemplateId <String>
  -DeviceManagementConfigurationSettingDefinitionId <String>
  -DeviceManagementConfigurationSettingTemplateId <String>
- -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition> [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgDeviceManagementConfigurationPolicyTemplateSettingDefinition -InputObject <IDeviceManagementIdentity>
- [-AccessTypes <String>] [-AdditionalProperties <Hashtable>]
+Update-MgBetaDeviceManagementConfigurationPolicyTemplateSettingDefinition
+ -InputObject <IDeviceManagementIdentity> [-AccessTypes <String>] [-AdditionalProperties <Hashtable>]
  [-Applicability <IMicrosoftGraphDeviceManagementConfigurationSettingApplicability>] [-BaseUri <String>]
  [-CategoryId <String>] [-Description <String>] [-DisplayName <String>] [-HelpText <String>] [-Id <String>]
  [-InfoUrls <String[]>] [-Keywords <String[]>] [-Name <String>]
@@ -51,21 +50,35 @@ Update-MgDeviceManagementConfigurationPolicyTemplateSettingDefinition -InputObje
  [-ReferredSettingInformationList <IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation[]>]
  [-RootDefinitionId <String>] [-SettingUsage <DeviceManagementConfigurationSettingUsage>]
  [-UxBehavior <DeviceManagementConfigurationControlType>] [-Version <String>]
- [-Visibility <DeviceManagementConfigurationSettingVisibility>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Visibility <DeviceManagementConfigurationSettingVisibility>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgDeviceManagementConfigurationPolicyTemplateSettingDefinition -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgBetaDeviceManagementConfigurationPolicyTemplateSettingDefinition
+ -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition> [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property settingDefinitions in deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -101,7 +114,7 @@ Accept wildcard characters: False
 
 ### -Applicability
 deviceManagementConfigurationSettingApplicability
-To construct, please use Get-Help -Online and see NOTES section for APPLICABILITY properties and create a hash table.
+To construct, see NOTES section for APPLICABILITY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementConfigurationSettingApplicability
@@ -132,7 +145,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 deviceManagementConfigurationSettingDefinition
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementConfigurationSettingDefinition
@@ -252,7 +265,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -284,7 +297,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementIdentity
@@ -330,7 +343,7 @@ Accept wildcard characters: False
 
 ### -Occurrence
 deviceManagementConfigurationSettingOccurrence
-To construct, please use Get-Help -Online and see NOTES section for OCCURRENCE properties and create a hash table.
+To construct, see NOTES section for OCCURRENCE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementConfigurationSettingOccurrence
@@ -359,24 +372,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ReferredSettingInformationList
 List of referred setting information.
-To construct, please use Get-Help -Online and see NOTES section for REFERREDSETTINGINFORMATIONLIST properties and create a hash table.
+To construct, see NOTES section for REFERREDSETTINGINFORMATIONLIST properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation[]
@@ -501,11 +499,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationSettingDefinition
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationSettingDefinition
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationSettingDefinition
 ## NOTES
 
 ALIASES
@@ -515,16 +513,16 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-APPLICABILITY `<IMicrosoftGraphDeviceManagementConfigurationSettingApplicability>`: deviceManagementConfigurationSettingApplicability
+`APPLICABILITY <IMicrosoftGraphDeviceManagementConfigurationSettingApplicability>`: deviceManagementConfigurationSettingApplicability
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Description <String>]`: description of the setting
   - `[DeviceMode <DeviceManagementConfigurationDeviceMode?>]`: Describes applicability for the mode the device is in
   - `[Platform <DeviceManagementConfigurationPlatforms?>]`: Supported platform types.
   - `[Technologies <DeviceManagementConfigurationTechnologies?>]`: Describes which technology this setting can be deployed with
 
-BODYPARAMETER `<IMicrosoftGraphDeviceManagementConfigurationSettingDefinition>`: deviceManagementConfigurationSettingDefinition
+`BODYPARAMETER <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition>`: deviceManagementConfigurationSettingDefinition
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AccessTypes <String>]`: deviceManagementConfigurationSettingAccessTypes
   - `[Applicability <IMicrosoftGraphDeviceManagementConfigurationSettingApplicability>]`: deviceManagementConfigurationSettingApplicability
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -553,7 +551,7 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagementConfigurationSettingDefinition>`:
   - `[Version <String>]`: Item Version
   - `[Visibility <DeviceManagementConfigurationSettingVisibility?>]`: Supported setting types
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementIdentity>`: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: The unique identifier of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: The unique identifier of androidManagedStoreAppConfigurationSchema
@@ -685,13 +683,15 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionAppLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionAppLearningSummary
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
+  - `[WindowsQualityUpdateProfileAssignmentId <String>]`: The unique identifier of windowsQualityUpdateProfileAssignment
+  - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
-OCCURRENCE `<IMicrosoftGraphDeviceManagementConfigurationSettingOccurrence>`: deviceManagementConfigurationSettingOccurrence
+`OCCURRENCE <IMicrosoftGraphDeviceManagementConfigurationSettingOccurrence>`: deviceManagementConfigurationSettingOccurrence
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[MaxDeviceOccurrence <Int32?>]`: Maximum times setting can be set on device.
   - `[MinDeviceOccurrence <Int32?>]`: Minimum times setting can be set on device. A MinDeviceOccurrence of 0 means setting is optional
 
-REFERREDSETTINGINFORMATIONLIST <IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation\[]>: List of referred setting information.
+`REFERREDSETTINGINFORMATIONLIST <IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation[]>`: List of referred setting information.
   - `[SettingDefinitionId <String>]`: Setting definition id that is being referred to a setting. Applicable for reusable setting
 
 ## RELATED LINKS

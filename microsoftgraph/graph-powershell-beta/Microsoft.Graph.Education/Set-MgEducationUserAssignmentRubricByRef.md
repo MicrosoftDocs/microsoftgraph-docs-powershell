@@ -1,46 +1,63 @@
----
-external help file: Microsoft.Graph.Education-help.xml
-Module Name: Microsoft.Graph.Education
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/set-mgeducationuserassignmentrubricbyref
+﻿---
+external help file: Microsoft.Graph.Beta.Education-help.xml
+Module Name: Microsoft.Graph.Beta.Education
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/set-mgbetaeducationuserassignmentrubricbyref
 schema: 2.0.0
 ---
 
-# Set-MgEducationUserAssignmentRubricByRef
+# Set-MgBetaEducationUserAssignmentRubricByRef
 
 ## SYNOPSIS
-Update the ref of navigation property rubric in education
+Attach an existing educationRubric object to an educationAssignment.
+Only teachers can perform this operation.
 
 ## SYNTAX
 
 ### SetExpanded (Default)
 ```
-Set-MgEducationUserAssignmentRubricByRef -EducationAssignmentId <String> -EducationUserId <String>
- [-AdditionalProperties <Hashtable>] [-OdataId <String>] [-OdataType <String>] [-PassThru] [-WhatIf] [-Confirm]
+Set-MgBetaEducationUserAssignmentRubricByRef -EducationAssignmentId <String> -EducationUserId <String>
+ -OdataId <String> [-AdditionalProperties <Hashtable>] [-OdataType <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Set
 ```
-Set-MgEducationUserAssignmentRubricByRef -EducationAssignmentId <String> -EducationUserId <String>
+Set-MgBetaEducationUserAssignmentRubricByRef -EducationAssignmentId <String> -EducationUserId <String>
  -BodyParameter <IReferenceUpdate> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentityExpanded
 ```
-Set-MgEducationUserAssignmentRubricByRef -InputObject <IEducationIdentity> [-AdditionalProperties <Hashtable>]
- [-OdataId <String>] [-OdataType <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-MgBetaEducationUserAssignmentRubricByRef -InputObject <IEducationIdentity> -OdataId <String>
+ [-AdditionalProperties <Hashtable>] [-OdataType <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
-Set-MgEducationUserAssignmentRubricByRef -InputObject <IEducationIdentity> -BodyParameter <IReferenceUpdate>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-MgBetaEducationUserAssignmentRubricByRef -InputObject <IEducationIdentity>
+ -BodyParameter <IReferenceUpdate> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the ref of navigation property rubric in education
+Attach an existing educationRubric object to an educationAssignment.
+Only teachers can perform this operation.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -61,7 +78,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IReferenceUpdate
@@ -107,7 +124,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IEducationIdentity
@@ -122,14 +139,15 @@ Accept wildcard characters: False
 ```
 
 ### -OdataId
-.
+The entity reference URL of the resource.
+For example, https://graph.microsoft.com/v1.0/directoryObjects/{id}.
 
 ```yaml
 Type: String
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -202,8 +220,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IEducationIdentity
-### Microsoft.Graph.PowerShell.Models.IReferenceUpdate
+### Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IReferenceUpdate
 ## OUTPUTS
 
 ### System.Boolean
@@ -216,16 +234,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IReferenceUpdate>`: .
+`BODYPARAMETER <IReferenceUpdate>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[OdataId <String>]`: 
+  - `OdataId <String>`: The entity reference URL of the resource. For example, https://graph.microsoft.com/v1.0/directoryObjects/{id}.
   - `[OdataType <String>]`: 
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+`INPUTOBJECT <IEducationIdentity>`: Identity Parameter
   - `[EducationAssignmentId <String>]`: The unique identifier of educationAssignment
   - `[EducationAssignmentResourceId <String>]`: The unique identifier of educationAssignmentResource
   - `[EducationCategoryId <String>]`: The unique identifier of educationCategory
   - `[EducationClassId <String>]`: The unique identifier of educationClass
+  - `[EducationGradingCategoryId <String>]`: The unique identifier of educationGradingCategory
   - `[EducationOutcomeId <String>]`: The unique identifier of educationOutcome
   - `[EducationRubricId <String>]`: The unique identifier of educationRubric
   - `[EducationSchoolId <String>]`: The unique identifier of educationSchool

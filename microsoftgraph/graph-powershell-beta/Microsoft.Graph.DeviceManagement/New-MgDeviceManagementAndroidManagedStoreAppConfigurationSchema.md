@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementandroidmanagedstoreappconfigurationschema
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementandroidmanagedstoreappconfigurationschema
 schema: 2.0.0
 ---
 
-# New-MgDeviceManagementAndroidManagedStoreAppConfigurationSchema
+# New-MgBetaDeviceManagementAndroidManagedStoreAppConfigurationSchema
 
 ## SYNOPSIS
 Create new navigation property to androidManagedStoreAppConfigurationSchemas for deviceManagement
@@ -14,7 +14,7 @@ Create new navigation property to androidManagedStoreAppConfigurationSchemas for
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementAndroidManagedStoreAppConfigurationSchema [-AdditionalProperties <Hashtable>]
+New-MgBetaDeviceManagementAndroidManagedStoreAppConfigurationSchema [-AdditionalProperties <Hashtable>]
  [-ExampleJsonInputFile <String>] [-Id <String>]
  [-NestedSchemaItems <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchemaItem[]>]
  [-SchemaItems <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchemaItem[]>] [-WhatIf] [-Confirm]
@@ -23,7 +23,7 @@ New-MgDeviceManagementAndroidManagedStoreAppConfigurationSchema [-AdditionalProp
 
 ### Create
 ```
-New-MgDeviceManagementAndroidManagedStoreAppConfigurationSchema
+New-MgBetaDeviceManagementAndroidManagedStoreAppConfigurationSchema
  -BodyParameter <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchema> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
@@ -32,6 +32,20 @@ New-MgDeviceManagementAndroidManagedStoreAppConfigurationSchema
 Create new navigation property to androidManagedStoreAppConfigurationSchemas for deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -52,7 +66,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Schema describing an Android application's custom configurations.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAndroidManagedStoreAppConfigurationSchema
@@ -82,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -100,7 +114,7 @@ Accept wildcard characters: False
 ### -NestedSchemaItems
 Collection of items each representing a named configuration option in the schema.
 It contains a flat list of all configuration.
-To construct, please use Get-Help -Online and see NOTES section for NESTEDSCHEMAITEMS properties and create a hash table.
+To construct, see NOTES section for NESTEDSCHEMAITEMS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAndroidManagedStoreAppConfigurationSchemaItem[]
@@ -117,7 +131,7 @@ Accept wildcard characters: False
 ### -SchemaItems
 Collection of items each representing a named configuration option in the schema.
 It only contains the root-level configuration.
-To construct, please use Get-Help -Online and see NOTES section for SCHEMAITEMS properties and create a hash table.
+To construct, see NOTES section for SCHEMAITEMS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAndroidManagedStoreAppConfigurationSchemaItem[]
@@ -167,10 +181,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAndroidManagedStoreAppConfigurationSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAndroidManagedStoreAppConfigurationSchema
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAndroidManagedStoreAppConfigurationSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAndroidManagedStoreAppConfigurationSchema
 ## NOTES
 
 ALIASES
@@ -180,9 +194,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphAndroidManagedStoreAppConfigurationSchema>`: Schema describing an Android application's custom configurations.
+`BODYPARAMETER <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchema>`: Schema describing an Android application's custom configurations.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ExampleJson <Byte[]>]`: UTF8 encoded byte array containing example JSON string conforming to this schema that demonstrates how to set the configuration for this app
   - `[NestedSchemaItems <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchemaItem[]>]`: Collection of items each representing a named configuration option in the schema. It contains a flat list of all configuration.
     - `[DataType <String>]`: Data type for a configuration item inside an Android application's custom configuration schema
@@ -200,7 +214,7 @@ BODYPARAMETER `<IMicrosoftGraphAndroidManagedStoreAppConfigurationSchema>`: Sche
       - `[Value <String>]`: Value for this key-value pair
   - `[SchemaItems <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchemaItem[]>]`: Collection of items each representing a named configuration option in the schema. It only contains the root-level configuration.
 
-NESTEDSCHEMAITEMS <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchemaItem\[]>: Collection of items each representing a named configuration option in the schema. It contains a flat list of all configuration.
+`NESTEDSCHEMAITEMS <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchemaItem[]>`: Collection of items each representing a named configuration option in the schema. It contains a flat list of all configuration.
   - `[DataType <String>]`: Data type for a configuration item inside an Android application's custom configuration schema
   - `[DefaultBoolValue <Boolean?>]`: Default value for boolean type items, if specified by the app developer
   - `[DefaultIntValue <Int32?>]`: Default value for integer type items, if specified by the app developer
@@ -215,7 +229,7 @@ NESTEDSCHEMAITEMS <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchemaItem\
     - `[Name <String>]`: Name for this key-value pair
     - `[Value <String>]`: Value for this key-value pair
 
-SCHEMAITEMS <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchemaItem\[]>: Collection of items each representing a named configuration option in the schema. It only contains the root-level configuration.
+`SCHEMAITEMS <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchemaItem[]>`: Collection of items each representing a named configuration option in the schema. It only contains the root-level configuration.
   - `[DataType <String>]`: Data type for a configuration item inside an Android application's custom configuration schema
   - `[DefaultBoolValue <Boolean?>]`: Default value for boolean type items, if specified by the app developer
   - `[DefaultIntValue <Int32?>]`: Default value for integer type items, if specified by the app developer

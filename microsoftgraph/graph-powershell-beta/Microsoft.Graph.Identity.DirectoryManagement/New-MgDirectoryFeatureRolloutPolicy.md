@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryfeaturerolloutpolicy
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryfeaturerolloutpolicy
 schema: 2.0.0
 ---
 
-# New-MgDirectoryFeatureRolloutPolicy
+# New-MgBetaDirectoryFeatureRolloutPolicy
 
 ## SYNOPSIS
 Create new navigation property to featureRolloutPolicies for directory
@@ -14,7 +14,7 @@ Create new navigation property to featureRolloutPolicies for directory
 
 ### CreateExpanded (Default)
 ```
-New-MgDirectoryFeatureRolloutPolicy [-AdditionalProperties <Hashtable>]
+New-MgBetaDirectoryFeatureRolloutPolicy [-AdditionalProperties <Hashtable>]
  [-AppliesTo <IMicrosoftGraphDirectoryObject[]>] [-Description <String>] [-DisplayName <String>]
  [-Feature <String>] [-Id <String>] [-IsAppliedToOrganization] [-IsEnabled] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -22,14 +22,28 @@ New-MgDirectoryFeatureRolloutPolicy [-AdditionalProperties <Hashtable>]
 
 ### Create
 ```
-New-MgDirectoryFeatureRolloutPolicy -BodyParameter <IMicrosoftGraphFeatureRolloutPolicy> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaDirectoryFeatureRolloutPolicy -BodyParameter <IMicrosoftGraphFeatureRolloutPolicy> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to featureRolloutPolicies for directory
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -51,7 +65,7 @@ Accept wildcard characters: False
 ### -AppliesTo
 Nullable.
 Specifies a list of directoryObjects that feature is enabled for.
-To construct, please use Get-Help -Online and see NOTES section for APPLIESTO properties and create a hash table.
+To construct, see NOTES section for APPLIESTO properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDirectoryObject[]
@@ -67,7 +81,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 featureRolloutPolicy
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphFeatureRolloutPolicy
@@ -127,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -208,10 +222,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphFeatureRolloutPolicy
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphFeatureRolloutPolicy
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphFeatureRolloutPolicy
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphFeatureRolloutPolicy
 ## NOTES
 
 ALIASES
@@ -221,15 +235,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-APPLIESTO <IMicrosoftGraphDirectoryObject\[]>: Nullable. Specifies a list of directoryObjects that feature is enabled for.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`APPLIESTO <IMicrosoftGraphDirectoryObject[]>`: Nullable. Specifies a list of directoryObjects that feature is enabled for.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
-BODYPARAMETER `<IMicrosoftGraphFeatureRolloutPolicy>`: featureRolloutPolicy
+`BODYPARAMETER <IMicrosoftGraphFeatureRolloutPolicy>`: featureRolloutPolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AppliesTo <IMicrosoftGraphDirectoryObject[]>]`: Nullable. Specifies a list of directoryObjects that feature is enabled for.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[Description <String>]`: A description for this feature rollout policy.
   - `[DisplayName <String>]`: The display name for this  feature rollout policy.

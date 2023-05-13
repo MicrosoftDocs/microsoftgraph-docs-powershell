@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.WindowsUpdates-help.xml
-Module Name: Microsoft.Graph.WindowsUpdates
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/update-mgwindowsupdatesdeploymentaudiencebyid
+﻿---
+external help file: Microsoft.Graph.Beta.WindowsUpdates-help.xml
+Module Name: Microsoft.Graph.Beta.WindowsUpdates
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatesdeploymentaudiencebyid
 schema: 2.0.0
 ---
 
-# Update-MgWindowsUpdatesDeploymentAudienceById
+# Update-MgBetaWindowsUpdatesDeploymentAudienceById
 
 ## SYNOPSIS
 Update the members and exclusions collections of a deploymentAudience with updatableAsset resources of the same type.
@@ -17,7 +17,7 @@ You can also use the method updateAudience to update the **deploymentAudience**.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgWindowsUpdatesDeploymentAudienceById -DeploymentId <String> [-AddExclusions <String[]>]
+Update-MgBetaWindowsUpdatesDeploymentAudienceById -DeploymentId <String> [-AddExclusions <String[]>]
  [-AddMembers <String[]>] [-AdditionalProperties <Hashtable>] [-MemberEntityType <String>]
  [-RemoveExclusions <String[]>] [-RemoveMembers <String[]>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -25,14 +25,14 @@ Update-MgWindowsUpdatesDeploymentAudienceById -DeploymentId <String> [-AddExclus
 
 ### Update
 ```
-Update-MgWindowsUpdatesDeploymentAudienceById -DeploymentId <String>
+Update-MgBetaWindowsUpdatesDeploymentAudienceById -DeploymentId <String>
  -BodyParameter <IPaths1Yczx1TAdminWindowsUpdatesDeploymentsDeploymentIdAudienceMicrosoftGraphWindowsupdatesUpdateaudiencebyidPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgWindowsUpdatesDeploymentAudienceById -InputObject <IWindowsUpdatesIdentity>
+Update-MgBetaWindowsUpdatesDeploymentAudienceById -InputObject <IWindowsUpdatesIdentity>
  [-AddExclusions <String[]>] [-AddMembers <String[]>] [-AdditionalProperties <Hashtable>]
  [-MemberEntityType <String>] [-RemoveExclusions <String[]>] [-RemoveMembers <String[]>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -40,7 +40,7 @@ Update-MgWindowsUpdatesDeploymentAudienceById -InputObject <IWindowsUpdatesIdent
 
 ### UpdateViaIdentity
 ```
-Update-MgWindowsUpdatesDeploymentAudienceById -InputObject <IWindowsUpdatesIdentity>
+Update-MgBetaWindowsUpdatesDeploymentAudienceById -InputObject <IWindowsUpdatesIdentity>
  -BodyParameter <IPaths1Yczx1TAdminWindowsUpdatesDeploymentsDeploymentIdAudienceMicrosoftGraphWindowsupdatesUpdateaudiencebyidPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -54,8 +54,8 @@ You can also use the method updateAudience to update the **deploymentAudience**.
 ## EXAMPLES
 
 ### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.WindowsUpdates
+```powershell
+Import-Module Microsoft.Graph.Beta.WindowsUpdates
 $params = @{
 	MemberEntityType = "String"
 	AddMembers = @(
@@ -71,7 +71,7 @@ $params = @{
 		"String"
 	)
 }
-Update-MgWindowsUpdatesDeploymentAudienceById -DeploymentId $deploymentId -BodyParameter $params
+Update-MgBetaWindowsUpdatesDeploymentAudienceById -DeploymentId $deploymentId -BodyParameter $params
 ```
 
 ## PARAMETERS
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths1Yczx1TAdminWindowsUpdatesDeploymentsDeploymentIdAudienceMicrosoftGraphWindowsupdatesUpdateaudiencebyidPostRequestbodyContentApplicationJsonSchema
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IWindowsUpdatesIdentity
@@ -193,7 +193,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -264,15 +264,36 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1Yczx1TAdminWindowsUpdatesDeploymentsDeploymentIdAudienceMicrosoftGraphWindowsupdatesUpdateaudiencebyidPostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.IWindowsUpdatesIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Yczx1TAdminWindowsUpdatesDeploymentsDeploymentIdAudienceMicrosoftGraphWindowsupdatesUpdateaudiencebyidPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IWindowsUpdatesIdentity
 ## OUTPUTS
 
 ### System.Boolean
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+Update-MgBetaWuDeploymentAudienceGraphBPreId
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+`BODYPARAMETER <IPaths1Yczx1TAdminWindowsUpdatesDeploymentsDeploymentIdAudienceMicrosoftGraphWindowsupdatesUpdateaudiencebyidPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[AddExclusions <String[]>]`: 
+  - `[AddMembers <String[]>]`: 
+  - `[MemberEntityType <String>]`: 
+  - `[RemoveExclusions <String[]>]`: 
+  - `[RemoveMembers <String[]>]`: 
+
+`INPUTOBJECT <IWindowsUpdatesIdentity>`: Identity Parameter
+  - `[CatalogEntryId <String>]`: The unique identifier of catalogEntry
+  - `[ComplianceChangeId <String>]`: The unique identifier of complianceChange
+  - `[DeploymentId <String>]`: The unique identifier of deployment
+  - `[ResourceConnectionId <String>]`: The unique identifier of resourceConnection
+  - `[UpdatableAssetId <String>]`: The unique identifier of updatableAsset
+  - `[UpdatePolicyId <String>]`: The unique identifier of updatePolicy
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/update-mgwindowsupdatesdeploymentaudiencebyid](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/update-mgwindowsupdatesdeploymentaudiencebyid)
-

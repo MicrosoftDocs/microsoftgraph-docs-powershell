@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Compliance-help.xml
-Module Name: Microsoft.Graph.Compliance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/update-mgcomplianceediscoverycasenoncustodialdatasourceindex
+﻿---
+external help file: Microsoft.Graph.Beta.Compliance-help.xml
+Module Name: Microsoft.Graph.Beta.Compliance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycasenoncustodialdatasourceindex
 schema: 2.0.0
 ---
 
-# Update-MgComplianceEdiscoveryCaseNoncustodialDataSourceIndex
+# Update-MgBetaComplianceEdiscoveryCaseNoncustodialDataSourceIndex
 
 ## SYNOPSIS
 Invoke action updateIndex
@@ -14,13 +14,13 @@ Invoke action updateIndex
 
 ### Update (Default)
 ```
-Update-MgComplianceEdiscoveryCaseNoncustodialDataSourceIndex -CaseId <String>
+Update-MgBetaComplianceEdiscoveryCaseNoncustodialDataSourceIndex -CaseId <String>
  -NoncustodialDataSourceId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgComplianceEdiscoveryCaseNoncustodialDataSourceIndex -InputObject <IComplianceIdentity> [-PassThru]
+Update-MgBetaComplianceEdiscoveryCaseNoncustodialDataSourceIndex -InputObject <IComplianceIdentity> [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -28,6 +28,20 @@ Update-MgComplianceEdiscoveryCaseNoncustodialDataSourceIndex -InputObject <IComp
 Invoke action updateIndex
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -48,7 +62,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IComplianceIdentity
@@ -128,7 +142,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IComplianceIdentity
 ## OUTPUTS
 
 ### System.Boolean
@@ -141,7 +155,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
+`INPUTOBJECT <IComplianceIdentity>`: Identity Parameter
   - `[CaseId <String>]`: The unique identifier of case
   - `[CaseOperationId <String>]`: The unique identifier of caseOperation
   - `[CustodianId <String>]`: The unique identifier of custodian

@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.CloudCommunications-help.xml
-Module Name: Microsoft.Graph.CloudCommunications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationonlinemeetingvirtualappointment
+﻿---
+external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
+Module Name: Microsoft.Graph.Beta.CloudCommunications
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationonlinemeetingvirtualappointment
 schema: 2.0.0
 ---
 
-# Update-MgCommunicationOnlineMeetingVirtualAppointment
+# Update-MgBetaCommunicationOnlineMeetingVirtualAppointment
 
 ## SYNOPSIS
 Update the navigation property virtualAppointment in communications
@@ -14,38 +14,52 @@ Update the navigation property virtualAppointment in communications
 
 ### UpdateExpanded (Default)
 ```
-Update-MgCommunicationOnlineMeetingVirtualAppointment -OnlineMeetingId <String>
+Update-MgBetaCommunicationOnlineMeetingVirtualAppointment -OnlineMeetingId <String>
  [-AdditionalProperties <Hashtable>] [-AppointmentClientJoinWebUrl <String>]
  [-AppointmentClients <IMicrosoftGraphVirtualAppointmentUser[]>] [-ExternalAppointmentId <String>]
  [-ExternalAppointmentUrl <String>] [-Id <String>] [-Settings <IMicrosoftGraphVirtualAppointmentSettings>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgCommunicationOnlineMeetingVirtualAppointment -OnlineMeetingId <String>
- -BodyParameter <IMicrosoftGraphVirtualAppointment> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaCommunicationOnlineMeetingVirtualAppointment -OnlineMeetingId <String>
+ -BodyParameter <IMicrosoftGraphVirtualAppointment> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgCommunicationOnlineMeetingVirtualAppointment -InputObject <ICloudCommunicationsIdentity>
+Update-MgBetaCommunicationOnlineMeetingVirtualAppointment -InputObject <ICloudCommunicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-AppointmentClientJoinWebUrl <String>]
  [-AppointmentClients <IMicrosoftGraphVirtualAppointmentUser[]>] [-ExternalAppointmentId <String>]
  [-ExternalAppointmentUrl <String>] [-Id <String>] [-Settings <IMicrosoftGraphVirtualAppointmentSettings>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgCommunicationOnlineMeetingVirtualAppointment -InputObject <ICloudCommunicationsIdentity>
- -BodyParameter <IMicrosoftGraphVirtualAppointment> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaCommunicationOnlineMeetingVirtualAppointment -InputObject <ICloudCommunicationsIdentity>
+ -BodyParameter <IMicrosoftGraphVirtualAppointment> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property virtualAppointment in communications
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -83,7 +97,7 @@ Accept wildcard characters: False
 ### -AppointmentClients
 The client information for the virtual appointment, including name, email, and SMS phone number.
 Optional.
-To construct, please use Get-Help -Online and see NOTES section for APPOINTMENTCLIENTS properties and create a hash table.
+To construct, see NOTES section for APPOINTMENTCLIENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphVirtualAppointmentUser[]
@@ -99,7 +113,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 virtualAppointment
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphVirtualAppointment
@@ -146,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -163,7 +177,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ICloudCommunicationsIdentity
@@ -192,24 +206,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Settings
 virtualAppointmentSettings
-To construct, please use Get-Help -Online and see NOTES section for SETTINGS properties and create a hash table.
+To construct, see NOTES section for SETTINGS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphVirtualAppointmentSettings
@@ -259,11 +258,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphVirtualAppointment
+### Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVirtualAppointment
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVirtualAppointment
 ## NOTES
 
 ALIASES
@@ -273,14 +272,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-APPOINTMENTCLIENTS <IMicrosoftGraphVirtualAppointmentUser\[]>: The client information for the virtual appointment, including name, email, and SMS phone number. Optional.
+`APPOINTMENTCLIENTS <IMicrosoftGraphVirtualAppointmentUser[]>`: The client information for the virtual appointment, including name, email, and SMS phone number. Optional.
   - `[DisplayName <String>]`: The display name of the user who participates in a virtual appointment. Optional.
   - `[EmailAddress <String>]`: The email address of the user who participates in a virtual appointment. Optional.
   - `[SmsCapablePhoneNumber <String>]`: The phone number for sending SMS texts for the user who participates in a virtual appointment. Optional.
 
-BODYPARAMETER `<IMicrosoftGraphVirtualAppointment>`: virtualAppointment
+`BODYPARAMETER <IMicrosoftGraphVirtualAppointment>`: virtualAppointment
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AppointmentClientJoinWebUrl <String>]`: The join web URL of the virtual appointment for clients with waiting room and browser join. Optional.
   - `[AppointmentClients <IMicrosoftGraphVirtualAppointmentUser[]>]`: The client information for the virtual appointment, including name, email, and SMS phone number. Optional.
     - `[DisplayName <String>]`: The display name of the user who participates in a virtual appointment. Optional.
@@ -292,7 +291,7 @@ BODYPARAMETER `<IMicrosoftGraphVirtualAppointment>`: virtualAppointment
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AllowClientToJoinUsingBrowser <Boolean?>]`: Indicates whether the client can use the browser to join a virtual appointment. If set to false, the client can only use Microsoft Teams to join. Optional.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+`INPUTOBJECT <ICloudCommunicationsIdentity>`: Identity Parameter
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
   - `[CallId <String>]`: The unique identifier of call
@@ -302,6 +301,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
   - `[FromDateTime <DateTime?>]`: Usage: fromDateTime={fromDateTime}
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[MeetingRegistrantBaseId <String>]`: The unique identifier of meetingRegistrantBase
   - `[MeetingRegistrationQuestionId <String>]`: The unique identifier of meetingRegistrationQuestion
   - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
   - `[ParticipantId <String>]`: The unique identifier of participant
@@ -310,7 +310,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[ToDateTime <DateTime?>]`: Usage: toDateTime={toDateTime}
   - `[UserId <String>]`: The unique identifier of user
 
-SETTINGS `<IMicrosoftGraphVirtualAppointmentSettings>`: virtualAppointmentSettings
+`SETTINGS <IMicrosoftGraphVirtualAppointmentSettings>`: virtualAppointmentSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowClientToJoinUsingBrowser <Boolean?>]`: Indicates whether the client can use the browser to join a virtual appointment. If set to false, the client can only use Microsoft Teams to join. Optional.
 

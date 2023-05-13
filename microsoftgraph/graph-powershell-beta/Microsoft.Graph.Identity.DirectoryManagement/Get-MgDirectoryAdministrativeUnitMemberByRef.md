@@ -1,12 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryadministrativeunitmemberbyref
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryadministrativeunitmemberbyref
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
-# Get-MgDirectoryAdministrativeUnitMemberByRef
+# Get-MgBetaDirectoryAdministrativeUnitMemberByRef
 
 ## SYNOPSIS
 Users and groups that are members of this administrative unit.
@@ -15,7 +14,7 @@ Supports $expand.
 ## SYNTAX
 
 ```
-Get-MgDirectoryAdministrativeUnitMemberByRef -AdministrativeUnitId <String> [-Filter <String>]
+Get-MgBetaDirectoryAdministrativeUnitMemberByRef -AdministrativeUnitId <String> [-Filter <String>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ConsistencyLevel <String>]
  [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
@@ -26,27 +25,19 @@ Supports $expand.
 
 ## EXAMPLES
 
-### Example 1: List member objects
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
-
-Get-MgDirectoryAdministrativeUnitMember -AdministrativeUnitId $administrativeUnitId
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 ```
 
-This example shows how to use the Get-MgDirectoryAdministrativeUnitMemberByRef Cmdlet.
+Get-MgBetaDirectoryAdministrativeUnitMember -AdministrativeUnitId $administrativeUnitId
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: List member references
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
-
-Get-MgDirectoryAdministrativeUnitMemberByRef -AdministrativeUnitId $administrativeUnitId
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 ```
 
-This example shows how to use the Get-MgDirectoryAdministrativeUnitMemberByRef Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Get-MgBetaDirectoryAdministrativeUnitMemberByRef -AdministrativeUnitId $administrativeUnitId
 
 ## PARAMETERS
 

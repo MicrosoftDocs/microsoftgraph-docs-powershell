@@ -1,67 +1,58 @@
----
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycaseoperation
+﻿---
+external help file: Microsoft.Graph.Beta.Security-help.xml
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycaseoperation
 schema: 2.0.0
 ---
 
-# Get-MgSecurityCaseEdiscoveryCaseOperation
+# Get-MgBetaSecurityCaseEdiscoveryCaseOperation
 
 ## SYNOPSIS
-Returns a list of case caseOperation objects for this case.
+Read the properties and relationships of a caseOperation object.
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgSecurityCaseEdiscoveryCaseOperation -EdiscoveryCaseId <String> [-ExpandProperty <String[]>]
+Get-MgBetaSecurityCaseEdiscoveryCaseOperation -EdiscoveryCaseId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgSecurityCaseEdiscoveryCaseOperation -CaseOperationId <String> -EdiscoveryCaseId <String>
+Get-MgBetaSecurityCaseEdiscoveryCaseOperation -CaseOperationId <String> -EdiscoveryCaseId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgSecurityCaseEdiscoveryCaseOperation -InputObject <ISecurityIdentity> [-ExpandProperty <String[]>]
+Get-MgBetaSecurityCaseEdiscoveryCaseOperation -InputObject <ISecurityIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Returns a list of case caseOperation objects for this case.
+Read the properties and relationships of a caseOperation object.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgSecurityCaseEdiscoveryCaseOperation Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Security
-Get-MgSecurityCaseEdiscoveryCaseOperation -EdiscoveryCaseId $ediscoveryCaseId -CaseOperationId $caseOperationId
+Import-Module Microsoft.Graph.Beta.Security
+Get-MgBetaSecurityCaseEdiscoveryCaseOperation -EdiscoveryCaseId $ediscoveryCaseId -CaseOperationId $caseOperationId
 ```
 
-This example shows how to use the Get-MgSecurityCaseEdiscoveryCaseOperation Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Get-MgSecurityCaseEdiscoveryCaseOperation Cmdlet
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Security
-Get-MgSecurityCaseEdiscoveryCaseOperation -EdiscoveryCaseId $ediscoveryCaseId
+Import-Module Microsoft.Graph.Beta.Security
+Get-MgBetaSecurityCaseEdiscoveryCaseOperation -EdiscoveryCaseId $ediscoveryCaseId
 ```
 
-This example shows how to use the Get-MgSecurityCaseEdiscoveryCaseOperation Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Using the Get-MgSecurityCaseEdiscoveryCaseOperation Cmdlet
+### EXAMPLE 3
 ```powershell
-Import-Module Microsoft.Graph.Security
-Get-MgSecurityCaseEdiscoveryCaseOperation -EdiscoveryCaseId $ediscoveryCaseId -OutFile $outFileId
+Import-Module Microsoft.Graph.Beta.Security
+Get-MgBetaSecurityCaseEdiscoveryCaseOperation -EdiscoveryCaseId $ediscoveryCaseId -OutFile $outFileId
 ```
-
-This example shows how to use the Get-MgSecurityCaseEdiscoveryCaseOperation Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -158,7 +149,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ISecurityIdentity
@@ -267,10 +258,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityCaseOperation
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityCaseOperation
 ## NOTES
 
 ALIASES
@@ -280,7 +271,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+`INPUTOBJECT <ISecurityIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
   - `[ArticleId <String>]`: The unique identifier of article
   - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator

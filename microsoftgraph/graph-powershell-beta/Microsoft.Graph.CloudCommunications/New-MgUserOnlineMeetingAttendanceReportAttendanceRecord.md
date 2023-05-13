@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.CloudCommunications-help.xml
-Module Name: Microsoft.Graph.CloudCommunications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/new-mguseronlinemeetingattendancereportattendancerecord
+﻿---
+external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
+Module Name: Microsoft.Graph.Beta.CloudCommunications
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetauseronlinemeetingattendancereportattendancerecord
 schema: 2.0.0
 ---
 
-# New-MgUserOnlineMeetingAttendanceReportAttendanceRecord
+# New-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord
 
 ## SYNOPSIS
 Create new navigation property to attendanceRecords for users
@@ -14,7 +14,7 @@ Create new navigation property to attendanceRecords for users
 
 ### CreateExpanded1 (Default)
 ```
-New-MgUserOnlineMeetingAttendanceReportAttendanceRecord -OnlineMeetingId <String> -UserId <String>
+New-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord -OnlineMeetingId <String> -UserId <String>
  [-AdditionalProperties <Hashtable>] [-AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>]
  [-EmailAddress <String>] [-Id <String>] [-Identity <IMicrosoftGraphIdentity>] [-RegistrantId <String>]
  [-Role <String>] [-TotalAttendanceInSeconds <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -22,7 +22,7 @@ New-MgUserOnlineMeetingAttendanceReportAttendanceRecord -OnlineMeetingId <String
 
 ### CreateExpanded
 ```
-New-MgUserOnlineMeetingAttendanceReportAttendanceRecord -MeetingAttendanceReportId <String>
+New-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord -MeetingAttendanceReportId <String>
  -OnlineMeetingId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
  [-AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>] [-EmailAddress <String>] [-Id <String>]
  [-Identity <IMicrosoftGraphIdentity>] [-RegistrantId <String>] [-Role <String>]
@@ -31,20 +31,20 @@ New-MgUserOnlineMeetingAttendanceReportAttendanceRecord -MeetingAttendanceReport
 
 ### Create
 ```
-New-MgUserOnlineMeetingAttendanceReportAttendanceRecord -MeetingAttendanceReportId <String>
- -OnlineMeetingId <String> -UserId <String> -BodyParameter <IMicrosoftGraphAttendanceRecord1> [-WhatIf]
+New-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord -MeetingAttendanceReportId <String>
+ -OnlineMeetingId <String> -UserId <String> -BodyParameter <IMicrosoftGraphAttendanceRecord> [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
 ```
-New-MgUserOnlineMeetingAttendanceReportAttendanceRecord -OnlineMeetingId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphAttendanceRecord1> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord -OnlineMeetingId <String> -UserId <String>
+ -BodyParameter <IMicrosoftGraphAttendanceRecord> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded1
 ```
-New-MgUserOnlineMeetingAttendanceReportAttendanceRecord -InputObject <ICloudCommunicationsIdentity>
+New-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord -InputObject <ICloudCommunicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>]
  [-EmailAddress <String>] [-Id <String>] [-Identity <IMicrosoftGraphIdentity>] [-RegistrantId <String>]
  [-Role <String>] [-TotalAttendanceInSeconds <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -52,7 +52,7 @@ New-MgUserOnlineMeetingAttendanceReportAttendanceRecord -InputObject <ICloudComm
 
 ### CreateViaIdentityExpanded
 ```
-New-MgUserOnlineMeetingAttendanceReportAttendanceRecord -InputObject <ICloudCommunicationsIdentity>
+New-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord -InputObject <ICloudCommunicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>]
  [-EmailAddress <String>] [-Id <String>] [-Identity <IMicrosoftGraphIdentity>] [-RegistrantId <String>]
  [-Role <String>] [-TotalAttendanceInSeconds <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -60,20 +60,34 @@ New-MgUserOnlineMeetingAttendanceReportAttendanceRecord -InputObject <ICloudComm
 
 ### CreateViaIdentity1
 ```
-New-MgUserOnlineMeetingAttendanceReportAttendanceRecord -InputObject <ICloudCommunicationsIdentity>
- -BodyParameter <IMicrosoftGraphAttendanceRecord1> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord -InputObject <ICloudCommunicationsIdentity>
+ -BodyParameter <IMicrosoftGraphAttendanceRecord> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgUserOnlineMeetingAttendanceReportAttendanceRecord -InputObject <ICloudCommunicationsIdentity>
- -BodyParameter <IMicrosoftGraphAttendanceRecord1> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord -InputObject <ICloudCommunicationsIdentity>
+ -BodyParameter <IMicrosoftGraphAttendanceRecord> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to attendanceRecords for users
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -94,7 +108,7 @@ Accept wildcard characters: False
 
 ### -AttendanceIntervals
 List of time periods between joining and leaving a meeting.
-To construct, please use Get-Help -Online and see NOTES section for ATTENDANCEINTERVALS properties and create a hash table.
+To construct, see NOTES section for ATTENDANCEINTERVALS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAttendanceInterval[]
@@ -110,10 +124,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 attendanceRecord
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAttendanceRecord1
+Type: IMicrosoftGraphAttendanceRecord
 Parameter Sets: Create, Create1, CreateViaIdentity1, CreateViaIdentity
 Aliases:
 
@@ -125,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -EmailAddress
-Email address of the user associated with this atttendance record.
+Email address of the user associated with this attendance record.
 
 ```yaml
 Type: String
@@ -140,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -157,7 +171,7 @@ Accept wildcard characters: False
 
 ### -Identity
 identity
-To construct, please use Get-Help -Online and see NOTES section for IDENTITY properties and create a hash table.
+To construct, see NOTES section for IDENTITY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIdentity
@@ -173,7 +187,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ICloudCommunicationsIdentity
@@ -315,11 +329,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttendanceRecord1
+### Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAttendanceRecord
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttendanceRecord1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAttendanceRecord
 ## NOTES
 
 ALIASES
@@ -329,19 +343,19 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ATTENDANCEINTERVALS <IMicrosoftGraphAttendanceInterval\[]>: List of time periods between joining and leaving a meeting.
+`ATTENDANCEINTERVALS <IMicrosoftGraphAttendanceInterval[]>`: List of time periods between joining and leaving a meeting.
   - `[DurationInSeconds <Int32?>]`: Duration of the meeting interval in seconds; that is, the difference between joinDateTime and leaveDateTime.
   - `[JoinDateTime <DateTime?>]`: The time the attendee joined in UTC.
   - `[LeaveDateTime <DateTime?>]`: The time the attendee left in UTC.
 
-BODYPARAMETER `<IMicrosoftGraphAttendanceRecord1>`: attendanceRecord
+`BODYPARAMETER <IMicrosoftGraphAttendanceRecord>`: attendanceRecord
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>]`: List of time periods between joining and leaving a meeting.
     - `[DurationInSeconds <Int32?>]`: Duration of the meeting interval in seconds; that is, the difference between joinDateTime and leaveDateTime.
     - `[JoinDateTime <DateTime?>]`: The time the attendee joined in UTC.
     - `[LeaveDateTime <DateTime?>]`: The time the attendee left in UTC.
-  - `[EmailAddress <String>]`: Email address of the user associated with this atttendance record.
+  - `[EmailAddress <String>]`: Email address of the user associated with this attendance record.
   - `[Identity <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
@@ -350,12 +364,12 @@ BODYPARAMETER `<IMicrosoftGraphAttendanceRecord1>`: attendanceRecord
   - `[Role <String>]`: Role of the attendee. Possible values are: None, Attendee, Presenter, and Organizer.
   - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.
 
-IDENTITY `<IMicrosoftGraphIdentity>`: identity
+`IDENTITY <IMicrosoftGraphIdentity>`: identity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
   - `[Id <String>]`: Unique identifier for the identity.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+`INPUTOBJECT <ICloudCommunicationsIdentity>`: Identity Parameter
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
   - `[CallId <String>]`: The unique identifier of call
@@ -365,6 +379,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
   - `[FromDateTime <DateTime?>]`: Usage: fromDateTime={fromDateTime}
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[MeetingRegistrantBaseId <String>]`: The unique identifier of meetingRegistrantBase
   - `[MeetingRegistrationQuestionId <String>]`: The unique identifier of meetingRegistrationQuestion
   - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
   - `[ParticipantId <String>]`: The unique identifier of participant

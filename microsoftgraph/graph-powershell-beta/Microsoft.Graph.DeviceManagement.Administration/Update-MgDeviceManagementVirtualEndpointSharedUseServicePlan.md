@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Administration
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementvirtualendpointshareduseserviceplan
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointshareduseserviceplan
 schema: 2.0.0
 ---
 
-# Update-MgDeviceManagementVirtualEndpointSharedUseServicePlan
+# Update-MgBetaDeviceManagementVirtualEndpointSharedUseServicePlan
 
 ## SYNOPSIS
 Update the navigation property sharedUseServicePlans in deviceManagement
@@ -14,38 +14,46 @@ Update the navigation property sharedUseServicePlans in deviceManagement
 
 ### UpdateExpanded (Default)
 ```
-Update-MgDeviceManagementVirtualEndpointSharedUseServicePlan -CloudPcSharedUseServicePlanId <String>
+Update-MgBetaDeviceManagementVirtualEndpointSharedUseServicePlan -CloudPcSharedUseServicePlanId <String>
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-TotalCount <Int32>]
- [-UsedCount <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UsedCount <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgDeviceManagementVirtualEndpointSharedUseServicePlan -CloudPcSharedUseServicePlanId <String>
- -BodyParameter <IMicrosoftGraphCloudPcSharedUseServicePlan> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaDeviceManagementVirtualEndpointSharedUseServicePlan -CloudPcSharedUseServicePlanId <String>
+ -BodyParameter <IMicrosoftGraphCloudPcSharedUseServicePlan> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgDeviceManagementVirtualEndpointSharedUseServicePlan
+Update-MgBetaDeviceManagementVirtualEndpointSharedUseServicePlan
  -InputObject <IDeviceManagementAdministrationIdentity> [-AdditionalProperties <Hashtable>]
- [-DisplayName <String>] [-Id <String>] [-TotalCount <Int32>] [-UsedCount <Int32>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-DisplayName <String>] [-Id <String>] [-TotalCount <Int32>] [-UsedCount <Int32>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgDeviceManagementVirtualEndpointSharedUseServicePlan
+Update-MgBetaDeviceManagementVirtualEndpointSharedUseServicePlan
  -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphCloudPcSharedUseServicePlan> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCloudPcSharedUseServicePlan> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property sharedUseServicePlans in deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -66,7 +74,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 cloudPcSharedUseServicePlan
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphCloudPcSharedUseServicePlan
@@ -111,7 +119,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -128,7 +136,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementAdministrationIdentity
@@ -139,21 +147,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -223,11 +216,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCloudPcSharedUseServicePlan
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementAdministrationIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcSharedUseServicePlan
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcSharedUseServicePlan
 ## NOTES
 
 ALIASES
@@ -237,14 +230,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphCloudPcSharedUseServicePlan>`: cloudPcSharedUseServicePlan
+`BODYPARAMETER <IMicrosoftGraphCloudPcSharedUseServicePlan>`: cloudPcSharedUseServicePlan
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DisplayName <String>]`: The display name of the shared-use service plan.
   - `[TotalCount <Int32?>]`: Total number of shared-use service plans purchased by the customer.
   - `[UsedCount <Int32?>]`: The number of service plans that the account uses.
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[AuditEventId <String>]`: The unique identifier of auditEvent
   - `[CartToClassAssociationId <String>]`: The unique identifier of cartToClassAssociation
   - `[CloudPcAuditEventId <String>]`: The unique identifier of cloudPcAuditEvent

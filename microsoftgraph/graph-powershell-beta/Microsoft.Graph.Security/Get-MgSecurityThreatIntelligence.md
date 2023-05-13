@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligence
+﻿---
+external help file: Microsoft.Graph.Beta.Security-help.xml
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligence
 schema: 2.0.0
 ---
 
-# Get-MgSecurityThreatIntelligence
+# Get-MgBetaSecurityThreatIntelligence
 
 ## SYNOPSIS
 Get threatIntelligence from security
@@ -13,13 +13,23 @@ Get threatIntelligence from security
 ## SYNTAX
 
 ```
-Get-MgSecurityThreatIntelligence [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaSecurityThreatIntelligence [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get threatIntelligence from security
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -60,7 +70,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityThreatIntelligence
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityThreatIntelligence
 ## NOTES
 
 ALIASES

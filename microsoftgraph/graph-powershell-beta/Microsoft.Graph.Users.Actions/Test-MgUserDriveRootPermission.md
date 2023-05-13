@@ -1,39 +1,39 @@
----
-external help file: Microsoft.Graph.Users.Actions-help.xml
-Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/test-mguserdriverootpermission
+﻿---
+external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.Users.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetauserdriverootpermission
 schema: 2.0.0
 ---
 
-# Test-MgUserDriveRootPermission
+# Test-MgBetaUserDriveRootPermission
 
 ## SYNOPSIS
 Invoke action validatePermission
 
 ## SYNTAX
 
-### ValidateExpanded1 (Default)
+### ValidateExpanded (Default)
 ```
-Test-MgUserDriveRootPermission -DriveId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
+Test-MgBetaUserDriveRootPermission -DriveId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
  [-ChallengeToken <String>] [-Password <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Validate1
+### Validate
 ```
-Test-MgUserDriveRootPermission -DriveId <String> -UserId <String>
+Test-MgBetaUserDriveRootPermission -DriveId <String> -UserId <String>
  -BodyParameter <IPathsUsk7RsUsersUserIdDrivesDriveIdRootMicrosoftGraphValidatepermissionPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ValidateViaIdentityExpanded1
+### ValidateViaIdentityExpanded
 ```
-Test-MgUserDriveRootPermission -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
+Test-MgBetaUserDriveRootPermission -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
  [-ChallengeToken <String>] [-Password <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ValidateViaIdentity1
+### ValidateViaIdentity
 ```
-Test-MgUserDriveRootPermission -InputObject <IUsersActionsIdentity>
+Test-MgBetaUserDriveRootPermission -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPathsUsk7RsUsersUserIdDrivesDriveIdRootMicrosoftGraphValidatepermissionPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -43,6 +43,20 @@ Invoke action validatePermission
 
 ## EXAMPLES
 
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -50,7 +64,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: ValidateExpanded1, ValidateViaIdentityExpanded1
+Parameter Sets: ValidateExpanded, ValidateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -62,11 +76,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPathsUsk7RsUsersUserIdDrivesDriveIdRootMicrosoftGraphValidatepermissionPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Validate1, ValidateViaIdentity1
+Parameter Sets: Validate, ValidateViaIdentity
 Aliases:
 
 Required: True
@@ -81,7 +95,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: ValidateExpanded1, ValidateViaIdentityExpanded1
+Parameter Sets: ValidateExpanded, ValidateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -96,7 +110,7 @@ The unique identifier of drive
 
 ```yaml
 Type: String
-Parameter Sets: ValidateExpanded1, Validate1
+Parameter Sets: ValidateExpanded, Validate
 Aliases:
 
 Required: True
@@ -108,11 +122,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: ValidateViaIdentityExpanded1, ValidateViaIdentity1
+Parameter Sets: ValidateViaIdentityExpanded, ValidateViaIdentity
 Aliases:
 
 Required: True
@@ -142,7 +156,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: ValidateExpanded1, ValidateViaIdentityExpanded1
+Parameter Sets: ValidateExpanded, ValidateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -157,7 +171,7 @@ The unique identifier of user
 
 ```yaml
 Type: String
-Parameter Sets: ValidateExpanded1, Validate1
+Parameter Sets: ValidateExpanded, Validate
 Aliases:
 
 Required: True
@@ -203,8 +217,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsUsk7RsUsersUserIdDrivesDriveIdRootMicrosoftGraphValidatepermissionPostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsUsk7RsUsersUserIdDrivesDriveIdRootMicrosoftGraphValidatepermissionPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
 ## OUTPUTS
 
 ### System.Boolean
@@ -217,12 +231,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsUsk7RsUsersUserIdDrivesDriveIdRootMicrosoftGraphValidatepermissionPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsUsk7RsUsersUserIdDrivesDriveIdRootMicrosoftGraphValidatepermissionPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ChallengeToken <String>]`: 
   - `[Password <String>]`: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
@@ -256,7 +270,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription

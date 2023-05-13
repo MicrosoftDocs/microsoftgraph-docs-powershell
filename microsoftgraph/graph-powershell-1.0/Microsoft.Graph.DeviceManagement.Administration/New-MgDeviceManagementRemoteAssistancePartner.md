@@ -1,7 +1,7 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementremoteassistancepartner
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementremoteassistancepartner
 schema: 2.0.0
 ---
 
@@ -12,23 +12,37 @@ Create new navigation property to remoteAssistancePartners for deviceManagement
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
 New-MgDeviceManagementRemoteAssistancePartner [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
  [-Id <String>] [-LastConnectionDateTime <DateTime>] [-OnboardingStatus <RemoteAssistanceOnboardingStatus>]
  [-OnboardingUrl <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
-New-MgDeviceManagementRemoteAssistancePartner -BodyParameter <IMicrosoftGraphRemoteAssistancePartner1>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgDeviceManagementRemoteAssistancePartner -BodyParameter <IMicrosoftGraphRemoteAssistancePartner> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to remoteAssistancePartners for deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -37,7 +51,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -49,11 +63,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 RemoteAssistPartner resources represent the metadata and status of a given Remote Assistance partner service.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRemoteAssistancePartner1
-Parameter Sets: Create1
+Type: IMicrosoftGraphRemoteAssistancePartner
+Parameter Sets: Create
 Aliases:
 
 Required: True
@@ -68,7 +82,7 @@ Display name of the partner.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -84,7 +98,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -99,7 +113,7 @@ Timestamp of the last request sent to Intune by the TEM partner.
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -114,7 +128,7 @@ The current TeamViewer connector status
 
 ```yaml
 Type: RemoteAssistanceOnboardingStatus
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -129,7 +143,7 @@ URL of the partner's onboarding portal, where an administrator can configure the
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -175,10 +189,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRemoteAssistancePartner1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRemoteAssistancePartner
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRemoteAssistancePartner1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRemoteAssistancePartner
 ## NOTES
 
 ALIASES
@@ -188,7 +202,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphRemoteAssistancePartner1>`: RemoteAssistPartner resources represent the metadata and status of a given Remote Assistance partner service.
+`BODYPARAMETER <IMicrosoftGraphRemoteAssistancePartner>`: RemoteAssistPartner resources represent the metadata and status of a given Remote Assistance partner service.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DisplayName <String>]`: Display name of the partner.

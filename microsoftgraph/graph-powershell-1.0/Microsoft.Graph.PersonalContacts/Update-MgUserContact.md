@@ -1,14 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.PersonalContacts
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.personalcontacts/update-mgusercontact
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/update-mgusercontact
 schema: 2.0.0
 ---
 
 # Update-MgUserContact
 
 ## SYNOPSIS
-Update the navigation property contacts in users
+Update the properties of a contact object.
 
 ## SYNTAX
 
@@ -28,13 +28,13 @@ Update-MgUserContact -ContactId <String> -UserId <String> [-AdditionalProperties
  [-PersonalNotes <String>] [-Photo <IMicrosoftGraphProfilePhoto>] [-Profession <String>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-SpouseName <String>]
  [-Surname <String>] [-Title <String>] [-YomiCompanyName <String>] [-YomiGivenName <String>]
- [-YomiSurname <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-YomiSurname <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgUserContact -ContactId <String> -UserId <String> -BodyParameter <IMicrosoftGraphContact> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgUserContact -ContactId <String> -UserId <String> -BodyParameter <IMicrosoftGraphContact> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -53,21 +53,21 @@ Update-MgUserContact -InputObject <IPersonalContactsIdentity> [-AdditionalProper
  [-PersonalNotes <String>] [-Photo <IMicrosoftGraphProfilePhoto>] [-Profession <String>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-SpouseName <String>]
  [-Surname <String>] [-Title <String>] [-YomiCompanyName <String>] [-YomiGivenName <String>]
- [-YomiSurname <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-YomiSurname <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgUserContact -InputObject <IPersonalContactsIdentity> -BodyParameter <IMicrosoftGraphContact>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgUserContact -InputObject <IPersonalContactsIdentity> -BodyParameter <IMicrosoftGraphContact> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property contacts in users
+Update the properties of a contact object.
 
 ## EXAMPLES
 
-### Example 1: Using the Update-MgUserContact Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.PersonalContacts
 $params = @{
@@ -82,9 +82,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 Update-MgUserContact -UserId $userId -ContactId $contactId -BodyParameter $params
 ```
-
-This example shows how to use the Update-MgUserContact Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -137,7 +134,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 contact
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphContact
@@ -153,7 +150,7 @@ Accept wildcard characters: False
 
 ### -BusinessAddress
 physicalAddress
-To construct, please use Get-Help -Online and see NOTES section for BUSINESSADDRESS properties and create a hash table.
+To construct, see NOTES section for BUSINESSADDRESS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPhysicalAddress
@@ -326,7 +323,7 @@ Accept wildcard characters: False
 
 ### -EmailAddresses
 The contact's email addresses.
-To construct, please use Get-Help -Online and see NOTES section for EMAILADDRESSES properties and create a hash table.
+To construct, see NOTES section for EMAILADDRESSES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEmailAddress[]
@@ -344,7 +341,7 @@ Accept wildcard characters: False
 The collection of open extensions defined for the contact.
 Read-only.
 Nullable.
-To construct, please use Get-Help -Online and see NOTES section for EXTENSIONS properties and create a hash table.
+To construct, see NOTES section for EXTENSIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphExtension[]
@@ -405,7 +402,7 @@ Accept wildcard characters: False
 
 ### -HomeAddress
 physicalAddress
-To construct, please use Get-Help -Online and see NOTES section for HOMEADDRESS properties and create a hash table.
+To construct, see NOTES section for HOMEADDRESS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPhysicalAddress
@@ -482,7 +479,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IPersonalContactsIdentity
@@ -576,7 +573,7 @@ Accept wildcard characters: False
 The collection of multi-value extended properties defined for the contact.
 Read-only.
 Nullable.
-To construct, please use Get-Help -Online and see NOTES section for MULTIVALUEEXTENDEDPROPERTIES properties and create a hash table.
+To construct, see NOTES section for MULTIVALUEEXTENDEDPROPERTIES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphMultiValueLegacyExtendedProperty[]
@@ -622,7 +619,7 @@ Accept wildcard characters: False
 
 ### -OtherAddress
 physicalAddress
-To construct, please use Get-Help -Online and see NOTES section for OTHERADDRESS properties and create a hash table.
+To construct, see NOTES section for OTHERADDRESS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPhysicalAddress
@@ -651,21 +648,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -PersonalNotes
 .
 
@@ -683,7 +665,7 @@ Accept wildcard characters: False
 
 ### -Photo
 profilePhoto
-To construct, please use Get-Help -Online and see NOTES section for PHOTO properties and create a hash table.
+To construct, see NOTES section for PHOTO properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphProfilePhoto
@@ -716,7 +698,7 @@ Accept wildcard characters: False
 The collection of single-value extended properties defined for the contact.
 Read-only.
 Nullable.
-To construct, please use Get-Help -Online and see NOTES section for SINGLEVALUEEXTENDEDPROPERTIES properties and create a hash table.
+To construct, see NOTES section for SINGLEVALUEEXTENDEDPROPERTIES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSingleValueLegacyExtendedProperty[]
@@ -875,7 +857,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IPersonalContactsIdentity
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContact
 ## NOTES
 
 ALIASES
@@ -885,7 +867,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphContact>`: contact
+`BODYPARAMETER <IMicrosoftGraphContact>`: contact
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Categories <String[]>]`: The categories associated with the item
   - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
@@ -947,7 +929,7 @@ BODYPARAMETER `<IMicrosoftGraphContact>`: contact
   - `[YomiGivenName <String>]`: 
   - `[YomiSurname <String>]`: 
 
-BUSINESSADDRESS `<IMicrosoftGraphPhysicalAddress>`: physicalAddress
+`BUSINESSADDRESS <IMicrosoftGraphPhysicalAddress>`: physicalAddress
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[City <String>]`: The city.
   - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
@@ -955,14 +937,14 @@ BUSINESSADDRESS `<IMicrosoftGraphPhysicalAddress>`: physicalAddress
   - `[State <String>]`: The state.
   - `[Street <String>]`: The street.
 
-EMAILADDRESSES <IMicrosoftGraphEmailAddress\[]>: The contact's email addresses.
+`EMAILADDRESSES <IMicrosoftGraphEmailAddress[]>`: The contact's email addresses.
   - `[Address <String>]`: The email address of the person or entity.
   - `[Name <String>]`: The display name of the person or entity.
 
-EXTENSIONS <IMicrosoftGraphExtension\[]>: The collection of open extensions defined for the contact. Read-only. Nullable.
+`EXTENSIONS <IMicrosoftGraphExtension[]>`: The collection of open extensions defined for the contact. Read-only. Nullable.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
-HOMEADDRESS `<IMicrosoftGraphPhysicalAddress>`: physicalAddress
+`HOMEADDRESS <IMicrosoftGraphPhysicalAddress>`: physicalAddress
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[City <String>]`: The city.
   - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
@@ -970,20 +952,18 @@ HOMEADDRESS `<IMicrosoftGraphPhysicalAddress>`: physicalAddress
   - `[State <String>]`: The state.
   - `[Street <String>]`: The street.
 
-INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
+`INPUTOBJECT <IPersonalContactsIdentity>`: Identity Parameter
   - `[ContactFolderId <String>]`: The unique identifier of contactFolder
   - `[ContactFolderId1 <String>]`: The unique identifier of contactFolder
   - `[ContactId <String>]`: The unique identifier of contact
   - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
   - `[UserId <String>]`: The unique identifier of user
 
-MULTIVALUEEXTENDEDPROPERTIES <IMicrosoftGraphMultiValueLegacyExtendedProperty\[]>: The collection of multi-value extended properties defined for the contact. Read-only. Nullable.
+`MULTIVALUEEXTENDEDPROPERTIES <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>`: The collection of multi-value extended properties defined for the contact. Read-only. Nullable.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Value <String[]>]`: A collection of property values.
 
-OTHERADDRESS `<IMicrosoftGraphPhysicalAddress>`: physicalAddress
+`OTHERADDRESS <IMicrosoftGraphPhysicalAddress>`: physicalAddress
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[City <String>]`: The city.
   - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
@@ -991,13 +971,13 @@ OTHERADDRESS `<IMicrosoftGraphPhysicalAddress>`: physicalAddress
   - `[State <String>]`: The state.
   - `[Street <String>]`: The street.
 
-PHOTO `<IMicrosoftGraphProfilePhoto>`: profilePhoto
+`PHOTO <IMicrosoftGraphProfilePhoto>`: profilePhoto
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Height <Int32?>]`: The height of the photo. Read-only.
   - `[Width <Int32?>]`: The width of the photo. Read-only.
 
-SINGLEVALUEEXTENDEDPROPERTIES <IMicrosoftGraphSingleValueLegacyExtendedProperty\[]>: The collection of single-value extended properties defined for the contact. Read-only. Nullable.
+`SINGLEVALUEEXTENDEDPROPERTIES <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>`: The collection of single-value extended properties defined for the contact. Read-only. Nullable.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Value <String>]`: A property value.
 

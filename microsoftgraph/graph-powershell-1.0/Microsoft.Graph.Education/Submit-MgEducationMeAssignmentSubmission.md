@@ -1,7 +1,7 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/submit-mgeducationmeassignmentsubmission
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/submit-mgeducationmeassignmentsubmission
 schema: 2.0.0
 ---
 
@@ -17,13 +17,13 @@ A teacher can also submit a student's assignment on their behalf.
 
 ## SYNTAX
 
-### Submit1 (Default)
+### Submit (Default)
 ```
 Submit-MgEducationMeAssignmentSubmission -EducationAssignmentId <String> -EducationSubmissionId <String>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### SubmitViaIdentity1
+### SubmitViaIdentity
 ```
 Submit-MgEducationMeAssignmentSubmission -InputObject <IEducationIdentity> [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -39,16 +39,12 @@ A teacher can also submit a student's assignment on their behalf.
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Education
-
-Submit-MgEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
 ```
 
-This example shows how to use the Submit-MgEducationMeAssignmentSubmission Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Submit-MgEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
 
 ## PARAMETERS
 
@@ -57,7 +53,7 @@ The unique identifier of educationAssignment
 
 ```yaml
 Type: String
-Parameter Sets: Submit1
+Parameter Sets: Submit
 Aliases:
 
 Required: True
@@ -72,7 +68,7 @@ The unique identifier of educationSubmission
 
 ```yaml
 Type: String
-Parameter Sets: Submit1
+Parameter Sets: Submit
 Aliases:
 
 Required: True
@@ -84,11 +80,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IEducationIdentity
-Parameter Sets: SubmitViaIdentity1
+Parameter Sets: SubmitViaIdentity
 Aliases:
 
 Required: True
@@ -137,7 +133,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationSubmission1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationSubmission
 ## NOTES
 
 ALIASES
@@ -147,7 +143,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+`INPUTOBJECT <IEducationIdentity>`: Identity Parameter
   - `[EducationAssignmentId <String>]`: The unique identifier of educationAssignment
   - `[EducationAssignmentResourceId <String>]`: The unique identifier of educationAssignmentResource
   - `[EducationCategoryId <String>]`: The unique identifier of educationCategory
@@ -157,8 +153,6 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationSchoolId <String>]`: The unique identifier of educationSchool
   - `[EducationSubmissionId <String>]`: The unique identifier of educationSubmission
   - `[EducationSubmissionResourceId <String>]`: The unique identifier of educationSubmissionResource
-  - `[EducationSynchronizationErrorId <String>]`: The unique identifier of educationSynchronizationError
-  - `[EducationSynchronizationProfileId <String>]`: The unique identifier of educationSynchronizationProfile
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS

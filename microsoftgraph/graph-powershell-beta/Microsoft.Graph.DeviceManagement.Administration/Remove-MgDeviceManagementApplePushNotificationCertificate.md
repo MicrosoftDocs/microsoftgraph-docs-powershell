@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Administration
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementapplepushnotificationcertificate
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/remove-mgbetadevicemanagementapplepushnotificationcertificate
 schema: 2.0.0
 ---
 
-# Remove-MgDeviceManagementApplePushNotificationCertificate
+# Remove-MgBetaDeviceManagementApplePushNotificationCertificate
 
 ## SYNOPSIS
 Delete navigation property applePushNotificationCertificate for deviceManagement
@@ -13,14 +13,28 @@ Delete navigation property applePushNotificationCertificate for deviceManagement
 ## SYNTAX
 
 ```
-Remove-MgDeviceManagementApplePushNotificationCertificate [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Remove-MgBetaDeviceManagementApplePushNotificationCertificate [-IfMatch <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Delete navigation property applePushNotificationCertificate for deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 

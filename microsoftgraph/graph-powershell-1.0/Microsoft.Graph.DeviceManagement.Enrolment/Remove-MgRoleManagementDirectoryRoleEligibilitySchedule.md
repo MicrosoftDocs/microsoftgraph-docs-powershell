@@ -1,6 +1,6 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Enrolment
+﻿---
+external help file: Microsoft.Graph.Identity.Governance-help.xml
+Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/remove-mgrolemanagementdirectoryroleeligibilityschedule
 schema: 2.0.0
 ---
@@ -12,15 +12,15 @@ Delete navigation property roleEligibilitySchedules for roleManagement
 
 ## SYNTAX
 
-### Delete1 (Default)
+### Delete (Default)
 ```
 Remove-MgRoleManagementDirectoryRoleEligibilitySchedule -UnifiedRoleEligibilityScheduleId <String>
  [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity1
+### DeleteViaIdentity
 ```
-Remove-MgRoleManagementDirectoryRoleEligibilitySchedule -InputObject <IDeviceManagementEnrolmentIdentity>
+Remove-MgRoleManagementDirectoryRoleEligibilitySchedule -InputObject <IIdentityGovernanceIdentity>
  [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -51,8 +51,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementEnrolmentIdentity
-Parameter Sets: DeleteViaIdentity1
+Type: IIdentityGovernanceIdentity
+Parameter Sets: DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -82,7 +82,7 @@ The unique identifier of unifiedRoleEligibilitySchedule
 
 ```yaml
 Type: String
-Parameter Sets: Delete1
+Parameter Sets: Delete
 Aliases:
 
 Required: True
@@ -128,7 +128,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementEnrolmentIdentity
+### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
 ## OUTPUTS
 
 ### System.Boolean

@@ -1,31 +1,30 @@
----
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mgteamworkworkforceintegration
+﻿---
+external help file: Microsoft.Graph.Beta.Teams-help.xml
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamworkworkforceintegration
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
-# New-MgTeamworkWorkforceIntegration
+# New-MgBetaTeamworkWorkforceIntegration
 
 ## SYNOPSIS
 Create a new workforceIntegration object.
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
-New-MgTeamworkWorkforceIntegration [-AdditionalProperties <Hashtable>] [-ApiVersion <Int32>]
+New-MgBetaTeamworkWorkforceIntegration [-AdditionalProperties <Hashtable>] [-ApiVersion <Int32>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-DisplayName <String>]
  [-EligibilityFilteringEnabledEntities <String>] [-Encryption <IMicrosoftGraphWorkforceIntegrationEncryption>]
  [-Id <String>] [-IsActive] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-SupportedEntities <String>]
  [-Supports <String>] [-Url <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
-New-MgTeamworkWorkforceIntegration -BodyParameter <IMicrosoftGraphWorkforceIntegration1> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaTeamworkWorkforceIntegration -BodyParameter <IMicrosoftGraphWorkforceIntegration> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -33,9 +32,9 @@ Create a new workforceIntegration object.
 
 ## EXAMPLES
 
-### Example 1: Using the New-MgTeamworkWorkforceIntegration Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Teams
+Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
 	DisplayName = "displayName-value"
 	ApiVersion = 99
@@ -47,11 +46,8 @@ $params = @{
 	Url = "url-value"
 	Supports = "supports-value"
 }
-New-MgTeamworkWorkforceIntegration -BodyParameter $params
+New-MgBetaTeamworkWorkforceIntegration -BodyParameter $params
 ```
-
-This example shows how to use the New-MgTeamworkWorkforceIntegration Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -60,7 +56,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -76,7 +72,7 @@ Start with 1.
 
 ```yaml
 Type: Int32
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -88,11 +84,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 workforceIntegration
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWorkforceIntegration1
-Parameter Sets: Create1
+Type: IMicrosoftGraphWorkforceIntegration
+Parameter Sets: Create
 Aliases:
 
 Required: True
@@ -104,11 +100,11 @@ Accept wildcard characters: False
 
 ### -CreatedBy
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
+To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -123,7 +119,7 @@ Name of the workforce integration.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -138,7 +134,7 @@ eligibilityFilteringEnabledEntities
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -150,11 +146,11 @@ Accept wildcard characters: False
 
 ### -Encryption
 workforceIntegrationEncryption
-To construct, please use Get-Help -Online and see NOTES section for ENCRYPTION properties and create a hash table.
+To construct, see NOTES section for ENCRYPTION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphWorkforceIntegrationEncryption
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -165,12 +161,12 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -185,7 +181,7 @@ Indicates whether this workforce integration is currently active and available.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -197,11 +193,11 @@ Accept wildcard characters: False
 
 ### -LastModifiedBy
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBY properties and create a hash table.
+To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -212,11 +208,11 @@ Accept wildcard characters: False
 ```
 
 ### -SupportedEntities
-.
+workforceIntegrationSupportedEntities
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -227,11 +223,11 @@ Accept wildcard characters: False
 ```
 
 ### -Supports
-.
+workforceIntegrationSupportedEntities
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -246,7 +242,7 @@ Workforce Integration URL for callbacks from the Shifts service.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -292,10 +288,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWorkforceIntegration1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWorkforceIntegration
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWorkforceIntegration1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWorkforceIntegration
 ## NOTES
 
 ALIASES
@@ -305,7 +301,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphWorkforceIntegration1>`: workforceIntegration
+`BODYPARAMETER <IMicrosoftGraphWorkforceIntegration>`: workforceIntegration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -316,7 +312,7 @@ BODYPARAMETER `<IMicrosoftGraphWorkforceIntegration1>`: workforceIntegration
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ApiVersion <Int32?>]`: API version for the call back URL. Start with 1.
   - `[DisplayName <String>]`: Name of the workforce integration.
   - `[EligibilityFilteringEnabledEntities <String>]`: eligibilityFilteringEnabledEntities
@@ -325,11 +321,11 @@ BODYPARAMETER `<IMicrosoftGraphWorkforceIntegration1>`: workforceIntegration
     - `[Protocol <String>]`: workforceIntegrationEncryptionProtocol
     - `[Secret <String>]`: Encryption shared secret.
   - `[IsActive <Boolean?>]`: Indicates whether this workforce integration is currently active and available.
-  - `[SupportedEntities <String>]`: 
-  - `[Supports <String>]`: 
+  - `[SupportedEntities <String>]`: workforceIntegrationSupportedEntities
+  - `[Supports <String>]`: workforceIntegrationSupportedEntities
   - `[Url <String>]`: Workforce Integration URL for callbacks from the Shifts service.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+`CREATEDBY <IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -338,12 +334,12 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-ENCRYPTION `<IMicrosoftGraphWorkforceIntegrationEncryption>`: workforceIntegrationEncryption
+`ENCRYPTION <IMicrosoftGraphWorkforceIntegrationEncryption>`: workforceIntegrationEncryption
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Protocol <String>]`: workforceIntegrationEncryptionProtocol
   - `[Secret <String>]`: Encryption shared secret.
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+`LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

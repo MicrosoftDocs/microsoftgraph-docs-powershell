@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgpolicyfeaturerolloutpolicyapplytouserownedobject
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyfeaturerolloutpolicyapplytouserownedobject
 schema: 2.0.0
 ---
 
-# Get-MgPolicyFeatureRolloutPolicyApplyToUserOwnedObject
+# Get-MgBetaPolicyFeatureRolloutPolicyApplyToUserOwnedObject
 
 ## SYNOPSIS
 Retrieve a list of recently deleted application and group objects owned by the specified user.
@@ -15,28 +15,28 @@ This API returns up to 1,000 deleted objects owned by the user, sorted by ID, an
 
 ### GetExpanded (Default)
 ```
-Get-MgPolicyFeatureRolloutPolicyApplyToUserOwnedObject -FeatureRolloutPolicyId <String>
+Get-MgBetaPolicyFeatureRolloutPolicyApplyToUserOwnedObject -FeatureRolloutPolicyId <String>
  [-AdditionalProperties <Hashtable>] [-Type <String>] [-UserId <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgPolicyFeatureRolloutPolicyApplyToUserOwnedObject -FeatureRolloutPolicyId <String>
+Get-MgBetaPolicyFeatureRolloutPolicyApplyToUserOwnedObject -FeatureRolloutPolicyId <String>
  -BodyParameter <IPathsGyxve3PoliciesFeaturerolloutpoliciesFeaturerolloutpolicyIdAppliestoMicrosoftGraphGetuserownedobjectsPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### GetViaIdentityExpanded
 ```
-Get-MgPolicyFeatureRolloutPolicyApplyToUserOwnedObject -InputObject <IIdentitySignInsIdentity>
+Get-MgBetaPolicyFeatureRolloutPolicyApplyToUserOwnedObject -InputObject <IIdentitySignInsIdentity>
  [-AdditionalProperties <Hashtable>] [-Type <String>] [-UserId <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgPolicyFeatureRolloutPolicyApplyToUserOwnedObject -InputObject <IIdentitySignInsIdentity>
+Get-MgBetaPolicyFeatureRolloutPolicyApplyToUserOwnedObject -InputObject <IIdentitySignInsIdentity>
  -BodyParameter <IPathsGyxve3PoliciesFeaturerolloutpoliciesFeaturerolloutpolicyIdAppliestoMicrosoftGraphGetuserownedobjectsPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -46,6 +46,20 @@ Retrieve a list of recently deleted application and group objects owned by the s
 This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -66,7 +80,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPathsGyxve3PoliciesFeaturerolloutpoliciesFeaturerolloutpolicyIdAppliestoMicrosoftGraphGetuserownedobjectsPostRequestbodyContentApplicationJsonSchema
@@ -97,7 +111,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IIdentitySignInsIdentity
@@ -177,11 +191,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-### Microsoft.Graph.PowerShell.Models.IPathsGyxve3PoliciesFeaturerolloutpoliciesFeaturerolloutpolicyIdAppliestoMicrosoftGraphGetuserownedobjectsPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsGyxve3PoliciesFeaturerolloutpoliciesFeaturerolloutpolicyIdAppliestoMicrosoftGraphGetuserownedobjectsPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryObject
 ## NOTES
 
 ALIASES
@@ -191,12 +205,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsGyxve3PoliciesFeaturerolloutpoliciesFeaturerolloutpolicyIdAppliestoMicrosoftGraphGetuserownedobjectsPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsGyxve3PoliciesFeaturerolloutpoliciesFeaturerolloutpolicyIdAppliestoMicrosoftGraphGetuserownedobjectsPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Type <String>]`: 
   - `[UserId <String>]`: 
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentitySignInsIdentity>`: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: The unique identifier of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
@@ -233,6 +247,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[IdentityUserFlowAttributeId <String>]`: The unique identifier of identityUserFlowAttribute
   - `[IdentityUserFlowId <String>]`: The unique identifier of identityUserFlow
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
+  - `[InvitationId <String>]`: The unique identifier of invitation
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   - `[MobilityManagementPolicyId <String>]`: The unique identifier of mobilityManagementPolicy

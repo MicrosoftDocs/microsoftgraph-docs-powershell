@@ -1,53 +1,46 @@
----
-external help file: Microsoft.Graph.Planner-help.xml
-Module Name: Microsoft.Graph.Planner
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/get-mgplannerroster
+﻿---
+external help file: Microsoft.Graph.Beta.Planner-help.xml
+Module Name: Microsoft.Graph.Beta.Planner
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerroster
 schema: 2.0.0
 ---
 
-# Get-MgPlannerRoster
+# Get-MgBetaPlannerRoster
 
 ## SYNOPSIS
-Read-only.
-Nullable.
-Returns a collection of the specified rosters
+Read the properties and relationships of a plannerRoster object.
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgPlannerRoster [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>]
- [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
- [<CommonParameters>]
+Get-MgBetaPlannerRoster [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgPlannerRoster -PlannerRosterId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaPlannerRoster -PlannerRosterId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgPlannerRoster -InputObject <IPlannerIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaPlannerRoster -InputObject <IPlannerIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Read-only.
-Nullable.
-Returns a collection of the specified rosters
+Read the properties and relationships of a plannerRoster object.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgPlannerRoster Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Planner
-Get-MgPlannerRoster -PlannerRosterId $plannerRosterId
+Import-Module Microsoft.Graph.Beta.Planner
+Get-MgBetaPlannerRoster -PlannerRosterId $plannerRosterId
 ```
-
-This example shows how to use the Get-MgPlannerRoster Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -114,7 +107,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IPlannerIdentity
@@ -238,10 +231,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPlannerIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerRoster
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerRoster
 ## NOTES
 
 ALIASES
@@ -251,7 +244,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
+`INPUTOBJECT <IPlannerIdentity>`: Identity Parameter
   - `[GroupId <String>]`: The unique identifier of group
   - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket
   - `[PlannerDeltaId <String>]`: The unique identifier of plannerDelta

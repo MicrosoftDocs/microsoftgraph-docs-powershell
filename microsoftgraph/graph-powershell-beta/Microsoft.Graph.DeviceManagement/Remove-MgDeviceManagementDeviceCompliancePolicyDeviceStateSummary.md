@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdevicecompliancepolicydevicestatesummary
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementdevicecompliancepolicydevicestatesummary
 schema: 2.0.0
 ---
 
-# Remove-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary
+# Remove-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStateSummary
 
 ## SYNOPSIS
 Delete navigation property deviceCompliancePolicyDeviceStateSummary for deviceManagement
@@ -13,7 +13,7 @@ Delete navigation property deviceCompliancePolicyDeviceStateSummary for deviceMa
 ## SYNTAX
 
 ```
-Remove-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary [-IfMatch <String>] [-PassThru] [-WhatIf]
+Remove-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStateSummary [-IfMatch <String>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -21,6 +21,20 @@ Remove-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary [-IfMatch <Str
 Delete navigation property deviceCompliancePolicyDeviceStateSummary for deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 

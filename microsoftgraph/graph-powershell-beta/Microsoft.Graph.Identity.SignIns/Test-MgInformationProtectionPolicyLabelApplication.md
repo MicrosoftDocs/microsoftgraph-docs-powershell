@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/test-mginformationprotectionpolicylabelapplication
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/test-mgbetainformationprotectionpolicylabelapplication
 schema: 2.0.0
 ---
 
-# Test-MgInformationProtectionPolicyLabelApplication
+# Test-MgBetaInformationProtectionPolicyLabelApplication
 
 ## SYNOPSIS
 Compute the information protection label that should be applied and return the set of actions that must be taken to correctly label the information.
@@ -16,14 +16,14 @@ Given contentInfo, which includes existing content metadata key/value pairs, and
 
 ### EvaluateExpanded (Default)
 ```
-Test-MgInformationProtectionPolicyLabelApplication [-AdditionalProperties <Hashtable>]
+Test-MgBetaInformationProtectionPolicyLabelApplication [-AdditionalProperties <Hashtable>]
  [-ContentInfo <IMicrosoftGraphContentInfo>] [-LabelingOptions <IMicrosoftGraphLabelingOptions>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### Evaluate
 ```
-Test-MgInformationProtectionPolicyLabelApplication
+Test-MgBetaInformationProtectionPolicyLabelApplication
  -BodyParameter <IPaths1Aushj1InformationprotectionPolicyLabelsMicrosoftGraphEvaluateapplicationPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -35,9 +35,9 @@ Given contentInfo, which includes existing content metadata key/value pairs, and
 
 ## EXAMPLES
 
-### Example 1: Using the Test-MgInformationProtectionPolicyLabelApplication Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
 	ContentInfo = @{
 		"@odata.type" = "#microsoft.graph.contentInfo"
@@ -97,11 +97,8 @@ $params = @{
 		)
 	}
 }
-Test-MgInformationProtectionPolicyLabelApplication -BodyParameter $params
+Test-MgBetaInformationProtectionPolicyLabelApplication -BodyParameter $params
 ```
-
-This example shows how to use the Test-MgInformationProtectionPolicyLabelApplication Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -122,7 +119,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths1Aushj1InformationprotectionPolicyLabelsMicrosoftGraphEvaluateapplicationPostRequestbodyContentApplicationJsonSchema
@@ -138,7 +135,7 @@ Accept wildcard characters: False
 
 ### -ContentInfo
 contentInfo
-To construct, please use Get-Help -Online and see NOTES section for CONTENTINFO properties and create a hash table.
+To construct, see NOTES section for CONTENTINFO properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphContentInfo
@@ -154,7 +151,7 @@ Accept wildcard characters: False
 
 ### -LabelingOptions
 labelingOptions
-To construct, please use Get-Help -Online and see NOTES section for LABELINGOPTIONS properties and create a hash table.
+To construct, see NOTES section for LABELINGOPTIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphLabelingOptions
@@ -204,10 +201,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1Aushj1InformationprotectionPolicyLabelsMicrosoftGraphEvaluateapplicationPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Aushj1InformationprotectionPolicyLabelsMicrosoftGraphEvaluateapplicationPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInformationProtectionAction
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInformationProtectionAction
 ## NOTES
 
 ALIASES
@@ -217,7 +214,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Aushj1InformationprotectionPolicyLabelsMicrosoftGraphEvaluateapplicationPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1Aushj1InformationprotectionPolicyLabelsMicrosoftGraphEvaluateapplicationPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ContentInfo <IMicrosoftGraphContentInfo>]`: contentInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -237,7 +234,7 @@ BODYPARAMETER `<IPaths1Aushj1InformationprotectionPolicyLabelsMicrosoftGraphEval
     - `[ExtendedProperties <IMicrosoftGraphKeyValuePair[]>]`: Extended properties will be parsed and returned in the standard MIP labeled metadata format as part of the label information.
     - `[LabelId <String>]`: The GUID of the label that should be applied to the information.
 
-CONTENTINFO `<IMicrosoftGraphContentInfo>`: contentInfo
+`CONTENTINFO <IMicrosoftGraphContentInfo>`: contentInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Format <String>]`: contentFormat
   - `[Identifier <String>]`: Identifier used for Azure Information Protection Analytics.
@@ -246,7 +243,7 @@ CONTENTINFO `<IMicrosoftGraphContentInfo>`: contentInfo
     - `[Value <String>]`: Value for this key-value pair
   - `[State <String>]`: contentState
 
-LABELINGOPTIONS `<IMicrosoftGraphLabelingOptions>`: labelingOptions
+`LABELINGOPTIONS <IMicrosoftGraphLabelingOptions>`: labelingOptions
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AssignmentMethod <String>]`: assignmentMethod
   - `[DowngradeJustification <IMicrosoftGraphDowngradeJustification>]`: downgradeJustification

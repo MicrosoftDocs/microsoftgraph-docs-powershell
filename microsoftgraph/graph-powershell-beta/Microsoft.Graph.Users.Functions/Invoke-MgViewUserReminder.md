@@ -1,33 +1,47 @@
----
-external help file: Microsoft.Graph.Users.Functions-help.xml
-Module Name: Microsoft.Graph.Users.Functions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/invoke-mgviewuserreminder
+﻿---
+external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
+Module Name: Microsoft.Graph.Beta.Users.Functions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetaviewuserreminder
 schema: 2.0.0
 ---
 
-# Invoke-MgViewUserReminder
+# Invoke-MgBetaViewUserReminder
 
 ## SYNOPSIS
 Invoke function reminderView
 
 ## SYNTAX
 
-### View1 (Default)
+### View (Default)
 ```
-Invoke-MgViewUserReminder -EndDateTime <String> -StartDateTime <String> -UserId <String> [-Count]
+Invoke-MgBetaViewUserReminder -EndDateTime <String> -StartDateTime <String> -UserId <String> [-Count]
  [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
 ```
 
-### ViewViaIdentity1
+### ViewViaIdentity
 ```
-Invoke-MgViewUserReminder -InputObject <IUsersFunctionsIdentity> [-Count] [-Filter <String>] [-Search <String>]
- [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
+Invoke-MgBetaViewUserReminder -InputObject <IUsersFunctionsIdentity> [-Count] [-Filter <String>]
+ [-Search <String>] [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke function reminderView
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -51,7 +65,7 @@ Usage: EndDateTime='{EndDateTime}'
 
 ```yaml
 Type: String
-Parameter Sets: View1
+Parameter Sets: View
 Aliases:
 
 Required: True
@@ -78,11 +92,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersFunctionsIdentity
-Parameter Sets: ViewViaIdentity1
+Parameter Sets: ViewViaIdentity
 Aliases:
 
 Required: True
@@ -112,7 +126,7 @@ Usage: StartDateTime='{StartDateTime}'
 
 ```yaml
 Type: String
-Parameter Sets: View1
+Parameter Sets: View
 Aliases:
 
 Required: True
@@ -142,7 +156,7 @@ The unique identifier of user
 
 ```yaml
 Type: String
-Parameter Sets: View1
+Parameter Sets: View
 Aliases:
 
 Required: True
@@ -172,10 +186,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersFunctionsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphReminder
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphReminder
 ## NOTES
 
 ALIASES
@@ -185,7 +199,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersFunctionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AppConsentRequestId <String>]`: The unique identifier of appConsentRequest
   - `[CalendarId <String>]`: The unique identifier of calendar
@@ -197,8 +211,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[DriveId <String>]`: The unique identifier of drive
   - `[DriveItemId <String>]`: The unique identifier of driveItem
-  - `[EndDateTime <String>]`: Usage: EndDateTime='{EndDateTime}'
-  - `[EndDateTime1 <String>]`: Usage: endDateTime='{endDateTime}'
+  - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
   - `[EventId <String>]`: The unique identifier of event
   - `[GroupId <String>]`: Usage: groupId='{groupId}'
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
@@ -209,15 +222,14 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
   - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
   - `[On <String>]`: Usage: on='{on}'
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
+  - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
   - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket
   - `[PlannerPlanId <String>]`: The unique identifier of plannerPlan
   - `[Q <String>]`: Usage: q='{q}'
   - `[RoomList <String>]`: Usage: RoomList='{RoomList}'
   - `[ServicePlanId <String>]`: Usage: servicePlanId='{servicePlanId}'
-  - `[SessionKey <String>]`: Usage: sessionKey='{sessionKey}'
   - `[Skip <Int32?>]`: Usage: skip={skip}
-  - `[StartDateTime <String>]`: Usage: StartDateTime='{StartDateTime}'
-  - `[StartDateTime1 <String>]`: Usage: startDateTime='{startDateTime}'
+  - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
   - `[TimeZoneStandard <String>]`: Usage: TimeZoneStandard='{TimeZoneStandard}'
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
   - `[Token <String>]`: Usage: token='{token}'

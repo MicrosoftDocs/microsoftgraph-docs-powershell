@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Applications-help.xml
-Module Name: Microsoft.Graph.Applications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgserviceprincipalsynchronizationaccesstoken
+﻿---
+external help file: Microsoft.Graph.Beta.Applications-help.xml
+Module Name: Microsoft.Graph.Beta.Applications
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalsynchronizationaccesstoken
 schema: 2.0.0
 ---
 
-# Get-MgServicePrincipalSynchronizationAccessToken
+# Get-MgBetaServicePrincipalSynchronizationAccessToken
 
 ## SYNOPSIS
 Acquire an OAuth Access token to authorize the Azure AD provisioning service to provision users into an application.
@@ -14,28 +14,28 @@ Acquire an OAuth Access token to authorize the Azure AD provisioning service to 
 
 ### AcquireExpanded (Default)
 ```
-Get-MgServicePrincipalSynchronizationAccessToken -ServicePrincipalId <String>
+Get-MgBetaServicePrincipalSynchronizationAccessToken -ServicePrincipalId <String>
  [-AdditionalProperties <Hashtable>] [-Credentials <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Acquire
 ```
-Get-MgServicePrincipalSynchronizationAccessToken -ServicePrincipalId <String>
+Get-MgBetaServicePrincipalSynchronizationAccessToken -ServicePrincipalId <String>
  -BodyParameter <IPathsNrfoirServiceprincipalsServiceprincipalIdSynchronizationMicrosoftGraphAcquireaccesstokenPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### AcquireViaIdentityExpanded
 ```
-Get-MgServicePrincipalSynchronizationAccessToken -InputObject <IApplicationsIdentity>
+Get-MgBetaServicePrincipalSynchronizationAccessToken -InputObject <IApplicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-Credentials <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### AcquireViaIdentity
 ```
-Get-MgServicePrincipalSynchronizationAccessToken -InputObject <IApplicationsIdentity>
+Get-MgBetaServicePrincipalSynchronizationAccessToken -InputObject <IApplicationsIdentity>
  -BodyParameter <IPathsNrfoirServiceprincipalsServiceprincipalIdSynchronizationMicrosoftGraphAcquireaccesstokenPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -44,6 +44,20 @@ Get-MgServicePrincipalSynchronizationAccessToken -InputObject <IApplicationsIden
 Acquire an OAuth Access token to authorize the Azure AD provisioning service to provision users into an application.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -64,7 +78,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPathsNrfoirServiceprincipalsServiceprincipalIdSynchronizationMicrosoftGraphAcquireaccesstokenPostRequestbodyContentApplicationJsonSchema
@@ -80,7 +94,7 @@ Accept wildcard characters: False
 
 ### -Credentials
 .
-To construct, please use Get-Help -Online and see NOTES section for CREDENTIALS properties and create a hash table.
+To construct, see NOTES section for CREDENTIALS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]
@@ -96,7 +110,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IApplicationsIdentity
@@ -176,8 +190,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-### Microsoft.Graph.PowerShell.Models.IPathsNrfoirServiceprincipalsServiceprincipalIdSynchronizationMicrosoftGraphAcquireaccesstokenPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsNrfoirServiceprincipalsServiceprincipalIdSynchronizationMicrosoftGraphAcquireaccesstokenPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### System.Boolean
@@ -190,17 +204,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsNrfoirServiceprincipalsServiceprincipalIdSynchronizationMicrosoftGraphAcquireaccesstokenPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsNrfoirServiceprincipalsServiceprincipalIdSynchronizationMicrosoftGraphAcquireaccesstokenPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Credentials <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>]`: 
     - `[Key <String>]`: synchronizationSecret
     - `[Value <String>]`: The value of the secret.
 
-CREDENTIALS <IMicrosoftGraphSynchronizationSecretKeyStringValuePair\[]>: .
+`CREDENTIALS <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>`: .
   - `[Key <String>]`: synchronizationSecret
   - `[Value <String>]`: The value of the secret.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+`INPUTOBJECT <IApplicationsIdentity>`: Identity Parameter
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
   - `[ApplicationId <String>]`: The unique identifier of application

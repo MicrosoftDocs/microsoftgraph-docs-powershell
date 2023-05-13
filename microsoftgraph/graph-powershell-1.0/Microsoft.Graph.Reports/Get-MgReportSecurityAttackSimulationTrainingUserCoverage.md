@@ -1,7 +1,7 @@
----
+﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgreportsecurityattacksimulationtrainingusercoverage
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsecurityattacksimulationtrainingusercoverage
 schema: 2.0.0
 ---
 
@@ -21,6 +21,20 @@ Get-MgReportSecurityAttackSimulationTrainingUserCoverage [-Count] [-Filter <Stri
 Invoke function getAttackSimulationTrainingUserCoverage
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 

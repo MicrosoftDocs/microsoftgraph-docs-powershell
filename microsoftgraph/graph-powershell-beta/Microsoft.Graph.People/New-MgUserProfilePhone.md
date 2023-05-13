@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.People-help.xml
-Module Name: Microsoft.Graph.People
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.people/new-mguserprofilephone
+﻿---
+external help file: Microsoft.Graph.Beta.People-help.xml
+Module Name: Microsoft.Graph.Beta.People
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofilephone
 schema: 2.0.0
 ---
 
-# New-MgUserProfilePhone
+# New-MgBetaUserProfilePhone
 
 ## SYNOPSIS
 Use this API to create a new itemPhone object in a user's profile.
@@ -14,7 +14,7 @@ Use this API to create a new itemPhone object in a user's profile.
 
 ### CreateExpanded (Default)
 ```
-New-MgUserProfilePhone -UserId <String> [-AdditionalProperties <Hashtable>] [-AllowedAudiences <String>]
+New-MgBetaUserProfilePhone -UserId <String> [-AdditionalProperties <Hashtable>] [-AllowedAudiences <String>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>]
  [-Inference <IMicrosoftGraphInferenceData>] [-IsSearchable] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-LastModifiedDateTime <DateTime>] [-Number <String>] [-Source <IMicrosoftGraphPersonDataSources>]
@@ -23,13 +23,13 @@ New-MgUserProfilePhone -UserId <String> [-AdditionalProperties <Hashtable>] [-Al
 
 ### Create
 ```
-New-MgUserProfilePhone -UserId <String> -BodyParameter <IMicrosoftGraphItemPhone> [-WhatIf] [-Confirm]
+New-MgBetaUserProfilePhone -UserId <String> -BodyParameter <IMicrosoftGraphItemPhone> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgUserProfilePhone -InputObject <IPeopleIdentity> [-AdditionalProperties <Hashtable>]
+New-MgBetaUserProfilePhone -InputObject <IPeopleIdentity> [-AdditionalProperties <Hashtable>]
  [-AllowedAudiences <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
  [-DisplayName <String>] [-Id <String>] [-Inference <IMicrosoftGraphInferenceData>] [-IsSearchable]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>] [-Number <String>]
@@ -38,7 +38,7 @@ New-MgUserProfilePhone -InputObject <IPeopleIdentity> [-AdditionalProperties <Ha
 
 ### CreateViaIdentity
 ```
-New-MgUserProfilePhone -InputObject <IPeopleIdentity> -BodyParameter <IMicrosoftGraphItemPhone> [-WhatIf]
+New-MgBetaUserProfilePhone -InputObject <IPeopleIdentity> -BodyParameter <IMicrosoftGraphItemPhone> [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -47,19 +47,16 @@ Use this API to create a new itemPhone object in a user's profile.
 
 ## EXAMPLES
 
-### Example 1: Using the New-MgUserProfilePhone Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.People
+Import-Module Microsoft.Graph.Beta.People
 $params = @{
 	DisplayName = "Car Phone"
 	Number = "+7 499 342 22 13"
 }
 # A UPN can also be used as -UserId.
-New-MgUserProfilePhone -UserId $userId -BodyParameter $params
+New-MgBetaUserProfilePhone -UserId $userId -BodyParameter $params
 ```
-
-This example shows how to use the New-MgUserProfilePhone Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -95,7 +92,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 itemPhone
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphItemPhone
@@ -111,7 +108,7 @@ Accept wildcard characters: False
 
 ### -CreatedBy
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
+To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet
@@ -156,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -173,7 +170,7 @@ Accept wildcard characters: False
 
 ### -Inference
 inferenceData
-To construct, please use Get-Help -Online and see NOTES section for INFERENCE properties and create a hash table.
+To construct, see NOTES section for INFERENCE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphInferenceData
@@ -189,7 +186,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IPeopleIdentity
@@ -220,7 +217,7 @@ Accept wildcard characters: False
 
 ### -LastModifiedBy
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBY properties and create a hash table.
+To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet
@@ -266,7 +263,7 @@ Accept wildcard characters: False
 
 ### -Source
 personDataSources
-To construct, please use Get-Help -Online and see NOTES section for SOURCE properties and create a hash table.
+To construct, see NOTES section for SOURCE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPersonDataSources
@@ -346,11 +343,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemPhone
-### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItemPhone
+### Microsoft.Graph.Beta.PowerShell.Models.IPeopleIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemPhone
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItemPhone
 ## NOTES
 
 ALIASES
@@ -360,7 +357,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphItemPhone>`: itemPhone
+`BODYPARAMETER <IMicrosoftGraphItemPhone>`: itemPhone
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowedAudiences <String>]`: allowedAudiences
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -382,12 +379,12 @@ BODYPARAMETER `<IMicrosoftGraphItemPhone>`: itemPhone
   - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Type <String[]>]`: 
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DisplayName <String>]`: Friendly name the user has assigned this phone number.
   - `[Number <String>]`: Phone number provided by the user.
   - `[Type <String>]`: phoneType
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+`CREATEDBY <IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -396,12 +393,12 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-INFERENCE `<IMicrosoftGraphInferenceData>`: inferenceData
+`INFERENCE <IMicrosoftGraphInferenceData>`: inferenceData
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ConfidenceScore <Double?>]`: Confidence score reflecting the accuracy of the data inferred about the user.
   - `[UserHasVerifiedAccuracy <Boolean?>]`: Records if the user has confirmed this inference as being True or False.
 
-INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
+`INPUTOBJECT <IPeopleIdentity>`: Identity Parameter
   - `[ActivityStatisticsId <String>]`: The unique identifier of activityStatistics
   - `[EducationalActivityId <String>]`: The unique identifier of educationalActivity
   - `[ItemAddressId <String>]`: The unique identifier of itemAddress
@@ -419,16 +416,13 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
   - `[PersonNameId <String>]`: The unique identifier of personName
   - `[PersonWebsiteId <String>]`: The unique identifier of personWebsite
   - `[ProjectParticipationId <String>]`: The unique identifier of projectParticipation
-  - `[SharedInsightId <String>]`: The unique identifier of sharedInsight
   - `[SkillProficiencyId <String>]`: The unique identifier of skillProficiency
-  - `[TrendingId <String>]`: The unique identifier of trending
-  - `[UsedInsightId <String>]`: The unique identifier of usedInsight
   - `[UserAccountInformationId <String>]`: The unique identifier of userAccountInformation
   - `[UserId <String>]`: The unique identifier of user
   - `[WebAccountId <String>]`: The unique identifier of webAccount
   - `[WorkPositionId <String>]`: The unique identifier of workPosition
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+`LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -437,7 +431,7 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
+`SOURCE <IMicrosoftGraphPersonDataSources>`: personDataSources
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Type <String[]>]`: 
 

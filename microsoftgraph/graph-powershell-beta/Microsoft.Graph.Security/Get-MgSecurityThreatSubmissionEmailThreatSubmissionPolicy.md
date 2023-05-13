@@ -1,58 +1,52 @@
----
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/get-mgsecuritythreatsubmissionemailthreatsubmissionpolicy
+﻿---
+external help file: Microsoft.Graph.Beta.Security-help.xml
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatsubmissionemailthreatsubmissionpolicy
 schema: 2.0.0
 ---
 
-# Get-MgSecurityThreatSubmissionEmailThreatSubmissionPolicy
+# Get-MgBetaSecurityThreatSubmissionEmailThreatSubmissionPolicy
 
 ## SYNOPSIS
-Get emailThreatSubmissionPolicies from security
+Read the properties and relationships of an emailThreatSubmissionPolicy object.
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgSecurityThreatSubmissionEmailThreatSubmissionPolicy [-ExpandProperty <String[]>] [-Property <String[]>]
- [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
- [-All] [-CountVariable <String>] [<CommonParameters>]
+Get-MgBetaSecurityThreatSubmissionEmailThreatSubmissionPolicy [-ExpandProperty <String[]>]
+ [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgSecurityThreatSubmissionEmailThreatSubmissionPolicy -EmailThreatSubmissionPolicyId <String>
+Get-MgBetaSecurityThreatSubmissionEmailThreatSubmissionPolicy -EmailThreatSubmissionPolicyId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgSecurityThreatSubmissionEmailThreatSubmissionPolicy -InputObject <ISecurityIdentity>
+Get-MgBetaSecurityThreatSubmissionEmailThreatSubmissionPolicy -InputObject <ISecurityIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get emailThreatSubmissionPolicies from security
+Read the properties and relationships of an emailThreatSubmissionPolicy object.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgSecurityThreatSubmissionEmailThreatSubmissionPolicy Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Security
-Get-MgSecurityThreatSubmissionEmailThreatSubmissionPolicy -EmailThreatSubmissionPolicyId $emailThreatSubmissionPolicyId
+Import-Module Microsoft.Graph.Beta.Security
+Get-MgBetaSecurityThreatSubmissionEmailThreatSubmissionPolicy -EmailThreatSubmissionPolicyId $emailThreatSubmissionPolicyId
 ```
 
-This example shows how to use the Get-MgSecurityThreatSubmissionEmailThreatSubmissionPolicy Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Get-MgSecurityThreatSubmissionEmailThreatSubmissionPolicy Cmdlet
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Security
-Get-MgSecurityThreatSubmissionEmailThreatSubmissionPolicy
+Import-Module Microsoft.Graph.Beta.Security
+Get-MgBetaSecurityThreatSubmissionEmailThreatSubmissionPolicy
 ```
-
-This example shows how to use the Get-MgSecurityThreatSubmissionEmailThreatSubmissionPolicy Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -134,7 +128,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ISecurityIdentity
@@ -243,10 +237,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEmailThreatSubmissionPolicy
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityEmailThreatSubmissionPolicy
 ## NOTES
 
 ALIASES
@@ -256,7 +250,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+`INPUTOBJECT <ISecurityIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
   - `[ArticleId <String>]`: The unique identifier of article
   - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator

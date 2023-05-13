@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Education-help.xml
-Module Name: Microsoft.Graph.Education
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/get-mgeducationuserassignmentcategorybyref
+﻿---
+external help file: Microsoft.Graph.Beta.Education-help.xml
+Module Name: Microsoft.Graph.Beta.Education
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuserassignmentcategorybyref
 schema: 2.0.0
 ---
 
-# Get-MgEducationUserAssignmentCategoryByRef
+# Get-MgBetaEducationUserAssignmentCategoryByRef
 
 ## SYNOPSIS
 List all the categories associated with an assignment.
@@ -14,7 +14,7 @@ Only teachers, students, and applications with application permissions can perfo
 ## SYNTAX
 
 ```
-Get-MgEducationUserAssignmentCategoryByRef -EducationAssignmentId <String> -EducationUserId <String>
+Get-MgBetaEducationUserAssignmentCategoryByRef -EducationAssignmentId <String> -EducationUserId <String>
  [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
  [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
@@ -24,6 +24,20 @@ List all the categories associated with an assignment.
 Only teachers, students, and applications with application permissions can perform this operation.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 

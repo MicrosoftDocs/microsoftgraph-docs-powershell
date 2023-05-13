@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.Governance-help.xml
-Module Name: Microsoft.Graph.Identity.Governance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/remove-mgidentitygovernancelifecycleworkflowdeleteditem
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.Governance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaidentitygovernancelifecycleworkflowdeleteditem
 schema: 2.0.0
 ---
 
-# Remove-MgIdentityGovernanceLifecycleWorkflowDeletedItem
+# Remove-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItem
 
 ## SYNOPSIS
 Delete navigation property deletedItems for identityGovernance
@@ -13,14 +13,28 @@ Delete navigation property deletedItems for identityGovernance
 ## SYNTAX
 
 ```
-Remove-MgIdentityGovernanceLifecycleWorkflowDeletedItem [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Remove-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItem [-IfMatch <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Delete navigation property deletedItems for identityGovernance
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 

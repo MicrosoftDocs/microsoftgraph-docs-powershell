@@ -1,58 +1,52 @@
----
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/get-mgsecurityalert
+﻿---
+external help file: Microsoft.Graph.Beta.Security-help.xml
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityalert
 schema: 2.0.0
-ms.prod: security
 ---
 
-# Get-MgSecurityAlert
+# Get-MgBetaSecurityAlert
 
 ## SYNOPSIS
-Notifications for suspicious or potential security issues in a customer's tenant.
+Retrieve the properties and relationships of an alert object.
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgSecurityAlert [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>]
- [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
+Get-MgBetaSecurityAlert [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [<CommonParameters>]
+```
+
+### Get
+```
+Get-MgBetaSecurityAlert -AlertId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
-### Get1
+### GetViaIdentity
 ```
-Get-MgSecurityAlert -AlertId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
-```
-
-### GetViaIdentity1
-```
-Get-MgSecurityAlert -InputObject <ISecurityIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaSecurityAlert -InputObject <ISecurityIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Notifications for suspicious or potential security issues in a customer's tenant.
+Retrieve the properties and relationships of an alert object.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgSecurityAlert Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Security
-Get-MgSecurityAlert -AlertId $alertId
+Import-Module Microsoft.Graph.Beta.Security
+Get-MgBetaSecurityAlert -AlertId $alertId
 ```
 
-This example shows how to use the Get-MgSecurityAlert Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Get-MgSecurityAlert Cmdlet
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Security
-Get-MgSecurityAlert
+Import-Module Microsoft.Graph.Beta.Security
+Get-MgBetaSecurityAlert
 ```
-
-This example shows how to use the Get-MgSecurityAlert Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -61,7 +55,7 @@ The unique identifier of alert
 
 ```yaml
 Type: String
-Parameter Sets: Get1
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -134,11 +128,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ISecurityIdentity
-Parameter Sets: GetViaIdentity1
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
@@ -243,10 +237,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAlert
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAlert
 ## NOTES
 
 ALIASES
@@ -256,7 +250,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+`INPUTOBJECT <ISecurityIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
   - `[ArticleId <String>]`: The unique identifier of article
   - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator

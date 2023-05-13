@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Administration
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementvirtualendpointorganizationsetting
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/remove-mgbetadevicemanagementvirtualendpointorganizationsetting
 schema: 2.0.0
 ---
 
-# Remove-MgDeviceManagementVirtualEndpointOrganizationSetting
+# Remove-MgBetaDeviceManagementVirtualEndpointOrganizationSetting
 
 ## SYNOPSIS
 Delete navigation property organizationSettings for deviceManagement
@@ -13,7 +13,7 @@ Delete navigation property organizationSettings for deviceManagement
 ## SYNTAX
 
 ```
-Remove-MgDeviceManagementVirtualEndpointOrganizationSetting [-IfMatch <String>] [-PassThru] [-WhatIf]
+Remove-MgBetaDeviceManagementVirtualEndpointOrganizationSetting [-IfMatch <String>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -21,6 +21,20 @@ Remove-MgDeviceManagementVirtualEndpointOrganizationSetting [-IfMatch <String>] 
 Delete navigation property organizationSettings for deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 

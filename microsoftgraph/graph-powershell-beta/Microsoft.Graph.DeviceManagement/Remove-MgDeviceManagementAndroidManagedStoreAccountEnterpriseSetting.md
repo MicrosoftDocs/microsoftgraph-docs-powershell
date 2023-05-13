@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementandroidmanagedstoreaccountenterprisesetting
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesetting
 schema: 2.0.0
 ---
 
-# Remove-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSetting
+# Remove-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSetting
 
 ## SYNOPSIS
 Delete navigation property androidManagedStoreAccountEnterpriseSettings for deviceManagement
@@ -13,14 +13,28 @@ Delete navigation property androidManagedStoreAccountEnterpriseSettings for devi
 ## SYNTAX
 
 ```
-Remove-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSetting [-IfMatch <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Remove-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSetting [-IfMatch <String>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Delete navigation property androidManagedStoreAccountEnterpriseSettings for deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 

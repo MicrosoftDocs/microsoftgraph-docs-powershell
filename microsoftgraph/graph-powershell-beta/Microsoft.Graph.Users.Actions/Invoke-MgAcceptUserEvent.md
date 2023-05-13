@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Users.Actions-help.xml
-Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgacceptuserevent
+﻿---
+external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.Users.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaacceptuserevent
 schema: 2.0.0
 ---
 
-# Invoke-MgAcceptUserEvent
+# Invoke-MgBetaAcceptUserEvent
 
 ## SYNOPSIS
 Accept the specified event in a user calendar.
@@ -14,26 +14,26 @@ Accept the specified event in a user calendar.
 
 ### AcceptExpanded (Default)
 ```
-Invoke-MgAcceptUserEvent -EventId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
+Invoke-MgBetaAcceptUserEvent -EventId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
  [-Comment <String>] [-SendResponse] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Accept
 ```
-Invoke-MgAcceptUserEvent -EventId <String> -UserId <String>
+Invoke-MgBetaAcceptUserEvent -EventId <String> -UserId <String>
  -BodyParameter <IPaths1SpvidmUsersUserIdEventsEventIdMicrosoftGraphAcceptPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### AcceptViaIdentityExpanded
 ```
-Invoke-MgAcceptUserEvent -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
+Invoke-MgBetaAcceptUserEvent -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
  [-Comment <String>] [-SendResponse] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### AcceptViaIdentity
 ```
-Invoke-MgAcceptUserEvent -InputObject <IUsersActionsIdentity>
+Invoke-MgBetaAcceptUserEvent -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths1SpvidmUsersUserIdEventsEventIdMicrosoftGraphAcceptPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -43,19 +43,16 @@ Accept the specified event in a user calendar.
 
 ## EXAMPLES
 
-### Example 1: Using the Invoke-MgAcceptUserEvent Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Users.Actions
+Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
 	Comment = "comment-value"
 	SendResponse = $true
 }
 # A UPN can also be used as -UserId.
-Invoke-MgAcceptUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
+Invoke-MgBetaAcceptUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
 ```
-
-This example shows how to use the Invoke-MgAcceptUserEvent Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -76,7 +73,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths1SpvidmUsersUserIdEventsEventIdMicrosoftGraphAcceptPostRequestbodyContentApplicationJsonSchema
@@ -122,7 +119,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersActionsIdentity
@@ -217,8 +214,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1SpvidmUsersUserIdEventsEventIdMicrosoftGraphAcceptPostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1SpvidmUsersUserIdEventsEventIdMicrosoftGraphAcceptPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
 ## OUTPUTS
 
 ### System.Boolean
@@ -231,12 +228,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1SpvidmUsersUserIdEventsEventIdMicrosoftGraphAcceptPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1SpvidmUsersUserIdEventsEventIdMicrosoftGraphAcceptPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Comment <String>]`: 
   - `[SendResponse <Boolean?>]`: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
@@ -270,7 +267,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription

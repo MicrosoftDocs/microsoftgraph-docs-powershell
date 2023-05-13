@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Applications-help.xml
-Module Name: Microsoft.Graph.Applications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/set-mgserviceprincipalsynchronizationsecret
+﻿---
+external help file: Microsoft.Graph.Beta.Applications-help.xml
+Module Name: Microsoft.Graph.Beta.Applications
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaserviceprincipalsynchronizationsecret
 schema: 2.0.0
 ---
 
-# Set-MgServicePrincipalSynchronizationSecret
+# Set-MgBetaServicePrincipalSynchronizationSecret
 
 ## SYNOPSIS
 Update property secrets value.
@@ -14,15 +14,15 @@ Update property secrets value.
 
 ### Set (Default)
 ```
-Set-MgServicePrincipalSynchronizationSecret -ServicePrincipalId <String>
- -BodyParameter <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]> [-PassThru] [-WhatIf] [-Confirm]
+Set-MgBetaServicePrincipalSynchronizationSecret -ServicePrincipalId <String>
+ -BodyParameter <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
-Set-MgServicePrincipalSynchronizationSecret -InputObject <IApplicationsIdentity>
- -BodyParameter <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]> [-PassThru] [-WhatIf] [-Confirm]
+Set-MgBetaServicePrincipalSynchronizationSecret -InputObject <IApplicationsIdentity>
+ -BodyParameter <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -31,11 +31,21 @@ Update property secrets value.
 
 ## EXAMPLES
 
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
 ## PARAMETERS
 
 ### -BodyParameter
-.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+Array of microsoft.graph.synchronizationSecretKeyStringValuePair
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]
@@ -51,7 +61,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IApplicationsIdentity
@@ -62,21 +72,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -131,11 +126,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]
+### Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSynchronizationSecretKeyStringValuePair
 ## NOTES
 
 ALIASES
@@ -145,11 +140,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphSynchronizationSecretKeyStringValuePair\[]>: .
+`BODYPARAMETER <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>`: Array of microsoft.graph.synchronizationSecretKeyStringValuePair
   - `[Key <String>]`: synchronizationSecret
   - `[Value <String>]`: The value of the secret.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+`INPUTOBJECT <IApplicationsIdentity>`: Identity Parameter
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
   - `[ApplicationId <String>]`: The unique identifier of application

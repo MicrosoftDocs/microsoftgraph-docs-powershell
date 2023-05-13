@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementwindowinformationprotectionnetworklearningsummary
@@ -12,14 +12,14 @@ Delete navigation property windowsInformationProtectionNetworkLearningSummaries 
 
 ## SYNTAX
 
-### Delete (Default)
+### Delete1 (Default)
 ```
 Remove-MgDeviceManagementWindowInformationProtectionNetworkLearningSummary
  -WindowsInformationProtectionNetworkLearningSummaryId <String> [-IfMatch <String>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity
+### DeleteViaIdentity1
 ```
 Remove-MgDeviceManagementWindowInformationProtectionNetworkLearningSummary
  -InputObject <IDeviceManagementIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
@@ -54,7 +54,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IDeviceManagementIdentity
-Parameter Sets: DeleteViaIdentity
+Parameter Sets: DeleteViaIdentity1
 Aliases:
 
 Required: True
@@ -84,7 +84,7 @@ The unique identifier of windowsInformationProtectionNetworkLearningSummary
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Delete1
 Aliases:
 
 Required: True
@@ -277,5 +277,8 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS

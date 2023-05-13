@@ -1,59 +1,59 @@
----
-external help file: Microsoft.Graph.People-help.xml
-Module Name: Microsoft.Graph.People
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.people/update-mguserprofileeducationalactivity
+﻿---
+external help file: Microsoft.Graph.Beta.People-help.xml
+Module Name: Microsoft.Graph.Beta.People
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileeducationalactivity
 schema: 2.0.0
 ---
 
-# Update-MgUserProfileEducationalActivity
+# Update-MgBetaUserProfileEducationalActivity
 
 ## SYNOPSIS
-Update the navigation property educationalActivities in users
+Update the properties of an educationalActivity object within a user's profile.
 
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
-Update-MgUserProfileEducationalActivity -EducationalActivityId <String> -UserId <String>
+Update-MgBetaUserProfileEducationalActivity -EducationalActivityId <String> -UserId <String>
  [-AdditionalProperties <Hashtable>] [-AllowedAudiences <String>] [-CompletionMonthYear <DateTime>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-EndMonthYear <DateTime>]
  [-Id <String>] [-Inference <IMicrosoftGraphInferenceData>] [-Institution <IMicrosoftGraphInstitutionData>]
  [-IsSearchable] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-Program <IMicrosoftGraphEducationalActivityDetail>] [-Source <IMicrosoftGraphPersonDataSources>]
- [-StartMonthYear <DateTime>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-StartMonthYear <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgUserProfileEducationalActivity -EducationalActivityId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphEducationalActivity> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaUserProfileEducationalActivity -EducationalActivityId <String> -UserId <String>
+ -BodyParameter <IMicrosoftGraphEducationalActivity> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgUserProfileEducationalActivity -InputObject <IPeopleIdentity> [-AdditionalProperties <Hashtable>]
+Update-MgBetaUserProfileEducationalActivity -InputObject <IPeopleIdentity> [-AdditionalProperties <Hashtable>]
  [-AllowedAudiences <String>] [-CompletionMonthYear <DateTime>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-CreatedDateTime <DateTime>] [-EndMonthYear <DateTime>] [-Id <String>]
  [-Inference <IMicrosoftGraphInferenceData>] [-Institution <IMicrosoftGraphInstitutionData>] [-IsSearchable]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-Program <IMicrosoftGraphEducationalActivityDetail>] [-Source <IMicrosoftGraphPersonDataSources>]
- [-StartMonthYear <DateTime>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-StartMonthYear <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgUserProfileEducationalActivity -InputObject <IPeopleIdentity>
- -BodyParameter <IMicrosoftGraphEducationalActivity> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaUserProfileEducationalActivity -InputObject <IPeopleIdentity>
+ -BodyParameter <IMicrosoftGraphEducationalActivity> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property educationalActivities in users
+Update the properties of an educationalActivity object within a user's profile.
 
 ## EXAMPLES
 
-### Example 1: Using the Update-MgUserProfileEducationalActivity Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.People
+Import-Module Microsoft.Graph.Beta.People
 $params = @{
 	Institution = @{
 		Location = @{
@@ -68,11 +68,8 @@ $params = @{
 	}
 }
 # A UPN can also be used as -UserId.
-Update-MgUserProfileEducationalActivity -UserId $userId -EducationalActivityId $educationalActivityId -BodyParameter $params
+Update-MgBetaUserProfileEducationalActivity -UserId $userId -EducationalActivityId $educationalActivityId -BodyParameter $params
 ```
-
-This example shows how to use the Update-MgUserProfileEducationalActivity Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -108,7 +105,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 educationalActivity
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEducationalActivity
@@ -139,7 +136,7 @@ Accept wildcard characters: False
 
 ### -CreatedBy
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
+To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet
@@ -199,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -216,7 +213,7 @@ Accept wildcard characters: False
 
 ### -Inference
 inferenceData
-To construct, please use Get-Help -Online and see NOTES section for INFERENCE properties and create a hash table.
+To construct, see NOTES section for INFERENCE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphInferenceData
@@ -232,7 +229,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IPeopleIdentity
@@ -248,7 +245,7 @@ Accept wildcard characters: False
 
 ### -Institution
 institutionData
-To construct, please use Get-Help -Online and see NOTES section for INSTITUTION properties and create a hash table.
+To construct, see NOTES section for INSTITUTION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphInstitutionData
@@ -279,7 +276,7 @@ Accept wildcard characters: False
 
 ### -LastModifiedBy
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBY properties and create a hash table.
+To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet
@@ -308,24 +305,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Program
 educationalActivityDetail
-To construct, please use Get-Help -Online and see NOTES section for PROGRAM properties and create a hash table.
+To construct, see NOTES section for PROGRAM properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEducationalActivityDetail
@@ -341,7 +323,7 @@ Accept wildcard characters: False
 
 ### -Source
 personDataSources
-To construct, please use Get-Help -Online and see NOTES section for SOURCE properties and create a hash table.
+To construct, see NOTES section for SOURCE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPersonDataSources
@@ -421,11 +403,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationalActivity
-### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationalActivity
+### Microsoft.Graph.Beta.PowerShell.Models.IPeopleIdentity
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationalActivity
 ## NOTES
 
 ALIASES
@@ -435,7 +417,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphEducationalActivity>`: educationalActivity
+`BODYPARAMETER <IMicrosoftGraphEducationalActivity>`: educationalActivity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowedAudiences <String>]`: allowedAudiences
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -457,14 +439,14 @@ BODYPARAMETER `<IMicrosoftGraphEducationalActivity>`: educationalActivity
   - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Type <String[]>]`: 
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[CompletionMonthYear <DateTime?>]`: The month and year the user graduated or completed the activity.
   - `[EndMonthYear <DateTime?>]`: The month and year the user completed the educational activity referenced.
   - `[Institution <IMicrosoftGraphInstitutionData>]`: institutionData
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Description <String>]`: Short description of the institution the user studied at.
     - `[DisplayName <String>]`: Name of the institution the user studied at.
-    - `[Location <IMicrosoftGraphPhysicalAddress1>]`: physicalAddress
+    - `[Location <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[City <String>]`: The city.
       - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
@@ -487,7 +469,7 @@ BODYPARAMETER `<IMicrosoftGraphEducationalActivity>`: educationalActivity
     - `[WebUrl <String>]`: Link to the degree or program page.
   - `[StartMonthYear <DateTime?>]`: The month and year the user commenced the activity referenced.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+`CREATEDBY <IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -496,12 +478,12 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-INFERENCE `<IMicrosoftGraphInferenceData>`: inferenceData
+`INFERENCE <IMicrosoftGraphInferenceData>`: inferenceData
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ConfidenceScore <Double?>]`: Confidence score reflecting the accuracy of the data inferred about the user.
   - `[UserHasVerifiedAccuracy <Boolean?>]`: Records if the user has confirmed this inference as being True or False.
 
-INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
+`INPUTOBJECT <IPeopleIdentity>`: Identity Parameter
   - `[ActivityStatisticsId <String>]`: The unique identifier of activityStatistics
   - `[EducationalActivityId <String>]`: The unique identifier of educationalActivity
   - `[ItemAddressId <String>]`: The unique identifier of itemAddress
@@ -519,20 +501,17 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
   - `[PersonNameId <String>]`: The unique identifier of personName
   - `[PersonWebsiteId <String>]`: The unique identifier of personWebsite
   - `[ProjectParticipationId <String>]`: The unique identifier of projectParticipation
-  - `[SharedInsightId <String>]`: The unique identifier of sharedInsight
   - `[SkillProficiencyId <String>]`: The unique identifier of skillProficiency
-  - `[TrendingId <String>]`: The unique identifier of trending
-  - `[UsedInsightId <String>]`: The unique identifier of usedInsight
   - `[UserAccountInformationId <String>]`: The unique identifier of userAccountInformation
   - `[UserId <String>]`: The unique identifier of user
   - `[WebAccountId <String>]`: The unique identifier of webAccount
   - `[WorkPositionId <String>]`: The unique identifier of workPosition
 
-INSTITUTION `<IMicrosoftGraphInstitutionData>`: institutionData
+`INSTITUTION <IMicrosoftGraphInstitutionData>`: institutionData
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Description <String>]`: Short description of the institution the user studied at.
   - `[DisplayName <String>]`: Name of the institution the user studied at.
-  - `[Location <IMicrosoftGraphPhysicalAddress1>]`: physicalAddress
+  - `[Location <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[City <String>]`: The city.
     - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
@@ -543,7 +522,7 @@ INSTITUTION `<IMicrosoftGraphInstitutionData>`: institutionData
     - `[Type <String>]`: physicalAddressType
   - `[WebUrl <String>]`: Link to the institution or department homepage.
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+`LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -552,7 +531,7 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-PROGRAM `<IMicrosoftGraphEducationalActivityDetail>`: educationalActivityDetail
+`PROGRAM <IMicrosoftGraphEducationalActivityDetail>`: educationalActivityDetail
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Abbreviation <String>]`: Shortened name of the degree or program (example: PhD, MBA)
   - `[Activities <String[]>]`: Extracurricular activities undertaken alongside the program.
@@ -564,10 +543,8 @@ PROGRAM `<IMicrosoftGraphEducationalActivityDetail>`: educationalActivityDetail
   - `[Notes <String>]`: Additional notes the user has provided.
   - `[WebUrl <String>]`: Link to the degree or program page.
 
-SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
+`SOURCE <IMicrosoftGraphPersonDataSources>`: personDataSources
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Type <String[]>]`: 
-
-## RELATED LINKS
 
 ## RELATED LINKS

@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Reports-help.xml
-Module Name: Microsoft.Graph.Reports
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgreportrelyingpartydetailedsummary
+﻿---
+external help file: Microsoft.Graph.Beta.Reports-help.xml
+Module Name: Microsoft.Graph.Beta.Reports
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportrelyingpartydetailedsummary
 schema: 2.0.0
 ---
 
-# Get-MgReportRelyingPartyDetailedSummary
+# Get-MgBetaReportRelyingPartyDetailedSummary
 
 ## SYNOPSIS
 Invoke function getRelyingPartyDetailedSummary
@@ -14,13 +14,13 @@ Invoke function getRelyingPartyDetailedSummary
 
 ### Get (Default)
 ```
-Get-MgReportRelyingPartyDetailedSummary -Period <String> [-Count] [-Filter <String>] [-Property <String[]>]
+Get-MgBetaReportRelyingPartyDetailedSummary -Period <String> [-Count] [-Filter <String>] [-Property <String[]>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgReportRelyingPartyDetailedSummary -InputObject <IReportsIdentity> [-Count] [-Filter <String>]
+Get-MgBetaReportRelyingPartyDetailedSummary -InputObject <IReportsIdentity> [-Count] [-Filter <String>]
  [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [<CommonParameters>]
 ```
@@ -29,6 +29,20 @@ Get-MgReportRelyingPartyDetailedSummary -InputObject <IReportsIdentity> [-Count]
 Invoke function getRelyingPartyDetailedSummary
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -64,7 +78,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IReportsIdentity
@@ -173,10 +187,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IReportsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IReportsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRelyingPartyDetailedSummary
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRelyingPartyDetailedSummary
 ## NOTES
 
 ALIASES
@@ -186,7 +200,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+`INPUTOBJECT <IReportsIdentity>`: Identity Parameter
   - `[ApplicationSignInDetailedSummaryId <String>]`: The unique identifier of applicationSignInDetailedSummary
   - `[CredentialUserRegistrationDetailsId <String>]`: The unique identifier of credentialUserRegistrationDetails
   - `[Date <DateTime?>]`: Usage: date={date}

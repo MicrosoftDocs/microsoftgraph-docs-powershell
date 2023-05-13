@@ -1,29 +1,27 @@
----
-external help file: Microsoft.Graph.Applications-help.xml
-Module Name: Microsoft.Graph.Applications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgonpremisepublishingprofileagentgroup
+﻿---
+external help file: Microsoft.Graph.Beta.Applications-help.xml
+Module Name: Microsoft.Graph.Beta.Applications
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofileagentgroup
 schema: 2.0.0
 ---
 
-# Get-MgOnPremisePublishingProfileAgentGroup
+# Get-MgBetaOnPremisePublishingProfileAgentGroup
 
 ## SYNOPSIS
-List of existing onPremisesAgentGroup objects.
-Read-only.
-Nullable.
+Retrieve the properties and relationships of an onPremisesAgentGroup object.
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgOnPremisePublishingProfileAgentGroup -OnPremisesPublishingProfileId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+Get-MgBetaOnPremisePublishingProfileAgentGroup -OnPremisesPublishingProfileId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
+ [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### List1
 ```
-Get-MgOnPremisePublishingProfileAgentGroup -OnPremisesAgentGroupId <String>
+Get-MgBetaOnPremisePublishingProfileAgentGroup -OnPremisesAgentGroupId <String>
  -OnPremisesPublishingProfileId <String> -OnPremisesAgentId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
@@ -31,48 +29,41 @@ Get-MgOnPremisePublishingProfileAgentGroup -OnPremisesAgentGroupId <String>
 
 ### Get
 ```
-Get-MgOnPremisePublishingProfileAgentGroup -OnPremisesAgentGroupId <String>
+Get-MgBetaOnPremisePublishingProfileAgentGroup -OnPremisesAgentGroupId <String>
  -OnPremisesPublishingProfileId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
 ### List2
 ```
-Get-MgOnPremisePublishingProfileAgentGroup -OnPremisesPublishingProfileId <String> -OnPremisesAgentId <String>
- [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+Get-MgBetaOnPremisePublishingProfileAgentGroup -OnPremisesPublishingProfileId <String>
+ -OnPremisesAgentId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgOnPremisePublishingProfileAgentGroup -InputObject <IApplicationsIdentity> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaOnPremisePublishingProfileAgentGroup -InputObject <IApplicationsIdentity>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-List of existing onPremisesAgentGroup objects.
-Read-only.
-Nullable.
+Retrieve the properties and relationships of an onPremisesAgentGroup object.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgOnPremisePublishingProfileAgentGroup Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Applications
-Get-MgOnPremisePublishingProfileAgentGroup -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -ExpandProperty "agents,publishedResources"
+Import-Module Microsoft.Graph.Beta.Applications
+Get-MgBetaOnPremisePublishingProfileAgentGroup -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -ExpandProperty "agents,publishedResources"
 ```
 
-This example shows how to use the Get-MgOnPremisePublishingProfileAgentGroup Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Get-MgOnPremisePublishingProfileAgentGroup Cmdlet
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Applications
-Get-MgOnPremisePublishingProfileAgentGroup -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -OnPremisesAgentGroupId $onPremisesAgentGroupId -ExpandProperty "publishedResources,agents"
+Import-Module Microsoft.Graph.Beta.Applications
+Get-MgBetaOnPremisePublishingProfileAgentGroup -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -OnPremisesAgentGroupId $onPremisesAgentGroupId -ExpandProperty "publishedResources,agents"
 ```
-
-This example shows how to use the Get-MgOnPremisePublishingProfileAgentGroup Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -139,7 +130,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IApplicationsIdentity
@@ -293,10 +284,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnPremisesAgentGroup
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnPremisesAgentGroup
 ## NOTES
 
 ALIASES
@@ -306,7 +297,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+`INPUTOBJECT <IApplicationsIdentity>`: Identity Parameter
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
   - `[ApplicationId <String>]`: The unique identifier of application

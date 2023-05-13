@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Users.Actions-help.xml
-Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgbulkusercloudpcresize
+﻿---
+external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.Users.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetabulkusercloudpcresize
 schema: 2.0.0
 ---
 
-# Invoke-MgBulkUserCloudPcResize
+# Invoke-MgBetaBulkUserCloudPcResize
 
 ## SYNOPSIS
 Invoke action bulkResize
@@ -14,26 +14,26 @@ Invoke action bulkResize
 
 ### BulkExpanded (Default)
 ```
-Invoke-MgBulkUserCloudPcResize -UserId <String> [-AdditionalProperties <Hashtable>] [-CloudPcIds <String[]>]
- [-TargetServicePlanId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgBetaBulkUserCloudPcResize -UserId <String> [-AdditionalProperties <Hashtable>]
+ [-CloudPcIds <String[]>] [-TargetServicePlanId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Bulk
 ```
-Invoke-MgBulkUserCloudPcResize -UserId <String>
+Invoke-MgBetaBulkUserCloudPcResize -UserId <String>
  -BodyParameter <IPaths1Gsl0O2UsersUserIdCloudpcsMicrosoftGraphBulkresizePostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### BulkViaIdentityExpanded
 ```
-Invoke-MgBulkUserCloudPcResize -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
+Invoke-MgBetaBulkUserCloudPcResize -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
  [-CloudPcIds <String[]>] [-TargetServicePlanId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### BulkViaIdentity
 ```
-Invoke-MgBulkUserCloudPcResize -InputObject <IUsersActionsIdentity>
+Invoke-MgBetaBulkUserCloudPcResize -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths1Gsl0O2UsersUserIdCloudpcsMicrosoftGraphBulkresizePostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -42,6 +42,16 @@ Invoke-MgBulkUserCloudPcResize -InputObject <IUsersActionsIdentity>
 Invoke action bulkResize
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -62,7 +72,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths1Gsl0O2UsersUserIdCloudpcsMicrosoftGraphBulkresizePostRequestbodyContentApplicationJsonSchema
@@ -93,7 +103,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersActionsIdentity
@@ -173,11 +183,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1Gsl0O2UsersUserIdCloudpcsMicrosoftGraphBulkresizePostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Gsl0O2UsersUserIdCloudpcsMicrosoftGraphBulkresizePostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCloudPcRemoteActionResult
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcRemoteActionResult
 ## NOTES
 
 ALIASES
@@ -187,12 +197,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Gsl0O2UsersUserIdCloudpcsMicrosoftGraphBulkresizePostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1Gsl0O2UsersUserIdCloudpcsMicrosoftGraphBulkresizePostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CloudPcIds <String[]>]`: 
   - `[TargetServicePlanId <String>]`: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
@@ -226,7 +236,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription

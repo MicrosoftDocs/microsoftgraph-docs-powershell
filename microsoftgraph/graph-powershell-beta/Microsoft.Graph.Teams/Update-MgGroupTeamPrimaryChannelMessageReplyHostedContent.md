@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/update-mggroupteamprimarychannelmessagereplyhostedcontent
+﻿---
+external help file: Microsoft.Graph.Beta.Teams-help.xml
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamprimarychannelmessagereplyhostedcontent
 schema: 2.0.0
 ---
 
-# Update-MgGroupTeamPrimaryChannelMessageReplyHostedContent
+# Update-MgBetaGroupTeamPrimaryChannelMessageReplyHostedContent
 
 ## SYNOPSIS
 Update the navigation property hostedContents in groups
@@ -14,36 +14,50 @@ Update the navigation property hostedContents in groups
 
 ### UpdateExpanded (Default)
 ```
-Update-MgGroupTeamPrimaryChannelMessageReplyHostedContent -ChatMessageHostedContentId <String>
+Update-MgBetaGroupTeamPrimaryChannelMessageReplyHostedContent -ChatMessageHostedContentId <String>
  -ChatMessageId <String> -ChatMessageId1 <String> -GroupId <String> [-AdditionalProperties <Hashtable>]
- [-ContentBytesInputFile <String>] [-ContentType <String>] [-Id <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [-ContentBytesInputFile <String>] [-ContentType <String>] [-Id <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgGroupTeamPrimaryChannelMessageReplyHostedContent -ChatMessageHostedContentId <String>
- -ChatMessageId <String> -ChatMessageId1 <String> -GroupId <String> -BodyParameter <Hashtable> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaGroupTeamPrimaryChannelMessageReplyHostedContent -ChatMessageHostedContentId <String>
+ -ChatMessageId <String> -ChatMessageId1 <String> -GroupId <String> -BodyParameter <Hashtable> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgGroupTeamPrimaryChannelMessageReplyHostedContent -InputObject <ITeamsIdentity>
+Update-MgBetaGroupTeamPrimaryChannelMessageReplyHostedContent -InputObject <ITeamsIdentity>
  [-AdditionalProperties <Hashtable>] [-ContentBytesInputFile <String>] [-ContentType <String>] [-Id <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgGroupTeamPrimaryChannelMessageReplyHostedContent -InputObject <ITeamsIdentity>
- -BodyParameter <Hashtable> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaGroupTeamPrimaryChannelMessageReplyHostedContent -InputObject <ITeamsIdentity>
+ -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property hostedContents in groups
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -140,8 +154,7 @@ Accept wildcard characters: False
 
 ### -ContentType
 Write only.
-Content type.
-sicj as image/png, image/jpg.
+Content type, such as image/png, image/jpg.
 
 ```yaml
 Type: String
@@ -171,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -188,7 +201,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ITeamsIdentity
@@ -199,21 +212,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -253,11 +251,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
 ### System.Collections.Hashtable
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphChatMessageHostedContent
 ## NOTES
 
 ALIASES
@@ -267,7 +265,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat

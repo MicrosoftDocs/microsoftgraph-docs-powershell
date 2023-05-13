@@ -1,57 +1,90 @@
----
-external help file: Microsoft.Graph.Identity.Governance-help.xml
-Module Name: Microsoft.Graph.Identity.Governance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancerolemanagementalert
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.Governance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancerolemanagementalert
 schema: 2.0.0
 ---
 
-# Update-MgIdentityGovernanceRoleManagementAlert
+# Update-MgBetaIdentityGovernanceRoleManagementAlert
 
 ## SYNOPSIS
-Update the navigation property alerts in identityGovernance
+Invoke action refresh
 
 ## SYNTAX
 
-### UpdateExpanded (Default)
+### RefreshExpanded (Default)
 ```
-Update-MgIdentityGovernanceRoleManagementAlert -UnifiedRoleManagementAlertId <String>
- [-AdditionalProperties <Hashtable>]
+Update-MgBetaIdentityGovernanceRoleManagementAlert [-AdditionalProperties <Hashtable>] [-ScopeId <String>]
+ [-ScopeType <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateExpanded
+```
+Update-MgBetaIdentityGovernanceRoleManagementAlert -UnifiedRoleManagementAlertId <String>
+ [-AdditionalProperties <Hashtable>] [-ScopeId <String>] [-ScopeType <String>]
  [-AlertConfiguration <IMicrosoftGraphUnifiedRoleManagementAlertConfiguration>]
  [-AlertDefinition <IMicrosoftGraphUnifiedRoleManagementAlertDefinition>] [-AlertDefinitionId <String>]
  [-AlertIncidents <IMicrosoftGraphUnifiedRoleManagementAlertIncident[]>] [-Id <String>]
  [-IncidentCount <Int32>] [-IsActive] [-LastModifiedDateTime <DateTime>] [-LastScannedDateTime <DateTime>]
- [-ScopeId <String>] [-ScopeType <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgIdentityGovernanceRoleManagementAlert -UnifiedRoleManagementAlertId <String>
- -BodyParameter <IMicrosoftGraphUnifiedRoleManagementAlert> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaIdentityGovernanceRoleManagementAlert -UnifiedRoleManagementAlertId <String>
+ -BodyParameter <IMicrosoftGraphUnifiedRoleManagementAlert> [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Refresh
+```
+Update-MgBetaIdentityGovernanceRoleManagementAlert -UnifiedRoleManagementAlertId <String> [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgIdentityGovernanceRoleManagementAlert -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>]
+Update-MgBetaIdentityGovernanceRoleManagementAlert -InputObject <IIdentityGovernanceIdentity>
+ [-AdditionalProperties <Hashtable>] [-ScopeId <String>] [-ScopeType <String>]
  [-AlertConfiguration <IMicrosoftGraphUnifiedRoleManagementAlertConfiguration>]
  [-AlertDefinition <IMicrosoftGraphUnifiedRoleManagementAlertDefinition>] [-AlertDefinitionId <String>]
  [-AlertIncidents <IMicrosoftGraphUnifiedRoleManagementAlertIncident[]>] [-Id <String>]
  [-IncidentCount <Int32>] [-IsActive] [-LastModifiedDateTime <DateTime>] [-LastScannedDateTime <DateTime>]
- [-ScopeId <String>] [-ScopeType <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgIdentityGovernanceRoleManagementAlert -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphUnifiedRoleManagementAlert> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaIdentityGovernanceRoleManagementAlert -InputObject <IIdentityGovernanceIdentity>
+ -BodyParameter <IMicrosoftGraphUnifiedRoleManagementAlert> [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### RefreshViaIdentity
+```
+Update-MgBetaIdentityGovernanceRoleManagementAlert -InputObject <IIdentityGovernanceIdentity> [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Refresh1
+```
+Update-MgBetaIdentityGovernanceRoleManagementAlert
+ -Body <IPaths1O7WbujIdentitygovernanceRolemanagementalertsAlertsMicrosoftGraphRefreshPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property alerts in identityGovernance
+Invoke action refresh
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -60,7 +93,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: RefreshExpanded, UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -72,7 +105,7 @@ Accept wildcard characters: False
 
 ### -AlertConfiguration
 unifiedRoleManagementAlertConfiguration
-To construct, please use Get-Help -Online and see NOTES section for ALERTCONFIGURATION properties and create a hash table.
+To construct, see NOTES section for ALERTCONFIGURATION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUnifiedRoleManagementAlertConfiguration
@@ -88,7 +121,7 @@ Accept wildcard characters: False
 
 ### -AlertDefinition
 unifiedRoleManagementAlertDefinition
-To construct, please use Get-Help -Online and see NOTES section for ALERTDEFINITION properties and create a hash table.
+To construct, see NOTES section for ALERTDEFINITION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUnifiedRoleManagementAlertDefinition
@@ -119,7 +152,7 @@ Accept wildcard characters: False
 
 ### -AlertIncidents
 .
-To construct, please use Get-Help -Online and see NOTES section for ALERTINCIDENTS properties and create a hash table.
+To construct, see NOTES section for ALERTINCIDENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUnifiedRoleManagementAlertIncident[]
@@ -133,9 +166,25 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Body
+.
+To construct, see NOTES section for BODY properties and create a hash table.
+
+```yaml
+Type: IPaths1O7WbujIdentitygovernanceRolemanagementalertsAlertsMicrosoftGraphRefreshPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Refresh1
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -BodyParameter
 unifiedRoleManagementAlert
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUnifiedRoleManagementAlert
@@ -150,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -182,11 +231,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IIdentityGovernanceIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity, RefreshViaIdentity
 Aliases:
 
 Required: True
@@ -246,7 +295,7 @@ Returns true when the command succeeds
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: (All)
+Parameter Sets: RefreshExpanded, Refresh, RefreshViaIdentity, Refresh1
 Aliases:
 
 Required: False
@@ -261,7 +310,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: RefreshExpanded, UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -276,7 +325,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: RefreshExpanded, UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -291,7 +340,7 @@ The unique identifier of unifiedRoleManagementAlert
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, Update
+Parameter Sets: UpdateExpanded, Update, Refresh
 Aliases:
 
 Required: True
@@ -337,10 +386,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementAlert
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementAlert
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1O7WbujIdentitygovernanceRolemanagementalertsAlertsMicrosoftGraphRefreshPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementAlert
 ### System.Boolean
 ## NOTES
 
@@ -351,12 +402,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ALERTCONFIGURATION `<IMicrosoftGraphUnifiedRoleManagementAlertConfiguration>`: unifiedRoleManagementAlertConfiguration
+`ALERTCONFIGURATION <IMicrosoftGraphUnifiedRoleManagementAlertConfiguration>`: unifiedRoleManagementAlertConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AlertDefinition <IMicrosoftGraphUnifiedRoleManagementAlertDefinition>]`: unifiedRoleManagementAlertDefinition
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Description <String>]`: 
     - `[DisplayName <String>]`: 
     - `[HowToPrevent <String>]`: 
@@ -372,9 +423,9 @@ ALERTCONFIGURATION `<IMicrosoftGraphUnifiedRoleManagementAlertConfiguration>`: u
   - `[ScopeId <String>]`: 
   - `[ScopeType <String>]`: 
 
-ALERTDEFINITION `<IMicrosoftGraphUnifiedRoleManagementAlertDefinition>`: unifiedRoleManagementAlertDefinition
+`ALERTDEFINITION <IMicrosoftGraphUnifiedRoleManagementAlertDefinition>`: unifiedRoleManagementAlertDefinition
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Description <String>]`: 
   - `[DisplayName <String>]`: 
   - `[HowToPrevent <String>]`: 
@@ -386,18 +437,23 @@ ALERTDEFINITION `<IMicrosoftGraphUnifiedRoleManagementAlertDefinition>`: unified
   - `[SecurityImpact <String>]`: 
   - `[SeverityLevel <String>]`: alertSeverity
 
-ALERTINCIDENTS <IMicrosoftGraphUnifiedRoleManagementAlertIncident\[]>: .
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`ALERTINCIDENTS <IMicrosoftGraphUnifiedRoleManagementAlertIncident[]>`: .
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
 
-BODYPARAMETER `<IMicrosoftGraphUnifiedRoleManagementAlert>`: unifiedRoleManagementAlert
+`BODY <IPaths1O7WbujIdentitygovernanceRolemanagementalertsAlertsMicrosoftGraphRefreshPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[ScopeId <String>]`: 
+  - `[ScopeType <String>]`: 
+
+`BODYPARAMETER <IMicrosoftGraphUnifiedRoleManagementAlert>`: unifiedRoleManagementAlert
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AlertConfiguration <IMicrosoftGraphUnifiedRoleManagementAlertConfiguration>]`: unifiedRoleManagementAlertConfiguration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[AlertDefinition <IMicrosoftGraphUnifiedRoleManagementAlertDefinition>]`: unifiedRoleManagementAlertDefinition
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Description <String>]`: 
       - `[DisplayName <String>]`: 
       - `[HowToPrevent <String>]`: 
@@ -415,7 +471,7 @@ BODYPARAMETER `<IMicrosoftGraphUnifiedRoleManagementAlert>`: unifiedRoleManageme
   - `[AlertDefinition <IMicrosoftGraphUnifiedRoleManagementAlertDefinition>]`: unifiedRoleManagementAlertDefinition
   - `[AlertDefinitionId <String>]`: 
   - `[AlertIncidents <IMicrosoftGraphUnifiedRoleManagementAlertIncident[]>]`: 
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[IncidentCount <Int32?>]`: 
   - `[IsActive <Boolean?>]`: 
   - `[LastModifiedDateTime <DateTime?>]`: 
@@ -423,7 +479,7 @@ BODYPARAMETER `<IMicrosoftGraphUnifiedRoleManagementAlert>`: unifiedRoleManageme
   - `[ScopeId <String>]`: 
   - `[ScopeType <String>]`: 
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentityGovernanceIdentity>`: Identity Parameter
   - `[AccessPackageAssignmentId <String>]`: The unique identifier of accessPackageAssignment
   - `[AccessPackageAssignmentPolicyId <String>]`: The unique identifier of accessPackageAssignmentPolicy
   - `[AccessPackageAssignmentRequestId <String>]`: The unique identifier of accessPackageAssignmentRequest
@@ -431,8 +487,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[AccessPackageCatalogId <String>]`: The unique identifier of accessPackageCatalog
   - `[AccessPackageId <String>]`: The unique identifier of accessPackage
   - `[AccessPackageId1 <String>]`: The unique identifier of accessPackage
-  - `[AccessPackageId2 <String>]`: Usage: accessPackageId='{accessPackageId}'
-  - `[AccessPackageQuestionId <String>]`: The unique identifier of accessPackageQuestion
   - `[AccessPackageResourceEnvironmentId <String>]`: The unique identifier of accessPackageResourceEnvironment
   - `[AccessPackageResourceId <String>]`: The unique identifier of accessPackageResource
   - `[AccessPackageResourceRequestId <String>]`: The unique identifier of accessPackageResourceRequest
@@ -457,7 +511,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[AgreementId <String>]`: The unique identifier of agreement
   - `[AppConsentRequestId <String>]`: The unique identifier of appConsentRequest
   - `[ApprovalId <String>]`: The unique identifier of approval
-  - `[ApprovalStageId <String>]`: The unique identifier of approvalStage
   - `[ApprovalStepId <String>]`: The unique identifier of approvalStep
   - `[BusinessFlowTemplateId <String>]`: The unique identifier of businessFlowTemplate
   - `[ConnectedOrganizationId <String>]`: The unique identifier of connectedOrganization
@@ -495,12 +548,24 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[ProgramControlId1 <String>]`: The unique identifier of programControl
   - `[ProgramControlTypeId <String>]`: The unique identifier of programControlType
   - `[ProgramId <String>]`: The unique identifier of program
+  - `[RbacApplicationId <String>]`: The unique identifier of rbacApplication
   - `[RunId <String>]`: The unique identifier of run
   - `[StartDateTime <DateTime?>]`: Usage: startDateTime={startDateTime}
   - `[TaskDefinitionId <String>]`: The unique identifier of taskDefinition
   - `[TaskId <String>]`: The unique identifier of task
   - `[TaskProcessingResultId <String>]`: The unique identifier of taskProcessingResult
   - `[TaskReportId <String>]`: The unique identifier of taskReport
+  - `[UnifiedRbacResourceActionId <String>]`: The unique identifier of unifiedRbacResourceAction
+  - `[UnifiedRbacResourceNamespaceId <String>]`: The unique identifier of unifiedRbacResourceNamespace
+  - `[UnifiedRoleAssignmentId <String>]`: The unique identifier of unifiedRoleAssignment
+  - `[UnifiedRoleAssignmentScheduleId <String>]`: The unique identifier of unifiedRoleAssignmentSchedule
+  - `[UnifiedRoleAssignmentScheduleInstanceId <String>]`: The unique identifier of unifiedRoleAssignmentScheduleInstance
+  - `[UnifiedRoleAssignmentScheduleRequestId <String>]`: The unique identifier of unifiedRoleAssignmentScheduleRequest
+  - `[UnifiedRoleDefinitionId <String>]`: The unique identifier of unifiedRoleDefinition
+  - `[UnifiedRoleDefinitionId1 <String>]`: The unique identifier of unifiedRoleDefinition
+  - `[UnifiedRoleEligibilityScheduleId <String>]`: The unique identifier of unifiedRoleEligibilitySchedule
+  - `[UnifiedRoleEligibilityScheduleInstanceId <String>]`: The unique identifier of unifiedRoleEligibilityScheduleInstance
+  - `[UnifiedRoleEligibilityScheduleRequestId <String>]`: The unique identifier of unifiedRoleEligibilityScheduleRequest
   - `[UnifiedRoleManagementAlertConfigurationId <String>]`: The unique identifier of unifiedRoleManagementAlertConfiguration
   - `[UnifiedRoleManagementAlertDefinitionId <String>]`: The unique identifier of unifiedRoleManagementAlertDefinition
   - `[UnifiedRoleManagementAlertId <String>]`: The unique identifier of unifiedRoleManagementAlert

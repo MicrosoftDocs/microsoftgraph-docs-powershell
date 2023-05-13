@@ -1,12 +1,11 @@
----
-external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
-Module Name: Microsoft.Graph.Devices.CloudPrint
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintconnector
+﻿---
+external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
+Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintconnector
 schema: 2.0.0
-ms.prod: cloud-printing
 ---
 
-# New-MgPrintConnector
+# New-MgBetaPrintConnector
 
 ## SYNOPSIS
 Create new navigation property to connectors for print
@@ -15,7 +14,7 @@ Create new navigation property to connectors for print
 
 ### CreateExpanded (Default)
 ```
-New-MgPrintConnector [-AdditionalProperties <Hashtable>] [-AppVersion <String>]
+New-MgBetaPrintConnector [-AdditionalProperties <Hashtable>] [-AppVersion <String>]
  [-DeviceHealth <IMicrosoftGraphDeviceHealth>] [-DisplayName <String>] [-FullyQualifiedDomainName <String>]
  [-Id <String>] [-Location <IMicrosoftGraphPrinterLocation>] [-Name <String>] [-OperatingSystem <String>]
  [-RegisteredDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -23,7 +22,8 @@ New-MgPrintConnector [-AdditionalProperties <Hashtable>] [-AppVersion <String>]
 
 ### Create
 ```
-New-MgPrintConnector -BodyParameter <IMicrosoftGraphPrintConnector> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaPrintConnector -BodyParameter <IMicrosoftGraphPrintConnector> [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -31,16 +31,12 @@ Create new navigation property to connectors for print
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Devices.CloudPrint
-
-Get-MgPrintConnector
+Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
 ```
 
-This example shows how to use the New-MgPrintConnector Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Get-MgBetaPrintConnector
 
 ## PARAMETERS
 
@@ -76,7 +72,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 printConnector
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPrintConnector
@@ -92,7 +88,7 @@ Accept wildcard characters: False
 
 ### -DeviceHealth
 deviceHealth
-To construct, please use Get-Help -Online and see NOTES section for DEVICEHEALTH properties and create a hash table.
+To construct, see NOTES section for DEVICEHEALTH properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceHealth
@@ -137,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -154,7 +150,7 @@ Accept wildcard characters: False
 
 ### -Location
 printerLocation
-To construct, please use Get-Help -Online and see NOTES section for LOCATION properties and create a hash table.
+To construct, see NOTES section for LOCATION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPrinterLocation
@@ -249,10 +245,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintConnector
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrintConnector
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintConnector
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrintConnector
 ## NOTES
 
 ALIASES
@@ -262,9 +258,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPrintConnector>`: printConnector
+`BODYPARAMETER <IMicrosoftGraphPrintConnector>`: printConnector
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AppVersion <String>]`: The connector's version.
   - `[DeviceHealth <IMicrosoftGraphDeviceHealth>]`: deviceHealth
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -296,11 +292,11 @@ BODYPARAMETER `<IMicrosoftGraphPrintConnector>`: printConnector
   - `[OperatingSystem <String>]`: The connector machine's operating system version.
   - `[RegisteredDateTime <DateTime?>]`: The DateTimeOffset when the connector was registered.
 
-DEVICEHEALTH `<IMicrosoftGraphDeviceHealth>`: deviceHealth
+`DEVICEHEALTH <IMicrosoftGraphDeviceHealth>`: deviceHealth
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[LastConnectionTime <DateTime?>]`: The last time the device was connected.
 
-LOCATION `<IMicrosoftGraphPrinterLocation>`: printerLocation
+`LOCATION <IMicrosoftGraphPrinterLocation>`: printerLocation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AltitudeInMeters <Int32?>]`: The altitude, in meters, that the printer is located at.
   - `[Building <String>]`: The building that the printer is located in.

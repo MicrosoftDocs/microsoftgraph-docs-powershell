@@ -1,12 +1,11 @@
----
-external help file: Microsoft.Graph.Education-help.xml
-Module Name: Microsoft.Graph.Education
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/get-mgeducationclassmemberbyref
+﻿---
+external help file: Microsoft.Graph.Beta.Education-help.xml
+Module Name: Microsoft.Graph.Beta.Education
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassmemberbyref
 schema: 2.0.0
-ms.prod: education
 ---
 
-# Get-MgEducationClassMemberByRef
+# Get-MgBetaEducationClassMemberByRef
 
 ## SYNOPSIS
 Retrieves the teachers and students for a class.
@@ -15,7 +14,7 @@ Note that if the delegated token is used, members can only be seen by other memb
 ## SYNTAX
 
 ```
-Get-MgEducationClassMemberByRef -EducationClassId <String> [-Filter <String>] [-Search <String>]
+Get-MgBetaEducationClassMemberByRef -EducationClassId <String> [-Filter <String>] [-Search <String>]
  [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
  [<CommonParameters>]
 ```
@@ -26,16 +25,12 @@ Note that if the delegated token is used, members can only be seen by other memb
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Education
-
-Get-MgEducationClassMember -EducationClassId $educationClassId
+Import-Module Microsoft.Graph.Beta.Education
 ```
 
-This example shows how to use the Get-MgEducationClassMemberByRef Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Get-MgBetaEducationClassMember -EducationClassId $educationClassId
 
 ## PARAMETERS
 

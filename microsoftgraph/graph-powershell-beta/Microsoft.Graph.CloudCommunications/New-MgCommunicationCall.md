@@ -1,12 +1,11 @@
----
-external help file: Microsoft.Graph.CloudCommunications-help.xml
-Module Name: Microsoft.Graph.CloudCommunications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcall
+﻿---
+external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
+Module Name: Microsoft.Graph.Beta.CloudCommunications
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationcall
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
-# New-MgCommunicationCall
+# New-MgBetaCommunicationCall
 
 ## SYNOPSIS
 Create call enables your bot to create a new outgoing peer-to-peer or group call, or join an existing meeting.
@@ -14,27 +13,27 @@ You will need to register the calling bot and go through the list of permissions
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
-New-MgCommunicationCall [-ActiveModalities <String[]>] [-AdditionalProperties <Hashtable>]
- [-AnsweredBy <IMicrosoftGraphParticipantInfo1>] [-AudioRoutingGroups <IMicrosoftGraphAudioRoutingGroup1[]>]
+New-MgBetaCommunicationCall [-ActiveModalities <String[]>] [-AdditionalProperties <Hashtable>]
+ [-AnsweredBy <IMicrosoftGraphParticipantInfo>] [-AudioRoutingGroups <IMicrosoftGraphAudioRoutingGroup[]>]
  [-CallChainId <String>] [-CallOptions <IMicrosoftGraphCallOptions>] [-CallRoutes <IMicrosoftGraphCallRoute[]>]
  [-CallbackUri <String>] [-ChatInfo <IMicrosoftGraphChatInfo>]
  [-ContentSharingSessions <IMicrosoftGraphContentSharingSession[]>] [-Direction <String>] [-Id <String>]
- [-IncomingContext <IMicrosoftGraphIncomingContext>] [-MediaConfig <IMicrosoftGraphMediaConfig1>]
+ [-IncomingContext <IMicrosoftGraphIncomingContext>] [-MediaConfig <IMicrosoftGraphMediaConfig>]
  [-MediaState <IMicrosoftGraphCallMediaState>] [-MeetingCapability <IMicrosoftGraphMeetingCapability>]
- [-MeetingInfo <IMicrosoftGraphMeetingInfo1>] [-MyParticipantId <String>]
- [-Operations <IMicrosoftGraphCommsOperation[]>] [-Participants <IMicrosoftGraphParticipant1[]>]
+ [-MeetingInfo <IMicrosoftGraphMeetingInfo>] [-MyParticipantId <String>]
+ [-Operations <IMicrosoftGraphCommsOperation[]>] [-Participants <IMicrosoftGraphParticipant[]>]
  [-RequestedModalities <String[]>] [-ResultInfo <IMicrosoftGraphResultInfo>] [-RingingTimeoutInSeconds <Int32>]
- [-RoutingPolicies <String[]>] [-Source <IMicrosoftGraphParticipantInfo1>] [-State <String>]
- [-Subject <String>] [-Targets <IMicrosoftGraphInvitationParticipantInfo1[]>] [-TenantId <String>]
- [-TerminationReason <String>] [-ToneInfo <IMicrosoftGraphToneInfo>]
- [-Transcription <IMicrosoftGraphCallTranscriptionInfo>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-RoutingPolicies <String[]>] [-Source <IMicrosoftGraphParticipantInfo>] [-State <String>] [-Subject <String>]
+ [-Targets <IMicrosoftGraphInvitationParticipantInfo[]>] [-TenantId <String>] [-TerminationReason <String>]
+ [-ToneInfo <IMicrosoftGraphToneInfo>] [-Transcription <IMicrosoftGraphCallTranscriptionInfo>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
-New-MgCommunicationCall -BodyParameter <IMicrosoftGraphCall1> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaCommunicationCall -BodyParameter <IMicrosoftGraphCall> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -43,9 +42,9 @@ You will need to register the calling bot and go through the list of permissions
 
 ## EXAMPLES
 
-### Example 1: Using the New-MgCommunicationCall Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.CloudCommunications
+Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
 	CallbackUri = "https://bot.contoso.com/callback"
@@ -83,15 +82,12 @@ $params = @{
 		Blob = "<Media Session Configuration>"
 	}
 }
-New-MgCommunicationCall -BodyParameter $params
+New-MgBetaCommunicationCall -BodyParameter $params
 ```
 
-This example shows how to use the New-MgCommunicationCall Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the New-MgCommunicationCall Cmdlet
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.CloudCommunications
+Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
 	CallbackUri = "https://bot.contoso.com/callback"
@@ -119,15 +115,12 @@ $params = @{
 		"@odata.type" = "#microsoft.graph.serviceHostedMediaConfig"
 	}
 }
-New-MgCommunicationCall -BodyParameter $params
+New-MgBetaCommunicationCall -BodyParameter $params
 ```
 
-This example shows how to use the New-MgCommunicationCall Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Using the New-MgCommunicationCall Cmdlet
+### EXAMPLE 3
 ```powershell
-Import-Module Microsoft.Graph.CloudCommunications
+Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
 	CallbackUri = "https://bot.contoso.com/callback"
@@ -166,15 +159,12 @@ $params = @{
 	}
 	TenantId = "aa67bd4c-8475-432d-bd41-39f255720e0a"
 }
-New-MgCommunicationCall -BodyParameter $params
+New-MgBetaCommunicationCall -BodyParameter $params
 ```
 
-This example shows how to use the New-MgCommunicationCall Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 4: Using the New-MgCommunicationCall Cmdlet
+### EXAMPLE 4
 ```powershell
-Import-Module Microsoft.Graph.CloudCommunications
+Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
 	CallbackUri = "https://bot.contoso.com/callback"
@@ -214,15 +204,12 @@ $params = @{
 	}
 	TenantId = "aa67bd4c-8475-432d-bd41-39f255720e0a"
 }
-New-MgCommunicationCall -BodyParameter $params
+New-MgBetaCommunicationCall -BodyParameter $params
 ```
 
-This example shows how to use the New-MgCommunicationCall Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 5: Using the New-MgCommunicationCall Cmdlet
+### EXAMPLE 5
 ```powershell
-Import-Module Microsoft.Graph.CloudCommunications
+Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
 	Direction = "outgoing"
@@ -273,15 +260,12 @@ $params = @{
 	}
 	TenantId = "aa67bd4c-8475-432d-bd41-39f255720e0a"
 }
-New-MgCommunicationCall -BodyParameter $params
+New-MgBetaCommunicationCall -BodyParameter $params
 ```
 
-This example shows how to use the New-MgCommunicationCall Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 6: Using the New-MgCommunicationCall Cmdlet
+### EXAMPLE 6
 ```powershell
-Import-Module Microsoft.Graph.CloudCommunications
+Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
 	Direction = "outgoing"
@@ -331,15 +315,12 @@ $params = @{
 	}
 	TenantId = "aa67bd4c-8475-432d-bd41-39f255720e0a"
 }
-New-MgCommunicationCall -BodyParameter $params
+New-MgBetaCommunicationCall -BodyParameter $params
 ```
 
-This example shows how to use the New-MgCommunicationCall Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 7: Using the New-MgCommunicationCall Cmdlet
+### EXAMPLE 7
 ```powershell
-Import-Module Microsoft.Graph.CloudCommunications
+Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
 	CallbackUri = "https://bot.contoso.com/callback"
@@ -381,15 +362,12 @@ $params = @{
 		AllowConversationWithoutHost = $true
 	}
 }
-New-MgCommunicationCall -BodyParameter $params
+New-MgBetaCommunicationCall -BodyParameter $params
 ```
 
-This example shows how to use the New-MgCommunicationCall Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 8: Using the New-MgCommunicationCall Cmdlet
+### EXAMPLE 8
 ```powershell
-Import-Module Microsoft.Graph.CloudCommunications
+Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
 	CallbackUri = "https://bot.contoso.com/callback"
@@ -420,15 +398,12 @@ $params = @{
 		AllowConversationWithoutHost = $true
 	}
 }
-New-MgCommunicationCall -BodyParameter $params
+New-MgBetaCommunicationCall -BodyParameter $params
 ```
 
-This example shows how to use the New-MgCommunicationCall Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 9: Using the New-MgCommunicationCall Cmdlet
+### EXAMPLE 9
 ```powershell
-Import-Module Microsoft.Graph.CloudCommunications
+Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
 	Direction = "outgoing"
@@ -460,15 +435,12 @@ $params = @{
 	}
 	TenantId = "aa67bd4c-8475-432d-bd41-39f255720e0a"
 }
-New-MgCommunicationCall -BodyParameter $params
+New-MgBetaCommunicationCall -BodyParameter $params
 ```
 
-This example shows how to use the New-MgCommunicationCall Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 10: Using the New-MgCommunicationCall Cmdlet
+### EXAMPLE 10
 ```powershell
-Import-Module Microsoft.Graph.CloudCommunications
+Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
 	CallbackUri = "https://bot.contoso.com/callback"
@@ -500,15 +472,12 @@ $params = @{
 	}
 	TenantId = "86dc81db-c112-4228-9222-63f3esaa1edb"
 }
-New-MgCommunicationCall -BodyParameter $params
+New-MgBetaCommunicationCall -BodyParameter $params
 ```
 
-This example shows how to use the New-MgCommunicationCall Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 11: Using the New-MgCommunicationCall Cmdlet
+### EXAMPLE 11
 ```powershell
-Import-Module Microsoft.Graph.CloudCommunications
+Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
 	CallbackUri = "https://bot.contoso.com/callback"
@@ -527,15 +496,12 @@ $params = @{
 	}
 	TenantId = "86dc81db-c112-4228-9222-63f3esaa1edb"
 }
-New-MgCommunicationCall -BodyParameter $params
+New-MgBetaCommunicationCall -BodyParameter $params
 ```
 
-This example shows how to use the New-MgCommunicationCall Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 12: Using the New-MgCommunicationCall Cmdlet
+### EXAMPLE 12
 ```powershell
-Import-Module Microsoft.Graph.CloudCommunications
+Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
 	CallbackUri = "https://bot.contoso.com/callback"
@@ -554,11 +520,8 @@ $params = @{
 	}
 	TenantId = "86dc81db-c112-4228-9222-63f3esaa1edb"
 }
-New-MgCommunicationCall -BodyParameter $params
+New-MgBetaCommunicationCall -BodyParameter $params
 ```
-
-This example shows how to use the New-MgCommunicationCall Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -569,7 +532,7 @@ Read-only.
 
 ```yaml
 Type: String[]
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -584,7 +547,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -596,11 +559,11 @@ Accept wildcard characters: False
 
 ### -AnsweredBy
 participantInfo
-To construct, please use Get-Help -Online and see NOTES section for ANSWEREDBY properties and create a hash table.
+To construct, see NOTES section for ANSWEREDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphParticipantInfo1
-Parameter Sets: CreateExpanded1
+Type: IMicrosoftGraphParticipantInfo
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -612,11 +575,11 @@ Accept wildcard characters: False
 
 ### -AudioRoutingGroups
 .
-To construct, please use Get-Help -Online and see NOTES section for AUDIOROUTINGGROUPS properties and create a hash table.
+To construct, see NOTES section for AUDIOROUTINGGROUPS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAudioRoutingGroup1[]
-Parameter Sets: CreateExpanded1
+Type: IMicrosoftGraphAudioRoutingGroup[]
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -628,11 +591,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 call
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCall1
-Parameter Sets: Create1
+Type: IMicrosoftGraphCall
+Parameter Sets: Create
 Aliases:
 
 Required: True
@@ -648,7 +611,7 @@ Must be https.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -664,7 +627,7 @@ This needs to be copied over from Microsoft.Graph.Call.CallChainId.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -676,11 +639,11 @@ Accept wildcard characters: False
 
 ### -CallOptions
 callOptions
-To construct, please use Get-Help -Online and see NOTES section for CALLOPTIONS properties and create a hash table.
+To construct, see NOTES section for CALLOPTIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphCallOptions
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -693,11 +656,11 @@ Accept wildcard characters: False
 ### -CallRoutes
 The routing information on how the call was retargeted.
 Read-only.
-To construct, please use Get-Help -Online and see NOTES section for CALLROUTES properties and create a hash table.
+To construct, see NOTES section for CALLROUTES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphCallRoute[]
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -709,11 +672,11 @@ Accept wildcard characters: False
 
 ### -ChatInfo
 chatInfo
-To construct, please use Get-Help -Online and see NOTES section for CHATINFO properties and create a hash table.
+To construct, see NOTES section for CHATINFO properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphChatInfo
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -725,11 +688,11 @@ Accept wildcard characters: False
 
 ### -ContentSharingSessions
 .
-To construct, please use Get-Help -Online and see NOTES section for CONTENTSHARINGSESSIONS properties and create a hash table.
+To construct, see NOTES section for CONTENTSHARINGSESSIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphContentSharingSession[]
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -744,7 +707,7 @@ callDirection
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -755,12 +718,12 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -772,11 +735,11 @@ Accept wildcard characters: False
 
 ### -IncomingContext
 incomingContext
-To construct, please use Get-Help -Online and see NOTES section for INCOMINGCONTEXT properties and create a hash table.
+To construct, see NOTES section for INCOMINGCONTEXT properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIncomingContext
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -788,11 +751,11 @@ Accept wildcard characters: False
 
 ### -MediaConfig
 mediaConfig
-To construct, please use Get-Help -Online and see NOTES section for MEDIACONFIG properties and create a hash table.
+To construct, see NOTES section for MEDIACONFIG properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMediaConfig1
-Parameter Sets: CreateExpanded1
+Type: IMicrosoftGraphMediaConfig
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -804,11 +767,11 @@ Accept wildcard characters: False
 
 ### -MediaState
 callMediaState
-To construct, please use Get-Help -Online and see NOTES section for MEDIASTATE properties and create a hash table.
+To construct, see NOTES section for MEDIASTATE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphCallMediaState
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -820,11 +783,11 @@ Accept wildcard characters: False
 
 ### -MeetingCapability
 meetingCapability
-To construct, please use Get-Help -Online and see NOTES section for MEETINGCAPABILITY properties and create a hash table.
+To construct, see NOTES section for MEETINGCAPABILITY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphMeetingCapability
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -836,11 +799,11 @@ Accept wildcard characters: False
 
 ### -MeetingInfo
 meetingInfo
-To construct, please use Get-Help -Online and see NOTES section for MEETINGINFO properties and create a hash table.
+To construct, see NOTES section for MEETINGINFO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMeetingInfo1
-Parameter Sets: CreateExpanded1
+Type: IMicrosoftGraphMeetingInfo
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -855,7 +818,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -867,11 +830,11 @@ Accept wildcard characters: False
 
 ### -Operations
 .
-To construct, please use Get-Help -Online and see NOTES section for OPERATIONS properties and create a hash table.
+To construct, see NOTES section for OPERATIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphCommsOperation[]
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -883,11 +846,11 @@ Accept wildcard characters: False
 
 ### -Participants
 .
-To construct, please use Get-Help -Online and see NOTES section for PARTICIPANTS properties and create a hash table.
+To construct, see NOTES section for PARTICIPANTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphParticipant1[]
-Parameter Sets: CreateExpanded1
+Type: IMicrosoftGraphParticipant[]
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -902,7 +865,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String[]
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -914,11 +877,11 @@ Accept wildcard characters: False
 
 ### -ResultInfo
 resultInfo
-To construct, please use Get-Help -Online and see NOTES section for RESULTINFO properties and create a hash table.
+To construct, see NOTES section for RESULTINFO properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphResultInfo
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -933,7 +896,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: Int32
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -948,7 +911,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String[]
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -960,11 +923,11 @@ Accept wildcard characters: False
 
 ### -Source
 participantInfo
-To construct, please use Get-Help -Online and see NOTES section for SOURCE properties and create a hash table.
+To construct, see NOTES section for SOURCE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphParticipantInfo1
-Parameter Sets: CreateExpanded1
+Type: IMicrosoftGraphParticipantInfo
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -975,11 +938,11 @@ Accept wildcard characters: False
 ```
 
 ### -State
-.
+callState
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -990,11 +953,11 @@ Accept wildcard characters: False
 ```
 
 ### -Subject
-The subject of the conversation.
+.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -1006,11 +969,11 @@ Accept wildcard characters: False
 
 ### -Targets
 .
-To construct, please use Get-Help -Online and see NOTES section for TARGETS properties and create a hash table.
+To construct, see NOTES section for TARGETS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphInvitationParticipantInfo1[]
-Parameter Sets: CreateExpanded1
+Type: IMicrosoftGraphInvitationParticipantInfo[]
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -1025,7 +988,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -1040,7 +1003,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -1052,11 +1015,11 @@ Accept wildcard characters: False
 
 ### -ToneInfo
 toneInfo
-To construct, please use Get-Help -Online and see NOTES section for TONEINFO properties and create a hash table.
+To construct, see NOTES section for TONEINFO properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphToneInfo
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -1068,11 +1031,11 @@ Accept wildcard characters: False
 
 ### -Transcription
 callTranscriptionInfo
-To construct, please use Get-Help -Online and see NOTES section for TRANSCRIPTION properties and create a hash table.
+To construct, see NOTES section for TRANSCRIPTION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphCallTranscriptionInfo
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -1118,10 +1081,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCall1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCall
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCall1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCall
 ## NOTES
 
 ALIASES
@@ -1131,7 +1094,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ANSWEREDBY `<IMicrosoftGraphParticipantInfo1>`: participantInfo
+`ANSWEREDBY <IMicrosoftGraphParticipantInfo>`: participantInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CountryCode <String>]`: The ISO 3166-1 Alpha-2 country code of the participant's best estimated physical location at the start of the call. Read-only.
   - `[EndpointType <String>]`: endpointType
@@ -1149,17 +1112,17 @@ ANSWEREDBY `<IMicrosoftGraphParticipantInfo1>`: participantInfo
   - `[PlatformId <String>]`: The client platform ID of the participant. Read-only.
   - `[Region <String>]`: The home region of the participant. This can be a country, a continent, or a larger geographic region. This does not change based on the participant's current physical location, unlike countryCode. Read-only.
 
-AUDIOROUTINGGROUPS <IMicrosoftGraphAudioRoutingGroup1\[]>: .
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`AUDIOROUTINGGROUPS <IMicrosoftGraphAudioRoutingGroup[]>`: .
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Receivers <String[]>]`: List of receiving participant ids.
-  - `[RoutingMode <String>]`: 
+  - `[RoutingMode <String>]`: routingMode
   - `[Sources <String[]>]`: List of source participant ids.
 
-BODYPARAMETER `<IMicrosoftGraphCall1>`: call
+`BODYPARAMETER <IMicrosoftGraphCall>`: call
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ActiveModalities <String[]>]`: The list of active modalities. Possible values are: unknown, audio, video, videoBasedScreenSharing, data. Read-only.
-  - `[AnsweredBy <IMicrosoftGraphParticipantInfo1>]`: participantInfo
+  - `[AnsweredBy <IMicrosoftGraphParticipantInfo>]`: participantInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[CountryCode <String>]`: The ISO 3166-1 Alpha-2 country code of the participant's best estimated physical location at the start of the call. Read-only.
     - `[EndpointType <String>]`: endpointType
@@ -1176,10 +1139,10 @@ BODYPARAMETER `<IMicrosoftGraphCall1>`: call
     - `[ParticipantId <String>]`: The participant ID of the participant. Read-only.
     - `[PlatformId <String>]`: The client platform ID of the participant. Read-only.
     - `[Region <String>]`: The home region of the participant. This can be a country, a continent, or a larger geographic region. This does not change based on the participant's current physical location, unlike countryCode. Read-only.
-  - `[AudioRoutingGroups <IMicrosoftGraphAudioRoutingGroup1[]>]`: 
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[AudioRoutingGroups <IMicrosoftGraphAudioRoutingGroup[]>]`: 
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Receivers <String[]>]`: List of receiving participant ids.
-    - `[RoutingMode <String>]`: 
+    - `[RoutingMode <String>]`: routingMode
     - `[Sources <String[]>]`: List of source participant ids.
   - `[CallChainId <String>]`: A unique identifier for all the participant calls in a conference or a unique identifier for two participant calls in a P2P call.  This needs to be copied over from Microsoft.Graph.Call.CallChainId.
   - `[CallOptions <IMicrosoftGraphCallOptions>]`: callOptions
@@ -1193,19 +1156,19 @@ BODYPARAMETER `<IMicrosoftGraphCall1>`: call
   - `[CallbackUri <String>]`: The callback URL on which callbacks will be delivered. Must be https.
   - `[ChatInfo <IMicrosoftGraphChatInfo>]`: chatInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[MessageId <String>]`: The unique identifier of a message in a Microsoft Teams channel.
+    - `[MessageId <String>]`: The unique identifier for a message in a Microsoft Teams channel.
     - `[ReplyChainMessageId <String>]`: The ID of the reply message.
     - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
   - `[ContentSharingSessions <IMicrosoftGraphContentSharingSession[]>]`: 
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Direction <String>]`: callDirection
   - `[IncomingContext <IMicrosoftGraphIncomingContext>]`: incomingContext
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[ObservedParticipantId <String>]`: The ID of the participant that is under observation. Read-only.
+    - `[ObservedParticipantId <String>]`: The id of the participant that is under observation. Read-only.
     - `[OnBehalfOf <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[SourceParticipantId <String>]`: The ID of the participant that triggered the incoming call. Read-only.
+    - `[SourceParticipantId <String>]`: The id of the participant that triggered the incoming call. Read-only.
     - `[Transferor <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[MediaConfig <IMicrosoftGraphMediaConfig1>]`: mediaConfig
+  - `[MediaConfig <IMicrosoftGraphMediaConfig>]`: mediaConfig
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[RemoveFromDefaultAudioGroup <Boolean?>]`: 
   - `[MediaState <IMicrosoftGraphCallMediaState>]`: callMediaState
@@ -1216,12 +1179,12 @@ BODYPARAMETER `<IMicrosoftGraphCall1>`: call
     - `[AllowAnonymousUsersToDialOut <Boolean?>]`: Indicates whether anonymous users dialout is allowed in a meeting.
     - `[AllowAnonymousUsersToStartMeeting <Boolean?>]`: Indicates whether anonymous users are allowed to start a meeting.
     - `[AutoAdmittedUsers <String>]`: autoAdmittedUsersType
-  - `[MeetingInfo <IMicrosoftGraphMeetingInfo1>]`: meetingInfo
+  - `[MeetingInfo <IMicrosoftGraphMeetingInfo>]`: meetingInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AllowConversationWithoutHost <Boolean?>]`: 
   - `[MyParticipantId <String>]`: 
   - `[Operations <IMicrosoftGraphCommsOperation[]>]`: 
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[ClientContext <String>]`: Unique Client Context string. Max limit is 256 chars.
     - `[ResultInfo <IMicrosoftGraphResultInfo>]`: resultInfo
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1229,40 +1192,40 @@ BODYPARAMETER `<IMicrosoftGraphCall1>`: call
       - `[Message <String>]`: The message.
       - `[Subcode <Int32?>]`: The result sub-code.
     - `[Status <String>]`: operationStatus
-  - `[Participants <IMicrosoftGraphParticipant1[]>]`: 
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-    - `[Info <IMicrosoftGraphParticipantInfo1>]`: participantInfo
+  - `[Participants <IMicrosoftGraphParticipant[]>]`: 
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[Info <IMicrosoftGraphParticipantInfo>]`: participantInfo
     - `[IsIdentityAnonymized <Boolean?>]`: 
     - `[IsInLobby <Boolean?>]`: true if the participant is in lobby.
     - `[IsMuted <Boolean?>]`: true if the participant is muted (client or server muted).
-    - `[MediaStreams <IMicrosoftGraphMediaStream1[]>]`: The list of media streams.
+    - `[MediaStreams <IMicrosoftGraphMediaStream[]>]`: The list of media streams.
       - `[Direction <String>]`: mediaDirection
       - `[Label <String>]`: The media stream label.
-      - `[MediaType <String>]`: 
+      - `[MediaType <String>]`: modality
       - `[ServerMuted <Boolean?>]`: Indicates whether the media is muted by the server.
       - `[SourceId <String>]`: The source ID.
     - `[Metadata <String>]`: A blob of data provided by the participant in the roster.
-    - `[RecordingInfo <IMicrosoftGraphRecordingInfo1>]`: recordingInfo
+    - `[RecordingInfo <IMicrosoftGraphRecordingInfo>]`: recordingInfo
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[InitiatedBy <IMicrosoftGraphParticipantInfo1>]`: participantInfo
+      - `[InitiatedBy <IMicrosoftGraphParticipantInfo>]`: participantInfo
       - `[Initiator <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[RecordingStatus <String>]`: recordingStatus
     - `[RemovedState <IMicrosoftGraphRemovedState>]`: removedState
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Reason <String>]`: 
+      - `[Reason <String>]`: The removal reason for the participant resource.
     - `[RestrictedExperience <IMicrosoftGraphOnlineMeetingRestricted>]`: onlineMeetingRestricted
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ContentSharingDisabled <String>]`: onlineMeetingContentSharingDisabledReason
       - `[VideoDisabled <String>]`: onlineMeetingVideoDisabledReason
-    - `[RosterSequenceNumber <Int64?>]`: 
+    - `[RosterSequenceNumber <Int64?>]`: Indicates the roster sequence number the participant was last updated in.
   - `[RequestedModalities <String[]>]`: 
   - `[ResultInfo <IMicrosoftGraphResultInfo>]`: resultInfo
   - `[RingingTimeoutInSeconds <Int32?>]`: 
   - `[RoutingPolicies <String[]>]`: 
-  - `[Source <IMicrosoftGraphParticipantInfo1>]`: participantInfo
-  - `[State <String>]`: 
-  - `[Subject <String>]`: The subject of the conversation.
-  - `[Targets <IMicrosoftGraphInvitationParticipantInfo1[]>]`: 
+  - `[Source <IMicrosoftGraphParticipantInfo>]`: participantInfo
+  - `[State <String>]`: callState
+  - `[Subject <String>]`: 
+  - `[Targets <IMicrosoftGraphInvitationParticipantInfo[]>]`: 
     - `[EndpointType <String>]`: endpointType
     - `[Hidden <Boolean?>]`: Optional. Whether to hide the participant from the roster.
     - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -1280,12 +1243,12 @@ BODYPARAMETER `<IMicrosoftGraphCall1>`: call
     - `[LastModifiedDateTime <DateTime?>]`: The state modified time in UTC.
     - `[State <String>]`: callTranscriptionState
 
-CALLOPTIONS `<IMicrosoftGraphCallOptions>`: callOptions
+`CALLOPTIONS <IMicrosoftGraphCallOptions>`: callOptions
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[HideBotAfterEscalation <Boolean?>]`: Indicates whether to hide the app after the call is escalated.
   - `[IsContentSharingNotificationEnabled <Boolean?>]`: Indicates whether content sharing notifications should be enabled for the call.
 
-CALLROUTES <IMicrosoftGraphCallRoute\[]>: The routing information on how the call was retargeted. Read-only.
+`CALLROUTES <IMicrosoftGraphCallRoute[]>`: The routing information on how the call was retargeted. Read-only.
   - `[Final <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -1297,18 +1260,18 @@ CALLROUTES <IMicrosoftGraphCallRoute\[]>: The routing information on how the cal
   - `[Original <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[RoutingType <String>]`: routingType
 
-CHATINFO `<IMicrosoftGraphChatInfo>`: chatInfo
+`CHATINFO <IMicrosoftGraphChatInfo>`: chatInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[MessageId <String>]`: The unique identifier of a message in a Microsoft Teams channel.
+  - `[MessageId <String>]`: The unique identifier for a message in a Microsoft Teams channel.
   - `[ReplyChainMessageId <String>]`: The ID of the reply message.
   - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
 
-CONTENTSHARINGSESSIONS <IMicrosoftGraphContentSharingSession\[]>: .
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`CONTENTSHARINGSESSIONS <IMicrosoftGraphContentSharingSession[]>`: .
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
 
-INCOMINGCONTEXT `<IMicrosoftGraphIncomingContext>`: incomingContext
+`INCOMINGCONTEXT <IMicrosoftGraphIncomingContext>`: incomingContext
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ObservedParticipantId <String>]`: The ID of the participant that is under observation. Read-only.
+  - `[ObservedParticipantId <String>]`: The id of the participant that is under observation. Read-only.
   - `[OnBehalfOf <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -1317,29 +1280,29 @@ INCOMINGCONTEXT `<IMicrosoftGraphIncomingContext>`: incomingContext
       - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[SourceParticipantId <String>]`: The ID of the participant that triggered the incoming call. Read-only.
+  - `[SourceParticipantId <String>]`: The id of the participant that triggered the incoming call. Read-only.
   - `[Transferor <IMicrosoftGraphIdentitySet>]`: identitySet
 
-MEDIACONFIG `<IMicrosoftGraphMediaConfig1>`: mediaConfig
+`MEDIACONFIG <IMicrosoftGraphMediaConfig>`: mediaConfig
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[RemoveFromDefaultAudioGroup <Boolean?>]`: 
 
-MEDIASTATE `<IMicrosoftGraphCallMediaState>`: callMediaState
+`MEDIASTATE <IMicrosoftGraphCallMediaState>`: callMediaState
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Audio <String>]`: mediaState
 
-MEETINGCAPABILITY `<IMicrosoftGraphMeetingCapability>`: meetingCapability
+`MEETINGCAPABILITY <IMicrosoftGraphMeetingCapability>`: meetingCapability
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowAnonymousUsersToDialOut <Boolean?>]`: Indicates whether anonymous users dialout is allowed in a meeting.
   - `[AllowAnonymousUsersToStartMeeting <Boolean?>]`: Indicates whether anonymous users are allowed to start a meeting.
   - `[AutoAdmittedUsers <String>]`: autoAdmittedUsersType
 
-MEETINGINFO `<IMicrosoftGraphMeetingInfo1>`: meetingInfo
+`MEETINGINFO <IMicrosoftGraphMeetingInfo>`: meetingInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowConversationWithoutHost <Boolean?>]`: 
 
-OPERATIONS <IMicrosoftGraphCommsOperation\[]>: .
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`OPERATIONS <IMicrosoftGraphCommsOperation[]>`: .
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ClientContext <String>]`: Unique Client Context string. Max limit is 256 chars.
   - `[ResultInfo <IMicrosoftGraphResultInfo>]`: resultInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1348,9 +1311,9 @@ OPERATIONS <IMicrosoftGraphCommsOperation\[]>: .
     - `[Subcode <Int32?>]`: The result sub-code.
   - `[Status <String>]`: operationStatus
 
-PARTICIPANTS <IMicrosoftGraphParticipant1\[]>: .
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[Info <IMicrosoftGraphParticipantInfo1>]`: participantInfo
+`PARTICIPANTS <IMicrosoftGraphParticipant[]>`: .
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
+  - `[Info <IMicrosoftGraphParticipantInfo>]`: participantInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[CountryCode <String>]`: The ISO 3166-1 Alpha-2 country code of the participant's best estimated physical location at the start of the call. Read-only.
     - `[EndpointType <String>]`: endpointType
@@ -1370,34 +1333,34 @@ PARTICIPANTS <IMicrosoftGraphParticipant1\[]>: .
   - `[IsIdentityAnonymized <Boolean?>]`: 
   - `[IsInLobby <Boolean?>]`: true if the participant is in lobby.
   - `[IsMuted <Boolean?>]`: true if the participant is muted (client or server muted).
-  - `[MediaStreams <IMicrosoftGraphMediaStream1[]>]`: The list of media streams.
+  - `[MediaStreams <IMicrosoftGraphMediaStream[]>]`: The list of media streams.
     - `[Direction <String>]`: mediaDirection
     - `[Label <String>]`: The media stream label.
-    - `[MediaType <String>]`: 
+    - `[MediaType <String>]`: modality
     - `[ServerMuted <Boolean?>]`: Indicates whether the media is muted by the server.
     - `[SourceId <String>]`: The source ID.
   - `[Metadata <String>]`: A blob of data provided by the participant in the roster.
-  - `[RecordingInfo <IMicrosoftGraphRecordingInfo1>]`: recordingInfo
+  - `[RecordingInfo <IMicrosoftGraphRecordingInfo>]`: recordingInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[InitiatedBy <IMicrosoftGraphParticipantInfo1>]`: participantInfo
+    - `[InitiatedBy <IMicrosoftGraphParticipantInfo>]`: participantInfo
     - `[Initiator <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[RecordingStatus <String>]`: recordingStatus
   - `[RemovedState <IMicrosoftGraphRemovedState>]`: removedState
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Reason <String>]`: 
+    - `[Reason <String>]`: The removal reason for the participant resource.
   - `[RestrictedExperience <IMicrosoftGraphOnlineMeetingRestricted>]`: onlineMeetingRestricted
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ContentSharingDisabled <String>]`: onlineMeetingContentSharingDisabledReason
     - `[VideoDisabled <String>]`: onlineMeetingVideoDisabledReason
-  - `[RosterSequenceNumber <Int64?>]`: 
+  - `[RosterSequenceNumber <Int64?>]`: Indicates the roster sequence number the participant was last updated in.
 
-RESULTINFO `<IMicrosoftGraphResultInfo>`: resultInfo
+`RESULTINFO <IMicrosoftGraphResultInfo>`: resultInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Code <Int32?>]`: The result code.
   - `[Message <String>]`: The message.
   - `[Subcode <Int32?>]`: The result sub-code.
 
-SOURCE `<IMicrosoftGraphParticipantInfo1>`: participantInfo
+`SOURCE <IMicrosoftGraphParticipantInfo>`: participantInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CountryCode <String>]`: The ISO 3166-1 Alpha-2 country code of the participant's best estimated physical location at the start of the call. Read-only.
   - `[EndpointType <String>]`: endpointType
@@ -1415,7 +1378,7 @@ SOURCE `<IMicrosoftGraphParticipantInfo1>`: participantInfo
   - `[PlatformId <String>]`: The client platform ID of the participant. Read-only.
   - `[Region <String>]`: The home region of the participant. This can be a country, a continent, or a larger geographic region. This does not change based on the participant's current physical location, unlike countryCode. Read-only.
 
-TARGETS <IMicrosoftGraphInvitationParticipantInfo1\[]>: .
+`TARGETS <IMicrosoftGraphInvitationParticipantInfo[]>`: .
   - `[EndpointType <String>]`: endpointType
   - `[Hidden <Boolean?>]`: Optional. Whether to hide the participant from the roster.
   - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -1430,12 +1393,12 @@ TARGETS <IMicrosoftGraphInvitationParticipantInfo1\[]>: .
   - `[RemoveFromDefaultAudioRoutingGroup <Boolean?>]`: Optional. Whether to remove them from the main mixer.
   - `[ReplacesCallId <String>]`: Optional. The call which the target identity is currently a part of. For peer-to-peer case, the call will be dropped once the participant is added successfully.
 
-TONEINFO `<IMicrosoftGraphToneInfo>`: toneInfo
+`TONEINFO <IMicrosoftGraphToneInfo>`: toneInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[SequenceId <Int64?>]`: An incremental identifier used for ordering DTMF events.
   - `[Tone <String>]`: tone
 
-TRANSCRIPTION `<IMicrosoftGraphCallTranscriptionInfo>`: callTranscriptionInfo
+`TRANSCRIPTION <IMicrosoftGraphCallTranscriptionInfo>`: callTranscriptionInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[LastModifiedDateTime <DateTime?>]`: The state modified time in UTC.
   - `[State <String>]`: callTranscriptionState

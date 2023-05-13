@@ -1,27 +1,27 @@
----
-external help file: Microsoft.Graph.Notes-help.xml
-Module Name: Microsoft.Graph.Notes
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.notes/set-mgsiteonenotepagecontent
+﻿---
+external help file: Microsoft.Graph.Beta.Notes-help.xml
+Module Name: Microsoft.Graph.Beta.Notes
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/set-mgbetasiteonenotepagecontent
 schema: 2.0.0
 ---
 
-# Set-MgSiteOnenotePageContent
+# Set-MgBetaSiteOnenotePageContent
 
 ## SYNOPSIS
 The page's HTML content.
 
 ## SYNTAX
 
-### Set1 (Default)
+### Set (Default)
 ```
-Set-MgSiteOnenotePageContent -OnenotePageId <String> -SiteId <String> [-BodyParameter <Stream>]
- -InFile <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-MgBetaSiteOnenotePageContent -OnenotePageId <String> -SiteId <String> [-Data <Stream>] -InFile <String>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### SetViaIdentity1
+### SetViaIdentity
 ```
-Set-MgSiteOnenotePageContent -InputObject <INotesIdentity> [-BodyParameter <Stream>] -InFile <String>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-MgBetaSiteOnenotePageContent -InputObject <INotesIdentity> [-Data <Stream>] -InFile <String> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -29,9 +29,23 @@ The page's HTML content.
 
 ## EXAMPLES
 
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
-### -BodyParameter
+### -Data
 .
 
 ```yaml
@@ -65,11 +79,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: INotesIdentity
-Parameter Sets: SetViaIdentity1
+Parameter Sets: SetViaIdentity
 Aliases:
 
 Required: True
@@ -84,25 +98,10 @@ The unique identifier of onenotePage
 
 ```yaml
 Type: String
-Parameter Sets: Set1
+Parameter Sets: Set
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -114,7 +113,7 @@ The unique identifier of site
 
 ```yaml
 Type: String
-Parameter Sets: Set1
+Parameter Sets: Set
 Aliases:
 
 Required: True
@@ -160,11 +159,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.INotesIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.INotesIdentity
 ### System.IO.Stream
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnenotePage
 ## NOTES
 
 ALIASES
@@ -174,7 +173,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<INotesIdentity>`: Identity Parameter
+`INPUTOBJECT <INotesIdentity>`: Identity Parameter
   - `[GroupId <String>]`: The unique identifier of group
   - `[NotebookId <String>]`: The unique identifier of notebook
   - `[OnenoteOperationId <String>]`: The unique identifier of onenoteOperation

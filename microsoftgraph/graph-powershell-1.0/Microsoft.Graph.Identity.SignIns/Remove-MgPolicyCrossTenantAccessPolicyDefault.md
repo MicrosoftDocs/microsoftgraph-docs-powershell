@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/remove-mgpolicycrosstenantaccesspolicydefault
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgpolicycrosstenantaccesspolicydefault
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Remove-MgPolicyCrossTenantAccessPolicyDefault
@@ -23,9 +22,10 @@ Delete navigation property default for policies
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
+```
 
 $params = @{
 	B2bCollaborationOutbound = @{
@@ -51,11 +51,6 @@ $params = @{
 }
 
 Update-MgPolicyCrossTenantAccessPolicyDefault -BodyParameter $params
-```
-
-This example shows how to use the Remove-MgPolicyCrossTenantAccessPolicyDefault Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

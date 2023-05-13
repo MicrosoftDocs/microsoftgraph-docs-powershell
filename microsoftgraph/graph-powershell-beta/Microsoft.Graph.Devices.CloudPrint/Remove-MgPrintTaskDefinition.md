@@ -1,42 +1,41 @@
----
-external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
-Module Name: Microsoft.Graph.Devices.CloudPrint
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/remove-mgprinttaskdefinition
+﻿---
+external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
+Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/remove-mgbetaprinttaskdefinition
 schema: 2.0.0
 ---
 
-# Remove-MgPrintTaskDefinition
+# Remove-MgBetaPrintTaskDefinition
 
 ## SYNOPSIS
-Delete navigation property taskDefinitions for print
+Delete a **taskDefinition**.
+For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
 
 ## SYNTAX
 
-### Delete1 (Default)
+### Delete (Default)
 ```
-Remove-MgPrintTaskDefinition -PrintTaskDefinitionId <String> [-IfMatch <String>] [-PassThru] [-WhatIf]
+Remove-MgBetaPrintTaskDefinition -PrintTaskDefinitionId <String> [-IfMatch <String>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity1
+### DeleteViaIdentity
 ```
-Remove-MgPrintTaskDefinition -InputObject <IDevicesCloudPrintIdentity> [-IfMatch <String>] [-PassThru]
+Remove-MgBetaPrintTaskDefinition -InputObject <IDevicesCloudPrintIdentity> [-IfMatch <String>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete navigation property taskDefinitions for print
+Delete a **taskDefinition**.
+For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
 
 ## EXAMPLES
 
-### Example 1: Using the Remove-MgPrintTaskDefinition Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Devices.CloudPrint
-Remove-MgPrintTaskDefinition -PrintTaskDefinitionId $printTaskDefinitionId
+Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
+Remove-MgBetaPrintTaskDefinition -PrintTaskDefinitionId $printTaskDefinitionId
 ```
-
-This example shows how to use the Remove-MgPrintTaskDefinition Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -57,11 +56,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDevicesCloudPrintIdentity
-Parameter Sets: DeleteViaIdentity1
+Parameter Sets: DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -91,7 +90,7 @@ The unique identifier of printTaskDefinition
 
 ```yaml
 Type: String
-Parameter Sets: Delete1
+Parameter Sets: Delete
 Aliases:
 
 Required: True
@@ -137,7 +136,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IDevicesCloudPrintIdentity
 ## OUTPUTS
 
 ### System.Boolean
@@ -150,9 +149,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
+`INPUTOBJECT <IDevicesCloudPrintIdentity>`: Identity Parameter
   - `[GroupId <String>]`: The unique identifier of group
   - `[PrintConnectorId <String>]`: The unique identifier of printConnector
+  - `[PrintDocumentId <String>]`: The unique identifier of printDocument
+  - `[PrintJobId <String>]`: The unique identifier of printJob
   - `[PrintOperationId <String>]`: The unique identifier of printOperation
   - `[PrintServiceEndpointId <String>]`: The unique identifier of printServiceEndpoint
   - `[PrintServiceId <String>]`: The unique identifier of printService

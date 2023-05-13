@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdeviceconfigurationdevicestatesummary
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementdeviceconfigurationdevicestatesummary
 schema: 2.0.0
 ---
 
-# Update-MgDeviceManagementDeviceConfigurationDeviceStateSummary
+# Update-MgBetaDeviceManagementDeviceConfigurationDeviceStateSummary
 
 ## SYNOPSIS
 Update the navigation property deviceConfigurationDeviceStateSummaries in deviceManagement
@@ -14,16 +14,16 @@ Update the navigation property deviceConfigurationDeviceStateSummaries in device
 
 ### UpdateExpanded (Default)
 ```
-Update-MgDeviceManagementDeviceConfigurationDeviceStateSummary [-AdditionalProperties <Hashtable>]
+Update-MgBetaDeviceManagementDeviceConfigurationDeviceStateSummary [-AdditionalProperties <Hashtable>]
  [-CompliantDeviceCount <Int32>] [-ConflictDeviceCount <Int32>] [-ErrorDeviceCount <Int32>] [-Id <String>]
  [-NonCompliantDeviceCount <Int32>] [-NotApplicableDeviceCount <Int32>] [-RemediatedDeviceCount <Int32>]
- [-UnknownDeviceCount <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UnknownDeviceCount <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgDeviceManagementDeviceConfigurationDeviceStateSummary
- -BodyParameter <IMicrosoftGraphDeviceConfigurationDeviceStateSummary> [-PassThru] [-WhatIf] [-Confirm]
+Update-MgBetaDeviceManagementDeviceConfigurationDeviceStateSummary
+ -BodyParameter <IMicrosoftGraphDeviceConfigurationDeviceStateSummary> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -31,6 +31,20 @@ Update-MgDeviceManagementDeviceConfigurationDeviceStateSummary
 Update the navigation property deviceConfigurationDeviceStateSummaries in deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -51,7 +65,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 deviceConfigurationDeviceStateSummary
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceConfigurationDeviceStateSummary
@@ -111,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -147,21 +161,6 @@ Number of not applicable devices
 ```yaml
 Type: Int32
 Parameter Sets: UpdateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -237,10 +236,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceConfigurationDeviceStateSummary
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceConfigurationDeviceStateSummary
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceConfigurationDeviceStateSummary
 ## NOTES
 
 ALIASES
@@ -250,9 +249,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDeviceConfigurationDeviceStateSummary>`: deviceConfigurationDeviceStateSummary
+`BODYPARAMETER <IMicrosoftGraphDeviceConfigurationDeviceStateSummary>`: deviceConfigurationDeviceStateSummary
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[CompliantDeviceCount <Int32?>]`: Number of compliant devices
   - `[ConflictDeviceCount <Int32?>]`: Number of conflict devices
   - `[ErrorDeviceCount <Int32?>]`: Number of error devices

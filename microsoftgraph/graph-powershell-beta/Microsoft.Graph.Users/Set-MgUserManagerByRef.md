@@ -1,57 +1,54 @@
----
-external help file: Microsoft.Graph.Users-help.xml
-Module Name: Microsoft.Graph.Users
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/set-mgusermanagerbyref
+﻿---
+external help file: Microsoft.Graph.Beta.Users-help.xml
+Module Name: Microsoft.Graph.Beta.Users
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/set-mgbetausermanagerbyref
 schema: 2.0.0
 ---
 
-# Set-MgUserManagerByRef
+# Set-MgBetaUserManagerByRef
 
 ## SYNOPSIS
-Update the ref of navigation property manager in users
+Use this API to assign a user's manager.
 
 ## SYNTAX
 
-### SetExpanded1 (Default)
+### SetExpanded (Default)
 ```
-Set-MgUserManagerByRef -UserId <String> [-AdditionalProperties <Hashtable>] [-OdataId <String>]
+Set-MgBetaUserManagerByRef -UserId <String> -OdataId <String> [-AdditionalProperties <Hashtable>]
  [-OdataType <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Set1
+### Set
 ```
-Set-MgUserManagerByRef -UserId <String> -BodyParameter <IReferenceUpdate> [-PassThru] [-WhatIf] [-Confirm]
+Set-MgBetaUserManagerByRef -UserId <String> -BodyParameter <IReferenceUpdate> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### SetViaIdentityExpanded1
+### SetViaIdentityExpanded
 ```
-Set-MgUserManagerByRef -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>] [-OdataId <String>]
+Set-MgBetaUserManagerByRef -InputObject <IUsersIdentity> -OdataId <String> [-AdditionalProperties <Hashtable>]
  [-OdataType <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### SetViaIdentity1
+### SetViaIdentity
 ```
-Set-MgUserManagerByRef -InputObject <IUsersIdentity> -BodyParameter <IReferenceUpdate> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Set-MgBetaUserManagerByRef -InputObject <IUsersIdentity> -BodyParameter <IReferenceUpdate> [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the ref of navigation property manager in users
+Use this API to assign a user's manager.
 
 ## EXAMPLES
 
-### Example 1: Update a user's manager
+### EXAMPLE 1
 ```powershell
 $NewManager = @{
   "@odata.id"="https://graph.microsoft.com/v1.0/users/075b32dd-edb7-47cf-89ef-f3f733683a3f"
   }
-
-Set-MgUserManagerByRef -UserId '8a7c50d3-fcbd-4727-a889-8ab232dfea01' -BodyParameter $NewManager
 ```
 
-In this example, the first command defines the new manager using the $NewManager variable with id `075b32dd-edb7-47cf-89ef-f3f733683a3f`.
-The second command sets the manager for user defined by the UserId as the value provided on the $NewManager variable.
+Set-MgBetaUserManagerByRef -UserId '8a7c50d3-fcbd-4727-a889-8ab232dfea01' -BodyParameter $NewManager
 
 ## PARAMETERS
 
@@ -60,7 +57,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: SetExpanded1, SetViaIdentityExpanded1
+Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -72,11 +69,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IReferenceUpdate
-Parameter Sets: Set1, SetViaIdentity1
+Parameter Sets: Set, SetViaIdentity
 Aliases:
 
 Required: True
@@ -88,11 +85,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersIdentity
-Parameter Sets: SetViaIdentityExpanded1, SetViaIdentity1
+Parameter Sets: SetViaIdentityExpanded, SetViaIdentity
 Aliases:
 
 Required: True
@@ -103,14 +100,15 @@ Accept wildcard characters: False
 ```
 
 ### -OdataId
-.
+The entity reference URL of the resource.
+For example, https://graph.microsoft.com/v1.0/directoryObjects/{id}.
 
 ```yaml
 Type: String
-Parameter Sets: SetExpanded1, SetViaIdentityExpanded1
+Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -122,7 +120,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: SetExpanded1, SetViaIdentityExpanded1
+Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -152,7 +150,7 @@ The unique identifier of user
 
 ```yaml
 Type: String
-Parameter Sets: SetExpanded1, Set1
+Parameter Sets: SetExpanded, Set
 Aliases:
 
 Required: True
@@ -198,8 +196,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IReferenceUpdate
-### Microsoft.Graph.PowerShell.Models.IUsersIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IReferenceUpdate
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersIdentity
 ## OUTPUTS
 
 ### System.Boolean
@@ -212,12 +210,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IReferenceUpdate>`: .
+`BODYPARAMETER <IReferenceUpdate>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[OdataId <String>]`: 
+  - `OdataId <String>`: The entity reference URL of the resource. For example, https://graph.microsoft.com/v1.0/directoryObjects/{id}.
   - `[OdataType <String>]`: 
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersIdentity>`: Identity Parameter
   - `[AttachmentBaseId <String>]`: The unique identifier of attachmentBase
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[AttachmentSessionId <String>]`: The unique identifier of attachmentSession
@@ -226,7 +224,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
   - `[LinkedResourceId <String>]`: The unique identifier of linkedResource
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
   - `[NotificationId <String>]`: The unique identifier of notification
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[OutlookCategoryId <String>]`: The unique identifier of outlookCategory
@@ -234,7 +231,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
   - `[TodoTaskId <String>]`: The unique identifier of todoTask
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
   - `[UserId <String>]`: The unique identifier of user

@@ -1,69 +1,61 @@
----
-external help file: Microsoft.Graph.Sites-help.xml
-Module Name: Microsoft.Graph.Sites
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/copy-mgsiteonenotesectiontosectiongroup
+﻿---
+external help file: Microsoft.Graph.Beta.Sites-help.xml
+Module Name: Microsoft.Graph.Beta.Sites
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/copy-mgbetasiteonenotesectionpagetosection
 schema: 2.0.0
 ---
 
-# Copy-MgSiteOnenoteSectionToSectionGroup
+# Copy-MgBetaSiteOnenoteSectionPageToSection
 
 ## SYNOPSIS
-Copies a section to a specific section group.
-For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+Copy a page to a specific section.
+For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
 ## SYNTAX
 
-### CopyExpanded1 (Default)
+### CopyExpanded (Default)
 ```
-Copy-MgSiteOnenoteSectionToSectionGroup -OnenoteSectionId <String> -SiteId <String>
- [-AdditionalProperties <Hashtable>] [-GroupId <String>] [-Id <String>] [-RenameAs <String>]
- [-SiteCollectionId <String>] [-SiteId1 <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Copy-MgBetaSiteOnenoteSectionPageToSection -OnenotePageId <String> -OnenoteSectionId <String> -SiteId <String>
+ [-AdditionalProperties <Hashtable>] [-GroupId <String>] [-Id <String>] [-SiteCollectionId <String>]
+ [-SiteId1 <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Copy1
+### Copy
 ```
-Copy-MgSiteOnenoteSectionToSectionGroup -OnenoteSectionId <String> -SiteId <String>
- -BodyParameter <IPaths8ExbssSitesSiteIdOnenoteSectionsOnenotesectionIdMicrosoftGraphCopytosectiongroupPostRequestbodyContentApplicationJsonSchema>
+Copy-MgBetaSiteOnenoteSectionPageToSection -OnenotePageId <String> -OnenoteSectionId <String> -SiteId <String>
+ -BodyParameter <IPaths5LslakSitesSiteIdOnenoteSectionsOnenotesectionIdPagesOnenotepageIdMicrosoftGraphCopytosectionPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CopyViaIdentityExpanded1
+### CopyViaIdentityExpanded
 ```
-Copy-MgSiteOnenoteSectionToSectionGroup [-SiteId <String>] -InputObject <ISitesIdentity>
- [-AdditionalProperties <Hashtable>] [-GroupId <String>] [-Id <String>] [-RenameAs <String>]
- [-SiteCollectionId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Copy-MgBetaSiteOnenoteSectionPageToSection [-SiteId <String>] -InputObject <ISitesIdentity>
+ [-AdditionalProperties <Hashtable>] [-GroupId <String>] [-Id <String>] [-SiteCollectionId <String>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
-### CopyViaIdentity1
+### CopyViaIdentity
 ```
-Copy-MgSiteOnenoteSectionToSectionGroup -InputObject <ISitesIdentity>
- -BodyParameter <IPaths8ExbssSitesSiteIdOnenoteSectionsOnenotesectionIdMicrosoftGraphCopytosectiongroupPostRequestbodyContentApplicationJsonSchema>
+Copy-MgBetaSiteOnenoteSectionPageToSection -InputObject <ISitesIdentity>
+ -BodyParameter <IPaths5LslakSitesSiteIdOnenoteSectionsOnenotesectionIdPagesOnenotepageIdMicrosoftGraphCopytosectionPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Copies a section to a specific section group.
-For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+Copy a page to a specific section.
+For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Users.Actions
-
-$params = @{
-	Id = "id-value"
-	GroupId = "groupId-value"
-	RenameAs = "renameAs-value"
-}
-
-# A UPN can also be used as -UserId.
-Copy-MgUserOnenoteSectionToSectionGroup -UserId $userId -OnenoteSectionId $onenoteSectionId -BodyParameter $params
+{{ Add code here }}
 ```
 
-This example shows how to use the Copy-MgSiteOnenoteSectionToSectionGroup Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -72,7 +64,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CopyExpanded1, CopyViaIdentityExpanded1
+Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -84,11 +76,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths8ExbssSitesSiteIdOnenoteSectionsOnenotesectionIdMicrosoftGraphCopytosectiongroupPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Copy1, CopyViaIdentity1
+Type: IPaths5LslakSitesSiteIdOnenoteSectionsOnenotesectionIdPagesOnenotepageIdMicrosoftGraphCopytosectionPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Copy, CopyViaIdentity
 Aliases:
 
 Required: True
@@ -103,7 +95,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: CopyExpanded1, CopyViaIdentityExpanded1
+Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -118,7 +110,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: CopyExpanded1, CopyViaIdentityExpanded1
+Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -130,11 +122,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: CopyViaIdentityExpanded1, CopyViaIdentity1
+Parameter Sets: CopyViaIdentityExpanded, CopyViaIdentity
 Aliases:
 
 Required: True
@@ -144,12 +136,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -OnenoteSectionId
-The unique identifier of onenoteSection
+### -OnenotePageId
+The unique identifier of onenotePage
 
 ```yaml
 Type: String
-Parameter Sets: CopyExpanded1, Copy1
+Parameter Sets: CopyExpanded, Copy
 Aliases:
 
 Required: True
@@ -159,15 +151,15 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -RenameAs
-.
+### -OnenoteSectionId
+The unique identifier of onenoteSection
 
 ```yaml
 Type: String
-Parameter Sets: CopyExpanded1, CopyViaIdentityExpanded1
+Parameter Sets: CopyExpanded, Copy
 Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -179,7 +171,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: CopyExpanded1, CopyViaIdentityExpanded1
+Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -194,7 +186,7 @@ The unique identifier of site
 
 ```yaml
 Type: String
-Parameter Sets: CopyExpanded1, Copy1
+Parameter Sets: CopyExpanded, Copy
 Aliases:
 
 Required: True
@@ -206,7 +198,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: CopyViaIdentityExpanded1
+Parameter Sets: CopyViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -221,7 +213,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: CopyExpanded1
+Parameter Sets: CopyExpanded
 Aliases:
 
 Required: False
@@ -267,11 +259,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths8ExbssSitesSiteIdOnenoteSectionsOnenotesectionIdMicrosoftGraphCopytosectiongroupPostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.ISitesIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths5LslakSitesSiteIdOnenoteSectionsOnenotesectionIdPagesOnenotepageIdMicrosoftGraphCopytosectionPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnenoteOperation
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnenoteOperation
 ## NOTES
 
 ALIASES
@@ -281,15 +273,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths8ExbssSitesSiteIdOnenoteSectionsOnenotesectionIdMicrosoftGraphCopytosectiongroupPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths5LslakSitesSiteIdOnenoteSectionsOnenotesectionIdPagesOnenotepageIdMicrosoftGraphCopytosectionPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[GroupId <String>]`: 
   - `[Id <String>]`: 
-  - `[RenameAs <String>]`: 
   - `[SiteCollectionId <String>]`: 
   - `[SiteId <String>]`: 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+`INPUTOBJECT <ISitesIdentity>`: Identity Parameter
   - `[BaseItemId <String>]`: The unique identifier of baseItem
   - `[BitlockerRecoveryKeyId <String>]`: The unique identifier of bitlockerRecoveryKey
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
@@ -307,17 +298,23 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
   - `[Interval <String>]`: Usage: interval='{interval}'
+  - `[ItemActivityId <String>]`: The unique identifier of itemActivity
+  - `[ItemActivityOldId <String>]`: The unique identifier of itemActivityOLD
+  - `[ItemActivityStatId <String>]`: The unique identifier of itemActivityStat
   - `[ListId <String>]`: The unique identifier of list
-  - `[ListId1 <String>]`: Usage: listId='{listId}'
   - `[ListItemId <String>]`: The unique identifier of listItem
   - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
   - `[NotebookId <String>]`: The unique identifier of notebook
+  - `[OnenoteOperationId <String>]`: The unique identifier of onenoteOperation
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
+  - `[OnenoteResourceId <String>]`: The unique identifier of onenoteResource
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
   - `[Path <String>]`: Usage: path='{path}'
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[RelationId <String>]`: The unique identifier of relation
   - `[RichLongRunningOperationId <String>]`: The unique identifier of richLongRunningOperation
+  - `[SectionGroupId <String>]`: The unique identifier of sectionGroup
+  - `[SectionGroupId1 <String>]`: The unique identifier of sectionGroup
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SensitivityLabelId1 <String>]`: The unique identifier of sensitivityLabel
   - `[SetId <String>]`: The unique identifier of set
@@ -326,7 +323,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SiteId1 <String>]`: The unique identifier of site
   - `[SitePageId <String>]`: The unique identifier of sitePage
   - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
-  - `[StoreId <String>]`: The unique identifier of store
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term

@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Functions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Functions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.functions/get-mgdevicemanagementauditeventauditcategory
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Functions-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Functions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementauditeventauditcategory
 schema: 2.0.0
 ---
 
-# Get-MgDeviceManagementAuditEventAuditCategory
+# Get-MgBetaDeviceManagementAuditEventAuditCategory
 
 ## SYNOPSIS
 Invoke function getAuditCategories
@@ -13,14 +13,28 @@ Invoke function getAuditCategories
 ## SYNTAX
 
 ```
-Get-MgDeviceManagementAuditEventAuditCategory [-Count] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
- [-Top <Int32>] [<CommonParameters>]
+Get-MgBetaDeviceManagementAuditEventAuditCategory [-Count] [-Filter <String>] [-Search <String>]
+ [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke function getAuditCategories
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 

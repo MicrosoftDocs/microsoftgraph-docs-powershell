@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Users-help.xml
-Module Name: Microsoft.Graph.Users
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/update-mgusersettingcontactmergesuggestion
+﻿---
+external help file: Microsoft.Graph.Beta.Users-help.xml
+Module Name: Microsoft.Graph.Beta.Users
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingcontactmergesuggestion
 schema: 2.0.0
 ---
 
-# Update-MgUserSettingContactMergeSuggestion
+# Update-MgBetaUserSettingContactMergeSuggestion
 
 ## SYNOPSIS
 Update the properties of a contactMergeSuggestions object.
@@ -14,26 +14,26 @@ Update the properties of a contactMergeSuggestions object.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgUserSettingContactMergeSuggestion -UserId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-IsEnabled] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaUserSettingContactMergeSuggestion -UserId <String> [-AdditionalProperties <Hashtable>]
+ [-Id <String>] [-IsEnabled] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgUserSettingContactMergeSuggestion -UserId <String>
- -BodyParameter <IMicrosoftGraphContactMergeSuggestions> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaUserSettingContactMergeSuggestion -UserId <String>
+ -BodyParameter <IMicrosoftGraphContactMergeSuggestions> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgUserSettingContactMergeSuggestion -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-IsEnabled] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaUserSettingContactMergeSuggestion -InputObject <IUsersIdentity>
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-IsEnabled] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgUserSettingContactMergeSuggestion -InputObject <IUsersIdentity>
- -BodyParameter <IMicrosoftGraphContactMergeSuggestions> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaUserSettingContactMergeSuggestion -InputObject <IUsersIdentity>
+ -BodyParameter <IMicrosoftGraphContactMergeSuggestions> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -41,18 +41,15 @@ Update the properties of a contactMergeSuggestions object.
 
 ## EXAMPLES
 
-### Example 1: Using the Update-MgUserSettingContactMergeSuggestion Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Users
+Import-Module Microsoft.Graph.Beta.Users
 $params = @{
 	IsEnabled = $false
 }
 # A UPN can also be used as -UserId.
-Update-MgUserSettingContactMergeSuggestion -UserId $userId -BodyParameter $params
+Update-MgBetaUserSettingContactMergeSuggestion -UserId $userId -BodyParameter $params
 ```
-
-This example shows how to use the Update-MgUserSettingContactMergeSuggestion Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -73,7 +70,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 contactMergeSuggestions
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphContactMergeSuggestions
@@ -88,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -105,7 +102,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersIdentity
@@ -126,21 +123,6 @@ Default value is true.
 ```yaml
 Type: SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -201,11 +183,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContactMergeSuggestions
-### Microsoft.Graph.PowerShell.Models.IUsersIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphContactMergeSuggestions
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersIdentity
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphContactMergeSuggestions
 ## NOTES
 
 ALIASES
@@ -215,12 +197,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphContactMergeSuggestions>`: contactMergeSuggestions
+`BODYPARAMETER <IMicrosoftGraphContactMergeSuggestions>`: contactMergeSuggestions
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[IsEnabled <Boolean?>]`: true if the duplicate contact merge suggestions feature is enabled for the user; false if the feature is disabled. Default value is true.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersIdentity>`: Identity Parameter
   - `[AttachmentBaseId <String>]`: The unique identifier of attachmentBase
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[AttachmentSessionId <String>]`: The unique identifier of attachmentSession
@@ -229,7 +211,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
   - `[LinkedResourceId <String>]`: The unique identifier of linkedResource
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
   - `[NotificationId <String>]`: The unique identifier of notification
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[OutlookCategoryId <String>]`: The unique identifier of outlookCategory
@@ -237,7 +218,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
   - `[TodoTaskId <String>]`: The unique identifier of todoTask
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
   - `[UserId <String>]`: The unique identifier of user

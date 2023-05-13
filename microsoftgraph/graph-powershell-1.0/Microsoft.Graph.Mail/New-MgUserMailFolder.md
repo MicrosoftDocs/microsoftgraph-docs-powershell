@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.mail/new-mgusermailfolder
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfolder
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # New-MgUserMailFolder
@@ -53,7 +52,7 @@ If you intend a new folder to be hidden, you must set the **isHidden** property 
 
 ## EXAMPLES
 
-### Example 1: Using the New-MgUserMailFolder Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Mail
 $params = @{
@@ -63,9 +62,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgUserMailFolder -UserId $userId -BodyParameter $params
 ```
-
-This example shows how to use the New-MgUserMailFolder Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -86,7 +82,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 mailFolder
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphMailFolder
@@ -117,7 +113,7 @@ Accept wildcard characters: False
 
 ### -ChildFolders
 The collection of child folders in the mailFolder.
-To construct, please use Get-Help -Online and see NOTES section for CHILDFOLDERS properties and create a hash table.
+To construct, see NOTES section for CHILDFOLDERS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphMailFolder[]
@@ -164,7 +160,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IMailIdentity
@@ -197,7 +193,7 @@ Accept wildcard characters: False
 
 ### -MessageRules
 The collection of rules that apply to the user's Inbox folder.
-To construct, please use Get-Help -Online and see NOTES section for MESSAGERULES properties and create a hash table.
+To construct, see NOTES section for MESSAGERULES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphMessageRule[]
@@ -213,7 +209,7 @@ Accept wildcard characters: False
 
 ### -Messages
 The collection of messages in the mailFolder.
-To construct, please use Get-Help -Online and see NOTES section for MESSAGES properties and create a hash table.
+To construct, see NOTES section for MESSAGES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphMessage[]
@@ -231,7 +227,7 @@ Accept wildcard characters: False
 The collection of multi-value extended properties defined for the mailFolder.
 Read-only.
 Nullable.
-To construct, please use Get-Help -Online and see NOTES section for MULTIVALUEEXTENDEDPROPERTIES properties and create a hash table.
+To construct, see NOTES section for MULTIVALUEEXTENDEDPROPERTIES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphMultiValueLegacyExtendedProperty[]
@@ -264,7 +260,7 @@ Accept wildcard characters: False
 The collection of single-value extended properties defined for the mailFolder.
 Read-only.
 Nullable.
-To construct, please use Get-Help -Online and see NOTES section for SINGLEVALUEEXTENDEDPROPERTIES properties and create a hash table.
+To construct, see NOTES section for SINGLEVALUEEXTENDEDPROPERTIES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSingleValueLegacyExtendedProperty[]
@@ -373,7 +369,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphMailFolder>`: mailFolder
+`BODYPARAMETER <IMicrosoftGraphMailFolder>`: mailFolder
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ChildFolderCount <Int32?>]`: The number of immediate child mailFolders in the current mailFolder.
@@ -506,7 +502,7 @@ BODYPARAMETER `<IMicrosoftGraphMailFolder>`: mailFolder
   - `[TotalItemCount <Int32?>]`: The number of items in the mailFolder.
   - `[UnreadItemCount <Int32?>]`: The number of items in the mailFolder marked as unread.
 
-CHILDFOLDERS <IMicrosoftGraphMailFolder\[]>: The collection of child folders in the mailFolder.
+`CHILDFOLDERS <IMicrosoftGraphMailFolder[]>`: The collection of child folders in the mailFolder.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ChildFolderCount <Int32?>]`: The number of immediate child mailFolders in the current mailFolder.
   - `[ChildFolders <IMicrosoftGraphMailFolder[]>]`: The collection of child folders in the mailFolder.
@@ -638,21 +634,17 @@ CHILDFOLDERS <IMicrosoftGraphMailFolder\[]>: The collection of child folders in 
   - `[TotalItemCount <Int32?>]`: The number of items in the mailFolder.
   - `[UnreadItemCount <Int32?>]`: The number of items in the mailFolder marked as unread.
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+`INPUTOBJECT <IMailIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[InferenceClassificationOverrideId <String>]`: The unique identifier of inferenceClassificationOverride
   - `[MailFolderId <String>]`: The unique identifier of mailFolder
   - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
-  - `[MentionId <String>]`: The unique identifier of mention
   - `[MessageId <String>]`: The unique identifier of message
   - `[MessageRuleId <String>]`: The unique identifier of messageRule
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
-  - `[UserConfigurationId <String>]`: The unique identifier of userConfiguration
   - `[UserId <String>]`: The unique identifier of user
 
-MESSAGERULES <IMicrosoftGraphMessageRule\[]>: The collection of rules that apply to the user's Inbox folder.
+`MESSAGERULES <IMicrosoftGraphMessageRule[]>`: The collection of rules that apply to the user's Inbox folder.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Actions <IMicrosoftGraphMessageRuleActions>]`: messageRuleActions
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -713,7 +705,7 @@ MESSAGERULES <IMicrosoftGraphMessageRule\[]>: The collection of rules that apply
   - `[IsReadOnly <Boolean?>]`: Indicates if the rule is read-only and cannot be modified or deleted by the rules REST API.
   - `[Sequence <Int32?>]`: Indicates the order in which the rule is executed, among other rules.
 
-MESSAGES <IMicrosoftGraphMessage\[]>: The collection of messages in the mailFolder.
+`MESSAGES <IMicrosoftGraphMessage[]>`: The collection of messages in the mailFolder.
   - `[Categories <String[]>]`: The categories associated with the item
   - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
   - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -778,11 +770,11 @@ MESSAGES <IMicrosoftGraphMessage\[]>: The collection of messages in the mailFold
   - `[UniqueBody <IMicrosoftGraphItemBody>]`: itemBody
   - `[WebLink <String>]`: 
 
-MULTIVALUEEXTENDEDPROPERTIES <IMicrosoftGraphMultiValueLegacyExtendedProperty\[]>: The collection of multi-value extended properties defined for the mailFolder. Read-only. Nullable.
+`MULTIVALUEEXTENDEDPROPERTIES <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>`: The collection of multi-value extended properties defined for the mailFolder. Read-only. Nullable.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Value <String[]>]`: A collection of property values.
 
-SINGLEVALUEEXTENDEDPROPERTIES <IMicrosoftGraphSingleValueLegacyExtendedProperty\[]>: The collection of single-value extended properties defined for the mailFolder. Read-only. Nullable.
+`SINGLEVALUEEXTENDEDPROPERTIES <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>`: The collection of single-value extended properties defined for the mailFolder. Read-only. Nullable.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Value <String>]`: A property value.
 

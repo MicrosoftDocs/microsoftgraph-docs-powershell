@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.Governance-help.xml
-Module Name: Microsoft.Graph.Identity.Governance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementaccesspackagecatalogaccesspackageresourcescope
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.Governance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackagecatalogaccesspackageresourcescope
 schema: 2.0.0
 ---
 
-# Get-MgEntitlementManagementAccessPackageCatalogAccessPackageResourceScope
+# Get-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageResourceScope
 
 ## SYNOPSIS
 Get accessPackageResourceScopes from identityGovernance
@@ -13,7 +13,7 @@ Get accessPackageResourceScopes from identityGovernance
 ## SYNTAX
 
 ```
-Get-MgEntitlementManagementAccessPackageCatalogAccessPackageResourceScope -AccessPackageCatalogId <String>
+Get-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageResourceScope -AccessPackageCatalogId <String>
  [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
  [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
@@ -22,6 +22,20 @@ Get-MgEntitlementManagementAccessPackageCatalogAccessPackageResourceScope -Acces
 Get accessPackageResourceScopes from identityGovernance
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -198,7 +212,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResourceScope
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessPackageResourceScope
 ## NOTES
 
 ALIASES

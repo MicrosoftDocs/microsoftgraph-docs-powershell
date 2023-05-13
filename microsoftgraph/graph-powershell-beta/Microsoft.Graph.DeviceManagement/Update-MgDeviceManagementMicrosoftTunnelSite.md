@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementmicrosofttunnelsite
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmicrosofttunnelsite
 schema: 2.0.0
 ---
 
-# Update-MgDeviceManagementMicrosoftTunnelSite
+# Update-MgBetaDeviceManagementMicrosoftTunnelSite
 
 ## SYNOPSIS
 Update the navigation property microsoftTunnelSites in deviceManagement
@@ -14,44 +14,58 @@ Update the navigation property microsoftTunnelSites in deviceManagement
 
 ### UpdateExpanded (Default)
 ```
-Update-MgDeviceManagementMicrosoftTunnelSite -MicrosoftTunnelSiteId <String>
+Update-MgBetaDeviceManagementMicrosoftTunnelSite -MicrosoftTunnelSiteId <String>
  [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
  [-InternalNetworkProbeUrl <String>]
  [-MicrosoftTunnelConfiguration <IMicrosoftGraphMicrosoftTunnelConfiguration>]
  [-MicrosoftTunnelServers <IMicrosoftGraphMicrosoftTunnelServer[]>] [-PublicAddress <String>]
  [-RoleScopeTagIds <String[]>] [-UpgradeAutomatically] [-UpgradeAvailable] [-UpgradeWindowEndTime <String>]
- [-UpgradeWindowStartTime <String>] [-UpgradeWindowUtcOffsetInMinutes <Int32>] [-PassThru] [-WhatIf] [-Confirm]
+ [-UpgradeWindowStartTime <String>] [-UpgradeWindowUtcOffsetInMinutes <Int32>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgDeviceManagementMicrosoftTunnelSite -MicrosoftTunnelSiteId <String>
- -BodyParameter <IMicrosoftGraphMicrosoftTunnelSite> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaDeviceManagementMicrosoftTunnelSite -MicrosoftTunnelSiteId <String>
+ -BodyParameter <IMicrosoftGraphMicrosoftTunnelSite> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgDeviceManagementMicrosoftTunnelSite -InputObject <IDeviceManagementIdentity>
+Update-MgBetaDeviceManagementMicrosoftTunnelSite -InputObject <IDeviceManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
  [-InternalNetworkProbeUrl <String>]
  [-MicrosoftTunnelConfiguration <IMicrosoftGraphMicrosoftTunnelConfiguration>]
  [-MicrosoftTunnelServers <IMicrosoftGraphMicrosoftTunnelServer[]>] [-PublicAddress <String>]
  [-RoleScopeTagIds <String[]>] [-UpgradeAutomatically] [-UpgradeAvailable] [-UpgradeWindowEndTime <String>]
- [-UpgradeWindowStartTime <String>] [-UpgradeWindowUtcOffsetInMinutes <Int32>] [-PassThru] [-WhatIf] [-Confirm]
+ [-UpgradeWindowStartTime <String>] [-UpgradeWindowUtcOffsetInMinutes <Int32>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgDeviceManagementMicrosoftTunnelSite -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphMicrosoftTunnelSite> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaDeviceManagementMicrosoftTunnelSite -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphMicrosoftTunnelSite> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property microsoftTunnelSites in deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -72,7 +86,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Entity that represents a Microsoft Tunnel site
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphMicrosoftTunnelSite
@@ -118,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -135,7 +149,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementIdentity
@@ -166,7 +180,7 @@ Accept wildcard characters: False
 
 ### -MicrosoftTunnelConfiguration
 Entity that represents a collection of Microsoft Tunnel settings
-To construct, please use Get-Help -Online and see NOTES section for MICROSOFTTUNNELCONFIGURATION properties and create a hash table.
+To construct, see NOTES section for MICROSOFTTUNNELCONFIGURATION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphMicrosoftTunnelConfiguration
@@ -182,7 +196,7 @@ Accept wildcard characters: False
 
 ### -MicrosoftTunnelServers
 A list of MicrosoftTunnelServers that are registered to this MicrosoftTunnelSite
-To construct, please use Get-Help -Online and see NOTES section for MICROSOFTTUNNELSERVERS properties and create a hash table.
+To construct, see NOTES section for MICROSOFTTUNNELSERVERS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphMicrosoftTunnelServer[]
@@ -205,21 +219,6 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -368,11 +367,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMicrosoftTunnelSite
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMicrosoftTunnelSite
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMicrosoftTunnelSite
 ## NOTES
 
 ALIASES
@@ -382,15 +381,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphMicrosoftTunnelSite>`: Entity that represents a Microsoft Tunnel site
+`BODYPARAMETER <IMicrosoftGraphMicrosoftTunnelSite>`: Entity that represents a Microsoft Tunnel site
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Description <String>]`: The site's description (optional)
   - `[DisplayName <String>]`: The display name for the site. This property is required when a site is created.
   - `[InternalNetworkProbeUrl <String>]`: The site's Internal Network Access Probe URL
   - `[MicrosoftTunnelConfiguration <IMicrosoftGraphMicrosoftTunnelConfiguration>]`: Entity that represents a collection of Microsoft Tunnel settings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[AdvancedSettings <IMicrosoftGraphKeyValuePair[]>]`: Additional settings that may be applied to the server
       - `[Name <String>]`: Name for this key-value pair
       - `[Value <String>]`: Value for this key-value pair
@@ -409,7 +408,7 @@ BODYPARAMETER `<IMicrosoftGraphMicrosoftTunnelSite>`: Entity that represents a M
     - `[RoutesInclude <String[]>]`: The routes that will be routed by the server. This property is going to be deprecated with the option of using the new property, 'RouteIncludes'.
     - `[SplitDns <String[]>]`: The domains that will be resolved using the provided dns servers
   - `[MicrosoftTunnelServers <IMicrosoftGraphMicrosoftTunnelServer[]>]`: A list of MicrosoftTunnelServers that are registered to this MicrosoftTunnelSite
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[AgentImageDigest <String>]`: The digest of the current agent image running on this server
     - `[DisplayName <String>]`: The display name for the server. This property is required when a server is created and cannot be cleared during updates.
     - `[LastCheckinDateTime <DateTime?>]`: Indicates when the server last checked in
@@ -423,7 +422,7 @@ BODYPARAMETER `<IMicrosoftGraphMicrosoftTunnelSite>`: Entity that represents a M
   - `[UpgradeWindowStartTime <String>]`: The site's upgrade window start time of day
   - `[UpgradeWindowUtcOffsetInMinutes <Int32?>]`: The site's timezone represented as a minute offset from UTC
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementIdentity>`: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: The unique identifier of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: The unique identifier of androidManagedStoreAppConfigurationSchema
@@ -555,10 +554,12 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionAppLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionAppLearningSummary
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
+  - `[WindowsQualityUpdateProfileAssignmentId <String>]`: The unique identifier of windowsQualityUpdateProfileAssignment
+  - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
-MICROSOFTTUNNELCONFIGURATION `<IMicrosoftGraphMicrosoftTunnelConfiguration>`: Entity that represents a collection of Microsoft Tunnel settings
+`MICROSOFTTUNNELCONFIGURATION <IMicrosoftGraphMicrosoftTunnelConfiguration>`: Entity that represents a collection of Microsoft Tunnel settings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AdvancedSettings <IMicrosoftGraphKeyValuePair[]>]`: Additional settings that may be applied to the server
     - `[Name <String>]`: Name for this key-value pair
     - `[Value <String>]`: Value for this key-value pair
@@ -577,8 +578,8 @@ MICROSOFTTUNNELCONFIGURATION `<IMicrosoftGraphMicrosoftTunnelConfiguration>`: En
   - `[RoutesInclude <String[]>]`: The routes that will be routed by the server. This property is going to be deprecated with the option of using the new property, 'RouteIncludes'.
   - `[SplitDns <String[]>]`: The domains that will be resolved using the provided dns servers
 
-MICROSOFTTUNNELSERVERS <IMicrosoftGraphMicrosoftTunnelServer\[]>: A list of MicrosoftTunnelServers that are registered to this MicrosoftTunnelSite
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`MICROSOFTTUNNELSERVERS <IMicrosoftGraphMicrosoftTunnelServer[]>`: A list of MicrosoftTunnelServers that are registered to this MicrosoftTunnelSite
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AgentImageDigest <String>]`: The digest of the current agent image running on this server
   - `[DisplayName <String>]`: The display name for the server. This property is required when a server is created and cannot be cleared during updates.
   - `[LastCheckinDateTime <DateTime?>]`: Indicates when the server last checked in

@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Search-help.xml
-Module Name: Microsoft.Graph.Search
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/new-mgsearchbookmark
+﻿---
+external help file: Microsoft.Graph.Beta.Search-help.xml
+Module Name: Microsoft.Graph.Beta.Search
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetasearchbookmark
 schema: 2.0.0
 ---
 
-# New-MgSearchBookmark
+# New-MgBetaSearchBookmark
 
 ## SYNOPSIS
 Create a new bookmark object.
@@ -14,7 +14,7 @@ Create a new bookmark object.
 
 ### CreateExpanded (Default)
 ```
-New-MgSearchBookmark [-AdditionalProperties <Hashtable>] [-AvailabilityEndDateTime <DateTime>]
+New-MgBetaSearchBookmark [-AdditionalProperties <Hashtable>] [-AvailabilityEndDateTime <DateTime>]
  [-AvailabilityStartDateTime <DateTime>] [-Categories <String[]>] [-Description <String>]
  [-DisplayName <String>] [-GroupIds <String[]>] [-Id <String>] [-IsSuggested]
  [-Keywords <IMicrosoftGraphSearchAnswerKeyword>] [-LanguageTags <String[]>]
@@ -26,7 +26,8 @@ New-MgSearchBookmark [-AdditionalProperties <Hashtable>] [-AvailabilityEndDateTi
 
 ### Create
 ```
-New-MgSearchBookmark -BodyParameter <IMicrosoftGraphSearchBookmark> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaSearchBookmark -BodyParameter <IMicrosoftGraphSearchBookmark> [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -34,9 +35,9 @@ Create a new bookmark object.
 
 ## EXAMPLES
 
-### Example 1: Using the New-MgSearchBookmark Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Search
+Import-Module Microsoft.Graph.Beta.Search
 $params = @{
 	DisplayName = "Contoso Install Site"
 	WebUrl = "http://www.contoso.com/"
@@ -65,11 +66,8 @@ $params = @{
 	)
 	State = "published"
 }
-New-MgSearchBookmark -BodyParameter $params
+New-MgBetaSearchBookmark -BodyParameter $params
 ```
-
-This example shows how to use the New-MgSearchBookmark Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -122,7 +120,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 bookmark
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSearchBookmark
@@ -198,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -231,7 +229,7 @@ Accept wildcard characters: False
 
 ### -Keywords
 answerKeyword
-To construct, please use Get-Help -Online and see NOTES section for KEYWORDS properties and create a hash table.
+To construct, see NOTES section for KEYWORDS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSearchAnswerKeyword
@@ -265,7 +263,7 @@ Accept wildcard characters: False
 
 ### -LastModifiedBy
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBY properties and create a hash table.
+To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSearchIdentitySet
@@ -346,7 +344,7 @@ Accept wildcard characters: False
 Variations of a bookmark for different countries or devices.
 Use when you need to show different content to users based on their device, country/region, or both.
 The date and group settings will apply to all variations.
-To construct, please use Get-Help -Online and see NOTES section for TARGETEDVARIATIONS properties and create a hash table.
+To construct, see NOTES section for TARGETEDVARIATIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSearchAnswerVariant[]
@@ -412,10 +410,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSearchBookmark
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSearchBookmark
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSearchBookmark
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSearchBookmark
 ## NOTES
 
 ALIASES
@@ -425,7 +423,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSearchBookmark>`: bookmark
+`BODYPARAMETER <IMicrosoftGraphSearchBookmark>`: bookmark
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Description <String>]`: Search answer description shown on search results page.
   - `[DisplayName <String>]`: Search answer name displayed in search results.
@@ -439,7 +437,7 @@ BODYPARAMETER `<IMicrosoftGraphSearchBookmark>`: bookmark
     - `[User <IMicrosoftGraphSearchIdentity>]`: identity
   - `[LastModifiedDateTime <DateTime?>]`: Timestamp of when the search answer is created or edited. Read-only.
   - `[WebUrl <String>]`: Search answer URL link. When users click this search answer in search results, they will go to this URL.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AvailabilityEndDateTime <DateTime?>]`: Timestamp of when the bookmark will stop to appear as a search result. Set as null for always available.
   - `[AvailabilityStartDateTime <DateTime?>]`: Timestamp of when the bookmark will start to appear as a search result. Set as null for always available.
   - `[Categories <String[]>]`: Categories commonly used to describe this bookmark. For example, IT and HR.
@@ -461,13 +459,13 @@ BODYPARAMETER `<IMicrosoftGraphSearchBookmark>`: bookmark
     - `[Platform <DevicePlatformType?>]`: Supported platform types.
     - `[WebUrl <String>]`: Answer variation URL link. When users click this answer variation in search results, they will go to this URL.
 
-KEYWORDS `<IMicrosoftGraphSearchAnswerKeyword>`: answerKeyword
+`KEYWORDS <IMicrosoftGraphSearchAnswerKeyword>`: answerKeyword
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Keywords <String[]>]`: A collection of keywords used to trigger the search answer.
   - `[MatchSimilarKeywords <Boolean?>]`: If true, indicates that the search term contains similar words to the keywords that should trigger the search answer.
   - `[ReservedKeywords <String[]>]`: Unique keywords that will guarantee the search answer is triggered.
 
-LASTMODIFIEDBY `<IMicrosoftGraphSearchIdentitySet>`: identitySet
+`LASTMODIFIEDBY <IMicrosoftGraphSearchIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphSearchIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -476,7 +474,7 @@ LASTMODIFIEDBY `<IMicrosoftGraphSearchIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphSearchIdentity>]`: identity
   - `[User <IMicrosoftGraphSearchIdentity>]`: identity
 
-TARGETEDVARIATIONS <IMicrosoftGraphSearchAnswerVariant\[]>: Variations of a bookmark for different countries or devices. Use when you need to show different content to users based on their device, country/region, or both. The date and group settings will apply to all variations.
+`TARGETEDVARIATIONS <IMicrosoftGraphSearchAnswerVariant[]>`: Variations of a bookmark for different countries or devices. Use when you need to show different content to users based on their device, country/region, or both. The date and group settings will apply to all variations.
   - `[Description <String>]`: Answer variation description shown on search results page.
   - `[DisplayName <String>]`: Answer variation name displayed in search results.
   - `[LanguageTag <String>]`: 

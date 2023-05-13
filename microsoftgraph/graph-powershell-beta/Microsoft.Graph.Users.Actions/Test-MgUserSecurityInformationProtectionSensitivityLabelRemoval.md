@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Users.Actions-help.xml
-Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/test-mgusersecurityinformationprotectionsensitivitylabelremoval
+﻿---
+external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.Users.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetausersecurityinformationprotectionsensitivitylabelremoval
 schema: 2.0.0
 ---
 
-# Test-MgUserSecurityInformationProtectionSensitivityLabelRemoval
+# Test-MgBetaUserSecurityInformationProtectionSensitivityLabelRemoval
 
 ## SYNOPSIS
 Indicate to the consuming application what actions it should take to remove the label information.
@@ -15,7 +15,7 @@ Given contentInfo as an input, which includes existing content metadata key-valu
 
 ### EvaluateExpanded (Default)
 ```
-Test-MgUserSecurityInformationProtectionSensitivityLabelRemoval -UserId <String>
+Test-MgBetaUserSecurityInformationProtectionSensitivityLabelRemoval -UserId <String>
  [-AdditionalProperties <Hashtable>] [-ContentInfo <IMicrosoftGraphSecurityContentInfo>]
  [-DowngradeJustification <IMicrosoftGraphSecurityDowngradeJustification>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -23,14 +23,14 @@ Test-MgUserSecurityInformationProtectionSensitivityLabelRemoval -UserId <String>
 
 ### Evaluate
 ```
-Test-MgUserSecurityInformationProtectionSensitivityLabelRemoval -UserId <String>
+Test-MgBetaUserSecurityInformationProtectionSensitivityLabelRemoval -UserId <String>
  -BodyParameter <IPathsZhdpmhUsersUserIdSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityEvaluateremovalPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### EvaluateViaIdentityExpanded
 ```
-Test-MgUserSecurityInformationProtectionSensitivityLabelRemoval -InputObject <IUsersActionsIdentity>
+Test-MgBetaUserSecurityInformationProtectionSensitivityLabelRemoval -InputObject <IUsersActionsIdentity>
  [-AdditionalProperties <Hashtable>] [-ContentInfo <IMicrosoftGraphSecurityContentInfo>]
  [-DowngradeJustification <IMicrosoftGraphSecurityDowngradeJustification>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -38,7 +38,7 @@ Test-MgUserSecurityInformationProtectionSensitivityLabelRemoval -InputObject <IU
 
 ### EvaluateViaIdentity
 ```
-Test-MgUserSecurityInformationProtectionSensitivityLabelRemoval -InputObject <IUsersActionsIdentity>
+Test-MgBetaUserSecurityInformationProtectionSensitivityLabelRemoval -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPathsZhdpmhUsersUserIdSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityEvaluateremovalPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -49,9 +49,9 @@ Given contentInfo as an input, which includes existing content metadata key-valu
 
 ## EXAMPLES
 
-### Example 1: Using the Test-MgUserSecurityInformationProtectionSensitivityLabelRemoval Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Users.Actions
+Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
 	ContentInfo = @{
 		"@odata.type" = "#microsoft.graph.security.contentInfo"
@@ -97,11 +97,8 @@ $params = @{
 		IsDowngradeJustified = $true
 	}
 }
-Test-MgUserSecurityInformationProtectionSensitivityLabelRemoval -UserId $userId -BodyParameter $params
+Test-MgBetaUserSecurityInformationProtectionSensitivityLabelRemoval -UserId $userId -BodyParameter $params
 ```
-
-This example shows how to use the Test-MgUserSecurityInformationProtectionSensitivityLabelRemoval Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -122,7 +119,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPathsZhdpmhUsersUserIdSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityEvaluateremovalPostRequestbodyContentApplicationJsonSchema
@@ -138,7 +135,7 @@ Accept wildcard characters: False
 
 ### -ContentInfo
 contentInfo
-To construct, please use Get-Help -Online and see NOTES section for CONTENTINFO properties and create a hash table.
+To construct, see NOTES section for CONTENTINFO properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSecurityContentInfo
@@ -154,7 +151,7 @@ Accept wildcard characters: False
 
 ### -DowngradeJustification
 downgradeJustification
-To construct, please use Get-Help -Online and see NOTES section for DOWNGRADEJUSTIFICATION properties and create a hash table.
+To construct, see NOTES section for DOWNGRADEJUSTIFICATION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSecurityDowngradeJustification
@@ -170,7 +167,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersActionsIdentity
@@ -235,11 +232,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsZhdpmhUsersUserIdSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityEvaluateremovalPostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsZhdpmhUsersUserIdSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityEvaluateremovalPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityInformationProtectionAction
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityInformationProtectionAction
 ## NOTES
 
 ALIASES
@@ -249,7 +246,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsZhdpmhUsersUserIdSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityEvaluateremovalPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsZhdpmhUsersUserIdSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityEvaluateremovalPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ContentInfo <IMicrosoftGraphSecurityContentInfo>]`: contentInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -264,7 +261,7 @@ BODYPARAMETER `<IPathsZhdpmhUsersUserIdSecurityInformationprotectionSensitivityl
     - `[IsDowngradeJustified <Boolean?>]`: Indicates whether the downgrade is or is not justified.
     - `[JustificationMessage <String>]`: Message that indicates why a downgrade is justified. The message will appear in administrative logs.
 
-CONTENTINFO `<IMicrosoftGraphSecurityContentInfo>`: contentInfo
+`CONTENTINFO <IMicrosoftGraphSecurityContentInfo>`: contentInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ContentFormat <String>]`: The format of the content to be labeled. Possible values are: file, email.
   - `[Identifier <String>]`: Identifier used for Azure Information Protection Analytics.
@@ -273,12 +270,12 @@ CONTENTINFO `<IMicrosoftGraphSecurityContentInfo>`: contentInfo
     - `[Value <String>]`: Value for this key-value pair.
   - `[State <String>]`: contentState
 
-DOWNGRADEJUSTIFICATION `<IMicrosoftGraphSecurityDowngradeJustification>`: downgradeJustification
+`DOWNGRADEJUSTIFICATION <IMicrosoftGraphSecurityDowngradeJustification>`: downgradeJustification
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[IsDowngradeJustified <Boolean?>]`: Indicates whether the downgrade is or is not justified.
   - `[JustificationMessage <String>]`: Message that indicates why a downgrade is justified. The message will appear in administrative logs.
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
@@ -312,7 +309,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription

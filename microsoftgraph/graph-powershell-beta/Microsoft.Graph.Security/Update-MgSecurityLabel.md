@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecuritylabel
+﻿---
+external help file: Microsoft.Graph.Beta.Security-help.xml
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritylabel
 schema: 2.0.0
 ---
 
-# Update-MgSecurityLabel
+# Update-MgBetaSecurityLabel
 
 ## SYNOPSIS
 Update the navigation property labels in security
@@ -14,14 +14,13 @@ Update the navigation property labels in security
 
 ### UpdateExpanded (Default)
 ```
-Update-MgSecurityLabel [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-RetentionLabels <IMicrosoftGraphSecurityRetentionLabel[]>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaSecurityLabel [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-RetentionLabels <IMicrosoftGraphSecurityRetentionLabel[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgSecurityLabel -BodyParameter <IMicrosoftGraphSecurityLabelsRoot> [-PassThru] [-WhatIf] [-Confirm]
+Update-MgBetaSecurityLabel -BodyParameter <IMicrosoftGraphSecurityLabelsRoot> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -29,6 +28,20 @@ Update-MgSecurityLabel -BodyParameter <IMicrosoftGraphSecurityLabelsRoot> [-Pass
 Update the navigation property labels in security
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -49,7 +62,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 labelsRoot
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSecurityLabelsRoot
@@ -64,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -79,24 +92,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -RetentionLabels
 .
-To construct, please use Get-Help -Online and see NOTES section for RETENTIONLABELS properties and create a hash table.
+To construct, see NOTES section for RETENTIONLABELS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSecurityRetentionLabel[]
@@ -146,10 +144,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityLabelsRoot
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityLabelsRoot
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityLabelsRoot
 ## NOTES
 
 ALIASES
@@ -159,11 +157,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSecurityLabelsRoot>`: labelsRoot
+`BODYPARAMETER <IMicrosoftGraphSecurityLabelsRoot>`: labelsRoot
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[RetentionLabels <IMicrosoftGraphSecurityRetentionLabel[]>]`: 
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[ActionAfterRetentionPeriod <String>]`: actionAfterRetentionPeriod
     - `[BehaviorDuringRetentionPeriod <String>]`: behaviorDuringRetentionPeriod
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -180,7 +178,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityLabelsRoot>`: labelsRoot
     - `[DescriptionForUsers <String>]`: Provides the label information for the user. Optional.
     - `[DisplayName <String>]`: Unique string that defines a label name.
     - `[DispositionReviewStages <IMicrosoftGraphSecurityDispositionReviewStage[]>]`: Review stages during which reviewers are notified to determine whether a document must be deleted or retained.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Name <String>]`: Name representing each stage within a collection.
       - `[ReviewersEmailAddresses <String[]>]`: A collection of reviewers at each stage.
       - `[StageNumber <Int32?>]`: The sequence number for each stage of the disposition review.
@@ -192,7 +190,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityLabelsRoot>`: labelsRoot
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[RetentionEventType <IMicrosoftGraphSecurityRetentionEventType>]`: retentionEventType
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[CreatedDateTime <DateTime?>]`: The date time when the retentionEventType was created.
       - `[Description <String>]`: Optional information about the event type.
@@ -201,8 +199,8 @@ BODYPARAMETER `<IMicrosoftGraphSecurityLabelsRoot>`: labelsRoot
       - `[LastModifiedDateTime <DateTime?>]`: The latest date time when the retentionEventType was modified.
     - `[RetentionTrigger <String>]`: retentionTrigger
 
-RETENTIONLABELS <IMicrosoftGraphSecurityRetentionLabel\[]>: .
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`RETENTIONLABELS <IMicrosoftGraphSecurityRetentionLabel[]>`: .
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ActionAfterRetentionPeriod <String>]`: actionAfterRetentionPeriod
   - `[BehaviorDuringRetentionPeriod <String>]`: behaviorDuringRetentionPeriod
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -219,7 +217,7 @@ RETENTIONLABELS <IMicrosoftGraphSecurityRetentionLabel\[]>: .
   - `[DescriptionForUsers <String>]`: Provides the label information for the user. Optional.
   - `[DisplayName <String>]`: Unique string that defines a label name.
   - `[DispositionReviewStages <IMicrosoftGraphSecurityDispositionReviewStage[]>]`: Review stages during which reviewers are notified to determine whether a document must be deleted or retained.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Name <String>]`: Name representing each stage within a collection.
     - `[ReviewersEmailAddresses <String[]>]`: A collection of reviewers at each stage.
     - `[StageNumber <Int32?>]`: The sequence number for each stage of the disposition review.
@@ -231,7 +229,7 @@ RETENTIONLABELS <IMicrosoftGraphSecurityRetentionLabel\[]>: .
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[RetentionEventType <IMicrosoftGraphSecurityRetentionEventType>]`: retentionEventType
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[CreatedDateTime <DateTime?>]`: The date time when the retentionEventType was created.
     - `[Description <String>]`: Optional information about the event type.

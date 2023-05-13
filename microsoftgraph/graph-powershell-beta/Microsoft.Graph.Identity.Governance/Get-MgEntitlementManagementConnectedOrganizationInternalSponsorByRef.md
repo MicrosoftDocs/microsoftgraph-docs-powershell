@@ -1,12 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.Governance-help.xml
-Module Name: Microsoft.Graph.Identity.Governance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementconnectedorganizationinternalsponsorbyref
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.Governance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementconnectedorganizationinternalsponsorbyref
 schema: 2.0.0
-ms.prod: governance
 ---
 
-# Get-MgEntitlementManagementConnectedOrganizationInternalSponsorByRef
+# Get-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorByRef
 
 ## SYNOPSIS
 Retrieve a list of a connectedOrganization's internal sponsors.
@@ -15,7 +14,7 @@ The internal sponsors are a set of users who can approve requests on behalf of o
 ## SYNTAX
 
 ```
-Get-MgEntitlementManagementConnectedOrganizationInternalSponsorByRef -ConnectedOrganizationId <String>
+Get-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorByRef -ConnectedOrganizationId <String>
  [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
  [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
@@ -25,6 +24,20 @@ Retrieve a list of a connectedOrganization's internal sponsors.
 The internal sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 

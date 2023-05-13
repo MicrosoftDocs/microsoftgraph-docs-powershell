@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticapphealthosversionperformance
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticapphealthosversionperformance
 schema: 2.0.0
 ---
 
-# New-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance
+# New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance
 
 ## SYNOPSIS
 Create new navigation property to userExperienceAnalyticsAppHealthOSVersionPerformance for deviceManagement
@@ -14,7 +14,7 @@ Create new navigation property to userExperienceAnalyticsAppHealthOSVersionPerfo
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance [-ActiveDeviceCount <Int32>]
+New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance [-ActiveDeviceCount <Int32>]
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-MeanTimeToFailureInMinutes <Int32>]
  [-OSBuildNumber <String>] [-OSVersion <String>] [-OSVersionAppHealthScore <Double>]
  [-OSVersionAppHealthStatus <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -22,7 +22,7 @@ New-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance [-Acti
 
 ### Create
 ```
-New-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance
+New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance
  -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAppHealthOSVersionPerformance> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
@@ -31,6 +31,20 @@ New-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance
 Create new navigation property to userExperienceAnalyticsAppHealthOSVersionPerformance for deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -67,7 +81,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 The user experience analytics device OS version performance entity contains OS version performance details.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserExperienceAnalyticsAppHealthOSVersionPerformance
@@ -82,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -210,10 +224,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAppHealthOSVersionPerformance
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAppHealthOSVersionPerformance
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAppHealthOSVersionPerformance
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAppHealthOSVersionPerformance
 ## NOTES
 
 ALIASES
@@ -223,9 +237,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsAppHealthOSVersionPerformance>`: The user experience analytics device OS version performance entity contains OS version performance details.
+`BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsAppHealthOSVersionPerformance>`: The user experience analytics device OS version performance entity contains OS version performance details.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ActiveDeviceCount <Int32?>]`: The number of active devices for the OS version. Valid values -2147483648 to 2147483647
   - `[MeanTimeToFailureInMinutes <Int32?>]`: The mean time to failure for the OS version in minutes. Valid values -2147483648 to 2147483647
   - `[OSBuildNumber <String>]`: The OS build number installed on the device.

@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementcompliancepolicyscheduledactionforrule
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementcompliancepolicyscheduledactionforrule
 schema: 2.0.0
 ---
 
-# New-MgDeviceManagementCompliancePolicyScheduledActionForRule
+# New-MgBetaDeviceManagementCompliancePolicyScheduledActionForRule
 
 ## SYNOPSIS
 Create new navigation property to scheduledActionsForRule for deviceManagement
@@ -14,7 +14,7 @@ Create new navigation property to scheduledActionsForRule for deviceManagement
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementCompliancePolicyScheduledActionForRule -DeviceManagementCompliancePolicyId <String>
+New-MgBetaDeviceManagementCompliancePolicyScheduledActionForRule -DeviceManagementCompliancePolicyId <String>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-RuleName <String>]
  [-ScheduledActionConfigurations <IMicrosoftGraphDeviceManagementComplianceActionItem[]>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -22,14 +22,14 @@ New-MgDeviceManagementCompliancePolicyScheduledActionForRule -DeviceManagementCo
 
 ### Create
 ```
-New-MgDeviceManagementCompliancePolicyScheduledActionForRule -DeviceManagementCompliancePolicyId <String>
+New-MgBetaDeviceManagementCompliancePolicyScheduledActionForRule -DeviceManagementCompliancePolicyId <String>
  -BodyParameter <IMicrosoftGraphDeviceManagementComplianceScheduledActionForRule> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgDeviceManagementCompliancePolicyScheduledActionForRule -InputObject <IDeviceManagementIdentity>
+New-MgBetaDeviceManagementCompliancePolicyScheduledActionForRule -InputObject <IDeviceManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-RuleName <String>]
  [-ScheduledActionConfigurations <IMicrosoftGraphDeviceManagementComplianceActionItem[]>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -37,7 +37,7 @@ New-MgDeviceManagementCompliancePolicyScheduledActionForRule -InputObject <IDevi
 
 ### CreateViaIdentity
 ```
-New-MgDeviceManagementCompliancePolicyScheduledActionForRule -InputObject <IDeviceManagementIdentity>
+New-MgBetaDeviceManagementCompliancePolicyScheduledActionForRule -InputObject <IDeviceManagementIdentity>
  -BodyParameter <IMicrosoftGraphDeviceManagementComplianceScheduledActionForRule> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
@@ -46,6 +46,20 @@ New-MgDeviceManagementCompliancePolicyScheduledActionForRule -InputObject <IDevi
 Create new navigation property to scheduledActionsForRule for deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -66,7 +80,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Scheduled Action for Rule
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementComplianceScheduledActionForRule
@@ -96,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -113,7 +127,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementIdentity
@@ -145,7 +159,7 @@ Accept wildcard characters: False
 ### -ScheduledActionConfigurations
 The list of scheduled action configurations for this compliance policy.
 This collection can contain a maximum of 100 elements.
-To construct, please use Get-Help -Online and see NOTES section for SCHEDULEDACTIONCONFIGURATIONS properties and create a hash table.
+To construct, see NOTES section for SCHEDULEDACTIONCONFIGURATIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementComplianceActionItem[]
@@ -195,11 +209,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementComplianceScheduledActionForRule
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementComplianceScheduledActionForRule
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementComplianceScheduledActionForRule
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementComplianceScheduledActionForRule
 ## NOTES
 
 ALIASES
@@ -209,18 +223,18 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDeviceManagementComplianceScheduledActionForRule>`: Scheduled Action for Rule
+`BODYPARAMETER <IMicrosoftGraphDeviceManagementComplianceScheduledActionForRule>`: Scheduled Action for Rule
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[RuleName <String>]`: Name of the rule which this scheduled action applies to.
   - `[ScheduledActionConfigurations <IMicrosoftGraphDeviceManagementComplianceActionItem[]>]`: The list of scheduled action configurations for this compliance policy. This collection can contain a maximum of 100 elements.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[ActionType <DeviceManagementComplianceActionType?>]`: Scheduled Action Type Enum
     - `[GracePeriodHours <Int32?>]`: Number of hours to wait till the action will be enforced. Valid values 0 to 8760
     - `[NotificationMessageCcList <String[]>]`: A list of group IDs to speicify who to CC this notification message to. This collection can contain a maximum of 100 elements.
     - `[NotificationTemplateId <String>]`: What notification Message template to use
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementIdentity>`: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: The unique identifier of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: The unique identifier of androidManagedStoreAppConfigurationSchema
@@ -352,9 +366,11 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionAppLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionAppLearningSummary
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
+  - `[WindowsQualityUpdateProfileAssignmentId <String>]`: The unique identifier of windowsQualityUpdateProfileAssignment
+  - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
-SCHEDULEDACTIONCONFIGURATIONS <IMicrosoftGraphDeviceManagementComplianceActionItem\[]>: The list of scheduled action configurations for this compliance policy. This collection can contain a maximum of 100 elements.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`SCHEDULEDACTIONCONFIGURATIONS <IMicrosoftGraphDeviceManagementComplianceActionItem[]>`: The list of scheduled action configurations for this compliance policy. This collection can contain a maximum of 100 elements.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ActionType <DeviceManagementComplianceActionType?>]`: Scheduled Action Type Enum
   - `[GracePeriodHours <Int32?>]`: Number of hours to wait till the action will be enforced. Valid values 0 to 8760
   - `[NotificationMessageCcList <String[]>]`: A list of group IDs to speicify who to CC this notification message to. This collection can contain a maximum of 100 elements.

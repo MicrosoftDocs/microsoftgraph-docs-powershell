@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/get-mgsecuritylabelretentionlabeldispositionreviewstage
+﻿---
+external help file: Microsoft.Graph.Beta.Security-help.xml
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritylabelretentionlabeldispositionreviewstage
 schema: 2.0.0
 ---
 
-# Get-MgSecurityLabelRetentionLabelDispositionReviewStage
+# Get-MgBetaSecurityLabelRetentionLabelDispositionReviewStage
 
 ## SYNOPSIS
 Review stages during which reviewers are notified to determine whether a document must be deleted or retained.
@@ -14,20 +14,20 @@ Review stages during which reviewers are notified to determine whether a documen
 
 ### List (Default)
 ```
-Get-MgSecurityLabelRetentionLabelDispositionReviewStage -RetentionLabelId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+Get-MgBetaSecurityLabelRetentionLabelDispositionReviewStage -RetentionLabelId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
+ [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgSecurityLabelRetentionLabelDispositionReviewStage -DispositionReviewStageId <String>
+Get-MgBetaSecurityLabelRetentionLabelDispositionReviewStage -DispositionReviewStageId <String>
  -RetentionLabelId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgSecurityLabelRetentionLabelDispositionReviewStage -InputObject <ISecurityIdentity>
+Get-MgBetaSecurityLabelRetentionLabelDispositionReviewStage -InputObject <ISecurityIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
@@ -35,6 +35,20 @@ Get-MgSecurityLabelRetentionLabelDispositionReviewStage -InputObject <ISecurityI
 Review stages during which reviewers are notified to determine whether a document must be deleted or retained.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -116,7 +130,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ISecurityIdentity
@@ -240,10 +254,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityDispositionReviewStage
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityDispositionReviewStage
 ## NOTES
 
 ALIASES
@@ -253,7 +267,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+`INPUTOBJECT <ISecurityIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
   - `[ArticleId <String>]`: The unique identifier of article
   - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator

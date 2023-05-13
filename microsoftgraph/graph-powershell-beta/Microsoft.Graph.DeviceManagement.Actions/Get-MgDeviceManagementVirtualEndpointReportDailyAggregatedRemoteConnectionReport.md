@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementvirtualendpointreportdailyaggregatedremoteconnectionreport
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportdailyaggregatedremoteconnectionreport
 schema: 2.0.0
 ---
 
-# Get-MgDeviceManagementVirtualEndpointReportDailyAggregatedRemoteConnectionReport
+# Get-MgBetaDeviceManagementVirtualEndpointReportDailyAggregatedRemoteConnectionReport
 
 ## SYNOPSIS
 Get the daily aggregated remote connection reports, such as round trip time, available bandwidth, and so on, in a given period.
@@ -14,7 +14,7 @@ Get the daily aggregated remote connection reports, such as round trip time, ava
 
 ### GetExpanded (Default)
 ```
-Get-MgDeviceManagementVirtualEndpointReportDailyAggregatedRemoteConnectionReport -OutFile <String>
+Get-MgBetaDeviceManagementVirtualEndpointReportDailyAggregatedRemoteConnectionReport -OutFile <String>
  [-AdditionalProperties <Hashtable>] [-Filter <String>] [-GroupBy <String[]>] [-Property <String[]>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -22,7 +22,7 @@ Get-MgDeviceManagementVirtualEndpointReportDailyAggregatedRemoteConnectionReport
 
 ### Get
 ```
-Get-MgDeviceManagementVirtualEndpointReportDailyAggregatedRemoteConnectionReport -OutFile <String>
+Get-MgBetaDeviceManagementVirtualEndpointReportDailyAggregatedRemoteConnectionReport -OutFile <String>
  -BodyParameter <IPaths11L0XtbDevicemanagementVirtualendpointReportsMicrosoftGraphGetdailyaggregatedremoteconnectionreportsPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -31,6 +31,16 @@ Get-MgDeviceManagementVirtualEndpointReportDailyAggregatedRemoteConnectionReport
 Get the daily aggregated remote connection reports, such as round trip time, available bandwidth, and so on, in a given period.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -51,7 +61,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths11L0XtbDevicemanagementVirtualendpointReportsMicrosoftGraphGetdailyaggregatedremoteconnectionreportsPostRequestbodyContentApplicationJsonSchema
@@ -236,7 +246,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths11L0XtbDevicemanagementVirtualendpointReportsMicrosoftGraphGetdailyaggregatedremoteconnectionreportsPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths11L0XtbDevicemanagementVirtualendpointReportsMicrosoftGraphGetdailyaggregatedremoteconnectionreportsPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### System.Boolean
@@ -249,7 +259,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths11L0XtbDevicemanagementVirtualendpointReportsMicrosoftGraphGetdailyaggregatedremoteconnectionreportsPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths11L0XtbDevicemanagementVirtualendpointReportsMicrosoftGraphGetdailyaggregatedremoteconnectionreportsPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Filter <String>]`: 
   - `[GroupBy <String[]>]`: 

@@ -1,20 +1,20 @@
----
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgidentityconditionalaccessauthenticationstrengthpolicy
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccessauthenticationstrengthpolicy
 schema: 2.0.0
 ---
 
-# New-MgIdentityConditionalAccessAuthenticationStrengthPolicy
+# New-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicy
 
 ## SYNOPSIS
 Create new navigation property to policies for identity
 
 ## SYNTAX
 
-### CreateExpanded (Default)
+### CreateExpanded1 (Default)
 ```
-New-MgIdentityConditionalAccessAuthenticationStrengthPolicy [-AdditionalProperties <Hashtable>]
+New-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicy [-AdditionalProperties <Hashtable>]
  [-AllowedCombinations <String[]>]
  [-CombinationConfigurations <IMicrosoftGraphAuthenticationCombinationConfiguration[]>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
@@ -22,9 +22,9 @@ New-MgIdentityConditionalAccessAuthenticationStrengthPolicy [-AdditionalProperti
  [<CommonParameters>]
 ```
 
-### Create
+### Create1
 ```
-New-MgIdentityConditionalAccessAuthenticationStrengthPolicy
+New-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicy
  -BodyParameter <IMicrosoftGraphAuthenticationStrengthPolicy> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -33,6 +33,20 @@ Create new navigation property to policies for identity
 
 ## EXAMPLES
 
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -40,7 +54,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -55,7 +69,7 @@ A collection of authentication method modes that are required be used to satify 
 
 ```yaml
 Type: String[]
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -67,11 +81,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 authenticationStrengthPolicy
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAuthenticationStrengthPolicy
-Parameter Sets: Create
+Parameter Sets: Create1
 Aliases:
 
 Required: True
@@ -83,11 +97,11 @@ Accept wildcard characters: False
 
 ### -CombinationConfigurations
 Settings that may be used to require specific types or instances of an authentication method to be used when authenticating with a specified combination of authentication methods.
-To construct, please use Get-Help -Online and see NOTES section for COMBINATIONCONFIGURATIONS properties and create a hash table.
+To construct, see NOTES section for COMBINATIONCONFIGURATIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAuthenticationCombinationConfiguration[]
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -102,7 +116,7 @@ The datetime when this policy was created.
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -117,7 +131,7 @@ The human-readable description of this policy.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -133,7 +147,7 @@ Supports $filter (eq, ne, not , and in).
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -144,12 +158,12 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -164,7 +178,7 @@ The datetime when this policy was last modified.
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -179,7 +193,7 @@ authenticationStrengthPolicyType
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -194,7 +208,7 @@ authenticationStrengthRequirements
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -240,10 +254,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthenticationStrengthPolicy
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthenticationStrengthPolicy
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthenticationStrengthPolicy
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthenticationStrengthPolicy
 ## NOTES
 
 ALIASES
@@ -253,12 +267,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphAuthenticationStrengthPolicy>`: authenticationStrengthPolicy
+`BODYPARAMETER <IMicrosoftGraphAuthenticationStrengthPolicy>`: authenticationStrengthPolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AllowedCombinations <String[]>]`: A collection of authentication method modes that are required be used to satify this authentication strength.
   - `[CombinationConfigurations <IMicrosoftGraphAuthenticationCombinationConfiguration[]>]`: Settings that may be used to require specific types or instances of an authentication method to be used when authenticating with a specified combination of authentication methods.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[AppliesToCombinations <String[]>]`: Which authentication method combinations this configuration applies to. Must be an allowedCombinations object that's defined for the authenticationStrengthPolicy. The only possible value for fido2combinationConfigurations is 'fido2'.
   - `[CreatedDateTime <DateTime?>]`: The datetime when this policy was created.
   - `[Description <String>]`: The human-readable description of this policy.
@@ -267,8 +281,8 @@ BODYPARAMETER `<IMicrosoftGraphAuthenticationStrengthPolicy>`: authenticationStr
   - `[PolicyType <String>]`: authenticationStrengthPolicyType
   - `[RequirementsSatisfied <String>]`: authenticationStrengthRequirements
 
-COMBINATIONCONFIGURATIONS <IMicrosoftGraphAuthenticationCombinationConfiguration\[]>: Settings that may be used to require specific types or instances of an authentication method to be used when authenticating with a specified combination of authentication methods.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`COMBINATIONCONFIGURATIONS <IMicrosoftGraphAuthenticationCombinationConfiguration[]>`: Settings that may be used to require specific types or instances of an authentication method to be used when authenticating with a specified combination of authentication methods.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AppliesToCombinations <String[]>]`: Which authentication method combinations this configuration applies to. Must be an allowedCombinations object that's defined for the authenticationStrengthPolicy. The only possible value for fido2combinationConfigurations is 'fido2'.
 
 ## RELATED LINKS

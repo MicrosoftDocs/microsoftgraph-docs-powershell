@@ -1,7 +1,7 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementcompliancemanagementpartner
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementcompliancemanagementpartner
 schema: 2.0.0
 ---
 
@@ -12,7 +12,7 @@ Create new navigation property to complianceManagementPartners for deviceManagem
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
 New-MgDeviceManagementComplianceManagementPartner [-AdditionalProperties <Hashtable>]
  [-AndroidEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment[]>] [-AndroidOnboarded]
@@ -23,9 +23,9 @@ New-MgDeviceManagementComplianceManagementPartner [-AdditionalProperties <Hashta
  [-PartnerState <DeviceManagementPartnerTenantState>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
-New-MgDeviceManagementComplianceManagementPartner -BodyParameter <IMicrosoftGraphComplianceManagementPartner1>
+New-MgDeviceManagementComplianceManagementPartner -BodyParameter <IMicrosoftGraphComplianceManagementPartner>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -34,6 +34,20 @@ Create new navigation property to complianceManagementPartners for deviceManagem
 
 ## EXAMPLES
 
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -41,7 +55,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -53,11 +67,11 @@ Accept wildcard characters: False
 
 ### -AndroidEnrollmentAssignments
 User groups which enroll Android devices through partner.
-To construct, please use Get-Help -Online and see NOTES section for ANDROIDENROLLMENTASSIGNMENTS properties and create a hash table.
+To construct, see NOTES section for ANDROIDENROLLMENTASSIGNMENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphComplianceManagementPartnerAssignment[]
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -72,7 +86,7 @@ Partner onboarded for Android devices.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -84,11 +98,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Compliance management partner for all platforms
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphComplianceManagementPartner1
-Parameter Sets: Create1
+Type: IMicrosoftGraphComplianceManagementPartner
+Parameter Sets: Create
 Aliases:
 
 Required: True
@@ -103,7 +117,7 @@ Partner display name
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -119,7 +133,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -131,11 +145,11 @@ Accept wildcard characters: False
 
 ### -IosEnrollmentAssignments
 User groups which enroll ios devices through partner.
-To construct, please use Get-Help -Online and see NOTES section for IOSENROLLMENTASSIGNMENTS properties and create a hash table.
+To construct, see NOTES section for IOSENROLLMENTASSIGNMENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphComplianceManagementPartnerAssignment[]
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -150,7 +164,7 @@ Partner onboarded for ios devices.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -165,7 +179,7 @@ Timestamp of last heartbeat after admin onboarded to the compliance management p
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -177,11 +191,11 @@ Accept wildcard characters: False
 
 ### -MacOSEnrollmentAssignments
 User groups which enroll Mac devices through partner.
-To construct, please use Get-Help -Online and see NOTES section for MACOSENROLLMENTASSIGNMENTS properties and create a hash table.
+To construct, see NOTES section for MACOSENROLLMENTASSIGNMENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphComplianceManagementPartnerAssignment[]
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -196,7 +210,7 @@ Partner onboarded for Mac devices.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -211,7 +225,7 @@ Partner state of this tenant.
 
 ```yaml
 Type: DeviceManagementPartnerTenantState
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -257,10 +271,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphComplianceManagementPartner1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphComplianceManagementPartner
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphComplianceManagementPartner1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphComplianceManagementPartner
 ## NOTES
 
 ALIASES
@@ -270,11 +284,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ANDROIDENROLLMENTASSIGNMENTS <IMicrosoftGraphComplianceManagementPartnerAssignment\[]>: User groups which enroll Android devices through partner.
+`ANDROIDENROLLMENTASSIGNMENTS <IMicrosoftGraphComplianceManagementPartnerAssignment[]>`: User groups which enroll Android devices through partner.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
-BODYPARAMETER `<IMicrosoftGraphComplianceManagementPartner1>`: Compliance management partner for all platforms
+`BODYPARAMETER <IMicrosoftGraphComplianceManagementPartner>`: Compliance management partner for all platforms
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AndroidEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment[]>]`: User groups which enroll Android devices through partner.
@@ -289,11 +303,11 @@ BODYPARAMETER `<IMicrosoftGraphComplianceManagementPartner1>`: Compliance manage
   - `[MacOSOnboarded <Boolean?>]`: Partner onboarded for Mac devices.
   - `[PartnerState <DeviceManagementPartnerTenantState?>]`: Partner state of this tenant.
 
-IOSENROLLMENTASSIGNMENTS <IMicrosoftGraphComplianceManagementPartnerAssignment\[]>: User groups which enroll ios devices through partner.
+`IOSENROLLMENTASSIGNMENTS <IMicrosoftGraphComplianceManagementPartnerAssignment[]>`: User groups which enroll ios devices through partner.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
-MACOSENROLLMENTASSIGNMENTS <IMicrosoftGraphComplianceManagementPartnerAssignment\[]>: User groups which enroll Mac devices through partner.
+`MACOSENROLLMENTASSIGNMENTS <IMicrosoftGraphComplianceManagementPartnerAssignment[]>`: User groups which enroll Mac devices through partner.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 

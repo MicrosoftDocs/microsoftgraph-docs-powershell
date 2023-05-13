@@ -1,51 +1,51 @@
----
-external help file: Microsoft.Graph.CloudCommunications-help.xml
-Module Name: Microsoft.Graph.CloudCommunications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationcallaudioroutinggroup
+﻿---
+external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
+Module Name: Microsoft.Graph.Beta.CloudCommunications
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationcallaudioroutinggroup
 schema: 2.0.0
 ---
 
-# Update-MgCommunicationCallAudioRoutingGroup
+# Update-MgBetaCommunicationCallAudioRoutingGroup
 
 ## SYNOPSIS
-Update the navigation property audioRoutingGroups in communications
+Modify sources and receivers of an audioRoutingGroup.
 
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
-Update-MgCommunicationCallAudioRoutingGroup -AudioRoutingGroupId <String> -CallId <String>
+Update-MgBetaCommunicationCallAudioRoutingGroup -AudioRoutingGroupId <String> -CallId <String>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Receivers <String[]>] [-RoutingMode <String>]
- [-Sources <String[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Sources <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgCommunicationCallAudioRoutingGroup -AudioRoutingGroupId <String> -CallId <String>
- -BodyParameter <IMicrosoftGraphAudioRoutingGroup1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaCommunicationCallAudioRoutingGroup -AudioRoutingGroupId <String> -CallId <String>
+ -BodyParameter <IMicrosoftGraphAudioRoutingGroup> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgCommunicationCallAudioRoutingGroup -InputObject <ICloudCommunicationsIdentity>
+Update-MgBetaCommunicationCallAudioRoutingGroup -InputObject <ICloudCommunicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Receivers <String[]>] [-RoutingMode <String>]
- [-Sources <String[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Sources <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgCommunicationCallAudioRoutingGroup -InputObject <ICloudCommunicationsIdentity>
- -BodyParameter <IMicrosoftGraphAudioRoutingGroup1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaCommunicationCallAudioRoutingGroup -InputObject <ICloudCommunicationsIdentity>
+ -BodyParameter <IMicrosoftGraphAudioRoutingGroup> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property audioRoutingGroups in communications
+Modify sources and receivers of an audioRoutingGroup.
 
 ## EXAMPLES
 
-### Example 1: Using the Update-MgCommunicationCallAudioRoutingGroup Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.CloudCommunications
+Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
 	Id = "oneToOne"
 	RoutingMode = "oneToOne"
@@ -57,11 +57,8 @@ $params = @{
 		"72f988bf-86f1-41af-91ab-2d7cd011db47"
 	)
 }
-Update-MgCommunicationCallAudioRoutingGroup -CallId $callId -AudioRoutingGroupId $audioRoutingGroupId -BodyParameter $params
+Update-MgBetaCommunicationCallAudioRoutingGroup -CallId $callId -AudioRoutingGroupId $audioRoutingGroupId -BodyParameter $params
 ```
-
-This example shows how to use the Update-MgCommunicationCallAudioRoutingGroup Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -97,10 +94,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 audioRoutingGroup
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAudioRoutingGroup1
+Type: IMicrosoftGraphAudioRoutingGroup
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -127,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -144,7 +141,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ICloudCommunicationsIdentity
@@ -155,21 +152,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -189,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoutingMode
-.
+routingMode
 
 ```yaml
 Type: String
@@ -254,11 +236,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAudioRoutingGroup1
+### Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAudioRoutingGroup
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAudioRoutingGroup
 ## NOTES
 
 ALIASES
@@ -268,14 +250,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphAudioRoutingGroup1>`: audioRoutingGroup
+`BODYPARAMETER <IMicrosoftGraphAudioRoutingGroup>`: audioRoutingGroup
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Receivers <String[]>]`: List of receiving participant ids.
-  - `[RoutingMode <String>]`: 
+  - `[RoutingMode <String>]`: routingMode
   - `[Sources <String[]>]`: List of source participant ids.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+`INPUTOBJECT <ICloudCommunicationsIdentity>`: Identity Parameter
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
   - `[CallId <String>]`: The unique identifier of call
@@ -285,6 +267,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
   - `[FromDateTime <DateTime?>]`: Usage: fromDateTime={fromDateTime}
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[MeetingRegistrantBaseId <String>]`: The unique identifier of meetingRegistrantBase
   - `[MeetingRegistrationQuestionId <String>]`: The unique identifier of meetingRegistrationQuestion
   - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
   - `[ParticipantId <String>]`: The unique identifier of participant

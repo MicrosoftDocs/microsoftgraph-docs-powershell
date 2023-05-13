@@ -1,12 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryrole
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryrole
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
-# Get-MgDirectoryRole
+# Get-MgBetaDirectoryRole
 
 ## SYNOPSIS
 Retrieve the properties of a directoryRole object.
@@ -18,19 +17,20 @@ For details, see Role template IDs.
 
 ### List (Default)
 ```
-Get-MgDirectoryRole [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>]
- [-Skip <Int32>] [-Sort <String[]>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+Get-MgBetaDirectoryRole [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
+ [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgDirectoryRole -DirectoryRoleId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaDirectoryRole -DirectoryRoleId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgDirectoryRole -InputObject <IIdentityDirectoryManagementIdentity> [-ExpandProperty <String[]>]
+Get-MgBetaDirectoryRole -InputObject <IIdentityDirectoryManagementIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
@@ -42,9 +42,10 @@ For details, see Role template IDs.
 
 ## EXAMPLES
 
-### Example 1: Get all directory roles
+### EXAMPLE 1
 ```powershell
-Get-MgDirectoryRole | Format-List
+Get-MgBetaDirectoryRole | Format-List
+```
 
 DeletedDateTime      :
 Description          : Can manage all aspects of Azure AD and Microsoft services that use Azure AD identities.
@@ -54,14 +55,12 @@ Members              :
 RoleTemplateId       : 1f12db9c-dbb3-410d-a893-4c0bc322bf85
 ScopedMembers        :
 AdditionalProperties : {}
-```
 
-This examples gets all the available directory roles.
-
-### Example 2: Get a directory role by Id
+### EXAMPLE 2
 ```powershell
-Get-MgDirectoryRole -DirectoryRoleId 'a2d10e79-df32-47fc-86ef-64d199860810' |
+Get-MgBetaDirectoryRole -DirectoryRoleId 'a2d10e79-df32-47fc-86ef-64d199860810' |
   Format-List
+```
 
 DeletedDateTime      :
 Description          : Can manage all aspects of Azure AD and Microsoft services that use Azure AD identities.
@@ -71,9 +70,6 @@ Members              :
 RoleTemplateId       : 1f12db9c-dbb3-410d-a893-4c0bc322bf85
 ScopedMembers        :
 AdditionalProperties : {}
-```
-
-This example gets the directory role based on the specified Id.
 
 ## PARAMETERS
 
@@ -155,7 +151,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IIdentityDirectoryManagementIdentity
@@ -249,10 +245,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryRole
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryRole
 ## NOTES
 
 ALIASES
@@ -262,7 +258,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet

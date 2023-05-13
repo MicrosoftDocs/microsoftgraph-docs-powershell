@@ -1,12 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/remove-mgpolicycrosstenantaccesspolicy
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicycrosstenantaccesspolicy
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
-# Remove-MgPolicyCrossTenantAccessPolicy
+# Remove-MgBetaPolicyCrossTenantAccessPolicy
 
 ## SYNOPSIS
 Delete navigation property crossTenantAccessPolicy for policies
@@ -14,7 +13,7 @@ Delete navigation property crossTenantAccessPolicy for policies
 ## SYNTAX
 
 ```
-Remove-MgPolicyCrossTenantAccessPolicy [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+Remove-MgBetaPolicyCrossTenantAccessPolicy [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -23,20 +22,16 @@ Delete navigation property crossTenantAccessPolicy for policies
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 $params = @{
 	DisplayName = "CrossTenantAccessPolicy"
 }
 
-Update-MgPolicyCrossTenantAccessPolicy -BodyParameter $params
-```
-
-This example shows how to use the Remove-MgPolicyCrossTenantAccessPolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Update-MgBetaPolicyCrossTenantAccessPolicy -BodyParameter $params
 
 ## PARAMETERS
 

@@ -1,26 +1,26 @@
----
-external help file: Microsoft.Graph.Files-help.xml
-Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/search-mgdriveroot
+﻿---
+external help file: Microsoft.Graph.Beta.Files-help.xml
+Module Name: Microsoft.Graph.Beta.Files
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/search-mgbetadriveroot
 schema: 2.0.0
 ---
 
-# Search-MgDriveRoot
+# Search-MgBetaDriveRoot
 
 ## SYNOPSIS
 Invoke function search
 
 ## SYNTAX
 
-### Search1 (Default)
+### Search (Default)
 ```
-Search-MgDriveRoot -DriveId <String> -Q <String> [-Count] [-Filter <String>] [-Property <String[]>]
+Search-MgBetaDriveRoot -DriveId <String> -Q <String> [-Count] [-Filter <String>] [-Property <String[]>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
 ```
 
-### SearchViaIdentity1
+### SearchViaIdentity
 ```
-Search-MgDriveRoot -InputObject <IFilesIdentity> [-Count] [-Filter <String>] [-Property <String[]>]
+Search-MgBetaDriveRoot -InputObject <IFilesIdentity> [-Count] [-Filter <String>] [-Property <String[]>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
 ```
 
@@ -28,6 +28,20 @@ Search-MgDriveRoot -InputObject <IFilesIdentity> [-Count] [-Filter <String>] [-P
 Invoke function search
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -51,7 +65,7 @@ The unique identifier of drive
 
 ```yaml
 Type: String
-Parameter Sets: Search1
+Parameter Sets: Search
 Aliases:
 
 Required: True
@@ -78,11 +92,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IFilesIdentity
-Parameter Sets: SearchViaIdentity1
+Parameter Sets: SearchViaIdentity
 Aliases:
 
 Required: True
@@ -112,7 +126,7 @@ Usage: q='{q}'
 
 ```yaml
 Type: String
-Parameter Sets: Search1
+Parameter Sets: Search
 Aliases:
 
 Required: True
@@ -187,10 +201,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IFilesIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDriveItem1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDriveItem
 ## NOTES
 
 ALIASES
@@ -200,7 +214,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+`INPUTOBJECT <IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType

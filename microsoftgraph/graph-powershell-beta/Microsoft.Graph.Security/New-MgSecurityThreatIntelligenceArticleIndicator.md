@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligencearticleindicator
+﻿---
+external help file: Microsoft.Graph.Beta.Security-help.xml
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligencearticleindicator
 schema: 2.0.0
 ---
 
-# New-MgSecurityThreatIntelligenceArticleIndicator
+# New-MgBetaSecurityThreatIntelligenceArticleIndicator
 
 ## SYNOPSIS
 Create new navigation property to articleIndicators for security
@@ -14,13 +14,13 @@ Create new navigation property to articleIndicators for security
 
 ### CreateExpanded (Default)
 ```
-New-MgSecurityThreatIntelligenceArticleIndicator [-AdditionalProperties <Hashtable>] [-Artifact <Hashtable>]
- [-Id <String>] [-Source <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaSecurityThreatIntelligenceArticleIndicator [-AdditionalProperties <Hashtable>]
+ [-Artifact <Hashtable>] [-Id <String>] [-Source <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgSecurityThreatIntelligenceArticleIndicator -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
+New-MgBetaSecurityThreatIntelligenceArticleIndicator -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -28,6 +28,16 @@ New-MgSecurityThreatIntelligenceArticleIndicator -BodyParameter <Hashtable> [-Wh
 Create new navigation property to articleIndicators for security
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -77,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -146,7 +156,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### System.Collections.Hashtable
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityArticleIndicator
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityArticleIndicator
 ## NOTES
 
 ALIASES

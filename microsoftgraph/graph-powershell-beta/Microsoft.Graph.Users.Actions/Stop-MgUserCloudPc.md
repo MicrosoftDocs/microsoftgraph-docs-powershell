@@ -1,33 +1,61 @@
----
-external help file: Microsoft.Graph.Users.Actions-help.xml
-Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/stop-mgusercloudpc
+﻿---
+external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.Users.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/stop-mgbetausercloudpc
 schema: 2.0.0
 ---
 
-# Stop-MgUserCloudPc
+# Stop-MgBetaUserCloudPc
 
 ## SYNOPSIS
-Stop a specific Cloud PC for a user.
-Currently, only Windows 365 Frontline Cloud PCs are supported.
+Power off a Windows 365 Frontline Cloud PC.
+This action supports Microsoft Endpoint Manager (MEM) admin scenarios.
+After a Windows 365 Frontline Cloud PC is powered off, it is de-allocated, and licenses are revoked immediately.
+Only IT admin users can perform this action.
 
 ## SYNTAX
 
-### Stop (Default)
+### PowerOff (Default)
 ```
-Stop-MgUserCloudPc -CloudPcId <String> -UserId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Stop-MgBetaUserCloudPc -CloudPcId <String> -UserId <String> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### Stop
+```
+Stop-MgBetaUserCloudPc -CloudPcId <String> -UserId <String> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### StopViaIdentity
 ```
-Stop-MgUserCloudPc -InputObject <IUsersActionsIdentity> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Stop-MgBetaUserCloudPc -InputObject <IUsersActionsIdentity> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### PowerOffViaIdentity
+```
+Stop-MgBetaUserCloudPc -InputObject <IUsersActionsIdentity> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Stop a specific Cloud PC for a user.
-Currently, only Windows 365 Frontline Cloud PCs are supported.
+Power off a Windows 365 Frontline Cloud PC.
+This action supports Microsoft Endpoint Manager (MEM) admin scenarios.
+After a Windows 365 Frontline Cloud PC is powered off, it is de-allocated, and licenses are revoked immediately.
+Only IT admin users can perform this action.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -36,7 +64,7 @@ The unique identifier of cloudPC
 
 ```yaml
 Type: String
-Parameter Sets: Stop
+Parameter Sets: PowerOff, Stop
 Aliases:
 
 Required: True
@@ -48,11 +76,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: StopViaIdentity
+Parameter Sets: StopViaIdentity, PowerOffViaIdentity
 Aliases:
 
 Required: True
@@ -82,7 +110,7 @@ The unique identifier of user
 
 ```yaml
 Type: String
-Parameter Sets: Stop
+Parameter Sets: PowerOff, Stop
 Aliases:
 
 Required: True
@@ -128,7 +156,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
 ## OUTPUTS
 
 ### System.Boolean
@@ -141,7 +169,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
@@ -175,7 +203,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription

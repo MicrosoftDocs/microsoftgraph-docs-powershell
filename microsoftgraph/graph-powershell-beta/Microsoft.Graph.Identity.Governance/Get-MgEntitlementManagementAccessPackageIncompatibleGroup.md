@@ -1,12 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.Governance-help.xml
-Module Name: Microsoft.Graph.Identity.Governance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementaccesspackageincompatiblegroup
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.Governance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageincompatiblegroup
 schema: 2.0.0
-ms.prod: governance
 ---
 
-# Get-MgEntitlementManagementAccessPackageIncompatibleGroup
+# Get-MgBetaEntitlementManagementAccessPackageIncompatibleGroup
 
 ## SYNOPSIS
 Retrieve a list of the group objects that have been marked as incompatible on an accessPackage.
@@ -14,7 +13,7 @@ Retrieve a list of the group objects that have been marked as incompatible on an
 ## SYNTAX
 
 ```
-Get-MgEntitlementManagementAccessPackageIncompatibleGroup -AccessPackageId <String>
+Get-MgBetaEntitlementManagementAccessPackageIncompatibleGroup -AccessPackageId <String>
  [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
  [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
@@ -24,14 +23,11 @@ Retrieve a list of the group objects that have been marked as incompatible on an
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgEntitlementManagementAccessPackageIncompatibleGroup Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Identity.Governance
-Get-MgEntitlementManagementAccessPackageIncompatibleGroup -AccessPackageId $accessPackageId
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+Get-MgBetaEntitlementManagementAccessPackageIncompatibleGroup -AccessPackageId $accessPackageId
 ```
-
-This example shows how to use the Get-MgEntitlementManagementAccessPackageIncompatibleGroup Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -208,7 +204,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroup
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroup
 ## NOTES
 
 ALIASES

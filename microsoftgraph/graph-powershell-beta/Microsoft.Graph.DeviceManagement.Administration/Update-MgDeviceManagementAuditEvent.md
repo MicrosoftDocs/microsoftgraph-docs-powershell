@@ -1,52 +1,66 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Administration
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementauditevent
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementauditevent
 schema: 2.0.0
 ---
 
-# Update-MgDeviceManagementAuditEvent
+# Update-MgBetaDeviceManagementAuditEvent
 
 ## SYNOPSIS
 Update the navigation property auditEvents in deviceManagement
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### UpdateExpanded (Default)
 ```
-Update-MgDeviceManagementAuditEvent -AuditEventId <String> [-Activity <String>] [-ActivityDateTime <DateTime>]
- [-ActivityOperationType <String>] [-ActivityResult <String>] [-ActivityType <String>]
- [-Actor <IMicrosoftGraphAuditActor1>] [-AdditionalProperties <Hashtable>] [-Category <String>]
- [-ComponentName <String>] [-CorrelationId <String>] [-DisplayName <String>] [-Id <String>]
- [-Resources <IMicrosoftGraphAuditResource1[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update1
-```
-Update-MgDeviceManagementAuditEvent -AuditEventId <String> -BodyParameter <IMicrosoftGraphAuditEvent>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded1
-```
-Update-MgDeviceManagementAuditEvent -InputObject <IDeviceManagementAdministrationIdentity> [-Activity <String>]
+Update-MgBetaDeviceManagementAuditEvent -AuditEventId <String> [-Activity <String>]
  [-ActivityDateTime <DateTime>] [-ActivityOperationType <String>] [-ActivityResult <String>]
- [-ActivityType <String>] [-Actor <IMicrosoftGraphAuditActor1>] [-AdditionalProperties <Hashtable>]
+ [-ActivityType <String>] [-Actor <IMicrosoftGraphAuditActor>] [-AdditionalProperties <Hashtable>]
  [-Category <String>] [-ComponentName <String>] [-CorrelationId <String>] [-DisplayName <String>]
- [-Id <String>] [-Resources <IMicrosoftGraphAuditResource1[]>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Id <String>] [-Resources <IMicrosoftGraphAuditResource[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Update
+```
+Update-MgBetaDeviceManagementAuditEvent -AuditEventId <String> -BodyParameter <IMicrosoftGraphAuditEvent>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaDeviceManagementAuditEvent -InputObject <IDeviceManagementAdministrationIdentity>
+ [-Activity <String>] [-ActivityDateTime <DateTime>] [-ActivityOperationType <String>]
+ [-ActivityResult <String>] [-ActivityType <String>] [-Actor <IMicrosoftGraphAuditActor>]
+ [-AdditionalProperties <Hashtable>] [-Category <String>] [-ComponentName <String>] [-CorrelationId <String>]
+ [-DisplayName <String>] [-Id <String>] [-Resources <IMicrosoftGraphAuditResource[]>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### UpdateViaIdentity1
+### UpdateViaIdentity
 ```
-Update-MgDeviceManagementAuditEvent -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphAuditEvent> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaDeviceManagementAuditEvent -InputObject <IDeviceManagementAdministrationIdentity>
+ -BodyParameter <IMicrosoftGraphAuditEvent> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property auditEvents in deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -55,7 +69,7 @@ Friendly name of the activity.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -70,7 +84,7 @@ The date time in UTC when the activity was performed.
 
 ```yaml
 Type: DateTime
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -85,7 +99,7 @@ The HTTP operation type of the activity.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -100,7 +114,7 @@ The result of the activity.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -115,7 +129,7 @@ The type of activity that was being performed.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -127,11 +141,11 @@ Accept wildcard characters: False
 
 ### -Actor
 A class containing the properties for Audit Actor.
-To construct, please use Get-Help -Online and see NOTES section for ACTOR properties and create a hash table.
+To construct, see NOTES section for ACTOR properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAuditActor1
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: IMicrosoftGraphAuditActor
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -146,7 +160,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -161,7 +175,7 @@ The unique identifier of auditEvent
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -173,11 +187,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 A class containing the properties for Audit Event.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAuditEvent
-Parameter Sets: Update1, UpdateViaIdentity1
+Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -192,7 +206,7 @@ Audit category.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -207,7 +221,7 @@ Component name.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -222,7 +236,7 @@ The client request Id that is used to correlate activity within the system.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -237,7 +251,7 @@ Event display name.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -248,12 +262,12 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -265,11 +279,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementAdministrationIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -279,28 +293,13 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Resources
 Resources being modified.
-To construct, please use Get-Help -Online and see NOTES section for RESOURCES properties and create a hash table.
+To construct, see NOTES section for RESOURCES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAuditResource1[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: IMicrosoftGraphAuditResource[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -346,11 +345,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuditEvent
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementAdministrationIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuditEvent
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuditEvent
 ## NOTES
 
 ALIASES
@@ -360,7 +359,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ACTOR `<IMicrosoftGraphAuditActor1>`: A class containing the properties for Audit Actor.
+`ACTOR <IMicrosoftGraphAuditActor>`: A class containing the properties for Audit Actor.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ApplicationDisplayName <String>]`: Name of the Application.
   - `[ApplicationId <String>]`: AAD Application Id.
@@ -377,15 +376,15 @@ ACTOR `<IMicrosoftGraphAuditActor1>`: A class containing the properties for Audi
     - `[DisplayName <String>]`: Scope Tag Display name.
     - `[RoleScopeTagId <String>]`: Scope Tag Id.
 
-BODYPARAMETER `<IMicrosoftGraphAuditEvent>`: A class containing the properties for Audit Event.
+`BODYPARAMETER <IMicrosoftGraphAuditEvent>`: A class containing the properties for Audit Event.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Activity <String>]`: Friendly name of the activity.
   - `[ActivityDateTime <DateTime?>]`: The date time in UTC when the activity was performed.
   - `[ActivityOperationType <String>]`: The HTTP operation type of the activity.
   - `[ActivityResult <String>]`: The result of the activity.
   - `[ActivityType <String>]`: The type of activity that was being performed.
-  - `[Actor <IMicrosoftGraphAuditActor1>]`: A class containing the properties for Audit Actor.
+  - `[Actor <IMicrosoftGraphAuditActor>]`: A class containing the properties for Audit Actor.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ApplicationDisplayName <String>]`: Name of the Application.
     - `[ApplicationId <String>]`: AAD Application Id.
@@ -405,7 +404,7 @@ BODYPARAMETER `<IMicrosoftGraphAuditEvent>`: A class containing the properties f
   - `[ComponentName <String>]`: Component name.
   - `[CorrelationId <String>]`: The client request Id that is used to correlate activity within the system.
   - `[DisplayName <String>]`: Event display name.
-  - `[Resources <IMicrosoftGraphAuditResource1[]>]`: Resources being modified.
+  - `[Resources <IMicrosoftGraphAuditResource[]>]`: Resources being modified.
     - `[AuditResourceType <String>]`: Audit resource's type.
     - `[DisplayName <String>]`: Display name.
     - `[ModifiedProperties <IMicrosoftGraphAuditProperty[]>]`: List of modified properties.
@@ -415,7 +414,7 @@ BODYPARAMETER `<IMicrosoftGraphAuditEvent>`: A class containing the properties f
     - `[ResourceId <String>]`: Audit resource's Id.
     - `[Type <String>]`: Audit resource's type.
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[AuditEventId <String>]`: The unique identifier of auditEvent
   - `[CartToClassAssociationId <String>]`: The unique identifier of cartToClassAssociation
   - `[CloudPcAuditEventId <String>]`: The unique identifier of cloudPcAuditEvent
@@ -472,7 +471,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[UserPfxCertificateId <String>]`: The unique identifier of userPFXCertificate
 
-RESOURCES <IMicrosoftGraphAuditResource1\[]>: Resources being modified.
+`RESOURCES <IMicrosoftGraphAuditResource[]>`: Resources being modified.
   - `[AuditResourceType <String>]`: Audit resource's type.
   - `[DisplayName <String>]`: Display name.
   - `[ModifiedProperties <IMicrosoftGraphAuditProperty[]>]`: List of modified properties.

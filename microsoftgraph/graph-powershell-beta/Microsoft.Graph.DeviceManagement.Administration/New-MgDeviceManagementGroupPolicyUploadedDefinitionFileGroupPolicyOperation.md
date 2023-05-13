@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Administration
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementgrouppolicyuploadeddefinitionfilegrouppolicyoperation
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementgrouppolicyuploadeddefinitionfilegrouppolicyoperation
 schema: 2.0.0
 ---
 
-# New-MgDeviceManagementGroupPolicyUploadedDefinitionFileGroupPolicyOperation
+# New-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileGroupPolicyOperation
 
 ## SYNOPSIS
 Create new navigation property to groupPolicyOperations for deviceManagement
@@ -14,7 +14,7 @@ Create new navigation property to groupPolicyOperations for deviceManagement
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementGroupPolicyUploadedDefinitionFileGroupPolicyOperation
+New-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileGroupPolicyOperation
  -GroupPolicyUploadedDefinitionFileId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-LastModifiedDateTime <DateTime>] [-OperationStatus <GroupPolicyOperationStatus>]
  [-OperationType <GroupPolicyOperationType>] [-StatusDetails <String>] [-WhatIf] [-Confirm]
@@ -23,14 +23,14 @@ New-MgDeviceManagementGroupPolicyUploadedDefinitionFileGroupPolicyOperation
 
 ### Create
 ```
-New-MgDeviceManagementGroupPolicyUploadedDefinitionFileGroupPolicyOperation
+New-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileGroupPolicyOperation
  -GroupPolicyUploadedDefinitionFileId <String> -BodyParameter <IMicrosoftGraphGroupPolicyOperation> [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgDeviceManagementGroupPolicyUploadedDefinitionFileGroupPolicyOperation
+New-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileGroupPolicyOperation
  -InputObject <IDeviceManagementAdministrationIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-LastModifiedDateTime <DateTime>] [-OperationStatus <GroupPolicyOperationStatus>]
  [-OperationType <GroupPolicyOperationType>] [-StatusDetails <String>] [-WhatIf] [-Confirm]
@@ -39,7 +39,7 @@ New-MgDeviceManagementGroupPolicyUploadedDefinitionFileGroupPolicyOperation
 
 ### CreateViaIdentity
 ```
-New-MgDeviceManagementGroupPolicyUploadedDefinitionFileGroupPolicyOperation
+New-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileGroupPolicyOperation
  -InputObject <IDeviceManagementAdministrationIdentity> -BodyParameter <IMicrosoftGraphGroupPolicyOperation>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -48,6 +48,20 @@ New-MgDeviceManagementGroupPolicyUploadedDefinitionFileGroupPolicyOperation
 Create new navigation property to groupPolicyOperations for deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -68,7 +82,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 The entity represents an group policy operation.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphGroupPolicyOperation
@@ -98,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -115,7 +129,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementAdministrationIdentity
@@ -225,11 +239,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupPolicyOperation
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementAdministrationIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicyOperation
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupPolicyOperation
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicyOperation
 ## NOTES
 
 ALIASES
@@ -239,15 +253,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphGroupPolicyOperation>`: The entity represents an group policy operation.
+`BODYPARAMETER <IMicrosoftGraphGroupPolicyOperation>`: The entity represents an group policy operation.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[LastModifiedDateTime <DateTime?>]`: The date and time the entity was last modified.
   - `[OperationStatus <GroupPolicyOperationStatus?>]`: Type of Group Policy operation status.
   - `[OperationType <GroupPolicyOperationType?>]`: Type of Group Policy operation.
   - `[StatusDetails <String>]`: The group policy operation status detail.
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[AuditEventId <String>]`: The unique identifier of auditEvent
   - `[CartToClassAssociationId <String>]`: The unique identifier of cartToClassAssociation
   - `[CloudPcAuditEventId <String>]`: The unique identifier of cloudPcAuditEvent

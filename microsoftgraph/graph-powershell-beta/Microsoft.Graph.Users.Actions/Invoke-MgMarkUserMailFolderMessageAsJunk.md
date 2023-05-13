@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Users.Actions-help.xml
-Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgmarkusermailfoldermessageasjunk
+﻿---
+external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.Users.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetamarkusermailfoldermessageasjunk
 schema: 2.0.0
 ---
 
-# Invoke-MgMarkUserMailFolderMessageAsJunk
+# Invoke-MgBetaMarkUserMailFolderMessageAsJunk
 
 ## SYNOPSIS
 Invoke action markAsJunk
@@ -14,26 +14,26 @@ Invoke action markAsJunk
 
 ### MarkExpanded (Default)
 ```
-Invoke-MgMarkUserMailFolderMessageAsJunk -MailFolderId <String> -MessageId <String> -UserId <String>
+Invoke-MgBetaMarkUserMailFolderMessageAsJunk -MailFolderId <String> -MessageId <String> -UserId <String>
  [-AdditionalProperties <Hashtable>] [-MoveToJunk] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Mark
 ```
-Invoke-MgMarkUserMailFolderMessageAsJunk -MailFolderId <String> -MessageId <String> -UserId <String>
+Invoke-MgBetaMarkUserMailFolderMessageAsJunk -MailFolderId <String> -MessageId <String> -UserId <String>
  -BodyParameter <IPaths3QzwqzUsersUserIdMailfoldersMailfolderIdMessagesMessageIdMicrosoftGraphMarkasjunkPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### MarkViaIdentityExpanded
 ```
-Invoke-MgMarkUserMailFolderMessageAsJunk -InputObject <IUsersActionsIdentity>
+Invoke-MgBetaMarkUserMailFolderMessageAsJunk -InputObject <IUsersActionsIdentity>
  [-AdditionalProperties <Hashtable>] [-MoveToJunk] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### MarkViaIdentity
 ```
-Invoke-MgMarkUserMailFolderMessageAsJunk -InputObject <IUsersActionsIdentity>
+Invoke-MgBetaMarkUserMailFolderMessageAsJunk -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths3QzwqzUsersUserIdMailfoldersMailfolderIdMessagesMessageIdMicrosoftGraphMarkasjunkPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -42,6 +42,16 @@ Invoke-MgMarkUserMailFolderMessageAsJunk -InputObject <IUsersActionsIdentity>
 Invoke action markAsJunk
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -62,7 +72,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths3QzwqzUsersUserIdMailfoldersMailfolderIdMessagesMessageIdMicrosoftGraphMarkasjunkPostRequestbodyContentApplicationJsonSchema
@@ -78,7 +88,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersActionsIdentity
@@ -188,11 +198,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths3QzwqzUsersUserIdMailfoldersMailfolderIdMessagesMessageIdMicrosoftGraphMarkasjunkPostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths3QzwqzUsersUserIdMailfoldersMailfolderIdMessagesMessageIdMicrosoftGraphMarkasjunkPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMessage
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMessage
 ## NOTES
 
 ALIASES
@@ -202,11 +212,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths3QzwqzUsersUserIdMailfoldersMailfolderIdMessagesMessageIdMicrosoftGraphMarkasjunkPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths3QzwqzUsersUserIdMailfoldersMailfolderIdMessagesMessageIdMicrosoftGraphMarkasjunkPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[MoveToJunk <Boolean?>]`: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
@@ -240,7 +250,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription

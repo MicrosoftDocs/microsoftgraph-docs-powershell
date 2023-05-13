@@ -1,67 +1,62 @@
----
-external help file: Microsoft.Graph.Users-help.xml
-Module Name: Microsoft.Graph.Users
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/get-mguseroutlooktask
+﻿---
+external help file: Microsoft.Graph.Beta.Users-help.xml
+Module Name: Microsoft.Graph.Beta.Users
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroutlooktask
 schema: 2.0.0
 ---
 
-# Get-MgUserOutlookTask
+# Get-MgBetaUserOutlookTask
 
 ## SYNOPSIS
-Get tasks from users
+Get the properties and relationships of an Outlook task in the user's mailbox.
+By default, this operation (and the POST, PATCH, and complete task operations) returns date-related properties in UTC.
+You can use the `Prefer: outlook.timezone` header to have all the date-related properties in the response represented in a time zone different than UTC.
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgUserOutlookTask -UserId <String> [-Property <String[]>] [-Filter <String>] [-Skip <Int32>]
+Get-MgBetaUserOutlookTask -UserId <String> [-Property <String[]>] [-Filter <String>] [-Skip <Int32>]
  [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgUserOutlookTask -OutlookTaskId <String> -UserId <String> [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaUserOutlookTask -OutlookTaskId <String> -UserId <String> [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgUserOutlookTask -InputObject <IUsersIdentity> [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaUserOutlookTask -InputObject <IUsersIdentity> [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get tasks from users
+Get the properties and relationships of an Outlook task in the user's mailbox.
+By default, this operation (and the POST, PATCH, and complete task operations) returns date-related properties in UTC.
+You can use the `Prefer: outlook.timezone` header to have all the date-related properties in the response represented in a time zone different than UTC.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgUserOutlookTask Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Users
+Import-Module Microsoft.Graph.Beta.Users
 # A UPN can also be used as -UserId.
-Get-MgUserOutlookTask -UserId $userId -OutlookTaskId $outlookTaskId
+Get-MgBetaUserOutlookTask -UserId $userId -OutlookTaskId $outlookTaskId
 ```
 
-This example shows how to use the Get-MgUserOutlookTask Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Get-MgUserOutlookTask Cmdlet
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Users
+Import-Module Microsoft.Graph.Beta.Users
 # A UPN can also be used as -UserId.
-Get-MgUserOutlookTask -UserId $userId -OutlookTaskId $outlookTaskId
+Get-MgBetaUserOutlookTask -UserId $userId -OutlookTaskId $outlookTaskId
 ```
 
-This example shows how to use the Get-MgUserOutlookTask Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Using the Get-MgUserOutlookTask Cmdlet
+### EXAMPLE 3
 ```powershell
-Import-Module Microsoft.Graph.Users
+Import-Module Microsoft.Graph.Beta.Users
 # A UPN can also be used as -UserId.
-Get-MgUserOutlookTask -UserId $userId
+Get-MgBetaUserOutlookTask -UserId $userId
 ```
-
-This example shows how to use the Get-MgUserOutlookTask Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -113,7 +108,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersIdentity
@@ -237,10 +232,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IUsersIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOutlookTask
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOutlookTask
 ## NOTES
 
 ALIASES
@@ -250,7 +245,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersIdentity>`: Identity Parameter
   - `[AttachmentBaseId <String>]`: The unique identifier of attachmentBase
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[AttachmentSessionId <String>]`: The unique identifier of attachmentSession
@@ -259,7 +254,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
   - `[LinkedResourceId <String>]`: The unique identifier of linkedResource
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
   - `[NotificationId <String>]`: The unique identifier of notification
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[OutlookCategoryId <String>]`: The unique identifier of outlookCategory
@@ -267,7 +261,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
   - `[TodoTaskId <String>]`: The unique identifier of todoTask
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
   - `[UserId <String>]`: The unique identifier of user

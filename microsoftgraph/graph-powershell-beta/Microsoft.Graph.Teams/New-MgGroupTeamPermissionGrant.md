@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mggroupteampermissiongrant
+﻿---
+external help file: Microsoft.Graph.Beta.Teams-help.xml
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteampermissiongrant
 schema: 2.0.0
 ---
 
-# New-MgGroupTeamPermissionGrant
+# New-MgBetaGroupTeamPermissionGrant
 
 ## SYNOPSIS
 Create new navigation property to permissionGrants for groups
@@ -14,20 +14,21 @@ Create new navigation property to permissionGrants for groups
 
 ### CreateExpanded (Default)
 ```
-New-MgGroupTeamPermissionGrant -GroupId <String> [-AdditionalProperties <Hashtable>] [-ClientAppId <String>]
- [-ClientId <String>] [-DeletedDateTime <DateTime>] [-Id <String>] [-Permission <String>]
- [-PermissionType <String>] [-ResourceAppId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaGroupTeamPermissionGrant -GroupId <String> [-AdditionalProperties <Hashtable>]
+ [-ClientAppId <String>] [-ClientId <String>] [-DeletedDateTime <DateTime>] [-Id <String>]
+ [-Permission <String>] [-PermissionType <String>] [-ResourceAppId <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgGroupTeamPermissionGrant -GroupId <String>
+New-MgBetaGroupTeamPermissionGrant -GroupId <String>
  -BodyParameter <IMicrosoftGraphResourceSpecificPermissionGrant> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgGroupTeamPermissionGrant -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
+New-MgBetaGroupTeamPermissionGrant -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
  [-ClientAppId <String>] [-ClientId <String>] [-DeletedDateTime <DateTime>] [-Id <String>]
  [-Permission <String>] [-PermissionType <String>] [-ResourceAppId <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -35,7 +36,7 @@ New-MgGroupTeamPermissionGrant -InputObject <ITeamsIdentity> [-AdditionalPropert
 
 ### CreateViaIdentity
 ```
-New-MgGroupTeamPermissionGrant -InputObject <ITeamsIdentity>
+New-MgBetaGroupTeamPermissionGrant -InputObject <ITeamsIdentity>
  -BodyParameter <IMicrosoftGraphResourceSpecificPermissionGrant> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -43,6 +44,20 @@ New-MgGroupTeamPermissionGrant -InputObject <ITeamsIdentity>
 Create new navigation property to permissionGrants for groups
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -63,7 +78,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 resourceSpecificPermissionGrant
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphResourceSpecificPermissionGrant
@@ -141,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -158,7 +173,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ITeamsIdentity
@@ -257,11 +272,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphResourceSpecificPermissionGrant
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphResourceSpecificPermissionGrant
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphResourceSpecificPermissionGrant
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphResourceSpecificPermissionGrant
 ## NOTES
 
 ALIASES
@@ -271,17 +286,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphResourceSpecificPermissionGrant>`: resourceSpecificPermissionGrant
+`BODYPARAMETER <IMicrosoftGraphResourceSpecificPermissionGrant>`: resourceSpecificPermissionGrant
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ClientAppId <String>]`: ID of the service principal of the Azure AD app that has been granted access. Read-only.
   - `[ClientId <String>]`: ID of the Azure AD app that has been granted access. Read-only.
   - `[Permission <String>]`: The name of the resource-specific permission. Read-only.
   - `[PermissionType <String>]`: The type of permission. Possible values are: Application, Delegated. Read-only.
   - `[ResourceAppId <String>]`: ID of the Azure AD app that is hosting the resource. Read-only.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat

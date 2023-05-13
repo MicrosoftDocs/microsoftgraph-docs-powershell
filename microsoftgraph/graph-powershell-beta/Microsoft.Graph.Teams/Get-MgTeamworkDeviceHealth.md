@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mgteamworkdevicehealth
+﻿---
+external help file: Microsoft.Graph.Beta.Teams-help.xml
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdevicehealth
 schema: 2.0.0
 ---
 
-# Get-MgTeamworkDeviceHealth
+# Get-MgBetaTeamworkDeviceHealth
 
 ## SYNOPSIS
 Get the health details of a Microsoft Teams-enabled device.
@@ -15,14 +15,14 @@ Device health is calculated based on the device configuration and other device p
 
 ### Get (Default)
 ```
-Get-MgTeamworkDeviceHealth -TeamworkDeviceId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaTeamworkDeviceHealth -TeamworkDeviceId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgTeamworkDeviceHealth -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
+Get-MgBetaTeamworkDeviceHealth -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -31,14 +31,11 @@ Device health is calculated based on the device configuration and other device p
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgTeamworkDeviceHealth Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Teams
-Get-MgTeamworkDeviceHealth -TeamworkDeviceId $teamworkDeviceId
+Import-Module Microsoft.Graph.Beta.Teams
+Get-MgBetaTeamworkDeviceHealth -TeamworkDeviceId $teamworkDeviceId
 ```
-
-This example shows how to use the Get-MgTeamworkDeviceHealth Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -59,7 +56,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ITeamsIdentity
@@ -108,10 +105,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamworkDeviceHealth
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamworkDeviceHealth
 ## NOTES
 
 ALIASES
@@ -121,7 +118,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat

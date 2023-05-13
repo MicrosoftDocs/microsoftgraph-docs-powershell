@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Users.Actions-help.xml
-Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgextractusersecurityinformationprotectionsensitivitylabelcontentlabel
+﻿---
+external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.Users.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaextractusersecurityinformationprotectionsensitivitylabelcontentlabel
 schema: 2.0.0
 ---
 
-# Invoke-MgExtractUserSecurityInformationProtectionSensitivityLabelContentLabel
+# Invoke-MgBetaExtractUserSecurityInformationProtectionSensitivityLabelContentLabel
 
 ## SYNOPSIS
 Use the metadata that exists on an already-labeled piece of information to resolve the metadata to a specific sensitivity label.
@@ -15,28 +15,28 @@ The contentInfo input is resolved to informationProtectionContentLabel.
 
 ### ExtractExpanded (Default)
 ```
-Invoke-MgExtractUserSecurityInformationProtectionSensitivityLabelContentLabel -UserId <String>
+Invoke-MgBetaExtractUserSecurityInformationProtectionSensitivityLabelContentLabel -UserId <String>
  [-AdditionalProperties <Hashtable>] [-ContentInfo <IMicrosoftGraphSecurityContentInfo>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Extract
 ```
-Invoke-MgExtractUserSecurityInformationProtectionSensitivityLabelContentLabel -UserId <String>
+Invoke-MgBetaExtractUserSecurityInformationProtectionSensitivityLabelContentLabel -UserId <String>
  -BodyParameter <IPaths12WcorzUsersUserIdSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityExtractcontentlabelPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ExtractViaIdentityExpanded
 ```
-Invoke-MgExtractUserSecurityInformationProtectionSensitivityLabelContentLabel
+Invoke-MgBetaExtractUserSecurityInformationProtectionSensitivityLabelContentLabel
  -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
  [-ContentInfo <IMicrosoftGraphSecurityContentInfo>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ExtractViaIdentity
 ```
-Invoke-MgExtractUserSecurityInformationProtectionSensitivityLabelContentLabel
+Invoke-MgBetaExtractUserSecurityInformationProtectionSensitivityLabelContentLabel
  -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths12WcorzUsersUserIdSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityExtractcontentlabelPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -48,9 +48,9 @@ The contentInfo input is resolved to informationProtectionContentLabel.
 
 ## EXAMPLES
 
-### Example 1: Using the Invoke-MgExtractUserSecurityInformationProtectionSensitivityLabelContentLabel Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Users.Actions
+Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
 	ContentInfo = @{
 		Format = "default"
@@ -88,11 +88,8 @@ $params = @{
 		)
 	}
 }
-Invoke-MgExtractUserSecurityInformationProtectionSensitivityLabelContentLabel -UserId $userId -BodyParameter $params
+Invoke-MgBetaExtractUserSecurityInformationProtectionSensitivityLabelContentLabel -UserId $userId -BodyParameter $params
 ```
-
-This example shows how to use the Invoke-MgExtractUserSecurityInformationProtectionSensitivityLabelContentLabel Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -113,7 +110,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths12WcorzUsersUserIdSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityExtractcontentlabelPostRequestbodyContentApplicationJsonSchema
@@ -129,7 +126,7 @@ Accept wildcard characters: False
 
 ### -ContentInfo
 contentInfo
-To construct, please use Get-Help -Online and see NOTES section for CONTENTINFO properties and create a hash table.
+To construct, see NOTES section for CONTENTINFO properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSecurityContentInfo
@@ -145,7 +142,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersActionsIdentity
@@ -210,11 +207,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths12WcorzUsersUserIdSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityExtractcontentlabelPostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths12WcorzUsersUserIdSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityExtractcontentlabelPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityContentLabel
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityContentLabel
 ## NOTES
 
 ALIASES
@@ -224,7 +221,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths12WcorzUsersUserIdSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityExtractcontentlabelPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths12WcorzUsersUserIdSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityExtractcontentlabelPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ContentInfo <IMicrosoftGraphSecurityContentInfo>]`: contentInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -235,7 +232,7 @@ BODYPARAMETER `<IPaths12WcorzUsersUserIdSecurityInformationprotectionSensitivity
       - `[Value <String>]`: Value for this key-value pair.
     - `[State <String>]`: contentState
 
-CONTENTINFO `<IMicrosoftGraphSecurityContentInfo>`: contentInfo
+`CONTENTINFO <IMicrosoftGraphSecurityContentInfo>`: contentInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ContentFormat <String>]`: The format of the content to be labeled. Possible values are: file, email.
   - `[Identifier <String>]`: Identifier used for Azure Information Protection Analytics.
@@ -244,7 +241,7 @@ CONTENTINFO `<IMicrosoftGraphSecurityContentInfo>`: contentInfo
     - `[Value <String>]`: Value for this key-value pair.
   - `[State <String>]`: contentState
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
@@ -278,7 +275,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription

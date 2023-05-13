@@ -1,7 +1,7 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.ServiceAnnouncement-help.xml
 Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.serviceannouncement/invoke-mgunfavoriteserviceannouncementmessage
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/invoke-mgunfavoriteserviceannouncementmessage
 schema: 2.0.0
 ---
 
@@ -12,16 +12,16 @@ Remove the favorite status of serviceUpdateMessages for the signed in user.
 
 ## SYNTAX
 
-### UnfavoriteExpanded1 (Default)
+### UnfavoriteExpanded (Default)
 ```
 Invoke-MgUnfavoriteServiceAnnouncementMessage [-AdditionalProperties <Hashtable>] [-MessageIds <String[]>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Unfavorite1
+### Unfavorite
 ```
 Invoke-MgUnfavoriteServiceAnnouncementMessage
- -BodyParameter <IPaths1U36FhAdminServiceannouncementMessagesMicrosoftGraphUnfavoritePostRequestbodyContentApplicationJsonSchema>
+ -Body <IPaths1U36FhAdminServiceannouncementMessagesMicrosoftGraphUnfavoritePostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -30,7 +30,7 @@ Remove the favorite status of serviceUpdateMessages for the signed in user.
 
 ## EXAMPLES
 
-### Example 1: Using the Invoke-MgUnfavoriteServiceAnnouncementMessage Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
 $params = @{
@@ -42,9 +42,6 @@ $params = @{
 Invoke-MgUnfavoriteServiceAnnouncementMessage -BodyParameter $params
 ```
 
-This example shows how to use the Invoke-MgUnfavoriteServiceAnnouncementMessage Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -52,7 +49,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UnfavoriteExpanded1
+Parameter Sets: UnfavoriteExpanded
 Aliases:
 
 Required: False
@@ -62,13 +59,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -BodyParameter
+### -Body
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
 Type: IPaths1U36FhAdminServiceannouncementMessagesMicrosoftGraphUnfavoritePostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Unfavorite1
+Parameter Sets: Unfavorite
 Aliases:
 
 Required: True
@@ -83,7 +80,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String[]
-Parameter Sets: UnfavoriteExpanded1
+Parameter Sets: UnfavoriteExpanded
 Aliases:
 
 Required: False
@@ -142,7 +139,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1U36FhAdminServiceannouncementMessagesMicrosoftGraphUnfavoritePostRequestbodyContentApplicationJsonSchema>`: .
+`BODY <IPaths1U36FhAdminServiceannouncementMessagesMicrosoftGraphUnfavoritePostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[MessageIds <String[]>]`: 
 

@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticremoteconnection
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticremoteconnection
 schema: 2.0.0
 ---
 
-# New-MgDeviceManagementUserExperienceAnalyticRemoteConnection
+# New-MgBetaDeviceManagementUserExperienceAnalyticRemoteConnection
 
 ## SYNOPSIS
 Create new navigation property to userExperienceAnalyticsRemoteConnection for deviceManagement
@@ -14,7 +14,7 @@ Create new navigation property to userExperienceAnalyticsRemoteConnection for de
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementUserExperienceAnalyticRemoteConnection [-AdditionalProperties <Hashtable>]
+New-MgBetaDeviceManagementUserExperienceAnalyticRemoteConnection [-AdditionalProperties <Hashtable>]
  [-CloudPcFailurePercentage <Double>] [-CloudPcRoundTripTime <Double>] [-CloudPcSignInTime <Double>]
  [-CoreBootTime <Double>] [-CoreSignInTime <Double>] [-DeviceCount <Int32>] [-DeviceId <String>]
  [-DeviceName <String>] [-Id <String>] [-Manufacturer <String>] [-Model <String>] [-RemoteSignInTime <Double>]
@@ -23,7 +23,7 @@ New-MgDeviceManagementUserExperienceAnalyticRemoteConnection [-AdditionalPropert
 
 ### Create
 ```
-New-MgDeviceManagementUserExperienceAnalyticRemoteConnection
+New-MgBetaDeviceManagementUserExperienceAnalyticRemoteConnection
  -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsRemoteConnection> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
@@ -32,6 +32,20 @@ New-MgDeviceManagementUserExperienceAnalyticRemoteConnection
 Create new navigation property to userExperienceAnalyticsRemoteConnection for deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -52,7 +66,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 The user experience analyte remote connection entity.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserExperienceAnalyticsRemoteConnection
@@ -193,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -320,10 +334,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsRemoteConnection
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsRemoteConnection
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsRemoteConnection
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsRemoteConnection
 ## NOTES
 
 ALIASES
@@ -333,9 +347,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsRemoteConnection>`: The user experience analyte remote connection entity.
+`BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsRemoteConnection>`: The user experience analyte remote connection entity.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[CloudPcFailurePercentage <Double?>]`: The sign in failure percentage of Cloud PC Device. Valid values 0 to 100
   - `[CloudPcRoundTripTime <Double?>]`: The round tip time of Cloud PC Device. Valid values 0 to 1.79769313486232E+308
   - `[CloudPcSignInTime <Double?>]`: The sign in time of Cloud PC Device. Valid values 0 to 1.79769313486232E+308

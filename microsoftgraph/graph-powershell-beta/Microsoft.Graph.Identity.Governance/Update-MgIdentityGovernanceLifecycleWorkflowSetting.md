@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.Governance-help.xml
-Module Name: Microsoft.Graph.Identity.Governance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancelifecycleworkflowsetting
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.Governance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancelifecycleworkflowsetting
 schema: 2.0.0
 ---
 
-# Update-MgIdentityGovernanceLifecycleWorkflowSetting
+# Update-MgBetaIdentityGovernanceLifecycleWorkflowSetting
 
 ## SYNOPSIS
 Update the properties of a lifecycleManagementSettings object.
@@ -14,15 +14,15 @@ Update the properties of a lifecycleManagementSettings object.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgIdentityGovernanceLifecycleWorkflowSetting [-AdditionalProperties <Hashtable>]
+Update-MgBetaIdentityGovernanceLifecycleWorkflowSetting [-AdditionalProperties <Hashtable>]
  [-EmailSettings <IMicrosoftGraphEmailSettings>] [-Id <String>] [-WorkflowScheduleIntervalInHours <Int32>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgIdentityGovernanceLifecycleWorkflowSetting
- -BodyParameter <IMicrosoftGraphIdentityGovernanceLifecycleManagementSettings> [-PassThru] [-WhatIf] [-Confirm]
+Update-MgBetaIdentityGovernanceLifecycleWorkflowSetting
+ -BodyParameter <IMicrosoftGraphIdentityGovernanceLifecycleManagementSettings> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -31,18 +31,15 @@ Update the properties of a lifecycleManagementSettings object.
 
 ## EXAMPLES
 
-### Example 1: Using the Update-MgIdentityGovernanceLifecycleWorkflowSetting Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Identity.Governance
+Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{
 	"@odata.context" = "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/settings/$entity"
 	WorkflowScheduleIntervalInHours = 3
 }
-Update-MgIdentityGovernanceLifecycleWorkflowSetting -BodyParameter $params
+Update-MgBetaIdentityGovernanceLifecycleWorkflowSetting -BodyParameter $params
 ```
-
-This example shows how to use the Update-MgIdentityGovernanceLifecycleWorkflowSetting Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -63,7 +60,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 lifecycleManagementSettings
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIdentityGovernanceLifecycleManagementSettings
@@ -79,7 +76,7 @@ Accept wildcard characters: False
 
 ### -EmailSettings
 emailSettings
-To construct, please use Get-Help -Online and see NOTES section for EMAILSETTINGS properties and create a hash table.
+To construct, see NOTES section for EMAILSETTINGS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEmailSettings
@@ -94,27 +91,12 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
 Type: String
 Parameter Sets: UpdateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -177,10 +159,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentityGovernanceLifecycleManagementSettings
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentityGovernanceLifecycleManagementSettings
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentityGovernanceLifecycleManagementSettings
 ## NOTES
 
 ALIASES
@@ -190,16 +172,16 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphIdentityGovernanceLifecycleManagementSettings>`: lifecycleManagementSettings
+`BODYPARAMETER <IMicrosoftGraphIdentityGovernanceLifecycleManagementSettings>`: lifecycleManagementSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[EmailSettings <IMicrosoftGraphEmailSettings>]`: emailSettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[SenderDomain <String>]`: Specifies the domain that should be used when sending email notifications. This domain must be verified in order to be used. We recommend that you use a domain that has the appropriate DNS records to facilitate email validation, like SPF, DKIM, DMARC, and MX, because this then complies with the RFC compliance for sending and receiving email. For details, see Learn more about Exchange Online Email Routing.
     - `[UseCompanyBranding <Boolean?>]`: Specifies if the organization's banner logo should be included in email notifications. The banner logo will replace the Microsoft logo at the top of the email notification. If true the banner logo will be taken from the tenant's branding settings. This value can only be set to true if the organizationalBranding bannerLogo property is set.
   - `[WorkflowScheduleIntervalInHours <Int32?>]`: The interval in hours at which all workflows running in the tenant should be scheduled for execution. This interval has a minimum value of 1 and a maximum value of 24. The default value is 3 hours.
 
-EMAILSETTINGS `<IMicrosoftGraphEmailSettings>`: emailSettings
+`EMAILSETTINGS <IMicrosoftGraphEmailSettings>`: emailSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[SenderDomain <String>]`: Specifies the domain that should be used when sending email notifications. This domain must be verified in order to be used. We recommend that you use a domain that has the appropriate DNS records to facilitate email validation, like SPF, DKIM, DMARC, and MX, because this then complies with the RFC compliance for sending and receiving email. For details, see Learn more about Exchange Online Email Routing.
   - `[UseCompanyBranding <Boolean?>]`: Specifies if the organization's banner logo should be included in email notifications. The banner logo will replace the Microsoft logo at the top of the email notification. If true the banner logo will be taken from the tenant's branding settings. This value can only be set to true if the organizationalBranding bannerLogo property is set.

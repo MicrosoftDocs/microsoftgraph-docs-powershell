@@ -1,46 +1,45 @@
----
-external help file: Microsoft.Graph.CloudCommunications-help.xml
-Module Name: Microsoft.Graph.CloudCommunications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcallrecordsession
+﻿---
+external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
+Module Name: Microsoft.Graph.Beta.CloudCommunications
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationcallrecordsession
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
-# New-MgCommunicationCallRecordSession
+# New-MgBetaCommunicationCallRecordSession
 
 ## SYNOPSIS
 Create new navigation property to sessions for communications
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
-New-MgCommunicationCallRecordSession -CallRecordId <String> [-AdditionalProperties <Hashtable>]
+New-MgBetaCommunicationCallRecordSession -CallRecordId <String> [-AdditionalProperties <Hashtable>]
  [-Callee <IMicrosoftGraphCallRecordsEndpoint>] [-Caller <IMicrosoftGraphCallRecordsEndpoint>]
- [-EndDateTime <DateTime>] [-FailureInfo <IMicrosoftGraphCallRecordsFailureInfo>] [-Id <String>]
+ [-EndDateTime <DateTime>] [-FailureInfo <IMicrosoftGraphCallRecordsFailureInfo>] [-Id <String>] [-IsTest]
  [-Modalities <String[]>] [-Segments <IMicrosoftGraphCallRecordsSegment[]>] [-StartDateTime <DateTime>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
-New-MgCommunicationCallRecordSession -CallRecordId <String> -BodyParameter <IMicrosoftGraphCallRecordsSession>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaCommunicationCallRecordSession -CallRecordId <String>
+ -BodyParameter <IMicrosoftGraphCallRecordsSession> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded1
+### CreateViaIdentityExpanded
 ```
-New-MgCommunicationCallRecordSession -InputObject <ICloudCommunicationsIdentity>
+New-MgBetaCommunicationCallRecordSession -InputObject <ICloudCommunicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-Callee <IMicrosoftGraphCallRecordsEndpoint>]
  [-Caller <IMicrosoftGraphCallRecordsEndpoint>] [-EndDateTime <DateTime>]
- [-FailureInfo <IMicrosoftGraphCallRecordsFailureInfo>] [-Id <String>] [-Modalities <String[]>]
+ [-FailureInfo <IMicrosoftGraphCallRecordsFailureInfo>] [-Id <String>] [-IsTest] [-Modalities <String[]>]
  [-Segments <IMicrosoftGraphCallRecordsSegment[]>] [-StartDateTime <DateTime>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### CreateViaIdentity1
+### CreateViaIdentity
 ```
-New-MgCommunicationCallRecordSession -InputObject <ICloudCommunicationsIdentity>
+New-MgBetaCommunicationCallRecordSession -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IMicrosoftGraphCallRecordsSession> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -49,27 +48,19 @@ Create new navigation property to sessions for communications
 
 ## EXAMPLES
 
-### Example 1: Get session list
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.CloudCommunications
-
-Get-MgCommunicationCallRecordSession -CallRecordId $callRecordId
+Import-Module Microsoft.Graph.Beta.CloudCommunications
 ```
 
-This example shows how to use the New-MgCommunicationCallRecordSession Cmdlet.
+Get-MgBetaCommunicationCallRecordSession -CallRecordId $callRecordId
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Get session list with segments
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.CloudCommunications
-
-Get-MgCommunicationCallRecordSession -CallRecordId $callRecordId -ExpandProperty "segments"
+Import-Module Microsoft.Graph.Beta.CloudCommunications
 ```
 
-This example shows how to use the New-MgCommunicationCallRecordSession Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Get-MgBetaCommunicationCallRecordSession -CallRecordId $callRecordId -ExpandProperty "segments"
 
 ## PARAMETERS
 
@@ -78,7 +69,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -90,11 +81,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 session
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphCallRecordsSession
-Parameter Sets: Create1, CreateViaIdentity1
+Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -106,11 +97,11 @@ Accept wildcard characters: False
 
 ### -Callee
 endpoint
-To construct, please use Get-Help -Online and see NOTES section for CALLEE properties and create a hash table.
+To construct, see NOTES section for CALLEE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphCallRecordsEndpoint
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -122,11 +113,11 @@ Accept wildcard characters: False
 
 ### -Caller
 endpoint
-To construct, please use Get-Help -Online and see NOTES section for CALLER properties and create a hash table.
+To construct, see NOTES section for CALLER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphCallRecordsEndpoint
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -141,7 +132,7 @@ The unique identifier of callRecord
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, Create1
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -158,7 +149,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -170,11 +161,11 @@ Accept wildcard characters: False
 
 ### -FailureInfo
 failureInfo
-To construct, please use Get-Help -Online and see NOTES section for FAILUREINFO properties and create a hash table.
+To construct, see NOTES section for FAILUREINFO properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphCallRecordsFailureInfo
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -185,12 +176,12 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -202,11 +193,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ICloudCommunicationsIdentity
-Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -216,13 +207,28 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -IsTest
+Specifies whether the session is a test.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Modalities
 List of modalities present in the session.
 Possible values are: unknown, audio, video, videoBasedScreenSharing, data, screenSharing, unknownFutureValue.
 
 ```yaml
 Type: String[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -236,11 +242,11 @@ Accept wildcard characters: False
 The list of segments involved in the session.
 Read-only.
 Nullable.
-To construct, please use Get-Help -Online and see NOTES section for SEGMENTS properties and create a hash table.
+To construct, see NOTES section for SEGMENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphCallRecordsSegment[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -251,13 +257,13 @@ Accept wildcard characters: False
 ```
 
 ### -StartDateTime
-UTC time when the first user joined the session.
+UTC fime when the first user joined the session.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -303,11 +309,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCallRecordsSession
+### Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCallRecordsSession
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCallRecordsSession
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCallRecordsSession
 ## NOTES
 
 ALIASES
@@ -317,9 +323,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphCallRecordsSession>`: session
+`BODYPARAMETER <IMicrosoftGraphCallRecordsSession>`: session
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Callee <IMicrosoftGraphCallRecordsEndpoint>]`: endpoint
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[UserAgent <IMicrosoftGraphCallRecordsUserAgent>]`: userAgent
@@ -332,9 +338,10 @@ BODYPARAMETER `<IMicrosoftGraphCallRecordsSession>`: session
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Reason <String>]`: Classification of why a call or portion of a call failed.
     - `[Stage <String>]`: failureStage
+  - `[IsTest <Boolean?>]`: Specifies whether the session is a test.
   - `[Modalities <String[]>]`: List of modalities present in the session. Possible values are: unknown, audio, video, videoBasedScreenSharing, data, screenSharing, unknownFutureValue.
   - `[Segments <IMicrosoftGraphCallRecordsSegment[]>]`: The list of segments involved in the session. Read-only. Nullable.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Callee <IMicrosoftGraphCallRecordsEndpoint>]`: endpoint
     - `[Caller <IMicrosoftGraphCallRecordsEndpoint>]`: endpoint
     - `[EndDateTime <DateTime?>]`: UTC time when the segment ended. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -382,7 +389,7 @@ BODYPARAMETER `<IMicrosoftGraphCallRecordsSession>`: session
         - `[SentQualityEventRatio <Single?>]`: Fraction of the call that the media endpoint detected the network was causing poor quality of the audio sent.
         - `[Subnet <String>]`: Subnet used for media stream by the media endpoint.
         - `[TraceRouteHops <IMicrosoftGraphCallRecordsTraceRouteHop[]>]`: List of network trace route hops collected for this media stream.*
-          - `[HopCount <Int32?>]`: The network path count of this hop that was used to compute the RTT.
+          - `[HopCount <Int32?>]`: The network path count of this hop that was used to compute the round-trip time.
           - `[IPAddress <String>]`: IP address used for this hop in the network trace.
           - `[RoundTripTime <TimeSpan?>]`: The time from when the trace route packet was sent from the client to this hop and back to the client, denoted in [ISO 8601][] format. For example, 1 second is denoted as PT1S, where P is the duration designator, T is the time designator, and S is the second designator.
         - `[WifiBand <String>]`: wifiBand
@@ -402,6 +409,7 @@ BODYPARAMETER `<IMicrosoftGraphCallRecordsSession>`: session
         - `[AverageAudioDegradation <Single?>]`: Average Network Mean Opinion Score degradation for stream. Represents how much the network loss and jitter has impacted the quality of received audio.
         - `[AverageAudioNetworkJitter <TimeSpan?>]`: Average jitter for the stream computed as specified in [RFC 3550][], denoted in [ISO 8601][] format. For example, 1 second is denoted as 'PT1S', where 'P' is the duration designator, 'T' is the time designator, and 'S' is the second designator.
         - `[AverageBandwidthEstimate <Int64?>]`: Average estimated bandwidth available between two endpoints in bits per second.
+        - `[AverageFreezeDuration <TimeSpan?>]`: Average of the received freeze duration related to the video stream.
         - `[AverageJitter <TimeSpan?>]`: Average jitter for the stream computed as specified in [RFC 3550][], denoted in [ISO 8601][] format. For example, 1 second is denoted as 'PT1S', where 'P' is the duration designator, 'T' is the time designator, and 'S' is the second designator.
         - `[AveragePacketLossRate <Single?>]`: Average packet loss rate for stream.
         - `[AverageRatioOfConcealedSamples <Single?>]`: Ratio of the number of audio frames with samples generated by packet loss concealment to the total number of audio frames.
@@ -411,6 +419,7 @@ BODYPARAMETER `<IMicrosoftGraphCallRecordsSession>`: session
         - `[AverageVideoFrameRate <Single?>]`: Average frames per second received for a video stream, computed over the duration of the session.
         - `[AverageVideoPacketLossRate <Single?>]`: Average fraction of packets lost, as specified in [RFC 3550][], computed over the duration of the session.
         - `[EndDateTime <DateTime?>]`: UTC time when the stream ended. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+        - `[IsAudioForwardErrorCorrectionUsed <Boolean?>]`: Indicates whether the forward error correction (FEC) was used at some point during the session. The default value is null.
         - `[LowFrameRateRatio <Single?>]`: Fraction of the call where frame rate is less than 7.5 frames per second.
         - `[LowVideoProcessingCapabilityRatio <Single?>]`: Fraction of the call that the client is running less than 70% expected video processing capability.
         - `[MaxAudioNetworkJitter <TimeSpan?>]`: Maximum of audio network jitter computed over each of the 20 second windows during the session, denoted in [ISO 8601][] format. For example, 1 second is denoted as 'PT1S', where 'P' is the duration designator, 'T' is the time designator, and 'S' is the second designator.
@@ -420,34 +429,35 @@ BODYPARAMETER `<IMicrosoftGraphCallRecordsSession>`: session
         - `[MaxRoundTripTime <TimeSpan?>]`: Maximum network propagation round-trip time computed as specified in [RFC 3550][], denoted in [ISO 8601][] format. For example, 1 second is denoted as 'PT1S', where 'P' is the duration designator, 'T' is the time designator, and 'S' is the second designator.
         - `[PacketUtilization <Int64?>]`: Packet count for the stream.
         - `[PostForwardErrorCorrectionPacketLossRate <Single?>]`: Packet loss rate after FEC has been applied aggregated across all video streams and codecs.
+        - `[RmsFreezeDuration <TimeSpan?>]`: Root mean square of the received freeze duration related to the video stream.
         - `[StartDateTime <DateTime?>]`: UTC time when the stream started. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
         - `[StreamDirection <String>]`: mediaStreamDirection
         - `[StreamId <String>]`: Unique identifier for the stream.
         - `[VideoCodec <String>]`: videoCodec
         - `[WasMediaBypassed <Boolean?>]`: True if the media stream bypassed the Mediation Server and went straight between client and PSTN Gateway/PBX, false otherwise.
     - `[StartDateTime <DateTime?>]`: UTC time when the segment started. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[StartDateTime <DateTime?>]`: UTC time when the first user joined the session. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[StartDateTime <DateTime?>]`: UTC fime when the first user joined the session. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
-CALLEE `<IMicrosoftGraphCallRecordsEndpoint>`: endpoint
+`CALLEE <IMicrosoftGraphCallRecordsEndpoint>`: endpoint
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[UserAgent <IMicrosoftGraphCallRecordsUserAgent>]`: userAgent
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ApplicationVersion <String>]`: Identifies the version of application software used by this endpoint.
     - `[HeaderValue <String>]`: User-agent header value reported by this endpoint.
 
-CALLER `<IMicrosoftGraphCallRecordsEndpoint>`: endpoint
+`CALLER <IMicrosoftGraphCallRecordsEndpoint>`: endpoint
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[UserAgent <IMicrosoftGraphCallRecordsUserAgent>]`: userAgent
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ApplicationVersion <String>]`: Identifies the version of application software used by this endpoint.
     - `[HeaderValue <String>]`: User-agent header value reported by this endpoint.
 
-FAILUREINFO `<IMicrosoftGraphCallRecordsFailureInfo>`: failureInfo
+`FAILUREINFO <IMicrosoftGraphCallRecordsFailureInfo>`: failureInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Reason <String>]`: Classification of why a call or portion of a call failed.
   - `[Stage <String>]`: failureStage
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+`INPUTOBJECT <ICloudCommunicationsIdentity>`: Identity Parameter
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
   - `[CallId <String>]`: The unique identifier of call
@@ -457,6 +467,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
   - `[FromDateTime <DateTime?>]`: Usage: fromDateTime={fromDateTime}
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[MeetingRegistrantBaseId <String>]`: The unique identifier of meetingRegistrantBase
   - `[MeetingRegistrationQuestionId <String>]`: The unique identifier of meetingRegistrationQuestion
   - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
   - `[ParticipantId <String>]`: The unique identifier of participant
@@ -465,8 +476,8 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[ToDateTime <DateTime?>]`: Usage: toDateTime={toDateTime}
   - `[UserId <String>]`: The unique identifier of user
 
-SEGMENTS <IMicrosoftGraphCallRecordsSegment\[]>: The list of segments involved in the session. Read-only. Nullable.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`SEGMENTS <IMicrosoftGraphCallRecordsSegment[]>`: The list of segments involved in the session. Read-only. Nullable.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Callee <IMicrosoftGraphCallRecordsEndpoint>]`: endpoint
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[UserAgent <IMicrosoftGraphCallRecordsUserAgent>]`: userAgent
@@ -522,7 +533,7 @@ SEGMENTS <IMicrosoftGraphCallRecordsSegment\[]>: The list of segments involved i
       - `[SentQualityEventRatio <Single?>]`: Fraction of the call that the media endpoint detected the network was causing poor quality of the audio sent.
       - `[Subnet <String>]`: Subnet used for media stream by the media endpoint.
       - `[TraceRouteHops <IMicrosoftGraphCallRecordsTraceRouteHop[]>]`: List of network trace route hops collected for this media stream.*
-        - `[HopCount <Int32?>]`: The network path count of this hop that was used to compute the RTT.
+        - `[HopCount <Int32?>]`: The network path count of this hop that was used to compute the round-trip time.
         - `[IPAddress <String>]`: IP address used for this hop in the network trace.
         - `[RoundTripTime <TimeSpan?>]`: The time from when the trace route packet was sent from the client to this hop and back to the client, denoted in [ISO 8601][] format. For example, 1 second is denoted as PT1S, where P is the duration designator, T is the time designator, and S is the second designator.
       - `[WifiBand <String>]`: wifiBand
@@ -542,6 +553,7 @@ SEGMENTS <IMicrosoftGraphCallRecordsSegment\[]>: The list of segments involved i
       - `[AverageAudioDegradation <Single?>]`: Average Network Mean Opinion Score degradation for stream. Represents how much the network loss and jitter has impacted the quality of received audio.
       - `[AverageAudioNetworkJitter <TimeSpan?>]`: Average jitter for the stream computed as specified in [RFC 3550][], denoted in [ISO 8601][] format. For example, 1 second is denoted as 'PT1S', where 'P' is the duration designator, 'T' is the time designator, and 'S' is the second designator.
       - `[AverageBandwidthEstimate <Int64?>]`: Average estimated bandwidth available between two endpoints in bits per second.
+      - `[AverageFreezeDuration <TimeSpan?>]`: Average of the received freeze duration related to the video stream.
       - `[AverageJitter <TimeSpan?>]`: Average jitter for the stream computed as specified in [RFC 3550][], denoted in [ISO 8601][] format. For example, 1 second is denoted as 'PT1S', where 'P' is the duration designator, 'T' is the time designator, and 'S' is the second designator.
       - `[AveragePacketLossRate <Single?>]`: Average packet loss rate for stream.
       - `[AverageRatioOfConcealedSamples <Single?>]`: Ratio of the number of audio frames with samples generated by packet loss concealment to the total number of audio frames.
@@ -551,6 +563,7 @@ SEGMENTS <IMicrosoftGraphCallRecordsSegment\[]>: The list of segments involved i
       - `[AverageVideoFrameRate <Single?>]`: Average frames per second received for a video stream, computed over the duration of the session.
       - `[AverageVideoPacketLossRate <Single?>]`: Average fraction of packets lost, as specified in [RFC 3550][], computed over the duration of the session.
       - `[EndDateTime <DateTime?>]`: UTC time when the stream ended. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+      - `[IsAudioForwardErrorCorrectionUsed <Boolean?>]`: Indicates whether the forward error correction (FEC) was used at some point during the session. The default value is null.
       - `[LowFrameRateRatio <Single?>]`: Fraction of the call where frame rate is less than 7.5 frames per second.
       - `[LowVideoProcessingCapabilityRatio <Single?>]`: Fraction of the call that the client is running less than 70% expected video processing capability.
       - `[MaxAudioNetworkJitter <TimeSpan?>]`: Maximum of audio network jitter computed over each of the 20 second windows during the session, denoted in [ISO 8601][] format. For example, 1 second is denoted as 'PT1S', where 'P' is the duration designator, 'T' is the time designator, and 'S' is the second designator.
@@ -560,6 +573,7 @@ SEGMENTS <IMicrosoftGraphCallRecordsSegment\[]>: The list of segments involved i
       - `[MaxRoundTripTime <TimeSpan?>]`: Maximum network propagation round-trip time computed as specified in [RFC 3550][], denoted in [ISO 8601][] format. For example, 1 second is denoted as 'PT1S', where 'P' is the duration designator, 'T' is the time designator, and 'S' is the second designator.
       - `[PacketUtilization <Int64?>]`: Packet count for the stream.
       - `[PostForwardErrorCorrectionPacketLossRate <Single?>]`: Packet loss rate after FEC has been applied aggregated across all video streams and codecs.
+      - `[RmsFreezeDuration <TimeSpan?>]`: Root mean square of the received freeze duration related to the video stream.
       - `[StartDateTime <DateTime?>]`: UTC time when the stream started. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       - `[StreamDirection <String>]`: mediaStreamDirection
       - `[StreamId <String>]`: Unique identifier for the stream.

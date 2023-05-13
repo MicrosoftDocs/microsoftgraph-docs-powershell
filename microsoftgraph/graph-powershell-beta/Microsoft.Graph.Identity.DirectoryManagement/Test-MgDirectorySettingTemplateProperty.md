@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/test-mgdirectorysettingtemplateproperty
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/test-mgbetadirectorysettingtemplateproperty
 schema: 2.0.0
 ---
 
-# Test-MgDirectorySettingTemplateProperty
+# Test-MgBetaDirectorySettingTemplateProperty
 
 ## SYNOPSIS
 Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
@@ -22,14 +22,14 @@ However, you can validate both the mail nickname and the display name and receiv
 
 ### ValidateExpanded (Default)
 ```
-Test-MgDirectorySettingTemplateProperty [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
+Test-MgBetaDirectorySettingTemplateProperty [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
  [-EntityType <String>] [-MailNickname <String>] [-OnBehalfOfUserId <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Validate
 ```
-Test-MgDirectorySettingTemplateProperty
+Test-MgBetaDirectorySettingTemplateProperty
  -BodyParameter <IPathsO8B6ApDirectorysettingtemplatesMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -46,6 +46,20 @@ If one or more properties fail multiple validations, only the property with the 
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -66,7 +80,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPathsO8B6ApDirectorysettingtemplatesMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema
@@ -191,7 +205,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsO8B6ApDirectorysettingtemplatesMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsO8B6ApDirectorysettingtemplatesMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### System.Boolean
@@ -204,7 +218,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsO8B6ApDirectorysettingtemplatesMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsO8B6ApDirectorysettingtemplatesMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: 
   - `[EntityType <String>]`: 

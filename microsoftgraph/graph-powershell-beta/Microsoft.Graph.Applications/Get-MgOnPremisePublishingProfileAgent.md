@@ -1,62 +1,52 @@
----
-external help file: Microsoft.Graph.Applications-help.xml
-Module Name: Microsoft.Graph.Applications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgonpremisepublishingprofileagent
+﻿---
+external help file: Microsoft.Graph.Beta.Applications-help.xml
+Module Name: Microsoft.Graph.Beta.Applications
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofileagent
 schema: 2.0.0
 ---
 
-# Get-MgOnPremisePublishingProfileAgent
+# Get-MgBetaOnPremisePublishingProfileAgent
 
 ## SYNOPSIS
-List of existing onPremisesAgent objects.
-Read-only.
-Nullable.
+Retrieve the properties and relationships of an onPremisesAgent object.
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgOnPremisePublishingProfileAgent -OnPremisesPublishingProfileId <String> [-ExpandProperty <String[]>]
+Get-MgBetaOnPremisePublishingProfileAgent -OnPremisesPublishingProfileId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgOnPremisePublishingProfileAgent -OnPremisesAgentId <String> -OnPremisesPublishingProfileId <String>
+Get-MgBetaOnPremisePublishingProfileAgent -OnPremisesAgentId <String> -OnPremisesPublishingProfileId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgOnPremisePublishingProfileAgent -InputObject <IApplicationsIdentity> [-ExpandProperty <String[]>]
+Get-MgBetaOnPremisePublishingProfileAgent -InputObject <IApplicationsIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-List of existing onPremisesAgent objects.
-Read-only.
-Nullable.
+Retrieve the properties and relationships of an onPremisesAgent object.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgOnPremisePublishingProfileAgent Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Applications
-Get-MgOnPremisePublishingProfileAgent -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -ExpandProperty "agentGroups"
+Import-Module Microsoft.Graph.Beta.Applications
+Get-MgBetaOnPremisePublishingProfileAgent -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -ExpandProperty "agentGroups"
 ```
 
-This example shows how to use the Get-MgOnPremisePublishingProfileAgent Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Get-MgOnPremisePublishingProfileAgent Cmdlet
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Applications
-Get-MgOnPremisePublishingProfileAgent -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -OnPremisesAgentId $onPremisesAgentId -ExpandProperty "agentGroups"
+Import-Module Microsoft.Graph.Beta.Applications
+Get-MgBetaOnPremisePublishingProfileAgent -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -OnPremisesAgentId $onPremisesAgentId -ExpandProperty "agentGroups"
 ```
-
-This example shows how to use the Get-MgOnPremisePublishingProfileAgent Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -123,7 +113,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IApplicationsIdentity
@@ -262,10 +252,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnPremisesAgent
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnPremisesAgent
 ## NOTES
 
 ALIASES
@@ -275,7 +265,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+`INPUTOBJECT <IApplicationsIdentity>`: Identity Parameter
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
   - `[ApplicationId <String>]`: The unique identifier of application

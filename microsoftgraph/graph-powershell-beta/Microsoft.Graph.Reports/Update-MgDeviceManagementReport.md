@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Reports-help.xml
-Module Name: Microsoft.Graph.Reports
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/update-mgdevicemanagementreport
+﻿---
+external help file: Microsoft.Graph.Beta.Reports-help.xml
+Module Name: Microsoft.Graph.Beta.Reports
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetadevicemanagementreport
 schema: 2.0.0
 ---
 
-# Update-MgDeviceManagementReport
+# Update-MgBetaDeviceManagementReport
 
 ## SYNOPSIS
 Update the navigation property reports in deviceManagement
@@ -14,15 +14,15 @@ Update the navigation property reports in deviceManagement
 
 ### UpdateExpanded (Default)
 ```
-Update-MgDeviceManagementReport [-AdditionalProperties <Hashtable>]
+Update-MgBetaDeviceManagementReport [-AdditionalProperties <Hashtable>]
  [-CachedReportConfigurations <IMicrosoftGraphDeviceManagementCachedReportConfiguration[]>]
- [-ExportJobs <IMicrosoftGraphDeviceManagementExportJob[]>] [-Id <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [-ExportJobs <IMicrosoftGraphDeviceManagementExportJob[]>] [-Id <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgDeviceManagementReport -BodyParameter <IMicrosoftGraphDeviceManagementReports1> [-PassThru] [-WhatIf]
+Update-MgBetaDeviceManagementReport -BodyParameter <IMicrosoftGraphDeviceManagementReports> [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -30,6 +30,20 @@ Update-MgDeviceManagementReport -BodyParameter <IMicrosoftGraphDeviceManagementR
 Update the navigation property reports in deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -50,10 +64,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Singleton entity that acts as a container for all reports functionality.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementReports1
+Type: IMicrosoftGraphDeviceManagementReports
 Parameter Sets: Update
 Aliases:
 
@@ -66,7 +80,7 @@ Accept wildcard characters: False
 
 ### -CachedReportConfigurations
 Entity representing the configuration of a cached report
-To construct, please use Get-Help -Online and see NOTES section for CACHEDREPORTCONFIGURATIONS properties and create a hash table.
+To construct, see NOTES section for CACHEDREPORTCONFIGURATIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementCachedReportConfiguration[]
@@ -82,7 +96,7 @@ Accept wildcard characters: False
 
 ### -ExportJobs
 Entity representing a job to export a report
-To construct, please use Get-Help -Online and see NOTES section for EXPORTJOBS properties and create a hash table.
+To construct, see NOTES section for EXPORTJOBS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementExportJob[]
@@ -97,27 +111,12 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
 Type: String
 Parameter Sets: UpdateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -163,10 +162,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementReports1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementReports
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementReports
 ## NOTES
 
 ALIASES
@@ -176,11 +175,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDeviceManagementReports1>`: Singleton entity that acts as a container for all reports functionality.
+`BODYPARAMETER <IMicrosoftGraphDeviceManagementReports>`: Singleton entity that acts as a container for all reports functionality.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[CachedReportConfigurations <IMicrosoftGraphDeviceManagementCachedReportConfiguration[]>]`: Entity representing the configuration of a cached report
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[ExpirationDateTime <DateTime?>]`: Time that the cached report expires
     - `[Filter <String>]`: Filters applied on report creation.
     - `[LastRefreshDateTime <DateTime?>]`: Time that the cached report was last refreshed
@@ -190,7 +189,7 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagementReports1>`: Singleton entity that
     - `[Select <String[]>]`: Columns selected from the report
     - `[Status <DeviceManagementReportStatus?>]`: Possible statuses associated with a generated report
   - `[ExportJobs <IMicrosoftGraphDeviceManagementExportJob[]>]`: Entity representing a job to export a report
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[ExpirationDateTime <DateTime?>]`: Time that the exported report expires
     - `[Filter <String>]`: Filters applied on the report
     - `[Format <DeviceManagementReportFileFormat?>]`: Possible values for the file format of a report
@@ -202,8 +201,8 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagementReports1>`: Singleton entity that
     - `[Status <DeviceManagementReportStatus?>]`: Possible statuses associated with a generated report
     - `[Url <String>]`: Temporary location of the exported report
 
-CACHEDREPORTCONFIGURATIONS <IMicrosoftGraphDeviceManagementCachedReportConfiguration\[]>: Entity representing the configuration of a cached report
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`CACHEDREPORTCONFIGURATIONS <IMicrosoftGraphDeviceManagementCachedReportConfiguration[]>`: Entity representing the configuration of a cached report
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ExpirationDateTime <DateTime?>]`: Time that the cached report expires
   - `[Filter <String>]`: Filters applied on report creation.
   - `[LastRefreshDateTime <DateTime?>]`: Time that the cached report was last refreshed
@@ -213,8 +212,8 @@ CACHEDREPORTCONFIGURATIONS <IMicrosoftGraphDeviceManagementCachedReportConfigura
   - `[Select <String[]>]`: Columns selected from the report
   - `[Status <DeviceManagementReportStatus?>]`: Possible statuses associated with a generated report
 
-EXPORTJOBS <IMicrosoftGraphDeviceManagementExportJob\[]>: Entity representing a job to export a report
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`EXPORTJOBS <IMicrosoftGraphDeviceManagementExportJob[]>`: Entity representing a job to export a report
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ExpirationDateTime <DateTime?>]`: Time that the exported report expires
   - `[Filter <String>]`: Filters applied on the report
   - `[Format <DeviceManagementReportFileFormat?>]`: Possible values for the file format of a report

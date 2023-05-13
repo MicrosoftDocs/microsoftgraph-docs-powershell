@@ -1,7 +1,7 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/get-mgeducationclassdelta
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassdelta
 schema: 2.0.0
 ---
 
@@ -22,14 +22,11 @@ Invoke function delta
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgEducationClassDelta Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Education
 Get-MgEducationClassDelta
 ```
-
-This example shows how to use the Get-MgEducationClassDelta Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -176,7 +173,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationClass1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationClass
 ## NOTES
 
 ALIASES

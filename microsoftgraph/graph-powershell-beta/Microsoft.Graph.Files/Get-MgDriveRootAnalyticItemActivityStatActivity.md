@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Files-help.xml
-Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/get-mgdriverootanalyticitemactivitystatactivity
+﻿---
+external help file: Microsoft.Graph.Beta.Files-help.xml
+Module Name: Microsoft.Graph.Beta.Files
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriverootanalyticitemactivitystatactivity
 schema: 2.0.0
 ---
 
-# Get-MgDriveRootAnalyticItemActivityStatActivity
+# Get-MgBetaDriveRootAnalyticItemActivityStatActivity
 
 ## SYNOPSIS
 Exposes the itemActivities represented in this itemActivityStat resource.
@@ -13,7 +13,7 @@ Exposes the itemActivities represented in this itemActivityStat resource.
 ## SYNTAX
 
 ```
-Get-MgDriveRootAnalyticItemActivityStatActivity -DriveId <String> -ItemActivityStatId <String>
+Get-MgBetaDriveRootAnalyticItemActivityStatActivity -DriveId <String> -ItemActivityStatId <String>
  [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
  [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
@@ -22,6 +22,16 @@ Get-MgDriveRootAnalyticItemActivityStatActivity -DriveId <String> -ItemActivityS
 Exposes the itemActivities represented in this itemActivityStat resource.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -213,7 +223,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemActivity1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItemActivity
 ## NOTES
 
 ALIASES

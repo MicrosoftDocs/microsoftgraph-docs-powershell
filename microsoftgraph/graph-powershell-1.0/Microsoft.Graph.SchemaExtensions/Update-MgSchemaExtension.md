@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.SchemaExtensions-help.xml
 Module Name: Microsoft.Graph.SchemaExtensions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.schemaextensions/update-mgschemaextension
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.schemaextensions/update-mgschemaextension
 schema: 2.0.0
-ms.prod: extensions
 ---
 
 # Update-MgSchemaExtension
@@ -22,32 +21,32 @@ For more information, see the Extensions section in Known issues with Microsoft 
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### UpdateExpanded (Default)
 ```
 Update-MgSchemaExtension -SchemaExtensionId <String> [-AdditionalProperties <Hashtable>]
  [-Description <String>] [-Id <String>] [-Owner <String>]
  [-Properties <IMicrosoftGraphExtensionSchemaProperty[]>] [-Status <String>] [-TargetTypes <String[]>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Update1
+### Update
 ```
-Update-MgSchemaExtension -SchemaExtensionId <String> -BodyParameter <IMicrosoftGraphSchemaExtension>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgSchemaExtension -SchemaExtensionId <String> -BodyParameter <IMicrosoftGraphSchemaExtension> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded1
+### UpdateViaIdentityExpanded
 ```
 Update-MgSchemaExtension -InputObject <ISchemaExtensionsIdentity> [-AdditionalProperties <Hashtable>]
  [-Description <String>] [-Id <String>] [-Owner <String>]
  [-Properties <IMicrosoftGraphExtensionSchemaProperty[]>] [-Status <String>] [-TargetTypes <String[]>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity1
+### UpdateViaIdentity
 ```
 Update-MgSchemaExtension -InputObject <ISchemaExtensionsIdentity>
- -BodyParameter <IMicrosoftGraphSchemaExtension> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSchemaExtension> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -64,7 +63,7 @@ For more information, see the Extensions section in Known issues with Microsoft 
 
 ## EXAMPLES
 
-### Example 1: Using the Update-MgSchemaExtension Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.SchemaExtensions
 $params = @{
@@ -91,10 +90,7 @@ $params = @{
 Update-MgSchemaExtension -SchemaExtensionId $schemaExtensionId -BodyParameter $params
 ```
 
-This example shows how to use the Update-MgSchemaExtension Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Update-MgSchemaExtension Cmdlet
+### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.SchemaExtensions
 $params = @{
@@ -120,9 +116,6 @@ $params = @{
 }
 Update-MgSchemaExtension -SchemaExtensionId $schemaExtensionId -BodyParameter $params
 ```
-
-This example shows how to use the Update-MgSchemaExtension Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -131,7 +124,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -143,11 +136,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 schemaExtension
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSchemaExtension
-Parameter Sets: Update1, UpdateViaIdentity1
+Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -163,7 +156,7 @@ Supports $filter (eq).
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -179,7 +172,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -191,11 +184,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ISchemaExtensionsIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -217,22 +210,7 @@ Supports $filter (eq).
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -244,11 +222,11 @@ Accept wildcard characters: False
 
 ### -Properties
 The collection of property names and types that make up the schema extension definition.
-To construct, please use Get-Help -Online and see NOTES section for PROPERTIES properties and create a hash table.
+To construct, see NOTES section for PROPERTIES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphExtensionSchemaProperty[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -259,11 +237,11 @@ Accept wildcard characters: False
 ```
 
 ### -SchemaExtensionId
-key: id of schemaExtension
+The unique identifier of schemaExtension
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -282,7 +260,7 @@ Supports $filter (eq).
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -298,7 +276,7 @@ Select from administrativeUnit, contact, device, event, group, message, organiza
 
 ```yaml
 Type: String[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -348,7 +326,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.ISchemaExtensionsIdentity
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSchemaExtension
 ## NOTES
 
 ALIASES
@@ -358,7 +336,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSchemaExtension>`: schemaExtension
+`BODYPARAMETER <IMicrosoftGraphSchemaExtension>`: schemaExtension
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Description <String>]`: Description for the schema extension. Supports $filter (eq).
@@ -369,10 +347,10 @@ BODYPARAMETER `<IMicrosoftGraphSchemaExtension>`: schemaExtension
   - `[Status <String>]`: The lifecycle state of the schema extension. Possible states are InDevelopment, Available, and Deprecated. Automatically set to InDevelopment on creation. For more information about the possible state transitions and behaviors, see Schema extensions lifecycle. Supports $filter (eq).
   - `[TargetTypes <String[]>]`: Set of Microsoft Graph types (that can support extensions) that the schema extension can be applied to. Select from administrativeUnit, contact, device, event, group, message, organization, post, todoTask, todoTaskList, or user.
 
-INPUTOBJECT `<ISchemaExtensionsIdentity>`: Identity Parameter
-  - `[SchemaExtensionId <String>]`: key: id of schemaExtension
+`INPUTOBJECT <ISchemaExtensionsIdentity>`: Identity Parameter
+  - `[SchemaExtensionId <String>]`: The unique identifier of schemaExtension
 
-PROPERTIES <IMicrosoftGraphExtensionSchemaProperty\[]>: The collection of property names and types that make up the schema extension definition.
+`PROPERTIES <IMicrosoftGraphExtensionSchemaProperty[]>`: The collection of property names and types that make up the schema extension definition.
   - `[Name <String>]`: The name of the strongly-typed property defined as part of a schema extension.
   - `[Type <String>]`: The type of the property that is defined as part of a schema extension.  Allowed values are Binary, Boolean, DateTime, Integer or String. See the table below for more details.
 

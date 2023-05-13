@@ -1,39 +1,39 @@
----
-external help file: Microsoft.Graph.Files-help.xml
-Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/invoke-mgcheckindriveroot
+﻿---
+external help file: Microsoft.Graph.Beta.Files-help.xml
+Module Name: Microsoft.Graph.Beta.Files
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetacheckindriveroot
 schema: 2.0.0
 ---
 
-# Invoke-MgCheckinDriveRoot
+# Invoke-MgBetaCheckinDriveRoot
 
 ## SYNOPSIS
 Check in a checked out **driveItem** resource, which makes the version of the document available to others.
 
 ## SYNTAX
 
-### CheckinExpanded1 (Default)
+### CheckinExpanded (Default)
 ```
-Invoke-MgCheckinDriveRoot -DriveId <String> [-AdditionalProperties <Hashtable>] [-CheckInAs <String>]
+Invoke-MgBetaCheckinDriveRoot -DriveId <String> [-AdditionalProperties <Hashtable>] [-CheckInAs <String>]
  [-Comment <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Checkin1
+### Checkin
 ```
-Invoke-MgCheckinDriveRoot -DriveId <String>
- -BodyParameter <IPathsW65Kj4DrivesDriveIdRootMicrosoftGraphCheckinPostRequestbodyContentApplicationJsonSchema>
+Invoke-MgBetaCheckinDriveRoot -DriveId <String>
+ -Body <IPathsW65Kj4DrivesDriveIdRootMicrosoftGraphCheckinPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CheckinViaIdentityExpanded1
+### CheckinViaIdentityExpanded
 ```
-Invoke-MgCheckinDriveRoot -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
+Invoke-MgBetaCheckinDriveRoot -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
  [-CheckInAs <String>] [-Comment <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CheckinViaIdentity1
+### CheckinViaIdentity
 ```
-Invoke-MgCheckinDriveRoot -InputObject <IFilesIdentity>
+Invoke-MgBetaCheckinDriveRoot -InputObject <IFilesIdentity>
  -BodyParameter <IPathsW65Kj4DrivesDriveIdRootMicrosoftGraphCheckinPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -43,6 +43,20 @@ Check in a checked out **driveItem** resource, which makes the version of the do
 
 ## EXAMPLES
 
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -50,7 +64,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CheckinExpanded1, CheckinViaIdentityExpanded1
+Parameter Sets: CheckinExpanded, CheckinViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -60,13 +74,29 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -BodyParameter
+### -Body
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
 Type: IPathsW65Kj4DrivesDriveIdRootMicrosoftGraphCheckinPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Checkin1, CheckinViaIdentity1
+Parameter Sets: Checkin
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -BodyParameter
+.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+```yaml
+Type: IPathsW65Kj4DrivesDriveIdRootMicrosoftGraphCheckinPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: CheckinViaIdentity
 Aliases:
 
 Required: True
@@ -81,7 +111,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: CheckinExpanded1, CheckinViaIdentityExpanded1
+Parameter Sets: CheckinExpanded, CheckinViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -96,7 +126,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: CheckinExpanded1, CheckinViaIdentityExpanded1
+Parameter Sets: CheckinExpanded, CheckinViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -111,7 +141,7 @@ The unique identifier of drive
 
 ```yaml
 Type: String
-Parameter Sets: CheckinExpanded1, Checkin1
+Parameter Sets: CheckinExpanded, Checkin
 Aliases:
 
 Required: True
@@ -123,11 +153,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IFilesIdentity
-Parameter Sets: CheckinViaIdentityExpanded1, CheckinViaIdentity1
+Parameter Sets: CheckinViaIdentityExpanded, CheckinViaIdentity
 Aliases:
 
 Required: True
@@ -188,8 +218,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-### Microsoft.Graph.PowerShell.Models.IPathsW65Kj4DrivesDriveIdRootMicrosoftGraphCheckinPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsW65Kj4DrivesDriveIdRootMicrosoftGraphCheckinPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### System.Boolean
@@ -202,12 +232,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsW65Kj4DrivesDriveIdRootMicrosoftGraphCheckinPostRequestbodyContentApplicationJsonSchema>`: .
+`BODY <IPathsW65Kj4DrivesDriveIdRootMicrosoftGraphCheckinPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CheckInAs <String>]`: 
   - `[Comment <String>]`: 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+`BODYPARAMETER <IPathsW65Kj4DrivesDriveIdRootMicrosoftGraphCheckinPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[CheckInAs <String>]`: 
+  - `[Comment <String>]`: 
+
+`INPUTOBJECT <IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType

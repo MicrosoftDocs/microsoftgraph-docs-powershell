@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mgteampermissiongrantuserownedobject
+﻿---
+external help file: Microsoft.Graph.Beta.Teams-help.xml
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateampermissiongrantuserownedobject
 schema: 2.0.0
 ---
 
-# Get-MgTeamPermissionGrantUserOwnedObject
+# Get-MgBetaTeamPermissionGrantUserOwnedObject
 
 ## SYNOPSIS
 Retrieve a list of recently deleted application and group objects owned by the specified user.
@@ -15,26 +15,26 @@ This API returns up to 1,000 deleted objects owned by the user, sorted by ID, an
 
 ### GetExpanded (Default)
 ```
-Get-MgTeamPermissionGrantUserOwnedObject -TeamId <String> [-AdditionalProperties <Hashtable>] [-Type <String>]
- [-UserId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Get-MgBetaTeamPermissionGrantUserOwnedObject -TeamId <String> [-AdditionalProperties <Hashtable>]
+ [-Type <String>] [-UserId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgTeamPermissionGrantUserOwnedObject -TeamId <String>
+Get-MgBetaTeamPermissionGrantUserOwnedObject -TeamId <String>
  -BodyParameter <IPaths1Gey5O4TeamsTeamIdPermissiongrantsMicrosoftGraphGetuserownedobjectsPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### GetViaIdentityExpanded
 ```
-Get-MgTeamPermissionGrantUserOwnedObject -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
+Get-MgBetaTeamPermissionGrantUserOwnedObject -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
  [-Type <String>] [-UserId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgTeamPermissionGrantUserOwnedObject -InputObject <ITeamsIdentity>
+Get-MgBetaTeamPermissionGrantUserOwnedObject -InputObject <ITeamsIdentity>
  -BodyParameter <IPaths1Gey5O4TeamsTeamIdPermissiongrantsMicrosoftGraphGetuserownedobjectsPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -44,6 +44,20 @@ Retrieve a list of recently deleted application and group objects owned by the s
 This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -64,7 +78,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths1Gey5O4TeamsTeamIdPermissiongrantsMicrosoftGraphGetuserownedobjectsPostRequestbodyContentApplicationJsonSchema
@@ -80,7 +94,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ITeamsIdentity
@@ -175,11 +189,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1Gey5O4TeamsTeamIdPermissiongrantsMicrosoftGraphGetuserownedobjectsPostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Gey5O4TeamsTeamIdPermissiongrantsMicrosoftGraphGetuserownedobjectsPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryObject
 ## NOTES
 
 ALIASES
@@ -189,12 +203,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Gey5O4TeamsTeamIdPermissiongrantsMicrosoftGraphGetuserownedobjectsPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1Gey5O4TeamsTeamIdPermissiongrantsMicrosoftGraphGetuserownedobjectsPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Type <String>]`: 
   - `[UserId <String>]`: 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat

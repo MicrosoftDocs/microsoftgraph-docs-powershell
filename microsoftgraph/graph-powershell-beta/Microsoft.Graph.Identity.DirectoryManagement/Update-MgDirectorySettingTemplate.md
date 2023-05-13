@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectorysettingtemplate
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorysettingtemplate
 schema: 2.0.0
 ---
 
-# Update-MgDirectorySettingTemplate
+# Update-MgBetaDirectorySettingTemplate
 
 ## SYNOPSIS
 Update entity in directorySettingTemplates
@@ -14,35 +14,49 @@ Update entity in directorySettingTemplates
 
 ### UpdateExpanded (Default)
 ```
-Update-MgDirectorySettingTemplate -DirectorySettingTemplateId <String> [-AdditionalProperties <Hashtable>]
+Update-MgBetaDirectorySettingTemplate -DirectorySettingTemplateId <String> [-AdditionalProperties <Hashtable>]
  [-DeletedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-Values <IMicrosoftGraphSettingTemplateValue[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Values <IMicrosoftGraphSettingTemplateValue[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgDirectorySettingTemplate -DirectorySettingTemplateId <String>
- -BodyParameter <IMicrosoftGraphDirectorySettingTemplate> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaDirectorySettingTemplate -DirectorySettingTemplateId <String>
+ -BodyParameter <IMicrosoftGraphDirectorySettingTemplate> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgDirectorySettingTemplate -InputObject <IIdentityDirectoryManagementIdentity>
+Update-MgBetaDirectorySettingTemplate -InputObject <IIdentityDirectoryManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-DeletedDateTime <DateTime>] [-Description <String>]
- [-DisplayName <String>] [-Id <String>] [-Values <IMicrosoftGraphSettingTemplateValue[]>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-DisplayName <String>] [-Id <String>] [-Values <IMicrosoftGraphSettingTemplateValue[]>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgDirectorySettingTemplate -InputObject <IIdentityDirectoryManagementIdentity>
- -BodyParameter <IMicrosoftGraphDirectorySettingTemplate> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaDirectorySettingTemplate -InputObject <IIdentityDirectoryManagementIdentity>
+ -BodyParameter <IMicrosoftGraphDirectorySettingTemplate> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update entity in directorySettingTemplates
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -63,7 +77,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 directorySettingTemplate
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDirectorySettingTemplate
@@ -141,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -158,7 +172,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IIdentityDirectoryManagementIdentity
@@ -172,25 +186,10 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Values
 Collection of settingTemplateValues that list the set of available settings, defaults and types that make up this template.
 Read-only.
-To construct, please use Get-Help -Online and see NOTES section for VALUES properties and create a hash table.
+To construct, see NOTES section for VALUES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSettingTemplateValue[]
@@ -240,11 +239,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectorySettingTemplate
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectorySettingTemplate
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectorySettingTemplate
 ## NOTES
 
 ALIASES
@@ -254,10 +253,10 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDirectorySettingTemplate>`: directorySettingTemplate
+`BODYPARAMETER <IMicrosoftGraphDirectorySettingTemplate>`: directorySettingTemplate
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Description <String>]`: Description of the template. Read-only.
   - `[DisplayName <String>]`: Display name of the template. Read-only.
   - `[Values <IMicrosoftGraphSettingTemplateValue[]>]`: Collection of settingTemplateValues that list the set of available settings, defaults and types that make up this template.  Read-only.
@@ -266,7 +265,7 @@ BODYPARAMETER `<IMicrosoftGraphDirectorySettingTemplate>`: directorySettingTempl
     - `[Name <String>]`: Name of the setting. Read-only.
     - `[Type <String>]`: Type of the setting. Read-only.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
@@ -302,7 +301,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UsageRightId <String>]`: The unique identifier of usageRight
   - `[UserId <String>]`: The unique identifier of user
 
-VALUES <IMicrosoftGraphSettingTemplateValue\[]>: Collection of settingTemplateValues that list the set of available settings, defaults and types that make up this template. Read-only.
+`VALUES <IMicrosoftGraphSettingTemplateValue[]>`: Collection of settingTemplateValues that list the set of available settings, defaults and types that make up this template. Read-only.
   - `[DefaultValue <String>]`: Default value for the setting. Read-only.
   - `[Description <String>]`: Description of the setting. Read-only.
   - `[Name <String>]`: Name of the setting. Read-only.

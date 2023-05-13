@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Administration
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointserviceplan
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointserviceplan
 schema: 2.0.0
 ---
 
-# New-MgDeviceManagementVirtualEndpointServicePlan
+# New-MgBetaDeviceManagementVirtualEndpointServicePlan
 
 ## SYNOPSIS
 Create new navigation property to servicePlans for deviceManagement
@@ -14,22 +14,36 @@ Create new navigation property to servicePlans for deviceManagement
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementVirtualEndpointServicePlan [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
- [-Id <String>] [-ProvisioningType <String>] [-RamInGb <Int32>] [-StorageInGb <Int32>]
+New-MgBetaDeviceManagementVirtualEndpointServicePlan [-AdditionalProperties <Hashtable>]
+ [-DisplayName <String>] [-Id <String>] [-ProvisioningType <String>] [-RamInGb <Int32>] [-StorageInGb <Int32>]
  [-SupportedSolution <String>] [-Type <String>] [-UserProfileInGb <Int32>] [-VCpuCount <Int32>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceManagementVirtualEndpointServicePlan -BodyParameter <IMicrosoftGraphCloudPcServicePlan> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaDeviceManagementVirtualEndpointServicePlan -BodyParameter <IMicrosoftGraphCloudPcServicePlan>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to servicePlans for deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -50,7 +64,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 cloudPcServicePlan
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphCloudPcServicePlan
@@ -81,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -241,10 +255,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCloudPcServicePlan
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcServicePlan
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCloudPcServicePlan
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcServicePlan
 ## NOTES
 
 ALIASES
@@ -254,9 +268,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphCloudPcServicePlan>`: cloudPcServicePlan
+`BODYPARAMETER <IMicrosoftGraphCloudPcServicePlan>`: cloudPcServicePlan
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DisplayName <String>]`: The name for the service plan. Read-only.
   - `[ProvisioningType <String>]`: cloudPcProvisioningType
   - `[RamInGb <Int32?>]`: The size of the RAM in GB. Read-only.

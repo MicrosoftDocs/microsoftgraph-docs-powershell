@@ -1,58 +1,52 @@
----
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/get-mgsecuritytriggertyperetentioneventtype
+﻿---
+external help file: Microsoft.Graph.Beta.Security-help.xml
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritytriggertyperetentioneventtype
 schema: 2.0.0
 ---
 
-# Get-MgSecurityTriggerTypeRetentionEventType
+# Get-MgBetaSecurityTriggerTypeRetentionEventType
 
 ## SYNOPSIS
-Get retentionEventTypes from security
+Read the properties and relationships of a retentionEventType object.
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgSecurityTriggerTypeRetentionEventType [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaSecurityTriggerTypeRetentionEventType [-ExpandProperty <String[]>] [-Property <String[]>]
  [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
  [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgSecurityTriggerTypeRetentionEventType -RetentionEventTypeId <String> [-ExpandProperty <String[]>]
+Get-MgBetaSecurityTriggerTypeRetentionEventType -RetentionEventTypeId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgSecurityTriggerTypeRetentionEventType -InputObject <ISecurityIdentity> [-ExpandProperty <String[]>]
+Get-MgBetaSecurityTriggerTypeRetentionEventType -InputObject <ISecurityIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get retentionEventTypes from security
+Read the properties and relationships of a retentionEventType object.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgSecurityTriggerTypeRetentionEventType Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Security
-Get-MgSecurityTriggerTypeRetentionEventType -RetentionEventTypeId $retentionEventTypeId
+Import-Module Microsoft.Graph.Beta.Security
+Get-MgBetaSecurityTriggerTypeRetentionEventType -RetentionEventTypeId $retentionEventTypeId
 ```
 
-This example shows how to use the Get-MgSecurityTriggerTypeRetentionEventType Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Get-MgSecurityTriggerTypeRetentionEventType Cmdlet
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Security
-Get-MgSecurityTriggerTypeRetentionEventType
+Import-Module Microsoft.Graph.Beta.Security
+Get-MgBetaSecurityTriggerTypeRetentionEventType
 ```
-
-This example shows how to use the Get-MgSecurityTriggerTypeRetentionEventType Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -119,7 +113,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ISecurityIdentity
@@ -243,10 +237,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityRetentionEventType
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityRetentionEventType
 ## NOTES
 
 ALIASES
@@ -256,7 +250,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+`INPUTOBJECT <ISecurityIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
   - `[ArticleId <String>]`: The unique identifier of article
   - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator

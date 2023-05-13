@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/test-mgsecurityinformationprotectionsensitivitylabelclassificationresult
+﻿---
+external help file: Microsoft.Graph.Beta.Security-help.xml
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/test-mgbetasecurityinformationprotectionsensitivitylabelclassificationresult
 schema: 2.0.0
 ---
 
-# Test-MgSecurityInformationProtectionSensitivityLabelClassificationResult
+# Test-MgBetaSecurityInformationProtectionSensitivityLabelClassificationResult
 
 ## SYNOPSIS
 Use the classification results to compute the sensitivity label that should be applied and return the set of actions that must be taken to correctly label the information.
@@ -17,14 +17,14 @@ The API returns an informationProtectionAction that contains one of more of the 
 
 ### EvaluateExpanded (Default)
 ```
-Test-MgSecurityInformationProtectionSensitivityLabelClassificationResult [-AdditionalProperties <Hashtable>]
- [-ClassificationResults <IMicrosoftGraphSecurityClassificationResult[]>]
+Test-MgBetaSecurityInformationProtectionSensitivityLabelClassificationResult
+ [-AdditionalProperties <Hashtable>] [-ClassificationResults <IMicrosoftGraphSecurityClassificationResult[]>]
  [-ContentInfo <IMicrosoftGraphSecurityContentInfo>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Evaluate
 ```
-Test-MgSecurityInformationProtectionSensitivityLabelClassificationResult
+Test-MgBetaSecurityInformationProtectionSensitivityLabelClassificationResult
  -BodyParameter <IPaths1P6SiigSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityEvaluateclassificationresultsPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -36,6 +36,20 @@ To evaluate based on classification results, provide the contentInfo, which incl
 The API returns an informationProtectionAction that contains one of more of the following:
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -56,7 +70,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths1P6SiigSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityEvaluateclassificationresultsPostRequestbodyContentApplicationJsonSchema
@@ -72,7 +86,7 @@ Accept wildcard characters: False
 
 ### -ClassificationResults
 .
-To construct, please use Get-Help -Online and see NOTES section for CLASSIFICATIONRESULTS properties and create a hash table.
+To construct, see NOTES section for CLASSIFICATIONRESULTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSecurityClassificationResult[]
@@ -88,7 +102,7 @@ Accept wildcard characters: False
 
 ### -ContentInfo
 contentInfo
-To construct, please use Get-Help -Online and see NOTES section for CONTENTINFO properties and create a hash table.
+To construct, see NOTES section for CONTENTINFO properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSecurityContentInfo
@@ -138,10 +152,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1P6SiigSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityEvaluateclassificationresultsPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1P6SiigSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityEvaluateclassificationresultsPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityInformationProtectionAction
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityInformationProtectionAction
 ## NOTES
 
 ALIASES
@@ -151,7 +165,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1P6SiigSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityEvaluateclassificationresultsPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1P6SiigSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityEvaluateclassificationresultsPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ClassificationResults <IMicrosoftGraphSecurityClassificationResult[]>]`: 
     - `[ConfidenceLevel <Int32?>]`: The confidence level, 0 to 100, of the result.
@@ -166,12 +180,12 @@ BODYPARAMETER `<IPaths1P6SiigSecurityInformationprotectionSensitivitylabelsMicro
       - `[Value <String>]`: Value for this key-value pair.
     - `[State <String>]`: contentState
 
-CLASSIFICATIONRESULTS <IMicrosoftGraphSecurityClassificationResult\[]>: .
+`CLASSIFICATIONRESULTS <IMicrosoftGraphSecurityClassificationResult[]>`: .
   - `[ConfidenceLevel <Int32?>]`: The confidence level, 0 to 100, of the result.
   - `[Count <Int32?>]`: The number of instances of the specific information type in the input.
   - `[SensitiveTypeId <String>]`: The GUID of the discovered sensitive information type.
 
-CONTENTINFO `<IMicrosoftGraphSecurityContentInfo>`: contentInfo
+`CONTENTINFO <IMicrosoftGraphSecurityContentInfo>`: contentInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ContentFormat <String>]`: The format of the content to be labeled. Possible values are: file, email.
   - `[Identifier <String>]`: Identifier used for Azure Information Protection Analytics.

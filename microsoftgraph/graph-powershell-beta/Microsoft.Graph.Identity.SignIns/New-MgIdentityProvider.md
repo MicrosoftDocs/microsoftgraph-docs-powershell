@@ -1,12 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgidentityprovider
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityprovider
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
-# New-MgIdentityProvider
+# New-MgBetaIdentityProvider
 
 ## SYNOPSIS
 Create an identity provider object that is of the type specified in the request body.
@@ -17,13 +16,13 @@ In Azure AD B2C, this operation can currently create a socialIdentityProvider, o
 
 ### CreateExpanded (Default)
 ```
-New-MgIdentityProvider [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-WhatIf]
+New-MgBetaIdentityProvider [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgIdentityProvider -BodyParameter <IMicrosoftGraphIdentityProviderBase> [-WhatIf] [-Confirm]
+New-MgBetaIdentityProvider -BodyParameter <IMicrosoftGraphIdentityProviderBase> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -34,9 +33,9 @@ In Azure AD B2C, this operation can currently create a socialIdentityProvider, o
 
 ## EXAMPLES
 
-### Example 1: Using the New-MgIdentityProvider Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
 	"@odata.type" = "microsoft.graph.appleManagedIdentityProvider"
 	DisplayName = "Sign in with Apple"
@@ -45,15 +44,12 @@ $params = @{
 	KeyId = "99P6D879C4"
 	CertificateData = "******"
 }
-New-MgIdentityProvider -BodyParameter $params
+New-MgBetaIdentityProvider -BodyParameter $params
 ```
 
-This example shows how to use the New-MgIdentityProvider Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the New-MgIdentityProvider Cmdlet
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
 	"@odata.type" = "microsoft.graph.identityProvider"
 	Name = "Login with Amazon"
@@ -61,15 +57,12 @@ $params = @{
 	ClientId = "56433757-cadd-4135-8431-2c9e3fd68ae8"
 	ClientSecret = "000000000000"
 }
-New-MgIdentityProvider -BodyParameter $params
+New-MgBetaIdentityProvider -BodyParameter $params
 ```
 
-This example shows how to use the New-MgIdentityProvider Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Using the New-MgIdentityProvider Cmdlet
+### EXAMPLE 3
 ```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
 	"@odata.type" = "microsoft.graph.openIdConnectIdentityProvider"
 	DisplayName = "Login with the Contoso identity provider"
@@ -81,15 +74,12 @@ $params = @{
 	ResponseType = "code"
 	Scope = "openid"
 }
-New-MgIdentityProvider -BodyParameter $params
+New-MgBetaIdentityProvider -BodyParameter $params
 ```
 
-This example shows how to use the New-MgIdentityProvider Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 4: Using the New-MgIdentityProvider Cmdlet
+### EXAMPLE 4
 ```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
 	"@odata.type" = "microsoft.graph.openIdConnectProvider"
 	Name = "Login with the Contoso identity provider"
@@ -102,15 +92,12 @@ $params = @{
 	ResponseType = "code"
 	Scope = "openid"
 }
-New-MgIdentityProvider -BodyParameter $params
+New-MgBetaIdentityProvider -BodyParameter $params
 ```
 
-This example shows how to use the New-MgIdentityProvider Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 5: Using the New-MgIdentityProvider Cmdlet
+### EXAMPLE 5
 ```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
 	"@odata.type" = "microsoft.graph.socialIdentityProvider"
 	DisplayName = "Login with Amazon"
@@ -118,11 +105,8 @@ $params = @{
 	ClientId = "56433757-cadd-4135-8431-2c9e3fd68ae8"
 	ClientSecret = "000000000000"
 }
-New-MgIdentityProvider -BodyParameter $params
+New-MgBetaIdentityProvider -BodyParameter $params
 ```
-
-This example shows how to use the New-MgIdentityProvider Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -143,7 +127,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 identityProviderBase
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIdentityProviderBase
@@ -173,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -224,10 +208,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentityProviderBase
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentityProviderBase
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentityProviderBase
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentityProviderBase
 ## NOTES
 
 ALIASES
@@ -237,9 +221,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphIdentityProviderBase>`: identityProviderBase
+`BODYPARAMETER <IMicrosoftGraphIdentityProviderBase>`: identityProviderBase
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DisplayName <String>]`: The display name of the identity provider.
 
 ## RELATED LINKS

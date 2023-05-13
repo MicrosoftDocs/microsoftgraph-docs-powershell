@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Devices.ServiceAnnouncement-help.xml
-Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.serviceannouncement/invoke-mgfavoriteserviceannouncementmessage
+﻿---
+external help file: Microsoft.Graph.Beta.Devices.ServiceAnnouncement-help.xml
+Module Name: Microsoft.Graph.Beta.Devices.ServiceAnnouncement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetafavoriteserviceannouncementmessage
 schema: 2.0.0
 ---
 
-# Invoke-MgFavoriteServiceAnnouncementMessage
+# Invoke-MgBetaFavoriteServiceAnnouncementMessage
 
 ## SYNOPSIS
 Change the status of a list of serviceUpdateMessages to favorite for the signed in user.
@@ -14,14 +14,14 @@ Change the status of a list of serviceUpdateMessages to favorite for the signed 
 
 ### FavoriteExpanded (Default)
 ```
-Invoke-MgFavoriteServiceAnnouncementMessage [-AdditionalProperties <Hashtable>] [-MessageIds <String[]>]
+Invoke-MgBetaFavoriteServiceAnnouncementMessage [-AdditionalProperties <Hashtable>] [-MessageIds <String[]>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Favorite
 ```
-Invoke-MgFavoriteServiceAnnouncementMessage
- -BodyParameter <IPaths1Hqlbr0AdminServiceannouncementMessagesMicrosoftGraphFavoritePostRequestbodyContentApplicationJsonSchema>
+Invoke-MgBetaFavoriteServiceAnnouncementMessage
+ -Body <IPaths1Hqlbr0AdminServiceannouncementMessagesMicrosoftGraphFavoritePostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -30,20 +30,17 @@ Change the status of a list of serviceUpdateMessages to favorite for the signed 
 
 ## EXAMPLES
 
-### Example 1: Using the Invoke-MgFavoriteServiceAnnouncementMessage Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
+Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 $params = @{
 	MessageIds = @(
 		"MC172851"
 		"MC167983"
 	)
 }
-Invoke-MgFavoriteServiceAnnouncementMessage -BodyParameter $params
+Invoke-MgBetaFavoriteServiceAnnouncementMessage -BodyParameter $params
 ```
-
-This example shows how to use the Invoke-MgFavoriteServiceAnnouncementMessage Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -62,9 +59,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -BodyParameter
+### -Body
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
 Type: IPaths1Hqlbr0AdminServiceannouncementMessagesMicrosoftGraphFavoritePostRequestbodyContentApplicationJsonSchema
@@ -129,7 +126,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1Hqlbr0AdminServiceannouncementMessagesMicrosoftGraphFavoritePostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Hqlbr0AdminServiceannouncementMessagesMicrosoftGraphFavoritePostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### System.Boolean
@@ -142,7 +139,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Hqlbr0AdminServiceannouncementMessagesMicrosoftGraphFavoritePostRequestbodyContentApplicationJsonSchema>`: .
+`BODY <IPaths1Hqlbr0AdminServiceannouncementMessagesMicrosoftGraphFavoritePostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[MessageIds <String[]>]`: 
 

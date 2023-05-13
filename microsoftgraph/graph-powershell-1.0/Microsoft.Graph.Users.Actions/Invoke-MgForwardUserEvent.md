@@ -1,7 +1,7 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgforwarduserevent
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgforwarduserevent
 schema: 2.0.0
 ---
 
@@ -14,28 +14,28 @@ This convenience is not available when forwarding from an Outlook.com account.
 
 ## SYNTAX
 
-### ForwardExpanded1 (Default)
+### ForwardExpanded (Default)
 ```
 Invoke-MgForwardUserEvent -EventId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
  [-Comment <String>] [-ToRecipients <IMicrosoftGraphRecipient[]>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### Forward1
+### Forward
 ```
 Invoke-MgForwardUserEvent -EventId <String> -UserId <String>
  -BodyParameter <IPathsPg3HzyUsersUserIdEventsEventIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ForwardViaIdentityExpanded1
+### ForwardViaIdentityExpanded
 ```
 Invoke-MgForwardUserEvent -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
  [-Comment <String>] [-ToRecipients <IMicrosoftGraphRecipient[]>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### ForwardViaIdentity1
+### ForwardViaIdentity
 ```
 Invoke-MgForwardUserEvent -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPathsPg3HzyUsersUserIdEventsEventIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>
@@ -49,7 +49,7 @@ This convenience is not available when forwarding from an Outlook.com account.
 
 ## EXAMPLES
 
-### Example 1: Using the Invoke-MgForwardUserEvent Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{
@@ -67,9 +67,6 @@ $params = @{
 Invoke-MgForwardUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
 ```
 
-This example shows how to use the Invoke-MgForwardUserEvent Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -77,7 +74,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: ForwardExpanded1, ForwardViaIdentityExpanded1
+Parameter Sets: ForwardExpanded, ForwardViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -89,11 +86,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPathsPg3HzyUsersUserIdEventsEventIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Forward1, ForwardViaIdentity1
+Parameter Sets: Forward, ForwardViaIdentity
 Aliases:
 
 Required: True
@@ -108,7 +105,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: ForwardExpanded1, ForwardViaIdentityExpanded1
+Parameter Sets: ForwardExpanded, ForwardViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -123,7 +120,7 @@ The unique identifier of event
 
 ```yaml
 Type: String
-Parameter Sets: ForwardExpanded1, Forward1
+Parameter Sets: ForwardExpanded, Forward
 Aliases:
 
 Required: True
@@ -135,11 +132,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: ForwardViaIdentityExpanded1, ForwardViaIdentity1
+Parameter Sets: ForwardViaIdentityExpanded, ForwardViaIdentity
 Aliases:
 
 Required: True
@@ -166,11 +163,11 @@ Accept wildcard characters: False
 
 ### -ToRecipients
 .
-To construct, please use Get-Help -Online and see NOTES section for TORECIPIENTS properties and create a hash table.
+To construct, see NOTES section for TORECIPIENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRecipient[]
-Parameter Sets: ForwardExpanded1, ForwardViaIdentityExpanded1
+Parameter Sets: ForwardExpanded, ForwardViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -185,7 +182,7 @@ The unique identifier of user
 
 ```yaml
 Type: String
-Parameter Sets: ForwardExpanded1, Forward1
+Parameter Sets: ForwardExpanded, Forward
 Aliases:
 
 Required: True
@@ -245,7 +242,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsPg3HzyUsersUserIdEventsEventIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsPg3HzyUsersUserIdEventsEventIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Comment <String>]`: 
   - `[ToRecipients <IMicrosoftGraphRecipient[]>]`: 
@@ -254,20 +251,13 @@ BODYPARAMETER `<IPathsPg3HzyUsersUserIdEventsEventIdMicrosoftGraphForwardPostReq
       - `[Address <String>]`: The email address of the person or entity.
       - `[Name <String>]`: The display name of the person or entity.
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
-  - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
-  - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
-  - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
+`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AuthenticationMethodId <String>]`: The unique identifier of authenticationMethod
   - `[CalendarId <String>]`: The unique identifier of calendar
   - `[ChatId <String>]`: The unique identifier of chat
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
   - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
-  - `[CloudPcId <String>]`: The unique identifier of cloudPC
   - `[ContentTypeId <String>]`: The unique identifier of contentType
-  - `[DeviceEnrollmentConfigurationId <String>]`: The unique identifier of deviceEnrollmentConfiguration
-  - `[DeviceId <String>]`: The unique identifier of device
-  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
   - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
   - `[DriveId <String>]`: The unique identifier of drive
   - `[DriveItemId <String>]`: The unique identifier of driveItem
@@ -280,24 +270,18 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
   - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
   - `[MessageId <String>]`: The unique identifier of message
-  - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
   - `[NotebookId <String>]`: The unique identifier of notebook
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
-  - `[OutlookTaskFolderId <String>]`: The unique identifier of outlookTaskFolder
-  - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
-  - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
-  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
-  - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
   - `[TodoTaskId <String>]`: The unique identifier of todoTask
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
   - `[UserId <String>]`: The unique identifier of user
 
-TORECIPIENTS <IMicrosoftGraphRecipient\[]>: .
+`TORECIPIENTS <IMicrosoftGraphRecipient[]>`: .
   - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Address <String>]`: The email address of the person or entity.

@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Users-help.xml
-Module Name: Microsoft.Graph.Users
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/get-mguserphoto
+﻿---
+external help file: Microsoft.Graph.Beta.Users-help.xml
+Module Name: Microsoft.Graph.Beta.Users
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserphoto
 schema: 2.0.0
 ---
 
-# Get-MgUserPhoto
+# Get-MgBetaUserPhoto
 
 ## SYNOPSIS
 The user's profile photo.
@@ -15,28 +15,28 @@ Read-only.
 
 ### Get (Default)
 ```
-Get-MgUserPhoto -UserId <String> [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaUserPhoto -UserId <String> [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### List
 ```
-Get-MgUserPhoto -UserId <String> [-Property <String[]>] [-Filter <String>] [-Skip <Int32>] [-Sort <String[]>]
- [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+Get-MgBetaUserPhoto -UserId <String> [-Property <String[]>] [-Filter <String>] [-Skip <Int32>]
+ [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get1
 ```
-Get-MgUserPhoto -UserId <String> -ProfilePhotoId <String> [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaUserPhoto -UserId <String> -ProfilePhotoId <String> [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
 ```
-Get-MgUserPhoto -InputObject <IUsersIdentity> [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaUserPhoto -InputObject <IUsersIdentity> [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgUserPhoto -InputObject <IUsersIdentity> [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaUserPhoto -InputObject <IUsersIdentity> [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -45,16 +45,14 @@ Read-only.
 
 ## EXAMPLES
 
-### Example 1: Get a user's photo properties
+### EXAMPLE 1
 ```powershell
-Get-MgUserPhoto -UserId '3bb40cd7-03fe-40b7-8a1c-a14fdf0ab5fe'
+Get-MgBetaUserPhoto -UserId '3bb40cd7-03fe-40b7-8a1c-a14fdf0ab5fe'
+```
 
 Id      Height Width
 --      ------ -----
 240X240 240    240
-```
-
-This example retrieves the profile photo properties for the specified user.
 
 ## PARAMETERS
 
@@ -106,7 +104,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersIdentity
@@ -230,10 +228,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IUsersIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphProfilePhoto
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphProfilePhoto
 ## NOTES
 
 ALIASES
@@ -243,7 +241,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersIdentity>`: Identity Parameter
   - `[AttachmentBaseId <String>]`: The unique identifier of attachmentBase
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[AttachmentSessionId <String>]`: The unique identifier of attachmentSession
@@ -252,7 +250,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
   - `[LinkedResourceId <String>]`: The unique identifier of linkedResource
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
   - `[NotificationId <String>]`: The unique identifier of notification
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[OutlookCategoryId <String>]`: The unique identifier of outlookCategory
@@ -260,7 +257,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
   - `[TodoTaskId <String>]`: The unique identifier of todoTask
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
   - `[UserId <String>]`: The unique identifier of user

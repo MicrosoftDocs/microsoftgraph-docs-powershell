@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Administration
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointsnapshot
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointsnapshot
 schema: 2.0.0
 ---
 
-# New-MgDeviceManagementVirtualEndpointSnapshot
+# New-MgBetaDeviceManagementVirtualEndpointSnapshot
 
 ## SYNOPSIS
 Create new navigation property to snapshots for deviceManagement
@@ -14,7 +14,7 @@ Create new navigation property to snapshots for deviceManagement
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementVirtualEndpointSnapshot [-AdditionalProperties <Hashtable>] [-CloudPcId <String>]
+New-MgBetaDeviceManagementVirtualEndpointSnapshot [-AdditionalProperties <Hashtable>] [-CloudPcId <String>]
  [-CreatedDateTime <DateTime>] [-ExpirationDateTime <DateTime>] [-Id <String>]
  [-LastRestoredDateTime <DateTime>] [-SnapshotType <String>] [-Status <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -22,7 +22,7 @@ New-MgDeviceManagementVirtualEndpointSnapshot [-AdditionalProperties <Hashtable>
 
 ### Create
 ```
-New-MgDeviceManagementVirtualEndpointSnapshot -BodyParameter <IMicrosoftGraphCloudPcSnapshot> [-WhatIf]
+New-MgBetaDeviceManagementVirtualEndpointSnapshot -BodyParameter <IMicrosoftGraphCloudPcSnapshot> [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -30,6 +30,20 @@ New-MgDeviceManagementVirtualEndpointSnapshot -BodyParameter <IMicrosoftGraphClo
 Create new navigation property to snapshots for deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -50,7 +64,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 cloudPcSnapshot
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphCloudPcSnapshot
@@ -114,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -212,10 +226,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCloudPcSnapshot
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcSnapshot
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCloudPcSnapshot
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcSnapshot
 ## NOTES
 
 ALIASES
@@ -225,9 +239,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphCloudPcSnapshot>`: cloudPcSnapshot
+`BODYPARAMETER <IMicrosoftGraphCloudPcSnapshot>`: cloudPcSnapshot
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[CloudPcId <String>]`: The unique identifier for the Cloud PC.
   - `[CreatedDateTime <DateTime?>]`: The date and time at which the snapshot was taken. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[ExpirationDateTime <DateTime?>]`: The date and time when the snapshot expires. The time is shown in ISO 8601 format and Coordinated Universal Time (UTC) time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.

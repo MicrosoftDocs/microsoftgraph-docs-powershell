@@ -1,105 +1,65 @@
----
-external help file: Microsoft.Graph.Users.Actions-help.xml
-Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/new-mgusermailfoldermessageattachmentuploadsession
+﻿---
+external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.Users.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetauserdriverootuploadsession
 schema: 2.0.0
 ---
 
-# New-MgUserMailFolderMessageAttachmentUploadSession
+# New-MgBetaUserDriveRootUploadSession
 
 ## SYNOPSIS
-Create an upload session that allows an app to iteratively upload ranges of a file, so as to attach the file to an Outlook item.
-The item can be a message or event.
-Use this approach to attach a file if the file size is between 3 MB and 150 MB.
-To attach a file that's smaller than 3 MB, do a `POST` operation on the **attachments** navigation property of the Outlook item; see how to do this for a message or for an event.
-As part of the response, this action returns an upload URL that you can use in subsequent sequential `PUT` queries.
-Request headers for each `PUT` operation let you specify the exact range of bytes to be uploaded.
-This allows transfer to be resumed, in case the network connection is dropped during upload.
-The following are the steps to attach a file to an Outlook item using an upload session: See attach large files to Outlook messages or events for an example.
+Create an upload session to allow your app to upload files up to the maximum file size.
+An upload session allows your app to upload ranges of the file in sequential API requests, which allows the transfer to be resumed if a connection is dropped while the upload is in progress.
+To upload a file using an upload session:
 
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
-New-MgUserMailFolderMessageAttachmentUploadSession -MailFolderId <String> -MessageId <String> -UserId <String>
- [-AdditionalProperties <Hashtable>] [-AttachmentItem <IMicrosoftGraphAttachmentItem>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaUserDriveRootUploadSession -DriveId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
+ [-Item <IMicrosoftGraphDriveItemUploadableProperties>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgUserMailFolderMessageAttachmentUploadSession -MailFolderId <String> -MessageId <String> -UserId <String>
- -BodyParameter <IPaths1C7XgoqUsersUserIdMailfoldersMailfolderIdMessagesMessageIdAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>
+New-MgBetaUserDriveRootUploadSession -DriveId <String> -UserId <String>
+ -BodyParameter <IPathsYe7D9IUsersUserIdDrivesDriveIdRootMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgUserMailFolderMessageAttachmentUploadSession -InputObject <IUsersActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-AttachmentItem <IMicrosoftGraphAttachmentItem>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaUserDriveRootUploadSession -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
+ [-Item <IMicrosoftGraphDriveItemUploadableProperties>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgUserMailFolderMessageAttachmentUploadSession -InputObject <IUsersActionsIdentity>
- -BodyParameter <IPaths1C7XgoqUsersUserIdMailfoldersMailfolderIdMessagesMessageIdAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>
+New-MgBetaUserDriveRootUploadSession -InputObject <IUsersActionsIdentity>
+ -BodyParameter <IPathsYe7D9IUsersUserIdDrivesDriveIdRootMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create an upload session that allows an app to iteratively upload ranges of a file, so as to attach the file to an Outlook item.
-The item can be a message or event.
-Use this approach to attach a file if the file size is between 3 MB and 150 MB.
-To attach a file that's smaller than 3 MB, do a `POST` operation on the **attachments** navigation property of the Outlook item; see how to do this for a message or for an event.
-As part of the response, this action returns an upload URL that you can use in subsequent sequential `PUT` queries.
-Request headers for each `PUT` operation let you specify the exact range of bytes to be uploaded.
-This allows transfer to be resumed, in case the network connection is dropped during upload.
-The following are the steps to attach a file to an Outlook item using an upload session: See attach large files to Outlook messages or events for an example.
+Create an upload session to allow your app to upload files up to the maximum file size.
+An upload session allows your app to upload ranges of the file in sequential API requests, which allows the transfer to be resumed if a connection is dropped while the upload is in progress.
+To upload a file using an upload session:
 
 ## EXAMPLES
 
-### Example 1: Create an upload session to add a large attachment to a draft message
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Users.Actions
-
-$params = @{
-	AttachmentItem = @{
-		AttachmentType = "file"
-		Name = "flower"
-		Size = 3483322
-	}
-}
-
-# A UPN can also be used as -UserId.
-New-MgUserMessageAttachmentUploadSession -UserId $userId -MessageId $messageId -BodyParameter $params
+{{ Add code here }}
 ```
 
-This example shows how to use the New-MgUserMailFolderMessageAttachmentUploadSession Cmdlet.
+{{ Add output here }}
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Create an upload session to add a large in-line attachment to a draft message
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Users.Actions
-
-$params = @{
-	AttachmentItem = @{
-		AttachmentType = "file"
-		Name = "scenary"
-		Size = 7208534
-		IsInline = $true
-		ContentId = "my_inline_picture"
-	}
-}
-
-# A UPN can also be used as -UserId.
-New-MgUserMessageAttachmentUploadSession -UserId $userId -MessageId $messageId -BodyParameter $params
+{{ Add code here }}
 ```
 
-This example shows how to use the New-MgUserMailFolderMessageAttachmentUploadSession Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -118,28 +78,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -AttachmentItem
-attachmentItem
-To construct, please use Get-Help -Online and see NOTES section for ATTACHMENTITEM properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphAttachmentItem
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1C7XgoqUsersUserIdMailfoldersMailfolderIdMessagesMessageIdAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema
+Type: IPathsYe7D9IUsersUserIdDrivesDriveIdRootMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -150,9 +94,24 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -DriveId
+The unique identifier of drive
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, Create
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersActionsIdentity
@@ -166,30 +125,16 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -MailFolderId
-The unique identifier of mailFolder
+### -Item
+driveItemUploadableProperties
+To construct, see NOTES section for ITEM properties and create a hash table.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: IMicrosoftGraphDriveItemUploadableProperties
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -MessageId
-The unique identifier of message
-
-```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
-Aliases:
-
-Required: True
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -247,11 +192,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1C7XgoqUsersUserIdMailfoldersMailfolderIdMessagesMessageIdAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsYe7D9IUsersUserIdDrivesDriveIdRootMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUploadSession
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUploadSession
 ## NOTES
 
 ALIASES
@@ -261,27 +206,20 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ATTACHMENTITEM `<IMicrosoftGraphAttachmentItem>`: attachmentItem
+`BODYPARAMETER <IPathsYe7D9IUsersUserIdDrivesDriveIdRootMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AttachmentType <String>]`: attachmentType
-  - `[ContentId <String>]`: The CID or Content-Id of the attachment for referencing in case of in-line attachments using <img src='cid:contentId'> tag in HTML messages. Optional.
-  - `[ContentType <String>]`: The nature of the data in the attachment. Optional.
-  - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false. Optional.
-  - `[Name <String>]`: The display name of the attachment. This can be a descriptive string and does not have to be the actual file name. Required.
-  - `[Size <Int64?>]`: The length of the attachment in bytes. Required.
-
-BODYPARAMETER `<IPaths1C7XgoqUsersUserIdMailfoldersMailfolderIdMessagesMessageIdAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AttachmentItem <IMicrosoftGraphAttachmentItem>]`: attachmentItem
+  - `[Item <IMicrosoftGraphDriveItemUploadableProperties>]`: driveItemUploadableProperties
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[AttachmentType <String>]`: attachmentType
-    - `[ContentId <String>]`: The CID or Content-Id of the attachment for referencing in case of in-line attachments using <img src='cid:contentId'> tag in HTML messages. Optional.
-    - `[ContentType <String>]`: The nature of the data in the attachment. Optional.
-    - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false. Optional.
-    - `[Name <String>]`: The display name of the attachment. This can be a descriptive string and does not have to be the actual file name. Required.
-    - `[Size <Int64?>]`: The length of the attachment in bytes. Required.
+    - `[Description <String>]`: Provides a user-visible description of the item. Read-write. Only on OneDrive Personal.
+    - `[FileSize <Int64?>]`: Provides an expected file size to perform a quota check prior to upload. Only on OneDrive Personal.
+    - `[FileSystemInfo <IMicrosoftGraphFileSystemInfo>]`: fileSystemInfo
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[CreatedDateTime <DateTime?>]`: The UTC date and time the file was created on a client.
+      - `[LastAccessedDateTime <DateTime?>]`: The UTC date and time the file was last accessed. Available for the recent file list only.
+      - `[LastModifiedDateTime <DateTime?>]`: The UTC date and time the file was last modified on a client.
+    - `[Name <String>]`: The name of the item (filename and extension). Read-write.
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
@@ -315,7 +253,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription
@@ -323,5 +260,16 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[TodoTaskId <String>]`: The unique identifier of todoTask
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
   - `[UserId <String>]`: The unique identifier of user
+
+`ITEM <IMicrosoftGraphDriveItemUploadableProperties>`: driveItemUploadableProperties
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Description <String>]`: Provides a user-visible description of the item. Read-write. Only on OneDrive Personal.
+  - `[FileSize <Int64?>]`: Provides an expected file size to perform a quota check prior to upload. Only on OneDrive Personal.
+  - `[FileSystemInfo <IMicrosoftGraphFileSystemInfo>]`: fileSystemInfo
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[CreatedDateTime <DateTime?>]`: The UTC date and time the file was created on a client.
+    - `[LastAccessedDateTime <DateTime?>]`: The UTC date and time the file was last accessed. Available for the recent file list only.
+    - `[LastModifiedDateTime <DateTime?>]`: The UTC date and time the file was last modified on a client.
+  - `[Name <String>]`: The name of the item (filename and extension). Read-write.
 
 ## RELATED LINKS

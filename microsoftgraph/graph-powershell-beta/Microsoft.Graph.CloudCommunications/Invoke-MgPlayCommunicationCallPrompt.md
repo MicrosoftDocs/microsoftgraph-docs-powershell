@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.CloudCommunications-help.xml
-Module Name: Microsoft.Graph.CloudCommunications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/invoke-mgplaycommunicationcallprompt
+﻿---
+external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
+Module Name: Microsoft.Graph.Beta.CloudCommunications
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetaplaycommunicationcallprompt
 schema: 2.0.0
 ---
 
-# Invoke-MgPlayCommunicationCallPrompt
+# Invoke-MgBetaPlayCommunicationCallPrompt
 
 ## SYNOPSIS
 Play a prompt in the call.
@@ -13,30 +13,30 @@ For more information about how to handle operations, see commsOperation
 
 ## SYNTAX
 
-### PlayExpanded1 (Default)
+### PlayExpanded (Default)
 ```
-Invoke-MgPlayCommunicationCallPrompt -CallId <String> [-AdditionalProperties <Hashtable>]
+Invoke-MgBetaPlayCommunicationCallPrompt -CallId <String> [-AdditionalProperties <Hashtable>]
  [-ClientContext <String>] [-Loop] [-Prompts <IMicrosoftGraphPrompt[]>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### Play1
+### Play
 ```
-Invoke-MgPlayCommunicationCallPrompt -CallId <String>
+Invoke-MgBetaPlayCommunicationCallPrompt -CallId <String>
  -BodyParameter <IPaths1Gzqcv2CommunicationsCallsCallIdMicrosoftGraphPlaypromptPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### PlayViaIdentityExpanded1
+### PlayViaIdentityExpanded
 ```
-Invoke-MgPlayCommunicationCallPrompt -InputObject <ICloudCommunicationsIdentity>
+Invoke-MgBetaPlayCommunicationCallPrompt -InputObject <ICloudCommunicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-ClientContext <String>] [-Loop] [-Prompts <IMicrosoftGraphPrompt[]>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### PlayViaIdentity1
+### PlayViaIdentity
 ```
-Invoke-MgPlayCommunicationCallPrompt -InputObject <ICloudCommunicationsIdentity>
+Invoke-MgBetaPlayCommunicationCallPrompt -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IPaths1Gzqcv2CommunicationsCallsCallIdMicrosoftGraphPlaypromptPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -47,9 +47,9 @@ For more information about how to handle operations, see commsOperation
 
 ## EXAMPLES
 
-### Example 1: Using the Invoke-MgPlayCommunicationCallPrompt Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.CloudCommunications
+Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
 	ClientContext = "d45324c1-fcb5-430a-902c-f20af696537c"
 	Prompts = @(
@@ -64,11 +64,8 @@ $params = @{
 	)
 	Loop = $false
 }
-Invoke-MgPlayCommunicationCallPrompt -CallId $callId -BodyParameter $params
+Invoke-MgBetaPlayCommunicationCallPrompt -CallId $callId -BodyParameter $params
 ```
-
-This example shows how to use the Invoke-MgPlayCommunicationCallPrompt Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -77,7 +74,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: PlayExpanded1, PlayViaIdentityExpanded1
+Parameter Sets: PlayExpanded, PlayViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -89,11 +86,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths1Gzqcv2CommunicationsCallsCallIdMicrosoftGraphPlaypromptPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Play1, PlayViaIdentity1
+Parameter Sets: Play, PlayViaIdentity
 Aliases:
 
 Required: True
@@ -108,7 +105,7 @@ The unique identifier of call
 
 ```yaml
 Type: String
-Parameter Sets: PlayExpanded1, Play1
+Parameter Sets: PlayExpanded, Play
 Aliases:
 
 Required: True
@@ -123,7 +120,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: PlayExpanded1, PlayViaIdentityExpanded1
+Parameter Sets: PlayExpanded, PlayViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -135,11 +132,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ICloudCommunicationsIdentity
-Parameter Sets: PlayViaIdentityExpanded1, PlayViaIdentity1
+Parameter Sets: PlayViaIdentityExpanded, PlayViaIdentity
 Aliases:
 
 Required: True
@@ -154,7 +151,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: PlayExpanded1, PlayViaIdentityExpanded1
+Parameter Sets: PlayExpanded, PlayViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -169,7 +166,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: IMicrosoftGraphPrompt[]
-Parameter Sets: PlayExpanded1, PlayViaIdentityExpanded1
+Parameter Sets: PlayExpanded, PlayViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -215,11 +212,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths1Gzqcv2CommunicationsCallsCallIdMicrosoftGraphPlaypromptPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Gzqcv2CommunicationsCallsCallIdMicrosoftGraphPlaypromptPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlayPromptOperation1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlayPromptOperation
 ## NOTES
 
 ALIASES
@@ -229,13 +226,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Gzqcv2CommunicationsCallsCallIdMicrosoftGraphPlaypromptPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1Gzqcv2CommunicationsCallsCallIdMicrosoftGraphPlaypromptPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ClientContext <String>]`: 
   - `[Loop <Boolean?>]`: 
   - `[Prompts <IMicrosoftGraphPrompt[]>]`: 
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+`INPUTOBJECT <ICloudCommunicationsIdentity>`: Identity Parameter
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
   - `[CallId <String>]`: The unique identifier of call
@@ -245,6 +242,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
   - `[FromDateTime <DateTime?>]`: Usage: fromDateTime={fromDateTime}
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[MeetingRegistrantBaseId <String>]`: The unique identifier of meetingRegistrantBase
   - `[MeetingRegistrationQuestionId <String>]`: The unique identifier of meetingRegistrationQuestion
   - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
   - `[ParticipantId <String>]`: The unique identifier of participant

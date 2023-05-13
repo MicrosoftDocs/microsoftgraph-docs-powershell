@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgdownloaddevicemanagementmanageddeviceappdiagnostic
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetadownloaddevicemanagementmanageddeviceappdiagnostic
 schema: 2.0.0
 ---
 
-# Invoke-MgDownloadDeviceManagementManagedDeviceAppDiagnostic
+# Invoke-MgBetaDownloadDeviceManagementManagedDeviceAppDiagnostic
 
 ## SYNOPSIS
 Invoke action downloadAppDiagnostics
@@ -14,15 +14,15 @@ Invoke action downloadAppDiagnostics
 
 ### DownloadExpanded (Default)
 ```
-Invoke-MgDownloadDeviceManagementManagedDeviceAppDiagnostic -OutFile <String>
+Invoke-MgBetaDownloadDeviceManagementManagedDeviceAppDiagnostic -OutFile <String>
  [-AdditionalProperties <Hashtable>] [-Request <IMicrosoftGraphPowerliftDownloadRequest>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### Download
 ```
-Invoke-MgDownloadDeviceManagementManagedDeviceAppDiagnostic -OutFile <String>
- -BodyParameter <IPaths1Pwu9EqDevicemanagementManageddevicesMicrosoftGraphDownloadappdiagnosticsPostRequestbodyContentApplicationJsonSchema>
+Invoke-MgBetaDownloadDeviceManagementManagedDeviceAppDiagnostic -OutFile <String>
+ -Body <IPaths1Pwu9EqDevicemanagementManageddevicesMicrosoftGraphDownloadappdiagnosticsPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -30,6 +30,20 @@ Invoke-MgDownloadDeviceManagementManagedDeviceAppDiagnostic -OutFile <String>
 Invoke action downloadAppDiagnostics
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -48,9 +62,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -BodyParameter
+### -Body
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
 Type: IPaths1Pwu9EqDevicemanagementManageddevicesMicrosoftGraphDownloadappdiagnosticsPostRequestbodyContentApplicationJsonSchema
@@ -96,7 +110,7 @@ Accept wildcard characters: False
 
 ### -Request
 Request used to download app diagnostic files.
-To construct, please use Get-Help -Online and see NOTES section for REQUEST properties and create a hash table.
+To construct, see NOTES section for REQUEST properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPowerliftDownloadRequest
@@ -146,7 +160,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1Pwu9EqDevicemanagementManageddevicesMicrosoftGraphDownloadappdiagnosticsPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Pwu9EqDevicemanagementManageddevicesMicrosoftGraphDownloadappdiagnosticsPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### System.Boolean
@@ -159,14 +173,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Pwu9EqDevicemanagementManageddevicesMicrosoftGraphDownloadappdiagnosticsPostRequestbodyContentApplicationJsonSchema>`: .
+`BODY <IPaths1Pwu9EqDevicemanagementManageddevicesMicrosoftGraphDownloadappdiagnosticsPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Request <IMicrosoftGraphPowerliftDownloadRequest>]`: Request used to download app diagnostic files.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Files <String[]>]`: The list of files to download
     - `[PowerliftId <String>]`: The unique id for the request
 
-REQUEST `<IMicrosoftGraphPowerliftDownloadRequest>`: Request used to download app diagnostic files.
+`REQUEST <IMicrosoftGraphPowerliftDownloadRequest>`: Request used to download app diagnostic files.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Files <String[]>]`: The list of files to download
   - `[PowerliftId <String>]`: The unique id for the request

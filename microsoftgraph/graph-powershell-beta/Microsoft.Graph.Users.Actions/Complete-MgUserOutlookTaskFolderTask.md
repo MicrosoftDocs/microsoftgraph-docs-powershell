@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Users.Actions-help.xml
-Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/complete-mguseroutlooktaskfoldertask
+﻿---
+external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.Users.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/complete-mgbetauseroutlooktaskfoldertask
 schema: 2.0.0
 ---
 
-# Complete-MgUserOutlookTaskFolderTask
+# Complete-MgBetaUserOutlookTaskFolderTask
 
 ## SYNOPSIS
 Complete an Outlook task which sets the **completedDateTime** property to the current date, and the **status** property to `completed`.
@@ -19,13 +19,13 @@ You can use the `Prefer: outlook.timezone` header to have all the date-related p
 
 ### Complete (Default)
 ```
-Complete-MgUserOutlookTaskFolderTask -OutlookTaskFolderId <String> -OutlookTaskId <String> -UserId <String>
+Complete-MgBetaUserOutlookTaskFolderTask -OutlookTaskFolderId <String> -OutlookTaskId <String> -UserId <String>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CompleteViaIdentity
 ```
-Complete-MgUserOutlookTaskFolderTask -InputObject <IUsersActionsIdentity> [-WhatIf] [-Confirm]
+Complete-MgBetaUserOutlookTaskFolderTask -InputObject <IUsersActionsIdentity> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -39,11 +39,25 @@ You can use the `Prefer: outlook.timezone` header to have all the date-related p
 
 ## EXAMPLES
 
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersActionsIdentity
@@ -138,10 +152,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOutlookTask
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOutlookTask
 ## NOTES
 
 ALIASES
@@ -151,7 +165,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
@@ -185,7 +199,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription

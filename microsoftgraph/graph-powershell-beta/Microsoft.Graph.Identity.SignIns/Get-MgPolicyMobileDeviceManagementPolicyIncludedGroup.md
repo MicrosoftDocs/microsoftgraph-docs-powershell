@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgpolicymobiledevicemanagementpolicyincludedgroup
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicymobiledevicemanagementpolicyincludedgroup
 schema: 2.0.0
 ---
 
-# Get-MgPolicyMobileDeviceManagementPolicyIncludedGroup
+# Get-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroup
 
 ## SYNOPSIS
 Get the list of groups that are included in a mobile app management policy.
@@ -13,7 +13,7 @@ Get the list of groups that are included in a mobile app management policy.
 ## SYNTAX
 
 ```
-Get-MgPolicyMobileDeviceManagementPolicyIncludedGroup -MobilityManagementPolicyId <String>
+Get-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroup -MobilityManagementPolicyId <String>
  [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
  [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
@@ -23,14 +23,11 @@ Get the list of groups that are included in a mobile app management policy.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgPolicyMobileDeviceManagementPolicyIncludedGroup Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
-Get-MgPolicyMobileDeviceManagementPolicyIncludedGroup -MobilityManagementPolicyId $mobilityManagementPolicyId
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+Get-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroup -MobilityManagementPolicyId $mobilityManagementPolicyId
 ```
-
-This example shows how to use the Get-MgPolicyMobileDeviceManagementPolicyIncludedGroup Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -207,7 +204,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroup1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroup
 ## NOTES
 
 ALIASES

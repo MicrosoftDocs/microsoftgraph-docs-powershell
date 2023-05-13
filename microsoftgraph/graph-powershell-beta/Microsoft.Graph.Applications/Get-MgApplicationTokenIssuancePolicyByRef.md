@@ -1,12 +1,11 @@
----
-external help file: Microsoft.Graph.Applications-help.xml
-Module Name: Microsoft.Graph.Applications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgapplicationtokenissuancepolicybyref
+﻿---
+external help file: Microsoft.Graph.Beta.Applications-help.xml
+Module Name: Microsoft.Graph.Beta.Applications
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationtokenissuancepolicybyref
 schema: 2.0.0
-ms.prod: applications
 ---
 
-# Get-MgApplicationTokenIssuancePolicyByRef
+# Get-MgBetaApplicationTokenIssuancePolicyByRef
 
 ## SYNOPSIS
 List the tokenIssuancePolicy objects that are assigned to an application.
@@ -14,7 +13,7 @@ List the tokenIssuancePolicy objects that are assigned to an application.
 ## SYNTAX
 
 ```
-Get-MgApplicationTokenIssuancePolicyByRef -ApplicationId <String> [-Filter <String>] [-Search <String>]
+Get-MgBetaApplicationTokenIssuancePolicyByRef -ApplicationId <String> [-Filter <String>] [-Search <String>]
  [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
  [<CommonParameters>]
 ```
@@ -24,16 +23,12 @@ List the tokenIssuancePolicy objects that are assigned to an application.
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Applications
-
-Get-MgApplicationTokenIssuancePolicy -ApplicationId $applicationId
+Import-Module Microsoft.Graph.Beta.Applications
 ```
 
-This example shows how to use the Get-MgApplicationTokenIssuancePolicyByRef Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Get-MgBetaApplicationTokenIssuancePolicy -ApplicationId $applicationId
 
 ## PARAMETERS
 

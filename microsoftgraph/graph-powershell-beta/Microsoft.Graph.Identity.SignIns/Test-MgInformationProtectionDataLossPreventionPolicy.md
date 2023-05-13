@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/test-mginformationprotectiondatalosspreventionpolicy
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/test-mgbetainformationprotectiondatalosspreventionpolicy
 schema: 2.0.0
 ---
 
-# Test-MgInformationProtectionDataLossPreventionPolicy
+# Test-MgBetaInformationProtectionDataLossPreventionPolicy
 
 ## SYNOPSIS
 Invoke action evaluate
@@ -14,14 +14,14 @@ Invoke action evaluate
 
 ### EvaluateExpanded (Default)
 ```
-Test-MgInformationProtectionDataLossPreventionPolicy [-AdditionalProperties <Hashtable>]
+Test-MgBetaInformationProtectionDataLossPreventionPolicy [-AdditionalProperties <Hashtable>]
  [-EvaluationInput <IMicrosoftGraphDlpEvaluationInput>] [-NotificationInfo <IMicrosoftGraphDlpNotification>]
  [-Target <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Evaluate
 ```
-Test-MgInformationProtectionDataLossPreventionPolicy
+Test-MgBetaInformationProtectionDataLossPreventionPolicy
  -BodyParameter <IPaths1JhdydfInformationprotectionDatalosspreventionpoliciesMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -30,6 +30,20 @@ Test-MgInformationProtectionDataLossPreventionPolicy
 Invoke action evaluate
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -50,7 +64,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths1JhdydfInformationprotectionDatalosspreventionpoliciesMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema
@@ -66,7 +80,7 @@ Accept wildcard characters: False
 
 ### -EvaluationInput
 dlpEvaluationInput
-To construct, please use Get-Help -Online and see NOTES section for EVALUATIONINPUT properties and create a hash table.
+To construct, see NOTES section for EVALUATIONINPUT properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDlpEvaluationInput
@@ -82,7 +96,7 @@ Accept wildcard characters: False
 
 ### -NotificationInfo
 dlpNotification
-To construct, please use Get-Help -Online and see NOTES section for NOTIFICATIONINFO properties and create a hash table.
+To construct, see NOTES section for NOTIFICATIONINFO properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDlpNotification
@@ -147,10 +161,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1JhdydfInformationprotectionDatalosspreventionpoliciesMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1JhdydfInformationprotectionDatalosspreventionpoliciesMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDlpEvaluatePoliciesJobResponse
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDlpEvaluatePoliciesJobResponse
 ## NOTES
 
 ALIASES
@@ -160,7 +174,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1JhdydfInformationprotectionDatalosspreventionpoliciesMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1JhdydfInformationprotectionDatalosspreventionpoliciesMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[EvaluationInput <IMicrosoftGraphDlpEvaluationInput>]`: dlpEvaluationInput
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -180,7 +194,7 @@ BODYPARAMETER `<IPaths1JhdydfInformationprotectionDatalosspreventionpoliciesMicr
     - `[Author <String>]`: 
   - `[Target <String>]`: 
 
-EVALUATIONINPUT `<IMicrosoftGraphDlpEvaluationInput>`: dlpEvaluationInput
+`EVALUATIONINPUT <IMicrosoftGraphDlpEvaluationInput>`: dlpEvaluationInput
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CurrentLabel <IMicrosoftGraphCurrentLabel>]`: currentLabel
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -194,7 +208,7 @@ EVALUATIONINPUT `<IMicrosoftGraphDlpEvaluationInput>`: dlpEvaluationInput
     - `[Count <Int32?>]`: 
     - `[Id <String>]`: 
 
-NOTIFICATIONINFO `<IMicrosoftGraphDlpNotification>`: dlpNotification
+`NOTIFICATIONINFO <IMicrosoftGraphDlpNotification>`: dlpNotification
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Author <String>]`: 
 

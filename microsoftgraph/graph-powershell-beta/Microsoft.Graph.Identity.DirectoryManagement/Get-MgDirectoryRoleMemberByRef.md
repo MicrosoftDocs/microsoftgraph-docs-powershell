@@ -1,12 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryrolememberbyref
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryrolememberbyref
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
-# Get-MgDirectoryRoleMemberByRef
+# Get-MgBetaDirectoryRoleMemberByRef
 
 ## SYNOPSIS
 Users that are members of this directory role.
@@ -18,8 +17,8 @@ Supports $expand.
 ## SYNTAX
 
 ```
-Get-MgDirectoryRoleMemberByRef -DirectoryRoleId <String> [-Filter <String>] [-Search <String>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [-ConsistencyLevel <String>] [-PageSize <Int32>] [-All]
+Get-MgBetaDirectoryRoleMemberByRef -DirectoryRoleId <String> [-Filter <String>] [-Search <String>]
+ [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ConsistencyLevel <String>] [-PageSize <Int32>] [-All]
  [-CountVariable <String>] [<CommonParameters>]
 ```
 
@@ -32,16 +31,12 @@ Supports $expand.
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
-
-Get-MgDirectoryRoleMember -DirectoryRoleId $directoryRoleId
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 ```
 
-This example shows how to use the Get-MgDirectoryRoleMemberByRef Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Get-MgBetaDirectoryRoleMember -DirectoryRoleId $directoryRoleId
 
 ## PARAMETERS
 

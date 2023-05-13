@@ -1,7 +1,7 @@
 ---
 Module Name: Microsoft.Graph.DirectoryObjects
-Module Guid: df9d5e6f-3d64-4db1-8da4-9cf0ee966bdd
-Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.directoryobjects
+Module Guid: 1cac3c24-d4fb-40b5-a129-945e3f89179e
+Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects
 Help Version: 1.0.0.0
 Locale: en-US
 ---
@@ -31,6 +31,9 @@ The following entities support extension properties:\n+ user\n+ group\n+ adminis
 ### [Get-MgDirectoryObjectById](Get-MgDirectoryObjectById.md)
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
+
+### [Get-MgDirectoryObjectCount](Get-MgDirectoryObjectCount.md)
+Get the number of the resource
 
 ### [Get-MgDirectoryObjectDelta](Get-MgDirectoryObjectDelta.md)
 Invoke function delta

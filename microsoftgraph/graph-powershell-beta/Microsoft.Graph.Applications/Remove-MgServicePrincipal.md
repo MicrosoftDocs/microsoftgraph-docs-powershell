@@ -1,12 +1,11 @@
----
-external help file: Microsoft.Graph.Applications-help.xml
-Module Name: Microsoft.Graph.Applications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/remove-mgserviceprincipal
+﻿---
+external help file: Microsoft.Graph.Beta.Applications-help.xml
+Module Name: Microsoft.Graph.Beta.Applications
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipal
 schema: 2.0.0
-ms.prod: applications
 ---
 
-# Remove-MgServicePrincipal
+# Remove-MgBetaServicePrincipal
 
 ## SYNOPSIS
 Delete a servicePrincipal object.
@@ -15,13 +14,13 @@ Delete a servicePrincipal object.
 
 ### Delete (Default)
 ```
-Remove-MgServicePrincipal -ServicePrincipalId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+Remove-MgBetaServicePrincipal -ServicePrincipalId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgServicePrincipal -InputObject <IApplicationsIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
+Remove-MgBetaServicePrincipal -InputObject <IApplicationsIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -30,14 +29,11 @@ Delete a servicePrincipal object.
 
 ## EXAMPLES
 
-### Example 1: Using the Remove-MgServicePrincipal Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Applications
-Remove-MgServicePrincipal -ServicePrincipalId $servicePrincipalId
+Import-Module Microsoft.Graph.Beta.Applications
+Remove-MgBetaServicePrincipal -ServicePrincipalId $servicePrincipalId
 ```
-
-This example shows how to use the Remove-MgServicePrincipal Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -58,7 +54,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IApplicationsIdentity
@@ -138,7 +134,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
 ## OUTPUTS
 
 ### System.Boolean
@@ -151,7 +147,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+`INPUTOBJECT <IApplicationsIdentity>`: Identity Parameter
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
   - `[ApplicationId <String>]`: The unique identifier of application

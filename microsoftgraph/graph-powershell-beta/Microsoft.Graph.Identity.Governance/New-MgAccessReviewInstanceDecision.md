@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.Governance-help.xml
-Module Name: Microsoft.Graph.Identity.Governance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgaccessreviewinstancedecision
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.Governance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaaccessreviewinstancedecision
 schema: 2.0.0
 ---
 
-# New-MgAccessReviewInstanceDecision
+# New-MgBetaAccessReviewInstanceDecision
 
 ## SYNOPSIS
 Create new navigation property to decisions for accessReviews
@@ -14,7 +14,7 @@ Create new navigation property to decisions for accessReviews
 
 ### CreateExpanded (Default)
 ```
-New-MgAccessReviewInstanceDecision -AccessReviewId <String> -AccessReviewId1 <String>
+New-MgBetaAccessReviewInstanceDecision -AccessReviewId <String> -AccessReviewId1 <String>
  [-AccessRecommendation <String>] [-AccessReviewId2 <String>] [-AdditionalProperties <Hashtable>]
  [-AppliedBy <IMicrosoftGraphUserIdentity>] [-AppliedDateTime <DateTime>] [-ApplyResult <String>]
  [-Id <String>] [-Justification <String>] [-ReviewResult <String>] [-ReviewedBy <IMicrosoftGraphUserIdentity>]
@@ -23,7 +23,7 @@ New-MgAccessReviewInstanceDecision -AccessReviewId <String> -AccessReviewId1 <St
 
 ### CreateViaIdentityExpanded
 ```
-New-MgAccessReviewInstanceDecision [-AccessReviewId <String>] -InputObject <IIdentityGovernanceIdentity>
+New-MgBetaAccessReviewInstanceDecision [-AccessReviewId <String>] -InputObject <IIdentityGovernanceIdentity>
  [-AccessRecommendation <String>] [-AdditionalProperties <Hashtable>]
  [-AppliedBy <IMicrosoftGraphUserIdentity>] [-AppliedDateTime <DateTime>] [-ApplyResult <String>]
  [-Id <String>] [-Justification <String>] [-ReviewResult <String>] [-ReviewedBy <IMicrosoftGraphUserIdentity>]
@@ -32,13 +32,13 @@ New-MgAccessReviewInstanceDecision [-AccessReviewId <String>] -InputObject <IIde
 
 ### Create
 ```
-New-MgAccessReviewInstanceDecision -AccessReviewId <String> -AccessReviewId1 <String>
+New-MgBetaAccessReviewInstanceDecision -AccessReviewId <String> -AccessReviewId1 <String>
  -BodyParameter <IMicrosoftGraphAccessReviewDecision> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgAccessReviewInstanceDecision -InputObject <IIdentityGovernanceIdentity>
+New-MgBetaAccessReviewInstanceDecision -InputObject <IIdentityGovernanceIdentity>
  -BodyParameter <IMicrosoftGraphAccessReviewDecision> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -46,6 +46,20 @@ New-MgAccessReviewInstanceDecision -InputObject <IIdentityGovernanceIdentity>
 Create new navigation property to decisions for accessReviews
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -138,7 +152,7 @@ Accept wildcard characters: False
 
 ### -AppliedBy
 userIdentity
-To construct, please use Get-Help -Online and see NOTES section for APPLIEDBY properties and create a hash table.
+To construct, see NOTES section for APPLIEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserIdentity
@@ -184,7 +198,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 accessReviewDecision
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAccessReviewDecision
@@ -199,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -216,7 +230,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IIdentityGovernanceIdentity
@@ -247,7 +261,7 @@ Accept wildcard characters: False
 
 ### -ReviewedBy
 userIdentity
-To construct, please use Get-Help -Online and see NOTES section for REVIEWEDBY properties and create a hash table.
+To construct, see NOTES section for REVIEWEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserIdentity
@@ -327,11 +341,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessReviewDecision
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessReviewDecision
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessReviewDecision
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessReviewDecision
 ## NOTES
 
 ALIASES
@@ -341,16 +355,16 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-APPLIEDBY `<IMicrosoftGraphUserIdentity>`: userIdentity
+`APPLIEDBY <IMicrosoftGraphUserIdentity>`: userIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
   - `[Id <String>]`: Unique identifier for the identity.
   - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
   - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
 
-BODYPARAMETER `<IMicrosoftGraphAccessReviewDecision>`: accessReviewDecision
+`BODYPARAMETER <IMicrosoftGraphAccessReviewDecision>`: accessReviewDecision
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AccessRecommendation <String>]`: The feature- generated recommendation shown to the reviewer, one of Approve, Deny or NotAvailable.
   - `[AccessReviewId <String>]`: The feature-generated id of the access review.
   - `[AppliedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
@@ -366,7 +380,7 @@ BODYPARAMETER `<IMicrosoftGraphAccessReviewDecision>`: accessReviewDecision
   - `[ReviewedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
   - `[ReviewedDateTime <DateTime?>]`: 
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentityGovernanceIdentity>`: Identity Parameter
   - `[AccessPackageAssignmentId <String>]`: The unique identifier of accessPackageAssignment
   - `[AccessPackageAssignmentPolicyId <String>]`: The unique identifier of accessPackageAssignmentPolicy
   - `[AccessPackageAssignmentRequestId <String>]`: The unique identifier of accessPackageAssignmentRequest
@@ -374,8 +388,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[AccessPackageCatalogId <String>]`: The unique identifier of accessPackageCatalog
   - `[AccessPackageId <String>]`: The unique identifier of accessPackage
   - `[AccessPackageId1 <String>]`: The unique identifier of accessPackage
-  - `[AccessPackageId2 <String>]`: Usage: accessPackageId='{accessPackageId}'
-  - `[AccessPackageQuestionId <String>]`: The unique identifier of accessPackageQuestion
   - `[AccessPackageResourceEnvironmentId <String>]`: The unique identifier of accessPackageResourceEnvironment
   - `[AccessPackageResourceId <String>]`: The unique identifier of accessPackageResource
   - `[AccessPackageResourceRequestId <String>]`: The unique identifier of accessPackageResourceRequest
@@ -400,7 +412,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[AgreementId <String>]`: The unique identifier of agreement
   - `[AppConsentRequestId <String>]`: The unique identifier of appConsentRequest
   - `[ApprovalId <String>]`: The unique identifier of approval
-  - `[ApprovalStageId <String>]`: The unique identifier of approvalStage
   - `[ApprovalStepId <String>]`: The unique identifier of approvalStep
   - `[BusinessFlowTemplateId <String>]`: The unique identifier of businessFlowTemplate
   - `[ConnectedOrganizationId <String>]`: The unique identifier of connectedOrganization
@@ -438,12 +449,24 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[ProgramControlId1 <String>]`: The unique identifier of programControl
   - `[ProgramControlTypeId <String>]`: The unique identifier of programControlType
   - `[ProgramId <String>]`: The unique identifier of program
+  - `[RbacApplicationId <String>]`: The unique identifier of rbacApplication
   - `[RunId <String>]`: The unique identifier of run
   - `[StartDateTime <DateTime?>]`: Usage: startDateTime={startDateTime}
   - `[TaskDefinitionId <String>]`: The unique identifier of taskDefinition
   - `[TaskId <String>]`: The unique identifier of task
   - `[TaskProcessingResultId <String>]`: The unique identifier of taskProcessingResult
   - `[TaskReportId <String>]`: The unique identifier of taskReport
+  - `[UnifiedRbacResourceActionId <String>]`: The unique identifier of unifiedRbacResourceAction
+  - `[UnifiedRbacResourceNamespaceId <String>]`: The unique identifier of unifiedRbacResourceNamespace
+  - `[UnifiedRoleAssignmentId <String>]`: The unique identifier of unifiedRoleAssignment
+  - `[UnifiedRoleAssignmentScheduleId <String>]`: The unique identifier of unifiedRoleAssignmentSchedule
+  - `[UnifiedRoleAssignmentScheduleInstanceId <String>]`: The unique identifier of unifiedRoleAssignmentScheduleInstance
+  - `[UnifiedRoleAssignmentScheduleRequestId <String>]`: The unique identifier of unifiedRoleAssignmentScheduleRequest
+  - `[UnifiedRoleDefinitionId <String>]`: The unique identifier of unifiedRoleDefinition
+  - `[UnifiedRoleDefinitionId1 <String>]`: The unique identifier of unifiedRoleDefinition
+  - `[UnifiedRoleEligibilityScheduleId <String>]`: The unique identifier of unifiedRoleEligibilitySchedule
+  - `[UnifiedRoleEligibilityScheduleInstanceId <String>]`: The unique identifier of unifiedRoleEligibilityScheduleInstance
+  - `[UnifiedRoleEligibilityScheduleRequestId <String>]`: The unique identifier of unifiedRoleEligibilityScheduleRequest
   - `[UnifiedRoleManagementAlertConfigurationId <String>]`: The unique identifier of unifiedRoleManagementAlertConfiguration
   - `[UnifiedRoleManagementAlertDefinitionId <String>]`: The unique identifier of unifiedRoleManagementAlertDefinition
   - `[UnifiedRoleManagementAlertId <String>]`: The unique identifier of unifiedRoleManagementAlert
@@ -455,7 +478,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowTemplateId <String>]`: The unique identifier of workflowTemplate
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
-REVIEWEDBY `<IMicrosoftGraphUserIdentity>`: userIdentity
+`REVIEWEDBY <IMicrosoftGraphUserIdentity>`: userIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
   - `[Id <String>]`: Unique identifier for the identity.

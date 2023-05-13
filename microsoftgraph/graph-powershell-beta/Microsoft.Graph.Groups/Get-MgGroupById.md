@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Groups-help.xml
-Module Name: Microsoft.Graph.Groups
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/get-mggroupbyid
+﻿---
+external help file: Microsoft.Graph.Beta.Groups-help.xml
+Module Name: Microsoft.Graph.Beta.Groups
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupbyid
 schema: 2.0.0
 ---
 
-# Get-MgGroupById
+# Get-MgBetaGroupById
 
 ## SYNOPSIS
 Return the directory objects specified in a list of IDs.
@@ -15,13 +15,13 @@ Some common uses for this function are to:
 
 ### GetExpanded (Default)
 ```
-Get-MgGroupById [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-Types <String[]>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Get-MgBetaGroupById [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-Types <String[]>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgGroupById
+Get-MgBetaGroupById
  -BodyParameter <IPaths1E1O4BoGroupsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -32,9 +32,10 @@ Some common uses for this function are to:
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.DirectoryObjects
+Import-Module Microsoft.Graph.Beta.DirectoryObjects
+```
 
 $params = @{
 	Ids = @(
@@ -50,12 +51,7 @@ $params = @{
 	)
 }
 
-Get-MgDirectoryObjectById -BodyParameter $params
-```
-
-This example shows how to use the Get-MgGroupById Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Get-MgBetaDirectoryObjectById -BodyParameter $params
 
 ## PARAMETERS
 
@@ -76,7 +72,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths1E1O4BoGroupsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema
@@ -156,10 +152,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1E1O4BoGroupsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1E1O4BoGroupsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryObject
 ## NOTES
 
 ALIASES
@@ -169,7 +165,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1E1O4BoGroupsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1E1O4BoGroupsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Ids <String[]>]`: 
   - `[Types <String[]>]`: 

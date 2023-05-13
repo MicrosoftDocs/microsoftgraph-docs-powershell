@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Applications-help.xml
-Module Name: Microsoft.Graph.Applications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/restart-mgapplicationsynchronizationjob
+﻿---
+external help file: Microsoft.Graph.Beta.Applications-help.xml
+Module Name: Microsoft.Graph.Beta.Applications
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/restart-mgbetaapplicationsynchronizationjob
 schema: 2.0.0
 ---
 
-# Restart-MgApplicationSynchronizationJob
+# Restart-MgBetaApplicationSynchronizationJob
 
 ## SYNOPSIS
 Restart a stopped synchronization job, forcing it to reprocess all the objects in the directory.
@@ -15,28 +15,28 @@ Optionally clears existing the synchronization state and previous errors.
 
 ### RestartExpanded (Default)
 ```
-Restart-MgApplicationSynchronizationJob -ApplicationId <String> -SynchronizationJobId <String>
+Restart-MgBetaApplicationSynchronizationJob -ApplicationId <String> -SynchronizationJobId <String>
  [-AdditionalProperties <Hashtable>] [-Criteria <IMicrosoftGraphSynchronizationJobRestartCriteria>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Restart
 ```
-Restart-MgApplicationSynchronizationJob -ApplicationId <String> -SynchronizationJobId <String>
+Restart-MgBetaApplicationSynchronizationJob -ApplicationId <String> -SynchronizationJobId <String>
  -BodyParameter <IPaths113Dr1CApplicationsApplicationIdSynchronizationJobsSynchronizationjobIdMicrosoftGraphRestartPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### RestartViaIdentityExpanded
 ```
-Restart-MgApplicationSynchronizationJob -InputObject <IApplicationsIdentity>
+Restart-MgBetaApplicationSynchronizationJob -InputObject <IApplicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-Criteria <IMicrosoftGraphSynchronizationJobRestartCriteria>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### RestartViaIdentity
 ```
-Restart-MgApplicationSynchronizationJob -InputObject <IApplicationsIdentity>
+Restart-MgBetaApplicationSynchronizationJob -InputObject <IApplicationsIdentity>
  -BodyParameter <IPaths113Dr1CApplicationsApplicationIdSynchronizationJobsSynchronizationjobIdMicrosoftGraphRestartPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -46,6 +46,20 @@ Restart a stopped synchronization job, forcing it to reprocess all the objects i
 Optionally clears existing the synchronization state and previous errors.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -81,7 +95,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths113Dr1CApplicationsApplicationIdSynchronizationJobsSynchronizationjobIdMicrosoftGraphRestartPostRequestbodyContentApplicationJsonSchema
@@ -97,7 +111,7 @@ Accept wildcard characters: False
 
 ### -Criteria
 synchronizationJobRestartCriteria
-To construct, please use Get-Help -Online and see NOTES section for CRITERIA properties and create a hash table.
+To construct, see NOTES section for CRITERIA properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSynchronizationJobRestartCriteria
@@ -113,7 +127,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IApplicationsIdentity
@@ -193,8 +207,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths113Dr1CApplicationsApplicationIdSynchronizationJobsSynchronizationjobIdMicrosoftGraphRestartPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths113Dr1CApplicationsApplicationIdSynchronizationJobsSynchronizationjobIdMicrosoftGraphRestartPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### System.Boolean
@@ -207,17 +221,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths113Dr1CApplicationsApplicationIdSynchronizationJobsSynchronizationjobIdMicrosoftGraphRestartPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths113Dr1CApplicationsApplicationIdSynchronizationJobsSynchronizationjobIdMicrosoftGraphRestartPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Criteria <IMicrosoftGraphSynchronizationJobRestartCriteria>]`: synchronizationJobRestartCriteria
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ResetScope <String>]`: synchronizationJobRestartScope
 
-CRITERIA `<IMicrosoftGraphSynchronizationJobRestartCriteria>`: synchronizationJobRestartCriteria
+`CRITERIA <IMicrosoftGraphSynchronizationJobRestartCriteria>`: synchronizationJobRestartCriteria
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ResetScope <String>]`: synchronizationJobRestartScope
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+`INPUTOBJECT <IApplicationsIdentity>`: Identity Parameter
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
   - `[ApplicationId <String>]`: The unique identifier of application

@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Functions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Functions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.functions/get-mgdevicemanagementdevicecompliancepolicydevicescheduledtoretire
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Functions-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Functions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementdevicecompliancepolicydevicescheduledtoretire
 schema: 2.0.0
 ---
 
-# Get-MgDeviceManagementDeviceCompliancePolicyDeviceScheduledToRetire
+# Get-MgBetaDeviceManagementDeviceCompliancePolicyDeviceScheduledToRetire
 
 ## SYNOPSIS
 Invoke function getDevicesScheduledToRetire
@@ -13,7 +13,7 @@ Invoke function getDevicesScheduledToRetire
 ## SYNTAX
 
 ```
-Get-MgDeviceManagementDeviceCompliancePolicyDeviceScheduledToRetire [-Count] [-Filter <String>]
+Get-MgBetaDeviceManagementDeviceCompliancePolicyDeviceScheduledToRetire [-Count] [-Filter <String>]
  [-Search <String>] [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
 ```
 
@@ -21,6 +21,20 @@ Get-MgDeviceManagementDeviceCompliancePolicyDeviceScheduledToRetire [-Count] [-F
 Invoke function getDevicesScheduledToRetire
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -106,7 +120,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRetireScheduledManagedDevice
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRetireScheduledManagedDevice
 ## NOTES
 
 ALIASES

@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2cuserflowidentityproviderbyref
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2cuserflowidentityproviderbyref
 schema: 2.0.0
 ---
 
-# Get-MgIdentityB2CUserFlowIdentityProviderByRef
+# Get-MgBetaIdentityB2CUserFlowIdentityProviderByRef
 
 ## SYNOPSIS
 Get the identity providers in a b2cIdentityUserFlow object.
@@ -13,7 +13,7 @@ Get the identity providers in a b2cIdentityUserFlow object.
 ## SYNTAX
 
 ```
-Get-MgIdentityB2CUserFlowIdentityProviderByRef -B2CIdentityUserFlowId <String> [-Filter <String>]
+Get-MgBetaIdentityB2CUserFlowIdentityProviderByRef -B2CIdentityUserFlowId <String> [-Filter <String>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
  [-CountVariable <String>] [<CommonParameters>]
 ```
@@ -22,6 +22,20 @@ Get-MgIdentityB2CUserFlowIdentityProviderByRef -B2CIdentityUserFlowId <String> [
 Get the identity providers in a b2cIdentityUserFlow object.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 

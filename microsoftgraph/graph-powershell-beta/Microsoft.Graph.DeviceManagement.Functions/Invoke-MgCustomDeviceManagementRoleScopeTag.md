@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Functions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Functions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.functions/invoke-mgcustomdevicemanagementrolescopetag
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Functions-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Functions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/invoke-mgbetacustomdevicemanagementrolescopetag
 schema: 2.0.0
 ---
 
-# Invoke-MgCustomDeviceManagementRoleScopeTag
+# Invoke-MgBetaCustomDeviceManagementRoleScopeTag
 
 ## SYNOPSIS
 Invoke function hasCustomRoleScopeTag
@@ -13,13 +13,27 @@ Invoke function hasCustomRoleScopeTag
 ## SYNTAX
 
 ```
-Invoke-MgCustomDeviceManagementRoleScopeTag [<CommonParameters>]
+Invoke-MgBetaCustomDeviceManagementRoleScopeTag [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke function hasCustomRoleScopeTag
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 

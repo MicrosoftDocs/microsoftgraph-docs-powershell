@@ -1,58 +1,52 @@
----
-external help file: Microsoft.Graph.CloudCommunications-help.xml
-Module Name: Microsoft.Graph.CloudCommunications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcallcontentsharingsession
+﻿---
+external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
+Module Name: Microsoft.Graph.Beta.CloudCommunications
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationcallcontentsharingsession
 schema: 2.0.0
 ---
 
-# Get-MgCommunicationCallContentSharingSession
+# Get-MgBetaCommunicationCallContentSharingSession
 
 ## SYNOPSIS
-Get contentSharingSessions from communications
+Retrieve the properties of a contentSharingSession object.
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgCommunicationCallContentSharingSession -CallId <String> [-ExpandProperty <String[]>]
+Get-MgBetaCommunicationCallContentSharingSession -CallId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### Get1
+### Get
 ```
-Get-MgCommunicationCallContentSharingSession -CallId <String> -ContentSharingSessionId <String>
+Get-MgBetaCommunicationCallContentSharingSession -CallId <String> -ContentSharingSessionId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### GetViaIdentity
 ```
-Get-MgCommunicationCallContentSharingSession -InputObject <ICloudCommunicationsIdentity>
+Get-MgBetaCommunicationCallContentSharingSession -InputObject <ICloudCommunicationsIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get contentSharingSessions from communications
+Retrieve the properties of a contentSharingSession object.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgCommunicationCallContentSharingSession Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.CloudCommunications
-Get-MgCommunicationCallContentSharingSession -CallId $callId -ContentSharingSessionId $contentSharingSessionId
+Import-Module Microsoft.Graph.Beta.CloudCommunications
+Get-MgBetaCommunicationCallContentSharingSession -CallId $callId -ContentSharingSessionId $contentSharingSessionId
 ```
 
-This example shows how to use the Get-MgCommunicationCallContentSharingSession Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Get-MgCommunicationCallContentSharingSession Cmdlet
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.CloudCommunications
-Get-MgCommunicationCallContentSharingSession -CallId $callId
+Import-Module Microsoft.Graph.Beta.CloudCommunications
+Get-MgBetaCommunicationCallContentSharingSession -CallId $callId
 ```
-
-This example shows how to use the Get-MgCommunicationCallContentSharingSession Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -76,7 +70,7 @@ The unique identifier of call
 
 ```yaml
 Type: String
-Parameter Sets: List, Get1
+Parameter Sets: List, Get
 Aliases:
 
 Required: True
@@ -91,7 +85,7 @@ The unique identifier of contentSharingSession
 
 ```yaml
 Type: String
-Parameter Sets: Get1
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -149,11 +143,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ICloudCommunicationsIdentity
-Parameter Sets: GetViaIdentity1
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
@@ -258,10 +252,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContentSharingSession
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphContentSharingSession
 ### System.String
 ## NOTES
 
@@ -272,7 +266,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+`INPUTOBJECT <ICloudCommunicationsIdentity>`: Identity Parameter
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
   - `[CallId <String>]`: The unique identifier of call
@@ -282,6 +276,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
   - `[FromDateTime <DateTime?>]`: Usage: fromDateTime={fromDateTime}
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[MeetingRegistrantBaseId <String>]`: The unique identifier of meetingRegistrantBase
   - `[MeetingRegistrationQuestionId <String>]`: The unique identifier of meetingRegistrationQuestion
   - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
   - `[ParticipantId <String>]`: The unique identifier of participant

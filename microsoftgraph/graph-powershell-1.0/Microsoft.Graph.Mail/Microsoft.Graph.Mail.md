@@ -1,7 +1,7 @@
----
+﻿---
 Module Name: Microsoft.Graph.Mail
-Module Guid: 0c5aacc6-ac91-49d4-97e6-f2576ae94e14
-Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.mail
+Module Guid: c14483f0-7b20-44d9-9b5d-c2a0510a483a
+Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.mail
 Help Version: 1.0.0.0
 Locale: en-US
 ---
@@ -19,6 +19,9 @@ A set of overrides for a user to always classify messages from specific senders 
 Read-only.
 Nullable.
 
+### [Get-MgUserInferenceClassificationOverrideCount](Get-MgUserInferenceClassificationOverrideCount.md)
+Get the number of the resource
+
 ### [Get-MgUserMailFolder](Get-MgUserMailFolder.md)
 The user's mail folders.
 Read-only.
@@ -27,25 +30,42 @@ Nullable.
 ### [Get-MgUserMailFolderChildFolder](Get-MgUserMailFolderChildFolder.md)
 The collection of child folders in the mailFolder.
 
+### [Get-MgUserMailFolderChildFolderCount](Get-MgUserMailFolderChildFolderCount.md)
+Get the number of the resource
+
 ### [Get-MgUserMailFolderChildFolderMessage](Get-MgUserMailFolderChildFolderMessage.md)
 The collection of messages in the mailFolder.
 
 ### [Get-MgUserMailFolderChildFolderMessageAttachment](Get-MgUserMailFolderChildFolderMessageAttachment.md)
-The fileAttachment and itemAttachment attachments for the message.
+Read the properties, relationships, or raw contents of an attachment that is attached to a user event, message, or group post.
+An attachment can be one of the following types: All these types of attachments are derived from the attachment resource.
+
+### [Get-MgUserMailFolderChildFolderMessageAttachmentCount](Get-MgUserMailFolderChildFolderMessageAttachmentCount.md)
+Get the number of the resource
 
 ### [Get-MgUserMailFolderChildFolderMessageContent](Get-MgUserMailFolderChildFolderMessageContent.md)
 Get media content for the navigation property messages from users
 
+### [Get-MgUserMailFolderChildFolderMessageCount](Get-MgUserMailFolderChildFolderMessageCount.md)
+Get the number of the resource
+
 ### [Get-MgUserMailFolderChildFolderMessageExtension](Get-MgUserMailFolderChildFolderMessageExtension.md)
-The collection of open extensions defined for the message.
-Nullable.
+Get an open extension (openTypeExtension object) identified by name or fully qualified name.
+The table in the Permissions section lists the resources that support open extensions.
+The following table lists the three scenarios where you can get an open extension from a supported resource instance.
+
+### [Get-MgUserMailFolderChildFolderMessageExtensionCount](Get-MgUserMailFolderChildFolderMessageExtensionCount.md)
+Get the number of the resource
 
 ### [Get-MgUserMailFolderChildFolderMessageMultiValueExtendedProperty](Get-MgUserMailFolderChildFolderMessageMultiValueExtendedProperty.md)
 The collection of multi-value extended properties defined for the message.
 Nullable.
 
 ### [Get-MgUserMailFolderChildFolderMessageRule](Get-MgUserMailFolderChildFolderMessageRule.md)
-The collection of rules that apply to the user's Inbox folder.
+Get the properties and relationships of a messageRule object.
+
+### [Get-MgUserMailFolderChildFolderMessageRuleCount](Get-MgUserMailFolderChildFolderMessageRuleCount.md)
+Get the number of the resource
 
 ### [Get-MgUserMailFolderChildFolderMessageSingleValueExtendedProperty](Get-MgUserMailFolderChildFolderMessageSingleValueExtendedProperty.md)
 The collection of single-value extended properties defined for the message.
@@ -61,25 +81,41 @@ The collection of single-value extended properties defined for the mailFolder.
 Read-only.
 Nullable.
 
+### [Get-MgUserMailFolderCount](Get-MgUserMailFolderCount.md)
+Get the number of the resource
+
 ### [Get-MgUserMailFolderMessage](Get-MgUserMailFolderMessage.md)
 The collection of messages in the mailFolder.
 
-### [Get-MgUserMailFolderMessageAttachment](Get-MgUserMailFolderMessageAttachment.md)
-The fileAttachment and itemAttachment attachments for the message.
+### [Get-MgUserMailFolderMessage](Get-MgUserMailFolderMessage.md)
+The collection of messages in the mailFolder.
+
+### [Get-MgUserMailFolderMessageAttachmentCount](Get-MgUserMailFolderMessageAttachmentCount.md)
+Get the number of the resource
 
 ### [Get-MgUserMailFolderMessageContent](Get-MgUserMailFolderMessageContent.md)
 Get media content for the navigation property messages from users
 
+### [Get-MgUserMailFolderMessageCount](Get-MgUserMailFolderMessageCount.md)
+Get the number of the resource
+
 ### [Get-MgUserMailFolderMessageExtension](Get-MgUserMailFolderMessageExtension.md)
-The collection of open extensions defined for the message.
-Nullable.
+Get an open extension (openTypeExtension object) identified by name or fully qualified name.
+The table in the Permissions section lists the resources that support open extensions.
+The following table lists the three scenarios where you can get an open extension from a supported resource instance.
+
+### [Get-MgUserMailFolderMessageExtensionCount](Get-MgUserMailFolderMessageExtensionCount.md)
+Get the number of the resource
 
 ### [Get-MgUserMailFolderMessageMultiValueExtendedProperty](Get-MgUserMailFolderMessageMultiValueExtendedProperty.md)
 The collection of multi-value extended properties defined for the message.
 Nullable.
 
 ### [Get-MgUserMailFolderMessageRule](Get-MgUserMailFolderMessageRule.md)
-The collection of rules that apply to the user's Inbox folder.
+Get the properties and relationships of a messageRule object.
+
+### [Get-MgUserMailFolderMessageRuleCount](Get-MgUserMailFolderMessageRuleCount.md)
+Get the number of the resource
 
 ### [Get-MgUserMailFolderMessageSingleValueExtendedProperty](Get-MgUserMailFolderMessageSingleValueExtendedProperty.md)
 The collection of single-value extended properties defined for the message.
@@ -101,14 +137,25 @@ Read-only.
 Nullable.
 
 ### [Get-MgUserMessageAttachment](Get-MgUserMessageAttachment.md)
-The fileAttachment and itemAttachment attachments for the message.
+Read the properties, relationships, or raw contents of an attachment that is attached to a user event, message, or group post.
+An attachment can be one of the following types: All these types of attachments are derived from the attachment resource.
+
+### [Get-MgUserMessageAttachmentCount](Get-MgUserMessageAttachmentCount.md)
+Get the number of the resource
 
 ### [Get-MgUserMessageContent](Get-MgUserMessageContent.md)
 Get media content for the navigation property messages from users
 
+### [Get-MgUserMessageCount](Get-MgUserMessageCount.md)
+Get the number of the resource
+
 ### [Get-MgUserMessageExtension](Get-MgUserMessageExtension.md)
-The collection of open extensions defined for the message.
-Nullable.
+Get an open extension (openTypeExtension object) identified by name or fully qualified name.
+The table in the Permissions section lists the resources that support open extensions.
+The following table lists the three scenarios where you can get an open extension from a supported resource instance.
+
+### [Get-MgUserMessageExtensionCount](Get-MgUserMessageExtensionCount.md)
+Get the number of the resource
 
 ### [Get-MgUserMessageMultiValueExtendedProperty](Get-MgUserMessageMultiValueExtendedProperty.md)
 The collection of multi-value extended properties defined for the message.
@@ -135,8 +182,10 @@ If you intend a new folder to be hidden, you must set the **isHidden** property 
 Use this API to create a new Message in a mailfolder.
 
 ### [New-MgUserMailFolderChildFolderMessageAttachment](New-MgUserMailFolderChildFolderMessageAttachment.md)
-Use this API to create a new Attachment.
+Use this API to add an attachment to a message.
 An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
+You can add an attachment to an existing message by posting to its attachments collection, or you can \nadd an attachment to a message that is being created and sent on the fly.
+This operation limits the size of the attachment you can add to under 3 MB.
 
 ### [New-MgUserMailFolderChildFolderMessageExtension](New-MgUserMailFolderChildFolderMessageExtension.md)
 Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
@@ -163,9 +212,8 @@ Create new navigation property to singleValueExtendedProperties for users
 ### [New-MgUserMailFolderMessage](New-MgUserMailFolderMessage.md)
 Use this API to create a new Message in a mailfolder.
 
-### [New-MgUserMailFolderMessageAttachment](New-MgUserMailFolderMessageAttachment.md)
-Use this API to create a new Attachment.
-An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
+### [New-MgUserMailFolderMessage](New-MgUserMailFolderMessage.md)
+Use this API to create a new Message in a mailfolder.
 
 ### [New-MgUserMailFolderMessageExtension](New-MgUserMailFolderMessageExtension.md)
 Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
@@ -190,14 +238,18 @@ Create new navigation property to multiValueExtendedProperties for users
 Create new navigation property to singleValueExtendedProperties for users
 
 ### [New-MgUserMessage](New-MgUserMessage.md)
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-See known limitations of open extensions for more information.
-The table in the Permissions section lists the resources that support open extensions.
+Create a draft of a new message in either JSON or MIME format.
+When using JSON format, you can:\n- Include an attachment to the **message**.\n- Update the draft later to add content to the **body** or change other message properties.
+When using MIME format:\n- Provide the applicable Internet message headers and the MIME content, all encoded in **base64** format in the request body.\n- /* Add any attachments and S/MIME properties to the MIME content.
+By default, this operation saves the draft in the Drafts folder.
+Send the draft message in a subsequent operation.
+Alternatively, send a new message in a single operation, or create a draft to forward, reply and reply-all to an existing message.
 
 ### [New-MgUserMessageAttachment](New-MgUserMessageAttachment.md)
-Use this API to create a new Attachment.
+Use this API to add an attachment to a message.
 An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
+You can add an attachment to an existing message by posting to its attachments collection, or you can \nadd an attachment to a message that is being created and sent on the fly.
+This operation limits the size of the attachment you can add to under 3 MB.
 
 ### [New-MgUserMessageExtension](New-MgUserMessageExtension.md)
 Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
@@ -212,10 +264,12 @@ Create new navigation property to multiValueExtendedProperties for users
 Create new navigation property to singleValueExtendedProperties for users
 
 ### [Remove-MgUserInferenceClassificationOverride](Remove-MgUserInferenceClassificationOverride.md)
-Delete navigation property overrides for users
+Delete an override specified by its ID.
 
 ### [Remove-MgUserMailFolder](Remove-MgUserMailFolder.md)
-Delete navigation property mailFolders for users
+Delete the specified mailFolder.
+The folder can be a mailSearchFolder.
+You can specify a mail folder by its folder ID, or by its well-known folder name, if one exists.
 
 ### [Remove-MgUserMailFolderChildFolder](Remove-MgUserMailFolderChildFolder.md)
 Delete navigation property childFolders for users
@@ -227,13 +281,14 @@ Delete navigation property messages for users
 Delete navigation property attachments for users
 
 ### [Remove-MgUserMailFolderChildFolderMessageExtension](Remove-MgUserMailFolderChildFolderMessageExtension.md)
-Delete navigation property extensions for users
+Delete an open extension (openTypeExtension object) from the specified instance of a resource.
+See the table in the Permissions section for the list of resources that support open extensions.
 
 ### [Remove-MgUserMailFolderChildFolderMessageMultiValueExtendedProperty](Remove-MgUserMailFolderChildFolderMessageMultiValueExtendedProperty.md)
 Delete navigation property multiValueExtendedProperties for users
 
 ### [Remove-MgUserMailFolderChildFolderMessageRule](Remove-MgUserMailFolderChildFolderMessageRule.md)
-Delete navigation property messageRules for users
+Delete the specified messageRule object.
 
 ### [Remove-MgUserMailFolderChildFolderMessageSingleValueExtendedProperty](Remove-MgUserMailFolderChildFolderMessageSingleValueExtendedProperty.md)
 Delete navigation property singleValueExtendedProperties for users
@@ -251,13 +306,14 @@ Delete navigation property messages for users
 Delete navigation property attachments for users
 
 ### [Remove-MgUserMailFolderMessageExtension](Remove-MgUserMailFolderMessageExtension.md)
-Delete navigation property extensions for users
+Delete an open extension (openTypeExtension object) from the specified instance of a resource.
+See the table in the Permissions section for the list of resources that support open extensions.
 
 ### [Remove-MgUserMailFolderMessageMultiValueExtendedProperty](Remove-MgUserMailFolderMessageMultiValueExtendedProperty.md)
 Delete navigation property multiValueExtendedProperties for users
 
 ### [Remove-MgUserMailFolderMessageRule](Remove-MgUserMailFolderMessageRule.md)
-Delete navigation property messageRules for users
+Delete the specified messageRule object.
 
 ### [Remove-MgUserMailFolderMessageSingleValueExtendedProperty](Remove-MgUserMailFolderMessageSingleValueExtendedProperty.md)
 Delete navigation property singleValueExtendedProperties for users
@@ -269,13 +325,14 @@ Delete navigation property multiValueExtendedProperties for users
 Delete navigation property singleValueExtendedProperties for users
 
 ### [Remove-MgUserMessage](Remove-MgUserMessage.md)
-Delete navigation property messages for users
+Delete eventMessage.
 
 ### [Remove-MgUserMessageAttachment](Remove-MgUserMessageAttachment.md)
 Delete navigation property attachments for users
 
 ### [Remove-MgUserMessageExtension](Remove-MgUserMessageExtension.md)
-Delete navigation property extensions for users
+Delete an open extension (openTypeExtension object) from the specified instance of a resource.
+See the table in the Permissions section for the list of resources that support open extensions.
 
 ### [Remove-MgUserMessageMultiValueExtendedProperty](Remove-MgUserMessageMultiValueExtendedProperty.md)
 Delete navigation property multiValueExtendedProperties for users
@@ -296,10 +353,13 @@ Update media content for the navigation property messages in users
 Update the navigation property inferenceClassification in users
 
 ### [Update-MgUserInferenceClassificationOverride](Update-MgUserInferenceClassificationOverride.md)
-Update the navigation property overrides in users
+Change the **classifyAs** field of an override as specified.
+You cannot use PATCH to change any other fields in an inferenceClassificationOverride instance.
+If an override exists for a sender and the sender changes his/her display name, you can use POST to force an update to the name field in the existing override.
+If an override exists for a sender and the sender changes his/her SMTP address, deleting the existing override and creating a new one with\nthe new SMTP address is the only way to 'update' the override for this sender.
 
 ### [Update-MgUserMailFolder](Update-MgUserMailFolder.md)
-Update the navigation property mailFolders in users
+Update the properties of mailfolder object.
 
 ### [Update-MgUserMailFolderChildFolder](Update-MgUserMailFolderChildFolder.md)
 Update the navigation property childFolders in users
@@ -314,7 +374,7 @@ Update the navigation property extensions in users
 Update the navigation property multiValueExtendedProperties in users
 
 ### [Update-MgUserMailFolderChildFolderMessageRule](Update-MgUserMailFolderChildFolderMessageRule.md)
-Update the navigation property messageRules in users
+Change writable properties on a messageRule object and save the changes.
 
 ### [Update-MgUserMailFolderChildFolderMessageSingleValueExtendedProperty](Update-MgUserMailFolderChildFolderMessageSingleValueExtendedProperty.md)
 Update the navigation property singleValueExtendedProperties in users
@@ -335,7 +395,7 @@ Update the navigation property extensions in users
 Update the navigation property multiValueExtendedProperties in users
 
 ### [Update-MgUserMailFolderMessageRule](Update-MgUserMailFolderMessageRule.md)
-Update the navigation property messageRules in users
+Change writable properties on a messageRule object and save the changes.
 
 ### [Update-MgUserMailFolderMessageSingleValueExtendedProperty](Update-MgUserMailFolderMessageSingleValueExtendedProperty.md)
 Update the navigation property singleValueExtendedProperties in users
@@ -347,7 +407,7 @@ Update the navigation property multiValueExtendedProperties in users
 Update the navigation property singleValueExtendedProperties in users
 
 ### [Update-MgUserMessage](Update-MgUserMessage.md)
-Update the navigation property messages in users
+Update the properties of a message object.
 
 ### [Update-MgUserMessageExtension](Update-MgUserMessageExtension.md)
 Update the navigation property extensions in users

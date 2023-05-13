@@ -1,12 +1,11 @@
----
-external help file: Microsoft.Graph.Planner-help.xml
-Module Name: Microsoft.Graph.Planner
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/get-mggroupplannerplanbucket
+﻿---
+external help file: Microsoft.Graph.Beta.Planner-help.xml
+Module Name: Microsoft.Graph.Beta.Planner
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetagroupplannerplanbucket
 schema: 2.0.0
-ms.prod: planner
 ---
 
-# Get-MgGroupPlannerPlanBucket
+# Get-MgBetaGroupPlannerPlanBucket
 
 ## SYNOPSIS
 Retrieve a list of plannerBucket objects contained by a plannerPlan object.
@@ -14,7 +13,7 @@ Retrieve a list of plannerBucket objects contained by a plannerPlan object.
 ## SYNTAX
 
 ```
-Get-MgGroupPlannerPlanBucket -GroupId <String> -PlannerPlanId <String> [-ExpandProperty <String[]>]
+Get-MgBetaGroupPlannerPlanBucket -GroupId <String> -PlannerPlanId <String> [-ExpandProperty <String[]>]
  [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
@@ -24,16 +23,12 @@ Retrieve a list of plannerBucket objects contained by a plannerPlan object.
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Planner
-
-Get-MgPlannerPlanBucket -PlannerPlanId $plannerPlanId
+Import-Module Microsoft.Graph.Beta.Planner
 ```
 
-This example shows how to use the Get-MgGroupPlannerPlanBucket Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Get-MgBetaPlannerPlanBucket -PlannerPlanId $plannerPlanId
 
 ## PARAMETERS
 
@@ -225,7 +220,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerBucket1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerBucket
 ## NOTES
 
 ALIASES

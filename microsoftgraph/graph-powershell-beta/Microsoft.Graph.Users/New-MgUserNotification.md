@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Users-help.xml
-Module Name: Microsoft.Graph.Users
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/new-mgusernotification
+﻿---
+external help file: Microsoft.Graph.Beta.Users-help.xml
+Module Name: Microsoft.Graph.Beta.Users
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausernotification
 schema: 2.0.0
 ---
 
-# New-MgUserNotification
+# New-MgBetaUserNotification
 
 ## SYNOPSIS
 Create new navigation property to notifications for users
@@ -14,7 +14,7 @@ Create new navigation property to notifications for users
 
 ### CreateExpanded (Default)
 ```
-New-MgUserNotification -UserId <String> [-AdditionalProperties <Hashtable>] [-DisplayTimeToLive <Int32>]
+New-MgBetaUserNotification -UserId <String> [-AdditionalProperties <Hashtable>] [-DisplayTimeToLive <Int32>]
  [-ExpirationDateTime <DateTime>] [-GroupName <String>] [-Id <String>] [-Payload <IMicrosoftGraphPayloadTypes>]
  [-Priority <String>] [-TargetHostName <String>] [-TargetPolicy <IMicrosoftGraphTargetPolicyEndpoints>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -22,13 +22,13 @@ New-MgUserNotification -UserId <String> [-AdditionalProperties <Hashtable>] [-Di
 
 ### Create
 ```
-New-MgUserNotification -UserId <String> -BodyParameter <IMicrosoftGraphNotification> [-WhatIf] [-Confirm]
+New-MgBetaUserNotification -UserId <String> -BodyParameter <IMicrosoftGraphNotification> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgUserNotification -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>]
+New-MgBetaUserNotification -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>]
  [-DisplayTimeToLive <Int32>] [-ExpirationDateTime <DateTime>] [-GroupName <String>] [-Id <String>]
  [-Payload <IMicrosoftGraphPayloadTypes>] [-Priority <String>] [-TargetHostName <String>]
  [-TargetPolicy <IMicrosoftGraphTargetPolicyEndpoints>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -36,7 +36,7 @@ New-MgUserNotification -InputObject <IUsersIdentity> [-AdditionalProperties <Has
 
 ### CreateViaIdentity
 ```
-New-MgUserNotification -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphNotification> [-WhatIf]
+New-MgBetaUserNotification -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphNotification> [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -44,6 +44,20 @@ New-MgUserNotification -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftG
 Create new navigation property to notifications for users
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -64,7 +78,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 notification
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphNotification
@@ -128,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -145,7 +159,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersIdentity
@@ -161,7 +175,7 @@ Accept wildcard characters: False
 
 ### -Payload
 payloadTypes
-To construct, please use Get-Help -Online and see NOTES section for PAYLOAD properties and create a hash table.
+To construct, see NOTES section for PAYLOAD properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPayloadTypes
@@ -208,7 +222,7 @@ Accept wildcard characters: False
 
 ### -TargetPolicy
 targetPolicyEndpoints
-To construct, please use Get-Help -Online and see NOTES section for TARGETPOLICY properties and create a hash table.
+To construct, see NOTES section for TARGETPOLICY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphTargetPolicyEndpoints
@@ -273,11 +287,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphNotification
-### Microsoft.Graph.PowerShell.Models.IUsersIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphNotification
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphNotification
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphNotification
 ## NOTES
 
 ALIASES
@@ -287,9 +301,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphNotification>`: notification
+`BODYPARAMETER <IMicrosoftGraphNotification>`: notification
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DisplayTimeToLive <Int32?>]`: Sets how long (in seconds) this notification content will stay in each platform's notification viewer. For example, when the notification is delivered to a Windows device, the value of this property is passed on to ToastNotification.ExpirationTime, which determines how long the toast notification will stay in the user's Windows Action Center.
   - `[ExpirationDateTime <DateTime?>]`: Sets a UTC expiration date and time on a user notification using ISO 8601 format (for example, midnight UTC on Jan 1, 2019 would look like this: '2019-01-01T00:00:00Z'). When time is up, the notification is removed from the Microsoft Graph notification feed store completely and is no longer part of notification history. Max value is 30 days.
   - `[GroupName <String>]`: The name of the group that this notification belongs to. It is set by the developer for the purpose of grouping notifications together.
@@ -306,7 +320,7 @@ BODYPARAMETER `<IMicrosoftGraphNotification>`: notification
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[PlatformTypes <String[]>]`: Use to filter the notification distribution to a specific platform or platforms. Valid values are Windows, iOS, Android and WebPush. By default, all push endpoint types (Windows, iOS, Android and WebPush) are enabled.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersIdentity>`: Identity Parameter
   - `[AttachmentBaseId <String>]`: The unique identifier of attachmentBase
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[AttachmentSessionId <String>]`: The unique identifier of attachmentSession
@@ -315,7 +329,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
   - `[LinkedResourceId <String>]`: The unique identifier of linkedResource
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
   - `[NotificationId <String>]`: The unique identifier of notification
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[OutlookCategoryId <String>]`: The unique identifier of outlookCategory
@@ -323,12 +336,11 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
   - `[TodoTaskId <String>]`: The unique identifier of todoTask
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
   - `[UserId <String>]`: The unique identifier of user
 
-PAYLOAD `<IMicrosoftGraphPayloadTypes>`: payloadTypes
+`PAYLOAD <IMicrosoftGraphPayloadTypes>`: payloadTypes
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[RawContent <String>]`: The notification content of a raw user notification that will be delivered to and consumed by the app client on all supported platforms (Windows, iOS, Android or WebPush) receiving this notification. At least one of Payload.RawContent or Payload.VisualContent needs to be valid for a POST Notification request.
   - `[VisualContent <IMicrosoftGraphVisualProperties>]`: visualProperties
@@ -336,7 +348,7 @@ PAYLOAD `<IMicrosoftGraphPayloadTypes>`: payloadTypes
     - `[Body <String>]`: The body of a visual user notification. Body is optional.
     - `[Title <String>]`: The title of a visual user notification. This field is required for visual notification payloads.
 
-TARGETPOLICY `<IMicrosoftGraphTargetPolicyEndpoints>`: targetPolicyEndpoints
+`TARGETPOLICY <IMicrosoftGraphTargetPolicyEndpoints>`: targetPolicyEndpoints
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[PlatformTypes <String[]>]`: Use to filter the notification distribution to a specific platform or platforms. Valid values are Windows, iOS, Android and WebPush. By default, all push endpoint types (Windows, iOS, Android and WebPush) are enabled.
 

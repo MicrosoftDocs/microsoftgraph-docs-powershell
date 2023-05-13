@@ -1,9 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
+ms.prod: governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementcatalogaccesspackageincompatibleaccesspackage
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # Get-MgEntitlementManagementCatalogAccessPackageIncompatibleAccessPackage
@@ -226,7 +226,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackage1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackage
 ## NOTES
 
 ALIASES

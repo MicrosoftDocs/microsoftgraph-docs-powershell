@@ -1,16 +1,15 @@
----
-external help file: Microsoft.Graph.CrossDeviceExperiences-help.xml
-Module Name: Microsoft.Graph.CrossDeviceExperiences
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.crossdeviceexperiences/get-mguserdeviceregisteredowner
+﻿---
+external help file: Microsoft.Graph.Beta.CrossDeviceExperiences-help.xml
+Module Name: Microsoft.Graph.Beta.CrossDeviceExperiences
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/get-mgbetauserdeviceregisteredowner
 schema: 2.0.0
 ---
 
-# Get-MgUserDeviceRegisteredOwner
+# Get-MgBetaUserDeviceRegisteredOwner
 
 ## SYNOPSIS
 The user that cloud joined the device or registered their personal device.
 The registered owner is set at the time of registration.
-Currently, there can be only one owner.
 Read-only.
 Nullable.
 Supports $expand.
@@ -18,7 +17,7 @@ Supports $expand.
 ## SYNTAX
 
 ```
-Get-MgUserDeviceRegisteredOwner -DeviceId <String> -UserId <String> [-ExpandProperty <String[]>]
+Get-MgBetaUserDeviceRegisteredOwner -DeviceId <String> -UserId <String> [-ExpandProperty <String[]>]
  [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-ConsistencyLevel <String>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
@@ -26,12 +25,25 @@ Get-MgUserDeviceRegisteredOwner -DeviceId <String> -UserId <String> [-ExpandProp
 ## DESCRIPTION
 The user that cloud joined the device or registered their personal device.
 The registered owner is set at the time of registration.
-Currently, there can be only one owner.
 Read-only.
 Nullable.
 Supports $expand.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -239,7 +251,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryObject
 ## NOTES
 
 ALIASES

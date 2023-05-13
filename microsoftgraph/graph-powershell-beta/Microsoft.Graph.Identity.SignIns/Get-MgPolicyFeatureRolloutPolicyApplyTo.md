@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgpolicyfeaturerolloutpolicyapplyto
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyfeaturerolloutpolicyapplyto
 schema: 2.0.0
 ---
 
-# Get-MgPolicyFeatureRolloutPolicyApplyTo
+# Get-MgBetaPolicyFeatureRolloutPolicyApplyTo
 
 ## SYNOPSIS
 Nullable.
@@ -14,7 +14,7 @@ Specifies a list of directoryObjects that feature is enabled for.
 ## SYNTAX
 
 ```
-Get-MgPolicyFeatureRolloutPolicyApplyTo -FeatureRolloutPolicyId <String> [-ExpandProperty <String[]>]
+Get-MgBetaPolicyFeatureRolloutPolicyApplyTo -FeatureRolloutPolicyId <String> [-ExpandProperty <String[]>]
  [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
@@ -24,6 +24,20 @@ Nullable.
 Specifies a list of directoryObjects that feature is enabled for.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -200,7 +214,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryObject
 ## NOTES
 
 ALIASES

@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencepassivednsrecordartifact
+﻿---
+external help file: Microsoft.Graph.Beta.Security-help.xml
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencepassivednsrecordartifact
 schema: 2.0.0
 ---
 
-# Get-MgSecurityThreatIntelligencePassiveDnsRecordArtifact
+# Get-MgBetaSecurityThreatIntelligencePassiveDnsRecordArtifact
 
 ## SYNOPSIS
 The artifact related to this passiveDnsRecord entry.
@@ -14,13 +14,13 @@ The artifact related to this passiveDnsRecord entry.
 
 ### Get (Default)
 ```
-Get-MgSecurityThreatIntelligencePassiveDnsRecordArtifact -PassiveDnsRecordId <String>
+Get-MgBetaSecurityThreatIntelligencePassiveDnsRecordArtifact -PassiveDnsRecordId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgSecurityThreatIntelligencePassiveDnsRecordArtifact -InputObject <ISecurityIdentity>
+Get-MgBetaSecurityThreatIntelligencePassiveDnsRecordArtifact -InputObject <ISecurityIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
@@ -28,6 +28,16 @@ Get-MgSecurityThreatIntelligencePassiveDnsRecordArtifact -InputObject <ISecurity
 The artifact related to this passiveDnsRecord entry.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -48,7 +58,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ISecurityIdentity
@@ -97,7 +107,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
 ## OUTPUTS
 
 ### System.String
@@ -110,7 +120,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+`INPUTOBJECT <ISecurityIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
   - `[ArticleId <String>]`: The unique identifier of article
   - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator

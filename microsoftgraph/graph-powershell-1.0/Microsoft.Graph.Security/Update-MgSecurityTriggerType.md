@@ -1,7 +1,7 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecuritytriggertype
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritytriggertype
 schema: 2.0.0
 ---
 
@@ -12,23 +12,32 @@ Update the navigation property triggerTypes in security
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### UpdateExpanded (Default)
 ```
 Update-MgSecurityTriggerType [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-RetentionEventTypes <IMicrosoftGraphSecurityRetentionEventType[]>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-RetentionEventTypes <IMicrosoftGraphSecurityRetentionEventType[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Update1
+### Update
 ```
-Update-MgSecurityTriggerType -BodyParameter <IMicrosoftGraphSecurityTriggerTypesRoot> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgSecurityTriggerType -BodyParameter <IMicrosoftGraphSecurityTriggerTypesRoot> [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property triggerTypes in security
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -37,7 +46,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded1
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -49,11 +58,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 triggerTypesRoot
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSecurityTriggerTypesRoot
-Parameter Sets: Update1
+Parameter Sets: Update
 Aliases:
 
 Required: True
@@ -69,22 +78,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -96,11 +90,11 @@ Accept wildcard characters: False
 
 ### -RetentionEventTypes
 .
-To construct, please use Get-Help -Online and see NOTES section for RETENTIONEVENTTYPES properties and create a hash table.
+To construct, see NOTES section for RETENTIONEVENTTYPES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSecurityRetentionEventType[]
-Parameter Sets: UpdateExpanded1
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -149,7 +143,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityTriggerTypesRoot
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityTriggerTypesRoot
 ## NOTES
 
 ALIASES
@@ -159,7 +153,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSecurityTriggerTypesRoot>`: triggerTypesRoot
+`BODYPARAMETER <IMicrosoftGraphSecurityTriggerTypesRoot>`: triggerTypesRoot
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[RetentionEventTypes <IMicrosoftGraphSecurityRetentionEventType[]>]`: 
@@ -178,7 +172,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityTriggerTypesRoot>`: triggerTypesRoot
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedDateTime <DateTime?>]`: The latest date time when the retentionEventType was modified.
 
-RETENTIONEVENTTYPES <IMicrosoftGraphSecurityRetentionEventType\[]>: .
+`RETENTIONEVENTTYPES <IMicrosoftGraphSecurityRetentionEventType[]>`: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

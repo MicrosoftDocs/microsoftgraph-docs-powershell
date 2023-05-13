@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticresourceperformance
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticresourceperformance
 schema: 2.0.0
 ---
 
-# New-MgDeviceManagementUserExperienceAnalyticResourcePerformance
+# New-MgBetaDeviceManagementUserExperienceAnalyticResourcePerformance
 
 ## SYNOPSIS
 Create new navigation property to userExperienceAnalyticsResourcePerformance for deviceManagement
@@ -14,7 +14,7 @@ Create new navigation property to userExperienceAnalyticsResourcePerformance for
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementUserExperienceAnalyticResourcePerformance [-AdditionalProperties <Hashtable>]
+New-MgBetaDeviceManagementUserExperienceAnalyticResourcePerformance [-AdditionalProperties <Hashtable>]
  [-AverageSpikeTimeScore <Int32>] [-CpuSpikeTimePercentage <Double>]
  [-CpuSpikeTimePercentageThreshold <Double>] [-CpuSpikeTimeScore <Int32>] [-DeviceCount <Int64>]
  [-DeviceId <String>] [-DeviceName <String>] [-DeviceResourcePerformanceScore <Int32>] [-Id <String>]
@@ -25,7 +25,7 @@ New-MgDeviceManagementUserExperienceAnalyticResourcePerformance [-AdditionalProp
 
 ### Create
 ```
-New-MgDeviceManagementUserExperienceAnalyticResourcePerformance
+New-MgBetaDeviceManagementUserExperienceAnalyticResourcePerformance
  -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsResourcePerformance> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
@@ -34,6 +34,20 @@ New-MgDeviceManagementUserExperienceAnalyticResourcePerformance
 Create new navigation property to userExperienceAnalyticsResourcePerformance for deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -70,7 +84,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 The user experience analytics resource performance entity.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserExperienceAnalyticsResourcePerformance
@@ -194,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -323,10 +337,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsResourcePerformance
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsResourcePerformance
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsResourcePerformance
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsResourcePerformance
 ## NOTES
 
 ALIASES
@@ -336,9 +350,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsResourcePerformance>`: The user experience analytics resource performance entity.
+`BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsResourcePerformance>`: The user experience analytics resource performance entity.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AverageSpikeTimeScore <Int32?>]`: AverageSpikeTimeScore of a device or a model type. Valid values 0 to 100
   - `[CpuSpikeTimePercentage <Double?>]`: CPU spike time in percentage. Valid values 0 to 100
   - `[CpuSpikeTimePercentageThreshold <Double?>]`: Threshold of cpuSpikeTimeScore. Valid values 0 to 100

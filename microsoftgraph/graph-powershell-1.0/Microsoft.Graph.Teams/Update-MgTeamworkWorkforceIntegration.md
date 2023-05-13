@@ -1,14 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/update-mgteamworkworkforceintegration
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamworkworkforceintegration
 schema: 2.0.0
 ---
 
 # Update-MgTeamworkWorkforceIntegration
 
 ## SYNOPSIS
-Update the navigation property workforceIntegrations in teamwork
+Update the properties of a workforceIntegration object.
 
 ## SYNTAX
 
@@ -17,13 +17,13 @@ Update the navigation property workforceIntegrations in teamwork
 Update-MgTeamworkWorkforceIntegration -WorkforceIntegrationId <String> [-AdditionalProperties <Hashtable>]
  [-ApiVersion <Int32>] [-DisplayName <String>] [-Encryption <IMicrosoftGraphWorkforceIntegrationEncryption>]
  [-Id <String>] [-IsActive] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-SupportedEntities <String>]
- [-Url <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Url <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgTeamworkWorkforceIntegration -WorkforceIntegrationId <String>
- -BodyParameter <IMicrosoftGraphWorkforceIntegration> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphWorkforceIntegration> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -31,21 +31,21 @@ Update-MgTeamworkWorkforceIntegration -WorkforceIntegrationId <String>
 Update-MgTeamworkWorkforceIntegration -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
  [-ApiVersion <Int32>] [-DisplayName <String>] [-Encryption <IMicrosoftGraphWorkforceIntegrationEncryption>]
  [-Id <String>] [-IsActive] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-SupportedEntities <String>]
- [-Url <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Url <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgTeamworkWorkforceIntegration -InputObject <ITeamsIdentity>
- -BodyParameter <IMicrosoftGraphWorkforceIntegration> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphWorkforceIntegration> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property workforceIntegrations in teamwork
+Update the properties of a workforceIntegration object.
 
 ## EXAMPLES
 
-### Example 1: Using the Update-MgTeamworkWorkforceIntegration Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
 $params = @{
@@ -61,9 +61,6 @@ $params = @{
 }
 Update-MgTeamworkWorkforceIntegration -WorkforceIntegrationId $workforceIntegrationId -BodyParameter $params
 ```
-
-This example shows how to use the Update-MgTeamworkWorkforceIntegration Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -100,7 +97,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 workforceIntegration
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphWorkforceIntegration
@@ -131,7 +128,7 @@ Accept wildcard characters: False
 
 ### -Encryption
 workforceIntegrationEncryption
-To construct, please use Get-Help -Online and see NOTES section for ENCRYPTION properties and create a hash table.
+To construct, see NOTES section for ENCRYPTION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphWorkforceIntegrationEncryption
@@ -163,7 +160,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ITeamsIdentity
@@ -194,7 +191,7 @@ Accept wildcard characters: False
 
 ### -LastModifiedBy
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBY properties and create a hash table.
+To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet
@@ -208,23 +205,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -SupportedEntities
-.
+workforceIntegrationSupportedEntities
 
 ```yaml
 Type: String
@@ -308,7 +290,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWorkforceIntegration
 ## NOTES
 
 ALIASES
@@ -318,7 +300,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphWorkforceIntegration>`: workforceIntegration
+`BODYPARAMETER <IMicrosoftGraphWorkforceIntegration>`: workforceIntegration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -336,15 +318,15 @@ BODYPARAMETER `<IMicrosoftGraphWorkforceIntegration>`: workforceIntegration
     - `[Protocol <String>]`: workforceIntegrationEncryptionProtocol
     - `[Secret <String>]`: Encryption shared secret.
   - `[IsActive <Boolean?>]`: Indicates whether this workforce integration is currently active and available.
-  - `[SupportedEntities <String>]`: 
+  - `[SupportedEntities <String>]`: workforceIntegrationSupportedEntities
   - `[Url <String>]`: Workforce Integration URL for callbacks from the Shifts service.
 
-ENCRYPTION `<IMicrosoftGraphWorkforceIntegrationEncryption>`: workforceIntegrationEncryption
+`ENCRYPTION <IMicrosoftGraphWorkforceIntegrationEncryption>`: workforceIntegrationEncryption
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Protocol <String>]`: workforceIntegrationEncryptionProtocol
   - `[Secret <String>]`: Encryption shared secret.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat
@@ -358,24 +340,18 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[OpenShiftChangeRequestId <String>]`: The unique identifier of openShiftChangeRequest
   - `[OpenShiftId <String>]`: The unique identifier of openShift
   - `[PinnedChatMessageInfoId <String>]`: The unique identifier of pinnedChatMessageInfo
-  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SchedulingGroupId <String>]`: The unique identifier of schedulingGroup
   - `[SharedWithChannelTeamInfoId <String>]`: The unique identifier of sharedWithChannelTeamInfo
   - `[ShiftId <String>]`: The unique identifier of shift
   - `[SwapShiftsChangeRequestId <String>]`: The unique identifier of swapShiftsChangeRequest
   - `[TeamId <String>]`: The unique identifier of team
-  - `[TeamTemplateDefinitionId <String>]`: The unique identifier of teamTemplateDefinition
-  - `[TeamTemplateId <String>]`: The unique identifier of teamTemplate
   - `[TeamsAppDefinitionId <String>]`: The unique identifier of teamsAppDefinition
   - `[TeamsAppId <String>]`: The unique identifier of teamsApp
   - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
   - `[TeamsAsyncOperationId <String>]`: The unique identifier of teamsAsyncOperation
   - `[TeamsTabId <String>]`: The unique identifier of teamsTab
-  - `[TeamworkDeviceId <String>]`: The unique identifier of teamworkDevice
-  - `[TeamworkDeviceOperationId <String>]`: The unique identifier of teamworkDeviceOperation
   - `[TeamworkTagId <String>]`: The unique identifier of teamworkTag
   - `[TeamworkTagMemberId <String>]`: The unique identifier of teamworkTagMember
-  - `[TimeCardId <String>]`: The unique identifier of timeCard
   - `[TimeOffId <String>]`: The unique identifier of timeOff
   - `[TimeOffReasonId <String>]`: The unique identifier of timeOffReason
   - `[TimeOffRequestId <String>]`: The unique identifier of timeOffRequest
@@ -383,7 +359,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+`LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

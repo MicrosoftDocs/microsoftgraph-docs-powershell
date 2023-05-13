@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.WindowsUpdates-help.xml
-Module Name: Microsoft.Graph.WindowsUpdates
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/invoke-mggraphwindowsupdatesupdatableasset
+﻿---
+external help file: Microsoft.Graph.Beta.WindowsUpdates-help.xml
+Module Name: Microsoft.Graph.Beta.WindowsUpdates
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/invoke-mgbetagraphwindowsupdatesupdatableasset
 schema: 2.0.0
 ---
 
-# Invoke-MgGraphWindowsUpdatesUpdatableAsset
+# Invoke-MgBetaGraphWindowsUpdatesUpdatableAsset
 
 ## SYNOPSIS
 Invoke action unenrollAssetsById
@@ -14,14 +14,14 @@ Invoke action unenrollAssetsById
 
 ### GraphExpanded (Default)
 ```
-Invoke-MgGraphWindowsUpdatesUpdatableAsset [-AdditionalProperties <Hashtable>] [-Ids <String[]>]
+Invoke-MgBetaGraphWindowsUpdatesUpdatableAsset [-AdditionalProperties <Hashtable>] [-Ids <String[]>]
  [-MemberEntityType <String>] [-UpdateCategory <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Graph
 ```
-Invoke-MgGraphWindowsUpdatesUpdatableAsset
- -BodyParameter <IPaths4Wme8AdminWindowsUpdatesUpdatableassetsMicrosoftGraphWindowsupdatesUnenrollassetsbyidPostRequestbodyContentApplicationJsonSchema>
+Invoke-MgBetaGraphWindowsUpdatesUpdatableAsset
+ -Body <IPaths4Wme8AdminWindowsUpdatesUpdatableassetsMicrosoftGraphWindowsupdatesUnenrollassetsbyidPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -31,8 +31,8 @@ Invoke action unenrollAssetsById
 ## EXAMPLES
 
 ### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.WindowsUpdates
+```powershell
+Import-Module Microsoft.Graph.Beta.WindowsUpdates
 $params = @{
 	UpdateCategory = "feature"
 	MemberEntityType = "#microsoft.graph.windowsUpdates.azureADDevice"
@@ -42,7 +42,7 @@ $params = @{
 		"String"
 	)
 }
-Invoke-MgGraphWindowsUpdatesUpdatableAsset -BodyParameter $params
+Invoke-MgBetaGraphWindowsUpdatesUpdatableAsset -BodyParameter $params
 ```
 
 ## PARAMETERS
@@ -62,9 +62,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -BodyParameter
+### -Body
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
 Type: IPaths4Wme8AdminWindowsUpdatesUpdatableassetsMicrosoftGraphWindowsupdatesUnenrollassetsbyidPostRequestbodyContentApplicationJsonSchema
@@ -118,7 +118,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -174,14 +174,25 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths4Wme8AdminWindowsUpdatesUpdatableassetsMicrosoftGraphWindowsupdatesUnenrollassetsbyidPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths4Wme8AdminWindowsUpdatesUpdatableassetsMicrosoftGraphWindowsupdatesUnenrollassetsbyidPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### System.Boolean
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+Invoke-MgBetaGraphWuUpdatableAsset
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+`BODY <IPaths4Wme8AdminWindowsUpdatesUpdatableassetsMicrosoftGraphWindowsupdatesUnenrollassetsbyidPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Ids <String[]>]`: 
+  - `[MemberEntityType <String>]`: 
+  - `[UpdateCategory <String>]`: updateCategory
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/invoke-mggraphwindowsupdatesupdatableasset](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/invoke-mggraphwindowsupdatesupdatableasset)
-

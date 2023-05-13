@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Sites-help.xml
-Module Name: Microsoft.Graph.Sites
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/test-mgsiteinformationprotectiondatalosspreventionpolicy
+﻿---
+external help file: Microsoft.Graph.Beta.Sites-help.xml
+Module Name: Microsoft.Graph.Beta.Sites
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/test-mgbetasiteinformationprotectiondatalosspreventionpolicy
 schema: 2.0.0
 ---
 
-# Test-MgSiteInformationProtectionDataLossPreventionPolicy
+# Test-MgBetaSiteInformationProtectionDataLossPreventionPolicy
 
 ## SYNOPSIS
 Invoke action evaluate
@@ -14,21 +14,22 @@ Invoke action evaluate
 
 ### EvaluateExpanded (Default)
 ```
-Test-MgSiteInformationProtectionDataLossPreventionPolicy -SiteId <String> [-AdditionalProperties <Hashtable>]
- [-EvaluationInput <IMicrosoftGraphDlpEvaluationInput>] [-NotificationInfo <IMicrosoftGraphDlpNotification>]
- [-Target <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Test-MgBetaSiteInformationProtectionDataLossPreventionPolicy -SiteId <String>
+ [-AdditionalProperties <Hashtable>] [-EvaluationInput <IMicrosoftGraphDlpEvaluationInput>]
+ [-NotificationInfo <IMicrosoftGraphDlpNotification>] [-Target <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Evaluate
 ```
-Test-MgSiteInformationProtectionDataLossPreventionPolicy -SiteId <String>
+Test-MgBetaSiteInformationProtectionDataLossPreventionPolicy -SiteId <String>
  -BodyParameter <IPathsJb4Y6TSitesSiteIdInformationprotectionDatalosspreventionpoliciesMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### EvaluateViaIdentityExpanded
 ```
-Test-MgSiteInformationProtectionDataLossPreventionPolicy -InputObject <ISitesIdentity>
+Test-MgBetaSiteInformationProtectionDataLossPreventionPolicy -InputObject <ISitesIdentity>
  [-AdditionalProperties <Hashtable>] [-EvaluationInput <IMicrosoftGraphDlpEvaluationInput>]
  [-NotificationInfo <IMicrosoftGraphDlpNotification>] [-Target <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -36,7 +37,7 @@ Test-MgSiteInformationProtectionDataLossPreventionPolicy -InputObject <ISitesIde
 
 ### EvaluateViaIdentity
 ```
-Test-MgSiteInformationProtectionDataLossPreventionPolicy -InputObject <ISitesIdentity>
+Test-MgBetaSiteInformationProtectionDataLossPreventionPolicy -InputObject <ISitesIdentity>
  -BodyParameter <IPathsJb4Y6TSitesSiteIdInformationprotectionDatalosspreventionpoliciesMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -45,6 +46,16 @@ Test-MgSiteInformationProtectionDataLossPreventionPolicy -InputObject <ISitesIde
 Invoke action evaluate
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -65,7 +76,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPathsJb4Y6TSitesSiteIdInformationprotectionDatalosspreventionpoliciesMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema
@@ -81,7 +92,7 @@ Accept wildcard characters: False
 
 ### -EvaluationInput
 dlpEvaluationInput
-To construct, please use Get-Help -Online and see NOTES section for EVALUATIONINPUT properties and create a hash table.
+To construct, see NOTES section for EVALUATIONINPUT properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDlpEvaluationInput
@@ -97,7 +108,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ISitesIdentity
@@ -113,7 +124,7 @@ Accept wildcard characters: False
 
 ### -NotificationInfo
 dlpNotification
-To construct, please use Get-Help -Online and see NOTES section for NOTIFICATIONINFO properties and create a hash table.
+To construct, see NOTES section for NOTIFICATIONINFO properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDlpNotification
@@ -193,11 +204,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsJb4Y6TSitesSiteIdInformationprotectionDatalosspreventionpoliciesMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.ISitesIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsJb4Y6TSitesSiteIdInformationprotectionDatalosspreventionpoliciesMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDlpEvaluatePoliciesJobResponse
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDlpEvaluatePoliciesJobResponse
 ## NOTES
 
 ALIASES
@@ -207,7 +218,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsJb4Y6TSitesSiteIdInformationprotectionDatalosspreventionpoliciesMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsJb4Y6TSitesSiteIdInformationprotectionDatalosspreventionpoliciesMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[EvaluationInput <IMicrosoftGraphDlpEvaluationInput>]`: dlpEvaluationInput
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -227,7 +238,7 @@ BODYPARAMETER `<IPathsJb4Y6TSitesSiteIdInformationprotectionDatalosspreventionpo
     - `[Author <String>]`: 
   - `[Target <String>]`: 
 
-EVALUATIONINPUT `<IMicrosoftGraphDlpEvaluationInput>`: dlpEvaluationInput
+`EVALUATIONINPUT <IMicrosoftGraphDlpEvaluationInput>`: dlpEvaluationInput
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CurrentLabel <IMicrosoftGraphCurrentLabel>]`: currentLabel
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -241,7 +252,7 @@ EVALUATIONINPUT `<IMicrosoftGraphDlpEvaluationInput>`: dlpEvaluationInput
     - `[Count <Int32?>]`: 
     - `[Id <String>]`: 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+`INPUTOBJECT <ISitesIdentity>`: Identity Parameter
   - `[BaseItemId <String>]`: The unique identifier of baseItem
   - `[BitlockerRecoveryKeyId <String>]`: The unique identifier of bitlockerRecoveryKey
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
@@ -259,17 +270,23 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
   - `[Interval <String>]`: Usage: interval='{interval}'
+  - `[ItemActivityId <String>]`: The unique identifier of itemActivity
+  - `[ItemActivityOldId <String>]`: The unique identifier of itemActivityOLD
+  - `[ItemActivityStatId <String>]`: The unique identifier of itemActivityStat
   - `[ListId <String>]`: The unique identifier of list
-  - `[ListId1 <String>]`: Usage: listId='{listId}'
   - `[ListItemId <String>]`: The unique identifier of listItem
   - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
   - `[NotebookId <String>]`: The unique identifier of notebook
+  - `[OnenoteOperationId <String>]`: The unique identifier of onenoteOperation
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
+  - `[OnenoteResourceId <String>]`: The unique identifier of onenoteResource
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
   - `[Path <String>]`: Usage: path='{path}'
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[RelationId <String>]`: The unique identifier of relation
   - `[RichLongRunningOperationId <String>]`: The unique identifier of richLongRunningOperation
+  - `[SectionGroupId <String>]`: The unique identifier of sectionGroup
+  - `[SectionGroupId1 <String>]`: The unique identifier of sectionGroup
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SensitivityLabelId1 <String>]`: The unique identifier of sensitivityLabel
   - `[SetId <String>]`: The unique identifier of set
@@ -278,7 +295,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SiteId1 <String>]`: The unique identifier of site
   - `[SitePageId <String>]`: The unique identifier of sitePage
   - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
-  - `[StoreId <String>]`: The unique identifier of store
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
@@ -288,7 +304,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
-NOTIFICATIONINFO `<IMicrosoftGraphDlpNotification>`: dlpNotification
+`NOTIFICATIONINFO <IMicrosoftGraphDlpNotification>`: dlpNotification
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Author <String>]`: 
 

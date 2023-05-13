@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/remove-mgpolicyb2cauthenticationmethodpolicy
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyb2cauthenticationmethodpolicy
 schema: 2.0.0
 ---
 
-# Remove-MgPolicyB2CAuthenticationMethodPolicy
+# Remove-MgBetaPolicyB2CAuthenticationMethodPolicy
 
 ## SYNOPSIS
 Delete navigation property b2cAuthenticationMethodsPolicy for policies
@@ -13,7 +13,7 @@ Delete navigation property b2cAuthenticationMethodsPolicy for policies
 ## SYNTAX
 
 ```
-Remove-MgPolicyB2CAuthenticationMethodPolicy [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+Remove-MgBetaPolicyB2CAuthenticationMethodPolicy [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -21,6 +21,20 @@ Remove-MgPolicyB2CAuthenticationMethodPolicy [-IfMatch <String>] [-PassThru] [-W
 Delete navigation property b2cAuthenticationMethodsPolicy for policies
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 

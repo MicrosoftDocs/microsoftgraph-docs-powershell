@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementsettingdefinition
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementsettingdefinition
 schema: 2.0.0
 ---
 
-# New-MgDeviceManagementSettingDefinition
+# New-MgBetaDeviceManagementSettingDefinition
 
 ## SYNOPSIS
 Create new navigation property to settingDefinitions for deviceManagement
@@ -14,7 +14,7 @@ Create new navigation property to settingDefinitions for deviceManagement
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementSettingDefinition [-AdditionalProperties <Hashtable>]
+New-MgBetaDeviceManagementSettingDefinition [-AdditionalProperties <Hashtable>]
  [-Constraints <IMicrosoftGraphDeviceManagementConstraint[]>]
  [-Dependencies <IMicrosoftGraphDeviceManagementSettingDependency[]>] [-Description <String>]
  [-DisplayName <String>] [-DocumentationUrl <String>] [-HeaderSubtitle <String>] [-HeaderTitle <String>]
@@ -24,7 +24,7 @@ New-MgDeviceManagementSettingDefinition [-AdditionalProperties <Hashtable>]
 
 ### Create
 ```
-New-MgDeviceManagementSettingDefinition -BodyParameter <IMicrosoftGraphDeviceManagementSettingDefinition>
+New-MgBetaDeviceManagementSettingDefinition -BodyParameter <IMicrosoftGraphDeviceManagementSettingDefinition>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -32,6 +32,20 @@ New-MgDeviceManagementSettingDefinition -BodyParameter <IMicrosoftGraphDeviceMan
 Create new navigation property to settingDefinitions for deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -52,7 +66,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Entity representing the defintion for a given setting
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementSettingDefinition
@@ -83,7 +97,7 @@ Accept wildcard characters: False
 
 ### -Dependencies
 Collection of dependencies on other settings
-To construct, please use Get-Help -Online and see NOTES section for DEPENDENCIES properties and create a hash table.
+To construct, see NOTES section for DEPENDENCIES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementSettingDependency[]
@@ -173,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -284,10 +298,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementSettingDefinition
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementSettingDefinition
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementSettingDefinition
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementSettingDefinition
 ## NOTES
 
 ALIASES
@@ -297,9 +311,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDeviceManagementSettingDefinition>`: Entity representing the defintion for a given setting
+`BODYPARAMETER <IMicrosoftGraphDeviceManagementSettingDefinition>`: Entity representing the defintion for a given setting
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Constraints <IMicrosoftGraphDeviceManagementConstraint[]>]`: Collection of constraints for the setting value
   - `[Dependencies <IMicrosoftGraphDeviceManagementSettingDependency[]>]`: Collection of dependencies on other settings
     - `[Constraints <IMicrosoftGraphDeviceManagementConstraint[]>]`: Collection of constraints for the dependency setting value
@@ -314,7 +328,7 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagementSettingDefinition>`: Entity repre
   - `[PlaceholderText <String>]`: Placeholder text as an example of valid input
   - `[ValueType <DeviceManangementIntentValueType?>]`: deviceManangementIntentValueType
 
-DEPENDENCIES <IMicrosoftGraphDeviceManagementSettingDependency\[]>: Collection of dependencies on other settings
+`DEPENDENCIES <IMicrosoftGraphDeviceManagementSettingDependency[]>`: Collection of dependencies on other settings
   - `[Constraints <IMicrosoftGraphDeviceManagementConstraint[]>]`: Collection of constraints for the dependency setting value
   - `[DefinitionId <String>]`: The setting definition ID of the setting depended on
 

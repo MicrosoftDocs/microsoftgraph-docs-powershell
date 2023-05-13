@@ -1,12 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.Governance-help.xml
-Module Name: Microsoft.Graph.Identity.Governance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementaccesspackageincompatiblegroupbyref
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.Governance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageincompatiblegroupbyref
 schema: 2.0.0
-ms.prod: governance
 ---
 
-# Get-MgEntitlementManagementAccessPackageIncompatibleGroupByRef
+# Get-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef
 
 ## SYNOPSIS
 Retrieve a list of the group objects that have been marked as incompatible on an accessPackage.
@@ -14,7 +13,7 @@ Retrieve a list of the group objects that have been marked as incompatible on an
 ## SYNTAX
 
 ```
-Get-MgEntitlementManagementAccessPackageIncompatibleGroupByRef -AccessPackageId <String> [-Filter <String>]
+Get-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef -AccessPackageId <String> [-Filter <String>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
  [-CountVariable <String>] [<CommonParameters>]
 ```
@@ -24,16 +23,12 @@ Retrieve a list of the group objects that have been marked as incompatible on an
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Identity.Governance
-
-Get-MgEntitlementManagementAccessPackageIncompatibleGroup -AccessPackageId $accessPackageId
+Import-Module Microsoft.Graph.Beta.Identity.Governance
 ```
 
-This example shows how to use the Get-MgEntitlementManagementAccessPackageIncompatibleGroupByRef Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Get-MgBetaEntitlementManagementAccessPackageIncompatibleGroup -AccessPackageId $accessPackageId
 
 ## PARAMETERS
 

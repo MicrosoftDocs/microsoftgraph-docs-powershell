@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Administration
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementdeviceconfigurationrestrictedappviolation
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementdeviceconfigurationrestrictedappviolation
 schema: 2.0.0
 ---
 
-# New-MgDeviceManagementDeviceConfigurationRestrictedAppViolation
+# New-MgBetaDeviceManagementDeviceConfigurationRestrictedAppViolation
 
 ## SYNOPSIS
 Create new navigation property to deviceConfigurationRestrictedAppsViolations for deviceManagement
@@ -14,7 +14,7 @@ Create new navigation property to deviceConfigurationRestrictedAppsViolations fo
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementDeviceConfigurationRestrictedAppViolation [-AdditionalProperties <Hashtable>]
+New-MgBetaDeviceManagementDeviceConfigurationRestrictedAppViolation [-AdditionalProperties <Hashtable>]
  [-DeviceConfigurationId <String>] [-DeviceConfigurationName <String>] [-DeviceName <String>] [-Id <String>]
  [-ManagedDeviceId <String>] [-PlatformType <PolicyPlatformType>]
  [-RestrictedApps <IMicrosoftGraphManagedDeviceReportedApp[]>] [-RestrictedAppsState <RestrictedAppsState>]
@@ -23,7 +23,7 @@ New-MgDeviceManagementDeviceConfigurationRestrictedAppViolation [-AdditionalProp
 
 ### Create
 ```
-New-MgDeviceManagementDeviceConfigurationRestrictedAppViolation
+New-MgBetaDeviceManagementDeviceConfigurationRestrictedAppViolation
  -BodyParameter <IMicrosoftGraphRestrictedAppsViolation> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -31,6 +31,20 @@ New-MgDeviceManagementDeviceConfigurationRestrictedAppViolation
 Create new navigation property to deviceConfigurationRestrictedAppsViolations for deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -51,7 +65,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Violation of restricted apps configuration profile per device per user
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRestrictedAppsViolation
@@ -111,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -158,7 +172,7 @@ Accept wildcard characters: False
 
 ### -RestrictedApps
 List of violated restricted apps
-To construct, please use Get-Help -Online and see NOTES section for RESTRICTEDAPPS properties and create a hash table.
+To construct, see NOTES section for RESTRICTEDAPPS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphManagedDeviceReportedApp[]
@@ -253,10 +267,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRestrictedAppsViolation
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRestrictedAppsViolation
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRestrictedAppsViolation
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRestrictedAppsViolation
 ## NOTES
 
 ALIASES
@@ -266,9 +280,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphRestrictedAppsViolation>`: Violation of restricted apps configuration profile per device per user
+`BODYPARAMETER <IMicrosoftGraphRestrictedAppsViolation>`: Violation of restricted apps configuration profile per device per user
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DeviceConfigurationId <String>]`: Device configuration profile unique identifier, must be Guid
   - `[DeviceConfigurationName <String>]`: Device configuration profile name
   - `[DeviceName <String>]`: Device name
@@ -280,7 +294,7 @@ BODYPARAMETER `<IMicrosoftGraphRestrictedAppsViolation>`: Violation of restricte
   - `[UserId <String>]`: User unique identifier, must be Guid
   - `[UserName <String>]`: User name
 
-RESTRICTEDAPPS <IMicrosoftGraphManagedDeviceReportedApp\[]>: List of violated restricted apps
+`RESTRICTEDAPPS <IMicrosoftGraphManagedDeviceReportedApp[]>`: List of violated restricted apps
   - `[AppId <String>]`: The application or bundle identifier of the application
 
 ## RELATED LINKS

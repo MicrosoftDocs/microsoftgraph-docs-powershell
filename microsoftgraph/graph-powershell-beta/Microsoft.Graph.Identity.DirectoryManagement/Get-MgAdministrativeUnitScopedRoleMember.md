@@ -1,58 +1,52 @@
----
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/get-mgadministrativeunitscopedrolemember
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadministrativeunitscopedrolemember
 schema: 2.0.0
 ---
 
-# Get-MgAdministrativeUnitScopedRoleMember
+# Get-MgBetaAdministrativeUnitScopedRoleMember
 
 ## SYNOPSIS
-Scoped-role members of this administrative unit.
+Get an Azure Active Directory (Azure AD) role assignment with administrative unit scope.
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgAdministrativeUnitScopedRoleMember -AdministrativeUnitId <String> [-ExpandProperty <String[]>]
+Get-MgBetaAdministrativeUnitScopedRoleMember -AdministrativeUnitId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgAdministrativeUnitScopedRoleMember -AdministrativeUnitId <String> -ScopedRoleMembershipId <String>
+Get-MgBetaAdministrativeUnitScopedRoleMember -AdministrativeUnitId <String> -ScopedRoleMembershipId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgAdministrativeUnitScopedRoleMember -InputObject <IIdentityDirectoryManagementIdentity>
+Get-MgBetaAdministrativeUnitScopedRoleMember -InputObject <IIdentityDirectoryManagementIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Scoped-role members of this administrative unit.
+Get an Azure Active Directory (Azure AD) role assignment with administrative unit scope.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgAdministrativeUnitScopedRoleMember Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
-Get-MgAdministrativeUnitScopedRoleMember -AdministrativeUnitId $administrativeUnitId -ScopedRoleMembershipId $scopedRoleMembershipId
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+Get-MgBetaAdministrativeUnitScopedRoleMember -AdministrativeUnitId $administrativeUnitId -ScopedRoleMembershipId $scopedRoleMembershipId
 ```
 
-This example shows how to use the Get-MgAdministrativeUnitScopedRoleMember Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Get-MgAdministrativeUnitScopedRoleMember Cmdlet
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
-Get-MgAdministrativeUnitScopedRoleMember -AdministrativeUnitId $administrativeUnitId
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+Get-MgBetaAdministrativeUnitScopedRoleMember -AdministrativeUnitId $administrativeUnitId
 ```
-
-This example shows how to use the Get-MgAdministrativeUnitScopedRoleMember Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -134,7 +128,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IIdentityDirectoryManagementIdentity
@@ -258,10 +252,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphScopedRoleMembership
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphScopedRoleMembership
 ## NOTES
 
 ALIASES
@@ -271,7 +265,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet

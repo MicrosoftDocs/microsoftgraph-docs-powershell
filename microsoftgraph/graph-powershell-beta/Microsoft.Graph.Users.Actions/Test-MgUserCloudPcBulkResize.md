@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Users.Actions-help.xml
-Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/test-mgusercloudpcbulkresize
+﻿---
+external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.Users.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetausercloudpcbulkresize
 schema: 2.0.0
 ---
 
-# Test-MgUserCloudPcBulkResize
+# Test-MgBetaUserCloudPcBulkResize
 
 ## SYNOPSIS
 Invoke action validateBulkResize
@@ -14,26 +14,26 @@ Invoke action validateBulkResize
 
 ### ValidateExpanded (Default)
 ```
-Test-MgUserCloudPcBulkResize -UserId <String> [-AdditionalProperties <Hashtable>] [-CloudPcIds <String[]>]
+Test-MgBetaUserCloudPcBulkResize -UserId <String> [-AdditionalProperties <Hashtable>] [-CloudPcIds <String[]>]
  [-TargetServicePlanId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Validate
 ```
-Test-MgUserCloudPcBulkResize -UserId <String>
+Test-MgBetaUserCloudPcBulkResize -UserId <String>
  -BodyParameter <IPaths1Wu1ZkkUsersUserIdCloudpcsMicrosoftGraphValidatebulkresizePostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ValidateViaIdentityExpanded
 ```
-Test-MgUserCloudPcBulkResize -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
+Test-MgBetaUserCloudPcBulkResize -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
  [-CloudPcIds <String[]>] [-TargetServicePlanId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ValidateViaIdentity
 ```
-Test-MgUserCloudPcBulkResize -InputObject <IUsersActionsIdentity>
+Test-MgBetaUserCloudPcBulkResize -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths1Wu1ZkkUsersUserIdCloudpcsMicrosoftGraphValidatebulkresizePostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -42,6 +42,16 @@ Test-MgUserCloudPcBulkResize -InputObject <IUsersActionsIdentity>
 Invoke action validateBulkResize
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -62,7 +72,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths1Wu1ZkkUsersUserIdCloudpcsMicrosoftGraphValidatebulkresizePostRequestbodyContentApplicationJsonSchema
@@ -93,7 +103,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersActionsIdentity
@@ -173,11 +183,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1Wu1ZkkUsersUserIdCloudpcsMicrosoftGraphValidatebulkresizePostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Wu1ZkkUsersUserIdCloudpcsMicrosoftGraphValidatebulkresizePostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCloudPcResizeValidationResult
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcResizeValidationResult
 ## NOTES
 
 ALIASES
@@ -187,12 +197,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Wu1ZkkUsersUserIdCloudpcsMicrosoftGraphValidatebulkresizePostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1Wu1ZkkUsersUserIdCloudpcsMicrosoftGraphValidatebulkresizePostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CloudPcIds <String[]>]`: 
   - `[TargetServicePlanId <String>]`: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
@@ -226,7 +236,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription

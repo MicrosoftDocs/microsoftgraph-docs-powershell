@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
-Module Name: Microsoft.Graph.Devices.CorporateManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgusermanageddevicesecuritybaselinestatesettingstate
+﻿---
+external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
+Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetausermanageddevicesecuritybaselinestatesettingstate
 schema: 2.0.0
 ---
 
-# Update-MgUserManagedDeviceSecurityBaselineStateSettingState
+# Update-MgBetaUserManagedDeviceSecurityBaselineStateSettingState
 
 ## SYNOPSIS
 Update the navigation property settingStates in users
@@ -14,44 +14,57 @@ Update the navigation property settingStates in users
 
 ### UpdateExpanded (Default)
 ```
-Update-MgUserManagedDeviceSecurityBaselineStateSettingState -ManagedDeviceId <String>
+Update-MgBetaUserManagedDeviceSecurityBaselineStateSettingState -ManagedDeviceId <String>
  -SecurityBaselineSettingStateId <String> -SecurityBaselineStateId <String> -UserId <String>
  [-AdditionalProperties <Hashtable>]
  [-ContributingPolicies <IMicrosoftGraphSecurityBaselineContributingPolicy[]>] [-ErrorCode <String>]
  [-Id <String>] [-SettingCategoryId <String>] [-SettingCategoryName <String>] [-SettingId <String>]
  [-SettingName <String>] [-SourcePolicies <IMicrosoftGraphSettingSource[]>]
- [-State <SecurityBaselineComplianceState>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-State <SecurityBaselineComplianceState>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgUserManagedDeviceSecurityBaselineStateSettingState -ManagedDeviceId <String>
+Update-MgBetaUserManagedDeviceSecurityBaselineStateSettingState -ManagedDeviceId <String>
  -SecurityBaselineSettingStateId <String> -SecurityBaselineStateId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphSecurityBaselineSettingState> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityBaselineSettingState> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgUserManagedDeviceSecurityBaselineStateSettingState -InputObject <IDevicesCorporateManagementIdentity>
- [-AdditionalProperties <Hashtable>]
+Update-MgBetaUserManagedDeviceSecurityBaselineStateSettingState
+ -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>]
  [-ContributingPolicies <IMicrosoftGraphSecurityBaselineContributingPolicy[]>] [-ErrorCode <String>]
  [-Id <String>] [-SettingCategoryId <String>] [-SettingCategoryName <String>] [-SettingId <String>]
  [-SettingName <String>] [-SourcePolicies <IMicrosoftGraphSettingSource[]>]
- [-State <SecurityBaselineComplianceState>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-State <SecurityBaselineComplianceState>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgUserManagedDeviceSecurityBaselineStateSettingState -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphSecurityBaselineSettingState> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaUserManagedDeviceSecurityBaselineStateSettingState
+ -InputObject <IDevicesCorporateManagementIdentity>
+ -BodyParameter <IMicrosoftGraphSecurityBaselineSettingState> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property settingStates in users
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -72,7 +85,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 The security baseline compliance state of a setting for a device
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSecurityBaselineSettingState
@@ -88,7 +101,7 @@ Accept wildcard characters: False
 
 ### -ContributingPolicies
 The policies that contribute to this setting instance
-To construct, please use Get-Help -Online and see NOTES section for CONTRIBUTINGPOLICIES properties and create a hash table.
+To construct, see NOTES section for CONTRIBUTINGPOLICIES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSecurityBaselineContributingPolicy[]
@@ -118,7 +131,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -135,7 +148,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDevicesCorporateManagementIdentity
@@ -158,21 +171,6 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -271,7 +269,7 @@ Accept wildcard characters: False
 
 ### -SourcePolicies
 The policies that contribute to this setting instance
-To construct, please use Get-Help -Online and see NOTES section for SOURCEPOLICIES properties and create a hash table.
+To construct, see NOTES section for SOURCEPOLICIES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSettingSource[]
@@ -351,11 +349,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityBaselineSettingState
+### Microsoft.Graph.Beta.PowerShell.Models.IDevicesCorporateManagementIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityBaselineSettingState
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityBaselineSettingState
 ## NOTES
 
 ALIASES
@@ -365,9 +363,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSecurityBaselineSettingState>`: The security baseline compliance state of a setting for a device
+`BODYPARAMETER <IMicrosoftGraphSecurityBaselineSettingState>`: The security baseline compliance state of a setting for a device
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ContributingPolicies <IMicrosoftGraphSecurityBaselineContributingPolicy[]>]`: The policies that contribute to this setting instance
     - `[DisplayName <String>]`: Name of the policy
     - `[SourceId <String>]`: Unique identifier of the policy
@@ -383,12 +381,12 @@ BODYPARAMETER `<IMicrosoftGraphSecurityBaselineSettingState>`: The security base
     - `[SourceType <String>]`: settingSourceType
   - `[State <SecurityBaselineComplianceState?>]`: Security Baseline Compliance State
 
-CONTRIBUTINGPOLICIES <IMicrosoftGraphSecurityBaselineContributingPolicy\[]>: The policies that contribute to this setting instance
+`CONTRIBUTINGPOLICIES <IMicrosoftGraphSecurityBaselineContributingPolicy[]>`: The policies that contribute to this setting instance
   - `[DisplayName <String>]`: Name of the policy
   - `[SourceId <String>]`: Unique identifier of the policy
   - `[SourceType <String>]`: Authoring source of a policy
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[AndroidManagedAppProtectionId <String>]`: The unique identifier of androidManagedAppProtection
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
   - `[AssignmentFilterEvaluationStatusDetailsId <String>]`: The unique identifier of assignmentFilterEvaluationStatusDetails
@@ -403,6 +401,8 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[DeviceId <String>]`: Usage: deviceId='{deviceId}'
   - `[DeviceInstallStateId <String>]`: The unique identifier of deviceInstallState
   - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
+  - `[DeviceManagementConfigurationSettingDefinitionId <String>]`: The unique identifier of deviceManagementConfigurationSettingDefinition
+  - `[DeviceManagementConfigurationSettingId <String>]`: The unique identifier of deviceManagementConfigurationSetting
   - `[DeviceManagementTroubleshootingEventId <String>]`: The unique identifier of deviceManagementTroubleshootingEvent
   - `[EnrollmentConfigurationAssignmentId <String>]`: The unique identifier of enrollmentConfigurationAssignment
   - `[EnterpriseCodeSigningCertificateId <String>]`: The unique identifier of enterpriseCodeSigningCertificate
@@ -433,8 +433,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[MobileAppProvisioningConfigGroupAssignmentId <String>]`: The unique identifier of mobileAppProvisioningConfigGroupAssignment
   - `[MobileAppRelationshipId <String>]`: The unique identifier of mobileAppRelationship
   - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
-  - `[OfficeClientConfigurationAssignmentId <String>]`: The unique identifier of officeClientConfigurationAssignment
-  - `[OfficeClientConfigurationId <String>]`: The unique identifier of officeClientConfiguration
   - `[PolicyId <String>]`: Property in multi-part unique identifier of deviceHealthScriptPolicyState
   - `[PolicySetAssignmentId <String>]`: The unique identifier of policySetAssignment
   - `[PolicySetId <String>]`: The unique identifier of policySet
@@ -453,12 +451,13 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[WindowsDefenderApplicationControlSupplementalPolicyDeploymentStatusId <String>]`: The unique identifier of windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
   - `[WindowsDefenderApplicationControlSupplementalPolicyId <String>]`: The unique identifier of windowsDefenderApplicationControlSupplementalPolicy
   - `[WindowsDeviceMalwareStateId <String>]`: The unique identifier of windowsDeviceMalwareState
+  - `[WindowsInformationProtectionAppLockerFileId <String>]`: The unique identifier of windowsInformationProtectionAppLockerFile
   - `[WindowsInformationProtectionDeviceRegistrationId <String>]`: The unique identifier of windowsInformationProtectionDeviceRegistration
   - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
   - `[WindowsInformationProtectionWipeActionId <String>]`: The unique identifier of windowsInformationProtectionWipeAction
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
-SOURCEPOLICIES <IMicrosoftGraphSettingSource\[]>: The policies that contribute to this setting instance
+`SOURCEPOLICIES <IMicrosoftGraphSettingSource[]>`: The policies that contribute to this setting instance
   - `[DisplayName <String>]`: Not yet documented
   - `[Id <String>]`: Not yet documented
   - `[SourceType <String>]`: settingSourceType

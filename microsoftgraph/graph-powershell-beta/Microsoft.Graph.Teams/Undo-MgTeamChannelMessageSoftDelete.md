@@ -1,26 +1,26 @@
----
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/undo-mgteamchannelmessagesoftdelete
+﻿---
+external help file: Microsoft.Graph.Beta.Teams-help.xml
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/undo-mgbetateamchannelmessagesoftdelete
 schema: 2.0.0
 ---
 
-# Undo-MgTeamChannelMessageSoftDelete
+# Undo-MgBetaTeamChannelMessageSoftDelete
 
 ## SYNOPSIS
 Undo soft deletion of a single chatMessage or a chat message reply in a channel or a chat.
 
 ## SYNTAX
 
-### Undo1 (Default)
+### Undo (Default)
 ```
-Undo-MgTeamChannelMessageSoftDelete -ChannelId <String> -ChatMessageId <String> -TeamId <String> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Undo-MgBetaTeamChannelMessageSoftDelete -ChannelId <String> -ChatMessageId <String> -TeamId <String>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UndoViaIdentity1
+### UndoViaIdentity
 ```
-Undo-MgTeamChannelMessageSoftDelete -InputObject <ITeamsIdentity> [-PassThru] [-WhatIf] [-Confirm]
+Undo-MgBetaTeamChannelMessageSoftDelete -InputObject <ITeamsIdentity> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -29,23 +29,17 @@ Undo soft deletion of a single chatMessage or a chat message reply in a channel 
 
 ## EXAMPLES
 
-### Example 1: Using the Undo-MgTeamChannelMessageSoftDelete Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Teams
-Undo-MgTeamChannelMessageSoftDelete -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId
+Import-Module Microsoft.Graph.Beta.Teams
+Undo-MgBetaTeamChannelMessageSoftDelete -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId
 ```
 
-This example shows how to use the Undo-MgTeamChannelMessageSoftDelete Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Undo-MgTeamChannelMessageSoftDelete Cmdlet
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Teams
-Undo-MgTeamChannelMessageSoftDelete -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId
+Import-Module Microsoft.Graph.Beta.Teams
+Undo-MgBetaTeamChannelMessageSoftDelete -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId
 ```
-
-This example shows how to use the Undo-MgTeamChannelMessageSoftDelete Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -54,7 +48,7 @@ The unique identifier of channel
 
 ```yaml
 Type: String
-Parameter Sets: Undo1
+Parameter Sets: Undo
 Aliases:
 
 Required: True
@@ -69,7 +63,7 @@ The unique identifier of chatMessage
 
 ```yaml
 Type: String
-Parameter Sets: Undo1
+Parameter Sets: Undo
 Aliases:
 
 Required: True
@@ -81,11 +75,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: UndoViaIdentity1
+Parameter Sets: UndoViaIdentity
 Aliases:
 
 Required: True
@@ -115,7 +109,7 @@ The unique identifier of team
 
 ```yaml
 Type: String
-Parameter Sets: Undo1
+Parameter Sets: Undo
 Aliases:
 
 Required: True
@@ -161,7 +155,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
 ## OUTPUTS
 
 ### System.Boolean
@@ -174,7 +168,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat

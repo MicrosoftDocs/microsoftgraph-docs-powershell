@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Files-help.xml
-Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/restore-mgdriveitemversion
+﻿---
+external help file: Microsoft.Graph.Beta.Files-help.xml
+Module Name: Microsoft.Graph.Beta.Files
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/restore-mgbetadriveitemversion
 schema: 2.0.0
 ---
 
-# Restore-MgDriveItemVersion
+# Restore-MgBetaDriveItemVersion
 
 ## SYNOPSIS
 Restore a previous version of a DriveItem to be the current version.
@@ -15,13 +15,14 @@ This will create a new version with the contents of the previous version, but pr
 
 ### Restore (Default)
 ```
-Restore-MgDriveItemVersion -DriveId <String> -DriveItemId <String> -DriveItemVersionId <String> [-PassThru]
+Restore-MgBetaDriveItemVersion -DriveId <String> -DriveItemId <String> -DriveItemVersionId <String> [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### RestoreViaIdentity
 ```
-Restore-MgDriveItemVersion -InputObject <IFilesIdentity> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Restore-MgBetaDriveItemVersion -InputObject <IFilesIdentity> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -30,14 +31,11 @@ This will create a new version with the contents of the previous version, but pr
 
 ## EXAMPLES
 
-### Example 1: Using the Restore-MgDriveItemVersion Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Files
-Restore-MgDriveItemVersion -DriveId $driveId -DriveItemId $driveItemId -DriveItemVersionId $driveItemVersionId
+Import-Module Microsoft.Graph.Beta.Files
+Restore-MgBetaDriveItemVersion -DriveId $driveId -DriveItemId $driveItemId -DriveItemVersionId $driveItemVersionId
 ```
-
-This example shows how to use the Restore-MgDriveItemVersion Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -88,7 +86,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IFilesIdentity
@@ -153,7 +151,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IFilesIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
 ## OUTPUTS
 
 ### System.Boolean
@@ -166,7 +164,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+`INPUTOBJECT <IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType

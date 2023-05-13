@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/invoke-mgpostponedirectoryrecommendation
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetapostponedirectoryrecommendation
 schema: 2.0.0
 ---
 
-# Invoke-MgPostponeDirectoryRecommendation
+# Invoke-MgBetaPostponeDirectoryRecommendation
 
 ## SYNOPSIS
 Invoke action postpone
@@ -14,27 +14,27 @@ Invoke action postpone
 
 ### PostponeExpanded (Default)
 ```
-Invoke-MgPostponeDirectoryRecommendation -RecommendationId <String> [-AdditionalProperties <Hashtable>]
+Invoke-MgBetaPostponeDirectoryRecommendation -RecommendationId <String> [-AdditionalProperties <Hashtable>]
  [-PostponeUntilDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Postpone
 ```
-Invoke-MgPostponeDirectoryRecommendation -RecommendationId <String>
+Invoke-MgBetaPostponeDirectoryRecommendation -RecommendationId <String>
  -BodyParameter <IPaths1Bx3NjeDirectoryRecommendationsRecommendationIdMicrosoftGraphPostponePostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### PostponeViaIdentityExpanded
 ```
-Invoke-MgPostponeDirectoryRecommendation -InputObject <IIdentityDirectoryManagementIdentity>
+Invoke-MgBetaPostponeDirectoryRecommendation -InputObject <IIdentityDirectoryManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-PostponeUntilDateTime <DateTime>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### PostponeViaIdentity
 ```
-Invoke-MgPostponeDirectoryRecommendation -InputObject <IIdentityDirectoryManagementIdentity>
+Invoke-MgBetaPostponeDirectoryRecommendation -InputObject <IIdentityDirectoryManagementIdentity>
  -BodyParameter <IPaths1Bx3NjeDirectoryRecommendationsRecommendationIdMicrosoftGraphPostponePostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -43,6 +43,20 @@ Invoke-MgPostponeDirectoryRecommendation -InputObject <IIdentityDirectoryManagem
 Invoke action postpone
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -63,7 +77,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths1Bx3NjeDirectoryRecommendationsRecommendationIdMicrosoftGraphPostponePostRequestbodyContentApplicationJsonSchema
@@ -79,7 +93,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IIdentityDirectoryManagementIdentity
@@ -159,11 +173,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths1Bx3NjeDirectoryRecommendationsRecommendationIdMicrosoftGraphPostponePostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Bx3NjeDirectoryRecommendationsRecommendationIdMicrosoftGraphPostponePostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRecommendation
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRecommendation
 ## NOTES
 
 ALIASES
@@ -173,11 +187,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Bx3NjeDirectoryRecommendationsRecommendationIdMicrosoftGraphPostponePostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1Bx3NjeDirectoryRecommendationsRecommendationIdMicrosoftGraphPostponePostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[PostponeUntilDateTime <DateTime?>]`: 
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet

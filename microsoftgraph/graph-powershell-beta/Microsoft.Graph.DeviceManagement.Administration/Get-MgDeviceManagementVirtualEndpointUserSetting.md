@@ -1,67 +1,58 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Administration
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointusersetting
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointusersetting
 schema: 2.0.0
 ---
 
-# Get-MgDeviceManagementVirtualEndpointUserSetting
+# Get-MgBetaDeviceManagementVirtualEndpointUserSetting
 
 ## SYNOPSIS
-Cloud PC user settings.
+Read the properties and relationships of a cloudPcUserSetting object.
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgDeviceManagementVirtualEndpointUserSetting [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaDeviceManagementVirtualEndpointUserSetting [-ExpandProperty <String[]>] [-Property <String[]>]
  [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
  [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgDeviceManagementVirtualEndpointUserSetting -CloudPcUserSettingId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaDeviceManagementVirtualEndpointUserSetting -CloudPcUserSettingId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgDeviceManagementVirtualEndpointUserSetting -InputObject <IDeviceManagementAdministrationIdentity>
+Get-MgBetaDeviceManagementVirtualEndpointUserSetting -InputObject <IDeviceManagementAdministrationIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Cloud PC user settings.
+Read the properties and relationships of a cloudPcUserSetting object.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgDeviceManagementVirtualEndpointUserSetting Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.DeviceManagement.Administration
-Get-MgDeviceManagementVirtualEndpointUserSetting -CloudPcUserSettingId $cloudPcUserSettingId -ExpandProperty "assignments"
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
+Get-MgBetaDeviceManagementVirtualEndpointUserSetting -CloudPcUserSettingId $cloudPcUserSettingId -ExpandProperty "assignments"
 ```
 
-This example shows how to use the Get-MgDeviceManagementVirtualEndpointUserSetting Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Get-MgDeviceManagementVirtualEndpointUserSetting Cmdlet
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.DeviceManagement.Administration
-Get-MgDeviceManagementVirtualEndpointUserSetting -CloudPcUserSettingId $cloudPcUserSettingId
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
+Get-MgBetaDeviceManagementVirtualEndpointUserSetting -CloudPcUserSettingId $cloudPcUserSettingId
 ```
 
-This example shows how to use the Get-MgDeviceManagementVirtualEndpointUserSetting Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Using the Get-MgDeviceManagementVirtualEndpointUserSetting Cmdlet
+### EXAMPLE 3
 ```powershell
-Import-Module Microsoft.Graph.DeviceManagement.Administration
-Get-MgDeviceManagementVirtualEndpointUserSetting
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
+Get-MgBetaDeviceManagementVirtualEndpointUserSetting
 ```
-
-This example shows how to use the Get-MgDeviceManagementVirtualEndpointUserSetting Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -143,7 +134,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementAdministrationIdentity
@@ -252,10 +243,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementAdministrationIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCloudPcUserSetting
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcUserSetting
 ## NOTES
 
 ALIASES
@@ -265,7 +256,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[AuditEventId <String>]`: The unique identifier of auditEvent
   - `[CartToClassAssociationId <String>]`: The unique identifier of cartToClassAssociation
   - `[CloudPcAuditEventId <String>]`: The unique identifier of cloudPcAuditEvent

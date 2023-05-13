@@ -1,15 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintshare
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintshare
 schema: 2.0.0
-ms.prod: cloud-printing
 ---
 
 # Get-MgPrintShare
 
 ## SYNOPSIS
-The list of printer shares registered in the tenant.
+Retrieve the properties and relationships of a printer share.
 
 ## SYNTAX
 
@@ -33,36 +32,27 @@ Get-MgPrintShare -InputObject <IDevicesCloudPrintIdentity> [-ExpandProperty <Str
 ```
 
 ## DESCRIPTION
-The list of printer shares registered in the tenant.
+Retrieve the properties and relationships of a printer share.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgPrintShare Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Devices.CloudPrint
 Get-MgPrintShare -PrinterShareId $printerShareId -Property "id,displayName,capabilities"
 ```
 
-This example shows how to use the Get-MgPrintShare Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Get-MgPrintShare Cmdlet
+### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Devices.CloudPrint
 Get-MgPrintShare -PrinterShareId $printerShareId
 ```
 
-This example shows how to use the Get-MgPrintShare Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Using the Get-MgPrintShare Cmdlet
+### EXAMPLE 3
 ```powershell
 Import-Module Microsoft.Graph.Devices.CloudPrint
 Get-MgPrintShare
 ```
-
-This example shows how to use the Get-MgPrintShare Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -129,7 +119,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDevicesCloudPrintIdentity
@@ -256,7 +246,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrinterShare1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrinterShare
 ## NOTES
 
 ALIASES
@@ -266,9 +256,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
+`INPUTOBJECT <IDevicesCloudPrintIdentity>`: Identity Parameter
   - `[GroupId <String>]`: The unique identifier of group
   - `[PrintConnectorId <String>]`: The unique identifier of printConnector
+  - `[PrintDocumentId <String>]`: The unique identifier of printDocument
+  - `[PrintJobId <String>]`: The unique identifier of printJob
   - `[PrintOperationId <String>]`: The unique identifier of printOperation
   - `[PrintServiceEndpointId <String>]`: The unique identifier of printServiceEndpoint
   - `[PrintServiceId <String>]`: The unique identifier of printService

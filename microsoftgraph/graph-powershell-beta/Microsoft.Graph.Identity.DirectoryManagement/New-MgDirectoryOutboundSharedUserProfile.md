@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryoutboundshareduserprofile
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryoutboundshareduserprofile
 schema: 2.0.0
 ---
 
-# New-MgDirectoryOutboundSharedUserProfile
+# New-MgBetaDirectoryOutboundSharedUserProfile
 
 ## SYNOPSIS
 Create new navigation property to outboundSharedUserProfiles for directory
@@ -14,20 +14,34 @@ Create new navigation property to outboundSharedUserProfiles for directory
 
 ### CreateExpanded (Default)
 ```
-New-MgDirectoryOutboundSharedUserProfile [-AdditionalProperties <Hashtable>]
+New-MgBetaDirectoryOutboundSharedUserProfile [-AdditionalProperties <Hashtable>]
  [-Tenants <IMicrosoftGraphTenantReference[]>] [-UserId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDirectoryOutboundSharedUserProfile -BodyParameter <IMicrosoftGraphOutboundSharedUserProfile> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaDirectoryOutboundSharedUserProfile -BodyParameter <IMicrosoftGraphOutboundSharedUserProfile>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to outboundSharedUserProfiles for directory
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -48,7 +62,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 outboundSharedUserProfile
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphOutboundSharedUserProfile
@@ -65,7 +79,7 @@ Accept wildcard characters: False
 ### -Tenants
 The collection of external Azure AD tenants that the user has shared profile data with.
 Read-only.
-To construct, please use Get-Help -Online and see NOTES section for TENANTS properties and create a hash table.
+To construct, see NOTES section for TENANTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphTenantReference[]
@@ -131,10 +145,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOutboundSharedUserProfile
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOutboundSharedUserProfile
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOutboundSharedUserProfile
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOutboundSharedUserProfile
 ## NOTES
 
 ALIASES
@@ -144,13 +158,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphOutboundSharedUserProfile>`: outboundSharedUserProfile
+`BODYPARAMETER <IMicrosoftGraphOutboundSharedUserProfile>`: outboundSharedUserProfile
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Tenants <IMicrosoftGraphTenantReference[]>]`: The collection of external Azure AD tenants that the user has shared profile data with. Read-only.
     - `[TenantId <String>]`: The identifier of the Azure AD tenant. Read-only. Key.
   - `[UserId <String>]`: The object id of the external user. Read-only.
 
-TENANTS <IMicrosoftGraphTenantReference\[]>: The collection of external Azure AD tenants that the user has shared profile data with. Read-only.
+`TENANTS <IMicrosoftGraphTenantReference[]>`: The collection of external Azure AD tenants that the user has shared profile data with. Read-only.
   - `[TenantId <String>]`: The identifier of the Azure AD tenant. Read-only. Key.
 
 ## RELATED LINKS

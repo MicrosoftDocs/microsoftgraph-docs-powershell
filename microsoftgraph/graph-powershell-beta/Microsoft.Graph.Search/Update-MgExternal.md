@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Search-help.xml
-Module Name: Microsoft.Graph.Search
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/update-mgexternal
+﻿---
+external help file: Microsoft.Graph.Beta.Search-help.xml
+Module Name: Microsoft.Graph.Beta.Search
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternal
 schema: 2.0.0
 ---
 
-# Update-MgExternal
+# Update-MgBetaExternal
 
 ## SYNOPSIS
 Update external
@@ -14,14 +14,14 @@ Update external
 
 ### UpdateExpanded (Default)
 ```
-Update-MgExternal [-AdditionalProperties <Hashtable>]
+Update-MgBetaExternal [-AdditionalProperties <Hashtable>]
  [-Connections <IMicrosoftGraphExternalConnectorsExternalConnection[]>]
- [-IndustryData <IMicrosoftGraphIndustryDataRoot>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-IndustryData <IMicrosoftGraphIndustryDataRoot>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgExternal -BodyParameter <IMicrosoftGraphExternalConnectorsExternal1> [-PassThru] [-WhatIf] [-Confirm]
+Update-MgBetaExternal -BodyParameter <IMicrosoftGraphExternalConnectorsExternal> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -29,6 +29,20 @@ Update-MgExternal -BodyParameter <IMicrosoftGraphExternalConnectorsExternal1> [-
 Update external
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -49,10 +63,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 external
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExternalConnectorsExternal1
+Type: IMicrosoftGraphExternalConnectorsExternal
 Parameter Sets: Update
 Aliases:
 
@@ -65,7 +79,7 @@ Accept wildcard characters: False
 
 ### -Connections
 .
-To construct, please use Get-Help -Online and see NOTES section for CONNECTIONS properties and create a hash table.
+To construct, see NOTES section for CONNECTIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphExternalConnectorsExternalConnection[]
@@ -81,26 +95,11 @@ Accept wildcard characters: False
 
 ### -IndustryData
 industryDataRoot
-To construct, please use Get-Help -Online and see NOTES section for INDUSTRYDATA properties and create a hash table.
+To construct, see NOTES section for INDUSTRYDATA properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIndustryDataRoot
 Parameter Sets: UpdateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -146,10 +145,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternal1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternal
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternal
 ## NOTES
 
 ALIASES
@@ -159,10 +158,10 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternal1>`: external
+`BODYPARAMETER <IMicrosoftGraphExternalConnectorsExternal>`: external
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Connections <IMicrosoftGraphExternalConnectorsExternalConnection[]>]`: 
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[ActivitySettings <IMicrosoftGraphExternalConnectorsActivitySettings>]`: activitySettings
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[UrlToItemResolvers <IMicrosoftGraphExternalConnectorsUrlToItemResolverBase[]>]`: Specifies configurations to identify an externalItem based on a shared URL.
@@ -186,24 +185,24 @@ BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternal1>`: external
     - `[Description <String>]`: Description of the connection displayed in the Microsoft 365 admin center. Optional.
     - `[EnabledContentExperiences <String>]`: contentExperienceType
     - `[Groups <IMicrosoftGraphExternalConnectorsExternalGroup[]>]`: 
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Description <String>]`: The description of the external group. Optional.
       - `[DisplayName <String>]`: The friendly name of the external group. Optional.
-      - `[Members <IMicrosoftGraphExternalConnectorsIdentity[]>]`: A member added to an externalGroup. You can add Azure Active Directory users, Azure Active Directory groups, or an externalGroup as members.
-        - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Members <IMicrosoftGraphExternalConnectorsIdentity[]>]`: A member added to an externalGroup. You can add Azure Active Directory users, Azure Active Directory groups, or other externalGroups as members.
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[Type <String>]`: identityType
     - `[IngestedItemsCount <Int64?>]`: The number of items ingested into a connection. This value is refreshed every 15 minutes. If the connection state is draft, then ingestedItemsCount will be null.
-    - `[Items <IMicrosoftGraphExternalConnectorsExternalItem1[]>]`: 
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-      - `[Acl <IMicrosoftGraphExternalConnectorsAcl1[]>]`: An array of access control entries. Each entry specifies the access granted to a user or group. Required.
+    - `[Items <IMicrosoftGraphExternalConnectorsExternalItem[]>]`: 
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[Acl <IMicrosoftGraphExternalConnectorsAcl[]>]`: An array of access control entries. Each entry specifies the access granted to a user or group. Required.
         - `[AccessType <String>]`: accessType
         - `[IdentitySource <String>]`: identitySourceType
         - `[Type <String>]`: aclType
         - `[Value <String>]`: The unique identifer of the identity. In case of Azure Active Directory identities, value is set to the object identifier of the user, group or tenant for types user, group and everyone (and everyoneExceptGuests) respectively. In case of external groups value is set to the ID of the externalGroup.
-      - `[Activities <IMicrosoftGraphExternalConnectorsExternalActivity[]>]`: Write-only property. Returns results.
-        - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Activities <IMicrosoftGraphExternalConnectorsExternalActivity[]>]`: Returns a list of activities performed on the item. Write-only.
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[PerformedBy <IMicrosoftGraphExternalConnectorsIdentity>]`: identity
-        - `[StartDateTime <DateTime?>]`: When the particular activity occurred.
+        - `[StartDateTime <DateTime?>]`: The date and time when the particular activity occurred. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[Type <String>]`: externalActivityType
       - `[Content <IMicrosoftGraphExternalConnectorsExternalItemContent>]`: externalItemContent
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -213,7 +212,7 @@ BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternal1>`: external
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Name <String>]`: The display name of the connection to be displayed in the Microsoft 365 admin center. Maximum length of 128 characters. Required.
     - `[Operations <IMicrosoftGraphExternalConnectorsConnectionOperation[]>]`: 
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Error <IMicrosoftGraphPublicError>]`: publicError
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Code <String>]`: Represents the error code.
@@ -232,13 +231,13 @@ BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternal1>`: external
       - `[Status <String>]`: connectionOperationStatus
     - `[Quota <IMicrosoftGraphExternalConnectorsConnectionQuota>]`: connectionQuota
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[ItemsRemaining <Int64?>]`: The minimum of two values, one representing the items remaining in the connection and the other remaining items at tenant-level. The following equation represents the formula used to calculate the minimum number: min ({max capacity in the connection} - {number of items in the connection}, {tenant quota} - {number of items indexed in all connections}). If the connection is not monetized, such as in a preview connector or preview content experience, then this property is simply the number of remaining items in the connection.
-    - `[Schema <IMicrosoftGraphExternalConnectorsSchema1>]`: schema
+    - `[Schema <IMicrosoftGraphExternalConnectorsSchema>]`: schema
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[BaseType <String>]`: Must be set to microsoft.graph.externalItem. Required.
-      - `[Properties <IMicrosoftGraphExternalConnectorsProperty1[]>]`: The properties defined for the items in the connection. The minimum number of properties is one, the maximum is 128.
+      - `[Properties <IMicrosoftGraphExternalConnectorsProperty[]>]`: The properties defined for the items in the connection. The minimum number of properties is one, the maximum is 128.
         - `[Aliases <String[]>]`: A set of aliases or a friendly names for the property. Maximum 32 characters. Only alphanumeric characters allowed. For example, each string might not contain control characters, whitespace, or any of the following: :, ;, ,, (, ), [, ], {, }, %, $, +, !, *, =, &, ?, @, #, /, ~, ', ', <, >, `, ^. Optional.
         - `[IsExactMatchRequired <Boolean?>]`: Specifies if the property will be matched exactly for queries. Exact matching can only be set to true for non-searchable properties of type string or stringCollection. Optional.
         - `[IsQueryable <Boolean?>]`: Specifies if the property is queryable. Queryable properties can be used in Keyword Query Language (KQL) queries. Optional.
@@ -247,6 +246,9 @@ BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternal1>`: external
         - `[IsSearchable <Boolean?>]`: Specifies if the property is searchable. Only properties of type string or stringCollection can be searchable. Non-searchable properties are not added to the search index. Optional.
         - `[Labels <String[]>]`: Specifies one or more well-known tags added against a property. Labels help Microsoft Search understand the semantics of the data in the connection. Adding appropriate labels would result in an enhanced search experience (e.g. better relevance). Optional.The possible values are: title, url, createdBy, lastModifiedBy, authors, createdDateTime, lastModifiedDateTime, fileName, fileExtension, unknownFutureValue, iconUrl, containerName, containerUrl. Note that you must use the Prefer: include-unknown-enum-members request header to get the following values in this evolvable enum: iconUrl, containerName, containerUrl.
         - `[Name <String>]`: The name of the property. Maximum 32 characters. Only alphanumeric characters allowed. For example, the property name may not contain control characters, whitespace, or any of the following: :, ;, ,, (, ), [, ], {, }, %, $, +, !, *, =, &, ?, @, #, /, ~, ', ', <, >, `, ^.  Required.
+        - `[RankingHint <IMicrosoftGraphExternalConnectorsRankingHint>]`: rankingHint
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[ImportanceScore <String>]`: importanceScore
         - `[Type <String>]`: propertyType
     - `[SearchSettings <IMicrosoftGraphExternalConnectorsSearchSettings>]`: searchSettings
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -254,13 +256,13 @@ BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternal1>`: external
     - `[State <String>]`: connectionState
   - `[IndustryData <IMicrosoftGraphIndustryDataRoot>]`: industryDataRoot
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[DataConnectors <IMicrosoftGraphIndustryDataConnector[]>]`: Set of connectors for importing data from source systems.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[DisplayName <String>]`: The name of the data connector. Maximum supported length is 100 characters.
       - `[SourceSystem <IMicrosoftGraphIndustryDataSourceSystemDefinition>]`: sourceSystemDefinition
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[DisplayName <String>]`: The name of the source system. Maximum supported length is 100 characters.
         - `[UserMatchingSettings <IMicrosoftGraphIndustryDataUserMatchingSetting[]>]`: A collection of user matching settings by roleGroup.
           - `[MatchTarget <IMicrosoftGraphIndustryDataUserMatchTargetReferenceValue>]`: userMatchTargetReferenceValue
@@ -268,7 +270,7 @@ BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternal1>`: external
             - `[Code <String>]`: The code of the desired referenceDefinition entry.
             - `[Value <IMicrosoftGraphIndustryDataReferenceDefinition>]`: referenceDefinition
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+              - `[Id <String>]`: The unique identifier for an entity. Read-only.
               - `[Code <String>]`: The code value for the definition that must be unique within the referenceType.
               - `[IsDisabled <Boolean?>]`: Indicates whether the definition has been disabled.
               - `[ReferenceType <String>]`: The categorical type for a collection of enumerated values.
@@ -276,7 +278,7 @@ BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternal1>`: external
           - `[PriorityOrder <Int32?>]`: The priority order to apply when a user has multiple RefRole codes assigned.
           - `[RoleGroup <IMicrosoftGraphIndustryDataRoleGroup>]`: roleGroup
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+            - `[Id <String>]`: The unique identifier for an entity. Read-only.
             - `[DisplayName <String>]`: The name of the role group.
             - `[Roles <IMicrosoftGraphIndustryDataRoleReferenceValue[]>]`: The set of roles included in the role group.
               - `[Code <String>]`: The code of the desired referenceDefinition entry.
@@ -289,14 +291,14 @@ BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternal1>`: external
     - `[InboundFlows <IMicrosoftGraphIndustryDataInboundFlow[]>]`: Set of data import flow activities to bring data into the canonical store via a connector.
       - `[DisplayName <String>]`: The name of the activity. Maximum supported length is 100 characters.
       - `[ReadinessStatus <String>]`: readinessStatus
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[DataConnector <IMicrosoftGraphIndustryDataConnector>]`: industryDataConnector
       - `[DataDomain <String>]`: inboundDomain
       - `[EffectiveDateTime <DateTime?>]`: The start of the time window when the flow is allowed to run. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[ExpirationDateTime <DateTime?>]`: The end of the time window when the flow is allowed to run. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Year <IMicrosoftGraphIndustryDataYearTimePeriodDefinition>]`: yearTimePeriodDefinition
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[DisplayName <String>]`: The name of the year. Maximum supported length is 100 characters.
         - `[EndDate <DateTime?>]`: The last day of the year using ISO 8601 format for date.
         - `[StartDate <DateTime?>]`: The first day of the year using ISO 8601 format for date.
@@ -305,7 +307,7 @@ BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternal1>`: external
           - `[Code <String>]`: The code of the desired referenceDefinition entry.
           - `[Value <IMicrosoftGraphIndustryDataReferenceDefinition>]`: referenceDefinition
     - `[Operations <IMicrosoftGraphLongRunningOperation[]>]`: Set of ephemeral operations that the system runs currently. Read-only.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[CreatedDateTime <DateTime?>]`: The start time of the operation. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[LastActionDateTime <DateTime?>]`: The time of the last action in the operation. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[ResourceLocation <String>]`: URI of the resource that the operation is performed on.
@@ -314,12 +316,12 @@ BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternal1>`: external
     - `[ReferenceDefinitions <IMicrosoftGraphIndustryDataReferenceDefinition[]>]`: Set of user modifiable system picker types.
     - `[RoleGroups <IMicrosoftGraphIndustryDataRoleGroup[]>]`: Set of groups of individual roles that makes role-based admin simpler.
     - `[Runs <IMicrosoftGraphIndustryDataRun[]>]`: Set of ephemeral runs which present the point-in-time that diagnostic state of activities performed by the system. Read-only.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Activities <IMicrosoftGraphIndustryDataRunActivity[]>]`: The set of activities performed during the run.
-        - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[Activity <IMicrosoftGraphIndustryDataActivity>]`: industryDataActivity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+          - `[Id <String>]`: The unique identifier for an entity. Read-only.
           - `[DisplayName <String>]`: The name of the activity. Maximum supported length is 100 characters.
           - `[ReadinessStatus <String>]`: readinessStatus
         - `[BlockingError <IMicrosoftGraphPublicError>]`: publicError
@@ -329,8 +331,8 @@ BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternal1>`: external
     - `[SourceSystems <IMicrosoftGraphIndustryDataSourceSystemDefinition[]>]`: Set of source definitions that represents real-world external systems.
     - `[Years <IMicrosoftGraphIndustryDataYearTimePeriodDefinition[]>]`: Set of years represented in the system.
 
-CONNECTIONS <IMicrosoftGraphExternalConnectorsExternalConnection\[]>: .
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`CONNECTIONS <IMicrosoftGraphExternalConnectorsExternalConnection[]>`: .
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ActivitySettings <IMicrosoftGraphExternalConnectorsActivitySettings>]`: activitySettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[UrlToItemResolvers <IMicrosoftGraphExternalConnectorsUrlToItemResolverBase[]>]`: Specifies configurations to identify an externalItem based on a shared URL.
@@ -354,24 +356,24 @@ CONNECTIONS <IMicrosoftGraphExternalConnectorsExternalConnection\[]>: .
   - `[Description <String>]`: Description of the connection displayed in the Microsoft 365 admin center. Optional.
   - `[EnabledContentExperiences <String>]`: contentExperienceType
   - `[Groups <IMicrosoftGraphExternalConnectorsExternalGroup[]>]`: 
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Description <String>]`: The description of the external group. Optional.
     - `[DisplayName <String>]`: The friendly name of the external group. Optional.
-    - `[Members <IMicrosoftGraphExternalConnectorsIdentity[]>]`: A member added to an externalGroup. You can add Azure Active Directory users, Azure Active Directory groups, or an externalGroup as members.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Members <IMicrosoftGraphExternalConnectorsIdentity[]>]`: A member added to an externalGroup. You can add Azure Active Directory users, Azure Active Directory groups, or other externalGroups as members.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Type <String>]`: identityType
   - `[IngestedItemsCount <Int64?>]`: The number of items ingested into a connection. This value is refreshed every 15 minutes. If the connection state is draft, then ingestedItemsCount will be null.
-  - `[Items <IMicrosoftGraphExternalConnectorsExternalItem1[]>]`: 
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-    - `[Acl <IMicrosoftGraphExternalConnectorsAcl1[]>]`: An array of access control entries. Each entry specifies the access granted to a user or group. Required.
+  - `[Items <IMicrosoftGraphExternalConnectorsExternalItem[]>]`: 
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[Acl <IMicrosoftGraphExternalConnectorsAcl[]>]`: An array of access control entries. Each entry specifies the access granted to a user or group. Required.
       - `[AccessType <String>]`: accessType
       - `[IdentitySource <String>]`: identitySourceType
       - `[Type <String>]`: aclType
       - `[Value <String>]`: The unique identifer of the identity. In case of Azure Active Directory identities, value is set to the object identifier of the user, group or tenant for types user, group and everyone (and everyoneExceptGuests) respectively. In case of external groups value is set to the ID of the externalGroup.
-    - `[Activities <IMicrosoftGraphExternalConnectorsExternalActivity[]>]`: Write-only property. Returns results.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Activities <IMicrosoftGraphExternalConnectorsExternalActivity[]>]`: Returns a list of activities performed on the item. Write-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[PerformedBy <IMicrosoftGraphExternalConnectorsIdentity>]`: identity
-      - `[StartDateTime <DateTime?>]`: When the particular activity occurred.
+      - `[StartDateTime <DateTime?>]`: The date and time when the particular activity occurred. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Type <String>]`: externalActivityType
     - `[Content <IMicrosoftGraphExternalConnectorsExternalItemContent>]`: externalItemContent
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -381,7 +383,7 @@ CONNECTIONS <IMicrosoftGraphExternalConnectorsExternalConnection\[]>: .
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Name <String>]`: The display name of the connection to be displayed in the Microsoft 365 admin center. Maximum length of 128 characters. Required.
   - `[Operations <IMicrosoftGraphExternalConnectorsConnectionOperation[]>]`: 
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Error <IMicrosoftGraphPublicError>]`: publicError
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Code <String>]`: Represents the error code.
@@ -400,13 +402,13 @@ CONNECTIONS <IMicrosoftGraphExternalConnectorsExternalConnection\[]>: .
     - `[Status <String>]`: connectionOperationStatus
   - `[Quota <IMicrosoftGraphExternalConnectorsConnectionQuota>]`: connectionQuota
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[ItemsRemaining <Int64?>]`: The minimum of two values, one representing the items remaining in the connection and the other remaining items at tenant-level. The following equation represents the formula used to calculate the minimum number: min ({max capacity in the connection} - {number of items in the connection}, {tenant quota} - {number of items indexed in all connections}). If the connection is not monetized, such as in a preview connector or preview content experience, then this property is simply the number of remaining items in the connection.
-  - `[Schema <IMicrosoftGraphExternalConnectorsSchema1>]`: schema
+  - `[Schema <IMicrosoftGraphExternalConnectorsSchema>]`: schema
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[BaseType <String>]`: Must be set to microsoft.graph.externalItem. Required.
-    - `[Properties <IMicrosoftGraphExternalConnectorsProperty1[]>]`: The properties defined for the items in the connection. The minimum number of properties is one, the maximum is 128.
+    - `[Properties <IMicrosoftGraphExternalConnectorsProperty[]>]`: The properties defined for the items in the connection. The minimum number of properties is one, the maximum is 128.
       - `[Aliases <String[]>]`: A set of aliases or a friendly names for the property. Maximum 32 characters. Only alphanumeric characters allowed. For example, each string might not contain control characters, whitespace, or any of the following: :, ;, ,, (, ), [, ], {, }, %, $, +, !, *, =, &, ?, @, #, /, ~, ', ', <, >, `, ^. Optional.
       - `[IsExactMatchRequired <Boolean?>]`: Specifies if the property will be matched exactly for queries. Exact matching can only be set to true for non-searchable properties of type string or stringCollection. Optional.
       - `[IsQueryable <Boolean?>]`: Specifies if the property is queryable. Queryable properties can be used in Keyword Query Language (KQL) queries. Optional.
@@ -415,21 +417,24 @@ CONNECTIONS <IMicrosoftGraphExternalConnectorsExternalConnection\[]>: .
       - `[IsSearchable <Boolean?>]`: Specifies if the property is searchable. Only properties of type string or stringCollection can be searchable. Non-searchable properties are not added to the search index. Optional.
       - `[Labels <String[]>]`: Specifies one or more well-known tags added against a property. Labels help Microsoft Search understand the semantics of the data in the connection. Adding appropriate labels would result in an enhanced search experience (e.g. better relevance). Optional.The possible values are: title, url, createdBy, lastModifiedBy, authors, createdDateTime, lastModifiedDateTime, fileName, fileExtension, unknownFutureValue, iconUrl, containerName, containerUrl. Note that you must use the Prefer: include-unknown-enum-members request header to get the following values in this evolvable enum: iconUrl, containerName, containerUrl.
       - `[Name <String>]`: The name of the property. Maximum 32 characters. Only alphanumeric characters allowed. For example, the property name may not contain control characters, whitespace, or any of the following: :, ;, ,, (, ), [, ], {, }, %, $, +, !, *, =, &, ?, @, #, /, ~, ', ', <, >, `, ^.  Required.
+      - `[RankingHint <IMicrosoftGraphExternalConnectorsRankingHint>]`: rankingHint
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[ImportanceScore <String>]`: importanceScore
       - `[Type <String>]`: propertyType
   - `[SearchSettings <IMicrosoftGraphExternalConnectorsSearchSettings>]`: searchSettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[SearchResultTemplates <IMicrosoftGraphExternalConnectorsDisplayTemplate[]>]`: Enables the developer to define the appearance of the content and configure conditions that dictate when the template should be displayed. Maximum of 2 search result templates per connection.
   - `[State <String>]`: connectionState
 
-INDUSTRYDATA `<IMicrosoftGraphIndustryDataRoot>`: industryDataRoot
+`INDUSTRYDATA <IMicrosoftGraphIndustryDataRoot>`: industryDataRoot
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DataConnectors <IMicrosoftGraphIndustryDataConnector[]>]`: Set of connectors for importing data from source systems.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[DisplayName <String>]`: The name of the data connector. Maximum supported length is 100 characters.
     - `[SourceSystem <IMicrosoftGraphIndustryDataSourceSystemDefinition>]`: sourceSystemDefinition
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[DisplayName <String>]`: The name of the source system. Maximum supported length is 100 characters.
       - `[UserMatchingSettings <IMicrosoftGraphIndustryDataUserMatchingSetting[]>]`: A collection of user matching settings by roleGroup.
         - `[MatchTarget <IMicrosoftGraphIndustryDataUserMatchTargetReferenceValue>]`: userMatchTargetReferenceValue
@@ -437,7 +442,7 @@ INDUSTRYDATA `<IMicrosoftGraphIndustryDataRoot>`: industryDataRoot
           - `[Code <String>]`: The code of the desired referenceDefinition entry.
           - `[Value <IMicrosoftGraphIndustryDataReferenceDefinition>]`: referenceDefinition
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+            - `[Id <String>]`: The unique identifier for an entity. Read-only.
             - `[Code <String>]`: The code value for the definition that must be unique within the referenceType.
             - `[IsDisabled <Boolean?>]`: Indicates whether the definition has been disabled.
             - `[ReferenceType <String>]`: The categorical type for a collection of enumerated values.
@@ -445,7 +450,7 @@ INDUSTRYDATA `<IMicrosoftGraphIndustryDataRoot>`: industryDataRoot
         - `[PriorityOrder <Int32?>]`: The priority order to apply when a user has multiple RefRole codes assigned.
         - `[RoleGroup <IMicrosoftGraphIndustryDataRoleGroup>]`: roleGroup
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+          - `[Id <String>]`: The unique identifier for an entity. Read-only.
           - `[DisplayName <String>]`: The name of the role group.
           - `[Roles <IMicrosoftGraphIndustryDataRoleReferenceValue[]>]`: The set of roles included in the role group.
             - `[Code <String>]`: The code of the desired referenceDefinition entry.
@@ -458,14 +463,14 @@ INDUSTRYDATA `<IMicrosoftGraphIndustryDataRoot>`: industryDataRoot
   - `[InboundFlows <IMicrosoftGraphIndustryDataInboundFlow[]>]`: Set of data import flow activities to bring data into the canonical store via a connector.
     - `[DisplayName <String>]`: The name of the activity. Maximum supported length is 100 characters.
     - `[ReadinessStatus <String>]`: readinessStatus
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[DataConnector <IMicrosoftGraphIndustryDataConnector>]`: industryDataConnector
     - `[DataDomain <String>]`: inboundDomain
     - `[EffectiveDateTime <DateTime?>]`: The start of the time window when the flow is allowed to run. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[ExpirationDateTime <DateTime?>]`: The end of the time window when the flow is allowed to run. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[Year <IMicrosoftGraphIndustryDataYearTimePeriodDefinition>]`: yearTimePeriodDefinition
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[DisplayName <String>]`: The name of the year. Maximum supported length is 100 characters.
       - `[EndDate <DateTime?>]`: The last day of the year using ISO 8601 format for date.
       - `[StartDate <DateTime?>]`: The first day of the year using ISO 8601 format for date.
@@ -474,7 +479,7 @@ INDUSTRYDATA `<IMicrosoftGraphIndustryDataRoot>`: industryDataRoot
         - `[Code <String>]`: The code of the desired referenceDefinition entry.
         - `[Value <IMicrosoftGraphIndustryDataReferenceDefinition>]`: referenceDefinition
   - `[Operations <IMicrosoftGraphLongRunningOperation[]>]`: Set of ephemeral operations that the system runs currently. Read-only.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[CreatedDateTime <DateTime?>]`: The start time of the operation. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[LastActionDateTime <DateTime?>]`: The time of the last action in the operation. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[ResourceLocation <String>]`: URI of the resource that the operation is performed on.
@@ -483,12 +488,12 @@ INDUSTRYDATA `<IMicrosoftGraphIndustryDataRoot>`: industryDataRoot
   - `[ReferenceDefinitions <IMicrosoftGraphIndustryDataReferenceDefinition[]>]`: Set of user modifiable system picker types.
   - `[RoleGroups <IMicrosoftGraphIndustryDataRoleGroup[]>]`: Set of groups of individual roles that makes role-based admin simpler.
   - `[Runs <IMicrosoftGraphIndustryDataRun[]>]`: Set of ephemeral runs which present the point-in-time that diagnostic state of activities performed by the system. Read-only.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Activities <IMicrosoftGraphIndustryDataRunActivity[]>]`: The set of activities performed during the run.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Activity <IMicrosoftGraphIndustryDataActivity>]`: industryDataActivity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[DisplayName <String>]`: The name of the activity. Maximum supported length is 100 characters.
         - `[ReadinessStatus <String>]`: readinessStatus
       - `[BlockingError <IMicrosoftGraphPublicError>]`: publicError

@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/import-mgdevicemanagementtemplateoffice365deviceconfigurationpolicy
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/import-mgbetadevicemanagementtemplateoffice365deviceconfigurationpolicy
 schema: 2.0.0
 ---
 
-# Import-MgDeviceManagementTemplateOffice365DeviceConfigurationPolicy
+# Import-MgBetaDeviceManagementTemplateOffice365DeviceConfigurationPolicy
 
 ## SYNOPSIS
 Invoke action importOffice365DeviceConfigurationPolicies
@@ -13,13 +13,28 @@ Invoke action importOffice365DeviceConfigurationPolicies
 ## SYNTAX
 
 ```
-Import-MgDeviceManagementTemplateOffice365DeviceConfigurationPolicy [-WhatIf] [-Confirm] [<CommonParameters>]
+Import-MgBetaDeviceManagementTemplateOffice365DeviceConfigurationPolicy [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action importOffice365DeviceConfigurationPolicies
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -61,7 +76,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementIntent
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementIntent
 ## NOTES
 
 ALIASES

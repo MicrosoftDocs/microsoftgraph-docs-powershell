@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mgteamworkworkforceintegration
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamworkworkforceintegration
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # New-MgTeamworkWorkforceIntegration
@@ -32,7 +31,7 @@ Create a new workforceIntegration object.\nYou can set up which entities you wan
 
 ## EXAMPLES
 
-### Example 1: Using the New-MgTeamworkWorkforceIntegration Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
 $params = @{
@@ -48,9 +47,6 @@ $params = @{
 }
 New-MgTeamworkWorkforceIntegration -BodyParameter $params
 ```
-
-This example shows how to use the New-MgTeamworkWorkforceIntegration Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -87,7 +83,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 workforceIntegration
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphWorkforceIntegration
@@ -118,7 +114,7 @@ Accept wildcard characters: False
 
 ### -Encryption
 workforceIntegrationEncryption
-To construct, please use Get-Help -Online and see NOTES section for ENCRYPTION properties and create a hash table.
+To construct, see NOTES section for ENCRYPTION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphWorkforceIntegrationEncryption
@@ -165,7 +161,7 @@ Accept wildcard characters: False
 
 ### -LastModifiedBy
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBY properties and create a hash table.
+To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet
@@ -180,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -SupportedEntities
-.
+workforceIntegrationSupportedEntities
 
 ```yaml
 Type: String
@@ -258,7 +254,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphWorkforceIntegration>`: workforceIntegration
+`BODYPARAMETER <IMicrosoftGraphWorkforceIntegration>`: workforceIntegration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -276,15 +272,15 @@ BODYPARAMETER `<IMicrosoftGraphWorkforceIntegration>`: workforceIntegration
     - `[Protocol <String>]`: workforceIntegrationEncryptionProtocol
     - `[Secret <String>]`: Encryption shared secret.
   - `[IsActive <Boolean?>]`: Indicates whether this workforce integration is currently active and available.
-  - `[SupportedEntities <String>]`: 
+  - `[SupportedEntities <String>]`: workforceIntegrationSupportedEntities
   - `[Url <String>]`: Workforce Integration URL for callbacks from the Shifts service.
 
-ENCRYPTION `<IMicrosoftGraphWorkforceIntegrationEncryption>`: workforceIntegrationEncryption
+`ENCRYPTION <IMicrosoftGraphWorkforceIntegrationEncryption>`: workforceIntegrationEncryption
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Protocol <String>]`: workforceIntegrationEncryptionProtocol
   - `[Secret <String>]`: Encryption shared secret.
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+`LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

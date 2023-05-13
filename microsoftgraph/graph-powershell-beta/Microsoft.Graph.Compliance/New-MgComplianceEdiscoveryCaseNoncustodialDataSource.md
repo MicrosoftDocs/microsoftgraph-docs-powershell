@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Compliance-help.xml
-Module Name: Microsoft.Graph.Compliance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/new-mgcomplianceediscoverycasenoncustodialdatasource
+﻿---
+external help file: Microsoft.Graph.Beta.Compliance-help.xml
+Module Name: Microsoft.Graph.Beta.Compliance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetacomplianceediscoverycasenoncustodialdatasource
 schema: 2.0.0
 ---
 
-# New-MgComplianceEdiscoveryCaseNoncustodialDataSource
+# New-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource
 
 ## SYNOPSIS
 Create a new noncustodialDataSource object.
@@ -14,7 +14,7 @@ Create a new noncustodialDataSource object.
 
 ### CreateExpanded (Default)
 ```
-New-MgComplianceEdiscoveryCaseNoncustodialDataSource -CaseId <String> [-AdditionalProperties <Hashtable>]
+New-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource -CaseId <String> [-AdditionalProperties <Hashtable>]
  [-ApplyHoldToSource] [-CreatedDateTime <DateTime>] [-DataSource <IMicrosoftGraphEdiscoveryDataSource>]
  [-DisplayName <String>] [-HoldStatus <String>] [-Id <String>] [-LastIndexOperation <Hashtable>]
  [-LastModifiedDateTime <DateTime>] [-ReleasedDateTime <DateTime>] [-Status <String>] [-WhatIf] [-Confirm]
@@ -23,13 +23,13 @@ New-MgComplianceEdiscoveryCaseNoncustodialDataSource -CaseId <String> [-Addition
 
 ### Create
 ```
-New-MgComplianceEdiscoveryCaseNoncustodialDataSource -CaseId <String>
+New-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource -CaseId <String>
  -BodyParameter <IMicrosoftGraphEdiscoveryNoncustodialDataSource> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgComplianceEdiscoveryCaseNoncustodialDataSource -InputObject <IComplianceIdentity>
+New-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource -InputObject <IComplianceIdentity>
  [-AdditionalProperties <Hashtable>] [-ApplyHoldToSource] [-CreatedDateTime <DateTime>]
  [-DataSource <IMicrosoftGraphEdiscoveryDataSource>] [-DisplayName <String>] [-HoldStatus <String>]
  [-Id <String>] [-LastIndexOperation <Hashtable>] [-LastModifiedDateTime <DateTime>]
@@ -38,7 +38,7 @@ New-MgComplianceEdiscoveryCaseNoncustodialDataSource -InputObject <IComplianceId
 
 ### CreateViaIdentity
 ```
-New-MgComplianceEdiscoveryCaseNoncustodialDataSource -InputObject <IComplianceIdentity>
+New-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource -InputObject <IComplianceIdentity>
  -BodyParameter <IMicrosoftGraphEdiscoveryNoncustodialDataSource> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -47,9 +47,9 @@ Create a new noncustodialDataSource object.
 
 ## EXAMPLES
 
-### Example 1: Using the New-MgComplianceEdiscoveryCaseNoncustodialDataSource Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Compliance
+Import-Module Microsoft.Graph.Beta.Compliance
 $params = @{
 	ApplyHoldToSource = $true
 	DataSource = @{
@@ -57,26 +57,20 @@ $params = @{
 		Email = "adelev@contoso.com"
 	}
 }
-New-MgComplianceEdiscoveryCaseNoncustodialDataSource -CaseId $caseId -BodyParameter $params
+New-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource -CaseId $caseId -BodyParameter $params
 ```
 
-This example shows how to use the New-MgComplianceEdiscoveryCaseNoncustodialDataSource Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the New-MgComplianceEdiscoveryCaseNoncustodialDataSource Cmdlet
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Compliance
+Import-Module Microsoft.Graph.Beta.Compliance
 $params = @{
 	ApplyHoldToSource = $false
 	DataSource = @{
 		"@odata.type" = "microsoft.graph.ediscovery.siteSource"
 	}
 }
-New-MgComplianceEdiscoveryCaseNoncustodialDataSource -CaseId $caseId -BodyParameter $params
+New-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource -CaseId $caseId -BodyParameter $params
 ```
-
-This example shows how to use the New-MgComplianceEdiscoveryCaseNoncustodialDataSource Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -112,7 +106,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 noncustodialDataSource
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEdiscoveryNoncustodialDataSource
@@ -158,7 +152,7 @@ Accept wildcard characters: False
 
 ### -DataSource
 dataSource
-To construct, please use Get-Help -Online and see NOTES section for DATASOURCE properties and create a hash table.
+To construct, see NOTES section for DATASOURCE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEdiscoveryDataSource
@@ -220,7 +214,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IComplianceIdentity
@@ -330,11 +324,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryNoncustodialDataSource
+### Microsoft.Graph.Beta.PowerShell.Models.IComplianceIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEdiscoveryNoncustodialDataSource
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryNoncustodialDataSource
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEdiscoveryNoncustodialDataSource
 ## NOTES
 
 ALIASES
@@ -344,7 +338,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphEdiscoveryNoncustodialDataSource>`: noncustodialDataSource
+`BODYPARAMETER <IMicrosoftGraphEdiscoveryNoncustodialDataSource>`: noncustodialDataSource
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CreatedDateTime <DateTime?>]`: Created date and time of the dataSourceContainer entity.
   - `[DisplayName <String>]`: Display name of the dataSourceContainer entity.
@@ -383,7 +377,7 @@ BODYPARAMETER `<IMicrosoftGraphEdiscoveryNoncustodialDataSource>`: noncustodialD
     - `[DisplayName <String>]`: The display name of the dataSource. This will be the name of the SharePoint site.
     - `[HoldStatus <String>]`: dataSourceHoldStatus
 
-DATASOURCE `<IMicrosoftGraphEdiscoveryDataSource>`: dataSource
+`DATASOURCE <IMicrosoftGraphEdiscoveryDataSource>`: dataSource
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -398,7 +392,7 @@ DATASOURCE `<IMicrosoftGraphEdiscoveryDataSource>`: dataSource
   - `[DisplayName <String>]`: The display name of the dataSource. This will be the name of the SharePoint site.
   - `[HoldStatus <String>]`: dataSourceHoldStatus
 
-INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
+`INPUTOBJECT <IComplianceIdentity>`: Identity Parameter
   - `[CaseId <String>]`: The unique identifier of case
   - `[CaseOperationId <String>]`: The unique identifier of caseOperation
   - `[CustodianId <String>]`: The unique identifier of custodian

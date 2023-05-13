@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.Governance-help.xml
-Module Name: Microsoft.Graph.Identity.Governance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancerolemanagementalertoperation
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.Governance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancerolemanagementalertoperation
 schema: 2.0.0
 ---
 
-# New-MgIdentityGovernanceRoleManagementAlertOperation
+# New-MgBetaIdentityGovernanceRoleManagementAlertOperation
 
 ## SYNOPSIS
 Create new navigation property to operations for identityGovernance
@@ -14,14 +14,14 @@ Create new navigation property to operations for identityGovernance
 
 ### CreateExpanded (Default)
 ```
-New-MgIdentityGovernanceRoleManagementAlertOperation [-AdditionalProperties <Hashtable>]
+New-MgBetaIdentityGovernanceRoleManagementAlertOperation [-AdditionalProperties <Hashtable>]
  [-CreatedDateTime <DateTime>] [-Id <String>] [-LastActionDateTime <DateTime>] [-ResourceLocation <String>]
  [-Status <String>] [-StatusDetail <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgIdentityGovernanceRoleManagementAlertOperation -BodyParameter <IMicrosoftGraphLongRunningOperation>
+New-MgBetaIdentityGovernanceRoleManagementAlertOperation -BodyParameter <IMicrosoftGraphLongRunningOperation>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -29,6 +29,16 @@ New-MgIdentityGovernanceRoleManagementAlertOperation -BodyParameter <IMicrosoftG
 Create new navigation property to operations for identityGovernance
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -49,7 +59,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 longRunningOperation
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphLongRunningOperation
@@ -81,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -194,10 +204,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphLongRunningOperation
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphLongRunningOperation
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphLongRunningOperation
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphLongRunningOperation
 ## NOTES
 
 ALIASES
@@ -207,9 +217,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphLongRunningOperation>`: longRunningOperation
+`BODYPARAMETER <IMicrosoftGraphLongRunningOperation>`: longRunningOperation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[CreatedDateTime <DateTime?>]`: The start time of the operation. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[LastActionDateTime <DateTime?>]`: The time of the last action in the operation. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[ResourceLocation <String>]`: URI of the resource that the operation is performed on.

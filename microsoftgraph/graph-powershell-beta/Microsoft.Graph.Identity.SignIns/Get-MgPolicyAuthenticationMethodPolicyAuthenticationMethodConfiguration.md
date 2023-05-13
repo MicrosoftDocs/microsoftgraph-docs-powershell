@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgpolicyauthenticationmethodpolicyauthenticationmethodconfiguration
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyauthenticationmethodpolicyauthenticationmethodconfiguration
 schema: 2.0.0
 ---
 
-# Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration
+# Get-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration
 
 ## SYNOPSIS
 Represents the settings for each authentication method.
@@ -15,22 +15,23 @@ Automatically expanded on GET /policies/authenticationMethodsPolicy.
 
 ### List (Default)
 ```
-Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration [-ExpandProperty <String[]>]
+Get-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration [-ExpandProperty <String[]>]
  [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration
+Get-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration
  -AuthenticationMethodConfigurationId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -InputObject <IIdentitySignInsIdentity>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration
+ -InputObject <IIdentitySignInsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -39,68 +40,47 @@ Automatically expanded on GET /policies/authenticationMethodsPolicy.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
-Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+Get-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId
 ```
 
-This example shows how to use the Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
-Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+Get-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId
 ```
 
-This example shows how to use the Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Using the Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet
+### EXAMPLE 3
 ```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
-Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+Get-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId
 ```
 
-This example shows how to use the Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 4: Using the Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet
+### EXAMPLE 4
 ```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
-Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+Get-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId
 ```
 
-This example shows how to use the Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 5: Using the Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet
+### EXAMPLE 5
 ```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
-Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+Get-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId
 ```
 
-This example shows how to use the Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 6: Using the Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet
+### EXAMPLE 6
 ```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
-Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+Get-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId
 ```
 
-This example shows how to use the Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 7: Using the Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet
+### EXAMPLE 7
 ```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
-Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+Get-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId
 ```
-
-This example shows how to use the Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -182,7 +162,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IIdentitySignInsIdentity
@@ -291,10 +271,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthenticationMethodConfiguration
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthenticationMethodConfiguration
 ## NOTES
 
 ALIASES
@@ -304,7 +284,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentitySignInsIdentity>`: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: The unique identifier of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
@@ -341,6 +321,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[IdentityUserFlowAttributeId <String>]`: The unique identifier of identityUserFlowAttribute
   - `[IdentityUserFlowId <String>]`: The unique identifier of identityUserFlow
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
+  - `[InvitationId <String>]`: The unique identifier of invitation
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   - `[MobilityManagementPolicyId <String>]`: The unique identifier of mobilityManagementPolicy

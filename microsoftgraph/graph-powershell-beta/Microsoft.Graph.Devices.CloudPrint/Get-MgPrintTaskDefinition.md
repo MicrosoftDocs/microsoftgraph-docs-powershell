@@ -1,71 +1,66 @@
----
-external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
-Module Name: Microsoft.Graph.Devices.CloudPrint
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/get-mgprinttaskdefinition
+﻿---
+external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
+Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprinttaskdefinition
 schema: 2.0.0
-ms.prod: cloud-printing
 ---
 
-# Get-MgPrintTaskDefinition
+# Get-MgBetaPrintTaskDefinition
 
 ## SYNOPSIS
-Get taskDefinitions from print
+Get details about a task definition.
+For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
 
 ## SYNTAX
 
-### List1 (Default)
+### List (Default)
 ```
-Get-MgPrintTaskDefinition [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
+Get-MgBetaPrintTaskDefinition [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
  [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### Get3
+### Get1
 ```
-Get-MgPrintTaskDefinition -PrintTaskDefinitionId <String> -PrintTaskId <String> [-ExpandProperty <String[]>]
+Get-MgBetaPrintTaskDefinition -PrintTaskDefinitionId <String> -PrintTaskId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+```
+
+### Get
+```
+Get-MgBetaPrintTaskDefinition -PrintTaskDefinitionId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
-### Get2
+### GetViaIdentity1
 ```
-Get-MgPrintTaskDefinition -PrintTaskDefinitionId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
-```
-
-### GetViaIdentity3
-```
-Get-MgPrintTaskDefinition -InputObject <IDevicesCloudPrintIdentity> [-ExpandProperty <String[]>]
+Get-MgBetaPrintTaskDefinition -InputObject <IDevicesCloudPrintIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity2
+### GetViaIdentity
 ```
-Get-MgPrintTaskDefinition -InputObject <IDevicesCloudPrintIdentity> [-ExpandProperty <String[]>]
+Get-MgBetaPrintTaskDefinition -InputObject <IDevicesCloudPrintIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get taskDefinitions from print
+Get details about a task definition.
+For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgPrintTaskDefinition Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Devices.CloudPrint
-Get-MgPrintTaskDefinition -PrintTaskDefinitionId $printTaskDefinitionId
+Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
+Get-MgBetaPrintTaskDefinition -PrintTaskDefinitionId $printTaskDefinitionId
 ```
 
-This example shows how to use the Get-MgPrintTaskDefinition Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Get-MgPrintTaskDefinition Cmdlet
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Devices.CloudPrint
-Get-MgPrintTaskDefinition
+Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
+Get-MgBetaPrintTaskDefinition
 ```
-
-This example shows how to use the Get-MgPrintTaskDefinition Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -74,7 +69,7 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -90,7 +85,7 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: List
 Aliases: CV
 
 Required: False
@@ -120,7 +115,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -132,11 +127,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDevicesCloudPrintIdentity
-Parameter Sets: GetViaIdentity3, GetViaIdentity2
+Parameter Sets: GetViaIdentity1, GetViaIdentity
 Aliases:
 
 Required: True
@@ -151,7 +146,7 @@ Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -166,7 +161,7 @@ The unique identifier of printTaskDefinition
 
 ```yaml
 Type: String
-Parameter Sets: Get3, Get2
+Parameter Sets: Get1, Get
 Aliases:
 
 Required: True
@@ -181,7 +176,7 @@ The unique identifier of printTask
 
 ```yaml
 Type: String
-Parameter Sets: Get3
+Parameter Sets: Get1
 Aliases:
 
 Required: True
@@ -211,7 +206,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -226,7 +221,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List1
+Parameter Sets: List
 Aliases: OrderBy
 
 Required: False
@@ -241,7 +236,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Parameter Sets: List
 Aliases: Limit
 
 Required: False
@@ -256,7 +251,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -271,10 +266,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IDevicesCloudPrintIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintTaskDefinition
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrintTaskDefinition
 ## NOTES
 
 ALIASES
@@ -284,9 +279,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
+`INPUTOBJECT <IDevicesCloudPrintIdentity>`: Identity Parameter
   - `[GroupId <String>]`: The unique identifier of group
   - `[PrintConnectorId <String>]`: The unique identifier of printConnector
+  - `[PrintDocumentId <String>]`: The unique identifier of printDocument
+  - `[PrintJobId <String>]`: The unique identifier of printJob
   - `[PrintOperationId <String>]`: The unique identifier of printOperation
   - `[PrintServiceEndpointId <String>]`: The unique identifier of printServiceEndpoint
   - `[PrintServiceId <String>]`: The unique identifier of printService

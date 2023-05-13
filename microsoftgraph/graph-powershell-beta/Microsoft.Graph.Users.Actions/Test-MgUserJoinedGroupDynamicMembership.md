@@ -1,52 +1,62 @@
----
-external help file: Microsoft.Graph.Users.Actions-help.xml
-Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/test-mguserjoinedgroupdynamicmembership
+﻿---
+external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.Users.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetauserjoinedgroupdynamicmembership
 schema: 2.0.0
 ---
 
-# Test-MgUserJoinedGroupDynamicMembership
+# Test-MgBetaUserJoinedGroupDynamicMembership
 
 ## SYNOPSIS
-Evaluate whether a user or device is or would be a member of a dynamic group.
-The membership rule is returned along with other details that were used in the evaluation.
-You can complete this operation in the following ways:
+Invoke action evaluateDynamicMembership
 
 ## SYNTAX
 
 ### EvaluateExpanded (Default)
 ```
-Test-MgUserJoinedGroupDynamicMembership -UserId <String> [-AdditionalProperties <Hashtable>]
+Test-MgBetaUserJoinedGroupDynamicMembership -UserId <String> [-AdditionalProperties <Hashtable>]
  [-MemberId <String>] [-MembershipRule <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Evaluate
 ```
-Test-MgUserJoinedGroupDynamicMembership -UserId <String>
+Test-MgBetaUserJoinedGroupDynamicMembership -UserId <String>
  -BodyParameter <IPaths1Hck503UsersUserIdJoinedgroupsMicrosoftGraphEvaluatedynamicmembershipPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### EvaluateViaIdentityExpanded
 ```
-Test-MgUserJoinedGroupDynamicMembership -InputObject <IUsersActionsIdentity>
+Test-MgBetaUserJoinedGroupDynamicMembership -InputObject <IUsersActionsIdentity>
  [-AdditionalProperties <Hashtable>] [-MemberId <String>] [-MembershipRule <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### EvaluateViaIdentity
 ```
-Test-MgUserJoinedGroupDynamicMembership -InputObject <IUsersActionsIdentity>
+Test-MgBetaUserJoinedGroupDynamicMembership -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths1Hck503UsersUserIdJoinedgroupsMicrosoftGraphEvaluatedynamicmembershipPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Evaluate whether a user or device is or would be a member of a dynamic group.
-The membership rule is returned along with other details that were used in the evaluation.
-You can complete this operation in the following ways:
+Invoke action evaluateDynamicMembership
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -67,7 +77,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths1Hck503UsersUserIdJoinedgroupsMicrosoftGraphEvaluatedynamicmembershipPostRequestbodyContentApplicationJsonSchema
@@ -83,7 +93,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersActionsIdentity
@@ -178,11 +188,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1Hck503UsersUserIdJoinedgroupsMicrosoftGraphEvaluatedynamicmembershipPostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Hck503UsersUserIdJoinedgroupsMicrosoftGraphEvaluatedynamicmembershipPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEvaluateDynamicMembershipResult
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEvaluateDynamicMembershipResult
 ## NOTES
 
 ALIASES
@@ -192,12 +202,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Hck503UsersUserIdJoinedgroupsMicrosoftGraphEvaluatedynamicmembershipPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1Hck503UsersUserIdJoinedgroupsMicrosoftGraphEvaluatedynamicmembershipPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[MemberId <String>]`: 
   - `[MembershipRule <String>]`: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
@@ -231,7 +241,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription

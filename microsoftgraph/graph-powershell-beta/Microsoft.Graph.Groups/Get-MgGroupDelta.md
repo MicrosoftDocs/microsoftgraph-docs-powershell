@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Groups-help.xml
-Module Name: Microsoft.Graph.Groups
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/get-mggroupdelta
+﻿---
+external help file: Microsoft.Graph.Beta.Groups-help.xml
+Module Name: Microsoft.Graph.Beta.Groups
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupdelta
 schema: 2.0.0
 ---
 
-# Get-MgGroupDelta
+# Get-MgBetaGroupDelta
 
 ## SYNOPSIS
 Invoke function delta
@@ -13,7 +13,7 @@ Invoke function delta
 ## SYNTAX
 
 ```
-Get-MgGroupDelta [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
+Get-MgBetaGroupDelta [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
  [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
@@ -22,23 +22,17 @@ Invoke function delta
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgGroupDelta Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Groups
-Get-MgGroupDelta
+Import-Module Microsoft.Graph.Beta.Groups
+Get-MgBetaGroupDelta
 ```
 
-This example shows how to use the Get-MgGroupDelta Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Get-MgGroupDelta Cmdlet
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Groups
-Get-MgGroupDelta -Property "displayName,description,mailNickname"
+Import-Module Microsoft.Graph.Beta.Groups
+Get-MgBetaGroupDelta -Property "displayName,description,mailNickname"
 ```
-
-This example shows how to use the Get-MgGroupDelta Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -185,7 +179,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroup1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroup
 ## NOTES
 
 ALIASES

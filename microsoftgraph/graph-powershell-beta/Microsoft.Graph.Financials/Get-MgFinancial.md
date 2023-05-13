@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Financials-help.xml
-Module Name: Microsoft.Graph.Financials
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.financials/get-mgfinancial
+﻿---
+external help file: Microsoft.Graph.Beta.Financials-help.xml
+Module Name: Microsoft.Graph.Beta.Financials
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancial
 schema: 2.0.0
 ---
 
-# Get-MgFinancial
+# Get-MgBetaFinancial
 
 ## SYNOPSIS
 Get financials
@@ -13,13 +13,27 @@ Get financials
 ## SYNTAX
 
 ```
-Get-MgFinancial [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaFinancial [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get financials
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -60,7 +74,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCompany
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCompany
 ## NOTES
 
 ALIASES

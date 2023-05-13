@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgidentitycustomauthenticationextension
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentitycustomauthenticationextension
 schema: 2.0.0
 ---
 
-# New-MgIdentityCustomAuthenticationExtension
+# New-MgBetaIdentityCustomAuthenticationExtension
 
 ## SYNOPSIS
 Create new navigation property to customAuthenticationExtensions for identity
@@ -14,7 +14,7 @@ Create new navigation property to customAuthenticationExtensions for identity
 
 ### CreateExpanded (Default)
 ```
-New-MgIdentityCustomAuthenticationExtension [-AdditionalProperties <Hashtable>]
+New-MgBetaIdentityCustomAuthenticationExtension [-AdditionalProperties <Hashtable>]
  [-AuthenticationConfiguration <Hashtable>]
  [-ClientConfiguration <IMicrosoftGraphCustomExtensionClientConfiguration>] [-Description <String>]
  [-DisplayName <String>] [-EndpointConfiguration <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm]
@@ -23,7 +23,7 @@ New-MgIdentityCustomAuthenticationExtension [-AdditionalProperties <Hashtable>]
 
 ### Create
 ```
-New-MgIdentityCustomAuthenticationExtension -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
+New-MgBetaIdentityCustomAuthenticationExtension -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -31,6 +31,20 @@ New-MgIdentityCustomAuthenticationExtension -BodyParameter <Hashtable> [-WhatIf]
 Create new navigation property to customAuthenticationExtensions for identity
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -81,7 +95,7 @@ Accept wildcard characters: False
 
 ### -ClientConfiguration
 customExtensionClientConfiguration
-To construct, please use Get-Help -Online and see NOTES section for CLIENTCONFIGURATION properties and create a hash table.
+To construct, see NOTES section for CLIENTCONFIGURATION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphCustomExtensionClientConfiguration
@@ -141,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -195,7 +209,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### System.Collections.Hashtable
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCustomAuthenticationExtension
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCustomAuthenticationExtension
 ## NOTES
 
 ALIASES
@@ -205,7 +219,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-CLIENTCONFIGURATION `<IMicrosoftGraphCustomExtensionClientConfiguration>`: customExtensionClientConfiguration
+`CLIENTCONFIGURATION <IMicrosoftGraphCustomExtensionClientConfiguration>`: customExtensionClientConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[TimeoutInMilliseconds <Int32?>]`: The max duration in milliseconds that Azure AD will wait for a response from the logic app before it shuts down the connection. The valid range is between 200 and 2000 milliseconds. Default duration is 1000.
 

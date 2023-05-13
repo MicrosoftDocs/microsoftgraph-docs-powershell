@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Applications-help.xml
-Module Name: Microsoft.Graph.Applications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgonpremisepublishingprofileconnectormemberofbyref
+﻿---
+external help file: Microsoft.Graph.Beta.Applications-help.xml
+Module Name: Microsoft.Graph.Beta.Applications
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofileconnectormemberofbyref
 schema: 2.0.0
 ---
 
-# Get-MgOnPremisePublishingProfileConnectorMemberOfByRef
+# Get-MgBetaOnPremisePublishingProfileConnectorMemberOfByRef
 
 ## SYNOPSIS
 The connectorGroup that the connector is a member of.
@@ -14,7 +14,7 @@ Read-only.
 ## SYNTAX
 
 ```
-Get-MgOnPremisePublishingProfileConnectorMemberOfByRef -ConnectorId <String>
+Get-MgBetaOnPremisePublishingProfileConnectorMemberOfByRef -ConnectorId <String>
  -OnPremisesPublishingProfileId <String> [-Filter <String>] [-Search <String>] [-Skip <Int32>]
  [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
@@ -24,6 +24,20 @@ The connectorGroup that the connector is a member of.
 Read-only.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 

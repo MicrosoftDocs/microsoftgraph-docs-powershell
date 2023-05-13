@@ -1,7 +1,7 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/new-mgsecurityalertv2
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityalertv2
 schema: 2.0.0
 ---
 
@@ -18,7 +18,7 @@ New-MgSecurityAlertV2 [-ActorDisplayName <String>] [-AdditionalProperties <Hasht
  [-AssignedTo <String>] [-Category <String>] [-Classification <String>]
  [-Comments <IMicrosoftGraphSecurityAlertComment[]>] [-CreatedDateTime <DateTime>] [-Description <String>]
  [-DetectionSource <String>] [-DetectorId <String>] [-Determination <String>]
- [-Evidence <IMicrosoftGraphSecurityAlertEvidence1[]>] [-FirstActivityDateTime <DateTime>] [-Id <String>]
+ [-Evidence <IMicrosoftGraphSecurityAlertEvidence[]>] [-FirstActivityDateTime <DateTime>] [-Id <String>]
  [-IncidentId <String>] [-IncidentWebUrl <String>] [-LastActivityDateTime <DateTime>]
  [-LastUpdateDateTime <DateTime>] [-MitreTechniques <String[]>] [-ProviderAlertId <String>]
  [-RecommendedActions <String>] [-ResolvedDateTime <DateTime>] [-ServiceSource <String>] [-Severity <String>]
@@ -35,6 +35,16 @@ New-MgSecurityAlertV2 -BodyParameter <IMicrosoftGraphSecurityAlert> [-WhatIf] [-
 Create new navigation property to alerts_v2 for security
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -100,7 +110,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 alert
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSecurityAlert
@@ -147,7 +157,7 @@ Accept wildcard characters: False
 
 ### -Comments
 Array of comments created by the Security Operations (SecOps) team during the alert management process.
-To construct, please use Get-Help -Online and see NOTES section for COMMENTS properties and create a hash table.
+To construct, see NOTES section for COMMENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSecurityAlertComment[]
@@ -238,10 +248,10 @@ Accept wildcard characters: False
 
 ### -Evidence
 Collection of evidence related to the alert.
-To construct, please use Get-Help -Online and see NOTES section for EVIDENCE properties and create a hash table.
+To construct, see NOTES section for EVIDENCE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityAlertEvidence1[]
+Type: IMicrosoftGraphSecurityAlertEvidence[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -557,7 +567,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSecurityAlert>`: alert
+`BODYPARAMETER <IMicrosoftGraphSecurityAlert>`: alert
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ActorDisplayName <String>]`: The adversary or activity group that is associated with this alert.
@@ -574,7 +584,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityAlert>`: alert
   - `[DetectionSource <String>]`: detectionSource
   - `[DetectorId <String>]`: The ID of the detector that triggered the alert.
   - `[Determination <String>]`: alertDetermination
-  - `[Evidence <IMicrosoftGraphSecurityAlertEvidence1[]>]`: Collection of evidence related to the alert.
+  - `[Evidence <IMicrosoftGraphSecurityAlertEvidence[]>]`: Collection of evidence related to the alert.
     - `[CreatedDateTime <DateTime?>]`: The time the evidence was created and added to the alert.
     - `[RemediationStatus <String>]`: evidenceRemediationStatus
     - `[RemediationStatusDetails <String>]`: Details about the remediation status.
@@ -598,12 +608,12 @@ BODYPARAMETER `<IMicrosoftGraphSecurityAlert>`: alert
   - `[ThreatFamilyName <String>]`: Threat family associated with this alert.
   - `[Title <String>]`: Brief identifying string value describing the alert.
 
-COMMENTS <IMicrosoftGraphSecurityAlertComment\[]>: Array of comments created by the Security Operations (SecOps) team during the alert management process.
+`COMMENTS <IMicrosoftGraphSecurityAlertComment[]>`: Array of comments created by the Security Operations (SecOps) team during the alert management process.
   - `[Comment <String>]`: The comment text.
   - `[CreatedByDisplayName <String>]`: The person or app name that submitted the comment.
   - `[CreatedDateTime <DateTime?>]`: The time when the comment was submitted.
 
-EVIDENCE <IMicrosoftGraphSecurityAlertEvidence1\[]>: Collection of evidence related to the alert.
+`EVIDENCE <IMicrosoftGraphSecurityAlertEvidence[]>`: Collection of evidence related to the alert.
   - `[CreatedDateTime <DateTime?>]`: The time the evidence was created and added to the alert.
   - `[RemediationStatus <String>]`: evidenceRemediationStatus
   - `[RemediationStatusDetails <String>]`: Details about the remediation status.

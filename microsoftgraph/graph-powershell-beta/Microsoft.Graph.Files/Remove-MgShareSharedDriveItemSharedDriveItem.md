@@ -1,27 +1,26 @@
----
-external help file: Microsoft.Graph.Files-help.xml
-Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/remove-mgshareshareddriveitemshareddriveitem
+﻿---
+external help file: Microsoft.Graph.Beta.Files-help.xml
+Module Name: Microsoft.Graph.Beta.Files
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetashareshareddriveitemshareddriveitem
 schema: 2.0.0
-ms.prod: files
 ---
 
-# Remove-MgShareSharedDriveItemSharedDriveItem
+# Remove-MgBetaShareSharedDriveItemSharedDriveItem
 
 ## SYNOPSIS
 Delete entity from shares
 
 ## SYNTAX
 
-### Delete1 (Default)
+### Delete (Default)
 ```
-Remove-MgShareSharedDriveItemSharedDriveItem -SharedDriveItemId <String> [-IfMatch <String>] [-PassThru]
+Remove-MgBetaShareSharedDriveItemSharedDriveItem -SharedDriveItemId <String> [-IfMatch <String>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity1
+### DeleteViaIdentity
 ```
-Remove-MgShareSharedDriveItemSharedDriveItem -InputObject <IFilesIdentity> [-IfMatch <String>] [-PassThru]
+Remove-MgBetaShareSharedDriveItemSharedDriveItem -InputObject <IFilesIdentity> [-IfMatch <String>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -30,38 +29,26 @@ Delete entity from shares
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Files
-
-Get-MgShareSharedDriveItemSharedDriveItem -SharedDriveItemId $sharedDriveItemId
+Import-Module Microsoft.Graph.Beta.Files
 ```
 
-This example shows how to use the Remove-MgShareSharedDriveItemSharedDriveItem Cmdlet.
+Get-MgBetaShareSharedDriveItemSharedDriveItem -SharedDriveItemId $sharedDriveItemId
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Code snippet
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Files
-
-Get-MgShareDriveItem -SharedDriveItemId $sharedDriveItemId
+Import-Module Microsoft.Graph.Beta.Files
 ```
 
-This example shows how to use the Remove-MgShareSharedDriveItemSharedDriveItem Cmdlet.
+Get-MgBetaShareDriveItem -SharedDriveItemId $sharedDriveItemId
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Code snippet
+### EXAMPLE 3
 ```powershell
-Import-Module Microsoft.Graph.Files
-
-Get-MgShareDriveItem -SharedDriveItemId $sharedDriveItemId -ExpandProperty "children"
+Import-Module Microsoft.Graph.Beta.Files
 ```
 
-This example shows how to use the Remove-MgShareSharedDriveItemSharedDriveItem Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Get-MgBetaShareDriveItem -SharedDriveItemId $sharedDriveItemId -ExpandProperty "children"
 
 ## PARAMETERS
 
@@ -82,11 +69,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IFilesIdentity
-Parameter Sets: DeleteViaIdentity1
+Parameter Sets: DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -116,7 +103,7 @@ The unique identifier of sharedDriveItem
 
 ```yaml
 Type: String
-Parameter Sets: Delete1
+Parameter Sets: Delete
 Aliases:
 
 Required: True
@@ -162,7 +149,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IFilesIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
 ## OUTPUTS
 
 ### System.Boolean
@@ -175,7 +162,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+`INPUTOBJECT <IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType

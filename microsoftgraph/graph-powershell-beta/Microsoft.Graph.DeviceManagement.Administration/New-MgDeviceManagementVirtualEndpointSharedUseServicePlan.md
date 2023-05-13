@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Administration
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointshareduseserviceplan
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointshareduseserviceplan
 schema: 2.0.0
 ---
 
-# New-MgDeviceManagementVirtualEndpointSharedUseServicePlan
+# New-MgBetaDeviceManagementVirtualEndpointSharedUseServicePlan
 
 ## SYNOPSIS
 Create new navigation property to sharedUseServicePlans for deviceManagement
@@ -14,14 +14,14 @@ Create new navigation property to sharedUseServicePlans for deviceManagement
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementVirtualEndpointSharedUseServicePlan [-AdditionalProperties <Hashtable>]
+New-MgBetaDeviceManagementVirtualEndpointSharedUseServicePlan [-AdditionalProperties <Hashtable>]
  [-DisplayName <String>] [-Id <String>] [-TotalCount <Int32>] [-UsedCount <Int32>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceManagementVirtualEndpointSharedUseServicePlan
+New-MgBetaDeviceManagementVirtualEndpointSharedUseServicePlan
  -BodyParameter <IMicrosoftGraphCloudPcSharedUseServicePlan> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -29,6 +29,16 @@ New-MgDeviceManagementVirtualEndpointSharedUseServicePlan
 Create new navigation property to sharedUseServicePlans for deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -49,7 +59,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 cloudPcSharedUseServicePlan
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphCloudPcSharedUseServicePlan
@@ -79,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -160,10 +170,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCloudPcSharedUseServicePlan
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcSharedUseServicePlan
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCloudPcSharedUseServicePlan
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcSharedUseServicePlan
 ## NOTES
 
 ALIASES
@@ -173,9 +183,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphCloudPcSharedUseServicePlan>`: cloudPcSharedUseServicePlan
+`BODYPARAMETER <IMicrosoftGraphCloudPcSharedUseServicePlan>`: cloudPcSharedUseServicePlan
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DisplayName <String>]`: The display name of the shared-use service plan.
   - `[TotalCount <Int32?>]`: Total number of shared-use service plans purchased by the customer.
   - `[UsedCount <Int32?>]`: The number of service plans that the account uses.

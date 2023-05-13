@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementmanageddeviceuser
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementmanageddeviceuser
 schema: 2.0.0
 ---
 
-# Get-MgDeviceManagementManagedDeviceUser
+# Get-MgBetaDeviceManagementManagedDeviceUser
 
 ## SYNOPSIS
 The primary users associated with the managed device.
@@ -13,7 +13,7 @@ The primary users associated with the managed device.
 ## SYNTAX
 
 ```
-Get-MgDeviceManagementManagedDeviceUser -ManagedDeviceId <String> [-ExpandProperty <String[]>]
+Get-MgBetaDeviceManagementManagedDeviceUser -ManagedDeviceId <String> [-ExpandProperty <String[]>]
  [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
@@ -22,6 +22,20 @@ Get-MgDeviceManagementManagedDeviceUser -ManagedDeviceId <String> [-ExpandProper
 The primary users associated with the managed device.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -198,7 +212,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUser1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUser
 ## NOTES
 
 ALIASES

@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Users.Actions-help.xml
-Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/copy-mguseronenotepagetosection
+﻿---
+external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.Users.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/copy-mgbetauseronenotepagetosection
 schema: 2.0.0
 ---
 
-# Copy-MgUserOnenotePageToSection
+# Copy-MgBetaUserOnenotePageToSection
 
 ## SYNOPSIS
 Copy a page to a specific section.
@@ -15,28 +15,28 @@ For copy operations, you follow an asynchronous calling pattern:  First call the
 
 ### CopyExpanded (Default)
 ```
-Copy-MgUserOnenotePageToSection -OnenotePageId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-GroupId <String>] [-Id <String>] [-SiteCollectionId <String>] [-SiteId <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Copy-MgBetaUserOnenotePageToSection -OnenotePageId <String> -UserId <String>
+ [-AdditionalProperties <Hashtable>] [-GroupId <String>] [-Id <String>] [-SiteCollectionId <String>]
+ [-SiteId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Copy
 ```
-Copy-MgUserOnenotePageToSection -OnenotePageId <String> -UserId <String>
+Copy-MgBetaUserOnenotePageToSection -OnenotePageId <String> -UserId <String>
  -BodyParameter <IPathsEy9Pr2UsersUserIdOnenotePagesOnenotepageIdMicrosoftGraphCopytosectionPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CopyViaIdentityExpanded
 ```
-Copy-MgUserOnenotePageToSection -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
+Copy-MgBetaUserOnenotePageToSection -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
  [-GroupId <String>] [-Id <String>] [-SiteCollectionId <String>] [-SiteId <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### CopyViaIdentity
 ```
-Copy-MgUserOnenotePageToSection -InputObject <IUsersActionsIdentity>
+Copy-MgBetaUserOnenotePageToSection -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPathsEy9Pr2UsersUserIdOnenotePagesOnenotepageIdMicrosoftGraphCopytosectionPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -47,19 +47,16 @@ For copy operations, you follow an asynchronous calling pattern:  First call the
 
 ## EXAMPLES
 
-### Example 1: Using the Copy-MgUserOnenotePageToSection Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Users.Actions
+Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
 	Id = "id-value"
 	GroupId = "groupId-value"
 }
 # A UPN can also be used as -UserId.
-Copy-MgUserOnenotePageToSection -UserId $userId -OnenotePageId $onenotePageId -BodyParameter $params
+Copy-MgBetaUserOnenotePageToSection -UserId $userId -OnenotePageId $onenotePageId -BodyParameter $params
 ```
-
-This example shows how to use the Copy-MgUserOnenotePageToSection Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -80,7 +77,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPathsEy9Pr2UsersUserIdOnenotePagesOnenotepageIdMicrosoftGraphCopytosectionPostRequestbodyContentApplicationJsonSchema
@@ -126,7 +123,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersActionsIdentity
@@ -236,11 +233,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsEy9Pr2UsersUserIdOnenotePagesOnenotepageIdMicrosoftGraphCopytosectionPostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsEy9Pr2UsersUserIdOnenotePagesOnenotepageIdMicrosoftGraphCopytosectionPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnenoteOperation
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnenoteOperation
 ## NOTES
 
 ALIASES
@@ -250,14 +247,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsEy9Pr2UsersUserIdOnenotePagesOnenotepageIdMicrosoftGraphCopytosectionPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsEy9Pr2UsersUserIdOnenotePagesOnenotepageIdMicrosoftGraphCopytosectionPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[GroupId <String>]`: 
   - `[Id <String>]`: 
   - `[SiteCollectionId <String>]`: 
   - `[SiteId <String>]`: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
@@ -291,7 +288,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription

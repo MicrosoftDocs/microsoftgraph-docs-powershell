@@ -1,7 +1,7 @@
----
+﻿---
 external help file: Microsoft.Graph.Compliance-help.xml
 Module Name: Microsoft.Graph.Compliance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/get-mgcompliance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/get-mgcompliance
 schema: 2.0.0
 ---
 
@@ -20,6 +20,20 @@ Get-MgCompliance [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonPar
 Get compliance
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 

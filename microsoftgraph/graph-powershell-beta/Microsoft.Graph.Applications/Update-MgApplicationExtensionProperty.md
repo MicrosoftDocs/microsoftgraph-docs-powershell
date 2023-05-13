@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Applications-help.xml
-Module Name: Microsoft.Graph.Applications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/update-mgapplicationextensionproperty
+﻿---
+external help file: Microsoft.Graph.Beta.Applications-help.xml
+Module Name: Microsoft.Graph.Beta.Applications
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaapplicationextensionproperty
 schema: 2.0.0
 ---
 
-# Update-MgApplicationExtensionProperty
+# Update-MgBetaApplicationExtensionProperty
 
 ## SYNOPSIS
 Update the navigation property extensionProperties in applications
@@ -14,36 +14,50 @@ Update the navigation property extensionProperties in applications
 
 ### UpdateExpanded (Default)
 ```
-Update-MgApplicationExtensionProperty -ApplicationId <String> -ExtensionPropertyId <String>
+Update-MgBetaApplicationExtensionProperty -ApplicationId <String> -ExtensionPropertyId <String>
  [-AdditionalProperties <Hashtable>] [-AppDisplayName <String>] [-DataType <String>]
  [-DeletedDateTime <DateTime>] [-Id <String>] [-IsMultiValued] [-IsSyncedFromOnPremises] [-Name <String>]
- [-TargetObjects <String[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TargetObjects <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgApplicationExtensionProperty -ApplicationId <String> -ExtensionPropertyId <String>
- -BodyParameter <IMicrosoftGraphExtensionProperty1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaApplicationExtensionProperty -ApplicationId <String> -ExtensionPropertyId <String>
+ -BodyParameter <IMicrosoftGraphExtensionProperty> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgApplicationExtensionProperty -InputObject <IApplicationsIdentity> [-AdditionalProperties <Hashtable>]
- [-AppDisplayName <String>] [-DataType <String>] [-DeletedDateTime <DateTime>] [-Id <String>] [-IsMultiValued]
- [-IsSyncedFromOnPremises] [-Name <String>] [-TargetObjects <String[]>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaApplicationExtensionProperty -InputObject <IApplicationsIdentity>
+ [-AdditionalProperties <Hashtable>] [-AppDisplayName <String>] [-DataType <String>]
+ [-DeletedDateTime <DateTime>] [-Id <String>] [-IsMultiValued] [-IsSyncedFromOnPremises] [-Name <String>]
+ [-TargetObjects <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgApplicationExtensionProperty -InputObject <IApplicationsIdentity>
- -BodyParameter <IMicrosoftGraphExtensionProperty1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaApplicationExtensionProperty -InputObject <IApplicationsIdentity>
+ -BodyParameter <IMicrosoftGraphExtensionProperty> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property extensionProperties in applications
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -95,10 +109,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 extensionProperty
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExtensionProperty1
+Type: IMicrosoftGraphExtensionProperty
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -160,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -177,7 +191,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IApplicationsIdentity
@@ -230,21 +244,6 @@ Supports $filter (eq).
 ```yaml
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -307,11 +306,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExtensionProperty1
+### Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphExtensionProperty
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphExtensionProperty
 ## NOTES
 
 ALIASES
@@ -321,10 +320,10 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphExtensionProperty1>`: extensionProperty
+`BODYPARAMETER <IMicrosoftGraphExtensionProperty>`: extensionProperty
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AppDisplayName <String>]`: Display name of the application object on which this extension property is defined. Read-only.
   - `[DataType <String>]`: Specifies the data type of the value the extension property can hold. Following values are supported. Not nullable. Binary - 256 bytes maximumBooleanDateTime - Must be specified in ISO 8601 format. Will be stored in UTC.Integer - 32-bit value.LargeInteger - 64-bit value.String - 256 characters maximum
   - `[IsMultiValued <Boolean?>]`: 
@@ -332,7 +331,7 @@ BODYPARAMETER `<IMicrosoftGraphExtensionProperty1>`: extensionProperty
   - `[Name <String>]`: Name of the extension property. Not nullable. Supports $filter (eq).
   - `[TargetObjects <String[]>]`: Following values are supported. Not nullable. UserGroupAdministrativeUnitApplicationDeviceOrganization
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+`INPUTOBJECT <IApplicationsIdentity>`: Identity Parameter
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
   - `[ApplicationId <String>]`: The unique identifier of application

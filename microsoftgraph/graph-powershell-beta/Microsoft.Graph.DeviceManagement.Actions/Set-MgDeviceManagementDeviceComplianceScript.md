@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/set-mgdevicemanagementdevicecompliancescript
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/set-mgbetadevicemanagementdevicecompliancescript
 schema: 2.0.0
 ---
 
-# Set-MgDeviceManagementDeviceComplianceScript
+# Set-MgBetaDeviceManagementDeviceComplianceScript
 
 ## SYNOPSIS
 Invoke action assign
@@ -14,7 +14,7 @@ Invoke action assign
 
 ### AssignExpanded (Default)
 ```
-Set-MgDeviceManagementDeviceComplianceScript -DeviceComplianceScriptId <String>
+Set-MgBetaDeviceManagementDeviceComplianceScript -DeviceComplianceScriptId <String>
  [-AdditionalProperties <Hashtable>]
  [-DeviceHealthScriptAssignments <IMicrosoftGraphDeviceHealthScriptAssignment[]>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -22,14 +22,14 @@ Set-MgDeviceManagementDeviceComplianceScript -DeviceComplianceScriptId <String>
 
 ### Assign
 ```
-Set-MgDeviceManagementDeviceComplianceScript -DeviceComplianceScriptId <String>
+Set-MgBetaDeviceManagementDeviceComplianceScript -DeviceComplianceScriptId <String>
  -BodyParameter <IPathsQg6Va1DevicemanagementDevicecompliancescriptsDevicecompliancescriptIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### AssignViaIdentityExpanded
 ```
-Set-MgDeviceManagementDeviceComplianceScript -InputObject <IDeviceManagementActionsIdentity>
+Set-MgBetaDeviceManagementDeviceComplianceScript -InputObject <IDeviceManagementActionsIdentity>
  [-AdditionalProperties <Hashtable>]
  [-DeviceHealthScriptAssignments <IMicrosoftGraphDeviceHealthScriptAssignment[]>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -37,7 +37,7 @@ Set-MgDeviceManagementDeviceComplianceScript -InputObject <IDeviceManagementActi
 
 ### AssignViaIdentity
 ```
-Set-MgDeviceManagementDeviceComplianceScript -InputObject <IDeviceManagementActionsIdentity>
+Set-MgBetaDeviceManagementDeviceComplianceScript -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPathsQg6Va1DevicemanagementDevicecompliancescriptsDevicecompliancescriptIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -46,6 +46,20 @@ Set-MgDeviceManagementDeviceComplianceScript -InputObject <IDeviceManagementActi
 Invoke action assign
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -66,7 +80,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPathsQg6Va1DevicemanagementDevicecompliancescriptsDevicecompliancescriptIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema
@@ -97,7 +111,7 @@ Accept wildcard characters: False
 
 ### -DeviceHealthScriptAssignments
 .
-To construct, please use Get-Help -Online and see NOTES section for DEVICEHEALTHSCRIPTASSIGNMENTS properties and create a hash table.
+To construct, see NOTES section for DEVICEHEALTHSCRIPTASSIGNMENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceHealthScriptAssignment[]
@@ -113,7 +127,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementActionsIdentity
@@ -178,8 +192,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-### Microsoft.Graph.PowerShell.Models.IPathsQg6Va1DevicemanagementDevicecompliancescriptsDevicecompliancescriptIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsQg6Va1DevicemanagementDevicecompliancescriptsDevicecompliancescriptIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### System.Boolean
@@ -192,31 +206,31 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsQg6Va1DevicemanagementDevicecompliancescriptsDevicecompliancescriptIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsQg6Va1DevicemanagementDevicecompliancescriptsDevicecompliancescriptIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeviceHealthScriptAssignments <IMicrosoftGraphDeviceHealthScriptAssignment[]>]`: 
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[RunRemediationScript <Boolean?>]`: Determine whether we want to run detection script only or run both detection script and remediation script
     - `[RunSchedule <IMicrosoftGraphDeviceHealthScriptRunSchedule>]`: Base type of Device health script run schedule.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Interval <Int32?>]`: The x value of every x hours for hourly schedule, every x days for Daily Schedule, every x weeks for weekly schedule, every x months for Monthly Schedule. Valid values 1 to 23
-    - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
+    - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
       - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
-DEVICEHEALTHSCRIPTASSIGNMENTS <IMicrosoftGraphDeviceHealthScriptAssignment\[]>: .
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`DEVICEHEALTHSCRIPTASSIGNMENTS <IMicrosoftGraphDeviceHealthScriptAssignment[]>`: .
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[RunRemediationScript <Boolean?>]`: Determine whether we want to run detection script only or run both detection script and remediation script
   - `[RunSchedule <IMicrosoftGraphDeviceHealthScriptRunSchedule>]`: Base type of Device health script run schedule.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Interval <Int32?>]`: The x value of every x hours for hourly schedule, every x days for Daily Schedule, every x weeks for weekly schedule, every x months for Monthly Schedule. Valid values 1 to 23
-  - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
+  - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
     - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
-INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[AlertRecordId <String>]`: The unique identifier of alertRecord
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: The unique identifier of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: The unique identifier of androidForWorkEnrollmentProfile
@@ -260,7 +274,6 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[MicrosoftTunnelSiteId <String>]`: The unique identifier of microsoftTunnelSite
   - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
   - `[NotificationMessageTemplateId <String>]`: The unique identifier of notificationMessageTemplate
-  - `[OemWarrantyInformationOnboardingId <String>]`: The unique identifier of oemWarrantyInformationOnboarding
   - `[RemoteAssistancePartnerId <String>]`: The unique identifier of remoteAssistancePartner
   - `[RoleScopeTagId <String>]`: The unique identifier of roleScopeTag
   - `[WindowsAutopilotDeploymentProfileId <String>]`: The unique identifier of windowsAutopilotDeploymentProfile

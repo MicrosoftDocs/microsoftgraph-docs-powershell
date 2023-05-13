@@ -1,7 +1,7 @@
----
+﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgreportsecurityattacksimulationrepeatoffender
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsecurityattacksimulationrepeatoffender
 schema: 2.0.0
 ---
 
@@ -21,6 +21,20 @@ Get-MgReportSecurityAttackSimulationRepeatOffender [-Count] [-Filter <String>] [
 Invoke function getAttackSimulationRepeatOffenders
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 

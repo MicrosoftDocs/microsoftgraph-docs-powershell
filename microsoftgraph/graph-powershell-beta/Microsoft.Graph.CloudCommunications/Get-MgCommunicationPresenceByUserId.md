@@ -1,26 +1,26 @@
----
-external help file: Microsoft.Graph.CloudCommunications-help.xml
-Module Name: Microsoft.Graph.CloudCommunications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationpresencebyuserid
+﻿---
+external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
+Module Name: Microsoft.Graph.Beta.CloudCommunications
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationpresencebyuserid
 schema: 2.0.0
 ---
 
-# Get-MgCommunicationPresenceByUserId
+# Get-MgBetaCommunicationPresenceByUserId
 
 ## SYNOPSIS
 Get the presence information for multiple users.
 
 ## SYNTAX
 
-### GetExpanded1 (Default)
+### GetExpanded (Default)
 ```
-Get-MgCommunicationPresenceByUserId [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Get-MgBetaCommunicationPresenceByUserId [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
-### Get1
+### Get
 ```
-Get-MgCommunicationPresenceByUserId
+Get-MgBetaCommunicationPresenceByUserId
  -BodyParameter <IPaths10WpgkzCommunicationsMicrosoftGraphGetpresencesbyuseridPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -30,20 +30,17 @@ Get the presence information for multiple users.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgCommunicationPresenceByUserId Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.CloudCommunications
+Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
 	Ids = @(
 		"fa8bf3dc-eca7-46b7-bad1-db199b62afc3"
 		"66825e03-7ef5-42da-9069-724602c31f6b"
 	)
 }
-Get-MgCommunicationPresenceByUserId -BodyParameter $params
+Get-MgBetaCommunicationPresenceByUserId -BodyParameter $params
 ```
-
-This example shows how to use the Get-MgCommunicationPresenceByUserId Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -52,7 +49,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: GetExpanded1
+Parameter Sets: GetExpanded
 Aliases:
 
 Required: False
@@ -64,11 +61,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths10WpgkzCommunicationsMicrosoftGraphGetpresencesbyuseridPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Get1
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -83,7 +80,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String[]
-Parameter Sets: GetExpanded1
+Parameter Sets: GetExpanded
 Aliases:
 
 Required: False
@@ -129,10 +126,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths10WpgkzCommunicationsMicrosoftGraphGetpresencesbyuseridPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths10WpgkzCommunicationsMicrosoftGraphGetpresencesbyuseridPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPresence1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPresence
 ## NOTES
 
 ALIASES
@@ -142,7 +139,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths10WpgkzCommunicationsMicrosoftGraphGetpresencesbyuseridPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths10WpgkzCommunicationsMicrosoftGraphGetpresencesbyuseridPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Ids <String[]>]`: 
 

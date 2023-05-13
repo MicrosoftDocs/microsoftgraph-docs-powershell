@@ -1,7 +1,7 @@
----
+﻿---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.notes/new-mggrouponenotepage
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mggrouponenotepage
 schema: 2.0.0
 ---
 
@@ -12,7 +12,7 @@ Create new navigation property to pages for groups
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
 New-MgGroupOnenotePage -GroupId <String> [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>]
  [-ContentUrl <String>] [-CreatedByAppId <String>] [-CreatedDateTime <DateTime>] [-Id <String>]
@@ -21,13 +21,13 @@ New-MgGroupOnenotePage -GroupId <String> [-AdditionalProperties <Hashtable>] [-C
  [-Title <String>] [-UserTags <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
 New-MgGroupOnenotePage -GroupId <String> -BodyParameter <IMicrosoftGraphOnenotePage> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded1
+### CreateViaIdentityExpanded
 ```
 New-MgGroupOnenotePage -InputObject <INotesIdentity> [-AdditionalProperties <Hashtable>]
  [-ContentInputFile <String>] [-ContentUrl <String>] [-CreatedByAppId <String>] [-CreatedDateTime <DateTime>]
@@ -36,7 +36,7 @@ New-MgGroupOnenotePage -InputObject <INotesIdentity> [-AdditionalProperties <Has
  [-Self <String>] [-Title <String>] [-UserTags <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentity1
+### CreateViaIdentity
 ```
 New-MgGroupOnenotePage -InputObject <INotesIdentity> -BodyParameter <IMicrosoftGraphOnenotePage> [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -47,6 +47,20 @@ Create new navigation property to pages for groups
 
 ## EXAMPLES
 
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -54,7 +68,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -66,11 +80,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 onenotePage
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphOnenotePage
-Parameter Sets: Create1, CreateViaIdentity1
+Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -85,7 +99,7 @@ Input File for Content (The page's HTML content.)
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -101,7 +115,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -117,7 +131,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -135,7 +149,7 @@ Read-only.
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -150,7 +164,7 @@ The unique identifier of group
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, Create1
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -166,7 +180,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -178,11 +192,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: INotesIdentity
-Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -200,7 +214,7 @@ Read-only.
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -216,7 +230,7 @@ Read-only.
 
 ```yaml
 Type: Int32
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -228,11 +242,11 @@ Accept wildcard characters: False
 
 ### -Links
 pageLinks
-To construct, please use Get-Help -Online and see NOTES section for LINKS properties and create a hash table.
+To construct, see NOTES section for LINKS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPageLinks
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -248,7 +262,7 @@ Read-only.
 
 ```yaml
 Type: Int32
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -260,11 +274,11 @@ Accept wildcard characters: False
 
 ### -ParentNotebook
 notebook
-To construct, please use Get-Help -Online and see NOTES section for PARENTNOTEBOOK properties and create a hash table.
+To construct, see NOTES section for PARENTNOTEBOOK properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphNotebook
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -276,11 +290,11 @@ Accept wildcard characters: False
 
 ### -ParentSection
 onenoteSection
-To construct, please use Get-Help -Online and see NOTES section for PARENTSECTION properties and create a hash table.
+To construct, see NOTES section for PARENTSECTION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphOnenoteSection
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -296,7 +310,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -311,7 +325,7 @@ The title of the page.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -326,7 +340,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -386,7 +400,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphOnenotePage>`: onenotePage
+`BODYPARAMETER <IMicrosoftGraphOnenotePage>`: onenotePage
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CreatedDateTime <DateTime?>]`: The date and time when the page was created. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
   - `[Self <String>]`: The endpoint where you can get details about the page. Read-only.
@@ -463,7 +477,7 @@ BODYPARAMETER `<IMicrosoftGraphOnenotePage>`: onenotePage
   - `[Title <String>]`: The title of the page.
   - `[UserTags <String[]>]`: 
 
-INPUTOBJECT `<INotesIdentity>`: Identity Parameter
+`INPUTOBJECT <INotesIdentity>`: Identity Parameter
   - `[GroupId <String>]`: The unique identifier of group
   - `[NotebookId <String>]`: The unique identifier of notebook
   - `[OnenoteOperationId <String>]`: The unique identifier of onenoteOperation
@@ -474,14 +488,14 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
   - `[SiteId <String>]`: The unique identifier of site
   - `[UserId <String>]`: The unique identifier of user
 
-LINKS `<IMicrosoftGraphPageLinks>`: pageLinks
+`LINKS <IMicrosoftGraphPageLinks>`: pageLinks
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[OneNoteClientUrl <IMicrosoftGraphExternalLink>]`: externalLink
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Href <String>]`: The URL of the link.
   - `[OneNoteWebUrl <IMicrosoftGraphExternalLink>]`: externalLink
 
-PARENTNOTEBOOK `<IMicrosoftGraphNotebook>`: notebook
+`PARENTNOTEBOOK <IMicrosoftGraphNotebook>`: notebook
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -557,7 +571,7 @@ PARENTNOTEBOOK `<IMicrosoftGraphNotebook>`: notebook
   - `[SectionsUrl <String>]`: The URL for the sections navigation property, which returns all the sections in the notebook. Read-only.
   - `[UserRole <String>]`: onenoteUserRole
 
-PARENTSECTION `<IMicrosoftGraphOnenoteSection>`: onenoteSection
+`PARENTSECTION <IMicrosoftGraphOnenoteSection>`: onenoteSection
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

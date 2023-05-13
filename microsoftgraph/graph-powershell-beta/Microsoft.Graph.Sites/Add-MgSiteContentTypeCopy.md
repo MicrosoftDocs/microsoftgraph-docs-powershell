@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Sites-help.xml
-Module Name: Microsoft.Graph.Sites
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/add-mgsitecontenttypecopy
+﻿---
+external help file: Microsoft.Graph.Beta.Sites-help.xml
+Module Name: Microsoft.Graph.Beta.Sites
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/add-mgbetasitecontenttypecopy
 schema: 2.0.0
 ---
 
-# Add-MgSiteContentTypeCopy
+# Add-MgBetaSiteContentTypeCopy
 
 ## SYNOPSIS
 Add a copy of a [content type][contentType] from a [site][site] to a [list][list].
@@ -14,26 +14,26 @@ Add a copy of a [content type][contentType] from a [site][site] to a [list][list
 
 ### AddExpanded (Default)
 ```
-Add-MgSiteContentTypeCopy -SiteId <String> [-AdditionalProperties <Hashtable>] [-ContentType <String>]
+Add-MgBetaSiteContentTypeCopy -SiteId <String> [-AdditionalProperties <Hashtable>] [-ContentType <String>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Add
 ```
-Add-MgSiteContentTypeCopy -SiteId <String>
+Add-MgBetaSiteContentTypeCopy -SiteId <String>
  -BodyParameter <IPaths1T475ZjSitesSiteIdContenttypesMicrosoftGraphAddcopyPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### AddViaIdentityExpanded
 ```
-Add-MgSiteContentTypeCopy -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
+Add-MgBetaSiteContentTypeCopy -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
  [-ContentType <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### AddViaIdentity
 ```
-Add-MgSiteContentTypeCopy -InputObject <ISitesIdentity>
+Add-MgBetaSiteContentTypeCopy -InputObject <ISitesIdentity>
  -BodyParameter <IPaths1T475ZjSitesSiteIdContenttypesMicrosoftGraphAddcopyPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -43,20 +43,16 @@ Add a copy of a [content type][contentType] from a [site][site] to a [list][list
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Sites
+Import-Module Microsoft.Graph.Beta.Sites
+```
 
 $params = @{
 	ContentType = "https://graph.microsoft.com/v1.0/sites/{site-id}/contentTypes/0x0101"
 }
 
-Add-MgSiteListContentTypeCopy -SiteId $siteId -ListId $listId -BodyParameter $params
-```
-
-This example shows how to use the Add-MgSiteContentTypeCopy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Add-MgBetaSiteListContentTypeCopy -SiteId $siteId -ListId $listId -BodyParameter $params
 
 ## PARAMETERS
 
@@ -77,7 +73,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths1T475ZjSitesSiteIdContenttypesMicrosoftGraphAddcopyPostRequestbodyContentApplicationJsonSchema
@@ -108,7 +104,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ISitesIdentity
@@ -173,11 +169,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1T475ZjSitesSiteIdContenttypesMicrosoftGraphAddcopyPostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.ISitesIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1T475ZjSitesSiteIdContenttypesMicrosoftGraphAddcopyPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContentType1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphContentType
 ## NOTES
 
 ALIASES
@@ -187,11 +183,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1T475ZjSitesSiteIdContenttypesMicrosoftGraphAddcopyPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1T475ZjSitesSiteIdContenttypesMicrosoftGraphAddcopyPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ContentType <String>]`: 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+`INPUTOBJECT <ISitesIdentity>`: Identity Parameter
   - `[BaseItemId <String>]`: The unique identifier of baseItem
   - `[BitlockerRecoveryKeyId <String>]`: The unique identifier of bitlockerRecoveryKey
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
@@ -209,17 +205,23 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
   - `[Interval <String>]`: Usage: interval='{interval}'
+  - `[ItemActivityId <String>]`: The unique identifier of itemActivity
+  - `[ItemActivityOldId <String>]`: The unique identifier of itemActivityOLD
+  - `[ItemActivityStatId <String>]`: The unique identifier of itemActivityStat
   - `[ListId <String>]`: The unique identifier of list
-  - `[ListId1 <String>]`: Usage: listId='{listId}'
   - `[ListItemId <String>]`: The unique identifier of listItem
   - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
   - `[NotebookId <String>]`: The unique identifier of notebook
+  - `[OnenoteOperationId <String>]`: The unique identifier of onenoteOperation
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
+  - `[OnenoteResourceId <String>]`: The unique identifier of onenoteResource
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
   - `[Path <String>]`: Usage: path='{path}'
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[RelationId <String>]`: The unique identifier of relation
   - `[RichLongRunningOperationId <String>]`: The unique identifier of richLongRunningOperation
+  - `[SectionGroupId <String>]`: The unique identifier of sectionGroup
+  - `[SectionGroupId1 <String>]`: The unique identifier of sectionGroup
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SensitivityLabelId1 <String>]`: The unique identifier of sensitivityLabel
   - `[SetId <String>]`: The unique identifier of set
@@ -228,7 +230,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SiteId1 <String>]`: The unique identifier of site
   - `[SitePageId <String>]`: The unique identifier of sitePage
   - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
-  - `[StoreId <String>]`: The unique identifier of store
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term

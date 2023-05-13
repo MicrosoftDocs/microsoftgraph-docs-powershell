@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementreportnoncompliantdeviceandsettingreport
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportnoncompliantdeviceandsettingreport
 schema: 2.0.0
 ---
 
-# Get-MgDeviceManagementReportNoncompliantDeviceAndSettingReport
+# Get-MgBetaDeviceManagementReportNoncompliantDeviceAndSettingReport
 
 ## SYNOPSIS
 Invoke action getNoncompliantDevicesAndSettingsReport
@@ -14,7 +14,7 @@ Invoke action getNoncompliantDevicesAndSettingsReport
 
 ### GetExpanded (Default)
 ```
-Get-MgDeviceManagementReportNoncompliantDeviceAndSettingReport -OutFile <String>
+Get-MgBetaDeviceManagementReportNoncompliantDeviceAndSettingReport -OutFile <String>
  [-AdditionalProperties <Hashtable>] [-Filter <String>] [-GroupBy <String[]>] [-Name <String>]
  [-Property <String[]>] [-Search <String>] [-SessionId <String>] [-Skip <Int32>] [-Sort <String[]>]
  [-Top <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -22,7 +22,7 @@ Get-MgDeviceManagementReportNoncompliantDeviceAndSettingReport -OutFile <String>
 
 ### Get
 ```
-Get-MgDeviceManagementReportNoncompliantDeviceAndSettingReport -OutFile <String>
+Get-MgBetaDeviceManagementReportNoncompliantDeviceAndSettingReport -OutFile <String>
  -BodyParameter <IPaths11Lc6EuDevicemanagementReportsMicrosoftGraphGetnoncompliantdevicesandsettingsreportPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -31,6 +31,20 @@ Get-MgDeviceManagementReportNoncompliantDeviceAndSettingReport -OutFile <String>
 Invoke action getNoncompliantDevicesAndSettingsReport
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -51,7 +65,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths11Lc6EuDevicemanagementReportsMicrosoftGraphGetnoncompliantdevicesandsettingsreportPostRequestbodyContentApplicationJsonSchema
@@ -266,7 +280,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths11Lc6EuDevicemanagementReportsMicrosoftGraphGetnoncompliantdevicesandsettingsreportPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths11Lc6EuDevicemanagementReportsMicrosoftGraphGetnoncompliantdevicesandsettingsreportPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### System.Boolean
@@ -279,7 +293,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths11Lc6EuDevicemanagementReportsMicrosoftGraphGetnoncompliantdevicesandsettingsreportPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths11Lc6EuDevicemanagementReportsMicrosoftGraphGetnoncompliantdevicesandsettingsreportPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Filter <String>]`: 
   - `[GroupBy <String[]>]`: 

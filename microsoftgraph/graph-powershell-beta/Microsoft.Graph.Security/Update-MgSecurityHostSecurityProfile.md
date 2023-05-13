@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecurityhostsecurityprofile
+﻿---
+external help file: Microsoft.Graph.Beta.Security-help.xml
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityhostsecurityprofile
 schema: 2.0.0
 ---
 
-# Update-MgSecurityHostSecurityProfile
+# Update-MgBetaSecurityHostSecurityProfile
 
 ## SYNOPSIS
 Update the navigation property hostSecurityProfiles in security
@@ -14,44 +14,56 @@ Update the navigation property hostSecurityProfiles in security
 
 ### UpdateExpanded (Default)
 ```
-Update-MgSecurityHostSecurityProfile -HostSecurityProfileId <String> [-AdditionalProperties <Hashtable>]
+Update-MgBetaSecurityHostSecurityProfile -HostSecurityProfileId <String> [-AdditionalProperties <Hashtable>]
  [-AzureSubscriptionId <String>] [-AzureTenantId <String>] [-FirstSeenDateTime <DateTime>] [-Fqdn <String>]
  [-Id <String>] [-IsAzureAdJoined] [-IsAzureAdRegistered] [-IsHybridAzureDomainJoined]
  [-LastSeenDateTime <DateTime>] [-LogonUsers <IMicrosoftGraphLogonUser[]>] [-NetBiosName <String>]
  [-NetworkInterfaces <IMicrosoftGraphNetworkInterface[]>] [-OS <String>] [-OSVersion <String>]
  [-ParentHost <String>] [-RelatedHostIds <String[]>] [-RiskScore <String>] [-Tags <String[]>]
- [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgSecurityHostSecurityProfile -HostSecurityProfileId <String>
- -BodyParameter <IMicrosoftGraphHostSecurityProfile> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaSecurityHostSecurityProfile -HostSecurityProfileId <String>
+ -BodyParameter <IMicrosoftGraphHostSecurityProfile> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgSecurityHostSecurityProfile -InputObject <ISecurityIdentity> [-AdditionalProperties <Hashtable>]
+Update-MgBetaSecurityHostSecurityProfile -InputObject <ISecurityIdentity> [-AdditionalProperties <Hashtable>]
  [-AzureSubscriptionId <String>] [-AzureTenantId <String>] [-FirstSeenDateTime <DateTime>] [-Fqdn <String>]
  [-Id <String>] [-IsAzureAdJoined] [-IsAzureAdRegistered] [-IsHybridAzureDomainJoined]
  [-LastSeenDateTime <DateTime>] [-LogonUsers <IMicrosoftGraphLogonUser[]>] [-NetBiosName <String>]
  [-NetworkInterfaces <IMicrosoftGraphNetworkInterface[]>] [-OS <String>] [-OSVersion <String>]
  [-ParentHost <String>] [-RelatedHostIds <String[]>] [-RiskScore <String>] [-Tags <String[]>]
- [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgSecurityHostSecurityProfile -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphHostSecurityProfile> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaSecurityHostSecurityProfile -InputObject <ISecurityIdentity>
+ -BodyParameter <IMicrosoftGraphHostSecurityProfile> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property hostSecurityProfiles in security
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -102,7 +114,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 hostSecurityProfile
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphHostSecurityProfile
@@ -162,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -179,7 +191,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ISecurityIdentity
@@ -255,7 +267,7 @@ Accept wildcard characters: False
 
 ### -LogonUsers
 .
-To construct, please use Get-Help -Online and see NOTES section for LOGONUSERS properties and create a hash table.
+To construct, see NOTES section for LOGONUSERS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphLogonUser[]
@@ -286,7 +298,7 @@ Accept wildcard characters: False
 
 ### -NetworkInterfaces
 .
-To construct, please use Get-Help -Online and see NOTES section for NETWORKINTERFACES properties and create a hash table.
+To construct, see NOTES section for NETWORKINTERFACES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphNetworkInterface[]
@@ -345,21 +357,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -RelatedHostIds
 .
 
@@ -407,7 +404,7 @@ Accept wildcard characters: False
 
 ### -VendorInformation
 securityVendorInformation
-To construct, please use Get-Help -Online and see NOTES section for VENDORINFORMATION properties and create a hash table.
+To construct, see NOTES section for VENDORINFORMATION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSecurityVendorInformation
@@ -457,11 +454,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphHostSecurityProfile
-### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphHostSecurityProfile
+### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphHostSecurityProfile
 ## NOTES
 
 ALIASES
@@ -471,9 +468,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphHostSecurityProfile>`: hostSecurityProfile
+`BODYPARAMETER <IMicrosoftGraphHostSecurityProfile>`: hostSecurityProfile
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AzureSubscriptionId <String>]`: 
   - `[AzureTenantId <String>]`: 
   - `[FirstSeenDateTime <DateTime?>]`: 
@@ -510,7 +507,7 @@ BODYPARAMETER `<IMicrosoftGraphHostSecurityProfile>`: hostSecurityProfile
     - `[SubProvider <String>]`: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
     - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye). Required
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+`INPUTOBJECT <ISecurityIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
   - `[ArticleId <String>]`: The unique identifier of article
   - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator
@@ -568,7 +565,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[VulnerabilityComponentId <String>]`: The unique identifier of vulnerabilityComponent
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
-LOGONUSERS <IMicrosoftGraphLogonUser\[]>: .
+`LOGONUSERS <IMicrosoftGraphLogonUser[]>`: .
   - `[AccountDomain <String>]`: Domain of user account used to logon.
   - `[AccountName <String>]`: Account name of user account used to logon.
   - `[AccountType <String>]`: userAccountSecurityType
@@ -577,14 +574,14 @@ LOGONUSERS <IMicrosoftGraphLogonUser\[]>: .
   - `[LogonId <String>]`: User logon ID.
   - `[LogonTypes <String[]>]`: Collection of the logon types observed for the logged on user from when first to last seen. Possible values are: unknown, interactive, remoteInteractive, network, batch, service.
 
-NETWORKINTERFACES <IMicrosoftGraphNetworkInterface\[]>: .
+`NETWORKINTERFACES <IMicrosoftGraphNetworkInterface[]>`: .
   - `[Description <String>]`: Description of the NIC (e.g. Ethernet adapter, Wireless LAN adapter Local Area Connection, and so on).
   - `[IPV4Address <String>]`: Last IPv4 address associated with this NIC.
   - `[IPV6Address <String>]`: Last Public (aka global) IPv6 address associated with this NIC.
   - `[LocalIPV6Address <String>]`: Last local (link-local or site-local) IPv6 address associated with this NIC.
   - `[MacAddress <String>]`: MAC address of the NIC on this host.
 
-VENDORINFORMATION `<IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
+`VENDORINFORMATION <IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Provider <String>]`: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
   - `[ProviderVersion <String>]`: Version of the provider or subprovider, if it exists, that generated the alert. Required

@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Groups-help.xml
-Module Name: Microsoft.Graph.Groups
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/new-mggroupconversationthreadpostmention
+﻿---
+external help file: Microsoft.Graph.Beta.Groups-help.xml
+Module Name: Microsoft.Graph.Beta.Groups
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupconversationthreadpostmention
 schema: 2.0.0
 ---
 
-# New-MgGroupConversationThreadPostMention
+# New-MgBetaGroupConversationThreadPostMention
 
 ## SYNOPSIS
 Create new navigation property to mentions for groups
@@ -14,7 +14,7 @@ Create new navigation property to mentions for groups
 
 ### CreateExpanded (Default)
 ```
-New-MgGroupConversationThreadPostMention -ConversationId <String> -ConversationThreadId <String>
+New-MgBetaGroupConversationThreadPostMention -ConversationId <String> -ConversationThreadId <String>
  -GroupId <String> -PostId <String> [-AdditionalProperties <Hashtable>] [-Application <String>]
  [-ClientReference <String>] [-CreatedBy <IMicrosoftGraphEmailAddress>] [-CreatedDateTime <DateTime>]
  [-DeepLink <String>] [-Id <String>] [-MentionText <String>] [-Mentioned <IMicrosoftGraphEmailAddress>]
@@ -23,14 +23,14 @@ New-MgGroupConversationThreadPostMention -ConversationId <String> -ConversationT
 
 ### Create
 ```
-New-MgGroupConversationThreadPostMention -ConversationId <String> -ConversationThreadId <String>
+New-MgBetaGroupConversationThreadPostMention -ConversationId <String> -ConversationThreadId <String>
  -GroupId <String> -PostId <String> -BodyParameter <IMicrosoftGraphMention> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgGroupConversationThreadPostMention -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
+New-MgBetaGroupConversationThreadPostMention -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
  [-Application <String>] [-ClientReference <String>] [-CreatedBy <IMicrosoftGraphEmailAddress>]
  [-CreatedDateTime <DateTime>] [-DeepLink <String>] [-Id <String>] [-MentionText <String>]
  [-Mentioned <IMicrosoftGraphEmailAddress>] [-ServerCreatedDateTime <DateTime>] [-WhatIf] [-Confirm]
@@ -39,14 +39,28 @@ New-MgGroupConversationThreadPostMention -InputObject <IGroupsIdentity> [-Additi
 
 ### CreateViaIdentity
 ```
-New-MgGroupConversationThreadPostMention -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftGraphMention>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaGroupConversationThreadPostMention -InputObject <IGroupsIdentity>
+ -BodyParameter <IMicrosoftGraphMention> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to mentions for groups
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -84,7 +98,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 mention
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphMention
@@ -147,7 +161,7 @@ Accept wildcard characters: False
 
 ### -CreatedBy
 emailAddress
-To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
+To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEmailAddress
@@ -209,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -226,7 +240,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IGroupsIdentity
@@ -242,7 +256,7 @@ Accept wildcard characters: False
 
 ### -Mentioned
 emailAddress
-To construct, please use Get-Help -Online and see NOTES section for MENTIONED properties and create a hash table.
+To construct, see NOTES section for MENTIONED properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEmailAddress
@@ -341,11 +355,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMention
+### Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMention
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMention
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMention
 ## NOTES
 
 ALIASES
@@ -355,27 +369,27 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphMention>`: mention
+`BODYPARAMETER <IMicrosoftGraphMention>`: mention
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Application <String>]`: The name of the application where the mention is created. Optional. Not used and defaulted as null for message.
   - `[ClientReference <String>]`: A unique identifier that represents a parent of the resource instance. Optional. Not used and defaulted as null for message.
   - `[CreatedBy <IMicrosoftGraphEmailAddress>]`: emailAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Address <String>]`: The email address of the person or entity.
-    - `[Name <String>]`: The display name of the person or entity.
+    - `[Address <String>]`: The email address of an entity instance.
+    - `[Name <String>]`: The display name of an entity instance.
   - `[CreatedDateTime <DateTime?>]`: The date and time that the mention is created on the client.
   - `[DeepLink <String>]`: A deep web link to the context of the mention in the resource instance. Optional. Not used and defaulted as null for message.
   - `[MentionText <String>]`: Optional. Not used and defaulted as null for message. To get the mentions in a message, see the bodyPreview property of the message instead.
   - `[Mentioned <IMicrosoftGraphEmailAddress>]`: emailAddress
   - `[ServerCreatedDateTime <DateTime?>]`: The date and time that the mention is created on the server. Optional. Not used and defaulted as null for message.
 
-CREATEDBY `<IMicrosoftGraphEmailAddress>`: emailAddress
+`CREATEDBY <IMicrosoftGraphEmailAddress>`: emailAddress
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Address <String>]`: The email address of the person or entity.
-  - `[Name <String>]`: The display name of the person or entity.
+  - `[Address <String>]`: The email address of an entity instance.
+  - `[Name <String>]`: The display name of an entity instance.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+`INPUTOBJECT <IGroupsIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[ConversationId <String>]`: The unique identifier of conversation
@@ -397,11 +411,9 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
   - `[Interval <String>]`: Usage: interval='{interval}'
   - `[ListId <String>]`: The unique identifier of list
-  - `[ListId1 <String>]`: Usage: listId='{listId}'
   - `[ListItemId <String>]`: The unique identifier of listItem
   - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
   - `[MentionId <String>]`: The unique identifier of mention
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
   - `[NotebookId <String>]`: The unique identifier of notebook
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
@@ -414,7 +426,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[Q <String>]`: Usage: q='{q}'
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
   - `[SiteId <String>]`: The unique identifier of site
   - `[SitePageId <String>]`: The unique identifier of sitePage
   - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
@@ -424,9 +435,9 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
-MENTIONED `<IMicrosoftGraphEmailAddress>`: emailAddress
+`MENTIONED <IMicrosoftGraphEmailAddress>`: emailAddress
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Address <String>]`: The email address of the person or entity.
-  - `[Name <String>]`: The display name of the person or entity.
+  - `[Address <String>]`: The email address of an entity instance.
+  - `[Name <String>]`: The display name of an entity instance.
 
 ## RELATED LINKS

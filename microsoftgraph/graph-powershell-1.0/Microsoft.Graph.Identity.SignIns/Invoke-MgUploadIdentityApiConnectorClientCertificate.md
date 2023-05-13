@@ -1,7 +1,7 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/invoke-mguploadidentityapiconnectorclientcertificate
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/invoke-mguploadidentityapiconnectorclientcertificate
 schema: 2.0.0
 ---
 
@@ -14,28 +14,28 @@ This method returns an apiConnector.
 
 ## SYNTAX
 
-### UploadExpanded1 (Default)
+### UploadExpanded (Default)
 ```
 Invoke-MgUploadIdentityApiConnectorClientCertificate -IdentityApiConnectorId <String>
  [-AdditionalProperties <Hashtable>] [-Password <String>] [-Pkcs12Value <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### Upload1
+### Upload
 ```
 Invoke-MgUploadIdentityApiConnectorClientCertificate -IdentityApiConnectorId <String>
  -BodyParameter <IPaths1Yvv9YeIdentityApiconnectorsIdentityapiconnectorIdMicrosoftGraphUploadclientcertificatePostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UploadViaIdentityExpanded1
+### UploadViaIdentityExpanded
 ```
 Invoke-MgUploadIdentityApiConnectorClientCertificate -InputObject <IIdentitySignInsIdentity>
  [-AdditionalProperties <Hashtable>] [-Password <String>] [-Pkcs12Value <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### UploadViaIdentity1
+### UploadViaIdentity
 ```
 Invoke-MgUploadIdentityApiConnectorClientCertificate -InputObject <IIdentitySignInsIdentity>
  -BodyParameter <IPaths1Yvv9YeIdentityApiconnectorsIdentityapiconnectorIdMicrosoftGraphUploadclientcertificatePostRequestbodyContentApplicationJsonSchema>
@@ -49,7 +49,7 @@ This method returns an apiConnector.
 
 ## EXAMPLES
 
-### Example 1: Using the Invoke-MgUploadIdentityApiConnectorClientCertificate Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 $params = @{
@@ -59,9 +59,6 @@ $params = @{
 Invoke-MgUploadIdentityApiConnectorClientCertificate -IdentityApiConnectorId $identityApiConnectorId -BodyParameter $params
 ```
 
-This example shows how to use the Invoke-MgUploadIdentityApiConnectorClientCertificate Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -69,7 +66,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UploadExpanded1, UploadViaIdentityExpanded1
+Parameter Sets: UploadExpanded, UploadViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -81,11 +78,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths1Yvv9YeIdentityApiconnectorsIdentityapiconnectorIdMicrosoftGraphUploadclientcertificatePostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Upload1, UploadViaIdentity1
+Parameter Sets: Upload, UploadViaIdentity
 Aliases:
 
 Required: True
@@ -100,7 +97,7 @@ The unique identifier of identityApiConnector
 
 ```yaml
 Type: String
-Parameter Sets: UploadExpanded1, Upload1
+Parameter Sets: UploadExpanded, Upload
 Aliases:
 
 Required: True
@@ -112,11 +109,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IIdentitySignInsIdentity
-Parameter Sets: UploadViaIdentityExpanded1, UploadViaIdentity1
+Parameter Sets: UploadViaIdentityExpanded, UploadViaIdentity
 Aliases:
 
 Required: True
@@ -131,7 +128,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: UploadExpanded1, UploadViaIdentityExpanded1
+Parameter Sets: UploadExpanded, UploadViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -146,7 +143,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: UploadExpanded1, UploadViaIdentityExpanded1
+Parameter Sets: UploadExpanded, UploadViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -206,24 +203,20 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Yvv9YeIdentityApiconnectorsIdentityapiconnectorIdMicrosoftGraphUploadclientcertificatePostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1Yvv9YeIdentityApiconnectorsIdentityapiconnectorIdMicrosoftGraphUploadclientcertificatePostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Password <String>]`: 
   - `[Pkcs12Value <String>]`: 
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentitySignInsIdentity>`: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: The unique identifier of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
   - `[AuthenticationContextClassReferenceId <String>]`: The unique identifier of authenticationContextClassReference
-  - `[AuthenticationEventListenerId <String>]`: The unique identifier of authenticationEventListener
   - `[AuthenticationMethodConfigurationId <String>]`: The unique identifier of authenticationMethodConfiguration
   - `[AuthenticationMethodId <String>]`: The unique identifier of authenticationMethod
   - `[AuthenticationMethodModeDetailId <String>]`: The unique identifier of authenticationMethodModeDetail
-  - `[AuthenticationMethodModes <String[]>]`: Usage: authenticationMethodModes={authenticationMethodModes}
   - `[AuthenticationStrengthPolicyId <String>]`: The unique identifier of authenticationStrengthPolicy
-  - `[AuthorizationPolicyId <String>]`: The unique identifier of authorizationPolicy
-  - `[B2CIdentityUserFlowId <String>]`: The unique identifier of b2cIdentityUserFlow
   - `[B2XIdentityUserFlowId <String>]`: The unique identifier of b2xIdentityUserFlow
   - `[BitlockerRecoveryKeyId <String>]`: The unique identifier of bitlockerRecoveryKey
   - `[CertificateBasedAuthConfigurationId <String>]`: The unique identifier of certificateBasedAuthConfiguration
@@ -231,31 +224,24 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[ConditionalAccessPolicyId <String>]`: The unique identifier of conditionalAccessPolicy
   - `[ConditionalAccessTemplateId <String>]`: The unique identifier of conditionalAccessTemplate
   - `[CrossTenantAccessPolicyConfigurationPartnerTenantId <String>]`: The unique identifier of crossTenantAccessPolicyConfigurationPartner
-  - `[CustomAuthenticationExtensionId <String>]`: The unique identifier of customAuthenticationExtension
-  - `[DataLossPreventionPolicyId <String>]`: The unique identifier of dataLossPreventionPolicy
   - `[DataPolicyOperationId <String>]`: The unique identifier of dataPolicyOperation
-  - `[DefaultUserRoleOverrideId <String>]`: The unique identifier of defaultUserRoleOverride
   - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
   - `[EmailAuthenticationMethodId <String>]`: The unique identifier of emailAuthenticationMethod
   - `[FeatureRolloutPolicyId <String>]`: The unique identifier of featureRolloutPolicy
   - `[Fido2AuthenticationMethodId <String>]`: The unique identifier of fido2AuthenticationMethod
-  - `[GroupId <String>]`: The unique identifier of group
   - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
   - `[IdentityApiConnectorId <String>]`: The unique identifier of identityApiConnector
   - `[IdentityProviderBaseId <String>]`: The unique identifier of identityProviderBase
   - `[IdentityProviderId <String>]`: The unique identifier of identityProvider
   - `[IdentityUserFlowAttributeAssignmentId <String>]`: The unique identifier of identityUserFlowAttributeAssignment
   - `[IdentityUserFlowAttributeId <String>]`: The unique identifier of identityUserFlowAttribute
-  - `[IdentityUserFlowId <String>]`: The unique identifier of identityUserFlow
-  - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
+  - `[InvitationId <String>]`: The unique identifier of invitation
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
-  - `[MobilityManagementPolicyId <String>]`: The unique identifier of mobilityManagementPolicy
   - `[NamedLocationId <String>]`: The unique identifier of namedLocation
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[OrganizationId <String>]`: The unique identifier of organization
   - `[PasswordAuthenticationMethodId <String>]`: The unique identifier of passwordAuthenticationMethod
-  - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
@@ -264,10 +250,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[RiskyServicePrincipalId <String>]`: The unique identifier of riskyServicePrincipal
   - `[RiskyUserHistoryItemId <String>]`: The unique identifier of riskyUserHistoryItem
   - `[RiskyUserId <String>]`: The unique identifier of riskyUser
-  - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
-  - `[SensitivityLabelId1 <String>]`: The unique identifier of sensitivityLabel
-  - `[ServicePrincipalCreationConditionSetId <String>]`: The unique identifier of servicePrincipalCreationConditionSet
-  - `[ServicePrincipalCreationPolicyId <String>]`: The unique identifier of servicePrincipalCreationPolicy
   - `[ServicePrincipalRiskDetectionId <String>]`: The unique identifier of servicePrincipalRiskDetection
   - `[SoftwareOathAuthenticationMethodId <String>]`: The unique identifier of softwareOathAuthenticationMethod
   - `[TemporaryAccessPassAuthenticationMethodId <String>]`: The unique identifier of temporaryAccessPassAuthenticationMethod
@@ -275,8 +257,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[ThreatAssessmentResultId <String>]`: The unique identifier of threatAssessmentResult
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
-  - `[TrustFrameworkKeySetId <String>]`: The unique identifier of trustFrameworkKeySet
-  - `[TrustFrameworkPolicyId <String>]`: The unique identifier of trustFrameworkPolicy
   - `[UnifiedRoleManagementPolicyAssignmentId <String>]`: The unique identifier of unifiedRoleManagementPolicyAssignment
   - `[UnifiedRoleManagementPolicyId <String>]`: The unique identifier of unifiedRoleManagementPolicy
   - `[UnifiedRoleManagementPolicyRuleId <String>]`: The unique identifier of unifiedRoleManagementPolicyRule

@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementuserexperienceanalyticdevicetimelineevent
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementuserexperienceanalyticdevicetimelineevent
 schema: 2.0.0
 ---
 
-# Update-MgDeviceManagementUserExperienceAnalyticDeviceTimelineEvent
+# Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceTimelineEvent
 
 ## SYNOPSIS
 Update the navigation property userExperienceAnalyticsDeviceTimelineEvent in deviceManagement
@@ -14,33 +14,32 @@ Update the navigation property userExperienceAnalyticsDeviceTimelineEvent in dev
 
 ### UpdateExpanded (Default)
 ```
-Update-MgDeviceManagementUserExperienceAnalyticDeviceTimelineEvent
+Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceTimelineEvent
  -UserExperienceAnalyticsDeviceTimelineEventId <String> [-AdditionalProperties <Hashtable>]
  [-DeviceId <String>] [-EventDateTime <DateTime>] [-EventDetails <String>] [-EventLevel <DeviceEventLevel>]
- [-EventName <String>] [-EventSource <String>] [-Id <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-EventName <String>] [-EventSource <String>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgDeviceManagementUserExperienceAnalyticDeviceTimelineEvent
+Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceTimelineEvent
  -UserExperienceAnalyticsDeviceTimelineEventId <String>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceTimelineEvent> [-PassThru] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceTimelineEvent> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgDeviceManagementUserExperienceAnalyticDeviceTimelineEvent -InputObject <IDeviceManagementIdentity>
+Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceTimelineEvent -InputObject <IDeviceManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-DeviceId <String>] [-EventDateTime <DateTime>] [-EventDetails <String>]
- [-EventLevel <DeviceEventLevel>] [-EventName <String>] [-EventSource <String>] [-Id <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-EventLevel <DeviceEventLevel>] [-EventName <String>] [-EventSource <String>] [-Id <String>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgDeviceManagementUserExperienceAnalyticDeviceTimelineEvent -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceTimelineEvent> [-PassThru] [-WhatIf] [-Confirm]
+Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceTimelineEvent -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceTimelineEvent> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -48,6 +47,16 @@ Update-MgDeviceManagementUserExperienceAnalyticDeviceTimelineEvent -InputObject 
 Update the navigation property userExperienceAnalyticsDeviceTimelineEvent in deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -68,7 +77,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 The user experience analytics device event entity contains NRT device event details.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserExperienceAnalyticsDeviceTimelineEvent
@@ -176,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -193,7 +202,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementIdentity
@@ -204,21 +213,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -273,11 +267,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceTimelineEvent
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceTimelineEvent
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceTimelineEvent
 ## NOTES
 
 ALIASES
@@ -287,9 +281,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsDeviceTimelineEvent>`: The user experience analytics device event entity contains NRT device event details.
+`BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsDeviceTimelineEvent>`: The user experience analytics device event entity contains NRT device event details.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DeviceId <String>]`: The id of the device where the event occurred.
   - `[EventDateTime <DateTime?>]`: The time the event occured.
   - `[EventDetails <String>]`: The details provided by the event, format depends on event type.
@@ -297,7 +291,7 @@ BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsDeviceTimelineEvent>`: The
   - `[EventName <String>]`: The name of the event. Examples include: BootEvent, LogonEvent, AppCrashEvent, AppHangEvent.
   - `[EventSource <String>]`: The source of the event. Examples include: Intune, Sccm.
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementIdentity>`: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: The unique identifier of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: The unique identifier of androidManagedStoreAppConfigurationSchema
@@ -429,6 +423,8 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionAppLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionAppLearningSummary
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
+  - `[WindowsQualityUpdateProfileAssignmentId <String>]`: The unique identifier of windowsQualityUpdateProfileAssignment
+  - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
 ## RELATED LINKS
 

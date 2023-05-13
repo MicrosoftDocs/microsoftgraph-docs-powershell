@@ -1,12 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganizationbranding
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaorganizationbranding
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
-# Update-MgOrganizationBranding
+# Update-MgBetaOrganizationBranding
 
 ## SYNOPSIS
 Update the properties of the default branding object specified by the organizationalBranding resource.
@@ -15,7 +14,7 @@ Update the properties of the default branding object specified by the organizati
 
 ### UpdateExpanded (Default)
 ```
-Update-MgOrganizationBranding -OrganizationId <String> [-AdditionalProperties <Hashtable>]
+Update-MgBetaOrganizationBranding -OrganizationId <String> [-AdditionalProperties <Hashtable>]
  [-BackgroundColor <String>] [-BackgroundImageInputFile <String>] [-BackgroundImageRelativeUrl <String>]
  [-BannerLogoInputFile <String>] [-BannerLogoRelativeUrl <String>] [-CdnList <String[]>]
  [-CustomAccountResetCredentialsUrl <String>] [-CustomCannotAccessYourAccountText <String>]
@@ -24,23 +23,22 @@ Update-MgOrganizationBranding -OrganizationId <String> [-AdditionalProperties <H
  [-CustomPrivacyAndCookiesUrl <String>] [-CustomResetItNowText <String>] [-CustomTermsOfUseText <String>]
  [-CustomTermsOfUseUrl <String>] [-FaviconInputFile <String>] [-FaviconRelativeUrl <String>]
  [-HeaderBackgroundColor <String>] [-HeaderLogoInputFile <String>] [-HeaderLogoRelativeUrl <String>]
- [-Id <String>] [-Localizations <IMicrosoftGraphOrganizationalBrandingLocalization1[]>]
+ [-Id <String>] [-Localizations <IMicrosoftGraphOrganizationalBrandingLocalization[]>]
  [-LoginPageLayoutConfiguration <IMicrosoftGraphLoginPageLayoutConfiguration>]
  [-LoginPageTextVisibilitySettings <IMicrosoftGraphLoginPageTextVisibilitySettings>] [-SignInPageText <String>]
  [-SquareLogoDarkInputFile <String>] [-SquareLogoDarkRelativeUrl <String>] [-SquareLogoInputFile <String>]
- [-SquareLogoRelativeUrl <String>] [-UsernameHintText <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-SquareLogoRelativeUrl <String>] [-UsernameHintText <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgOrganizationBranding -OrganizationId <String> -BodyParameter <IMicrosoftGraphOrganizationalBranding1>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaOrganizationBranding -OrganizationId <String>
+ -BodyParameter <IMicrosoftGraphOrganizationalBranding> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgOrganizationBranding -InputObject <IIdentityDirectoryManagementIdentity>
+Update-MgBetaOrganizationBranding -InputObject <IIdentityDirectoryManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-BackgroundColor <String>] [-BackgroundImageInputFile <String>]
  [-BackgroundImageRelativeUrl <String>] [-BannerLogoInputFile <String>] [-BannerLogoRelativeUrl <String>]
  [-CdnList <String[]>] [-CustomAccountResetCredentialsUrl <String>]
@@ -50,18 +48,17 @@ Update-MgOrganizationBranding -InputObject <IIdentityDirectoryManagementIdentity
  [-CustomResetItNowText <String>] [-CustomTermsOfUseText <String>] [-CustomTermsOfUseUrl <String>]
  [-FaviconInputFile <String>] [-FaviconRelativeUrl <String>] [-HeaderBackgroundColor <String>]
  [-HeaderLogoInputFile <String>] [-HeaderLogoRelativeUrl <String>] [-Id <String>]
- [-Localizations <IMicrosoftGraphOrganizationalBrandingLocalization1[]>]
+ [-Localizations <IMicrosoftGraphOrganizationalBrandingLocalization[]>]
  [-LoginPageLayoutConfiguration <IMicrosoftGraphLoginPageLayoutConfiguration>]
  [-LoginPageTextVisibilitySettings <IMicrosoftGraphLoginPageTextVisibilitySettings>] [-SignInPageText <String>]
  [-SquareLogoDarkInputFile <String>] [-SquareLogoDarkRelativeUrl <String>] [-SquareLogoInputFile <String>]
- [-SquareLogoRelativeUrl <String>] [-UsernameHintText <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-SquareLogoRelativeUrl <String>] [-UsernameHintText <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgOrganizationBranding -InputObject <IIdentityDirectoryManagementIdentity>
- -BodyParameter <IMicrosoftGraphOrganizationalBranding1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaOrganizationBranding -InputObject <IIdentityDirectoryManagementIdentity>
+ -BodyParameter <IMicrosoftGraphOrganizationalBranding> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -69,18 +66,15 @@ Update the properties of the default branding object specified by the organizati
 
 ## EXAMPLES
 
-### Example 1: Using the Update-MgOrganizationBranding Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 $params = @{
 	SignInPageText = "Default"
 	UsernameHintText = "DefaultHint"
 }
-Update-MgOrganizationBranding -OrganizationId $organizationId -BodyParameter $params
+Update-MgBetaOrganizationBranding -OrganizationId $organizationId -BodyParameter $params
 ```
-
-This example shows how to use the Update-MgOrganizationBranding Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -184,10 +178,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 organizationalBranding
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOrganizationalBranding1
+Type: IMicrosoftGraphOrganizationalBranding
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -474,7 +468,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -491,7 +485,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IIdentityDirectoryManagementIdentity
@@ -507,10 +501,10 @@ Accept wildcard characters: False
 
 ### -Localizations
 Add different branding based on a locale.
-To construct, please use Get-Help -Online and see NOTES section for LOCALIZATIONS properties and create a hash table.
+To construct, see NOTES section for LOCALIZATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOrganizationalBrandingLocalization1[]
+Type: IMicrosoftGraphOrganizationalBrandingLocalization[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -523,7 +517,7 @@ Accept wildcard characters: False
 
 ### -LoginPageLayoutConfiguration
 loginPageLayoutConfiguration
-To construct, please use Get-Help -Online and see NOTES section for LOGINPAGELAYOUTCONFIGURATION properties and create a hash table.
+To construct, see NOTES section for LOGINPAGELAYOUTCONFIGURATION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphLoginPageLayoutConfiguration
@@ -539,7 +533,7 @@ Accept wildcard characters: False
 
 ### -LoginPageTextVisibilitySettings
 loginPageTextVisibilitySettings
-To construct, please use Get-Help -Online and see NOTES section for LOGINPAGETEXTVISIBILITYSETTINGS properties and create a hash table.
+To construct, see NOTES section for LOGINPAGETEXTVISIBILITYSETTINGS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphLoginPageTextVisibilitySettings
@@ -562,21 +556,6 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -718,11 +697,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOrganizationalBranding1
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOrganizationalBranding
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOrganizationalBranding
 ## NOTES
 
 ALIASES
@@ -732,7 +711,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphOrganizationalBranding1>`: organizationalBranding
+`BODYPARAMETER <IMicrosoftGraphOrganizationalBranding>`: organizationalBranding
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[BackgroundColor <String>]`: Color that appears in place of the background image in low-bandwidth connections. We recommend that you use the primary color of your banner logo or your organization color. Specify this in hexadecimal format, for example, white is #FFFFFF.
   - `[BackgroundImage <Byte[]>]`: Image that appears as the background of the sign-in page. The allowed types are PNG or JPEG not smaller than 300 KB and not larger than 1920 × 1080 pixels. A smaller image will reduce bandwidth requirements and make the page load faster.
@@ -775,8 +754,8 @@ BODYPARAMETER `<IMicrosoftGraphOrganizationalBranding1>`: organizationalBranding
   - `[SquareLogoDarkRelativeUrl <String>]`: A relative URL for the squareLogoDark property that is combined with a CDN base URL from the cdnList to provide the version served by a CDN. Read-only.
   - `[SquareLogoRelativeUrl <String>]`: A relative URL for the squareLogo property that is combined with a CDN base URL from the cdnList to provide the version served by a CDN. Read-only.
   - `[UsernameHintText <String>]`: A string that shows as the hint in the username textbox on the sign-in screen. This text must be a Unicode, without links or code, and can't exceed 64 characters.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[Localizations <IMicrosoftGraphOrganizationalBrandingLocalization1[]>]`: Add different branding based on a locale.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
+  - `[Localizations <IMicrosoftGraphOrganizationalBrandingLocalization[]>]`: Add different branding based on a locale.
     - `[BackgroundColor <String>]`: Color that appears in place of the background image in low-bandwidth connections. We recommend that you use the primary color of your banner logo or your organization color. Specify this in hexadecimal format, for example, white is #FFFFFF.
     - `[BackgroundImage <Byte[]>]`: Image that appears as the background of the sign-in page. The allowed types are PNG or JPEG not smaller than 300 KB and not larger than 1920 × 1080 pixels. A smaller image will reduce bandwidth requirements and make the page load faster.
     - `[BackgroundImageRelativeUrl <String>]`: A relative URL for the backgroundImage property that is combined with a CDN base URL from the cdnList to provide the version served by a CDN. Read-only.
@@ -807,9 +786,9 @@ BODYPARAMETER `<IMicrosoftGraphOrganizationalBranding1>`: organizationalBranding
     - `[SquareLogoDarkRelativeUrl <String>]`: A relative URL for the squareLogoDark property that is combined with a CDN base URL from the cdnList to provide the version served by a CDN. Read-only.
     - `[SquareLogoRelativeUrl <String>]`: A relative URL for the squareLogo property that is combined with a CDN base URL from the cdnList to provide the version served by a CDN. Read-only.
     - `[UsernameHintText <String>]`: A string that shows as the hint in the username textbox on the sign-in screen. This text must be a Unicode, without links or code, and can't exceed 64 characters.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
@@ -845,7 +824,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UsageRightId <String>]`: The unique identifier of usageRight
   - `[UserId <String>]`: The unique identifier of user
 
-LOCALIZATIONS <IMicrosoftGraphOrganizationalBrandingLocalization1\[]>: Add different branding based on a locale.
+`LOCALIZATIONS <IMicrosoftGraphOrganizationalBrandingLocalization[]>`: Add different branding based on a locale.
   - `[BackgroundColor <String>]`: Color that appears in place of the background image in low-bandwidth connections. We recommend that you use the primary color of your banner logo or your organization color. Specify this in hexadecimal format, for example, white is #FFFFFF.
   - `[BackgroundImage <Byte[]>]`: Image that appears as the background of the sign-in page. The allowed types are PNG or JPEG not smaller than 300 KB and not larger than 1920 × 1080 pixels. A smaller image will reduce bandwidth requirements and make the page load faster.
   - `[BackgroundImageRelativeUrl <String>]`: A relative URL for the backgroundImage property that is combined with a CDN base URL from the cdnList to provide the version served by a CDN. Read-only.
@@ -887,15 +866,15 @@ LOCALIZATIONS <IMicrosoftGraphOrganizationalBrandingLocalization1\[]>: Add diffe
   - `[SquareLogoDarkRelativeUrl <String>]`: A relative URL for the squareLogoDark property that is combined with a CDN base URL from the cdnList to provide the version served by a CDN. Read-only.
   - `[SquareLogoRelativeUrl <String>]`: A relative URL for the squareLogo property that is combined with a CDN base URL from the cdnList to provide the version served by a CDN. Read-only.
   - `[UsernameHintText <String>]`: A string that shows as the hint in the username textbox on the sign-in screen. This text must be a Unicode, without links or code, and can't exceed 64 characters.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
 
-LOGINPAGELAYOUTCONFIGURATION `<IMicrosoftGraphLoginPageLayoutConfiguration>`: loginPageLayoutConfiguration
+`LOGINPAGELAYOUTCONFIGURATION <IMicrosoftGraphLoginPageLayoutConfiguration>`: loginPageLayoutConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[IsFooterShown <Boolean?>]`: Option to show the footer on the sign-in page.
   - `[IsHeaderShown <Boolean?>]`: Option to show the header on the sign-in page.
   - `[LayoutTemplateType <String>]`: layoutTemplateType
 
-LOGINPAGETEXTVISIBILITYSETTINGS `<IMicrosoftGraphLoginPageTextVisibilitySettings>`: loginPageTextVisibilitySettings
+`LOGINPAGETEXTVISIBILITYSETTINGS <IMicrosoftGraphLoginPageTextVisibilitySettings>`: loginPageTextVisibilitySettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[HideAccountResetCredentials <Boolean?>]`: Option to hide the self-service password reset (SSPR) hyperlinks such as 'Can't access your account?', 'Forgot my password' and 'Reset it now' on the sign-in form.
   - `[HideCannotAccessYourAccount <Boolean?>]`: Option to hide the self-service password reset (SSPR) 'Can't access your account?' hyperlink on the sign-in form.

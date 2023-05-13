@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/new-mgsecurityattacksimulation
+﻿---
+external help file: Microsoft.Graph.Beta.Security-help.xml
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulation
 schema: 2.0.0
 ---
 
-# New-MgSecurityAttackSimulation
+# New-MgBetaSecurityAttackSimulation
 
 ## SYNOPSIS
 Create an attack simulation campaign for a tenant.
@@ -14,7 +14,7 @@ Create an attack simulation campaign for a tenant.
 
 ### CreateExpanded (Default)
 ```
-New-MgSecurityAttackSimulation [-AdditionalProperties <Hashtable>] [-AttackTechnique <String>]
+New-MgBetaSecurityAttackSimulation [-AdditionalProperties <Hashtable>] [-AttackTechnique <String>]
  [-AttackType <String>] [-AutomationId <String>] [-CompletionDateTime <DateTime>]
  [-CreatedBy <IMicrosoftGraphEmailIdentity>] [-CreatedDateTime <DateTime>] [-Description <String>]
  [-DisplayName <String>] [-DurationInDays <Int32>]
@@ -27,7 +27,7 @@ New-MgSecurityAttackSimulation [-AdditionalProperties <Hashtable>] [-AttackTechn
 
 ### Create
 ```
-New-MgSecurityAttackSimulation -BodyParameter <IMicrosoftGraphSimulation1> [-WhatIf] [-Confirm]
+New-MgBetaSecurityAttackSimulation -BodyParameter <IMicrosoftGraphSimulation> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -35,6 +35,20 @@ New-MgSecurityAttackSimulation -BodyParameter <IMicrosoftGraphSimulation1> [-Wha
 Create an attack simulation campaign for a tenant.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -100,10 +114,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 simulation
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSimulation1
+Type: IMicrosoftGraphSimulation
 Parameter Sets: Create
 Aliases:
 
@@ -132,7 +146,7 @@ Accept wildcard characters: False
 
 ### -CreatedBy
 emailIdentity
-To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
+To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEmailIdentity
@@ -209,7 +223,7 @@ Accept wildcard characters: False
 
 ### -ExcludedAccountTarget
 accountTargetContent
-To construct, please use Get-Help -Online and see NOTES section for EXCLUDEDACCOUNTTARGET properties and create a hash table.
+To construct, see NOTES section for EXCLUDEDACCOUNTTARGET properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAccountTargetContent
@@ -224,7 +238,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -241,7 +255,7 @@ Accept wildcard characters: False
 
 ### -IncludedAccountTarget
 accountTargetContent
-To construct, please use Get-Help -Online and see NOTES section for INCLUDEDACCOUNTTARGET properties and create a hash table.
+To construct, see NOTES section for INCLUDEDACCOUNTTARGET properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAccountTargetContent
@@ -273,7 +287,7 @@ Accept wildcard characters: False
 
 ### -LastModifiedBy
 emailIdentity
-To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBY properties and create a hash table.
+To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEmailIdentity
@@ -320,7 +334,7 @@ Accept wildcard characters: False
 
 ### -Payload
 payload
-To construct, please use Get-Help -Online and see NOTES section for PAYLOAD properties and create a hash table.
+To construct, see NOTES section for PAYLOAD properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPayload
@@ -351,7 +365,7 @@ Accept wildcard characters: False
 
 ### -Report
 simulationReport
-To construct, please use Get-Help -Online and see NOTES section for REPORT properties and create a hash table.
+To construct, see NOTES section for REPORT properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSimulationReport
@@ -416,10 +430,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSimulation1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSimulation
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSimulation1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSimulation
 ## NOTES
 
 ALIASES
@@ -429,9 +443,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSimulation1>`: simulation
+`BODYPARAMETER <IMicrosoftGraphSimulation>`: simulation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AttackTechnique <String>]`: simulationAttackTechnique
   - `[AttackType <String>]`: simulationAttackType
   - `[AutomationId <String>]`: Unique identifier for the attack simulation automation.
@@ -455,7 +469,7 @@ BODYPARAMETER `<IMicrosoftGraphSimulation1>`: simulation
   - `[LaunchDateTime <DateTime?>]`: Date and time of the launch/start of the attack simulation and training campaign. Supports $filter and $orderby.
   - `[Payload <IMicrosoftGraphPayload>]`: payload
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Brand <String>]`: payloadBrand
     - `[Complexity <String>]`: payloadComplexity
     - `[CreatedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
@@ -547,29 +561,29 @@ BODYPARAMETER `<IMicrosoftGraphSimulation1>`: simulation
         - `[TrainingUpdatedProperties <IMicrosoftGraphUserTrainingContentEventInfo>]`: userTrainingContentEventInfo
   - `[Status <String>]`: simulationStatus
 
-CREATEDBY `<IMicrosoftGraphEmailIdentity>`: emailIdentity
+`CREATEDBY <IMicrosoftGraphEmailIdentity>`: emailIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
   - `[Id <String>]`: Unique identifier for the identity.
   - `[Email <String>]`: Email address of the user.
 
-EXCLUDEDACCOUNTTARGET `<IMicrosoftGraphAccountTargetContent>`: accountTargetContent
+`EXCLUDEDACCOUNTTARGET <IMicrosoftGraphAccountTargetContent>`: accountTargetContent
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Type <String>]`: accountTargetContentType
 
-INCLUDEDACCOUNTTARGET `<IMicrosoftGraphAccountTargetContent>`: accountTargetContent
+`INCLUDEDACCOUNTTARGET <IMicrosoftGraphAccountTargetContent>`: accountTargetContent
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Type <String>]`: accountTargetContentType
 
-LASTMODIFIEDBY `<IMicrosoftGraphEmailIdentity>`: emailIdentity
+`LASTMODIFIEDBY <IMicrosoftGraphEmailIdentity>`: emailIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
   - `[Id <String>]`: Unique identifier for the identity.
   - `[Email <String>]`: Email address of the user.
 
-PAYLOAD `<IMicrosoftGraphPayload>`: payload
+`PAYLOAD <IMicrosoftGraphPayload>`: payload
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Brand <String>]`: payloadBrand
   - `[Complexity <String>]`: payloadComplexity
   - `[CreatedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
@@ -611,7 +625,7 @@ PAYLOAD `<IMicrosoftGraphPayload>`: payload
   - `[Technique <String>]`: simulationAttackTechnique
   - `[Theme <String>]`: payloadTheme
 
-REPORT `<IMicrosoftGraphSimulationReport>`: simulationReport
+`REPORT <IMicrosoftGraphSimulationReport>`: simulationReport
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Overview <IMicrosoftGraphSimulationReportOverview>]`: simulationReportOverview
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

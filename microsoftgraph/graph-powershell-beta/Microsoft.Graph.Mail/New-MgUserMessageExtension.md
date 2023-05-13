@@ -1,12 +1,11 @@
----
-external help file: Microsoft.Graph.Mail-help.xml
-Module Name: Microsoft.Graph.Mail
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.mail/new-mgusermessageextension
+﻿---
+external help file: Microsoft.Graph.Beta.Mail-help.xml
+Module Name: Microsoft.Graph.Beta.Mail
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermessageextension
 schema: 2.0.0
-ms.prod: extensions
 ---
 
-# New-MgUserMessageExtension
+# New-MgBetaUserMessageExtension
 
 ## SYNOPSIS
 Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
@@ -18,25 +17,25 @@ The table in the Permissions section lists the resources that support open exten
 
 ### CreateExpanded (Default)
 ```
-New-MgUserMessageExtension -MessageId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
+New-MgBetaUserMessageExtension -MessageId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
  [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgUserMessageExtension -MessageId <String> -UserId <String> -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaUserMessageExtension -MessageId <String> -UserId <String> -BodyParameter <Hashtable> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgUserMessageExtension -InputObject <IMailIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
+New-MgBetaUserMessageExtension -InputObject <IMailIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgUserMessageExtension -InputObject <IMailIdentity> -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
+New-MgBetaUserMessageExtension -InputObject <IMailIdentity> -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -48,9 +47,9 @@ The table in the Permissions section lists the resources that support open exten
 
 ## EXAMPLES
 
-### Example 1: Using the New-MgUserMessageExtension Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Mail
+Import-Module Microsoft.Graph.Beta.Mail
 $params = @{
 	"@odata.type" = "microsoft.graph.openTypeExtension"
 	ExtensionName = "Com.Contoso.Referral"
@@ -59,11 +58,8 @@ $params = @{
 	ExpirationDate = "2015-12-03T10:00:00.000Z"
 }
 # A UPN can also be used as -UserId.
-New-MgUserMessageExtension -UserId $userId -MessageId $messageId -BodyParameter $params
+New-MgBetaUserMessageExtension -UserId $userId -MessageId $messageId -BodyParameter $params
 ```
-
-This example shows how to use the New-MgUserMessageExtension Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -98,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -115,7 +111,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IMailIdentity
@@ -195,7 +191,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMailIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMailIdentity
 ### System.Collections.Hashtable
 ## OUTPUTS
 
@@ -209,7 +205,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+`INPUTOBJECT <IMailIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[InferenceClassificationOverrideId <String>]`: The unique identifier of inferenceClassificationOverride
@@ -218,8 +214,6 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
   - `[MentionId <String>]`: The unique identifier of mention
   - `[MessageId <String>]`: The unique identifier of message
   - `[MessageRuleId <String>]`: The unique identifier of messageRule
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
   - `[UserConfigurationId <String>]`: The unique identifier of userConfiguration
   - `[UserId <String>]`: The unique identifier of user
 

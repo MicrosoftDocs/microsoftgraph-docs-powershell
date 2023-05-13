@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Reports-help.xml
-Module Name: Microsoft.Graph.Reports
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgreportattacksimulationtrainingusercoverage
+﻿---
+external help file: Microsoft.Graph.Beta.Reports-help.xml
+Module Name: Microsoft.Graph.Beta.Reports
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportattacksimulationtrainingusercoverage
 schema: 2.0.0
 ---
 
-# Get-MgReportAttackSimulationTrainingUserCoverage
+# Get-MgBetaReportAttackSimulationTrainingUserCoverage
 
 ## SYNOPSIS
 Invoke function getAttackSimulationTrainingUserCoverage
@@ -13,8 +13,8 @@ Invoke function getAttackSimulationTrainingUserCoverage
 ## SYNTAX
 
 ```
-Get-MgReportAttackSimulationTrainingUserCoverage [-Count] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
- [-Top <Int32>] [<CommonParameters>]
+Get-MgBetaReportAttackSimulationTrainingUserCoverage [-Count] [-Filter <String>] [-Search <String>]
+ [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -22,14 +22,11 @@ Invoke function getAttackSimulationTrainingUserCoverage
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgReportAttackSimulationTrainingUserCoverage Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Reports
-Get-MgReportAttackSimulationTrainingUserCoverage
+Import-Module Microsoft.Graph.Beta.Reports
+Get-MgBetaReportAttackSimulationTrainingUserCoverage
 ```
-
-This example shows how to use the Get-MgReportAttackSimulationTrainingUserCoverage Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -115,7 +112,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttackSimulationTrainingUserCoverage
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAttackSimulationTrainingUserCoverage
 ## NOTES
 
 ALIASES

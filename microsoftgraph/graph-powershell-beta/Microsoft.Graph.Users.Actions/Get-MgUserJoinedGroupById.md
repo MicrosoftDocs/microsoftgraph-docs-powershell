@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Users.Actions-help.xml
-Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/get-mguserjoinedgroupbyid
+﻿---
+external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.Users.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetauserjoinedgroupbyid
 schema: 2.0.0
 ---
 
-# Get-MgUserJoinedGroupById
+# Get-MgBetaUserJoinedGroupById
 
 ## SYNOPSIS
 Return the directory objects specified in a list of IDs.
@@ -15,26 +15,26 @@ Some common uses for this function are to:
 
 ### GetExpanded (Default)
 ```
-Get-MgUserJoinedGroupById -UserId <String> [-AdditionalProperties <Hashtable>] [-Ids <String[]>]
+Get-MgBetaUserJoinedGroupById -UserId <String> [-AdditionalProperties <Hashtable>] [-Ids <String[]>]
  [-Types <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgUserJoinedGroupById -UserId <String>
+Get-MgBetaUserJoinedGroupById -UserId <String>
  -BodyParameter <IPathsAlyyjqUsersUserIdJoinedgroupsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### GetViaIdentityExpanded
 ```
-Get-MgUserJoinedGroupById -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
+Get-MgBetaUserJoinedGroupById -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
  [-Ids <String[]>] [-Types <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgUserJoinedGroupById -InputObject <IUsersActionsIdentity>
+Get-MgBetaUserJoinedGroupById -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPathsAlyyjqUsersUserIdJoinedgroupsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -44,6 +44,20 @@ Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -64,7 +78,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPathsAlyyjqUsersUserIdJoinedgroupsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema
@@ -95,7 +109,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersActionsIdentity
@@ -175,11 +189,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsAlyyjqUsersUserIdJoinedgroupsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsAlyyjqUsersUserIdJoinedgroupsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryObject
 ## NOTES
 
 ALIASES
@@ -189,12 +203,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsAlyyjqUsersUserIdJoinedgroupsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsAlyyjqUsersUserIdJoinedgroupsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Ids <String[]>]`: 
   - `[Types <String[]>]`: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
@@ -228,7 +242,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription

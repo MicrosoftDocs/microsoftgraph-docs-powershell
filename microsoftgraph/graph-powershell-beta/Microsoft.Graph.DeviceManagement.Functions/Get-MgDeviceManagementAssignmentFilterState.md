@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Functions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Functions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.functions/get-mgdevicemanagementassignmentfilterstate
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Functions-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Functions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementassignmentfilterstate
 schema: 2.0.0
 ---
 
-# Get-MgDeviceManagementAssignmentFilterState
+# Get-MgBetaDeviceManagementAssignmentFilterState
 
 ## SYNOPSIS
 Invoke function getState
@@ -13,13 +13,27 @@ Invoke function getState
 ## SYNTAX
 
 ```
-Get-MgDeviceManagementAssignmentFilterState [<CommonParameters>]
+Get-MgBetaDeviceManagementAssignmentFilterState [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke function getState
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.mail/get-mgusermailfoldermultivalueextendedproperty
@@ -21,14 +21,14 @@ Get-MgUserMailFolderMultiValueExtendedProperty -MailFolderId <String> -UserId <S
  [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### Get1
+### Get
 ```
 Get-MgUserMailFolderMultiValueExtendedProperty -MailFolderId <String>
  -MultiValueLegacyExtendedPropertyId <String> -UserId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### GetViaIdentity
 ```
 Get-MgUserMailFolderMultiValueExtendedProperty -InputObject <IMailIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
@@ -110,7 +110,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IMailIdentity
-Parameter Sets: GetViaIdentity1
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
@@ -125,7 +125,7 @@ The unique identifier of mailFolder
 
 ```yaml
 Type: String
-Parameter Sets: List, Get1
+Parameter Sets: List, Get
 Aliases:
 
 Required: True
@@ -140,7 +140,7 @@ The unique identifier of multiValueLegacyExtendedProperty
 
 ```yaml
 Type: String
-Parameter Sets: Get1
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -230,7 +230,7 @@ The unique identifier of user
 
 ```yaml
 Type: String
-Parameter Sets: List, Get1
+Parameter Sets: List, Get
 Aliases:
 
 Required: True

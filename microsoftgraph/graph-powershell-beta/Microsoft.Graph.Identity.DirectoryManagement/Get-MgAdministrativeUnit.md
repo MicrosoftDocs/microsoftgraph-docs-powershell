@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/get-mgadministrativeunit
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadministrativeunit
 schema: 2.0.0
 ---
 
-# Get-MgAdministrativeUnit
+# Get-MgBetaAdministrativeUnit
 
 ## SYNOPSIS
 Retrieve the properties and relationships of an administrativeUnit object.
@@ -15,20 +15,20 @@ Since the **administrativeUnit** resource supports extensions, you can also use 
 
 ### List (Default)
 ```
-Get-MgAdministrativeUnit [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
+Get-MgBetaAdministrativeUnit [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ConsistencyLevel <String>]
  [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgAdministrativeUnit -AdministrativeUnitId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaAdministrativeUnit -AdministrativeUnitId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgAdministrativeUnit -InputObject <IIdentityDirectoryManagementIdentity> [-ExpandProperty <String[]>]
+Get-MgBetaAdministrativeUnit -InputObject <IIdentityDirectoryManagementIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
@@ -38,17 +38,22 @@ Since the **administrativeUnit** resource supports extensions, you can also use 
 
 ## EXAMPLES
 
-### Example 1: Get a list of administrative units
+### EXAMPLE 1
 ```powershell
-Get-MgDirectoryAdministrativeUnit
+Get-MgBetaDirectoryAdministrativeUnit
+```
 
 DeletedDateTime Id                                   Description DisplayName    Visibility
 --------------- --                                   ----------- -----------    ----------
                 416f19a5-2e01-4d15-a78c-d9028fee1ebb             Test Unit
                 d924fbd3-69c5-4cdf-b9ea-9b0badcf9c4d             East wing Unit
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
 ```
 
-This example retrieves a list of administrative units.
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -146,7 +151,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IIdentityDirectoryManagementIdentity
@@ -255,10 +260,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAdministrativeUnit1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAdministrativeUnit
 ## NOTES
 
 ALIASES
@@ -268,7 +273,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet

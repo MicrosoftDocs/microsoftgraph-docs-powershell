@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Education-help.xml
-Module Name: Microsoft.Graph.Education
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentcategorydelta
+﻿---
+external help file: Microsoft.Graph.Beta.Education-help.xml
+Module Name: Microsoft.Graph.Beta.Education
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentcategorydelta
 schema: 2.0.0
 ---
 
-# Get-MgEducationClassAssignmentCategoryDelta
+# Get-MgBetaEducationClassAssignmentCategoryDelta
 
 ## SYNOPSIS
 Invoke function delta
@@ -14,28 +14,28 @@ Invoke function delta
 
 ### Delta (Default)
 ```
-Get-MgEducationClassAssignmentCategoryDelta -EducationClassId <String> [-Filter <String>]
+Get-MgBetaEducationClassAssignmentCategoryDelta -EducationClassId <String> [-Filter <String>]
  [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Delta1
 ```
-Get-MgEducationClassAssignmentCategoryDelta -EducationClassId <String> -EducationAssignmentId <String>
+Get-MgBetaEducationClassAssignmentCategoryDelta -EducationClassId <String> -EducationAssignmentId <String>
  [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### DeltaViaIdentity1
 ```
-Get-MgEducationClassAssignmentCategoryDelta -InputObject <IEducationIdentity> [-Filter <String>]
+Get-MgBetaEducationClassAssignmentCategoryDelta -InputObject <IEducationIdentity> [-Filter <String>]
  [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-Count]
  [<CommonParameters>]
 ```
 
 ### DeltaViaIdentity
 ```
-Get-MgEducationClassAssignmentCategoryDelta -InputObject <IEducationIdentity> [-Filter <String>]
+Get-MgBetaEducationClassAssignmentCategoryDelta -InputObject <IEducationIdentity> [-Filter <String>]
  [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-Count]
  [<CommonParameters>]
 ```
@@ -45,41 +45,29 @@ Invoke function delta
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgEducationClassAssignmentCategoryDelta Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Education
-Get-MgEducationClassAssignmentCategoryDelta -EducationClassId $educationClassId -Top 3
+Import-Module Microsoft.Graph.Beta.Education
+Get-MgBetaEducationClassAssignmentCategoryDelta -EducationClassId $educationClassId -Top 3
 ```
 
-This example shows how to use the Get-MgEducationClassAssignmentCategoryDelta Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Get-MgEducationClassAssignmentCategoryDelta Cmdlet
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Education
-Get-MgEducationClassAssignmentCategoryDelta -EducationClassId $educationClassId -Deltatoken "7ORzTfzlUEGDy6BRE3OC-3ePBbvLHCRe4aJ_hjaBKJxUHmn_ODgoM4xreLS7YRaxc-iACeqCQsT5Tb0u9vn6QXYflO6j0sRgRQlhcfR7DApZYl6uZqiXcR7H0G14btPqR761sKWNc0jgiczrHGF6dGfSQwsLzPT46og-84ArhOU.Jnxvkr08FE-QBvEYstYel3JZUrgwgTauo-GmpbdWeSA"
+Import-Module Microsoft.Graph.Beta.Education
+Get-MgBetaEducationClassAssignmentCategoryDelta -EducationClassId $educationClassId -Deltatoken "7ORzTfzlUEGDy6BRE3OC-3ePBbvLHCRe4aJ_hjaBKJxUHmn_ODgoM4xreLS7YRaxc-iACeqCQsT5Tb0u9vn6QXYflO6j0sRgRQlhcfR7DApZYl6uZqiXcR7H0G14btPqR761sKWNc0jgiczrHGF6dGfSQwsLzPT46og-84ArhOU.Jnxvkr08FE-QBvEYstYel3JZUrgwgTauo-GmpbdWeSA"
 ```
 
-This example shows how to use the Get-MgEducationClassAssignmentCategoryDelta Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Using the Get-MgEducationClassAssignmentCategoryDelta Cmdlet
+### EXAMPLE 3
 ```powershell
-Import-Module Microsoft.Graph.Education
-Get-MgEducationClassAssignmentCategoryDelta -EducationClassId $educationClassId -Deltatoken "7ORzTfzlUEGDy6BRE3OC-3ePBbvLHCRe4aJ_hjaBKJxUHmn_ODgoM4xreLS7YRaxc-iACeqCQsT5Tb0u9vn6QXYflO6j0sRgRQlhcfR7DApZYl6uZqiXcR7H0G14btPqR761sKWNc0jgiczrHGF6dGfSQwsLzPT46og-84ArhOU.Jnxvkr08FE-QBvEYstYel3JZUrgwgTauo-GmpbdWeSA"  -OutFile $outFileId
+Import-Module Microsoft.Graph.Beta.Education
+Get-MgBetaEducationClassAssignmentCategoryDelta -EducationClassId $educationClassId -Deltatoken "7ORzTfzlUEGDy6BRE3OC-3ePBbvLHCRe4aJ_hjaBKJxUHmn_ODgoM4xreLS7YRaxc-iACeqCQsT5Tb0u9vn6QXYflO6j0sRgRQlhcfR7DApZYl6uZqiXcR7H0G14btPqR761sKWNc0jgiczrHGF6dGfSQwsLzPT46og-84ArhOU.Jnxvkr08FE-QBvEYstYel3JZUrgwgTauo-GmpbdWeSA"  -OutFile $outFileId
 ```
 
-This example shows how to use the Get-MgEducationClassAssignmentCategoryDelta Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 4: Using the Get-MgEducationClassAssignmentCategoryDelta Cmdlet
+### EXAMPLE 4
 ```powershell
-Import-Module Microsoft.Graph.Education
-Get-MgEducationClassAssignmentCategoryDelta -EducationClassId $educationClassId -Skiptoken "U43TyYWKlRvJ6wWxZOfJvkp22nMqShRw9f-GxBtG2FDy9b1hMDaAJGdLb7n2fh1IVSFtBcXz0jxjIEihcR91dS3R7i8Z2IMtxIn9rKbK9Jvurj6jCH-lDbSNatdesrK0PJ5zpZ_-i8HyqkdtLhWD9tewXVArIqQWJA7gJz8z4paG2q0MU9rixrQOTe7WIXikPiBTUPilHuUW-o1k7cvqke3K7llJbU3G7z_O7WGoVGE.l8-2OcBi9ZWAhwhPnXvJ-kyyk8GNb6-H4o6qofP5YBY"
+Import-Module Microsoft.Graph.Beta.Education
+Get-MgBetaEducationClassAssignmentCategoryDelta -EducationClassId $educationClassId -Skiptoken "U43TyYWKlRvJ6wWxZOfJvkp22nMqShRw9f-GxBtG2FDy9b1hMDaAJGdLb7n2fh1IVSFtBcXz0jxjIEihcR91dS3R7i8Z2IMtxIn9rKbK9Jvurj6jCH-lDbSNatdesrK0PJ5zpZ_-i8HyqkdtLhWD9tewXVArIqQWJA7gJz8z4paG2q0MU9rixrQOTe7WIXikPiBTUPilHuUW-o1k7cvqke3K7llJbU3G7z_O7WGoVGE.l8-2OcBi9ZWAhwhPnXvJ-kyyk8GNb6-H4o6qofP5YBY"
 ```
-
-This example shows how to use the Get-MgEducationClassAssignmentCategoryDelta Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -176,7 +164,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IEducationIdentity
@@ -285,10 +273,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IEducationIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationCategory
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationCategory
 ## NOTES
 
 ALIASES
@@ -298,11 +286,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+`INPUTOBJECT <IEducationIdentity>`: Identity Parameter
   - `[EducationAssignmentId <String>]`: The unique identifier of educationAssignment
   - `[EducationAssignmentResourceId <String>]`: The unique identifier of educationAssignmentResource
   - `[EducationCategoryId <String>]`: The unique identifier of educationCategory
   - `[EducationClassId <String>]`: The unique identifier of educationClass
+  - `[EducationGradingCategoryId <String>]`: The unique identifier of educationGradingCategory
   - `[EducationOutcomeId <String>]`: The unique identifier of educationOutcome
   - `[EducationRubricId <String>]`: The unique identifier of educationRubric
   - `[EducationSchoolId <String>]`: The unique identifier of educationSchool

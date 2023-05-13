@@ -1,12 +1,11 @@
----
-external help file: Microsoft.Graph.Education-help.xml
-Module Name: Microsoft.Graph.Education
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/get-mgeducationschoolclass
+﻿---
+external help file: Microsoft.Graph.Beta.Education-help.xml
+Module Name: Microsoft.Graph.Beta.Education
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationschoolclass
 schema: 2.0.0
-ms.prod: education
 ---
 
-# Get-MgEducationSchoolClass
+# Get-MgBetaEducationSchoolClass
 
 ## SYNOPSIS
 Retrieve a list of classes owned by a school.
@@ -14,7 +13,7 @@ Retrieve a list of classes owned by a school.
 ## SYNTAX
 
 ```
-Get-MgEducationSchoolClass -EducationSchoolId <String> [-ExpandProperty <String[]>] [-Filter <String>]
+Get-MgBetaEducationSchoolClass -EducationSchoolId <String> [-ExpandProperty <String[]>] [-Filter <String>]
  [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
@@ -24,14 +23,11 @@ Retrieve a list of classes owned by a school.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgEducationSchoolClass Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Education
-Get-MgEducationSchoolClass -EducationSchoolId $educationSchoolId
+Import-Module Microsoft.Graph.Beta.Education
+Get-MgBetaEducationSchoolClass -EducationSchoolId $educationSchoolId
 ```
-
-This example shows how to use the Get-MgEducationSchoolClass Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -208,7 +204,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationClass
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationClass
 ## NOTES
 
 ALIASES

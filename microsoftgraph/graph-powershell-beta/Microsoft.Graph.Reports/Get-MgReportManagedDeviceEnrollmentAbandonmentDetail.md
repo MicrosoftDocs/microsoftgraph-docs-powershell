@@ -1,26 +1,26 @@
----
-external help file: Microsoft.Graph.Reports-help.xml
-Module Name: Microsoft.Graph.Reports
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgreportmanageddeviceenrollmentabandonmentdetail
+﻿---
+external help file: Microsoft.Graph.Beta.Reports-help.xml
+Module Name: Microsoft.Graph.Beta.Reports
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportmanageddeviceenrollmentabandonmentdetail
 schema: 2.0.0
 ---
 
-# Get-MgReportManagedDeviceEnrollmentAbandonmentDetail
+# Get-MgBetaReportManagedDeviceEnrollmentAbandonmentDetail
 
 ## SYNOPSIS
 Metadata for Enrollment abandonment details report
 
 ## SYNTAX
 
-### Managed (Default)
+### Detail (Default)
 ```
-Get-MgReportManagedDeviceEnrollmentAbandonmentDetail -Filter <String> -Skip <Int32> -SkipToken <String>
+Get-MgBetaReportManagedDeviceEnrollmentAbandonmentDetail -Filter <String> -Skip <Int32> -SkipToken <String>
  -Top <Int32> -OutFile <String> [-PassThru] [<CommonParameters>]
 ```
 
-### ManagedViaIdentity
+### DetailViaIdentity
 ```
-Get-MgReportManagedDeviceEnrollmentAbandonmentDetail -InputObject <IReportsIdentity> -OutFile <String>
+Get-MgBetaReportManagedDeviceEnrollmentAbandonmentDetail -InputObject <IReportsIdentity> -OutFile <String>
  [-PassThru] [<CommonParameters>]
 ```
 
@@ -29,6 +29,20 @@ Metadata for Enrollment abandonment details report
 
 ## EXAMPLES
 
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -Filter
@@ -36,7 +50,7 @@ Usage: filter='{filter}'
 
 ```yaml
 Type: String
-Parameter Sets: Managed
+Parameter Sets: Detail
 Aliases:
 
 Required: True
@@ -48,11 +62,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IReportsIdentity
-Parameter Sets: ManagedViaIdentity
+Parameter Sets: DetailViaIdentity
 Aliases:
 
 Required: True
@@ -97,7 +111,7 @@ Usage: skipToken='{skipToken}'
 
 ```yaml
 Type: String
-Parameter Sets: Managed
+Parameter Sets: Detail
 Aliases:
 
 Required: True
@@ -112,7 +126,7 @@ Usage: top={top}
 
 ```yaml
 Type: Int32
-Parameter Sets: Managed
+Parameter Sets: Detail
 Aliases: Limit
 
 Required: True
@@ -127,7 +141,7 @@ Usage: skip={skip}
 
 ```yaml
 Type: Int32
-Parameter Sets: Managed
+Parameter Sets: Detail
 Aliases:
 
 Required: True
@@ -142,7 +156,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IReportsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IReportsIdentity
 ## OUTPUTS
 
 ### System.Boolean
@@ -155,7 +169,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+`INPUTOBJECT <IReportsIdentity>`: Identity Parameter
   - `[ApplicationSignInDetailedSummaryId <String>]`: The unique identifier of applicationSignInDetailedSummary
   - `[CredentialUserRegistrationDetailsId <String>]`: The unique identifier of credentialUserRegistrationDetails
   - `[Date <DateTime?>]`: Usage: date={date}

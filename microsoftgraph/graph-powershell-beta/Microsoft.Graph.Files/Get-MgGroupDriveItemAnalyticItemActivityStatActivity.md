@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Files-help.xml
-Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/get-mggroupdriveitemanalyticitemactivitystatactivity
+﻿---
+external help file: Microsoft.Graph.Beta.Files-help.xml
+Module Name: Microsoft.Graph.Beta.Files
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriveitemanalyticitemactivitystatactivity
 schema: 2.0.0
 ---
 
-# Get-MgGroupDriveItemAnalyticItemActivityStatActivity
+# Get-MgBetaGroupDriveItemAnalyticItemActivityStatActivity
 
 ## SYNOPSIS
 Exposes the itemActivities represented in this itemActivityStat resource.
@@ -13,16 +13,26 @@ Exposes the itemActivities represented in this itemActivityStat resource.
 ## SYNTAX
 
 ```
-Get-MgGroupDriveItemAnalyticItemActivityStatActivity -DriveId <String> -DriveItemId <String> -GroupId <String>
- -ItemActivityStatId <String> [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [<CommonParameters>]
+Get-MgBetaGroupDriveItemAnalyticItemActivityStatActivity -DriveId <String> -DriveItemId <String>
+ -GroupId <String> -ItemActivityStatId <String> [-ExpandProperty <String[]>] [-Filter <String>]
+ [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Exposes the itemActivities represented in this itemActivityStat resource.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -244,7 +254,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemActivity1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItemActivity
 ## NOTES
 
 ALIASES

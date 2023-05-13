@@ -1,7 +1,7 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mgteammessage
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteammessage
 schema: 2.0.0
 ---
 
@@ -21,6 +21,20 @@ Get-MgTeamMessage [-Count] [-Filter <String>] [-Property <String[]>] [-Search <S
 Invoke function getAllMessages
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 

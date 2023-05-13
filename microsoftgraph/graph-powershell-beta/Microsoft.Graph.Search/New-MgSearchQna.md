@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Search-help.xml
-Module Name: Microsoft.Graph.Search
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/new-mgsearchqna
+﻿---
+external help file: Microsoft.Graph.Beta.Search-help.xml
+Module Name: Microsoft.Graph.Beta.Search
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetasearchqna
 schema: 2.0.0
 ---
 
-# New-MgSearchQna
+# New-MgBetaSearchQna
 
 ## SYNOPSIS
 Create a new qna object.
@@ -14,7 +14,7 @@ Create a new qna object.
 
 ### CreateExpanded (Default)
 ```
-New-MgSearchQna [-AdditionalProperties <Hashtable>] [-AvailabilityEndDateTime <DateTime>]
+New-MgBetaSearchQna [-AdditionalProperties <Hashtable>] [-AvailabilityEndDateTime <DateTime>]
  [-AvailabilityStartDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-GroupIds <String[]>]
  [-Id <String>] [-IsSuggested] [-Keywords <IMicrosoftGraphSearchAnswerKeyword>] [-LanguageTags <String[]>]
  [-LastModifiedBy <IMicrosoftGraphSearchIdentitySet>] [-LastModifiedDateTime <DateTime>]
@@ -25,7 +25,7 @@ New-MgSearchQna [-AdditionalProperties <Hashtable>] [-AvailabilityEndDateTime <D
 
 ### Create
 ```
-New-MgSearchQna -BodyParameter <IMicrosoftGraphSearchQna> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaSearchQna -BodyParameter <IMicrosoftGraphSearchQna> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -33,9 +33,9 @@ Create a new qna object.
 
 ## EXAMPLES
 
-### Example 1: Using the New-MgSearchQna Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Search
+Import-Module Microsoft.Graph.Beta.Search
 $params = @{
 	DisplayName = "Global Country Holidays"
 	WebUrl = "http://www.contoso.com/"
@@ -67,11 +67,8 @@ $params = @{
 	)
 	State = "published"
 }
-New-MgSearchQna -BodyParameter $params
+New-MgBetaSearchQna -BodyParameter $params
 ```
-
-This example shows how to use the New-MgSearchQna Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -124,7 +121,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 qna
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSearchQna
@@ -184,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -217,7 +214,7 @@ Accept wildcard characters: False
 
 ### -Keywords
 answerKeyword
-To construct, please use Get-Help -Online and see NOTES section for KEYWORDS properties and create a hash table.
+To construct, see NOTES section for KEYWORDS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSearchAnswerKeyword
@@ -251,7 +248,7 @@ Accept wildcard characters: False
 
 ### -LastModifiedBy
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBY properties and create a hash table.
+To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSearchIdentitySet
@@ -316,7 +313,7 @@ Accept wildcard characters: False
 Variations of a qna for different countries or devices.
 Use when you need to show different content to users based on their device, country/region, or both.
 The date and group settings will apply to all variations.
-To construct, please use Get-Help -Online and see NOTES section for TARGETEDVARIATIONS properties and create a hash table.
+To construct, see NOTES section for TARGETEDVARIATIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSearchAnswerVariant[]
@@ -382,10 +379,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSearchQna
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSearchQna
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSearchQna
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSearchQna
 ## NOTES
 
 ALIASES
@@ -395,7 +392,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSearchQna>`: qna
+`BODYPARAMETER <IMicrosoftGraphSearchQna>`: qna
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Description <String>]`: Search answer description shown on search results page.
   - `[DisplayName <String>]`: Search answer name displayed in search results.
@@ -409,7 +406,7 @@ BODYPARAMETER `<IMicrosoftGraphSearchQna>`: qna
     - `[User <IMicrosoftGraphSearchIdentity>]`: identity
   - `[LastModifiedDateTime <DateTime?>]`: Timestamp of when the search answer is created or edited. Read-only.
   - `[WebUrl <String>]`: Search answer URL link. When users click this search answer in search results, they will go to this URL.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AvailabilityEndDateTime <DateTime?>]`: Timestamp of when the qna will stop to appear as a search result. Set as null for always available.
   - `[AvailabilityStartDateTime <DateTime?>]`: Timestamp of when the qna will start to appear as a search result. Set as null for always available.
   - `[GroupIds <String[]>]`: List of security groups able to view this qna.
@@ -429,13 +426,13 @@ BODYPARAMETER `<IMicrosoftGraphSearchQna>`: qna
     - `[Platform <DevicePlatformType?>]`: Supported platform types.
     - `[WebUrl <String>]`: Answer variation URL link. When users click this answer variation in search results, they will go to this URL.
 
-KEYWORDS `<IMicrosoftGraphSearchAnswerKeyword>`: answerKeyword
+`KEYWORDS <IMicrosoftGraphSearchAnswerKeyword>`: answerKeyword
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Keywords <String[]>]`: A collection of keywords used to trigger the search answer.
   - `[MatchSimilarKeywords <Boolean?>]`: If true, indicates that the search term contains similar words to the keywords that should trigger the search answer.
   - `[ReservedKeywords <String[]>]`: Unique keywords that will guarantee the search answer is triggered.
 
-LASTMODIFIEDBY `<IMicrosoftGraphSearchIdentitySet>`: identitySet
+`LASTMODIFIEDBY <IMicrosoftGraphSearchIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphSearchIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -444,7 +441,7 @@ LASTMODIFIEDBY `<IMicrosoftGraphSearchIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphSearchIdentity>]`: identity
   - `[User <IMicrosoftGraphSearchIdentity>]`: identity
 
-TARGETEDVARIATIONS <IMicrosoftGraphSearchAnswerVariant\[]>: Variations of a qna for different countries or devices. Use when you need to show different content to users based on their device, country/region, or both. The date and group settings will apply to all variations.
+`TARGETEDVARIATIONS <IMicrosoftGraphSearchAnswerVariant[]>`: Variations of a qna for different countries or devices. Use when you need to show different content to users based on their device, country/region, or both. The date and group settings will apply to all variations.
   - `[Description <String>]`: Answer variation description shown on search results page.
   - `[DisplayName <String>]`: Answer variation name displayed in search results.
   - `[LanguageTag <String>]`: 

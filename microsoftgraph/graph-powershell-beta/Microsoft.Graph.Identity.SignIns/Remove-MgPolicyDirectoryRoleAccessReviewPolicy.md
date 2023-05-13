@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/remove-mgpolicydirectoryroleaccessreviewpolicy
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicydirectoryroleaccessreviewpolicy
 schema: 2.0.0
 ---
 
-# Remove-MgPolicyDirectoryRoleAccessReviewPolicy
+# Remove-MgBetaPolicyDirectoryRoleAccessReviewPolicy
 
 ## SYNOPSIS
 Delete navigation property directoryRoleAccessReviewPolicy for policies
@@ -13,7 +13,7 @@ Delete navigation property directoryRoleAccessReviewPolicy for policies
 ## SYNTAX
 
 ```
-Remove-MgPolicyDirectoryRoleAccessReviewPolicy [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+Remove-MgBetaPolicyDirectoryRoleAccessReviewPolicy [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -21,6 +21,20 @@ Remove-MgPolicyDirectoryRoleAccessReviewPolicy [-IfMatch <String>] [-PassThru] [
 Delete navigation property directoryRoleAccessReviewPolicy for policies
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 

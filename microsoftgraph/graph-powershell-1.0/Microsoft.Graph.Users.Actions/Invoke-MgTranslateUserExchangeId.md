@@ -1,7 +1,7 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgtranslateuserexchangeid
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgtranslateuserexchangeid
 schema: 2.0.0
 ---
 
@@ -12,27 +12,27 @@ Translate identifiers of Outlook-related resources between formats.
 
 ## SYNTAX
 
-### TranslateExpanded1 (Default)
+### TranslateExpanded (Default)
 ```
 Invoke-MgTranslateUserExchangeId -UserId <String> [-AdditionalProperties <Hashtable>] [-InputIds <String[]>]
  [-SourceIdType <String>] [-TargetIdType <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Translate1
+### Translate
 ```
 Invoke-MgTranslateUserExchangeId -UserId <String>
  -BodyParameter <IComponents1L8Ofp3RequestbodiesTranslateexchangeidsrequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### TranslateViaIdentityExpanded1
+### TranslateViaIdentityExpanded
 ```
 Invoke-MgTranslateUserExchangeId -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
  [-InputIds <String[]>] [-SourceIdType <String>] [-TargetIdType <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### TranslateViaIdentity1
+### TranslateViaIdentity
 ```
 Invoke-MgTranslateUserExchangeId -InputObject <IUsersActionsIdentity>
  -BodyParameter <IComponents1L8Ofp3RequestbodiesTranslateexchangeidsrequestbodyContentApplicationJsonSchema>
@@ -44,7 +44,7 @@ Translate identifiers of Outlook-related resources between formats.
 
 ## EXAMPLES
 
-### Example 1: Using the Invoke-MgTranslateUserExchangeId Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{
@@ -59,9 +59,6 @@ $params = @{
 Invoke-MgTranslateUserExchangeId -UserId $userId -BodyParameter $params
 ```
 
-This example shows how to use the Invoke-MgTranslateUserExchangeId Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -69,7 +66,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: TranslateExpanded1, TranslateViaIdentityExpanded1
+Parameter Sets: TranslateExpanded, TranslateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -81,11 +78,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IComponents1L8Ofp3RequestbodiesTranslateexchangeidsrequestbodyContentApplicationJsonSchema
-Parameter Sets: Translate1, TranslateViaIdentity1
+Parameter Sets: Translate, TranslateViaIdentity
 Aliases:
 
 Required: True
@@ -100,7 +97,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String[]
-Parameter Sets: TranslateExpanded1, TranslateViaIdentityExpanded1
+Parameter Sets: TranslateExpanded, TranslateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -112,11 +109,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: TranslateViaIdentityExpanded1, TranslateViaIdentity1
+Parameter Sets: TranslateViaIdentityExpanded, TranslateViaIdentity
 Aliases:
 
 Required: True
@@ -131,7 +128,7 @@ exchangeIdFormat
 
 ```yaml
 Type: String
-Parameter Sets: TranslateExpanded1, TranslateViaIdentityExpanded1
+Parameter Sets: TranslateExpanded, TranslateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -146,7 +143,7 @@ exchangeIdFormat
 
 ```yaml
 Type: String
-Parameter Sets: TranslateExpanded1, TranslateViaIdentityExpanded1
+Parameter Sets: TranslateExpanded, TranslateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -161,7 +158,7 @@ The unique identifier of user
 
 ```yaml
 Type: String
-Parameter Sets: TranslateExpanded1, Translate1
+Parameter Sets: TranslateExpanded, Translate
 Aliases:
 
 Required: True
@@ -221,26 +218,19 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IComponents1L8Ofp3RequestbodiesTranslateexchangeidsrequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IComponents1L8Ofp3RequestbodiesTranslateexchangeidsrequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[InputIds <String[]>]`: 
   - `[SourceIdType <String>]`: exchangeIdFormat
   - `[TargetIdType <String>]`: exchangeIdFormat
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
-  - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
-  - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
-  - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
+`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AuthenticationMethodId <String>]`: The unique identifier of authenticationMethod
   - `[CalendarId <String>]`: The unique identifier of calendar
   - `[ChatId <String>]`: The unique identifier of chat
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
   - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
-  - `[CloudPcId <String>]`: The unique identifier of cloudPC
   - `[ContentTypeId <String>]`: The unique identifier of contentType
-  - `[DeviceEnrollmentConfigurationId <String>]`: The unique identifier of deviceEnrollmentConfiguration
-  - `[DeviceId <String>]`: The unique identifier of device
-  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
   - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
   - `[DriveId <String>]`: The unique identifier of drive
   - `[DriveItemId <String>]`: The unique identifier of driveItem
@@ -253,17 +243,11 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
   - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
   - `[MessageId <String>]`: The unique identifier of message
-  - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
   - `[NotebookId <String>]`: The unique identifier of notebook
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
-  - `[OutlookTaskFolderId <String>]`: The unique identifier of outlookTaskFolder
-  - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
-  - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
-  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
-  - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
   - `[TodoTaskId <String>]`: The unique identifier of todoTask

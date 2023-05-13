@@ -1,7 +1,7 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2xuserflowidentityproviderbyref
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2xuserflowidentityproviderbyref
 schema: 2.0.0
 ---
 
@@ -22,6 +22,20 @@ Get-MgIdentityB2XUserFlowIdentityProviderByRef -B2XIdentityUserFlowId <String> [
 Get ref of userFlowIdentityProviders from identity
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 

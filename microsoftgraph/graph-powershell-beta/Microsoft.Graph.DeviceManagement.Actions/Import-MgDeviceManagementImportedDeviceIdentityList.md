@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/import-mgdevicemanagementimporteddeviceidentitylist
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/import-mgbetadevicemanagementimporteddeviceidentitylist
 schema: 2.0.0
 ---
 
-# Import-MgDeviceManagementImportedDeviceIdentityList
+# Import-MgBetaDeviceManagementImportedDeviceIdentityList
 
 ## SYNOPSIS
 Invoke action importDeviceIdentityList
@@ -14,14 +14,14 @@ Invoke action importDeviceIdentityList
 
 ### ImportExpanded (Default)
 ```
-Import-MgDeviceManagementImportedDeviceIdentityList [-AdditionalProperties <Hashtable>]
+Import-MgBetaDeviceManagementImportedDeviceIdentityList [-AdditionalProperties <Hashtable>]
  [-ImportedDeviceIdentities <IMicrosoftGraphImportedDeviceIdentity[]>] [-OverwriteImportedDeviceIdentities]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Import
 ```
-Import-MgDeviceManagementImportedDeviceIdentityList
+Import-MgBetaDeviceManagementImportedDeviceIdentityList
  -BodyParameter <IPaths19M2JbiDevicemanagementImporteddeviceidentitiesMicrosoftGraphImportdeviceidentitylistPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -30,6 +30,20 @@ Import-MgDeviceManagementImportedDeviceIdentityList
 Invoke action importDeviceIdentityList
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -50,7 +64,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths19M2JbiDevicemanagementImporteddeviceidentitiesMicrosoftGraphImportdeviceidentitylistPostRequestbodyContentApplicationJsonSchema
@@ -66,7 +80,7 @@ Accept wildcard characters: False
 
 ### -ImportedDeviceIdentities
 .
-To construct, please use Get-Help -Online and see NOTES section for IMPORTEDDEVICEIDENTITIES properties and create a hash table.
+To construct, see NOTES section for IMPORTEDDEVICEIDENTITIES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphImportedDeviceIdentity[]
@@ -131,10 +145,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths19M2JbiDevicemanagementImporteddeviceidentitiesMicrosoftGraphImportdeviceidentitylistPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths19M2JbiDevicemanagementImporteddeviceidentitiesMicrosoftGraphImportdeviceidentitylistPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphImportedDeviceIdentityResult
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphImportedDeviceIdentityResult
 ## NOTES
 
 ALIASES
@@ -144,10 +158,10 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths19M2JbiDevicemanagementImporteddeviceidentitiesMicrosoftGraphImportdeviceidentitylistPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths19M2JbiDevicemanagementImporteddeviceidentitiesMicrosoftGraphImportdeviceidentitylistPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ImportedDeviceIdentities <IMicrosoftGraphImportedDeviceIdentity[]>]`: 
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[CreatedDateTime <DateTime?>]`: Created Date Time of the device
     - `[Description <String>]`: The description of the device
     - `[EnrollmentState <EnrollmentState?>]`: enrollmentState
@@ -158,8 +172,8 @@ BODYPARAMETER `<IPaths19M2JbiDevicemanagementImporteddeviceidentitiesMicrosoftGr
     - `[Platform <Platform?>]`: platform
   - `[OverwriteImportedDeviceIdentities <Boolean?>]`: 
 
-IMPORTEDDEVICEIDENTITIES <IMicrosoftGraphImportedDeviceIdentity\[]>: .
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`IMPORTEDDEVICEIDENTITIES <IMicrosoftGraphImportedDeviceIdentity[]>`: .
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[CreatedDateTime <DateTime?>]`: Created Date Time of the device
   - `[Description <String>]`: The description of the device
   - `[EnrollmentState <EnrollmentState?>]`: enrollmentState

@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/submit-mgsecuritytiindicator
+﻿---
+external help file: Microsoft.Graph.Beta.Security-help.xml
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/submit-mgbetasecuritytiindicator
 schema: 2.0.0
 ---
 
-# Submit-MgSecurityTiIndicator
+# Submit-MgBetaSecurityTiIndicator
 
 ## SYNOPSIS
 Upload multiple threat intelligence (TI) indicators in one request instead of multiple requests.
@@ -14,13 +14,13 @@ Upload multiple threat intelligence (TI) indicators in one request instead of mu
 
 ### SubmitExpanded (Default)
 ```
-Submit-MgSecurityTiIndicator [-AdditionalProperties <Hashtable>] [-Value <IMicrosoftGraphTiIndicator[]>]
+Submit-MgBetaSecurityTiIndicator [-AdditionalProperties <Hashtable>] [-Value <IMicrosoftGraphTiIndicator[]>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Submit
 ```
-Submit-MgSecurityTiIndicator
+Submit-MgBetaSecurityTiIndicator
  -BodyParameter <IPaths18Nbj75SecurityTiindicatorsMicrosoftGraphSubmittiindicatorsPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -30,9 +30,9 @@ Upload multiple threat intelligence (TI) indicators in one request instead of mu
 
 ## EXAMPLES
 
-### Example 1: Using the Submit-MgSecurityTiIndicator Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Security
+Import-Module Microsoft.Graph.Beta.Security
 $params = @{
 	Value = @(
 		@{
@@ -77,11 +77,8 @@ $params = @{
 		}
 	)
 }
-Submit-MgSecurityTiIndicator -BodyParameter $params
+Submit-MgBetaSecurityTiIndicator -BodyParameter $params
 ```
-
-This example shows how to use the Submit-MgSecurityTiIndicator Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -102,7 +99,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths18Nbj75SecurityTiindicatorsMicrosoftGraphSubmittiindicatorsPostRequestbodyContentApplicationJsonSchema
@@ -118,7 +115,7 @@ Accept wildcard characters: False
 
 ### -Value
 .
-To construct, please use Get-Help -Online and see NOTES section for VALUE properties and create a hash table.
+To construct, see NOTES section for VALUE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphTiIndicator[]
@@ -168,10 +165,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths18Nbj75SecurityTiindicatorsMicrosoftGraphSubmittiindicatorsPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths18Nbj75SecurityTiindicatorsMicrosoftGraphSubmittiindicatorsPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTiIndicator
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTiIndicator
 ## NOTES
 
 ALIASES
@@ -181,10 +178,10 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths18Nbj75SecurityTiindicatorsMicrosoftGraphSubmittiindicatorsPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths18Nbj75SecurityTiindicatorsMicrosoftGraphSubmittiindicatorsPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Value <IMicrosoftGraphTiIndicator[]>]`: 
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Action <String>]`: tiAction
     - `[ActivityGroupNames <String[]>]`: The cyber threat intelligence name(s) for the parties responsible for the malicious activity covered by the threat indicator.
     - `[AdditionalInformation <String>]`: A catchall area into which extra data from the indicator not covered by the other tiIndicator properties may be placed. Data placed into additionalInformation will typically not be utilized by the targetProduct security tool.
@@ -244,8 +241,8 @@ BODYPARAMETER `<IPaths18Nbj75SecurityTiindicatorsMicrosoftGraphSubmittiindicator
     - `[Url <String>]`: 
     - `[UserAgent <String>]`: 
 
-VALUE <IMicrosoftGraphTiIndicator\[]>: .
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`VALUE <IMicrosoftGraphTiIndicator[]>`: .
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Action <String>]`: tiAction
   - `[ActivityGroupNames <String[]>]`: The cyber threat intelligence name(s) for the parties responsible for the malicious activity covered by the threat indicator.
   - `[AdditionalInformation <String>]`: A catchall area into which extra data from the indicator not covered by the other tiIndicator properties may be placed. Data placed into additionalInformation will typically not be utilized by the targetProduct security tool.

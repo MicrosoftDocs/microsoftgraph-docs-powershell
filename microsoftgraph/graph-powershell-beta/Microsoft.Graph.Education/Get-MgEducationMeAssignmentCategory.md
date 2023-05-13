@@ -1,12 +1,11 @@
----
-external help file: Microsoft.Graph.Education-help.xml
-Module Name: Microsoft.Graph.Education
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/get-mgeducationmeassignmentcategory
+﻿---
+external help file: Microsoft.Graph.Beta.Education-help.xml
+Module Name: Microsoft.Graph.Beta.Education
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmeassignmentcategory
 schema: 2.0.0
-ms.prod: education
 ---
 
-# Get-MgEducationMeAssignmentCategory
+# Get-MgBetaEducationMeAssignmentCategory
 
 ## SYNOPSIS
 List all the categories associated with an assignment.
@@ -15,7 +14,7 @@ Only teachers, students, and applications with application permissions can perfo
 ## SYNTAX
 
 ```
-Get-MgEducationMeAssignmentCategory -EducationAssignmentId <String> [-ExpandProperty <String[]>]
+Get-MgBetaEducationMeAssignmentCategory -EducationAssignmentId <String> [-ExpandProperty <String[]>]
  [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
@@ -25,6 +24,20 @@ List all the categories associated with an assignment.
 Only teachers, students, and applications with application permissions can perform this operation.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -201,7 +214,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationCategory
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationCategory
 ## NOTES
 
 ALIASES

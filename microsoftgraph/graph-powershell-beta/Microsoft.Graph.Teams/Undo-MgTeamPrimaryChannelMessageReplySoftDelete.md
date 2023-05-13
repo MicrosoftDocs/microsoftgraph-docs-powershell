@@ -1,33 +1,47 @@
----
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/undo-mgteamprimarychannelmessagereplysoftdelete
+﻿---
+external help file: Microsoft.Graph.Beta.Teams-help.xml
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/undo-mgbetateamprimarychannelmessagereplysoftdelete
 schema: 2.0.0
 ---
 
-# Undo-MgTeamPrimaryChannelMessageReplySoftDelete
+# Undo-MgBetaTeamPrimaryChannelMessageReplySoftDelete
 
 ## SYNOPSIS
 Undo soft deletion of a single chatMessage or a chat message reply in a channel or a chat.
 
 ## SYNTAX
 
-### Undo1 (Default)
+### Undo (Default)
 ```
-Undo-MgTeamPrimaryChannelMessageReplySoftDelete -ChatMessageId <String> -ChatMessageId1 <String>
+Undo-MgBetaTeamPrimaryChannelMessageReplySoftDelete -ChatMessageId <String> -ChatMessageId1 <String>
  -TeamId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UndoViaIdentity1
+### UndoViaIdentity
 ```
-Undo-MgTeamPrimaryChannelMessageReplySoftDelete -InputObject <ITeamsIdentity> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Undo-MgBetaTeamPrimaryChannelMessageReplySoftDelete -InputObject <ITeamsIdentity> [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Undo soft deletion of a single chatMessage or a chat message reply in a channel or a chat.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -36,7 +50,7 @@ The unique identifier of chatMessage
 
 ```yaml
 Type: String
-Parameter Sets: Undo1
+Parameter Sets: Undo
 Aliases:
 
 Required: True
@@ -51,7 +65,7 @@ The unique identifier of chatMessage
 
 ```yaml
 Type: String
-Parameter Sets: Undo1
+Parameter Sets: Undo
 Aliases:
 
 Required: True
@@ -63,11 +77,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: UndoViaIdentity1
+Parameter Sets: UndoViaIdentity
 Aliases:
 
 Required: True
@@ -97,7 +111,7 @@ The unique identifier of team
 
 ```yaml
 Type: String
-Parameter Sets: Undo1
+Parameter Sets: Undo
 Aliases:
 
 Required: True
@@ -143,7 +157,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
 ## OUTPUTS
 
 ### System.Boolean
@@ -156,7 +170,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat

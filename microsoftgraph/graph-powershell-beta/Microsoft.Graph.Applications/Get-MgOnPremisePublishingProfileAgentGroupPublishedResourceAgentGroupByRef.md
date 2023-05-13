@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Applications-help.xml
-Module Name: Microsoft.Graph.Applications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgonpremisepublishingprofileagentgrouppublishedresourceagentgroupbyref
+﻿---
+external help file: Microsoft.Graph.Beta.Applications-help.xml
+Module Name: Microsoft.Graph.Beta.Applications
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofileagentgrouppublishedresourceagentgroupbyref
 schema: 2.0.0
 ---
 
-# Get-MgOnPremisePublishingProfileAgentGroupPublishedResourceAgentGroupByRef
+# Get-MgBetaOnPremisePublishingProfileAgentGroupPublishedResourceAgentGroupByRef
 
 ## SYNOPSIS
 List of onPremisesAgentGroups that a publishedResource is assigned to.
@@ -15,7 +15,7 @@ Nullable.
 ## SYNTAX
 
 ```
-Get-MgOnPremisePublishingProfileAgentGroupPublishedResourceAgentGroupByRef -OnPremisesAgentGroupId <String>
+Get-MgBetaOnPremisePublishingProfileAgentGroupPublishedResourceAgentGroupByRef -OnPremisesAgentGroupId <String>
  -OnPremisesPublishingProfileId <String> -PublishedResourceId <String> [-Filter <String>] [-Search <String>]
  [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
  [<CommonParameters>]
@@ -27,6 +27,20 @@ Read-only.
 Nullable.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 

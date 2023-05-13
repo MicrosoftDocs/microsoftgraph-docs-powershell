@@ -1,7 +1,7 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/get-mgeducationme
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationme
 schema: 2.0.0
 ---
 
@@ -20,6 +20,20 @@ Get-MgEducationMe [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonPa
 Get me from education
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -60,7 +74,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationUser1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationUser
 ## NOTES
 
 ALIASES

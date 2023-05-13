@@ -1,6 +1,6 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Enrolment
+﻿---
+external help file: Microsoft.Graph.Identity.Governance-help.xml
+Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/invoke-mgfilterrolemanagemententitlementmanagementroleassignmentscheduleinstancebycurrentuser
 schema: 2.0.0
 ---
@@ -12,17 +12,17 @@ Invoke function filterByCurrentUser
 
 ## SYNTAX
 
-### Filter1 (Default)
+### Filter (Default)
 ```
 Invoke-MgFilterRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceByCurrentUser -On <String>
  [-Count] [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>]
  [-Top <Int32>] [<CommonParameters>]
 ```
 
-### FilterViaIdentity1
+### FilterViaIdentity
 ```
 Invoke-MgFilterRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceByCurrentUser
- -InputObject <IDeviceManagementEnrolmentIdentity> [-Count] [-Filter <String>] [-Property <String[]>]
+ -InputObject <IIdentityGovernanceIdentity> [-Count] [-Filter <String>] [-Property <String[]>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
 ```
 
@@ -68,8 +68,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementEnrolmentIdentity
-Parameter Sets: FilterViaIdentity1
+Type: IIdentityGovernanceIdentity
+Parameter Sets: FilterViaIdentity
 Aliases:
 
 Required: True
@@ -84,7 +84,7 @@ Usage: on='{on}'
 
 ```yaml
 Type: String
-Parameter Sets: Filter1
+Parameter Sets: Filter
 Aliases:
 
 Required: True
@@ -174,7 +174,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementEnrolmentIdentity
+### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance

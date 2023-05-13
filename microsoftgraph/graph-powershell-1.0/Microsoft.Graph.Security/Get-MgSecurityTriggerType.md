@@ -1,7 +1,7 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/get-mgsecuritytriggertype
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritytriggertype
 schema: 2.0.0
 ---
 
@@ -20,6 +20,16 @@ Get-MgSecurityTriggerType [-ExpandProperty <String[]>] [-Property <String[]>] [<
 Get triggerTypes from security
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 

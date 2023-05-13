@@ -1,60 +1,52 @@
----
-external help file: Microsoft.Graph.Compliance-help.xml
-Module Name: Microsoft.Graph.Compliance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/get-mgcomplianceediscoverycasecustodianusersource
+﻿---
+external help file: Microsoft.Graph.Beta.Compliance-help.xml
+Module Name: Microsoft.Graph.Beta.Compliance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasecustodianusersource
 schema: 2.0.0
 ---
 
-# Get-MgComplianceEdiscoveryCaseCustodianUserSource
+# Get-MgBetaComplianceEdiscoveryCaseCustodianUserSource
 
 ## SYNOPSIS
-Data source entity for a the custodian.
-This is the container for a custodian's mailbox and OneDrive for Business site.
+Read the properties and relationships of a userSource object.
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgComplianceEdiscoveryCaseCustodianUserSource -CaseId <String> -CustodianId <String>
+Get-MgBetaComplianceEdiscoveryCaseCustodianUserSource -CaseId <String> -CustodianId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
  [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgComplianceEdiscoveryCaseCustodianUserSource -CaseId <String> -CustodianId <String> -UserSourceId <String>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaComplianceEdiscoveryCaseCustodianUserSource -CaseId <String> -CustodianId <String>
+ -UserSourceId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgComplianceEdiscoveryCaseCustodianUserSource -InputObject <IComplianceIdentity>
+Get-MgBetaComplianceEdiscoveryCaseCustodianUserSource -InputObject <IComplianceIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Data source entity for a the custodian.
-This is the container for a custodian's mailbox and OneDrive for Business site.
+Read the properties and relationships of a userSource object.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgComplianceEdiscoveryCaseCustodianUserSource Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Compliance
-Get-MgComplianceEdiscoveryCaseCustodianUserSource -CaseId $caseId -CustodianId $custodianId
+Import-Module Microsoft.Graph.Beta.Compliance
+Get-MgBetaComplianceEdiscoveryCaseCustodianUserSource -CaseId $caseId -CustodianId $custodianId
 ```
 
-This example shows how to use the Get-MgComplianceEdiscoveryCaseCustodianUserSource Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Get-MgComplianceEdiscoveryCaseCustodianUserSource Cmdlet
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Compliance
-Get-MgComplianceEdiscoveryCaseCustodianUserSource -CaseId $caseId -CustodianId $custodianId -UserSourceId $userSourceId
+Import-Module Microsoft.Graph.Beta.Compliance
+Get-MgBetaComplianceEdiscoveryCaseCustodianUserSource -CaseId $caseId -CustodianId $custodianId -UserSourceId $userSourceId
 ```
-
-This example shows how to use the Get-MgComplianceEdiscoveryCaseCustodianUserSource Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -151,7 +143,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IComplianceIdentity
@@ -275,10 +267,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IComplianceIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryUserSource
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEdiscoveryUserSource
 ## NOTES
 
 ALIASES
@@ -288,7 +280,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
+`INPUTOBJECT <IComplianceIdentity>`: Identity Parameter
   - `[CaseId <String>]`: The unique identifier of case
   - `[CaseOperationId <String>]`: The unique identifier of caseOperation
   - `[CustodianId <String>]`: The unique identifier of custodian

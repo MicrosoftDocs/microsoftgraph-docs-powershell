@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmobileapptroubleshootingeventapplogcollectionrequest
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmobileapptroubleshootingeventapplogcollectionrequest
 schema: 2.0.0
 ---
 
-# New-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest
+# New-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest
 
 ## SYNOPSIS
 Create new navigation property to appLogCollectionRequests for deviceManagement
@@ -14,7 +14,7 @@ Create new navigation property to appLogCollectionRequests for deviceManagement
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest
+New-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest
  -MobileAppTroubleshootingEventId <String> [-AdditionalProperties <Hashtable>] [-CompletedDateTime <DateTime>]
  [-CustomLogFolders <String[]>] [-ErrorMessage <String>] [-Id <String>] [-Status <AppLogUploadState>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -22,14 +22,14 @@ New-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest
 
 ### Create
 ```
-New-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest
+New-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest
  -MobileAppTroubleshootingEventId <String> -BodyParameter <IMicrosoftGraphAppLogCollectionRequest> [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest
+New-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest
  -InputObject <IDeviceManagementIdentity> [-AdditionalProperties <Hashtable>] [-CompletedDateTime <DateTime>]
  [-CustomLogFolders <String[]>] [-ErrorMessage <String>] [-Id <String>] [-Status <AppLogUploadState>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -37,7 +37,7 @@ New-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest
 
 ### CreateViaIdentity
 ```
-New-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest
+New-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest
  -InputObject <IDeviceManagementIdentity> -BodyParameter <IMicrosoftGraphAppLogCollectionRequest> [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
@@ -46,6 +46,20 @@ New-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest
 Create new navigation property to appLogCollectionRequests for deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -66,7 +80,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Entity for AppLogCollectionRequest contains all logs values.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAppLogCollectionRequest
@@ -126,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -143,7 +157,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementIdentity
@@ -223,11 +237,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppLogCollectionRequest
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAppLogCollectionRequest
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppLogCollectionRequest
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAppLogCollectionRequest
 ## NOTES
 
 ALIASES
@@ -237,15 +251,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphAppLogCollectionRequest>`: Entity for AppLogCollectionRequest contains all logs values.
+`BODYPARAMETER <IMicrosoftGraphAppLogCollectionRequest>`: Entity for AppLogCollectionRequest contains all logs values.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
   - `[CustomLogFolders <String[]>]`: List of log folders.
   - `[ErrorMessage <String>]`: Indicates error message if any during the upload process.
   - `[Status <AppLogUploadState?>]`: AppLogUploadStatus
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementIdentity>`: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: The unique identifier of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: The unique identifier of androidManagedStoreAppConfigurationSchema
@@ -377,6 +391,8 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionAppLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionAppLearningSummary
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
+  - `[WindowsQualityUpdateProfileAssignmentId <String>]`: The unique identifier of windowsQualityUpdateProfileAssignment
+  - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
 ## RELATED LINKS
 

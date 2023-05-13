@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticanomaly
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticanomaly
 schema: 2.0.0
 ---
 
-# New-MgDeviceManagementUserExperienceAnalyticAnomaly
+# New-MgBetaDeviceManagementUserExperienceAnalyticAnomaly
 
 ## SYNOPSIS
 Create new navigation property to userExperienceAnalyticsAnomaly for deviceManagement
@@ -14,7 +14,7 @@ Create new navigation property to userExperienceAnalyticsAnomaly for deviceManag
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementUserExperienceAnalyticAnomaly [-AdditionalProperties <Hashtable>]
+New-MgBetaDeviceManagementUserExperienceAnalyticAnomaly [-AdditionalProperties <Hashtable>]
  [-AnomalyFirstOccurrenceDateTime <DateTime>] [-AnomalyId <String>]
  [-AnomalyLatestOccurrenceDateTime <DateTime>] [-AnomalyName <String>]
  [-AnomalyType <UserExperienceAnalyticsAnomalyType>] [-AssetName <String>] [-AssetPublisher <String>]
@@ -25,7 +25,7 @@ New-MgDeviceManagementUserExperienceAnalyticAnomaly [-AdditionalProperties <Hash
 
 ### Create
 ```
-New-MgDeviceManagementUserExperienceAnalyticAnomaly
+New-MgBetaDeviceManagementUserExperienceAnalyticAnomaly
  -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAnomaly> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -33,6 +33,20 @@ New-MgDeviceManagementUserExperienceAnalyticAnomaly
 Create new navigation property to userExperienceAnalyticsAnomaly for deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -174,7 +188,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 The user experience analytics anomaly entity contains anomaly details.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserExperienceAnalyticsAnomaly
@@ -220,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -318,10 +332,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAnomaly
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAnomaly
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAnomaly
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAnomaly
 ## NOTES
 
 ALIASES
@@ -331,9 +345,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsAnomaly>`: The user experience analytics anomaly entity contains anomaly details.
+`BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsAnomaly>`: The user experience analytics anomaly entity contains anomaly details.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AnomalyFirstOccurrenceDateTime <DateTime?>]`: Indicates the first occurrence date and time for the anomaly.
   - `[AnomalyId <String>]`: The unique identifier of the anomaly.
   - `[AnomalyLatestOccurrenceDateTime <DateTime?>]`: Indicates the latest occurrence date and time for the anomaly.

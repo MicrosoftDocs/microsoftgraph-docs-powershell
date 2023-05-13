@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.PersonalContacts
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.personalcontacts/update-mgusercontactfolderchildfoldercontactsinglevalueextendedproperty
@@ -16,30 +16,28 @@ Update the navigation property singleValueExtendedProperties in users
 ```
 Update-MgUserContactFolderChildFolderContactSingleValueExtendedProperty -ContactFolderId <String>
  -ContactFolderId1 <String> -ContactId <String> -SingleValueLegacyExtendedPropertyId <String> -UserId <String>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-Value <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-Value <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgUserContactFolderChildFolderContactSingleValueExtendedProperty -ContactFolderId <String>
  -ContactFolderId1 <String> -ContactId <String> -SingleValueLegacyExtendedPropertyId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphSingleValueLegacyExtendedProperty> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSingleValueLegacyExtendedProperty> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgUserContactFolderChildFolderContactSingleValueExtendedProperty
  -InputObject <IPersonalContactsIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>] [-Value <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgUserContactFolderChildFolderContactSingleValueExtendedProperty
  -InputObject <IPersonalContactsIdentity> -BodyParameter <IMicrosoftGraphSingleValueLegacyExtendedProperty>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -157,21 +155,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -SingleValueLegacyExtendedPropertyId
 The unique identifier of singleValueLegacyExtendedProperty
 
@@ -257,7 +240,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IPersonalContactsIdentity
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSingleValueLegacyExtendedProperty
 ## NOTES
 
 ALIASES

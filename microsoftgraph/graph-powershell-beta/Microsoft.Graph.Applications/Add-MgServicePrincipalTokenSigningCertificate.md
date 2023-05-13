@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Applications-help.xml
-Module Name: Microsoft.Graph.Applications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/add-mgserviceprincipaltokensigningcertificate
+﻿---
+external help file: Microsoft.Graph.Beta.Applications-help.xml
+Module Name: Microsoft.Graph.Beta.Applications
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/add-mgbetaserviceprincipaltokensigningcertificate
 schema: 2.0.0
 ---
 
-# Add-MgServicePrincipalTokenSigningCertificate
+# Add-MgBetaServicePrincipalTokenSigningCertificate
 
 ## SYNOPSIS
 Creates a self-signed signing certificate and returns a selfSignedCertificate object, which is the public part of the generated certificate.
@@ -21,27 +21,28 @@ The **endDateTime** can be up to three years after the certificate is created.
 
 ### AddExpanded (Default)
 ```
-Add-MgServicePrincipalTokenSigningCertificate -ServicePrincipalId <String> [-AdditionalProperties <Hashtable>]
- [-DisplayName <String>] [-EndDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Add-MgBetaServicePrincipalTokenSigningCertificate -ServicePrincipalId <String>
+ [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-EndDateTime <DateTime>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Add
 ```
-Add-MgServicePrincipalTokenSigningCertificate -ServicePrincipalId <String>
+Add-MgBetaServicePrincipalTokenSigningCertificate -ServicePrincipalId <String>
  -BodyParameter <IPathsEyijssServiceprincipalsServiceprincipalIdMicrosoftGraphAddtokensigningcertificatePostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### AddViaIdentityExpanded
 ```
-Add-MgServicePrincipalTokenSigningCertificate -InputObject <IApplicationsIdentity>
+Add-MgBetaServicePrincipalTokenSigningCertificate -InputObject <IApplicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-EndDateTime <DateTime>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### AddViaIdentity
 ```
-Add-MgServicePrincipalTokenSigningCertificate -InputObject <IApplicationsIdentity>
+Add-MgBetaServicePrincipalTokenSigningCertificate -InputObject <IApplicationsIdentity>
  -BodyParameter <IPathsEyijssServiceprincipalsServiceprincipalIdMicrosoftGraphAddtokensigningcertificatePostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -58,18 +59,15 @@ The **endDateTime** can be up to three years after the certificate is created.
 
 ## EXAMPLES
 
-### Example 1: Using the Add-MgServicePrincipalTokenSigningCertificate Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Applications
+Import-Module Microsoft.Graph.Beta.Applications
 $params = @{
 	DisplayName = "CN=customDisplayName"
 	EndDateTime = [System.DateTime]::Parse("2024-01-25T00:00:00Z")
 }
-Add-MgServicePrincipalTokenSigningCertificate -ServicePrincipalId $servicePrincipalId -BodyParameter $params
+Add-MgBetaServicePrincipalTokenSigningCertificate -ServicePrincipalId $servicePrincipalId -BodyParameter $params
 ```
-
-This example shows how to use the Add-MgServicePrincipalTokenSigningCertificate Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -90,7 +88,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPathsEyijssServiceprincipalsServiceprincipalIdMicrosoftGraphAddtokensigningcertificatePostRequestbodyContentApplicationJsonSchema
@@ -136,7 +134,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IApplicationsIdentity
@@ -201,11 +199,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-### Microsoft.Graph.PowerShell.Models.IPathsEyijssServiceprincipalsServiceprincipalIdMicrosoftGraphAddtokensigningcertificatePostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsEyijssServiceprincipalsServiceprincipalIdMicrosoftGraphAddtokensigningcertificatePostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSelfSignedCertificate
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSelfSignedCertificate
 ## NOTES
 
 ALIASES
@@ -215,12 +213,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsEyijssServiceprincipalsServiceprincipalIdMicrosoftGraphAddtokensigningcertificatePostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsEyijssServiceprincipalsServiceprincipalIdMicrosoftGraphAddtokensigningcertificatePostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: 
   - `[EndDateTime <DateTime?>]`: 
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+`INPUTOBJECT <IApplicationsIdentity>`: Identity Parameter
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
   - `[ApplicationId <String>]`: The unique identifier of application

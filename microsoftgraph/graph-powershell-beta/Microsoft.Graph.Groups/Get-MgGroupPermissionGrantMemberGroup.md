@@ -1,89 +1,53 @@
----
-external help file: Microsoft.Graph.Groups-help.xml
-Module Name: Microsoft.Graph.Groups
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/get-mggrouppermissiongrantmembergroup
+﻿---
+external help file: Microsoft.Graph.Beta.Groups-help.xml
+Module Name: Microsoft.Graph.Beta.Groups
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouppermissiongrantdelta
 schema: 2.0.0
 ---
 
-# Get-MgGroupPermissionGrantMemberGroup
+# Get-MgBetaGroupPermissionGrantDelta
 
 ## SYNOPSIS
-Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
-This function is transitive.
+Invoke function delta
 
 ## SYNTAX
 
-### GetExpanded (Default)
+### Delta (Default)
 ```
-Get-MgGroupPermissionGrantMemberGroup -GroupId <String> -ResourceSpecificPermissionGrantId <String>
- [-AdditionalProperties <Hashtable>] [-SecurityEnabledOnly] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Get
-```
-Get-MgGroupPermissionGrantMemberGroup -GroupId <String> -ResourceSpecificPermissionGrantId <String>
- -BodyParameter <IPaths15VhiroGroupsGroupIdPermissiongrantsResourcespecificpermissiongrantIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Get-MgBetaGroupPermissionGrantDelta -GroupId <String> [-Filter <String>] [-Property <String[]>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### GetViaIdentityExpanded
+### DeltaViaIdentity
 ```
-Get-MgGroupPermissionGrantMemberGroup -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
- [-SecurityEnabledOnly] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### GetViaIdentity
-```
-Get-MgGroupPermissionGrantMemberGroup -InputObject <IGroupsIdentity>
- -BodyParameter <IPaths15VhiroGroupsGroupIdPermissiongrantsResourcespecificpermissiongrantIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Get-MgBetaGroupPermissionGrantDelta -InputObject <IGroupsIdentity> [-Filter <String>] [-Property <String[]>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-Count] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
-This function is transitive.
+Invoke function delta
 
 ## EXAMPLES
 
-### Example 1: Check group memberships for a directory object
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.DirectoryObjects
-
-$params = @{
-	SecurityEnabledOnly = $false
-}
-
-Get-MgDirectoryObjectMemberGroup -DirectoryObjectId $directoryObjectId -BodyParameter $params
+{{ Add code here }}
 ```
 
-This example shows how to use the Get-MgGroupPermissionGrantMemberGroup Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Check group memberships for the signed-in user
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Users.Actions
-
-$params = @{
-	SecurityEnabledOnly = $true
-}
-
-# A UPN can also be used as -UserId.
-Get-MgUserMemberGroup -UserId $userId -BodyParameter $params
+{{ Add code here }}
 ```
-
-This example shows how to use the Get-MgGroupPermissionGrantMemberGroup Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -All
+List all pages.
 
 ```yaml
-Type: Hashtable
-Parameter Sets: GetExpanded, GetViaIdentityExpanded
+Type: SwitchParameter
+Parameter Sets: Delta
 Aliases:
 
 Required: False
@@ -93,19 +57,49 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -BodyParameter
-.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+### -Count
+Include count of items
 
 ```yaml
-Type: IPaths15VhiroGroupsGroupIdPermissiongrantsResourcespecificpermissiongrantIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Get, GetViaIdentity
+Type: SwitchParameter
+Parameter Sets: DeltaViaIdentity
 Aliases:
 
-Required: True
+Required: False
 Position: Named
 Default value: None
-Accept pipeline input: True (ByValue)
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CountVariable
+Specifies a count of the total number of items in a collection.
+By default, this variable will be set in the global scope.
+
+```yaml
+Type: String
+Parameter Sets: Delta
+Aliases: CV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Filter
+Filter items by property values
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -114,7 +108,7 @@ The unique identifier of group
 
 ```yaml
 Type: String
-Parameter Sets: GetExpanded, Get
+Parameter Sets: Delta
 Aliases:
 
 Required: True
@@ -126,11 +120,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IGroupsIdentity
-Parameter Sets: GetViaIdentityExpanded, GetViaIdentity
+Parameter Sets: DeltaViaIdentity
 Aliases:
 
 Required: True
@@ -140,27 +134,42 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ResourceSpecificPermissionGrantId
-The unique identifier of resourceSpecificPermissionGrant
+### -PageSize
+Sets the page size of results.
+
+```yaml
+Type: Int32
+Parameter Sets: Delta
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Property
+Select properties to be returned
+
+```yaml
+Type: String[]
+Parameter Sets: (All)
+Aliases: Select
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Search
+Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: GetExpanded, Get
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -SecurityEnabledOnly
-.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: GetExpanded, GetViaIdentityExpanded
+Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -170,13 +179,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
+### -Sort
+Order items by property values
 
 ```yaml
-Type: SwitchParameter
+Type: String[]
 Parameter Sets: (All)
-Aliases: cf
+Aliases: OrderBy
 
 Required: False
 Position: Named
@@ -185,14 +194,28 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+### -Top
+Show only the first n items
 
 ```yaml
-Type: SwitchParameter
+Type: Int32
 Parameter Sets: (All)
-Aliases: wi
+Aliases: Limit
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: (All)
+Aliases:
 
 Required: False
 Position: Named
@@ -206,11 +229,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths15VhiroGroupsGroupIdPermissiongrantsResourcespecificpermissiongrantIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
 ## OUTPUTS
 
-### System.String
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryObject
 ## NOTES
 
 ALIASES
@@ -220,11 +242,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths15VhiroGroupsGroupIdPermissiongrantsResourcespecificpermissiongrantIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[SecurityEnabledOnly <Boolean?>]`: 
-
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+`INPUTOBJECT <IGroupsIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[ConversationId <String>]`: The unique identifier of conversation
@@ -246,11 +264,9 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
   - `[Interval <String>]`: Usage: interval='{interval}'
   - `[ListId <String>]`: The unique identifier of list
-  - `[ListId1 <String>]`: Usage: listId='{listId}'
   - `[ListItemId <String>]`: The unique identifier of listItem
   - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
   - `[MentionId <String>]`: The unique identifier of mention
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
   - `[NotebookId <String>]`: The unique identifier of notebook
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
@@ -263,7 +279,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[Q <String>]`: Usage: q='{q}'
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
   - `[SiteId <String>]`: The unique identifier of site
   - `[SitePageId <String>]`: The unique identifier of sitePage
   - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'

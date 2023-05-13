@@ -1,12 +1,11 @@
----
-external help file: Microsoft.Graph.Planner-help.xml
-Module Name: Microsoft.Graph.Planner
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/get-mguserplannerplan
+﻿---
+external help file: Microsoft.Graph.Beta.Planner-help.xml
+Module Name: Microsoft.Graph.Beta.Planner
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetauserplannerplan
 schema: 2.0.0
-ms.prod: planner
 ---
 
-# Get-MgUserPlannerPlan
+# Get-MgBetaUserPlannerPlan
 
 ## SYNOPSIS
 Retrieve a list of **plannerplan** objects shared with a user object.
@@ -14,9 +13,9 @@ Retrieve a list of **plannerplan** objects shared with a user object.
 ## SYNTAX
 
 ```
-Get-MgUserPlannerPlan -UserId <String> [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [<CommonParameters>]
+Get-MgBetaUserPlannerPlan -UserId <String> [-ExpandProperty <String[]>] [-Filter <String>]
+ [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -24,15 +23,12 @@ Retrieve a list of **plannerplan** objects shared with a user object.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgUserPlannerPlan Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Planner
+Import-Module Microsoft.Graph.Beta.Planner
 # A UPN can also be used as -UserId.
-Get-MgUserPlannerPlan -UserId $userId
+Get-MgBetaUserPlannerPlan -UserId $userId
 ```
-
-This example shows how to use the Get-MgUserPlannerPlan Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -209,7 +205,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerPlan1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerPlan
 ## NOTES
 
 ALIASES

@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Education-help.xml
-Module Name: Microsoft.Graph.Education
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/invoke-mgreassigneducationclassassignmentsubmission
+﻿---
+external help file: Microsoft.Graph.Beta.Education-help.xml
+Module Name: Microsoft.Graph.Beta.Education
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetareassigneducationclassassignmentsubmission
 schema: 2.0.0
 ---
 
-# Invoke-MgReassignEducationClassAssignmentSubmission
+# Invoke-MgBetaReassignEducationClassAssignmentSubmission
 
 ## SYNOPSIS
 Reassign the submission to the student with feedback for review.
@@ -17,15 +17,15 @@ For details, see the examples section.
 
 ## SYNTAX
 
-### Reassign1 (Default)
+### Reassign (Default)
 ```
-Invoke-MgReassignEducationClassAssignmentSubmission -EducationAssignmentId <String> -EducationClassId <String>
- -EducationSubmissionId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgBetaReassignEducationClassAssignmentSubmission -EducationAssignmentId <String>
+ -EducationClassId <String> -EducationSubmissionId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ReassignViaIdentity1
+### ReassignViaIdentity
 ```
-Invoke-MgReassignEducationClassAssignmentSubmission -InputObject <IEducationIdentity> [-WhatIf] [-Confirm]
+Invoke-MgBetaReassignEducationClassAssignmentSubmission -InputObject <IEducationIdentity> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -39,23 +39,17 @@ For details, see the examples section.
 
 ## EXAMPLES
 
-### Example 1: Using the Invoke-MgReassignEducationClassAssignmentSubmission Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Education
-Invoke-MgReassignEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
+Import-Module Microsoft.Graph.Beta.Education
+Invoke-MgBetaReassignEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
 ```
 
-This example shows how to use the Invoke-MgReassignEducationClassAssignmentSubmission Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Invoke-MgReassignEducationClassAssignmentSubmission Cmdlet
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Education
-Invoke-MgReassignEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
+Import-Module Microsoft.Graph.Beta.Education
+Invoke-MgBetaReassignEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
 ```
-
-This example shows how to use the Invoke-MgReassignEducationClassAssignmentSubmission Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -64,7 +58,7 @@ The unique identifier of educationAssignment
 
 ```yaml
 Type: String
-Parameter Sets: Reassign1
+Parameter Sets: Reassign
 Aliases:
 
 Required: True
@@ -79,7 +73,7 @@ The unique identifier of educationClass
 
 ```yaml
 Type: String
-Parameter Sets: Reassign1
+Parameter Sets: Reassign
 Aliases:
 
 Required: True
@@ -94,7 +88,7 @@ The unique identifier of educationSubmission
 
 ```yaml
 Type: String
-Parameter Sets: Reassign1
+Parameter Sets: Reassign
 Aliases:
 
 Required: True
@@ -106,11 +100,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IEducationIdentity
-Parameter Sets: ReassignViaIdentity1
+Parameter Sets: ReassignViaIdentity
 Aliases:
 
 Required: True
@@ -156,10 +150,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IEducationIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationSubmission
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationSubmission
 ## NOTES
 
 ALIASES
@@ -169,11 +163,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+`INPUTOBJECT <IEducationIdentity>`: Identity Parameter
   - `[EducationAssignmentId <String>]`: The unique identifier of educationAssignment
   - `[EducationAssignmentResourceId <String>]`: The unique identifier of educationAssignmentResource
   - `[EducationCategoryId <String>]`: The unique identifier of educationCategory
   - `[EducationClassId <String>]`: The unique identifier of educationClass
+  - `[EducationGradingCategoryId <String>]`: The unique identifier of educationGradingCategory
   - `[EducationOutcomeId <String>]`: The unique identifier of educationOutcome
   - `[EducationRubricId <String>]`: The unique identifier of educationRubric
   - `[EducationSchoolId <String>]`: The unique identifier of educationSchool

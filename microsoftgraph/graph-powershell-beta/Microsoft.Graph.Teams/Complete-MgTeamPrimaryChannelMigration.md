@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/complete-mgteamprimarychannelmigration
+﻿---
+external help file: Microsoft.Graph.Beta.Teams-help.xml
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/complete-mgbetateamprimarychannelmigration
 schema: 2.0.0
 ---
 
-# Complete-MgTeamPrimaryChannelMigration
+# Complete-MgBetaTeamPrimaryChannelMigration
 
 ## SYNOPSIS
 Complete the message migration process by removing `migration mode` from a channel in a team.
@@ -15,14 +15,15 @@ You can add members to the team after the request returns a successful response.
 
 ## SYNTAX
 
-### Complete1 (Default)
+### Complete (Default)
 ```
-Complete-MgTeamPrimaryChannelMigration -TeamId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Complete-MgBetaTeamPrimaryChannelMigration -TeamId <String> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
-### CompleteViaIdentity1
+### CompleteViaIdentity
 ```
-Complete-MgTeamPrimaryChannelMigration -InputObject <ITeamsIdentity> [-PassThru] [-WhatIf] [-Confirm]
+Complete-MgBetaTeamPrimaryChannelMigration -InputObject <ITeamsIdentity> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -34,26 +35,22 @@ You can add members to the team after the request returns a successful response.
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Teams
-
-Complete-MgTeamChannelMigration -TeamId $teamId -ChannelId $channelId
+Import-Module Microsoft.Graph.Beta.Teams
 ```
 
-This example shows how to use the Complete-MgTeamPrimaryChannelMigration Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Complete-MgBetaTeamChannelMigration -TeamId $teamId -ChannelId $channelId
 
 ## PARAMETERS
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: CompleteViaIdentity1
+Parameter Sets: CompleteViaIdentity
 Aliases:
 
 Required: True
@@ -83,7 +80,7 @@ The unique identifier of team
 
 ```yaml
 Type: String
-Parameter Sets: Complete1
+Parameter Sets: Complete
 Aliases:
 
 Required: True
@@ -129,7 +126,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
 ## OUTPUTS
 
 ### System.Boolean
@@ -142,7 +139,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat

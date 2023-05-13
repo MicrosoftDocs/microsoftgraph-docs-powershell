@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementwindowinformationprotectionapplearningsummary
@@ -12,7 +12,7 @@ Update the navigation property windowsInformationProtectionAppLearningSummaries 
 
 ## SYNTAX
 
-### UpdateExpanded (Default)
+### UpdateExpanded1 (Default)
 ```
 Update-MgDeviceManagementWindowInformationProtectionAppLearningSummary
  -WindowsInformationProtectionAppLearningSummaryId <String> [-AdditionalProperties <Hashtable>]
@@ -20,7 +20,7 @@ Update-MgDeviceManagementWindowInformationProtectionAppLearningSummary
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Update
+### Update1
 ```
 Update-MgDeviceManagementWindowInformationProtectionAppLearningSummary
  -WindowsInformationProtectionAppLearningSummaryId <String>
@@ -28,14 +28,14 @@ Update-MgDeviceManagementWindowInformationProtectionAppLearningSummary
  [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded
+### UpdateViaIdentityExpanded1
 ```
 Update-MgDeviceManagementWindowInformationProtectionAppLearningSummary -InputObject <IDeviceManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-ApplicationName <String>] [-ApplicationType <ApplicationType>]
  [-DeviceCount <Int32>] [-Id <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity
+### UpdateViaIdentity1
 ```
 Update-MgDeviceManagementWindowInformationProtectionAppLearningSummary -InputObject <IDeviceManagementIdentity>
  -BodyParameter <IMicrosoftGraphWindowsInformationProtectionAppLearningSummary> [-PassThru] [-WhatIf]
@@ -54,7 +54,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -69,7 +69,7 @@ Application Name
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -84,7 +84,7 @@ Possible types of Application
 
 ```yaml
 Type: ApplicationType
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -100,7 +100,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IMicrosoftGraphWindowsInformationProtectionAppLearningSummary
-Parameter Sets: Update, UpdateViaIdentity
+Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
 Required: True
@@ -115,7 +115,7 @@ Device Count
 
 ```yaml
 Type: Int32
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -131,7 +131,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -147,7 +147,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
 Aliases:
 
 Required: True
@@ -177,7 +177,7 @@ The unique identifier of windowsInformationProtectionAppLearningSummary
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, Update
+Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
@@ -378,5 +378,8 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS

@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Applications-help.xml
-Module Name: Microsoft.Graph.Applications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgonpremisepublishingprofileconnectorgroupmemberbyref
+﻿---
+external help file: Microsoft.Graph.Beta.Applications-help.xml
+Module Name: Microsoft.Graph.Beta.Applications
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofileconnectorgroupmemberbyref
 schema: 2.0.0
 ---
 
-# Get-MgOnPremisePublishingProfileConnectorGroupMemberByRef
+# Get-MgBetaOnPremisePublishingProfileConnectorGroupMemberByRef
 
 ## SYNOPSIS
 Get ref of members from onPremisesPublishingProfiles
@@ -13,7 +13,7 @@ Get ref of members from onPremisesPublishingProfiles
 ## SYNTAX
 
 ```
-Get-MgOnPremisePublishingProfileConnectorGroupMemberByRef -ConnectorGroupId <String>
+Get-MgBetaOnPremisePublishingProfileConnectorGroupMemberByRef -ConnectorGroupId <String>
  -OnPremisesPublishingProfileId <String> [-Filter <String>] [-Search <String>] [-Skip <Int32>]
  [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
@@ -22,6 +22,20 @@ Get-MgOnPremisePublishingProfileConnectorGroupMemberByRef -ConnectorGroupId <Str
 Get ref of members from onPremisesPublishingProfiles
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 

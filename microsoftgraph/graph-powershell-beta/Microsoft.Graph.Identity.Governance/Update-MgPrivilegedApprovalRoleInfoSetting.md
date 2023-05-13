@@ -1,54 +1,65 @@
----
-external help file: Microsoft.Graph.Identity.Governance-help.xml
-Module Name: Microsoft.Graph.Identity.Governance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgprivilegedapprovalroleinfosetting
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.Governance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprivilegedapprovalroleinfosetting
 schema: 2.0.0
 ---
 
-# Update-MgPrivilegedApprovalRoleInfoSetting
+# Update-MgBetaPrivilegedApprovalRoleInfoSetting
 
 ## SYNOPSIS
-Update the role settings for the given role setting.
-A privilegedRoleSettings object will be returned.
+Update the navigation property settings in privilegedApproval
 
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
-Update-MgPrivilegedApprovalRoleInfoSetting -PrivilegedApprovalId <String> [-AdditionalProperties <Hashtable>]
- [-ApprovalOnElevation] [-ApproverIds <String[]>] [-ElevationDuration <TimeSpan>] [-Id <String>]
- [-IsMfaOnElevationConfigurable] [-LastGlobalAdmin] [-MaxElavationDuration <TimeSpan>] [-MfaOnElevation]
- [-MinElevationDuration <TimeSpan>] [-NotificationToUserOnElevation] [-TicketingInfoOnElevation] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaPrivilegedApprovalRoleInfoSetting -PrivilegedApprovalId <String>
+ [-AdditionalProperties <Hashtable>] [-ApprovalOnElevation] [-ApproverIds <String[]>]
+ [-ElevationDuration <TimeSpan>] [-Id <String>] [-IsMfaOnElevationConfigurable] [-LastGlobalAdmin]
+ [-MaxElavationDuration <TimeSpan>] [-MfaOnElevation] [-MinElevationDuration <TimeSpan>]
+ [-NotificationToUserOnElevation] [-TicketingInfoOnElevation] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgPrivilegedApprovalRoleInfoSetting -PrivilegedApprovalId <String>
- -BodyParameter <IMicrosoftGraphPrivilegedRoleSettings> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaPrivilegedApprovalRoleInfoSetting -PrivilegedApprovalId <String>
+ -BodyParameter <IMicrosoftGraphPrivilegedRoleSettings> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgPrivilegedApprovalRoleInfoSetting -InputObject <IIdentityGovernanceIdentity>
+Update-MgBetaPrivilegedApprovalRoleInfoSetting -InputObject <IIdentityGovernanceIdentity>
  [-AdditionalProperties <Hashtable>] [-ApprovalOnElevation] [-ApproverIds <String[]>]
  [-ElevationDuration <TimeSpan>] [-Id <String>] [-IsMfaOnElevationConfigurable] [-LastGlobalAdmin]
  [-MaxElavationDuration <TimeSpan>] [-MfaOnElevation] [-MinElevationDuration <TimeSpan>]
- [-NotificationToUserOnElevation] [-TicketingInfoOnElevation] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-NotificationToUserOnElevation] [-TicketingInfoOnElevation] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgPrivilegedApprovalRoleInfoSetting -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphPrivilegedRoleSettings> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaPrivilegedApprovalRoleInfoSetting -InputObject <IIdentityGovernanceIdentity>
+ -BodyParameter <IMicrosoftGraphPrivilegedRoleSettings> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the role settings for the given role setting.
-A privilegedRoleSettings object will be returned.
+Update the navigation property settings in privilegedApproval
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -68,8 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApprovalOnElevation
-true if the approval is required when activate the role.
-false if the approval is not required when activate the role.
+.
 
 ```yaml
 Type: SwitchParameter
@@ -84,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApproverIds
-List of Approval ids, if approval is required for activation.
+.
 
 ```yaml
 Type: String[]
@@ -100,7 +110,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 privilegedRoleSettings
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPrivilegedRoleSettings
@@ -115,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -ElevationDuration
-The duration when the role is activated.
+.
 
 ```yaml
 Type: TimeSpan
@@ -130,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -147,7 +157,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IIdentityGovernanceIdentity
@@ -162,8 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsMfaOnElevationConfigurable
-true if mfaOnElevation is configurable.
-false if mfaOnElevation is not configurable.
+.
 
 ```yaml
 Type: SwitchParameter
@@ -178,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastGlobalAdmin
-Internal used only.
+.
 
 ```yaml
 Type: SwitchParameter
@@ -193,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxElavationDuration
-Maximal duration for the activated role.
+.
 
 ```yaml
 Type: TimeSpan
@@ -208,8 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### -MfaOnElevation
-true if MFA is required to activate the role.
-false if MFA is not required to activate the role.
+.
 
 ```yaml
 Type: SwitchParameter
@@ -224,7 +232,7 @@ Accept wildcard characters: False
 ```
 
 ### -MinElevationDuration
-Minimal duration for the activated role.
+.
 
 ```yaml
 Type: TimeSpan
@@ -239,27 +247,11 @@ Accept wildcard characters: False
 ```
 
 ### -NotificationToUserOnElevation
-true if send notification to the end user when the role is activated.
-false if do not send notification when the role is activated.
+.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -285,8 +277,7 @@ Accept wildcard characters: False
 ```
 
 ### -TicketingInfoOnElevation
-true if the ticketing information is required when activate the role.
-false if the ticketing information is not required when activate the role.
+.
 
 ```yaml
 Type: SwitchParameter
@@ -336,11 +327,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrivilegedRoleSettings
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedRoleSettings
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedRoleSettings
 ## NOTES
 
 ALIASES
@@ -350,21 +341,21 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPrivilegedRoleSettings>`: privilegedRoleSettings
+`BODYPARAMETER <IMicrosoftGraphPrivilegedRoleSettings>`: privilegedRoleSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[ApprovalOnElevation <Boolean?>]`: true if the approval is required when activate the role. false if the approval is not required when activate the role.
-  - `[ApproverIds <String[]>]`: List of Approval ids, if approval is required for activation.
-  - `[ElevationDuration <TimeSpan?>]`: The duration when the role is activated.
-  - `[IsMfaOnElevationConfigurable <Boolean?>]`: true if mfaOnElevation is configurable. false if mfaOnElevation is not configurable.
-  - `[LastGlobalAdmin <Boolean?>]`: Internal used only.
-  - `[MaxElavationDuration <TimeSpan?>]`: Maximal duration for the activated role.
-  - `[MfaOnElevation <Boolean?>]`: true if MFA is required to activate the role. false if MFA is not required to activate the role.
-  - `[MinElevationDuration <TimeSpan?>]`: Minimal duration for the activated role.
-  - `[NotificationToUserOnElevation <Boolean?>]`: true if send notification to the end user when the role is activated. false if do not send notification when the role is activated.
-  - `[TicketingInfoOnElevation <Boolean?>]`: true if the ticketing information is required when activate the role. false if the ticketing information is not required when activate the role.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
+  - `[ApprovalOnElevation <Boolean?>]`: 
+  - `[ApproverIds <String[]>]`: 
+  - `[ElevationDuration <TimeSpan?>]`: 
+  - `[IsMfaOnElevationConfigurable <Boolean?>]`: 
+  - `[LastGlobalAdmin <Boolean?>]`: 
+  - `[MaxElavationDuration <TimeSpan?>]`: 
+  - `[MfaOnElevation <Boolean?>]`: 
+  - `[MinElevationDuration <TimeSpan?>]`: 
+  - `[NotificationToUserOnElevation <Boolean?>]`: 
+  - `[TicketingInfoOnElevation <Boolean?>]`: 
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentityGovernanceIdentity>`: Identity Parameter
   - `[AccessPackageAssignmentId <String>]`: The unique identifier of accessPackageAssignment
   - `[AccessPackageAssignmentPolicyId <String>]`: The unique identifier of accessPackageAssignmentPolicy
   - `[AccessPackageAssignmentRequestId <String>]`: The unique identifier of accessPackageAssignmentRequest
@@ -372,8 +363,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[AccessPackageCatalogId <String>]`: The unique identifier of accessPackageCatalog
   - `[AccessPackageId <String>]`: The unique identifier of accessPackage
   - `[AccessPackageId1 <String>]`: The unique identifier of accessPackage
-  - `[AccessPackageId2 <String>]`: Usage: accessPackageId='{accessPackageId}'
-  - `[AccessPackageQuestionId <String>]`: The unique identifier of accessPackageQuestion
   - `[AccessPackageResourceEnvironmentId <String>]`: The unique identifier of accessPackageResourceEnvironment
   - `[AccessPackageResourceId <String>]`: The unique identifier of accessPackageResource
   - `[AccessPackageResourceRequestId <String>]`: The unique identifier of accessPackageResourceRequest
@@ -398,7 +387,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[AgreementId <String>]`: The unique identifier of agreement
   - `[AppConsentRequestId <String>]`: The unique identifier of appConsentRequest
   - `[ApprovalId <String>]`: The unique identifier of approval
-  - `[ApprovalStageId <String>]`: The unique identifier of approvalStage
   - `[ApprovalStepId <String>]`: The unique identifier of approvalStep
   - `[BusinessFlowTemplateId <String>]`: The unique identifier of businessFlowTemplate
   - `[ConnectedOrganizationId <String>]`: The unique identifier of connectedOrganization
@@ -436,12 +424,24 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[ProgramControlId1 <String>]`: The unique identifier of programControl
   - `[ProgramControlTypeId <String>]`: The unique identifier of programControlType
   - `[ProgramId <String>]`: The unique identifier of program
+  - `[RbacApplicationId <String>]`: The unique identifier of rbacApplication
   - `[RunId <String>]`: The unique identifier of run
   - `[StartDateTime <DateTime?>]`: Usage: startDateTime={startDateTime}
   - `[TaskDefinitionId <String>]`: The unique identifier of taskDefinition
   - `[TaskId <String>]`: The unique identifier of task
   - `[TaskProcessingResultId <String>]`: The unique identifier of taskProcessingResult
   - `[TaskReportId <String>]`: The unique identifier of taskReport
+  - `[UnifiedRbacResourceActionId <String>]`: The unique identifier of unifiedRbacResourceAction
+  - `[UnifiedRbacResourceNamespaceId <String>]`: The unique identifier of unifiedRbacResourceNamespace
+  - `[UnifiedRoleAssignmentId <String>]`: The unique identifier of unifiedRoleAssignment
+  - `[UnifiedRoleAssignmentScheduleId <String>]`: The unique identifier of unifiedRoleAssignmentSchedule
+  - `[UnifiedRoleAssignmentScheduleInstanceId <String>]`: The unique identifier of unifiedRoleAssignmentScheduleInstance
+  - `[UnifiedRoleAssignmentScheduleRequestId <String>]`: The unique identifier of unifiedRoleAssignmentScheduleRequest
+  - `[UnifiedRoleDefinitionId <String>]`: The unique identifier of unifiedRoleDefinition
+  - `[UnifiedRoleDefinitionId1 <String>]`: The unique identifier of unifiedRoleDefinition
+  - `[UnifiedRoleEligibilityScheduleId <String>]`: The unique identifier of unifiedRoleEligibilitySchedule
+  - `[UnifiedRoleEligibilityScheduleInstanceId <String>]`: The unique identifier of unifiedRoleEligibilityScheduleInstance
+  - `[UnifiedRoleEligibilityScheduleRequestId <String>]`: The unique identifier of unifiedRoleEligibilityScheduleRequest
   - `[UnifiedRoleManagementAlertConfigurationId <String>]`: The unique identifier of unifiedRoleManagementAlertConfiguration
   - `[UnifiedRoleManagementAlertDefinitionId <String>]`: The unique identifier of unifiedRoleManagementAlertDefinition
   - `[UnifiedRoleManagementAlertId <String>]`: The unique identifier of unifiedRoleManagementAlert

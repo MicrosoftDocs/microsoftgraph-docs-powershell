@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/update-mgteamworkdevicesoftware
+﻿---
+external help file: Microsoft.Graph.Beta.Teams-help.xml
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkdevicesoftware
 schema: 2.0.0
 ---
 
-# Update-MgTeamworkDeviceSoftware
+# Update-MgBetaTeamworkDeviceSoftware
 
 ## SYNOPSIS
 Update the software for a Microsoft Teams-enabled device.
@@ -15,26 +15,26 @@ This API triggers a long-running operation.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgTeamworkDeviceSoftware -TeamworkDeviceId <String> [-AdditionalProperties <Hashtable>]
+Update-MgBetaTeamworkDeviceSoftware -TeamworkDeviceId <String> [-AdditionalProperties <Hashtable>]
  [-SoftwareType <String>] [-SoftwareVersion <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgTeamworkDeviceSoftware -TeamworkDeviceId <String>
+Update-MgBetaTeamworkDeviceSoftware -TeamworkDeviceId <String>
  -BodyParameter <IPaths1Ci0GnkTeamworkDevicesTeamworkdeviceIdMicrosoftGraphUpdatesoftwarePostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgTeamworkDeviceSoftware -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
+Update-MgBetaTeamworkDeviceSoftware -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
  [-SoftwareType <String>] [-SoftwareVersion <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgTeamworkDeviceSoftware -InputObject <ITeamsIdentity>
+Update-MgBetaTeamworkDeviceSoftware -InputObject <ITeamsIdentity>
  -BodyParameter <IPaths1Ci0GnkTeamworkDevicesTeamworkdeviceIdMicrosoftGraphUpdatesoftwarePostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -45,18 +45,15 @@ This API triggers a long-running operation.
 
 ## EXAMPLES
 
-### Example 1: Using the Update-MgTeamworkDeviceSoftware Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Teams
+Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
 	SoftwareType = "teamsClient"
 	SoftwareVersion = "1.0.96.22"
 }
-Update-MgTeamworkDeviceSoftware -TeamworkDeviceId $teamworkDeviceId -BodyParameter $params
+Update-MgBetaTeamworkDeviceSoftware -TeamworkDeviceId $teamworkDeviceId -BodyParameter $params
 ```
-
-This example shows how to use the Update-MgTeamworkDeviceSoftware Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -77,7 +74,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths1Ci0GnkTeamworkDevicesTeamworkdeviceIdMicrosoftGraphUpdatesoftwarePostRequestbodyContentApplicationJsonSchema
@@ -93,7 +90,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ITeamsIdentity
@@ -203,8 +200,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1Ci0GnkTeamworkDevicesTeamworkdeviceIdMicrosoftGraphUpdatesoftwarePostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Ci0GnkTeamworkDevicesTeamworkdeviceIdMicrosoftGraphUpdatesoftwarePostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
 ## OUTPUTS
 
 ### System.Boolean
@@ -217,12 +214,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Ci0GnkTeamworkDevicesTeamworkdeviceIdMicrosoftGraphUpdatesoftwarePostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1Ci0GnkTeamworkDevicesTeamworkdeviceIdMicrosoftGraphUpdatesoftwarePostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[SoftwareType <String>]`: teamworkSoftwareType
   - `[SoftwareVersion <String>]`: 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat

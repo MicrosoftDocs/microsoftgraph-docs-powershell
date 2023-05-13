@@ -1,46 +1,46 @@
----
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgpolicypermissiongrantpolicy
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicypermissiongrantpolicy
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
-# Get-MgPolicyPermissionGrantPolicy
+# Get-MgBetaPolicyPermissionGrantPolicy
 
 ## SYNOPSIS
-The policy that specifies the conditions under which consent can be granted.
+Retrieve a single permissionGrantPolicy object.
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgPolicyPermissionGrantPolicy [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
+Get-MgBetaPolicyPermissionGrantPolicy [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
  [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgPolicyPermissionGrantPolicy -PermissionGrantPolicyId <String> [-ExpandProperty <String[]>]
+Get-MgBetaPolicyPermissionGrantPolicy -PermissionGrantPolicyId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgPolicyPermissionGrantPolicy -InputObject <IIdentitySignInsIdentity> [-ExpandProperty <String[]>]
+Get-MgBetaPolicyPermissionGrantPolicy -InputObject <IIdentitySignInsIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The policy that specifies the conditions under which consent can be granted.
+Retrieve a single permissionGrantPolicy object.
 
 ## EXAMPLES
 
-### Example 1:  List all permission grant policies
+### EXAMPLE 1
 ```powershell
-Connect-MgGraph -Scopes "Policy.Read.PermissionGrant"  
-Get-MgPolicyPermissionGrantPolicy | fl  
+Connect-MgBetaGraph -Scopes "Policy.Read.PermissionGrant"  
+Get-MgBetaPolicyPermissionGrantPolicy | fl
+```
 
 DeletedDateTime      :
 Description          : Includes all application permissions (app roles), for all APIs, for any client application.
@@ -61,14 +61,12 @@ Includes             : {013e8de3-5e79-4b0f-a440-8f7794086460}
 AdditionalProperties : {[includeAllPreApprovedApplications, False], [resourceScopeType, chat], [includes@odata.context,
                        https://graph.microsoft.com/beta/$metadata#policies/permissionGrantPolicies('microsoft-all-application-permissions-for-chat')/includes], [excludes@odata.context,
                        https://graph.microsoft.com/beta/$metadata#policies/permissionGrantPolicies('microsoft-all-application-permissions-for-chat')/excludes]}
-```
 
-This command retrieves a list of all permission grant policies in Azure AD.
-
-### Example 2: Get a permission grant policy by ID
+### EXAMPLE 2
 ```powershell
-Connect-MgGraph -Scopes "Policy.Read.PermissionGrant"  
-Get-MgPolicyPermissionGrantPolicy -PermissionGrantPolicyId "microsoft-all-application-permissions" | fl  
+Connect-MgBetaGraph -Scopes "Policy.Read.PermissionGrant"  
+Get-MgBetaPolicyPermissionGrantPolicy -PermissionGrantPolicyId "microsoft-all-application-permissions" | fl
+```
 
 DeletedDateTime      :
 Description          : Includes all application permissions (app roles), for all APIs, for any client application.
@@ -78,9 +76,6 @@ Id                   : microsoft-all-application-permissions
 Includes             : {bddda1ec-0174-44d5-84e2-47fb0ac01595}
 AdditionalProperties : {[@odata.context, https://graph.microsoft.com/beta/$metadata#policies/permissionGrantPolicies/$entity], [includeAllPreApprovedApplications, False], [resourceScopeType, tenant],
                        [includes@odata.context, https://graph.microsoft.com/beta/$metadata#policies/permissionGrantPolicies('microsoft-all-application-permissions')/includes]…}
-```
-
-This command retrieves a specified permission grant policy in Azure AD.
 
 ## PARAMETERS
 
@@ -147,7 +142,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IIdentitySignInsIdentity
@@ -271,10 +266,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPermissionGrantPolicy1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPermissionGrantPolicy
 ## NOTES
 
 ALIASES
@@ -284,7 +279,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentitySignInsIdentity>`: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: The unique identifier of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
@@ -321,6 +316,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[IdentityUserFlowAttributeId <String>]`: The unique identifier of identityUserFlowAttribute
   - `[IdentityUserFlowId <String>]`: The unique identifier of identityUserFlow
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
+  - `[InvitationId <String>]`: The unique identifier of invitation
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   - `[MobilityManagementPolicyId <String>]`: The unique identifier of mobilityManagementPolicy

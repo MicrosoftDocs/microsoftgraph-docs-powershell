@@ -1,7 +1,7 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/stop-mguserevent
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/stop-mguserevent
 schema: 2.0.0
 ---
 
@@ -16,26 +16,26 @@ You need to be an organizer to cancel a meeting.' This action differs from Delet
 
 ## SYNTAX
 
-### CancelExpanded1 (Default)
+### CancelExpanded (Default)
 ```
 Stop-MgUserEvent -EventId <String> -UserId <String> [-AdditionalProperties <Hashtable>] [-Comment <String>]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Cancel1
+### Cancel
 ```
 Stop-MgUserEvent -EventId <String> -UserId <String>
  -BodyParameter <IPaths1F7X6GlUsersUserIdEventsEventIdMicrosoftGraphCancelPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CancelViaIdentityExpanded1
+### CancelViaIdentityExpanded
 ```
 Stop-MgUserEvent -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>] [-Comment <String>]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CancelViaIdentity1
+### CancelViaIdentity
 ```
 Stop-MgUserEvent -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths1F7X6GlUsersUserIdEventsEventIdMicrosoftGraphCancelPostRequestbodyContentApplicationJsonSchema>
@@ -51,7 +51,7 @@ You need to be an organizer to cancel a meeting.' This action differs from Delet
 
 ## EXAMPLES
 
-### Example 1: Using the Stop-MgUserEvent Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{
@@ -61,9 +61,6 @@ $params = @{
 Stop-MgUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
 ```
 
-This example shows how to use the Stop-MgUserEvent Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -71,7 +68,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CancelExpanded1, CancelViaIdentityExpanded1
+Parameter Sets: CancelExpanded, CancelViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -83,11 +80,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths1F7X6GlUsersUserIdEventsEventIdMicrosoftGraphCancelPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Cancel1, CancelViaIdentity1
+Parameter Sets: Cancel, CancelViaIdentity
 Aliases:
 
 Required: True
@@ -102,7 +99,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: CancelExpanded1, CancelViaIdentityExpanded1
+Parameter Sets: CancelExpanded, CancelViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -117,7 +114,7 @@ The unique identifier of event
 
 ```yaml
 Type: String
-Parameter Sets: CancelExpanded1, Cancel1
+Parameter Sets: CancelExpanded, Cancel
 Aliases:
 
 Required: True
@@ -129,11 +126,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: CancelViaIdentityExpanded1, CancelViaIdentity1
+Parameter Sets: CancelViaIdentityExpanded, CancelViaIdentity
 Aliases:
 
 Required: True
@@ -163,7 +160,7 @@ The unique identifier of user
 
 ```yaml
 Type: String
-Parameter Sets: CancelExpanded1, Cancel1
+Parameter Sets: CancelExpanded, Cancel
 Aliases:
 
 Required: True
@@ -223,24 +220,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1F7X6GlUsersUserIdEventsEventIdMicrosoftGraphCancelPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1F7X6GlUsersUserIdEventsEventIdMicrosoftGraphCancelPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Comment <String>]`: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
-  - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
-  - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
-  - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
+`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AuthenticationMethodId <String>]`: The unique identifier of authenticationMethod
   - `[CalendarId <String>]`: The unique identifier of calendar
   - `[ChatId <String>]`: The unique identifier of chat
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
   - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
-  - `[CloudPcId <String>]`: The unique identifier of cloudPC
   - `[ContentTypeId <String>]`: The unique identifier of contentType
-  - `[DeviceEnrollmentConfigurationId <String>]`: The unique identifier of deviceEnrollmentConfiguration
-  - `[DeviceId <String>]`: The unique identifier of device
-  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
   - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
   - `[DriveId <String>]`: The unique identifier of drive
   - `[DriveItemId <String>]`: The unique identifier of driveItem
@@ -253,17 +243,11 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
   - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
   - `[MessageId <String>]`: The unique identifier of message
-  - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
   - `[NotebookId <String>]`: The unique identifier of notebook
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
-  - `[OutlookTaskFolderId <String>]`: The unique identifier of outlookTaskFolder
-  - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
-  - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
-  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
-  - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
   - `[TodoTaskId <String>]`: The unique identifier of todoTask

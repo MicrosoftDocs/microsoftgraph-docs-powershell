@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgtrustframeworkpolicy
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetatrustframeworkpolicy
 schema: 2.0.0
 ---
 
-# New-MgTrustFrameworkPolicy
+# New-MgBetaTrustFrameworkPolicy
 
 ## SYNOPSIS
 Create new navigation property to policies for trustFramework
@@ -14,19 +14,33 @@ Create new navigation property to policies for trustFramework
 
 ### CreateExpanded (Default)
 ```
-New-MgTrustFrameworkPolicy [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm]
+New-MgBetaTrustFrameworkPolicy [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgTrustFrameworkPolicy -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaTrustFrameworkPolicy -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to policies for trustFramework
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -61,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml

@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Search-help.xml
-Module Name: Microsoft.Graph.Search
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/get-mgexternalconnectionitemactivityperformedby
+﻿---
+external help file: Microsoft.Graph.Beta.Search-help.xml
+Module Name: Microsoft.Graph.Beta.Search
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalconnectionitemactivityperformedby
 schema: 2.0.0
 ---
 
-# Get-MgExternalConnectionItemActivityPerformedBy
+# Get-MgBetaExternalConnectionItemActivityPerformedBy
 
 ## SYNOPSIS
 Represents an identity used to identify who is responsible for the activity.
@@ -14,13 +14,13 @@ Represents an identity used to identify who is responsible for the activity.
 
 ### Get (Default)
 ```
-Get-MgExternalConnectionItemActivityPerformedBy -ExternalActivityId <String> -ExternalConnectionId <String>
+Get-MgBetaExternalConnectionItemActivityPerformedBy -ExternalActivityId <String> -ExternalConnectionId <String>
  -ExternalItemId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgExternalConnectionItemActivityPerformedBy -InputObject <ISearchIdentity> [-ExpandProperty <String[]>]
+Get-MgBetaExternalConnectionItemActivityPerformedBy -InputObject <ISearchIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
@@ -28,6 +28,20 @@ Get-MgExternalConnectionItemActivityPerformedBy -InputObject <ISearchIdentity> [
 Represents an identity used to identify who is responsible for the activity.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -93,7 +107,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ISearchIdentity
@@ -127,10 +141,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ISearchIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ISearchIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphExternalConnectorsIdentity
 ## NOTES
 
 ALIASES
@@ -140,7 +154,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
+`INPUTOBJECT <ISearchIdentity>`: Identity Parameter
   - `[AcronymId <String>]`: The unique identifier of acronym
   - `[BookmarkId <String>]`: The unique identifier of bookmark
   - `[ConnectionOperationId <String>]`: The unique identifier of connectionOperation

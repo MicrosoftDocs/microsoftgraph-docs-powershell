@@ -1,14 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/update-mgplannerplan
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mgplannerplan
 schema: 2.0.0
 ---
 
 # Update-MgPlannerPlan
 
 ## SYNOPSIS
-Update the navigation property plans in planner
+Update the properties of a **plannerPlan** object.
 
 ## SYNTAX
 
@@ -18,14 +18,13 @@ Update-MgPlannerPlan -PlannerPlanId <String> [-AdditionalProperties <Hashtable>]
  [-Buckets <IMicrosoftGraphPlannerBucket[]>] [-Container <IMicrosoftGraphPlannerPlanContainer>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
  [-Details <IMicrosoftGraphPlannerPlanDetails>] [-Id <String>] [-Owner <String>]
- [-Tasks <IMicrosoftGraphPlannerTask[]>] [-Title <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Tasks <IMicrosoftGraphPlannerTask[]>] [-Title <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgPlannerPlan -PlannerPlanId <String> -BodyParameter <IMicrosoftGraphPlannerPlan> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgPlannerPlan -PlannerPlanId <String> -BodyParameter <IMicrosoftGraphPlannerPlan> [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -34,22 +33,21 @@ Update-MgPlannerPlan -InputObject <IPlannerIdentity> [-AdditionalProperties <Has
  [-Buckets <IMicrosoftGraphPlannerBucket[]>] [-Container <IMicrosoftGraphPlannerPlanContainer>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
  [-Details <IMicrosoftGraphPlannerPlanDetails>] [-Id <String>] [-Owner <String>]
- [-Tasks <IMicrosoftGraphPlannerTask[]>] [-Title <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Tasks <IMicrosoftGraphPlannerTask[]>] [-Title <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgPlannerPlan -InputObject <IPlannerIdentity> -BodyParameter <IMicrosoftGraphPlannerPlan> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgPlannerPlan -InputObject <IPlannerIdentity> -BodyParameter <IMicrosoftGraphPlannerPlan> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property plans in planner
+Update the properties of a **plannerPlan** object.
 
 ## EXAMPLES
 
-### Example 1: Using the Update-MgPlannerPlan Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Planner
 $params = @{
@@ -57,9 +55,6 @@ $params = @{
 }
 Update-MgPlannerPlan -PlannerPlanId $plannerPlanId -BodyParameter $params
 ```
-
-This example shows how to use the Update-MgPlannerPlan Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -80,7 +75,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 plannerPlan
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPlannerPlan
@@ -98,7 +93,7 @@ Accept wildcard characters: False
 Read-only.
 Nullable.
 Collection of buckets in the plan.
-To construct, please use Get-Help -Online and see NOTES section for BUCKETS properties and create a hash table.
+To construct, see NOTES section for BUCKETS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPlannerBucket[]
@@ -114,7 +109,7 @@ Accept wildcard characters: False
 
 ### -Container
 plannerPlanContainer
-To construct, please use Get-Help -Online and see NOTES section for CONTAINER properties and create a hash table.
+To construct, see NOTES section for CONTAINER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPlannerPlanContainer
@@ -130,7 +125,7 @@ Accept wildcard characters: False
 
 ### -CreatedBy
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
+To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet
@@ -164,7 +159,7 @@ Accept wildcard characters: False
 
 ### -Details
 plannerPlanDetails
-To construct, please use Get-Help -Online and see NOTES section for DETAILS properties and create a hash table.
+To construct, see NOTES section for DETAILS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPlannerPlanDetails
@@ -196,7 +191,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IPlannerIdentity
@@ -225,21 +220,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -PlannerPlanId
 The unique identifier of plannerPlan
 
@@ -259,7 +239,7 @@ Accept wildcard characters: False
 Read-only.
 Nullable.
 Collection of tasks in the plan.
-To construct, please use Get-Help -Online and see NOTES section for TASKS properties and create a hash table.
+To construct, see NOTES section for TASKS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPlannerTask[]
@@ -329,7 +309,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerPlan
 ## NOTES
 
 ALIASES
@@ -339,7 +319,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPlannerPlan>`: plannerPlan
+`BODYPARAMETER <IMicrosoftGraphPlannerPlan>`: plannerPlan
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Buckets <IMicrosoftGraphPlannerBucket[]>]`: Read-only. Nullable. Collection of buckets in the plan.
@@ -405,7 +385,7 @@ BODYPARAMETER `<IMicrosoftGraphPlannerPlan>`: plannerPlan
   - `[Container <IMicrosoftGraphPlannerPlanContainer>]`: plannerPlanContainer
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ContainerId <String>]`: The identifier of the resource that contains the plan. Optional.
-    - `[Type <String>]`: 
+    - `[Type <String>]`: plannerContainerType
     - `[Url <String>]`: The full canonical URL of the container. Optional.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[CreatedDateTime <DateTime?>]`: Read-only. Date and time at which the plan is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -445,7 +425,7 @@ BODYPARAMETER `<IMicrosoftGraphPlannerPlan>`: plannerPlan
   - `[Tasks <IMicrosoftGraphPlannerTask[]>]`: Read-only. Nullable. Collection of tasks in the plan.
   - `[Title <String>]`: Required. Title of the plan.
 
-BUCKETS <IMicrosoftGraphPlannerBucket\[]>: Read-only. Nullable. Collection of buckets in the plan.
+`BUCKETS <IMicrosoftGraphPlannerBucket[]>`: Read-only. Nullable. Collection of buckets in the plan.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Name <String>]`: Name of the bucket.
   - `[OrderHint <String>]`: Hint used to order items of this type in a list view. For details about the supported format, see Using order hints in Planner.
@@ -506,13 +486,13 @@ BUCKETS <IMicrosoftGraphPlannerBucket\[]>: Read-only. Nullable. Collection of bu
     - `[StartDateTime <DateTime?>]`: Date and time at which the task starts. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[Title <String>]`: Title of the task.
 
-CONTAINER `<IMicrosoftGraphPlannerPlanContainer>`: plannerPlanContainer
+`CONTAINER <IMicrosoftGraphPlannerPlanContainer>`: plannerPlanContainer
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ContainerId <String>]`: The identifier of the resource that contains the plan. Optional.
-  - `[Type <String>]`: 
+  - `[Type <String>]`: plannerContainerType
   - `[Url <String>]`: The full canonical URL of the container. Optional.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+`CREATEDBY <IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -521,7 +501,7 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-DETAILS `<IMicrosoftGraphPlannerPlanDetails>`: plannerPlanDetails
+`DETAILS <IMicrosoftGraphPlannerPlanDetails>`: plannerPlanDetails
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CategoryDescriptions <IMicrosoftGraphPlannerCategoryDescriptions>]`: plannerCategoryDescriptions
@@ -554,17 +534,14 @@ DETAILS `<IMicrosoftGraphPlannerPlanDetails>`: plannerPlanDetails
   - `[SharedWith <IMicrosoftGraphPlannerUserIds>]`: plannerUserIds
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
-INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
+`INPUTOBJECT <IPlannerIdentity>`: Identity Parameter
   - `[GroupId <String>]`: The unique identifier of group
   - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket
-  - `[PlannerDeltaId <String>]`: The unique identifier of plannerDelta
   - `[PlannerPlanId <String>]`: The unique identifier of plannerPlan
-  - `[PlannerRosterId <String>]`: The unique identifier of plannerRoster
-  - `[PlannerRosterMemberId <String>]`: The unique identifier of plannerRosterMember
   - `[PlannerTaskId <String>]`: The unique identifier of plannerTask
   - `[UserId <String>]`: The unique identifier of user
 
-TASKS <IMicrosoftGraphPlannerTask\[]>: Read-only. Nullable. Collection of tasks in the plan.
+`TASKS <IMicrosoftGraphPlannerTask[]>`: Read-only. Nullable. Collection of tasks in the plan.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ActiveChecklistItemCount <Int32?>]`: Number of checklist items with value set to false, representing incomplete items.
   - `[AppliedCategories <IMicrosoftGraphPlannerAppliedCategories>]`: plannerAppliedCategories

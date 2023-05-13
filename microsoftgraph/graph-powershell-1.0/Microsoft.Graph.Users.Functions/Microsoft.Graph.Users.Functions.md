@@ -1,7 +1,7 @@
 ---
 Module Name: Microsoft.Graph.Users.Functions
-Module Guid: b1d316cf-9e60-4d6c-b355-72dba7824afd
-Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions
+Module Guid: cc8c915e-f7c1-4475-9992-2fe82459bbfb
+Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions
 Help Version: 1.0.0.0
 Locale: en-US
 ---
@@ -113,7 +113,7 @@ Get a set of messages that have been added, deleted, or updated in a specified f
 A **delta** function call for messages in a folder is similar to a GET request, except that by appropriately \napplying state tokens in one or more of these calls, you can [query for incremental changes in the messages in \nthat folder](/graph/delta-query-messages).
 This allows you to maintain and synchronize a local store of a user's messages without \nhaving to fetch the entire set of messages from the server every time.
 
-### [Get-MgUserManagedAppDiagnosticStatuses](Get-MgUserManagedAppDiagnosticStatuses.md)
+### [Get-MgUserManagedAppDiagnosticStatus](Get-MgUserManagedAppDiagnosticStatus.md)
 Gets diagnostics validation status for a given user.
 
 ### [Get-MgUserManagedAppPolicy](Get-MgUserManagedAppPolicy.md)

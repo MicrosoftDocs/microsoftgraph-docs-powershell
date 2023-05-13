@@ -1,40 +1,40 @@
----
-external help file: Microsoft.Graph.Files-help.xml
-Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/join-mgdrivelistcontenttypewithhubsite
+﻿---
+external help file: Microsoft.Graph.Beta.Files-help.xml
+Module Name: Microsoft.Graph.Beta.Files
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/join-mgbetadrivelistcontenttypewithhubsite
 schema: 2.0.0
 ---
 
-# Join-MgDriveListContentTypeWithHubSite
+# Join-MgBetaDriveListContentTypeWithHubSite
 
 ## SYNOPSIS
 Associate a [content type][contentType] with a list of hub sites.
 
 ## SYNTAX
 
-### AssociateExpanded1 (Default)
+### AssociateExpanded (Default)
 ```
-Join-MgDriveListContentTypeWithHubSite -ContentTypeId <String> -DriveId <String>
+Join-MgBetaDriveListContentTypeWithHubSite -ContentTypeId <String> -DriveId <String>
  [-AdditionalProperties <Hashtable>] [-HubSiteUrls <String[]>] [-PropagateToExistingLists] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Associate1
+### Associate
 ```
-Join-MgDriveListContentTypeWithHubSite -ContentTypeId <String> -DriveId <String>
+Join-MgBetaDriveListContentTypeWithHubSite -ContentTypeId <String> -DriveId <String>
  -BodyParameter <IPathsWa4CdpDrivesDriveIdListContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### AssociateViaIdentityExpanded1
+### AssociateViaIdentityExpanded
 ```
-Join-MgDriveListContentTypeWithHubSite -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
+Join-MgBetaDriveListContentTypeWithHubSite -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
  [-HubSiteUrls <String[]>] [-PropagateToExistingLists] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### AssociateViaIdentity1
+### AssociateViaIdentity
 ```
-Join-MgDriveListContentTypeWithHubSite -InputObject <IFilesIdentity>
+Join-MgBetaDriveListContentTypeWithHubSite -InputObject <IFilesIdentity>
  -BodyParameter <IPathsWa4CdpDrivesDriveIdListContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -44,6 +44,20 @@ Associate a [content type][contentType] with a list of hub sites.
 
 ## EXAMPLES
 
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -51,7 +65,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: AssociateExpanded1, AssociateViaIdentityExpanded1
+Parameter Sets: AssociateExpanded, AssociateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -63,11 +77,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPathsWa4CdpDrivesDriveIdListContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Associate1, AssociateViaIdentity1
+Parameter Sets: Associate, AssociateViaIdentity
 Aliases:
 
 Required: True
@@ -82,7 +96,7 @@ The unique identifier of contentType
 
 ```yaml
 Type: String
-Parameter Sets: AssociateExpanded1, Associate1
+Parameter Sets: AssociateExpanded, Associate
 Aliases:
 
 Required: True
@@ -97,7 +111,7 @@ The unique identifier of drive
 
 ```yaml
 Type: String
-Parameter Sets: AssociateExpanded1, Associate1
+Parameter Sets: AssociateExpanded, Associate
 Aliases:
 
 Required: True
@@ -112,7 +126,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String[]
-Parameter Sets: AssociateExpanded1, AssociateViaIdentityExpanded1
+Parameter Sets: AssociateExpanded, AssociateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -124,11 +138,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IFilesIdentity
-Parameter Sets: AssociateViaIdentityExpanded1, AssociateViaIdentity1
+Parameter Sets: AssociateViaIdentityExpanded, AssociateViaIdentity
 Aliases:
 
 Required: True
@@ -158,7 +172,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: AssociateExpanded1, AssociateViaIdentityExpanded1
+Parameter Sets: AssociateExpanded, AssociateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -204,8 +218,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-### Microsoft.Graph.PowerShell.Models.IPathsWa4CdpDrivesDriveIdListContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsWa4CdpDrivesDriveIdListContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### System.Boolean
@@ -218,12 +232,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsWa4CdpDrivesDriveIdListContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsWa4CdpDrivesDriveIdListContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[HubSiteUrls <String[]>]`: 
   - `[PropagateToExistingLists <Boolean?>]`: 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+`INPUTOBJECT <IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType

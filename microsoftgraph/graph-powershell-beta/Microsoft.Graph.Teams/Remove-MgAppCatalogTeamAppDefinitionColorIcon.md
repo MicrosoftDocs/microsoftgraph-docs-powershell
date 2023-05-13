@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/remove-mgappcatalogteamappdefinitioncoloricon
+﻿---
+external help file: Microsoft.Graph.Beta.Teams-help.xml
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetaappcatalogteamappdefinitioncoloricon
 schema: 2.0.0
 ---
 
-# Remove-MgAppCatalogTeamAppDefinitionColorIcon
+# Remove-MgBetaAppCatalogTeamAppDefinitionColorIcon
 
 ## SYNOPSIS
 Delete navigation property colorIcon for appCatalogs
@@ -14,13 +14,13 @@ Delete navigation property colorIcon for appCatalogs
 
 ### Delete (Default)
 ```
-Remove-MgAppCatalogTeamAppDefinitionColorIcon -TeamsAppDefinitionId <String> -TeamsAppId <String>
+Remove-MgBetaAppCatalogTeamAppDefinitionColorIcon -TeamsAppDefinitionId <String> -TeamsAppId <String>
  [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgAppCatalogTeamAppDefinitionColorIcon -InputObject <ITeamsIdentity> [-IfMatch <String>] [-PassThru]
+Remove-MgBetaAppCatalogTeamAppDefinitionColorIcon -InputObject <ITeamsIdentity> [-IfMatch <String>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -28,6 +28,20 @@ Remove-MgAppCatalogTeamAppDefinitionColorIcon -InputObject <ITeamsIdentity> [-If
 Delete navigation property colorIcon for appCatalogs
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -48,7 +62,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ITeamsIdentity
@@ -143,7 +157,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
 ## OUTPUTS
 
 ### System.Boolean
@@ -156,7 +170,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat

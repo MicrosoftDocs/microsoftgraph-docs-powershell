@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/set-mgorganizationbrandinglocalizationfavicon
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/set-mgbetaorganizationbrandinglocalizationfavicon
 schema: 2.0.0
 ---
 
-# Set-MgOrganizationBrandingLocalizationFavicon
+# Set-MgBetaOrganizationBrandingLocalizationFavicon
 
 ## SYNOPSIS
 A custom icon (favicon) to replace a default Microsoft product favicon on an Azure AD tenant.
@@ -14,15 +14,15 @@ A custom icon (favicon) to replace a default Microsoft product favicon on an Azu
 
 ### Set (Default)
 ```
-Set-MgOrganizationBrandingLocalizationFavicon -OrganizationId <String>
- -OrganizationalBrandingLocalizationId <String> [-BodyParameter <Stream>] -InFile <String> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-MgBetaOrganizationBrandingLocalizationFavicon -OrganizationId <String>
+ -OrganizationalBrandingLocalizationId <String> [-Data <Stream>] -InFile <String> [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
-Set-MgOrganizationBrandingLocalizationFavicon -InputObject <IIdentityDirectoryManagementIdentity>
- [-BodyParameter <Stream>] -InFile <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-MgBetaOrganizationBrandingLocalizationFavicon -InputObject <IIdentityDirectoryManagementIdentity>
+ [-Data <Stream>] -InFile <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -30,9 +30,23 @@ A custom icon (favicon) to replace a default Microsoft product favicon on an Azu
 
 ## EXAMPLES
 
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
-### -BodyParameter
+### -Data
 .
 
 ```yaml
@@ -66,7 +80,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IIdentityDirectoryManagementIdentity
@@ -161,7 +175,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
 ### System.IO.Stream
 ## OUTPUTS
 
@@ -175,7 +189,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet

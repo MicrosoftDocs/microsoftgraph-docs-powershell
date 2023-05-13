@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementuserexperienceanalyticoverview
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementuserexperienceanalyticoverview
 schema: 2.0.0
 ---
 
-# Remove-MgDeviceManagementUserExperienceAnalyticOverview
+# Remove-MgBetaDeviceManagementUserExperienceAnalyticOverview
 
 ## SYNOPSIS
 Delete navigation property userExperienceAnalyticsOverview for deviceManagement
@@ -13,14 +13,28 @@ Delete navigation property userExperienceAnalyticsOverview for deviceManagement
 ## SYNTAX
 
 ```
-Remove-MgDeviceManagementUserExperienceAnalyticOverview [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Remove-MgBetaDeviceManagementUserExperienceAnalyticOverview [-IfMatch <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Delete navigation property userExperienceAnalyticsOverview for deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 

@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgreuploaddevicemanagementvirtualendpointdeviceimage
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetareuploaddevicemanagementvirtualendpointdeviceimage
 schema: 2.0.0
 ---
 
-# Invoke-MgReuploadDeviceManagementVirtualEndpointDeviceImage
+# Invoke-MgBetaReuploadDeviceManagementVirtualEndpointDeviceImage
 
 ## SYNOPSIS
 Reupload a cloudPcDeviceImage object that failed to upload.
@@ -14,13 +14,13 @@ Reupload a cloudPcDeviceImage object that failed to upload.
 
 ### Reupload (Default)
 ```
-Invoke-MgReuploadDeviceManagementVirtualEndpointDeviceImage -CloudPcDeviceImageId <String> [-PassThru]
+Invoke-MgBetaReuploadDeviceManagementVirtualEndpointDeviceImage -CloudPcDeviceImageId <String> [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ReuploadViaIdentity
 ```
-Invoke-MgReuploadDeviceManagementVirtualEndpointDeviceImage -InputObject <IDeviceManagementActionsIdentity>
+Invoke-MgBetaReuploadDeviceManagementVirtualEndpointDeviceImage -InputObject <IDeviceManagementActionsIdentity>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -29,14 +29,11 @@ Reupload a cloudPcDeviceImage object that failed to upload.
 
 ## EXAMPLES
 
-### Example 1: Using the Invoke-MgReuploadDeviceManagementVirtualEndpointDeviceImage Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.DeviceManagement.Actions
-Invoke-MgReuploadDeviceManagementVirtualEndpointDeviceImage -CloudPcDeviceImageId $cloudPcDeviceImageId
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
+Invoke-MgBetaReuploadDeviceManagementVirtualEndpointDeviceImage -CloudPcDeviceImageId $cloudPcDeviceImageId
 ```
-
-This example shows how to use the Invoke-MgReuploadDeviceManagementVirtualEndpointDeviceImage Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -57,7 +54,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementActionsIdentity
@@ -122,7 +119,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
 ## OUTPUTS
 
 ### System.Boolean
@@ -135,7 +132,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[AlertRecordId <String>]`: The unique identifier of alertRecord
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: The unique identifier of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: The unique identifier of androidForWorkEnrollmentProfile
@@ -179,7 +176,6 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[MicrosoftTunnelSiteId <String>]`: The unique identifier of microsoftTunnelSite
   - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
   - `[NotificationMessageTemplateId <String>]`: The unique identifier of notificationMessageTemplate
-  - `[OemWarrantyInformationOnboardingId <String>]`: The unique identifier of oemWarrantyInformationOnboarding
   - `[RemoteAssistancePartnerId <String>]`: The unique identifier of remoteAssistancePartner
   - `[RoleScopeTagId <String>]`: The unique identifier of roleScopeTag
   - `[WindowsAutopilotDeploymentProfileId <String>]`: The unique identifier of windowsAutopilotDeploymentProfile

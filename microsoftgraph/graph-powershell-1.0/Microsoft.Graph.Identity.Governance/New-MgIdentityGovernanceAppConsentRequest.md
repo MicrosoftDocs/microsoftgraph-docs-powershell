@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceappconsentrequest
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceappconsentrequest
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # New-MgIdentityGovernanceAppConsentRequest
@@ -13,14 +12,14 @@ Create new navigation property to appConsentRequests for identityGovernance
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
 New-MgIdentityGovernanceAppConsentRequest [-AdditionalProperties <Hashtable>] [-AppDisplayName <String>]
  [-AppId <String>] [-Id <String>] [-PendingScopes <IMicrosoftGraphAppConsentRequestScope[]>]
  [-UserConsentRequests <IMicrosoftGraphUserConsentRequest[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
 New-MgIdentityGovernanceAppConsentRequest -BodyParameter <IMicrosoftGraphAppConsentRequest> [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -31,27 +30,19 @@ Create new navigation property to appConsentRequests for identityGovernance
 
 ## EXAMPLES
 
-### Example 1:  List all appConsentRequests
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
+```
 
 Get-MgIdentityGovernanceAppConsentRequest
-```
 
-This example shows how to use the New-MgIdentityGovernanceAppConsentRequest Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: List all appConsentRequests with at least one userConsentRequest whose status is InProgress
+### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-
-Get-MgIdentityGovernanceAppConsentRequest -Filter "userConsentRequests/any (u:u/status eq 'InProgress')"
 ```
 
-This example shows how to use the New-MgIdentityGovernanceAppConsentRequest Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Get-MgIdentityGovernanceAppConsentRequest -Filter "userConsentRequests/any (u:u/status eq 'InProgress')"
 
 ## PARAMETERS
 
@@ -60,7 +51,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -77,7 +68,7 @@ Supports $filter (eq only) and $orderby.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -94,7 +85,7 @@ Supports $filter (eq only) and $orderby.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -106,11 +97,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 appConsentRequest
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAppConsentRequest
-Parameter Sets: Create1
+Parameter Sets: Create
 Aliases:
 
 Required: True
@@ -126,7 +117,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -139,11 +130,11 @@ Accept wildcard characters: False
 ### -PendingScopes
 A list of pending scopes waiting for approval.
 Required.
-To construct, please use Get-Help -Online and see NOTES section for PENDINGSCOPES properties and create a hash table.
+To construct, see NOTES section for PENDINGSCOPES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAppConsentRequestScope[]
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -156,11 +147,11 @@ Accept wildcard characters: False
 ### -UserConsentRequests
 A list of pending user consent requests.
 Supports $filter (eq).
-To construct, please use Get-Help -Online and see NOTES section for USERCONSENTREQUESTS properties and create a hash table.
+To construct, see NOTES section for USERCONSENTREQUESTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserConsentRequest[]
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -219,7 +210,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphAppConsentRequest>`: appConsentRequest
+`BODYPARAMETER <IMicrosoftGraphAppConsentRequest>`: appConsentRequest
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AppDisplayName <String>]`: The display name of the app for which consent is requested. Required. Supports $filter (eq only) and $orderby.
@@ -255,10 +246,10 @@ BODYPARAMETER `<IMicrosoftGraphAppConsentRequest>`: appConsentRequest
         - `[Status <String>]`: The stage status. Possible values: InProgress, Initializing, Completed, Expired. Read-only.
     - `[Reason <String>]`: The user's justification for requiring access to the app. Supports $filter (eq only) and $orderby.
 
-PENDINGSCOPES <IMicrosoftGraphAppConsentRequestScope\[]>: A list of pending scopes waiting for approval. Required.
+`PENDINGSCOPES <IMicrosoftGraphAppConsentRequestScope[]>`: A list of pending scopes waiting for approval. Required.
   - `[DisplayName <String>]`: The name of the scope.
 
-USERCONSENTREQUESTS <IMicrosoftGraphUserConsentRequest\[]>: A list of pending user consent requests. Supports $filter (eq).
+`USERCONSENTREQUESTS <IMicrosoftGraphUserConsentRequest[]>`: A list of pending user consent requests. Supports $filter (eq).
   - `[ApprovalId <String>]`: The identifier of the approval of the request.
   - `[CompletedDateTime <DateTime?>]`: The request completion date time.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet

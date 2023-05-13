@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mguploaddevicemanagementgrouppolicyuploadeddefinitionfilenewversion
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetauploaddevicemanagementgrouppolicyuploadeddefinitionfilenewversion
 schema: 2.0.0
 ---
 
-# Invoke-MgUploadDeviceManagementGroupPolicyUploadedDefinitionFileNewVersion
+# Invoke-MgBetaUploadDeviceManagementGroupPolicyUploadedDefinitionFileNewVersion
 
 ## SYNOPSIS
 Invoke action uploadNewVersion
@@ -14,7 +14,7 @@ Invoke action uploadNewVersion
 
 ### UploadExpanded (Default)
 ```
-Invoke-MgUploadDeviceManagementGroupPolicyUploadedDefinitionFileNewVersion
+Invoke-MgBetaUploadDeviceManagementGroupPolicyUploadedDefinitionFileNewVersion
  -GroupPolicyUploadedDefinitionFileId <String> [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>]
  [-GroupPolicyUploadedLanguageFiles <IMicrosoftGraphGroupPolicyUploadedLanguageFile[]>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -22,7 +22,7 @@ Invoke-MgUploadDeviceManagementGroupPolicyUploadedDefinitionFileNewVersion
 
 ### Upload
 ```
-Invoke-MgUploadDeviceManagementGroupPolicyUploadedDefinitionFileNewVersion
+Invoke-MgBetaUploadDeviceManagementGroupPolicyUploadedDefinitionFileNewVersion
  -GroupPolicyUploadedDefinitionFileId <String>
  -BodyParameter <IPathsQaczrkDevicemanagementGrouppolicyuploadeddefinitionfilesGrouppolicyuploadeddefinitionfileIdMicrosoftGraphUploadnewversionPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -30,7 +30,7 @@ Invoke-MgUploadDeviceManagementGroupPolicyUploadedDefinitionFileNewVersion
 
 ### UploadViaIdentityExpanded
 ```
-Invoke-MgUploadDeviceManagementGroupPolicyUploadedDefinitionFileNewVersion
+Invoke-MgBetaUploadDeviceManagementGroupPolicyUploadedDefinitionFileNewVersion
  -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>]
  [-ContentInputFile <String>]
  [-GroupPolicyUploadedLanguageFiles <IMicrosoftGraphGroupPolicyUploadedLanguageFile[]>] [-PassThru] [-WhatIf]
@@ -39,7 +39,7 @@ Invoke-MgUploadDeviceManagementGroupPolicyUploadedDefinitionFileNewVersion
 
 ### UploadViaIdentity
 ```
-Invoke-MgUploadDeviceManagementGroupPolicyUploadedDefinitionFileNewVersion
+Invoke-MgBetaUploadDeviceManagementGroupPolicyUploadedDefinitionFileNewVersion
  -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPathsQaczrkDevicemanagementGrouppolicyuploadeddefinitionfilesGrouppolicyuploadeddefinitionfileIdMicrosoftGraphUploadnewversionPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -49,6 +49,20 @@ Invoke-MgUploadDeviceManagementGroupPolicyUploadedDefinitionFileNewVersion
 Invoke action uploadNewVersion
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -69,7 +83,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPathsQaczrkDevicemanagementGrouppolicyuploadeddefinitionfilesGrouppolicyuploadeddefinitionfileIdMicrosoftGraphUploadnewversionPostRequestbodyContentApplicationJsonSchema
@@ -115,7 +129,7 @@ Accept wildcard characters: False
 
 ### -GroupPolicyUploadedLanguageFiles
 .
-To construct, please use Get-Help -Online and see NOTES section for GROUPPOLICYUPLOADEDLANGUAGEFILES properties and create a hash table.
+To construct, see NOTES section for GROUPPOLICYUPLOADEDLANGUAGEFILES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphGroupPolicyUploadedLanguageFile[]
@@ -131,7 +145,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementActionsIdentity
@@ -196,8 +210,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-### Microsoft.Graph.PowerShell.Models.IPathsQaczrkDevicemanagementGrouppolicyuploadeddefinitionfilesGrouppolicyuploadeddefinitionfileIdMicrosoftGraphUploadnewversionPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsQaczrkDevicemanagementGrouppolicyuploadeddefinitionfilesGrouppolicyuploadeddefinitionfileIdMicrosoftGraphUploadnewversionPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### System.Boolean
@@ -210,7 +224,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsQaczrkDevicemanagementGrouppolicyuploadeddefinitionfilesGrouppolicyuploadeddefinitionfileIdMicrosoftGraphUploadnewversionPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsQaczrkDevicemanagementGrouppolicyuploadeddefinitionfilesGrouppolicyuploadeddefinitionfileIdMicrosoftGraphUploadnewversionPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Content <Byte[]>]`: 
   - `[GroupPolicyUploadedLanguageFiles <IMicrosoftGraphGroupPolicyUploadedLanguageFile[]>]`: 
@@ -220,14 +234,14 @@ BODYPARAMETER `<IPathsQaczrkDevicemanagementGrouppolicyuploadeddefinitionfilesGr
     - `[LanguageCode <String>]`: The language code of the uploaded ADML file.
     - `[LastModifiedDateTime <DateTime?>]`: The date and time the entity was last modified.
 
-GROUPPOLICYUPLOADEDLANGUAGEFILES <IMicrosoftGraphGroupPolicyUploadedLanguageFile\[]>: .
+`GROUPPOLICYUPLOADEDLANGUAGEFILES <IMicrosoftGraphGroupPolicyUploadedLanguageFile[]>`: .
   - `[Content <Byte[]>]`: The contents of the uploaded ADML file.
   - `[FileName <String>]`: The file name of the uploaded ADML file.
   - `[Id <String>]`: Key of the entity.
   - `[LanguageCode <String>]`: The language code of the uploaded ADML file.
   - `[LastModifiedDateTime <DateTime?>]`: The date and time the entity was last modified.
 
-INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[AlertRecordId <String>]`: The unique identifier of alertRecord
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: The unique identifier of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: The unique identifier of androidForWorkEnrollmentProfile
@@ -271,7 +285,6 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[MicrosoftTunnelSiteId <String>]`: The unique identifier of microsoftTunnelSite
   - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
   - `[NotificationMessageTemplateId <String>]`: The unique identifier of notificationMessageTemplate
-  - `[OemWarrantyInformationOnboardingId <String>]`: The unique identifier of oemWarrantyInformationOnboarding
   - `[RemoteAssistancePartnerId <String>]`: The unique identifier of remoteAssistancePartner
   - `[RoleScopeTagId <String>]`: The unique identifier of roleScopeTag
   - `[WindowsAutopilotDeploymentProfileId <String>]`: The unique identifier of windowsAutopilotDeploymentProfile

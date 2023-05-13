@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgpolicyadminconsentrequestpolicy
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyadminconsentrequestpolicy
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # Get-MgPolicyAdminConsentRequestPolicy
@@ -22,14 +21,11 @@ Read the properties and relationships of an adminConsentRequestPolicy object.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgPolicyAdminConsentRequestPolicy Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 Get-MgPolicyAdminConsentRequestPolicy
 ```
-
-This example shows how to use the Get-MgPolicyAdminConsentRequestPolicy Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

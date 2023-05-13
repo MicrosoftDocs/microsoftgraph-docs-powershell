@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgpolicymobiledevicemanagementpolicyincludedgroupbyref
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicymobiledevicemanagementpolicyincludedgroupbyref
 schema: 2.0.0
 ---
 
-# Get-MgPolicyMobileDeviceManagementPolicyIncludedGroupByRef
+# Get-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroupByRef
 
 ## SYNOPSIS
 Get the list of groups that are included in a mobile app management policy.
@@ -13,7 +13,7 @@ Get the list of groups that are included in a mobile app management policy.
 ## SYNTAX
 
 ```
-Get-MgPolicyMobileDeviceManagementPolicyIncludedGroupByRef -MobilityManagementPolicyId <String>
+Get-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroupByRef -MobilityManagementPolicyId <String>
  [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
  [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
@@ -22,6 +22,20 @@ Get-MgPolicyMobileDeviceManagementPolicyIncludedGroupByRef -MobilityManagementPo
 Get the list of groups that are included in a mobile app management policy.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 

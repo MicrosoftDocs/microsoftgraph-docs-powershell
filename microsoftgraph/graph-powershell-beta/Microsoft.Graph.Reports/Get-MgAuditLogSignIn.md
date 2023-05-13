@@ -1,77 +1,66 @@
----
-external help file: Microsoft.Graph.Reports-help.xml
-Module Name: Microsoft.Graph.Reports
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgauditlogsignin
+﻿---
+external help file: Microsoft.Graph.Beta.Reports-help.xml
+Module Name: Microsoft.Graph.Beta.Reports
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetaauditlogsignin
 schema: 2.0.0
-ms.prod: identity-and-access-reports
 ---
 
-# Get-MgAuditLogSignIn
+# Get-MgBetaAuditLogSignIn
 
 ## SYNOPSIS
-Get signIns from auditLogs
+Get a signIn object that contains a specific user sign-in event for your tenant.
+This includes sign-ins where a user is asked to enter a username or password, and session tokens.
 
 ## SYNTAX
 
-### List1 (Default)
+### List (Default)
 ```
-Get-MgAuditLogSignIn [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>]
- [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
+Get-MgBetaAuditLogSignIn [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [<CommonParameters>]
+```
+
+### Get
+```
+Get-MgBetaAuditLogSignIn -SignInId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
-### Get1
+### GetViaIdentity
 ```
-Get-MgAuditLogSignIn -SignInId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
-```
-
-### GetViaIdentity1
-```
-Get-MgAuditLogSignIn -InputObject <IReportsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaAuditLogSignIn -InputObject <IReportsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get signIns from auditLogs
+Get a signIn object that contains a specific user sign-in event for your tenant.
+This includes sign-ins where a user is asked to enter a username or password, and session tokens.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgAuditLogSignIn Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Reports
-Get-MgAuditLogSignIn -SignInId $signInId
+Import-Module Microsoft.Graph.Beta.Reports
+Get-MgBetaAuditLogSignIn -SignInId $signInId
 ```
 
-This example shows how to use the Get-MgAuditLogSignIn Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Get-MgAuditLogSignIn Cmdlet
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Reports
-Get-MgAuditLogSignIn
+Import-Module Microsoft.Graph.Beta.Reports
+Get-MgBetaAuditLogSignIn
 ```
 
-This example shows how to use the Get-MgAuditLogSignIn Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Using the Get-MgAuditLogSignIn Cmdlet
+### EXAMPLE 3
 ```powershell
-Import-Module Microsoft.Graph.Reports
-Get-MgAuditLogSignIn -Filter "startsWith(appDisplayName,'Azure')" -Top 10
+Import-Module Microsoft.Graph.Beta.Reports
+Get-MgBetaAuditLogSignIn -Filter "startsWith(appDisplayName,'Azure')" -Top 10
 ```
 
-This example shows how to use the Get-MgAuditLogSignIn Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 4: Using the Get-MgAuditLogSignIn Cmdlet
+### EXAMPLE 4
 ```powershell
-Import-Module Microsoft.Graph.Reports
-Get-MgAuditLogSignIn -Filter "(signInEventTypes/any(t: t ne 'interactiveUser'))" -Sort "createdDateTime DESC" -Top 10
+Import-Module Microsoft.Graph.Beta.Reports
+Get-MgBetaAuditLogSignIn -Filter "(signInEventTypes/any(t: t ne 'interactiveUser'))" -Sort "createdDateTime DESC" -Top 10
 ```
-
-This example shows how to use the Get-MgAuditLogSignIn Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -80,7 +69,7 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -96,7 +85,7 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: List
 Aliases: CV
 
 Required: False
@@ -126,7 +115,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -138,11 +127,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IReportsIdentity
-Parameter Sets: GetViaIdentity1
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
@@ -157,7 +146,7 @@ Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -187,7 +176,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -202,7 +191,7 @@ The unique identifier of signIn
 
 ```yaml
 Type: String
-Parameter Sets: Get1
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -217,7 +206,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List1
+Parameter Sets: List
 Aliases: OrderBy
 
 Required: False
@@ -232,7 +221,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Parameter Sets: List
 Aliases: Limit
 
 Required: False
@@ -247,7 +236,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -262,10 +251,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IReportsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IReportsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSignIn1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSignIn
 ## NOTES
 
 ALIASES
@@ -275,7 +264,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+`INPUTOBJECT <IReportsIdentity>`: Identity Parameter
   - `[ApplicationSignInDetailedSummaryId <String>]`: The unique identifier of applicationSignInDetailedSummary
   - `[CredentialUserRegistrationDetailsId <String>]`: The unique identifier of credentialUserRegistrationDetails
   - `[Date <DateTime?>]`: Usage: date={date}

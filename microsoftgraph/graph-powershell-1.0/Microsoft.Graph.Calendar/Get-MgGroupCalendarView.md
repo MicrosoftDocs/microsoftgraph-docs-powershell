@@ -1,44 +1,44 @@
----
+﻿---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/get-mggroupcalendarview
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/get-mggroupcalendarsinglevalueextendedproperty
 schema: 2.0.0
-ms.prod: outlook
 ---
 
-# Get-MgGroupCalendarView
+# Get-MgGroupCalendarSingleValueExtendedProperty
 
 ## SYNOPSIS
-The calendar view for the calendar.
-Navigation property.
+The collection of single-value extended properties defined for the calendar.
 Read-only.
+Nullable.
 
 ## SYNTAX
 
+### List (Default)
 ```
-Get-MgGroupCalendarView -GroupId <String> -EndDateTime <String> -StartDateTime <String> [-Filter <String>]
- [-Property <String[]>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [<CommonParameters>]
+Get-MgGroupCalendarSingleValueExtendedProperty -GroupId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+```
+
+### Get
+```
+Get-MgGroupCalendarSingleValueExtendedProperty -GroupId <String> -SingleValueLegacyExtendedPropertyId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+```
+
+### GetViaIdentity
+```
+Get-MgGroupCalendarSingleValueExtendedProperty -InputObject <ICalendarIdentity> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The calendar view for the calendar.
-Navigation property.
+The collection of single-value extended properties defined for the calendar.
 Read-only.
+Nullable.
 
 ## EXAMPLES
-
-### Example 1: Code snippet
-```powershell
-Import-Module Microsoft.Graph.Calendar
-
-# A UPN can also be used as -UserId.
-Get-MgUserCalendarView -UserId $userId -Startdatetime "2017-01-01T19:00:00-08:00" -Enddatetime "2017-01-07T19:00:00-08:00"
-```
-
-This example shows how to use the Get-MgGroupCalendarView Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -47,7 +47,7 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: (All)
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -63,7 +63,7 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: List
 Aliases: CV
 
 Required: False
@@ -73,16 +73,15 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -EndDateTime
-The end date and time of the time range, represented in ISO 8601 format.
-For example, 2019-11-08T20:00:00-08:00
+### -ExpandProperty
+Expand related entities
 
 ```yaml
-Type: String
+Type: String[]
 Parameter Sets: (All)
-Aliases:
+Aliases: Expand
 
-Required: True
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -94,7 +93,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -109,7 +108,7 @@ The unique identifier of group
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: List, Get
 Aliases:
 
 Required: True
@@ -119,12 +118,28 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -InputObject
+Identity Parameter
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+
+```yaml
+Type: ICalendarIdentity
+Parameter Sets: GetViaIdentity
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -PageSize
 Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: (All)
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -149,13 +164,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Sort
-Order items by property values
+### -Search
+Search items by search phrases
 
 ```yaml
-Type: String[]
-Parameter Sets: (All)
-Aliases: OrderBy
+Type: String
+Parameter Sets: List
+Aliases:
 
 Required: False
 Position: Named
@@ -164,16 +179,30 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -StartDateTime
-The start date and time of the time range, represented in ISO 8601 format.
-For example, 2019-11-08T19:00:00-08:00
+### -SingleValueLegacyExtendedPropertyId
+The unique identifier of singleValueLegacyExtendedProperty
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: Get
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Sort
+Order items by property values
+
+```yaml
+Type: String[]
+Parameter Sets: List
+Aliases: OrderBy
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -185,7 +214,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: (All)
+Parameter Sets: List
 Aliases: Limit
 
 Required: False
@@ -200,7 +229,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: (All)
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -215,11 +244,32 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEvent1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSingleValueLegacyExtendedProperty
 ## NOTES
 
 ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+  - `[AttachmentId <String>]`: The unique identifier of attachment
+  - `[CalendarGroupId <String>]`: The unique identifier of calendarGroup
+  - `[CalendarId <String>]`: The unique identifier of calendar
+  - `[CalendarPermissionId <String>]`: The unique identifier of calendarPermission
+  - `[EventId <String>]`: The unique identifier of event
+  - `[EventId1 <String>]`: The unique identifier of event
+  - `[EventId2 <String>]`: The unique identifier of event
+  - `[ExtensionId <String>]`: The unique identifier of extension
+  - `[GroupId <String>]`: The unique identifier of group
+  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
+  - `[PlaceId <String>]`: The unique identifier of place
+  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS

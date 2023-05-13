@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.notes/new-mguseronenotenotebooksectiongroup
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mguseronenotenotebooksectiongroup
 schema: 2.0.0
-ms.prod: onenote
 ---
 
 # New-MgUserOnenoteNotebookSectionGroup
@@ -52,7 +51,7 @@ Create a new section group in the specified notebook.
 
 ## EXAMPLES
 
-### Example 1: Using the New-MgUserOnenoteNotebookSectionGroup Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Notes
 $params = @{
@@ -61,9 +60,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgUserOnenoteNotebookSectionGroup -UserId $userId -NotebookId $notebookId -BodyParameter $params
 ```
-
-This example shows how to use the New-MgUserOnenoteNotebookSectionGroup Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -84,7 +80,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 sectionGroup
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSectionGroup
@@ -100,7 +96,7 @@ Accept wildcard characters: False
 
 ### -CreatedBy
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
+To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet
@@ -165,7 +161,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: INotesIdentity
@@ -181,7 +177,7 @@ Accept wildcard characters: False
 
 ### -LastModifiedBy
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBY properties and create a hash table.
+To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet
@@ -230,7 +226,7 @@ Accept wildcard characters: False
 
 ### -ParentNotebook
 notebook
-To construct, please use Get-Help -Online and see NOTES section for PARENTNOTEBOOK properties and create a hash table.
+To construct, see NOTES section for PARENTNOTEBOOK properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphNotebook
@@ -246,7 +242,7 @@ Accept wildcard characters: False
 
 ### -ParentSectionGroup
 sectionGroup
-To construct, please use Get-Help -Online and see NOTES section for PARENTSECTIONGROUP properties and create a hash table.
+To construct, see NOTES section for PARENTSECTIONGROUP properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSectionGroup
@@ -264,7 +260,7 @@ Accept wildcard characters: False
 The section groups in the section.
 Read-only.
 Nullable.
-To construct, please use Get-Help -Online and see NOTES section for SECTIONGROUPS properties and create a hash table.
+To construct, see NOTES section for SECTIONGROUPS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSectionGroup[]
@@ -298,7 +294,7 @@ Accept wildcard characters: False
 The sections in the section group.
 Read-only.
 Nullable.
-To construct, please use Get-Help -Online and see NOTES section for SECTIONS properties and create a hash table.
+To construct, see NOTES section for SECTIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphOnenoteSection[]
@@ -409,7 +405,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSectionGroup>`: sectionGroup
+`BODYPARAMETER <IMicrosoftGraphSectionGroup>`: sectionGroup
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -486,7 +482,7 @@ BODYPARAMETER `<IMicrosoftGraphSectionGroup>`: sectionGroup
   - `[Sections <IMicrosoftGraphOnenoteSection[]>]`: The sections in the section group. Read-only. Nullable.
   - `[SectionsUrl <String>]`: The URL for the sections navigation property, which returns all the sections in the section group. Read-only.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+`CREATEDBY <IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -495,7 +491,7 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-INPUTOBJECT `<INotesIdentity>`: Identity Parameter
+`INPUTOBJECT <INotesIdentity>`: Identity Parameter
   - `[GroupId <String>]`: The unique identifier of group
   - `[NotebookId <String>]`: The unique identifier of notebook
   - `[OnenoteOperationId <String>]`: The unique identifier of onenoteOperation
@@ -506,7 +502,7 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
   - `[SiteId <String>]`: The unique identifier of site
   - `[UserId <String>]`: The unique identifier of user
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+`LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -515,7 +511,7 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-PARENTNOTEBOOK `<IMicrosoftGraphNotebook>`: notebook
+`PARENTNOTEBOOK <IMicrosoftGraphNotebook>`: notebook
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -591,7 +587,7 @@ PARENTNOTEBOOK `<IMicrosoftGraphNotebook>`: notebook
   - `[SectionsUrl <String>]`: The URL for the sections navigation property, which returns all the sections in the notebook. Read-only.
   - `[UserRole <String>]`: onenoteUserRole
 
-PARENTSECTIONGROUP `<IMicrosoftGraphSectionGroup>`: sectionGroup
+`PARENTSECTIONGROUP <IMicrosoftGraphSectionGroup>`: sectionGroup
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -668,7 +664,7 @@ PARENTSECTIONGROUP `<IMicrosoftGraphSectionGroup>`: sectionGroup
   - `[Sections <IMicrosoftGraphOnenoteSection[]>]`: The sections in the section group. Read-only. Nullable.
   - `[SectionsUrl <String>]`: The URL for the sections navigation property, which returns all the sections in the section group. Read-only.
 
-SECTIONGROUPS <IMicrosoftGraphSectionGroup\[]>: The section groups in the section. Read-only. Nullable.
+`SECTIONGROUPS <IMicrosoftGraphSectionGroup[]>`: The section groups in the section. Read-only. Nullable.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -744,7 +740,7 @@ SECTIONGROUPS <IMicrosoftGraphSectionGroup\[]>: The section groups in the sectio
   - `[Sections <IMicrosoftGraphOnenoteSection[]>]`: The sections in the section group. Read-only. Nullable.
   - `[SectionsUrl <String>]`: The URL for the sections navigation property, which returns all the sections in the section group. Read-only.
 
-SECTIONS <IMicrosoftGraphOnenoteSection\[]>: The sections in the section group. Read-only. Nullable.
+`SECTIONS <IMicrosoftGraphOnenoteSection[]>`: The sections in the section group. Read-only. Nullable.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity

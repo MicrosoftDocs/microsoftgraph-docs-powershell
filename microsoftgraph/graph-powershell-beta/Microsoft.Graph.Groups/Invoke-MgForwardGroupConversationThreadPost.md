@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Groups-help.xml
-Module Name: Microsoft.Graph.Groups
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/invoke-mgforwardgroupconversationthreadpost
+﻿---
+external help file: Microsoft.Graph.Beta.Groups-help.xml
+Module Name: Microsoft.Graph.Beta.Groups
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaforwardgroupconversationthreadpost
 schema: 2.0.0
 ---
 
-# Invoke-MgForwardGroupConversationThreadPost
+# Invoke-MgBetaForwardGroupConversationThreadPost
 
 ## SYNOPSIS
 Forward a post to a recipient.
@@ -13,31 +13,31 @@ You can specify both the parent conversation and thread in the request, \nor, yo
 
 ## SYNTAX
 
-### ForwardExpanded1 (Default)
+### ForwardExpanded (Default)
 ```
-Invoke-MgForwardGroupConversationThreadPost -ConversationId <String> -ConversationThreadId <String>
+Invoke-MgBetaForwardGroupConversationThreadPost -ConversationId <String> -ConversationThreadId <String>
  -GroupId <String> -PostId <String> [-AdditionalProperties <Hashtable>] [-Comment <String>]
  [-ToRecipients <IMicrosoftGraphRecipient[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Forward1
+### Forward
 ```
-Invoke-MgForwardGroupConversationThreadPost -ConversationId <String> -ConversationThreadId <String>
+Invoke-MgBetaForwardGroupConversationThreadPost -ConversationId <String> -ConversationThreadId <String>
  -GroupId <String> -PostId <String>
  -BodyParameter <IPaths1Trbs0NGroupsGroupIdConversationsConversationIdThreadsConversationthreadIdPostsPostIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ForwardViaIdentityExpanded1
+### ForwardViaIdentityExpanded
 ```
-Invoke-MgForwardGroupConversationThreadPost -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
- [-Comment <String>] [-ToRecipients <IMicrosoftGraphRecipient[]>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Invoke-MgBetaForwardGroupConversationThreadPost -InputObject <IGroupsIdentity>
+ [-AdditionalProperties <Hashtable>] [-Comment <String>] [-ToRecipients <IMicrosoftGraphRecipient[]>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ForwardViaIdentity1
+### ForwardViaIdentity
 ```
-Invoke-MgForwardGroupConversationThreadPost -InputObject <IGroupsIdentity>
+Invoke-MgBetaForwardGroupConversationThreadPost -InputObject <IGroupsIdentity>
  -BodyParameter <IPaths1Trbs0NGroupsGroupIdConversationsConversationIdThreadsConversationthreadIdPostsPostIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -48,9 +48,10 @@ You can specify both the parent conversation and thread in the request, \nor, yo
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Groups
+Import-Module Microsoft.Graph.Beta.Groups
+```
 
 $params = @{
 	Comment = "comment-value"
@@ -64,12 +65,7 @@ $params = @{
 	)
 }
 
-Invoke-MgForwardGroupThreadPost -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -BodyParameter $params
-```
-
-This example shows how to use the Invoke-MgForwardGroupConversationThreadPost Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Invoke-MgBetaForwardGroupThreadPost -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -BodyParameter $params
 
 ## PARAMETERS
 
@@ -78,7 +74,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: ForwardExpanded1, ForwardViaIdentityExpanded1
+Parameter Sets: ForwardExpanded, ForwardViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -90,11 +86,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths1Trbs0NGroupsGroupIdConversationsConversationIdThreadsConversationthreadIdPostsPostIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Forward1, ForwardViaIdentity1
+Parameter Sets: Forward, ForwardViaIdentity
 Aliases:
 
 Required: True
@@ -109,7 +105,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: ForwardExpanded1, ForwardViaIdentityExpanded1
+Parameter Sets: ForwardExpanded, ForwardViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -124,7 +120,7 @@ The unique identifier of conversation
 
 ```yaml
 Type: String
-Parameter Sets: ForwardExpanded1, Forward1
+Parameter Sets: ForwardExpanded, Forward
 Aliases:
 
 Required: True
@@ -139,7 +135,7 @@ The unique identifier of conversationThread
 
 ```yaml
 Type: String
-Parameter Sets: ForwardExpanded1, Forward1
+Parameter Sets: ForwardExpanded, Forward
 Aliases:
 
 Required: True
@@ -154,7 +150,7 @@ The unique identifier of group
 
 ```yaml
 Type: String
-Parameter Sets: ForwardExpanded1, Forward1
+Parameter Sets: ForwardExpanded, Forward
 Aliases:
 
 Required: True
@@ -166,11 +162,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IGroupsIdentity
-Parameter Sets: ForwardViaIdentityExpanded1, ForwardViaIdentity1
+Parameter Sets: ForwardViaIdentityExpanded, ForwardViaIdentity
 Aliases:
 
 Required: True
@@ -200,7 +196,7 @@ The unique identifier of post
 
 ```yaml
 Type: String
-Parameter Sets: ForwardExpanded1, Forward1
+Parameter Sets: ForwardExpanded, Forward
 Aliases:
 
 Required: True
@@ -212,11 +208,11 @@ Accept wildcard characters: False
 
 ### -ToRecipients
 .
-To construct, please use Get-Help -Online and see NOTES section for TORECIPIENTS properties and create a hash table.
+To construct, see NOTES section for TORECIPIENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRecipient[]
-Parameter Sets: ForwardExpanded1, ForwardViaIdentityExpanded1
+Parameter Sets: ForwardExpanded, ForwardViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -262,8 +258,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths1Trbs0NGroupsGroupIdConversationsConversationIdThreadsConversationthreadIdPostsPostIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Trbs0NGroupsGroupIdConversationsConversationIdThreadsConversationthreadIdPostsPostIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### System.Boolean
@@ -276,16 +272,16 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Trbs0NGroupsGroupIdConversationsConversationIdThreadsConversationthreadIdPostsPostIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1Trbs0NGroupsGroupIdConversationsConversationIdThreadsConversationthreadIdPostsPostIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Comment <String>]`: 
   - `[ToRecipients <IMicrosoftGraphRecipient[]>]`: 
     - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Address <String>]`: The email address of the person or entity.
-      - `[Name <String>]`: The display name of the person or entity.
+      - `[Address <String>]`: The email address of an entity instance.
+      - `[Name <String>]`: The display name of an entity instance.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+`INPUTOBJECT <IGroupsIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[ConversationId <String>]`: The unique identifier of conversation
@@ -307,11 +303,9 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
   - `[Interval <String>]`: Usage: interval='{interval}'
   - `[ListId <String>]`: The unique identifier of list
-  - `[ListId1 <String>]`: Usage: listId='{listId}'
   - `[ListItemId <String>]`: The unique identifier of listItem
   - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
   - `[MentionId <String>]`: The unique identifier of mention
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
   - `[NotebookId <String>]`: The unique identifier of notebook
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
@@ -324,7 +318,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[Q <String>]`: Usage: q='{q}'
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
   - `[SiteId <String>]`: The unique identifier of site
   - `[SitePageId <String>]`: The unique identifier of sitePage
   - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
@@ -334,10 +327,10 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
-TORECIPIENTS <IMicrosoftGraphRecipient\[]>: .
+`TORECIPIENTS <IMicrosoftGraphRecipient[]>`: .
   - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Address <String>]`: The email address of the person or entity.
-    - `[Name <String>]`: The display name of the person or entity.
+    - `[Address <String>]`: The email address of an entity instance.
+    - `[Name <String>]`: The display name of an entity instance.
 
 ## RELATED LINKS

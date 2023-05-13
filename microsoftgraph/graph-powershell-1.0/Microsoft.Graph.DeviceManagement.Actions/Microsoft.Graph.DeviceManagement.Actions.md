@@ -1,7 +1,7 @@
 ---
 Module Name: Microsoft.Graph.DeviceManagement.Actions
-Module Guid: d8cf5cd1-cee0-4598-b950-6c27ad0bc746
-Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions
+Module Guid: 928f2afe-261f-44a0-a5cd-97f55f64175a
+Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions
 Help Version: 1.0.0.0
 Locale: en-US
 ---
@@ -77,14 +77,14 @@ Invoke action getPolicyNonComplianceSummaryReport
 ### [Get-MgDeviceManagementReportSettingNonComplianceReport](Get-MgDeviceManagementReportSettingNonComplianceReport.md)
 Invoke action getSettingNonComplianceReport
 
-### [Import-MgDeviceManagementImportedWindowAutopilotDeviceIdentity](Import-MgDeviceManagementImportedWindowAutopilotDeviceIdentity.md)
+### [Import-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity](Import-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity.md)
 Invoke action import
 
 ### [Invoke-MgBeginDeviceManagementRemoteAssistancePartnerOnboarding](Invoke-MgBeginDeviceManagementRemoteAssistancePartnerOnboarding.md)
 A request to start onboarding.
 Must be coupled with the appropriate TeamViewer account information
 
-### [Invoke-MgCleanDeviceManagementManagedDeviceWindowDevice](Invoke-MgCleanDeviceManagementManagedDeviceWindowDevice.md)
+### [Invoke-MgCleanDeviceManagementManagedDeviceWindowsDevice](Invoke-MgCleanDeviceManagementManagedDeviceWindowsDevice.md)
 Clean Windows device
 
 ### [Invoke-MgDownDeviceManagementManagedDeviceShut](Invoke-MgDownDeviceManagementManagedDeviceShut.md)
@@ -96,7 +96,7 @@ Logout shared Apple device active user
 ### [Invoke-MgRetireDeviceManagementManagedDevice](Invoke-MgRetireDeviceManagementManagedDevice.md)
 Retire a device
 
-### [Invoke-MgScanDeviceManagementManagedDeviceWindowDefender](Invoke-MgScanDeviceManagementManagedDeviceWindowDefender.md)
+### [Invoke-MgScanDeviceManagementManagedDeviceWindowsDefender](Invoke-MgScanDeviceManagementManagedDeviceWindowsDefender.md)
 Invoke action windowsDefenderScan
 
 ### [Invoke-MgScheduleDeviceManagementDeviceCompliancePolicyActionForRule](Invoke-MgScheduleDeviceManagementDeviceCompliancePolicyActionForRule.md)
@@ -105,7 +105,7 @@ Invoke action scheduleActionsForRules
 ### [Invoke-MgTerminateDeviceManagementPartner](Invoke-MgTerminateDeviceManagementPartner.md)
 Invoke action terminate
 
-### [Invoke-MgUnassignDeviceManagementWindowAutopilotDeviceIdentityUserFromDevice](Invoke-MgUnassignDeviceManagementWindowAutopilotDeviceIdentityUserFromDevice.md)
+### [Invoke-MgUnassignDeviceManagementWindowsAutopilotDeviceIdentityUserFromDevice](Invoke-MgUnassignDeviceManagementWindowsAutopilotDeviceIdentityUserFromDevice.md)
 Unassigns the user from an Autopilot device.
 
 ### [Lock-MgDeviceManagementManagedDeviceRemote](Lock-MgDeviceManagementManagedDeviceRemote.md)
@@ -144,7 +144,7 @@ Invoke action assign
 ### [Set-MgDeviceManagementDeviceEnrollmentConfigurationPriority](Set-MgDeviceManagementDeviceEnrollmentConfigurationPriority.md)
 Invoke action setPriority
 
-### [Set-MgDeviceManagementWindowAutopilotDeviceIdentityUserToDevice](Set-MgDeviceManagementWindowAutopilotDeviceIdentityUserToDevice.md)
+### [Set-MgDeviceManagementWindowsAutopilotDeviceIdentityUserToDevice](Set-MgDeviceManagementWindowsAutopilotDeviceIdentityUserToDevice.md)
 Assigns user to Autopilot devices.
 
 ### [Skip-MgDeviceManagementManagedDeviceActivationLock](Skip-MgDeviceManagementManagedDeviceActivationLock.md)
@@ -156,9 +156,9 @@ Invoke action sync
 ### [Sync-MgDeviceManagementManagedDevice](Sync-MgDeviceManagementManagedDevice.md)
 Invoke action syncDevice
 
-### [Update-MgDeviceManagementManagedDeviceWindowDeviceAccount](Update-MgDeviceManagementManagedDeviceWindowDeviceAccount.md)
+### [Update-MgDeviceManagementManagedDeviceWindowsDeviceAccount](Update-MgDeviceManagementManagedDeviceWindowsDeviceAccount.md)
 Invoke action updateWindowsDeviceAccount
 
-### [Update-MgDeviceManagementWindowAutopilotDeviceIdentityDeviceProperty](Update-MgDeviceManagementWindowAutopilotDeviceIdentityDeviceProperty.md)
+### [Update-MgDeviceManagementWindowsAutopilotDeviceIdentityDeviceProperty](Update-MgDeviceManagementWindowsAutopilotDeviceIdentityDeviceProperty.md)
 Updates properties on Autopilot devices.
 

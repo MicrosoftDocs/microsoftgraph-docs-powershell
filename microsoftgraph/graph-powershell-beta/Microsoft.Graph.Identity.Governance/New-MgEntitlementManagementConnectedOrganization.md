@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.Governance-help.xml
-Module Name: Microsoft.Graph.Identity.Governance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementconnectedorganization
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.Governance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementconnectedorganization
 schema: 2.0.0
 ---
 
-# New-MgEntitlementManagementConnectedOrganization
+# New-MgBetaEntitlementManagementConnectedOrganization
 
 ## SYNOPSIS
 Create a new connectedOrganization object.
@@ -14,19 +14,19 @@ Create a new connectedOrganization object.
 
 ### CreateWithDomainIdentitySource (Default)
 ```
-New-MgEntitlementManagementConnectedOrganization [-Description <String>] [-DisplayName <String>]
+New-MgBetaEntitlementManagementConnectedOrganization [-Description <String>] [-DisplayName <String>]
  [-State <String>] -DomainName <String> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
-New-MgEntitlementManagementConnectedOrganization -BodyParameter <IMicrosoftGraphConnectedOrganization1>
+New-MgBetaEntitlementManagementConnectedOrganization -BodyParameter <IMicrosoftGraphConnectedOrganization>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CreateExpanded1
+### CreateExpanded
 ```
-New-MgEntitlementManagementConnectedOrganization [-AdditionalProperties <Hashtable>] [-CreatedBy <String>]
+New-MgBetaEntitlementManagementConnectedOrganization [-AdditionalProperties <Hashtable>] [-CreatedBy <String>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
  [-ExternalSponsors <IMicrosoftGraphDirectoryObject[]>] [-Id <String>]
  [-IdentitySources <IMicrosoftGraphIdentitySource[]>] [-InternalSponsors <IMicrosoftGraphDirectoryObject[]>]
@@ -39,9 +39,9 @@ Create a new connectedOrganization object.
 
 ## EXAMPLES
 
-### Example 1: Using the New-MgEntitlementManagementConnectedOrganization Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Identity.Governance
+Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{
 	DisplayName = "Connected organization name"
 	Description = "Connected organization description"
@@ -54,11 +54,8 @@ $params = @{
 	)
 	State = "proposed"
 }
-New-MgEntitlementManagementConnectedOrganization -BodyParameter $params
+New-MgBetaEntitlementManagementConnectedOrganization -BodyParameter $params
 ```
-
-This example shows how to use the New-MgEntitlementManagementConnectedOrganization Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -67,7 +64,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -79,11 +76,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 connectedOrganization
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphConnectedOrganization1
-Parameter Sets: Create1
+Type: IMicrosoftGraphConnectedOrganization
+Parameter Sets: Create
 Aliases:
 
 Required: True
@@ -99,7 +96,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -116,7 +113,7 @@ Read-only.
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -131,7 +128,7 @@ The description of the connected organization.
 
 ```yaml
 Type: String
-Parameter Sets: CreateWithDomainIdentitySource, CreateExpanded1
+Parameter Sets: CreateWithDomainIdentitySource, CreateExpanded
 Aliases:
 
 Required: False
@@ -147,7 +144,7 @@ Supports $filter (eq).
 
 ```yaml
 Type: String
-Parameter Sets: CreateWithDomainIdentitySource, CreateExpanded1
+Parameter Sets: CreateWithDomainIdentitySource, CreateExpanded
 Aliases:
 
 Required: False
@@ -174,11 +171,11 @@ Accept wildcard characters: False
 
 ### -ExternalSponsors
 .
-To construct, please use Get-Help -Online and see NOTES section for EXTERNALSPONSORS properties and create a hash table.
+To construct, see NOTES section for EXTERNALSPONSORS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDirectoryObject[]
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -189,12 +186,12 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -213,7 +210,7 @@ To filter by the derived types, you must declare the resource using its full ODa
 
 ```yaml
 Type: IMicrosoftGraphIdentitySource[]
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -225,11 +222,11 @@ Accept wildcard characters: False
 
 ### -InternalSponsors
 .
-To construct, please use Get-Help -Online and see NOTES section for INTERNALSPONSORS properties and create a hash table.
+To construct, see NOTES section for INTERNALSPONSORS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDirectoryObject[]
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -245,7 +242,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -262,7 +259,7 @@ Read-only.
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -277,7 +274,7 @@ connectedOrganizationState
 
 ```yaml
 Type: String
-Parameter Sets: CreateWithDomainIdentitySource, CreateExpanded1
+Parameter Sets: CreateWithDomainIdentitySource, CreateExpanded
 Aliases:
 
 Required: False
@@ -323,11 +320,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConnectedOrganization1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConnectedOrganization
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConnectedOrganization
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConnectedOrganization1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConnectedOrganization
 ## NOTES
 
 ALIASES
@@ -337,15 +333,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphConnectedOrganization1>`: connectedOrganization
+`BODYPARAMETER <IMicrosoftGraphConnectedOrganization>`: connectedOrganization
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[CreatedBy <String>]`: UPN of the user who created this resource. Read-only.
   - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
   - `[Description <String>]`: The description of the connected organization.
   - `[DisplayName <String>]`: The display name of the connected organization. Supports $filter (eq).
   - `[ExternalSponsors <IMicrosoftGraphDirectoryObject[]>]`: 
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[IdentitySources <IMicrosoftGraphIdentitySource[]>]`: The identity sources in this connected organization, one of azureActiveDirectoryTenant, crossCloudAzureActiveDirectoryTenant, domainIdentitySource or externalDomainFederation. Read-only. Nullable. Supports $select and $filter(eq). To filter by the derived types, you must declare the resource using its full OData cast, for example, $filter=identitySources/any(is:is/microsoft.graph.azureActiveDirectoryTenant/tenantId eq 'bcfdfff4-cbc3-43f2-9000-ba7b7515054f').
   - `[InternalSponsors <IMicrosoftGraphDirectoryObject[]>]`: 
@@ -353,12 +349,12 @@ BODYPARAMETER `<IMicrosoftGraphConnectedOrganization1>`: connectedOrganization
   - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
   - `[State <String>]`: connectedOrganizationState
 
-EXTERNALSPONSORS <IMicrosoftGraphDirectoryObject\[]>: .
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`EXTERNALSPONSORS <IMicrosoftGraphDirectoryObject[]>`: .
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
-INTERNALSPONSORS <IMicrosoftGraphDirectoryObject\[]>: .
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`INTERNALSPONSORS <IMicrosoftGraphDirectoryObject[]>`: .
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
 ## RELATED LINKS

@@ -1,7 +1,7 @@
----
+﻿---
 Module Name: Microsoft.Graph.Files
-Module Guid: ee3ef964-50b7-4f70-8fde-5f1193820cab
-Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files
+Module Guid: 8329473e-b325-4487-95d6-c27bfd49671a
+Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.files
 Help Version: 1.0.0.0
 Locale: en-US
 ---
@@ -44,15 +44,19 @@ Copy a file to a default content location in a [content type][contentType].
 The file can then be added as a default file or template via a POST operation.
 
 ### [Get-MgDrive](Get-MgDrive.md)
-Retrieve the properties and relationships of a Drive resource.
-A Drive is the top-level container for a file system, such as OneDrive or SharePoint document libraries.
+Get entity from drives by key
 
 ### [Get-MgDriveBundle](Get-MgDriveBundle.md)
-Collection of [bundles][bundle] (albums and multi-select-shared sets of items).
-Only in personal OneDrive.
+Retrieve the metadata for a [bundle][] based on the unique ID of the bundle.
 
 ### [Get-MgDriveBundleContent](Get-MgDriveBundleContent.md)
 The content stream, if the item represents a file.
+
+### [Get-MgDriveBundleCount](Get-MgDriveBundleCount.md)
+Get the number of the resource
+
+### [Get-MgDriveCount](Get-MgDriveCount.md)
+Get the number of the resource
 
 ### [Get-MgDriveFollowing](Get-MgDriveFollowing.md)
 The list of items the user is following.
@@ -61,10 +65,11 @@ Only in OneDrive for Business.
 ### [Get-MgDriveFollowingContent](Get-MgDriveFollowingContent.md)
 The content stream, if the item represents a file.
 
+### [Get-MgDriveFollowingCount](Get-MgDriveFollowingCount.md)
+Get the number of the resource
+
 ### [Get-MgDriveItem](Get-MgDriveItem.md)
-All items contained in the drive.
-Read-only.
-Nullable.
+Retrieve the metadata for a [bundle][] based on the unique ID of the bundle.
 
 ### [Get-MgDriveItemActivityByInterval](Get-MgDriveItemActivityByInterval.md)
 Invoke function getActivitiesByInterval
@@ -77,6 +82,9 @@ Get itemActivityStats from drives
 
 ### [Get-MgDriveItemAnalyticItemActivityStatActivity](Get-MgDriveItemAnalyticItemActivityStatActivity.md)
 Exposes the itemActivities represented in this itemActivityStat resource.
+
+### [Get-MgDriveItemAnalyticItemActivityStatCount](Get-MgDriveItemAnalyticItemActivityStatCount.md)
+Get the number of the resource
 
 ### [Get-MgDriveItemAnalyticLastSevenDay](Get-MgDriveItemAnalyticLastSevenDay.md)
 Get lastSevenDays from drives
@@ -93,8 +101,14 @@ Nullable.
 ### [Get-MgDriveItemChildContent](Get-MgDriveItemChildContent.md)
 The content stream, if the item represents a file.
 
+### [Get-MgDriveItemChildCount](Get-MgDriveItemChildCount.md)
+Get the number of the resource
+
 ### [Get-MgDriveItemContent](Get-MgDriveItemContent.md)
 The content stream, if the item represents a file.
+
+### [Get-MgDriveItemCount](Get-MgDriveItemCount.md)
+Get the number of the resource
 
 ### [Get-MgDriveItemDelta](Get-MgDriveItemDelta.md)
 Invoke function delta
@@ -111,7 +125,10 @@ Invoke function getActivitiesByInterval
 Analytics about the view activities that took place on this item.
 
 ### [Get-MgDriveItemListItemDocumentSetVersion](Get-MgDriveItemListItemDocumentSetVersion.md)
-Version information for a document set version created by a user.
+Read the properties and relationships of a documentSetVersion object.
+
+### [Get-MgDriveItemListItemDocumentSetVersionCount](Get-MgDriveItemListItemDocumentSetVersionCount.md)
+Get the number of the resource
 
 ### [Get-MgDriveItemListItemDriveItem](Get-MgDriveItemListItemDriveItem.md)
 For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
@@ -123,19 +140,28 @@ The content stream, if the item represents a file.
 The values of the columns set on this list item.
 
 ### [Get-MgDriveItemListItemVersion](Get-MgDriveItemListItemVersion.md)
-The list of previous versions of the list item.
+Retrieve the metadata for a specific version of a ListItem.
+
+### [Get-MgDriveItemListItemVersionCount](Get-MgDriveItemListItemVersionCount.md)
+Get the number of the resource
 
 ### [Get-MgDriveItemListItemVersionField](Get-MgDriveItemListItemVersionField.md)
 A collection of the fields and values for this version of the list item.
 
 ### [Get-MgDriveItemPermission](Get-MgDriveItemPermission.md)
-The set of permissions for the item.
-Read-only.
-Nullable.
+Return the effective sharing permission for a particular permission resource.
+Effective permissions of an item can come from two sources: permissions set directly on the item itself or permissions that are inherited from the item's ancestors.
+Callers can differentiate if the permission is inherited or not by checking the `inheritedFrom` property.\nThis property is an ItemReference resource referencing the ancestor that the permission is inherited from.
+
+### [Get-MgDriveItemPermissionCount](Get-MgDriveItemPermissionCount.md)
+Get the number of the resource
 
 ### [Get-MgDriveItemSubscription](Get-MgDriveItemSubscription.md)
 The set of subscriptions on the item.
 Only supported on the root of a drive.
+
+### [Get-MgDriveItemSubscriptionCount](Get-MgDriveItemSubscriptionCount.md)
+Get the number of the resource
 
 ### [Get-MgDriveItemThumbnail](Get-MgDriveItemThumbnail.md)
 Collection containing [ThumbnailSet][] objects associated with the item.
@@ -143,14 +169,17 @@ For more info, see [getting thumbnails][].
 Read-only.
 Nullable.
 
+### [Get-MgDriveItemThumbnailCount](Get-MgDriveItemThumbnailCount.md)
+Get the number of the resource
+
 ### [Get-MgDriveItemVersion](Get-MgDriveItemVersion.md)
-The list of previous versions of the item.
-For more info, see [getting previous versions][].
-Read-only.
-Nullable.
+Retrieve the metadata for a specific version of a DriveItem.
 
 ### [Get-MgDriveItemVersionContent](Get-MgDriveItemVersionContent.md)
 The content stream for this version of the item.
+
+### [Get-MgDriveItemVersionCount](Get-MgDriveItemVersionCount.md)
+Get the number of the resource
 
 ### [Get-MgDriveList](Get-MgDriveList.md)
 For drives in SharePoint, the underlying document library list.
@@ -159,6 +188,9 @@ Nullable.
 
 ### [Get-MgDriveListColumn](Get-MgDriveListColumn.md)
 The collection of field definitions for this list.
+
+### [Get-MgDriveListColumnCount](Get-MgDriveListColumnCount.md)
+Get the number of the resource
 
 ### [Get-MgDriveListColumnSourceColumn](Get-MgDriveListColumnSourceColumn.md)
 The source column for the content type column.
@@ -172,14 +204,26 @@ Parent contentType from which this content type is derived.
 ### [Get-MgDriveListContentTypeBaseType](Get-MgDriveListContentTypeBaseType.md)
 The collection of content types that are ancestors of this content type.
 
+### [Get-MgDriveListContentTypeBaseTypeCount](Get-MgDriveListContentTypeBaseTypeCount.md)
+Get the number of the resource
+
 ### [Get-MgDriveListContentTypeColumn](Get-MgDriveListContentTypeColumn.md)
-The collection of column definitions for this contentType.
+Retrieve the metadata for a [site][], a [list][], or a [contentType][] [column][columnDefinition].
+
+### [Get-MgDriveListContentTypeColumnCount](Get-MgDriveListContentTypeColumnCount.md)
+Get the number of the resource
 
 ### [Get-MgDriveListContentTypeColumnLink](Get-MgDriveListContentTypeColumnLink.md)
 The collection of columns that are required by this content type.
 
+### [Get-MgDriveListContentTypeColumnLinkCount](Get-MgDriveListContentTypeColumnLinkCount.md)
+Get the number of the resource
+
 ### [Get-MgDriveListContentTypeColumnPosition](Get-MgDriveListContentTypeColumnPosition.md)
 Column order information in a content type.
+
+### [Get-MgDriveListContentTypeColumnPositionCount](Get-MgDriveListContentTypeColumnPositionCount.md)
+Get the number of the resource
 
 ### [Get-MgDriveListContentTypeColumnSourceColumn](Get-MgDriveListContentTypeColumnSourceColumn.md)
 The source column for the content type column.
@@ -187,12 +231,15 @@ The source column for the content type column.
 ### [Get-MgDriveListContentTypeCompatibleHubContentType](Get-MgDriveListContentTypeCompatibleHubContentType.md)
 Invoke function getCompatibleHubContentTypes
 
+### [Get-MgDriveListContentTypeCount](Get-MgDriveListContentTypeCount.md)
+Get the number of the resource
+
 ### [Get-MgDriveListDrive](Get-MgDriveListDrive.md)
 Only present on document libraries.
 Allows access to the list as a [drive][] resource with [driveItems][driveItem].
 
 ### [Get-MgDriveListItem](Get-MgDriveListItem.md)
-All items contained in the list.
+Returns the metadata for an [item][] in a [list][].
 
 ### [Get-MgDriveListItemActivityByInterval](Get-MgDriveListItemActivityByInterval.md)
 Invoke function getActivitiesByInterval
@@ -200,8 +247,14 @@ Invoke function getActivitiesByInterval
 ### [Get-MgDriveListItemAnalytic](Get-MgDriveListItemAnalytic.md)
 Analytics about the view activities that took place on this item.
 
+### [Get-MgDriveListItemCount](Get-MgDriveListItemCount.md)
+Get the number of the resource
+
 ### [Get-MgDriveListItemDocumentSetVersion](Get-MgDriveListItemDocumentSetVersion.md)
-Version information for a document set version created by a user.
+Read the properties and relationships of a documentSetVersion object.
+
+### [Get-MgDriveListItemDocumentSetVersionCount](Get-MgDriveListItemDocumentSetVersionCount.md)
+Get the number of the resource
 
 ### [Get-MgDriveListItemDriveItem](Get-MgDriveListItemDriveItem.md)
 For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
@@ -213,7 +266,10 @@ The content stream, if the item represents a file.
 The values of the columns set on this list item.
 
 ### [Get-MgDriveListItemVersion](Get-MgDriveListItemVersion.md)
-The list of previous versions of the list item.
+Retrieve the metadata for a specific version of a ListItem.
+
+### [Get-MgDriveListItemVersionCount](Get-MgDriveListItemVersionCount.md)
+Get the number of the resource
 
 ### [Get-MgDriveListItemVersionField](Get-MgDriveListItemVersionField.md)
 A collection of the fields and values for this version of the list item.
@@ -221,8 +277,14 @@ A collection of the fields and values for this version of the list item.
 ### [Get-MgDriveListOperation](Get-MgDriveListOperation.md)
 The collection of long-running operations on the list.
 
+### [Get-MgDriveListOperationCount](Get-MgDriveListOperationCount.md)
+Get the number of the resource
+
 ### [Get-MgDriveListSubscription](Get-MgDriveListSubscription.md)
 The set of subscriptions on the list.
+
+### [Get-MgDriveListSubscriptionCount](Get-MgDriveListSubscriptionCount.md)
+Get the number of the resource
 
 ### [Get-MgDriveRoot](Get-MgDriveRoot.md)
 Retrieve the metadata for a driveItem in a drive by file system path or ID.\n`item-id` is the ID of a driveItem.
@@ -240,6 +302,9 @@ Get itemActivityStats from drives
 ### [Get-MgDriveRootAnalyticItemActivityStatActivity](Get-MgDriveRootAnalyticItemActivityStatActivity.md)
 Exposes the itemActivities represented in this itemActivityStat resource.
 
+### [Get-MgDriveRootAnalyticItemActivityStatCount](Get-MgDriveRootAnalyticItemActivityStatCount.md)
+Get the number of the resource
+
 ### [Get-MgDriveRootAnalyticLastSevenDay](Get-MgDriveRootAnalyticLastSevenDay.md)
 Get lastSevenDays from drives
 
@@ -254,6 +319,9 @@ Nullable.
 
 ### [Get-MgDriveRootChildContent](Get-MgDriveRootChildContent.md)
 The content stream, if the item represents a file.
+
+### [Get-MgDriveRootChildCount](Get-MgDriveRootChildCount.md)
+Get the number of the resource
 
 ### [Get-MgDriveRootContent](Get-MgDriveRootContent.md)
 The content stream, if the item represents a file.
@@ -273,7 +341,10 @@ Invoke function getActivitiesByInterval
 Analytics about the view activities that took place on this item.
 
 ### [Get-MgDriveRootListItemDocumentSetVersion](Get-MgDriveRootListItemDocumentSetVersion.md)
-Version information for a document set version created by a user.
+Read the properties and relationships of a documentSetVersion object.
+
+### [Get-MgDriveRootListItemDocumentSetVersionCount](Get-MgDriveRootListItemDocumentSetVersionCount.md)
+Get the number of the resource
 
 ### [Get-MgDriveRootListItemDriveItem](Get-MgDriveRootListItemDriveItem.md)
 For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
@@ -285,19 +356,28 @@ The content stream, if the item represents a file.
 The values of the columns set on this list item.
 
 ### [Get-MgDriveRootListItemVersion](Get-MgDriveRootListItemVersion.md)
-The list of previous versions of the list item.
+Retrieve the metadata for a specific version of a ListItem.
+
+### [Get-MgDriveRootListItemVersionCount](Get-MgDriveRootListItemVersionCount.md)
+Get the number of the resource
 
 ### [Get-MgDriveRootListItemVersionField](Get-MgDriveRootListItemVersionField.md)
 A collection of the fields and values for this version of the list item.
 
 ### [Get-MgDriveRootPermission](Get-MgDriveRootPermission.md)
-The set of permissions for the item.
-Read-only.
-Nullable.
+Return the effective sharing permission for a particular permission resource.
+Effective permissions of an item can come from two sources: permissions set directly on the item itself or permissions that are inherited from the item's ancestors.
+Callers can differentiate if the permission is inherited or not by checking the `inheritedFrom` property.\nThis property is an ItemReference resource referencing the ancestor that the permission is inherited from.
+
+### [Get-MgDriveRootPermissionCount](Get-MgDriveRootPermissionCount.md)
+Get the number of the resource
 
 ### [Get-MgDriveRootSubscription](Get-MgDriveRootSubscription.md)
 The set of subscriptions on the item.
 Only supported on the root of a drive.
+
+### [Get-MgDriveRootSubscriptionCount](Get-MgDriveRootSubscriptionCount.md)
+Get the number of the resource
 
 ### [Get-MgDriveRootThumbnail](Get-MgDriveRootThumbnail.md)
 Collection containing [ThumbnailSet][] objects associated with the item.
@@ -305,37 +385,50 @@ For more info, see [getting thumbnails][].
 Read-only.
 Nullable.
 
+### [Get-MgDriveRootThumbnailCount](Get-MgDriveRootThumbnailCount.md)
+Get the number of the resource
+
 ### [Get-MgDriveRootVersion](Get-MgDriveRootVersion.md)
-The list of previous versions of the item.
-For more info, see [getting previous versions][].
-Read-only.
-Nullable.
+Retrieve the metadata for a specific version of a DriveItem.
 
 ### [Get-MgDriveRootVersionContent](Get-MgDriveRootVersionContent.md)
 The content stream for this version of the item.
 
+### [Get-MgDriveRootVersionCount](Get-MgDriveRootVersionCount.md)
+Get the number of the resource
+
 ### [Get-MgDriveSpecial](Get-MgDriveSpecial.md)
-Collection of common folders available in OneDrive.
-Read-only.
-Nullable.
+Use the special collection to access a special folder by name.
+Special folders provide simple aliases to access well-known folders in OneDrive without the need to look up the folder by path (which would require localization), or reference the folder with an ID.
+If a special folder is renamed or moved to another location within the drive, this syntax will continue to find that folder.
+Special folders are automatically created the first time an application attempts to write to one, if it doesn't already exist.
+If a user deletes one, it is recreated when written to again.
 
 ### [Get-MgDriveSpecialContent](Get-MgDriveSpecialContent.md)
 The content stream, if the item represents a file.
 
+### [Get-MgDriveSpecialCount](Get-MgDriveSpecialCount.md)
+Get the number of the resource
+
 ### [Get-MgGroupDefaultDrive](Get-MgGroupDefaultDrive.md)
-Retrieve the properties and relationships of a Drive resource.
-A Drive is the top-level container for a file system, such as OneDrive or SharePoint document libraries.
+The group's default drive.
+Read-only.
 
 ### [Get-MgGroupDrive](Get-MgGroupDrive.md)
 The group's drives.
 Read-only.
 
 ### [Get-MgGroupDriveBundle](Get-MgGroupDriveBundle.md)
-Collection of [bundles][bundle] (albums and multi-select-shared sets of items).
-Only in personal OneDrive.
+Retrieve the metadata for a [bundle][] based on the unique ID of the bundle.
 
 ### [Get-MgGroupDriveBundleContent](Get-MgGroupDriveBundleContent.md)
 The content stream, if the item represents a file.
+
+### [Get-MgGroupDriveBundleCount](Get-MgGroupDriveBundleCount.md)
+Get the number of the resource
+
+### [Get-MgGroupDriveCount](Get-MgGroupDriveCount.md)
+Get the number of the resource
 
 ### [Get-MgGroupDriveFollowing](Get-MgGroupDriveFollowing.md)
 The list of items the user is following.
@@ -344,10 +437,11 @@ Only in OneDrive for Business.
 ### [Get-MgGroupDriveFollowingContent](Get-MgGroupDriveFollowingContent.md)
 The content stream, if the item represents a file.
 
+### [Get-MgGroupDriveFollowingCount](Get-MgGroupDriveFollowingCount.md)
+Get the number of the resource
+
 ### [Get-MgGroupDriveItem](Get-MgGroupDriveItem.md)
-All items contained in the drive.
-Read-only.
-Nullable.
+Retrieve the metadata for a [bundle][] based on the unique ID of the bundle.
 
 ### [Get-MgGroupDriveItemAnalytic](Get-MgGroupDriveItemAnalytic.md)
 Analytics about the view activities that took place on this item.
@@ -357,6 +451,9 @@ Get itemActivityStats from groups
 
 ### [Get-MgGroupDriveItemAnalyticItemActivityStatActivity](Get-MgGroupDriveItemAnalyticItemActivityStatActivity.md)
 Exposes the itemActivities represented in this itemActivityStat resource.
+
+### [Get-MgGroupDriveItemAnalyticItemActivityStatCount](Get-MgGroupDriveItemAnalyticItemActivityStatCount.md)
+Get the number of the resource
 
 ### [Get-MgGroupDriveItemAnalyticLastSevenDay](Get-MgGroupDriveItemAnalyticLastSevenDay.md)
 Get lastSevenDays from groups
@@ -373,8 +470,14 @@ Nullable.
 ### [Get-MgGroupDriveItemChildContent](Get-MgGroupDriveItemChildContent.md)
 The content stream, if the item represents a file.
 
+### [Get-MgGroupDriveItemChildCount](Get-MgGroupDriveItemChildCount.md)
+Get the number of the resource
+
 ### [Get-MgGroupDriveItemContent](Get-MgGroupDriveItemContent.md)
 The content stream, if the item represents a file.
+
+### [Get-MgGroupDriveItemCount](Get-MgGroupDriveItemCount.md)
+Get the number of the resource
 
 ### [Get-MgGroupDriveItemListItem](Get-MgGroupDriveItemListItem.md)
 For drives in SharePoint, the associated document library list item.
@@ -385,7 +488,10 @@ Nullable.
 Analytics about the view activities that took place on this item.
 
 ### [Get-MgGroupDriveItemListItemDocumentSetVersion](Get-MgGroupDriveItemListItemDocumentSetVersion.md)
-Version information for a document set version created by a user.
+Read the properties and relationships of a documentSetVersion object.
+
+### [Get-MgGroupDriveItemListItemDocumentSetVersionCount](Get-MgGroupDriveItemListItemDocumentSetVersionCount.md)
+Get the number of the resource
 
 ### [Get-MgGroupDriveItemListItemDriveItem](Get-MgGroupDriveItemListItemDriveItem.md)
 For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
@@ -397,19 +503,28 @@ The content stream, if the item represents a file.
 The values of the columns set on this list item.
 
 ### [Get-MgGroupDriveItemListItemVersion](Get-MgGroupDriveItemListItemVersion.md)
-The list of previous versions of the list item.
+Retrieve the metadata for a specific version of a ListItem.
+
+### [Get-MgGroupDriveItemListItemVersionCount](Get-MgGroupDriveItemListItemVersionCount.md)
+Get the number of the resource
 
 ### [Get-MgGroupDriveItemListItemVersionField](Get-MgGroupDriveItemListItemVersionField.md)
 A collection of the fields and values for this version of the list item.
 
 ### [Get-MgGroupDriveItemPermission](Get-MgGroupDriveItemPermission.md)
-The set of permissions for the item.
-Read-only.
-Nullable.
+Return the effective sharing permission for a particular permission resource.
+Effective permissions of an item can come from two sources: permissions set directly on the item itself or permissions that are inherited from the item's ancestors.
+Callers can differentiate if the permission is inherited or not by checking the `inheritedFrom` property.\nThis property is an ItemReference resource referencing the ancestor that the permission is inherited from.
+
+### [Get-MgGroupDriveItemPermissionCount](Get-MgGroupDriveItemPermissionCount.md)
+Get the number of the resource
 
 ### [Get-MgGroupDriveItemSubscription](Get-MgGroupDriveItemSubscription.md)
 The set of subscriptions on the item.
 Only supported on the root of a drive.
+
+### [Get-MgGroupDriveItemSubscriptionCount](Get-MgGroupDriveItemSubscriptionCount.md)
+Get the number of the resource
 
 ### [Get-MgGroupDriveItemThumbnail](Get-MgGroupDriveItemThumbnail.md)
 Collection containing [ThumbnailSet][] objects associated with the item.
@@ -417,14 +532,17 @@ For more info, see [getting thumbnails][].
 Read-only.
 Nullable.
 
+### [Get-MgGroupDriveItemThumbnailCount](Get-MgGroupDriveItemThumbnailCount.md)
+Get the number of the resource
+
 ### [Get-MgGroupDriveItemVersion](Get-MgGroupDriveItemVersion.md)
-The list of previous versions of the item.
-For more info, see [getting previous versions][].
-Read-only.
-Nullable.
+Retrieve the metadata for a specific version of a DriveItem.
 
 ### [Get-MgGroupDriveItemVersionContent](Get-MgGroupDriveItemVersionContent.md)
 The content stream for this version of the item.
+
+### [Get-MgGroupDriveItemVersionCount](Get-MgGroupDriveItemVersionCount.md)
+Get the number of the resource
 
 ### [Get-MgGroupDriveList](Get-MgGroupDriveList.md)
 For drives in SharePoint, the underlying document library list.
@@ -433,6 +551,9 @@ Nullable.
 
 ### [Get-MgGroupDriveListColumn](Get-MgGroupDriveListColumn.md)
 The collection of field definitions for this list.
+
+### [Get-MgGroupDriveListColumnCount](Get-MgGroupDriveListColumnCount.md)
+Get the number of the resource
 
 ### [Get-MgGroupDriveListColumnSourceColumn](Get-MgGroupDriveListColumnSourceColumn.md)
 The source column for the content type column.
@@ -446,30 +567,51 @@ Parent contentType from which this content type is derived.
 ### [Get-MgGroupDriveListContentTypeBaseType](Get-MgGroupDriveListContentTypeBaseType.md)
 The collection of content types that are ancestors of this content type.
 
+### [Get-MgGroupDriveListContentTypeBaseTypeCount](Get-MgGroupDriveListContentTypeBaseTypeCount.md)
+Get the number of the resource
+
 ### [Get-MgGroupDriveListContentTypeColumn](Get-MgGroupDriveListContentTypeColumn.md)
-The collection of column definitions for this contentType.
+Retrieve the metadata for a [site][], a [list][], or a [contentType][] [column][columnDefinition].
+
+### [Get-MgGroupDriveListContentTypeColumnCount](Get-MgGroupDriveListContentTypeColumnCount.md)
+Get the number of the resource
 
 ### [Get-MgGroupDriveListContentTypeColumnLink](Get-MgGroupDriveListContentTypeColumnLink.md)
 The collection of columns that are required by this content type.
 
+### [Get-MgGroupDriveListContentTypeColumnLinkCount](Get-MgGroupDriveListContentTypeColumnLinkCount.md)
+Get the number of the resource
+
 ### [Get-MgGroupDriveListContentTypeColumnPosition](Get-MgGroupDriveListContentTypeColumnPosition.md)
 Column order information in a content type.
 
+### [Get-MgGroupDriveListContentTypeColumnPositionCount](Get-MgGroupDriveListContentTypeColumnPositionCount.md)
+Get the number of the resource
+
 ### [Get-MgGroupDriveListContentTypeColumnSourceColumn](Get-MgGroupDriveListContentTypeColumnSourceColumn.md)
 The source column for the content type column.
+
+### [Get-MgGroupDriveListContentTypeCount](Get-MgGroupDriveListContentTypeCount.md)
+Get the number of the resource
 
 ### [Get-MgGroupDriveListDrive](Get-MgGroupDriveListDrive.md)
 Only present on document libraries.
 Allows access to the list as a [drive][] resource with [driveItems][driveItem].
 
 ### [Get-MgGroupDriveListItem](Get-MgGroupDriveListItem.md)
-All items contained in the list.
+Returns the metadata for an [item][] in a [list][].
 
 ### [Get-MgGroupDriveListItemAnalytic](Get-MgGroupDriveListItemAnalytic.md)
 Analytics about the view activities that took place on this item.
 
+### [Get-MgGroupDriveListItemCount](Get-MgGroupDriveListItemCount.md)
+Get the number of the resource
+
 ### [Get-MgGroupDriveListItemDocumentSetVersion](Get-MgGroupDriveListItemDocumentSetVersion.md)
-Version information for a document set version created by a user.
+Read the properties and relationships of a documentSetVersion object.
+
+### [Get-MgGroupDriveListItemDocumentSetVersionCount](Get-MgGroupDriveListItemDocumentSetVersionCount.md)
+Get the number of the resource
 
 ### [Get-MgGroupDriveListItemDriveItem](Get-MgGroupDriveListItemDriveItem.md)
 For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
@@ -481,7 +623,10 @@ The content stream, if the item represents a file.
 The values of the columns set on this list item.
 
 ### [Get-MgGroupDriveListItemVersion](Get-MgGroupDriveListItemVersion.md)
-The list of previous versions of the list item.
+Retrieve the metadata for a specific version of a ListItem.
+
+### [Get-MgGroupDriveListItemVersionCount](Get-MgGroupDriveListItemVersionCount.md)
+Get the number of the resource
 
 ### [Get-MgGroupDriveListItemVersionField](Get-MgGroupDriveListItemVersionField.md)
 A collection of the fields and values for this version of the list item.
@@ -489,8 +634,14 @@ A collection of the fields and values for this version of the list item.
 ### [Get-MgGroupDriveListOperation](Get-MgGroupDriveListOperation.md)
 The collection of long-running operations on the list.
 
+### [Get-MgGroupDriveListOperationCount](Get-MgGroupDriveListOperationCount.md)
+Get the number of the resource
+
 ### [Get-MgGroupDriveListSubscription](Get-MgGroupDriveListSubscription.md)
 The set of subscriptions on the list.
+
+### [Get-MgGroupDriveListSubscriptionCount](Get-MgGroupDriveListSubscriptionCount.md)
+Get the number of the resource
 
 ### [Get-MgGroupDriveRoot](Get-MgGroupDriveRoot.md)
 Retrieve the metadata for a driveItem in a drive by file system path or ID.\n`item-id` is the ID of a driveItem.
@@ -504,6 +655,9 @@ Get itemActivityStats from groups
 
 ### [Get-MgGroupDriveRootAnalyticItemActivityStatActivity](Get-MgGroupDriveRootAnalyticItemActivityStatActivity.md)
 Exposes the itemActivities represented in this itemActivityStat resource.
+
+### [Get-MgGroupDriveRootAnalyticItemActivityStatCount](Get-MgGroupDriveRootAnalyticItemActivityStatCount.md)
+Get the number of the resource
 
 ### [Get-MgGroupDriveRootAnalyticLastSevenDay](Get-MgGroupDriveRootAnalyticLastSevenDay.md)
 Get lastSevenDays from groups
@@ -520,6 +674,9 @@ Nullable.
 ### [Get-MgGroupDriveRootChildContent](Get-MgGroupDriveRootChildContent.md)
 The content stream, if the item represents a file.
 
+### [Get-MgGroupDriveRootChildCount](Get-MgGroupDriveRootChildCount.md)
+Get the number of the resource
+
 ### [Get-MgGroupDriveRootContent](Get-MgGroupDriveRootContent.md)
 The content stream, if the item represents a file.
 
@@ -532,7 +689,10 @@ Nullable.
 Analytics about the view activities that took place on this item.
 
 ### [Get-MgGroupDriveRootListItemDocumentSetVersion](Get-MgGroupDriveRootListItemDocumentSetVersion.md)
-Version information for a document set version created by a user.
+Read the properties and relationships of a documentSetVersion object.
+
+### [Get-MgGroupDriveRootListItemDocumentSetVersionCount](Get-MgGroupDriveRootListItemDocumentSetVersionCount.md)
+Get the number of the resource
 
 ### [Get-MgGroupDriveRootListItemDriveItem](Get-MgGroupDriveRootListItemDriveItem.md)
 For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
@@ -544,19 +704,28 @@ The content stream, if the item represents a file.
 The values of the columns set on this list item.
 
 ### [Get-MgGroupDriveRootListItemVersion](Get-MgGroupDriveRootListItemVersion.md)
-The list of previous versions of the list item.
+Retrieve the metadata for a specific version of a ListItem.
+
+### [Get-MgGroupDriveRootListItemVersionCount](Get-MgGroupDriveRootListItemVersionCount.md)
+Get the number of the resource
 
 ### [Get-MgGroupDriveRootListItemVersionField](Get-MgGroupDriveRootListItemVersionField.md)
 A collection of the fields and values for this version of the list item.
 
 ### [Get-MgGroupDriveRootPermission](Get-MgGroupDriveRootPermission.md)
-The set of permissions for the item.
-Read-only.
-Nullable.
+Return the effective sharing permission for a particular permission resource.
+Effective permissions of an item can come from two sources: permissions set directly on the item itself or permissions that are inherited from the item's ancestors.
+Callers can differentiate if the permission is inherited or not by checking the `inheritedFrom` property.\nThis property is an ItemReference resource referencing the ancestor that the permission is inherited from.
+
+### [Get-MgGroupDriveRootPermissionCount](Get-MgGroupDriveRootPermissionCount.md)
+Get the number of the resource
 
 ### [Get-MgGroupDriveRootSubscription](Get-MgGroupDriveRootSubscription.md)
 The set of subscriptions on the item.
 Only supported on the root of a drive.
+
+### [Get-MgGroupDriveRootSubscriptionCount](Get-MgGroupDriveRootSubscriptionCount.md)
+Get the number of the resource
 
 ### [Get-MgGroupDriveRootThumbnail](Get-MgGroupDriveRootThumbnail.md)
 Collection containing [ThumbnailSet][] objects associated with the item.
@@ -564,22 +733,33 @@ For more info, see [getting thumbnails][].
 Read-only.
 Nullable.
 
+### [Get-MgGroupDriveRootThumbnailCount](Get-MgGroupDriveRootThumbnailCount.md)
+Get the number of the resource
+
 ### [Get-MgGroupDriveRootVersion](Get-MgGroupDriveRootVersion.md)
-The list of previous versions of the item.
-For more info, see [getting previous versions][].
-Read-only.
-Nullable.
+Retrieve the metadata for a specific version of a DriveItem.
 
 ### [Get-MgGroupDriveRootVersionContent](Get-MgGroupDriveRootVersionContent.md)
 The content stream for this version of the item.
 
+### [Get-MgGroupDriveRootVersionCount](Get-MgGroupDriveRootVersionCount.md)
+Get the number of the resource
+
 ### [Get-MgGroupDriveSpecial](Get-MgGroupDriveSpecial.md)
-Collection of common folders available in OneDrive.
-Read-only.
-Nullable.
+Use the special collection to access a special folder by name.
+Special folders provide simple aliases to access well-known folders in OneDrive without the need to look up the folder by path (which would require localization), or reference the folder with an ID.
+If a special folder is renamed or moved to another location within the drive, this syntax will continue to find that folder.
+Special folders are automatically created the first time an application attempts to write to one, if it doesn't already exist.
+If a user deletes one, it is recreated when written to again.
 
 ### [Get-MgGroupDriveSpecialContent](Get-MgGroupDriveSpecialContent.md)
 The content stream, if the item represents a file.
+
+### [Get-MgGroupDriveSpecialCount](Get-MgGroupDriveSpecialCount.md)
+Get the number of the resource
+
+### [Get-MgShareCount](Get-MgShareCount.md)
+Get the number of the resource
 
 ### [Get-MgShareDriveItem](Get-MgShareDriveItem.md)
 Access a shared DriveItem or a collection of shared items by using a **shareId** or sharing URL.
@@ -595,11 +775,17 @@ This collection cannot be enumerated.
 ### [Get-MgShareItemContent](Get-MgShareItemContent.md)
 The content stream, if the item represents a file.
 
+### [Get-MgShareItemCount](Get-MgShareItemCount.md)
+Get the number of the resource
+
 ### [Get-MgShareList](Get-MgShareList.md)
 Used to access the underlying list
 
 ### [Get-MgShareListColumn](Get-MgShareListColumn.md)
 The collection of field definitions for this list.
+
+### [Get-MgShareListColumnCount](Get-MgShareListColumnCount.md)
+Get the number of the resource
 
 ### [Get-MgShareListColumnSourceColumn](Get-MgShareListColumnSourceColumn.md)
 The source column for the content type column.
@@ -613,14 +799,26 @@ Parent contentType from which this content type is derived.
 ### [Get-MgShareListContentTypeBaseType](Get-MgShareListContentTypeBaseType.md)
 The collection of content types that are ancestors of this content type.
 
+### [Get-MgShareListContentTypeBaseTypeCount](Get-MgShareListContentTypeBaseTypeCount.md)
+Get the number of the resource
+
 ### [Get-MgShareListContentTypeColumn](Get-MgShareListContentTypeColumn.md)
-The collection of column definitions for this contentType.
+Retrieve the metadata for a [site][], a [list][], or a [contentType][] [column][columnDefinition].
+
+### [Get-MgShareListContentTypeColumnCount](Get-MgShareListContentTypeColumnCount.md)
+Get the number of the resource
 
 ### [Get-MgShareListContentTypeColumnLink](Get-MgShareListContentTypeColumnLink.md)
 The collection of columns that are required by this content type.
 
+### [Get-MgShareListContentTypeColumnLinkCount](Get-MgShareListContentTypeColumnLinkCount.md)
+Get the number of the resource
+
 ### [Get-MgShareListContentTypeColumnPosition](Get-MgShareListContentTypeColumnPosition.md)
 Column order information in a content type.
+
+### [Get-MgShareListContentTypeColumnPositionCount](Get-MgShareListContentTypeColumnPositionCount.md)
+Get the number of the resource
 
 ### [Get-MgShareListContentTypeColumnSourceColumn](Get-MgShareListContentTypeColumnSourceColumn.md)
 The source column for the content type column.
@@ -628,12 +826,15 @@ The source column for the content type column.
 ### [Get-MgShareListContentTypeCompatibleHubContentType](Get-MgShareListContentTypeCompatibleHubContentType.md)
 Invoke function getCompatibleHubContentTypes
 
+### [Get-MgShareListContentTypeCount](Get-MgShareListContentTypeCount.md)
+Get the number of the resource
+
 ### [Get-MgShareListDrive](Get-MgShareListDrive.md)
 Only present on document libraries.
 Allows access to the list as a [drive][] resource with [driveItems][driveItem].
 
 ### [Get-MgShareListItem](Get-MgShareListItem.md)
-All items contained in the list.
+Used to access the underlying listItem
 
 ### [Get-MgShareListItemActivityByInterval](Get-MgShareListItemActivityByInterval.md)
 Invoke function getActivitiesByInterval
@@ -641,8 +842,14 @@ Invoke function getActivitiesByInterval
 ### [Get-MgShareListItemAnalytic](Get-MgShareListItemAnalytic.md)
 Analytics about the view activities that took place on this item.
 
+### [Get-MgShareListItemCount](Get-MgShareListItemCount.md)
+Get the number of the resource
+
 ### [Get-MgShareListItemDocumentSetVersion](Get-MgShareListItemDocumentSetVersion.md)
-Version information for a document set version created by a user.
+Read the properties and relationships of a documentSetVersion object.
+
+### [Get-MgShareListItemDocumentSetVersionCount](Get-MgShareListItemDocumentSetVersionCount.md)
+Get the number of the resource
 
 ### [Get-MgShareListItemDriveItem](Get-MgShareListItemDriveItem.md)
 For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
@@ -654,7 +861,10 @@ The content stream, if the item represents a file.
 The values of the columns set on this list item.
 
 ### [Get-MgShareListItemVersion](Get-MgShareListItemVersion.md)
-The list of previous versions of the list item.
+Retrieve the metadata for a specific version of a ListItem.
+
+### [Get-MgShareListItemVersionCount](Get-MgShareListItemVersionCount.md)
+Get the number of the resource
 
 ### [Get-MgShareListItemVersionField](Get-MgShareListItemVersionField.md)
 A collection of the fields and values for this version of the list item.
@@ -662,8 +872,14 @@ A collection of the fields and values for this version of the list item.
 ### [Get-MgShareListOperation](Get-MgShareListOperation.md)
 The collection of long-running operations on the list.
 
+### [Get-MgShareListOperationCount](Get-MgShareListOperationCount.md)
+Get the number of the resource
+
 ### [Get-MgShareListSubscription](Get-MgShareListSubscription.md)
 The set of subscriptions on the list.
+
+### [Get-MgShareListSubscriptionCount](Get-MgShareListSubscriptionCount.md)
+Get the number of the resource
 
 ### [Get-MgSharePermission](Get-MgSharePermission.md)
 Used to access the permission representing the underlying sharing link
@@ -691,11 +907,16 @@ A collection of drives available for this user.
 Read-only.
 
 ### [Get-MgUserDriveBundle](Get-MgUserDriveBundle.md)
-Collection of [bundles][bundle] (albums and multi-select-shared sets of items).
-Only in personal OneDrive.
+Retrieve the metadata for a [bundle][] based on the unique ID of the bundle.
 
 ### [Get-MgUserDriveBundleContent](Get-MgUserDriveBundleContent.md)
 The content stream, if the item represents a file.
+
+### [Get-MgUserDriveBundleCount](Get-MgUserDriveBundleCount.md)
+Get the number of the resource
+
+### [Get-MgUserDriveCount](Get-MgUserDriveCount.md)
+Get the number of the resource
 
 ### [Get-MgUserDriveFollowing](Get-MgUserDriveFollowing.md)
 The list of items the user is following.
@@ -704,10 +925,11 @@ Only in OneDrive for Business.
 ### [Get-MgUserDriveFollowingContent](Get-MgUserDriveFollowingContent.md)
 The content stream, if the item represents a file.
 
+### [Get-MgUserDriveFollowingCount](Get-MgUserDriveFollowingCount.md)
+Get the number of the resource
+
 ### [Get-MgUserDriveItem](Get-MgUserDriveItem.md)
-All items contained in the drive.
-Read-only.
-Nullable.
+Retrieve the metadata for a [bundle][] based on the unique ID of the bundle.
 
 ### [Get-MgUserDriveItemAnalytic](Get-MgUserDriveItemAnalytic.md)
 Analytics about the view activities that took place on this item.
@@ -717,6 +939,9 @@ Get itemActivityStats from users
 
 ### [Get-MgUserDriveItemAnalyticItemActivityStatActivity](Get-MgUserDriveItemAnalyticItemActivityStatActivity.md)
 Exposes the itemActivities represented in this itemActivityStat resource.
+
+### [Get-MgUserDriveItemAnalyticItemActivityStatCount](Get-MgUserDriveItemAnalyticItemActivityStatCount.md)
+Get the number of the resource
 
 ### [Get-MgUserDriveItemAnalyticLastSevenDay](Get-MgUserDriveItemAnalyticLastSevenDay.md)
 Get lastSevenDays from users
@@ -733,8 +958,14 @@ Nullable.
 ### [Get-MgUserDriveItemChildContent](Get-MgUserDriveItemChildContent.md)
 The content stream, if the item represents a file.
 
+### [Get-MgUserDriveItemChildCount](Get-MgUserDriveItemChildCount.md)
+Get the number of the resource
+
 ### [Get-MgUserDriveItemContent](Get-MgUserDriveItemContent.md)
 The content stream, if the item represents a file.
+
+### [Get-MgUserDriveItemCount](Get-MgUserDriveItemCount.md)
+Get the number of the resource
 
 ### [Get-MgUserDriveItemListItem](Get-MgUserDriveItemListItem.md)
 For drives in SharePoint, the associated document library list item.
@@ -745,7 +976,10 @@ Nullable.
 Analytics about the view activities that took place on this item.
 
 ### [Get-MgUserDriveItemListItemDocumentSetVersion](Get-MgUserDriveItemListItemDocumentSetVersion.md)
-Version information for a document set version created by a user.
+Read the properties and relationships of a documentSetVersion object.
+
+### [Get-MgUserDriveItemListItemDocumentSetVersionCount](Get-MgUserDriveItemListItemDocumentSetVersionCount.md)
+Get the number of the resource
 
 ### [Get-MgUserDriveItemListItemDriveItem](Get-MgUserDriveItemListItemDriveItem.md)
 For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
@@ -757,19 +991,28 @@ The content stream, if the item represents a file.
 The values of the columns set on this list item.
 
 ### [Get-MgUserDriveItemListItemVersion](Get-MgUserDriveItemListItemVersion.md)
-The list of previous versions of the list item.
+Retrieve the metadata for a specific version of a ListItem.
+
+### [Get-MgUserDriveItemListItemVersionCount](Get-MgUserDriveItemListItemVersionCount.md)
+Get the number of the resource
 
 ### [Get-MgUserDriveItemListItemVersionField](Get-MgUserDriveItemListItemVersionField.md)
 A collection of the fields and values for this version of the list item.
 
 ### [Get-MgUserDriveItemPermission](Get-MgUserDriveItemPermission.md)
-The set of permissions for the item.
-Read-only.
-Nullable.
+Return the effective sharing permission for a particular permission resource.
+Effective permissions of an item can come from two sources: permissions set directly on the item itself or permissions that are inherited from the item's ancestors.
+Callers can differentiate if the permission is inherited or not by checking the `inheritedFrom` property.\nThis property is an ItemReference resource referencing the ancestor that the permission is inherited from.
+
+### [Get-MgUserDriveItemPermissionCount](Get-MgUserDriveItemPermissionCount.md)
+Get the number of the resource
 
 ### [Get-MgUserDriveItemSubscription](Get-MgUserDriveItemSubscription.md)
 The set of subscriptions on the item.
 Only supported on the root of a drive.
+
+### [Get-MgUserDriveItemSubscriptionCount](Get-MgUserDriveItemSubscriptionCount.md)
+Get the number of the resource
 
 ### [Get-MgUserDriveItemThumbnail](Get-MgUserDriveItemThumbnail.md)
 Collection containing [ThumbnailSet][] objects associated with the item.
@@ -777,14 +1020,17 @@ For more info, see [getting thumbnails][].
 Read-only.
 Nullable.
 
+### [Get-MgUserDriveItemThumbnailCount](Get-MgUserDriveItemThumbnailCount.md)
+Get the number of the resource
+
 ### [Get-MgUserDriveItemVersion](Get-MgUserDriveItemVersion.md)
-The list of previous versions of the item.
-For more info, see [getting previous versions][].
-Read-only.
-Nullable.
+Retrieve the metadata for a specific version of a DriveItem.
 
 ### [Get-MgUserDriveItemVersionContent](Get-MgUserDriveItemVersionContent.md)
 The content stream for this version of the item.
+
+### [Get-MgUserDriveItemVersionCount](Get-MgUserDriveItemVersionCount.md)
+Get the number of the resource
 
 ### [Get-MgUserDriveList](Get-MgUserDriveList.md)
 For drives in SharePoint, the underlying document library list.
@@ -793,6 +1039,9 @@ Nullable.
 
 ### [Get-MgUserDriveListColumn](Get-MgUserDriveListColumn.md)
 The collection of field definitions for this list.
+
+### [Get-MgUserDriveListColumnCount](Get-MgUserDriveListColumnCount.md)
+Get the number of the resource
 
 ### [Get-MgUserDriveListColumnSourceColumn](Get-MgUserDriveListColumnSourceColumn.md)
 The source column for the content type column.
@@ -806,30 +1055,51 @@ Parent contentType from which this content type is derived.
 ### [Get-MgUserDriveListContentTypeBaseType](Get-MgUserDriveListContentTypeBaseType.md)
 The collection of content types that are ancestors of this content type.
 
+### [Get-MgUserDriveListContentTypeBaseTypeCount](Get-MgUserDriveListContentTypeBaseTypeCount.md)
+Get the number of the resource
+
 ### [Get-MgUserDriveListContentTypeColumn](Get-MgUserDriveListContentTypeColumn.md)
-The collection of column definitions for this contentType.
+Retrieve the metadata for a [site][], a [list][], or a [contentType][] [column][columnDefinition].
+
+### [Get-MgUserDriveListContentTypeColumnCount](Get-MgUserDriveListContentTypeColumnCount.md)
+Get the number of the resource
 
 ### [Get-MgUserDriveListContentTypeColumnLink](Get-MgUserDriveListContentTypeColumnLink.md)
 The collection of columns that are required by this content type.
 
+### [Get-MgUserDriveListContentTypeColumnLinkCount](Get-MgUserDriveListContentTypeColumnLinkCount.md)
+Get the number of the resource
+
 ### [Get-MgUserDriveListContentTypeColumnPosition](Get-MgUserDriveListContentTypeColumnPosition.md)
 Column order information in a content type.
 
+### [Get-MgUserDriveListContentTypeColumnPositionCount](Get-MgUserDriveListContentTypeColumnPositionCount.md)
+Get the number of the resource
+
 ### [Get-MgUserDriveListContentTypeColumnSourceColumn](Get-MgUserDriveListContentTypeColumnSourceColumn.md)
 The source column for the content type column.
+
+### [Get-MgUserDriveListContentTypeCount](Get-MgUserDriveListContentTypeCount.md)
+Get the number of the resource
 
 ### [Get-MgUserDriveListDrive](Get-MgUserDriveListDrive.md)
 Only present on document libraries.
 Allows access to the list as a [drive][] resource with [driveItems][driveItem].
 
 ### [Get-MgUserDriveListItem](Get-MgUserDriveListItem.md)
-All items contained in the list.
+Returns the metadata for an [item][] in a [list][].
 
 ### [Get-MgUserDriveListItemAnalytic](Get-MgUserDriveListItemAnalytic.md)
 Analytics about the view activities that took place on this item.
 
+### [Get-MgUserDriveListItemCount](Get-MgUserDriveListItemCount.md)
+Get the number of the resource
+
 ### [Get-MgUserDriveListItemDocumentSetVersion](Get-MgUserDriveListItemDocumentSetVersion.md)
-Version information for a document set version created by a user.
+Read the properties and relationships of a documentSetVersion object.
+
+### [Get-MgUserDriveListItemDocumentSetVersionCount](Get-MgUserDriveListItemDocumentSetVersionCount.md)
+Get the number of the resource
 
 ### [Get-MgUserDriveListItemDriveItem](Get-MgUserDriveListItemDriveItem.md)
 For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
@@ -841,7 +1111,10 @@ The content stream, if the item represents a file.
 The values of the columns set on this list item.
 
 ### [Get-MgUserDriveListItemVersion](Get-MgUserDriveListItemVersion.md)
-The list of previous versions of the list item.
+Retrieve the metadata for a specific version of a ListItem.
+
+### [Get-MgUserDriveListItemVersionCount](Get-MgUserDriveListItemVersionCount.md)
+Get the number of the resource
 
 ### [Get-MgUserDriveListItemVersionField](Get-MgUserDriveListItemVersionField.md)
 A collection of the fields and values for this version of the list item.
@@ -849,8 +1122,14 @@ A collection of the fields and values for this version of the list item.
 ### [Get-MgUserDriveListOperation](Get-MgUserDriveListOperation.md)
 The collection of long-running operations on the list.
 
+### [Get-MgUserDriveListOperationCount](Get-MgUserDriveListOperationCount.md)
+Get the number of the resource
+
 ### [Get-MgUserDriveListSubscription](Get-MgUserDriveListSubscription.md)
 The set of subscriptions on the list.
+
+### [Get-MgUserDriveListSubscriptionCount](Get-MgUserDriveListSubscriptionCount.md)
+Get the number of the resource
 
 ### [Get-MgUserDriveRoot](Get-MgUserDriveRoot.md)
 Retrieve the metadata for a driveItem in a drive by file system path or ID.\n`item-id` is the ID of a driveItem.
@@ -864,6 +1143,9 @@ Get itemActivityStats from users
 
 ### [Get-MgUserDriveRootAnalyticItemActivityStatActivity](Get-MgUserDriveRootAnalyticItemActivityStatActivity.md)
 Exposes the itemActivities represented in this itemActivityStat resource.
+
+### [Get-MgUserDriveRootAnalyticItemActivityStatCount](Get-MgUserDriveRootAnalyticItemActivityStatCount.md)
+Get the number of the resource
 
 ### [Get-MgUserDriveRootAnalyticLastSevenDay](Get-MgUserDriveRootAnalyticLastSevenDay.md)
 Get lastSevenDays from users
@@ -880,6 +1162,9 @@ Nullable.
 ### [Get-MgUserDriveRootChildContent](Get-MgUserDriveRootChildContent.md)
 The content stream, if the item represents a file.
 
+### [Get-MgUserDriveRootChildCount](Get-MgUserDriveRootChildCount.md)
+Get the number of the resource
+
 ### [Get-MgUserDriveRootContent](Get-MgUserDriveRootContent.md)
 The content stream, if the item represents a file.
 
@@ -892,7 +1177,10 @@ Nullable.
 Analytics about the view activities that took place on this item.
 
 ### [Get-MgUserDriveRootListItemDocumentSetVersion](Get-MgUserDriveRootListItemDocumentSetVersion.md)
-Version information for a document set version created by a user.
+Read the properties and relationships of a documentSetVersion object.
+
+### [Get-MgUserDriveRootListItemDocumentSetVersionCount](Get-MgUserDriveRootListItemDocumentSetVersionCount.md)
+Get the number of the resource
 
 ### [Get-MgUserDriveRootListItemDriveItem](Get-MgUserDriveRootListItemDriveItem.md)
 For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
@@ -904,19 +1192,28 @@ The content stream, if the item represents a file.
 The values of the columns set on this list item.
 
 ### [Get-MgUserDriveRootListItemVersion](Get-MgUserDriveRootListItemVersion.md)
-The list of previous versions of the list item.
+Retrieve the metadata for a specific version of a ListItem.
+
+### [Get-MgUserDriveRootListItemVersionCount](Get-MgUserDriveRootListItemVersionCount.md)
+Get the number of the resource
 
 ### [Get-MgUserDriveRootListItemVersionField](Get-MgUserDriveRootListItemVersionField.md)
 A collection of the fields and values for this version of the list item.
 
 ### [Get-MgUserDriveRootPermission](Get-MgUserDriveRootPermission.md)
-The set of permissions for the item.
-Read-only.
-Nullable.
+Return the effective sharing permission for a particular permission resource.
+Effective permissions of an item can come from two sources: permissions set directly on the item itself or permissions that are inherited from the item's ancestors.
+Callers can differentiate if the permission is inherited or not by checking the `inheritedFrom` property.\nThis property is an ItemReference resource referencing the ancestor that the permission is inherited from.
+
+### [Get-MgUserDriveRootPermissionCount](Get-MgUserDriveRootPermissionCount.md)
+Get the number of the resource
 
 ### [Get-MgUserDriveRootSubscription](Get-MgUserDriveRootSubscription.md)
 The set of subscriptions on the item.
 Only supported on the root of a drive.
+
+### [Get-MgUserDriveRootSubscriptionCount](Get-MgUserDriveRootSubscriptionCount.md)
+Get the number of the resource
 
 ### [Get-MgUserDriveRootThumbnail](Get-MgUserDriveRootThumbnail.md)
 Collection containing [ThumbnailSet][] objects associated with the item.
@@ -924,22 +1221,30 @@ For more info, see [getting thumbnails][].
 Read-only.
 Nullable.
 
+### [Get-MgUserDriveRootThumbnailCount](Get-MgUserDriveRootThumbnailCount.md)
+Get the number of the resource
+
 ### [Get-MgUserDriveRootVersion](Get-MgUserDriveRootVersion.md)
-The list of previous versions of the item.
-For more info, see [getting previous versions][].
-Read-only.
-Nullable.
+Retrieve the metadata for a specific version of a DriveItem.
 
 ### [Get-MgUserDriveRootVersionContent](Get-MgUserDriveRootVersionContent.md)
 The content stream for this version of the item.
 
+### [Get-MgUserDriveRootVersionCount](Get-MgUserDriveRootVersionCount.md)
+Get the number of the resource
+
 ### [Get-MgUserDriveSpecial](Get-MgUserDriveSpecial.md)
-Collection of common folders available in OneDrive.
-Read-only.
-Nullable.
+Use the special collection to access a special folder by name.
+Special folders provide simple aliases to access well-known folders in OneDrive without the need to look up the folder by path (which would require localization), or reference the folder with an ID.
+If a special folder is renamed or moved to another location within the drive, this syntax will continue to find that folder.
+Special folders are automatically created the first time an application attempts to write to one, if it doesn't already exist.
+If a user deletes one, it is recreated when written to again.
 
 ### [Get-MgUserDriveSpecialContent](Get-MgUserDriveSpecialContent.md)
 The content stream, if the item represents a file.
+
+### [Get-MgUserDriveSpecialCount](Get-MgUserDriveSpecialCount.md)
+Get the number of the resource
 
 ### [Grant-MgDriveItemPermission](Grant-MgDriveItemPermission.md)
 Grant users access to a link represented by a [permission][].
@@ -984,16 +1289,16 @@ Invoke action preview
 Invoke action preview
 
 ### [Invoke-MgReauthorizeDriveItemSubscription](Invoke-MgReauthorizeDriveItemSubscription.md)
-Invoke action reauthorize
+Reauthorize a subscription when you receive a **reauthorizationRequired** challenge.
 
 ### [Invoke-MgReauthorizeDriveListSubscription](Invoke-MgReauthorizeDriveListSubscription.md)
-Invoke action reauthorize
+Reauthorize a subscription when you receive a **reauthorizationRequired** challenge.
 
 ### [Invoke-MgReauthorizeDriveRootSubscription](Invoke-MgReauthorizeDriveRootSubscription.md)
-Invoke action reauthorize
+Reauthorize a subscription when you receive a **reauthorizationRequired** challenge.
 
 ### [Invoke-MgReauthorizeShareListSubscription](Invoke-MgReauthorizeShareListSubscription.md)
-Invoke action reauthorize
+Reauthorize a subscription when you receive a **reauthorizationRequired** challenge.
 
 ### [Invoke-MgRecentDrive](Invoke-MgRecentDrive.md)
 Invoke function recent
@@ -1112,8 +1417,8 @@ To upload a file using an upload session, there are two steps:
 ### [New-MgDriveRootVersion](New-MgDriveRootVersion.md)
 Create new navigation property to versions for drives
 
-### [New-MgGroupDrive](New-MgGroupDrive.md)
-Create new navigation property to drives for groups
+### [New-MgDriveRootVersion](New-MgDriveRootVersion.md)
+Create new navigation property to versions for drives
 
 ### [New-MgGroupDriveBundle](New-MgGroupDriveBundle.md)
 Create new navigation property to bundles for groups
@@ -1226,8 +1531,8 @@ Create new navigation property to subscriptions for shares
 ### [New-MgShareSharedDriveItemSharedDriveItem](New-MgShareSharedDriveItemSharedDriveItem.md)
 Add new entity to shares
 
-### [New-MgUserDrive](New-MgUserDrive.md)
-Create new navigation property to drives for users
+### [New-MgShareSharedDriveItemSharedDriveItem](New-MgShareSharedDriveItemSharedDriveItem.md)
+Add new entity to shares
 
 ### [New-MgUserDriveBundle](New-MgUserDriveBundle.md)
 Create new navigation property to bundles for users
@@ -1316,11 +1621,11 @@ Publishes a [contentType][] present in the content type hub site.
 ### [Publish-MgShareListContentType](Publish-MgShareListContentType.md)
 Publishes a [contentType][] present in the content type hub site.
 
-### [Remove-MgDrive](Remove-MgDrive.md)
-Delete entity from drives
+### [Publish-MgShareListContentType](Publish-MgShareListContentType.md)
+Publishes a [contentType][] present in the content type hub site.
 
 ### [Remove-MgDriveItem](Remove-MgDriveItem.md)
-Delete navigation property items for drives
+Delete a DriveItem by using its ID or path.\nNote that deleting items using this method will move the items to the recycle bin instead of permanently deleting the item.
 
 ### [Remove-MgDriveItemAnalytic](Remove-MgDriveItemAnalytic.md)
 Delete navigation property analytics for drives
@@ -1332,7 +1637,7 @@ Delete navigation property itemActivityStats for drives
 Delete navigation property listItem for drives
 
 ### [Remove-MgDriveItemListItemDocumentSetVersion](Remove-MgDriveItemListItemDocumentSetVersion.md)
-Delete navigation property documentSetVersions for drives
+Delete a version of a document set in a list.
 
 ### [Remove-MgDriveItemListItemField](Remove-MgDriveItemListItemField.md)
 Delete navigation property fields for drives
@@ -1344,7 +1649,8 @@ Delete navigation property versions for drives
 Delete navigation property fields for drives
 
 ### [Remove-MgDriveItemPermission](Remove-MgDriveItemPermission.md)
-Delete navigation property permissions for drives
+Remove access to a DriveItem.
+Only sharing permissions that are **not** inherited can be deleted.\nThe **inheritedFrom** property must be `null`.
 
 ### [Remove-MgDriveItemSubscription](Remove-MgDriveItemSubscription.md)
 Delete navigation property subscriptions for drives
@@ -1365,16 +1671,16 @@ Delete navigation property columns for drives
 Delete navigation property contentTypes for drives
 
 ### [Remove-MgDriveListContentTypeColumn](Remove-MgDriveListContentTypeColumn.md)
-Delete navigation property columns for drives
+Remove a [column][columndefinition] from a [site][], a [list][], or a [content type][contentType].
 
 ### [Remove-MgDriveListContentTypeColumnLink](Remove-MgDriveListContentTypeColumnLink.md)
 Delete navigation property columnLinks for drives
 
 ### [Remove-MgDriveListItem](Remove-MgDriveListItem.md)
-Delete navigation property items for drives
+Removes an item from a [list][].
 
 ### [Remove-MgDriveListItemDocumentSetVersion](Remove-MgDriveListItemDocumentSetVersion.md)
-Delete navigation property documentSetVersions for drives
+Delete a version of a document set in a list.
 
 ### [Remove-MgDriveListItemField](Remove-MgDriveListItemField.md)
 Delete navigation property fields for drives
@@ -1404,7 +1710,7 @@ Delete navigation property itemActivityStats for drives
 Delete navigation property listItem for drives
 
 ### [Remove-MgDriveRootListItemDocumentSetVersion](Remove-MgDriveRootListItemDocumentSetVersion.md)
-Delete navigation property documentSetVersions for drives
+Delete a version of a document set in a list.
 
 ### [Remove-MgDriveRootListItemField](Remove-MgDriveRootListItemField.md)
 Delete navigation property fields for drives
@@ -1416,7 +1722,8 @@ Delete navigation property versions for drives
 Delete navigation property fields for drives
 
 ### [Remove-MgDriveRootPermission](Remove-MgDriveRootPermission.md)
-Delete navigation property permissions for drives
+Remove access to a DriveItem.
+Only sharing permissions that are **not** inherited can be deleted.\nThe **inheritedFrom** property must be `null`.
 
 ### [Remove-MgDriveRootSubscription](Remove-MgDriveRootSubscription.md)
 Delete navigation property subscriptions for drives
@@ -1431,7 +1738,7 @@ Delete navigation property versions for drives
 Delete navigation property drives for groups
 
 ### [Remove-MgGroupDriveItem](Remove-MgGroupDriveItem.md)
-Delete navigation property items for groups
+Delete a DriveItem by using its ID or path.\nNote that deleting items using this method will move the items to the recycle bin instead of permanently deleting the item.
 
 ### [Remove-MgGroupDriveItemAnalytic](Remove-MgGroupDriveItemAnalytic.md)
 Delete navigation property analytics for groups
@@ -1443,7 +1750,7 @@ Delete navigation property itemActivityStats for groups
 Delete navigation property listItem for groups
 
 ### [Remove-MgGroupDriveItemListItemDocumentSetVersion](Remove-MgGroupDriveItemListItemDocumentSetVersion.md)
-Delete navigation property documentSetVersions for groups
+Delete a version of a document set in a list.
 
 ### [Remove-MgGroupDriveItemListItemField](Remove-MgGroupDriveItemListItemField.md)
 Delete navigation property fields for groups
@@ -1455,7 +1762,8 @@ Delete navigation property versions for groups
 Delete navigation property fields for groups
 
 ### [Remove-MgGroupDriveItemPermission](Remove-MgGroupDriveItemPermission.md)
-Delete navigation property permissions for groups
+Remove access to a DriveItem.
+Only sharing permissions that are **not** inherited can be deleted.\nThe **inheritedFrom** property must be `null`.
 
 ### [Remove-MgGroupDriveItemSubscription](Remove-MgGroupDriveItemSubscription.md)
 Delete navigation property subscriptions for groups
@@ -1476,16 +1784,16 @@ Delete navigation property columns for groups
 Delete navigation property contentTypes for groups
 
 ### [Remove-MgGroupDriveListContentTypeColumn](Remove-MgGroupDriveListContentTypeColumn.md)
-Delete navigation property columns for groups
+Remove a [column][columndefinition] from a [site][], a [list][], or a [content type][contentType].
 
 ### [Remove-MgGroupDriveListContentTypeColumnLink](Remove-MgGroupDriveListContentTypeColumnLink.md)
 Delete navigation property columnLinks for groups
 
 ### [Remove-MgGroupDriveListItem](Remove-MgGroupDriveListItem.md)
-Delete navigation property items for groups
+Removes an item from a [list][].
 
 ### [Remove-MgGroupDriveListItemDocumentSetVersion](Remove-MgGroupDriveListItemDocumentSetVersion.md)
-Delete navigation property documentSetVersions for groups
+Delete a version of a document set in a list.
 
 ### [Remove-MgGroupDriveListItemField](Remove-MgGroupDriveListItemField.md)
 Delete navigation property fields for groups
@@ -1515,7 +1823,7 @@ Delete navigation property itemActivityStats for groups
 Delete navigation property listItem for groups
 
 ### [Remove-MgGroupDriveRootListItemDocumentSetVersion](Remove-MgGroupDriveRootListItemDocumentSetVersion.md)
-Delete navigation property documentSetVersions for groups
+Delete a version of a document set in a list.
 
 ### [Remove-MgGroupDriveRootListItemField](Remove-MgGroupDriveRootListItemField.md)
 Delete navigation property fields for groups
@@ -1527,7 +1835,8 @@ Delete navigation property versions for groups
 Delete navigation property fields for groups
 
 ### [Remove-MgGroupDriveRootPermission](Remove-MgGroupDriveRootPermission.md)
-Delete navigation property permissions for groups
+Remove access to a DriveItem.
+Only sharing permissions that are **not** inherited can be deleted.\nThe **inheritedFrom** property must be `null`.
 
 ### [Remove-MgGroupDriveRootSubscription](Remove-MgGroupDriveRootSubscription.md)
 Delete navigation property subscriptions for groups
@@ -1548,16 +1857,16 @@ Delete navigation property columns for shares
 Delete navigation property contentTypes for shares
 
 ### [Remove-MgShareListContentTypeColumn](Remove-MgShareListContentTypeColumn.md)
-Delete navigation property columns for shares
+Remove a [column][columndefinition] from a [site][], a [list][], or a [content type][contentType].
 
 ### [Remove-MgShareListContentTypeColumnLink](Remove-MgShareListContentTypeColumnLink.md)
 Delete navigation property columnLinks for shares
 
 ### [Remove-MgShareListItem](Remove-MgShareListItem.md)
-Delete navigation property items for shares
+Delete navigation property listItem for shares
 
 ### [Remove-MgShareListItemDocumentSetVersion](Remove-MgShareListItemDocumentSetVersion.md)
-Delete navigation property documentSetVersions for shares
+Delete a version of a document set in a list.
 
 ### [Remove-MgShareListItemField](Remove-MgShareListItemField.md)
 Delete navigation property fields for shares
@@ -1584,7 +1893,7 @@ Delete entity from shares
 Delete navigation property drives for users
 
 ### [Remove-MgUserDriveItem](Remove-MgUserDriveItem.md)
-Delete navigation property items for users
+Delete a DriveItem by using its ID or path.\nNote that deleting items using this method will move the items to the recycle bin instead of permanently deleting the item.
 
 ### [Remove-MgUserDriveItemAnalytic](Remove-MgUserDriveItemAnalytic.md)
 Delete navigation property analytics for users
@@ -1596,7 +1905,7 @@ Delete navigation property itemActivityStats for users
 Delete navigation property listItem for users
 
 ### [Remove-MgUserDriveItemListItemDocumentSetVersion](Remove-MgUserDriveItemListItemDocumentSetVersion.md)
-Delete navigation property documentSetVersions for users
+Delete a version of a document set in a list.
 
 ### [Remove-MgUserDriveItemListItemField](Remove-MgUserDriveItemListItemField.md)
 Delete navigation property fields for users
@@ -1608,7 +1917,8 @@ Delete navigation property versions for users
 Delete navigation property fields for users
 
 ### [Remove-MgUserDriveItemPermission](Remove-MgUserDriveItemPermission.md)
-Delete navigation property permissions for users
+Remove access to a DriveItem.
+Only sharing permissions that are **not** inherited can be deleted.\nThe **inheritedFrom** property must be `null`.
 
 ### [Remove-MgUserDriveItemSubscription](Remove-MgUserDriveItemSubscription.md)
 Delete navigation property subscriptions for users
@@ -1629,16 +1939,16 @@ Delete navigation property columns for users
 Delete navigation property contentTypes for users
 
 ### [Remove-MgUserDriveListContentTypeColumn](Remove-MgUserDriveListContentTypeColumn.md)
-Delete navigation property columns for users
+Remove a [column][columndefinition] from a [site][], a [list][], or a [content type][contentType].
 
 ### [Remove-MgUserDriveListContentTypeColumnLink](Remove-MgUserDriveListContentTypeColumnLink.md)
 Delete navigation property columnLinks for users
 
 ### [Remove-MgUserDriveListItem](Remove-MgUserDriveListItem.md)
-Delete navigation property items for users
+Removes an item from a [list][].
 
 ### [Remove-MgUserDriveListItemDocumentSetVersion](Remove-MgUserDriveListItemDocumentSetVersion.md)
-Delete navigation property documentSetVersions for users
+Delete a version of a document set in a list.
 
 ### [Remove-MgUserDriveListItemField](Remove-MgUserDriveListItemField.md)
 Delete navigation property fields for users
@@ -1668,7 +1978,7 @@ Delete navigation property itemActivityStats for users
 Delete navigation property listItem for users
 
 ### [Remove-MgUserDriveRootListItemDocumentSetVersion](Remove-MgUserDriveRootListItemDocumentSetVersion.md)
-Delete navigation property documentSetVersions for users
+Delete a version of a document set in a list.
 
 ### [Remove-MgUserDriveRootListItemField](Remove-MgUserDriveRootListItemField.md)
 Delete navigation property fields for users
@@ -1680,7 +1990,8 @@ Delete navigation property versions for users
 Delete navigation property fields for users
 
 ### [Remove-MgUserDriveRootPermission](Remove-MgUserDriveRootPermission.md)
-Delete navigation property permissions for users
+Remove access to a DriveItem.
+Only sharing permissions that are **not** inherited can be deleted.\nThe **inheritedFrom** property must be `null`.
 
 ### [Remove-MgUserDriveRootSubscription](Remove-MgUserDriveRootSubscription.md)
 Delete navigation property subscriptions for users
@@ -1882,11 +2193,13 @@ Unpublish a [contentType][] from a content type hub site.
 ### [Unpublish-MgShareListContentType](Unpublish-MgShareListContentType.md)
 Unpublish a [contentType][] from a content type hub site.
 
-### [Update-MgDrive](Update-MgDrive.md)
-Update entity in drives
+### [Unpublish-MgShareListContentType](Unpublish-MgShareListContentType.md)
+Unpublish a [contentType][] from a content type hub site.
 
 ### [Update-MgDriveItem](Update-MgDriveItem.md)
-Update the navigation property items in drives
+To move a DriveItem to a new parent item, your app requests to update the **parentReference** of the DriveItem to move.
+This is a special case of the Update method.\nYour app can combine moving an item to a new container and updating other properties of the item into a single request.
+Items cannot be moved between Drives using this request.
 
 ### [Update-MgDriveItemAnalytic](Update-MgDriveItemAnalytic.md)
 Update the navigation property analytics in drives
@@ -1910,7 +2223,8 @@ Update the navigation property versions in drives
 Update the navigation property fields in drives
 
 ### [Update-MgDriveItemPermission](Update-MgDriveItemPermission.md)
-Update the navigation property permissions in drives
+Update the properties of a sharing permission by patching the permission resource.
+Only the **roles** property can be modified this way.
 
 ### [Update-MgDriveItemSubscription](Update-MgDriveItemSubscription.md)
 Update the navigation property subscriptions in drives
@@ -1982,7 +2296,8 @@ Update the navigation property versions in drives
 Update the navigation property fields in drives
 
 ### [Update-MgDriveRootPermission](Update-MgDriveRootPermission.md)
-Update the navigation property permissions in drives
+Update the properties of a sharing permission by patching the permission resource.
+Only the **roles** property can be modified this way.
 
 ### [Update-MgDriveRootSubscription](Update-MgDriveRootSubscription.md)
 Update the navigation property subscriptions in drives
@@ -1997,7 +2312,9 @@ Update the navigation property versions in drives
 Update the navigation property drives in groups
 
 ### [Update-MgGroupDriveItem](Update-MgGroupDriveItem.md)
-Update the navigation property items in groups
+To move a DriveItem to a new parent item, your app requests to update the **parentReference** of the DriveItem to move.
+This is a special case of the Update method.\nYour app can combine moving an item to a new container and updating other properties of the item into a single request.
+Items cannot be moved between Drives using this request.
 
 ### [Update-MgGroupDriveItemAnalytic](Update-MgGroupDriveItemAnalytic.md)
 Update the navigation property analytics in groups
@@ -2021,7 +2338,8 @@ Update the navigation property versions in groups
 Update the navigation property fields in groups
 
 ### [Update-MgGroupDriveItemPermission](Update-MgGroupDriveItemPermission.md)
-Update the navigation property permissions in groups
+Update the properties of a sharing permission by patching the permission resource.
+Only the **roles** property can be modified this way.
 
 ### [Update-MgGroupDriveItemSubscription](Update-MgGroupDriveItemSubscription.md)
 Update the navigation property subscriptions in groups
@@ -2093,7 +2411,8 @@ Update the navigation property versions in groups
 Update the navigation property fields in groups
 
 ### [Update-MgGroupDriveRootPermission](Update-MgGroupDriveRootPermission.md)
-Update the navigation property permissions in groups
+Update the properties of a sharing permission by patching the permission resource.
+Only the **roles** property can be modified this way.
 
 ### [Update-MgGroupDriveRootSubscription](Update-MgGroupDriveRootSubscription.md)
 Update the navigation property subscriptions in groups
@@ -2120,7 +2439,7 @@ Update the navigation property columns in shares
 Update the navigation property columnLinks in shares
 
 ### [Update-MgShareListItem](Update-MgShareListItem.md)
-Update the navigation property items in shares
+Update the navigation property listItem in shares
 
 ### [Update-MgShareListItemDocumentSetVersion](Update-MgShareListItemDocumentSetVersion.md)
 Update the navigation property documentSetVersions in shares
@@ -2150,7 +2469,9 @@ Update entity in shares
 Update the navigation property drives in users
 
 ### [Update-MgUserDriveItem](Update-MgUserDriveItem.md)
-Update the navigation property items in users
+To move a DriveItem to a new parent item, your app requests to update the **parentReference** of the DriveItem to move.
+This is a special case of the Update method.\nYour app can combine moving an item to a new container and updating other properties of the item into a single request.
+Items cannot be moved between Drives using this request.
 
 ### [Update-MgUserDriveItemAnalytic](Update-MgUserDriveItemAnalytic.md)
 Update the navigation property analytics in users
@@ -2174,7 +2495,8 @@ Update the navigation property versions in users
 Update the navigation property fields in users
 
 ### [Update-MgUserDriveItemPermission](Update-MgUserDriveItemPermission.md)
-Update the navigation property permissions in users
+Update the properties of a sharing permission by patching the permission resource.
+Only the **roles** property can be modified this way.
 
 ### [Update-MgUserDriveItemSubscription](Update-MgUserDriveItemSubscription.md)
 Update the navigation property subscriptions in users
@@ -2246,7 +2568,8 @@ Update the navigation property versions in users
 Update the navigation property fields in users
 
 ### [Update-MgUserDriveRootPermission](Update-MgUserDriveRootPermission.md)
-Update the navigation property permissions in users
+Update the properties of a sharing permission by patching the permission resource.
+Only the **roles** property can be modified this way.
 
 ### [Update-MgUserDriveRootSubscription](Update-MgUserDriveRootSubscription.md)
 Update the navigation property subscriptions in users

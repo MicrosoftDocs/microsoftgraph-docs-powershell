@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmicrosofttunnelserverlogcollectionresponse
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmicrosofttunnelserverlogcollectionresponse
 schema: 2.0.0
 ---
 
-# New-MgDeviceManagementMicrosoftTunnelServerLogCollectionResponse
+# New-MgBetaDeviceManagementMicrosoftTunnelServerLogCollectionResponse
 
 ## SYNOPSIS
 Create new navigation property to microsoftTunnelServerLogCollectionResponses for deviceManagement
@@ -14,7 +14,7 @@ Create new navigation property to microsoftTunnelServerLogCollectionResponses fo
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementMicrosoftTunnelServerLogCollectionResponse [-AdditionalProperties <Hashtable>]
+New-MgBetaDeviceManagementMicrosoftTunnelServerLogCollectionResponse [-AdditionalProperties <Hashtable>]
  [-EndDateTime <DateTime>] [-ExpiryDateTime <DateTime>] [-Id <String>] [-RequestDateTime <DateTime>]
  [-ServerId <String>] [-SizeInBytes <Int64>] [-StartDateTime <DateTime>]
  [-Status <MicrosoftTunnelLogCollectionStatus>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -22,7 +22,7 @@ New-MgDeviceManagementMicrosoftTunnelServerLogCollectionResponse [-AdditionalPro
 
 ### Create
 ```
-New-MgDeviceManagementMicrosoftTunnelServerLogCollectionResponse
+New-MgBetaDeviceManagementMicrosoftTunnelServerLogCollectionResponse
  -BodyParameter <IMicrosoftGraphMicrosoftTunnelServerLogCollectionResponse> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
@@ -31,6 +31,20 @@ New-MgDeviceManagementMicrosoftTunnelServerLogCollectionResponse
 Create new navigation property to microsoftTunnelServerLogCollectionResponses for deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -51,7 +65,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Entity that stores the server log collection status.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphMicrosoftTunnelServerLogCollectionResponse
@@ -96,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -222,10 +236,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMicrosoftTunnelServerLogCollectionResponse
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMicrosoftTunnelServerLogCollectionResponse
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMicrosoftTunnelServerLogCollectionResponse
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMicrosoftTunnelServerLogCollectionResponse
 ## NOTES
 
 ALIASES
@@ -235,9 +249,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphMicrosoftTunnelServerLogCollectionResponse>`: Entity that stores the server log collection status.
+`BODYPARAMETER <IMicrosoftGraphMicrosoftTunnelServerLogCollectionResponse>`: Entity that stores the server log collection status.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[EndDateTime <DateTime?>]`: The end time of the logs collected
   - `[ExpiryDateTime <DateTime?>]`: The time when the log collection is expired
   - `[RequestDateTime <DateTime?>]`: The time when the log collection was requested

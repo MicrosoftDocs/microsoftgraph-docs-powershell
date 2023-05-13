@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Reports-help.xml
-Module Name: Microsoft.Graph.Reports
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgreportdeviceconfigurationdeviceactivity
+﻿---
+external help file: Microsoft.Graph.Beta.Reports-help.xml
+Module Name: Microsoft.Graph.Beta.Reports
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportdeviceconfigurationdeviceactivity
 schema: 2.0.0
 ---
 
-# Get-MgReportDeviceConfigurationDeviceActivity
+# Get-MgBetaReportDeviceConfigurationDeviceActivity
 
 ## SYNOPSIS
 Metadata for the device configuration device activity report
@@ -13,13 +13,27 @@ Metadata for the device configuration device activity report
 ## SYNTAX
 
 ```
-Get-MgReportDeviceConfigurationDeviceActivity -OutFile <String> [-PassThru] [<CommonParameters>]
+Get-MgBetaReportDeviceConfigurationDeviceActivity -OutFile <String> [-PassThru] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Metadata for the device configuration device activity report
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 

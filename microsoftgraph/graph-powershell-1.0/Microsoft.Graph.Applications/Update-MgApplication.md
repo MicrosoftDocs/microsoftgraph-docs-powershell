@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/update-mgapplication
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplication
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # Update-MgApplication
@@ -13,7 +12,7 @@ Update the properties of an application object.
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### UpdateExpanded (Default)
 ```
 Update-MgApplication -ApplicationId <String> [-AddIns <IMicrosoftGraphAddIn[]>]
  [-AdditionalProperties <Hashtable>] [-Api <IMicrosoftGraphApiApplication>] [-AppId <String>]
@@ -38,17 +37,17 @@ Update-MgApplication -ApplicationId <String> [-AddIns <IMicrosoftGraphAddIn[]>]
  [-Tags <String[]>] [-TokenEncryptionKeyId <String>]
  [-TokenIssuancePolicies <IMicrosoftGraphTokenIssuancePolicy[]>]
  [-TokenLifetimePolicies <IMicrosoftGraphTokenLifetimePolicy[]>]
- [-VerifiedPublisher <IMicrosoftGraphVerifiedPublisher>] [-Web <IMicrosoftGraphWebApplication>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update1
-```
-Update-MgApplication -ApplicationId <String> -BodyParameter <IMicrosoftGraphApplication> [-PassThru] [-WhatIf]
+ [-VerifiedPublisher <IMicrosoftGraphVerifiedPublisher>] [-Web <IMicrosoftGraphWebApplication>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded1
+### Update
+```
+Update-MgApplication -ApplicationId <String> -BodyParameter <IMicrosoftGraphApplication> [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
 ```
 Update-MgApplication -InputObject <IApplicationsIdentity> [-AddIns <IMicrosoftGraphAddIn[]>]
  [-AdditionalProperties <Hashtable>] [-Api <IMicrosoftGraphApiApplication>] [-AppId <String>]
@@ -73,14 +72,14 @@ Update-MgApplication -InputObject <IApplicationsIdentity> [-AddIns <IMicrosoftGr
  [-Tags <String[]>] [-TokenEncryptionKeyId <String>]
  [-TokenIssuancePolicies <IMicrosoftGraphTokenIssuancePolicy[]>]
  [-TokenLifetimePolicies <IMicrosoftGraphTokenLifetimePolicy[]>]
- [-VerifiedPublisher <IMicrosoftGraphVerifiedPublisher>] [-Web <IMicrosoftGraphWebApplication>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-VerifiedPublisher <IMicrosoftGraphVerifiedPublisher>] [-Web <IMicrosoftGraphWebApplication>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity1
+### UpdateViaIdentity
 ```
-Update-MgApplication -InputObject <IApplicationsIdentity> -BodyParameter <IMicrosoftGraphApplication>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgApplication -InputObject <IApplicationsIdentity> -BodyParameter <IMicrosoftGraphApplication> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -88,14 +87,12 @@ Update the properties of an application object.
 
 ## EXAMPLES
 
-### Example 1: Update an application
+### EXAMPLE 1
 ```powershell
 Update-MgApplication `
   -ApplicationId 'f6b30057-7095-4e2c-89f8-224149f591b7' `
   -DisplayName 'Testing App'
 ```
-
-This example updates the specified application's display name.
 
 ## PARAMETERS
 
@@ -103,11 +100,11 @@ This example updates the specified application's display name.
 Defines custom behavior that a consuming service can use to call an app in specific contexts.
 For example, applications that can render file streams may set the addIns property for its 'FileHandler' functionality.
 This will let services like Office 365 call the application in the context of a document the user is working on.
-To construct, please use Get-Help -Online and see NOTES section for ADDINS properties and create a hash table.
+To construct, see NOTES section for ADDINS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAddIn[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -122,7 +119,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -134,11 +131,11 @@ Accept wildcard characters: False
 
 ### -Api
 apiApplication
-To construct, please use Get-Help -Online and see NOTES section for API properties and create a hash table.
+To construct, see NOTES section for API properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphApiApplication
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -156,7 +153,7 @@ Supports $filter (eq).
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -171,7 +168,7 @@ The unique identifier of application
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -187,7 +184,7 @@ Supports $filter (eq, not, ne).
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -199,11 +196,11 @@ Accept wildcard characters: False
 
 ### -AppManagementPolicies
 The appManagementPolicy applied to this application.
-To construct, please use Get-Help -Online and see NOTES section for APPMANAGEMENTPOLICIES properties and create a hash table.
+To construct, see NOTES section for APPMANAGEMENTPOLICIES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAppManagementPolicy[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -217,11 +214,11 @@ Accept wildcard characters: False
 The collection of roles defined for the application.
 With app role assignments, these roles can be assigned to users, groups, or service principals associated with other applications.
 Not nullable.
-To construct, please use Get-Help -Online and see NOTES section for APPROLES properties and create a hash table.
+To construct, see NOTES section for APPROLES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAppRole[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -233,11 +230,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 application
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphApplication
-Parameter Sets: Update1, UpdateViaIdentity1
+Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -249,11 +246,11 @@ Accept wildcard characters: False
 
 ### -Certification
 certification
-To construct, please use Get-Help -Online and see NOTES section for CERTIFICATION properties and create a hash table.
+To construct, see NOTES section for CERTIFICATION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphCertification
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -272,7 +269,7 @@ Supports $filter (eq, ne, not, ge, le, in, and eq on null values) and $orderBy.
 
 ```yaml
 Type: DateTime
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -284,11 +281,11 @@ Accept wildcard characters: False
 
 ### -CreatedOnBehalfOf
 directoryObject
-To construct, please use Get-Help -Online and see NOTES section for CREATEDONBEHALFOF properties and create a hash table.
+To construct, see NOTES section for CREATEDONBEHALFOF properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDirectoryObject
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -303,7 +300,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -319,7 +316,7 @@ Always null when the object hasn't been deleted.
 
 ```yaml
 Type: DateTime
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -336,7 +333,7 @@ Supports $filter (eq, ne, not, ge, le, startsWith) and $search.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -353,7 +350,7 @@ Supports $filter (eq, ne, not).
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -369,7 +366,7 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -383,11 +380,11 @@ Accept wildcard characters: False
 Read-only.
 Nullable.
 Supports $expand and $filter (/$count eq 0, /$count ne 0).
-To construct, please use Get-Help -Online and see NOTES section for EXTENSIONPROPERTIES properties and create a hash table.
+To construct, see NOTES section for EXTENSIONPROPERTIES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphExtensionProperty[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -400,11 +397,11 @@ Accept wildcard characters: False
 ### -FederatedIdentityCredentials
 Federated identities for applications.
 Supports $expand and $filter (startsWith, /$count eq 0, /$count ne 0).
-To construct, please use Get-Help -Online and see NOTES section for FEDERATEDIDENTITYCREDENTIALS properties and create a hash table.
+To construct, see NOTES section for FEDERATEDIDENTITYCREDENTIALS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphFederatedIdentityCredential[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -420,7 +417,7 @@ To set this attribute, use one of the following valid string values: None, Secur
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -432,11 +429,11 @@ Accept wildcard characters: False
 
 ### -HomeRealmDiscoveryPolicies
 .
-To construct, please use Get-Help -Online and see NOTES section for HOMEREALMDISCOVERYPOLICIES properties and create a hash table.
+To construct, see NOTES section for HOMEREALMDISCOVERYPOLICIES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphHomeRealmDiscoveryPolicy[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -452,7 +449,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -472,7 +469,7 @@ Supports $filter (eq, ne, ge, le, startsWith).
 
 ```yaml
 Type: String[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -484,11 +481,11 @@ Accept wildcard characters: False
 
 ### -Info
 informationalUrl
-To construct, please use Get-Help -Online and see NOTES section for INFO properties and create a hash table.
+To construct, see NOTES section for INFO properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphInformationalUrl
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -500,11 +497,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IApplicationsIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -520,7 +517,7 @@ The default is false.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -539,7 +536,7 @@ In those cases Azure AD interprets the application type based on the value of th
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -553,11 +550,11 @@ Accept wildcard characters: False
 The collection of key credentials associated with the application.
 Not nullable.
 Supports $filter (eq, not, ge, le).
-To construct, please use Get-Help -Online and see NOTES section for KEYCREDENTIALS properties and create a hash table.
+To construct, see NOTES section for KEYCREDENTIALS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphKeyCredential[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -573,7 +570,7 @@ Not nullable.)
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -588,7 +585,7 @@ Notes relevant for the management of the application.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -603,7 +600,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -615,11 +612,11 @@ Accept wildcard characters: False
 
 ### -OptionalClaims
 optionalClaims
-To construct, please use Get-Help -Online and see NOTES section for OPTIONALCLAIMS properties and create a hash table.
+To construct, see NOTES section for OPTIONALCLAIMS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphOptionalClaims
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -634,11 +631,11 @@ Directory objects that are owners of the application.
 Read-only.
 Nullable.
 Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
-To construct, please use Get-Help -Online and see NOTES section for OWNERS properties and create a hash table.
+To construct, see NOTES section for OWNERS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDirectoryObject[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -650,26 +647,11 @@ Accept wildcard characters: False
 
 ### -ParentalControlSettings
 parentalControlSettings
-To construct, please use Get-Help -Online and see NOTES section for PARENTALCONTROLSETTINGS properties and create a hash table.
+To construct, see NOTES section for PARENTALCONTROLSETTINGS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphParentalControlSettings
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -682,11 +664,11 @@ Accept wildcard characters: False
 ### -PasswordCredentials
 The collection of password credentials associated with the application.
 Not nullable.
-To construct, please use Get-Help -Online and see NOTES section for PASSWORDCREDENTIALS properties and create a hash table.
+To construct, see NOTES section for PASSWORDCREDENTIALS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPasswordCredential[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -698,11 +680,11 @@ Accept wildcard characters: False
 
 ### -PublicClient
 publicClientApplication
-To construct, please use Get-Help -Online and see NOTES section for PUBLICCLIENT properties and create a hash table.
+To construct, see NOTES section for PUBLICCLIENT properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPublicClientApplication
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -720,7 +702,7 @@ Supports $filter (eq, ne, ge, le, startsWith).
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -732,11 +714,11 @@ Accept wildcard characters: False
 
 ### -RequestSignatureVerification
 requestSignatureVerification
-To construct, please use Get-Help -Online and see NOTES section for REQUESTSIGNATUREVERIFICATION properties and create a hash table.
+To construct, see NOTES section for REQUESTSIGNATUREVERIFICATION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRequestSignatureVerification
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -755,11 +737,11 @@ Beginning mid-October 2021, the total number of required permissions must not ex
 For more information, see Limits on requested permissions per app.
 Not nullable.
 Supports $filter (eq, not, ge, le).
-To construct, please use Get-Help -Online and see NOTES section for REQUIREDRESOURCEACCESS properties and create a hash table.
+To construct, see NOTES section for REQUIREDRESOURCEACCESS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRequiredResourceAccess[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -776,7 +758,7 @@ Nullable.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -792,7 +774,7 @@ Nullable.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -814,7 +796,7 @@ For more information, see Validation differences for signInAudience.Supports $fi
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -826,11 +808,11 @@ Accept wildcard characters: False
 
 ### -Spa
 spaApplication
-To construct, please use Get-Help -Online and see NOTES section for SPA properties and create a hash table.
+To construct, see NOTES section for SPA properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSpaApplication
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -843,11 +825,11 @@ Accept wildcard characters: False
 ### -Tags
 Custom strings that can be used to categorize and identify the application.
 Not nullable.
-Strings added here will also appear in the tags property of any associated service principals.Supports $filter (eq, not, ge, le, startsWith).
+Strings added here will also appear in the tags property of any associated service principals.Supports $filter (eq, not, ge, le, startsWith) and $search.
 
 ```yaml
 Type: String[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -864,7 +846,7 @@ The application code that receives the encrypted token must use the matching pri
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -876,11 +858,11 @@ Accept wildcard characters: False
 
 ### -TokenIssuancePolicies
 .
-To construct, please use Get-Help -Online and see NOTES section for TOKENISSUANCEPOLICIES properties and create a hash table.
+To construct, see NOTES section for TOKENISSUANCEPOLICIES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphTokenIssuancePolicy[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -892,11 +874,11 @@ Accept wildcard characters: False
 
 ### -TokenLifetimePolicies
 .
-To construct, please use Get-Help -Online and see NOTES section for TOKENLIFETIMEPOLICIES properties and create a hash table.
+To construct, see NOTES section for TOKENLIFETIMEPOLICIES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphTokenLifetimePolicy[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -908,11 +890,11 @@ Accept wildcard characters: False
 
 ### -VerifiedPublisher
 verifiedPublisher
-To construct, please use Get-Help -Online and see NOTES section for VERIFIEDPUBLISHER properties and create a hash table.
+To construct, see NOTES section for VERIFIEDPUBLISHER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphVerifiedPublisher
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -924,11 +906,11 @@ Accept wildcard characters: False
 
 ### -Web
 webApplication
-To construct, please use Get-Help -Online and see NOTES section for WEB properties and create a hash table.
+To construct, see NOTES section for WEB properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphWebApplication
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -978,7 +960,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphApplication
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphApplication
 ## NOTES
 
 ALIASES
@@ -988,14 +970,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ADDINS <IMicrosoftGraphAddIn\[]>: Defines custom behavior that a consuming service can use to call an app in specific contexts. For example, applications that can render file streams may set the addIns property for its 'FileHandler' functionality. This will let services like Office 365 call the application in the context of a document the user is working on.
+`ADDINS <IMicrosoftGraphAddIn[]>`: Defines custom behavior that a consuming service can use to call an app in specific contexts. For example, applications that can render file streams may set the addIns property for its 'FileHandler' functionality. This will let services like Office 365 call the application in the context of a document the user is working on.
   - `[Id <String>]`: 
   - `[Properties <IMicrosoftGraphKeyValue[]>]`: 
     - `[Key <String>]`: Key for the key-value pair.
     - `[Value <String>]`: Value for the key-value pair.
   - `[Type <String>]`: 
 
-API `<IMicrosoftGraphApiApplication>`: apiApplication
+`API <IMicrosoftGraphApiApplication>`: apiApplication
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AcceptMappedClaims <Boolean?>]`: When true, allows an application to use claims mapping without specifying a custom signing key.
   - `[KnownClientApplications <String[]>]`: Used for bundling consent if you have a solution that contains two parts: a client app and a custom web API app. If you set the appID of the client app to this value, the user only consents once to the client app. Azure AD knows that consenting to the client means implicitly consenting to the web API and automatically provisions service principals for both APIs at the same time. Both the client and the web API app must be registered in the same tenant.
@@ -1014,7 +996,7 @@ API `<IMicrosoftGraphApiApplication>`: apiApplication
     - `[DelegatedPermissionIds <String[]>]`: The unique identifier for the oauth2PermissionScopes the application requires.
   - `[RequestedAccessTokenVersion <Int32?>]`: Specifies the access token version expected by this resource. This changes the version and format of the JWT produced independent of the endpoint or client used to request the access token.  The endpoint used, v1.0 or v2.0, is chosen by the client and only impacts the version of id_tokens. Resources need to explicitly configure requestedAccessTokenVersion to indicate the supported access token format.  Possible values for requestedAccessTokenVersion are 1, 2, or null. If the value is null, this defaults to 1, which corresponds to the v1.0 endpoint.  If signInAudience on the application is configured as AzureADandPersonalMicrosoftAccount, the value for this property must be 2
 
-APPMANAGEMENTPOLICIES <IMicrosoftGraphAppManagementPolicy\[]>: The appManagementPolicy applied to this application.
+`APPMANAGEMENTPOLICIES <IMicrosoftGraphAppManagementPolicy[]>`: The appManagementPolicy applied to this application.
   - `[Description <String>]`: Description for this policy. Required.
   - `[DisplayName <String>]`: Display name for this policy. Required.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
@@ -1034,7 +1016,7 @@ APPMANAGEMENTPOLICIES <IMicrosoftGraphAppManagementPolicy\[]>: The appManagement
       - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Enforces the policy for an app created on or after the enforcement date. For existing applications, the enforcement date would be back dated. To apply to all applications, enforcement datetime would be null.
       - `[RestrictionType <String>]`: appCredentialRestrictionType
 
-APPROLES <IMicrosoftGraphAppRole\[]>: The collection of roles defined for the application. With app role assignments, these roles can be assigned to users, groups, or service principals associated with other applications. Not nullable.
+`APPROLES <IMicrosoftGraphAppRole[]>`: The collection of roles defined for the application. With app role assignments, these roles can be assigned to users, groups, or service principals associated with other applications. Not nullable.
   - `[AllowedMemberTypes <String[]>]`: Specifies whether this app role can be assigned to users and groups (by setting to ['User']), to other application's (by setting to ['Application'], or both (by setting to ['User', 'Application']). App roles supporting assignment to other applications' service principals are also known as application permissions. The 'Application' value is only supported for app roles defined on application entities.
   - `[Description <String>]`: The description for the app role. This is displayed when the app role is being assigned and, if the app role functions as an application permission, during  consent experiences.
   - `[DisplayName <String>]`: Display name for the permission that appears in the app role assignment and consent experiences.
@@ -1043,7 +1025,7 @@ APPROLES <IMicrosoftGraphAppRole\[]>: The collection of roles defined for the ap
   - `[Origin <String>]`: Specifies if the app role is defined on the application object or on the servicePrincipal entity. Must not be included in any POST or PATCH requests. Read-only.
   - `[Value <String>]`: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal. Must not exceed 120 characters in length. Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ [ ] ^ + _  {  } ~, as well as characters in the ranges 0-9, A-Z and a-z. Any other character, including the space character, are not allowed. May not begin with ..
 
-BODYPARAMETER `<IMicrosoftGraphApplication>`: application
+`BODYPARAMETER <IMicrosoftGraphApplication>`: application
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -1135,7 +1117,7 @@ BODYPARAMETER `<IMicrosoftGraphApplication>`: application
     - `[DisplayName <String>]`: Display name for this policy. Required.
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[IdentifierUris <String[]>]`: Also known as App ID URI, this value is set when an application is used as a resource app. The identifierUris acts as the prefix for the scopes you'll reference in your API's code, and it must be globally unique. You can use the default value provided, which is in the form api://`<application-client-id>`, or specify a more readable URI like https://contoso.com/api. For more information on valid identifierUris patterns and best practices, see Azure AD application registration security best practices. Not nullable. Supports $filter (eq, ne, ge, le, startsWith).
+  - `[IdentifierUris <String[]>]`: Also known as App ID URI, this value is set when an application is used as a resource app. The identifierUris acts as the prefix for the scopes you'll reference in your API's code, and it must be globally unique. You can use the default value provided, which is in the form api://<application-client-id>, or specify a more readable URI like https://contoso.com/api. For more information on valid identifierUris patterns and best practices, see Azure AD application registration security best practices. Not nullable. Supports $filter (eq, ne, ge, le, startsWith).
   - `[Info <IMicrosoftGraphInformationalUrl>]`: informationalUrl
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[LogoUrl <String>]`: CDN URL to the application's logo, Read-only.
@@ -1198,7 +1180,7 @@ BODYPARAMETER `<IMicrosoftGraphApplication>`: application
   - `[Spa <IMicrosoftGraphSpaApplication>]`: spaApplication
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[RedirectUris <String[]>]`: Specifies the URLs where user tokens are sent for sign-in, or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent.
-  - `[Tags <String[]>]`: Custom strings that can be used to categorize and identify the application. Not nullable. Strings added here will also appear in the tags property of any associated service principals.Supports $filter (eq, not, ge, le, startsWith).
+  - `[Tags <String[]>]`: Custom strings that can be used to categorize and identify the application. Not nullable. Strings added here will also appear in the tags property of any associated service principals.Supports $filter (eq, not, ge, le, startsWith) and $search.
   - `[TokenEncryptionKeyId <String>]`: Specifies the keyId of a public key from the keyCredentials collection. When configured, Azure AD encrypts all the tokens it emits by using the key this property points to. The application code that receives the encrypted token must use the matching private key to decrypt the token before it can be used for the signed-in user.
   - `[TokenIssuancePolicies <IMicrosoftGraphTokenIssuancePolicy[]>]`: 
     - `[AppliesTo <IMicrosoftGraphDirectoryObject[]>]`: 
@@ -1234,18 +1216,18 @@ BODYPARAMETER `<IMicrosoftGraphApplication>`: application
       - `[Uri <String>]`: 
     - `[RedirectUris <String[]>]`: Specifies the URLs where user tokens are sent for sign-in, or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent.
 
-CERTIFICATION `<IMicrosoftGraphCertification>`: certification
+`CERTIFICATION <IMicrosoftGraphCertification>`: certification
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CertificationExpirationDateTime <DateTime?>]`: The timestamp when the current certification for the application will expire.
   - `[IsPublisherAttested <Boolean?>]`: Indicates whether the application has been self-attested by the application developer or the publisher.
   - `[LastCertificationDateTime <DateTime?>]`: The timestamp when the certification for the application was most recently added or updated.
 
-CREATEDONBEHALFOF `<IMicrosoftGraphDirectoryObject>`: directoryObject
+`CREATEDONBEHALFOF <IMicrosoftGraphDirectoryObject>`: directoryObject
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
-EXTENSIONPROPERTIES <IMicrosoftGraphExtensionProperty\[]>: Read-only. Nullable. Supports $expand and $filter (/$count eq 0, /$count ne 0).
+`EXTENSIONPROPERTIES <IMicrosoftGraphExtensionProperty[]>`: Read-only. Nullable. Supports $expand and $filter (/$count eq 0, /$count ne 0).
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AppDisplayName <String>]`: Display name of the application object on which this extension property is defined. Read-only.
@@ -1254,7 +1236,7 @@ EXTENSIONPROPERTIES <IMicrosoftGraphExtensionProperty\[]>: Read-only. Nullable. 
   - `[Name <String>]`: Name of the extension property. Not nullable. Supports $filter (eq).
   - `[TargetObjects <String[]>]`: Following values are supported. Not nullable. UserGroupAdministrativeUnitApplicationDeviceOrganization
 
-FEDERATEDIDENTITYCREDENTIALS <IMicrosoftGraphFederatedIdentityCredential\[]>: Federated identities for applications. Supports $expand and $filter (startsWith, /$count eq 0, /$count ne 0).
+`FEDERATEDIDENTITYCREDENTIALS <IMicrosoftGraphFederatedIdentityCredential[]>`: Federated identities for applications. Supports $expand and $filter (startsWith, /$count eq 0, /$count ne 0).
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Audiences <String[]>]`: The audience that can appear in the external token. This field is mandatory and should be set to api://AzureADTokenExchange for Azure AD. It says what Microsoft identity platform should accept in the aud claim in the incoming token. This value represents Azure AD in your external identity provider and has no fixed value across identity providers - you may need to create a new application registration in your identity provider to serve as the audience of this token. This field can only accept a single value and has a limit of 600 characters. Required.
   - `[Description <String>]`: The un-validated, user-provided description of the federated identity credential. It has a limit of 600 characters. Optional.
@@ -1262,7 +1244,7 @@ FEDERATEDIDENTITYCREDENTIALS <IMicrosoftGraphFederatedIdentityCredential\[]>: Fe
   - `[Name <String>]`: is the unique identifier for the federated identity credential, which has a limit of 120 characters and must be URL friendly. It is immutable once created. Required. Not nullable. Supports $filter (eq).
   - `[Subject <String>]`: Required. The identifier of the external software workload within the external identity provider. Like the audience value, it has no fixed format, as each identity provider uses their own - sometimes a GUID, sometimes a colon delimited identifier, sometimes arbitrary strings. The value here must match the sub claim within the token presented to Azure AD. The combination of issuer and subject must be unique on the app. It has a limit of 600 characters. Supports $filter (eq).
 
-HOMEREALMDISCOVERYPOLICIES <IMicrosoftGraphHomeRealmDiscoveryPolicy\[]>: .
+`HOMEREALMDISCOVERYPOLICIES <IMicrosoftGraphHomeRealmDiscoveryPolicy[]>`: .
   - `[AppliesTo <IMicrosoftGraphDirectoryObject[]>]`: 
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
@@ -1273,7 +1255,7 @@ HOMEREALMDISCOVERYPOLICIES <IMicrosoftGraphHomeRealmDiscoveryPolicy\[]>: .
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
-INFO `<IMicrosoftGraphInformationalUrl>`: informationalUrl
+`INFO <IMicrosoftGraphInformationalUrl>`: informationalUrl
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[LogoUrl <String>]`: CDN URL to the application's logo, Read-only.
   - `[MarketingUrl <String>]`: Link to the application's marketing page. For example, https://www.contoso.com/app/marketing
@@ -1281,37 +1263,26 @@ INFO `<IMicrosoftGraphInformationalUrl>`: informationalUrl
   - `[SupportUrl <String>]`: Link to the application's support page. For example, https://www.contoso.com/app/support
   - `[TermsOfServiceUrl <String>]`: Link to the application's terms of service statement. For example, https://www.contoso.com/app/termsofservice
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+`INPUTOBJECT <IApplicationsIdentity>`: Identity Parameter
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
   - `[ApplicationId <String>]`: The unique identifier of application
   - `[ApplicationTemplateId <String>]`: The unique identifier of applicationTemplate
   - `[ClaimsMappingPolicyId <String>]`: The unique identifier of claimsMappingPolicy
-  - `[ConnectorGroupId <String>]`: The unique identifier of connectorGroup
-  - `[ConnectorId <String>]`: The unique identifier of connector
   - `[DelegatedPermissionClassificationId <String>]`: The unique identifier of delegatedPermissionClassification
-  - `[DirectoryDefinitionId <String>]`: The unique identifier of directoryDefinition
   - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
   - `[EndpointId <String>]`: The unique identifier of endpoint
   - `[ExtensionPropertyId <String>]`: The unique identifier of extensionProperty
   - `[FederatedIdentityCredentialId <String>]`: The unique identifier of federatedIdentityCredential
   - `[GroupId <String>]`: The unique identifier of group
   - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
-  - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
-  - `[OnPremisesAgentGroupId <String>]`: The unique identifier of onPremisesAgentGroup
-  - `[OnPremisesAgentGroupId1 <String>]`: The unique identifier of onPremisesAgentGroup
-  - `[OnPremisesAgentId <String>]`: The unique identifier of onPremisesAgent
-  - `[OnPremisesPublishingProfileId <String>]`: The unique identifier of onPremisesPublishingProfile
-  - `[PublishedResourceId <String>]`: The unique identifier of publishedResource
   - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
-  - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
-  - `[SynchronizationTemplateId <String>]`: The unique identifier of synchronizationTemplate
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[UserId <String>]`: The unique identifier of user
 
-KEYCREDENTIALS <IMicrosoftGraphKeyCredential\[]>: The collection of key credentials associated with the application. Not nullable. Supports $filter (eq, not, ge, le).
+`KEYCREDENTIALS <IMicrosoftGraphKeyCredential[]>`: The collection of key credentials associated with the application. Not nullable. Supports $filter (eq, not, ge, le).
   - `[CustomKeyIdentifier <Byte[]>]`: A 40-character binary type that can be used to identify the credential. Optional. When not provided in the payload, defaults to the thumbprint of the certificate.
   - `[DisplayName <String>]`: Friendly name for the key. Optional.
   - `[EndDateTime <DateTime?>]`: The date and time at which the credential expires. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -1321,7 +1292,7 @@ KEYCREDENTIALS <IMicrosoftGraphKeyCredential\[]>: The collection of key credenti
   - `[Type <String>]`: The type of key credential; for example, Symmetric, AsymmetricX509Cert.
   - `[Usage <String>]`: A string that describes the purpose for which the key can be used; for example, Verify.
 
-OPTIONALCLAIMS `<IMicrosoftGraphOptionalClaims>`: optionalClaims
+`OPTIONALCLAIMS <IMicrosoftGraphOptionalClaims>`: optionalClaims
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AccessToken <IMicrosoftGraphOptionalClaim[]>]`: The optional claims returned in the JWT access token.
     - `[AdditionalProperties <String[]>]`: Additional properties of the claim. If a property exists in this collection, it modifies the behavior of the optional claim specified in the name property.
@@ -1331,16 +1302,16 @@ OPTIONALCLAIMS `<IMicrosoftGraphOptionalClaims>`: optionalClaims
   - `[IdToken <IMicrosoftGraphOptionalClaim[]>]`: The optional claims returned in the JWT ID token.
   - `[Saml2Token <IMicrosoftGraphOptionalClaim[]>]`: The optional claims returned in the SAML token.
 
-OWNERS <IMicrosoftGraphDirectoryObject\[]>: Directory objects that are owners of the application. Read-only. Nullable. Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
+`OWNERS <IMicrosoftGraphDirectoryObject[]>`: Directory objects that are owners of the application. Read-only. Nullable. Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
-PARENTALCONTROLSETTINGS `<IMicrosoftGraphParentalControlSettings>`: parentalControlSettings
+`PARENTALCONTROLSETTINGS <IMicrosoftGraphParentalControlSettings>`: parentalControlSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CountriesBlockedForMinors <String[]>]`: Specifies the two-letter ISO country codes. Access to the application will be blocked for minors from the countries specified in this list.
   - `[LegalAgeGroupRule <String>]`: Specifies the legal age group rule that applies to users of the app. Can be set to one of the following values: ValueDescriptionAllowDefault. Enforces the legal minimum. This means parental consent is required for minors in the European Union and Korea.RequireConsentForPrivacyServicesEnforces the user to specify date of birth to comply with COPPA rules. RequireConsentForMinorsRequires parental consent for ages below 18, regardless of country minor rules.RequireConsentForKidsRequires parental consent for ages below 14, regardless of country minor rules.BlockMinorsBlocks minors from using the app.
 
-PASSWORDCREDENTIALS <IMicrosoftGraphPasswordCredential\[]>: The collection of password credentials associated with the application. Not nullable.
+`PASSWORDCREDENTIALS <IMicrosoftGraphPasswordCredential[]>`: The collection of password credentials associated with the application. Not nullable.
   - `[CustomKeyIdentifier <Byte[]>]`: Do not use.
   - `[DisplayName <String>]`: Friendly name for the password. Optional.
   - `[EndDateTime <DateTime?>]`: The date and time at which the password expires represented using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Optional.
@@ -1349,26 +1320,26 @@ PASSWORDCREDENTIALS <IMicrosoftGraphPasswordCredential\[]>: The collection of pa
   - `[SecretText <String>]`: Read-only; Contains the strong passwords generated by Azure AD that are 16-64 characters in length. The generated password value is only returned during the initial POST request to addPassword. There is no way to retrieve this password in the future.
   - `[StartDateTime <DateTime?>]`: The date and time at which the password becomes valid. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Optional.
 
-PUBLICCLIENT `<IMicrosoftGraphPublicClientApplication>`: publicClientApplication
+`PUBLICCLIENT <IMicrosoftGraphPublicClientApplication>`: publicClientApplication
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[RedirectUris <String[]>]`: Specifies the URLs where user tokens are sent for sign-in, or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent.
 
-REQUESTSIGNATUREVERIFICATION `<IMicrosoftGraphRequestSignatureVerification>`: requestSignatureVerification
+`REQUESTSIGNATUREVERIFICATION <IMicrosoftGraphRequestSignatureVerification>`: requestSignatureVerification
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowedWeakAlgorithms <String>]`: weakAlgorithms
   - `[IsSignedRequestRequired <Boolean?>]`: Specifies whether signed authentication requests for this application should be required.
 
-REQUIREDRESOURCEACCESS <IMicrosoftGraphRequiredResourceAccess\[]>: Specifies the resources that the application needs to access. This property also specifies the set of delegated permissions and application roles that it needs for each of those resources. This configuration of access to the required resources drives the consent experience. No more than 50 resource services (APIs) can be configured. Beginning mid-October 2021, the total number of required permissions must not exceed 400. For more information, see Limits on requested permissions per app. Not nullable. Supports $filter (eq, not, ge, le).
+`REQUIREDRESOURCEACCESS <IMicrosoftGraphRequiredResourceAccess[]>`: Specifies the resources that the application needs to access. This property also specifies the set of delegated permissions and application roles that it needs for each of those resources. This configuration of access to the required resources drives the consent experience. No more than 50 resource services (APIs) can be configured. Beginning mid-October 2021, the total number of required permissions must not exceed 400. For more information, see Limits on requested permissions per app. Not nullable. Supports $filter (eq, not, ge, le).
   - `[ResourceAccess <IMicrosoftGraphResourceAccess[]>]`: The list of OAuth2.0 permission scopes and app roles that the application requires from the specified resource.
     - `[Id <String>]`: The unique identifier of an app role or delegated permission exposed by the resource application. For delegated permissions, this should match the id property of one of the delegated permissions in the oauth2PermissionScopes collection of the resource application's service principal. For app roles (application permissions), this should match the id property of an app role in the appRoles collection of the resource application's service principal.
     - `[Type <String>]`: Specifies whether the id property references a delegated permission or an app role (application permission). The possible values are: Scope (for delegated permissions) or Role (for app roles).
   - `[ResourceAppId <String>]`: The unique identifier for the resource that the application requires access to. This should be equal to the appId declared on the target resource application.
 
-SPA `<IMicrosoftGraphSpaApplication>`: spaApplication
+`SPA <IMicrosoftGraphSpaApplication>`: spaApplication
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[RedirectUris <String[]>]`: Specifies the URLs where user tokens are sent for sign-in, or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent.
 
-TOKENISSUANCEPOLICIES <IMicrosoftGraphTokenIssuancePolicy\[]>: .
+`TOKENISSUANCEPOLICIES <IMicrosoftGraphTokenIssuancePolicy[]>`: .
   - `[AppliesTo <IMicrosoftGraphDirectoryObject[]>]`: 
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
@@ -1379,7 +1350,7 @@ TOKENISSUANCEPOLICIES <IMicrosoftGraphTokenIssuancePolicy\[]>: .
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
-TOKENLIFETIMEPOLICIES <IMicrosoftGraphTokenLifetimePolicy\[]>: .
+`TOKENLIFETIMEPOLICIES <IMicrosoftGraphTokenLifetimePolicy[]>`: .
   - `[AppliesTo <IMicrosoftGraphDirectoryObject[]>]`: 
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
@@ -1390,13 +1361,13 @@ TOKENLIFETIMEPOLICIES <IMicrosoftGraphTokenLifetimePolicy\[]>: .
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
-VERIFIEDPUBLISHER `<IMicrosoftGraphVerifiedPublisher>`: verifiedPublisher
+`VERIFIEDPUBLISHER <IMicrosoftGraphVerifiedPublisher>`: verifiedPublisher
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AddedDateTime <DateTime?>]`: The timestamp when the verified publisher was first added or most recently updated.
   - `[DisplayName <String>]`: The verified publisher name from the app publisher's Partner Center account.
   - `[VerifiedPublisherId <String>]`: The ID of the verified publisher from the app publisher's Partner Center account.
 
-WEB `<IMicrosoftGraphWebApplication>`: webApplication
+`WEB <IMicrosoftGraphWebApplication>`: webApplication
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[HomePageUrl <String>]`: Home page or landing page of the application.
   - `[ImplicitGrantSettings <IMicrosoftGraphImplicitGrantSettings>]`: implicitGrantSettings

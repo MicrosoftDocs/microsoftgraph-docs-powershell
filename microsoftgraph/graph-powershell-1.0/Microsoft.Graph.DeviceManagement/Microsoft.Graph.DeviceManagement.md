@@ -1,7 +1,7 @@
----
+﻿---
 Module Name: Microsoft.Graph.DeviceManagement
-Module Guid: 624c4ea3-20fa-4445-ae40-71c00562e296
-Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement
+Module Guid: 77e2079e-5887-4837-aec4-e6466fb7fdec
+Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement
 Help Version: 1.0.0.0
 Locale: en-US
 ---
@@ -286,8 +286,8 @@ Delete navigation property windowsInformationProtectionAppLearningSummaries for 
 ### [Remove-MgDeviceManagementWindowInformationProtectionNetworkLearningSummary](Remove-MgDeviceManagementWindowInformationProtectionNetworkLearningSummary.md)
 Delete navigation property windowsInformationProtectionNetworkLearningSummaries for deviceManagement
 
-### [Update-MgDeviceManagement](Update-MgDeviceManagement.md)
-Update deviceManagement
+### [Remove-MgDeviceManagementWindowInformationProtectionNetworkLearningSummary](Remove-MgDeviceManagementWindowInformationProtectionNetworkLearningSummary.md)
+Delete navigation property windowsInformationProtectionNetworkLearningSummaries for deviceManagement
 
 ### [Update-MgDeviceManagementDetectedApp](Update-MgDeviceManagementDetectedApp.md)
 Update the navigation property detectedApps in deviceManagement

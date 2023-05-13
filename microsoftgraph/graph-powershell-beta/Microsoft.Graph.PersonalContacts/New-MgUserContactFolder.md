@@ -1,12 +1,11 @@
----
-external help file: Microsoft.Graph.PersonalContacts-help.xml
-Module Name: Microsoft.Graph.PersonalContacts
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.personalcontacts/new-mgusercontactfolder
+﻿---
+external help file: Microsoft.Graph.Beta.PersonalContacts-help.xml
+Module Name: Microsoft.Graph.Beta.PersonalContacts
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/new-mgbetausercontactfolder
 schema: 2.0.0
-ms.prod: outlook
 ---
 
-# New-MgUserContactFolder
+# New-MgBetaUserContactFolder
 
 ## SYNOPSIS
 Create a new contactFolder under the user's default contacts folder.
@@ -16,8 +15,8 @@ You can also create a new contactfolder as a child of any specified contact fold
 
 ### CreateExpanded (Default)
 ```
-New-MgUserContactFolder -UserId <String> [-AdditionalProperties <Hashtable>]
- [-ChildFolders <IMicrosoftGraphContactFolder1[]>] [-Contacts <IMicrosoftGraphContact1[]>]
+New-MgBetaUserContactFolder -UserId <String> [-AdditionalProperties <Hashtable>]
+ [-ChildFolders <IMicrosoftGraphContactFolder[]>] [-Contacts <IMicrosoftGraphContact[]>]
  [-DisplayName <String>] [-Id <String>]
  [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-ParentFolderId <String>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]
@@ -26,14 +25,14 @@ New-MgUserContactFolder -UserId <String> [-AdditionalProperties <Hashtable>]
 
 ### Create
 ```
-New-MgUserContactFolder -UserId <String> -BodyParameter <IMicrosoftGraphContactFolder1> [-WhatIf] [-Confirm]
+New-MgBetaUserContactFolder -UserId <String> -BodyParameter <IMicrosoftGraphContactFolder> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgUserContactFolder -InputObject <IPersonalContactsIdentity> [-AdditionalProperties <Hashtable>]
- [-ChildFolders <IMicrosoftGraphContactFolder1[]>] [-Contacts <IMicrosoftGraphContact1[]>]
+New-MgBetaUserContactFolder -InputObject <IPersonalContactsIdentity> [-AdditionalProperties <Hashtable>]
+ [-ChildFolders <IMicrosoftGraphContactFolder[]>] [-Contacts <IMicrosoftGraphContact[]>]
  [-DisplayName <String>] [-Id <String>]
  [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-ParentFolderId <String>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]
@@ -42,8 +41,8 @@ New-MgUserContactFolder -InputObject <IPersonalContactsIdentity> [-AdditionalPro
 
 ### CreateViaIdentity
 ```
-New-MgUserContactFolder -InputObject <IPersonalContactsIdentity> -BodyParameter <IMicrosoftGraphContactFolder1>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaUserContactFolder -InputObject <IPersonalContactsIdentity>
+ -BodyParameter <IMicrosoftGraphContactFolder> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -52,19 +51,16 @@ You can also create a new contactfolder as a child of any specified contact fold
 
 ## EXAMPLES
 
-### Example 1: Using the New-MgUserContactFolder Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.PersonalContacts
+Import-Module Microsoft.Graph.Beta.PersonalContacts
 $params = @{
 	ParentFolderId = "AQMkADIxYjJiYgEzLTFmNjYALTRjYTMtODA1NC0wZDkxZGNmOTcxNTQALgAAA8RJzXYaLKZPlmn0ge0edZkBADa3qi2IMXRNg6RwQSHe_F8AAAIBDgAAAA=="
 	DisplayName = "Important contacts"
 }
 # A UPN can also be used as -UserId.
-New-MgUserContactFolder -UserId $userId -BodyParameter $params
+New-MgBetaUserContactFolder -UserId $userId -BodyParameter $params
 ```
-
-This example shows how to use the New-MgUserContactFolder Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -85,10 +81,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 contactFolder
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphContactFolder1
+Type: IMicrosoftGraphContactFolder
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -104,10 +100,10 @@ The collection of child folders in the folder.
 Navigation property.
 Read-only.
 Nullable.
-To construct, please use Get-Help -Online and see NOTES section for CHILDFOLDERS properties and create a hash table.
+To construct, see NOTES section for CHILDFOLDERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphContactFolder1[]
+Type: IMicrosoftGraphContactFolder[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -123,10 +119,10 @@ The contacts in the folder.
 Navigation property.
 Read-only.
 Nullable.
-To construct, please use Get-Help -Online and see NOTES section for CONTACTS properties and create a hash table.
+To construct, see NOTES section for CONTACTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphContact1[]
+Type: IMicrosoftGraphContact[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -153,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -170,7 +166,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IPersonalContactsIdentity
@@ -188,7 +184,7 @@ Accept wildcard characters: False
 The collection of multi-value extended properties defined for the contactFolder.
 Read-only.
 Nullable.
-To construct, please use Get-Help -Online and see NOTES section for MULTIVALUEEXTENDEDPROPERTIES properties and create a hash table.
+To construct, see NOTES section for MULTIVALUEEXTENDEDPROPERTIES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphMultiValueLegacyExtendedProperty[]
@@ -221,7 +217,7 @@ Accept wildcard characters: False
 The collection of single-value extended properties defined for the contactFolder.
 Read-only.
 Nullable.
-To construct, please use Get-Help -Online and see NOTES section for SINGLEVALUEEXTENDEDPROPERTIES properties and create a hash table.
+To construct, see NOTES section for SINGLEVALUEEXTENDEDPROPERTIES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSingleValueLegacyExtendedProperty[]
@@ -302,11 +298,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContactFolder1
-### Microsoft.Graph.PowerShell.Models.IPersonalContactsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphContactFolder
+### Microsoft.Graph.Beta.PowerShell.Models.IPersonalContactsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContactFolder1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphContactFolder
 ## NOTES
 
 ALIASES
@@ -316,16 +312,16 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphContactFolder1>`: contactFolder
+`BODYPARAMETER <IMicrosoftGraphContactFolder>`: contactFolder
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[ChildFolders <IMicrosoftGraphContactFolder1[]>]`: The collection of child folders in the folder. Navigation property. Read-only. Nullable.
-  - `[Contacts <IMicrosoftGraphContact1[]>]`: The contacts in the folder. Navigation property. Read-only. Nullable.
-    - `[Categories <String[]>]`: The categories associated with the item
-    - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
+  - `[ChildFolders <IMicrosoftGraphContactFolder[]>]`: The collection of child folders in the folder. Navigation property. Read-only. Nullable.
+  - `[Contacts <IMicrosoftGraphContact[]>]`: The contacts in the folder. Navigation property. Read-only. Nullable.
+    - `[Categories <String[]>]`: 
+    - `[ChangeKey <String>]`: 
     - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[AssistantName <String>]`: The name of the contact's assistant.
     - `[Birthday <DateTime?>]`: The contact's birthday. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[Children <String[]>]`: The names of the contact's children.
@@ -333,12 +329,12 @@ BODYPARAMETER `<IMicrosoftGraphContactFolder1>`: contactFolder
     - `[Department <String>]`: The contact's department.
     - `[DisplayName <String>]`: The contact's display name. You can specify the display name in a create or update operation. Note that later updates to other properties may cause an automatically generated value to overwrite the displayName value you have specified. To preserve a pre-existing value, always include it as displayName in an update operation.
     - `[EmailAddresses <IMicrosoftGraphTypedEmailAddress[]>]`: The contact's email addresses.
-      - `[Address <String>]`: The email address of the person or entity.
-      - `[Name <String>]`: The display name of the person or entity.
+      - `[Address <String>]`: The email address of an entity instance.
+      - `[Name <String>]`: The display name of an entity instance.
       - `[OtherLabel <String>]`: To specify a custom type of email address, set type to other, and assign otherLabel to a custom string. For example, you may use a specific email address for your volunteer activities. Set type to other, and set otherLabel to a custom string such as Volunteer work.
       - `[Type <String>]`: emailType
     - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the contact. Nullable.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[FileAs <String>]`: The name the contact is filed under.
     - `[Flag <IMicrosoftGraphFollowupFlag>]`: followupFlag
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -359,7 +355,7 @@ BODYPARAMETER `<IMicrosoftGraphContactFolder1>`: contactFolder
     - `[Manager <String>]`: 
     - `[MiddleName <String>]`: 
     - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the contact. Read-only. Nullable.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Value <String[]>]`: A collection of property values.
     - `[NickName <String>]`: 
     - `[OfficeLocation <String>]`: 
@@ -370,10 +366,10 @@ BODYPARAMETER `<IMicrosoftGraphContactFolder1>`: contactFolder
       - `[Type <String>]`: phoneType
     - `[Photo <IMicrosoftGraphProfilePhoto>]`: profilePhoto
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Height <Int32?>]`: The height of the photo. Read-only.
       - `[Width <Int32?>]`: The width of the photo. Read-only.
-    - `[PostalAddresses <IMicrosoftGraphPhysicalAddress1[]>]`: 
+    - `[PostalAddresses <IMicrosoftGraphPhysicalAddress[]>]`: 
       - `[City <String>]`: The city.
       - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
       - `[PostOfficeBox <String>]`: The post office box number.
@@ -383,7 +379,7 @@ BODYPARAMETER `<IMicrosoftGraphContactFolder1>`: contactFolder
       - `[Type <String>]`: physicalAddressType
     - `[Profession <String>]`: 
     - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the contact. Read-only. Nullable.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Value <String>]`: A property value.
     - `[SpouseName <String>]`: 
     - `[Surname <String>]`: 
@@ -402,15 +398,15 @@ BODYPARAMETER `<IMicrosoftGraphContactFolder1>`: contactFolder
   - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the contactFolder. Read-only. Nullable.
   - `[WellKnownName <String>]`: The name of the folder if the folder is a recognized folder. Currently contacts is the only recognized contacts folder.
 
-CHILDFOLDERS <IMicrosoftGraphContactFolder1\[]>: The collection of child folders in the folder. Navigation property. Read-only. Nullable.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[ChildFolders <IMicrosoftGraphContactFolder1[]>]`: The collection of child folders in the folder. Navigation property. Read-only. Nullable.
-  - `[Contacts <IMicrosoftGraphContact1[]>]`: The contacts in the folder. Navigation property. Read-only. Nullable.
-    - `[Categories <String[]>]`: The categories associated with the item
-    - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
+`CHILDFOLDERS <IMicrosoftGraphContactFolder[]>`: The collection of child folders in the folder. Navigation property. Read-only. Nullable.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
+  - `[ChildFolders <IMicrosoftGraphContactFolder[]>]`: The collection of child folders in the folder. Navigation property. Read-only. Nullable.
+  - `[Contacts <IMicrosoftGraphContact[]>]`: The contacts in the folder. Navigation property. Read-only. Nullable.
+    - `[Categories <String[]>]`: 
+    - `[ChangeKey <String>]`: 
     - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[AssistantName <String>]`: The name of the contact's assistant.
     - `[Birthday <DateTime?>]`: The contact's birthday. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[Children <String[]>]`: The names of the contact's children.
@@ -418,12 +414,12 @@ CHILDFOLDERS <IMicrosoftGraphContactFolder1\[]>: The collection of child folders
     - `[Department <String>]`: The contact's department.
     - `[DisplayName <String>]`: The contact's display name. You can specify the display name in a create or update operation. Note that later updates to other properties may cause an automatically generated value to overwrite the displayName value you have specified. To preserve a pre-existing value, always include it as displayName in an update operation.
     - `[EmailAddresses <IMicrosoftGraphTypedEmailAddress[]>]`: The contact's email addresses.
-      - `[Address <String>]`: The email address of the person or entity.
-      - `[Name <String>]`: The display name of the person or entity.
+      - `[Address <String>]`: The email address of an entity instance.
+      - `[Name <String>]`: The display name of an entity instance.
       - `[OtherLabel <String>]`: To specify a custom type of email address, set type to other, and assign otherLabel to a custom string. For example, you may use a specific email address for your volunteer activities. Set type to other, and set otherLabel to a custom string such as Volunteer work.
       - `[Type <String>]`: emailType
     - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the contact. Nullable.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[FileAs <String>]`: The name the contact is filed under.
     - `[Flag <IMicrosoftGraphFollowupFlag>]`: followupFlag
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -444,7 +440,7 @@ CHILDFOLDERS <IMicrosoftGraphContactFolder1\[]>: The collection of child folders
     - `[Manager <String>]`: 
     - `[MiddleName <String>]`: 
     - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the contact. Read-only. Nullable.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Value <String[]>]`: A collection of property values.
     - `[NickName <String>]`: 
     - `[OfficeLocation <String>]`: 
@@ -455,10 +451,10 @@ CHILDFOLDERS <IMicrosoftGraphContactFolder1\[]>: The collection of child folders
       - `[Type <String>]`: phoneType
     - `[Photo <IMicrosoftGraphProfilePhoto>]`: profilePhoto
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Height <Int32?>]`: The height of the photo. Read-only.
       - `[Width <Int32?>]`: The width of the photo. Read-only.
-    - `[PostalAddresses <IMicrosoftGraphPhysicalAddress1[]>]`: 
+    - `[PostalAddresses <IMicrosoftGraphPhysicalAddress[]>]`: 
       - `[City <String>]`: The city.
       - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
       - `[PostOfficeBox <String>]`: The post office box number.
@@ -468,7 +464,7 @@ CHILDFOLDERS <IMicrosoftGraphContactFolder1\[]>: The collection of child folders
       - `[Type <String>]`: physicalAddressType
     - `[Profession <String>]`: 
     - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the contact. Read-only. Nullable.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Value <String>]`: A property value.
     - `[SpouseName <String>]`: 
     - `[Surname <String>]`: 
@@ -487,12 +483,12 @@ CHILDFOLDERS <IMicrosoftGraphContactFolder1\[]>: The collection of child folders
   - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the contactFolder. Read-only. Nullable.
   - `[WellKnownName <String>]`: The name of the folder if the folder is a recognized folder. Currently contacts is the only recognized contacts folder.
 
-CONTACTS <IMicrosoftGraphContact1\[]>: The contacts in the folder. Navigation property. Read-only. Nullable.
-  - `[Categories <String[]>]`: The categories associated with the item
-  - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
+`CONTACTS <IMicrosoftGraphContact[]>`: The contacts in the folder. Navigation property. Read-only. Nullable.
+  - `[Categories <String[]>]`: 
+  - `[ChangeKey <String>]`: 
   - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AssistantName <String>]`: The name of the contact's assistant.
   - `[Birthday <DateTime?>]`: The contact's birthday. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[Children <String[]>]`: The names of the contact's children.
@@ -500,12 +496,12 @@ CONTACTS <IMicrosoftGraphContact1\[]>: The contacts in the folder. Navigation pr
   - `[Department <String>]`: The contact's department.
   - `[DisplayName <String>]`: The contact's display name. You can specify the display name in a create or update operation. Note that later updates to other properties may cause an automatically generated value to overwrite the displayName value you have specified. To preserve a pre-existing value, always include it as displayName in an update operation.
   - `[EmailAddresses <IMicrosoftGraphTypedEmailAddress[]>]`: The contact's email addresses.
-    - `[Address <String>]`: The email address of the person or entity.
-    - `[Name <String>]`: The display name of the person or entity.
+    - `[Address <String>]`: The email address of an entity instance.
+    - `[Name <String>]`: The display name of an entity instance.
     - `[OtherLabel <String>]`: To specify a custom type of email address, set type to other, and assign otherLabel to a custom string. For example, you may use a specific email address for your volunteer activities. Set type to other, and set otherLabel to a custom string such as Volunteer work.
     - `[Type <String>]`: emailType
   - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the contact. Nullable.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[FileAs <String>]`: The name the contact is filed under.
   - `[Flag <IMicrosoftGraphFollowupFlag>]`: followupFlag
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -526,7 +522,7 @@ CONTACTS <IMicrosoftGraphContact1\[]>: The contacts in the folder. Navigation pr
   - `[Manager <String>]`: 
   - `[MiddleName <String>]`: 
   - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the contact. Read-only. Nullable.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Value <String[]>]`: A collection of property values.
   - `[NickName <String>]`: 
   - `[OfficeLocation <String>]`: 
@@ -537,10 +533,10 @@ CONTACTS <IMicrosoftGraphContact1\[]>: The contacts in the folder. Navigation pr
     - `[Type <String>]`: phoneType
   - `[Photo <IMicrosoftGraphProfilePhoto>]`: profilePhoto
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Height <Int32?>]`: The height of the photo. Read-only.
     - `[Width <Int32?>]`: The width of the photo. Read-only.
-  - `[PostalAddresses <IMicrosoftGraphPhysicalAddress1[]>]`: 
+  - `[PostalAddresses <IMicrosoftGraphPhysicalAddress[]>]`: 
     - `[City <String>]`: The city.
     - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
     - `[PostOfficeBox <String>]`: The post office box number.
@@ -550,7 +546,7 @@ CONTACTS <IMicrosoftGraphContact1\[]>: The contacts in the folder. Navigation pr
     - `[Type <String>]`: physicalAddressType
   - `[Profession <String>]`: 
   - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the contact. Read-only. Nullable.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Value <String>]`: A property value.
   - `[SpouseName <String>]`: 
   - `[Surname <String>]`: 
@@ -564,21 +560,19 @@ CONTACTS <IMicrosoftGraphContact1\[]>: The contacts in the folder. Navigation pr
   - `[YomiGivenName <String>]`: 
   - `[YomiSurname <String>]`: 
 
-INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
+`INPUTOBJECT <IPersonalContactsIdentity>`: Identity Parameter
   - `[ContactFolderId <String>]`: The unique identifier of contactFolder
   - `[ContactFolderId1 <String>]`: The unique identifier of contactFolder
   - `[ContactId <String>]`: The unique identifier of contact
   - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
   - `[UserId <String>]`: The unique identifier of user
 
-MULTIVALUEEXTENDEDPROPERTIES <IMicrosoftGraphMultiValueLegacyExtendedProperty\[]>: The collection of multi-value extended properties defined for the contactFolder. Read-only. Nullable.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`MULTIVALUEEXTENDEDPROPERTIES <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>`: The collection of multi-value extended properties defined for the contactFolder. Read-only. Nullable.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Value <String[]>]`: A collection of property values.
 
-SINGLEVALUEEXTENDEDPROPERTIES <IMicrosoftGraphSingleValueLegacyExtendedProperty\[]>: The collection of single-value extended properties defined for the contactFolder. Read-only. Nullable.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`SINGLEVALUEEXTENDEDPROPERTIES <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>`: The collection of single-value extended properties defined for the contactFolder. Read-only. Nullable.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Value <String>]`: A property value.
 
 ## RELATED LINKS

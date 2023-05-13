@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/enable-mgdevicemanagementandroiddeviceadministratorenrollment
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/enable-mgbetadevicemanagementandroiddeviceadministratorenrollment
 schema: 2.0.0
 ---
 
-# Enable-MgDeviceManagementAndroidDeviceAdministratorEnrollment
+# Enable-MgBetaDeviceManagementAndroidDeviceAdministratorEnrollment
 
 ## SYNOPSIS
 Invoke action enableAndroidDeviceAdministratorEnrollment
@@ -13,7 +13,7 @@ Invoke action enableAndroidDeviceAdministratorEnrollment
 ## SYNTAX
 
 ```
-Enable-MgDeviceManagementAndroidDeviceAdministratorEnrollment [-PassThru] [-WhatIf] [-Confirm]
+Enable-MgBetaDeviceManagementAndroidDeviceAdministratorEnrollment [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -21,6 +21,20 @@ Enable-MgDeviceManagementAndroidDeviceAdministratorEnrollment [-PassThru] [-What
 Invoke action enableAndroidDeviceAdministratorEnrollment
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 

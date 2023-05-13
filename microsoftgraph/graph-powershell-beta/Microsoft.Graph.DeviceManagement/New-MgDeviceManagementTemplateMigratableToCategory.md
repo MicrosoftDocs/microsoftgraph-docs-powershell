@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementtemplatemigratabletocategory
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementtemplatemigratabletocategory
 schema: 2.0.0
 ---
 
-# New-MgDeviceManagementTemplateMigratableToCategory
+# New-MgBetaDeviceManagementTemplateMigratableToCategory
 
 ## SYNOPSIS
 Create new navigation property to categories for deviceManagement
@@ -14,7 +14,7 @@ Create new navigation property to categories for deviceManagement
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementTemplateMigratableToCategory -DeviceManagementTemplateId <String>
+New-MgBetaDeviceManagementTemplateMigratableToCategory -DeviceManagementTemplateId <String>
  -DeviceManagementTemplateId1 <String> [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
  [-HasRequiredSetting] [-Id <String>] [-RecommendedSettings <IMicrosoftGraphDeviceManagementSettingInstance[]>]
  [-SettingDefinitions <IMicrosoftGraphDeviceManagementSettingDefinition[]>] [-WhatIf] [-Confirm]
@@ -23,14 +23,14 @@ New-MgDeviceManagementTemplateMigratableToCategory -DeviceManagementTemplateId <
 
 ### Create
 ```
-New-MgDeviceManagementTemplateMigratableToCategory -DeviceManagementTemplateId <String>
+New-MgBetaDeviceManagementTemplateMigratableToCategory -DeviceManagementTemplateId <String>
  -DeviceManagementTemplateId1 <String> -BodyParameter <IMicrosoftGraphDeviceManagementTemplateSettingCategory>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgDeviceManagementTemplateMigratableToCategory -InputObject <IDeviceManagementIdentity>
+New-MgBetaDeviceManagementTemplateMigratableToCategory -InputObject <IDeviceManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-HasRequiredSetting] [-Id <String>]
  [-RecommendedSettings <IMicrosoftGraphDeviceManagementSettingInstance[]>]
  [-SettingDefinitions <IMicrosoftGraphDeviceManagementSettingDefinition[]>] [-WhatIf] [-Confirm]
@@ -39,7 +39,7 @@ New-MgDeviceManagementTemplateMigratableToCategory -InputObject <IDeviceManageme
 
 ### CreateViaIdentity
 ```
-New-MgDeviceManagementTemplateMigratableToCategory -InputObject <IDeviceManagementIdentity>
+New-MgBetaDeviceManagementTemplateMigratableToCategory -InputObject <IDeviceManagementIdentity>
  -BodyParameter <IMicrosoftGraphDeviceManagementTemplateSettingCategory> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
@@ -48,6 +48,20 @@ New-MgDeviceManagementTemplateMigratableToCategory -InputObject <IDeviceManageme
 Create new navigation property to categories for deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -68,7 +82,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Entity representing a template setting category
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementTemplateSettingCategory
@@ -143,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -160,7 +174,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementIdentity
@@ -176,7 +190,7 @@ Accept wildcard characters: False
 
 ### -RecommendedSettings
 The settings this category contains
-To construct, please use Get-Help -Online and see NOTES section for RECOMMENDEDSETTINGS properties and create a hash table.
+To construct, see NOTES section for RECOMMENDEDSETTINGS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementSettingInstance[]
@@ -192,7 +206,7 @@ Accept wildcard characters: False
 
 ### -SettingDefinitions
 The setting definitions this category contains
-To construct, please use Get-Help -Online and see NOTES section for SETTINGDEFINITIONS properties and create a hash table.
+To construct, see NOTES section for SETTINGDEFINITIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementSettingDefinition[]
@@ -242,11 +256,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementTemplateSettingCategory
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementTemplateSettingCategory
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementTemplateSettingCategory
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementTemplateSettingCategory
 ## NOTES
 
 ALIASES
@@ -256,12 +270,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDeviceManagementTemplateSettingCategory>`: Entity representing a template setting category
+`BODYPARAMETER <IMicrosoftGraphDeviceManagementTemplateSettingCategory>`: Entity representing a template setting category
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: The category name
   - `[HasRequiredSetting <Boolean?>]`: The category contains top level required setting
   - `[SettingDefinitions <IMicrosoftGraphDeviceManagementSettingDefinition[]>]`: The setting definitions this category contains
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Constraints <IMicrosoftGraphDeviceManagementConstraint[]>]`: Collection of constraints for the setting value
     - `[Dependencies <IMicrosoftGraphDeviceManagementSettingDependency[]>]`: Collection of dependencies on other settings
       - `[Constraints <IMicrosoftGraphDeviceManagementConstraint[]>]`: Collection of constraints for the dependency setting value
@@ -275,13 +289,13 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagementTemplateSettingCategory>`: Entity
     - `[Keywords <String[]>]`: Keywords associated with the setting
     - `[PlaceholderText <String>]`: Placeholder text as an example of valid input
     - `[ValueType <DeviceManangementIntentValueType?>]`: deviceManangementIntentValueType
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[RecommendedSettings <IMicrosoftGraphDeviceManagementSettingInstance[]>]`: The settings this category contains
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[DefinitionId <String>]`: The ID of the setting definition for this instance
     - `[ValueJson <String>]`: JSON representation of the value
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementIdentity>`: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: The unique identifier of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: The unique identifier of androidManagedStoreAppConfigurationSchema
@@ -413,14 +427,16 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionAppLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionAppLearningSummary
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
+  - `[WindowsQualityUpdateProfileAssignmentId <String>]`: The unique identifier of windowsQualityUpdateProfileAssignment
+  - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
-RECOMMENDEDSETTINGS <IMicrosoftGraphDeviceManagementSettingInstance\[]>: The settings this category contains
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`RECOMMENDEDSETTINGS <IMicrosoftGraphDeviceManagementSettingInstance[]>`: The settings this category contains
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DefinitionId <String>]`: The ID of the setting definition for this instance
   - `[ValueJson <String>]`: JSON representation of the value
 
-SETTINGDEFINITIONS <IMicrosoftGraphDeviceManagementSettingDefinition\[]>: The setting definitions this category contains
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`SETTINGDEFINITIONS <IMicrosoftGraphDeviceManagementSettingDefinition[]>`: The setting definitions this category contains
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Constraints <IMicrosoftGraphDeviceManagementConstraint[]>]`: Collection of constraints for the setting value
   - `[Dependencies <IMicrosoftGraphDeviceManagementSettingDependency[]>]`: Collection of dependencies on other settings
     - `[Constraints <IMicrosoftGraphDeviceManagementConstraint[]>]`: Collection of constraints for the dependency setting value

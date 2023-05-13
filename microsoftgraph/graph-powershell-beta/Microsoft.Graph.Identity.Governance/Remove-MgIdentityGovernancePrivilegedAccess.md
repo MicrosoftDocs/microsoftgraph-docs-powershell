@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.Governance-help.xml
-Module Name: Microsoft.Graph.Identity.Governance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/remove-mgidentitygovernanceprivilegedaccess
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.Governance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaidentitygovernanceprivilegedaccess
 schema: 2.0.0
 ---
 
-# Remove-MgIdentityGovernancePrivilegedAccess
+# Remove-MgBetaIdentityGovernancePrivilegedAccess
 
 ## SYNOPSIS
 Delete navigation property privilegedAccess for identityGovernance
@@ -13,7 +13,7 @@ Delete navigation property privilegedAccess for identityGovernance
 ## SYNTAX
 
 ```
-Remove-MgIdentityGovernancePrivilegedAccess [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+Remove-MgBetaIdentityGovernancePrivilegedAccess [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -21,6 +21,16 @@ Remove-MgIdentityGovernancePrivilegedAccess [-IfMatch <String>] [-PassThru] [-Wh
 Delete navigation property privilegedAccess for identityGovernance
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 

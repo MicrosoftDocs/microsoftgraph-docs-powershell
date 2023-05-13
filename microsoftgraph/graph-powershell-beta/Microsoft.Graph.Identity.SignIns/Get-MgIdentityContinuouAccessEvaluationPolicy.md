@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgidentitycontinuouaccessevaluationpolicy
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentitycontinuouaccessevaluationpolicy
 schema: 2.0.0
 ---
 
-# Get-MgIdentityContinuouAccessEvaluationPolicy
+# Get-MgBetaIdentityContinuouAccessEvaluationPolicy
 
 ## SYNOPSIS
 Read the properties and relationships of a continuousAccessEvaluationPolicy object.
@@ -13,7 +13,7 @@ Read the properties and relationships of a continuousAccessEvaluationPolicy obje
 ## SYNTAX
 
 ```
-Get-MgIdentityContinuouAccessEvaluationPolicy [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaIdentityContinuouAccessEvaluationPolicy [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
@@ -22,14 +22,11 @@ Read the properties and relationships of a continuousAccessEvaluationPolicy obje
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgIdentityContinuouAccessEvaluationPolicy Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
-Get-MgIdentityContinuouAccessEvaluationPolicy
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+Get-MgBetaIdentityContinuouAccessEvaluationPolicy
 ```
-
-This example shows how to use the Get-MgIdentityContinuouAccessEvaluationPolicy Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -70,7 +67,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContinuousAccessEvaluationPolicy
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphContinuousAccessEvaluationPolicy
 ## NOTES
 
 ALIASES

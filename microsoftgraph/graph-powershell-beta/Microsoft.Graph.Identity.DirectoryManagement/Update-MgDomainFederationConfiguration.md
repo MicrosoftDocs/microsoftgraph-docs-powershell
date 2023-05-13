@@ -1,64 +1,62 @@
----
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdomainfederationconfiguration
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadomainfederationconfiguration
 schema: 2.0.0
 ---
 
-# Update-MgDomainFederationConfiguration
+# Update-MgBetaDomainFederationConfiguration
 
 ## SYNOPSIS
-Update the navigation property federationConfiguration in domains
+Update the properties of an internalDomainFederation object.
 
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
-Update-MgDomainFederationConfiguration -DomainId <String> -InternalDomainFederationId <String>
+Update-MgBetaDomainFederationConfiguration -DomainId <String> -InternalDomainFederationId <String>
  [-ActiveSignInUri <String>] [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
  [-FederatedIdpMfaBehavior <String>] [-Id <String>] [-IsSignedAuthenticationRequestRequired]
  [-IssuerUri <String>] [-MetadataExchangeUri <String>] [-NextSigningCertificate <String>]
  [-PassiveSignInUri <String>] [-PreferredAuthenticationProtocol <String>] [-PromptLoginBehavior <String>]
  [-SignOutUri <String>] [-SigningCertificate <String>]
- [-SigningCertificateUpdateStatus <IMicrosoftGraphSigningCertificateUpdateStatus>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-SigningCertificateUpdateStatus <IMicrosoftGraphSigningCertificateUpdateStatus>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgDomainFederationConfiguration -DomainId <String> -InternalDomainFederationId <String>
- -BodyParameter <IMicrosoftGraphInternalDomainFederation> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaDomainFederationConfiguration -DomainId <String> -InternalDomainFederationId <String>
+ -BodyParameter <IMicrosoftGraphInternalDomainFederation> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgDomainFederationConfiguration -InputObject <IIdentityDirectoryManagementIdentity>
+Update-MgBetaDomainFederationConfiguration -InputObject <IIdentityDirectoryManagementIdentity>
  [-ActiveSignInUri <String>] [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
  [-FederatedIdpMfaBehavior <String>] [-Id <String>] [-IsSignedAuthenticationRequestRequired]
  [-IssuerUri <String>] [-MetadataExchangeUri <String>] [-NextSigningCertificate <String>]
  [-PassiveSignInUri <String>] [-PreferredAuthenticationProtocol <String>] [-PromptLoginBehavior <String>]
  [-SignOutUri <String>] [-SigningCertificate <String>]
- [-SigningCertificateUpdateStatus <IMicrosoftGraphSigningCertificateUpdateStatus>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-SigningCertificateUpdateStatus <IMicrosoftGraphSigningCertificateUpdateStatus>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgDomainFederationConfiguration -InputObject <IIdentityDirectoryManagementIdentity>
- -BodyParameter <IMicrosoftGraphInternalDomainFederation> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaDomainFederationConfiguration -InputObject <IIdentityDirectoryManagementIdentity>
+ -BodyParameter <IMicrosoftGraphInternalDomainFederation> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property federationConfiguration in domains
+Update the properties of an internalDomainFederation object.
 
 ## EXAMPLES
 
-### Example 1: Update the federation settings for a federated domain
+### EXAMPLE 1
 ```powershell
-Update-MgDomainFederationConfiguration -DomainId 'contoso.com' -InternalDomainFederationId '2a8ce608-bb34-473f-9e0f-f373ee4cbc5a' -DisplayName "Contoso name change"
+Update-MgBetaDomainFederationConfiguration -DomainId 'contoso.com' -InternalDomainFederationId '2a8ce608-bb34-473f-9e0f-f373ee4cbc5a' -DisplayName "Contoso name change"
 ```
-
-This example updates the DisplayName setting.
 
 ## PARAMETERS
 
@@ -95,7 +93,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 internalDomainFederation
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphInternalDomainFederation
@@ -155,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -172,7 +170,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IIdentityDirectoryManagementIdentity
@@ -280,21 +278,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -PreferredAuthenticationProtocol
 authenticationProtocol
 
@@ -346,7 +329,7 @@ Accept wildcard characters: False
 
 ### -SigningCertificateUpdateStatus
 signingCertificateUpdateStatus
-To construct, please use Get-Help -Online and see NOTES section for SIGNINGCERTIFICATEUPDATESTATUS properties and create a hash table.
+To construct, see NOTES section for SIGNINGCERTIFICATEUPDATESTATUS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSigningCertificateUpdateStatus
@@ -412,11 +395,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInternalDomainFederation
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInternalDomainFederation
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInternalDomainFederation
 ## NOTES
 
 ALIASES
@@ -426,7 +409,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphInternalDomainFederation>`: internalDomainFederation
+`BODYPARAMETER <IMicrosoftGraphInternalDomainFederation>`: internalDomainFederation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[IssuerUri <String>]`: Issuer URI of the federation server.
   - `[MetadataExchangeUri <String>]`: URI of the metadata exchange endpoint used for authentication from rich client applications.
@@ -434,7 +417,7 @@ BODYPARAMETER `<IMicrosoftGraphInternalDomainFederation>`: internalDomainFederat
   - `[PreferredAuthenticationProtocol <String>]`: authenticationProtocol
   - `[SigningCertificate <String>]`: Current certificate used to sign tokens passed to the Microsoft identity platform. The certificate is formatted as a Base64 encoded string of the public portion of the federated IdP's token signing certificate and must be compatible with the X509Certificate2 class.   This property is used in the following scenarios:  if a rollover is required outside of the autorollover update a new federation service is being set up  if the new token signing certificate isn't present in the federation properties after the federation service certificate has been updated.   Azure AD updates certificates via an autorollover process in which it attempts to retrieve a new certificate from the federation service metadata, 30 days before expiry of the current certificate. If a new certificate isn't available, Azure AD monitors the metadata daily and will update the federation settings for the domain when a new certificate is available.
   - `[DisplayName <String>]`: The display name of the identity provider.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ActiveSignInUri <String>]`: URL of the endpoint used by active clients when authenticating with federated domains set up for single sign-on in Azure Active Directory (Azure AD). Corresponds to the ActiveLogOnUri property of the Set-MsolDomainFederationSettings MSOnline v1 PowerShell cmdlet.
   - `[FederatedIdpMfaBehavior <String>]`: federatedIdpMfaBehavior
   - `[IsSignedAuthenticationRequestRequired <Boolean?>]`: If true, when SAML authentication requests are sent to the federated SAML IdP, Azure AD will sign those requests using the OrgID signing key. If false (default), the SAML authentication requests sent to the federated IdP are not signed.
@@ -446,7 +429,7 @@ BODYPARAMETER `<IMicrosoftGraphInternalDomainFederation>`: internalDomainFederat
     - `[CertificateUpdateResult <String>]`: Status of the last certificate update. Read-only. For a list of statuses, see certificateUpdateResult status.
     - `[LastRunDateTime <DateTime?>]`: Date and time in ISO 8601 format and in UTC time when the certificate was last updated. Read-only.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
@@ -482,7 +465,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UsageRightId <String>]`: The unique identifier of usageRight
   - `[UserId <String>]`: The unique identifier of user
 
-SIGNINGCERTIFICATEUPDATESTATUS `<IMicrosoftGraphSigningCertificateUpdateStatus>`: signingCertificateUpdateStatus
+`SIGNINGCERTIFICATEUPDATESTATUS <IMicrosoftGraphSigningCertificateUpdateStatus>`: signingCertificateUpdateStatus
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CertificateUpdateResult <String>]`: Status of the last certificate update. Read-only. For a list of statuses, see certificateUpdateResult status.
   - `[LastRunDateTime <DateTime?>]`: Date and time in ISO 8601 format and in UTC time when the certificate was last updated. Read-only.

@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecurityattacksimulationautomationrun
+﻿---
+external help file: Microsoft.Graph.Beta.Security-help.xml
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityattacksimulationautomationrun
 schema: 2.0.0
 ---
 
-# Update-MgSecurityAttackSimulationAutomationRun
+# Update-MgBetaSecurityAttackSimulationAutomationRun
 
 ## SYNOPSIS
 Update the navigation property runs in security
@@ -14,36 +14,50 @@ Update the navigation property runs in security
 
 ### UpdateExpanded (Default)
 ```
-Update-MgSecurityAttackSimulationAutomationRun -SimulationAutomationId <String>
+Update-MgBetaSecurityAttackSimulationAutomationRun -SimulationAutomationId <String>
  -SimulationAutomationRunId <String> [-AdditionalProperties <Hashtable>] [-EndDateTime <DateTime>]
- [-Id <String>] [-SimulationId <String>] [-StartDateTime <DateTime>] [-Status <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-Id <String>] [-SimulationId <String>] [-StartDateTime <DateTime>] [-Status <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgSecurityAttackSimulationAutomationRun -SimulationAutomationId <String>
- -SimulationAutomationRunId <String> -BodyParameter <IMicrosoftGraphSimulationAutomationRun> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaSecurityAttackSimulationAutomationRun -SimulationAutomationId <String>
+ -SimulationAutomationRunId <String> -BodyParameter <IMicrosoftGraphSimulationAutomationRun> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgSecurityAttackSimulationAutomationRun -InputObject <ISecurityIdentity>
+Update-MgBetaSecurityAttackSimulationAutomationRun -InputObject <ISecurityIdentity>
  [-AdditionalProperties <Hashtable>] [-EndDateTime <DateTime>] [-Id <String>] [-SimulationId <String>]
- [-StartDateTime <DateTime>] [-Status <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-StartDateTime <DateTime>] [-Status <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgSecurityAttackSimulationAutomationRun -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSimulationAutomationRun> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaSecurityAttackSimulationAutomationRun -InputObject <ISecurityIdentity>
+ -BodyParameter <IMicrosoftGraphSimulationAutomationRun> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property runs in security
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -64,7 +78,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 simulationAutomationRun
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSimulationAutomationRun
@@ -94,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -111,7 +125,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ISecurityIdentity
@@ -122,21 +136,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -251,11 +250,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSimulationAutomationRun
-### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSimulationAutomationRun
+### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSimulationAutomationRun
 ## NOTES
 
 ALIASES
@@ -265,15 +264,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSimulationAutomationRun>`: simulationAutomationRun
+`BODYPARAMETER <IMicrosoftGraphSimulationAutomationRun>`: simulationAutomationRun
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[EndDateTime <DateTime?>]`: Date and time when the run ends in an attack simulation automation.
   - `[SimulationId <String>]`: Unique identifier for the attack simulation campaign initiated in the attack simulation automation run.
   - `[StartDateTime <DateTime?>]`: Date and time when the run starts in an attack simulation automation.
   - `[Status <String>]`: simulationAutomationRunStatus
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+`INPUTOBJECT <ISecurityIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
   - `[ArticleId <String>]`: The unique identifier of article
   - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator

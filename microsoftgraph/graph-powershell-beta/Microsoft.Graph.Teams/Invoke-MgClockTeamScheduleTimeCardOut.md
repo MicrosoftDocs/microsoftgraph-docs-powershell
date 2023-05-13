@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/invoke-mgclockteamscheduletimecardout
+﻿---
+external help file: Microsoft.Graph.Beta.Teams-help.xml
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaclockteamscheduletimecardout
 schema: 2.0.0
 ---
 
-# Invoke-MgClockTeamScheduleTimeCardOut
+# Invoke-MgBetaClockTeamScheduleTimeCardOut
 
 ## SYNOPSIS
 Clock out to end an open timeCard.
@@ -14,26 +14,27 @@ Clock out to end an open timeCard.
 
 ### ClockExpanded (Default)
 ```
-Invoke-MgClockTeamScheduleTimeCardOut -TeamId <String> -TimeCardId <String> [-AdditionalProperties <Hashtable>]
- [-AtApprovedLocation] [-Notes <IMicrosoftGraphItemBody>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgBetaClockTeamScheduleTimeCardOut -TeamId <String> -TimeCardId <String>
+ [-AdditionalProperties <Hashtable>] [-AtApprovedLocation] [-Notes <IMicrosoftGraphItemBody>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Clock
 ```
-Invoke-MgClockTeamScheduleTimeCardOut -TeamId <String> -TimeCardId <String>
+Invoke-MgBetaClockTeamScheduleTimeCardOut -TeamId <String> -TimeCardId <String>
  -BodyParameter <IPaths1Hehk7XTeamsTeamIdScheduleTimecardsTimecardIdMicrosoftGraphClockoutPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ClockViaIdentityExpanded
 ```
-Invoke-MgClockTeamScheduleTimeCardOut -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
+Invoke-MgBetaClockTeamScheduleTimeCardOut -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
  [-AtApprovedLocation] [-Notes <IMicrosoftGraphItemBody>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ClockViaIdentity
 ```
-Invoke-MgClockTeamScheduleTimeCardOut -InputObject <ITeamsIdentity>
+Invoke-MgBetaClockTeamScheduleTimeCardOut -InputObject <ITeamsIdentity>
  -BodyParameter <IPaths1Hehk7XTeamsTeamIdScheduleTimecardsTimecardIdMicrosoftGraphClockoutPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -43,9 +44,9 @@ Clock out to end an open timeCard.
 
 ## EXAMPLES
 
-### Example 1: Using the Invoke-MgClockTeamScheduleTimeCardOut Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Teams
+Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
 	AtAprovedLocation = $true
 	Notes = @{
@@ -53,11 +54,8 @@ $params = @{
 		Content = "clock out smaple notes"
 	}
 }
-Invoke-MgClockTeamScheduleTimeCardOut -TeamId $teamId -TimeCardId $timeCardId -BodyParameter $params
+Invoke-MgBetaClockTeamScheduleTimeCardOut -TeamId $teamId -TimeCardId $timeCardId -BodyParameter $params
 ```
-
-This example shows how to use the Invoke-MgClockTeamScheduleTimeCardOut Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -93,7 +91,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths1Hehk7XTeamsTeamIdScheduleTimecardsTimecardIdMicrosoftGraphClockoutPostRequestbodyContentApplicationJsonSchema
@@ -109,7 +107,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ITeamsIdentity
@@ -125,7 +123,7 @@ Accept wildcard characters: False
 
 ### -Notes
 itemBody
-To construct, please use Get-Help -Online and see NOTES section for NOTES properties and create a hash table.
+To construct, see NOTES section for NOTES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphItemBody
@@ -205,11 +203,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1Hehk7XTeamsTeamIdScheduleTimecardsTimecardIdMicrosoftGraphClockoutPostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Hehk7XTeamsTeamIdScheduleTimecardsTimecardIdMicrosoftGraphClockoutPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTimeCard
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTimeCard
 ## NOTES
 
 ALIASES
@@ -219,7 +217,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Hehk7XTeamsTeamIdScheduleTimecardsTimecardIdMicrosoftGraphClockoutPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1Hehk7XTeamsTeamIdScheduleTimecardsTimecardIdMicrosoftGraphClockoutPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AtApprovedLocation <Boolean?>]`: 
   - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
@@ -227,7 +225,7 @@ BODYPARAMETER `<IPaths1Hehk7XTeamsTeamIdScheduleTimecardsTimecardIdMicrosoftGrap
     - `[Content <String>]`: The content of the item.
     - `[ContentType <String>]`: bodyType
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat
@@ -266,7 +264,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
-NOTES `<IMicrosoftGraphItemBody>`: itemBody
+`NOTES <IMicrosoftGraphItemBody>`: itemBody
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Content <String>]`: The content of the item.
   - `[ContentType <String>]`: bodyType

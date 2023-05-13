@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/move-mgdevicemanagementintenttotemplate
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/move-mgbetadevicemanagementintenttotemplate
 schema: 2.0.0
 ---
 
-# Move-MgDeviceManagementIntentToTemplate
+# Move-MgBetaDeviceManagementIntentToTemplate
 
 ## SYNOPSIS
 Invoke action migrateToTemplate
@@ -14,27 +14,28 @@ Invoke action migrateToTemplate
 
 ### MigrateExpanded (Default)
 ```
-Move-MgDeviceManagementIntentToTemplate -DeviceManagementIntentId <String> [-AdditionalProperties <Hashtable>]
- [-NewTemplateId <String>] [-PreserveCustomValues] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Move-MgBetaDeviceManagementIntentToTemplate -DeviceManagementIntentId <String>
+ [-AdditionalProperties <Hashtable>] [-NewTemplateId <String>] [-PreserveCustomValues] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Migrate
 ```
-Move-MgDeviceManagementIntentToTemplate -DeviceManagementIntentId <String>
+Move-MgBetaDeviceManagementIntentToTemplate -DeviceManagementIntentId <String>
  -BodyParameter <IPaths1S6He5TDevicemanagementIntentsDevicemanagementintentIdMicrosoftGraphMigratetotemplatePostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### MigrateViaIdentityExpanded
 ```
-Move-MgDeviceManagementIntentToTemplate -InputObject <IDeviceManagementActionsIdentity>
+Move-MgBetaDeviceManagementIntentToTemplate -InputObject <IDeviceManagementActionsIdentity>
  [-AdditionalProperties <Hashtable>] [-NewTemplateId <String>] [-PreserveCustomValues] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### MigrateViaIdentity
 ```
-Move-MgDeviceManagementIntentToTemplate -InputObject <IDeviceManagementActionsIdentity>
+Move-MgBetaDeviceManagementIntentToTemplate -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPaths1S6He5TDevicemanagementIntentsDevicemanagementintentIdMicrosoftGraphMigratetotemplatePostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -43,6 +44,20 @@ Move-MgDeviceManagementIntentToTemplate -InputObject <IDeviceManagementActionsId
 Invoke action migrateToTemplate
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -63,7 +78,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths1S6He5TDevicemanagementIntentsDevicemanagementintentIdMicrosoftGraphMigratetotemplatePostRequestbodyContentApplicationJsonSchema
@@ -94,7 +109,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementActionsIdentity
@@ -189,8 +204,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths1S6He5TDevicemanagementIntentsDevicemanagementintentIdMicrosoftGraphMigratetotemplatePostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1S6He5TDevicemanagementIntentsDevicemanagementintentIdMicrosoftGraphMigratetotemplatePostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### System.Boolean
@@ -203,12 +218,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1S6He5TDevicemanagementIntentsDevicemanagementintentIdMicrosoftGraphMigratetotemplatePostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1S6He5TDevicemanagementIntentsDevicemanagementintentIdMicrosoftGraphMigratetotemplatePostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[NewTemplateId <String>]`: 
   - `[PreserveCustomValues <Boolean?>]`: 
 
-INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[AlertRecordId <String>]`: The unique identifier of alertRecord
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: The unique identifier of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: The unique identifier of androidForWorkEnrollmentProfile
@@ -252,7 +267,6 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[MicrosoftTunnelSiteId <String>]`: The unique identifier of microsoftTunnelSite
   - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
   - `[NotificationMessageTemplateId <String>]`: The unique identifier of notificationMessageTemplate
-  - `[OemWarrantyInformationOnboardingId <String>]`: The unique identifier of oemWarrantyInformationOnboarding
   - `[RemoteAssistancePartnerId <String>]`: The unique identifier of remoteAssistancePartner
   - `[RoleScopeTagId <String>]`: The unique identifier of roleScopeTag
   - `[WindowsAutopilotDeploymentProfileId <String>]`: The unique identifier of windowsAutopilotDeploymentProfile

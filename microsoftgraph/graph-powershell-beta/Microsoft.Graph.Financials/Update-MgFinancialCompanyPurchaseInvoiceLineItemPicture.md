@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Financials-help.xml
-Module Name: Microsoft.Graph.Financials
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.financials/update-mgfinancialcompanypurchaseinvoicelineitempicture
+﻿---
+external help file: Microsoft.Graph.Beta.Financials-help.xml
+Module Name: Microsoft.Graph.Beta.Financials
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanypurchaseinvoicelineitempicture
 schema: 2.0.0
 ---
 
-# Update-MgFinancialCompanyPurchaseInvoiceLineItemPicture
+# Update-MgBetaFinancialCompanyPurchaseInvoiceLineItemPicture
 
 ## SYNOPSIS
 Update the navigation property picture in financials
@@ -14,64 +14,78 @@ Update the navigation property picture in financials
 
 ### UpdateExpanded (Default)
 ```
-Update-MgFinancialCompanyPurchaseInvoiceLineItemPicture -CompanyId <String> -PictureId <String>
+Update-MgBetaFinancialCompanyPurchaseInvoiceLineItemPicture -CompanyId <String> -PictureId <String>
  -PurchaseInvoiceLineId <String> [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>]
- [-ContentType <String>] [-Height <Int32>] [-Id <String>] [-Width <Int32>] [-PassThru] [-WhatIf] [-Confirm]
+ [-ContentType <String>] [-Height <Int32>] [-Id <String>] [-Width <Int32>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### UpdateExpanded1
 ```
-Update-MgFinancialCompanyPurchaseInvoiceLineItemPicture -CompanyId <String> -PictureId <String>
+Update-MgBetaFinancialCompanyPurchaseInvoiceLineItemPicture -CompanyId <String> -PictureId <String>
  -PurchaseInvoiceLineId <String> -PurchaseInvoiceId <String> [-AdditionalProperties <Hashtable>]
  [-ContentInputFile <String>] [-ContentType <String>] [-Height <Int32>] [-Id <String>] [-Width <Int32>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update1
 ```
-Update-MgFinancialCompanyPurchaseInvoiceLineItemPicture -CompanyId <String> -PictureId <String>
- -PurchaseInvoiceLineId <String> -PurchaseInvoiceId <String> -BodyParameter <IMicrosoftGraphPicture>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaFinancialCompanyPurchaseInvoiceLineItemPicture -CompanyId <String> -PictureId <String>
+ -PurchaseInvoiceLineId <String> -PurchaseInvoiceId <String> -BodyParameter <IMicrosoftGraphPicture> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgFinancialCompanyPurchaseInvoiceLineItemPicture -CompanyId <String> -PictureId <String>
- -PurchaseInvoiceLineId <String> -BodyParameter <IMicrosoftGraphPicture> [-PassThru] [-WhatIf] [-Confirm]
+Update-MgBetaFinancialCompanyPurchaseInvoiceLineItemPicture -CompanyId <String> -PictureId <String>
+ -PurchaseInvoiceLineId <String> -BodyParameter <IMicrosoftGraphPicture> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded1
 ```
-Update-MgFinancialCompanyPurchaseInvoiceLineItemPicture -InputObject <IFinancialsIdentity>
+Update-MgBetaFinancialCompanyPurchaseInvoiceLineItemPicture -InputObject <IFinancialsIdentity>
  [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>] [-ContentType <String>] [-Height <Int32>]
- [-Id <String>] [-Width <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Id <String>] [-Width <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgFinancialCompanyPurchaseInvoiceLineItemPicture -InputObject <IFinancialsIdentity>
+Update-MgBetaFinancialCompanyPurchaseInvoiceLineItemPicture -InputObject <IFinancialsIdentity>
  [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>] [-ContentType <String>] [-Height <Int32>]
- [-Id <String>] [-Width <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Id <String>] [-Width <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity1
 ```
-Update-MgFinancialCompanyPurchaseInvoiceLineItemPicture -InputObject <IFinancialsIdentity>
- -BodyParameter <IMicrosoftGraphPicture> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaFinancialCompanyPurchaseInvoiceLineItemPicture -InputObject <IFinancialsIdentity>
+ -BodyParameter <IMicrosoftGraphPicture> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgFinancialCompanyPurchaseInvoiceLineItemPicture -InputObject <IFinancialsIdentity>
- -BodyParameter <IMicrosoftGraphPicture> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaFinancialCompanyPurchaseInvoiceLineItemPicture -InputObject <IFinancialsIdentity>
+ -BodyParameter <IMicrosoftGraphPicture> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property picture in financials
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -92,7 +106,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 picture
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPicture
@@ -107,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -CompanyId
-key: id of company
+The unique identifier of company
 
 ```yaml
 Type: String
@@ -184,7 +198,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IFinancialsIdentity
@@ -198,23 +212,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -PictureId
-key: id of picture
+The unique identifier of picture
 
 ```yaml
 Type: String
@@ -229,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -PurchaseInvoiceId
-key: id of purchaseInvoice
+The unique identifier of purchaseInvoice
 
 ```yaml
 Type: String
@@ -244,7 +243,7 @@ Accept wildcard characters: False
 ```
 
 ### -PurchaseInvoiceLineId
-key: id of purchaseInvoiceLine
+The unique identifier of purchaseInvoiceLine
 
 ```yaml
 Type: String
@@ -309,11 +308,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IFinancialsIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPicture
+### Microsoft.Graph.Beta.PowerShell.Models.IFinancialsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPicture
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPicture
 ## NOTES
 
 ALIASES
@@ -323,7 +322,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPicture>`: picture
+`BODYPARAMETER <IMicrosoftGraphPicture>`: picture
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Content <Byte[]>]`: 
@@ -331,42 +330,42 @@ BODYPARAMETER `<IMicrosoftGraphPicture>`: picture
   - `[Height <Int32?>]`: 
   - `[Width <Int32?>]`: 
 
-INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
-  - `[AccountId <String>]`: key: id of account
-  - `[AgedAccountsPayableId <String>]`: key: id of agedAccountsPayable
-  - `[AgedAccountsReceivableId <String>]`: key: id of agedAccountsReceivable
-  - `[CompanyId <String>]`: key: id of company
-  - `[CompanyInformationId <String>]`: key: id of companyInformation
-  - `[CountryRegionId <String>]`: key: id of countryRegion
-  - `[CurrencyId <String>]`: key: id of currency
-  - `[CustomerId <String>]`: key: id of customer
-  - `[CustomerPaymentId <String>]`: key: id of customerPayment
-  - `[CustomerPaymentJournalId <String>]`: key: id of customerPaymentJournal
-  - `[DimensionId <String>]`: key: id of dimension
-  - `[DimensionValueId <String>]`: key: id of dimensionValue
-  - `[EmployeeId <String>]`: key: id of employee
-  - `[GeneralLedgerEntryId <String>]`: key: id of generalLedgerEntry
-  - `[ItemCategoryId <String>]`: key: id of itemCategory
-  - `[ItemId <String>]`: key: id of item
-  - `[JournalId <String>]`: key: id of journal
-  - `[JournalLineId <String>]`: key: id of journalLine
-  - `[PaymentMethodId <String>]`: key: id of paymentMethod
-  - `[PaymentTermId <String>]`: key: id of paymentTerm
-  - `[PictureId <String>]`: key: id of picture
-  - `[PurchaseInvoiceId <String>]`: key: id of purchaseInvoice
-  - `[PurchaseInvoiceLineId <String>]`: key: id of purchaseInvoiceLine
-  - `[SalesCreditMemoId <String>]`: key: id of salesCreditMemo
-  - `[SalesCreditMemoLineId <String>]`: key: id of salesCreditMemoLine
-  - `[SalesInvoiceId <String>]`: key: id of salesInvoice
-  - `[SalesInvoiceLineId <String>]`: key: id of salesInvoiceLine
-  - `[SalesOrderId <String>]`: key: id of salesOrder
-  - `[SalesOrderLineId <String>]`: key: id of salesOrderLine
-  - `[SalesQuoteId <String>]`: key: id of salesQuote
-  - `[SalesQuoteLineId <String>]`: key: id of salesQuoteLine
-  - `[ShipmentMethodId <String>]`: key: id of shipmentMethod
-  - `[TaxAreaId <String>]`: key: id of taxArea
-  - `[TaxGroupId <String>]`: key: id of taxGroup
-  - `[UnitOfMeasureId <String>]`: key: id of unitOfMeasure
-  - `[VendorId <String>]`: key: id of vendor
+`INPUTOBJECT <IFinancialsIdentity>`: Identity Parameter
+  - `[AccountId <String>]`: The unique identifier of account
+  - `[AgedAccountsPayableId <String>]`: The unique identifier of agedAccountsPayable
+  - `[AgedAccountsReceivableId <String>]`: The unique identifier of agedAccountsReceivable
+  - `[CompanyId <String>]`: The unique identifier of company
+  - `[CompanyInformationId <String>]`: The unique identifier of companyInformation
+  - `[CountryRegionId <String>]`: The unique identifier of countryRegion
+  - `[CurrencyId <String>]`: The unique identifier of currency
+  - `[CustomerId <String>]`: The unique identifier of customer
+  - `[CustomerPaymentId <String>]`: The unique identifier of customerPayment
+  - `[CustomerPaymentJournalId <String>]`: The unique identifier of customerPaymentJournal
+  - `[DimensionId <String>]`: The unique identifier of dimension
+  - `[DimensionValueId <String>]`: The unique identifier of dimensionValue
+  - `[EmployeeId <String>]`: The unique identifier of employee
+  - `[GeneralLedgerEntryId <String>]`: The unique identifier of generalLedgerEntry
+  - `[ItemCategoryId <String>]`: The unique identifier of itemCategory
+  - `[ItemId <String>]`: The unique identifier of item
+  - `[JournalId <String>]`: The unique identifier of journal
+  - `[JournalLineId <String>]`: The unique identifier of journalLine
+  - `[PaymentMethodId <String>]`: The unique identifier of paymentMethod
+  - `[PaymentTermId <String>]`: The unique identifier of paymentTerm
+  - `[PictureId <String>]`: The unique identifier of picture
+  - `[PurchaseInvoiceId <String>]`: The unique identifier of purchaseInvoice
+  - `[PurchaseInvoiceLineId <String>]`: The unique identifier of purchaseInvoiceLine
+  - `[SalesCreditMemoId <String>]`: The unique identifier of salesCreditMemo
+  - `[SalesCreditMemoLineId <String>]`: The unique identifier of salesCreditMemoLine
+  - `[SalesInvoiceId <String>]`: The unique identifier of salesInvoice
+  - `[SalesInvoiceLineId <String>]`: The unique identifier of salesInvoiceLine
+  - `[SalesOrderId <String>]`: The unique identifier of salesOrder
+  - `[SalesOrderLineId <String>]`: The unique identifier of salesOrderLine
+  - `[SalesQuoteId <String>]`: The unique identifier of salesQuote
+  - `[SalesQuoteLineId <String>]`: The unique identifier of salesQuoteLine
+  - `[ShipmentMethodId <String>]`: The unique identifier of shipmentMethod
+  - `[TaxAreaId <String>]`: The unique identifier of taxArea
+  - `[TaxGroupId <String>]`: The unique identifier of taxGroup
+  - `[UnitOfMeasureId <String>]`: The unique identifier of unitOfMeasure
+  - `[VendorId <String>]`: The unique identifier of vendor
 
 ## RELATED LINKS

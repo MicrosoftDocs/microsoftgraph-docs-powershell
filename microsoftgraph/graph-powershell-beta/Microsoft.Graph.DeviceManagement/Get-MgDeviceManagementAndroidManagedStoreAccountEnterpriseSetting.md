@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementandroidmanagedstoreaccountenterprisesetting
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesetting
 schema: 2.0.0
 ---
 
-# Get-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSetting
+# Get-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSetting
 
 ## SYNOPSIS
 The singleton Android managed store account enterprise settings entity.
@@ -13,7 +13,7 @@ The singleton Android managed store account enterprise settings entity.
 ## SYNTAX
 
 ```
-Get-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSetting [-ExpandProperty <String[]>]
+Get-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSetting [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
@@ -21,6 +21,20 @@ Get-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSetting [-ExpandProper
 The singleton Android managed store account enterprise settings entity.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -61,7 +75,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAndroidManagedStoreAccountEnterpriseSettings
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAndroidManagedStoreAccountEnterpriseSettings
 ## NOTES
 
 ALIASES

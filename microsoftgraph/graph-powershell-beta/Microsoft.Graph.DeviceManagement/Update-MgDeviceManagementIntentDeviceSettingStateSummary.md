@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementintentdevicesettingstatesummary
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementintentdevicesettingstatesummary
 schema: 2.0.0
 ---
 
-# Update-MgDeviceManagementIntentDeviceSettingStateSummary
+# Update-MgBetaDeviceManagementIntentDeviceSettingStateSummary
 
 ## SYNOPSIS
 Update the navigation property deviceSettingStateSummaries in deviceManagement
@@ -14,40 +14,54 @@ Update the navigation property deviceSettingStateSummaries in deviceManagement
 
 ### UpdateExpanded (Default)
 ```
-Update-MgDeviceManagementIntentDeviceSettingStateSummary
+Update-MgBetaDeviceManagementIntentDeviceSettingStateSummary
  -DeviceManagementIntentDeviceSettingStateSummaryId <String> -DeviceManagementIntentId <String>
  [-AdditionalProperties <Hashtable>] [-CompliantCount <Int32>] [-ConflictCount <Int32>] [-ErrorCount <Int32>]
  [-Id <String>] [-NonCompliantCount <Int32>] [-NotApplicableCount <Int32>] [-RemediatedCount <Int32>]
- [-SettingName <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SettingName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgDeviceManagementIntentDeviceSettingStateSummary
+Update-MgBetaDeviceManagementIntentDeviceSettingStateSummary
  -DeviceManagementIntentDeviceSettingStateSummaryId <String> -DeviceManagementIntentId <String>
- -BodyParameter <IMicrosoftGraphDeviceManagementIntentDeviceSettingStateSummary> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceManagementIntentDeviceSettingStateSummary> [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgDeviceManagementIntentDeviceSettingStateSummary -InputObject <IDeviceManagementIdentity>
+Update-MgBetaDeviceManagementIntentDeviceSettingStateSummary -InputObject <IDeviceManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-CompliantCount <Int32>] [-ConflictCount <Int32>] [-ErrorCount <Int32>]
  [-Id <String>] [-NonCompliantCount <Int32>] [-NotApplicableCount <Int32>] [-RemediatedCount <Int32>]
- [-SettingName <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SettingName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgDeviceManagementIntentDeviceSettingStateSummary -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceManagementIntentDeviceSettingStateSummary> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgBetaDeviceManagementIntentDeviceSettingStateSummary -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphDeviceManagementIntentDeviceSettingStateSummary> [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property deviceSettingStateSummaries in deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -68,7 +82,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Entity that represents device setting state summary for an intent
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementIntentDeviceSettingStateSummary
@@ -158,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -175,7 +189,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementIdentity
@@ -210,21 +224,6 @@ Number of not applicable devices
 ```yaml
 Type: Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -300,11 +299,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementIntentDeviceSettingStateSummary
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementIntentDeviceSettingStateSummary
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementIntentDeviceSettingStateSummary
 ## NOTES
 
 ALIASES
@@ -314,9 +313,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDeviceManagementIntentDeviceSettingStateSummary>`: Entity that represents device setting state summary for an intent
+`BODYPARAMETER <IMicrosoftGraphDeviceManagementIntentDeviceSettingStateSummary>`: Entity that represents device setting state summary for an intent
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[CompliantCount <Int32?>]`: Number of compliant devices
   - `[ConflictCount <Int32?>]`: Number of devices in conflict
   - `[ErrorCount <Int32?>]`: Number of error devices
@@ -325,7 +324,7 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagementIntentDeviceSettingStateSummary>`
   - `[RemediatedCount <Int32?>]`: Number of remediated devices
   - `[SettingName <String>]`: Name of a setting
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementIdentity>`: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: The unique identifier of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: The unique identifier of androidManagedStoreAppConfigurationSchema
@@ -457,6 +456,8 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionAppLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionAppLearningSummary
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
+  - `[WindowsQualityUpdateProfileAssignmentId <String>]`: The unique identifier of windowsQualityUpdateProfileAssignment
+  - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
 ## RELATED LINKS
 

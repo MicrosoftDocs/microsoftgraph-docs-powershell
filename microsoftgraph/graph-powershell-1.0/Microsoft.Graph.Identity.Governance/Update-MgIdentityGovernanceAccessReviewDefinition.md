@@ -1,18 +1,18 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceaccessreviewdefinition
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceaccessreviewdefinition
 schema: 2.0.0
 ---
 
 # Update-MgIdentityGovernanceAccessReviewDefinition
 
 ## SYNOPSIS
-Update the navigation property definitions in identityGovernance
+Update an existing accessReviewScheduleDefinition object to change one or more of its properties.
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### UpdateExpanded (Default)
 ```
 Update-MgIdentityGovernanceAccessReviewDefinition -AccessReviewScheduleDefinitionId <String>
  [-AdditionalNotificationRecipients <IMicrosoftGraphAccessReviewNotificationRecipientItem[]>]
@@ -22,18 +22,17 @@ Update-MgIdentityGovernanceAccessReviewDefinition -AccessReviewScheduleDefinitio
  [-InstanceEnumerationScope <Hashtable>] [-Instances <IMicrosoftGraphAccessReviewInstance[]>]
  [-LastModifiedDateTime <DateTime>] [-Reviewers <IMicrosoftGraphAccessReviewReviewerScope[]>]
  [-Scope <Hashtable>] [-Settings <IMicrosoftGraphAccessReviewScheduleSettings>]
- [-StageSettings <IMicrosoftGraphAccessReviewStageSettings[]>] [-Status <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### Update1
-```
-Update-MgIdentityGovernanceAccessReviewDefinition -AccessReviewScheduleDefinitionId <String>
- -BodyParameter <IMicrosoftGraphAccessReviewScheduleDefinition> [-PassThru] [-WhatIf] [-Confirm]
+ [-StageSettings <IMicrosoftGraphAccessReviewStageSettings[]>] [-Status <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded1
+### Update
+```
+Update-MgIdentityGovernanceAccessReviewDefinition -AccessReviewScheduleDefinitionId <String>
+ -BodyParameter <IMicrosoftGraphAccessReviewScheduleDefinition> [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
 ```
 Update-MgIdentityGovernanceAccessReviewDefinition -InputObject <IIdentityGovernanceIdentity>
  [-AdditionalNotificationRecipients <IMicrosoftGraphAccessReviewNotificationRecipientItem[]>]
@@ -43,21 +42,34 @@ Update-MgIdentityGovernanceAccessReviewDefinition -InputObject <IIdentityGoverna
  [-InstanceEnumerationScope <Hashtable>] [-Instances <IMicrosoftGraphAccessReviewInstance[]>]
  [-LastModifiedDateTime <DateTime>] [-Reviewers <IMicrosoftGraphAccessReviewReviewerScope[]>]
  [-Scope <Hashtable>] [-Settings <IMicrosoftGraphAccessReviewScheduleSettings>]
- [-StageSettings <IMicrosoftGraphAccessReviewStageSettings[]>] [-Status <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-StageSettings <IMicrosoftGraphAccessReviewStageSettings[]>] [-Status <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
-### UpdateViaIdentity1
+### UpdateViaIdentity
 ```
 Update-MgIdentityGovernanceAccessReviewDefinition -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAccessReviewScheduleDefinition> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessReviewScheduleDefinition> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property definitions in identityGovernance
+Update an existing accessReviewScheduleDefinition object to change one or more of its properties.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -66,7 +78,7 @@ The unique identifier of accessReviewScheduleDefinition
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -78,11 +90,11 @@ Accept wildcard characters: False
 
 ### -AdditionalNotificationRecipients
 Defines the list of additional users or group members to be notified of the access review progress.
-To construct, please use Get-Help -Online and see NOTES section for ADDITIONALNOTIFICATIONRECIPIENTS properties and create a hash table.
+To construct, see NOTES section for ADDITIONALNOTIFICATIONRECIPIENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAccessReviewNotificationRecipientItem[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -97,7 +109,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -109,11 +121,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 accessReviewScheduleDefinition
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAccessReviewScheduleDefinition
-Parameter Sets: Update1, UpdateViaIdentity1
+Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -125,11 +137,11 @@ Accept wildcard characters: False
 
 ### -CreatedBy
 userIdentity
-To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
+To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserIdentity
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -146,7 +158,7 @@ Read-only.
 
 ```yaml
 Type: DateTime
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -162,7 +174,7 @@ Supports $select.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -180,7 +192,7 @@ Supports $select.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -197,7 +209,7 @@ Required on create.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -215,11 +227,11 @@ See accessReviewReviewerScope.
 Replaces backupReviewers.
 Supports $select.
 NOTE: The value of this property will be ignored if fallback reviewers are assigned through the stageSettings property.
-To construct, please use Get-Help -Online and see NOTES section for FALLBACKREVIEWERS properties and create a hash table.
+To construct, see NOTES section for FALLBACKREVIEWERS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAccessReviewReviewerScope[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -235,7 +247,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -247,11 +259,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IIdentityGovernanceIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -266,7 +278,7 @@ accessReviewScope
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -281,11 +293,11 @@ If the accessReviewScheduleDefinition is a recurring access review, instances re
 A review that does not recur will have exactly one instance.
 Instances also represent each unique resource under review in the accessReviewScheduleDefinition.
 If a review has multiple resources and multiple instances, each resource will have a unique instance for each recurrence.
-To construct, please use Get-Help -Online and see NOTES section for INSTANCES properties and create a hash table.
+To construct, see NOTES section for INSTANCES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAccessReviewInstance[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -302,22 +314,7 @@ Read-only.
 
 ```yaml
 Type: DateTime
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -334,11 +331,11 @@ Required on create.
 Supports $select.
 For examples of options for assigning reviewers, see Assign reviewers to your access review definition using the Microsoft Graph API.
 NOTE: The value of this property will be ignored if reviewers are assigned through the stageSettings property.
-To construct, please use Get-Help -Online and see NOTES section for REVIEWERS properties and create a hash table.
+To construct, see NOTES section for REVIEWERS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAccessReviewReviewerScope[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -353,7 +350,7 @@ accessReviewScope
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -365,11 +362,11 @@ Accept wildcard characters: False
 
 ### -Settings
 accessReviewScheduleSettings
-To construct, please use Get-Help -Online and see NOTES section for SETTINGS properties and create a hash table.
+To construct, see NOTES section for SETTINGS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAccessReviewScheduleSettings
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -385,11 +382,11 @@ You can break down each review instance into up to three sequential stages, wher
 Stages will be created sequentially based on the dependsOn property.
 Optional.
 When this property is defined, its settings are used instead of the corresponding settings in the accessReviewScheduleDefinition object and its settings, reviewers, and fallbackReviewers properties.
-To construct, please use Get-Help -Online and see NOTES section for STAGESETTINGS properties and create a hash table.
+To construct, see NOTES section for STAGESETTINGS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAccessReviewStageSettings[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -407,7 +404,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -457,7 +454,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessReviewScheduleDefinition
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessReviewScheduleDefinition
 ## NOTES
 
 ALIASES
@@ -467,12 +464,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ADDITIONALNOTIFICATIONRECIPIENTS <IMicrosoftGraphAccessReviewNotificationRecipientItem\[]>: Defines the list of additional users or group members to be notified of the access review progress.
+`ADDITIONALNOTIFICATIONRECIPIENTS <IMicrosoftGraphAccessReviewNotificationRecipientItem[]>`: Defines the list of additional users or group members to be notified of the access review progress.
   - `[NotificationRecipientScope <IMicrosoftGraphAccessReviewNotificationRecipientScope>]`: accessReviewNotificationRecipientScope
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[NotificationTemplateType <String>]`: Indicates the type of access review email to be sent. Supported template type is CompletedAdditionalRecipients, which sends review completion notifications to the recipients.
 
-BODYPARAMETER `<IMicrosoftGraphAccessReviewScheduleDefinition>`: accessReviewScheduleDefinition
+`BODYPARAMETER <IMicrosoftGraphAccessReviewScheduleDefinition>`: accessReviewScheduleDefinition
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AdditionalNotificationRecipients <IMicrosoftGraphAccessReviewNotificationRecipientItem[]>]`: Defines the list of additional users or group members to be notified of the access review progress.
@@ -581,42 +578,29 @@ BODYPARAMETER `<IMicrosoftGraphAccessReviewScheduleDefinition>`: accessReviewSch
     - `[StageId <String>]`: Unique identifier of the accessReviewStageSettings object. The stageId will be used by the dependsOn property to indicate the order of the stages. Required.
   - `[Status <String>]`: This read-only field specifies the status of an access review. The typical states include Initializing, NotStarted, Starting, InProgress, Completing, Completed, AutoReviewing, and AutoReviewed.  Supports $select, $orderby, and $filter (eq only). Read-only.
 
-CREATEDBY `<IMicrosoftGraphUserIdentity>`: userIdentity
+`CREATEDBY <IMicrosoftGraphUserIdentity>`: userIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
   - `[Id <String>]`: Unique identifier for the identity.
   - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
   - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
 
-FALLBACKREVIEWERS <IMicrosoftGraphAccessReviewReviewerScope\[]>: This collection of reviewer scopes is used to define the list of fallback reviewers. These fallback reviewers will be notified to take action if no users are found from the list of reviewers specified. This could occur when either the group owner is specified as the reviewer but the group owner does not exist, or manager is specified as reviewer but a user's manager does not exist. See accessReviewReviewerScope. Replaces backupReviewers. Supports $select. NOTE: The value of this property will be ignored if fallback reviewers are assigned through the stageSettings property.
+`FALLBACKREVIEWERS <IMicrosoftGraphAccessReviewReviewerScope[]>`: This collection of reviewer scopes is used to define the list of fallback reviewers. These fallback reviewers will be notified to take action if no users are found from the list of reviewers specified. This could occur when either the group owner is specified as the reviewer but the group owner does not exist, or manager is specified as reviewer but a user's manager does not exist. See accessReviewReviewerScope. Replaces backupReviewers. Supports $select. NOTE: The value of this property will be ignored if fallback reviewers are assigned through the stageSettings property.
   - `[Query <String>]`: The query specifying who will be the reviewer.
   - `[QueryRoot <String>]`: In the scenario where reviewers need to be specified dynamically, this property is used to indicate the relative source of the query. This property is only required if a relative query, for example, ./manager, is specified. Possible value: decisions.
   - `[QueryType <String>]`: The type of query. Examples include MicrosoftGraph and ARM.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentityGovernanceIdentity>`: Identity Parameter
   - `[AccessPackageAssignmentId <String>]`: The unique identifier of accessPackageAssignment
   - `[AccessPackageAssignmentPolicyId <String>]`: The unique identifier of accessPackageAssignmentPolicy
   - `[AccessPackageAssignmentRequestId <String>]`: The unique identifier of accessPackageAssignmentRequest
-  - `[AccessPackageAssignmentResourceRoleId <String>]`: The unique identifier of accessPackageAssignmentResourceRole
   - `[AccessPackageCatalogId <String>]`: The unique identifier of accessPackageCatalog
   - `[AccessPackageId <String>]`: The unique identifier of accessPackage
   - `[AccessPackageId1 <String>]`: The unique identifier of accessPackage
-  - `[AccessPackageId2 <String>]`: Usage: accessPackageId='{accessPackageId}'
   - `[AccessPackageQuestionId <String>]`: The unique identifier of accessPackageQuestion
-  - `[AccessPackageResourceEnvironmentId <String>]`: The unique identifier of accessPackageResourceEnvironment
-  - `[AccessPackageResourceId <String>]`: The unique identifier of accessPackageResource
-  - `[AccessPackageResourceRequestId <String>]`: The unique identifier of accessPackageResourceRequest
-  - `[AccessPackageResourceRoleId <String>]`: The unique identifier of accessPackageResourceRole
-  - `[AccessPackageResourceRoleScopeId <String>]`: The unique identifier of accessPackageResourceRoleScope
-  - `[AccessPackageResourceScopeId <String>]`: The unique identifier of accessPackageResourceScope
-  - `[AccessPackageSubjectId <String>]`: The unique identifier of accessPackageSubject
-  - `[AccessReviewDecisionId <String>]`: The unique identifier of accessReviewDecision
   - `[AccessReviewHistoryDefinitionId <String>]`: The unique identifier of accessReviewHistoryDefinition
   - `[AccessReviewHistoryInstanceId <String>]`: The unique identifier of accessReviewHistoryInstance
-  - `[AccessReviewId <String>]`: The unique identifier of accessReview
-  - `[AccessReviewId1 <String>]`: The unique identifier of accessReview
   - `[AccessReviewInstanceDecisionItemId <String>]`: The unique identifier of accessReviewInstanceDecisionItem
-  - `[AccessReviewInstanceDecisionItemId1 <String>]`: The unique identifier of accessReviewInstanceDecisionItem
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewReviewerId <String>]`: The unique identifier of accessReviewReviewer
   - `[AccessReviewScheduleDefinitionId <String>]`: The unique identifier of accessReviewScheduleDefinition
@@ -628,61 +612,26 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[AppConsentRequestId <String>]`: The unique identifier of appConsentRequest
   - `[ApprovalId <String>]`: The unique identifier of approval
   - `[ApprovalStageId <String>]`: The unique identifier of approvalStage
-  - `[ApprovalStepId <String>]`: The unique identifier of approvalStep
-  - `[BusinessFlowTemplateId <String>]`: The unique identifier of businessFlowTemplate
   - `[ConnectedOrganizationId <String>]`: The unique identifier of connectedOrganization
-  - `[CustomAccessPackageWorkflowExtensionId <String>]`: The unique identifier of customAccessPackageWorkflowExtension
-  - `[CustomCalloutExtensionId <String>]`: The unique identifier of customCalloutExtension
-  - `[CustomExtensionHandlerId <String>]`: The unique identifier of customExtensionHandler
-  - `[CustomExtensionStageSettingId <String>]`: The unique identifier of customExtensionStageSetting
-  - `[CustomTaskExtensionId <String>]`: The unique identifier of customTaskExtension
   - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[EndDateTime <DateTime?>]`: Usage: endDateTime={endDateTime}
-  - `[GovernanceInsightId <String>]`: The unique identifier of governanceInsight
-  - `[GovernanceResourceId <String>]`: The unique identifier of governanceResource
-  - `[GovernanceRoleAssignmentId <String>]`: The unique identifier of governanceRoleAssignment
-  - `[GovernanceRoleAssignmentRequestId <String>]`: The unique identifier of governanceRoleAssignmentRequest
-  - `[GovernanceRoleDefinitionId <String>]`: The unique identifier of governanceRoleDefinition
-  - `[GovernanceRoleSettingId <String>]`: The unique identifier of governanceRoleSetting
   - `[GroupId <String>]`: The unique identifier of group
   - `[IncompatibleAccessPackageId <String>]`: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
-  - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[On <String>]`: Usage: on='{on}'
-  - `[PrivilegedAccessGroupAssignmentScheduleId <String>]`: The unique identifier of privilegedAccessGroupAssignmentSchedule
-  - `[PrivilegedAccessGroupAssignmentScheduleInstanceId <String>]`: The unique identifier of privilegedAccessGroupAssignmentScheduleInstance
-  - `[PrivilegedAccessGroupAssignmentScheduleRequestId <String>]`: The unique identifier of privilegedAccessGroupAssignmentScheduleRequest
-  - `[PrivilegedAccessGroupEligibilityScheduleId <String>]`: The unique identifier of privilegedAccessGroupEligibilitySchedule
-  - `[PrivilegedAccessGroupEligibilityScheduleInstanceId <String>]`: The unique identifier of privilegedAccessGroupEligibilityScheduleInstance
-  - `[PrivilegedAccessGroupEligibilityScheduleRequestId <String>]`: The unique identifier of privilegedAccessGroupEligibilityScheduleRequest
-  - `[PrivilegedAccessId <String>]`: The unique identifier of privilegedAccess
-  - `[PrivilegedApprovalId <String>]`: The unique identifier of privilegedApproval
-  - `[PrivilegedOperationEventId <String>]`: The unique identifier of privilegedOperationEvent
-  - `[PrivilegedRoleAssignmentId <String>]`: The unique identifier of privilegedRoleAssignment
-  - `[PrivilegedRoleAssignmentId1 <String>]`: The unique identifier of privilegedRoleAssignment
-  - `[PrivilegedRoleAssignmentRequestId <String>]`: The unique identifier of privilegedRoleAssignmentRequest
-  - `[PrivilegedRoleId <String>]`: The unique identifier of privilegedRole
-  - `[ProgramControlId <String>]`: The unique identifier of programControl
-  - `[ProgramControlId1 <String>]`: The unique identifier of programControl
-  - `[ProgramControlTypeId <String>]`: The unique identifier of programControlType
-  - `[ProgramId <String>]`: The unique identifier of program
-  - `[RunId <String>]`: The unique identifier of run
-  - `[StartDateTime <DateTime?>]`: Usage: startDateTime={startDateTime}
-  - `[TaskDefinitionId <String>]`: The unique identifier of taskDefinition
-  - `[TaskId <String>]`: The unique identifier of task
-  - `[TaskProcessingResultId <String>]`: The unique identifier of taskProcessingResult
-  - `[TaskReportId <String>]`: The unique identifier of taskReport
-  - `[UnifiedRoleManagementAlertConfigurationId <String>]`: The unique identifier of unifiedRoleManagementAlertConfiguration
-  - `[UnifiedRoleManagementAlertDefinitionId <String>]`: The unique identifier of unifiedRoleManagementAlertDefinition
-  - `[UnifiedRoleManagementAlertId <String>]`: The unique identifier of unifiedRoleManagementAlert
-  - `[UnifiedRoleManagementAlertIncidentId <String>]`: The unique identifier of unifiedRoleManagementAlertIncident
+  - `[UnifiedRbacResourceActionId <String>]`: The unique identifier of unifiedRbacResourceAction
+  - `[UnifiedRbacResourceNamespaceId <String>]`: The unique identifier of unifiedRbacResourceNamespace
+  - `[UnifiedRoleAssignmentId <String>]`: The unique identifier of unifiedRoleAssignment
+  - `[UnifiedRoleAssignmentScheduleId <String>]`: The unique identifier of unifiedRoleAssignmentSchedule
+  - `[UnifiedRoleAssignmentScheduleInstanceId <String>]`: The unique identifier of unifiedRoleAssignmentScheduleInstance
+  - `[UnifiedRoleAssignmentScheduleRequestId <String>]`: The unique identifier of unifiedRoleAssignmentScheduleRequest
+  - `[UnifiedRoleDefinitionId <String>]`: The unique identifier of unifiedRoleDefinition
+  - `[UnifiedRoleDefinitionId1 <String>]`: The unique identifier of unifiedRoleDefinition
+  - `[UnifiedRoleEligibilityScheduleId <String>]`: The unique identifier of unifiedRoleEligibilitySchedule
+  - `[UnifiedRoleEligibilityScheduleInstanceId <String>]`: The unique identifier of unifiedRoleEligibilityScheduleInstance
+  - `[UnifiedRoleEligibilityScheduleRequestId <String>]`: The unique identifier of unifiedRoleEligibilityScheduleRequest
   - `[UserConsentRequestId <String>]`: The unique identifier of userConsentRequest
   - `[UserId <String>]`: The unique identifier of user
-  - `[UserProcessingResultId <String>]`: The unique identifier of userProcessingResult
-  - `[WorkflowId <String>]`: The unique identifier of workflow
-  - `[WorkflowTemplateId <String>]`: The unique identifier of workflowTemplate
-  - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
-INSTANCES <IMicrosoftGraphAccessReviewInstance\[]>: If the accessReviewScheduleDefinition is a recurring access review, instances represent each recurrence. A review that does not recur will have exactly one instance. Instances also represent each unique resource under review in the accessReviewScheduleDefinition. If a review has multiple resources and multiple instances, each resource will have a unique instance for each recurrence.
+`INSTANCES <IMicrosoftGraphAccessReviewInstance[]>`: If the accessReviewScheduleDefinition is a recurring access review, instances represent each recurrence. A review that does not recur will have exactly one instance. Instances also represent each unique resource under review in the accessReviewScheduleDefinition. If a review has multiple resources and multiple instances, each resource will have a unique instance for each recurrence.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ContactedReviewers <IMicrosoftGraphAccessReviewReviewer[]>]`: Returns the collection of reviewers who were contacted to complete this review. While the reviewers and fallbackReviewers properties of the accessReviewScheduleDefinition might specify group owners or managers as reviewers, contactedReviewers returns their individual identities. Supports $select. Read-only.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -735,12 +684,12 @@ INSTANCES <IMicrosoftGraphAccessReviewInstance\[]>: If the accessReviewScheduleD
   - `[StartDateTime <DateTime?>]`: DateTime when review instance is scheduled to start. May be in the future. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Supports $select. Read-only.
   - `[Status <String>]`: Specifies the status of an accessReview. Possible values: Initializing, NotStarted, Starting, InProgress, Completing, Completed, AutoReviewing, and AutoReviewed. Supports $select, $orderby, and $filter (eq only). Read-only.
 
-REVIEWERS <IMicrosoftGraphAccessReviewReviewerScope\[]>: This collection of access review scopes is used to define who are the reviewers. The reviewers property is only updatable if individual users are assigned as reviewers. Required on create. Supports $select. For examples of options for assigning reviewers, see Assign reviewers to your access review definition using the Microsoft Graph API. NOTE: The value of this property will be ignored if reviewers are assigned through the stageSettings property.
+`REVIEWERS <IMicrosoftGraphAccessReviewReviewerScope[]>`: This collection of access review scopes is used to define who are the reviewers. The reviewers property is only updatable if individual users are assigned as reviewers. Required on create. Supports $select. For examples of options for assigning reviewers, see Assign reviewers to your access review definition using the Microsoft Graph API. NOTE: The value of this property will be ignored if reviewers are assigned through the stageSettings property.
   - `[Query <String>]`: The query specifying who will be the reviewer.
   - `[QueryRoot <String>]`: In the scenario where reviewers need to be specified dynamically, this property is used to indicate the relative source of the query. This property is only required if a relative query, for example, ./manager, is specified. Possible value: decisions.
   - `[QueryType <String>]`: The type of query. Examples include MicrosoftGraph and ARM.
 
-SETTINGS `<IMicrosoftGraphAccessReviewScheduleSettings>`: accessReviewScheduleSettings
+`SETTINGS <IMicrosoftGraphAccessReviewScheduleSettings>`: accessReviewScheduleSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ApplyActions <IMicrosoftGraphAccessReviewApplyAction[]>]`: Optional field. Describes the  actions to take once a review is complete. There are two types that are currently supported: removeAccessApplyAction (default) and disableAndDeleteUserApplyAction. Field only needs to be specified in the case of disableAndDeleteUserApplyAction.
   - `[AutoApplyDecisionsEnabled <Boolean?>]`: Indicates whether decisions are automatically applied. When set to false, an admin must apply the decisions manually once the reviewer completes the access review. When set to true, decisions are applied automatically after the access review instance duration ends, whether or not the reviewers have responded. Default value is false.  CAUTION: If both autoApplyDecisionsEnabled and defaultDecisionEnabled are true, all access for the principals to the resource risks being revoked if the reviewers fail to respond.
@@ -771,7 +720,7 @@ SETTINGS `<IMicrosoftGraphAccessReviewScheduleSettings>`: accessReviewScheduleSe
       - `[Type <String>]`: recurrenceRangeType
   - `[ReminderNotificationsEnabled <Boolean?>]`: Indicates whether reminders are enabled or disabled. Default value is false.
 
-STAGESETTINGS <IMicrosoftGraphAccessReviewStageSettings\[]>: Required only for a multi-stage access review to define the stages and their settings. You can break down each review instance into up to three sequential stages, where each stage can have a different set of reviewers, fallback reviewers, and settings. Stages will be created sequentially based on the dependsOn property. Optional. When this property is defined, its settings are used instead of the corresponding settings in the accessReviewScheduleDefinition object and its settings, reviewers, and fallbackReviewers properties.
+`STAGESETTINGS <IMicrosoftGraphAccessReviewStageSettings[]>`: Required only for a multi-stage access review to define the stages and their settings. You can break down each review instance into up to three sequential stages, where each stage can have a different set of reviewers, fallback reviewers, and settings. Stages will be created sequentially based on the dependsOn property. Optional. When this property is defined, its settings are used instead of the corresponding settings in the accessReviewScheduleDefinition object and its settings, reviewers, and fallbackReviewers properties.
   - `[DecisionsThatWillMoveToNextStage <String[]>]`: Indicate which decisions will go to the next stage. Can be a sub-set of Approve, Deny, Recommendation, or NotReviewed. If not provided, all decisions will go to the next stage. Optional.
   - `[DependsOn <String[]>]`: Defines the sequential or parallel order of the stages and depends on the stageId. Only sequential stages are currently supported. For example, if stageId is 2, then dependsOn must be 1. If stageId is 1, do not specify dependsOn. Required if stageId is not 1.
   - `[DurationInDays <Int32?>]`: The duration of the stage. Required.  NOTE: The cumulative value of this property across all stages  1. Will override the instanceDurationInDays setting on the accessReviewScheduleDefinition object. 2. Cannot exceed the length of one recurrence. That is, if the review recurs weekly, the cumulative durationInDays cannot exceed 7.

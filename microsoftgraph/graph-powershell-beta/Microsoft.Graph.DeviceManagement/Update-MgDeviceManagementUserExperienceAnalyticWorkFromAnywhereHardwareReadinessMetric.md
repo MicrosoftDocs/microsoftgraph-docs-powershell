@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementuserexperienceanalyticworkfromanywherehardwarereadinessmetric
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementuserexperienceanalyticworkfromanywherehardwarereadinessmetric
 schema: 2.0.0
 ---
 
-# Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric
+# Update-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric
 
 ## SYNOPSIS
 Update the navigation property userExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric in deviceManagement
@@ -14,26 +14,40 @@ Update the navigation property userExperienceAnalyticsWorkFromAnywhereHardwareRe
 
 ### UpdateExpanded (Default)
 ```
-Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric
+Update-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-OSCheckFailedPercentage <Double>]
  [-Processor64BitCheckFailedPercentage <Double>] [-ProcessorCoreCountCheckFailedPercentage <Double>]
  [-ProcessorFamilyCheckFailedPercentage <Double>] [-ProcessorSpeedCheckFailedPercentage <Double>]
  [-RamCheckFailedPercentage <Double>] [-SecureBootCheckFailedPercentage <Double>]
  [-StorageCheckFailedPercentage <Double>] [-TotalDeviceCount <Int32>] [-TpmCheckFailedPercentage <Double>]
- [-UpgradeEligibleDeviceCount <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UpgradeEligibleDeviceCount <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property userExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric in deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -54,7 +68,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 The user experience analytics hardware readiness entity contains account level information about hardware blockers for windows upgrade.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric
@@ -69,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -91,21 +105,6 @@ Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 ```yaml
 Type: Double
 Parameter Sets: UpdateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -311,10 +310,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric
 ## NOTES
 
 ALIASES
@@ -324,9 +323,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric>`: The user experience analytics hardware readiness entity contains account level information about hardware blockers for windows upgrade.
+`BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric>`: The user experience analytics hardware readiness entity contains account level information about hardware blockers for windows upgrade.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[OSCheckFailedPercentage <Double?>]`: The percentage of devices for which OS check has failed. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
   - `[Processor64BitCheckFailedPercentage <Double?>]`: The percentage of devices for which processor hardware 64-bit architecture check has failed. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
   - `[ProcessorCoreCountCheckFailedPercentage <Double?>]`: The percentage of devices for which processor hardware core count check has failed. Valid values -1.79769313486232E+308 to 1.79769313486232E+308

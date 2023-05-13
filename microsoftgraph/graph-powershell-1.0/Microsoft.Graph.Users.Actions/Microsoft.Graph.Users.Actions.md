@@ -1,7 +1,7 @@
----
+﻿---
 Module Name: Microsoft.Graph.Users.Actions
-Module Guid: 8c5f92c2-f3ff-4e78-8aba-69ed3f3e54f4
-Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions
+Module Guid: 65bf3ab6-fb26-4121-90ff-00f2e886209c
+Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions
 Help Version: 1.0.0.0
 Locale: en-US
 ---
@@ -23,9 +23,6 @@ Add or sync a copy of a published content type from the content type hub to a ta
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
 For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
-
-### [Clear-MgUserManagedAppRegistrationByDeviceTag](Clear-MgUserManagedAppRegistrationByDeviceTag.md)
-Issues a wipe operation on an app registration with specified device tag.
 
 ### [Clear-MgUserManagedDevice](Clear-MgUserManagedDevice.md)
 Wipe a device
@@ -61,14 +58,14 @@ Asynchronously creates a copy of an [driveItem][item-resource] (including any ch
 ### [Copy-MgUserMailFolder](Copy-MgUserMailFolder.md)
 Copy a mailfolder and its contents to another mailfolder.
 
-### [Copy-MgUserMailFolderChildFolder](Copy-MgUserMailFolderChildFolder.md)
+### [Copy-MgUserMailFolder](Copy-MgUserMailFolder.md)
 Copy a mailfolder and its contents to another mailfolder.
 
-### [Copy-MgUserMailFolderChildFolderMessage](Copy-MgUserMailFolderChildFolderMessage.md)
-Copy a message to a folder within the user's mailbox.
+### [Copy-MgUserMailFolder](Copy-MgUserMailFolder.md)
+Copy a mailfolder and its contents to another mailfolder.
 
-### [Copy-MgUserMailFolderMessage](Copy-MgUserMailFolderMessage.md)
-Copy a message to a folder within the user's mailbox.
+### [Copy-MgUserMailFolder](Copy-MgUserMailFolder.md)
+Copy a mailfolder and its contents to another mailfolder.
 
 ### [Copy-MgUserMessage](Copy-MgUserMessage.md)
 Copy a message to a folder within the user's mailbox.
@@ -86,14 +83,14 @@ For Copy operations, you follow an asynchronous calling pattern:  First call the
 ### [Copy-MgUserOnenoteSectionToSectionGroup](Copy-MgUserOnenoteSectionToSectionGroup.md)
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
-### [Disable-MgUserAuthenticationPhoneMethodSmSign](Disable-MgUserAuthenticationPhoneMethodSmSign.md)
+### [Disable-MgUserAuthenticationPhoneMethodSmsSignIn](Disable-MgUserAuthenticationPhoneMethodSmsSignIn.md)
 Disable SMS sign-in for an existing `mobile` phone number registered to a user.
 The number will no longer be available for SMS sign-in, which can prevent your user from signing in.
 
 ### [Disable-MgUserManagedDeviceLostMode](Disable-MgUserManagedDeviceLostMode.md)
 Disable lost mode
 
-### [Enable-MgUserAuthenticationPhoneMethodSmSign](Enable-MgUserAuthenticationPhoneMethodSmSign.md)
+### [Enable-MgUserAuthenticationPhoneMethodSmsSignIn](Enable-MgUserAuthenticationPhoneMethodSmsSignIn.md)
 Enable SMS sign-in for an existing `mobile` phone number registered to a user.
 To be successfully enabled:
 
@@ -116,8 +113,9 @@ In scenarios like test environments where the input parameters and calendar data
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
 
-### [Get-MgUserCalendarSchedule](Get-MgUserCalendarSchedule.md)
-Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.
+### [Get-MgUserById](Get-MgUserById.md)
+Return the directory objects specified in a list of IDs.
+Some common uses for this function are to:
 
 ### [Get-MgUserDefaultCalendarSchedule](Get-MgUserDefaultCalendarSchedule.md)
 Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.
@@ -152,13 +150,11 @@ Hide a chat for a user.
 ### [Invoke-MgAcceptUserEvent](Invoke-MgAcceptUserEvent.md)
 Accept the specified event in a user calendar.
 
-### [Invoke-MgAcceptUserEventInstance](Invoke-MgAcceptUserEventInstance.md)
+### [Invoke-MgAcceptUserEvent](Invoke-MgAcceptUserEvent.md)
 Accept the specified event in a user calendar.
 
-### [Invoke-MgAcceptUserEventInstanceTentatively](Invoke-MgAcceptUserEventInstanceTentatively.md)
-Tentatively accept the specified event in a user calendar.
-If the event allows proposals for new times, on responding tentative to the event, an invitee can choose to suggest an alternative time by including the **proposedNewTime** parameter.
-For more information on how to propose a time, and how to receive and accept a new time proposal, see Propose new meeting times.
+### [Invoke-MgAcceptUserEvent](Invoke-MgAcceptUserEvent.md)
+Accept the specified event in a user calendar.
 
 ### [Invoke-MgAcceptUserEventTentatively](Invoke-MgAcceptUserEventTentatively.md)
 Tentatively accept the specified event in a user calendar.
@@ -177,7 +173,7 @@ Check out a **driveItem** resource to prevent others from editing the document, 
 ### [Invoke-MgCheckoutUserDriveRoot](Invoke-MgCheckoutUserDriveRoot.md)
 Check out a **driveItem** resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
 
-### [Invoke-MgCleanUserManagedDeviceWindowDevice](Invoke-MgCleanUserManagedDeviceWindowDevice.md)
+### [Invoke-MgCleanUserManagedDeviceWindowsDevice](Invoke-MgCleanUserManagedDeviceWindowsDevice.md)
 Clean Windows device
 
 ### [Invoke-MgCreateOrGetUserOnlineMeeting](Invoke-MgCreateOrGetUserOnlineMeeting.md)
@@ -189,13 +185,15 @@ Decline invitation to the specified event in a user calendar.
 If the event allows proposals for new times, on declining the event, an invitee can choose to suggest an alternative time by including the **proposedNewTime** parameter.
 For more information on how to propose a time, and how to receive and accept a new time proposal, see Propose new meeting times.
 
-### [Invoke-MgDeclineUserEventInstance](Invoke-MgDeclineUserEventInstance.md)
+### [Invoke-MgDeclineUserEvent](Invoke-MgDeclineUserEvent.md)
 Decline invitation to the specified event in a user calendar.
 If the event allows proposals for new times, on declining the event, an invitee can choose to suggest an alternative time by including the **proposedNewTime** parameter.
 For more information on how to propose a time, and how to receive and accept a new time proposal, see Propose new meeting times.
 
-### [Invoke-MgDismissUserEventInstanceReminder](Invoke-MgDismissUserEventInstanceReminder.md)
-Dismiss a reminder that has been triggered for an event in a user calendar.
+### [Invoke-MgDeclineUserEvent](Invoke-MgDeclineUserEvent.md)
+Decline invitation to the specified event in a user calendar.
+If the event allows proposals for new times, on declining the event, an invitee can choose to suggest an alternative time by including the **proposedNewTime** parameter.
+For more information on how to propose a time, and how to receive and accept a new time proposal, see Propose new meeting times.
 
 ### [Invoke-MgDismissUserEventReminder](Invoke-MgDismissUserEventReminder.md)
 Dismiss a reminder that has been triggered for an event in a user calendar.
@@ -214,28 +212,20 @@ This action allows the organizer or attendee of a meeting event to forward the \
 If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action \nalso sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's \ncopy of the meeting event.
 This convenience is not available when forwarding from an Outlook.com account.
 
-### [Invoke-MgForwardUserEventInstance](Invoke-MgForwardUserEventInstance.md)
+### [Invoke-MgForwardUserEvent](Invoke-MgForwardUserEvent.md)
 This action allows the organizer or attendee of a meeting event to forward the \nmeeting request to a new recipient.
 If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action \nalso sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's \ncopy of the meeting event.
 This convenience is not available when forwarding from an Outlook.com account.
 
-### [Invoke-MgForwardUserMailFolderChildFolderMessage](Invoke-MgForwardUserMailFolderChildFolderMessage.md)
-Forward a message using either JSON or MIME format.
-When using JSON format, you can:\n- Specify either a comment or the **body** property of the `message` parameter.
-Specifying both will return an HTTP 400 Bad Request error.\n- Specify either the `toRecipients` parameter or the **toRecipients** property of the `message` parameter.
-Specifying both or specifying neither will return an HTTP 400 Bad Request error.
-When using MIME format:\n- Provide the applicable Internet message headers and the MIME content, all encoded in **base64** format in the request body.\n- Add any attachments and S/MIME properties to the MIME content.
-This method saves the message in the **Sent Items** folder.
-Alternatively, create a draft to forward a message, and send it later.
+### [Invoke-MgForwardUserEvent](Invoke-MgForwardUserEvent.md)
+This action allows the organizer or attendee of a meeting event to forward the \nmeeting request to a new recipient.
+If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action \nalso sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's \ncopy of the meeting event.
+This convenience is not available when forwarding from an Outlook.com account.
 
-### [Invoke-MgForwardUserMailFolderMessage](Invoke-MgForwardUserMailFolderMessage.md)
-Forward a message using either JSON or MIME format.
-When using JSON format, you can:\n- Specify either a comment or the **body** property of the `message` parameter.
-Specifying both will return an HTTP 400 Bad Request error.\n- Specify either the `toRecipients` parameter or the **toRecipients** property of the `message` parameter.
-Specifying both or specifying neither will return an HTTP 400 Bad Request error.
-When using MIME format:\n- Provide the applicable Internet message headers and the MIME content, all encoded in **base64** format in the request body.\n- Add any attachments and S/MIME properties to the MIME content.
-This method saves the message in the **Sent Items** folder.
-Alternatively, create a draft to forward a message, and send it later.
+### [Invoke-MgForwardUserEvent](Invoke-MgForwardUserEvent.md)
+This action allows the organizer or attendee of a meeting event to forward the \nmeeting request to a new recipient.
+If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action \nalso sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's \ncopy of the meeting event.
+This convenience is not available when forwarding from an Outlook.com account.
 
 ### [Invoke-MgForwardUserMessage](Invoke-MgForwardUserMessage.md)
 Forward a message using either JSON or MIME format.
@@ -276,23 +266,21 @@ Invoke action preview
 Invoke action preview
 
 ### [Invoke-MgReauthorizeUserDriveItemSubscription](Invoke-MgReauthorizeUserDriveItemSubscription.md)
-Invoke action reauthorize
+Reauthorize a subscription when you receive a **reauthorizationRequired** challenge.
 
 ### [Invoke-MgReauthorizeUserDriveListSubscription](Invoke-MgReauthorizeUserDriveListSubscription.md)
-Invoke action reauthorize
+Reauthorize a subscription when you receive a **reauthorizationRequired** challenge.
 
 ### [Invoke-MgReauthorizeUserDriveRootSubscription](Invoke-MgReauthorizeUserDriveRootSubscription.md)
-Invoke action reauthorize
+Reauthorize a subscription when you receive a **reauthorizationRequired** challenge.
 
-### [Invoke-MgReplyAllUserMailFolderChildFolderMessage](Invoke-MgReplyAllUserMailFolderChildFolderMessage.md)
-Reply to all recipients of a message using either JSON or MIME format.
-When using JSON format:\n- Specify either a comment or the **body** property of the `message` parameter.
-Specifying both will return an HTTP 400 Bad Request error.\n- If the original message specifies a recipient in the **replyTo** property, per Internet Message Format (RFC 2822), send the reply to the recipients in **replyTo** and not the recipient in the **from** property.
-When using MIME format:\n- Provide the applicable Internet message headers and the MIME content, all encoded in **base64** format in the request body.\n- Add any attachments and S/MIME properties to the MIME content.
-This method saves the message in the **Sent Items** folder.
-Alternatively, create a draft to reply-all to a message and send it later.
+### [Invoke-MgReauthorizeUserDriveRootSubscription](Invoke-MgReauthorizeUserDriveRootSubscription.md)
+Reauthorize a subscription when you receive a **reauthorizationRequired** challenge.
 
-### [Invoke-MgReplyAllUserMailFolderMessage](Invoke-MgReplyAllUserMailFolderMessage.md)
+### [Invoke-MgReauthorizeUserDriveRootSubscription](Invoke-MgReauthorizeUserDriveRootSubscription.md)
+Reauthorize a subscription when you receive a **reauthorizationRequired** challenge.
+
+### [Invoke-MgReplyAllUserMessage](Invoke-MgReplyAllUserMessage.md)
 Reply to all recipients of a message using either JSON or MIME format.
 When using JSON format:\n- Specify either a comment or the **body** property of the `message` parameter.
 Specifying both will return an HTTP 400 Bad Request error.\n- If the original message specifies a recipient in the **replyTo** property, per Internet Message Format (RFC 2822), send the reply to the recipients in **replyTo** and not the recipient in the **from** property.
@@ -308,21 +296,13 @@ When using MIME format:\n- Provide the applicable Internet message headers and t
 This method saves the message in the **Sent Items** folder.
 Alternatively, create a draft to reply-all to a message and send it later.
 
-### [Invoke-MgReplyUserMailFolderChildFolderMessage](Invoke-MgReplyUserMailFolderChildFolderMessage.md)
-Reply to the sender of a message using either JSON or MIME format.
-When using JSON format:\n* Specify either a comment or the **body** property of the `message` parameter.
-Specifying both will return an HTTP `400 Bad Request` error.\n* If the original message specifies a recipient in the **replyTo** property, per Internet Message Format (RFC 2822), send the reply to the recipients in **replyTo** and not the recipient in the **from** property.
+### [Invoke-MgReplyAllUserMessage](Invoke-MgReplyAllUserMessage.md)
+Reply to all recipients of a message using either JSON or MIME format.
+When using JSON format:\n- Specify either a comment or the **body** property of the `message` parameter.
+Specifying both will return an HTTP 400 Bad Request error.\n- If the original message specifies a recipient in the **replyTo** property, per Internet Message Format (RFC 2822), send the reply to the recipients in **replyTo** and not the recipient in the **from** property.
 When using MIME format:\n- Provide the applicable Internet message headers and the MIME content, all encoded in **base64** format in the request body.\n- Add any attachments and S/MIME properties to the MIME content.
 This method saves the message in the **Sent Items** folder.
-Alternatively, create a draft to reply to an existing message and send it later.
-
-### [Invoke-MgReplyUserMailFolderMessage](Invoke-MgReplyUserMailFolderMessage.md)
-Reply to the sender of a message using either JSON or MIME format.
-When using JSON format:\n* Specify either a comment or the **body** property of the `message` parameter.
-Specifying both will return an HTTP `400 Bad Request` error.\n* If the original message specifies a recipient in the **replyTo** property, per Internet Message Format (RFC 2822), send the reply to the recipients in **replyTo** and not the recipient in the **from** property.
-When using MIME format:\n- Provide the applicable Internet message headers and the MIME content, all encoded in **base64** format in the request body.\n- Add any attachments and S/MIME properties to the MIME content.
-This method saves the message in the **Sent Items** folder.
-Alternatively, create a draft to reply to an existing message and send it later.
+Alternatively, create a draft to reply-all to a message and send it later.
 
 ### [Invoke-MgReplyUserMessage](Invoke-MgReplyUserMessage.md)
 Reply to the sender of a message using either JSON or MIME format.
@@ -335,11 +315,11 @@ Alternatively, create a draft to reply to an existing message and send it later.
 ### [Invoke-MgRetireUserManagedDevice](Invoke-MgRetireUserManagedDevice.md)
 Retire a device
 
-### [Invoke-MgScanUserManagedDeviceWindowDefender](Invoke-MgScanUserManagedDeviceWindowDefender.md)
+### [Invoke-MgScanUserManagedDeviceWindowsDefender](Invoke-MgScanUserManagedDeviceWindowsDefender.md)
 Invoke action windowsDefenderScan
 
-### [Invoke-MgSnoozeUserEventInstanceReminder](Invoke-MgSnoozeUserEventInstanceReminder.md)
-Postpone a reminder for an event in a user calendar until a new time.
+### [Invoke-MgScanUserManagedDeviceWindowsDefender](Invoke-MgScanUserManagedDeviceWindowsDefender.md)
+Invoke action windowsDefenderScan
 
 ### [Invoke-MgSnoozeUserEventReminder](Invoke-MgSnoozeUserEventReminder.md)
 Postpone a reminder for an event in a user calendar until a new time.
@@ -368,16 +348,14 @@ Remote lock
 ### [Move-MgUserMailFolder](Move-MgUserMailFolder.md)
 Move a mailfolder and its contents to another mailfolder.
 
-### [Move-MgUserMailFolderChildFolder](Move-MgUserMailFolderChildFolder.md)
+### [Move-MgUserMailFolder](Move-MgUserMailFolder.md)
 Move a mailfolder and its contents to another mailfolder.
 
-### [Move-MgUserMailFolderChildFolderMessage](Move-MgUserMailFolderChildFolderMessage.md)
-Move a message to another folder within the specified user's mailbox.
-This creates a new copy of the message in the destination folder and removes the original message.
+### [Move-MgUserMailFolder](Move-MgUserMailFolder.md)
+Move a mailfolder and its contents to another mailfolder.
 
-### [Move-MgUserMailFolderMessage](Move-MgUserMailFolderMessage.md)
-Move a message to another folder within the specified user's mailbox.
-This creates a new copy of the message in the destination folder and removes the original message.
+### [Move-MgUserMailFolder](Move-MgUserMailFolder.md)
+Move a mailfolder and its contents to another mailfolder.
 
 ### [Move-MgUserMessage](Move-MgUserMessage.md)
 Move a message to another folder within the specified user's mailbox.
@@ -401,97 +379,45 @@ DriveItem resources inherit sharing permissions from their ancestors.
 Create an upload session to allow your app to upload files up to the maximum file size.\nAn upload session allows your app to upload ranges of the file in sequential API requests, which allows the transfer to be resumed if a connection is dropped while the upload is in progress.
 To upload a file using an upload session, there are two steps:
 
-### [New-MgUserEventAttachmentUploadSession](New-MgUserEventAttachmentUploadSession.md)
-Create an upload session that allows an app to iteratively upload ranges of a file, so as to attach the file to the specified Outlook item.
-The item can be a message or event.
-Use this approach to attach a file if the file size is between 3 MB and 150 MB.
-To attach a file that's smaller than 3 MB, do a `POST` operation on the **attachments** navigation property of the Outlook item; see how to do this for a message or for an event.
-As part of the response, this action returns an upload URL that you can use in subsequent sequential `PUT` queries.
-Request headers for each `PUT` operation let you specify the exact range of bytes to be uploaded.
-This allows transfer to be resumed, in case the network connection is dropped during upload.
-The following are the steps to attach a file to an Outlook item using an upload session: See attach large files to Outlook messages or events for an example.
+### [New-MgUserDriveRootUploadSession](New-MgUserDriveRootUploadSession.md)
+Create an upload session to allow your app to upload files up to the maximum file size.\nAn upload session allows your app to upload ranges of the file in sequential API requests, which allows the transfer to be resumed if a connection is dropped while the upload is in progress.
+To upload a file using an upload session, there are two steps:
 
-### [New-MgUserEventInstanceAttachmentUploadSession](New-MgUserEventInstanceAttachmentUploadSession.md)
-Create an upload session that allows an app to iteratively upload ranges of a file, so as to attach the file to the specified Outlook item.
-The item can be a message or event.
-Use this approach to attach a file if the file size is between 3 MB and 150 MB.
-To attach a file that's smaller than 3 MB, do a `POST` operation on the **attachments** navigation property of the Outlook item; see how to do this for a message or for an event.
-As part of the response, this action returns an upload URL that you can use in subsequent sequential `PUT` queries.
-Request headers for each `PUT` operation let you specify the exact range of bytes to be uploaded.
-This allows transfer to be resumed, in case the network connection is dropped during upload.
-The following are the steps to attach a file to an Outlook item using an upload session: See attach large files to Outlook messages or events for an example.
+### [New-MgUserDriveRootUploadSession](New-MgUserDriveRootUploadSession.md)
+Create an upload session to allow your app to upload files up to the maximum file size.\nAn upload session allows your app to upload ranges of the file in sequential API requests, which allows the transfer to be resumed if a connection is dropped while the upload is in progress.
+To upload a file using an upload session, there are two steps:
 
-### [New-MgUserMailFolderChildFolderMessageAttachmentUploadSession](New-MgUserMailFolderChildFolderMessageAttachmentUploadSession.md)
-Create an upload session that allows an app to iteratively upload ranges of a file, so as to attach the file to the specified Outlook item.
-The item can be a message or event.
-Use this approach to attach a file if the file size is between 3 MB and 150 MB.
-To attach a file that's smaller than 3 MB, do a `POST` operation on the **attachments** navigation property of the Outlook item; see how to do this for a message or for an event.
-As part of the response, this action returns an upload URL that you can use in subsequent sequential `PUT` queries.
-Request headers for each `PUT` operation let you specify the exact range of bytes to be uploaded.
-This allows transfer to be resumed, in case the network connection is dropped during upload.
-The following are the steps to attach a file to an Outlook item using an upload session: See attach large files to Outlook messages or events for an example.
+### [New-MgUserDriveRootUploadSession](New-MgUserDriveRootUploadSession.md)
+Create an upload session to allow your app to upload files up to the maximum file size.\nAn upload session allows your app to upload ranges of the file in sequential API requests, which allows the transfer to be resumed if a connection is dropped while the upload is in progress.
+To upload a file using an upload session, there are two steps:
 
-### [New-MgUserMailFolderChildFolderMessageForward](New-MgUserMailFolderChildFolderMessageForward.md)
-Create a draft to forward an existing message, in either JSON or MIME format.
-When using JSON format, you can:\n- Specify either a comment or the **body** property of the `message` parameter.
-Specifying both will return an HTTP 400 Bad Request error.\n- Specify either the `toRecipients` parameter or the **toRecipients** property of the `message` parameter.
-Specifying both or specifying neither will return an HTTP 400 Bad Request error.\n- Update the draft later to add content to the **body** or change other message properties.
-When using MIME format:\n- Provide the applicable Internet message headers and the MIME content, all encoded in **base64** format in the request body.\n- Add any attachments and S/MIME properties to the MIME content.
-Send the draft message in a subsequent operation.
-Alternatively, forward a message in a single operation.
+### [New-MgUserDriveRootUploadSession](New-MgUserDriveRootUploadSession.md)
+Create an upload session to allow your app to upload files up to the maximum file size.\nAn upload session allows your app to upload ranges of the file in sequential API requests, which allows the transfer to be resumed if a connection is dropped while the upload is in progress.
+To upload a file using an upload session, there are two steps:
 
-### [New-MgUserMailFolderChildFolderMessageReply](New-MgUserMailFolderChildFolderMessageReply.md)
-Create a draft to reply to the sender of a message in either JSON or MIME format.
-When using JSON format:\n- Specify either a comment or the **body** property of the `message` parameter.
-Specifying both will return an HTTP 400 Bad Request error.\n- If **replyTo** is specified in the original message, per Internet Message Format (RFC 2822), you should send the reply to the recipients in **replyTo**, and not the recipients in **from**.\n- You can update the draft later to add reply content to the **body** or change other message properties.
-When using MIME format:\n- Provide the applicable Internet message headers and the MIME content, all encoded in **base64** format in the request body.\n- Add any attachments and S/MIME properties to the MIME content.
-Send the draft message in a subsequent operation.
-Alternatively, reply to a message in a single operation.
+### [New-MgUserDriveRootUploadSession](New-MgUserDriveRootUploadSession.md)
+Create an upload session to allow your app to upload files up to the maximum file size.\nAn upload session allows your app to upload ranges of the file in sequential API requests, which allows the transfer to be resumed if a connection is dropped while the upload is in progress.
+To upload a file using an upload session, there are two steps:
 
-### [New-MgUserMailFolderChildFolderMessageReplyAll](New-MgUserMailFolderChildFolderMessageReplyAll.md)
-Create a draft to reply to the sender and all recipients of a message in either JSON or MIME format.
-When using JSON format:\n- Specify either a comment or the **body** property of the `message` parameter.
-Specifying both will return an HTTP 400 Bad Request error.\n- If the original message specifies a recipient in the **replyTo** property, per Internet Message Format (RFC 2822), you should send the reply to the recipients in the **replyTo** and **toRecipients** properties, and not the recipients in the **from** and **toRecipients** properties.
-\n- You can update the draft later to add reply content to the **body** or change other message properties.
-When using MIME format:\n- Provide the applicable Internet message headers and the MIME content, all encoded in **base64** format in the request body.\n- Add any attachments and S/MIME properties to the MIME content.
-Send the draft message in a subsequent operation.
-Alternatively, reply-all to a message in a single action.
+### [New-MgUserDriveRootUploadSession](New-MgUserDriveRootUploadSession.md)
+Create an upload session to allow your app to upload files up to the maximum file size.\nAn upload session allows your app to upload ranges of the file in sequential API requests, which allows the transfer to be resumed if a connection is dropped while the upload is in progress.
+To upload a file using an upload session, there are two steps:
 
-### [New-MgUserMailFolderMessageAttachmentUploadSession](New-MgUserMailFolderMessageAttachmentUploadSession.md)
-Create an upload session that allows an app to iteratively upload ranges of a file, so as to attach the file to the specified Outlook item.
-The item can be a message or event.
-Use this approach to attach a file if the file size is between 3 MB and 150 MB.
-To attach a file that's smaller than 3 MB, do a `POST` operation on the **attachments** navigation property of the Outlook item; see how to do this for a message or for an event.
-As part of the response, this action returns an upload URL that you can use in subsequent sequential `PUT` queries.
-Request headers for each `PUT` operation let you specify the exact range of bytes to be uploaded.
-This allows transfer to be resumed, in case the network connection is dropped during upload.
-The following are the steps to attach a file to an Outlook item using an upload session: See attach large files to Outlook messages or events for an example.
+### [New-MgUserDriveRootUploadSession](New-MgUserDriveRootUploadSession.md)
+Create an upload session to allow your app to upload files up to the maximum file size.\nAn upload session allows your app to upload ranges of the file in sequential API requests, which allows the transfer to be resumed if a connection is dropped while the upload is in progress.
+To upload a file using an upload session, there are two steps:
 
-### [New-MgUserMailFolderMessageForward](New-MgUserMailFolderMessageForward.md)
-Create a draft to forward an existing message, in either JSON or MIME format.
-When using JSON format, you can:\n- Specify either a comment or the **body** property of the `message` parameter.
-Specifying both will return an HTTP 400 Bad Request error.\n- Specify either the `toRecipients` parameter or the **toRecipients** property of the `message` parameter.
-Specifying both or specifying neither will return an HTTP 400 Bad Request error.\n- Update the draft later to add content to the **body** or change other message properties.
-When using MIME format:\n- Provide the applicable Internet message headers and the MIME content, all encoded in **base64** format in the request body.\n- Add any attachments and S/MIME properties to the MIME content.
-Send the draft message in a subsequent operation.
-Alternatively, forward a message in a single operation.
+### [New-MgUserDriveRootUploadSession](New-MgUserDriveRootUploadSession.md)
+Create an upload session to allow your app to upload files up to the maximum file size.\nAn upload session allows your app to upload ranges of the file in sequential API requests, which allows the transfer to be resumed if a connection is dropped while the upload is in progress.
+To upload a file using an upload session, there are two steps:
 
-### [New-MgUserMailFolderMessageReply](New-MgUserMailFolderMessageReply.md)
-Create a draft to reply to the sender of a message in either JSON or MIME format.
-When using JSON format:\n- Specify either a comment or the **body** property of the `message` parameter.
-Specifying both will return an HTTP 400 Bad Request error.\n- If **replyTo** is specified in the original message, per Internet Message Format (RFC 2822), you should send the reply to the recipients in **replyTo**, and not the recipients in **from**.\n- You can update the draft later to add reply content to the **body** or change other message properties.
-When using MIME format:\n- Provide the applicable Internet message headers and the MIME content, all encoded in **base64** format in the request body.\n- Add any attachments and S/MIME properties to the MIME content.
-Send the draft message in a subsequent operation.
-Alternatively, reply to a message in a single operation.
+### [New-MgUserDriveRootUploadSession](New-MgUserDriveRootUploadSession.md)
+Create an upload session to allow your app to upload files up to the maximum file size.\nAn upload session allows your app to upload ranges of the file in sequential API requests, which allows the transfer to be resumed if a connection is dropped while the upload is in progress.
+To upload a file using an upload session, there are two steps:
 
-### [New-MgUserMailFolderMessageReplyAll](New-MgUserMailFolderMessageReplyAll.md)
-Create a draft to reply to the sender and all recipients of a message in either JSON or MIME format.
-When using JSON format:\n- Specify either a comment or the **body** property of the `message` parameter.
-Specifying both will return an HTTP 400 Bad Request error.\n- If the original message specifies a recipient in the **replyTo** property, per Internet Message Format (RFC 2822), you should send the reply to the recipients in the **replyTo** and **toRecipients** properties, and not the recipients in the **from** and **toRecipients** properties.
-\n- You can update the draft later to add reply content to the **body** or change other message properties.
-When using MIME format:\n- Provide the applicable Internet message headers and the MIME content, all encoded in **base64** format in the request body.\n- Add any attachments and S/MIME properties to the MIME content.
-Send the draft message in a subsequent operation.
-Alternatively, reply-all to a message in a single action.
+### [New-MgUserDriveRootUploadSession](New-MgUserDriveRootUploadSession.md)
+Create an upload session to allow your app to upload files up to the maximum file size.\nAn upload session allows your app to upload ranges of the file in sequential API requests, which allows the transfer to be resumed if a connection is dropped while the upload is in progress.
+To upload a file using an upload session, there are two steps:
 
 ### [New-MgUserManagedDeviceWindowsDefenderUpdateSignature](New-MgUserManagedDeviceWindowsDefenderUpdateSignature.md)
 Invoke action windowsDefenderUpdateSignatures
@@ -605,10 +531,7 @@ This will create a new version with the contents of the previous version, but pr
 ### [Restore-MgUserManagedDevicePasscode](Restore-MgUserManagedDevicePasscode.md)
 Recover passcode
 
-### [Revoke-MgUserSign](Revoke-MgUserSign.md)
-Invoke action revokeSignInSessions
-
-### [Revoke-MgUserSign](Revoke-MgUserSign.md)
+### [Revoke-MgUserSignInSession](Revoke-MgUserSignInSession.md)
 Invoke action revokeSignInSessions
 
 ### [Send-MgUserChatActivityNotification](Send-MgUserChatActivityNotification.md)
@@ -623,17 +546,21 @@ This method saves the message in the **Sent Items** folder.
 Alternatively, create a draft message to send later.
 To learn more about the steps involved in the backend before a mail is delivered to recipients, see here.
 
-### [Send-MgUserMailFolderChildFolderMessage](Send-MgUserMailFolderChildFolderMessage.md)
-Send an existing draft message.
-The draft message can be a new message draft, reply draft, reply-all draft, or a forward draft.
+### [Send-MgUserMail](Send-MgUserMail.md)
+Send the message specified in the request body using either JSON or MIME format.
+When using JSON format you can include a file attachment in the same **sendMail** action call.
+When using MIME format:\n- Provide the applicable Internet message headers and the MIME content, all encoded in **base64** format in the request body.\n- Add any attachments and S/MIME properties to the MIME content.
 This method saves the message in the **Sent Items** folder.
-Alternatively, send a new message in a single operation.
+Alternatively, create a draft message to send later.
+To learn more about the steps involved in the backend before a mail is delivered to recipients, see here.
 
-### [Send-MgUserMailFolderMessage](Send-MgUserMailFolderMessage.md)
-Send an existing draft message.
-The draft message can be a new message draft, reply draft, reply-all draft, or a forward draft.
+### [Send-MgUserMail](Send-MgUserMail.md)
+Send the message specified in the request body using either JSON or MIME format.
+When using JSON format you can include a file attachment in the same **sendMail** action call.
+When using MIME format:\n- Provide the applicable Internet message headers and the MIME content, all encoded in **base64** format in the request body.\n- Add any attachments and S/MIME properties to the MIME content.
 This method saves the message in the **Sent Items** folder.
-Alternatively, send a new message in a single operation.
+Alternatively, create a draft message to send later.
+To learn more about the steps involved in the backend before a mail is delivered to recipients, see here.
 
 ### [Send-MgUserMessage](Send-MgUserMessage.md)
 Send an existing draft message.
@@ -669,7 +596,7 @@ The organizer can also cancel an occurrence of a recurring meeting \nby providin
 An attendee calling this action gets an error (HTTP 400 Bad Request), with the following\nerror message: 'Your request can't be completed.
 You need to be an organizer to cancel a meeting.' This action differs from Delete in that **Cancel** is available to only the organizer, and lets\nthe organizer send a custom message to the attendees about the cancellation.
 
-### [Stop-MgUserEventInstance](Stop-MgUserEventInstance.md)
+### [Stop-MgUserEvent](Stop-MgUserEvent.md)
 This action allows the organizer of a meeting to send a cancellation message and cancel the event.
 The action moves the event to the Deleted Items folder.
 The organizer can also cancel an occurrence of a recurring meeting \nby providing the occurrence event ID.
@@ -709,7 +636,7 @@ Unpublish a [contentType][] from a content type hub site.
 ### [Update-MgUserChatInstalledApp](Update-MgUserChatInstalledApp.md)
 Upgrade an app installation within a chat.
 
-### [Update-MgUserManagedDeviceWindowDeviceAccount](Update-MgUserManagedDeviceWindowDeviceAccount.md)
+### [Update-MgUserManagedDeviceWindowsDeviceAccount](Update-MgUserManagedDeviceWindowsDeviceAccount.md)
 Invoke action updateWindowsDeviceAccount
 
 ### [Update-MgUserOnenotePageContent](Update-MgUserOnenotePageContent.md)

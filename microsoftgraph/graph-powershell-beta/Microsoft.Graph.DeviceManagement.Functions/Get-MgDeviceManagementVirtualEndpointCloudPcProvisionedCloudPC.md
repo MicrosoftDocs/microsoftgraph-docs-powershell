@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Functions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Functions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.functions/get-mgdevicemanagementvirtualendpointcloudpcprovisionedcloudpc
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Functions-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Functions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementvirtualendpointcloudpcprovisionedcloudpc
 schema: 2.0.0
 ---
 
-# Get-MgDeviceManagementVirtualEndpointCloudPcProvisionedCloudPC
+# Get-MgBetaDeviceManagementVirtualEndpointCloudPcProvisionedCloudPc
 
 ## SYNOPSIS
 Invoke function getProvisionedCloudPCs
@@ -14,14 +14,14 @@ Invoke function getProvisionedCloudPCs
 
 ### Get (Default)
 ```
-Get-MgDeviceManagementVirtualEndpointCloudPcProvisionedCloudPC -GroupId <String> -ServicePlanId <String>
+Get-MgBetaDeviceManagementVirtualEndpointCloudPcProvisionedCloudPc -GroupId <String> -ServicePlanId <String>
  [-Count] [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>]
  [-Top <Int32>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgDeviceManagementVirtualEndpointCloudPcProvisionedCloudPC
+Get-MgBetaDeviceManagementVirtualEndpointCloudPcProvisionedCloudPc
  -InputObject <IDeviceManagementFunctionsIdentity> [-Count] [-Filter <String>] [-Property <String[]>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
 ```
@@ -30,6 +30,16 @@ Get-MgDeviceManagementVirtualEndpointCloudPcProvisionedCloudPC
 Invoke function getProvisionedCloudPCs
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -80,7 +90,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementFunctionsIdentity
@@ -189,10 +199,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementFunctionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementFunctionsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCloudPc
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPc
 ## NOTES
 
 ALIASES
@@ -202,10 +212,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IDeviceManagementFunctionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementFunctionsIdentity>`: Identity Parameter
   - `[Category <String>]`: Usage: category='{category}'
   - `[CloudPcId <String>]`: The unique identifier of cloudPC
-  - `[CloudPcId1 <String>]`: Usage: cloudPcId='{cloudPcId}'
   - `[DepOnboardingSettingId <String>]`: The unique identifier of depOnboardingSetting
   - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The unique identifier of deviceAndAppManagementAssignmentFilter
   - `[DeviceConfigurationId <String>]`: The unique identifier of deviceConfiguration
@@ -227,7 +236,6 @@ INPUTOBJECT `<IDeviceManagementFunctionsIdentity>`: Identity Parameter
   - `[Scope <String>]`: Usage: scope='{scope}'
   - `[SecretReferenceValueId <String>]`: Usage: secretReferenceValueId='{secretReferenceValueId}'
   - `[ServicePlanId <String>]`: Usage: servicePlanId='{servicePlanId}'
-  - `[SessionKey <String>]`: Usage: sessionKey='{sessionKey}'
   - `[SubscriptionId <String>]`: Usage: subscriptionId='{subscriptionId}'
   - `[SummarizeBy <String>]`: Usage: summarizeBy='{summarizeBy}'
   - `[TemplateId <String>]`: Usage: templateId='{templateId}'

@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Groups-help.xml
-Module Name: Microsoft.Graph.Groups
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/invoke-mgsigngroupsiteinformationprotectiondigest
+﻿---
+external help file: Microsoft.Graph.Beta.Groups-help.xml
+Module Name: Microsoft.Graph.Beta.Groups
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetasigngroupsiteinformationprotectiondigest
 schema: 2.0.0
 ---
 
-# Invoke-MgSignGroupSiteInformationProtectionDigest
+# Invoke-MgBetaSignGroupSiteInformationProtectionDigest
 
 ## SYNOPSIS
 Invoke action signDigest
@@ -14,26 +14,26 @@ Invoke action signDigest
 
 ### SignExpanded (Default)
 ```
-Invoke-MgSignGroupSiteInformationProtectionDigest -GroupId <String> -SiteId <String>
+Invoke-MgBetaSignGroupSiteInformationProtectionDigest -GroupId <String> -SiteId <String>
  [-AdditionalProperties <Hashtable>] [-DigestInputFile <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Sign
 ```
-Invoke-MgSignGroupSiteInformationProtectionDigest -GroupId <String> -SiteId <String>
- -BodyParameter <IPaths1VaajyuGroupsGroupIdSitesSiteIdInformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema>
+Invoke-MgBetaSignGroupSiteInformationProtectionDigest -GroupId <String> -SiteId <String>
+ -Body <IPaths1VaajyuGroupsGroupIdSitesSiteIdInformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SignViaIdentityExpanded
 ```
-Invoke-MgSignGroupSiteInformationProtectionDigest -InputObject <IGroupsIdentity>
+Invoke-MgBetaSignGroupSiteInformationProtectionDigest -InputObject <IGroupsIdentity>
  [-AdditionalProperties <Hashtable>] [-DigestInputFile <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SignViaIdentity
 ```
-Invoke-MgSignGroupSiteInformationProtectionDigest -InputObject <IGroupsIdentity>
+Invoke-MgBetaSignGroupSiteInformationProtectionDigest -InputObject <IGroupsIdentity>
  -BodyParameter <IPaths1VaajyuGroupsGroupIdSitesSiteIdInformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -42,6 +42,16 @@ Invoke-MgSignGroupSiteInformationProtectionDigest -InputObject <IGroupsIdentity>
 Invoke action signDigest
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -60,13 +70,29 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -BodyParameter
+### -Body
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
 Type: IPaths1VaajyuGroupsGroupIdSitesSiteIdInformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Sign, SignViaIdentity
+Parameter Sets: Sign
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -BodyParameter
+.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+```yaml
+Type: IPaths1VaajyuGroupsGroupIdSitesSiteIdInformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: SignViaIdentity
 Aliases:
 
 Required: True
@@ -108,7 +134,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IGroupsIdentity
@@ -173,11 +199,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths1VaajyuGroupsGroupIdSitesSiteIdInformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1VaajyuGroupsGroupIdSitesSiteIdInformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSigningResult
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSigningResult
 ## NOTES
 
 ALIASES
@@ -187,11 +213,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1VaajyuGroupsGroupIdSitesSiteIdInformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema>`: .
+`BODY <IPaths1VaajyuGroupsGroupIdSitesSiteIdInformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Digest <Byte[]>]`: 
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+`BODYPARAMETER <IPaths1VaajyuGroupsGroupIdSitesSiteIdInformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Digest <Byte[]>]`: 
+
+`INPUTOBJECT <IGroupsIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[ConversationId <String>]`: The unique identifier of conversation
@@ -213,11 +243,9 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
   - `[Interval <String>]`: Usage: interval='{interval}'
   - `[ListId <String>]`: The unique identifier of list
-  - `[ListId1 <String>]`: Usage: listId='{listId}'
   - `[ListItemId <String>]`: The unique identifier of listItem
   - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
   - `[MentionId <String>]`: The unique identifier of mention
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
   - `[NotebookId <String>]`: The unique identifier of notebook
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
@@ -230,7 +258,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[Q <String>]`: Usage: q='{q}'
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
   - `[SiteId <String>]`: The unique identifier of site
   - `[SitePageId <String>]`: The unique identifier of sitePage
   - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'

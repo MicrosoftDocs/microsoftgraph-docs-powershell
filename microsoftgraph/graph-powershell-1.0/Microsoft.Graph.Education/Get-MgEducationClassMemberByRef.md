@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/get-mgeducationclassmemberbyref
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassmemberbyref
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Get-MgEducationClassMemberByRef
@@ -24,16 +23,12 @@ Retrieves the educationUser members of an educationClass.
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Education
-
-Get-MgEducationClassMember -EducationClassId $educationClassId
 ```
 
-This example shows how to use the Get-MgEducationClassMemberByRef Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Get-MgEducationClassMember -EducationClassId $educationClassId
 
 ## PARAMETERS
 

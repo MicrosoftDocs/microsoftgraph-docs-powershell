@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Administration
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointsupportedregion
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointsupportedregion
 schema: 2.0.0
 ---
 
-# New-MgDeviceManagementVirtualEndpointSupportedRegion
+# New-MgBetaDeviceManagementVirtualEndpointSupportedRegion
 
 ## SYNOPSIS
 Create new navigation property to supportedRegions for deviceManagement
@@ -14,14 +14,14 @@ Create new navigation property to supportedRegions for deviceManagement
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementVirtualEndpointSupportedRegion [-AdditionalProperties <Hashtable>]
+New-MgBetaDeviceManagementVirtualEndpointSupportedRegion [-AdditionalProperties <Hashtable>]
  [-DisplayName <String>] [-Id <String>] [-RegionGroup <String>] [-RegionStatus <String>]
  [-SupportedSolution <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceManagementVirtualEndpointSupportedRegion -BodyParameter <IMicrosoftGraphCloudPcSupportedRegion>
+New-MgBetaDeviceManagementVirtualEndpointSupportedRegion -BodyParameter <IMicrosoftGraphCloudPcSupportedRegion>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -29,6 +29,20 @@ New-MgDeviceManagementVirtualEndpointSupportedRegion -BodyParameter <IMicrosoftG
 Create new navigation property to supportedRegions for deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -49,7 +63,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 cloudPcSupportedRegion
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphCloudPcSupportedRegion
@@ -80,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -176,10 +190,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCloudPcSupportedRegion
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcSupportedRegion
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCloudPcSupportedRegion
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcSupportedRegion
 ## NOTES
 
 ALIASES
@@ -189,9 +203,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphCloudPcSupportedRegion>`: cloudPcSupportedRegion
+`BODYPARAMETER <IMicrosoftGraphCloudPcSupportedRegion>`: cloudPcSupportedRegion
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DisplayName <String>]`: The name for the supported region. Read-only.
   - `[RegionGroup <String>]`: cloudPcRegionGroup
   - `[RegionStatus <String>]`: cloudPcSupportedRegionStatus

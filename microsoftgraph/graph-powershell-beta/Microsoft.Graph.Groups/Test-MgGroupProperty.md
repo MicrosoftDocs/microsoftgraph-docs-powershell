@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Groups-help.xml
-Module Name: Microsoft.Graph.Groups
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/test-mggroupproperty
+﻿---
+external help file: Microsoft.Graph.Beta.Groups-help.xml
+Module Name: Microsoft.Graph.Beta.Groups
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupproperty
 schema: 2.0.0
 ---
 
-# Test-MgGroupProperty
+# Test-MgBetaGroupProperty
 
 ## SYNOPSIS
 Validate if a Microsoft 365 group's display name or mail nickname complies with naming policies.
@@ -19,26 +19,27 @@ However, you can validate both the mail nickname and the display name and receiv
 
 ### ValidateExpanded (Default)
 ```
-Test-MgGroupProperty -GroupId <String> [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
+Test-MgBetaGroupProperty -GroupId <String> [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
  [-MailNickname <String>] [-OnBehalfOfUserId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Validate
 ```
-Test-MgGroupProperty -GroupId <String>
+Test-MgBetaGroupProperty -GroupId <String>
  -BodyParameter <IPaths2357VbGroupsGroupIdMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ValidateViaIdentityExpanded
 ```
-Test-MgGroupProperty -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
- [-MailNickname <String>] [-OnBehalfOfUserId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Test-MgBetaGroupProperty -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
+ [-DisplayName <String>] [-MailNickname <String>] [-OnBehalfOfUserId <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### ValidateViaIdentity
 ```
-Test-MgGroupProperty -InputObject <IGroupsIdentity>
+Test-MgBetaGroupProperty -InputObject <IGroupsIdentity>
  -BodyParameter <IPaths2357VbGroupsGroupIdMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -53,19 +54,16 @@ However, you can validate both the mail nickname and the display name and receiv
 
 ## EXAMPLES
 
-### Example 1: Using the Test-MgGroupProperty Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Groups
+Import-Module Microsoft.Graph.Beta.Groups
 $params = @{
 	DisplayName = "Myprefix_test_mysuffix"
 	MailNickname = "Myprefix_test_mysuffix"
 	OnBehalfOfUserId = "onBehalfOfUserId-value"
 }
-Test-MgGroupProperty -GroupId $groupId -BodyParameter $params
+Test-MgBetaGroupProperty -GroupId $groupId -BodyParameter $params
 ```
-
-This example shows how to use the Test-MgGroupProperty Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -86,7 +84,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths2357VbGroupsGroupIdMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema
@@ -132,7 +130,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IGroupsIdentity
@@ -227,8 +225,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths2357VbGroupsGroupIdMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths2357VbGroupsGroupIdMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### System.Boolean
@@ -241,13 +239,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths2357VbGroupsGroupIdMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths2357VbGroupsGroupIdMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: 
   - `[MailNickname <String>]`: 
   - `[OnBehalfOfUserId <String>]`: 
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+`INPUTOBJECT <IGroupsIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[ConversationId <String>]`: The unique identifier of conversation
@@ -269,11 +267,9 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
   - `[Interval <String>]`: Usage: interval='{interval}'
   - `[ListId <String>]`: The unique identifier of list
-  - `[ListId1 <String>]`: Usage: listId='{listId}'
   - `[ListItemId <String>]`: The unique identifier of listItem
   - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
   - `[MentionId <String>]`: The unique identifier of mention
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
   - `[NotebookId <String>]`: The unique identifier of notebook
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
@@ -286,7 +282,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[Q <String>]`: Usage: q='{q}'
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
   - `[SiteId <String>]`: The unique identifier of site
   - `[SitePageId <String>]`: The unique identifier of sitePage
   - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'

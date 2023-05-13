@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementvirtualendpointreporttotalaggregatedremoteconnectionreport
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreporttotalaggregatedremoteconnectionreport
 schema: 2.0.0
 ---
 
-# Get-MgDeviceManagementVirtualEndpointReportTotalAggregatedRemoteConnectionReport
+# Get-MgBetaDeviceManagementVirtualEndpointReportTotalAggregatedRemoteConnectionReport
 
 ## SYNOPSIS
 Get the total aggregated remote connection usage of a Cloud PC during a given time span.
@@ -14,7 +14,7 @@ Get the total aggregated remote connection usage of a Cloud PC during a given ti
 
 ### GetExpanded (Default)
 ```
-Get-MgDeviceManagementVirtualEndpointReportTotalAggregatedRemoteConnectionReport -OutFile <String>
+Get-MgBetaDeviceManagementVirtualEndpointReportTotalAggregatedRemoteConnectionReport -OutFile <String>
  [-AdditionalProperties <Hashtable>] [-Filter <String>] [-GroupBy <String[]>] [-Property <String[]>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -22,7 +22,7 @@ Get-MgDeviceManagementVirtualEndpointReportTotalAggregatedRemoteConnectionReport
 
 ### Get
 ```
-Get-MgDeviceManagementVirtualEndpointReportTotalAggregatedRemoteConnectionReport -OutFile <String>
+Get-MgBetaDeviceManagementVirtualEndpointReportTotalAggregatedRemoteConnectionReport -OutFile <String>
  -BodyParameter <IPaths6MqafvDevicemanagementVirtualendpointReportsMicrosoftGraphGettotalaggregatedremoteconnectionreportsPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -31,6 +31,16 @@ Get-MgDeviceManagementVirtualEndpointReportTotalAggregatedRemoteConnectionReport
 Get the total aggregated remote connection usage of a Cloud PC during a given time span.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -51,7 +61,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths6MqafvDevicemanagementVirtualendpointReportsMicrosoftGraphGettotalaggregatedremoteconnectionreportsPostRequestbodyContentApplicationJsonSchema
@@ -236,7 +246,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths6MqafvDevicemanagementVirtualendpointReportsMicrosoftGraphGettotalaggregatedremoteconnectionreportsPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths6MqafvDevicemanagementVirtualendpointReportsMicrosoftGraphGettotalaggregatedremoteconnectionreportsPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### System.Boolean
@@ -249,7 +259,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths6MqafvDevicemanagementVirtualendpointReportsMicrosoftGraphGettotalaggregatedremoteconnectionreportsPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths6MqafvDevicemanagementVirtualendpointReportsMicrosoftGraphGettotalaggregatedremoteconnectionreportsPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Filter <String>]`: 
   - `[GroupBy <String[]>]`: 

@@ -1,26 +1,36 @@
----
-external help file: Microsoft.Graph.Identity.Governance-help.xml
-Module Name: Microsoft.Graph.Identity.Governance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceprivilegedaccessgroup
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.Governance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceprivilegedaccessgroup
 schema: 2.0.0
 ---
 
-# Get-MgIdentityGovernancePrivilegedAccessGroup
+# Get-MgBetaIdentityGovernancePrivilegedAccessGroup
 
 ## SYNOPSIS
-Get group from identityGovernance
+A group that's governed through Privileged Identity Management (PIM).
 
 ## SYNTAX
 
 ```
-Get-MgIdentityGovernancePrivilegedAccessGroup [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaIdentityGovernancePrivilegedAccessGroup [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get group from identityGovernance
+A group that's governed through Privileged Identity Management (PIM).
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -61,7 +71,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrivilegedAccessGroup
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedAccessGroup
 ## NOTES
 
 ALIASES

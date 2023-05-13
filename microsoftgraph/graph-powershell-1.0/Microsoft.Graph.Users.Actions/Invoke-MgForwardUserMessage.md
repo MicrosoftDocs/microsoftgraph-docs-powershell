@@ -1,7 +1,7 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgforwardusermessage
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgforwardusermessage
 schema: 2.0.0
 ---
 
@@ -18,31 +18,31 @@ Alternatively, create a draft to forward a message, and send it later.
 
 ## SYNTAX
 
-### ForwardExpanded1 (Default)
+### ForwardExpanded (Default)
 ```
 Invoke-MgForwardUserMessage -MessageId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-Comment <String>] [-Message <IMicrosoftGraphMessage1>] [-ToRecipients <IMicrosoftGraphRecipient[]>]
+ [-Comment <String>] [-Message <IMicrosoftGraphMessage>] [-ToRecipients <IMicrosoftGraphRecipient[]>]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Forward1
+### Forward
 ```
 Invoke-MgForwardUserMessage -MessageId <String> -UserId <String>
- -BodyParameter <IPaths3Ta6EnUsersUserIdMessagesMessageIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema1>
+ -BodyParameter <IPaths3Ta6EnUsersUserIdMessagesMessageIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ForwardViaIdentityExpanded1
+### ForwardViaIdentityExpanded
 ```
 Invoke-MgForwardUserMessage -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-Comment <String>] [-Message <IMicrosoftGraphMessage1>] [-ToRecipients <IMicrosoftGraphRecipient[]>]
+ [-Comment <String>] [-Message <IMicrosoftGraphMessage>] [-ToRecipients <IMicrosoftGraphRecipient[]>]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ForwardViaIdentity1
+### ForwardViaIdentity
 ```
 Invoke-MgForwardUserMessage -InputObject <IUsersActionsIdentity>
- -BodyParameter <IPaths3Ta6EnUsersUserIdMessagesMessageIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema1>
+ -BodyParameter <IPaths3Ta6EnUsersUserIdMessagesMessageIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -57,7 +57,7 @@ Alternatively, create a draft to forward a message, and send it later.
 
 ## EXAMPLES
 
-### Example 1: Using the Invoke-MgForwardUserMessage Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{
@@ -75,9 +75,6 @@ $params = @{
 Invoke-MgForwardUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
 ```
 
-This example shows how to use the Invoke-MgForwardUserMessage Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -85,7 +82,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: ForwardExpanded1, ForwardViaIdentityExpanded1
+Parameter Sets: ForwardExpanded, ForwardViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -97,11 +94,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths3Ta6EnUsersUserIdMessagesMessageIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema1
-Parameter Sets: Forward1, ForwardViaIdentity1
+Type: IPaths3Ta6EnUsersUserIdMessagesMessageIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Forward, ForwardViaIdentity
 Aliases:
 
 Required: True
@@ -116,7 +113,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: ForwardExpanded1, ForwardViaIdentityExpanded1
+Parameter Sets: ForwardExpanded, ForwardViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -128,11 +125,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: ForwardViaIdentityExpanded1, ForwardViaIdentity1
+Parameter Sets: ForwardViaIdentityExpanded, ForwardViaIdentity
 Aliases:
 
 Required: True
@@ -144,11 +141,11 @@ Accept wildcard characters: False
 
 ### -Message
 message
-To construct, please use Get-Help -Online and see NOTES section for MESSAGE properties and create a hash table.
+To construct, see NOTES section for MESSAGE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMessage1
-Parameter Sets: ForwardExpanded1, ForwardViaIdentityExpanded1
+Type: IMicrosoftGraphMessage
+Parameter Sets: ForwardExpanded, ForwardViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -163,7 +160,7 @@ The unique identifier of message
 
 ```yaml
 Type: String
-Parameter Sets: ForwardExpanded1, Forward1
+Parameter Sets: ForwardExpanded, Forward
 Aliases:
 
 Required: True
@@ -190,11 +187,11 @@ Accept wildcard characters: False
 
 ### -ToRecipients
 .
-To construct, please use Get-Help -Online and see NOTES section for TORECIPIENTS properties and create a hash table.
+To construct, see NOTES section for TORECIPIENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRecipient[]
-Parameter Sets: ForwardExpanded1, ForwardViaIdentityExpanded1
+Parameter Sets: ForwardExpanded, ForwardViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -209,7 +206,7 @@ The unique identifier of user
 
 ```yaml
 Type: String
-Parameter Sets: ForwardExpanded1, Forward1
+Parameter Sets: ForwardExpanded, Forward
 Aliases:
 
 Required: True
@@ -255,7 +252,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths3Ta6EnUsersUserIdMessagesMessageIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema1
+### Microsoft.Graph.PowerShell.Models.IPaths3Ta6EnUsersUserIdMessagesMessageIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
 ## OUTPUTS
 
@@ -269,10 +266,10 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths3Ta6EnUsersUserIdMessagesMessageIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema1>`: .
+`BODYPARAMETER <IPaths3Ta6EnUsersUserIdMessagesMessageIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Comment <String>]`: 
-  - `[Message <IMicrosoftGraphMessage1>]`: message
+  - `[Message <IMicrosoftGraphMessage>]`: message
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Categories <String[]>]`: The categories associated with the item
     - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
@@ -339,20 +336,13 @@ BODYPARAMETER `<IPaths3Ta6EnUsersUserIdMessagesMessageIdMicrosoftGraphForwardPos
     - `[WebLink <String>]`: 
   - `[ToRecipients <IMicrosoftGraphRecipient[]>]`: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
-  - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
-  - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
-  - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
+`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AuthenticationMethodId <String>]`: The unique identifier of authenticationMethod
   - `[CalendarId <String>]`: The unique identifier of calendar
   - `[ChatId <String>]`: The unique identifier of chat
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
   - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
-  - `[CloudPcId <String>]`: The unique identifier of cloudPC
   - `[ContentTypeId <String>]`: The unique identifier of contentType
-  - `[DeviceEnrollmentConfigurationId <String>]`: The unique identifier of deviceEnrollmentConfiguration
-  - `[DeviceId <String>]`: The unique identifier of device
-  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
   - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
   - `[DriveId <String>]`: The unique identifier of drive
   - `[DriveItemId <String>]`: The unique identifier of driveItem
@@ -365,24 +355,18 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
   - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
   - `[MessageId <String>]`: The unique identifier of message
-  - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
   - `[NotebookId <String>]`: The unique identifier of notebook
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
-  - `[OutlookTaskFolderId <String>]`: The unique identifier of outlookTaskFolder
-  - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
-  - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
-  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
-  - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
   - `[TodoTaskId <String>]`: The unique identifier of todoTask
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
   - `[UserId <String>]`: The unique identifier of user
 
-MESSAGE `<IMicrosoftGraphMessage1>`: message
+`MESSAGE <IMicrosoftGraphMessage>`: message
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Categories <String[]>]`: The categories associated with the item
   - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
@@ -448,7 +432,7 @@ MESSAGE `<IMicrosoftGraphMessage1>`: message
   - `[UniqueBody <IMicrosoftGraphItemBody>]`: itemBody
   - `[WebLink <String>]`: 
 
-TORECIPIENTS <IMicrosoftGraphRecipient\[]>: .
+`TORECIPIENTS <IMicrosoftGraphRecipient[]>`: .
   - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Address <String>]`: The email address of the person or entity.

@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Users.Actions-help.xml
-Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/enable-mgusermanageddevicelostmode
+﻿---
+external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.Users.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/enable-mgbetausermanageddevicelostmode
 schema: 2.0.0
 ---
 
-# Enable-MgUserManagedDeviceLostMode
+# Enable-MgBetaUserManagedDeviceLostMode
 
 ## SYNOPSIS
 Enable lost mode
@@ -14,28 +14,28 @@ Enable lost mode
 
 ### EnableExpanded (Default)
 ```
-Enable-MgUserManagedDeviceLostMode -ManagedDeviceId <String> -UserId <String>
+Enable-MgBetaUserManagedDeviceLostMode -ManagedDeviceId <String> -UserId <String>
  [-AdditionalProperties <Hashtable>] [-Footer <String>] [-Message <String>] [-PhoneNumber <String>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Enable
 ```
-Enable-MgUserManagedDeviceLostMode -ManagedDeviceId <String> -UserId <String>
+Enable-MgBetaUserManagedDeviceLostMode -ManagedDeviceId <String> -UserId <String>
  -BodyParameter <IPathsM5KcdlUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphEnablelostmodePostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### EnableViaIdentityExpanded
 ```
-Enable-MgUserManagedDeviceLostMode -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
+Enable-MgBetaUserManagedDeviceLostMode -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
  [-Footer <String>] [-Message <String>] [-PhoneNumber <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### EnableViaIdentity
 ```
-Enable-MgUserManagedDeviceLostMode -InputObject <IUsersActionsIdentity>
+Enable-MgBetaUserManagedDeviceLostMode -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPathsM5KcdlUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphEnablelostmodePostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -44,6 +44,20 @@ Enable-MgUserManagedDeviceLostMode -InputObject <IUsersActionsIdentity>
 Enable lost mode
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -64,7 +78,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPathsM5KcdlUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphEnablelostmodePostRequestbodyContentApplicationJsonSchema
@@ -95,7 +109,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersActionsIdentity
@@ -220,8 +234,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsM5KcdlUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphEnablelostmodePostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsM5KcdlUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphEnablelostmodePostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
 ## OUTPUTS
 
 ### System.Boolean
@@ -234,13 +248,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsM5KcdlUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphEnablelostmodePostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsM5KcdlUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphEnablelostmodePostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Footer <String>]`: 
   - `[Message <String>]`: 
   - `[PhoneNumber <String>]`: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
@@ -274,7 +288,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription

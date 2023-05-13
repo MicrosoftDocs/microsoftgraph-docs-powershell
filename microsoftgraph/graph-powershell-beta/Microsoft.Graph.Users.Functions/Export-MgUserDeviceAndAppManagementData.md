@@ -1,38 +1,38 @@
----
-external help file: Microsoft.Graph.Users.Functions-help.xml
-Module Name: Microsoft.Graph.Users.Functions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/export-mguserdeviceandappmanagementdata
+﻿---
+external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
+Module Name: Microsoft.Graph.Beta.Users.Functions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/export-mgbetauserdeviceandappmanagementdata
 schema: 2.0.0
 ---
 
-# Export-MgUserDeviceAndAppManagementData
+# Export-MgBetaUserDeviceAndAppManagementData
 
 ## SYNOPSIS
 Invoke function exportDeviceAndAppManagementData
 
 ## SYNTAX
 
-### Export2 (Default)
+### Export (Default)
 ```
-Export-MgUserDeviceAndAppManagementData -UserId <String> -OutFile <String> [-PassThru] [<CommonParameters>]
+Export-MgBetaUserDeviceAndAppManagementData -UserId <String> -OutFile <String> [-PassThru] [<CommonParameters>]
 ```
 
-### Export3
+### Export1
 ```
-Export-MgUserDeviceAndAppManagementData -UserId <String> -Skip <Int32> -Top <Int32> -OutFile <String>
+Export-MgBetaUserDeviceAndAppManagementData -UserId <String> -Skip <Int32> -Top <Int32> -OutFile <String>
  [-PassThru] [<CommonParameters>]
 ```
 
-### ExportViaIdentity3
+### ExportViaIdentity1
 ```
-Export-MgUserDeviceAndAppManagementData -InputObject <IUsersFunctionsIdentity> -OutFile <String> [-PassThru]
- [<CommonParameters>]
+Export-MgBetaUserDeviceAndAppManagementData -InputObject <IUsersFunctionsIdentity> -OutFile <String>
+ [-PassThru] [<CommonParameters>]
 ```
 
-### ExportViaIdentity2
+### ExportViaIdentity
 ```
-Export-MgUserDeviceAndAppManagementData -InputObject <IUsersFunctionsIdentity> -OutFile <String> [-PassThru]
- [<CommonParameters>]
+Export-MgBetaUserDeviceAndAppManagementData -InputObject <IUsersFunctionsIdentity> -OutFile <String>
+ [-PassThru] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -40,15 +40,29 @@ Invoke function exportDeviceAndAppManagementData
 
 ## EXAMPLES
 
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersFunctionsIdentity
-Parameter Sets: ExportViaIdentity3, ExportViaIdentity2
+Parameter Sets: ExportViaIdentity1, ExportViaIdentity
 Aliases:
 
 Required: True
@@ -93,7 +107,7 @@ Usage: top={top}
 
 ```yaml
 Type: Int32
-Parameter Sets: Export3
+Parameter Sets: Export1
 Aliases: Limit
 
 Required: True
@@ -108,7 +122,7 @@ The unique identifier of user
 
 ```yaml
 Type: String
-Parameter Sets: Export2, Export3
+Parameter Sets: Export, Export1
 Aliases:
 
 Required: True
@@ -123,7 +137,7 @@ Usage: skip={skip}
 
 ```yaml
 Type: Int32
-Parameter Sets: Export3
+Parameter Sets: Export1
 Aliases:
 
 Required: True
@@ -138,7 +152,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersFunctionsIdentity
 ## OUTPUTS
 
 ### System.Boolean
@@ -151,7 +165,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersFunctionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AppConsentRequestId <String>]`: The unique identifier of appConsentRequest
   - `[CalendarId <String>]`: The unique identifier of calendar
@@ -163,8 +177,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[DriveId <String>]`: The unique identifier of drive
   - `[DriveItemId <String>]`: The unique identifier of driveItem
-  - `[EndDateTime <String>]`: Usage: EndDateTime='{EndDateTime}'
-  - `[EndDateTime1 <String>]`: Usage: endDateTime='{endDateTime}'
+  - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
   - `[EventId <String>]`: The unique identifier of event
   - `[GroupId <String>]`: Usage: groupId='{groupId}'
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
@@ -175,15 +188,14 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
   - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
   - `[On <String>]`: Usage: on='{on}'
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
+  - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
   - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket
   - `[PlannerPlanId <String>]`: The unique identifier of plannerPlan
   - `[Q <String>]`: Usage: q='{q}'
   - `[RoomList <String>]`: Usage: RoomList='{RoomList}'
   - `[ServicePlanId <String>]`: Usage: servicePlanId='{servicePlanId}'
-  - `[SessionKey <String>]`: Usage: sessionKey='{sessionKey}'
   - `[Skip <Int32?>]`: Usage: skip={skip}
-  - `[StartDateTime <String>]`: Usage: StartDateTime='{StartDateTime}'
-  - `[StartDateTime1 <String>]`: Usage: startDateTime='{startDateTime}'
+  - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
   - `[TimeZoneStandard <String>]`: Usage: TimeZoneStandard='{TimeZoneStandard}'
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
   - `[Token <String>]`: Usage: token='{token}'

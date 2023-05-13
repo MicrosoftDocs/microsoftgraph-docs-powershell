@@ -1,58 +1,52 @@
----
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/get-mgsecuritythreatsubmissionfilethreat
+﻿---
+external help file: Microsoft.Graph.Beta.Security-help.xml
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatsubmissionfilethreat
 schema: 2.0.0
 ---
 
-# Get-MgSecurityThreatSubmissionFileThreat
+# Get-MgBetaSecurityThreatSubmissionFileThreat
 
 ## SYNOPSIS
-Get fileThreats from security
+Read the properties and relationships of a fileThreatSubmission object.
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgSecurityThreatSubmissionFileThreat [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [<CommonParameters>]
+Get-MgBetaSecurityThreatSubmissionFileThreat [-ExpandProperty <String[]>] [-Property <String[]>]
+ [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
+ [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgSecurityThreatSubmissionFileThreat -FileThreatSubmissionId <String> [-ExpandProperty <String[]>]
+Get-MgBetaSecurityThreatSubmissionFileThreat -FileThreatSubmissionId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgSecurityThreatSubmissionFileThreat -InputObject <ISecurityIdentity> [-ExpandProperty <String[]>]
+Get-MgBetaSecurityThreatSubmissionFileThreat -InputObject <ISecurityIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get fileThreats from security
+Read the properties and relationships of a fileThreatSubmission object.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgSecurityThreatSubmissionFileThreat Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Security
-Get-MgSecurityThreatSubmissionFileThreat -FileThreatSubmissionId $fileThreatSubmissionId
+Import-Module Microsoft.Graph.Beta.Security
+Get-MgBetaSecurityThreatSubmissionFileThreat -FileThreatSubmissionId $fileThreatSubmissionId
 ```
 
-This example shows how to use the Get-MgSecurityThreatSubmissionFileThreat Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Get-MgSecurityThreatSubmissionFileThreat Cmdlet
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Security
-Get-MgSecurityThreatSubmissionFileThreat
+Import-Module Microsoft.Graph.Beta.Security
+Get-MgBetaSecurityThreatSubmissionFileThreat
 ```
-
-This example shows how to use the Get-MgSecurityThreatSubmissionFileThreat Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -134,7 +128,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ISecurityIdentity
@@ -243,10 +237,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityFileThreatSubmission
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityFileThreatSubmission
 ## NOTES
 
 ALIASES
@@ -256,7 +250,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+`INPUTOBJECT <ISecurityIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
   - `[ArticleId <String>]`: The unique identifier of article
   - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator

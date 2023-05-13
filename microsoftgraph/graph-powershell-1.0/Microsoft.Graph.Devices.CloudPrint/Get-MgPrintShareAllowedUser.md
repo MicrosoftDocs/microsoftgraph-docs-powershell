@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintsharealloweduser
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintsharealloweduser
 schema: 2.0.0
-ms.prod: cloud-printing
 ---
 
 # Get-MgPrintShareAllowedUser
@@ -24,14 +23,11 @@ Retrieve a list of users who have been granted access to submit print jobs to th
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgPrintShareAllowedUser Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Devices.CloudPrint
 Get-MgPrintShareAllowedUser -PrinterShareId $printerShareId
 ```
-
-This example shows how to use the Get-MgPrintShareAllowedUser Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

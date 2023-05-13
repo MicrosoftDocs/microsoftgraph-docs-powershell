@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Groups-help.xml
-Module Name: Microsoft.Graph.Groups
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/get-mggrouplifecyclepolicybygroup
+﻿---
+external help file: Microsoft.Graph.Beta.Groups-help.xml
+Module Name: Microsoft.Graph.Beta.Groups
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouplifecyclepolicybygroup
 schema: 2.0.0
 ---
 
-# Get-MgGroupLifecyclePolicyByGroup
+# Get-MgBetaGroupLifecyclePolicyByGroup
 
 ## SYNOPSIS
 Retrieves a list of groupLifecyclePolicy objects to which a group belongs.
@@ -13,7 +13,7 @@ Retrieves a list of groupLifecyclePolicy objects to which a group belongs.
 ## SYNTAX
 
 ```
-Get-MgGroupLifecyclePolicyByGroup -GroupId <String> [-ExpandProperty <String[]>] [-Filter <String>]
+Get-MgBetaGroupLifecyclePolicyByGroup -GroupId <String> [-ExpandProperty <String[]>] [-Filter <String>]
  [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
@@ -23,14 +23,11 @@ Retrieves a list of groupLifecyclePolicy objects to which a group belongs.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgGroupLifecyclePolicyByGroup Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Groups
-Get-MgGroupLifecyclePolicyByGroup -GroupId $groupId
+Import-Module Microsoft.Graph.Beta.Groups
+Get-MgBetaGroupLifecyclePolicyByGroup -GroupId $groupId
 ```
-
-This example shows how to use the Get-MgGroupLifecyclePolicyByGroup Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -207,7 +204,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupLifecyclePolicy
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupLifecyclePolicy
 ## NOTES
 
 ALIASES

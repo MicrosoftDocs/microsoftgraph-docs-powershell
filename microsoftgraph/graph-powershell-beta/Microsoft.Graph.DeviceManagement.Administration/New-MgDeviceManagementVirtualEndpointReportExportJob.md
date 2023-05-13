@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Administration
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointreportexportjob
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointreportexportjob
 schema: 2.0.0
 ---
 
-# New-MgDeviceManagementVirtualEndpointReportExportJob
+# New-MgBetaDeviceManagementVirtualEndpointReportExportJob
 
 ## SYNOPSIS
 Create a new cloudPcExportJob resource to initiate downloading the entire or specified portion of a report.
@@ -16,7 +16,7 @@ When the property becomes `completed`, the report has finished downloading in th
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementVirtualEndpointReportExportJob [-AdditionalProperties <Hashtable>]
+New-MgBetaDeviceManagementVirtualEndpointReportExportJob [-AdditionalProperties <Hashtable>]
  [-ExpirationDateTime <DateTime>] [-ExportJobStatus <String>] [-ExportUrl <String>] [-Filter <String>]
  [-Format <String>] [-Id <String>] [-Property <String[]>] [-ReportName <String>] [-RequestDateTime <DateTime>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -24,8 +24,8 @@ New-MgDeviceManagementVirtualEndpointReportExportJob [-AdditionalProperties <Has
 
 ### Create
 ```
-New-MgDeviceManagementVirtualEndpointReportExportJob -BodyParameter <IMicrosoftGraphCloudPcExportJob> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaDeviceManagementVirtualEndpointReportExportJob -BodyParameter <IMicrosoftGraphCloudPcExportJob>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -34,6 +34,20 @@ Use the GET cloudPcExportJob operation to verify the **exportJobStatus** propert
 When the property becomes `completed`, the report has finished downloading in the location specified by the **exportUrl** property.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -54,7 +68,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 cloudPcExportJob
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphCloudPcExportJob
@@ -145,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -241,10 +255,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCloudPcExportJob
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcExportJob
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCloudPcExportJob
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcExportJob
 ## NOTES
 
 ALIASES
@@ -254,9 +268,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphCloudPcExportJob>`: cloudPcExportJob
+`BODYPARAMETER <IMicrosoftGraphCloudPcExportJob>`: cloudPcExportJob
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ExpirationDateTime <DateTime?>]`: The date and time when the export job expires.
   - `[ExportJobStatus <String>]`: cloudPcExportJobStatus
   - `[ExportUrl <String>]`: The storage account URL of the exported report. It can be used to download the file.

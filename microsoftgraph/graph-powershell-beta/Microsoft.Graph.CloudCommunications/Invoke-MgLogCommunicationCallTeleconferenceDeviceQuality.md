@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.CloudCommunications-help.xml
-Module Name: Microsoft.Graph.CloudCommunications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/invoke-mglogcommunicationcallteleconferencedevicequality
+﻿---
+external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
+Module Name: Microsoft.Graph.Beta.CloudCommunications
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetalogcommunicationcallteleconferencedevicequality
 schema: 2.0.0
 ---
 
-# Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality
+# Invoke-MgBetaLogCommunicationCallTeleconferenceDeviceQuality
 
 ## SYNOPSIS
 Log video teleconferencing device quality data.
@@ -18,16 +18,16 @@ This method is only for the CVI partners to provide their media quality data.
 
 ## SYNTAX
 
-### LogExpanded1 (Default)
+### LogExpanded (Default)
 ```
-Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality [-AdditionalProperties <Hashtable>]
+Invoke-MgBetaLogCommunicationCallTeleconferenceDeviceQuality [-AdditionalProperties <Hashtable>]
  [-Quality <IMicrosoftGraphTeleconferenceDeviceQuality>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Log1
+### Log
 ```
-Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality
- -BodyParameter <IPaths1JbdsmaCommunicationsCallsMicrosoftGraphLogteleconferencedevicequalityPostRequestbodyContentApplicationJsonSchema>
+Invoke-MgBetaLogCommunicationCallTeleconferenceDeviceQuality
+ -Body <IPaths1JbdsmaCommunicationsCallsMicrosoftGraphLogteleconferencedevicequalityPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -42,9 +42,9 @@ This method is only for the CVI partners to provide their media quality data.
 
 ## EXAMPLES
 
-### Example 1: Using the Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.CloudCommunications
+Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
 	Quality = @{
 		"@odata.type" = "#microsoft.graph.teleconferenceDeviceQuality"
@@ -129,11 +129,8 @@ $params = @{
 		)
 	}
 }
-Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality -BodyParameter $params
+Invoke-MgBetaLogCommunicationCallTeleconferenceDeviceQuality -BodyParameter $params
 ```
-
-This example shows how to use the Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -142,7 +139,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: LogExpanded1
+Parameter Sets: LogExpanded
 Aliases:
 
 Required: False
@@ -152,13 +149,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -BodyParameter
+### -Body
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
 Type: IPaths1JbdsmaCommunicationsCallsMicrosoftGraphLogteleconferencedevicequalityPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Log1
+Parameter Sets: Log
 Aliases:
 
 Required: True
@@ -185,11 +182,11 @@ Accept wildcard characters: False
 
 ### -Quality
 teleconferenceDeviceQuality
-To construct, please use Get-Help -Online and see NOTES section for QUALITY properties and create a hash table.
+To construct, see NOTES section for QUALITY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphTeleconferenceDeviceQuality
-Parameter Sets: LogExpanded1
+Parameter Sets: LogExpanded
 Aliases:
 
 Required: False
@@ -235,7 +232,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1JbdsmaCommunicationsCallsMicrosoftGraphLogteleconferencedevicequalityPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1JbdsmaCommunicationsCallsMicrosoftGraphLogteleconferencedevicequalityPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### System.Boolean
@@ -248,7 +245,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1JbdsmaCommunicationsCallsMicrosoftGraphLogteleconferencedevicequalityPostRequestbodyContentApplicationJsonSchema>`: .
+`BODY <IPaths1JbdsmaCommunicationsCallsMicrosoftGraphLogteleconferencedevicequalityPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Quality <IMicrosoftGraphTeleconferenceDeviceQuality>]`: teleconferenceDeviceQuality
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -284,7 +281,7 @@ BODYPARAMETER `<IPaths1JbdsmaCommunicationsCallsMicrosoftGraphLogteleconferenced
       - `[RemotePort <Int32?>]`: The remote media port.
     - `[ParticipantId <String>]`: A unique identifier for a specific participant in a conference. The CVI partner needs to copy over Call.MyParticipantId to this property.
 
-QUALITY `<IMicrosoftGraphTeleconferenceDeviceQuality>`: teleconferenceDeviceQuality
+`QUALITY <IMicrosoftGraphTeleconferenceDeviceQuality>`: teleconferenceDeviceQuality
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CallChainId <String>]`: A unique identifier for all  the participant calls in a conference or a unique identifier for two participant calls in P2P call. This needs to be copied over from Microsoft.Graph.Call.CallChainId.
   - `[CloudServiceDeploymentEnvironment <String>]`: A geo-region where the service is deployed, such as ProdNoam.

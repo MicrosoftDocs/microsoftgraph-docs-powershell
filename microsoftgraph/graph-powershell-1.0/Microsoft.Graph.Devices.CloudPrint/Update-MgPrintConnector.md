@@ -1,51 +1,51 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintconnector
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintconnector
 schema: 2.0.0
 ---
 
 # Update-MgPrintConnector
 
 ## SYNOPSIS
-Update the navigation property connectors in print
+Update the properties of a **printConnector** object.
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### UpdateExpanded (Default)
 ```
 Update-MgPrintConnector -PrintConnectorId <String> [-AdditionalProperties <Hashtable>] [-AppVersion <String>]
  [-DisplayName <String>] [-FullyQualifiedDomainName <String>] [-Id <String>]
- [-Location <IMicrosoftGraphPrinterLocation1>] [-OperatingSystem <String>] [-RegisteredDateTime <DateTime>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update1
-```
-Update-MgPrintConnector -PrintConnectorId <String> -BodyParameter <IMicrosoftGraphPrintConnector1> [-PassThru]
+ [-Location <IMicrosoftGraphPrinterLocation>] [-OperatingSystem <String>] [-RegisteredDateTime <DateTime>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded1
+### Update
+```
+Update-MgPrintConnector -PrintConnectorId <String> -BodyParameter <IMicrosoftGraphPrintConnector> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
 ```
 Update-MgPrintConnector -InputObject <IDevicesCloudPrintIdentity> [-AdditionalProperties <Hashtable>]
  [-AppVersion <String>] [-DisplayName <String>] [-FullyQualifiedDomainName <String>] [-Id <String>]
- [-Location <IMicrosoftGraphPrinterLocation1>] [-OperatingSystem <String>] [-RegisteredDateTime <DateTime>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Location <IMicrosoftGraphPrinterLocation>] [-OperatingSystem <String>] [-RegisteredDateTime <DateTime>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity1
+### UpdateViaIdentity
 ```
 Update-MgPrintConnector -InputObject <IDevicesCloudPrintIdentity>
- -BodyParameter <IMicrosoftGraphPrintConnector1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPrintConnector> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property connectors in print
+Update the properties of a **printConnector** object.
 
 ## EXAMPLES
 
-### Example 1: Using the Update-MgPrintConnector Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Devices.CloudPrint
 $params = @{
@@ -62,9 +62,6 @@ $params = @{
 Update-MgPrintConnector -PrintConnectorId $printConnectorId -BodyParameter $params
 ```
 
-This example shows how to use the Update-MgPrintConnector Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -72,7 +69,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -87,7 +84,7 @@ The connector's version.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -99,11 +96,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 printConnector
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrintConnector1
-Parameter Sets: Update1, UpdateViaIdentity1
+Type: IMicrosoftGraphPrintConnector
+Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -118,7 +115,7 @@ The name of the connector.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -133,7 +130,7 @@ The connector machine's hostname.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -149,7 +146,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -161,11 +158,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDevicesCloudPrintIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -177,11 +174,11 @@ Accept wildcard characters: False
 
 ### -Location
 printerLocation
-To construct, please use Get-Help -Online and see NOTES section for LOCATION properties and create a hash table.
+To construct, see NOTES section for LOCATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrinterLocation1
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: IMicrosoftGraphPrinterLocation
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -196,22 +193,7 @@ The connector machine's operating system version.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -226,7 +208,7 @@ The unique identifier of printConnector
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -241,7 +223,7 @@ The DateTimeOffset when the connector was registered.
 
 ```yaml
 Type: DateTime
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -288,10 +270,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintConnector1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintConnector
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintConnector
 ## NOTES
 
 ALIASES
@@ -301,13 +283,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPrintConnector1>`: printConnector
+`BODYPARAMETER <IMicrosoftGraphPrintConnector>`: printConnector
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AppVersion <String>]`: The connector's version.
   - `[DisplayName <String>]`: The name of the connector.
   - `[FullyQualifiedDomainName <String>]`: The connector machine's hostname.
-  - `[Location <IMicrosoftGraphPrinterLocation1>]`: printerLocation
+  - `[Location <IMicrosoftGraphPrinterLocation>]`: printerLocation
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AltitudeInMeters <Int32?>]`: The altitude, in meters, that the printer is located at.
     - `[Building <String>]`: The building that the printer is located in.
@@ -329,9 +311,11 @@ BODYPARAMETER `<IMicrosoftGraphPrintConnector1>`: printConnector
   - `[OperatingSystem <String>]`: The connector machine's operating system version.
   - `[RegisteredDateTime <DateTime?>]`: The DateTimeOffset when the connector was registered.
 
-INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
+`INPUTOBJECT <IDevicesCloudPrintIdentity>`: Identity Parameter
   - `[GroupId <String>]`: The unique identifier of group
   - `[PrintConnectorId <String>]`: The unique identifier of printConnector
+  - `[PrintDocumentId <String>]`: The unique identifier of printDocument
+  - `[PrintJobId <String>]`: The unique identifier of printJob
   - `[PrintOperationId <String>]`: The unique identifier of printOperation
   - `[PrintServiceEndpointId <String>]`: The unique identifier of printServiceEndpoint
   - `[PrintServiceId <String>]`: The unique identifier of printService
@@ -342,7 +326,7 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
   - `[PrinterShareId <String>]`: The unique identifier of printerShare
   - `[UserId <String>]`: The unique identifier of user
 
-LOCATION `<IMicrosoftGraphPrinterLocation1>`: printerLocation
+`LOCATION <IMicrosoftGraphPrinterLocation>`: printerLocation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AltitudeInMeters <Int32?>]`: The altitude, in meters, that the printer is located at.
   - `[Building <String>]`: The building that the printer is located in.

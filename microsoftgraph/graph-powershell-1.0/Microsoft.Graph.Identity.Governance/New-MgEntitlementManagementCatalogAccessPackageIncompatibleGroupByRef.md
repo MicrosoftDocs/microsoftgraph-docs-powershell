@@ -1,9 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
+ms.prod: governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementcatalogaccesspackageincompatiblegroupbyref
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # New-MgEntitlementManagementCatalogAccessPackageIncompatibleGroupByRef
@@ -16,7 +16,7 @@ Create new navigation property ref to incompatibleGroups for identityGovernance
 ### CreateExpanded (Default)
 ```
 New-MgEntitlementManagementCatalogAccessPackageIncompatibleGroupByRef -AccessPackageCatalogId <String>
- -AccessPackageId <String> [-AdditionalProperties <Hashtable>] [-OdataId <String>] [-PassThru] [-WhatIf]
+ -AccessPackageId <String> -OdataId <String> [-AdditionalProperties <Hashtable>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -30,7 +30,7 @@ New-MgEntitlementManagementCatalogAccessPackageIncompatibleGroupByRef -AccessPac
 ### CreateViaIdentityExpanded
 ```
 New-MgEntitlementManagementCatalogAccessPackageIncompatibleGroupByRef
- -InputObject <IIdentityGovernanceIdentity> [-AdditionalProperties <Hashtable>] [-OdataId <String>] [-PassThru]
+ -InputObject <IIdentityGovernanceIdentity> -OdataId <String> [-AdditionalProperties <Hashtable>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -144,7 +144,7 @@ Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False

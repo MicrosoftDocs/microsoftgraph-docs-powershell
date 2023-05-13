@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Administration
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementintunebrandingprofile
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementintunebrandingprofile
 schema: 2.0.0
 ---
 
-# Update-MgDeviceManagementIntuneBrandingProfile
+# Update-MgBetaDeviceManagementIntuneBrandingProfile
 
 ## SYNOPSIS
 Update the navigation property intuneBrandingProfiles in deviceManagement
@@ -14,7 +14,7 @@ Update the navigation property intuneBrandingProfiles in deviceManagement
 
 ### UpdateExpanded (Default)
 ```
-Update-MgDeviceManagementIntuneBrandingProfile -IntuneBrandingProfileId <String>
+Update-MgBetaDeviceManagementIntuneBrandingProfile -IntuneBrandingProfileId <String>
  [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphIntuneBrandingProfileAssignment[]>]
  [-CompanyPortalBlockedActions <IMicrosoftGraphCompanyPortalBlockedAction[]>] [-ContactItEmailAddress <String>]
  [-ContactItName <String>] [-ContactItNotes <String>] [-ContactItPhoneNumber <String>]
@@ -27,19 +27,19 @@ Update-MgDeviceManagementIntuneBrandingProfile -IntuneBrandingProfileId <String>
  [-OnlineSupportSiteUrl <String>] [-PrivacyUrl <String>] [-ProfileDescription <String>] [-ProfileName <String>]
  [-RoleScopeTagIds <String[]>] [-SendDeviceOwnershipChangePushNotification] [-ShowAzureAdEnterpriseApps]
  [-ShowConfigurationManagerApps] [-ShowDisplayNameNextToLogo] [-ShowLogo] [-ShowOfficeWebApps]
- [-ThemeColor <IMicrosoftGraphRgbColor>] [-ThemeColorLogo <IMicrosoftGraphMimeContent>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-ThemeColor <IMicrosoftGraphRgbColor>] [-ThemeColorLogo <IMicrosoftGraphMimeContent>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgDeviceManagementIntuneBrandingProfile -IntuneBrandingProfileId <String>
- -BodyParameter <IMicrosoftGraphIntuneBrandingProfile> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaDeviceManagementIntuneBrandingProfile -IntuneBrandingProfileId <String>
+ -BodyParameter <IMicrosoftGraphIntuneBrandingProfile> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgDeviceManagementIntuneBrandingProfile -InputObject <IDeviceManagementAdministrationIdentity>
+Update-MgBetaDeviceManagementIntuneBrandingProfile -InputObject <IDeviceManagementAdministrationIdentity>
  [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphIntuneBrandingProfileAssignment[]>]
  [-CompanyPortalBlockedActions <IMicrosoftGraphCompanyPortalBlockedAction[]>] [-ContactItEmailAddress <String>]
  [-ContactItName <String>] [-ContactItNotes <String>] [-ContactItPhoneNumber <String>]
@@ -52,20 +52,34 @@ Update-MgDeviceManagementIntuneBrandingProfile -InputObject <IDeviceManagementAd
  [-OnlineSupportSiteUrl <String>] [-PrivacyUrl <String>] [-ProfileDescription <String>] [-ProfileName <String>]
  [-RoleScopeTagIds <String[]>] [-SendDeviceOwnershipChangePushNotification] [-ShowAzureAdEnterpriseApps]
  [-ShowConfigurationManagerApps] [-ShowDisplayNameNextToLogo] [-ShowLogo] [-ShowOfficeWebApps]
- [-ThemeColor <IMicrosoftGraphRgbColor>] [-ThemeColorLogo <IMicrosoftGraphMimeContent>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-ThemeColor <IMicrosoftGraphRgbColor>] [-ThemeColorLogo <IMicrosoftGraphMimeContent>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgDeviceManagementIntuneBrandingProfile -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphIntuneBrandingProfile> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaDeviceManagementIntuneBrandingProfile -InputObject <IDeviceManagementAdministrationIdentity>
+ -BodyParameter <IMicrosoftGraphIntuneBrandingProfile> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property intuneBrandingProfiles in deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -86,7 +100,7 @@ Accept wildcard characters: False
 
 ### -Assignments
 The list of group assignments for the branding profile
-To construct, please use Get-Help -Online and see NOTES section for ASSIGNMENTS properties and create a hash table.
+To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIntuneBrandingProfileAssignment[]
@@ -102,7 +116,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 This entity contains data which is used in customizing the tenant level appearance of the Company Portal applications as well as the end user web portal.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIntuneBrandingProfile
@@ -118,7 +132,7 @@ Accept wildcard characters: False
 
 ### -CompanyPortalBlockedActions
 Collection of blocked actions on the company portal as per platform and device ownership types.
-To construct, please use Get-Help -Online and see NOTES section for COMPANYPORTALBLOCKEDACTIONS properties and create a hash table.
+To construct, see NOTES section for COMPANYPORTALBLOCKEDACTIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphCompanyPortalBlockedAction[]
@@ -314,7 +328,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -331,7 +345,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementAdministrationIdentity
@@ -407,7 +421,7 @@ Accept wildcard characters: False
 
 ### -LandingPageCustomizedImage
 Contains properties for a generic mime content.
-To construct, please use Get-Help -Online and see NOTES section for LANDINGPAGECUSTOMIZEDIMAGE properties and create a hash table.
+To construct, see NOTES section for LANDINGPAGECUSTOMIZEDIMAGE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphMimeContent
@@ -438,7 +452,7 @@ Accept wildcard characters: False
 
 ### -LightBackgroundLogo
 Contains properties for a generic mime content.
-To construct, please use Get-Help -Online and see NOTES section for LIGHTBACKGROUNDLOGO properties and create a hash table.
+To construct, see NOTES section for LIGHTBACKGROUNDLOGO properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphMimeContent
@@ -473,21 +487,6 @@ URL to the company/organization's IT helpdesk site
 ```yaml
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -649,7 +648,7 @@ Accept wildcard characters: False
 
 ### -ThemeColor
 Color in RGB.
-To construct, please use Get-Help -Online and see NOTES section for THEMECOLOR properties and create a hash table.
+To construct, see NOTES section for THEMECOLOR properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRgbColor
@@ -665,7 +664,7 @@ Accept wildcard characters: False
 
 ### -ThemeColorLogo
 Contains properties for a generic mime content.
-To construct, please use Get-Help -Online and see NOTES section for THEMECOLORLOGO properties and create a hash table.
+To construct, see NOTES section for THEMECOLORLOGO properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphMimeContent
@@ -715,11 +714,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIntuneBrandingProfile
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementAdministrationIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIntuneBrandingProfile
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIntuneBrandingProfile
 ## NOTES
 
 ALIASES
@@ -729,19 +728,19 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ASSIGNMENTS <IMicrosoftGraphIntuneBrandingProfileAssignment\[]>: The list of group assignments for the branding profile
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
+`ASSIGNMENTS <IMicrosoftGraphIntuneBrandingProfileAssignment[]>`: The list of group assignments for the branding profile
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
+  - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
     - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
-BODYPARAMETER `<IMicrosoftGraphIntuneBrandingProfile>`: This entity contains data which is used in customizing the tenant level appearance of the Company Portal applications as well as the end user web portal.
+`BODYPARAMETER <IMicrosoftGraphIntuneBrandingProfile>`: This entity contains data which is used in customizing the tenant level appearance of the Company Portal applications as well as the end user web portal.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Assignments <IMicrosoftGraphIntuneBrandingProfileAssignment[]>]`: The list of group assignments for the branding profile
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-    - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
       - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
@@ -789,12 +788,12 @@ BODYPARAMETER `<IMicrosoftGraphIntuneBrandingProfile>`: This entity contains dat
     - `[R <Int32?>]`: Red value
   - `[ThemeColorLogo <IMicrosoftGraphMimeContent>]`: Contains properties for a generic mime content.
 
-COMPANYPORTALBLOCKEDACTIONS <IMicrosoftGraphCompanyPortalBlockedAction\[]>: Collection of blocked actions on the company portal as per platform and device ownership types.
+`COMPANYPORTALBLOCKEDACTIONS <IMicrosoftGraphCompanyPortalBlockedAction[]>`: Collection of blocked actions on the company portal as per platform and device ownership types.
   - `[Action <CompanyPortalAction?>]`: Action on a device that can be executed in the Company Portal
   - `[OwnerType <OwnerType?>]`: Owner type of device.
   - `[Platform <DevicePlatformType?>]`: Supported platform types.
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[AuditEventId <String>]`: The unique identifier of auditEvent
   - `[CartToClassAssociationId <String>]`: The unique identifier of cartToClassAssociation
   - `[CloudPcAuditEventId <String>]`: The unique identifier of cloudPcAuditEvent
@@ -851,23 +850,23 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[UserPfxCertificateId <String>]`: The unique identifier of userPFXCertificate
 
-LANDINGPAGECUSTOMIZEDIMAGE `<IMicrosoftGraphMimeContent>`: Contains properties for a generic mime content.
+`LANDINGPAGECUSTOMIZEDIMAGE <IMicrosoftGraphMimeContent>`: Contains properties for a generic mime content.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Type <String>]`: Indicates the content mime type.
   - `[Value <Byte[]>]`: The byte array that contains the actual content.
 
-LIGHTBACKGROUNDLOGO `<IMicrosoftGraphMimeContent>`: Contains properties for a generic mime content.
+`LIGHTBACKGROUNDLOGO <IMicrosoftGraphMimeContent>`: Contains properties for a generic mime content.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Type <String>]`: Indicates the content mime type.
   - `[Value <Byte[]>]`: The byte array that contains the actual content.
 
-THEMECOLOR `<IMicrosoftGraphRgbColor>`: Color in RGB.
+`THEMECOLOR <IMicrosoftGraphRgbColor>`: Color in RGB.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[B <Int32?>]`: Blue value
   - `[G <Int32?>]`: Green value
   - `[R <Int32?>]`: Red value
 
-THEMECOLORLOGO `<IMicrosoftGraphMimeContent>`: Contains properties for a generic mime content.
+`THEMECOLORLOGO <IMicrosoftGraphMimeContent>`: Contains properties for a generic mime content.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Type <String>]`: Indicates the content mime type.
   - `[Value <Byte[]>]`: The byte array that contains the actual content.

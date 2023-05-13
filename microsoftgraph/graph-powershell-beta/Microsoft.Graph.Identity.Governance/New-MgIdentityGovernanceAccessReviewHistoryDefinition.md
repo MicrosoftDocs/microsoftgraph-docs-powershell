@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.Governance-help.xml
-Module Name: Microsoft.Graph.Identity.Governance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewhistorydefinition
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.Governance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceaccessreviewhistorydefinition
 schema: 2.0.0
 ---
 
-# New-MgIdentityGovernanceAccessReviewHistoryDefinition
+# New-MgBetaIdentityGovernanceAccessReviewHistoryDefinition
 
 ## SYNOPSIS
 Create a new accessReviewHistoryDefinition object.
@@ -14,7 +14,7 @@ Create a new accessReviewHistoryDefinition object.
 
 ### CreateExpanded (Default)
 ```
-New-MgIdentityGovernanceAccessReviewHistoryDefinition [-AdditionalProperties <Hashtable>]
+New-MgBetaIdentityGovernanceAccessReviewHistoryDefinition [-AdditionalProperties <Hashtable>]
  [-CreatedBy <IMicrosoftGraphUserIdentity>] [-CreatedDateTime <DateTime>] [-Decisions <String[]>]
  [-DisplayName <String>] [-DownloadUri <String>] [-FulfilledDateTime <DateTime>] [-Id <String>]
  [-Instances <IMicrosoftGraphAccessReviewHistoryInstance[]>] [-ReviewHistoryPeriodEndDateTime <DateTime>]
@@ -25,8 +25,8 @@ New-MgIdentityGovernanceAccessReviewHistoryDefinition [-AdditionalProperties <Ha
 
 ### Create
 ```
-New-MgIdentityGovernanceAccessReviewHistoryDefinition
- -BodyParameter <IMicrosoftGraphAccessReviewHistoryDefinition1> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaIdentityGovernanceAccessReviewHistoryDefinition
+ -BodyParameter <IMicrosoftGraphAccessReviewHistoryDefinition> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -34,9 +34,9 @@ Create a new accessReviewHistoryDefinition object.
 
 ## EXAMPLES
 
-### Example 1: Using the New-MgIdentityGovernanceAccessReviewHistoryDefinition Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Identity.Governance
+Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{
 	DisplayName = "Last quarter's group reviews April 2021"
 	Decisions = @(
@@ -75,11 +75,8 @@ $params = @{
 		}
 	)
 }
-New-MgIdentityGovernanceAccessReviewHistoryDefinition -BodyParameter $params
+New-MgBetaIdentityGovernanceAccessReviewHistoryDefinition -BodyParameter $params
 ```
-
-This example shows how to use the New-MgIdentityGovernanceAccessReviewHistoryDefinition Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -100,10 +97,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 accessReviewHistoryDefinition
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessReviewHistoryDefinition1
+Type: IMicrosoftGraphAccessReviewHistoryDefinition
 Parameter Sets: Create
 Aliases:
 
@@ -116,7 +113,7 @@ Accept wildcard characters: False
 
 ### -CreatedBy
 userIdentity
-To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
+To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserIdentity
@@ -210,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -228,7 +225,7 @@ Accept wildcard characters: False
 ### -Instances
 If the accessReviewHistoryDefinition is a recurring definition, instances represent each recurrence.
 A definition that does not recur will have exactly one instance.
-To construct, please use Get-Help -Online and see NOTES section for INSTANCES properties and create a hash table.
+To construct, see NOTES section for INSTANCES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAccessReviewHistoryInstance[]
@@ -278,7 +275,7 @@ Accept wildcard characters: False
 
 ### -ScheduleSettings
 accessReviewHistoryScheduleSettings
-To construct, please use Get-Help -Online and see NOTES section for SCHEDULESETTINGS properties and create a hash table.
+To construct, see NOTES section for SCHEDULESETTINGS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAccessReviewHistoryScheduleSettings
@@ -360,10 +357,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessReviewHistoryDefinition1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessReviewHistoryDefinition
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessReviewHistoryDefinition1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessReviewHistoryDefinition
 ## NOTES
 
 ALIASES
@@ -373,9 +370,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphAccessReviewHistoryDefinition1>`: accessReviewHistoryDefinition
+`BODYPARAMETER <IMicrosoftGraphAccessReviewHistoryDefinition>`: accessReviewHistoryDefinition
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[CreatedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
@@ -388,7 +385,7 @@ BODYPARAMETER `<IMicrosoftGraphAccessReviewHistoryDefinition1>`: accessReviewHis
   - `[DownloadUri <String>]`: 
   - `[FulfilledDateTime <DateTime?>]`: 
   - `[Instances <IMicrosoftGraphAccessReviewHistoryInstance[]>]`: If the accessReviewHistoryDefinition is a recurring definition, instances represent each recurrence. A definition that does not recur will have exactly one instance.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[DownloadUri <String>]`: Uri which can be used to retrieve review history data. This URI will be active for 24 hours after being generated. Required.
     - `[ExpirationDateTime <DateTime?>]`: Timestamp when this instance and associated data expires and the history is deleted. Required.
     - `[FulfilledDateTime <DateTime?>]`: Timestamp when all of the available data for this instance was collected. This will be set after this instance's status is set to done. Required.
@@ -422,15 +419,15 @@ BODYPARAMETER `<IMicrosoftGraphAccessReviewHistoryDefinition1>`: accessReviewHis
   - `[Scopes <IMicrosoftGraphAccessReviewScope[]>]`: Used to scope what reviews are included in the fetched history data. Fetches reviews whose scope matches with this provided scope. Required.
   - `[Status <String>]`: accessReviewHistoryStatus
 
-CREATEDBY `<IMicrosoftGraphUserIdentity>`: userIdentity
+`CREATEDBY <IMicrosoftGraphUserIdentity>`: userIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
   - `[Id <String>]`: Unique identifier for the identity.
   - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
   - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
 
-INSTANCES <IMicrosoftGraphAccessReviewHistoryInstance\[]>: If the accessReviewHistoryDefinition is a recurring definition, instances represent each recurrence. A definition that does not recur will have exactly one instance.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`INSTANCES <IMicrosoftGraphAccessReviewHistoryInstance[]>`: If the accessReviewHistoryDefinition is a recurring definition, instances represent each recurrence. A definition that does not recur will have exactly one instance.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DownloadUri <String>]`: Uri which can be used to retrieve review history data. This URI will be active for 24 hours after being generated. Required.
   - `[ExpirationDateTime <DateTime?>]`: Timestamp when this instance and associated data expires and the history is deleted. Required.
   - `[FulfilledDateTime <DateTime?>]`: Timestamp when all of the available data for this instance was collected. This will be set after this instance's status is set to done. Required.
@@ -439,7 +436,7 @@ INSTANCES <IMicrosoftGraphAccessReviewHistoryInstance\[]>: If the accessReviewHi
   - `[RunDateTime <DateTime?>]`: Timestamp when the instance's history data is scheduled to be generated.
   - `[Status <String>]`: accessReviewHistoryStatus
 
-SCHEDULESETTINGS `<IMicrosoftGraphAccessReviewHistoryScheduleSettings>`: accessReviewHistoryScheduleSettings
+`SCHEDULESETTINGS <IMicrosoftGraphAccessReviewHistoryScheduleSettings>`: accessReviewHistoryScheduleSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

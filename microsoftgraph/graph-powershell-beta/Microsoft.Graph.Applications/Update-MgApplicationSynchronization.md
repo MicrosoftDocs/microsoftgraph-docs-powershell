@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Applications-help.xml
-Module Name: Microsoft.Graph.Applications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/update-mgapplicationsynchronization
+﻿---
+external help file: Microsoft.Graph.Beta.Applications-help.xml
+Module Name: Microsoft.Graph.Beta.Applications
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaapplicationsynchronization
 schema: 2.0.0
 ---
 
-# Update-MgApplicationSynchronization
+# Update-MgBetaApplicationSynchronization
 
 ## SYNOPSIS
 Update the navigation property synchronization in applications
@@ -14,36 +14,50 @@ Update the navigation property synchronization in applications
 
 ### UpdateExpanded (Default)
 ```
-Update-MgApplicationSynchronization -ApplicationId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Jobs <IMicrosoftGraphSynchronizationJob[]>]
+Update-MgBetaApplicationSynchronization -ApplicationId <String> [-AdditionalProperties <Hashtable>]
+ [-Id <String>] [-Jobs <IMicrosoftGraphSynchronizationJob[]>]
  [-Secrets <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>]
- [-Templates <IMicrosoftGraphSynchronizationTemplate[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Templates <IMicrosoftGraphSynchronizationTemplate[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgApplicationSynchronization -ApplicationId <String> -BodyParameter <IMicrosoftGraphSynchronization>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaApplicationSynchronization -ApplicationId <String> -BodyParameter <IMicrosoftGraphSynchronization>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgApplicationSynchronization -InputObject <IApplicationsIdentity> [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-Jobs <IMicrosoftGraphSynchronizationJob[]>]
+Update-MgBetaApplicationSynchronization -InputObject <IApplicationsIdentity>
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-Jobs <IMicrosoftGraphSynchronizationJob[]>]
  [-Secrets <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>]
- [-Templates <IMicrosoftGraphSynchronizationTemplate[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Templates <IMicrosoftGraphSynchronizationTemplate[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgApplicationSynchronization -InputObject <IApplicationsIdentity>
- -BodyParameter <IMicrosoftGraphSynchronization> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaApplicationSynchronization -InputObject <IApplicationsIdentity>
+ -BodyParameter <IMicrosoftGraphSynchronization> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property synchronization in applications
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -79,7 +93,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 synchronization
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSynchronization
@@ -94,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -111,7 +125,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IApplicationsIdentity
@@ -127,7 +141,7 @@ Accept wildcard characters: False
 
 ### -Jobs
 Performs synchronization by periodically running in the background, polling for changes in one directory, and pushing them to another directory.
-To construct, please use Get-Help -Online and see NOTES section for JOBS properties and create a hash table.
+To construct, see NOTES section for JOBS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSynchronizationJob[]
@@ -141,24 +155,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Secrets
 Represents a collection of credentials to access provisioned cloud applications.
-To construct, please use Get-Help -Online and see NOTES section for SECRETS properties and create a hash table.
+To construct, see NOTES section for SECRETS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]
@@ -174,7 +173,7 @@ Accept wildcard characters: False
 
 ### -Templates
 Pre-configured synchronization settings for a particular application.
-To construct, please use Get-Help -Online and see NOTES section for TEMPLATES properties and create a hash table.
+To construct, see NOTES section for TEMPLATES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSynchronizationTemplate[]
@@ -224,11 +223,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSynchronization
+### Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSynchronization
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSynchronization
 ## NOTES
 
 ALIASES
@@ -238,11 +237,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSynchronization>`: synchronization
+`BODYPARAMETER <IMicrosoftGraphSynchronization>`: synchronization
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Jobs <IMicrosoftGraphSynchronizationJob[]>]`: Performs synchronization by periodically running in the background, polling for changes in one directory, and pushing them to another directory.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Schedule <IMicrosoftGraphSynchronizationSchedule>]`: synchronizationSchedule
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Expiration <DateTime?>]`: Date and time when this job will expire. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -250,9 +249,9 @@ BODYPARAMETER `<IMicrosoftGraphSynchronization>`: synchronization
       - `[State <String>]`: synchronizationScheduleState
     - `[Schema <IMicrosoftGraphSynchronizationSchema>]`: synchronizationSchema
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Directories <IMicrosoftGraphDirectoryDefinition[]>]`: Contains the collection of directories and all of their objects.
-        - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[Discoverabilities <String>]`: directoryDefinitionDiscoverabilities
         - `[DiscoveryDateTime <DateTime?>]`: Represents the discovery date and time using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[Name <String>]`: Name of the directory. Must be unique within the synchronization schema. Not nullable.
@@ -282,7 +281,13 @@ BODYPARAMETER `<IMicrosoftGraphSynchronization>`: synchronization
         - `[ReadOnly <Boolean?>]`: Whether this object is read-only.
         - `[Version <String>]`: Read only value that indicates version discovered. null if discovery has not yet occurred.
       - `[SynchronizationRules <IMicrosoftGraphSynchronizationRule[]>]`: A collection of synchronization rules configured for the synchronizationJob or synchronizationTemplate.
+        - `[ContainerFilter <IMicrosoftGraphContainerFilter>]`: containerFilter
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[IncludedContainers <String[]>]`: 
         - `[Editable <Boolean?>]`: true if the synchronization rule can be customized; false if this rule is read-only and should not be changed.
+        - `[GroupFilter <IMicrosoftGraphGroupFilter>]`: groupFilter
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[IncludedGroups <String[]>]`: 
         - `[Id <String>]`: Synchronization rule identifier. Must be one of the identifiers recognized by the synchronization engine. Supported rule identifiers can be found in the synchronization template returned by the API.
         - `[Metadata <IMicrosoftGraphStringKeyStringValuePair[]>]`: Additional extension properties. Unless instructed explicitly by the support team, metadata values should not be changed.
         - `[Name <String>]`: Human-readable name of the synchronization rule. Not nullable.
@@ -378,7 +383,7 @@ BODYPARAMETER `<IMicrosoftGraphSynchronization>`: synchronization
     - `[Key <String>]`: synchronizationSecret
     - `[Value <String>]`: The value of the secret.
   - `[Templates <IMicrosoftGraphSynchronizationTemplate[]>]`: Pre-configured synchronization settings for a particular application.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[ApplicationId <String>]`: Identifier of the application this template belongs to.
     - `[Default <Boolean?>]`: true if this template is recommended to be the default for the application.
     - `[Description <String>]`: Description of the template.
@@ -387,7 +392,7 @@ BODYPARAMETER `<IMicrosoftGraphSynchronization>`: synchronization
     - `[Metadata <IMicrosoftGraphMetadataEntry[]>]`: Additional extension properties. Unless mentioned explicitly, metadata values should not be changed.
     - `[Schema <IMicrosoftGraphSynchronizationSchema>]`: synchronizationSchema
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+`INPUTOBJECT <IApplicationsIdentity>`: Identity Parameter
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
   - `[ApplicationId <String>]`: The unique identifier of application
@@ -417,8 +422,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[UserId <String>]`: The unique identifier of user
 
-JOBS <IMicrosoftGraphSynchronizationJob\[]>: Performs synchronization by periodically running in the background, polling for changes in one directory, and pushing them to another directory.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`JOBS <IMicrosoftGraphSynchronizationJob[]>`: Performs synchronization by periodically running in the background, polling for changes in one directory, and pushing them to another directory.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Schedule <IMicrosoftGraphSynchronizationSchedule>]`: synchronizationSchedule
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Expiration <DateTime?>]`: Date and time when this job will expire. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -426,9 +431,9 @@ JOBS <IMicrosoftGraphSynchronizationJob\[]>: Performs synchronization by periodi
     - `[State <String>]`: synchronizationScheduleState
   - `[Schema <IMicrosoftGraphSynchronizationSchema>]`: synchronizationSchema
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Directories <IMicrosoftGraphDirectoryDefinition[]>]`: Contains the collection of directories and all of their objects.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Discoverabilities <String>]`: directoryDefinitionDiscoverabilities
       - `[DiscoveryDateTime <DateTime?>]`: Represents the discovery date and time using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Name <String>]`: Name of the directory. Must be unique within the synchronization schema. Not nullable.
@@ -458,7 +463,13 @@ JOBS <IMicrosoftGraphSynchronizationJob\[]>: Performs synchronization by periodi
       - `[ReadOnly <Boolean?>]`: Whether this object is read-only.
       - `[Version <String>]`: Read only value that indicates version discovered. null if discovery has not yet occurred.
     - `[SynchronizationRules <IMicrosoftGraphSynchronizationRule[]>]`: A collection of synchronization rules configured for the synchronizationJob or synchronizationTemplate.
+      - `[ContainerFilter <IMicrosoftGraphContainerFilter>]`: containerFilter
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[IncludedContainers <String[]>]`: 
       - `[Editable <Boolean?>]`: true if the synchronization rule can be customized; false if this rule is read-only and should not be changed.
+      - `[GroupFilter <IMicrosoftGraphGroupFilter>]`: groupFilter
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[IncludedGroups <String[]>]`: 
       - `[Id <String>]`: Synchronization rule identifier. Must be one of the identifiers recognized by the synchronization engine. Supported rule identifiers can be found in the synchronization template returned by the API.
       - `[Metadata <IMicrosoftGraphStringKeyStringValuePair[]>]`: Additional extension properties. Unless instructed explicitly by the support team, metadata values should not be changed.
       - `[Name <String>]`: Human-readable name of the synchronization rule. Not nullable.
@@ -551,12 +562,12 @@ JOBS <IMicrosoftGraphSynchronizationJob\[]>: Performs synchronization by periodi
     - `[Value <String>]`: Value for this key-value pair
   - `[TemplateId <String>]`: Identifier of the synchronization template this job is based on.
 
-SECRETS <IMicrosoftGraphSynchronizationSecretKeyStringValuePair\[]>: Represents a collection of credentials to access provisioned cloud applications.
+`SECRETS <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>`: Represents a collection of credentials to access provisioned cloud applications.
   - `[Key <String>]`: synchronizationSecret
   - `[Value <String>]`: The value of the secret.
 
-TEMPLATES <IMicrosoftGraphSynchronizationTemplate\[]>: Pre-configured synchronization settings for a particular application.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`TEMPLATES <IMicrosoftGraphSynchronizationTemplate[]>`: Pre-configured synchronization settings for a particular application.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ApplicationId <String>]`: Identifier of the application this template belongs to.
   - `[Default <Boolean?>]`: true if this template is recommended to be the default for the application.
   - `[Description <String>]`: Description of the template.
@@ -567,9 +578,9 @@ TEMPLATES <IMicrosoftGraphSynchronizationTemplate\[]>: Pre-configured synchroniz
     - `[Value <String>]`: Value of the metadata property.
   - `[Schema <IMicrosoftGraphSynchronizationSchema>]`: synchronizationSchema
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Directories <IMicrosoftGraphDirectoryDefinition[]>]`: Contains the collection of directories and all of their objects.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Discoverabilities <String>]`: directoryDefinitionDiscoverabilities
       - `[DiscoveryDateTime <DateTime?>]`: Represents the discovery date and time using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Name <String>]`: Name of the directory. Must be unique within the synchronization schema. Not nullable.
@@ -597,7 +608,13 @@ TEMPLATES <IMicrosoftGraphSynchronizationTemplate\[]>: Pre-configured synchroniz
       - `[ReadOnly <Boolean?>]`: Whether this object is read-only.
       - `[Version <String>]`: Read only value that indicates version discovered. null if discovery has not yet occurred.
     - `[SynchronizationRules <IMicrosoftGraphSynchronizationRule[]>]`: A collection of synchronization rules configured for the synchronizationJob or synchronizationTemplate.
+      - `[ContainerFilter <IMicrosoftGraphContainerFilter>]`: containerFilter
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[IncludedContainers <String[]>]`: 
       - `[Editable <Boolean?>]`: true if the synchronization rule can be customized; false if this rule is read-only and should not be changed.
+      - `[GroupFilter <IMicrosoftGraphGroupFilter>]`: groupFilter
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[IncludedGroups <String[]>]`: 
       - `[Id <String>]`: Synchronization rule identifier. Must be one of the identifiers recognized by the synchronization engine. Supported rule identifiers can be found in the synchronization template returned by the API.
       - `[Metadata <IMicrosoftGraphStringKeyStringValuePair[]>]`: Additional extension properties. Unless instructed explicitly by the support team, metadata values should not be changed.
       - `[Name <String>]`: Human-readable name of the synchronization rule. Not nullable.

@@ -1,65 +1,56 @@
----
-external help file: Microsoft.Graph.PersonalContacts-help.xml
-Module Name: Microsoft.Graph.PersonalContacts
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.personalcontacts/get-mgusercontact
+﻿---
+external help file: Microsoft.Graph.Beta.PersonalContacts-help.xml
+Module Name: Microsoft.Graph.Beta.PersonalContacts
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/get-mgbetausercontact
 schema: 2.0.0
-ms.prod: outlook
 ---
 
-# Get-MgUserContact
+# Get-MgBetaUserContact
 
 ## SYNOPSIS
-The user's contacts.
-Read-only.
-Nullable.
+Retrieve the properties and relationships of contact object.
+There are two scenarios where an app can get a contact in another user's contact folder:
 
 ## SYNTAX
 
-### List1 (Default)
+### List (Default)
 ```
-Get-MgUserContact -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
+Get-MgBetaUserContact -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
  [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### Get1
+### Get
 ```
-Get-MgUserContact -ContactId <String> -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaUserContact -ContactId <String> -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### GetViaIdentity
 ```
-Get-MgUserContact -InputObject <IPersonalContactsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
+Get-MgBetaUserContact -InputObject <IPersonalContactsIdentity> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The user's contacts.
-Read-only.
-Nullable.
+Retrieve the properties and relationships of contact object.
+There are two scenarios where an app can get a contact in another user's contact folder:
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgUserContact Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.PersonalContacts
+Import-Module Microsoft.Graph.Beta.PersonalContacts
 # A UPN can also be used as -UserId.
-Get-MgUserContact -UserId $userId -ContactId $contactId
+Get-MgBetaUserContact -UserId $userId -ContactId $contactId
 ```
 
-This example shows how to use the Get-MgUserContact Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Get-MgUserContact Cmdlet
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.PersonalContacts
+Import-Module Microsoft.Graph.Beta.PersonalContacts
 # A UPN can also be used as -UserId.
-Get-MgUserContact -UserId $userId -Property "displayName,emailAddresses"
+Get-MgBetaUserContact -UserId $userId -Property "displayName,emailAddresses"
 ```
-
-This example shows how to use the Get-MgUserContact Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -68,7 +59,7 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -83,7 +74,7 @@ The unique identifier of contact
 
 ```yaml
 Type: String
-Parameter Sets: Get1
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -99,7 +90,7 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: List
 Aliases: CV
 
 Required: False
@@ -129,7 +120,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -141,11 +132,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IPersonalContactsIdentity
-Parameter Sets: GetViaIdentity1
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
@@ -160,7 +151,7 @@ Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -190,7 +181,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -205,7 +196,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List1
+Parameter Sets: List
 Aliases: OrderBy
 
 Required: False
@@ -220,7 +211,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Parameter Sets: List
 Aliases: Limit
 
 Required: False
@@ -235,7 +226,7 @@ The unique identifier of user
 
 ```yaml
 Type: String
-Parameter Sets: List1, Get1
+Parameter Sets: List, Get
 Aliases:
 
 Required: True
@@ -250,7 +241,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -265,10 +256,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPersonalContactsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPersonalContactsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContact1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphContact
 ## NOTES
 
 ALIASES
@@ -278,13 +269,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
+`INPUTOBJECT <IPersonalContactsIdentity>`: Identity Parameter
   - `[ContactFolderId <String>]`: The unique identifier of contactFolder
   - `[ContactFolderId1 <String>]`: The unique identifier of contactFolder
   - `[ContactId <String>]`: The unique identifier of contact
   - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS

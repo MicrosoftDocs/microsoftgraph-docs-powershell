@@ -1,14 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.ChangeNotifications-help.xml
 Module Name: Microsoft.Graph.ChangeNotifications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.changenotifications/invoke-mgreauthorizesubscription
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/invoke-mgreauthorizesubscription
 schema: 2.0.0
 ---
 
 # Invoke-MgReauthorizeSubscription
 
 ## SYNOPSIS
-Invoke action reauthorize
+Reauthorize a subscription when you receive a **reauthorizationRequired** challenge.
 
 ## SYNTAX
 
@@ -24,15 +24,29 @@ Invoke-MgReauthorizeSubscription -InputObject <IChangeNotificationsIdentity> [-P
 ```
 
 ## DESCRIPTION
-Invoke action reauthorize
+Reauthorize a subscription when you receive a **reauthorizationRequired** challenge.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IChangeNotificationsIdentity
@@ -62,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-key: id of subscription
+The unique identifier of subscription
 
 ```yaml
 Type: String
@@ -125,7 +139,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IChangeNotificationsIdentity>`: Identity Parameter
-  - `[SubscriptionId <String>]`: key: id of subscription
+`INPUTOBJECT <IChangeNotificationsIdentity>`: Identity Parameter
+  - `[SubscriptionId <String>]`: The unique identifier of subscription
 
 ## RELATED LINKS

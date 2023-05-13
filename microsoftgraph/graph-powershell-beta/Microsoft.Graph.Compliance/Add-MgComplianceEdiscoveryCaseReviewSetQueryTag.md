@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Compliance-help.xml
-Module Name: Microsoft.Graph.Compliance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/add-mgcomplianceediscoverycasereviewsetquerytag
+﻿---
+external help file: Microsoft.Graph.Beta.Compliance-help.xml
+Module Name: Microsoft.Graph.Beta.Compliance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/add-mgbetacomplianceediscoverycasereviewsetquerytag
 schema: 2.0.0
 ---
 
-# Add-MgComplianceEdiscoveryCaseReviewSetQueryTag
+# Add-MgBetaComplianceEdiscoveryCaseReviewSetQueryTag
 
 ## SYNOPSIS
 Apply tags to documents that match the specified reviewSetQuery.
@@ -14,14 +14,14 @@ Apply tags to documents that match the specified reviewSetQuery.
 
 ### ApplyExpanded (Default)
 ```
-Add-MgComplianceEdiscoveryCaseReviewSetQueryTag -CaseId <String> -ReviewSetId <String>
+Add-MgBetaComplianceEdiscoveryCaseReviewSetQueryTag -CaseId <String> -ReviewSetId <String>
  -ReviewSetQueryId <String> [-AdditionalProperties <Hashtable>] [-TagsToAdd <IMicrosoftGraphEdiscoveryTag[]>]
  [-TagsToRemove <IMicrosoftGraphEdiscoveryTag[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Apply
 ```
-Add-MgComplianceEdiscoveryCaseReviewSetQueryTag -CaseId <String> -ReviewSetId <String>
+Add-MgBetaComplianceEdiscoveryCaseReviewSetQueryTag -CaseId <String> -ReviewSetId <String>
  -ReviewSetQueryId <String>
  -BodyParameter <IPathsWh2810ComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetIdQueriesReviewsetqueryIdMicrosoftGraphEdiscoveryApplytagsPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -29,14 +29,14 @@ Add-MgComplianceEdiscoveryCaseReviewSetQueryTag -CaseId <String> -ReviewSetId <S
 
 ### ApplyViaIdentityExpanded
 ```
-Add-MgComplianceEdiscoveryCaseReviewSetQueryTag -InputObject <IComplianceIdentity>
+Add-MgBetaComplianceEdiscoveryCaseReviewSetQueryTag -InputObject <IComplianceIdentity>
  [-AdditionalProperties <Hashtable>] [-TagsToAdd <IMicrosoftGraphEdiscoveryTag[]>]
  [-TagsToRemove <IMicrosoftGraphEdiscoveryTag[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ApplyViaIdentity
 ```
-Add-MgComplianceEdiscoveryCaseReviewSetQueryTag -InputObject <IComplianceIdentity>
+Add-MgBetaComplianceEdiscoveryCaseReviewSetQueryTag -InputObject <IComplianceIdentity>
  -BodyParameter <IPathsWh2810ComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetIdQueriesReviewsetqueryIdMicrosoftGraphEdiscoveryApplytagsPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -46,9 +46,9 @@ Apply tags to documents that match the specified reviewSetQuery.
 
 ## EXAMPLES
 
-### Example 1: Using the Add-MgComplianceEdiscoveryCaseReviewSetQueryTag Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Compliance
+Import-Module Microsoft.Graph.Beta.Compliance
 $params = @{
 	TagsToAdd = @(
 		@{
@@ -56,11 +56,8 @@ $params = @{
 		}
 	)
 }
-Add-MgComplianceEdiscoveryCaseReviewSetQueryTag -CaseId $caseId -ReviewSetId $reviewSetId -ReviewSetQueryId $reviewSetQueryId -BodyParameter $params
+Add-MgBetaComplianceEdiscoveryCaseReviewSetQueryTag -CaseId $caseId -ReviewSetId $reviewSetId -ReviewSetQueryId $reviewSetQueryId -BodyParameter $params
 ```
-
-This example shows how to use the Add-MgComplianceEdiscoveryCaseReviewSetQueryTag Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -81,7 +78,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPathsWh2810ComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetIdQueriesReviewsetqueryIdMicrosoftGraphEdiscoveryApplytagsPostRequestbodyContentApplicationJsonSchema
@@ -112,7 +109,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IComplianceIdentity
@@ -173,7 +170,7 @@ Accept wildcard characters: False
 
 ### -TagsToAdd
 .
-To construct, please use Get-Help -Online and see NOTES section for TAGSTOADD properties and create a hash table.
+To construct, see NOTES section for TAGSTOADD properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEdiscoveryTag[]
@@ -189,7 +186,7 @@ Accept wildcard characters: False
 
 ### -TagsToRemove
 .
-To construct, please use Get-Help -Online and see NOTES section for TAGSTOREMOVE properties and create a hash table.
+To construct, see NOTES section for TAGSTOREMOVE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEdiscoveryTag[]
@@ -239,8 +236,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-### Microsoft.Graph.PowerShell.Models.IPathsWh2810ComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetIdQueriesReviewsetqueryIdMicrosoftGraphEdiscoveryApplytagsPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IComplianceIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsWh2810ComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetIdQueriesReviewsetqueryIdMicrosoftGraphEdiscoveryApplytagsPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### System.Boolean
@@ -253,7 +250,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsWh2810ComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetIdQueriesReviewsetqueryIdMicrosoftGraphEdiscoveryApplytagsPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsWh2810ComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetIdQueriesReviewsetqueryIdMicrosoftGraphEdiscoveryApplytagsPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[TagsToAdd <IMicrosoftGraphEdiscoveryTag[]>]`: 
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
@@ -273,7 +270,7 @@ BODYPARAMETER `<IPathsWh2810ComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetId
     - `[Parent <IMicrosoftGraphEdiscoveryTag>]`: tag
   - `[TagsToRemove <IMicrosoftGraphEdiscoveryTag[]>]`: 
 
-INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
+`INPUTOBJECT <IComplianceIdentity>`: Identity Parameter
   - `[CaseId <String>]`: The unique identifier of case
   - `[CaseOperationId <String>]`: The unique identifier of caseOperation
   - `[CustodianId <String>]`: The unique identifier of custodian
@@ -289,7 +286,7 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
   - `[UnifiedGroupSourceId <String>]`: The unique identifier of unifiedGroupSource
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
-TAGSTOADD <IMicrosoftGraphEdiscoveryTag\[]>: .
+`TAGSTOADD <IMicrosoftGraphEdiscoveryTag[]>`: .
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ChildSelectability <String>]`: childSelectability
   - `[ChildTags <IMicrosoftGraphEdiscoveryTag[]>]`: Returns the tags that are a child of a tag.
@@ -306,7 +303,7 @@ TAGSTOADD <IMicrosoftGraphEdiscoveryTag\[]>: .
   - `[LastModifiedDateTime <DateTime?>]`: The date and time the tag was last modified.
   - `[Parent <IMicrosoftGraphEdiscoveryTag>]`: tag
 
-TAGSTOREMOVE <IMicrosoftGraphEdiscoveryTag\[]>: .
+`TAGSTOREMOVE <IMicrosoftGraphEdiscoveryTag[]>`: .
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ChildSelectability <String>]`: childSelectability
   - `[ChildTags <IMicrosoftGraphEdiscoveryTag[]>]`: Returns the tags that are a child of a tag.

@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/new-mgdevicemanagementandroiddeviceownerenrollmentprofiletoken
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/new-mgbetadevicemanagementandroiddeviceownerenrollmentprofiletoken
 schema: 2.0.0
 ---
 
-# New-MgDeviceManagementAndroidDeviceOwnerEnrollmentProfileToken
+# New-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfileToken
 
 ## SYNOPSIS
 Invoke action createToken
@@ -14,28 +14,30 @@ Invoke action createToken
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementAndroidDeviceOwnerEnrollmentProfileToken -AndroidDeviceOwnerEnrollmentProfileId <String>
- [-AdditionalProperties <Hashtable>] [-TokenValidityInSeconds <Int32>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfileToken
+ -AndroidDeviceOwnerEnrollmentProfileId <String> [-AdditionalProperties <Hashtable>]
+ [-TokenValidityInSeconds <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceManagementAndroidDeviceOwnerEnrollmentProfileToken -AndroidDeviceOwnerEnrollmentProfileId <String>
+New-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfileToken
+ -AndroidDeviceOwnerEnrollmentProfileId <String>
  -BodyParameter <IPaths11AjevhDevicemanagementAndroiddeviceownerenrollmentprofilesAndroiddeviceownerenrollmentprofileIdMicrosoftGraphCreatetokenPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgDeviceManagementAndroidDeviceOwnerEnrollmentProfileToken -InputObject <IDeviceManagementActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-TokenValidityInSeconds <Int32>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfileToken
+ -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>]
+ [-TokenValidityInSeconds <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgDeviceManagementAndroidDeviceOwnerEnrollmentProfileToken -InputObject <IDeviceManagementActionsIdentity>
+New-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfileToken
+ -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPaths11AjevhDevicemanagementAndroiddeviceownerenrollmentprofilesAndroiddeviceownerenrollmentprofileIdMicrosoftGraphCreatetokenPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -44,6 +46,20 @@ New-MgDeviceManagementAndroidDeviceOwnerEnrollmentProfileToken -InputObject <IDe
 Invoke action createToken
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -79,7 +95,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths11AjevhDevicemanagementAndroiddeviceownerenrollmentprofilesAndroiddeviceownerenrollmentprofileIdMicrosoftGraphCreatetokenPostRequestbodyContentApplicationJsonSchema
@@ -95,7 +111,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementActionsIdentity
@@ -175,8 +191,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths11AjevhDevicemanagementAndroiddeviceownerenrollmentprofilesAndroiddeviceownerenrollmentprofileIdMicrosoftGraphCreatetokenPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths11AjevhDevicemanagementAndroiddeviceownerenrollmentprofilesAndroiddeviceownerenrollmentprofileIdMicrosoftGraphCreatetokenPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### System.Boolean
@@ -189,11 +205,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths11AjevhDevicemanagementAndroiddeviceownerenrollmentprofilesAndroiddeviceownerenrollmentprofileIdMicrosoftGraphCreatetokenPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths11AjevhDevicemanagementAndroiddeviceownerenrollmentprofilesAndroiddeviceownerenrollmentprofileIdMicrosoftGraphCreatetokenPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[TokenValidityInSeconds <Int32?>]`: 
 
-INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[AlertRecordId <String>]`: The unique identifier of alertRecord
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: The unique identifier of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: The unique identifier of androidForWorkEnrollmentProfile
@@ -237,7 +253,6 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[MicrosoftTunnelSiteId <String>]`: The unique identifier of microsoftTunnelSite
   - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
   - `[NotificationMessageTemplateId <String>]`: The unique identifier of notificationMessageTemplate
-  - `[OemWarrantyInformationOnboardingId <String>]`: The unique identifier of oemWarrantyInformationOnboarding
   - `[RemoteAssistancePartnerId <String>]`: The unique identifier of remoteAssistancePartner
   - `[RoleScopeTagId <String>]`: The unique identifier of roleScopeTag
   - `[WindowsAutopilotDeploymentProfileId <String>]`: The unique identifier of windowsAutopilotDeploymentProfile

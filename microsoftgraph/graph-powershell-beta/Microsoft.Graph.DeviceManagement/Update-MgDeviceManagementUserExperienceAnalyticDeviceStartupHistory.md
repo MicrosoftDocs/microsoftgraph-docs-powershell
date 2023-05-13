@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementuserexperienceanalyticdevicestartuphistory
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementuserexperienceanalyticdevicestartuphistory
 schema: 2.0.0
 ---
 
-# Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory
+# Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupHistory
 
 ## SYNOPSIS
 Update the navigation property userExperienceAnalyticsDeviceStartupHistory in deviceManagement
@@ -14,7 +14,7 @@ Update the navigation property userExperienceAnalyticsDeviceStartupHistory in de
 
 ### UpdateExpanded (Default)
 ```
-Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory
+Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupHistory
  -UserExperienceAnalyticsDeviceStartupHistoryId <String> [-AdditionalProperties <Hashtable>]
  [-CoreBootTimeInMS <Int32>] [-CoreLoginTimeInMS <Int32>] [-DeviceId <String>]
  [-FeatureUpdateBootTimeInMS <Int32>] [-GroupPolicyBootTimeInMS <Int32>] [-GroupPolicyLoginTimeInMS <Int32>]
@@ -22,33 +22,34 @@ Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory
  [-ResponsiveDesktopTimeInMS <Int32>]
  [-RestartCategory <UserExperienceAnalyticsOperatingSystemRestartCategory>] [-RestartFaultBucket <String>]
  [-RestartStopCode <String>] [-StartTime <DateTime>] [-TotalBootTimeInMS <Int32>] [-TotalLoginTimeInMS <Int32>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory
+Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupHistory
  -UserExperienceAnalyticsDeviceStartupHistoryId <String>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceStartupHistory> [-PassThru] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceStartupHistory> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory -InputObject <IDeviceManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-CoreBootTimeInMS <Int32>] [-CoreLoginTimeInMS <Int32>]
- [-DeviceId <String>] [-FeatureUpdateBootTimeInMS <Int32>] [-GroupPolicyBootTimeInMS <Int32>]
- [-GroupPolicyLoginTimeInMS <Int32>] [-Id <String>] [-IsFeatureUpdate] [-IsFirstLogin]
- [-OperatingSystemVersion <String>] [-ResponsiveDesktopTimeInMS <Int32>]
+Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupHistory
+ -InputObject <IDeviceManagementIdentity> [-AdditionalProperties <Hashtable>] [-CoreBootTimeInMS <Int32>]
+ [-CoreLoginTimeInMS <Int32>] [-DeviceId <String>] [-FeatureUpdateBootTimeInMS <Int32>]
+ [-GroupPolicyBootTimeInMS <Int32>] [-GroupPolicyLoginTimeInMS <Int32>] [-Id <String>] [-IsFeatureUpdate]
+ [-IsFirstLogin] [-OperatingSystemVersion <String>] [-ResponsiveDesktopTimeInMS <Int32>]
  [-RestartCategory <UserExperienceAnalyticsOperatingSystemRestartCategory>] [-RestartFaultBucket <String>]
  [-RestartStopCode <String>] [-StartTime <DateTime>] [-TotalBootTimeInMS <Int32>] [-TotalLoginTimeInMS <Int32>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceStartupHistory> [-PassThru] [-WhatIf] [-Confirm]
+Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupHistory
+ -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceStartupHistory> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -56,6 +57,20 @@ Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory -InputObject
 Update the navigation property userExperienceAnalyticsDeviceStartupHistory in deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -76,7 +91,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 The user experience analytics device startup history entity contains device boot performance history details.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserExperienceAnalyticsDeviceStartupHistory
@@ -181,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -198,7 +213,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementIdentity
@@ -248,21 +263,6 @@ The user experience analytics device boot record's operating system version.
 ```yaml
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -430,11 +430,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceStartupHistory
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceStartupHistory
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceStartupHistory
 ## NOTES
 
 ALIASES
@@ -444,9 +444,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsDeviceStartupHistory>`: The user experience analytics device startup history entity contains device boot performance history details.
+`BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsDeviceStartupHistory>`: The user experience analytics device startup history entity contains device boot performance history details.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[CoreBootTimeInMS <Int32?>]`: The user experience analytics device core boot time in milliseconds.
   - `[CoreLoginTimeInMS <Int32?>]`: The user experience analytics device core login time in milliseconds.
   - `[DeviceId <String>]`: The user experience analytics device id.
@@ -464,7 +464,7 @@ BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsDeviceStartupHistory>`: Th
   - `[TotalBootTimeInMS <Int32?>]`: The user experience analytics device total boot time in milliseconds.
   - `[TotalLoginTimeInMS <Int32?>]`: The user experience analytics device total login time in milliseconds.
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementIdentity>`: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: The unique identifier of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: The unique identifier of androidManagedStoreAppConfigurationSchema
@@ -596,6 +596,8 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionAppLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionAppLearningSummary
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
+  - `[WindowsQualityUpdateProfileAssignmentId <String>]`: The unique identifier of windowsQualityUpdateProfileAssignment
+  - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
 ## RELATED LINKS
 

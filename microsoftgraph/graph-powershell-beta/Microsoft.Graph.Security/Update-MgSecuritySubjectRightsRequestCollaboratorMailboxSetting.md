@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecuritysubjectrightsrequestcollaboratormailboxsetting
+﻿---
+external help file: Microsoft.Graph.Beta.Security-help.xml
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritysubjectrightsrequestcollaboratormailboxsetting
 schema: 2.0.0
 ---
 
-# Update-MgSecuritySubjectRightsRequestCollaboratorMailboxSetting
+# Update-MgBetaSecuritySubjectRightsRequestCollaboratorMailboxSetting
 
 ## SYNOPSIS
 Update property mailboxSettings value.
@@ -14,41 +14,50 @@ Update property mailboxSettings value.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgSecuritySubjectRightsRequestCollaboratorMailboxSetting -SubjectRightsRequestId <String>
+Update-MgBetaSecuritySubjectRightsRequestCollaboratorMailboxSetting -SubjectRightsRequestId <String>
  -UserId <String> [-AdditionalProperties <Hashtable>] [-ArchiveFolder <String>]
  [-AutomaticRepliesSetting <IMicrosoftGraphAutomaticRepliesSetting>] [-DateFormat <String>]
  [-DelegateMeetingMessageDeliveryOptions <String>] [-Language <IMicrosoftGraphLocaleInfo>]
  [-TimeFormat <String>] [-TimeZone <String>] [-UserPurpose <String>] [-UserPurposeV2 <String>]
- [-WorkingHours <IMicrosoftGraphWorkingHours>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WorkingHours <IMicrosoftGraphWorkingHours>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgSecuritySubjectRightsRequestCollaboratorMailboxSetting -SubjectRightsRequestId <String>
- -UserId <String> -BodyParameter <IMicrosoftGraphMailboxSettings1> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaSecuritySubjectRightsRequestCollaboratorMailboxSetting -SubjectRightsRequestId <String>
+ -UserId <String> -BodyParameter <IMicrosoftGraphMailboxSettings> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgSecuritySubjectRightsRequestCollaboratorMailboxSetting -InputObject <ISecurityIdentity>
+Update-MgBetaSecuritySubjectRightsRequestCollaboratorMailboxSetting -InputObject <ISecurityIdentity>
  [-AdditionalProperties <Hashtable>] [-ArchiveFolder <String>]
  [-AutomaticRepliesSetting <IMicrosoftGraphAutomaticRepliesSetting>] [-DateFormat <String>]
  [-DelegateMeetingMessageDeliveryOptions <String>] [-Language <IMicrosoftGraphLocaleInfo>]
  [-TimeFormat <String>] [-TimeZone <String>] [-UserPurpose <String>] [-UserPurposeV2 <String>]
- [-WorkingHours <IMicrosoftGraphWorkingHours>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WorkingHours <IMicrosoftGraphWorkingHours>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgSecuritySubjectRightsRequestCollaboratorMailboxSetting -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphMailboxSettings1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaSecuritySubjectRightsRequestCollaboratorMailboxSetting -InputObject <ISecurityIdentity>
+ -BodyParameter <IMicrosoftGraphMailboxSettings> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update property mailboxSettings value.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -85,7 +94,7 @@ Accept wildcard characters: False
 
 ### -AutomaticRepliesSetting
 automaticRepliesSetting
-To construct, please use Get-Help -Online and see NOTES section for AUTOMATICREPLIESSETTING properties and create a hash table.
+To construct, see NOTES section for AUTOMATICREPLIESSETTING properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAutomaticRepliesSetting
@@ -101,10 +110,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 mailboxSettings
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMailboxSettings1
+Type: IMicrosoftGraphMailboxSettings
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -147,7 +156,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ISecurityIdentity
@@ -163,26 +172,11 @@ Accept wildcard characters: False
 
 ### -Language
 localeInfo
-To construct, please use Get-Help -Online and see NOTES section for LANGUAGE properties and create a hash table.
+To construct, see NOTES section for LANGUAGE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphLocaleInfo
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -253,7 +247,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserPurpose
-.
+userPurpose
 
 ```yaml
 Type: String
@@ -284,7 +278,7 @@ Accept wildcard characters: False
 
 ### -WorkingHours
 workingHours
-To construct, please use Get-Help -Online and see NOTES section for WORKINGHOURS properties and create a hash table.
+To construct, see NOTES section for WORKINGHOURS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphWorkingHours
@@ -334,11 +328,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMailboxSettings1
-### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMailboxSettings
+### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMailboxSettings
 ## NOTES
 
 ALIASES
@@ -348,19 +342,19 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-AUTOMATICREPLIESSETTING `<IMicrosoftGraphAutomaticRepliesSetting>`: automaticRepliesSetting
+`AUTOMATICREPLIESSETTING <IMicrosoftGraphAutomaticRepliesSetting>`: automaticRepliesSetting
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ExternalAudience <String>]`: externalAudienceScope
   - `[ExternalReplyMessage <String>]`: The automatic reply to send to the specified external audience, if Status is AlwaysEnabled or Scheduled.
   - `[InternalReplyMessage <String>]`: The automatic reply to send to the audience internal to the signed-in user's organization, if Status is AlwaysEnabled or Scheduled.
   - `[ScheduledEndDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
-    - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
+    - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
+    - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
   - `[ScheduledStartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
   - `[Status <String>]`: automaticRepliesStatus
 
-BODYPARAMETER `<IMicrosoftGraphMailboxSettings1>`: mailboxSettings
+`BODYPARAMETER <IMicrosoftGraphMailboxSettings>`: mailboxSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ArchiveFolder <String>]`: Folder ID of an archive folder for the user. Read-only.
   - `[AutomaticRepliesSetting <IMicrosoftGraphAutomaticRepliesSetting>]`: automaticRepliesSetting
@@ -370,8 +364,8 @@ BODYPARAMETER `<IMicrosoftGraphMailboxSettings1>`: mailboxSettings
     - `[InternalReplyMessage <String>]`: The automatic reply to send to the audience internal to the signed-in user's organization, if Status is AlwaysEnabled or Scheduled.
     - `[ScheduledEndDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
-      - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
+      - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
+      - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
     - `[ScheduledStartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
     - `[Status <String>]`: automaticRepliesStatus
   - `[DateFormat <String>]`: The date format for the user's mailbox.
@@ -382,7 +376,7 @@ BODYPARAMETER `<IMicrosoftGraphMailboxSettings1>`: mailboxSettings
     - `[Locale <String>]`: A locale representation for the user, which includes the user's preferred language and country/region. For example, 'en-us'. The language component follows 2-letter codes as defined in ISO 639-1, and the country component follows 2-letter codes as defined in ISO 3166-1 alpha-2.
   - `[TimeFormat <String>]`: The time format for the user's mailbox.
   - `[TimeZone <String>]`: The default time zone for the user's mailbox.
-  - `[UserPurpose <String>]`: 
+  - `[UserPurpose <String>]`: userPurpose
   - `[UserPurposeV2 <String>]`: mailboxRecipientType
   - `[WorkingHours <IMicrosoftGraphWorkingHours>]`: workingHours
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -393,7 +387,7 @@ BODYPARAMETER `<IMicrosoftGraphMailboxSettings1>`: mailboxSettings
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Name <String>]`: The name of a time zone. It can be a standard time zone name such as 'Hawaii-Aleutian Standard Time', or 'Customized Time Zone' for a custom time zone.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+`INPUTOBJECT <ISecurityIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
   - `[ArticleId <String>]`: The unique identifier of article
   - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator
@@ -451,12 +445,12 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[VulnerabilityComponentId <String>]`: The unique identifier of vulnerabilityComponent
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
-LANGUAGE `<IMicrosoftGraphLocaleInfo>`: localeInfo
+`LANGUAGE <IMicrosoftGraphLocaleInfo>`: localeInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: A name representing the user's locale in natural language, for example, 'English (United States)'.
   - `[Locale <String>]`: A locale representation for the user, which includes the user's preferred language and country/region. For example, 'en-us'. The language component follows 2-letter codes as defined in ISO 639-1, and the country component follows 2-letter codes as defined in ISO 3166-1 alpha-2.
 
-WORKINGHOURS `<IMicrosoftGraphWorkingHours>`: workingHours
+`WORKINGHOURS <IMicrosoftGraphWorkingHours>`: workingHours
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DaysOfWeek <String[]>]`: The days of the week on which the user works.
   - `[EndTime <String>]`: The time of the day that the user stops working.

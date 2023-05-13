@@ -1,58 +1,52 @@
----
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mgteamworkdeviceoperation
+﻿---
+external help file: Microsoft.Graph.Beta.Teams-help.xml
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdeviceoperation
 schema: 2.0.0
 ---
 
-# Get-MgTeamworkDeviceOperation
+# Get-MgBetaTeamworkDeviceOperation
 
 ## SYNOPSIS
-The async operations on the device.
+Get the details of an async, long-running operation on a Microsoft Teams-enabled device.
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgTeamworkDeviceOperation -TeamworkDeviceId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
- [-All] [-CountVariable <String>] [<CommonParameters>]
+Get-MgBetaTeamworkDeviceOperation -TeamworkDeviceId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgTeamworkDeviceOperation -TeamworkDeviceId <String> -TeamworkDeviceOperationId <String>
+Get-MgBetaTeamworkDeviceOperation -TeamworkDeviceId <String> -TeamworkDeviceOperationId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgTeamworkDeviceOperation -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
+Get-MgBetaTeamworkDeviceOperation -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The async operations on the device.
+Get the details of an async, long-running operation on a Microsoft Teams-enabled device.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgTeamworkDeviceOperation Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Teams
-Get-MgTeamworkDeviceOperation -TeamworkDeviceId $teamworkDeviceId -TeamworkDeviceOperationId $teamworkDeviceOperationId
+Import-Module Microsoft.Graph.Beta.Teams
+Get-MgBetaTeamworkDeviceOperation -TeamworkDeviceId $teamworkDeviceId -TeamworkDeviceOperationId $teamworkDeviceOperationId
 ```
 
-This example shows how to use the Get-MgTeamworkDeviceOperation Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Get-MgTeamworkDeviceOperation Cmdlet
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Teams
-Get-MgTeamworkDeviceOperation -TeamworkDeviceId $teamworkDeviceId
+Import-Module Microsoft.Graph.Beta.Teams
+Get-MgBetaTeamworkDeviceOperation -TeamworkDeviceId $teamworkDeviceId
 ```
-
-This example shows how to use the Get-MgTeamworkDeviceOperation Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -119,7 +113,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ITeamsIdentity
@@ -258,10 +252,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamworkDeviceOperation
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamworkDeviceOperation
 ## NOTES
 
 ALIASES
@@ -271,7 +265,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat

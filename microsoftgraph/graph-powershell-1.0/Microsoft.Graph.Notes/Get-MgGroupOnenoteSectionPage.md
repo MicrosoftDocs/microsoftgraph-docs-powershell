@@ -1,7 +1,7 @@
----
+﻿---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.notes/get-mggrouponenotesectionpage
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mggrouponenotesectionpage
 schema: 2.0.0
 ---
 
@@ -26,6 +26,20 @@ Read-only.
 Nullable.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 

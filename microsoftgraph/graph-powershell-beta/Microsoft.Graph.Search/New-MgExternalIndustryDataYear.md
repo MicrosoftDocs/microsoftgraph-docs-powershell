@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Search-help.xml
-Module Name: Microsoft.Graph.Search
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/new-mgexternalindustrydatayear
+﻿---
+external help file: Microsoft.Graph.Beta.Search-help.xml
+Module Name: Microsoft.Graph.Beta.Search
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydatayear
 schema: 2.0.0
 ---
 
-# New-MgExternalIndustryDataYear
+# New-MgBetaExternalIndustryDataYear
 
 ## SYNOPSIS
 Create a new yearTimePeriodDefinition object.
@@ -14,21 +14,31 @@ Create a new yearTimePeriodDefinition object.
 
 ### CreateExpanded (Default)
 ```
-New-MgExternalIndustryDataYear [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
+New-MgBetaExternalIndustryDataYear [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
  [-EndDate <DateTime>] [-Id <String>] [-StartDate <DateTime>] [-Year <Hashtable>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgExternalIndustryDataYear -BodyParameter <IMicrosoftGraphIndustryDataYearTimePeriodDefinition> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaExternalIndustryDataYear -BodyParameter <IMicrosoftGraphIndustryDataYearTimePeriodDefinition>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new yearTimePeriodDefinition object.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -49,7 +59,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 yearTimePeriodDefinition
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIndustryDataYearTimePeriodDefinition
@@ -95,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -176,10 +186,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIndustryDataYearTimePeriodDefinition
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIndustryDataYearTimePeriodDefinition
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIndustryDataYearTimePeriodDefinition
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIndustryDataYearTimePeriodDefinition
 ## NOTES
 
 ALIASES
@@ -189,9 +199,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphIndustryDataYearTimePeriodDefinition>`: yearTimePeriodDefinition
+`BODYPARAMETER <IMicrosoftGraphIndustryDataYearTimePeriodDefinition>`: yearTimePeriodDefinition
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DisplayName <String>]`: The name of the year. Maximum supported length is 100 characters.
   - `[EndDate <DateTime?>]`: The last day of the year using ISO 8601 format for date.
   - `[StartDate <DateTime?>]`: The first day of the year using ISO 8601 format for date.
@@ -200,7 +210,7 @@ BODYPARAMETER `<IMicrosoftGraphIndustryDataYearTimePeriodDefinition>`: yearTimeP
     - `[Code <String>]`: The code of the desired referenceDefinition entry.
     - `[Value <IMicrosoftGraphIndustryDataReferenceDefinition>]`: referenceDefinition
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Code <String>]`: The code value for the definition that must be unique within the referenceType.
       - `[IsDisabled <Boolean?>]`: Indicates whether the definition has been disabled.
       - `[ReferenceType <String>]`: The categorical type for a collection of enumerated values.

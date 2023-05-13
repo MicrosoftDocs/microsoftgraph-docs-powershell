@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecuritythreatsubmission
+﻿---
+external help file: Microsoft.Graph.Beta.Security-help.xml
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatsubmission
 schema: 2.0.0
 ---
 
-# Update-MgSecurityThreatSubmission
+# Update-MgBetaSecurityThreatSubmission
 
 ## SYNOPSIS
 Update the navigation property threatSubmission in security
@@ -14,24 +14,37 @@ Update the navigation property threatSubmission in security
 
 ### UpdateExpanded (Default)
 ```
-Update-MgSecurityThreatSubmission [-AdditionalProperties <Hashtable>]
+Update-MgBetaSecurityThreatSubmission [-AdditionalProperties <Hashtable>]
  [-EmailThreatSubmissionPolicies <IMicrosoftGraphSecurityEmailThreatSubmissionPolicy[]>]
  [-EmailThreats <IMicrosoftGraphSecurityEmailThreatSubmission[]>]
  [-FileThreats <IMicrosoftGraphSecurityFileThreatSubmission[]>] [-Id <String>]
- [-UrlThreats <IMicrosoftGraphSecurityUrlThreatSubmission[]>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-UrlThreats <IMicrosoftGraphSecurityUrlThreatSubmission[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgSecurityThreatSubmission -BodyParameter <IMicrosoftGraphSecurityThreatSubmissionRoot> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaSecurityThreatSubmission -BodyParameter <IMicrosoftGraphSecurityThreatSubmissionRoot> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property threatSubmission in security
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -52,7 +65,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 threatSubmissionRoot
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSecurityThreatSubmissionRoot
@@ -68,7 +81,7 @@ Accept wildcard characters: False
 
 ### -EmailThreats
 .
-To construct, please use Get-Help -Online and see NOTES section for EMAILTHREATS properties and create a hash table.
+To construct, see NOTES section for EMAILTHREATS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSecurityEmailThreatSubmission[]
@@ -84,7 +97,7 @@ Accept wildcard characters: False
 
 ### -EmailThreatSubmissionPolicies
 .
-To construct, please use Get-Help -Online and see NOTES section for EMAILTHREATSUBMISSIONPOLICIES properties and create a hash table.
+To construct, see NOTES section for EMAILTHREATSUBMISSIONPOLICIES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSecurityEmailThreatSubmissionPolicy[]
@@ -100,7 +113,7 @@ Accept wildcard characters: False
 
 ### -FileThreats
 .
-To construct, please use Get-Help -Online and see NOTES section for FILETHREATS properties and create a hash table.
+To construct, see NOTES section for FILETHREATS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSecurityFileThreatSubmission[]
@@ -115,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -130,24 +143,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -UrlThreats
 .
-To construct, please use Get-Help -Online and see NOTES section for URLTHREATS properties and create a hash table.
+To construct, see NOTES section for URLTHREATS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSecurityUrlThreatSubmission[]
@@ -197,10 +195,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityThreatSubmissionRoot
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityThreatSubmissionRoot
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityThreatSubmissionRoot
 ## NOTES
 
 ALIASES
@@ -210,11 +208,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSecurityThreatSubmissionRoot>`: threatSubmissionRoot
+`BODYPARAMETER <IMicrosoftGraphSecurityThreatSubmissionRoot>`: threatSubmissionRoot
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[EmailThreatSubmissionPolicies <IMicrosoftGraphSecurityEmailThreatSubmissionPolicy[]>]`: 
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[CustomizedNotificationSenderEmailAddress <String>]`: Specifies the email address of the sender from which email notifications will be sent to end users to inform them whether an email is spam, phish or clean. The default value is null. Optional for creation.
     - `[CustomizedReportRecipientEmailAddress <String>]`: Specifies the destination where the reported messages from end users will land whenever they report something as phish, junk or not junk. The default value is null. Optional for creation.
     - `[IsAlwaysReportEnabledForUsers <Boolean?>]`: Indicates whether end users can report a message as spam, phish or junk directly without a confirmation(popup). The default value is true.  Optional for creation.
@@ -255,7 +253,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityThreatSubmissionRoot>`: threatSubmissionR
     - `[Source <String>]`: submissionSource
     - `[Status <String>]`: longRunningOperationStatus
     - `[TenantId <String>]`: Indicates the tenant id of the submitter. Not required when created using a POST operation. It is extracted from the token of the post API call.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[AttackSimulationInfo <IMicrosoftGraphSecurityAttackSimulationInfo>]`: attackSimulationInfo
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[AttackSimDateTime <DateTime?>]`: The date and time of the attack simulation.
@@ -291,7 +289,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityThreatSubmissionRoot>`: threatSubmissionR
     - `[Source <String>]`: submissionSource
     - `[Status <String>]`: longRunningOperationStatus
     - `[TenantId <String>]`: Indicates the tenant id of the submitter. Not required when created using a POST operation. It is extracted from the token of the post API call.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[FileName <String>]`: It specifies the file name to be submitted.
   - `[UrlThreats <IMicrosoftGraphSecurityUrlThreatSubmission[]>]`: 
     - `[AdminReview <IMicrosoftGraphSecuritySubmissionAdminReview>]`: submissionAdminReview
@@ -304,10 +302,10 @@ BODYPARAMETER `<IMicrosoftGraphSecurityThreatSubmissionRoot>`: threatSubmissionR
     - `[Source <String>]`: submissionSource
     - `[Status <String>]`: longRunningOperationStatus
     - `[TenantId <String>]`: Indicates the tenant id of the submitter. Not required when created using a POST operation. It is extracted from the token of the post API call.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[WebUrl <String>]`: Denotes the webUrl that needs to be submitted.
 
-EMAILTHREATS <IMicrosoftGraphSecurityEmailThreatSubmission\[]>: .
+`EMAILTHREATS <IMicrosoftGraphSecurityEmailThreatSubmission[]>`: .
   - `[AdminReview <IMicrosoftGraphSecuritySubmissionAdminReview>]`: submissionAdminReview
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ReviewBy <String>]`: Specifies who reviewed the email. The identification is an email ID or other identity strings.
@@ -334,7 +332,7 @@ EMAILTHREATS <IMicrosoftGraphSecurityEmailThreatSubmission\[]>: .
   - `[Source <String>]`: submissionSource
   - `[Status <String>]`: longRunningOperationStatus
   - `[TenantId <String>]`: Indicates the tenant id of the submitter. Not required when created using a POST operation. It is extracted from the token of the post API call.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AttackSimulationInfo <IMicrosoftGraphSecurityAttackSimulationInfo>]`: attackSimulationInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AttackSimDateTime <DateTime?>]`: The date and time of the attack simulation.
@@ -360,8 +358,8 @@ EMAILTHREATS <IMicrosoftGraphSecurityEmailThreatSubmission\[]>: .
       - `[Status <String>]`: longRunningOperationStatus
       - `[Value <String>]`: Specifies the value of the created tenant allow block list entry.
 
-EMAILTHREATSUBMISSIONPOLICIES <IMicrosoftGraphSecurityEmailThreatSubmissionPolicy\[]>: .
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`EMAILTHREATSUBMISSIONPOLICIES <IMicrosoftGraphSecurityEmailThreatSubmissionPolicy[]>`: .
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[CustomizedNotificationSenderEmailAddress <String>]`: Specifies the email address of the sender from which email notifications will be sent to end users to inform them whether an email is spam, phish or clean. The default value is null. Optional for creation.
   - `[CustomizedReportRecipientEmailAddress <String>]`: Specifies the destination where the reported messages from end users will land whenever they report something as phish, junk or not junk. The default value is null. Optional for creation.
   - `[IsAlwaysReportEnabledForUsers <Boolean?>]`: Indicates whether end users can report a message as spam, phish or junk directly without a confirmation(popup). The default value is true.  Optional for creation.
@@ -376,7 +374,7 @@ EMAILTHREATSUBMISSIONPOLICIES <IMicrosoftGraphSecurityEmailThreatSubmissionPolic
   - `[IsReportToMicrosoftEnabled <Boolean?>]`: If enabled, the email will be sent to Microsoft for analysis. The default value is false. Required for creation.
   - `[IsReviewEmailNotificationEnabled <Boolean?>]`: Indicates whether an email notification is sent to the end user who reported the email when it has been reviewed by the admin. The default value is false. Optional for creation.
 
-FILETHREATS <IMicrosoftGraphSecurityFileThreatSubmission\[]>: .
+`FILETHREATS <IMicrosoftGraphSecurityFileThreatSubmission[]>`: .
   - `[AdminReview <IMicrosoftGraphSecuritySubmissionAdminReview>]`: submissionAdminReview
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ReviewBy <String>]`: Specifies who reviewed the email. The identification is an email ID or other identity strings.
@@ -403,10 +401,10 @@ FILETHREATS <IMicrosoftGraphSecurityFileThreatSubmission\[]>: .
   - `[Source <String>]`: submissionSource
   - `[Status <String>]`: longRunningOperationStatus
   - `[TenantId <String>]`: Indicates the tenant id of the submitter. Not required when created using a POST operation. It is extracted from the token of the post API call.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[FileName <String>]`: It specifies the file name to be submitted.
 
-URLTHREATS <IMicrosoftGraphSecurityUrlThreatSubmission\[]>: .
+`URLTHREATS <IMicrosoftGraphSecurityUrlThreatSubmission[]>`: .
   - `[AdminReview <IMicrosoftGraphSecuritySubmissionAdminReview>]`: submissionAdminReview
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ReviewBy <String>]`: Specifies who reviewed the email. The identification is an email ID or other identity strings.
@@ -433,7 +431,7 @@ URLTHREATS <IMicrosoftGraphSecurityUrlThreatSubmission\[]>: .
   - `[Source <String>]`: submissionSource
   - `[Status <String>]`: longRunningOperationStatus
   - `[TenantId <String>]`: Indicates the tenant id of the submitter. Not required when created using a POST operation. It is extracted from the token of the post API call.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[WebUrl <String>]`: Denotes the webUrl that needs to be submitted.
 
 ## RELATED LINKS

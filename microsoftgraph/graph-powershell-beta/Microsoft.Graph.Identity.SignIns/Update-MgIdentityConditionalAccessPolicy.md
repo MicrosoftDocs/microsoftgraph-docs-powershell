@@ -1,57 +1,57 @@
----
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgidentityconditionalaccesspolicy
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityconditionalaccesspolicy
 schema: 2.0.0
 ---
 
-# Update-MgIdentityConditionalAccessPolicy
+# Update-MgBetaIdentityConditionalAccessPolicy
 
 ## SYNOPSIS
-Update the navigation property policies in identity
+Update the properties of a conditionalAccessPolicy object.
 
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
-Update-MgIdentityConditionalAccessPolicy -ConditionalAccessPolicyId <String>
- [-AdditionalProperties <Hashtable>] [-Conditions <IMicrosoftGraphConditionalAccessConditionSet1>]
+Update-MgBetaIdentityConditionalAccessPolicy -ConditionalAccessPolicyId <String>
+ [-AdditionalProperties <Hashtable>] [-Conditions <IMicrosoftGraphConditionalAccessConditionSet>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
- [-GrantControls <IMicrosoftGraphConditionalAccessGrantControls1>] [-Id <String>]
- [-ModifiedDateTime <DateTime>] [-SessionControls <IMicrosoftGraphConditionalAccessSessionControls1>]
- [-State <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-GrantControls <IMicrosoftGraphConditionalAccessGrantControls>] [-Id <String>] [-ModifiedDateTime <DateTime>]
+ [-SessionControls <IMicrosoftGraphConditionalAccessSessionControls>] [-State <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgIdentityConditionalAccessPolicy -ConditionalAccessPolicyId <String>
- -BodyParameter <IMicrosoftGraphConditionalAccessPolicy1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaIdentityConditionalAccessPolicy -ConditionalAccessPolicyId <String>
+ -BodyParameter <IMicrosoftGraphConditionalAccessPolicy> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgIdentityConditionalAccessPolicy -InputObject <IIdentitySignInsIdentity>
- [-AdditionalProperties <Hashtable>] [-Conditions <IMicrosoftGraphConditionalAccessConditionSet1>]
+Update-MgBetaIdentityConditionalAccessPolicy -InputObject <IIdentitySignInsIdentity>
+ [-AdditionalProperties <Hashtable>] [-Conditions <IMicrosoftGraphConditionalAccessConditionSet>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
- [-GrantControls <IMicrosoftGraphConditionalAccessGrantControls1>] [-Id <String>]
- [-ModifiedDateTime <DateTime>] [-SessionControls <IMicrosoftGraphConditionalAccessSessionControls1>]
- [-State <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-GrantControls <IMicrosoftGraphConditionalAccessGrantControls>] [-Id <String>] [-ModifiedDateTime <DateTime>]
+ [-SessionControls <IMicrosoftGraphConditionalAccessSessionControls>] [-State <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgIdentityConditionalAccessPolicy -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphConditionalAccessPolicy1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaIdentityConditionalAccessPolicy -InputObject <IIdentitySignInsIdentity>
+ -BodyParameter <IMicrosoftGraphConditionalAccessPolicy> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property policies in identity
+Update the properties of a conditionalAccessPolicy object.
 
 ## EXAMPLES
 
-### Example 1: Add sign in risk levels to an existing conditional access policy
+### EXAMPLE 1
 ```powershell
-Connect-MgGraph -Scopes 'Policy.ReadWrite.ConditionalAccess'
+Connect-MgBetaGraph -Scopes 'Policy.ReadWrite.ConditionalAccess'
   
 $params = @{
   Conditions = @{
@@ -62,11 +62,9 @@ $params = @{
     )
   }
 }
-
-Update-MgIdentityConditionalAccessPolicy -ConditionalAccessPolicyId '61c7530f-5c1d-44b2-a972-4ae658b7a9ac' -BodyParameter $params
 ```
 
-This example updates and existing access policy to add the sign in risk levels.
+Update-MgBetaIdentityConditionalAccessPolicy -ConditionalAccessPolicyId '61c7530f-5c1d-44b2-a972-4ae658b7a9ac' -BodyParameter $params
 
 ## PARAMETERS
 
@@ -87,10 +85,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 conditionalAccessPolicy
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphConditionalAccessPolicy1
+Type: IMicrosoftGraphConditionalAccessPolicy
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -118,10 +116,10 @@ Accept wildcard characters: False
 
 ### -Conditions
 conditionalAccessConditionSet
-To construct, please use Get-Help -Online and see NOTES section for CONDITIONS properties and create a hash table.
+To construct, see NOTES section for CONDITIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphConditionalAccessConditionSet1
+Type: IMicrosoftGraphConditionalAccessConditionSet
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -181,10 +179,10 @@ Accept wildcard characters: False
 
 ### -GrantControls
 conditionalAccessGrantControls
-To construct, please use Get-Help -Online and see NOTES section for GRANTCONTROLS properties and create a hash table.
+To construct, see NOTES section for GRANTCONTROLS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphConditionalAccessGrantControls1
+Type: IMicrosoftGraphConditionalAccessGrantControls
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -196,7 +194,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -213,7 +211,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IIdentitySignInsIdentity
@@ -244,27 +242,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -SessionControls
 conditionalAccessSessionControls
-To construct, please use Get-Help -Online and see NOTES section for SESSIONCONTROLS properties and create a hash table.
+To construct, see NOTES section for SESSIONCONTROLS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphConditionalAccessSessionControls1
+Type: IMicrosoftGraphConditionalAccessSessionControls
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -326,11 +309,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConditionalAccessPolicy1
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConditionalAccessPolicy
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConditionalAccessPolicy
 ## NOTES
 
 ALIASES
@@ -340,23 +323,23 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphConditionalAccessPolicy1>`: conditionalAccessPolicy
+`BODYPARAMETER <IMicrosoftGraphConditionalAccessPolicy>`: conditionalAccessPolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[Conditions <IMicrosoftGraphConditionalAccessConditionSet1>]`: conditionalAccessConditionSet
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
+  - `[Conditions <IMicrosoftGraphConditionalAccessConditionSet>]`: conditionalAccessConditionSet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Applications <IMicrosoftGraphConditionalAccessApplications1>]`: conditionalAccessApplications
+    - `[Applications <IMicrosoftGraphConditionalAccessApplications>]`: conditionalAccessApplications
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ApplicationFilter <IMicrosoftGraphConditionalAccessFilter>]`: conditionalAccessFilter
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Mode <String>]`: filterMode
-        - `[Rule <String>]`: Rule syntax is similar to that used for membership rules for groups in Azure Active Directory (Azure AD). For details, see rules with multiple expressions
+        - `[Rule <String>]`: Rule syntax is similar to that used for membership rules for groups in Azure Active Directory. For details, see rules with multiple expressions
       - `[ExcludeApplications <String[]>]`: Can be one of the following:  The list of client IDs (appId) explicitly excluded from the policy. Office365 - For the list of apps included in Office365, see Conditional Access target apps: Office 365
       - `[IncludeApplications <String[]>]`: Can be one of the following:  The list of client IDs (appId) the policy applies to, unless explicitly excluded (in excludeApplications)  All  Office365 - For the list of apps included in Office365, see Conditional Access target apps: Office 365
       - `[IncludeAuthenticationContextClassReferences <String[]>]`: Authentication context class references include. Supported values are c1 through c25.
       - `[IncludeUserActions <String[]>]`: User actions to include. Supported values are urn:user:registersecurityinfo and urn:user:registerdevice
     - `[ClientAppTypes <String[]>]`: Client application types included in the policy. Possible values are: all, browser, mobileAppsAndDesktopClients, exchangeActiveSync, easSupported, other. Required.
-    - `[ClientApplications <IMicrosoftGraphConditionalAccessClientApplications1>]`: conditionalAccessClientApplications
+    - `[ClientApplications <IMicrosoftGraphConditionalAccessClientApplications>]`: conditionalAccessClientApplications
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ExcludeServicePrincipals <String[]>]`: Service principal IDs excluded from the policy scope.
       - `[IncludeServicePrincipals <String[]>]`: Service principal IDs included in the policy scope, or ServicePrincipalsInMyTenant.
@@ -365,7 +348,7 @@ BODYPARAMETER `<IMicrosoftGraphConditionalAccessPolicy1>`: conditionalAccessPoli
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ExcludeStates <String[]>]`: States excluded from the scope of the policy. Possible values: Compliant, DomainJoined.
       - `[IncludeStates <String[]>]`: States in the scope of the policy. All is the only allowed value.
-    - `[Devices <IMicrosoftGraphConditionalAccessDevices1>]`: conditionalAccessDevices
+    - `[Devices <IMicrosoftGraphConditionalAccessDevices>]`: conditionalAccessDevices
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DeviceFilter <IMicrosoftGraphConditionalAccessFilter>]`: conditionalAccessFilter
       - `[ExcludeDeviceStates <String[]>]`: 
@@ -378,8 +361,8 @@ BODYPARAMETER `<IMicrosoftGraphConditionalAccessPolicy1>`: conditionalAccessPoli
       - `[IncludeLocations <String[]>]`: Location IDs in scope of policy unless explicitly excluded, All, or AllTrusted.
     - `[Platforms <IMicrosoftGraphConditionalAccessPlatforms>]`: conditionalAccessPlatforms
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[ExcludePlatforms <String[]>]`: Possible values are: android, iOS, windows, windowsPhone, macOS, linux, all, unknownFutureValue.
-      - `[IncludePlatforms <String[]>]`: Possible values are: android, iOS, windows, windowsPhone, macOS, linux, all, unknownFutureValue.
+      - `[ExcludePlatforms <String[]>]`: Possible values are: android, iOS, windows, windowsPhone, macOS, all, unknownFutureValue, linux.
+      - `[IncludePlatforms <String[]>]`: Possible values are: android, iOS, windows, windowsPhone, macOS, all, unknownFutureValue,linux``.
     - `[ServicePrincipalRiskLevels <String[]>]`: Service principal risk levels included in the policy. Possible values are: low, medium, high, none, unknownFutureValue.
     - `[SignInRiskLevels <String[]>]`: Sign-in risk levels included in the policy. Possible values are: low, medium, high, hidden, none, unknownFutureValue. Required.
     - `[UserRiskLevels <String[]>]`: User risk levels included in the policy. Possible values are: low, medium, high, hidden, none, unknownFutureValue. Required.
@@ -401,14 +384,14 @@ BODYPARAMETER `<IMicrosoftGraphConditionalAccessPolicy1>`: conditionalAccessPoli
   - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Readonly.
   - `[Description <String>]`: Not used.
   - `[DisplayName <String>]`: Specifies a display name for the conditionalAccessPolicy object.
-  - `[GrantControls <IMicrosoftGraphConditionalAccessGrantControls1>]`: conditionalAccessGrantControls
+  - `[GrantControls <IMicrosoftGraphConditionalAccessGrantControls>]`: conditionalAccessGrantControls
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AuthenticationStrength <IMicrosoftGraphAuthenticationStrengthPolicy>]`: authenticationStrengthPolicy
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[AllowedCombinations <String[]>]`: A collection of authentication method modes that are required be used to satify this authentication strength.
       - `[CombinationConfigurations <IMicrosoftGraphAuthenticationCombinationConfiguration[]>]`: Settings that may be used to require specific types or instances of an authentication method to be used when authenticating with a specified combination of authentication methods.
-        - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[AppliesToCombinations <String[]>]`: Which authentication method combinations this configuration applies to. Must be an allowedCombinations object that's defined for the authenticationStrengthPolicy. The only possible value for fido2combinationConfigurations is 'fido2'.
       - `[CreatedDateTime <DateTime?>]`: The datetime when this policy was created.
       - `[Description <String>]`: The human-readable description of this policy.
@@ -421,7 +404,7 @@ BODYPARAMETER `<IMicrosoftGraphConditionalAccessPolicy1>`: conditionalAccessPoli
     - `[Operator <String>]`: Defines the relationship of the grant controls. Possible values: AND, OR.
     - `[TermsOfUse <String[]>]`: List of terms of use IDs required by the policy.
   - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Readonly.
-  - `[SessionControls <IMicrosoftGraphConditionalAccessSessionControls1>]`: conditionalAccessSessionControls
+  - `[SessionControls <IMicrosoftGraphConditionalAccessSessionControls>]`: conditionalAccessSessionControls
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ApplicationEnforcedRestrictions <IMicrosoftGraphApplicationEnforcedRestrictionsSessionControl>]`: applicationEnforcedRestrictionsSessionControl
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -450,20 +433,20 @@ BODYPARAMETER `<IMicrosoftGraphConditionalAccessPolicy1>`: conditionalAccessPoli
       - `[Value <Int32?>]`: The number of days or hours.
   - `[State <String>]`: conditionalAccessPolicyState
 
-CONDITIONS `<IMicrosoftGraphConditionalAccessConditionSet1>`: conditionalAccessConditionSet
+`CONDITIONS <IMicrosoftGraphConditionalAccessConditionSet>`: conditionalAccessConditionSet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Applications <IMicrosoftGraphConditionalAccessApplications1>]`: conditionalAccessApplications
+  - `[Applications <IMicrosoftGraphConditionalAccessApplications>]`: conditionalAccessApplications
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ApplicationFilter <IMicrosoftGraphConditionalAccessFilter>]`: conditionalAccessFilter
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Mode <String>]`: filterMode
-      - `[Rule <String>]`: Rule syntax is similar to that used for membership rules for groups in Azure Active Directory (Azure AD). For details, see rules with multiple expressions
+      - `[Rule <String>]`: Rule syntax is similar to that used for membership rules for groups in Azure Active Directory. For details, see rules with multiple expressions
     - `[ExcludeApplications <String[]>]`: Can be one of the following:  The list of client IDs (appId) explicitly excluded from the policy. Office365 - For the list of apps included in Office365, see Conditional Access target apps: Office 365
     - `[IncludeApplications <String[]>]`: Can be one of the following:  The list of client IDs (appId) the policy applies to, unless explicitly excluded (in excludeApplications)  All  Office365 - For the list of apps included in Office365, see Conditional Access target apps: Office 365
     - `[IncludeAuthenticationContextClassReferences <String[]>]`: Authentication context class references include. Supported values are c1 through c25.
     - `[IncludeUserActions <String[]>]`: User actions to include. Supported values are urn:user:registersecurityinfo and urn:user:registerdevice
   - `[ClientAppTypes <String[]>]`: Client application types included in the policy. Possible values are: all, browser, mobileAppsAndDesktopClients, exchangeActiveSync, easSupported, other. Required.
-  - `[ClientApplications <IMicrosoftGraphConditionalAccessClientApplications1>]`: conditionalAccessClientApplications
+  - `[ClientApplications <IMicrosoftGraphConditionalAccessClientApplications>]`: conditionalAccessClientApplications
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ExcludeServicePrincipals <String[]>]`: Service principal IDs excluded from the policy scope.
     - `[IncludeServicePrincipals <String[]>]`: Service principal IDs included in the policy scope, or ServicePrincipalsInMyTenant.
@@ -472,7 +455,7 @@ CONDITIONS `<IMicrosoftGraphConditionalAccessConditionSet1>`: conditionalAccessC
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ExcludeStates <String[]>]`: States excluded from the scope of the policy. Possible values: Compliant, DomainJoined.
     - `[IncludeStates <String[]>]`: States in the scope of the policy. All is the only allowed value.
-  - `[Devices <IMicrosoftGraphConditionalAccessDevices1>]`: conditionalAccessDevices
+  - `[Devices <IMicrosoftGraphConditionalAccessDevices>]`: conditionalAccessDevices
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DeviceFilter <IMicrosoftGraphConditionalAccessFilter>]`: conditionalAccessFilter
     - `[ExcludeDeviceStates <String[]>]`: 
@@ -485,8 +468,8 @@ CONDITIONS `<IMicrosoftGraphConditionalAccessConditionSet1>`: conditionalAccessC
     - `[IncludeLocations <String[]>]`: Location IDs in scope of policy unless explicitly excluded, All, or AllTrusted.
   - `[Platforms <IMicrosoftGraphConditionalAccessPlatforms>]`: conditionalAccessPlatforms
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[ExcludePlatforms <String[]>]`: Possible values are: android, iOS, windows, windowsPhone, macOS, linux, all, unknownFutureValue.
-    - `[IncludePlatforms <String[]>]`: Possible values are: android, iOS, windows, windowsPhone, macOS, linux, all, unknownFutureValue.
+    - `[ExcludePlatforms <String[]>]`: Possible values are: android, iOS, windows, windowsPhone, macOS, all, unknownFutureValue, linux.
+    - `[IncludePlatforms <String[]>]`: Possible values are: android, iOS, windows, windowsPhone, macOS, all, unknownFutureValue,linux``.
   - `[ServicePrincipalRiskLevels <String[]>]`: Service principal risk levels included in the policy. Possible values are: low, medium, high, none, unknownFutureValue.
   - `[SignInRiskLevels <String[]>]`: Sign-in risk levels included in the policy. Possible values are: low, medium, high, hidden, none, unknownFutureValue. Required.
   - `[UserRiskLevels <String[]>]`: User risk levels included in the policy. Possible values are: low, medium, high, hidden, none, unknownFutureValue. Required.
@@ -506,14 +489,14 @@ CONDITIONS `<IMicrosoftGraphConditionalAccessConditionSet1>`: conditionalAccessC
     - `[IncludeRoles <String[]>]`: Role IDs in scope of policy unless explicitly excluded.
     - `[IncludeUsers <String[]>]`: User IDs in scope of policy unless explicitly excluded, None, All, or GuestsOrExternalUsers.
 
-GRANTCONTROLS `<IMicrosoftGraphConditionalAccessGrantControls1>`: conditionalAccessGrantControls
+`GRANTCONTROLS <IMicrosoftGraphConditionalAccessGrantControls>`: conditionalAccessGrantControls
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AuthenticationStrength <IMicrosoftGraphAuthenticationStrengthPolicy>]`: authenticationStrengthPolicy
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[AllowedCombinations <String[]>]`: A collection of authentication method modes that are required be used to satify this authentication strength.
     - `[CombinationConfigurations <IMicrosoftGraphAuthenticationCombinationConfiguration[]>]`: Settings that may be used to require specific types or instances of an authentication method to be used when authenticating with a specified combination of authentication methods.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[AppliesToCombinations <String[]>]`: Which authentication method combinations this configuration applies to. Must be an allowedCombinations object that's defined for the authenticationStrengthPolicy. The only possible value for fido2combinationConfigurations is 'fido2'.
     - `[CreatedDateTime <DateTime?>]`: The datetime when this policy was created.
     - `[Description <String>]`: The human-readable description of this policy.
@@ -526,7 +509,7 @@ GRANTCONTROLS `<IMicrosoftGraphConditionalAccessGrantControls1>`: conditionalAcc
   - `[Operator <String>]`: Defines the relationship of the grant controls. Possible values: AND, OR.
   - `[TermsOfUse <String[]>]`: List of terms of use IDs required by the policy.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentitySignInsIdentity>`: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: The unique identifier of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
@@ -563,6 +546,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[IdentityUserFlowAttributeId <String>]`: The unique identifier of identityUserFlowAttribute
   - `[IdentityUserFlowId <String>]`: The unique identifier of identityUserFlow
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
+  - `[InvitationId <String>]`: The unique identifier of invitation
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   - `[MobilityManagementPolicyId <String>]`: The unique identifier of mobilityManagementPolicy
@@ -600,7 +584,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
-SESSIONCONTROLS `<IMicrosoftGraphConditionalAccessSessionControls1>`: conditionalAccessSessionControls
+`SESSIONCONTROLS <IMicrosoftGraphConditionalAccessSessionControls>`: conditionalAccessSessionControls
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ApplicationEnforcedRestrictions <IMicrosoftGraphApplicationEnforcedRestrictionsSessionControl>]`: applicationEnforcedRestrictionsSessionControl
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

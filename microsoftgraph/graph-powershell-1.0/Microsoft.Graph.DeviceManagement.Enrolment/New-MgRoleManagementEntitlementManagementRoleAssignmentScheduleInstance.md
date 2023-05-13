@@ -1,9 +1,9 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Enrolment
+﻿---
+external help file: Microsoft.Graph.Identity.Governance-help.xml
+Module Name: Microsoft.Graph.Identity.Governance
+ms.prod: governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/new-mgrolemanagemententitlementmanagementroleassignmentscheduleinstance
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # New-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance
@@ -13,7 +13,7 @@ Create new navigation property to roleAssignmentScheduleInstances for roleManage
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
 New-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance
  [-ActivatedUsing <IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance>] [-AdditionalProperties <Hashtable>]
@@ -21,11 +21,11 @@ New-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance
  [-DirectoryScope <IMicrosoftGraphDirectoryObject>] [-DirectoryScopeId <String>] [-EndDateTime <DateTime>]
  [-Id <String>] [-MemberType <String>] [-Principal <IMicrosoftGraphDirectoryObject>] [-PrincipalId <String>]
  [-RoleAssignmentOriginId <String>] [-RoleAssignmentScheduleId <String>]
- [-RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition1>] [-RoleDefinitionId <String>]
+ [-RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>] [-RoleDefinitionId <String>]
  [-StartDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
 New-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance
  -BodyParameter <IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance> [-WhatIf] [-Confirm]
@@ -56,7 +56,7 @@ To construct, please use Get-Help -Online and see NOTES section for ACTIVATEDUSI
 
 ```yaml
 Type: IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -71,7 +71,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -87,7 +87,7 @@ To construct, please use Get-Help -Online and see NOTES section for APPSCOPE pro
 
 ```yaml
 Type: IMicrosoftGraphAppScope
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -106,7 +106,7 @@ Use directoryScopeId to limit the scope to particular directory objects, for exa
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -122,7 +122,7 @@ Supports $filter (eq, ne).
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -138,7 +138,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance
-Parameter Sets: Create1
+Parameter Sets: Create
 Aliases:
 
 Required: True
@@ -154,7 +154,7 @@ To construct, please use Get-Help -Online and see NOTES section for DIRECTORYSCO
 
 ```yaml
 Type: IMicrosoftGraphDirectoryObject
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -173,7 +173,7 @@ Use appScopeId to limit the scope to an application only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -188,7 +188,7 @@ The end date of the schedule instance.
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -204,7 +204,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -222,7 +222,7 @@ Supports $filter (eq, ne).
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -238,7 +238,7 @@ To construct, please use Get-Help -Online and see NOTES section for PRINCIPAL pr
 
 ```yaml
 Type: IMicrosoftGraphDirectoryObject
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -253,7 +253,7 @@ Identifier of the principal that has been granted the role assignment or that's 
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -269,7 +269,7 @@ Supports $filter (eq, ne).
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -285,7 +285,7 @@ Supports $filter (eq, ne).
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -300,8 +300,8 @@ unifiedRoleDefinition
 To construct, please use Get-Help -Online and see NOTES section for ROLEDEFINITION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUnifiedRoleDefinition1
-Parameter Sets: CreateExpanded1
+Type: IMicrosoftGraphUnifiedRoleDefinition
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -316,7 +316,7 @@ Identifier of the unifiedRoleDefinition object that is being assigned to the pri
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -331,7 +331,7 @@ When this instance starts.
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -514,5 +514,8 @@ ROLEDEFINITION `<IMicrosoftGraphUnifiedRoleDefinition1>`: unifiedRoleDefinition
   - `[Version <String>]`: Indicates version of the role definition. Read-only when isBuiltIn is true.
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS

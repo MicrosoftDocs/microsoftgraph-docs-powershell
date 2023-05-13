@@ -1,17 +1,15 @@
----
+﻿---
 external help file: Microsoft.Graph.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.PersonalContacts
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.personalcontacts/get-mgusercontact
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontact
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Get-MgUserContact
 
 ## SYNOPSIS
-The user's contacts.
-Read-only.
-Nullable.
+Retrieve the properties and relationships of a contact object.
+There are two scenarios where an app can get a contact in another user's contact folder:
 
 ## SYNTAX
 
@@ -35,31 +33,24 @@ Get-MgUserContact -InputObject <IPersonalContactsIdentity> [-ExpandProperty <Str
 ```
 
 ## DESCRIPTION
-The user's contacts.
-Read-only.
-Nullable.
+Retrieve the properties and relationships of a contact object.
+There are two scenarios where an app can get a contact in another user's contact folder:
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgUserContact Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.PersonalContacts
 # A UPN can also be used as -UserId.
 Get-MgUserContact -UserId $userId -ContactId $contactId
 ```
 
-This example shows how to use the Get-MgUserContact Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Get-MgUserContact Cmdlet
+### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.PersonalContacts
 # A UPN can also be used as -UserId.
 Get-MgUserContact -UserId $userId
 ```
-
-This example shows how to use the Get-MgUserContact Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -141,7 +132,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IPersonalContactsIdentity
@@ -278,13 +269,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
+`INPUTOBJECT <IPersonalContactsIdentity>`: Identity Parameter
   - `[ContactFolderId <String>]`: The unique identifier of contactFolder
   - `[ContactFolderId1 <String>]`: The unique identifier of contactFolder
   - `[ContactId <String>]`: The unique identifier of contact
   - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS

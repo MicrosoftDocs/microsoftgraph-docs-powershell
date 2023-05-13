@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/update-mgdevicemanagementconditionalaccesssetting
@@ -12,14 +12,14 @@ Update the navigation property conditionalAccessSettings in deviceManagement
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### UpdateExpanded (Default)
 ```
 Update-MgDeviceManagementConditionalAccessSetting [-AdditionalProperties <Hashtable>] [-Enabled]
  [-ExcludedGroups <String[]>] [-Id <String>] [-IncludedGroups <String[]>] [-OverrideDefaultRule] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Update1
+### Update
 ```
 Update-MgDeviceManagementConditionalAccessSetting
  -BodyParameter <IMicrosoftGraphOnPremisesConditionalAccessSettings> [-PassThru] [-WhatIf] [-Confirm]
@@ -38,7 +38,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded1
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -54,7 +54,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IMicrosoftGraphOnPremisesConditionalAccessSettings
-Parameter Sets: Update1
+Parameter Sets: Update
 Aliases:
 
 Required: True
@@ -69,7 +69,7 @@ Indicates if on premises conditional access is enabled for this organization
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: UpdateExpanded1
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -85,7 +85,7 @@ All users in these groups will be exempt from the conditional access policy.
 
 ```yaml
 Type: String[]
-Parameter Sets: UpdateExpanded1
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -101,7 +101,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -117,7 +117,7 @@ All users in these groups will be required to have mobile device managed and com
 
 ```yaml
 Type: String[]
-Parameter Sets: UpdateExpanded1
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -132,7 +132,7 @@ Override the default access rule when allowing a device to ensure access is gran
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: UpdateExpanded1
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False

@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mgchatpermissiongrantmembergroup
+﻿---
+external help file: Microsoft.Graph.Beta.Teams-help.xml
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatpermissiongrantmembergroup
 schema: 2.0.0
 ---
 
-# Get-MgChatPermissionGrantMemberGroup
+# Get-MgBetaChatPermissionGrantMemberGroup
 
 ## SYNOPSIS
 Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
@@ -15,26 +15,26 @@ This function is transitive.
 
 ### GetExpanded (Default)
 ```
-Get-MgChatPermissionGrantMemberGroup -ChatId <String> -ResourceSpecificPermissionGrantId <String>
+Get-MgBetaChatPermissionGrantMemberGroup -ChatId <String> -ResourceSpecificPermissionGrantId <String>
  [-AdditionalProperties <Hashtable>] [-SecurityEnabledOnly] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgChatPermissionGrantMemberGroup -ChatId <String> -ResourceSpecificPermissionGrantId <String>
+Get-MgBetaChatPermissionGrantMemberGroup -ChatId <String> -ResourceSpecificPermissionGrantId <String>
  -BodyParameter <IPaths1SfuvzaChatsChatIdPermissiongrantsResourcespecificpermissiongrantIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### GetViaIdentityExpanded
 ```
-Get-MgChatPermissionGrantMemberGroup -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
+Get-MgBetaChatPermissionGrantMemberGroup -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
  [-SecurityEnabledOnly] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgChatPermissionGrantMemberGroup -InputObject <ITeamsIdentity>
+Get-MgBetaChatPermissionGrantMemberGroup -InputObject <ITeamsIdentity>
  -BodyParameter <IPaths1SfuvzaChatsChatIdPermissiongrantsResourcespecificpermissiongrantIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -44,6 +44,20 @@ Return all the group IDs for the groups that the specified user, group, service 
 This function is transitive.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -64,7 +78,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths1SfuvzaChatsChatIdPermissiongrantsResourcespecificpermissiongrantIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema
@@ -95,7 +109,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ITeamsIdentity
@@ -175,8 +189,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1SfuvzaChatsChatIdPermissiongrantsResourcespecificpermissiongrantIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1SfuvzaChatsChatIdPermissiongrantsResourcespecificpermissiongrantIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
 ## OUTPUTS
 
 ### System.String
@@ -189,11 +203,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1SfuvzaChatsChatIdPermissiongrantsResourcespecificpermissiongrantIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1SfuvzaChatsChatIdPermissiongrantsResourcespecificpermissiongrantIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[SecurityEnabledOnly <Boolean?>]`: 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat

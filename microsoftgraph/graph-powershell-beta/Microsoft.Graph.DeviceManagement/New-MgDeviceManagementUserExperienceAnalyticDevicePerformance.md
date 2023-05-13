@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticdeviceperformance
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticdeviceperformance
 schema: 2.0.0
 ---
 
-# New-MgDeviceManagementUserExperienceAnalyticDevicePerformance
+# New-MgBetaDeviceManagementUserExperienceAnalyticDevicePerformance
 
 ## SYNOPSIS
 Create new navigation property to userExperienceAnalyticsDevicePerformance for deviceManagement
@@ -14,7 +14,7 @@ Create new navigation property to userExperienceAnalyticsDevicePerformance for d
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementUserExperienceAnalyticDevicePerformance [-AdditionalProperties <Hashtable>]
+New-MgBetaDeviceManagementUserExperienceAnalyticDevicePerformance [-AdditionalProperties <Hashtable>]
  [-AverageBlueScreens <Double>] [-AverageRestarts <Double>] [-BlueScreenCount <Int32>] [-BootScore <Int32>]
  [-CoreBootTimeInMS <Int32>] [-CoreLoginTimeInMS <Int32>] [-DeviceCount <Int64>] [-DeviceName <String>]
  [-DiskType <DiskType>] [-GroupPolicyBootTimeInMS <Int32>] [-GroupPolicyLoginTimeInMS <Int32>]
@@ -26,7 +26,7 @@ New-MgDeviceManagementUserExperienceAnalyticDevicePerformance [-AdditionalProper
 
 ### Create
 ```
-New-MgDeviceManagementUserExperienceAnalyticDevicePerformance
+New-MgBetaDeviceManagementUserExperienceAnalyticDevicePerformance
  -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDevicePerformance> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
@@ -35,6 +35,20 @@ New-MgDeviceManagementUserExperienceAnalyticDevicePerformance
 Create new navigation property to userExperienceAnalyticsDevicePerformance for deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -103,7 +117,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 The user experience analytics device performance entity contains device boot performance details.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserExperienceAnalyticsDevicePerformance
@@ -253,7 +267,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -427,10 +441,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDevicePerformance
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDevicePerformance
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDevicePerformance
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDevicePerformance
 ## NOTES
 
 ALIASES
@@ -440,9 +454,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsDevicePerformance>`: The user experience analytics device performance entity contains device boot performance details.
+`BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsDevicePerformance>`: The user experience analytics device performance entity contains device boot performance details.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AverageBlueScreens <Double?>]`: Average (mean) number of Blue Screens per device in the last 30 days. Valid values 0 to 9999999
   - `[AverageRestarts <Double?>]`: Average (mean) number of Restarts per device in the last 30 days. Valid values 0 to 9999999
   - `[BlueScreenCount <Int32?>]`: Number of Blue Screens in the last 30 days. Valid values 0 to 9999999

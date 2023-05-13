@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Applications-help.xml
-Module Name: Microsoft.Graph.Applications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgonpremisepublishingprofileagentgroupbyref
+﻿---
+external help file: Microsoft.Graph.Beta.Applications-help.xml
+Module Name: Microsoft.Graph.Beta.Applications
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofileagentgroupbyref
 schema: 2.0.0
 ---
 
-# Get-MgOnPremisePublishingProfileAgentGroupByRef
+# Get-MgBetaOnPremisePublishingProfileAgentGroupByRef
 
 ## SYNOPSIS
 List of onPremisesAgentGroups that an onPremisesAgent is assigned to.
@@ -16,14 +16,14 @@ Nullable.
 
 ### List1 (Default)
 ```
-Get-MgOnPremisePublishingProfileAgentGroupByRef -OnPremisesAgentId <String>
+Get-MgBetaOnPremisePublishingProfileAgentGroupByRef -OnPremisesAgentId <String>
  -OnPremisesPublishingProfileId <String> [-Filter <String>] [-Search <String>] [-Skip <Int32>]
  [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### List
 ```
-Get-MgOnPremisePublishingProfileAgentGroupByRef -OnPremisesAgentId <String>
+Get-MgBetaOnPremisePublishingProfileAgentGroupByRef -OnPremisesAgentId <String>
  -OnPremisesPublishingProfileId <String> -OnPremisesAgentGroupId <String> [-Filter <String>] [-Search <String>]
  [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
  [<CommonParameters>]
@@ -35,6 +35,20 @@ Read-only.
 Nullable.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 

@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Users.Actions-help.xml
-Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/move-mgusermanageddevicetoou
+﻿---
+external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.Users.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/move-mgbetausermanageddevicetoou
 schema: 2.0.0
 ---
 
-# Move-MgUserManagedDeviceToOu
+# Move-MgBetaUserManagedDeviceToOu
 
 ## SYNOPSIS
 Invoke action moveDevicesToOU
@@ -14,27 +14,27 @@ Invoke action moveDevicesToOU
 
 ### MoveExpanded (Default)
 ```
-Move-MgUserManagedDeviceToOu -UserId <String> [-AdditionalProperties <Hashtable>] [-DeviceIds <String[]>]
+Move-MgBetaUserManagedDeviceToOu -UserId <String> [-AdditionalProperties <Hashtable>] [-DeviceIds <String[]>]
  [-OrganizationalUnitPath <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Move
 ```
-Move-MgUserManagedDeviceToOu -UserId <String>
+Move-MgBetaUserManagedDeviceToOu -UserId <String>
  -BodyParameter <IPathsBb5QezUsersUserIdManageddevicesMicrosoftGraphMovedevicestoouPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### MoveViaIdentityExpanded
 ```
-Move-MgUserManagedDeviceToOu -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
+Move-MgBetaUserManagedDeviceToOu -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
  [-DeviceIds <String[]>] [-OrganizationalUnitPath <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### MoveViaIdentity
 ```
-Move-MgUserManagedDeviceToOu -InputObject <IUsersActionsIdentity>
+Move-MgBetaUserManagedDeviceToOu -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPathsBb5QezUsersUserIdManageddevicesMicrosoftGraphMovedevicestoouPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -43,6 +43,20 @@ Move-MgUserManagedDeviceToOu -InputObject <IUsersActionsIdentity>
 Invoke action moveDevicesToOU
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -63,7 +77,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPathsBb5QezUsersUserIdManageddevicesMicrosoftGraphMovedevicestoouPostRequestbodyContentApplicationJsonSchema
@@ -94,7 +108,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersActionsIdentity
@@ -189,8 +203,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsBb5QezUsersUserIdManageddevicesMicrosoftGraphMovedevicestoouPostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsBb5QezUsersUserIdManageddevicesMicrosoftGraphMovedevicestoouPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
 ## OUTPUTS
 
 ### System.Boolean
@@ -203,12 +217,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsBb5QezUsersUserIdManageddevicesMicrosoftGraphMovedevicestoouPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsBb5QezUsersUserIdManageddevicesMicrosoftGraphMovedevicestoouPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeviceIds <String[]>]`: 
   - `[OrganizationalUnitPath <String>]`: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
@@ -242,7 +256,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription

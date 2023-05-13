@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Administration
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementgrouppolicymigrationreportgrouppolicysettingmapping
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementgrouppolicymigrationreportgrouppolicysettingmapping
 schema: 2.0.0
 ---
 
-# New-MgDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping
+# New-MgBetaDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping
 
 ## SYNOPSIS
 Create new navigation property to groupPolicySettingMappings for deviceManagement
@@ -14,7 +14,7 @@ Create new navigation property to groupPolicySettingMappings for deviceManagemen
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping
+New-MgBetaDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping
  -GroupPolicyMigrationReportId <String> [-AdditionalProperties <Hashtable>] [-AdmxSettingDefinitionId <String>]
  [-ChildIdList <String[]>] [-Id <String>] [-IntuneSettingDefinitionId <String>]
  [-IntuneSettingUriList <String[]>] [-IsMdmSupported] [-MdmCspName <String>] [-MdmMinimumOSVersion <Int32>]
@@ -27,14 +27,14 @@ New-MgDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping
 
 ### Create
 ```
-New-MgDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping
+New-MgBetaDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping
  -GroupPolicyMigrationReportId <String> -BodyParameter <IMicrosoftGraphGroupPolicySettingMapping> [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping
+New-MgBetaDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping
  -InputObject <IDeviceManagementAdministrationIdentity> [-AdditionalProperties <Hashtable>]
  [-AdmxSettingDefinitionId <String>] [-ChildIdList <String[]>] [-Id <String>]
  [-IntuneSettingDefinitionId <String>] [-IntuneSettingUriList <String[]>] [-IsMdmSupported]
@@ -48,7 +48,7 @@ New-MgDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping
 
 ### CreateViaIdentity
 ```
-New-MgDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping
+New-MgBetaDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping
  -InputObject <IDeviceManagementAdministrationIdentity>
  -BodyParameter <IMicrosoftGraphGroupPolicySettingMapping> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -57,6 +57,20 @@ New-MgDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping
 Create new navigation property to groupPolicySettingMappings for deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -92,7 +106,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 The Group Policy setting to MDM/Intune mapping.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphGroupPolicySettingMapping
@@ -137,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -154,7 +168,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementAdministrationIdentity
@@ -474,11 +488,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupPolicySettingMapping
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementAdministrationIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicySettingMapping
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupPolicySettingMapping
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicySettingMapping
 ## NOTES
 
 ALIASES
@@ -488,9 +502,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphGroupPolicySettingMapping>`: The Group Policy setting to MDM/Intune mapping.
+`BODYPARAMETER <IMicrosoftGraphGroupPolicySettingMapping>`: The Group Policy setting to MDM/Intune mapping.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AdmxSettingDefinitionId <String>]`: Admx Group Policy Id
   - `[ChildIdList <String[]>]`: List of Child Ids of the group policy setting.
   - `[IntuneSettingDefinitionId <String>]`: The Intune Setting Definition Id
@@ -512,7 +526,7 @@ BODYPARAMETER `<IMicrosoftGraphGroupPolicySettingMapping>`: The Group Policy set
   - `[SettingValueDisplayUnits <String>]`: The display units of this group policy setting value
   - `[SettingValueType <String>]`: The value type of this group policy setting.
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[AuditEventId <String>]`: The unique identifier of auditEvent
   - `[CartToClassAssociationId <String>]`: The unique identifier of cartToClassAssociation
   - `[CloudPcAuditEventId <String>]`: The unique identifier of cloudPcAuditEvent

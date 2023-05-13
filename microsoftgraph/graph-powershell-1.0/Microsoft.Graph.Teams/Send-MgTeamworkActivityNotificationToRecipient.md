@@ -1,7 +1,7 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/send-mgteamworkactivitynotificationtorecipient
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/send-mgteamworkactivitynotificationtorecipient
 schema: 2.0.0
 ---
 
@@ -32,6 +32,20 @@ Send-MgTeamworkActivityNotificationToRecipient
 Invoke action sendActivityNotificationToRecipients
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -67,7 +81,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths1T8Q21HTeamworkMicrosoftGraphSendactivitynotificationtorecipientsPostRequestbodyContentApplicationJsonSchema
@@ -113,7 +127,7 @@ Accept wildcard characters: False
 
 ### -PreviewText
 itemBody
-To construct, please use Get-Help -Online and see NOTES section for PREVIEWTEXT properties and create a hash table.
+To construct, see NOTES section for PREVIEWTEXT properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphItemBody
@@ -159,7 +173,7 @@ Accept wildcard characters: False
 
 ### -TemplateParameters
 .
-To construct, please use Get-Help -Online and see NOTES section for TEMPLATEPARAMETERS properties and create a hash table.
+To construct, see NOTES section for TEMPLATEPARAMETERS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphKeyValuePair[]
@@ -175,7 +189,7 @@ Accept wildcard characters: False
 
 ### -Topic
 teamworkActivityTopic
-To construct, please use Get-Help -Online and see NOTES section for TOPIC properties and create a hash table.
+To construct, see NOTES section for TOPIC properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphTeamworkActivityTopic
@@ -238,7 +252,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1T8Q21HTeamworkMicrosoftGraphSendactivitynotificationtorecipientsPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1T8Q21HTeamworkMicrosoftGraphSendactivitynotificationtorecipientsPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ActivityType <String>]`: 
   - `[ChainId <Int64?>]`: 
@@ -257,16 +271,16 @@ BODYPARAMETER `<IPaths1T8Q21HTeamworkMicrosoftGraphSendactivitynotificationtorec
     - `[Value <String>]`: The topic value. If the value of the source property is entityUrl, this must be a Microsoft Graph URL. If the vaule is text, this must be a plain text value.
     - `[WebUrl <String>]`: The link the user clicks when they select the notification. Optional when source is entityUrl; required when source is text.
 
-PREVIEWTEXT `<IMicrosoftGraphItemBody>`: itemBody
+`PREVIEWTEXT <IMicrosoftGraphItemBody>`: itemBody
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Content <String>]`: The content of the item.
   - `[ContentType <String>]`: bodyType
 
-TEMPLATEPARAMETERS <IMicrosoftGraphKeyValuePair\[]>: .
+`TEMPLATEPARAMETERS <IMicrosoftGraphKeyValuePair[]>`: .
   - `[Name <String>]`: Name for this key-value pair
   - `[Value <String>]`: Value for this key-value pair
 
-TOPIC `<IMicrosoftGraphTeamworkActivityTopic>`: teamworkActivityTopic
+`TOPIC <IMicrosoftGraphTeamworkActivityTopic>`: teamworkActivityTopic
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Source <String>]`: teamworkActivityTopicSource
   - `[Value <String>]`: The topic value. If the value of the source property is entityUrl, this must be a Microsoft Graph URL. If the vaule is text, this must be a plain text value.

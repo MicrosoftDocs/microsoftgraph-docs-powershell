@@ -1,20 +1,19 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentcategory
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentcategory
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Get-MgEducationClassAssignmentCategory
 
 ## SYNOPSIS
-All categories associated with this class.
-Nullable.
+Retrieve an educationCategory object.
+Only teachers, students, and applications with application permissions can perform this operation.
 
 ## SYNTAX
 
-### List1 (Default)
+### List (Default)
 ```
 Get-MgEducationClassAssignmentCategory -EducationClassId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
@@ -27,7 +26,7 @@ Get-MgEducationClassAssignmentCategory -EducationCategoryId <String> -EducationC
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
-### List2
+### List1
 ```
 Get-MgEducationClassAssignmentCategory -EducationClassId <String> -EducationAssignmentId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
@@ -41,28 +40,22 @@ Get-MgEducationClassAssignmentCategory -InputObject <IEducationIdentity> [-Expan
 ```
 
 ## DESCRIPTION
-All categories associated with this class.
-Nullable.
+Retrieve an educationCategory object.
+Only teachers, students, and applications with application permissions can perform this operation.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgEducationClassAssignmentCategory Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Education
 Get-MgEducationClassAssignmentCategory -EducationClassId $educationClassId
 ```
 
-This example shows how to use the Get-MgEducationClassAssignmentCategory Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Get-MgEducationClassAssignmentCategory Cmdlet
+### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Education
 Get-MgEducationClassAssignmentCategory -EducationClassId $educationClassId -EducationCategoryId $educationCategoryId
 ```
-
-This example shows how to use the Get-MgEducationClassAssignmentCategory Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -71,7 +64,7 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: List1, List2
+Parameter Sets: List, List1
 Aliases:
 
 Required: False
@@ -87,7 +80,7 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: List1, List2
+Parameter Sets: List, List1
 Aliases: CV
 
 Required: False
@@ -102,7 +95,7 @@ The unique identifier of educationAssignment
 
 ```yaml
 Type: String
-Parameter Sets: List2
+Parameter Sets: List1
 Aliases:
 
 Required: True
@@ -132,7 +125,7 @@ The unique identifier of educationClass
 
 ```yaml
 Type: String
-Parameter Sets: List1, Get, List2
+Parameter Sets: List, Get, List1
 Aliases:
 
 Required: True
@@ -162,7 +155,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List1, List2
+Parameter Sets: List, List1
 Aliases:
 
 Required: False
@@ -174,7 +167,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IEducationIdentity
@@ -193,7 +186,7 @@ Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: List1, List2
+Parameter Sets: List, List1
 Aliases:
 
 Required: False
@@ -223,7 +216,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: List1, List2
+Parameter Sets: List, List1
 Aliases:
 
 Required: False
@@ -238,7 +231,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List1, List2
+Parameter Sets: List, List1
 Aliases: OrderBy
 
 Required: False
@@ -253,7 +246,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List1, List2
+Parameter Sets: List, List1
 Aliases: Limit
 
 Required: False
@@ -268,7 +261,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List1, List2
+Parameter Sets: List, List1
 Aliases:
 
 Required: False
@@ -296,7 +289,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+`INPUTOBJECT <IEducationIdentity>`: Identity Parameter
   - `[EducationAssignmentId <String>]`: The unique identifier of educationAssignment
   - `[EducationAssignmentResourceId <String>]`: The unique identifier of educationAssignmentResource
   - `[EducationCategoryId <String>]`: The unique identifier of educationCategory
@@ -306,8 +299,6 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationSchoolId <String>]`: The unique identifier of educationSchool
   - `[EducationSubmissionId <String>]`: The unique identifier of educationSubmission
   - `[EducationSubmissionResourceId <String>]`: The unique identifier of educationSubmissionResource
-  - `[EducationSynchronizationErrorId <String>]`: The unique identifier of educationSynchronizationError
-  - `[EducationSynchronizationProfileId <String>]`: The unique identifier of educationSynchronizationProfile
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS

@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmanageddeviceassignmentfilterevaluationstatusdetail
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmanageddeviceassignmentfilterevaluationstatusdetail
 schema: 2.0.0
 ---
 
-# New-MgDeviceManagementManagedDeviceAssignmentFilterEvaluationStatusDetail
+# New-MgBetaDeviceManagementManagedDeviceAssignmentFilterEvaluationStatusDetail
 
 ## SYNOPSIS
 Create new navigation property to assignmentFilterEvaluationStatusDetails for deviceManagement
@@ -14,28 +14,28 @@ Create new navigation property to assignmentFilterEvaluationStatusDetails for de
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementManagedDeviceAssignmentFilterEvaluationStatusDetail -ManagedDeviceId <String>
+New-MgBetaDeviceManagementManagedDeviceAssignmentFilterEvaluationStatusDetail -ManagedDeviceId <String>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-PayloadId <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceManagementManagedDeviceAssignmentFilterEvaluationStatusDetail -ManagedDeviceId <String>
+New-MgBetaDeviceManagementManagedDeviceAssignmentFilterEvaluationStatusDetail -ManagedDeviceId <String>
  -BodyParameter <IMicrosoftGraphAssignmentFilterEvaluationStatusDetails> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgDeviceManagementManagedDeviceAssignmentFilterEvaluationStatusDetail
+New-MgBetaDeviceManagementManagedDeviceAssignmentFilterEvaluationStatusDetail
  -InputObject <IDeviceManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-PayloadId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgDeviceManagementManagedDeviceAssignmentFilterEvaluationStatusDetail
+New-MgBetaDeviceManagementManagedDeviceAssignmentFilterEvaluationStatusDetail
  -InputObject <IDeviceManagementIdentity>
  -BodyParameter <IMicrosoftGraphAssignmentFilterEvaluationStatusDetails> [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -45,6 +45,20 @@ New-MgDeviceManagementManagedDeviceAssignmentFilterEvaluationStatusDetail
 Create new navigation property to assignmentFilterEvaluationStatusDetails for deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -65,7 +79,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 A class containing information about the payloads on which filter has been applied.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAssignmentFilterEvaluationStatusDetails
@@ -80,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -97,7 +111,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementIdentity
@@ -177,11 +191,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAssignmentFilterEvaluationStatusDetails
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAssignmentFilterEvaluationStatusDetails
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAssignmentFilterEvaluationStatusDetails
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAssignmentFilterEvaluationStatusDetails
 ## NOTES
 
 ALIASES
@@ -191,12 +205,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphAssignmentFilterEvaluationStatusDetails>`: A class containing information about the payloads on which filter has been applied.
+`BODYPARAMETER <IMicrosoftGraphAssignmentFilterEvaluationStatusDetails>`: A class containing information about the payloads on which filter has been applied.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[PayloadId <String>]`: PayloadId on which filter has been applied.
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementIdentity>`: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: The unique identifier of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: The unique identifier of androidManagedStoreAppConfigurationSchema
@@ -328,6 +342,8 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionAppLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionAppLearningSummary
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
+  - `[WindowsQualityUpdateProfileAssignmentId <String>]`: The unique identifier of windowsQualityUpdateProfileAssignment
+  - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
 ## RELATED LINKS
 

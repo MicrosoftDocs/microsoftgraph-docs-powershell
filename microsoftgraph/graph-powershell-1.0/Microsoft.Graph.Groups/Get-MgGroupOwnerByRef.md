@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/get-mggroupownerbyref
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupownerbyref
 schema: 2.0.0
-ms.prod: groups
 ---
 
 # Get-MgGroupOwnerByRef
@@ -36,16 +35,12 @@ For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayNa
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Groups
-
-Get-MgGroupOwner -GroupId $groupId
 ```
 
-This example shows how to use the Get-MgGroupOwnerByRef Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Get-MgGroupOwner -GroupId $groupId
 
 ## PARAMETERS
 

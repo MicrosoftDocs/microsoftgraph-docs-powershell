@@ -1,12 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomain
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadomain
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
-# Get-MgDomain
+# Get-MgBetaDomain
 
 ## SYNOPSIS
 Retrieve the properties and relationships of domain object.
@@ -15,19 +14,19 @@ Retrieve the properties and relationships of domain object.
 
 ### List (Default)
 ```
-Get-MgDomain [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>]
+Get-MgBetaDomain [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>]
  [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
  [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgDomain -DomainId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaDomain -DomainId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgDomain -InputObject <IIdentityDirectoryManagementIdentity> [-ExpandProperty <String[]>]
+Get-MgBetaDomain -InputObject <IIdentityDirectoryManagementIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
@@ -36,9 +35,10 @@ Retrieve the properties and relationships of domain object.
 
 ## EXAMPLES
 
-### Example 1: Get a list of domaim objects
+### EXAMPLE 1
 ```powershell
-Get-MgDomain | Format-List
+Get-MgBetaDomain | Format-List
+```
 
 AuthenticationType               : Managed
 AvailabilityStatus               :
@@ -58,9 +58,6 @@ State                            : Microsoft.Graph.PowerShell.Models.MicrosoftGr
 SupportedServices                : {Email, OfficeCommunicationsOnline}
 VerificationDnsRecords           :
 AdditionalProperties             : {[@odata.context, https://graph.microsoft.com/v1.0/$metadata#domains/$entity]}
-```
-
-This example retrieves a list of the domain objects.
 
 ## PARAMETERS
 
@@ -142,7 +139,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IIdentityDirectoryManagementIdentity
@@ -251,10 +248,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDomain
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDomain
 ## NOTES
 
 ALIASES
@@ -264,7 +261,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet

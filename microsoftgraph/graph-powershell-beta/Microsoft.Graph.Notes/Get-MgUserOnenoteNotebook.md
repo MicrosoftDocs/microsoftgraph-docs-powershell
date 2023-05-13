@@ -1,75 +1,61 @@
----
-external help file: Microsoft.Graph.Notes-help.xml
-Module Name: Microsoft.Graph.Notes
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.notes/get-mguseronenotenotebook
+﻿---
+external help file: Microsoft.Graph.Beta.Notes-help.xml
+Module Name: Microsoft.Graph.Beta.Notes
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetauseronenotenotebook
 schema: 2.0.0
-ms.prod: onenote
 ---
 
-# Get-MgUserOnenoteNotebook
+# Get-MgBetaUserOnenoteNotebook
 
 ## SYNOPSIS
-The collection of OneNote notebooks that are owned by the user or group.
-Read-only.
-Nullable.
+Retrieve the properties and relationships of a notebook object.
 
 ## SYNTAX
 
-### List1 (Default)
+### List (Default)
 ```
-Get-MgUserOnenoteNotebook -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaUserOnenoteNotebook -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
  [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### Get1
+### Get
 ```
-Get-MgUserOnenoteNotebook -NotebookId <String> -UserId <String> [-ExpandProperty <String[]>]
+Get-MgBetaUserOnenoteNotebook -NotebookId <String> -UserId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### GetViaIdentity
 ```
-Get-MgUserOnenoteNotebook -InputObject <INotesIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaUserOnenoteNotebook -InputObject <INotesIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The collection of OneNote notebooks that are owned by the user or group.
-Read-only.
-Nullable.
+Retrieve the properties and relationships of a notebook object.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgUserOnenoteNotebook Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Notes
+Import-Module Microsoft.Graph.Beta.Notes
 # A UPN can also be used as -UserId.
-Get-MgUserOnenoteNotebook -UserId $userId -NotebookId $notebookId
+Get-MgBetaUserOnenoteNotebook -UserId $userId -NotebookId $notebookId
 ```
 
-This example shows how to use the Get-MgUserOnenoteNotebook Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Get-MgUserOnenoteNotebook Cmdlet
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Notes
+Import-Module Microsoft.Graph.Beta.Notes
 # A UPN can also be used as -UserId.
-Get-MgUserOnenoteNotebook -UserId $userId
+Get-MgBetaUserOnenoteNotebook -UserId $userId
 ```
 
-This example shows how to use the Get-MgUserOnenoteNotebook Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Using the Get-MgUserOnenoteNotebook Cmdlet
+### EXAMPLE 3
 ```powershell
-Import-Module Microsoft.Graph.Notes
+Import-Module Microsoft.Graph.Beta.Notes
 # A UPN can also be used as -UserId.
-Get-MgUserOnenoteNotebook -UserId $userId -NotebookId $notebookId
+Get-MgBetaUserOnenoteNotebook -UserId $userId -NotebookId $notebookId
 ```
-
-This example shows how to use the Get-MgUserOnenoteNotebook Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -78,7 +64,7 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -94,7 +80,7 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: List
 Aliases: CV
 
 Required: False
@@ -124,7 +110,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -136,11 +122,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: INotesIdentity
-Parameter Sets: GetViaIdentity1
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
@@ -155,7 +141,7 @@ The unique identifier of notebook
 
 ```yaml
 Type: String
-Parameter Sets: Get1
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -170,7 +156,7 @@ Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -200,7 +186,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -215,7 +201,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List1
+Parameter Sets: List
 Aliases: OrderBy
 
 Required: False
@@ -230,7 +216,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Parameter Sets: List
 Aliases: Limit
 
 Required: False
@@ -245,7 +231,7 @@ The unique identifier of user
 
 ```yaml
 Type: String
-Parameter Sets: List1, Get1
+Parameter Sets: List, Get
 Aliases:
 
 Required: True
@@ -260,7 +246,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -275,10 +261,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.INotesIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.INotesIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphNotebook1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphNotebook
 ## NOTES
 
 ALIASES
@@ -288,7 +274,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<INotesIdentity>`: Identity Parameter
+`INPUTOBJECT <INotesIdentity>`: Identity Parameter
   - `[GroupId <String>]`: The unique identifier of group
   - `[NotebookId <String>]`: The unique identifier of notebook
   - `[OnenoteOperationId <String>]`: The unique identifier of onenoteOperation

@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Reports-help.xml
-Module Name: Microsoft.Graph.Reports
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/confirm-mgauditlogsignincompromised
+﻿---
+external help file: Microsoft.Graph.Beta.Reports-help.xml
+Module Name: Microsoft.Graph.Beta.Reports
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/confirm-mgbetaauditlogsignincompromised
 schema: 2.0.0
 ---
 
-# Confirm-MgAuditLogSignInCompromised
+# Confirm-MgBetaAuditLogSignInCompromised
 
 ## SYNOPSIS
 Allow admins to mark an event in the Azure AD sign in logs as risky.
@@ -17,13 +17,13 @@ For details about investigating Identity Protection risks, see How to investigat
 
 ### ConfirmExpanded (Default)
 ```
-Confirm-MgAuditLogSignInCompromised [-AdditionalProperties <Hashtable>] [-RequestIds <String[]>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Confirm-MgBetaAuditLogSignInCompromised [-AdditionalProperties <Hashtable>] [-RequestIds <String[]>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Confirm
 ```
-Confirm-MgAuditLogSignInCompromised
+Confirm-MgBetaAuditLogSignInCompromised
  -BodyParameter <IPathsKfhb9KAuditlogsSigninsMicrosoftGraphConfirmcompromisedPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -36,9 +36,9 @@ For details about investigating Identity Protection risks, see How to investigat
 
 ## EXAMPLES
 
-### Example 1: Using the Confirm-MgAuditLogSignInCompromised Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Reports
+Import-Module Microsoft.Graph.Beta.Reports
 $params = @{
 	RequestIds = @(
 		"f01c6af6-6683-4a37-a945-0a925501eede"
@@ -46,11 +46,8 @@ $params = @{
 		"f09c8f14-8d8e-42cf-8a7e-732b0594e79b"
 	)
 }
-Confirm-MgAuditLogSignInCompromised -BodyParameter $params
+Confirm-MgBetaAuditLogSignInCompromised -BodyParameter $params
 ```
-
-This example shows how to use the Confirm-MgAuditLogSignInCompromised Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -71,7 +68,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPathsKfhb9KAuditlogsSigninsMicrosoftGraphConfirmcompromisedPostRequestbodyContentApplicationJsonSchema
@@ -151,7 +148,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsKfhb9KAuditlogsSigninsMicrosoftGraphConfirmcompromisedPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsKfhb9KAuditlogsSigninsMicrosoftGraphConfirmcompromisedPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### System.Boolean
@@ -164,7 +161,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsKfhb9KAuditlogsSigninsMicrosoftGraphConfirmcompromisedPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsKfhb9KAuditlogsSigninsMicrosoftGraphConfirmcompromisedPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[RequestIds <String[]>]`: 
 

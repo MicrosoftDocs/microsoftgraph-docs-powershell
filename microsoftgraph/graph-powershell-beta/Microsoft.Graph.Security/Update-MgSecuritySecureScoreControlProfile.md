@@ -1,73 +1,66 @@
----
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecuritysecurescorecontrolprofile
+﻿---
+external help file: Microsoft.Graph.Beta.Security-help.xml
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritysecurescorecontrolprofile
 schema: 2.0.0
 ---
 
-# Update-MgSecuritySecureScoreControlProfile
+# Update-MgBetaSecuritySecureScoreControlProfile
 
 ## SYNOPSIS
-Update the navigation property secureScoreControlProfiles in security
+Update an editable **secureScoreControlProfiles** property within any integrated solution to change various properties, such as **assignedTo** or **tenantNote**.
 
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
-Update-MgSecuritySecureScoreControlProfile -SecureScoreControlProfileId <String> [-ActionType <String>]
+Update-MgBetaSecuritySecureScoreControlProfile -SecureScoreControlProfileId <String> [-ActionType <String>]
  [-ActionUrl <String>] [-AdditionalProperties <Hashtable>] [-AzureTenantId <String>]
  [-ComplianceInformation <IMicrosoftGraphComplianceInformation[]>] [-ControlCategory <String>]
  [-ControlStateUpdates <IMicrosoftGraphSecureScoreControlStateUpdate[]>] [-Deprecated] [-Id <String>]
  [-ImplementationCost <String>] [-LastModifiedDateTime <DateTime>] [-MaxScore <Double>] [-Rank <Int32>]
  [-Remediation <String>] [-RemediationImpact <String>] [-Service <String>] [-Threats <String[]>]
  [-Tier <String>] [-Title <String>] [-UserImpact <String>]
- [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgSecuritySecureScoreControlProfile -SecureScoreControlProfileId <String>
- -BodyParameter <IMicrosoftGraphSecureScoreControlProfile> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaSecuritySecureScoreControlProfile -SecureScoreControlProfileId <String>
+ -BodyParameter <IMicrosoftGraphSecureScoreControlProfile> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgSecuritySecureScoreControlProfile -InputObject <ISecurityIdentity> [-ActionType <String>]
+Update-MgBetaSecuritySecureScoreControlProfile -InputObject <ISecurityIdentity> [-ActionType <String>]
  [-ActionUrl <String>] [-AdditionalProperties <Hashtable>] [-AzureTenantId <String>]
  [-ComplianceInformation <IMicrosoftGraphComplianceInformation[]>] [-ControlCategory <String>]
  [-ControlStateUpdates <IMicrosoftGraphSecureScoreControlStateUpdate[]>] [-Deprecated] [-Id <String>]
  [-ImplementationCost <String>] [-LastModifiedDateTime <DateTime>] [-MaxScore <Double>] [-Rank <Int32>]
  [-Remediation <String>] [-RemediationImpact <String>] [-Service <String>] [-Threats <String[]>]
  [-Tier <String>] [-Title <String>] [-UserImpact <String>]
- [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgSecuritySecureScoreControlProfile -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecureScoreControlProfile> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaSecuritySecureScoreControlProfile -InputObject <ISecurityIdentity>
+ -BodyParameter <IMicrosoftGraphSecureScoreControlProfile> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property secureScoreControlProfiles in security
+Update an editable **secureScoreControlProfiles** property within any integrated solution to change various properties, such as **assignedTo** or **tenantNote**.
 
 ## EXAMPLES
 
-### Example 1: Using the Update-MgSecuritySecureScoreControlProfile Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Security
+Import-Module Microsoft.Graph.Beta.Security
 $params = @{
 	ControlStateUpdates = "controlStateUpdates-value"
 }
-Update-MgSecuritySecureScoreControlProfile -SecureScoreControlProfileId $secureScoreControlProfileId -BodyParameter $params
+Update-MgBetaSecuritySecureScoreControlProfile -SecureScoreControlProfileId $secureScoreControlProfileId -BodyParameter $params
 ```
-
-This example shows how to use the Update-MgSecuritySecureScoreControlProfile Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -133,7 +126,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 secureScoreControlProfile
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSecureScoreControlProfile
@@ -149,7 +142,7 @@ Accept wildcard characters: False
 
 ### -ComplianceInformation
 The collection of compliance information associated with secure score control
-To construct, please use Get-Help -Online and see NOTES section for COMPLIANCEINFORMATION properties and create a hash table.
+To construct, see NOTES section for COMPLIANCEINFORMATION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphComplianceInformation[]
@@ -164,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -ControlCategory
-Control action category (Identity, Data, Device, Apps, Infrastructure).
+Control action category (Account, Data, Device, Apps, Infrastructure).
 
 ```yaml
 Type: String
@@ -179,8 +172,8 @@ Accept wildcard characters: False
 ```
 
 ### -ControlStateUpdates
-Flag to indicate where the tenant has marked a control (ignored, thirdParty, reviewed) (supports update).
-To construct, please use Get-Help -Online and see NOTES section for CONTROLSTATEUPDATES properties and create a hash table.
+Flag to indicate where the tenant has marked a control (ignore, thirdParty, reviewed) (supports update).
+To construct, see NOTES section for CONTROLSTATEUPDATES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSecureScoreControlStateUpdate[]
@@ -210,7 +203,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -242,7 +235,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ISecurityIdentity
@@ -257,8 +250,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastModifiedDateTime
-Time at which the control profile entity was last modified.
-The Timestamp type represents date and time
+.
 
 ```yaml
 Type: DateTime
@@ -273,26 +265,11 @@ Accept wildcard characters: False
 ```
 
 ### -MaxScore
-max attainable score for the control.
+Current obtained max score on specified date.
 
 ```yaml
 Type: Double
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -378,7 +355,7 @@ Accept wildcard characters: False
 ```
 
 ### -Threats
-List of threats the control mitigates (accountBreach,dataDeletion,dataExfiltration,dataSpillage,
+List of threats the control mitigates (accountBreach,dataDeletion,dataExfiltration,dataSpillage,elevationOfPrivilege,maliciousInsider,passwordCracking,phishingOrWhaling,spoofing).
 
 ```yaml
 Type: String[]
@@ -393,7 +370,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tier
-.
+Control tier (Core, Defense in Depth, Advanced.)
 
 ```yaml
 Type: String
@@ -408,7 +385,7 @@ Accept wildcard characters: False
 ```
 
 ### -Title
-.
+Title of the control.
 
 ```yaml
 Type: String
@@ -423,7 +400,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserImpact
-.
+User impact of implementing control (low, moderate, high).
 
 ```yaml
 Type: String
@@ -439,7 +416,7 @@ Accept wildcard characters: False
 
 ### -VendorInformation
 securityVendorInformation
-To construct, please use Get-Help -Online and see NOTES section for VENDORINFORMATION properties and create a hash table.
+To construct, see NOTES section for VENDORINFORMATION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSecurityVendorInformation
@@ -489,11 +466,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecureScoreControlProfile
-### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecureScoreControlProfile
+### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecureScoreControlProfile
 ## NOTES
 
 ALIASES
@@ -503,36 +480,36 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSecureScoreControlProfile>`: secureScoreControlProfile
+`BODYPARAMETER <IMicrosoftGraphSecureScoreControlProfile>`: secureScoreControlProfile
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ActionType <String>]`: Control action type (Config, Review, Behavior).
   - `[ActionUrl <String>]`: URL to where the control can be actioned.
   - `[AzureTenantId <String>]`: GUID string for tenant ID.
   - `[ComplianceInformation <IMicrosoftGraphComplianceInformation[]>]`: The collection of compliance information associated with secure score control
-    - `[CertificationControls <IMicrosoftGraphCertificationControl[]>]`: Collection of the certification controls associated with certification
-      - `[Name <String>]`: Certification control name
-      - `[Url <String>]`: URL for the Microsoft Service Trust Portal
-    - `[CertificationName <String>]`: Compliance certification name (for example, ISO 27018:2014, GDPR, FedRAMP, NIST 800-171)
-  - `[ControlCategory <String>]`: Control action category (Identity, Data, Device, Apps, Infrastructure).
-  - `[ControlStateUpdates <IMicrosoftGraphSecureScoreControlStateUpdate[]>]`: Flag to indicate where the tenant has marked a control (ignored, thirdParty, reviewed) (supports update).
-    - `[AssignedTo <String>]`: Assigns the control to the user who will take the action.
-    - `[Comment <String>]`: Provides optional comment about the control.
-    - `[State <String>]`: State of the control, which can be modified via a PATCH command (for example, ignored, thirdParty).
-    - `[UpdatedBy <String>]`: ID of the user who updated tenant state.
-    - `[UpdatedDateTime <DateTime?>]`: Time at which the control state was updated.
+    - `[CertificationControls <IMicrosoftGraphCertificationControl[]>]`: 
+      - `[Name <String>]`: 
+      - `[Url <String>]`: 
+    - `[CertificationName <String>]`: 
+  - `[ControlCategory <String>]`: Control action category (Account, Data, Device, Apps, Infrastructure).
+  - `[ControlStateUpdates <IMicrosoftGraphSecureScoreControlStateUpdate[]>]`: Flag to indicate where the tenant has marked a control (ignore, thirdParty, reviewed) (supports update).
+    - `[AssignedTo <String>]`: 
+    - `[Comment <String>]`: 
+    - `[State <String>]`: 
+    - `[UpdatedBy <String>]`: 
+    - `[UpdatedDateTime <DateTime?>]`: 
   - `[Deprecated <Boolean?>]`: Flag to indicate if a control is depreciated.
   - `[ImplementationCost <String>]`: Resource cost of implemmentating control (low, moderate, high).
-  - `[LastModifiedDateTime <DateTime?>]`: Time at which the control profile entity was last modified. The Timestamp type represents date and time
-  - `[MaxScore <Double?>]`: max attainable score for the control.
+  - `[LastModifiedDateTime <DateTime?>]`: 
+  - `[MaxScore <Double?>]`: Current obtained max score on specified date.
   - `[Rank <Int32?>]`: Microsoft's stack ranking of control.
   - `[Remediation <String>]`: Description of what the control will help remediate.
   - `[RemediationImpact <String>]`: Description of the impact on users of the remediation.
   - `[Service <String>]`: Service that owns the control (Exchange, Sharepoint, Azure AD).
-  - `[Threats <String[]>]`: List of threats the control mitigates (accountBreach,dataDeletion,dataExfiltration,dataSpillage,
-  - `[Tier <String>]`: 
-  - `[Title <String>]`: 
-  - `[UserImpact <String>]`: 
+  - `[Threats <String[]>]`: List of threats the control mitigates (accountBreach,dataDeletion,dataExfiltration,dataSpillage,elevationOfPrivilege,maliciousInsider,passwordCracking,phishingOrWhaling,spoofing).
+  - `[Tier <String>]`: Control tier (Core, Defense in Depth, Advanced.)
+  - `[Title <String>]`: Title of the control.
+  - `[UserImpact <String>]`: User impact of implementing control (low, moderate, high).
   - `[VendorInformation <IMicrosoftGraphSecurityVendorInformation>]`: securityVendorInformation
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Provider <String>]`: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
@@ -540,20 +517,20 @@ BODYPARAMETER `<IMicrosoftGraphSecureScoreControlProfile>`: secureScoreControlPr
     - `[SubProvider <String>]`: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
     - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye). Required
 
-COMPLIANCEINFORMATION <IMicrosoftGraphComplianceInformation\[]>: The collection of compliance information associated with secure score control
-  - `[CertificationControls <IMicrosoftGraphCertificationControl[]>]`: Collection of the certification controls associated with certification
-    - `[Name <String>]`: Certification control name
-    - `[Url <String>]`: URL for the Microsoft Service Trust Portal
-  - `[CertificationName <String>]`: Compliance certification name (for example, ISO 27018:2014, GDPR, FedRAMP, NIST 800-171)
+`COMPLIANCEINFORMATION <IMicrosoftGraphComplianceInformation[]>`: The collection of compliance information associated with secure score control
+  - `[CertificationControls <IMicrosoftGraphCertificationControl[]>]`: 
+    - `[Name <String>]`: 
+    - `[Url <String>]`: 
+  - `[CertificationName <String>]`: 
 
-CONTROLSTATEUPDATES <IMicrosoftGraphSecureScoreControlStateUpdate\[]>: Flag to indicate where the tenant has marked a control (ignored, thirdParty, reviewed) (supports update).
-  - `[AssignedTo <String>]`: Assigns the control to the user who will take the action.
-  - `[Comment <String>]`: Provides optional comment about the control.
-  - `[State <String>]`: State of the control, which can be modified via a PATCH command (for example, ignored, thirdParty).
-  - `[UpdatedBy <String>]`: ID of the user who updated tenant state.
-  - `[UpdatedDateTime <DateTime?>]`: Time at which the control state was updated.
+`CONTROLSTATEUPDATES <IMicrosoftGraphSecureScoreControlStateUpdate[]>`: Flag to indicate where the tenant has marked a control (ignore, thirdParty, reviewed) (supports update).
+  - `[AssignedTo <String>]`: 
+  - `[Comment <String>]`: 
+  - `[State <String>]`: 
+  - `[UpdatedBy <String>]`: 
+  - `[UpdatedDateTime <DateTime?>]`: 
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+`INPUTOBJECT <ISecurityIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
   - `[ArticleId <String>]`: The unique identifier of article
   - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator
@@ -611,7 +588,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[VulnerabilityComponentId <String>]`: The unique identifier of vulnerabilityComponent
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
-VENDORINFORMATION `<IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
+`VENDORINFORMATION <IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Provider <String>]`: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
   - `[ProviderVersion <String>]`: Version of the provider or subprovider, if it exists, that generated the alert. Required

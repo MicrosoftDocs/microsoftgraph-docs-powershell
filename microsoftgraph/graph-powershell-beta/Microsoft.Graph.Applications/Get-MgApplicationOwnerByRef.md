@@ -1,12 +1,11 @@
----
-external help file: Microsoft.Graph.Applications-help.xml
-Module Name: Microsoft.Graph.Applications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgapplicationownerbyref
+﻿---
+external help file: Microsoft.Graph.Beta.Applications-help.xml
+Module Name: Microsoft.Graph.Beta.Applications
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationownerbyref
 schema: 2.0.0
-ms.prod: applications
 ---
 
-# Get-MgApplicationOwnerByRef
+# Get-MgBetaApplicationOwnerByRef
 
 ## SYNOPSIS
 Directory objects that are owners of the application.
@@ -17,7 +16,7 @@ Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count 
 ## SYNTAX
 
 ```
-Get-MgApplicationOwnerByRef -ApplicationId <String> [-Filter <String>] [-Search <String>] [-Skip <Int32>]
+Get-MgBetaApplicationOwnerByRef -ApplicationId <String> [-Filter <String>] [-Search <String>] [-Skip <Int32>]
  [-Sort <String[]>] [-Top <Int32>] [-ConsistencyLevel <String>] [-PageSize <Int32>] [-All]
  [-CountVariable <String>] [<CommonParameters>]
 ```
@@ -30,16 +29,12 @@ Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count 
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Applications
-
-Get-MgApplicationOwner -ApplicationId $applicationId
+Import-Module Microsoft.Graph.Beta.Applications
 ```
 
-This example shows how to use the Get-MgApplicationOwnerByRef Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Get-MgBetaApplicationOwner -ApplicationId $applicationId
 
 ## PARAMETERS
 

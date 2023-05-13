@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgpolicyrolemanagementpolicy
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyrolemanagementpolicy
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # New-MgPolicyRoleManagementPolicy
@@ -13,7 +12,7 @@ Create new navigation property to roleManagementPolicies for policies
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
 New-MgPolicyRoleManagementPolicy [-AdditionalProperties <Hashtable>] [-Description <String>]
  [-DisplayName <String>] [-EffectiveRules <IMicrosoftGraphUnifiedRoleManagementPolicyRule[]>] [-Id <String>]
@@ -22,7 +21,7 @@ New-MgPolicyRoleManagementPolicy [-AdditionalProperties <Hashtable>] [-Descripti
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
 New-MgPolicyRoleManagementPolicy -BodyParameter <IMicrosoftGraphUnifiedRoleManagementPolicy> [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -33,27 +32,19 @@ Create new navigation property to roleManagementPolicies for policies
 
 ## EXAMPLES
 
-### Example 1: Retrieve the role management policies that apply to Azure AD roles
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
+```
 
 Get-MgPolicyRoleManagementPolicy -Filter "scopeId eq '/' and scopeType eq 'DirectoryRole'"
-```
 
-This example shows how to use the New-MgPolicyRoleManagementPolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Retrieve the role management policies that apply to the directory and expand the associated rules
+### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-
-Get-MgPolicyRoleManagementPolicy -Filter "scopeId eq '/' and scopeType eq 'Directory'" -ExpandProperty "rules"
 ```
 
-This example shows how to use the New-MgPolicyRoleManagementPolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Get-MgPolicyRoleManagementPolicy -Filter "scopeId eq '/' and scopeType eq 'Directory'" -ExpandProperty "rules"
 
 ## PARAMETERS
 
@@ -62,7 +53,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -74,11 +65,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 unifiedRoleManagementPolicy
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUnifiedRoleManagementPolicy
-Parameter Sets: Create1
+Parameter Sets: Create
 Aliases:
 
 Required: True
@@ -93,7 +84,7 @@ Description for the policy.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -108,7 +99,7 @@ Display name for the policy.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -122,11 +113,11 @@ Accept wildcard characters: False
 The list of effective rules like approval rules and expiration rules evaluated based on inherited referenced rules.
 For example, if there is a tenant-wide policy to enforce enabling an approval rule, the effective rule will be to enable approval even if the policy has a rule to disable approval.
 Supports $expand.
-To construct, please use Get-Help -Online and see NOTES section for EFFECTIVERULES properties and create a hash table.
+To construct, see NOTES section for EFFECTIVERULES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUnifiedRoleManagementPolicyRule[]
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -142,7 +133,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -159,7 +150,7 @@ Supports $filter (eq, ne).
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -171,11 +162,11 @@ Accept wildcard characters: False
 
 ### -LastModifiedBy
 identity
-To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBY properties and create a hash table.
+To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIdentity
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -190,7 +181,7 @@ The time when the role setting was last modified.
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -203,11 +194,11 @@ Accept wildcard characters: False
 ### -Rules
 The collection of rules like approval rules and expiration rules.
 Supports $expand.
-To construct, please use Get-Help -Online and see NOTES section for RULES properties and create a hash table.
+To construct, see NOTES section for RULES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUnifiedRoleManagementPolicyRule[]
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -224,7 +215,7 @@ Required.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -241,7 +232,7 @@ Required.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -300,7 +291,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphUnifiedRoleManagementPolicy>`: unifiedRoleManagementPolicy
+`BODYPARAMETER <IMicrosoftGraphUnifiedRoleManagementPolicy>`: unifiedRoleManagementPolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Description <String>]`: Description for the policy.
@@ -327,7 +318,7 @@ BODYPARAMETER `<IMicrosoftGraphUnifiedRoleManagementPolicy>`: unifiedRoleManagem
   - `[ScopeId <String>]`: The identifier of the scope where the policy is created. Can be / for the tenant or a group ID. Required.
   - `[ScopeType <String>]`: The type of the scope where the policy is created. One of Directory, DirectoryRole. Required.
 
-EFFECTIVERULES <IMicrosoftGraphUnifiedRoleManagementPolicyRule\[]>: The list of effective rules like approval rules and expiration rules evaluated based on inherited referenced rules. For example, if there is a tenant-wide policy to enforce enabling an approval rule, the effective rule will be to enable approval even if the policy has a rule to disable approval. Supports $expand.
+`EFFECTIVERULES <IMicrosoftGraphUnifiedRoleManagementPolicyRule[]>`: The list of effective rules like approval rules and expiration rules evaluated based on inherited referenced rules. For example, if there is a tenant-wide policy to enforce enabling an approval rule, the effective rule will be to enable approval even if the policy has a rule to disable approval. Supports $expand.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Target <IMicrosoftGraphUnifiedRoleManagementPolicyRuleTarget>]`: unifiedRoleManagementPolicyRuleTarget
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -340,12 +331,12 @@ EFFECTIVERULES <IMicrosoftGraphUnifiedRoleManagementPolicyRule\[]>: The list of 
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
       - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentity>`: identity
+`LASTMODIFIEDBY <IMicrosoftGraphIdentity>`: identity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
   - `[Id <String>]`: Unique identifier for the identity.
 
-RULES <IMicrosoftGraphUnifiedRoleManagementPolicyRule\[]>: The collection of rules like approval rules and expiration rules. Supports $expand.
+`RULES <IMicrosoftGraphUnifiedRoleManagementPolicyRule[]>`: The collection of rules like approval rules and expiration rules. Supports $expand.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Target <IMicrosoftGraphUnifiedRoleManagementPolicyRuleTarget>]`: unifiedRoleManagementPolicyRuleTarget
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

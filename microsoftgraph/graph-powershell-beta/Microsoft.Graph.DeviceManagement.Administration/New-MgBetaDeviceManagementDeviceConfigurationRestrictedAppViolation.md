@@ -1,0 +1,301 @@
+---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementdeviceconfigurationrestrictedappviolation
+schema: 2.0.0
+---
+
+# New-MgBetaDeviceManagementDeviceConfigurationRestrictedAppViolation
+
+## SYNOPSIS
+Create new navigation property to deviceConfigurationRestrictedAppsViolations for deviceManagement
+
+## SYNTAX
+
+### CreateExpanded (Default)
+```
+New-MgBetaDeviceManagementDeviceConfigurationRestrictedAppViolation [-AdditionalProperties <Hashtable>]
+ [-DeviceConfigurationId <String>] [-DeviceConfigurationName <String>] [-DeviceName <String>] [-Id <String>]
+ [-ManagedDeviceId <String>] [-PlatformType <PolicyPlatformType>]
+ [-RestrictedApps <IMicrosoftGraphManagedDeviceReportedApp[]>] [-RestrictedAppsState <RestrictedAppsState>]
+ [-UserId <String>] [-UserName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Create
+```
+New-MgBetaDeviceManagementDeviceConfigurationRestrictedAppViolation
+ -BodyParameter <IMicrosoftGraphRestrictedAppsViolation> [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+## DESCRIPTION
+Create new navigation property to deviceConfigurationRestrictedAppsViolations for deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+## PARAMETERS
+
+### -AdditionalProperties
+Additional Parameters
+
+```yaml
+Type: Hashtable
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -BodyParameter
+Violation of restricted apps configuration profile per device per user
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphRestrictedAppsViolation
+Parameter Sets: Create
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -DeviceConfigurationId
+Device configuration profile unique identifier, must be Guid
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DeviceConfigurationName
+Device configuration profile name
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DeviceName
+Device name
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Id
+The unique identifier for an entity.
+Read-only.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ManagedDeviceId
+Managed device unique identifier, must be Guid
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PlatformType
+Supported platform types for policies.
+
+```yaml
+Type: PolicyPlatformType
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RestrictedApps
+List of violated restricted apps
+To construct, see NOTES section for RESTRICTEDAPPS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphManagedDeviceReportedApp[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RestrictedAppsState
+Restricted apps state
+
+```yaml
+Type: RestrictedAppsState
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -UserId
+User unique identifier, must be Guid
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -UserName
+User name
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Shows what would happen if the cmdlet runs.
+The cmdlet is not run.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
+## INPUTS
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRestrictedAppsViolation
+## OUTPUTS
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRestrictedAppsViolation
+## NOTES
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
+
+BODYPARAMETER \<IMicrosoftGraphRestrictedAppsViolation\>: Violation of restricted apps configuration profile per device per user
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[DeviceConfigurationId \<String\>\]: Device configuration profile unique identifier, must be Guid
+  \[DeviceConfigurationName \<String\>\]: Device configuration profile name
+  \[DeviceName \<String\>\]: Device name
+  \[ManagedDeviceId \<String\>\]: Managed device unique identifier, must be Guid
+  \[PlatformType \<PolicyPlatformType?\>\]: Supported platform types for policies.
+  \[RestrictedApps \<IMicrosoftGraphManagedDeviceReportedApp\[\]\>\]: List of violated restricted apps
+    \[AppId \<String\>\]: The application or bundle identifier of the application
+  \[RestrictedAppsState \<RestrictedAppsState?\>\]: Restricted apps state
+  \[UserId \<String\>\]: User unique identifier, must be Guid
+  \[UserName \<String\>\]: User name
+
+RESTRICTEDAPPS \<IMicrosoftGraphManagedDeviceReportedApp\[\]\>: List of violated restricted apps
+  \[AppId \<String\>\]: The application or bundle identifier of the application
+
+## RELATED LINKS
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementdeviceconfigurationrestrictedappviolation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementdeviceconfigurationrestrictedappviolation)
+

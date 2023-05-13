@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.Governance-help.xml
-Module Name: Microsoft.Graph.Identity.Governance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementaccesspackageresourcerequest
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.Governance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackageresourcerequest
 schema: 2.0.0
 ---
 
-# New-MgEntitlementManagementAccessPackageResourceRequest
+# New-MgBetaEntitlementManagementAccessPackageResourceRequest
 
 ## SYNOPSIS
 Create a new accessPackageResourceRequest object to request the addition of a resource to an access package catalog, update of a resource, or the removal of a resource from a catalog.
@@ -15,17 +15,17 @@ A resource must be included in an access package catalog before a role of that r
 
 ### CreateExpanded (Default)
 ```
-New-MgEntitlementManagementAccessPackageResourceRequest
+New-MgBetaEntitlementManagementAccessPackageResourceRequest
  [-AccessPackageResource <IMicrosoftGraphAccessPackageResource>] [-AdditionalProperties <Hashtable>]
  [-CatalogId <String>] [-ExecuteImmediately] [-ExpirationDateTime <DateTime>] [-Id <String>]
  [-IsValidationOnly] [-Justification <String>] [-RequestState <String>] [-RequestStatus <String>]
- [-RequestType <String>] [-Requestor <IMicrosoftGraphAccessPackageSubject1>] [-WhatIf] [-Confirm]
+ [-RequestType <String>] [-Requestor <IMicrosoftGraphAccessPackageSubject>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgEntitlementManagementAccessPackageResourceRequest
+New-MgBetaEntitlementManagementAccessPackageResourceRequest
  -BodyParameter <IMicrosoftGraphAccessPackageResourceRequest> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -35,14 +35,15 @@ A resource must be included in an access package catalog before a role of that r
 
 ## EXAMPLES
 
-### Example 1: Create a new access package resource request
+### EXAMPLE 1
 ```powershell
-Connect-MgGraph -Scopes 'EntitlementManagement.ReadWrite.All', 'Group.ReadWrite.All'
+Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All', 'Group.ReadWrite.All'
 $accessPackageResource = @{
   "originSystem" = "AadGroup "
   OriginId= "b5cd9d19-91c0-4622-93e2-537ad8a0b3ad"
   }
-New-MgEntitlementManagementAccessPackageResourceRequest -CatalogId '54152ecb-c65d-47f2-8a4d-ba2732de0a7b' -RequestType "AdminAdd" -AccessPackageResource $accessPackageResource
+New-MgBetaEntitlementManagementAccessPackageResourceRequest -CatalogId '54152ecb-c65d-47f2-8a4d-ba2732de0a7b' -RequestType "AdminAdd" -AccessPackageResource $accessPackageResource
+```
 
 AccessPackageResource : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageResource
 CatalogId             : 54152ecb-c65d-47f2-8a4d-ba2732de0a7b
@@ -56,15 +57,12 @@ RequestStatus         : Fulfilled
 RequestType           : AdminAdd
 Requestor             : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageSubject
 AdditionalProperties  : {[@odata.context, https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackageResourceRequests/$entity]}
-```
-
-This example creates a new resource request for addition of a resource to an access package catalog.
 
 ## PARAMETERS
 
 ### -AccessPackageResource
 accessPackageResource
-To construct, please use Get-Help -Online and see NOTES section for ACCESSPACKAGERESOURCE properties and create a hash table.
+To construct, see NOTES section for ACCESSPACKAGERESOURCE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAccessPackageResource
@@ -95,7 +93,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 accessPackageResourceRequest
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAccessPackageResourceRequest
@@ -156,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -203,10 +201,10 @@ Accept wildcard characters: False
 
 ### -Requestor
 accessPackageSubject
-To construct, please use Get-Help -Online and see NOTES section for REQUESTOR properties and create a hash table.
+To construct, see NOTES section for REQUESTOR properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageSubject1
+Type: IMicrosoftGraphAccessPackageSubject
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -300,10 +298,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResourceRequest
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessPackageResourceRequest
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResourceRequest
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessPackageResourceRequest
 ## NOTES
 
 ALIASES
@@ -313,12 +311,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ACCESSPACKAGERESOURCE `<IMicrosoftGraphAccessPackageResource>`: accessPackageResource
+`ACCESSPACKAGERESOURCE <IMicrosoftGraphAccessPackageResource>`: accessPackageResource
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AccessPackageResourceEnvironment <IMicrosoftGraphAccessPackageResourceEnvironment>]`: accessPackageResourceEnvironment
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[AccessPackageResources <IMicrosoftGraphAccessPackageResource[]>]`: Read-only. Required.
     - `[ConnectionInfo <IMicrosoftGraphConnectionInfo>]`: connectionInfo
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -333,14 +331,14 @@ ACCESSPACKAGERESOURCE `<IMicrosoftGraphAccessPackageResource>`: accessPackageRes
     - `[OriginId <String>]`: The unique identifier of this environment in the origin system.
     - `[OriginSystem <String>]`: The type of the resource in the origin system, that is, SharePointOnline. Requires $filter (eq).
   - `[AccessPackageResourceRoles <IMicrosoftGraphAccessPackageResourceRole[]>]`: Read-only. Nullable. Supports $expand.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[AccessPackageResource <IMicrosoftGraphAccessPackageResource>]`: accessPackageResource
     - `[Description <String>]`: A description for the resource role.
     - `[DisplayName <String>]`: The display name of the resource role such as the role defined by the application.
     - `[OriginId <String>]`: The unique identifier of the resource role in the origin system. For a SharePoint Online site, the originId will be the sequence number of the role in the site.
     - `[OriginSystem <String>]`: The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
   - `[AccessPackageResourceScopes <IMicrosoftGraphAccessPackageResourceScope[]>]`: Read-only. Nullable. Supports $expand.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[AccessPackageResource <IMicrosoftGraphAccessPackageResource>]`: accessPackageResource
     - `[Description <String>]`: The description of the scope.
     - `[DisplayName <String>]`: The display name of the scope.
@@ -368,15 +366,15 @@ ACCESSPACKAGERESOURCE `<IMicrosoftGraphAccessPackageResource>`: accessPackageRes
   - `[ResourceType <String>]`: The type of the resource, such as Application if it is an Azure AD connected application, or SharePoint Online Site for a SharePoint Online site.
   - `[Url <String>]`: A unique resource locator for the resource, such as the URL for signing a user into an application.
 
-BODYPARAMETER `<IMicrosoftGraphAccessPackageResourceRequest>`: accessPackageResourceRequest
+`BODYPARAMETER <IMicrosoftGraphAccessPackageResourceRequest>`: accessPackageResourceRequest
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AccessPackageResource <IMicrosoftGraphAccessPackageResource>]`: accessPackageResource
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[AccessPackageResourceEnvironment <IMicrosoftGraphAccessPackageResourceEnvironment>]`: accessPackageResourceEnvironment
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[AccessPackageResources <IMicrosoftGraphAccessPackageResource[]>]`: Read-only. Required.
       - `[ConnectionInfo <IMicrosoftGraphConnectionInfo>]`: connectionInfo
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -391,14 +389,14 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageResourceRequest>`: accessPackageReso
       - `[OriginId <String>]`: The unique identifier of this environment in the origin system.
       - `[OriginSystem <String>]`: The type of the resource in the origin system, that is, SharePointOnline. Requires $filter (eq).
     - `[AccessPackageResourceRoles <IMicrosoftGraphAccessPackageResourceRole[]>]`: Read-only. Nullable. Supports $expand.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[AccessPackageResource <IMicrosoftGraphAccessPackageResource>]`: accessPackageResource
       - `[Description <String>]`: A description for the resource role.
       - `[DisplayName <String>]`: The display name of the resource role such as the role defined by the application.
       - `[OriginId <String>]`: The unique identifier of the resource role in the origin system. For a SharePoint Online site, the originId will be the sequence number of the role in the site.
       - `[OriginSystem <String>]`: The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
     - `[AccessPackageResourceScopes <IMicrosoftGraphAccessPackageResourceScope[]>]`: Read-only. Nullable. Supports $expand.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[AccessPackageResource <IMicrosoftGraphAccessPackageResource>]`: accessPackageResource
       - `[Description <String>]`: The description of the scope.
       - `[DisplayName <String>]`: The display name of the scope.
@@ -433,19 +431,19 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageResourceRequest>`: accessPackageReso
   - `[RequestState <String>]`: The outcome of whether the service was able to add the resource to the catalog.  The value is Delivered if the resource was added or removed. Read-Only.
   - `[RequestStatus <String>]`: 
   - `[RequestType <String>]`: Use AdminAdd to add a resource, if the caller is an administrator or resource owner, AdminUpdate to update a resource, or AdminRemove to remove a resource.
-  - `[Requestor <IMicrosoftGraphAccessPackageSubject1>]`: accessPackageSubject
+  - `[Requestor <IMicrosoftGraphAccessPackageSubject>]`: accessPackageSubject
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[AltSecId <String>]`: 
-    - `[ConnectedOrganization <IMicrosoftGraphConnectedOrganization1>]`: connectedOrganization
+    - `[ConnectedOrganization <IMicrosoftGraphConnectedOrganization>]`: connectedOrganization
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[CreatedBy <String>]`: UPN of the user who created this resource. Read-only.
       - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
       - `[Description <String>]`: The description of the connected organization.
       - `[DisplayName <String>]`: The display name of the connected organization. Supports $filter (eq).
       - `[ExternalSponsors <IMicrosoftGraphDirectoryObject[]>]`: 
-        - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
       - `[IdentitySources <IMicrosoftGraphIdentitySource[]>]`: The identity sources in this connected organization, one of azureActiveDirectoryTenant, crossCloudAzureActiveDirectoryTenant, domainIdentitySource or externalDomainFederation. Read-only. Nullable. Supports $select and $filter(eq). To filter by the derived types, you must declare the resource using its full OData cast, for example, $filter=identitySources/any(is:is/microsoft.graph.azureActiveDirectoryTenant/tenantId eq 'bcfdfff4-cbc3-43f2-9000-ba7b7515054f').
       - `[InternalSponsors <IMicrosoftGraphDirectoryObject[]>]`: 
@@ -456,24 +454,24 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageResourceRequest>`: accessPackageReso
     - `[DisplayName <String>]`: The display name of the subject.
     - `[Email <String>]`: The email address of the subject.
     - `[ObjectId <String>]`: The object identifier of the subject. null if the subject is not yet a user in the tenant.
-    - `[OnPremisesSecurityIdentifier <String>]`: A string representation of the principal's security identifier, if known, or null if the subject does not have a security identifier.
+    - `[OnPremisesSecurityIdentifier <String>]`: 
     - `[PrincipalName <String>]`: The principal name, if known, of the subject.
     - `[SubjectLifecycle <String>]`: accessPackageSubjectLifecycle
     - `[Type <String>]`: The resource type of the subject.
 
-REQUESTOR `<IMicrosoftGraphAccessPackageSubject1>`: accessPackageSubject
+`REQUESTOR <IMicrosoftGraphAccessPackageSubject>`: accessPackageSubject
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AltSecId <String>]`: 
-  - `[ConnectedOrganization <IMicrosoftGraphConnectedOrganization1>]`: connectedOrganization
+  - `[ConnectedOrganization <IMicrosoftGraphConnectedOrganization>]`: connectedOrganization
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[CreatedBy <String>]`: UPN of the user who created this resource. Read-only.
     - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
     - `[Description <String>]`: The description of the connected organization.
     - `[DisplayName <String>]`: The display name of the connected organization. Supports $filter (eq).
     - `[ExternalSponsors <IMicrosoftGraphDirectoryObject[]>]`: 
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
     - `[IdentitySources <IMicrosoftGraphIdentitySource[]>]`: The identity sources in this connected organization, one of azureActiveDirectoryTenant, crossCloudAzureActiveDirectoryTenant, domainIdentitySource or externalDomainFederation. Read-only. Nullable. Supports $select and $filter(eq). To filter by the derived types, you must declare the resource using its full OData cast, for example, $filter=identitySources/any(is:is/microsoft.graph.azureActiveDirectoryTenant/tenantId eq 'bcfdfff4-cbc3-43f2-9000-ba7b7515054f').
     - `[InternalSponsors <IMicrosoftGraphDirectoryObject[]>]`: 
@@ -484,7 +482,7 @@ REQUESTOR `<IMicrosoftGraphAccessPackageSubject1>`: accessPackageSubject
   - `[DisplayName <String>]`: The display name of the subject.
   - `[Email <String>]`: The email address of the subject.
   - `[ObjectId <String>]`: The object identifier of the subject. null if the subject is not yet a user in the tenant.
-  - `[OnPremisesSecurityIdentifier <String>]`: A string representation of the principal's security identifier, if known, or null if the subject does not have a security identifier.
+  - `[OnPremisesSecurityIdentifier <String>]`: 
   - `[PrincipalName <String>]`: The principal name, if known, of the subject.
   - `[SubjectLifecycle <String>]`: accessPackageSubjectLifecycle
   - `[Type <String>]`: The resource type of the subject.

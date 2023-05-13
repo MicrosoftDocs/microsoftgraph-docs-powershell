@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Users.Actions-help.xml
-Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgbatchuserpendingaccessreviewinstancerecorddecision
+﻿---
+external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.Users.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetabatchuserpendingaccessreviewinstancerecorddecision
 schema: 2.0.0
 ---
 
-# Invoke-MgBatchUserPendingAccessReviewInstanceRecordDecision
+# Invoke-MgBetaBatchUserPendingAccessReviewInstanceRecordDecision
 
 ## SYNOPSIS
 Enables reviewers to review all accessReviewInstanceDecisionItem objects in batches by using **principalId**, **resourceId**, or neither.
@@ -14,28 +14,29 @@ Enables reviewers to review all accessReviewInstanceDecisionItem objects in batc
 
 ### BatchExpanded (Default)
 ```
-Invoke-MgBatchUserPendingAccessReviewInstanceRecordDecision -AccessReviewInstanceId <String> -UserId <String>
- [-AdditionalProperties <Hashtable>] [-Decision <String>] [-Justification <String>] [-PrincipalId <String>]
- [-ResourceId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgBetaBatchUserPendingAccessReviewInstanceRecordDecision -AccessReviewInstanceId <String>
+ -UserId <String> [-AdditionalProperties <Hashtable>] [-Decision <String>] [-Justification <String>]
+ [-PrincipalId <String>] [-ResourceId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Batch
 ```
-Invoke-MgBatchUserPendingAccessReviewInstanceRecordDecision -AccessReviewInstanceId <String> -UserId <String>
+Invoke-MgBetaBatchUserPendingAccessReviewInstanceRecordDecision -AccessReviewInstanceId <String>
+ -UserId <String>
  -BodyParameter <IPaths16Y92DkUsersUserIdPendingaccessreviewinstancesAccessreviewinstanceIdMicrosoftGraphBatchrecorddecisionsPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### BatchViaIdentityExpanded
 ```
-Invoke-MgBatchUserPendingAccessReviewInstanceRecordDecision -InputObject <IUsersActionsIdentity>
+Invoke-MgBetaBatchUserPendingAccessReviewInstanceRecordDecision -InputObject <IUsersActionsIdentity>
  [-AdditionalProperties <Hashtable>] [-Decision <String>] [-Justification <String>] [-PrincipalId <String>]
  [-ResourceId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### BatchViaIdentity
 ```
-Invoke-MgBatchUserPendingAccessReviewInstanceRecordDecision -InputObject <IUsersActionsIdentity>
+Invoke-MgBetaBatchUserPendingAccessReviewInstanceRecordDecision -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths16Y92DkUsersUserIdPendingaccessreviewinstancesAccessreviewinstanceIdMicrosoftGraphBatchrecorddecisionsPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -45,20 +46,17 @@ Enables reviewers to review all accessReviewInstanceDecisionItem objects in batc
 
 ## EXAMPLES
 
-### Example 1: Using the Invoke-MgBatchUserPendingAccessReviewInstanceRecordDecision Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Users.Actions
+Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
 	Decision = "Approve"
 	Justification = "All principals with access need continued access to the resource (Marketing Group) as all the principals are on the marketing team"
 	ResourceId = "a5c51e59-3fcd-4a37-87a1-835c0c21488a"
 }
 # A UPN can also be used as -UserId.
-Invoke-MgBatchUserPendingAccessReviewInstanceRecordDecision -UserId $userId -AccessReviewInstanceId $accessReviewInstanceId -BodyParameter $params
+Invoke-MgBetaBatchUserPendingAccessReviewInstanceRecordDecision -UserId $userId -AccessReviewInstanceId $accessReviewInstanceId -BodyParameter $params
 ```
-
-This example shows how to use the Invoke-MgBatchUserPendingAccessReviewInstanceRecordDecision Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -94,7 +92,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths16Y92DkUsersUserIdPendingaccessreviewinstancesAccessreviewinstanceIdMicrosoftGraphBatchrecorddecisionsPostRequestbodyContentApplicationJsonSchema
@@ -125,7 +123,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersActionsIdentity
@@ -250,8 +248,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths16Y92DkUsersUserIdPendingaccessreviewinstancesAccessreviewinstanceIdMicrosoftGraphBatchrecorddecisionsPostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths16Y92DkUsersUserIdPendingaccessreviewinstancesAccessreviewinstanceIdMicrosoftGraphBatchrecorddecisionsPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
 ## OUTPUTS
 
 ### System.Boolean
@@ -264,14 +262,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths16Y92DkUsersUserIdPendingaccessreviewinstancesAccessreviewinstanceIdMicrosoftGraphBatchrecorddecisionsPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths16Y92DkUsersUserIdPendingaccessreviewinstancesAccessreviewinstanceIdMicrosoftGraphBatchrecorddecisionsPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Decision <String>]`: 
   - `[Justification <String>]`: 
   - `[PrincipalId <String>]`: 
   - `[ResourceId <String>]`: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
@@ -305,7 +303,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription

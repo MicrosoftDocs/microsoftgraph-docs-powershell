@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/new-mgdevicemanagementtemplateinstance
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/new-mgbetadevicemanagementtemplateinstance
 schema: 2.0.0
 ---
 
-# New-MgDeviceManagementTemplateInstance
+# New-MgBetaDeviceManagementTemplateInstance
 
 ## SYNOPSIS
 Invoke action createInstance
@@ -14,21 +14,22 @@ Invoke action createInstance
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementTemplateInstance -DeviceManagementTemplateId <String> [-AdditionalProperties <Hashtable>]
- [-Description <String>] [-DisplayName <String>] [-RoleScopeTagIds <String[]>]
- [-SettingsDelta <IMicrosoftGraphDeviceManagementSettingInstance[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaDeviceManagementTemplateInstance -DeviceManagementTemplateId <String>
+ [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>]
+ [-RoleScopeTagIds <String[]>] [-SettingsDelta <IMicrosoftGraphDeviceManagementSettingInstance[]>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceManagementTemplateInstance -DeviceManagementTemplateId <String>
+New-MgBetaDeviceManagementTemplateInstance -DeviceManagementTemplateId <String>
  -BodyParameter <IPaths1Acen0GDevicemanagementTemplatesDevicemanagementtemplateIdMicrosoftGraphCreateinstancePostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgDeviceManagementTemplateInstance -InputObject <IDeviceManagementActionsIdentity>
+New-MgBetaDeviceManagementTemplateInstance -InputObject <IDeviceManagementActionsIdentity>
  [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>]
  [-RoleScopeTagIds <String[]>] [-SettingsDelta <IMicrosoftGraphDeviceManagementSettingInstance[]>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -36,7 +37,7 @@ New-MgDeviceManagementTemplateInstance -InputObject <IDeviceManagementActionsIde
 
 ### CreateViaIdentity
 ```
-New-MgDeviceManagementTemplateInstance -InputObject <IDeviceManagementActionsIdentity>
+New-MgBetaDeviceManagementTemplateInstance -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPaths1Acen0GDevicemanagementTemplatesDevicemanagementtemplateIdMicrosoftGraphCreateinstancePostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -45,6 +46,20 @@ New-MgDeviceManagementTemplateInstance -InputObject <IDeviceManagementActionsIde
 Invoke action createInstance
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -65,7 +80,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths1Acen0GDevicemanagementTemplatesDevicemanagementtemplateIdMicrosoftGraphCreateinstancePostRequestbodyContentApplicationJsonSchema
@@ -126,7 +141,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementActionsIdentity
@@ -157,7 +172,7 @@ Accept wildcard characters: False
 
 ### -SettingsDelta
 .
-To construct, please use Get-Help -Online and see NOTES section for SETTINGSDELTA properties and create a hash table.
+To construct, see NOTES section for SETTINGSDELTA properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementSettingInstance[]
@@ -207,11 +222,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths1Acen0GDevicemanagementTemplatesDevicemanagementtemplateIdMicrosoftGraphCreateinstancePostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Acen0GDevicemanagementTemplatesDevicemanagementtemplateIdMicrosoftGraphCreateinstancePostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementIntent
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementIntent
 ## NOTES
 
 ALIASES
@@ -221,17 +236,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Acen0GDevicemanagementTemplatesDevicemanagementtemplateIdMicrosoftGraphCreateinstancePostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1Acen0GDevicemanagementTemplatesDevicemanagementtemplateIdMicrosoftGraphCreateinstancePostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Description <String>]`: 
   - `[DisplayName <String>]`: 
   - `[RoleScopeTagIds <String[]>]`: 
   - `[SettingsDelta <IMicrosoftGraphDeviceManagementSettingInstance[]>]`: 
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[DefinitionId <String>]`: The ID of the setting definition for this instance
     - `[ValueJson <String>]`: JSON representation of the value
 
-INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[AlertRecordId <String>]`: The unique identifier of alertRecord
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: The unique identifier of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: The unique identifier of androidForWorkEnrollmentProfile
@@ -275,7 +290,6 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[MicrosoftTunnelSiteId <String>]`: The unique identifier of microsoftTunnelSite
   - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
   - `[NotificationMessageTemplateId <String>]`: The unique identifier of notificationMessageTemplate
-  - `[OemWarrantyInformationOnboardingId <String>]`: The unique identifier of oemWarrantyInformationOnboarding
   - `[RemoteAssistancePartnerId <String>]`: The unique identifier of remoteAssistancePartner
   - `[RoleScopeTagId <String>]`: The unique identifier of roleScopeTag
   - `[WindowsAutopilotDeploymentProfileId <String>]`: The unique identifier of windowsAutopilotDeploymentProfile
@@ -285,8 +299,8 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
-SETTINGSDELTA <IMicrosoftGraphDeviceManagementSettingInstance\[]>: .
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`SETTINGSDELTA <IMicrosoftGraphDeviceManagementSettingInstance[]>`: .
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DefinitionId <String>]`: The ID of the setting definition for this instance
   - `[ValueJson <String>]`: JSON representation of the value
 

@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/invoke-mgsoftchatmessagereplydelete
+﻿---
+external help file: Microsoft.Graph.Beta.Teams-help.xml
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetasoftchatmessagereplydelete
 schema: 2.0.0
 ---
 
-# Invoke-MgSoftChatMessageReplyDelete
+# Invoke-MgBetaSoftChatMessageReplyDelete
 
 ## SYNOPSIS
 Delete a single chatMessage or a chat message reply in a channel or a chat.
@@ -14,13 +14,13 @@ Delete a single chatMessage or a chat message reply in a channel or a chat.
 
 ### Soft (Default)
 ```
-Invoke-MgSoftChatMessageReplyDelete -ChatId <String> -ChatMessageId <String> -ChatMessageId1 <String>
+Invoke-MgBetaSoftChatMessageReplyDelete -ChatId <String> -ChatMessageId <String> -ChatMessageId1 <String>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SoftViaIdentity
 ```
-Invoke-MgSoftChatMessageReplyDelete -InputObject <ITeamsIdentity> [-PassThru] [-WhatIf] [-Confirm]
+Invoke-MgBetaSoftChatMessageReplyDelete -InputObject <ITeamsIdentity> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -28,6 +28,20 @@ Invoke-MgSoftChatMessageReplyDelete -InputObject <ITeamsIdentity> [-PassThru] [-
 Delete a single chatMessage or a chat message reply in a channel or a chat.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -78,7 +92,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ITeamsIdentity
@@ -143,7 +157,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
 ## OUTPUTS
 
 ### System.Boolean
@@ -156,7 +170,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat

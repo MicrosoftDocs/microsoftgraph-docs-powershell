@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Reports-help.xml
-Module Name: Microsoft.Graph.Reports
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgreportmanageddeviceenrollmentfailuretrend
+﻿---
+external help file: Microsoft.Graph.Beta.Reports-help.xml
+Module Name: Microsoft.Graph.Beta.Reports
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportmanageddeviceenrollmentfailuretrend
 schema: 2.0.0
 ---
 
-# Get-MgReportManagedDeviceEnrollmentFailureTrend
+# Get-MgBetaReportManagedDeviceEnrollmentFailureTrend
 
 ## SYNOPSIS
 Metadata for the enrollment failure trends report
@@ -13,13 +13,27 @@ Metadata for the enrollment failure trends report
 ## SYNTAX
 
 ```
-Get-MgReportManagedDeviceEnrollmentFailureTrend -OutFile <String> [-PassThru] [<CommonParameters>]
+Get-MgBetaReportManagedDeviceEnrollmentFailureTrend -OutFile <String> [-PassThru] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Metadata for the enrollment failure trends report
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 

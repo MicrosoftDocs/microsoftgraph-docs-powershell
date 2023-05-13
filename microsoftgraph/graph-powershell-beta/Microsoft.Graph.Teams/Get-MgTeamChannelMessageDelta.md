@@ -1,27 +1,27 @@
----
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mgteamchannelmessagedelta
+﻿---
+external help file: Microsoft.Graph.Beta.Teams-help.xml
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchannelmessagedelta
 schema: 2.0.0
 ---
 
-# Get-MgTeamChannelMessageDelta
+# Get-MgBetaTeamChannelMessageDelta
 
 ## SYNOPSIS
 Invoke function delta
 
 ## SYNTAX
 
-### Delta1 (Default)
+### Delta (Default)
 ```
-Get-MgTeamChannelMessageDelta -ChannelId <String> -TeamId <String> [-Filter <String>] [-Property <String[]>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [<CommonParameters>]
+Get-MgBetaTeamChannelMessageDelta -ChannelId <String> -TeamId <String> [-Filter <String>]
+ [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### DeltaViaIdentity1
+### DeltaViaIdentity
 ```
-Get-MgTeamChannelMessageDelta -InputObject <ITeamsIdentity> [-Filter <String>] [-Property <String[]>]
+Get-MgBetaTeamChannelMessageDelta -InputObject <ITeamsIdentity> [-Filter <String>] [-Property <String[]>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-Count] [<CommonParameters>]
 ```
 
@@ -30,6 +30,20 @@ Invoke function delta
 
 ## EXAMPLES
 
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -All
@@ -37,7 +51,7 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: Delta1
+Parameter Sets: Delta
 Aliases:
 
 Required: False
@@ -52,7 +66,7 @@ The unique identifier of channel
 
 ```yaml
 Type: String
-Parameter Sets: Delta1
+Parameter Sets: Delta
 Aliases:
 
 Required: True
@@ -67,7 +81,7 @@ Include count of items
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: DeltaViaIdentity1
+Parameter Sets: DeltaViaIdentity
 Aliases:
 
 Required: False
@@ -83,7 +97,7 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: Delta1
+Parameter Sets: Delta
 Aliases: CV
 
 Required: False
@@ -110,11 +124,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: DeltaViaIdentity1
+Parameter Sets: DeltaViaIdentity
 Aliases:
 
 Required: True
@@ -129,7 +143,7 @@ Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: Delta1
+Parameter Sets: Delta
 Aliases:
 
 Required: False
@@ -189,7 +203,7 @@ The unique identifier of team
 
 ```yaml
 Type: String
-Parameter Sets: Delta1
+Parameter Sets: Delta
 Aliases:
 
 Required: True
@@ -234,10 +248,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChatMessage1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphChatMessage
 ## NOTES
 
 ALIASES
@@ -247,7 +261,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat

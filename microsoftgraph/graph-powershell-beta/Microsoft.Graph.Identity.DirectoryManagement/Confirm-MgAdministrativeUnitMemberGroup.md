@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/confirm-mgadministrativeunitmembergroup
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/confirm-mgbetaadministrativeunitmembergroup
 schema: 2.0.0
 ---
 
-# Confirm-MgAdministrativeUnitMemberGroup
+# Confirm-MgBetaAdministrativeUnitMemberGroup
 
 ## SYNOPSIS
 Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
@@ -18,26 +18,26 @@ Because Microsoft 365 groups cannot contain other groups, membership in a Micros
 
 ### CheckExpanded (Default)
 ```
-Confirm-MgAdministrativeUnitMemberGroup -AdministrativeUnitId <String> [-AdditionalProperties <Hashtable>]
+Confirm-MgBetaAdministrativeUnitMemberGroup -AdministrativeUnitId <String> [-AdditionalProperties <Hashtable>]
  [-GroupIds <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Check
 ```
-Confirm-MgAdministrativeUnitMemberGroup -AdministrativeUnitId <String>
+Confirm-MgBetaAdministrativeUnitMemberGroup -AdministrativeUnitId <String>
  -BodyParameter <IPaths1UpdmwwAdministrativeunitsAdministrativeunitIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CheckViaIdentityExpanded
 ```
-Confirm-MgAdministrativeUnitMemberGroup -InputObject <IIdentityDirectoryManagementIdentity>
+Confirm-MgBetaAdministrativeUnitMemberGroup -InputObject <IIdentityDirectoryManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-GroupIds <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CheckViaIdentity
 ```
-Confirm-MgAdministrativeUnitMemberGroup -InputObject <IIdentityDirectoryManagementIdentity>
+Confirm-MgBetaAdministrativeUnitMemberGroup -InputObject <IIdentityDirectoryManagementIdentity>
  -BodyParameter <IPaths1UpdmwwAdministrativeunitsAdministrativeunitIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -50,6 +50,20 @@ This function supports all groups provisioned in Azure AD.
 Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -85,7 +99,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths1UpdmwwAdministrativeunitsAdministrativeunitIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema
@@ -116,7 +130,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IIdentityDirectoryManagementIdentity
@@ -166,8 +180,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths1UpdmwwAdministrativeunitsAdministrativeunitIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1UpdmwwAdministrativeunitsAdministrativeunitIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### System.String
@@ -180,11 +194,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1UpdmwwAdministrativeunitsAdministrativeunitIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1UpdmwwAdministrativeunitsAdministrativeunitIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[GroupIds <String[]>]`: 
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet

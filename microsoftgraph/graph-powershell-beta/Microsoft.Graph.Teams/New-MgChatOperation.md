@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mgchatoperation
+﻿---
+external help file: Microsoft.Graph.Beta.Teams-help.xml
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetachatoperation
 schema: 2.0.0
 ---
 
-# New-MgChatOperation
+# New-MgBetaChatOperation
 
 ## SYNOPSIS
 Create new navigation property to operations for chats
@@ -14,7 +14,7 @@ Create new navigation property to operations for chats
 
 ### CreateExpanded (Default)
 ```
-New-MgChatOperation -ChatId <String> [-AdditionalProperties <Hashtable>] [-AttemptsCount <Int32>]
+New-MgBetaChatOperation -ChatId <String> [-AdditionalProperties <Hashtable>] [-AttemptsCount <Int32>]
  [-CreatedDateTime <DateTime>] [-Error <IMicrosoftGraphOperationError>] [-Id <String>]
  [-LastActionDateTime <DateTime>] [-OperationType <String>] [-Status <String>] [-TargetResourceId <String>]
  [-TargetResourceLocation <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -22,21 +22,21 @@ New-MgChatOperation -ChatId <String> [-AdditionalProperties <Hashtable>] [-Attem
 
 ### Create
 ```
-New-MgChatOperation -ChatId <String> -BodyParameter <IMicrosoftGraphTeamsAsyncOperation1> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaChatOperation -ChatId <String> -BodyParameter <IMicrosoftGraphTeamsAsyncOperation> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgChatOperation -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>] [-AttemptsCount <Int32>]
- [-CreatedDateTime <DateTime>] [-Error <IMicrosoftGraphOperationError>] [-Id <String>]
+New-MgBetaChatOperation -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
+ [-AttemptsCount <Int32>] [-CreatedDateTime <DateTime>] [-Error <IMicrosoftGraphOperationError>] [-Id <String>]
  [-LastActionDateTime <DateTime>] [-OperationType <String>] [-Status <String>] [-TargetResourceId <String>]
  [-TargetResourceLocation <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgChatOperation -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTeamsAsyncOperation1>
+New-MgBetaChatOperation -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTeamsAsyncOperation>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -44,6 +44,20 @@ New-MgChatOperation -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGrap
 Create new navigation property to operations for chats
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -79,10 +93,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 teamsAsyncOperation
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamsAsyncOperation1
+Type: IMicrosoftGraphTeamsAsyncOperation
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -125,7 +139,7 @@ Accept wildcard characters: False
 
 ### -Error
 operationError
-To construct, please use Get-Help -Online and see NOTES section for ERROR properties and create a hash table.
+To construct, see NOTES section for ERROR properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphOperationError
@@ -140,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -157,7 +171,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ITeamsIdentity
@@ -187,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -OperationType
-.
+teamsAsyncOperationType
 
 ```yaml
 Type: String
@@ -283,11 +297,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsAsyncOperation1
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamsAsyncOperation
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsAsyncOperation1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamsAsyncOperation
 ## NOTES
 
 ALIASES
@@ -297,9 +311,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphTeamsAsyncOperation1>`: teamsAsyncOperation
+`BODYPARAMETER <IMicrosoftGraphTeamsAsyncOperation>`: teamsAsyncOperation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AttemptsCount <Int32?>]`: Number of times the operation was attempted before being marked successful or failed.
   - `[CreatedDateTime <DateTime?>]`: Time when the operation was created.
   - `[Error <IMicrosoftGraphOperationError>]`: operationError
@@ -307,17 +321,17 @@ BODYPARAMETER `<IMicrosoftGraphTeamsAsyncOperation1>`: teamsAsyncOperation
     - `[Code <String>]`: Operation error code.
     - `[Message <String>]`: Operation error message.
   - `[LastActionDateTime <DateTime?>]`: Time when the async operation was last updated.
-  - `[OperationType <String>]`: 
+  - `[OperationType <String>]`: teamsAsyncOperationType
   - `[Status <String>]`: teamsAsyncOperationStatus
   - `[TargetResourceId <String>]`: The ID of the object that's created or modified as result of this async operation, typically a team.
   - `[TargetResourceLocation <String>]`: The location of the object that's created or modified as result of this async operation. This URL should be treated as an opaque value and not parsed into its component paths.
 
-ERROR `<IMicrosoftGraphOperationError>`: operationError
+`ERROR <IMicrosoftGraphOperationError>`: operationError
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Code <String>]`: Operation error code.
   - `[Message <String>]`: Operation error message.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat

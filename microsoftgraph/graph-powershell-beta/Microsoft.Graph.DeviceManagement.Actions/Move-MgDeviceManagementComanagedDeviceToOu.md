@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/move-mgdevicemanagementcomanageddevicetoou
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/move-mgbetadevicemanagementcomanageddevicetoou
 schema: 2.0.0
 ---
 
-# Move-MgDeviceManagementComanagedDeviceToOu
+# Move-MgBetaDeviceManagementComanagedDeviceToOu
 
 ## SYNOPSIS
 Invoke action moveDevicesToOU
@@ -14,13 +14,13 @@ Invoke action moveDevicesToOU
 
 ### MoveExpanded (Default)
 ```
-Move-MgDeviceManagementComanagedDeviceToOu [-AdditionalProperties <Hashtable>] [-DeviceIds <String[]>]
+Move-MgBetaDeviceManagementComanagedDeviceToOu [-AdditionalProperties <Hashtable>] [-DeviceIds <String[]>]
  [-OrganizationalUnitPath <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Move
 ```
-Move-MgDeviceManagementComanagedDeviceToOu
+Move-MgBetaDeviceManagementComanagedDeviceToOu
  -BodyParameter <IPathsU50RagDevicemanagementComanageddevicesMicrosoftGraphMovedevicestoouPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -29,6 +29,20 @@ Move-MgDeviceManagementComanagedDeviceToOu
 Invoke action moveDevicesToOU
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -49,7 +63,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPathsU50RagDevicemanagementComanageddevicesMicrosoftGraphMovedevicestoouPostRequestbodyContentApplicationJsonSchema
@@ -144,7 +158,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsU50RagDevicemanagementComanageddevicesMicrosoftGraphMovedevicestoouPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsU50RagDevicemanagementComanageddevicesMicrosoftGraphMovedevicestoouPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### System.Boolean
@@ -157,7 +171,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsU50RagDevicemanagementComanageddevicesMicrosoftGraphMovedevicestoouPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsU50RagDevicemanagementComanageddevicesMicrosoftGraphMovedevicestoouPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeviceIds <String[]>]`: 
   - `[OrganizationalUnitPath <String>]`: 

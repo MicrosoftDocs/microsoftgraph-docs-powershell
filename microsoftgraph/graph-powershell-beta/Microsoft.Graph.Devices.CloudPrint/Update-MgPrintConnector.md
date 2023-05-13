@@ -1,54 +1,55 @@
----
-external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
-Module Name: Microsoft.Graph.Devices.CloudPrint
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintconnector
+﻿---
+external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
+Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintconnector
 schema: 2.0.0
 ---
 
-# Update-MgPrintConnector
+# Update-MgBetaPrintConnector
 
 ## SYNOPSIS
-Update the navigation property connectors in print
+Update the properties of a **printConnector** object.
 
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
-Update-MgPrintConnector -PrintConnectorId <String> [-AdditionalProperties <Hashtable>] [-AppVersion <String>]
- [-DeviceHealth <IMicrosoftGraphDeviceHealth>] [-DisplayName <String>] [-FullyQualifiedDomainName <String>]
- [-Id <String>] [-Location <IMicrosoftGraphPrinterLocation>] [-Name <String>] [-OperatingSystem <String>]
- [-RegisteredDateTime <DateTime>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaPrintConnector -PrintConnectorId <String> [-AdditionalProperties <Hashtable>]
+ [-AppVersion <String>] [-DeviceHealth <IMicrosoftGraphDeviceHealth>] [-DisplayName <String>]
+ [-FullyQualifiedDomainName <String>] [-Id <String>] [-Location <IMicrosoftGraphPrinterLocation>]
+ [-Name <String>] [-OperatingSystem <String>] [-RegisteredDateTime <DateTime>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgPrintConnector -PrintConnectorId <String> -BodyParameter <IMicrosoftGraphPrintConnector> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaPrintConnector -PrintConnectorId <String> -BodyParameter <IMicrosoftGraphPrintConnector> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgPrintConnector -InputObject <IDevicesCloudPrintIdentity> [-AdditionalProperties <Hashtable>]
+Update-MgBetaPrintConnector -InputObject <IDevicesCloudPrintIdentity> [-AdditionalProperties <Hashtable>]
  [-AppVersion <String>] [-DeviceHealth <IMicrosoftGraphDeviceHealth>] [-DisplayName <String>]
  [-FullyQualifiedDomainName <String>] [-Id <String>] [-Location <IMicrosoftGraphPrinterLocation>]
- [-Name <String>] [-OperatingSystem <String>] [-RegisteredDateTime <DateTime>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Name <String>] [-OperatingSystem <String>] [-RegisteredDateTime <DateTime>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgPrintConnector -InputObject <IDevicesCloudPrintIdentity>
- -BodyParameter <IMicrosoftGraphPrintConnector> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaPrintConnector -InputObject <IDevicesCloudPrintIdentity>
+ -BodyParameter <IMicrosoftGraphPrintConnector> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property connectors in print
+Update the properties of a **printConnector** object.
 
 ## EXAMPLES
 
-### Example 1: Using the Update-MgPrintConnector Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Devices.CloudPrint
+Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
 $params = @{
 	DisplayName = "ConnectorName"
 	FullyQualifiedDomainName = "CONNECTOR-MACHINE"
@@ -60,11 +61,8 @@ $params = @{
 		AltitudeInMeters = 3
 	}
 }
-Update-MgPrintConnector -PrintConnectorId $printConnectorId -BodyParameter $params
+Update-MgBetaPrintConnector -PrintConnectorId $printConnectorId -BodyParameter $params
 ```
-
-This example shows how to use the Update-MgPrintConnector Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -100,7 +98,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 printConnector
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPrintConnector
@@ -116,7 +114,7 @@ Accept wildcard characters: False
 
 ### -DeviceHealth
 deviceHealth
-To construct, please use Get-Help -Online and see NOTES section for DEVICEHEALTH properties and create a hash table.
+To construct, see NOTES section for DEVICEHEALTH properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceHealth
@@ -161,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -178,7 +176,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDevicesCloudPrintIdentity
@@ -194,7 +192,7 @@ Accept wildcard characters: False
 
 ### -Location
 printerLocation
-To construct, please use Get-Help -Online and see NOTES section for LOCATION properties and create a hash table.
+To construct, see NOTES section for LOCATION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPrinterLocation
@@ -229,21 +227,6 @@ The connector machine's operating system version.
 ```yaml
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -319,11 +302,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintConnector
+### Microsoft.Graph.Beta.PowerShell.Models.IDevicesCloudPrintIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrintConnector
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrintConnector
 ## NOTES
 
 ALIASES
@@ -333,9 +316,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPrintConnector>`: printConnector
+`BODYPARAMETER <IMicrosoftGraphPrintConnector>`: printConnector
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AppVersion <String>]`: The connector's version.
   - `[DeviceHealth <IMicrosoftGraphDeviceHealth>]`: deviceHealth
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -367,13 +350,15 @@ BODYPARAMETER `<IMicrosoftGraphPrintConnector>`: printConnector
   - `[OperatingSystem <String>]`: The connector machine's operating system version.
   - `[RegisteredDateTime <DateTime?>]`: The DateTimeOffset when the connector was registered.
 
-DEVICEHEALTH `<IMicrosoftGraphDeviceHealth>`: deviceHealth
+`DEVICEHEALTH <IMicrosoftGraphDeviceHealth>`: deviceHealth
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[LastConnectionTime <DateTime?>]`: The last time the device was connected.
 
-INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
+`INPUTOBJECT <IDevicesCloudPrintIdentity>`: Identity Parameter
   - `[GroupId <String>]`: The unique identifier of group
   - `[PrintConnectorId <String>]`: The unique identifier of printConnector
+  - `[PrintDocumentId <String>]`: The unique identifier of printDocument
+  - `[PrintJobId <String>]`: The unique identifier of printJob
   - `[PrintOperationId <String>]`: The unique identifier of printOperation
   - `[PrintServiceEndpointId <String>]`: The unique identifier of printServiceEndpoint
   - `[PrintServiceId <String>]`: The unique identifier of printService
@@ -384,7 +369,7 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
   - `[PrinterShareId <String>]`: The unique identifier of printerShare
   - `[UserId <String>]`: The unique identifier of user
 
-LOCATION `<IMicrosoftGraphPrinterLocation>`: printerLocation
+`LOCATION <IMicrosoftGraphPrinterLocation>`: printerLocation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AltitudeInMeters <Int32?>]`: The altitude, in meters, that the printer is located at.
   - `[Building <String>]`: The building that the printer is located in.

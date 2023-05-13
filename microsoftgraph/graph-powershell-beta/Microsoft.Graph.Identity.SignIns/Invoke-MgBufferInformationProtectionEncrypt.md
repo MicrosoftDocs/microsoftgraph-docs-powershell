@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/invoke-mgbufferinformationprotectionencrypt
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetabufferinformationprotectionencrypt
 schema: 2.0.0
 ---
 
-# Invoke-MgBufferInformationProtectionEncrypt
+# Invoke-MgBetaBufferInformationProtectionEncrypt
 
 ## SYNOPSIS
 Invoke action encryptBuffer
@@ -14,14 +14,14 @@ Invoke action encryptBuffer
 
 ### BufferExpanded (Default)
 ```
-Invoke-MgBufferInformationProtectionEncrypt [-AdditionalProperties <Hashtable>] [-BufferInputFile <String>]
+Invoke-MgBetaBufferInformationProtectionEncrypt [-AdditionalProperties <Hashtable>] [-BufferInputFile <String>]
  [-LabelId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Buffer
 ```
-Invoke-MgBufferInformationProtectionEncrypt
- -BodyParameter <IPathsBetdbaInformationprotectionMicrosoftGraphEncryptbufferPostRequestbodyContentApplicationJsonSchema>
+Invoke-MgBetaBufferInformationProtectionEncrypt
+ -Body <IPathsBetdbaInformationprotectionMicrosoftGraphEncryptbufferPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -29,6 +29,20 @@ Invoke-MgBufferInformationProtectionEncrypt
 Invoke action encryptBuffer
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -47,9 +61,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -BodyParameter
+### -Body
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
 Type: IPathsBetdbaInformationprotectionMicrosoftGraphEncryptbufferPostRequestbodyContentApplicationJsonSchema
@@ -129,10 +143,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsBetdbaInformationprotectionMicrosoftGraphEncryptbufferPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsBetdbaInformationprotectionMicrosoftGraphEncryptbufferPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBufferEncryptionResult
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBufferEncryptionResult
 ## NOTES
 
 ALIASES
@@ -142,7 +156,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsBetdbaInformationprotectionMicrosoftGraphEncryptbufferPostRequestbodyContentApplicationJsonSchema>`: .
+`BODY <IPathsBetdbaInformationprotectionMicrosoftGraphEncryptbufferPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Buffer <Byte[]>]`: 
   - `[LabelId <String>]`: 

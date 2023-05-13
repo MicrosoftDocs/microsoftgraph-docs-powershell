@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/update-mgrolemanagement
@@ -12,16 +12,17 @@ Update roleManagement
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### UpdateExpanded (Default)
 ```
-Update-MgRoleManagement [-AdditionalProperties <Hashtable>] [-Directory <IMicrosoftGraphRbacApplication1>]
- [-EntitlementManagement <IMicrosoftGraphRbacApplication1>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgRoleManagement [-AdditionalProperties <Hashtable>] [-CloudPc <IMicrosoftGraphRbacApplicationMultiple>]
+ [-DeviceManagement <IMicrosoftGraphRbacApplicationMultiple>] [-Directory <IMicrosoftGraphRbacApplication>]
+ [-EntitlementManagement <IMicrosoftGraphRbacApplication>] [-Exchange <IMicrosoftGraphUnifiedRbacApplication>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Update1
+### Update
 ```
-Update-MgRoleManagement -BodyParameter <IMicrosoftGraphRoleManagement> [-PassThru] [-WhatIf] [-Confirm]
+Update-MgRoleManagement -BodyParameter <IMicrosoftGraphRoleManagement1> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -37,7 +38,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded1
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -52,8 +53,8 @@ roleManagement
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRoleManagement
-Parameter Sets: Update1
+Type: IMicrosoftGraphRoleManagement1
+Parameter Sets: Update
 Aliases:
 
 Required: True
@@ -63,13 +64,45 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -CloudPc
+rbacApplicationMultiple
+To construct, please use Get-Help -Online and see NOTES section for CLOUDPC properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphRbacApplicationMultiple
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DeviceManagement
+rbacApplicationMultiple
+To construct, please use Get-Help -Online and see NOTES section for DEVICEMANAGEMENT properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphRbacApplicationMultiple
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Directory
 rbacApplication
 To construct, please use Get-Help -Online and see NOTES section for DIRECTORY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRbacApplication1
-Parameter Sets: UpdateExpanded1
+Type: IMicrosoftGraphRbacApplication
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -84,8 +117,24 @@ rbacApplication
 To construct, please use Get-Help -Online and see NOTES section for ENTITLEMENTMANAGEMENT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRbacApplication1
-Parameter Sets: UpdateExpanded1
+Type: IMicrosoftGraphRbacApplication
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Exchange
+unifiedRbacApplication
+To construct, please use Get-Help -Online and see NOTES section for EXCHANGE properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphUnifiedRbacApplication
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -146,7 +195,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRoleManagement
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRoleManagement1
 ## OUTPUTS
 
 ### System.Boolean
@@ -757,5 +806,8 @@ ENTITLEMENTMANAGEMENT `<IMicrosoftGraphRbacApplication1>`: rbacApplication
   - `[RoleEligibilitySchedules <IMicrosoftGraphUnifiedRoleEligibilitySchedule[]>]`: Schedules for role eligibility operations.
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS

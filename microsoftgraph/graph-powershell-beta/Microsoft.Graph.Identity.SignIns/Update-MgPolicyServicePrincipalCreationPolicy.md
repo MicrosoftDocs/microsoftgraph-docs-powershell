@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgpolicyserviceprincipalcreationpolicy
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyserviceprincipalcreationpolicy
 schema: 2.0.0
 ---
 
-# Update-MgPolicyServicePrincipalCreationPolicy
+# Update-MgBetaPolicyServicePrincipalCreationPolicy
 
 ## SYNOPSIS
 Update the navigation property servicePrincipalCreationPolicies in policies
@@ -14,40 +14,52 @@ Update the navigation property servicePrincipalCreationPolicies in policies
 
 ### UpdateExpanded (Default)
 ```
-Update-MgPolicyServicePrincipalCreationPolicy -ServicePrincipalCreationPolicyId <String>
+Update-MgBetaPolicyServicePrincipalCreationPolicy -ServicePrincipalCreationPolicyId <String>
  [-AdditionalProperties <Hashtable>] [-DeletedDateTime <DateTime>] [-Description <String>]
  [-DisplayName <String>] [-Excludes <IMicrosoftGraphServicePrincipalCreationConditionSet[]>] [-Id <String>]
- [-Includes <IMicrosoftGraphServicePrincipalCreationConditionSet[]>] [-IsBuiltIn] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-Includes <IMicrosoftGraphServicePrincipalCreationConditionSet[]>] [-IsBuiltIn] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgPolicyServicePrincipalCreationPolicy -ServicePrincipalCreationPolicyId <String>
- -BodyParameter <IMicrosoftGraphServicePrincipalCreationPolicy> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaPolicyServicePrincipalCreationPolicy -ServicePrincipalCreationPolicyId <String>
+ -BodyParameter <IMicrosoftGraphServicePrincipalCreationPolicy> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgPolicyServicePrincipalCreationPolicy -InputObject <IIdentitySignInsIdentity>
+Update-MgBetaPolicyServicePrincipalCreationPolicy -InputObject <IIdentitySignInsIdentity>
  [-AdditionalProperties <Hashtable>] [-DeletedDateTime <DateTime>] [-Description <String>]
  [-DisplayName <String>] [-Excludes <IMicrosoftGraphServicePrincipalCreationConditionSet[]>] [-Id <String>]
- [-Includes <IMicrosoftGraphServicePrincipalCreationConditionSet[]>] [-IsBuiltIn] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-Includes <IMicrosoftGraphServicePrincipalCreationConditionSet[]>] [-IsBuiltIn] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgPolicyServicePrincipalCreationPolicy -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphServicePrincipalCreationPolicy> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaPolicyServicePrincipalCreationPolicy -InputObject <IIdentitySignInsIdentity>
+ -BodyParameter <IMicrosoftGraphServicePrincipalCreationPolicy> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property servicePrincipalCreationPolicies in policies
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -68,7 +80,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 servicePrincipalCreationPolicy
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphServicePrincipalCreationPolicy
@@ -132,7 +144,7 @@ Accept wildcard characters: False
 
 ### -Excludes
 .
-To construct, please use Get-Help -Online and see NOTES section for EXCLUDES properties and create a hash table.
+To construct, see NOTES section for EXCLUDES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphServicePrincipalCreationConditionSet[]
@@ -147,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -164,7 +176,7 @@ Accept wildcard characters: False
 
 ### -Includes
 .
-To construct, please use Get-Help -Online and see NOTES section for INCLUDES properties and create a hash table.
+To construct, see NOTES section for INCLUDES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphServicePrincipalCreationConditionSet[]
@@ -180,7 +192,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IIdentitySignInsIdentity
@@ -200,21 +212,6 @@ Accept wildcard characters: False
 ```yaml
 Type: SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -275,11 +272,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServicePrincipalCreationPolicy
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphServicePrincipalCreationPolicy
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphServicePrincipalCreationPolicy
 ## NOTES
 
 ALIASES
@@ -289,14 +286,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphServicePrincipalCreationPolicy>`: servicePrincipalCreationPolicy
+`BODYPARAMETER <IMicrosoftGraphServicePrincipalCreationPolicy>`: servicePrincipalCreationPolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Description <String>]`: Description for this policy. Required.
   - `[DisplayName <String>]`: Display name for this policy. Required.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Excludes <IMicrosoftGraphServicePrincipalCreationConditionSet[]>]`: 
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[ApplicationIds <String[]>]`: 
     - `[ApplicationPublisherIds <String[]>]`: 
     - `[ApplicationTenantIds <String[]>]`: 
@@ -305,23 +302,23 @@ BODYPARAMETER `<IMicrosoftGraphServicePrincipalCreationPolicy>`: servicePrincipa
   - `[Includes <IMicrosoftGraphServicePrincipalCreationConditionSet[]>]`: 
   - `[IsBuiltIn <Boolean?>]`: 
 
-EXCLUDES <IMicrosoftGraphServicePrincipalCreationConditionSet\[]>: .
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`EXCLUDES <IMicrosoftGraphServicePrincipalCreationConditionSet[]>`: .
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ApplicationIds <String[]>]`: 
   - `[ApplicationPublisherIds <String[]>]`: 
   - `[ApplicationTenantIds <String[]>]`: 
   - `[ApplicationsFromVerifiedPublisherOnly <Boolean?>]`: 
   - `[CertifiedApplicationsOnly <Boolean?>]`: 
 
-INCLUDES <IMicrosoftGraphServicePrincipalCreationConditionSet\[]>: .
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`INCLUDES <IMicrosoftGraphServicePrincipalCreationConditionSet[]>`: .
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ApplicationIds <String[]>]`: 
   - `[ApplicationPublisherIds <String[]>]`: 
   - `[ApplicationTenantIds <String[]>]`: 
   - `[ApplicationsFromVerifiedPublisherOnly <Boolean?>]`: 
   - `[CertifiedApplicationsOnly <Boolean?>]`: 
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentitySignInsIdentity>`: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: The unique identifier of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
@@ -358,6 +355,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[IdentityUserFlowAttributeId <String>]`: The unique identifier of identityUserFlowAttribute
   - `[IdentityUserFlowId <String>]`: The unique identifier of identityUserFlow
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
+  - `[InvitationId <String>]`: The unique identifier of invitation
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   - `[MobilityManagementPolicyId <String>]`: The unique identifier of mobilityManagementPolicy

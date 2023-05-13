@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.notes/get-mguseronenotenotebooksection
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotenotebooksection
 schema: 2.0.0
-ms.prod: onenote
 ---
 
 # Get-MgUserOnenoteNotebookSection
@@ -24,15 +23,12 @@ Retrieve a list of onenoteSection objects from the specified notebook.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgUserOnenoteNotebookSection Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Notes
 # A UPN can also be used as -UserId.
 Get-MgUserOnenoteNotebookSection -UserId $userId -NotebookId $notebookId
 ```
-
-This example shows how to use the Get-MgUserOnenoteNotebookSection Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Bookings-help.xml
-Module Name: Microsoft.Graph.Bookings
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.bookings/new-mgbusinessscenarioplannerplanconfigurationlocalization
+﻿---
+external help file: Microsoft.Graph.Beta.Bookings-help.xml
+Module Name: Microsoft.Graph.Beta.Bookings
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabusinessscenarioplannerplanconfigurationlocalization
 schema: 2.0.0
 ---
 
-# New-MgBusinessScenarioPlannerPlanConfigurationLocalization
+# New-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization
 
 ## SYNOPSIS
 Create a new plannerPlanConfigurationLocalization object.
@@ -14,27 +14,27 @@ Create a new plannerPlanConfigurationLocalization object.
 
 ### CreateExpanded (Default)
 ```
-New-MgBusinessScenarioPlannerPlanConfigurationLocalization -BusinessScenarioId <String>
+New-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization -BusinessScenarioId <String>
  [-AdditionalProperties <Hashtable>] [-Buckets <IMicrosoftGraphPlannerPlanConfigurationBucketLocalization[]>]
  [-Id <String>] [-LanguageTag <String>] [-PlanTitle <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBusinessScenarioPlannerPlanConfigurationLocalization -BusinessScenarioId <String>
+New-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization -BusinessScenarioId <String>
  -BodyParameter <IMicrosoftGraphPlannerPlanConfigurationLocalization> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgBusinessScenarioPlannerPlanConfigurationLocalization -InputObject <IBookingsIdentity>
+New-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization -InputObject <IBookingsIdentity>
  [-AdditionalProperties <Hashtable>] [-Buckets <IMicrosoftGraphPlannerPlanConfigurationBucketLocalization[]>]
  [-Id <String>] [-LanguageTag <String>] [-PlanTitle <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgBusinessScenarioPlannerPlanConfigurationLocalization -InputObject <IBookingsIdentity>
+New-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization -InputObject <IBookingsIdentity>
  -BodyParameter <IMicrosoftGraphPlannerPlanConfigurationLocalization> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -42,6 +42,16 @@ New-MgBusinessScenarioPlannerPlanConfigurationLocalization -InputObject <IBookin
 Create a new plannerPlanConfigurationLocalization object.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -62,7 +72,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 plannerPlanConfigurationLocalization
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPlannerPlanConfigurationLocalization
@@ -78,7 +88,7 @@ Accept wildcard characters: False
 
 ### -Buckets
 Localized names for configured buckets in the plan configuration.
-To construct, please use Get-Help -Online and see NOTES section for BUCKETS properties and create a hash table.
+To construct, see NOTES section for BUCKETS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPlannerPlanConfigurationBucketLocalization[]
@@ -108,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -125,7 +135,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IBookingsIdentity
@@ -205,11 +215,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IBookingsIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerPlanConfigurationLocalization
+### Microsoft.Graph.Beta.PowerShell.Models.IBookingsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerPlanConfigurationLocalization
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerPlanConfigurationLocalization
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerPlanConfigurationLocalization
 ## NOTES
 
 ALIASES
@@ -219,28 +229,26 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPlannerPlanConfigurationLocalization>`: plannerPlanConfigurationLocalization
+`BODYPARAMETER <IMicrosoftGraphPlannerPlanConfigurationLocalization>`: plannerPlanConfigurationLocalization
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Buckets <IMicrosoftGraphPlannerPlanConfigurationBucketLocalization[]>]`: Localized names for configured buckets in the plan configuration.
     - `[ExternalBucketId <String>]`: Application-specified identifier of the bucket.
     - `[Name <String>]`: Name of the bucket.
   - `[LanguageTag <String>]`: The language code associated with the localized names in this object.
   - `[PlanTitle <String>]`: Localized title of the plan.
 
-BUCKETS <IMicrosoftGraphPlannerPlanConfigurationBucketLocalization\[]>: Localized names for configured buckets in the plan configuration.
+`BUCKETS <IMicrosoftGraphPlannerPlanConfigurationBucketLocalization[]>`: Localized names for configured buckets in the plan configuration.
   - `[ExternalBucketId <String>]`: Application-specified identifier of the bucket.
   - `[Name <String>]`: Name of the bucket.
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+`INPUTOBJECT <IBookingsIdentity>`: Identity Parameter
   - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
   - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness
   - `[BookingCurrencyId <String>]`: The unique identifier of bookingCurrency
   - `[BookingCustomQuestionId <String>]`: The unique identifier of bookingCustomQuestion
-  - `[BookingCustomerBaseId <String>]`: The unique identifier of bookingCustomerBase
   - `[BookingCustomerId <String>]`: The unique identifier of bookingCustomer
   - `[BookingServiceId <String>]`: The unique identifier of bookingService
-  - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
   - `[BookingStaffMemberId <String>]`: The unique identifier of bookingStaffMember
   - `[BusinessScenarioId <String>]`: The unique identifier of businessScenario
   - `[BusinessScenarioTaskId <String>]`: The unique identifier of businessScenarioTask

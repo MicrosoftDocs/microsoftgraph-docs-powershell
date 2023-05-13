@@ -1,12 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgriskyuserhistory
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetariskyuserhistory
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
-# New-MgRiskyUserHistory
+# New-MgBetaRiskyUserHistory
 
 ## SYNOPSIS
 Create new navigation property to history for identityProtection
@@ -15,8 +14,8 @@ Create new navigation property to history for identityProtection
 
 ### CreateExpanded (Default)
 ```
-New-MgRiskyUserHistory -RiskyUserId <String> [-Activity <IMicrosoftGraphRiskUserActivity1>]
- [-AdditionalProperties <Hashtable>] [-History <IMicrosoftGraphRiskyUserHistoryItem1[]>] [-Id <String>]
+New-MgBetaRiskyUserHistory -RiskyUserId <String> [-Activity <IMicrosoftGraphRiskUserActivity>]
+ [-AdditionalProperties <Hashtable>] [-History <IMicrosoftGraphRiskyUserHistoryItem[]>] [-Id <String>]
  [-InitiatedBy <String>] [-IsDeleted] [-IsProcessing] [-RiskDetail <String>]
  [-RiskLastUpdatedDateTime <DateTime>] [-RiskLevel <String>] [-RiskState <String>] [-UserDisplayName <String>]
  [-UserId <String>] [-UserPrincipalName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -24,23 +23,24 @@ New-MgRiskyUserHistory -RiskyUserId <String> [-Activity <IMicrosoftGraphRiskUser
 
 ### Create
 ```
-New-MgRiskyUserHistory -RiskyUserId <String> -BodyParameter <IMicrosoftGraphRiskyUserHistoryItem1> [-WhatIf]
+New-MgBetaRiskyUserHistory -RiskyUserId <String> -BodyParameter <IMicrosoftGraphRiskyUserHistoryItem> [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgRiskyUserHistory -InputObject <IIdentitySignInsIdentity> [-Activity <IMicrosoftGraphRiskUserActivity1>]
- [-AdditionalProperties <Hashtable>] [-History <IMicrosoftGraphRiskyUserHistoryItem1[]>] [-Id <String>]
- [-InitiatedBy <String>] [-IsDeleted] [-IsProcessing] [-RiskDetail <String>]
- [-RiskLastUpdatedDateTime <DateTime>] [-RiskLevel <String>] [-RiskState <String>] [-UserDisplayName <String>]
- [-UserId <String>] [-UserPrincipalName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaRiskyUserHistory -InputObject <IIdentitySignInsIdentity>
+ [-Activity <IMicrosoftGraphRiskUserActivity>] [-AdditionalProperties <Hashtable>]
+ [-History <IMicrosoftGraphRiskyUserHistoryItem[]>] [-Id <String>] [-InitiatedBy <String>] [-IsDeleted]
+ [-IsProcessing] [-RiskDetail <String>] [-RiskLastUpdatedDateTime <DateTime>] [-RiskLevel <String>]
+ [-RiskState <String>] [-UserDisplayName <String>] [-UserId <String>] [-UserPrincipalName <String>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgRiskyUserHistory -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphRiskyUserHistoryItem1> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaRiskyUserHistory -InputObject <IIdentitySignInsIdentity>
+ -BodyParameter <IMicrosoftGraphRiskyUserHistoryItem> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -48,25 +48,21 @@ Create new navigation property to history for identityProtection
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
-
-Get-MgRiskyUserHistory -RiskyUserId $riskyUserId
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
 ```
 
-This example shows how to use the New-MgRiskyUserHistory Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Get-MgBetaRiskyUserHistory -RiskyUserId $riskyUserId
 
 ## PARAMETERS
 
 ### -Activity
 riskUserActivity
-To construct, please use Get-Help -Online and see NOTES section for ACTIVITY properties and create a hash table.
+To construct, see NOTES section for ACTIVITY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRiskUserActivity1
+Type: IMicrosoftGraphRiskUserActivity
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -94,10 +90,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 riskyUserHistoryItem
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRiskyUserHistoryItem1
+Type: IMicrosoftGraphRiskyUserHistoryItem
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -110,10 +106,10 @@ Accept wildcard characters: False
 
 ### -History
 .
-To construct, please use Get-Help -Online and see NOTES section for HISTORY properties and create a hash table.
+To construct, see NOTES section for HISTORY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRiskyUserHistoryItem1[]
+Type: IMicrosoftGraphRiskyUserHistoryItem[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -125,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -157,7 +153,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IIdentitySignInsIdentity
@@ -360,11 +356,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRiskyUserHistoryItem1
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRiskyUserHistoryItem
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRiskyUserHistoryItem1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRiskyUserHistoryItem
 ## NOTES
 
 ALIASES
@@ -374,15 +370,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ACTIVITY `<IMicrosoftGraphRiskUserActivity1>`: riskUserActivity
+`ACTIVITY <IMicrosoftGraphRiskUserActivity>`: riskUserActivity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Detail <String>]`: riskDetail
   - `[EventTypes <String[]>]`: 
-  - `[RiskEventTypes <String[]>]`: The type of risk event detected.
+  - `[RiskEventTypes <String[]>]`: 
 
-BODYPARAMETER `<IMicrosoftGraphRiskyUserHistoryItem1>`: riskyUserHistoryItem
+`BODYPARAMETER <IMicrosoftGraphRiskyUserHistoryItem>`: riskyUserHistoryItem
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[History <IMicrosoftGraphRiskyUserHistoryItem1[]>]`: 
+  - `[History <IMicrosoftGraphRiskyUserHistoryItem[]>]`: 
   - `[IsDeleted <Boolean?>]`: Indicates whether the user is deleted. Possible values are: true, false.
   - `[IsProcessing <Boolean?>]`: Indicates whether a user's risky state is being processed by the backend.
   - `[RiskDetail <String>]`: riskDetail
@@ -391,17 +387,17 @@ BODYPARAMETER `<IMicrosoftGraphRiskyUserHistoryItem1>`: riskyUserHistoryItem
   - `[RiskState <String>]`: riskState
   - `[UserDisplayName <String>]`: Risky user display name.
   - `[UserPrincipalName <String>]`: Risky user principal name.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[Activity <IMicrosoftGraphRiskUserActivity1>]`: riskUserActivity
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
+  - `[Activity <IMicrosoftGraphRiskUserActivity>]`: riskUserActivity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Detail <String>]`: riskDetail
     - `[EventTypes <String[]>]`: 
-    - `[RiskEventTypes <String[]>]`: The type of risk event detected.
+    - `[RiskEventTypes <String[]>]`: 
   - `[InitiatedBy <String>]`: The ID of actor that does the operation.
   - `[UserId <String>]`: The ID of the user.
 
-HISTORY <IMicrosoftGraphRiskyUserHistoryItem1\[]>: .
-  - `[History <IMicrosoftGraphRiskyUserHistoryItem1[]>]`: 
+`HISTORY <IMicrosoftGraphRiskyUserHistoryItem[]>`: .
+  - `[History <IMicrosoftGraphRiskyUserHistoryItem[]>]`: 
   - `[IsDeleted <Boolean?>]`: Indicates whether the user is deleted. Possible values are: true, false.
   - `[IsProcessing <Boolean?>]`: Indicates whether a user's risky state is being processed by the backend.
   - `[RiskDetail <String>]`: riskDetail
@@ -410,16 +406,16 @@ HISTORY <IMicrosoftGraphRiskyUserHistoryItem1\[]>: .
   - `[RiskState <String>]`: riskState
   - `[UserDisplayName <String>]`: Risky user display name.
   - `[UserPrincipalName <String>]`: Risky user principal name.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[Activity <IMicrosoftGraphRiskUserActivity1>]`: riskUserActivity
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
+  - `[Activity <IMicrosoftGraphRiskUserActivity>]`: riskUserActivity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Detail <String>]`: riskDetail
     - `[EventTypes <String[]>]`: 
-    - `[RiskEventTypes <String[]>]`: The type of risk event detected.
+    - `[RiskEventTypes <String[]>]`: 
   - `[InitiatedBy <String>]`: The ID of actor that does the operation.
   - `[UserId <String>]`: The ID of the user.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentitySignInsIdentity>`: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: The unique identifier of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
@@ -456,6 +452,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[IdentityUserFlowAttributeId <String>]`: The unique identifier of identityUserFlowAttribute
   - `[IdentityUserFlowId <String>]`: The unique identifier of identityUserFlow
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
+  - `[InvitationId <String>]`: The unique identifier of invitation
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   - `[MobilityManagementPolicyId <String>]`: The unique identifier of mobilityManagementPolicy

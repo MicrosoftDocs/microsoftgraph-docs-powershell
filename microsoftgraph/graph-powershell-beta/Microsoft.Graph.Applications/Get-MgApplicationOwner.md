@@ -1,12 +1,11 @@
----
-external help file: Microsoft.Graph.Applications-help.xml
-Module Name: Microsoft.Graph.Applications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgapplicationowner
+﻿---
+external help file: Microsoft.Graph.Beta.Applications-help.xml
+Module Name: Microsoft.Graph.Beta.Applications
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationowner
 schema: 2.0.0
-ms.prod: applications
 ---
 
-# Get-MgApplicationOwner
+# Get-MgBetaApplicationOwner
 
 ## SYNOPSIS
 Directory objects that are owners of the application.
@@ -17,7 +16,7 @@ Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count 
 ## SYNTAX
 
 ```
-Get-MgApplicationOwner -ApplicationId <String> [-ExpandProperty <String[]>] [-Filter <String>]
+Get-MgBetaApplicationOwner -ApplicationId <String> [-ExpandProperty <String[]>] [-Filter <String>]
  [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-ConsistencyLevel <String>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
@@ -30,14 +29,11 @@ Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count 
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgApplicationOwner Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Applications
-Get-MgApplicationOwner -ApplicationId $applicationId
+Import-Module Microsoft.Graph.Beta.Applications
+Get-MgBetaApplicationOwner -ApplicationId $applicationId
 ```
-
-This example shows how to use the Get-MgApplicationOwner Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -230,7 +226,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryObject
 ## NOTES
 
 ALIASES

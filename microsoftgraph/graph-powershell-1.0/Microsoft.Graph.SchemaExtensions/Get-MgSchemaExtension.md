@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.SchemaExtensions-help.xml
 Module Name: Microsoft.Graph.SchemaExtensions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.schemaextensions/get-mgschemaextension
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.schemaextensions/get-mgschemaextension
 schema: 2.0.0
-ms.prod: extensions
 ---
 
 # Get-MgSchemaExtension
@@ -13,20 +12,20 @@ Get schemaExtension
 
 ## SYNTAX
 
-### List1 (Default)
+### List (Default)
 ```
 Get-MgSchemaExtension [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>]
  [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
  [<CommonParameters>]
 ```
 
-### Get1
+### Get
 ```
 Get-MgSchemaExtension -SchemaExtensionId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### GetViaIdentity
 ```
 Get-MgSchemaExtension -InputObject <ISchemaExtensionsIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
@@ -37,23 +36,17 @@ Get schemaExtension
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgSchemaExtension Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.SchemaExtensions
 Get-MgSchemaExtension -SchemaExtensionId $schemaExtensionId
 ```
 
-This example shows how to use the Get-MgSchemaExtension Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Get-MgSchemaExtension Cmdlet
+### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.SchemaExtensions
 Get-MgSchemaExtension -Filter "id eq 'graphlearn_test'"
 ```
-
-This example shows how to use the Get-MgSchemaExtension Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -62,7 +55,7 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -78,7 +71,7 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: List
 Aliases: CV
 
 Required: False
@@ -108,7 +101,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -120,11 +113,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ISchemaExtensionsIdentity
-Parameter Sets: GetViaIdentity1
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
@@ -139,7 +132,7 @@ Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -165,11 +158,11 @@ Accept wildcard characters: False
 ```
 
 ### -SchemaExtensionId
-key: id of schemaExtension
+The unique identifier of schemaExtension
 
 ```yaml
 Type: String
-Parameter Sets: Get1
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -184,7 +177,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -199,7 +192,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List1
+Parameter Sets: List
 Aliases: OrderBy
 
 Required: False
@@ -214,7 +207,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Parameter Sets: List
 Aliases: Limit
 
 Required: False
@@ -229,7 +222,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -257,7 +250,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISchemaExtensionsIdentity>`: Identity Parameter
-  - `[SchemaExtensionId <String>]`: key: id of schemaExtension
+`INPUTOBJECT <ISchemaExtensionsIdentity>`: Identity Parameter
+  - `[SchemaExtensionId <String>]`: The unique identifier of schemaExtension
 
 ## RELATED LINKS

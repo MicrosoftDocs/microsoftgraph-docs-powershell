@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticbatteryhealthdeviceperformance
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticbatteryhealthdeviceperformance
 schema: 2.0.0
 ---
 
-# New-MgDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance
+# New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance
 
 ## SYNOPSIS
 Create new navigation property to userExperienceAnalyticsBatteryHealthDevicePerformance for deviceManagement
@@ -14,16 +14,16 @@ Create new navigation property to userExperienceAnalyticsBatteryHealthDevicePerf
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance [-AdditionalProperties <Hashtable>]
- [-BatteryAgeInDays <Int32>] [-DeviceBatteryHealthScore <Int32>] [-DeviceId <String>] [-DeviceName <String>]
- [-EstimatedRuntimeInMinutes <Int32>] [-HealthStatus <UserExperienceAnalyticsHealthState>] [-Id <String>]
- [-Manufacturer <String>] [-MaxCapacityPercentage <Int32>] [-Model <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance
+ [-AdditionalProperties <Hashtable>] [-BatteryAgeInDays <Int32>] [-DeviceBatteryHealthScore <Int32>]
+ [-DeviceId <String>] [-DeviceName <String>] [-EstimatedRuntimeInMinutes <Int32>]
+ [-HealthStatus <UserExperienceAnalyticsHealthState>] [-Id <String>] [-Manufacturer <String>]
+ [-MaxCapacityPercentage <Int32>] [-Model <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance
+New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance
  -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDevicePerformance> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
@@ -32,6 +32,20 @@ New-MgDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance
 Create new navigation property to userExperienceAnalyticsBatteryHealthDevicePerformance for deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -69,7 +83,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 The user experience analytics battery health device performance entity contains device level battery information.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDevicePerformance
@@ -163,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -261,10 +275,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDevicePerformance
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDevicePerformance
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDevicePerformance
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDevicePerformance
 ## NOTES
 
 ALIASES
@@ -274,9 +288,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDevicePerformance>`: The user experience analytics battery health device performance entity contains device level battery information.
+`BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDevicePerformance>`: The user experience analytics battery health device performance entity contains device level battery information.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[BatteryAgeInDays <Int32?>]`: Estimated battery age. Unit in days. Valid values -2147483648 to 2147483647
   - `[DeviceBatteryHealthScore <Int32?>]`: A weighted average of a device's maximum capacity score and runtime estimate score. Values range from 0-100. Valid values -2147483648 to 2147483647
   - `[DeviceId <String>]`: The unique identifier of the device, Intune DeviceID.

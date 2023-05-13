@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Files-help.xml
-Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/new-mgdriveitemversion
+﻿---
+external help file: Microsoft.Graph.Beta.Files-help.xml
+Module Name: Microsoft.Graph.Beta.Files
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriveitemversion
 schema: 2.0.0
 ---
 
-# New-MgDriveItemVersion
+# New-MgBetaDriveItemVersion
 
 ## SYNOPSIS
 Create new navigation property to versions for drives
@@ -14,7 +14,7 @@ Create new navigation property to versions for drives
 
 ### CreateExpanded (Default)
 ```
-New-MgDriveItemVersion -DriveId <String> -DriveItemId <String> [-AdditionalProperties <Hashtable>]
+New-MgBetaDriveItemVersion -DriveId <String> -DriveItemId <String> [-AdditionalProperties <Hashtable>]
  [-ContentInputFile <String>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-LastModifiedDateTime <DateTime>] [-Publication <IMicrosoftGraphPublicationFacet>] [-Size <Int64>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -22,13 +22,13 @@ New-MgDriveItemVersion -DriveId <String> -DriveItemId <String> [-AdditionalPrope
 
 ### Create
 ```
-New-MgDriveItemVersion -DriveId <String> -DriveItemId <String> -BodyParameter <IMicrosoftGraphDriveItemVersion>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaDriveItemVersion -DriveId <String> -DriveItemId <String>
+ -BodyParameter <IMicrosoftGraphDriveItemVersion> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgDriveItemVersion -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
+New-MgBetaDriveItemVersion -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
  [-ContentInputFile <String>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-LastModifiedDateTime <DateTime>] [-Publication <IMicrosoftGraphPublicationFacet>] [-Size <Int64>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -36,14 +36,28 @@ New-MgDriveItemVersion -InputObject <IFilesIdentity> [-AdditionalProperties <Has
 
 ### CreateViaIdentity
 ```
-New-MgDriveItemVersion -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraphDriveItemVersion> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaDriveItemVersion -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraphDriveItemVersion>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to versions for drives
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -64,7 +78,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 driveItemVersion
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDriveItemVersion
@@ -79,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContentInputFile
-Input File for Content (The content stream for this version of the item.)
+Input File for Content (.)
 
 ```yaml
 Type: String
@@ -124,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -141,7 +155,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IFilesIdentity
@@ -157,7 +171,7 @@ Accept wildcard characters: False
 
 ### -LastModifiedBy
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBY properties and create a hash table.
+To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet
@@ -189,7 +203,7 @@ Accept wildcard characters: False
 
 ### -Publication
 publicationFacet
-To construct, please use Get-Help -Online and see NOTES section for PUBLICATION properties and create a hash table.
+To construct, see NOTES section for PUBLICATION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPublicationFacet
@@ -254,11 +268,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDriveItemVersion
+### Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDriveItemVersion
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDriveItemVersion
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDriveItemVersion
 ## NOTES
 
 ALIASES
@@ -268,7 +282,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDriveItemVersion>`: driveItemVersion
+`BODYPARAMETER <IMicrosoftGraphDriveItemVersion>`: driveItemVersion
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -283,11 +297,11 @@ BODYPARAMETER `<IMicrosoftGraphDriveItemVersion>`: driveItemVersion
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Level <String>]`: The state of publication for this document. Either published or checkout. Read-only.
     - `[VersionId <String>]`: The unique identifier for the version that is visible to the current caller. Read-only.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[Content <Byte[]>]`: The content stream for this version of the item.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
+  - `[Content <Byte[]>]`: 
   - `[Size <Int64?>]`: Indicates the size of the content stream for this version of the item.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+`INPUTOBJECT <IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType
@@ -313,7 +327,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+`LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -322,7 +336,7 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-PUBLICATION `<IMicrosoftGraphPublicationFacet>`: publicationFacet
+`PUBLICATION <IMicrosoftGraphPublicationFacet>`: publicationFacet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Level <String>]`: The state of publication for this document. Either published or checkout. Read-only.
   - `[VersionId <String>]`: The unique identifier for the version that is visible to the current caller. Read-only.

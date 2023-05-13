@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmanageddevicehealthscriptstate
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmanageddevicehealthscriptstate
 schema: 2.0.0
 ---
 
-# New-MgDeviceManagementManagedDeviceHealthScriptState
+# New-MgBetaDeviceManagementManagedDeviceHealthScriptState
 
 ## SYNOPSIS
 Create new navigation property to deviceHealthScriptStates for deviceManagement
@@ -14,7 +14,7 @@ Create new navigation property to deviceHealthScriptStates for deviceManagement
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementManagedDeviceHealthScriptState -ManagedDeviceId <String>
+New-MgBetaDeviceManagementManagedDeviceHealthScriptState -ManagedDeviceId <String>
  [-AdditionalProperties <Hashtable>] [-AssignmentFilterIds <String[]>] [-DetectionState <RunState>]
  [-DeviceId <String>] [-DeviceName <String>] [-ExpectedStateUpdateDateTime <DateTime>] [-Id <String>]
  [-LastStateUpdateDateTime <DateTime>] [-LastSyncDateTime <DateTime>] [-OSVersion <String>]
@@ -26,13 +26,13 @@ New-MgDeviceManagementManagedDeviceHealthScriptState -ManagedDeviceId <String>
 
 ### Create
 ```
-New-MgDeviceManagementManagedDeviceHealthScriptState -ManagedDeviceId <String>
+New-MgBetaDeviceManagementManagedDeviceHealthScriptState -ManagedDeviceId <String>
  -BodyParameter <IMicrosoftGraphDeviceHealthScriptPolicyState> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgDeviceManagementManagedDeviceHealthScriptState -InputObject <IDeviceManagementIdentity>
+New-MgBetaDeviceManagementManagedDeviceHealthScriptState -InputObject <IDeviceManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-AssignmentFilterIds <String[]>] [-DetectionState <RunState>]
  [-DeviceId <String>] [-DeviceName <String>] [-ExpectedStateUpdateDateTime <DateTime>] [-Id <String>]
  [-LastStateUpdateDateTime <DateTime>] [-LastSyncDateTime <DateTime>] [-OSVersion <String>]
@@ -44,7 +44,7 @@ New-MgDeviceManagementManagedDeviceHealthScriptState -InputObject <IDeviceManage
 
 ### CreateViaIdentity
 ```
-New-MgDeviceManagementManagedDeviceHealthScriptState -InputObject <IDeviceManagementIdentity>
+New-MgBetaDeviceManagementManagedDeviceHealthScriptState -InputObject <IDeviceManagementIdentity>
  -BodyParameter <IMicrosoftGraphDeviceHealthScriptPolicyState> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -52,6 +52,16 @@ New-MgDeviceManagementManagedDeviceHealthScriptState -InputObject <IDeviceManage
 Create new navigation property to deviceHealthScriptStates for deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -87,7 +97,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Contains properties for policy run state of the device health script.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceHealthScriptPolicyState
@@ -178,7 +188,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementIdentity
@@ -423,11 +433,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceHealthScriptPolicyState
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceHealthScriptPolicyState
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceHealthScriptPolicyState
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceHealthScriptPolicyState
 ## NOTES
 
 ALIASES
@@ -437,7 +447,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDeviceHealthScriptPolicyState>`: Contains properties for policy run state of the device health script.
+`BODYPARAMETER <IMicrosoftGraphDeviceHealthScriptPolicyState>`: Contains properties for policy run state of the device health script.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AssignmentFilterIds <String[]>]`: A list of the assignment filter ids used for health script applicability evaluation
   - `[DetectionState <RunState?>]`: Indicates the type of execution status of the device management script.
@@ -458,7 +468,7 @@ BODYPARAMETER `<IMicrosoftGraphDeviceHealthScriptPolicyState>`: Contains propert
   - `[RemediationState <RemediationState?>]`: Indicates the type of execution status of the device management script.
   - `[UserName <String>]`: Name of the user whom ran the device health script
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementIdentity>`: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: The unique identifier of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: The unique identifier of androidManagedStoreAppConfigurationSchema
@@ -590,6 +600,8 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionAppLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionAppLearningSummary
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
+  - `[WindowsQualityUpdateProfileAssignmentId <String>]`: The unique identifier of windowsQualityUpdateProfileAssignment
+  - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
 ## RELATED LINKS
 

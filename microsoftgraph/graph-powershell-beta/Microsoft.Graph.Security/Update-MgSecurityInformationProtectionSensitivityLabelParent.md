@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecurityinformationprotectionsensitivitylabelparent
+﻿---
+external help file: Microsoft.Graph.Beta.Security-help.xml
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityinformationprotectionsensitivitylabelparent
 schema: 2.0.0
 ---
 
-# Update-MgSecurityInformationProtectionSensitivityLabelParent
+# Update-MgBetaSecurityInformationProtectionSensitivityLabelParent
 
 ## SYNOPSIS
 Update the navigation property parent in security
@@ -14,38 +14,52 @@ Update the navigation property parent in security
 
 ### UpdateExpanded (Default)
 ```
-Update-MgSecurityInformationProtectionSensitivityLabelParent -SensitivityLabelId <String>
+Update-MgBetaSecurityInformationProtectionSensitivityLabelParent -SensitivityLabelId <String>
  [-AdditionalProperties <Hashtable>] [-Color <String>] [-ContentFormats <String[]>] [-Description <String>]
  [-HasProtection] [-Id <String>] [-IsActive] [-IsAppliable] [-Name <String>]
- [-Parent <IMicrosoftGraphSecuritySensitivityLabel>] [-Sensitivity <Int32>] [-Tooltip <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Parent <IMicrosoftGraphSecuritySensitivityLabel>] [-Sensitivity <Int32>] [-Tooltip <String>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgSecurityInformationProtectionSensitivityLabelParent -SensitivityLabelId <String>
- -BodyParameter <IMicrosoftGraphSecuritySensitivityLabel> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaSecurityInformationProtectionSensitivityLabelParent -SensitivityLabelId <String>
+ -BodyParameter <IMicrosoftGraphSecuritySensitivityLabel> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgSecurityInformationProtectionSensitivityLabelParent -InputObject <ISecurityIdentity>
+Update-MgBetaSecurityInformationProtectionSensitivityLabelParent -InputObject <ISecurityIdentity>
  [-AdditionalProperties <Hashtable>] [-Color <String>] [-ContentFormats <String[]>] [-Description <String>]
  [-HasProtection] [-Id <String>] [-IsActive] [-IsAppliable] [-Name <String>]
- [-Parent <IMicrosoftGraphSecuritySensitivityLabel>] [-Sensitivity <Int32>] [-Tooltip <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Parent <IMicrosoftGraphSecuritySensitivityLabel>] [-Sensitivity <Int32>] [-Tooltip <String>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgSecurityInformationProtectionSensitivityLabelParent -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecuritySensitivityLabel> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaSecurityInformationProtectionSensitivityLabelParent -InputObject <ISecurityIdentity>
+ -BodyParameter <IMicrosoftGraphSecuritySensitivityLabel> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property parent in security
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -66,7 +80,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 sensitivityLabel
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSecuritySensitivityLabel
@@ -141,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -158,7 +172,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ISecurityIdentity
@@ -221,26 +235,11 @@ Accept wildcard characters: False
 
 ### -Parent
 sensitivityLabel
-To construct, please use Get-Help -Online and see NOTES section for PARENT properties and create a hash table.
+To construct, see NOTES section for PARENT properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSecuritySensitivityLabel
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -331,11 +330,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecuritySensitivityLabel
-### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecuritySensitivityLabel
+### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecuritySensitivityLabel
 ## NOTES
 
 ALIASES
@@ -345,9 +344,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSecuritySensitivityLabel>`: sensitivityLabel
+`BODYPARAMETER <IMicrosoftGraphSecuritySensitivityLabel>`: sensitivityLabel
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Color <String>]`: The color that the UI should display for the label, if configured.
   - `[ContentFormats <String[]>]`: Returns the supported content formats for the label.
   - `[Description <String>]`: The admin-defined description for the label.
@@ -359,7 +358,7 @@ BODYPARAMETER `<IMicrosoftGraphSecuritySensitivityLabel>`: sensitivityLabel
   - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
   - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a UI.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+`INPUTOBJECT <ISecurityIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
   - `[ArticleId <String>]`: The unique identifier of article
   - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator
@@ -417,9 +416,9 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[VulnerabilityComponentId <String>]`: The unique identifier of vulnerabilityComponent
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
-PARENT `<IMicrosoftGraphSecuritySensitivityLabel>`: sensitivityLabel
+`PARENT <IMicrosoftGraphSecuritySensitivityLabel>`: sensitivityLabel
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Color <String>]`: The color that the UI should display for the label, if configured.
   - `[ContentFormats <String[]>]`: Returns the supported content formats for the label.
   - `[Description <String>]`: The admin-defined description for the label.

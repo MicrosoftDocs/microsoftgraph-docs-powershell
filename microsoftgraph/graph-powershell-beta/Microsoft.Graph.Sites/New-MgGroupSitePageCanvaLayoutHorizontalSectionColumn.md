@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Sites-help.xml
-Module Name: Microsoft.Graph.Sites
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/new-mggroupsitepagecanvalayouthorizontalsectioncolumn
+﻿---
+external help file: Microsoft.Graph.Beta.Sites-help.xml
+Module Name: Microsoft.Graph.Beta.Sites
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitepagecanvalayouthorizontalsectioncolumn
 schema: 2.0.0
 ---
 
-# New-MgGroupSitePageCanvaLayoutHorizontalSectionColumn
+# New-MgBetaGroupSitePageCanvaLayoutHorizontalSectionColumn
 
 ## SYNOPSIS
 Create new navigation property to columns for groups
@@ -14,28 +14,28 @@ Create new navigation property to columns for groups
 
 ### CreateExpanded (Default)
 ```
-New-MgGroupSitePageCanvaLayoutHorizontalSectionColumn -GroupId <String> -HorizontalSectionId <String>
+New-MgBetaGroupSitePageCanvaLayoutHorizontalSectionColumn -GroupId <String> -HorizontalSectionId <String>
  -SiteId <String> -SitePageId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-Webparts <IMicrosoftGraphWebPart[]>] [-Width <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgGroupSitePageCanvaLayoutHorizontalSectionColumn -GroupId <String> -HorizontalSectionId <String>
+New-MgBetaGroupSitePageCanvaLayoutHorizontalSectionColumn -GroupId <String> -HorizontalSectionId <String>
  -SiteId <String> -SitePageId <String> -BodyParameter <IMicrosoftGraphHorizontalSectionColumn> [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgGroupSitePageCanvaLayoutHorizontalSectionColumn -InputObject <ISitesIdentity>
+New-MgBetaGroupSitePageCanvaLayoutHorizontalSectionColumn -InputObject <ISitesIdentity>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Webparts <IMicrosoftGraphWebPart[]>] [-Width <Int32>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgGroupSitePageCanvaLayoutHorizontalSectionColumn -InputObject <ISitesIdentity>
+New-MgBetaGroupSitePageCanvaLayoutHorizontalSectionColumn -InputObject <ISitesIdentity>
  -BodyParameter <IMicrosoftGraphHorizontalSectionColumn> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -43,6 +43,16 @@ New-MgGroupSitePageCanvaLayoutHorizontalSectionColumn -InputObject <ISitesIdenti
 Create new navigation property to columns for groups
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -63,7 +73,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 horizontalSectionColumn
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphHorizontalSectionColumn
@@ -108,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -125,7 +135,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ISitesIdentity
@@ -171,7 +181,7 @@ Accept wildcard characters: False
 
 ### -Webparts
 The collection of WebParts in this column.
-To construct, please use Get-Help -Online and see NOTES section for WEBPARTS properties and create a hash table.
+To construct, see NOTES section for WEBPARTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphWebPart[]
@@ -239,11 +249,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphHorizontalSectionColumn
-### Microsoft.Graph.PowerShell.Models.ISitesIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphHorizontalSectionColumn
+### Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphHorizontalSectionColumn
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphHorizontalSectionColumn
 ## NOTES
 
 ALIASES
@@ -253,14 +263,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphHorizontalSectionColumn>`: horizontalSectionColumn
+`BODYPARAMETER <IMicrosoftGraphHorizontalSectionColumn>`: horizontalSectionColumn
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Webparts <IMicrosoftGraphWebPart[]>]`: The collection of WebParts in this column.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Width <Int32?>]`: Width of the column. A horizontal section is divided into 12 grids. A column should have a value of 1-12 to represent its range spans. For example, there can be two columns both have a width of 6 in a section.
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+`INPUTOBJECT <ISitesIdentity>`: Identity Parameter
   - `[BaseItemId <String>]`: The unique identifier of baseItem
   - `[BitlockerRecoveryKeyId <String>]`: The unique identifier of bitlockerRecoveryKey
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
@@ -278,17 +288,23 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
   - `[Interval <String>]`: Usage: interval='{interval}'
+  - `[ItemActivityId <String>]`: The unique identifier of itemActivity
+  - `[ItemActivityOldId <String>]`: The unique identifier of itemActivityOLD
+  - `[ItemActivityStatId <String>]`: The unique identifier of itemActivityStat
   - `[ListId <String>]`: The unique identifier of list
-  - `[ListId1 <String>]`: Usage: listId='{listId}'
   - `[ListItemId <String>]`: The unique identifier of listItem
   - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
   - `[NotebookId <String>]`: The unique identifier of notebook
+  - `[OnenoteOperationId <String>]`: The unique identifier of onenoteOperation
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
+  - `[OnenoteResourceId <String>]`: The unique identifier of onenoteResource
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
   - `[Path <String>]`: Usage: path='{path}'
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[RelationId <String>]`: The unique identifier of relation
   - `[RichLongRunningOperationId <String>]`: The unique identifier of richLongRunningOperation
+  - `[SectionGroupId <String>]`: The unique identifier of sectionGroup
+  - `[SectionGroupId1 <String>]`: The unique identifier of sectionGroup
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SensitivityLabelId1 <String>]`: The unique identifier of sensitivityLabel
   - `[SetId <String>]`: The unique identifier of set
@@ -297,7 +313,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SiteId1 <String>]`: The unique identifier of site
   - `[SitePageId <String>]`: The unique identifier of sitePage
   - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
-  - `[StoreId <String>]`: The unique identifier of store
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
@@ -307,7 +322,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
-WEBPARTS <IMicrosoftGraphWebPart\[]>: The collection of WebParts in this column.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`WEBPARTS <IMicrosoftGraphWebPart[]>`: The collection of WebParts in this column.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
 
 ## RELATED LINKS

@@ -1,12 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgpolicypermissiongrantpolicyexclude
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicypermissiongrantpolicyexclude
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
-# Get-MgPolicyPermissionGrantPolicyExclude
+# Get-MgBetaPolicyPermissionGrantPolicyExclude
 
 ## SYNOPSIS
 Condition sets which are excluded in this permission grant policy.
@@ -16,21 +15,21 @@ Automatically expanded on GET.
 
 ### List (Default)
 ```
-Get-MgPolicyPermissionGrantPolicyExclude -PermissionGrantPolicyId <String> [-ExpandProperty <String[]>]
+Get-MgBetaPolicyPermissionGrantPolicyExclude -PermissionGrantPolicyId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgPolicyPermissionGrantPolicyExclude -PermissionGrantConditionSetId <String>
+Get-MgBetaPolicyPermissionGrantPolicyExclude -PermissionGrantConditionSetId <String>
  -PermissionGrantPolicyId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgPolicyPermissionGrantPolicyExclude -InputObject <IIdentitySignInsIdentity> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaPolicyPermissionGrantPolicyExclude -InputObject <IIdentitySignInsIdentity>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -39,10 +38,11 @@ Automatically expanded on GET.
 
 ## EXAMPLES
 
-### Example 1: Get a permission grant policy exclude by ID
+### EXAMPLE 1
 ```powershell
-Connect-MgGraph -Scopes "Policy.Read.PermissionGrant" 
-Get-MgPolicyPermissionGrantPolicyExclude -PermissionGrantPolicyId "microsoft-application-admin" | fl  
+Connect-MgBetaGraph -Scopes "Policy.Read.PermissionGrant" 
+Get-MgBetaPolicyPermissionGrantPolicyExclude -PermissionGrantPolicyId "microsoft-application-admin" | fl
+```
 
 CertifiedClientApplicationsOnly             : False
 ClientApplicationIds                        : {all}
@@ -67,9 +67,6 @@ PermissionType                              : application
 Permissions                                 : {all}
 ResourceApplication                         : 00000002-0000-0000-c000-000000000000
 AdditionalProperties                        : {[scopeSensitivityLabels, System.Collections.Generic.Dictionary`2[System.String,System.Object]]}
-```
-
-This command retrieves a specified permission grant policy exclude configuration in Azure AD.
 
 ## PARAMETERS
 
@@ -136,7 +133,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IIdentitySignInsIdentity
@@ -275,10 +272,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPermissionGrantConditionSet1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPermissionGrantConditionSet
 ## NOTES
 
 ALIASES
@@ -288,7 +285,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentitySignInsIdentity>`: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: The unique identifier of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
@@ -325,6 +322,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[IdentityUserFlowAttributeId <String>]`: The unique identifier of identityUserFlowAttribute
   - `[IdentityUserFlowId <String>]`: The unique identifier of identityUserFlow
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
+  - `[InvitationId <String>]`: The unique identifier of invitation
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   - `[MobilityManagementPolicyId <String>]`: The unique identifier of mobilityManagementPolicy

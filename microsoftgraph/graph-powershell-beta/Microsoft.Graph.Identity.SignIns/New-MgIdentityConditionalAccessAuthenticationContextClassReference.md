@@ -1,28 +1,27 @@
----
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgidentityconditionalaccessauthenticationcontextclassreference
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccessauthenticationcontextclassreference
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
-# New-MgIdentityConditionalAccessAuthenticationContextClassReference
+# New-MgBetaIdentityConditionalAccessAuthenticationContextClassReference
 
 ## SYNOPSIS
 Create a new authenticationContextClassReference.
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
-New-MgIdentityConditionalAccessAuthenticationContextClassReference [-AdditionalProperties <Hashtable>]
+New-MgBetaIdentityConditionalAccessAuthenticationContextClassReference [-AdditionalProperties <Hashtable>]
  [-Description <String>] [-DisplayName <String>] [-Id <String>] [-IsAvailable] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
-New-MgIdentityConditionalAccessAuthenticationContextClassReference
+New-MgBetaIdentityConditionalAccessAuthenticationContextClassReference
  -BodyParameter <IMicrosoftGraphAuthenticationContextClassReference> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -31,20 +30,17 @@ Create a new authenticationContextClassReference.
 
 ## EXAMPLES
 
-### Example 1: Using the New-MgIdentityConditionalAccessAuthenticationContextClassReference Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
 	Id = "c1"
 	DisplayName = "Contoso medium"
 	Description = "Medium protection level defined for Contoso policy"
 	IsAvailable = $true
 }
-New-MgIdentityConditionalAccessAuthenticationContextClassReference -BodyParameter $params
+New-MgBetaIdentityConditionalAccessAuthenticationContextClassReference -BodyParameter $params
 ```
-
-This example shows how to use the New-MgIdentityConditionalAccessAuthenticationContextClassReference Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -53,7 +49,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -65,11 +61,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 authenticationContextClassReference
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAuthenticationContextClassReference
-Parameter Sets: Create1
+Parameter Sets: Create
 Aliases:
 
 Required: True
@@ -81,12 +77,12 @@ Accept wildcard characters: False
 
 ### -Description
 A short explanation of the policies that are enforced by authenticationContextClassReference.
-This value should be used to provide secondary text to describe the authentication context class reference when building user-facing admin experiences.
-For example, a selection UX.
+This value should be used to provide secondary text to describe the authentication context class reference when building user facing admin experiences.
+For example, selection UX.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -97,13 +93,12 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-The display name is the friendly name of the authenticationContextClassReference object.
-This value should be used to identify the authentication context class reference when building user-facing admin experiences.
+A friendly name that identifies the authenticationContextClassReference object when building user-facing admin experiences.
 For example, a selection UX.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -114,12 +109,12 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -131,14 +126,13 @@ Accept wildcard characters: False
 
 ### -IsAvailable
 Indicates whether the authenticationContextClassReference has been published by the security admin and is ready for use by apps.
-When it is set to false, it should not be shown in authentication context selection UX, or used to protect app resources.
-It will be shown and available for Conditional Access policy authoring.
-The default value is false.
+When it is set to false, it should not be shown in selection UX used to tag resources with authentication context class values.
+It will still be shown in the Conditionall Access policy authoring experience.
 Supports $filter (eq).
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -184,10 +178,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthenticationContextClassReference
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthenticationContextClassReference
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthenticationContextClassReference
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthenticationContextClassReference
 ## NOTES
 
 ALIASES
@@ -197,11 +191,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphAuthenticationContextClassReference>`: authenticationContextClassReference
+`BODYPARAMETER <IMicrosoftGraphAuthenticationContextClassReference>`: authenticationContextClassReference
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[Description <String>]`: A short explanation of the policies that are enforced by authenticationContextClassReference. This value should be used to provide secondary text to describe the authentication context class reference when building user-facing admin experiences. For example, a selection UX.
-  - `[DisplayName <String>]`: The display name is the friendly name of the authenticationContextClassReference object. This value should be used to identify the authentication context class reference when building user-facing admin experiences. For example, a selection UX.
-  - `[IsAvailable <Boolean?>]`: Indicates whether the authenticationContextClassReference has been published by the security admin and is ready for use by apps. When it is set to false, it should not be shown in authentication context selection UX, or used to protect app resources. It will be shown and available for Conditional Access policy authoring. The default value is false.  Supports $filter (eq).
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
+  - `[Description <String>]`: A short explanation of the policies that are enforced by authenticationContextClassReference. This value should be used to provide secondary text to describe the authentication context class reference when building user facing admin experiences. For example, selection UX.
+  - `[DisplayName <String>]`: A friendly name that identifies the authenticationContextClassReference object when building user-facing admin experiences. For example, a selection UX.
+  - `[IsAvailable <Boolean?>]`: Indicates whether the authenticationContextClassReference has been published by the security admin and is ready for use by apps. When it is set to false, it should not be shown in selection UX used to tag resources with authentication context class values. It will still be shown in the Conditionall Access policy authoring experience.  Supports $filter (eq).
 
 ## RELATED LINKS

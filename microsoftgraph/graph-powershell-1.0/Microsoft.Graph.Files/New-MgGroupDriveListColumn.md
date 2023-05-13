@@ -1,7 +1,7 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/new-mggroupdrivelistcolumn
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdrivelistcolumn
 schema: 2.0.0
 ---
 
@@ -61,6 +61,20 @@ Create a column for a [list][list] with a request that specifies a [columnDefini
 
 ## EXAMPLES
 
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -80,7 +94,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 columnDefinition
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphColumnDefinition
@@ -111,7 +125,7 @@ Accept wildcard characters: False
 
 ### -Calculated
 calculatedColumn
-To construct, please use Get-Help -Online and see NOTES section for CALCULATED properties and create a hash table.
+To construct, see NOTES section for CALCULATED properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphCalculatedColumn
@@ -127,7 +141,7 @@ Accept wildcard characters: False
 
 ### -Choice
 choiceColumn
-To construct, please use Get-Help -Online and see NOTES section for CHOICE properties and create a hash table.
+To construct, see NOTES section for CHOICE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphChoiceColumn
@@ -174,7 +188,7 @@ Accept wildcard characters: False
 
 ### -Currency
 currencyColumn
-To construct, please use Get-Help -Online and see NOTES section for CURRENCY properties and create a hash table.
+To construct, see NOTES section for CURRENCY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphCurrencyColumn
@@ -190,7 +204,7 @@ Accept wildcard characters: False
 
 ### -DateTime
 dateTimeColumn
-To construct, please use Get-Help -Online and see NOTES section for DATETIME properties and create a hash table.
+To construct, see NOTES section for DATETIME properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDateTimeColumn
@@ -206,7 +220,7 @@ Accept wildcard characters: False
 
 ### -DefaultValue
 defaultColumnValue
-To construct, please use Get-Help -Online and see NOTES section for DEFAULTVALUE properties and create a hash table.
+To construct, see NOTES section for DEFAULTVALUE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDefaultColumnValue
@@ -327,7 +341,7 @@ Accept wildcard characters: False
 
 ### -HyperlinkOrPicture
 hyperlinkOrPictureColumn
-To construct, please use Get-Help -Online and see NOTES section for HYPERLINKORPICTURE properties and create a hash table.
+To construct, see NOTES section for HYPERLINKORPICTURE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphHyperlinkOrPictureColumn
@@ -374,7 +388,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IFilesIdentity
@@ -436,7 +450,7 @@ Accept wildcard characters: False
 
 ### -Lookup
 lookupColumn
-To construct, please use Get-Help -Online and see NOTES section for LOOKUP properties and create a hash table.
+To construct, see NOTES section for LOOKUP properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphLookupColumn
@@ -468,7 +482,7 @@ Accept wildcard characters: False
 
 ### -Number
 numberColumn
-To construct, please use Get-Help -Online and see NOTES section for NUMBER properties and create a hash table.
+To construct, see NOTES section for NUMBER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphNumberColumn
@@ -484,7 +498,7 @@ Accept wildcard characters: False
 
 ### -PersonOrGroup
 personOrGroupColumn
-To construct, please use Get-Help -Online and see NOTES section for PERSONORGROUP properties and create a hash table.
+To construct, see NOTES section for PERSONORGROUP properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPersonOrGroupColumn
@@ -545,7 +559,7 @@ Accept wildcard characters: False
 
 ### -SourceColumn
 columnDefinition
-To construct, please use Get-Help -Online and see NOTES section for SOURCECOLUMN properties and create a hash table.
+To construct, see NOTES section for SOURCECOLUMN properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphColumnDefinition
@@ -561,7 +575,7 @@ Accept wildcard characters: False
 
 ### -SourceContentType
 contentTypeInfo
-To construct, please use Get-Help -Online and see NOTES section for SOURCECONTENTTYPE properties and create a hash table.
+To construct, see NOTES section for SOURCECONTENTTYPE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphContentTypeInfo
@@ -577,7 +591,7 @@ Accept wildcard characters: False
 
 ### -Term
 termColumn
-To construct, please use Get-Help -Online and see NOTES section for TERM properties and create a hash table.
+To construct, see NOTES section for TERM properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphTermColumn
@@ -593,7 +607,7 @@ Accept wildcard characters: False
 
 ### -Text
 textColumn
-To construct, please use Get-Help -Online and see NOTES section for TEXT properties and create a hash table.
+To construct, see NOTES section for TEXT properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphTextColumn
@@ -639,7 +653,7 @@ Accept wildcard characters: False
 
 ### -Validation
 columnValidation
-To construct, please use Get-Help -Online and see NOTES section for VALIDATION properties and create a hash table.
+To construct, see NOTES section for VALIDATION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphColumnValidation
@@ -703,7 +717,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphColumnDefinition>`: columnDefinition
+`BODYPARAMETER <IMicrosoftGraphColumnDefinition>`: columnDefinition
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Boolean <IMicrosoftGraphBooleanColumn>]`: booleanColumn
@@ -794,7 +808,7 @@ BODYPARAMETER `<IMicrosoftGraphColumnDefinition>`: columnDefinition
       - `[Relations <IMicrosoftGraphTermStoreRelation[]>]`: To indicate which terms are related to the current term as either pinned or reused.
         - `[Id <String>]`: The unique idenfier for an entity. Read-only.
         - `[FromTerm <IMicrosoftGraphTermStoreTerm>]`: term
-        - `[Relationship <String>]`: 
+        - `[Relationship <String>]`: relationType
         - `[Set <IMicrosoftGraphTermStoreSet>]`: set
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -811,7 +825,7 @@ BODYPARAMETER `<IMicrosoftGraphColumnDefinition>`: columnDefinition
             - `[Description <String>]`: Description that gives details on the term usage.
             - `[DisplayName <String>]`: Name of the group.
             - `[ParentSiteId <String>]`: ID of the parent site of this group.
-            - `[Scope <String>]`: 
+            - `[Scope <String>]`: termGroupScope
             - `[Sets <IMicrosoftGraphTermStoreSet[]>]`: All sets under the group in a term [store].
           - `[Properties <IMicrosoftGraphKeyValue[]>]`: Custom properties for the set.
           - `[Relations <IMicrosoftGraphTermStoreRelation[]>]`: Indicates which terms have been pinned or reused directly under the set.
@@ -838,37 +852,37 @@ BODYPARAMETER `<IMicrosoftGraphColumnDefinition>`: columnDefinition
       - `[LanguageTag <String>]`: Provides the language culture-code and friendly name of the language that the displayName field has been provided in.
     - `[Formula <String>]`: The formula to validate column value. For examples, see Examples of common formulas in lists.
 
-CALCULATED `<IMicrosoftGraphCalculatedColumn>`: calculatedColumn
+`CALCULATED <IMicrosoftGraphCalculatedColumn>`: calculatedColumn
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Format <String>]`: For dateTime output types, the format of the value. Must be one of dateOnly or dateTime.
   - `[Formula <String>]`: The formula used to compute the value for this column.
   - `[OutputType <String>]`: The output type used to format values in this column. Must be one of boolean, currency, dateTime, number, or text.
 
-CHOICE `<IMicrosoftGraphChoiceColumn>`: choiceColumn
+`CHOICE <IMicrosoftGraphChoiceColumn>`: choiceColumn
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowTextEntry <Boolean?>]`: If true, allows custom values that aren't in the configured choices.
   - `[Choices <String[]>]`: The list of values available for this column.
   - `[DisplayAs <String>]`: How the choices are to be presented in the UX. Must be one of checkBoxes, dropDownMenu, or radioButtons
 
-CURRENCY `<IMicrosoftGraphCurrencyColumn>`: currencyColumn
+`CURRENCY <IMicrosoftGraphCurrencyColumn>`: currencyColumn
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Locale <String>]`: Specifies the locale from which to infer the currency symbol.
 
-DATETIME `<IMicrosoftGraphDateTimeColumn>`: dateTimeColumn
+`DATETIME <IMicrosoftGraphDateTimeColumn>`: dateTimeColumn
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayAs <String>]`: How the value should be presented in the UX. Must be one of default, friendly, or standard. See below for more details. If unspecified, treated as default.
   - `[Format <String>]`: Indicates whether the value should be presented as a date only or a date and time. Must be one of dateOnly or dateTime
 
-DEFAULTVALUE `<IMicrosoftGraphDefaultColumnValue>`: defaultColumnValue
+`DEFAULTVALUE <IMicrosoftGraphDefaultColumnValue>`: defaultColumnValue
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Formula <String>]`: The formula used to compute the default value for this column.
   - `[Value <String>]`: The direct value to use as the default value for this column.
 
-HYPERLINKORPICTURE `<IMicrosoftGraphHyperlinkOrPictureColumn>`: hyperlinkOrPictureColumn
+`HYPERLINKORPICTURE <IMicrosoftGraphHyperlinkOrPictureColumn>`: hyperlinkOrPictureColumn
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[IsPicture <Boolean?>]`: Specifies whether the display format used for URL columns is an image or a hyperlink.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+`INPUTOBJECT <IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType
@@ -894,7 +908,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
 
-LOOKUP `<IMicrosoftGraphLookupColumn>`: lookupColumn
+`LOOKUP <IMicrosoftGraphLookupColumn>`: lookupColumn
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowMultipleValues <Boolean?>]`: Indicates whether multiple values can be selected from the source.
   - `[AllowUnlimitedLength <Boolean?>]`: Indicates whether values in the column should be able to exceed the standard limit of 255 characters.
@@ -902,20 +916,20 @@ LOOKUP `<IMicrosoftGraphLookupColumn>`: lookupColumn
   - `[ListId <String>]`: The unique identifier of the lookup source list.
   - `[PrimaryLookupColumnId <String>]`: If specified, this column is a secondary lookup, pulling an additional field from the list item looked up by the primary lookup. Use the list item looked up by the primary as the source for the column named here.
 
-NUMBER `<IMicrosoftGraphNumberColumn>`: numberColumn
+`NUMBER <IMicrosoftGraphNumberColumn>`: numberColumn
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DecimalPlaces <String>]`: How many decimal places to display. See below for information about the possible values.
   - `[DisplayAs <String>]`: How the value should be presented in the UX. Must be one of number or percentage. If unspecified, treated as number.
   - `[Maximum <Double?>]`: The maximum permitted value.
   - `[Minimum <Double?>]`: The minimum permitted value.
 
-PERSONORGROUP `<IMicrosoftGraphPersonOrGroupColumn>`: personOrGroupColumn
+`PERSONORGROUP <IMicrosoftGraphPersonOrGroupColumn>`: personOrGroupColumn
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowMultipleSelection <Boolean?>]`: Indicates whether multiple values can be selected from the source.
   - `[ChooseFromType <String>]`: Whether to allow selection of people only, or people and groups. Must be one of peopleAndGroups or peopleOnly.
   - `[DisplayAs <String>]`: How to display the information about the person or group chosen. See below.
 
-SOURCECOLUMN `<IMicrosoftGraphColumnDefinition>`: columnDefinition
+`SOURCECOLUMN <IMicrosoftGraphColumnDefinition>`: columnDefinition
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Boolean <IMicrosoftGraphBooleanColumn>]`: booleanColumn
@@ -1006,7 +1020,7 @@ SOURCECOLUMN `<IMicrosoftGraphColumnDefinition>`: columnDefinition
       - `[Relations <IMicrosoftGraphTermStoreRelation[]>]`: To indicate which terms are related to the current term as either pinned or reused.
         - `[Id <String>]`: The unique idenfier for an entity. Read-only.
         - `[FromTerm <IMicrosoftGraphTermStoreTerm>]`: term
-        - `[Relationship <String>]`: 
+        - `[Relationship <String>]`: relationType
         - `[Set <IMicrosoftGraphTermStoreSet>]`: set
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -1023,7 +1037,7 @@ SOURCECOLUMN `<IMicrosoftGraphColumnDefinition>`: columnDefinition
             - `[Description <String>]`: Description that gives details on the term usage.
             - `[DisplayName <String>]`: Name of the group.
             - `[ParentSiteId <String>]`: ID of the parent site of this group.
-            - `[Scope <String>]`: 
+            - `[Scope <String>]`: termGroupScope
             - `[Sets <IMicrosoftGraphTermStoreSet[]>]`: All sets under the group in a term [store].
           - `[Properties <IMicrosoftGraphKeyValue[]>]`: Custom properties for the set.
           - `[Relations <IMicrosoftGraphTermStoreRelation[]>]`: Indicates which terms have been pinned or reused directly under the set.
@@ -1050,12 +1064,12 @@ SOURCECOLUMN `<IMicrosoftGraphColumnDefinition>`: columnDefinition
       - `[LanguageTag <String>]`: Provides the language culture-code and friendly name of the language that the displayName field has been provided in.
     - `[Formula <String>]`: The formula to validate column value. For examples, see Examples of common formulas in lists.
 
-SOURCECONTENTTYPE `<IMicrosoftGraphContentTypeInfo>`: contentTypeInfo
+`SOURCECONTENTTYPE <IMicrosoftGraphContentTypeInfo>`: contentTypeInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The id of the content type.
   - `[Name <String>]`: The name of the content type.
 
-TERM `<IMicrosoftGraphTermColumn>`: termColumn
+`TERM <IMicrosoftGraphTermColumn>`: termColumn
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowMultipleValues <Boolean?>]`: Specifies whether the column will allow more than one value.
   - `[ParentTerm <IMicrosoftGraphTermStoreTerm>]`: term
@@ -1077,7 +1091,7 @@ TERM `<IMicrosoftGraphTermColumn>`: termColumn
     - `[Relations <IMicrosoftGraphTermStoreRelation[]>]`: To indicate which terms are related to the current term as either pinned or reused.
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
       - `[FromTerm <IMicrosoftGraphTermStoreTerm>]`: term
-      - `[Relationship <String>]`: 
+      - `[Relationship <String>]`: relationType
       - `[Set <IMicrosoftGraphTermStoreSet>]`: set
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -1094,7 +1108,7 @@ TERM `<IMicrosoftGraphTermColumn>`: termColumn
           - `[Description <String>]`: Description that gives details on the term usage.
           - `[DisplayName <String>]`: Name of the group.
           - `[ParentSiteId <String>]`: ID of the parent site of this group.
-          - `[Scope <String>]`: 
+          - `[Scope <String>]`: termGroupScope
           - `[Sets <IMicrosoftGraphTermStoreSet[]>]`: All sets under the group in a term [store].
         - `[Properties <IMicrosoftGraphKeyValue[]>]`: Custom properties for the set.
         - `[Relations <IMicrosoftGraphTermStoreRelation[]>]`: Indicates which terms have been pinned or reused directly under the set.
@@ -1104,7 +1118,7 @@ TERM `<IMicrosoftGraphTermColumn>`: termColumn
   - `[ShowFullyQualifiedName <Boolean?>]`: Specifies whether to display the entire term path or only the term label.
   - `[TermSet <IMicrosoftGraphTermStoreSet>]`: set
 
-TEXT `<IMicrosoftGraphTextColumn>`: textColumn
+`TEXT <IMicrosoftGraphTextColumn>`: textColumn
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowMultipleLines <Boolean?>]`: Whether to allow multiple lines of text.
   - `[AppendChangesToExistingText <Boolean?>]`: Whether updates to this column should replace existing text, or append to it.
@@ -1112,7 +1126,7 @@ TEXT `<IMicrosoftGraphTextColumn>`: textColumn
   - `[MaxLength <Int32?>]`: The maximum number of characters for the value.
   - `[TextType <String>]`: The type of text being stored. Must be one of plain or richText
 
-VALIDATION `<IMicrosoftGraphColumnValidation>`: columnValidation
+`VALIDATION <IMicrosoftGraphColumnValidation>`: columnValidation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DefaultLanguage <String>]`: Default BCP 47 language tag for the description.
   - `[Descriptions <IMicrosoftGraphDisplayNameLocalization[]>]`: Localized messages that explain what is needed for this column's value to be considered valid. User will be prompted with this message if validation fails.

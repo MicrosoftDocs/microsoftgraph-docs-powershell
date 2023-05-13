@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecuritylabelretentionlabeldispositionreviewstage
+﻿---
+external help file: Microsoft.Graph.Beta.Security-help.xml
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritylabelretentionlabeldispositionreviewstage
 schema: 2.0.0
 ---
 
-# Update-MgSecurityLabelRetentionLabelDispositionReviewStage
+# Update-MgBetaSecurityLabelRetentionLabelDispositionReviewStage
 
 ## SYNOPSIS
 Update the navigation property dispositionReviewStages in security
@@ -14,37 +14,49 @@ Update the navigation property dispositionReviewStages in security
 
 ### UpdateExpanded (Default)
 ```
-Update-MgSecurityLabelRetentionLabelDispositionReviewStage -DispositionReviewStageId <String>
+Update-MgBetaSecurityLabelRetentionLabelDispositionReviewStage -DispositionReviewStageId <String>
  -RetentionLabelId <String> [-AdditionalProperties <Hashtable>] [-Id <String>] [-Name <String>]
- [-ReviewersEmailAddresses <String[]>] [-StageNumber <Int32>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ReviewersEmailAddresses <String[]>] [-StageNumber <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgSecurityLabelRetentionLabelDispositionReviewStage -DispositionReviewStageId <String>
- -RetentionLabelId <String> -BodyParameter <IMicrosoftGraphSecurityDispositionReviewStage> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaSecurityLabelRetentionLabelDispositionReviewStage -DispositionReviewStageId <String>
+ -RetentionLabelId <String> -BodyParameter <IMicrosoftGraphSecurityDispositionReviewStage> [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgSecurityLabelRetentionLabelDispositionReviewStage -InputObject <ISecurityIdentity>
+Update-MgBetaSecurityLabelRetentionLabelDispositionReviewStage -InputObject <ISecurityIdentity>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Name <String>] [-ReviewersEmailAddresses <String[]>]
- [-StageNumber <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-StageNumber <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgSecurityLabelRetentionLabelDispositionReviewStage -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityDispositionReviewStage> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaSecurityLabelRetentionLabelDispositionReviewStage -InputObject <ISecurityIdentity>
+ -BodyParameter <IMicrosoftGraphSecurityDispositionReviewStage> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property dispositionReviewStages in security
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -65,7 +77,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 dispositionReviewStage
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSecurityDispositionReviewStage
@@ -95,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -112,7 +124,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ISecurityIdentity
@@ -132,21 +144,6 @@ Name representing each stage within a collection.
 ```yaml
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -237,11 +234,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityDispositionReviewStage
-### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityDispositionReviewStage
+### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityDispositionReviewStage
 ## NOTES
 
 ALIASES
@@ -251,14 +248,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSecurityDispositionReviewStage>`: dispositionReviewStage
+`BODYPARAMETER <IMicrosoftGraphSecurityDispositionReviewStage>`: dispositionReviewStage
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Name <String>]`: Name representing each stage within a collection.
   - `[ReviewersEmailAddresses <String[]>]`: A collection of reviewers at each stage.
   - `[StageNumber <Int32?>]`: The sequence number for each stage of the disposition review.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+`INPUTOBJECT <ISecurityIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
   - `[ArticleId <String>]`: The unique identifier of article
   - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator

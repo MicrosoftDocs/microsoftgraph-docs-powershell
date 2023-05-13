@@ -1,12 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgriskyuser
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetariskyuser
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
-# Get-MgRiskyUser
+# Get-MgBetaRiskyUser
 
 ## SYNOPSIS
 Users that are flagged as at-risk by Azure AD Identity Protection.
@@ -15,19 +14,20 @@ Users that are flagged as at-risk by Azure AD Identity Protection.
 
 ### List (Default)
 ```
-Get-MgRiskyUser [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>]
+Get-MgBetaRiskyUser [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>]
  [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
  [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgRiskyUser -RiskyUserId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaRiskyUser -RiskyUserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgRiskyUser -InputObject <IIdentitySignInsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaRiskyUser -InputObject <IIdentitySignInsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
@@ -36,34 +36,30 @@ Users that are flagged as at-risk by Azure AD Identity Protection.
 
 ## EXAMPLES
 
-### Example 1: List all risky users
+### EXAMPLE 1
 ```powershell
-Connect-MgGraph -Scopes "IdentityRiskyUser.Read.All"
-Select-MgProfile beta
-Get-MgRiskyUser | Format-Table UserDisplayName, RiskDetail, RiskLevel, RiskLastUpdatedDateTime
+Connect-MgBetaGraph -Scopes "IdentityRiskyUser.Read.All"
+Select-MgBetaProfile beta
+Get-MgBetaRiskyUser | Format-Table UserDisplayName, RiskDetail, RiskLevel, RiskLastUpdatedDateTime
+```
 
 UserDisplayName RiskDetail                        RiskLevel RiskLastUpdatedDateTime
 --------------- ----------                        --------- -----------------------
 Alex Su         adminConfirmedUserCompromised     high      5/30/2022 12:54:16 AM
 tracys          adminConfirmedUserCompromised     high      5/30/2022 12:44:25 AM
 Jason Mayer     userPerformedSecuredPasswordReset none      7/4/2022 4:36:44 AM
-```
 
-This command returns all risky users
-
-### Example 2: List all risky users by RiskLevel
+### EXAMPLE 2
 ```powershell
-Connect-MgGraph -Scopes "IdentityRiskyUser.Read.All"
-Select-MgProfile beta
-Get-MgRiskyUser -Filter "RiskLevel ne 'none'" | Format-Table UserDisplayName, RiskDetail, RiskLevel, RiskLastUpdatedDateTime
+Connect-MgBetaGraph -Scopes "IdentityRiskyUser.Read.All"
+Select-MgBetaProfile beta
+Get-MgBetaRiskyUser -Filter "RiskLevel ne 'none'" | Format-Table UserDisplayName, RiskDetail, RiskLevel, RiskLastUpdatedDateTime
+```
 
 UserDisplayName RiskDetail                    RiskLevel RiskLastUpdatedDateTime
 --------------- ----------                    --------- -----------------------
 Alex Su         adminConfirmedUserCompromised high      5/30/2022 12:54:16 AM
 tracys          adminConfirmedUserCompromised high      5/30/2022 12:44:25 AM
-```
-
-This command retruns all risky users whose risk level is not none
 
 ## PARAMETERS
 
@@ -130,7 +126,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IIdentitySignInsIdentity
@@ -254,10 +250,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRiskyUser1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRiskyUser
 ## NOTES
 
 ALIASES
@@ -267,7 +263,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentitySignInsIdentity>`: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: The unique identifier of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
@@ -304,6 +300,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[IdentityUserFlowAttributeId <String>]`: The unique identifier of identityUserFlowAttribute
   - `[IdentityUserFlowId <String>]`: The unique identifier of identityUserFlow
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
+  - `[InvitationId <String>]`: The unique identifier of invitation
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   - `[MobilityManagementPolicyId <String>]`: The unique identifier of mobilityManagementPolicy

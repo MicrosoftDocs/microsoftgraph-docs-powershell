@@ -1,59 +1,69 @@
----
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehosttracker
+﻿---
+external help file: Microsoft.Graph.Beta.Security-help.xml
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehosttracker
 schema: 2.0.0
 ---
 
-# Get-MgSecurityThreatIntelligenceHostTracker
+# Get-MgBetaSecurityThreatIntelligenceHostTracker
 
 ## SYNOPSIS
-The hostTrackers that are associated with this host.
+Read the properties and relationships of a hostTracker object.
 
 ## SYNTAX
 
-### List1 (Default)
+### List (Default)
 ```
-Get-MgSecurityThreatIntelligenceHostTracker [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaSecurityThreatIntelligenceHostTracker [-ExpandProperty <String[]>] [-Property <String[]>]
  [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
  [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### List
+### Get1
 ```
-Get-MgSecurityThreatIntelligenceHostTracker -HostId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+Get-MgBetaSecurityThreatIntelligenceHostTracker -HostTrackerId <String> -HostId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgSecurityThreatIntelligenceHostTracker -HostId <String> -HostTrackerId <String>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaSecurityThreatIntelligenceHostTracker -HostTrackerId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
-### Get1
+### List1
 ```
-Get-MgSecurityThreatIntelligenceHostTracker -HostTrackerId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaSecurityThreatIntelligenceHostTracker -HostId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
 ```
-Get-MgSecurityThreatIntelligenceHostTracker -InputObject <ISecurityIdentity> [-ExpandProperty <String[]>]
+Get-MgBetaSecurityThreatIntelligenceHostTracker -InputObject <ISecurityIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgSecurityThreatIntelligenceHostTracker -InputObject <ISecurityIdentity> [-ExpandProperty <String[]>]
+Get-MgBetaSecurityThreatIntelligenceHostTracker -InputObject <ISecurityIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The hostTrackers that are associated with this host.
+Read the properties and relationships of a hostTracker object.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -62,7 +72,7 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: List1, List
+Parameter Sets: List, List1
 Aliases:
 
 Required: False
@@ -78,7 +88,7 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: List1, List
+Parameter Sets: List, List1
 Aliases: CV
 
 Required: False
@@ -108,7 +118,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List1, List
+Parameter Sets: List, List1
 Aliases:
 
 Required: False
@@ -123,7 +133,7 @@ The unique identifier of host
 
 ```yaml
 Type: String
-Parameter Sets: List, Get
+Parameter Sets: Get1, List1
 Aliases:
 
 Required: True
@@ -138,7 +148,7 @@ The unique identifier of hostTracker
 
 ```yaml
 Type: String
-Parameter Sets: Get, Get1
+Parameter Sets: Get1, Get
 Aliases:
 
 Required: True
@@ -150,7 +160,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ISecurityIdentity
@@ -169,7 +179,7 @@ Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: List1, List
+Parameter Sets: List, List1
 Aliases:
 
 Required: False
@@ -199,7 +209,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: List1, List
+Parameter Sets: List, List1
 Aliases:
 
 Required: False
@@ -214,7 +224,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List1, List
+Parameter Sets: List, List1
 Aliases: OrderBy
 
 Required: False
@@ -229,7 +239,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List1, List
+Parameter Sets: List, List1
 Aliases: Limit
 
 Required: False
@@ -244,7 +254,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List1, List
+Parameter Sets: List, List1
 Aliases:
 
 Required: False
@@ -259,10 +269,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityHostTracker
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityHostTracker
 ## NOTES
 
 ALIASES
@@ -272,7 +282,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+`INPUTOBJECT <ISecurityIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
   - `[ArticleId <String>]`: The unique identifier of article
   - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator

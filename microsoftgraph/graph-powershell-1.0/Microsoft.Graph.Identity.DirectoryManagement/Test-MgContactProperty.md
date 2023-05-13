@@ -1,7 +1,7 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/test-mgcontactproperty
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/test-mgcontactproperty
 schema: 2.0.0
 ---
 
@@ -30,7 +30,7 @@ Test-MgContactProperty [-AdditionalProperties <Hashtable>] [-DisplayName <String
 ### Validate
 ```
 Test-MgContactProperty
- -BodyParameter <IPaths7Cg04SContactsMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema1>
+ -BodyParameter <IPaths7Cg04SContactsMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -48,9 +48,10 @@ To learn more about configuring naming policies, see Configure naming policy.
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.DirectoryObjects
+```
 
 $params = @{
 	EntityType = "Group"
@@ -60,11 +61,6 @@ $params = @{
 }
 
 Test-MgDirectoryObjectProperty -BodyParameter $params
-```
-
-This example shows how to use the Test-MgContactProperty Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -85,10 +81,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths7Cg04SContactsMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema1
+Type: IPaths7Cg04SContactsMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Validate
 Aliases:
 
@@ -210,7 +206,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths7Cg04SContactsMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema1
+### Microsoft.Graph.PowerShell.Models.IPaths7Cg04SContactsMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### System.Boolean
@@ -223,7 +219,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths7Cg04SContactsMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema1>`: .
+`BODYPARAMETER <IPaths7Cg04SContactsMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: 
   - `[EntityType <String>]`: 

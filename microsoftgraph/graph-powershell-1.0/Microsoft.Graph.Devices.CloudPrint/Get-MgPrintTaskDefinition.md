@@ -1,15 +1,15 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/get-mgprinttaskdefinition
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprinttaskdefinition
 schema: 2.0.0
-ms.prod: cloud-printing
 ---
 
 # Get-MgPrintTaskDefinition
 
 ## SYNOPSIS
-List of abstract definition for a task that can be triggered when various events occur within Universal Print.
+Get details about a task definition.
+For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
 
 ## SYNTAX
 
@@ -45,27 +45,22 @@ Get-MgPrintTaskDefinition -InputObject <IDevicesCloudPrintIdentity> [-ExpandProp
 ```
 
 ## DESCRIPTION
-List of abstract definition for a task that can be triggered when various events occur within Universal Print.
+Get details about a task definition.
+For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgPrintTaskDefinition Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Devices.CloudPrint
 Get-MgPrintTaskDefinition -PrintTaskDefinitionId $printTaskDefinitionId
 ```
 
-This example shows how to use the Get-MgPrintTaskDefinition Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Get-MgPrintTaskDefinition Cmdlet
+### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Devices.CloudPrint
 Get-MgPrintTaskDefinition
 ```
-
-This example shows how to use the Get-MgPrintTaskDefinition Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -132,7 +127,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDevicesCloudPrintIdentity
@@ -274,7 +269,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintTaskDefinition1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintTaskDefinition
 ## NOTES
 
 ALIASES
@@ -284,9 +279,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
+`INPUTOBJECT <IDevicesCloudPrintIdentity>`: Identity Parameter
   - `[GroupId <String>]`: The unique identifier of group
   - `[PrintConnectorId <String>]`: The unique identifier of printConnector
+  - `[PrintDocumentId <String>]`: The unique identifier of printDocument
+  - `[PrintJobId <String>]`: The unique identifier of printJob
   - `[PrintOperationId <String>]`: The unique identifier of printOperation
   - `[PrintServiceEndpointId <String>]`: The unique identifier of printServiceEndpoint
   - `[PrintServiceId <String>]`: The unique identifier of printService

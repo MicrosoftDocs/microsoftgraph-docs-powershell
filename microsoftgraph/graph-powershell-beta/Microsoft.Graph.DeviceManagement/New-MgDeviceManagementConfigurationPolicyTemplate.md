@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementconfigurationpolicytemplate
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementconfigurationpolicytemplate
 schema: 2.0.0
 ---
 
-# New-MgDeviceManagementConfigurationPolicyTemplate
+# New-MgBetaDeviceManagementConfigurationPolicyTemplate
 
 ## SYNOPSIS
 Create new navigation property to configurationPolicyTemplates for deviceManagement
@@ -14,9 +14,9 @@ Create new navigation property to configurationPolicyTemplates for deviceManagem
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementConfigurationPolicyTemplate [-AdditionalProperties <Hashtable>] [-AllowUnmanagedSettings]
- [-BaseId <String>] [-Description <String>] [-DisplayName <String>] [-DisplayVersion <String>] [-Id <String>]
- [-LifecycleState <DeviceManagementTemplateLifecycleState>]
+New-MgBetaDeviceManagementConfigurationPolicyTemplate [-AdditionalProperties <Hashtable>]
+ [-AllowUnmanagedSettings] [-BaseId <String>] [-Description <String>] [-DisplayName <String>]
+ [-DisplayVersion <String>] [-Id <String>] [-LifecycleState <DeviceManagementTemplateLifecycleState>]
  [-Platforms <DeviceManagementConfigurationPlatforms>]
  [-SettingTemplates <IMicrosoftGraphDeviceManagementConfigurationSettingTemplate[]>]
  [-Technologies <DeviceManagementConfigurationTechnologies>]
@@ -25,7 +25,7 @@ New-MgDeviceManagementConfigurationPolicyTemplate [-AdditionalProperties <Hashta
 
 ### Create
 ```
-New-MgDeviceManagementConfigurationPolicyTemplate
+New-MgBetaDeviceManagementConfigurationPolicyTemplate
  -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationPolicyTemplate> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
@@ -34,6 +34,20 @@ New-MgDeviceManagementConfigurationPolicyTemplate
 Create new navigation property to configurationPolicyTemplates for deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -84,7 +98,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Device Management Configuration Policy Template
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementConfigurationPolicyTemplate
@@ -144,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -191,7 +205,7 @@ Accept wildcard characters: False
 
 ### -SettingTemplates
 Setting templates
-To construct, please use Get-Help -Online and see NOTES section for SETTINGTEMPLATES properties and create a hash table.
+To construct, see NOTES section for SETTINGTEMPLATES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementConfigurationSettingTemplate[]
@@ -271,10 +285,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationPolicyTemplate
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationPolicyTemplate
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationPolicyTemplate
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationPolicyTemplate
 ## NOTES
 
 ALIASES
@@ -284,9 +298,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDeviceManagementConfigurationPolicyTemplate>`: Device Management Configuration Policy Template
+`BODYPARAMETER <IMicrosoftGraphDeviceManagementConfigurationPolicyTemplate>`: Device Management Configuration Policy Template
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AllowUnmanagedSettings <Boolean?>]`: Allow unmanaged setting templates
   - `[BaseId <String>]`: Template base identifier
   - `[Description <String>]`: Template description
@@ -295,9 +309,9 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagementConfigurationPolicyTemplate>`: De
   - `[LifecycleState <DeviceManagementTemplateLifecycleState?>]`: Describes current lifecycle state of a template
   - `[Platforms <DeviceManagementConfigurationPlatforms?>]`: Supported platform types.
   - `[SettingTemplates <IMicrosoftGraphDeviceManagementConfigurationSettingTemplate[]>]`: Setting templates
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[SettingDefinitions <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition[]>]`: List of related Setting Definitions
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[AccessTypes <String>]`: deviceManagementConfigurationSettingAccessTypes
       - `[Applicability <IMicrosoftGraphDeviceManagementConfigurationSettingApplicability>]`: deviceManagementConfigurationSettingApplicability
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -333,10 +347,10 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagementConfigurationPolicyTemplate>`: De
   - `[Technologies <DeviceManagementConfigurationTechnologies?>]`: Describes which technology this setting can be deployed with
   - `[TemplateFamily <DeviceManagementConfigurationTemplateFamily?>]`: Describes the TemplateFamily for the Template entity
 
-SETTINGTEMPLATES <IMicrosoftGraphDeviceManagementConfigurationSettingTemplate\[]>: Setting templates
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`SETTINGTEMPLATES <IMicrosoftGraphDeviceManagementConfigurationSettingTemplate[]>`: Setting templates
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[SettingDefinitions <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition[]>]`: List of related Setting Definitions
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[AccessTypes <String>]`: deviceManagementConfigurationSettingAccessTypes
     - `[Applicability <IMicrosoftGraphDeviceManagementConfigurationSettingApplicability>]`: deviceManagementConfigurationSettingApplicability
       - `[(Any) <Object>]`: This indicates any property can be added to this object.

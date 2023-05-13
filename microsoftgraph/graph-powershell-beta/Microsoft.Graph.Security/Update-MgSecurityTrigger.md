@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecuritytrigger
+﻿---
+external help file: Microsoft.Graph.Beta.Security-help.xml
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritytrigger
 schema: 2.0.0
 ---
 
-# Update-MgSecurityTrigger
+# Update-MgBetaSecurityTrigger
 
 ## SYNOPSIS
 Update the navigation property triggers in security
@@ -14,14 +14,13 @@ Update the navigation property triggers in security
 
 ### UpdateExpanded (Default)
 ```
-Update-MgSecurityTrigger [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-RetentionEvents <IMicrosoftGraphSecurityRetentionEvent[]>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaSecurityTrigger [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-RetentionEvents <IMicrosoftGraphSecurityRetentionEvent[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgSecurityTrigger -BodyParameter <IMicrosoftGraphSecurityTriggersRoot> [-PassThru] [-WhatIf] [-Confirm]
+Update-MgBetaSecurityTrigger -BodyParameter <IMicrosoftGraphSecurityTriggersRoot> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -29,6 +28,20 @@ Update-MgSecurityTrigger -BodyParameter <IMicrosoftGraphSecurityTriggersRoot> [-
 Update the navigation property triggers in security
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -49,7 +62,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 triggersRoot
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSecurityTriggersRoot
@@ -64,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -79,24 +92,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -RetentionEvents
 .
-To construct, please use Get-Help -Online and see NOTES section for RETENTIONEVENTS properties and create a hash table.
+To construct, see NOTES section for RETENTIONEVENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSecurityRetentionEvent[]
@@ -146,10 +144,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityTriggersRoot
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityTriggersRoot
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityTriggersRoot
 ## NOTES
 
 ALIASES
@@ -159,11 +157,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSecurityTriggersRoot>`: triggersRoot
+`BODYPARAMETER <IMicrosoftGraphSecurityTriggersRoot>`: triggersRoot
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[RetentionEvents <IMicrosoftGraphSecurityRetentionEvent[]>]`: 
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -181,7 +179,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityTriggersRoot>`: triggersRoot
       - `[Status <String>]`: eventPropagationStatus
       - `[StatusInformation <String>]`: Additional information about the status of the event creation request.
     - `[EventQueries <IMicrosoftGraphSecurityEventQuery[]>]`: Represents the workload (SharePoint Online, OneDrive for Business, Exchange Online) and identification information associated with a retention event.
-      - `[Query <String>]`: Represents unique identification for the  query. 'Asset ID' for SharePoint Online and OneDrive for Business, 'keywords' for Exchange Online.
+      - `[Query <String>]`: 
       - `[QueryType <String>]`: queryType
     - `[EventStatus <IMicrosoftGraphSecurityRetentionEventStatus>]`: retentionEventStatus
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -207,7 +205,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityTriggersRoot>`: triggersRoot
     - `[LastStatusUpdateDateTime <DateTime?>]`: Last time the status of the event was updated.
     - `[RetentionEventType <IMicrosoftGraphSecurityRetentionEventType>]`: retentionEventType
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[CreatedDateTime <DateTime?>]`: The date time when the retentionEventType was created.
       - `[Description <String>]`: Optional information about the event type.
@@ -215,8 +213,8 @@ BODYPARAMETER `<IMicrosoftGraphSecurityTriggersRoot>`: triggersRoot
       - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[LastModifiedDateTime <DateTime?>]`: The latest date time when the retentionEventType was modified.
 
-RETENTIONEVENTS <IMicrosoftGraphSecurityRetentionEvent\[]>: .
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`RETENTIONEVENTS <IMicrosoftGraphSecurityRetentionEvent[]>`: .
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -234,7 +232,7 @@ RETENTIONEVENTS <IMicrosoftGraphSecurityRetentionEvent\[]>: .
     - `[Status <String>]`: eventPropagationStatus
     - `[StatusInformation <String>]`: Additional information about the status of the event creation request.
   - `[EventQueries <IMicrosoftGraphSecurityEventQuery[]>]`: Represents the workload (SharePoint Online, OneDrive for Business, Exchange Online) and identification information associated with a retention event.
-    - `[Query <String>]`: Represents unique identification for the  query. 'Asset ID' for SharePoint Online and OneDrive for Business, 'keywords' for Exchange Online.
+    - `[Query <String>]`: 
     - `[QueryType <String>]`: queryType
   - `[EventStatus <IMicrosoftGraphSecurityRetentionEventStatus>]`: retentionEventStatus
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -260,7 +258,7 @@ RETENTIONEVENTS <IMicrosoftGraphSecurityRetentionEvent\[]>: .
   - `[LastStatusUpdateDateTime <DateTime?>]`: Last time the status of the event was updated.
   - `[RetentionEventType <IMicrosoftGraphSecurityRetentionEventType>]`: retentionEventType
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[CreatedDateTime <DateTime?>]`: The date time when the retentionEventType was created.
     - `[Description <String>]`: Optional information about the event type.

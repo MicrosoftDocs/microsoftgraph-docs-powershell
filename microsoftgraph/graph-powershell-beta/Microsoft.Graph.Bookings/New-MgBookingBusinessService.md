@@ -1,24 +1,23 @@
----
-external help file: Microsoft.Graph.Bookings-help.xml
-Module Name: Microsoft.Graph.Bookings
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.bookings/new-mgbookingbusinessservice
+﻿---
+external help file: Microsoft.Graph.Beta.Bookings-help.xml
+Module Name: Microsoft.Graph.Beta.Bookings
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusinessservice
 schema: 2.0.0
-ms.prod: bookings
 ---
 
-# New-MgBookingBusinessService
+# New-MgBetaBookingBusinessService
 
 ## SYNOPSIS
 Create a new bookingService for the specified bookingBusiness.
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
-New-MgBookingBusinessService -BookingBusinessId <String> [-AdditionalInformation <String>]
+New-MgBetaBookingBusinessService -BookingBusinessId <String> [-AdditionalInformation <String>]
  [-AdditionalProperties <Hashtable>] [-CustomQuestions <IMicrosoftGraphBookingQuestionAssignment[]>]
- [-DefaultDuration <TimeSpan>] [-DefaultLocation <IMicrosoftGraphLocation1>] [-DefaultPrice <Double>]
- [-DefaultPriceType <BookingPriceType>] [-DefaultReminders <IMicrosoftGraphBookingReminder1[]>]
+ [-DefaultDuration <TimeSpan>] [-DefaultLocation <IMicrosoftGraphLocation>] [-DefaultPrice <Double>]
+ [-DefaultPriceType <BookingPriceType>] [-DefaultReminders <IMicrosoftGraphBookingReminder[]>]
  [-Description <String>] [-DisplayName <String>] [-Id <String>] [-IsAnonymousJoinEnabled]
  [-IsHiddenFromCustomers] [-IsLocationOnline] [-LanguageTag <String>] [-MaximumAttendeesCount <Int32>]
  [-Notes <String>] [-PostBuffer <TimeSpan>] [-PreBuffer <TimeSpan>]
@@ -26,18 +25,18 @@ New-MgBookingBusinessService -BookingBusinessId <String> [-AdditionalInformation
  [-StaffMemberIds <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
-New-MgBookingBusinessService -BookingBusinessId <String> -BodyParameter <IMicrosoftGraphBookingService1>
+New-MgBetaBookingBusinessService -BookingBusinessId <String> -BodyParameter <IMicrosoftGraphBookingService>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded1
+### CreateViaIdentityExpanded
 ```
-New-MgBookingBusinessService -InputObject <IBookingsIdentity> [-AdditionalInformation <String>]
+New-MgBetaBookingBusinessService -InputObject <IBookingsIdentity> [-AdditionalInformation <String>]
  [-AdditionalProperties <Hashtable>] [-CustomQuestions <IMicrosoftGraphBookingQuestionAssignment[]>]
- [-DefaultDuration <TimeSpan>] [-DefaultLocation <IMicrosoftGraphLocation1>] [-DefaultPrice <Double>]
- [-DefaultPriceType <BookingPriceType>] [-DefaultReminders <IMicrosoftGraphBookingReminder1[]>]
+ [-DefaultDuration <TimeSpan>] [-DefaultLocation <IMicrosoftGraphLocation>] [-DefaultPrice <Double>]
+ [-DefaultPriceType <BookingPriceType>] [-DefaultReminders <IMicrosoftGraphBookingReminder[]>]
  [-Description <String>] [-DisplayName <String>] [-Id <String>] [-IsAnonymousJoinEnabled]
  [-IsHiddenFromCustomers] [-IsLocationOnline] [-LanguageTag <String>] [-MaximumAttendeesCount <Int32>]
  [-Notes <String>] [-PostBuffer <TimeSpan>] [-PreBuffer <TimeSpan>]
@@ -45,10 +44,10 @@ New-MgBookingBusinessService -InputObject <IBookingsIdentity> [-AdditionalInform
  [-StaffMemberIds <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentity1
+### CreateViaIdentity
 ```
-New-MgBookingBusinessService -InputObject <IBookingsIdentity> -BodyParameter <IMicrosoftGraphBookingService1>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaBookingBusinessService -InputObject <IBookingsIdentity>
+ -BodyParameter <IMicrosoftGraphBookingService> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -56,9 +55,9 @@ Create a new bookingService for the specified bookingBusiness.
 
 ## EXAMPLES
 
-### Example 1: Using the New-MgBookingBusinessService Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Bookings
+Import-Module Microsoft.Graph.Beta.Bookings
 $params = @{
 	"@odata.type" = "#microsoft.graph.bookingService"
 	DefaultDuration = "PT1H30M"
@@ -122,11 +121,8 @@ $params = @{
 	)
 	IsAnonymousJoinEnabled = $false
 }
-New-MgBookingBusinessService -BookingBusinessId $bookingBusinessId -BodyParameter $params
+New-MgBetaBookingBusinessService -BookingBusinessId $bookingBusinessId -BodyParameter $params
 ```
-
-This example shows how to use the New-MgBookingBusinessService Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -135,7 +131,7 @@ Additional information that is sent to the customer when an appointment is confi
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -150,7 +146,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -162,11 +158,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Represents a particular service offered by a booking business.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphBookingService1
-Parameter Sets: Create1, CreateViaIdentity1
+Type: IMicrosoftGraphBookingService
+Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -181,7 +177,7 @@ The unique identifier of bookingBusiness
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, Create1
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -193,11 +189,11 @@ Accept wildcard characters: False
 
 ### -CustomQuestions
 Contains the set of custom questions associated with a particular service.
-To construct, please use Get-Help -Online and see NOTES section for CUSTOMQUESTIONS properties and create a hash table.
+To construct, see NOTES section for CUSTOMQUESTIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphBookingQuestionAssignment[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -213,7 +209,7 @@ For example, P11D23H59M59.999999999999S.
 
 ```yaml
 Type: TimeSpan
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -225,11 +221,11 @@ Accept wildcard characters: False
 
 ### -DefaultLocation
 location
-To construct, please use Get-Help -Online and see NOTES section for DEFAULTLOCATION properties and create a hash table.
+To construct, see NOTES section for DEFAULTLOCATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphLocation1
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: IMicrosoftGraphLocation
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -244,7 +240,7 @@ The default monetary price for the service.
 
 ```yaml
 Type: Double
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -259,7 +255,7 @@ Represents the type of pricing of a booking service.
 
 ```yaml
 Type: BookingPriceType
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -272,11 +268,11 @@ Accept wildcard characters: False
 ### -DefaultReminders
 The default set of reminders for an appointment of this service.
 The value of this property is available only when reading this bookingService by its ID.
-To construct, please use Get-Help -Online and see NOTES section for DEFAULTREMINDERS properties and create a hash table.
+To construct, see NOTES section for DEFAULTREMINDERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphBookingReminder1[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: IMicrosoftGraphBookingReminder[]
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -291,7 +287,7 @@ A text description for the service.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -306,7 +302,7 @@ A name for the derived entity, which interfaces with customers.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -317,12 +313,12 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -334,11 +330,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IBookingsIdentity
-Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -353,7 +349,7 @@ True if an anonymousJoinWebUrl(webrtcUrl) will be generated for the appointment 
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -368,7 +364,7 @@ True means this service is not available to customers for booking.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -384,7 +380,7 @@ Default value is false.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -399,7 +395,7 @@ The language of the self service booking page.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -416,7 +412,7 @@ To create a customer, use the Create bookingCustomer operation.
 
 ```yaml
 Type: Int32
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -431,7 +427,7 @@ Additional information about this service.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -446,7 +442,7 @@ The time to buffer after an appointment for this service ends, and before the ne
 
 ```yaml
 Type: TimeSpan
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -461,7 +457,7 @@ The time to buffer before an appointment for this service can start.
 
 ```yaml
 Type: TimeSpan
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -473,11 +469,11 @@ Accept wildcard characters: False
 
 ### -SchedulingPolicy
 This type represents the set of policies that dictate how bookings can be created in a Booking Calendar.
-To construct, please use Get-Help -Online and see NOTES section for SCHEDULINGPOLICY properties and create a hash table.
+To construct, see NOTES section for SCHEDULINGPOLICY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphBookingSchedulingPolicy
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -493,7 +489,7 @@ Default value is false.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -508,7 +504,7 @@ Represents those staff members who provide this service.
 
 ```yaml
 Type: String[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -554,11 +550,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IBookingsIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBookingService1
+### Microsoft.Graph.Beta.PowerShell.Models.IBookingsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBookingService
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBookingService1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBookingService
 ## NOTES
 
 ALIASES
@@ -568,18 +564,18 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphBookingService1>`: Represents a particular service offered by a booking business.
+`BODYPARAMETER <IMicrosoftGraphBookingService>`: Represents a particular service offered by a booking business.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: A name for the derived entity, which interfaces with customers.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AdditionalInformation <String>]`: Additional information that is sent to the customer when an appointment is confirmed.
   - `[CustomQuestions <IMicrosoftGraphBookingQuestionAssignment[]>]`: Contains the set of custom questions associated with a particular service.
-    - `[IsRequired <Boolean?>]`: The ID of the custom question.
-    - `[QuestionId <String>]`: Indicates whether it is mandatory to answer the custom question.
+    - `[IsRequired <Boolean?>]`: Indicates whether it is mandatory to answer the custom question.
+    - `[QuestionId <String>]`: If it is mandatory to answer the custom question.
   - `[DefaultDuration <TimeSpan?>]`: The default length of the service, represented in numbers of days, hours, minutes, and seconds. For example, P11D23H59M59.999999999999S.
-  - `[DefaultLocation <IMicrosoftGraphLocation1>]`: location
+  - `[DefaultLocation <IMicrosoftGraphLocation>]`: location
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Address <IMicrosoftGraphPhysicalAddress1>]`: physicalAddress
+    - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[City <String>]`: The city.
       - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
@@ -603,10 +599,10 @@ BODYPARAMETER `<IMicrosoftGraphBookingService1>`: Represents a particular servic
     - `[UniqueIdType <String>]`: locationUniqueIdType
   - `[DefaultPrice <Double?>]`: The default monetary price for the service.
   - `[DefaultPriceType <BookingPriceType?>]`: Represents the type of pricing of a booking service.
-  - `[DefaultReminders <IMicrosoftGraphBookingReminder1[]>]`: The default set of reminders for an appointment of this service. The value of this property is available only when reading this bookingService by its ID.
+  - `[DefaultReminders <IMicrosoftGraphBookingReminder[]>]`: The default set of reminders for an appointment of this service. The value of this property is available only when reading this bookingService by its ID.
     - `[Message <String>]`: The message in the reminder.
     - `[Offset <TimeSpan?>]`: The amount of time before the start of an appointment that the reminder should be sent. It's denoted in ISO 8601 format.
-    - `[Recipients <String>]`: 
+    - `[Recipients <String>]`: bookingReminderRecipients
   - `[Description <String>]`: A text description for the service.
   - `[IsAnonymousJoinEnabled <Boolean?>]`: True if an anonymousJoinWebUrl(webrtcUrl) will be generated for the appointment booked for this service.
   - `[IsHiddenFromCustomers <Boolean?>]`: True means this service is not available to customers for booking.
@@ -626,13 +622,13 @@ BODYPARAMETER `<IMicrosoftGraphBookingService1>`: Represents a particular servic
   - `[SmsNotificationsEnabled <Boolean?>]`: True indicates SMS notifications can be sent to the customers for the appointment of the service. Default value is false.
   - `[StaffMemberIds <String[]>]`: Represents those staff members who provide this service.
 
-CUSTOMQUESTIONS <IMicrosoftGraphBookingQuestionAssignment\[]>: Contains the set of custom questions associated with a particular service.
-  - `[IsRequired <Boolean?>]`: The ID of the custom question.
-  - `[QuestionId <String>]`: Indicates whether it is mandatory to answer the custom question.
+`CUSTOMQUESTIONS <IMicrosoftGraphBookingQuestionAssignment[]>`: Contains the set of custom questions associated with a particular service.
+  - `[IsRequired <Boolean?>]`: Indicates whether it is mandatory to answer the custom question.
+  - `[QuestionId <String>]`: If it is mandatory to answer the custom question.
 
-DEFAULTLOCATION `<IMicrosoftGraphLocation1>`: location
+`DEFAULTLOCATION <IMicrosoftGraphLocation>`: location
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Address <IMicrosoftGraphPhysicalAddress1>]`: physicalAddress
+  - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[City <String>]`: The city.
     - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
@@ -655,26 +651,24 @@ DEFAULTLOCATION `<IMicrosoftGraphLocation1>`: location
   - `[UniqueId <String>]`: For internal use only.
   - `[UniqueIdType <String>]`: locationUniqueIdType
 
-DEFAULTREMINDERS <IMicrosoftGraphBookingReminder1\[]>: The default set of reminders for an appointment of this service. The value of this property is available only when reading this bookingService by its ID.
+`DEFAULTREMINDERS <IMicrosoftGraphBookingReminder[]>`: The default set of reminders for an appointment of this service. The value of this property is available only when reading this bookingService by its ID.
   - `[Message <String>]`: The message in the reminder.
   - `[Offset <TimeSpan?>]`: The amount of time before the start of an appointment that the reminder should be sent. It's denoted in ISO 8601 format.
-  - `[Recipients <String>]`: 
+  - `[Recipients <String>]`: bookingReminderRecipients
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+`INPUTOBJECT <IBookingsIdentity>`: Identity Parameter
   - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
   - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness
   - `[BookingCurrencyId <String>]`: The unique identifier of bookingCurrency
   - `[BookingCustomQuestionId <String>]`: The unique identifier of bookingCustomQuestion
-  - `[BookingCustomerBaseId <String>]`: The unique identifier of bookingCustomerBase
   - `[BookingCustomerId <String>]`: The unique identifier of bookingCustomer
   - `[BookingServiceId <String>]`: The unique identifier of bookingService
-  - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
   - `[BookingStaffMemberId <String>]`: The unique identifier of bookingStaffMember
   - `[BusinessScenarioId <String>]`: The unique identifier of businessScenario
   - `[BusinessScenarioTaskId <String>]`: The unique identifier of businessScenarioTask
   - `[PlannerPlanConfigurationLocalizationId <String>]`: The unique identifier of plannerPlanConfigurationLocalization
 
-SCHEDULINGPOLICY `<IMicrosoftGraphBookingSchedulingPolicy>`: This type represents the set of policies that dictate how bookings can be created in a Booking Calendar.
+`SCHEDULINGPOLICY <IMicrosoftGraphBookingSchedulingPolicy>`: This type represents the set of policies that dictate how bookings can be created in a Booking Calendar.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowStaffSelection <Boolean?>]`: True if to allow customers to choose a specific person for the booking.
   - `[MaximumAdvance <TimeSpan?>]`: Maximum number of days in advance that a booking can be made. It follows the ISO 8601 format.

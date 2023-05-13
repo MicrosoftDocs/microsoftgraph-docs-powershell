@@ -1,7 +1,7 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/update-mguseronlinemeetingattendancereport
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mguseronlinemeetingattendancereport
 schema: 2.0.0
 ---
 
@@ -12,39 +12,53 @@ Update the navigation property attendanceReports in users
 
 ## SYNTAX
 
-### UpdateExpanded2 (Default)
+### UpdateExpanded (Default)
 ```
 Update-MgUserOnlineMeetingAttendanceReport -MeetingAttendanceReportId <String> -OnlineMeetingId <String>
  -UserId <String> [-AdditionalProperties <Hashtable>] [-AttendanceRecords <IMicrosoftGraphAttendanceRecord[]>]
  [-Id <String>] [-MeetingEndDateTime <DateTime>] [-MeetingStartDateTime <DateTime>]
- [-TotalParticipantCount <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TotalParticipantCount <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Update2
+### Update
 ```
 Update-MgUserOnlineMeetingAttendanceReport -MeetingAttendanceReportId <String> -OnlineMeetingId <String>
- -UserId <String> -BodyParameter <IMicrosoftGraphMeetingAttendanceReport> [-PassThru] [-WhatIf] [-Confirm]
+ -UserId <String> -BodyParameter <IMicrosoftGraphMeetingAttendanceReport> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded2
+### UpdateViaIdentityExpanded
 ```
 Update-MgUserOnlineMeetingAttendanceReport -InputObject <ICloudCommunicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-AttendanceRecords <IMicrosoftGraphAttendanceRecord[]>] [-Id <String>]
- [-MeetingEndDateTime <DateTime>] [-MeetingStartDateTime <DateTime>] [-TotalParticipantCount <Int32>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-MeetingEndDateTime <DateTime>] [-MeetingStartDateTime <DateTime>] [-TotalParticipantCount <Int32>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity2
+### UpdateViaIdentity
 ```
 Update-MgUserOnlineMeetingAttendanceReport -InputObject <ICloudCommunicationsIdentity>
- -BodyParameter <IMicrosoftGraphMeetingAttendanceReport> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMeetingAttendanceReport> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property attendanceReports in users
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -53,7 +67,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded2, UpdateViaIdentityExpanded2
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -66,11 +80,11 @@ Accept wildcard characters: False
 ### -AttendanceRecords
 List of attendance records of an attendance report.
 Read-only.
-To construct, please use Get-Help -Online and see NOTES section for ATTENDANCERECORDS properties and create a hash table.
+To construct, see NOTES section for ATTENDANCERECORDS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAttendanceRecord[]
-Parameter Sets: UpdateExpanded2, UpdateViaIdentityExpanded2
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -82,11 +96,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 meetingAttendanceReport
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphMeetingAttendanceReport
-Parameter Sets: Update2, UpdateViaIdentity2
+Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -102,7 +116,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded2, UpdateViaIdentityExpanded2
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -114,11 +128,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ICloudCommunicationsIdentity
-Parameter Sets: UpdateViaIdentityExpanded2, UpdateViaIdentity2
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -133,7 +147,7 @@ The unique identifier of meetingAttendanceReport
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded2, Update2
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -149,7 +163,7 @@ Read-only.
 
 ```yaml
 Type: DateTime
-Parameter Sets: UpdateExpanded2, UpdateViaIdentityExpanded2
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -165,7 +179,7 @@ Read-only.
 
 ```yaml
 Type: DateTime
-Parameter Sets: UpdateExpanded2, UpdateViaIdentityExpanded2
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -180,25 +194,10 @@ The unique identifier of onlineMeeting
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded2, Update2
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -211,7 +210,7 @@ Read-only.
 
 ```yaml
 Type: Int32
-Parameter Sets: UpdateExpanded2, UpdateViaIdentityExpanded2
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -226,7 +225,7 @@ The unique identifier of user
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded2, Update2
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -276,7 +275,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMeetingAttendanceReport
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMeetingAttendanceReport
 ## NOTES
 
 ALIASES
@@ -286,13 +285,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ATTENDANCERECORDS <IMicrosoftGraphAttendanceRecord\[]>: List of attendance records of an attendance report. Read-only.
+`ATTENDANCERECORDS <IMicrosoftGraphAttendanceRecord[]>`: List of attendance records of an attendance report. Read-only.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>]`: List of time periods between joining and leaving a meeting.
     - `[DurationInSeconds <Int32?>]`: Duration of the meeting interval in seconds; that is, the difference between joinDateTime and leaveDateTime.
     - `[JoinDateTime <DateTime?>]`: The time the attendee joined in UTC.
     - `[LeaveDateTime <DateTime?>]`: The time the attendee left in UTC.
-  - `[EmailAddress <String>]`: Email address of the user associated with this atttendance record.
+  - `[EmailAddress <String>]`: Email address of the user associated with this attendance record.
   - `[Identity <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
@@ -300,7 +299,7 @@ ATTENDANCERECORDS <IMicrosoftGraphAttendanceRecord\[]>: List of attendance recor
   - `[Role <String>]`: Role of the attendee. Possible values are: None, Attendee, Presenter, and Organizer.
   - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.
 
-BODYPARAMETER `<IMicrosoftGraphMeetingAttendanceReport>`: meetingAttendanceReport
+`BODYPARAMETER <IMicrosoftGraphMeetingAttendanceReport>`: meetingAttendanceReport
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AttendanceRecords <IMicrosoftGraphAttendanceRecord[]>]`: List of attendance records of an attendance report. Read-only.
@@ -309,7 +308,7 @@ BODYPARAMETER `<IMicrosoftGraphMeetingAttendanceReport>`: meetingAttendanceRepor
       - `[DurationInSeconds <Int32?>]`: Duration of the meeting interval in seconds; that is, the difference between joinDateTime and leaveDateTime.
       - `[JoinDateTime <DateTime?>]`: The time the attendee joined in UTC.
       - `[LeaveDateTime <DateTime?>]`: The time the attendee left in UTC.
-    - `[EmailAddress <String>]`: Email address of the user associated with this atttendance record.
+    - `[EmailAddress <String>]`: Email address of the user associated with this attendance record.
     - `[Identity <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
@@ -320,22 +319,18 @@ BODYPARAMETER `<IMicrosoftGraphMeetingAttendanceReport>`: meetingAttendanceRepor
   - `[MeetingStartDateTime <DateTime?>]`: UTC time when the meeting started. Read-only.
   - `[TotalParticipantCount <Int32?>]`: Total number of participants. Read-only.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+`INPUTOBJECT <ICloudCommunicationsIdentity>`: Identity Parameter
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
   - `[CallId <String>]`: The unique identifier of call
   - `[CallRecordId <String>]`: The unique identifier of callRecord
-  - `[CallTranscriptId <String>]`: The unique identifier of callTranscript
   - `[CommsOperationId <String>]`: The unique identifier of commsOperation
   - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
-  - `[FromDateTime <DateTime?>]`: Usage: fromDateTime={fromDateTime}
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
-  - `[MeetingRegistrationQuestionId <String>]`: The unique identifier of meetingRegistrationQuestion
   - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
   - `[ParticipantId <String>]`: The unique identifier of participant
   - `[PresenceId <String>]`: The unique identifier of presence
   - `[SessionId <String>]`: The unique identifier of session
-  - `[ToDateTime <DateTime?>]`: Usage: toDateTime={toDateTime}
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS

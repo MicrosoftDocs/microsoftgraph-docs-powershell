@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Files-help.xml
-Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/get-mggroupdrivelistactivity
+﻿---
+external help file: Microsoft.Graph.Beta.Files-help.xml
+Module Name: Microsoft.Graph.Beta.Files
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdrivelistactivity
 schema: 2.0.0
 ---
 
-# Get-MgGroupDriveListActivity
+# Get-MgBetaGroupDriveListActivity
 
 ## SYNOPSIS
 The recent activities that took place within this list.
@@ -13,7 +13,7 @@ The recent activities that took place within this list.
 ## SYNTAX
 
 ```
-Get-MgGroupDriveListActivity -DriveId <String> -GroupId <String> [-ExpandProperty <String[]>]
+Get-MgBetaGroupDriveListActivity -DriveId <String> -GroupId <String> [-ExpandProperty <String[]>]
  [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
@@ -22,6 +22,20 @@ Get-MgGroupDriveListActivity -DriveId <String> -GroupId <String> [-ExpandPropert
 The recent activities that took place within this list.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -213,7 +227,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemActivityOld
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItemActivityOld
 ## NOTES
 
 ALIASES

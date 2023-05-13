@@ -1,12 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgorganizationbrandinglocalization
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaorganizationbrandinglocalization
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
-# New-MgOrganizationBrandingLocalization
+# New-MgBetaOrganizationBrandingLocalization
 
 ## SYNOPSIS
 Create a new organizationalBrandingLocalization object.
@@ -19,7 +18,7 @@ To retrieve the default branding, see Get branding.
 
 ### CreateExpanded (Default)
 ```
-New-MgOrganizationBrandingLocalization -OrganizationId <String> [-AdditionalProperties <Hashtable>]
+New-MgBetaOrganizationBrandingLocalization -OrganizationId <String> [-AdditionalProperties <Hashtable>]
  [-BackgroundColor <String>] [-BackgroundImageInputFile <String>] [-BackgroundImageRelativeUrl <String>]
  [-BannerLogoInputFile <String>] [-BannerLogoRelativeUrl <String>] [-CdnList <String[]>]
  [-CustomAccountResetCredentialsUrl <String>] [-CustomCannotAccessYourAccountText <String>]
@@ -36,13 +35,13 @@ New-MgOrganizationBrandingLocalization -OrganizationId <String> [-AdditionalProp
 
 ### Create
 ```
-New-MgOrganizationBrandingLocalization -OrganizationId <String> -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaOrganizationBrandingLocalization -OrganizationId <String> -BodyParameter <Hashtable> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgOrganizationBrandingLocalization -InputObject <IIdentityDirectoryManagementIdentity>
+New-MgBetaOrganizationBrandingLocalization -InputObject <IIdentityDirectoryManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-BackgroundColor <String>] [-BackgroundImageInputFile <String>]
  [-BackgroundImageRelativeUrl <String>] [-BannerLogoInputFile <String>] [-BannerLogoRelativeUrl <String>]
  [-CdnList <String[]>] [-CustomAccountResetCredentialsUrl <String>]
@@ -60,7 +59,7 @@ New-MgOrganizationBrandingLocalization -InputObject <IIdentityDirectoryManagemen
 
 ### CreateViaIdentity
 ```
-New-MgOrganizationBrandingLocalization -InputObject <IIdentityDirectoryManagementIdentity>
+New-MgBetaOrganizationBrandingLocalization -InputObject <IIdentityDirectoryManagementIdentity>
  -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -73,19 +72,16 @@ To retrieve the default branding, see Get branding.
 
 ## EXAMPLES
 
-### Example 1: Using the New-MgOrganizationBrandingLocalization Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 $params = @{
 	BackgroundColor = "#00000F"
 	Id = "fr-FR"
 	SignInPageText = " "
 }
-New-MgOrganizationBrandingLocalization -OrganizationId $organizationId -BodyParameter $params
+New-MgBetaOrganizationBrandingLocalization -OrganizationId $organizationId -BodyParameter $params
 ```
-
-This example shows how to use the New-MgOrganizationBrandingLocalization Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -478,7 +474,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -495,7 +491,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IIdentityDirectoryManagementIdentity
@@ -511,7 +507,7 @@ Accept wildcard characters: False
 
 ### -LoginPageLayoutConfiguration
 loginPageLayoutConfiguration
-To construct, please use Get-Help -Online and see NOTES section for LOGINPAGELAYOUTCONFIGURATION properties and create a hash table.
+To construct, see NOTES section for LOGINPAGELAYOUTCONFIGURATION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphLoginPageLayoutConfiguration
@@ -527,7 +523,7 @@ Accept wildcard characters: False
 
 ### -LoginPageTextVisibilitySettings
 loginPageTextVisibilitySettings
-To construct, please use Get-Help -Online and see NOTES section for LOGINPAGETEXTVISIBILITYSETTINGS properties and create a hash table.
+To construct, see NOTES section for LOGINPAGETEXTVISIBILITYSETTINGS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphLoginPageTextVisibilitySettings
@@ -691,11 +687,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
 ### System.Collections.Hashtable
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOrganizationalBrandingLocalization1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOrganizationalBrandingLocalization
 ## NOTES
 
 ALIASES
@@ -705,7 +701,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
@@ -741,13 +737,13 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UsageRightId <String>]`: The unique identifier of usageRight
   - `[UserId <String>]`: The unique identifier of user
 
-LOGINPAGELAYOUTCONFIGURATION `<IMicrosoftGraphLoginPageLayoutConfiguration>`: loginPageLayoutConfiguration
+`LOGINPAGELAYOUTCONFIGURATION <IMicrosoftGraphLoginPageLayoutConfiguration>`: loginPageLayoutConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[IsFooterShown <Boolean?>]`: Option to show the footer on the sign-in page.
   - `[IsHeaderShown <Boolean?>]`: Option to show the header on the sign-in page.
   - `[LayoutTemplateType <String>]`: layoutTemplateType
 
-LOGINPAGETEXTVISIBILITYSETTINGS `<IMicrosoftGraphLoginPageTextVisibilitySettings>`: loginPageTextVisibilitySettings
+`LOGINPAGETEXTVISIBILITYSETTINGS <IMicrosoftGraphLoginPageTextVisibilitySettings>`: loginPageTextVisibilitySettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[HideAccountResetCredentials <Boolean?>]`: Option to hide the self-service password reset (SSPR) hyperlinks such as 'Can't access your account?', 'Forgot my password' and 'Reset it now' on the sign-in form.
   - `[HideCannotAccessYourAccount <Boolean?>]`: Option to hide the self-service password reset (SSPR) 'Can't access your account?' hyperlink on the sign-in form.

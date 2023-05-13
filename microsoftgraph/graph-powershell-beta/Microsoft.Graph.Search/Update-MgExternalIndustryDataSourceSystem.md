@@ -1,51 +1,59 @@
----
-external help file: Microsoft.Graph.Search-help.xml
-Module Name: Microsoft.Graph.Search
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/update-mgexternalindustrydatasourcesystem
+﻿---
+external help file: Microsoft.Graph.Beta.Search-help.xml
+Module Name: Microsoft.Graph.Beta.Search
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydatasourcesystem
 schema: 2.0.0
 ---
 
-# Update-MgExternalIndustryDataSourceSystem
+# Update-MgBetaExternalIndustryDataSourceSystem
 
 ## SYNOPSIS
-Update the navigation property sourceSystems in external
+Update the properties of a sourceSystemDefinition object.
 
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
-Update-MgExternalIndustryDataSourceSystem -SourceSystemDefinitionId <String>
+Update-MgBetaExternalIndustryDataSourceSystem -SourceSystemDefinitionId <String>
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
- [-UserMatchingSettings <IMicrosoftGraphIndustryDataUserMatchingSetting[]>] [-Vendor <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UserMatchingSettings <IMicrosoftGraphIndustryDataUserMatchingSetting[]>] [-Vendor <String>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgExternalIndustryDataSourceSystem -SourceSystemDefinitionId <String>
- -BodyParameter <IMicrosoftGraphIndustryDataSourceSystemDefinition> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaExternalIndustryDataSourceSystem -SourceSystemDefinitionId <String>
+ -BodyParameter <IMicrosoftGraphIndustryDataSourceSystemDefinition> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgExternalIndustryDataSourceSystem -InputObject <ISearchIdentity> [-AdditionalProperties <Hashtable>]
- [-DisplayName <String>] [-Id <String>]
- [-UserMatchingSettings <IMicrosoftGraphIndustryDataUserMatchingSetting[]>] [-Vendor <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaExternalIndustryDataSourceSystem -InputObject <ISearchIdentity>
+ [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
+ [-UserMatchingSettings <IMicrosoftGraphIndustryDataUserMatchingSetting[]>] [-Vendor <String>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgExternalIndustryDataSourceSystem -InputObject <ISearchIdentity>
- -BodyParameter <IMicrosoftGraphIndustryDataSourceSystemDefinition> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaExternalIndustryDataSourceSystem -InputObject <ISearchIdentity>
+ -BodyParameter <IMicrosoftGraphIndustryDataSourceSystemDefinition> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property sourceSystems in external
+Update the properties of a sourceSystemDefinition object.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -66,7 +74,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 sourceSystemDefinition
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIndustryDataSourceSystemDefinition
@@ -97,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -114,7 +122,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ISearchIdentity
@@ -125,21 +133,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -160,7 +153,7 @@ Accept wildcard characters: False
 
 ### -UserMatchingSettings
 A collection of user matching settings by roleGroup.
-To construct, please use Get-Help -Online and see NOTES section for USERMATCHINGSETTINGS properties and create a hash table.
+To construct, see NOTES section for USERMATCHINGSETTINGS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIndustryDataUserMatchingSetting[]
@@ -226,11 +219,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIndustryDataSourceSystemDefinition
-### Microsoft.Graph.PowerShell.Models.ISearchIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIndustryDataSourceSystemDefinition
+### Microsoft.Graph.Beta.PowerShell.Models.ISearchIdentity
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIndustryDataSourceSystemDefinition
 ## NOTES
 
 ALIASES
@@ -240,9 +233,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphIndustryDataSourceSystemDefinition>`: sourceSystemDefinition
+`BODYPARAMETER <IMicrosoftGraphIndustryDataSourceSystemDefinition>`: sourceSystemDefinition
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DisplayName <String>]`: The name of the source system. Maximum supported length is 100 characters.
   - `[UserMatchingSettings <IMicrosoftGraphIndustryDataUserMatchingSetting[]>]`: A collection of user matching settings by roleGroup.
     - `[MatchTarget <IMicrosoftGraphIndustryDataUserMatchTargetReferenceValue>]`: userMatchTargetReferenceValue
@@ -250,7 +243,7 @@ BODYPARAMETER `<IMicrosoftGraphIndustryDataSourceSystemDefinition>`: sourceSyste
       - `[Code <String>]`: The code of the desired referenceDefinition entry.
       - `[Value <IMicrosoftGraphIndustryDataReferenceDefinition>]`: referenceDefinition
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[Code <String>]`: The code value for the definition that must be unique within the referenceType.
         - `[IsDisabled <Boolean?>]`: Indicates whether the definition has been disabled.
         - `[ReferenceType <String>]`: The categorical type for a collection of enumerated values.
@@ -258,7 +251,7 @@ BODYPARAMETER `<IMicrosoftGraphIndustryDataSourceSystemDefinition>`: sourceSyste
     - `[PriorityOrder <Int32?>]`: The priority order to apply when a user has multiple RefRole codes assigned.
     - `[RoleGroup <IMicrosoftGraphIndustryDataRoleGroup>]`: roleGroup
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[DisplayName <String>]`: The name of the role group.
       - `[Roles <IMicrosoftGraphIndustryDataRoleReferenceValue[]>]`: The set of roles included in the role group.
         - `[Code <String>]`: The code of the desired referenceDefinition entry.
@@ -269,7 +262,7 @@ BODYPARAMETER `<IMicrosoftGraphIndustryDataSourceSystemDefinition>`: sourceSyste
       - `[Value <IMicrosoftGraphIndustryDataReferenceDefinition>]`: referenceDefinition
   - `[Vendor <String>]`: The name of the vendor who supplies the source system. Maximum supported length is 100 characters.
 
-INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
+`INPUTOBJECT <ISearchIdentity>`: Identity Parameter
   - `[AcronymId <String>]`: The unique identifier of acronym
   - `[BookmarkId <String>]`: The unique identifier of bookmark
   - `[ConnectionOperationId <String>]`: The unique identifier of connectionOperation
@@ -289,13 +282,13 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[SourceSystemDefinitionId <String>]`: The unique identifier of sourceSystemDefinition
   - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
 
-USERMATCHINGSETTINGS <IMicrosoftGraphIndustryDataUserMatchingSetting\[]>: A collection of user matching settings by roleGroup.
+`USERMATCHINGSETTINGS <IMicrosoftGraphIndustryDataUserMatchingSetting[]>`: A collection of user matching settings by roleGroup.
   - `[MatchTarget <IMicrosoftGraphIndustryDataUserMatchTargetReferenceValue>]`: userMatchTargetReferenceValue
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Code <String>]`: The code of the desired referenceDefinition entry.
     - `[Value <IMicrosoftGraphIndustryDataReferenceDefinition>]`: referenceDefinition
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Code <String>]`: The code value for the definition that must be unique within the referenceType.
       - `[IsDisabled <Boolean?>]`: Indicates whether the definition has been disabled.
       - `[ReferenceType <String>]`: The categorical type for a collection of enumerated values.
@@ -303,7 +296,7 @@ USERMATCHINGSETTINGS <IMicrosoftGraphIndustryDataUserMatchingSetting\[]>: A coll
   - `[PriorityOrder <Int32?>]`: The priority order to apply when a user has multiple RefRole codes assigned.
   - `[RoleGroup <IMicrosoftGraphIndustryDataRoleGroup>]`: roleGroup
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[DisplayName <String>]`: The name of the role group.
     - `[Roles <IMicrosoftGraphIndustryDataRoleReferenceValue[]>]`: The set of roles included in the role group.
       - `[Code <String>]`: The code of the desired referenceDefinition entry.

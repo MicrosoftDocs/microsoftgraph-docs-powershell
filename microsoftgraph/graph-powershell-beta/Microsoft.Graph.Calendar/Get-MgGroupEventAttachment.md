@@ -1,59 +1,49 @@
----
-external help file: Microsoft.Graph.Calendar-help.xml
-Module Name: Microsoft.Graph.Calendar
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/get-mggroupeventattachment
+﻿---
+external help file: Microsoft.Graph.Beta.Calendar-help.xml
+Module Name: Microsoft.Graph.Beta.Calendar
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupevent
 schema: 2.0.0
-ms.prod: outlook
 ---
 
-# Get-MgGroupEventAttachment
+# Get-MgBetaGroupEvent
 
 ## SYNOPSIS
-The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event.
-Navigation property.
-Read-only.
-Nullable.
+Get an event object.
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgGroupEventAttachment -EventId <String> -GroupId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [-Filter <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+Get-MgBetaGroupEvent -GroupId <String> [-Property <String[]>] [-Filter <String>] [-Skip <Int32>]
+ [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgGroupEventAttachment -AttachmentId <String> -EventId <String> -GroupId <String>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaGroupEvent -EventId <String> -GroupId <String> [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgGroupEventAttachment -InputObject <ICalendarIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
+Get-MgBetaGroupEvent -InputObject <ICalendarIdentity> [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event.
-Navigation property.
-Read-only.
-Nullable.
+Get an event object.
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Calendar
-
-# A UPN can also be used as -UserId.
-Get-MgUserEventAttachment -UserId $userId -EventId $eventId
+Import-Module Microsoft.Graph.Beta.Calendar
+Get-MgBetaGroupEvent -GroupId $groupId -EventId $eventId
 ```
 
-This example shows how to use the Get-MgGroupEventAttachment Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### EXAMPLE 2
+```powershell
+Import-Module Microsoft.Graph.Beta.Calendar
+Get-MgBetaGroupEvent -GroupId $groupId
+```
 
 ## PARAMETERS
 
@@ -66,21 +56,6 @@ Parameter Sets: List
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -AttachmentId
-The unique identifier of attachment
-
-```yaml
-Type: String
-Parameter Sets: Get
-Aliases:
-
-Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -108,25 +83,10 @@ The unique identifier of event
 
 ```yaml
 Type: String
-Parameter Sets: List, Get
+Parameter Sets: Get
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ExpandProperty
-Expand related entities
-
-```yaml
-Type: String[]
-Parameter Sets: (All)
-Aliases: Expand
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -165,7 +125,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ICalendarIdentity
@@ -259,10 +219,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ICalendarIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttachment
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEvent
 ## NOTES
 
 ALIASES
@@ -272,7 +232,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+`INPUTOBJECT <ICalendarIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[CalendarGroupId <String>]`: The unique identifier of calendarGroup
   - `[CalendarId <String>]`: The unique identifier of calendar
@@ -282,9 +242,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[EventId2 <String>]`: The unique identifier of event
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[GroupId <String>]`: The unique identifier of group
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
   - `[PlaceId <String>]`: The unique identifier of place
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS

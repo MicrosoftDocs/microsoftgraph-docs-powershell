@@ -1,12 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.Governance-help.xml
-Module Name: Microsoft.Graph.Identity.Governance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementaccesspackageincompatibleaccesspackagebyref
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.Governance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageincompatibleaccesspackagebyref
 schema: 2.0.0
-ms.prod: governance
 ---
 
-# Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef
+# Get-MgBetaEntitlementManagementAccessPackageIncompatibleAccessPackageByRef
 
 ## SYNOPSIS
 Retrieve a list of the accessPackage objects that have been marked as incompatible on an accessPackage.
@@ -14,7 +13,7 @@ Retrieve a list of the accessPackage objects that have been marked as incompatib
 ## SYNTAX
 
 ```
-Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef -AccessPackageId <String>
+Get-MgBetaEntitlementManagementAccessPackageIncompatibleAccessPackageByRef -AccessPackageId <String>
  [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
  [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
@@ -24,16 +23,12 @@ Retrieve a list of the accessPackage objects that have been marked as incompatib
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Identity.Governance
-
-Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackage -AccessPackageId $accessPackageId
+Import-Module Microsoft.Graph.Beta.Identity.Governance
 ```
 
-This example shows how to use the Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Get-MgBetaEntitlementManagementAccessPackageIncompatibleAccessPackage -AccessPackageId $accessPackageId
 
 ## PARAMETERS
 

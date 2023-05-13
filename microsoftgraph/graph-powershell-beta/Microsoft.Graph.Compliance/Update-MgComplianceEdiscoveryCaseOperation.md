@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Compliance-help.xml
-Module Name: Microsoft.Graph.Compliance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/update-mgcomplianceediscoverycaseoperation
+﻿---
+external help file: Microsoft.Graph.Beta.Compliance-help.xml
+Module Name: Microsoft.Graph.Beta.Compliance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycaseoperation
 schema: 2.0.0
 ---
 
-# Update-MgComplianceEdiscoveryCaseOperation
+# Update-MgBetaComplianceEdiscoveryCaseOperation
 
 ## SYNOPSIS
 Update the navigation property operations in compliance
@@ -14,38 +14,50 @@ Update the navigation property operations in compliance
 
 ### UpdateExpanded (Default)
 ```
-Update-MgComplianceEdiscoveryCaseOperation -CaseId <String> -CaseOperationId <String> [-Action <String>]
+Update-MgBetaComplianceEdiscoveryCaseOperation -CaseId <String> -CaseOperationId <String> [-Action <String>]
  [-AdditionalProperties <Hashtable>] [-CompletedDateTime <DateTime>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-CreatedDateTime <DateTime>] [-Id <String>] [-PercentProgress <Int32>]
- [-ResultInfo <IMicrosoftGraphResultInfo>] [-Status <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResultInfo <IMicrosoftGraphResultInfo>] [-Status <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgComplianceEdiscoveryCaseOperation -CaseId <String> -CaseOperationId <String>
- -BodyParameter <IMicrosoftGraphEdiscoveryCaseOperation> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaComplianceEdiscoveryCaseOperation -CaseId <String> -CaseOperationId <String>
+ -BodyParameter <IMicrosoftGraphEdiscoveryCaseOperation> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgComplianceEdiscoveryCaseOperation -InputObject <IComplianceIdentity> [-Action <String>]
+Update-MgBetaComplianceEdiscoveryCaseOperation -InputObject <IComplianceIdentity> [-Action <String>]
  [-AdditionalProperties <Hashtable>] [-CompletedDateTime <DateTime>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-CreatedDateTime <DateTime>] [-Id <String>] [-PercentProgress <Int32>]
- [-ResultInfo <IMicrosoftGraphResultInfo>] [-Status <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResultInfo <IMicrosoftGraphResultInfo>] [-Status <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgComplianceEdiscoveryCaseOperation -InputObject <IComplianceIdentity>
- -BodyParameter <IMicrosoftGraphEdiscoveryCaseOperation> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaComplianceEdiscoveryCaseOperation -InputObject <IComplianceIdentity>
+ -BodyParameter <IMicrosoftGraphEdiscoveryCaseOperation> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property operations in compliance
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -81,7 +93,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 caseOperation
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEdiscoveryCaseOperation
@@ -142,7 +154,7 @@ Accept wildcard characters: False
 
 ### -CreatedBy
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
+To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet
@@ -189,7 +201,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IComplianceIdentity
@@ -200,21 +212,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -235,7 +232,7 @@ Accept wildcard characters: False
 
 ### -ResultInfo
 resultInfo
-To construct, please use Get-Help -Online and see NOTES section for RESULTINFO properties and create a hash table.
+To construct, see NOTES section for RESULTINFO properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphResultInfo
@@ -300,11 +297,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryCaseOperation
+### Microsoft.Graph.Beta.PowerShell.Models.IComplianceIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEdiscoveryCaseOperation
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEdiscoveryCaseOperation
 ## NOTES
 
 ALIASES
@@ -314,7 +311,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphEdiscoveryCaseOperation>`: caseOperation
+`BODYPARAMETER <IMicrosoftGraphEdiscoveryCaseOperation>`: caseOperation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Action <String>]`: caseAction
@@ -336,7 +333,7 @@ BODYPARAMETER `<IMicrosoftGraphEdiscoveryCaseOperation>`: caseOperation
     - `[Subcode <Int32?>]`: The result sub-code.
   - `[Status <String>]`: caseOperationStatus
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+`CREATEDBY <IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -345,7 +342,7 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
+`INPUTOBJECT <IComplianceIdentity>`: Identity Parameter
   - `[CaseId <String>]`: The unique identifier of case
   - `[CaseOperationId <String>]`: The unique identifier of caseOperation
   - `[CustodianId <String>]`: The unique identifier of custodian
@@ -361,7 +358,7 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
   - `[UnifiedGroupSourceId <String>]`: The unique identifier of unifiedGroupSource
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
-RESULTINFO `<IMicrosoftGraphResultInfo>`: resultInfo
+`RESULTINFO <IMicrosoftGraphResultInfo>`: resultInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Code <Int32?>]`: The result code.
   - `[Message <String>]`: The message.

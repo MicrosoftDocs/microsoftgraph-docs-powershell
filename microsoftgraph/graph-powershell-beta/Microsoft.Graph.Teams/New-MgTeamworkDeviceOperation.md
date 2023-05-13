@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mgteamworkdeviceoperation
+﻿---
+external help file: Microsoft.Graph.Beta.Teams-help.xml
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamworkdeviceoperation
 schema: 2.0.0
 ---
 
-# New-MgTeamworkDeviceOperation
+# New-MgBetaTeamworkDeviceOperation
 
 ## SYNOPSIS
 Create new navigation property to operations for teamwork
@@ -14,7 +14,7 @@ Create new navigation property to operations for teamwork
 
 ### CreateExpanded (Default)
 ```
-New-MgTeamworkDeviceOperation -TeamworkDeviceId <String> [-AdditionalProperties <Hashtable>]
+New-MgBetaTeamworkDeviceOperation -TeamworkDeviceId <String> [-AdditionalProperties <Hashtable>]
  [-CompletedDateTime <DateTime>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
  [-Error <IMicrosoftGraphOperationError>] [-Id <String>] [-LastActionBy <IMicrosoftGraphIdentitySet>]
  [-LastActionDateTime <DateTime>] [-OperationType <String>] [-StartedDateTime <DateTime>] [-Status <String>]
@@ -23,13 +23,13 @@ New-MgTeamworkDeviceOperation -TeamworkDeviceId <String> [-AdditionalProperties 
 
 ### Create
 ```
-New-MgTeamworkDeviceOperation -TeamworkDeviceId <String>
+New-MgBetaTeamworkDeviceOperation -TeamworkDeviceId <String>
  -BodyParameter <IMicrosoftGraphTeamworkDeviceOperation> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgTeamworkDeviceOperation -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
+New-MgBetaTeamworkDeviceOperation -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
  [-CompletedDateTime <DateTime>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
  [-Error <IMicrosoftGraphOperationError>] [-Id <String>] [-LastActionBy <IMicrosoftGraphIdentitySet>]
  [-LastActionDateTime <DateTime>] [-OperationType <String>] [-StartedDateTime <DateTime>] [-Status <String>]
@@ -38,7 +38,7 @@ New-MgTeamworkDeviceOperation -InputObject <ITeamsIdentity> [-AdditionalProperti
 
 ### CreateViaIdentity
 ```
-New-MgTeamworkDeviceOperation -InputObject <ITeamsIdentity>
+New-MgBetaTeamworkDeviceOperation -InputObject <ITeamsIdentity>
  -BodyParameter <IMicrosoftGraphTeamworkDeviceOperation> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -46,6 +46,20 @@ New-MgTeamworkDeviceOperation -InputObject <ITeamsIdentity>
 Create new navigation property to operations for teamwork
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -66,7 +80,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 teamworkDeviceOperation
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphTeamworkDeviceOperation
@@ -97,7 +111,7 @@ Accept wildcard characters: False
 
 ### -CreatedBy
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
+To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet
@@ -128,7 +142,7 @@ Accept wildcard characters: False
 
 ### -Error
 operationError
-To construct, please use Get-Help -Online and see NOTES section for ERROR properties and create a hash table.
+To construct, see NOTES section for ERROR properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphOperationError
@@ -143,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -160,7 +174,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ITeamsIdentity
@@ -176,7 +190,7 @@ Accept wildcard characters: False
 
 ### -LastActionBy
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for LASTACTIONBY properties and create a hash table.
+To construct, see NOTES section for LASTACTIONBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet
@@ -301,11 +315,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamworkDeviceOperation
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamworkDeviceOperation
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamworkDeviceOperation
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamworkDeviceOperation
 ## NOTES
 
 ALIASES
@@ -315,9 +329,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphTeamworkDeviceOperation>`: teamworkDeviceOperation
+`BODYPARAMETER <IMicrosoftGraphTeamworkDeviceOperation>`: teamworkDeviceOperation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[CompletedDateTime <DateTime?>]`: Time at which the operation reached a final state (for example, Successful, Failed, and Cancelled).
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -338,7 +352,7 @@ BODYPARAMETER `<IMicrosoftGraphTeamworkDeviceOperation>`: teamworkDeviceOperatio
   - `[StartedDateTime <DateTime?>]`: Time at which the operation was started.
   - `[Status <String>]`: The current status of the async operation, for example, Queued, Scheduled, InProgress,  Successful, Cancelled, and Failed.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+`CREATEDBY <IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -347,12 +361,12 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-ERROR `<IMicrosoftGraphOperationError>`: operationError
+`ERROR <IMicrosoftGraphOperationError>`: operationError
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Code <String>]`: Operation error code.
   - `[Message <String>]`: Operation error message.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat
@@ -391,7 +405,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
-LASTACTIONBY `<IMicrosoftGraphIdentitySet>`: identitySet
+`LASTACTIONBY <IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

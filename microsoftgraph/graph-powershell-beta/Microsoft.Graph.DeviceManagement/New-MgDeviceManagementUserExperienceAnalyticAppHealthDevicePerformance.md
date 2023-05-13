@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticapphealthdeviceperformance
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticapphealthdeviceperformance
 schema: 2.0.0
 ---
 
-# New-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance
+# New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance
 
 ## SYNOPSIS
 Create new navigation property to userExperienceAnalyticsAppHealthDevicePerformance for deviceManagement
@@ -14,7 +14,7 @@ Create new navigation property to userExperienceAnalyticsAppHealthDevicePerforma
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance [-AdditionalProperties <Hashtable>]
+New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance [-AdditionalProperties <Hashtable>]
  [-AppCrashCount <Int32>] [-AppHangCount <Int32>] [-CrashedAppCount <Int32>] [-DeviceAppHealthScore <Double>]
  [-DeviceAppHealthStatus <String>] [-DeviceDisplayName <String>] [-DeviceId <String>]
  [-DeviceManufacturer <String>] [-DeviceModel <String>] [-HealthStatus <UserExperienceAnalyticsHealthState>]
@@ -24,7 +24,7 @@ New-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance [-Additio
 
 ### Create
 ```
-New-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance
+New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance
  -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAppHealthDevicePerformance> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
@@ -33,6 +33,20 @@ New-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance
 Create new navigation property to userExperienceAnalyticsAppHealthDevicePerformance for deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -85,7 +99,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 The user experience analytics device performance entity contains device performance details.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserExperienceAnalyticsAppHealthDevicePerformance
@@ -222,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -304,10 +318,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAppHealthDevicePerformance
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAppHealthDevicePerformance
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAppHealthDevicePerformance
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAppHealthDevicePerformance
 ## NOTES
 
 ALIASES
@@ -317,9 +331,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsAppHealthDevicePerformance>`: The user experience analytics device performance entity contains device performance details.
+`BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsAppHealthDevicePerformance>`: The user experience analytics device performance entity contains device performance details.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AppCrashCount <Int32?>]`: The number of app crashes for the device. Valid values -2147483648 to 2147483647
   - `[AppHangCount <Int32?>]`: The number of app hangs for the device. Valid values -2147483648 to 2147483647
   - `[CrashedAppCount <Int32?>]`: The number of distinct app crashes for the device. Valid values -2147483648 to 2147483647

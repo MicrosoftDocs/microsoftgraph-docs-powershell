@@ -1,7 +1,7 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/get-mgdriverootanalyticitemactivitystatactivity
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriverootanalyticitemactivitystatactivity
 schema: 2.0.0
 ---
 
@@ -22,6 +22,16 @@ Get-MgDriveRootAnalyticItemActivityStatActivity -DriveId <String> -ItemActivityS
 Exposes the itemActivities represented in this itemActivityStat resource.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 

@@ -1,7 +1,7 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/invoke-mgdismissriskyserviceprincipal
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/invoke-mgdismissriskyserviceprincipal
 schema: 2.0.0
 ---
 
@@ -14,13 +14,13 @@ You can dismiss up to 60 service principal accounts in one request.
 
 ## SYNTAX
 
-### DismissExpanded1 (Default)
+### DismissExpanded (Default)
 ```
 Invoke-MgDismissRiskyServicePrincipal [-AdditionalProperties <Hashtable>] [-ServicePrincipalIds <String[]>]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Dismiss1
+### Dismiss
 ```
 Invoke-MgDismissRiskyServicePrincipal
  -BodyParameter <IPathsUc5289IdentityprotectionRiskyserviceprincipalsMicrosoftGraphDismissPostRequestbodyContentApplicationJsonSchema>
@@ -34,6 +34,16 @@ You can dismiss up to 60 service principal accounts in one request.
 
 ## EXAMPLES
 
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -41,7 +51,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: DismissExpanded1
+Parameter Sets: DismissExpanded
 Aliases:
 
 Required: False
@@ -53,11 +63,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPathsUc5289IdentityprotectionRiskyserviceprincipalsMicrosoftGraphDismissPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Dismiss1
+Parameter Sets: Dismiss
 Aliases:
 
 Required: True
@@ -87,7 +97,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String[]
-Parameter Sets: DismissExpanded1
+Parameter Sets: DismissExpanded
 Aliases:
 
 Required: False
@@ -146,7 +156,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsUc5289IdentityprotectionRiskyserviceprincipalsMicrosoftGraphDismissPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsUc5289IdentityprotectionRiskyserviceprincipalsMicrosoftGraphDismissPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ServicePrincipalIds <String[]>]`: 
 

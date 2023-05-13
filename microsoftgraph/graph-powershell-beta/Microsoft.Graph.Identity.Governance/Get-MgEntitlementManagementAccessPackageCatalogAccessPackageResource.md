@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.Governance-help.xml
-Module Name: Microsoft.Graph.Identity.Governance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementaccesspackagecatalogaccesspackageresource
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.Governance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackagecatalogaccesspackageresource
 schema: 2.0.0
 ---
 
-# Get-MgEntitlementManagementAccessPackageCatalogAccessPackageResource
+# Get-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageResource
 
 ## SYNOPSIS
 Retrieve a list of accessPackageResource objects in an accessPackageCatalog.
@@ -14,7 +14,7 @@ To request to add or remove an accessPackageResource, use create accessPackageRe
 ## SYNTAX
 
 ```
-Get-MgEntitlementManagementAccessPackageCatalogAccessPackageResource -AccessPackageCatalogId <String>
+Get-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageResource -AccessPackageCatalogId <String>
  [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
  [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
@@ -25,10 +25,11 @@ To request to add or remove an accessPackageResource, use create accessPackageRe
 
 ## EXAMPLES
 
-### Example 1: Get catalog resources by catalog id
+### EXAMPLE 1
 ```powershell
-Connect-MgGraph -Scopes 'EntitlementManagement.ReadWrite.All'
-Get-MgEntitlementManagementAccessPackageCatalogAccessPackageResource -AccessPackageCatalogId '54152ecb-c65d-47f2-8a4d-ba2732de0a7b' | Format-List
+Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All'
+Get-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageResource -AccessPackageCatalogId '54152ecb-c65d-47f2-8a4d-ba2732de0a7b' | Format-List
+```
 
 AccessPackageResourceEnvironment : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageResourceEnvironment
 AccessPackageResourceRoles       :
@@ -61,14 +62,12 @@ OriginSystem                     : AadGroup
 ResourceType                     : Security Group
 Url                              : https://account.activedirectory.windowsazure.com/r?tenantId=c265ddcc-4694-4bb0-b771-4829ca21177d#/manageMembership?objectType=Group&objectId=c41e321d-2907-4183-8224-b4cec9c9381b
 AdditionalProperties             : {}
-```
 
-This example returns all access package catalog resources for the specified catalog.
-
-### Example 2: Use -Filter to get all catalog resources with the display name 'Marketing resources'
+### EXAMPLE 2
 ```powershell
-Connect-MgGraph -Scopes 'EntitlementManagement.ReadWrite.All'
-Get-MgEntitlementManagementAccessPackageCatalogAccessPackageResource -AccessPackageCatalogId '54152ecb-c65d-47f2-8a4d-ba2732de0a7b' -Filter "DisplayName eq 'Marketing resources'" | Format-List
+Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All'
+Get-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageResource -AccessPackageCatalogId '54152ecb-c65d-47f2-8a4d-ba2732de0a7b' -Filter "DisplayName eq 'Marketing resources'" | Format-List
+```
 
 AccessPackageResourceEnvironment : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageResourceEnvironment
 AccessPackageResourceRoles       :
@@ -85,9 +84,6 @@ OriginSystem                     : AadGroup
 ResourceType                     : Security Group
 Url                              : https://account.activedirectory.windowsazure.com/r?tenantId=c265ddcc-4694-4bb0-b771-4829ca21177d#/manageMembership?objectType=Group&objectId=b5cd9d19-91c0-4622-93e2-537ad8a0b3ad
 AdditionalProperties             : {}
-```
-
-This example returns the resources in the specified catalog whose display name is `marketing resources`.
 
 ## PARAMETERS
 
@@ -264,7 +260,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResource
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessPackageResource
 ## NOTES
 
 ALIASES

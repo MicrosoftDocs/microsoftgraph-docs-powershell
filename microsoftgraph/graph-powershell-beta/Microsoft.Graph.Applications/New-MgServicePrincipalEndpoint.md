@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Applications-help.xml
-Module Name: Microsoft.Graph.Applications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/new-mgserviceprincipalendpoint
+﻿---
+external help file: Microsoft.Graph.Beta.Applications-help.xml
+Module Name: Microsoft.Graph.Beta.Applications
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalendpoint
 schema: 2.0.0
 ---
 
-# New-MgServicePrincipalEndpoint
+# New-MgBetaServicePrincipalEndpoint
 
 ## SYNOPSIS
 Create new navigation property to endpoints for servicePrincipals
@@ -14,7 +14,7 @@ Create new navigation property to endpoints for servicePrincipals
 
 ### CreateExpanded (Default)
 ```
-New-MgServicePrincipalEndpoint -ServicePrincipalId <String> [-AdditionalProperties <Hashtable>]
+New-MgBetaServicePrincipalEndpoint -ServicePrincipalId <String> [-AdditionalProperties <Hashtable>]
  [-Capability <String>] [-DeletedDateTime <DateTime>] [-Id <String>] [-ProviderId <String>]
  [-ProviderName <String>] [-ProviderResourceId <String>] [-Uri <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -22,13 +22,13 @@ New-MgServicePrincipalEndpoint -ServicePrincipalId <String> [-AdditionalProperti
 
 ### Create
 ```
-New-MgServicePrincipalEndpoint -ServicePrincipalId <String> -BodyParameter <IMicrosoftGraphEndpoint> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaServicePrincipalEndpoint -ServicePrincipalId <String> -BodyParameter <IMicrosoftGraphEndpoint>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgServicePrincipalEndpoint -InputObject <IApplicationsIdentity> [-AdditionalProperties <Hashtable>]
+New-MgBetaServicePrincipalEndpoint -InputObject <IApplicationsIdentity> [-AdditionalProperties <Hashtable>]
  [-Capability <String>] [-DeletedDateTime <DateTime>] [-Id <String>] [-ProviderId <String>]
  [-ProviderName <String>] [-ProviderResourceId <String>] [-Uri <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -36,14 +36,28 @@ New-MgServicePrincipalEndpoint -InputObject <IApplicationsIdentity> [-Additional
 
 ### CreateViaIdentity
 ```
-New-MgServicePrincipalEndpoint -InputObject <IApplicationsIdentity> -BodyParameter <IMicrosoftGraphEndpoint>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaServicePrincipalEndpoint -InputObject <IApplicationsIdentity>
+ -BodyParameter <IMicrosoftGraphEndpoint> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to endpoints for servicePrincipals
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -64,7 +78,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 endpoint
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEndpoint
@@ -79,7 +93,10 @@ Accept wildcard characters: False
 ```
 
 ### -Capability
-.
+Describes the capability that is associated with this resource.
+(e.g.
+Messages, Conversations, etc.) Not nullable.
+Read-only.
 
 ```yaml
 Type: String
@@ -110,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -127,7 +144,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IApplicationsIdentity
@@ -142,7 +159,9 @@ Accept wildcard characters: False
 ```
 
 ### -ProviderId
-.
+Application id of the publishing underlying service.
+Not nullable.
+Read-only.
 
 ```yaml
 Type: String
@@ -157,7 +176,8 @@ Accept wildcard characters: False
 ```
 
 ### -ProviderName
-.
+Name of the publishing underlying service.
+Read-only.
 
 ```yaml
 Type: String
@@ -172,7 +192,10 @@ Accept wildcard characters: False
 ```
 
 ### -ProviderResourceId
-.
+For Microsoft 365 groups, this is set to a well-known name for the resource (e.g.
+Yammer.FeedURL etc.).
+Not nullable.
+Read-only.
 
 ```yaml
 Type: String
@@ -202,7 +225,9 @@ Accept wildcard characters: False
 ```
 
 ### -Uri
-.
+URL of the published resource.
+Not nullable.
+Read-only.
 
 ```yaml
 Type: String
@@ -252,11 +277,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEndpoint
+### Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEndpoint
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEndpoint
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEndpoint
 ## NOTES
 
 ALIASES
@@ -266,17 +291,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphEndpoint>`: endpoint
+`BODYPARAMETER <IMicrosoftGraphEndpoint>`: endpoint
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[Capability <String>]`: 
-  - `[ProviderId <String>]`: 
-  - `[ProviderName <String>]`: 
-  - `[ProviderResourceId <String>]`: 
-  - `[Uri <String>]`: 
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
+  - `[Capability <String>]`: Describes the capability that is associated with this resource. (e.g. Messages, Conversations, etc.) Not nullable. Read-only.
+  - `[ProviderId <String>]`: Application id of the publishing underlying service. Not nullable. Read-only.
+  - `[ProviderName <String>]`: Name of the publishing underlying service. Read-only.
+  - `[ProviderResourceId <String>]`: For Microsoft 365 groups, this is set to a well-known name for the resource (e.g. Yammer.FeedURL etc.). Not nullable. Read-only.
+  - `[Uri <String>]`: URL of the published resource. Not nullable. Read-only.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+`INPUTOBJECT <IApplicationsIdentity>`: Identity Parameter
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
   - `[ApplicationId <String>]`: The unique identifier of application

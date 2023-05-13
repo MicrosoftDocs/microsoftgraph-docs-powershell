@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Administration
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointorganizationsetting
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointorganizationsetting
 schema: 2.0.0
 ---
 
-# Get-MgDeviceManagementVirtualEndpointOrganizationSetting
+# Get-MgBetaDeviceManagementVirtualEndpointOrganizationSetting
 
 ## SYNOPSIS
 Read the properties and relationships of the cloudPcOrganizationSettings from the current tenant.
@@ -14,8 +14,8 @@ A tenant has only one **cloudPcOrganizationSettings** object.
 ## SYNTAX
 
 ```
-Get-MgDeviceManagementVirtualEndpointOrganizationSetting [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
+Get-MgBetaDeviceManagementVirtualEndpointOrganizationSetting [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -24,14 +24,11 @@ A tenant has only one **cloudPcOrganizationSettings** object.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgDeviceManagementVirtualEndpointOrganizationSetting Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.DeviceManagement.Administration
-Get-MgDeviceManagementVirtualEndpointOrganizationSetting
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
+Get-MgBetaDeviceManagementVirtualEndpointOrganizationSetting
 ```
-
-This example shows how to use the Get-MgDeviceManagementVirtualEndpointOrganizationSetting Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -72,7 +69,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCloudPcOrganizationSettings
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcOrganizationSettings
 ## NOTES
 
 ALIASES

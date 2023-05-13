@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementreporthistoricalreport
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreporthistoricalreport
 schema: 2.0.0
 ---
 
-# Get-MgDeviceManagementReportHistoricalReport
+# Get-MgBetaDeviceManagementReportHistoricalReport
 
 ## SYNOPSIS
 Invoke action getHistoricalReport
@@ -14,14 +14,14 @@ Invoke action getHistoricalReport
 
 ### GetExpanded (Default)
 ```
-Get-MgDeviceManagementReportHistoricalReport -OutFile <String> [-AdditionalProperties <Hashtable>]
+Get-MgBetaDeviceManagementReportHistoricalReport -OutFile <String> [-AdditionalProperties <Hashtable>]
  [-Filter <String>] [-GroupBy <String[]>] [-Name <String>] [-Property <String[]>] [-Search <String>]
  [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgDeviceManagementReportHistoricalReport -OutFile <String>
+Get-MgBetaDeviceManagementReportHistoricalReport -OutFile <String>
  -BodyParameter <IPaths1Mia7W1DevicemanagementReportsMicrosoftGraphGethistoricalreportPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -30,6 +30,20 @@ Get-MgDeviceManagementReportHistoricalReport -OutFile <String>
 Invoke action getHistoricalReport
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -50,7 +64,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths1Mia7W1DevicemanagementReportsMicrosoftGraphGethistoricalreportPostRequestbodyContentApplicationJsonSchema
@@ -250,7 +264,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1Mia7W1DevicemanagementReportsMicrosoftGraphGethistoricalreportPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Mia7W1DevicemanagementReportsMicrosoftGraphGethistoricalreportPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### System.Boolean
@@ -263,7 +277,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Mia7W1DevicemanagementReportsMicrosoftGraphGethistoricalreportPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1Mia7W1DevicemanagementReportsMicrosoftGraphGethistoricalreportPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Filter <String>]`: 
   - `[GroupBy <String[]>]`: 

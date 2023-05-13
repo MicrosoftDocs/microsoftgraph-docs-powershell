@@ -1,12 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganizationbranding
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationbranding
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
-# Get-MgOrganizationBranding
+# Get-MgBetaOrganizationBranding
 
 ## SYNOPSIS
 Retrieve the default organizational branding object, if the **Accept-Language** header is set to `0` or `default`.
@@ -19,13 +18,13 @@ To retrieve Stream types of the default branding, for example, **bannerLogo** an
 
 ### Get (Default)
 ```
-Get-MgOrganizationBranding -OrganizationId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaOrganizationBranding -OrganizationId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgOrganizationBranding -InputObject <IIdentityDirectoryManagementIdentity> [-ExpandProperty <String[]>]
+Get-MgBetaOrganizationBranding -InputObject <IIdentityDirectoryManagementIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
@@ -38,32 +37,23 @@ To retrieve Stream types of the default branding, for example, **bannerLogo** an
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgOrganizationBranding Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
-Get-MgOrganizationBranding -OrganizationId $organizationId
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+Get-MgBetaOrganizationBranding -OrganizationId $organizationId
 ```
 
-This example shows how to use the Get-MgOrganizationBranding Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Get-MgOrganizationBranding Cmdlet
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
-Get-MgOrganizationBranding -OrganizationId $organizationId
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+Get-MgBetaOrganizationBranding -OrganizationId $organizationId
 ```
 
-This example shows how to use the Get-MgOrganizationBranding Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Using the Get-MgOrganizationBranding Cmdlet
+### EXAMPLE 3
 ```powershell
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
-Get-MgOrganizationBranding -OrganizationId $organizationId
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+Get-MgBetaOrganizationBranding -OrganizationId $organizationId
 ```
-
-This example shows how to use the Get-MgOrganizationBranding Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -84,7 +74,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IIdentityDirectoryManagementIdentity
@@ -133,10 +123,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOrganizationalBranding1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOrganizationalBranding
 ## NOTES
 
 ALIASES
@@ -146,7 +136,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet

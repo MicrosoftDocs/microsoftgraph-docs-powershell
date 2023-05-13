@@ -1,27 +1,27 @@
----
-external help file: Microsoft.Graph.Applications-help.xml
-Module Name: Microsoft.Graph.Applications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/invoke-mgfunctionapplicationsynchronizationtemplateschema
+﻿---
+external help file: Microsoft.Graph.Beta.Applications-help.xml
+Module Name: Microsoft.Graph.Beta.Applications
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetafunctionapplicationsynchronizationtemplateschema
 schema: 2.0.0
 ---
 
-# Invoke-MgFunctionApplicationSynchronizationTemplateSchema
+# Invoke-MgBetaFunctionApplicationSynchronizationTemplateSchema
 
 ## SYNOPSIS
 Invoke function functions
 
 ## SYNTAX
 
-### Functions (Default)
+### Function (Default)
 ```
-Invoke-MgFunctionApplicationSynchronizationTemplateSchema -ApplicationId <String>
+Invoke-MgBetaFunctionApplicationSynchronizationTemplateSchema -ApplicationId <String>
  -SynchronizationTemplateId <String> [-Count] [-Filter <String>] [-Property <String[]>] [-Search <String>]
  [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
 ```
 
-### FunctionsViaIdentity
+### FunctionViaIdentity
 ```
-Invoke-MgFunctionApplicationSynchronizationTemplateSchema -InputObject <IApplicationsIdentity> [-Count]
+Invoke-MgBetaFunctionApplicationSynchronizationTemplateSchema -InputObject <IApplicationsIdentity> [-Count]
  [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [<CommonParameters>]
 ```
@@ -31,6 +31,20 @@ Invoke function functions
 
 ## EXAMPLES
 
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -ApplicationId
@@ -38,7 +52,7 @@ The unique identifier of application
 
 ```yaml
 Type: String
-Parameter Sets: Functions
+Parameter Sets: Function
 Aliases:
 
 Required: True
@@ -80,11 +94,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IApplicationsIdentity
-Parameter Sets: FunctionsViaIdentity
+Parameter Sets: FunctionViaIdentity
 Aliases:
 
 Required: True
@@ -144,7 +158,7 @@ The unique identifier of synchronizationTemplate
 
 ```yaml
 Type: String
-Parameter Sets: Functions
+Parameter Sets: Function
 Aliases:
 
 Required: True
@@ -189,10 +203,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttributeMappingFunctionSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAttributeMappingFunctionSchema
 ## NOTES
 
 ALIASES
@@ -202,7 +216,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+`INPUTOBJECT <IApplicationsIdentity>`: Identity Parameter
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
   - `[ApplicationId <String>]`: The unique identifier of application

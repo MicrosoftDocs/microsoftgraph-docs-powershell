@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligenceintelprofile
+﻿---
+external help file: Microsoft.Graph.Beta.Security-help.xml
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligenceintelprofile
 schema: 2.0.0
 ---
 
-# New-MgSecurityThreatIntelligenceIntelProfile
+# New-MgBetaSecurityThreatIntelligenceIntelProfile
 
 ## SYNOPSIS
 Create new navigation property to intelProfiles for security
@@ -14,7 +14,7 @@ Create new navigation property to intelProfiles for security
 
 ### CreateExpanded (Default)
 ```
-New-MgSecurityThreatIntelligenceIntelProfile [-AdditionalProperties <Hashtable>] [-Aliases <String[]>]
+New-MgBetaSecurityThreatIntelligenceIntelProfile [-AdditionalProperties <Hashtable>] [-Aliases <String[]>]
  [-Description <IMicrosoftGraphSecurityFormattedContent>] [-FirstActiveDateTime <DateTime>] [-Id <String>]
  [-Indicators <IMicrosoftGraphSecurityIntelligenceProfileIndicator[]>] [-Kind <String>]
  [-SponsorStates <IMicrosoftGraphSecurityIntelligenceProfileSponsorState[]>]
@@ -24,7 +24,7 @@ New-MgSecurityThreatIntelligenceIntelProfile [-AdditionalProperties <Hashtable>]
 
 ### Create
 ```
-New-MgSecurityThreatIntelligenceIntelProfile -BodyParameter <IMicrosoftGraphSecurityIntelligenceProfile>
+New-MgBetaSecurityThreatIntelligenceIntelProfile -BodyParameter <IMicrosoftGraphSecurityIntelligenceProfile>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -32,6 +32,16 @@ New-MgSecurityThreatIntelligenceIntelProfile -BodyParameter <IMicrosoftGraphSecu
 Create new navigation property to intelProfiles for security
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -67,7 +77,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 intelligenceProfile
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSecurityIntelligenceProfile
@@ -83,7 +93,7 @@ Accept wildcard characters: False
 
 ### -Description
 formattedContent
-To construct, please use Get-Help -Online and see NOTES section for DESCRIPTION properties and create a hash table.
+To construct, see NOTES section for DESCRIPTION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSecurityFormattedContent
@@ -115,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -132,7 +142,7 @@ Accept wildcard characters: False
 
 ### -Indicators
 Includes an assemblage of high-fidelity network indicators of compromise.
-To construct, please use Get-Help -Online and see NOTES section for INDICATORS properties and create a hash table.
+To construct, see NOTES section for INDICATORS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSecurityIntelligenceProfileIndicator[]
@@ -164,7 +174,7 @@ Accept wildcard characters: False
 ### -SponsorStates
 Known states (such as a country or government) who have sponsored threat actors associated with this intelligenceProfile.
 This is also known as the country/region of origin for the given actor or threat.
-To construct, please use Get-Help -Online and see NOTES section for SPONSORSTATES properties and create a hash table.
+To construct, see NOTES section for SPONSORSTATES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSecurityIntelligenceProfileSponsorState[]
@@ -180,7 +190,7 @@ Accept wildcard characters: False
 
 ### -Summary
 formattedContent
-To construct, please use Get-Help -Online and see NOTES section for SUMMARY properties and create a hash table.
+To construct, see NOTES section for SUMMARY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSecurityFormattedContent
@@ -226,7 +236,7 @@ Accept wildcard characters: False
 
 ### -Tradecraft
 formattedContent
-To construct, please use Get-Help -Online and see NOTES section for TRADECRAFT properties and create a hash table.
+To construct, see NOTES section for TRADECRAFT properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSecurityFormattedContent
@@ -276,10 +286,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityIntelligenceProfile
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityIntelligenceProfile
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityIntelligenceProfile
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityIntelligenceProfile
 ## NOTES
 
 ALIASES
@@ -289,9 +299,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSecurityIntelligenceProfile>`: intelligenceProfile
+`BODYPARAMETER <IMicrosoftGraphSecurityIntelligenceProfile>`: intelligenceProfile
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Aliases <String[]>]`: A list of commonly-known aliases for the threat intelligence included in the intelligenceProfile.
   - `[Description <IMicrosoftGraphSecurityFormattedContent>]`: formattedContent
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -301,9 +311,9 @@ BODYPARAMETER `<IMicrosoftGraphSecurityIntelligenceProfile>`: intelligenceProfil
   - `[Indicators <IMicrosoftGraphSecurityIntelligenceProfileIndicator[]>]`: Includes an assemblage of high-fidelity network indicators of compromise.
     - `[Artifact <IMicrosoftGraphSecurityArtifact>]`: artifact
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Source <String>]`: indicatorSource
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[FirstSeenDateTime <DateTime?>]`: Designate when an artifact was first used actively in an attack, when a particular sample was compiled, or if neither of those could be ascertained when the file was first seen in public repositories (for example, VirusTotal, ANY.RUN, Hybrid Analysis) or reported publicly.
     - `[LastSeenDateTime <DateTime?>]`: Designate when an artifact was most recently used actively in an attack, when a particular sample was compiled, or if neither of those could be ascertained when the file was first seen in public repositories (for example, VirusTotal, ANY.RUN, Hybrid Analysis) or reported publicly.
   - `[Kind <String>]`: intelligenceProfileKind
@@ -315,30 +325,30 @@ BODYPARAMETER `<IMicrosoftGraphSecurityIntelligenceProfile>`: intelligenceProfil
   - `[Title <String>]`: The title of this intelligenceProfile.
   - `[Tradecraft <IMicrosoftGraphSecurityFormattedContent>]`: formattedContent
 
-DESCRIPTION `<IMicrosoftGraphSecurityFormattedContent>`: formattedContent
+`DESCRIPTION <IMicrosoftGraphSecurityFormattedContent>`: formattedContent
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Content <String>]`: The content of this formattedContent.
   - `[Format <String>]`: contentFormat
 
-INDICATORS <IMicrosoftGraphSecurityIntelligenceProfileIndicator\[]>: Includes an assemblage of high-fidelity network indicators of compromise.
+`INDICATORS <IMicrosoftGraphSecurityIntelligenceProfileIndicator[]>`: Includes an assemblage of high-fidelity network indicators of compromise.
   - `[Artifact <IMicrosoftGraphSecurityArtifact>]`: artifact
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Source <String>]`: indicatorSource
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[FirstSeenDateTime <DateTime?>]`: Designate when an artifact was first used actively in an attack, when a particular sample was compiled, or if neither of those could be ascertained when the file was first seen in public repositories (for example, VirusTotal, ANY.RUN, Hybrid Analysis) or reported publicly.
   - `[LastSeenDateTime <DateTime?>]`: Designate when an artifact was most recently used actively in an attack, when a particular sample was compiled, or if neither of those could be ascertained when the file was first seen in public repositories (for example, VirusTotal, ANY.RUN, Hybrid Analysis) or reported publicly.
 
-SPONSORSTATES <IMicrosoftGraphSecurityIntelligenceProfileSponsorState\[]>: Known states (such as a country or government) who have sponsored threat actors associated with this intelligenceProfile. This is also known as the country/region of origin for the given actor or threat.
+`SPONSORSTATES <IMicrosoftGraphSecurityIntelligenceProfileSponsorState[]>`: Known states (such as a country or government) who have sponsored threat actors associated with this intelligenceProfile. This is also known as the country/region of origin for the given actor or threat.
   - `[Code <String>]`: A codified representation for this sponsor state.
   - `[Label <String>]`: A display label for this sponsor state.
 
-SUMMARY `<IMicrosoftGraphSecurityFormattedContent>`: formattedContent
+`SUMMARY <IMicrosoftGraphSecurityFormattedContent>`: formattedContent
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Content <String>]`: The content of this formattedContent.
   - `[Format <String>]`: contentFormat
 
-TRADECRAFT `<IMicrosoftGraphSecurityFormattedContent>`: formattedContent
+`TRADECRAFT <IMicrosoftGraphSecurityFormattedContent>`: formattedContent
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Content <String>]`: The content of this formattedContent.
   - `[Format <String>]`: contentFormat

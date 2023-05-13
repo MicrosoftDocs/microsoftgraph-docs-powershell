@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementassignmentfilter
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementassignmentfilter
 schema: 2.0.0
 ---
 
-# New-MgDeviceManagementAssignmentFilter
+# New-MgBetaDeviceManagementAssignmentFilter
 
 ## SYNOPSIS
 Create new navigation property to assignmentFilters for deviceManagement
@@ -14,7 +14,8 @@ Create new navigation property to assignmentFilters for deviceManagement
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementAssignmentFilter [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
+New-MgBetaDeviceManagementAssignmentFilter [-AdditionalProperties <Hashtable>]
+ [-AssignmentFilterManagementType <AssignmentFilterManagementType>] [-CreatedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
  [-Payloads <IMicrosoftGraphPayloadByFilter[]>] [-Platform <DevicePlatformType>] [-RoleScopeTags <String[]>]
  [-Rule <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -22,14 +23,29 @@ New-MgDeviceManagementAssignmentFilter [-AdditionalProperties <Hashtable>] [-Cre
 
 ### Create
 ```
-New-MgDeviceManagementAssignmentFilter -BodyParameter <IMicrosoftGraphDeviceAndAppManagementAssignmentFilter>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaDeviceManagementAssignmentFilter
+ -BodyParameter <IMicrosoftGraphDeviceAndAppManagementAssignmentFilter> [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to assignmentFilters for deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -48,9 +64,24 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -AssignmentFilterManagementType
+Supported filter management types whether its devices or apps.
+
+```yaml
+Type: AssignmentFilterManagementType
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -BodyParameter
 A class containing the properties used for Assignment Filter.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceAndAppManagementAssignmentFilter
@@ -65,7 +96,10 @@ Accept wildcard characters: False
 ```
 
 ### -CreatedDateTime
-Creation time of the Assignment Filter.
+The creation time of the assignment filter.
+The value cannot be modified and is automatically populated during new assignment filter process.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
 
 ```yaml
 Type: DateTime
@@ -80,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-Description of the Assignment Filter.
+Optional description of the Assignment Filter.
 
 ```yaml
 Type: String
@@ -95,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-DisplayName of the Assignment Filter.
+The name of the Assignment Filter.
 
 ```yaml
 Type: String
@@ -110,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -127,6 +161,8 @@ Accept wildcard characters: False
 
 ### -LastModifiedDateTime
 Last modified time of the Assignment Filter.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
 
 ```yaml
 Type: DateTime
@@ -141,8 +177,8 @@ Accept wildcard characters: False
 ```
 
 ### -Payloads
-Associated assignments for a specific filter
-To construct, please use Get-Help -Online and see NOTES section for PAYLOADS properties and create a hash table.
+Indicates associated assignments for a specific filter.
+To construct, see NOTES section for PAYLOADS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPayloadByFilter[]
@@ -172,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleScopeTags
-RoleScopeTags of the Assignment Filter.
+Indicates role scope tags assigned for the assignment filter.
 
 ```yaml
 Type: String[]
@@ -187,7 +223,7 @@ Accept wildcard characters: False
 ```
 
 ### -Rule
-Rule definition of the Assignment Filter.
+Rule definition of the assignment filter.
 
 ```yaml
 Type: String
@@ -237,10 +273,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceAndAppManagementAssignmentFilter
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceAndAppManagementAssignmentFilter
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceAndAppManagementAssignmentFilter
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceAndAppManagementAssignmentFilter
 ## NOTES
 
 ALIASES
@@ -250,23 +286,24 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDeviceAndAppManagementAssignmentFilter>`: A class containing the properties used for Assignment Filter.
+`BODYPARAMETER <IMicrosoftGraphDeviceAndAppManagementAssignmentFilter>`: A class containing the properties used for Assignment Filter.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[CreatedDateTime <DateTime?>]`: Creation time of the Assignment Filter.
-  - `[Description <String>]`: Description of the Assignment Filter.
-  - `[DisplayName <String>]`: DisplayName of the Assignment Filter.
-  - `[LastModifiedDateTime <DateTime?>]`: Last modified time of the Assignment Filter.
-  - `[Payloads <IMicrosoftGraphPayloadByFilter[]>]`: Associated assignments for a specific filter
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
+  - `[AssignmentFilterManagementType <AssignmentFilterManagementType?>]`: Supported filter management types whether its devices or apps.
+  - `[CreatedDateTime <DateTime?>]`: The creation time of the assignment filter. The value cannot be modified and is automatically populated during new assignment filter process. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
+  - `[Description <String>]`: Optional description of the Assignment Filter.
+  - `[DisplayName <String>]`: The name of the Assignment Filter.
+  - `[LastModifiedDateTime <DateTime?>]`: Last modified time of the Assignment Filter. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
+  - `[Payloads <IMicrosoftGraphPayloadByFilter[]>]`: Indicates associated assignments for a specific filter.
     - `[AssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
     - `[GroupId <String>]`: The Azure AD security group ID
     - `[PayloadId <String>]`: The policy identifier
     - `[PayloadType <AssociatedAssignmentPayloadType?>]`: This enum represents associated assignment payload type
   - `[Platform <DevicePlatformType?>]`: Supported platform types.
-  - `[RoleScopeTags <String[]>]`: RoleScopeTags of the Assignment Filter.
-  - `[Rule <String>]`: Rule definition of the Assignment Filter.
+  - `[RoleScopeTags <String[]>]`: Indicates role scope tags assigned for the assignment filter.
+  - `[Rule <String>]`: Rule definition of the assignment filter.
 
-PAYLOADS <IMicrosoftGraphPayloadByFilter\[]>: Associated assignments for a specific filter
+`PAYLOADS <IMicrosoftGraphPayloadByFilter[]>`: Indicates associated assignments for a specific filter.
   - `[AssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
   - `[GroupId <String>]`: The Azure AD security group ID
   - `[PayloadId <String>]`: The policy identifier

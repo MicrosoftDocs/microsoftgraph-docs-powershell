@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2xuserflowidentityproviderbyref
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2xuserflowidentityproviderbyref
 schema: 2.0.0
 ---
 
-# Get-MgIdentityB2XUserFlowIdentityProviderByRef
+# Get-MgBetaIdentityB2XUserFlowIdentityProviderByRef
 
 ## SYNOPSIS
 Get ref of userFlowIdentityProviders from identity
@@ -13,7 +13,7 @@ Get ref of userFlowIdentityProviders from identity
 ## SYNTAX
 
 ```
-Get-MgIdentityB2XUserFlowIdentityProviderByRef -B2XIdentityUserFlowId <String> [-Filter <String>]
+Get-MgBetaIdentityB2XUserFlowIdentityProviderByRef -B2XIdentityUserFlowId <String> [-Filter <String>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
  [-CountVariable <String>] [<CommonParameters>]
 ```
@@ -22,6 +22,20 @@ Get-MgIdentityB2XUserFlowIdentityProviderByRef -B2XIdentityUserFlowId <String> [
 Get ref of userFlowIdentityProviders from identity
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 

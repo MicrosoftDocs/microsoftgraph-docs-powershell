@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.ChangeNotifications-help.xml
 Module Name: Microsoft.Graph.ChangeNotifications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.changenotifications/remove-mgsubscription
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/remove-mgsubscription
 schema: 2.0.0
-ms.prod: change-notifications
 ---
 
 # Remove-MgSubscription
@@ -32,14 +31,11 @@ For the list of resources that support subscribing to change notifications, see 
 
 ## EXAMPLES
 
-### Example 1: Using the Remove-MgSubscription Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.ChangeNotifications
 Remove-MgSubscription -SubscriptionId $subscriptionId
 ```
-
-This example shows how to use the Remove-MgSubscription Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -60,7 +56,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IChangeNotificationsIdentity
@@ -90,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionId
-key: id of subscription
+The unique identifier of subscription
 
 ```yaml
 Type: String
@@ -153,7 +149,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IChangeNotificationsIdentity>`: Identity Parameter
-  - `[SubscriptionId <String>]`: key: id of subscription
+`INPUTOBJECT <IChangeNotificationsIdentity>`: Identity Parameter
+  - `[SubscriptionId <String>]`: The unique identifier of subscription
 
 ## RELATED LINKS

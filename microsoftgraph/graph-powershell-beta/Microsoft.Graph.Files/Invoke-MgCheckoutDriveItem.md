@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Files-help.xml
-Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/invoke-mgcheckoutdriveitem
+﻿---
+external help file: Microsoft.Graph.Beta.Files-help.xml
+Module Name: Microsoft.Graph.Beta.Files
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetacheckoutdriveitem
 schema: 2.0.0
 ---
 
-# Invoke-MgCheckoutDriveItem
+# Invoke-MgBetaCheckoutDriveItem
 
 ## SYNOPSIS
 Check out a **driveItem** resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
@@ -14,13 +14,14 @@ Check out a **driveItem** resource to prevent others from editing the document, 
 
 ### Checkout (Default)
 ```
-Invoke-MgCheckoutDriveItem -DriveId <String> -DriveItemId <String> [-PassThru] [-WhatIf] [-Confirm]
+Invoke-MgBetaCheckoutDriveItem -DriveId <String> -DriveItemId <String> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### CheckoutViaIdentity
 ```
-Invoke-MgCheckoutDriveItem -InputObject <IFilesIdentity> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgBetaCheckoutDriveItem -InputObject <IFilesIdentity> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -28,14 +29,11 @@ Check out a **driveItem** resource to prevent others from editing the document, 
 
 ## EXAMPLES
 
-### Example 1: Using the Invoke-MgCheckoutDriveItem Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Files
-Invoke-MgCheckoutDriveItem -DriveId $driveId -DriveItemId $driveItemId
+Import-Module Microsoft.Graph.Beta.Files
+Invoke-MgBetaCheckoutDriveItem -DriveId $driveId -DriveItemId $driveItemId
 ```
-
-This example shows how to use the Invoke-MgCheckoutDriveItem Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -71,7 +69,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IFilesIdentity
@@ -136,7 +134,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IFilesIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
 ## OUTPUTS
 
 ### System.Boolean
@@ -149,7 +147,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+`INPUTOBJECT <IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType

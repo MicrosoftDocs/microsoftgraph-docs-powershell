@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Compliance-help.xml
-Module Name: Microsoft.Graph.Compliance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/new-mgcomplianceediscoverycasetag
+﻿---
+external help file: Microsoft.Graph.Beta.Compliance-help.xml
+Module Name: Microsoft.Graph.Beta.Compliance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetacomplianceediscoverycasetag
 schema: 2.0.0
 ---
 
-# New-MgComplianceEdiscoveryCaseTag
+# New-MgBetaComplianceEdiscoveryCaseTag
 
 ## SYNOPSIS
 Create a new tag for the specified case.
@@ -15,7 +15,7 @@ The tags are used in review sets while reviewing content.
 
 ### CreateExpanded (Default)
 ```
-New-MgComplianceEdiscoveryCaseTag -CaseId <String> [-AdditionalProperties <Hashtable>]
+New-MgBetaComplianceEdiscoveryCaseTag -CaseId <String> [-AdditionalProperties <Hashtable>]
  [-ChildSelectability <String>] [-ChildTags <IMicrosoftGraphEdiscoveryTag[]>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
  [-LastModifiedDateTime <DateTime>] [-Parent <IMicrosoftGraphEdiscoveryTag>] [-WhatIf] [-Confirm]
@@ -24,13 +24,13 @@ New-MgComplianceEdiscoveryCaseTag -CaseId <String> [-AdditionalProperties <Hasht
 
 ### Create
 ```
-New-MgComplianceEdiscoveryCaseTag -CaseId <String> -BodyParameter <IMicrosoftGraphEdiscoveryTag> [-WhatIf]
+New-MgBetaComplianceEdiscoveryCaseTag -CaseId <String> -BodyParameter <IMicrosoftGraphEdiscoveryTag> [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgComplianceEdiscoveryCaseTag -InputObject <IComplianceIdentity> [-AdditionalProperties <Hashtable>]
+New-MgBetaComplianceEdiscoveryCaseTag -InputObject <IComplianceIdentity> [-AdditionalProperties <Hashtable>]
  [-ChildSelectability <String>] [-ChildTags <IMicrosoftGraphEdiscoveryTag[]>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
  [-LastModifiedDateTime <DateTime>] [-Parent <IMicrosoftGraphEdiscoveryTag>] [-WhatIf] [-Confirm]
@@ -39,7 +39,7 @@ New-MgComplianceEdiscoveryCaseTag -InputObject <IComplianceIdentity> [-Additiona
 
 ### CreateViaIdentity
 ```
-New-MgComplianceEdiscoveryCaseTag -InputObject <IComplianceIdentity>
+New-MgBetaComplianceEdiscoveryCaseTag -InputObject <IComplianceIdentity>
  -BodyParameter <IMicrosoftGraphEdiscoveryTag> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -49,19 +49,16 @@ The tags are used in review sets while reviewing content.
 
 ## EXAMPLES
 
-### Example 1: Using the New-MgComplianceEdiscoveryCaseTag Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Compliance
+Import-Module Microsoft.Graph.Beta.Compliance
 $params = @{
 	DisplayName = "Privileged"
 	Description = "The document is privileged"
 	"Parent@odata.bind" = "https://graph.microsoft.com/beta/compliance/ediscovery/cases/47746044-fd0b-4a30-acfc-5272b691ba5b/tags/98fdad78bbce4519b75474bc150575c3"
 }
-New-MgComplianceEdiscoveryCaseTag -CaseId $caseId -BodyParameter $params
+New-MgBetaComplianceEdiscoveryCaseTag -CaseId $caseId -BodyParameter $params
 ```
-
-This example shows how to use the New-MgComplianceEdiscoveryCaseTag Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -82,7 +79,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 tag
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEdiscoveryTag
@@ -128,7 +125,7 @@ Accept wildcard characters: False
 
 ### -ChildTags
 Returns the tags that are a child of a tag.
-To construct, please use Get-Help -Online and see NOTES section for CHILDTAGS properties and create a hash table.
+To construct, see NOTES section for CHILDTAGS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEdiscoveryTag[]
@@ -144,7 +141,7 @@ Accept wildcard characters: False
 
 ### -CreatedBy
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
+To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet
@@ -206,7 +203,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IComplianceIdentity
@@ -237,7 +234,7 @@ Accept wildcard characters: False
 
 ### -Parent
 tag
-To construct, please use Get-Help -Online and see NOTES section for PARENT properties and create a hash table.
+To construct, see NOTES section for PARENT properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEdiscoveryTag
@@ -287,11 +284,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryTag
+### Microsoft.Graph.Beta.PowerShell.Models.IComplianceIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEdiscoveryTag
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryTag
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEdiscoveryTag
 ## NOTES
 
 ALIASES
@@ -301,7 +298,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphEdiscoveryTag>`: tag
+`BODYPARAMETER <IMicrosoftGraphEdiscoveryTag>`: tag
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ChildSelectability <String>]`: childSelectability
@@ -319,7 +316,7 @@ BODYPARAMETER `<IMicrosoftGraphEdiscoveryTag>`: tag
   - `[LastModifiedDateTime <DateTime?>]`: The date and time the tag was last modified.
   - `[Parent <IMicrosoftGraphEdiscoveryTag>]`: tag
 
-CHILDTAGS <IMicrosoftGraphEdiscoveryTag\[]>: Returns the tags that are a child of a tag.
+`CHILDTAGS <IMicrosoftGraphEdiscoveryTag[]>`: Returns the tags that are a child of a tag.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ChildSelectability <String>]`: childSelectability
   - `[ChildTags <IMicrosoftGraphEdiscoveryTag[]>]`: Returns the tags that are a child of a tag.
@@ -336,7 +333,7 @@ CHILDTAGS <IMicrosoftGraphEdiscoveryTag\[]>: Returns the tags that are a child o
   - `[LastModifiedDateTime <DateTime?>]`: The date and time the tag was last modified.
   - `[Parent <IMicrosoftGraphEdiscoveryTag>]`: tag
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+`CREATEDBY <IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -345,7 +342,7 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
+`INPUTOBJECT <IComplianceIdentity>`: Identity Parameter
   - `[CaseId <String>]`: The unique identifier of case
   - `[CaseOperationId <String>]`: The unique identifier of caseOperation
   - `[CustodianId <String>]`: The unique identifier of custodian
@@ -361,7 +358,7 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
   - `[UnifiedGroupSourceId <String>]`: The unique identifier of unifiedGroupSource
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
-PARENT `<IMicrosoftGraphEdiscoveryTag>`: tag
+`PARENT <IMicrosoftGraphEdiscoveryTag>`: tag
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ChildSelectability <String>]`: childSelectability

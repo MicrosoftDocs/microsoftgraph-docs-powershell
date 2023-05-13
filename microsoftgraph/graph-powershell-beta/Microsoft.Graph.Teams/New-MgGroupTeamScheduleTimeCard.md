@@ -1,20 +1,20 @@
----
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mggroupteamscheduletimecard
+﻿---
+external help file: Microsoft.Graph.Beta.Teams-help.xml
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamscheduletimecard
 schema: 2.0.0
 ---
 
-# New-MgGroupTeamScheduleTimeCard
+# New-MgBetaGroupTeamScheduleTimeCard
 
 ## SYNOPSIS
-Create new navigation property to timeCards for groups
+Create a timeCard instance in a schedule.
 
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
-New-MgGroupTeamScheduleTimeCard -GroupId <String> [-AdditionalProperties <Hashtable>]
+New-MgBetaGroupTeamScheduleTimeCard -GroupId <String> [-AdditionalProperties <Hashtable>]
  [-Breaks <IMicrosoftGraphTimeCardBreak[]>] [-ClockInEvent <IMicrosoftGraphTimeCardEvent>]
  [-ClockOutEvent <IMicrosoftGraphTimeCardEvent>] [-ConfirmedBy <String>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
@@ -24,13 +24,13 @@ New-MgGroupTeamScheduleTimeCard -GroupId <String> [-AdditionalProperties <Hashta
 
 ### Create
 ```
-New-MgGroupTeamScheduleTimeCard -GroupId <String> -BodyParameter <IMicrosoftGraphTimeCard> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaGroupTeamScheduleTimeCard -GroupId <String> -BodyParameter <IMicrosoftGraphTimeCard> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgGroupTeamScheduleTimeCard -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
+New-MgBetaGroupTeamScheduleTimeCard -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
  [-Breaks <IMicrosoftGraphTimeCardBreak[]>] [-ClockInEvent <IMicrosoftGraphTimeCardEvent>]
  [-ClockOutEvent <IMicrosoftGraphTimeCardEvent>] [-ConfirmedBy <String>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
@@ -40,14 +40,28 @@ New-MgGroupTeamScheduleTimeCard -InputObject <ITeamsIdentity> [-AdditionalProper
 
 ### CreateViaIdentity
 ```
-New-MgGroupTeamScheduleTimeCard -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTimeCard>
+New-MgBetaGroupTeamScheduleTimeCard -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTimeCard>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create new navigation property to timeCards for groups
+Create a timeCard instance in a schedule.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -68,7 +82,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 timeCard
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphTimeCard
@@ -84,7 +98,7 @@ Accept wildcard characters: False
 
 ### -Breaks
 The list of breaks associated with the timeCard.
-To construct, please use Get-Help -Online and see NOTES section for BREAKS properties and create a hash table.
+To construct, see NOTES section for BREAKS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphTimeCardBreak[]
@@ -100,7 +114,7 @@ Accept wildcard characters: False
 
 ### -ClockInEvent
 timeCardEvent
-To construct, please use Get-Help -Online and see NOTES section for CLOCKINEVENT properties and create a hash table.
+To construct, see NOTES section for CLOCKINEVENT properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphTimeCardEvent
@@ -116,7 +130,7 @@ Accept wildcard characters: False
 
 ### -ClockOutEvent
 timeCardEvent
-To construct, please use Get-Help -Online and see NOTES section for CLOCKOUTEVENT properties and create a hash table.
+To construct, see NOTES section for CLOCKOUTEVENT properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphTimeCardEvent
@@ -147,7 +161,7 @@ Accept wildcard characters: False
 
 ### -CreatedBy
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
+To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet
@@ -177,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -194,7 +208,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ITeamsIdentity
@@ -210,7 +224,7 @@ Accept wildcard characters: False
 
 ### -LastModifiedBy
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBY properties and create a hash table.
+To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet
@@ -226,7 +240,7 @@ Accept wildcard characters: False
 
 ### -Notes
 itemBody
-To construct, please use Get-Help -Online and see NOTES section for NOTES properties and create a hash table.
+To construct, see NOTES section for NOTES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphItemBody
@@ -242,7 +256,7 @@ Accept wildcard characters: False
 
 ### -OriginalEntry
 timeCardEntry
-To construct, please use Get-Help -Online and see NOTES section for ORIGINALENTRY properties and create a hash table.
+To construct, see NOTES section for ORIGINALENTRY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphTimeCardEntry
@@ -322,11 +336,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTimeCard
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTimeCard
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTimeCard
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTimeCard
 ## NOTES
 
 ALIASES
@@ -336,7 +350,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphTimeCard>`: timeCard
+`BODYPARAMETER <IMicrosoftGraphTimeCard>`: timeCard
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -347,7 +361,7 @@ BODYPARAMETER `<IMicrosoftGraphTimeCard>`: timeCard
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Breaks <IMicrosoftGraphTimeCardBreak[]>]`: The list of breaks associated with the timeCard.
     - `[BreakId <String>]`: ID of the timeCardBreak.
     - `[End <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
@@ -372,7 +386,7 @@ BODYPARAMETER `<IMicrosoftGraphTimeCard>`: timeCard
   - `[State <String>]`: timeCardState
   - `[UserId <String>]`: User ID to which  the timeCard belongs.
 
-BREAKS <IMicrosoftGraphTimeCardBreak\[]>: The list of breaks associated with the timeCard.
+`BREAKS <IMicrosoftGraphTimeCardBreak[]>`: The list of breaks associated with the timeCard.
   - `[BreakId <String>]`: ID of the timeCardBreak.
   - `[End <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -385,7 +399,7 @@ BREAKS <IMicrosoftGraphTimeCardBreak\[]>: The list of breaks associated with the
   - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
   - `[Start <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
 
-CLOCKINEVENT `<IMicrosoftGraphTimeCardEvent>`: timeCardEvent
+`CLOCKINEVENT <IMicrosoftGraphTimeCardEvent>`: timeCardEvent
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AtApprovedLocation <Boolean?>]`: Indicates whether the entry was recorded at the approved location.
   - `[DateTime <DateTime?>]`: The time the entry is recorded.
@@ -394,7 +408,7 @@ CLOCKINEVENT `<IMicrosoftGraphTimeCardEvent>`: timeCardEvent
     - `[Content <String>]`: The content of the item.
     - `[ContentType <String>]`: bodyType
 
-CLOCKOUTEVENT `<IMicrosoftGraphTimeCardEvent>`: timeCardEvent
+`CLOCKOUTEVENT <IMicrosoftGraphTimeCardEvent>`: timeCardEvent
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AtApprovedLocation <Boolean?>]`: Indicates whether the entry was recorded at the approved location.
   - `[DateTime <DateTime?>]`: The time the entry is recorded.
@@ -403,7 +417,7 @@ CLOCKOUTEVENT `<IMicrosoftGraphTimeCardEvent>`: timeCardEvent
     - `[Content <String>]`: The content of the item.
     - `[ContentType <String>]`: bodyType
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+`CREATEDBY <IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -412,7 +426,7 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat
@@ -451,7 +465,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+`LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -460,12 +474,12 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-NOTES `<IMicrosoftGraphItemBody>`: itemBody
+`NOTES <IMicrosoftGraphItemBody>`: itemBody
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Content <String>]`: The content of the item.
   - `[ContentType <String>]`: bodyType
 
-ORIGINALENTRY `<IMicrosoftGraphTimeCardEntry>`: timeCardEntry
+`ORIGINALENTRY <IMicrosoftGraphTimeCardEntry>`: timeCardEntry
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Breaks <IMicrosoftGraphTimeCardBreak[]>]`: The list of breaks associated with the timeCard.
     - `[BreakId <String>]`: ID of the timeCardBreak.

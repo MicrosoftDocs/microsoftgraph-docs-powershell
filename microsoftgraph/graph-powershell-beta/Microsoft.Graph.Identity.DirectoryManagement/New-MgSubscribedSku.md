@@ -1,12 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgsubscribedsku
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetasubscribedsku
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
-# New-MgSubscribedSku
+# New-MgBetaSubscribedSku
 
 ## SYNOPSIS
 Add new entity to subscribedSkus
@@ -15,7 +14,7 @@ Add new entity to subscribedSkus
 
 ### CreateExpanded (Default)
 ```
-New-MgSubscribedSku [-AdditionalProperties <Hashtable>] [-AppliesTo <String>] [-CapabilityStatus <String>]
+New-MgBetaSubscribedSku [-AdditionalProperties <Hashtable>] [-AppliesTo <String>] [-CapabilityStatus <String>]
  [-ConsumedUnits <Int32>] [-Id <String>] [-PrepaidUnits <IMicrosoftGraphLicenseUnitsDetail>]
  [-ServicePlans <IMicrosoftGraphServicePlanInfo[]>] [-SkuId <String>] [-SkuPartNumber <String>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -23,7 +22,7 @@ New-MgSubscribedSku [-AdditionalProperties <Hashtable>] [-AppliesTo <String>] [-
 
 ### Create
 ```
-New-MgSubscribedSku -BodyParameter <IMicrosoftGraphSubscribedSku> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaSubscribedSku -BodyParameter <IMicrosoftGraphSubscribedSku> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -31,16 +30,12 @@ Add new entity to subscribedSkus
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
-
-Get-MgSubscribedSku
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 ```
 
-This example shows how to use the New-MgSubscribedSku Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Get-MgBetaSubscribedSku
 
 ## PARAMETERS
 
@@ -76,7 +71,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 subscribedSku
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSubscribedSku
@@ -122,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -139,7 +134,7 @@ Accept wildcard characters: False
 
 ### -PrepaidUnits
 licenseUnitsDetail
-To construct, please use Get-Help -Online and see NOTES section for PREPAIDUNITS properties and create a hash table.
+To construct, see NOTES section for PREPAIDUNITS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphLicenseUnitsDetail
@@ -156,7 +151,7 @@ Accept wildcard characters: False
 ### -ServicePlans
 Information about the service plans that are available with the SKU.
 Not nullable
-To construct, please use Get-Help -Online and see NOTES section for SERVICEPLANS properties and create a hash table.
+To construct, see NOTES section for SERVICEPLANS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphServicePlanInfo[]
@@ -237,10 +232,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSubscribedSku
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSubscribedSku
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSubscribedSku
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSubscribedSku
 ## NOTES
 
 ALIASES
@@ -250,9 +245,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSubscribedSku>`: subscribedSku
+`BODYPARAMETER <IMicrosoftGraphSubscribedSku>`: subscribedSku
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AppliesTo <String>]`: For example, 'User' or 'Company'.
   - `[CapabilityStatus <String>]`: Possible values are: Enabled, Warning, Suspended, Deleted, LockedOut. The capabilityStatus is Enabled if the prepaidUnits property has at least 1 unit that is enabled, and LockedOut if the customer cancelled their subscription.
   - `[ConsumedUnits <Int32?>]`: The number of licenses that have been assigned.
@@ -269,13 +264,13 @@ BODYPARAMETER `<IMicrosoftGraphSubscribedSku>`: subscribedSku
   - `[SkuId <String>]`: The unique identifier (GUID) for the service SKU.
   - `[SkuPartNumber <String>]`: The SKU part number; for example: 'AAD_PREMIUM' or 'RMSBASIC'. To get a list of commercial subscriptions that an organization has acquired, see List subscribedSkus.
 
-PREPAIDUNITS `<IMicrosoftGraphLicenseUnitsDetail>`: licenseUnitsDetail
+`PREPAIDUNITS <IMicrosoftGraphLicenseUnitsDetail>`: licenseUnitsDetail
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Enabled <Int32?>]`: The number of units that are enabled for the active subscription of the service SKU.
   - `[Suspended <Int32?>]`: The number of units that are suspended because the subscription of the service SKU has been cancelled. The units cannot be assigned but can still be reactivated before they are deleted.
   - `[Warning <Int32?>]`: The number of units that are in warning status. When the subscription of the service SKU has expired, the customer has a grace period to renew their subscription before it is cancelled (moved to a suspended state).
 
-SERVICEPLANS <IMicrosoftGraphServicePlanInfo\[]>: Information about the service plans that are available with the SKU. Not nullable
+`SERVICEPLANS <IMicrosoftGraphServicePlanInfo[]>`: Information about the service plans that are available with the SKU. Not nullable
   - `[AppliesTo <String>]`: The object the service plan can be assigned to. The possible values are:User - service plan can be assigned to individual users.Company - service plan can be assigned to the entire tenant.
   - `[ProvisioningStatus <String>]`: The provisioning status of the service plan. The possible values are:Success - Service is fully provisioned.Disabled - Service has been disabled.ErrorStatus - The service plan has not been provisioned and is in an error state.PendingInput - Service is not yet provisioned; awaiting service confirmation.PendingActivation - Service is provisioned but requires explicit activation by administrator (for example, Intune_O365 service plan)PendingProvisioning - Microsoft has added a new service to the product SKU and it has not been activated in the tenant, yet.
   - `[ServicePlanId <String>]`: The unique identifier of the service plan.

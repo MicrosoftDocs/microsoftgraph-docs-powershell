@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementvirtualendpointreportremoteconnectionhistoricalreport
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportremoteconnectionhistoricalreport
 schema: 2.0.0
 ---
 
-# Get-MgDeviceManagementVirtualEndpointReportRemoteConnectionHistoricalReport
+# Get-MgBetaDeviceManagementVirtualEndpointReportRemoteConnectionHistoricalReport
 
 ## SYNOPSIS
 Get the remote connection history records of a Cloud PC during a given period.
@@ -14,7 +14,7 @@ Get the remote connection history records of a Cloud PC during a given period.
 
 ### GetExpanded (Default)
 ```
-Get-MgDeviceManagementVirtualEndpointReportRemoteConnectionHistoricalReport -OutFile <String>
+Get-MgBetaDeviceManagementVirtualEndpointReportRemoteConnectionHistoricalReport -OutFile <String>
  [-AdditionalProperties <Hashtable>] [-Filter <String>] [-GroupBy <String[]>] [-Property <String[]>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -22,7 +22,7 @@ Get-MgDeviceManagementVirtualEndpointReportRemoteConnectionHistoricalReport -Out
 
 ### Get
 ```
-Get-MgDeviceManagementVirtualEndpointReportRemoteConnectionHistoricalReport -OutFile <String>
+Get-MgBetaDeviceManagementVirtualEndpointReportRemoteConnectionHistoricalReport -OutFile <String>
  -BodyParameter <IPathsP1Ye10DevicemanagementVirtualendpointReportsMicrosoftGraphGetremoteconnectionhistoricalreportsPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -31,6 +31,16 @@ Get-MgDeviceManagementVirtualEndpointReportRemoteConnectionHistoricalReport -Out
 Get the remote connection history records of a Cloud PC during a given period.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -51,7 +61,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPathsP1Ye10DevicemanagementVirtualendpointReportsMicrosoftGraphGetremoteconnectionhistoricalreportsPostRequestbodyContentApplicationJsonSchema
@@ -236,7 +246,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsP1Ye10DevicemanagementVirtualendpointReportsMicrosoftGraphGetremoteconnectionhistoricalreportsPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsP1Ye10DevicemanagementVirtualendpointReportsMicrosoftGraphGetremoteconnectionhistoricalreportsPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### System.Boolean
@@ -249,7 +259,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsP1Ye10DevicemanagementVirtualendpointReportsMicrosoftGraphGetremoteconnectionhistoricalreportsPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsP1Ye10DevicemanagementVirtualendpointReportsMicrosoftGraphGetremoteconnectionhistoricalreportsPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Filter <String>]`: 
   - `[GroupBy <String[]>]`: 

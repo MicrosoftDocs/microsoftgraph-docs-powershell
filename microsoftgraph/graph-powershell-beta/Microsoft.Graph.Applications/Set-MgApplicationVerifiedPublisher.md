@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Applications-help.xml
-Module Name: Microsoft.Graph.Applications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/set-mgapplicationverifiedpublisher
+﻿---
+external help file: Microsoft.Graph.Beta.Applications-help.xml
+Module Name: Microsoft.Graph.Beta.Applications
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaapplicationverifiedpublisher
 schema: 2.0.0
 ---
 
-# Set-MgApplicationVerifiedPublisher
+# Set-MgBetaApplicationVerifiedPublisher
 
 ## SYNOPSIS
 Set the the verifiedPublisher on an application.
@@ -15,26 +15,26 @@ For more information, including prerequisites to setting a verified publisher, s
 
 ### SetExpanded (Default)
 ```
-Set-MgApplicationVerifiedPublisher -ApplicationId <String> [-AdditionalProperties <Hashtable>]
+Set-MgBetaApplicationVerifiedPublisher -ApplicationId <String> [-AdditionalProperties <Hashtable>]
  [-VerifiedPublisherId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Set
 ```
-Set-MgApplicationVerifiedPublisher -ApplicationId <String>
+Set-MgBetaApplicationVerifiedPublisher -ApplicationId <String>
  -BodyParameter <IPaths1X6U4MfApplicationsApplicationIdMicrosoftGraphSetverifiedpublisherPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentityExpanded
 ```
-Set-MgApplicationVerifiedPublisher -InputObject <IApplicationsIdentity> [-AdditionalProperties <Hashtable>]
+Set-MgBetaApplicationVerifiedPublisher -InputObject <IApplicationsIdentity> [-AdditionalProperties <Hashtable>]
  [-VerifiedPublisherId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
-Set-MgApplicationVerifiedPublisher -InputObject <IApplicationsIdentity>
+Set-MgBetaApplicationVerifiedPublisher -InputObject <IApplicationsIdentity>
  -BodyParameter <IPaths1X6U4MfApplicationsApplicationIdMicrosoftGraphSetverifiedpublisherPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -45,17 +45,14 @@ For more information, including prerequisites to setting a verified publisher, s
 
 ## EXAMPLES
 
-### Example 1: Using the Set-MgApplicationVerifiedPublisher Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Applications
+Import-Module Microsoft.Graph.Beta.Applications
 $params = @{
 	VerifiedPublisherId = "1234567"
 }
-Set-MgApplicationVerifiedPublisher -ApplicationId $applicationId -BodyParameter $params
+Set-MgBetaApplicationVerifiedPublisher -ApplicationId $applicationId -BodyParameter $params
 ```
-
-This example shows how to use the Set-MgApplicationVerifiedPublisher Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -91,7 +88,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths1X6U4MfApplicationsApplicationIdMicrosoftGraphSetverifiedpublisherPostRequestbodyContentApplicationJsonSchema
@@ -107,7 +104,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IApplicationsIdentity
@@ -187,8 +184,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths1X6U4MfApplicationsApplicationIdMicrosoftGraphSetverifiedpublisherPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1X6U4MfApplicationsApplicationIdMicrosoftGraphSetverifiedpublisherPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### System.Boolean
@@ -201,11 +198,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1X6U4MfApplicationsApplicationIdMicrosoftGraphSetverifiedpublisherPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1X6U4MfApplicationsApplicationIdMicrosoftGraphSetverifiedpublisherPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[VerifiedPublisherId <String>]`: 
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+`INPUTOBJECT <IApplicationsIdentity>`: Identity Parameter
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
   - `[ApplicationId <String>]`: The unique identifier of application

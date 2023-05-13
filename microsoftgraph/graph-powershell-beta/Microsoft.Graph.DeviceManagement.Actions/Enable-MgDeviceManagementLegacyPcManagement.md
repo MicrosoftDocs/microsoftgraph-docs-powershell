@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/enable-mgdevicemanagementlegacypcmanagement
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/enable-mgbetadevicemanagementlegacypcmanagement
 schema: 2.0.0
 ---
 
-# Enable-MgDeviceManagementLegacyPcManagement
+# Enable-MgBetaDeviceManagementLegacyPcManagement
 
 ## SYNOPSIS
 Invoke action enableLegacyPcManagement
@@ -13,13 +13,27 @@ Invoke action enableLegacyPcManagement
 ## SYNTAX
 
 ```
-Enable-MgDeviceManagementLegacyPcManagement [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Enable-MgBetaDeviceManagementLegacyPcManagement [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action enableLegacyPcManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 

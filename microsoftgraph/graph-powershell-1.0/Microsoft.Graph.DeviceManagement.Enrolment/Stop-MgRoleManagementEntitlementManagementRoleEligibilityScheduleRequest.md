@@ -1,6 +1,6 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Enrolment
+﻿---
+external help file: Microsoft.Graph.Identity.Governance-help.xml
+Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/stop-mgrolemanagemententitlementmanagementroleeligibilityschedulerequest
 schema: 2.0.0
 ---
@@ -13,16 +13,16 @@ After calling this action, the **status** of the cancelled **unifiedRoleEligibil
 
 ## SYNTAX
 
-### Cancel1 (Default)
+### Cancel (Default)
 ```
 Stop-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest
  -UnifiedRoleEligibilityScheduleRequestId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CancelViaIdentity1
+### CancelViaIdentity
 ```
 Stop-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest
- -InputObject <IDeviceManagementEnrolmentIdentity> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -InputObject <IIdentityGovernanceIdentity> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,8 +49,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementEnrolmentIdentity
-Parameter Sets: CancelViaIdentity1
+Type: IIdentityGovernanceIdentity
+Parameter Sets: CancelViaIdentity
 Aliases:
 
 Required: True
@@ -80,7 +80,7 @@ The unique identifier of unifiedRoleEligibilityScheduleRequest
 
 ```yaml
 Type: String
-Parameter Sets: Cancel1
+Parameter Sets: Cancel
 Aliases:
 
 Required: True
@@ -126,7 +126,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementEnrolmentIdentity
+### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
 ## OUTPUTS
 
 ### System.Boolean

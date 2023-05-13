@@ -1,11 +1,11 @@
----
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectorydeleteditem
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorydeleteditem
 schema: 2.0.0
 ---
 
-# New-MgDirectoryDeletedItem
+# New-MgBetaDirectoryDeletedItem
 
 ## SYNOPSIS
 Create new navigation property to deletedItems for directory
@@ -14,13 +14,13 @@ Create new navigation property to deletedItems for directory
 
 ### CreateExpanded (Default)
 ```
-New-MgDirectoryDeletedItem [-AdditionalProperties <Hashtable>] [-DeletedDateTime <DateTime>] [-Id <String>]
+New-MgBetaDirectoryDeletedItem [-AdditionalProperties <Hashtable>] [-DeletedDateTime <DateTime>] [-Id <String>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDirectoryDeletedItem -BodyParameter <IMicrosoftGraphDirectoryObject> [-WhatIf] [-Confirm]
+New-MgBetaDirectoryDeletedItem -BodyParameter <IMicrosoftGraphDirectoryObject> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -28,6 +28,20 @@ New-MgDirectoryDeletedItem -BodyParameter <IMicrosoftGraphDirectoryObject> [-Wha
 Create new navigation property to deletedItems for directory
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -48,7 +62,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 directoryObject
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDirectoryObject
@@ -79,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -130,10 +144,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryObject
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryObject
 ## NOTES
 
 ALIASES
@@ -143,9 +157,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDirectoryObject>`: directoryObject
+`BODYPARAMETER <IMicrosoftGraphDirectoryObject>`: directoryObject
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
