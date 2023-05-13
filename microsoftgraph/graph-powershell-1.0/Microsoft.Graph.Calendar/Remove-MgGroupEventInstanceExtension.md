@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mggroupeventinstanceextension
 schema: 2.0.0
+ms.prod: extensions
 ---
 
 # Remove-MgGroupEventInstanceExtension

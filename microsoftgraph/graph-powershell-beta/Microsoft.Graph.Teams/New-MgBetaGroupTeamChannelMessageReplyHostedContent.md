@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamchannelmessagereplyhostedcontent
 schema: 2.0.0
+ms.prod: microsoft-teams
 ---
 
 # New-MgBetaGroupTeamChannelMessageReplyHostedContent

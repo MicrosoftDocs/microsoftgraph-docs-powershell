@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecurityalertv2
 schema: 2.0.0
+ms.prod: security
 ---
 
 # Remove-MgSecurityAlertV2

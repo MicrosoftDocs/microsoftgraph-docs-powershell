@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycasesearch
 schema: 2.0.0
+ms.prod: ediscovery
 ---
 
 # New-MgSecurityCaseEdiscoveryCaseSearch
