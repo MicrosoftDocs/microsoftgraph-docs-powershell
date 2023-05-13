@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.Mail
 Module Guid: 423a5119-4604-4425-a3ea-f0a1a575a5dd
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail

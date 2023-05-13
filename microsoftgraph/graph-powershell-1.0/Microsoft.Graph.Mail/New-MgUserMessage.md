@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermessage
@@ -9,8 +9,8 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a draft of a new message in either JSON or MIME format.
-When using JSON format, you can:\n- Include an attachment to the **message**.\n- Update the draft later to add content to the **body** or change other message properties.
-When using MIME format:\n- Provide the applicable Internet message headers and the MIME content, all encoded in **base64** format in the request body.\n- /* Add any attachments and S/MIME properties to the MIME content.
+When using JSON format, you can:n- Include an attachment to the **message**.n- Update the draft later to add content to the **body** or change other message properties.
+When using MIME format:n- Provide the applicable Internet message headers and the MIME content, all encoded in **base64** format in the request body.n- /* Add any attachments and S/MIME properties to the MIME content.
 By default, this operation saves the draft in the Drafts folder.
 Send the draft message in a subsequent operation.
 Alternatively, send a new message in a single operation, or create a draft to forward, reply and reply-all to an existing message.
@@ -71,8 +71,8 @@ New-MgUserMessage -InputObject <IMailIdentity> -BodyParameter <IMicrosoftGraphMe
 
 ## DESCRIPTION
 Create a draft of a new message in either JSON or MIME format.
-When using JSON format, you can:\n- Include an attachment to the **message**.\n- Update the draft later to add content to the **body** or change other message properties.
-When using MIME format:\n- Provide the applicable Internet message headers and the MIME content, all encoded in **base64** format in the request body.\n- /* Add any attachments and S/MIME properties to the MIME content.
+When using JSON format, you can:n- Include an attachment to the **message**.n- Update the draft later to add content to the **body** or change other message properties.
+When using MIME format:n- Provide the applicable Internet message headers and the MIME content, all encoded in **base64** format in the request body.n- /* Add any attachments and S/MIME properties to the MIME content.
 By default, this operation saves the draft in the Drafts folder.
 Send the draft message in a subsequent operation.
 Alternatively, send a new message in a single operation, or create a draft to forward, reply and reply-all to an existing message.
@@ -376,7 +376,7 @@ Accept wildcard characters: False
 ### -HasAttachments
 Indicates whether the message has attachments.
 This property doesn't include inline attachments, so if a message contains only inline attachments, this property is false.
-To verify the existence of inline attachments, parse the body property to look for a src attribute, such as \<IMG src='cid:image001.jpg@01D26CD8.6C05F070'\>.
+To verify the existence of inline attachments, parse the body property to look for a src attribute, such as <IMG src='cid:image001.jpg@01D26CD8.6C05F070'>.
 
 ```yaml
 Type: SwitchParameter
