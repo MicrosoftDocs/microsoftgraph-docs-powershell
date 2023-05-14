@@ -89,7 +89,10 @@ function Copy-Files{
 	   Copy-Item $source -Destination $destination
 	 }
      }
-      
+    git config --global user.email "timwamalwa@gmail.com"
+    git config --global user.name "Timothy Wamalwa"
+    git add .
+    git commit -m "Imported files from powershell sdk"
 }
 
 
