@@ -1,43 +1,31 @@
 ---
 external help file:
 Module Name: Microsoft.Graph.Users.Functions
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/invoke-mgcalendarusercalendarallowedcalendarsharingroles
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusermanagedappdiagnosticstatus
 schema: 2.0.0
 ---
 
-# Invoke-MgCalendarUserCalendarAllowedCalendarSharingRoles
+# Get-MgUserManagedAppDiagnosticStatus
 
 ## SYNOPSIS
-Invoke function allowedCalendarSharingRoles
+Gets diagnostics validation status for a given user.
 
 ## SYNTAX
 
-### Calendar (Default)
+### Get (Default)
 ```
-Invoke-MgCalendarUserCalendarAllowedCalendarSharingRoles -User <String> -UserId <String> [-Count]
- [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
-```
-
-### Calendar1
-```
-Invoke-MgCalendarUserCalendarAllowedCalendarSharingRoles -CalendarId <String> -User <String> -UserId <String>
- [-Count] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
+Get-MgUserManagedAppDiagnosticStatus -UserId <String> [-Count] [-Filter <String>] [-Search <String>]
+ [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
 ```
 
-### CalendarViaIdentity
+### GetViaIdentity
 ```
-Invoke-MgCalendarUserCalendarAllowedCalendarSharingRoles -InputObject <IUsersFunctionsIdentity> [-Count]
- [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
-```
-
-### CalendarViaIdentity1
-```
-Invoke-MgCalendarUserCalendarAllowedCalendarSharingRoles -InputObject <IUsersFunctionsIdentity> [-Count]
- [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
+Get-MgUserManagedAppDiagnosticStatus -InputObject <IUsersFunctionsIdentity> [-Count] [-Filter <String>]
+ [-Search <String>] [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke function allowedCalendarSharingRoles
+Gets diagnostics validation status for a given user.
 
 ## EXAMPLES
 
@@ -46,31 +34,16 @@ Invoke function allowedCalendarSharingRoles
 {{ Add code here }}
 ```
 
-{{ Add output here }}
+
 
 ### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
-{{ Add output here }}
+
 
 ## PARAMETERS
-
-### -CalendarId
-The unique identifier of calendar
-
-```yaml
-Type: System.String
-Parameter Sets: Calendar1
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -Count
 Include count of items
@@ -108,7 +81,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
-Parameter Sets: CalendarViaIdentity, CalendarViaIdentity1
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
@@ -163,27 +136,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -User
-Usage: User='{User}'
-
-```yaml
-Type: System.String
-Parameter Sets: Calendar, Calendar1
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -UserId
 The unique identifier of user
 
 ```yaml
 Type: System.String
-Parameter Sets: Calendar, Calendar1
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -202,7 +160,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### System.String
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedAppDiagnosticStatus
 
 ## NOTES
 
