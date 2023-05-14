@@ -81,11 +81,8 @@ function Copy-Files{
             }
         }
         Get-ChildItem $DocPath -Recurse -File | ForEach-Object {
-            $OldFileName = [System.IO.Path]::GetFileName($_)
-            $OldDestination = Join-Path $destination $OldFileName
-            $NewDestination = Join-Path $destination $OldFileName.Replace("-MgBeta", "-Mg")
             Copy-Item $_  -Destination $destination
-            Move-Item $OldDestination -Destination $NewDestination
+
         }
         #Write-Host $source " = " $destination
      }else{
