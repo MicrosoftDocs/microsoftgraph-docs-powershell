@@ -2,7 +2,7 @@
 # Licensed under the MIT License.
 Param(
     $ModulesToGenerate = @(),
-    [string] $ModuleMappingConfigPath = ("..\msgraph-sdk-powershell\config\ModulesMapping.jsonc"),
+    [string] $ModuleMappingConfigPath = ("..\microsoftgraph-docs-powershell\microsoftgraph\config\ModulesMapping.jsonc"),
 	[string] $SDKDocsPath = ("..\msgraph-sdk-powershell\src"),
 	[string] $WorkLoadDocsPath = ("..\microsoftgraph-docs-powershell\microsoftgraph")
 )
@@ -85,8 +85,10 @@ function Copy-Files{
         }
         #Write-Host $source " = " $destination
      }else{
-	   Write-Host -ForegroundColor DarkYellow "Copying v1 markdown files to " $destination
-	   Copy-Item $source -Destination $destination
+	    Write-Host -ForegroundColor DarkYellow "Copying v1 markdown files to " $destination
+	    Get-ChildItem $DocPath -Recurse -File | ForEach-Object {
+        Copy-Item $_  -Destination $destination
+      }
 	 }
      }
     git config --global user.email "timwamalwa@gmail.com"
@@ -99,7 +101,7 @@ function Copy-Files{
 
 Set-Location microsoftgraph-docs-powershell
 $date = Get-Date -Format "dd-MM-yyyy"
-$proposedBranch = "weekly_v2_update"+$date
+$proposedBranch = "powershell_v2_"+$date
 $exists = git branch -l $proposedBranch
 if ([string]::IsNullOrEmpty($exists)) {
     git checkout -b $proposedBranch
