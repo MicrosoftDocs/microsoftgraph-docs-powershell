@@ -75,15 +75,14 @@ function Copy-Files{
      if ((Test-Path $DocPath)) {
      if($GraphProfile -eq "beta"){
         Write-Host -ForegroundColor DarkYellow "Copying beta markdown files to " $destination
-        #Delete everything in that folder
-        $FoldertoBeCleared= Join-Path $destination "\*"
-        Remove-Item $FoldertoBeCleared -Recurse -Force
-        #copy that file and mv to another file name
         Get-ChildItem $DocPath -Recurse -File | ForEach-Object {
             #$OldFileName = [System.IO.Path]::GetFileName($_)
             #$OldDestination = Join-Path $destination $OldFileName
             #$NewDestination = Join-Path $destination $OldFileName.Replace("-MgBeta", "-Mg")
             #Write-Host $NewDestination
+            if(-not($_ -eq "$Path.md")){
+                Remove-Item $_
+            }
             Copy-Item $_  -Destination $destination
             #Move-Item $OldDestination -Destination $NewDestination
 

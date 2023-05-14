@@ -1,16 +1,16 @@
 ---
-Module Name: Microsoft.Graph.Applications
+Module Name: Microsoft.Graph.Beta.Applications
 Module Guid: ea3e853f-ce23-4a19-a706-59bec4ea4808
-Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications
+Download Help Link: https://docs.microsoft.com/en-us/powershell/module/Microsoft.Graph.Beta.applications
 Help Version: 1.0.0.0
 Locale: en-US
 ---
 
-# Microsoft.Graph.Applications Module
+# Microsoft.Graph.Beta.Applications Module
 ## Description
 Microsoft Graph PowerShell Cmdlets
 
-## Microsoft.Graph.Applications Cmdlets
+## Microsoft.Graph.Beta.Applications Cmdlets
 ### [Add-MgApplicationKey](Add-MgApplicationKey.md)
 Add a key credential to an application.
 This method, along with removeKey, can be used by an application to automate rolling its expiring keys.
@@ -401,70 +401,70 @@ Represents the app roles a user has been granted for an application.
 Supports $expand.
 
 ### [Group-MgServicePrincipalGetMemberOfAs](Group-MgServicePrincipalGetMemberOfAs.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
+Get the item of type Microsoft.Graph.Beta.directoryObject as Microsoft.Graph.Beta.group
 
 ### [Group-MgServicePrincipalGetOwnedObjectAs](Group-MgServicePrincipalGetOwnedObjectAs.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
+Get the item of type Microsoft.Graph.Beta.directoryObject as Microsoft.Graph.Beta.group
 
 ### [Group-MgServicePrincipalGetTransitiveMemberOfAs](Group-MgServicePrincipalGetTransitiveMemberOfAs.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
+Get the item of type Microsoft.Graph.Beta.directoryObject as Microsoft.Graph.Beta.group
 
 ### [Group-MgServicePrincipalListMemberOfAs](Group-MgServicePrincipalListMemberOfAs.md)
-Get the items of type microsoft.graph.group in the microsoft.graph.directoryObject collection
+Get the items of type Microsoft.Graph.Beta.group in the Microsoft.Graph.Beta.directoryObject collection
 
 ### [Group-MgServicePrincipalListOwnedObjectAs](Group-MgServicePrincipalListOwnedObjectAs.md)
-Get the items of type microsoft.graph.group in the microsoft.graph.directoryObject collection
+Get the items of type Microsoft.Graph.Beta.group in the Microsoft.Graph.Beta.directoryObject collection
 
 ### [Group-MgServicePrincipalListTransitiveMemberOfAs](Group-MgServicePrincipalListTransitiveMemberOfAs.md)
-Get the items of type microsoft.graph.group in the microsoft.graph.directoryObject collection
+Get the items of type Microsoft.Graph.Beta.group in the Microsoft.Graph.Beta.directoryObject collection
 
 ### [Invoke-MgAsApplicationGetOwnerEndpoint](Invoke-MgAsApplicationGetOwnerEndpoint.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.endpoint
+Get the item of type Microsoft.Graph.Beta.directoryObject as Microsoft.Graph.Beta.endpoint
 
 ### [Invoke-MgAsApplicationGetOwnerUser](Invoke-MgAsApplicationGetOwnerUser.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.user
+Get the item of type Microsoft.Graph.Beta.directoryObject as Microsoft.Graph.Beta.user
 
 ### [Invoke-MgAsApplicationListOwnerEndpoint](Invoke-MgAsApplicationListOwnerEndpoint.md)
-Get the items of type microsoft.graph.endpoint in the microsoft.graph.directoryObject collection
+Get the items of type Microsoft.Graph.Beta.endpoint in the Microsoft.Graph.Beta.directoryObject collection
 
 ### [Invoke-MgAsApplicationListOwnerUser](Invoke-MgAsApplicationListOwnerUser.md)
-Get the items of type microsoft.graph.user in the microsoft.graph.directoryObject collection
+Get the items of type Microsoft.Graph.Beta.user in the Microsoft.Graph.Beta.directoryObject collection
 
 ### [Invoke-MgAsServicePrincipalGetMemberOfAdministrativeUnit](Invoke-MgAsServicePrincipalGetMemberOfAdministrativeUnit.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.administrativeUnit
+Get the item of type Microsoft.Graph.Beta.directoryObject as Microsoft.Graph.Beta.administrativeUnit
 
 ### [Invoke-MgAsServicePrincipalGetOwnedObjectApplication](Invoke-MgAsServicePrincipalGetOwnedObjectApplication.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.application
+Get the item of type Microsoft.Graph.Beta.directoryObject as Microsoft.Graph.Beta.application
 
 ### [Invoke-MgAsServicePrincipalGetOwnedObjectEndpoint](Invoke-MgAsServicePrincipalGetOwnedObjectEndpoint.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.endpoint
+Get the item of type Microsoft.Graph.Beta.directoryObject as Microsoft.Graph.Beta.endpoint
 
 ### [Invoke-MgAsServicePrincipalGetOwnerEndpoint](Invoke-MgAsServicePrincipalGetOwnerEndpoint.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.endpoint
+Get the item of type Microsoft.Graph.Beta.directoryObject as Microsoft.Graph.Beta.endpoint
 
 ### [Invoke-MgAsServicePrincipalGetOwnerUser](Invoke-MgAsServicePrincipalGetOwnerUser.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.user
+Get the item of type Microsoft.Graph.Beta.directoryObject as Microsoft.Graph.Beta.user
 
 ### [Invoke-MgAsServicePrincipalGetTransitiveMemberOfAdministrativeUnit](Invoke-MgAsServicePrincipalGetTransitiveMemberOfAdministrativeUnit.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.administrativeUnit
+Get the item of type Microsoft.Graph.Beta.directoryObject as Microsoft.Graph.Beta.administrativeUnit
 
 ### [Invoke-MgAsServicePrincipalListMemberOfAdministrativeUnit](Invoke-MgAsServicePrincipalListMemberOfAdministrativeUnit.md)
-Get the items of type microsoft.graph.administrativeUnit in the microsoft.graph.directoryObject collection
+Get the items of type Microsoft.Graph.Beta.administrativeUnit in the Microsoft.Graph.Beta.directoryObject collection
 
 ### [Invoke-MgAsServicePrincipalListOwnedObjectApplication](Invoke-MgAsServicePrincipalListOwnedObjectApplication.md)
-Get the items of type microsoft.graph.application in the microsoft.graph.directoryObject collection
+Get the items of type Microsoft.Graph.Beta.application in the Microsoft.Graph.Beta.directoryObject collection
 
 ### [Invoke-MgAsServicePrincipalListOwnedObjectEndpoint](Invoke-MgAsServicePrincipalListOwnedObjectEndpoint.md)
-Get the items of type microsoft.graph.endpoint in the microsoft.graph.directoryObject collection
+Get the items of type Microsoft.Graph.Beta.endpoint in the Microsoft.Graph.Beta.directoryObject collection
 
 ### [Invoke-MgAsServicePrincipalListOwnerEndpoint](Invoke-MgAsServicePrincipalListOwnerEndpoint.md)
-Get the items of type microsoft.graph.endpoint in the microsoft.graph.directoryObject collection
+Get the items of type Microsoft.Graph.Beta.endpoint in the Microsoft.Graph.Beta.directoryObject collection
 
 ### [Invoke-MgAsServicePrincipalListOwnerUser](Invoke-MgAsServicePrincipalListOwnerUser.md)
-Get the items of type microsoft.graph.user in the microsoft.graph.directoryObject collection
+Get the items of type Microsoft.Graph.Beta.user in the Microsoft.Graph.Beta.directoryObject collection
 
 ### [Invoke-MgAsServicePrincipalListTransitiveMemberOfAdministrativeUnit](Invoke-MgAsServicePrincipalListTransitiveMemberOfAdministrativeUnit.md)
-Get the items of type microsoft.graph.administrativeUnit in the microsoft.graph.directoryObject collection
+Get the items of type Microsoft.Graph.Beta.administrativeUnit in the Microsoft.Graph.Beta.directoryObject collection
 
 ### [Invoke-MgFilterApplicationSynchronizationJobSchemaOperator](Invoke-MgFilterApplicationSynchronizationJobSchemaOperator.md)
 Invoke function filterOperators
@@ -512,28 +512,28 @@ Parse a given string expression into an attributeMappingSource object.
 For more information about expressions, see Writing Expressions for Attribute Mappings in Azure Active Directory.
 
 ### [Invoke-MgServiceApplicationGetOwner](Invoke-MgServiceApplicationGetOwner.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.servicePrincipal
+Get the item of type Microsoft.Graph.Beta.directoryObject as Microsoft.Graph.Beta.servicePrincipal
 
 ### [Invoke-MgServiceApplicationListOwner](Invoke-MgServiceApplicationListOwner.md)
-Get the items of type microsoft.graph.servicePrincipal in the microsoft.graph.directoryObject collection
+Get the items of type Microsoft.Graph.Beta.servicePrincipal in the Microsoft.Graph.Beta.directoryObject collection
 
 ### [Invoke-MgServicePrincipalGetCreatedObject](Invoke-MgServicePrincipalGetCreatedObject.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.servicePrincipal
+Get the item of type Microsoft.Graph.Beta.directoryObject as Microsoft.Graph.Beta.servicePrincipal
 
 ### [Invoke-MgServicePrincipalGetOwnedObject](Invoke-MgServicePrincipalGetOwnedObject.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.servicePrincipal
+Get the item of type Microsoft.Graph.Beta.directoryObject as Microsoft.Graph.Beta.servicePrincipal
 
 ### [Invoke-MgServicePrincipalGetOwner](Invoke-MgServicePrincipalGetOwner.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.servicePrincipal
+Get the item of type Microsoft.Graph.Beta.directoryObject as Microsoft.Graph.Beta.servicePrincipal
 
 ### [Invoke-MgServicePrincipalListCreatedObject](Invoke-MgServicePrincipalListCreatedObject.md)
-Get the items of type microsoft.graph.servicePrincipal in the microsoft.graph.directoryObject collection
+Get the items of type Microsoft.Graph.Beta.servicePrincipal in the Microsoft.Graph.Beta.directoryObject collection
 
 ### [Invoke-MgServicePrincipalListOwnedObject](Invoke-MgServicePrincipalListOwnedObject.md)
-Get the items of type microsoft.graph.servicePrincipal in the microsoft.graph.directoryObject collection
+Get the items of type Microsoft.Graph.Beta.servicePrincipal in the Microsoft.Graph.Beta.directoryObject collection
 
 ### [Invoke-MgServicePrincipalListOwner](Invoke-MgServicePrincipalListOwner.md)
-Get the items of type microsoft.graph.servicePrincipal in the microsoft.graph.directoryObject collection
+Get the items of type Microsoft.Graph.Beta.servicePrincipal in the Microsoft.Graph.Beta.directoryObject collection
 
 ### [New-MgApplication](New-MgApplication.md)
 Create a new application object.
