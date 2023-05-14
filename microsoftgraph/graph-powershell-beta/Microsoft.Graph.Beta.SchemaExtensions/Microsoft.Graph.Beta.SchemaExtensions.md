@@ -1,32 +1,35 @@
 ---
-Module Name: Microsoft.Graph.SchemaExtensions
-Module Guid: 0b0f88db-2a7a-4003-b417-665cebc86666
-Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.schemaextensions
+Module Name: Microsoft.Graph.Beta.SchemaExtensions
+Module Guid: 55bb9abc-a7d1-442a-8d53-a03b907a3791
+Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions
 Help Version: 1.0.0.0
 Locale: en-US
 ---
 
-# Microsoft.Graph.SchemaExtensions Module
+# Microsoft.Graph.Beta.SchemaExtensions Module
 ## Description
 Microsoft Graph PowerShell Cmdlets
 
-## Microsoft.Graph.SchemaExtensions Cmdlets
-### [Get-MgSchemaExtension](Get-MgSchemaExtension.md)
+## Microsoft.Graph.Beta.SchemaExtensions Cmdlets
+### [Get-MgBetaSchemaExtension](Get-MgBetaSchemaExtension.md)
 Get the properties of the specified schemaExtension definition.
 
-### [New-MgSchemaExtension](New-MgSchemaExtension.md)
+### [Get-MgBetaSchemaExtensionCount](Get-MgBetaSchemaExtensionCount.md)
+Get the number of the resource
+
+### [New-MgBetaSchemaExtension](New-MgBetaSchemaExtension.md)
 Create a new schemaExtension definition and its associated schema extension property to extend a supporting resource type.
 Schema extensions let you add strongly-typed custom data to a resource.
 The app that creates a schema extension is the owner app.
 Depending on the \nstate of the extension, the owner app, and only the owner app, may update or delete the extension.
 See examples of how to define a schema extension that describes a training course, \nuse the schema extension definition to create a new group with training course data, and \nadd training course data to an existing group.
 
-### [Remove-MgSchemaExtension](Remove-MgSchemaExtension.md)
+### [Remove-MgBetaSchemaExtension](Remove-MgBetaSchemaExtension.md)
 Delete the definition of a schema extension.
 Only the app that created the schema extension (owner app) can delete the schema extension definition, and only when the extension is in the `InDevelopment` state.
 Deleting a schema extension definition does not affect accessing custom data that has been added to resource instances based on that definition.
 
-### [Update-MgSchemaExtension](Update-MgSchemaExtension.md)
+### [Update-MgBetaSchemaExtension](Update-MgBetaSchemaExtension.md)
 Update properties in the definition of the specified schemaExtension.
 Additive updates to the extension can only be made when the extension is in the `InDevelopment` or `Available` status.
 This means custom properties or target resource types cannot be removed from the definition, but new custom properties can be added and the description of the extension changed.

@@ -1,12 +1,11 @@
 ---
-external help file: Microsoft.Graph.SchemaExtensions-help.xml
-Module Name: Microsoft.Graph.SchemaExtensions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.schemaextensions/remove-mgschemaextension
+external help file:
+Module Name: Microsoft.Graph.Beta.SchemaExtensions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions/remove-mgbetaschemaextension
 schema: 2.0.0
-ms.prod: extensions
 ---
 
-# Remove-MgSchemaExtension
+# Remove-MgBetaSchemaExtension
 
 ## SYNOPSIS
 Delete the definition of a schema extension.
@@ -17,14 +16,14 @@ Deleting a schema extension definition does not affect accessing custom data tha
 
 ### Delete (Default)
 ```
-Remove-MgSchemaExtension -SchemaExtensionId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+Remove-MgBetaSchemaExtension -SchemaExtensionId <String> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgSchemaExtension -InputObject <ISchemaExtensionsIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Remove-MgBetaSchemaExtension -InputObject <ISchemaExtensionsIdentity> [-IfMatch <String>] [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -34,14 +33,13 @@ Deleting a schema extension definition does not affect accessing custom data tha
 
 ## EXAMPLES
 
-### Example 1: Using the Remove-MgSchemaExtension Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.SchemaExtensions
-Remove-MgSchemaExtension -SchemaExtensionId $schemaExtensionId
+Import-Module Microsoft.Graph.Beta.SchemaExtensions
+Remove-MgBetaSchemaExtension -SchemaExtensionId $schemaExtensionId
 ```
 
-This example shows how to use the Remove-MgSchemaExtension Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -49,7 +47,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 ETag
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -62,10 +60,10 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISchemaExtensionsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ISchemaExtensionsIdentity
 Parameter Sets: DeleteViaIdentity
 Aliases:
 
@@ -80,7 +78,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -92,10 +90,10 @@ Accept wildcard characters: False
 ```
 
 ### -SchemaExtensionId
-key: id of schemaExtension
+The unique identifier of schemaExtension
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delete
 Aliases:
 
@@ -110,7 +108,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -126,7 +124,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -142,10 +140,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ISchemaExtensionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ISchemaExtensionsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -155,7 +155,8 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISchemaExtensionsIdentity>`: Identity Parameter
-  - `[SchemaExtensionId <String>]`: key: id of schemaExtension
+`INPUTOBJECT <ISchemaExtensionsIdentity>`: Identity Parameter
+  - `[SchemaExtensionId <String>]`: The unique identifier of schemaExtension
 
 ## RELATED LINKS
+
