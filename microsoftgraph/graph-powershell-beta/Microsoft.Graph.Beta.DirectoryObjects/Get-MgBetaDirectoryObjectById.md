@@ -1,34 +1,57 @@
 ---
-external help file: Microsoft.Graph.DirectoryObjects-help.xml
-Module Name: Microsoft.Graph.DirectoryObjects
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobjectuserownedobject
+external help file:
+Module Name: Microsoft.Graph.Beta.DirectoryObjects
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/get-mgbetadirectoryobjectbyid
 schema: 2.0.0
 ---
 
-# Get-MgDirectoryObjectUserOwnedObject
+# Get-MgBetaDirectoryObjectById
 
 ## SYNOPSIS
-Invoke action getUserOwnedObjects
+Return the directory objects specified in a list of IDs.
+Some common uses for this function are to:
 
 ## SYNTAX
 
 ### GetExpanded (Default)
 ```
-Get-MgDirectoryObjectUserOwnedObject [-AdditionalProperties <Hashtable>] [-Type <String>] [-UserId <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Get-MgBetaDirectoryObjectById [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-Types <String[]>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgDirectoryObjectUserOwnedObject
- -BodyParameter <IPaths50Tm3XDirectoryobjectsMicrosoftGraphGetuserownedobjectsPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Get-MgBetaDirectoryObjectById
+ -BodyParameter <IPathsG5Xp0HDirectoryobjectsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke action getUserOwnedObjects
+Return the directory objects specified in a list of IDs.
+Some common uses for this function are to:
 
 ## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+Import-Module Microsoft.Graph.Beta.DirectoryObjects
+$params = @{
+	Ids = @(
+		"84b80893-8749-40a3-97b7-68513b600544"
+		"5d6059b6-368d-45f8-91e1-8e07d485f1d0"
+		"0b944de3-e0fc-4774-a49a-b135213725ef"
+		"b75a5ab2-fe55-4463-bd31-d21ad555c6e0"
+	)
+	Types = @(
+		"user"
+		"group"
+		"device"
+	)
+}
+Get-MgBetaDirectoryObjectById -BodyParameter $params
+```
+
+
 
 ## PARAMETERS
 
@@ -36,7 +59,7 @@ Invoke action getUserOwnedObjects
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: GetExpanded
 Aliases:
 
@@ -49,10 +72,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths50Tm3XDirectoryobjectsMicrosoftGraphGetuserownedobjectsPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsG5Xp0HDirectoryobjectsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Get
 Aliases:
 
@@ -63,11 +86,11 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Type
+### -Ids
 .
 
 ```yaml
-Type: String
+Type: System.String[]
 Parameter Sets: GetExpanded
 Aliases:
 
@@ -78,11 +101,11 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -UserId
+### -Types
 .
 
 ```yaml
-Type: String
+Type: System.String[]
 Parameter Sets: GetExpanded
 Aliases:
 
@@ -97,7 +120,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -113,7 +136,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -129,10 +152,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths50Tm3XDirectoryobjectsMicrosoftGraphGetuserownedobjectsPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsG5Xp0HDirectoryobjectsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryObject
+
 ## NOTES
 
 ALIASES
@@ -142,9 +167,10 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths50Tm3XDirectoryobjectsMicrosoftGraphGetuserownedobjectsPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsG5Xp0HDirectoryobjectsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Type <String>]`: 
-  - `[UserId <String>]`: 
+  - `[Ids <String[]>]`: 
+  - `[Types <String[]>]`: 
 
 ## RELATED LINKS
+
