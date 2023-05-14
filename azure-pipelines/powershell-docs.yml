@@ -53,13 +53,13 @@ jobs:
       pwsh: true
       filePath: microsoftgraph-docs-powershell\scripts\FileCopy.ps1
 
-  # - task: PowerShell@2
-  #   displayName: 'Update Powershell Help'
-  #   continueOnError: false
-  #   inputs:
-  #     targetType: 'filePath'
-  #     pwsh: true
-  #     filePath: microsoftgraph-docs-powershell\microsoftgraph\UpdateHelp.ps1
+  - task: PowerShell@2
+    displayName: 'Update Powershell Help'
+    continueOnError: false
+    inputs:
+      targetType: 'filePath'
+      pwsh: true
+      filePath: microsoftgraph-docs-powershell\microsoftgraph\UpdateHelp.ps1
 
   # - task: PowerShell@2
   #   displayName: 'Escape disallowed html tags'
