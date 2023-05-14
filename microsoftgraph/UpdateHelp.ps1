@@ -9,7 +9,7 @@ Param(
 function Get-GraphMapping {
     $graphMapping = @{}
     $graphMapping.Add("v1.0", "graph-powershell-1.0")
-    #$graphMapping.Add("beta", "graph-powershell-beta")
+    $graphMapping.Add("beta", "graph-powershell-beta")
     return $graphMapping
 }
 

@@ -75,17 +75,13 @@ function Copy-Files{
      if ((Test-Path $DocPath)) {
      if($GraphProfile -eq "beta"){
         Write-Host -ForegroundColor DarkYellow "Copying beta markdown files to " $destination
-        Get-ChildItem $DocPath -Recurse -File | ForEach-Object {
-            #$OldFileName = [System.IO.Path]::GetFileName($_)
-            #$OldDestination = Join-Path $destination $OldFileName
-            #$NewDestination = Join-Path $destination $OldFileName.Replace("-MgBeta", "-Mg")
-            #Write-Host $NewDestination
+        Get-ChildItem $destination -Recurse -File | ForEach-Object {
             if(-not($_ -eq "$Path.md")){
                 Remove-Item $_
             }
+        }
+        Get-ChildItem $DocPath -Recurse -File | ForEach-Object {
             Copy-Item $_  -Destination $destination
-            #Move-Item $OldDestination -Destination $NewDestination
-
         }
         #Write-Host $source " = " $destination
      }else{
