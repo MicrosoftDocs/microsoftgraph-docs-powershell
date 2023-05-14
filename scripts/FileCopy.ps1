@@ -2,14 +2,14 @@
 # Licensed under the MIT License.
 Param(
     $ModulesToGenerate = @(),
-    [string] $ModuleMappingConfigPath = ("..\msgraph-sdk-powershell\config\ModulesMapping.jsonc"),
-	[string] $SDKDocsPath = ("..\msgraph-sdk-powershell\src"),
-	[string] $WorkLoadDocsPath = ("..\microsoftgraph-docs-powershell\microsoftgraph")
+    [string] $ModuleMappingConfigPath = (Join-Path $PSScriptRoot "..\microsoftgraph\config\ModulesMapping.jsonc"),
+	[string] $SDKDocsPath = ("..\..\msgraph-sdk-powershell\src"),
+	[string] $WorkLoadDocsPath = ("..\..\microsoftgraph-docs-powershell\microsoftgraph")
 )
 function Get-GraphMapping {
     $graphMapping = @{}
     $graphMapping.Add("v1.0", "v1.0")
-    $graphMapping.Add("beta", "beta")
+    #$graphMapping.Add("beta", "beta")
     return $graphMapping
 }
 
@@ -85,28 +85,31 @@ function Copy-Files{
         }
         #Write-Host $source " = " $destination
      }else{
-	   Write-Host -ForegroundColor DarkYellow "Copying v1 markdown files to " $destination
-	   Copy-Item $source -Destination $destination
+	   Write-Host -ForegroundColor DarkYellow "Copying v1 markdown files to " $destination " from " $source
+	   Get-ChildItem $DocPath -Recurse -File | ForEach-Object {
+        Write-Host $_
+        Copy-Item -Path $_  -Destination $destination
+      }
 	 }
      }
-    git config --global user.email "timwamalwa@gmail.com"
-    git config --global user.name "Timothy Wamalwa"
-    git add .
-    git commit -m "Imported files from powershell sdk"
+    # git config --global user.email "timwamalwa@gmail.com"
+    # git config --global user.name "Timothy Wamalwa"
+    # git add .
+    # git commit -m "Imported files from powershell sdk"
 }
 
 
 
-Set-Location microsoftgraph-docs-powershell
-$date = Get-Date -Format "dd-MM-yyyy"
-$proposedBranch = "weekly_v2_update"+$date
-$exists = git branch -l $proposedBranch
-if ([string]::IsNullOrEmpty($exists)) {
-    git checkout -b $proposedBranch
-}else{
-	Write-Host "Branch already exists"
-     git checkout $proposedBranch
-}
+# Set-Location microsoftgraph-docs-powershell
+# $date = Get-Date -Format "dd-MM-yyyy"
+# $proposedBranch = "weekly_v2_update"+$date
+# $exists = git branch -l $proposedBranch
+# if ([string]::IsNullOrEmpty($exists)) {
+#     git checkout -b $proposedBranch
+# }else{
+# 	Write-Host "Branch already exists"
+#      git checkout $proposedBranch
+# }
 if (-not (Test-Path $ModuleMappingConfigPath)) {
     Write-Error "Module mapping file not be found: $ModuleMappingConfigPath."
 }
@@ -114,7 +117,7 @@ if ($ModulesToGenerate.Count -eq 0) {
     [HashTable] $ModuleMapping = Get-Content $ModuleMappingConfigPath | ConvertFrom-Json -AsHashTable
     $ModulesToGenerate = $ModuleMapping.Keys
 }
-Set-Location ..\microsoftgraph-docs-powershell
+#Set-Location ..\microsoftgraph-docs-powershell
 Write-Host -ForegroundColor Green "-------------finished checking out to today's branch-------------"
 Start-Copy -ModulesToGenerate $ModulesToGenerate
 Write-Host -ForegroundColor Green "-------------Done-------------"
