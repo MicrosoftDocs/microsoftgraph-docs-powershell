@@ -1,7 +1,7 @@
 ---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mginformationprotection
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mginformationprotection
 schema: 2.0.0
 ---
 
@@ -12,17 +12,17 @@ Update informationProtection
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### UpdateExpanded (Default)
 ```
 Update-MgInformationProtection [-AdditionalProperties <Hashtable>] [-Bitlocker <IMicrosoftGraphBitlocker>]
- [-ThreatAssessmentRequests <IMicrosoftGraphThreatAssessmentRequest[]>] [-PassThru] [-WhatIf] [-Confirm]
+ [-ThreatAssessmentRequests <IMicrosoftGraphThreatAssessmentRequest[]>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
-### Update1
+### Update
 ```
-Update-MgInformationProtection -BodyParameter <IMicrosoftGraphInformationProtection> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgInformationProtection -BodyParameter <IMicrosoftGraphInformationProtection> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -30,14 +30,28 @@ Update informationProtection
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded1
+Type: System.Collections.Hashtable
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -49,11 +63,11 @@ Accept wildcard characters: False
 
 ### -Bitlocker
 bitlocker
-To construct, please use Get-Help -Online and see NOTES section for BITLOCKER properties and create a hash table.
+To construct, see NOTES section for BITLOCKER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphBitlocker
-Parameter Sets: UpdateExpanded1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBitlocker
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -65,11 +79,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 informationProtection
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphInformationProtection
-Parameter Sets: Update1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInformationProtection
+Parameter Sets: Update
 Aliases:
 
 Required: True
@@ -79,28 +93,13 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ThreatAssessmentRequests
 .
-To construct, please use Get-Help -Online and see NOTES section for THREATASSESSMENTREQUESTS properties and create a hash table.
+To construct, see NOTES section for THREATASSESSMENTREQUESTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphThreatAssessmentRequest[]
-Parameter Sets: UpdateExpanded1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphThreatAssessmentRequest[]
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -114,7 +113,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -130,7 +129,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -147,9 +146,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInformationProtection
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInformationProtection
+
 ## NOTES
 
 ALIASES
@@ -159,7 +160,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BITLOCKER `<IMicrosoftGraphBitlocker>`: bitlocker
+`BITLOCKER <IMicrosoftGraphBitlocker>`: bitlocker
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[RecoveryKeys <IMicrosoftGraphBitlockerRecoveryKey[]>]`: The recovery keys associated with the bitlocker entity.
@@ -169,7 +170,7 @@ BITLOCKER `<IMicrosoftGraphBitlocker>`: bitlocker
     - `[Key <String>]`: The BitLocker recovery key. Returned only on $select. Not nullable.
     - `[VolumeType <String>]`: volumeType
 
-BODYPARAMETER `<IMicrosoftGraphInformationProtection>`: informationProtection
+`BODYPARAMETER <IMicrosoftGraphInformationProtection>`: informationProtection
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Bitlocker <IMicrosoftGraphBitlocker>]`: bitlocker
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -202,7 +203,7 @@ BODYPARAMETER `<IMicrosoftGraphInformationProtection>`: informationProtection
       - `[ResultType <String>]`: threatAssessmentResultType
     - `[Status <String>]`: threatAssessmentStatus
 
-THREATASSESSMENTREQUESTS <IMicrosoftGraphThreatAssessmentRequest\[]>: .
+`THREATASSESSMENTREQUESTS <IMicrosoftGraphThreatAssessmentRequest[]>`: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Category <String>]`: threatCategory
   - `[ContentType <String>]`: threatAssessmentContentType
@@ -225,3 +226,4 @@ THREATASSESSMENTREQUESTS <IMicrosoftGraphThreatAssessmentRequest\[]>: .
   - `[Status <String>]`: threatAssessmentStatus
 
 ## RELATED LINKS
+
