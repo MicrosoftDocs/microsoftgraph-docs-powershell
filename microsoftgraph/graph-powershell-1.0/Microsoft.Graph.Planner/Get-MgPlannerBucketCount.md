@@ -1,43 +1,49 @@
 ---
 external help file:
 Module Name: Microsoft.Graph.Planner
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplanner
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerbucketcount
 schema: 2.0.0
 ---
 
-# Get-MgPlanner
+# Get-MgPlannerBucketCount
 
 ## SYNOPSIS
-Get planner
+Get the number of the resource
 
 ## SYNTAX
 
 ```
-Get-MgPlanner [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgPlannerBucketCount [-Filter <String>] [-Search <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get planner
+Get the number of the resource
 
 ## EXAMPLES
 
 ### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Planner
-Get-MgPlanner
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
 ```
 
 
 
 ## PARAMETERS
 
-### -ExpandProperty
-Expand related entities
+### -Filter
+Filter items by property values
 
 ```yaml
-Type: System.String[]
+Type: System.String
 Parameter Sets: (All)
-Aliases: Expand
+Aliases:
 
 Required: False
 Position: Named
@@ -46,13 +52,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Property
-Select properties to be returned
+### -Search
+Search items by search phrases
 
 ```yaml
-Type: System.String[]
+Type: System.String
 Parameter Sets: (All)
-Aliases: Select
+Aliases:
 
 Required: False
 Position: Named
@@ -68,7 +74,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlanner
+### System.Int32
 
 ## NOTES
 
