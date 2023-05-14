@@ -1,31 +1,45 @@
 ---
 external help file:
 Module Name: Microsoft.Graph.Users.Actions
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/reset-mgusermanageddevicepasscode
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgcleanusermanageddevicewindowsdevice
 schema: 2.0.0
 ---
 
-# Reset-MgUserManagedDevicePasscode
+# Invoke-MgCleanUserManagedDeviceWindowsDevice
 
 ## SYNOPSIS
-Reset passcode
+Clean Windows device
 
 ## SYNTAX
 
-### Reset (Default)
+### CleanExpanded (Default)
 ```
-Reset-MgUserManagedDevicePasscode -ManagedDeviceId <String> -UserId <String> [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+Invoke-MgCleanUserManagedDeviceWindowsDevice -ManagedDeviceId <String> -UserId <String>
+ [-AdditionalProperties <Hashtable>] [-KeepUserData] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### ResetViaIdentity
+### Clean
 ```
-Reset-MgUserManagedDevicePasscode -InputObject <IUsersActionsIdentity> [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+Invoke-MgCleanUserManagedDeviceWindowsDevice -ManagedDeviceId <String> -UserId <String>
+ -BodyParameter <IPaths1Nos4SfUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphCleanwindowsdevicePostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CleanViaIdentity
+```
+Invoke-MgCleanUserManagedDeviceWindowsDevice -InputObject <IUsersActionsIdentity>
+ -BodyParameter <IPaths1Nos4SfUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphCleanwindowsdevicePostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CleanViaIdentityExpanded
+```
+Invoke-MgCleanUserManagedDeviceWindowsDevice -InputObject <IUsersActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-KeepUserData] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Reset passcode
+Clean Windows device
 
 ## EXAMPLES
 
@@ -34,24 +48,39 @@ Reset passcode
 {{ Add code here }}
 ```
 
-{{ Add output here }}
+
 
 ### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
-{{ Add output here }}
+
 
 ## PARAMETERS
 
-### -InputObject
-Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+### -AdditionalProperties
+Additional Parameters
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-Parameter Sets: ResetViaIdentity
+Type: System.Collections.Hashtable
+Parameter Sets: CleanExpanded, CleanViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -BodyParameter
+.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IPaths1Nos4SfUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphCleanwindowsdevicePostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Clean, CleanViaIdentity
 Aliases:
 
 Required: True
@@ -61,12 +90,43 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -InputObject
+Identity Parameter
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+Parameter Sets: CleanViaIdentity, CleanViaIdentityExpanded
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -KeepUserData
+.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: CleanExpanded, CleanViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ManagedDeviceId
 The unique identifier of managedDevice
 
 ```yaml
 Type: System.String
-Parameter Sets: Reset
+Parameter Sets: Clean, CleanExpanded
 Aliases:
 
 Required: True
@@ -96,7 +156,7 @@ The unique identifier of user
 
 ```yaml
 Type: System.String
-Parameter Sets: Reset
+Parameter Sets: Clean, CleanExpanded
 Aliases:
 
 Required: True
@@ -142,6 +202,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+### Microsoft.Graph.PowerShell.Models.IPaths1Nos4SfUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphCleanwindowsdevicePostRequestbodyContentApplicationJsonSchema
+
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
 
 ## OUTPUTS
@@ -156,6 +218,10 @@ COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
+
+`BODYPARAMETER <IPaths1Nos4SfUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphCleanwindowsdevicePostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[KeepUserData <Boolean?>]`: 
 
 `INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AuthenticationMethodId <String>]`: The unique identifier of authenticationMethod

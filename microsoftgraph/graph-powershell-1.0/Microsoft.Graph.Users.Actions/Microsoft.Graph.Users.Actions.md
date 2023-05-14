@@ -1,7 +1,7 @@
 ---
 Module Name: Microsoft.Graph.Users.Actions
-Module Guid: 8c5f92c2-f3ff-4e78-8aba-69ed3f3e54f4
-Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions
+Module Guid: 65bf3ab6-fb26-4121-90ff-00f2e886209c
+Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions
 Help Version: 1.0.0.0
 Locale: en-US
 ---
@@ -22,10 +22,7 @@ Add a copy of a [content type][contentType] from a [site][site] to a [list][list
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
-
-### [Clear-MgUserManagedAppRegistrationByDeviceTag](Clear-MgUserManagedAppRegistrationByDeviceTag.md)
-Issues a wipe operation on an app registration with specified device tag.
+For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
 
 ### [Clear-MgUserManagedDevice](Clear-MgUserManagedDevice.md)
 Wipe a device
@@ -86,14 +83,14 @@ For Copy operations, you follow an asynchronous calling pattern:  First call the
 ### [Copy-MgUserOnenoteSectionToSectionGroup](Copy-MgUserOnenoteSectionToSectionGroup.md)
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
-### [Disable-MgUserAuthenticationPhoneMethodSmSign](Disable-MgUserAuthenticationPhoneMethodSmSign.md)
+### [Disable-MgUserAuthenticationPhoneMethodSmsSignIn](Disable-MgUserAuthenticationPhoneMethodSmsSignIn.md)
 Disable SMS sign-in for an existing `mobile` phone number registered to a user.
 The number will no longer be available for SMS sign-in, which can prevent your user from signing in.
 
 ### [Disable-MgUserManagedDeviceLostMode](Disable-MgUserManagedDeviceLostMode.md)
 Disable lost mode
 
-### [Enable-MgUserAuthenticationPhoneMethodSmSign](Enable-MgUserAuthenticationPhoneMethodSmSign.md)
+### [Enable-MgUserAuthenticationPhoneMethodSmsSignIn](Enable-MgUserAuthenticationPhoneMethodSmsSignIn.md)
 Enable SMS sign-in for an existing `mobile` phone number registered to a user.
 To be successfully enabled:
 
@@ -177,7 +174,7 @@ Check out a **driveItem** resource to prevent others from editing the document, 
 ### [Invoke-MgCheckoutUserDriveRoot](Invoke-MgCheckoutUserDriveRoot.md)
 Check out a **driveItem** resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
 
-### [Invoke-MgCleanUserManagedDeviceWindowDevice](Invoke-MgCleanUserManagedDeviceWindowDevice.md)
+### [Invoke-MgCleanUserManagedDeviceWindowsDevice](Invoke-MgCleanUserManagedDeviceWindowsDevice.md)
 Clean Windows device
 
 ### [Invoke-MgCreateOrGetUserOnlineMeeting](Invoke-MgCreateOrGetUserOnlineMeeting.md)
@@ -276,13 +273,13 @@ Invoke action preview
 Invoke action preview
 
 ### [Invoke-MgReauthorizeUserDriveItemSubscription](Invoke-MgReauthorizeUserDriveItemSubscription.md)
-Invoke action reauthorize
+Reauthorize a subscription when you receive a **reauthorizationRequired** challenge.
 
 ### [Invoke-MgReauthorizeUserDriveListSubscription](Invoke-MgReauthorizeUserDriveListSubscription.md)
-Invoke action reauthorize
+Reauthorize a subscription when you receive a **reauthorizationRequired** challenge.
 
 ### [Invoke-MgReauthorizeUserDriveRootSubscription](Invoke-MgReauthorizeUserDriveRootSubscription.md)
-Invoke action reauthorize
+Reauthorize a subscription when you receive a **reauthorizationRequired** challenge.
 
 ### [Invoke-MgReplyAllUserMailFolderChildFolderMessage](Invoke-MgReplyAllUserMailFolderChildFolderMessage.md)
 Reply to all recipients of a message using either JSON or MIME format.
@@ -335,7 +332,7 @@ Alternatively, create a draft to reply to an existing message and send it later.
 ### [Invoke-MgRetireUserManagedDevice](Invoke-MgRetireUserManagedDevice.md)
 Retire a device
 
-### [Invoke-MgScanUserManagedDeviceWindowDefender](Invoke-MgScanUserManagedDeviceWindowDefender.md)
+### [Invoke-MgScanUserManagedDeviceWindowsDefender](Invoke-MgScanUserManagedDeviceWindowsDefender.md)
 Invoke action windowsDefenderScan
 
 ### [Invoke-MgSnoozeUserEventInstanceReminder](Invoke-MgSnoozeUserEventInstanceReminder.md)
@@ -605,10 +602,7 @@ This will create a new version with the contents of the previous version, but pr
 ### [Restore-MgUserManagedDevicePasscode](Restore-MgUserManagedDevicePasscode.md)
 Recover passcode
 
-### [Revoke-MgUserSign](Revoke-MgUserSign.md)
-Invoke action revokeSignInSessions
-
-### [Revoke-MgUserSign](Revoke-MgUserSign.md)
+### [Revoke-MgUserSignInSession](Revoke-MgUserSignInSession.md)
 Invoke action revokeSignInSessions
 
 ### [Send-MgUserChatActivityNotification](Send-MgUserChatActivityNotification.md)
@@ -709,7 +703,7 @@ Unpublish a [contentType][] from a content type hub site.
 ### [Update-MgUserChatInstalledApp](Update-MgUserChatInstalledApp.md)
 Upgrade an app installation within a chat.
 
-### [Update-MgUserManagedDeviceWindowDeviceAccount](Update-MgUserManagedDeviceWindowDeviceAccount.md)
+### [Update-MgUserManagedDeviceWindowsDeviceAccount](Update-MgUserManagedDeviceWindowsDeviceAccount.md)
 Invoke action updateWindowsDeviceAccount
 
 ### [Update-MgUserOnenotePageContent](Update-MgUserOnenotePageContent.md)
