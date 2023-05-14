@@ -1,7 +1,7 @@
 ---
-external help file: Microsoft.Graph.Devices.ServiceAnnouncement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.serviceannouncement/update-mgserviceannouncementhealthoverviewissue
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/update-mgserviceannouncementhealthoverviewissue
 schema: 2.0.0
 ---
 
@@ -19,13 +19,19 @@ Update-MgServiceAnnouncementHealthOverviewIssue -ServiceHealthId <String> -Servi
  [-EndDateTime <DateTime>] [-Feature <String>] [-FeatureGroup <String>] [-Id <String>]
  [-ImpactDescription <String>] [-IsResolved] [-LastModifiedDateTime <DateTime>] [-Origin <String>]
  [-Posts <IMicrosoftGraphServiceHealthIssuePost[]>] [-Service <String>] [-StartDateTime <DateTime>]
- [-Status <String>] [-Title <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Status <String>] [-Title <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgServiceAnnouncementHealthOverviewIssue -ServiceHealthId <String> -ServiceHealthIssueId <String>
- -BodyParameter <IMicrosoftGraphServiceHealthIssue> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphServiceHealthIssue> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgServiceAnnouncementHealthOverviewIssue -InputObject <IDevicesServiceAnnouncementIdentity>
+ -BodyParameter <IMicrosoftGraphServiceHealthIssue> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -35,13 +41,7 @@ Update-MgServiceAnnouncementHealthOverviewIssue -InputObject <IDevicesServiceAnn
  [-EndDateTime <DateTime>] [-Feature <String>] [-FeatureGroup <String>] [-Id <String>]
  [-ImpactDescription <String>] [-IsResolved] [-LastModifiedDateTime <DateTime>] [-Origin <String>]
  [-Posts <IMicrosoftGraphServiceHealthIssuePost[]>] [-Service <String>] [-StartDateTime <DateTime>]
- [-Status <String>] [-Title <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgServiceAnnouncementHealthOverviewIssue -InputObject <IDevicesServiceAnnouncementIdentity>
- -BodyParameter <IMicrosoftGraphServiceHealthIssue> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Status <String>] [-Title <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,13 +49,27 @@ Update the navigation property issues in admin
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -68,10 +82,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 serviceHealthIssue
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphServiceHealthIssue
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServiceHealthIssue
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -86,7 +100,7 @@ Accept wildcard characters: False
 serviceHealthClassificationType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -100,10 +114,10 @@ Accept wildcard characters: False
 ### -Details
 Additional details about service event.
 This property doesn't support filters.
-To construct, please use Get-Help -Online and see NOTES section for DETAILS properties and create a hash table.
+To construct, see NOTES section for DETAILS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphKeyValuePair[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphKeyValuePair[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -118,7 +132,7 @@ Accept wildcard characters: False
 The end time of the service event.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -133,7 +147,7 @@ Accept wildcard characters: False
 The feature name of the service issue.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -148,7 +162,7 @@ Accept wildcard characters: False
 The feature group name of the service issue.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -164,7 +178,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -179,7 +193,7 @@ Accept wildcard characters: False
 The description of the service issue impact.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -192,11 +206,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDevicesServiceAnnouncementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDevicesServiceAnnouncementIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -210,7 +224,7 @@ Accept wildcard characters: False
 Indicates whether the issue is resolved.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -225,7 +239,7 @@ Accept wildcard characters: False
 The last modified time of the service event.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -240,23 +254,8 @@ Accept wildcard characters: False
 serviceHealthOrigin
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -268,10 +267,10 @@ Accept wildcard characters: False
 
 ### -Posts
 Collection of historical posts for the service issue.
-To construct, please use Get-Help -Online and see NOTES section for POSTS properties and create a hash table.
+To construct, see NOTES section for POSTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphServiceHealthIssuePost[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServiceHealthIssuePost[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -286,7 +285,7 @@ Accept wildcard characters: False
 Indicates the service affected by the issue.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -301,8 +300,8 @@ Accept wildcard characters: False
 The unique identifier of serviceHealth
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -316,8 +315,8 @@ Accept wildcard characters: False
 The unique identifier of serviceHealthIssue
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -331,7 +330,7 @@ Accept wildcard characters: False
 The start time of the service event.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -346,7 +345,7 @@ Accept wildcard characters: False
 serviceHealthStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -361,7 +360,7 @@ Accept wildcard characters: False
 The title of the service event.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -376,7 +375,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -392,7 +391,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -409,10 +408,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesServiceAnnouncementIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServiceHealthIssue
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServiceHealthIssue
+
 ## NOTES
 
 ALIASES
@@ -422,7 +424,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphServiceHealthIssue>`: serviceHealthIssue
+`BODYPARAMETER <IMicrosoftGraphServiceHealthIssue>`: serviceHealthIssue
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Details <IMicrosoftGraphKeyValuePair[]>]`: Additional details about service event. This property doesn't support filters.
     - `[Name <String>]`: Name for this key-value pair
@@ -448,17 +450,17 @@ BODYPARAMETER `<IMicrosoftGraphServiceHealthIssue>`: serviceHealthIssue
   - `[Service <String>]`: Indicates the service affected by the issue.
   - `[Status <String>]`: serviceHealthStatus
 
-DETAILS <IMicrosoftGraphKeyValuePair\[]>: Additional details about service event. This property doesn't support filters.
+`DETAILS <IMicrosoftGraphKeyValuePair[]>`: Additional details about service event. This property doesn't support filters.
   - `[Name <String>]`: Name for this key-value pair
   - `[Value <String>]`: Value for this key-value pair
 
-INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
+`INPUTOBJECT <IDevicesServiceAnnouncementIdentity>`: Identity Parameter
   - `[ServiceAnnouncementAttachmentId <String>]`: The unique identifier of serviceAnnouncementAttachment
   - `[ServiceHealthId <String>]`: The unique identifier of serviceHealth
   - `[ServiceHealthIssueId <String>]`: The unique identifier of serviceHealthIssue
   - `[ServiceUpdateMessageId <String>]`: The unique identifier of serviceUpdateMessage
 
-POSTS <IMicrosoftGraphServiceHealthIssuePost\[]>: Collection of historical posts for the service issue.
+`POSTS <IMicrosoftGraphServiceHealthIssuePost[]>`: Collection of historical posts for the service issue.
   - `[CreatedDateTime <DateTime?>]`: The published time of the post.
   - `[Description <IMicrosoftGraphItemBody>]`: itemBody
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -467,3 +469,4 @@ POSTS <IMicrosoftGraphServiceHealthIssuePost\[]>: Collection of historical posts
   - `[PostType <String>]`: postType
 
 ## RELATED LINKS
+
