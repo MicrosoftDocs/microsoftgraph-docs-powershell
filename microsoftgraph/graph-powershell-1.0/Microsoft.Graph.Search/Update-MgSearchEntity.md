@@ -1,7 +1,7 @@
 ---
-external help file: Microsoft.Graph.Search-help.xml
+external help file:
 Module Name: Microsoft.Graph.Search
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/update-mgsearchentity
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgsearchentity
 schema: 2.0.0
 ---
 
@@ -14,13 +14,13 @@ Update search
 
 ### UpdateExpanded (Default)
 ```
-Update-MgSearchEntity [-AdditionalProperties <Hashtable>] [-Id <String>] [-PassThru] [-WhatIf] [-Confirm]
+Update-MgSearchEntity [-AdditionalProperties <Hashtable>] [-Id <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgSearchEntity -BodyParameter <Hashtable> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgSearchEntity -BodyParameter <Hashtable> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -28,13 +28,27 @@ Update search
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -49,7 +63,7 @@ Accept wildcard characters: False
 searchEntity
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: Update
 Aliases:
 
@@ -65,23 +79,8 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -95,7 +94,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -111,7 +110,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -128,11 +127,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### System.Collections.Hashtable
+
 ## OUTPUTS
 
-### System.Boolean
+### System.String
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
+

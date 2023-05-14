@@ -1,38 +1,44 @@
 ---
 external help file:
 Module Name: Microsoft.Graph.Search
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgexternalconnectionitem
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnectiongroupcount
 schema: 2.0.0
 ---
 
-# Remove-MgExternalConnectionItem
+# Get-MgExternalConnectionGroupCount
 
 ## SYNOPSIS
-Delete an externalItem object.
+Get the number of the resource
 
 ## SYNTAX
 
-### Delete (Default)
+### Get (Default)
 ```
-Remove-MgExternalConnectionItem -ExternalConnectionId <String> -ExternalItemId <String> [-IfMatch <String>]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Get-MgExternalConnectionGroupCount -ExternalConnectionId <String> [-Filter <String>] [-Search <String>]
+ [<CommonParameters>]
 ```
 
-### DeleteViaIdentity
+### GetViaIdentity
 ```
-Remove-MgExternalConnectionItem -InputObject <ISearchIdentity> [-IfMatch <String>] [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+Get-MgExternalConnectionGroupCount -InputObject <ISearchIdentity> [-Filter <String>] [-Search <String>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete an externalItem object.
+Get the number of the resource
 
 ## EXAMPLES
 
 ### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Search
-Remove-MgExternalConnectionItem -ExternalConnectionId $externalConnectionId -ExternalItemId $externalItemId
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
 ```
 
 
@@ -44,7 +50,7 @@ The unique identifier of externalConnection
 
 ```yaml
 Type: System.String
-Parameter Sets: Delete
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -54,23 +60,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ExternalItemId
-The unique identifier of externalItem
-
-```yaml
-Type: System.String
-Parameter Sets: Delete
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -IfMatch
-ETag
+### -Filter
+Filter items by property values
 
 ```yaml
 Type: System.String
@@ -90,7 +81,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: Microsoft.Graph.PowerShell.Models.ISearchIdentity
-Parameter Sets: DeleteViaIdentity
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
@@ -100,44 +91,13 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
+### -Search
+Search items by search phrases
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: System.String
 Parameter Sets: (All)
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
 
 Required: False
 Position: Named
@@ -155,7 +115,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### System.Boolean
+### System.Int32
 
 ## NOTES
 
