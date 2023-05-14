@@ -42,7 +42,7 @@ function Get-FilesByProfile{
 
     $ModulesToGenerate | ForEach-Object {
         $ModuleName = $_
-        Get-Files -GraphProfile $GraphProfile -GraphProfilePath $GraphProfilePath -Module $ModuleName -ModulePrefix $ModulePrefix
+        Get-Files -GraphProfile $GraphProfile -GraphProfilePath $GraphProfilePath -ModuleName $ModuleName -ModulePrefix $ModulePrefix
     }
 
 }
@@ -53,12 +53,15 @@ function Get-Files{
         [ValidateNotNullOrEmpty()]
         [string] $GraphProfilePath = "graph-powershell-1.0",
         [ValidateNotNullOrEmpty()]
-        [string] $Module = "Users",
+        [string] $ModuleName = "Users",
         [ValidateNotNullOrEmpty()]
         [string] $ModulePrefix = "Microsoft.Graph"
     )
-    $moduleImportName = "$ModulePrefix.$ModuleName"
-    $moduleDocsPath = Join-Path $PSScriptRoot "$GraphProfilePath\$moduleImportName"
+    $Path = "$ModulePrefix.$ModuleName"
+    if($GraphProfile -eq 'beta'){
+       $Path = "$ModulePrefix.Beta.$ModuleName"
+    }
+    $moduleDocsPath = Join-Path $PSScriptRoot "$GraphProfilePath\$Path"
     Update-Files -ModuleDocsPath $moduleDocsPath -GraphProfile $GraphProfile -ModuleName $ModuleName
 }
 

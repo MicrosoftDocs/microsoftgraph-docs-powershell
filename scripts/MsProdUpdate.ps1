@@ -54,6 +54,9 @@ function Get-FilesByProfile {
     $ModulesToGenerate | ForEach-Object {
         $ModuleName = $_
         $FullModuleName = "$ModulePrefix.$ModuleName"
+        if($GraphProfile -eq 'v1.0-beta'){
+           $FullModuleName = "$ModulePrefix.Beta.$ModuleName"
+        }
         $ModulePath = Join-Path $WorkLoadDocsPath "\$GraphProfilePath\$FullModuleName"
         $OpenApiFile = Join-Path $SDKOpenApiPath "\openApiDocs\v1.0\$ModuleName.yml"
         #test this path first before proceeding
