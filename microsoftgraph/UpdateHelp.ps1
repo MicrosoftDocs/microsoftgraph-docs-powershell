@@ -95,9 +95,8 @@ function Update-GraphModuleHelp {
 }
 
 # Install PlatyPS
-if (!(Get-Module -Name PlatyPS -ListAvailable)) {
-    Install-Module PlatyPS -Force
-}
+Install-Module PlatyPS -Force
+
 Import-Module PlatyPS -Force -Scope Global
 # Errors in PlatyPS validation.
 $ErrorActionPreference = 'Continue'
