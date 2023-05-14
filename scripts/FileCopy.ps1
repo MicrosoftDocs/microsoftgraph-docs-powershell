@@ -61,8 +61,12 @@ function Copy-Files{
         [string] $DocPath = "..\msgraph-sdk-powershell\src\Users\v1.0\docs"
     )
     #Write-Host "Here there " $GraphProfile
-	$moduleImportName = "$ModulePrefix.$ModuleName"
-     $destination = Join-Path $WorkLoadDocsPath $GraphProfilePath $moduleImportName
+
+    $Path = "$ModulePrefix.$ModuleName"
+    if($GraphProfile -eq 'beta'){
+       $Path = "$ModulePrefix.Beta.$ModuleName"
+    }
+     $destination = Join-Path $WorkLoadDocsPath $GraphProfilePath $Path
 
 	 $source = Join-Path $DocPath "\*"
      if (-not(Test-Path $destination)) {
@@ -76,12 +80,12 @@ function Copy-Files{
         Remove-Item $FoldertoBeCleared -Recurse -Force
         #copy that file and mv to another file name
         Get-ChildItem $DocPath -Recurse -File | ForEach-Object {
-            $OldFileName = [System.IO.Path]::GetFileName($_)
-            $OldDestination = Join-Path $destination $OldFileName
-            $NewDestination = Join-Path $destination $OldFileName.Replace("-MgBeta", "-Mg")
-            Write-Host $NewDestination
+            #$OldFileName = [System.IO.Path]::GetFileName($_)
+            #$OldDestination = Join-Path $destination $OldFileName
+            #$NewDestination = Join-Path $destination $OldFileName.Replace("-MgBeta", "-Mg")
+            #Write-Host $NewDestination
             Copy-Item $_  -Destination $destination
-            Move-Item $OldDestination -Destination $NewDestination
+            #Move-Item $OldDestination -Destination $NewDestination
 
         }
         #Write-Host $source " = " $destination
