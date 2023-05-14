@@ -87,6 +87,7 @@ function Copy-Files{
      }else{
 	    Write-Host -ForegroundColor DarkYellow "Copying v1 markdown files to " $destination
 	    Get-ChildItem $DocPath -Recurse -File | ForEach-Object {
+        Write-Host "File $_"
         Copy-Item $_  -Destination $destination
       }
 	 }
@@ -101,7 +102,7 @@ function Copy-Files{
 
 Set-Location microsoftgraph-docs-powershell
 $date = Get-Date -Format "dd-MM-yyyy"
-$proposedBranch = "powershell_v2_"+$date
+$proposedBranch = "powershell_v2_$date"
 $exists = git branch -l $proposedBranch
 if ([string]::IsNullOrEmpty($exists)) {
     git checkout -b $proposedBranch

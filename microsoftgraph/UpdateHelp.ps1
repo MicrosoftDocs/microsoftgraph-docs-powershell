@@ -45,10 +45,10 @@ function Update-GraphHelp {
         $graphProfile = $_
         Update-GraphHelpByProfile -GraphProfile $graphProfile -GraphProfilePath $GraphMapping[$graphProfile] -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate 
     }
-    # git config --global user.email "timwamalwa@gmail.com"
-    # git config --global user.name "Timothy Wamalwa"
-    # git add .
-    # git commit -m "Updated markdown help" 
+    git config --global user.email "timwamalwa@gmail.com"
+    git config --global user.name "Timothy Wamalwa"
+    git add .
+    git commit -m "Updated markdown help" 
 }
 
 function Update-GraphHelpByProfile {
@@ -106,7 +106,7 @@ if ($PSEdition -ne 'Core') {
 }
 Set-Location microsoftgraph-docs-powershell
 $date = Get-Date -Format "dd-MM-yyyy"
-$proposedBranch = "powershell_v2_"+$date
+$proposedBranch = "powershell_v2_$date"
 $exists = git branch -l $proposedBranch
 if ([string]::IsNullOrEmpty($exists)) {
     git checkout -b $proposedBranch

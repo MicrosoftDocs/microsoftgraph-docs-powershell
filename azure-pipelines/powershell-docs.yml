@@ -89,9 +89,9 @@ jobs:
         git config --global user.name "Timothy Wamalwa"
         cd microsoftgraph-docs-powershell
         $date = Get-Date -Format "dd-MM-yyyy"
-        $proposedBranch = "powershell_v2_"+$date
+        $proposedBranch = "powershell_v2_$date"
         git add .
-        git commit -m "Updating help files "+$date
+        git commit -m "Updating help files $date"
         git push --set-upstream "https://$(GITHUB_TOKEN)@github.com/MicrosoftDocs/microsoftgraph-docs-powershell.git" $proposedBranch
         git status
          
