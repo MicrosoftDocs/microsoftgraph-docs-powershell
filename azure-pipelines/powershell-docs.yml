@@ -2,10 +2,10 @@
 
 trigger: none # disable triggers based on commits.
 pr: none # disable as a PR gate.
-name: 'PowerShellDocsUpdate Check'
+name: 'PowerShellDocsUpdateV2 Check'
 schedules:
   - cron: "0 3 * * THU"  # every Thursday at 3AM UTC (off hours for Redmond, Nairobi and Montréal)
-    displayName: 'PowerShellDocsUpdate Check'
+    displayName: 'PowerShellDocsUpdateV2 Check'
     branches:
       include:
       - main
@@ -23,7 +23,7 @@ resources:
      type: github
      endpoint: microsoftgraph
      name: microsoftgraph/msgraph-sdk-powershell
-     ref: dev
+     ref: v2/generation
 
    - repository: microsoft-graph-docs
      type: github
@@ -35,7 +35,7 @@ variables:
   buildConfiguration: 'Release'
 
 jobs:
-- job: PowerShellDocsUpdate
+- job: PowerShellDocsUpdateV2
   pool: 
     name: 1es-windows-ps-compute
   timeoutInMinutes: ${{ parameters.PipelineTimeout }}
@@ -61,21 +61,21 @@ jobs:
       pwsh: true
       filePath: microsoftgraph-docs-powershell\microsoftgraph\UpdateHelp.ps1
 
-  - task: PowerShell@2
-    displayName: 'Escape disallowed html tags'
-    continueOnError: false
-    inputs:
-      targetType: 'filePath'
-      pwsh: true
-      filePath: microsoftgraph-docs-powershell\microsoftgraph\EscapeDisallowedHtmlTags.ps1
+  # - task: PowerShell@2
+  #   displayName: 'Escape disallowed html tags'
+  #   continueOnError: false
+  #   inputs:
+  #     targetType: 'filePath'
+  #     pwsh: true
+  #     filePath: microsoftgraph-docs-powershell\microsoftgraph\EscapeDisallowedHtmlTags.ps1
 
-  - task: PowerShell@2
-    displayName: 'Update metadata header'
-    continueOnError: false
-    inputs:
-      targetType: 'filePath'
-      pwsh: true
-      filePath: microsoftgraph-docs-powershell\scripts\MsProdUpdate.ps1  
+  # - task: PowerShell@2
+  #   displayName: 'Update metadata header'
+  #   continueOnError: false
+  #   inputs:
+  #     targetType: 'filePath'
+  #     pwsh: true
+  #     filePath: microsoftgraph-docs-powershell\scripts\MsProdUpdate.ps1  
 
   - task: PowerShell@2
     displayName: Pushing to github
@@ -89,9 +89,8 @@ jobs:
         git config --global user.name "Timothy Wamalwa"
         cd microsoftgraph-docs-powershell
         $date = Get-Date -Format "dd-MM-yyyy"
-        $proposedBranch = "weekly_update_help_files_"+$date
+        $proposedBranch = "powershell_v2_$date"
         git add .
-        git commit -m "Updating help files "+$date
+        git commit -m "Updating help files $date"
         git push --set-upstream "https://$(GITHUB_TOKEN)@github.com/MicrosoftDocs/microsoftgraph-docs-powershell.git" $proposedBranch
         git status
-         
