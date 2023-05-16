@@ -81,6 +81,9 @@ function Update-GraphModuleHelp {
         [string] $ModulePrefix = "Microsoft.Graph"
     )
     $moduleImportName = "$ModulePrefix.$ModuleName"
+    if($GraphProfile -eq 'beta'){
+        $moduleImportName = "$ModulePrefix.Beta.$ModuleName"
+     }
     $moduleDocsPath = Join-Path $PSScriptRoot ".\$GraphProfilePath\$moduleImportName"
     $logsPath = Join-Path $PSScriptRoot ".\logs\$moduleImportName-$GraphProfile.txt"
 
