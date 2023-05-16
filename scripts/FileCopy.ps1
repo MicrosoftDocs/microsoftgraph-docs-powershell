@@ -2,14 +2,14 @@
 # Licensed under the MIT License.
 Param(
     $ModulesToGenerate = @(),
-    [string] $ModuleMappingConfigPath = ("..\msgraph-sdk-powershell\config\ModulesMapping.jsonc"),
+    [string] $ModuleMappingConfigPath = ("..\microsoftgraph-docs-powershell\microsoftgraph\config\ModulesMapping.jsonc"),
 	[string] $SDKDocsPath = ("..\msgraph-sdk-powershell\src"),
 	[string] $WorkLoadDocsPath = ("..\microsoftgraph-docs-powershell\microsoftgraph")
 )
 function Get-GraphMapping {
     $graphMapping = @{}
-    $graphMapping.Add("v1.0", "v1.0")
-    $graphMapping.Add("v1.0-beta", "v1.0-beta")
+    #$graphMapping.Add("v1.0", "v1.0")
+    $graphMapping.Add("beta", "beta")
     return $graphMapping
 }
 
@@ -23,15 +23,16 @@ function Start-Copy {
     $GraphMapping.Keys | ForEach-Object {
         $graphProfile = $_
 		$profilePath = "graph-powershell-1.0"
-		if($graphProfile -eq "v1.0-beta"){
+		if($graphProfile -eq "beta"){
 			$profilePath = "graph-powershell-beta"
 		}
+        
         Get-FilesByProfile -GraphProfile $graphProfile -GraphProfilePath $profilePath -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate 
     }
 }
 function Get-FilesByProfile{
  Param(
-        [ValidateSet("v1.0-beta", "v1.0")]
+        [ValidateSet("beta", "v1.0")]
         [string] $GraphProfile = "v1.0",
         [ValidateNotNullOrEmpty()]
         [string] $GraphProfilePath = "graph-powershell-1.0",
@@ -43,14 +44,14 @@ function Get-FilesByProfile{
 
     $ModulesToGenerate | ForEach-Object {
         $ModuleName = $_
-		$docs = Join-Path $SDKDocsPath $ModuleName $ModuleName "docs" $GraphProfile
-        Copy-Files -DocPath $docs -GraphProfilePath $GraphProfilePath -Module $ModuleName -ModulePrefix $ModulePrefix
+		$docs = Join-Path $SDKDocsPath $ModuleName $GraphProfile "docs"
+        Copy-Files -DocPath $docs -GraphProfilePath $GraphProfilePath -Module $ModuleName -ModulePrefix $ModulePrefix -GraphProfile $GraphProfile
     }
 
 }
 function Copy-Files{
     param(
-        [ValidateSet("v1.0-beta", "v1.0")]
+        [ValidateSet("beta", "v1.0")]
         [string] $GraphProfile = "v1.0",
         [ValidateNotNullOrEmpty()]
         [string] $GraphProfilePath = "graph-powershell-1.0",
@@ -59,16 +60,41 @@ function Copy-Files{
         [ValidateNotNullOrEmpty()]
         [string] $ModulePrefix = "Microsoft.Graph",
 		[ValidateNotNullOrEmpty()]
-        [string] $DocPath = "..\msgraph-sdk-powershell\src\Users\Users\docs\v1.0"
+        [string] $DocPath = "..\msgraph-sdk-powershell\src\Users\v1.0\docs"
     )
-	$moduleImportName = "$ModulePrefix.$ModuleName"
-     $destination = Join-Path $WorkLoadDocsPath $GraphProfilePath $moduleImportName
+    $Path = "$ModulePrefix.$ModuleName"
+     $destination = Join-Path $WorkLoadDocsPath $GraphProfilePath $Path
+
 	 $source = Join-Path $DocPath "\*"
-	
-	if ((Test-Path $DocPath)) {
-		 Write-Host -ForegroundColor DarkYellow "Copying markdown files to " $destination
-		Copy-Item $source -Destination $destination
-	}
+     if (-not(Test-Path $destination)) {
+        New-Item -Path $destination -ItemType Directory
+     }
+     if ((Test-Path $DocPath)) {
+     if($GraphProfile -eq "beta"){
+        Write-Host -ForegroundColor DarkYellow "Copying beta markdown files to " $destination
+        Get-ChildItem $destination -Recurse -File | ForEach-Object {
+            if(-not($_ -eq "$Path.md")){
+                Remove-Item $_
+            }
+        }
+        Get-ChildItem $DocPath -Recurse -File | ForEach-Object {
+            $OldFileName = [System.IO.Path]::GetFileName($_)
+            $OldDestination = Join-Path $destination $OldFileName
+            $NewDestination = Join-Path $destination $OldFileName.Replace("-MgBeta", "-Mg")
+            Copy-Item $_  -Destination $destination
+            Move-Item $OldDestination -Destination $NewDestination
+        }
+     }else{
+	    Write-Host -ForegroundColor DarkYellow "Copying v1 markdown files to " $destination
+	    Get-ChildItem $DocPath -Recurse -File | ForEach-Object {
+        Copy-Item $_  -Destination $destination
+      }
+	 }
+     }
+    git config --global user.email "timwamalwa@gmail.com"
+    git config --global user.name "Timothy Wamalwa"
+    git add .
+    git commit -m "Imported files from powershell sdk"
       
 }
 
