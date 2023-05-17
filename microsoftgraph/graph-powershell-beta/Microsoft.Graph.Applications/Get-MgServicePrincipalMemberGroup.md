@@ -1,78 +1,72 @@
 ---
-external help file: Microsoft.Graph.Applications-help.xml
-Module Name: Microsoft.Graph.Applications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgserviceprincipalmembergroup
+external help file:
+Module Name: Microsoft.Graph.Beta.Applications
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalmembergroup
 schema: 2.0.0
 ---
 
-# Get-MgServicePrincipalMemberGroup
+# Get-MgBetaServicePrincipalMemberGroup
 
 ## SYNOPSIS
-Invoke action getMemberGroups
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ## SYNTAX
 
 ### GetExpanded (Default)
 ```
-Get-MgServicePrincipalMemberGroup -ServicePrincipalId <String> [-AdditionalProperties <Hashtable>]
- [-SecurityEnabledOnly] [-WhatIf] [-Confirm] [<CommonParameters>]
+Get-MgBetaServicePrincipalMemberGroup -ServicePrincipalId <String> [-AdditionalProperties <Hashtable>]
+ [-SecurityEnabledOnly] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgServicePrincipalMemberGroup -ServicePrincipalId <String>
+Get-MgBetaServicePrincipalMemberGroup -ServicePrincipalId <String>
  -BodyParameter <IPaths1850388ServiceprincipalsServiceprincipalIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### GetViaIdentityExpanded
-```
-Get-MgServicePrincipalMemberGroup -InputObject <IApplicationsIdentity> [-AdditionalProperties <Hashtable>]
- [-SecurityEnabledOnly] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgServicePrincipalMemberGroup -InputObject <IApplicationsIdentity>
+Get-MgBetaServicePrincipalMemberGroup -InputObject <IApplicationsIdentity>
  -BodyParameter <IPaths1850388ServiceprincipalsServiceprincipalIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### GetViaIdentityExpanded
+```
+Get-MgBetaServicePrincipalMemberGroup -InputObject <IApplicationsIdentity> [-AdditionalProperties <Hashtable>]
+ [-SecurityEnabledOnly] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke action getMemberGroups
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ## EXAMPLES
 
-### Example 1: Check group memberships for a directory object
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.DirectoryObjects
+Import-Module Microsoft.Graph.Beta.DirectoryObjects
+```
 
 $params = @{
 	SecurityEnabledOnly = $false
 }
 
-Get-MgDirectoryObjectMemberGroup -DirectoryObjectId $directoryObjectId -BodyParameter $params
-```
+Get-MgBetaDirectoryObjectMemberGroup -DirectoryObjectId $directoryObjectId -BodyParameter $params
 
-This example shows how to use the Get-MgServicePrincipalMemberGroup Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Check group memberships for the signed-in user
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Users.Actions
+Import-Module Microsoft.Graph.Beta.Users.Actions
+```
 
 $params = @{
 	SecurityEnabledOnly = $true
 }
 
 # A UPN can also be used as -UserId.
-Get-MgUserMemberGroup -UserId $userId -BodyParameter $params
-```
-
-This example shows how to use the Get-MgServicePrincipalMemberGroup Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Get-MgBetaUserMemberGroup -UserId $userId -BodyParameter $params
 
 ## PARAMETERS
 
@@ -80,7 +74,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: GetExpanded, GetViaIdentityExpanded
 Aliases:
 
@@ -93,10 +87,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1850388ServiceprincipalsServiceprincipalIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1850388ServiceprincipalsServiceprincipalIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Get, GetViaIdentity
 Aliases:
 
@@ -109,11 +103,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IApplicationsIdentity
-Parameter Sets: GetViaIdentityExpanded, GetViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+Parameter Sets: GetViaIdentity, GetViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -127,7 +121,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: GetExpanded, GetViaIdentityExpanded
 Aliases:
 
@@ -142,8 +136,8 @@ Accept wildcard characters: False
 The unique identifier of servicePrincipal
 
 ```yaml
-Type: String
-Parameter Sets: GetExpanded, Get
+Type: System.String
+Parameter Sets: Get, GetExpanded
 Aliases:
 
 Required: True
@@ -157,7 +151,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -173,7 +167,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -189,11 +183,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths1850388ServiceprincipalsServiceprincipalIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1850388ServiceprincipalsServiceprincipalIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.String
+
 ## NOTES
 
 ALIASES
@@ -203,11 +200,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1850388ServiceprincipalsServiceprincipalIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1850388ServiceprincipalsServiceprincipalIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[SecurityEnabledOnly <Boolean?>]`: 
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+`INPUTOBJECT <IApplicationsIdentity>`: Identity Parameter
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
   - `[ApplicationId <String>]`: The unique identifier of application
@@ -238,3 +235,4 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

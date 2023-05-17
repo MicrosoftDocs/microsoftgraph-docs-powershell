@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Applications-help.xml
-Module Name: Microsoft.Graph.Applications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgapplicationcreatedonbehalfof
+external help file:
+Module Name: Microsoft.Graph.Beta.Applications
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationcreatedonbehalfof
 schema: 2.0.0
 ---
 
-# Get-MgApplicationCreatedOnBehalfOf
+# Get-MgBetaApplicationCreatedOnBehalfOf
 
 ## SYNOPSIS
 Supports $filter (/$count eq 0, /$count ne 0).
@@ -15,13 +15,13 @@ Read-only.
 
 ### Get (Default)
 ```
-Get-MgApplicationCreatedOnBehalfOf -ApplicationId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
+Get-MgBetaApplicationCreatedOnBehalfOf -ApplicationId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgApplicationCreatedOnBehalfOf -InputObject <IApplicationsIdentity> [-ExpandProperty <String[]>]
+Get-MgBetaApplicationCreatedOnBehalfOf -InputObject <IApplicationsIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
@@ -31,13 +31,27 @@ Read-only.
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -ApplicationId
 The unique identifier of application
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -52,7 +66,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -65,10 +79,10 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IApplicationsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -83,7 +97,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -99,10 +113,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryObject
+
 ## NOTES
 
 ALIASES
@@ -112,7 +128,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+`INPUTOBJECT <IApplicationsIdentity>`: Identity Parameter
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
   - `[ApplicationId <String>]`: The unique identifier of application
@@ -143,3 +159,4 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
