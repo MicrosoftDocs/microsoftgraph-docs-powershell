@@ -15,8 +15,8 @@ Service principal owners can be users, the service principal itself, or other se
 
 ### CreateExpanded (Default)
 ```
-New-MgServicePrincipalOwnerByRef -ServicePrincipalId <String> [-AdditionalProperties <Hashtable>]
- [-OdataId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgServicePrincipalOwnerByRef -ServicePrincipalId <String> -OdataId <String>
+ [-AdditionalProperties <Hashtable>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -27,8 +27,8 @@ New-MgServicePrincipalOwnerByRef -ServicePrincipalId <String> -BodyParameter <IR
 
 ### CreateViaIdentityExpanded
 ```
-New-MgServicePrincipalOwnerByRef -InputObject <IApplicationsIdentity> [-AdditionalProperties <Hashtable>]
- [-OdataId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgServicePrincipalOwnerByRef -InputObject <IApplicationsIdentity> -OdataId <String>
+ [-AdditionalProperties <Hashtable>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -110,7 +110,7 @@ Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False

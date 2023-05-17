@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ---
+=======
+﻿---
+>>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationuserownedobject
@@ -33,14 +37,22 @@ This API returns up to 1,000 deleted objects owned by the user, sorted by ID, an
 ## EXAMPLES
 
 ### EXAMPLE 1
+<<<<<<< HEAD
 ```
+=======
+```powershell
+>>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
 ### EXAMPLE 2
+<<<<<<< HEAD
 ```
+=======
+```powershell
+>>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb
 {{ Add code here }}
 ```
 
@@ -155,10 +167,18 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
+<<<<<<< HEAD
 BODYPARAMETER \<IPaths16VdybwApplicationsMicrosoftGraphGetuserownedobjectsPostRequestbodyContentApplicationJsonSchema\>: .
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[Type \<String\>\]: 
   \[UserId \<String\>\]:
+=======
+
+`BODYPARAMETER <IPaths16VdybwApplicationsMicrosoftGraphGetuserownedobjectsPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Type <String>]`: 
+  - `[UserId <String>]`: 
+>>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb
 
 ## RELATED LINKS
 

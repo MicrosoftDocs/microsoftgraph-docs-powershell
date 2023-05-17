@@ -14,8 +14,8 @@ Assign a claimsMappingPolicy to a servicePrincipal.
 
 ### CreateExpanded (Default)
 ```
-New-MgServicePrincipalClaimMappingPolicyByRef -ServicePrincipalId <String> [-AdditionalProperties <Hashtable>]
- [-OdataId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgServicePrincipalClaimMappingPolicyByRef -ServicePrincipalId <String> -OdataId <String>
+ [-AdditionalProperties <Hashtable>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -26,8 +26,8 @@ New-MgServicePrincipalClaimMappingPolicyByRef -ServicePrincipalId <String> -Body
 
 ### CreateViaIdentityExpanded
 ```
-New-MgServicePrincipalClaimMappingPolicyByRef -InputObject <IApplicationsIdentity>
- [-AdditionalProperties <Hashtable>] [-OdataId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgServicePrincipalClaimMappingPolicyByRef -InputObject <IApplicationsIdentity> -OdataId <String>
+ [-AdditionalProperties <Hashtable>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -108,7 +108,7 @@ Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False

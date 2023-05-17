@@ -16,8 +16,8 @@ Only one policy object can be assigned to an application or service principal.
 
 ### CreateExpanded (Default)
 ```
-New-MgApplicationAppManagementPolicyByRef -ApplicationId <String> [-AdditionalProperties <Hashtable>]
- [-OdataId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgApplicationAppManagementPolicyByRef -ApplicationId <String> -OdataId <String>
+ [-AdditionalProperties <Hashtable>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -28,8 +28,8 @@ New-MgApplicationAppManagementPolicyByRef -ApplicationId <String> -BodyParameter
 
 ### CreateViaIdentityExpanded
 ```
-New-MgApplicationAppManagementPolicyByRef -InputObject <IApplicationsIdentity>
- [-AdditionalProperties <Hashtable>] [-OdataId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgApplicationAppManagementPolicyByRef -InputObject <IApplicationsIdentity> -OdataId <String>
+ [-AdditionalProperties <Hashtable>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -128,7 +128,7 @@ Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False

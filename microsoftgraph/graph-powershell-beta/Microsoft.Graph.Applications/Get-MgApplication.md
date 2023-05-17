@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ---
+=======
+﻿---
+>>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplication
@@ -37,7 +41,11 @@ Get the properties and relationships of an application object.
 ## EXAMPLES
 
 ### EXAMPLE 1
+<<<<<<< HEAD
 ```
+=======
+```powershell
+>>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb
 Connect-MgBetaGraph -Scopes 'Application.Read.All'
 Get-MgBetaApplication | 
   Format-List Id, DisplayName, AppId, SignInAudience, PublisherDomain
@@ -50,7 +58,11 @@ SignInAudience  : AzureADandPersonalMicrosoftAccount
 PublisherDomain : Contoso.com
 
 ### EXAMPLE 2
+<<<<<<< HEAD
 ```
+=======
+```powershell
+>>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb
 Connect-MgBetaGraph -Scopes 'Application.Read.All'
 Get-MgBetaApplication -Filter "AppId eq '39b09640-ec3e-44c9-b3de-f52db4e1cf66'" | 
   Format-List Id, DisplayName, AppId, SignInAudience, PublisherDomain
@@ -62,7 +74,11 @@ SignInAudience  : AzureADandPersonalMicrosoftAccount
 PublisherDomain : Contoso.com
 
 ### EXAMPLE 3
+<<<<<<< HEAD
 ```
+=======
+```powershell
+>>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb
 Connect-MgBetaGraph -Scopes 'Application.Read.All'
 Get-MgBetaApplication -ConsistencyLevel eventual -Count appCount
 ```
@@ -76,7 +92,11 @@ f6b30057-7095-4e2c-89f8-224149f591b7 Testing App        00e80963-9bc0-4147-b9e0-
 fe4caed6-6182-4aca-b70b-b114c5334a8a New app            641992e9-d176-4aff-a3b6-a867b3ba48c4 AzureADandPersonalMicrosoftAccount Contoso.com
 
 ### EXAMPLE 4
+<<<<<<< HEAD
 ```
+=======
+```powershell
+>>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb
 Connect-MgBetaGraph -Scopes 'Application.Read.All'
 Get-MgBetaApplication -ConsistencyLevel eventual -Count appCount -Search '"DisplayName:Test"'
 ```
@@ -87,7 +107,11 @@ dcaa0c3a-8dfa-4b47-bc04-0edbab42043a Principal-Test App bd38ad43-6c46-4cc6-b65c-
 f6b30057-7095-4e2c-89f8-224149f591b7 Testing App        00e80963-9bc0-4147-b9e0-2ba56093e7e6 AzureADandPersonalMicrosoftAccount Contoso.com
 
 ### EXAMPLE 5
+<<<<<<< HEAD
 ```
+=======
+```powershell
+>>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb
 Connect-MgBetaGraph -Scopes 'Application.Read.All'
 Get-MgBetaApplication -ConsistencyLevel eventual -Count appCount -Filter "startsWith(DisplayName, 'New')" -OrderBy DisplayName
 ```
@@ -312,6 +336,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
+<<<<<<< HEAD
 INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[AppManagementPolicyId \<String\>\]: The unique identifier of appManagementPolicy
   \[AppRoleAssignmentId \<String\>\]: The unique identifier of appRoleAssignment
@@ -341,6 +366,38 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[TokenIssuancePolicyId \<String\>\]: The unique identifier of tokenIssuancePolicy
   \[TokenLifetimePolicyId \<String\>\]: The unique identifier of tokenLifetimePolicy
   \[UserId \<String\>\]: The unique identifier of user
+=======
+
+`INPUTOBJECT <IApplicationsIdentity>`: Identity Parameter
+  - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
+  - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
+  - `[ApplicationId <String>]`: The unique identifier of application
+  - `[ApplicationTemplateId <String>]`: The unique identifier of applicationTemplate
+  - `[ClaimsMappingPolicyId <String>]`: The unique identifier of claimsMappingPolicy
+  - `[ConnectorGroupId <String>]`: The unique identifier of connectorGroup
+  - `[ConnectorId <String>]`: The unique identifier of connector
+  - `[DelegatedPermissionClassificationId <String>]`: The unique identifier of delegatedPermissionClassification
+  - `[DirectoryDefinitionId <String>]`: The unique identifier of directoryDefinition
+  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
+  - `[EndpointId <String>]`: The unique identifier of endpoint
+  - `[ExtensionPropertyId <String>]`: The unique identifier of extensionProperty
+  - `[FederatedIdentityCredentialId <String>]`: The unique identifier of federatedIdentityCredential
+  - `[GroupId <String>]`: The unique identifier of group
+  - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
+  - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
+  - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
+  - `[OnPremisesAgentGroupId <String>]`: The unique identifier of onPremisesAgentGroup
+  - `[OnPremisesAgentGroupId1 <String>]`: The unique identifier of onPremisesAgentGroup
+  - `[OnPremisesAgentId <String>]`: The unique identifier of onPremisesAgent
+  - `[OnPremisesPublishingProfileId <String>]`: The unique identifier of onPremisesPublishingProfile
+  - `[PublishedResourceId <String>]`: The unique identifier of publishedResource
+  - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
+  - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
+  - `[SynchronizationTemplateId <String>]`: The unique identifier of synchronizationTemplate
+  - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
+  - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
+  - `[UserId <String>]`: The unique identifier of user
+>>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb
 
 ## RELATED LINKS
 

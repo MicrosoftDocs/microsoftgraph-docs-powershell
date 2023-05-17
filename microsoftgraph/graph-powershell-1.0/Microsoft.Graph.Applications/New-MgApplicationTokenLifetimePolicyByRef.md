@@ -14,8 +14,8 @@ Assign a tokenLifetimePolicy to an application.
 
 ### CreateExpanded (Default)
 ```
-New-MgApplicationTokenLifetimePolicyByRef -ApplicationId <String> [-AdditionalProperties <Hashtable>]
- [-OdataId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgApplicationTokenLifetimePolicyByRef -ApplicationId <String> -OdataId <String>
+ [-AdditionalProperties <Hashtable>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -26,8 +26,8 @@ New-MgApplicationTokenLifetimePolicyByRef -ApplicationId <String> -BodyParameter
 
 ### CreateViaIdentityExpanded
 ```
-New-MgApplicationTokenLifetimePolicyByRef -InputObject <IApplicationsIdentity>
- [-AdditionalProperties <Hashtable>] [-OdataId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgApplicationTokenLifetimePolicyByRef -InputObject <IApplicationsIdentity> -OdataId <String>
+ [-AdditionalProperties <Hashtable>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -123,7 +123,7 @@ Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False

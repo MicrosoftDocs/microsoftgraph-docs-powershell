@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
@@ -13,17 +14,37 @@ This function is transitive.
 You can check up to a maximum of 20 groups per request.
 This function supports all groups provisioned in Azure AD.
 Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
+=======
+﻿---
+external help file: Microsoft.Graph.Beta.Applications-help.xml
+Module Name: Microsoft.Graph.Beta.Applications
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/clear-mgbetaapplicationverifiedpublisher
+schema: 2.0.0
+---
+
+# Clear-MgBetaApplicationVerifiedPublisher
+
+## SYNOPSIS
+Unset the the verifiedPublisher previously set on an application, removing all verified publisher properties.
+For more information, see Publisher verification.
+>>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb
 
 ## SYNTAX
 
-### CheckExpanded (Default)
+### Unset (Default)
 ```
+<<<<<<< HEAD
 Confirm-MgBetaApplicationMemberGroup -ApplicationId <String> [-AdditionalProperties <Hashtable>]
  [-GroupIds <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+=======
+Clear-MgBetaApplicationVerifiedPublisher -ApplicationId <String> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+>>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb
 ```
 
-### Check
+### UnsetViaIdentity
 ```
+<<<<<<< HEAD
 Confirm-MgBetaApplicationMemberGroup -ApplicationId <String>
  -BodyParameter <IPaths1HnzvnpApplicationsApplicationIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -48,10 +69,20 @@ This function is transitive.
 You can check up to a maximum of 20 groups per request.
 This function supports all groups provisioned in Azure AD.
 Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
+=======
+Clear-MgBetaApplicationVerifiedPublisher -InputObject <IApplicationsIdentity> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+## DESCRIPTION
+Unset the the verifiedPublisher previously set on an application, removing all verified publisher properties.
+For more information, see Publisher verification.
+>>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb
 
 ## EXAMPLES
 
 ### EXAMPLE 1
+<<<<<<< HEAD
 ```
 Import-Module Microsoft.Graph.Beta.DirectoryObjects
 ```
@@ -83,29 +114,21 @@ $params = @{
 # A UPN can also be used as -UserId.
 Confirm-MgBetaUserMemberGroup -UserId $userId -BodyParameter $params
 
-## PARAMETERS
-
-### -AdditionalProperties
-Additional Parameters
-
-```yaml
-Type: Hashtable
-Parameter Sets: CheckExpanded, CheckViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+=======
+```powershell
+Import-Module Microsoft.Graph.Beta.Applications
+Clear-MgBetaApplicationVerifiedPublisher -ApplicationId $applicationId
 ```
+
+>>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb
+## PARAMETERS
 
 ### -ApplicationId
 The unique identifier of application
 
 ```yaml
 Type: String
-Parameter Sets: CheckExpanded, Check
+Parameter Sets: Unset
 Aliases:
 
 Required: True
@@ -115,6 +138,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+<<<<<<< HEAD
 ### -BodyParameter
 .
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
@@ -146,19 +170,36 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+=======
+>>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IApplicationsIdentity
-Parameter Sets: CheckViaIdentityExpanded, CheckViaIdentity
+Parameter Sets: UnsetViaIdentity
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -PassThru
+Returns true when the command succeeds
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -199,10 +240,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+<<<<<<< HEAD
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1HnzvnpApplicationsApplicationIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema
+=======
+>>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb
 ## OUTPUTS
 
-### System.String
+### System.Boolean
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -213,6 +257,7 @@ BODYPARAMETER \<IPaths1HnzvnpApplicationsApplicationIdMicrosoftGraphCheckmemberg
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[GroupIds \<String\[\]\>\]: 
 
+<<<<<<< HEAD
 INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[AppManagementPolicyId \<String\>\]: The unique identifier of appManagementPolicy
   \[AppRoleAssignmentId \<String\>\]: The unique identifier of appRoleAssignment
@@ -242,6 +287,37 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[TokenIssuancePolicyId \<String\>\]: The unique identifier of tokenIssuancePolicy
   \[TokenLifetimePolicyId \<String\>\]: The unique identifier of tokenLifetimePolicy
   \[UserId \<String\>\]: The unique identifier of user
+=======
+`INPUTOBJECT <IApplicationsIdentity>`: Identity Parameter
+  - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
+  - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
+  - `[ApplicationId <String>]`: The unique identifier of application
+  - `[ApplicationTemplateId <String>]`: The unique identifier of applicationTemplate
+  - `[ClaimsMappingPolicyId <String>]`: The unique identifier of claimsMappingPolicy
+  - `[ConnectorGroupId <String>]`: The unique identifier of connectorGroup
+  - `[ConnectorId <String>]`: The unique identifier of connector
+  - `[DelegatedPermissionClassificationId <String>]`: The unique identifier of delegatedPermissionClassification
+  - `[DirectoryDefinitionId <String>]`: The unique identifier of directoryDefinition
+  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
+  - `[EndpointId <String>]`: The unique identifier of endpoint
+  - `[ExtensionPropertyId <String>]`: The unique identifier of extensionProperty
+  - `[FederatedIdentityCredentialId <String>]`: The unique identifier of federatedIdentityCredential
+  - `[GroupId <String>]`: The unique identifier of group
+  - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
+  - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
+  - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
+  - `[OnPremisesAgentGroupId <String>]`: The unique identifier of onPremisesAgentGroup
+  - `[OnPremisesAgentGroupId1 <String>]`: The unique identifier of onPremisesAgentGroup
+  - `[OnPremisesAgentId <String>]`: The unique identifier of onPremisesAgent
+  - `[OnPremisesPublishingProfileId <String>]`: The unique identifier of onPremisesPublishingProfile
+  - `[PublishedResourceId <String>]`: The unique identifier of publishedResource
+  - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
+  - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
+  - `[SynchronizationTemplateId <String>]`: The unique identifier of synchronizationTemplate
+  - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
+  - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
+  - `[UserId <String>]`: The unique identifier of user
+>>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb
 
 ## RELATED LINKS
 

@@ -14,7 +14,7 @@ Add an owner to an application by posting to the owners collection.
 
 ### CreateExpanded (Default)
 ```
-New-MgApplicationOwnerByRef -ApplicationId <String> [-AdditionalProperties <Hashtable>] [-OdataId <String>]
+New-MgApplicationOwnerByRef -ApplicationId <String> -OdataId <String> [-AdditionalProperties <Hashtable>]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -26,8 +26,8 @@ New-MgApplicationOwnerByRef -ApplicationId <String> -BodyParameter <IReferenceCr
 
 ### CreateViaIdentityExpanded
 ```
-New-MgApplicationOwnerByRef -InputObject <IApplicationsIdentity> [-AdditionalProperties <Hashtable>]
- [-OdataId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgApplicationOwnerByRef -InputObject <IApplicationsIdentity> -OdataId <String>
+ [-AdditionalProperties <Hashtable>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -123,7 +123,7 @@ Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False

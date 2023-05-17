@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ---
+=======
+﻿---
+>>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipaldelta
@@ -13,8 +17,13 @@ Invoke function delta
 ## SYNTAX
 
 ```
+<<<<<<< HEAD
 Get-MgBetaServicePrincipalDelta [-Count] [-Filter <String>] [-Property <String[]>] [-Search <String>]
  [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
+=======
+Get-MgBetaServicePrincipalDelta [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
+ [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+>>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb
 ```
 
 ## DESCRIPTION
@@ -23,7 +32,11 @@ Invoke function delta
 ## EXAMPLES
 
 ### EXAMPLE 1
+<<<<<<< HEAD
 ```
+=======
+```powershell
+>>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb
 Import-Module Microsoft.Graph.Beta.Applications
 Get-MgBetaServicePrincipalDelta
 ```

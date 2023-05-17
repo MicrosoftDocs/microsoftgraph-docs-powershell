@@ -14,8 +14,8 @@ Assign a tokenIssuancePolicy to an application.
 
 ### CreateExpanded (Default)
 ```
-New-MgApplicationTokenIssuancePolicyByRef -ApplicationId <String> [-AdditionalProperties <Hashtable>]
- [-OdataId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgApplicationTokenIssuancePolicyByRef -ApplicationId <String> -OdataId <String>
+ [-AdditionalProperties <Hashtable>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -26,8 +26,8 @@ New-MgApplicationTokenIssuancePolicyByRef -ApplicationId <String> -BodyParameter
 
 ### CreateViaIdentityExpanded
 ```
-New-MgApplicationTokenIssuancePolicyByRef -InputObject <IApplicationsIdentity>
- [-AdditionalProperties <Hashtable>] [-OdataId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgApplicationTokenIssuancePolicyByRef -InputObject <IApplicationsIdentity> -OdataId <String>
+ [-AdditionalProperties <Hashtable>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -123,7 +123,7 @@ Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False

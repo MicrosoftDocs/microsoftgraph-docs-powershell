@@ -1,3 +1,4 @@
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Restart-MgServicePrincipalsSynchronizationJob.md
 ---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
@@ -6,6 +7,16 @@ schema: 2.0.0
 ---
 
 # Restart-MgBetaServicePrincipalsSynchronizationJob
+=======
+﻿---
+external help file: Microsoft.Graph.Beta.Applications-help.xml
+Module Name: Microsoft.Graph.Beta.Applications
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/restart-mgbetaserviceprincipalsynchronizationjob
+schema: 2.0.0
+---
+
+# Restart-MgBetaServicePrincipalSynchronizationJob
+>>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Restart-MgServicePrincipalSynchronizationJob.md
 
 ## SYNOPSIS
 Restart a stopped synchronization job, forcing it to reprocess all the objects in the directory.
@@ -15,28 +26,44 @@ Optionally clears existing the synchronization state and previous errors.
 
 ### RestartExpanded (Default)
 ```
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Restart-MgServicePrincipalsSynchronizationJob.md
 Restart-MgBetaServicePrincipalsSynchronizationJob -ServicePrincipalId <String> -SynchronizationJobId <String>
+=======
+Restart-MgBetaServicePrincipalSynchronizationJob -ServicePrincipalId <String> -SynchronizationJobId <String>
+>>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Restart-MgServicePrincipalSynchronizationJob.md
  [-AdditionalProperties <Hashtable>] [-Criteria <IMicrosoftGraphSynchronizationJobRestartCriteria>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Restart
 ```
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Restart-MgServicePrincipalsSynchronizationJob.md
 Restart-MgBetaServicePrincipalsSynchronizationJob -ServicePrincipalId <String> -SynchronizationJobId <String>
+=======
+Restart-MgBetaServicePrincipalSynchronizationJob -ServicePrincipalId <String> -SynchronizationJobId <String>
+>>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Restart-MgServicePrincipalSynchronizationJob.md
  -BodyParameter <IPaths7MrbavServiceprincipalsServiceprincipalIdSynchronizationJobsSynchronizationjobIdMicrosoftGraphRestartPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### RestartViaIdentityExpanded
 ```
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Restart-MgServicePrincipalsSynchronizationJob.md
 Restart-MgBetaServicePrincipalsSynchronizationJob -InputObject <IApplicationsIdentity>
+=======
+Restart-MgBetaServicePrincipalSynchronizationJob -InputObject <IApplicationsIdentity>
+>>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Restart-MgServicePrincipalSynchronizationJob.md
  [-AdditionalProperties <Hashtable>] [-Criteria <IMicrosoftGraphSynchronizationJobRestartCriteria>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### RestartViaIdentity
 ```
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Restart-MgServicePrincipalsSynchronizationJob.md
 Restart-MgBetaServicePrincipalsSynchronizationJob -InputObject <IApplicationsIdentity>
+=======
+Restart-MgBetaServicePrincipalSynchronizationJob -InputObject <IApplicationsIdentity>
+>>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Restart-MgServicePrincipalSynchronizationJob.md
  -BodyParameter <IPaths7MrbavServiceprincipalsServiceprincipalIdSynchronizationJobsSynchronizationjobIdMicrosoftGraphRestartPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -48,6 +75,7 @@ Optionally clears existing the synchronization state and previous errors.
 ## EXAMPLES
 
 ### EXAMPLE 1
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Restart-MgServicePrincipalsSynchronizationJob.md
 ```
 {{ Add code here }}
 ```
@@ -57,6 +85,18 @@ Optionally clears existing the synchronization state and previous errors.
 {{ Add code here }}
 ```
 
+=======
+```powershell
+Import-Module Microsoft.Graph.Beta.Applications
+$params = @{
+	Criteria = @{
+		ResetScope = "Watermark, Escrows, QuarantineState"
+	}
+}
+Restart-MgBetaServicePrincipalSynchronizationJob -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId -BodyParameter $params
+```
+
+>>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Restart-MgServicePrincipalSynchronizationJob.md
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -220,6 +260,7 @@ BODYPARAMETER \<IPaths7MrbavServiceprincipalsServiceprincipalIdSynchronizationJo
     \[(Any) \<Object\>\]: This indicates any property can be added to this object.
     \[ResetScope \<String\>\]: synchronizationJobRestartScope
 
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Restart-MgServicePrincipalsSynchronizationJob.md
 CRITERIA \<IMicrosoftGraphSynchronizationJobRestartCriteria\>: synchronizationJobRestartCriteria
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[ResetScope \<String\>\]: synchronizationJobRestartScope
@@ -253,6 +294,47 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[TokenIssuancePolicyId \<String\>\]: The unique identifier of tokenIssuancePolicy
   \[TokenLifetimePolicyId \<String\>\]: The unique identifier of tokenLifetimePolicy
   \[UserId \<String\>\]: The unique identifier of user
+=======
+`BODYPARAMETER <IPaths7MrbavServiceprincipalsServiceprincipalIdSynchronizationJobsSynchronizationjobIdMicrosoftGraphRestartPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Criteria <IMicrosoftGraphSynchronizationJobRestartCriteria>]`: synchronizationJobRestartCriteria
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[ResetScope <String>]`: synchronizationJobRestartScope
+
+`CRITERIA <IMicrosoftGraphSynchronizationJobRestartCriteria>`: synchronizationJobRestartCriteria
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[ResetScope <String>]`: synchronizationJobRestartScope
+
+`INPUTOBJECT <IApplicationsIdentity>`: Identity Parameter
+  - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
+  - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
+  - `[ApplicationId <String>]`: The unique identifier of application
+  - `[ApplicationTemplateId <String>]`: The unique identifier of applicationTemplate
+  - `[ClaimsMappingPolicyId <String>]`: The unique identifier of claimsMappingPolicy
+  - `[ConnectorGroupId <String>]`: The unique identifier of connectorGroup
+  - `[ConnectorId <String>]`: The unique identifier of connector
+  - `[DelegatedPermissionClassificationId <String>]`: The unique identifier of delegatedPermissionClassification
+  - `[DirectoryDefinitionId <String>]`: The unique identifier of directoryDefinition
+  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
+  - `[EndpointId <String>]`: The unique identifier of endpoint
+  - `[ExtensionPropertyId <String>]`: The unique identifier of extensionProperty
+  - `[FederatedIdentityCredentialId <String>]`: The unique identifier of federatedIdentityCredential
+  - `[GroupId <String>]`: The unique identifier of group
+  - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
+  - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
+  - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
+  - `[OnPremisesAgentGroupId <String>]`: The unique identifier of onPremisesAgentGroup
+  - `[OnPremisesAgentGroupId1 <String>]`: The unique identifier of onPremisesAgentGroup
+  - `[OnPremisesAgentId <String>]`: The unique identifier of onPremisesAgent
+  - `[OnPremisesPublishingProfileId <String>]`: The unique identifier of onPremisesPublishingProfile
+  - `[PublishedResourceId <String>]`: The unique identifier of publishedResource
+  - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
+  - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
+  - `[SynchronizationTemplateId <String>]`: The unique identifier of synchronizationTemplate
+  - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
+  - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
+  - `[UserId <String>]`: The unique identifier of user
+>>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Restart-MgServicePrincipalSynchronizationJob.md
 
 ## RELATED LINKS
 

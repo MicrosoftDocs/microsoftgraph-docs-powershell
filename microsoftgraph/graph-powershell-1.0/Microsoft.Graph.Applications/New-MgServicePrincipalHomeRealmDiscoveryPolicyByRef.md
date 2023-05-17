@@ -14,8 +14,8 @@ Assign a homeRealmDiscoveryPolicy to a servicePrincipal.
 
 ### CreateExpanded (Default)
 ```
-New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef -ServicePrincipalId <String>
- [-AdditionalProperties <Hashtable>] [-OdataId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef -ServicePrincipalId <String> -OdataId <String>
+ [-AdditionalProperties <Hashtable>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -26,8 +26,8 @@ New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef -ServicePrincipalId <String>
 
 ### CreateViaIdentityExpanded
 ```
-New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef -InputObject <IApplicationsIdentity>
- [-AdditionalProperties <Hashtable>] [-OdataId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef -InputObject <IApplicationsIdentity> -OdataId <String>
+ [-AdditionalProperties <Hashtable>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -108,7 +108,7 @@ Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
