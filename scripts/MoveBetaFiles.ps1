@@ -52,6 +52,10 @@ function Move-Files {
             
         }
         }
+        git config --global user.email "timwamalwa@gmail.com"
+        git config --global user.name "Timothy Wamalwa"
+        git add .
+        git commit -m "Move MgBeta files"
     
 }
 
@@ -63,7 +67,25 @@ if ($ModulesToGenerate.Count -eq 0) {
     [HashTable] $ModuleMapping = Get-Content $ModuleMappingConfigPath | ConvertFrom-Json -AsHashTable
     $ModulesToGenerate = $ModuleMapping.Keys
 }
+Set-Location microsoftgraph-docs-powershell
+$date = Get-Date -Format "dd-MM-yyyy"
+$proposedBranch = "powershell_v2_$date"
+$exists = git branch -l $proposedBranch
+if ([string]::IsNullOrEmpty($exists)) {
+    git checkout -b $proposedBranch
+}else{
+	Write-Host "Branch already exists"
+     git checkout $proposedBranch
+}
+if (-not (Test-Path $ModuleMappingConfigPath)) {
+    Write-Error "Module mapping file not be found: $ModuleMappingConfigPath."
+}
+if ($ModulesToGenerate.Count -eq 0) {
+    [HashTable] $ModuleMapping = Get-Content $ModuleMappingConfigPath | ConvertFrom-Json -AsHashTable
+    $ModulesToGenerate = $ModuleMapping.Keys
+}
 
+Set-Location ..\microsoftgraph-docs-powershell
 Write-Host -ForegroundColor Green "-------------Mvoing files-------------"
 Start-Generator -ModulesToGenerate $ModulesToGenerate
 Write-Host -ForegroundColor Green "-------------Done-------------"
