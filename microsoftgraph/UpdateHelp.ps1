@@ -68,19 +68,6 @@ function Update-GraphHelpByProfile {
     $ModulesToGenerate | ForEach-Object {
         $ModuleName = $_
         Update-GraphModuleHelp -GraphProfile $GraphProfile -GraphProfilePath $GraphProfilePath -Module $ModuleName -ModulePrefix $ModulePrefix
-    $moduleImportName = "$ModulePrefix.$ModuleName"
-    $moduleDocsPath = Join-Path $PSScriptRoot ".\$GraphProfilePath\$moduleImportName"
-    if($GraphProfile -eq "beta"){
-        Get-ChildItem $moduleDocsPath -Recurse -File | ForEach-Object {
-            $OldFileName = [System.IO.Path]::GetFileName($_)
-            if($OldFileName.Contains("MgBeta")){
-                $OldDestination = Join-Path $destination $OldFileName
-                $NewDestination = Join-Path $destination $OldFileName.Replace("-MgBeta", "-Mg")
-                Move-Item $OldDestination -Destination $NewDestination
-            }
-            
-        }
-        }
     }
 }
 
