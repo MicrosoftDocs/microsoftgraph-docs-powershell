@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.Beta.Applications-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaonpremisepublishingprofileconnectorgroup
 schema: 2.0.0
@@ -17,15 +17,21 @@ Update the properties of a connectorGroup object.
 Update-MgBetaOnPremisePublishingProfileConnectorGroup -ConnectorGroupId <String>
  -OnPremisesPublishingProfileId <String> [-AdditionalProperties <Hashtable>]
  [-Applications <IMicrosoftGraphApplication[]>] [-ConnectorGroupType <String>] [-Id <String>] [-IsDefault]
- [-Members <IMicrosoftGraphConnector[]>] [-Name <String>] [-Region <String>] [-WhatIf] [-Confirm]
+ [-Members <IMicrosoftGraphConnector[]>] [-Name <String>] [-Region <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaOnPremisePublishingProfileConnectorGroup -ConnectorGroupId <String>
- -OnPremisesPublishingProfileId <String> -BodyParameter <IMicrosoftGraphConnectorGroup> [-WhatIf] [-Confirm]
+ -OnPremisesPublishingProfileId <String> -BodyParameter <IMicrosoftGraphConnectorGroup> [-Confirm] [-WhatIf]
  [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaOnPremisePublishingProfileConnectorGroup -InputObject <IApplicationsIdentity>
+ -BodyParameter <IMicrosoftGraphConnectorGroup> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -33,13 +39,7 @@ Update-MgBetaOnPremisePublishingProfileConnectorGroup -ConnectorGroupId <String>
 Update-MgBetaOnPremisePublishingProfileConnectorGroup -InputObject <IApplicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-Applications <IMicrosoftGraphApplication[]>]
  [-ConnectorGroupType <String>] [-Id <String>] [-IsDefault] [-Members <IMicrosoftGraphConnector[]>]
- [-Name <String>] [-Region <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaOnPremisePublishingProfileConnectorGroup -InputObject <IApplicationsIdentity>
- -BodyParameter <IMicrosoftGraphConnectorGroup> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Name <String>] [-Region <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -47,7 +47,7 @@ Update the properties of a connectorGroup object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 $params = @{
@@ -57,13 +57,15 @@ $params = @{
 Update-MgBetaOnPremisePublishingProfileConnectorGroup -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -ConnectorGroupId $connectorGroupId -BodyParameter $params
 ```
 
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -79,7 +81,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for APPLICATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphApplication[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphApplication[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -95,7 +97,7 @@ connectorGroup
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphConnectorGroup
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConnectorGroup
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -110,8 +112,8 @@ Accept wildcard characters: False
 The unique identifier of connectorGroup
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -125,7 +127,7 @@ Accept wildcard characters: False
 connectorGroupType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -141,7 +143,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -157,8 +159,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IApplicationsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -174,7 +176,7 @@ Only a single connector group can be the default connectorGroup and this is pre-
 Read-only.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -190,7 +192,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for MEMBERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphConnector[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConnector[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -205,7 +207,7 @@ Accept wildcard characters: False
 The name associated with the connectorGroup.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -220,8 +222,8 @@ Accept wildcard characters: False
 The unique identifier of onPremisesPublishingProfile
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -235,7 +237,7 @@ Accept wildcard characters: False
 connectorGroupRegion
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -250,7 +252,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -266,7 +268,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -283,10 +285,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConnectorGroup
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConnectorGroup
+
 ## NOTES
 
 ALIASES
@@ -1557,4 +1562,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
-## RELATED LINKS

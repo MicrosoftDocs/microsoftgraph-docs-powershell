@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.Beta.Applications-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalsynchronizationjobschema
 schema: 2.0.0
@@ -20,29 +20,29 @@ You must be the owner of the application.
 Update-MgBetaServicePrincipalSynchronizationJobSchema -ServicePrincipalId <String>
  -SynchronizationJobId <String> [-AdditionalProperties <Hashtable>]
  [-Directories <IMicrosoftGraphDirectoryDefinition[]>] [-Id <String>]
- [-SynchronizationRules <IMicrosoftGraphSynchronizationRule[]>] [-Version <String>] [-WhatIf] [-Confirm]
+ [-SynchronizationRules <IMicrosoftGraphSynchronizationRule[]>] [-Version <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaServicePrincipalSynchronizationJobSchema -ServicePrincipalId <String>
- -SynchronizationJobId <String> -BodyParameter <IMicrosoftGraphSynchronizationSchema> [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaServicePrincipalSynchronizationJobSchema -InputObject <IApplicationsIdentity>
- [-AdditionalProperties <Hashtable>] [-Directories <IMicrosoftGraphDirectoryDefinition[]>] [-Id <String>]
- [-SynchronizationRules <IMicrosoftGraphSynchronizationRule[]>] [-Version <String>] [-WhatIf] [-Confirm]
+ -SynchronizationJobId <String> -BodyParameter <IMicrosoftGraphSynchronizationSchema> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaServicePrincipalSynchronizationJobSchema -InputObject <IApplicationsIdentity>
- -BodyParameter <IMicrosoftGraphSynchronizationSchema> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSynchronizationSchema> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaServicePrincipalSynchronizationJobSchema -InputObject <IApplicationsIdentity>
+ [-AdditionalProperties <Hashtable>] [-Directories <IMicrosoftGraphDirectoryDefinition[]>] [-Id <String>]
+ [-SynchronizationRules <IMicrosoftGraphSynchronizationRule[]>] [-Version <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -53,14 +53,14 @@ You must be the owner of the application.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### EXAMPLE 2
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
@@ -73,7 +73,7 @@ You must be the owner of the application.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -89,7 +89,7 @@ synchronizationSchema
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSynchronizationSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSynchronizationSchema
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -105,7 +105,7 @@ Contains the collection of directories and all of their objects.
 To construct, see NOTES section for DIRECTORIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryDefinition[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryDefinition[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -121,7 +121,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -137,8 +137,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IApplicationsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -152,8 +152,8 @@ Accept wildcard characters: False
 The unique identifier of servicePrincipal
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -167,8 +167,8 @@ Accept wildcard characters: False
 The unique identifier of synchronizationJob
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -183,7 +183,7 @@ A collection of synchronization rules configured for the synchronizationJob or s
 To construct, see NOTES section for SYNCHRONIZATIONRULES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSynchronizationRule[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSynchronizationRule[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -198,7 +198,7 @@ Accept wildcard characters: False
 The version of the schema, updated automatically with every schema change.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -213,7 +213,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -229,7 +229,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -246,10 +246,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSynchronizationSchema
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSynchronizationSchema
+
 ## NOTES
 
 ALIASES
@@ -458,4 +461,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
-## RELATED LINKS
