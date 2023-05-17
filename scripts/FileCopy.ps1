@@ -73,14 +73,14 @@ function Copy-Files{
      if($GraphProfile -eq "beta"){
         Write-Host -ForegroundColor DarkYellow "Copying beta markdown files to " $destination
         Get-ChildItem $destination -Recurse -File | ForEach-Object {
-           Remove-Item $_           
+           Remove-Item $_ -Force          
         }
         Get-ChildItem $DocPath -Recurse -File | ForEach-Object {
             $OldFileName = [System.IO.Path]::GetFileName($_)
             $OldDestination = Join-Path $destination $OldFileName
             $NewDestination = Join-Path $destination $OldFileName.Replace("-MgBeta", "-Mg")
-            Copy-Item $_  -Destination $destination
-            Move-Item $OldDestination -Destination $NewDestination
+             Copy-Item $_  -Destination $destination
+             Move-Item $OldDestination -Destination $NewDestination
             if($OldFileName.Contains("Microsoft.Graph.Beta")){
                 $CommandListFileDestination = Join-Path $destination $OldFileName.Replace("Microsoft.Graph.Beta", "Microsoft.Graph")
                 Move-Item $OldDestination -Destination $CommandListFileDestination 
@@ -104,7 +104,7 @@ function Copy-Files{
 
 Set-Location microsoftgraph-docs-powershell
 $date = Get-Date -Format "dd-MM-yyyy"
-$proposedBranch = "weekly_update_help_files_"+$date
+$proposedBranch = "powershell_v2_$date"
 $exists = git branch -l $proposedBranch
 if ([string]::IsNullOrEmpty($exists)) {
     git checkout -b $proposedBranch
