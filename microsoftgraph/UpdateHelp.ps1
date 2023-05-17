@@ -125,7 +125,6 @@ if ($ModulesToGenerate.Count -eq 0) {
     [HashTable] $ModuleMapping = Get-Content $ModuleMappingConfigPath | ConvertFrom-Json -AsHashTable
     $ModulesToGenerate = $ModuleMapping.Keys
 }
-Set-Location ..\microsoftgraph-docs-powershell
 Update-GraphHelp -ModulesToGenerate $ModulesToGenerate
 
 Write-Host -ForegroundColor Green "-------------Done-------------"

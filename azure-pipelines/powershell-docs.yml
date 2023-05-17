@@ -61,14 +61,6 @@ jobs:
       pwsh: true
       filePath: microsoftgraph-docs-powershell\microsoftgraph\UpdateHelp.ps1
 
-  - task: PowerShell@2
-    displayName: 'Move Beta files'
-    continueOnError: false
-    inputs:
-      targetType: 'filePath'
-      pwsh: true
-      filePath: microsoftgraph-docs-powershell\scripts\MoveBetaFiles.ps1
-
   # - task: PowerShell@2
   #   displayName: 'Escape disallowed html tags'
   #   continueOnError: false
