@@ -88,7 +88,6 @@ function Update-GraphModuleHelp {
     $logsPath = Join-Path $PSScriptRoot ".\logs\$moduleImportName-$GraphProfile.txt"
 
     Import-Module $moduleImportName -RequiredVersion 2.0.0 -Force -Global
-    Select-MgProfile $GraphProfile
     Update-Help -ModuleDocsPath $moduleDocsPath -LogsPath $logsPath
 }
 
