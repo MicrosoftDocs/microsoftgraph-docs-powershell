@@ -16,6 +16,7 @@ function Get-GraphMapping {
 function Update-Help {
     param (
         [ValidateNotNullOrEmpty()]
+        [ValidateNotNullOrEmpty()]
         [string] $ModuleDocsPath,
         [ValidateNotNullOrEmpty()]
         [string] $LogsPath = (Join-Path $PSScriptRoot ".\logs\DocsGenerationLogs.txt")
@@ -31,6 +32,7 @@ function Update-Help {
         Encoding              = [System.Text.Encoding]::UTF8
     }
     Update-MarkdownHelpModule @generationParams
+
 }
 
 function Update-GraphHelp {
@@ -90,6 +92,17 @@ function Update-GraphModuleHelp {
 
     Import-Module $moduleImportName -RequiredVersion 2.0.0 -Force -Global
     Update-Help -ModuleDocsPath $moduleDocsPath -LogsPath $logsPath
+    if($GraphProfile -eq "beta"){
+        Get-ChildItem $DocPath -Recurse -File | ForEach-Object {
+            $OldFileName = [System.IO.Path]::GetFileName($_)
+            if($OldFileName.Contains("MgBeta")){
+                $OldDestination = Join-Path $destination $OldFileName
+                $NewDestination = Join-Path $destination $OldFileName.Replace("-MgBeta", "-Mg")
+                Move-Item $OldDestination -Destination $NewDestination
+            }
+            
+        }
+        }
 }
 
 # Install PlatyPS
