@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 ---
-=======
-﻿---
->>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationbyid
@@ -12,8 +8,7 @@ schema: 2.0.0
 # Get-MgBetaApplicationById
 
 ## SYNOPSIS
-Return the directory objects specified in a list of IDs.
-Some common uses for this function are to:
+Invoke action getByIds
 
 ## SYNTAX
 
@@ -31,17 +26,12 @@ Get-MgBetaApplicationById
 ```
 
 ## DESCRIPTION
-Return the directory objects specified in a list of IDs.
-Some common uses for this function are to:
+Invoke action getByIds
 
 ## EXAMPLES
 
 ### EXAMPLE 1
-<<<<<<< HEAD
 ```
-=======
-```powershell
->>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb
 Import-Module Microsoft.Graph.Beta.DirectoryObjects
 ```
 
@@ -170,18 +160,10 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-<<<<<<< HEAD
 BODYPARAMETER \<IPaths1Hl8AmeApplicationsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema\>: .
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[Ids \<String\[\]\>\]: 
   \[Types \<String\[\]\>\]:
-=======
-
-`BODYPARAMETER <IPaths1Hl8AmeApplicationsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Ids <String[]>]`: 
-  - `[Types <String[]>]`: 
->>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb
 
 ## RELATED LINKS
 

@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 ---
-=======
-﻿---
->>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationowner
@@ -34,11 +30,7 @@ Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count 
 ## EXAMPLES
 
 ### EXAMPLE 1
-<<<<<<< HEAD
 ```
-=======
-```powershell
->>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb
 Import-Module Microsoft.Graph.Beta.Applications
 Get-MgBetaApplicationOwner -ApplicationId $applicationId
 ```

@@ -1,14 +1,4 @@
-<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Test-MgServicePrincipalSynchronizationJobCredentials.md
 ---
-external help file: Microsoft.Graph.Beta.Applications-help.xml
-Module Name: Microsoft.Graph.Beta.Applications
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/test-mgbetaserviceprincipalsynchronizationjobcredentials
-schema: 2.0.0
----
-
-# Test-MgBetaServicePrincipalSynchronizationJobCredentials
-=======
-﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/test-mgbetaserviceprincipalsynchronizationjobcredential
@@ -16,20 +6,15 @@ schema: 2.0.0
 ---
 
 # Test-MgBetaServicePrincipalSynchronizationJobCredential
->>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Test-MgServicePrincipalSynchronizationJobCredential.md
 
 ## SYNOPSIS
-Validate that the credentials are valid in the tenant.
+Invoke action validateCredentials
 
 ## SYNTAX
 
 ### ValidateExpanded (Default)
 ```
-<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Test-MgServicePrincipalSynchronizationJobCredentials.md
-Test-MgBetaServicePrincipalSynchronizationJobCredentials -ServicePrincipalId <String>
-=======
 Test-MgBetaServicePrincipalSynchronizationJobCredential -ServicePrincipalId <String>
->>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Test-MgServicePrincipalSynchronizationJobCredential.md
  -SynchronizationJobId <String> [-AdditionalProperties <Hashtable>] [-ApplicationIdentifier <String>]
  [-Credentials <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>] [-TemplateId <String>]
  [-UseSavedCredentials] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -37,11 +22,7 @@ Test-MgBetaServicePrincipalSynchronizationJobCredential -ServicePrincipalId <Str
 
 ### Validate
 ```
-<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Test-MgServicePrincipalSynchronizationJobCredentials.md
-Test-MgBetaServicePrincipalSynchronizationJobCredentials -ServicePrincipalId <String>
-=======
 Test-MgBetaServicePrincipalSynchronizationJobCredential -ServicePrincipalId <String>
->>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Test-MgServicePrincipalSynchronizationJobCredential.md
  -SynchronizationJobId <String>
  -BodyParameter <IPaths3LjeyyServiceprincipalsServiceprincipalIdSynchronizationJobsSynchronizationjobIdMicrosoftGraphValidatecredentialsPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -49,11 +30,7 @@ Test-MgBetaServicePrincipalSynchronizationJobCredential -ServicePrincipalId <Str
 
 ### ValidateViaIdentityExpanded
 ```
-<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Test-MgServicePrincipalSynchronizationJobCredentials.md
-Test-MgBetaServicePrincipalSynchronizationJobCredentials -InputObject <IApplicationsIdentity>
-=======
 Test-MgBetaServicePrincipalSynchronizationJobCredential -InputObject <IApplicationsIdentity>
->>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Test-MgServicePrincipalSynchronizationJobCredential.md
  [-AdditionalProperties <Hashtable>] [-ApplicationIdentifier <String>]
  [-Credentials <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>] [-TemplateId <String>]
  [-UseSavedCredentials] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -61,46 +38,26 @@ Test-MgBetaServicePrincipalSynchronizationJobCredential -InputObject <IApplicati
 
 ### ValidateViaIdentity
 ```
-<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Test-MgServicePrincipalSynchronizationJobCredentials.md
-Test-MgBetaServicePrincipalSynchronizationJobCredentials -InputObject <IApplicationsIdentity>
-=======
 Test-MgBetaServicePrincipalSynchronizationJobCredential -InputObject <IApplicationsIdentity>
->>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Test-MgServicePrincipalSynchronizationJobCredential.md
  -BodyParameter <IPaths3LjeyyServiceprincipalsServiceprincipalIdSynchronizationJobsSynchronizationjobIdMicrosoftGraphValidatecredentialsPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Validate that the credentials are valid in the tenant.
+Invoke action validateCredentials
 
 ## EXAMPLES
 
 ### EXAMPLE 1
-<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Test-MgServicePrincipalSynchronizationJobCredentials.md
 ```
 {{ Add code here }}
 ```
-
-{{ Add output here }}
 
 ### EXAMPLE 2
 ```
 {{ Add code here }}
 ```
 
-{{ Add output here }}
-
-=======
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
->>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Test-MgServicePrincipalSynchronizationJobCredential.md
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -312,7 +269,6 @@ BODYPARAMETER \<IPaths3LjeyyServiceprincipalsServiceprincipalIdSynchronizationJo
   \[TemplateId \<String\>\]: 
   \[UseSavedCredentials \<Boolean?\>\]: 
 
-<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Test-MgServicePrincipalSynchronizationJobCredentials.md
 CREDENTIALS \<IMicrosoftGraphSynchronizationSecretKeyStringValuePair\[\]\>: .
   \[Key \<String\>\]: synchronizationSecret
   \[Value \<String\>\]: The value of the secret.
@@ -346,52 +302,8 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[TokenIssuancePolicyId \<String\>\]: The unique identifier of tokenIssuancePolicy
   \[TokenLifetimePolicyId \<String\>\]: The unique identifier of tokenLifetimePolicy
   \[UserId \<String\>\]: The unique identifier of user
-=======
-`BODYPARAMETER <IPaths3LjeyyServiceprincipalsServiceprincipalIdSynchronizationJobsSynchronizationjobIdMicrosoftGraphValidatecredentialsPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ApplicationIdentifier <String>]`: 
-  - `[Credentials <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>]`: 
-    - `[Key <String>]`: synchronizationSecret
-    - `[Value <String>]`: The value of the secret.
-  - `[TemplateId <String>]`: 
-  - `[UseSavedCredentials <Boolean?>]`: 
-
-`CREDENTIALS <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>`: .
-  - `[Key <String>]`: synchronizationSecret
-  - `[Value <String>]`: The value of the secret.
-
-`INPUTOBJECT <IApplicationsIdentity>`: Identity Parameter
-  - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
-  - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
-  - `[ApplicationId <String>]`: The unique identifier of application
-  - `[ApplicationTemplateId <String>]`: The unique identifier of applicationTemplate
-  - `[ClaimsMappingPolicyId <String>]`: The unique identifier of claimsMappingPolicy
-  - `[ConnectorGroupId <String>]`: The unique identifier of connectorGroup
-  - `[ConnectorId <String>]`: The unique identifier of connector
-  - `[DelegatedPermissionClassificationId <String>]`: The unique identifier of delegatedPermissionClassification
-  - `[DirectoryDefinitionId <String>]`: The unique identifier of directoryDefinition
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[EndpointId <String>]`: The unique identifier of endpoint
-  - `[ExtensionPropertyId <String>]`: The unique identifier of extensionProperty
-  - `[FederatedIdentityCredentialId <String>]`: The unique identifier of federatedIdentityCredential
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
-  - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
-  - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
-  - `[OnPremisesAgentGroupId <String>]`: The unique identifier of onPremisesAgentGroup
-  - `[OnPremisesAgentGroupId1 <String>]`: The unique identifier of onPremisesAgentGroup
-  - `[OnPremisesAgentId <String>]`: The unique identifier of onPremisesAgent
-  - `[OnPremisesPublishingProfileId <String>]`: The unique identifier of onPremisesPublishingProfile
-  - `[PublishedResourceId <String>]`: The unique identifier of publishedResource
-  - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
-  - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
-  - `[SynchronizationTemplateId <String>]`: The unique identifier of synchronizationTemplate
-  - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
-  - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
-  - `[UserId <String>]`: The unique identifier of user
->>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Test-MgServicePrincipalSynchronizationJobCredential.md
 
 ## RELATED LINKS
 
-[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/test-mgbetaserviceprincipalsynchronizationjobcredentials](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/test-mgbetaserviceprincipalsynchronizationjobcredentials)
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/test-mgbetaserviceprincipalsynchronizationjobcredential](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/test-mgbetaserviceprincipalsynchronizationjobcredential)
 

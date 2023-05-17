@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 ---
-=======
-﻿---
->>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/add-mgbetaapplicationkey
@@ -12,11 +8,7 @@ schema: 2.0.0
 # Add-MgBetaApplicationKey
 
 ## SYNOPSIS
-Add a key credential to an application.
-This method, along with removeKey, can be used by an application to automate rolling its expiring keys.
-As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
-Applications that don't have any existing valid certificates (no certificates have been added yet, or all certificates have expired), won't be able to use this service action.
-You can use the Update application operation to perform an update instead.
+Invoke action addKey
 
 ## SYNTAX
 
@@ -49,20 +41,12 @@ Add-MgBetaApplicationKey -InputObject <IApplicationsIdentity>
 ```
 
 ## DESCRIPTION
-Add a key credential to an application.
-This method, along with removeKey, can be used by an application to automate rolling its expiring keys.
-As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
-Applications that don't have any existing valid certificates (no certificates have been added yet, or all certificates have expired), won't be able to use this service action.
-You can use the Update application operation to perform an update instead.
+Invoke action addKey
 
 ## EXAMPLES
 
 ### EXAMPLE 1
-<<<<<<< HEAD
 ```
-=======
-```powershell
->>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb
 Import-Module Microsoft.Graph.Beta.Applications
 $params = @{
 	KeyCredential = @{
@@ -77,11 +61,7 @@ Add-MgBetaApplicationKey -ApplicationId $applicationId -BodyParameter $params
 ```
 
 ### EXAMPLE 2
-<<<<<<< HEAD
 ```
-=======
-```powershell
->>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb
 Import-Module Microsoft.Graph.Beta.Applications
 $params = @{
 	KeyCredential = @{
@@ -295,7 +275,6 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Optional.
   \[Proof \<String\>\]: 
 
-<<<<<<< HEAD
 INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[AppManagementPolicyId \<String\>\]: The unique identifier of appManagementPolicy
   \[AppRoleAssignmentId \<String\>\]: The unique identifier of appRoleAssignment
@@ -363,81 +342,6 @@ There is no way to retrieve this password in the future.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Optional.
-=======
-`BODYPARAMETER <IPaths17CrvdcApplicationsApplicationIdMicrosoftGraphAddkeyPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[KeyCredential <IMicrosoftGraphKeyCredential>]`: keyCredential
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[CustomKeyIdentifier <Byte[]>]`: A 40-character binary type that can be used to identify the credential. Optional. When not provided in the payload, defaults to the thumbprint of the certificate.
-    - `[DisplayName <String>]`: Friendly name for the key. Optional.
-    - `[EndDateTime <DateTime?>]`: The date and time at which the credential expires. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    - `[Key <Byte[]>]`: Value for the key credential. Should be a Base64 encoded value. Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it is always null.
-    - `[KeyId <String>]`: The unique identifier for the key.
-    - `[StartDateTime <DateTime?>]`: The date and time at which the credential becomes valid.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    - `[Type <String>]`: The type of key credential; for example, Symmetric, AsymmetricX509Cert, or X509CertAndPassword.
-    - `[Usage <String>]`: A string that describes the purpose for which the key can be used; for example, None​, Verify​, PairwiseIdentifier​, Delegation​, Decrypt​, Encrypt​, HashedIdentifier​, SelfSignedTls, or Sign. If usage is Sign​, the type should be X509CertAndPassword​, and the passwordCredentials​ for signing should be defined.
-  - `[PasswordCredential <IMicrosoftGraphPasswordCredential>]`: passwordCredential
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[CustomKeyIdentifier <Byte[]>]`: Do not use.
-    - `[DisplayName <String>]`: Friendly name for the password. Optional.
-    - `[EndDateTime <DateTime?>]`: The date and time at which the password expires represented using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Optional.
-    - `[Hint <String>]`: Contains the first three characters of the password. Read-only.
-    - `[KeyId <String>]`: The unique identifier for the password.
-    - `[SecretText <String>]`: Read-only; Contains the strong passwords generated by Azure AD that are 16-64 characters in length. The generated password value is only returned during the initial POST request to addPassword. There is no way to retrieve this password in the future.
-    - `[StartDateTime <DateTime?>]`: The date and time at which the password becomes valid. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Optional.
-  - `[Proof <String>]`: 
-
-`INPUTOBJECT <IApplicationsIdentity>`: Identity Parameter
-  - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
-  - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
-  - `[ApplicationId <String>]`: The unique identifier of application
-  - `[ApplicationTemplateId <String>]`: The unique identifier of applicationTemplate
-  - `[ClaimsMappingPolicyId <String>]`: The unique identifier of claimsMappingPolicy
-  - `[ConnectorGroupId <String>]`: The unique identifier of connectorGroup
-  - `[ConnectorId <String>]`: The unique identifier of connector
-  - `[DelegatedPermissionClassificationId <String>]`: The unique identifier of delegatedPermissionClassification
-  - `[DirectoryDefinitionId <String>]`: The unique identifier of directoryDefinition
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[EndpointId <String>]`: The unique identifier of endpoint
-  - `[ExtensionPropertyId <String>]`: The unique identifier of extensionProperty
-  - `[FederatedIdentityCredentialId <String>]`: The unique identifier of federatedIdentityCredential
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
-  - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
-  - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
-  - `[OnPremisesAgentGroupId <String>]`: The unique identifier of onPremisesAgentGroup
-  - `[OnPremisesAgentGroupId1 <String>]`: The unique identifier of onPremisesAgentGroup
-  - `[OnPremisesAgentId <String>]`: The unique identifier of onPremisesAgent
-  - `[OnPremisesPublishingProfileId <String>]`: The unique identifier of onPremisesPublishingProfile
-  - `[PublishedResourceId <String>]`: The unique identifier of publishedResource
-  - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
-  - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
-  - `[SynchronizationTemplateId <String>]`: The unique identifier of synchronizationTemplate
-  - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
-  - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
-  - `[UserId <String>]`: The unique identifier of user
-
-`KEYCREDENTIAL <IMicrosoftGraphKeyCredential>`: keyCredential
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CustomKeyIdentifier <Byte[]>]`: A 40-character binary type that can be used to identify the credential. Optional. When not provided in the payload, defaults to the thumbprint of the certificate.
-  - `[DisplayName <String>]`: Friendly name for the key. Optional.
-  - `[EndDateTime <DateTime?>]`: The date and time at which the credential expires. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[Key <Byte[]>]`: Value for the key credential. Should be a Base64 encoded value. Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it is always null.
-  - `[KeyId <String>]`: The unique identifier for the key.
-  - `[StartDateTime <DateTime?>]`: The date and time at which the credential becomes valid.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[Type <String>]`: The type of key credential; for example, Symmetric, AsymmetricX509Cert, or X509CertAndPassword.
-  - `[Usage <String>]`: A string that describes the purpose for which the key can be used; for example, None​, Verify​, PairwiseIdentifier​, Delegation​, Decrypt​, Encrypt​, HashedIdentifier​, SelfSignedTls, or Sign. If usage is Sign​, the type should be X509CertAndPassword​, and the passwordCredentials​ for signing should be defined.
-
-`PASSWORDCREDENTIAL <IMicrosoftGraphPasswordCredential>`: passwordCredential
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CustomKeyIdentifier <Byte[]>]`: Do not use.
-  - `[DisplayName <String>]`: Friendly name for the password. Optional.
-  - `[EndDateTime <DateTime?>]`: The date and time at which the password expires represented using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Optional.
-  - `[Hint <String>]`: Contains the first three characters of the password. Read-only.
-  - `[KeyId <String>]`: The unique identifier for the password.
-  - `[SecretText <String>]`: Read-only; Contains the strong passwords generated by Azure AD that are 16-64 characters in length. The generated password value is only returned during the initial POST request to addPassword. There is no way to retrieve this password in the future.
-  - `[StartDateTime <DateTime?>]`: The date and time at which the password becomes valid. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Optional.
->>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb
 
 ## RELATED LINKS
 

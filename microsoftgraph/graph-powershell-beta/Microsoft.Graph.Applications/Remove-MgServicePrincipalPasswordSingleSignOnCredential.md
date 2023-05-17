@@ -1,14 +1,4 @@
-<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Remove-MgServicePrincipalPasswordSingleSignOnCredentials.md
 ---
-external help file: Microsoft.Graph.Beta.Applications-help.xml
-Module Name: Microsoft.Graph.Beta.Applications
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalpasswordsinglesignoncredentials
-schema: 2.0.0
----
-
-# Remove-MgBetaServicePrincipalPasswordSingleSignOnCredentials
-=======
-﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalpasswordsinglesignoncredential
@@ -16,81 +6,53 @@ schema: 2.0.0
 ---
 
 # Remove-MgBetaServicePrincipalPasswordSingleSignOnCredential
->>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Remove-MgServicePrincipalPasswordSingleSignOnCredential.md
 
 ## SYNOPSIS
-Delete single sign-on credentials using a password for a user or group.
+Invoke action deletePasswordSingleSignOnCredentials
 
 ## SYNTAX
 
 ### DeleteExpanded (Default)
 ```
-<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Remove-MgServicePrincipalPasswordSingleSignOnCredentials.md
-Remove-MgBetaServicePrincipalPasswordSingleSignOnCredentials -ServicePrincipalId <String>
-=======
 Remove-MgBetaServicePrincipalPasswordSingleSignOnCredential -ServicePrincipalId <String>
->>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Remove-MgServicePrincipalPasswordSingleSignOnCredential.md
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Delete
 ```
-<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Remove-MgServicePrincipalPasswordSingleSignOnCredentials.md
-Remove-MgBetaServicePrincipalPasswordSingleSignOnCredentials -ServicePrincipalId <String>
-=======
 Remove-MgBetaServicePrincipalPasswordSingleSignOnCredential -ServicePrincipalId <String>
->>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Remove-MgServicePrincipalPasswordSingleSignOnCredential.md
  -BodyParameter <IPathsB2Zp6SServiceprincipalsServiceprincipalIdMicrosoftGraphDeletepasswordsinglesignoncredentialsPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentityExpanded
 ```
-<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Remove-MgServicePrincipalPasswordSingleSignOnCredentials.md
-Remove-MgBetaServicePrincipalPasswordSingleSignOnCredentials -InputObject <IApplicationsIdentity>
-=======
 Remove-MgBetaServicePrincipalPasswordSingleSignOnCredential -InputObject <IApplicationsIdentity>
->>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Remove-MgServicePrincipalPasswordSingleSignOnCredential.md
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Remove-MgServicePrincipalPasswordSingleSignOnCredentials.md
-Remove-MgBetaServicePrincipalPasswordSingleSignOnCredentials -InputObject <IApplicationsIdentity>
-=======
 Remove-MgBetaServicePrincipalPasswordSingleSignOnCredential -InputObject <IApplicationsIdentity>
->>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Remove-MgServicePrincipalPasswordSingleSignOnCredential.md
  -BodyParameter <IPathsB2Zp6SServiceprincipalsServiceprincipalIdMicrosoftGraphDeletepasswordsinglesignoncredentialsPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete single sign-on credentials using a password for a user or group.
+Invoke action deletePasswordSingleSignOnCredentials
 
 ## EXAMPLES
 
 ### EXAMPLE 1
-<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Remove-MgServicePrincipalPasswordSingleSignOnCredentials.md
 ```
-Import-Module Microsoft.Graph.Beta.Applications
-$params = @{
-	Id = "5793aa3b-cca9-4794-679a240f8b58"
-}
-Remove-MgBetaServicePrincipalPasswordSingleSignOnCredentials -ServicePrincipalId $servicePrincipalId -BodyParameter $params
-```
-
-=======
-```powershell
 {{ Add code here }}
 ```
 
 ### EXAMPLE 2
-```powershell
+```
 {{ Add code here }}
 ```
 
->>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Remove-MgServicePrincipalPasswordSingleSignOnCredential.md
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -236,7 +198,6 @@ BODYPARAMETER \<IPathsB2Zp6SServiceprincipalsServiceprincipalIdMicrosoftGraphDel
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[Id \<String\>\]: 
 
-<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Remove-MgServicePrincipalPasswordSingleSignOnCredentials.md
 INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[AppManagementPolicyId \<String\>\]: The unique identifier of appManagementPolicy
   \[AppRoleAssignmentId \<String\>\]: The unique identifier of appRoleAssignment
@@ -266,43 +227,8 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[TokenIssuancePolicyId \<String\>\]: The unique identifier of tokenIssuancePolicy
   \[TokenLifetimePolicyId \<String\>\]: The unique identifier of tokenLifetimePolicy
   \[UserId \<String\>\]: The unique identifier of user
-=======
-`BODYPARAMETER <IPathsB2Zp6SServiceprincipalsServiceprincipalIdMicrosoftGraphDeletepasswordsinglesignoncredentialsPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
-
-`INPUTOBJECT <IApplicationsIdentity>`: Identity Parameter
-  - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
-  - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
-  - `[ApplicationId <String>]`: The unique identifier of application
-  - `[ApplicationTemplateId <String>]`: The unique identifier of applicationTemplate
-  - `[ClaimsMappingPolicyId <String>]`: The unique identifier of claimsMappingPolicy
-  - `[ConnectorGroupId <String>]`: The unique identifier of connectorGroup
-  - `[ConnectorId <String>]`: The unique identifier of connector
-  - `[DelegatedPermissionClassificationId <String>]`: The unique identifier of delegatedPermissionClassification
-  - `[DirectoryDefinitionId <String>]`: The unique identifier of directoryDefinition
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[EndpointId <String>]`: The unique identifier of endpoint
-  - `[ExtensionPropertyId <String>]`: The unique identifier of extensionProperty
-  - `[FederatedIdentityCredentialId <String>]`: The unique identifier of federatedIdentityCredential
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
-  - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
-  - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
-  - `[OnPremisesAgentGroupId <String>]`: The unique identifier of onPremisesAgentGroup
-  - `[OnPremisesAgentGroupId1 <String>]`: The unique identifier of onPremisesAgentGroup
-  - `[OnPremisesAgentId <String>]`: The unique identifier of onPremisesAgent
-  - `[OnPremisesPublishingProfileId <String>]`: The unique identifier of onPremisesPublishingProfile
-  - `[PublishedResourceId <String>]`: The unique identifier of publishedResource
-  - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
-  - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
-  - `[SynchronizationTemplateId <String>]`: The unique identifier of synchronizationTemplate
-  - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
-  - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
-  - `[UserId <String>]`: The unique identifier of user
->>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Remove-MgServicePrincipalPasswordSingleSignOnCredential.md
 
 ## RELATED LINKS
 
-[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalpasswordsinglesignoncredentials](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalpasswordsinglesignoncredentials)
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalpasswordsinglesignoncredential](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalpasswordsinglesignoncredential)
 

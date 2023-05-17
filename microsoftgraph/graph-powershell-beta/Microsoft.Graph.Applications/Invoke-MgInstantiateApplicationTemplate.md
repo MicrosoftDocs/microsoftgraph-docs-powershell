@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 ---
-=======
-﻿---
->>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetainstantiateapplicationtemplate
@@ -12,13 +8,7 @@ schema: 2.0.0
 # Invoke-MgBetaInstantiateApplicationTemplate
 
 ## SYNOPSIS
-Add an instance of an application from the Azure AD application gallery into your directory.
-You can also use this API to instantiate non-gallery apps.
-<<<<<<< HEAD
-Use the following ID for the **applicationTemplate** object: \`8adf8e6e-67b2-4cf2-a259-e3dc5476c621\`.
-=======
-Use the following ID for the **applicationTemplate** object: `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.
->>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb
+Invoke action instantiate
 
 ## SYNTAX
 
@@ -49,22 +39,12 @@ Invoke-MgBetaInstantiateApplicationTemplate -InputObject <IApplicationsIdentity>
 ```
 
 ## DESCRIPTION
-Add an instance of an application from the Azure AD application gallery into your directory.
-You can also use this API to instantiate non-gallery apps.
-<<<<<<< HEAD
-Use the following ID for the **applicationTemplate** object: \`8adf8e6e-67b2-4cf2-a259-e3dc5476c621\`.
-=======
-Use the following ID for the **applicationTemplate** object: `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.
->>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb
+Invoke action instantiate
 
 ## EXAMPLES
 
 ### EXAMPLE 1
-<<<<<<< HEAD
 ```
-=======
-```powershell
->>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb
 Import-Module Microsoft.Graph.Beta.Applications
 $params = @{
 	DisplayName = "testProperties"
@@ -202,7 +182,6 @@ BODYPARAMETER \<IPathsCuokzfApplicationtemplatesApplicationtemplateIdMicrosoftGr
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[DisplayName \<String\>\]: 
 
-<<<<<<< HEAD
 INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[AppManagementPolicyId \<String\>\]: The unique identifier of appManagementPolicy
   \[AppRoleAssignmentId \<String\>\]: The unique identifier of appRoleAssignment
@@ -232,41 +211,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[TokenIssuancePolicyId \<String\>\]: The unique identifier of tokenIssuancePolicy
   \[TokenLifetimePolicyId \<String\>\]: The unique identifier of tokenLifetimePolicy
   \[UserId \<String\>\]: The unique identifier of user
-=======
-`BODYPARAMETER <IPathsCuokzfApplicationtemplatesApplicationtemplateIdMicrosoftGraphInstantiatePostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisplayName <String>]`: 
-
-`INPUTOBJECT <IApplicationsIdentity>`: Identity Parameter
-  - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
-  - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
-  - `[ApplicationId <String>]`: The unique identifier of application
-  - `[ApplicationTemplateId <String>]`: The unique identifier of applicationTemplate
-  - `[ClaimsMappingPolicyId <String>]`: The unique identifier of claimsMappingPolicy
-  - `[ConnectorGroupId <String>]`: The unique identifier of connectorGroup
-  - `[ConnectorId <String>]`: The unique identifier of connector
-  - `[DelegatedPermissionClassificationId <String>]`: The unique identifier of delegatedPermissionClassification
-  - `[DirectoryDefinitionId <String>]`: The unique identifier of directoryDefinition
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[EndpointId <String>]`: The unique identifier of endpoint
-  - `[ExtensionPropertyId <String>]`: The unique identifier of extensionProperty
-  - `[FederatedIdentityCredentialId <String>]`: The unique identifier of federatedIdentityCredential
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
-  - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
-  - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
-  - `[OnPremisesAgentGroupId <String>]`: The unique identifier of onPremisesAgentGroup
-  - `[OnPremisesAgentGroupId1 <String>]`: The unique identifier of onPremisesAgentGroup
-  - `[OnPremisesAgentId <String>]`: The unique identifier of onPremisesAgent
-  - `[OnPremisesPublishingProfileId <String>]`: The unique identifier of onPremisesPublishingProfile
-  - `[PublishedResourceId <String>]`: The unique identifier of publishedResource
-  - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
-  - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
-  - `[SynchronizationTemplateId <String>]`: The unique identifier of synchronizationTemplate
-  - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
-  - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
-  - `[UserId <String>]`: The unique identifier of user
->>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb
 
 ## RELATED LINKS
 

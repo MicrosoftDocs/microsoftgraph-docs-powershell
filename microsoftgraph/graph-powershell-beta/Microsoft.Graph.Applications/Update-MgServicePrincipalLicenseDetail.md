@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 ---
-=======
-﻿---
->>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipallicensedetail
@@ -48,22 +44,14 @@ Update the navigation property licenseDetails in servicePrincipals
 ## EXAMPLES
 
 ### EXAMPLE 1
-<<<<<<< HEAD
 ```
-=======
-```powershell
->>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
 ### EXAMPLE 2
-<<<<<<< HEAD
 ```
-=======
-```powershell
->>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb
 {{ Add code here }}
 ```
 
@@ -281,7 +269,6 @@ Read-only
 Equal to the skuPartNumber on the related SubscribedSku object; for example: 'AAD_Premium'.
 Read-only
 
-<<<<<<< HEAD
 INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[AppManagementPolicyId \<String\>\]: The unique identifier of appManagementPolicy
   \[AppRoleAssignmentId \<String\>\]: The unique identifier of appRoleAssignment
@@ -320,54 +307,6 @@ The possible values are:User - service plan can be assigned to individual users.
 The possible values are:Success - Service is fully provisioned.Disabled - Service has been disabled.ErrorStatus - The service plan has not been provisioned and is in an error state.PendingInput - Service is not yet provisioned; awaiting service confirmation.PendingActivation - Service is provisioned but requires explicit activation by administrator (for example, Intune_O365 service plan)PendingProvisioning - Microsoft has added a new service to the product SKU and it has not been activated in the tenant, yet.
   \[ServicePlanId \<String\>\]: The unique identifier of the service plan.
   \[ServicePlanName \<String\>\]: The name of the service plan.
-=======
-`BODYPARAMETER <IMicrosoftGraphLicenseDetails>`: licenseDetails
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[ServicePlans <IMicrosoftGraphServicePlanInfo[]>]`: Information about the service plans assigned with the license. Read-only, Not nullable
-    - `[AppliesTo <String>]`: The object the service plan can be assigned to. The possible values are:User - service plan can be assigned to individual users.Company - service plan can be assigned to the entire tenant.
-    - `[ProvisioningStatus <String>]`: The provisioning status of the service plan. The possible values are:Success - Service is fully provisioned.Disabled - Service has been disabled.ErrorStatus - The service plan has not been provisioned and is in an error state.PendingInput - Service is not yet provisioned; awaiting service confirmation.PendingActivation - Service is provisioned but requires explicit activation by administrator (for example, Intune_O365 service plan)PendingProvisioning - Microsoft has added a new service to the product SKU and it has not been activated in the tenant, yet.
-    - `[ServicePlanId <String>]`: The unique identifier of the service plan.
-    - `[ServicePlanName <String>]`: The name of the service plan.
-  - `[SkuId <String>]`: Unique identifier (GUID) for the service SKU. Equal to the skuId property on the related SubscribedSku object. Read-only
-  - `[SkuPartNumber <String>]`: Unique SKU display name. Equal to the skuPartNumber on the related SubscribedSku object; for example: 'AAD_Premium'. Read-only
-
-`INPUTOBJECT <IApplicationsIdentity>`: Identity Parameter
-  - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
-  - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
-  - `[ApplicationId <String>]`: The unique identifier of application
-  - `[ApplicationTemplateId <String>]`: The unique identifier of applicationTemplate
-  - `[ClaimsMappingPolicyId <String>]`: The unique identifier of claimsMappingPolicy
-  - `[ConnectorGroupId <String>]`: The unique identifier of connectorGroup
-  - `[ConnectorId <String>]`: The unique identifier of connector
-  - `[DelegatedPermissionClassificationId <String>]`: The unique identifier of delegatedPermissionClassification
-  - `[DirectoryDefinitionId <String>]`: The unique identifier of directoryDefinition
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[EndpointId <String>]`: The unique identifier of endpoint
-  - `[ExtensionPropertyId <String>]`: The unique identifier of extensionProperty
-  - `[FederatedIdentityCredentialId <String>]`: The unique identifier of federatedIdentityCredential
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
-  - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
-  - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
-  - `[OnPremisesAgentGroupId <String>]`: The unique identifier of onPremisesAgentGroup
-  - `[OnPremisesAgentGroupId1 <String>]`: The unique identifier of onPremisesAgentGroup
-  - `[OnPremisesAgentId <String>]`: The unique identifier of onPremisesAgent
-  - `[OnPremisesPublishingProfileId <String>]`: The unique identifier of onPremisesPublishingProfile
-  - `[PublishedResourceId <String>]`: The unique identifier of publishedResource
-  - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
-  - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
-  - `[SynchronizationTemplateId <String>]`: The unique identifier of synchronizationTemplate
-  - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
-  - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
-  - `[UserId <String>]`: The unique identifier of user
-
-`SERVICEPLANS <IMicrosoftGraphServicePlanInfo[]>`: Information about the service plans assigned with the license. Read-only, Not nullable
-  - `[AppliesTo <String>]`: The object the service plan can be assigned to. The possible values are:User - service plan can be assigned to individual users.Company - service plan can be assigned to the entire tenant.
-  - `[ProvisioningStatus <String>]`: The provisioning status of the service plan. The possible values are:Success - Service is fully provisioned.Disabled - Service has been disabled.ErrorStatus - The service plan has not been provisioned and is in an error state.PendingInput - Service is not yet provisioned; awaiting service confirmation.PendingActivation - Service is provisioned but requires explicit activation by administrator (for example, Intune_O365 service plan)PendingProvisioning - Microsoft has added a new service to the product SKU and it has not been activated in the tenant, yet.
-  - `[ServicePlanId <String>]`: The unique identifier of the service plan.
-  - `[ServicePlanName <String>]`: The name of the service plan.
->>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb
 
 ## RELATED LINKS
 

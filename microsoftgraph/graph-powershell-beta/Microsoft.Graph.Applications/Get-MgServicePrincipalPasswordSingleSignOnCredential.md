@@ -1,14 +1,4 @@
-<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Get-MgServicePrincipalPasswordSingleSignOnCredentials.md
 ---
-external help file: Microsoft.Graph.Beta.Applications-help.xml
-Module Name: Microsoft.Graph.Beta.Applications
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalpasswordsinglesignoncredentials
-schema: 2.0.0
----
-
-# Get-MgBetaServicePrincipalPasswordSingleSignOnCredentials
-=======
-﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalpasswordsinglesignoncredential
@@ -16,81 +6,53 @@ schema: 2.0.0
 ---
 
 # Get-MgBetaServicePrincipalPasswordSingleSignOnCredential
->>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Get-MgServicePrincipalPasswordSingleSignOnCredential.md
 
 ## SYNOPSIS
-Get a list of single sign-on credentials using a password for a user or group.
+Invoke action getPasswordSingleSignOnCredentials
 
 ## SYNTAX
 
 ### GetExpanded (Default)
 ```
-<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Get-MgServicePrincipalPasswordSingleSignOnCredentials.md
-Get-MgBetaServicePrincipalPasswordSingleSignOnCredentials -ServicePrincipalId <String>
-=======
 Get-MgBetaServicePrincipalPasswordSingleSignOnCredential -ServicePrincipalId <String>
->>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Get-MgServicePrincipalPasswordSingleSignOnCredential.md
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Get
 ```
-<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Get-MgServicePrincipalPasswordSingleSignOnCredentials.md
-Get-MgBetaServicePrincipalPasswordSingleSignOnCredentials -ServicePrincipalId <String>
-=======
 Get-MgBetaServicePrincipalPasswordSingleSignOnCredential -ServicePrincipalId <String>
->>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Get-MgServicePrincipalPasswordSingleSignOnCredential.md
  -BodyParameter <IPathsY2DqcyServiceprincipalsServiceprincipalIdMicrosoftGraphGetpasswordsinglesignoncredentialsPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### GetViaIdentityExpanded
 ```
-<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Get-MgServicePrincipalPasswordSingleSignOnCredentials.md
-Get-MgBetaServicePrincipalPasswordSingleSignOnCredentials -InputObject <IApplicationsIdentity>
-=======
 Get-MgBetaServicePrincipalPasswordSingleSignOnCredential -InputObject <IApplicationsIdentity>
->>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Get-MgServicePrincipalPasswordSingleSignOnCredential.md
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Get-MgServicePrincipalPasswordSingleSignOnCredentials.md
-Get-MgBetaServicePrincipalPasswordSingleSignOnCredentials -InputObject <IApplicationsIdentity>
-=======
 Get-MgBetaServicePrincipalPasswordSingleSignOnCredential -InputObject <IApplicationsIdentity>
->>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Get-MgServicePrincipalPasswordSingleSignOnCredential.md
  -BodyParameter <IPathsY2DqcyServiceprincipalsServiceprincipalIdMicrosoftGraphGetpasswordsinglesignoncredentialsPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get a list of single sign-on credentials using a password for a user or group.
+Invoke action getPasswordSingleSignOnCredentials
 
 ## EXAMPLES
 
 ### EXAMPLE 1
-<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Get-MgServicePrincipalPasswordSingleSignOnCredentials.md
 ```
-Import-Module Microsoft.Graph.Beta.Applications
-$params = @{
-	Id = "5793aa3b-cca9-4794-679a240f8b58"
-}
-Get-MgBetaServicePrincipalPasswordSingleSignOnCredentials -ServicePrincipalId $servicePrincipalId -BodyParameter $params
-```
-
-=======
-```powershell
 {{ Add code here }}
 ```
 
 ### EXAMPLE 2
-```powershell
+```
 {{ Add code here }}
 ```
 
->>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Get-MgServicePrincipalPasswordSingleSignOnCredential.md
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -221,7 +183,6 @@ BODYPARAMETER \<IPathsY2DqcyServiceprincipalsServiceprincipalIdMicrosoftGraphGet
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
   \[Id \<String\>\]: 
 
-<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Get-MgServicePrincipalPasswordSingleSignOnCredentials.md
 INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[AppManagementPolicyId \<String\>\]: The unique identifier of appManagementPolicy
   \[AppRoleAssignmentId \<String\>\]: The unique identifier of appRoleAssignment
@@ -251,43 +212,8 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[TokenIssuancePolicyId \<String\>\]: The unique identifier of tokenIssuancePolicy
   \[TokenLifetimePolicyId \<String\>\]: The unique identifier of tokenLifetimePolicy
   \[UserId \<String\>\]: The unique identifier of user
-=======
-`BODYPARAMETER <IPathsY2DqcyServiceprincipalsServiceprincipalIdMicrosoftGraphGetpasswordsinglesignoncredentialsPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
-
-`INPUTOBJECT <IApplicationsIdentity>`: Identity Parameter
-  - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
-  - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
-  - `[ApplicationId <String>]`: The unique identifier of application
-  - `[ApplicationTemplateId <String>]`: The unique identifier of applicationTemplate
-  - `[ClaimsMappingPolicyId <String>]`: The unique identifier of claimsMappingPolicy
-  - `[ConnectorGroupId <String>]`: The unique identifier of connectorGroup
-  - `[ConnectorId <String>]`: The unique identifier of connector
-  - `[DelegatedPermissionClassificationId <String>]`: The unique identifier of delegatedPermissionClassification
-  - `[DirectoryDefinitionId <String>]`: The unique identifier of directoryDefinition
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[EndpointId <String>]`: The unique identifier of endpoint
-  - `[ExtensionPropertyId <String>]`: The unique identifier of extensionProperty
-  - `[FederatedIdentityCredentialId <String>]`: The unique identifier of federatedIdentityCredential
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
-  - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
-  - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
-  - `[OnPremisesAgentGroupId <String>]`: The unique identifier of onPremisesAgentGroup
-  - `[OnPremisesAgentGroupId1 <String>]`: The unique identifier of onPremisesAgentGroup
-  - `[OnPremisesAgentId <String>]`: The unique identifier of onPremisesAgent
-  - `[OnPremisesPublishingProfileId <String>]`: The unique identifier of onPremisesPublishingProfile
-  - `[PublishedResourceId <String>]`: The unique identifier of publishedResource
-  - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
-  - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
-  - `[SynchronizationTemplateId <String>]`: The unique identifier of synchronizationTemplate
-  - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
-  - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
-  - `[UserId <String>]`: The unique identifier of user
->>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Get-MgServicePrincipalPasswordSingleSignOnCredential.md
 
 ## RELATED LINKS
 
-[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalpasswordsinglesignoncredentials](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalpasswordsinglesignoncredentials)
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalpasswordsinglesignoncredential](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalpasswordsinglesignoncredential)
 

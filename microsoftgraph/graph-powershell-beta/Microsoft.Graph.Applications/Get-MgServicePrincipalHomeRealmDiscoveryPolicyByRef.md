@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 ---
-=======
-﻿---
->>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalhomerealmdiscoverypolicybyref
@@ -12,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef
 
 ## SYNOPSIS
-List the homeRealmDiscoveryPolicy objects that are assigned to a servicePrincipal.
+The homeRealmDiscoveryPolicies assigned to this service principal.
+Supports $expand.
 
 ## SYNTAX
 
@@ -23,16 +20,13 @@ Get-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef -ServicePrincipalId <Str
 ```
 
 ## DESCRIPTION
-List the homeRealmDiscoveryPolicy objects that are assigned to a servicePrincipal.
+The homeRealmDiscoveryPolicies assigned to this service principal.
+Supports $expand.
 
 ## EXAMPLES
 
 ### EXAMPLE 1
-<<<<<<< HEAD
 ```
-=======
-```powershell
->>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb
 Import-Module Microsoft.Graph.Beta.Applications
 ```
 

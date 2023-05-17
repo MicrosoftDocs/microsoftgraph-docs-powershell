@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 ---
-=======
-﻿---
->>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaapplicationextensionproperty
@@ -20,11 +16,7 @@ Update the navigation property extensionProperties in applications
 ```
 Update-MgBetaApplicationExtensionProperty -ApplicationId <String> -ExtensionPropertyId <String>
  [-AdditionalProperties <Hashtable>] [-AppDisplayName <String>] [-DataType <String>]
-<<<<<<< HEAD
- [-DeletedDateTime <DateTime>] [-Id <String>] [-IsSyncedFromOnPremises] [-Name <String>]
-=======
  [-DeletedDateTime <DateTime>] [-Id <String>] [-IsMultiValued] [-IsSyncedFromOnPremises] [-Name <String>]
->>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb
  [-TargetObjects <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -38,11 +30,7 @@ Update-MgBetaApplicationExtensionProperty -ApplicationId <String> -ExtensionProp
 ```
 Update-MgBetaApplicationExtensionProperty -InputObject <IApplicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-AppDisplayName <String>] [-DataType <String>]
-<<<<<<< HEAD
- [-DeletedDateTime <DateTime>] [-Id <String>] [-IsSyncedFromOnPremises] [-Name <String>]
-=======
  [-DeletedDateTime <DateTime>] [-Id <String>] [-IsMultiValued] [-IsSyncedFromOnPremises] [-Name <String>]
->>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb
  [-TargetObjects <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -58,22 +46,14 @@ Update the navigation property extensionProperties in applications
 ## EXAMPLES
 
 ### EXAMPLE 1
-<<<<<<< HEAD
 ```
-=======
-```powershell
->>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
 ### EXAMPLE 2
-<<<<<<< HEAD
 ```
-=======
-```powershell
->>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb
 {{ Add code here }}
 ```
 
@@ -225,6 +205,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -IsMultiValued
+.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -IsSyncedFromOnPremises
 Indicates if this extension property was synced from on-premises active directory using Azure AD Connect.
 Read-only.
@@ -335,6 +330,7 @@ Following values are supported.
 Not nullable.
 Binary - 256 bytes maximumBooleanDateTime - Must be specified in ISO 8601 format.
 Will be stored in UTC.Integer - 32-bit value.LargeInteger - 64-bit value.String - 256 characters maximum
+  \[IsMultiValued \<Boolean?\>\]: 
   \[IsSyncedFromOnPremises \<Boolean?\>\]: Indicates if this extension property was synced from on-premises active directory using Azure AD Connect.
 Read-only.
   \[Name \<String\>\]: Name of the extension property.
@@ -344,7 +340,6 @@ Supports $filter (eq).
 Not nullable.
 UserGroupAdministrativeUnitApplicationDeviceOrganization
 
-<<<<<<< HEAD
 INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[AppManagementPolicyId \<String\>\]: The unique identifier of appManagementPolicy
   \[AppRoleAssignmentId \<String\>\]: The unique identifier of appRoleAssignment
@@ -374,48 +369,6 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[TokenIssuancePolicyId \<String\>\]: The unique identifier of tokenIssuancePolicy
   \[TokenLifetimePolicyId \<String\>\]: The unique identifier of tokenLifetimePolicy
   \[UserId \<String\>\]: The unique identifier of user
-=======
-`BODYPARAMETER <IMicrosoftGraphExtensionProperty>`: extensionProperty
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[AppDisplayName <String>]`: Display name of the application object on which this extension property is defined. Read-only.
-  - `[DataType <String>]`: Specifies the data type of the value the extension property can hold. Following values are supported. Not nullable. Binary - 256 bytes maximumBooleanDateTime - Must be specified in ISO 8601 format. Will be stored in UTC.Integer - 32-bit value.LargeInteger - 64-bit value.String - 256 characters maximum
-  - `[IsMultiValued <Boolean?>]`: 
-  - `[IsSyncedFromOnPremises <Boolean?>]`: Indicates if this extension property was synced from on-premises active directory using Azure AD Connect. Read-only.
-  - `[Name <String>]`: Name of the extension property. Not nullable. Supports $filter (eq).
-  - `[TargetObjects <String[]>]`: Following values are supported. Not nullable. UserGroupAdministrativeUnitApplicationDeviceOrganization
-
-`INPUTOBJECT <IApplicationsIdentity>`: Identity Parameter
-  - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
-  - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
-  - `[ApplicationId <String>]`: The unique identifier of application
-  - `[ApplicationTemplateId <String>]`: The unique identifier of applicationTemplate
-  - `[ClaimsMappingPolicyId <String>]`: The unique identifier of claimsMappingPolicy
-  - `[ConnectorGroupId <String>]`: The unique identifier of connectorGroup
-  - `[ConnectorId <String>]`: The unique identifier of connector
-  - `[DelegatedPermissionClassificationId <String>]`: The unique identifier of delegatedPermissionClassification
-  - `[DirectoryDefinitionId <String>]`: The unique identifier of directoryDefinition
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[EndpointId <String>]`: The unique identifier of endpoint
-  - `[ExtensionPropertyId <String>]`: The unique identifier of extensionProperty
-  - `[FederatedIdentityCredentialId <String>]`: The unique identifier of federatedIdentityCredential
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
-  - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
-  - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
-  - `[OnPremisesAgentGroupId <String>]`: The unique identifier of onPremisesAgentGroup
-  - `[OnPremisesAgentGroupId1 <String>]`: The unique identifier of onPremisesAgentGroup
-  - `[OnPremisesAgentId <String>]`: The unique identifier of onPremisesAgent
-  - `[OnPremisesPublishingProfileId <String>]`: The unique identifier of onPremisesPublishingProfile
-  - `[PublishedResourceId <String>]`: The unique identifier of publishedResource
-  - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
-  - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
-  - `[SynchronizationTemplateId <String>]`: The unique identifier of synchronizationTemplate
-  - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
-  - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
-  - `[UserId <String>]`: The unique identifier of user
->>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb
 
 ## RELATED LINKS
 

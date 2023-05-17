@@ -1,14 +1,4 @@
-<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Ping-MgServicePrincipalsSynchronization.md
 ---
-external help file: Microsoft.Graph.Beta.Applications-help.xml
-Module Name: Microsoft.Graph.Beta.Applications
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/ping-mgbetaserviceprincipalssynchronization
-schema: 2.0.0
----
-
-# Ping-MgBetaServicePrincipalsSynchronization
-=======
-﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/ping-mgbetaserviceprincipalsynchronization
@@ -16,7 +6,6 @@ schema: 2.0.0
 ---
 
 # Ping-MgBetaServicePrincipalSynchronization
->>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Ping-MgServicePrincipalSynchronization.md
 
 ## SYNOPSIS
 Invoke function Ping
@@ -25,20 +14,12 @@ Invoke function Ping
 
 ### Ping (Default)
 ```
-<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Ping-MgServicePrincipalsSynchronization.md
-Ping-MgBetaServicePrincipalsSynchronization -ServicePrincipalId <String> [<CommonParameters>]
-=======
 Ping-MgBetaServicePrincipalSynchronization -ServicePrincipalId <String> [<CommonParameters>]
->>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Ping-MgServicePrincipalSynchronization.md
 ```
 
 ### PingViaIdentity
 ```
-<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Ping-MgServicePrincipalsSynchronization.md
-Ping-MgBetaServicePrincipalsSynchronization -InputObject <IApplicationsIdentity> [<CommonParameters>]
-=======
 Ping-MgBetaServicePrincipalSynchronization -InputObject <IApplicationsIdentity> [<CommonParameters>]
->>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Ping-MgServicePrincipalSynchronization.md
 ```
 
 ## DESCRIPTION
@@ -47,31 +28,15 @@ Invoke function Ping
 ## EXAMPLES
 
 ### EXAMPLE 1
-<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Ping-MgServicePrincipalsSynchronization.md
 ```
 {{ Add code here }}
 ```
-
-{{ Add output here }}
 
 ### EXAMPLE 2
 ```
 {{ Add code here }}
 ```
 
-{{ Add output here }}
-
-=======
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
->>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Ping-MgServicePrincipalSynchronization.md
 ## PARAMETERS
 
 ### -InputObject
@@ -120,7 +85,6 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Ping-MgServicePrincipalsSynchronization.md
 INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[AppManagementPolicyId \<String\>\]: The unique identifier of appManagementPolicy
   \[AppRoleAssignmentId \<String\>\]: The unique identifier of appRoleAssignment
@@ -150,40 +114,8 @@ INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
   \[TokenIssuancePolicyId \<String\>\]: The unique identifier of tokenIssuancePolicy
   \[TokenLifetimePolicyId \<String\>\]: The unique identifier of tokenLifetimePolicy
   \[UserId \<String\>\]: The unique identifier of user
-=======
-
-`INPUTOBJECT <IApplicationsIdentity>`: Identity Parameter
-  - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
-  - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
-  - `[ApplicationId <String>]`: The unique identifier of application
-  - `[ApplicationTemplateId <String>]`: The unique identifier of applicationTemplate
-  - `[ClaimsMappingPolicyId <String>]`: The unique identifier of claimsMappingPolicy
-  - `[ConnectorGroupId <String>]`: The unique identifier of connectorGroup
-  - `[ConnectorId <String>]`: The unique identifier of connector
-  - `[DelegatedPermissionClassificationId <String>]`: The unique identifier of delegatedPermissionClassification
-  - `[DirectoryDefinitionId <String>]`: The unique identifier of directoryDefinition
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[EndpointId <String>]`: The unique identifier of endpoint
-  - `[ExtensionPropertyId <String>]`: The unique identifier of extensionProperty
-  - `[FederatedIdentityCredentialId <String>]`: The unique identifier of federatedIdentityCredential
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
-  - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
-  - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
-  - `[OnPremisesAgentGroupId <String>]`: The unique identifier of onPremisesAgentGroup
-  - `[OnPremisesAgentGroupId1 <String>]`: The unique identifier of onPremisesAgentGroup
-  - `[OnPremisesAgentId <String>]`: The unique identifier of onPremisesAgent
-  - `[OnPremisesPublishingProfileId <String>]`: The unique identifier of onPremisesPublishingProfile
-  - `[PublishedResourceId <String>]`: The unique identifier of publishedResource
-  - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
-  - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
-  - `[SynchronizationTemplateId <String>]`: The unique identifier of synchronizationTemplate
-  - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
-  - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
-  - `[UserId <String>]`: The unique identifier of user
->>>>>>> c089a4799335a08bc33ee7f48b9a8623559a5adb:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Ping-MgServicePrincipalSynchronization.md
 
 ## RELATED LINKS
 
-[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/ping-mgbetaserviceprincipalssynchronization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/ping-mgbetaserviceprincipalssynchronization)
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/ping-mgbetaserviceprincipalsynchronization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/ping-mgbetaserviceprincipalsynchronization)
 
