@@ -1,51 +1,58 @@
 ---
-external help file: Microsoft.Graph.Applications-help.xml
-Module Name: Microsoft.Graph.Applications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/start-mgserviceprincipalsynchronizationjob
+external help file:
+Module Name: Microsoft.Graph.Beta.Applications
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/start-mgbetaserviceprincipalsynchronizationjob
 schema: 2.0.0
 ---
 
-# Start-MgServicePrincipalSynchronizationJob
+# Start-MgBetaServicePrincipalSynchronizationJob
 
 ## SYNOPSIS
-Invoke action start
+Start an existing synchronization job.
+If the job is in a paused state, it will continue processing changes from the point where it was paused.
+If the job is in quarantine, the quarantine status will be cleared.
+Do not create scripts to call the start job continuously while it's running because that can cause the service to stop running.
+Use the start job only when the job is currently paused or in quarantine.
 
 ## SYNTAX
 
 ### Start (Default)
 ```
-Start-MgServicePrincipalSynchronizationJob -ServicePrincipalId <String> -SynchronizationJobId <String>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Start-MgBetaServicePrincipalSynchronizationJob -ServicePrincipalId <String> -SynchronizationJobId <String>
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### StartViaIdentity
 ```
-Start-MgServicePrincipalSynchronizationJob -InputObject <IApplicationsIdentity> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Start-MgBetaServicePrincipalSynchronizationJob -InputObject <IApplicationsIdentity> [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke action start
+Start an existing synchronization job.
+If the job is in a paused state, it will continue processing changes from the point where it was paused.
+If the job is in quarantine, the quarantine status will be cleared.
+Do not create scripts to call the start job continuously while it's running because that can cause the service to stop running.
+Use the start job only when the job is currently paused or in quarantine.
 
 ## EXAMPLES
 
-### Example 1: Using the Start-MgServicePrincipalSynchronizationJob Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Applications
-Start-MgServicePrincipalSynchronizationJob -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId
+Import-Module Microsoft.Graph.Beta.Applications
+Start-MgBetaServicePrincipalSynchronizationJob -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId
 ```
 
-This example shows how to use the Start-MgServicePrincipalSynchronizationJob Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IApplicationsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
 Parameter Sets: StartViaIdentity
 Aliases:
 
@@ -60,7 +67,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -75,7 +82,7 @@ Accept wildcard characters: False
 The unique identifier of servicePrincipal
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Start
 Aliases:
 
@@ -90,7 +97,7 @@ Accept wildcard characters: False
 The unique identifier of synchronizationJob
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Start
 Aliases:
 
@@ -105,7 +112,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -121,7 +128,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -137,10 +144,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -150,7 +159,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+`INPUTOBJECT <IApplicationsIdentity>`: Identity Parameter
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
   - `[ApplicationId <String>]`: The unique identifier of application
@@ -181,3 +190,4 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
