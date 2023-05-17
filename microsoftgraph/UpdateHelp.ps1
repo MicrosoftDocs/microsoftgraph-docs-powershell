@@ -68,6 +68,19 @@ function Update-GraphHelpByProfile {
     $ModulesToGenerate | ForEach-Object {
         $ModuleName = $_
         Update-GraphModuleHelp -GraphProfile $GraphProfile -GraphProfilePath $GraphProfilePath -Module $ModuleName -ModulePrefix $ModulePrefix
+    $moduleImportName = "$ModulePrefix.$ModuleName"
+    $moduleDocsPath = Join-Path $PSScriptRoot ".\$GraphProfilePath\$moduleImportName"
+    if($GraphProfile -eq "beta"){
+        Get-ChildItem $moduleDocsPath -Recurse -File | ForEach-Object {
+            $OldFileName = [System.IO.Path]::GetFileName($_)
+            if($OldFileName.Contains("MgBeta")){
+                $OldDestination = Join-Path $destination $OldFileName
+                $NewDestination = Join-Path $destination $OldFileName.Replace("-MgBeta", "-Mg")
+                Move-Item $OldDestination -Destination $NewDestination
+            }
+            
+        }
+        }
     }
 }
 
@@ -92,17 +105,6 @@ function Update-GraphModuleHelp {
 
     Import-Module $moduleImportName -RequiredVersion 2.0.0 -Force -Global
     Update-Help -ModuleDocsPath $moduleDocsPath -LogsPath $logsPath
-    if($GraphProfile -eq "beta"){
-        Get-ChildItem $DocPath -Recurse -File | ForEach-Object {
-            $OldFileName = [System.IO.Path]::GetFileName($_)
-            if($OldFileName.Contains("MgBeta")){
-                $OldDestination = Join-Path $destination $OldFileName
-                $NewDestination = Join-Path $destination $OldFileName.Replace("-MgBeta", "-Mg")
-                Move-Item $OldDestination -Destination $NewDestination
-            }
-            
-        }
-        }
 }
 
 # Install PlatyPS
