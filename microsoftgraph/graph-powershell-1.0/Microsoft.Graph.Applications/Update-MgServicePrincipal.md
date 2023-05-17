@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipal
 schema: 2.0.0
@@ -16,17 +16,17 @@ Update entity in servicePrincipals
 ```
 Update-MgServicePrincipal -ServicePrincipalId <String> [-AccountEnabled] [-AddIns <IMicrosoftGraphAddIn[]>]
  [-AdditionalProperties <Hashtable>] [-AlternativeNames <String[]>] [-AppDescription <String>]
- [-AppDisplayName <String>] [-AppId <String>] [-ApplicationTemplateId <String>]
- [-AppManagementPolicies <IMicrosoftGraphAppManagementPolicy[]>] [-AppOwnerOrganizationId <String>]
- [-AppRoleAssignedTo <IMicrosoftGraphAppRoleAssignment[]>] [-AppRoleAssignmentRequired]
- [-AppRoleAssignments <IMicrosoftGraphAppRoleAssignment[]>] [-AppRoles <IMicrosoftGraphAppRole[]>]
+ [-AppDisplayName <String>] [-AppId <String>] [-AppManagementPolicies <IMicrosoftGraphAppManagementPolicy[]>]
+ [-AppOwnerOrganizationId <String>] [-AppRoleAssignedTo <IMicrosoftGraphAppRoleAssignment[]>]
+ [-AppRoleAssignmentRequired] [-AppRoleAssignments <IMicrosoftGraphAppRoleAssignment[]>]
+ [-AppRoles <IMicrosoftGraphAppRole[]>] [-ApplicationTemplateId <String>]
  [-ClaimsMappingPolicies <IMicrosoftGraphClaimsMappingPolicy[]>]
  [-CreatedObjects <IMicrosoftGraphDirectoryObject[]>]
  [-DelegatedPermissionClassifications <IMicrosoftGraphDelegatedPermissionClassification[]>]
  [-DeletedDateTime <DateTime>] [-Description <String>] [-DisabledByMicrosoftStatus <String>]
  [-DisplayName <String>] [-Endpoints <IMicrosoftGraphEndpoint[]>]
- [-FederatedIdentityCredentials <IMicrosoftGraphFederatedIdentityCredential[]>] [-Homepage <String>]
- [-HomeRealmDiscoveryPolicies <IMicrosoftGraphHomeRealmDiscoveryPolicy[]>] [-Id <String>]
+ [-FederatedIdentityCredentials <IMicrosoftGraphFederatedIdentityCredential[]>]
+ [-HomeRealmDiscoveryPolicies <IMicrosoftGraphHomeRealmDiscoveryPolicy[]>] [-Homepage <String>] [-Id <String>]
  [-Info <IMicrosoftGraphInformationalUrl>] [-KeyCredentials <IMicrosoftGraphKeyCredential[]>]
  [-LoginUrl <String>] [-LogoutUrl <String>] [-MemberOf <IMicrosoftGraphDirectoryObject[]>] [-Notes <String>]
  [-NotificationEmailAddresses <String[]>] [-Oauth2PermissionGrants <IMicrosoftGraphOAuth2PermissionGrant[]>]
@@ -40,36 +40,30 @@ Update-MgServicePrincipal -ServicePrincipalId <String> [-AccountEnabled] [-AddIn
  [-TokenEncryptionKeyId <String>] [-TokenIssuancePolicies <IMicrosoftGraphTokenIssuancePolicy[]>]
  [-TokenLifetimePolicies <IMicrosoftGraphTokenLifetimePolicy[]>]
  [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]
- [-VerifiedPublisher <IMicrosoftGraphVerifiedPublisher>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-VerifiedPublisher <IMicrosoftGraphVerifiedPublisher>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgServicePrincipal -ServicePrincipalId <String> -BodyParameter <IMicrosoftGraphServicePrincipal>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgServicePrincipal -InputObject <IApplicationsIdentity>
- -BodyParameter <IMicrosoftGraphServicePrincipal> [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgServicePrincipal -InputObject <IApplicationsIdentity> [-AccountEnabled]
  [-AddIns <IMicrosoftGraphAddIn[]>] [-AdditionalProperties <Hashtable>] [-AlternativeNames <String[]>]
- [-AppDescription <String>] [-AppDisplayName <String>] [-AppId <String>] [-ApplicationTemplateId <String>]
+ [-AppDescription <String>] [-AppDisplayName <String>] [-AppId <String>]
  [-AppManagementPolicies <IMicrosoftGraphAppManagementPolicy[]>] [-AppOwnerOrganizationId <String>]
  [-AppRoleAssignedTo <IMicrosoftGraphAppRoleAssignment[]>] [-AppRoleAssignmentRequired]
  [-AppRoleAssignments <IMicrosoftGraphAppRoleAssignment[]>] [-AppRoles <IMicrosoftGraphAppRole[]>]
- [-ClaimsMappingPolicies <IMicrosoftGraphClaimsMappingPolicy[]>]
+ [-ApplicationTemplateId <String>] [-ClaimsMappingPolicies <IMicrosoftGraphClaimsMappingPolicy[]>]
  [-CreatedObjects <IMicrosoftGraphDirectoryObject[]>]
  [-DelegatedPermissionClassifications <IMicrosoftGraphDelegatedPermissionClassification[]>]
  [-DeletedDateTime <DateTime>] [-Description <String>] [-DisabledByMicrosoftStatus <String>]
  [-DisplayName <String>] [-Endpoints <IMicrosoftGraphEndpoint[]>]
- [-FederatedIdentityCredentials <IMicrosoftGraphFederatedIdentityCredential[]>] [-Homepage <String>]
- [-HomeRealmDiscoveryPolicies <IMicrosoftGraphHomeRealmDiscoveryPolicy[]>] [-Id <String>]
+ [-FederatedIdentityCredentials <IMicrosoftGraphFederatedIdentityCredential[]>]
+ [-HomeRealmDiscoveryPolicies <IMicrosoftGraphHomeRealmDiscoveryPolicy[]>] [-Homepage <String>] [-Id <String>]
  [-Info <IMicrosoftGraphInformationalUrl>] [-KeyCredentials <IMicrosoftGraphKeyCredential[]>]
  [-LoginUrl <String>] [-LogoutUrl <String>] [-MemberOf <IMicrosoftGraphDirectoryObject[]>] [-Notes <String>]
  [-NotificationEmailAddresses <String[]>] [-Oauth2PermissionGrants <IMicrosoftGraphOAuth2PermissionGrant[]>]
@@ -83,7 +77,13 @@ Update-MgServicePrincipal -InputObject <IApplicationsIdentity> [-AccountEnabled]
  [-TokenEncryptionKeyId <String>] [-TokenIssuancePolicies <IMicrosoftGraphTokenIssuancePolicy[]>]
  [-TokenLifetimePolicies <IMicrosoftGraphTokenLifetimePolicy[]>]
  [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]
- [-VerifiedPublisher <IMicrosoftGraphVerifiedPublisher>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-VerifiedPublisher <IMicrosoftGraphVerifiedPublisher>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgServicePrincipal -InputObject <IApplicationsIdentity> -BodyParameter <IMicrosoftGraphServicePrincipal>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -91,7 +91,7 @@ Update entity in servicePrincipals
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 $ServicePrincipalUpdate =@{
   "accountEnabled" = "true"
@@ -109,7 +109,7 @@ If set to false, then no users will be able to sign in to this app, even if they
 Supports $filter (eq, ne, not, in).
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -127,7 +127,7 @@ This will let services like Microsoft 365 call the application in the context of
 To construct, see NOTES section for ADDINS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAddIn[]
+Type: IMicrosoftGraphAddIn[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -158,7 +158,7 @@ Used to retrieve service principals by subscription, identify resource group and
 Supports $filter (eq, not, ge, le, startsWith).
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 The description exposed by the associated application.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -188,7 +188,7 @@ Accept wildcard characters: False
 The display name exposed by the associated application.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -204,7 +204,7 @@ The unique identifier for the associated application (its appId property).
 Supports $filter (eq, ne, not, in, startsWith).
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -221,7 +221,7 @@ Read-only.
 Supports $filter (eq, ne, NOT, startsWith).
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -237,7 +237,7 @@ The appManagementPolicy applied to this application.
 To construct, see NOTES section for APPMANAGEMENTPOLICIES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppManagementPolicy[]
+Type: IMicrosoftGraphAppManagementPolicy[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -254,7 +254,7 @@ This is applicable only to service principals backed by applications.
 Supports $filter (eq, ne, NOT, ge, le).
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -271,7 +271,7 @@ Supports $expand.
 To construct, see NOTES section for APPROLEASSIGNEDTO properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppRoleAssignment[]
+Type: IMicrosoftGraphAppRoleAssignment[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -289,7 +289,7 @@ Not nullable.
 Supports $filter (eq, ne, NOT).
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -306,7 +306,7 @@ Supports $expand.
 To construct, see NOTES section for APPROLEASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppRoleAssignment[]
+Type: IMicrosoftGraphAppRoleAssignment[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -324,7 +324,7 @@ Not nullable.
 To construct, see NOTES section for APPROLES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppRole[]
+Type: IMicrosoftGraphAppRole[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -340,7 +340,7 @@ servicePrincipal
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServicePrincipal
+Type: IMicrosoftGraphServicePrincipal
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -357,7 +357,7 @@ Supports $expand.
 To construct, see NOTES section for CLAIMSMAPPINGPOLICIES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphClaimsMappingPolicy[]
+Type: IMicrosoftGraphClaimsMappingPolicy[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -375,7 +375,7 @@ Nullable.
 To construct, see NOTES section for CREATEDOBJECTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject[]
+Type: IMicrosoftGraphDirectoryObject[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -391,7 +391,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for DELEGATEDPERMISSIONCLASSIFICATIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDelegatedPermissionClassification[]
+Type: IMicrosoftGraphDelegatedPermissionClassification[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -407,7 +407,7 @@ Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -425,7 +425,7 @@ The maximum allowed size is 1024 characters.
 Supports $filter (eq, ne, not, ge, le, startsWith) and $search.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -442,7 +442,7 @@ Possible values are: null (default value), NotDisabled, and DisabledDueToViolati
 Supports $filter (eq, ne, not).
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -458,7 +458,7 @@ The display name for the service principal.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderBy.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -474,7 +474,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for ENDPOINTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEndpoint[]
+Type: IMicrosoftGraphEndpoint[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -491,7 +491,7 @@ Supports $expand and $filter (/$count eq 0, /$count ne 0).
 To construct, see NOTES section for FEDERATEDIDENTITYCREDENTIALS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphFederatedIdentityCredential[]
+Type: IMicrosoftGraphFederatedIdentityCredential[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -506,7 +506,7 @@ Accept wildcard characters: False
 Home page or landing page of the application.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -523,7 +523,7 @@ Supports $expand.
 To construct, see NOTES section for HOMEREALMDISCOVERYPOLICIES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphHomeRealmDiscoveryPolicy[]
+Type: IMicrosoftGraphHomeRealmDiscoveryPolicy[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -539,7 +539,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -555,7 +555,7 @@ informationalUrl
 To construct, see NOTES section for INFO properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInformationalUrl
+Type: IMicrosoftGraphInformationalUrl
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -571,8 +571,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IApplicationsIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -589,7 +589,7 @@ Supports $filter (eq, not, ge, le).
 To construct, see NOTES section for KEYCREDENTIALS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphKeyCredential[]
+Type: IMicrosoftGraphKeyCredential[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -607,7 +607,7 @@ When blank, Azure AD performs IdP-initiated sign-on for applications configured 
 The user launches the application from Microsoft 365, the Azure AD My Apps, or the Azure AD SSO URL.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -622,7 +622,7 @@ Accept wildcard characters: False
 Specifies the URL that will be used by Microsoft's authorization service to logout an user using OpenId Connect front-channel, back-channel or SAML logout protocols.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -641,7 +641,7 @@ Supports $expand.
 To construct, see NOTES section for MEMBEROF properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject[]
+Type: IMicrosoftGraphDirectoryObject[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -657,7 +657,7 @@ Free text field to capture information about the service principal, typically us
 Maximum allowed size is 1024 characters.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -673,7 +673,7 @@ Specifies the list of email addresses where Azure AD sends a notification when t
 This is only for the certificates used to sign the SAML token issued for Azure AD Gallery applications.
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -691,7 +691,7 @@ Nullable.
 To construct, see NOTES section for OAUTH2PERMISSIONGRANTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOAuth2PermissionGrant[]
+Type: IMicrosoftGraphOAuth2PermissionGrant[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -709,7 +709,7 @@ Not nullable.
 To construct, see NOTES section for OAUTH2PERMISSIONSCOPES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPermissionScope[]
+Type: IMicrosoftGraphPermissionScope[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -728,7 +728,7 @@ Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count 
 To construct, see NOTES section for OWNEDOBJECTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject[]
+Type: IMicrosoftGraphDirectoryObject[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -748,7 +748,7 @@ Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count 
 To construct, see NOTES section for OWNERS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject[]
+Type: IMicrosoftGraphDirectoryObject[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -765,7 +765,7 @@ Not nullable.
 To construct, see NOTES section for PASSWORDCREDENTIALS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPasswordCredential[]
+Type: IMicrosoftGraphPasswordCredential[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -782,7 +782,7 @@ Azure AD uses the preferred single sign-on mode to launch the application from M
 The supported values are password, saml, notSupported, and oidc.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -798,7 +798,7 @@ This property can be used on SAML applications (apps that have preferredSingleSi
 For applications that are not SAML, do not write or otherwise rely on this property.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -814,7 +814,7 @@ The URLs that user tokens are sent to for sign in with the associated applicatio
 Not nullable.
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -832,7 +832,7 @@ Read-only.
 To construct, see NOTES section for RESOURCESPECIFICAPPLICATIONPERMISSIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphResourceSpecificPermission[]
+Type: IMicrosoftGraphResourceSpecificPermission[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -848,7 +848,7 @@ samlSingleSignOnSettings
 To construct, see NOTES section for SAMLSINGLESIGNONSETTINGS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSamlSingleSignOnSettings
+Type: IMicrosoftGraphSamlSingleSignOnSettings
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -863,8 +863,8 @@ Accept wildcard characters: False
 The unique identifier of servicePrincipal
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -883,7 +883,7 @@ Not nullable.
 Supports $filter (eq, not, ge, le, startsWith).
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -906,7 +906,7 @@ The appId value does not associate the service principal with an app registratio
 The service principal can only be used in the tenant where it was created.__SocialIdp - For internal use.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -923,7 +923,7 @@ Read-only.
 Supported values are:AzureADMyOrg: Users with a Microsoft work or school account in my organization's Azure AD tenant (single-tenant).AzureADMultipleOrgs: Users with a Microsoft work or school account in any organization's Azure AD tenant (multi-tenant).AzureADandPersonalMicrosoftAccount: Users with a personal Microsoft account, or a work or school account in any organization's Azure AD tenant.PersonalMicrosoftAccount: Users with a personal Microsoft account only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -940,7 +940,7 @@ Not nullable.
 The value is the union of strings set here and on the associated application entity's tags property.Supports $filter (eq, not, ge, le, startsWith).
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -957,7 +957,7 @@ When configured, Azure AD issues tokens for this application encrypted using the
 The application code that receives the encrypted token must use the matching private key to decrypt the token before it can be used for the signed-in user.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -973,7 +973,7 @@ The tokenIssuancePolicies assigned to this service principal.
 To construct, see NOTES section for TOKENISSUANCEPOLICIES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTokenIssuancePolicy[]
+Type: IMicrosoftGraphTokenIssuancePolicy[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -989,7 +989,7 @@ The tokenLifetimePolicies assigned to this service principal.
 To construct, see NOTES section for TOKENLIFETIMEPOLICIES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTokenLifetimePolicy[]
+Type: IMicrosoftGraphTokenLifetimePolicy[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -1005,7 +1005,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for TRANSITIVEMEMBEROF properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject[]
+Type: IMicrosoftGraphDirectoryObject[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -1021,7 +1021,7 @@ verifiedPublisher
 To construct, see NOTES section for VERIFIEDPUBLISHER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphVerifiedPublisher
+Type: IMicrosoftGraphVerifiedPublisher
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -1036,7 +1036,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -1052,7 +1052,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -1069,13 +1069,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServicePrincipal
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServicePrincipal
-
 ## NOTES
 
 ALIASES
@@ -1499,3 +1496,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS
