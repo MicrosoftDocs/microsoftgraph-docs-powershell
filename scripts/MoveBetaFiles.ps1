@@ -1,6 +1,6 @@
 Param(
     $ModulesToGenerate = @(),
-    [string] $ModuleMappingConfigPath = ("..\..\microsoftgraph-docs-powershell\microsoftgraph\config\ModulesMapping.jsonc")
+    [string] $ModuleMappingConfigPath = ("..\microsoftgraph-docs-powershell\microsoftgraph\config\ModulesMapping.jsonc")
 
 )
 function Get-GraphMapping {
