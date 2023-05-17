@@ -76,9 +76,8 @@ function Copy-Files{
      if($GraphProfile -eq "beta"){
         Write-Host -ForegroundColor DarkYellow "Copying beta markdown files to " $destination
         Get-ChildItem $destination -Recurse -File | ForEach-Object {
-            if(-not($_ -eq "$Path.md")){
                 Remove-Item $_
-            }
+            
         }
         Get-ChildItem $DocPath -Recurse -File | ForEach-Object {
 

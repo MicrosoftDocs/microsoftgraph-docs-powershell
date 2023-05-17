@@ -81,13 +81,13 @@ function Get-Files {
         [Hashtable] $OpenApiContent 
     )
     $ProfileGraph = "v1.0"
-    $ModuleManifestFile = Join-Path $SDKDocsPath $Module "v1.0" "Microsoft.Graph.$Module.psd1"
+   
     if ($GraphProfile -eq "v1.0-beta") {
         $ProfileGraph = "beta"
-        $ModuleManifestFile = Join-Path $SDKDocsPath $Module "beta" "Microsoft.Graph.Beta.$Module.psd1"
+       
     }
     
-    $ModuleManifestFileContent = Get-Content -Path $ModuleManifestFile
+   
 
     $NonAllowedCommand = $GraphProfilePath.Split("\")
     try {
@@ -100,7 +100,7 @@ function Get-Files {
                
                 if ($Command -ne $NonAllowedCommand[$NonAllowedCommand.Count - 1]) {
                     #Check for cmdlet existence from the module manifest file
-                    if ($ModuleManifestFileContent | Select-String -pattern $Command) {
+                   
                             $UriPath = $null
                             if($GraphProfile -eq "v1.0-beta"){
                                 $UriPath = $BetaCommandGetVariantList[$Command]
@@ -112,7 +112,7 @@ function Get-Files {
                                 $Method = $UriPaths.Method
                                 Get-ExternalDocs-Url -GraphProfile $GraphProfile -Url -UriPath $UriPath -Command $Command -OpenApiContent $OpenApiContent -File $File -Method $Method -Module $Module
                             }
-                        }
+                        
                        
                     
                     #Start-Sleep -Seconds 10
