@@ -64,7 +64,6 @@ function Update-GraphHelpByProfile {
         [ValidateNotNullOrEmpty()]
         $ModulesToGenerate = @()
     )
-    Select-MgProfile -Name $GraphProfile
     $ModulesToGenerate | ForEach-Object {
         $ModuleName = $_
         Update-GraphModuleHelp -GraphProfile $GraphProfile -GraphProfilePath $GraphProfilePath -Module $ModuleName -ModulePrefix $ModulePrefix
