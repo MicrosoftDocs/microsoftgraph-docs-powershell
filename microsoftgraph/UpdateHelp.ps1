@@ -16,6 +16,7 @@ function Get-GraphMapping {
 function Update-Help {
     param (
         [ValidateNotNullOrEmpty()]
+        [ValidateNotNullOrEmpty()]
         [string] $ModuleDocsPath,
         [ValidateNotNullOrEmpty()]
         [string] $LogsPath = (Join-Path $PSScriptRoot ".\logs\DocsGenerationLogs.txt")
@@ -31,6 +32,7 @@ function Update-Help {
         Encoding              = [System.Text.Encoding]::UTF8
     }
     Update-MarkdownHelpModule @generationParams
+
 }
 
 function Update-GraphHelp {

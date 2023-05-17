@@ -81,6 +81,12 @@ function Copy-Files{
             $NewDestination = Join-Path $destination $OldFileName.Replace("-MgBeta", "-Mg")
              Copy-Item $_  -Destination $destination
              Move-Item $OldDestination -Destination $NewDestination
+             if(Test-Path $OldDestination){
+                if(-not($OldFileName.StartsWith("Microsoft.Graph.Beta"))){
+                    Remove-Item $OldDestination -Force
+                }
+                
+             }
             if($OldFileName.Contains("Microsoft.Graph.Beta")){
                 $CommandListFileDestination = Join-Path $destination $OldFileName.Replace("Microsoft.Graph.Beta", "Microsoft.Graph")
                 Move-Item $OldDestination -Destination $CommandListFileDestination 
@@ -120,7 +126,7 @@ if ($ModulesToGenerate.Count -eq 0) {
     $ModulesToGenerate = $ModuleMapping.Keys
 }
 
-Set-Location ..\microsoftgraph-docs-powershell
+#Set-Location ..\microsoftgraph-docs-powershell
 Write-Host -ForegroundColor Green "-------------finished checking out to today's branch-------------"
 Start-Copy -ModulesToGenerate $ModulesToGenerate
 Write-Host -ForegroundColor Green "-------------Done-------------"
