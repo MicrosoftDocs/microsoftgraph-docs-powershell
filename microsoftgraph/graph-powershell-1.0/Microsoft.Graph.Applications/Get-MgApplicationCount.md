@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.Applications-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationcount
 schema: 2.0.0
@@ -13,7 +13,7 @@ Get the number of the resource
 ## SYNTAX
 
 ```
-Get-MgApplicationCount [-Filter <String>] [-Search <String>] -ConsistencyLevel <String> [<CommonParameters>]
+Get-MgApplicationCount -ConsistencyLevel <String> [-Filter <String>] [-Search <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -21,15 +21,19 @@ Get the number of the resource
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
-### EXAMPLE 2
+
+
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
+
+
 
 ## PARAMETERS
 
@@ -38,7 +42,7 @@ Indicates the requested consistency level.
 Documentation URL: https://docs.microsoft.com/graph/aad-advanced-queries
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -53,7 +57,7 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -68,7 +72,7 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -87,8 +91,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Int32
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
+

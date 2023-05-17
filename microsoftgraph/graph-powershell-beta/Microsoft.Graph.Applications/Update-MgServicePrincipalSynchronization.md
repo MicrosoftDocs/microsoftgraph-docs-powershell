@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.Beta.Applications-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalsynchronization
 schema: 2.0.0
@@ -17,13 +17,19 @@ Update the navigation property synchronization in servicePrincipals
 Update-MgBetaServicePrincipalSynchronization -ServicePrincipalId <String> [-AdditionalProperties <Hashtable>]
  [-Id <String>] [-Jobs <IMicrosoftGraphSynchronizationJob[]>]
  [-Secrets <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>]
- [-Templates <IMicrosoftGraphSynchronizationTemplate[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Templates <IMicrosoftGraphSynchronizationTemplate[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaServicePrincipalSynchronization -ServicePrincipalId <String>
- -BodyParameter <IMicrosoftGraphSynchronization> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSynchronization> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaServicePrincipalSynchronization -InputObject <IApplicationsIdentity>
+ -BodyParameter <IMicrosoftGraphSynchronization> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -31,13 +37,7 @@ Update-MgBetaServicePrincipalSynchronization -ServicePrincipalId <String>
 Update-MgBetaServicePrincipalSynchronization -InputObject <IApplicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Jobs <IMicrosoftGraphSynchronizationJob[]>]
  [-Secrets <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>]
- [-Templates <IMicrosoftGraphSynchronizationTemplate[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaServicePrincipalSynchronization -InputObject <IApplicationsIdentity>
- -BodyParameter <IMicrosoftGraphSynchronization> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Templates <IMicrosoftGraphSynchronizationTemplate[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -45,14 +45,14 @@ Update the navigation property synchronization in servicePrincipals
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### EXAMPLE 2
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
@@ -65,7 +65,7 @@ Update the navigation property synchronization in servicePrincipals
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -81,7 +81,7 @@ synchronization
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSynchronization
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSynchronization
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -97,7 +97,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -113,8 +113,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IApplicationsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -129,7 +129,7 @@ Performs synchronization by periodically running in the background, polling for 
 To construct, see NOTES section for JOBS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSynchronizationJob[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSynchronizationJob[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -145,7 +145,7 @@ Represents a collection of credentials to access provisioned cloud applications.
 To construct, see NOTES section for SECRETS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -160,8 +160,8 @@ Accept wildcard characters: False
 The unique identifier of servicePrincipal
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -176,7 +176,7 @@ Pre-configured synchronization settings for a particular application.
 To construct, see NOTES section for TEMPLATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSynchronizationTemplate[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSynchronizationTemplate[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -191,7 +191,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -207,7 +207,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -224,10 +224,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSynchronization
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSynchronization
+
 ## NOTES
 
 ALIASES
@@ -376,8 +379,8 @@ To create the parameters described below, construct a hash table containing the 
         - `[Value <Int64?>]`: Total number of synchronized objects.
       - `[TroubleshootingUrl <String>]`: In the event of an error, the URL with the troubleshooting steps for the issue.
     - `[SynchronizationJobSettings <IMicrosoftGraphKeyValuePair[]>]`: Settings associated with the job. Some settings are inherited from the template.
-      - `[Name <String>]`: Name for this key-value pair. For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
-      - `[Value <String>]`: Value for this key-value pair. For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
+      - `[Name <String>]`: Name for this key-value pair
+      - `[Value <String>]`: Value for this key-value pair
     - `[TemplateId <String>]`: Identifier of the synchronization template this job is based on.
   - `[Secrets <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>]`: Represents a collection of credentials to access provisioned cloud applications.
     - `[Key <String>]`: synchronizationSecret
@@ -558,8 +561,8 @@ To create the parameters described below, construct a hash table containing the 
       - `[Value <Int64?>]`: Total number of synchronized objects.
     - `[TroubleshootingUrl <String>]`: In the event of an error, the URL with the troubleshooting steps for the issue.
   - `[SynchronizationJobSettings <IMicrosoftGraphKeyValuePair[]>]`: Settings associated with the job. Some settings are inherited from the template.
-    - `[Name <String>]`: Name for this key-value pair. For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
-    - `[Value <String>]`: Value for this key-value pair. For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
+    - `[Name <String>]`: Name for this key-value pair
+    - `[Value <String>]`: Value for this key-value pair
   - `[TemplateId <String>]`: Identifier of the synchronization template this job is based on.
 
 `SECRETS <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>`: Represents a collection of credentials to access provisioned cloud applications.
@@ -659,4 +662,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
-## RELATED LINKS

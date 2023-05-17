@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.Beta.Applications-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalpasswordsinglesignoncredential
 schema: 2.0.0
@@ -15,29 +15,29 @@ Create single sign-on credentials using a password for a user or group.
 ### CreateExpanded (Default)
 ```
 New-MgBetaServicePrincipalPasswordSingleSignOnCredential -ServicePrincipalId <String>
- [-AdditionalProperties <Hashtable>] [-Credentials <IMicrosoftGraphCredential[]>] [-Id <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-Credentials <IMicrosoftGraphCredential[]>] [-Id <String>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaServicePrincipalPasswordSingleSignOnCredential -ServicePrincipalId <String>
  -BodyParameter <IPaths1J7V6DuServiceprincipalsServiceprincipalIdMicrosoftGraphCreatepasswordsinglesignoncredentialsPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgBetaServicePrincipalPasswordSingleSignOnCredential -InputObject <IApplicationsIdentity>
- [-AdditionalProperties <Hashtable>] [-Credentials <IMicrosoftGraphCredential[]>] [-Id <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaServicePrincipalPasswordSingleSignOnCredential -InputObject <IApplicationsIdentity>
  -BodyParameter <IPaths1J7V6DuServiceprincipalsServiceprincipalIdMicrosoftGraphCreatepasswordsinglesignoncredentialsPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgBetaServicePrincipalPasswordSingleSignOnCredential -InputObject <IApplicationsIdentity>
+ [-AdditionalProperties <Hashtable>] [-Credentials <IMicrosoftGraphCredential[]>] [-Id <String>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -45,15 +45,19 @@ Create single sign-on credentials using a password for a user or group.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
-### EXAMPLE 2
+
+
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
+
+
 
 ## PARAMETERS
 
@@ -61,7 +65,7 @@ Create single sign-on credentials using a password for a user or group.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -77,7 +81,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1J7V6DuServiceprincipalsServiceprincipalIdMicrosoftGraphCreatepasswordsinglesignoncredentialsPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1J7V6DuServiceprincipalsServiceprincipalIdMicrosoftGraphCreatepasswordsinglesignoncredentialsPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -93,7 +97,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for CREDENTIALS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCredential[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCredential[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -108,7 +112,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -124,8 +128,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IApplicationsIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -139,8 +143,8 @@ Accept wildcard characters: False
 The unique identifier of servicePrincipal
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -154,7 +158,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -170,7 +174,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -187,10 +191,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1J7V6DuServiceprincipalsServiceprincipalIdMicrosoftGraphCreatepasswordsinglesignoncredentialsPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPasswordSingleSignOnCredentialSet
+
 ## NOTES
 
 ALIASES
@@ -244,3 +251,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.Applications-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationownerbyref
 schema: 2.0.0
@@ -15,25 +15,25 @@ Add an owner to an application by posting to the owners collection.
 ### CreateExpanded (Default)
 ```
 New-MgApplicationOwnerByRef -ApplicationId <String> -OdataId <String> [-AdditionalProperties <Hashtable>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgApplicationOwnerByRef -ApplicationId <String> -BodyParameter <IReferenceCreate> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgApplicationOwnerByRef -InputObject <IApplicationsIdentity> -OdataId <String>
- [-AdditionalProperties <Hashtable>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgApplicationOwnerByRef -ApplicationId <String> -BodyParameter <IReferenceCreate> [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgApplicationOwnerByRef -InputObject <IApplicationsIdentity> -BodyParameter <IReferenceCreate> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgApplicationOwnerByRef -InputObject <IApplicationsIdentity> -OdataId <String>
+ [-AdditionalProperties <Hashtable>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -41,7 +41,7 @@ Add an owner to an application by posting to the owners collection.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 $NewOwner = @{
  "@odata.id"= "https://graph.microsoft.com/v1.0/directoryObjects/{075b32dd-edb7-47cf-89ef-f3f733683a3f}"
@@ -56,7 +56,7 @@ New-MgApplicationOwnerByRef -ApplicationId 'f6b30057-7095-4e2c-89f8-224149f591b7
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -71,8 +71,8 @@ Accept wildcard characters: False
 The unique identifier of application
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IReferenceCreate
+Type: Microsoft.Graph.PowerShell.Models.IReferenceCreate
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -103,8 +103,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IApplicationsIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -119,7 +119,7 @@ The entity reference URL of the resource.
 For example, https://graph.microsoft.com/v1.0/directoryObjects/{id}.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -165,7 +165,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -182,10 +182,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IReferenceCreate
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -219,3 +222,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

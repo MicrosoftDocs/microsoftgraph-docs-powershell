@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.Beta.Applications-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipal
 schema: 2.0.0
@@ -14,14 +14,14 @@ Delete a servicePrincipal object.
 
 ### Delete (Default)
 ```
-Remove-MgBetaServicePrincipal -ServicePrincipalId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Remove-MgBetaServicePrincipal -ServicePrincipalId <String> [-IfMatch <String>] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgBetaServicePrincipal -InputObject <IApplicationsIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Remove-MgBetaServicePrincipal -InputObject <IApplicationsIdentity> [-IfMatch <String>] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -29,11 +29,13 @@ Delete a servicePrincipal object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 Remove-MgBetaServicePrincipal -ServicePrincipalId $servicePrincipalId
 ```
+
+
 
 ## PARAMETERS
 
@@ -41,7 +43,7 @@ Remove-MgBetaServicePrincipal -ServicePrincipalId $servicePrincipalId
 ETag
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -57,7 +59,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IApplicationsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
 Parameter Sets: DeleteViaIdentity
 Aliases:
 
@@ -72,7 +74,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -87,7 +89,7 @@ Accept wildcard characters: False
 The unique identifier of servicePrincipal
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delete
 Aliases:
 
@@ -102,7 +104,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -118,7 +120,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -135,9 +137,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -178,3 +182,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

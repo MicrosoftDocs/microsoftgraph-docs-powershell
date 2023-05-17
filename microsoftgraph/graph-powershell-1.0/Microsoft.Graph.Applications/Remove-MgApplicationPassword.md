@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.Applications-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationpassword
 schema: 2.0.0
@@ -15,27 +15,27 @@ Remove a password from an application.
 ### RemoveExpanded (Default)
 ```
 Remove-MgApplicationPassword -ApplicationId <String> [-AdditionalProperties <Hashtable>] [-KeyId <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Remove
 ```
 Remove-MgApplicationPassword -ApplicationId <String>
  -BodyParameter <IPathsHv033BApplicationsApplicationIdMicrosoftGraphRemovepasswordPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### RemoveViaIdentityExpanded
-```
-Remove-MgApplicationPassword -InputObject <IApplicationsIdentity> [-AdditionalProperties <Hashtable>]
- [-KeyId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### RemoveViaIdentity
 ```
 Remove-MgApplicationPassword -InputObject <IApplicationsIdentity>
  -BodyParameter <IPathsHv033BApplicationsApplicationIdMicrosoftGraphRemovepasswordPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### RemoveViaIdentityExpanded
+```
+Remove-MgApplicationPassword -InputObject <IApplicationsIdentity> [-AdditionalProperties <Hashtable>]
+ [-KeyId <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -43,7 +43,7 @@ Remove a password from an application.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Applications
 $params = @{
@@ -52,13 +52,15 @@ $params = @{
 Remove-MgApplicationPassword -ApplicationId $applicationId -BodyParameter $params
 ```
 
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: RemoveExpanded, RemoveViaIdentityExpanded
 Aliases:
 
@@ -73,8 +75,8 @@ Accept wildcard characters: False
 The unique identifier of application
 
 ```yaml
-Type: String
-Parameter Sets: RemoveExpanded, Remove
+Type: System.String
+Parameter Sets: Remove, RemoveExpanded
 Aliases:
 
 Required: True
@@ -89,7 +91,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsHv033BApplicationsApplicationIdMicrosoftGraphRemovepasswordPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPathsHv033BApplicationsApplicationIdMicrosoftGraphRemovepasswordPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Remove, RemoveViaIdentity
 Aliases:
 
@@ -105,8 +107,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IApplicationsIdentity
-Parameter Sets: RemoveViaIdentityExpanded, RemoveViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
+Parameter Sets: RemoveViaIdentity, RemoveViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -120,7 +122,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: RemoveExpanded, RemoveViaIdentityExpanded
 Aliases:
 
@@ -135,7 +137,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -150,7 +152,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -166,7 +168,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -183,10 +185,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IPathsHv033BApplicationsApplicationIdMicrosoftGraphRemovepasswordPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -220,3 +225,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

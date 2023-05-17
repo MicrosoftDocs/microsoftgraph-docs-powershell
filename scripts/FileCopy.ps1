@@ -2,9 +2,9 @@
 # Licensed under the MIT License.
 Param(
     $ModulesToGenerate = @(),
-    [string] $ModuleMappingConfigPath = ("..\microsoftgraph-docs-powershell\microsoftgraph\config\ModulesMapping.jsonc"),
-	[string] $SDKDocsPath = ("..\msgraph-sdk-powershell\src"),
-	[string] $WorkLoadDocsPath = ("..\microsoftgraph-docs-powershell\microsoftgraph")
+    [string] $ModuleMappingConfigPath = ("..\..\microsoftgraph-docs-powershell\microsoftgraph\config\ModulesMapping.jsonc"),
+	[string] $SDKDocsPath = ("..\..\msgraph-sdk-powershell\src"),
+	[string] $WorkLoadDocsPath = ("..\..\microsoftgraph-docs-powershell\microsoftgraph")
 )
 function Get-GraphMapping {
     $graphMapping = @{}
@@ -93,25 +93,25 @@ function Copy-Files{
       }
 	 }
      }
-    git config --global user.email "timwamalwa@gmail.com"
-    git config --global user.name "Timothy Wamalwa"
-    git add .
-    git commit -m "Imported files from powershell sdk"
+    # git config --global user.email "timwamalwa@gmail.com"
+    # git config --global user.name "Timothy Wamalwa"
+    # git add .
+    # git commit -m "Imported files from powershell sdk"
       
 }
 
 
 
-Set-Location microsoftgraph-docs-powershell
-$date = Get-Date -Format "dd-MM-yyyy"
-$proposedBranch = "powershell_v2_$date"
-$exists = git branch -l $proposedBranch
-if ([string]::IsNullOrEmpty($exists)) {
-    git checkout -b $proposedBranch
-}else{
-	Write-Host "Branch already exists"
-     git checkout $proposedBranch
-}
+# Set-Location microsoftgraph-docs-powershell
+# $date = Get-Date -Format "dd-MM-yyyy"
+# $proposedBranch = "powershell_v2_$date"
+# $exists = git branch -l $proposedBranch
+# if ([string]::IsNullOrEmpty($exists)) {
+#     git checkout -b $proposedBranch
+# }else{
+# 	Write-Host "Branch already exists"
+#      git checkout $proposedBranch
+# }
 if (-not (Test-Path $ModuleMappingConfigPath)) {
     Write-Error "Module mapping file not be found: $ModuleMappingConfigPath."
 }
@@ -120,7 +120,7 @@ if ($ModulesToGenerate.Count -eq 0) {
     $ModulesToGenerate = $ModuleMapping.Keys
 }
 
-Set-Location ..\microsoftgraph-docs-powershell
+#Set-Location ..\microsoftgraph-docs-powershell
 Write-Host -ForegroundColor Green "-------------finished checking out to today's branch-------------"
 Start-Copy -ModulesToGenerate $ModulesToGenerate
 Write-Host -ForegroundColor Green "-------------Done-------------"

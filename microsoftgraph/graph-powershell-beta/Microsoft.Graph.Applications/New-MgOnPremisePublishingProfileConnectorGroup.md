@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.Beta.Applications-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaonpremisepublishingprofileconnectorgroup
 schema: 2.0.0
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaOnPremisePublishingProfileConnectorGroup
 
 ## SYNOPSIS
-Create a new connectorGroup.
+Create a connectorGroup object.
 
 ## SYNTAX
 
@@ -17,13 +17,19 @@ Create a new connectorGroup.
 New-MgBetaOnPremisePublishingProfileConnectorGroup -OnPremisesPublishingProfileId <String>
  [-AdditionalProperties <Hashtable>] [-Applications <IMicrosoftGraphApplication[]>]
  [-ConnectorGroupType <String>] [-Id <String>] [-IsDefault] [-Members <IMicrosoftGraphConnector[]>]
- [-Name <String>] [-Region <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Name <String>] [-Region <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaOnPremisePublishingProfileConnectorGroup -OnPremisesPublishingProfileId <String>
- -BodyParameter <IMicrosoftGraphConnectorGroup> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphConnectorGroup> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgBetaOnPremisePublishingProfileConnectorGroup -InputObject <IApplicationsIdentity>
+ -BodyParameter <IMicrosoftGraphConnectorGroup> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -31,21 +37,15 @@ New-MgBetaOnPremisePublishingProfileConnectorGroup -OnPremisesPublishingProfileI
 New-MgBetaOnPremisePublishingProfileConnectorGroup -InputObject <IApplicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-Applications <IMicrosoftGraphApplication[]>]
  [-ConnectorGroupType <String>] [-Id <String>] [-IsDefault] [-Members <IMicrosoftGraphConnector[]>]
- [-Name <String>] [-Region <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgBetaOnPremisePublishingProfileConnectorGroup -InputObject <IApplicationsIdentity>
- -BodyParameter <IMicrosoftGraphConnectorGroup> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Name <String>] [-Region <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create a new connectorGroup.
+Create a connectorGroup object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 $params = @{
@@ -55,7 +55,9 @@ $params = @{
 New-MgBetaOnPremisePublishingProfileConnectorGroup -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -BodyParameter $params
 ```
 
-### EXAMPLE 2
+
+
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 $params = @{
@@ -64,13 +66,15 @@ $params = @{
 New-MgBetaOnPremisePublishingProfileConnectorGroup -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -BodyParameter $params
 ```
 
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -86,7 +90,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for APPLICATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphApplication[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphApplication[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -102,7 +106,7 @@ connectorGroup
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphConnectorGroup
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConnectorGroup
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -117,7 +121,7 @@ Accept wildcard characters: False
 connectorGroupType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -133,7 +137,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -149,8 +153,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IApplicationsIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -166,7 +170,7 @@ Only a single connector group can be the default connectorGroup and this is pre-
 Read-only.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -182,7 +186,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for MEMBERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphConnector[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConnector[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -197,7 +201,7 @@ Accept wildcard characters: False
 The name associated with the connectorGroup.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -212,8 +216,8 @@ Accept wildcard characters: False
 The unique identifier of onPremisesPublishingProfile
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -227,7 +231,7 @@ Accept wildcard characters: False
 connectorGroupRegion
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -242,7 +246,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -258,7 +262,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -275,10 +279,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConnectorGroup
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConnectorGroup
+
 ## NOTES
 
 ALIASES
@@ -404,8 +411,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[Key <Byte[]>]`: Value for the key credential. Should be a Base64 encoded value. Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it is always null.
     - `[KeyId <String>]`: The unique identifier for the key.
     - `[StartDateTime <DateTime?>]`: The date and time at which the credential becomes valid.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    - `[Type <String>]`: The type of key credential; for example, Symmetric, AsymmetricX509Cert, or X509CertAndPassword.
-    - `[Usage <String>]`: A string that describes the purpose for which the key can be used; for example, None​, Verify​, PairwiseIdentifier​, Delegation​, Decrypt​, Encrypt​, HashedIdentifier​, SelfSignedTls, or Sign. If usage is Sign​, the type should be X509CertAndPassword​, and the passwordCredentials​ for signing should be defined.
+    - `[Type <String>]`: The type of key credential; for example, Symmetric, AsymmetricX509Cert.
+    - `[Usage <String>]`: A string that describes the purpose for which the key can be used; for example, Verify.
   - `[Logo <Byte[]>]`: The main logo for the application. Not nullable.
   - `[Notes <String>]`: Notes relevant for the management of the application.
   - `[OnPremisesPublishing <IMicrosoftGraphOnPremisesPublishing>]`: onPremisesPublishing
@@ -641,8 +648,8 @@ To create the parameters described below, construct a hash table containing the 
           - `[Value <Int64?>]`: Total number of synchronized objects.
         - `[TroubleshootingUrl <String>]`: In the event of an error, the URL with the troubleshooting steps for the issue.
       - `[SynchronizationJobSettings <IMicrosoftGraphKeyValuePair[]>]`: Settings associated with the job. Some settings are inherited from the template.
-        - `[Name <String>]`: Name for this key-value pair. For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
-        - `[Value <String>]`: Value for this key-value pair. For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
+        - `[Name <String>]`: Name for this key-value pair
+        - `[Value <String>]`: Value for this key-value pair
       - `[TemplateId <String>]`: Identifier of the synchronization template this job is based on.
     - `[Secrets <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>]`: Represents a collection of credentials to access provisioned cloud applications.
       - `[Key <String>]`: synchronizationSecret
@@ -804,8 +811,8 @@ To create the parameters described below, construct a hash table containing the 
       - `[Key <Byte[]>]`: Value for the key credential. Should be a Base64 encoded value. Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it is always null.
       - `[KeyId <String>]`: The unique identifier for the key.
       - `[StartDateTime <DateTime?>]`: The date and time at which the credential becomes valid.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-      - `[Type <String>]`: The type of key credential; for example, Symmetric, AsymmetricX509Cert, or X509CertAndPassword.
-      - `[Usage <String>]`: A string that describes the purpose for which the key can be used; for example, None​, Verify​, PairwiseIdentifier​, Delegation​, Decrypt​, Encrypt​, HashedIdentifier​, SelfSignedTls, or Sign. If usage is Sign​, the type should be X509CertAndPassword​, and the passwordCredentials​ for signing should be defined.
+      - `[Type <String>]`: The type of key credential; for example, Symmetric, AsymmetricX509Cert.
+      - `[Usage <String>]`: A string that describes the purpose for which the key can be used; for example, Verify.
     - `[Logo <Byte[]>]`: The main logo for the application. Not nullable.
     - `[Notes <String>]`: Notes relevant for the management of the application.
     - `[OnPremisesPublishing <IMicrosoftGraphOnPremisesPublishing>]`: onPremisesPublishing
@@ -1041,8 +1048,8 @@ To create the parameters described below, construct a hash table containing the 
             - `[Value <Int64?>]`: Total number of synchronized objects.
           - `[TroubleshootingUrl <String>]`: In the event of an error, the URL with the troubleshooting steps for the issue.
         - `[SynchronizationJobSettings <IMicrosoftGraphKeyValuePair[]>]`: Settings associated with the job. Some settings are inherited from the template.
-          - `[Name <String>]`: Name for this key-value pair. For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
-          - `[Value <String>]`: Value for this key-value pair. For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
+          - `[Name <String>]`: Name for this key-value pair
+          - `[Value <String>]`: Value for this key-value pair
         - `[TemplateId <String>]`: Identifier of the synchronization template this job is based on.
       - `[Secrets <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>]`: Represents a collection of credentials to access provisioned cloud applications.
         - `[Key <String>]`: synchronizationSecret
@@ -1247,8 +1254,8 @@ To create the parameters described below, construct a hash table containing the 
         - `[Key <Byte[]>]`: Value for the key credential. Should be a Base64 encoded value. Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it is always null.
         - `[KeyId <String>]`: The unique identifier for the key.
         - `[StartDateTime <DateTime?>]`: The date and time at which the credential becomes valid.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-        - `[Type <String>]`: The type of key credential; for example, Symmetric, AsymmetricX509Cert, or X509CertAndPassword.
-        - `[Usage <String>]`: A string that describes the purpose for which the key can be used; for example, None​, Verify​, PairwiseIdentifier​, Delegation​, Decrypt​, Encrypt​, HashedIdentifier​, SelfSignedTls, or Sign. If usage is Sign​, the type should be X509CertAndPassword​, and the passwordCredentials​ for signing should be defined.
+        - `[Type <String>]`: The type of key credential; for example, Symmetric, AsymmetricX509Cert.
+        - `[Usage <String>]`: A string that describes the purpose for which the key can be used; for example, Verify.
       - `[Logo <Byte[]>]`: The main logo for the application. Not nullable.
       - `[Notes <String>]`: Notes relevant for the management of the application.
       - `[OnPremisesPublishing <IMicrosoftGraphOnPremisesPublishing>]`: onPremisesPublishing
@@ -1484,8 +1491,8 @@ To create the parameters described below, construct a hash table containing the 
               - `[Value <Int64?>]`: Total number of synchronized objects.
             - `[TroubleshootingUrl <String>]`: In the event of an error, the URL with the troubleshooting steps for the issue.
           - `[SynchronizationJobSettings <IMicrosoftGraphKeyValuePair[]>]`: Settings associated with the job. Some settings are inherited from the template.
-            - `[Name <String>]`: Name for this key-value pair. For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
-            - `[Value <String>]`: Value for this key-value pair. For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
+            - `[Name <String>]`: Name for this key-value pair
+            - `[Value <String>]`: Value for this key-value pair
           - `[TemplateId <String>]`: Identifier of the synchronization template this job is based on.
         - `[Secrets <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>]`: Represents a collection of credentials to access provisioned cloud applications.
           - `[Key <String>]`: synchronizationSecret
@@ -1549,4 +1556,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
-## RELATED LINKS
