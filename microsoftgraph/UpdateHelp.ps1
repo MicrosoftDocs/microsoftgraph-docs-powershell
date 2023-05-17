@@ -81,10 +81,11 @@ function Update-GraphModuleHelp {
         [string] $ModulePrefix = "Microsoft.Graph"
     )
     $moduleImportName = "$ModulePrefix.$ModuleName"
+    $Path = $moduleImportName
     if($GraphProfile -eq 'beta'){
         $moduleImportName = "$ModulePrefix.Beta.$ModuleName"
      }
-    $moduleDocsPath = Join-Path $PSScriptRoot ".\$GraphProfilePath\$moduleImportName"
+    $moduleDocsPath = Join-Path $PSScriptRoot ".\$GraphProfilePath\$Path"
     $logsPath = Join-Path $PSScriptRoot ".\logs\$moduleImportName-$GraphProfile.txt"
 
     Import-Module $moduleImportName -RequiredVersion 2.0.0 -Force -Global
