@@ -1,47 +1,49 @@
 ---
 external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/clear-mgdevicemanagementmanageddevice
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/set-mgdevicemanagementwindowsautopilotdeviceidentityusertodevice
 schema: 2.0.0
 ---
 
-# Clear-MgDeviceManagementManagedDevice
+# Set-MgDeviceManagementWindowsAutopilotDeviceIdentityUserToDevice
 
 ## SYNOPSIS
-Wipe a device
+Assigns user to Autopilot devices.
 
 ## SYNTAX
 
-### WipeExpanded (Default)
+### AssignExpanded (Default)
 ```
-Clear-MgDeviceManagementManagedDevice -ManagedDeviceId <String> [-AdditionalProperties <Hashtable>]
- [-KeepEnrollmentData] [-KeepUserData] [-MacOSUnlockCode <String>] [-PersistEsimDataPlan] [-PassThru]
+Set-MgDeviceManagementWindowsAutopilotDeviceIdentityUserToDevice -WindowsAutopilotDeviceIdentityId <String>
+ [-AdditionalProperties <Hashtable>] [-AddressableUserName <String>] [-UserPrincipalName <String>] [-PassThru]
  [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Wipe
+### Assign
 ```
-Clear-MgDeviceManagementManagedDevice -ManagedDeviceId <String>
- -BodyParameter <IPaths9Mjyr1DevicemanagementManageddevicesManageddeviceIdMicrosoftGraphWipePostRequestbodyContentApplicationJsonSchema>
+Set-MgDeviceManagementWindowsAutopilotDeviceIdentityUserToDevice -WindowsAutopilotDeviceIdentityId <String>
+ -BodyParameter <IPathsLgvh1ODevicemanagementWindowsautopilotdeviceidentitiesWindowsautopilotdeviceidentityIdMicrosoftGraphAssignusertodevicePostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### WipeViaIdentity
+### AssignViaIdentity
 ```
-Clear-MgDeviceManagementManagedDevice -InputObject <IDeviceManagementActionsIdentity>
- -BodyParameter <IPaths9Mjyr1DevicemanagementManageddevicesManageddeviceIdMicrosoftGraphWipePostRequestbodyContentApplicationJsonSchema>
+Set-MgDeviceManagementWindowsAutopilotDeviceIdentityUserToDevice
+ -InputObject <IDeviceManagementActionsIdentity>
+ -BodyParameter <IPathsLgvh1ODevicemanagementWindowsautopilotdeviceidentitiesWindowsautopilotdeviceidentityIdMicrosoftGraphAssignusertodevicePostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### WipeViaIdentityExpanded
+### AssignViaIdentityExpanded
 ```
-Clear-MgDeviceManagementManagedDevice -InputObject <IDeviceManagementActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-KeepEnrollmentData] [-KeepUserData] [-MacOSUnlockCode <String>]
- [-PersistEsimDataPlan] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Set-MgDeviceManagementWindowsAutopilotDeviceIdentityUserToDevice
+ -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>]
+ [-AddressableUserName <String>] [-UserPrincipalName <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Wipe a device
+Assigns user to Autopilot devices.
 
 ## EXAMPLES
 
@@ -50,14 +52,14 @@ Wipe a device
 {{ Add code here }}
 ```
 
-{{ Add output here }}
+
 
 ### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
-{{ Add output here }}
+
 
 ## PARAMETERS
 
@@ -66,7 +68,22 @@ Additional Parameters
 
 ```yaml
 Type: System.Collections.Hashtable
-Parameter Sets: WipeExpanded, WipeViaIdentityExpanded
+Parameter Sets: AssignExpanded, AssignViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AddressableUserName
+.
+
+```yaml
+Type: System.String
+Parameter Sets: AssignExpanded, AssignViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -81,8 +98,8 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPaths9Mjyr1DevicemanagementManageddevicesManageddeviceIdMicrosoftGraphWipePostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Wipe, WipeViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IPathsLgvh1ODevicemanagementWindowsautopilotdeviceidentitiesWindowsautopilotdeviceidentityIdMicrosoftGraphAssignusertodevicePostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Assign, AssignViaIdentity
 Aliases:
 
 Required: True
@@ -98,73 +115,13 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-Parameter Sets: WipeViaIdentity, WipeViaIdentityExpanded
+Parameter Sets: AssignViaIdentity, AssignViaIdentityExpanded
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -KeepEnrollmentData
-.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: WipeExpanded, WipeViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -KeepUserData
-.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: WipeExpanded, WipeViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -MacOSUnlockCode
-.
-
-```yaml
-Type: System.String
-Parameter Sets: WipeExpanded, WipeViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ManagedDeviceId
-The unique identifier of managedDevice
-
-```yaml
-Type: System.String
-Parameter Sets: Wipe, WipeExpanded
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -183,15 +140,30 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PersistEsimDataPlan
+### -UserPrincipalName
 .
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: WipeExpanded, WipeViaIdentityExpanded
+Type: System.String
+Parameter Sets: AssignExpanded, AssignViaIdentityExpanded
 Aliases:
 
 Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WindowsAutopilotDeviceIdentityId
+The unique identifier of windowsAutopilotDeviceIdentity
+
+```yaml
+Type: System.String
+Parameter Sets: Assign, AssignExpanded
+Aliases:
+
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -236,7 +208,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
 
-### Microsoft.Graph.PowerShell.Models.IPaths9Mjyr1DevicemanagementManageddevicesManageddeviceIdMicrosoftGraphWipePostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.PowerShell.Models.IPathsLgvh1ODevicemanagementWindowsautopilotdeviceidentitiesWindowsautopilotdeviceidentityIdMicrosoftGraphAssignusertodevicePostRequestbodyContentApplicationJsonSchema
 
 ## OUTPUTS
 
@@ -251,12 +223,10 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-`BODYPARAMETER <IPaths9Mjyr1DevicemanagementManageddevicesManageddeviceIdMicrosoftGraphWipePostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsLgvh1ODevicemanagementWindowsautopilotdeviceidentitiesWindowsautopilotdeviceidentityIdMicrosoftGraphAssignusertodevicePostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[KeepEnrollmentData <Boolean?>]`: 
-  - `[KeepUserData <Boolean?>]`: 
-  - `[MacOSUnlockCode <String>]`: 
-  - `[PersistEsimDataPlan <Boolean?>]`: 
+  - `[AddressableUserName <String>]`: 
+  - `[UserPrincipalName <String>]`: 
 
 `INPUTOBJECT <IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[DeviceCompliancePolicyId <String>]`: The unique identifier of deviceCompliancePolicy

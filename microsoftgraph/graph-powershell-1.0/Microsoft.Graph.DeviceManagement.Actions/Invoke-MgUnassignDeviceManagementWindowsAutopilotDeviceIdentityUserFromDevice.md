@@ -1,31 +1,31 @@
 ---
 external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/request-mgdevicemanagementmanageddeviceremoteassistance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgunassigndevicemanagementwindowsautopilotdeviceidentityuserfromdevice
 schema: 2.0.0
 ---
 
-# Request-MgDeviceManagementManagedDeviceRemoteAssistance
+# Invoke-MgUnassignDeviceManagementWindowsAutopilotDeviceIdentityUserFromDevice
 
 ## SYNOPSIS
-Request remote assistance
+Unassigns the user from an Autopilot device.
 
 ## SYNTAX
 
-### Request (Default)
+### Unassign (Default)
 ```
-Request-MgDeviceManagementManagedDeviceRemoteAssistance -ManagedDeviceId <String> [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+Invoke-MgUnassignDeviceManagementWindowsAutopilotDeviceIdentityUserFromDevice
+ -WindowsAutopilotDeviceIdentityId <String> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### RequestViaIdentity
+### UnassignViaIdentity
 ```
-Request-MgDeviceManagementManagedDeviceRemoteAssistance -InputObject <IDeviceManagementActionsIdentity>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Invoke-MgUnassignDeviceManagementWindowsAutopilotDeviceIdentityUserFromDevice
+ -InputObject <IDeviceManagementActionsIdentity> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Request remote assistance
+Unassigns the user from an Autopilot device.
 
 ## EXAMPLES
 
@@ -34,14 +34,14 @@ Request remote assistance
 {{ Add code here }}
 ```
 
-{{ Add output here }}
+
 
 ### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
-{{ Add output here }}
+
 
 ## PARAMETERS
 
@@ -51,28 +51,13 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-Parameter Sets: RequestViaIdentity
+Parameter Sets: UnassignViaIdentity
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ManagedDeviceId
-The unique identifier of managedDevice
-
-```yaml
-Type: System.String
-Parameter Sets: Request
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -85,6 +70,21 @@ Parameter Sets: (All)
 Aliases:
 
 Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WindowsAutopilotDeviceIdentityId
+The unique identifier of windowsAutopilotDeviceIdentity
+
+```yaml
+Type: System.String
+Parameter Sets: Unassign
+Aliases:
+
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
