@@ -1,7 +1,7 @@
 ---
 Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
-Module Guid: 10adfc2c-a875-4f99-8cf6-8ba20e483f02
-Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.serviceannouncement
+Module Guid: 409b7714-ace4-48d6-a6a2-4b2c1f163b6d
+Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement
 Help Version: 1.0.0.0
 Locale: en-US
 ---
@@ -12,28 +12,45 @@ Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.Devices.ServiceAnnouncement Cmdlets
 ### [Get-MgServiceAnnouncementHealthOverview](Get-MgServiceAnnouncementHealthOverview.md)
-A collection of service health information for tenant.
-This property is a contained navigation property, it is nullable and readonly.
+Retrieve the properties and relationships of a serviceHealth object.
+This operation provides the health information of a specified service for a tenant.
+
+### [Get-MgServiceAnnouncementHealthOverviewCount](Get-MgServiceAnnouncementHealthOverviewCount.md)
+Get the number of the resource
 
 ### [Get-MgServiceAnnouncementHealthOverviewIssue](Get-MgServiceAnnouncementHealthOverviewIssue.md)
 A collection of issues that happened on the service, with detailed information for each issue.
 
+### [Get-MgServiceAnnouncementHealthOverviewIssueCount](Get-MgServiceAnnouncementHealthOverviewIssueCount.md)
+Get the number of the resource
+
 ### [Get-MgServiceAnnouncementIssue](Get-MgServiceAnnouncementIssue.md)
-A collection of service issues for tenant.
-This property is a contained navigation property, it is nullable and readonly.
+Retrieve the properties and relationships of a serviceHealthIssue object.
+This operation retrieves a specified service health issue for tenant.
+The operation returns an error if the issue does not exist for the tenant.
+
+### [Get-MgServiceAnnouncementIssueCount](Get-MgServiceAnnouncementIssueCount.md)
+Get the number of the resource
 
 ### [Get-MgServiceAnnouncementMessage](Get-MgServiceAnnouncementMessage.md)
-A collection of service messages for tenant.
-This property is a contained navigation property, it is nullable and readonly.
+Retrieve the properties and relationships of a serviceUpdateMessage object.
+This operation retrieves a specified service update message for the tenant.
+The operation returns an error if the message does not exist for the tenant.
 
 ### [Get-MgServiceAnnouncementMessageAttachment](Get-MgServiceAnnouncementMessageAttachment.md)
-A collection of serviceAnnouncementAttachments.
+Read the properties and relationships of a serviceAnnouncementAttachment object.
 
 ### [Get-MgServiceAnnouncementMessageAttachmentArchive](Get-MgServiceAnnouncementMessageAttachmentArchive.md)
 The zip file that contains all attachments for a message.
 
 ### [Get-MgServiceAnnouncementMessageAttachmentContent](Get-MgServiceAnnouncementMessageAttachmentContent.md)
 The attachment content.
+
+### [Get-MgServiceAnnouncementMessageAttachmentCount](Get-MgServiceAnnouncementMessageAttachmentCount.md)
+Get the number of the resource
+
+### [Get-MgServiceAnnouncementMessageCount](Get-MgServiceAnnouncementMessageCount.md)
+Get the number of the resource
 
 ### [Invoke-MgArchiveServiceAnnouncementMessage](Invoke-MgArchiveServiceAnnouncementMessage.md)
 Archive a list of serviceUpdateMessages for the signed in user.
