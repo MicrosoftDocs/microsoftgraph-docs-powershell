@@ -1,47 +1,47 @@
 ---
 external help file:
 Module Name: Microsoft.Graph.Search
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnectionitem
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/add-mgexternalconnectionitemactivity
 schema: 2.0.0
 ---
 
-# New-MgExternalConnectionItem
+# Add-MgExternalConnectionItemActivity
 
 ## SYNOPSIS
-Create new navigation property to items for external
+Invoke action addActivities
 
 ## SYNTAX
 
-### CreateExpanded (Default)
+### AddExpanded (Default)
 ```
-New-MgExternalConnectionItem -ExternalConnectionId <String> [-Acl <IMicrosoftGraphExternalConnectorsAcl[]>]
+Add-MgExternalConnectionItemActivity -ExternalConnectionId <String> -ExternalItemId <String>
  [-Activities <IMicrosoftGraphExternalConnectorsExternalActivity[]>] [-AdditionalProperties <Hashtable>]
- [-Content <IMicrosoftGraphExternalConnectorsExternalItemContent>] [-Id <String>] [-Properties <Hashtable>]
  [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Create
+### Add
 ```
-New-MgExternalConnectionItem -ExternalConnectionId <String>
- -BodyParameter <IMicrosoftGraphExternalConnectorsExternalItem> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgExternalConnectionItem -InputObject <ISearchIdentity>
- -BodyParameter <IMicrosoftGraphExternalConnectorsExternalItem> [-Confirm] [-WhatIf] [<CommonParameters>]
+Add-MgExternalConnectionItemActivity -ExternalConnectionId <String> -ExternalItemId <String>
+ -BodyParameter <IPaths5Uv0B2ExternalConnectionsExternalconnectionIdItemsExternalitemIdMicrosoftGraphExternalconnectorsAddactivitiesPostRequestbodyContentApplicationJsonSchema>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded
+### AddViaIdentity
 ```
-New-MgExternalConnectionItem -InputObject <ISearchIdentity> [-Acl <IMicrosoftGraphExternalConnectorsAcl[]>]
+Add-MgExternalConnectionItemActivity -InputObject <ISearchIdentity>
+ -BodyParameter <IPaths5Uv0B2ExternalConnectionsExternalconnectionIdItemsExternalitemIdMicrosoftGraphExternalconnectorsAddactivitiesPostRequestbodyContentApplicationJsonSchema>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### AddViaIdentityExpanded
+```
+Add-MgExternalConnectionItemActivity -InputObject <ISearchIdentity>
  [-Activities <IMicrosoftGraphExternalConnectorsExternalActivity[]>] [-AdditionalProperties <Hashtable>]
- [-Content <IMicrosoftGraphExternalConnectorsExternalItemContent>] [-Id <String>] [-Properties <Hashtable>]
  [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create new navigation property to items for external
+Invoke action addActivities
 
 ## EXAMPLES
 
@@ -50,43 +50,24 @@ Create new navigation property to items for external
 {{ Add code here }}
 ```
 
-{{ Add output here }}
+
 
 ### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
-{{ Add output here }}
+
 
 ## PARAMETERS
 
-### -Acl
-An array of access control entries.
-Each entry specifies the access granted to a user or group.
-Required.
-To construct, see NOTES section for ACL properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsAcl[]
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Activities
-Returns a list of activities performed on the item.
-Write-only.
+.
 To construct, see NOTES section for ACTIVITIES properties and create a hash table.
 
 ```yaml
 Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalActivity[]
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: AddExpanded, AddViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -101,7 +82,7 @@ Additional Parameters
 
 ```yaml
 Type: System.Collections.Hashtable
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: AddExpanded, AddViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -112,12 +93,12 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-externalItem
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalItem
-Parameter Sets: Create, CreateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IPaths5Uv0B2ExternalConnectionsExternalconnectionIdItemsExternalitemIdMicrosoftGraphExternalconnectorsAddactivitiesPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Add, AddViaIdentity
 Aliases:
 
 Required: True
@@ -127,28 +108,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Content
-externalItemContent
-To construct, see NOTES section for CONTENT properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalItemContent
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ExternalConnectionId
 The unique identifier of externalConnection
 
 ```yaml
 Type: System.String
-Parameter Sets: Create, CreateExpanded
+Parameter Sets: Add, AddExpanded
 Aliases:
 
 Required: True
@@ -158,16 +123,15 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Id
-The unique idenfier for an entity.
-Read-only.
+### -ExternalItemId
+The unique identifier of externalItem
 
 ```yaml
 Type: System.String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: Add, AddExpanded
 Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -180,28 +144,13 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: Microsoft.Graph.PowerShell.Models.ISearchIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Parameter Sets: AddViaIdentity, AddViaIdentityExpanded
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Properties
-properties
-
-```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -241,13 +190,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalItem
+### Microsoft.Graph.PowerShell.Models.IPaths5Uv0B2ExternalConnectionsExternalconnectionIdItemsExternalitemIdMicrosoftGraphExternalconnectorsAddactivitiesPostRequestbodyContentApplicationJsonSchema
 
 ### Microsoft.Graph.PowerShell.Models.ISearchIdentity
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalItem
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalActivityResult
 
 ## NOTES
 
@@ -258,12 +207,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-`ACL <IMicrosoftGraphExternalConnectorsAcl[]>`: An array of access control entries. Each entry specifies the access granted to a user or group. Required.
-  - `[AccessType <String>]`: accessType
-  - `[Type <String>]`: aclType
-  - `[Value <String>]`: The unique identifer of the identity. In case of Azure Active Directory identities, value is set to the object identifier of the user, group or tenant for types user, group and everyone (and everyoneExceptGuests) respectively. In case of external groups value is set to the ID of the externalGroup
-
-`ACTIVITIES <IMicrosoftGraphExternalConnectorsExternalActivity[]>`: Returns a list of activities performed on the item. Write-only.
+`ACTIVITIES <IMicrosoftGraphExternalConnectorsExternalActivity[]>`: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[PerformedBy <IMicrosoftGraphExternalConnectorsIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -272,14 +216,9 @@ To create the parameters described below, construct a hash table containing the 
   - `[StartDateTime <DateTime?>]`: The date and time when the particular activity occurred. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Type <String>]`: externalActivityType
 
-`BODYPARAMETER <IMicrosoftGraphExternalConnectorsExternalItem>`: externalItem
+`BODYPARAMETER <IPaths5Uv0B2ExternalConnectionsExternalconnectionIdItemsExternalitemIdMicrosoftGraphExternalconnectorsAddactivitiesPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[Acl <IMicrosoftGraphExternalConnectorsAcl[]>]`: An array of access control entries. Each entry specifies the access granted to a user or group. Required.
-    - `[AccessType <String>]`: accessType
-    - `[Type <String>]`: aclType
-    - `[Value <String>]`: The unique identifer of the identity. In case of Azure Active Directory identities, value is set to the object identifier of the user, group or tenant for types user, group and everyone (and everyoneExceptGuests) respectively. In case of external groups value is set to the ID of the externalGroup
-  - `[Activities <IMicrosoftGraphExternalConnectorsExternalActivity[]>]`: Returns a list of activities performed on the item. Write-only.
+  - `[Activities <IMicrosoftGraphExternalConnectorsExternalActivity[]>]`: 
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[PerformedBy <IMicrosoftGraphExternalConnectorsIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -287,17 +226,6 @@ To create the parameters described below, construct a hash table containing the 
       - `[Type <String>]`: identityType
     - `[StartDateTime <DateTime?>]`: The date and time when the particular activity occurred. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[Type <String>]`: externalActivityType
-  - `[Content <IMicrosoftGraphExternalConnectorsExternalItemContent>]`: externalItemContent
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Type <String>]`: externalItemContentType
-    - `[Value <String>]`: The content for the externalItem. Required.
-  - `[Properties <IMicrosoftGraphExternalConnectorsProperties>]`: properties
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-
-`CONTENT <IMicrosoftGraphExternalConnectorsExternalItemContent>`: externalItemContent
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Type <String>]`: externalItemContentType
-  - `[Value <String>]`: The content for the externalItem. Required.
 
 `INPUTOBJECT <ISearchIdentity>`: Identity Parameter
   - `[ConnectionOperationId <String>]`: The unique identifier of connectionOperation

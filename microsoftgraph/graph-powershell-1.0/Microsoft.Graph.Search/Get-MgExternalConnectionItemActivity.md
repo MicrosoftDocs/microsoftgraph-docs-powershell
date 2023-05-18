@@ -1,78 +1,56 @@
 ---
 external help file:
 Module Name: Microsoft.Graph.Search
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnectiongroupmember
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnectionitemactivity
 schema: 2.0.0
 ---
 
-# Get-MgExternalConnectionGroupMember
+# Get-MgExternalConnectionItemActivity
 
 ## SYNOPSIS
-A member added to an externalGroup.
-You can add Azure Active Directory users, Azure Active Directory groups, or an externalGroup as members.
+Returns a list of activities performed on the item.
+Write-only.
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgExternalConnectionGroupMember -ExternalConnectionId <String> -ExternalGroupId <String>
+Get-MgExternalConnectionItemActivity -ExternalConnectionId <String> -ExternalItemId <String>
  [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
  [-Sort <String[]>] [-Top <Int32>] [-All] [-CountVariable <String>] [-PageSize <Int32>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgExternalConnectionGroupMember -ExternalConnectionId <String> -ExternalGroupId <String>
- -IdentityId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgExternalConnectionItemActivity -ExternalActivityId <String> -ExternalConnectionId <String>
+ -ExternalItemId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgExternalConnectionGroupMember -InputObject <ISearchIdentity> [-ExpandProperty <String[]>]
+Get-MgExternalConnectionItemActivity -InputObject <ISearchIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-A member added to an externalGroup.
-You can add Azure Active Directory users, Azure Active Directory groups, or an externalGroup as members.
+Returns a list of activities performed on the item.
+Write-only.
 
 ## EXAMPLES
 
 ### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Search
+{{ Add code here }}
 ```
 
-$params = @{
-	Id = "e811976d-83df-4cbd-8b9b-5215b18aa874"
-	Type = "user"
-}
 
-New-MgExternalConnectionGroupMember -ExternalConnectionId $externalConnectionId -ExternalGroupId $externalGroupId -BodyParameter $params
 
 ### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Search
+{{ Add code here }}
 ```
 
-$params = @{
-	Id = "e5477431-1038-484e-bf69-1dfedb97a110"
-	Type = "group"
-}
 
-New-MgExternalConnectionGroupMember -ExternalConnectionId $externalConnectionId -ExternalGroupId $externalGroupId -BodyParameter $params
-
-### -------------------------- EXAMPLE 3 --------------------------
-```powershell
-Import-Module Microsoft.Graph.Search
-```
-
-$params = @{
-	Id = "1431b9c38ee647f6a"
-	Type = "externalGroup"
-}
-
-New-MgExternalConnectionGroupMember -ExternalConnectionId $externalConnectionId -ExternalGroupId $externalGroupId -BodyParameter $params
 
 ## PARAMETERS
 
@@ -122,6 +100,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ExternalActivityId
+The unique identifier of externalActivity
+
+```yaml
+Type: System.String
+Parameter Sets: Get
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ExternalConnectionId
 The unique identifier of externalConnection
 
@@ -137,8 +130,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ExternalGroupId
-The unique identifier of externalGroup
+### -ExternalItemId
+The unique identifier of externalItem
 
 ```yaml
 Type: System.String
@@ -161,21 +154,6 @@ Parameter Sets: List
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -IdentityId
-The unique identifier of identity
-
-```yaml
-Type: System.String
-Parameter Sets: Get
-Aliases:
-
-Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -297,7 +275,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsIdentity
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalActivity
 
 ## NOTES
 

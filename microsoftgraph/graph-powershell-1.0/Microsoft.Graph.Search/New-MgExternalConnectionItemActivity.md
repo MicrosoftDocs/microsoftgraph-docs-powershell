@@ -1,47 +1,45 @@
 ---
 external help file:
 Module Name: Microsoft.Graph.Search
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnectionoperation
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnectionitemactivity
 schema: 2.0.0
 ---
 
-# New-MgExternalConnectionOperation
+# New-MgExternalConnectionItemActivity
 
 ## SYNOPSIS
-Create new navigation property to operations for external
+Create new navigation property to activities for external
 
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
-New-MgExternalConnectionOperation -ExternalConnectionId <String> [-AdditionalProperties <Hashtable>]
- [-Error <IMicrosoftGraphPublicError>] [-Id <String>] [-Status <String>] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+New-MgExternalConnectionItemActivity -ExternalConnectionId <String> -ExternalItemId <String>
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-PerformedBy <IMicrosoftGraphExternalConnectorsIdentity>]
+ [-StartDateTime <DateTime>] [-Type <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgExternalConnectionOperation -ExternalConnectionId <String>
- -BodyParameter <IMicrosoftGraphExternalConnectorsConnectionOperation> [-Confirm] [-WhatIf]
- [<CommonParameters>]
+New-MgExternalConnectionItemActivity -ExternalConnectionId <String> -ExternalItemId <String>
+ -BodyParameter <IMicrosoftGraphExternalConnectorsExternalActivity> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgExternalConnectionOperation -InputObject <ISearchIdentity>
- -BodyParameter <IMicrosoftGraphExternalConnectorsConnectionOperation> [-Confirm] [-WhatIf]
- [<CommonParameters>]
+New-MgExternalConnectionItemActivity -InputObject <ISearchIdentity>
+ -BodyParameter <IMicrosoftGraphExternalConnectorsExternalActivity> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgExternalConnectionOperation -InputObject <ISearchIdentity> [-AdditionalProperties <Hashtable>]
- [-Error <IMicrosoftGraphPublicError>] [-Id <String>] [-Status <String>] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+New-MgExternalConnectionItemActivity -InputObject <ISearchIdentity> [-AdditionalProperties <Hashtable>]
+ [-Id <String>] [-PerformedBy <IMicrosoftGraphExternalConnectorsIdentity>] [-StartDateTime <DateTime>]
+ [-Type <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create new navigation property to operations for external
+Create new navigation property to activities for external
 
 ## EXAMPLES
 
@@ -50,14 +48,14 @@ Create new navigation property to operations for external
 {{ Add code here }}
 ```
 
-{{ Add output here }}
+
 
 ### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
-{{ Add output here }}
+
 
 ## PARAMETERS
 
@@ -77,11 +75,11 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-connectionOperation
+externalActivity
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsConnectionOperation
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalActivity
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -92,24 +90,23 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Error
-publicError
-To construct, see NOTES section for ERROR properties and create a hash table.
+### -ExternalConnectionId
+The unique identifier of externalConnection
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPublicError
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ExternalConnectionId
-The unique identifier of externalConnection
+### -ExternalItemId
+The unique identifier of externalItem
 
 ```yaml
 Type: System.String
@@ -155,8 +152,41 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Status
-connectionOperationStatus
+### -PerformedBy
+identity
+To construct, see NOTES section for PERFORMEDBY properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsIdentity
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -StartDateTime
+The date and time when the particular activity occurred.
+The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+
+```yaml
+Type: System.DateTime
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Type
+externalActivityType
 
 ```yaml
 Type: System.String
@@ -206,13 +236,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsConnectionOperation
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalActivity
 
 ### Microsoft.Graph.PowerShell.Models.ISearchIdentity
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsConnectionOperation
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalActivity
 
 ## NOTES
 
@@ -223,41 +253,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-`BODYPARAMETER <IMicrosoftGraphExternalConnectorsConnectionOperation>`: connectionOperation
+`BODYPARAMETER <IMicrosoftGraphExternalConnectorsExternalActivity>`: externalActivity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[Error <IMicrosoftGraphPublicError>]`: publicError
+  - `[PerformedBy <IMicrosoftGraphExternalConnectorsIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Code <String>]`: Represents the error code.
-    - `[Details <IMicrosoftGraphPublicErrorDetail[]>]`: Details of the error.
-      - `[Code <String>]`: The error code.
-      - `[Message <String>]`: The error message.
-      - `[Target <String>]`: The target of the error.
-    - `[InnerError <IMicrosoftGraphPublicInnerError>]`: publicInnerError
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Code <String>]`: The error code.
-      - `[Details <IMicrosoftGraphPublicErrorDetail[]>]`: A collection of error details.
-      - `[Message <String>]`: The error message.
-      - `[Target <String>]`: The target of the error.
-    - `[Message <String>]`: A non-localized message for the developer.
-    - `[Target <String>]`: The target of the error.
-  - `[Status <String>]`: connectionOperationStatus
-
-`ERROR <IMicrosoftGraphPublicError>`: publicError
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Code <String>]`: Represents the error code.
-  - `[Details <IMicrosoftGraphPublicErrorDetail[]>]`: Details of the error.
-    - `[Code <String>]`: The error code.
-    - `[Message <String>]`: The error message.
-    - `[Target <String>]`: The target of the error.
-  - `[InnerError <IMicrosoftGraphPublicInnerError>]`: publicInnerError
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Code <String>]`: The error code.
-    - `[Details <IMicrosoftGraphPublicErrorDetail[]>]`: A collection of error details.
-    - `[Message <String>]`: The error message.
-    - `[Target <String>]`: The target of the error.
-  - `[Message <String>]`: A non-localized message for the developer.
-  - `[Target <String>]`: The target of the error.
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Type <String>]`: identityType
+  - `[StartDateTime <DateTime?>]`: The date and time when the particular activity occurred. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[Type <String>]`: externalActivityType
 
 `INPUTOBJECT <ISearchIdentity>`: Identity Parameter
   - `[ConnectionOperationId <String>]`: The unique identifier of connectionOperation
@@ -266,6 +270,11 @@ To create the parameters described below, construct a hash table containing the 
   - `[ExternalGroupId <String>]`: The unique identifier of externalGroup
   - `[ExternalItemId <String>]`: The unique identifier of externalItem
   - `[IdentityId <String>]`: The unique identifier of identity
+
+`PERFORMEDBY <IMicrosoftGraphExternalConnectorsIdentity>`: identity
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Type <String>]`: identityType
 
 ## RELATED LINKS
 
