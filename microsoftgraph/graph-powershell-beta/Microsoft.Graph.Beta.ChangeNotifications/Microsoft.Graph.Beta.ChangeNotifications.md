@@ -1,35 +1,35 @@
 ---
-Module Name: Microsoft.Graph.ChangeNotifications
-Module Guid: fe84888e-b132-42c6-b154-591e21144bda
-Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.changenotifications
+Module Name: Microsoft.Graph.Beta.ChangeNotifications
+Module Guid: d49562da-00e0-43c2-a935-0a45c6b6e506
+Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications
 Help Version: 1.0.0.0
 Locale: en-US
 ---
 
-# Microsoft.Graph.ChangeNotifications Module
+# Microsoft.Graph.Beta.ChangeNotifications Module
 ## Description
 Microsoft Graph PowerShell Cmdlets
 
-## Microsoft.Graph.ChangeNotifications Cmdlets
-### [Get-MgSubscription](Get-MgSubscription.md)
+## Microsoft.Graph.Beta.ChangeNotifications Cmdlets
+### [Get-MgBetaSubscription](Get-MgBetaSubscription.md)
 Retrieve the properties and relationships of a subscription.
 See the table in the Permissions section for the list of resources that support subscribing to change notifications.
 
-### [Invoke-MgReauthorizeSubscription](Invoke-MgReauthorizeSubscription.md)
-Invoke action reauthorize
+### [Invoke-MgBetaReauthorizeSubscription](Invoke-MgBetaReauthorizeSubscription.md)
+Reauthorize a subscription when you receive a **reauthorizationRequired** challenge.
 
-### [New-MgSubscription](New-MgSubscription.md)
+### [New-MgBetaSubscription](New-MgBetaSubscription.md)
 Subscribes a listener application to receive change notifications when the requested type of changes occur to the specified resource in Microsoft Graph.
 See the table in the Permissions section for the list of resources that support subscribing to change notifications.
 Some resources support the option to include encrypted resource data in change notifications.
 These resources include chatMessage, contact, event, message, onlineMeetings and presence.
 For more information, see Set up change notifications that include resource data and Change notifications for Outlook resources in Microsoft Graph.
 
-### [Remove-MgSubscription](Remove-MgSubscription.md)
+### [Remove-MgBetaSubscription](Remove-MgBetaSubscription.md)
 Delete a subscription.
 For the list of resources that support subscribing to change notifications, see the table in the Permissions section.
 
-### [Update-MgSubscription](Update-MgSubscription.md)
+### [Update-MgBetaSubscription](Update-MgBetaSubscription.md)
 Renew a subscription by extending its expiry time.
 The table in the Permissions section lists the resources that support subscribing to change notifications.
 Subscriptions expire after a length of time that varies by resource type.
