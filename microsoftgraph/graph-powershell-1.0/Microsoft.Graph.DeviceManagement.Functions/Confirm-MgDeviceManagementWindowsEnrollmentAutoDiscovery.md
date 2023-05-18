@@ -1,31 +1,30 @@
 ---
 external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Functions
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.functions/get-mgdevicemanagementdeviceconfigurationomasettingplaintextvalue
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.functions/confirm-mgdevicemanagementwindowsenrollmentautodiscovery
 schema: 2.0.0
 ---
 
-# Get-MgDeviceManagementDeviceConfigurationOmaSettingPlainTextValue
+# Confirm-MgDeviceManagementWindowsEnrollmentAutoDiscovery
 
 ## SYNOPSIS
-Invoke function getOmaSettingPlainTextValue
+Invoke function verifyWindowsEnrollmentAutoDiscovery
 
 ## SYNTAX
 
-### Get (Default)
+### Verify (Default)
 ```
-Get-MgDeviceManagementDeviceConfigurationOmaSettingPlainTextValue -DeviceConfigurationId <String>
- -SecretReferenceValueId <String> [<CommonParameters>]
+Confirm-MgDeviceManagementWindowsEnrollmentAutoDiscovery -DomainName <String> [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### VerifyViaIdentity
 ```
-Get-MgDeviceManagementDeviceConfigurationOmaSettingPlainTextValue
- -InputObject <IDeviceManagementFunctionsIdentity> [<CommonParameters>]
+Confirm-MgDeviceManagementWindowsEnrollmentAutoDiscovery -InputObject <IDeviceManagementFunctionsIdentity>
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke function getOmaSettingPlainTextValue
+Invoke function verifyWindowsEnrollmentAutoDiscovery
 
 ## EXAMPLES
 
@@ -34,23 +33,23 @@ Invoke function getOmaSettingPlainTextValue
 {{ Add code here }}
 ```
 
-{{ Add output here }}
+
 
 ### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
-{{ Add output here }}
+
 
 ## PARAMETERS
 
-### -DeviceConfigurationId
-The unique identifier of deviceConfiguration
+### -DomainName
+Usage: domainName='{domainName}'
 
 ```yaml
 Type: System.String
-Parameter Sets: Get
+Parameter Sets: Verify
 Aliases:
 
 Required: True
@@ -66,28 +65,13 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementFunctionsIdentity
-Parameter Sets: GetViaIdentity
+Parameter Sets: VerifyViaIdentity
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -SecretReferenceValueId
-Usage: secretReferenceValueId='{secretReferenceValueId}'
-
-```yaml
-Type: System.String
-Parameter Sets: Get
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -100,7 +84,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### System.String
+### System.Boolean
 
 ## NOTES
 
