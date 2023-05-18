@@ -1,31 +1,31 @@
 ---
 external help file:
 Module Name: Microsoft.Graph.Bookings
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgbookingcurrency
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinesscustomercount
 schema: 2.0.0
 ---
 
-# Remove-MgBookingCurrency
+# Get-MgBookingBusinessCustomerCount
 
 ## SYNOPSIS
-Delete navigation property bookingCurrencies for solutions
+Get the number of the resource
 
 ## SYNTAX
 
-### Delete (Default)
+### Get (Default)
 ```
-Remove-MgBookingCurrency -BookingCurrencyId <String> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf]
+Get-MgBookingBusinessCustomerCount -BookingBusinessId <String> [-Filter <String>] [-Search <String>]
  [<CommonParameters>]
 ```
 
-### DeleteViaIdentity
+### GetViaIdentity
 ```
-Remove-MgBookingCurrency -InputObject <IBookingsIdentity> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf]
+Get-MgBookingBusinessCustomerCount -InputObject <IBookingsIdentity> [-Filter <String>] [-Search <String>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete navigation property bookingCurrencies for solutions
+Get the number of the resource
 
 ## EXAMPLES
 
@@ -34,23 +34,23 @@ Delete navigation property bookingCurrencies for solutions
 {{ Add code here }}
 ```
 
-{{ Add output here }}
+
 
 ### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
-{{ Add output here }}
+
 
 ## PARAMETERS
 
-### -BookingCurrencyId
-The unique identifier of bookingCurrency
+### -BookingBusinessId
+The unique identifier of bookingBusiness
 
 ```yaml
 Type: System.String
-Parameter Sets: Delete
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -60,8 +60,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -IfMatch
-ETag
+### -Filter
+Filter items by property values
 
 ```yaml
 Type: System.String
@@ -81,7 +81,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: Microsoft.Graph.PowerShell.Models.IBookingsIdentity
-Parameter Sets: DeleteViaIdentity
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
@@ -91,44 +91,13 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
+### -Search
+Search items by search phrases
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: System.String
 Parameter Sets: (All)
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
 
 Required: False
 Position: Named
@@ -146,7 +115,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### System.Boolean
+### System.Int32
 
 ## NOTES
 
