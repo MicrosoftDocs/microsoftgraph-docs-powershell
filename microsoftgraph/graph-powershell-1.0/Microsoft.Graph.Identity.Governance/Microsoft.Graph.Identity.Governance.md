@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Identity.Governance
 Module Guid: 08044584-086e-4e1b-a101-7c50d09300d3
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance
@@ -132,8 +132,42 @@ Get the number of the resource
 ### [Get-MgEntitlementManagementCatalog](Get-MgEntitlementManagementCatalog.md)
 Retrieve the properties and relationships of an accessPackageCatalog object.
 
+### [Get-MgEntitlementManagementCatalogAccessPackageApplicablePolicyRequirement](Get-MgEntitlementManagementCatalogAccessPackageApplicablePolicyRequirement.md)
+In Azure AD entitlement management, this action retrieves a list of accessPackageAssignmentRequestRequirements objects that the currently signed-in user can use to create an accessPackageAssignmentRequest.
+Each requirement object corresponds to an access package assignment policy that the currently signed-in user is allowed to request an assignment for.
+
+### [Get-MgEntitlementManagementCatalogAccessPackageAssignmentPolicy](Get-MgEntitlementManagementCatalogAccessPackageAssignmentPolicy.md)
+Get assignmentPolicies from identityGovernance
+
+### [Get-MgEntitlementManagementCatalogAccessPackageAssignmentPolicyAccessPackage](Get-MgEntitlementManagementCatalogAccessPackageAssignmentPolicyAccessPackage.md)
+Access package containing this policy.
+Read-only.
+
+### [Get-MgEntitlementManagementCatalogAccessPackageAssignmentPolicyCatalog](Get-MgEntitlementManagementCatalogAccessPackageAssignmentPolicyCatalog.md)
+Catalog of the access package containing this policy.
+Read-only.
+
+### [Get-MgEntitlementManagementCatalogAccessPackageAssignmentPolicyQuestion](Get-MgEntitlementManagementCatalogAccessPackageAssignmentPolicyQuestion.md)
+Questions that are posed to the  requestor.
+
 ### [Get-MgEntitlementManagementCatalogAccessPackageCount](Get-MgEntitlementManagementCatalogAccessPackageCount.md)
 Get the number of the resource
+
+### [Get-MgEntitlementManagementCatalogAccessPackageIncompatibleAccessPackage](Get-MgEntitlementManagementCatalogAccessPackageIncompatibleAccessPackage.md)
+Retrieve a list of the accessPackage objects that have been marked as incompatible on an accessPackage.
+
+### [Get-MgEntitlementManagementCatalogAccessPackageIncompatibleAccessPackageByRef](Get-MgEntitlementManagementCatalogAccessPackageIncompatibleAccessPackageByRef.md)
+Retrieve a list of the accessPackage objects that have been marked as incompatible on an accessPackage.
+
+### [Get-MgEntitlementManagementCatalogAccessPackageIncompatibleGroup](Get-MgEntitlementManagementCatalogAccessPackageIncompatibleGroup.md)
+Retrieve a list of the group objects that have been marked as incompatible on an accessPackage.
+
+### [Get-MgEntitlementManagementCatalogAccessPackageIncompatibleGroupByRef](Get-MgEntitlementManagementCatalogAccessPackageIncompatibleGroupByRef.md)
+Retrieve a list of the group objects that have been marked as incompatible on an accessPackage.
+
+### [Get-MgEntitlementManagementCatalogAccessPackageIncompatibleWith](Get-MgEntitlementManagementCatalogAccessPackageIncompatibleWith.md)
+The access packages that are incompatible with this package.
+Read-only.
 
 ### [Get-MgEntitlementManagementCatalogCount](Get-MgEntitlementManagementCatalogCount.md)
 Get the number of the resource
@@ -348,16 +382,8 @@ If the request is from an eligible administrator to activate a role, this parame
 Otherwise, it is null.
 Supports $expand.
 
-### [Get-MgRoleManagementDirectoryRoleAssignmentScheduleAppScope](Get-MgRoleManagementDirectoryRoleAssignmentScheduleAppScope.md)
-Read-only property with details of the app-specific scope when the role eligibility or assignment is scoped to an app.
-Nullable.
-
 ### [Get-MgRoleManagementDirectoryRoleAssignmentScheduleCount](Get-MgRoleManagementDirectoryRoleAssignmentScheduleCount.md)
 Get the number of the resource
-
-### [Get-MgRoleManagementDirectoryRoleAssignmentScheduleDirectoryScope](Get-MgRoleManagementDirectoryRoleAssignmentScheduleDirectoryScope.md)
-The directory object that is the scope of the role eligibility or assignment.
-Read-only.
 
 ### [Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstance](Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstance.md)
 Get the instance of an active role assignment.
@@ -367,25 +393,8 @@ If the request is from an eligible administrator to activate a role, this parame
 Otherwise, it is null.
 Supports $expand.
 
-### [Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstanceAppScope](Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstanceAppScope.md)
-Read-only property with details of the app-specific scope when the assignment or role eligibility is scoped to an app.
-Nullable.
-
 ### [Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstanceCount](Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstanceCount.md)
 Get the number of the resource
-
-### [Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstanceDirectoryScope](Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstanceDirectoryScope.md)
-The directory object that is the scope of the assignment or role eligibility.
-Read-only.
-
-### [Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstancePrincipal](Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstancePrincipal.md)
-The principal that's getting a role assignment or role eligibility through the request.
-
-### [Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstanceRoleDefinition](Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstanceRoleDefinition.md)
-Detailed information for the roleDefinition object that is referenced through the roleDefinitionId property.
-
-### [Get-MgRoleManagementDirectoryRoleAssignmentSchedulePrincipal](Get-MgRoleManagementDirectoryRoleAssignmentSchedulePrincipal.md)
-The principal that's getting a role assignment or that's eligible for a role through the request.
 
 ### [Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequest](Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequest.md)
 In PIM, read the details of a request for an active and persistent role assignment made through the unifiedRoleAssignmentScheduleRequest object.
@@ -420,9 +429,6 @@ Supports $expand.
 The schedule for an eligible role assignment that is referenced through the targetScheduleId property.
 Supports $expand.
 
-### [Get-MgRoleManagementDirectoryRoleAssignmentScheduleRoleDefinition](Get-MgRoleManagementDirectoryRoleAssignmentScheduleRoleDefinition.md)
-Detailed information for the roleDefinition object that is referenced through the roleDefinitionId property.
-
 ### [Get-MgRoleManagementDirectoryRoleDefinition](Get-MgRoleManagementDirectoryRoleDefinition.md)
 Read the properties and relationships of a unifiedRoleDefinition object.
 The following role-based access control (RBAC) providers are currently supported:
@@ -441,39 +447,14 @@ Get the number of the resource
 ### [Get-MgRoleManagementDirectoryRoleEligibilitySchedule](Get-MgRoleManagementDirectoryRoleEligibilitySchedule.md)
 Retrieve the schedule for a role eligibility operation.
 
-### [Get-MgRoleManagementDirectoryRoleEligibilityScheduleAppScope](Get-MgRoleManagementDirectoryRoleEligibilityScheduleAppScope.md)
-Read-only property with details of the app-specific scope when the role eligibility or assignment is scoped to an app.
-Nullable.
-
 ### [Get-MgRoleManagementDirectoryRoleEligibilityScheduleCount](Get-MgRoleManagementDirectoryRoleEligibilityScheduleCount.md)
 Get the number of the resource
-
-### [Get-MgRoleManagementDirectoryRoleEligibilityScheduleDirectoryScope](Get-MgRoleManagementDirectoryRoleEligibilityScheduleDirectoryScope.md)
-The directory object that is the scope of the role eligibility or assignment.
-Read-only.
 
 ### [Get-MgRoleManagementDirectoryRoleEligibilityScheduleInstance](Get-MgRoleManagementDirectoryRoleEligibilityScheduleInstance.md)
 Get the instance of a role eligibility.
 
-### [Get-MgRoleManagementDirectoryRoleEligibilityScheduleInstanceAppScope](Get-MgRoleManagementDirectoryRoleEligibilityScheduleInstanceAppScope.md)
-Read-only property with details of the app-specific scope when the assignment or role eligibility is scoped to an app.
-Nullable.
-
 ### [Get-MgRoleManagementDirectoryRoleEligibilityScheduleInstanceCount](Get-MgRoleManagementDirectoryRoleEligibilityScheduleInstanceCount.md)
 Get the number of the resource
-
-### [Get-MgRoleManagementDirectoryRoleEligibilityScheduleInstanceDirectoryScope](Get-MgRoleManagementDirectoryRoleEligibilityScheduleInstanceDirectoryScope.md)
-The directory object that is the scope of the assignment or role eligibility.
-Read-only.
-
-### [Get-MgRoleManagementDirectoryRoleEligibilityScheduleInstancePrincipal](Get-MgRoleManagementDirectoryRoleEligibilityScheduleInstancePrincipal.md)
-The principal that's getting a role assignment or role eligibility through the request.
-
-### [Get-MgRoleManagementDirectoryRoleEligibilityScheduleInstanceRoleDefinition](Get-MgRoleManagementDirectoryRoleEligibilityScheduleInstanceRoleDefinition.md)
-Detailed information for the roleDefinition object that is referenced through the roleDefinitionId property.
-
-### [Get-MgRoleManagementDirectoryRoleEligibilitySchedulePrincipal](Get-MgRoleManagementDirectoryRoleEligibilitySchedulePrincipal.md)
-The principal that's getting a role assignment or that's eligible for a role through the request.
 
 ### [Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequest](Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequest.md)
 In PIM, read the details of a request for for a role eligibility request made through the unifiedRoleEligibilityScheduleRequest object.
@@ -502,9 +483,6 @@ Supports $expand.
 ### [Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequestTargetSchedule](Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequestTargetSchedule.md)
 The schedule for a role eligibility that is referenced through the targetScheduleId property.
 Supports $expand.
-
-### [Get-MgRoleManagementDirectoryRoleEligibilityScheduleRoleDefinition](Get-MgRoleManagementDirectoryRoleEligibilityScheduleRoleDefinition.md)
-Detailed information for the roleDefinition object that is referenced through the roleDefinitionId property.
 
 ### [Get-MgRoleManagementEntitlementManagement](Get-MgRoleManagementEntitlementManagement.md)
 Container for roles and assignments for entitlement management resources.
@@ -555,16 +533,8 @@ If the request is from an eligible administrator to activate a role, this parame
 Otherwise, it is null.
 Supports $expand.
 
-### [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleAppScope](Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleAppScope.md)
-Read-only property with details of the app-specific scope when the role eligibility or assignment is scoped to an app.
-Nullable.
-
 ### [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleCount](Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleCount.md)
 Get the number of the resource
-
-### [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleDirectoryScope](Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleDirectoryScope.md)
-The directory object that is the scope of the role eligibility or assignment.
-Read-only.
 
 ### [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance](Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance.md)
 Get the instance of an active role assignment.
@@ -574,25 +544,8 @@ If the request is from an eligible administrator to activate a role, this parame
 Otherwise, it is null.
 Supports $expand.
 
-### [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceAppScope](Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceAppScope.md)
-Read-only property with details of the app-specific scope when the assignment or role eligibility is scoped to an app.
-Nullable.
-
 ### [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceCount](Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceCount.md)
 Get the number of the resource
-
-### [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceDirectoryScope](Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceDirectoryScope.md)
-The directory object that is the scope of the assignment or role eligibility.
-Read-only.
-
-### [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstancePrincipal](Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstancePrincipal.md)
-The principal that's getting a role assignment or role eligibility through the request.
-
-### [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceRoleDefinition](Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceRoleDefinition.md)
-Detailed information for the roleDefinition object that is referenced through the roleDefinitionId property.
-
-### [Get-MgRoleManagementEntitlementManagementRoleAssignmentSchedulePrincipal](Get-MgRoleManagementEntitlementManagementRoleAssignmentSchedulePrincipal.md)
-The principal that's getting a role assignment or that's eligible for a role through the request.
 
 ### [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest](Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest.md)
 In PIM, read the details of a request for an active and persistent role assignment made through the unifiedRoleAssignmentScheduleRequest object.
@@ -627,9 +580,6 @@ Supports $expand.
 The schedule for an eligible role assignment that is referenced through the targetScheduleId property.
 Supports $expand.
 
-### [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRoleDefinition](Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRoleDefinition.md)
-Detailed information for the roleDefinition object that is referenced through the roleDefinitionId property.
-
 ### [Get-MgRoleManagementEntitlementManagementRoleDefinition](Get-MgRoleManagementEntitlementManagementRoleDefinition.md)
 Read the properties and relationships of a unifiedRoleDefinition object.
 The following role-based access control (RBAC) providers are currently supported:
@@ -648,39 +598,14 @@ Get the number of the resource
 ### [Get-MgRoleManagementEntitlementManagementRoleEligibilitySchedule](Get-MgRoleManagementEntitlementManagementRoleEligibilitySchedule.md)
 Retrieve the schedule for a role eligibility operation.
 
-### [Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleAppScope](Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleAppScope.md)
-Read-only property with details of the app-specific scope when the role eligibility or assignment is scoped to an app.
-Nullable.
-
 ### [Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleCount](Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleCount.md)
 Get the number of the resource
-
-### [Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleDirectoryScope](Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleDirectoryScope.md)
-The directory object that is the scope of the role eligibility or assignment.
-Read-only.
 
 ### [Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstance](Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstance.md)
 Get the instance of a role eligibility.
 
-### [Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstanceAppScope](Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstanceAppScope.md)
-Read-only property with details of the app-specific scope when the assignment or role eligibility is scoped to an app.
-Nullable.
-
 ### [Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstanceCount](Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstanceCount.md)
 Get the number of the resource
-
-### [Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstanceDirectoryScope](Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstanceDirectoryScope.md)
-The directory object that is the scope of the assignment or role eligibility.
-Read-only.
-
-### [Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstancePrincipal](Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstancePrincipal.md)
-The principal that's getting a role assignment or role eligibility through the request.
-
-### [Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstanceRoleDefinition](Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstanceRoleDefinition.md)
-Detailed information for the roleDefinition object that is referenced through the roleDefinitionId property.
-
-### [Get-MgRoleManagementEntitlementManagementRoleEligibilitySchedulePrincipal](Get-MgRoleManagementEntitlementManagementRoleEligibilitySchedulePrincipal.md)
-The principal that's getting a role assignment or that's eligible for a role through the request.
 
 ### [Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest](Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest.md)
 In PIM, read the details of a request for for a role eligibility request made through the unifiedRoleEligibilityScheduleRequest object.
@@ -710,9 +635,6 @@ Supports $expand.
 The schedule for a role eligibility that is referenced through the targetScheduleId property.
 Supports $expand.
 
-### [Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRoleDefinition](Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRoleDefinition.md)
-Detailed information for the roleDefinition object that is referenced through the roleDefinitionId property.
-
 ### [Get-MgUserAgreementAcceptance](Get-MgUserAgreementAcceptance.md)
 The user's terms of use acceptance statuses.
 Read-only.
@@ -737,6 +659,9 @@ Invoke function filterByCurrentUser
 Invoke function filterByCurrentUser
 
 ### [Invoke-MgFilterEntitlementManagementAssignmentRequestByCurrentUser](Invoke-MgFilterEntitlementManagementAssignmentRequestByCurrentUser.md)
+Invoke function filterByCurrentUser
+
+### [Invoke-MgFilterEntitlementManagementCatalogAccessPackageByCurrentUser](Invoke-MgFilterEntitlementManagementCatalogAccessPackageByCurrentUser.md)
 Invoke function filterByCurrentUser
 
 ### [Invoke-MgFilterIdentityGovernanceAccessReviewDefinitionByCurrentUser](Invoke-MgFilterIdentityGovernanceAccessReviewDefinitionByCurrentUser.md)
@@ -846,6 +771,18 @@ This operation is used to assign a user to an access package, update the assignm
 
 ### [New-MgEntitlementManagementCatalog](New-MgEntitlementManagementCatalog.md)
 Create a new accessPackageCatalog object.
+
+### [New-MgEntitlementManagementCatalogAccessPackageAssignmentPolicy](New-MgEntitlementManagementCatalogAccessPackageAssignmentPolicy.md)
+Create new navigation property to assignmentPolicies for identityGovernance
+
+### [New-MgEntitlementManagementCatalogAccessPackageAssignmentPolicyQuestion](New-MgEntitlementManagementCatalogAccessPackageAssignmentPolicyQuestion.md)
+Create new navigation property to questions for identityGovernance
+
+### [New-MgEntitlementManagementCatalogAccessPackageIncompatibleAccessPackageByRef](New-MgEntitlementManagementCatalogAccessPackageIncompatibleAccessPackageByRef.md)
+Create new navigation property ref to incompatibleAccessPackages for identityGovernance
+
+### [New-MgEntitlementManagementCatalogAccessPackageIncompatibleGroupByRef](New-MgEntitlementManagementCatalogAccessPackageIncompatibleGroupByRef.md)
+Create new navigation property ref to incompatibleGroups for identityGovernance
 
 ### [New-MgEntitlementManagementConnectedOrganization](New-MgEntitlementManagementConnectedOrganization.md)
 Create new navigation property to connectedOrganizations for identityGovernance
@@ -1041,6 +978,18 @@ You cannot delete an access package assignment request if it has any **accessPac
 
 ### [Remove-MgEntitlementManagementCatalog](Remove-MgEntitlementManagementCatalog.md)
 Delete an accessPackageCatalog.
+
+### [Remove-MgEntitlementManagementCatalogAccessPackageAssignmentPolicy](Remove-MgEntitlementManagementCatalogAccessPackageAssignmentPolicy.md)
+Delete navigation property assignmentPolicies for identityGovernance
+
+### [Remove-MgEntitlementManagementCatalogAccessPackageAssignmentPolicyQuestion](Remove-MgEntitlementManagementCatalogAccessPackageAssignmentPolicyQuestion.md)
+Delete navigation property questions for identityGovernance
+
+### [Remove-MgEntitlementManagementCatalogAccessPackageIncompatibleAccessPackageByRef](Remove-MgEntitlementManagementCatalogAccessPackageIncompatibleAccessPackageByRef.md)
+Delete ref of navigation property incompatibleAccessPackages for identityGovernance
+
+### [Remove-MgEntitlementManagementCatalogAccessPackageIncompatibleGroupByRef](Remove-MgEntitlementManagementCatalogAccessPackageIncompatibleGroupByRef.md)
+Delete ref of navigation property incompatibleGroups for identityGovernance
 
 ### [Remove-MgEntitlementManagementConnectedOrganization](Remove-MgEntitlementManagementConnectedOrganization.md)
 Delete a connectedOrganization object.
@@ -1297,6 +1246,12 @@ Invoke action reprocess
 
 ### [Update-MgEntitlementManagementCatalog](Update-MgEntitlementManagementCatalog.md)
 Update an existing accessPackageCatalog object to change one or more of its properties, such as the display name or description.
+
+### [Update-MgEntitlementManagementCatalogAccessPackageAssignmentPolicy](Update-MgEntitlementManagementCatalogAccessPackageAssignmentPolicy.md)
+Update the navigation property assignmentPolicies in identityGovernance
+
+### [Update-MgEntitlementManagementCatalogAccessPackageAssignmentPolicyQuestion](Update-MgEntitlementManagementCatalogAccessPackageAssignmentPolicyQuestion.md)
+Update the navigation property questions in identityGovernance
 
 ### [Update-MgEntitlementManagementConnectedOrganization](Update-MgEntitlementManagementConnectedOrganization.md)
 Update a connectedOrganization object to change one or more of its properties.

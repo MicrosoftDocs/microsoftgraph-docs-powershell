@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Bookings
 Module Guid: 92b40230-0d69-48e6-bb4e-d6c4ff76bd67
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings
@@ -91,23 +91,11 @@ Get the number of the resource
 ### [Get-MgBetaBusinessScenarioPlannerTask](Get-MgBetaBusinessScenarioPlannerTask.md)
 Read the properties and relationships of a businessScenarioTask object.
 
-### [Get-MgBetaBusinessScenarioPlannerTaskAssignedToTaskBoardFormat](Get-MgBetaBusinessScenarioPlannerTaskAssignedToTaskBoardFormat.md)
-Retrieve the properties and relationships of **plannerAssignedToTaskBoardTaskFormat** object.
-
-### [Get-MgBetaBusinessScenarioPlannerTaskBucketTaskBoardFormat](Get-MgBetaBusinessScenarioPlannerTaskBucketTaskBoardFormat.md)
-Retrieve the properties and relationships of **plannerBucketTaskBoardTaskFormat** object.
-
 ### [Get-MgBetaBusinessScenarioPlannerTaskConfiguration](Get-MgBetaBusinessScenarioPlannerTaskConfiguration.md)
 Read the properties and relationships of a plannerTaskConfiguration object.
 
 ### [Get-MgBetaBusinessScenarioPlannerTaskCount](Get-MgBetaBusinessScenarioPlannerTaskCount.md)
 Get the number of the resource
-
-### [Get-MgBetaBusinessScenarioPlannerTaskDetail](Get-MgBetaBusinessScenarioPlannerTaskDetail.md)
-Retrieve the properties and relationships of a **plannerTaskDetails** object.
-
-### [Get-MgBetaBusinessScenarioPlannerTaskProgressTaskBoardFormat](Get-MgBetaBusinessScenarioPlannerTaskProgressTaskBoardFormat.md)
-Retrieve the properties and relationships of **plannerProgressTaskBoardTaskFormat** object.
 
 ### [New-MgBetaBookingBusiness](New-MgBetaBookingBusiness.md)
 Create a new Microsoft Bookings business in a tenant.
@@ -188,20 +176,8 @@ Delete a plannerPlanConfigurationLocalization object.
 ### [Remove-MgBetaBusinessScenarioPlannerTask](Remove-MgBetaBusinessScenarioPlannerTask.md)
 Delete a businessScenarioTask object.
 
-### [Remove-MgBetaBusinessScenarioPlannerTaskAssignedToTaskBoardFormat](Remove-MgBetaBusinessScenarioPlannerTaskAssignedToTaskBoardFormat.md)
-Delete navigation property assignedToTaskBoardFormat for solutions
-
-### [Remove-MgBetaBusinessScenarioPlannerTaskBucketTaskBoardFormat](Remove-MgBetaBusinessScenarioPlannerTaskBucketTaskBoardFormat.md)
-Delete navigation property bucketTaskBoardFormat for solutions
-
 ### [Remove-MgBetaBusinessScenarioPlannerTaskConfiguration](Remove-MgBetaBusinessScenarioPlannerTaskConfiguration.md)
 Delete navigation property taskConfiguration for solutions
-
-### [Remove-MgBetaBusinessScenarioPlannerTaskDetail](Remove-MgBetaBusinessScenarioPlannerTaskDetail.md)
-Delete navigation property details for solutions
-
-### [Remove-MgBetaBusinessScenarioPlannerTaskProgressTaskBoardFormat](Remove-MgBetaBusinessScenarioPlannerTaskProgressTaskBoardFormat.md)
-Delete navigation property progressTaskBoardFormat for solutions
 
 ### [Stop-MgBetaBookingBusinessAppointment](Stop-MgBetaBookingBusinessAppointment.md)
 Cancel the specified bookingAppointment in the specified bookingBusiness, and send a message to the involved customer and staff members.
@@ -253,18 +229,6 @@ Update the properties of a plannerPlanConfigurationLocalization object.
 ### [Update-MgBetaBusinessScenarioPlannerTask](Update-MgBetaBusinessScenarioPlannerTask.md)
 Update the properties of a businessScenarioTask object.
 
-### [Update-MgBetaBusinessScenarioPlannerTaskAssignedToTaskBoardFormat](Update-MgBetaBusinessScenarioPlannerTaskAssignedToTaskBoardFormat.md)
-Update the navigation property assignedToTaskBoardFormat in solutions
-
-### [Update-MgBetaBusinessScenarioPlannerTaskBucketTaskBoardFormat](Update-MgBetaBusinessScenarioPlannerTaskBucketTaskBoardFormat.md)
-Update the navigation property bucketTaskBoardFormat in solutions
-
 ### [Update-MgBetaBusinessScenarioPlannerTaskConfiguration](Update-MgBetaBusinessScenarioPlannerTaskConfiguration.md)
 Update the properties of a plannerTaskConfiguration object.
-
-### [Update-MgBetaBusinessScenarioPlannerTaskDetail](Update-MgBetaBusinessScenarioPlannerTaskDetail.md)
-Update the navigation property details in solutions
-
-### [Update-MgBetaBusinessScenarioPlannerTaskProgressTaskBoardFormat](Update-MgBetaBusinessScenarioPlannerTaskProgressTaskBoardFormat.md)
-Update the navigation property progressTaskBoardFormat in solutions
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementcatalogaccesspackageassignmentpolicy
@@ -15,7 +15,7 @@ Update the navigation property assignmentPolicies in identityGovernance
 ### UpdateExpanded (Default)
 ```
 Update-MgEntitlementManagementCatalogAccessPackageAssignmentPolicy -AccessPackageAssignmentPolicyId <String>
- -AccessPackageCatalogId <String> -AccessPackageId <String> [-AccessPackage <IMicrosoftGraphAccessPackage1>]
+ -AccessPackageCatalogId <String> -AccessPackageId <String> [-AccessPackage <IMicrosoftGraphAccessPackage>]
  [-AdditionalProperties <Hashtable>] [-AllowedTargetScope <String>]
  [-AutomaticRequestSettings <IMicrosoftGraphAccessPackageAutomaticRequestSettings>]
  [-Catalog <IMicrosoftGraphAccessPackageCatalog>] [-CreatedDateTime <DateTime>] [-Description <String>]
@@ -24,21 +24,20 @@ Update-MgEntitlementManagementCatalogAccessPackageAssignmentPolicy -AccessPackag
  [-RequestApprovalSettings <IMicrosoftGraphAccessPackageAssignmentApprovalSettings>]
  [-RequestorSettings <IMicrosoftGraphAccessPackageAssignmentRequestorSettings>]
  [-ReviewSettings <IMicrosoftGraphAccessPackageAssignmentReviewSettings>]
- [-SpecificAllowedTargets <IMicrosoftGraphSubjectSet[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SpecificAllowedTargets <IMicrosoftGraphSubjectSet[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgEntitlementManagementCatalogAccessPackageAssignmentPolicy -AccessPackageAssignmentPolicyId <String>
  -AccessPackageCatalogId <String> -AccessPackageId <String>
- -BodyParameter <IMicrosoftGraphAccessPackageAssignmentPolicy> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessPackageAssignmentPolicy> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgEntitlementManagementCatalogAccessPackageAssignmentPolicy -InputObject <IIdentityGovernanceIdentity>
- [-AccessPackage <IMicrosoftGraphAccessPackage1>] [-AdditionalProperties <Hashtable>]
+ [-AccessPackage <IMicrosoftGraphAccessPackage>] [-AdditionalProperties <Hashtable>]
  [-AllowedTargetScope <String>]
  [-AutomaticRequestSettings <IMicrosoftGraphAccessPackageAutomaticRequestSettings>]
  [-Catalog <IMicrosoftGraphAccessPackageCatalog>] [-CreatedDateTime <DateTime>] [-Description <String>]
@@ -47,14 +46,13 @@ Update-MgEntitlementManagementCatalogAccessPackageAssignmentPolicy -InputObject 
  [-RequestApprovalSettings <IMicrosoftGraphAccessPackageAssignmentApprovalSettings>]
  [-RequestorSettings <IMicrosoftGraphAccessPackageAssignmentRequestorSettings>]
  [-ReviewSettings <IMicrosoftGraphAccessPackageAssignmentReviewSettings>]
- [-SpecificAllowedTargets <IMicrosoftGraphSubjectSet[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SpecificAllowedTargets <IMicrosoftGraphSubjectSet[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgEntitlementManagementCatalogAccessPackageAssignmentPolicy -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAccessPackageAssignmentPolicy> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessPackageAssignmentPolicy> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -69,7 +67,7 @@ accessPackage
 To construct, please use Get-Help -Online and see NOTES section for ACCESSPACKAGE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackage1
+Type: IMicrosoftGraphAccessPackage
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -313,21 +311,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Questions
 Questions that are posed to the requestor.
 To construct, please use Get-Help -Online and see NOTES section for QUESTIONS properties and create a hash table.
@@ -447,7 +430,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageAssignmentPolicy
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageAssignmentPolicy
 ## NOTES
 
 ALIASES
@@ -8664,5 +8647,8 @@ REVIEWSETTINGS `<IMicrosoftGraphAccessPackageAssignmentReviewSettings>`: accessP
     - `[StartDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS

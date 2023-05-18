@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Compliance
 Module Guid: c9e0859a-16da-4dca-b57f-c9cd26d5db0d
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance
@@ -57,9 +57,6 @@ Read the properties and relationships of a custodian object.
 
 ### [Get-MgBetaComplianceEdiscoveryCaseCustodianCount](Get-MgBetaComplianceEdiscoveryCaseCustodianCount.md)
 Get the number of the resource
-
-### [Get-MgBetaComplianceEdiscoveryCaseCustodianLastIndexOperation](Get-MgBetaComplianceEdiscoveryCaseCustodianLastIndexOperation.md)
-Get lastIndexOperation from compliance
 
 ### [Get-MgBetaComplianceEdiscoveryCaseCustodianSiteSource](Get-MgBetaComplianceEdiscoveryCaseCustodianSiteSource.md)
 Read the properties and relationships of a siteSource object.
@@ -127,9 +124,6 @@ Get the number of the resource
 
 ### [Get-MgBetaComplianceEdiscoveryCaseNoncustodialDataSourceDataSource](Get-MgBetaComplianceEdiscoveryCaseNoncustodialDataSourceDataSource.md)
 User source or SharePoint site data source as non-custodial data source.
-
-### [Get-MgBetaComplianceEdiscoveryCaseNoncustodialDataSourceLastIndexOperation](Get-MgBetaComplianceEdiscoveryCaseNoncustodialDataSourceLastIndexOperation.md)
-Get lastIndexOperation from compliance
 
 ### [Get-MgBetaComplianceEdiscoveryCaseOperation](Get-MgBetaComplianceEdiscoveryCaseOperation.md)
 Returns a list of case operation objects for this case.
@@ -207,10 +201,6 @@ For details, see Manage custodians in an Advanced eDiscovery case.
 
 ### [Invoke-MgBetaAsComplianceEdiscoveryCaseTagHierarchy](Invoke-MgBetaAsComplianceEdiscoveryCaseTagHierarchy.md)
 Invoke function asHierarchy
-
-### [Invoke-MgBetaEstimateComplianceEdiscoveryCaseSourceCollectionStatistics](Invoke-MgBetaEstimateComplianceEdiscoveryCaseSourceCollectionStatistics.md)
-Run an estimate of the number of emails and documents in the source collection.
-To learn more about source collections (also known as searches in eDiscovery), see Collect data for a case in Advanced eDiscovery.
 
 ### [Invoke-MgBetaReopenComplianceEdiscoveryCase](Invoke-MgBetaReopenComplianceEdiscoveryCase.md)
 Reopen an eDiscovery case that was closed.

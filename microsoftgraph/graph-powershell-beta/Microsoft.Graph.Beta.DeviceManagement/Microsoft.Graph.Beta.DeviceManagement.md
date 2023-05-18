@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 Module Guid: 446e024a-ce43-4b41-8942-f7a5a45487a0
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement
@@ -507,12 +507,6 @@ The settings this category contains
 ### [Get-MgBetaDeviceManagementIntentCategorySettingCount](Get-MgBetaDeviceManagementIntentCategorySettingCount.md)
 Get the number of the resource
 
-### [Get-MgBetaDeviceManagementIntentCategorySettingDefinition](Get-MgBetaDeviceManagementIntentCategorySettingDefinition.md)
-The setting definitions this category contains
-
-### [Get-MgBetaDeviceManagementIntentCategorySettingDefinitionCount](Get-MgBetaDeviceManagementIntentCategorySettingDefinitionCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaDeviceManagementIntentCount](Get-MgBetaDeviceManagementIntentCount.md)
 Get the number of the resource
 
@@ -795,12 +789,6 @@ The settings this category contains
 ### [Get-MgBetaDeviceManagementTemplateCategoryRecommendedSettingCount](Get-MgBetaDeviceManagementTemplateCategoryRecommendedSettingCount.md)
 Get the number of the resource
 
-### [Get-MgBetaDeviceManagementTemplateCategorySettingDefinition](Get-MgBetaDeviceManagementTemplateCategorySettingDefinition.md)
-The setting definitions this category contains
-
-### [Get-MgBetaDeviceManagementTemplateCategorySettingDefinitionCount](Get-MgBetaDeviceManagementTemplateCategorySettingDefinitionCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaDeviceManagementTemplateCount](Get-MgBetaDeviceManagementTemplateCount.md)
 Get the number of the resource
 
@@ -817,12 +805,6 @@ Get the number of the resource
 The settings this category contains
 
 ### [Get-MgBetaDeviceManagementTemplateMigratableToCategoryRecommendedSettingCount](Get-MgBetaDeviceManagementTemplateMigratableToCategoryRecommendedSettingCount.md)
-Get the number of the resource
-
-### [Get-MgBetaDeviceManagementTemplateMigratableToCategorySettingDefinition](Get-MgBetaDeviceManagementTemplateMigratableToCategorySettingDefinition.md)
-The setting definitions this category contains
-
-### [Get-MgBetaDeviceManagementTemplateMigratableToCategorySettingDefinitionCount](Get-MgBetaDeviceManagementTemplateMigratableToCategorySettingDefinitionCount.md)
 Get the number of the resource
 
 ### [Get-MgBetaDeviceManagementTemplateMigratableToCount](Get-MgBetaDeviceManagementTemplateMigratableToCount.md)
@@ -1362,9 +1344,6 @@ Create new navigation property to categories for deviceManagement
 ### [New-MgBetaDeviceManagementIntentCategorySetting](New-MgBetaDeviceManagementIntentCategorySetting.md)
 Create new navigation property to settings for deviceManagement
 
-### [New-MgBetaDeviceManagementIntentCategorySettingDefinition](New-MgBetaDeviceManagementIntentCategorySettingDefinition.md)
-Create new navigation property to settingDefinitions for deviceManagement
-
 ### [New-MgBetaDeviceManagementIntentDeviceSettingStateSummary](New-MgBetaDeviceManagementIntentDeviceSettingStateSummary.md)
 Create new navigation property to deviceSettingStateSummaries for deviceManagement
 
@@ -1485,9 +1464,6 @@ Create new navigation property to categories for deviceManagement
 ### [New-MgBetaDeviceManagementTemplateCategoryRecommendedSetting](New-MgBetaDeviceManagementTemplateCategoryRecommendedSetting.md)
 Create new navigation property to recommendedSettings for deviceManagement
 
-### [New-MgBetaDeviceManagementTemplateCategorySettingDefinition](New-MgBetaDeviceManagementTemplateCategorySettingDefinition.md)
-Create new navigation property to settingDefinitions for deviceManagement
-
 ### [New-MgBetaDeviceManagementTemplateMigratableTo](New-MgBetaDeviceManagementTemplateMigratableTo.md)
 Create new navigation property to migratableTo for deviceManagement
 
@@ -1496,9 +1472,6 @@ Create new navigation property to categories for deviceManagement
 
 ### [New-MgBetaDeviceManagementTemplateMigratableToCategoryRecommendedSetting](New-MgBetaDeviceManagementTemplateMigratableToCategoryRecommendedSetting.md)
 Create new navigation property to recommendedSettings for deviceManagement
-
-### [New-MgBetaDeviceManagementTemplateMigratableToCategorySettingDefinition](New-MgBetaDeviceManagementTemplateMigratableToCategorySettingDefinition.md)
-Create new navigation property to settingDefinitions for deviceManagement
 
 ### [New-MgBetaDeviceManagementTemplateMigratableToSetting](New-MgBetaDeviceManagementTemplateMigratableToSetting.md)
 Create new navigation property to settings for deviceManagement
@@ -1893,9 +1866,6 @@ Delete navigation property categories for deviceManagement
 ### [Remove-MgBetaDeviceManagementIntentCategorySetting](Remove-MgBetaDeviceManagementIntentCategorySetting.md)
 Delete navigation property settings for deviceManagement
 
-### [Remove-MgBetaDeviceManagementIntentCategorySettingDefinition](Remove-MgBetaDeviceManagementIntentCategorySettingDefinition.md)
-Delete navigation property settingDefinitions for deviceManagement
-
 ### [Remove-MgBetaDeviceManagementIntentDeviceSettingStateSummary](Remove-MgBetaDeviceManagementIntentDeviceSettingStateSummary.md)
 Delete navigation property deviceSettingStateSummaries for deviceManagement
 
@@ -2034,9 +2004,6 @@ Delete navigation property categories for deviceManagement
 ### [Remove-MgBetaDeviceManagementTemplateCategoryRecommendedSetting](Remove-MgBetaDeviceManagementTemplateCategoryRecommendedSetting.md)
 Delete navigation property recommendedSettings for deviceManagement
 
-### [Remove-MgBetaDeviceManagementTemplateCategorySettingDefinition](Remove-MgBetaDeviceManagementTemplateCategorySettingDefinition.md)
-Delete navigation property settingDefinitions for deviceManagement
-
 ### [Remove-MgBetaDeviceManagementTemplateMigratableTo](Remove-MgBetaDeviceManagementTemplateMigratableTo.md)
 Delete navigation property migratableTo for deviceManagement
 
@@ -2045,9 +2012,6 @@ Delete navigation property categories for deviceManagement
 
 ### [Remove-MgBetaDeviceManagementTemplateMigratableToCategoryRecommendedSetting](Remove-MgBetaDeviceManagementTemplateMigratableToCategoryRecommendedSetting.md)
 Delete navigation property recommendedSettings for deviceManagement
-
-### [Remove-MgBetaDeviceManagementTemplateMigratableToCategorySettingDefinition](Remove-MgBetaDeviceManagementTemplateMigratableToCategorySettingDefinition.md)
-Delete navigation property settingDefinitions for deviceManagement
 
 ### [Remove-MgBetaDeviceManagementTemplateMigratableToSetting](Remove-MgBetaDeviceManagementTemplateMigratableToSetting.md)
 Delete navigation property settings for deviceManagement
@@ -2211,8 +2175,8 @@ Delete navigation property windowsQualityUpdateProfiles for deviceManagement
 ### [Remove-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment](Remove-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment.md)
 Delete navigation property assignments for deviceManagement
 
-### [Update-MgBetaDeviceManagement](Update-MgBetaDeviceManagement.md)
-Update deviceManagement
+### [Remove-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment](Remove-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment.md)
+Delete navigation property assignments for deviceManagement
 
 ### [Update-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummary](Update-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummary.md)
 Update the navigation property advancedThreatProtectionOnboardingStateSummary in deviceManagement
@@ -2457,9 +2421,6 @@ Update the navigation property categories in deviceManagement
 ### [Update-MgBetaDeviceManagementIntentCategorySetting](Update-MgBetaDeviceManagementIntentCategorySetting.md)
 Update the navigation property settings in deviceManagement
 
-### [Update-MgBetaDeviceManagementIntentCategorySettingDefinition](Update-MgBetaDeviceManagementIntentCategorySettingDefinition.md)
-Update the navigation property settingDefinitions in deviceManagement
-
 ### [Update-MgBetaDeviceManagementIntentDeviceSettingStateSummary](Update-MgBetaDeviceManagementIntentDeviceSettingStateSummary.md)
 Update the navigation property deviceSettingStateSummaries in deviceManagement
 
@@ -2598,9 +2559,6 @@ Update the navigation property categories in deviceManagement
 ### [Update-MgBetaDeviceManagementTemplateCategoryRecommendedSetting](Update-MgBetaDeviceManagementTemplateCategoryRecommendedSetting.md)
 Update the navigation property recommendedSettings in deviceManagement
 
-### [Update-MgBetaDeviceManagementTemplateCategorySettingDefinition](Update-MgBetaDeviceManagementTemplateCategorySettingDefinition.md)
-Update the navigation property settingDefinitions in deviceManagement
-
 ### [Update-MgBetaDeviceManagementTemplateMigratableTo](Update-MgBetaDeviceManagementTemplateMigratableTo.md)
 Update the navigation property migratableTo in deviceManagement
 
@@ -2609,9 +2567,6 @@ Update the navigation property categories in deviceManagement
 
 ### [Update-MgBetaDeviceManagementTemplateMigratableToCategoryRecommendedSetting](Update-MgBetaDeviceManagementTemplateMigratableToCategoryRecommendedSetting.md)
 Update the navigation property recommendedSettings in deviceManagement
-
-### [Update-MgBetaDeviceManagementTemplateMigratableToCategorySettingDefinition](Update-MgBetaDeviceManagementTemplateMigratableToCategorySettingDefinition.md)
-Update the navigation property settingDefinitions in deviceManagement
 
 ### [Update-MgBetaDeviceManagementTemplateMigratableToSetting](Update-MgBetaDeviceManagementTemplateMigratableToSetting.md)
 Update the navigation property settings in deviceManagement

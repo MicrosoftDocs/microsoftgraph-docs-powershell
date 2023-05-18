@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Search
 Module Guid: 86086860-e94a-49aa-b74a-474cbbad7b83
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search
@@ -61,9 +61,6 @@ Get operations from external
 ### [Get-MgBetaExternalConnectionOperationCount](Get-MgBetaExternalConnectionOperationCount.md)
 Get the number of the resource
 
-### [Get-MgBetaExternalConnectionQuota](Get-MgBetaExternalConnectionQuota.md)
-Retrieve the properties and relationships of a connectionQuota object.
-
 ### [Get-MgBetaExternalConnectionSchema](Get-MgBetaExternalConnectionSchema.md)
 Retrieve the properties of a schema for an externalConnection.
 
@@ -120,9 +117,6 @@ Get the number of the resource
 
 ### [Get-MgBetaExternalIndustryDataRunCount](Get-MgBetaExternalIndustryDataRunCount.md)
 Get the number of the resource
-
-### [Get-MgBetaExternalIndustryDataRunStatistics](Get-MgBetaExternalIndustryDataRunStatistics.md)
-Invoke function getStatistics
 
 ### [Get-MgBetaExternalIndustryDataSourceSystem](Get-MgBetaExternalIndustryDataSourceSystem.md)
 Read the properties and relationships of a sourceSystemDefinition object.
@@ -228,9 +222,6 @@ Delete navigation property activities for external
 ### [Remove-MgBetaExternalConnectionOperation](Remove-MgBetaExternalConnectionOperation.md)
 Delete navigation property operations for external
 
-### [Remove-MgBetaExternalConnectionQuota](Remove-MgBetaExternalConnectionQuota.md)
-Delete navigation property quota for external
-
 ### [Remove-MgBetaExternalConnectionSchema](Remove-MgBetaExternalConnectionSchema.md)
 Delete navigation property schema for external
 
@@ -287,9 +278,6 @@ Update the navigation property activities in external
 
 ### [Update-MgBetaExternalConnectionOperation](Update-MgBetaExternalConnectionOperation.md)
 Update the navigation property operations in external
-
-### [Update-MgBetaExternalConnectionQuota](Update-MgBetaExternalConnectionQuota.md)
-Update the navigation property quota in external
 
 ### [Update-MgBetaExternalConnectionSchema](Update-MgBetaExternalConnectionSchema.md)
 Update the properties of a schema for an externalConnection.

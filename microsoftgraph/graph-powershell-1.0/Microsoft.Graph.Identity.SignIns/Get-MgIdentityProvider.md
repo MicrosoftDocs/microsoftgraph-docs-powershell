@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityprovider
 schema: 2.0.0
@@ -16,9 +16,9 @@ In Azure AD B2C, this operation can currently get a socialIdentityProvider, or a
 
 ### List (Default)
 ```
-Get-MgIdentityProvider [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-All] [-CountVariable <String>]
- [-PageSize <Int32>] [<CommonParameters>]
+Get-MgIdentityProvider [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
@@ -40,69 +40,53 @@ In Azure AD B2C, this operation can currently get a socialIdentityProvider, or a
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 Get-MgIdentityProvider -IdentityProviderBaseId $identityProviderBaseId
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 Get-MgIdentityProvider -IdentityProviderBaseId $identityProviderBaseId
 ```
 
-
-
-### -------------------------- EXAMPLE 3 --------------------------
+### EXAMPLE 3
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 Get-MgIdentityProvider -IdentityProviderId $identityProviderId
 ```
 
-
-
-### -------------------------- EXAMPLE 4 --------------------------
+### EXAMPLE 4
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 Get-MgIdentityProvider
 ```
 
-
-
-### -------------------------- EXAMPLE 5 --------------------------
+### EXAMPLE 5
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 Get-MgIdentityProvider
 ```
 
-
-
-### -------------------------- EXAMPLE 6 --------------------------
+### EXAMPLE 6
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 Get-MgIdentityProvider -OutFile $outFileId
 ```
 
-
-
-### -------------------------- EXAMPLE 7 --------------------------
+### EXAMPLE 7
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 Get-MgIdentityProvider -IdentityProviderBaseId $identityProviderBaseId
 ```
 
-
-
-### -------------------------- EXAMPLE 8 --------------------------
+### EXAMPLE 8
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 Get-MgIdentityProvider
 ```
-
-
 
 ## PARAMETERS
 
@@ -110,7 +94,7 @@ Get-MgIdentityProvider
 List all pages.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: List
 Aliases:
 
@@ -126,7 +110,7 @@ Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: List
 Aliases: CV
 
@@ -141,7 +125,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -156,7 +140,7 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: List
 Aliases:
 
@@ -171,7 +155,7 @@ Accept wildcard characters: False
 The unique identifier of identityProviderBase
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -187,7 +171,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
+Type: IIdentitySignInsIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -202,7 +186,7 @@ Accept wildcard characters: False
 Sets the page size of results.
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: List
 Aliases:
 
@@ -217,7 +201,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -232,22 +216,7 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: System.String
-Parameter Sets: List
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: System.Int32
+Type: String
 Parameter Sets: List
 Aliases:
 
@@ -262,7 +231,7 @@ Accept wildcard characters: False
 Order items by property values
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: List
 Aliases: OrderBy
 
@@ -277,9 +246,24 @@ Accept wildcard characters: False
 Show only the first n items
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: List
 Aliases: Limit
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List
+Aliases:
 
 Required: False
 Position: Named
@@ -294,11 +278,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentityProviderBase
-
 ## NOTES
 
 ALIASES
@@ -366,4 +348,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-

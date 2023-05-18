@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementioslobappprovisioningconfigurationgroupassignment
 schema: 2.0.0
@@ -16,7 +16,7 @@ Update the navigation property groupAssignments in deviceAppManagement
 ```
 Update-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationGroupAssignment
  -IosLobAppProvisioningConfigurationId <String> -MobileAppProvisioningConfigGroupAssignmentId <String>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-TargetGroupId <String>] [-Confirm] [-WhatIf]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-TargetGroupId <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -24,15 +24,7 @@ Update-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationGroupAssignmen
 ```
 Update-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationGroupAssignment
  -IosLobAppProvisioningConfigurationId <String> -MobileAppProvisioningConfigGroupAssignmentId <String>
- -BodyParameter <IMicrosoftGraphMobileAppProvisioningConfigGroupAssignment> [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationGroupAssignment
- -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphMobileAppProvisioningConfigGroupAssignment> [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphMobileAppProvisioningConfigGroupAssignment> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -40,7 +32,15 @@ Update-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationGroupAssignmen
 ```
 Update-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationGroupAssignment
  -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-TargetGroupId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-TargetGroupId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationGroupAssignment
+ -InputObject <IDevicesCorporateManagementIdentity>
+ -BodyParameter <IMicrosoftGraphMobileAppProvisioningConfigGroupAssignment> [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -48,19 +48,15 @@ Update the navigation property groupAssignments in deviceAppManagement
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -68,7 +64,7 @@ Update the navigation property groupAssignments in deviceAppManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -84,7 +80,7 @@ Contains the properties used to assign an App provisioning configuration to a gr
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMobileAppProvisioningConfigGroupAssignment
+Type: IMicrosoftGraphMobileAppProvisioningConfigGroupAssignment
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -100,7 +96,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -116,8 +112,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IDevicesCorporateManagementIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IDevicesCorporateManagementIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -131,8 +127,8 @@ Accept wildcard characters: False
 The unique identifier of iosLobAppProvisioningConfiguration
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -146,8 +142,8 @@ Accept wildcard characters: False
 The unique identifier of mobileAppProvisioningConfigGroupAssignment
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -161,7 +157,7 @@ Accept wildcard characters: False
 The ID of the AAD group in which the app provisioning configuration is being targeted.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -176,7 +172,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -192,7 +188,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -209,13 +205,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMobileAppProvisioningConfigGroupAssignment
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMobileAppProvisioningConfigGroupAssignment
-
 ## NOTES
 
 ALIASES
@@ -304,4 +297,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
-

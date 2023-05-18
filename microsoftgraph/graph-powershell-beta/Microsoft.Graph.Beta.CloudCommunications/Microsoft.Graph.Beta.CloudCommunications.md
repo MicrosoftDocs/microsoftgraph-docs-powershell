@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 Module Guid: 5067629f-10f9-4f48-bf48-251ad1f02651
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications
@@ -122,12 +122,6 @@ Get a custom registration question associated with a meetingRegistration object 
 ### [Get-MgBetaCommunicationOnlineMeetingRegistrationCustomQuestionCount](Get-MgBetaCommunicationOnlineMeetingRegistrationCustomQuestionCount.md)
 Get the number of the resource
 
-### [Get-MgBetaCommunicationOnlineMeetingRegistrationRegistrant](Get-MgBetaCommunicationOnlineMeetingRegistrationRegistrant.md)
-Registrants of the online meeting.
-
-### [Get-MgBetaCommunicationOnlineMeetingRegistrationRegistrantCount](Get-MgBetaCommunicationOnlineMeetingRegistrationRegistrantCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaCommunicationOnlineMeetingTranscript](Get-MgBetaCommunicationOnlineMeetingTranscript.md)
 Retrieve a callTranscript object associated with an onlineMeeting.
 Retrieving the transcript returns the metadata of the single transcript associated with the online meeting.
@@ -159,8 +153,8 @@ Get the presence information for multiple users.
 ### [Get-MgBetaCommunicationPresenceCount](Get-MgBetaCommunicationPresenceCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserOnlineMeeting](Get-MgBetaUserOnlineMeeting.md)
-Get onlineMeetings from users
+### [Get-MgBetaCommunicationPresenceCount](Get-MgBetaCommunicationPresenceCount.md)
+Get the number of the resource
 
 ### [Get-MgBetaUserOnlineMeetingAlternativeRecording](Get-MgBetaUserOnlineMeetingAlternativeRecording.md)
 The content stream of the alternative recording of a Microsoft Teams live event.
@@ -200,12 +194,6 @@ Get a custom registration question associated with a meetingRegistration object 
 ### [Get-MgBetaUserOnlineMeetingRegistrationCustomQuestionCount](Get-MgBetaUserOnlineMeetingRegistrationCustomQuestionCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserOnlineMeetingRegistrationRegistrant](Get-MgBetaUserOnlineMeetingRegistrationRegistrant.md)
-Registrants of the online meeting.
-
-### [Get-MgBetaUserOnlineMeetingRegistrationRegistrantCount](Get-MgBetaUserOnlineMeetingRegistrationRegistrantCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaUserOnlineMeetingTranscript](Get-MgBetaUserOnlineMeetingTranscript.md)
 Retrieve a callTranscript object associated with an onlineMeeting.
 Retrieving the transcript returns the metadata of the single transcript associated with the online meeting.
@@ -237,9 +225,13 @@ The bot is expected to answer, reject or redirect the call before the call times
 The current timeout value is 15 seconds.
 The current timeout value is 15 seconds for regular scenarios, and 5 seconds for policy-based recording scenarios.
 
-### [Invoke-MgBetaCreateOrGetCommunicationOnlineMeeting](Invoke-MgBetaCreateOrGetCommunicationOnlineMeeting.md)
-Create an onlineMeeting object with a custom specified external ID.
-If the external ID already exists, this API will return the onlineMeeting object with that external ID.
+### [Invoke-MgBetaAnswerCommunicationCall](Invoke-MgBetaAnswerCommunicationCall.md)
+Enable a bot to answer an incoming call.
+The incoming call request can be an invite from a participant in a group call or a peer-to-peer call.
+If an invite to a group call is received, the notification will contain the chatInfo and meetingInfo parameters.
+The bot is expected to answer, reject or redirect the call before the call times out.
+The current timeout value is 15 seconds.
+The current timeout value is 15 seconds for regular scenarios, and 5 seconds for policy-based recording scenarios.
 
 ### [Invoke-MgBetaInviteCommunicationCallParticipant](Invoke-MgBetaInviteCommunicationCallParticipant.md)
 Delete a specific participant in a call.
@@ -342,8 +334,8 @@ Create new navigation property to participants for communications
 ### [New-MgBetaCommunicationCallRecordSession](New-MgBetaCommunicationCallRecordSession.md)
 Create new navigation property to sessions for communications
 
-### [New-MgBetaCommunicationOnlineMeeting](New-MgBetaCommunicationOnlineMeeting.md)
-Create new navigation property to onlineMeetings for communications
+### [New-MgBetaCommunicationCallRecordSession](New-MgBetaCommunicationCallRecordSession.md)
+Create new navigation property to sessions for communications
 
 ### [New-MgBetaCommunicationOnlineMeetingAttendanceReport](New-MgBetaCommunicationOnlineMeetingAttendanceReport.md)
 Create new navigation property to attendanceReports for communications
@@ -353,9 +345,6 @@ Create new navigation property to attendanceRecords for communications
 
 ### [New-MgBetaCommunicationOnlineMeetingRegistrationCustomQuestion](New-MgBetaCommunicationOnlineMeetingRegistrationCustomQuestion.md)
 Create a custom registration question associated with a meetingRegistration object on behalf of the organizer.
-
-### [New-MgBetaCommunicationOnlineMeetingRegistrationRegistrant](New-MgBetaCommunicationOnlineMeetingRegistrationRegistrant.md)
-Create new navigation property to registrants for communications
 
 ### [New-MgBetaCommunicationOnlineMeetingTranscript](New-MgBetaCommunicationOnlineMeetingTranscript.md)
 Create new navigation property to transcripts for communications
@@ -374,9 +363,6 @@ Create new navigation property to attendanceRecords for users
 
 ### [New-MgBetaUserOnlineMeetingRegistrationCustomQuestion](New-MgBetaUserOnlineMeetingRegistrationCustomQuestion.md)
 Create a custom registration question associated with a meetingRegistration object on behalf of the organizer.
-
-### [New-MgBetaUserOnlineMeetingRegistrationRegistrant](New-MgBetaUserOnlineMeetingRegistrationRegistrant.md)
-Create new navigation property to registrants for users
 
 ### [New-MgBetaUserOnlineMeetingTranscript](New-MgBetaUserOnlineMeetingTranscript.md)
 Create new navigation property to transcripts for users
@@ -419,9 +405,6 @@ Disable and delete the meetingRegistration of an onlineMeeting on behalf of the 
 ### [Remove-MgBetaCommunicationOnlineMeetingRegistrationCustomQuestion](Remove-MgBetaCommunicationOnlineMeetingRegistrationCustomQuestion.md)
 Delete a custom registration question from a meetingRegistration object on behalf of the organizer.
 
-### [Remove-MgBetaCommunicationOnlineMeetingRegistrationRegistrant](Remove-MgBetaCommunicationOnlineMeetingRegistrationRegistrant.md)
-Delete navigation property registrants for communications
-
 ### [Remove-MgBetaCommunicationOnlineMeetingTranscript](Remove-MgBetaCommunicationOnlineMeetingTranscript.md)
 Delete navigation property transcripts for communications
 
@@ -446,17 +429,14 @@ Disable and delete the meetingRegistration of an onlineMeeting on behalf of the 
 ### [Remove-MgBetaUserOnlineMeetingRegistrationCustomQuestion](Remove-MgBetaUserOnlineMeetingRegistrationCustomQuestion.md)
 Delete a custom registration question from a meetingRegistration object on behalf of the organizer.
 
-### [Remove-MgBetaUserOnlineMeetingRegistrationRegistrant](Remove-MgBetaUserOnlineMeetingRegistrationRegistrant.md)
-Delete navigation property registrants for users
-
 ### [Remove-MgBetaUserOnlineMeetingTranscript](Remove-MgBetaUserOnlineMeetingTranscript.md)
 Delete navigation property transcripts for users
 
 ### [Remove-MgBetaUserOnlineMeetingVirtualAppointment](Remove-MgBetaUserOnlineMeetingVirtualAppointment.md)
 Delete navigation property virtualAppointment for users
 
-### [Remove-MgBetaUserPresence](Remove-MgBetaUserPresence.md)
-Delete navigation property presence for users
+### [Remove-MgBetaUserOnlineMeetingVirtualAppointment](Remove-MgBetaUserOnlineMeetingVirtualAppointment.md)
+Delete navigation property virtualAppointment for users
 
 ### [Rename-MgBetaCommunicationCallScreenSharingRole](Rename-MgBetaCommunicationCallScreenSharingRole.md)
 Allow applications to share screen content with the participants of a group call.
@@ -563,9 +543,6 @@ Update the details of a meetingRegistration object assciated with an onlineMeeti
 ### [Update-MgBetaCommunicationOnlineMeetingRegistrationCustomQuestion](Update-MgBetaCommunicationOnlineMeetingRegistrationCustomQuestion.md)
 Update a custom registration question associated with a meetingRegistration object on behalf of the organizer.
 
-### [Update-MgBetaCommunicationOnlineMeetingRegistrationRegistrant](Update-MgBetaCommunicationOnlineMeetingRegistrationRegistrant.md)
-Update the navigation property registrants in communications
-
 ### [Update-MgBetaCommunicationOnlineMeetingTranscript](Update-MgBetaCommunicationOnlineMeetingTranscript.md)
 Update the navigation property transcripts in communications
 
@@ -591,15 +568,12 @@ Update the details of a meetingRegistration object assciated with an onlineMeeti
 ### [Update-MgBetaUserOnlineMeetingRegistrationCustomQuestion](Update-MgBetaUserOnlineMeetingRegistrationCustomQuestion.md)
 Update a custom registration question associated with a meetingRegistration object on behalf of the organizer.
 
-### [Update-MgBetaUserOnlineMeetingRegistrationRegistrant](Update-MgBetaUserOnlineMeetingRegistrationRegistrant.md)
-Update the navigation property registrants in users
-
 ### [Update-MgBetaUserOnlineMeetingTranscript](Update-MgBetaUserOnlineMeetingTranscript.md)
 Update the navigation property transcripts in users
 
 ### [Update-MgBetaUserOnlineMeetingVirtualAppointment](Update-MgBetaUserOnlineMeetingVirtualAppointment.md)
 Update the navigation property virtualAppointment in users
 
-### [Update-MgBetaUserPresence](Update-MgBetaUserPresence.md)
-Update the navigation property presence in users
+### [Update-MgBetaUserOnlineMeetingVirtualAppointment](Update-MgBetaUserOnlineMeetingVirtualAppointment.md)
+Update the navigation property virtualAppointment in users
 

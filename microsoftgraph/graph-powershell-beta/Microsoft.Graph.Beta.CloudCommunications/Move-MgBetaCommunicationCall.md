@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/move-mgbetacommunicationcall
 schema: 2.0.0
@@ -17,29 +17,29 @@ This is opposed to transfering the call directly.
 ### TransferExpanded (Default)
 ```
 Move-MgBetaCommunicationCall -CallId <String> [-AdditionalProperties <Hashtable>]
- [-Transferee <IMicrosoftGraphParticipantInfo>] [-TransferTarget <IMicrosoftGraphInvitationParticipantInfo>]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-TransferTarget <IMicrosoftGraphInvitationParticipantInfo>] [-Transferee <IMicrosoftGraphParticipantInfo>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Transfer
 ```
 Move-MgBetaCommunicationCall -CallId <String>
  -BodyParameter <IPaths4Zbm7LCommunicationsCallsCallIdMicrosoftGraphTransferPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### TransferViaIdentityExpanded
+```
+Move-MgBetaCommunicationCall -InputObject <ICloudCommunicationsIdentity> [-AdditionalProperties <Hashtable>]
+ [-TransferTarget <IMicrosoftGraphInvitationParticipantInfo>] [-Transferee <IMicrosoftGraphParticipantInfo>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### TransferViaIdentity
 ```
 Move-MgBetaCommunicationCall -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IPaths4Zbm7LCommunicationsCallsCallIdMicrosoftGraphTransferPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### TransferViaIdentityExpanded
-```
-Move-MgBetaCommunicationCall -InputObject <ICloudCommunicationsIdentity> [-AdditionalProperties <Hashtable>]
- [-Transferee <IMicrosoftGraphParticipantInfo>] [-TransferTarget <IMicrosoftGraphInvitationParticipantInfo>]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,7 +49,7 @@ This is opposed to transfering the call directly.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
@@ -69,9 +69,7 @@ $params = @{
 Move-MgBetaCommunicationCall -CallId $callId -BodyParameter $params
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
@@ -95,9 +93,7 @@ $params = @{
 Move-MgBetaCommunicationCall -CallId $callId -BodyParameter $params
 ```
 
-
-
-### -------------------------- EXAMPLE 3 --------------------------
+### EXAMPLE 3
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
@@ -116,9 +112,7 @@ $params = @{
 Move-MgBetaCommunicationCall -CallId $callId -BodyParameter $params
 ```
 
-
-
-### -------------------------- EXAMPLE 4 --------------------------
+### EXAMPLE 4
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
@@ -140,9 +134,7 @@ $params = @{
 Move-MgBetaCommunicationCall -CallId $callId -BodyParameter $params
 ```
 
-
-
-### -------------------------- EXAMPLE 5 --------------------------
+### EXAMPLE 5
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
@@ -171,15 +163,13 @@ $params = @{
 Move-MgBetaCommunicationCall -CallId $callId -BodyParameter $params
 ```
 
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: TransferExpanded, TransferViaIdentityExpanded
 Aliases:
 
@@ -195,7 +185,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths4Zbm7LCommunicationsCallsCallIdMicrosoftGraphTransferPostRequestbodyContentApplicationJsonSchema
+Type: IPaths4Zbm7LCommunicationsCallsCallIdMicrosoftGraphTransferPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Transfer, TransferViaIdentity
 Aliases:
 
@@ -210,8 +200,8 @@ Accept wildcard characters: False
 The unique identifier of call
 
 ```yaml
-Type: System.String
-Parameter Sets: Transfer, TransferExpanded
+Type: String
+Parameter Sets: TransferExpanded, Transfer
 Aliases:
 
 Required: True
@@ -226,8 +216,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
-Parameter Sets: TransferViaIdentity, TransferViaIdentityExpanded
+Type: ICloudCommunicationsIdentity
+Parameter Sets: TransferViaIdentityExpanded, TransferViaIdentity
 Aliases:
 
 Required: True
@@ -241,7 +231,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -257,7 +247,7 @@ participantInfo
 To construct, see NOTES section for TRANSFEREE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphParticipantInfo
+Type: IMicrosoftGraphParticipantInfo
 Parameter Sets: TransferExpanded, TransferViaIdentityExpanded
 Aliases:
 
@@ -273,7 +263,7 @@ invitationParticipantInfo
 To construct, see NOTES section for TRANSFERTARGET properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInvitationParticipantInfo
+Type: IMicrosoftGraphInvitationParticipantInfo
 Parameter Sets: TransferExpanded, TransferViaIdentityExpanded
 Aliases:
 
@@ -288,7 +278,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -304,7 +294,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -321,13 +311,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths4Zbm7LCommunicationsCallsCallIdMicrosoftGraphTransferPostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -419,4 +406,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[ReplacesCallId <String>]`: Optional. The call which the target identity is currently a part of. For peer-to-peer case, the call will be dropped once the participant is added successfully.
 
 ## RELATED LINKS
-

@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Users
 Module Guid: 7b035ff6-5872-474f-9814-617b889b17c2
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users
@@ -107,7 +107,7 @@ Get the number of the resource
 Returns the user or organizational contact assigned as the user's manager.
 Optionally, you can expand the manager's chain up to the root node.
 
-### [Get-MgBetaUserManagerByRef](Get-MgBetaUserManagerByRef.md)
+### [Get-MgBetaUserManager](Get-MgBetaUserManager.md)
 Returns the user or organizational contact assigned as the user's manager.
 Optionally, you can expand the manager's chain up to the root node.
 
@@ -449,12 +449,6 @@ Delete navigation property extensions for users
 
 ### [Remove-MgBetaUserLicenseDetail](Remove-MgBetaUserLicenseDetail.md)
 Delete navigation property licenseDetails for users
-
-### [Remove-MgBetaUserManager](Remove-MgBetaUserManager.md)
-Remove a user's manager.
-
-### [Remove-MgBetaUserManagerByRef](Remove-MgBetaUserManagerByRef.md)
-Remove a user's manager.
 
 ### [Remove-MgBetaUserNotification](Remove-MgBetaUserNotification.md)
 Delete navigation property notifications for users

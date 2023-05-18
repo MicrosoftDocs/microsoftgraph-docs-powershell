@@ -1,79 +1,66 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationonlinemeeting
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationcallrecordsession
 schema: 2.0.0
 ---
 
-# New-MgBetaCommunicationOnlineMeeting
+# New-MgBetaCommunicationCallRecordSession
 
 ## SYNOPSIS
-Create new navigation property to onlineMeetings for communications
+Create new navigation property to sessions for communications
 
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaCommunicationOnlineMeeting [-AdditionalProperties <Hashtable>] [-AllowAttendeeToEnableCamera]
- [-AllowAttendeeToEnableMic] [-AllowedPresenters <String>] [-AllowMeetingChat <String>]
- [-AllowParticipantsToChangeName] [-AllowRecording] [-AllowTeamworkReactions] [-AllowTranscription]
- [-AlternativeRecordingInputFile <String>] [-AnonymizeIdentityForRoles <String[]>]
- [-AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>] [-AttendeeReportInputFile <String>]
- [-AudioConferencing <IMicrosoftGraphAudioConferencing>]
- [-BroadcastSettings <IMicrosoftGraphBroadcastMeetingSettings>] [-Capabilities <String[]>]
- [-ChatInfo <IMicrosoftGraphChatInfo>] [-CreationDateTime <DateTime>] [-EndDateTime <DateTime>]
- [-ExternalId <String>] [-Id <String>] [-IsBroadcast] [-IsEntryExitAnnounced]
- [-JoinInformation <IMicrosoftGraphItemBody>] [-JoinMeetingIdSettings <IMicrosoftGraphJoinMeetingIdSettings>]
- [-JoinUrl <String>] [-JoinWebUrl <String>] [-LobbyBypassSettings <IMicrosoftGraphLobbyBypassSettings>]
- [-MeetingAttendanceReport <IMicrosoftGraphMeetingAttendanceReport>]
- [-Participants <IMicrosoftGraphMeetingParticipants>] [-RecordAutomatically] [-RecordingInputFile <String>]
- [-Registration <IMicrosoftGraphMeetingRegistration>] [-ShareMeetingChatHistoryDefault <String>]
- [-StartDateTime <DateTime>] [-Subject <String>] [-Transcripts <IMicrosoftGraphCallTranscript[]>]
- [-VideoTeleconferenceId <String>] [-VirtualAppointment <IMicrosoftGraphVirtualAppointment>]
- [-WatermarkProtection <IMicrosoftGraphWatermarkProtectionValues>] [-Confirm] [-WhatIf] [<CommonParameters>]
+New-MgBetaCommunicationCallRecordSession -CallRecordId <String> [-AdditionalProperties <Hashtable>]
+ [-Callee <IMicrosoftGraphCallRecordsEndpoint>] [-Caller <IMicrosoftGraphCallRecordsEndpoint>]
+ [-EndDateTime <DateTime>] [-FailureInfo <IMicrosoftGraphCallRecordsFailureInfo>] [-Id <String>] [-IsTest]
+ [-Modalities <String[]>] [-Segments <IMicrosoftGraphCallRecordsSegment[]>] [-StartDateTime <DateTime>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaCommunicationOnlineMeeting -BodyParameter <IMicrosoftGraphOnlineMeeting> [-Confirm] [-WhatIf]
+New-MgBetaCommunicationCallRecordSession -CallRecordId <String>
+ -BodyParameter <IMicrosoftGraphCallRecordsSession> [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgBetaCommunicationCallRecordSession -InputObject <ICloudCommunicationsIdentity>
+ [-AdditionalProperties <Hashtable>] [-Callee <IMicrosoftGraphCallRecordsEndpoint>]
+ [-Caller <IMicrosoftGraphCallRecordsEndpoint>] [-EndDateTime <DateTime>]
+ [-FailureInfo <IMicrosoftGraphCallRecordsFailureInfo>] [-Id <String>] [-IsTest] [-Modalities <String[]>]
+ [-Segments <IMicrosoftGraphCallRecordsSegment[]>] [-StartDateTime <DateTime>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
+### CreateViaIdentity
+```
+New-MgBetaCommunicationCallRecordSession -InputObject <ICloudCommunicationsIdentity>
+ -BodyParameter <IMicrosoftGraphCallRecordsSession> [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ## DESCRIPTION
-Create new navigation property to onlineMeetings for communications
+Create new navigation property to sessions for communications
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 ```
 
-Get-MgBetaCommunicationOnlineMeeting -Filter "VideoTeleconferenceId eq '123456789'"
+Get-MgBetaCommunicationCallRecordSession -CallRecordId $callRecordId
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 ```
 
-# A UPN can also be used as -UserId.
-Get-MgBetaUserOnlineMeeting -UserId $userId -OnlineMeetingId $onlineMeetingId
-
-### -------------------------- EXAMPLE 3 --------------------------
-```powershell
-Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
-
-# A UPN can also be used as -UserId.
-Get-MgBetaUserOnlineMeeting -UserId $userId -Filter "JoinWebUrl eq 'https://teams.microsoft.com/l/meetup-join/19:meeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2@thread.v2/0?context"
-
-### -------------------------- EXAMPLE 4 --------------------------
-```powershell
-Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
-
-# A UPN can also be used as -UserId.
-Get-MgBetaUserOnlineMeetingAttendeeReport -UserId $userId -OnlineMeetingId $onlineMeetingId
+Get-MgBetaCommunicationCallRecordSession -CallRecordId $callRecordId -ExpandProperty "segments"
 
 ## PARAMETERS
 
@@ -81,208 +68,8 @@ Get-MgBetaUserOnlineMeetingAttendeeReport -UserId $userId -OnlineMeetingId $onli
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -AllowAttendeeToEnableCamera
-Indicates whether attendees can turn on their camera.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -AllowAttendeeToEnableMic
-Indicates whether attendees can turn on their microphone.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -AllowedPresenters
-onlineMeetingPresenters
-
-```yaml
-Type: System.String
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -AllowMeetingChat
-meetingChatMode
-
-```yaml
-Type: System.String
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -AllowParticipantsToChangeName
-Specifies if participants are allowed to rename themselves in an instance of the meeting.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -AllowRecording
-.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -AllowTeamworkReactions
-Indicates if Teams reactions are enabled for the meeting.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -AllowTranscription
-.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -AlternativeRecordingInputFile
-Input File for AlternativeRecording (The content stream of the alternative recording of a Microsoft Teams live event.
-Read-only.)
-
-```yaml
-Type: System.String
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -AnonymizeIdentityForRoles
-.
-
-```yaml
-Type: System.String[]
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -AttendanceReports
-The attendance reports of an online meeting.
-Read-only.
-To construct, see NOTES section for ATTENDANCEREPORTS properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMeetingAttendanceReport[]
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -AttendeeReportInputFile
-Input File for AttendeeReport (The content stream of the attendee report of a Teams live event.
-Read-only.)
-
-```yaml
-Type: System.String
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -AudioConferencing
-audioConferencing
-To construct, see NOTES section for AUDIOCONFERENCING properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAudioConferencing
-Parameter Sets: CreateExpanded
+Type: Hashtable
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -293,12 +80,12 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-onlineMeeting
+session
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnlineMeeting
-Parameter Sets: Create
+Type: IMicrosoftGraphCallRecordsSession
+Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -308,13 +95,13 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -BroadcastSettings
-broadcastMeetingSettings
-To construct, see NOTES section for BROADCASTSETTINGS properties and create a hash table.
+### -Callee
+endpoint
+To construct, see NOTES section for CALLEE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBroadcastMeetingSettings
-Parameter Sets: CreateExpanded
+Type: IMicrosoftGraphCallRecordsEndpoint
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -324,12 +111,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Capabilities
-.
+### -Caller
+endpoint
+To construct, see NOTES section for CALLER properties and create a hash table.
 
 ```yaml
-Type: System.String[]
-Parameter Sets: CreateExpanded
+Type: IMicrosoftGraphCallRecordsEndpoint
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -339,32 +127,15 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ChatInfo
-chatInfo
-To construct, see NOTES section for CHATINFO properties and create a hash table.
+### -CallRecordId
+The unique identifier of callRecord
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphChatInfo
-Parameter Sets: CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -CreationDateTime
-The meeting creation time in UTC.
-Read-only.
-
-```yaml
-Type: System.DateTime
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -372,11 +143,13 @@ Accept wildcard characters: False
 ```
 
 ### -EndDateTime
-The meeting end time in UTC.
+UTC time when the last user left the session.
+The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: System.DateTime
-Parameter Sets: CreateExpanded
+Type: DateTime
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -386,14 +159,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ExternalId
-The external ID.
-A custom ID.
-Optional.
+### -FailureInfo
+failureInfo
+To construct, see NOTES section for FAILUREINFO properties and create a hash table.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded
+Type: IMicrosoftGraphCallRecordsFailureInfo
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -408,8 +180,8 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -419,27 +191,28 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -IsBroadcast
-Indicates whether this is a Teams live event.
+### -InputObject
+Identity Parameter
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: CreateExpanded
+Type: ICloudCommunicationsIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
-Accept pipeline input: False
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -IsEntryExitAnnounced
-Indicates whether to announce when callers join or leave.
+### -IsTest
+Specifies whether the session is a test.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: CreateExpanded
+Type: SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -449,13 +222,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -JoinInformation
-itemBody
-To construct, see NOTES section for JOININFORMATION properties and create a hash table.
+### -Modalities
+List of modalities present in the session.
+Possible values are: unknown, audio, video, videoBasedScreenSharing, data, screenSharing, unknownFutureValue.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItemBody
-Parameter Sets: CreateExpanded
+Type: String[]
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -465,154 +238,15 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -JoinMeetingIdSettings
-joinMeetingIdSettings
-To construct, see NOTES section for JOINMEETINGIDSETTINGS properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphJoinMeetingIdSettings
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -JoinUrl
-.
-
-```yaml
-Type: System.String
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -JoinWebUrl
-The join URL of the online meeting.
+### -Segments
+The list of segments involved in the session.
 Read-only.
+Nullable.
+To construct, see NOTES section for SEGMENTS properties and create a hash table.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -LobbyBypassSettings
-lobbyBypassSettings
-To construct, see NOTES section for LOBBYBYPASSSETTINGS properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphLobbyBypassSettings
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -MeetingAttendanceReport
-meetingAttendanceReport
-To construct, see NOTES section for MEETINGATTENDANCEREPORT properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMeetingAttendanceReport
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Participants
-meetingParticipants
-To construct, see NOTES section for PARTICIPANTS properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMeetingParticipants
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -RecordAutomatically
-Indicates whether to record the meeting automatically.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -RecordingInputFile
-Input File for Recording (The content stream of the recording of a Teams live event.
-Read-only.)
-
-```yaml
-Type: System.String
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Registration
-meetingRegistration
-To construct, see NOTES section for REGISTRATION properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMeetingRegistration
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ShareMeetingChatHistoryDefault
-meetingChatHistoryDefaultMode
-
-```yaml
-Type: System.String
-Parameter Sets: CreateExpanded
+Type: IMicrosoftGraphCallRecordsSegment[]
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -623,91 +257,13 @@ Accept wildcard characters: False
 ```
 
 ### -StartDateTime
-The meeting start time in UTC.
+UTC fime when the first user joined the session.
+The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: System.DateTime
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Subject
-The subject of the online meeting.
-
-```yaml
-Type: System.String
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Transcripts
-The transcripts of an online meeting.
-Read-only.
-To construct, see NOTES section for TRANSCRIPTS properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCallTranscript[]
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -VideoTeleconferenceId
-The video teleconferencing ID.
-Read-only.
-
-```yaml
-Type: System.String
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -VirtualAppointment
-virtualAppointment
-To construct, see NOTES section for VIRTUALAPPOINTMENT properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVirtualAppointment
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -WatermarkProtection
-watermarkProtectionValues
-To construct, see NOTES section for WATERMARKPROTECTION properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWatermarkProtectionValues
-Parameter Sets: CreateExpanded
+Type: DateTime
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -721,7 +277,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -737,7 +293,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -753,12 +309,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnlineMeeting
-
+### Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCallRecordsSession
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnlineMeeting
-
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCallRecordsSession
 ## NOTES
 
 ALIASES
@@ -768,299 +323,264 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-`ATTENDANCEREPORTS <IMicrosoftGraphMeetingAttendanceReport[]>`: The attendance reports of an online meeting. Read-only.
+`BODYPARAMETER <IMicrosoftGraphCallRecordsSession>`: session
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[AttendanceRecords <IMicrosoftGraphAttendanceRecord[]>]`: List of attendance records of an attendance report. Read-only.
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>]`: List of time periods between joining and leaving a meeting.
-      - `[DurationInSeconds <Int32?>]`: Duration of the meeting interval in seconds; that is, the difference between joinDateTime and leaveDateTime.
-      - `[JoinDateTime <DateTime?>]`: The time the attendee joined in UTC.
-      - `[LeaveDateTime <DateTime?>]`: The time the attendee left in UTC.
-    - `[EmailAddress <String>]`: Email address of the user associated with this attendance record.
-    - `[Identity <IMicrosoftGraphIdentity>]`: identity
+  - `[Callee <IMicrosoftGraphCallRecordsEndpoint>]`: endpoint
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[UserAgent <IMicrosoftGraphCallRecordsUserAgent>]`: userAgent
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-    - `[RegistrantId <String>]`: Unique identifier of a meetingRegistrant. Presents when the participant has registered for the meeting.
-    - `[Role <String>]`: Role of the attendee. Possible values are: None, Attendee, Presenter, and Organizer.
-    - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.
-  - `[MeetingEndDateTime <DateTime?>]`: UTC time when the meeting ended. Read-only.
-  - `[MeetingStartDateTime <DateTime?>]`: UTC time when the meeting started. Read-only.
-  - `[TotalParticipantCount <Int32?>]`: Total number of participants. Read-only.
-
-`AUDIOCONFERENCING <IMicrosoftGraphAudioConferencing>`: audioConferencing
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ConferenceId <String>]`: The conference id of the online meeting.
-  - `[DialinUrl <String>]`: A URL to the externally-accessible web page that contains dial-in information.
-  - `[TollFreeNumber <String>]`: 
-  - `[TollFreeNumbers <String[]>]`: List of toll-free numbers that are displayed in the meeting invite.
-  - `[TollNumber <String>]`: 
-  - `[TollNumbers <String[]>]`: List of toll numbers that are displayed in the meeting invite.
-
-`BODYPARAMETER <IMicrosoftGraphOnlineMeeting>`: onlineMeeting
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
-  - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
-  - `[AllowMeetingChat <String>]`: meetingChatMode
-  - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
-  - `[AllowRecording <Boolean?>]`: 
-  - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
-  - `[AllowTranscription <Boolean?>]`: 
-  - `[AllowedPresenters <String>]`: onlineMeetingPresenters
-  - `[AlternativeRecording <Byte[]>]`: The content stream of the alternative recording of a Microsoft Teams live event. Read-only.
-  - `[AnonymizeIdentityForRoles <String[]>]`: 
-  - `[AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]`: The attendance reports of an online meeting. Read-only.
+      - `[ApplicationVersion <String>]`: Identifies the version of application software used by this endpoint.
+      - `[HeaderValue <String>]`: User-agent header value reported by this endpoint.
+  - `[Caller <IMicrosoftGraphCallRecordsEndpoint>]`: endpoint
+  - `[EndDateTime <DateTime?>]`: UTC time when the last user left the session. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[FailureInfo <IMicrosoftGraphCallRecordsFailureInfo>]`: failureInfo
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Reason <String>]`: Classification of why a call or portion of a call failed.
+    - `[Stage <String>]`: failureStage
+  - `[IsTest <Boolean?>]`: Specifies whether the session is a test.
+  - `[Modalities <String[]>]`: List of modalities present in the session. Possible values are: unknown, audio, video, videoBasedScreenSharing, data, screenSharing, unknownFutureValue.
+  - `[Segments <IMicrosoftGraphCallRecordsSegment[]>]`: The list of segments involved in the session. Read-only. Nullable.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[AttendanceRecords <IMicrosoftGraphAttendanceRecord[]>]`: List of attendance records of an attendance report. Read-only.
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
-      - `[AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>]`: List of time periods between joining and leaving a meeting.
-        - `[DurationInSeconds <Int32?>]`: Duration of the meeting interval in seconds; that is, the difference between joinDateTime and leaveDateTime.
-        - `[JoinDateTime <DateTime?>]`: The time the attendee joined in UTC.
-        - `[LeaveDateTime <DateTime?>]`: The time the attendee left in UTC.
-      - `[EmailAddress <String>]`: Email address of the user associated with this attendance record.
-      - `[Identity <IMicrosoftGraphIdentity>]`: identity
+    - `[Callee <IMicrosoftGraphCallRecordsEndpoint>]`: endpoint
+    - `[Caller <IMicrosoftGraphCallRecordsEndpoint>]`: endpoint
+    - `[EndDateTime <DateTime?>]`: UTC time when the segment ended. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[FailureInfo <IMicrosoftGraphCallRecordsFailureInfo>]`: failureInfo
+    - `[Media <IMicrosoftGraphCallRecordsMedia[]>]`: Media associated with this segment.
+      - `[CalleeDevice <IMicrosoftGraphCallRecordsDeviceInfo>]`: deviceInfo
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-      - `[RegistrantId <String>]`: Unique identifier of a meetingRegistrant. Presents when the participant has registered for the meeting.
-      - `[Role <String>]`: Role of the attendee. Possible values are: None, Attendee, Presenter, and Organizer.
-      - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.
-    - `[MeetingEndDateTime <DateTime?>]`: UTC time when the meeting ended. Read-only.
-    - `[MeetingStartDateTime <DateTime?>]`: UTC time when the meeting started. Read-only.
-    - `[TotalParticipantCount <Int32?>]`: Total number of participants. Read-only.
-  - `[AttendeeReport <Byte[]>]`: The content stream of the attendee report of a Teams live event. Read-only.
-  - `[AudioConferencing <IMicrosoftGraphAudioConferencing>]`: audioConferencing
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[ConferenceId <String>]`: The conference id of the online meeting.
-    - `[DialinUrl <String>]`: A URL to the externally-accessible web page that contains dial-in information.
-    - `[TollFreeNumber <String>]`: 
-    - `[TollFreeNumbers <String[]>]`: List of toll-free numbers that are displayed in the meeting invite.
-    - `[TollNumber <String>]`: 
-    - `[TollNumbers <String[]>]`: List of toll numbers that are displayed in the meeting invite.
-  - `[BroadcastSettings <IMicrosoftGraphBroadcastMeetingSettings>]`: broadcastMeetingSettings
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[AllowedAudience <String>]`: broadcastMeetingAudience
-    - `[Captions <IMicrosoftGraphBroadcastMeetingCaptionSettings>]`: broadcastMeetingCaptionSettings
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[IsCaptionEnabled <Boolean?>]`: Indicates whether captions are enabled for this Teams live event.
-      - `[SpokenLanguage <String>]`: The spoken language.
-      - `[TranslationLanguages <String[]>]`: The translation languages (choose up to 6).
-    - `[IsAttendeeReportEnabled <Boolean?>]`: Indicates whether attendee report is enabled for this Teams live event. Default value is false.
-    - `[IsQuestionAndAnswerEnabled <Boolean?>]`: Indicates whether Q&A is enabled for this Teams live event. Default value is false.
-    - `[IsRecordingEnabled <Boolean?>]`: Indicates whether recording is enabled for this Teams live event. Default value is false.
-    - `[IsVideoOnDemandEnabled <Boolean?>]`: Indicates whether video on demand is enabled for this Teams live event. Default value is false.
-  - `[Capabilities <String[]>]`: 
-  - `[ChatInfo <IMicrosoftGraphChatInfo>]`: chatInfo
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[MessageId <String>]`: The unique identifier for a message in a Microsoft Teams channel.
-    - `[ReplyChainMessageId <String>]`: The ID of the reply message.
-    - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
-  - `[CreationDateTime <DateTime?>]`: The meeting creation time in UTC. Read-only.
-  - `[EndDateTime <DateTime?>]`: The meeting end time in UTC.
-  - `[ExternalId <String>]`: The external ID. A custom ID. Optional.
-  - `[IsBroadcast <Boolean?>]`: Indicates whether this is a Teams live event.
-  - `[IsEntryExitAnnounced <Boolean?>]`: Indicates whether to announce when callers join or leave.
-  - `[JoinInformation <IMicrosoftGraphItemBody>]`: itemBody
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Content <String>]`: The content of the item.
-    - `[ContentType <String>]`: bodyType
-  - `[JoinMeetingIdSettings <IMicrosoftGraphJoinMeetingIdSettings>]`: joinMeetingIdSettings
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[IsPasscodeRequired <Boolean?>]`: Indicates whether a passcode is required to join a meeting when using joinMeetingId. Optional.
-    - `[JoinMeetingId <String>]`: The meeting ID to be used to join a meeting. Optional. Read-only.
-    - `[Passcode <String>]`: The passcode to join a meeting.  Optional. Read-only.
-  - `[JoinUrl <String>]`: 
-  - `[JoinWebUrl <String>]`: The join URL of the online meeting. Read-only.
-  - `[LobbyBypassSettings <IMicrosoftGraphLobbyBypassSettings>]`: lobbyBypassSettings
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[IsDialInBypassEnabled <Boolean?>]`: Specifies whether or not to always let dial-in callers bypass the lobby. Optional.
-    - `[Scope <String>]`: lobbyBypassScope
-  - `[MeetingAttendanceReport <IMicrosoftGraphMeetingAttendanceReport>]`: meetingAttendanceReport
-  - `[Participants <IMicrosoftGraphMeetingParticipants>]`: meetingParticipants
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Attendees <IMicrosoftGraphMeetingParticipantInfo[]>]`: Information of the meeting attendees.
-      - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
+        - `[CaptureDeviceDriver <String>]`: Name of the capture device driver used by the media endpoint.
+        - `[CaptureDeviceName <String>]`: Name of the capture device used by the media endpoint.
+        - `[CaptureNotFunctioningEventRatio <Single?>]`: Fraction of the call that the media endpoint detected the capture device was not working properly.
+        - `[CpuInsufficentEventRatio <Single?>]`: Fraction of the call that the media endpoint detected the CPU resources available were insufficient and caused poor quality of the audio sent and received.
+        - `[DeviceClippingEventRatio <Single?>]`: Fraction of the call that the media endpoint detected clipping in the captured audio that caused poor quality of the audio being sent.
+        - `[DeviceGlitchEventRatio <Single?>]`: Fraction of the call that the media endpoint detected glitches or gaps in the audio played or captured that caused poor quality of the audio being sent or received.
+        - `[HowlingEventCount <Int32?>]`: Number of times during the call that the media endpoint detected howling or screeching audio.
+        - `[InitialSignalLevelRootMeanSquare <Single?>]`: The root mean square (RMS) of the incoming signal of up to the first 30 seconds of the call.
+        - `[LowSpeechLevelEventRatio <Single?>]`: Fraction of the call that the media endpoint detected low speech level that caused poor quality of the audio being sent.
+        - `[LowSpeechToNoiseEventRatio <Single?>]`: Fraction of the call that the media endpoint detected low speech to noise level that caused poor quality of the audio being sent.
+        - `[MicGlitchRate <Single?>]`: Glitches per 5 minute interval for the media endpoint's microphone.
+        - `[ReceivedNoiseLevel <Int32?>]`: Average energy level of received audio for audio classified as mono noise or left channel of stereo noise by the media endpoint.
+        - `[ReceivedSignalLevel <Int32?>]`: Average energy level of received audio for audio classified as mono speech, or left channel of stereo speech by the media endpoint.
+        - `[RenderDeviceDriver <String>]`: Name of the render device driver used by the media endpoint.
+        - `[RenderDeviceName <String>]`: Name of the render device used by the media endpoint.
+        - `[RenderMuteEventRatio <Single?>]`: Fraction of the call that media endpoint detected device render is muted.
+        - `[RenderNotFunctioningEventRatio <Single?>]`: Fraction of the call that the media endpoint detected the render device was not working properly.
+        - `[RenderZeroVolumeEventRatio <Single?>]`: Fraction of the call that media endpoint detected device render volume is set to 0.
+        - `[SentNoiseLevel <Int32?>]`: Average energy level of sent audio for audio classified as mono noise or left channel of stereo noise by the media endpoint.
+        - `[SentSignalLevel <Int32?>]`: Average energy level of sent audio for audio classified as mono speech, or left channel of stereo speech by the media endpoint.
+        - `[SpeakerGlitchRate <Single?>]`: Glitches per 5 minute internal for the media endpoint's loudspeaker.
+      - `[CalleeNetwork <IMicrosoftGraphCallRecordsNetworkInfo>]`: networkInfo
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Application <IMicrosoftGraphIdentity>]`: identity
-        - `[Device <IMicrosoftGraphIdentity>]`: identity
-        - `[User <IMicrosoftGraphIdentity>]`: identity
-      - `[Role <String>]`: onlineMeetingRole
-      - `[Upn <String>]`: User principal name of the participant.
-    - `[Contributors <IMicrosoftGraphMeetingParticipantInfo[]>]`: 
-    - `[Organizer <IMicrosoftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
-    - `[Producers <IMicrosoftGraphMeetingParticipantInfo[]>]`: 
-  - `[RecordAutomatically <Boolean?>]`: Indicates whether to record the meeting automatically.
-  - `[Recording <Byte[]>]`: The content stream of the recording of a Teams live event. Read-only.
-  - `[Registration <IMicrosoftGraphMeetingRegistration>]`: meetingRegistration
+        - `[BandwidthLowEventRatio <Single?>]`: Fraction of the call that the media endpoint detected the available bandwidth or bandwidth policy was low enough to cause poor quality of the audio sent.
+        - `[BasicServiceSetIdentifier <String>]`: The wireless LAN basic service set identifier of the media endpoint used to connect to the network.
+        - `[ConnectionType <String>]`: networkConnectionType
+        - `[DelayEventRatio <Single?>]`: Fraction of the call that the media endpoint detected the network delay was significant enough to impact the ability to have real-time two-way communication.
+        - `[DnsSuffix <String>]`: DNS suffix associated with the network adapter of the media endpoint.
+        - `[IPAddress <String>]`: IP address of the media endpoint.
+        - `[LinkSpeed <Int64?>]`: Link speed in bits per second reported by the network adapter used by the media endpoint.
+        - `[MacAddress <String>]`: The media access control (MAC) address of the media endpoint's network device.
+        - `[NetworkTransportProtocol <String>]`: networkTransportProtocol
+        - `[Port <Int32?>]`: Network port number used by media endpoint.
+        - `[ReceivedQualityEventRatio <Single?>]`: Fraction of the call that the media endpoint detected the network was causing poor quality of the audio received.
+        - `[ReflexiveIPAddress <String>]`: IP address of the media endpoint as seen by the media relay server. This is typically the public internet IP address associated to the endpoint.
+        - `[RelayIPAddress <String>]`: IP address of the media relay server allocated by the media endpoint.
+        - `[RelayPort <Int32?>]`: Network port number allocated on the media relay server by the media endpoint.
+        - `[SentQualityEventRatio <Single?>]`: Fraction of the call that the media endpoint detected the network was causing poor quality of the audio sent.
+        - `[Subnet <String>]`: Subnet used for media stream by the media endpoint.
+        - `[TraceRouteHops <IMicrosoftGraphCallRecordsTraceRouteHop[]>]`: List of network trace route hops collected for this media stream.*
+          - `[HopCount <Int32?>]`: The network path count of this hop that was used to compute the round-trip time.
+          - `[IPAddress <String>]`: IP address used for this hop in the network trace.
+          - `[RoundTripTime <TimeSpan?>]`: The time from when the trace route packet was sent from the client to this hop and back to the client, denoted in [ISO 8601][] format. For example, 1 second is denoted as PT1S, where P is the duration designator, T is the time designator, and S is the second designator.
+        - `[WifiBand <String>]`: wifiBand
+        - `[WifiBatteryCharge <Int32?>]`: Estimated remaining battery charge in percentage reported by the media endpoint.
+        - `[WifiChannel <Int32?>]`: WiFi channel used by the media endpoint.
+        - `[WifiMicrosoftDriver <String>]`: Name of the Microsoft WiFi driver used by the media endpoint. Value may be localized based on the language used by endpoint.
+        - `[WifiMicrosoftDriverVersion <String>]`: Version of the Microsoft WiFi driver used by the media endpoint.
+        - `[WifiRadioType <String>]`: wifiRadioType
+        - `[WifiSignalStrength <Int32?>]`: WiFi signal strength in percentage reported by the media endpoint.
+        - `[WifiVendorDriver <String>]`: Name of the WiFi driver used by the media endpoint. Value may be localized based on the language used by endpoint.
+        - `[WifiVendorDriverVersion <String>]`: Version of the WiFi driver used by the media endpoint.
+      - `[CallerDevice <IMicrosoftGraphCallRecordsDeviceInfo>]`: deviceInfo
+      - `[CallerNetwork <IMicrosoftGraphCallRecordsNetworkInfo>]`: networkInfo
+      - `[Label <String>]`: How the media was identified during media negotiation stage.
+      - `[Streams <IMicrosoftGraphCallRecordsMediaStream[]>]`: Network streams associated with this media.
+        - `[AudioCodec <String>]`: audioCodec
+        - `[AverageAudioDegradation <Single?>]`: Average Network Mean Opinion Score degradation for stream. Represents how much the network loss and jitter has impacted the quality of received audio.
+        - `[AverageAudioNetworkJitter <TimeSpan?>]`: Average jitter for the stream computed as specified in [RFC 3550][], denoted in [ISO 8601][] format. For example, 1 second is denoted as 'PT1S', where 'P' is the duration designator, 'T' is the time designator, and 'S' is the second designator.
+        - `[AverageBandwidthEstimate <Int64?>]`: Average estimated bandwidth available between two endpoints in bits per second.
+        - `[AverageFreezeDuration <TimeSpan?>]`: Average of the received freeze duration related to the video stream.
+        - `[AverageJitter <TimeSpan?>]`: Average jitter for the stream computed as specified in [RFC 3550][], denoted in [ISO 8601][] format. For example, 1 second is denoted as 'PT1S', where 'P' is the duration designator, 'T' is the time designator, and 'S' is the second designator.
+        - `[AveragePacketLossRate <Single?>]`: Average packet loss rate for stream.
+        - `[AverageRatioOfConcealedSamples <Single?>]`: Ratio of the number of audio frames with samples generated by packet loss concealment to the total number of audio frames.
+        - `[AverageReceivedFrameRate <Single?>]`: Average frames per second received for all video streams computed over the duration of the session.
+        - `[AverageRoundTripTime <TimeSpan?>]`: Average network propagation round-trip time computed as specified in [RFC 3550][], denoted in [ISO 8601][] format. For example, 1 second is denoted as 'PT1S', where 'P' is the duration designator, 'T' is the time designator, and 'S' is the second designator.
+        - `[AverageVideoFrameLossPercentage <Single?>]`: Average percentage of video frames lost as displayed to the user.
+        - `[AverageVideoFrameRate <Single?>]`: Average frames per second received for a video stream, computed over the duration of the session.
+        - `[AverageVideoPacketLossRate <Single?>]`: Average fraction of packets lost, as specified in [RFC 3550][], computed over the duration of the session.
+        - `[EndDateTime <DateTime?>]`: UTC time when the stream ended. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+        - `[IsAudioForwardErrorCorrectionUsed <Boolean?>]`: Indicates whether the forward error correction (FEC) was used at some point during the session. The default value is null.
+        - `[LowFrameRateRatio <Single?>]`: Fraction of the call where frame rate is less than 7.5 frames per second.
+        - `[LowVideoProcessingCapabilityRatio <Single?>]`: Fraction of the call that the client is running less than 70% expected video processing capability.
+        - `[MaxAudioNetworkJitter <TimeSpan?>]`: Maximum of audio network jitter computed over each of the 20 second windows during the session, denoted in [ISO 8601][] format. For example, 1 second is denoted as 'PT1S', where 'P' is the duration designator, 'T' is the time designator, and 'S' is the second designator.
+        - `[MaxJitter <TimeSpan?>]`: Maximum jitter for the stream computed as specified in RFC 3550, denoted in [ISO 8601][] format. For example, 1 second is denoted as 'PT1S', where 'P' is the duration designator, 'T' is the time designator, and 'S' is the second designator.
+        - `[MaxPacketLossRate <Single?>]`: Maximum packet loss rate for the stream.
+        - `[MaxRatioOfConcealedSamples <Single?>]`: Maximum ratio of packets concealed by the healer.
+        - `[MaxRoundTripTime <TimeSpan?>]`: Maximum network propagation round-trip time computed as specified in [RFC 3550][], denoted in [ISO 8601][] format. For example, 1 second is denoted as 'PT1S', where 'P' is the duration designator, 'T' is the time designator, and 'S' is the second designator.
+        - `[PacketUtilization <Int64?>]`: Packet count for the stream.
+        - `[PostForwardErrorCorrectionPacketLossRate <Single?>]`: Packet loss rate after FEC has been applied aggregated across all video streams and codecs.
+        - `[RmsFreezeDuration <TimeSpan?>]`: Root mean square of the received freeze duration related to the video stream.
+        - `[StartDateTime <DateTime?>]`: UTC time when the stream started. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+        - `[StreamDirection <String>]`: mediaStreamDirection
+        - `[StreamId <String>]`: Unique identifier for the stream.
+        - `[VideoCodec <String>]`: videoCodec
+        - `[WasMediaBypassed <Boolean?>]`: True if the media stream bypassed the Mediation Server and went straight between client and PSTN Gateway/PBX, false otherwise.
+    - `[StartDateTime <DateTime?>]`: UTC time when the segment started. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[StartDateTime <DateTime?>]`: UTC fime when the first user joined the session. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+
+`CALLEE <IMicrosoftGraphCallRecordsEndpoint>`: endpoint
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[UserAgent <IMicrosoftGraphCallRecordsUserAgent>]`: userAgent
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[AllowedRegistrant <String>]`: meetingAudience
-    - `[Registrants <IMicrosoftGraphMeetingRegistrantBase[]>]`: Registrants of the online meeting.
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
-      - `[JoinWebUrl <String>]`: A unique web URL for the registrant to join the meeting. Read-only.
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[CustomQuestions <IMicrosoftGraphMeetingRegistrationQuestion[]>]`: Custom registration questions.
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
-      - `[AnswerInputType <String>]`: answerInputType
-      - `[AnswerOptions <String[]>]`: Answer options when answerInputType is radioButton.
-      - `[DisplayName <String>]`: Display name of the custom registration question.
-      - `[IsRequired <Boolean?>]`: Indicates whether the question is required. Default value is false.
-    - `[Description <String>]`: The description of the meeting.
-    - `[EndDateTime <DateTime?>]`: The meeting end time in UTC.
-    - `[RegistrationPageViewCount <Int32?>]`: The number of times the registration page has been visited. Read-only.
-    - `[RegistrationPageWebUrl <String>]`: The URL of the registration page. Read-only.
-    - `[Speakers <IMicrosoftGraphMeetingSpeaker[]>]`: The meeting speaker's information.
-      - `[Bio <String>]`: Bio of the speaker.
-      - `[DisplayName <String>]`: Display name of the speaker.
-    - `[StartDateTime <DateTime?>]`: The meeting start time in UTC.
-    - `[Subject <String>]`: The subject of the meeting.
-  - `[ShareMeetingChatHistoryDefault <String>]`: meetingChatHistoryDefaultMode
-  - `[StartDateTime <DateTime?>]`: The meeting start time in UTC.
-  - `[Subject <String>]`: The subject of the online meeting.
-  - `[Transcripts <IMicrosoftGraphCallTranscript[]>]`: The transcripts of an online meeting. Read-only.
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[Content <Byte[]>]`: A field that represents the content of the transcript. Read-only.
-    - `[CreatedDateTime <DateTime?>]`: Date and time at which the transcript was created. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-    - `[MetadataContent <Byte[]>]`: A field that represents the time-aligned metadata of the utterances in the transcript. Read-only.
-  - `[VideoTeleconferenceId <String>]`: The video teleconferencing ID. Read-only.
-  - `[VirtualAppointment <IMicrosoftGraphVirtualAppointment>]`: virtualAppointment
+    - `[ApplicationVersion <String>]`: Identifies the version of application software used by this endpoint.
+    - `[HeaderValue <String>]`: User-agent header value reported by this endpoint.
+
+`CALLER <IMicrosoftGraphCallRecordsEndpoint>`: endpoint
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[UserAgent <IMicrosoftGraphCallRecordsUserAgent>]`: userAgent
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[AppointmentClientJoinWebUrl <String>]`: The join web URL of the virtual appointment for clients with waiting room and browser join. Optional.
-    - `[AppointmentClients <IMicrosoftGraphVirtualAppointmentUser[]>]`: The client information for the virtual appointment, including name, email, and SMS phone number. Optional.
-      - `[DisplayName <String>]`: The display name of the user who participates in a virtual appointment. Optional.
-      - `[EmailAddress <String>]`: The email address of the user who participates in a virtual appointment. Optional.
-      - `[SmsCapablePhoneNumber <String>]`: The phone number for sending SMS texts for the user who participates in a virtual appointment. Optional.
-    - `[ExternalAppointmentId <String>]`: The identifier of the appointment from the scheduling system, associated with the current virtual appointment. Optional.
-    - `[ExternalAppointmentUrl <String>]`: The URL of the appointment resource from the scheduling system, associated with the current virtual appointment. Optional.
-    - `[Settings <IMicrosoftGraphVirtualAppointmentSettings>]`: virtualAppointmentSettings
+    - `[ApplicationVersion <String>]`: Identifies the version of application software used by this endpoint.
+    - `[HeaderValue <String>]`: User-agent header value reported by this endpoint.
+
+`FAILUREINFO <IMicrosoftGraphCallRecordsFailureInfo>`: failureInfo
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Reason <String>]`: Classification of why a call or portion of a call failed.
+  - `[Stage <String>]`: failureStage
+
+`INPUTOBJECT <ICloudCommunicationsIdentity>`: Identity Parameter
+  - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
+  - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
+  - `[CallId <String>]`: The unique identifier of call
+  - `[CallRecordId <String>]`: The unique identifier of callRecord
+  - `[CallTranscriptId <String>]`: The unique identifier of callTranscript
+  - `[CommsOperationId <String>]`: The unique identifier of commsOperation
+  - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
+  - `[FromDateTime <DateTime?>]`: Usage: fromDateTime={fromDateTime}
+  - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[MeetingRegistrantBaseId <String>]`: The unique identifier of meetingRegistrantBase
+  - `[MeetingRegistrationQuestionId <String>]`: The unique identifier of meetingRegistrationQuestion
+  - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
+  - `[ParticipantId <String>]`: The unique identifier of participant
+  - `[PresenceId <String>]`: The unique identifier of presence
+  - `[SessionId <String>]`: The unique identifier of session
+  - `[ToDateTime <DateTime?>]`: Usage: toDateTime={toDateTime}
+  - `[UserId <String>]`: The unique identifier of user
+
+`SEGMENTS <IMicrosoftGraphCallRecordsSegment[]>`: The list of segments involved in the session. Read-only. Nullable.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
+  - `[Callee <IMicrosoftGraphCallRecordsEndpoint>]`: endpoint
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[UserAgent <IMicrosoftGraphCallRecordsUserAgent>]`: userAgent
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[AllowClientToJoinUsingBrowser <Boolean?>]`: Indicates whether the client can use the browser to join a virtual appointment. If set to false, the client can only use Microsoft Teams to join. Optional.
-  - `[WatermarkProtection <IMicrosoftGraphWatermarkProtectionValues>]`: watermarkProtectionValues
+      - `[ApplicationVersion <String>]`: Identifies the version of application software used by this endpoint.
+      - `[HeaderValue <String>]`: User-agent header value reported by this endpoint.
+  - `[Caller <IMicrosoftGraphCallRecordsEndpoint>]`: endpoint
+  - `[EndDateTime <DateTime?>]`: UTC time when the segment ended. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[FailureInfo <IMicrosoftGraphCallRecordsFailureInfo>]`: failureInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[IsEnabledForContentSharing <Boolean?>]`: Indicates whether to apply a watermark to any shared content.
-    - `[IsEnabledForVideo <Boolean?>]`: Indicates whether to apply a watermark to everyone's video feed.
-
-`BROADCASTSETTINGS <IMicrosoftGraphBroadcastMeetingSettings>`: broadcastMeetingSettings
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AllowedAudience <String>]`: broadcastMeetingAudience
-  - `[Captions <IMicrosoftGraphBroadcastMeetingCaptionSettings>]`: broadcastMeetingCaptionSettings
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[IsCaptionEnabled <Boolean?>]`: Indicates whether captions are enabled for this Teams live event.
-    - `[SpokenLanguage <String>]`: The spoken language.
-    - `[TranslationLanguages <String[]>]`: The translation languages (choose up to 6).
-  - `[IsAttendeeReportEnabled <Boolean?>]`: Indicates whether attendee report is enabled for this Teams live event. Default value is false.
-  - `[IsQuestionAndAnswerEnabled <Boolean?>]`: Indicates whether Q&A is enabled for this Teams live event. Default value is false.
-  - `[IsRecordingEnabled <Boolean?>]`: Indicates whether recording is enabled for this Teams live event. Default value is false.
-  - `[IsVideoOnDemandEnabled <Boolean?>]`: Indicates whether video on demand is enabled for this Teams live event. Default value is false.
-
-`CHATINFO <IMicrosoftGraphChatInfo>`: chatInfo
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[MessageId <String>]`: The unique identifier for a message in a Microsoft Teams channel.
-  - `[ReplyChainMessageId <String>]`: The ID of the reply message.
-  - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
-
-`JOININFORMATION <IMicrosoftGraphItemBody>`: itemBody
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Content <String>]`: The content of the item.
-  - `[ContentType <String>]`: bodyType
-
-`JOINMEETINGIDSETTINGS <IMicrosoftGraphJoinMeetingIdSettings>`: joinMeetingIdSettings
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[IsPasscodeRequired <Boolean?>]`: Indicates whether a passcode is required to join a meeting when using joinMeetingId. Optional.
-  - `[JoinMeetingId <String>]`: The meeting ID to be used to join a meeting. Optional. Read-only.
-  - `[Passcode <String>]`: The passcode to join a meeting.  Optional. Read-only.
-
-`LOBBYBYPASSSETTINGS <IMicrosoftGraphLobbyBypassSettings>`: lobbyBypassSettings
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[IsDialInBypassEnabled <Boolean?>]`: Specifies whether or not to always let dial-in callers bypass the lobby. Optional.
-  - `[Scope <String>]`: lobbyBypassScope
-
-`MEETINGATTENDANCEREPORT <IMicrosoftGraphMeetingAttendanceReport>`: meetingAttendanceReport
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[AttendanceRecords <IMicrosoftGraphAttendanceRecord[]>]`: List of attendance records of an attendance report. Read-only.
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>]`: List of time periods between joining and leaving a meeting.
-      - `[DurationInSeconds <Int32?>]`: Duration of the meeting interval in seconds; that is, the difference between joinDateTime and leaveDateTime.
-      - `[JoinDateTime <DateTime?>]`: The time the attendee joined in UTC.
-      - `[LeaveDateTime <DateTime?>]`: The time the attendee left in UTC.
-    - `[EmailAddress <String>]`: Email address of the user associated with this attendance record.
-    - `[Identity <IMicrosoftGraphIdentity>]`: identity
+    - `[Reason <String>]`: Classification of why a call or portion of a call failed.
+    - `[Stage <String>]`: failureStage
+  - `[Media <IMicrosoftGraphCallRecordsMedia[]>]`: Media associated with this segment.
+    - `[CalleeDevice <IMicrosoftGraphCallRecordsDeviceInfo>]`: deviceInfo
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-    - `[RegistrantId <String>]`: Unique identifier of a meetingRegistrant. Presents when the participant has registered for the meeting.
-    - `[Role <String>]`: Role of the attendee. Possible values are: None, Attendee, Presenter, and Organizer.
-    - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.
-  - `[MeetingEndDateTime <DateTime?>]`: UTC time when the meeting ended. Read-only.
-  - `[MeetingStartDateTime <DateTime?>]`: UTC time when the meeting started. Read-only.
-  - `[TotalParticipantCount <Int32?>]`: Total number of participants. Read-only.
-
-`PARTICIPANTS <IMicrosoftGraphMeetingParticipants>`: meetingParticipants
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Attendees <IMicrosoftGraphMeetingParticipantInfo[]>]`: Information of the meeting attendees.
-    - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
+      - `[CaptureDeviceDriver <String>]`: Name of the capture device driver used by the media endpoint.
+      - `[CaptureDeviceName <String>]`: Name of the capture device used by the media endpoint.
+      - `[CaptureNotFunctioningEventRatio <Single?>]`: Fraction of the call that the media endpoint detected the capture device was not working properly.
+      - `[CpuInsufficentEventRatio <Single?>]`: Fraction of the call that the media endpoint detected the CPU resources available were insufficient and caused poor quality of the audio sent and received.
+      - `[DeviceClippingEventRatio <Single?>]`: Fraction of the call that the media endpoint detected clipping in the captured audio that caused poor quality of the audio being sent.
+      - `[DeviceGlitchEventRatio <Single?>]`: Fraction of the call that the media endpoint detected glitches or gaps in the audio played or captured that caused poor quality of the audio being sent or received.
+      - `[HowlingEventCount <Int32?>]`: Number of times during the call that the media endpoint detected howling or screeching audio.
+      - `[InitialSignalLevelRootMeanSquare <Single?>]`: The root mean square (RMS) of the incoming signal of up to the first 30 seconds of the call.
+      - `[LowSpeechLevelEventRatio <Single?>]`: Fraction of the call that the media endpoint detected low speech level that caused poor quality of the audio being sent.
+      - `[LowSpeechToNoiseEventRatio <Single?>]`: Fraction of the call that the media endpoint detected low speech to noise level that caused poor quality of the audio being sent.
+      - `[MicGlitchRate <Single?>]`: Glitches per 5 minute interval for the media endpoint's microphone.
+      - `[ReceivedNoiseLevel <Int32?>]`: Average energy level of received audio for audio classified as mono noise or left channel of stereo noise by the media endpoint.
+      - `[ReceivedSignalLevel <Int32?>]`: Average energy level of received audio for audio classified as mono speech, or left channel of stereo speech by the media endpoint.
+      - `[RenderDeviceDriver <String>]`: Name of the render device driver used by the media endpoint.
+      - `[RenderDeviceName <String>]`: Name of the render device used by the media endpoint.
+      - `[RenderMuteEventRatio <Single?>]`: Fraction of the call that media endpoint detected device render is muted.
+      - `[RenderNotFunctioningEventRatio <Single?>]`: Fraction of the call that the media endpoint detected the render device was not working properly.
+      - `[RenderZeroVolumeEventRatio <Single?>]`: Fraction of the call that media endpoint detected device render volume is set to 0.
+      - `[SentNoiseLevel <Int32?>]`: Average energy level of sent audio for audio classified as mono noise or left channel of stereo noise by the media endpoint.
+      - `[SentSignalLevel <Int32?>]`: Average energy level of sent audio for audio classified as mono speech, or left channel of stereo speech by the media endpoint.
+      - `[SpeakerGlitchRate <Single?>]`: Glitches per 5 minute internal for the media endpoint's loudspeaker.
+    - `[CalleeNetwork <IMicrosoftGraphCallRecordsNetworkInfo>]`: networkInfo
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Application <IMicrosoftGraphIdentity>]`: identity
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-      - `[Device <IMicrosoftGraphIdentity>]`: identity
-      - `[User <IMicrosoftGraphIdentity>]`: identity
-    - `[Role <String>]`: onlineMeetingRole
-    - `[Upn <String>]`: User principal name of the participant.
-  - `[Contributors <IMicrosoftGraphMeetingParticipantInfo[]>]`: 
-  - `[Organizer <IMicrosoftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
-  - `[Producers <IMicrosoftGraphMeetingParticipantInfo[]>]`: 
-
-`REGISTRATION <IMicrosoftGraphMeetingRegistration>`: meetingRegistration
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AllowedRegistrant <String>]`: meetingAudience
-  - `[Registrants <IMicrosoftGraphMeetingRegistrantBase[]>]`: Registrants of the online meeting.
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[JoinWebUrl <String>]`: A unique web URL for the registrant to join the meeting. Read-only.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[CustomQuestions <IMicrosoftGraphMeetingRegistrationQuestion[]>]`: Custom registration questions.
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[AnswerInputType <String>]`: answerInputType
-    - `[AnswerOptions <String[]>]`: Answer options when answerInputType is radioButton.
-    - `[DisplayName <String>]`: Display name of the custom registration question.
-    - `[IsRequired <Boolean?>]`: Indicates whether the question is required. Default value is false.
-  - `[Description <String>]`: The description of the meeting.
-  - `[EndDateTime <DateTime?>]`: The meeting end time in UTC.
-  - `[RegistrationPageViewCount <Int32?>]`: The number of times the registration page has been visited. Read-only.
-  - `[RegistrationPageWebUrl <String>]`: The URL of the registration page. Read-only.
-  - `[Speakers <IMicrosoftGraphMeetingSpeaker[]>]`: The meeting speaker's information.
-    - `[Bio <String>]`: Bio of the speaker.
-    - `[DisplayName <String>]`: Display name of the speaker.
-  - `[StartDateTime <DateTime?>]`: The meeting start time in UTC.
-  - `[Subject <String>]`: The subject of the meeting.
-
-`TRANSCRIPTS <IMicrosoftGraphCallTranscript[]>`: The transcripts of an online meeting. Read-only.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Content <Byte[]>]`: A field that represents the content of the transcript. Read-only.
-  - `[CreatedDateTime <DateTime?>]`: Date and time at which the transcript was created. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-  - `[MetadataContent <Byte[]>]`: A field that represents the time-aligned metadata of the utterances in the transcript. Read-only.
-
-`VIRTUALAPPOINTMENT <IMicrosoftGraphVirtualAppointment>`: virtualAppointment
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[AppointmentClientJoinWebUrl <String>]`: The join web URL of the virtual appointment for clients with waiting room and browser join. Optional.
-  - `[AppointmentClients <IMicrosoftGraphVirtualAppointmentUser[]>]`: The client information for the virtual appointment, including name, email, and SMS phone number. Optional.
-    - `[DisplayName <String>]`: The display name of the user who participates in a virtual appointment. Optional.
-    - `[EmailAddress <String>]`: The email address of the user who participates in a virtual appointment. Optional.
-    - `[SmsCapablePhoneNumber <String>]`: The phone number for sending SMS texts for the user who participates in a virtual appointment. Optional.
-  - `[ExternalAppointmentId <String>]`: The identifier of the appointment from the scheduling system, associated with the current virtual appointment. Optional.
-  - `[ExternalAppointmentUrl <String>]`: The URL of the appointment resource from the scheduling system, associated with the current virtual appointment. Optional.
-  - `[Settings <IMicrosoftGraphVirtualAppointmentSettings>]`: virtualAppointmentSettings
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[AllowClientToJoinUsingBrowser <Boolean?>]`: Indicates whether the client can use the browser to join a virtual appointment. If set to false, the client can only use Microsoft Teams to join. Optional.
-
-`WATERMARKPROTECTION <IMicrosoftGraphWatermarkProtectionValues>`: watermarkProtectionValues
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[IsEnabledForContentSharing <Boolean?>]`: Indicates whether to apply a watermark to any shared content.
-  - `[IsEnabledForVideo <Boolean?>]`: Indicates whether to apply a watermark to everyone's video feed.
+      - `[BandwidthLowEventRatio <Single?>]`: Fraction of the call that the media endpoint detected the available bandwidth or bandwidth policy was low enough to cause poor quality of the audio sent.
+      - `[BasicServiceSetIdentifier <String>]`: The wireless LAN basic service set identifier of the media endpoint used to connect to the network.
+      - `[ConnectionType <String>]`: networkConnectionType
+      - `[DelayEventRatio <Single?>]`: Fraction of the call that the media endpoint detected the network delay was significant enough to impact the ability to have real-time two-way communication.
+      - `[DnsSuffix <String>]`: DNS suffix associated with the network adapter of the media endpoint.
+      - `[IPAddress <String>]`: IP address of the media endpoint.
+      - `[LinkSpeed <Int64?>]`: Link speed in bits per second reported by the network adapter used by the media endpoint.
+      - `[MacAddress <String>]`: The media access control (MAC) address of the media endpoint's network device.
+      - `[NetworkTransportProtocol <String>]`: networkTransportProtocol
+      - `[Port <Int32?>]`: Network port number used by media endpoint.
+      - `[ReceivedQualityEventRatio <Single?>]`: Fraction of the call that the media endpoint detected the network was causing poor quality of the audio received.
+      - `[ReflexiveIPAddress <String>]`: IP address of the media endpoint as seen by the media relay server. This is typically the public internet IP address associated to the endpoint.
+      - `[RelayIPAddress <String>]`: IP address of the media relay server allocated by the media endpoint.
+      - `[RelayPort <Int32?>]`: Network port number allocated on the media relay server by the media endpoint.
+      - `[SentQualityEventRatio <Single?>]`: Fraction of the call that the media endpoint detected the network was causing poor quality of the audio sent.
+      - `[Subnet <String>]`: Subnet used for media stream by the media endpoint.
+      - `[TraceRouteHops <IMicrosoftGraphCallRecordsTraceRouteHop[]>]`: List of network trace route hops collected for this media stream.*
+        - `[HopCount <Int32?>]`: The network path count of this hop that was used to compute the round-trip time.
+        - `[IPAddress <String>]`: IP address used for this hop in the network trace.
+        - `[RoundTripTime <TimeSpan?>]`: The time from when the trace route packet was sent from the client to this hop and back to the client, denoted in [ISO 8601][] format. For example, 1 second is denoted as PT1S, where P is the duration designator, T is the time designator, and S is the second designator.
+      - `[WifiBand <String>]`: wifiBand
+      - `[WifiBatteryCharge <Int32?>]`: Estimated remaining battery charge in percentage reported by the media endpoint.
+      - `[WifiChannel <Int32?>]`: WiFi channel used by the media endpoint.
+      - `[WifiMicrosoftDriver <String>]`: Name of the Microsoft WiFi driver used by the media endpoint. Value may be localized based on the language used by endpoint.
+      - `[WifiMicrosoftDriverVersion <String>]`: Version of the Microsoft WiFi driver used by the media endpoint.
+      - `[WifiRadioType <String>]`: wifiRadioType
+      - `[WifiSignalStrength <Int32?>]`: WiFi signal strength in percentage reported by the media endpoint.
+      - `[WifiVendorDriver <String>]`: Name of the WiFi driver used by the media endpoint. Value may be localized based on the language used by endpoint.
+      - `[WifiVendorDriverVersion <String>]`: Version of the WiFi driver used by the media endpoint.
+    - `[CallerDevice <IMicrosoftGraphCallRecordsDeviceInfo>]`: deviceInfo
+    - `[CallerNetwork <IMicrosoftGraphCallRecordsNetworkInfo>]`: networkInfo
+    - `[Label <String>]`: How the media was identified during media negotiation stage.
+    - `[Streams <IMicrosoftGraphCallRecordsMediaStream[]>]`: Network streams associated with this media.
+      - `[AudioCodec <String>]`: audioCodec
+      - `[AverageAudioDegradation <Single?>]`: Average Network Mean Opinion Score degradation for stream. Represents how much the network loss and jitter has impacted the quality of received audio.
+      - `[AverageAudioNetworkJitter <TimeSpan?>]`: Average jitter for the stream computed as specified in [RFC 3550][], denoted in [ISO 8601][] format. For example, 1 second is denoted as 'PT1S', where 'P' is the duration designator, 'T' is the time designator, and 'S' is the second designator.
+      - `[AverageBandwidthEstimate <Int64?>]`: Average estimated bandwidth available between two endpoints in bits per second.
+      - `[AverageFreezeDuration <TimeSpan?>]`: Average of the received freeze duration related to the video stream.
+      - `[AverageJitter <TimeSpan?>]`: Average jitter for the stream computed as specified in [RFC 3550][], denoted in [ISO 8601][] format. For example, 1 second is denoted as 'PT1S', where 'P' is the duration designator, 'T' is the time designator, and 'S' is the second designator.
+      - `[AveragePacketLossRate <Single?>]`: Average packet loss rate for stream.
+      - `[AverageRatioOfConcealedSamples <Single?>]`: Ratio of the number of audio frames with samples generated by packet loss concealment to the total number of audio frames.
+      - `[AverageReceivedFrameRate <Single?>]`: Average frames per second received for all video streams computed over the duration of the session.
+      - `[AverageRoundTripTime <TimeSpan?>]`: Average network propagation round-trip time computed as specified in [RFC 3550][], denoted in [ISO 8601][] format. For example, 1 second is denoted as 'PT1S', where 'P' is the duration designator, 'T' is the time designator, and 'S' is the second designator.
+      - `[AverageVideoFrameLossPercentage <Single?>]`: Average percentage of video frames lost as displayed to the user.
+      - `[AverageVideoFrameRate <Single?>]`: Average frames per second received for a video stream, computed over the duration of the session.
+      - `[AverageVideoPacketLossRate <Single?>]`: Average fraction of packets lost, as specified in [RFC 3550][], computed over the duration of the session.
+      - `[EndDateTime <DateTime?>]`: UTC time when the stream ended. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+      - `[IsAudioForwardErrorCorrectionUsed <Boolean?>]`: Indicates whether the forward error correction (FEC) was used at some point during the session. The default value is null.
+      - `[LowFrameRateRatio <Single?>]`: Fraction of the call where frame rate is less than 7.5 frames per second.
+      - `[LowVideoProcessingCapabilityRatio <Single?>]`: Fraction of the call that the client is running less than 70% expected video processing capability.
+      - `[MaxAudioNetworkJitter <TimeSpan?>]`: Maximum of audio network jitter computed over each of the 20 second windows during the session, denoted in [ISO 8601][] format. For example, 1 second is denoted as 'PT1S', where 'P' is the duration designator, 'T' is the time designator, and 'S' is the second designator.
+      - `[MaxJitter <TimeSpan?>]`: Maximum jitter for the stream computed as specified in RFC 3550, denoted in [ISO 8601][] format. For example, 1 second is denoted as 'PT1S', where 'P' is the duration designator, 'T' is the time designator, and 'S' is the second designator.
+      - `[MaxPacketLossRate <Single?>]`: Maximum packet loss rate for the stream.
+      - `[MaxRatioOfConcealedSamples <Single?>]`: Maximum ratio of packets concealed by the healer.
+      - `[MaxRoundTripTime <TimeSpan?>]`: Maximum network propagation round-trip time computed as specified in [RFC 3550][], denoted in [ISO 8601][] format. For example, 1 second is denoted as 'PT1S', where 'P' is the duration designator, 'T' is the time designator, and 'S' is the second designator.
+      - `[PacketUtilization <Int64?>]`: Packet count for the stream.
+      - `[PostForwardErrorCorrectionPacketLossRate <Single?>]`: Packet loss rate after FEC has been applied aggregated across all video streams and codecs.
+      - `[RmsFreezeDuration <TimeSpan?>]`: Root mean square of the received freeze duration related to the video stream.
+      - `[StartDateTime <DateTime?>]`: UTC time when the stream started. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+      - `[StreamDirection <String>]`: mediaStreamDirection
+      - `[StreamId <String>]`: Unique identifier for the stream.
+      - `[VideoCodec <String>]`: videoCodec
+      - `[WasMediaBypassed <Boolean?>]`: True if the media stream bypassed the Mediation Server and went straight between client and PSTN Gateway/PBX, false otherwise.
+  - `[StartDateTime <DateTime?>]`: UTC time when the segment started. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ## RELATED LINKS
 
+## RELATED LINKS

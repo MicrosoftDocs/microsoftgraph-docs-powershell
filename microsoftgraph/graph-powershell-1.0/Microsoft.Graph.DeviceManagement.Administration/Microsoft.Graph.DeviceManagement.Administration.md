@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 Module Guid: 161c9a36-ca9e-4f0b-8697-6a9029b1c067
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration
@@ -67,9 +67,6 @@ The Role Assignments.
 
 ### [Get-MgDeviceManagementRoleAssignmentCount](Get-MgDeviceManagementRoleAssignmentCount.md)
 Get the number of the resource
-
-### [Get-MgDeviceManagementRoleAssignmentRoleDefinition](Get-MgDeviceManagementRoleAssignmentRoleDefinition.md)
-Role definition this assignment is part of.
 
 ### [Get-MgDeviceManagementRoleDefinition](Get-MgDeviceManagementRoleDefinition.md)
 The Role Definitions.

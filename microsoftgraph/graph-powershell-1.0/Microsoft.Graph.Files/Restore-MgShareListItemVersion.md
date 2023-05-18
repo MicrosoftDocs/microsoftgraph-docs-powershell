@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/restore-mgsharelistitemversion
 schema: 2.0.0
@@ -15,25 +15,25 @@ This will create a new version with the contents of the previous version, but pr
 
 ### Restore1 (Default)
 ```
-Restore-MgShareListItemVersion -ListItemVersionId <String> -SharedDriveItemId <String> [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+Restore-MgShareListItemVersion -ListItemVersionId <String> -SharedDriveItemId <String> [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Restore
 ```
 Restore-MgShareListItemVersion -ListItemId <String> -ListItemVersionId <String> -SharedDriveItemId <String>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### RestoreViaIdentity
-```
-Restore-MgShareListItemVersion -InputObject <IFilesIdentity> [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### RestoreViaIdentity1
 ```
-Restore-MgShareListItemVersion -InputObject <IFilesIdentity> [-PassThru] [-Confirm] [-WhatIf]
+Restore-MgShareListItemVersion -InputObject <IFilesIdentity> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### RestoreViaIdentity
+```
+Restore-MgShareListItemVersion -InputObject <IFilesIdentity> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -43,7 +43,7 @@ This will create a new version with the contents of the previous version, but pr
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Sites
 ```
@@ -57,8 +57,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IFilesIdentity
-Parameter Sets: RestoreViaIdentity, RestoreViaIdentity1
+Type: IFilesIdentity
+Parameter Sets: RestoreViaIdentity1, RestoreViaIdentity
 Aliases:
 
 Required: True
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 The unique identifier of listItem
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Restore
 Aliases:
 
@@ -87,8 +87,8 @@ Accept wildcard characters: False
 The unique identifier of listItemVersion
 
 ```yaml
-Type: System.String
-Parameter Sets: Restore, Restore1
+Type: String
+Parameter Sets: Restore1, Restore
 Aliases:
 
 Required: True
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -117,8 +117,8 @@ Accept wildcard characters: False
 The unique identifier of sharedDriveItem
 
 ```yaml
-Type: System.String
-Parameter Sets: Restore, Restore1
+Type: String
+Parameter Sets: Restore1, Restore
 Aliases:
 
 Required: True
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -148,7 +148,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -165,11 +165,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -206,4 +204,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

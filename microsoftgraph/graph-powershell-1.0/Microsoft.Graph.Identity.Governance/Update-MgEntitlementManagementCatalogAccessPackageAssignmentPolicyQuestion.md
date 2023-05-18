@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementcatalogaccesspackageassignmentpolicyquestion
@@ -18,15 +18,15 @@ Update-MgEntitlementManagementCatalogAccessPackageAssignmentPolicyQuestion
  -AccessPackageAssignmentPolicyId <String> -AccessPackageCatalogId <String> -AccessPackageId <String>
  -AccessPackageQuestionId <String> [-AdditionalProperties <Hashtable>] [-Id <String>] [-IsAnswerEditable]
  [-IsRequired] [-Localizations <IMicrosoftGraphAccessPackageLocalizedText[]>] [-Sequence <Int32>]
- [-Text <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Text <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgEntitlementManagementCatalogAccessPackageAssignmentPolicyQuestion
  -AccessPackageAssignmentPolicyId <String> -AccessPackageCatalogId <String> -AccessPackageId <String>
- -AccessPackageQuestionId <String> -BodyParameter <IMicrosoftGraphAccessPackageQuestion> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -AccessPackageQuestionId <String> -BodyParameter <IMicrosoftGraphAccessPackageQuestion> [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -34,14 +34,14 @@ Update-MgEntitlementManagementCatalogAccessPackageAssignmentPolicyQuestion
 Update-MgEntitlementManagementCatalogAccessPackageAssignmentPolicyQuestion
  -InputObject <IIdentityGovernanceIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-IsAnswerEditable] [-IsRequired] [-Localizations <IMicrosoftGraphAccessPackageLocalizedText[]>]
- [-Sequence <Int32>] [-Text <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Sequence <Int32>] [-Text <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgEntitlementManagementCatalogAccessPackageAssignmentPolicyQuestion
- -InputObject <IIdentityGovernanceIdentity> -BodyParameter <IMicrosoftGraphAccessPackageQuestion> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -InputObject <IIdentityGovernanceIdentity> -BodyParameter <IMicrosoftGraphAccessPackageQuestion> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -220,21 +220,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Sequence
 Relative position of this question when displaying a list of questions to the requestor.
 
@@ -305,7 +290,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageQuestion
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageQuestion
 ## NOTES
 
 ALIASES

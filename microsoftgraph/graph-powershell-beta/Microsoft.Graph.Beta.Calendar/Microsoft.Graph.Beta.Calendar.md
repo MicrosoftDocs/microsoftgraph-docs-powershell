@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Calendar
 Module Guid: 09e40428-46dc-4d5f-b428-fffa8dc7f80e
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar
@@ -26,17 +26,14 @@ Get the specified permissions object of a user or group calendar that has been s
 ### [Get-MgBetaGroupCalendarPermissionCount](Get-MgBetaGroupCalendarPermissionCount.md)
 Get the number of the resource
 
-### [Get-MgBetaGroupCalendarView](Get-MgBetaGroupCalendarView.md)
-The calendar view for the calendar.
-Navigation property.
-Read-only.
+### [Get-MgBetaGroupCalendarPermissionCount](Get-MgBetaGroupCalendarPermissionCount.md)
+Get the number of the resource
 
 ### [Get-MgBetaGroupEvent](Get-MgBetaGroupEvent.md)
 Get an event object.
 
-### [Get-MgBetaGroupEventAttachment](Get-MgBetaGroupEventAttachment.md)
-Read the properties, relationships, or raw contents of an attachment that is attached to a user event, message, Outlook task, or group post.
-An attachment can be one of the following types: All these types of attachments are derived from the attachment resource.
+### [Get-MgBetaGroupEvent](Get-MgBetaGroupEvent.md)
+Get an event object.
 
 ### [Get-MgBetaGroupEventAttachmentCount](Get-MgBetaGroupEventAttachmentCount.md)
 Get the number of the resource
@@ -113,12 +110,8 @@ The following table lists the three scenarios where you can get an open extensio
 ### [Get-MgBetaGroupEventExtensionCount](Get-MgBetaGroupEventExtensionCount.md)
 Get the number of the resource
 
-### [Get-MgBetaGroupEventInstance](Get-MgBetaGroupEventInstance.md)
-The occurrences of a recurring series, if the event is a series master.
-This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series.
-Navigation property.
-Read-only.
-Nullable.
+### [Get-MgBetaGroupEventExtensionCount](Get-MgBetaGroupEventExtensionCount.md)
+Get the number of the resource
 
 ### [Get-MgBetaGroupEventInstanceAttachment](Get-MgBetaGroupEventInstanceAttachment.md)
 Read the properties, relationships, or raw contents of an attachment that is attached to a user event, message, Outlook task, or group post.
@@ -186,11 +179,8 @@ Nullable.
 ### [Get-MgBetaUserCalendarCount](Get-MgBetaUserCalendarCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserCalendarEvent](Get-MgBetaUserCalendarEvent.md)
-Retrieve a list of events in a calendar.
-The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
-The list of events contains single instance meetings and series masters.
-To get expanded event instances, you can get the calendar view, or\nget the instances of an event.
+### [Get-MgBetaUserCalendarCount](Get-MgBetaUserCalendarCount.md)
+Get the number of the resource
 
 ### [Get-MgBetaUserCalendarGroup](Get-MgBetaUserCalendarGroup.md)
 Retrieve the properties and relationships of a calendar group object.
@@ -372,10 +362,8 @@ Create a calendarPermission resource to specify the identity and role of the use
 ### [New-MgBetaGroupEvent](New-MgBetaGroupEvent.md)
 Use this API to create a new event.
 
-### [New-MgBetaGroupEventAttachment](New-MgBetaGroupEventAttachment.md)
-Use this API to add an attachment to an existing event.
-This operation limits the size of the attachment you can add to under 3 MB.
-If an organizer adds an attachment to a meeting event, the organizer can subsequently update the event to send the attachment and update the event for each attendee as well.
+### [New-MgBetaGroupEvent](New-MgBetaGroupEvent.md)
+Use this API to create a new event.
 
 ### [New-MgBetaGroupEventExceptionOccurrenceAttachment](New-MgBetaGroupEventExceptionOccurrenceAttachment.md)
 Use this API to add an attachment to an existing event.

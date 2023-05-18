@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusiness
 schema: 2.0.0
@@ -19,18 +19,17 @@ You can include other information such as business address, web site address, an
 New-MgBookingBusiness [-AdditionalProperties <Hashtable>] [-Address <IMicrosoftGraphPhysicalAddress>]
  [-Appointments <IMicrosoftGraphBookingAppointment[]>] [-BusinessHours <IMicrosoftGraphBookingWorkHours[]>]
  [-BusinessType <String>] [-CalendarView <IMicrosoftGraphBookingAppointment[]>]
- [-Customers <IMicrosoftGraphBookingCustomerBase[]>]
- [-CustomQuestions <IMicrosoftGraphBookingCustomQuestion[]>] [-DefaultCurrencyIso <String>]
- [-DisplayName <String>] [-Email <String>] [-Id <String>] [-LanguageTag <String>] [-Phone <String>]
+ [-CustomQuestions <IMicrosoftGraphBookingCustomQuestion[]>]
+ [-Customers <IMicrosoftGraphBookingCustomerBase[]>] [-DefaultCurrencyIso <String>] [-DisplayName <String>]
+ [-Email <String>] [-Id <String>] [-LanguageTag <String>] [-Phone <String>]
  [-SchedulingPolicy <IMicrosoftGraphBookingSchedulingPolicy>] [-Services <IMicrosoftGraphBookingService[]>]
- [-StaffMembers <IMicrosoftGraphBookingStaffMemberBase[]>] [-WebSiteUrl <String>] [-Confirm] [-WhatIf]
+ [-StaffMembers <IMicrosoftGraphBookingStaffMemberBase[]>] [-WebSiteUrl <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBookingBusiness -BodyParameter <IMicrosoftGraphBookingBusiness> [-Confirm] [-WhatIf]
- [<CommonParameters>]
+New-MgBookingBusiness -BodyParameter <IMicrosoftGraphBookingBusiness> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -40,7 +39,7 @@ You can include other information such as business address, web site address, an
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Bookings
 $params = @{
@@ -61,15 +60,13 @@ $params = @{
 New-MgBookingBusiness -BodyParameter $params
 ```
 
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -85,7 +82,7 @@ physicalAddress
 To construct, see NOTES section for ADDRESS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPhysicalAddress
+Type: IMicrosoftGraphPhysicalAddress
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -103,7 +100,7 @@ Nullable.
 To construct, see NOTES section for APPOINTMENTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBookingAppointment[]
+Type: IMicrosoftGraphBookingAppointment[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -119,7 +116,7 @@ Represents a Microsot Bookings Business.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBookingBusiness
+Type: IMicrosoftGraphBookingBusiness
 Parameter Sets: Create
 Aliases:
 
@@ -135,7 +132,7 @@ The hours of operation for the business.
 To construct, see NOTES section for BUSINESSHOURS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBookingWorkHours[]
+Type: IMicrosoftGraphBookingWorkHours[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -150,7 +147,7 @@ Accept wildcard characters: False
 The type of business.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -168,7 +165,7 @@ Nullable.
 To construct, see NOTES section for CALENDARVIEW properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBookingAppointment[]
+Type: IMicrosoftGraphBookingAppointment[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -186,7 +183,7 @@ Nullable.
 To construct, see NOTES section for CUSTOMERS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBookingCustomerBase[]
+Type: IMicrosoftGraphBookingCustomerBase[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -204,7 +201,7 @@ Nullable.
 To construct, see NOTES section for CUSTOMQUESTIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBookingCustomQuestion[]
+Type: IMicrosoftGraphBookingCustomQuestion[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -219,7 +216,7 @@ Accept wildcard characters: False
 The code for the currency that the business operates in on Microsoft Bookings.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -235,7 +232,7 @@ The name of the business, which interfaces with customers.
 This name appears at the top of the business scheduling page.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -250,7 +247,7 @@ Accept wildcard characters: False
 The email address for the business.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -266,7 +263,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -281,7 +278,7 @@ Accept wildcard characters: False
 The language of the self-service booking page.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -297,7 +294,7 @@ The telephone number for the business.
 The phone property, together with address and webSiteUrl, appear in the footer of a business scheduling page.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -313,7 +310,7 @@ This type represents the set of policies that dictate how bookings can be create
 To construct, see NOTES section for SCHEDULINGPOLICY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBookingSchedulingPolicy
+Type: IMicrosoftGraphBookingSchedulingPolicy
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -331,7 +328,7 @@ Nullable.
 To construct, see NOTES section for SERVICES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBookingService[]
+Type: IMicrosoftGraphBookingService[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -349,7 +346,7 @@ Nullable.
 To construct, see NOTES section for STAFFMEMBERS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBookingStaffMemberBase[]
+Type: IMicrosoftGraphBookingStaffMemberBase[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -365,7 +362,7 @@ The URL of the business web site.
 The webSiteUrl property, together with address, phone, appear in the footer of a business scheduling page.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -380,7 +377,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -396,7 +393,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -413,11 +410,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBookingBusiness
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBookingBusiness
-
 ## NOTES
 
 ALIASES
@@ -731,3 +726,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

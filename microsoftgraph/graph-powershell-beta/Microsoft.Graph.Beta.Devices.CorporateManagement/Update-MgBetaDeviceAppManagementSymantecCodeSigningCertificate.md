@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementsymanteccodesigningcertificate
 schema: 2.0.0
@@ -17,13 +17,13 @@ Update the navigation property symantecCodeSigningCertificate in deviceAppManage
 Update-MgBetaDeviceAppManagementSymantecCodeSigningCertificate [-AdditionalProperties <Hashtable>]
  [-ContentInputFile <String>] [-ExpirationDateTime <DateTime>] [-Id <String>] [-Issuer <String>]
  [-IssuerName <String>] [-Password <String>] [-Status <String>] [-Subject <String>] [-SubjectName <String>]
- [-UploadDateTime <DateTime>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-UploadDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceAppManagementSymantecCodeSigningCertificate
- -BodyParameter <IMicrosoftGraphSymantecCodeSigningCertificate> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSymantecCodeSigningCertificate> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -31,19 +31,15 @@ Update the navigation property symantecCodeSigningCertificate in deviceAppManage
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -51,7 +47,7 @@ Update the navigation property symantecCodeSigningCertificate in deviceAppManage
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -67,7 +63,7 @@ symantecCodeSigningCertificate
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSymantecCodeSigningCertificate
+Type: IMicrosoftGraphSymantecCodeSigningCertificate
 Parameter Sets: Update
 Aliases:
 
@@ -82,7 +78,7 @@ Accept wildcard characters: False
 Input File for Content (The Windows Symantec Code-Signing Certificate in the raw data format.)
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -97,7 +93,7 @@ Accept wildcard characters: False
 The Cert Expiration Date.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -113,7 +109,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -128,7 +124,7 @@ Accept wildcard characters: False
 The Issuer value for the cert.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -143,7 +139,7 @@ Accept wildcard characters: False
 The Issuer Name for the cert.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -158,7 +154,7 @@ Accept wildcard characters: False
 The Password required for .pfx file.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -173,7 +169,7 @@ Accept wildcard characters: False
 certificateStatus
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -188,7 +184,7 @@ Accept wildcard characters: False
 The Subject value for the cert.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -203,7 +199,7 @@ Accept wildcard characters: False
 The Subject Name for the cert.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -218,7 +214,7 @@ Accept wildcard characters: False
 The Type of the CodeSigning Cert as Symantec Cert.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -233,7 +229,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -249,7 +245,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -266,11 +262,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSymantecCodeSigningCertificate
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSymantecCodeSigningCertificate
-
 ## NOTES
 
 ALIASES
@@ -296,4 +290,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UploadDateTime <DateTime?>]`: The Type of the CodeSigning Cert as Symantec Cert.
 
 ## RELATED LINKS
-

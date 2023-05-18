@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 Module Guid: 1c10da5b-8acf-4262-8565-e41c0cb753e6
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins
@@ -325,12 +325,6 @@ Read the properties and relationships of an accessReviewPolicy object.
 ### [Get-MgBetaPolicyActivityBasedTimeoutPolicy](Get-MgBetaPolicyActivityBasedTimeoutPolicy.md)
 Get the properties of an activityBasedTimeoutPolicy object.
 
-### [Get-MgBetaPolicyActivityBasedTimeoutPolicyApplyTo](Get-MgBetaPolicyActivityBasedTimeoutPolicyApplyTo.md)
-Get appliesTo from policies
-
-### [Get-MgBetaPolicyActivityBasedTimeoutPolicyApplyToCount](Get-MgBetaPolicyActivityBasedTimeoutPolicyApplyToCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaPolicyActivityBasedTimeoutPolicyCount](Get-MgBetaPolicyActivityBasedTimeoutPolicyCount.md)
 Get the number of the resource
 
@@ -391,12 +385,6 @@ Read the properties of a b2cAuthenticationMethodsPolicy object.
 
 ### [Get-MgBetaPolicyClaimMappingPolicy](Get-MgBetaPolicyClaimMappingPolicy.md)
 Retrieve the properties and relationships of a claimsMappingPolicy object.
-
-### [Get-MgBetaPolicyClaimMappingPolicyApplyTo](Get-MgBetaPolicyClaimMappingPolicyApplyTo.md)
-Get appliesTo from policies
-
-### [Get-MgBetaPolicyClaimMappingPolicyApplyToCount](Get-MgBetaPolicyClaimMappingPolicyApplyToCount.md)
-Get the number of the resource
 
 ### [Get-MgBetaPolicyClaimMappingPolicyCount](Get-MgBetaPolicyClaimMappingPolicyCount.md)
 Get the number of the resource
@@ -463,12 +451,6 @@ Get the number of the resource
 
 ### [Get-MgBetaPolicyHomeRealmDiscoveryPolicy](Get-MgBetaPolicyHomeRealmDiscoveryPolicy.md)
 Retrieve the properties and relationships of a homeRealmDiscoveryPolicy object.
-
-### [Get-MgBetaPolicyHomeRealmDiscoveryPolicyApplyTo](Get-MgBetaPolicyHomeRealmDiscoveryPolicyApplyTo.md)
-Get appliesTo from policies
-
-### [Get-MgBetaPolicyHomeRealmDiscoveryPolicyApplyToCount](Get-MgBetaPolicyHomeRealmDiscoveryPolicyApplyToCount.md)
-Get the number of the resource
 
 ### [Get-MgBetaPolicyHomeRealmDiscoveryPolicyCount](Get-MgBetaPolicyHomeRealmDiscoveryPolicyCount.md)
 Get the number of the resource
@@ -579,23 +561,11 @@ Get the number of the resource
 ### [Get-MgBetaPolicyTokenIssuancePolicy](Get-MgBetaPolicyTokenIssuancePolicy.md)
 Retrieve the properties and relationships of a tokenIssuancePolicy object.
 
-### [Get-MgBetaPolicyTokenIssuancePolicyApplyTo](Get-MgBetaPolicyTokenIssuancePolicyApplyTo.md)
-Get appliesTo from policies
-
-### [Get-MgBetaPolicyTokenIssuancePolicyApplyToCount](Get-MgBetaPolicyTokenIssuancePolicyApplyToCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaPolicyTokenIssuancePolicyCount](Get-MgBetaPolicyTokenIssuancePolicyCount.md)
 Get the number of the resource
 
 ### [Get-MgBetaPolicyTokenLifetimePolicy](Get-MgBetaPolicyTokenLifetimePolicy.md)
 Retrieve the properties and relationships of a tokenLifetimePolicy object.
-
-### [Get-MgBetaPolicyTokenLifetimePolicyApplyTo](Get-MgBetaPolicyTokenLifetimePolicyApplyTo.md)
-Get appliesTo from policies
-
-### [Get-MgBetaPolicyTokenLifetimePolicyApplyToCount](Get-MgBetaPolicyTokenLifetimePolicyApplyToCount.md)
-Get the number of the resource
 
 ### [Get-MgBetaPolicyTokenLifetimePolicyCount](Get-MgBetaPolicyTokenLifetimePolicyCount.md)
 Get the number of the resource
@@ -1156,10 +1126,6 @@ Delete an identityUserFlowAttributeAssignment object.
 ### [Remove-MgBetaIdentityB2XUserFlow](Remove-MgBetaIdentityB2XUserFlow.md)
 Delete a b2xIdentityUserFlow object.
 
-### [Remove-MgBetaIdentityB2XUserFlowIdentityProvider](Remove-MgBetaIdentityB2XUserFlowIdentityProvider.md)
-Delete an identity provider from a b2xIdentityUserFlow object.
-For self-service sign up user flows, the values can be `Google-OAUTH` or `Facebook-OAUTH`.
-
 ### [Remove-MgBetaIdentityB2XUserFlowIdentityProviderByRef](Remove-MgBetaIdentityB2XUserFlowIdentityProviderByRef.md)
 Delete ref of navigation property userFlowIdentityProviders for identity
 
@@ -1686,10 +1652,6 @@ Update the user synchronization policy of a partner-specific configuration.
 
 ### [Update-MgBetaPolicyDefaultAppManagementPolicy](Update-MgBetaPolicyDefaultAppManagementPolicy.md)
 Update the properties of a tenantAppManagementPolicy object.
-
-### [Update-MgBetaPolicyDeviceRegistrationPolicy](Update-MgBetaPolicyDeviceRegistrationPolicy.md)
-Update the properties of a deviceRegistrationPolicy object.
-Represents deviceRegistrationPolicy quota restrictions, additional authentication, and authorization policies to register device identities to your organization.
 
 ### [Update-MgBetaPolicyDirectoryRoleAccessReviewPolicy](Update-MgBetaPolicyDirectoryRoleAccessReviewPolicy.md)
 Update the navigation property directoryRoleAccessReviewPolicy in policies

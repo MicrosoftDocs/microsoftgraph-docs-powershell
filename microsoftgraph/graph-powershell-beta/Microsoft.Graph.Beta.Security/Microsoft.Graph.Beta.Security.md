@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Security
 Module Guid: e223ff2b-b5cf-4ba0-9ea9-e15e4ad41e62
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security
@@ -344,7 +344,7 @@ Get providerTenantSettings from security
 Get the number of the resource
 
 ### [Get-MgBetaSecuritySecureScore](Get-MgBetaSecuritySecureScore.md)
-Measurements of tenants’ security posture to help protect them from threats.
+Measurements of tenants' security posture to help protect them from threats.
 
 ### [Get-MgBetaSecuritySecureScoreControlProfile](Get-MgBetaSecuritySecureScoreControlProfile.md)
 Get secureScoreControlProfiles from security
@@ -411,9 +411,6 @@ Get the number of the resource
 
 ### [Get-MgBetaSecurityThreatIntelligenceArticleIndicator](Get-MgBetaSecurityThreatIntelligenceArticleIndicator.md)
 Read the properties and relationships of an articleIndicator object.
-
-### [Get-MgBetaSecurityThreatIntelligenceArticleIndicatorArtifact](Get-MgBetaSecurityThreatIntelligenceArticleIndicatorArtifact.md)
-The artifact related to this indicator.
 
 ### [Get-MgBetaSecurityThreatIntelligenceArticleIndicatorCount](Get-MgBetaSecurityThreatIntelligenceArticleIndicatorCount.md)
 Get the number of the resource
@@ -498,9 +495,6 @@ Generally, this is the value that you can search to discover this passiveDnsReco
 
 ### [Get-MgBetaSecurityThreatIntelligenceProfileIndicator](Get-MgBetaSecurityThreatIntelligenceProfileIndicator.md)
 Get intelligenceProfileIndicators from security
-
-### [Get-MgBetaSecurityThreatIntelligenceProfileIndicatorArtifact](Get-MgBetaSecurityThreatIntelligenceProfileIndicatorArtifact.md)
-The artifact related to this indicator.
 
 ### [Get-MgBetaSecurityThreatIntelligenceProfileIndicatorCount](Get-MgBetaSecurityThreatIntelligenceProfileIndicatorCount.md)
 Get the number of the resource
@@ -589,10 +583,6 @@ For details, see Manage custodians in an eDiscovery (Premium) case.
 
 ### [Invoke-MgBetaAsSecurityCaseEdiscoveryCaseTagHierarchy](Invoke-MgBetaAsSecurityCaseEdiscoveryCaseTagHierarchy.md)
 Invoke function asHierarchy
-
-### [Invoke-MgBetaEstimateSecurityCaseEdiscoveryCaseSearchStatistics](Invoke-MgBetaEstimateSecurityCaseEdiscoveryCaseSearchStatistics.md)
-Run an estimate of the number of emails and documents in the eDiscovery search.
-To learn more about searches in eDiscovery, see Collect data for a case in eDiscovery (Premium).
 
 ### [Invoke-MgBetaExtractSecurityInformationProtectionSensitivityLabelContentLabel](Invoke-MgBetaExtractSecurityInformationProtectionSensitivityLabelContentLabel.md)
 Use the metadata that exists on an already-labeled piece of information to resolve the metadata to a specific sensitivity label.
@@ -859,12 +849,6 @@ Delete an ediscoverySearch object.
 
 ### [Remove-MgBetaSecurityCaseEdiscoveryCaseSearchAdditionalSource](Remove-MgBetaSecurityCaseEdiscoveryCaseSearchAdditionalSource.md)
 Delete navigation property additionalSources for security
-
-### [Remove-MgBetaSecurityCaseEdiscoveryCaseSearchCustodianSource](Remove-MgBetaSecurityCaseEdiscoveryCaseSearchCustodianSource.md)
-Remove a dataSource object.
-
-### [Remove-MgBetaSecurityCaseEdiscoveryCaseSearchNoncustodialSource](Remove-MgBetaSecurityCaseEdiscoveryCaseSearchNoncustodialSource.md)
-Remove an ediscoveryNoncustodialDataSource object.
 
 ### [Remove-MgBetaSecurityCaseEdiscoveryCaseSetting](Remove-MgBetaSecurityCaseEdiscoveryCaseSetting.md)
 Delete navigation property settings for security

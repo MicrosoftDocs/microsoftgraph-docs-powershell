@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaextractuserdriverootsensitivitylabel
 schema: 2.0.0
@@ -14,13 +14,13 @@ Invoke action extractSensitivityLabels
 
 ### Extract (Default)
 ```
-Invoke-MgBetaExtractUserDriveRootSensitivityLabel -DriveId <String> -UserId <String> [-Confirm] [-WhatIf]
+Invoke-MgBetaExtractUserDriveRootSensitivityLabel -DriveId <String> -UserId <String> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### ExtractViaIdentity
 ```
-Invoke-MgBetaExtractUserDriveRootSensitivityLabel -InputObject <IUsersActionsIdentity> [-Confirm] [-WhatIf]
+Invoke-MgBetaExtractUserDriveRootSensitivityLabel -InputObject <IUsersActionsIdentity> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -29,14 +29,14 @@ Invoke action extractSensitivityLabels
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -49,7 +49,7 @@ Invoke action extractSensitivityLabels
 The unique identifier of drive
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Extract
 Aliases:
 
@@ -65,7 +65,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+Type: IUsersActionsIdentity
 Parameter Sets: ExtractViaIdentity
 Aliases:
 
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Extract
 Aliases:
 
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -111,7 +111,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -128,11 +128,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSensitivityLabelAssignment
-
 ## NOTES
 
 ALIASES
@@ -185,4 +183,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-
