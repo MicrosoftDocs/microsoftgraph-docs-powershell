@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 Module Guid: 0c1dfb5a-0fc7-4f7f-8981-77afcc84f932
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration
@@ -228,12 +228,6 @@ The available group policy uploaded definition files for this account.
 ### [Get-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileCount](Get-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileCount.md)
 Get the number of the resource
 
-### [Get-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileDefinition](Get-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileDefinition.md)
-The group policy definitions associated with the file.
-
-### [Get-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileDefinitionCount](Get-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileDefinitionCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileGroupPolicyOperation](Get-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileGroupPolicyOperation.md)
 The list of operations on the uploaded ADMX file.
 
@@ -293,9 +287,6 @@ The Role Assignments.
 
 ### [Get-MgBetaDeviceManagementRoleAssignmentCount](Get-MgBetaDeviceManagementRoleAssignmentCount.md)
 Get the number of the resource
-
-### [Get-MgBetaDeviceManagementRoleAssignmentRoleDefinition](Get-MgBetaDeviceManagementRoleAssignmentRoleDefinition.md)
-Role definition this assignment is part of.
 
 ### [Get-MgBetaDeviceManagementRoleAssignmentRoleScopeTag](Get-MgBetaDeviceManagementRoleAssignmentRoleScopeTag.md)
 The set of Role Scope Tags defined on the Role Assignment.
@@ -823,7 +814,7 @@ Delete navigation property organizationSettings for deviceManagement
 
 ### [Remove-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy](Remove-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy.md)
 Delete a cloudPcProvisioningPolicy object.
-You can’t delete a policy that’s in use.
+You can't delete a policy that's in use.
 
 ### [Remove-MgBetaDeviceManagementVirtualEndpointProvisioningPolicyAssignment](Remove-MgBetaDeviceManagementVirtualEndpointProvisioningPolicyAssignment.md)
 Delete navigation property assignments for deviceManagement

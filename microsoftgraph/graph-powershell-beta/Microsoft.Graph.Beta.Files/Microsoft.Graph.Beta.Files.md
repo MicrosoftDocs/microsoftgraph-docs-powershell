@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Files
 Module Guid: a1029add-9f46-407e-ae84-14db409062a7
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files
@@ -18,7 +18,7 @@ Add a copy of a [content type][contentType] from a [site][site] to a [list][list
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
+For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
 
 ### [Add-MgBetaShareListContentTypeCopy](Add-MgBetaShareListContentTypeCopy.md)
 Add a copy of a [content type][contentType] from a [site][site] to a [list][list].
@@ -27,7 +27,7 @@ Add a copy of a [content type][contentType] from a [site][site] to a [list][list
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
+For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
 
 ### [Copy-MgBetaDriveItem](Copy-MgBetaDriveItem.md)
 Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name.
@@ -57,15 +57,6 @@ The content stream, if the item represents a file.
 
 ### [Get-MgBetaDriveBundleCount](Get-MgBetaDriveBundleCount.md)
 Get the number of the resource
-
-### [Get-MgBetaDriveCreatedByUser](Get-MgBetaDriveCreatedByUser.md)
-Get createdByUser from drives
-
-### [Get-MgBetaDriveCreatedByUserMailboxSetting](Get-MgBetaDriveCreatedByUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
 
 ### [Get-MgBetaDriveFollowing](Get-MgBetaDriveFollowing.md)
 The list of items the user is following.
@@ -122,26 +113,8 @@ The content stream, if the item represents a file.
 ### [Get-MgBetaDriveItemCount](Get-MgBetaDriveItemCount.md)
 Get the number of the resource
 
-### [Get-MgBetaDriveItemCreatedByUser](Get-MgBetaDriveItemCreatedByUser.md)
-Get createdByUser from drives
-
-### [Get-MgBetaDriveItemCreatedByUserMailboxSetting](Get-MgBetaDriveItemCreatedByUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
-
 ### [Get-MgBetaDriveItemDelta](Get-MgBetaDriveItemDelta.md)
 Invoke function delta
-
-### [Get-MgBetaDriveItemLastModifiedByUser](Get-MgBetaDriveItemLastModifiedByUser.md)
-Get lastModifiedByUser from drives
-
-### [Get-MgBetaDriveItemLastModifiedByUserMailboxSetting](Get-MgBetaDriveItemLastModifiedByUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
 
 ### [Get-MgBetaDriveItemListItem](Get-MgBetaDriveItemListItem.md)
 For drives in SharePoint, the associated document library list item.
@@ -157,23 +130,11 @@ Invoke function getActivitiesByInterval
 ### [Get-MgBetaDriveItemListItemAnalytic](Get-MgBetaDriveItemListItemAnalytic.md)
 Analytics about the view activities that took place on this item.
 
-### [Get-MgBetaDriveItemListItemCreatedByUser](Get-MgBetaDriveItemListItemCreatedByUser.md)
-Get createdByUser from drives
-
-### [Get-MgBetaDriveItemListItemCreatedByUserMailboxSetting](Get-MgBetaDriveItemListItemCreatedByUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
-
 ### [Get-MgBetaDriveItemListItemDocumentSetVersion](Get-MgBetaDriveItemListItemDocumentSetVersion.md)
 Read the properties and relationships of a documentSetVersion object.
 
 ### [Get-MgBetaDriveItemListItemDocumentSetVersionCount](Get-MgBetaDriveItemListItemDocumentSetVersionCount.md)
 Get the number of the resource
-
-### [Get-MgBetaDriveItemListItemDocumentSetVersionField](Get-MgBetaDriveItemListItemDocumentSetVersionField.md)
-A collection of the fields and values for this version of the list item.
 
 ### [Get-MgBetaDriveItemListItemDriveItem](Get-MgBetaDriveItemListItemDriveItem.md)
 For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
@@ -183,15 +144,6 @@ The content stream, if the item represents a file.
 
 ### [Get-MgBetaDriveItemListItemField](Get-MgBetaDriveItemListItemField.md)
 The values of the columns set on this list item.
-
-### [Get-MgBetaDriveItemListItemLastModifiedByUser](Get-MgBetaDriveItemListItemLastModifiedByUser.md)
-Get lastModifiedByUser from drives
-
-### [Get-MgBetaDriveItemListItemLastModifiedByUserMailboxSetting](Get-MgBetaDriveItemListItemLastModifiedByUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
 
 ### [Get-MgBetaDriveItemListItemVersion](Get-MgBetaDriveItemListItemVersion.md)
 The list of previous versions of the list item.
@@ -237,15 +189,6 @@ Get content for the navigation property versions from drives
 
 ### [Get-MgBetaDriveItemVersionCount](Get-MgBetaDriveItemVersionCount.md)
 Get the number of the resource
-
-### [Get-MgBetaDriveLastModifiedByUser](Get-MgBetaDriveLastModifiedByUser.md)
-Get lastModifiedByUser from drives
-
-### [Get-MgBetaDriveLastModifiedByUserMailboxSetting](Get-MgBetaDriveLastModifiedByUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
 
 ### [Get-MgBetaDriveList](Get-MgBetaDriveList.md)
 For drives in SharePoint, the underlying document library list.
@@ -303,15 +246,6 @@ Invoke function getCompatibleHubContentTypes
 ### [Get-MgBetaDriveListContentTypeCount](Get-MgBetaDriveListContentTypeCount.md)
 Get the number of the resource
 
-### [Get-MgBetaDriveListCreatedByUser](Get-MgBetaDriveListCreatedByUser.md)
-Get createdByUser from drives
-
-### [Get-MgBetaDriveListCreatedByUserMailboxSetting](Get-MgBetaDriveListCreatedByUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
-
 ### [Get-MgBetaDriveListDrive](Get-MgBetaDriveListDrive.md)
 Only present on document libraries.
 Allows access to the list as a [drive][] resource with [driveItems][driveItem].
@@ -331,15 +265,6 @@ Analytics about the view activities that took place on this item.
 ### [Get-MgBetaDriveListItemCount](Get-MgBetaDriveListItemCount.md)
 Get the number of the resource
 
-### [Get-MgBetaDriveListItemCreatedByUser](Get-MgBetaDriveListItemCreatedByUser.md)
-Get createdByUser from drives
-
-### [Get-MgBetaDriveListItemCreatedByUserMailboxSetting](Get-MgBetaDriveListItemCreatedByUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
-
 ### [Get-MgBetaDriveListItemDelta](Get-MgBetaDriveListItemDelta.md)
 Invoke function delta
 
@@ -348,9 +273,6 @@ Read the properties and relationships of a documentSetVersion object.
 
 ### [Get-MgBetaDriveListItemDocumentSetVersionCount](Get-MgBetaDriveListItemDocumentSetVersionCount.md)
 Get the number of the resource
-
-### [Get-MgBetaDriveListItemDocumentSetVersionField](Get-MgBetaDriveListItemDocumentSetVersionField.md)
-A collection of the fields and values for this version of the list item.
 
 ### [Get-MgBetaDriveListItemDriveItem](Get-MgBetaDriveListItemDriveItem.md)
 For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
@@ -361,15 +283,6 @@ The content stream, if the item represents a file.
 ### [Get-MgBetaDriveListItemField](Get-MgBetaDriveListItemField.md)
 The values of the columns set on this list item.
 
-### [Get-MgBetaDriveListItemLastModifiedByUser](Get-MgBetaDriveListItemLastModifiedByUser.md)
-Get lastModifiedByUser from drives
-
-### [Get-MgBetaDriveListItemLastModifiedByUserMailboxSetting](Get-MgBetaDriveListItemLastModifiedByUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
-
 ### [Get-MgBetaDriveListItemVersion](Get-MgBetaDriveListItemVersion.md)
 The list of previous versions of the list item.
 
@@ -378,15 +291,6 @@ Get the number of the resource
 
 ### [Get-MgBetaDriveListItemVersionField](Get-MgBetaDriveListItemVersionField.md)
 A collection of the fields and values for this version of the list item.
-
-### [Get-MgBetaDriveListLastModifiedByUser](Get-MgBetaDriveListLastModifiedByUser.md)
-Get lastModifiedByUser from drives
-
-### [Get-MgBetaDriveListLastModifiedByUserMailboxSetting](Get-MgBetaDriveListLastModifiedByUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
 
 ### [Get-MgBetaDriveListOperation](Get-MgBetaDriveListOperation.md)
 The collection of long running operations for the list.
@@ -442,26 +346,8 @@ Get the number of the resource
 ### [Get-MgBetaDriveRootContent](Get-MgBetaDriveRootContent.md)
 The content stream, if the item represents a file.
 
-### [Get-MgBetaDriveRootCreatedByUser](Get-MgBetaDriveRootCreatedByUser.md)
-Get createdByUser from drives
-
-### [Get-MgBetaDriveRootCreatedByUserMailboxSetting](Get-MgBetaDriveRootCreatedByUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
-
 ### [Get-MgBetaDriveRootDelta](Get-MgBetaDriveRootDelta.md)
 Invoke function delta
-
-### [Get-MgBetaDriveRootLastModifiedByUser](Get-MgBetaDriveRootLastModifiedByUser.md)
-Get lastModifiedByUser from drives
-
-### [Get-MgBetaDriveRootLastModifiedByUserMailboxSetting](Get-MgBetaDriveRootLastModifiedByUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
 
 ### [Get-MgBetaDriveRootListItem](Get-MgBetaDriveRootListItem.md)
 For drives in SharePoint, the associated document library list item.
@@ -477,23 +363,11 @@ Invoke function getActivitiesByInterval
 ### [Get-MgBetaDriveRootListItemAnalytic](Get-MgBetaDriveRootListItemAnalytic.md)
 Analytics about the view activities that took place on this item.
 
-### [Get-MgBetaDriveRootListItemCreatedByUser](Get-MgBetaDriveRootListItemCreatedByUser.md)
-Get createdByUser from drives
-
-### [Get-MgBetaDriveRootListItemCreatedByUserMailboxSetting](Get-MgBetaDriveRootListItemCreatedByUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
-
 ### [Get-MgBetaDriveRootListItemDocumentSetVersion](Get-MgBetaDriveRootListItemDocumentSetVersion.md)
 Read the properties and relationships of a documentSetVersion object.
 
 ### [Get-MgBetaDriveRootListItemDocumentSetVersionCount](Get-MgBetaDriveRootListItemDocumentSetVersionCount.md)
 Get the number of the resource
-
-### [Get-MgBetaDriveRootListItemDocumentSetVersionField](Get-MgBetaDriveRootListItemDocumentSetVersionField.md)
-A collection of the fields and values for this version of the list item.
 
 ### [Get-MgBetaDriveRootListItemDriveItem](Get-MgBetaDriveRootListItemDriveItem.md)
 For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
@@ -503,15 +377,6 @@ The content stream, if the item represents a file.
 
 ### [Get-MgBetaDriveRootListItemField](Get-MgBetaDriveRootListItemField.md)
 The values of the columns set on this list item.
-
-### [Get-MgBetaDriveRootListItemLastModifiedByUser](Get-MgBetaDriveRootListItemLastModifiedByUser.md)
-Get lastModifiedByUser from drives
-
-### [Get-MgBetaDriveRootListItemLastModifiedByUserMailboxSetting](Get-MgBetaDriveRootListItemLastModifiedByUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
 
 ### [Get-MgBetaDriveRootListItemVersion](Get-MgBetaDriveRootListItemVersion.md)
 The list of previous versions of the list item.
@@ -594,15 +459,6 @@ Get the number of the resource
 ### [Get-MgBetaGroupDriveCount](Get-MgBetaGroupDriveCount.md)
 Get the number of the resource
 
-### [Get-MgBetaGroupDriveCreatedByUser](Get-MgBetaGroupDriveCreatedByUser.md)
-Get createdByUser from groups
-
-### [Get-MgBetaGroupDriveCreatedByUserMailboxSetting](Get-MgBetaGroupDriveCreatedByUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
-
 ### [Get-MgBetaGroupDriveFollowing](Get-MgBetaGroupDriveFollowing.md)
 The list of items the user is following.
 Only in OneDrive for Business.
@@ -655,24 +511,6 @@ The content stream, if the item represents a file.
 ### [Get-MgBetaGroupDriveItemCount](Get-MgBetaGroupDriveItemCount.md)
 Get the number of the resource
 
-### [Get-MgBetaGroupDriveItemCreatedByUser](Get-MgBetaGroupDriveItemCreatedByUser.md)
-Get createdByUser from groups
-
-### [Get-MgBetaGroupDriveItemCreatedByUserMailboxSetting](Get-MgBetaGroupDriveItemCreatedByUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
-
-### [Get-MgBetaGroupDriveItemLastModifiedByUser](Get-MgBetaGroupDriveItemLastModifiedByUser.md)
-Get lastModifiedByUser from groups
-
-### [Get-MgBetaGroupDriveItemLastModifiedByUserMailboxSetting](Get-MgBetaGroupDriveItemLastModifiedByUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
-
 ### [Get-MgBetaGroupDriveItemListItem](Get-MgBetaGroupDriveItemListItem.md)
 For drives in SharePoint, the associated document library list item.
 Read-only.
@@ -684,23 +522,11 @@ The list of recent activities that took place on this item.
 ### [Get-MgBetaGroupDriveItemListItemAnalytic](Get-MgBetaGroupDriveItemListItemAnalytic.md)
 Analytics about the view activities that took place on this item.
 
-### [Get-MgBetaGroupDriveItemListItemCreatedByUser](Get-MgBetaGroupDriveItemListItemCreatedByUser.md)
-Get createdByUser from groups
-
-### [Get-MgBetaGroupDriveItemListItemCreatedByUserMailboxSetting](Get-MgBetaGroupDriveItemListItemCreatedByUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
-
 ### [Get-MgBetaGroupDriveItemListItemDocumentSetVersion](Get-MgBetaGroupDriveItemListItemDocumentSetVersion.md)
 Read the properties and relationships of a documentSetVersion object.
 
 ### [Get-MgBetaGroupDriveItemListItemDocumentSetVersionCount](Get-MgBetaGroupDriveItemListItemDocumentSetVersionCount.md)
 Get the number of the resource
-
-### [Get-MgBetaGroupDriveItemListItemDocumentSetVersionField](Get-MgBetaGroupDriveItemListItemDocumentSetVersionField.md)
-A collection of the fields and values for this version of the list item.
 
 ### [Get-MgBetaGroupDriveItemListItemDriveItem](Get-MgBetaGroupDriveItemListItemDriveItem.md)
 For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
@@ -710,15 +536,6 @@ The content stream, if the item represents a file.
 
 ### [Get-MgBetaGroupDriveItemListItemField](Get-MgBetaGroupDriveItemListItemField.md)
 The values of the columns set on this list item.
-
-### [Get-MgBetaGroupDriveItemListItemLastModifiedByUser](Get-MgBetaGroupDriveItemListItemLastModifiedByUser.md)
-Get lastModifiedByUser from groups
-
-### [Get-MgBetaGroupDriveItemListItemLastModifiedByUserMailboxSetting](Get-MgBetaGroupDriveItemListItemLastModifiedByUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
 
 ### [Get-MgBetaGroupDriveItemListItemVersion](Get-MgBetaGroupDriveItemListItemVersion.md)
 The list of previous versions of the list item.
@@ -764,15 +581,6 @@ Get content for the navigation property versions from groups
 
 ### [Get-MgBetaGroupDriveItemVersionCount](Get-MgBetaGroupDriveItemVersionCount.md)
 Get the number of the resource
-
-### [Get-MgBetaGroupDriveLastModifiedByUser](Get-MgBetaGroupDriveLastModifiedByUser.md)
-Get lastModifiedByUser from groups
-
-### [Get-MgBetaGroupDriveLastModifiedByUserMailboxSetting](Get-MgBetaGroupDriveLastModifiedByUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
 
 ### [Get-MgBetaGroupDriveList](Get-MgBetaGroupDriveList.md)
 For drives in SharePoint, the underlying document library list.
@@ -827,15 +635,6 @@ The source column for content type column.
 ### [Get-MgBetaGroupDriveListContentTypeCount](Get-MgBetaGroupDriveListContentTypeCount.md)
 Get the number of the resource
 
-### [Get-MgBetaGroupDriveListCreatedByUser](Get-MgBetaGroupDriveListCreatedByUser.md)
-Get createdByUser from groups
-
-### [Get-MgBetaGroupDriveListCreatedByUserMailboxSetting](Get-MgBetaGroupDriveListCreatedByUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
-
 ### [Get-MgBetaGroupDriveListDrive](Get-MgBetaGroupDriveListDrive.md)
 Only present on document libraries.
 Allows access to the list as a [drive][] resource with [driveItems][driveItem].
@@ -849,23 +648,11 @@ The list of recent activities that took place on this item.
 ### [Get-MgBetaGroupDriveListItemAnalytic](Get-MgBetaGroupDriveListItemAnalytic.md)
 Analytics about the view activities that took place on this item.
 
-### [Get-MgBetaGroupDriveListItemCreatedByUser](Get-MgBetaGroupDriveListItemCreatedByUser.md)
-Get createdByUser from groups
-
-### [Get-MgBetaGroupDriveListItemCreatedByUserMailboxSetting](Get-MgBetaGroupDriveListItemCreatedByUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
-
 ### [Get-MgBetaGroupDriveListItemDocumentSetVersion](Get-MgBetaGroupDriveListItemDocumentSetVersion.md)
 Read the properties and relationships of a documentSetVersion object.
 
 ### [Get-MgBetaGroupDriveListItemDocumentSetVersionCount](Get-MgBetaGroupDriveListItemDocumentSetVersionCount.md)
 Get the number of the resource
-
-### [Get-MgBetaGroupDriveListItemDocumentSetVersionField](Get-MgBetaGroupDriveListItemDocumentSetVersionField.md)
-A collection of the fields and values for this version of the list item.
 
 ### [Get-MgBetaGroupDriveListItemDriveItem](Get-MgBetaGroupDriveListItemDriveItem.md)
 For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
@@ -876,15 +663,6 @@ The content stream, if the item represents a file.
 ### [Get-MgBetaGroupDriveListItemField](Get-MgBetaGroupDriveListItemField.md)
 The values of the columns set on this list item.
 
-### [Get-MgBetaGroupDriveListItemLastModifiedByUser](Get-MgBetaGroupDriveListItemLastModifiedByUser.md)
-Get lastModifiedByUser from groups
-
-### [Get-MgBetaGroupDriveListItemLastModifiedByUserMailboxSetting](Get-MgBetaGroupDriveListItemLastModifiedByUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
-
 ### [Get-MgBetaGroupDriveListItemVersion](Get-MgBetaGroupDriveListItemVersion.md)
 The list of previous versions of the list item.
 
@@ -893,15 +671,6 @@ Get the number of the resource
 
 ### [Get-MgBetaGroupDriveListItemVersionField](Get-MgBetaGroupDriveListItemVersionField.md)
 A collection of the fields and values for this version of the list item.
-
-### [Get-MgBetaGroupDriveListLastModifiedByUser](Get-MgBetaGroupDriveListLastModifiedByUser.md)
-Get lastModifiedByUser from groups
-
-### [Get-MgBetaGroupDriveListLastModifiedByUserMailboxSetting](Get-MgBetaGroupDriveListLastModifiedByUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
 
 ### [Get-MgBetaGroupDriveListOperation](Get-MgBetaGroupDriveListOperation.md)
 The collection of long running operations for the list.
@@ -954,24 +723,6 @@ Get the number of the resource
 ### [Get-MgBetaGroupDriveRootContent](Get-MgBetaGroupDriveRootContent.md)
 The content stream, if the item represents a file.
 
-### [Get-MgBetaGroupDriveRootCreatedByUser](Get-MgBetaGroupDriveRootCreatedByUser.md)
-Get createdByUser from groups
-
-### [Get-MgBetaGroupDriveRootCreatedByUserMailboxSetting](Get-MgBetaGroupDriveRootCreatedByUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
-
-### [Get-MgBetaGroupDriveRootLastModifiedByUser](Get-MgBetaGroupDriveRootLastModifiedByUser.md)
-Get lastModifiedByUser from groups
-
-### [Get-MgBetaGroupDriveRootLastModifiedByUserMailboxSetting](Get-MgBetaGroupDriveRootLastModifiedByUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
-
 ### [Get-MgBetaGroupDriveRootListItem](Get-MgBetaGroupDriveRootListItem.md)
 For drives in SharePoint, the associated document library list item.
 Read-only.
@@ -983,23 +734,11 @@ The list of recent activities that took place on this item.
 ### [Get-MgBetaGroupDriveRootListItemAnalytic](Get-MgBetaGroupDriveRootListItemAnalytic.md)
 Analytics about the view activities that took place on this item.
 
-### [Get-MgBetaGroupDriveRootListItemCreatedByUser](Get-MgBetaGroupDriveRootListItemCreatedByUser.md)
-Get createdByUser from groups
-
-### [Get-MgBetaGroupDriveRootListItemCreatedByUserMailboxSetting](Get-MgBetaGroupDriveRootListItemCreatedByUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
-
 ### [Get-MgBetaGroupDriveRootListItemDocumentSetVersion](Get-MgBetaGroupDriveRootListItemDocumentSetVersion.md)
 Read the properties and relationships of a documentSetVersion object.
 
 ### [Get-MgBetaGroupDriveRootListItemDocumentSetVersionCount](Get-MgBetaGroupDriveRootListItemDocumentSetVersionCount.md)
 Get the number of the resource
-
-### [Get-MgBetaGroupDriveRootListItemDocumentSetVersionField](Get-MgBetaGroupDriveRootListItemDocumentSetVersionField.md)
-A collection of the fields and values for this version of the list item.
 
 ### [Get-MgBetaGroupDriveRootListItemDriveItem](Get-MgBetaGroupDriveRootListItemDriveItem.md)
 For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
@@ -1009,15 +748,6 @@ The content stream, if the item represents a file.
 
 ### [Get-MgBetaGroupDriveRootListItemField](Get-MgBetaGroupDriveRootListItemField.md)
 The values of the columns set on this list item.
-
-### [Get-MgBetaGroupDriveRootListItemLastModifiedByUser](Get-MgBetaGroupDriveRootListItemLastModifiedByUser.md)
-Get lastModifiedByUser from groups
-
-### [Get-MgBetaGroupDriveRootListItemLastModifiedByUserMailboxSetting](Get-MgBetaGroupDriveRootListItemLastModifiedByUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
 
 ### [Get-MgBetaGroupDriveRootListItemVersion](Get-MgBetaGroupDriveRootListItemVersion.md)
 The list of previous versions of the list item.
@@ -1080,15 +810,6 @@ Get the number of the resource
 ### [Get-MgBetaShareCount](Get-MgBetaShareCount.md)
 Get the number of the resource
 
-### [Get-MgBetaShareCreatedByUser](Get-MgBetaShareCreatedByUser.md)
-Get createdByUser from shares
-
-### [Get-MgBetaShareCreatedByUserMailboxSetting](Get-MgBetaShareCreatedByUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
-
 ### [Get-MgBetaShareDriveItem](Get-MgBetaShareDriveItem.md)
 Access a shared DriveItem or a collection of shared items by using a **shareId** or sharing URL.
 To use a sharing URL with this API, your app needs to transform the URL into a sharing token.
@@ -1105,15 +826,6 @@ The content stream, if the item represents a file.
 
 ### [Get-MgBetaShareItemCount](Get-MgBetaShareItemCount.md)
 Get the number of the resource
-
-### [Get-MgBetaShareLastModifiedByUser](Get-MgBetaShareLastModifiedByUser.md)
-Get lastModifiedByUser from shares
-
-### [Get-MgBetaShareLastModifiedByUserMailboxSetting](Get-MgBetaShareLastModifiedByUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
 
 ### [Get-MgBetaShareList](Get-MgBetaShareList.md)
 Used to access the underlying list
@@ -1169,15 +881,6 @@ Invoke function getCompatibleHubContentTypes
 ### [Get-MgBetaShareListContentTypeCount](Get-MgBetaShareListContentTypeCount.md)
 Get the number of the resource
 
-### [Get-MgBetaShareListCreatedByUser](Get-MgBetaShareListCreatedByUser.md)
-Get createdByUser from shares
-
-### [Get-MgBetaShareListCreatedByUserMailboxSetting](Get-MgBetaShareListCreatedByUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
-
 ### [Get-MgBetaShareListDrive](Get-MgBetaShareListDrive.md)
 Only present on document libraries.
 Allows access to the list as a [drive][] resource with [driveItems][driveItem].
@@ -1194,15 +897,6 @@ Invoke function getActivitiesByInterval
 ### [Get-MgBetaShareListItemAnalytic](Get-MgBetaShareListItemAnalytic.md)
 Analytics about the view activities that took place on this item.
 
-### [Get-MgBetaShareListItemCreatedByUser](Get-MgBetaShareListItemCreatedByUser.md)
-Get createdByUser from shares
-
-### [Get-MgBetaShareListItemCreatedByUserMailboxSetting](Get-MgBetaShareListItemCreatedByUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
-
 ### [Get-MgBetaShareListItemDelta](Get-MgBetaShareListItemDelta.md)
 Invoke function delta
 
@@ -1211,9 +905,6 @@ Read the properties and relationships of a documentSetVersion object.
 
 ### [Get-MgBetaShareListItemDocumentSetVersionCount](Get-MgBetaShareListItemDocumentSetVersionCount.md)
 Get the number of the resource
-
-### [Get-MgBetaShareListItemDocumentSetVersionField](Get-MgBetaShareListItemDocumentSetVersionField.md)
-A collection of the fields and values for this version of the list item.
 
 ### [Get-MgBetaShareListItemDriveItem](Get-MgBetaShareListItemDriveItem.md)
 For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
@@ -1224,15 +915,6 @@ The content stream, if the item represents a file.
 ### [Get-MgBetaShareListItemField](Get-MgBetaShareListItemField.md)
 The values of the columns set on this list item.
 
-### [Get-MgBetaShareListItemLastModifiedByUser](Get-MgBetaShareListItemLastModifiedByUser.md)
-Get lastModifiedByUser from shares
-
-### [Get-MgBetaShareListItemLastModifiedByUserMailboxSetting](Get-MgBetaShareListItemLastModifiedByUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
-
 ### [Get-MgBetaShareListItemVersion](Get-MgBetaShareListItemVersion.md)
 The list of previous versions of the list item.
 
@@ -1241,15 +923,6 @@ Get the number of the resource
 
 ### [Get-MgBetaShareListItemVersionField](Get-MgBetaShareListItemVersionField.md)
 A collection of the fields and values for this version of the list item.
-
-### [Get-MgBetaShareListLastModifiedByUser](Get-MgBetaShareListLastModifiedByUser.md)
-Get lastModifiedByUser from shares
-
-### [Get-MgBetaShareListLastModifiedByUserMailboxSetting](Get-MgBetaShareListLastModifiedByUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
 
 ### [Get-MgBetaShareListOperation](Get-MgBetaShareListOperation.md)
 The collection of long running operations for the list.
@@ -1301,15 +974,6 @@ Get the number of the resource
 
 ### [Get-MgBetaUserDriveCount](Get-MgBetaUserDriveCount.md)
 Get the number of the resource
-
-### [Get-MgBetaUserDriveCreatedByUser](Get-MgBetaUserDriveCreatedByUser.md)
-Get createdByUser from users
-
-### [Get-MgBetaUserDriveCreatedByUserMailboxSetting](Get-MgBetaUserDriveCreatedByUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
 
 ### [Get-MgBetaUserDriveFollowing](Get-MgBetaUserDriveFollowing.md)
 The list of items the user is following.
@@ -1363,24 +1027,6 @@ The content stream, if the item represents a file.
 ### [Get-MgBetaUserDriveItemCount](Get-MgBetaUserDriveItemCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserDriveItemCreatedByUser](Get-MgBetaUserDriveItemCreatedByUser.md)
-Get createdByUser from users
-
-### [Get-MgBetaUserDriveItemCreatedByUserMailboxSetting](Get-MgBetaUserDriveItemCreatedByUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
-
-### [Get-MgBetaUserDriveItemLastModifiedByUser](Get-MgBetaUserDriveItemLastModifiedByUser.md)
-Get lastModifiedByUser from users
-
-### [Get-MgBetaUserDriveItemLastModifiedByUserMailboxSetting](Get-MgBetaUserDriveItemLastModifiedByUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
-
 ### [Get-MgBetaUserDriveItemListItem](Get-MgBetaUserDriveItemListItem.md)
 For drives in SharePoint, the associated document library list item.
 Read-only.
@@ -1392,23 +1038,11 @@ The list of recent activities that took place on this item.
 ### [Get-MgBetaUserDriveItemListItemAnalytic](Get-MgBetaUserDriveItemListItemAnalytic.md)
 Analytics about the view activities that took place on this item.
 
-### [Get-MgBetaUserDriveItemListItemCreatedByUser](Get-MgBetaUserDriveItemListItemCreatedByUser.md)
-Get createdByUser from users
-
-### [Get-MgBetaUserDriveItemListItemCreatedByUserMailboxSetting](Get-MgBetaUserDriveItemListItemCreatedByUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
-
 ### [Get-MgBetaUserDriveItemListItemDocumentSetVersion](Get-MgBetaUserDriveItemListItemDocumentSetVersion.md)
 Read the properties and relationships of a documentSetVersion object.
 
 ### [Get-MgBetaUserDriveItemListItemDocumentSetVersionCount](Get-MgBetaUserDriveItemListItemDocumentSetVersionCount.md)
 Get the number of the resource
-
-### [Get-MgBetaUserDriveItemListItemDocumentSetVersionField](Get-MgBetaUserDriveItemListItemDocumentSetVersionField.md)
-A collection of the fields and values for this version of the list item.
 
 ### [Get-MgBetaUserDriveItemListItemDriveItem](Get-MgBetaUserDriveItemListItemDriveItem.md)
 For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
@@ -1418,15 +1052,6 @@ The content stream, if the item represents a file.
 
 ### [Get-MgBetaUserDriveItemListItemField](Get-MgBetaUserDriveItemListItemField.md)
 The values of the columns set on this list item.
-
-### [Get-MgBetaUserDriveItemListItemLastModifiedByUser](Get-MgBetaUserDriveItemListItemLastModifiedByUser.md)
-Get lastModifiedByUser from users
-
-### [Get-MgBetaUserDriveItemListItemLastModifiedByUserMailboxSetting](Get-MgBetaUserDriveItemListItemLastModifiedByUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
 
 ### [Get-MgBetaUserDriveItemListItemVersion](Get-MgBetaUserDriveItemListItemVersion.md)
 The list of previous versions of the list item.
@@ -1472,15 +1097,6 @@ Get content for the navigation property versions from users
 
 ### [Get-MgBetaUserDriveItemVersionCount](Get-MgBetaUserDriveItemVersionCount.md)
 Get the number of the resource
-
-### [Get-MgBetaUserDriveLastModifiedByUser](Get-MgBetaUserDriveLastModifiedByUser.md)
-Get lastModifiedByUser from users
-
-### [Get-MgBetaUserDriveLastModifiedByUserMailboxSetting](Get-MgBetaUserDriveLastModifiedByUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
 
 ### [Get-MgBetaUserDriveList](Get-MgBetaUserDriveList.md)
 For drives in SharePoint, the underlying document library list.
@@ -1535,15 +1151,6 @@ The source column for content type column.
 ### [Get-MgBetaUserDriveListContentTypeCount](Get-MgBetaUserDriveListContentTypeCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserDriveListCreatedByUser](Get-MgBetaUserDriveListCreatedByUser.md)
-Get createdByUser from users
-
-### [Get-MgBetaUserDriveListCreatedByUserMailboxSetting](Get-MgBetaUserDriveListCreatedByUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
-
 ### [Get-MgBetaUserDriveListDrive](Get-MgBetaUserDriveListDrive.md)
 Only present on document libraries.
 Allows access to the list as a [drive][] resource with [driveItems][driveItem].
@@ -1557,23 +1164,11 @@ The list of recent activities that took place on this item.
 ### [Get-MgBetaUserDriveListItemAnalytic](Get-MgBetaUserDriveListItemAnalytic.md)
 Analytics about the view activities that took place on this item.
 
-### [Get-MgBetaUserDriveListItemCreatedByUser](Get-MgBetaUserDriveListItemCreatedByUser.md)
-Get createdByUser from users
-
-### [Get-MgBetaUserDriveListItemCreatedByUserMailboxSetting](Get-MgBetaUserDriveListItemCreatedByUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
-
 ### [Get-MgBetaUserDriveListItemDocumentSetVersion](Get-MgBetaUserDriveListItemDocumentSetVersion.md)
 Read the properties and relationships of a documentSetVersion object.
 
 ### [Get-MgBetaUserDriveListItemDocumentSetVersionCount](Get-MgBetaUserDriveListItemDocumentSetVersionCount.md)
 Get the number of the resource
-
-### [Get-MgBetaUserDriveListItemDocumentSetVersionField](Get-MgBetaUserDriveListItemDocumentSetVersionField.md)
-A collection of the fields and values for this version of the list item.
 
 ### [Get-MgBetaUserDriveListItemDriveItem](Get-MgBetaUserDriveListItemDriveItem.md)
 For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
@@ -1584,15 +1179,6 @@ The content stream, if the item represents a file.
 ### [Get-MgBetaUserDriveListItemField](Get-MgBetaUserDriveListItemField.md)
 The values of the columns set on this list item.
 
-### [Get-MgBetaUserDriveListItemLastModifiedByUser](Get-MgBetaUserDriveListItemLastModifiedByUser.md)
-Get lastModifiedByUser from users
-
-### [Get-MgBetaUserDriveListItemLastModifiedByUserMailboxSetting](Get-MgBetaUserDriveListItemLastModifiedByUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
-
 ### [Get-MgBetaUserDriveListItemVersion](Get-MgBetaUserDriveListItemVersion.md)
 The list of previous versions of the list item.
 
@@ -1601,15 +1187,6 @@ Get the number of the resource
 
 ### [Get-MgBetaUserDriveListItemVersionField](Get-MgBetaUserDriveListItemVersionField.md)
 A collection of the fields and values for this version of the list item.
-
-### [Get-MgBetaUserDriveListLastModifiedByUser](Get-MgBetaUserDriveListLastModifiedByUser.md)
-Get lastModifiedByUser from users
-
-### [Get-MgBetaUserDriveListLastModifiedByUserMailboxSetting](Get-MgBetaUserDriveListLastModifiedByUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
 
 ### [Get-MgBetaUserDriveListOperation](Get-MgBetaUserDriveListOperation.md)
 The collection of long running operations for the list.
@@ -1662,24 +1239,6 @@ Get the number of the resource
 ### [Get-MgBetaUserDriveRootContent](Get-MgBetaUserDriveRootContent.md)
 The content stream, if the item represents a file.
 
-### [Get-MgBetaUserDriveRootCreatedByUser](Get-MgBetaUserDriveRootCreatedByUser.md)
-Get createdByUser from users
-
-### [Get-MgBetaUserDriveRootCreatedByUserMailboxSetting](Get-MgBetaUserDriveRootCreatedByUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
-
-### [Get-MgBetaUserDriveRootLastModifiedByUser](Get-MgBetaUserDriveRootLastModifiedByUser.md)
-Get lastModifiedByUser from users
-
-### [Get-MgBetaUserDriveRootLastModifiedByUserMailboxSetting](Get-MgBetaUserDriveRootLastModifiedByUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
-
 ### [Get-MgBetaUserDriveRootListItem](Get-MgBetaUserDriveRootListItem.md)
 For drives in SharePoint, the associated document library list item.
 Read-only.
@@ -1691,23 +1250,11 @@ The list of recent activities that took place on this item.
 ### [Get-MgBetaUserDriveRootListItemAnalytic](Get-MgBetaUserDriveRootListItemAnalytic.md)
 Analytics about the view activities that took place on this item.
 
-### [Get-MgBetaUserDriveRootListItemCreatedByUser](Get-MgBetaUserDriveRootListItemCreatedByUser.md)
-Get createdByUser from users
-
-### [Get-MgBetaUserDriveRootListItemCreatedByUserMailboxSetting](Get-MgBetaUserDriveRootListItemCreatedByUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
-
 ### [Get-MgBetaUserDriveRootListItemDocumentSetVersion](Get-MgBetaUserDriveRootListItemDocumentSetVersion.md)
 Read the properties and relationships of a documentSetVersion object.
 
 ### [Get-MgBetaUserDriveRootListItemDocumentSetVersionCount](Get-MgBetaUserDriveRootListItemDocumentSetVersionCount.md)
 Get the number of the resource
-
-### [Get-MgBetaUserDriveRootListItemDocumentSetVersionField](Get-MgBetaUserDriveRootListItemDocumentSetVersionField.md)
-A collection of the fields and values for this version of the list item.
 
 ### [Get-MgBetaUserDriveRootListItemDriveItem](Get-MgBetaUserDriveRootListItemDriveItem.md)
 For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
@@ -1717,15 +1264,6 @@ The content stream, if the item represents a file.
 
 ### [Get-MgBetaUserDriveRootListItemField](Get-MgBetaUserDriveRootListItemField.md)
 The values of the columns set on this list item.
-
-### [Get-MgBetaUserDriveRootListItemLastModifiedByUser](Get-MgBetaUserDriveRootListItemLastModifiedByUser.md)
-Get lastModifiedByUser from users
-
-### [Get-MgBetaUserDriveRootListItemLastModifiedByUserMailboxSetting](Get-MgBetaUserDriveRootListItemLastModifiedByUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
 
 ### [Get-MgBetaUserDriveRootListItemVersion](Get-MgBetaUserDriveRootListItemVersion.md)
 The list of previous versions of the list item.
@@ -1979,8 +1517,8 @@ To upload a file using an upload session:
 ### [New-MgBetaDriveRootVersion](New-MgBetaDriveRootVersion.md)
 Create new navigation property to versions for drives
 
-### [New-MgBetaGroupDrive](New-MgBetaGroupDrive.md)
-Create new navigation property to drives for groups
+### [New-MgBetaDriveRootVersion](New-MgBetaDriveRootVersion.md)
+Create new navigation property to versions for drives
 
 ### [New-MgBetaGroupDriveBundle](New-MgBetaGroupDriveBundle.md)
 Create new navigation property to bundles for groups
@@ -2093,8 +1631,8 @@ Create new navigation property to subscriptions for shares
 ### [New-MgBetaShareSharedDriveItemSharedDriveItem](New-MgBetaShareSharedDriveItemSharedDriveItem.md)
 Add new entity to shares
 
-### [New-MgBetaUserDrive](New-MgBetaUserDrive.md)
-Create new navigation property to drives for users
+### [New-MgBetaShareSharedDriveItemSharedDriveItem](New-MgBetaShareSharedDriveItemSharedDriveItem.md)
+Add new entity to shares
 
 ### [New-MgBetaUserDriveBundle](New-MgBetaUserDriveBundle.md)
 Create new navigation property to bundles for users
@@ -2183,8 +1721,8 @@ Publishes a [contentType][] present in a content type hub site.
 ### [Publish-MgBetaShareListContentType](Publish-MgBetaShareListContentType.md)
 Publishes a [contentType][] present in a content type hub site.
 
-### [Remove-MgBetaDrive](Remove-MgBetaDrive.md)
-Delete entity from drives
+### [Publish-MgBetaShareListContentType](Publish-MgBetaShareListContentType.md)
+Publishes a [contentType][] present in a content type hub site.
 
 ### [Remove-MgBetaDriveItem](Remove-MgBetaDriveItem.md)
 Delete a DriveItem by using its ID or path.\nNote that deleting items using this method will move the items to the recycle bin instead of permanently deleting the item.
@@ -2195,17 +1733,11 @@ Delete navigation property analytics for drives
 ### [Remove-MgBetaDriveItemAnalyticItemActivityStat](Remove-MgBetaDriveItemAnalyticItemActivityStat.md)
 Delete navigation property itemActivityStats for drives
 
-### [Remove-MgBetaDriveItemChild](Remove-MgBetaDriveItemChild.md)
-Remove an item from a [bundle][].
-
 ### [Remove-MgBetaDriveItemListItem](Remove-MgBetaDriveItemListItem.md)
 Delete navigation property listItem for drives
 
 ### [Remove-MgBetaDriveItemListItemDocumentSetVersion](Remove-MgBetaDriveItemListItemDocumentSetVersion.md)
 Delete a version of a document set in a list.
-
-### [Remove-MgBetaDriveItemListItemDocumentSetVersionField](Remove-MgBetaDriveItemListItemDocumentSetVersionField.md)
-Delete navigation property fields for drives
 
 ### [Remove-MgBetaDriveItemListItemField](Remove-MgBetaDriveItemListItemField.md)
 Delete navigation property fields for drives
@@ -2253,9 +1785,6 @@ Removes an item from a [list][].
 ### [Remove-MgBetaDriveListItemDocumentSetVersion](Remove-MgBetaDriveListItemDocumentSetVersion.md)
 Delete a version of a document set in a list.
 
-### [Remove-MgBetaDriveListItemDocumentSetVersionField](Remove-MgBetaDriveListItemDocumentSetVersionField.md)
-Delete navigation property fields for drives
-
 ### [Remove-MgBetaDriveListItemField](Remove-MgBetaDriveListItemField.md)
 Delete navigation property fields for drives
 
@@ -2280,17 +1809,11 @@ Delete navigation property analytics for drives
 ### [Remove-MgBetaDriveRootAnalyticItemActivityStat](Remove-MgBetaDriveRootAnalyticItemActivityStat.md)
 Delete navigation property itemActivityStats for drives
 
-### [Remove-MgBetaDriveRootChild](Remove-MgBetaDriveRootChild.md)
-Remove an item from a [bundle][].
-
 ### [Remove-MgBetaDriveRootListItem](Remove-MgBetaDriveRootListItem.md)
 Delete navigation property listItem for drives
 
 ### [Remove-MgBetaDriveRootListItemDocumentSetVersion](Remove-MgBetaDriveRootListItemDocumentSetVersion.md)
 Delete a version of a document set in a list.
-
-### [Remove-MgBetaDriveRootListItemDocumentSetVersionField](Remove-MgBetaDriveRootListItemDocumentSetVersionField.md)
-Delete navigation property fields for drives
 
 ### [Remove-MgBetaDriveRootListItemField](Remove-MgBetaDriveRootListItemField.md)
 Delete navigation property fields for drives
@@ -2329,17 +1852,11 @@ Delete navigation property analytics for groups
 ### [Remove-MgBetaGroupDriveItemAnalyticItemActivityStat](Remove-MgBetaGroupDriveItemAnalyticItemActivityStat.md)
 Delete navigation property itemActivityStats for groups
 
-### [Remove-MgBetaGroupDriveItemChild](Remove-MgBetaGroupDriveItemChild.md)
-Remove an item from a [bundle][].
-
 ### [Remove-MgBetaGroupDriveItemListItem](Remove-MgBetaGroupDriveItemListItem.md)
 Delete navigation property listItem for groups
 
 ### [Remove-MgBetaGroupDriveItemListItemDocumentSetVersion](Remove-MgBetaGroupDriveItemListItemDocumentSetVersion.md)
 Delete a version of a document set in a list.
-
-### [Remove-MgBetaGroupDriveItemListItemDocumentSetVersionField](Remove-MgBetaGroupDriveItemListItemDocumentSetVersionField.md)
-Delete navigation property fields for groups
 
 ### [Remove-MgBetaGroupDriveItemListItemField](Remove-MgBetaGroupDriveItemListItemField.md)
 Delete navigation property fields for groups
@@ -2387,9 +1904,6 @@ Removes an item from a [list][].
 ### [Remove-MgBetaGroupDriveListItemDocumentSetVersion](Remove-MgBetaGroupDriveListItemDocumentSetVersion.md)
 Delete a version of a document set in a list.
 
-### [Remove-MgBetaGroupDriveListItemDocumentSetVersionField](Remove-MgBetaGroupDriveListItemDocumentSetVersionField.md)
-Delete navigation property fields for groups
-
 ### [Remove-MgBetaGroupDriveListItemField](Remove-MgBetaGroupDriveListItemField.md)
 Delete navigation property fields for groups
 
@@ -2414,17 +1928,11 @@ Delete navigation property analytics for groups
 ### [Remove-MgBetaGroupDriveRootAnalyticItemActivityStat](Remove-MgBetaGroupDriveRootAnalyticItemActivityStat.md)
 Delete navigation property itemActivityStats for groups
 
-### [Remove-MgBetaGroupDriveRootChild](Remove-MgBetaGroupDriveRootChild.md)
-Remove an item from a [bundle][].
-
 ### [Remove-MgBetaGroupDriveRootListItem](Remove-MgBetaGroupDriveRootListItem.md)
 Delete navigation property listItem for groups
 
 ### [Remove-MgBetaGroupDriveRootListItemDocumentSetVersion](Remove-MgBetaGroupDriveRootListItemDocumentSetVersion.md)
 Delete a version of a document set in a list.
-
-### [Remove-MgBetaGroupDriveRootListItemDocumentSetVersionField](Remove-MgBetaGroupDriveRootListItemDocumentSetVersionField.md)
-Delete navigation property fields for groups
 
 ### [Remove-MgBetaGroupDriveRootListItemField](Remove-MgBetaGroupDriveRootListItemField.md)
 Delete navigation property fields for groups
@@ -2472,9 +1980,6 @@ Delete navigation property listItem for shares
 ### [Remove-MgBetaShareListItemDocumentSetVersion](Remove-MgBetaShareListItemDocumentSetVersion.md)
 Delete a version of a document set in a list.
 
-### [Remove-MgBetaShareListItemDocumentSetVersionField](Remove-MgBetaShareListItemDocumentSetVersionField.md)
-Delete navigation property fields for shares
-
 ### [Remove-MgBetaShareListItemField](Remove-MgBetaShareListItemField.md)
 Delete navigation property fields for shares
 
@@ -2508,17 +2013,11 @@ Delete navigation property analytics for users
 ### [Remove-MgBetaUserDriveItemAnalyticItemActivityStat](Remove-MgBetaUserDriveItemAnalyticItemActivityStat.md)
 Delete navigation property itemActivityStats for users
 
-### [Remove-MgBetaUserDriveItemChild](Remove-MgBetaUserDriveItemChild.md)
-Remove an item from a [bundle][].
-
 ### [Remove-MgBetaUserDriveItemListItem](Remove-MgBetaUserDriveItemListItem.md)
 Delete navigation property listItem for users
 
 ### [Remove-MgBetaUserDriveItemListItemDocumentSetVersion](Remove-MgBetaUserDriveItemListItemDocumentSetVersion.md)
 Delete a version of a document set in a list.
-
-### [Remove-MgBetaUserDriveItemListItemDocumentSetVersionField](Remove-MgBetaUserDriveItemListItemDocumentSetVersionField.md)
-Delete navigation property fields for users
 
 ### [Remove-MgBetaUserDriveItemListItemField](Remove-MgBetaUserDriveItemListItemField.md)
 Delete navigation property fields for users
@@ -2566,9 +2065,6 @@ Removes an item from a [list][].
 ### [Remove-MgBetaUserDriveListItemDocumentSetVersion](Remove-MgBetaUserDriveListItemDocumentSetVersion.md)
 Delete a version of a document set in a list.
 
-### [Remove-MgBetaUserDriveListItemDocumentSetVersionField](Remove-MgBetaUserDriveListItemDocumentSetVersionField.md)
-Delete navigation property fields for users
-
 ### [Remove-MgBetaUserDriveListItemField](Remove-MgBetaUserDriveListItemField.md)
 Delete navigation property fields for users
 
@@ -2593,17 +2089,11 @@ Delete navigation property analytics for users
 ### [Remove-MgBetaUserDriveRootAnalyticItemActivityStat](Remove-MgBetaUserDriveRootAnalyticItemActivityStat.md)
 Delete navigation property itemActivityStats for users
 
-### [Remove-MgBetaUserDriveRootChild](Remove-MgBetaUserDriveRootChild.md)
-Remove an item from a [bundle][].
-
 ### [Remove-MgBetaUserDriveRootListItem](Remove-MgBetaUserDriveRootListItem.md)
 Delete navigation property listItem for users
 
 ### [Remove-MgBetaUserDriveRootListItemDocumentSetVersion](Remove-MgBetaUserDriveRootListItemDocumentSetVersion.md)
 Delete a version of a document set in a list.
-
-### [Remove-MgBetaUserDriveRootListItemDocumentSetVersionField](Remove-MgBetaUserDriveRootListItemDocumentSetVersionField.md)
-Delete navigation property fields for users
 
 ### [Remove-MgBetaUserDriveRootListItemField](Remove-MgBetaUserDriveRootListItemField.md)
 Delete navigation property fields for users
@@ -2830,11 +2320,8 @@ Unpublish a [contentType][] from a content type hub site.
 ### [Unpublish-MgBetaShareListContentType](Unpublish-MgBetaShareListContentType.md)
 Unpublish a [contentType][] from a content type hub site.
 
-### [Update-MgBetaDrive](Update-MgBetaDrive.md)
-Update entity in drives
-
-### [Update-MgBetaDriveCreatedByUserMailboxSetting](Update-MgBetaDriveCreatedByUserMailboxSetting.md)
-Update property mailboxSettings value.
+### [Unpublish-MgBetaShareListContentType](Unpublish-MgBetaShareListContentType.md)
+Unpublish a [contentType][] from a content type hub site.
 
 ### [Update-MgBetaDriveItem](Update-MgBetaDriveItem.md)
 Update the metadata for a DriveItem by ID or path.
@@ -2846,29 +2333,14 @@ Update the navigation property analytics in drives
 ### [Update-MgBetaDriveItemAnalyticItemActivityStat](Update-MgBetaDriveItemAnalyticItemActivityStat.md)
 Update the navigation property itemActivityStats in drives
 
-### [Update-MgBetaDriveItemCreatedByUserMailboxSetting](Update-MgBetaDriveItemCreatedByUserMailboxSetting.md)
-Update property mailboxSettings value.
-
-### [Update-MgBetaDriveItemLastModifiedByUserMailboxSetting](Update-MgBetaDriveItemLastModifiedByUserMailboxSetting.md)
-Update property mailboxSettings value.
-
 ### [Update-MgBetaDriveItemListItem](Update-MgBetaDriveItemListItem.md)
 Update the navigation property listItem in drives
-
-### [Update-MgBetaDriveItemListItemCreatedByUserMailboxSetting](Update-MgBetaDriveItemListItemCreatedByUserMailboxSetting.md)
-Update property mailboxSettings value.
 
 ### [Update-MgBetaDriveItemListItemDocumentSetVersion](Update-MgBetaDriveItemListItemDocumentSetVersion.md)
 Update the navigation property documentSetVersions in drives
 
-### [Update-MgBetaDriveItemListItemDocumentSetVersionField](Update-MgBetaDriveItemListItemDocumentSetVersionField.md)
-Update the navigation property fields in drives
-
 ### [Update-MgBetaDriveItemListItemField](Update-MgBetaDriveItemListItemField.md)
 Update the properties on a **[listItem][]**.
-
-### [Update-MgBetaDriveItemListItemLastModifiedByUserMailboxSetting](Update-MgBetaDriveItemListItemLastModifiedByUserMailboxSetting.md)
-Update property mailboxSettings value.
 
 ### [Update-MgBetaDriveItemListItemVersion](Update-MgBetaDriveItemListItemVersion.md)
 Update the navigation property versions in drives
@@ -2892,9 +2364,6 @@ Update the navigation property thumbnails in drives
 ### [Update-MgBetaDriveItemVersion](Update-MgBetaDriveItemVersion.md)
 Update the navigation property versions in drives
 
-### [Update-MgBetaDriveLastModifiedByUserMailboxSetting](Update-MgBetaDriveLastModifiedByUserMailboxSetting.md)
-Update property mailboxSettings value.
-
 ### [Update-MgBetaDriveList](Update-MgBetaDriveList.md)
 Update the navigation property list in drives
 
@@ -2910,35 +2379,20 @@ Update a [site][], [list][] or [content type][contentType] [column][columnDefini
 ### [Update-MgBetaDriveListContentTypeColumnLink](Update-MgBetaDriveListContentTypeColumnLink.md)
 Update the navigation property columnLinks in drives
 
-### [Update-MgBetaDriveListCreatedByUserMailboxSetting](Update-MgBetaDriveListCreatedByUserMailboxSetting.md)
-Update property mailboxSettings value.
-
 ### [Update-MgBetaDriveListItem](Update-MgBetaDriveListItem.md)
 Update the navigation property items in drives
-
-### [Update-MgBetaDriveListItemCreatedByUserMailboxSetting](Update-MgBetaDriveListItemCreatedByUserMailboxSetting.md)
-Update property mailboxSettings value.
 
 ### [Update-MgBetaDriveListItemDocumentSetVersion](Update-MgBetaDriveListItemDocumentSetVersion.md)
 Update the navigation property documentSetVersions in drives
 
-### [Update-MgBetaDriveListItemDocumentSetVersionField](Update-MgBetaDriveListItemDocumentSetVersionField.md)
-Update the navigation property fields in drives
-
 ### [Update-MgBetaDriveListItemField](Update-MgBetaDriveListItemField.md)
 Update the properties on a **[listItem][]**.
-
-### [Update-MgBetaDriveListItemLastModifiedByUserMailboxSetting](Update-MgBetaDriveListItemLastModifiedByUserMailboxSetting.md)
-Update property mailboxSettings value.
 
 ### [Update-MgBetaDriveListItemVersion](Update-MgBetaDriveListItemVersion.md)
 Update the navigation property versions in drives
 
 ### [Update-MgBetaDriveListItemVersionField](Update-MgBetaDriveListItemVersionField.md)
 Update the navigation property fields in drives
-
-### [Update-MgBetaDriveListLastModifiedByUserMailboxSetting](Update-MgBetaDriveListLastModifiedByUserMailboxSetting.md)
-Update property mailboxSettings value.
 
 ### [Update-MgBetaDriveListOperation](Update-MgBetaDriveListOperation.md)
 Update the navigation property operations in drives
@@ -2955,29 +2409,14 @@ Update the navigation property analytics in drives
 ### [Update-MgBetaDriveRootAnalyticItemActivityStat](Update-MgBetaDriveRootAnalyticItemActivityStat.md)
 Update the navigation property itemActivityStats in drives
 
-### [Update-MgBetaDriveRootCreatedByUserMailboxSetting](Update-MgBetaDriveRootCreatedByUserMailboxSetting.md)
-Update property mailboxSettings value.
-
-### [Update-MgBetaDriveRootLastModifiedByUserMailboxSetting](Update-MgBetaDriveRootLastModifiedByUserMailboxSetting.md)
-Update property mailboxSettings value.
-
 ### [Update-MgBetaDriveRootListItem](Update-MgBetaDriveRootListItem.md)
 Update the navigation property listItem in drives
-
-### [Update-MgBetaDriveRootListItemCreatedByUserMailboxSetting](Update-MgBetaDriveRootListItemCreatedByUserMailboxSetting.md)
-Update property mailboxSettings value.
 
 ### [Update-MgBetaDriveRootListItemDocumentSetVersion](Update-MgBetaDriveRootListItemDocumentSetVersion.md)
 Update the navigation property documentSetVersions in drives
 
-### [Update-MgBetaDriveRootListItemDocumentSetVersionField](Update-MgBetaDriveRootListItemDocumentSetVersionField.md)
-Update the navigation property fields in drives
-
 ### [Update-MgBetaDriveRootListItemField](Update-MgBetaDriveRootListItemField.md)
 Update the properties on a **[listItem][]**.
-
-### [Update-MgBetaDriveRootListItemLastModifiedByUserMailboxSetting](Update-MgBetaDriveRootListItemLastModifiedByUserMailboxSetting.md)
-Update property mailboxSettings value.
 
 ### [Update-MgBetaDriveRootListItemVersion](Update-MgBetaDriveRootListItemVersion.md)
 Update the navigation property versions in drives
@@ -3004,9 +2443,6 @@ Update the navigation property versions in drives
 ### [Update-MgBetaGroupDrive](Update-MgBetaGroupDrive.md)
 Update the navigation property drives in groups
 
-### [Update-MgBetaGroupDriveCreatedByUserMailboxSetting](Update-MgBetaGroupDriveCreatedByUserMailboxSetting.md)
-Update property mailboxSettings value.
-
 ### [Update-MgBetaGroupDriveItem](Update-MgBetaGroupDriveItem.md)
 Update the metadata for a DriveItem by ID or path.
 You can also use update to move an item to another parent by updating the item's **parentReference** property.
@@ -3017,29 +2453,14 @@ Update the navigation property analytics in groups
 ### [Update-MgBetaGroupDriveItemAnalyticItemActivityStat](Update-MgBetaGroupDriveItemAnalyticItemActivityStat.md)
 Update the navigation property itemActivityStats in groups
 
-### [Update-MgBetaGroupDriveItemCreatedByUserMailboxSetting](Update-MgBetaGroupDriveItemCreatedByUserMailboxSetting.md)
-Update property mailboxSettings value.
-
-### [Update-MgBetaGroupDriveItemLastModifiedByUserMailboxSetting](Update-MgBetaGroupDriveItemLastModifiedByUserMailboxSetting.md)
-Update property mailboxSettings value.
-
 ### [Update-MgBetaGroupDriveItemListItem](Update-MgBetaGroupDriveItemListItem.md)
 Update the navigation property listItem in groups
-
-### [Update-MgBetaGroupDriveItemListItemCreatedByUserMailboxSetting](Update-MgBetaGroupDriveItemListItemCreatedByUserMailboxSetting.md)
-Update property mailboxSettings value.
 
 ### [Update-MgBetaGroupDriveItemListItemDocumentSetVersion](Update-MgBetaGroupDriveItemListItemDocumentSetVersion.md)
 Update the navigation property documentSetVersions in groups
 
-### [Update-MgBetaGroupDriveItemListItemDocumentSetVersionField](Update-MgBetaGroupDriveItemListItemDocumentSetVersionField.md)
-Update the navigation property fields in groups
-
 ### [Update-MgBetaGroupDriveItemListItemField](Update-MgBetaGroupDriveItemListItemField.md)
 Update the properties on a **[listItem][]**.
-
-### [Update-MgBetaGroupDriveItemListItemLastModifiedByUserMailboxSetting](Update-MgBetaGroupDriveItemListItemLastModifiedByUserMailboxSetting.md)
-Update property mailboxSettings value.
 
 ### [Update-MgBetaGroupDriveItemListItemVersion](Update-MgBetaGroupDriveItemListItemVersion.md)
 Update the navigation property versions in groups
@@ -3063,9 +2484,6 @@ Update the navigation property thumbnails in groups
 ### [Update-MgBetaGroupDriveItemVersion](Update-MgBetaGroupDriveItemVersion.md)
 Update the navigation property versions in groups
 
-### [Update-MgBetaGroupDriveLastModifiedByUserMailboxSetting](Update-MgBetaGroupDriveLastModifiedByUserMailboxSetting.md)
-Update property mailboxSettings value.
-
 ### [Update-MgBetaGroupDriveList](Update-MgBetaGroupDriveList.md)
 Update the navigation property list in groups
 
@@ -3081,35 +2499,20 @@ Update a [site][], [list][] or [content type][contentType] [column][columnDefini
 ### [Update-MgBetaGroupDriveListContentTypeColumnLink](Update-MgBetaGroupDriveListContentTypeColumnLink.md)
 Update the navigation property columnLinks in groups
 
-### [Update-MgBetaGroupDriveListCreatedByUserMailboxSetting](Update-MgBetaGroupDriveListCreatedByUserMailboxSetting.md)
-Update property mailboxSettings value.
-
 ### [Update-MgBetaGroupDriveListItem](Update-MgBetaGroupDriveListItem.md)
 Update the navigation property items in groups
-
-### [Update-MgBetaGroupDriveListItemCreatedByUserMailboxSetting](Update-MgBetaGroupDriveListItemCreatedByUserMailboxSetting.md)
-Update property mailboxSettings value.
 
 ### [Update-MgBetaGroupDriveListItemDocumentSetVersion](Update-MgBetaGroupDriveListItemDocumentSetVersion.md)
 Update the navigation property documentSetVersions in groups
 
-### [Update-MgBetaGroupDriveListItemDocumentSetVersionField](Update-MgBetaGroupDriveListItemDocumentSetVersionField.md)
-Update the navigation property fields in groups
-
 ### [Update-MgBetaGroupDriveListItemField](Update-MgBetaGroupDriveListItemField.md)
 Update the properties on a **[listItem][]**.
-
-### [Update-MgBetaGroupDriveListItemLastModifiedByUserMailboxSetting](Update-MgBetaGroupDriveListItemLastModifiedByUserMailboxSetting.md)
-Update property mailboxSettings value.
 
 ### [Update-MgBetaGroupDriveListItemVersion](Update-MgBetaGroupDriveListItemVersion.md)
 Update the navigation property versions in groups
 
 ### [Update-MgBetaGroupDriveListItemVersionField](Update-MgBetaGroupDriveListItemVersionField.md)
 Update the navigation property fields in groups
-
-### [Update-MgBetaGroupDriveListLastModifiedByUserMailboxSetting](Update-MgBetaGroupDriveListLastModifiedByUserMailboxSetting.md)
-Update property mailboxSettings value.
 
 ### [Update-MgBetaGroupDriveListOperation](Update-MgBetaGroupDriveListOperation.md)
 Update the navigation property operations in groups
@@ -3126,29 +2529,14 @@ Update the navigation property analytics in groups
 ### [Update-MgBetaGroupDriveRootAnalyticItemActivityStat](Update-MgBetaGroupDriveRootAnalyticItemActivityStat.md)
 Update the navigation property itemActivityStats in groups
 
-### [Update-MgBetaGroupDriveRootCreatedByUserMailboxSetting](Update-MgBetaGroupDriveRootCreatedByUserMailboxSetting.md)
-Update property mailboxSettings value.
-
-### [Update-MgBetaGroupDriveRootLastModifiedByUserMailboxSetting](Update-MgBetaGroupDriveRootLastModifiedByUserMailboxSetting.md)
-Update property mailboxSettings value.
-
 ### [Update-MgBetaGroupDriveRootListItem](Update-MgBetaGroupDriveRootListItem.md)
 Update the navigation property listItem in groups
-
-### [Update-MgBetaGroupDriveRootListItemCreatedByUserMailboxSetting](Update-MgBetaGroupDriveRootListItemCreatedByUserMailboxSetting.md)
-Update property mailboxSettings value.
 
 ### [Update-MgBetaGroupDriveRootListItemDocumentSetVersion](Update-MgBetaGroupDriveRootListItemDocumentSetVersion.md)
 Update the navigation property documentSetVersions in groups
 
-### [Update-MgBetaGroupDriveRootListItemDocumentSetVersionField](Update-MgBetaGroupDriveRootListItemDocumentSetVersionField.md)
-Update the navigation property fields in groups
-
 ### [Update-MgBetaGroupDriveRootListItemField](Update-MgBetaGroupDriveRootListItemField.md)
 Update the properties on a **[listItem][]**.
-
-### [Update-MgBetaGroupDriveRootListItemLastModifiedByUserMailboxSetting](Update-MgBetaGroupDriveRootListItemLastModifiedByUserMailboxSetting.md)
-Update property mailboxSettings value.
 
 ### [Update-MgBetaGroupDriveRootListItemVersion](Update-MgBetaGroupDriveRootListItemVersion.md)
 Update the navigation property versions in groups
@@ -3172,12 +2560,6 @@ Update the navigation property thumbnails in groups
 ### [Update-MgBetaGroupDriveRootVersion](Update-MgBetaGroupDriveRootVersion.md)
 Update the navigation property versions in groups
 
-### [Update-MgBetaShareCreatedByUserMailboxSetting](Update-MgBetaShareCreatedByUserMailboxSetting.md)
-Update property mailboxSettings value.
-
-### [Update-MgBetaShareLastModifiedByUserMailboxSetting](Update-MgBetaShareLastModifiedByUserMailboxSetting.md)
-Update property mailboxSettings value.
-
 ### [Update-MgBetaShareList](Update-MgBetaShareList.md)
 Update the navigation property list in shares
 
@@ -3193,35 +2575,20 @@ Update a [site][], [list][] or [content type][contentType] [column][columnDefini
 ### [Update-MgBetaShareListContentTypeColumnLink](Update-MgBetaShareListContentTypeColumnLink.md)
 Update the navigation property columnLinks in shares
 
-### [Update-MgBetaShareListCreatedByUserMailboxSetting](Update-MgBetaShareListCreatedByUserMailboxSetting.md)
-Update property mailboxSettings value.
-
 ### [Update-MgBetaShareListItem](Update-MgBetaShareListItem.md)
 Update the navigation property listItem in shares
-
-### [Update-MgBetaShareListItemCreatedByUserMailboxSetting](Update-MgBetaShareListItemCreatedByUserMailboxSetting.md)
-Update property mailboxSettings value.
 
 ### [Update-MgBetaShareListItemDocumentSetVersion](Update-MgBetaShareListItemDocumentSetVersion.md)
 Update the navigation property documentSetVersions in shares
 
-### [Update-MgBetaShareListItemDocumentSetVersionField](Update-MgBetaShareListItemDocumentSetVersionField.md)
-Update the navigation property fields in shares
-
 ### [Update-MgBetaShareListItemField](Update-MgBetaShareListItemField.md)
 Update the properties on a **[listItem][]**.
-
-### [Update-MgBetaShareListItemLastModifiedByUserMailboxSetting](Update-MgBetaShareListItemLastModifiedByUserMailboxSetting.md)
-Update property mailboxSettings value.
 
 ### [Update-MgBetaShareListItemVersion](Update-MgBetaShareListItemVersion.md)
 Update the navigation property versions in shares
 
 ### [Update-MgBetaShareListItemVersionField](Update-MgBetaShareListItemVersionField.md)
 Update the navigation property fields in shares
-
-### [Update-MgBetaShareListLastModifiedByUserMailboxSetting](Update-MgBetaShareListLastModifiedByUserMailboxSetting.md)
-Update property mailboxSettings value.
 
 ### [Update-MgBetaShareListOperation](Update-MgBetaShareListOperation.md)
 Update the navigation property operations in shares
@@ -3238,9 +2605,6 @@ Update entity in shares
 ### [Update-MgBetaUserDrive](Update-MgBetaUserDrive.md)
 Update the navigation property drives in users
 
-### [Update-MgBetaUserDriveCreatedByUserMailboxSetting](Update-MgBetaUserDriveCreatedByUserMailboxSetting.md)
-Update property mailboxSettings value.
-
 ### [Update-MgBetaUserDriveItem](Update-MgBetaUserDriveItem.md)
 Update the metadata for a DriveItem by ID or path.
 You can also use update to move an item to another parent by updating the item's **parentReference** property.
@@ -3251,29 +2615,14 @@ Update the navigation property analytics in users
 ### [Update-MgBetaUserDriveItemAnalyticItemActivityStat](Update-MgBetaUserDriveItemAnalyticItemActivityStat.md)
 Update the navigation property itemActivityStats in users
 
-### [Update-MgBetaUserDriveItemCreatedByUserMailboxSetting](Update-MgBetaUserDriveItemCreatedByUserMailboxSetting.md)
-Update property mailboxSettings value.
-
-### [Update-MgBetaUserDriveItemLastModifiedByUserMailboxSetting](Update-MgBetaUserDriveItemLastModifiedByUserMailboxSetting.md)
-Update property mailboxSettings value.
-
 ### [Update-MgBetaUserDriveItemListItem](Update-MgBetaUserDriveItemListItem.md)
 Update the navigation property listItem in users
-
-### [Update-MgBetaUserDriveItemListItemCreatedByUserMailboxSetting](Update-MgBetaUserDriveItemListItemCreatedByUserMailboxSetting.md)
-Update property mailboxSettings value.
 
 ### [Update-MgBetaUserDriveItemListItemDocumentSetVersion](Update-MgBetaUserDriveItemListItemDocumentSetVersion.md)
 Update the navigation property documentSetVersions in users
 
-### [Update-MgBetaUserDriveItemListItemDocumentSetVersionField](Update-MgBetaUserDriveItemListItemDocumentSetVersionField.md)
-Update the navigation property fields in users
-
 ### [Update-MgBetaUserDriveItemListItemField](Update-MgBetaUserDriveItemListItemField.md)
 Update the properties on a **[listItem][]**.
-
-### [Update-MgBetaUserDriveItemListItemLastModifiedByUserMailboxSetting](Update-MgBetaUserDriveItemListItemLastModifiedByUserMailboxSetting.md)
-Update property mailboxSettings value.
 
 ### [Update-MgBetaUserDriveItemListItemVersion](Update-MgBetaUserDriveItemListItemVersion.md)
 Update the navigation property versions in users
@@ -3297,9 +2646,6 @@ Update the navigation property thumbnails in users
 ### [Update-MgBetaUserDriveItemVersion](Update-MgBetaUserDriveItemVersion.md)
 Update the navigation property versions in users
 
-### [Update-MgBetaUserDriveLastModifiedByUserMailboxSetting](Update-MgBetaUserDriveLastModifiedByUserMailboxSetting.md)
-Update property mailboxSettings value.
-
 ### [Update-MgBetaUserDriveList](Update-MgBetaUserDriveList.md)
 Update the navigation property list in users
 
@@ -3315,35 +2661,20 @@ Update a [site][], [list][] or [content type][contentType] [column][columnDefini
 ### [Update-MgBetaUserDriveListContentTypeColumnLink](Update-MgBetaUserDriveListContentTypeColumnLink.md)
 Update the navigation property columnLinks in users
 
-### [Update-MgBetaUserDriveListCreatedByUserMailboxSetting](Update-MgBetaUserDriveListCreatedByUserMailboxSetting.md)
-Update property mailboxSettings value.
-
 ### [Update-MgBetaUserDriveListItem](Update-MgBetaUserDriveListItem.md)
 Update the navigation property items in users
-
-### [Update-MgBetaUserDriveListItemCreatedByUserMailboxSetting](Update-MgBetaUserDriveListItemCreatedByUserMailboxSetting.md)
-Update property mailboxSettings value.
 
 ### [Update-MgBetaUserDriveListItemDocumentSetVersion](Update-MgBetaUserDriveListItemDocumentSetVersion.md)
 Update the navigation property documentSetVersions in users
 
-### [Update-MgBetaUserDriveListItemDocumentSetVersionField](Update-MgBetaUserDriveListItemDocumentSetVersionField.md)
-Update the navigation property fields in users
-
 ### [Update-MgBetaUserDriveListItemField](Update-MgBetaUserDriveListItemField.md)
 Update the properties on a **[listItem][]**.
-
-### [Update-MgBetaUserDriveListItemLastModifiedByUserMailboxSetting](Update-MgBetaUserDriveListItemLastModifiedByUserMailboxSetting.md)
-Update property mailboxSettings value.
 
 ### [Update-MgBetaUserDriveListItemVersion](Update-MgBetaUserDriveListItemVersion.md)
 Update the navigation property versions in users
 
 ### [Update-MgBetaUserDriveListItemVersionField](Update-MgBetaUserDriveListItemVersionField.md)
 Update the navigation property fields in users
-
-### [Update-MgBetaUserDriveListLastModifiedByUserMailboxSetting](Update-MgBetaUserDriveListLastModifiedByUserMailboxSetting.md)
-Update property mailboxSettings value.
 
 ### [Update-MgBetaUserDriveListOperation](Update-MgBetaUserDriveListOperation.md)
 Update the navigation property operations in users
@@ -3360,29 +2691,14 @@ Update the navigation property analytics in users
 ### [Update-MgBetaUserDriveRootAnalyticItemActivityStat](Update-MgBetaUserDriveRootAnalyticItemActivityStat.md)
 Update the navigation property itemActivityStats in users
 
-### [Update-MgBetaUserDriveRootCreatedByUserMailboxSetting](Update-MgBetaUserDriveRootCreatedByUserMailboxSetting.md)
-Update property mailboxSettings value.
-
-### [Update-MgBetaUserDriveRootLastModifiedByUserMailboxSetting](Update-MgBetaUserDriveRootLastModifiedByUserMailboxSetting.md)
-Update property mailboxSettings value.
-
 ### [Update-MgBetaUserDriveRootListItem](Update-MgBetaUserDriveRootListItem.md)
 Update the navigation property listItem in users
-
-### [Update-MgBetaUserDriveRootListItemCreatedByUserMailboxSetting](Update-MgBetaUserDriveRootListItemCreatedByUserMailboxSetting.md)
-Update property mailboxSettings value.
 
 ### [Update-MgBetaUserDriveRootListItemDocumentSetVersion](Update-MgBetaUserDriveRootListItemDocumentSetVersion.md)
 Update the navigation property documentSetVersions in users
 
-### [Update-MgBetaUserDriveRootListItemDocumentSetVersionField](Update-MgBetaUserDriveRootListItemDocumentSetVersionField.md)
-Update the navigation property fields in users
-
 ### [Update-MgBetaUserDriveRootListItemField](Update-MgBetaUserDriveRootListItemField.md)
 Update the properties on a **[listItem][]**.
-
-### [Update-MgBetaUserDriveRootListItemLastModifiedByUserMailboxSetting](Update-MgBetaUserDriveRootListItemLastModifiedByUserMailboxSetting.md)
-Update property mailboxSettings value.
 
 ### [Update-MgBetaUserDriveRootListItemVersion](Update-MgBetaUserDriveRootListItemVersion.md)
 Update the navigation property versions in users

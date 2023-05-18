@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/remove-mgusercalendarmultivalueextendedproperty
@@ -12,25 +12,25 @@ Delete navigation property multiValueExtendedProperties for users
 
 ## SYNTAX
 
-### Delete2 (Default)
+### Delete (Default)
 ```
 Remove-MgUserCalendarMultiValueExtendedProperty -MultiValueLegacyExtendedPropertyId <String> -UserId <String>
  [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Delete3
+### Delete1
 ```
 Remove-MgUserCalendarMultiValueExtendedProperty -MultiValueLegacyExtendedPropertyId <String> -UserId <String>
  -CalendarId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity3
+### DeleteViaIdentity1
 ```
 Remove-MgUserCalendarMultiValueExtendedProperty -InputObject <ICalendarIdentity> [-IfMatch <String>]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity2
+### DeleteViaIdentity
 ```
 Remove-MgUserCalendarMultiValueExtendedProperty -InputObject <ICalendarIdentity> [-IfMatch <String>]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -48,7 +48,7 @@ The unique identifier of calendar
 
 ```yaml
 Type: String
-Parameter Sets: Delete3
+Parameter Sets: Delete1
 Aliases:
 
 Required: True
@@ -79,7 +79,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ICalendarIdentity
-Parameter Sets: DeleteViaIdentity3, DeleteViaIdentity2
+Parameter Sets: DeleteViaIdentity1, DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -94,7 +94,7 @@ The unique identifier of multiValueLegacyExtendedProperty
 
 ```yaml
 Type: String
-Parameter Sets: Delete2, Delete3
+Parameter Sets: Delete, Delete1
 Aliases:
 
 Required: True
@@ -124,7 +124,7 @@ The unique identifier of user
 
 ```yaml
 Type: String
-Parameter Sets: Delete2, Delete3
+Parameter Sets: Delete, Delete1
 Aliases:
 
 Required: True

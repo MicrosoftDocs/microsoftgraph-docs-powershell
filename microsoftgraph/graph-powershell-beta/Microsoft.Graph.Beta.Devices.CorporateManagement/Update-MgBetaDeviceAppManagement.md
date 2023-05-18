@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagement
 schema: 2.0.0
@@ -42,12 +42,12 @@ Update-MgBetaDeviceAppManagement [-AdditionalProperties <Hashtable>]
  [-WindowsInformationProtectionPolicies <IMicrosoftGraphWindowsInformationProtectionPolicy[]>]
  [-WindowsInformationProtectionWipeActions <IMicrosoftGraphWindowsInformationProtectionWipeAction[]>]
  [-WindowsManagedAppProtections <IMicrosoftGraphWindowsManagedAppProtection[]>]
- [-WindowsManagementApp <IMicrosoftGraphWindowsManagementApp>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WindowsManagementApp <IMicrosoftGraphWindowsManagementApp>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaDeviceAppManagement -BodyParameter <IMicrosoftGraphDeviceAppManagement> [-Confirm] [-WhatIf]
+Update-MgBetaDeviceAppManagement -BodyParameter <IMicrosoftGraphDeviceAppManagement> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -56,19 +56,15 @@ Update deviceAppManagement
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -76,7 +72,7 @@ Update deviceAppManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -92,7 +88,7 @@ Android managed app policies.
 To construct, see NOTES section for ANDROIDMANAGEDAPPPROTECTIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAndroidManagedAppProtection[]
+Type: IMicrosoftGraphAndroidManagedAppProtection[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -108,7 +104,7 @@ Singleton entity that acts as a container for all device app management function
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceAppManagement
+Type: IMicrosoftGraphDeviceAppManagement
 Parameter Sets: Update
 Aliases:
 
@@ -124,7 +120,7 @@ Default managed app policies.
 To construct, see NOTES section for DEFAULTMANAGEDAPPPROTECTIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDefaultManagedAppProtection[]
+Type: IMicrosoftGraphDefaultManagedAppProtection[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -140,7 +136,7 @@ Device app management tasks.
 To construct, see NOTES section for DEVICEAPPMANAGEMENTTASKS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceAppManagementTask[]
+Type: IMicrosoftGraphDeviceAppManagementTask[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -156,7 +152,7 @@ The Windows Enterprise Code Signing Certificate.
 To construct, see NOTES section for ENTERPRISECODESIGNINGCERTIFICATES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEnterpriseCodeSigningCertificate[]
+Type: IMicrosoftGraphEnterpriseCodeSigningCertificate[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -172,7 +168,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -188,7 +184,7 @@ The IOS Lob App Provisioning Configurations.
 To construct, see NOTES section for IOSLOBAPPPROVISIONINGCONFIGURATIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIosLobAppProvisioningConfiguration[]
+Type: IMicrosoftGraphIosLobAppProvisioningConfiguration[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -204,7 +200,7 @@ iOS managed app policies.
 To construct, see NOTES section for IOSMANAGEDAPPPROTECTIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIosManagedAppProtection[]
+Type: IMicrosoftGraphIosManagedAppProtection[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -219,7 +215,7 @@ Accept wildcard characters: False
 Whether the account is enabled for syncing applications from the Microsoft Store for Business.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -235,7 +231,7 @@ Managed app policies.
 To construct, see NOTES section for MANAGEDAPPPOLICIES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedAppPolicy[]
+Type: IMicrosoftGraphManagedAppPolicy[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -251,7 +247,7 @@ The managed app registrations.
 To construct, see NOTES section for MANAGEDAPPREGISTRATIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedAppRegistration[]
+Type: IMicrosoftGraphManagedAppRegistration[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -267,7 +263,7 @@ The managed app statuses.
 To construct, see NOTES section for MANAGEDAPPSTATUSES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedAppStatus[]
+Type: IMicrosoftGraphManagedAppStatus[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -283,7 +279,7 @@ The mobile eBook categories.
 To construct, see NOTES section for MANAGEDEBOOKCATEGORIES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedEBookCategory[]
+Type: IMicrosoftGraphManagedEBookCategory[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -299,7 +295,7 @@ The Managed eBook.
 To construct, see NOTES section for MANAGEDEBOOKS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedEBook[]
+Type: IMicrosoftGraphManagedEBook[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -315,7 +311,7 @@ Windows information protection for apps running on devices which are MDM enrolle
 To construct, see NOTES section for MDMWINDOWSINFORMATIONPROTECTIONPOLICIES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMdmWindowsInformationProtectionPolicy[]
+Type: IMicrosoftGraphMdmWindowsInformationProtectionPolicy[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -334,7 +330,7 @@ The format is -\<country/regioncode2\>, where is a lowercase two-letter code der
 For example, en-US for English (United States) is a specific culture.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -349,7 +345,7 @@ Accept wildcard characters: False
 The last time an application sync from the Microsoft Store for Business was completed.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -364,7 +360,7 @@ Accept wildcard characters: False
 The last time the apps from the Microsoft Store for Business were synced successfully for the account.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -380,7 +376,7 @@ Portal to which admin syncs available Microsoft Store for Business apps.
 This is available in the Intune Admin Console.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Support.MicrosoftStoreForBusinessPortalSelectionOptions
+Type: MicrosoftStoreForBusinessPortalSelectionOptions
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -396,7 +392,7 @@ The mobile app categories.
 To construct, see NOTES section for MOBILEAPPCATEGORIES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMobileAppCategory[]
+Type: IMicrosoftGraphMobileAppCategory[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -412,7 +408,7 @@ The Managed Device Mobile Application Configurations.
 To construct, see NOTES section for MOBILEAPPCONFIGURATIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedDeviceMobileAppConfiguration[]
+Type: IMicrosoftGraphManagedDeviceMobileAppConfiguration[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -428,7 +424,7 @@ The mobile apps.
 To construct, see NOTES section for MOBILEAPPS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMobileApp[]
+Type: IMicrosoftGraphMobileApp[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -444,7 +440,7 @@ The PolicySet of Policies and Applications
 To construct, see NOTES section for POLICYSETS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPolicySet[]
+Type: IMicrosoftGraphPolicySet[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -460,7 +456,7 @@ symantecCodeSigningCertificate
 To construct, see NOTES section for SYMANTECCODESIGNINGCERTIFICATE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSymantecCodeSigningCertificate
+Type: IMicrosoftGraphSymantecCodeSigningCertificate
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -476,7 +472,7 @@ Targeted managed app configurations.
 To construct, see NOTES section for TARGETEDMANAGEDAPPCONFIGURATIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTargetedManagedAppConfiguration[]
+Type: IMicrosoftGraphTargetedManagedAppConfiguration[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -492,7 +488,7 @@ List of Vpp tokens for this organization.
 To construct, see NOTES section for VPPTOKENS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVppToken[]
+Type: IMicrosoftGraphVppToken[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -508,7 +504,7 @@ The collection of Windows Defender Application Control Supplemental Policies.
 To construct, see NOTES section for WDACSUPPLEMENTALPOLICIES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicy[]
+Type: IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicy[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -524,7 +520,7 @@ Windows information protection device registrations that are not MDM enrolled.
 To construct, see NOTES section for WINDOWSINFORMATIONPROTECTIONDEVICEREGISTRATIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsInformationProtectionDeviceRegistration[]
+Type: IMicrosoftGraphWindowsInformationProtectionDeviceRegistration[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -540,7 +536,7 @@ Windows information protection for apps running on devices which are not MDM enr
 To construct, see NOTES section for WINDOWSINFORMATIONPROTECTIONPOLICIES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsInformationProtectionPolicy[]
+Type: IMicrosoftGraphWindowsInformationProtectionPolicy[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -556,7 +552,7 @@ Windows information protection wipe actions.
 To construct, see NOTES section for WINDOWSINFORMATIONPROTECTIONWIPEACTIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsInformationProtectionWipeAction[]
+Type: IMicrosoftGraphWindowsInformationProtectionWipeAction[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -572,7 +568,7 @@ Windows managed app policies.
 To construct, see NOTES section for WINDOWSMANAGEDAPPPROTECTIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsManagedAppProtection[]
+Type: IMicrosoftGraphWindowsManagedAppProtection[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -588,7 +584,7 @@ Windows management app entity.
 To construct, see NOTES section for WINDOWSMANAGEMENTAPP properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsManagementApp
+Type: IMicrosoftGraphWindowsManagementApp
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -603,7 +599,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -619,7 +615,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -636,11 +632,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceAppManagement
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceAppManagement
-
 ## NOTES
 
 ALIASES
@@ -2581,3 +2575,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

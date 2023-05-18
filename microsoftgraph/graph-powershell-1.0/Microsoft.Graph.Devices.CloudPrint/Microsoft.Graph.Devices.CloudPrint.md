@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Devices.CloudPrint
 Module Guid: 934306f8-f487-4a2b-beea-d26622b8005b
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint
@@ -37,35 +37,6 @@ Get the number of the resource
 
 ### [Get-MgPrintPrinterCount](Get-MgPrintPrinterCount.md)
 Get the number of the resource
-
-### [Get-MgPrintPrinterJob](Get-MgPrintPrinterJob.md)
-The list of jobs that are queued for printing by the printer/printerShare.
-
-### [Get-MgPrintPrinterJobCount](Get-MgPrintPrinterJobCount.md)
-Get the number of the resource
-
-### [Get-MgPrintPrinterJobDocument](Get-MgPrintPrinterJobDocument.md)
-Get documents from print
-
-### [Get-MgPrintPrinterJobDocumentContent](Get-MgPrintPrinterJobDocumentContent.md)
-Get media content for the navigation property documents from print
-
-### [Get-MgPrintPrinterJobDocumentCount](Get-MgPrintPrinterJobDocumentCount.md)
-Get the number of the resource
-
-### [Get-MgPrintPrinterJobTask](Get-MgPrintPrinterJobTask.md)
-A list of printTasks that were triggered by this print job.
-
-### [Get-MgPrintPrinterJobTaskCount](Get-MgPrintPrinterJobTaskCount.md)
-Get the number of the resource
-
-### [Get-MgPrintPrinterJobTaskDefinition](Get-MgPrintPrinterJobTaskDefinition.md)
-The printTaskDefinition that was used to create this task.
-Read-only.
-
-### [Get-MgPrintPrinterJobTaskTrigger](Get-MgPrintPrinterJobTaskTrigger.md)
-The printTaskTrigger that triggered this task's execution.
-Read-only.
 
 ### [Get-MgPrintPrinterShare](Get-MgPrintPrinterShare.md)
 The list of printerShares that are associated with the printer.
@@ -128,35 +99,6 @@ Returned only on $select.
 ### [Get-MgPrintShareCount](Get-MgPrintShareCount.md)
 Get the number of the resource
 
-### [Get-MgPrintShareJob](Get-MgPrintShareJob.md)
-The list of jobs that are queued for printing by the printer/printerShare.
-
-### [Get-MgPrintShareJobCount](Get-MgPrintShareJobCount.md)
-Get the number of the resource
-
-### [Get-MgPrintShareJobDocument](Get-MgPrintShareJobDocument.md)
-Get documents from print
-
-### [Get-MgPrintShareJobDocumentContent](Get-MgPrintShareJobDocumentContent.md)
-Get media content for the navigation property documents from print
-
-### [Get-MgPrintShareJobDocumentCount](Get-MgPrintShareJobDocumentCount.md)
-Get the number of the resource
-
-### [Get-MgPrintShareJobTask](Get-MgPrintShareJobTask.md)
-A list of printTasks that were triggered by this print job.
-
-### [Get-MgPrintShareJobTaskCount](Get-MgPrintShareJobTaskCount.md)
-Get the number of the resource
-
-### [Get-MgPrintShareJobTaskDefinition](Get-MgPrintShareJobTaskDefinition.md)
-The printTaskDefinition that was used to create this task.
-Read-only.
-
-### [Get-MgPrintShareJobTaskTrigger](Get-MgPrintShareJobTaskTrigger.md)
-The printTaskTrigger that triggered this task's execution.
-Read-only.
-
 ### [Get-MgPrintSharePrinter](Get-MgPrintSharePrinter.md)
 The printer that this printer share is related to.
 
@@ -178,28 +120,6 @@ Get the number of the resource
 The printTaskTrigger that triggered this task's execution.
 Read-only.
 
-### [Invoke-MgAbortPrintPrinterJob](Invoke-MgAbortPrintPrinterJob.md)
-Abort a print job.
-Only applications using application permissions can abort a print job.
-Aborting a print job will only succeed if there is a printTask in a `processing` state on the associated print job, started by a trigger that the requesting app created.
-For details about how to register a task trigger, see Extending Universal Print to support pull printing.
-
-### [Invoke-MgAbortPrintShareJob](Invoke-MgAbortPrintShareJob.md)
-Abort a print job.
-Only applications using application permissions can abort a print job.
-Aborting a print job will only succeed if there is a printTask in a `processing` state on the associated print job, started by a trigger that the requesting app created.
-For details about how to register a task trigger, see Extending Universal Print to support pull printing.
-
-### [Invoke-MgRedirectPrintPrinterJob](Invoke-MgRedirectPrintPrinterJob.md)
-Redirect a print job to a different printer.
-Redirecting a print job will only succeed if there is a printTask in a `processing` state on the associated print job, started by a trigger that the requesting app created.
-For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
-
-### [Invoke-MgRedirectPrintShareJob](Invoke-MgRedirectPrintShareJob.md)
-Redirect a print job to a different printer.
-Redirecting a print job will only succeed if there is a printTask in a `processing` state on the associated print job, started by a trigger that the requesting app created.
-For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
-
 ### [New-MgPrintConnector](New-MgPrintConnector.md)
 Create new navigation property to connectors for print
 
@@ -210,21 +130,6 @@ Create new navigation property to operations for print
 Create (register) a printer with the Universal Print service.
 This is a long-running operation and as such, it returns a printerCreateOperation that can be used to track and verify the registration of the printer.
 For help creating the required Certificate Signing Request (CSR) for creating printer, see the CSR generation code sample.
-
-### [New-MgPrintPrinterJob](New-MgPrintPrinterJob.md)
-Create new navigation property to jobs for print
-
-### [New-MgPrintPrinterJobDocument](New-MgPrintPrinterJobDocument.md)
-Create new navigation property to documents for print
-
-### [New-MgPrintPrinterJobDocumentUploadSession](New-MgPrintPrinterJobDocumentUploadSession.md)
-Create an upload session that allows an app to iteratively upload ranges of a binary file linked to the print document.
-As part of the response, this action returns an upload URL that can be used in subsequent sequential `PUT` queries.
-Request headers for each `PUT` operation can be used to specify the exact range of bytes to be uploaded.
-This allows transfer to be resumed, in case the network connection is dropped during upload.
-
-### [New-MgPrintPrinterJobTask](New-MgPrintPrinterJobTask.md)
-Create new navigation property to tasks for print
 
 ### [New-MgPrintPrinterTaskTrigger](New-MgPrintPrinterTaskTrigger.md)
 Create a new task trigger on the specified printer.
@@ -245,21 +150,6 @@ Grant the specified group access to submit print jobs to the associated printerS
 ### [New-MgPrintShareAllowedUserByRef](New-MgPrintShareAllowedUserByRef.md)
 Grant the specified user access to submit print jobs to the associated printerShare.
 
-### [New-MgPrintShareJob](New-MgPrintShareJob.md)
-Create new navigation property to jobs for print
-
-### [New-MgPrintShareJobDocument](New-MgPrintShareJobDocument.md)
-Create new navigation property to documents for print
-
-### [New-MgPrintShareJobDocumentUploadSession](New-MgPrintShareJobDocumentUploadSession.md)
-Create an upload session that allows an app to iteratively upload ranges of a binary file linked to the print document.
-As part of the response, this action returns an upload URL that can be used in subsequent sequential `PUT` queries.
-Request headers for each `PUT` operation can be used to specify the exact range of bytes to be uploaded.
-This allows transfer to be resumed, in case the network connection is dropped during upload.
-
-### [New-MgPrintShareJobTask](New-MgPrintShareJobTask.md)
-Create new navigation property to tasks for print
-
 ### [New-MgPrintTaskDefinition](New-MgPrintTaskDefinition.md)
 Create a new task definition.
 For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
@@ -275,15 +165,6 @@ Delete navigation property operations for print
 
 ### [Remove-MgPrintPrinter](Remove-MgPrintPrinter.md)
 Delete (unregister) a printer.
-
-### [Remove-MgPrintPrinterJob](Remove-MgPrintPrinterJob.md)
-Delete navigation property jobs for print
-
-### [Remove-MgPrintPrinterJobDocument](Remove-MgPrintPrinterJobDocument.md)
-Delete navigation property documents for print
-
-### [Remove-MgPrintPrinterJobTask](Remove-MgPrintPrinterJobTask.md)
-Delete navigation property tasks for print
 
 ### [Remove-MgPrintPrinterTaskTrigger](Remove-MgPrintPrinterTaskTrigger.md)
 Delete the task trigger of a printer to prevent related print events from triggering tasks on the specified printer.
@@ -305,15 +186,6 @@ Revoke the specified group's access to submit print jobs to the associated print
 ### [Remove-MgPrintShareAllowedUserByRef](Remove-MgPrintShareAllowedUserByRef.md)
 Revoke the specified user's access to submit print jobs to the associated printerShare.
 
-### [Remove-MgPrintShareJob](Remove-MgPrintShareJob.md)
-Delete navigation property jobs for print
-
-### [Remove-MgPrintShareJobDocument](Remove-MgPrintShareJobDocument.md)
-Delete navigation property documents for print
-
-### [Remove-MgPrintShareJobTask](Remove-MgPrintShareJobTask.md)
-Delete navigation property tasks for print
-
 ### [Remove-MgPrintTaskDefinition](Remove-MgPrintTaskDefinition.md)
 Delete a **taskDefinition**.
 For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
@@ -323,28 +195,6 @@ Delete navigation property tasks for print
 
 ### [Restore-MgPrintPrinterFactoryDefault](Restore-MgPrintPrinterFactoryDefault.md)
 Restore a printer's default settings to the values specified by the manufacturer.
-
-### [Set-MgPrintPrinterJobDocumentContent](Set-MgPrintPrinterJobDocumentContent.md)
-Update media content for the navigation property documents in print
-
-### [Set-MgPrintShareJobDocumentContent](Set-MgPrintShareJobDocumentContent.md)
-Update media content for the navigation property documents in print
-
-### [Start-MgPrintPrinterJob](Start-MgPrintPrinterJob.md)
-Submits the print job to the associated printer or printerShare.
-It will be printed after any existing pending **jobs** are completed, aborted, or canceled.
-
-### [Start-MgPrintShareJob](Start-MgPrintShareJob.md)
-Submits the print job to the associated printer or printerShare.
-It will be printed after any existing pending **jobs** are completed, aborted, or canceled.
-
-### [Stop-MgPrintPrinterJob](Stop-MgPrintPrinterJob.md)
-Cancel a print job.
-Print jobs can be canceled only on behalf of a user, using delegated permissions.
-
-### [Stop-MgPrintShareJob](Stop-MgPrintShareJob.md)
-Cancel a print job.
-Print jobs can be canceled only on behalf of a user, using delegated permissions.
 
 ### [Update-MgPrint](Update-MgPrint.md)
 Update print
@@ -357,15 +207,6 @@ Update the navigation property operations in print
 
 ### [Update-MgPrintPrinter](Update-MgPrintPrinter.md)
 Update the properties of a printer object.
-
-### [Update-MgPrintPrinterJob](Update-MgPrintPrinterJob.md)
-Update the navigation property jobs in print
-
-### [Update-MgPrintPrinterJobDocument](Update-MgPrintPrinterJobDocument.md)
-Update the navigation property documents in print
-
-### [Update-MgPrintPrinterJobTask](Update-MgPrintPrinterJobTask.md)
-Update the navigation property tasks in print
 
 ### [Update-MgPrintPrinterTaskTrigger](Update-MgPrintPrinterTaskTrigger.md)
 Update the navigation property taskTriggers in print
@@ -383,15 +224,6 @@ For example, if a physical printer device breaks, an administrator can register 
 
 ### [Update-MgPrintShareAllowedUserMailboxSetting](Update-MgPrintShareAllowedUserMailboxSetting.md)
 Update property mailboxSettings value.
-
-### [Update-MgPrintShareJob](Update-MgPrintShareJob.md)
-Update the navigation property jobs in print
-
-### [Update-MgPrintShareJobDocument](Update-MgPrintShareJobDocument.md)
-Update the navigation property documents in print
-
-### [Update-MgPrintShareJobTask](Update-MgPrintShareJobTask.md)
-Update the navigation property tasks in print
 
 ### [Update-MgPrintTaskDefinition](Update-MgPrintTaskDefinition.md)
 Update a task definition.

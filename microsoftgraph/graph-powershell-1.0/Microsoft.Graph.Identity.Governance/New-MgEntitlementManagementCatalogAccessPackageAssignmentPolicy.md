@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementcatalogaccesspackageassignmentpolicy
@@ -15,7 +15,7 @@ Create new navigation property to assignmentPolicies for identityGovernance
 ### CreateExpanded (Default)
 ```
 New-MgEntitlementManagementCatalogAccessPackageAssignmentPolicy -AccessPackageCatalogId <String>
- -AccessPackageId <String> [-AccessPackage <IMicrosoftGraphAccessPackage1>] [-AdditionalProperties <Hashtable>]
+ -AccessPackageId <String> [-AccessPackage <IMicrosoftGraphAccessPackage>] [-AdditionalProperties <Hashtable>]
  [-AllowedTargetScope <String>]
  [-AutomaticRequestSettings <IMicrosoftGraphAccessPackageAutomaticRequestSettings>]
  [-Catalog <IMicrosoftGraphAccessPackageCatalog>] [-CreatedDateTime <DateTime>] [-Description <String>]
@@ -37,7 +37,7 @@ New-MgEntitlementManagementCatalogAccessPackageAssignmentPolicy -AccessPackageCa
 ### CreateViaIdentityExpanded
 ```
 New-MgEntitlementManagementCatalogAccessPackageAssignmentPolicy -InputObject <IIdentityGovernanceIdentity>
- [-AccessPackage <IMicrosoftGraphAccessPackage1>] [-AdditionalProperties <Hashtable>]
+ [-AccessPackage <IMicrosoftGraphAccessPackage>] [-AdditionalProperties <Hashtable>]
  [-AllowedTargetScope <String>]
  [-AutomaticRequestSettings <IMicrosoftGraphAccessPackageAutomaticRequestSettings>]
  [-Catalog <IMicrosoftGraphAccessPackageCatalog>] [-CreatedDateTime <DateTime>] [-Description <String>]
@@ -67,7 +67,7 @@ accessPackage
 To construct, please use Get-Help -Online and see NOTES section for ACCESSPACKAGE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackage1
+Type: IMicrosoftGraphAccessPackage
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -8632,5 +8632,8 @@ REVIEWSETTINGS `<IMicrosoftGraphAccessPackageAssignmentReviewSettings>`: accessP
     - `[StartDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS

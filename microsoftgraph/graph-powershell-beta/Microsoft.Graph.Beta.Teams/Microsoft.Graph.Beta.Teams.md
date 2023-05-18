@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Teams
 Module Guid: af847e8b-7fd6-4a13-aa6f-88b1b1835715
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams
@@ -1076,12 +1076,6 @@ Retrieve the chat of the specified user and Teams app.
 ### [Get-MgBetaUserTeamworkInstalledAppCount](Get-MgBetaUserTeamworkInstalledAppCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserTeamworkInstalledAppTeamApp](Get-MgBetaUserTeamworkInstalledAppTeamApp.md)
-The app that is installed.
-
-### [Get-MgBetaUserTeamworkInstalledAppTeamAppDefinition](Get-MgBetaUserTeamworkInstalledAppTeamAppDefinition.md)
-The details of this version of the app.
-
 ### [Hide-MgBetaChatForUser](Hide-MgBetaChatForUser.md)
 Hide a chat for a user.
 
@@ -1482,8 +1476,8 @@ Create new navigation property to chats for users
 ### [New-MgBetaUserChatInstalledApp](New-MgBetaUserChatInstalledApp.md)
 Install a teamsApp to the specified chat.
 
-### [New-MgBetaUserChatMember](New-MgBetaUserChatMember.md)
-Add a conversationMember to a chat.
+### [New-MgBetaUserChatInstalledApp](New-MgBetaUserChatInstalledApp.md)
+Install a teamsApp to the specified chat.
 
 ### [New-MgBetaUserChatMessage](New-MgBetaUserChatMessage.md)
 Send a new chatMessage in the specified channel or a chat.
@@ -1511,8 +1505,9 @@ This API cannot create a new chat; you must use the list chats method to retriev
 Add (pin) a tab to the specified chat.
 \nThe corresponding app must already be installed in the chat.
 
-### [New-MgBetaUserTeamworkAssociatedTeam](New-MgBetaUserTeamworkAssociatedTeam.md)
-Create new navigation property to associatedTeams for users
+### [New-MgBetaUserChatTab](New-MgBetaUserChatTab.md)
+Add (pin) a tab to the specified chat.
+\nThe corresponding app must already be installed in the chat.
 
 ### [New-MgBetaUserTeamworkInstalledApp](New-MgBetaUserTeamworkInstalledApp.md)
 Install an app in the personal scope of the specified user.
@@ -1595,9 +1590,6 @@ This operation is allowed only for channels with a **membershipType** value of `
 
 ### [Remove-MgBetaGroupTeamChannelTab](Remove-MgBetaGroupTeamChannelTab.md)
 Delete navigation property tabs for groups
-
-### [Remove-MgBetaGroupTeamIncomingChannel](Remove-MgBetaGroupTeamIncomingChannel.md)
-Remove an incoming channel (a **channel** shared with a **team**) from a team.
 
 ### [Remove-MgBetaGroupTeamInstalledApp](Remove-MgBetaGroupTeamInstalledApp.md)
 Uninstalls an app from the specified team.
@@ -1709,9 +1701,6 @@ This operation is allowed only for channels with a **membershipType** value of `
 
 ### [Remove-MgBetaTeamChannelTab](Remove-MgBetaTeamChannelTab.md)
 Delete navigation property tabs for teams
-
-### [Remove-MgBetaTeamIncomingChannel](Remove-MgBetaTeamIncomingChannel.md)
-Remove an incoming channel (a **channel** shared with a **team**) from a team.
 
 ### [Remove-MgBetaTeamInstalledApp](Remove-MgBetaTeamInstalledApp.md)
 Uninstalls an app from the specified team.

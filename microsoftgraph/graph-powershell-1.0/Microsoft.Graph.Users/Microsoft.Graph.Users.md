@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Users
 Module Guid: a6a39b7d-b95b-4bfd-9a3e-202f472b4f59
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.users
@@ -126,6 +126,12 @@ Get the item of type microsoft.graph.directoryObject as microsoft.graph.administ
 
 ### [Get-MgUserMemberOfAsGroup](Get-MgUserMemberOfAsGroup.md)
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
+
+### [Get-MgUserManagerByRef](Get-MgUserManagerByRef.md)
+The user or contact that is this user's manager.
+Read-only.
+(HTTP Methods: GET, PUT, DELETE.).
+Supports $expand.
 
 ### [Get-MgUserMemberOfCount](Get-MgUserMemberOfCount.md)
 Get the number of the resource
@@ -278,6 +284,9 @@ Get the item of type microsoft.graph.directoryObject as microsoft.graph.administ
 ### [Get-MgUserTransitiveMemberOfAsGroup](Get-MgUserTransitiveMemberOfAsGroup.md)
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
 
+### [Get-MgUserTodoListTaskLinkedResource](Get-MgUserTodoListTaskLinkedResource.md)
+A collection of resources linked to the task.
+
 ### [Get-MgUserTransitiveMemberOfCount](Get-MgUserTransitiveMemberOfCount.md)
 Get the number of the resource
 
@@ -288,6 +297,11 @@ You can optionally specify any other writable properties.
 
 ### [New-MgUserExtension](New-MgUserExtension.md)
 Create new navigation property to extensions for users
+
+### [New-MgUserExtension](New-MgUserExtension.md)
+The collection of open extensions defined for the user.
+Read-only.
+Nullable.
 
 ### [New-MgUserOutlookMasterCategory](New-MgUserOutlookMasterCategory.md)
 Create an outlookCategory object in the user's master list of categories.
@@ -317,6 +331,9 @@ Create a linkedResource object to associate a specified task with an item in a p
 For example, you can associate a task with an email item in Outlook that spurred the task, and you can create a **linkedResource** object to track its association.
 You can also create a **linkedResource** object while creating a task.
 
+### [New-MgUserTodoListTaskLinkedResource](New-MgUserTodoListTaskLinkedResource.md)
+A collection of resources linked to the task.
+
 ### [Remove-MgUser](Remove-MgUser.md)
 Delete user.
  When deleted, user resources are moved to a temporary container and can be restored within 30 days.
@@ -328,9 +345,6 @@ Delete navigation property extensions for users
 
 ### [Remove-MgUserLicenseDetail](Remove-MgUserLicenseDetail.md)
 Delete navigation property licenseDetails for users
-
-### [Remove-MgUserManager](Remove-MgUserManager.md)
-Remove a user's manager.
 
 ### [Remove-MgUserManagerByRef](Remove-MgUserManagerByRef.md)
 Remove a user's manager.

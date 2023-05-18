@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Mail
 Module Guid: 18006f93-6aec-4448-985b-f1ea607f3261
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail
@@ -82,9 +82,8 @@ Get the number of the resource
 ### [Get-MgBetaUserMailFolderMessage](Get-MgBetaUserMailFolderMessage.md)
 The collection of messages in the mailFolder.
 
-### [Get-MgBetaUserMailFolderMessageAttachment](Get-MgBetaUserMailFolderMessageAttachment.md)
-Read the properties, relationships, or raw contents of an attachment that is attached to a user event, message, Outlook task, or group post.
-An attachment can be one of the following types: All these types of attachments are derived from the attachment resource.
+### [Get-MgBetaUserMailFolderMessage](Get-MgBetaUserMailFolderMessage.md)
+The collection of messages in the mailFolder.
 
 ### [Get-MgBetaUserMailFolderMessageAttachmentCount](Get-MgBetaUserMailFolderMessageAttachmentCount.md)
 Get the number of the resource
@@ -189,9 +188,8 @@ Outlook carries out those actions if an incoming message in the user's Inbox mee
 ### [New-MgBetaUserMailFolderMessage](New-MgBetaUserMailFolderMessage.md)
 Use this API to create a new Message in a mailfolder.
 
-### [New-MgBetaUserMailFolderMessageAttachment](New-MgBetaUserMailFolderMessageAttachment.md)
-Use this API to create a new Attachment.
-An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
+### [New-MgBetaUserMailFolderMessage](New-MgBetaUserMailFolderMessage.md)
+Use this API to create a new Message in a mailfolder.
 
 ### [New-MgBetaUserMailFolderMessageExtension](New-MgBetaUserMailFolderMessageExtension.md)
 Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.

@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.CloudCommunications
 Module Guid: 456a138d-77de-4ea6-9d68-834385fcf3b6
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications
@@ -96,9 +96,6 @@ Read-only.
 ### [Get-MgCommunicationOnlineMeetingCount](Get-MgCommunicationOnlineMeetingCount.md)
 Get the number of the resource
 
-### [Get-MgCommunicationOnlineMeetingVirtualAppointmentJoinWebUrl](Get-MgCommunicationOnlineMeetingVirtualAppointmentJoinWebUrl.md)
-Invoke function getVirtualAppointmentJoinWebUrl
-
 ### [Get-MgCommunicationPresence](Get-MgCommunicationPresence.md)
 Get a user's presence information.
 
@@ -144,9 +141,12 @@ If an invite to a group call is received, the notification will contain the chat
 The bot is expected to answer, reject, or redirect the call before the call times out.
 The current timeout value is 15 seconds for regular scenarios, and 5 seconds for policy-based recording scenarios.
 
-### [Invoke-MgCreateOrGetCommunicationOnlineMeeting](Invoke-MgCreateOrGetCommunicationOnlineMeeting.md)
-Create an onlineMeeting object with a custom specified external ID.
-If the external ID already exists, this API will return the onlineMeeting object with that external ID.
+### [Invoke-MgAnswerCommunicationCall](Invoke-MgAnswerCommunicationCall.md)
+Enable a bot to answer an incoming call.
+The incoming call request can be an invite from a participant in a group call or a peer-to-peer call.
+If an invite to a group call is received, the notification will contain the chatInfo and meetingInfo parameters.
+The bot is expected to answer, reject, or redirect the call before the call times out.
+The current timeout value is 15 seconds for regular scenarios, and 5 seconds for policy-based recording scenarios.
 
 ### [Invoke-MgInviteCommunicationCallParticipant](Invoke-MgInviteCommunicationCallParticipant.md)
 Delete a specific participant in a call.
@@ -242,8 +242,8 @@ Create new navigation property to participants for communications
 ### [New-MgCommunicationCallRecordSession](New-MgCommunicationCallRecordSession.md)
 Create new navigation property to sessions for communications
 
-### [New-MgCommunicationOnlineMeeting](New-MgCommunicationOnlineMeeting.md)
-Create new navigation property to onlineMeetings for communications
+### [New-MgCommunicationCallRecordSession](New-MgCommunicationCallRecordSession.md)
+Create new navigation property to sessions for communications
 
 ### [New-MgCommunicationOnlineMeetingAttendanceReport](New-MgCommunicationOnlineMeetingAttendanceReport.md)
 Create new navigation property to attendanceReports for communications
@@ -307,8 +307,8 @@ Delete navigation property attendanceReports for users
 ### [Remove-MgUserOnlineMeetingAttendanceReportAttendanceRecord](Remove-MgUserOnlineMeetingAttendanceReportAttendanceRecord.md)
 Delete navigation property attendanceRecords for users
 
-### [Remove-MgUserPresence](Remove-MgUserPresence.md)
-Delete navigation property presence for users
+### [Remove-MgUserOnlineMeetingAttendanceReportAttendanceRecord](Remove-MgUserOnlineMeetingAttendanceReportAttendanceRecord.md)
+Delete navigation property attendanceRecords for users
 
 ### [Rename-MgCommunicationCallScreenSharingRole](Rename-MgCommunicationCallScreenSharingRole.md)
 Allow applications to share screen content with the participants of a group call.
@@ -386,6 +386,6 @@ Update the navigation property attendanceReports in users
 ### [Update-MgUserOnlineMeetingAttendanceReportAttendanceRecord](Update-MgUserOnlineMeetingAttendanceReportAttendanceRecord.md)
 Update the navigation property attendanceRecords in users
 
-### [Update-MgUserPresence](Update-MgUserPresence.md)
-Update the navigation property presence in users
+### [Update-MgUserOnlineMeetingAttendanceReportAttendanceRecord](Update-MgUserOnlineMeetingAttendanceReportAttendanceRecord.md)
+Update the navigation property attendanceRecords in users
 

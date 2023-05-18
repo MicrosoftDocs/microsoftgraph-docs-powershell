@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 Module Guid: a85fbc7b-65b7-43c8-ad5d-32af39feebc7
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment
@@ -168,9 +168,6 @@ Get the number of the resource
 ### [Get-MgBetaRoleManagementCloudPcResourceNamespaceResourceAction](Get-MgBetaRoleManagementCloudPcResourceNamespaceResourceAction.md)
 Read the properties and relationships of an unifiedRbacResourceAction object.
 
-### [Get-MgBetaRoleManagementCloudPcResourceNamespaceResourceActionAuthenticationContext](Get-MgBetaRoleManagementCloudPcResourceNamespaceResourceActionAuthenticationContext.md)
-Get authenticationContext from roleManagement
-
 ### [Get-MgBetaRoleManagementCloudPcResourceNamespaceResourceActionCount](Get-MgBetaRoleManagementCloudPcResourceNamespaceResourceActionCount.md)
 Get the number of the resource
 
@@ -237,9 +234,6 @@ Get the number of the resource
 
 ### [Get-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceAction](Get-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceAction.md)
 Read the properties and relationships of an unifiedRbacResourceAction object.
-
-### [Get-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceActionAuthenticationContext](Get-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceActionAuthenticationContext.md)
-Get authenticationContext from roleManagement
 
 ### [Get-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceActionCount](Get-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceActionCount.md)
 Get the number of the resource

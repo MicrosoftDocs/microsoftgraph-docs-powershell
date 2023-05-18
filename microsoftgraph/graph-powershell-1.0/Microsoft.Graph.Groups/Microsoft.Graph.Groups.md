@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Groups
 Module Guid: 94f7a306-e0bb-4a89-ae2a-500e0e6d9b4d
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.groups
@@ -18,7 +18,7 @@ Add a copy of a [content type][contentType] from a [site][site] to a [list][list
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
+For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
 
 ### [Add-MgGroupFavorite](Add-MgGroupFavorite.md)
 Add the group to the list of the current user's favorite groups.
@@ -34,7 +34,7 @@ Add a copy of a [content type][contentType] from a [site][site] to a [list][list
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
+For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
 
 ### [Add-MgGroupSiteListContentTypeCopy](Add-MgGroupSiteListContentTypeCopy.md)
 Add a copy of a [content type][contentType] from a [site][site] to a [list][list].
@@ -43,7 +43,7 @@ Add a copy of a [content type][contentType] from a [site][site] to a [list][list
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
+For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
 
 ### [Add-MgGroupToLifecyclePolicy](Add-MgGroupToLifecyclePolicy.md)
 Invoke action addGroup
@@ -51,22 +51,14 @@ Invoke action addGroup
 ### [Confirm-MgGroupGrantedPermissionForApp](Confirm-MgGroupGrantedPermissionForApp.md)
 Invoke action checkGrantedPermissionsForApp
 
-### [Confirm-MgGroupMemberGroup](Confirm-MgGroupMemberGroup.md)
-Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
-This function is transitive.
-You can check up to a maximum of 20 groups per request.
-This function supports all groups provisioned in Azure AD.
-Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
+### [Confirm-MgGroupGrantedPermissionForApp](Confirm-MgGroupGrantedPermissionForApp.md)
+Invoke action checkGrantedPermissionsForApp
 
 ### [Confirm-MgGroupMemberObject](Confirm-MgGroupMemberObject.md)
 Invoke action checkMemberObjects
 
-### [Confirm-MgGroupPermissionGrantMemberGroup](Confirm-MgGroupPermissionGrantMemberGroup.md)
-Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
-This function is transitive.
-You can check up to a maximum of 20 groups per request.
-This function supports all groups provisioned in Azure AD.
-Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
+### [Confirm-MgGroupMemberObject](Confirm-MgGroupMemberObject.md)
+Invoke action checkMemberObjects
 
 ### [Confirm-MgGroupPermissionGrantMemberObject](Confirm-MgGroupPermissionGrantMemberObject.md)
 Invoke action checkMemberObjects
@@ -91,18 +83,17 @@ The file can then be added as a default file or template via a POST operation.
 ### [Copy-MgGroupDriveRoot](Copy-MgGroupDriveRoot.md)
 Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name.
 
-### [Copy-MgGroupOnenoteNotebook](Copy-MgGroupOnenoteNotebook.md)
-For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+### [Copy-MgGroupDriveRoot](Copy-MgGroupDriveRoot.md)
+Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name.
 
-### [Copy-MgGroupOnenotePageToSection](Copy-MgGroupOnenotePageToSection.md)
-Copy a page to a specific section.
-For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+### [Copy-MgGroupDriveRoot](Copy-MgGroupDriveRoot.md)
+Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name.
 
-### [Copy-MgGroupOnenoteSectionToNotebook](Copy-MgGroupOnenoteSectionToNotebook.md)
-For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+### [Copy-MgGroupDriveRoot](Copy-MgGroupDriveRoot.md)
+Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name.
 
-### [Copy-MgGroupOnenoteSectionToSectionGroup](Copy-MgGroupOnenoteSectionToSectionGroup.md)
-For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+### [Copy-MgGroupDriveRoot](Copy-MgGroupDriveRoot.md)
+Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name.
 
 ### [Copy-MgGroupSiteContentTypeToDefaultContentLocation](Copy-MgGroupSiteContentTypeToDefaultContentLocation.md)
 Copy a file to a default content location in a [content type][contentType].
@@ -137,8 +128,11 @@ Typically, synchronizing events in a **calendarView** in a local store entails a
 The initial call is a full synchronization, and every subsequent **delta** call in the same round gets the incremental changes (additions, deletions, or updates).
 This allows you to maintain and synchronize a local store of events in the specified **calendarView**, without having to fetch all the events of that calendar from the server every time.
 
-### [Get-MgGroupCalendarSchedule](Get-MgGroupCalendarSchedule.md)
-Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.
+### [Get-MgGroupCalendarEventDelta](Get-MgGroupCalendarEventDelta.md)
+Get a set of event resources that have been added, deleted, or updated in a **calendarView** (a range of events defined by start and end dates) of the user's primary calendar.
+Typically, synchronizing events in a **calendarView** in a local store entails a round of multiple **delta** function calls.
+The initial call is a full synchronization, and every subsequent **delta** call in the same round gets the incremental changes (additions, deletions, or updates).
+This allows you to maintain and synchronize a local store of events in the specified **calendarView**, without having to fetch all the events of that calendar from the server every time.
 
 ### [Get-MgGroupConversation](Get-MgGroupConversation.md)
 The group's conversations.
@@ -193,6 +187,26 @@ The following table lists the three scenarios where you can get an open extensio
 ### [Get-MgGroupConversationThreadPostInReplyToExtensionCount](Get-MgGroupConversationThreadPostInReplyToExtensionCount.md)
 Get the number of the resource
 
+### [Get-MgGroupConversationThreadPostInReplyToMultiValueExtendedProperty](Get-MgGroupConversationThreadPostInReplyToMultiValueExtendedProperty.md)
+The collection of multi-value extended properties defined for the post.
+Read-only.
+Nullable.
+
+### [Get-MgGroupConversationThreadPostInReplyToSingleValueExtendedProperty](Get-MgGroupConversationThreadPostInReplyToSingleValueExtendedProperty.md)
+The collection of single-value extended properties defined for the post.
+Read-only.
+Nullable.
+
+### [Get-MgGroupConversationThreadPostMultiValueExtendedProperty](Get-MgGroupConversationThreadPostMultiValueExtendedProperty.md)
+The collection of multi-value extended properties defined for the post.
+Read-only.
+Nullable.
+
+### [Get-MgGroupConversationThreadPostSingleValueExtendedProperty](Get-MgGroupConversationThreadPostSingleValueExtendedProperty.md)
+The collection of single-value extended properties defined for the post.
+Read-only.
+Nullable.
+
 ### [Get-MgGroupCount](Get-MgGroupCount.md)
 Get the number of the resource
 
@@ -200,6 +214,11 @@ Get the number of the resource
 The user (or application) that created the group.
 NOTE: This is not set if the user is an administrator.
 Read-only.
+
+### [Get-MgGroupConversationThreadPostSingleValueExtendedProperty](Get-MgGroupConversationThreadPostSingleValueExtendedProperty.md)
+The collection of single-value extended properties defined for the post.
+Read-only.
+Nullable.
 
 ### [Get-MgGroupDelta](Get-MgGroupDelta.md)
 Invoke function delta
@@ -370,9 +389,8 @@ For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayNa
 ### [Get-MgGroupMemberCount](Get-MgGroupMemberCount.md)
 Get the number of the resource
 
-### [Get-MgGroupMemberGroup](Get-MgGroupMemberGroup.md)
-Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
-This function is transitive.
+### [Get-MgGroupMemberCount](Get-MgGroupMemberCount.md)
+Get the number of the resource
 
 ### [Get-MgGroupMemberObject](Get-MgGroupMemberObject.md)
 Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
@@ -420,9 +438,8 @@ Get the item of type microsoft.graph.directoryObject as microsoft.graph.user
 ### [Get-MgGroupMemberWithLicenseErrorCount](Get-MgGroupMemberWithLicenseErrorCount.md)
 Get the number of the resource
 
-### [Get-MgGroupOnenoteNotebookFromWebUrl](Get-MgGroupOnenoteNotebookFromWebUrl.md)
-Retrieve the properties and relationships of a notebook object by using its URL path.
-The location can be user notebooks on Microsoft 365, group notebooks, or SharePoint site-hosted team notebooks on Microsoft 365.
+### [Get-MgGroupMemberWithLicenseErrorCount](Get-MgGroupMemberWithLicenseErrorCount.md)
+Get the number of the resource
 
 ### [Get-MgGroupOnenoteRecentNotebook](Get-MgGroupOnenoteRecentNotebook.md)
 Invoke function getRecentNotebooks
@@ -480,9 +497,8 @@ Get the number of the resource
 ### [Get-MgGroupPermissionGrantDelta](Get-MgGroupPermissionGrantDelta.md)
 Invoke function delta
 
-### [Get-MgGroupPermissionGrantMemberGroup](Get-MgGroupPermissionGrantMemberGroup.md)
-Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
-This function is transitive.
+### [Get-MgGroupPermissionGrantDelta](Get-MgGroupPermissionGrantDelta.md)
+Invoke function delta
 
 ### [Get-MgGroupPermissionGrantMemberObject](Get-MgGroupPermissionGrantMemberObject.md)
 Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
@@ -605,6 +621,26 @@ The following table lists the three scenarios where you can get an open extensio
 ### [Get-MgGroupThreadPostInReplyToExtensionCount](Get-MgGroupThreadPostInReplyToExtensionCount.md)
 Get the number of the resource
 
+### [Get-MgGroupThreadPostInReplyToMultiValueExtendedProperty](Get-MgGroupThreadPostInReplyToMultiValueExtendedProperty.md)
+The collection of multi-value extended properties defined for the post.
+Read-only.
+Nullable.
+
+### [Get-MgGroupThreadPostInReplyToSingleValueExtendedProperty](Get-MgGroupThreadPostInReplyToSingleValueExtendedProperty.md)
+The collection of single-value extended properties defined for the post.
+Read-only.
+Nullable.
+
+### [Get-MgGroupThreadPostMultiValueExtendedProperty](Get-MgGroupThreadPostMultiValueExtendedProperty.md)
+The collection of multi-value extended properties defined for the post.
+Read-only.
+Nullable.
+
+### [Get-MgGroupThreadPostSingleValueExtendedProperty](Get-MgGroupThreadPostSingleValueExtendedProperty.md)
+The collection of single-value extended properties defined for the post.
+Read-only.
+Nullable.
+
 ### [Get-MgGroupTransitiveMember](Get-MgGroupTransitiveMember.md)
 The direct and transitive members of a group.
 Nullable.
@@ -652,22 +688,6 @@ Grant users access to a link represented by a [permission][].
 ### [Grant-MgGroupSitePermission](Grant-MgGroupSitePermission.md)
 Grant users access to a link represented by a [permission][].
 
-### [Invoke-MgAcceptGroupCalendarEvent](Invoke-MgAcceptGroupCalendarEvent.md)
-Accept the specified event in a user calendar.
-
-### [Invoke-MgAcceptGroupCalendarEventTentatively](Invoke-MgAcceptGroupCalendarEventTentatively.md)
-Tentatively accept the specified event in a user calendar.
-If the event allows proposals for new times, on responding tentative to the event, an invitee can choose to suggest an alternative time by including the **proposedNewTime** parameter.
-For more information on how to propose a time, and how to receive and accept a new time proposal, see Propose new meeting times.
-
-### [Invoke-MgAcceptGroupEvent](Invoke-MgAcceptGroupEvent.md)
-Accept the specified event in a user calendar.
-
-### [Invoke-MgAcceptGroupEventTentatively](Invoke-MgAcceptGroupEventTentatively.md)
-Tentatively accept the specified event in a user calendar.
-If the event allows proposals for new times, on responding tentative to the event, an invitee can choose to suggest an alternative time by including the **proposedNewTime** parameter.
-For more information on how to propose a time, and how to receive and accept a new time proposal, see Propose new meeting times.
-
 ### [Invoke-MgCalendarGroupCalendar](Invoke-MgCalendarGroupCalendar.md)
 Invoke function allowedCalendarSharingRoles
 
@@ -683,32 +703,14 @@ Check out a **driveItem** resource to prevent others from editing the document, 
 ### [Invoke-MgCheckoutGroupDriveRoot](Invoke-MgCheckoutGroupDriveRoot.md)
 Check out a **driveItem** resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
 
-### [Invoke-MgDeclineGroupCalendarEvent](Invoke-MgDeclineGroupCalendarEvent.md)
-Decline invitation to the specified event in a user calendar.
-If the event allows proposals for new times, on declining the event, an invitee can choose to suggest an alternative time by including the **proposedNewTime** parameter.
-For more information on how to propose a time, and how to receive and accept a new time proposal, see Propose new meeting times.
-
-### [Invoke-MgDeclineGroupEvent](Invoke-MgDeclineGroupEvent.md)
-Decline invitation to the specified event in a user calendar.
-If the event allows proposals for new times, on declining the event, an invitee can choose to suggest an alternative time by including the **proposedNewTime** parameter.
-For more information on how to propose a time, and how to receive and accept a new time proposal, see Propose new meeting times.
-
-### [Invoke-MgDismissGroupCalendarEventReminder](Invoke-MgDismissGroupCalendarEventReminder.md)
-Dismiss a reminder that has been triggered for an event in a user calendar.
-
-### [Invoke-MgDismissGroupEventReminder](Invoke-MgDismissGroupEventReminder.md)
-Dismiss a reminder that has been triggered for an event in a user calendar.
-
 ### [Invoke-MgFollowGroupDriveItem](Invoke-MgFollowGroupDriveItem.md)
 Follow a driveItem.
 
 ### [Invoke-MgFollowGroupDriveRoot](Invoke-MgFollowGroupDriveRoot.md)
 Follow a driveItem.
 
-### [Invoke-MgForwardGroupCalendarEvent](Invoke-MgForwardGroupCalendarEvent.md)
-This action allows the organizer or attendee of a meeting event to forward the \nmeeting request to a new recipient.
-If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action \nalso sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's \ncopy of the meeting event.
-This convenience is not available when forwarding from an Outlook.com account.
+### [Invoke-MgFollowGroupDriveRoot](Invoke-MgFollowGroupDriveRoot.md)
+Follow a driveItem.
 
 ### [Invoke-MgForwardGroupConversationThreadPost](Invoke-MgForwardGroupConversationThreadPost.md)
 Forward a post to a recipient.
@@ -718,10 +720,9 @@ You can specify both the parent conversation and thread in the request, \nor, yo
 Forward a post to a recipient.
 You can specify both the parent conversation and thread in the request, \nor, you can specify just the parent thread without the parent conversation.
 
-### [Invoke-MgForwardGroupEvent](Invoke-MgForwardGroupEvent.md)
-This action allows the organizer or attendee of a meeting event to forward the \nmeeting request to a new recipient.
-If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action \nalso sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's \ncopy of the meeting event.
-This convenience is not available when forwarding from an Outlook.com account.
+### [Invoke-MgForwardGroupConversationThreadPostInReplyTo](Invoke-MgForwardGroupConversationThreadPostInReplyTo.md)
+Forward a post to a recipient.
+You can specify both the parent conversation and thread in the request, \nor, you can specify just the parent thread without the parent conversation.
 
 ### [Invoke-MgForwardGroupThreadPost](Invoke-MgForwardGroupThreadPost.md)
 Forward a post to a recipient.
@@ -806,12 +807,6 @@ You can create an open extension in a resource instance and store custom data to
 See known limitations of open extensions for more information.
 The table in the Permissions section lists the resources that support open extensions.
 
-### [Invoke-MgSnoozeGroupCalendarEventReminder](Invoke-MgSnoozeGroupCalendarEventReminder.md)
-Postpone a reminder for an event in a user calendar until a new time.
-
-### [Invoke-MgSnoozeGroupEventReminder](Invoke-MgSnoozeGroupEventReminder.md)
-Postpone a reminder for an event in a user calendar until a new time.
-
 ### [Invoke-MgSubscribeGroupByMail](Invoke-MgSubscribeGroupByMail.md)
 Calling this method will enable the current user to receive email notifications for this group, about new posts, events, and files in that group.
 Supported for Microsoft 365 groups only.
@@ -858,15 +853,8 @@ Note: You can also start a new conversation by first creating a thread.
 ### [New-MgGroupConversationThreadPostAttachment](New-MgGroupConversationThreadPostAttachment.md)
 Create new navigation property to attachments for groups
 
-### [New-MgGroupConversationThreadPostAttachmentUploadSession](New-MgGroupConversationThreadPostAttachmentUploadSession.md)
-Create an upload session that allows an app to iteratively upload ranges of a file, so as to attach the file to the specified Outlook item.
-The item can be a message or event.
-Use this approach to attach a file if the file size is between 3 MB and 150 MB.
-To attach a file that's smaller than 3 MB, do a `POST` operation on the **attachments** navigation property of the Outlook item; see how to do this for a message or for an event.
-As part of the response, this action returns an upload URL that you can use in subsequent sequential `PUT` queries.
-Request headers for each `PUT` operation let you specify the exact range of bytes to be uploaded.
-This allows transfer to be resumed, in case the network connection is dropped during upload.
-The following are the steps to attach a file to an Outlook item using an upload session: See attach large files to Outlook messages or events for an example.
+### [New-MgGroupConversationThreadPostAttachment](New-MgGroupConversationThreadPostAttachment.md)
+Create new navigation property to attachments for groups
 
 ### [New-MgGroupConversationThreadPostExtension](New-MgGroupConversationThreadPostExtension.md)
 Create new navigation property to extensions for groups
@@ -874,18 +862,23 @@ Create new navigation property to extensions for groups
 ### [New-MgGroupConversationThreadPostInReplyToAttachment](New-MgGroupConversationThreadPostInReplyToAttachment.md)
 Create new navigation property to attachments for groups
 
-### [New-MgGroupConversationThreadPostInReplyToAttachmentUploadSession](New-MgGroupConversationThreadPostInReplyToAttachmentUploadSession.md)
-Create an upload session that allows an app to iteratively upload ranges of a file, so as to attach the file to the specified Outlook item.
-The item can be a message or event.
-Use this approach to attach a file if the file size is between 3 MB and 150 MB.
-To attach a file that's smaller than 3 MB, do a `POST` operation on the **attachments** navigation property of the Outlook item; see how to do this for a message or for an event.
-As part of the response, this action returns an upload URL that you can use in subsequent sequential `PUT` queries.
-Request headers for each `PUT` operation let you specify the exact range of bytes to be uploaded.
-This allows transfer to be resumed, in case the network connection is dropped during upload.
-The following are the steps to attach a file to an Outlook item using an upload session: See attach large files to Outlook messages or events for an example.
+### [New-MgGroupConversationThreadPostInReplyToAttachment](New-MgGroupConversationThreadPostInReplyToAttachment.md)
+Create new navigation property to attachments for groups
 
 ### [New-MgGroupConversationThreadPostInReplyToExtension](New-MgGroupConversationThreadPostInReplyToExtension.md)
 Create new navigation property to extensions for groups
+
+### [New-MgGroupConversationThreadPostInReplyToMultiValueExtendedProperty](New-MgGroupConversationThreadPostInReplyToMultiValueExtendedProperty.md)
+Create new navigation property to multiValueExtendedProperties for groups
+
+### [New-MgGroupConversationThreadPostInReplyToSingleValueExtendedProperty](New-MgGroupConversationThreadPostInReplyToSingleValueExtendedProperty.md)
+Create new navigation property to singleValueExtendedProperties for groups
+
+### [New-MgGroupConversationThreadPostMultiValueExtendedProperty](New-MgGroupConversationThreadPostMultiValueExtendedProperty.md)
+Create new navigation property to multiValueExtendedProperties for groups
+
+### [New-MgGroupConversationThreadPostSingleValueExtendedProperty](New-MgGroupConversationThreadPostSingleValueExtendedProperty.md)
+Create new navigation property to singleValueExtendedProperties for groups
 
 ### [New-MgGroupDriveItemLink](New-MgGroupDriveItemLink.md)
 You can use **createLink** action to share a DriveItem via a sharing link.
@@ -979,6 +972,18 @@ The following are the steps to attach a file to an Outlook item using an upload 
 ### [New-MgGroupThreadPostInReplyToExtension](New-MgGroupThreadPostInReplyToExtension.md)
 Create new navigation property to extensions for groups
 
+### [New-MgGroupThreadPostInReplyToMultiValueExtendedProperty](New-MgGroupThreadPostInReplyToMultiValueExtendedProperty.md)
+Create new navigation property to multiValueExtendedProperties for groups
+
+### [New-MgGroupThreadPostInReplyToSingleValueExtendedProperty](New-MgGroupThreadPostInReplyToSingleValueExtendedProperty.md)
+Create new navigation property to singleValueExtendedProperties for groups
+
+### [New-MgGroupThreadPostMultiValueExtendedProperty](New-MgGroupThreadPostMultiValueExtendedProperty.md)
+Create new navigation property to multiValueExtendedProperties for groups
+
+### [New-MgGroupThreadPostSingleValueExtendedProperty](New-MgGroupThreadPostSingleValueExtendedProperty.md)
+Create new navigation property to singleValueExtendedProperties for groups
+
 ### [Publish-MgGroupDriveListContentType](Publish-MgGroupDriveListContentType.md)
 Publishes a [contentType][] present in the content type hub site.
 
@@ -1015,6 +1020,23 @@ Delete navigation property attachments for groups
 
 ### [Remove-MgGroupConversationThreadPostInReplyToExtension](Remove-MgGroupConversationThreadPostInReplyToExtension.md)
 Delete navigation property extensions for groups
+
+### [Remove-MgGroupConversationThreadPostInReplyToMultiValueExtendedProperty](Remove-MgGroupConversationThreadPostInReplyToMultiValueExtendedProperty.md)
+Delete navigation property multiValueExtendedProperties for groups
+
+### [Remove-MgGroupConversationThreadPostInReplyToSingleValueExtendedProperty](Remove-MgGroupConversationThreadPostInReplyToSingleValueExtendedProperty.md)
+Delete navigation property singleValueExtendedProperties for groups
+
+### [Remove-MgGroupConversationThreadPostMultiValueExtendedProperty](Remove-MgGroupConversationThreadPostMultiValueExtendedProperty.md)
+Delete navigation property multiValueExtendedProperties for groups
+
+### [Remove-MgGroupConversationThreadPostSingleValueExtendedProperty](Remove-MgGroupConversationThreadPostSingleValueExtendedProperty.md)
+Delete navigation property singleValueExtendedProperties for groups
+
+### [Remove-MgGroupConversationThreadPostSingleValueExtendedProperty](Remove-MgGroupConversationThreadPostSingleValueExtendedProperty.md)
+The collection of single-value extended properties defined for the post.
+Read-only.
+Nullable.
 
 ### [Remove-MgGroupExtension](Remove-MgGroupExtension.md)
 Delete navigation property extensions for groups
@@ -1069,6 +1091,18 @@ Delete navigation property attachments for groups
 
 ### [Remove-MgGroupThreadPostInReplyToExtension](Remove-MgGroupThreadPostInReplyToExtension.md)
 Delete navigation property extensions for groups
+
+### [Remove-MgGroupThreadPostInReplyToMultiValueExtendedProperty](Remove-MgGroupThreadPostInReplyToMultiValueExtendedProperty.md)
+Delete navigation property multiValueExtendedProperties for groups
+
+### [Remove-MgGroupThreadPostInReplyToSingleValueExtendedProperty](Remove-MgGroupThreadPostInReplyToSingleValueExtendedProperty.md)
+Delete navigation property singleValueExtendedProperties for groups
+
+### [Remove-MgGroupThreadPostMultiValueExtendedProperty](Remove-MgGroupThreadPostMultiValueExtendedProperty.md)
+Delete navigation property multiValueExtendedProperties for groups
+
+### [Remove-MgGroupThreadPostSingleValueExtendedProperty](Remove-MgGroupThreadPostSingleValueExtendedProperty.md)
+Delete navigation property singleValueExtendedProperties for groups
 
 ### [Reset-MgGroupUnseenCount](Reset-MgGroupUnseenCount.md)
 Reset the unseenCount of all the posts that the current user has not seen since their last visit.
@@ -1228,6 +1262,18 @@ See the table in the Permissions section for the list of resources that support 
 Update an open extension (openTypeExtension object) with the properties in the request body: The data in an extension can be primitive types, or arrays of primitive types.
 See the table in the Permissions section for the list of resources that support open extensions.
 
+### [Update-MgGroupConversationThreadPostInReplyToMultiValueExtendedProperty](Update-MgGroupConversationThreadPostInReplyToMultiValueExtendedProperty.md)
+Update the navigation property multiValueExtendedProperties in groups
+
+### [Update-MgGroupConversationThreadPostInReplyToSingleValueExtendedProperty](Update-MgGroupConversationThreadPostInReplyToSingleValueExtendedProperty.md)
+Update the navigation property singleValueExtendedProperties in groups
+
+### [Update-MgGroupConversationThreadPostMultiValueExtendedProperty](Update-MgGroupConversationThreadPostMultiValueExtendedProperty.md)
+Update the navigation property multiValueExtendedProperties in groups
+
+### [Update-MgGroupConversationThreadPostSingleValueExtendedProperty](Update-MgGroupConversationThreadPostSingleValueExtendedProperty.md)
+Update the navigation property singleValueExtendedProperties in groups
+
 ### [Update-MgGroupExtension](Update-MgGroupExtension.md)
 Update the navigation property extensions in groups
 
@@ -1259,4 +1305,16 @@ See the table in the Permissions section for the list of resources that support 
 ### [Update-MgGroupThreadPostInReplyToExtension](Update-MgGroupThreadPostInReplyToExtension.md)
 Update an open extension (openTypeExtension object) with the properties in the request body: The data in an extension can be primitive types, or arrays of primitive types.
 See the table in the Permissions section for the list of resources that support open extensions.
+
+### [Update-MgGroupThreadPostInReplyToMultiValueExtendedProperty](Update-MgGroupThreadPostInReplyToMultiValueExtendedProperty.md)
+Update the navigation property multiValueExtendedProperties in groups
+
+### [Update-MgGroupThreadPostInReplyToSingleValueExtendedProperty](Update-MgGroupThreadPostInReplyToSingleValueExtendedProperty.md)
+Update the navigation property singleValueExtendedProperties in groups
+
+### [Update-MgGroupThreadPostMultiValueExtendedProperty](Update-MgGroupThreadPostMultiValueExtendedProperty.md)
+Update the navigation property multiValueExtendedProperties in groups
+
+### [Update-MgGroupThreadPostSingleValueExtendedProperty](Update-MgGroupThreadPostSingleValueExtendedProperty.md)
+Update the navigation property singleValueExtendedProperties in groups
 

@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Identity.SignIns
 Module Guid: eb3072d1-c6a4-42e9-b758-0b895f2efb42
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins
@@ -190,12 +190,6 @@ Get the number of the resource
 ### [Get-MgPolicyActivityBasedTimeoutPolicy](Get-MgPolicyActivityBasedTimeoutPolicy.md)
 Get the properties of an activityBasedTimeoutPolicy object.
 
-### [Get-MgPolicyActivityBasedTimeoutPolicyApplyTo](Get-MgPolicyActivityBasedTimeoutPolicyApplyTo.md)
-Get appliesTo from policies
-
-### [Get-MgPolicyActivityBasedTimeoutPolicyApplyToCount](Get-MgPolicyActivityBasedTimeoutPolicyApplyToCount.md)
-Get the number of the resource
-
 ### [Get-MgPolicyActivityBasedTimeoutPolicyCount](Get-MgPolicyActivityBasedTimeoutPolicyCount.md)
 Get the number of the resource
 
@@ -245,12 +239,6 @@ The policy that controls Azure AD authorization settings.
 ### [Get-MgPolicyClaimMappingPolicy](Get-MgPolicyClaimMappingPolicy.md)
 Retrieve the properties and relationships of a claimsMappingPolicy object.
 
-### [Get-MgPolicyClaimMappingPolicyApplyTo](Get-MgPolicyClaimMappingPolicyApplyTo.md)
-Get appliesTo from policies
-
-### [Get-MgPolicyClaimMappingPolicyApplyToCount](Get-MgPolicyClaimMappingPolicyApplyToCount.md)
-Get the number of the resource
-
 ### [Get-MgPolicyClaimMappingPolicyCount](Get-MgPolicyClaimMappingPolicyCount.md)
 Get the number of the resource
 
@@ -269,9 +257,6 @@ Read the properties and relationships of a partner-specific configuration.
 
 ### [Get-MgPolicyCrossTenantAccessPolicyPartnerCount](Get-MgPolicyCrossTenantAccessPolicyPartnerCount.md)
 Get the number of the resource
-
-### [Get-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization](Get-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization.md)
-Get the user synchronization policy of a partner-specific configuration.
 
 ### [Get-MgPolicyDefaultAppManagementPolicy](Get-MgPolicyDefaultAppManagementPolicy.md)
 Read the properties of a tenantAppManagementPolicy object.
@@ -302,12 +287,6 @@ Get the number of the resource
 
 ### [Get-MgPolicyHomeRealmDiscoveryPolicy](Get-MgPolicyHomeRealmDiscoveryPolicy.md)
 Retrieve the properties and relationships of a homeRealmDiscoveryPolicy object.
-
-### [Get-MgPolicyHomeRealmDiscoveryPolicyApplyTo](Get-MgPolicyHomeRealmDiscoveryPolicyApplyTo.md)
-Get appliesTo from policies
-
-### [Get-MgPolicyHomeRealmDiscoveryPolicyApplyToCount](Get-MgPolicyHomeRealmDiscoveryPolicyApplyToCount.md)
-Get the number of the resource
 
 ### [Get-MgPolicyHomeRealmDiscoveryPolicyCount](Get-MgPolicyHomeRealmDiscoveryPolicyCount.md)
 Get the number of the resource
@@ -369,23 +348,11 @@ Get the number of the resource
 ### [Get-MgPolicyTokenIssuancePolicy](Get-MgPolicyTokenIssuancePolicy.md)
 The policy that specifies the characteristics of SAML tokens issued by Azure AD.
 
-### [Get-MgPolicyTokenIssuancePolicyApplyTo](Get-MgPolicyTokenIssuancePolicyApplyTo.md)
-Get appliesTo from policies
-
-### [Get-MgPolicyTokenIssuancePolicyApplyToCount](Get-MgPolicyTokenIssuancePolicyApplyToCount.md)
-Get the number of the resource
-
 ### [Get-MgPolicyTokenIssuancePolicyCount](Get-MgPolicyTokenIssuancePolicyCount.md)
 Get the number of the resource
 
 ### [Get-MgPolicyTokenLifetimePolicy](Get-MgPolicyTokenLifetimePolicy.md)
 Retrieve the properties and relationships of a tokenLifetimePolicy object.
-
-### [Get-MgPolicyTokenLifetimePolicyApplyTo](Get-MgPolicyTokenLifetimePolicyApplyTo.md)
-Get appliesTo from policies
-
-### [Get-MgPolicyTokenLifetimePolicyApplyToCount](Get-MgPolicyTokenLifetimePolicyApplyToCount.md)
-Get the number of the resource
 
 ### [Get-MgPolicyTokenLifetimePolicyCount](Get-MgPolicyTokenLifetimePolicyCount.md)
 Get the number of the resource
@@ -438,8 +405,8 @@ Retrieve a user's single FIDO2 Security Key Authentication Method object.
 ### [Get-MgUserAuthenticationFido2MethodCount](Get-MgUserAuthenticationFido2MethodCount.md)
 Get the number of the resource
 
-### [Get-MgUserAuthenticationMethod](Get-MgUserAuthenticationMethod.md)
-Represents all authentication methods registered to a user.
+### [Get-MgUserAuthenticationFido2MethodCount](Get-MgUserAuthenticationFido2MethodCount.md)
+Get the number of the resource
 
 ### [Get-MgUserAuthenticationMethodCount](Get-MgUserAuthenticationMethodCount.md)
 Get the number of the resource
@@ -705,10 +672,6 @@ Delete an identityApiConnector object.
 ### [Remove-MgIdentityB2XUserFlow](Remove-MgIdentityB2XUserFlow.md)
 Delete a b2xIdentityUserFlow object.
 
-### [Remove-MgIdentityB2XUserFlowIdentityProvider](Remove-MgIdentityB2XUserFlowIdentityProvider.md)
-Delete an identity provider from a b2xIdentityUserFlow object.
-For self-service sign-up user flows, the values can be `Google-OAUTH` or `Facebook-OAUTH`.
-
 ### [Remove-MgIdentityB2XUserFlowIdentityProviderByRef](Remove-MgIdentityB2XUserFlowIdentityProviderByRef.md)
 Delete ref of navigation property userFlowIdentityProviders for identity
 
@@ -801,9 +764,6 @@ Delete navigation property default for policies
 ### [Remove-MgPolicyCrossTenantAccessPolicyPartner](Remove-MgPolicyCrossTenantAccessPolicyPartner.md)
 Delete a partner-specific configuration in a cross-tenant access policy.
 If a configuration includes a user synchronization policy, you must first delete the user synchronization policy before you can delete the partner-specific configuration.
-
-### [Remove-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization](Remove-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization.md)
-Delete the user synchronization policy for a partner-specific configuration.
 
 ### [Remove-MgPolicyDefaultAppManagementPolicy](Remove-MgPolicyDefaultAppManagementPolicy.md)
 Delete navigation property defaultAppManagementPolicy for policies
@@ -1025,9 +985,6 @@ Update the default configuration of a cross-tenant access policy.
 
 ### [Update-MgPolicyCrossTenantAccessPolicyPartner](Update-MgPolicyCrossTenantAccessPolicyPartner.md)
 Update the properties of a partner-specific configuration.
-
-### [Update-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization](Update-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization.md)
-Update the user synchronization policy of a partner-specific configuration.
 
 ### [Update-MgPolicyDefaultAppManagementPolicy](Update-MgPolicyDefaultAppManagementPolicy.md)
 Update the properties of a tenantAppManagementPolicy object.

@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.People
 Module Guid: 17a9b184-8bc6-41b1-8585-4a42a419aff6
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people
@@ -11,14 +11,6 @@ Locale: en-US
 Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.Beta.People Cmdlets
-### [Get-MgBetaUserActivityStatistics](Get-MgBetaUserActivityStatistics.md)
-The collection of work activities that a user spent time on during and outside of working hours.
-Read-only.
-Nullable.
-
-### [Get-MgBetaUserAnalyticActivityStatisticsCount](Get-MgBetaUserAnalyticActivityStatisticsCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaUserPerson](Get-MgBetaUserPerson.md)
 Read-only.
 The most relevant people to the user.
@@ -148,9 +140,6 @@ Retrieve the properties and relationships of a personWebsite object from a user'
 ### [Get-MgBetaUserProfileWebsiteCount](Get-MgBetaUserProfileWebsiteCount.md)
 Get the number of the resource
 
-### [New-MgBetaUserActivityStatistics](New-MgBetaUserActivityStatistics.md)
-Create new navigation property to activityStatistics for users
-
 ### [New-MgBetaUserProfileAccount](New-MgBetaUserProfileAccount.md)
 Create a new userAccountInformation object in a user's profile.
 
@@ -207,9 +196,6 @@ Create a new webAccount object in a user's profile.
 
 ### [New-MgBetaUserProfileWebsite](New-MgBetaUserProfileWebsite.md)
 Create a new personWebsite object in a user's profile.
-
-### [Remove-MgBetaUserActivityStatistics](Remove-MgBetaUserActivityStatistics.md)
-Delete navigation property activityStatistics for users
 
 ### [Remove-MgBetaUserProfile](Remove-MgBetaUserProfile.md)
 Deletes a profile object from a user's account.
@@ -270,9 +256,6 @@ Delete a webAccount object from a user's profile.
 
 ### [Remove-MgBetaUserProfileWebsite](Remove-MgBetaUserProfileWebsite.md)
 Deletes a personWebsite object from a user's profile.
-
-### [Update-MgBetaUserActivityStatistics](Update-MgBetaUserActivityStatistics.md)
-Update the navigation property activityStatistics in users
 
 ### [Update-MgBetaUserProfile](Update-MgBetaUserProfile.md)
 Update the navigation property profile in users
