@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mginvitegroupdriveitem
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgInviteGroupDriveItem
 
 ## SYNOPSIS
-Sends a sharing invitation for a **driveItem**.\nA sharing invitation provides permissions to the recipients and optionally sends them an email with a [sharing link][].
+Sends a sharing invitation for a **driveItem**.nA sharing invitation provides permissions to the recipients and optionally sends them an email with a [sharing link][].
 
 ## SYNTAX
 
@@ -43,7 +43,7 @@ Invoke-MgInviteGroupDriveItem -InputObject <IGroupsIdentity>
 ```
 
 ## DESCRIPTION
-Sends a sharing invitation for a **driveItem**.\nA sharing invitation provides permissions to the recipients and optionally sends them an email with a [sharing link][].
+Sends a sharing invitation for a **driveItem**.nA sharing invitation provides permissions to the recipients and optionally sends them an email with a [sharing link][].
 
 ## EXAMPLES
 
