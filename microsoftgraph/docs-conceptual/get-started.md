@@ -64,7 +64,7 @@ Use the `Connect-MgGraph` command to sign in with the required scopes. You'll ne
 Connect-MgGraph -Scopes "User.Read.All","Group.ReadWrite.All"
 ```
 
-The command prompts you to go to a web page to sign in your credentials. Once you've done that, the command indicates success with a `Welcome To Microsoft Graph!` message. You only need to sign in once per session.
+The command prompts you to go to a web page to sign in with your credentials. Once you've done that, the command indicates success with a `Welcome To Microsoft Graph!` message. You only need to sign in once per session.
 
 > [!TIP]
 > You can add additional permissions by repeating the `Connect-MgGraph` command with the new permission scopes.
