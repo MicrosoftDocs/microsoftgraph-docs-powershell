@@ -1,33 +1,31 @@
 ---
 external help file:
 Module Name: Microsoft.Graph.Users.Functions
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusertodolisttaskdelta
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusermanagedappdiagnosticstatus
 schema: 2.0.0
 ---
 
-# Get-MgUserTodoListTaskDelta
+# Get-MgUserManagedAppDiagnosticStatus
 
 ## SYNOPSIS
-Invoke function delta
+Gets diagnostics validation status for a given user.
 
 ## SYNTAX
 
-### Delta (Default)
+### Get (Default)
 ```
-Get-MgUserTodoListTaskDelta -TodoTaskListId <String> -UserId <String> [-Filter <String>]
- [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-All]
- [-CountVariable <String>] [-PageSize <Int32>] [<CommonParameters>]
+Get-MgUserManagedAppDiagnosticStatus -UserId <String> [-Count] [-Filter <String>] [-Search <String>]
+ [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
 ```
 
-### DeltaViaIdentity
+### GetViaIdentity
 ```
-Get-MgUserTodoListTaskDelta -InputObject <IUsersFunctionsIdentity> [-Count] [-Filter <String>]
- [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [<CommonParameters>]
+Get-MgUserManagedAppDiagnosticStatus -InputObject <IUsersFunctionsIdentity> [-Count] [-Filter <String>]
+ [-Search <String>] [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke function delta
+Gets diagnostics validation status for a given user.
 
 ## EXAMPLES
 
@@ -36,55 +34,24 @@ Invoke function delta
 {{ Add code here }}
 ```
 
-{{ Add output here }}
+
 
 ### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
-{{ Add output here }}
+
 
 ## PARAMETERS
-
-### -All
-List all pages.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: Delta
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -Count
 Include count of items
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
-Parameter Sets: DeltaViaIdentity
+Parameter Sets: (All)
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -CountVariable
-Specifies a count of the total number of items in a collection.
-By default, this variable will be set in the global scope.
-
-```yaml
-Type: System.String
-Parameter Sets: Delta
-Aliases: CV
 
 Required: False
 Position: Named
@@ -114,43 +81,13 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
-Parameter Sets: DeltaViaIdentity
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -PageSize
-Sets the page size of results.
-
-```yaml
-Type: System.Int32
-Parameter Sets: Delta
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Property
-Select properties to be returned
-
-```yaml
-Type: System.String[]
-Parameter Sets: (All)
-Aliases: Select
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -184,36 +121,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Sort
-Order items by property values
-
-```yaml
-Type: System.String[]
-Parameter Sets: (All)
-Aliases: OrderBy
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -TodoTaskListId
-The unique identifier of todoTaskList
-
-```yaml
-Type: System.String
-Parameter Sets: Delta
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Top
 Show only the first n items
 
@@ -234,7 +141,7 @@ The unique identifier of user
 
 ```yaml
 Type: System.String
-Parameter Sets: Delta
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -253,7 +160,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTodoTask
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedAppDiagnosticStatus
 
 ## NOTES
 
