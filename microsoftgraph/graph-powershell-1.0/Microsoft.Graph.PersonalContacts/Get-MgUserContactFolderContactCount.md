@@ -1,33 +1,31 @@
 ---
 external help file:
 Module Name: Microsoft.Graph.PersonalContacts
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontactfolderchildfoldercontactphoto
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontactfoldercontactcount
 schema: 2.0.0
 ---
 
-# Get-MgUserContactFolderChildFolderContactPhoto
+# Get-MgUserContactFolderContactCount
 
 ## SYNOPSIS
-Optional contact picture.
-You can get or set a photo for a contact.
+Get the number of the resource
 
 ## SYNTAX
 
 ### Get (Default)
 ```
-Get-MgUserContactFolderChildFolderContactPhoto -ContactFolderId <String> -ContactFolderId1 <String>
- -ContactId <String> -UserId <String> [-Property <String[]>] [<CommonParameters>]
+Get-MgUserContactFolderContactCount -ContactFolderId <String> -UserId <String> [-Filter <String>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgUserContactFolderChildFolderContactPhoto -InputObject <IPersonalContactsIdentity> [-Property <String[]>]
+Get-MgUserContactFolderContactCount -InputObject <IPersonalContactsIdentity> [-Filter <String>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Optional contact picture.
-You can get or set a photo for a contact.
+Get the number of the resource
 
 ## EXAMPLES
 
@@ -36,14 +34,14 @@ You can get or set a photo for a contact.
 {{ Add code here }}
 ```
 
-{{ Add output here }}
+
 
 ### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
-{{ Add output here }}
+
 
 ## PARAMETERS
 
@@ -62,30 +60,15 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ContactFolderId1
-The unique identifier of contactFolder
+### -Filter
+Filter items by property values
 
 ```yaml
 Type: System.String
-Parameter Sets: Get
+Parameter Sets: (All)
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ContactId
-The unique identifier of contact
-
-```yaml
-Type: System.String
-Parameter Sets: Get
-Aliases:
-
-Required: True
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -105,21 +88,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Property
-Select properties to be returned
-
-```yaml
-Type: System.String[]
-Parameter Sets: (All)
-Aliases: Select
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -147,7 +115,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphProfilePhoto
+### System.Int32
 
 ## NOTES
 
