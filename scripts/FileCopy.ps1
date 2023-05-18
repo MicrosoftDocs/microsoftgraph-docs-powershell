@@ -86,17 +86,17 @@ function Copy-Files{
         }
         #Write-Host $source " = " $destination
      }else{
-	    Write-Host -ForegroundColor DarkYellow "Copying v1 markdown files to " $destination
+	    Write-Host -ForegroundColor DarkYellow "Copying v1 markdown files from " $DocPath
 	    Get-ChildItem $DocPath -Recurse -File | ForEach-Object {
         Write-Host "File $_"
         Copy-Item $_  -Destination $destination
       }
 	 }
      }
-    git config --global user.email "timwamalwa@gmail.com"
-    git config --global user.name "Timothy Wamalwa"
-    git add .
-    git commit -m "Imported files from powershell sdk"
+    # git config --global user.email "timwamalwa@gmail.com"
+    # git config --global user.name "Timothy Wamalwa"
+    # git add .
+    # git commit -m "Imported files from powershell sdk"
 }
 
 
