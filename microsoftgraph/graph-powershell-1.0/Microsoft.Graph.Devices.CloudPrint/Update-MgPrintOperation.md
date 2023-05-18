@@ -1,7 +1,7 @@
 ---
-external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
+external help file:
 Module Name: Microsoft.Graph.Devices.CloudPrint
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintoperation
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintoperation
 schema: 2.0.0
 ---
 
@@ -12,30 +12,30 @@ Update the navigation property operations in print
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### UpdateExpanded (Default)
 ```
 Update-MgPrintOperation -PrintOperationId <String> [-AdditionalProperties <Hashtable>]
- [-CreatedDateTime <DateTime>] [-Id <String>] [-Status <IMicrosoftGraphPrintOperationStatus>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-CreatedDateTime <DateTime>] [-Id <String>] [-Status <IMicrosoftGraphPrintOperationStatus>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
-### Update1
+### Update
 ```
-Update-MgPrintOperation -PrintOperationId <String> -BodyParameter <IMicrosoftGraphPrintOperation> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded1
-```
-Update-MgPrintOperation -InputObject <IDevicesCloudPrintIdentity> [-AdditionalProperties <Hashtable>]
- [-CreatedDateTime <DateTime>] [-Id <String>] [-Status <IMicrosoftGraphPrintOperationStatus>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgPrintOperation -PrintOperationId <String> -BodyParameter <IMicrosoftGraphPrintOperation> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity1
+### UpdateViaIdentity
 ```
 Update-MgPrintOperation -InputObject <IDevicesCloudPrintIdentity>
- -BodyParameter <IMicrosoftGraphPrintOperation> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPrintOperation> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgPrintOperation -InputObject <IDevicesCloudPrintIdentity> [-AdditionalProperties <Hashtable>]
+ [-CreatedDateTime <DateTime>] [-Id <String>] [-Status <IMicrosoftGraphPrintOperationStatus>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -43,14 +43,28 @@ Update the navigation property operations in print
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.Collections.Hashtable
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -62,11 +76,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 printOperation
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrintOperation
-Parameter Sets: Update1, UpdateViaIdentity1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintOperation
+Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -81,8 +95,8 @@ The DateTimeOffset when the operation was created.
 Read-only.
 
 ```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.DateTime
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -97,8 +111,8 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -110,11 +124,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDevicesCloudPrintIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
+Type: Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -124,27 +138,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -PrintOperationId
 The unique identifier of printOperation
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -156,11 +155,11 @@ Accept wildcard characters: False
 
 ### -Status
 printOperationStatus
-To construct, please use Get-Help -Online and see NOTES section for STATUS properties and create a hash table.
+To construct, see NOTES section for STATUS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrintOperationStatus
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintOperationStatus
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -174,7 +173,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -190,7 +189,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -207,10 +206,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintOperation
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintOperation
+
 ## NOTES
 
 ALIASES
@@ -220,7 +222,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPrintOperation>`: printOperation
+`BODYPARAMETER <IMicrosoftGraphPrintOperation>`: printOperation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CreatedDateTime <DateTime?>]`: The DateTimeOffset when the operation was created. Read-only.
@@ -229,9 +231,11 @@ BODYPARAMETER `<IMicrosoftGraphPrintOperation>`: printOperation
     - `[Description <String>]`: A human-readable description of the printOperation's current processing state. Read-only.
     - `[State <String>]`: printOperationProcessingState
 
-INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
+`INPUTOBJECT <IDevicesCloudPrintIdentity>`: Identity Parameter
   - `[GroupId <String>]`: The unique identifier of group
   - `[PrintConnectorId <String>]`: The unique identifier of printConnector
+  - `[PrintDocumentId <String>]`: The unique identifier of printDocument
+  - `[PrintJobId <String>]`: The unique identifier of printJob
   - `[PrintOperationId <String>]`: The unique identifier of printOperation
   - `[PrintServiceEndpointId <String>]`: The unique identifier of printServiceEndpoint
   - `[PrintServiceId <String>]`: The unique identifier of printService
@@ -242,9 +246,10 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
   - `[PrinterShareId <String>]`: The unique identifier of printerShare
   - `[UserId <String>]`: The unique identifier of user
 
-STATUS `<IMicrosoftGraphPrintOperationStatus>`: printOperationStatus
+`STATUS <IMicrosoftGraphPrintOperationStatus>`: printOperationStatus
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Description <String>]`: A human-readable description of the printOperation's current processing state. Read-only.
   - `[State <String>]`: printOperationProcessingState
 
 ## RELATED LINKS
+
