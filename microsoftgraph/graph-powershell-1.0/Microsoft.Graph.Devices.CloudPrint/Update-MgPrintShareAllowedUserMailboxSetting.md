@@ -1,7 +1,7 @@
 ---
-external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
+external help file:
 Module Name: Microsoft.Graph.Devices.CloudPrint
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintshareallowedusermailboxsetting
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintshareallowedusermailboxsetting
 schema: 2.0.0
 ---
 
@@ -19,13 +19,19 @@ Update-MgPrintShareAllowedUserMailboxSetting -PrinterShareId <String> -UserId <S
  [-AutomaticRepliesSetting <IMicrosoftGraphAutomaticRepliesSetting>] [-DateFormat <String>]
  [-DelegateMeetingMessageDeliveryOptions <String>] [-Language <IMicrosoftGraphLocaleInfo>]
  [-TimeFormat <String>] [-TimeZone <String>] [-UserPurpose <String>]
- [-WorkingHours <IMicrosoftGraphWorkingHours>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WorkingHours <IMicrosoftGraphWorkingHours>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgPrintShareAllowedUserMailboxSetting -PrinterShareId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphMailboxSettings1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMailboxSettings> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgPrintShareAllowedUserMailboxSetting -InputObject <IDevicesCloudPrintIdentity>
+ -BodyParameter <IMicrosoftGraphMailboxSettings> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -35,13 +41,7 @@ Update-MgPrintShareAllowedUserMailboxSetting -InputObject <IDevicesCloudPrintIde
  [-AutomaticRepliesSetting <IMicrosoftGraphAutomaticRepliesSetting>] [-DateFormat <String>]
  [-DelegateMeetingMessageDeliveryOptions <String>] [-Language <IMicrosoftGraphLocaleInfo>]
  [-TimeFormat <String>] [-TimeZone <String>] [-UserPurpose <String>]
- [-WorkingHours <IMicrosoftGraphWorkingHours>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgPrintShareAllowedUserMailboxSetting -InputObject <IDevicesCloudPrintIdentity>
- -BodyParameter <IMicrosoftGraphMailboxSettings1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WorkingHours <IMicrosoftGraphWorkingHours>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,13 +49,27 @@ Update property mailboxSettings value.
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -70,7 +84,7 @@ Accept wildcard characters: False
 Folder ID of an archive folder for the user.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -83,10 +97,10 @@ Accept wildcard characters: False
 
 ### -AutomaticRepliesSetting
 automaticRepliesSetting
-To construct, please use Get-Help -Online and see NOTES section for AUTOMATICREPLIESSETTING properties and create a hash table.
+To construct, see NOTES section for AUTOMATICREPLIESSETTING properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAutomaticRepliesSetting
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAutomaticRepliesSetting
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -99,10 +113,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 mailboxSettings
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMailboxSettings1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMailboxSettings
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -117,7 +131,7 @@ Accept wildcard characters: False
 The date format for the user's mailbox.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -132,7 +146,7 @@ Accept wildcard characters: False
 delegateMeetingMessageDeliveryOptions
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -145,11 +159,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDevicesCloudPrintIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -161,26 +175,11 @@ Accept wildcard characters: False
 
 ### -Language
 localeInfo
-To construct, please use Get-Help -Online and see NOTES section for LANGUAGE properties and create a hash table.
+To construct, see NOTES section for LANGUAGE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphLocaleInfo
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphLocaleInfo
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -194,8 +193,8 @@ Accept wildcard characters: False
 The unique identifier of printerShare
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -209,7 +208,7 @@ Accept wildcard characters: False
 The time format for the user's mailbox.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -224,7 +223,7 @@ Accept wildcard characters: False
 The default time zone for the user's mailbox.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -239,8 +238,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -251,10 +250,10 @@ Accept wildcard characters: False
 ```
 
 ### -UserPurpose
-.
+userPurpose
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -267,10 +266,10 @@ Accept wildcard characters: False
 
 ### -WorkingHours
 workingHours
-To construct, please use Get-Help -Online and see NOTES section for WORKINGHOURS properties and create a hash table.
+To construct, see NOTES section for WORKINGHOURS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWorkingHours
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWorkingHours
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -285,7 +284,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -301,7 +300,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -318,10 +317,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMailboxSettings1
+
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMailboxSettings
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMailboxSettings
+
 ## NOTES
 
 ALIASES
@@ -331,7 +333,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-AUTOMATICREPLIESSETTING `<IMicrosoftGraphAutomaticRepliesSetting>`: automaticRepliesSetting
+`AUTOMATICREPLIESSETTING <IMicrosoftGraphAutomaticRepliesSetting>`: automaticRepliesSetting
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ExternalAudience <String>]`: externalAudienceScope
   - `[ExternalReplyMessage <String>]`: The automatic reply to send to the specified external audience, if Status is AlwaysEnabled or Scheduled.
@@ -343,7 +345,7 @@ AUTOMATICREPLIESSETTING `<IMicrosoftGraphAutomaticRepliesSetting>`: automaticRep
   - `[ScheduledStartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
   - `[Status <String>]`: automaticRepliesStatus
 
-BODYPARAMETER `<IMicrosoftGraphMailboxSettings1>`: mailboxSettings
+`BODYPARAMETER <IMicrosoftGraphMailboxSettings>`: mailboxSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ArchiveFolder <String>]`: Folder ID of an archive folder for the user.
   - `[AutomaticRepliesSetting <IMicrosoftGraphAutomaticRepliesSetting>]`: automaticRepliesSetting
@@ -365,7 +367,7 @@ BODYPARAMETER `<IMicrosoftGraphMailboxSettings1>`: mailboxSettings
     - `[Locale <String>]`: A locale representation for the user, which includes the user's preferred language and country/region. For example, 'en-us'. The language component follows 2-letter codes as defined in ISO 639-1, and the country component follows 2-letter codes as defined in ISO 3166-1 alpha-2.
   - `[TimeFormat <String>]`: The time format for the user's mailbox.
   - `[TimeZone <String>]`: The default time zone for the user's mailbox.
-  - `[UserPurpose <String>]`: 
+  - `[UserPurpose <String>]`: userPurpose
   - `[WorkingHours <IMicrosoftGraphWorkingHours>]`: workingHours
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DaysOfWeek <String[]>]`: The days of the week on which the user works.
@@ -375,9 +377,11 @@ BODYPARAMETER `<IMicrosoftGraphMailboxSettings1>`: mailboxSettings
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Name <String>]`: The name of a time zone. It can be a standard time zone name such as 'Hawaii-Aleutian Standard Time', or 'Customized Time Zone' for a custom time zone.
 
-INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
+`INPUTOBJECT <IDevicesCloudPrintIdentity>`: Identity Parameter
   - `[GroupId <String>]`: The unique identifier of group
   - `[PrintConnectorId <String>]`: The unique identifier of printConnector
+  - `[PrintDocumentId <String>]`: The unique identifier of printDocument
+  - `[PrintJobId <String>]`: The unique identifier of printJob
   - `[PrintOperationId <String>]`: The unique identifier of printOperation
   - `[PrintServiceEndpointId <String>]`: The unique identifier of printServiceEndpoint
   - `[PrintServiceId <String>]`: The unique identifier of printService
@@ -388,12 +392,12 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
   - `[PrinterShareId <String>]`: The unique identifier of printerShare
   - `[UserId <String>]`: The unique identifier of user
 
-LANGUAGE `<IMicrosoftGraphLocaleInfo>`: localeInfo
+`LANGUAGE <IMicrosoftGraphLocaleInfo>`: localeInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: A name representing the user's locale in natural language, for example, 'English (United States)'.
   - `[Locale <String>]`: A locale representation for the user, which includes the user's preferred language and country/region. For example, 'en-us'. The language component follows 2-letter codes as defined in ISO 639-1, and the country component follows 2-letter codes as defined in ISO 3166-1 alpha-2.
 
-WORKINGHOURS `<IMicrosoftGraphWorkingHours>`: workingHours
+`WORKINGHOURS <IMicrosoftGraphWorkingHours>`: workingHours
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DaysOfWeek <String[]>]`: The days of the week on which the user works.
   - `[EndTime <String>]`: The time of the day that the user stops working.
@@ -403,3 +407,4 @@ WORKINGHOURS `<IMicrosoftGraphWorkingHours>`: workingHours
     - `[Name <String>]`: The name of a time zone. It can be a standard time zone name such as 'Hawaii-Aleutian Standard Time', or 'Customized Time Zone' for a custom time zone.
 
 ## RELATED LINKS
+
