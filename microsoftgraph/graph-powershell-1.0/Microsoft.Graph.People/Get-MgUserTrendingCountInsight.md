@@ -1,35 +1,30 @@
 ---
 external help file:
 Module Name: Microsoft.Graph.People
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.people/get-mgusersharedresourceinsight
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.people/get-mgusertrendingcountinsight
 schema: 2.0.0
 ---
 
-# Get-MgUserSharedResourceInsight
+# Get-MgUserTrendingCountInsight
 
 ## SYNOPSIS
-Used for navigating to the item that was shared.
-For file attachments, the type is fileAttachment.
-For linked attachments, the type is driveItem.
+Get the number of the resource
 
 ## SYNTAX
 
 ### Get (Default)
 ```
-Get-MgUserSharedResourceInsight -SharedInsightId <String> -UserId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+Get-MgUserTrendingCountInsight -UserId <String> [-Filter <String>] [-Search <String>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgUserSharedResourceInsight -InputObject <IPeopleIdentity> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+Get-MgUserTrendingCountInsight -InputObject <IPeopleIdentity> [-Filter <String>] [-Search <String>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Used for navigating to the item that was shared.
-For file attachments, the type is fileAttachment.
-For linked attachments, the type is driveItem.
+Get the number of the resource
 
 ## EXAMPLES
 
@@ -38,24 +33,24 @@ For linked attachments, the type is driveItem.
 {{ Add code here }}
 ```
 
-{{ Add output here }}
+
 
 ### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
-{{ Add output here }}
+
 
 ## PARAMETERS
 
-### -ExpandProperty
-Expand related entities
+### -Filter
+Filter items by property values
 
 ```yaml
-Type: System.String[]
+Type: System.String
 Parameter Sets: (All)
-Aliases: Expand
+Aliases:
 
 Required: False
 Position: Named
@@ -80,30 +75,15 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Property
-Select properties to be returned
-
-```yaml
-Type: System.String[]
-Parameter Sets: (All)
-Aliases: Select
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -SharedInsightId
-The unique identifier of sharedInsight
+### -Search
+Search items by search phrases
 
 ```yaml
 Type: System.String
-Parameter Sets: Get
+Parameter Sets: (All)
 Aliases:
 
-Required: True
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -134,7 +114,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### System.String
+### System.Int32
 
 ## NOTES
 
