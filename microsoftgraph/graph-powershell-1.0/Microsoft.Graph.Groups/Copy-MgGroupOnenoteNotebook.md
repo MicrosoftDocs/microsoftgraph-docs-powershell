@@ -1,62 +1,69 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/copy-mggrouponenotenotebook
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/copy-mggroupdrivelistcontenttypetodefaultcontentlocation
 schema: 2.0.0
 ---
 
-# Copy-MgGroupOnenoteNotebook
+# Copy-MgGroupDriveListContentTypeToDefaultContentLocation
 
 ## SYNOPSIS
-For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+Copy a file to a default content location in a [content type][contentType].
+The file can then be added as a default file or template via a POST operation.
 
 ## SYNTAX
 
 ### CopyExpanded (Default)
 ```
-Copy-MgGroupOnenoteNotebook -GroupId <String> -NotebookId <String> [-AdditionalProperties <Hashtable>]
- [-GroupId1 <String>] [-NotebookFolder <String>] [-RenameAs <String>] [-SiteCollectionId <String>]
- [-SiteId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CopyViaIdentityExpanded
-```
-Copy-MgGroupOnenoteNotebook [-GroupId <String>] -InputObject <IGroupsIdentity>
- [-AdditionalProperties <Hashtable>] [-NotebookFolder <String>] [-RenameAs <String>]
- [-SiteCollectionId <String>] [-SiteId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Copy-MgGroupDriveListContentTypeToDefaultContentLocation -ContentTypeId <String> -DriveId <String>
+ -GroupId <String> [-AdditionalProperties <Hashtable>] [-DestinationFileName <String>]
+ [-SourceFile <IMicrosoftGraphItemReference>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Copy
 ```
-Copy-MgGroupOnenoteNotebook -GroupId <String> -NotebookId <String>
- -BodyParameter <IPaths1Nalx8HGroupsGroupIdOnenoteNotebooksNotebookIdMicrosoftGraphCopynotebookPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Copy-MgGroupDriveListContentTypeToDefaultContentLocation -ContentTypeId <String> -DriveId <String>
+ -GroupId <String>
+ -BodyParameter <IPaths1R50Zw4GroupsGroupIdDrivesDriveIdListContenttypesContenttypeIdMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CopyViaIdentityExpanded
+```
+Copy-MgGroupDriveListContentTypeToDefaultContentLocation -InputObject <IGroupsIdentity>
+ [-AdditionalProperties <Hashtable>] [-DestinationFileName <String>]
+ [-SourceFile <IMicrosoftGraphItemReference>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CopyViaIdentity
 ```
-Copy-MgGroupOnenoteNotebook -InputObject <IGroupsIdentity>
- -BodyParameter <IPaths1Nalx8HGroupsGroupIdOnenoteNotebooksNotebookIdMicrosoftGraphCopynotebookPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Copy-MgGroupDriveListContentTypeToDefaultContentLocation -InputObject <IGroupsIdentity>
+ -BodyParameter <IPaths1R50Zw4GroupsGroupIdDrivesDriveIdListContenttypesContenttypeIdMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+Copy a file to a default content location in a [content type][contentType].
+The file can then be added as a default file or template via a POST operation.
 
 ## EXAMPLES
 
 ### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Users.Actions
+```powershell
+Import-Module Microsoft.Graph.Sites
 ```
 
 $params = @{
-	GroupId = "groupId-value"
-	RenameAs = "renameAs-value"
+	SourceFile = @{
+		SharepointIds = @{
+			ListId = "e2ecf63b-b0fd-48f7-a54a-d8c15479e3b0"
+			ListItemId = "2"
+		}
+	}
+	DestinationFileName = "newname.txt"
 }
 
-# A UPN can also be used as -UserId.
-Copy-MgUserOnenoteNotebook -UserId $userId -NotebookId $notebookId -BodyParameter $params
+Copy-MgSiteContentTypeToDefaultContentLocation -SiteId $siteId -ContentTypeId $contentTypeId -BodyParameter $params
 
 ## PARAMETERS
 
@@ -80,7 +87,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Nalx8HGroupsGroupIdOnenoteNotebooksNotebookIdMicrosoftGraphCopynotebookPostRequestbodyContentApplicationJsonSchema
+Type: IPaths1R50Zw4GroupsGroupIdDrivesDriveIdListContenttypesContenttypeIdMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Copy, CopyViaIdentity
 Aliases:
 
@@ -91,8 +98,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -GroupId
-The unique identifier of group
+### -ContentTypeId
+The unique identifier of contentType
 
 ```yaml
 Type: String
@@ -106,9 +113,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -DestinationFileName
+.
+
 ```yaml
 Type: String
-Parameter Sets: CopyViaIdentityExpanded
+Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -118,15 +128,30 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -GroupId1
-.
+### -DriveId
+The unique identifier of drive
 
 ```yaml
 Type: String
-Parameter Sets: CopyExpanded
+Parameter Sets: CopyExpanded, Copy
 Aliases:
 
-Required: False
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -GroupId
+The unique identifier of group
+
+```yaml
+Type: String
+Parameter Sets: CopyExpanded, Copy
+Aliases:
+
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -149,12 +174,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -NotebookFolder
-.
+### -PassThru
+Returns true when the command succeeds
 
 ```yaml
-Type: String
-Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
+Type: SwitchParameter
+Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -164,56 +189,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -NotebookId
-The unique identifier of notebook
+### -SourceFile
+itemReference
+To construct, see NOTES section for SOURCEFILE properties and create a hash table.
 
 ```yaml
-Type: String
-Parameter Sets: CopyExpanded, Copy
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -RenameAs
-.
-
-```yaml
-Type: String
-Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -SiteCollectionId
-.
-
-```yaml
-Type: String
-Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -SiteId
-.
-
-```yaml
-Type: String
+Type: IMicrosoftGraphItemReference
 Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
 Aliases:
 
@@ -261,63 +242,95 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths1Nalx8HGroupsGroupIdOnenoteNotebooksNotebookIdMicrosoftGraphCopynotebookPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.PowerShell.Models.IPaths1R50Zw4GroupsGroupIdDrivesDriveIdListContenttypesContenttypeIdMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnenoteOperation
+### System.Boolean
 ## NOTES
+
+ALIASES
+
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties.
-For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IPaths1Nalx8HGroupsGroupIdOnenoteNotebooksNotebookIdMicrosoftGraphCopynotebookPostRequestbodyContentApplicationJsonSchema\>: .
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[GroupId \<String\>\]: 
-  \[NotebookFolder \<String\>\]: 
-  \[RenameAs \<String\>\]: 
-  \[SiteCollectionId \<String\>\]: 
-  \[SiteId \<String\>\]: 
 
-INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
-  \[AttachmentId \<String\>\]: The unique identifier of attachment
-  \[ContentTypeId \<String\>\]: The unique identifier of contentType
-  \[ConversationId \<String\>\]: The unique identifier of conversation
-  \[ConversationThreadId \<String\>\]: The unique identifier of conversationThread
-  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
-  \[DocumentSetVersionId \<String\>\]: The unique identifier of documentSetVersion
-  \[DriveId \<String\>\]: The unique identifier of drive
-  \[DriveItemId \<String\>\]: The unique identifier of driveItem
-  \[DriveItemVersionId \<String\>\]: The unique identifier of driveItemVersion
-  \[EndDateTime \<String\>\]: Usage: endDateTime='{endDateTime}'
-  \[EventId \<String\>\]: The unique identifier of event
-  \[ExtensionId \<String\>\]: The unique identifier of extension
-  \[GroupId \<String\>\]: The unique identifier of group
-  \[GroupLifecyclePolicyId \<String\>\]: The unique identifier of groupLifecyclePolicy
-  \[GroupSettingId \<String\>\]: The unique identifier of groupSetting
-  \[IncludePersonalNotebooks \<Boolean?\>\]: Usage: includePersonalNotebooks={includePersonalNotebooks}
-  \[Interval \<String\>\]: Usage: interval='{interval}'
-  \[ListId \<String\>\]: The unique identifier of list
-  \[ListItemId \<String\>\]: The unique identifier of listItem
-  \[ListItemVersionId \<String\>\]: The unique identifier of listItemVersion
-  \[MultiValueLegacyExtendedPropertyId \<String\>\]: The unique identifier of multiValueLegacyExtendedProperty
-  \[NotebookId \<String\>\]: The unique identifier of notebook
-  \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
-  \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
-  \[Path \<String\>\]: Usage: path='{path}'
-  \[PermissionId \<String\>\]: The unique identifier of permission
-  \[PostId \<String\>\]: The unique identifier of post
-  \[ProfilePhotoId \<String\>\]: The unique identifier of profilePhoto
-  \[Q \<String\>\]: Usage: q='{q}'
-  \[ResourceSpecificPermissionGrantId \<String\>\]: The unique identifier of resourceSpecificPermissionGrant
-  \[SingleValueLegacyExtendedPropertyId \<String\>\]: The unique identifier of singleValueLegacyExtendedProperty
-  \[SiteId \<String\>\]: The unique identifier of site
-  \[StartDateTime \<String\>\]: Usage: startDateTime='{startDateTime}'
-  \[SubscriptionId \<String\>\]: The unique identifier of subscription
-  \[Token \<String\>\]: Usage: token='{token}'
-  \[User \<String\>\]: Usage: User='{User}'
+`BODYPARAMETER <IPaths1R50Zw4GroupsGroupIdDrivesDriveIdListContenttypesContenttypeIdMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[DestinationFileName <String>]`: 
+  - `[SourceFile <IMicrosoftGraphItemReference>]`: itemReference
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DriveId <String>]`: Unique identifier of the drive instance that contains the driveItem. Only returned if the item is located in a [drive][]. Read-only.
+    - `[DriveType <String>]`: Identifies the type of drive. Only returned if the item is located in a [drive][]. See [drive][] resource for values.
+    - `[Id <String>]`: Unique identifier of the driveItem in the drive or a listItem in a list. Read-only.
+    - `[Name <String>]`: The name of the item being referenced. Read-only.
+    - `[Path <String>]`: Path that can be used to navigate to the item. Read-only.
+    - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the [Shares][] API.
+    - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[ListId <String>]`: The unique identifier (guid) for the item's list in SharePoint.
+      - `[ListItemId <String>]`: An integer identifier for the item within the containing list.
+      - `[ListItemUniqueId <String>]`: The unique identifier (guid) for the item within OneDrive for Business or a SharePoint site.
+      - `[SiteId <String>]`: The unique identifier (guid) for the item's site collection (SPSite).
+      - `[SiteUrl <String>]`: The SharePoint URL for the site that contains the item.
+      - `[TenantId <String>]`: The unique identifier (guid) for the tenancy.
+      - `[WebId <String>]`: The unique identifier (guid) for the item's site (SPWeb).
+    - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource or the parent list of the listItem resource. The value is the same as the id property of that [site][] resource. It is an opaque string that consists of three identifiers of the site. For OneDrive, this property is not populated.
+
+`INPUTOBJECT <IGroupsIdentity>`: Identity Parameter
+  - `[AttachmentId <String>]`: The unique identifier of attachment
+  - `[ContentTypeId <String>]`: The unique identifier of contentType
+  - `[ConversationId <String>]`: The unique identifier of conversation
+  - `[ConversationThreadId <String>]`: The unique identifier of conversationThread
+  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
+  - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
+  - `[DriveId <String>]`: The unique identifier of drive
+  - `[DriveItemId <String>]`: The unique identifier of driveItem
+  - `[DriveItemVersionId <String>]`: The unique identifier of driveItemVersion
+  - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
+  - `[EventId <String>]`: The unique identifier of event
+  - `[ExtensionId <String>]`: The unique identifier of extension
+  - `[GroupId <String>]`: The unique identifier of group
+  - `[GroupLifecyclePolicyId <String>]`: The unique identifier of groupLifecyclePolicy
+  - `[GroupSettingId <String>]`: The unique identifier of groupSetting
+  - `[GroupSettingTemplateId <String>]`: The unique identifier of groupSettingTemplate
+  - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
+  - `[Interval <String>]`: Usage: interval='{interval}'
+  - `[ListId <String>]`: The unique identifier of list
+  - `[ListItemId <String>]`: The unique identifier of listItem
+  - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
+  - `[NotebookId <String>]`: The unique identifier of notebook
+  - `[OnenotePageId <String>]`: The unique identifier of onenotePage
+  - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
+  - `[Path <String>]`: Usage: path='{path}'
+  - `[PermissionId <String>]`: The unique identifier of permission
+  - `[PostId <String>]`: The unique identifier of post
+  - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
+  - `[Q <String>]`: Usage: q='{q}'
+  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
+  - `[SiteId <String>]`: The unique identifier of site
+  - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
+  - `[SubscriptionId <String>]`: The unique identifier of subscription
+  - `[Token <String>]`: Usage: token='{token}'
+  - `[User <String>]`: Usage: User='{User}'
+
+`SOURCEFILE <IMicrosoftGraphItemReference>`: itemReference
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[DriveId <String>]`: Unique identifier of the drive instance that contains the driveItem. Only returned if the item is located in a [drive][]. Read-only.
+  - `[DriveType <String>]`: Identifies the type of drive. Only returned if the item is located in a [drive][]. See [drive][] resource for values.
+  - `[Id <String>]`: Unique identifier of the driveItem in the drive or a listItem in a list. Read-only.
+  - `[Name <String>]`: The name of the item being referenced. Read-only.
+  - `[Path <String>]`: Path that can be used to navigate to the item. Read-only.
+  - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the [Shares][] API.
+  - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[ListId <String>]`: The unique identifier (guid) for the item's list in SharePoint.
+    - `[ListItemId <String>]`: An integer identifier for the item within the containing list.
+    - `[ListItemUniqueId <String>]`: The unique identifier (guid) for the item within OneDrive for Business or a SharePoint site.
+    - `[SiteId <String>]`: The unique identifier (guid) for the item's site collection (SPSite).
+    - `[SiteUrl <String>]`: The SharePoint URL for the site that contains the item.
+    - `[TenantId <String>]`: The unique identifier (guid) for the tenancy.
+    - `[WebId <String>]`: The unique identifier (guid) for the item's site (SPWeb).
+  - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource or the parent list of the listItem resource. The value is the same as the id property of that [site][] resource. It is an opaque string that consists of three identifiers of the site. For OneDrive, this property is not populated.
 
 ## RELATED LINKS
-
-[https://learn.microsoft.com/powershell/module/microsoft.graph.groups/copy-mggrouponenotenotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/copy-mggrouponenotenotebook)
-

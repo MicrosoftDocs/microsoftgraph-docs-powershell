@@ -17,7 +17,7 @@ Make sure you do not specify the same user or group in the accepted senders and 
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaGroupAcceptedSenderByRef -GroupId <String> [-AdditionalProperties <Hashtable>] [-OdataId <String>]
+New-MgBetaGroupAcceptedSenderByRef -GroupId <String> -OdataId <String> [-AdditionalProperties <Hashtable>]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -29,8 +29,8 @@ New-MgBetaGroupAcceptedSenderByRef -GroupId <String> -BodyParameter <IReferenceC
 
 ### CreateViaIdentityExpanded
 ```
-New-MgBetaGroupAcceptedSenderByRef -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
- [-OdataId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaGroupAcceptedSenderByRef -InputObject <IGroupsIdentity> -OdataId <String>
+ [-AdditionalProperties <Hashtable>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -129,7 +129,7 @@ Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False

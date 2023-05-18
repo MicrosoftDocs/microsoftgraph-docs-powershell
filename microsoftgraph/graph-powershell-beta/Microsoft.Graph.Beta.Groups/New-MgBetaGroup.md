@@ -45,9 +45,10 @@ New-MgBetaGroup [-AcceptedSenders <IMicrosoftGraphDirectoryObject[]>] [-AccessTy
  [-PreferredDataLocation <String>] [-PreferredLanguage <String>] [-ProxyAddresses <String[]>]
  [-RejectedSenders <IMicrosoftGraphDirectoryObject[]>] [-RenewedDateTime <DateTime>]
  [-ResourceBehaviorOptions <String[]>] [-ResourceProvisioningOptions <String[]>] [-SecurityEnabled]
- [-SecurityIdentifier <String>] [-Settings <IMicrosoftGraphDirectorySetting[]>]
- [-Sites <IMicrosoftGraphSite[]>] [-Team <IMicrosoftGraphTeam>] [-Theme <String>]
- [-Threads <IMicrosoftGraphConversationThread[]>] [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]
+ [-SecurityIdentifier <String>] [-ServiceProvisioningErrors <IMicrosoftGraphServiceProvisioningError[]>]
+ [-Settings <IMicrosoftGraphDirectorySetting[]>] [-Sites <IMicrosoftGraphSite[]>] [-Team <IMicrosoftGraphTeam>]
+ [-Theme <String>] [-Threads <IMicrosoftGraphConversationThread[]>]
+ [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]
  [-TransitiveMembers <IMicrosoftGraphDirectoryObject[]>] [-UnseenConversationsCount <Int32>]
  [-UnseenCount <Int32>] [-UnseenMessagesCount <Int32>] [-Visibility <String>]
  [-WritebackConfiguration <IMicrosoftGraphGroupWritebackConfiguration>] [-WhatIf] [-Confirm]
@@ -1302,6 +1303,22 @@ Returned by default.
 
 ```yaml
 Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ServiceProvisioningErrors
+.
+To construct, see NOTES section for SERVICEPROVISIONINGERRORS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphServiceProvisioningError[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -25921,6 +25938,9 @@ To create the parameters described below, construct a hash table containing the 
   - `[OnPremisesGroupType <String>]`: Indicates the target on-premise group type the cloud object will be written back as. Nullable. The possible values are: universalDistributionGroup, universalSecurityGroup, universalMailEnabledSecurityGroup.If the cloud group is a unified (Microsoft 365) group, this property can be one of the following: universalDistributionGroup, universalSecurityGroup, universalMailEnabledSecurityGroup. Azure AD security groups can be written back as universalSecurityGroup. If isEnabled or the NewUnifiedGroupWritebackDefault group setting is true but this property is not explicitly configured: Microsoft 365 groups will be written back as universalDistributionGroup by defaultSecurity groups will be written back as universalSecurityGroup by default
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS
 

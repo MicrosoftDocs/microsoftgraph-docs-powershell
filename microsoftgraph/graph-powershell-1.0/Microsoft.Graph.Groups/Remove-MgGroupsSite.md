@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupssite
@@ -8452,3 +8452,4 @@ This relationship can only be used to load a specific term set.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupssite](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupssite)
 
+## RELATED LINKS

@@ -42,6 +42,9 @@ This method is part of the content type publishing changes to optimize the synci
 The method allows users to pull content types directly from the content type hub to a site or list.
 For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
 
+### [Add-MgGroupsSite](Add-MgGroupsSite.md)
+Follow a user's site or multiple sites.
+
 ### [Add-MgGroupToLifecyclePolicy](Add-MgGroupToLifecyclePolicy.md)
 Invoke action addGroup
 
@@ -63,6 +66,28 @@ Invoke action checkMemberObjects
 ### [Copy-MgGroupDriveListContentTypeToDefaultContentLocation](Copy-MgGroupDriveListContentTypeToDefaultContentLocation.md)
 Copy a file to a default content location in a [content type][contentType].
 The file can then be added as a default file or template via a POST operation.
+
+### [Copy-MgGroupDriveListContentTypeToDefaultContentLocation](Copy-MgGroupDriveListContentTypeToDefaultContentLocation.md)
+Copy a file to a default content location in a [content type][contentType].
+The file can then be added as a default file or template via a POST operation.
+
+### [Copy-MgGroupDriveListContentTypeToDefaultContentLocation](Copy-MgGroupDriveListContentTypeToDefaultContentLocation.md)
+Copy a file to a default content location in a [content type][contentType].
+The file can then be added as a default file or template via a POST operation.
+
+### [Copy-MgGroupDriveListContentTypeToDefaultContentLocation](Copy-MgGroupDriveListContentTypeToDefaultContentLocation.md)
+Copy a file to a default content location in a [content type][contentType].
+The file can then be added as a default file or template via a POST operation.
+
+### [Copy-MgGroupDriveListContentTypeToDefaultContentLocation](Copy-MgGroupDriveListContentTypeToDefaultContentLocation.md)
+Copy a file to a default content location in a [content type][contentType].
+The file can then be added as a default file or template via a POST operation.
+
+### [Copy-MgGroupsDrivesItem](Copy-MgGroupsDrivesItem.md)
+Asynchronously creates a copy of an \[driveItem\]\[item-resource\] (including any children), under a new parent item or with a new name.
+
+### [Copy-MgGroupsDrivesRoot](Copy-MgGroupsDrivesRoot.md)
+Asynchronously creates a copy of an \[driveItem\]\[item-resource\] (including any children), under a new parent item or with a new name.
 
 ### [Copy-MgGroupSiteContentTypeToDefaultContentLocation](Copy-MgGroupSiteContentTypeToDefaultContentLocation.md)
 Copy a file to a default content location in a [content type][contentType].
@@ -217,6 +242,13 @@ Nullable.
 Supports $expand including nested $select.
 For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=members($select=id,userPrincipalName,displayName).
 
+### [Get-MgGroupMemberByRef](Get-MgGroupMemberByRef.md)
+The members of this group, who can be users, devices, other groups, or service principals.
+Supports the List members, Add member, and Remove member operations.
+Nullable.
+Supports $expand including nested $select.
+For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=members($select=id,userPrincipalName,displayName).
+
 ### [Get-MgGroupMemberObject](Get-MgGroupMemberObject.md)
 Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
 This function is transitive.
@@ -228,6 +260,10 @@ HTTP Methods: GET (supported for all groups).
 Read-only.
 Nullable.
 Supports $expand.
+
+### [Get-MgGroupMemberWithLicenseError](Get-MgGroupMemberWithLicenseError.md)
+A list of group members with license errors from this group-based license assignment.
+Read-only.
 
 ### [Get-MgGroupMemberWithLicenseError](Get-MgGroupMemberWithLicenseError.md)
 A list of group members with license errors from this group-based license assignment.
@@ -366,6 +402,27 @@ Nullable.
 ### [Get-MgGroupTransitiveMemberOf](Get-MgGroupTransitiveMemberOf.md)
 The groups that a group is a member of, either directly and through nested membership.
 Nullable.
+
+### [Grant-MgGroupsDrivesItemsPermission](Grant-MgGroupsDrivesItemsPermission.md)
+Grant users access to a link represented by a \[permission\]\[\].
+
+### [Grant-MgGroupsDrivesRootPermission](Grant-MgGroupsDrivesRootPermission.md)
+Grant users access to a link represented by a \[permission\]\[\].
+
+### [Grant-MgGroupsSitesPermission](Grant-MgGroupsSitesPermission.md)
+Grant users access to a link represented by a \[permission\]\[\].
+
+### [Grant-MgGroupsSitesPermission](Grant-MgGroupsSitesPermission.md)
+Grant users access to a link represented by a \[permission\]\[\].
+
+### [Grant-MgGroupsSitesPermission](Grant-MgGroupsSitesPermission.md)
+Grant users access to a link represented by a \[permission\]\[\].
+
+### [Grant-MgGroupsSitesPermission](Grant-MgGroupsSitesPermission.md)
+Grant users access to a link represented by a \[permission\]\[\].
+
+### [Grant-MgGroupsSitesPermission](Grant-MgGroupsSitesPermission.md)
+Grant users access to a link represented by a \[permission\]\[\].
 
 ### [Invoke-MgCalendarGroupCalendar](Invoke-MgCalendarGroupCalendar.md)
 Invoke function allowedCalendarSharingRoles
@@ -684,6 +741,15 @@ Create new navigation property to multiValueExtendedProperties for groups
 ### [New-MgGroupThreadPostSingleValueExtendedProperty](New-MgGroupThreadPostSingleValueExtendedProperty.md)
 Create new navigation property to singleValueExtendedProperties for groups
 
+### [Publish-MgGroupsDrivesListContentType](Publish-MgGroupsDrivesListContentType.md)
+Publishes a \[contentType\]\[\] present in the content type hub site.
+
+### [Publish-MgGroupsSitesContentType](Publish-MgGroupsSitesContentType.md)
+Publishes a \[contentType\]\[\] present in the content type hub site.
+
+### [Publish-MgGroupsSitesListsContentType](Publish-MgGroupsSitesListsContentType.md)
+Publishes a \[contentType\]\[\] present in the content type hub site.
+
 ### [Remove-MgGroup](Remove-MgGroup.md)
 Delete group.
 When deleted, Microsoft 365 groups are moved to a temporary container and can be restored within 30 days.
@@ -759,6 +825,9 @@ Remove rejectedSender
 ### [Remove-MgGroupSetting](Remove-MgGroupSetting.md)
 Delete navigation property settings for groups
 
+### [Remove-MgGroupsSite](Remove-MgGroupsSite.md)
+Unfollow a user's site or multiple sites.
+
 ### [Remove-MgGroupThread](Remove-MgGroupThread.md)
 Delete conversationThread.
 
@@ -810,9 +879,45 @@ This will create a new version with the contents of the previous version, but pr
 Restore a previous version of a DriveItem to be the current version.
 This will create a new version with the contents of the previous version, but preserves all existing versions of the file.
 
+### [Restore-MgGroupsDrivesItem](Restore-MgGroupsDrivesItem.md)
+Restore a driveItem that has been deleted and is currently in the recycle bin.
+**NOTE**: This functionality is currently only available for OneDrive Personal.
+
+### [Restore-MgGroupsDrivesItemsListItemDocumentSetVersion](Restore-MgGroupsDrivesItemsListItemDocumentSetVersion.md)
+Restore a document set version.
+
+### [Restore-MgGroupsDrivesListItemsDocumentSetVersion](Restore-MgGroupsDrivesListItemsDocumentSetVersion.md)
+Restore a document set version.
+
+### [Restore-MgGroupsDrivesRoot](Restore-MgGroupsDrivesRoot.md)
+Restore a driveItem that has been deleted and is currently in the recycle bin.
+**NOTE**: This functionality is currently only available for OneDrive Personal.
+
+### [Restore-MgGroupsDrivesRootListItemDocumentSetVersion](Restore-MgGroupsDrivesRootListItemDocumentSetVersion.md)
+Restore a document set version.
+
 ### [Restore-MgGroupSiteListItemVersion](Restore-MgGroupSiteListItemVersion.md)
 Restore a previous version of a ListItem to be the current version.
 This will create a new version with the contents of the previous version, but preserves all existing versions of the item.
+
+### [Restore-MgGroupsPermissionGrant](Restore-MgGroupsPermissionGrant.md)
+Restore a recently deleted application, group, servicePrincipal, administrative unit, or user object from deleted items.
+If an item was accidentally deleted, you can fully restore the item.
+This is not applicable to security groups, which are deleted permanently.
+A recently deleted item will remain available for up to 30 days.
+After 30 days, the item is permanently deleted.
+
+### [Restore-MgGroupsSitesListsItemsDocumentSetVersion](Restore-MgGroupsSitesListsItemsDocumentSetVersion.md)
+Restore a document set version.
+
+### [Search-MgGroupsDrive](Search-MgGroupsDrive.md)
+Invoke function search
+
+### [Search-MgGroupsDrivesItem](Search-MgGroupsDrivesItem.md)
+Invoke function search
+
+### [Search-MgGroupsDrivesRoot](Search-MgGroupsDrivesRoot.md)
+Invoke function search
 
 ### [Set-MgGroupLicense](Set-MgGroupLicense.md)
 Add or remove licenses on the group.
@@ -822,6 +927,20 @@ To get the subscriptions available in the directory, perform a GET subscribedSku
 
 ### [Set-MgGroupPhotoContent](Set-MgGroupPhotoContent.md)
 Update media content for the navigation property photo in groups
+
+### [Stop-MgGroupsCalendarEvent](Stop-MgGroupsCalendarEvent.md)
+This action allows the organizer of a meeting to send a cancellation message and cancel the event.
+The action moves the event to the Deleted Items folder.
+The organizer can also cancel an occurrence of a recurring meeting \nby providing the occurrence event ID.
+An attendee calling this action gets an error (HTTP 400 Bad Request), with the following\nerror message: 'Your request can't be completed.
+You need to be an organizer to cancel a meeting.' This action differs from Delete in that **Cancel** is available to only the organizer, and lets\nthe organizer send a custom message to the attendees about the cancellation.
+
+### [Stop-MgGroupsEvent](Stop-MgGroupsEvent.md)
+This action allows the organizer of a meeting to send a cancellation message and cancel the event.
+The action moves the event to the Deleted Items folder.
+The organizer can also cancel an occurrence of a recurring meeting \nby providing the occurrence event ID.
+An attendee calling this action gets an error (HTTP 400 Bad Request), with the following\nerror message: 'Your request can't be completed.
+You need to be an organizer to cancel a meeting.' This action differs from Delete in that **Cancel** is available to only the organizer, and lets\nthe organizer send a custom message to the attendees about the cancellation.
 
 ### [Test-MgGroupDriveItemPermission](Test-MgGroupDriveItemPermission.md)
 Invoke action validatePermission
@@ -858,6 +977,15 @@ Invoke function isPublished
 
 ### [Test-MgGroupSiteListContentTypePublished](Test-MgGroupSiteListContentTypePublished.md)
 Invoke function isPublished
+
+### [Unpublish-MgGroupsDrivesListContentType](Unpublish-MgGroupsDrivesListContentType.md)
+Unpublish a \[contentType\]\[\] from a content type hub site.
+
+### [Unpublish-MgGroupsSitesContentType](Unpublish-MgGroupsSitesContentType.md)
+Unpublish a \[contentType\]\[\] from a content type hub site.
+
+### [Unpublish-MgGroupsSitesListsContentType](Unpublish-MgGroupsSitesListsContentType.md)
+Unpublish a \[contentType\]\[\] from a content type hub site.
 
 ### [Update-MgGroup](Update-MgGroup.md)
 Update the properties of a group object.

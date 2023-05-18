@@ -1,60 +1,58 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgacceptgroupevent
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/grant-mggroupssitespermission
 schema: 2.0.0
 ---
 
-# Invoke-MgAcceptGroupEvent
+# Grant-MgGroupsSitesPermission
 
 ## SYNOPSIS
-Accept the specified event in a user calendar.
+Grant users access to a link represented by a \[permission\]\[\].
 
 ## SYNTAX
 
-### AcceptExpanded (Default)
+### GrantExpanded (Default)
 ```
-Invoke-MgAcceptGroupEvent -EventId <String> -GroupId <String> [-AdditionalProperties <Hashtable>]
- [-Comment <String>] [-SendResponse] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Accept
-```
-Invoke-MgAcceptGroupEvent -EventId <String> -GroupId <String>
- -BodyParameter <IPathsEy6J5AGroupsGroupIdEventsEventIdMicrosoftGraphAcceptPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Grant-MgGroupsSitesPermission -GroupId <String> -PermissionId <String> -SiteId <String>
+ [-AdditionalProperties <Hashtable>] [-Recipients <IMicrosoftGraphDriveRecipient[]>] [-Roles <String[]>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### AcceptViaIdentityExpanded
+### Grant
 ```
-Invoke-MgAcceptGroupEvent -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
- [-Comment <String>] [-SendResponse] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Grant-MgGroupsSitesPermission -GroupId <String> -PermissionId <String> -SiteId <String>
+ -BodyParameter <IPaths1Bir9OcGroupsGroupIdSitesSiteIdPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### AcceptViaIdentity
+### GrantViaIdentityExpanded
 ```
-Invoke-MgAcceptGroupEvent -InputObject <IGroupsIdentity>
- -BodyParameter <IPathsEy6J5AGroupsGroupIdEventsEventIdMicrosoftGraphAcceptPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Grant-MgGroupsSitesPermission -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
+ [-Recipients <IMicrosoftGraphDriveRecipient[]>] [-Roles <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### GrantViaIdentity
+```
+Grant-MgGroupsSitesPermission -InputObject <IGroupsIdentity>
+ -BodyParameter <IPaths1Bir9OcGroupsGroupIdSitesSiteIdPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Accept the specified event in a user calendar.
+Grant users access to a link represented by a \[permission\]\[\].
 
 ## EXAMPLES
 
 ### EXAMPLE 1
 ```
-Import-Module Microsoft.Graph.Users.Actions
+{{ Add code here }}
 ```
 
-$params = @{
-	Comment = "comment-value"
-	SendResponse = $true
-}
-
-# A UPN can also be used as -UserId.
-Invoke-MgAcceptUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -63,7 +61,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: AcceptExpanded, AcceptViaIdentityExpanded
+Parameter Sets: GrantExpanded, GrantViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -78,8 +76,8 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsEy6J5AGroupsGroupIdEventsEventIdMicrosoftGraphAcceptPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Accept, AcceptViaIdentity
+Type: IPaths1Bir9OcGroupsGroupIdSitesSiteIdPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Grant, GrantViaIdentity
 Aliases:
 
 Required: True
@@ -89,42 +87,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Comment
-.
-
-```yaml
-Type: String
-Parameter Sets: AcceptExpanded, AcceptViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -EventId
-The unique identifier of event
-
-```yaml
-Type: String
-Parameter Sets: AcceptExpanded, Accept
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -GroupId
 The unique identifier of group
 
 ```yaml
 Type: String
-Parameter Sets: AcceptExpanded, Accept
+Parameter Sets: GrantExpanded, Grant
 Aliases:
 
 Required: True
@@ -140,7 +108,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IGroupsIdentity
-Parameter Sets: AcceptViaIdentityExpanded, AcceptViaIdentity
+Parameter Sets: GrantViaIdentityExpanded, GrantViaIdentity
 Aliases:
 
 Required: True
@@ -150,32 +118,63 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
+### -PermissionId
+The unique identifier of permission
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
+Type: String
+Parameter Sets: GrantExpanded, Grant
 Aliases:
 
-Required: False
+Required: True
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -SendResponse
+### -Recipients
 .
+To construct, see NOTES section for RECIPIENTS properties and create a hash table.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: AcceptExpanded, AcceptViaIdentityExpanded
+Type: IMicrosoftGraphDriveRecipient[]
+Parameter Sets: GrantExpanded, GrantViaIdentityExpanded
 Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Roles
+.
+
+```yaml
+Type: String[]
+Parameter Sets: GrantExpanded, GrantViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SiteId
+The unique identifier of site
+
+```yaml
+Type: String
+Parameter Sets: GrantExpanded, Grant
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -217,20 +216,24 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-### Microsoft.Graph.PowerShell.Models.IPathsEy6J5AGroupsGroupIdEventsEventIdMicrosoftGraphAcceptPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.PowerShell.Models.IPaths1Bir9OcGroupsGroupIdSitesSiteIdPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPermission
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IPathsEy6J5AGroupsGroupIdEventsEventIdMicrosoftGraphAcceptPostRequestbodyContentApplicationJsonSchema\>: .
+BODYPARAMETER \<IPaths1Bir9OcGroupsGroupIdSitesSiteIdPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema\>: .
   \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Comment \<String\>\]: 
-  \[SendResponse \<Boolean?\>\]: 
+  \[Recipients \<IMicrosoftGraphDriveRecipient\[\]\>\]: 
+    \[Alias \<String\>\]: The alias of the domain object, for cases where an email address is unavailable (e.g.
+security groups).
+    \[Email \<String\>\]: The email address for the recipient, if the recipient has an associated email address.
+    \[ObjectId \<String\>\]: The unique identifier for the recipient in the directory.
+  \[Roles \<String\[\]\>\]: 
 
 INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[AttachmentId \<String\>\]: The unique identifier of attachment
@@ -270,7 +273,13 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[Token \<String\>\]: Usage: token='{token}'
   \[User \<String\>\]: Usage: User='{User}'
 
+RECIPIENTS \<IMicrosoftGraphDriveRecipient\[\]\>: .
+  \[Alias \<String\>\]: The alias of the domain object, for cases where an email address is unavailable (e.g.
+security groups).
+  \[Email \<String\>\]: The email address for the recipient, if the recipient has an associated email address.
+  \[ObjectId \<String\>\]: The unique identifier for the recipient in the directory.
+
 ## RELATED LINKS
 
-[https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgacceptgroupevent](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgacceptgroupevent)
+[https://learn.microsoft.com/powershell/module/microsoft.graph.groups/grant-mggroupssitespermission](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/grant-mggroupssitespermission)
 

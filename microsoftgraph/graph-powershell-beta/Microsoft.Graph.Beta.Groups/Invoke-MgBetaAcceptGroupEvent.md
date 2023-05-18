@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgBetaAcceptGroupEvent
 
 ## SYNOPSIS
-Accept the specified event in a user calendar.
+Invoke action accept
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ Invoke-MgBetaAcceptGroupEvent -InputObject <IGroupsIdentity>
 ```
 
 ## DESCRIPTION
-Accept the specified event in a user calendar.
+Invoke action accept
 
 ## EXAMPLES
 
@@ -263,6 +263,8 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
   \[Path \<String\>\]: Usage: path='{path}'
   \[PermissionId \<String\>\]: The unique identifier of permission
+  \[PlannerBucketId \<String\>\]: The unique identifier of plannerBucket
+  \[PlannerPlanId \<String\>\]: The unique identifier of plannerPlan
   \[PostId \<String\>\]: The unique identifier of post
   \[ProfilePhotoId \<String\>\]: The unique identifier of profilePhoto
   \[Q \<String\>\]: Usage: q='{q}'

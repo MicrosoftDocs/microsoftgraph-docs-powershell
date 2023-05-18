@@ -17,7 +17,7 @@ Make sure you do not specify the same user or group in the rejected senders and 
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaGroupRejectedSenderByRef -GroupId <String> [-AdditionalProperties <Hashtable>] [-OdataId <String>]
+New-MgBetaGroupRejectedSenderByRef -GroupId <String> -OdataId <String> [-AdditionalProperties <Hashtable>]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -29,8 +29,8 @@ New-MgBetaGroupRejectedSenderByRef -GroupId <String> -BodyParameter <IReferenceC
 
 ### CreateViaIdentityExpanded
 ```
-New-MgBetaGroupRejectedSenderByRef -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
- [-OdataId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaGroupRejectedSenderByRef -InputObject <IGroupsIdentity> -OdataId <String>
+ [-AdditionalProperties <Hashtable>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -129,7 +129,7 @@ Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False

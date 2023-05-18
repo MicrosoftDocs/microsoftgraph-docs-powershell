@@ -15,7 +15,7 @@ The owners are a set of users or service principals who are allowed to modify th
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaGroupOwnerByRef -GroupId <String> [-AdditionalProperties <Hashtable>] [-OdataId <String>] [-PassThru]
+New-MgBetaGroupOwnerByRef -GroupId <String> -OdataId <String> [-AdditionalProperties <Hashtable>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -27,8 +27,8 @@ New-MgBetaGroupOwnerByRef -GroupId <String> -BodyParameter <IReferenceCreate> [-
 
 ### CreateViaIdentityExpanded
 ```
-New-MgBetaGroupOwnerByRef -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
- [-OdataId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaGroupOwnerByRef -InputObject <IGroupsIdentity> -OdataId <String> [-AdditionalProperties <Hashtable>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -125,7 +125,7 @@ Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
