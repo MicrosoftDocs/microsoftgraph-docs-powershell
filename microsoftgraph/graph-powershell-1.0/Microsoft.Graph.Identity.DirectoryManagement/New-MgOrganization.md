@@ -1,9 +1,8 @@
 ---
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgorganization
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgorganization
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # New-MgOrganization
@@ -13,7 +12,7 @@ Add new entity to organization
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
 New-MgOrganization [-AdditionalProperties <Hashtable>] [-AssignedPlans <IMicrosoftGraphAssignedPlan[]>]
  [-Branding <IMicrosoftGraphOrganizationalBranding>] [-BusinessPhones <String[]>]
@@ -26,12 +25,12 @@ New-MgOrganization [-AdditionalProperties <Hashtable>] [-AssignedPlans <IMicroso
  [-PrivacyProfile <IMicrosoftGraphPrivacyProfile>] [-ProvisionedPlans <IMicrosoftGraphProvisionedPlan[]>]
  [-SecurityComplianceNotificationMails <String[]>] [-SecurityComplianceNotificationPhones <String[]>]
  [-State <String>] [-Street <String>] [-TechnicalNotificationMails <String[]>] [-TenantType <String>]
- [-VerifiedDomains <IMicrosoftGraphVerifiedDomain[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-VerifiedDomains <IMicrosoftGraphVerifiedDomain[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
-New-MgOrganization -BodyParameter <IMicrosoftGraphOrganization1> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgOrganization -BodyParameter <IMicrosoftGraphOrganization> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -39,16 +38,12 @@ Add new entity to organization
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-
-Get-MgOrganization
 ```
 
-This example shows how to use the New-MgOrganization Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Get-MgOrganization
 
 ## PARAMETERS
 
@@ -56,8 +51,8 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CreateExpanded1
+Type: System.Collections.Hashtable
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -70,11 +65,11 @@ Accept wildcard characters: False
 ### -AssignedPlans
 The collection of service plans associated with the tenant.
 Not nullable.
-To construct, please use Get-Help -Online and see NOTES section for ASSIGNEDPLANS properties and create a hash table.
+To construct, see NOTES section for ASSIGNEDPLANS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAssignedPlan[]
-Parameter Sets: CreateExpanded1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAssignedPlan[]
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -86,11 +81,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 organization
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOrganization1
-Parameter Sets: Create1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOrganization
+Parameter Sets: Create
 Aliases:
 
 Required: True
@@ -102,11 +97,11 @@ Accept wildcard characters: False
 
 ### -Branding
 organizationalBranding
-To construct, please use Get-Help -Online and see NOTES section for BRANDING properties and create a hash table.
+To construct, see NOTES section for BRANDING properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOrganizationalBranding
-Parameter Sets: CreateExpanded1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOrganizationalBranding
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -121,8 +116,8 @@ Telephone number for the organization.
 Although this is a string collection, only one number can be set for this property.
 
 ```yaml
-Type: String[]
-Parameter Sets: CreateExpanded1
+Type: System.String[]
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -135,11 +130,11 @@ Accept wildcard characters: False
 ### -CertificateBasedAuthConfiguration
 Navigation property to manage certificate-based authentication configuration.
 Only a single instance of certificateBasedAuthConfiguration can be created in the collection.
-To construct, please use Get-Help -Online and see NOTES section for CERTIFICATEBASEDAUTHCONFIGURATION properties and create a hash table.
+To construct, see NOTES section for CERTIFICATEBASEDAUTHCONFIGURATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCertificateBasedAuthConfiguration[]
-Parameter Sets: CreateExpanded1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCertificateBasedAuthConfiguration[]
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -153,8 +148,8 @@ Accept wildcard characters: False
 City name of the address for the organization.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -168,8 +163,8 @@ Accept wildcard characters: False
 Country/region name of the address for the organization.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -183,8 +178,8 @@ Accept wildcard characters: False
 Country or region abbreviation for the organization in ISO 3166-2 format.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -202,8 +197,8 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
 
 ```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded1
+Type: System.DateTime
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -217,8 +212,8 @@ Accept wildcard characters: False
 Two-letter ISO 3166 country code indicating the default service usage location of an organization.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -233,8 +228,8 @@ Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
 ```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded1
+Type: System.DateTime
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -248,8 +243,8 @@ Accept wildcard characters: False
 The display name for the tenant.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -263,11 +258,11 @@ Accept wildcard characters: False
 The collection of open extensions defined for the organization.
 Read-only.
 Nullable.
-To construct, please use Get-Help -Online and see NOTES section for EXTENSIONS properties and create a hash table.
+To construct, see NOTES section for EXTENSIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExtension[]
-Parameter Sets: CreateExpanded1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExtension[]
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -282,8 +277,8 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -297,8 +292,8 @@ Accept wildcard characters: False
 Not nullable.
 
 ```yaml
-Type: String[]
-Parameter Sets: CreateExpanded1
+Type: System.String[]
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -312,8 +307,8 @@ Accept wildcard characters: False
 Mobile device management authority.
 
 ```yaml
-Type: MdmAuthority
-Parameter Sets: CreateExpanded1
+Type: Microsoft.Graph.PowerShell.Support.MdmAuthority
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -330,8 +325,8 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
 
 ```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded1
+Type: System.DateTime
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -347,8 +342,8 @@ Nullable.
 null if this object has never been synced from an on-premises directory (default).
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: CreateExpanded1
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -362,8 +357,8 @@ Accept wildcard characters: False
 partnerTenantType
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -377,8 +372,8 @@ Accept wildcard characters: False
 Postal code of the address for the organization.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -393,8 +388,8 @@ The preferred language for the organization.
 Should follow ISO 639-1 Code; for example, en.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -406,11 +401,11 @@ Accept wildcard characters: False
 
 ### -PrivacyProfile
 privacyProfile
-To construct, please use Get-Help -Online and see NOTES section for PRIVACYPROFILE properties and create a hash table.
+To construct, see NOTES section for PRIVACYPROFILE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrivacyProfile
-Parameter Sets: CreateExpanded1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrivacyProfile
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -422,11 +417,11 @@ Accept wildcard characters: False
 
 ### -ProvisionedPlans
 Not nullable.
-To construct, please use Get-Help -Online and see NOTES section for PROVISIONEDPLANS properties and create a hash table.
+To construct, see NOTES section for PROVISIONEDPLANS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphProvisionedPlan[]
-Parameter Sets: CreateExpanded1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphProvisionedPlan[]
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -440,8 +435,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
-Parameter Sets: CreateExpanded1
+Type: System.String[]
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -455,8 +450,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
-Parameter Sets: CreateExpanded1
+Type: System.String[]
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -470,8 +465,8 @@ Accept wildcard characters: False
 State name of the address for the organization.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -485,8 +480,8 @@ Accept wildcard characters: False
 Street name of the address for organization.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -500,8 +495,8 @@ Accept wildcard characters: False
 Not nullable.
 
 ```yaml
-Type: String[]
-Parameter Sets: CreateExpanded1
+Type: System.String[]
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -518,8 +513,8 @@ The possible values are: AAD - An enterprise identity access management (IAM) se
 AAD B2C A customer identity access management (CIAM) service that serves business-to-consumer (B2C) scenarios.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -532,11 +527,11 @@ Accept wildcard characters: False
 ### -VerifiedDomains
 The collection of domains associated with this tenant.
 Not nullable.
-To construct, please use Get-Help -Online and see NOTES section for VERIFIEDDOMAINS properties and create a hash table.
+To construct, see NOTES section for VERIFIEDDOMAINS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphVerifiedDomain[]
-Parameter Sets: CreateExpanded1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphVerifiedDomain[]
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -550,7 +545,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -566,7 +561,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -582,10 +577,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOrganization1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOrganization
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOrganization1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOrganization
+
 ## NOTES
 
 ALIASES
@@ -595,13 +592,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ASSIGNEDPLANS <IMicrosoftGraphAssignedPlan\[]>: The collection of service plans associated with the tenant. Not nullable.
+`ASSIGNEDPLANS <IMicrosoftGraphAssignedPlan[]>`: The collection of service plans associated with the tenant. Not nullable.
   - `[AssignedDateTime <DateTime?>]`: The date and time at which the plan was assigned. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[CapabilityStatus <String>]`: Condition of the capability assignment. The possible values are Enabled, Warning, Suspended, Deleted, LockedOut. See a detailed description of each value.
   - `[Service <String>]`: The name of the service; for example, exchange.
   - `[ServicePlanId <String>]`: A GUID that identifies the service plan. For a complete list of GUIDs and their equivalent friendly service names, see Product names and service plan identifiers for licensing.
 
-BODYPARAMETER `<IMicrosoftGraphOrganization1>`: organization
+`BODYPARAMETER <IMicrosoftGraphOrganization>`: organization
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -681,7 +678,7 @@ BODYPARAMETER `<IMicrosoftGraphOrganization1>`: organization
     - `[Name <String>]`: The domain name; for example, contoso.onmicrosoft.com.
     - `[Type <String>]`: For example, Managed.
 
-BRANDING `<IMicrosoftGraphOrganizationalBranding>`: organizationalBranding
+`BRANDING <IMicrosoftGraphOrganizationalBranding>`: organizationalBranding
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[BackgroundColor <String>]`: Color that will appear in place of the background image in low-bandwidth connections. We recommend that you use the primary color of your banner logo or your organization color. Specify this in hexadecimal format, for example, white is #FFFFFF.
   - `[BackgroundImage <Byte[]>]`: Image that appears as the background of the sign-in page. The allowed types are PNG or JPEG not smaller than 300 KB and not larger than 1920 × 1080 pixels. A smaller image will reduce bandwidth requirements and make the page load faster.
@@ -707,7 +704,7 @@ BRANDING `<IMicrosoftGraphOrganizationalBranding>`: organizationalBranding
     - `[UsernameHintText <String>]`: String that shows as the hint in the username textbox on the sign-in screen. This text must be a Unicode, without links or code, and can't exceed 64 characters.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
-CERTIFICATEBASEDAUTHCONFIGURATION <IMicrosoftGraphCertificateBasedAuthConfiguration\[]>: Navigation property to manage certificate-based authentication configuration. Only a single instance of certificateBasedAuthConfiguration can be created in the collection.
+`CERTIFICATEBASEDAUTHCONFIGURATION <IMicrosoftGraphCertificateBasedAuthConfiguration[]>`: Navigation property to manage certificate-based authentication configuration. Only a single instance of certificateBasedAuthConfiguration can be created in the collection.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CertificateAuthorities <IMicrosoftGraphCertificateAuthority[]>]`: Collection of certificate authorities which creates a trusted certificate chain.
     - `[Certificate <Byte[]>]`: Required. The base64 encoded string representing the public certificate.
@@ -717,20 +714,20 @@ CERTIFICATEBASEDAUTHCONFIGURATION <IMicrosoftGraphCertificateBasedAuthConfigurat
     - `[Issuer <String>]`: The issuer of the certificate, calculated from the certificate value. Read-only.
     - `[IssuerSki <String>]`: The subject key identifier of the certificate, calculated from the certificate value. Read-only.
 
-EXTENSIONS <IMicrosoftGraphExtension\[]>: The collection of open extensions defined for the organization. Read-only. Nullable.
+`EXTENSIONS <IMicrosoftGraphExtension[]>`: The collection of open extensions defined for the organization. Read-only. Nullable.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
-PRIVACYPROFILE `<IMicrosoftGraphPrivacyProfile>`: privacyProfile
+`PRIVACYPROFILE <IMicrosoftGraphPrivacyProfile>`: privacyProfile
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ContactEmail <String>]`: A valid smtp email address for the privacy statement contact. Not required.
   - `[StatementUrl <String>]`: A valid URL format that begins with http:// or https://. Maximum length is 255 characters. The URL that directs to the company's privacy statement. Not required.
 
-PROVISIONEDPLANS <IMicrosoftGraphProvisionedPlan\[]>: Not nullable.
+`PROVISIONEDPLANS <IMicrosoftGraphProvisionedPlan[]>`: Not nullable.
   - `[CapabilityStatus <String>]`: For example, 'Enabled'.
   - `[ProvisioningStatus <String>]`: For example, 'Success'.
   - `[Service <String>]`: The name of the service; for example, 'AccessControlS2S'
 
-VERIFIEDDOMAINS <IMicrosoftGraphVerifiedDomain\[]>: The collection of domains associated with this tenant. Not nullable.
+`VERIFIEDDOMAINS <IMicrosoftGraphVerifiedDomain[]>`: The collection of domains associated with this tenant. Not nullable.
   - `[Capabilities <String>]`: For example, Email, OfficeCommunicationsOnline.
   - `[IsDefault <Boolean?>]`: true if this is the default domain associated with the tenant; otherwise, false.
   - `[IsInitial <Boolean?>]`: true if this is the initial domain associated with the tenant; otherwise, false.
@@ -739,4 +736,3 @@ VERIFIEDDOMAINS <IMicrosoftGraphVerifiedDomain\[]>: The collection of domains as
 
 ## RELATED LINKS
 
-## RELATED LINKS
