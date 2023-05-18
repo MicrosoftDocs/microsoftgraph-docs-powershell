@@ -8,7 +8,7 @@ Param(
 
 function Get-GraphMapping {
     $graphMapping = @{}
-    $graphMapping.Add("v1.0", "graph-powershell-1.0")
+    #$graphMapping.Add("v1.0", "graph-powershell-1.0")
     $graphMapping.Add("beta", "graph-powershell-beta")
     return $graphMapping
 }
@@ -106,20 +106,20 @@ $LASTEXITCODE = $null
 if ($PSEdition -ne 'Core') {
     Write-Error 'This script requires PowerShell Core to execute. [Note] Generated cmdlets will work in both PowerShell Core or Windows PowerShell.'
 }
-Set-Location microsoftgraph-docs-powershell
-$date = Get-Date -Format "dd-MM-yyyy"
-$proposedBranch = "powershell_v2_test"
-$exists = git branch -l $proposedBranch
-if ([string]::IsNullOrEmpty($exists)) {
-    git checkout -b $proposedBranch
-}else{
-	Write-Host "Branch already exists"
-    $currentBranch = git rev-parse --abbrev-ref HEAD
-     if($currentBranch -ne $proposedBranch){
-        git checkout $proposedBranch
-     }
+# Set-Location microsoftgraph-docs-powershell
+# $date = Get-Date -Format "dd-MM-yyyy"
+# $proposedBranch = "powershell_v2_test"
+# $exists = git branch -l $proposedBranch
+# if ([string]::IsNullOrEmpty($exists)) {
+#     git checkout -b $proposedBranch
+# }else{
+# 	Write-Host "Branch already exists"
+#     $currentBranch = git rev-parse --abbrev-ref HEAD
+#      if($currentBranch -ne $proposedBranch){
+#         git checkout $proposedBranch
+#      }
      
-}
+# }
 if (-not (Test-Path $ModuleMappingConfigPath)) {
     Write-Error "Module mapping file not be found: $ModuleMappingConfigPath."
 }

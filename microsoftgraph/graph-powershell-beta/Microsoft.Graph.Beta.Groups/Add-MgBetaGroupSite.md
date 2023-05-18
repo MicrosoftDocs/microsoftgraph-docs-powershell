@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/add-mgbetagroupsite
@@ -14254,3 +14254,4 @@ Read-only.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/add-mgbetagroupsite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/add-mgbetagroupsite)
 
+## RELATED LINKS
