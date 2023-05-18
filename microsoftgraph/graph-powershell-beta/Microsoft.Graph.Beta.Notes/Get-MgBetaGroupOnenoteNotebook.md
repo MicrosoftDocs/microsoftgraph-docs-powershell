@@ -1,7 +1,7 @@
 ---
 external help file: Microsoft.Graph.Beta.Notes-help.xml
 Module Name: Microsoft.Graph.Beta.Notes
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetagrouponenotenotebook
+online version: https://docs.microsoft.com/en-us/powershell/module/Microsoft.Graph.Beta.notes/get-MgBetagrouponenotenotebook
 schema: 2.0.0
 ---
 
@@ -21,16 +21,16 @@ Get-MgBetaGroupOnenoteNotebook -GroupId <String> [-ExpandProperty <String[]>] [-
  [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### Get
+### Get1
 ```
 Get-MgBetaGroupOnenoteNotebook -GroupId <String> -NotebookId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### GetViaIdentity1
 ```
-Get-MgBetaGroupOnenoteNotebook -InputObject <INotesIdentity> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaGroupOnenoteNotebook -InputObject <INotesIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -40,13 +40,17 @@ Nullable.
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
+### Example 1: Code snippet
+```powershell
 Import-Module Microsoft.Graph.Beta.Notes
-```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserOnenoteNotebook -UserId $userId
+```
+
+This example shows how to use the Get-MgBetaGroupOnenoteNotebook Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -60,7 +64,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -116,7 +120,7 @@ The unique identifier of group
 
 ```yaml
 Type: String
-Parameter Sets: List, Get
+Parameter Sets: List, Get1
 Aliases:
 
 Required: True
@@ -128,11 +132,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: INotesIdentity
-Parameter Sets: GetViaIdentity
+Parameter Sets: GetViaIdentity1
 Aliases:
 
 Required: True
@@ -147,7 +151,7 @@ The unique identifier of notebook
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get1
 Aliases:
 
 Required: True
@@ -167,7 +171,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: 0
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -227,7 +231,7 @@ Aliases: Limit
 
 Required: False
 Position: Named
-Default value: 0
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -242,7 +246,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: 0
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -255,25 +259,25 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.Beta.PowerShell.Models.INotesIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphNotebook
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphNotebook1
 ## NOTES
+
+ALIASES
+
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties.
-For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT \<INotesIdentity\>: Identity Parameter
-  \[GroupId \<String\>\]: The unique identifier of group
-  \[NotebookId \<String\>\]: The unique identifier of notebook
-  \[OnenoteOperationId \<String\>\]: The unique identifier of onenoteOperation
-  \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
-  \[OnenoteResourceId \<String\>\]: The unique identifier of onenoteResource
-  \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
-  \[SectionGroupId \<String\>\]: The unique identifier of sectionGroup
-  \[SiteId \<String\>\]: The unique identifier of site
-  \[UserId \<String\>\]: The unique identifier of user
+
+INPUTOBJECT `<INotesIdentity>`: Identity Parameter
+  - `[GroupId <String>]`: The unique identifier of group
+  - `[NotebookId <String>]`: The unique identifier of notebook
+  - `[OnenoteOperationId <String>]`: The unique identifier of onenoteOperation
+  - `[OnenotePageId <String>]`: The unique identifier of onenotePage
+  - `[OnenoteResourceId <String>]`: The unique identifier of onenoteResource
+  - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
+  - `[SectionGroupId <String>]`: The unique identifier of sectionGroup
+  - `[SiteId <String>]`: The unique identifier of site
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-
-[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetagrouponenotenotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetagrouponenotenotebook)
-
