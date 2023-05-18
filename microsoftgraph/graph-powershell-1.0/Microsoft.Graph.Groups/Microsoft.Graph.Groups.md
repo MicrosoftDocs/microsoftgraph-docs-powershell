@@ -24,9 +24,6 @@ For more information, see contentType: getCompatibleHubContentTypes and the blog
 Add the group to the list of the current user's favorite groups.
 Supported for Microsoft 365 groups only.
 
-### [Add-MgGroupSite](Add-MgGroupSite.md)
-Follow a user's site or multiple sites.
-
 ### [Add-MgGroupSiteContentTypeCopy](Add-MgGroupSiteContentTypeCopy.md)
 Add a copy of a [content type][contentType] from a [site][site] to a [list][list].
 
@@ -63,37 +60,9 @@ Invoke action checkMemberObjects
 ### [Confirm-MgGroupPermissionGrantMemberObject](Confirm-MgGroupPermissionGrantMemberObject.md)
 Invoke action checkMemberObjects
 
-### [Confirm-MgGroupSettingTemplateMemberGroup](Confirm-MgGroupSettingTemplateMemberGroup.md)
-Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
-This function is transitive.
-You can check up to a maximum of 20 groups per request.
-This function supports all groups provisioned in Azure AD.
-Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
-
-### [Confirm-MgGroupSettingTemplateMemberObject](Confirm-MgGroupSettingTemplateMemberObject.md)
-Invoke action checkMemberObjects
-
-### [Copy-MgGroupDriveItem](Copy-MgGroupDriveItem.md)
-Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name.
-
 ### [Copy-MgGroupDriveListContentTypeToDefaultContentLocation](Copy-MgGroupDriveListContentTypeToDefaultContentLocation.md)
 Copy a file to a default content location in a [content type][contentType].
 The file can then be added as a default file or template via a POST operation.
-
-### [Copy-MgGroupDriveRoot](Copy-MgGroupDriveRoot.md)
-Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name.
-
-### [Copy-MgGroupDriveRoot](Copy-MgGroupDriveRoot.md)
-Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name.
-
-### [Copy-MgGroupDriveRoot](Copy-MgGroupDriveRoot.md)
-Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name.
-
-### [Copy-MgGroupDriveRoot](Copy-MgGroupDriveRoot.md)
-Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name.
-
-### [Copy-MgGroupDriveRoot](Copy-MgGroupDriveRoot.md)
-Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name.
 
 ### [Copy-MgGroupSiteContentTypeToDefaultContentLocation](Copy-MgGroupSiteContentTypeToDefaultContentLocation.md)
 Copy a file to a default content location in a [content type][contentType].
@@ -115,9 +84,6 @@ Users in the accepted senders list can post to conversations of the group (ident
 ### [Get-MgGroupAcceptedSenderByRef](Get-MgGroupAcceptedSenderByRef.md)
 Users in the accepted senders list can post to conversations of the group (identified in the GET request URL).\nMake sure you do not specify the same user or group in the accepted senders and rejected senders lists, otherwise you will get an error.
 
-### [Get-MgGroupAcceptedSenderCount](Get-MgGroupAcceptedSenderCount.md)
-Get the number of the resource
-
 ### [Get-MgGroupById](Get-MgGroupById.md)
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
@@ -137,17 +103,11 @@ This allows you to maintain and synchronize a local store of events in the speci
 ### [Get-MgGroupConversation](Get-MgGroupConversation.md)
 The group's conversations.
 
-### [Get-MgGroupConversationCount](Get-MgGroupConversationCount.md)
-Get the number of the resource
-
 ### [Get-MgGroupConversationThread](Get-MgGroupConversationThread.md)
 A collection of all the conversation threads in the conversation.
 A navigation property.
 Read-only.
 Nullable.
-
-### [Get-MgGroupConversationThreadCount](Get-MgGroupConversationThreadCount.md)
-Get the number of the resource
 
 ### [Get-MgGroupConversationThreadPost](Get-MgGroupConversationThreadPost.md)
 Get posts from groups
@@ -157,35 +117,20 @@ Read-only.
 Nullable.
 Supports $expand.
 
-### [Get-MgGroupConversationThreadPostAttachmentCount](Get-MgGroupConversationThreadPostAttachmentCount.md)
-Get the number of the resource
-
-### [Get-MgGroupConversationThreadPostCount](Get-MgGroupConversationThreadPostCount.md)
-Get the number of the resource
-
 ### [Get-MgGroupConversationThreadPostExtension](Get-MgGroupConversationThreadPostExtension.md)
 Get an open extension (openTypeExtension object) identified by name or fully qualified name.
 The table in the Permissions section lists the resources that support open extensions.
 The following table lists the three scenarios where you can get an open extension from a supported resource instance.
-
-### [Get-MgGroupConversationThreadPostExtensionCount](Get-MgGroupConversationThreadPostExtensionCount.md)
-Get the number of the resource
 
 ### [Get-MgGroupConversationThreadPostInReplyToAttachment](Get-MgGroupConversationThreadPostInReplyToAttachment.md)
 Read-only.
 Nullable.
 Supports $expand.
 
-### [Get-MgGroupConversationThreadPostInReplyToAttachmentCount](Get-MgGroupConversationThreadPostInReplyToAttachmentCount.md)
-Get the number of the resource
-
 ### [Get-MgGroupConversationThreadPostInReplyToExtension](Get-MgGroupConversationThreadPostInReplyToExtension.md)
 Get an open extension (openTypeExtension object) identified by name or fully qualified name.
 The table in the Permissions section lists the resources that support open extensions.
 The following table lists the three scenarios where you can get an open extension from a supported resource instance.
-
-### [Get-MgGroupConversationThreadPostInReplyToExtensionCount](Get-MgGroupConversationThreadPostInReplyToExtensionCount.md)
-Get the number of the resource
 
 ### [Get-MgGroupConversationThreadPostInReplyToMultiValueExtendedProperty](Get-MgGroupConversationThreadPostInReplyToMultiValueExtendedProperty.md)
 The collection of multi-value extended properties defined for the post.
@@ -206,9 +151,6 @@ Nullable.
 The collection of single-value extended properties defined for the post.
 Read-only.
 Nullable.
-
-### [Get-MgGroupCount](Get-MgGroupCount.md)
-Get the number of the resource
 
 ### [Get-MgGroupCreatedOnBehalfOf](Get-MgGroupCreatedOnBehalfOf.md)
 The user (or application) that created the group.
@@ -258,101 +200,8 @@ The collection of open extensions defined for the group.
 Read-only.
 Nullable.
 
-### [Get-MgGroupExtensionCount](Get-MgGroupExtensionCount.md)
-Get the number of the resource
-
 ### [Get-MgGroupLifecyclePolicy](Get-MgGroupLifecyclePolicy.md)
 Retrieve the properties and relationships of a groupLifecyclePolicies object.
-
-### [Get-MgGroupLifecyclePolicyByGroup](Get-MgGroupLifecyclePolicyByGroup.md)
-Retrieves a list of groupLifecyclePolicy objects to which a group belongs.
-
-### [Get-MgGroupLifecyclePolicyCount](Get-MgGroupLifecyclePolicyCount.md)
-Get the number of the resource
-
-### [Get-MgGroupListMemberCountAsApplication](Get-MgGroupListMemberCountAsApplication.md)
-Get the number of the resource
-
-### [Get-MgGroupListMemberCountAsDevice](Get-MgGroupListMemberCountAsDevice.md)
-Get the number of the resource
-
-### [Get-MgGroupListMemberCountAsGroup](Get-MgGroupListMemberCountAsGroup.md)
-Get the number of the resource
-
-### [Get-MgGroupListMemberCountAsOrgContact](Get-MgGroupListMemberCountAsOrgContact.md)
-Get the number of the resource
-
-### [Get-MgGroupListMemberCountAsServicePrincipal](Get-MgGroupListMemberCountAsServicePrincipal.md)
-Get the number of the resource
-
-### [Get-MgGroupListMemberCountAsUser](Get-MgGroupListMemberCountAsUser.md)
-Get the number of the resource
-
-### [Get-MgGroupListMemberOfCountAsAdministrativeUnit](Get-MgGroupListMemberOfCountAsAdministrativeUnit.md)
-Get the number of the resource
-
-### [Get-MgGroupListMemberOfCountAsGroup](Get-MgGroupListMemberOfCountAsGroup.md)
-Get the number of the resource
-
-### [Get-MgGroupListMemberWithLicenseErrorCountAsApplication](Get-MgGroupListMemberWithLicenseErrorCountAsApplication.md)
-Get the number of the resource
-
-### [Get-MgGroupListMemberWithLicenseErrorCountAsDevice](Get-MgGroupListMemberWithLicenseErrorCountAsDevice.md)
-Get the number of the resource
-
-### [Get-MgGroupListMemberWithLicenseErrorCountAsGroup](Get-MgGroupListMemberWithLicenseErrorCountAsGroup.md)
-Get the number of the resource
-
-### [Get-MgGroupListMemberWithLicenseErrorCountAsOrgContact](Get-MgGroupListMemberWithLicenseErrorCountAsOrgContact.md)
-Get the number of the resource
-
-### [Get-MgGroupListMemberWithLicenseErrorCountAsServicePrincipal](Get-MgGroupListMemberWithLicenseErrorCountAsServicePrincipal.md)
-Get the number of the resource
-
-### [Get-MgGroupListMemberWithLicenseErrorCountAsUser](Get-MgGroupListMemberWithLicenseErrorCountAsUser.md)
-Get the number of the resource
-
-### [Get-MgGroupListOwnerCountAsApplication](Get-MgGroupListOwnerCountAsApplication.md)
-Get the number of the resource
-
-### [Get-MgGroupListOwnerCountAsDevice](Get-MgGroupListOwnerCountAsDevice.md)
-Get the number of the resource
-
-### [Get-MgGroupListOwnerCountAsGroup](Get-MgGroupListOwnerCountAsGroup.md)
-Get the number of the resource
-
-### [Get-MgGroupListOwnerCountAsOrgContact](Get-MgGroupListOwnerCountAsOrgContact.md)
-Get the number of the resource
-
-### [Get-MgGroupListOwnerCountAsServicePrincipal](Get-MgGroupListOwnerCountAsServicePrincipal.md)
-Get the number of the resource
-
-### [Get-MgGroupListOwnerCountAsUser](Get-MgGroupListOwnerCountAsUser.md)
-Get the number of the resource
-
-### [Get-MgGroupListTransitiveMemberCountAsApplication](Get-MgGroupListTransitiveMemberCountAsApplication.md)
-Get the number of the resource
-
-### [Get-MgGroupListTransitiveMemberCountAsDevice](Get-MgGroupListTransitiveMemberCountAsDevice.md)
-Get the number of the resource
-
-### [Get-MgGroupListTransitiveMemberCountAsGroup](Get-MgGroupListTransitiveMemberCountAsGroup.md)
-Get the number of the resource
-
-### [Get-MgGroupListTransitiveMemberCountAsOrgContact](Get-MgGroupListTransitiveMemberCountAsOrgContact.md)
-Get the number of the resource
-
-### [Get-MgGroupListTransitiveMemberCountAsServicePrincipal](Get-MgGroupListTransitiveMemberCountAsServicePrincipal.md)
-Get the number of the resource
-
-### [Get-MgGroupListTransitiveMemberCountAsUser](Get-MgGroupListTransitiveMemberCountAsUser.md)
-Get the number of the resource
-
-### [Get-MgGroupListTransitiveMemberOfCountAsAdministrativeUnit](Get-MgGroupListTransitiveMemberOfCountAsAdministrativeUnit.md)
-Get the number of the resource
-
-### [Get-MgGroupListTransitiveMemberOfCountAsGroup](Get-MgGroupListTransitiveMemberOfCountAsGroup.md)
-Get the number of the resource
 
 ### [Get-MgGroupMember](Get-MgGroupMember.md)
 The members of this group, who can be users, devices, other groups, or service principals.
@@ -361,36 +210,12 @@ Nullable.
 Supports $expand including nested $select.
 For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=members($select=id,userPrincipalName,displayName).
 
-### [Get-MgGroupMemberAsApplication](Get-MgGroupMemberAsApplication.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.application
-
-### [Get-MgGroupMemberAsDevice](Get-MgGroupMemberAsDevice.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.device
-
-### [Get-MgGroupMemberAsGroup](Get-MgGroupMemberAsGroup.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
-
-### [Get-MgGroupMemberAsOrgContact](Get-MgGroupMemberAsOrgContact.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.orgContact
-
-### [Get-MgGroupMemberAsServicePrincipal](Get-MgGroupMemberAsServicePrincipal.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.servicePrincipal
-
-### [Get-MgGroupMemberAsUser](Get-MgGroupMemberAsUser.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.user
-
 ### [Get-MgGroupMemberByRef](Get-MgGroupMemberByRef.md)
 The members of this group, who can be users, devices, other groups, or service principals.
 Supports the List members, Add member, and Remove member operations.
 Nullable.
 Supports $expand including nested $select.
 For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=members($select=id,userPrincipalName,displayName).
-
-### [Get-MgGroupMemberCount](Get-MgGroupMemberCount.md)
-Get the number of the resource
-
-### [Get-MgGroupMemberCount](Get-MgGroupMemberCount.md)
-Get the number of the resource
 
 ### [Get-MgGroupMemberObject](Get-MgGroupMemberObject.md)
 Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
@@ -404,42 +229,9 @@ Read-only.
 Nullable.
 Supports $expand.
 
-### [Get-MgGroupMemberOfAsAdministrativeUnit](Get-MgGroupMemberOfAsAdministrativeUnit.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.administrativeUnit
-
-### [Get-MgGroupMemberOfAsGroup](Get-MgGroupMemberOfAsGroup.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
-
-### [Get-MgGroupMemberOfCount](Get-MgGroupMemberOfCount.md)
-Get the number of the resource
-
 ### [Get-MgGroupMemberWithLicenseError](Get-MgGroupMemberWithLicenseError.md)
 A list of group members with license errors from this group-based license assignment.
 Read-only.
-
-### [Get-MgGroupMemberWithLicenseErrorAsApplication](Get-MgGroupMemberWithLicenseErrorAsApplication.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.application
-
-### [Get-MgGroupMemberWithLicenseErrorAsDevice](Get-MgGroupMemberWithLicenseErrorAsDevice.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.device
-
-### [Get-MgGroupMemberWithLicenseErrorAsGroup](Get-MgGroupMemberWithLicenseErrorAsGroup.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
-
-### [Get-MgGroupMemberWithLicenseErrorAsOrgContact](Get-MgGroupMemberWithLicenseErrorAsOrgContact.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.orgContact
-
-### [Get-MgGroupMemberWithLicenseErrorAsServicePrincipal](Get-MgGroupMemberWithLicenseErrorAsServicePrincipal.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.servicePrincipal
-
-### [Get-MgGroupMemberWithLicenseErrorAsUser](Get-MgGroupMemberWithLicenseErrorAsUser.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.user
-
-### [Get-MgGroupMemberWithLicenseErrorCount](Get-MgGroupMemberWithLicenseErrorCount.md)
-Get the number of the resource
-
-### [Get-MgGroupMemberWithLicenseErrorCount](Get-MgGroupMemberWithLicenseErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgGroupOnenoteRecentNotebook](Get-MgGroupOnenoteRecentNotebook.md)
 Invoke function getRecentNotebooks
@@ -453,24 +245,6 @@ Supports $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
 Supports $expand including nested $select.
 For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName).
 
-### [Get-MgGroupOwnerAsApplication](Get-MgGroupOwnerAsApplication.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.application
-
-### [Get-MgGroupOwnerAsDevice](Get-MgGroupOwnerAsDevice.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.device
-
-### [Get-MgGroupOwnerAsGroup](Get-MgGroupOwnerAsGroup.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
-
-### [Get-MgGroupOwnerAsOrgContact](Get-MgGroupOwnerAsOrgContact.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.orgContact
-
-### [Get-MgGroupOwnerAsServicePrincipal](Get-MgGroupOwnerAsServicePrincipal.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.servicePrincipal
-
-### [Get-MgGroupOwnerAsUser](Get-MgGroupOwnerAsUser.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.user
-
 ### [Get-MgGroupOwnerByRef](Get-MgGroupOwnerByRef.md)
 The owners of the group.
 Limited to 100 owners.
@@ -480,9 +254,6 @@ Supports $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
 Supports $expand including nested $select.
 For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName).
 
-### [Get-MgGroupOwnerCount](Get-MgGroupOwnerCount.md)
-Get the number of the resource
-
 ### [Get-MgGroupPermissionGrant](Get-MgGroupPermissionGrant.md)
 The permission that has been granted for a group to a specific application.
 Supports $expand.
@@ -490,9 +261,6 @@ Supports $expand.
 ### [Get-MgGroupPermissionGrantById](Get-MgGroupPermissionGrantById.md)
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
-
-### [Get-MgGroupPermissionGrantCount](Get-MgGroupPermissionGrantCount.md)
-Get the number of the resource
 
 ### [Get-MgGroupPermissionGrantDelta](Get-MgGroupPermissionGrantDelta.md)
 Invoke function delta
@@ -511,9 +279,6 @@ The group's profile photo
 ### [Get-MgGroupPhotoContent](Get-MgGroupPhotoContent.md)
 Get media content for the navigation property photo from groups
 
-### [Get-MgGroupPhotoCount](Get-MgGroupPhotoCount.md)
-Get the number of the resource
-
 ### [Get-MgGroupRejectedSender](Get-MgGroupRejectedSender.md)
 Users in the rejected senders list cannot post to conversations of the group (identified in the GET request URL).
 Make sure you do not specify the same user or group in the rejected senders and accepted senders lists, otherwise you will get an error.
@@ -522,38 +287,9 @@ Make sure you do not specify the same user or group in the rejected senders and 
 Users in the rejected senders list cannot post to conversations of the group (identified in the GET request URL).
 Make sure you do not specify the same user or group in the rejected senders and accepted senders lists, otherwise you will get an error.
 
-### [Get-MgGroupRejectedSenderCount](Get-MgGroupRejectedSenderCount.md)
-Get the number of the resource
-
 ### [Get-MgGroupSetting](Get-MgGroupSetting.md)
 Retrieve the properties of a specific group setting object.
 The setting can be a tenant-level or group-specific setting.
-
-### [Get-MgGroupSettingCount](Get-MgGroupSettingCount.md)
-Get the number of the resource
-
-### [Get-MgGroupSettingTemplateById](Get-MgGroupSettingTemplateById.md)
-Return the directory objects specified in a list of IDs.
-Some common uses for this function are to:
-
-### [Get-MgGroupSettingTemplateCount](Get-MgGroupSettingTemplateCount.md)
-Get the number of the resource
-
-### [Get-MgGroupSettingTemplateDelta](Get-MgGroupSettingTemplateDelta.md)
-Invoke function delta
-
-### [Get-MgGroupSettingTemplateGroupSettingTemplate](Get-MgGroupSettingTemplateGroupSettingTemplate.md)
-A group setting template represents a template of settings from which settings may be created within a tenant.
-This operation allows retrieval of the properties of the groupSettingTemplate object, including the available settings and their defaults.
-
-### [Get-MgGroupSettingTemplateMemberGroup](Get-MgGroupSettingTemplateMemberGroup.md)
-Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
-This function is transitive.
-
-### [Get-MgGroupSettingTemplateMemberObject](Get-MgGroupSettingTemplateMemberObject.md)
-Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
-This function is transitive.
-**Note:** Only users and role-enabled groups can be members of directory roles.
 
 ### [Get-MgGroupSite](Get-MgGroupSite.md)
 Invoke function getAllSites
@@ -580,9 +316,6 @@ Invoke function getActivitiesByInterval
 Get a specific thread that belongs to a group.
 You can specify both the parent conversation and the thread, or, \nyou can specify the thread without referencing the parent conversation.
 
-### [Get-MgGroupThreadCount](Get-MgGroupThreadCount.md)
-Get the number of the resource
-
 ### [Get-MgGroupThreadPost](Get-MgGroupThreadPost.md)
 Get posts from groups
 
@@ -591,35 +324,20 @@ Read-only.
 Nullable.
 Supports $expand.
 
-### [Get-MgGroupThreadPostAttachmentCount](Get-MgGroupThreadPostAttachmentCount.md)
-Get the number of the resource
-
-### [Get-MgGroupThreadPostCount](Get-MgGroupThreadPostCount.md)
-Get the number of the resource
-
 ### [Get-MgGroupThreadPostExtension](Get-MgGroupThreadPostExtension.md)
 Get an open extension (openTypeExtension object) identified by name or fully qualified name.
 The table in the Permissions section lists the resources that support open extensions.
 The following table lists the three scenarios where you can get an open extension from a supported resource instance.
-
-### [Get-MgGroupThreadPostExtensionCount](Get-MgGroupThreadPostExtensionCount.md)
-Get the number of the resource
 
 ### [Get-MgGroupThreadPostInReplyToAttachment](Get-MgGroupThreadPostInReplyToAttachment.md)
 Read-only.
 Nullable.
 Supports $expand.
 
-### [Get-MgGroupThreadPostInReplyToAttachmentCount](Get-MgGroupThreadPostInReplyToAttachmentCount.md)
-Get the number of the resource
-
 ### [Get-MgGroupThreadPostInReplyToExtension](Get-MgGroupThreadPostInReplyToExtension.md)
 Get an open extension (openTypeExtension object) identified by name or fully qualified name.
 The table in the Permissions section lists the resources that support open extensions.
 The following table lists the three scenarios where you can get an open extension from a supported resource instance.
-
-### [Get-MgGroupThreadPostInReplyToExtensionCount](Get-MgGroupThreadPostInReplyToExtensionCount.md)
-Get the number of the resource
 
 ### [Get-MgGroupThreadPostInReplyToMultiValueExtendedProperty](Get-MgGroupThreadPostInReplyToMultiValueExtendedProperty.md)
 The collection of multi-value extended properties defined for the post.
@@ -645,48 +363,9 @@ Nullable.
 The direct and transitive members of a group.
 Nullable.
 
-### [Get-MgGroupTransitiveMemberAsApplication](Get-MgGroupTransitiveMemberAsApplication.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.application
-
-### [Get-MgGroupTransitiveMemberAsDevice](Get-MgGroupTransitiveMemberAsDevice.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.device
-
-### [Get-MgGroupTransitiveMemberAsGroup](Get-MgGroupTransitiveMemberAsGroup.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
-
-### [Get-MgGroupTransitiveMemberAsOrgContact](Get-MgGroupTransitiveMemberAsOrgContact.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.orgContact
-
-### [Get-MgGroupTransitiveMemberAsServicePrincipal](Get-MgGroupTransitiveMemberAsServicePrincipal.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.servicePrincipal
-
-### [Get-MgGroupTransitiveMemberAsUser](Get-MgGroupTransitiveMemberAsUser.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.user
-
-### [Get-MgGroupTransitiveMemberCount](Get-MgGroupTransitiveMemberCount.md)
-Get the number of the resource
-
 ### [Get-MgGroupTransitiveMemberOf](Get-MgGroupTransitiveMemberOf.md)
 The groups that a group is a member of, either directly and through nested membership.
 Nullable.
-
-### [Get-MgGroupTransitiveMemberOfAsAdministrativeUnit](Get-MgGroupTransitiveMemberOfAsAdministrativeUnit.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.administrativeUnit
-
-### [Get-MgGroupTransitiveMemberOfAsGroup](Get-MgGroupTransitiveMemberOfAsGroup.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
-
-### [Get-MgGroupTransitiveMemberOfCount](Get-MgGroupTransitiveMemberOfCount.md)
-Get the number of the resource
-
-### [Grant-MgGroupDriveItemPermission](Grant-MgGroupDriveItemPermission.md)
-Grant users access to a link represented by a [permission][].
-
-### [Grant-MgGroupDriveRootPermission](Grant-MgGroupDriveRootPermission.md)
-Grant users access to a link represented by a [permission][].
-
-### [Grant-MgGroupSitePermission](Grant-MgGroupSitePermission.md)
-Grant users access to a link represented by a [permission][].
 
 ### [Invoke-MgCalendarGroupCalendar](Invoke-MgCalendarGroupCalendar.md)
 Invoke function allowedCalendarSharingRoles
@@ -698,6 +377,18 @@ Check in a checked out **driveItem** resource, which makes the version of the do
 Check in a checked out **driveItem** resource, which makes the version of the document available to others.
 
 ### [Invoke-MgCheckoutGroupDriveItem](Invoke-MgCheckoutGroupDriveItem.md)
+Check out a **driveItem** resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
+
+### [Invoke-MgCheckoutGroupDriveRoot](Invoke-MgCheckoutGroupDriveRoot.md)
+Check out a **driveItem** resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
+
+### [Invoke-MgCheckoutGroupDriveRoot](Invoke-MgCheckoutGroupDriveRoot.md)
+Check out a **driveItem** resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
+
+### [Invoke-MgCheckoutGroupDriveRoot](Invoke-MgCheckoutGroupDriveRoot.md)
+Check out a **driveItem** resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
+
+### [Invoke-MgCheckoutGroupDriveRoot](Invoke-MgCheckoutGroupDriveRoot.md)
 Check out a **driveItem** resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
 
 ### [Invoke-MgCheckoutGroupDriveRoot](Invoke-MgCheckoutGroupDriveRoot.md)
@@ -796,6 +487,18 @@ This operation limits the size of the attachment you can add to under 3 MB.
 An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
 
 ### [Invoke-MgReplyGroupThreadPost](Invoke-MgReplyGroupThreadPost.md)
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+See known limitations of open extensions for more information.
+The table in the Permissions section lists the resources that support open extensions.
+
+### [Invoke-MgReplyGroupThreadPostInReplyTo](Invoke-MgReplyGroupThreadPostInReplyTo.md)
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+See known limitations of open extensions for more information.
+The table in the Permissions section lists the resources that support open extensions.
+
+### [Invoke-MgReplyGroupThreadPostInReplyTo](Invoke-MgReplyGroupThreadPostInReplyTo.md)
 Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
 You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
 See known limitations of open extensions for more information.
@@ -932,9 +635,6 @@ These settings can be at the tenant-level or at the group level.
 Group settings apply to only Microsoft 365 groups.
 The template named `Group.Unified` can be used to configure tenant-wide Microsoft 365 group settings, while the template named `Group.Unified.Guest` can be used to configure group-specific settings.
 
-### [New-MgGroupSettingTemplateGroupSettingTemplate](New-MgGroupSettingTemplateGroupSettingTemplate.md)
-Add new entity to groupSettingTemplates
-
 ### [New-MgGroupThread](New-MgGroupThread.md)
 Start a new group conversation by first creating a thread.
 A new conversation, conversation thread, and post are created in the group.\nUse reply thread or reply post to further post to that thread.
@@ -983,15 +683,6 @@ Create new navigation property to multiValueExtendedProperties for groups
 
 ### [New-MgGroupThreadPostSingleValueExtendedProperty](New-MgGroupThreadPostSingleValueExtendedProperty.md)
 Create new navigation property to singleValueExtendedProperties for groups
-
-### [Publish-MgGroupDriveListContentType](Publish-MgGroupDriveListContentType.md)
-Publishes a [contentType][] present in the content type hub site.
-
-### [Publish-MgGroupSiteContentType](Publish-MgGroupSiteContentType.md)
-Publishes a [contentType][] present in the content type hub site.
-
-### [Publish-MgGroupSiteListContentType](Publish-MgGroupSiteListContentType.md)
-Publishes a [contentType][] present in the content type hub site.
 
 ### [Remove-MgGroup](Remove-MgGroup.md)
 Delete group.
@@ -1062,20 +753,11 @@ Once owners are assigned to a group, the last owner (a user object) of the group
 ### [Remove-MgGroupPermissionGrant](Remove-MgGroupPermissionGrant.md)
 Delete navigation property permissionGrants for groups
 
-### [Remove-MgGroupPhoto](Remove-MgGroupPhoto.md)
-Delete navigation property photo for groups
-
 ### [Remove-MgGroupRejectedSenderByRef](Remove-MgGroupRejectedSenderByRef.md)
 Remove rejectedSender
 
 ### [Remove-MgGroupSetting](Remove-MgGroupSetting.md)
 Delete navigation property settings for groups
-
-### [Remove-MgGroupSettingTemplateGroupSettingTemplate](Remove-MgGroupSettingTemplateGroupSettingTemplate.md)
-Delete entity from groupSettingTemplates
-
-### [Remove-MgGroupSite](Remove-MgGroupSite.md)
-Unfollow a user's site or multiple sites.
 
 ### [Remove-MgGroupThread](Remove-MgGroupThread.md)
 Delete conversationThread.
@@ -1108,13 +790,6 @@ Delete navigation property singleValueExtendedProperties for groups
 Reset the unseenCount of all the posts that the current user has not seen since their last visit.
 Supported for Microsoft 365 groups only.
 
-### [Restore-MgGroupDriveItem](Restore-MgGroupDriveItem.md)
-Restore a driveItem that has been deleted and is currently in the recycle bin.
-**NOTE**: This functionality is currently only available for OneDrive Personal.
-
-### [Restore-MgGroupDriveItemListItemDocumentSetVersion](Restore-MgGroupDriveItemListItemDocumentSetVersion.md)
-Restore a document set version.
-
 ### [Restore-MgGroupDriveItemListItemVersion](Restore-MgGroupDriveItemListItemVersion.md)
 Restore a previous version of a ListItem to be the current version.
 This will create a new version with the contents of the previous version, but preserves all existing versions of the item.
@@ -1123,19 +798,9 @@ This will create a new version with the contents of the previous version, but pr
 Restore a previous version of a DriveItem to be the current version.
 This will create a new version with the contents of the previous version, but preserves all existing versions of the file.
 
-### [Restore-MgGroupDriveListItemDocumentSetVersion](Restore-MgGroupDriveListItemDocumentSetVersion.md)
-Restore a document set version.
-
 ### [Restore-MgGroupDriveListItemVersion](Restore-MgGroupDriveListItemVersion.md)
 Restore a previous version of a ListItem to be the current version.
 This will create a new version with the contents of the previous version, but preserves all existing versions of the item.
-
-### [Restore-MgGroupDriveRoot](Restore-MgGroupDriveRoot.md)
-Restore a driveItem that has been deleted and is currently in the recycle bin.
-**NOTE**: This functionality is currently only available for OneDrive Personal.
-
-### [Restore-MgGroupDriveRootListItemDocumentSetVersion](Restore-MgGroupDriveRootListItemDocumentSetVersion.md)
-Restore a document set version.
 
 ### [Restore-MgGroupDriveRootListItemVersion](Restore-MgGroupDriveRootListItemVersion.md)
 Restore a previous version of a ListItem to be the current version.
@@ -1145,28 +810,9 @@ This will create a new version with the contents of the previous version, but pr
 Restore a previous version of a DriveItem to be the current version.
 This will create a new version with the contents of the previous version, but preserves all existing versions of the file.
 
-### [Restore-MgGroupSettingTemplate](Restore-MgGroupSettingTemplate.md)
-Restore a recently deleted application, group, servicePrincipal, administrative unit, or user object from deleted items.
-If an item was accidentally deleted, you can fully restore the item.
-This is not applicable to security groups, which are deleted permanently.
-A recently deleted item will remain available for up to 30 days.
-After 30 days, the item is permanently deleted.
-
-### [Restore-MgGroupSiteListItemDocumentSetVersion](Restore-MgGroupSiteListItemDocumentSetVersion.md)
-Restore a document set version.
-
 ### [Restore-MgGroupSiteListItemVersion](Restore-MgGroupSiteListItemVersion.md)
 Restore a previous version of a ListItem to be the current version.
 This will create a new version with the contents of the previous version, but preserves all existing versions of the item.
-
-### [Search-MgGroupDrive](Search-MgGroupDrive.md)
-Invoke function search
-
-### [Search-MgGroupDriveItem](Search-MgGroupDriveItem.md)
-Invoke function search
-
-### [Search-MgGroupDriveRoot](Search-MgGroupDriveRoot.md)
-Invoke function search
 
 ### [Set-MgGroupLicense](Set-MgGroupLicense.md)
 Add or remove licenses on the group.
@@ -1176,20 +822,6 @@ To get the subscriptions available in the directory, perform a GET subscribedSku
 
 ### [Set-MgGroupPhotoContent](Set-MgGroupPhotoContent.md)
 Update media content for the navigation property photo in groups
-
-### [Stop-MgGroupCalendarEvent](Stop-MgGroupCalendarEvent.md)
-This action allows the organizer of a meeting to send a cancellation message and cancel the event.
-The action moves the event to the Deleted Items folder.
-The organizer can also cancel an occurrence of a recurring meeting \nby providing the occurrence event ID.
-An attendee calling this action gets an error (HTTP 400 Bad Request), with the following\nerror message: 'Your request can't be completed.
-You need to be an organizer to cancel a meeting.' This action differs from Delete in that **Cancel** is available to only the organizer, and lets\nthe organizer send a custom message to the attendees about the cancellation.
-
-### [Stop-MgGroupEvent](Stop-MgGroupEvent.md)
-This action allows the organizer of a meeting to send a cancellation message and cancel the event.
-The action moves the event to the Deleted Items folder.
-The organizer can also cancel an occurrence of a recurring meeting \nby providing the occurrence event ID.
-An attendee calling this action gets an error (HTTP 400 Bad Request), with the following\nerror message: 'Your request can't be completed.
-You need to be an organizer to cancel a meeting.' This action differs from Delete in that **Cancel** is available to only the organizer, and lets\nthe organizer send a custom message to the attendees about the cancellation.
 
 ### [Test-MgGroupDriveItemPermission](Test-MgGroupDriveItemPermission.md)
 Invoke action validatePermission
@@ -1221,32 +853,11 @@ If the properties fail multiple validations, only the first validation failure i
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
 To learn more about configuring naming policies, see Configure naming policy.
 
-### [Test-MgGroupSettingTemplateProperty](Test-MgGroupSettingTemplateProperty.md)
-Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
-Clients can use this API to determine whether a display name or mail nickname is valid before trying to create a Microsoft 365 group.
-To validate the properties of an existing group, use the group: validateProperties function.
-The following policy validations are performed for the display name and mail nickname properties:\n1.
-Validate the prefix and suffix naming policy\n2.
-Validate the custom banned words policy\n3.
-Validate that the mail nickname is unique This API only returns the first validation failure that is encountered.
-If the properties fail multiple validations, only the first validation failure is returned.
-However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
-To learn more about configuring naming policies, see Configure naming policy.
-
 ### [Test-MgGroupSiteContentTypePublished](Test-MgGroupSiteContentTypePublished.md)
 Invoke function isPublished
 
 ### [Test-MgGroupSiteListContentTypePublished](Test-MgGroupSiteListContentTypePublished.md)
 Invoke function isPublished
-
-### [Unpublish-MgGroupDriveListContentType](Unpublish-MgGroupDriveListContentType.md)
-Unpublish a [contentType][] from a content type hub site.
-
-### [Unpublish-MgGroupSiteContentType](Unpublish-MgGroupSiteContentType.md)
-Unpublish a [contentType][] from a content type hub site.
-
-### [Unpublish-MgGroupSiteListContentType](Unpublish-MgGroupSiteListContentType.md)
-Unpublish a [contentType][] from a content type hub site.
 
 ### [Update-MgGroup](Update-MgGroup.md)
 Update the properties of a group object.
@@ -1291,9 +902,6 @@ Update the navigation property photo in groups
 
 ### [Update-MgGroupSetting](Update-MgGroupSetting.md)
 Update the properties of a groupSetting object for tenant-wide group settings or a specific group setting.
-
-### [Update-MgGroupSettingTemplateGroupSettingTemplate](Update-MgGroupSettingTemplateGroupSettingTemplate.md)
-Update entity in groupSettingTemplates
 
 ### [Update-MgGroupThread](Update-MgGroupThread.md)
 Update conversation thread

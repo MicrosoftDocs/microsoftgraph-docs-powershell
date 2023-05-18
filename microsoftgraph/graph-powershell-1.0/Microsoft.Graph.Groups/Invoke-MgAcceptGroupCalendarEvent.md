@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgAcceptGroupCalendarEvent
 
 ## SYNOPSIS
-Invoke action accept
+Accept the specified event in a user calendar.
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ Invoke-MgAcceptGroupCalendarEvent -InputObject <IGroupsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action accept
+Accept the specified event in a user calendar.
 
 ## EXAMPLES
 
@@ -248,7 +248,6 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[GroupId \<String\>\]: The unique identifier of group
   \[GroupLifecyclePolicyId \<String\>\]: The unique identifier of groupLifecyclePolicy
   \[GroupSettingId \<String\>\]: The unique identifier of groupSetting
-  \[GroupSettingTemplateId \<String\>\]: The unique identifier of groupSettingTemplate
   \[IncludePersonalNotebooks \<Boolean?\>\]: Usage: includePersonalNotebooks={includePersonalNotebooks}
   \[Interval \<String\>\]: Usage: interval='{interval}'
   \[ListId \<String\>\]: The unique identifier of list

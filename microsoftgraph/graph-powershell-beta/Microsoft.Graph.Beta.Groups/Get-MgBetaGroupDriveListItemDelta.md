@@ -14,28 +14,30 @@ Invoke function delta
 
 ### Delta (Default)
 ```
-Get-MgBetaGroupDriveListItemDelta -DriveId <String> -GroupId <String> [-Filter <String>] [-Property <String[]>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [<CommonParameters>]
+Get-MgBetaGroupDriveListItemDelta -DriveId <String> -GroupId <String> [-Count] [-Filter <String>]
+ [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [<CommonParameters>]
 ```
 
 ### Delta1
 ```
-Get-MgBetaGroupDriveListItemDelta -DriveId <String> -GroupId <String> -Token <String> [-Filter <String>]
- [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+Get-MgBetaGroupDriveListItemDelta -DriveId <String> -GroupId <String> -Token <String> [-Count]
+ [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [<CommonParameters>]
 ```
 
 ### DeltaViaIdentity1
 ```
-Get-MgBetaGroupDriveListItemDelta -InputObject <IGroupsIdentity> [-Filter <String>] [-Property <String[]>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-Count] [<CommonParameters>]
+Get-MgBetaGroupDriveListItemDelta -InputObject <IGroupsIdentity> [-Count] [-Filter <String>]
+ [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [<CommonParameters>]
 ```
 
 ### DeltaViaIdentity
 ```
-Get-MgBetaGroupDriveListItemDelta -InputObject <IGroupsIdentity> [-Filter <String>] [-Property <String[]>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-Count] [<CommonParameters>]
+Get-MgBetaGroupDriveListItemDelta -InputObject <IGroupsIdentity> [-Count] [-Filter <String>]
+ [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -59,44 +61,13 @@ Invoke function delta
 
 ## PARAMETERS
 
-### -All
-List all pages.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: Delta, Delta1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Count
 Include count of items
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: DeltaViaIdentity1, DeltaViaIdentity
+Parameter Sets: (All)
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -CountVariable
-Specifies a count of the total number of items in a collection.
-By default, this variable will be set in the global scope.
-
-```yaml
-Type: String
-Parameter Sets: Delta, Delta1
-Aliases: CV
 
 Required: False
 Position: Named
@@ -163,21 +134,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -PageSize
-Sets the page size of results.
-
-```yaml
-Type: Int32
-Parameter Sets: Delta, Delta1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

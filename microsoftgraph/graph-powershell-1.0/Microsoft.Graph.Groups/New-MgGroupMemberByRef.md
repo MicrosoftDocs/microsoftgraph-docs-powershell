@@ -15,7 +15,7 @@ The following table shows the types of members that can be added to either secur
 
 ### CreateExpanded (Default)
 ```
-New-MgGroupMemberByRef -GroupId <String> -OdataId <String> [-AdditionalProperties <Hashtable>] [-PassThru]
+New-MgGroupMemberByRef -GroupId <String> [-AdditionalProperties <Hashtable>] [-OdataId <String>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -27,7 +27,7 @@ New-MgGroupMemberByRef -GroupId <String> -BodyParameter <IReferenceCreate> [-Pas
 
 ### CreateViaIdentityExpanded
 ```
-New-MgGroupMemberByRef -InputObject <IGroupsIdentity> -OdataId <String> [-AdditionalProperties <Hashtable>]
+New-MgGroupMemberByRef -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>] [-OdataId <String>]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -125,7 +125,7 @@ Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
-Required: True
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
