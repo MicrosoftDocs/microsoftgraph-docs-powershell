@@ -1,31 +1,33 @@
 ---
 external help file:
 Module Name: Microsoft.Graph.Users.Actions
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/reset-mgusermanageddevicepasscode
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/enable-mguserauthenticationphonemethodsmssignin
 schema: 2.0.0
 ---
 
-# Reset-MgUserManagedDevicePasscode
+# Enable-MgUserAuthenticationPhoneMethodSmsSignIn
 
 ## SYNOPSIS
-Reset passcode
+Enable SMS sign-in for an existing `mobile` phone number registered to a user.
+To be successfully enabled:
 
 ## SYNTAX
 
-### Reset (Default)
+### Enable (Default)
 ```
-Reset-MgUserManagedDevicePasscode -ManagedDeviceId <String> -UserId <String> [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+Enable-MgUserAuthenticationPhoneMethodSmsSignIn -PhoneAuthenticationMethodId <String> -UserId <String>
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### ResetViaIdentity
+### EnableViaIdentity
 ```
-Reset-MgUserManagedDevicePasscode -InputObject <IUsersActionsIdentity> [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+Enable-MgUserAuthenticationPhoneMethodSmsSignIn -InputObject <IUsersActionsIdentity> [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Reset passcode
+Enable SMS sign-in for an existing `mobile` phone number registered to a user.
+To be successfully enabled:
 
 ## EXAMPLES
 
@@ -34,14 +36,14 @@ Reset passcode
 {{ Add code here }}
 ```
 
-{{ Add output here }}
+
 
 ### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
-{{ Add output here }}
+
 
 ## PARAMETERS
 
@@ -51,28 +53,13 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-Parameter Sets: ResetViaIdentity
+Parameter Sets: EnableViaIdentity
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ManagedDeviceId
-The unique identifier of managedDevice
-
-```yaml
-Type: System.String
-Parameter Sets: Reset
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -91,12 +78,27 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -PhoneAuthenticationMethodId
+The unique identifier of phoneAuthenticationMethod
+
+```yaml
+Type: System.String
+Parameter Sets: Enable
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserId
 The unique identifier of user
 
 ```yaml
 Type: System.String
-Parameter Sets: Reset
+Parameter Sets: Enable
 Aliases:
 
 Required: True

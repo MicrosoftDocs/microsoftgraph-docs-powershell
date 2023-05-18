@@ -1,31 +1,45 @@
 ---
 external help file:
 Module Name: Microsoft.Graph.Users.Actions
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/reset-mgusermanageddevicepasscode
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgscanusermanageddevicewindowsdefender
 schema: 2.0.0
 ---
 
-# Reset-MgUserManagedDevicePasscode
+# Invoke-MgScanUserManagedDeviceWindowsDefender
 
 ## SYNOPSIS
-Reset passcode
+Invoke action windowsDefenderScan
 
 ## SYNTAX
 
-### Reset (Default)
+### ScanExpanded (Default)
 ```
-Reset-MgUserManagedDevicePasscode -ManagedDeviceId <String> -UserId <String> [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+Invoke-MgScanUserManagedDeviceWindowsDefender -ManagedDeviceId <String> -UserId <String>
+ [-AdditionalProperties <Hashtable>] [-QuickScan] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### ResetViaIdentity
+### Scan
 ```
-Reset-MgUserManagedDevicePasscode -InputObject <IUsersActionsIdentity> [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+Invoke-MgScanUserManagedDeviceWindowsDefender -ManagedDeviceId <String> -UserId <String>
+ -BodyParameter <IPaths1FegpkwUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphWindowsdefenderscanPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### ScanViaIdentity
+```
+Invoke-MgScanUserManagedDeviceWindowsDefender -InputObject <IUsersActionsIdentity>
+ -BodyParameter <IPaths1FegpkwUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphWindowsdefenderscanPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### ScanViaIdentityExpanded
+```
+Invoke-MgScanUserManagedDeviceWindowsDefender -InputObject <IUsersActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-QuickScan] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Reset passcode
+Invoke action windowsDefenderScan
 
 ## EXAMPLES
 
@@ -34,16 +48,47 @@ Reset passcode
 {{ Add code here }}
 ```
 
-{{ Add output here }}
+
 
 ### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
-{{ Add output here }}
+
 
 ## PARAMETERS
+
+### -AdditionalProperties
+Additional Parameters
+
+```yaml
+Type: System.Collections.Hashtable
+Parameter Sets: ScanExpanded, ScanViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -BodyParameter
+.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IPaths1FegpkwUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphWindowsdefenderscanPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Scan, ScanViaIdentity
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
 
 ### -InputObject
 Identity Parameter
@@ -51,7 +96,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-Parameter Sets: ResetViaIdentity
+Parameter Sets: ScanViaIdentity, ScanViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -66,7 +111,7 @@ The unique identifier of managedDevice
 
 ```yaml
 Type: System.String
-Parameter Sets: Reset
+Parameter Sets: Scan, ScanExpanded
 Aliases:
 
 Required: True
@@ -91,12 +136,27 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -QuickScan
+.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: ScanExpanded, ScanViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserId
 The unique identifier of user
 
 ```yaml
 Type: System.String
-Parameter Sets: Reset
+Parameter Sets: Scan, ScanExpanded
 Aliases:
 
 Required: True
@@ -142,6 +202,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+### Microsoft.Graph.PowerShell.Models.IPaths1FegpkwUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphWindowsdefenderscanPostRequestbodyContentApplicationJsonSchema
+
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
 
 ## OUTPUTS
@@ -156,6 +218,10 @@ COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
+
+`BODYPARAMETER <IPaths1FegpkwUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphWindowsdefenderscanPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[QuickScan <Boolean?>]`: 
 
 `INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AuthenticationMethodId <String>]`: The unique identifier of authenticationMethod
