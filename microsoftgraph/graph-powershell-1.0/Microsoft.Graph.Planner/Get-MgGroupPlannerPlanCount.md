@@ -1,46 +1,51 @@
 ---
 external help file:
 Module Name: Microsoft.Graph.Planner
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/remove-mgplannerbucket
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mggroupplannerplancount
 schema: 2.0.0
 ---
 
-# Remove-MgPlannerBucket
+# Get-MgGroupPlannerPlanCount
 
 ## SYNOPSIS
-Delete **plannerBucket**.
+Get the number of the resource
 
 ## SYNTAX
 
-### Delete (Default)
+### Get (Default)
 ```
-Remove-MgPlannerBucket -PlannerBucketId <String> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+Get-MgGroupPlannerPlanCount -GroupId <String> [-Filter <String>] [-Search <String>] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity
+### GetViaIdentity
 ```
-Remove-MgPlannerBucket -InputObject <IPlannerIdentity> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf]
+Get-MgGroupPlannerPlanCount -InputObject <IPlannerIdentity> [-Filter <String>] [-Search <String>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete **plannerBucket**.
+Get the number of the resource
 
 ## EXAMPLES
 
 ### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Planner
-Remove-MgPlannerBucket -PlannerBucketId $plannerBucketId-If-Match W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
 ```
 
 
 
 ## PARAMETERS
 
-### -IfMatch
-ETag
+### -Filter
+Filter items by property values
 
 ```yaml
 Type: System.String
@@ -48,6 +53,21 @@ Parameter Sets: (All)
 Aliases:
 
 Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -GroupId
+The unique identifier of group
+
+```yaml
+Type: System.String
+Parameter Sets: Get
+Aliases:
+
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -60,7 +80,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: Microsoft.Graph.PowerShell.Models.IPlannerIdentity
-Parameter Sets: DeleteViaIdentity
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
@@ -70,59 +90,13 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PlannerBucketId
-The unique identifier of plannerBucket
+### -Search
+Search items by search phrases
 
 ```yaml
 Type: System.String
-Parameter Sets: Delete
+Parameter Sets: (All)
 Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
 
 Required: False
 Position: Named
@@ -140,7 +114,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### System.Boolean
+### System.Int32
 
 ## NOTES
 
