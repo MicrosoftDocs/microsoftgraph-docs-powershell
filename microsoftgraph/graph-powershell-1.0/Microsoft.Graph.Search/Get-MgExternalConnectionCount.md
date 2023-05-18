@@ -1,23 +1,23 @@
 ---
 external help file:
 Module Name: Microsoft.Graph.Search
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternal
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnectioncount
 schema: 2.0.0
 ---
 
-# Get-MgExternal
+# Get-MgExternalConnectionCount
 
 ## SYNOPSIS
-Get external
+Get the number of the resource
 
 ## SYNTAX
 
 ```
-Get-MgExternal [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgExternalConnectionCount [-Filter <String>] [-Search <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get external
+Get the number of the resource
 
 ## EXAMPLES
 
@@ -26,24 +26,24 @@ Get external
 {{ Add code here }}
 ```
 
-{{ Add output here }}
+
 
 ### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
-{{ Add output here }}
+
 
 ## PARAMETERS
 
-### -ExpandProperty
-Expand related entities
+### -Filter
+Filter items by property values
 
 ```yaml
-Type: System.String[]
+Type: System.String
 Parameter Sets: (All)
-Aliases: Expand
+Aliases:
 
 Required: False
 Position: Named
@@ -52,13 +52,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Property
-Select properties to be returned
+### -Search
+Search items by search phrases
 
 ```yaml
-Type: System.String[]
+Type: System.String
 Parameter Sets: (All)
-Aliases: Select
+Aliases:
 
 Required: False
 Position: Named
@@ -74,7 +74,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalConnection
+### System.Int32
 
 ## NOTES
 

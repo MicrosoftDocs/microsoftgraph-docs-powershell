@@ -1,43 +1,64 @@
 ---
 external help file:
 Module Name: Microsoft.Graph.Search
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgexternalconnectiongroupmember
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgexternalconnectionitemactivity
 schema: 2.0.0
 ---
 
-# Remove-MgExternalConnectionGroupMember
+# Remove-MgExternalConnectionItemActivity
 
 ## SYNOPSIS
-Delete an identity resource to remove the corresponding member from an externalGroup.
+Delete navigation property activities for external
 
 ## SYNTAX
 
 ### Delete (Default)
 ```
-Remove-MgExternalConnectionGroupMember -ExternalConnectionId <String> -ExternalGroupId <String>
- -IdentityId <String> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Remove-MgExternalConnectionItemActivity -ExternalActivityId <String> -ExternalConnectionId <String>
+ -ExternalItemId <String> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgExternalConnectionGroupMember -InputObject <ISearchIdentity> [-IfMatch <String>] [-PassThru]
+Remove-MgExternalConnectionItemActivity -InputObject <ISearchIdentity> [-IfMatch <String>] [-PassThru]
  [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete an identity resource to remove the corresponding member from an externalGroup.
+Delete navigation property activities for external
 
 ## EXAMPLES
 
 ### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Search
-Remove-MgExternalConnectionGroupMember -ExternalConnectionId $externalConnectionId -ExternalGroupId $externalGroupId -IdentityId $identityId
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
 ```
 
 
 
 ## PARAMETERS
+
+### -ExternalActivityId
+The unique identifier of externalActivity
+
+```yaml
+Type: System.String
+Parameter Sets: Delete
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -ExternalConnectionId
 The unique identifier of externalConnection
@@ -54,23 +75,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ExternalGroupId
-The unique identifier of externalGroup
-
-```yaml
-Type: System.String
-Parameter Sets: Delete
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -IdentityId
-The unique identifier of identity
+### -ExternalItemId
+The unique identifier of externalItem
 
 ```yaml
 Type: System.String
