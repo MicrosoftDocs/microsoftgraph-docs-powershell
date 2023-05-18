@@ -31,7 +31,7 @@ To set the execution policy, run:
 
 ## Installation
 
-The Microsoft Graph PowerShell SDK comes in 2 modules, Microsoft.Graph and Microsoft.Graph.Beta, that you will install separately. These modules call the Microsoft Graph v1.0 and Microsoft Graph beta endpoints respectively. You can install the 2 modules on the same PowerShell version.
+The Microsoft Graph PowerShell SDK comes in 2 modules, Microsoft.Graph and Microsoft.Graph.Beta, that you will install separately. These modules call the Microsoft Graph v1.0 and Microsoft Graph beta endpoints, respectively. You can install the 2 modules on the same PowerShell version.
 
 Using the **Install-Module** cmdlet is the preferred installation method for the Microsoft Graph PowerShell modules.
 
