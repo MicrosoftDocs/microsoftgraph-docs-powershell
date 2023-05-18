@@ -90,12 +90,12 @@ function Update-GraphModuleHelp {
     $moduleDocsPath = Join-Path $PSScriptRoot ".\$GraphProfilePath\$Path"
     $logsPath = Join-Path $PSScriptRoot ".\logs\$moduleImportName-$GraphProfile.txt"
 
-    Import-Module $moduleImportName -RequiredVersion 2.0.0 -Force -Global
+    Import-Module $moduleImportName -RequiredVersion 2.0.0 -Force
     Update-Help -ModuleDocsPath $moduleDocsPath -LogsPath $logsPath
 }
 
 # Install PlatyPS
-Install-Module PlatyPS -Force
+#Install-Module PlatyPS -Force
 
 Import-Module PlatyPS -Force -Scope Global
 # Errors in PlatyPS validation.
@@ -104,20 +104,20 @@ $LASTEXITCODE = $null
 if ($PSEdition -ne 'Core') {
     Write-Error 'This script requires PowerShell Core to execute. [Note] Generated cmdlets will work in both PowerShell Core or Windows PowerShell.'
 }
-Set-Location microsoftgraph-docs-powershell
-$date = Get-Date -Format "dd-MM-yyyy"
-$proposedBranch = "powershell_v2_$date"
-$exists = git branch -l $proposedBranch
-if ([string]::IsNullOrEmpty($exists)) {
-    git checkout -b $proposedBranch
-}else{
-	Write-Host "Branch already exists"
-    $currentBranch = git rev-parse --abbrev-ref HEAD
-     if($currentBranch -ne $proposedBranch){
-        git checkout $proposedBranch
-     }
+# Set-Location microsoftgraph-docs-powershell
+# $date = Get-Date -Format "dd-MM-yyyy"
+# $proposedBranch = "powershell_v2_$date"
+# $exists = git branch -l $proposedBranch
+# if ([string]::IsNullOrEmpty($exists)) {
+#     git checkout -b $proposedBranch
+# }else{
+# 	Write-Host "Branch already exists"
+#     $currentBranch = git rev-parse --abbrev-ref HEAD
+#      if($currentBranch -ne $proposedBranch){
+#         git checkout $proposedBranch
+#      }
      
-}
+# }
 if (-not (Test-Path $ModuleMappingConfigPath)) {
     Write-Error "Module mapping file not be found: $ModuleMappingConfigPath."
 }
