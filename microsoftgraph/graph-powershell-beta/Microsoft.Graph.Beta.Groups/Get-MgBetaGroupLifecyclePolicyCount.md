@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Groups-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouplifecyclepolicycount
 schema: 2.0.0
@@ -21,15 +21,19 @@ Get the number of the resource
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
 {{ Add code here }}
 ```
 
-### EXAMPLE 2
-```
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
 {{ Add code here }}
 ```
+
+
 
 ## PARAMETERS
 
@@ -37,7 +41,7 @@ Get the number of the resource
 Filter items by property values
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -52,7 +56,7 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -71,9 +75,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Int32
+
 ## NOTES
 
-## RELATED LINKS
+ALIASES
 
-[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouplifecyclepolicycount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouplifecyclepolicycount)
+## RELATED LINKS
 

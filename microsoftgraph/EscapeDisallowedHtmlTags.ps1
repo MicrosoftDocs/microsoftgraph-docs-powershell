@@ -6,7 +6,7 @@ Param(
 )
 function Get-GraphMapping {
     $graphMapping = @{}
-    $graphMapping.Add("v1.0", "graph-powershell-1.0")
+    #$graphMapping.Add("v1.0", "graph-powershell-1.0")
     $graphMapping.Add("beta", "graph-powershell-beta")
     return $graphMapping
 }
@@ -251,20 +251,20 @@ try{
 }	
 return "NA"	
 }
-Set-Location microsoftgraph-docs-powershell
-$date = Get-Date -Format "dd-MM-yyyy"
-$proposedBranch = "powershell_v2_test"
-$exists = git branch -l $proposedBranch
-if ([string]::IsNullOrEmpty($exists)) {
-    git checkout -b $proposedBranch
-}else{
-	Write-Host "Branch already exists"
-    $currentBranch = git rev-parse --abbrev-ref HEAD
-    if($currentBranch -ne $proposedBranch){
-        git checkout $proposedBranch
-     }
-     git checkout $proposedBranch
-}
+# Set-Location microsoftgraph-docs-powershell
+# $date = Get-Date -Format "dd-MM-yyyy"
+# $proposedBranch = "powershell_v2_test"
+# $exists = git branch -l $proposedBranch
+# if ([string]::IsNullOrEmpty($exists)) {
+#     git checkout -b $proposedBranch
+# }else{
+# 	Write-Host "Branch already exists"
+#     $currentBranch = git rev-parse --abbrev-ref HEAD
+#     if($currentBranch -ne $proposedBranch){
+#         git checkout $proposedBranch
+#      }
+#      git checkout $proposedBranch
+# }
 Escape-Angle-Brackets -ModulesToGenerate $ModulesToGenerate
 #cd microsoftgraph-docs-powershell
 Write-Host -ForegroundColor Green "-------------Done-------------"
