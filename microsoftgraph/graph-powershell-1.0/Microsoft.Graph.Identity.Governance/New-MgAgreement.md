@@ -1,7 +1,7 @@
 ---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.Governance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgagreement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgagreement
 schema: 2.0.0
 ---
 
@@ -12,18 +12,18 @@ Add new entity to agreements
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
 New-MgAgreement [-Acceptances <IMicrosoftGraphAgreementAcceptance[]>] [-AdditionalProperties <Hashtable>]
  [-DisplayName <String>] [-File <IMicrosoftGraphAgreementFile>]
  [-Files <IMicrosoftGraphAgreementFileLocalization[]>] [-Id <String>] [-IsPerDeviceAcceptanceRequired]
  [-IsViewingBeforeAcceptanceRequired] [-TermsExpiration <IMicrosoftGraphTermsExpiration>]
- [-UserReacceptRequiredFrequency <TimeSpan>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UserReacceptRequiredFrequency <TimeSpan>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
-New-MgAgreement -BodyParameter <IMicrosoftGraphAgreement> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgAgreement -BodyParameter <IMicrosoftGraphAgreement> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -31,16 +31,30 @@ Add new entity to agreements
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -Acceptances
 Read-only.
 Information about acceptances of this agreement.
-To construct, please use Get-Help -Online and see NOTES section for ACCEPTANCES properties and create a hash table.
+To construct, see NOTES section for ACCEPTANCES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAgreementAcceptance[]
-Parameter Sets: CreateExpanded1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAgreementAcceptance[]
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -54,8 +68,8 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CreateExpanded1
+Type: System.Collections.Hashtable
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -67,11 +81,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 agreement
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAgreement
-Parameter Sets: Create1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAgreement
+Parameter Sets: Create
 Aliases:
 
 Required: True
@@ -87,8 +101,8 @@ The display name is used for internal tracking of the agreement but is not shown
 Supports $filter (eq).
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -100,11 +114,11 @@ Accept wildcard characters: False
 
 ### -File
 agreementFile
-To construct, please use Get-Help -Online and see NOTES section for FILE properties and create a hash table.
+To construct, see NOTES section for FILE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAgreementFile
-Parameter Sets: CreateExpanded1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAgreementFile
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -119,11 +133,11 @@ PDFs linked to this agreement.
 This property is in the process of being deprecated.
 Use the file property instead.
 Supports $expand.
-To construct, please use Get-Help -Online and see NOTES section for FILES properties and create a hash table.
+To construct, see NOTES section for FILES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAgreementFileLocalization[]
-Parameter Sets: CreateExpanded1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAgreementFileLocalization[]
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -138,8 +152,8 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -155,8 +169,8 @@ The end user is required to register their device in Azure AD, if they haven't a
 Supports $filter (eq).
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: CreateExpanded1
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -171,8 +185,8 @@ Indicates whether the user has to expand the agreement before accepting.
 Supports $filter (eq).
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: CreateExpanded1
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -184,11 +198,11 @@ Accept wildcard characters: False
 
 ### -TermsExpiration
 termsExpiration
-To construct, please use Get-Help -Online and see NOTES section for TERMSEXPIRATION properties and create a hash table.
+To construct, see NOTES section for TERMSEXPIRATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTermsExpiration
-Parameter Sets: CreateExpanded1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermsExpiration
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -204,8 +218,8 @@ The value is represented in ISO 8601 format for durations.
 Supports $filter (eq).
 
 ```yaml
-Type: TimeSpan
-Parameter Sets: CreateExpanded1
+Type: System.TimeSpan
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -219,7 +233,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -235,7 +249,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -252,9 +266,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAgreement
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAgreement
+
 ## NOTES
 
 ALIASES
@@ -264,7 +280,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ACCEPTANCES <IMicrosoftGraphAgreementAcceptance\[]>: Read-only. Information about acceptances of this agreement.
+`ACCEPTANCES <IMicrosoftGraphAgreementAcceptance[]>`: Read-only. Information about acceptances of this agreement.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AgreementFileId <String>]`: The identifier of the agreement file accepted by the user.
   - `[AgreementId <String>]`: The identifier of the agreement.
@@ -280,7 +296,7 @@ ACCEPTANCES <IMicrosoftGraphAgreementAcceptance\[]>: Read-only. Information abou
   - `[UserId <String>]`: The identifier of the user who accepted the agreement. Supports $filter (eq).
   - `[UserPrincipalName <String>]`: UPN of the user when the acceptance was recorded.
 
-BODYPARAMETER `<IMicrosoftGraphAgreement>`: agreement
+`BODYPARAMETER <IMicrosoftGraphAgreement>`: agreement
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Acceptances <IMicrosoftGraphAgreementAcceptance[]>]`: Read-only. Information about acceptances of this agreement.
@@ -338,7 +354,7 @@ BODYPARAMETER `<IMicrosoftGraphAgreement>`: agreement
     - `[StartDateTime <DateTime?>]`: The DateTime when the agreement is set to expire for all users. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[UserReacceptRequiredFrequency <TimeSpan?>]`: The duration after which the user must re-accept the terms of use. The value is represented in ISO 8601 format for durations. Supports $filter (eq).
 
-FILE `<IMicrosoftGraphAgreementFile>`: agreementFile
+`FILE <IMicrosoftGraphAgreementFile>`: agreementFile
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CreatedDateTime <DateTime?>]`: The date time representing when the file was created.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[DisplayName <String>]`: Localized display name of the policy file of an agreement. The localized display name is shown to end users who view the agreement.
@@ -369,7 +385,7 @@ FILE `<IMicrosoftGraphAgreementFile>`: agreementFile
       - `[Language <String>]`: The language of the agreement file in the format 'languagecode2-country/regioncode2'. 'languagecode2' is a lowercase two-letter code derived from ISO 639-1, while 'country/regioncode2' is derived from ISO 3166 and usually consists of two uppercase letters, or a BCP-47 language tag. For example, U.S. English is en-US. Read-only.
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
-FILES <IMicrosoftGraphAgreementFileLocalization\[]>: PDFs linked to this agreement. This property is in the process of being deprecated. Use the file property instead. Supports $expand.
+`FILES <IMicrosoftGraphAgreementFileLocalization[]>`: PDFs linked to this agreement. This property is in the process of being deprecated. Use the file property instead. Supports $expand.
   - `[CreatedDateTime <DateTime?>]`: The date time representing when the file was created.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[DisplayName <String>]`: Localized display name of the policy file of an agreement. The localized display name is shown to end users who view the agreement.
   - `[FileData <IMicrosoftGraphAgreementFileData>]`: agreementFileData
@@ -390,11 +406,10 @@ FILES <IMicrosoftGraphAgreementFileLocalization\[]>: PDFs linked to this agreeme
     - `[Language <String>]`: The language of the agreement file in the format 'languagecode2-country/regioncode2'. 'languagecode2' is a lowercase two-letter code derived from ISO 639-1, while 'country/regioncode2' is derived from ISO 3166 and usually consists of two uppercase letters, or a BCP-47 language tag. For example, U.S. English is en-US. Read-only.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
-TERMSEXPIRATION `<IMicrosoftGraphTermsExpiration>`: termsExpiration
+`TERMSEXPIRATION <IMicrosoftGraphTermsExpiration>`: termsExpiration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Frequency <TimeSpan?>]`: Represents the frequency at which the terms will expire, after its first expiration as set in startDateTime. The value is represented in ISO 8601 format for durations. For example, PT1M represents a time period of 1 month.
   - `[StartDateTime <DateTime?>]`: The DateTime when the agreement is set to expire for all users. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ## RELATED LINKS
 
-## RELATED LINKS
