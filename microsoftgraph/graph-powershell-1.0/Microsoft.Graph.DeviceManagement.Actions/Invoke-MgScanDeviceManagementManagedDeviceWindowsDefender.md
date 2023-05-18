@@ -1,47 +1,45 @@
 ---
 external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/clear-mgdevicemanagementmanageddevice
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgscandevicemanagementmanageddevicewindowsdefender
 schema: 2.0.0
 ---
 
-# Clear-MgDeviceManagementManagedDevice
+# Invoke-MgScanDeviceManagementManagedDeviceWindowsDefender
 
 ## SYNOPSIS
-Wipe a device
+Invoke action windowsDefenderScan
 
 ## SYNTAX
 
-### WipeExpanded (Default)
+### ScanExpanded (Default)
 ```
-Clear-MgDeviceManagementManagedDevice -ManagedDeviceId <String> [-AdditionalProperties <Hashtable>]
- [-KeepEnrollmentData] [-KeepUserData] [-MacOSUnlockCode <String>] [-PersistEsimDataPlan] [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+Invoke-MgScanDeviceManagementManagedDeviceWindowsDefender -ManagedDeviceId <String>
+ [-AdditionalProperties <Hashtable>] [-QuickScan] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Wipe
+### Scan
 ```
-Clear-MgDeviceManagementManagedDevice -ManagedDeviceId <String>
- -BodyParameter <IPaths9Mjyr1DevicemanagementManageddevicesManageddeviceIdMicrosoftGraphWipePostRequestbodyContentApplicationJsonSchema>
+Invoke-MgScanDeviceManagementManagedDeviceWindowsDefender -ManagedDeviceId <String>
+ -BodyParameter <IPathsByrzneDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphWindowsdefenderscanPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### WipeViaIdentity
+### ScanViaIdentity
 ```
-Clear-MgDeviceManagementManagedDevice -InputObject <IDeviceManagementActionsIdentity>
- -BodyParameter <IPaths9Mjyr1DevicemanagementManageddevicesManageddeviceIdMicrosoftGraphWipePostRequestbodyContentApplicationJsonSchema>
+Invoke-MgScanDeviceManagementManagedDeviceWindowsDefender -InputObject <IDeviceManagementActionsIdentity>
+ -BodyParameter <IPathsByrzneDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphWindowsdefenderscanPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### WipeViaIdentityExpanded
+### ScanViaIdentityExpanded
 ```
-Clear-MgDeviceManagementManagedDevice -InputObject <IDeviceManagementActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-KeepEnrollmentData] [-KeepUserData] [-MacOSUnlockCode <String>]
- [-PersistEsimDataPlan] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Invoke-MgScanDeviceManagementManagedDeviceWindowsDefender -InputObject <IDeviceManagementActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-QuickScan] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Wipe a device
+Invoke action windowsDefenderScan
 
 ## EXAMPLES
 
@@ -50,14 +48,14 @@ Wipe a device
 {{ Add code here }}
 ```
 
-{{ Add output here }}
+
 
 ### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
-{{ Add output here }}
+
 
 ## PARAMETERS
 
@@ -66,7 +64,7 @@ Additional Parameters
 
 ```yaml
 Type: System.Collections.Hashtable
-Parameter Sets: WipeExpanded, WipeViaIdentityExpanded
+Parameter Sets: ScanExpanded, ScanViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -81,8 +79,8 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPaths9Mjyr1DevicemanagementManageddevicesManageddeviceIdMicrosoftGraphWipePostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Wipe, WipeViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IPathsByrzneDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphWindowsdefenderscanPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Scan, ScanViaIdentity
 Aliases:
 
 Required: True
@@ -98,7 +96,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-Parameter Sets: WipeViaIdentity, WipeViaIdentityExpanded
+Parameter Sets: ScanViaIdentity, ScanViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -108,57 +106,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -KeepEnrollmentData
-.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: WipeExpanded, WipeViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -KeepUserData
-.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: WipeExpanded, WipeViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -MacOSUnlockCode
-.
-
-```yaml
-Type: System.String
-Parameter Sets: WipeExpanded, WipeViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ManagedDeviceId
 The unique identifier of managedDevice
 
 ```yaml
 Type: System.String
-Parameter Sets: Wipe, WipeExpanded
+Parameter Sets: Scan, ScanExpanded
 Aliases:
 
 Required: True
@@ -183,12 +136,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PersistEsimDataPlan
+### -QuickScan
 .
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
-Parameter Sets: WipeExpanded, WipeViaIdentityExpanded
+Parameter Sets: ScanExpanded, ScanViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -236,7 +189,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
 
-### Microsoft.Graph.PowerShell.Models.IPaths9Mjyr1DevicemanagementManageddevicesManageddeviceIdMicrosoftGraphWipePostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.PowerShell.Models.IPathsByrzneDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphWindowsdefenderscanPostRequestbodyContentApplicationJsonSchema
 
 ## OUTPUTS
 
@@ -251,12 +204,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-`BODYPARAMETER <IPaths9Mjyr1DevicemanagementManageddevicesManageddeviceIdMicrosoftGraphWipePostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsByrzneDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphWindowsdefenderscanPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[KeepEnrollmentData <Boolean?>]`: 
-  - `[KeepUserData <Boolean?>]`: 
-  - `[MacOSUnlockCode <String>]`: 
-  - `[PersistEsimDataPlan <Boolean?>]`: 
+  - `[QuickScan <Boolean?>]`: 
 
 `INPUTOBJECT <IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[DeviceCompliancePolicyId <String>]`: The unique identifier of deviceCompliancePolicy
