@@ -95,7 +95,9 @@ function Update-GraphModuleHelp {
 }
 
 # Install PlatyPS
-Install-Module PlatyPS -Force
+if (!(Get-Module -Name PlatyPS -ListAvailable)) {
+    Install-Module PlatyPS -Force
+}
 
 Import-Module PlatyPS -Force -Scope Global
 # Errors in PlatyPS validation.
@@ -106,7 +108,7 @@ if ($PSEdition -ne 'Core') {
 }
 Set-Location microsoftgraph-docs-powershell
 $date = Get-Date -Format "dd-MM-yyyy"
-$proposedBranch = "powershell_v2_$date"
+$proposedBranch = "powershell_v2_test"
 $exists = git branch -l $proposedBranch
 if ([string]::IsNullOrEmpty($exists)) {
     git checkout -b $proposedBranch
