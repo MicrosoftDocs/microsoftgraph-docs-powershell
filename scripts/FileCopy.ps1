@@ -2,14 +2,14 @@
 # Licensed under the MIT License.
 Param(
     $ModulesToGenerate = @(),
-    [string] $ModuleMappingConfigPath = ("..\msgraph-sdk-powershell\config\ModulesMapping.jsonc"),
-	[string] $SDKDocsPath = ("..\msgraph-sdk-powershell\src"),
-	[string] $WorkLoadDocsPath = ("..\microsoftgraph-docs-powershell\microsoftgraph")
+    [string] $ModuleMappingConfigPath = (Join-Path $PSScriptRoot "..\microsoftgraph\config\ModulesMapping.jsonc"),
+	[string] $SDKDocsPath = ("..\..\msgraph-sdk-powershell\src"),
+	[string] $WorkLoadDocsPath = (Join-Path $PSScriptRoot "..\microsoftgraph")
 )
 function Get-GraphMapping {
     $graphMapping = @{}
-    $graphMapping.Add("v1.0", "v1.0")
-    $graphMapping.Add("v1.0-beta", "v1.0-beta")
+    #$graphMapping.Add("v1.0", "v1.0")
+    $graphMapping.Add("beta", "beta")
     return $graphMapping
 }
 
@@ -23,7 +23,7 @@ function Start-Copy {
     $GraphMapping.Keys | ForEach-Object {
         $graphProfile = $_
 		$profilePath = "graph-powershell-1.0"
-		if($graphProfile -eq "v1.0-beta"){
+		if($graphProfile -eq "beta"){
 			$profilePath = "graph-powershell-beta"
 		}
         Get-FilesByProfile -GraphProfile $graphProfile -GraphProfilePath $profilePath -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate 
@@ -31,7 +31,7 @@ function Start-Copy {
 }
 function Get-FilesByProfile{
  Param(
-        [ValidateSet("v1.0-beta", "v1.0")]
+        [ValidateSet("beta", "v1.0")]
         [string] $GraphProfile = "v1.0",
         [ValidateNotNullOrEmpty()]
         [string] $GraphProfilePath = "graph-powershell-1.0",
@@ -40,17 +40,16 @@ function Get-FilesByProfile{
         [ValidateNotNullOrEmpty()]
         $ModulesToGenerate = @()
     )
-
     $ModulesToGenerate | ForEach-Object {
         $ModuleName = $_
-		$docs = Join-Path $SDKDocsPath $ModuleName $ModuleName "docs" $GraphProfile
-        Copy-Files -DocPath $docs -GraphProfilePath $GraphProfilePath -Module $ModuleName -ModulePrefix $ModulePrefix
+		$docs = Join-Path $SDKDocsPath $ModuleName $GraphProfile "docs"
+        Copy-Files -DocPath $docs -GraphProfilePath $GraphProfilePath -Module $ModuleName -ModulePrefix $ModulePrefix -GraphProfile $GraphProfile
     }
 
 }
 function Copy-Files{
     param(
-        [ValidateSet("v1.0-beta", "v1.0")]
+        [ValidateSet("beta", "beta")]
         [string] $GraphProfile = "v1.0",
         [ValidateNotNullOrEmpty()]
         [string] $GraphProfilePath = "graph-powershell-1.0",
@@ -59,31 +58,58 @@ function Copy-Files{
         [ValidateNotNullOrEmpty()]
         [string] $ModulePrefix = "Microsoft.Graph",
 		[ValidateNotNullOrEmpty()]
-        [string] $DocPath = "..\msgraph-sdk-powershell\src\Users\Users\docs\v1.0"
+        [string] $DocPath = "..\msgraph-sdk-powershell\src\Users\v1.0\docs"
     )
-	$moduleImportName = "$ModulePrefix.$ModuleName"
-     $destination = Join-Path $WorkLoadDocsPath $GraphProfilePath $moduleImportName
+	    $Path = "$ModulePrefix.$ModuleName"
+        $destination = Join-Path $WorkLoadDocsPath $GraphProfilePath $Path
+
 	 $source = Join-Path $DocPath "\*"
-	
-	if ((Test-Path $DocPath)) {
-		 Write-Host -ForegroundColor DarkYellow "Copying markdown files to " $destination
-		Copy-Item $source -Destination $destination
-	}
+     if (-not(Test-Path $destination)) {
+        New-Item -Path $destination -ItemType Directory
+     }
+     if ((Test-Path $DocPath)) {
+     if($GraphProfile -eq "beta"){
+        Write-Host -ForegroundColor DarkYellow "Copying beta markdown files to " $destination
+        Get-ChildItem $destination -Recurse -File | ForEach-Object {
+                Remove-Item $_
+            
+        }
+        Get-ChildItem $DocPath -Recurse -File | ForEach-Object {
+
+            Copy-Item $_  -Destination $destination
+            $FileName = [System.IO.Path]::GetFileName($_)
+           
+            if($FileName.StartsWith("Microsoft.Graph")){
+                $OldDestination = Join-Path $destination $FileName
+                $NewDestination= Join-Path $destination $FileName.Replace("Microsoft.Graph.Beta", "Microsoft.Graph")
+                Move-Item $OldDestination -Destination $NewDestination 
+            }
+
+        }
+        #Write-Host $source " = " $destination
+     }else{
+	    Write-Host -ForegroundColor DarkYellow "Copying v1 markdown files to " $destination
+	    Get-ChildItem $DocPath -Recurse -File | ForEach-Object {
+        Write-Host "File $_"
+        Copy-Item $_  -Destination $destination
+      }
+	 }
+     }
       
 }
 
 
 
-Set-Location microsoftgraph-docs-powershell
-$date = Get-Date -Format "dd-MM-yyyy"
-$proposedBranch = "weekly_update_help_files_"+$date
-$exists = git branch -l $proposedBranch
-if ([string]::IsNullOrEmpty($exists)) {
-    git checkout -b $proposedBranch
-}else{
-	Write-Host "Branch already exists"
-     git checkout $proposedBranch
-}
+# Set-Location microsoftgraph-docs-powershell
+# $date = Get-Date -Format "dd-MM-yyyy"
+# $proposedBranch = "weekly_update_help_files_"+$date
+# $exists = git branch -l $proposedBranch
+# if ([string]::IsNullOrEmpty($exists)) {
+#     git checkout -b $proposedBranch
+# }else{
+# 	Write-Host "Branch already exists"
+#      git checkout $proposedBranch
+# }
 if (-not (Test-Path $ModuleMappingConfigPath)) {
     Write-Error "Module mapping file not be found: $ModuleMappingConfigPath."
 }
@@ -92,7 +118,7 @@ if ($ModulesToGenerate.Count -eq 0) {
     $ModulesToGenerate = $ModuleMapping.Keys
 }
 
-Set-Location ..\microsoftgraph-docs-powershell
+#Set-Location ..\microsoftgraph-docs-powershell
 Write-Host -ForegroundColor Green "-------------finished checking out to today's branch-------------"
 Start-Copy -ModulesToGenerate $ModulesToGenerate
 Write-Host -ForegroundColor Green "-------------Done-------------"
