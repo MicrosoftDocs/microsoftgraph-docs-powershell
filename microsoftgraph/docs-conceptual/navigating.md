@@ -5,7 +5,7 @@ description: "The Microsoft Graph PowerShell SDK contains a large number of comm
 author: msewaweru
 manager: CelesteDG
 ms.topic: conceptual
-ms.date: 07/17/2023
+ms.date: 05/17/2023
 ms.author: eunicewaweru
 ---
 
