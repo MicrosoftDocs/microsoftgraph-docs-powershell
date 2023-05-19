@@ -38,7 +38,13 @@ function Move-Files{
             $OldFileName = [System.IO.Path]::GetFileName($_)
             $OldDestination = $_
             $NewPathDestination = Join-Path $ModuleDocsPath $OldFileName.Replace("-MgBeta", "-Mg")
-            Move-Item $OldDestination -Destination $NewPathDestination  
+            Move-Item $OldDestination -Destination $NewPathDestination
+            if($OldFileName.StartsWith("Microsoft.Graph")){
+                $OldGraphDestination = Join-Path $ModuleDocsPath $OldFileName
+                $NewGraphDestination= Join-Path $ModuleDocsPath $OldFileName.Replace("Microsoft.Graph.Beta", "Microsoft.Graph")
+                Move-Item $OldGraphDestination -Destination $NewGraphDestination 
+            }
+  
         }
     }
 }
