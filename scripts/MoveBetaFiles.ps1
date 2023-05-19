@@ -13,7 +13,7 @@ function Start-Moving {
 
     $ModulePrefix = "Microsoft.Graph"
 
-	$profilePath = "graph-powershell-1.0"
+	$profilePath = "graph-powershell-beta"
 		
     Move-Files -GraphProfilePath $profilePath -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate 
     
@@ -22,7 +22,7 @@ function Start-Moving {
 function Move-Files{
     Param(
         [ValidateNotNullOrEmpty()]
-        [string] $GraphProfilePath = "graph-powershell-1.0",
+        [string] $GraphProfilePath = "graph-powershell-beta",
         [ValidateNotNullOrEmpty()]
         [string] $ModulePrefix = "Microsoft.Graph",
         [ValidateNotNullOrEmpty()]
@@ -42,3 +42,13 @@ function Move-Files{
         }
     }
 }
+if (-not (Test-Path $ModuleMappingConfigPath)) {
+    Write-Error "Module mapping file not be found: $ModuleMappingConfigPath."
+}
+if ($ModulesToGenerate.Count -eq 0) {
+    [HashTable] $ModuleMapping = Get-Content $ModuleMappingConfigPath | ConvertFrom-Json -AsHashTable
+    $ModulesToGenerate = $ModuleMapping.Keys
+}
+Write-Host -ForegroundColor Green "-------------finished checking out to today's branch-------------"
+Start-Moving -ModulesToGenerate $ModulesToGenerate
+Write-Host -ForegroundColor Green "-------------Done-------------"
