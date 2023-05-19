@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mguseronenotenotebook
 schema: 2.0.0
+ms.prod: onenote
 ---
 
 # New-MgUserOnenoteNotebook

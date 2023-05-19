@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.CrossDeviceExperiences-help.xml
 Module Name: Microsoft.Graph.Beta.CrossDeviceExperiences
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/get-mgbetauseractivity
 schema: 2.0.0
+ms.prod: project-rome
 ---
 
 # Get-MgBetaUserActivity

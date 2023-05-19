@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetauseronlinemeetingvirtualappointment
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Update-MgBetaUserOnlineMeetingVirtualAppointment

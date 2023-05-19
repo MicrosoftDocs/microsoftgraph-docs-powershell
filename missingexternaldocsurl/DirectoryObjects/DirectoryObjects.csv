@@ -17,3 +17,15 @@ v1.0-beta, Get-MgDirectoryObjectMemberObject, /directoryObjects/{directoryObject
 v1.0-beta, Get-MgDirectoryObjectUserOwnedObject, /directoryObjects/getUserOwnedObjects
 v1.0-beta, New-MgDirectoryObject, /directoryObjects
 v1.0-beta, Test-MgDirectoryObjectProperty, /directoryObjects/validateProperties
+v1.0, Get-MgDirectoryObjectCount, /directoryObjects/$count
+v1.0, Get-MgDirectoryObjectDelta, /directoryObjects/delta
+v1.0-beta, Confirm-MgBetaDirectoryObjectMemberGroup, /directoryObjects/{directoryObject-id}/checkMemberGroups
+v1.0-beta, Confirm-MgBetaDirectoryObjectMemberObject, /directoryObjects/{directoryObject-id}/checkMemberObjects
+v1.0-beta, Get-MgBetaDirectoryObjectById, /directoryObjects/getByIds
+v1.0-beta, Get-MgBetaDirectoryObjectCount, /directoryObjects/$count
+v1.0-beta, Get-MgBetaDirectoryObjectDelta, /directoryObjects/delta
+v1.0-beta, Get-MgBetaDirectoryObjectMemberGroup, /directoryObjects/{directoryObject-id}/getMemberGroups
+v1.0-beta, Get-MgBetaDirectoryObjectMemberObject, /directoryObjects/{directoryObject-id}/getMemberObjects
+v1.0-beta, Get-MgBetaDirectoryObjectUserOwnedObject, /directoryObjects/getUserOwnedObjects
+v1.0-beta, New-MgBetaDirectoryObject, /directoryObjects
+v1.0-beta, Test-MgBetaDirectoryObjectProperty, /directoryObjects/validateProperties
