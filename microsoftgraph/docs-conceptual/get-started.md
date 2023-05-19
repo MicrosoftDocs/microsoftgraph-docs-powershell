@@ -15,7 +15,7 @@ In this guide, you'll use the Microsoft Graph PowerShell SDK to perform some bas
 
 ## API version
 
-The SDK contains 2 modules, Microsoft.Graph and Microsoft.Graph.Beta, that use the [Microsoft Graph REST API v1.0](/graph/api/overview?view=graph-rest-1.0&preserve-view=true) and [Microsoft Graph REST API beta](/graph/api/overview?view=graph-rest-beta&preserve-view=true) . Cmdlets are available for the module that is installed.
+The SDK contains 2 modules, Microsoft.Graph and Microsoft.Graph.Beta, that call the [Microsoft Graph REST API v1.0](/graph/api/overview?view=graph-rest-1.0&preserve-view=true) and [Microsoft Graph REST API beta](/graph/api/overview?view=graph-rest-beta&preserve-view=true), respectively. Cmdlets are available for the module that is installed.
 
 ## Authentication
 
