@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetainvitedriveitem
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgBetaInviteDriveItem
 
 ## SYNOPSIS
-Sends a sharing invitation for a **DriveItem**.\nA sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
+Sends a sharing invitation for a **DriveItem**.nA sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
 
 ## SYNTAX
 
@@ -43,7 +43,7 @@ Invoke-MgBetaInviteDriveItem -InputObject <IFilesIdentity>
 ```
 
 ## DESCRIPTION
-Sends a sharing invitation for a **DriveItem**.\nA sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
+Sends a sharing invitation for a **DriveItem**.nA sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
 
 ## EXAMPLES
 

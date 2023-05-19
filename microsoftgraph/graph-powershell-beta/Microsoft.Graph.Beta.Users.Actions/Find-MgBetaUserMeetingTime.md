@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/find-mgbetausermeetingtime
@@ -10,7 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Suggest meeting times and locations based on organizer and attendee availability, and time or location constraints specified as parameters.
 If **findMeetingTimes** cannot return any meeting suggestions, the response would indicate a reason in the **emptySuggestionsReason** property.
-\nBased on this value, you can better adjust the parameters and call **findMeetingTimes** again.
+nBased on this value, you can better adjust the parameters and call **findMeetingTimes** again.
 The algorithm used to suggest meeting times and locations undergoes fine-tuning from time to time.
 In scenarios like test environments where the input parameters and calendar data remain static, expect that the suggested results may differ over time.
 
@@ -51,7 +51,7 @@ Find-MgBetaUserMeetingTime -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Suggest meeting times and locations based on organizer and attendee availability, and time or location constraints specified as parameters.
 If **findMeetingTimes** cannot return any meeting suggestions, the response would indicate a reason in the **emptySuggestionsReason** property.
-\nBased on this value, you can better adjust the parameters and call **findMeetingTimes** again.
+nBased on this value, you can better adjust the parameters and call **findMeetingTimes** again.
 The algorithm used to suggest meeting times and locations undergoes fine-tuning from time to time.
 In scenarios like test environments where the input parameters and calendar data remain static, expect that the suggested results may differ over time.
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetausermessage
@@ -340,7 +340,7 @@ Accept wildcard characters: False
 ### -HasAttachments
 Indicates whether the message has attachments.
 This property doesn't include inline attachments, so if a message contains only inline attachments, this property is false.
-To verify the existence of inline attachments, parse the body property to look for a src attribute, such as \<IMG src='cid:image001.jpg@01D26CD8.6C05F070'\>.
+To verify the existence of inline attachments, parse the body property to look for a src attribute, such as <IMG src='cid:image001.jpg@01D26CD8.6C05F070'>.
 
 ```yaml
 Type: SwitchParameter
