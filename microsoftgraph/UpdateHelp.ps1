@@ -45,6 +45,8 @@ function Update-GraphHelp {
         $graphProfile = $_
         Update-GraphHelpByProfile -GraphProfile $graphProfile -GraphProfilePath $GraphMapping[$graphProfile] -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate 
     }
+
+
     # git config --global user.email "timwamalwa@gmail.com"
     # git config --global user.name "Timothy Wamalwa"
     # git add .
@@ -62,7 +64,6 @@ function Update-GraphHelpByProfile {
         [ValidateNotNullOrEmpty()]
         $ModulesToGenerate = @()
     )
-    Select-MgProfile -Name $GraphProfile
     $ModulesToGenerate | ForEach-Object {
         $ModuleName = $_
         Update-GraphModuleHelp -GraphProfile $GraphProfile -GraphProfilePath $GraphProfilePath -Module $ModuleName -ModulePrefix $ModulePrefix
@@ -91,7 +92,6 @@ function Update-GraphModuleHelp {
     $logsPath = Join-Path $PSScriptRoot ".\logs\$moduleImportName-$GraphProfile.txt"
 
     Import-Module $ModuleToImport -Force -Global
-    Select-MgProfile $GraphProfile
     Update-Help -ModuleDocsPath $moduleDocsPath -LogsPath $logsPath
 }
 
