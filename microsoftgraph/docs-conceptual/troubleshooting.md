@@ -20,7 +20,7 @@ Before troubleshooting any errors, make sure that you're running the most recent
 Get-InstalledModule
 ```
 
-The version of the `Microsoft.Graph` module should be the most recent compared to the latest release in the [PowerShell gallery](https://www.powershellgallery.com/packages/Microsoft.Graph). If your installed module isn't up to date, update it by running:
+The version of the `Microsoft.Graph` module should be the most recent compared to the latest release in the [PowerShell Gallery](https://www.powershellgallery.com/packages/Microsoft.Graph). If your installed module isn't up to date, update it by running:
 
 ```PowerShell
 Update-Module Microsoft.Graph
