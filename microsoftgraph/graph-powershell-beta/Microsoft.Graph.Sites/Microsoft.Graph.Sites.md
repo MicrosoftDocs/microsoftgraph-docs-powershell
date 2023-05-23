@@ -261,7 +261,8 @@ To indicate which terms are related to the current term as either pinned or reus
 The collection of the sub-sites under this site.
 
 ### [Get-MgSite](Get-MgSite.md)
-Retrieve properties and relationships for a [site][] resource.\nA **site** resource represents a team site in SharePoint.
+Retrieve properties and relationships for a [site][] resource.
+A **site** resource represents a team site in SharePoint.
 
 ### [Get-MgSiteActivityByInterval](Get-MgSiteActivityByInterval.md)
 Invoke function getActivitiesByInterval
