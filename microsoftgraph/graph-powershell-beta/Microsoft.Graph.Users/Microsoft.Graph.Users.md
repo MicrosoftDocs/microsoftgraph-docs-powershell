@@ -288,7 +288,8 @@ The transitive reports for a user.
 Read-only.
 
 ### [New-MgUser](New-MgUser.md)
-Create a new user.\nThe request body contains the user to create.
+Create a new user.
+The request body contains the user to create.
 At a minimum, you must specify the required properties for the user.
 You can optionally specify any other writable properties.
 This operation returns by default only a subset of the properties for each user.

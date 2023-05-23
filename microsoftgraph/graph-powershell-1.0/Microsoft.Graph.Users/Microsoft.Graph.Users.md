@@ -186,7 +186,8 @@ Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
 A collection of resources linked to the task.
 
 ### [New-MgUser](New-MgUser.md)
-Create a new user.\nThe request body contains the user to create.
+Create a new user.
+The request body contains the user to create.
 At a minimum, you must specify the required properties for the user.
 You can optionally specify any other writable properties.
 
