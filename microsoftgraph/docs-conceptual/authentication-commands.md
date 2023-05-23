@@ -43,7 +43,7 @@ There are three ways to allow delegated access using `Connect-MgGraph`:
 
 #### Using client credential with a certificate
 
-To use app-only access, the certificate is loaded from *Cert:\CurrentUser\My\\* when `-CertificateThumbprint` or `-CertificateName` is specified. Make sure that the certificate you're using is present in the store before calling `Connect-MgGraph`. For more info, see [Use app-only authentication with the Microsoft Graph PowerShell SDK](app-only.md).
+To use app-only access, the certificate is loaded from either *Cert:\CurrentUser\My\\* or *Cert:\LocalMachine\My\\* when `-CertificateThumbprint` or `-CertificateName` is specified. Make sure that the certificate you're using is present in either certificate store before calling `Connect-MgGraph`. For more info, see [Use app-only authentication with the Microsoft Graph PowerShell SDK](app-only.md).
 
 - Using Certificate Thumbprint:
 
