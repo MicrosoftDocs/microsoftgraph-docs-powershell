@@ -105,7 +105,10 @@
     "template": [],
     "dest": "microsoftgraph-docs-powershell",
 	"monikerRange": {
-	  "docs-conceptual/**.*": "graph-powershell-1.0 || graph-powershell-beta"
+	  "docs-conceptual/**.*": "graph-powershell-1.0 || graph-powershell-beta",
+    "feedback_system": "GitHub",
+    "feedback_github_repo": "MicrosoftDocs/microsoftgraph-docs-powershell",
+    "feedback_product_url": "microsoftgraph/msgraph-sdk-powershell" 
 	},
     "markdownEngineName": "markdig"
   }
