@@ -2,7 +2,7 @@
 title: "Grant application permissions programmatically in Azure AD"
 description: "Learn how to grant and revoke app-only permissions programmatically in Azure AD using Microsoft Graph PowerShell"
 ms.topic: tutorial
-ms.date: 03/17/2022
+ms.date: 05/25/2023
 author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
