@@ -374,8 +374,8 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 |Remove-AzureADUserAppRoleAssignment|[Remove-MgUserAppRoleAssignment](/powershell/module/microsoft.graph.applications/remove-mguserapproleassignment?view=graph-powershell-1.0&preserve-view=true)|
 |Remove-AzureADUserExtension|[Remove-MgUserExtension](/powershell/module/microsoft.graph.users/remove-mguserextension?view=graph-powershell-1.0&preserve-view=true)|
 |Remove-AzureADUserManager|[Remove-MgUserManagerByRef](/powershell/module/microsoft.graph.users/remove-mgusermanagerbyref?view=graph-powershell-1.0&preserve-view=true)|
-|Revoke-AzureADSignedInUserAllRefreshToken|[Invoke-MgInvalidateUserRefreshToken](/powershell/module/microsoft.graph.users.actions/invoke-mginvalidateuserrefreshtoken?view=graph-powershell-beta&preserve-view=true)|
-|Revoke-AzureADUserAllRefreshToken|[Invoke-MgInvalidateUserRefreshToken](/powershell/module/microsoft.graph.users.actions/invoke-mginvalidateuserrefreshtoken?view=graph-powershell-beta&preserve-view=true)|
+|Revoke-AzureADSignedInUserAllRefreshToken|[Revoke-MgUserSignInSession](/powershell/module/microsoft.graph.users.actions/revoke-mgusersigninsession?view=graph-powershell-1.0&preserve-view=true)|
+|Revoke-AzureADUserAllRefreshToken|[Revoke-MgUserSignInSession](/powershell/module/microsoft.graph.users.actions/revoke-mgusersigninsession?view=graph-powershell-1.0&preserve-view=true)|
 |Select-AzureADGroupIdsUserIsMemberOf|[Get-MgUserMemberOf](/powershell/module/microsoft.graph.users/get-mgusermemberof?view=graph-powershell-1.0&preserve-view=true)|
 |Set-AzureADUser|[Update-MgUser](/powershell/module/microsoft.graph.users/update-mguser?view=graph-powershell-1.0&preserve-view=true)|
 |Set-AzureADUserExtension|[Update-MgUserExtension](/powershell/module/microsoft.graph.users/update-mguserextension?view=graph-powershell-1.0&preserve-view=true)|
