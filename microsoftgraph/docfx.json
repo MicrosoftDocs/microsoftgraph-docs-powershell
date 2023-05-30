@@ -99,12 +99,19 @@
       "ms.technology": "microsoft-graph-powershell",
       "ms.topic": "reference",
       "ms.author": "twamalwa",
-      "author": "finsharp",
-      "feedback_system": "GitHub",
-      "feedback_github_repo": "MicrosoftDocs/microsoftgraph-docs-powershell",
-      "feedback_product_url": "microsoftgraph/msgraph-sdk-powershell" 
+      "author": "finsharp"
     },
-    "fileMetadata": {},
+    "fileMetadata": {
+	"feedback_system": {
+          "docs-conceptual/**/*.md": "GitHub"
+      },
+	"feedback_github_repo": {
+          "docs-conceptual/**/*.md": "MicrosoftDocs/microsoftgraph-docs-powershell"
+      },
+	"feedback_product_url": {
+          "docs-conceptual/**/*.md": "microsoftgraph/msgraph-sdk-powershell"
+      },
+    },
     "template": [],
     "dest": "microsoftgraph-docs-powershell",
 	"monikerRange": {
