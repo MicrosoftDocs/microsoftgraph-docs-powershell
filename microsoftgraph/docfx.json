@@ -109,7 +109,7 @@
           "docs-conceptual/**/*.md": "MicrosoftDocs/microsoftgraph-docs-powershell"
       },
 	"feedback_product_url": {
-          "docs-conceptual/**/*.md": "microsoftgraph/msgraph-sdk-powershell"
+          "docs-conceptual/**/*.md": "https://github.com/microsoftgraph/msgraph-sdk-powershell"
       },
     },
     "template": [],
