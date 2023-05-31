@@ -2,7 +2,7 @@
 title: "Use query parameters to customize PowerShell query outputs"
 description: "Learn how to use optional query parameters in Microsoft Graph PowerShell SDK to customize the output"
 ms.topic: conceptual
-ms.date: 04/20/2022
+ms.date: 05/26/2023
 author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
@@ -11,14 +11,14 @@ ms.reviewer: maisarissi
 
 # Use query parameters to customize PowerShell query outputs
 
-Microsoft Graph PowerShell SDK supports optional query parameters that you can use to control the amount of data returned in an output. Support for the exact query parameters varies from one cmdlet to another, and depending on the profile, can differ between the v1.0 and beta endpoints.
+Microsoft Graph PowerShell SDK supports optional query parameters that you can use to control the amount of data returned in an output. Support for the exact query parameters varies from one cmdlet to another, and depending on the API, can differ between the v1.0 and beta endpoints.
 
 ## OData system query options
 
-Microsoft PowerShell SDK cmdlets may support one or more of the following OData system query options, which are compatible with [OData V4.0 query language](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752356) and are only supported in the GET operations.
+Microsoft PowerShell SDK cmdlets may support one or more of the following OData system query options, which are compatible with [OData v4.0 query language](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752356) and are only supported in the GET operations.
 
 >[!TIP]
->OData query options in the Microsoft Graph API use lowercase names and specify the dollar ($) prefix while in Microsoft Graph PowerShell SDK, their names are Pascal-cased and prefixed with a hyphen (-). For example, `$count` and `$orderBy` are to Microsoft Graph API while `-Count` and `-OrderBy` (respectively) are to Microsoft Graph PowerShell SDK.
+>OData query options in the Microsoft Graph API use lowercase names and specify the dollar ($) prefix while in Microsoft Graph PowerShell SDK, their names are Pascal-cased and prefixed with a hyphen (-). For example, `$count` and `$orderBy` are to Microsoft Graph API while `-Count` and `-OrderBy`, respectively, are to Microsoft Graph PowerShell SDK.
 
 |Name|Description|Example|
 |--------|----|-----|
@@ -43,10 +43,13 @@ $userCount
 ```
 
 The `-Count` query parameter is supported for these modules that represent resources and their relationships that derive from [DirectoryObjects](/powershell/module/microsoft.graph.directoryobjects/?view=graph-powershell-1.0&preserve-view=true) and only in [advanced queries](/graph/aad-advanced-queries).
+
+- [Administrative Unit](/graph/api/resources/administrativeunit?view=graph-rest-1.0&preserve-view=true)
 - [Applications](/powershell/module/microsoft.graph.applications/?view=graph-powershell-1.0&preserve-view=true)
-- [OrgContact](/graph/api/resources/orgcontact?view=graph-rest-beta&preserve-view=true)
+- [OrgContact](/graph/api/resources/orgcontact?view=graph-rest-1.0&preserve-view=true)
 - [Devices](/powershell/module/microsoft.graph.devicemanagement/?view=graph-powershell-1.0&preserve-view=true)
 - [Groups](/powershell/module/microsoft.graph.groups/?view=graph-powershell-1.0&preserve-view=true)
+- [Service Principal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0&preserve-view=true)
 - [Users](/powershell/module/microsoft.graph.users/?view=graph-powershell-1.0&preserve-view=true)
 
 ## Expand parameter
@@ -71,7 +74,7 @@ Id                                   DeletedDateTime
 e6d486c1-20f3-426d-bc5d-736c8f467254
 ```
 
-With some resource collections, you can also specify the properties to be returned in the expanded resources by adding the `Select` parameter. The following example performs the same query as the previous example but uses a ['Select`](#select-parameter) statement to limit the properties returned for the expanded child items to the **Id** only.
+With some resource collections, you can also specify the properties to be returned in the expanded resources by adding the `-Select` parameter. The following example performs the same query as the previous example but uses a ['Select`](#select-parameter) statement to limit the properties returned for the expanded child items to the **Id** only.
 
 ```powershell
 Get-MgGroup -GroupId '0e06b38f-931a-47db-9a9a-60ab5f492005' -Expand members | 
@@ -219,6 +222,10 @@ At line:1 char:1
 + Get-MgUser -Filter "Contains(DisplayName, 'Test')"
 ```
 
-Unsupported filter error could be returned when the `-Filter` query is not correct or when the property is only supported in [advanced queries](/graph/aad-advanced-queries?tabs=powershell) and either -ConsistencyLevel or -Count is missing.
+Unsupported filter error could be returned when the `-Filter` query is not correct or when the property is only supported in [advanced queries](/graph/aad-advanced-queries?tabs=powershell) and either `-ConsistencyLevel` or `-Count` is missing.
 
 Query parameters specified in a request might fail silently. This can be true for unsupported query parameters and for unsupported combinations of query parameters. In these cases, you should examine the data returned by the request to determine whether the query parameters you specified had the desired effect.
+
+## See also
+
+- [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries)
