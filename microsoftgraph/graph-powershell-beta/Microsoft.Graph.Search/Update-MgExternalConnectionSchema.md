@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/update-mgexternalconnectionschema
@@ -258,7 +258,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphExternalConnectorsSchema1>`: schema
+BODYPARAMETER <IMicrosoftGraphExternalConnectorsSchema1>: schema
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[BaseType <String>]`: Must be set to microsoft.graph.externalItem. Required.
@@ -276,7 +276,7 @@ BODYPARAMETER `<IMicrosoftGraphExternalConnectorsSchema1>`: schema
       - `[ImportanceScore <String>]`: importanceScore
     - `[Type <String>]`: propertyType
 
-INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
+INPUTOBJECT <ISearchIdentity>: Identity Parameter
   - `[AcronymId <String>]`: The unique identifier of acronym
   - `[BookmarkId <String>]`: The unique identifier of bookmark
   - `[ConnectionOperationId <String>]`: The unique identifier of connectionOperation
@@ -296,7 +296,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[SourceSystemDefinitionId <String>]`: The unique identifier of sourceSystemDefinition
   - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
 
-PROPERTIES <IMicrosoftGraphExternalConnectorsProperty1\[]>: The properties defined for the items in the connection. The minimum number of properties is one, the maximum is 128.
+PROPERTIES <IMicrosoftGraphExternalConnectorsProperty1[]>: The properties defined for the items in the connection. The minimum number of properties is one, the maximum is 128.
   - `[Aliases <String[]>]`: A set of aliases or a friendly names for the property. Maximum 32 characters. Only alphanumeric characters allowed. For example, each string might not contain control characters, whitespace, or any of the following: :, ;, ,, (, ), [, ], {, }, %, $, +, !, *, =, &, ?, @, #, /, ~, ', ', <, >, `, ^. Optional.
   - `[IsExactMatchRequired <Boolean?>]`: Specifies if the property will be matched exactly for queries. Exact matching can only be set to true for non-searchable properties of type string or stringCollection. Optional.
   - `[IsQueryable <Boolean?>]`: Specifies if the property is queryable. Queryable properties can be used in Keyword Query Language (KQL) queries. Optional.

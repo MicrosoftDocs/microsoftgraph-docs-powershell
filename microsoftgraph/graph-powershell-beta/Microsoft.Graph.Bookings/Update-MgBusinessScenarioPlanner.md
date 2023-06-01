@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.bookings/update-mgbusinessscenarioplanner
@@ -238,7 +238,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphBusinessScenarioPlanner>`: businessScenarioPlanner
+BODYPARAMETER <IMicrosoftGraphBusinessScenarioPlanner>: businessScenarioPlanner
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[PlanConfiguration <IMicrosoftGraphPlannerPlanConfiguration>]`: plannerPlanConfiguration
@@ -250,8 +250,8 @@ BODYPARAMETER `<IMicrosoftGraphBusinessScenarioPlanner>`: businessScenarioPlanne
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-        - `[Id <String>]`: The identifier of the identity. This property is read-only.
+        - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        - `[Id <String>]`: Unique identifier for the identity.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[CreatedDateTime <DateTime?>]`: The date and time when the plan configuration was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -392,7 +392,7 @@ BODYPARAMETER `<IMicrosoftGraphBusinessScenarioPlanner>`: businessScenarioPlanne
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[TaskTargetKind <String>]`: plannerTaskTargetKind
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+INPUTOBJECT <IBookingsIdentity>: Identity Parameter
   - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
   - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness
   - `[BookingCurrencyId <String>]`: The unique identifier of bookingCurrency
@@ -406,7 +406,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[BusinessScenarioTaskId <String>]`: The unique identifier of businessScenarioTask
   - `[PlannerPlanConfigurationLocalizationId <String>]`: The unique identifier of plannerPlanConfigurationLocalization
 
-PLANCONFIGURATION `<IMicrosoftGraphPlannerPlanConfiguration>`: plannerPlanConfiguration
+PLANCONFIGURATION <IMicrosoftGraphPlannerPlanConfiguration>: plannerPlanConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Buckets <IMicrosoftGraphPlannerPlanConfigurationBucketDefinition[]>]`: List the buckets that should be created in the plan.
@@ -415,8 +415,8 @@ PLANCONFIGURATION `<IMicrosoftGraphPlannerPlanConfiguration>`: plannerPlanConfig
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[CreatedDateTime <DateTime?>]`: The date and time when the plan configuration was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -431,7 +431,7 @@ PLANCONFIGURATION `<IMicrosoftGraphPlannerPlanConfiguration>`: plannerPlanConfig
     - `[LanguageTag <String>]`: The language code associated with the localized names in this object.
     - `[PlanTitle <String>]`: Localized title of the plan.
 
-TASKCONFIGURATION `<IMicrosoftGraphPlannerTaskConfiguration>`: plannerTaskConfiguration
+TASKCONFIGURATION <IMicrosoftGraphPlannerTaskConfiguration>: plannerTaskConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[EditPolicy <IMicrosoftGraphPlannerTaskPolicy>]`: plannerTaskPolicy
@@ -464,7 +464,7 @@ TASKCONFIGURATION `<IMicrosoftGraphPlannerTaskConfiguration>`: plannerTaskConfig
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[RoleKind <String>]`: plannerUserRoleKind
 
-TASKS <IMicrosoftGraphBusinessScenarioTask\[]>: The Planner tasks for the scenario.
+TASKS <IMicrosoftGraphBusinessScenarioTask[]>: The Planner tasks for the scenario.
   - `[ActiveChecklistItemCount <Int32?>]`: Number of checklist items with value set to false, representing incomplete items.
   - `[AppliedCategories <IMicrosoftGraphPlannerAppliedCategories>]`: plannerAppliedCategories
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -487,8 +487,8 @@ TASKS <IMicrosoftGraphBusinessScenarioTask\[]>: The Planner tasks for the scenar
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[CompletedDateTime <DateTime?>]`: Read-only. Date and time at which the 'percentComplete' of the task is set to '100'. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/update-mgserviceprincipalsynchronizationtemplateschema
@@ -254,7 +254,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSynchronizationSchema>`: synchronizationSchema
+BODYPARAMETER <IMicrosoftGraphSynchronizationSchema>: synchronizationSchema
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Directories <IMicrosoftGraphDirectoryDefinition[]>]`: Contains the collection of directories and all of their objects.
@@ -337,7 +337,7 @@ BODYPARAMETER `<IMicrosoftGraphSynchronizationSchema>`: synchronizationSchema
     - `[TargetDirectoryName <String>]`: Name of the target directory. Must match one of the directory definitions in synchronizationSchema.
   - `[Version <String>]`: The version of the schema, updated automatically with every schema change.
 
-DIRECTORIES <IMicrosoftGraphDirectoryDefinition\[]>: Contains the collection of directories and all of their objects.
+DIRECTORIES <IMicrosoftGraphDirectoryDefinition[]>: Contains the collection of directories and all of their objects.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Discoverabilities <String>]`: directoryDefinitionDiscoverabilities
   - `[DiscoveryDateTime <DateTime?>]`: Represents the discovery date and time using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -368,7 +368,7 @@ DIRECTORIES <IMicrosoftGraphDirectoryDefinition\[]>: Contains the collection of 
   - `[ReadOnly <Boolean?>]`: Whether this object is read-only.
   - `[Version <String>]`: Read only value that indicates version discovered. null if discovery has not yet occurred.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
   - `[ApplicationId <String>]`: The unique identifier of application
@@ -398,7 +398,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[UserId <String>]`: The unique identifier of user
 
-SYNCHRONIZATIONRULES <IMicrosoftGraphSynchronizationRule\[]>: A collection of synchronization rules configured for the synchronizationJob or synchronizationTemplate.
+SYNCHRONIZATIONRULES <IMicrosoftGraphSynchronizationRule[]>: A collection of synchronization rules configured for the synchronizationJob or synchronizationTemplate.
   - `[ContainerFilter <IMicrosoftGraphContainerFilter>]`: containerFilter
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[IncludedContainers <String[]>]`: 

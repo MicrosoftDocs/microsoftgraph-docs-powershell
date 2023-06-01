@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Compliance-help.xml
 Module Name: Microsoft.Graph.Compliance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/new-mgcomplianceediscoverycase
@@ -424,15 +424,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphEdiscoveryCase>`: case
+BODYPARAMETER <IMicrosoftGraphEdiscoveryCase>: case
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ClosedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[ClosedDateTime <DateTime?>]`: The date and time when the case was closed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -581,8 +581,8 @@ BODYPARAMETER `<IMicrosoftGraphEdiscoveryCase>`: case
             - `[AddIns <IMicrosoftGraphAddIn[]>]`: Defines custom behavior that a consuming service can use to call an app in specific contexts. For example, applications that can render file streams may set the addIns property for its 'FileHandler' functionality. This will let services like Microsoft 365 call the application in the context of a document the user is working on.
               - `[Id <String>]`: 
               - `[Properties <IMicrosoftGraphKeyValue[]>]`: 
-                - `[Key <String>]`: Contains the name of the field that a value is associated with. When a sign in or domain hint is included in the sign-in request, corresponding fields are included as key-value pairs. Possible keys: Login hint present, Domain hint present.
-                - `[Value <String>]`: Contains the corresponding value for the specified key. The value is true if a sign in hint was included in the sign-in request; otherwise false. The value is true if a domain hint was included in the sign-in request; otherwise false.
+                - `[Key <String>]`: Key.
+                - `[Value <String>]`: Value.
               - `[Type <String>]`: 
             - `[AlternativeNames <String[]>]`: Used to retrieve service principals by subscription, identify resource group and full resource ids for managed identities. Supports $filter (eq, not, ge, le, startsWith).
             - `[AppDescription <String>]`: The description exposed by the associated application.
@@ -1064,7 +1064,7 @@ BODYPARAMETER `<IMicrosoftGraphEdiscoveryCase>`: case
               - `[DisplayName <String>]`: The display name of the mobile device as given by the user.
             - `[PhoneMethods <IMicrosoftGraphPhoneAuthenticationMethod[]>]`: Represents the phone registered to a user for authentication.
               - `[Id <String>]`: The unique identifier for an entity. Read-only.
-              - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
+              - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+<country code> <number>x<extension>', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
               - `[PhoneType <String>]`: authenticationPhoneType
               - `[SmsSignInState <String>]`: authenticationMethodSignInState
             - `[SignInPreferences <IMicrosoftGraphSignInPreferences>]`: signInPreferences
@@ -1355,7 +1355,7 @@ BODYPARAMETER `<IMicrosoftGraphEdiscoveryCase>`: case
               - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
               - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
               - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
                 - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
                 - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1364,13 +1364,13 @@ BODYPARAMETER `<IMicrosoftGraphEdiscoveryCase>`: case
                   - `[User <IMicrosoftGraphIdentity>]`: identity
                   - `[Conversation <IMicrosoftGraphTeamworkConversationIdentity>]`: teamworkConversationIdentity
                     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-                    - `[Id <String>]`: The identifier of the identity. This property is read-only.
+                    - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+                    - `[Id <String>]`: Unique identifier for the identity.
                     - `[ConversationIdentityType <String>]`: teamworkConversationIdentityType
                   - `[Tag <IMicrosoftGraphTeamworkTagIdentity>]`: teamworkTagIdentity
                     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-                    - `[Id <String>]`: The identifier of the identity. This property is read-only.
+                    - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+                    - `[Id <String>]`: Unique identifier for the identity.
               - `[MessageHistory <IMicrosoftGraphChatMessageHistoryItem[]>]`: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
                 - `[Actions <String>]`: chatMessageActions
                 - `[ModifiedDateTime <DateTime?>]`: The date and time when the message was modified.
@@ -1408,8 +1408,8 @@ BODYPARAMETER `<IMicrosoftGraphEdiscoveryCase>`: case
               - `[JoinWebUrl <String>]`: The URL which can be clicked on to join or uniquely identify the meeting.
               - `[Organizer <IMicrosoftGraphTeamworkUserIdentity>]`: teamworkUserIdentity
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-                - `[Id <String>]`: The identifier of the identity. This property is read-only.
+                - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+                - `[Id <String>]`: Unique identifier for the identity.
                 - `[UserIdentityType <String>]`: teamworkUserIdentityType
             - `[Operations <IMicrosoftGraphTeamsAsyncOperation[]>]`: A collection of all the Teams async operations that ran or are running on the chat. Nullable.
               - `[Id <String>]`: The unique identifier for an entity. Read-only.
@@ -1880,8 +1880,8 @@ BODYPARAMETER `<IMicrosoftGraphEdiscoveryCase>`: case
                     - `[Group <IMicrosoftGraphIdentity>]`: identity
                     - `[SiteGroup <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
                       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-                      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+                      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+                      - `[Id <String>]`: Unique identifier for the identity.
                       - `[LoginName <String>]`: The sign in name of the SharePoint identity.
                     - `[SiteUser <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
                   - `[GrantedToV2 <IMicrosoftGraphSharePointIdentitySet>]`: sharePointIdentitySet
@@ -4081,8 +4081,8 @@ BODYPARAMETER `<IMicrosoftGraphEdiscoveryCase>`: case
               - `[AccessReviewId <String>]`: The identifier of the accessReviewInstance parent. Supports $select. Read-only.
               - `[AppliedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-                - `[Id <String>]`: The identifier of the identity. This property is read-only.
+                - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+                - `[Id <String>]`: Unique identifier for the identity.
                 - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
                 - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
               - `[AppliedDateTime <DateTime?>]`: The timestamp when the approval decision was applied. The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.  Supports $select. Read-only.
@@ -5279,16 +5279,16 @@ BODYPARAMETER `<IMicrosoftGraphEdiscoveryCase>`: case
     - `[LastModifiedDateTime <DateTime?>]`: The date and time the tag was last modified.
     - `[Parent <IMicrosoftGraphEdiscoveryTag>]`: tag
 
-CLOSEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CLOSEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-    - `[Id <String>]`: The identifier of the identity. This property is read-only.
+    - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-CUSTODIANS <IMicrosoftGraphEdiscoveryCustodian\[]>: Returns a list of case custodian objects for this case. Nullable.
+CUSTODIANS <IMicrosoftGraphEdiscoveryCustodian[]>: Returns a list of case custodian objects for this case. Nullable.
   - `[CreatedDateTime <DateTime?>]`: Created date and time of the dataSourceContainer entity.
   - `[DisplayName <String>]`: Display name of the dataSourceContainer entity.
   - `[HoldStatus <String>]`: dataSourceHoldStatus
@@ -5300,8 +5300,8 @@ CUSTODIANS <IMicrosoftGraphEdiscoveryCustodian\[]>: Returns a list of case custo
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-        - `[Id <String>]`: The identifier of the identity. This property is read-only.
+        - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        - `[Id <String>]`: Unique identifier for the identity.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[CreatedDateTime <DateTime?>]`: The date and time the operation was created.
@@ -5439,8 +5439,8 @@ CUSTODIANS <IMicrosoftGraphEdiscoveryCustodian\[]>: Returns a list of case custo
           - `[AddIns <IMicrosoftGraphAddIn[]>]`: Defines custom behavior that a consuming service can use to call an app in specific contexts. For example, applications that can render file streams may set the addIns property for its 'FileHandler' functionality. This will let services like Microsoft 365 call the application in the context of a document the user is working on.
             - `[Id <String>]`: 
             - `[Properties <IMicrosoftGraphKeyValue[]>]`: 
-              - `[Key <String>]`: Contains the name of the field that a value is associated with. When a sign in or domain hint is included in the sign-in request, corresponding fields are included as key-value pairs. Possible keys: Login hint present, Domain hint present.
-              - `[Value <String>]`: Contains the corresponding value for the specified key. The value is true if a sign in hint was included in the sign-in request; otherwise false. The value is true if a domain hint was included in the sign-in request; otherwise false.
+              - `[Key <String>]`: Key.
+              - `[Value <String>]`: Value.
             - `[Type <String>]`: 
           - `[AlternativeNames <String[]>]`: Used to retrieve service principals by subscription, identify resource group and full resource ids for managed identities. Supports $filter (eq, not, ge, le, startsWith).
           - `[AppDescription <String>]`: The description exposed by the associated application.
@@ -5922,7 +5922,7 @@ CUSTODIANS <IMicrosoftGraphEdiscoveryCustodian\[]>: Returns a list of case custo
             - `[DisplayName <String>]`: The display name of the mobile device as given by the user.
           - `[PhoneMethods <IMicrosoftGraphPhoneAuthenticationMethod[]>]`: Represents the phone registered to a user for authentication.
             - `[Id <String>]`: The unique identifier for an entity. Read-only.
-            - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
+            - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+<country code> <number>x<extension>', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
             - `[PhoneType <String>]`: authenticationPhoneType
             - `[SmsSignInState <String>]`: authenticationMethodSignInState
           - `[SignInPreferences <IMicrosoftGraphSignInPreferences>]`: signInPreferences
@@ -6213,7 +6213,7 @@ CUSTODIANS <IMicrosoftGraphEdiscoveryCustodian\[]>: Returns a list of case custo
             - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
             - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
             - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
               - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
               - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -6222,13 +6222,13 @@ CUSTODIANS <IMicrosoftGraphEdiscoveryCustodian\[]>: Returns a list of case custo
                 - `[User <IMicrosoftGraphIdentity>]`: identity
                 - `[Conversation <IMicrosoftGraphTeamworkConversationIdentity>]`: teamworkConversationIdentity
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                  - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-                  - `[Id <String>]`: The identifier of the identity. This property is read-only.
+                  - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+                  - `[Id <String>]`: Unique identifier for the identity.
                   - `[ConversationIdentityType <String>]`: teamworkConversationIdentityType
                 - `[Tag <IMicrosoftGraphTeamworkTagIdentity>]`: teamworkTagIdentity
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                  - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-                  - `[Id <String>]`: The identifier of the identity. This property is read-only.
+                  - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+                  - `[Id <String>]`: Unique identifier for the identity.
             - `[MessageHistory <IMicrosoftGraphChatMessageHistoryItem[]>]`: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
               - `[Actions <String>]`: chatMessageActions
               - `[ModifiedDateTime <DateTime?>]`: The date and time when the message was modified.
@@ -6266,8 +6266,8 @@ CUSTODIANS <IMicrosoftGraphEdiscoveryCustodian\[]>: Returns a list of case custo
             - `[JoinWebUrl <String>]`: The URL which can be clicked on to join or uniquely identify the meeting.
             - `[Organizer <IMicrosoftGraphTeamworkUserIdentity>]`: teamworkUserIdentity
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-              - `[Id <String>]`: The identifier of the identity. This property is read-only.
+              - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+              - `[Id <String>]`: Unique identifier for the identity.
               - `[UserIdentityType <String>]`: teamworkUserIdentityType
           - `[Operations <IMicrosoftGraphTeamsAsyncOperation[]>]`: A collection of all the Teams async operations that ran or are running on the chat. Nullable.
             - `[Id <String>]`: The unique identifier for an entity. Read-only.
@@ -6738,8 +6738,8 @@ CUSTODIANS <IMicrosoftGraphEdiscoveryCustodian\[]>: Returns a list of case custo
                   - `[Group <IMicrosoftGraphIdentity>]`: identity
                   - `[SiteGroup <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
                     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-                    - `[Id <String>]`: The identifier of the identity. This property is read-only.
+                    - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+                    - `[Id <String>]`: Unique identifier for the identity.
                     - `[LoginName <String>]`: The sign in name of the SharePoint identity.
                   - `[SiteUser <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
                 - `[GrantedToV2 <IMicrosoftGraphSharePointIdentitySet>]`: sharePointIdentitySet
@@ -8939,8 +8939,8 @@ CUSTODIANS <IMicrosoftGraphEdiscoveryCustodian\[]>: Returns a list of case custo
             - `[AccessReviewId <String>]`: The identifier of the accessReviewInstance parent. Supports $select. Read-only.
             - `[AppliedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-              - `[Id <String>]`: The identifier of the identity. This property is read-only.
+              - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+              - `[Id <String>]`: Unique identifier for the identity.
               - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
               - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
             - `[AppliedDateTime <DateTime?>]`: The timestamp when the approval decision was applied. The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.  Supports $select. Read-only.
@@ -10006,24 +10006,24 @@ CUSTODIANS <IMicrosoftGraphEdiscoveryCustodian\[]>: Returns a list of case custo
     - `[IncludedSources <String>]`: sourceType
     - `[SiteWebUrl <String>]`: The URL of the user's OneDrive for Business site. Read-only.
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-    - `[Id <String>]`: The identifier of the identity. This property is read-only.
+    - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-LEGALHOLDS <IMicrosoftGraphEdiscoveryLegalHold\[]>: Returns a list of case legalHold objects for this case. Nullable.
+LEGALHOLDS <IMicrosoftGraphEdiscoveryLegalHold[]>: Returns a list of case legalHold objects for this case. Nullable.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ContentQuery <String>]`: KQL query that specifies content to be held in the specified locations. To learn more, see Keyword queries and search conditions for Content Search and eDiscovery.  To hold all content in the specified locations, leave contentQuery blank.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[CreatedDateTime <DateTime?>]`: The date and time the legal hold was created.
@@ -10152,8 +10152,8 @@ LEGALHOLDS <IMicrosoftGraphEdiscoveryLegalHold\[]>: Returns a list of case legal
           - `[AddIns <IMicrosoftGraphAddIn[]>]`: Defines custom behavior that a consuming service can use to call an app in specific contexts. For example, applications that can render file streams may set the addIns property for its 'FileHandler' functionality. This will let services like Microsoft 365 call the application in the context of a document the user is working on.
             - `[Id <String>]`: 
             - `[Properties <IMicrosoftGraphKeyValue[]>]`: 
-              - `[Key <String>]`: Contains the name of the field that a value is associated with. When a sign in or domain hint is included in the sign-in request, corresponding fields are included as key-value pairs. Possible keys: Login hint present, Domain hint present.
-              - `[Value <String>]`: Contains the corresponding value for the specified key. The value is true if a sign in hint was included in the sign-in request; otherwise false. The value is true if a domain hint was included in the sign-in request; otherwise false.
+              - `[Key <String>]`: Key.
+              - `[Value <String>]`: Value.
             - `[Type <String>]`: 
           - `[AlternativeNames <String[]>]`: Used to retrieve service principals by subscription, identify resource group and full resource ids for managed identities. Supports $filter (eq, not, ge, le, startsWith).
           - `[AppDescription <String>]`: The description exposed by the associated application.
@@ -10635,7 +10635,7 @@ LEGALHOLDS <IMicrosoftGraphEdiscoveryLegalHold\[]>: Returns a list of case legal
             - `[DisplayName <String>]`: The display name of the mobile device as given by the user.
           - `[PhoneMethods <IMicrosoftGraphPhoneAuthenticationMethod[]>]`: Represents the phone registered to a user for authentication.
             - `[Id <String>]`: The unique identifier for an entity. Read-only.
-            - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
+            - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+<country code> <number>x<extension>', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
             - `[PhoneType <String>]`: authenticationPhoneType
             - `[SmsSignInState <String>]`: authenticationMethodSignInState
           - `[SignInPreferences <IMicrosoftGraphSignInPreferences>]`: signInPreferences
@@ -10926,7 +10926,7 @@ LEGALHOLDS <IMicrosoftGraphEdiscoveryLegalHold\[]>: Returns a list of case legal
             - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
             - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
             - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
               - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
               - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -10935,13 +10935,13 @@ LEGALHOLDS <IMicrosoftGraphEdiscoveryLegalHold\[]>: Returns a list of case legal
                 - `[User <IMicrosoftGraphIdentity>]`: identity
                 - `[Conversation <IMicrosoftGraphTeamworkConversationIdentity>]`: teamworkConversationIdentity
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                  - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-                  - `[Id <String>]`: The identifier of the identity. This property is read-only.
+                  - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+                  - `[Id <String>]`: Unique identifier for the identity.
                   - `[ConversationIdentityType <String>]`: teamworkConversationIdentityType
                 - `[Tag <IMicrosoftGraphTeamworkTagIdentity>]`: teamworkTagIdentity
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                  - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-                  - `[Id <String>]`: The identifier of the identity. This property is read-only.
+                  - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+                  - `[Id <String>]`: Unique identifier for the identity.
             - `[MessageHistory <IMicrosoftGraphChatMessageHistoryItem[]>]`: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
               - `[Actions <String>]`: chatMessageActions
               - `[ModifiedDateTime <DateTime?>]`: The date and time when the message was modified.
@@ -10979,8 +10979,8 @@ LEGALHOLDS <IMicrosoftGraphEdiscoveryLegalHold\[]>: Returns a list of case legal
             - `[JoinWebUrl <String>]`: The URL which can be clicked on to join or uniquely identify the meeting.
             - `[Organizer <IMicrosoftGraphTeamworkUserIdentity>]`: teamworkUserIdentity
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-              - `[Id <String>]`: The identifier of the identity. This property is read-only.
+              - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+              - `[Id <String>]`: Unique identifier for the identity.
               - `[UserIdentityType <String>]`: teamworkUserIdentityType
           - `[Operations <IMicrosoftGraphTeamsAsyncOperation[]>]`: A collection of all the Teams async operations that ran or are running on the chat. Nullable.
             - `[Id <String>]`: The unique identifier for an entity. Read-only.
@@ -11451,8 +11451,8 @@ LEGALHOLDS <IMicrosoftGraphEdiscoveryLegalHold\[]>: Returns a list of case legal
                   - `[Group <IMicrosoftGraphIdentity>]`: identity
                   - `[SiteGroup <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
                     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-                    - `[Id <String>]`: The identifier of the identity. This property is read-only.
+                    - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+                    - `[Id <String>]`: Unique identifier for the identity.
                     - `[LoginName <String>]`: The sign in name of the SharePoint identity.
                   - `[SiteUser <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
                 - `[GrantedToV2 <IMicrosoftGraphSharePointIdentitySet>]`: sharePointIdentitySet
@@ -13652,8 +13652,8 @@ LEGALHOLDS <IMicrosoftGraphEdiscoveryLegalHold\[]>: Returns a list of case legal
             - `[AccessReviewId <String>]`: The identifier of the accessReviewInstance parent. Supports $select. Read-only.
             - `[AppliedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-              - `[Id <String>]`: The identifier of the identity. This property is read-only.
+              - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+              - `[Id <String>]`: Unique identifier for the identity.
               - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
               - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
             - `[AppliedDateTime <DateTime?>]`: The timestamp when the approval decision was applied. The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.  Supports $select. Read-only.
@@ -14720,7 +14720,7 @@ LEGALHOLDS <IMicrosoftGraphEdiscoveryLegalHold\[]>: Returns a list of case legal
     - `[IncludedSources <String>]`: sourceType
     - `[SiteWebUrl <String>]`: The URL of the user's OneDrive for Business site. Read-only.
 
-NONCUSTODIALDATASOURCES <IMicrosoftGraphEdiscoveryNoncustodialDataSource\[]>: Returns a list of case noncustodialDataSource objects for this case. Nullable.
+NONCUSTODIALDATASOURCES <IMicrosoftGraphEdiscoveryNoncustodialDataSource[]>: Returns a list of case noncustodialDataSource objects for this case. Nullable.
   - `[CreatedDateTime <DateTime?>]`: Created date and time of the dataSourceContainer entity.
   - `[DisplayName <String>]`: Display name of the dataSourceContainer entity.
   - `[HoldStatus <String>]`: dataSourceHoldStatus
@@ -14732,8 +14732,8 @@ NONCUSTODIALDATASOURCES <IMicrosoftGraphEdiscoveryNoncustodialDataSource\[]>: Re
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-        - `[Id <String>]`: The identifier of the identity. This property is read-only.
+        - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        - `[Id <String>]`: Unique identifier for the identity.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[CreatedDateTime <DateTime?>]`: The date and time the operation was created.
@@ -14758,7 +14758,7 @@ NONCUSTODIALDATASOURCES <IMicrosoftGraphEdiscoveryNoncustodialDataSource\[]>: Re
     - `[DisplayName <String>]`: The display name of the dataSource. This will be the name of the SharePoint site.
     - `[HoldStatus <String>]`: dataSourceHoldStatus
 
-OPERATIONS <IMicrosoftGraphEdiscoveryCaseOperation\[]>: Returns a list of case operation objects for this case. Nullable.
+OPERATIONS <IMicrosoftGraphEdiscoveryCaseOperation[]>: Returns a list of case operation objects for this case. Nullable.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Action <String>]`: caseAction
   - `[CompletedDateTime <DateTime?>]`: The date and time the operation was completed.
@@ -14766,8 +14766,8 @@ OPERATIONS <IMicrosoftGraphEdiscoveryCaseOperation\[]>: Returns a list of case o
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[CreatedDateTime <DateTime?>]`: The date and time the operation was created.
@@ -14779,14 +14779,14 @@ OPERATIONS <IMicrosoftGraphEdiscoveryCaseOperation\[]>: Returns a list of case o
     - `[Subcode <Int32?>]`: The result sub-code.
   - `[Status <String>]`: caseOperationStatus
 
-REVIEWSETS <IMicrosoftGraphEdiscoveryReviewSet\[]>: Returns a list of reviewSet objects in the case. Read-only. Nullable.
+REVIEWSETS <IMicrosoftGraphEdiscoveryReviewSet[]>: Returns a list of reviewSet objects in the case. Read-only. Nullable.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[CreatedDateTime <DateTime?>]`: The datetime when the review set was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
@@ -14800,7 +14800,7 @@ REVIEWSETS <IMicrosoftGraphEdiscoveryReviewSet\[]>: Returns a list of reviewSet 
     - `[LastModifiedDateTime <DateTime?>]`: The date and time the query was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[Query <String>]`: The query string in KQL (Keyword Query Language) query. For details, see Document metadata fields in Advanced eDiscovery.  This field maps directly to the keywords condition.  You can refine searches by using fields listed in the searchable field name paired with values; for example, subject:'Quarterly Financials' AND Date>=06/01/2016 AND Date<=07/01/2016.
 
-SETTINGS `<IMicrosoftGraphEdiscoveryCaseSettings>`: caseSettings
+SETTINGS <IMicrosoftGraphEdiscoveryCaseSettings>: caseSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Ocr <IMicrosoftGraphEdiscoveryOcrSettings>]`: ocrSettings
@@ -14821,7 +14821,7 @@ SETTINGS `<IMicrosoftGraphEdiscoveryCaseSettings>`: caseSettings
     - `[IsEnabled <Boolean?>]`: Indicates whether themes is enabled for the case.
     - `[TopicCount <Int32?>]`: To learn more, see Maximum number of themes.
 
-SOURCECOLLECTIONS <IMicrosoftGraphEdiscoverySourceCollection\[]>: Returns a list of sourceCollection objects associated with this case.
+SOURCECOLLECTIONS <IMicrosoftGraphEdiscoverySourceCollection[]>: Returns a list of sourceCollection objects associated with this case.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AddToReviewSetOperation <IMicrosoftGraphEdiscoveryAddToReviewSetOperation>]`: addToReviewSetOperation
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -14831,8 +14831,8 @@ SOURCECOLLECTIONS <IMicrosoftGraphEdiscoverySourceCollection\[]>: Returns a list
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-        - `[Id <String>]`: The identifier of the identity. This property is read-only.
+        - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        - `[Id <String>]`: Unique identifier for the identity.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[CreatedDateTime <DateTime?>]`: The date and time the operation was created.
@@ -14912,7 +14912,7 @@ SOURCECOLLECTIONS <IMicrosoftGraphEdiscoverySourceCollection\[]>: Returns a list
     - `[ApplyHoldToSource <Boolean?>]`: Indicates if hold is applied to non-custodial data source (such as mailbox or site).
     - `[DataSource <IMicrosoftGraphEdiscoveryDataSource>]`: dataSource
 
-TAGS <IMicrosoftGraphEdiscoveryTag\[]>: Returns a list of tag objects associated to this case.
+TAGS <IMicrosoftGraphEdiscoveryTag[]>: Returns a list of tag objects associated to this case.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ChildSelectability <String>]`: childSelectability
   - `[ChildTags <IMicrosoftGraphEdiscoveryTag[]>]`: Returns the tags that are a child of a tag.
@@ -14920,8 +14920,8 @@ TAGS <IMicrosoftGraphEdiscoveryTag\[]>: Returns a list of tag objects associated
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[Description <String>]`: The description for the tag.

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/test-mgdevicemanagementassignmentfilter
@@ -129,7 +129,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Y9WuhoDevicemanagementAssignmentfiltersMicrosoftGraphValidatefilterPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Y9WuhoDevicemanagementAssignmentfiltersMicrosoftGraphValidatefilterPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeviceAndAppManagementAssignmentFilter <IMicrosoftGraphDeviceAndAppManagementAssignmentFilter>]`: A class containing the properties used for Assignment Filter.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -148,7 +148,7 @@ BODYPARAMETER `<IPaths1Y9WuhoDevicemanagementAssignmentfiltersMicrosoftGraphVali
     - `[RoleScopeTags <String[]>]`: Indicates role scope tags assigned for the assignment filter.
     - `[Rule <String>]`: Rule definition of the assignment filter.
 
-DEVICEANDAPPMANAGEMENTASSIGNMENTFILTER `<IMicrosoftGraphDeviceAndAppManagementAssignmentFilter>`: A class containing the properties used for Assignment Filter.
+DEVICEANDAPPMANAGEMENTASSIGNMENTFILTER <IMicrosoftGraphDeviceAndAppManagementAssignmentFilter>: A class containing the properties used for Assignment Filter.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AssignmentFilterManagementType <AssignmentFilterManagementType?>]`: Supported filter management types whether its devices or apps.

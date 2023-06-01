@@ -1,184 +1,59 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmgtmobileappuserstatusesdevicestatuses
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgusermobileapptroubleshootingeventapplogcollectionrequest
 schema: 2.0.0
 ---
 
-# Update-MgDeviceAppMgtMobileAppUserStatusesDeviceStatuses
+# Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest
 
 ## SYNOPSIS
-Update the navigation property deviceStatuses in deviceAppManagement
+The collection property of AppLogUploadRequest.
 
 ## SYNTAX
 
-### UpdateExpanded (Default)
+### Delete (Default)
 ```
-Update-MgDeviceAppMgtMobileAppUserStatusesDeviceStatuses -MobileAppId <String>
- -MobileAppInstallStatusId <String> -UserAppInstallStatusId <String> [-AdditionalProperties <Hashtable>]
- [-App <IMicrosoftGraphMobileApp1>] [-DeviceId <String>] [-DeviceName <String>] [-DisplayVersion <String>]
- [-ErrorCode <Int32>] [-Id <String>] [-InstallState <ResultantAppState>]
- [-InstallStateDetail <ResultantAppStateDetail>] [-LastSyncDateTime <DateTime>]
- [-MobileAppInstallStatusValue <ResultantAppState>] [-OSDescription <String>] [-OSVersion <String>]
- [-UserName <String>] [-UserPrincipalName <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest -AppLogCollectionRequestId <String>
+ -MobileAppTroubleshootingEventId <String> -UserId <String> [-IfMatch <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
-### Update
+### DeleteViaIdentity
 ```
-Update-MgDeviceAppMgtMobileAppUserStatusesDeviceStatuses -MobileAppId <String>
- -MobileAppInstallStatusId <String> -UserAppInstallStatusId <String>
- -BodyParameter <IMicrosoftGraphMobileAppInstallStatus> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgDeviceAppMgtMobileAppUserStatusesDeviceStatuses -InputObject <IDevicesCorporateManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-App <IMicrosoftGraphMobileApp1>] [-DeviceId <String>]
- [-DeviceName <String>] [-DisplayVersion <String>] [-ErrorCode <Int32>] [-Id <String>]
- [-InstallState <ResultantAppState>] [-InstallStateDetail <ResultantAppStateDetail>]
- [-LastSyncDateTime <DateTime>] [-MobileAppInstallStatusValue <ResultantAppState>] [-OSDescription <String>]
- [-OSVersion <String>] [-UserName <String>] [-UserPrincipalName <String>] [-PassThru] [-WhatIf] [-Confirm]
+Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest
+ -InputObject <IDevicesCorporateManagementIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### UpdateViaIdentity
-```
-Update-MgDeviceAppMgtMobileAppUserStatusesDeviceStatuses -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphMobileAppInstallStatus> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
 ## DESCRIPTION
-Update the navigation property deviceStatuses in deviceAppManagement
+The collection property of AppLogUploadRequest.
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
-
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -AppLogCollectionRequestId
+key: id of appLogCollectionRequest
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -App
-An abstract class containing the base properties for Intune mobile apps.
-Note: Listing mobile apps with \`$expand=assignments\` has been deprecated.
-Instead get the list of apps without the \`$expand\` query on \`assignments\`.
-Then, perform the expansion on individual applications.
-To construct, please use Get-Help -Online and see NOTES section for APP properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphMobileApp1
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -BodyParameter
-Contains properties for the installation state of a mobile app for a device.
-This will be deprecated starting May, 2023 (Intune Release 2305).
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphMobileAppInstallStatus
-Parameter Sets: Update, UpdateViaIdentity
+Type: String
+Parameter Sets: Delete
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -DeviceId
-Device ID
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DeviceName
-Device name
+### -IfMatch
+ETag
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DisplayVersion
-Human readable version of the application
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ErrorCode
-The error code for install or uninstall failures.
-
-```yaml
-Type: Int32
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Id
-The unique idenfier for an entity.
-Read-only.
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -194,7 +69,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IDevicesCorporateManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Parameter Sets: DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -204,124 +79,15 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -InstallState
-A list of possible states for application status on an individual device.
-When devices contact the Intune service and find targeted application enforcement intent, the status of the enforcement is recorded and becomes accessible in the Graph API.
-Since the application status is identified during device interaction with the Intune service, status records do not immediately appear upon application group assignment; it is created only after the assignment is evaluated in the service and devices start receiving the policy during check-ins.
-
-```yaml
-Type: ResultantAppState
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -InstallStateDetail
-Enum indicating additional details regarding why an application has a particular install state.
-
-```yaml
-Type: ResultantAppStateDetail
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -LastSyncDateTime
-Last sync date time
-
-```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -MobileAppId
-The unique identifier of mobileApp
+### -MobileAppTroubleshootingEventId
+key: id of mobileAppTroubleshootingEvent
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, Update
+Parameter Sets: Delete
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -MobileAppInstallStatusId
-The unique identifier of mobileAppInstallStatus
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -MobileAppInstallStatusValue
-A list of possible states for application status on an individual device.
-When devices contact the Intune service and find targeted application enforcement intent, the status of the enforcement is recorded and becomes accessible in the Graph API.
-Since the application status is identified during device interaction with the Intune service, status records do not immediately appear upon application group assignment; it is created only after the assignment is evaluated in the service and devices start receiving the policy during check-ins.
-
-```yaml
-Type: ResultantAppState
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -OSDescription
-OS Description
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -OSVersion
-OS Version
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -338,50 +104,20 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -UserAppInstallStatusId
-The unique identifier of userAppInstallStatus
+### -UserId
+key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, Update
+Parameter Sets: Delete
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -UserName
-Device User Name
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -UserPrincipalName
-User Principal Name
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -425,14 +161,83 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileAppInstallStatus
 ## OUTPUTS
 
 ### System.Boolean
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+  - `[AndroidManagedAppProtectionId <String>]`: key: id of androidManagedAppProtection
+  - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
+  - `[AssignmentFilterEvaluationStatusDetailsId <String>]`: key: id of assignmentFilterEvaluationStatusDetails
+  - `[BundleId <String>]`: Usage: bundleId={bundleId}
+  - `[Count <Int64?>]`: Usage: count={count}
+  - `[DefaultManagedAppProtectionId <String>]`: key: id of defaultManagedAppProtection
+  - `[DeviceAppManagementTaskId <String>]`: key: id of deviceAppManagementTask
+  - `[DeviceCompliancePolicyStateId <String>]`: key: id of deviceCompliancePolicyState
+  - `[DeviceConfigurationStateId <String>]`: key: id of deviceConfigurationState
+  - `[DeviceEnrollmentConfigurationId <String>]`: key: id of deviceEnrollmentConfiguration
+  - `[DeviceId <String>]`: Usage: deviceId={deviceId}
+  - `[DeviceInstallStateId <String>]`: key: id of deviceInstallState
+  - `[DeviceLogCollectionResponseId <String>]`: key: id of deviceLogCollectionResponse
+  - `[DeviceManagementTroubleshootingEventId <String>]`: key: id of deviceManagementTroubleshootingEvent
+  - `[EnrollmentConfigurationAssignmentId <String>]`: key: id of enrollmentConfigurationAssignment
+  - `[EnterpriseCodeSigningCertificateId <String>]`: key: id of enterpriseCodeSigningCertificate
+  - `[IosLobAppProvisioningConfigurationAssignmentId <String>]`: key: id of iosLobAppProvisioningConfigurationAssignment
+  - `[IosLobAppProvisioningConfigurationId <String>]`: key: id of iosLobAppProvisioningConfiguration
+  - `[IosManagedAppProtectionId <String>]`: key: id of iosManagedAppProtection
+  - `[ManagedAppOperationId <String>]`: key: id of managedAppOperation
+  - `[ManagedAppPolicyId <String>]`: key: id of managedAppPolicy
+  - `[ManagedAppRegistrationId <String>]`: key: id of managedAppRegistration
+  - `[ManagedAppStatusId <String>]`: key: id of managedAppStatus
+  - `[ManagedDeviceId <String>]`: key: id of managedDevice
+  - `[ManagedDeviceMobileAppConfigurationAssignmentId <String>]`: key: id of managedDeviceMobileAppConfigurationAssignment
+  - `[ManagedDeviceMobileAppConfigurationDeviceStatusId <String>]`: key: id of managedDeviceMobileAppConfigurationDeviceStatus
+  - `[ManagedDeviceMobileAppConfigurationId <String>]`: key: id of managedDeviceMobileAppConfiguration
+  - `[ManagedDeviceMobileAppConfigurationStateId <String>]`: key: id of managedDeviceMobileAppConfigurationState
+  - `[ManagedDeviceMobileAppConfigurationUserStatusId <String>]`: key: id of managedDeviceMobileAppConfigurationUserStatus
+  - `[ManagedEBookAssignmentId <String>]`: key: id of managedEBookAssignment
+  - `[ManagedEBookCategoryId <String>]`: key: id of managedEBookCategory
+  - `[ManagedEBookId <String>]`: key: id of managedEBook
+  - `[ManagedMobileAppId <String>]`: key: id of managedMobileApp
+  - `[MdmWindowsInformationProtectionPolicyId <String>]`: key: id of mdmWindowsInformationProtectionPolicy
+  - `[MobileAppAssignmentId <String>]`: key: id of mobileAppAssignment
+  - `[MobileAppCategoryId <String>]`: key: id of mobileAppCategory
+  - `[MobileAppId <String>]`: key: id of mobileApp
+  - `[MobileAppInstallStatusId <String>]`: key: id of mobileAppInstallStatus
+  - `[MobileAppIntentAndStateId <String>]`: key: id of mobileAppIntentAndState
+  - `[MobileAppProvisioningConfigGroupAssignmentId <String>]`: key: id of mobileAppProvisioningConfigGroupAssignment
+  - `[MobileAppRelationshipId <String>]`: key: id of mobileAppRelationship
+  - `[MobileAppTroubleshootingEventId <String>]`: key: id of mobileAppTroubleshootingEvent
+  - `[OfficeClientConfigurationAssignmentId <String>]`: key: id of officeClientConfigurationAssignment
+  - `[OfficeClientConfigurationId <String>]`: key: id of officeClientConfiguration
+  - `[PolicySetAssignmentId <String>]`: key: id of policySetAssignment
+  - `[PolicySetId <String>]`: key: id of policySet
+  - `[PolicySetItemId <String>]`: key: id of policySetItem
+  - `[SecurityBaselineSettingStateId <String>]`: key: id of securityBaselineSettingState
+  - `[SecurityBaselineStateId <String>]`: key: id of securityBaselineState
+  - `[SideLoadingKeyId <String>]`: key: id of sideLoadingKey
+  - `[Status <String>]`: Usage: status={status}
+  - `[TargetedManagedAppConfigurationId <String>]`: key: id of targetedManagedAppConfiguration
+  - `[TargetedManagedAppPolicyAssignmentId <String>]`: key: id of targetedManagedAppPolicyAssignment
+  - `[UserAppInstallStatusId <String>]`: key: id of userAppInstallStatus
+  - `[UserId <String>]`: key: id of user
+  - `[UserInstallStateSummaryId <String>]`: key: id of userInstallStateSummary
+  - `[UserPrincipalName <String>]`: Usage: userPrincipalName={userPrincipalName}
+  - `[VppTokenId <String>]`: key: id of vppToken
+  - `[WindowsDefenderApplicationControlSupplementalPolicyAssignmentId <String>]`: key: id of windowsDefenderApplicationControlSupplementalPolicyAssignment
+  - `[WindowsDefenderApplicationControlSupplementalPolicyDeploymentStatusId <String>]`: key: id of windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
+  - `[WindowsDefenderApplicationControlSupplementalPolicyId <String>]`: key: id of windowsDefenderApplicationControlSupplementalPolicy
+  - `[WindowsDeviceMalwareStateId <String>]`: key: id of windowsDeviceMalwareState
+  - `[WindowsInformationProtectionDeviceRegistrationId <String>]`: key: id of windowsInformationProtectionDeviceRegistration
+  - `[WindowsInformationProtectionPolicyId <String>]`: key: id of windowsInformationProtectionPolicy
+  - `[WindowsInformationProtectionWipeActionId <String>]`: key: id of windowsInformationProtectionWipeAction
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmgtmobileappuserstatusesdevicestatuses](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmgtmobileappuserstatusesdevicestatuses)
-

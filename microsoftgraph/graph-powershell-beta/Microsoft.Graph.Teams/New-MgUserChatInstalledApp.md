@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mguserchatinstalledapp
@@ -271,7 +271,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphTeamsAppInstallation1>`: teamsAppInstallation
+BODYPARAMETER <IMicrosoftGraphTeamsAppInstallation1>: teamsAppInstallation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ConsentedPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>]`: teamsAppPermissionSet
@@ -322,13 +322,13 @@ BODYPARAMETER `<IMicrosoftGraphTeamsAppInstallation1>`: teamsAppInstallation
     - `[ExternalId <String>]`: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
   - `[TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition1>]`: teamsAppDefinition
 
-CONSENTEDPERMISSIONSET `<IMicrosoftGraphTeamsAppPermissionSet>`: teamsAppPermissionSet
+CONSENTEDPERMISSIONSET <IMicrosoftGraphTeamsAppPermissionSet>: teamsAppPermissionSet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ResourceSpecificPermissions <IMicrosoftGraphTeamsAppResourceSpecificPermission[]>]`: A collection of resource-specific permissions.
     - `[PermissionType <String>]`: teamsAppResourceSpecificPermissionType
     - `[PermissionValue <String>]`: The name of the resource-specific permission.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat
@@ -367,7 +367,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
-TEAMSAPP `<IMicrosoftGraphTeamsApp1>`: teamsApp
+TEAMSAPP <IMicrosoftGraphTeamsApp1>: teamsApp
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AppDefinitions <IMicrosoftGraphTeamsAppDefinition1[]>]`: The details for each version of the app.
@@ -413,7 +413,7 @@ TEAMSAPP `<IMicrosoftGraphTeamsApp1>`: teamsApp
   - `[DistributionMethod <String>]`: teamsAppDistributionMethod
   - `[ExternalId <String>]`: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
 
-TEAMSAPPDEFINITION `<IMicrosoftGraphTeamsAppDefinition1>`: teamsAppDefinition
+TEAMSAPPDEFINITION <IMicrosoftGraphTeamsAppDefinition1>: teamsAppDefinition
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AllowedInstallationScopes <String>]`: teamsAppInstallationScopes

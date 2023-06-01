@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryonpremissynchronization
@@ -161,7 +161,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphOnPremisesDirectorySynchronization>`: onPremisesDirectorySynchronization
+BODYPARAMETER <IMicrosoftGraphOnPremisesDirectorySynchronization>: onPremisesDirectorySynchronization
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Configuration <IMicrosoftGraphOnPremisesDirectorySynchronizationConfiguration>]`: onPremisesDirectorySynchronizationConfiguration
@@ -192,14 +192,14 @@ BODYPARAMETER `<IMicrosoftGraphOnPremisesDirectorySynchronization>`: onPremisesD
     - `[UserForcePasswordChangeOnLogonEnabled <Boolean?>]`: Used to indicate that feature to force password change for a user on logon is enabled while synchronizing on-premise credentials.
     - `[UserWritebackEnabled <Boolean?>]`: Used to indicate that user writeback is enabled.
 
-CONFIGURATION `<IMicrosoftGraphOnPremisesDirectorySynchronizationConfiguration>`: onPremisesDirectorySynchronizationConfiguration
+CONFIGURATION <IMicrosoftGraphOnPremisesDirectorySynchronizationConfiguration>: onPremisesDirectorySynchronizationConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AccidentalDeletionPrevention <IMicrosoftGraphOnPremisesAccidentalDeletionPrevention>]`: onPremisesAccidentalDeletionPrevention
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AlertThreshold <Int32?>]`: Threshold value which triggers accidental deletion prevention. The threshold is either an absolute number of objects or a percentage number of objects.
     - `[SynchronizationPreventionType <String>]`: onPremisesDirectorySynchronizationDeletionPreventionType
 
-FEATURES `<IMicrosoftGraphOnPremisesDirectorySynchronizationFeature>`: onPremisesDirectorySynchronizationFeature
+FEATURES <IMicrosoftGraphOnPremisesDirectorySynchronizationFeature>: onPremisesDirectorySynchronizationFeature
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[BlockCloudObjectTakeoverThroughHardMatchEnabled <Boolean?>]`: Used to block cloud object takeover via source anchor hard match if enabled.
   - `[BlockSoftMatchEnabled <Boolean?>]`: Use to block soft match for all objects if enabled for the  tenant. Customers are encouraged to enable this feature and keep it enabled until soft matching is required again for their tenancy. This flag should be enabled again after any soft matching has been completed and is no longer needed.

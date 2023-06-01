@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcallparticipant
@@ -345,7 +345,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphParticipant1>`: participant
+BODYPARAMETER <IMicrosoftGraphParticipant1>: participant
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Info <IMicrosoftGraphParticipantInfo1>]`: participantInfo
@@ -389,7 +389,7 @@ BODYPARAMETER `<IMicrosoftGraphParticipant1>`: participant
     - `[VideoDisabled <String>]`: onlineMeetingVideoDisabledReason
   - `[RosterSequenceNumber <Int64?>]`: 
 
-INFO `<IMicrosoftGraphParticipantInfo1>`: participantInfo
+INFO <IMicrosoftGraphParticipantInfo1>: participantInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CountryCode <String>]`: The ISO 3166-1 Alpha-2 country code of the participant's best estimated physical location at the start of the call. Read-only.
   - `[EndpointType <String>]`: endpointType
@@ -407,7 +407,7 @@ INFO `<IMicrosoftGraphParticipantInfo1>`: participantInfo
   - `[PlatformId <String>]`: The client platform ID of the participant. Read-only.
   - `[Region <String>]`: The home region of the participant. This can be a country, a continent, or a larger geographic region. This does not change based on the participant's current physical location, unlike countryCode. Read-only.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
   - `[CallId <String>]`: The unique identifier of call
@@ -425,14 +425,14 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[ToDateTime <DateTime?>]`: Usage: toDateTime={toDateTime}
   - `[UserId <String>]`: The unique identifier of user
 
-MEDIASTREAMS <IMicrosoftGraphMediaStream1\[]>: The list of media streams.
+MEDIASTREAMS <IMicrosoftGraphMediaStream1[]>: The list of media streams.
   - `[Direction <String>]`: mediaDirection
   - `[Label <String>]`: The media stream label.
   - `[MediaType <String>]`: 
   - `[ServerMuted <Boolean?>]`: Indicates whether the media is muted by the server.
   - `[SourceId <String>]`: The source ID.
 
-RECORDINGINFO `<IMicrosoftGraphRecordingInfo1>`: recordingInfo
+RECORDINGINFO <IMicrosoftGraphRecordingInfo1>: recordingInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[InitiatedBy <IMicrosoftGraphParticipantInfo1>]`: participantInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -454,11 +454,11 @@ RECORDINGINFO `<IMicrosoftGraphRecordingInfo1>`: recordingInfo
   - `[Initiator <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[RecordingStatus <String>]`: recordingStatus
 
-REMOVEDSTATE `<IMicrosoftGraphRemovedState>`: removedState
+REMOVEDSTATE <IMicrosoftGraphRemovedState>: removedState
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Reason <String>]`: 
 
-RESTRICTEDEXPERIENCE `<IMicrosoftGraphOnlineMeetingRestricted>`: onlineMeetingRestricted
+RESTRICTEDEXPERIENCE <IMicrosoftGraphOnlineMeetingRestricted>: onlineMeetingRestricted
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ContentSharingDisabled <String>]`: onlineMeetingContentSharingDisabledReason
   - `[VideoDisabled <String>]`: onlineMeetingVideoDisabledReason

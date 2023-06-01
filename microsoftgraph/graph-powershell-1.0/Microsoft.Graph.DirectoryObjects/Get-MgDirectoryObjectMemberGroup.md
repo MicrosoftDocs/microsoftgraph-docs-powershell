@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DirectoryObjects-help.xml
 Module Name: Microsoft.Graph.DirectoryObjects
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobjectmembergroup
@@ -184,11 +184,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths15Et6VvDirectoryobjectsDirectoryobjectIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths15Et6VvDirectoryobjectsDirectoryobjectIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[SecurityEnabledOnly <Boolean?>]`: 
 
-INPUTOBJECT `<IDirectoryObjectsIdentity>`: Identity Parameter
+INPUTOBJECT <IDirectoryObjectsIdentity>: Identity Parameter
   - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
 
 ## RELATED LINKS

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/get-mgusermailfoldermessagedelta
@@ -248,7 +248,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AppConsentRequestId <String>]`: The unique identifier of appConsentRequest
   - `[CalendarId <String>]`: The unique identifier of calendar

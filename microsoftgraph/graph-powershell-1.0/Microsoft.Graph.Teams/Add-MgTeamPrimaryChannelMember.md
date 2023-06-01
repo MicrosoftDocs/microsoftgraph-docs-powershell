@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/add-mgteamprimarychannelmember
@@ -260,7 +260,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsU53MjcTeamsTeamIdPrimarychannelMembersMicrosoftGraphAddPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsU53MjcTeamsTeamIdPrimarychannelMembersMicrosoftGraphAddPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Values <IMicrosoftGraphConversationMember[]>]`: 
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -268,7 +268,7 @@ BODYPARAMETER `<IPathsU53MjcTeamsTeamIdPrimarychannelMembersMicrosoftGraphAddPos
     - `[Roles <String[]>]`: The roles for that user. This property only contains additional qualifiers when relevant - for example, if the member has owner privileges, the roles property contains owner as one of the values. Similarly, if the member is a guest, the roles property contains guest as one of the values. A basic member should not have any values specified in the roles property.
     - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat
@@ -307,7 +307,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
-VALUES <IMicrosoftGraphConversationMember\[]>: .
+VALUES <IMicrosoftGraphConversationMember[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DisplayName <String>]`: The display name of the user.
   - `[Roles <String[]>]`: The roles for that user. This property only contains additional qualifiers when relevant - for example, if the member has owner privileges, the roles property contains owner as one of the values. Similarly, if the member is a guest, the roles property contains guest as one of the values. A basic member should not have any values specified in the roles property.

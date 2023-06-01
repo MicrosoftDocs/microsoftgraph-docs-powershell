@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementmanageddeviceencryptionstate
@@ -364,7 +364,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphManagedDeviceEncryptionState>`: Encryption report per device
+BODYPARAMETER <IMicrosoftGraphManagedDeviceEncryptionState>: Encryption report per device
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AdvancedBitLockerStates <AdvancedBitLockerState?>]`: Advanced BitLocker State
@@ -381,7 +381,7 @@ BODYPARAMETER `<IMicrosoftGraphManagedDeviceEncryptionState>`: Encryption report
   - `[TpmSpecificationVersion <String>]`: Device TPM Version
   - `[UserPrincipalName <String>]`: User name
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: The unique identifier of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: The unique identifier of androidManagedStoreAppConfigurationSchema
@@ -514,7 +514,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
-POLICYDETAILS <IMicrosoftGraphEncryptionReportPolicyDetails\[]>: Policy Details
+POLICYDETAILS <IMicrosoftGraphEncryptionReportPolicyDetails[]>: Policy Details
   - `[PolicyId <String>]`: Policy Id for Encryption Report
   - `[PolicyName <String>]`: Policy Name for Encryption Report
 

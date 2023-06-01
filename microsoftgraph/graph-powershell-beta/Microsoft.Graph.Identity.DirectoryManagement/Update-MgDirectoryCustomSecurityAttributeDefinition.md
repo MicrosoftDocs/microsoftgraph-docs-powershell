@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectorycustomsecurityattributedefinition
@@ -365,11 +365,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ALLOWEDVALUES <IMicrosoftGraphAllowedValue\[]>: .
+ALLOWEDVALUES <IMicrosoftGraphAllowedValue[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[IsActive <Boolean?>]`: 
 
-BODYPARAMETER `<IMicrosoftGraphCustomSecurityAttributeDefinition>`: customSecurityAttributeDefinition
+BODYPARAMETER <IMicrosoftGraphCustomSecurityAttributeDefinition>: customSecurityAttributeDefinition
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AllowedValues <IMicrosoftGraphAllowedValue[]>]`: 
@@ -384,7 +384,7 @@ BODYPARAMETER `<IMicrosoftGraphCustomSecurityAttributeDefinition>`: customSecuri
   - `[Type <String>]`: 
   - `[UsePreDefinedValuesOnly <Boolean?>]`: 
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet

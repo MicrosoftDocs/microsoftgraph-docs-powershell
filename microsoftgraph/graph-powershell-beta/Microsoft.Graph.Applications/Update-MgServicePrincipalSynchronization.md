@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/update-mgserviceprincipalsynchronization
@@ -238,7 +238,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSynchronization>`: synchronization
+BODYPARAMETER <IMicrosoftGraphSynchronization>: synchronization
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Jobs <IMicrosoftGraphSynchronizationJob[]>]`: Performs synchronization by periodically running in the background, polling for changes in one directory, and pushing them to another directory.
@@ -393,7 +393,7 @@ BODYPARAMETER `<IMicrosoftGraphSynchronization>`: synchronization
     - `[Metadata <IMicrosoftGraphMetadataEntry[]>]`: Additional extension properties. Unless mentioned explicitly, metadata values should not be changed.
     - `[Schema <IMicrosoftGraphSynchronizationSchema>]`: synchronizationSchema
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
   - `[ApplicationId <String>]`: The unique identifier of application
@@ -423,7 +423,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[UserId <String>]`: The unique identifier of user
 
-JOBS <IMicrosoftGraphSynchronizationJob\[]>: Performs synchronization by periodically running in the background, polling for changes in one directory, and pushing them to another directory.
+JOBS <IMicrosoftGraphSynchronizationJob[]>: Performs synchronization by periodically running in the background, polling for changes in one directory, and pushing them to another directory.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Schedule <IMicrosoftGraphSynchronizationSchedule>]`: synchronizationSchedule
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -563,11 +563,11 @@ JOBS <IMicrosoftGraphSynchronizationJob\[]>: Performs synchronization by periodi
     - `[Value <String>]`: Value for this key-value pair
   - `[TemplateId <String>]`: Identifier of the synchronization template this job is based on.
 
-SECRETS <IMicrosoftGraphSynchronizationSecretKeyStringValuePair\[]>: Represents a collection of credentials to access provisioned cloud applications.
+SECRETS <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>: Represents a collection of credentials to access provisioned cloud applications.
   - `[Key <String>]`: synchronizationSecret
   - `[Value <String>]`: The value of the secret.
 
-TEMPLATES <IMicrosoftGraphSynchronizationTemplate\[]>: Pre-configured synchronization settings for a particular application.
+TEMPLATES <IMicrosoftGraphSynchronizationTemplate[]>: Pre-configured synchronization settings for a particular application.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ApplicationId <String>]`: Identifier of the application this template belongs to.
   - `[Default <Boolean?>]`: true if this template is recommended to be the default for the application.

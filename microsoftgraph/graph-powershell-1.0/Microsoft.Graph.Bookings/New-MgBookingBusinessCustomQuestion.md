@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.bookings/new-mgbookingbusinesscustomquestion
@@ -234,14 +234,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphBookingCustomQuestion>`: Represents a custom question of the business.
+BODYPARAMETER <IMicrosoftGraphBookingCustomQuestion>: Represents a custom question of the business.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AnswerInputType <String>]`: answerInputType
   - `[AnswerOptions <String[]>]`: List of possible answer values.
   - `[DisplayName <String>]`: The question.
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+INPUTOBJECT <IBookingsIdentity>: Identity Parameter
   - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
   - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness
   - `[BookingCurrencyId <String>]`: The unique identifier of bookingCurrency

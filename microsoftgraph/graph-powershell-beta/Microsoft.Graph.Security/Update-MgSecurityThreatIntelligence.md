@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligence
@@ -310,14 +310,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ARTICLEINDICATORS <IMicrosoftGraphSecurityArticleIndicator\[]>: Refers to indicators of threat or compromise highlighted in an microsoft.graph.security.article.Note: List retrieval is not yet supported.
+ARTICLEINDICATORS <IMicrosoftGraphSecurityArticleIndicator[]>: Refers to indicators of threat or compromise highlighted in an microsoft.graph.security.article.Note: List retrieval is not yet supported.
   - `[Artifact <IMicrosoftGraphSecurityArtifact>]`: artifact
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Source <String>]`: indicatorSource
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
-ARTICLES <IMicrosoftGraphSecurityArticle\[]>: A list of article objects.
+ARTICLES <IMicrosoftGraphSecurityArticle[]>: A list of article objects.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Body <IMicrosoftGraphSecurityFormattedContent>]`: formattedContent
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -337,7 +337,7 @@ ARTICLES <IMicrosoftGraphSecurityArticle\[]>: A list of article objects.
   - `[Tags <String[]>]`: Tags for this article, communicating keywords, or key concepts.
   - `[Title <String>]`: The title of this article.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityThreatIntelligence>`: threatIntelligence
+BODYPARAMETER <IMicrosoftGraphSecurityThreatIntelligence>: threatIntelligence
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ArticleIndicators <IMicrosoftGraphSecurityArticleIndicator[]>]`: Refers to indicators of threat or compromise highlighted in an microsoft.graph.security.article.Note: List retrieval is not yet supported.
@@ -458,7 +458,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityThreatIntelligence>`: threatIntelligence
     - `[Remediation <IMicrosoftGraphSecurityFormattedContent>]`: formattedContent
     - `[Severity <String>]`: vulnerabilitySeverity
 
-HOSTCOMPONENTS <IMicrosoftGraphSecurityHostComponent\[]>: Retrieve details about microsoft.graph.security.hostComponent objects.Note: List retrieval is not yet supported.
+HOSTCOMPONENTS <IMicrosoftGraphSecurityHostComponent[]>: Retrieve details about microsoft.graph.security.hostComponent objects.Note: List retrieval is not yet supported.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Category <String>]`: The type of component that was detected (for example, Operating System, Framework, Remote Access, or Server).
   - `[FirstSeenDateTime <DateTime?>]`: The first date and time when this web component was observed by Microsoft Defender Threat Intelligence. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -507,7 +507,7 @@ HOSTCOMPONENTS <IMicrosoftGraphSecurityHostComponent\[]>: Retrieve details about
   - `[Name <String>]`: A name running on the artifact, for example, Microsoft IIS.
   - `[Version <String>]`: The component version running on the artifact, for example, v8.5. This should not be assumed to be strictly numerical.
 
-HOSTCOOKIES <IMicrosoftGraphSecurityHostCookie\[]>: Retrieve details about microsoft.graph.security.hostCookie objects.Note: List retrieval is not yet supported.
+HOSTCOOKIES <IMicrosoftGraphSecurityHostCookie[]>: Retrieve details about microsoft.graph.security.hostCookie objects.Note: List retrieval is not yet supported.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Domain <String>]`: The URI for which the cookie is valid.
   - `[FirstSeenDateTime <DateTime?>]`: The first date and time when this hostCookie was observed by Microsoft Defender Threat Intelligence. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -556,7 +556,7 @@ HOSTCOOKIES <IMicrosoftGraphSecurityHostCookie\[]>: Retrieve details about micro
   - `[LastSeenDateTime <DateTime?>]`: The most recent date and time when this hostCookie was observed by Microsoft Defender Threat Intelligence. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Name <String>]`: The name of the cookie, for example, JSESSIONID or SEARCH_NAMESITE.
 
-HOSTS <IMicrosoftGraphSecurityHost\[]>: Refers to microsoft.graph.security.host objects that Microsoft Threat Intelligence has observed.Note: List retrieval is not yet supported.
+HOSTS <IMicrosoftGraphSecurityHost[]>: Refers to microsoft.graph.security.host objects that Microsoft Threat Intelligence has observed.Note: List retrieval is not yet supported.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Components <IMicrosoftGraphSecurityHostComponent[]>]`: The hostComponents that are associated with this host.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -604,7 +604,7 @@ HOSTS <IMicrosoftGraphSecurityHost\[]>: Refers to microsoft.graph.security.host 
     - `[LastSeenDateTime <DateTime?>]`: The most recent date and time when this hostTracker was observed by Microsoft Defender Threat Intelligence. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[Value <String>]`: The identification value for the hostTracker.
 
-HOSTTRACKERS <IMicrosoftGraphSecurityHostTracker\[]>: Retrieve details about microsoft.graph.security.hostTracker objects.Note: List retrieval is not yet supported.
+HOSTTRACKERS <IMicrosoftGraphSecurityHostTracker[]>: Retrieve details about microsoft.graph.security.hostTracker objects.Note: List retrieval is not yet supported.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[FirstSeenDateTime <DateTime?>]`: The first date and time when this hostTracker was observed by Microsoft Defender Threat Intelligence. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Host <IMicrosoftGraphSecurityHost>]`: host
@@ -653,7 +653,7 @@ HOSTTRACKERS <IMicrosoftGraphSecurityHostTracker\[]>: Retrieve details about mic
   - `[LastSeenDateTime <DateTime?>]`: The most recent date and time when this hostTracker was observed by Microsoft Defender Threat Intelligence. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Value <String>]`: The identification value for the hostTracker.
 
-INTELLIGENCEPROFILEINDICATORS <IMicrosoftGraphSecurityIntelligenceProfileIndicator\[]>: .
+INTELLIGENCEPROFILEINDICATORS <IMicrosoftGraphSecurityIntelligenceProfileIndicator[]>: .
   - `[Artifact <IMicrosoftGraphSecurityArtifact>]`: artifact
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -662,7 +662,7 @@ INTELLIGENCEPROFILEINDICATORS <IMicrosoftGraphSecurityIntelligenceProfileIndicat
   - `[FirstSeenDateTime <DateTime?>]`: Designate when an artifact was first used actively in an attack, when a particular sample was compiled, or if neither of those could be ascertained when the file was first seen in public repositories (for example, VirusTotal, ANY.RUN, Hybrid Analysis) or reported publicly.
   - `[LastSeenDateTime <DateTime?>]`: Designate when an artifact was most recently used actively in an attack, when a particular sample was compiled, or if neither of those could be ascertained when the file was first seen in public repositories (for example, VirusTotal, ANY.RUN, Hybrid Analysis) or reported publicly.
 
-INTELPROFILES <IMicrosoftGraphSecurityIntelligenceProfile\[]>: A list of intelligenceProfile objects.
+INTELPROFILES <IMicrosoftGraphSecurityIntelligenceProfile[]>: A list of intelligenceProfile objects.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Aliases <String[]>]`: A list of commonly-known aliases for the threat intelligence included in the intelligenceProfile.
   - `[Description <IMicrosoftGraphSecurityFormattedContent>]`: formattedContent
@@ -687,7 +687,7 @@ INTELPROFILES <IMicrosoftGraphSecurityIntelligenceProfile\[]>: A list of intelli
   - `[Title <String>]`: The title of this intelligenceProfile.
   - `[Tradecraft <IMicrosoftGraphSecurityFormattedContent>]`: formattedContent
 
-PASSIVEDNSRECORDS <IMicrosoftGraphSecurityPassiveDnsRecord\[]>: Retrieve details about microsoft.graph.security.passiveDnsRecord objects.Note: List retrieval is not yet supported.
+PASSIVEDNSRECORDS <IMicrosoftGraphSecurityPassiveDnsRecord[]>: Retrieve details about microsoft.graph.security.passiveDnsRecord objects.Note: List retrieval is not yet supported.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Artifact <IMicrosoftGraphSecurityArtifact>]`: artifact
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -736,7 +736,7 @@ PASSIVEDNSRECORDS <IMicrosoftGraphSecurityPassiveDnsRecord\[]>: Retrieve details
       - `[Value <String>]`: The identification value for the hostTracker.
   - `[RecordType <String>]`: The DNS record type for this passiveDnsRecord entry.
 
-VULNERABILITIES <IMicrosoftGraphSecurityVulnerability\[]>: Retrieve details about microsoft.graph.security.vulnerabilities.Note: List retrieval is not yet supported.
+VULNERABILITIES <IMicrosoftGraphSecurityVulnerability[]>: Retrieve details about microsoft.graph.security.vulnerabilities.Note: List retrieval is not yet supported.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ActiveExploitsObserved <Boolean?>]`: Indicates whether this vulnerability has any known exploits associated to known bad actors.
   - `[Articles <IMicrosoftGraphSecurityArticle[]>]`: Articles related to this vulnerability.

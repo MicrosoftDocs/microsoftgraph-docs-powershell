@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/update-mgteamworkdeletedteam
@@ -202,7 +202,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDeletedTeam>`: deletedTeam
+BODYPARAMETER <IMicrosoftGraphDeletedTeam>: deletedTeam
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Channels <IMicrosoftGraphChannel[]>]`: The channels that are either shared with this deleted team or created in this deleted team.
@@ -632,7 +632,7 @@ BODYPARAMETER `<IMicrosoftGraphDeletedTeam>`: deletedTeam
             - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
             - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
             - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
-              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
               - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
               - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -2797,7 +2797,7 @@ BODYPARAMETER `<IMicrosoftGraphDeletedTeam>`: deletedTeam
     - `[TenantId <String>]`: The ID of the Azure Active Directory tenant.
     - `[WebUrl <String>]`: A hyperlink that will go to the channel in Microsoft Teams. This is the URL that you get when you right-click a channel in Microsoft Teams and select Get link to channel. This URL should be treated as an opaque blob, and not parsed. Read-only.
 
-CHANNELS <IMicrosoftGraphChannel\[]>: The channels that are either shared with this deleted team or created in this deleted team.
+CHANNELS <IMicrosoftGraphChannel[]>: The channels that are either shared with this deleted team or created in this deleted team.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CreatedDateTime <DateTime?>]`: Read only. Timestamp at which the channel was created.
   - `[Description <String>]`: Optional textual description for the channel.
@@ -3224,7 +3224,7 @@ CHANNELS <IMicrosoftGraphChannel\[]>: The channels that are either shared with t
           - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
           - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
           - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
-            - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+            - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
             - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
             - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -5389,7 +5389,7 @@ CHANNELS <IMicrosoftGraphChannel\[]>: The channels that are either shared with t
   - `[TenantId <String>]`: The ID of the Azure Active Directory tenant.
   - `[WebUrl <String>]`: A hyperlink that will go to the channel in Microsoft Teams. This is the URL that you get when you right-click a channel in Microsoft Teams and select Get link to channel. This URL should be treated as an opaque blob, and not parsed. Read-only.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat

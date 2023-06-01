@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointprovisioningpolicy
@@ -468,7 +468,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ASSIGNMENTS <IMicrosoftGraphCloudPcProvisioningPolicyAssignment\[]>: A defined collection of provisioning policy assignments. Represents the set of Microsoft 365 groups and security groups in Azure AD that have provisioning policy assigned. Returned only on $expand. For an example about how to get the assignments relationship, see Get cloudPcProvisioningPolicy.
+ASSIGNMENTS <IMicrosoftGraphCloudPcProvisioningPolicyAssignment[]>: A defined collection of provisioning policy assignments. Represents the set of Microsoft 365 groups and security groups in Azure AD that have provisioning policy assigned. Returned only on $expand. For an example about how to get the assignments relationship, see Get cloudPcProvisioningPolicy.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AssignedUsers <IMicrosoftGraphUser[]>]`: 
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
@@ -558,8 +558,8 @@ ASSIGNMENTS <IMicrosoftGraphCloudPcProvisioningPolicyAssignment\[]>: A defined c
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Application <IMicrosoftGraphIdentity>]`: identity
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-            - `[Id <String>]`: The identifier of the identity. This property is read-only.
+            - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+            - `[Id <String>]`: Unique identifier for the identity.
           - `[Device <IMicrosoftGraphIdentity>]`: identity
           - `[User <IMicrosoftGraphIdentity>]`: identity
         - `[CreatedDateTime <DateTime?>]`: The request creation date time.
@@ -586,8 +586,8 @@ ASSIGNMENTS <IMicrosoftGraphCloudPcProvisioningPolicyAssignment\[]>: A defined c
       - `[AddIns <IMicrosoftGraphAddIn[]>]`: Defines custom behavior that a consuming service can use to call an app in specific contexts. For example, applications that can render file streams may set the addIns property for its 'FileHandler' functionality. This will let services like Microsoft 365 call the application in the context of a document the user is working on.
         - `[Id <String>]`: 
         - `[Properties <IMicrosoftGraphKeyValue[]>]`: 
-          - `[Key <String>]`: Contains the name of the field that a value is associated with. When a sign in or domain hint is included in the sign-in request, corresponding fields are included as key-value pairs. Possible keys: Login hint present, Domain hint present.
-          - `[Value <String>]`: Contains the corresponding value for the specified key. The value is true if a sign in hint was included in the sign-in request; otherwise false. The value is true if a domain hint was included in the sign-in request; otherwise false.
+          - `[Key <String>]`: Key.
+          - `[Value <String>]`: Value.
         - `[Type <String>]`: 
       - `[AlternativeNames <String[]>]`: Used to retrieve service principals by subscription, identify resource group and full resource ids for managed identities. Supports $filter (eq, not, ge, le, startsWith).
       - `[AppDescription <String>]`: The description exposed by the associated application.
@@ -1069,7 +1069,7 @@ ASSIGNMENTS <IMicrosoftGraphCloudPcProvisioningPolicyAssignment\[]>: A defined c
         - `[DisplayName <String>]`: The display name of the mobile device as given by the user.
       - `[PhoneMethods <IMicrosoftGraphPhoneAuthenticationMethod[]>]`: Represents the phone registered to a user for authentication.
         - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-        - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
+        - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+<country code> <number>x<extension>', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
         - `[PhoneType <String>]`: authenticationPhoneType
         - `[SmsSignInState <String>]`: authenticationMethodSignInState
       - `[SignInPreferences <IMicrosoftGraphSignInPreferences>]`: signInPreferences
@@ -1360,7 +1360,7 @@ ASSIGNMENTS <IMicrosoftGraphCloudPcProvisioningPolicyAssignment\[]>: A defined c
         - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
         - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
         - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-          - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+          - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
           - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
           - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1369,13 +1369,13 @@ ASSIGNMENTS <IMicrosoftGraphCloudPcProvisioningPolicyAssignment\[]>: A defined c
             - `[User <IMicrosoftGraphIdentity>]`: identity
             - `[Conversation <IMicrosoftGraphTeamworkConversationIdentity>]`: teamworkConversationIdentity
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-              - `[Id <String>]`: The identifier of the identity. This property is read-only.
+              - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+              - `[Id <String>]`: Unique identifier for the identity.
               - `[ConversationIdentityType <String>]`: teamworkConversationIdentityType
             - `[Tag <IMicrosoftGraphTeamworkTagIdentity>]`: teamworkTagIdentity
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-              - `[Id <String>]`: The identifier of the identity. This property is read-only.
+              - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+              - `[Id <String>]`: Unique identifier for the identity.
         - `[MessageHistory <IMicrosoftGraphChatMessageHistoryItem[]>]`: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
           - `[Actions <String>]`: chatMessageActions
           - `[ModifiedDateTime <DateTime?>]`: The date and time when the message was modified.
@@ -1413,8 +1413,8 @@ ASSIGNMENTS <IMicrosoftGraphCloudPcProvisioningPolicyAssignment\[]>: A defined c
         - `[JoinWebUrl <String>]`: The URL which can be clicked on to join or uniquely identify the meeting.
         - `[Organizer <IMicrosoftGraphTeamworkUserIdentity>]`: teamworkUserIdentity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-          - `[Id <String>]`: The identifier of the identity. This property is read-only.
+          - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+          - `[Id <String>]`: Unique identifier for the identity.
           - `[UserIdentityType <String>]`: teamworkUserIdentityType
       - `[Operations <IMicrosoftGraphTeamsAsyncOperation[]>]`: A collection of all the Teams async operations that ran or are running on the chat. Nullable.
         - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -1885,8 +1885,8 @@ ASSIGNMENTS <IMicrosoftGraphCloudPcProvisioningPolicyAssignment\[]>: A defined c
               - `[Group <IMicrosoftGraphIdentity>]`: identity
               - `[SiteGroup <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-                - `[Id <String>]`: The identifier of the identity. This property is read-only.
+                - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+                - `[Id <String>]`: Unique identifier for the identity.
                 - `[LoginName <String>]`: The sign in name of the SharePoint identity.
               - `[SiteUser <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
             - `[GrantedToV2 <IMicrosoftGraphSharePointIdentitySet>]`: sharePointIdentitySet
@@ -4210,8 +4210,8 @@ ASSIGNMENTS <IMicrosoftGraphCloudPcProvisioningPolicyAssignment\[]>: A defined c
         - `[AccessReviewId <String>]`: The identifier of the accessReviewInstance parent. Supports $select. Read-only.
         - `[AppliedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-          - `[Id <String>]`: The identifier of the identity. This property is read-only.
+          - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+          - `[Id <String>]`: Unique identifier for the identity.
           - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
           - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
         - `[AppliedDateTime <DateTime?>]`: The timestamp when the approval decision was applied. The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.  Supports $select. Read-only.
@@ -5140,7 +5140,7 @@ ASSIGNMENTS <IMicrosoftGraphCloudPcProvisioningPolicyAssignment\[]>: A defined c
   - `[Target <IMicrosoftGraphCloudPcManagementAssignmentTarget>]`: cloudPcManagementAssignmentTarget
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
-BODYPARAMETER `<IMicrosoftGraphCloudPcProvisioningPolicy>`: cloudPcProvisioningPolicy
+BODYPARAMETER <IMicrosoftGraphCloudPcProvisioningPolicy>: cloudPcProvisioningPolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AlternateResourceUrl <String>]`: The URL of the alternate resource that links to this provisioning policy. Read-only.
@@ -5234,8 +5234,8 @@ BODYPARAMETER `<IMicrosoftGraphCloudPcProvisioningPolicy>`: cloudPcProvisioningP
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Application <IMicrosoftGraphIdentity>]`: identity
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-              - `[Id <String>]`: The identifier of the identity. This property is read-only.
+              - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+              - `[Id <String>]`: Unique identifier for the identity.
             - `[Device <IMicrosoftGraphIdentity>]`: identity
             - `[User <IMicrosoftGraphIdentity>]`: identity
           - `[CreatedDateTime <DateTime?>]`: The request creation date time.
@@ -5262,8 +5262,8 @@ BODYPARAMETER `<IMicrosoftGraphCloudPcProvisioningPolicy>`: cloudPcProvisioningP
         - `[AddIns <IMicrosoftGraphAddIn[]>]`: Defines custom behavior that a consuming service can use to call an app in specific contexts. For example, applications that can render file streams may set the addIns property for its 'FileHandler' functionality. This will let services like Microsoft 365 call the application in the context of a document the user is working on.
           - `[Id <String>]`: 
           - `[Properties <IMicrosoftGraphKeyValue[]>]`: 
-            - `[Key <String>]`: Contains the name of the field that a value is associated with. When a sign in or domain hint is included in the sign-in request, corresponding fields are included as key-value pairs. Possible keys: Login hint present, Domain hint present.
-            - `[Value <String>]`: Contains the corresponding value for the specified key. The value is true if a sign in hint was included in the sign-in request; otherwise false. The value is true if a domain hint was included in the sign-in request; otherwise false.
+            - `[Key <String>]`: Key.
+            - `[Value <String>]`: Value.
           - `[Type <String>]`: 
         - `[AlternativeNames <String[]>]`: Used to retrieve service principals by subscription, identify resource group and full resource ids for managed identities. Supports $filter (eq, not, ge, le, startsWith).
         - `[AppDescription <String>]`: The description exposed by the associated application.
@@ -5745,7 +5745,7 @@ BODYPARAMETER `<IMicrosoftGraphCloudPcProvisioningPolicy>`: cloudPcProvisioningP
           - `[DisplayName <String>]`: The display name of the mobile device as given by the user.
         - `[PhoneMethods <IMicrosoftGraphPhoneAuthenticationMethod[]>]`: Represents the phone registered to a user for authentication.
           - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-          - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
+          - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+<country code> <number>x<extension>', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
           - `[PhoneType <String>]`: authenticationPhoneType
           - `[SmsSignInState <String>]`: authenticationMethodSignInState
         - `[SignInPreferences <IMicrosoftGraphSignInPreferences>]`: signInPreferences
@@ -6036,7 +6036,7 @@ BODYPARAMETER `<IMicrosoftGraphCloudPcProvisioningPolicy>`: cloudPcProvisioningP
           - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
           - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
           - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-            - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+            - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
             - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
             - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -6045,13 +6045,13 @@ BODYPARAMETER `<IMicrosoftGraphCloudPcProvisioningPolicy>`: cloudPcProvisioningP
               - `[User <IMicrosoftGraphIdentity>]`: identity
               - `[Conversation <IMicrosoftGraphTeamworkConversationIdentity>]`: teamworkConversationIdentity
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-                - `[Id <String>]`: The identifier of the identity. This property is read-only.
+                - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+                - `[Id <String>]`: Unique identifier for the identity.
                 - `[ConversationIdentityType <String>]`: teamworkConversationIdentityType
               - `[Tag <IMicrosoftGraphTeamworkTagIdentity>]`: teamworkTagIdentity
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-                - `[Id <String>]`: The identifier of the identity. This property is read-only.
+                - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+                - `[Id <String>]`: Unique identifier for the identity.
           - `[MessageHistory <IMicrosoftGraphChatMessageHistoryItem[]>]`: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
             - `[Actions <String>]`: chatMessageActions
             - `[ModifiedDateTime <DateTime?>]`: The date and time when the message was modified.
@@ -6089,8 +6089,8 @@ BODYPARAMETER `<IMicrosoftGraphCloudPcProvisioningPolicy>`: cloudPcProvisioningP
           - `[JoinWebUrl <String>]`: The URL which can be clicked on to join or uniquely identify the meeting.
           - `[Organizer <IMicrosoftGraphTeamworkUserIdentity>]`: teamworkUserIdentity
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-            - `[Id <String>]`: The identifier of the identity. This property is read-only.
+            - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+            - `[Id <String>]`: Unique identifier for the identity.
             - `[UserIdentityType <String>]`: teamworkUserIdentityType
         - `[Operations <IMicrosoftGraphTeamsAsyncOperation[]>]`: A collection of all the Teams async operations that ran or are running on the chat. Nullable.
           - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -6561,8 +6561,8 @@ BODYPARAMETER `<IMicrosoftGraphCloudPcProvisioningPolicy>`: cloudPcProvisioningP
                 - `[Group <IMicrosoftGraphIdentity>]`: identity
                 - `[SiteGroup <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                  - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-                  - `[Id <String>]`: The identifier of the identity. This property is read-only.
+                  - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+                  - `[Id <String>]`: Unique identifier for the identity.
                   - `[LoginName <String>]`: The sign in name of the SharePoint identity.
                 - `[SiteUser <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
               - `[GrantedToV2 <IMicrosoftGraphSharePointIdentitySet>]`: sharePointIdentitySet
@@ -8886,8 +8886,8 @@ BODYPARAMETER `<IMicrosoftGraphCloudPcProvisioningPolicy>`: cloudPcProvisioningP
           - `[AccessReviewId <String>]`: The identifier of the accessReviewInstance parent. Supports $select. Read-only.
           - `[AppliedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-            - `[Id <String>]`: The identifier of the identity. This property is read-only.
+            - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+            - `[Id <String>]`: Unique identifier for the identity.
             - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
             - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
           - `[AppliedDateTime <DateTime?>]`: The timestamp when the approval decision was applied. The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.  Supports $select. Read-only.
@@ -9843,25 +9843,25 @@ BODYPARAMETER `<IMicrosoftGraphCloudPcProvisioningPolicy>`: cloudPcProvisioningP
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Language <String>]`: The Windows language/region tag to use for language pack configuration and localization of the Cloud PC. The default value is en-US, which corresponds to English (United States).
 
-DOMAINJOINCONFIGURATION `<IMicrosoftGraphCloudPcDomainJoinConfiguration>`: cloudPcDomainJoinConfiguration
+DOMAINJOINCONFIGURATION <IMicrosoftGraphCloudPcDomainJoinConfiguration>: cloudPcDomainJoinConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[OnPremisesConnectionId <String>]`: The Azure network connection ID that matches the virtual network IT admins want the provisioning policy to use when they create Cloud PCs. You can use this property in both domain join types: Azure AD joined or Hybrid Azure AD joined. If you enter an onPremisesConnectionId, leave regionName as empty.
   - `[RegionGroup <String>]`: cloudPcRegionGroup
   - `[RegionName <String>]`: The supported Azure region where the IT admin wants the provisioning policy to create Cloud PCs. The underlying virtual network will be created and managed by the Windows 365 service. This can only be entered if the IT admin chooses Azure AD joined as the domain join type. If you enter a regionName, leave onPremisesConnectionId as empty.
   - `[Type <String>]`: cloudPcDomainJoinType
 
-DOMAINJOINCONFIGURATIONS <IMicrosoftGraphCloudPcDomainJoinConfiguration\[]>: .
+DOMAINJOINCONFIGURATIONS <IMicrosoftGraphCloudPcDomainJoinConfiguration[]>: .
   - `[OnPremisesConnectionId <String>]`: The Azure network connection ID that matches the virtual network IT admins want the provisioning policy to use when they create Cloud PCs. You can use this property in both domain join types: Azure AD joined or Hybrid Azure AD joined. If you enter an onPremisesConnectionId, leave regionName as empty.
   - `[RegionGroup <String>]`: cloudPcRegionGroup
   - `[RegionName <String>]`: The supported Azure region where the IT admin wants the provisioning policy to create Cloud PCs. The underlying virtual network will be created and managed by the Windows 365 service. This can only be entered if the IT admin chooses Azure AD joined as the domain join type. If you enter a regionName, leave onPremisesConnectionId as empty.
   - `[Type <String>]`: cloudPcDomainJoinType
 
-MICROSOFTMANAGEDDESKTOP `<IMicrosoftGraphMicrosoftManagedDesktop>`: microsoftManagedDesktop
+MICROSOFTMANAGEDDESKTOP <IMicrosoftGraphMicrosoftManagedDesktop>: microsoftManagedDesktop
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Profile <String>]`: The name of the Microsoft Managed Desktop profile that the Windows 365 Cloud PC is associated with.
   - `[Type <String>]`: microsoftManagedDesktopType
 
-WINDOWSSETTINGS `<IMicrosoftGraphCloudPcWindowsSettings>`: cloudPcWindowsSettings
+WINDOWSSETTINGS <IMicrosoftGraphCloudPcWindowsSettings>: cloudPcWindowsSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Language <String>]`: The Windows language/region tag to use for language pack configuration and localization of the Cloud PC. The default value is en-US, which corresponds to English (United States).
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycasetag
@@ -285,7 +285,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryReviewTag1>`: ediscoveryReviewTag
+BODYPARAMETER <IMicrosoftGraphSecurityEdiscoveryReviewTag1>: ediscoveryReviewTag
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -303,7 +303,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryReviewTag1>`: ediscoveryReviewT
   - `[ChildTags <IMicrosoftGraphSecurityEdiscoveryReviewTag1[]>]`: Returns the tags that are a child of a tag.
   - `[Parent <IMicrosoftGraphSecurityEdiscoveryReviewTag1>]`: ediscoveryReviewTag
 
-CHILDTAGS <IMicrosoftGraphSecurityEdiscoveryReviewTag1\[]>: Returns the tags that are a child of a tag.
+CHILDTAGS <IMicrosoftGraphSecurityEdiscoveryReviewTag1[]>: Returns the tags that are a child of a tag.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -320,7 +320,7 @@ CHILDTAGS <IMicrosoftGraphSecurityEdiscoveryReviewTag1\[]>: Returns the tags tha
   - `[ChildTags <IMicrosoftGraphSecurityEdiscoveryReviewTag1[]>]`: Returns the tags that are a child of a tag.
   - `[Parent <IMicrosoftGraphSecurityEdiscoveryReviewTag1>]`: ediscoveryReviewTag
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -329,7 +329,7 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
   - `[ArticleId <String>]`: The unique identifier of article
   - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator
@@ -387,7 +387,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[VulnerabilityComponentId <String>]`: The unique identifier of vulnerabilityComponent
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
-PARENT `<IMicrosoftGraphSecurityEdiscoveryReviewTag1>`: ediscoveryReviewTag
+PARENT <IMicrosoftGraphSecurityEdiscoveryReviewTag1>: ediscoveryReviewTag
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

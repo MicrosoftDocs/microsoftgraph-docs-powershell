@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/new-mggroupthreadpostmention
@@ -339,7 +339,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphMention>`: mention
+BODYPARAMETER <IMicrosoftGraphMention>: mention
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Application <String>]`: The name of the application where the mention is created. Optional. Not used and defaulted as null for message.
@@ -354,12 +354,12 @@ BODYPARAMETER `<IMicrosoftGraphMention>`: mention
   - `[Mentioned <IMicrosoftGraphEmailAddress>]`: emailAddress
   - `[ServerCreatedDateTime <DateTime?>]`: The date and time that the mention is created on the server. Optional. Not used and defaulted as null for message.
 
-CREATEDBY `<IMicrosoftGraphEmailAddress>`: emailAddress
+CREATEDBY <IMicrosoftGraphEmailAddress>: emailAddress
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Address <String>]`: The email address of the person or entity.
   - `[Name <String>]`: The display name of the person or entity.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[ConversationId <String>]`: The unique identifier of conversation
@@ -377,6 +377,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[GroupId <String>]`: The unique identifier of group
   - `[GroupLifecyclePolicyId <String>]`: The unique identifier of groupLifecyclePolicy
   - `[GroupSettingId <String>]`: The unique identifier of groupSetting
+  - `[GroupSettingTemplateId <String>]`: The unique identifier of groupSettingTemplate
   - `[HorizontalSectionColumnId <String>]`: The unique identifier of horizontalSectionColumn
   - `[HorizontalSectionId <String>]`: The unique identifier of horizontalSection
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
@@ -409,7 +410,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
-MENTIONED `<IMicrosoftGraphEmailAddress>`: emailAddress
+MENTIONED <IMicrosoftGraphEmailAddress>: emailAddress
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Address <String>]`: The email address of the person or entity.
   - `[Name <String>]`: The display name of the person or entity.

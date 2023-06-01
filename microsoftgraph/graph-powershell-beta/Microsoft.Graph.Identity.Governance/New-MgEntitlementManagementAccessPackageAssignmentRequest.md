@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementaccesspackageassignmentrequest
@@ -515,7 +515,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ACCESSPACKAGE `<IMicrosoftGraphAccessPackage>`: accessPackage
+ACCESSPACKAGE <IMicrosoftGraphAccessPackage>: accessPackage
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AccessPackageAssignmentPolicies <IMicrosoftGraphAccessPackageAssignmentPolicy1[]>]`: Read-only. Nullable. Supports $expand.
@@ -1651,7 +1651,7 @@ ACCESSPACKAGE `<IMicrosoftGraphAccessPackage>`: accessPackage
             - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
             - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
             - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
               - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
               - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -5153,9 +5153,9 @@ ACCESSPACKAGE `<IMicrosoftGraphAccessPackage>`: accessPackage
         - `[ShowInAddressList <Boolean?>]`: Do not use in Microsoft Graph. Manage this property through the Microsoft 365 admin center instead. Represents whether the user should be included in the Outlook global address list. See Known issue.
         - `[SignInActivity <IMicrosoftGraphSignInActivity>]`: signInActivity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[LastNonInteractiveSignInDateTime <DateTime?>]`: The last non-interactive sign-in date for a specific user. You can use this field to calculate the last time a client signed in to the directory on behalf of a user. Because some users may use clients to access tenant resources rather than signing into your tenant directly, you can use the non-interactive sign-in date to along with lastSignInDateTime to identify inactive users. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'. Azure AD maintains non-interactive sign-ins going back to May 2020. For more information about using the value of this property, see Manage inactive user accounts in Azure AD.
+          - `[LastNonInteractiveSignInDateTime <DateTime?>]`: The last non-interactive sign-in date for a specific user. You can use this field to calculate the last time a client attempted to sign into the directory on behalf of a user. Because some users may use clients to access tenant resources rather than signing into your tenant directly, you can use the non-interactive sign-in date to along with lastSignInDateTime to identify inactive users. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'. Azure AD maintains non-interactive sign-ins going back to May 2020. For more information about using the value of this property, see Manage inactive user accounts in Azure AD.
           - `[LastNonInteractiveSignInRequestId <String>]`: Request identifier of the last non-interactive sign-in performed by this user.
-          - `[LastSignInDateTime <DateTime?>]`: The last interactive sign-in date and time for a specific user. You can use this field to calculate the last time a user signed in to the directory with an interactive authentication method. This field can be used to build reports, such as inactive users. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'. Azure AD maintains interactive sign-ins going back to April 2020. For more information about using the value of this property, see Manage inactive user accounts in Azure AD.
+          - `[LastSignInDateTime <DateTime?>]`: The last interactive sign-in date and time for a specific user. You can use this field to calculate the last time a user attempted to sign into the directory with an interactive authentication method. This field can be used to build reports, such as inactive users. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'. Azure AD maintains interactive sign-ins going back to April 2020. For more information about using the value of this property, see Manage inactive user accounts in Azure AD.
           - `[LastSignInRequestId <String>]`: Request identifier of the last interactive sign-in performed by this user.
         - `[SignInSessionsValidFromDateTime <DateTime?>]`: Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications will get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph).  If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint. Read-only. Use revokeSignInSessions to reset.
         - `[Skills <String[]>]`: A list for the user to enumerate their skills. Returned only on $select.
@@ -5361,7 +5361,7 @@ ACCESSPACKAGE `<IMicrosoftGraphAccessPackage>`: accessPackage
   - `[ModifiedBy <String>]`: The userPrincipalName of the user who last modified this resource. Read-only.
   - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
 
-ACCESSPACKAGEASSIGNMENT `<IMicrosoftGraphAccessPackageAssignment1>`: accessPackageAssignment
+ACCESSPACKAGEASSIGNMENT <IMicrosoftGraphAccessPackageAssignment1>: accessPackageAssignment
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AccessPackage <IMicrosoftGraphAccessPackage>]`: accessPackage
@@ -6500,7 +6500,7 @@ ACCESSPACKAGEASSIGNMENT `<IMicrosoftGraphAccessPackageAssignment1>`: accessPacka
               - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
               - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
               - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
                 - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
                 - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -10002,9 +10002,9 @@ ACCESSPACKAGEASSIGNMENT `<IMicrosoftGraphAccessPackageAssignment1>`: accessPacka
           - `[ShowInAddressList <Boolean?>]`: Do not use in Microsoft Graph. Manage this property through the Microsoft 365 admin center instead. Represents whether the user should be included in the Outlook global address list. See Known issue.
           - `[SignInActivity <IMicrosoftGraphSignInActivity>]`: signInActivity
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[LastNonInteractiveSignInDateTime <DateTime?>]`: The last non-interactive sign-in date for a specific user. You can use this field to calculate the last time a client signed in to the directory on behalf of a user. Because some users may use clients to access tenant resources rather than signing into your tenant directly, you can use the non-interactive sign-in date to along with lastSignInDateTime to identify inactive users. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'. Azure AD maintains non-interactive sign-ins going back to May 2020. For more information about using the value of this property, see Manage inactive user accounts in Azure AD.
+            - `[LastNonInteractiveSignInDateTime <DateTime?>]`: The last non-interactive sign-in date for a specific user. You can use this field to calculate the last time a client attempted to sign into the directory on behalf of a user. Because some users may use clients to access tenant resources rather than signing into your tenant directly, you can use the non-interactive sign-in date to along with lastSignInDateTime to identify inactive users. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'. Azure AD maintains non-interactive sign-ins going back to May 2020. For more information about using the value of this property, see Manage inactive user accounts in Azure AD.
             - `[LastNonInteractiveSignInRequestId <String>]`: Request identifier of the last non-interactive sign-in performed by this user.
-            - `[LastSignInDateTime <DateTime?>]`: The last interactive sign-in date and time for a specific user. You can use this field to calculate the last time a user signed in to the directory with an interactive authentication method. This field can be used to build reports, such as inactive users. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'. Azure AD maintains interactive sign-ins going back to April 2020. For more information about using the value of this property, see Manage inactive user accounts in Azure AD.
+            - `[LastSignInDateTime <DateTime?>]`: The last interactive sign-in date and time for a specific user. You can use this field to calculate the last time a user attempted to sign into the directory with an interactive authentication method. This field can be used to build reports, such as inactive users. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'. Azure AD maintains interactive sign-ins going back to April 2020. For more information about using the value of this property, see Manage inactive user accounts in Azure AD.
             - `[LastSignInRequestId <String>]`: Request identifier of the last interactive sign-in performed by this user.
           - `[SignInSessionsValidFromDateTime <DateTime?>]`: Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications will get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph).  If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint. Read-only. Use revokeSignInSessions to reset.
           - `[Skills <String[]>]`: A list for the user to enumerate their skills. Returned only on $select.
@@ -10296,7 +10296,7 @@ ACCESSPACKAGEASSIGNMENT `<IMicrosoftGraphAccessPackageAssignment1>`: accessPacka
   - `[Target <IMicrosoftGraphAccessPackageSubject1>]`: accessPackageSubject
   - `[TargetId <String>]`: The ID of the subject with the assignment. Read-only.
 
-ANSWERS <IMicrosoftGraphAccessPackageAnswer1\[]>: Answers provided by the requestor to accessPackageQuestions asked of them at the time of request.
+ANSWERS <IMicrosoftGraphAccessPackageAnswer1[]>: Answers provided by the requestor to accessPackageQuestions asked of them at the time of request.
   - `[AnsweredQuestion <IMicrosoftGraphAccessPackageQuestion1>]`: accessPackageQuestion
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: ID of the question.
@@ -10311,7 +10311,7 @@ ANSWERS <IMicrosoftGraphAccessPackageAnswer1\[]>: Answers provided by the reques
         - `[Text <String>]`: The text in the specific language. Required.
   - `[DisplayValue <String>]`: The display value of the answer. Required.
 
-BODYPARAMETER `<IMicrosoftGraphAccessPackageAssignmentRequest1>`: accessPackageAssignmentRequest
+BODYPARAMETER <IMicrosoftGraphAccessPackageAssignmentRequest1>: accessPackageAssignmentRequest
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AccessPackage <IMicrosoftGraphAccessPackage>]`: accessPackage
@@ -11450,7 +11450,7 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageAssignmentRequest1>`: accessPackageA
               - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
               - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
               - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
                 - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
                 - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -14952,9 +14952,9 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageAssignmentRequest1>`: accessPackageA
           - `[ShowInAddressList <Boolean?>]`: Do not use in Microsoft Graph. Manage this property through the Microsoft 365 admin center instead. Represents whether the user should be included in the Outlook global address list. See Known issue.
           - `[SignInActivity <IMicrosoftGraphSignInActivity>]`: signInActivity
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[LastNonInteractiveSignInDateTime <DateTime?>]`: The last non-interactive sign-in date for a specific user. You can use this field to calculate the last time a client signed in to the directory on behalf of a user. Because some users may use clients to access tenant resources rather than signing into your tenant directly, you can use the non-interactive sign-in date to along with lastSignInDateTime to identify inactive users. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'. Azure AD maintains non-interactive sign-ins going back to May 2020. For more information about using the value of this property, see Manage inactive user accounts in Azure AD.
+            - `[LastNonInteractiveSignInDateTime <DateTime?>]`: The last non-interactive sign-in date for a specific user. You can use this field to calculate the last time a client attempted to sign into the directory on behalf of a user. Because some users may use clients to access tenant resources rather than signing into your tenant directly, you can use the non-interactive sign-in date to along with lastSignInDateTime to identify inactive users. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'. Azure AD maintains non-interactive sign-ins going back to May 2020. For more information about using the value of this property, see Manage inactive user accounts in Azure AD.
             - `[LastNonInteractiveSignInRequestId <String>]`: Request identifier of the last non-interactive sign-in performed by this user.
-            - `[LastSignInDateTime <DateTime?>]`: The last interactive sign-in date and time for a specific user. You can use this field to calculate the last time a user signed in to the directory with an interactive authentication method. This field can be used to build reports, such as inactive users. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'. Azure AD maintains interactive sign-ins going back to April 2020. For more information about using the value of this property, see Manage inactive user accounts in Azure AD.
+            - `[LastSignInDateTime <DateTime?>]`: The last interactive sign-in date and time for a specific user. You can use this field to calculate the last time a user attempted to sign into the directory with an interactive authentication method. This field can be used to build reports, such as inactive users. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'. Azure AD maintains interactive sign-ins going back to April 2020. For more information about using the value of this property, see Manage inactive user accounts in Azure AD.
             - `[LastSignInRequestId <String>]`: Request identifier of the last interactive sign-in performed by this user.
           - `[SignInSessionsValidFromDateTime <DateTime?>]`: Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications will get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph).  If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint. Read-only. Use revokeSignInSessions to reset.
           - `[Skills <String[]>]`: A list for the user to enumerate their skills. Returned only on $select.
@@ -15247,20 +15247,20 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageAssignmentRequest1>`: accessPackageA
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Type <String[]>]`: The list of credential types provided by the issuer.
 
-CUSTOMEXTENSIONCALLOUTINSTANCES <IMicrosoftGraphCustomExtensionCalloutInstance\[]>: Information about all the custom extension calls that were made during the access package assignment request workflow.
+CUSTOMEXTENSIONCALLOUTINSTANCES <IMicrosoftGraphCustomExtensionCalloutInstance[]>: Information about all the custom extension calls that were made during the access package assignment request workflow.
   - `[CustomExtensionId <String>]`: Identification of the custom extension that was triggered at this instance.
   - `[Detail <String>]`: Details provided by the logic app during the callback of the request instance.
   - `[ExternalCorrelationId <String>]`: The unique run identifier for the logic app.
   - `[Id <String>]`: Unique identifier for the callout instance. Read-only.
   - `[Status <String>]`: customExtensionCalloutInstanceStatus
 
-CUSTOMEXTENSIONHANDLERINSTANCES <IMicrosoftGraphCustomExtensionHandlerInstance\[]>: A collection of custom workflow extension instances being run on an assignment request. Read-only.
+CUSTOMEXTENSIONHANDLERINSTANCES <IMicrosoftGraphCustomExtensionHandlerInstance[]>: A collection of custom workflow extension instances being run on an assignment request. Read-only.
   - `[CustomExtensionId <String>]`: Identifier of the customAccessPackageWorkflowExtension triggered at this instance.
   - `[ExternalCorrelationId <String>]`: The unique run ID for the logic app.
   - `[Stage <String>]`: accessPackageCustomExtensionStage
   - `[Status <String>]`: accessPackageCustomExtensionHandlerStatus
 
-REQUESTOR `<IMicrosoftGraphAccessPackageSubject1>`: accessPackageSubject
+REQUESTOR <IMicrosoftGraphAccessPackageSubject1>: accessPackageSubject
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AltSecId <String>]`: 
@@ -15288,7 +15288,7 @@ REQUESTOR `<IMicrosoftGraphAccessPackageSubject1>`: accessPackageSubject
   - `[SubjectLifecycle <String>]`: accessPackageSubjectLifecycle
   - `[Type <String>]`: The resource type of the subject.
 
-SCHEDULE `<IMicrosoftGraphRequestSchedule>`: requestSchedule
+SCHEDULE <IMicrosoftGraphRequestSchedule>: requestSchedule
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Expiration <IMicrosoftGraphExpirationPattern>]`: expirationPattern
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -15315,7 +15315,7 @@ SCHEDULE `<IMicrosoftGraphRequestSchedule>`: requestSchedule
       - `[Type <String>]`: recurrenceRangeType
   - `[StartDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. In PIM, when the  eligible or active assignment becomes active.
 
-VERIFIEDCREDENTIALSDATA <IMicrosoftGraphVerifiedCredentialData\[]>: The details of the verifiable credential that was presented by the requestor, such as the issuer and claims. Read-only.
+VERIFIEDCREDENTIALSDATA <IMicrosoftGraphVerifiedCredentialData[]>: The details of the verifiable credential that was presented by the requestor, such as the issuer and claims. Read-only.
   - `[Authority <String>]`: The authority ID for the issuer.
   - `[Claims <IMicrosoftGraphVerifiedCredentialClaims>]`: verifiedCredentialClaims
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

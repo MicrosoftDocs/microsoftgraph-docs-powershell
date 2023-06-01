@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/update-mgprinttaskdefinitiontask
@@ -285,7 +285,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPrintTask1>`: printTask
+BODYPARAMETER <IMicrosoftGraphPrintTask1>: printTask
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Definition <IMicrosoftGraphPrintTaskDefinition>]`: printTaskDefinition
@@ -310,7 +310,7 @@ BODYPARAMETER `<IMicrosoftGraphPrintTask1>`: printTask
     - `[Definition <IMicrosoftGraphPrintTaskDefinition>]`: printTaskDefinition
     - `[Event <String>]`: printEvent
 
-DEFINITION `<IMicrosoftGraphPrintTaskDefinition>`: printTaskDefinition
+DEFINITION <IMicrosoftGraphPrintTaskDefinition>: printTaskDefinition
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CreatedBy <IMicrosoftGraphAppIdentity>]`: appIdentity
@@ -334,7 +334,7 @@ DEFINITION `<IMicrosoftGraphPrintTaskDefinition>`: printTaskDefinition
       - `[Definition <IMicrosoftGraphPrintTaskDefinition>]`: printTaskDefinition
       - `[Event <String>]`: printEvent
 
-INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCloudPrintIdentity>: Identity Parameter
   - `[GroupId <String>]`: The unique identifier of group
   - `[PrintConnectorId <String>]`: The unique identifier of printConnector
   - `[PrintOperationId <String>]`: The unique identifier of printOperation
@@ -347,12 +347,12 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
   - `[PrinterShareId <String>]`: The unique identifier of printerShare
   - `[UserId <String>]`: The unique identifier of user
 
-STATUS `<IMicrosoftGraphPrintTaskStatus>`: printTaskStatus
+STATUS <IMicrosoftGraphPrintTaskStatus>: printTaskStatus
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Description <String>]`: A human-readable description of the current processing state of the printTask.
   - `[State <String>]`: printTaskProcessingState
 
-TRIGGER `<IMicrosoftGraphPrintTaskTrigger>`: printTaskTrigger
+TRIGGER <IMicrosoftGraphPrintTaskTrigger>: printTaskTrigger
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Definition <IMicrosoftGraphPrintTaskDefinition>]`: printTaskDefinition

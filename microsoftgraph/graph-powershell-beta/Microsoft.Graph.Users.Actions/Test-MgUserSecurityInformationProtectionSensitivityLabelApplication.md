@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/test-mgusersecurityinformationprotectionsensitivitylabelapplication
@@ -263,7 +263,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Ssqny1UsersUserIdSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityEvaluateapplicationPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Ssqny1UsersUserIdSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityEvaluateapplicationPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ContentInfo <IMicrosoftGraphSecurityContentInfo>]`: contentInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -283,7 +283,7 @@ BODYPARAMETER `<IPaths1Ssqny1UsersUserIdSecurityInformationprotectionSensitivity
     - `[ExtendedProperties <IMicrosoftGraphSecurityKeyValuePair[]>]`: Extended properties will be parsed and returned in the standard Microsoft Purview Information Protection labeled metadata format as part of the label information.
     - `[LabelId <String>]`: The GUID of the label that should be applied to the information.
 
-CONTENTINFO `<IMicrosoftGraphSecurityContentInfo>`: contentInfo
+CONTENTINFO <IMicrosoftGraphSecurityContentInfo>: contentInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ContentFormat <String>]`: The format of the content to be labeled. Possible values are: file, email.
   - `[Identifier <String>]`: Identifier used for Azure Information Protection Analytics.
@@ -292,7 +292,7 @@ CONTENTINFO `<IMicrosoftGraphSecurityContentInfo>`: contentInfo
     - `[Value <String>]`: Value for this key-value pair.
   - `[State <String>]`: contentState
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
@@ -335,7 +335,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
   - `[UserId <String>]`: The unique identifier of user
 
-LABELINGOPTIONS `<IMicrosoftGraphSecurityLabelingOptions>`: labelingOptions
+LABELINGOPTIONS <IMicrosoftGraphSecurityLabelingOptions>: labelingOptions
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AssignmentMethod <String>]`: assignmentMethod
   - `[DowngradeJustification <IMicrosoftGraphSecurityDowngradeJustification>]`: downgradeJustification

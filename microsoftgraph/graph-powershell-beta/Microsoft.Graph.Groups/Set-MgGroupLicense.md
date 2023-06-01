@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/set-mggrouplicense
@@ -233,18 +233,18 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ADDLICENSES <IMicrosoftGraphAssignedLicense\[]>: .
+ADDLICENSES <IMicrosoftGraphAssignedLicense[]>: .
   - `[DisabledPlans <String[]>]`: A collection of the unique identifiers for plans that have been disabled.
   - `[SkuId <String>]`: The unique identifier for the SKU.
 
-BODYPARAMETER `<IPaths6Fg5LiGroupsGroupIdMicrosoftGraphAssignlicensePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths6Fg5LiGroupsGroupIdMicrosoftGraphAssignlicensePostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AddLicenses <IMicrosoftGraphAssignedLicense[]>]`: 
     - `[DisabledPlans <String[]>]`: A collection of the unique identifiers for plans that have been disabled.
     - `[SkuId <String>]`: The unique identifier for the SKU.
   - `[RemoveLicenses <String[]>]`: 
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[ConversationId <String>]`: The unique identifier of conversation
@@ -262,6 +262,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[GroupId <String>]`: The unique identifier of group
   - `[GroupLifecyclePolicyId <String>]`: The unique identifier of groupLifecyclePolicy
   - `[GroupSettingId <String>]`: The unique identifier of groupSetting
+  - `[GroupSettingTemplateId <String>]`: The unique identifier of groupSettingTemplate
   - `[HorizontalSectionColumnId <String>]`: The unique identifier of horizontalSectionColumn
   - `[HorizontalSectionId <String>]`: The unique identifier of horizontalSection
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}

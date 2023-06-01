@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.bookings/update-mgbusinessscenarioplannertaskconfiguration
@@ -204,7 +204,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPlannerTaskConfiguration>`: plannerTaskConfiguration
+BODYPARAMETER <IMicrosoftGraphPlannerTaskConfiguration>: plannerTaskConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[EditPolicy <IMicrosoftGraphPlannerTaskPolicy>]`: plannerTaskPolicy
@@ -237,7 +237,7 @@ BODYPARAMETER `<IMicrosoftGraphPlannerTaskConfiguration>`: plannerTaskConfigurat
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[RoleKind <String>]`: plannerUserRoleKind
 
-EDITPOLICY `<IMicrosoftGraphPlannerTaskPolicy>`: plannerTaskPolicy
+EDITPOLICY <IMicrosoftGraphPlannerTaskPolicy>: plannerTaskPolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Rules <IMicrosoftGraphPlannerTaskRoleBasedRule[]>]`: The rules that should be enforced on the tasks when they are being changed outside of the scenario, based on the role of the caller.
     - `[DefaultRule <String>]`: Default rule that applies when a property or action-specific rule is not provided. Possible values are: Allow, Block
@@ -267,7 +267,7 @@ EDITPOLICY `<IMicrosoftGraphPlannerTaskPolicy>`: plannerTaskPolicy
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[RoleKind <String>]`: plannerUserRoleKind
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+INPUTOBJECT <IBookingsIdentity>: Identity Parameter
   - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
   - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness
   - `[BookingCurrencyId <String>]`: The unique identifier of bookingCurrency

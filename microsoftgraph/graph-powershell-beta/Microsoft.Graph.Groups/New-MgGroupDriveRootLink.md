@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/new-mggroupdriverootlink
@@ -297,7 +297,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsO03ZgjGroupsGroupIdDrivesDriveIdRootMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema1>`: .
+BODYPARAMETER <IPathsO03ZgjGroupsGroupIdDrivesDriveIdRootMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema1>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ExpirationDateTime <DateTime?>]`: 
   - `[Message <String>]`: 
@@ -311,7 +311,7 @@ BODYPARAMETER `<IPathsO03ZgjGroupsGroupIdDrivesDriveIdRootMicrosoftGraphCreateli
   - `[SendNotification <Boolean?>]`: 
   - `[Type <String>]`: 
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[ConversationId <String>]`: The unique identifier of conversation
@@ -329,6 +329,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[GroupId <String>]`: The unique identifier of group
   - `[GroupLifecyclePolicyId <String>]`: The unique identifier of groupLifecyclePolicy
   - `[GroupSettingId <String>]`: The unique identifier of groupSetting
+  - `[GroupSettingTemplateId <String>]`: The unique identifier of groupSettingTemplate
   - `[HorizontalSectionColumnId <String>]`: The unique identifier of horizontalSectionColumn
   - `[HorizontalSectionId <String>]`: The unique identifier of horizontalSection
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
@@ -361,7 +362,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
-RECIPIENTS <IMicrosoftGraphDriveRecipient\[]>: .
+RECIPIENTS <IMicrosoftGraphDriveRecipient[]>: .
   - `[Alias <String>]`: The alias of the domain object, for cases where an email address is unavailable (e.g. security groups).
   - `[Email <String>]`: The email address for the recipient, if the recipient has an associated email address.
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.

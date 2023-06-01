@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/new-mgexternalindustrydatasourcesystem
@@ -176,7 +176,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphIndustryDataSourceSystemDefinition>`: sourceSystemDefinition
+BODYPARAMETER <IMicrosoftGraphIndustryDataSourceSystemDefinition>: sourceSystemDefinition
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DisplayName <String>]`: The name of the source system. Maximum supported length is 100 characters.
@@ -205,7 +205,7 @@ BODYPARAMETER `<IMicrosoftGraphIndustryDataSourceSystemDefinition>`: sourceSyste
       - `[Value <IMicrosoftGraphIndustryDataReferenceDefinition>]`: referenceDefinition
   - `[Vendor <String>]`: The name of the vendor who supplies the source system. Maximum supported length is 100 characters.
 
-USERMATCHINGSETTINGS <IMicrosoftGraphIndustryDataUserMatchingSetting\[]>: A collection of user matching settings by roleGroup.
+USERMATCHINGSETTINGS <IMicrosoftGraphIndustryDataUserMatchingSetting[]>: A collection of user matching settings by roleGroup.
   - `[MatchTarget <IMicrosoftGraphIndustryDataUserMatchTargetReferenceValue>]`: userMatchTargetReferenceValue
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Code <String>]`: The code of the desired referenceDefinition entry.

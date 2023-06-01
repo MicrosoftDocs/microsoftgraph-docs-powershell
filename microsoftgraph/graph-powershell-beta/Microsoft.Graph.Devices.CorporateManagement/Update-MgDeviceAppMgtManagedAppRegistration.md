@@ -1,277 +1,59 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmgtmanagedappregistration
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgusermobileapptroubleshootingeventapplogcollectionrequest
 schema: 2.0.0
 ---
 
-# Update-MgDeviceAppMgtManagedAppRegistration
+# Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest
 
 ## SYNOPSIS
-Update the navigation property managedAppRegistrations in deviceAppManagement
+The collection property of AppLogUploadRequest.
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### Delete (Default)
 ```
-Update-MgDeviceAppMgtManagedAppRegistration -ManagedAppRegistrationId <String>
- [-AdditionalProperties <Hashtable>] [-AppIdentifier <Hashtable>] [-ApplicationVersion <String>]
- [-AppliedPolicies <IMicrosoftGraphManagedAppPolicy1[]>] [-AzureAdDeviceId <String>]
- [-CreatedDateTime <DateTime>] [-DeviceManufacturer <String>] [-DeviceModel <String>] [-DeviceName <String>]
- [-DeviceTag <String>] [-DeviceType <String>] [-FlaggedReasons <ManagedAppFlaggedReason[]>] [-Id <String>]
- [-IntendedPolicies <IMicrosoftGraphManagedAppPolicy1[]>] [-LastSyncDateTime <DateTime>]
- [-ManagedDeviceId <String>] [-ManagementSdkVersion <String>]
- [-Operations <IMicrosoftGraphManagedAppOperation[]>] [-PlatformVersion <String>] [-UserId <String>]
- [-Version <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest -AppLogCollectionRequestId <String>
+ -MobileAppTroubleshootingEventId <String> -UserId <String> [-IfMatch <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
-### Update1
+### DeleteViaIdentity
 ```
-Update-MgDeviceAppMgtManagedAppRegistration -ManagedAppRegistrationId <String>
- -BodyParameter <IMicrosoftGraphManagedAppRegistration1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded1
-```
-Update-MgDeviceAppMgtManagedAppRegistration -InputObject <IDevicesCorporateManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-AppIdentifier <Hashtable>] [-ApplicationVersion <String>]
- [-AppliedPolicies <IMicrosoftGraphManagedAppPolicy1[]>] [-AzureAdDeviceId <String>]
- [-CreatedDateTime <DateTime>] [-DeviceManufacturer <String>] [-DeviceModel <String>] [-DeviceName <String>]
- [-DeviceTag <String>] [-DeviceType <String>] [-FlaggedReasons <ManagedAppFlaggedReason[]>] [-Id <String>]
- [-IntendedPolicies <IMicrosoftGraphManagedAppPolicy1[]>] [-LastSyncDateTime <DateTime>]
- [-ManagedDeviceId <String>] [-ManagementSdkVersion <String>]
- [-Operations <IMicrosoftGraphManagedAppOperation[]>] [-PlatformVersion <String>] [-UserId <String>]
- [-Version <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity1
-```
-Update-MgDeviceAppMgtManagedAppRegistration -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphManagedAppRegistration1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest
+ -InputObject <IDevicesCorporateManagementIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property managedAppRegistrations in deviceAppManagement
+The collection property of AppLogUploadRequest.
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
-
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
-
-```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -AppIdentifier
-The identifier for a mobile app.
-
-```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ApplicationVersion
-App version
+### -AppLogCollectionRequestId
+key: id of appLogCollectionRequest
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -AppliedPolicies
-Zero or more policys already applied on the registered app when it last synchronized with managment service.
-To construct, please use Get-Help -Online and see NOTES section for APPLIEDPOLICIES properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphManagedAppPolicy1[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -AzureAdDeviceId
-The Azure Active Directory Device identifier of the host device.
-Value could be empty even when the host device is Azure Active Directory registered.
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -BodyParameter
-The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphManagedAppRegistration1
-Parameter Sets: Update1, UpdateViaIdentity1
+Parameter Sets: Delete
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -CreatedDateTime
-Date and time of creation
-
-```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DeviceManufacturer
-The device manufacturer for the current app registration
+### -IfMatch
+ETag
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DeviceModel
-The device model for the current app registration
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DeviceName
-Host device name
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DeviceTag
-App management SDK generated tag, which helps relate apps hosted on the same device.
-Not guaranteed to relate apps in all conditions.
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DeviceType
-Host device type
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -FlaggedReasons
-Zero or more reasons an app registration is flagged.
-E.g.
-app running on rooted device
-
-```yaml
-Type: ManagedAppFlaggedReason[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Id
-The unique idenfier for an entity.
-Read-only.
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -287,7 +69,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IDevicesCorporateManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
+Parameter Sets: DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -297,93 +79,15 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -IntendedPolicies
-Zero or more policies admin intended for the app as of now.
-To construct, please use Get-Help -Online and see NOTES section for INTENDEDPOLICIES properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphManagedAppPolicy1[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -LastSyncDateTime
-Date and time of last the app synced with management service.
-
-```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ManagedAppRegistrationId
-The unique identifier of managedAppRegistration
+### -MobileAppTroubleshootingEventId
+key: id of mobileAppTroubleshootingEvent
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Parameter Sets: Delete
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ManagedDeviceId
-The Managed Device identifier of the host device.
-Value could be empty even when the host device is managed.
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ManagementSdkVersion
-App management SDK version
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Operations
-Zero or more long running operations triggered on the app registration.
-To construct, please use Get-Help -Online and see NOTES section for OPERATIONS properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphManagedAppOperation[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -400,50 +104,20 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PlatformVersion
-Operating System version
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
 ### -UserId
-The user Id to who this app registration belongs.
+key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: Delete
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Version
-Version of the entity.
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
-
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -487,14 +161,83 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedAppRegistration1
 ## OUTPUTS
 
 ### System.Boolean
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+  - `[AndroidManagedAppProtectionId <String>]`: key: id of androidManagedAppProtection
+  - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
+  - `[AssignmentFilterEvaluationStatusDetailsId <String>]`: key: id of assignmentFilterEvaluationStatusDetails
+  - `[BundleId <String>]`: Usage: bundleId={bundleId}
+  - `[Count <Int64?>]`: Usage: count={count}
+  - `[DefaultManagedAppProtectionId <String>]`: key: id of defaultManagedAppProtection
+  - `[DeviceAppManagementTaskId <String>]`: key: id of deviceAppManagementTask
+  - `[DeviceCompliancePolicyStateId <String>]`: key: id of deviceCompliancePolicyState
+  - `[DeviceConfigurationStateId <String>]`: key: id of deviceConfigurationState
+  - `[DeviceEnrollmentConfigurationId <String>]`: key: id of deviceEnrollmentConfiguration
+  - `[DeviceId <String>]`: Usage: deviceId={deviceId}
+  - `[DeviceInstallStateId <String>]`: key: id of deviceInstallState
+  - `[DeviceLogCollectionResponseId <String>]`: key: id of deviceLogCollectionResponse
+  - `[DeviceManagementTroubleshootingEventId <String>]`: key: id of deviceManagementTroubleshootingEvent
+  - `[EnrollmentConfigurationAssignmentId <String>]`: key: id of enrollmentConfigurationAssignment
+  - `[EnterpriseCodeSigningCertificateId <String>]`: key: id of enterpriseCodeSigningCertificate
+  - `[IosLobAppProvisioningConfigurationAssignmentId <String>]`: key: id of iosLobAppProvisioningConfigurationAssignment
+  - `[IosLobAppProvisioningConfigurationId <String>]`: key: id of iosLobAppProvisioningConfiguration
+  - `[IosManagedAppProtectionId <String>]`: key: id of iosManagedAppProtection
+  - `[ManagedAppOperationId <String>]`: key: id of managedAppOperation
+  - `[ManagedAppPolicyId <String>]`: key: id of managedAppPolicy
+  - `[ManagedAppRegistrationId <String>]`: key: id of managedAppRegistration
+  - `[ManagedAppStatusId <String>]`: key: id of managedAppStatus
+  - `[ManagedDeviceId <String>]`: key: id of managedDevice
+  - `[ManagedDeviceMobileAppConfigurationAssignmentId <String>]`: key: id of managedDeviceMobileAppConfigurationAssignment
+  - `[ManagedDeviceMobileAppConfigurationDeviceStatusId <String>]`: key: id of managedDeviceMobileAppConfigurationDeviceStatus
+  - `[ManagedDeviceMobileAppConfigurationId <String>]`: key: id of managedDeviceMobileAppConfiguration
+  - `[ManagedDeviceMobileAppConfigurationStateId <String>]`: key: id of managedDeviceMobileAppConfigurationState
+  - `[ManagedDeviceMobileAppConfigurationUserStatusId <String>]`: key: id of managedDeviceMobileAppConfigurationUserStatus
+  - `[ManagedEBookAssignmentId <String>]`: key: id of managedEBookAssignment
+  - `[ManagedEBookCategoryId <String>]`: key: id of managedEBookCategory
+  - `[ManagedEBookId <String>]`: key: id of managedEBook
+  - `[ManagedMobileAppId <String>]`: key: id of managedMobileApp
+  - `[MdmWindowsInformationProtectionPolicyId <String>]`: key: id of mdmWindowsInformationProtectionPolicy
+  - `[MobileAppAssignmentId <String>]`: key: id of mobileAppAssignment
+  - `[MobileAppCategoryId <String>]`: key: id of mobileAppCategory
+  - `[MobileAppId <String>]`: key: id of mobileApp
+  - `[MobileAppInstallStatusId <String>]`: key: id of mobileAppInstallStatus
+  - `[MobileAppIntentAndStateId <String>]`: key: id of mobileAppIntentAndState
+  - `[MobileAppProvisioningConfigGroupAssignmentId <String>]`: key: id of mobileAppProvisioningConfigGroupAssignment
+  - `[MobileAppRelationshipId <String>]`: key: id of mobileAppRelationship
+  - `[MobileAppTroubleshootingEventId <String>]`: key: id of mobileAppTroubleshootingEvent
+  - `[OfficeClientConfigurationAssignmentId <String>]`: key: id of officeClientConfigurationAssignment
+  - `[OfficeClientConfigurationId <String>]`: key: id of officeClientConfiguration
+  - `[PolicySetAssignmentId <String>]`: key: id of policySetAssignment
+  - `[PolicySetId <String>]`: key: id of policySet
+  - `[PolicySetItemId <String>]`: key: id of policySetItem
+  - `[SecurityBaselineSettingStateId <String>]`: key: id of securityBaselineSettingState
+  - `[SecurityBaselineStateId <String>]`: key: id of securityBaselineState
+  - `[SideLoadingKeyId <String>]`: key: id of sideLoadingKey
+  - `[Status <String>]`: Usage: status={status}
+  - `[TargetedManagedAppConfigurationId <String>]`: key: id of targetedManagedAppConfiguration
+  - `[TargetedManagedAppPolicyAssignmentId <String>]`: key: id of targetedManagedAppPolicyAssignment
+  - `[UserAppInstallStatusId <String>]`: key: id of userAppInstallStatus
+  - `[UserId <String>]`: key: id of user
+  - `[UserInstallStateSummaryId <String>]`: key: id of userInstallStateSummary
+  - `[UserPrincipalName <String>]`: Usage: userPrincipalName={userPrincipalName}
+  - `[VppTokenId <String>]`: key: id of vppToken
+  - `[WindowsDefenderApplicationControlSupplementalPolicyAssignmentId <String>]`: key: id of windowsDefenderApplicationControlSupplementalPolicyAssignment
+  - `[WindowsDefenderApplicationControlSupplementalPolicyDeploymentStatusId <String>]`: key: id of windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
+  - `[WindowsDefenderApplicationControlSupplementalPolicyId <String>]`: key: id of windowsDefenderApplicationControlSupplementalPolicy
+  - `[WindowsDeviceMalwareStateId <String>]`: key: id of windowsDeviceMalwareState
+  - `[WindowsInformationProtectionDeviceRegistrationId <String>]`: key: id of windowsInformationProtectionDeviceRegistration
+  - `[WindowsInformationProtectionPolicyId <String>]`: key: id of windowsInformationProtectionPolicy
+  - `[WindowsInformationProtectionWipeActionId <String>]`: key: id of windowsInformationProtectionWipeAction
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmgtmanagedappregistration](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmgtmanagedappregistration)
-

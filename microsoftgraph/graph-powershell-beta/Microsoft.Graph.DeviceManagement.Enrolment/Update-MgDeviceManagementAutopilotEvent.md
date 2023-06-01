@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/update-mgdevicemanagementautopilotevent
@@ -618,7 +618,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDeviceManagementAutopilotEvent>`: Represents an Autopilot flow event.
+BODYPARAMETER <IMicrosoftGraphDeviceManagementAutopilotEvent>: Represents an Autopilot flow event.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AccountSetupDuration <TimeSpan?>]`: Time spent in user ESP.
@@ -656,7 +656,7 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagementAutopilotEvent>`: Represents an A
   - `[Windows10EnrollmentCompletionPageConfigurationId <String>]`: Enrollment Status Page profile ID
   - `[WindowsAutopilotDeploymentProfileDisplayName <String>]`: Autopilot profile name.
 
-INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: The unique identifier of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: The unique identifier of androidForWorkEnrollmentProfile
   - `[AppScopeId <String>]`: The unique identifier of appScope
@@ -693,7 +693,7 @@ INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
   - `[WindowsFeatureUpdateProfileAssignmentId <String>]`: The unique identifier of windowsFeatureUpdateProfileAssignment
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
-POLICYSTATUSDETAILS <IMicrosoftGraphDeviceManagementAutopilotPolicyStatusDetail\[]>: Policy and application status details for this device.
+POLICYSTATUSDETAILS <IMicrosoftGraphDeviceManagementAutopilotPolicyStatusDetail[]>: Policy and application status details for this device.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ComplianceStatus <String>]`: deviceManagementAutopilotPolicyComplianceStatus
   - `[DisplayName <String>]`: The friendly name of the policy.

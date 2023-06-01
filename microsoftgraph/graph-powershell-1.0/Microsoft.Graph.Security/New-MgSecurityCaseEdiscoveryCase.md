@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycase
@@ -401,7 +401,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryCase>`: ediscoveryCase
+BODYPARAMETER <IMicrosoftGraphSecurityEdiscoveryCase>: ediscoveryCase
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CreatedDateTime <DateTime?>]`: 
   - `[Description <String>]`: 
@@ -863,7 +863,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryCase>`: ediscoveryCase
               - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
               - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
               - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
-                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
                 - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
                 - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -2906,9 +2906,9 @@ BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryCase>`: ediscoveryCase
           - `[ShowInAddressList <Boolean?>]`: Do not use in Microsoft Graph. Manage this property through the Microsoft 365 admin center instead. Represents whether the user should be included in the Outlook global address list. See Known issue.
           - `[SignInActivity <IMicrosoftGraphSignInActivity>]`: signInActivity
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[LastNonInteractiveSignInDateTime <DateTime?>]`: The last non-interactive sign-in date for a specific user. You can use this field to calculate the last time a client signed in to the directory on behalf of a user. Because some users may use clients to access tenant resources rather than signing into your tenant directly, you can use the non-interactive sign-in date to along with lastSignInDateTime to identify inactive users. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'. Azure AD maintains non-interactive sign-ins going back to May 2020. For more information about using the value of this property, see Manage inactive user accounts in Azure AD.
+            - `[LastNonInteractiveSignInDateTime <DateTime?>]`: The last non-interactive sign-in date for a specific user. You can use this field to calculate the last time a client attempted to sign into the directory on behalf of a user. Because some users may use clients to access tenant resources rather than signing into your tenant directly, you can use the non-interactive sign-in date to along with lastSignInDateTime to identify inactive users. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'. Azure AD maintains non-interactive sign-ins going back to May 2020. For more information about using the value of this property, see Manage inactive user accounts in Azure AD.
             - `[LastNonInteractiveSignInRequestId <String>]`: Request identifier of the last non-interactive sign-in performed by this user.
-            - `[LastSignInDateTime <DateTime?>]`: The last interactive sign-in date and time for a specific user. You can use this field to calculate the last time a user signed in to the directory with an interactive authentication method. This field can be used to build reports, such as inactive users. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'. Azure AD maintains interactive sign-ins going back to April 2020. For more information about using the value of this property, see Manage inactive user accounts in Azure AD.
+            - `[LastSignInDateTime <DateTime?>]`: The last interactive sign-in date and time for a specific user. You can use this field to calculate the last time a user attempted to sign into the directory with an interactive authentication method. This field can be used to build reports, such as inactive users. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'. Azure AD maintains interactive sign-ins going back to April 2020. For more information about using the value of this property, see Manage inactive user accounts in Azure AD.
             - `[LastSignInRequestId <String>]`: Request identifier of the last interactive sign-in performed by this user.
           - `[SignInSessionsValidFromDateTime <DateTime?>]`: Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications will get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph).  If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint. Read-only. Use revokeSignInSessions to reset. Returned only on $select.
           - `[Skills <String[]>]`: A list for the user to enumerate their skills. Returned only on $select.
@@ -3163,7 +3163,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryCase>`: ediscoveryCase
     - `[ChildTags <IMicrosoftGraphSecurityEdiscoveryReviewTag1[]>]`: Returns the tags that are a child of a tag.
     - `[Parent <IMicrosoftGraphSecurityEdiscoveryReviewTag1>]`: ediscoveryReviewTag
 
-CLOSEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CLOSEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -3172,7 +3172,7 @@ CLOSEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-CUSTODIANS <IMicrosoftGraphSecurityEdiscoveryCustodian\[]>: Returns a list of case ediscoveryCustodian objects for this case.
+CUSTODIANS <IMicrosoftGraphSecurityEdiscoveryCustodian[]>: Returns a list of case ediscoveryCustodian objects for this case.
   - `[CreatedDateTime <DateTime?>]`: Created date and time of the dataSourceContainer entity.
   - `[DisplayName <String>]`: Display name of the dataSourceContainer entity.
   - `[HoldStatus <String>]`: dataSourceHoldStatus
@@ -3623,7 +3623,7 @@ CUSTODIANS <IMicrosoftGraphSecurityEdiscoveryCustodian\[]>: Returns a list of ca
             - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
             - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
             - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
-              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
               - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
               - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -5666,9 +5666,9 @@ CUSTODIANS <IMicrosoftGraphSecurityEdiscoveryCustodian\[]>: Returns a list of ca
         - `[ShowInAddressList <Boolean?>]`: Do not use in Microsoft Graph. Manage this property through the Microsoft 365 admin center instead. Represents whether the user should be included in the Outlook global address list. See Known issue.
         - `[SignInActivity <IMicrosoftGraphSignInActivity>]`: signInActivity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[LastNonInteractiveSignInDateTime <DateTime?>]`: The last non-interactive sign-in date for a specific user. You can use this field to calculate the last time a client signed in to the directory on behalf of a user. Because some users may use clients to access tenant resources rather than signing into your tenant directly, you can use the non-interactive sign-in date to along with lastSignInDateTime to identify inactive users. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'. Azure AD maintains non-interactive sign-ins going back to May 2020. For more information about using the value of this property, see Manage inactive user accounts in Azure AD.
+          - `[LastNonInteractiveSignInDateTime <DateTime?>]`: The last non-interactive sign-in date for a specific user. You can use this field to calculate the last time a client attempted to sign into the directory on behalf of a user. Because some users may use clients to access tenant resources rather than signing into your tenant directly, you can use the non-interactive sign-in date to along with lastSignInDateTime to identify inactive users. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'. Azure AD maintains non-interactive sign-ins going back to May 2020. For more information about using the value of this property, see Manage inactive user accounts in Azure AD.
           - `[LastNonInteractiveSignInRequestId <String>]`: Request identifier of the last non-interactive sign-in performed by this user.
-          - `[LastSignInDateTime <DateTime?>]`: The last interactive sign-in date and time for a specific user. You can use this field to calculate the last time a user signed in to the directory with an interactive authentication method. This field can be used to build reports, such as inactive users. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'. Azure AD maintains interactive sign-ins going back to April 2020. For more information about using the value of this property, see Manage inactive user accounts in Azure AD.
+          - `[LastSignInDateTime <DateTime?>]`: The last interactive sign-in date and time for a specific user. You can use this field to calculate the last time a user attempted to sign into the directory with an interactive authentication method. This field can be used to build reports, such as inactive users. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'. Azure AD maintains interactive sign-ins going back to April 2020. For more information about using the value of this property, see Manage inactive user accounts in Azure AD.
           - `[LastSignInRequestId <String>]`: Request identifier of the last interactive sign-in performed by this user.
         - `[SignInSessionsValidFromDateTime <DateTime?>]`: Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications will get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph).  If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint. Read-only. Use revokeSignInSessions to reset. Returned only on $select.
         - `[Skills <String[]>]`: A list for the user to enumerate their skills. Returned only on $select.
@@ -5812,7 +5812,7 @@ CUSTODIANS <IMicrosoftGraphSecurityEdiscoveryCustodian\[]>: Returns a list of ca
     - `[IncludedSources <String>]`: sourceType
     - `[SiteWebUrl <String>]`: The URL of the user's OneDrive for Business site. Read-only.
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -5821,7 +5821,7 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-NONCUSTODIALDATASOURCES <IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource\[]>: Returns a list of case ediscoveryNoncustodialDataSource objects for this case.
+NONCUSTODIALDATASOURCES <IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource[]>: Returns a list of case ediscoveryNoncustodialDataSource objects for this case.
   - `[CreatedDateTime <DateTime?>]`: Created date and time of the dataSourceContainer entity.
   - `[DisplayName <String>]`: Display name of the dataSourceContainer entity.
   - `[HoldStatus <String>]`: dataSourceHoldStatus
@@ -5858,7 +5858,7 @@ NONCUSTODIALDATASOURCES <IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource
     - `[Status <String>]`: caseOperationStatus
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
-OPERATIONS <IMicrosoftGraphSecurityCaseOperation\[]>: Returns a list of case caseOperation objects for this case.
+OPERATIONS <IMicrosoftGraphSecurityCaseOperation[]>: Returns a list of case caseOperation objects for this case.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Action <String>]`: caseAction
   - `[CompletedDateTime <DateTime?>]`: The date and time the operation was completed.
@@ -5879,7 +5879,7 @@ OPERATIONS <IMicrosoftGraphSecurityCaseOperation\[]>: Returns a list of case cas
     - `[Subcode <Int32?>]`: The result sub-code.
   - `[Status <String>]`: caseOperationStatus
 
-REVIEWSETS <IMicrosoftGraphSecurityEdiscoveryReviewSet\[]>: Returns a list of eDiscoveryReviewSet objects in the case.
+REVIEWSETS <IMicrosoftGraphSecurityEdiscoveryReviewSet[]>: Returns a list of eDiscoveryReviewSet objects in the case.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -5901,7 +5901,7 @@ REVIEWSETS <IMicrosoftGraphSecurityEdiscoveryReviewSet\[]>: Returns a list of eD
     - `[LastModifiedDateTime <DateTime?>]`: 
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
-SEARCHES <IMicrosoftGraphSecurityEdiscoverySearch\[]>: Returns a list of eDiscoverySearch objects associated with this case.
+SEARCHES <IMicrosoftGraphSecurityEdiscoverySearch[]>: Returns a list of eDiscoverySearch objects associated with this case.
   - `[ContentQuery <String>]`: 
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -5992,7 +5992,7 @@ SEARCHES <IMicrosoftGraphSecurityEdiscoverySearch\[]>: Returns a list of eDiscov
       - `[Status <String>]`: caseOperationStatus
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
-SETTINGS `<IMicrosoftGraphSecurityEdiscoveryCaseSettings>`: ediscoveryCaseSettings
+SETTINGS <IMicrosoftGraphSecurityEdiscoveryCaseSettings>: ediscoveryCaseSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Ocr <IMicrosoftGraphSecurityOcrSettings>]`: ocrSettings
@@ -6013,7 +6013,7 @@ SETTINGS `<IMicrosoftGraphSecurityEdiscoveryCaseSettings>`: ediscoveryCaseSettin
     - `[IsEnabled <Boolean?>]`: Indicates whether themes model is enabled for the case.
     - `[TopicCount <Int32?>]`: The total number of topics that the themes model will generate for a review set. To learn more, see Maximum number of themes.
 
-TAGS <IMicrosoftGraphSecurityEdiscoveryReviewTag1\[]>: Returns a list of ediscoveryReviewTag objects associated to this case.
+TAGS <IMicrosoftGraphSecurityEdiscoveryReviewTag1[]>: Returns a list of ediscoveryReviewTag objects associated to this case.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity

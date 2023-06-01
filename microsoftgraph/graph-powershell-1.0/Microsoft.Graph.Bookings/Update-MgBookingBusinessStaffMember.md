@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.bookings/update-mgbookingbusinessstaffmember
@@ -274,7 +274,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+INPUTOBJECT <IBookingsIdentity>: Identity Parameter
   - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
   - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness
   - `[BookingCurrencyId <String>]`: The unique identifier of bookingCurrency

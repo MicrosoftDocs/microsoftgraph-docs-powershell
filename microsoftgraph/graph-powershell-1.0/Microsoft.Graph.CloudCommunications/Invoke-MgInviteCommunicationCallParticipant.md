@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/invoke-mginvitecommunicationcallparticipant
@@ -383,7 +383,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Bh76WaCommunicationsCallsCallIdParticipantsMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Bh76WaCommunicationsCallsCallIdParticipantsMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ClientContext <String>]`: 
   - `[Participants <IMicrosoftGraphInvitationParticipantInfo[]>]`: 
@@ -400,7 +400,7 @@ BODYPARAMETER `<IPaths1Bh76WaCommunicationsCallsCallIdParticipantsMicrosoftGraph
     - `[RemoveFromDefaultAudioRoutingGroup <Boolean?>]`: Optional. Whether to remove them from the main mixer.
     - `[ReplacesCallId <String>]`: Optional. The call which the target identity is currently a part of. For peer-to-peer case, the call will be dropped once the participant is added successfully.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
   - `[CallId <String>]`: The unique identifier of call
@@ -418,7 +418,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[ToDateTime <DateTime?>]`: Usage: toDateTime={toDateTime}
   - `[UserId <String>]`: The unique identifier of user
 
-PARTICIPANTS <IMicrosoftGraphInvitationParticipantInfo\[]>: .
+PARTICIPANTS <IMicrosoftGraphInvitationParticipantInfo[]>: .
   - `[Hidden <Boolean?>]`: Optional. Whether to hide the participant from the roster.
   - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

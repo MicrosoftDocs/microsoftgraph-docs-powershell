@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/test-mggroupsiteinformationprotectiondatalosspreventionpolicy
@@ -223,7 +223,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths15SccidGroupsGroupIdSitesSiteIdInformationprotectionDatalosspreventionpoliciesMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths15SccidGroupsGroupIdSitesSiteIdInformationprotectionDatalosspreventionpoliciesMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[EvaluationInput <IMicrosoftGraphDlpEvaluationInput>]`: dlpEvaluationInput
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -243,7 +243,7 @@ BODYPARAMETER `<IPaths15SccidGroupsGroupIdSitesSiteIdInformationprotectionDatalo
     - `[Author <String>]`: 
   - `[Target <String>]`: 
 
-EVALUATIONINPUT `<IMicrosoftGraphDlpEvaluationInput>`: dlpEvaluationInput
+EVALUATIONINPUT <IMicrosoftGraphDlpEvaluationInput>: dlpEvaluationInput
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CurrentLabel <IMicrosoftGraphCurrentLabel>]`: currentLabel
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -257,7 +257,7 @@ EVALUATIONINPUT `<IMicrosoftGraphDlpEvaluationInput>`: dlpEvaluationInput
     - `[Count <Int32?>]`: 
     - `[Id <String>]`: 
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[ConversationId <String>]`: The unique identifier of conversation
@@ -275,6 +275,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[GroupId <String>]`: The unique identifier of group
   - `[GroupLifecyclePolicyId <String>]`: The unique identifier of groupLifecyclePolicy
   - `[GroupSettingId <String>]`: The unique identifier of groupSetting
+  - `[GroupSettingTemplateId <String>]`: The unique identifier of groupSettingTemplate
   - `[HorizontalSectionColumnId <String>]`: The unique identifier of horizontalSectionColumn
   - `[HorizontalSectionId <String>]`: The unique identifier of horizontalSection
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
@@ -307,7 +308,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
-NOTIFICATIONINFO `<IMicrosoftGraphDlpNotification>`: dlpNotification
+NOTIFICATIONINFO <IMicrosoftGraphDlpNotification>: dlpNotification
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Author <String>]`: 
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mggroupteaminstalledapp
@@ -238,7 +238,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphTeamsAppInstallation>`: teamsAppInstallation
+BODYPARAMETER <IMicrosoftGraphTeamsAppInstallation>: teamsAppInstallation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[TeamsApp <IMicrosoftGraphTeamsApp>]`: teamsApp
@@ -269,7 +269,7 @@ BODYPARAMETER `<IMicrosoftGraphTeamsAppInstallation>`: teamsAppInstallation
     - `[ExternalId <String>]`: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
   - `[TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition>]`: teamsAppDefinition
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat
@@ -308,7 +308,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
-TEAMSAPP `<IMicrosoftGraphTeamsApp>`: teamsApp
+TEAMSAPP <IMicrosoftGraphTeamsApp>: teamsApp
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AppDefinitions <IMicrosoftGraphTeamsAppDefinition[]>]`: The details for each version of the app.
@@ -335,7 +335,7 @@ TEAMSAPP `<IMicrosoftGraphTeamsApp>`: teamsApp
   - `[DistributionMethod <String>]`: teamsAppDistributionMethod
   - `[ExternalId <String>]`: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
 
-TEAMSAPPDEFINITION `<IMicrosoftGraphTeamsAppDefinition>`: teamsAppDefinition
+TEAMSAPPDEFINITION <IMicrosoftGraphTeamsAppDefinition>: teamsAppDefinition
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Bot <IMicrosoftGraphTeamworkBot>]`: teamworkBot

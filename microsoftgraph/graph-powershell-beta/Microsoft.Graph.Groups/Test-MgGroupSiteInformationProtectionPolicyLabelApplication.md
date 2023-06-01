@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/test-mggroupsiteinformationprotectionpolicylabelapplication
@@ -206,7 +206,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths17Shy4YGroupsGroupIdSitesSiteIdInformationprotectionPolicyLabelsMicrosoftGraphEvaluateapplicationPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths17Shy4YGroupsGroupIdSitesSiteIdInformationprotectionPolicyLabelsMicrosoftGraphEvaluateapplicationPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ContentInfo <IMicrosoftGraphContentInfo>]`: contentInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -226,7 +226,7 @@ BODYPARAMETER `<IPaths17Shy4YGroupsGroupIdSitesSiteIdInformationprotectionPolicy
     - `[ExtendedProperties <IMicrosoftGraphKeyValuePair[]>]`: Extended properties will be parsed and returned in the standard MIP labeled metadata format as part of the label information.
     - `[LabelId <String>]`: The GUID of the label that should be applied to the information.
 
-CONTENTINFO `<IMicrosoftGraphContentInfo>`: contentInfo
+CONTENTINFO <IMicrosoftGraphContentInfo>: contentInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Format <String>]`: contentFormat
   - `[Identifier <String>]`: Identifier used for Azure Information Protection Analytics.
@@ -235,7 +235,7 @@ CONTENTINFO `<IMicrosoftGraphContentInfo>`: contentInfo
     - `[Value <String>]`: Value for this key-value pair
   - `[State <String>]`: contentState
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[ConversationId <String>]`: The unique identifier of conversation
@@ -253,6 +253,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[GroupId <String>]`: The unique identifier of group
   - `[GroupLifecyclePolicyId <String>]`: The unique identifier of groupLifecyclePolicy
   - `[GroupSettingId <String>]`: The unique identifier of groupSetting
+  - `[GroupSettingTemplateId <String>]`: The unique identifier of groupSettingTemplate
   - `[HorizontalSectionColumnId <String>]`: The unique identifier of horizontalSectionColumn
   - `[HorizontalSectionId <String>]`: The unique identifier of horizontalSection
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
@@ -285,7 +286,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
-LABELINGOPTIONS `<IMicrosoftGraphLabelingOptions>`: labelingOptions
+LABELINGOPTIONS <IMicrosoftGraphLabelingOptions>: labelingOptions
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AssignmentMethod <String>]`: assignmentMethod
   - `[DowngradeJustification <IMicrosoftGraphDowngradeJustification>]`: downgradeJustification

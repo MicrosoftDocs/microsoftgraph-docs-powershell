@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgpolicyappmanagementpolicy
@@ -287,11 +287,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-APPLIESTO <IMicrosoftGraphDirectoryObject\[]>: Collection of application and service principals to which a policy is applied.
+APPLIESTO <IMicrosoftGraphDirectoryObject[]>: Collection of application and service principals to which a policy is applied.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
-BODYPARAMETER `<IMicrosoftGraphAppManagementPolicy1>`: appManagementPolicy
+BODYPARAMETER <IMicrosoftGraphAppManagementPolicy1>: appManagementPolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Description <String>]`: Description for this policy. Required.
   - `[DisplayName <String>]`: Display name for this policy. Required.
@@ -312,7 +312,7 @@ BODYPARAMETER `<IMicrosoftGraphAppManagementPolicy1>`: appManagementPolicy
       - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Enforces the policy for an app created on or after the enforcement date. For existing applications, the enforcement date would be back dated. To apply to all applications, enforcement datetime would be null.
       - `[RestrictionType <String>]`: appCredentialRestrictionType
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: The unique identifier of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
@@ -387,7 +387,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
-RESTRICTIONS `<IMicrosoftGraphAppManagementConfiguration>`: appManagementConfiguration
+RESTRICTIONS <IMicrosoftGraphAppManagementConfiguration>: appManagementConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration[]>]`: Collection of keyCredential restrictions settings to be applied to an application or service principal.
     - `[MaxLifetime <TimeSpan?>]`: 

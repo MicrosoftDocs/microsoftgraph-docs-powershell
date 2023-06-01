@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/new-mgdevicemanagementwindowautopilotdeploymentprofileassigneddevice
@@ -608,7 +608,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphWindowsAutopilotDeviceIdentity>`: The windowsAutopilotDeviceIdentity resource represents a Windows Autopilot Device.
+BODYPARAMETER <IMicrosoftGraphWindowsAutopilotDeviceIdentity>: The windowsAutopilotDeviceIdentity resource represents a Windows Autopilot Device.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AddressableUserName <String>]`: Addressable user name.
@@ -678,7 +678,7 @@ BODYPARAMETER `<IMicrosoftGraphWindowsAutopilotDeviceIdentity>`: The windowsAuto
   - `[SystemFamily <String>]`: System Family
   - `[UserPrincipalName <String>]`: User Principal Name.
 
-DEPLOYMENTPROFILE `<IMicrosoftGraphWindowsAutopilotDeploymentProfile>`: Windows Autopilot Deployment Profile
+DEPLOYMENTPROFILE <IMicrosoftGraphWindowsAutopilotDeploymentProfile>: Windows Autopilot Deployment Profile
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AssignedDevices <IMicrosoftGraphWindowsAutopilotDeviceIdentity[]>]`: The list of assigned devices for the profile.
@@ -747,7 +747,7 @@ DEPLOYMENTPROFILE `<IMicrosoftGraphWindowsAutopilotDeploymentProfile>`: Windows 
     - `[UserType <String>]`: windowsUserType
   - `[RoleScopeTagIds <String[]>]`: Scope tags for the profile.
 
-INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: The unique identifier of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: The unique identifier of androidForWorkEnrollmentProfile
   - `[AppScopeId <String>]`: The unique identifier of appScope
@@ -784,7 +784,7 @@ INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
   - `[WindowsFeatureUpdateProfileAssignmentId <String>]`: The unique identifier of windowsFeatureUpdateProfileAssignment
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
-INTENDEDDEPLOYMENTPROFILE `<IMicrosoftGraphWindowsAutopilotDeploymentProfile>`: Windows Autopilot Deployment Profile
+INTENDEDDEPLOYMENTPROFILE <IMicrosoftGraphWindowsAutopilotDeploymentProfile>: Windows Autopilot Deployment Profile
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AssignedDevices <IMicrosoftGraphWindowsAutopilotDeviceIdentity[]>]`: The list of assigned devices for the profile.

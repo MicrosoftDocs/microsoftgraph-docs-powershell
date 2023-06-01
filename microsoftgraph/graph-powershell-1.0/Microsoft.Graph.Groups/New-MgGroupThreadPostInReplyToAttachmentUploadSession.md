@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/new-mggroupthreadpostinreplytoattachmentuploadsession
@@ -206,7 +206,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ATTACHMENTITEM `<IMicrosoftGraphAttachmentItem>`: attachmentItem
+ATTACHMENTITEM <IMicrosoftGraphAttachmentItem>: attachmentItem
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AttachmentType <String>]`: attachmentType
   - `[ContentId <String>]`: The CID or Content-Id of the attachment for referencing in case of in-line attachments using <img src='cid:contentId'> tag in HTML messages. Optional.
@@ -215,7 +215,7 @@ ATTACHMENTITEM `<IMicrosoftGraphAttachmentItem>`: attachmentItem
   - `[Name <String>]`: The display name of the attachment. This can be a descriptive string and does not have to be the actual file name. Required.
   - `[Size <Int64?>]`: The length of the attachment in bytes. Required.
 
-BODYPARAMETER `<IPathsC777YoGroupsGroupIdThreadsConversationthreadIdPostsPostIdInreplytoAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsC777YoGroupsGroupIdThreadsConversationthreadIdPostsPostIdInreplytoAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AttachmentItem <IMicrosoftGraphAttachmentItem>]`: attachmentItem
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -226,7 +226,7 @@ BODYPARAMETER `<IPathsC777YoGroupsGroupIdThreadsConversationthreadIdPostsPostIdI
     - `[Name <String>]`: The display name of the attachment. This can be a descriptive string and does not have to be the actual file name. Required.
     - `[Size <Int64?>]`: The length of the attachment in bytes. Required.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[ConversationId <String>]`: The unique identifier of conversation
@@ -244,6 +244,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[GroupId <String>]`: The unique identifier of group
   - `[GroupLifecyclePolicyId <String>]`: The unique identifier of groupLifecyclePolicy
   - `[GroupSettingId <String>]`: The unique identifier of groupSetting
+  - `[GroupSettingTemplateId <String>]`: The unique identifier of groupSettingTemplate
   - `[HorizontalSectionColumnId <String>]`: The unique identifier of horizontalSectionColumn
   - `[HorizontalSectionId <String>]`: The unique identifier of horizontalSection
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}

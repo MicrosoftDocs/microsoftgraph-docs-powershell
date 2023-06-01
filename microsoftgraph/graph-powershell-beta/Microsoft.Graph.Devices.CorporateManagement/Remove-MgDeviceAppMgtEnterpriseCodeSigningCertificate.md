@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgusermobileapptroubleshootingeventapplogcollectionrequest
@@ -252,7 +252,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphAppLogCollectionRequest>`: Entity for AppLogCollectionRequest contains all logs values.
+BODYPARAMETER <IMicrosoftGraphAppLogCollectionRequest>: Entity for AppLogCollectionRequest contains all logs values.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -260,7 +260,7 @@ BODYPARAMETER `<IMicrosoftGraphAppLogCollectionRequest>`: Entity for AppLogColle
   - `[ErrorMessage <String>]`: Indicates error message if any during the upload process.
   - `[Status <AppLogUploadState?>]`: AppLogUploadStatus
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   - `[AndroidManagedAppProtectionId <String>]`: The unique identifier of androidManagedAppProtection
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
   - `[AssignmentFilterEvaluationStatusDetailsId <String>]`: The unique identifier of assignmentFilterEvaluationStatusDetails

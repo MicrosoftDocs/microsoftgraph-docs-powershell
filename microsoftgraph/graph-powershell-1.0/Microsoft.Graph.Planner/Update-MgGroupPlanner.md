@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/update-mggroupplanner
@@ -219,7 +219,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPlannerGroup1>`: plannerGroup
+BODYPARAMETER <IMicrosoftGraphPlannerGroup1>: plannerGroup
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Plans <IMicrosoftGraphPlannerPlan[]>]`: Read-only. Nullable. Returns the plannerPlans owned by the group.
@@ -327,7 +327,7 @@ BODYPARAMETER `<IMicrosoftGraphPlannerGroup1>`: plannerGroup
     - `[Tasks <IMicrosoftGraphPlannerTask[]>]`: Read-only. Nullable. Collection of tasks in the plan.
     - `[Title <String>]`: Required. Title of the plan.
 
-INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
+INPUTOBJECT <IPlannerIdentity>: Identity Parameter
   - `[GroupId <String>]`: The unique identifier of group
   - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket
   - `[PlannerDeltaId <String>]`: The unique identifier of plannerDelta
@@ -337,7 +337,7 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
   - `[PlannerTaskId <String>]`: The unique identifier of plannerTask
   - `[UserId <String>]`: The unique identifier of user
 
-PLANS <IMicrosoftGraphPlannerPlan\[]>: Read-only. Nullable. Returns the plannerPlans owned by the group.
+PLANS <IMicrosoftGraphPlannerPlan[]>: Read-only. Nullable. Returns the plannerPlans owned by the group.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Buckets <IMicrosoftGraphPlannerBucket[]>]`: Read-only. Nullable. Collection of buckets in the plan.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementaccesspackageassignmentapproval
@@ -204,7 +204,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphApproval1>`: approval
+BODYPARAMETER <IMicrosoftGraphApproval1>: approval
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Steps <IMicrosoftGraphApprovalStep[]>]`: 
@@ -220,7 +220,7 @@ BODYPARAMETER `<IMicrosoftGraphApproval1>`: approval
     - `[ReviewedDateTime <DateTime?>]`: The date and time when a decision was recorded. The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
     - `[Status <String>]`: The step status. Possible values: InProgress, Initializing, Completed, Expired. Read-only.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[AccessPackageAssignmentId <String>]`: The unique identifier of accessPackageAssignment
   - `[AccessPackageAssignmentPolicyId <String>]`: The unique identifier of accessPackageAssignmentPolicy
   - `[AccessPackageAssignmentRequestId <String>]`: The unique identifier of accessPackageAssignmentRequest
@@ -309,7 +309,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowTemplateId <String>]`: The unique identifier of workflowTemplate
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
-STEPS <IMicrosoftGraphApprovalStep\[]>: .
+STEPS <IMicrosoftGraphApprovalStep[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AssignedToMe <Boolean?>]`: Indicates whether the step is assigned to the calling user to review. Read-only.
   - `[DisplayName <String>]`: The label provided by the policy creator to identify an approval step. Read-only.
