@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgpolicycrosstenantaccesspolicy
@@ -272,7 +272,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphCrossTenantAccessPolicy1>: crossTenantAccessPolicy
+BODYPARAMETER `<IMicrosoftGraphCrossTenantAccessPolicy1>`: crossTenantAccessPolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Definition <String[]>]`: 
   - `[Description <String>]`: Description for this policy. Required.
@@ -331,7 +331,7 @@ BODYPARAMETER <IMicrosoftGraphCrossTenantAccessPolicy1>: crossTenantAccessPolicy
     - `[TenantId <String>]`: The tenant identifier for the partner Azure AD organization. Read-only. Key.
     - `[TenantRestrictions <IMicrosoftGraphCrossTenantAccessPolicyTenantRestrictions>]`: crossTenantAccessPolicyTenantRestrictions
 
-DEFAULT <IMicrosoftGraphCrossTenantAccessPolicyConfigurationDefault1>: crossTenantAccessPolicyConfigurationDefault
+DEFAULT `<IMicrosoftGraphCrossTenantAccessPolicyConfigurationDefault1>`: crossTenantAccessPolicyConfigurationDefault
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AutomaticUserConsentSettings <IMicrosoftGraphInboundOutboundPolicyConfiguration>]`: inboundOutboundPolicyConfiguration
@@ -365,7 +365,7 @@ DEFAULT <IMicrosoftGraphCrossTenantAccessPolicyConfigurationDefault1>: crossTena
       - `[Mode <String>]`: crossTenantAccessPolicyTargetConfigurationAccessType
       - `[Rule <String>]`: 
 
-PARTNERS <IMicrosoftGraphCrossTenantAccessPolicyConfigurationPartner1[]>: Defines partner-specific configurations for external Azure Active Directory organizations.
+PARTNERS <IMicrosoftGraphCrossTenantAccessPolicyConfigurationPartner1\[]>: Defines partner-specific configurations for external Azure Active Directory organizations.
   - `[AutomaticUserConsentSettings <IMicrosoftGraphInboundOutboundPolicyConfiguration>]`: inboundOutboundPolicyConfiguration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[InboundAllowed <Boolean?>]`: 

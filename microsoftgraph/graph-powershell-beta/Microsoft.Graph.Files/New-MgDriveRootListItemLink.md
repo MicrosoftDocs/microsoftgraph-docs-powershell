@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/new-mgdriverootlistitemlink
@@ -267,7 +267,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IPaths1S267QmDrivesDriveIdRootListitemMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths1S267QmDrivesDriveIdRootListitemMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ExpirationDateTime <DateTime?>]`: 
   - `[Password <String>]`: 
@@ -280,7 +280,7 @@ BODYPARAMETER <IPaths1S267QmDrivesDriveIdRootListitemMicrosoftGraphCreatelinkPos
   - `[SendNotification <Boolean?>]`: 
   - `[Type <String>]`: 
 
-INPUTOBJECT <IFilesIdentity>: Identity Parameter
+INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType
@@ -306,7 +306,7 @@ INPUTOBJECT <IFilesIdentity>: Identity Parameter
   - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
 
-RECIPIENTS <IMicrosoftGraphDriveRecipient[]>: .
+RECIPIENTS <IMicrosoftGraphDriveRecipient\[]>: .
   - `[Alias <String>]`: The alias of the domain object, for cases where an email address is unavailable (e.g. security groups).
   - `[Email <String>]`: The email address for the recipient, if the recipient has an associated email address.
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.

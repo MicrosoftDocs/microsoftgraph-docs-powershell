@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/invoke-mgreplygroupconversationthread
@@ -306,7 +306,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IPathsQgkmepGroupsGroupIdConversationsConversationIdThreadsConversationthreadIdMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPathsQgkmepGroupsGroupIdConversationsConversationIdThreadsConversationthreadIdMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Post <IMicrosoftGraphPost1>]`: post
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -359,7 +359,7 @@ BODYPARAMETER <IPathsQgkmepGroupsGroupIdConversationsConversationIdThreadsConver
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
       - `[Value <String>]`: A property value.
 
-INPUTOBJECT <IGroupsIdentity>: Identity Parameter
+INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[ConversationId <String>]`: The unique identifier of conversation
@@ -410,7 +410,7 @@ INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
-POST <IMicrosoftGraphPost1>: post
+POST `<IMicrosoftGraphPost1>`: post
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Categories <String[]>]`: The categories associated with the item
   - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.

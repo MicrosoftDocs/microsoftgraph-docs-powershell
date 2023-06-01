@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementaccesspackagecatalog
@@ -456,7 +456,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ACCESSPACKAGECUSTOMWORKFLOWEXTENSIONS <IMicrosoftGraphCustomCalloutExtension[]>: The attributes of a logic app, which can be called at various stages of an access package request and assignment cycle.
+ACCESSPACKAGECUSTOMWORKFLOWEXTENSIONS <IMicrosoftGraphCustomCalloutExtension\[]>: The attributes of a logic app, which can be called at various stages of an access package request and assignment cycle.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AuthenticationConfiguration <IMicrosoftGraphCustomExtensionAuthenticationConfiguration>]`: customExtensionAuthenticationConfiguration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -468,7 +468,7 @@ ACCESSPACKAGECUSTOMWORKFLOWEXTENSIONS <IMicrosoftGraphCustomCalloutExtension[]>:
   - `[EndpointConfiguration <IMicrosoftGraphCustomExtensionEndpointConfiguration>]`: customExtensionEndpointConfiguration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
-ACCESSPACKAGERESOURCEROLES <IMicrosoftGraphAccessPackageResourceRole[]>: The roles in each resource in a catalog. Read-only.
+ACCESSPACKAGERESOURCEROLES <IMicrosoftGraphAccessPackageResourceRole\[]>: The roles in each resource in a catalog. Read-only.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AccessPackageResource <IMicrosoftGraphAccessPackageResource>]`: accessPackageResource
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -523,7 +523,7 @@ ACCESSPACKAGERESOURCEROLES <IMicrosoftGraphAccessPackageResourceRole[]>: The rol
   - `[OriginId <String>]`: The unique identifier of the resource role in the origin system. For a SharePoint Online site, the originId will be the sequence number of the role in the site.
   - `[OriginSystem <String>]`: The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
 
-ACCESSPACKAGERESOURCES <IMicrosoftGraphAccessPackageResource[]>: .
+ACCESSPACKAGERESOURCES <IMicrosoftGraphAccessPackageResource\[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AccessPackageResourceEnvironment <IMicrosoftGraphAccessPackageResourceEnvironment>]`: accessPackageResourceEnvironment
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -577,7 +577,7 @@ ACCESSPACKAGERESOURCES <IMicrosoftGraphAccessPackageResource[]>: .
   - `[ResourceType <String>]`: The type of the resource, such as Application if it is an Azure AD connected application, or SharePoint Online Site for a SharePoint Online site.
   - `[Url <String>]`: A unique resource locator for the resource, such as the URL for signing a user into an application.
 
-ACCESSPACKAGERESOURCESCOPES <IMicrosoftGraphAccessPackageResourceScope[]>: .
+ACCESSPACKAGERESOURCESCOPES <IMicrosoftGraphAccessPackageResourceScope\[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AccessPackageResource <IMicrosoftGraphAccessPackageResource>]`: accessPackageResource
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -632,7 +632,7 @@ ACCESSPACKAGERESOURCESCOPES <IMicrosoftGraphAccessPackageResourceScope[]>: .
   - `[RoleOriginId <String>]`: The origin system for the role, if different.
   - `[Url <String>]`: A resource locator for the scope.
 
-ACCESSPACKAGES <IMicrosoftGraphAccessPackage[]>: The access packages in this catalog. Read-only. Nullable. Supports $expand.
+ACCESSPACKAGES <IMicrosoftGraphAccessPackage\[]>: The access packages in this catalog. Read-only. Nullable. Supports $expand.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AccessPackageAssignmentPolicies <IMicrosoftGraphAccessPackageAssignmentPolicy1[]>]`: Read-only. Nullable. Supports $expand.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -1767,7 +1767,7 @@ ACCESSPACKAGES <IMicrosoftGraphAccessPackage[]>: The access packages in this cat
             - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
             - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
             - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
               - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
               - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -5477,7 +5477,7 @@ ACCESSPACKAGES <IMicrosoftGraphAccessPackage[]>: The access packages in this cat
   - `[ModifiedBy <String>]`: The userPrincipalName of the user who last modified this resource. Read-only.
   - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
 
-BODYPARAMETER <IMicrosoftGraphAccessPackageCatalog1>: accessPackageCatalog
+BODYPARAMETER `<IMicrosoftGraphAccessPackageCatalog1>`: accessPackageCatalog
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AccessPackageCustomWorkflowExtensions <IMicrosoftGraphCustomCalloutExtension[]>]`: The attributes of a logic app, which can be called at various stages of an access package request and assignment cycle.
@@ -6603,7 +6603,7 @@ BODYPARAMETER <IMicrosoftGraphAccessPackageCatalog1>: accessPackageCatalog
               - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
               - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
               - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
                 - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
                 - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -10323,7 +10323,7 @@ BODYPARAMETER <IMicrosoftGraphAccessPackageCatalog1>: accessPackageCatalog
   - `[ModifiedBy <String>]`: The UPN of the user who last modified this resource. Read-only.
   - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
 
-CUSTOMACCESSPACKAGEWORKFLOWEXTENSIONS <IMicrosoftGraphCustomAccessPackageWorkflowExtension[]>: .
+CUSTOMACCESSPACKAGEWORKFLOWEXTENSIONS <IMicrosoftGraphCustomAccessPackageWorkflowExtension\[]>: .
   - `[AuthenticationConfiguration <IMicrosoftGraphCustomExtensionAuthenticationConfiguration>]`: customExtensionAuthenticationConfiguration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ClientConfiguration <IMicrosoftGraphCustomExtensionClientConfiguration>]`: customExtensionClientConfiguration
@@ -10337,7 +10337,7 @@ CUSTOMACCESSPACKAGEWORKFLOWEXTENSIONS <IMicrosoftGraphCustomAccessPackageWorkflo
   - `[CreatedDateTime <DateTime?>]`: Represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
   - `[LastModifiedDateTime <DateTime?>]`: Represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
 
-INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[AccessPackageAssignmentId <String>]`: The unique identifier of accessPackageAssignment
   - `[AccessPackageAssignmentPolicyId <String>]`: The unique identifier of accessPackageAssignmentPolicy
   - `[AccessPackageAssignmentRequestId <String>]`: The unique identifier of accessPackageAssignmentRequest

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecurityattacksimulationoperation
@@ -317,7 +317,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphAttackSimulationOperation>: attackSimulationOperation
+BODYPARAMETER `<IMicrosoftGraphAttackSimulationOperation>`: attackSimulationOperation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CreatedDateTime <DateTime?>]`: The start time of the operation. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[LastActionDateTime <DateTime?>]`: The time of the last action in the operation. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -329,7 +329,7 @@ BODYPARAMETER <IMicrosoftGraphAttackSimulationOperation>: attackSimulationOperat
   - `[TenantId <String>]`: Tenant identifier.
   - `[Type <String>]`: attackSimulationOperationType
 
-INPUTOBJECT <ISecurityIdentity>: Identity Parameter
+INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
   - `[ArticleId <String>]`: The unique identifier of article
   - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator

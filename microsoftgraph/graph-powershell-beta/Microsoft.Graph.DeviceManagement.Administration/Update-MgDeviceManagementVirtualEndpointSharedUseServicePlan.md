@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementvirtualendpointshareduseserviceplan
@@ -237,14 +237,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphCloudPcSharedUseServicePlan>: cloudPcSharedUseServicePlan
+BODYPARAMETER `<IMicrosoftGraphCloudPcSharedUseServicePlan>`: cloudPcSharedUseServicePlan
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DisplayName <String>]`: The display name of the shared-use service plan.
   - `[TotalCount <Int32?>]`: Total number of shared-use service plans purchased by the customer.
   - `[UsedCount <Int32?>]`: The number of service plans that the account uses.
 
-INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[AuditEventId <String>]`: The unique identifier of auditEvent
   - `[CartToClassAssociationId <String>]`: The unique identifier of cartToClassAssociation
   - `[CloudPcAuditEventId <String>]`: The unique identifier of cloudPcAuditEvent

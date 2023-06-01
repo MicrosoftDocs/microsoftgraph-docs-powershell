@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/update-mgdevicemanagementreport
@@ -176,7 +176,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphDeviceManagementReports1>: Singleton entity that acts as a container for all reports functionality.
+BODYPARAMETER `<IMicrosoftGraphDeviceManagementReports1>`: Singleton entity that acts as a container for all reports functionality.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CachedReportConfigurations <IMicrosoftGraphDeviceManagementCachedReportConfiguration[]>]`: Entity representing the configuration of a cached report
@@ -202,7 +202,7 @@ BODYPARAMETER <IMicrosoftGraphDeviceManagementReports1>: Singleton entity that a
     - `[Status <DeviceManagementReportStatus?>]`: Possible statuses associated with a generated report
     - `[Url <String>]`: Temporary location of the exported report
 
-CACHEDREPORTCONFIGURATIONS <IMicrosoftGraphDeviceManagementCachedReportConfiguration[]>: Entity representing the configuration of a cached report
+CACHEDREPORTCONFIGURATIONS <IMicrosoftGraphDeviceManagementCachedReportConfiguration\[]>: Entity representing the configuration of a cached report
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ExpirationDateTime <DateTime?>]`: Time that the cached report expires
   - `[Filter <String>]`: Filters applied on report creation.
@@ -213,7 +213,7 @@ CACHEDREPORTCONFIGURATIONS <IMicrosoftGraphDeviceManagementCachedReportConfigura
   - `[Select <String[]>]`: Columns selected from the report
   - `[Status <DeviceManagementReportStatus?>]`: Possible statuses associated with a generated report
 
-EXPORTJOBS <IMicrosoftGraphDeviceManagementExportJob[]>: Entity representing a job to export a report
+EXPORTJOBS <IMicrosoftGraphDeviceManagementExportJob\[]>: Entity representing a job to export a report
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ExpirationDateTime <DateTime?>]`: Time that the exported report expires
   - `[Filter <String>]`: Filters applied on the report

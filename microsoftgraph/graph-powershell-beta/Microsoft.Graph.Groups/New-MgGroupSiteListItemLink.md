@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/new-mggroupsitelistitemlink
@@ -312,7 +312,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IPaths17Mor22GroupsGroupIdSitesSiteIdListsListIdItemsListitemIdMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths17Mor22GroupsGroupIdSitesSiteIdListsListIdItemsListitemIdMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ExpirationDateTime <DateTime?>]`: 
   - `[Password <String>]`: 
@@ -325,7 +325,7 @@ BODYPARAMETER <IPaths17Mor22GroupsGroupIdSitesSiteIdListsListIdItemsListitemIdMi
   - `[SendNotification <Boolean?>]`: 
   - `[Type <String>]`: 
 
-INPUTOBJECT <IGroupsIdentity>: Identity Parameter
+INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[ConversationId <String>]`: The unique identifier of conversation
@@ -376,7 +376,7 @@ INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
-RECIPIENTS <IMicrosoftGraphDriveRecipient[]>: .
+RECIPIENTS <IMicrosoftGraphDriveRecipient\[]>: .
   - `[Alias <String>]`: The alias of the domain object, for cases where an email address is unavailable (e.g. security groups).
   - `[Email <String>]`: The email address for the recipient, if the recipient has an associated email address.
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.

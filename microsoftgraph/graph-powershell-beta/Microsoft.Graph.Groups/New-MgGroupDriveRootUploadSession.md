@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/new-mggroupdriverootuploadsession
@@ -188,7 +188,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IPathsZhvtqmGroupsGroupIdDrivesDriveIdRootMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPathsZhvtqmGroupsGroupIdDrivesDriveIdRootMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Item <IMicrosoftGraphDriveItemUploadableProperties>]`: driveItemUploadableProperties
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -201,7 +201,7 @@ BODYPARAMETER <IPathsZhvtqmGroupsGroupIdDrivesDriveIdRootMicrosoftGraphCreateupl
       - `[LastModifiedDateTime <DateTime?>]`: The UTC date and time the file was last modified on a client.
     - `[Name <String>]`: The name of the item (filename and extension). Read-write.
 
-INPUTOBJECT <IGroupsIdentity>: Identity Parameter
+INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[ConversationId <String>]`: The unique identifier of conversation
@@ -252,7 +252,7 @@ INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
-ITEM <IMicrosoftGraphDriveItemUploadableProperties>: driveItemUploadableProperties
+ITEM `<IMicrosoftGraphDriveItemUploadableProperties>`: driveItemUploadableProperties
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Description <String>]`: Provides a user-visible description of the item. Read-write. Only on OneDrive Personal.
   - `[FileSize <Int64?>]`: Provides an expected file size to perform a quota check prior to upload. Only on OneDrive Personal.

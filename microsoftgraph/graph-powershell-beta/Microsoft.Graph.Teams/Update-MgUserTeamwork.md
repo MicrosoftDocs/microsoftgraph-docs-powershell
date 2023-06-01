@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/update-mguserteamwork
@@ -222,7 +222,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ASSOCIATEDTEAMS <IMicrosoftGraphAssociatedTeamInfo1[]>: The list of associatedTeamInfo objects that a user is associated with.
+ASSOCIATEDTEAMS <IMicrosoftGraphAssociatedTeamInfo1\[]>: The list of associatedTeamInfo objects that a user is associated with.
   - `[DisplayName <String>]`: The name of the team.
   - `[Team <IMicrosoftGraphTeam1>]`: team
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1127,7 +1127,7 @@ ASSOCIATEDTEAMS <IMicrosoftGraphAssociatedTeamInfo1[]>: The list of associatedTe
               - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
               - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
               - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
                 - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
                 - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -4891,7 +4891,7 @@ ASSOCIATEDTEAMS <IMicrosoftGraphAssociatedTeamInfo1[]>: The list of associatedTe
   - `[TenantId <String>]`: The ID of the Azure Active Directory tenant.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
-BODYPARAMETER <IMicrosoftGraphUserTeamwork1>: userTeamwork
+BODYPARAMETER `<IMicrosoftGraphUserTeamwork1>`: userTeamwork
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AssociatedTeams <IMicrosoftGraphAssociatedTeamInfo1[]>]`: The list of associatedTeamInfo objects that a user is associated with.
@@ -5799,7 +5799,7 @@ BODYPARAMETER <IMicrosoftGraphUserTeamwork1>: userTeamwork
                 - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
                 - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
                 - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-                  - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+                  - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
                   - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
                   - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
                     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -9560,7 +9560,7 @@ BODYPARAMETER <IMicrosoftGraphUserTeamwork1>: userTeamwork
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[Chat <IMicrosoftGraphChat1>]`: chat
 
-INPUTOBJECT <ITeamsIdentity>: Identity Parameter
+INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat
@@ -9599,7 +9599,7 @@ INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
-INSTALLEDAPPS <IMicrosoftGraphUserScopeTeamsAppInstallation1[]>: The apps installed in the personal scope of this user.
+INSTALLEDAPPS <IMicrosoftGraphUserScopeTeamsAppInstallation1\[]>: The apps installed in the personal scope of this user.
   - `[ConsentedPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>]`: teamsAppPermissionSet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ResourceSpecificPermissions <IMicrosoftGraphTeamsAppResourceSpecificPermission[]>]`: A collection of resource-specific permissions.
@@ -9711,7 +9711,7 @@ INSTALLEDAPPS <IMicrosoftGraphUserScopeTeamsAppInstallation1[]>: The apps instal
       - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
       - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
       - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-        - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+        - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
         - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
         - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
           - `[(Any) <Object>]`: This indicates any property can be added to this object.

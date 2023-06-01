@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/new-mgserviceprincipalsynchronizationtemplate
@@ -284,7 +284,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphSynchronizationTemplate>: synchronizationTemplate
+BODYPARAMETER `<IMicrosoftGraphSynchronizationTemplate>`: synchronizationTemplate
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ApplicationId <String>]`: Identifier of the application this template belongs to.
@@ -376,7 +376,7 @@ BODYPARAMETER <IMicrosoftGraphSynchronizationTemplate>: synchronizationTemplate
       - `[TargetDirectoryName <String>]`: Name of the target directory. Must match one of the directory definitions in synchronizationSchema.
     - `[Version <String>]`: The version of the schema, updated automatically with every schema change.
 
-INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
+INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
   - `[ApplicationId <String>]`: The unique identifier of application
@@ -406,11 +406,11 @@ INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[UserId <String>]`: The unique identifier of user
 
-METADATA <IMicrosoftGraphMetadataEntry[]>: Additional extension properties. Unless mentioned explicitly, metadata values should not be changed.
+METADATA <IMicrosoftGraphMetadataEntry\[]>: Additional extension properties. Unless mentioned explicitly, metadata values should not be changed.
   - `[Key <String>]`: Name of the metadata property.
   - `[Value <String>]`: Value of the metadata property.
 
-SCHEMA <IMicrosoftGraphSynchronizationSchema>: synchronizationSchema
+SCHEMA `<IMicrosoftGraphSynchronizationSchema>`: synchronizationSchema
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Directories <IMicrosoftGraphDirectoryDefinition[]>]`: Contains the collection of directories and all of their objects.

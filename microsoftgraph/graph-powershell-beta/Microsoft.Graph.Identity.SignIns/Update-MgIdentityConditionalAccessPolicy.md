@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgidentityconditionalaccesspolicy
@@ -340,7 +340,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphConditionalAccessPolicy1>: conditionalAccessPolicy
+BODYPARAMETER `<IMicrosoftGraphConditionalAccessPolicy1>`: conditionalAccessPolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Conditions <IMicrosoftGraphConditionalAccessConditionSet1>]`: conditionalAccessConditionSet
@@ -450,7 +450,7 @@ BODYPARAMETER <IMicrosoftGraphConditionalAccessPolicy1>: conditionalAccessPolicy
       - `[Value <Int32?>]`: The number of days or hours.
   - `[State <String>]`: conditionalAccessPolicyState
 
-CONDITIONS <IMicrosoftGraphConditionalAccessConditionSet1>: conditionalAccessConditionSet
+CONDITIONS `<IMicrosoftGraphConditionalAccessConditionSet1>`: conditionalAccessConditionSet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Applications <IMicrosoftGraphConditionalAccessApplications1>]`: conditionalAccessApplications
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -506,7 +506,7 @@ CONDITIONS <IMicrosoftGraphConditionalAccessConditionSet1>: conditionalAccessCon
     - `[IncludeRoles <String[]>]`: Role IDs in scope of policy unless explicitly excluded.
     - `[IncludeUsers <String[]>]`: User IDs in scope of policy unless explicitly excluded, None, All, or GuestsOrExternalUsers.
 
-GRANTCONTROLS <IMicrosoftGraphConditionalAccessGrantControls>: conditionalAccessGrantControls
+GRANTCONTROLS `<IMicrosoftGraphConditionalAccessGrantControls>`: conditionalAccessGrantControls
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AuthenticationStrength <IMicrosoftGraphAuthenticationStrengthPolicy>]`: authenticationStrengthPolicy
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -526,7 +526,7 @@ GRANTCONTROLS <IMicrosoftGraphConditionalAccessGrantControls>: conditionalAccess
   - `[Operator <String>]`: Defines the relationship of the grant controls. Possible values: AND, OR.
   - `[TermsOfUse <String[]>]`: List of terms of use IDs required by the policy.
 
-INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: The unique identifier of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
@@ -601,7 +601,7 @@ INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
-SESSIONCONTROLS <IMicrosoftGraphConditionalAccessSessionControls1>: conditionalAccessSessionControls
+SESSIONCONTROLS `<IMicrosoftGraphConditionalAccessSessionControls1>`: conditionalAccessSessionControls
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ApplicationEnforcedRestrictions <IMicrosoftGraphApplicationEnforcedRestrictionsSessionControl>]`: applicationEnforcedRestrictionsSessionControl
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

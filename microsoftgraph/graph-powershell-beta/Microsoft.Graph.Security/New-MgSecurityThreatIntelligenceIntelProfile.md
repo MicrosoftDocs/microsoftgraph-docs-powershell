@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligenceintelprofile
@@ -289,7 +289,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphSecurityIntelligenceProfile>: intelligenceProfile
+BODYPARAMETER `<IMicrosoftGraphSecurityIntelligenceProfile>`: intelligenceProfile
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Aliases <String[]>]`: A list of commonly-known aliases for the threat intelligence included in the intelligenceProfile.
@@ -315,12 +315,12 @@ BODYPARAMETER <IMicrosoftGraphSecurityIntelligenceProfile>: intelligenceProfile
   - `[Title <String>]`: The title of this intelligenceProfile.
   - `[Tradecraft <IMicrosoftGraphSecurityFormattedContent>]`: formattedContent
 
-DESCRIPTION <IMicrosoftGraphSecurityFormattedContent>: formattedContent
+DESCRIPTION `<IMicrosoftGraphSecurityFormattedContent>`: formattedContent
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Content <String>]`: The content of this formattedContent.
   - `[Format <String>]`: contentFormat
 
-INDICATORS <IMicrosoftGraphSecurityIntelligenceProfileIndicator[]>: Includes an assemblage of high-fidelity network indicators of compromise.
+INDICATORS <IMicrosoftGraphSecurityIntelligenceProfileIndicator\[]>: Includes an assemblage of high-fidelity network indicators of compromise.
   - `[Artifact <IMicrosoftGraphSecurityArtifact>]`: artifact
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -329,16 +329,16 @@ INDICATORS <IMicrosoftGraphSecurityIntelligenceProfileIndicator[]>: Includes an 
   - `[FirstSeenDateTime <DateTime?>]`: Designate when an artifact was first used actively in an attack, when a particular sample was compiled, or if neither of those could be ascertained when the file was first seen in public repositories (for example, VirusTotal, ANY.RUN, Hybrid Analysis) or reported publicly.
   - `[LastSeenDateTime <DateTime?>]`: Designate when an artifact was most recently used actively in an attack, when a particular sample was compiled, or if neither of those could be ascertained when the file was first seen in public repositories (for example, VirusTotal, ANY.RUN, Hybrid Analysis) or reported publicly.
 
-SPONSORSTATES <IMicrosoftGraphSecurityIntelligenceProfileSponsorState[]>: Known states (such as a country or government) who have sponsored threat actors associated with this intelligenceProfile. This is also known as the country/region of origin for the given actor or threat.
+SPONSORSTATES <IMicrosoftGraphSecurityIntelligenceProfileSponsorState\[]>: Known states (such as a country or government) who have sponsored threat actors associated with this intelligenceProfile. This is also known as the country/region of origin for the given actor or threat.
   - `[Code <String>]`: A codified representation for this sponsor state.
   - `[Label <String>]`: A display label for this sponsor state.
 
-SUMMARY <IMicrosoftGraphSecurityFormattedContent>: formattedContent
+SUMMARY `<IMicrosoftGraphSecurityFormattedContent>`: formattedContent
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Content <String>]`: The content of this formattedContent.
   - `[Format <String>]`: contentFormat
 
-TRADECRAFT <IMicrosoftGraphSecurityFormattedContent>: formattedContent
+TRADECRAFT `<IMicrosoftGraphSecurityFormattedContent>`: formattedContent
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Content <String>]`: The content of this formattedContent.
   - `[Format <String>]`: contentFormat

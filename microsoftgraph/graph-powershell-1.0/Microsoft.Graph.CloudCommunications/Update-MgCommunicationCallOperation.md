@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationcalloperation
@@ -252,7 +252,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphCommsOperation>: commsOperation
+BODYPARAMETER `<IMicrosoftGraphCommsOperation>`: commsOperation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ClientContext <String>]`: Unique Client Context string. Max limit is 256 chars.
@@ -263,7 +263,7 @@ BODYPARAMETER <IMicrosoftGraphCommsOperation>: commsOperation
     - `[Subcode <Int32?>]`: The result sub-code.
   - `[Status <String>]`: operationStatus
 
-INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
+INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
   - `[CallId <String>]`: The unique identifier of call
@@ -281,7 +281,7 @@ INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   - `[ToDateTime <DateTime?>]`: Usage: toDateTime={toDateTime}
   - `[UserId <String>]`: The unique identifier of user
 
-RESULTINFO <IMicrosoftGraphResultInfo>: resultInfo
+RESULTINFO `<IMicrosoftGraphResultInfo>`: resultInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Code <Int32?>]`: The result code.
   - `[Message <String>]`: The message.

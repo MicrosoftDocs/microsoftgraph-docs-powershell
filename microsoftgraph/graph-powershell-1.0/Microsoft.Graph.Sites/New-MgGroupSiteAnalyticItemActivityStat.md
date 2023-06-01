@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/new-mggroupsiteanalyticitemactivitystat
@@ -353,12 +353,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ACCESS <IMicrosoftGraphItemActionStat>: itemActionStat
+ACCESS `<IMicrosoftGraphItemActionStat>`: itemActionStat
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ActionCount <Int32?>]`: The number of times the action took place. Read-only.
   - `[ActorCount <Int32?>]`: The number of distinct actors that performed the action. Read-only.
 
-ACTIVITIES <IMicrosoftGraphItemActivity1[]>: Exposes the itemActivities represented in this itemActivityStat resource.
+ACTIVITIES <IMicrosoftGraphItemActivity1\[]>: Exposes the itemActivities represented in this itemActivityStat resource.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Access <IMicrosoftGraphAccessAction>]`: accessAction
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -785,7 +785,7 @@ ACTIVITIES <IMicrosoftGraphItemActivity1[]>: Exposes the itemActivities represen
           - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
           - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
           - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
-            - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+            - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
             - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
             - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -2950,7 +2950,7 @@ ACTIVITIES <IMicrosoftGraphItemActivity1[]>: Exposes the itemActivities represen
       - `[Tables <IMicrosoftGraphWorkbookTable1[]>]`: Represents a collection of tables associated with the workbook. Read-only.
       - `[Worksheets <IMicrosoftGraphWorkbookWorksheet[]>]`: Represents a collection of worksheets associated with the workbook. Read-only.
 
-BODYPARAMETER <IMicrosoftGraphItemActivityStat>: itemActivityStat
+BODYPARAMETER `<IMicrosoftGraphItemActivityStat>`: itemActivityStat
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Access <IMicrosoftGraphItemActionStat>]`: itemActionStat
@@ -3384,7 +3384,7 @@ BODYPARAMETER <IMicrosoftGraphItemActivityStat>: itemActivityStat
             - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
             - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
             - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
-              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
               - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
               - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -5542,27 +5542,27 @@ BODYPARAMETER <IMicrosoftGraphItemActivityStat>: itemActivityStat
   - `[Move <IMicrosoftGraphItemActionStat>]`: itemActionStat
   - `[StartDateTime <DateTime?>]`: When the interval starts. Read-only.
 
-CREATE <IMicrosoftGraphItemActionStat>: itemActionStat
+CREATE `<IMicrosoftGraphItemActionStat>`: itemActionStat
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ActionCount <Int32?>]`: The number of times the action took place. Read-only.
   - `[ActorCount <Int32?>]`: The number of distinct actors that performed the action. Read-only.
 
-DELETE <IMicrosoftGraphItemActionStat>: itemActionStat
+DELETE `<IMicrosoftGraphItemActionStat>`: itemActionStat
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ActionCount <Int32?>]`: The number of times the action took place. Read-only.
   - `[ActorCount <Int32?>]`: The number of distinct actors that performed the action. Read-only.
 
-EDIT <IMicrosoftGraphItemActionStat>: itemActionStat
+EDIT `<IMicrosoftGraphItemActionStat>`: itemActionStat
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ActionCount <Int32?>]`: The number of times the action took place. Read-only.
   - `[ActorCount <Int32?>]`: The number of distinct actors that performed the action. Read-only.
 
-INCOMPLETEDATA <IMicrosoftGraphIncompleteData>: incompleteData
+INCOMPLETEDATA `<IMicrosoftGraphIncompleteData>`: incompleteData
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[MissingDataBeforeDateTime <DateTime?>]`: The service does not have source data before the specified time.
   - `[WasThrottled <Boolean?>]`: Some data was not recorded due to excessive activity.
 
-INPUTOBJECT <ISitesIdentity>: Identity Parameter
+INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[BaseItemId <String>]`: The unique identifier of baseItem
   - `[BitlockerRecoveryKeyId <String>]`: The unique identifier of bitlockerRecoveryKey
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
@@ -5610,7 +5610,7 @@ INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
-MOVE <IMicrosoftGraphItemActionStat>: itemActionStat
+MOVE `<IMicrosoftGraphItemActionStat>`: itemActionStat
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ActionCount <Int32?>]`: The number of times the action took place. Read-only.
   - `[ActorCount <Int32?>]`: The number of distinct actors that performed the action. Read-only.

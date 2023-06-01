@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/get-mggroupsitepagewebpartbyposition
@@ -249,14 +249,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IPaths3Xxv9NGroupsGroupIdSitesSiteIdPagesSitepageIdMicrosoftGraphGetwebpartsbypositionPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths3Xxv9NGroupsGroupIdSitesSiteIdPagesSitepageIdMicrosoftGraphGetwebpartsbypositionPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ColumnId <Double?>]`: 
   - `[HorizontalSectionId <Double?>]`: 
   - `[IsInVerticalSection <Boolean?>]`: 
   - `[WebPartIndex <Double?>]`: 
 
-INPUTOBJECT <IGroupsIdentity>: Identity Parameter
+INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[ConversationId <String>]`: The unique identifier of conversation

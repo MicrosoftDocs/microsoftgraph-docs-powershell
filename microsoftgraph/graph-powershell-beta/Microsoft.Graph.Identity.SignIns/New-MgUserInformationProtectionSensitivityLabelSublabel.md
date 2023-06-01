@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mguserinformationprotectionsensitivitylabelsublabel
@@ -393,16 +393,16 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ASSIGNEDPOLICIES <IMicrosoftGraphLabelPolicy[]>: .
+ASSIGNEDPOLICIES <IMicrosoftGraphLabelPolicy\[]>: .
   - `[Id <String>]`: 
   - `[Name <String>]`: 
 
-AUTOLABELING <IMicrosoftGraphAutoLabeling>: autoLabeling
+AUTOLABELING `<IMicrosoftGraphAutoLabeling>`: autoLabeling
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Message <String>]`: 
   - `[SensitiveTypeIds <String[]>]`: 
 
-BODYPARAMETER <IMicrosoftGraphSensitivityLabel>: sensitivityLabel
+BODYPARAMETER `<IMicrosoftGraphSensitivityLabel>`: sensitivityLabel
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ApplicableTo <String>]`: sensitivityLabelTarget
@@ -425,7 +425,7 @@ BODYPARAMETER <IMicrosoftGraphSensitivityLabel>: sensitivityLabel
   - `[Sublabels <IMicrosoftGraphSensitivityLabel[]>]`: 
   - `[ToolTip <String>]`: 
 
-INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: The unique identifier of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
@@ -500,10 +500,10 @@ INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
-LABELACTIONS <IMicrosoftGraphLabelActionBase[]>: .
+LABELACTIONS <IMicrosoftGraphLabelActionBase\[]>: .
   - `[Name <String>]`: 
 
-SUBLABELS <IMicrosoftGraphSensitivityLabel[]>: .
+SUBLABELS <IMicrosoftGraphSensitivityLabel\[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ApplicableTo <String>]`: sensitivityLabelTarget
   - `[ApplicationMode <String>]`: applicationMode

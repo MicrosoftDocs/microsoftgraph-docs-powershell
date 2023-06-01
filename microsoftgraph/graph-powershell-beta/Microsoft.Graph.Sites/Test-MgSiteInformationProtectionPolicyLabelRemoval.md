@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/test-mgsiteinformationprotectionpolicylabelremoval
@@ -191,7 +191,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IPaths1O5NuwnSitesSiteIdInformationprotectionPolicyLabelsMicrosoftGraphEvaluateremovalPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths1O5NuwnSitesSiteIdInformationprotectionPolicyLabelsMicrosoftGraphEvaluateremovalPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ContentInfo <IMicrosoftGraphContentInfo>]`: contentInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -206,7 +206,7 @@ BODYPARAMETER <IPaths1O5NuwnSitesSiteIdInformationprotectionPolicyLabelsMicrosof
     - `[IsDowngradeJustified <Boolean?>]`: Indicates whether the downgrade is or is not justified.
     - `[JustificationMessage <String>]`: Message that indicates why a downgrade is justified. The message will appear in administrative logs.
 
-CONTENTINFO <IMicrosoftGraphContentInfo>: contentInfo
+CONTENTINFO `<IMicrosoftGraphContentInfo>`: contentInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Format <String>]`: contentFormat
   - `[Identifier <String>]`: Identifier used for Azure Information Protection Analytics.
@@ -215,12 +215,12 @@ CONTENTINFO <IMicrosoftGraphContentInfo>: contentInfo
     - `[Value <String>]`: Value for this key-value pair
   - `[State <String>]`: contentState
 
-DOWNGRADEJUSTIFICATION <IMicrosoftGraphDowngradeJustification>: downgradeJustification
+DOWNGRADEJUSTIFICATION `<IMicrosoftGraphDowngradeJustification>`: downgradeJustification
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[IsDowngradeJustified <Boolean?>]`: Indicates whether the downgrade is or is not justified.
   - `[JustificationMessage <String>]`: Message that indicates why a downgrade is justified. The message will appear in administrative logs.
 
-INPUTOBJECT <ISitesIdentity>: Identity Parameter
+INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[BaseItemId <String>]`: The unique identifier of baseItem
   - `[BitlockerRecoveryKeyId <String>]`: The unique identifier of bitlockerRecoveryKey
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition

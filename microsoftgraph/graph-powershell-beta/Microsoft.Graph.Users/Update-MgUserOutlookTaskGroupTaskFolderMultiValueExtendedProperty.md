@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/update-mguseroutlooktaskgrouptaskfoldermultivalueextendedproperty
@@ -252,12 +252,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphMultiValueLegacyExtendedProperty>: multiValueLegacyExtendedProperty
+BODYPARAMETER `<IMicrosoftGraphMultiValueLegacyExtendedProperty>`: multiValueLegacyExtendedProperty
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Value <String[]>]`: A collection of property values.
 
-INPUTOBJECT <IUsersIdentity>: Identity Parameter
+INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[AttachmentBaseId <String>]`: The unique identifier of attachmentBase
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[AttachmentSessionId <String>]`: The unique identifier of attachmentSession

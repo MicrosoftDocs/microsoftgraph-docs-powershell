@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencearticle
@@ -334,12 +334,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODY <IMicrosoftGraphSecurityFormattedContent>: formattedContent
+BODY `<IMicrosoftGraphSecurityFormattedContent>`: formattedContent
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Content <String>]`: The content of this formattedContent.
   - `[Format <String>]`: contentFormat
 
-BODYPARAMETER <IMicrosoftGraphSecurityArticle>: article
+BODYPARAMETER `<IMicrosoftGraphSecurityArticle>`: article
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Body <IMicrosoftGraphSecurityFormattedContent>]`: formattedContent
@@ -360,14 +360,14 @@ BODYPARAMETER <IMicrosoftGraphSecurityArticle>: article
   - `[Tags <String[]>]`: Tags for this article, communicating keywords, or key concepts.
   - `[Title <String>]`: The title of this article.
 
-INDICATORS <IMicrosoftGraphSecurityArticleIndicator[]>: Indicators related to this article.
+INDICATORS <IMicrosoftGraphSecurityArticleIndicator\[]>: Indicators related to this article.
   - `[Artifact <IMicrosoftGraphSecurityArtifact>]`: artifact
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Source <String>]`: indicatorSource
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
-INPUTOBJECT <ISecurityIdentity>: Identity Parameter
+INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
   - `[ArticleId <String>]`: The unique identifier of article
   - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator
@@ -425,7 +425,7 @@ INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   - `[VulnerabilityComponentId <String>]`: The unique identifier of vulnerabilityComponent
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
-SUMMARY <IMicrosoftGraphSecurityFormattedContent>: formattedContent
+SUMMARY `<IMicrosoftGraphSecurityFormattedContent>`: formattedContent
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Content <String>]`: The content of this formattedContent.
   - `[Format <String>]`: contentFormat

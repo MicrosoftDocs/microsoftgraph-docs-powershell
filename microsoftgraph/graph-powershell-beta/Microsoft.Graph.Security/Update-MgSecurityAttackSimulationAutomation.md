@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecurityattacksimulationautomation
@@ -348,7 +348,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphSimulationAutomation>: simulationAutomation
+BODYPARAMETER `<IMicrosoftGraphSimulationAutomation>`: simulationAutomation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CreatedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
@@ -371,13 +371,13 @@ BODYPARAMETER <IMicrosoftGraphSimulationAutomation>: simulationAutomation
     - `[Status <String>]`: simulationAutomationRunStatus
   - `[Status <String>]`: simulationAutomationStatus
 
-CREATEDBY <IMicrosoftGraphEmailIdentity>: emailIdentity
+CREATEDBY `<IMicrosoftGraphEmailIdentity>`: emailIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
   - `[Id <String>]`: Unique identifier for the identity.
   - `[Email <String>]`: Email address of the user.
 
-INPUTOBJECT <ISecurityIdentity>: Identity Parameter
+INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
   - `[ArticleId <String>]`: The unique identifier of article
   - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator
@@ -435,13 +435,13 @@ INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   - `[VulnerabilityComponentId <String>]`: The unique identifier of vulnerabilityComponent
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
-LASTMODIFIEDBY <IMicrosoftGraphEmailIdentity>: emailIdentity
+LASTMODIFIEDBY `<IMicrosoftGraphEmailIdentity>`: emailIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
   - `[Id <String>]`: Unique identifier for the identity.
   - `[Email <String>]`: Email address of the user.
 
-RUNS <IMicrosoftGraphSimulationAutomationRun[]>: A collection of simulation automation runs.
+RUNS <IMicrosoftGraphSimulationAutomationRun\[]>: A collection of simulation automation runs.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[EndDateTime <DateTime?>]`: Date and time when the run ends in an attack simulation automation.
   - `[SimulationId <String>]`: Unique identifier for the attack simulation campaign initiated in the attack simulation automation run.

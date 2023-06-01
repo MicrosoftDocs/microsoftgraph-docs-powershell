@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementmobilethreatdefenseconnector
@@ -443,7 +443,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphMobileThreatDefenseConnector1>: Entity which represents a connection to Mobile Threat Defense partner.
+BODYPARAMETER `<IMicrosoftGraphMobileThreatDefenseConnector1>`: Entity which represents a connection to Mobile Threat Defense partner.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AllowPartnerToCollectIosApplicationMetadata <Boolean?>]`: When TRUE, indicates the Mobile Threat Defense partner may collect metadata about installed applications from Intune for IOS devices. When FALSE, indicates the Mobile Threat Defense partner may not collect metadata about installed applications from Intune for IOS devices. Default value is FALSE.
@@ -462,7 +462,7 @@ BODYPARAMETER <IMicrosoftGraphMobileThreatDefenseConnector1>: Entity which repre
   - `[WindowsDeviceBlockedOnMissingPartnerData <Boolean?>]`: When TRUE, inidicates that Intune must receive data from the Mobile Threat Defense partner prior to marking a device compliant for Windows. When FALSE, inidicates that Intune may make a device compliant without receiving data from the Mobile Threat Defense partner for Windows. Default value is FALSE.
   - `[WindowsEnabled <Boolean?>]`: When TRUE, inidicates that data from the Mobile Threat Defense partner can be used during compliance evaluations for Windows. When FALSE, inidicates that data from the Mobile Threat Defense partner should not be used during compliance evaluations for Windows. Default value is FALSE.
 
-INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[AuditEventId <String>]`: The unique identifier of auditEvent
   - `[CartToClassAssociationId <String>]`: The unique identifier of cartToClassAssociation
   - `[CloudPcAuditEventId <String>]`: The unique identifier of cloudPcAuditEvent

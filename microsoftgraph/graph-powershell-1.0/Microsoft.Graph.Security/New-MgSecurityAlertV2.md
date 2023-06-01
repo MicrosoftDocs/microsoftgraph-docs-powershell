@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/new-mgsecurityalertv2
@@ -557,7 +557,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphSecurityAlert>: alert
+BODYPARAMETER `<IMicrosoftGraphSecurityAlert>`: alert
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ActorDisplayName <String>]`: The adversary or activity group that is associated with this alert.
@@ -598,12 +598,12 @@ BODYPARAMETER <IMicrosoftGraphSecurityAlert>: alert
   - `[ThreatFamilyName <String>]`: Threat family associated with this alert.
   - `[Title <String>]`: Brief identifying string value describing the alert.
 
-COMMENTS <IMicrosoftGraphSecurityAlertComment[]>: Array of comments created by the Security Operations (SecOps) team during the alert management process.
+COMMENTS <IMicrosoftGraphSecurityAlertComment\[]>: Array of comments created by the Security Operations (SecOps) team during the alert management process.
   - `[Comment <String>]`: The comment text.
   - `[CreatedByDisplayName <String>]`: The person or app name that submitted the comment.
   - `[CreatedDateTime <DateTime?>]`: The time when the comment was submitted.
 
-EVIDENCE <IMicrosoftGraphSecurityAlertEvidence1[]>: Collection of evidence related to the alert.
+EVIDENCE <IMicrosoftGraphSecurityAlertEvidence1\[]>: Collection of evidence related to the alert.
   - `[CreatedDateTime <DateTime?>]`: The time the evidence was created and added to the alert.
   - `[RemediationStatus <String>]`: evidenceRemediationStatus
   - `[RemediationStatusDetails <String>]`: Details about the remediation status.

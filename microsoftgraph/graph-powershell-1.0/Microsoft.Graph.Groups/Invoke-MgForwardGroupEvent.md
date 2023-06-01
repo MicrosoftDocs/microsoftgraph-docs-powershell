@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/invoke-mgforwardgroupevent
@@ -244,7 +244,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IPaths1K4KnkbGroupsGroupIdEventsEventIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths1K4KnkbGroupsGroupIdEventsEventIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Comment <String>]`: 
   - `[ToRecipients <IMicrosoftGraphRecipient[]>]`: 
@@ -253,7 +253,7 @@ BODYPARAMETER <IPaths1K4KnkbGroupsGroupIdEventsEventIdMicrosoftGraphForwardPostR
       - `[Address <String>]`: The email address of the person or entity.
       - `[Name <String>]`: The display name of the person or entity.
 
-INPUTOBJECT <IGroupsIdentity>: Identity Parameter
+INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[ConversationId <String>]`: The unique identifier of conversation
@@ -304,7 +304,7 @@ INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
-TORECIPIENTS <IMicrosoftGraphRecipient[]>: .
+TORECIPIENTS <IMicrosoftGraphRecipient\[]>: .
   - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Address <String>]`: The email address of the person or entity.
