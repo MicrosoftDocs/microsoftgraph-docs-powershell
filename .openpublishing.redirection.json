@@ -1,8 +1,513 @@
 {
     "redirections": [
         {
-            "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Calendar/Get-MgPlace.md",
-            "redirect_url": "https://learn.microsoft.com/en-us/powershell/microsoftgraph/?view=graph-powershell-1.0",
+            "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Beta.Applications/New-MgBetaApplication.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Applications/New-MgApplication?view=graph-powershell-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/New-MgApplication.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplication?view=graph-powershell-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationAppManagementPolicyByRef.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Applications/New-MgApplicationAppManagementPolicyByRef?view=graph-powershell-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/New-MgApplicationAppManagementPolicyByRef.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationAppManagementPolicyByRef?view=graph-powershell-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationExtensionProperty.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Applications/New-MgApplicationExtensionProperty?view=graph-powershell-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/New-MgApplicationExtensionProperty.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationExtensionProperty?view=graph-powershell-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationFederatedIdentityCredential.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Applications/New-MgApplicationFederatedIdentityCredential?view=graph-powershell-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/New-MgApplicationFederatedIdentityCredential.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationFederatedIdentityCredential?view=graph-powershell-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationOwnerByRef.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Applications/New-MgApplicationOwnerByRef?view=graph-powershell-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/New-MgApplicationOwnerByRef.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationOwnerByRef?view=graph-powershell-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationTokenIssuancePolicyByRef.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Applications/New-MgApplicationTokenIssuancePolicyByRef?view=graph-powershell-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/New-MgApplicationTokenIssuancePolicyByRef.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationTokenIssuancePolicyByRef?view=graph-powershell-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationTokenLifetimePolicyByRef.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Applications/New-MgApplicationTokenLifetimePolicyByRef?view=graph-powershell-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/New-MgApplicationTokenLifetimePolicyByRef.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationTokenLifetimePolicyByRef?view=graph-powershell-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Beta.Applications/New-MgBetaGroupAppRoleAssignment.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Applications/New-MgGroupAppRoleAssignment?view=graph-powershell-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/New-MgGroupAppRoleAssignment.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupAppRoleAssignment?view=graph-powershell-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipal.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipal?view=graph-powershell-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/New-MgServicePrincipal.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipal?view=graph-powershell-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalAppRoleAssignedTo.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalAppRoleAssignedTo?view=graph-powershell-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/New-MgServicePrincipalAppRoleAssignedTo.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalAppRoleAssignedTo?view=graph-powershell-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalAppRoleAssignment.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalAppRoleAssignment?view=graph-powershell-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/New-MgServicePrincipalAppRoleAssignment.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalAppRoleAssignment?view=graph-powershell-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalClaimMappingPolicyByRef.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalClaimMappingPolicyByRef?view=graph-powershell-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/New-MgServicePrincipalClaimMappingPolicyByRef.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalClaimMappingPolicyByRef?view=graph-powershell-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalDelegatedPermissionClassification.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalDelegatedPermissionClassification?view=graph-powershell-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/New-MgServicePrincipalDelegatedPermissionClassification.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalDelegatedPermissionClassification?view=graph-powershell-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalEndpoint.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalEndpoint?view=graph-powershell-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/New-MgServicePrincipalEndpoint.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalEndpoint?view=graph-powershell-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef?view=graph-powershell-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef?view=graph-powershell-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalOwnerByRef.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalOwnerByRef?view=graph-powershell-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/New-MgServicePrincipalOwnerByRef.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalOwnerByRef?view=graph-powershell-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Beta.Applications/New-MgBetaUserAppRoleAssignment.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Applications/New-MgUserAppRoleAssignment?view=graph-powershell-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/New-MgUserAppRoleAssignment.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaUserAppRoleAssignment?view=graph-powershell-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Beta.Applications/README.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Applications/README?view=graph-powershell-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/README.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Beta.Applications/README?view=graph-powershell-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplication.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Applications/Remove-MgApplication?view=graph-powershell-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Remove-MgApplication.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplication?view=graph-powershell-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationAppManagementPolicyByRef.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationAppManagementPolicyByRef?view=graph-powershell-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Remove-MgApplicationAppManagementPolicyByRef.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationAppManagementPolicyByRef?view=graph-powershell-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationExtensionProperty.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationExtensionProperty?view=graph-powershell-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Remove-MgApplicationExtensionProperty.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationExtensionProperty?view=graph-powershell-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationFederatedIdentityCredential.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationFederatedIdentityCredential?view=graph-powershell-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Remove-MgApplicationFederatedIdentityCredential.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationFederatedIdentityCredential?view=graph-powershell-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationKey.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationKey?view=graph-powershell-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Remove-MgApplicationKey.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationKey?view=graph-powershell-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationOwnerByRef.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationOwnerByRef?view=graph-powershell-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Remove-MgApplicationOwnerByRef.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationOwnerByRef?view=graph-powershell-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationPassword.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationPassword?view=graph-powershell-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Remove-MgApplicationPassword.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationPassword?view=graph-powershell-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationTokenIssuancePolicyByRef.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationTokenIssuancePolicyByRef?view=graph-powershell-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Remove-MgApplicationTokenIssuancePolicyByRef.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationTokenIssuancePolicyByRef?view=graph-powershell-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationTokenLifetimePolicyByRef.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationTokenLifetimePolicyByRef?view=graph-powershell-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Remove-MgApplicationTokenLifetimePolicyByRef.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationTokenLifetimePolicyByRef?view=graph-powershell-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Beta.Applications/Remove-MgBetaGroupAppRoleAssignment.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Applications/Remove-MgGroupAppRoleAssignment?view=graph-powershell-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Remove-MgGroupAppRoleAssignment.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaGroupAppRoleAssignment?view=graph-powershell-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipal.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipal?view=graph-powershell-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Remove-MgServicePrincipal.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipal?view=graph-powershell-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalAppRoleAssignedTo.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalAppRoleAssignedTo?view=graph-powershell-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Remove-MgServicePrincipalAppRoleAssignedTo.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalAppRoleAssignedTo?view=graph-powershell-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalAppRoleAssignment.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalAppRoleAssignment?view=graph-powershell-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Remove-MgServicePrincipalAppRoleAssignment.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalAppRoleAssignment?view=graph-powershell-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalClaimMappingPolicyByRef.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalClaimMappingPolicyByRef?view=graph-powershell-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Remove-MgServicePrincipalClaimMappingPolicyByRef.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalClaimMappingPolicyByRef?view=graph-powershell-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalDelegatedPermissionClassification.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalDelegatedPermissionClassification?view=graph-powershell-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Remove-MgServicePrincipalDelegatedPermissionClassification.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalDelegatedPermissionClassification?view=graph-powershell-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalEndpoint.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalEndpoint?view=graph-powershell-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Remove-MgServicePrincipalEndpoint.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalEndpoint?view=graph-powershell-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalHomeRealmDiscoveryPolicyByRef?view=graph-powershell-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Remove-MgServicePrincipalHomeRealmDiscoveryPolicyByRef.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef?view=graph-powershell-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalOwnerByRef.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalOwnerByRef?view=graph-powershell-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Remove-MgServicePrincipalOwnerByRef.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalOwnerByRef?view=graph-powershell-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Beta.Applications/Remove-MgBetaUserAppRoleAssignment.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Applications/Remove-MgUserAppRoleAssignment?view=graph-powershell-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Remove-MgUserAppRoleAssignment.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaUserAppRoleAssignment?view=graph-powershell-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Beta.Applications/Set-MgBetaApplicationLogo.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Applications/Set-MgApplicationLogo?view=graph-powershell-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Set-MgApplicationLogo.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaApplicationLogo?view=graph-powershell-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Beta.Applications/Set-MgBetaApplicationVerifiedPublisher.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Applications/Set-MgApplicationVerifiedPublisher?view=graph-powershell-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Set-MgApplicationVerifiedPublisher.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaApplicationVerifiedPublisher?view=graph-powershell-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Beta.Applications/Test-MgBetaApplicationProperty.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Applications/Test-MgApplicationProperty?view=graph-powershell-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Test-MgApplicationProperty.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Beta.Applications/Test-MgBetaApplicationProperty?view=graph-powershell-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Beta.Applications/Test-MgBetaServicePrincipalProperty.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Applications/Test-MgServicePrincipalProperty?view=graph-powershell-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Test-MgServicePrincipalProperty.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Beta.Applications/Test-MgBetaServicePrincipalProperty?view=graph-powershell-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Beta.Applications/Update-MgBetaApplication.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Applications/Update-MgApplication?view=graph-powershell-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Update-MgApplication.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplication?view=graph-powershell-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Beta.Applications/Update-MgBetaApplicationExtensionProperty.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Applications/Update-MgApplicationExtensionProperty?view=graph-powershell-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Update-MgApplicationExtensionProperty.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplicationExtensionProperty?view=graph-powershell-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Beta.Applications/Update-MgBetaApplicationFederatedIdentityCredential.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Applications/Update-MgApplicationFederatedIdentityCredential?view=graph-powershell-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Update-MgApplicationFederatedIdentityCredential.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplicationFederatedIdentityCredential?view=graph-powershell-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Beta.Applications/Update-MgBetaGroupAppRoleAssignment.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Applications/Update-MgGroupAppRoleAssignment?view=graph-powershell-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Update-MgGroupAppRoleAssignment.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaGroupAppRoleAssignment?view=graph-powershell-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipal.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Applications/Update-MgServicePrincipal?view=graph-powershell-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Update-MgServicePrincipal.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipal?view=graph-powershell-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipalAppRoleAssignedTo.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Applications/Update-MgServicePrincipalAppRoleAssignedTo?view=graph-powershell-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Update-MgServicePrincipalAppRoleAssignedTo.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipalAppRoleAssignedTo?view=graph-powershell-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipalAppRoleAssignment.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Applications/Update-MgServicePrincipalAppRoleAssignment?view=graph-powershell-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Update-MgServicePrincipalAppRoleAssignment.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipalAppRoleAssignment?view=graph-powershell-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipalDelegatedPermissionClassification.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Applications/Update-MgServicePrincipalDelegatedPermissionClassification?view=graph-powershell-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Update-MgServicePrincipalDelegatedPermissionClassification.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipalDelegatedPermissionClassification?view=graph-powershell-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipalEndpoint.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Applications/Update-MgServicePrincipalEndpoint?view=graph-powershell-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Update-MgServicePrincipalEndpoint.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipalEndpoint?view=graph-powershell-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Beta.Applications/Update-MgBetaUserAppRoleAssignment.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Applications/Update-MgUserAppRoleAssignment?view=graph-powershell-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoftgraph/graph-powershell-beta/Microsoft.Graph.Applications/Update-MgUserAppRoleAssignment.yml",
+            "redirect_url": "/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaUserAppRoleAssignment?view=graph-powershell-beta",
             "redirect_document_id": false
         }
     ]
