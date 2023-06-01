@@ -244,3 +244,5 @@ v1.0-beta, Update-MgDrive, /drives/{drive-id}
 v1.0-beta, Update-MgDriveListItemField, /drives/{drive-id}/list/items/{listItem-id}/fields
 v1.0-beta, Update-MgDriveRoot, /drives/{drive-id}/root
 v1.0-beta, Update-MgShareListItemField, /shares/{sharedDriveItem-id}/list/items/{listItem-id}/fields
+v1.0-beta, Search-MgDrive, /drives/{drive-id}/search(q='{q}')
+v1.0, Search-MgDrive, /drives/{drive-id}/search(q='{q}')

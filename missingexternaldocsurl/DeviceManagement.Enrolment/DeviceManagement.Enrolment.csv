@@ -484,3 +484,7 @@ v1.0-beta, New-MgRoleManagementEntitlementManagementRoleDefinition, /roleManagem
 v1.0-beta, New-MgRoleManagementEntitlementManagementRoleEligibilitySchedule, /roleManagement/entitlementManagement/roleEligibilitySchedules
 v1.0-beta, New-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstance, /roleManagement/entitlementManagement/roleEligibilityScheduleInstances
 v1.0-beta, New-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest, /roleManagement/entitlementManagement/roleEligibilityScheduleRequests
+v1.0-beta, Invoke-MgRoleManagementDirectorySchedule, /roleManagement/directory/roleSchedules(directoryScopeId='@directoryScopeId',appScopeId='@appScopeId',principalId='@principalId',roleDefinitionId='@roleDefinitionId')
+v1.0-beta, Invoke-MgRoleManagementEntitlementManagementSchedule, /roleManagement/entitlementManagement/roleSchedules(directoryScopeId='@directoryScopeId',appScopeId='@appScopeId',principalId='@principalId',roleDefinitionId='@roleDefinitionId')
+v1.0-beta, Invoke-MgScheduleRoleManagementDirectory, /roleManagement/directory/roleScheduleInstances(directoryScopeId='@directoryScopeId',appScopeId='@appScopeId',principalId='@principalId',roleDefinitionId='@roleDefinitionId')
+v1.0-beta, Invoke-MgScheduleRoleManagementEntitlementManagement, /roleManagement/entitlementManagement/roleScheduleInstances(directoryScopeId='@directoryScopeId',appScopeId='@appScopeId',principalId='@principalId',roleDefinitionId='@roleDefinitionId')

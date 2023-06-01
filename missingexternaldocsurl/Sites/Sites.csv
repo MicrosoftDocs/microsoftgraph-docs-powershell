@@ -381,3 +381,7 @@ v1.0-beta, Remove-MgSiteListItemField, /sites/{site-id}/lists/{list-id}/items/{l
 v1.0-beta, Remove-MgSiteTermStore, /sites/{site-id}/termStore
 v1.0-beta, Update-MgSiteListItemField, /sites/{site-id}/lists/{list-id}/items/{listItem-id}/fields
 v1.0-beta, Update-MgSiteTermStore, /sites/{site-id}/termStore
+v1.0-beta, Get-MgSiteByPath, /sites/{site-id}/getByPath(path='{path}')
+v1.0-beta, Get-MgSiteRecentNotebook, /sites/{site-id}/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks={includePersonalNotebooks})
+v1.0, Get-MgSiteByPath, /sites/{site-id}/getByPath(path='{path}')
+v1.0, Get-MgSiteRecentNotebook, /sites/{site-id}/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks={includePersonalNotebooks})

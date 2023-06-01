@@ -201,3 +201,6 @@ v1.0-beta, Get-MgDeviceAppMgtMobileAppTopMobileApp, /deviceAppManagement/mobileA
 v1.0-beta, Get-MgDeviceAppMgtMobileAppCount, /deviceAppManagement/mobileApps/getMobileAppCount(status='{status}')
 v1.0-beta, Get-MgDeviceAppMgtMobileAppRelatedAppState, /deviceAppManagement/mobileApps/{mobileApp-id}/getRelatedAppStates(userPrincipalName='{userPrincipalName}',deviceId='{deviceId}')
 v1.0-beta, Get-MgDeviceAppMgtMobileAppTopMobileApp, /deviceAppManagement/mobileApps/getTopMobileApps(status='{status}',count={count})
+v1.0-beta, Get-MgDeviceAppMgtMobileAppCount, /deviceAppManagement/mobileApps/getMobileAppCount(status='{status}')
+v1.0-beta, Get-MgDeviceAppMgtMobileAppRelatedAppState, /deviceAppManagement/mobileApps/{mobileApp-id}/getRelatedAppStates(userPrincipalName='{userPrincipalName}',deviceId='{deviceId}')
+v1.0-beta, Get-MgDeviceAppMgtMobileAppTopMobileApp, /deviceAppManagement/mobileApps/getTopMobileApps(status='{status}',count={count})
