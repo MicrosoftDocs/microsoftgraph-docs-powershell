@@ -5,6 +5,34 @@ online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.gra
 schema: 2.0.0
 ---
 
+<style>
+.button {
+  background-color: #75b6e7; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button1 {
+  background-color: #75b6e7; 
+  color: black; 
+  border: 2px solid #75b6e7;
+}
+
+.button1:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+</style>
+
+<button class="button button1" onclick="https://review.learn.microsoft.com/en-us/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplication?view=graph-powershell-beta&branch=pr-en-us-275">Click me</button>
 # Add-MgApplicationKey
 
 ## SYNOPSIS
