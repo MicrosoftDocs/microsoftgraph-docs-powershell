@@ -14,6 +14,9 @@ As part of the request validation for this method, a proof of possession of an e
 Applications that don't have any existing valid certificates (no certificates have been added yet, or all certificates have expired), won't be able to use this service action.
 You can use the Update application operation to perform an update instead.
 
+[See beta version](https://review.learn.microsoft.com/en-us/powershell/module/Microsoft.Graph.Beta.Applications/Add-MgBetaApplicationKey?view=graph-powershell-beta&branch=pr-en-us-275)
+
+<button name="button" onclick="https://review.learn.microsoft.com/en-us/powershell/module/Microsoft.Graph.Beta.Applications/Add-MgBetaApplicationKey?view=graph-powershell-beta&branch=pr-en-us-266">Click me</button>
 ## SYNTAX
 
 ### AddExpanded (Default)
