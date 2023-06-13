@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamowner
@@ -12,6 +12,9 @@ The list of this team's owners.
 Currently, when creating a team using application permissions, exactly one owner must be specified.
 When using user delegated permissions, no owner can be specified (the current user is the owner).
 Owner must be specified as an object ID (GUID), not a UPN.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamOwner](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamOwner?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

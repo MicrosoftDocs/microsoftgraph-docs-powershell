@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetabegindevicemanagementremoteassistancepartneronboarding
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 A request to start onboarding.
 Must be coupled with the appropriate TeamViewer account information
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgBeginDeviceManagementRemoteAssistancePartnerOnboarding](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgBeginDeviceManagementRemoteAssistancePartnerOnboarding?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

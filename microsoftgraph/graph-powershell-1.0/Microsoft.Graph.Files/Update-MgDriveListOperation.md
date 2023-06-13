@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdrivelistoperation
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property operations in drives
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaDriveListOperation](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveListOperation?view=graph-powershell-beta)
 
 ## SYNTAX
 

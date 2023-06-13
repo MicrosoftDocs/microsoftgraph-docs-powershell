@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationuserassignment
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property assignments in education
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaEducationUserAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationUserAssignment?view=graph-powershell-beta)
 
 ## SYNTAX
 

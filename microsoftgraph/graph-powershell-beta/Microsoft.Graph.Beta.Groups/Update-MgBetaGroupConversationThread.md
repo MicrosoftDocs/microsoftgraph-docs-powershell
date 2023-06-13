@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupconversationthread
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property threads in groups
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupConversationThread](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupConversationThread?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

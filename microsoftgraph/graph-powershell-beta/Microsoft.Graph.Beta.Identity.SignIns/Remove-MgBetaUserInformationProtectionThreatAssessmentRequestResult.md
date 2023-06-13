@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetauserinformationprotectionthreatassessmentrequestresult
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property results for users
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserInformationProtectionThreatAssessmentRequestResult](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgUserInformationProtectionThreatAssessmentRequestResult?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

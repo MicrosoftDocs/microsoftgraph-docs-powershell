@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.PersonalContacts
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.personalcontacts/remove-mgusercontactsinglevalueextendedproperty
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property singleValueExtendedProperties for users
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaUserContactSingleValueExtendedProperty](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Remove-MgBetaUserContactSingleValueExtendedProperty?view=graph-powershell-beta)
 
 ## SYNTAX
 

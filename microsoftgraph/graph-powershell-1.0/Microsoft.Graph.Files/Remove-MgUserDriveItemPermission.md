@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdriveitempermission
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Remove access to a DriveItem.
 Only sharing permissions that are **not** inherited can be deleted.\nThe **inheritedFrom** property must be `null`.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaUserDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveItemPermission?view=graph-powershell-beta)
 
 ## SYNTAX
 

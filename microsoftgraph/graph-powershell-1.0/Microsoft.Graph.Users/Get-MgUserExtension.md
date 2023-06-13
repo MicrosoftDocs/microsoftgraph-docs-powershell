@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserextension
@@ -12,6 +12,9 @@ The collection of open extensions defined for the user.
 Read-only.
 Supports $expand.
 Nullable.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaUserExtension](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserExtension?view=graph-powershell-beta)
 
 ## SYNTAX
 

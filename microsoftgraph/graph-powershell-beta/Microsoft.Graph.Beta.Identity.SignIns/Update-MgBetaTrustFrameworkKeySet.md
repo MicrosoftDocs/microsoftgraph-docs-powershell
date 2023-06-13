@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatrustframeworkkeyset
@@ -11,6 +11,9 @@ schema: 2.0.0
 Update the properties of a trustFrameworkKeyset.
 This operation will replace the content of an existing keyset.
 Specifying the ID in the request payload is optional.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgTrustFrameworkKeySet](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgTrustFrameworkKeySet?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyfeaturerolloutpolicyapplyto
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Nullable.
 Specifies a list of directoryObjects that feature is enabled for.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaPolicyFeatureRolloutPolicyApplyTo](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyFeatureRolloutPolicyApplyTo?view=graph-powershell-beta)
 
 ## SYNTAX
 

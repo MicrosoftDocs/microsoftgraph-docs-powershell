@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodolisttaskattachmentcontent
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get media content for the navigation property attachments from users
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserTodoListTaskAttachmentContent](/powershell/module/Microsoft.Graph.Users/Get-MgUserTodoListTaskAttachmentContent?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

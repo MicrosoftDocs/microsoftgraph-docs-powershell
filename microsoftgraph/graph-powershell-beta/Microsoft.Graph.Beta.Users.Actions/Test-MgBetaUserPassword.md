@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetauserpassword
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Check a user's password against the organization's password validation policy and report whether the password is valid.
 Use this action to provide real-time feedback on password strength while the user types their password.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Test-MgUserPassword](/powershell/module/Microsoft.Graph.Users.Actions/Test-MgUserPassword?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/set-mgsharerootcontent
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The content stream, if the item represents a file.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaBetaShareRootContent](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaShareRootContent?view=graph-powershell-beta)
 
 ## SYNTAX
 

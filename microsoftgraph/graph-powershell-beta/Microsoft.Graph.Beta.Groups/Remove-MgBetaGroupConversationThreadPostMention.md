@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupconversationthreadpostmention
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property mentions for groups
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupConversationThreadPostMention](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupConversationThreadPostMention?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

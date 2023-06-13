@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.SchemaExtensions-help.xml
 Module Name: Microsoft.Graph.SchemaExtensions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.schemaextensions/remove-mgschemaextension
@@ -11,6 +11,9 @@ schema: 2.0.0
 Delete the definition of a schema extension.
 Only the app that created the schema extension (owner app) can delete the schema extension definition, and only when the extension is in the `InDevelopment` state.
 Deleting a schema extension definition does not affect accessing custom data that has been added to resource instances based on that definition.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaSchemaExtension](/powershell/module/Microsoft.Graph.Beta.SchemaExtensions/Remove-MgBetaSchemaExtension?view=graph-powershell-beta)
 
 ## SYNTAX
 

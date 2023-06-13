@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaacceptuserpendingaccessreviewinstancerecommendation
@@ -11,6 +11,9 @@ schema: 2.0.0
 Allows the acceptance of recommendations on all accessReviewInstanceDecisionItem objects that have not been reviewed for an accessReviewInstance object for which the calling user is a reviewer.
 Recommendations are generated if **recommendationsEnabled** is `true` on the accessReviewScheduleDefinition object.
 If there is not a recommendation on an accessReviewInstanceDecisionItem object no decision will be recorded.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgAcceptUserPendingAccessReviewInstanceRecommendation](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgAcceptUserPendingAccessReviewInstanceRecommendation?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

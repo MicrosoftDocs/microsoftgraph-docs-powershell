@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mguserauthenticationfido2method
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Deletes a user's FIDO2 Security Key Authentication Method object.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaUserAuthenticationFido2Method](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaUserAuthenticationFido2Method?view=graph-powershell-beta)
 
 ## SYNTAX
 

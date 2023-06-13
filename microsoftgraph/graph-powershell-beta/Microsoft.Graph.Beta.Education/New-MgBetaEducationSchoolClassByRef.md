@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationschoolclassbyref
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Add a class to a school.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgEducationSchoolClassByRef](/powershell/module/Microsoft.Graph.Education/New-MgEducationSchoolClassByRef?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

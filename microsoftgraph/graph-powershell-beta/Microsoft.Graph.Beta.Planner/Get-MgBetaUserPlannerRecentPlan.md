@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetauserplannerrecentplan
@@ -11,6 +11,9 @@ schema: 2.0.0
 Read-only.
 Nullable.
 Returns the plannerPlans that have been recently viewed by the user in apps that support recent plans.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserPlannerRecentPlan](/powershell/module/Microsoft.Graph.Planner/Get-MgUserPlannerRecentPlan?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

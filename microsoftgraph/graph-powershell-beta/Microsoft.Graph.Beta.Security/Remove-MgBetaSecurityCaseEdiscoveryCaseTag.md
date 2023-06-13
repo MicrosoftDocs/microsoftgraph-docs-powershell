@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycaseediscoverycasetag
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Remove an ediscoveryReviewTag object.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSecurityCaseEdiscoveryCaseTag](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityCaseEdiscoveryCaseTag?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

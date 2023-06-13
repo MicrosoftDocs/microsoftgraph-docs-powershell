@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilepublication
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Deletes an itemPublication object.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserProfilePublication](/powershell/module/Microsoft.Graph.People/Remove-MgUserProfilePublication?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

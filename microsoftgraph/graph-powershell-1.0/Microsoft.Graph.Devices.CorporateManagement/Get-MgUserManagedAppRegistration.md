@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgusermanagedappregistration
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Zero or more managed app registrations that belong to the user.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaUserManagedAppRegistration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaUserManagedAppRegistration?view=graph-powershell-beta)
 
 ## SYNTAX
 

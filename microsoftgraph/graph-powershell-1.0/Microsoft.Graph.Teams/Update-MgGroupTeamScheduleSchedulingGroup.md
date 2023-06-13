@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamscheduleschedulinggroup
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Replace an existing schedulingGroup.
 If the specified schedulingGroup doesn't exist, this method returns `404 Not found`.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaGroupTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaGroupTeamScheduleSchedulingGroup?view=graph-powershell-beta)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamoperation
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The async operations that ran or are running on this team.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaTeamOperation](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamOperation?view=graph-powershell-beta)
 
 ## SYNTAX
 

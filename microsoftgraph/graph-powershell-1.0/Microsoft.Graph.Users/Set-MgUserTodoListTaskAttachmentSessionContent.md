@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/set-mgusertodolisttaskattachmentsessioncontent
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The content streams that are uploaded.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaBetaUserTodoListTaskAttachmentSessionContent](/powershell/module/Microsoft.Graph.Beta.Users/Set-MgBetaUserTodoListTaskAttachmentSessionContent?view=graph-powershell-beta)
 
 ## SYNTAX
 

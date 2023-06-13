@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteinformationprotectionsensitivitylabelsublabel
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get sublabels from groups
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteInformationProtectionSensitivityLabelSublabel](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteInformationProtectionSensitivityLabelSublabel?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

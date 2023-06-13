@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.CrossDeviceExperiences-help.xml
 Module Name: Microsoft.Graph.Beta.CrossDeviceExperiences
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/get-mgbetauserdevicetransitivememberof
@@ -11,6 +11,9 @@ schema: 2.0.0
 Groups and administrative units that this device is a member of.
 This operation is transitive.
 Supports $expand.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDeviceTransitiveMemberOf](/powershell/module/Microsoft.Graph.CrossDeviceExperiences/Get-MgUserDeviceTransitiveMemberOf?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

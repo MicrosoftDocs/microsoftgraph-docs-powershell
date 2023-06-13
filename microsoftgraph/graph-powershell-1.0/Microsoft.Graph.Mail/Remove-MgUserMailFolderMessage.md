@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermailfoldermessage
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property messages for users
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaUserMailFolderMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Remove-MgBetaUserMailFolderMessage?view=graph-powershell-beta)
 
 ## SYNTAX
 

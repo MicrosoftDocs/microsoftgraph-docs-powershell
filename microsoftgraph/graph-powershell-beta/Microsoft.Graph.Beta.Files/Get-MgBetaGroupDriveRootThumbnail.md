@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriverootthumbnail
@@ -12,6 +12,9 @@ Collection containing [ThumbnailSet][] objects associated with the item.
 For more info, see [getting thumbnails][].
 Read-only.
 Nullable.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupDriveRootThumbnail](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveRootThumbnail?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

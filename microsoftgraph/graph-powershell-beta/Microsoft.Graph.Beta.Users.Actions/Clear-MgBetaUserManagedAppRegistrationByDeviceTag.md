@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/clear-mgbetausermanagedappregistrationbydevicetag
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Issues a wipe operation on an app registration with specified device tag.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Clear-MgUserManagedAppRegistrationByDeviceTag](/powershell/module/Microsoft.Graph.Users.Actions/Clear-MgUserManagedAppRegistrationByDeviceTag?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdriverootlistitem
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property listItem for users
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaUserDriveRootListItem](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveRootListItem?view=graph-powershell-beta)
 
 ## SYNTAX
 

@@ -12,6 +12,9 @@ The collection of single-value extended properties defined for the post.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaGroupThreadPostSingleValueExtendedProperty](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupThreadPostSingleValueExtendedProperty?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

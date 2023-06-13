@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DirectoryObjects-help.xml
 Module Name: Microsoft.Graph.DirectoryObjects
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/new-mgdirectoryobject
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Add new entity to directoryObjects
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBetaDirectoryObject](/powershell/module/Microsoft.Graph.Beta.DirectoryObjects/New-MgBetaDirectoryObject?view=graph-powershell-beta)
 
 ## SYNTAX
 

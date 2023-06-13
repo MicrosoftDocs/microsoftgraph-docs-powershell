@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationuserassignmentsubmissionresource
@@ -13,6 +13,9 @@ Only teachers and students can perform this operation.
 If the resource was copied from the assignment, a new copy of the resource will be created after the current copy is deleted.
 This allows you to 'reset' the resource to its original state.
 If the resource was not copied from the assignment but was added from the student, the resource is simply deleted.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgEducationUserAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationUserAssignmentSubmissionResource?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

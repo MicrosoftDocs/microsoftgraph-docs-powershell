@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/publish-mgbetacomplianceediscoverycasecustodian
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Release a custodian from a case.
 For details, see Release a custodian from a case.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Publish-MgComplianceEdiscoveryCaseCustodian](/powershell/module/Microsoft.Graph.Compliance/Publish-MgComplianceEdiscoveryCaseCustodian?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

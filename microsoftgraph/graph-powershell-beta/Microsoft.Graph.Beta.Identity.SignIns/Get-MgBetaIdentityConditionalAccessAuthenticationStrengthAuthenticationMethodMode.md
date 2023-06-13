@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityconditionalaccessauthenticationstrengthauthenticationmethodmode
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Names and descriptions of all valid authentication method modes in the system.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityConditionalAccessAuthenticationStrengthAuthenticationMethodMode](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityConditionalAccessAuthenticationStrengthAuthenticationMethodMode?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

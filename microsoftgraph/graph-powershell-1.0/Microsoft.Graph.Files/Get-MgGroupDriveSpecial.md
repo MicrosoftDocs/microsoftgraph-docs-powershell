@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivespecial
@@ -13,6 +13,9 @@ Special folders provide simple aliases to access well-known folders in OneDrive 
 If a special folder is renamed or moved to another location within the drive, this syntax will continue to find that folder.
 Special folders are automatically created the first time an application attempts to write to one, if it doesn't already exist.
 If a user deletes one, it is recreated when written to again.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaGroupDriveSpecial](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveSpecial?view=graph-powershell-beta)
 
 ## SYNTAX
 

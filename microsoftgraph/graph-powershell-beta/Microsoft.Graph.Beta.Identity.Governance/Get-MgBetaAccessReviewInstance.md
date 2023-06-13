@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaaccessreviewinstance
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The collection of access reviews instances past, present and future, if this object is a recurring access review.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgAccessReviewInstance](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgAccessReviewInstance?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

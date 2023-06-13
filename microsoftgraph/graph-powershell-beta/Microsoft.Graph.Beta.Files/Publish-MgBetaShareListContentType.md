@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/publish-mgbetasharelistcontenttype
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Publishes a [contentType][] present in a content type hub site.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Publish-MgShareListContentType](/powershell/module/Microsoft.Graph.Files/Publish-MgShareListContentType?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

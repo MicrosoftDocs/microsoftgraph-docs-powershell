@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgusermanageddeviceuser
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The primary users associated with the managed device.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaUserManagedDeviceUser](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaUserManagedDeviceUser?view=graph-powershell-beta)
 
 ## SYNTAX
 

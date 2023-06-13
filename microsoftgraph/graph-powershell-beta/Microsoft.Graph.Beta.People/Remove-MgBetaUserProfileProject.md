@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofileproject
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete a projectParticipation object from a user's profile.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserProfileProject](/powershell/module/Microsoft.Graph.People/Remove-MgUserProfileProject?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

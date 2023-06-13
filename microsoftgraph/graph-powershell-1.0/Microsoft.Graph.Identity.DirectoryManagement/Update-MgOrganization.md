@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganization
@@ -11,6 +11,9 @@ schema: 2.0.0
 Update the properties of the currently authenticated organization.
 In this case, `organization` is defined as a collection of exactly one record, and so its **ID** must be specified in the request.
 The **ID** is also known as the **tenantId** of the organization.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaOrganization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaOrganization?view=graph-powershell-beta)
 
 ## SYNTAX
 

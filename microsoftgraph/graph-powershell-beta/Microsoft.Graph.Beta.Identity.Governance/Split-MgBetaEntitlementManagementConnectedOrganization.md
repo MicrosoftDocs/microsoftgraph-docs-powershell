@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/split-mgbetaentitlementmanagementconnectedorganization
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Split elements of a connectedOrganization
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Split-MgEntitlementManagementConnectedOrganization](/powershell/module/Microsoft.Graph.Identity.Governance/Split-MgEntitlementManagementConnectedOrganization?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

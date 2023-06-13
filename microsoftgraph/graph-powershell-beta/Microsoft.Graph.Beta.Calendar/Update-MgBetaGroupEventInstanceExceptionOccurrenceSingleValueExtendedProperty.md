@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property singleValueExtendedProperties in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupEventInstanceExceptionOccurrenceSingleValueExtendedProperty](/powershell/module/Microsoft.Graph.Calendar/Update-MgGroupEventInstanceExceptionOccurrenceSingleValueExtendedProperty?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

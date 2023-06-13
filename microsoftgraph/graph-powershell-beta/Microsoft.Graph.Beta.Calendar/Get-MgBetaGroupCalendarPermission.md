@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupcalendarpermission
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get the specified permissions object of a user or group calendar that has been shared.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupCalendarPermission](/powershell/module/Microsoft.Graph.Calendar/Get-MgGroupCalendarPermission?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

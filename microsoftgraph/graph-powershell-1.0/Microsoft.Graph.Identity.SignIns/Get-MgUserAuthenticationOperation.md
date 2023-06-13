@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mguserauthenticationoperation
@@ -12,6 +12,9 @@ Retrieve the status of a long-running operation, represented by a longRunningOpe
 A long-running operation is initiated when you reset a user's password.
 This resource type is also the base type for the richLongRunningOperation object that represents the status of a long-running operation on a site or a list.
 The possible states of the long-running operation are `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue` where `succeeded` and `failed` are terminal states.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaUserAuthenticationOperation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaUserAuthenticationOperation?view=graph-powershell-beta)
 
 ## SYNTAX
 

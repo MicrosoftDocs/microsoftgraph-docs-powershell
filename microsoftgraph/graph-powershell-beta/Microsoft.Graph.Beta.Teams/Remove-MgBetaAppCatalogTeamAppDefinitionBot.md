@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetaappcatalogteamappdefinitionbot
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property bot for appCatalogs
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgAppCatalogTeamAppDefinitionBot](/powershell/module/Microsoft.Graph.Teams/Remove-MgAppCatalogTeamAppDefinitionBot?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

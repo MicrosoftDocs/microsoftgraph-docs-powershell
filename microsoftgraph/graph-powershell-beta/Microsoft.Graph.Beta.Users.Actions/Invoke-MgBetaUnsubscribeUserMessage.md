@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaunsubscribeusermessage
@@ -17,6 +17,9 @@ Setting that header would also set the **unsubscribeEnabled** property of the me
 If the **unsubscribeEnabled** property of a message is `true`, you can use the **unsubscribe** action to unsubscribe the user from similar future messages as managed by the message sender.
 A successful **unsubscribe** action moves the message to the **Deleted Items** folder.
 The actual exclusion of the user from future mail distribution is managed by the sender.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgUnsubscribeUserMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgUnsubscribeUserMessage?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatainboundflowdataconnector
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The data connector in the context of which this flow pulls in data from a source system.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgExternalIndustryDataInboundFlowDataConnector](/powershell/module/Microsoft.Graph.Search/Get-MgExternalIndustryDataInboundFlowDataConnector?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

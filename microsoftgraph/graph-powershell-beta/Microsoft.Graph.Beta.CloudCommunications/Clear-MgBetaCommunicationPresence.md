@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/clear-mgbetacommunicationpresence
@@ -11,6 +11,9 @@ schema: 2.0.0
 Clear a presence session of an application for a user.
 If it is the user's only presence session, a successful **clearPresence** changes the user's presence to `Offline/Offline`.
 Read more about presence sessions and their time-out and expiration.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Clear-MgCommunicationPresence](/powershell/module/Microsoft.Graph.CloudCommunications/Clear-MgCommunicationPresence?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdevicehealth
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the health details of a Microsoft Teams-enabled device.
 Device health is calculated based on the device configuration and other device parameters.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamworkDeviceHealth](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDeviceHealth?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

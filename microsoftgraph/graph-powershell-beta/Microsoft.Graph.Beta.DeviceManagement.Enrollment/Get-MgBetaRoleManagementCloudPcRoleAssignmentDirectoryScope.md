@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetarolemanagementcloudpcroleassignmentdirectoryscope
@@ -12,6 +12,9 @@ Read-only collection referencing the directory objects that are scope of the ass
 Provided so that callers can get the directory objects using $expand at the same time as getting the role assignment.
 Read-only.
 Supports $expand.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementCloudPcRoleAssignmentDirectoryScope](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Get-MgRoleManagementCloudPcRoleAssignmentDirectoryScope?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

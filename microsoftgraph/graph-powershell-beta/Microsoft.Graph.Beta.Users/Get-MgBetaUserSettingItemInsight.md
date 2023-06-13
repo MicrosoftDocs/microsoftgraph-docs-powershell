@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingiteminsight
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get the user-customizable privacy settings for itemInsights and meeting hours insights.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserSettingItemInsight](/powershell/module/Microsoft.Graph.Users/Get-MgUserSettingItemInsight?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

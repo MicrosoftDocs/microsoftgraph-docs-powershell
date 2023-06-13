@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationsettingpersoninsight
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the properties of an insightsSettings object for displaying or returning people insights in an organization.
 To learn how to customize privacy for people insights in an organization, see Customize people insights privacy.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgOrganizationSettingPersonInsight](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgOrganizationSettingPersonInsight?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

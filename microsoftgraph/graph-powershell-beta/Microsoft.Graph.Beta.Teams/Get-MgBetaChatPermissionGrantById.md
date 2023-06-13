@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatpermissiongrantbyid
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgChatPermissionGrantById](/powershell/module/Microsoft.Graph.Teams/Get-MgChatPermissionGrantById?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property singleValueExtendedProperties for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupEventExceptionOccurrenceInstanceSingleValueExtendedProperty](/powershell/module/Microsoft.Graph.Calendar/Remove-MgGroupEventExceptionOccurrenceInstanceSingleValueExtendedProperty?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

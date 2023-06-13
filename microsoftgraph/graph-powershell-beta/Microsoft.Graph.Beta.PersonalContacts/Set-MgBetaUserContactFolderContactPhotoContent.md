@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.Beta.PersonalContacts
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/set-mgbetausercontactfoldercontactphotocontent
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update media content for the navigation property photo in users
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgUserContactFolderContactPhotoContent](/powershell/module/Microsoft.Graph.PersonalContacts/Set-MgUserContactFolderContactPhotoContent?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupmember
@@ -13,6 +13,9 @@ Supports the List members, Add member, and Remove member operations.
 Nullable.
 Supports $expand including nested $select.
 For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=members($select=id,userPrincipalName,displayName).
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupMember](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupMember?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

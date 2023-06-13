@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitepage
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Returns the metadata for a [sitePage][] in the site pages [list][] in a [site][].
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSitePage](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSitePage?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

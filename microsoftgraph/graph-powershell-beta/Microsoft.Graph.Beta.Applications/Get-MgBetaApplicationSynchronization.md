@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationsynchronization
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Represents the capability for Azure Active Directory (Azure AD) identity synchronization through the Microsoft Graph API.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgApplicationSynchronization](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationSynchronization?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

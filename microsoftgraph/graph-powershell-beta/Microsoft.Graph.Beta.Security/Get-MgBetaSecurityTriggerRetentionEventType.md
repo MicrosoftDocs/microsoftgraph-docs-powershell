@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritytriggerretentioneventtype
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Specifies the event that will start the retention period for labels that use this event type when an event is created.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityTriggerRetentionEventType](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityTriggerRetentionEventType?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

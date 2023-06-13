@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Notes-help.xml
 Module Name: Microsoft.Graph.Beta.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetauseronenoteresource
@@ -12,6 +12,9 @@ The image and other file resources in OneNote pages.
 Getting a resources collection is not supported, but you can get the binary content of a specific resource.
 Read-only.
 Nullable.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserOnenoteResource](/powershell/module/Microsoft.Graph.Notes/Get-MgUserOnenoteResource?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

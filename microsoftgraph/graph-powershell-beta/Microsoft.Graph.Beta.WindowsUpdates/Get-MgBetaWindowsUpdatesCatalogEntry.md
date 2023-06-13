@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/get-mgbetawindowsupdatescatalogentry
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Lists the content that you can approve for deployment.
 Read-only.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgWindowsUpdatesCatalogEntry](/powershell/module/Microsoft.Graph.WindowsUpdates/Get-MgWindowsUpdatesCatalogEntry?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

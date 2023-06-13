@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgagreement
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update entity in agreements
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaAgreement](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaAgreement?view=graph-powershell-beta)
 
 ## SYNTAX
 

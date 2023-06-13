@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportteamuseractivitytotalusercount
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function getTeamsUserActivityTotalUserCounts
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportTeamUserActivityTotalUserCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportTeamUserActivityTotalUserCount?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

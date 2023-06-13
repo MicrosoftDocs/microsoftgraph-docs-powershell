@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/reset-mgbetauserpendingaccessreviewinstancedecision
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Resets decisions of all accessReviewInstanceDecisionItem objects on an accessReviewInstance to `notReviewed`.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Reset-MgUserPendingAccessReviewInstanceDecision](/powershell/module/Microsoft.Graph.Users.Actions/Reset-MgUserPendingAccessReviewInstanceDecision?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

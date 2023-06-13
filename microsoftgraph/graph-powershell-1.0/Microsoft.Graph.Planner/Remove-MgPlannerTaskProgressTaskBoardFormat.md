@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/remove-mgplannertaskprogresstaskboardformat
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property progressTaskBoardFormat for planner
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaPlannerTaskProgressTaskBoardFormat](/powershell/module/Microsoft.Graph.Beta.Planner/Remove-MgBetaPlannerTaskProgressTaskBoardFormat?view=graph-powershell-beta)
 
 ## SYNTAX
 

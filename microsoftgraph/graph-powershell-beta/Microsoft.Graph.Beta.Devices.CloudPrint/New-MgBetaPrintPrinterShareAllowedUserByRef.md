@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintprintersharealloweduserbyref
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Grant the specified user access to submit print jobs to the associated printerShare.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgPrintPrinterShareAllowedUserByRef](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintPrinterShareAllowedUserByRef?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

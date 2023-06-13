@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteonenoteoperation
@@ -13,6 +13,9 @@ This applies to operations that return the **Operation-Location** header in the 
   You can poll the Operation-Location endpoint until the `status` property returns `completed` or `failed`.
 If the status is `completed`, the `resourceLocation` property contains the resource endpoint URI.
 If the status is `failed`, the error and `@api.diagnostics` properties provide error information.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteOnenoteOperation](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteOnenoteOperation?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

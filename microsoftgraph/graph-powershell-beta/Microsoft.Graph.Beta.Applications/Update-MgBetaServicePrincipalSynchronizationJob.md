@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalsynchronizationjob
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property jobs in servicePrincipals
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/Update-MgServicePrincipalSynchronizationJob?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

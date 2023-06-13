@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationownerbyref
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Remove an owner from an application.
 As a recommended best practice, apps should have at least two owners.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaApplicationOwnerByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationOwnerByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 

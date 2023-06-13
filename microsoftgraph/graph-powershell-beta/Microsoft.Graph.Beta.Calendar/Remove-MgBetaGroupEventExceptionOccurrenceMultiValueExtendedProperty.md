@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property multiValueExtendedProperties for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupEventExceptionOccurrenceMultiValueExtendedProperty](/powershell/module/Microsoft.Graph.Calendar/Remove-MgGroupEventExceptionOccurrenceMultiValueExtendedProperty?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

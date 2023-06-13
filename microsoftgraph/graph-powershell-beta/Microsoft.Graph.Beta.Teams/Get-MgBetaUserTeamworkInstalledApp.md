@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserteamworkinstalledapp
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Retrieve the app installed in the personal scope of the specified user.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserTeamworkInstalledApp](/powershell/module/Microsoft.Graph.Teams/Get-MgUserTeamworkInstalledApp?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

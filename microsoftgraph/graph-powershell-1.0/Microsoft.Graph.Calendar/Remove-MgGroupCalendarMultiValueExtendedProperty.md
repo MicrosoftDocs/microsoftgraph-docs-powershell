@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/remove-mggroupcalendarmultivalueextendedproperty
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property multiValueExtendedProperties for groups
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaGroupCalendarMultiValueExtendedProperty](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaGroupCalendarMultiValueExtendedProperty?view=graph-powershell-beta)
 
 ## SYNTAX
 

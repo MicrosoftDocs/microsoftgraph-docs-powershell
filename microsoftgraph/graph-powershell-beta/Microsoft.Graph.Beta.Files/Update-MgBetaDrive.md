@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/unpublish-mgbetasharelistcontenttype
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Unpublish a [contentType][] from a content type hub site.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDrive](/powershell/module/Microsoft.Graph.Files/Update-MgDrive?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

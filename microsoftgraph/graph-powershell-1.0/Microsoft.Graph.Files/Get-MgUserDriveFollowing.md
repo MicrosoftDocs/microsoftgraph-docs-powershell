@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdrivefollowing
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The list of items the user is following.
 Only in OneDrive for Business.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaUserDriveFollowing](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveFollowing?view=graph-powershell-beta)
 
 ## SYNTAX
 

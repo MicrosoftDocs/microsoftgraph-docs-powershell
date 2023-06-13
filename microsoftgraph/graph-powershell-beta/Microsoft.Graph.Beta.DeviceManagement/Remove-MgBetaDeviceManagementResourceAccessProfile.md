@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementresourceaccessprofile
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property resourceAccessProfiles for deviceManagement
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceManagementResourceAccessProfile](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementResourceAccessProfile?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

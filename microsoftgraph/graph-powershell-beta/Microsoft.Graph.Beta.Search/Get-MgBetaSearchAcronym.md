@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetasearchacronym
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Read the properties and relationships of an acronym object.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSearchAcronym](/powershell/module/Microsoft.Graph.Search/Get-MgSearchAcronym?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

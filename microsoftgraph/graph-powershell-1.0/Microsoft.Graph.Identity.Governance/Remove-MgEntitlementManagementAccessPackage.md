@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgentitlementmanagementaccesspackage
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete an accessPackage object.
 You cannot delete an access package if it has any **accessPackageAssignment**.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaEntitlementManagementAccessPackage](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaEntitlementManagementAccessPackage?view=graph-powershell-beta)
 
 ## SYNTAX
 

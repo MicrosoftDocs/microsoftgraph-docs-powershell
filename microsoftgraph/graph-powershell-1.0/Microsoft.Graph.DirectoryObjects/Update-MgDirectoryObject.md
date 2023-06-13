@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DirectoryObjects-help.xml
 Module Name: Microsoft.Graph.DirectoryObjects
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/update-mgdirectoryobject
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update entity in directoryObjects
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaDirectoryObject](/powershell/module/Microsoft.Graph.Beta.DirectoryObjects/Update-MgBetaDirectoryObject?view=graph-powershell-beta)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/find-mgbetapolicyauthenticationstrengthpolicybymethodmode
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function findByMethodMode
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Find-MgPolicyAuthenticationStrengthPolicyByMethodMode](/powershell/module/Microsoft.Graph.Identity.SignIns/Find-MgPolicyAuthenticationStrengthPolicyByMethodMode?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

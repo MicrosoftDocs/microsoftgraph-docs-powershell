@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.CrossDeviceExperiences-help.xml
 Module Name: Microsoft.Graph.Beta.CrossDeviceExperiences
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/update-mgbetauserdevicecommand
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property commands in users
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserDeviceCommand](/powershell/module/Microsoft.Graph.CrossDeviceExperiences/Update-MgUserDeviceCommand?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

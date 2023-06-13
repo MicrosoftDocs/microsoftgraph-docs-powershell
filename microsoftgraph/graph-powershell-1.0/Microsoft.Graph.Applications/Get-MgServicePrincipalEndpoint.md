@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalendpoint
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get endpoints from servicePrincipals
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaServicePrincipalEndpoint](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalEndpoint?view=graph-powershell-beta)
 
 ## SYNTAX
 

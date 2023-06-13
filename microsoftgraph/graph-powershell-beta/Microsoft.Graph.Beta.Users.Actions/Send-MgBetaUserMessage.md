@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetausermessage
@@ -12,6 +12,9 @@ Send an existing draft message.
 The draft message can be a new message draft, reply draft, reply-all draft, or a forward draft.
 This method saves the message in the **Sent Items** folder.
 Alternatively, send a new message in a single operation.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Send-MgUserMessage](/powershell/module/Microsoft.Graph.Users.Actions/Send-MgUserMessage?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

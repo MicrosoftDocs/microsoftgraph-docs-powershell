@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/add-mgbetachatmember
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Add multiple members in a single request to a team.
 The response provides details about which memberships could and couldn't be created.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Add-MgChatMember](/powershell/module/Microsoft.Graph.Teams/Add-MgChatMember?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

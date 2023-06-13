@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetapendinguserapp
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Retrieves the list of devices with failed or pending apps
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgPendingUserApp](/powershell/module/Microsoft.Graph.Users.Functions/Invoke-MgPendingUserApp?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

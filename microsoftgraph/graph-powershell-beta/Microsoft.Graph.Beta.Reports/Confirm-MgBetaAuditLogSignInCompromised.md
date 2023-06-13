@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/confirm-mgbetaauditlogsignincompromised
@@ -12,6 +12,9 @@ Allow admins to mark an event in the Azure AD sign in logs as risky.
 Events marked as risky by an admin are immediately flagged as high risk in Azure AD Identity Protection, overriding previous risk states.
 Admins can confirm that events flagged as risky by Azure AD Identity Protection are in fact risky.
 For details about investigating Identity Protection risks, see How to investigate risk.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Confirm-MgAuditLogSignInCompromised](/powershell/module/Microsoft.Graph.Reports/Confirm-MgAuditLogSignInCompromised?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

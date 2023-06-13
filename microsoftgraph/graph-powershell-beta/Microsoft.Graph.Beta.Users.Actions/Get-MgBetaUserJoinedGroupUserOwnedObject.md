@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetauserjoinedgroupuserownedobject
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve a list of recently deleted application and group objects owned by the specified user.
 This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserJoinedGroupUserOwnedObject](/powershell/module/Microsoft.Graph.Users.Actions/Get-MgUserJoinedGroupUserOwnedObject?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

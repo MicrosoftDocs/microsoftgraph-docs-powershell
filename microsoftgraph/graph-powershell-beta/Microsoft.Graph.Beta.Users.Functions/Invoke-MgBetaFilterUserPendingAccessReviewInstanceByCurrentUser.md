@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetafilteruserpendingaccessreviewinstancebycurrentuser
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function filterByCurrentUser
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgFilterUserPendingAccessReviewInstanceByCurrentUser](/powershell/module/Microsoft.Graph.Users.Functions/Invoke-MgFilterUserPendingAccessReviewInstanceByCurrentUser?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

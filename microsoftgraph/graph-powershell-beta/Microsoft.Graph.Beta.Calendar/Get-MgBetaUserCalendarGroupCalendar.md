@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendargroupcalendar
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Retrieve a list of calendars belonging to a calendar group.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserCalendarGroupCalendar](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserCalendarGroupCalendar?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

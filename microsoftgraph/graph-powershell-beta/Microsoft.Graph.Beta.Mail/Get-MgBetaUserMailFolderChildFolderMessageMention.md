@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfolderchildfoldermessagemention
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 A collection of mentions in the message, ordered by the createdDateTime from the newest to the oldest.
 By default, a GET /messages does not return this property unless you apply $expand on the property.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserMailFolderChildFolderMessageMention](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMailFolderChildFolderMessageMention?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

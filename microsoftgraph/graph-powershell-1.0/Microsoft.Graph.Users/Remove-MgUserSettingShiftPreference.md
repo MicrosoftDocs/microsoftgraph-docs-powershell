@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusersettingshiftpreference
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property shiftPreferences for users
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaUserSettingShiftPreference](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserSettingShiftPreference?view=graph-powershell-beta)
 
 ## SYNTAX
 

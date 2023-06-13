@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementgrouppolicymigrationreportunsupportedgrouppolicyextension
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 A list of unsupported group policy extensions inside the Group Policy Object.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementGroupPolicyMigrationReportUnsupportedGroupPolicyExtension](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementGroupPolicyMigrationReportUnsupportedGroupPolicyExtension?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

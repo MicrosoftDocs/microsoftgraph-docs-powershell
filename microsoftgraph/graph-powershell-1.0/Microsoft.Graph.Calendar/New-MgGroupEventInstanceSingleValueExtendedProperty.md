@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/new-mggroupeventinstancesinglevalueextendedproperty
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to singleValueExtendedProperties for groups
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBetaGroupEventInstanceSingleValueExtendedProperty](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaGroupEventInstanceSingleValueExtendedProperty?view=graph-powershell-beta)
 
 ## SYNTAX
 

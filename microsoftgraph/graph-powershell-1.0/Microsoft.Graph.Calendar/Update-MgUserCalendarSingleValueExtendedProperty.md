@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/update-mgusercalendarsinglevalueextendedproperty
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property singleValueExtendedProperties in users
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaUserCalendarSingleValueExtendedProperty](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaUserCalendarSingleValueExtendedProperty?view=graph-powershell-beta)
 
 ## SYNTAX
 

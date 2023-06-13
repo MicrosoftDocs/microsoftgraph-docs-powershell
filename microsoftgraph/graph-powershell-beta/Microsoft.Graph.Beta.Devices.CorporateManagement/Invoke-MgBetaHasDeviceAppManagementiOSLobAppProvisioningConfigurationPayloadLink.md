@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetahasdeviceappmanagementioslobappprovisioningconfigurationpayloadlink
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke action hasPayloadLinks
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgHasDeviceAppManagementiOSLobAppProvisioningConfigurationPayloadLink](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Invoke-MgHasDeviceAppManagementiOSLobAppProvisioningConfigurationPayloadLink?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

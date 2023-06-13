@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceaccessreviewdefinitioninstance
@@ -12,6 +12,9 @@ Update the properties of an accessReviewInstance object.
 Only the **reviewers** and **fallbackReviewers** properties can be updated but the **scope** property is also required in the request body.
 You can only add reviewers to the **fallbackReviewers** property but can't remove existing **fallbackReviewers**.
 To update an **accessReviewInstance**, it's **status** must be `InProgress`.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaIdentityGovernanceAccessReviewDefinitionInstance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstance?view=graph-powershell-beta)
 
 ## SYNTAX
 

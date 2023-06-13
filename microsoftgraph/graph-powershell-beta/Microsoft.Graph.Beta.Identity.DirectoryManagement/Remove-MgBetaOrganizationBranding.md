@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetaorganizationbranding
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete the default organizational branding object.
 To delete the organizationalBranding object, all images (Stream types) must first be removed from the object.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgOrganizationBranding](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgOrganizationBranding?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

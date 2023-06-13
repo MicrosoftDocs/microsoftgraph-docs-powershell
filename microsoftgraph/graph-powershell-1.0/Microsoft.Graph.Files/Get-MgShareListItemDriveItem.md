@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistitemdriveitem
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaShareListItemDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListItemDriveItem?view=graph-powershell-beta)
 
 ## SYNTAX
 

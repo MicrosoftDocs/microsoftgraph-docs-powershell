@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupmemberof
@@ -13,6 +13,9 @@ HTTP Methods: GET (supported for all groups).
 Read-only.
 Nullable.
 Supports $expand.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupMemberOf](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupMemberOf?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

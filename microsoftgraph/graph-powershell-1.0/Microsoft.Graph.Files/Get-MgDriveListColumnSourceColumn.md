@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivelistcolumnsourcecolumn
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The source column for the content type column.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaDriveListColumnSourceColumn](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListColumnSourceColumn?view=graph-powershell-beta)
 
 ## SYNTAX
 

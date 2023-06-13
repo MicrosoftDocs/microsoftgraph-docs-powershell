@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetareopensecuritycaseediscoverycase
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Reopen an eDiscovery case that was closed.
 For details, see Reopen a closed case.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgReopenSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Security/Invoke-MgReopenSecurityCaseEdiscoveryCase?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

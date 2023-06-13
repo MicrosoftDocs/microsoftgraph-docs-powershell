@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationclassassignment
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete an existing assignment.
 Only teachers within a class can delete assignments.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationClassAssignment?view=graph-powershell-beta)
 
 ## SYNTAX
 

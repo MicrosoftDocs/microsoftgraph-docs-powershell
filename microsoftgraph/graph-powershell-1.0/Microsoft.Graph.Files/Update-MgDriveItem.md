@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriveitem
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the metadata for a driveItem by ID or path.
 You can also use update to move an item to another parent by updating the item's **parentReference** property.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveItem?view=graph-powershell-beta)
 
 ## SYNTAX
 

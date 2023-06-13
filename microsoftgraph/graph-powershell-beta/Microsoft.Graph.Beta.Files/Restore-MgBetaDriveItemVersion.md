@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/restore-mgbetadriveitemversion
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Restore a previous version of a DriveItem to be the current version.
 This will create a new version with the contents of the previous version, but preserves all existing versions of the file.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Restore-MgDriveItemVersion](/powershell/module/Microsoft.Graph.Files/Restore-MgDriveItemVersion?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

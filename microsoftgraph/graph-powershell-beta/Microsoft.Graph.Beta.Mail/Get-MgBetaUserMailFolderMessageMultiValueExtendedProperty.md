@@ -11,6 +11,9 @@ schema: 2.0.0
 The collection of multi-value extended properties defined for the message.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserMailFolderMessageMultiValueExtendedProperty](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMailFolderMessageMultiValueExtendedProperty?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

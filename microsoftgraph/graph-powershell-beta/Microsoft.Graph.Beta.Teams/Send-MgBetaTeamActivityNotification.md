@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/send-mgbetateamactivitynotification
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Send an activity feed notification in the scope of a team.
 For more details about sending notifications and the requirements for doing so, see\nsending Teams activity notifications.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Send-MgTeamActivityNotification](/powershell/module/Microsoft.Graph.Teams/Send-MgTeamActivityNotification?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

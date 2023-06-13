@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateampermissiongrantmembergroup
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
 This function is transitive.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamPermissionGrantMemberGroup](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamPermissionGrantMemberGroup?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

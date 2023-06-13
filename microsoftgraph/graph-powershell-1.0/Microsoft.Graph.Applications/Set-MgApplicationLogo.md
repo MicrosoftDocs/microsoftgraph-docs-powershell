@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/set-mgapplicationlogo
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The main logo for the application.
 Not nullable.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaBetaApplicationLogo](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaApplicationLogo?view=graph-powershell-beta)
 
 ## SYNTAX
 

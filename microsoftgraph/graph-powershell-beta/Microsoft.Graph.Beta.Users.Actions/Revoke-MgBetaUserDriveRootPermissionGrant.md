@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/revoke-mgbetauserdriverootpermissiongrant
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Revoke access to a [listItem][] or [driveItem][] granted via a sharing link by removing the specified [recipient][] from the link.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Revoke-MgUserDriveRootPermissionGrant](/powershell/module/Microsoft.Graph.Users.Actions/Revoke-MgUserDriveRootPermissionGrant?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

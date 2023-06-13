@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaaccessreview
@@ -14,6 +14,9 @@ To retrieve the decisions of the access review, use the list accessReview decisi
 If this is a recurring access review, no decisions will be associated with the recurring access review series.
 Instead, use the `instances` relationship of that series to retrieve an accessReview collection of the past, current, and future instances of the access review.
 Each past and current instance will have decisions.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgAccessReview](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgAccessReview?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

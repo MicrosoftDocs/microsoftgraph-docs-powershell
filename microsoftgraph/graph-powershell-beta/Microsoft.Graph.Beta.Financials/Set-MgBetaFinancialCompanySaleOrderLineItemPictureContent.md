@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Financials-help.xml
 Module Name: Microsoft.Graph.Beta.Financials
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/set-mgbetafinancialcompanysaleorderlineitempicturecontent
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update content for the navigation property picture in financials
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgFinancialCompanySaleOrderLineItemPictureContent](/powershell/module/Microsoft.Graph.Financials/Set-MgFinancialCompanySaleOrderLineItemPictureContent?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationmeassignmentcategorybyref
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Add one or more existing educationCategory objects to the specified  educationAssignment.
 Only teachers can perform this operation.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBetaEducationMeAssignmentCategoryByRef](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationMeAssignmentCategoryByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 

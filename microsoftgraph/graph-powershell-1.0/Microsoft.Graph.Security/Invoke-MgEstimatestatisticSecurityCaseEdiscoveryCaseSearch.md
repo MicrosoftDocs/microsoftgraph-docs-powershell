@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action estimateStatistics
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaBetaEstimatestatisticSecurityCaseEdiscoveryCaseSearch](/powershell/module/Microsoft.Graph.Beta.Security/Invoke-MgBetaEstimatestatisticSecurityCaseEdiscoveryCaseSearch?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Estimatestatistics (Default)

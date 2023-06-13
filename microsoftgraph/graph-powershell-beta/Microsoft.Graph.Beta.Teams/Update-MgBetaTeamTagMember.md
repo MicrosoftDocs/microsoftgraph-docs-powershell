@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamtagmember
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property members in teams
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgTeamTagMember](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamTagMember?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

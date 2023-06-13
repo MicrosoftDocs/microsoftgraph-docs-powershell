@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/find-mgbetauserroomlist
@@ -11,6 +11,9 @@ schema: 2.0.0
 Get the room lists defined in a tenant, as represented by their emailAddress objects.
 Tenants can organize meeting rooms into room lists.
 In this API, each meeting room and room list is represented by an emailAddress instance.\nYou can get all the room lists in the tenant, get all the rooms in the tenant, or get all the rooms in a specific room list.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Find-MgUserRoomList](/powershell/module/Microsoft.Graph.Users.Functions/Find-MgUserRoomList?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

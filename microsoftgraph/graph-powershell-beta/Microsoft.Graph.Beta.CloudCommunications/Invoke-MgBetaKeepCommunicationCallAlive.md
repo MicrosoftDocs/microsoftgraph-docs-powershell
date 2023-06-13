@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetakeepcommunicationcallalive
@@ -15,6 +15,9 @@ We recommend that you send a request in shorter time intervals (every 15 minutes
 Make sure that these requests are successful to prevent the call from timing out and ending.
 Attempting to send a request to a call that has already ended will result in a `404 Not-Found` error.
 The resources related to the call should be cleaned up on the application side.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgKeepCommunicationCallAlive](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgKeepCommunicationCallAlive?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

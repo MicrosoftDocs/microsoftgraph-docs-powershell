@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantdeviceappperformance
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get deviceAppPerformances from tenantRelationships
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTenantRelationshipManagedTenantDeviceAppPerformance](/powershell/module/Microsoft.Graph.ManagedTenants/Get-MgTenantRelationshipManagedTenantDeviceAppPerformance?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

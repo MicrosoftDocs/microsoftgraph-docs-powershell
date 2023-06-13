@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationroot
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get education
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaEducationRoot](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationRoot?view=graph-powershell-beta)
 
 ## SYNTAX
 

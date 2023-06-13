@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetaenrolldevicemanagementcomanageddevicenowaction
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Trigger comanagement enrollment action on ConfigurationManager client
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgEnrollDeviceManagementComanagedDeviceNowAction](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgEnrollDeviceManagementComanagedDeviceNowAction?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

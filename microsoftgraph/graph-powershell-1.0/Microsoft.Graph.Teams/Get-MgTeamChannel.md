@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannel
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 List of channels either hosted in or shared with the team (incoming channels).
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamChannel?view=graph-powershell-beta)
 
 ## SYNTAX
 

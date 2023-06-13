@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mggraphchat
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Unhide a chat for a user.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaBetaGraphChat](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaGraphChat?view=graph-powershell-beta)
 
 ## SYNTAX
 

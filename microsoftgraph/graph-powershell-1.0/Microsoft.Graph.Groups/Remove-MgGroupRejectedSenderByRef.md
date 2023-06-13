@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Remove rejectedSender
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaGroupRejectedSenderByRef](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupRejectedSenderByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

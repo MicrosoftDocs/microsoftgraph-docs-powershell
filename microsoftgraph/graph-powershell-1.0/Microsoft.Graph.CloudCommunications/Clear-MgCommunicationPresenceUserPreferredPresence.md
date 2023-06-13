@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/clear-mgcommunicationpresenceuserpreferredpresence
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Clear the preferred availability and activity status for a user.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Clear-MgBetaBetaCommunicationPresenceUserPreferredPresence](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Clear-MgBetaCommunicationPresenceUserPreferredPresence?view=graph-powershell-beta)
 
 ## SYNTAX
 

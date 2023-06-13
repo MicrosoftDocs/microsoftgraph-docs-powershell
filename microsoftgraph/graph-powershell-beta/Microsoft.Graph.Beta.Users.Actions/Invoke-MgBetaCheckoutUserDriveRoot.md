@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetacheckoutuserdriveroot
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Check out a **driveItem** resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgCheckoutUserDriveRoot](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgCheckoutUserDriveRoot?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

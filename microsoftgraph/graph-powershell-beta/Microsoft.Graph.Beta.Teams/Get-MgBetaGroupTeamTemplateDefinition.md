@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamtemplatedefinition
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Generic representation of a team template definition for a team with a specific structure and configuration.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupTeamTemplateDefinition](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamTemplateDefinition?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

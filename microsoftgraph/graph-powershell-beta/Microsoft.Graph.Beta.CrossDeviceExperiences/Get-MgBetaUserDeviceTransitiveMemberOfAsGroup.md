@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.CrossDeviceExperiences-help.xml
 Module Name: Microsoft.Graph.Beta.CrossDeviceExperiences
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/get-mgbetauserdevicetransitivememberofasgroup
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDeviceTransitiveMemberOfAsGroup](/powershell/module/Microsoft.Graph.CrossDeviceExperiences/Get-MgUserDeviceTransitiveMemberOfAsGroup?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

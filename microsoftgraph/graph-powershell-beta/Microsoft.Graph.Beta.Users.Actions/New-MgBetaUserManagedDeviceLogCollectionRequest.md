@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetausermanageddevicelogcollectionrequest
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke action createDeviceLogCollectionRequest
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserManagedDeviceLogCollectionRequest](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserManagedDeviceLogCollectionRequest?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

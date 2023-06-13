@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyauthenticationmethodpolicyauthenticationmethodconfiguration
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Represents the settings for each authentication method.
 Automatically expanded on GET /policies/authenticationMethodsPolicy.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

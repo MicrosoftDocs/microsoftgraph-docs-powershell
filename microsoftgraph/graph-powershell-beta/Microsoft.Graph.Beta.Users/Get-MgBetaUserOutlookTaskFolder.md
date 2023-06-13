@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroutlooktaskfolder
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get the properties and relationships of the specified Outlook task folder.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserOutlookTaskFolder](/powershell/module/Microsoft.Graph.Users/Get-MgUserOutlookTaskFolder?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

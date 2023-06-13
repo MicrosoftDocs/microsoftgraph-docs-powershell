@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetarecorduserpendingaccessreviewinstancedecision
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 As a reviewer of an access review, record a decision for an accessReviewInstanceDecisionItem that is assigned to you and that matches the principal or resource IDs specified.
 If no IDs are specified, the decisions will apply to every **accessReviewInstanceDecisionItem** for which you are the reviewer.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgRecordUserPendingAccessReviewInstanceDecision](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgRecordUserPendingAccessReviewInstanceDecision?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

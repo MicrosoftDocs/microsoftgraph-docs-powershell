@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamtagmember
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get the properties and relationships of a member of a standard tag in a team.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupTeamTagMember](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamTagMember?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

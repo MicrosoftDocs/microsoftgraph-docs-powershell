@@ -12,6 +12,9 @@ The collection of single-value extended properties defined for the event.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserEventSingleValueExtendedProperty](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserEventSingleValueExtendedProperty?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

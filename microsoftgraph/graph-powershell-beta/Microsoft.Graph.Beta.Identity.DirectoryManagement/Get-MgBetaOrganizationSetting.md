@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationsetting
@@ -13,6 +13,9 @@ This operation does not return insightsSettings.
 Depending on the type of insights, you can get their settings by using list itemInsights or list peopleInsights.
 This operation does not return microsoftApplicationDataAccessSettings.
 To get microsoftApplicationDataAccessSettings, use list microsoftApplicationDataAccessSettings.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgOrganizationSetting](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgOrganizationSetting?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

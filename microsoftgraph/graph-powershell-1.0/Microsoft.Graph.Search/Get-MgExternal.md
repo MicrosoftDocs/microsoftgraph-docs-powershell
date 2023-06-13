@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternal
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get external
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaExternal](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternal?view=graph-powershell-beta)
 
 ## SYNTAX
 

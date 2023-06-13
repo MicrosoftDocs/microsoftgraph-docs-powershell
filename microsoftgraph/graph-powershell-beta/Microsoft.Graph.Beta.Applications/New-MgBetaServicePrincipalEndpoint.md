@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalendpoint
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to endpoints for servicePrincipals
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgServicePrincipalEndpoint](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalEndpoint?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

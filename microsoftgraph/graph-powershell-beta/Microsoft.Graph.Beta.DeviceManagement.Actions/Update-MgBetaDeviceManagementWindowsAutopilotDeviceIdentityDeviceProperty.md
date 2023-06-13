@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/update-mgbetadevicemanagementwindowsautopilotdeviceidentitydeviceproperty
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Updates properties on Autopilot devices.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementWindowsAutopilotDeviceIdentityDeviceProperty](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Update-MgDeviceManagementWindowsAutopilotDeviceIdentityDeviceProperty?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

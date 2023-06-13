@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/add-mgbetauserdrivelistcontenttypecopyfromcontenttypehub
@@ -12,6 +12,9 @@ Add or sync a copy of a published content type from the content type hub to a ta
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
 For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Add-MgUserDriveListContentTypeCopyFromContentTypeHub](/powershell/module/Microsoft.Graph.Users.Actions/Add-MgUserDriveListContentTypeCopyFromContentTypeHub?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

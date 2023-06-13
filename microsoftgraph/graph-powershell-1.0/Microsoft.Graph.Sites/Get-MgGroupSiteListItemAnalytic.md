@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelistitemanalytic
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Analytics about the view activities that took place on this item.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaGroupSiteListItemAnalytic](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListItemAnalytic?view=graph-powershell-beta)
 
 ## SYNTAX
 

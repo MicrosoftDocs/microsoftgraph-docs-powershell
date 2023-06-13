@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertransitivereport
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The transitive reports for a user.
 Read-only.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserTransitiveReport](/powershell/module/Microsoft.Graph.Users/Get-MgUserTransitiveReport?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

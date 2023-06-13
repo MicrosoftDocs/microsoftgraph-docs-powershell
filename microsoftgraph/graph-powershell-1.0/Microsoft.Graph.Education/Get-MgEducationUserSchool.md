@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserschool
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Schools to which the user belongs.
 Nullable.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaEducationUserSchool](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationUserSchool?view=graph-powershell-beta)
 
 ## SYNTAX
 

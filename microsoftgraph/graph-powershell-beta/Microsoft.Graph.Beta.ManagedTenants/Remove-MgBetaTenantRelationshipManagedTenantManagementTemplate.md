@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/remove-mgbetatenantrelationshipmanagedtenantmanagementtemplate
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property managementTemplates for tenantRelationships
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgTenantRelationshipManagedTenantManagementTemplate](/powershell/module/Microsoft.Graph.ManagedTenants/Remove-MgTenantRelationshipManagedTenantManagementTemplate?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

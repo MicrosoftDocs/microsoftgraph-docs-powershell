@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnectiongroupmember
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 A member added to an externalGroup.
 You can add Azure Active Directory users, Azure Active Directory groups, or an externalGroup as members.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaExternalConnectionGroupMember](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternalConnectionGroupMember?view=graph-powershell-beta)
 
 ## SYNTAX
 

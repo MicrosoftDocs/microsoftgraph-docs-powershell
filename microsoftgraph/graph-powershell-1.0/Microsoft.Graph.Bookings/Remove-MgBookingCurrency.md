@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgbookingcurrency
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property bookingCurrencies for solutions
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaBookingCurrency](/powershell/module/Microsoft.Graph.Beta.Bookings/Remove-MgBetaBookingCurrency?view=graph-powershell-beta)
 
 ## SYNTAX
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getByPath
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaGroupSiteByPath](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupSiteByPath?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

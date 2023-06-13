@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenoteresourcecontent
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The content stream
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaUserOnenoteResourceContent](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaUserOnenoteResourceContent?view=graph-powershell-beta)
 
 ## SYNTAX
 

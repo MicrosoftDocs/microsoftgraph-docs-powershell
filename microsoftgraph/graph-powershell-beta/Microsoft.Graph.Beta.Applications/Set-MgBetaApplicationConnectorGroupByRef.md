@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaapplicationconnectorgroupbyref
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Assign a connectorGroup to an application.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgApplicationConnectorGroupByRef](/powershell/module/Microsoft.Graph.Applications/Set-MgApplicationConnectorGroupByRef?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

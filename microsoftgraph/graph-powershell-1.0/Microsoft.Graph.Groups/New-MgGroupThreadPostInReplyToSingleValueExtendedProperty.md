@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to singleValueExtendedProperties for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBetaGroupThreadPostInReplyToSingleValueExtendedProperty](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupThreadPostInReplyToSingleValueExtendedProperty?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

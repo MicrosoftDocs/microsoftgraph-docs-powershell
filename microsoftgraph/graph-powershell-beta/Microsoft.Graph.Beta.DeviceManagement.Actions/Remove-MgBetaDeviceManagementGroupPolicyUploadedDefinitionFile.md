@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/remove-mgbetadevicemanagementgrouppolicyuploadeddefinitionfile
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke action remove
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceManagementGroupPolicyUploadedDefinitionFile](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Remove-MgDeviceManagementGroupPolicyUploadedDefinitionFile?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

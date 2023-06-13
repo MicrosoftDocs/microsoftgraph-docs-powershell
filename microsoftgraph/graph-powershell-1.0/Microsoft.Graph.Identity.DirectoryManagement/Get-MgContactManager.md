@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontactmanager
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get this organizational contact's manager.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaContactManager](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContactManager?view=graph-powershell-beta)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mguserscopedrolememberof
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get scopedRoleMemberOf from users
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaUserScopedRoleMemberOf](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaUserScopedRoleMemberOf?view=graph-powershell-beta)
 
 ## SYNTAX
 

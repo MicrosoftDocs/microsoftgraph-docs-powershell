@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/restore-mgsitelistitemversion
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Restore a previous version of a ListItem to be the current version.
 This will create a new version with the contents of the previous version, but preserves all existing versions of the item.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Restore-MgBetaBetaSiteListItemVersion](/powershell/module/Microsoft.Graph.Beta.Sites/Restore-MgBetaSiteListItemVersion?view=graph-powershell-beta)
 
 ## SYNTAX
 

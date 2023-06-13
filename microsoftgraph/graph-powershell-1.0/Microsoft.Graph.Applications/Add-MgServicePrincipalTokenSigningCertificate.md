@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/add-mgserviceprincipaltokensigningcertificate
@@ -16,6 +16,9 @@ It and the associated private key object have the same value of **keyId**.
 When set during creation through the **displayName** property, the subject of the certificate cannot be updated.
 The **startDateTime** is set to the same time the certificate is created using the action.
 The **endDateTime** can be up to three years after the certificate is created.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Add-MgBetaBetaServicePrincipalTokenSigningCertificate](/powershell/module/Microsoft.Graph.Beta.Applications/Add-MgBetaServicePrincipalTokenSigningCertificate?view=graph-powershell-beta)
 
 ## SYNTAX
 

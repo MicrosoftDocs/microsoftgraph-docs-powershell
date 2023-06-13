@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetausermanageddevicedetectedapp
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 All applications currently installed on the device
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserManagedDeviceDetectedApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgUserManagedDeviceDetectedApp?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

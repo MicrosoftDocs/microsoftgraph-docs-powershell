@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action checkGrantedPermissionsForApp
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Confirm-MgBetaBetaGroupGrantedPermissionForApp](/powershell/module/Microsoft.Graph.Beta.Groups/Confirm-MgBetaGroupGrantedPermissionForApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Check (Default)

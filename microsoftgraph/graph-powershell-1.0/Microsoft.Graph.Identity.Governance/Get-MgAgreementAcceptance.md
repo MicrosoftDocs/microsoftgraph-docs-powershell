@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgagreementacceptance
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Read-only.
 Information about acceptances of this agreement.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaAgreementAcceptance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaAgreementAcceptance?view=graph-powershell-beta)
 
 ## SYNTAX
 

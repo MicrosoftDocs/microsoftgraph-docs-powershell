@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property multiValueExtendedProperties in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserOutlookTaskFolderTaskMultiValueExtendedProperty](/powershell/module/Microsoft.Graph.Users/Update-MgUserOutlookTaskFolderTaskMultiValueExtendedProperty?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

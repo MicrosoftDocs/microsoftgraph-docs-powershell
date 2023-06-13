@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.CrossDeviceExperiences-help.xml
 Module Name: Microsoft.Graph.Beta.CrossDeviceExperiences
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/get-mgbetauserdeviceextension
@@ -11,6 +11,9 @@ schema: 2.0.0
 The collection of open extensions defined for the device.
 Read-only.
 Nullable.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDeviceExtension](/powershell/module/Microsoft.Graph.CrossDeviceExperiences/Get-MgUserDeviceExtension?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

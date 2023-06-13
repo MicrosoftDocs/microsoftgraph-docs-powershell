@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/reset-mgbetaaccessreviewinstancedecision
@@ -11,6 +11,9 @@ schema: 2.0.0
 In the Azure AD access reviews feature, reset the decisions of a currently active accessReview.
 The target object can be either a one-time access review, or an instance of a recurring access review.
 Previous decisions are no longer recorded, but reviewers can continue to update decisions.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Reset-MgAccessReviewInstanceDecision](/powershell/module/Microsoft.Graph.Identity.Governance/Reset-MgAccessReviewInstanceDecision?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

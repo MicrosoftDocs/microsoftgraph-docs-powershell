@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdeviceconfiguration
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get the configuration details of a Microsoft Teams-enabled device, including software versions, peripheral device configuration (for example, camera, display, microphone, and speaker), hardware configuration, and Microsoft Teams client configuration.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamworkDeviceConfiguration](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDeviceConfiguration?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

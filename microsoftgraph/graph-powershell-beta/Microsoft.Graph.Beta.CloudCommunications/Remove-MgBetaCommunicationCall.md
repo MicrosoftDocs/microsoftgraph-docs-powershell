@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetacommunicationcall
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete or hang up an active call.
 For group calls, this will only delete your call leg and the underlying group call will still continue.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/Remove-MgCommunicationCall?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

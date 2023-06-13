@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/new-mgplannerplan
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Use this API to create a new **plannerPlan**.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBetaPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/New-MgBetaPlannerPlan?view=graph-powershell-beta)
 
 ## SYNTAX
 

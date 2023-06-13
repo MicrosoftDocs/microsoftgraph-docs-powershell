@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.CrossDeviceExperiences-help.xml
 Module Name: Microsoft.Graph.Beta.CrossDeviceExperiences
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/new-mgbetauserdeviceregisteredownerbyref
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Add a user as a registered owner of the device.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserDeviceRegisteredOwnerByRef](/powershell/module/Microsoft.Graph.CrossDeviceExperiences/New-MgUserDeviceRegisteredOwnerByRef?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

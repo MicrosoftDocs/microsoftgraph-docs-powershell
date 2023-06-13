@@ -12,6 +12,9 @@ The collection of multi-value extended properties defined for the contactFolder.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserContactFolderMultiValueExtendedProperty](/powershell/module/Microsoft.Graph.PersonalContacts/Get-MgUserContactFolderMultiValueExtendedProperty?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

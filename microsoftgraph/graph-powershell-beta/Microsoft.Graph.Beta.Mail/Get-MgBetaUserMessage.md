@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermessage
@@ -11,6 +11,9 @@ schema: 2.0.0
 The messages in a mailbox or folder.
 Read-only.
 Nullable.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserMessage](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMessage?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

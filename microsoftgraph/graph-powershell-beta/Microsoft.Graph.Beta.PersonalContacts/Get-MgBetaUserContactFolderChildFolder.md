@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.Beta.PersonalContacts
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/get-mgbetausercontactfolderchildfolder
@@ -12,6 +12,9 @@ The collection of child folders in the folder.
 Navigation property.
 Read-only.
 Nullable.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserContactFolderChildFolder](/powershell/module/Microsoft.Graph.PersonalContacts/Get-MgUserContactFolderChildFolder?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

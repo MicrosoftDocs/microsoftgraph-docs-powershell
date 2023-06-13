@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetagroupdriverootversioncontent
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update content for the navigation property versions in groups
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgGroupDriveRootVersionContent](/powershell/module/Microsoft.Graph.Files/Set-MgGroupDriveRootVersionContent?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

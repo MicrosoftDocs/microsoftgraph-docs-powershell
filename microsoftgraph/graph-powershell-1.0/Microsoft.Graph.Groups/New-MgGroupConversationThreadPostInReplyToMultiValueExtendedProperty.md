@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to multiValueExtendedProperties for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBetaGroupConversationThreadPostInReplyToMultiValueExtendedProperty](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupConversationThreadPostInReplyToMultiValueExtendedProperty?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

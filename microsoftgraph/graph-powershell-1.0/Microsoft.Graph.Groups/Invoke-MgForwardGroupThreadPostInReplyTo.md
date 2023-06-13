@@ -11,6 +11,9 @@ schema: 2.0.0
 Forward a post to a recipient.
 You can specify both the parent conversation and thread in the request, nor, you can specify just the parent thread without the parent conversation.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaBetaForwardGroupThreadPostInReplyTo](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaForwardGroupThreadPostInReplyTo?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ForwardExpanded (Default)

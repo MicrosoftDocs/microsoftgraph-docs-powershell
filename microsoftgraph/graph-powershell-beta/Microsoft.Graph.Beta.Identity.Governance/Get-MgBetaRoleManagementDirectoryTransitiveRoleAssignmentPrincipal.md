@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagementdirectorytransitiveroleassignmentprincipal
@@ -12,6 +12,9 @@ The assigned principal.
 Provided so that callers can get the principal using $expand at the same time as getting the role assignment.
 Read-only.
 Supports $expand.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementDirectoryTransitiveRoleAssignmentPrincipal](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryTransitiveRoleAssignmentPrincipal?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

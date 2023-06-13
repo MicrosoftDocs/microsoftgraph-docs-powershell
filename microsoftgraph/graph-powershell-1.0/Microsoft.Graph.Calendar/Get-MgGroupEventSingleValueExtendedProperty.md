@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/get-mggroupeventsinglevalueextendedproperty
@@ -11,6 +11,9 @@ schema: 2.0.0
 The collection of single-value extended properties defined for the event.
 Read-only.
 Nullable.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaGroupEventSingleValueExtendedProperty](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaGroupEventSingleValueExtendedProperty?view=graph-powershell-beta)
 
 ## SYNTAX
 

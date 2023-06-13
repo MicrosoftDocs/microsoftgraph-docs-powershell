@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/search-mguserdriveitem
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function search
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Search-MgBetaBetaUserDriveItem](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Search-MgBetaUserDriveItem?view=graph-powershell-beta)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivelistcolumn
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The collection of field definitions for this list.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaDriveListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListColumn?view=graph-powershell-beta)
 
 ## SYNTAX
 

@@ -12,6 +12,9 @@ The collection of single-value extended properties defined for the contactFolder
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaUserContactFolderSingleValueExtendedProperty](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Get-MgBetaUserContactFolderSingleValueExtendedProperty?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

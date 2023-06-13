@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportshareduselicenseusagereport
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get a usage report on shared-use licenses, such as **servicePlanId**, **licenseCount**, and **claimedLicenseCount**, for real-time, 7 days, or 28 days trend.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementVirtualEndpointReportSharedUseLicenseUsageReport](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Get-MgDeviceManagementVirtualEndpointReportSharedUseLicenseUsageReport?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

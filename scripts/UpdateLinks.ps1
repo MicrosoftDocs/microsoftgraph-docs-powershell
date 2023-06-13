@@ -149,7 +149,7 @@ function Add-Link {
                 }
 
                 $Block = $Matches[0]
-                $Link = "> [!NOTE]`n> $LinkTitle[$CommandRename]($BaseUrl/$FullModuleName$View)`r`n`n## SYNTAX"
+                $Link = "> [!NOTE]`n> $LinkTitle [$CommandRename]($BaseUrl/$FullModuleName$View)`r`n`n## SYNTAX"
                 #$LinkOnEndOfDoc = "## RELATED LINKS`r`n[$LinkTitle]($BaseUrl/$FullModuleName$View&branch=pr-en-us-275)"
                 $NewBlock = $Block.Replace("## SYNTAX", $Link)
                 (Get-Content $File) | 

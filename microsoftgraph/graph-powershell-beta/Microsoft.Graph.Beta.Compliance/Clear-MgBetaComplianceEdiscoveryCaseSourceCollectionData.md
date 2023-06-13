@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/clear-mgbetacomplianceediscoverycasesourcecollectiondata
@@ -13,6 +13,9 @@ You can collect and purge the following categories of Teams content:\n- **Teams 
 Teams 1:1 chats are also called *conversations*.\n- **Teams group chats** - Chat messages, posts, and attachments shared in a Teams conversation between three or more people.
 Also called *1:N* chats or *group conversations*.\n- **Teams channels** - Chat messages, posts, replies, and attachments shared in a standard Teams channel.\n- **Private channels** - Message posts, replies, and attachments shared in a private Teams channel.\n- **Shared channels** - Message posts, replies, and attachments shared in a shared Teams channel.
 For more information about purging Teams messages, see:\n- eDiscovery solution series: Data spillage scenario - Search and purge\n- Advanced eDiscovery workflow for content in Microsoft Teams
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Clear-MgComplianceEdiscoveryCaseSourceCollectionData](/powershell/module/Microsoft.Graph.Compliance/Clear-MgComplianceEdiscoveryCaseSourceCollectionData?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

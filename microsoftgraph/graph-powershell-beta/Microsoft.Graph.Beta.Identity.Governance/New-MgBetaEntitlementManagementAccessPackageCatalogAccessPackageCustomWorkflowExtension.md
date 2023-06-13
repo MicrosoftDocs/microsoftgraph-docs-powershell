@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackagecatalogaccesspackagecustomworkflowextension
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to accessPackageCustomWorkflowExtensions for identityGovernance
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgEntitlementManagementAccessPackageCatalogAccessPackageCustomWorkflowExtension](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementAccessPackageCatalogAccessPackageCustomWorkflowExtension?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

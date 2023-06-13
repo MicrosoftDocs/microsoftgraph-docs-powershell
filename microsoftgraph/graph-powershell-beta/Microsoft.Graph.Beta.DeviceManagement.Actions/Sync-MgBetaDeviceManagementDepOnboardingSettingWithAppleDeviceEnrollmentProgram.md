@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/sync-mgbetadevicemanagementdeponboardingsettingwithappledeviceenrollmentprogram
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Synchronizes between Apple Device Enrollment Program and Intune
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Sync-MgDeviceManagementDepOnboardingSettingWithAppleDeviceEnrollmentProgram](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Sync-MgDeviceManagementDepOnboardingSettingWithAppleDeviceEnrollmentProgram?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

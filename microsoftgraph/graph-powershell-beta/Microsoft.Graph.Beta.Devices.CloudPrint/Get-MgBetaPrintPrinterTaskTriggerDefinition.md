@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintprintertasktriggerdefinition
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 An abstract definition that will be used to create a printTask when triggered by a print event.
 Read-only.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrintPrinterTaskTriggerDefinition](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintPrinterTaskTriggerDefinition?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

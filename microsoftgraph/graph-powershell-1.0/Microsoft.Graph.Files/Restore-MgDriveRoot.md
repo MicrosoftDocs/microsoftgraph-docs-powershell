@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/restore-mgdriveroot
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Restore a driveItem that has been deleted and is currently in the recycle bin.
 **NOTE**: This functionality is currently only available for OneDrive Personal.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Restore-MgBetaBetaDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Restore-MgBetaDriveRoot?view=graph-powershell-beta)
 
 ## SYNTAX
 

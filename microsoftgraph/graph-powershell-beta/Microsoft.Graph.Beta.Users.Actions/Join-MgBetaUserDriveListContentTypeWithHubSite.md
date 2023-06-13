@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/join-mgbetauserdrivelistcontenttypewithhubsite
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Associate a [content type][contentType] with a list of hub sites.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Join-MgUserDriveListContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Users.Actions/Join-MgUserDriveListContentTypeWithHubSite?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

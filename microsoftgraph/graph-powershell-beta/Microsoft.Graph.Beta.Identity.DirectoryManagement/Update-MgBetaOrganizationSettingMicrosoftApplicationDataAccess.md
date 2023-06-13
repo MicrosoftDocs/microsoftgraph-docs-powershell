@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaorganizationsettingmicrosoftapplicationdataaccess
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the settings in a microsoftApplicationDataAccessSettings object that specify access from Microsoft applications to Microsoft 365 user data in an organization.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgOrganizationSettingMicrosoftApplicationDataAccess](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgOrganizationSettingMicrosoftApplicationDataAccess?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

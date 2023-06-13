@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/reset-mgbetaidentitygovernanceaccessreviewdecisioninstancedecision
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Resets decisions of all accessReviewInstanceDecisionItem objects on an accessReviewInstance to `notReviewed`.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Reset-MgIdentityGovernanceAccessReviewDecisionInstanceDecision](/powershell/module/Microsoft.Graph.Identity.Governance/Reset-MgIdentityGovernanceAccessReviewDecisionInstanceDecision?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

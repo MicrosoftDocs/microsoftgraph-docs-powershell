@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/set-mgbetaeducationmeassignmentupresourcefolder
@@ -11,6 +11,9 @@ schema: 2.0.0
 Create a SharePoint folder to upload files for a given educationAssignment.
 Only teachers can perform this operation.
 The teacher determines the resources to upload in the assignment's folder.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgEducationMeAssignmentUpResourceFolder](/powershell/module/Microsoft.Graph.Education/Set-MgEducationMeAssignmentUpResourceFolder?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

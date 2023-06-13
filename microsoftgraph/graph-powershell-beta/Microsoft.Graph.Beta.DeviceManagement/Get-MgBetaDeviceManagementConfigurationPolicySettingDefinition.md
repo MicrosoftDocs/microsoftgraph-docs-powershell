@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementconfigurationpolicysettingdefinition
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 List of related Setting Definitions.
 This property is read-only.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementConfigurationPolicySettingDefinition](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementConfigurationPolicySettingDefinition?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

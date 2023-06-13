@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/remove-mgbetadevicemanagementgrouppolicyobjectfile
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property groupPolicyObjectFiles for deviceManagement
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceManagementGroupPolicyObjectFile](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Remove-MgDeviceManagementGroupPolicyObjectFile?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

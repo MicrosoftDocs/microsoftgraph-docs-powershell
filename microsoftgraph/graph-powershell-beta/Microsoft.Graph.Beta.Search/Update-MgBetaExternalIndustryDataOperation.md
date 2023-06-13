@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydataoperation
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property operations in external
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgExternalIndustryDataOperation](/powershell/module/Microsoft.Graph.Search/Update-MgExternalIndustryDataOperation?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

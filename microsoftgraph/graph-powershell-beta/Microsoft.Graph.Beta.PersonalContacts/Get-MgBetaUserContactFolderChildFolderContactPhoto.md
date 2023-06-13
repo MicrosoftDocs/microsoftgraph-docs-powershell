@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.Beta.PersonalContacts
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/get-mgbetausercontactfolderchildfoldercontactphoto
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Optional contact picture.
 You can get or set a photo for a contact.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserContactFolderChildFolderContactPhoto](/powershell/module/Microsoft.Graph.PersonalContacts/Get-MgUserContactFolderChildFolderContactPhoto?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

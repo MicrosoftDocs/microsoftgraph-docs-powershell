@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuserassignmentsubmission
@@ -19,6 +19,9 @@ Only teachers or applications with application permissions can add or change gra
 Students will not see the grade or feedback until the **assignment** has been released.
 Provide the header `Prefer: include-unknown-enum-members` to properly list **submissions** with the `reassigned` status.
 For details, see the examples section.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationUserAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUserAssignmentSubmission?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

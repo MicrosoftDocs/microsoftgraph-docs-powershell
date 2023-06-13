@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamprimarychannelmember
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the role of a conversationMember in a channel.
 This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgTeamPrimaryChannelMember](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamPrimaryChannelMember?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

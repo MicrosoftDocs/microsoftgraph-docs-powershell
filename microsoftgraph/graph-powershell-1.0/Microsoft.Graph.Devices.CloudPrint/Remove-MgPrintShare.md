@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/remove-mgprintshare
@@ -11,6 +11,9 @@ schema: 2.0.0
 Delete a printer share (unshare the associated printer).
 This action cannot be undone.
 If the printer is shared again in the future, any Windows users who had previously installed the printer will need to discover and reinstall it.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaPrintShare](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Remove-MgBetaPrintShare?view=graph-powershell-beta)
 
 ## SYNTAX
 

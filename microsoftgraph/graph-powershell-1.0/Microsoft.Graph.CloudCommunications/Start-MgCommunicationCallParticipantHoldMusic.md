@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/start-mgcommunicationcallparticipantholdmusic
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Put a participant on hold and play music in the background.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Start-MgBetaBetaCommunicationCallParticipantHoldMusic](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Start-MgBetaCommunicationCallParticipantHoldMusic?view=graph-powershell-beta)
 
 ## SYNTAX
 

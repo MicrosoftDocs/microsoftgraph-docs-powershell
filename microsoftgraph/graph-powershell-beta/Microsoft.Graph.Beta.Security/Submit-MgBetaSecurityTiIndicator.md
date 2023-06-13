@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/submit-mgbetasecuritytiindicator
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Upload multiple threat intelligence (TI) indicators in one request instead of multiple requests.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Submit-MgSecurityTiIndicator](/powershell/module/Microsoft.Graph.Security/Submit-MgSecurityTiIndicator?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

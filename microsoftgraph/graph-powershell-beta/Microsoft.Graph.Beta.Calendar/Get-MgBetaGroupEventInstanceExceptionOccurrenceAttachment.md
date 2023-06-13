@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupeventinstanceexceptionoccurrenceattachment
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Read the properties, relationships, or raw contents of an attachment that is attached to a user event, message, Outlook task, or group post.
 An attachment can be one of the following types: All these types of attachments are derived from the attachment resource.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupEventInstanceExceptionOccurrenceAttachment](/powershell/module/Microsoft.Graph.Calendar/Get-MgGroupEventInstanceExceptionOccurrenceAttachment?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

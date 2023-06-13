@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.mail/get-mgusermessagemultivalueextendedproperty
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The collection of multi-value extended properties defined for the message.
 Nullable.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaUserMessageMultiValueExtendedProperty](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMessageMultiValueExtendedProperty?view=graph-powershell-beta)
 
 ## SYNTAX
 

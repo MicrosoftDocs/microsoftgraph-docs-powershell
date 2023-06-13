@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermessagemention
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to mentions for users
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserMessageMention](/powershell/module/Microsoft.Graph.Mail/New-MgUserMessageMention?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The group's conversations.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaGroupConversation](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupConversation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

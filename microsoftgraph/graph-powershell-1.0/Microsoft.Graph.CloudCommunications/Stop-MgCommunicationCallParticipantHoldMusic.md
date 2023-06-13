@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/stop-mgcommunicationcallparticipantholdmusic
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Reincorporate a participant previously put on hold to the call.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Stop-MgBetaBetaCommunicationCallParticipantHoldMusic](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Stop-MgBetaCommunicationCallParticipantHoldMusic?view=graph-powershell-beta)
 
 ## SYNTAX
 

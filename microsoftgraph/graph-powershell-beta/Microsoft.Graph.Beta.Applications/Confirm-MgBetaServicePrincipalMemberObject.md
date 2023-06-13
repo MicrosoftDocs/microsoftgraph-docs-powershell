@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/confirm-mgbetaserviceprincipalmemberobject
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke action checkMemberObjects
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Confirm-MgServicePrincipalMemberObject](/powershell/module/Microsoft.Graph.Applications/Confirm-MgServicePrincipalMemberObject?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

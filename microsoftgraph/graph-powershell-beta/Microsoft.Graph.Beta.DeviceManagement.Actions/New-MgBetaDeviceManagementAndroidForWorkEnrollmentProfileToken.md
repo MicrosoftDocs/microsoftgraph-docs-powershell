@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/new-mgbetadevicemanagementandroidforworkenrollmentprofiletoken
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke action createToken
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementAndroidForWorkEnrollmentProfileToken](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/New-MgDeviceManagementAndroidForWorkEnrollmentProfileToken?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property quota in external
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgUpdatequotaExternalConnection](/powershell/module/Microsoft.Graph.Search/Invoke-MgUpdatequotaExternalConnection?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdatequotaExpanded (Default)

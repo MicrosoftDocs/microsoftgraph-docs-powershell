@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetarecordcommunicationcall
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke action record
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgRecordCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgRecordCommunicationCall?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

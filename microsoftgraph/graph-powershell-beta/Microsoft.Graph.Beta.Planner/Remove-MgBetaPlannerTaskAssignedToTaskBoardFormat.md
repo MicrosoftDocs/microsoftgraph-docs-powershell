@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/remove-mgbetaplannertaskassignedtotaskboardformat
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property assignedToTaskBoardFormat for planner
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgPlannerTaskAssignedToTaskBoardFormat](/powershell/module/Microsoft.Graph.Planner/Remove-MgPlannerTaskAssignedToTaskBoardFormat?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

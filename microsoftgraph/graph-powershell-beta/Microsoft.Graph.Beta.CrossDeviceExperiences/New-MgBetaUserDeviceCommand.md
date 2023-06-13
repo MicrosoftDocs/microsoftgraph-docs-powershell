@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.CrossDeviceExperiences-help.xml
 Module Name: Microsoft.Graph.Beta.CrossDeviceExperiences
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/new-mgbetauserdevicecommand
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to commands for users
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserDeviceCommand](/powershell/module/Microsoft.Graph.CrossDeviceExperiences/New-MgUserDeviceCommand?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

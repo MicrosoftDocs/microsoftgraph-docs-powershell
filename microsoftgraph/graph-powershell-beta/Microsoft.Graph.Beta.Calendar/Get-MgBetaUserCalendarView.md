@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendarview
@@ -11,6 +11,9 @@ schema: 2.0.0
 The calendar view for the calendar.
 Navigation property.
 Read-only.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserCalendarView](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserCalendarView?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

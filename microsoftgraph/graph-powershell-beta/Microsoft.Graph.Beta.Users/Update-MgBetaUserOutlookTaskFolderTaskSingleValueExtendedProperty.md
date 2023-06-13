@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property singleValueExtendedProperties in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserOutlookTaskFolderTaskSingleValueExtendedProperty](/powershell/module/Microsoft.Graph.Users/Update-MgUserOutlookTaskFolderTaskSingleValueExtendedProperty?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

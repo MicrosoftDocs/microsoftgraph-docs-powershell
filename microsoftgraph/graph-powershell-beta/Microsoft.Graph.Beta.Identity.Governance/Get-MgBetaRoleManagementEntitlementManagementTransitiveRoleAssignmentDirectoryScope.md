@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententitlementmanagementtransitiveroleassignmentdirectoryscope
@@ -12,6 +12,9 @@ The directory object that is the scope of the assignment.
 Provided so that callers can get the directory object using $expand at the same time as getting the role assignment.
 Read-only.
 Supports $expand.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentDirectoryScope](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentDirectoryScope?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

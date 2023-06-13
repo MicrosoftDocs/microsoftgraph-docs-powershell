@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementaccesspackage
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update an existing accessPackage object to change one or more of its properties, such as the display name or description.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaEntitlementManagementAccessPackage](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaEntitlementManagementAccessPackage?view=graph-powershell-beta)
 
 ## SYNTAX
 

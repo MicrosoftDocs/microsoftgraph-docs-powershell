@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/initialize-mgbetacomplianceediscoverycasecustodian
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Activate a custodian that has been released from a case to make them part of the case again.
 For details, see Manage custodians in an Advanced eDiscovery case.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Initialize-MgComplianceEdiscoveryCaseCustodian](/powershell/module/Microsoft.Graph.Compliance/Initialize-MgComplianceEdiscoveryCaseCustodian?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

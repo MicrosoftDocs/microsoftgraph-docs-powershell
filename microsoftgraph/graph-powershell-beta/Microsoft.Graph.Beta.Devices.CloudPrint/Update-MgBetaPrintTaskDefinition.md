@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprinttaskdefinition
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update a task definition.
 For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgPrintTaskDefinition](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Update-MgPrintTaskDefinition?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

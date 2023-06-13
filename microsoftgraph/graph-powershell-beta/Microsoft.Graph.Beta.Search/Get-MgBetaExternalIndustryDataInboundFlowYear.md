@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatainboundflowyear
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The year that the data brought in via this flow applies to.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgExternalIndustryDataInboundFlowYear](/powershell/module/Microsoft.Graph.Search/Get-MgExternalIndustryDataInboundFlowYear?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

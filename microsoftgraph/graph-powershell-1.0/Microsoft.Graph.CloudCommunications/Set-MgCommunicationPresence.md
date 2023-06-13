@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/set-mgcommunicationpresence
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Set the state of a user's presence session as an application.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaBetaCommunicationPresence](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Set-MgBetaCommunicationPresence?view=graph-powershell-beta)
 
 ## SYNTAX
 

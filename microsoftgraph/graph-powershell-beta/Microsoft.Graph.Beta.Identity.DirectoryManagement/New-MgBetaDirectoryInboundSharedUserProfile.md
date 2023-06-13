@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryinboundshareduserprofile
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to inboundSharedUserProfiles for directory
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDirectoryInboundSharedUserProfile](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryInboundSharedUserProfile?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

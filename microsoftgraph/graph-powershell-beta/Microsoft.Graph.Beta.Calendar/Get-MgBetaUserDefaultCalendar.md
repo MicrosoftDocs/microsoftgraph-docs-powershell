@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetauserdefaultcalendar
@@ -11,6 +11,9 @@ schema: 2.0.0
 Get the properties and relationships of a calendar object.
 The calendar can be one for a user, \nor the default calendar of a Microsoft 365 group.
 There are two scenarios where an app can get another user's calendar:
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDefaultCalendar](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserDefaultCalendar?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

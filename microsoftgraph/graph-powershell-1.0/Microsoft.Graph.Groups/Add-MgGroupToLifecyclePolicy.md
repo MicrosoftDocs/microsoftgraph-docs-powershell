@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action addGroup
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Add-MgBetaBetaGroupToLifecyclePolicy](/powershell/module/Microsoft.Graph.Beta.Groups/Add-MgBetaGroupToLifecyclePolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AddExpanded (Default)

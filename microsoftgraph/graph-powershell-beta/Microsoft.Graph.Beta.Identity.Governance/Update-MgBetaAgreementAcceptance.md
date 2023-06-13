@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaagreementacceptance
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property acceptances in agreements
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgAgreementAcceptance](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgAgreementAcceptance?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

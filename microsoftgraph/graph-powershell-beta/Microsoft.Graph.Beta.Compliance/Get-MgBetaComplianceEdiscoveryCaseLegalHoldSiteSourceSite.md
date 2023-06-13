@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycaselegalholdsitesourcesite
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The SharePoint site associated with the siteSource.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgComplianceEdiscoveryCaseLegalHoldSiteSourceSite](/powershell/module/Microsoft.Graph.Compliance/Get-MgComplianceEdiscoveryCaseLegalHoldSiteSourceSite?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

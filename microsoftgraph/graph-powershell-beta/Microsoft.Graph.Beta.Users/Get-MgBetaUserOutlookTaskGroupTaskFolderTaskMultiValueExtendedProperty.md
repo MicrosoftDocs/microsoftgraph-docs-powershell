@@ -12,6 +12,9 @@ The collection of multi-value extended properties defined for the task.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserOutlookTaskGroupTaskFolderTaskMultiValueExtendedProperty](/powershell/module/Microsoft.Graph.Users/Get-MgUserOutlookTaskGroupTaskFolderTaskMultiValueExtendedProperty?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

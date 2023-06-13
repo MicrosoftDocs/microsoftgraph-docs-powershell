@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/add-mgbetawindowsupdatesdeploymentaudienceexclusionmemberbyid
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Add members of the same type to an updatableAssetGroup.
 You can also use the method addMembers to add members.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Add-MgWindowsUpdatesDeploymentAudienceExclusionMemberById](/powershell/module/Microsoft.Graph.WindowsUpdates/Add-MgWindowsUpdatesDeploymentAudienceExclusionMemberById?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

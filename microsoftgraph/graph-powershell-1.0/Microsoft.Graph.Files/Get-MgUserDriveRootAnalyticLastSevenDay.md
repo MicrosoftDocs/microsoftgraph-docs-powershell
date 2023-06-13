@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootanalyticlastsevenday
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get lastSevenDays from users
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaUserDriveRootAnalyticLastSevenDay](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRootAnalyticLastSevenDay?view=graph-powershell-beta)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgsharelistcontenttypecolumn
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Remove a [column][columndefinition] from a [site][], a [list][], or a [content type][contentType].
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaShareListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaShareListContentTypeColumn?view=graph-powershell-beta)
 
 ## SYNTAX
 

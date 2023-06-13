@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingregionalandlanguagesetting
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update some or all of the properties of a regionalAndLanguageSettings object.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserSettingRegionalAndLanguageSetting](/powershell/module/Microsoft.Graph.Users/Update-MgUserSettingRegionalAndLanguageSetting?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

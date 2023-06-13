@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausereventinstanceexceptionoccurrencecalendar
@@ -11,6 +11,9 @@ schema: 2.0.0
 The calendar that contains the event.
 Navigation property.
 Read-only.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserEventInstanceExceptionOccurrenceCalendar](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserEventInstanceExceptionOccurrenceCalendar?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

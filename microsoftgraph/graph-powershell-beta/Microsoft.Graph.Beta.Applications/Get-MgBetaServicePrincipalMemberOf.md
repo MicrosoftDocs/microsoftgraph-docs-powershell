@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalmemberof
@@ -12,6 +12,9 @@ Roles that this service principal is a member of.
 HTTP Methods: GET Read-only.
 Nullable.
 Supports $expand.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalMemberOf](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalMemberOf?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

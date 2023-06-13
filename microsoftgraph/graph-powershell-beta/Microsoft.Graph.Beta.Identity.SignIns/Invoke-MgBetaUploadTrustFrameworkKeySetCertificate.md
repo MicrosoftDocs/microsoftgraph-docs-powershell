@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetauploadtrustframeworkkeysetcertificate
@@ -11,6 +11,9 @@ schema: 2.0.0
 Upload a certificate to a trustFrameworkKeyset.
 The input is a base-64 encoded value of the certificate contents.
 This method returns trustFrameworkKey.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgUploadTrustFrameworkKeySetCertificate](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgUploadTrustFrameworkKeySetCertificate?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

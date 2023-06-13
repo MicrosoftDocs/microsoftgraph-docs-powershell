@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/confirm-mgbetariskyusercompromised
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Confirm one or more riskyUser objects as compromised.
 This action sets the targeted user's risk level to high.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Confirm-MgRiskyUserCompromised](/powershell/module/Microsoft.Graph.Identity.SignIns/Confirm-MgRiskyUserCompromised?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

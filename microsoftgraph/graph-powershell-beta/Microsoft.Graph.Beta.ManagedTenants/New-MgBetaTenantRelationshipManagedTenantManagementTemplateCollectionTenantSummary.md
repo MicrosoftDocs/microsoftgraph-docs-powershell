@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantmanagementtemplatecollectiontenantsummary
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to managementTemplateCollectionTenantSummaries for tenantRelationships
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgTenantRelationshipManagedTenantManagementTemplateCollectionTenantSummary](/powershell/module/Microsoft.Graph.ManagedTenants/New-MgTenantRelationshipManagedTenantManagementTemplateCollectionTenantSummary?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

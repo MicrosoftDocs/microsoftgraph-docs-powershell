@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaprivilegedaccessrolesettingresource
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Read-only.
 The associated resource for this role setting.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrivilegedAccessRoleSettingResource](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgPrivilegedAccessRoleSettingResource?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

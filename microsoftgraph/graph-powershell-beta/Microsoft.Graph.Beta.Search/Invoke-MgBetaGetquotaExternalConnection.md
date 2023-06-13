@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get quota from external
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgGetquotaExternalConnection](/powershell/module/Microsoft.Graph.Search/Invoke-MgGetquotaExternalConnection?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Getquota (Default)

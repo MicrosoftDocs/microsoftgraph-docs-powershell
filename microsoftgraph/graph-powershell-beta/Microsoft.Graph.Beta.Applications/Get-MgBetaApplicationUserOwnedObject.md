@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationuserownedobject
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve a list of recently deleted application and group objects owned by the specified user.
 This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgApplicationUserOwnedObject](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationUserOwnedObject?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

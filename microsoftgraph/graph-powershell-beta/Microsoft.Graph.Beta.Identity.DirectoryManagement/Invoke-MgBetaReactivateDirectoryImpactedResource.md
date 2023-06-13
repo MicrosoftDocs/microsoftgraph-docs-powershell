@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetareactivatedirectoryimpactedresource
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke action reactivate
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgReactivateDirectoryImpactedResource](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Invoke-MgReactivateDirectoryImpactedResource?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

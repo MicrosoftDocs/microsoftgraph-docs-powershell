@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/confirm-mgbetauserchatpermissiongrantmembergroup
@@ -13,6 +13,9 @@ This function is transitive.
 You can check up to a maximum of 20 groups per request.
 This function supports all groups provisioned in Azure AD.
 Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Confirm-MgUserChatPermissionGrantMemberGroup](/powershell/module/Microsoft.Graph.Users.Actions/Confirm-MgUserChatPermissionGrantMemberGroup?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function sharedWithMe
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaBetaGraphGroupDrive](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaGraphGroupDrive?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Graph (Default)

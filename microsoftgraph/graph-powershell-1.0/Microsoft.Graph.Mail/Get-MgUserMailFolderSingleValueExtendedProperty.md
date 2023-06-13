@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.mail/get-mgusermailfoldersinglevalueextendedproperty
@@ -11,6 +11,9 @@ schema: 2.0.0
 The collection of single-value extended properties defined for the mailFolder.
 Read-only.
 Nullable.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaUserMailFolderSingleValueExtendedProperty](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMailFolderSingleValueExtendedProperty?view=graph-powershell-beta)
 
 ## SYNTAX
 

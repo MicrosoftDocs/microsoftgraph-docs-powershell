@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.PersonalContacts
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/update-mgusercontact
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the properties of a contact object.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaUserContact](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Update-MgBetaUserContact?view=graph-powershell-beta)
 
 ## SYNTAX
 

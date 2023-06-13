@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdrivelistdrive
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Only present on document libraries.
 Allows access to the list as a [drive][] resource with [driveItems][driveItem].
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupDriveListDrive](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveListDrive?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

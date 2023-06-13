@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/invoke-mgbetareopencomplianceediscoverycase
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Reopen an eDiscovery case that was closed.
 For details, see Reopen a closed case.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgReopenComplianceEdiscoveryCase](/powershell/module/Microsoft.Graph.Compliance/Invoke-MgReopenComplianceEdiscoveryCase?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

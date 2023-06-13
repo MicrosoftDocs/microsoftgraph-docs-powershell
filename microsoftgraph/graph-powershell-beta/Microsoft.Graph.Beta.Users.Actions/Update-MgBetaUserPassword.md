@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/update-mgbetauserpassword
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Enable the user to update their password.
 Any user can update their password without belonging to any administrator role.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserPassword](/powershell/module/Microsoft.Graph.Users.Actions/Update-MgUserPassword?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

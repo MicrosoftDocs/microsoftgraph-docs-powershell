@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassassignmentsubmissionresource
@@ -13,6 +13,9 @@ Only teachers and students can perform this operation.
 The operation will not succeed if the **allowStudentsToAddResources** flag is not set to `true`.
 To create a new file-based resource, upload the file to the resources folder associated with the submission.
 If the file doesn't exist or is not in that folder, the POST request will fail.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBetaEducationClassAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassAssignmentSubmissionResource?view=graph-powershell-beta)
 
 ## SYNTAX
 

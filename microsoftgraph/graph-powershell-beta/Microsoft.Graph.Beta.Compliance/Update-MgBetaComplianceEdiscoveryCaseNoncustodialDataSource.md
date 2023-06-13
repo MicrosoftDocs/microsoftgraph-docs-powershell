@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycasenoncustodialdatasource
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property noncustodialDataSources in compliance
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgComplianceEdiscoveryCaseNoncustodialDataSource](/powershell/module/Microsoft.Graph.Compliance/Update-MgComplianceEdiscoveryCaseNoncustodialDataSource?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

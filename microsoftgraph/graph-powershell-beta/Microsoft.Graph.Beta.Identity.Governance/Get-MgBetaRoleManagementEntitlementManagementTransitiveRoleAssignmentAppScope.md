@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententitlementmanagementtransitiveroleassignmentappscope
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Details of the app specific scope when the assignment scope is app specific.
 Containment entity.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentAppScope](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentAppScope?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

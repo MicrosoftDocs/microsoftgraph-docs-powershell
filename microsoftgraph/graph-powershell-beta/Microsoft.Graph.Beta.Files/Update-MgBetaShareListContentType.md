@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetasharelistcontenttype
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property contentTypes in shares
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgShareListContentType](/powershell/module/Microsoft.Graph.Files/Update-MgShareListContentType?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdriveitempermission
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of a sharing permission by patching the permission resource.
 Only the **roles** property can be modified this way.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaUserDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveItemPermission?view=graph-powershell-beta)
 
 ## SYNTAX
 

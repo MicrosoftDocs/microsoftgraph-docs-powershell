@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/confirm-mgbetagroupsiteinformationprotectionsignature
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke action verifySignature
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Confirm-MgGroupSiteInformationProtectionSignature](/powershell/module/Microsoft.Graph.Groups/Confirm-MgGroupSiteInformationProtectionSignature?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

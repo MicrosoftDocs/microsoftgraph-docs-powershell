@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabusinessscenarioplannertask
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the properties of a businessScenarioTask object.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgBusinessScenarioPlannerTask](/powershell/module/Microsoft.Graph.Bookings/Update-MgBusinessScenarioPlannerTask?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

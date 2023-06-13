@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabusinessscenarioplanner
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property planner for solutions
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgBusinessScenarioPlanner](/powershell/module/Microsoft.Graph.Bookings/Remove-MgBusinessScenarioPlanner?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

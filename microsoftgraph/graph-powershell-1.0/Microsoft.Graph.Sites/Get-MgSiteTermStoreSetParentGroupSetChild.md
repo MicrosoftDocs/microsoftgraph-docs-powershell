@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitetermstoresetparentgroupsetchild
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Children terms of set in term [store].
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaSiteTermStoreSetParentGroupSetChild](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteTermStoreSetParentGroupSetChild?view=graph-powershell-beta)
 
 ## SYNTAX
 

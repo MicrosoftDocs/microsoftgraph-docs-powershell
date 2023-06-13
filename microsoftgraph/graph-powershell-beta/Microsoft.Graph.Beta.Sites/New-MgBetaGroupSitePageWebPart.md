@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitepagewebpart
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to webParts for groups
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupSitePageWebPart](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSitePageWebPart?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

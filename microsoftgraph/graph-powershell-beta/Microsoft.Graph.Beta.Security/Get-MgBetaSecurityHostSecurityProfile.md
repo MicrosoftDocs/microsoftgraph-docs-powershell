@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityhostsecurityprofile
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get hostSecurityProfiles from security
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityHostSecurityProfile](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityHostSecurityProfile?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

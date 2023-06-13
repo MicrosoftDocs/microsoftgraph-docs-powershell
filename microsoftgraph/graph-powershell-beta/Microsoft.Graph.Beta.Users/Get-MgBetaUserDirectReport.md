@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserdirectreport
@@ -12,6 +12,9 @@ The users and contacts that report to the user.
 (The users and contacts that have their manager property set to this user.) Read-only.
 Nullable.
 Supports $expand.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDirectReport](/powershell/module/Microsoft.Graph.Users/Get-MgUserDirectReport?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

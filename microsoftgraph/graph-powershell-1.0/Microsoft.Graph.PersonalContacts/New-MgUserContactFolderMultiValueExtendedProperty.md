@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to multiValueExtendedProperties for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBetaUserContactFolderMultiValueExtendedProperty](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/New-MgBetaUserContactFolderMultiValueExtendedProperty?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

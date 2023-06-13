@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2cuserflowlanguagedefaultpage
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Collection of pages with the default content to display in a user flow for a specified language.
 This collection does not allow any kind of modification.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityB2CUserFlowLanguageDefaultPage](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2CUserFlowLanguageDefaultPage?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriverootuploadsession
@@ -11,6 +11,9 @@ schema: 2.0.0
 Create an upload session to allow your app to upload files up to the maximum file size.
 An upload session allows your app to upload ranges of the file in sequential API requests, which allows the transfer to be resumed if a connection is dropped while the upload is in progress.
 To upload a file using an upload session:
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDriveRootUploadSession](/powershell/module/Microsoft.Graph.Files/New-MgDriveRootUploadSession?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

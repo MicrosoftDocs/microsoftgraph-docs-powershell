@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/start-mgbetateamworkdevicediagnostic
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Run and generate diagnostic logs for the specified Microsoft Teams-enabled device.
 This API triggers a long-running operation used to generate logs for a device.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Start-MgTeamworkDeviceDiagnostic](/powershell/module/Microsoft.Graph.Teams/Start-MgTeamworkDeviceDiagnostic?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

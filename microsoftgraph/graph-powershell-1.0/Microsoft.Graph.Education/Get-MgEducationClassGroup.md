@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassgroup
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The underlying Microsoft 365 group object.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaEducationClassGroup](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassGroup?view=graph-powershell-beta)
 
 ## SYNTAX
 

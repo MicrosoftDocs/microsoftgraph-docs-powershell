@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/copy-mgbetausermailfolder
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Copy a mailfolder and its contents to another mailfolder.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Copy-MgUserMailFolderChildFolder](/powershell/module/Microsoft.Graph.Users.Actions/Copy-MgUserMailFolderChildFolder?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

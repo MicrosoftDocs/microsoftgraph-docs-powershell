@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update conversation thread
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaGroupThread](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroupThread?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

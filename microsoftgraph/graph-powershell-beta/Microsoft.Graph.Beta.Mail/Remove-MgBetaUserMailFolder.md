@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermailfolder
@@ -11,6 +11,9 @@ schema: 2.0.0
 Delete the specified mailFolder.
 The folder can be a mailSearchFolder.
 You can specify a mail folder by its folder ID, or by its well-known folder name, if one exists.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserMailFolder](/powershell/module/Microsoft.Graph.Mail/Remove-MgUserMailFolder?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdriveitemlistitem
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property listItem for drives
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaDriveItemListItem](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveItemListItem?view=graph-powershell-beta)
 
 ## SYNTAX
 

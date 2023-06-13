@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetahaveteamchannel
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function doesUserHaveAccess
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgHaveTeamChannel](/powershell/module/Microsoft.Graph.Teams/Invoke-MgHaveTeamChannel?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

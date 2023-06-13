@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaselfprivilegedroleassignmentrequestroleinfodeactivate
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke action selfDeactivate
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgSelfPrivilegedRoleAssignmentRequestRoleInfoDeactivate](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgSelfPrivilegedRoleAssignmentRequestRoleInfoDeactivate?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

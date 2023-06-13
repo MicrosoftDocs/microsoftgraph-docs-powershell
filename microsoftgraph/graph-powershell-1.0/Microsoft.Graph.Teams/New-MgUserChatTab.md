@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mguserchattab
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Add (pin) a tab to the specified chat.
 \nThe corresponding app must already be installed in the chat.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBetaUserChatTab](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaUserChatTab?view=graph-powershell-beta)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydatainboundflow
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the properties of an inboundFlow object.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgExternalIndustryDataInboundFlow](/powershell/module/Microsoft.Graph.Search/Update-MgExternalIndustryDataInboundFlow?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

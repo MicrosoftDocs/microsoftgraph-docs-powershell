@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausereventexceptionoccurrenceinstance
@@ -13,6 +13,9 @@ This property includes occurrences that are part of the recurrence pattern, and 
 Navigation property.
 Read-only.
 Nullable.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserEventExceptionOccurrenceInstance](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserEventExceptionOccurrenceInstance?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

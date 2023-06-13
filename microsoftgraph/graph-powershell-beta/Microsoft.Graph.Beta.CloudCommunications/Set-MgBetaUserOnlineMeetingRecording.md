@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/set-mgbetauseronlinemeetingrecording
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The content stream of the recording of a Teams live event.
 Read-only.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgUserOnlineMeetingRecording](/powershell/module/Microsoft.Graph.CloudCommunications/Set-MgUserOnlineMeetingRecording?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

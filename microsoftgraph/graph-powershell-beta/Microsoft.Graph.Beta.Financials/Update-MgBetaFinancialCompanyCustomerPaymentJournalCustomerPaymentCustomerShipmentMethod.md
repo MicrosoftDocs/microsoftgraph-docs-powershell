@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Financials-help.xml
 Module Name: Microsoft.Graph.Beta.Financials
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanycustomerpaymentjournalcustomerpaymentcustomershipmentmethod
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property shipmentMethod in financials
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgFinancialCompanyCustomerPaymentJournalCustomerPaymentCustomerShipmentMethod](/powershell/module/Microsoft.Graph.Financials/Update-MgFinancialCompanyCustomerPaymentJournalCustomerPaymentCustomerShipmentMethod?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

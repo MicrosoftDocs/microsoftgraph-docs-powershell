@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementgrouppolicyconfigurationdefinitionvaluepresentationvalue
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The associated group policy presentation values with the definition value.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValue](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValue?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

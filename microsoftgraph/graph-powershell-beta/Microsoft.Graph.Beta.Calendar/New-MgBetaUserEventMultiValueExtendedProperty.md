@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to multiValueExtendedProperties for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserEventMultiValueExtendedProperty](/powershell/module/Microsoft.Graph.Calendar/New-MgUserEventMultiValueExtendedProperty?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouppermissiongrantbyid
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupPermissionGrantById](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupPermissionGrantById?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamoperation
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to operations for teams
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBetaTeamOperation](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamOperation?view=graph-powershell-beta)
 
 ## SYNTAX
 

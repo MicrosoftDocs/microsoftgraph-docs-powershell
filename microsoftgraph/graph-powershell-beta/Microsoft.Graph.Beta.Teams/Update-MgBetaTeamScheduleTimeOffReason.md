@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduletimeoffreason
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Replace an existing timeOffReason.
 If the specified timeOffReason doesn't exist, this method returns `404 Not found`.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamScheduleTimeOffReason?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

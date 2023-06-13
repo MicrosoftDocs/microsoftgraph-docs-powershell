@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsecurity
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get security from reports
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaReportSecurity](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSecurity?view=graph-powershell-beta)
 
 ## SYNTAX
 

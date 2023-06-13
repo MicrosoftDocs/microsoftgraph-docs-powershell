@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodolisttasklinkedresource
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Read the properties and relationships of a linkedResource object.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserTodoListTaskLinkedResource](/powershell/module/Microsoft.Graph.Users/Get-MgUserTodoListTaskLinkedResource?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

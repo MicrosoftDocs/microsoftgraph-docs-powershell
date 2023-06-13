@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupsiteinformationprotectionpolicylabelremoval
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Indicate to the consuming application what actions it should take to remove the label information.
 Given contentInfo as an input, which includes existing content metadata key/value pairs, the API returns an informationProtectionAction that contains some combination of one of more of the following:
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Test-MgGroupSiteInformationProtectionPolicyLabelRemoval](/powershell/module/Microsoft.Graph.Groups/Test-MgGroupSiteInformationProtectionPolicyLabelRemoval?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

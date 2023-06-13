@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauseroutlooktaskattachment
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Use this API to add an attachment to an outlookTask.
 The attachment can be a file (of fileAttachment type) or Outlook item (itemAttachment type).
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserOutlookTaskAttachment](/powershell/module/Microsoft.Graph.Users/New-MgUserOutlookTaskAttachment?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

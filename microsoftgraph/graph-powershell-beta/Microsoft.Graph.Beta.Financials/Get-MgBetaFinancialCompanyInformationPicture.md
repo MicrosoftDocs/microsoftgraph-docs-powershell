@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Financials-help.xml
 Module Name: Microsoft.Graph.Beta.Financials
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanyinformationpicture
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get picture for the navigation property companyInformation from financials
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgFinancialCompanyInformationPicture](/powershell/module/Microsoft.Graph.Financials/Get-MgFinancialCompanyInformationPicture?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

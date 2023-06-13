@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/close-mgbetacomplianceediscoverycase
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Close an eDiscovery case.
 For details, see Close a case.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Close-MgComplianceEdiscoveryCase](/powershell/module/Microsoft.Graph.Compliance/Close-MgComplianceEdiscoveryCase?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

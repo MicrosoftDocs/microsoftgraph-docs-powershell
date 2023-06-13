@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getStatistics
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgGetstatisticExternalIndustryDataRun](/powershell/module/Microsoft.Graph.Search/Invoke-MgGetstatisticExternalIndustryDataRun?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Getstatistics1 (Default)

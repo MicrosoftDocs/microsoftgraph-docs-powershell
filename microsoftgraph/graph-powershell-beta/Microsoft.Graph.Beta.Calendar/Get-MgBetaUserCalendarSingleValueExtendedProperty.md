@@ -12,6 +12,9 @@ The collection of single-value extended properties defined for the calendar.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserCalendarSingleValueExtendedProperty](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserCalendarSingleValueExtendedProperty?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

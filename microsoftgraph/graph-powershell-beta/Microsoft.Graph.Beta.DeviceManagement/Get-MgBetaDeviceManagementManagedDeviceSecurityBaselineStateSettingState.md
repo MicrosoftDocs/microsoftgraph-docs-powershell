@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementmanageddevicesecuritybaselinestatesettingstate
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The security baseline state for different settings for a device
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementManagedDeviceSecurityBaselineStateSettingState](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementManagedDeviceSecurityBaselineStateSettingState?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

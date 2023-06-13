@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportmanageddeviceenrollmentabandonmentsummary
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Metadata for Enrollment abandonment summary report
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportManagedDeviceEnrollmentAbandonmentSummary](/powershell/module/Microsoft.Graph.Reports/Get-MgReportManagedDeviceEnrollmentAbandonmentSummary?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

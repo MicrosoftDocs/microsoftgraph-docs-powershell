@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsite
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The list of SharePoint sites in this group.
 Access the default site with /sites/root.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSite](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSite?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetagroupeventinstanceexceptionoccurrenceattachment
@@ -11,6 +11,9 @@ schema: 2.0.0
 Use this API to add an attachment to an existing event.
 This operation limits the size of the attachment you can add to under 3 MB.
 If an organizer adds an attachment to a meeting event, the organizer can subsequently update the event to send the attachment and update the event for each attendee as well.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupEventInstanceExceptionOccurrenceAttachment](/powershell/module/Microsoft.Graph.Calendar/New-MgGroupEventInstanceExceptionOccurrenceAttachment?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

@@ -11,6 +11,9 @@ schema: 2.0.0
 The direct and transitive members of a group.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaGroupTransitiveMember](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupTransitiveMember?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

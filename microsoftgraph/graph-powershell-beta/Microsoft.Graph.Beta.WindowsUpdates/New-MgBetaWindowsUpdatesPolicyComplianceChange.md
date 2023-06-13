@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/new-mgbetawindowsupdatespolicycompliancechange
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a new contentApproval object.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgWindowsUpdatesPolicyComplianceChange](/powershell/module/Microsoft.Graph.WindowsUpdates/New-MgWindowsUpdatesPolicyComplianceChange?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

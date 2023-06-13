@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetausereventinstanceexceptionoccurrenceextension
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property extensions for users
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserEventInstanceExceptionOccurrenceExtension](/powershell/module/Microsoft.Graph.Calendar/Remove-MgUserEventInstanceExceptionOccurrenceExtension?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

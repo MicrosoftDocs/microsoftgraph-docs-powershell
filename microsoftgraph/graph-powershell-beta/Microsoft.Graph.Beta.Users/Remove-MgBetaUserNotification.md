@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausernotification
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property notifications for users
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserNotification](/powershell/module/Microsoft.Graph.Users/Remove-MgUserNotification?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

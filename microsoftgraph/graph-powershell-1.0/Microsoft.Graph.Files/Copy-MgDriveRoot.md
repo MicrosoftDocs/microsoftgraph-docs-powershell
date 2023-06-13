@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/copy-mgdriveroot
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Copy-MgBetaBetaDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Copy-MgBetaDriveRoot?view=graph-powershell-beta)
 
 ## SYNTAX
 

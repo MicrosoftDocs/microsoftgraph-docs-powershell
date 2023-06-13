@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Financials-help.xml
 Module Name: Microsoft.Graph.Beta.Financials
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanycustomerpaymentjournalcustomerpaymentcustomercurrency
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property currency in financials
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgFinancialCompanyCustomerPaymentJournalCustomerPaymentCustomerCurrency](/powershell/module/Microsoft.Graph.Financials/Update-MgFinancialCompanyCustomerPaymentJournalCustomerPaymentCustomerCurrency?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

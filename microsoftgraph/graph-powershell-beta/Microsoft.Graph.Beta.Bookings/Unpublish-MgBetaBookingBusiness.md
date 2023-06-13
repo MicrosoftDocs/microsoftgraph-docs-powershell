@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/unpublish-mgbetabookingbusiness
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Make the scheduling page of this business not available to external customers.
 Set the **isPublished** property to false, and **publicUrl** property to null.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Unpublish-MgBookingBusiness](/powershell/module/Microsoft.Graph.Bookings/Unpublish-MgBookingBusiness?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

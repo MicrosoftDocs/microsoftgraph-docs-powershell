@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserperson
@@ -12,6 +12,9 @@ Read-only.
 The most relevant people to the user.
 The collection is ordered by their relevance to the user, which is determined by the user's communication, collaboration and business relationships.
 A person is an aggregation of information from across mail, contacts and social networks.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserPerson](/powershell/module/Microsoft.Graph.People/Get-MgUserPerson?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

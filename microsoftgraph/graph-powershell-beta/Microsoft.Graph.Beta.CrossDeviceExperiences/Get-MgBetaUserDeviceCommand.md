@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.CrossDeviceExperiences-help.xml
 Module Name: Microsoft.Graph.Beta.CrossDeviceExperiences
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/get-mgbetauserdevicecommand
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Set of commands sent to this device.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDeviceCommand](/powershell/module/Microsoft.Graph.CrossDeviceExperiences/Get-MgUserDeviceCommand?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

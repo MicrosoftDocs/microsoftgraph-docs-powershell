@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelistcontenttypebase
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Parent contentType from which this content type is derived.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaGroupSiteListContentTypeBase](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListContentTypeBase?view=graph-powershell-beta)
 
 ## SYNTAX
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action estimateStatistics
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgEstimatestatisticComplianceEdiscoveryCaseSourceCollection](/powershell/module/Microsoft.Graph.Compliance/Invoke-MgEstimatestatisticComplianceEdiscoveryCaseSourceCollection?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Estimatestatistics (Default)

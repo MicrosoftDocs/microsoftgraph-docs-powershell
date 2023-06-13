@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgagreement
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get entity from agreements by key
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaAgreement](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaAgreement?view=graph-powershell-beta)
 
 ## SYNTAX
 

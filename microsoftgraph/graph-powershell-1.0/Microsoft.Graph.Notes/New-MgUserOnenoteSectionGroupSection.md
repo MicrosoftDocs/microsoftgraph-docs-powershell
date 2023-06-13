@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mguseronenotesectiongroupsection
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a new onenoteSection in the specified section group.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBetaUserOnenoteSectionGroupSection](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaUserOnenoteSectionGroupSection?view=graph-powershell-beta)
 
 ## SYNTAX
 

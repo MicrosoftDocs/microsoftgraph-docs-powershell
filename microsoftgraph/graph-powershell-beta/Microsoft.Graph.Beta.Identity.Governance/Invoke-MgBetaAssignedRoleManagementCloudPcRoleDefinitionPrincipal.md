@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaassignedrolemanagementcloudpcroledefinitionprincipal
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function assignedPrincipals
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgAssignedRoleManagementCloudPcRoleDefinitionPrincipal](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgAssignedRoleManagementCloudPcRoleDefinitionPrincipal?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/ping-mgbetaserviceprincipalsynchronization
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function Ping
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Ping-MgServicePrincipalSynchronization](/powershell/module/Microsoft.Graph.Applications/Ping-MgServicePrincipalSynchronization?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

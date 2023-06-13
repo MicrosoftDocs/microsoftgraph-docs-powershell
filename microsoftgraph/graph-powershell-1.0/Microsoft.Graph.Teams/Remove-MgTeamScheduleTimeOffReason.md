@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamscheduletimeoffreason
@@ -12,6 +12,9 @@ Mark a timeOffReason as inactive by setting the **isActive** property.
 Every team must include at least one timeoff reason.
 This method does not remove the specified timeOffReason instance.
 timeOffItem instances that have been assigned this reason remain assigned to this reason.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamScheduleTimeOffReason?view=graph-powershell-beta)
 
 ## SYNTAX
 

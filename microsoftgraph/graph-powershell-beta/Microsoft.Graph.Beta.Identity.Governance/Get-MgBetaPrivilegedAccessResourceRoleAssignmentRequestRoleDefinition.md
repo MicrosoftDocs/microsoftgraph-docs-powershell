@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaprivilegedaccessresourceroleassignmentrequestroledefinition
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Read-only.
 The role definition that the request aims to.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrivilegedAccessResourceRoleAssignmentRequestRoleDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgPrivilegedAccessResourceRoleAssignmentRequestRoleDefinition?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

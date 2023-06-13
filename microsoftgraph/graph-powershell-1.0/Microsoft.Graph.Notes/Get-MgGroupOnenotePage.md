@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mggrouponenotepage
@@ -11,6 +11,9 @@ schema: 2.0.0
 The pages in all OneNote notebooks that are owned by the user or group.
 Read-only.
 Nullable.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaGroupOnenotePage](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaGroupOnenotePage?view=graph-powershell-beta)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationcreatedonbehalfof
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Supports $filter (/$count eq 0, /$count ne 0).
 Read-only.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgApplicationCreatedOnBehalfOf](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationCreatedOnBehalfOf?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

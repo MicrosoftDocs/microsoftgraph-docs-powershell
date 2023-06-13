@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/set-mgbetagroupphotocontent
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update media content for the navigation property photo in groups
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgGroupPhotoContent](/powershell/module/Microsoft.Graph.Groups/Set-MgGroupPhotoContent?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/copy-mgbetauserdrivelistcontenttypetodefaultcontentlocation
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Copy a file to a default content location in a [content type][contentType].
 The file can then be added as a default file or template via a POST operation.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Copy-MgUserDriveListContentTypeToDefaultContentLocation](/powershell/module/Microsoft.Graph.Users.Actions/Copy-MgUserDriveListContentTypeToDefaultContentLocation?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/set-mgbetausermailfolderchildfoldermessagecontent
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update media content for the navigation property messages in users
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgUserMailFolderChildFolderMessageContent](/powershell/module/Microsoft.Graph.Mail/Set-MgUserMailFolderChildFolderMessageContent?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

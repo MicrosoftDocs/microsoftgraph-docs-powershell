@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitedefaultdrive
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The default drive (document library) for this site.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaSiteDefaultDrive](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteDefaultDrive?view=graph-powershell-beta)
 
 ## SYNTAX
 

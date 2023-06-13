@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententitlementmanagementroleassignmentroledefinition
@@ -12,6 +12,9 @@ The roleDefinition the assignment is for.
 Provided so that callers can get the role definition using $expand at the same time as getting the role assignment.
 roleDefinition.id will be auto expanded.
 Supports $expand.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementEntitlementManagementRoleAssignmentRoleDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagementRoleAssignmentRoleDefinition?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

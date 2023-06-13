@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausermanageddevicenoncompliantsetting
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function getNonCompliantSettings
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserManagedDeviceNonCompliantSetting](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserManagedDeviceNonCompliantSetting?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveitemlistitem
@@ -11,6 +11,9 @@ schema: 2.0.0
 For drives in SharePoint, the associated document library list item.
 Read-only.
 Nullable.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDriveItemListItem](/powershell/module/Microsoft.Graph.Files/Get-MgDriveItemListItem?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

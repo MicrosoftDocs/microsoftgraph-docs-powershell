@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2xuserflowlanguage
@@ -11,6 +11,9 @@ schema: 2.0.0
 The languages supported for customization within the user flow.
 Language customization is enabled by default in self-service sign up user flow.
 You cannot create custom languages in self-service sign up user flows.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityB2XUserFlowLanguage](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2XUserFlowLanguage?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

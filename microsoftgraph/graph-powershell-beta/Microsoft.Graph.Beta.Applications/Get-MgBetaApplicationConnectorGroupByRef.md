@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationconnectorgroupbyref
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The connectorGroup the application is using with Azure AD Application Proxy.
 Nullable.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgApplicationConnectorGroupByRef](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationConnectorGroupByRef?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/restore-mgbetadriveitemlistitemversion
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke action restoreVersion
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Restore-MgDriveItemListItemVersion](/powershell/module/Microsoft.Graph.Files/Restore-MgDriveItemListItemVersion?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

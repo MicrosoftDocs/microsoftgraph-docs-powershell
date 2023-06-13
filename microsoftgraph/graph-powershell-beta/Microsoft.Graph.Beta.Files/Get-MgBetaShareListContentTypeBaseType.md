@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharelistcontenttypebasetype
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The collection of content types that are ancestors of this content type.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgShareListContentTypeBaseType](/powershell/module/Microsoft.Graph.Files/Get-MgShareListContentTypeBaseType?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

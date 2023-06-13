@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property multiValueExtendedProperties for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaGroupThreadPostMultiValueExtendedProperty](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupThreadPostMultiValueExtendedProperty?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauserphoto
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property photo in users
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserPhoto](/powershell/module/Microsoft.Graph.Users/Update-MgUserPhoto?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgusercalendargroupcalendar
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Use this API to create a new calendar in a calendar group for a user.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBetaUserCalendarGroupCalendar](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserCalendarGroupCalendar?view=graph-powershell-beta)
 
 ## SYNTAX
 

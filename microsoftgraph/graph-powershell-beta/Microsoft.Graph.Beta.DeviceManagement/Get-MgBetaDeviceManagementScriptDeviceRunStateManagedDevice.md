@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementscriptdevicerunstatemanageddevice
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The managed devices that executes the device management script.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementScriptDeviceRunStateManagedDevice](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementScriptDeviceRunStateManagedDevice?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

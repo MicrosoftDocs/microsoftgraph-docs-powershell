@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprivilegedrolesummary
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property summary in privilegedRoles
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgPrivilegedRoleSummary](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgPrivilegedRoleSummary?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

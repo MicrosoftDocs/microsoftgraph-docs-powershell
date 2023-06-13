@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Devices.ServiceAnnouncement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetamarkserviceannouncementmessageunread
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Mark a list of serviceUpdateMessages as **unread** for the signed in user.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgMarkServiceAnnouncementMessageUnread](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Invoke-MgMarkServiceAnnouncementMessageUnread?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

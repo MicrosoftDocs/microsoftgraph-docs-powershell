@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaaccessreviewinstancereviewer
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The collection of reviewers for an access review, if access review reviewerType is of type delegated.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgAccessReviewInstanceReviewer](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgAccessReviewInstanceReviewer?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

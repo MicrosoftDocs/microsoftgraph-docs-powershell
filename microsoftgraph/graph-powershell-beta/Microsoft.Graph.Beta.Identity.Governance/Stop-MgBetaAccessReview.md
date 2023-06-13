@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/stop-mgbetaaccessreview
@@ -12,6 +12,9 @@ In the Azure AD access reviews feature, stop a currently active accessReview.
 The target object can be either a one-time access review, or an instance of a recurring access review.
 (To prevent a recurring access review from starting future instances, update it to change its scheduled end date).
 After the access review stops, reviewers can no longer give input, and the access review decisions can be applied.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Stop-MgAccessReview](/powershell/module/Microsoft.Graph.Identity.Governance/Stop-MgAccessReview?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

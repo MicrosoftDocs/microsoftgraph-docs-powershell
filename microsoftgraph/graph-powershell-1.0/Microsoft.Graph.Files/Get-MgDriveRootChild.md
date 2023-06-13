@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriverootchild
@@ -12,6 +12,9 @@ Collection containing Item objects for the immediate children of Item.
 Only items representing folders have children.
 Read-only.
 Nullable.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaDriveRootChild](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRootChild?view=graph-powershell-beta)
 
 ## SYNTAX
 

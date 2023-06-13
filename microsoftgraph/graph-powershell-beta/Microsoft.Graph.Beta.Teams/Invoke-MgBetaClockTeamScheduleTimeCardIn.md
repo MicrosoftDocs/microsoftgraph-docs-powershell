@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaclockteamscheduletimecardin
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Clock in to start a timeCard.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgClockTeamScheduleTimeCardIn](/powershell/module/Microsoft.Graph.Teams/Invoke-MgClockTeamScheduleTimeCardIn?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

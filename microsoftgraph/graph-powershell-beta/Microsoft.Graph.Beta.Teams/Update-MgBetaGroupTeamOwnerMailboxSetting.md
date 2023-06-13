@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamownermailboxsetting
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update property mailboxSettings value.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupTeamOwnerMailboxSetting](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamOwnerMailboxSetting?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

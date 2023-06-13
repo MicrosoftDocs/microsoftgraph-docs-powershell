@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.mail/new-mgusermessagesinglevalueextendedproperty
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to singleValueExtendedProperties for users
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBetaUserMessageSingleValueExtendedProperty](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMessageSingleValueExtendedProperty?view=graph-powershell-beta)
 
 ## SYNTAX
 

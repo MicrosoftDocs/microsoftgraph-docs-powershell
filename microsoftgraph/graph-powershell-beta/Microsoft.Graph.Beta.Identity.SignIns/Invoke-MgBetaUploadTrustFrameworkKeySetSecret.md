@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetauploadtrustframeworkkeysetsecret
@@ -11,6 +11,9 @@ schema: 2.0.0
 Upload a plain text secret to a trustFrameworkKeyset.
 Examples of secrets are application secrets in Azure Active Directory, Google, Facebook, or any other identity provider.
 his method returns trustFrameworkKey.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgUploadTrustFrameworkKeySetSecret](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgUploadTrustFrameworkKeySetSecret?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

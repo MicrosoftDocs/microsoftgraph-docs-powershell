@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalsynchronizationaccesstoken
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Acquire an OAuth Access token to authorize the Azure AD provisioning service to provision users into an application.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalSynchronizationAccessToken](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalSynchronizationAccessToken?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

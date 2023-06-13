@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/sync-mgbetadeviceappmanagementvpptokenlicense
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Syncs licenses associated with a specific appleVolumePurchaseProgramToken
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Sync-MgDeviceAppManagementVppTokenLicense](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Sync-MgDeviceAppManagementVppTokenLicense?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportusercredentialusagedetail
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Represents the self-service password reset (SSPR) usage for a given tenant.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportUserCredentialUsageDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportUserCredentialUsageDetail?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

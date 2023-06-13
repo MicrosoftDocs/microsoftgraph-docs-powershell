@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/reset-mgsecuritycaseediscoverycasesettingtodefault
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Reset a caseSettings object to the default values.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Reset-MgBetaBetaSecurityCaseEdiscoveryCaseSettingToDefault](/powershell/module/Microsoft.Graph.Beta.Security/Reset-MgBetaSecurityCaseEdiscoveryCaseSettingToDefault?view=graph-powershell-beta)
 
 ## SYNTAX
 

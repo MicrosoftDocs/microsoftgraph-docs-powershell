@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/reset-mgbetaprintprinterdefault
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke action resetDefaults
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Reset-MgPrintPrinterDefault](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Reset-MgPrintPrinterDefault?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

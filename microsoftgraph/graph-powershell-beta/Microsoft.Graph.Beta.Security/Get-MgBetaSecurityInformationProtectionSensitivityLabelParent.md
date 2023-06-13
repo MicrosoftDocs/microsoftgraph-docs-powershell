@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityinformationprotectionsensitivitylabelparent
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The parent label associated with a child label.
 Null if the label has no parent.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityInformationProtectionSensitivityLabelParent](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityInformationProtectionSensitivityLabelParent?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

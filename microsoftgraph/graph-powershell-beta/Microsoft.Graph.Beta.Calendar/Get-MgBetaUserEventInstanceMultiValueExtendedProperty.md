@@ -12,6 +12,9 @@ The collection of multi-value extended properties defined for the event.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserEventInstanceMultiValueExtendedProperty](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserEventInstanceMultiValueExtendedProperty?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitetermstoresettermchildrelationtoterm
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The to [term] of the relation.
 The term to which the relationship is defined.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaSiteTermStoreSetTermChildRelationToTerm](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteTermStoreSetTermChildRelationToTerm?view=graph-powershell-beta)
 
 ## SYNTAX
 

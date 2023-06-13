@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mguseronlinemeeting
@@ -11,6 +11,9 @@ schema: 2.0.0
 Retrieve the properties and relationships of an onlineMeeting object.
 For example, you can: Teams live event attendee report is an online meeting artifact.
 For details, see Online meeting artifacts and permissions.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaUserOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaUserOnlineMeeting?view=graph-powershell-beta)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/confirm-mgbetachatpermissiongrantmemberobject
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke action checkMemberObjects
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Confirm-MgChatPermissionGrantMemberObject](/powershell/module/Microsoft.Graph.Teams/Confirm-MgChatPermissionGrantMemberObject?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

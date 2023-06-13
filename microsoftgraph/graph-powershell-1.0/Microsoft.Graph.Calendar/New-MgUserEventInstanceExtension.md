@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgusereventinstanceextension
@@ -12,6 +12,9 @@ Create an open extension (openTypeExtension object) and add custom properties in
 You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
 See known limitations of open extensions for more information.
 The table in the Permissions section lists the resources that support open extensions.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBetaUserEventInstanceExtension](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserEventInstanceExtension?view=graph-powershell-beta)
 
 ## SYNTAX
 

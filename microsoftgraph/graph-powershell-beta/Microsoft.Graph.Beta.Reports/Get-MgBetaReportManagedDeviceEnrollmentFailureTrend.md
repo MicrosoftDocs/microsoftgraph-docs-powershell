@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportmanageddeviceenrollmentfailuretrend
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Metadata for the enrollment failure trends report
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportManagedDeviceEnrollmentFailureTrend](/powershell/module/Microsoft.Graph.Reports/Get-MgReportManagedDeviceEnrollmentFailureTrend?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

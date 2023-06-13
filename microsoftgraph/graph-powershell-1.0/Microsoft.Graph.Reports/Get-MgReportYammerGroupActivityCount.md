@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportyammergroupactivitycount
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function getYammerGroupsActivityCounts
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaReportYammerGroupActivityCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportYammerGroupActivityCount?view=graph-powershell-beta)
 
 ## SYNTAX
 

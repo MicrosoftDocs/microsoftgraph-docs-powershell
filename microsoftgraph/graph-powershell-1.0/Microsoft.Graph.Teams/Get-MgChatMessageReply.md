@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatmessagereply
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Retrieve a single message or a message reply in a channel or a chat.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaChatMessageReply](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatMessageReply?view=graph-powershell-beta)
 
 ## SYNTAX
 

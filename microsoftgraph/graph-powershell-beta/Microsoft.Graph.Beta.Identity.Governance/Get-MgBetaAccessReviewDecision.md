@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaaccessreviewdecision
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The collection of decisions for this access review.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgAccessReviewDecision](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgAccessReviewDecision?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

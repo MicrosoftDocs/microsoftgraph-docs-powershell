@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Notes-help.xml
 Module Name: Microsoft.Graph.Beta.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetasiteonenotepage
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to pages for sites
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSiteOnenotePage](/powershell/module/Microsoft.Graph.Notes/New-MgSiteOnenotePage?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

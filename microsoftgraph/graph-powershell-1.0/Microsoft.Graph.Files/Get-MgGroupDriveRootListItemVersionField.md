@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriverootlistitemversionfield
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 A collection of the fields and values for this version of the list item.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaGroupDriveRootListItemVersionField](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootListItemVersionField?view=graph-powershell-beta)
 
 ## SYNTAX
 

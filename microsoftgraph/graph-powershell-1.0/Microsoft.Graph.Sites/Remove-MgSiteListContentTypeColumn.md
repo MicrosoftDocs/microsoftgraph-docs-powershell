@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitelistcontenttypecolumn
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Remove a [column][columndefinition] from a [site][], a [list][], or a [content type][contentType].
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaSiteListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteListContentTypeColumn?view=graph-powershell-beta)
 
 ## SYNTAX
 

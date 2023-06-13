@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/new-mgbetadevicemanagementdeponboardingsettingencryptionpublickey
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Generate a public key to use to encrypt the Apple device enrollment program token
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementDepOnboardingSettingEncryptionPublicKey](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/New-MgDeviceManagementDepOnboardingSettingEncryptionPublicKey?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharepermission
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Used to access the permission representing the underlying sharing link
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaSharePermission](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaSharePermission?view=graph-powershell-beta)
 
 ## SYNTAX
 

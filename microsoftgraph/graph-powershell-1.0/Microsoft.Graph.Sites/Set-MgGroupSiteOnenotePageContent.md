@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/set-mggroupsiteonenotepagecontent
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The page's HTML content.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaBetaGroupSiteOnenotePageContent](/powershell/module/Microsoft.Graph.Beta.Sites/Set-MgBetaGroupSiteOnenotePageContent?view=graph-powershell-beta)
 
 ## SYNTAX
 

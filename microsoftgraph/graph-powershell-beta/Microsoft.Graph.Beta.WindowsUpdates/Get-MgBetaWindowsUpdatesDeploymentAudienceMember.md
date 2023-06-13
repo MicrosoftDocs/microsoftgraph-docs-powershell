@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/get-mgbetawindowsupdatesdeploymentaudiencemember
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Specifies the assets to include in the audience.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgWindowsUpdatesDeploymentAudienceMember](/powershell/module/Microsoft.Graph.WindowsUpdates/Get-MgWindowsUpdatesDeploymentAudienceMember?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

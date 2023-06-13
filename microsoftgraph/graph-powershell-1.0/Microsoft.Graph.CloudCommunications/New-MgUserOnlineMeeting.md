@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mguseronlinemeeting
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create an online meeting on behalf of a user.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBetaUserOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaUserOnlineMeeting?view=graph-powershell-beta)
 
 ## SYNTAX
 

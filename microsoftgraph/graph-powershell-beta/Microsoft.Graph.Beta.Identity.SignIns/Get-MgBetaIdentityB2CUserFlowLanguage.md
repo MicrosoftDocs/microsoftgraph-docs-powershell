@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2cuserflowlanguage
@@ -13,6 +13,9 @@ These objects represent a language available in a user flow.
 **Note:** To retrieve a language supported for customization, you must first enable language customization on your Azure AD B2C user flow.
 For more information, see Update b2cIdentityUserFlow.
 Language customization is enabled by default in Azure Active Directory user flows.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityB2CUserFlowLanguage](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2CUserFlowLanguage?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

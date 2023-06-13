@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsiteinformationprotectionthreatassessmentrequest
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new threat assessment request.
 A threat assessment request can be one of the following types:
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupSiteInformationProtectionThreatAssessmentRequest](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteInformationProtectionThreatAssessmentRequest?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

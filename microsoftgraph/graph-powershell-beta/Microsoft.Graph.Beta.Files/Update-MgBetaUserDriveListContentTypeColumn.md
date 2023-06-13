@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdrivelistcontenttypecolumn
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update a [site][], [list][] or [content type][contentType] [column][columnDefinition].
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveListContentTypeColumn?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

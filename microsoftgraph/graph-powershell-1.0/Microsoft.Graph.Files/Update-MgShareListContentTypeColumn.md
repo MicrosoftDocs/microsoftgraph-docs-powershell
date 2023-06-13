@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgsharelistcontenttypecolumn
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property columns in shares
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaShareListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListContentTypeColumn?view=graph-powershell-beta)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/publish-mgbookingbusiness
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Make the scheduling page of a business available to external customers.
 Set the **isPublished** property to `true`, and the **publicUrl** property to the URL of the scheduling page.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Publish-MgBetaBetaBookingBusiness](/powershell/module/Microsoft.Graph.Beta.Bookings/Publish-MgBetaBookingBusiness?view=graph-powershell-beta)
 
 ## SYNTAX
 

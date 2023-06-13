@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/stop-mguserevent
@@ -13,6 +13,9 @@ The action moves the event to the Deleted Items folder.
 The organizer can also cancel an occurrence of a recurring meeting \nby providing the occurrence event ID.
 An attendee calling this action gets an error (HTTP 400 Bad Request), with the following\nerror message: 'Your request can't be completed.
 You need to be an organizer to cancel a meeting.' This action differs from Delete in that **Cancel** is available to only the organizer, and lets\nthe organizer send a custom message to the attendees about the cancellation.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Stop-MgBetaBetaUserEventInstance](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Stop-MgBetaUserEventInstance?view=graph-powershell-beta)
 
 ## SYNTAX
 

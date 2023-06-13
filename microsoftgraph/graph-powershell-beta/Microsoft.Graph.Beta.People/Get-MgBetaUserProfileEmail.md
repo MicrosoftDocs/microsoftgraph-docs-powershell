@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofileemail
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Retrieve the properties and relationships of an itemEmail object in a user's profile.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserProfileEmail](/powershell/module/Microsoft.Graph.People/Get-MgUserProfileEmail?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

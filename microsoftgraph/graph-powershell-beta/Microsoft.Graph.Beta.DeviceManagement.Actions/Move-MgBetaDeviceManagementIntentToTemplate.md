@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/move-mgbetadevicemanagementintenttotemplate
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke action migrateToTemplate
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Move-MgDeviceManagementIntentToTemplate](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Move-MgDeviceManagementIntentToTemplate?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

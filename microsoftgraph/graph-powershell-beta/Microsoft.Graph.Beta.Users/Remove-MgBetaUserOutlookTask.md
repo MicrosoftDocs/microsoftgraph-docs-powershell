@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauseroutlooktask
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete the specified Outlook task in the user's mailbox.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserOutlookTask](/powershell/module/Microsoft.Graph.Users/Remove-MgUserOutlookTask?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

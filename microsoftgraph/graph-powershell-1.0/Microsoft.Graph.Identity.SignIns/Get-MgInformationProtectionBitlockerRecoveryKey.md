@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mginformationprotectionbitlockerrecoverykey
@@ -13,6 +13,9 @@ By default, this operation does not return the **key** property that represents 
 To include the **key** property in the response, use the `$select` OData query parameter.
 Including the `$select` query parameter triggers an Azure AD audit of the operation and generates an audit log.
 For more information on audit logs for bitlocker recovery keys, see the KeyManagement category filter of Azure AD audit logs.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaInformationProtectionBitlockerRecoveryKey](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaInformationProtectionBitlockerRecoveryKey?view=graph-powershell-beta)
 
 ## SYNTAX
 

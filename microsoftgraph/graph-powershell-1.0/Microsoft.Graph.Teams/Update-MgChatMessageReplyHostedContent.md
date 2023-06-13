@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgchatmessagereplyhostedcontent
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property hostedContents in chats
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaChatMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaChatMessageReplyHostedContent?view=graph-powershell-beta)
 
 ## SYNTAX
 

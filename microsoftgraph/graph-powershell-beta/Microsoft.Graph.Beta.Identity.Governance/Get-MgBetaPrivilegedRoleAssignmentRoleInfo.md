@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaprivilegedroleassignmentroleinfo
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get roleInfo from privilegedRoleAssignments
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrivilegedRoleAssignmentRoleInfo](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgPrivilegedRoleAssignmentRoleInfo?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetainitiatedevicemanagementmanageddeviceondemandproactiveremediation
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Perform On Demand Proactive Remediation
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgInitiateDeviceManagementManagedDeviceOnDemandProactiveRemediation](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgInitiateDeviceManagementManagedDeviceOnDemandProactiveRemediation?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

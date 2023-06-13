@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamchannelsharedwithteam
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property sharedWithTeams in teams
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaTeamChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamChannelSharedWithTeam?view=graph-powershell-beta)
 
 ## SYNTAX
 

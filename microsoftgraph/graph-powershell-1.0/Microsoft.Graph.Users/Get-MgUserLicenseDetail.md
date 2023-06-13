@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserlicensedetail
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 A collection of this user's license details.
 Read-only.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaUserLicenseDetail](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserLicenseDetail?view=graph-powershell-beta)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationcallcontentsharingsession
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property contentSharingSessions in communications
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgCommunicationCallContentSharingSession](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgCommunicationCallContentSharingSession?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

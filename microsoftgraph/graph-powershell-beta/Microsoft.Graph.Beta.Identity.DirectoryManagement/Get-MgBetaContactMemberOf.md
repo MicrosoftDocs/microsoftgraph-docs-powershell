@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontactmemberof
@@ -12,6 +12,9 @@ Groups that this contact is a member of.
 Read-only.
 Nullable.
 Supports $expand.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgContactMemberOf](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgContactMemberOf?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

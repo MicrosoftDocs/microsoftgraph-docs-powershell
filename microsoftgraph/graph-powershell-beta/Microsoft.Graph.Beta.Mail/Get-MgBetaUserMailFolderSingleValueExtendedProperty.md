@@ -12,6 +12,9 @@ The collection of single-value extended properties defined for the mailFolder.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserMailFolderSingleValueExtendedProperty](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMailFolderSingleValueExtendedProperty?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

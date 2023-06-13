@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganizationbrandinglocalizationsquarelogo
@@ -11,6 +11,9 @@ schema: 2.0.0
 A square version of your company logo that appears in Windows 10 out-of-box experiences (OOBE) and when Windows Autopilot is enabled for deployment.
 Allowed types are PNG or JPEG no larger than 240 x 240 pixels and no more than 10 KB in size.
 We recommend using a transparent image with no padding around the logo.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaOrganizationBrandingLocalizationSquareLogo](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaOrganizationBrandingLocalizationSquareLogo?view=graph-powershell-beta)
 
 ## SYNTAX
 

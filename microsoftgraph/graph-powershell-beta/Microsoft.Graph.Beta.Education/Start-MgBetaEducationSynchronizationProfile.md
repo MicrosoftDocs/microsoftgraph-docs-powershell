@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/start-mgbetaeducationsynchronizationprofile
@@ -13,6 +13,9 @@ If the verification is successful, synchronization will start on the profile.
 Otherwise, the response will contain errors and warnings.
 If the response contains errors, the synchronization will not start.
 If the response contains only warnings, synchronization will start.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Start-MgEducationSynchronizationProfile](/powershell/module/Microsoft.Graph.Education/Start-MgEducationSynchronizationProfile?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

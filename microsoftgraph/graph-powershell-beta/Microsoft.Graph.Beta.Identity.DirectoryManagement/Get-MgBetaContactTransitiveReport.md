@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontacttransitivereport
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The transitive reports for a contact.
 Read-only.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgContactTransitiveReport](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgContactTransitiveReport?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

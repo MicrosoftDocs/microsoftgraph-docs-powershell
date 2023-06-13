@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/restore-mgprintprinterfactorydefault
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Restore a printer's default settings to the values specified by the manufacturer.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Restore-MgBetaBetaPrintPrinterFactoryDefault](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Restore-MgBetaPrintPrinterFactoryDefault?view=graph-powershell-beta)
 
 ## SYNTAX
 

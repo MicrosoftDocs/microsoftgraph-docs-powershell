@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermailfolderchildfoldermessageextension
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete an open extension (openTypeExtension object) from the specified instance of a resource.
 See the table in the Permissions section for the list of resources that support open extensions.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserMailFolderChildFolderMessageExtension](/powershell/module/Microsoft.Graph.Mail/Remove-MgUserMailFolderChildFolderMessageExtension?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

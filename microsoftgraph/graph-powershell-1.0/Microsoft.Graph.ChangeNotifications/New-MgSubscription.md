@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.ChangeNotifications-help.xml
 Module Name: Microsoft.Graph.ChangeNotifications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/new-mgsubscription
@@ -13,6 +13,9 @@ See the table in the Permissions section for the list of resources that support 
 Some resources support the option to include encrypted resource data in change notifications.
 These resources include chatMessage, contact, event, message, and presence.
 For more information, see Set up change notifications that include resource data and Change notifications for Outlook resources in Microsoft Graph.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBetaSubscription](/powershell/module/Microsoft.Graph.Beta.ChangeNotifications/New-MgBetaSubscription?view=graph-powershell-beta)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/invoke-mgbetagraphwindowsupdatespolicyaudiencemember
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke action unenrollAssetsById
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgGraphWindowsUpdatesPolicyAudienceMember](/powershell/module/Microsoft.Graph.WindowsUpdates/Invoke-MgGraphWindowsUpdatesPolicyAudienceMember?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

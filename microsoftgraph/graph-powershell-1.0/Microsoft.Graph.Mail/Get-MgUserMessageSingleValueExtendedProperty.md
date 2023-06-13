@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.mail/get-mgusermessagesinglevalueextendedproperty
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The collection of single-value extended properties defined for the message.
 Nullable.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaUserMessageSingleValueExtendedProperty](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMessageSingleValueExtendedProperty?view=graph-powershell-beta)
 
 ## SYNTAX
 

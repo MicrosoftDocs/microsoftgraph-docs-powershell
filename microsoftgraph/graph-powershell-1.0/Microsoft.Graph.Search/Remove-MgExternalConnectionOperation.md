@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgexternalconnectionoperation
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property operations for external
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaExternalConnectionOperation](/powershell/module/Microsoft.Graph.Beta.Search/Remove-MgBetaExternalConnectionOperation?view=graph-powershell-beta)
 
 ## SYNTAX
 

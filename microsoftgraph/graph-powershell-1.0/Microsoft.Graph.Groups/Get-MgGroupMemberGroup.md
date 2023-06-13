@@ -14,6 +14,9 @@ Nullable.
 Supports $expand including nested $select.
 For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=members($select=id,userPrincipalName,displayName).
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaGroupMemberGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupMemberGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemanalyticlastsevenday
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get lastSevenDays from drives
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaDriveItemAnalyticLastSevenDay](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItemAnalyticLastSevenDay?view=graph-powershell-beta)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/send-mgidentitygovernanceaccessreviewdefinitioninstancereminder
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Send a reminder to the reviewers of an active accessReviewInstance.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Send-MgBetaBetaIdentityGovernanceAccessReviewDefinitionInstanceReminder](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Send-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceReminder?view=graph-powershell-beta)
 
 ## SYNTAX
 

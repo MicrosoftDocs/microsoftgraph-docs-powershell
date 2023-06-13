@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsiteinformationprotectiondatalosspreventionpolicy
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property dataLossPreventionPolicies in groups
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupSiteInformationProtectionDataLossPreventionPolicy](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteInformationProtectionDataLossPreventionPolicy?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

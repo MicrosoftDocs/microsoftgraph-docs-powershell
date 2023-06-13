@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamscheduletimeoff
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Replace an existing timeOff.
 If the specified timeOff doesn't exist, this method returns `404 Not found`.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupTeamScheduleTimeOff](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamScheduleTimeOff?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdriveitemthumbnail
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to thumbnails for groups
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBetaGroupDriveItemThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveItemThumbnail?view=graph-powershell-beta)
 
 ## SYNTAX
 

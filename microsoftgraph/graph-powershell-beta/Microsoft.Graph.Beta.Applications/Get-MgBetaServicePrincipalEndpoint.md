@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalendpoint
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Endpoints available for discovery.
 Services like Sharepoint populate this property with a tenant specific SharePoint endpoints that other applications can discover and use in their experiences.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalEndpoint](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalEndpoint?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

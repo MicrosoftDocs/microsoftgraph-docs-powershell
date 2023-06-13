@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilephone
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete an itemPhone object from the user's profile.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserProfilePhone](/powershell/module/Microsoft.Graph.People/Remove-MgUserProfilePhone?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

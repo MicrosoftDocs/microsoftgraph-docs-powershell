@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclassmemberbyref
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Remove an educationUser from an educationClass.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgEducationClassMemberByRef](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationClassMemberByRef?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/search-mgdriveroot
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function search
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Search-MgBetaBetaDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Search-MgBetaDriveRoot?view=graph-powershell-beta)
 
 ## SYNTAX
 

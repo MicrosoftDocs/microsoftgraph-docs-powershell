@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetaextractinformationprotectionpolicylabel
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Using the metadata that exists on an already-labeled piece of information, resolve the metadata to a specific sensitivity label.
 The contentInfo input is resolved to informationProtectionContentLabel.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgExtractInformationProtectionPolicyLabel](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgExtractInformationProtectionPolicyLabel?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

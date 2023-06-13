@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetagroupapproleassignment
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Represents the app roles a group has been granted for an application.
 Supports $expand.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupAppRoleAssignment](/powershell/module/Microsoft.Graph.Applications/Get-MgGroupAppRoleAssignment?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

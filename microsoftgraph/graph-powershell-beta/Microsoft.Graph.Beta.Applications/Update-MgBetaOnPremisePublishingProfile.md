@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaonpremisepublishingprofile
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update entity in onPremisesPublishingProfiles
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgOnPremisePublishingProfile](/powershell/module/Microsoft.Graph.Applications/Update-MgOnPremisePublishingProfile?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

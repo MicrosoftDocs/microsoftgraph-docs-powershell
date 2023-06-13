@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/send-mgbetateamworkactivitynotificationtorecipient
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Send activity feed notifications to multiple users, in bulk.
 For more details about sending notifications and the requirements for doing so, see\nsending Teams activity notifications.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Send-MgTeamworkActivityNotificationToRecipient](/powershell/module/Microsoft.Graph.Teams/Send-MgTeamworkActivityNotificationToRecipient?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

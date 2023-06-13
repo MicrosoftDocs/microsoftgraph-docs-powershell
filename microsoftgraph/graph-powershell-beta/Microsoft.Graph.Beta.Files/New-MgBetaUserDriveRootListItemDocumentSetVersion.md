@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetauserdriverootlistitemdocumentsetversion
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a new version of a document set item in a list.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserDriveRootListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Files/New-MgUserDriveRootListItemDocumentSetVersion?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

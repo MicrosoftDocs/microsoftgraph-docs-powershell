@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/restart-mgbetausermanageddevicenow
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Reboot device
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Restart-MgUserManagedDeviceNow](/powershell/module/Microsoft.Graph.Users.Actions/Restart-MgUserManagedDeviceNow?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

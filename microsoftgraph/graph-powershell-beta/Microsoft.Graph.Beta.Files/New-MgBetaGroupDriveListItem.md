@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetagroupdrivelistitem
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a new [listItem][] in a [list][].
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupDriveListItem](/powershell/module/Microsoft.Graph.Files/New-MgGroupDriveListItem?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

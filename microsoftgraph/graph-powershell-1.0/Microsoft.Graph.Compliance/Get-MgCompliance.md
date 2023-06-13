@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Compliance-help.xml
 Module Name: Microsoft.Graph.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/get-mgcompliance
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get compliance
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaCompliance](/powershell/module/Microsoft.Graph.Beta.Compliance/Get-MgBetaCompliance?view=graph-powershell-beta)
 
 ## SYNTAX
 

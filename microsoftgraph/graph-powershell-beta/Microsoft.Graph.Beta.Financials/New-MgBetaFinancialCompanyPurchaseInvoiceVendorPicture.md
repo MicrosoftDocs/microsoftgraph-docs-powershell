@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Financials-help.xml
 Module Name: Microsoft.Graph.Beta.Financials
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/new-mgbetafinancialcompanypurchaseinvoicevendorpicture
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to picture for financials
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgFinancialCompanyPurchaseInvoiceVendorPicture](/powershell/module/Microsoft.Graph.Financials/New-MgFinancialCompanyPurchaseInvoiceVendorPicture?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

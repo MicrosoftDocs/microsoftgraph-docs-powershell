@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicypermissiongrantpolicyexclude
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Condition sets which are excluded in this permission grant policy.
 Automatically expanded on GET.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPolicyPermissionGrantPolicyExclude](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyPermissionGrantPolicyExclude?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

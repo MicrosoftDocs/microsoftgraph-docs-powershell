@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetainformationprotectionpolicylabel
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property labels for informationProtection
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgInformationProtectionPolicyLabel](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgInformationProtectionPolicyLabel?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

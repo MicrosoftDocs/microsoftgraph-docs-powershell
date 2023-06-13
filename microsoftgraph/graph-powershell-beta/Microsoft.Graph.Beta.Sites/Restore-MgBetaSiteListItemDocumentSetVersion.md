@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/restore-mgbetasitelistitemdocumentsetversion
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Restore a document set version.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Restore-MgSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Sites/Restore-MgSiteListItemDocumentSetVersion?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

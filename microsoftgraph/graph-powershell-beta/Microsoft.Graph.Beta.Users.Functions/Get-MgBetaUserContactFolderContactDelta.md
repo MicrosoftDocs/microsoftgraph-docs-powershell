@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausercontactfoldercontactdelta
@@ -11,6 +11,9 @@ schema: 2.0.0
 Get a set of contacts that have been added, deleted, or updated in a specified folder.
 A **delta** function call for contacts in a folder is similar to a GET request, except that by appropriately \napplying state tokens in one or more of these calls, \nyou can query for incremental changes in the contacts in \nthat folder.
 This allows you to maintain and synchronize a local store of a user's contacts without \nhaving to fetch the entire set of contacts from the server every time.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserContactFolderContactDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserContactFolderContactDelta?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

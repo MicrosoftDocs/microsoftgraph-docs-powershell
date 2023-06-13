@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetauserinformationprotectionsensitivitylabel
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property sensitivityLabels in users
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserInformationProtectionSensitivityLabel](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgUserInformationProtectionSensitivityLabel?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/complete-mgteamprimarychannelmigration
@@ -12,6 +12,9 @@ Complete the message migration process by removing `migration mode` from a chann
 `Migration mode` is a special state that prevents certain operations, like sending messages and adding members, during the data migration process.
 After a **completeMigration** request is made, you cannot import additional messages into the team.
 You can add members to the team after the request returns a successful response.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Complete-MgBetaBetaTeamPrimaryChannelMigration](/powershell/module/Microsoft.Graph.Beta.Teams/Complete-MgBetaTeamPrimaryChannelMigration?view=graph-powershell-beta)
 
 ## SYNTAX
 

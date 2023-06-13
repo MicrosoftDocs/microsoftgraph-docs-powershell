@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetaappcatalogteamappdefinitioncoloriconhostedcontent
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update media content for the navigation property hostedContent in appCatalogs
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgAppCatalogTeamAppDefinitionColorIconHostedContent](/powershell/module/Microsoft.Graph.Teams/Set-MgAppCatalogTeamAppDefinitionColorIconHostedContent?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

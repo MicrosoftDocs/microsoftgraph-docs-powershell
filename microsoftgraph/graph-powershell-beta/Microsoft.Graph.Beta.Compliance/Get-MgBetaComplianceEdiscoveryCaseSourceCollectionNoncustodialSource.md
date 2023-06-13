@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasesourcecollectionnoncustodialsource
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 noncustodialDataSource sources that are included in the sourceCollection
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgComplianceEdiscoveryCaseSourceCollectionNoncustodialSource](/powershell/module/Microsoft.Graph.Compliance/Get-MgComplianceEdiscoveryCaseSourceCollectionNoncustodialSource?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

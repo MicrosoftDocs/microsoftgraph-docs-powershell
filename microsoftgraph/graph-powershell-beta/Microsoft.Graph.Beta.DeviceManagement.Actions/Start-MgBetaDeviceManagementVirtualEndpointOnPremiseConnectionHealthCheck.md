@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/start-mgbetadevicemanagementvirtualendpointonpremiseconnectionhealthcheck
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Run health checks on the cloudPcOnPremisesConnection object.
 This will trigger a new health check for this cloudPcOnPremisesConnection object and change the healthCheckStatus and healthCheckStatusDetails properties when check finished.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Start-MgDeviceManagementVirtualEndpointOnPremiseConnectionHealthCheck](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Start-MgDeviceManagementVirtualEndpointOnPremiseConnectionHealthCheck?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

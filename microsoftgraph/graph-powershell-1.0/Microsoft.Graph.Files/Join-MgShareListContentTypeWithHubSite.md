@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/join-mgsharelistcontenttypewithhubsite
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Associate a published [content type][contentType] present in a content type hub with a list of hub sites.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Join-MgBetaBetaShareListContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Beta.Files/Join-MgBetaShareListContentTypeWithHubSite?view=graph-powershell-beta)
 
 ## SYNTAX
 

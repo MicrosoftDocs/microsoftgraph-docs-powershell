@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistsubscription
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The set of subscriptions on the list.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaSiteListSubscription](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteListSubscription?view=graph-powershell-beta)
 
 ## SYNTAX
 

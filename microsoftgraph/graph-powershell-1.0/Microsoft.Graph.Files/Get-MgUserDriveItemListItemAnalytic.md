@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriveitemlistitemanalytic
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Analytics about the view activities that took place on this item.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaUserDriveItemListItemAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItemListItemAnalytic?view=graph-powershell-beta)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgrolemanagementdirectoryroledefinition
@@ -11,6 +11,9 @@ schema: 2.0.0
 Update the properties of a unifiedRoleDefinition object.
 You cannot update built-in roles.
 This feature requires an Azure AD Premium P1 or P2 license.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaRoleManagementDirectoryRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaRoleManagementDirectoryRoleDefinition?view=graph-powershell-beta)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaorganizationsettingprofilecardproperty
@@ -11,6 +11,9 @@ schema: 2.0.0
 Create a new profileCardProperty for an organization.
 The new property is identified by its **directoryPropertyName** property.
 For more information on adding properties to the profile card for an organization, see customize the profile card.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgOrganizationSettingProfileCardProperty](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgOrganizationSettingProfileCardProperty?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

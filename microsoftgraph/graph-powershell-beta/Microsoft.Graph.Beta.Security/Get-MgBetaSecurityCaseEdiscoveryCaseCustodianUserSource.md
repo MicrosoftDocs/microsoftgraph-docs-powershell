@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycasecustodianusersource
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Data source entity for a custodian.
 This is the container for a custodian's mailbox and OneDrive for Business site.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityCaseEdiscoveryCaseCustodianUserSource](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseCustodianUserSource?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

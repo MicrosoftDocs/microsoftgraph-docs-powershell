@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassassignment
@@ -12,6 +12,9 @@ Update an educationAssignment object.
 Only teachers can perform this action.
 Alternatively, request to change the status of an **assignment** with publish action.
 Don't use a PATCH operation for this purpose.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationClassAssignment?view=graph-powershell-beta)
 
 ## SYNTAX
 

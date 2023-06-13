@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetausermanageddevicehealthscriptstate
@@ -11,6 +11,9 @@ schema: 2.0.0
 Results of device health scripts that ran for this device.
 Default is empty list.
 This property is read-only.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserManagedDeviceHealthScriptState](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgUserManagedDeviceHealthScriptState?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

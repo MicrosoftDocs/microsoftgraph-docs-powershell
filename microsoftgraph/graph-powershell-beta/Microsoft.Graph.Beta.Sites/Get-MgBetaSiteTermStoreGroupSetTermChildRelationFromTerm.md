@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoregroupsettermchildrelationfromterm
@@ -11,6 +11,9 @@ schema: 2.0.0
 The from [term] of the relation.
 The term from which the relationship is defined.
 A null value would indicate the relation is directly with the [set].
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteTermStoreGroupSetTermChildRelationFromTerm](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreGroupSetTermChildRelationFromTerm?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

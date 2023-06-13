@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/remove-mgbetawindowsupdatespolicyaudienceexclusion
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property exclusions for admin
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgWindowsUpdatesPolicyAudienceExclusion](/powershell/module/Microsoft.Graph.WindowsUpdates/Remove-MgWindowsUpdatesPolicyAudienceExclusion?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

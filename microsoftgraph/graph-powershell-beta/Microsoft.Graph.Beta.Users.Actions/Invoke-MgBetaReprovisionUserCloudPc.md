@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetareprovisionusercloudpc
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Reprovision a specific Cloud PC.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgReprovisionUserCloudPc](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgReprovisionUserCloudPc?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

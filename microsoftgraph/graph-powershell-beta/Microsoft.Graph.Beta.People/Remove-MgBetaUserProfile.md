@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofile
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Deletes a profile object from a user's account.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserProfile](/powershell/module/Microsoft.Graph.People/Remove-MgUserProfile?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

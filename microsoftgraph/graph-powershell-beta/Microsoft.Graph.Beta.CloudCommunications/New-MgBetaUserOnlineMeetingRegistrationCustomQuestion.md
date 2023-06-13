@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetauseronlinemeetingregistrationcustomquestion
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a custom registration question associated with a meetingRegistration object on behalf of the organizer.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserOnlineMeetingRegistrationCustomQuestion](/powershell/module/Microsoft.Graph.CloudCommunications/New-MgUserOnlineMeetingRegistrationCustomQuestion?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

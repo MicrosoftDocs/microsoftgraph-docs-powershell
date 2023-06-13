@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitelistcolumn
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a column for a [list][list] with a request that specifies a [columnDefinition][columnDefinition].
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBetaGroupSiteListColumn](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteListColumn?view=graph-powershell-beta)
 
 ## SYNTAX
 

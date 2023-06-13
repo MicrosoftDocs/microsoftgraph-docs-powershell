@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementadvancedthreatprotectiononboardingstatesummary
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The summary state of ATP onboarding state for this account.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummary](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummary?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

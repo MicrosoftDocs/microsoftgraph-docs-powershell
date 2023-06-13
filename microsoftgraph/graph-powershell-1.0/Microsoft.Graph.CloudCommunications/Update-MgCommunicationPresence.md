@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationpresence
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property presences in communications
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaCommunicationPresence](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Update-MgBetaCommunicationPresence?view=graph-powershell-beta)
 
 ## SYNTAX
 

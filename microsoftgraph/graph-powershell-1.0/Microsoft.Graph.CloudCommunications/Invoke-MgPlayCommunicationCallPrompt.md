@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgplaycommunicationcallprompt
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Play a prompt in the call.
 For more information about how to handle operations, see commsOperation
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaBetaPlayCommunicationCallPrompt](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaPlayCommunicationCallPrompt?view=graph-powershell-beta)
 
 ## SYNTAX
 

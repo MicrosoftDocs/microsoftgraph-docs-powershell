@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property multiValueExtendedProperties for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserEventInstanceMultiValueExtendedProperty](/powershell/module/Microsoft.Graph.Calendar/Remove-MgUserEventInstanceMultiValueExtendedProperty?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

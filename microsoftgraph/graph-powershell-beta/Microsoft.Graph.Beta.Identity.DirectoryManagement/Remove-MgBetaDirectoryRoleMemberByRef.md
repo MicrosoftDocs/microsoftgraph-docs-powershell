@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectoryrolememberbyref
@@ -12,6 +12,9 @@ Remove a member from a directoryRole.
 You can use both the object ID and template ID of the **directoryRole** with this API.
 The template ID of a built-in role is immutable and can be seen in the role description on the Azure portal.
 For details, see Role template IDs.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDirectoryRoleMemberByRef](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDirectoryRoleMemberByRef?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

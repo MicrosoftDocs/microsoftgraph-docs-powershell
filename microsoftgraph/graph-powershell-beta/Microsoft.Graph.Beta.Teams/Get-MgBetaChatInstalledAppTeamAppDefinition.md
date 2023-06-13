@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatinstalledappteamappdefinition
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The details of this version of the app.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgChatInstalledAppTeamAppDefinition](/powershell/module/Microsoft.Graph.Teams/Get-MgChatInstalledAppTeamAppDefinition?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupproperty
@@ -14,6 +14,9 @@ For validating properties before creating a group, use the validateProperties fu
 The following validations are performed for the display name and mail nickname properties: This API returns with the first failure encountered.
 If one or more properties fail multiple validations, only the property with the first validation failure is returned.
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Test-MgGroupProperty](/powershell/module/Microsoft.Graph.Groups/Test-MgGroupProperty?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

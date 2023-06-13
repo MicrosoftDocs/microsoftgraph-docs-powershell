@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/resume-mgbetaeducationsynchronizationprofile
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Resume the sync of a specific school data synchronization profile in the tenant.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Resume-MgEducationSynchronizationProfile](/powershell/module/Microsoft.Graph.Education/Resume-MgEducationSynchronizationProfile?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

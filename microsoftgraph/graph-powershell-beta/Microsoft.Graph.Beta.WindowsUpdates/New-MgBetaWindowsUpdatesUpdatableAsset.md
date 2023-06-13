@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/new-mgbetawindowsupdatesupdatableasset
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new updatableAssetGroup object.
 The **updatableAssetGroup** resource inherits from updatableAsset.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgWindowsUpdatesUpdatableAsset](/powershell/module/Microsoft.Graph.WindowsUpdates/New-MgWindowsUpdatesUpdatableAsset?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

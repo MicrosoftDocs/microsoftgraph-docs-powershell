@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/start-mgbetausercloudpc
@@ -12,6 +12,9 @@ Power on a Windows 365 Frontline Cloud PC.
 This action supports Microsoft Endpoint Manager (MEM) admin scenarios.
 After a Windows 365 Frontline Cloud PC is powered on, it is allocated to a user, and licenses are assigned immediately.
 Only IT admin users can perform this action.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Start-MgUserCloudPc](/powershell/module/Microsoft.Graph.Users.Actions/Start-MgUserCloudPc?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

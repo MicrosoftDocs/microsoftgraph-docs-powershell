@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportcredentialuserregistrationcount
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Report the current state of how many users in your organization are registered for self-service password reset and multi-factor authentication (MFA) capabilities.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportCredentialUserRegistrationCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportCredentialUserRegistrationCount?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

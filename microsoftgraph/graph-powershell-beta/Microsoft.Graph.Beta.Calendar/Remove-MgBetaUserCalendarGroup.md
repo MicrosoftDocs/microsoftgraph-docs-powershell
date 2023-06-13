@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetausercalendargroup
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete a calendar group other than the default calendar group.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserCalendarGroup](/powershell/module/Microsoft.Graph.Calendar/Remove-MgUserCalendarGroup?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

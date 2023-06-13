@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/undo-mgbetachatmessagesoftdelete
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Undo soft deletion of a single chatMessage or a chat message reply in a channel or a chat.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Undo-MgChatMessageSoftDelete](/powershell/module/Microsoft.Graph.Teams/Undo-MgChatMessageSoftDelete?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/stop-mgbetarolemanagementdirectoryroleeligibilityschedulerequest
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Immediately cancel a unifiedRoleEligibilityScheduleRequest that is in a `Granted` status, and have the system automatically delete the cancelled request after 30 days.
 After calling this action, the **status** of the cancelled unifiedRoleEligibilityScheduleRequest changes to `Revoked`.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Stop-MgRoleManagementDirectoryRoleEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Stop-MgRoleManagementDirectoryRoleEligibilityScheduleRequest?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamprimarychannelmessage
@@ -15,6 +15,9 @@ Updating works only for chats where conversation members are Microsoft Teams use
 If one of the members is using Skype, the operation fails.
 This method does not support federation.
 Only the user in the tenant who sent the message can perform data loss prevention (DLP) updates on the specified chat message.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupTeamPrimaryChannelMessage](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamPrimaryChannelMessage?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

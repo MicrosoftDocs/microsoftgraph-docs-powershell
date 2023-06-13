@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportskypeforbusinessdeviceusageuserdetail
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function getSkypeForBusinessDeviceUsageUserDetail
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaReportSkypeForBusinessDeviceUsageUserDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSkypeForBusinessDeviceUsageUserDetail?view=graph-powershell-beta)
 
 ## SYNTAX
 

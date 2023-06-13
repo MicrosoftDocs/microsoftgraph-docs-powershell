@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/rename-mgcommunicationcallscreensharingrole
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Allow applications to share screen content with the participants of a group call.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Rename-MgBetaBetaCommunicationCallScreenSharingRole](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Rename-MgBetaCommunicationCallScreenSharingRole?view=graph-powershell-beta)
 
 ## SYNTAX
 

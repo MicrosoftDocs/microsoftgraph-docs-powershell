@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/import-mgbetadevicemanagementtemplatemigratabletooffice365deviceconfigurationpolicy
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke action importOffice365DeviceConfigurationPolicies
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Import-MgDeviceManagementTemplateMigratableToOffice365DeviceConfigurationPolicy](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Import-MgDeviceManagementTemplateMigratableToOffice365DeviceConfigurationPolicy?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/stop-mgbetadevicemanagementvirtualendpointcloudpcgraceperiod
@@ -12,6 +12,9 @@ End the grace period for a specific Cloud PC.
 The grace period is triggered when the Cloud PC license is removed or the provisioning policy is unassigned.
 It allows users to access Cloud PCs for up to seven days before de-provisioning occurs.
 Ending the grace period immediately deprovisions the Cloud PC without waiting the seven days.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Stop-MgDeviceManagementVirtualEndpointCloudPcGracePeriod](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Stop-MgDeviceManagementVirtualEndpointCloudPcGracePeriod?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

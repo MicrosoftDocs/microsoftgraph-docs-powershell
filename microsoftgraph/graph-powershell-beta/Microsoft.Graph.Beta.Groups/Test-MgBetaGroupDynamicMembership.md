@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupdynamicmembership
@@ -11,6 +11,9 @@ schema: 2.0.0
 Evaluate whether a user or device is or would be a member of a dynamic group.
 The membership rule is returned along with other details that were used in the evaluation.
 You can complete this operation in the following ways:
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Test-MgGroupDynamicMembership](/powershell/module/Microsoft.Graph.Groups/Test-MgGroupDynamicMembership?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

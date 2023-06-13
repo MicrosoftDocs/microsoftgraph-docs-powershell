@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/send-mgbetaaccessreviewinstancereminder
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 In the Azure AD access reviews feature, send a reminder to the reviewers of a currently active accessReview.
 The target object can be either a one-time access review, or an instance of a recurring access review.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Send-MgAccessReviewInstanceReminder](/powershell/module/Microsoft.Graph.Identity.Governance/Send-MgAccessReviewInstanceReminder?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

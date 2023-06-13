@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetatrustframeworkkeyset
@@ -11,6 +11,9 @@ schema: 2.0.0
 Create a new trustFrameworkKeySet.
 The ID of the **trustFrameworkKeySet** is expected in the create request; however, it can be modified by the service.
 The modified ID will be available in the response and in the location header.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgTrustFrameworkKeySet](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgTrustFrameworkKeySet?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

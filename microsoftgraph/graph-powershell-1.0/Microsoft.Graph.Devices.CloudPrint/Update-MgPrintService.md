@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintservice
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property services in print
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaPrintService](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgBetaPrintService?view=graph-powershell-beta)
 
 ## SYNTAX
 

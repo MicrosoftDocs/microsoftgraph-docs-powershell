@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetatroubleshootdevicemanagementvirtualendpointcloudpc
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Troubleshoot a specific Cloud PC.
 Use this API to check the health status of the Cloud PC and the session host.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgTroubleshootDeviceManagementVirtualEndpointCloudPc](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgTroubleshootDeviceManagementVirtualEndpointCloudPc?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

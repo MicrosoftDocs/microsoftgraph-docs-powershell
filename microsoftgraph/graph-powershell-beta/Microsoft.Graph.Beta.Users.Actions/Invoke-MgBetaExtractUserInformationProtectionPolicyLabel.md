@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaextractuserinformationprotectionpolicylabel
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Using the metadata that exists on an already-labeled piece of information, resolve the metadata to a specific sensitivity label.
 The contentInfo input is resolved to informationProtectionContentLabel.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgExtractUserInformationProtectionPolicyLabel](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgExtractUserInformationProtectionPolicyLabel?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

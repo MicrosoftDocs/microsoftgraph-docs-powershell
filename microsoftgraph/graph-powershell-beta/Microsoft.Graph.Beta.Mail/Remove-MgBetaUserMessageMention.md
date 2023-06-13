@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermessagemention
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a message in the specified user's mailbox, or delete a relationship of the message.
 For example, you can delete a specific @-mention of the specified user in the message.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserMessageMention](/powershell/module/Microsoft.Graph.Mail/Remove-MgUserMessageMention?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

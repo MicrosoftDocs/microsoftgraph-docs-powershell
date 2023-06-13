@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgagreementfileversion
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Read-only.
 Customized versions of the terms of use agreement in the Azure AD tenant.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaAgreementFileVersion](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaAgreementFileVersion?view=graph-powershell-beta)
 
 ## SYNTAX
 

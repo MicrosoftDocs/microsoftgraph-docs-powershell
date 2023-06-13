@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/export-mgbetadevicemanagementdeponboardingsettingenrollmentprofilemobileconfig
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Exports the mobile configuration
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Export-MgDeviceManagementDepOnboardingSettingEnrollmentProfileMobileConfig](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Export-MgDeviceManagementDepOnboardingSettingEnrollmentProfileMobileConfig?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouptransitivemember
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The direct and transitive members of a group.
 Nullable.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupTransitiveMember](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupTransitiveMember?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

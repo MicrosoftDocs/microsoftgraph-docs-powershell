@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityb2cuserflowlanguage
@@ -11,6 +11,9 @@ schema: 2.0.0
 This method is used to create or update a custom language in an Azure AD B2C user flow.
 **Note:** You must enable language customization in the Azure AD B2C user flow before you can create a custom language.
 For more information, see Update b2cIdentityUserFlow.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgIdentityB2CUserFlowLanguage](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityB2CUserFlowLanguage?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

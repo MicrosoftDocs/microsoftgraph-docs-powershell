@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroup
@@ -13,6 +13,9 @@ You can create one of the following groups: This operation returns by default on
 These default properties are noted in the Properties section.
 To get properties that are _not_ returned by default, do a GET operation and specify the properties in a `$select` OData query option.
 **Note**: To create a team, first create a group then add a team to it, see create team.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroup](/powershell/module/Microsoft.Graph.Groups/New-MgGroup?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

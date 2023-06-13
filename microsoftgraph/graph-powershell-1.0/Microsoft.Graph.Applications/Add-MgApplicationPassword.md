@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/add-mgapplicationpassword
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Adds a strong password or secret to an application.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Add-MgBetaBetaApplicationPassword](/powershell/module/Microsoft.Graph.Beta.Applications/Add-MgBetaApplicationPassword?view=graph-powershell-beta)
 
 ## SYNTAX
 

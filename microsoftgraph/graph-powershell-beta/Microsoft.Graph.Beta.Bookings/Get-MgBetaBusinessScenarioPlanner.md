@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabusinessscenarioplanner
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Read the properties and relationships of a businessScenarioPlanner object.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgBusinessScenarioPlanner](/powershell/module/Microsoft.Graph.Bookings/Get-MgBusinessScenarioPlanner?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

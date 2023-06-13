@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.CrossDeviceExperiences-help.xml
 Module Name: Microsoft.Graph.Beta.CrossDeviceExperiences
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/remove-mgbetauserdeviceextension
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property extensions for users
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserDeviceExtension](/powershell/module/Microsoft.Graph.CrossDeviceExperiences/Remove-MgUserDeviceExtension?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

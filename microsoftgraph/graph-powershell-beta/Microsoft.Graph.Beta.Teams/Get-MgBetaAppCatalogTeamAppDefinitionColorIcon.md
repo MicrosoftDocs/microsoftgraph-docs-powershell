@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaappcatalogteamappdefinitioncoloricon
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Retrieve a Teams app icon associated with a specific definition of an app.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgAppCatalogTeamAppDefinitionColorIcon](/powershell/module/Microsoft.Graph.Teams/Get-MgAppCatalogTeamAppDefinitionColorIcon?view=graph-powershell-v1.0)
 
 ## SYNTAX
 

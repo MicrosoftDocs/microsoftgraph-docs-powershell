@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/stop-mgcommunicationcallmediaprocessing
@@ -13,6 +13,9 @@ Media operations refer to the IVR operations playPrompt and recordResponse, whic
 The **cancelMediaProcessing** method cancels any operation that is in-process as well as operations that are queued.
 For example, this method can be used to clean up the IVR operation queue for a new media operation.
 However, it will not cancel a **subscribeToTone** operation because it operates independent of any operation queue.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Stop-MgBetaBetaCommunicationCallMediaProcessing](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Stop-MgBetaCommunicationCallMediaProcessing?view=graph-powershell-beta)
 
 ## SYNTAX
 

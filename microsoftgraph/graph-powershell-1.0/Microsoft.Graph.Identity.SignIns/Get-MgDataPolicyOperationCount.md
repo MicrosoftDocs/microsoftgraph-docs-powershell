@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgdatapolicyoperationcount
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get the number of the resource
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaDataPolicyOperationCount](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaDataPolicyOperationCount?view=graph-powershell-beta)
 
 ## SYNTAX
 

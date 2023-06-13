@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantcredentialuserregistrationsummary
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to credentialUserRegistrationsSummaries for tenantRelationships
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgTenantRelationshipManagedTenantCredentialUserRegistrationSummary](/powershell/module/Microsoft.Graph.ManagedTenants/New-MgTenantRelationshipManagedTenantCredentialUserRegistrationSummary?view=graph-powershell-v1.0)
 
 ## SYNTAX
 
