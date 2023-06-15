@@ -796,5 +796,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Value <String>]`: A property value.
 
 ## RELATED LINKS
+[Update-MgGroupConversationThreadPost](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupConversationThreadPost?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgGroupConversationThreadPost](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupConversationThreadPost?view=graph-powershell-v1.0)

@@ -204,3 +204,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Undo-MgBetaBetaUserChatMessageSoftDelete](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Undo-MgBetaUserChatMessageSoftDelete?view=graph-powershell-beta)

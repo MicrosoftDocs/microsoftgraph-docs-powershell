@@ -675,5 +675,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
+[Update-MgDeviceAppManagementMobileAppUserStatusDeviceStatus](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementMobileAppUserStatusDeviceStatus?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgDeviceAppManagementMobileAppUserStatusDeviceStatus](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementMobileAppUserStatusDeviceStatus?view=graph-powershell-v1.0)

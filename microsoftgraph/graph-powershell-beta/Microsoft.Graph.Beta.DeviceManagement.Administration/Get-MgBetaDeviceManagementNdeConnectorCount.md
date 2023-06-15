@@ -79,3 +79,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgDeviceManagementNdeConnectorCount](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementNdeConnectorCount?view=graph-powershell-v1.0)

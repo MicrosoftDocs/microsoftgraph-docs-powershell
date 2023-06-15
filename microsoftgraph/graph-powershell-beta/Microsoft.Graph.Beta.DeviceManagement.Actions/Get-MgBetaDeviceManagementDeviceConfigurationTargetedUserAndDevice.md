@@ -149,3 +149,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[DeviceConfigurationIds <String[]>]`: 
 
 ## RELATED LINKS
+[Get-MgDeviceManagementDeviceConfigurationTargetedUserAndDevice](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Get-MgDeviceManagementDeviceConfigurationTargetedUserAndDevice?view=graph-powershell-v1.0)

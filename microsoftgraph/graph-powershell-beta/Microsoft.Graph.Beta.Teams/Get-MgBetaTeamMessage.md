@@ -159,3 +159,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgTeamMessage](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamMessage?view=graph-powershell-v1.0)

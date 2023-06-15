@@ -144,3 +144,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaBetaUserCalendarPermissionCount](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserCalendarPermissionCount?view=graph-powershell-beta)

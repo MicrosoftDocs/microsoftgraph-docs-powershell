@@ -307,3 +307,4 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaBetaUserMailFolderChildFolderSingleValueExtendedProperty](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMailFolderChildFolderSingleValueExtendedProperty?view=graph-powershell-beta)

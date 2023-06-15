@@ -311,3 +311,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String>]`: Type of the setting. Read-only.
 
 ## RELATED LINKS
+[Update-MgDirectorySettingTemplate](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectorySettingTemplate?view=graph-powershell-v1.0)

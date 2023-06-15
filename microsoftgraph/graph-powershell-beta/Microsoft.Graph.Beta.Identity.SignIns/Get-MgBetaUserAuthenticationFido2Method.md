@@ -346,3 +346,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Get-MgUserAuthenticationFido2Method](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgUserAuthenticationFido2Method?view=graph-powershell-v1.0)

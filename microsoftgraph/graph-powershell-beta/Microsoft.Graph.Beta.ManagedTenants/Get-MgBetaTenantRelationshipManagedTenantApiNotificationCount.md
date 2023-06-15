@@ -80,3 +80,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgTenantRelationshipManagedTenantApiNotificationCount](/powershell/module/Microsoft.Graph.ManagedTenants/Get-MgTenantRelationshipManagedTenantApiNotificationCount?view=graph-powershell-v1.0)

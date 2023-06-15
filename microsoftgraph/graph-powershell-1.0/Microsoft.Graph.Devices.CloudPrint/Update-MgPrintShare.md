@@ -11328,5 +11328,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[State <String>]`: printerProcessingState
 
 ## RELATED LINKS
+[Update-MgBetaBetaPrintShare](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgBetaPrintShare?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaBetaPrintShare](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgBetaPrintShare?view=graph-powershell-beta)

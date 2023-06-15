@@ -84,3 +84,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Disconnect-MgDeviceManagementChromeOSOnboardingSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Disconnect-MgDeviceManagementChromeOSOnboardingSetting?view=graph-powershell-v1.0)

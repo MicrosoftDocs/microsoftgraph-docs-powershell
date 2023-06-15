@@ -221,3 +221,4 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[New-MgBetaBetaUserContactMultiValueExtendedProperty](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/New-MgBetaUserContactMultiValueExtendedProperty?view=graph-powershell-beta)

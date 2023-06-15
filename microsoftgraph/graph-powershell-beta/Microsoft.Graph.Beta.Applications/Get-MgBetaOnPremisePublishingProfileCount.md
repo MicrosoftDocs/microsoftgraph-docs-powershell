@@ -79,3 +79,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgOnPremisePublishingProfileCount](/powershell/module/Microsoft.Graph.Applications/Get-MgOnPremisePublishingProfileCount?view=graph-powershell-v1.0)

@@ -181,3 +181,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[DisplayName <String>]`: The name of the program control type
 
 ## RELATED LINKS
+[New-MgProgramControlType](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgProgramControlType?view=graph-powershell-v1.0)

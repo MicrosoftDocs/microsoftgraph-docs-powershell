@@ -240,3 +240,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[New-MgGroupOnenoteNotebookSection](/powershell/module/Microsoft.Graph.Notes/New-MgGroupOnenoteNotebookSection?view=graph-powershell-v1.0)

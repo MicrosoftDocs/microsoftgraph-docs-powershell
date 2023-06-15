@@ -156,3 +156,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgBetaBetaGroupTeamOperationCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamOperationCount?view=graph-powershell-beta)

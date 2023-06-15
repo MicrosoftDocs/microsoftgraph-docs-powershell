@@ -307,3 +307,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat.
 
 ## RELATED LINKS
+[Add-MgTeamPrimaryChannelMember](/powershell/module/Microsoft.Graph.Teams/Add-MgTeamPrimaryChannelMember?view=graph-powershell-v1.0)

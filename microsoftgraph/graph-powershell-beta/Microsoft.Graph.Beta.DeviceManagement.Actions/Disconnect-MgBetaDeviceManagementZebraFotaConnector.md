@@ -84,3 +84,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Disconnect-MgDeviceManagementZebraFotaConnector](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Disconnect-MgDeviceManagementZebraFotaConnector?view=graph-powershell-v1.0)

@@ -191,6 +191,7 @@ INPUTOBJECT \<IPeopleIdentity\>: Identity Parameter
   \[WorkPositionId \<String\>\]: The unique identifier of workPosition
 
 ## RELATED LINKS
+[Remove-MgUserAnalyticActivitystatistic](/powershell/module/Microsoft.Graph.People/Remove-MgUserAnalyticActivitystatistic?view=graph-powershell-v1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauseranalyticactivitystatistic](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauseranalyticactivitystatistic)
 

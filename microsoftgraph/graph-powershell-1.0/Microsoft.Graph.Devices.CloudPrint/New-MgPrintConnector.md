@@ -277,3 +277,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Subunit <String[]>]`: 
 
 ## RELATED LINKS
+[New-MgBetaBetaPrintConnector](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintConnector?view=graph-powershell-beta)

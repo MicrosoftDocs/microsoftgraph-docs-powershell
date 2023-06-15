@@ -114,3 +114,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Remove-MgSecurityCase](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityCase?view=graph-powershell-v1.0)

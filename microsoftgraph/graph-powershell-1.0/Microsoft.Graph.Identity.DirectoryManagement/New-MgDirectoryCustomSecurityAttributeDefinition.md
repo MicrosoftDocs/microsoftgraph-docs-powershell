@@ -298,3 +298,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UsePreDefinedValuesOnly <Boolean?>]`: 
 
 ## RELATED LINKS
+[New-MgBetaBetaDirectoryCustomSecurityAttributeDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryCustomSecurityAttributeDefinition?view=graph-powershell-beta)

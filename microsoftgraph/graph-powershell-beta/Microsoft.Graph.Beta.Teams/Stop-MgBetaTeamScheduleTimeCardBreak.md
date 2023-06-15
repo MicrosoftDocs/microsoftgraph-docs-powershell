@@ -273,3 +273,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ContentType <String>]`: bodyType
 
 ## RELATED LINKS
+[Stop-MgTeamScheduleTimeCardBreak](/powershell/module/Microsoft.Graph.Teams/Stop-MgTeamScheduleTimeCardBreak?view=graph-powershell-v1.0)

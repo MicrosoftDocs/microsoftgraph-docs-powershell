@@ -114,3 +114,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Remove-MgBetaBetaEducationMe](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationMe?view=graph-powershell-beta)

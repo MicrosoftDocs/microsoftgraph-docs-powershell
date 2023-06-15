@@ -415,3 +415,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ResultType <String>]`: threatAssessmentResultType
 
 ## RELATED LINKS
+[Update-MgBetaBetaInformationProtectionThreatAssessmentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaInformationProtectionThreatAssessmentRequest?view=graph-powershell-beta)

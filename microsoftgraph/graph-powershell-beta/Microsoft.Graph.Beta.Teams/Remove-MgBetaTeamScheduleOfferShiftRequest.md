@@ -213,3 +213,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Remove-MgTeamScheduleOfferShiftRequest](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamScheduleOfferShiftRequest?view=graph-powershell-v1.0)

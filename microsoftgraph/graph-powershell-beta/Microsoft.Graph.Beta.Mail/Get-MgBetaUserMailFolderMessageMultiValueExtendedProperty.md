@@ -316,6 +316,7 @@ INPUTOBJECT \<IMailIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUserMailFolderMessageMultiValueExtendedProperty](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMailFolderMessageMultiValueExtendedProperty?view=graph-powershell-v1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfoldermessagemultivalueextendedproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfoldermessagemultivalueextendedproperty)
 

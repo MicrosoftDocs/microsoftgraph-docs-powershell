@@ -216,6 +216,7 @@ INPUTOBJECT \<IMailIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgUserMailFolderMessageMultiValueExtendedProperty](/powershell/module/Microsoft.Graph.Mail/Remove-MgUserMailFolderMessageMultiValueExtendedProperty?view=graph-powershell-v1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermailfoldermessagemultivalueextendedproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermailfoldermessagemultivalueextendedproperty)
 

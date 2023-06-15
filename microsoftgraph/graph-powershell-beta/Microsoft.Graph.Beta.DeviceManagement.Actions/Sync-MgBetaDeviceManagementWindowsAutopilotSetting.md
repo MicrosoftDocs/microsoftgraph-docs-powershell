@@ -101,3 +101,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Sync-MgDeviceManagementWindowsAutopilotSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Sync-MgDeviceManagementWindowsAutopilotSetting?view=graph-powershell-v1.0)

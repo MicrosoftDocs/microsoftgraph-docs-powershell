@@ -180,3 +180,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgGroupDriveItemPermissionCount](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveItemPermissionCount?view=graph-powershell-v1.0)

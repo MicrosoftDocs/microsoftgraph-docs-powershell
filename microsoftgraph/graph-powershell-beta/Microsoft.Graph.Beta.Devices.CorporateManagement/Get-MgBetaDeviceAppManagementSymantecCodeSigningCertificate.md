@@ -82,3 +82,4 @@ ALIASES
 Get-MgDeviceAppMgtSymantecCodeSigningCertificate
 
 ## RELATED LINKS
+[Get-MgDeviceAppManagementSymantecCodeSigningCertificate](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementSymantecCodeSigningCertificate?view=graph-powershell-v1.0)

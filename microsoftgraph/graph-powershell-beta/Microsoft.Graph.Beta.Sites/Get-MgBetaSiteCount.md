@@ -79,3 +79,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgSiteCount](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteCount?view=graph-powershell-v1.0)

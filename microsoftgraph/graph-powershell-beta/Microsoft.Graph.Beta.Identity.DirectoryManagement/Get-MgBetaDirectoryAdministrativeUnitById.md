@@ -167,3 +167,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Types <String[]>]`: 
 
 ## RELATED LINKS
+[Get-MgDirectoryAdministrativeUnitById](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryAdministrativeUnitById?view=graph-powershell-v1.0)

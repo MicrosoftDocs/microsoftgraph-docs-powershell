@@ -306,5 +306,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserAgent <String>]`: 
 
 ## RELATED LINKS
+[Submit-MgSecurityTiIndicator](/powershell/module/Microsoft.Graph.Security/Submit-MgSecurityTiIndicator?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Submit-MgSecurityTiIndicator](/powershell/module/Microsoft.Graph.Security/Submit-MgSecurityTiIndicator?view=graph-powershell-v1.0)

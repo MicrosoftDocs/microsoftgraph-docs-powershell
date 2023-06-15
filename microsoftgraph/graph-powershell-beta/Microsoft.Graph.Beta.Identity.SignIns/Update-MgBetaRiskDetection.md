@@ -631,5 +631,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[State <String>]`: Provides the State where the sign-in originated. This is calculated using latitude/longitude information from the sign-in activity.
 
 ## RELATED LINKS
+[Update-MgRiskDetection](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgRiskDetection?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgRiskDetection](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgRiskDetection?view=graph-powershell-v1.0)

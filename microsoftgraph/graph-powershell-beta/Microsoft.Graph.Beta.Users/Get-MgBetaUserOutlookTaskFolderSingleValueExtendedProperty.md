@@ -310,6 +310,7 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUserOutlookTaskFolderSingleValueExtendedProperty](/powershell/module/Microsoft.Graph.Users/Get-MgUserOutlookTaskFolderSingleValueExtendedProperty?view=graph-powershell-v1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroutlooktaskfoldersinglevalueextendedproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroutlooktaskfoldersinglevalueextendedproperty)
 

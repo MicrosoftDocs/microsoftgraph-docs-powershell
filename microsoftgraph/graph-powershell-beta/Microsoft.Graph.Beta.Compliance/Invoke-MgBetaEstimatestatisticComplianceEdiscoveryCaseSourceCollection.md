@@ -168,6 +168,7 @@ INPUTOBJECT \<IComplianceIdentity\>: Identity Parameter
   \[UserSourceId \<String\>\]: The unique identifier of userSource
 
 ## RELATED LINKS
+[Invoke-MgEstimatestatisticComplianceEdiscoveryCaseSourceCollection](/powershell/module/Microsoft.Graph.Compliance/Invoke-MgEstimatestatisticComplianceEdiscoveryCaseSourceCollection?view=graph-powershell-v1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/invoke-mgbetaestimatestatisticcomplianceediscoverycasesourcecollection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/invoke-mgbetaestimatestatisticcomplianceediscoverycasesourcecollection)
 

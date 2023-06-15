@@ -695,5 +695,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[IsSendLogsAndFeedbackEnabled <Boolean?>]`: True if sending logs and feedback is enabled.
 
 ## RELATED LINKS
+[Update-MgTeamworkDeviceConfiguration](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamworkDeviceConfiguration?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgTeamworkDeviceConfiguration](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamworkDeviceConfiguration?view=graph-powershell-v1.0)

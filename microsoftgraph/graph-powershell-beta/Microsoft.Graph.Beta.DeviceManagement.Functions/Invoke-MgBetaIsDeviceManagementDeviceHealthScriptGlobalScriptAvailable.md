@@ -53,3 +53,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Invoke-MgIsDeviceManagementDeviceHealthScriptGlobalScriptAvailable](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Invoke-MgIsDeviceManagementDeviceHealthScriptGlobalScriptAvailable?view=graph-powershell-v1.0)

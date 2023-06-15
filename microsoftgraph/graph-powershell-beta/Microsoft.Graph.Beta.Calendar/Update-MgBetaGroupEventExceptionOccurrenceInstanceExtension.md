@@ -263,3 +263,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Update-MgGroupEventExceptionOccurrenceInstanceExtension](/powershell/module/Microsoft.Graph.Calendar/Update-MgGroupEventExceptionOccurrenceInstanceExtension?view=graph-powershell-v1.0)

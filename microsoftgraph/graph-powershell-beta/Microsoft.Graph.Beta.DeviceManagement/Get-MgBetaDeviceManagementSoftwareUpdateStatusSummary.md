@@ -84,3 +84,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgDeviceManagementSoftwareUpdateStatusSummary](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementSoftwareUpdateStatusSummary?view=graph-powershell-v1.0)

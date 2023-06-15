@@ -310,3 +310,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUserDeviceRegisteredOwnerAsServicePrincipal](/powershell/module/Microsoft.Graph.CrossDeviceExperiences/Get-MgUserDeviceRegisteredOwnerAsServicePrincipal?view=graph-powershell-v1.0)

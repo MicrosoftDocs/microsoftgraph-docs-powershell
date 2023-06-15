@@ -79,3 +79,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgTenantRelationshipManagedTenantMyRoleCount](/powershell/module/Microsoft.Graph.ManagedTenants/Get-MgTenantRelationshipManagedTenantMyRoleCount?view=graph-powershell-v1.0)

@@ -162,3 +162,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Publish-MgBetaBetaEducationUserAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Publish-MgBetaEducationUserAssignment?view=graph-powershell-beta)

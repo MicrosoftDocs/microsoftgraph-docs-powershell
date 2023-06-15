@@ -159,3 +159,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Invoke-MgMessageTeam](/powershell/module/Microsoft.Graph.Teams/Invoke-MgMessageTeam?view=graph-powershell-v1.0)

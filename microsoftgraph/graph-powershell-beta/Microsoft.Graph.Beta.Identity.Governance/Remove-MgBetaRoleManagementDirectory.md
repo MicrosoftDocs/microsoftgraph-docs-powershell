@@ -110,3 +110,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Remove-MgRoleManagementDirectory](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgRoleManagementDirectory?view=graph-powershell-v1.0)

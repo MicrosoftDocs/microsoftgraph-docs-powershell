@@ -82,3 +82,4 @@ ALIASES
 Get-MgDeviceAppMgtIoLobAppProvisioningConfigurationCount
 
 ## RELATED LINKS
+[Get-MgDeviceAppManagementiOSLobAppProvisioningConfigurationCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementiOSLobAppProvisioningConfigurationCount?view=graph-powershell-v1.0)

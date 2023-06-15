@@ -251,3 +251,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[OSVersionAppHealthStatus <String>]`: The overall app health status of the OS version.
 
 ## RELATED LINKS
+[New-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance?view=graph-powershell-v1.0)

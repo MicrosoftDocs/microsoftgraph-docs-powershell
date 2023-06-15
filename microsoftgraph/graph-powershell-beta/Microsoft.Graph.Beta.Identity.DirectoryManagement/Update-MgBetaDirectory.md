@@ -694,5 +694,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ProvisioningStatus <String>]`: 
 
 ## RELATED LINKS
+[Update-MgDirectory](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectory?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgDirectory](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectory?view=graph-powershell-v1.0)

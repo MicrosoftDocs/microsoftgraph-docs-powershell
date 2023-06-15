@@ -1004,5 +1004,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String>]`: For example, Managed.
 
 ## RELATED LINKS
+[New-MgOrganization](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgOrganization?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgOrganization](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgOrganization?view=graph-powershell-v1.0)

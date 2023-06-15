@@ -234,3 +234,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Title <String>]`: The title for the contact. Required.
 
 ## RELATED LINKS
+[New-MgTenantRelationshipManagedTenantCustomizedInformation](/powershell/module/Microsoft.Graph.ManagedTenants/New-MgTenantRelationshipManagedTenantCustomizedInformation?view=graph-powershell-v1.0)

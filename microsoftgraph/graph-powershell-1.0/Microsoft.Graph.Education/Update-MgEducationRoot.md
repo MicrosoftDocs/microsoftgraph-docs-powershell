@@ -14154,5 +14154,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserType <String>]`: A string value that can be used to classify user types in your directory, such as Member and Guest. Supports $filter.
 
 ## RELATED LINKS
+[Update-MgBetaBetaEducationRoot](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationRoot?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaBetaEducationRoot](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationRoot?view=graph-powershell-beta)

@@ -1333,5 +1333,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[TransitiveRoleAssignments <IMicrosoftGraphUnifiedRoleAssignment[]>]`: Resource to grant access to users or groups that are transitive.
 
 ## RELATED LINKS
+[Update-MgRoleManagement](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Update-MgRoleManagement?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgRoleManagement](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Update-MgRoleManagement?view=graph-powershell-v1.0)

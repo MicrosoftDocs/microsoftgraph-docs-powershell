@@ -33255,5 +33255,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[PrincipalId <String>]`: The identifier of the principal whose membership or ownership eligibility is granted through PIM for groups. Required.
 
 ## RELATED LINKS
+[Update-MgIdentityGovernancePrivilegedAccessGroup](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernancePrivilegedAccessGroup?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgIdentityGovernancePrivilegedAccessGroup](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernancePrivilegedAccessGroup?view=graph-powershell-v1.0)

@@ -170,3 +170,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgServicePrincipalListOwnerCountAsUser](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalListOwnerCountAsUser?view=graph-powershell-v1.0)

@@ -309,3 +309,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VendorId <String>]`: The unique identifier of vendor
 
 ## RELATED LINKS
+[Get-MgFinancialCompanyAgedAccountReceivable](/powershell/module/Microsoft.Graph.Financials/Get-MgFinancialCompanyAgedAccountReceivable?view=graph-powershell-v1.0)

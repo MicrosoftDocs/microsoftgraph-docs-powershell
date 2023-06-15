@@ -208,3 +208,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[Value <String>]`: Value for this key-value pair
 
 ## RELATED LINKS
+[New-MgDeviceManagementAndroidForWorkAppConfigurationSchema](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementAndroidForWorkAppConfigurationSchema?view=graph-powershell-v1.0)

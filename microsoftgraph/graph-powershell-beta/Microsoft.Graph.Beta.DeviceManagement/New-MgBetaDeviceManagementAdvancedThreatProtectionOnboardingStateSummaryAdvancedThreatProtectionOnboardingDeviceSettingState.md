@@ -345,3 +345,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserPrincipalName <String>]`: The User PrincipalName that is being reported
 
 ## RELATED LINKS
+[New-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummaryAdvancedThreatProtectionOnboardingDeviceSettingState](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummaryAdvancedThreatProtectionOnboardingDeviceSettingState?view=graph-powershell-v1.0)

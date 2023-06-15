@@ -234,3 +234,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgOnPremisePublishingProfileAgentGroupByRef](/powershell/module/Microsoft.Graph.Applications/Get-MgOnPremisePublishingProfileAgentGroupByRef?view=graph-powershell-v1.0)

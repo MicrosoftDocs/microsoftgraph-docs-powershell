@@ -182,3 +182,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserPfxCertificateId <String>]`: The unique identifier of userPFXCertificate
 
 ## RELATED LINKS
+[Get-MgDeviceManagementGroupPolicyMigrationReportUnsupportedGroupPolicyExtensionCount](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementGroupPolicyMigrationReportUnsupportedGroupPolicyExtensionCount?view=graph-powershell-v1.0)

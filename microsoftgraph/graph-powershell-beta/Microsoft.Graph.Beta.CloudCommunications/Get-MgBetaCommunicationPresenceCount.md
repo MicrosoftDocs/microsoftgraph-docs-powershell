@@ -79,3 +79,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgCommunicationPresenceCount](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationPresenceCount?view=graph-powershell-v1.0)

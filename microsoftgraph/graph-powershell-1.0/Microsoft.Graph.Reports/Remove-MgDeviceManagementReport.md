@@ -114,3 +114,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Remove-MgBetaBetaDeviceManagementReport](/powershell/module/Microsoft.Graph.Beta.Reports/Remove-MgBetaDeviceManagementReport?view=graph-powershell-beta)

@@ -508,3 +508,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String[]>]`: 
 
 ## RELATED LINKS
+[New-MgUserProfilePatent](/powershell/module/Microsoft.Graph.People/New-MgUserProfilePatent?view=graph-powershell-v1.0)

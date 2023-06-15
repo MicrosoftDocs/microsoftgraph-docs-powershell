@@ -313,3 +313,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgApplicationOwnerAsEndpoint](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationOwnerAsEndpoint?view=graph-powershell-v1.0)

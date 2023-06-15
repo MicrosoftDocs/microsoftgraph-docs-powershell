@@ -170,3 +170,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Get-MgEducationUserAssignmentSubmissionOutcomeCount](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUserAssignmentSubmissionOutcomeCount?view=graph-powershell-v1.0)

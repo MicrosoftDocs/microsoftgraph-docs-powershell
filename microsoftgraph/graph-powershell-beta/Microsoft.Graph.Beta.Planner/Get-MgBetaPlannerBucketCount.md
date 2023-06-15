@@ -79,3 +79,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgPlannerBucketCount](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerBucketCount?view=graph-powershell-v1.0)

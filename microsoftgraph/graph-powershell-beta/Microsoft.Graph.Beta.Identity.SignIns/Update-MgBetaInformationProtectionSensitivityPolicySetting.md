@@ -214,3 +214,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[IsMandatory <Boolean?>]`: 
 
 ## RELATED LINKS
+[Update-MgInformationProtectionSensitivityPolicySetting](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgInformationProtectionSensitivityPolicySetting?view=graph-powershell-v1.0)

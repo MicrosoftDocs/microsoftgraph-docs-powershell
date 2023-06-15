@@ -250,3 +250,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[RequirementsSatisfied <String>]`: authenticationStrengthRequirements
 
 ## RELATED LINKS
+[Update-MgIdentityConditionalAccessAuthenticationStrength](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityConditionalAccessAuthenticationStrength?view=graph-powershell-v1.0)

@@ -455,5 +455,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ValueType <DeviceManangementIntentValueType?>]`: deviceManangementIntentValueType
 
 ## RELATED LINKS
+[New-MgDeviceManagementTemplateMigratableToCategory](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementTemplateMigratableToCategory?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgDeviceManagementTemplateMigratableToCategory](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementTemplateMigratableToCategory?view=graph-powershell-v1.0)

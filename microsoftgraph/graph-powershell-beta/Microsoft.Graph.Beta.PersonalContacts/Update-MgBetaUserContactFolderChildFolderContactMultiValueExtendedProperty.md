@@ -281,6 +281,7 @@ INPUTOBJECT \<IPersonalContactsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Update-MgUserContactFolderChildFolderContactMultiValueExtendedProperty](/powershell/module/Microsoft.Graph.PersonalContacts/Update-MgUserContactFolderChildFolderContactMultiValueExtendedProperty?view=graph-powershell-v1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/update-mgbetausercontactfolderchildfoldercontactmultivalueextendedproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/update-mgbetausercontactfolderchildfoldercontactmultivalueextendedproperty)
 

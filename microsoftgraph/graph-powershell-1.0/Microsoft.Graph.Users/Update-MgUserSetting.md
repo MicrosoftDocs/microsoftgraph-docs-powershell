@@ -327,3 +327,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[TimeZone <String>]`: Specifies the time zone for the indicated time.
 
 ## RELATED LINKS
+[Update-MgBetaBetaUserSetting](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserSetting?view=graph-powershell-beta)

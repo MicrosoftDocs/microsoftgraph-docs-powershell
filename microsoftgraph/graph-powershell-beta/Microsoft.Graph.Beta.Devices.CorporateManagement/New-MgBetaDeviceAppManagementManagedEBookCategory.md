@@ -179,3 +179,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[LastModifiedDateTime <DateTime?>]`: The date and time the ManagedEBookCategory was last modified.
 
 ## RELATED LINKS
+[New-MgDeviceAppManagementManagedEBookCategory](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementManagedEBookCategory?view=graph-powershell-v1.0)

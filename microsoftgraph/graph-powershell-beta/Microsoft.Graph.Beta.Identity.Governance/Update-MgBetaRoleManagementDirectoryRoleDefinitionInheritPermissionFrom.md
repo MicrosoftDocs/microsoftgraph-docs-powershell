@@ -517,5 +517,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ExcludedResourceActions <String[]>]`: 
 
 ## RELATED LINKS
+[Update-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFrom](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFrom?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFrom](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFrom?view=graph-powershell-v1.0)

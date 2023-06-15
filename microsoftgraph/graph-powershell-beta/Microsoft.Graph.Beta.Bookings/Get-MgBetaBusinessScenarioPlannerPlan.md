@@ -211,3 +211,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TaskTargetKind <String>]`: plannerTaskTargetKind
 
 ## RELATED LINKS
+[Get-MgBusinessScenarioPlannerPlan](/powershell/module/Microsoft.Graph.Bookings/Get-MgBusinessScenarioPlannerPlan?view=graph-powershell-v1.0)

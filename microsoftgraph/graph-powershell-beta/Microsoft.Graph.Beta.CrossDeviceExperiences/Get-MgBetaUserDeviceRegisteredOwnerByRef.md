@@ -230,3 +230,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgUserDeviceRegisteredOwnerByRef](/powershell/module/Microsoft.Graph.CrossDeviceExperiences/Get-MgUserDeviceRegisteredOwnerByRef?view=graph-powershell-v1.0)

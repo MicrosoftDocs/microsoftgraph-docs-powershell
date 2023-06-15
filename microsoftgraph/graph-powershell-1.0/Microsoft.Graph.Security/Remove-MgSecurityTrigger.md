@@ -110,3 +110,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Remove-MgBetaBetaSecurityTrigger](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityTrigger?view=graph-powershell-beta)

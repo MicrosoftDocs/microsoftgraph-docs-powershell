@@ -138,3 +138,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[New-MgTrustFrameworkPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgTrustFrameworkPolicy?view=graph-powershell-v1.0)

@@ -201,3 +201,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserPrincipalName <String>]`: The user principal name (UPN) of the external user. Read-only.
 
 ## RELATED LINKS
+[New-MgDirectoryInboundSharedUserProfile](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryInboundSharedUserProfile?view=graph-powershell-v1.0)

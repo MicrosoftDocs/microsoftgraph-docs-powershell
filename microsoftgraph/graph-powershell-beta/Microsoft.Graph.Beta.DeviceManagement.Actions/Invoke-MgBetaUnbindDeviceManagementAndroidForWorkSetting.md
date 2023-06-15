@@ -99,3 +99,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Invoke-MgUnbindDeviceManagementAndroidForWorkSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgUnbindDeviceManagementAndroidForWorkSetting?view=graph-powershell-v1.0)

@@ -312,3 +312,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgGroupTeamPrimaryChannelTab](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamPrimaryChannelTab?view=graph-powershell-v1.0)

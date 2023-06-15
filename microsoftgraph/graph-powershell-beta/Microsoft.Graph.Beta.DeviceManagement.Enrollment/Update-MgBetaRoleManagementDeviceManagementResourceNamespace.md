@@ -294,3 +294,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ResourceScopeId <String>]`: Not implemented.
 
 ## RELATED LINKS
+[Update-MgRoleManagementDeviceManagementResourceNamespace](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Update-MgRoleManagementDeviceManagementResourceNamespace?view=graph-powershell-v1.0)

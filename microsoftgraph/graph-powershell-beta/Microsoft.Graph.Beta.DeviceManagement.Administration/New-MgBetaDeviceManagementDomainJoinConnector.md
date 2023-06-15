@@ -214,3 +214,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Version <String>]`: The version of the connector.
 
 ## RELATED LINKS
+[New-MgDeviceManagementDomainJoinConnector](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementDomainJoinConnector?view=graph-powershell-v1.0)

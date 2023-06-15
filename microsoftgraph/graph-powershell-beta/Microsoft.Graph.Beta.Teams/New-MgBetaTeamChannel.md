@@ -14762,5 +14762,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebUrl <String>]`: Deep link URL of the tab instance. Read only.
 
 ## RELATED LINKS
+[New-MgTeamChannel](/powershell/module/Microsoft.Graph.Teams/New-MgTeamChannel?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgTeamChannel](/powershell/module/Microsoft.Graph.Teams/New-MgTeamChannel?view=graph-powershell-v1.0)

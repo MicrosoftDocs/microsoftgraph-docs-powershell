@@ -218,3 +218,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Userid <String>]`: Usage: userid='{userid}'
 
 ## RELATED LINKS
+[Compare-MgDeviceManagementIntent](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Compare-MgDeviceManagementIntent?view=graph-powershell-v1.0)

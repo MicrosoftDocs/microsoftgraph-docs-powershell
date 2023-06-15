@@ -1602,5 +1602,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Position <Int32?>]`: Specifies the position in which the Content Type appears in the selection UI.
 
 ## RELATED LINKS
+[Update-MgBetaBetaSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteContentType?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaBetaSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteContentType?view=graph-powershell-beta)

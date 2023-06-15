@@ -547,5 +547,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebLink <String>]`: 
 
 ## RELATED LINKS
+[Send-MgUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Send-MgUserMailFolderChildFolderMessage?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Send-MgUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Send-MgUserMailFolderChildFolderMessage?view=graph-powershell-v1.0)

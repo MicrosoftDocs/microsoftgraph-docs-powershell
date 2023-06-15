@@ -363,3 +363,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[IsRecordLocked <Boolean?>]`: 
 
 ## RELATED LINKS
+[Update-MgUserDriveItemRetentionLabel](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveItemRetentionLabel?view=graph-powershell-v1.0)

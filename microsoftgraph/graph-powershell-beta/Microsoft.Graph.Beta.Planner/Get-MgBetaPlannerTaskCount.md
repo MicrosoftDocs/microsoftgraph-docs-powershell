@@ -79,3 +79,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgPlannerTaskCount](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerTaskCount?view=graph-powershell-v1.0)

@@ -392,3 +392,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[NotCompliantTenantsCount <Int32?>]`: 
 
 ## RELATED LINKS
+[New-MgTenantRelationshipManagedTenantManagementTemplateStepTenantSummary](/powershell/module/Microsoft.Graph.ManagedTenants/New-MgTenantRelationshipManagedTenantManagementTemplateStepTenantSummary?view=graph-powershell-v1.0)

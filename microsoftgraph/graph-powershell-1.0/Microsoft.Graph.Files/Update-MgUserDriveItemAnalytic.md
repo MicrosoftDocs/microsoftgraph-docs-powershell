@@ -10676,5 +10676,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[StartDateTime <DateTime?>]`: When the interval starts. Read-only.
 
 ## RELATED LINKS
+[Update-MgBetaBetaUserDriveItemAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveItemAnalytic?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaBetaUserDriveItemAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveItemAnalytic?view=graph-powershell-beta)

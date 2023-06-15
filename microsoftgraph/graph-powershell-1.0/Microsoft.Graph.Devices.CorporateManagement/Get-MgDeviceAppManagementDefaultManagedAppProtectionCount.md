@@ -82,3 +82,4 @@ ALIASES
 Get-MgDeviceAppMgtDefaultManagedAppProtectionCount
 
 ## RELATED LINKS
+[Get-MgBetaBetaDeviceAppManagementDefaultManagedAppProtectionCount](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementDefaultManagedAppProtectionCount?view=graph-powershell-beta)

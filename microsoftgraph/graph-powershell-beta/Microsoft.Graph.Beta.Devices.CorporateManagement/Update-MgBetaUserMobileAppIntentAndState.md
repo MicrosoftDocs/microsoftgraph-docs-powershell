@@ -363,5 +363,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Type <DeviceType?>]`: Device type.
 
 ## RELATED LINKS
+[Update-MgUserMobileAppIntentAndState](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgUserMobileAppIntentAndState?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgUserMobileAppIntentAndState](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgUserMobileAppIntentAndState?view=graph-powershell-v1.0)

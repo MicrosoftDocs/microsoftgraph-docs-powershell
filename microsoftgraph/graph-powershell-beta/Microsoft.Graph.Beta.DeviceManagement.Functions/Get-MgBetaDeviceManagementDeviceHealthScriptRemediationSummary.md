@@ -53,3 +53,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgDeviceManagementDeviceHealthScriptRemediationSummary](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementDeviceHealthScriptRemediationSummary?view=graph-powershell-v1.0)

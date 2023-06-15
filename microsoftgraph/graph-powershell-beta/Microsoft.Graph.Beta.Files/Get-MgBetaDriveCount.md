@@ -77,6 +77,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-MgDriveCount](/powershell/module/Microsoft.Graph.Files/Get-MgDriveCount?view=graph-powershell-v1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivecount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivecount)
 

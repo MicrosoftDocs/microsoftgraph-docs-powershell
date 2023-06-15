@@ -144,3 +144,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
 
 ## RELATED LINKS
+[Get-MgExternalConnectionOperationCount](/powershell/module/Microsoft.Graph.Search/Get-MgExternalConnectionOperationCount?view=graph-powershell-v1.0)

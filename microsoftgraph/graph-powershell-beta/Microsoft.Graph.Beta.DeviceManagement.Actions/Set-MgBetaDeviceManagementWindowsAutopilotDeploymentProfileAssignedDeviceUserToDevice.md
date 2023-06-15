@@ -295,3 +295,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
+[Set-MgDeviceManagementWindowsAutopilotDeploymentProfileAssignedDeviceUserToDevice](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Set-MgDeviceManagementWindowsAutopilotDeploymentProfileAssignedDeviceUserToDevice?view=graph-powershell-v1.0)

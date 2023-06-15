@@ -380,5 +380,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[NotificationTemplateId <String>]`: What notification Message template to use
 
 ## RELATED LINKS
+[New-MgDeviceManagementCompliancePolicyScheduledActionForRule](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementCompliancePolicyScheduledActionForRule?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgDeviceManagementCompliancePolicyScheduledActionForRule](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementCompliancePolicyScheduledActionForRule?view=graph-powershell-v1.0)

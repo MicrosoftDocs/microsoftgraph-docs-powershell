@@ -215,3 +215,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[MoreInfoUrl <String>]`: Exposes the more information URL that can be configured by the administrator.
 
 ## RELATED LINKS
+[Update-MgSecurityInformationProtectionLabelPolicySetting](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityInformationProtectionLabelPolicySetting?view=graph-powershell-v1.0)

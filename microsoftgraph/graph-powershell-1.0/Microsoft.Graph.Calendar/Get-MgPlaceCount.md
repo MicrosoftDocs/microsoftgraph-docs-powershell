@@ -79,3 +79,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaBetaPlaceCount](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaPlaceCount?view=graph-powershell-beta)

@@ -81,3 +81,4 @@ ALIASES
 Get-MgDeviceAppMgtTaskCount
 
 ## RELATED LINKS
+[Get-MgDeviceAppManagementTaskCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementTaskCount?view=graph-powershell-v1.0)

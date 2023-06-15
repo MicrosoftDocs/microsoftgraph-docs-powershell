@@ -182,3 +182,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Availability <String>]`: The base presence information for a user. Possible values are Available, AvailableIdle,  Away, BeRightBack, Busy, BusyIdle, DoNotDisturb, Offline, PresenceUnknown
 
 ## RELATED LINKS
+[New-MgBetaBetaCommunicationPresence](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaCommunicationPresence?view=graph-powershell-beta)

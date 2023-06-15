@@ -190,3 +190,4 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaBetaUserMailFolderSingleValueExtendedProperty](/powershell/module/Microsoft.Graph.Beta.Mail/Remove-MgBetaUserMailFolderSingleValueExtendedProperty?view=graph-powershell-beta)

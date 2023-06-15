@@ -379,3 +379,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
+[New-MgUserDriveItemListItemLink](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserDriveItemListItemLink?view=graph-powershell-v1.0)

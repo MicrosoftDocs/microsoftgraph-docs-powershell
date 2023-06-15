@@ -252,3 +252,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[State <String>]`: printOperationProcessingState
 
 ## RELATED LINKS
+[Update-MgBetaBetaPrintOperation](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgBetaPrintOperation?view=graph-powershell-beta)

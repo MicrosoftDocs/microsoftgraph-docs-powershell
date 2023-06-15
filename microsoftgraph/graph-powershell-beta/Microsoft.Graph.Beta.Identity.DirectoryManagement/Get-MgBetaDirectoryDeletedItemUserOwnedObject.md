@@ -167,3 +167,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: 
 
 ## RELATED LINKS
+[Get-MgDirectoryDeletedItemUserOwnedObject](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryDeletedItemUserOwnedObject?view=graph-powershell-v1.0)

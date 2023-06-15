@@ -253,3 +253,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TenantId <String>]`: The identifier of the Azure AD tenant. Read-only. Key.
 
 ## RELATED LINKS
+[Update-MgDirectoryOutboundSharedUserProfile](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryOutboundSharedUserProfile?view=graph-powershell-v1.0)

@@ -9718,5 +9718,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[EligibilitySchedules <IMicrosoftGraphPrivilegedAccessGroupEligibilitySchedule[]>]`: The eligibility schedules to activate a just-in-time access.
 
 ## RELATED LINKS
+[Update-MgIdentityGovernancePrivilegedAccess](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernancePrivilegedAccess?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgIdentityGovernancePrivilegedAccess](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernancePrivilegedAccess?view=graph-powershell-v1.0)

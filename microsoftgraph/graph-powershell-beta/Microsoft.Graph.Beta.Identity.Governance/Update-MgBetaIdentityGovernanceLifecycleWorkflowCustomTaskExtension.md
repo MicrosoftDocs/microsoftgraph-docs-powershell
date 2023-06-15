@@ -14510,5 +14510,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[UserId <String>]`: UserId associated with this device registration record.
 
 ## RELATED LINKS
+[Update-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension?view=graph-powershell-v1.0)

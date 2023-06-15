@@ -79,3 +79,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgEducationSynchronizationProfileCount](/powershell/module/Microsoft.Graph.Education/Get-MgEducationSynchronizationProfileCount?view=graph-powershell-v1.0)

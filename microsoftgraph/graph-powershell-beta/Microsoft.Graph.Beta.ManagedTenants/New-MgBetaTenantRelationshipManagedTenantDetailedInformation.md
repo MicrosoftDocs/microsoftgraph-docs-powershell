@@ -328,3 +328,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VerticalName <String>]`: The vertical associated with the managed tenant. Optional. Read-only.
 
 ## RELATED LINKS
+[New-MgTenantRelationshipManagedTenantDetailedInformation](/powershell/module/Microsoft.Graph.ManagedTenants/New-MgTenantRelationshipManagedTenantDetailedInformation?view=graph-powershell-v1.0)

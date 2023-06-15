@@ -250,6 +250,7 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
+[Remove-MgGroupThreadPostInReplyToMultiValueExtendedProperty](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupThreadPostInReplyToMultiValueExtendedProperty?view=graph-powershell-v1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupthreadpostinreplytomultivalueextendedproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupthreadpostinreplytomultivalueextendedproperty)
 

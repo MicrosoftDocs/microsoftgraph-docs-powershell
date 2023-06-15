@@ -177,3 +177,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[MaxAttributesPerSet <Int32?>]`: 
 
 ## RELATED LINKS
+[New-MgBetaBetaDirectoryAttributeSet](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryAttributeSet?view=graph-powershell-beta)

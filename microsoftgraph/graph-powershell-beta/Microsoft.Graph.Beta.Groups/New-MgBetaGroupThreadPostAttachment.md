@@ -353,3 +353,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[New-MgGroupThreadPostAttachment](/powershell/module/Microsoft.Graph.Groups/New-MgGroupThreadPostAttachment?view=graph-powershell-v1.0)

@@ -450,5 +450,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UpdatePolicyId <String>]`: The unique identifier of updatePolicy
 
 ## RELATED LINKS
+[Update-MgWindowsUpdatesPolicy](/powershell/module/Microsoft.Graph.WindowsUpdates/Update-MgWindowsUpdatesPolicy?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgWindowsUpdatesPolicy](/powershell/module/Microsoft.Graph.WindowsUpdates/Update-MgWindowsUpdatesPolicy?view=graph-powershell-v1.0)

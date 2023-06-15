@@ -462,5 +462,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
+[New-MgBetaBetaEducationMeAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationMeAssignmentSubmission?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[New-MgBetaBetaEducationMeAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationMeAssignmentSubmission?view=graph-powershell-beta)

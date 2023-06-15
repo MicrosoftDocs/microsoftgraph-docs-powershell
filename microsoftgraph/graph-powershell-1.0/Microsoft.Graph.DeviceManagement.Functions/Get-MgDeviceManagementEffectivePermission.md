@@ -180,3 +180,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[SecretReferenceValueId <String>]`: Usage: secretReferenceValueId='{secretReferenceValueId}'
 
 ## RELATED LINKS
+[Get-MgBetaBetaDeviceManagementEffectivePermission](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Functions/Get-MgBetaDeviceManagementEffectivePermission?view=graph-powershell-beta)

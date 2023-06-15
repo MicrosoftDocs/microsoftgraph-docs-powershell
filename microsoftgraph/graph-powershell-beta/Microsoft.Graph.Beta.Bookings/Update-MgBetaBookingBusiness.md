@@ -871,5 +871,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[Start <String>]`: The time of the day when work starts. For example, 08:00:00.0000000.
 
 ## RELATED LINKS
+[Update-MgBookingBusiness](/powershell/module/Microsoft.Graph.Bookings/Update-MgBookingBusiness?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgBookingBusiness](/powershell/module/Microsoft.Graph.Bookings/Update-MgBookingBusiness?view=graph-powershell-v1.0)

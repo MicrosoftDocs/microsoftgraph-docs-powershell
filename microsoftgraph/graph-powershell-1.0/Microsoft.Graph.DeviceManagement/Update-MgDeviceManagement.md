@@ -9603,5 +9603,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Url <String>]`: Website url
 
 ## RELATED LINKS
+[Update-MgBetaBetaDeviceManagement](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagement?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaBetaDeviceManagement](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagement?view=graph-powershell-beta)

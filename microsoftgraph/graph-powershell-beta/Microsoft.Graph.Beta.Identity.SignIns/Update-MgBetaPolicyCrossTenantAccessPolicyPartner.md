@@ -541,5 +541,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Rule <String>]`: 
 
 ## RELATED LINKS
+[Update-MgPolicyCrossTenantAccessPolicyPartner](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyCrossTenantAccessPolicyPartner?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgPolicyCrossTenantAccessPolicyPartner](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyCrossTenantAccessPolicyPartner?view=graph-powershell-v1.0)

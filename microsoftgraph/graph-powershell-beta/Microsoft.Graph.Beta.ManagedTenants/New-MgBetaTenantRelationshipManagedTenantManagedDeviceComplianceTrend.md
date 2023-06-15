@@ -315,3 +315,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UnknownDeviceCount <Int32?>]`: The number of devices in an unknown status. Required. Read-only.
 
 ## RELATED LINKS
+[New-MgTenantRelationshipManagedTenantManagedDeviceComplianceTrend](/powershell/module/Microsoft.Graph.ManagedTenants/New-MgTenantRelationshipManagedTenantManagedDeviceComplianceTrend?view=graph-powershell-v1.0)

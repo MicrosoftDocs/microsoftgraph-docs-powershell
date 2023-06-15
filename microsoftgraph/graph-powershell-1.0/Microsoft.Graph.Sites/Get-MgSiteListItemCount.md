@@ -176,6 +176,7 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaBetaSiteListItemCount](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteListItemCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistitemcount](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistitemcount)
 

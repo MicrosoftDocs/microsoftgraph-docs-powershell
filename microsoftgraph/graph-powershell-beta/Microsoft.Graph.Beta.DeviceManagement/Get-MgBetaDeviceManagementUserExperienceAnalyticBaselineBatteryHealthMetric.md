@@ -265,5 +265,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
 ## RELATED LINKS
+[Get-MgDeviceManagementUserExperienceAnalyticBaselineBatteryHealthMetric](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticBaselineBatteryHealthMetric?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Get-MgDeviceManagementUserExperienceAnalyticBaselineBatteryHealthMetric](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticBaselineBatteryHealthMetric?view=graph-powershell-v1.0)

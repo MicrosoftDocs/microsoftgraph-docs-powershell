@@ -282,3 +282,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Version <Int32?>]`: Version of the profile
 
 ## RELATED LINKS
+[New-MgDeviceManagementResourceAccessProfile](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementResourceAccessProfile?view=graph-powershell-v1.0)

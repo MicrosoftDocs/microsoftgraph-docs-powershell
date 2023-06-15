@@ -326,3 +326,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+[Get-MgBetaBetaGroupOnenoteNotebookFromWebUrl](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupOnenoteNotebookFromWebUrl?view=graph-powershell-beta)

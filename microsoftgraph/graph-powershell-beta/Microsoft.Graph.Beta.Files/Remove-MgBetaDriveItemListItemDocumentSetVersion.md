@@ -215,3 +215,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgDriveItemListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveItemListItemDocumentSetVersion?view=graph-powershell-v1.0)

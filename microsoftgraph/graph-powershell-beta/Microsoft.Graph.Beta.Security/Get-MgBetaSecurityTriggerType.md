@@ -83,3 +83,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgSecurityTriggerType](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityTriggerType?view=graph-powershell-v1.0)

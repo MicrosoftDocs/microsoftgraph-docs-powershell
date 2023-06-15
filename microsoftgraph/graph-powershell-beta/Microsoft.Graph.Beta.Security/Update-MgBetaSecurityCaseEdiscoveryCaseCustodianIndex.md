@@ -209,3 +209,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
+[Update-MgSecurityCaseEdiscoveryCaseCustodianIndex](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityCaseEdiscoveryCaseCustodianIndex?view=graph-powershell-v1.0)

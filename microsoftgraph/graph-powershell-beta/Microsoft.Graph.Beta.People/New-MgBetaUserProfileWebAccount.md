@@ -516,3 +516,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String[]>]`: 
 
 ## RELATED LINKS
+[New-MgUserProfileWebAccount](/powershell/module/Microsoft.Graph.People/New-MgUserProfileWebAccount?view=graph-powershell-v1.0)

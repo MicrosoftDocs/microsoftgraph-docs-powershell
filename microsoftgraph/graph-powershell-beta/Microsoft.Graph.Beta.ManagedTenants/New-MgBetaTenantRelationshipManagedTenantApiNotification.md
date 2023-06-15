@@ -452,3 +452,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: 
 
 ## RELATED LINKS
+[New-MgTenantRelationshipManagedTenantApiNotification](/powershell/module/Microsoft.Graph.ManagedTenants/New-MgTenantRelationshipManagedTenantApiNotification?view=graph-powershell-v1.0)

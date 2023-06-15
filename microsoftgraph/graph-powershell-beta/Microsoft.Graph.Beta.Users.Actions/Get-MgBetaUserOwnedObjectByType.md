@@ -167,3 +167,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: 
 
 ## RELATED LINKS
+[Get-MgUserOwnedObjectByType](/powershell/module/Microsoft.Graph.Users.Actions/Get-MgUserOwnedObjectByType?view=graph-powershell-v1.0)

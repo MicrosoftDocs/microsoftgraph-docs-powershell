@@ -438,5 +438,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebUrl <String>]`: Denotes the webUrl that needs to be submitted.
 
 ## RELATED LINKS
+[Update-MgSecurityThreatSubmission](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityThreatSubmission?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgSecurityThreatSubmission](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityThreatSubmission?view=graph-powershell-v1.0)

@@ -147,3 +147,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkPositionId <String>]`: The unique identifier of workPosition
 
 ## RELATED LINKS
+[Get-MgUserProfilePhoneCount](/powershell/module/Microsoft.Graph.People/Get-MgUserProfilePhoneCount?view=graph-powershell-v1.0)

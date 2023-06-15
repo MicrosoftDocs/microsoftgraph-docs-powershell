@@ -284,3 +284,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[Update-MgRoleManagementCloudPcResourceNamespaceResourceActionResourceScope](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Update-MgRoleManagementCloudPcResourceNamespaceResourceActionResourceScope?view=graph-powershell-v1.0)

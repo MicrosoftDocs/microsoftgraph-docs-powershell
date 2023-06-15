@@ -295,3 +295,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserAccessLevel <String>]`: cloudPcUserAccessLevel
 
 ## RELATED LINKS
+[Set-MgUserManagedDeviceCloudPcReviewStatus](/powershell/module/Microsoft.Graph.Users.Actions/Set-MgUserManagedDeviceCloudPcReviewStatus?view=graph-powershell-v1.0)

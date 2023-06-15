@@ -225,3 +225,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgUserTodoListTaskAttachmentSession](/powershell/module/Microsoft.Graph.Users/Remove-MgUserTodoListTaskAttachmentSession?view=graph-powershell-v1.0)

@@ -147,3 +147,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Value <String[]>]`: 
 
 ## RELATED LINKS
+[Remove-MgSecurityTiIndicatorMultiple](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityTiIndicatorMultiple?view=graph-powershell-v1.0)

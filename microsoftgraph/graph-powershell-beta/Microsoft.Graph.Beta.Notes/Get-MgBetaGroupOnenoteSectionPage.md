@@ -240,3 +240,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgGroupOnenoteSectionPage](/powershell/module/Microsoft.Graph.Notes/Get-MgGroupOnenoteSectionPage?view=graph-powershell-v1.0)

@@ -208,3 +208,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[LabelId <String>]`: The GUID of the label that should be applied to the information.
 
 ## RELATED LINKS
+[Test-MgSecurityInformationProtectionSensitivityLabelApplication](/powershell/module/Microsoft.Graph.Security/Test-MgSecurityInformationProtectionSensitivityLabelApplication?view=graph-powershell-v1.0)

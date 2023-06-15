@@ -196,3 +196,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[PublishingLicense <Byte[]>]`: 
 
 ## RELATED LINKS
+[Invoke-MgBufferInformationProtectionDecrypt](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgBufferInformationProtectionDecrypt?view=graph-powershell-v1.0)

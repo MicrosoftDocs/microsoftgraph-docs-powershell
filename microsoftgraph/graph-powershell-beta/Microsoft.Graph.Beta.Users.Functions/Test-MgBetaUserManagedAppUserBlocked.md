@@ -135,3 +135,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Test-MgUserManagedAppUserBlocked](/powershell/module/Microsoft.Graph.Users.Functions/Test-MgUserManagedAppUserBlocked?view=graph-powershell-v1.0)

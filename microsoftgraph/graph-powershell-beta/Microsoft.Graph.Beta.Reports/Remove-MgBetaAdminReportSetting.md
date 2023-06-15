@@ -110,3 +110,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Remove-MgAdminReportSetting](/powershell/module/Microsoft.Graph.Reports/Remove-MgAdminReportSetting?view=graph-powershell-v1.0)

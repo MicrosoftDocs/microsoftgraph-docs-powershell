@@ -251,3 +251,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgUserDriveListItemActivity](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveListItemActivity?view=graph-powershell-v1.0)

@@ -149,3 +149,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Digest <Byte[]>]`: 
 
 ## RELATED LINKS
+[Invoke-MgSignInformationProtectionDigest](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgSignInformationProtectionDigest?view=graph-powershell-v1.0)

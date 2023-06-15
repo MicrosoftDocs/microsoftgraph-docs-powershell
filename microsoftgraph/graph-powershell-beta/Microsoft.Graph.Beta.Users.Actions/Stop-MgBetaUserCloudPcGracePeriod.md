@@ -207,3 +207,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Stop-MgUserCloudPcGracePeriod](/powershell/module/Microsoft.Graph.Users.Actions/Stop-MgUserCloudPcGracePeriod?view=graph-powershell-v1.0)

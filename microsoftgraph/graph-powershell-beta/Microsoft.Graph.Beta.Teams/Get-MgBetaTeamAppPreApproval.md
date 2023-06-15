@@ -64,3 +64,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgTeamAppPreApproval](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamAppPreApproval?view=graph-powershell-v1.0)

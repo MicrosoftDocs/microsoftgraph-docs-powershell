@@ -112,3 +112,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Set-MgTeamRscConfiguration](/powershell/module/Microsoft.Graph.Teams/Set-MgTeamRscConfiguration?view=graph-powershell-v1.0)

@@ -53,3 +53,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Invoke-MgCustomDeviceManagementRoleScopeTag](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Invoke-MgCustomDeviceManagementRoleScopeTag?view=graph-powershell-v1.0)

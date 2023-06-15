@@ -441,3 +441,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EmailAddress <String>]`: 
 
 ## RELATED LINKS
+[New-MgTenantRelationshipManagedTenantEmailNotification](/powershell/module/Microsoft.Graph.ManagedTenants/New-MgTenantRelationshipManagedTenantEmailNotification?view=graph-powershell-v1.0)

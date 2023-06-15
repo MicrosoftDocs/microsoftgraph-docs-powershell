@@ -519,5 +519,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Text <String>]`: Not yet documented
 
 ## RELATED LINKS
+[New-MgUserMobileAppTroubleshootingEvent](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgUserMobileAppTroubleshootingEvent?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgUserMobileAppTroubleshootingEvent](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgUserMobileAppTroubleshootingEvent?view=graph-powershell-v1.0)

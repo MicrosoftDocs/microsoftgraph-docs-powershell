@@ -324,3 +324,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Update-MgBetaBetaGroupPlannerPlanDetail](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgBetaGroupPlannerPlanDetail?view=graph-powershell-beta)

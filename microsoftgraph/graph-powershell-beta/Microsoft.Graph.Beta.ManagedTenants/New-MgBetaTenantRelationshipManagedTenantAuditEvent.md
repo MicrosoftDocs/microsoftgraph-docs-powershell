@@ -388,3 +388,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TenantNames <String>]`: The collection of tenant names that were impacted by this change. This is formatted as a list of comma-separated values. Required. Read-only.
 
 ## RELATED LINKS
+[New-MgTenantRelationshipManagedTenantAuditEvent](/powershell/module/Microsoft.Graph.ManagedTenants/New-MgTenantRelationshipManagedTenantAuditEvent?view=graph-powershell-v1.0)

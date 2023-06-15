@@ -665,5 +665,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Scenarios <String>]`: templateScenarios
 
 ## RELATED LINKS
+[Update-MgIdentityConditionalAccess](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityConditionalAccess?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgIdentityConditionalAccess](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityConditionalAccess?view=graph-powershell-v1.0)

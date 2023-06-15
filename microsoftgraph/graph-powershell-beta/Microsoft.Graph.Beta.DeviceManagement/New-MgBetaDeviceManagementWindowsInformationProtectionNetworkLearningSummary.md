@@ -179,3 +179,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Url <String>]`: Website url
 
 ## RELATED LINKS
+[New-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary?view=graph-powershell-v1.0)

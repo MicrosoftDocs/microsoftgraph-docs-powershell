@@ -229,3 +229,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Url <String>]`: Temporary location of the exported report
 
 ## RELATED LINKS
+[Update-MgDeviceManagementReport](/powershell/module/Microsoft.Graph.Reports/Update-MgDeviceManagementReport?view=graph-powershell-v1.0)

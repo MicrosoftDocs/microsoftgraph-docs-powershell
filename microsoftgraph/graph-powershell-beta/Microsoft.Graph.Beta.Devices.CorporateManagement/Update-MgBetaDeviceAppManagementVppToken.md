@@ -560,5 +560,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[StartDateTime <DateTime?>]`: Time the action was initiated
 
 ## RELATED LINKS
+[Update-MgDeviceAppManagementVppToken](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementVppToken?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgDeviceAppManagementVppToken](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementVppToken?view=graph-powershell-v1.0)

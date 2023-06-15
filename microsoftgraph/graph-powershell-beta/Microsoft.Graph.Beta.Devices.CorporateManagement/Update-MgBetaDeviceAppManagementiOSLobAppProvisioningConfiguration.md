@@ -543,5 +543,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserPrincipalName <String>]`: UserPrincipalName.
 
 ## RELATED LINKS
+[Update-MgDeviceAppManagementiOSLobAppProvisioningConfiguration](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementiOSLobAppProvisioningConfiguration?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgDeviceAppManagementiOSLobAppProvisioningConfiguration](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementiOSLobAppProvisioningConfiguration?view=graph-powershell-v1.0)

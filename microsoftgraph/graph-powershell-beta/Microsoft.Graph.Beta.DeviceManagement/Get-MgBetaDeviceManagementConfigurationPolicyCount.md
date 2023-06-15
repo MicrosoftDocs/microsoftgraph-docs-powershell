@@ -79,3 +79,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgDeviceManagementConfigurationPolicyCount](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementConfigurationPolicyCount?view=graph-powershell-v1.0)

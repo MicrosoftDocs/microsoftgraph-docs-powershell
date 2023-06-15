@@ -267,3 +267,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[MeanTimeToFailureInMinutes <Int32?>]`: The mean time to failure for the app in minutes. Valid values -2147483648 to 2147483647
 
 ## RELATED LINKS
+[New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersion](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersion?view=graph-powershell-v1.0)

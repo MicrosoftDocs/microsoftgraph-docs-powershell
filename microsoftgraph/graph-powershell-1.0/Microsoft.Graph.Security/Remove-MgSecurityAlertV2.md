@@ -179,3 +179,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
+[Remove-MgBetaBetaSecurityAlertV2](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityAlertV2?view=graph-powershell-beta)

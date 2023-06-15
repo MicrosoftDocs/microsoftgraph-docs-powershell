@@ -121,3 +121,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgReportAttackSimulationUserCoverage](/powershell/module/Microsoft.Graph.Reports/Get-MgReportAttackSimulationUserCoverage?view=graph-powershell-v1.0)

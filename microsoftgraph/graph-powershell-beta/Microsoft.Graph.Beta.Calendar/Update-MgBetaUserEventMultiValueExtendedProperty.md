@@ -255,6 +255,7 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Update-MgUserEventMultiValueExtendedProperty](/powershell/module/Microsoft.Graph.Calendar/Update-MgUserEventMultiValueExtendedProperty?view=graph-powershell-v1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetausereventmultivalueextendedproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetausereventmultivalueextendedproperty)
 

@@ -295,3 +295,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
+[Update-MgEducationMeAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Education/Update-MgEducationMeAssignmentSubmissionOutcome?view=graph-powershell-v1.0)

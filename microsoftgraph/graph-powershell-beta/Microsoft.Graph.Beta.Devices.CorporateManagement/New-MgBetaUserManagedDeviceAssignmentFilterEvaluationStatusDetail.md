@@ -300,3 +300,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
+[New-MgUserManagedDeviceAssignmentFilterEvaluationStatusDetail](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgUserManagedDeviceAssignmentFilterEvaluationStatusDetail?view=graph-powershell-v1.0)

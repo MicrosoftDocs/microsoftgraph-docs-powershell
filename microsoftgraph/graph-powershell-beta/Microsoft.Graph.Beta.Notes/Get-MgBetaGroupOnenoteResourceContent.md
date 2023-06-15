@@ -154,3 +154,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgGroupOnenoteResourceContent](/powershell/module/Microsoft.Graph.Notes/Get-MgGroupOnenoteResourceContent?view=graph-powershell-v1.0)

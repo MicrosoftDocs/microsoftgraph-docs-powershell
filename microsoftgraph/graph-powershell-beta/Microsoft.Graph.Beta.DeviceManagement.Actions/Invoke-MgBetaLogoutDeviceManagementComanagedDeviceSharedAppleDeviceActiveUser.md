@@ -197,3 +197,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
+[Invoke-MgLogoutDeviceManagementComanagedDeviceSharedAppleDeviceActiveUser](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgLogoutDeviceManagementComanagedDeviceSharedAppleDeviceActiveUser?view=graph-powershell-v1.0)

@@ -9581,5 +9581,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Sets <IMicrosoftGraphTermStoreSet[]>]`: Collection of all sets available in the term store.
 
 ## RELATED LINKS
+[Remove-MgGroupSite](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupSite?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Remove-MgGroupSite](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupSite?view=graph-powershell-v1.0)

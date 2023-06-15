@@ -306,3 +306,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String>]`: identityType
 
 ## RELATED LINKS
+[Update-MgExternalConnectionItemActivity](/powershell/module/Microsoft.Graph.Search/Update-MgExternalConnectionItemActivity?view=graph-powershell-v1.0)

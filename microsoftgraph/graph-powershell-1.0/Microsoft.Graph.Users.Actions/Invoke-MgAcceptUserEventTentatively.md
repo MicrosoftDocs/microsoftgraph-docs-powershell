@@ -314,3 +314,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
 
 ## RELATED LINKS
+[Invoke-MgBetaBetaAcceptUserEventTentatively](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaAcceptUserEventTentatively?view=graph-powershell-beta)

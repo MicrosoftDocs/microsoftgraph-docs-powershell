@@ -183,3 +183,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
 
 ## RELATED LINKS
+[Remove-MgBetaBetaBookingBusinessCalendarView](/powershell/module/Microsoft.Graph.Beta.Bookings/Remove-MgBetaBookingBusinessCalendarView?view=graph-powershell-beta)

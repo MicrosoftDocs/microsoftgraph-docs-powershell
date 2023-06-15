@@ -255,3 +255,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ScopeType <String>]`: 
 
 ## RELATED LINKS
+[New-MgIdentityGovernanceRoleManagementAlertConfiguration](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceRoleManagementAlertConfiguration?view=graph-powershell-v1.0)

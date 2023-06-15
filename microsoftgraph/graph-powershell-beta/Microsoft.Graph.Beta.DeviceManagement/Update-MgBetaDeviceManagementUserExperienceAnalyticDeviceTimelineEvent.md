@@ -430,5 +430,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
 ## RELATED LINKS
+[Update-MgDeviceManagementUserExperienceAnalyticDeviceTimelineEvent](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementUserExperienceAnalyticDeviceTimelineEvent?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgDeviceManagementUserExperienceAnalyticDeviceTimelineEvent](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementUserExperienceAnalyticDeviceTimelineEvent?view=graph-powershell-v1.0)

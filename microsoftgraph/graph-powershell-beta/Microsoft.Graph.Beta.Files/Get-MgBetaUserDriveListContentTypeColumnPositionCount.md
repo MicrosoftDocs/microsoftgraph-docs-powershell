@@ -180,3 +180,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUserDriveListContentTypeColumnPositionCount](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveListContentTypeColumnPositionCount?view=graph-powershell-v1.0)

@@ -79,3 +79,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgPlannerPlanCount](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerPlanCount?view=graph-powershell-v1.0)

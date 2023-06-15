@@ -81,3 +81,4 @@ ALIASES
 Get-MgDeviceAppMgtVppTokenCount
 
 ## RELATED LINKS
+[Get-MgDeviceAppManagementVppTokenCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementVppTokenCount?view=graph-powershell-v1.0)

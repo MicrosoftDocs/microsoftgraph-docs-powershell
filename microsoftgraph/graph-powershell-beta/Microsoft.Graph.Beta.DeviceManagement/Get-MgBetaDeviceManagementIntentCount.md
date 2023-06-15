@@ -79,3 +79,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgDeviceManagementIntentCount](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementIntentCount?view=graph-powershell-v1.0)

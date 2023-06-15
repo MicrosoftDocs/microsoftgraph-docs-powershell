@@ -265,3 +265,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Name <String>]`: The display name of an entity instance.
 
 ## RELATED LINKS
+[Update-MgUserInferenceClassificationOverride](/powershell/module/Microsoft.Graph.Mail/Update-MgUserInferenceClassificationOverride?view=graph-powershell-v1.0)

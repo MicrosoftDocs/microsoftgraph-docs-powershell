@@ -190,3 +190,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Remove-MgEducationSynchronizationProfileError](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationSynchronizationProfileError?view=graph-powershell-v1.0)

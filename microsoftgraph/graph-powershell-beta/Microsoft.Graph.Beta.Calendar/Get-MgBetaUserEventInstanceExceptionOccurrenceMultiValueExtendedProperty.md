@@ -334,6 +334,7 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUserEventInstanceExceptionOccurrenceMultiValueExtendedProperty](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserEventInstanceExceptionOccurrenceMultiValueExtendedProperty?view=graph-powershell-v1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausereventinstanceexceptionoccurrencemultivalueextendedproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausereventinstanceexceptionoccurrencemultivalueextendedproperty)
 

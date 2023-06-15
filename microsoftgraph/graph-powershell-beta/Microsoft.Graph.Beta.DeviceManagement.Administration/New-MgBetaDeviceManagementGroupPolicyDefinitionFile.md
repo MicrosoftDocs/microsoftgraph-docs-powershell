@@ -395,5 +395,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Version <String>]`: Setting definition version
 
 ## RELATED LINKS
+[New-MgDeviceManagementGroupPolicyDefinitionFile](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementGroupPolicyDefinitionFile?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgDeviceManagementGroupPolicyDefinitionFile](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementGroupPolicyDefinitionFile?view=graph-powershell-v1.0)

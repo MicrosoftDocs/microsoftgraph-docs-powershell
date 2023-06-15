@@ -526,5 +526,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserName <String>]`: User name.
 
 ## RELATED LINKS
+[Update-MgBetaBetaDeviceAppManagementManagedEBook](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementManagedEBook?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaBetaDeviceAppManagementManagedEBook](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementManagedEBook?view=graph-powershell-beta)

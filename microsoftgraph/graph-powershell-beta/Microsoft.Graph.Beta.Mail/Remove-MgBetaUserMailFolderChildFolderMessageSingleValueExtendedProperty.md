@@ -231,6 +231,7 @@ INPUTOBJECT \<IMailIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgUserMailFolderChildFolderMessageSingleValueExtendedProperty](/powershell/module/Microsoft.Graph.Mail/Remove-MgUserMailFolderChildFolderMessageSingleValueExtendedProperty?view=graph-powershell-v1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermailfolderchildfoldermessagesinglevalueextendedproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermailfolderchildfoldermessagesinglevalueextendedproperty)
 

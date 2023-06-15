@@ -235,3 +235,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Move-MgBetaBetaUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Move-MgBetaUserMailFolderChildFolderMessage?view=graph-powershell-beta)

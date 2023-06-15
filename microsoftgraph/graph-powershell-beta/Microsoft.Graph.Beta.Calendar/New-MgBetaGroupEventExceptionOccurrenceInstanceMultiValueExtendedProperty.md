@@ -270,6 +270,7 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[New-MgGroupEventExceptionOccurrenceInstanceMultiValueExtendedProperty](/powershell/module/Microsoft.Graph.Calendar/New-MgGroupEventExceptionOccurrenceInstanceMultiValueExtendedProperty?view=graph-powershell-v1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetagroupeventexceptionoccurrenceinstancemultivalueextendedproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetagroupeventexceptionoccurrenceinstancemultivalueextendedproperty)
 

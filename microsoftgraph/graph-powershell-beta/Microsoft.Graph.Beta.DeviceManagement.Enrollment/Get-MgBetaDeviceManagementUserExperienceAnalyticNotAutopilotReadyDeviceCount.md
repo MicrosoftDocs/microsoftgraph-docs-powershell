@@ -80,3 +80,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDeviceCount](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Get-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDeviceCount?view=graph-powershell-v1.0)

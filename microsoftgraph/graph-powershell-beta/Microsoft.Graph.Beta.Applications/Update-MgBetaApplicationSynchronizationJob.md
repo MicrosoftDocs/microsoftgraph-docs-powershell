@@ -601,5 +601,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Value <String>]`: Value for this key-value pair. For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
 
 ## RELATED LINKS
+[Update-MgApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/Update-MgApplicationSynchronizationJob?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/Update-MgApplicationSynchronizationJob?view=graph-powershell-v1.0)

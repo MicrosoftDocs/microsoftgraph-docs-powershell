@@ -522,5 +522,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[TeamsClientSoftwareUpdateStatus <IMicrosoftGraphTeamworkSoftwareUpdateStatus>]`: teamworkSoftwareUpdateStatus
 
 ## RELATED LINKS
+[Update-MgTeamworkDeviceHealth](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamworkDeviceHealth?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgTeamworkDeviceHealth](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamworkDeviceHealth?view=graph-powershell-v1.0)

@@ -96,3 +96,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgAdministrativeUnitCount](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgAdministrativeUnitCount?view=graph-powershell-v1.0)

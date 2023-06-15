@@ -165,6 +165,7 @@ INPUTOBJECT \<IMailIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUserMailFolderChildFolderMultiValueExtendedPropertyCount](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMailFolderChildFolderMultiValueExtendedPropertyCount?view=graph-powershell-v1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfolderchildfoldermultivalueextendedpropertycount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfolderchildfoldermultivalueextendedpropertycount)
 

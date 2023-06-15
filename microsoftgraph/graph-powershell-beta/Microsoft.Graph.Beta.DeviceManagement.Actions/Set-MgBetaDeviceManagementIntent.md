@@ -277,3 +277,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
+[Set-MgDeviceManagementIntent](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Set-MgDeviceManagementIntent?view=graph-powershell-v1.0)

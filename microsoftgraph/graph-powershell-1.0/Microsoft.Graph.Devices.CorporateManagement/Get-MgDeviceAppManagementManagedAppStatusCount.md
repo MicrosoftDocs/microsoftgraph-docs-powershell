@@ -81,3 +81,4 @@ ALIASES
 Get-MgDeviceAppMgtManagedAppStatusCount
 
 ## RELATED LINKS
+[Get-MgBetaBetaDeviceAppManagementManagedAppStatusCount](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementManagedAppStatusCount?view=graph-powershell-beta)

@@ -911,5 +911,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[BinaryData <Byte[]>]`: 
 
 ## RELATED LINKS
+[Update-MgUserMailFolderChildFolder](/powershell/module/Microsoft.Graph.Mail/Update-MgUserMailFolderChildFolder?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgUserMailFolderChildFolder](/powershell/module/Microsoft.Graph.Mail/Update-MgUserMailFolderChildFolder?view=graph-powershell-v1.0)

@@ -162,3 +162,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VendorId <String>]`: The unique identifier of vendor
 
 ## RELATED LINKS
+[Get-MgFinancialCompanyCustomerPaymentCount](/powershell/module/Microsoft.Graph.Financials/Get-MgFinancialCompanyCustomerPaymentCount?view=graph-powershell-v1.0)

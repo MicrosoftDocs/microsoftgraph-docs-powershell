@@ -814,5 +814,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Value <String>]`: A property value.
 
 ## RELATED LINKS
+[Update-MgBetaBetaUserMailFolderChildFolder](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgBetaUserMailFolderChildFolder?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaBetaUserMailFolderChildFolder](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgBetaUserMailFolderChildFolder?view=graph-powershell-beta)

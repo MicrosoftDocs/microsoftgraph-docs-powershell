@@ -17127,5 +17127,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Worksheets <IMicrosoftGraphWorkbookWorksheet[]>]`: Represents a collection of worksheets associated with the workbook. Read-only.
 
 ## RELATED LINKS
+[New-MgBetaBetaDriveBundle](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveBundle?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[New-MgBetaBetaDriveBundle](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveBundle?view=graph-powershell-beta)

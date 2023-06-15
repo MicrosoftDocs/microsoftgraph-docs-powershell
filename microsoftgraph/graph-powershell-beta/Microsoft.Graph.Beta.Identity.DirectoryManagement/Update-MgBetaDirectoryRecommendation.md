@@ -572,3 +572,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Update-MgDirectoryRecommendation](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryRecommendation?view=graph-powershell-v1.0)

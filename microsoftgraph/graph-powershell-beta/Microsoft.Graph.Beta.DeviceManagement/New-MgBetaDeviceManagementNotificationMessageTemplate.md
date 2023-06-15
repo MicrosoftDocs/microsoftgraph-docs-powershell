@@ -266,3 +266,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Subject <String>]`: The Message Template Subject.
 
 ## RELATED LINKS
+[New-MgDeviceManagementNotificationMessageTemplate](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementNotificationMessageTemplate?view=graph-powershell-v1.0)

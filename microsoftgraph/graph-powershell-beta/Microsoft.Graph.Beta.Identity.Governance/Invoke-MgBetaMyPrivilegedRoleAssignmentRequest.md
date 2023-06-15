@@ -151,3 +151,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Invoke-MgMyPrivilegedRoleAssignmentRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgMyPrivilegedRoleAssignmentRequest?view=graph-powershell-v1.0)

@@ -184,3 +184,4 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaBetaUserContactMultiValueExtendedProperty](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Remove-MgBetaUserContactMultiValueExtendedProperty?view=graph-powershell-beta)

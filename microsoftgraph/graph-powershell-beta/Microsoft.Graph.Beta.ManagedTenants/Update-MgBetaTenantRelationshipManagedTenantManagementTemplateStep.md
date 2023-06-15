@@ -774,5 +774,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[VersionInformation <String>]`: 
 
 ## RELATED LINKS
+[Update-MgTenantRelationshipManagedTenantManagementTemplateStep](/powershell/module/Microsoft.Graph.ManagedTenants/Update-MgTenantRelationshipManagedTenantManagementTemplateStep?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgTenantRelationshipManagedTenantManagementTemplateStep](/powershell/module/Microsoft.Graph.ManagedTenants/Update-MgTenantRelationshipManagedTenantManagementTemplateStep?view=graph-powershell-v1.0)

@@ -211,3 +211,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaBetaUserDriveItemAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveItemAnalytic?view=graph-powershell-beta)

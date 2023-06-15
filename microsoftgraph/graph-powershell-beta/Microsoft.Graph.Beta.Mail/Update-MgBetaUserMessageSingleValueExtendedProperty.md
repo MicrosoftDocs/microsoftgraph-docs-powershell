@@ -253,6 +253,7 @@ INPUTOBJECT \<IMailIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Update-MgUserMessageSingleValueExtendedProperty](/powershell/module/Microsoft.Graph.Mail/Update-MgUserMessageSingleValueExtendedProperty?view=graph-powershell-v1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetausermessagesinglevalueextendedproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetausermessagesinglevalueextendedproperty)
 

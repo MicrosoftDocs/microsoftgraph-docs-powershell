@@ -346,3 +346,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[InitiatedBy <String>]`: The identifier of the actor of the operation.
 
 ## RELATED LINKS
+[New-MgBetaBetaRiskyServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaRiskyServicePrincipal?view=graph-powershell-beta)

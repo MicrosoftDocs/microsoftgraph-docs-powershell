@@ -363,3 +363,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[State <String>]`: advancedConfigState
 
 ## RELATED LINKS
+[Update-MgPolicyAuthenticationMethodPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyAuthenticationMethodPolicy?view=graph-powershell-v1.0)

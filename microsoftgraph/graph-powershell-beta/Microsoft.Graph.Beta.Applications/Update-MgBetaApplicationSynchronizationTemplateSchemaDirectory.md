@@ -406,3 +406,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[SupportedApis <String[]>]`: 
 
 ## RELATED LINKS
+[Update-MgApplicationSynchronizationTemplateSchemaDirectory](/powershell/module/Microsoft.Graph.Applications/Update-MgApplicationSynchronizationTemplateSchemaDirectory?view=graph-powershell-v1.0)

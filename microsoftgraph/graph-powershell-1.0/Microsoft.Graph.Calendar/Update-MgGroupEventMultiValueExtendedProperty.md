@@ -243,3 +243,4 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Update-MgBetaBetaGroupEventMultiValueExtendedProperty](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaGroupEventMultiValueExtendedProperty?view=graph-powershell-beta)

@@ -769,5 +769,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[RoleScopeTagIds <String[]>]`: Scope tags for the profile.
 
 ## RELATED LINKS
+[New-MgDeviceManagementWindowsAutopilotDeviceIdentity](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/New-MgDeviceManagementWindowsAutopilotDeviceIdentity?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgDeviceManagementWindowsAutopilotDeviceIdentity](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/New-MgDeviceManagementWindowsAutopilotDeviceIdentity?view=graph-powershell-v1.0)

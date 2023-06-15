@@ -79,3 +79,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgPrivilegedAccessCount](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgPrivilegedAccessCount?view=graph-powershell-v1.0)

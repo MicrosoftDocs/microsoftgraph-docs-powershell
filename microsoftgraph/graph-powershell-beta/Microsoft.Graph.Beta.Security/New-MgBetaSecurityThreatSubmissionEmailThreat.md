@@ -540,3 +540,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[Value <String>]`: Specifies the value of the created tenant allow block list entry.
 
 ## RELATED LINKS
+[New-MgSecurityThreatSubmissionEmailThreat](/powershell/module/Microsoft.Graph.Security/New-MgSecurityThreatSubmissionEmailThreat?view=graph-powershell-v1.0)

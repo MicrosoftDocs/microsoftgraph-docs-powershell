@@ -254,6 +254,7 @@ INPUTOBJECT \<IMailIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[New-MgUserMailFolderChildFolderMultiValueExtendedProperty](/powershell/module/Microsoft.Graph.Mail/New-MgUserMailFolderChildFolderMultiValueExtendedProperty?view=graph-powershell-v1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfolderchildfoldermultivalueextendedproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfolderchildfoldermultivalueextendedproperty)
 

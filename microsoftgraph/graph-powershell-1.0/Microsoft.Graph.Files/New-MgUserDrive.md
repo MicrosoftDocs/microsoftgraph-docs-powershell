@@ -23949,5 +23949,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[TermStores <IMicrosoftGraphTermStore[]>]`: The collection of termStores under this site.
 
 ## RELATED LINKS
+[New-MgBetaBetaUserDrive](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDrive?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[New-MgBetaBetaUserDrive](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDrive?view=graph-powershell-beta)

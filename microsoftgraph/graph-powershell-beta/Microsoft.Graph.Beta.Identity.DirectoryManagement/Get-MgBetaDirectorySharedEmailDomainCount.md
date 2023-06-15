@@ -79,3 +79,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgDirectorySharedEmailDomainCount](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectorySharedEmailDomainCount?view=graph-powershell-v1.0)

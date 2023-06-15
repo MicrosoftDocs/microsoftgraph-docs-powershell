@@ -194,3 +194,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
 
 ## RELATED LINKS
+[Remove-MgExternalConnectionOperation](/powershell/module/Microsoft.Graph.Search/Remove-MgExternalConnectionOperation?view=graph-powershell-v1.0)

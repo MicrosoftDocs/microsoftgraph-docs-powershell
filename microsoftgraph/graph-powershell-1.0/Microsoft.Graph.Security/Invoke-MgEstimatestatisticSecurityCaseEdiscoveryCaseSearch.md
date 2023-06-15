@@ -176,6 +176,7 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[UserSourceId \<String\>\]: The unique identifier of userSource
 
 ## RELATED LINKS
+[Invoke-MgBetaBetaEstimatestatisticSecurityCaseEdiscoveryCaseSearch](/powershell/module/Microsoft.Graph.Beta.Security/Invoke-MgBetaEstimatestatisticSecurityCaseEdiscoveryCaseSearch?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/invoke-mgestimatestatisticsecuritycaseediscoverycasesearch](https://learn.microsoft.com/powershell/module/microsoft.graph.security/invoke-mgestimatestatisticsecuritycaseediscoverycasesearch)
 

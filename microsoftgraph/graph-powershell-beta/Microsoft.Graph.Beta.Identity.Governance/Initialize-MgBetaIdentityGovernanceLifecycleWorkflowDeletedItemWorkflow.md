@@ -9657,5 +9657,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[UserId <String>]`: UserId associated with this device registration record.
 
 ## RELATED LINKS
+[Initialize-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow](/powershell/module/Microsoft.Graph.Identity.Governance/Initialize-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Initialize-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow](/powershell/module/Microsoft.Graph.Identity.Governance/Initialize-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow?view=graph-powershell-v1.0)

@@ -316,6 +316,7 @@ INPUTOBJECT \<IPeopleIdentity\>: Identity Parameter
   \[WorkPositionId \<String\>\]: The unique identifier of workPosition
 
 ## RELATED LINKS
+[Update-MgUserAnalyticActivitystatistic](/powershell/module/Microsoft.Graph.People/Update-MgUserAnalyticActivitystatistic?view=graph-powershell-v1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauseranalyticactivitystatistic](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauseranalyticactivitystatistic)
 

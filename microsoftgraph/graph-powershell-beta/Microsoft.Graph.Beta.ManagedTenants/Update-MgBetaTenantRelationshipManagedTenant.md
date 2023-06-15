@@ -397,3 +397,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[OnboardingStatus <String>]`: workloadOnboardingStatus
 
 ## RELATED LINKS
+[Update-MgTenantRelationshipManagedTenant](/powershell/module/Microsoft.Graph.ManagedTenants/Update-MgTenantRelationshipManagedTenant?view=graph-powershell-v1.0)

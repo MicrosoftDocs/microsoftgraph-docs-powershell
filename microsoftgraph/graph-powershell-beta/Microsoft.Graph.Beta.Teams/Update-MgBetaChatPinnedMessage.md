@@ -443,5 +443,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebUrl <String>]`: Read-only. Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
+[Update-MgChatPinnedMessage](/powershell/module/Microsoft.Graph.Teams/Update-MgChatPinnedMessage?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgChatPinnedMessage](/powershell/module/Microsoft.Graph.Teams/Update-MgChatPinnedMessage?view=graph-powershell-v1.0)

@@ -79,3 +79,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgTeamworkDeviceCount](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDeviceCount?view=graph-powershell-v1.0)

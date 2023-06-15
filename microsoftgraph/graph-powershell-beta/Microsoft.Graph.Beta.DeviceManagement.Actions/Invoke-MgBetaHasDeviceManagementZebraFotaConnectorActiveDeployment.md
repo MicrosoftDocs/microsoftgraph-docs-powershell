@@ -84,3 +84,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Invoke-MgHasDeviceManagementZebraFotaConnectorActiveDeployment](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgHasDeviceManagementZebraFotaConnectorActiveDeployment?view=graph-powershell-v1.0)

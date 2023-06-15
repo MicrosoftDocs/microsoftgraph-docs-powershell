@@ -410,3 +410,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Name <String>]`: The display name of an entity instance.
 
 ## RELATED LINKS
+[New-MgUserMailFolderChildFolderMessageMention](/powershell/module/Microsoft.Graph.Mail/New-MgUserMailFolderChildFolderMessageMention?view=graph-powershell-v1.0)

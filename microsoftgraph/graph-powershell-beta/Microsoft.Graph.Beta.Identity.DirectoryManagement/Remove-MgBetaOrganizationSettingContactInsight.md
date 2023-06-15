@@ -195,3 +195,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgOrganizationSettingContactInsight](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgOrganizationSettingContactInsight?view=graph-powershell-v1.0)

@@ -198,3 +198,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[State <String>]`: contentState
 
 ## RELATED LINKS
+[Test-MgSecurityInformationProtectionSensitivityLabelClassificationResult](/powershell/module/Microsoft.Graph.Security/Test-MgSecurityInformationProtectionSensitivityLabelClassificationResult?view=graph-powershell-v1.0)

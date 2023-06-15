@@ -298,3 +298,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgBetaBetaChatMessageReplyDelta](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatMessageReplyDelta?view=graph-powershell-beta)

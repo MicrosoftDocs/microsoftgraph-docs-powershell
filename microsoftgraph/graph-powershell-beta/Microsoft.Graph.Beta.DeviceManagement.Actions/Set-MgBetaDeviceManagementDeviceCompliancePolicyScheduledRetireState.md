@@ -197,3 +197,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[State <ScheduledRetireState?>]`: Cancel or confirm scheduled retire 
 
 ## RELATED LINKS
+[Set-MgDeviceManagementDeviceCompliancePolicyScheduledRetireState](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Set-MgDeviceManagementDeviceCompliancePolicyScheduledRetireState?view=graph-powershell-v1.0)

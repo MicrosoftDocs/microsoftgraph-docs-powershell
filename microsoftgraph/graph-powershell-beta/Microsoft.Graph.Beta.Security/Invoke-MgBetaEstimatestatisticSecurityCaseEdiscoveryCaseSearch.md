@@ -210,6 +210,7 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[VulnerabilityId \<String\>\]: The unique identifier of vulnerability
 
 ## RELATED LINKS
+[Invoke-MgEstimatestatisticSecurityCaseEdiscoveryCaseSearch](/powershell/module/Microsoft.Graph.Security/Invoke-MgEstimatestatisticSecurityCaseEdiscoveryCaseSearch?view=graph-powershell-v1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaestimatestatisticsecuritycaseediscoverycasesearch](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaestimatestatisticsecuritycaseediscoverycasesearch)
 

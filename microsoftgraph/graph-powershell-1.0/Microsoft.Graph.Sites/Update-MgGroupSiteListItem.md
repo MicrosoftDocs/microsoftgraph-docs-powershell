@@ -13653,5 +13653,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
 ## RELATED LINKS
+[Update-MgBetaBetaGroupSiteListItem](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteListItem?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaBetaGroupSiteListItem](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteListItem?view=graph-powershell-beta)

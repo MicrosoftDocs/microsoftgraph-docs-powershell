@@ -29064,5 +29064,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Resource <String>]`: Required. Specifies the resource that will be monitored for changes. Do not include the base URL (https://graph.microsoft.com/beta/). See the possible resource path values for each supported resource.
 
 ## RELATED LINKS
+[Update-MgSiteList](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteList?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgSiteList](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteList?view=graph-powershell-v1.0)

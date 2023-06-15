@@ -175,3 +175,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgUserPhoto](/powershell/module/Microsoft.Graph.Users/Remove-MgUserPhoto?view=graph-powershell-v1.0)

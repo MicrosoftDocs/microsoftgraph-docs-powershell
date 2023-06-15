@@ -944,5 +944,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: ID of the user assigned to the timeOff. Required.
 
 ## RELATED LINKS
+[Set-MgGroupTeamSchedule](/powershell/module/Microsoft.Graph.Teams/Set-MgGroupTeamSchedule?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Set-MgGroupTeamSchedule](/powershell/module/Microsoft.Graph.Teams/Set-MgGroupTeamSchedule?view=graph-powershell-v1.0)

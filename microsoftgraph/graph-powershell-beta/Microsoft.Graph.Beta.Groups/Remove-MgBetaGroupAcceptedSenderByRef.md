@@ -235,3 +235,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Remove-MgGroupAcceptedSenderByRef](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupAcceptedSenderByRef?view=graph-powershell-v1.0)

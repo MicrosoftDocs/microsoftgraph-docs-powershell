@@ -208,3 +208,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgOnPremisePublishingProfileConnectorMemberOfByRef](/powershell/module/Microsoft.Graph.Applications/Get-MgOnPremisePublishingProfileConnectorMemberOfByRef?view=graph-powershell-v1.0)

@@ -468,5 +468,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ExternalId <String>]`: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
 
 ## RELATED LINKS
+[Update-MgTeamPrimaryChannelTab](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamPrimaryChannelTab?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgTeamPrimaryChannelTab](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamPrimaryChannelTab?view=graph-powershell-v1.0)

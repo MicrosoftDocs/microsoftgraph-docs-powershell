@@ -213,3 +213,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Confirm-MgBetaBetaApplicationMemberObject](/powershell/module/Microsoft.Graph.Beta.Applications/Confirm-MgBetaApplicationMemberObject?view=graph-powershell-beta)

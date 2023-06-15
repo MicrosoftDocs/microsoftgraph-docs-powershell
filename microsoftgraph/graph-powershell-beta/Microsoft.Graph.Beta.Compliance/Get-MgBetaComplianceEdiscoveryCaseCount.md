@@ -79,3 +79,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgComplianceEdiscoveryCaseCount](/powershell/module/Microsoft.Graph.Compliance/Get-MgComplianceEdiscoveryCaseCount?view=graph-powershell-v1.0)

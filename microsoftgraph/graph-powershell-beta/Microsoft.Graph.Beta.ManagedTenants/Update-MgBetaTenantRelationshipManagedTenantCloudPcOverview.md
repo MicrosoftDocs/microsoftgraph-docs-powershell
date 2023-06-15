@@ -609,3 +609,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsProtectionStateId <String>]`: The unique identifier of windowsProtectionState
 
 ## RELATED LINKS
+[Update-MgTenantRelationshipManagedTenantCloudPcOverview](/powershell/module/Microsoft.Graph.ManagedTenants/Update-MgTenantRelationshipManagedTenantCloudPcOverview?view=graph-powershell-v1.0)

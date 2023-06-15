@@ -129,3 +129,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgDeviceManagementDeviceCompliancePolicyDeviceScheduledToRetire](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementDeviceCompliancePolicyDeviceScheduledToRetire?view=graph-powershell-v1.0)

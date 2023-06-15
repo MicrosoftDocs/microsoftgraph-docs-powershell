@@ -263,3 +263,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[State <NdesConnectorState?>]`: The current status of the Ndes Connector.
 
 ## RELATED LINKS
+[New-MgDeviceManagementNdeConnector](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementNdeConnector?view=graph-powershell-v1.0)

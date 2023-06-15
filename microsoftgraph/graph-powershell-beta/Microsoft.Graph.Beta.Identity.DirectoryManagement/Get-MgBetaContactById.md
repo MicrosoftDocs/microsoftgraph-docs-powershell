@@ -174,3 +174,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Types <String[]>]`: 
 
 ## RELATED LINKS
+[Get-MgContactById](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgContactById?view=graph-powershell-v1.0)

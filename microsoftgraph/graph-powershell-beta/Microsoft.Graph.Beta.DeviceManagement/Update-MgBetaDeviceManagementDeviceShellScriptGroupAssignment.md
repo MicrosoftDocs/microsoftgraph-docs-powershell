@@ -363,5 +363,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
 ## RELATED LINKS
+[Update-MgDeviceManagementDeviceShellScriptGroupAssignment](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementDeviceShellScriptGroupAssignment?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgDeviceManagementDeviceShellScriptGroupAssignment](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementDeviceShellScriptGroupAssignment?view=graph-powershell-v1.0)

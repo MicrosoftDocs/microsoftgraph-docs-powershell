@@ -181,3 +181,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[PackageIds <String[]>]`: 
 
 ## RELATED LINKS
+[Approve-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSettingApp](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Approve-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSettingApp?view=graph-powershell-v1.0)

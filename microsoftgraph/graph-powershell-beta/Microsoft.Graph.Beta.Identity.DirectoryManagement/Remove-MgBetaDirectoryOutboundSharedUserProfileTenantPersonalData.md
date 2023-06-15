@@ -195,3 +195,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgDirectoryOutboundSharedUserProfileTenantPersonalData](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDirectoryOutboundSharedUserProfileTenantPersonalData?view=graph-powershell-v1.0)

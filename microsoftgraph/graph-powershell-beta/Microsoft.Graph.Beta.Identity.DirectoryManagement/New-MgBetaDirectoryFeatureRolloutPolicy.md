@@ -255,3 +255,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[IsEnabled <Boolean?>]`: Indicates whether the feature rollout is enabled.
 
 ## RELATED LINKS
+[New-MgDirectoryFeatureRolloutPolicy](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryFeatureRolloutPolicy?view=graph-powershell-v1.0)

@@ -150,6 +150,7 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaBetaUserEventMultiValueExtendedPropertyCount](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserEventMultiValueExtendedPropertyCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusereventmultivalueextendedpropertycount](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusereventmultivalueextendedpropertycount)
 

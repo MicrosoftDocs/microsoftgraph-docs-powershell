@@ -318,6 +318,7 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgGroupEventInstanceSingleValueExtendedProperty](/powershell/module/Microsoft.Graph.Calendar/Get-MgGroupEventInstanceSingleValueExtendedProperty?view=graph-powershell-v1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupeventinstancesinglevalueextendedproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupeventinstancesinglevalueextendedproperty)
 

@@ -716,5 +716,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
 
 ## RELATED LINKS
+[New-MgUserOutlookTaskFolderTask](/powershell/module/Microsoft.Graph.Users/New-MgUserOutlookTaskFolderTask?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgUserOutlookTaskFolderTask](/powershell/module/Microsoft.Graph.Users/New-MgUserOutlookTaskFolderTask?view=graph-powershell-v1.0)

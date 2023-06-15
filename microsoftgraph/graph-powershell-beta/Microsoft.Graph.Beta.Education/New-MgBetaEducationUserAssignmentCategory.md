@@ -240,3 +240,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+[New-MgEducationUserAssignmentCategory](/powershell/module/Microsoft.Graph.Education/New-MgEducationUserAssignmentCategory?view=graph-powershell-v1.0)

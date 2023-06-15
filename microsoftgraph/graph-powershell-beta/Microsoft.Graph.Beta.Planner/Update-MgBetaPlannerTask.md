@@ -850,5 +850,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[SeriesId <String>]`: The recurrence series this task belongs to. A GUID-based value that serves as the unique identifier for a series.
 
 ## RELATED LINKS
+[Update-MgPlannerTask](/powershell/module/Microsoft.Graph.Planner/Update-MgPlannerTask?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgPlannerTask](/powershell/module/Microsoft.Graph.Planner/Update-MgPlannerTask?view=graph-powershell-v1.0)

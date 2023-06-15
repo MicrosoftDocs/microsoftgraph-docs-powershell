@@ -230,3 +230,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Vendor <String>]`: 
 
 ## RELATED LINKS
+[New-MgSecurityProviderTenantSetting](/powershell/module/Microsoft.Graph.Security/New-MgSecurityProviderTenantSetting?view=graph-powershell-v1.0)

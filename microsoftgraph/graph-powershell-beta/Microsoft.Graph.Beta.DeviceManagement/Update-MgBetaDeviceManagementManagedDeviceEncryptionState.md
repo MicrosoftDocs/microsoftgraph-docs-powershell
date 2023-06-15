@@ -521,5 +521,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[PolicyName <String>]`: Policy Name for Encryption Report
 
 ## RELATED LINKS
+[Update-MgDeviceManagementManagedDeviceEncryptionState](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementManagedDeviceEncryptionState?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgDeviceManagementManagedDeviceEncryptionState](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementManagedDeviceEncryptionState?view=graph-powershell-v1.0)

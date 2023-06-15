@@ -236,3 +236,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgSiteListActivity](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListActivity?view=graph-powershell-v1.0)

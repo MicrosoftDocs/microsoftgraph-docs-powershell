@@ -81,3 +81,4 @@ ALIASES
 Get-MgBetaWuUpdatableAssetCount
 
 ## RELATED LINKS
+[Get-MgWindowsUpdatesUpdatableAssetCount](/powershell/module/Microsoft.Graph.WindowsUpdates/Get-MgWindowsUpdatesUpdatableAssetCount?view=graph-powershell-v1.0)

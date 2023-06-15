@@ -224,3 +224,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TenantDisplayName <String>]`: The display name for the managed tenant. Required. Read-only.
 
 ## RELATED LINKS
+[New-MgTenantRelationshipManagedTenantConditionalAccessPolicyCoverage](/powershell/module/Microsoft.Graph.ManagedTenants/New-MgTenantRelationshipManagedTenantConditionalAccessPolicyCoverage?view=graph-powershell-v1.0)

@@ -79,3 +79,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgDeviceManagementDetectedAppCount](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDetectedAppCount?view=graph-powershell-v1.0)

@@ -79,3 +79,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgEducationMeSchoolCount](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeSchoolCount?view=graph-powershell-v1.0)

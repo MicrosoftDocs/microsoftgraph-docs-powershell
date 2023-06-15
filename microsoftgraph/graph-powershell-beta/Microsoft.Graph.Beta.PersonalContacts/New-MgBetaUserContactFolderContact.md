@@ -1003,3 +1003,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String>]`: websiteType
 
 ## RELATED LINKS
+[New-MgUserContactFolderContact](/powershell/module/Microsoft.Graph.PersonalContacts/New-MgUserContactFolderContact?view=graph-powershell-v1.0)

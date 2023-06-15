@@ -100,3 +100,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Sync-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSettingApp](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Sync-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSettingApp?view=graph-powershell-v1.0)

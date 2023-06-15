@@ -252,3 +252,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
+[Remove-MgComplianceEdiscoveryCaseCustodianHold](/powershell/module/Microsoft.Graph.Compliance/Remove-MgComplianceEdiscoveryCaseCustodianHold?view=graph-powershell-v1.0)

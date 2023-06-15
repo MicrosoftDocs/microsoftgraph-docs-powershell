@@ -230,3 +230,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Confirm-MgDirectoryAdministrativeUnitMemberObject](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Confirm-MgDirectoryAdministrativeUnitMemberObject?view=graph-powershell-v1.0)

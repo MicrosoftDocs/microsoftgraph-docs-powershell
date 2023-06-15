@@ -184,3 +184,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgFollowUserDriveRoot](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgFollowUserDriveRoot?view=graph-powershell-v1.0)

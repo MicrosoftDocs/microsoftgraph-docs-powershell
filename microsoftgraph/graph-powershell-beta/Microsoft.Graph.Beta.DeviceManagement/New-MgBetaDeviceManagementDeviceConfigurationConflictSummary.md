@@ -207,3 +207,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[SourceType <String>]`: settingSourceType
 
 ## RELATED LINKS
+[New-MgDeviceManagementDeviceConfigurationConflictSummary](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementDeviceConfigurationConflictSummary?view=graph-powershell-v1.0)

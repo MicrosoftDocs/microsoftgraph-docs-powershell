@@ -516,3 +516,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TotalEnterpriseLicenses <Int32?>]`: The total number of cloud PC devices that have the Enterprise SKU. Optional. Read-only.
 
 ## RELATED LINKS
+[New-MgTenantRelationshipManagedTenantCloudPcOverview](/powershell/module/Microsoft.Graph.ManagedTenants/New-MgTenantRelationshipManagedTenantCloudPcOverview?view=graph-powershell-v1.0)

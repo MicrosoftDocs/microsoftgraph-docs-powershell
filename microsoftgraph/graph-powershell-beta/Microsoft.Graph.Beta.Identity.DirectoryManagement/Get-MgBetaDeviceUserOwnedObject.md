@@ -167,3 +167,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: 
 
 ## RELATED LINKS
+[Get-MgDeviceUserOwnedObject](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDeviceUserOwnedObject?view=graph-powershell-v1.0)

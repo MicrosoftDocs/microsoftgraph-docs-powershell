@@ -300,6 +300,7 @@ INPUTOBJECT \<IMailIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUserMessageMultiValueExtendedProperty](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMessageMultiValueExtendedProperty?view=graph-powershell-v1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermessagemultivalueextendedproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermessagemultivalueextendedproperty)
 

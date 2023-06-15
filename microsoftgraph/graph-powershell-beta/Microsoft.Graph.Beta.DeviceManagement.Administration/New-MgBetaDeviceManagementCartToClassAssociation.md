@@ -262,3 +262,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Version <Int32?>]`: Version of the CartToClassAssociation.
 
 ## RELATED LINKS
+[New-MgDeviceManagementCartToClassAssociation](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementCartToClassAssociation?view=graph-powershell-v1.0)

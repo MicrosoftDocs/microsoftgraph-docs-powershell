@@ -174,3 +174,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Update-MgTeamAppPreApproval](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamAppPreApproval?view=graph-powershell-v1.0)

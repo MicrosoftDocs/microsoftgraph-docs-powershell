@@ -80,3 +80,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgDeviceManagementReportCachedReportConfigurationCount](/powershell/module/Microsoft.Graph.Reports/Get-MgDeviceManagementReportCachedReportConfigurationCount?view=graph-powershell-v1.0)

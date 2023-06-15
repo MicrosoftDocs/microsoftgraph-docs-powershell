@@ -862,5 +862,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[SuccessCount <Int32?>]`: Number of succeeded Users
 
 ## RELATED LINKS
+[Update-MgDeviceManagementDeviceConfiguration](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementDeviceConfiguration?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgDeviceManagementDeviceConfiguration](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementDeviceConfiguration?view=graph-powershell-v1.0)

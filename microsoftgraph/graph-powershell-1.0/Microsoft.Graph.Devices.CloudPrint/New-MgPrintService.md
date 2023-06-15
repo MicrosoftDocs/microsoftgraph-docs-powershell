@@ -168,3 +168,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Uri <String>]`: The URI that can be used to access the service.
 
 ## RELATED LINKS
+[New-MgBetaBetaPrintService](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintService?view=graph-powershell-beta)

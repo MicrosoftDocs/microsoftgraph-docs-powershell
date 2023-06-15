@@ -301,3 +301,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UsersCount <Int32?>]`: 
 
 ## RELATED LINKS
+[New-MgPrivilegedRole](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgPrivilegedRole?view=graph-powershell-v1.0)

@@ -245,3 +245,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: UserId associated with this device registration record.
 
 ## RELATED LINKS
+[New-MgDeviceAppManagementWindowsInformationProtectionDeviceRegistration](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementWindowsInformationProtectionDeviceRegistration?view=graph-powershell-v1.0)

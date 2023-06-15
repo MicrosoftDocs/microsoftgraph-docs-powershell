@@ -521,5 +521,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Years <IMicrosoftGraphIndustryDataYearTimePeriodDefinition[]>]`: Set of years represented in the system.
 
 ## RELATED LINKS
+[Update-MgExternal](/powershell/module/Microsoft.Graph.Search/Update-MgExternal?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgExternal](/powershell/module/Microsoft.Graph.Search/Update-MgExternal?view=graph-powershell-v1.0)

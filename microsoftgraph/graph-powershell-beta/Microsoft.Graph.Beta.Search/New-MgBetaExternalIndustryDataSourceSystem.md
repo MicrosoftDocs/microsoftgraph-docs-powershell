@@ -243,3 +243,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[Value <IMicrosoftGraphIndustryDataReferenceDefinition>]`: referenceDefinition
 
 ## RELATED LINKS
+[New-MgExternalIndustryDataSourceSystem](/powershell/module/Microsoft.Graph.Search/New-MgExternalIndustryDataSourceSystem?view=graph-powershell-v1.0)

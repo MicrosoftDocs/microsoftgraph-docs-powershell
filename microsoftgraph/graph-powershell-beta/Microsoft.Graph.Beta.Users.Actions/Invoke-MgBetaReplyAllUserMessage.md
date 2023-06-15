@@ -458,5 +458,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebLink <String>]`: 
 
 ## RELATED LINKS
+[Invoke-MgReplyAllUserMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgReplyAllUserMessage?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Invoke-MgReplyAllUserMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgReplyAllUserMessage?view=graph-powershell-v1.0)

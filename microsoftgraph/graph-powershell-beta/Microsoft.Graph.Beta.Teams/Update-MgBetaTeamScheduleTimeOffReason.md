@@ -361,3 +361,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
+[Update-MgTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamScheduleTimeOffReason?view=graph-powershell-v1.0)

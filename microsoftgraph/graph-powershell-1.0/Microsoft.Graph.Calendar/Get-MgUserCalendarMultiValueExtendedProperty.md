@@ -310,3 +310,4 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaBetaUserCalendarMultiValueExtendedProperty](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserCalendarMultiValueExtendedProperty?view=graph-powershell-beta)

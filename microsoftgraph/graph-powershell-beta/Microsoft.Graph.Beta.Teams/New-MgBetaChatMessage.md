@@ -936,6 +936,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebUrl <String>]`: Read-only. Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
+[New-MgChatMessage](/powershell/module/Microsoft.Graph.Teams/New-MgChatMessage?view=graph-powershell-v1.0)
 
 ## PARAMETERS
 
@@ -1469,3 +1470,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[New-MgChatMessage](/powershell/module/Microsoft.Graph.Teams/New-MgChatMessage?view=graph-powershell-v1.0)

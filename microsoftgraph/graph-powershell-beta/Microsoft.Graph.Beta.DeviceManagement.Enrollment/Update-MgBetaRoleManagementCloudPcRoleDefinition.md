@@ -435,3 +435,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ExcludedResourceActions <String[]>]`: 
 
 ## RELATED LINKS
+[Update-MgRoleManagementCloudPcRoleDefinition](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Update-MgRoleManagementCloudPcRoleDefinition?view=graph-powershell-v1.0)

@@ -1351,5 +1351,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebUrl <String>]`: Read-only. Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
+[Update-MgTeamChannelMessage](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamChannelMessage?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgTeamChannelMessage](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamChannelMessage?view=graph-powershell-v1.0)

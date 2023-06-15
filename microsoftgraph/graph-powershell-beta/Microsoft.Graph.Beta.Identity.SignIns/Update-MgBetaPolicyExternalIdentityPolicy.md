@@ -235,3 +235,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[AllowExternalIdentitiesToLeave <Boolean?>]`: Defines whether external users can leave the guest tenant. If set to false, self-service controls are disabled, and the admin of the guest tenant must manually remove the external user from the guest tenant. When the external user leaves the tenant, their data in the guest tenant is first soft-deleted then permanently deleted in 30 days.
 
 ## RELATED LINKS
+[Update-MgPolicyExternalIdentityPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyExternalIdentityPolicy?view=graph-powershell-v1.0)

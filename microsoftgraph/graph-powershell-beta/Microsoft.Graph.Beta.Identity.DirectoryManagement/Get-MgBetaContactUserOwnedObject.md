@@ -167,3 +167,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: 
 
 ## RELATED LINKS
+[Get-MgContactUserOwnedObject](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgContactUserOwnedObject?view=graph-powershell-v1.0)

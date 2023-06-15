@@ -9669,5 +9669,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[New-MgSiteAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Sites/New-MgSiteAnalyticItemActivityStatActivity?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgSiteAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Sites/New-MgSiteAnalyticItemActivityStatActivity?view=graph-powershell-v1.0)

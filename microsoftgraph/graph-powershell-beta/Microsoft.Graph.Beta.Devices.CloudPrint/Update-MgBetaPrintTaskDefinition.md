@@ -310,3 +310,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[Event <String>]`: printEvent
 
 ## RELATED LINKS
+[Update-MgPrintTaskDefinition](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Update-MgPrintTaskDefinition?view=graph-powershell-v1.0)

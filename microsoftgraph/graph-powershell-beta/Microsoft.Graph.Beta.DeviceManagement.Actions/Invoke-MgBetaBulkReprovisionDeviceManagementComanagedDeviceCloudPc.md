@@ -149,3 +149,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ManagedDeviceIds <String[]>]`: 
 
 ## RELATED LINKS
+[Invoke-MgBulkReprovisionDeviceManagementComanagedDeviceCloudPc](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgBulkReprovisionDeviceManagementComanagedDeviceCloudPc?view=graph-powershell-v1.0)

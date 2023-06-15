@@ -1551,5 +1551,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Status <String>]`: connectorStatus
 
 ## RELATED LINKS
+[New-MgOnPremisePublishingProfileConnectorGroup](/powershell/module/Microsoft.Graph.Applications/New-MgOnPremisePublishingProfileConnectorGroup?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgOnPremisePublishingProfileConnectorGroup](/powershell/module/Microsoft.Graph.Applications/New-MgOnPremisePublishingProfileConnectorGroup?view=graph-powershell-v1.0)

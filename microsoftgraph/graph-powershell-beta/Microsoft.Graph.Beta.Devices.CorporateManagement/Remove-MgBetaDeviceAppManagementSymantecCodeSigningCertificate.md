@@ -113,3 +113,4 @@ ALIASES
 Remove-MgDeviceAppMgtSymantecCodeSigningCertificate
 
 ## RELATED LINKS
+[Remove-MgDeviceAppManagementSymantecCodeSigningCertificate](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Remove-MgDeviceAppManagementSymantecCodeSigningCertificate?view=graph-powershell-v1.0)

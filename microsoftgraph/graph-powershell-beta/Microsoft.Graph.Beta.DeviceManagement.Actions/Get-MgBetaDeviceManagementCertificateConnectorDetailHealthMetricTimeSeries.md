@@ -262,3 +262,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[StartDateTime <DateTime?>]`: Start time of the series being requested.
 
 ## RELATED LINKS
+[Get-MgDeviceManagementCertificateConnectorDetailHealthMetricTimeSeries](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Get-MgDeviceManagementCertificateConnectorDetailHealthMetricTimeSeries?view=graph-powershell-v1.0)

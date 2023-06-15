@@ -279,3 +279,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String>]`: attackSimulationOperationType
 
 ## RELATED LINKS
+[New-MgSecurityAttackSimulationOperation](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAttackSimulationOperation?view=graph-powershell-v1.0)

@@ -395,3 +395,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
+[New-MgDeviceAppManagementPolicySetItem](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementPolicySetItem?view=graph-powershell-v1.0)

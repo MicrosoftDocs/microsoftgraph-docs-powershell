@@ -1556,5 +1556,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebUrl <String>]`: Contains a link to the website itself.
 
 ## RELATED LINKS
+[Update-MgUserProfile](/powershell/module/Microsoft.Graph.People/Update-MgUserProfile?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgUserProfile](/powershell/module/Microsoft.Graph.People/Update-MgUserProfile?view=graph-powershell-v1.0)

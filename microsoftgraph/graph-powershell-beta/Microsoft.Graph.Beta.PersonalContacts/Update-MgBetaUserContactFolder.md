@@ -592,5 +592,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Value <String>]`: A property value.
 
 ## RELATED LINKS
+[Update-MgUserContactFolder](/powershell/module/Microsoft.Graph.PersonalContacts/Update-MgUserContactFolder?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgUserContactFolder](/powershell/module/Microsoft.Graph.PersonalContacts/Update-MgUserContactFolder?view=graph-powershell-v1.0)

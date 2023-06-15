@@ -115,3 +115,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Remove-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSetting](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSetting?view=graph-powershell-v1.0)

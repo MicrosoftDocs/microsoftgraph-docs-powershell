@@ -79,3 +79,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgInformationProtectionSensitivityLabelCount](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgInformationProtectionSensitivityLabelCount?view=graph-powershell-v1.0)

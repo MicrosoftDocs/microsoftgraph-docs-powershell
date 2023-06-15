@@ -405,3 +405,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserPrincipalName <String>]`: User Principal Name.
 
 ## RELATED LINKS
+[New-MgBetaBetaDeviceManagementWindowsAutopilotDeviceIdentity](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/New-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity?view=graph-powershell-beta)

@@ -181,3 +181,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EventDateTime <DateTime?>]`: Time when the event occurred .
 
 ## RELATED LINKS
+[New-MgBetaBetaDeviceManagementTroubleshootingEvent](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementTroubleshootingEvent?view=graph-powershell-beta)

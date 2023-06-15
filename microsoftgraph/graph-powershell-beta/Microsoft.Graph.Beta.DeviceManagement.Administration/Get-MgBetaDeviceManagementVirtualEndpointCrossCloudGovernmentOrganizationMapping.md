@@ -80,3 +80,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgDeviceManagementVirtualEndpointCrossCloudGovernmentOrganizationMapping](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementVirtualEndpointCrossCloudGovernmentOrganizationMapping?view=graph-powershell-v1.0)

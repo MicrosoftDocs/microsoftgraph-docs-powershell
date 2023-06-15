@@ -370,3 +370,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserPrincipalName <String>]`: The user principal name (UPN) of the user assigned to the cloud PC device. Required. Read-only.
 
 ## RELATED LINKS
+[New-MgTenantRelationshipManagedTenantCloudPcDevice](/powershell/module/Microsoft.Graph.ManagedTenants/New-MgTenantRelationshipManagedTenantCloudPcDevice?view=graph-powershell-v1.0)

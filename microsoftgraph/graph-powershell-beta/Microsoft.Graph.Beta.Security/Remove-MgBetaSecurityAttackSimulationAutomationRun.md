@@ -232,3 +232,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
+[Remove-MgSecurityAttackSimulationAutomationRun](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityAttackSimulationAutomationRun?view=graph-powershell-v1.0)

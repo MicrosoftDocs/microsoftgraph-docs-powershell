@@ -406,3 +406,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
+[New-MgTeamScheduleOfferShiftRequest](/powershell/module/Microsoft.Graph.Teams/New-MgTeamScheduleOfferShiftRequest?view=graph-powershell-v1.0)

@@ -155,3 +155,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[Get-MgRoleManagementCloudPcRoleAssignmentRoleDefinition](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Get-MgRoleManagementCloudPcRoleAssignmentRoleDefinition?view=graph-powershell-v1.0)

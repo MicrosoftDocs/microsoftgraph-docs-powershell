@@ -79,3 +79,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgDeviceManagementTemplateCount](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementTemplateCount?view=graph-powershell-v1.0)

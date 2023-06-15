@@ -19032,5 +19032,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[Event <String>]`: printEvent
 
 ## RELATED LINKS
+[Update-MgPrint](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Update-MgPrint?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgPrint](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Update-MgPrint?view=graph-powershell-v1.0)

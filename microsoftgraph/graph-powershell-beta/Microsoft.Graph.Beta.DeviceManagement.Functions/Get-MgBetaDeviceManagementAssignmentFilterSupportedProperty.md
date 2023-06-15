@@ -203,3 +203,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Userid <String>]`: Usage: userid='{userid}'
 
 ## RELATED LINKS
+[Get-MgDeviceManagementAssignmentFilterSupportedProperty](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementAssignmentFilterSupportedProperty?view=graph-powershell-v1.0)

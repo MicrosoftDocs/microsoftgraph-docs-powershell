@@ -239,3 +239,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Remove-MgSiteListItemField](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteListItemField?view=graph-powershell-v1.0)

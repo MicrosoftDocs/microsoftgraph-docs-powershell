@@ -232,3 +232,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+[Get-MgReportOffice365GroupActivityStorage](/powershell/module/Microsoft.Graph.Reports/Get-MgReportOffice365GroupActivityStorage?view=graph-powershell-v1.0)

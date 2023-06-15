@@ -150,10 +150,10 @@ function Add-Link {
 
                 $Block = $Matches[0]
                 $Link = "> [!NOTE]`n> $LinkTitle [$CommandRename]($BaseUrl/$FullModuleName$View)`r`n`n## SYNTAX"
-                #$LinkOnEndOfDoc = "## RELATED LINKS`r`n[$LinkTitle]($BaseUrl/$FullModuleName$View&branch=pr-en-us-275)"
+                $LinkOnEndOfDoc = "## RELATED LINKS`r`n[$CommandRename]($BaseUrl/$FullModuleName$View)"
                 $NewBlock = $Block.Replace("## SYNTAX", $Link)
                 (Get-Content $File) | 
-                Foreach-Object { $_ -replace '## SYNTAX', $Link}  | 
+                Foreach-Object { $_ -replace '## RELATED LINKS', $LinkOnEndOfDoc}  | 
                 Out-File $File
                 }
     }

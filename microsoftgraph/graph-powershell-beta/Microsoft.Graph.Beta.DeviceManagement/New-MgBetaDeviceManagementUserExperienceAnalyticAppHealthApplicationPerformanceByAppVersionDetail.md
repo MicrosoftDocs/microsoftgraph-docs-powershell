@@ -282,3 +282,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[IsMostUsedVersion <Boolean?>]`: Is the version of application the most used version for that app.
 
 ## RELATED LINKS
+[New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail?view=graph-powershell-v1.0)

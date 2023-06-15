@@ -189,3 +189,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Restart-MgBetaBetaUserManagedDeviceNow](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Restart-MgBetaUserManagedDeviceNow?view=graph-powershell-beta)

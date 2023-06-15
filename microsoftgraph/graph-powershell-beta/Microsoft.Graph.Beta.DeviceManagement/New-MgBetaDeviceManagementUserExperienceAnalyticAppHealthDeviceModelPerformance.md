@@ -267,3 +267,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ModelAppHealthStatus <String>]`: The overall app health status of the device model.
 
 ## RELATED LINKS
+[New-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance?view=graph-powershell-v1.0)

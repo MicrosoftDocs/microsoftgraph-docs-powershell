@@ -625,5 +625,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserType <String>]`: windowsUserType
 
 ## RELATED LINKS
+[Update-MgDeviceManagementWindowsAutopilotDeploymentProfile](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Update-MgDeviceManagementWindowsAutopilotDeploymentProfile?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgDeviceManagementWindowsAutopilotDeploymentProfile](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Update-MgDeviceManagementWindowsAutopilotDeploymentProfile?view=graph-powershell-v1.0)

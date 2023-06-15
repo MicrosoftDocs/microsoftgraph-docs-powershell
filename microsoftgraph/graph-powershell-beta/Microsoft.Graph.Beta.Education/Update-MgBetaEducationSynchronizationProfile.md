@@ -408,3 +408,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[StatusMessage <String>]`: Status message for the synchronization stage of the current profile.
 
 ## RELATED LINKS
+[Update-MgEducationSynchronizationProfile](/powershell/module/Microsoft.Graph.Education/Update-MgEducationSynchronizationProfile?view=graph-powershell-v1.0)

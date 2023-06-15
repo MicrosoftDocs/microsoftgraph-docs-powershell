@@ -296,3 +296,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Version <String>]`: The version of the ExchangeConnectorAgent
 
 ## RELATED LINKS
+[New-MgBetaBetaDeviceManagementExchangeConnector](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementExchangeConnector?view=graph-powershell-beta)

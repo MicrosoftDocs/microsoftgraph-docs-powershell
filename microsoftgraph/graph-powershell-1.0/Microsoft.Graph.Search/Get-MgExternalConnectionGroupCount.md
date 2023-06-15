@@ -132,3 +132,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[IdentityId <String>]`: The unique identifier of identity
 
 ## RELATED LINKS
+[Get-MgBetaBetaExternalConnectionGroupCount](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternalConnectionGroupCount?view=graph-powershell-beta)

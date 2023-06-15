@@ -79,3 +79,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgPlannerRosterCount](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerRosterCount?view=graph-powershell-v1.0)

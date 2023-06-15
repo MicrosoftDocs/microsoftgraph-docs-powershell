@@ -247,3 +247,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgBetaBetaGraphUserDrive](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Invoke-MgBetaGraphUserDrive?view=graph-powershell-beta)

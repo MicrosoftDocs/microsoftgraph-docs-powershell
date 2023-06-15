@@ -383,3 +383,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String>]`: 
 
 ## RELATED LINKS
+[Update-MgRoleManagementDeviceManagementResourceNamespaceResourceAction](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Update-MgRoleManagementDeviceManagementResourceNamespaceResourceAction?view=graph-powershell-v1.0)

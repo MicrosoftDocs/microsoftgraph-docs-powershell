@@ -83,3 +83,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgReportSecurity](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSecurity?view=graph-powershell-v1.0)

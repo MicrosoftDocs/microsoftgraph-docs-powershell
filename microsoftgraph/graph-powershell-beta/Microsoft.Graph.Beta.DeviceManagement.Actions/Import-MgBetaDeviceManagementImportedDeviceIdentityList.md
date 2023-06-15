@@ -187,3 +187,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Platform <Platform?>]`: platform
 
 ## RELATED LINKS
+[Import-MgDeviceManagementImportedDeviceIdentityList](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Import-MgDeviceManagementImportedDeviceIdentityList?view=graph-powershell-v1.0)

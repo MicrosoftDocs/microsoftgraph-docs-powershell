@@ -244,6 +244,7 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[New-MgUserOutlookTaskSingleValueExtendedProperty](/powershell/module/Microsoft.Graph.Users/New-MgUserOutlookTaskSingleValueExtendedProperty?view=graph-powershell-v1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauseroutlooktasksinglevalueextendedproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauseroutlooktasksinglevalueextendedproperty)
 

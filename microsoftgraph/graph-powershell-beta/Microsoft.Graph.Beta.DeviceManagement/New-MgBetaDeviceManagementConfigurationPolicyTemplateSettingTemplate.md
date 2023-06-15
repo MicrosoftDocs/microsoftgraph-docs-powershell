@@ -439,5 +439,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[SettingInstanceTemplateId <String>]`: Setting Instance Template Id
 
 ## RELATED LINKS
+[New-MgDeviceManagementConfigurationPolicyTemplateSettingTemplate](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementConfigurationPolicyTemplateSettingTemplate?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgDeviceManagementConfigurationPolicyTemplateSettingTemplate](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementConfigurationPolicyTemplateSettingTemplate?view=graph-powershell-v1.0)

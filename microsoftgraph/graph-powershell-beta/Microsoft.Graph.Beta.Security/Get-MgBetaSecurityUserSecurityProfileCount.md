@@ -79,3 +79,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgSecurityUserSecurityProfileCount](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityUserSecurityProfileCount?view=graph-powershell-v1.0)

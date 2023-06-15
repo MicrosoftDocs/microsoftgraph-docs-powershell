@@ -419,3 +419,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[PostingDate <DateTime?>]`: 
 
 ## RELATED LINKS
+[Update-MgFinancialCompanyJournal](/powershell/module/Microsoft.Graph.Financials/Update-MgFinancialCompanyJournal?view=graph-powershell-v1.0)

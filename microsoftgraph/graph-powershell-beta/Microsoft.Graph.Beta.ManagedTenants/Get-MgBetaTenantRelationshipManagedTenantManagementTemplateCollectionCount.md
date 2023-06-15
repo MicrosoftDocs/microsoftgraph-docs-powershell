@@ -170,3 +170,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsProtectionStateId <String>]`: The unique identifier of windowsProtectionState
 
 ## RELATED LINKS
+[Get-MgTenantRelationshipManagedTenantManagementTemplateCollectionCount](/powershell/module/Microsoft.Graph.ManagedTenants/Get-MgTenantRelationshipManagedTenantManagementTemplateCollectionCount?view=graph-powershell-v1.0)

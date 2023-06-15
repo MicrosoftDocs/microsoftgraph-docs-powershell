@@ -80,3 +80,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgReportApplicationSignInDetailedSummaryCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportApplicationSignInDetailedSummaryCount?view=graph-powershell-v1.0)

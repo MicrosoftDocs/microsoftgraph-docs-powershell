@@ -276,3 +276,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Name <String>]`: The name of the item (filename and extension). Read-write.
 
 ## RELATED LINKS
+[New-MgUserMailFolderChildFolderMessageReplyAll](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserMailFolderChildFolderMessageReplyAll?view=graph-powershell-v1.0)

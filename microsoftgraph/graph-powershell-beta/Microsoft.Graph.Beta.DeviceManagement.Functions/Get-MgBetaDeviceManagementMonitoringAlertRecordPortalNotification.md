@@ -129,3 +129,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgDeviceManagementMonitoringAlertRecordPortalNotification](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementMonitoringAlertRecordPortalNotification?view=graph-powershell-v1.0)

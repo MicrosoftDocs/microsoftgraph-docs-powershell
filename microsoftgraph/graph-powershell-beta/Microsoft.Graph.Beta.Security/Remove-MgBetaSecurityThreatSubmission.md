@@ -114,3 +114,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Remove-MgSecurityThreatSubmission](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityThreatSubmission?view=graph-powershell-v1.0)

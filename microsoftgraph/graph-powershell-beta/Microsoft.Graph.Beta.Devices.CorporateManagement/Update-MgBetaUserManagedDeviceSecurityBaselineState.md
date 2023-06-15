@@ -414,5 +414,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[State <SecurityBaselineComplianceState?>]`: Security Baseline Compliance State
 
 ## RELATED LINKS
+[Update-MgUserManagedDeviceSecurityBaselineState](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgUserManagedDeviceSecurityBaselineState?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgUserManagedDeviceSecurityBaselineState](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgUserManagedDeviceSecurityBaselineState?view=graph-powershell-v1.0)

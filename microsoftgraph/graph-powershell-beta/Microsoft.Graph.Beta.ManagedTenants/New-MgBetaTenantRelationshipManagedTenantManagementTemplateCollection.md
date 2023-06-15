@@ -424,5 +424,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[ValueType <String>]`: managementParameterValueType
 
 ## RELATED LINKS
+[New-MgTenantRelationshipManagedTenantManagementTemplateCollection](/powershell/module/Microsoft.Graph.ManagedTenants/New-MgTenantRelationshipManagedTenantManagementTemplateCollection?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgTenantRelationshipManagedTenantManagementTemplateCollection](/powershell/module/Microsoft.Graph.ManagedTenants/New-MgTenantRelationshipManagedTenantManagementTemplateCollection?view=graph-powershell-v1.0)

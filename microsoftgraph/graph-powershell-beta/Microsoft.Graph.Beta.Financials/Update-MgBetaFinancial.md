@@ -1334,5 +1334,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Vendors <IMicrosoftGraphVendor[]>]`: 
 
 ## RELATED LINKS
+[Update-MgFinancial](/powershell/module/Microsoft.Graph.Financials/Update-MgFinancial?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgFinancial](/powershell/module/Microsoft.Graph.Financials/Update-MgFinancial?view=graph-powershell-v1.0)

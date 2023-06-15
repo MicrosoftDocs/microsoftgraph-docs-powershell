@@ -231,3 +231,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+[Get-MgReportCredentialUsageSummary](/powershell/module/Microsoft.Graph.Reports/Get-MgReportCredentialUsageSummary?view=graph-powershell-v1.0)

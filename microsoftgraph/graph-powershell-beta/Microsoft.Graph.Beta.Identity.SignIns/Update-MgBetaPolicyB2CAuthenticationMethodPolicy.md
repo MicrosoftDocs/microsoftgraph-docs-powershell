@@ -198,3 +198,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[IsUserNameAuthenticationEnabled <Boolean?>]`: The tenant admin can configure local accounts using username if the username and password authentication method is enabled.
 
 ## RELATED LINKS
+[Update-MgPolicyB2CAuthenticationMethodPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyB2CAuthenticationMethodPolicy?view=graph-powershell-v1.0)

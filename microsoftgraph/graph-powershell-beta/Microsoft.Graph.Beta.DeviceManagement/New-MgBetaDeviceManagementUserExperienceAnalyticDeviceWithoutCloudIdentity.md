@@ -182,3 +182,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[DeviceName <String>]`: The tenant attach device's name.
 
 ## RELATED LINKS
+[New-MgDeviceManagementUserExperienceAnalyticDeviceWithoutCloudIdentity](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticDeviceWithoutCloudIdentity?view=graph-powershell-v1.0)

@@ -430,3 +430,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ExcludedResourceActions <String[]>]`: 
 
 ## RELATED LINKS
+[New-MgRoleManagementCloudPcRoleDefinitionInheritPermissionFrom](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/New-MgRoleManagementCloudPcRoleDefinitionInheritPermissionFrom?view=graph-powershell-v1.0)

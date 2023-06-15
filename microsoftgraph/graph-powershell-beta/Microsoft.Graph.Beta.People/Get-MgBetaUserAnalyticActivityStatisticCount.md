@@ -145,6 +145,7 @@ INPUTOBJECT \<IPeopleIdentity\>: Identity Parameter
   \[WorkPositionId \<String\>\]: The unique identifier of workPosition
 
 ## RELATED LINKS
+[Get-MgUserAnalyticActivityStatisticCount](/powershell/module/Microsoft.Graph.People/Get-MgUserAnalyticActivityStatisticCount?view=graph-powershell-v1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauseranalyticactivitystatisticcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauseranalyticactivitystatisticcount)
 

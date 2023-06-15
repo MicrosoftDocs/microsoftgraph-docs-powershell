@@ -179,3 +179,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaBetaSiteListSubscriptionCount](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteListSubscriptionCount?view=graph-powershell-beta)

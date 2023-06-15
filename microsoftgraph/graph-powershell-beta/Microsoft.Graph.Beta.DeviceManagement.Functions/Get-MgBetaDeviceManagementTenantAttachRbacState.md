@@ -53,3 +53,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgDeviceManagementTenantAttachRbacState](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementTenantAttachRbacState?view=graph-powershell-v1.0)

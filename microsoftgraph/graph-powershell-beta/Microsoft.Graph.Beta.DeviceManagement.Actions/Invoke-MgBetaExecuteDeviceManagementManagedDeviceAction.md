@@ -312,3 +312,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[PersistEsimDataPlan <Boolean?>]`: 
 
 ## RELATED LINKS
+[Invoke-MgExecuteDeviceManagementManagedDeviceAction](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgExecuteDeviceManagementManagedDeviceAction?view=graph-powershell-v1.0)

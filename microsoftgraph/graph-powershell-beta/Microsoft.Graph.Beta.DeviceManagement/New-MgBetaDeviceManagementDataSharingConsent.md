@@ -246,3 +246,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TermsUrl <String>]`: The TermsUrl for the data sharing consent
 
 ## RELATED LINKS
+[New-MgDeviceManagementDataSharingConsent](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementDataSharingConsent?view=graph-powershell-v1.0)

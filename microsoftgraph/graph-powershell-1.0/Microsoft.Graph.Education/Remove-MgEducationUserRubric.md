@@ -188,3 +188,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Remove-MgBetaBetaEducationUserRubric](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationUserRubric?view=graph-powershell-beta)

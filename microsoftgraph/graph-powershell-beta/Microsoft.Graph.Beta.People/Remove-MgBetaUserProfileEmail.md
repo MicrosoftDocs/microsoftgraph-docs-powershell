@@ -191,3 +191,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkPositionId <String>]`: The unique identifier of workPosition
 
 ## RELATED LINKS
+[Remove-MgUserProfileEmail](/powershell/module/Microsoft.Graph.People/Remove-MgUserProfileEmail?view=graph-powershell-v1.0)

@@ -79,3 +79,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgSearchBookmarkCount](/powershell/module/Microsoft.Graph.Search/Get-MgSearchBookmarkCount?view=graph-powershell-v1.0)

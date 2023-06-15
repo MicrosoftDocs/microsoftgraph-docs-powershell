@@ -299,3 +299,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgDriveRootSubscription](/powershell/module/Microsoft.Graph.Files/Get-MgDriveRootSubscription?view=graph-powershell-v1.0)

@@ -326,3 +326,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UnknownDeviceCount <Int32?>]`: Number of unknown devices
 
 ## RELATED LINKS
+[Update-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummary](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummary?view=graph-powershell-v1.0)

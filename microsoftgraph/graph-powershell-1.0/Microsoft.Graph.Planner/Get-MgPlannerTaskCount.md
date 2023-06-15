@@ -79,3 +79,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaBetaPlannerTaskCount](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerTaskCount?view=graph-powershell-beta)

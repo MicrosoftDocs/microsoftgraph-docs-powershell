@@ -165,3 +165,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaBetaGroupDriveRootSubscriptionCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootSubscriptionCount?view=graph-powershell-beta)

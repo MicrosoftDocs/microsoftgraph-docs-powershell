@@ -533,5 +533,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Value <Int32?>]`: The number of days or hours.
 
 ## RELATED LINKS
+[New-MgBetaBetaIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityConditionalAccessPolicy?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[New-MgBetaBetaIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityConditionalAccessPolicy?view=graph-powershell-beta)

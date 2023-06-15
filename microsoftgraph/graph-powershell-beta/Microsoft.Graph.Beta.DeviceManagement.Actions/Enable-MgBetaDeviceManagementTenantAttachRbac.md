@@ -164,3 +164,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Enable <Boolean?>]`: 
 
 ## RELATED LINKS
+[Enable-MgDeviceManagementTenantAttachRbac](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Enable-MgDeviceManagementTenantAttachRbac?view=graph-powershell-v1.0)

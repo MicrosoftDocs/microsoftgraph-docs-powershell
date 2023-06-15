@@ -264,3 +264,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Get-MgEducationMeTaughtClass](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeTaughtClass?view=graph-powershell-v1.0)

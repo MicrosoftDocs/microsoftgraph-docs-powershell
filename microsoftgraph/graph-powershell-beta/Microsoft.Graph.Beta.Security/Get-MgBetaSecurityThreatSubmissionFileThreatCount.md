@@ -79,3 +79,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgSecurityThreatSubmissionFileThreatCount](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatSubmissionFileThreatCount?view=graph-powershell-v1.0)

@@ -14437,5 +14437,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[RecordedDateTime <DateTime?>]`: When the observation was recorded on the service.
 
 ## RELATED LINKS
+[New-MgGroupSiteListItemActivity](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteListItemActivity?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgGroupSiteListItemActivity](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteListItemActivity?view=graph-powershell-v1.0)

@@ -336,3 +336,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
 
 ## RELATED LINKS
+[Update-MgGroupSitePageCanvaLayout](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSitePageCanvaLayout?view=graph-powershell-v1.0)

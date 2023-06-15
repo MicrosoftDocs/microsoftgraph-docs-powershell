@@ -228,3 +228,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Update-MgCommunicationCallRecordingStatus](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgCommunicationCallRecordingStatus?view=graph-powershell-v1.0)

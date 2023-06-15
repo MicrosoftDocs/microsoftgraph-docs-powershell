@@ -805,5 +805,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Version <String>]`: Setting definition version
 
 ## RELATED LINKS
+[Update-MgDeviceManagementGroupPolicyDefinitionPreviouVersionDefinition](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementGroupPolicyDefinitionPreviouVersionDefinition?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgDeviceManagementGroupPolicyDefinitionPreviouVersionDefinition](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementGroupPolicyDefinitionPreviouVersionDefinition?view=graph-powershell-v1.0)

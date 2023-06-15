@@ -346,3 +346,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VersionId <String>]`: The unique identifier for the version that is visible to the current caller. Read-only.
 
 ## RELATED LINKS
+[Update-MgUserDriveRootListItemVersion](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveRootListItemVersion?view=graph-powershell-v1.0)

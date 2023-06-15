@@ -81,3 +81,4 @@ ALIASES
 Get-MgDeviceAppMgtManagedAppPolicyCount
 
 ## RELATED LINKS
+[Get-MgBetaBetaDeviceAppManagementManagedAppPolicyCount](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementManagedAppPolicyCount?view=graph-powershell-beta)

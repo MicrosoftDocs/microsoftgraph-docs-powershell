@@ -382,3 +382,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[RecordingStatus <String>]`: recordingStatus
 
 ## RELATED LINKS
+[Update-MgBetaBetaCommunicationCallParticipant](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Update-MgBetaCommunicationCallParticipant?view=graph-powershell-beta)

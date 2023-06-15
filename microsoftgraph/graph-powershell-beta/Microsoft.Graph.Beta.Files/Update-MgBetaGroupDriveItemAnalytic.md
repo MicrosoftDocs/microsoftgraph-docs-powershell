@@ -18980,5 +18980,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[StartDateTime <DateTime?>]`: When the interval starts. Read-only.
 
 ## RELATED LINKS
+[Update-MgGroupDriveItemAnalytic](/powershell/module/Microsoft.Graph.Files/Update-MgGroupDriveItemAnalytic?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgGroupDriveItemAnalytic](/powershell/module/Microsoft.Graph.Files/Update-MgGroupDriveItemAnalytic?view=graph-powershell-v1.0)

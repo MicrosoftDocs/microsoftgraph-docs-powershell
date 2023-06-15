@@ -160,6 +160,7 @@ INPUTOBJECT \<IPersonalContactsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUserContactFolderContactSingleValueExtendedPropertyCount](/powershell/module/Microsoft.Graph.PersonalContacts/Get-MgUserContactFolderContactSingleValueExtendedPropertyCount?view=graph-powershell-v1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/get-mgbetausercontactfoldercontactsinglevalueextendedpropertycount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/get-mgbetausercontactfoldercontactsinglevalueextendedpropertycount)
 

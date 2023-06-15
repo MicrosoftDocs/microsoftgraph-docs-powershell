@@ -380,3 +380,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Parent <IMicrosoftGraphEdiscoveryTag>]`: tag
 
 ## RELATED LINKS
+[New-MgComplianceEdiscoveryCaseTag](/powershell/module/Microsoft.Graph.Compliance/New-MgComplianceEdiscoveryCaseTag?view=graph-powershell-v1.0)

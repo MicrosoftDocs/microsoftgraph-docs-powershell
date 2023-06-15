@@ -928,5 +928,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ContentType <String>]`: bodyType
 
 ## RELATED LINKS
+[New-MgBetaBetaUserMailFolderMessageAttachment](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMailFolderMessageAttachment?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[New-MgBetaBetaUserMailFolderMessageAttachment](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMailFolderMessageAttachment?view=graph-powershell-beta)

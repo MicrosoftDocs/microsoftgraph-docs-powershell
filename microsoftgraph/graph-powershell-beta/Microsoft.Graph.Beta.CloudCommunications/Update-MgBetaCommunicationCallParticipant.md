@@ -486,3 +486,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VideoDisabled <String>]`: onlineMeetingVideoDisabledReason
 
 ## RELATED LINKS
+[Update-MgCommunicationCallParticipant](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgCommunicationCallParticipant?view=graph-powershell-v1.0)

@@ -189,6 +189,7 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUserOutlookTaskGroupTaskFolderTaskMultiValueExtendedPropertyCount](/powershell/module/Microsoft.Graph.Users/Get-MgUserOutlookTaskGroupTaskFolderTaskMultiValueExtendedPropertyCount?view=graph-powershell-v1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroutlooktaskgrouptaskfoldertaskmultivalueextendedpropertycount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroutlooktaskgrouptaskfoldertaskmultivalueextendedpropertycount)
 

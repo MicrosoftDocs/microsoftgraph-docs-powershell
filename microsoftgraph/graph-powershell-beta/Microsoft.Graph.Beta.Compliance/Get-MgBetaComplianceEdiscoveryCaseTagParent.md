@@ -159,3 +159,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
+[Get-MgComplianceEdiscoveryCaseTagParent](/powershell/module/Microsoft.Graph.Compliance/Get-MgComplianceEdiscoveryCaseTagParent?view=graph-powershell-v1.0)

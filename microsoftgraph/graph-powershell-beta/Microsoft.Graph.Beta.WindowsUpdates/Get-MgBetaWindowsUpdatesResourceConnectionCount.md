@@ -81,3 +81,4 @@ ALIASES
 Get-MgBetaWuResourceConnectionCount
 
 ## RELATED LINKS
+[Get-MgWindowsUpdatesResourceConnectionCount](/powershell/module/Microsoft.Graph.WindowsUpdates/Get-MgWindowsUpdatesResourceConnectionCount?view=graph-powershell-v1.0)

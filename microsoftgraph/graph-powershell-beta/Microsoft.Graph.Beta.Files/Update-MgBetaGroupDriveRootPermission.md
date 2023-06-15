@@ -597,5 +597,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebUrl <String>]`: A URL that opens the item in the browser on the OneDrive website.
 
 ## RELATED LINKS
+[Update-MgGroupDriveRootPermission](/powershell/module/Microsoft.Graph.Files/Update-MgGroupDriveRootPermission?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgGroupDriveRootPermission](/powershell/module/Microsoft.Graph.Files/Update-MgGroupDriveRootPermission?view=graph-powershell-v1.0)

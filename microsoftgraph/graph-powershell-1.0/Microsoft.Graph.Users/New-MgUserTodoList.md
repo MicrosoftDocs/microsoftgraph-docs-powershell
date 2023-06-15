@@ -440,5 +440,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Title <String>]`: A brief description of the task.
 
 ## RELATED LINKS
+[New-MgBetaBetaUserTodoList](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserTodoList?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[New-MgBetaBetaUserTodoList](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserTodoList?view=graph-powershell-beta)

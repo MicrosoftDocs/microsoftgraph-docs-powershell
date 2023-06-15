@@ -310,3 +310,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserName <String>]`: Username which the subscription was provisioned to e.g. joe@contoso.com
 
 ## RELATED LINKS
+[New-MgDeviceManagementEmbeddedSimActivationCodePool](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementEmbeddedSimActivationCodePool?view=graph-powershell-v1.0)

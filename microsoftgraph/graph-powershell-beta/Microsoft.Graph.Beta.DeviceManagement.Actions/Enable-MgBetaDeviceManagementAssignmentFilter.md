@@ -164,3 +164,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Enable <Boolean?>]`: 
 
 ## RELATED LINKS
+[Enable-MgDeviceManagementAssignmentFilter](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Enable-MgDeviceManagementAssignmentFilter?view=graph-powershell-v1.0)

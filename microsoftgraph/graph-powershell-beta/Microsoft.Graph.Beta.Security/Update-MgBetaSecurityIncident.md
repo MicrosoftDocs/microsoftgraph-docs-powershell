@@ -645,5 +645,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[KqlText <String>]`: 
 
 ## RELATED LINKS
+[Update-MgSecurityIncident](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityIncident?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgSecurityIncident](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityIncident?view=graph-powershell-v1.0)

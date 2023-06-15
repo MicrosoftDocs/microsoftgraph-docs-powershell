@@ -79,3 +79,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgRiskyUserCount](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgRiskyUserCount?view=graph-powershell-v1.0)

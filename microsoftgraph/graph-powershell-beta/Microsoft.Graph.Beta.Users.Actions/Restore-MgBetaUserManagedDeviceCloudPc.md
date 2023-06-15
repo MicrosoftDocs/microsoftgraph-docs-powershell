@@ -267,3 +267,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Restore-MgUserManagedDeviceCloudPc](/powershell/module/Microsoft.Graph.Users.Actions/Restore-MgUserManagedDeviceCloudPc?view=graph-powershell-v1.0)

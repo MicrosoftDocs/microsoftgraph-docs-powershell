@@ -215,3 +215,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ResourceId <String>]`: 
 
 ## RELATED LINKS
+[Invoke-MgRecordIdentityGovernanceAccessReviewDecision](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgRecordIdentityGovernanceAccessReviewDecision?view=graph-powershell-v1.0)

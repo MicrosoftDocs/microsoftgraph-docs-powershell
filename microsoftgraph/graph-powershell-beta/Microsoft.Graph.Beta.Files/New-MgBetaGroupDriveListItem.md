@@ -28697,5 +28697,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
 
 ## RELATED LINKS
+[New-MgGroupDriveListItem](/powershell/module/Microsoft.Graph.Files/New-MgGroupDriveListItem?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgGroupDriveListItem](/powershell/module/Microsoft.Graph.Files/New-MgGroupDriveListItem?view=graph-powershell-v1.0)

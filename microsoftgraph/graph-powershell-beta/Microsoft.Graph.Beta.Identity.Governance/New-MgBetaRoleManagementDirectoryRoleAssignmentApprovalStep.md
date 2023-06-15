@@ -420,5 +420,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Id <String>]`: Unique identifier for the identity.
 
 ## RELATED LINKS
+[New-MgRoleManagementDirectoryRoleAssignmentApprovalStep](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementDirectoryRoleAssignmentApprovalStep?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgRoleManagementDirectoryRoleAssignmentApprovalStep](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementDirectoryRoleAssignmentApprovalStep?view=graph-powershell-v1.0)

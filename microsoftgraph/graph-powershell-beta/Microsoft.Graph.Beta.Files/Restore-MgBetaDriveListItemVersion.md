@@ -193,3 +193,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Restore-MgDriveListItemVersion](/powershell/module/Microsoft.Graph.Files/Restore-MgDriveListItemVersion?view=graph-powershell-v1.0)

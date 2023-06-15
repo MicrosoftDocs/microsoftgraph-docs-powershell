@@ -346,3 +346,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Invoke-MgAssignedRoleManagementEntitlementManagementRoleDefinitionPrincipal](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgAssignedRoleManagementEntitlementManagementRoleDefinitionPrincipal?view=graph-powershell-v1.0)

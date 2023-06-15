@@ -301,3 +301,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[OSVersion <String>]`: The os version of the application.
 
 ## RELATED LINKS
+[New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion?view=graph-powershell-v1.0)

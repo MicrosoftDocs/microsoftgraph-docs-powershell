@@ -80,3 +80,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgIdentityConditionalAccessAuthenticationStrengthAuthenticationMethodModeCount](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityConditionalAccessAuthenticationStrengthAuthenticationMethodModeCount?view=graph-powershell-v1.0)

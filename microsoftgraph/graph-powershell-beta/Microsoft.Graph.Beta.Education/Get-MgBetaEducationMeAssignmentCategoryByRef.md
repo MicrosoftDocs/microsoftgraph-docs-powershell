@@ -193,3 +193,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgEducationMeAssignmentCategoryByRef](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeAssignmentCategoryByRef?view=graph-powershell-v1.0)

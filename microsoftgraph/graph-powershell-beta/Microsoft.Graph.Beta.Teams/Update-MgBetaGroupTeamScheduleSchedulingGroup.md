@@ -345,3 +345,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
+[Update-MgGroupTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamScheduleSchedulingGroup?view=graph-powershell-v1.0)

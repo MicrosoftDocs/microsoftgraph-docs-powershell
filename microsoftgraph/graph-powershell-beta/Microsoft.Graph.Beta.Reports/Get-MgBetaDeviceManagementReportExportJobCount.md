@@ -79,3 +79,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgDeviceManagementReportExportJobCount](/powershell/module/Microsoft.Graph.Reports/Get-MgDeviceManagementReportExportJobCount?view=graph-powershell-v1.0)

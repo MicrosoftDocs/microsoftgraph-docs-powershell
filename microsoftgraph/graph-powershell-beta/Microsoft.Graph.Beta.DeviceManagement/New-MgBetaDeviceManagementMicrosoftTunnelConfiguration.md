@@ -403,3 +403,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[SplitDns <String[]>]`: The domains that will be resolved using the provided dns servers
 
 ## RELATED LINKS
+[New-MgDeviceManagementMicrosoftTunnelConfiguration](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementMicrosoftTunnelConfiguration?view=graph-powershell-v1.0)

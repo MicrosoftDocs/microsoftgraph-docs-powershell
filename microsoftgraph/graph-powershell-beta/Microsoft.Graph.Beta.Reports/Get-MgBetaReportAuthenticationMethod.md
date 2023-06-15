@@ -83,3 +83,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgReportAuthenticationMethod](/powershell/module/Microsoft.Graph.Reports/Get-MgReportAuthenticationMethod?view=graph-powershell-v1.0)

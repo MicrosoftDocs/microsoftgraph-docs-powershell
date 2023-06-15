@@ -410,3 +410,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TenantId <String>]`: The Azure Active Directory tenant identifier for the managed tenant. Optional. Read-only.
 
 ## RELATED LINKS
+[New-MgTenantRelationshipManagedTenantManagedDeviceCompliance](/powershell/module/Microsoft.Graph.ManagedTenants/New-MgTenantRelationshipManagedTenantManagedDeviceCompliance?view=graph-powershell-v1.0)

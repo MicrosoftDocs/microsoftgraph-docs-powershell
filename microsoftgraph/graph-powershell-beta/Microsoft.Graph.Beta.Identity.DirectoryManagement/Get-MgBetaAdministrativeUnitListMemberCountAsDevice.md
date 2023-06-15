@@ -176,3 +176,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgAdministrativeUnitListMemberCountAsDevice](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgAdministrativeUnitListMemberCountAsDevice?view=graph-powershell-v1.0)

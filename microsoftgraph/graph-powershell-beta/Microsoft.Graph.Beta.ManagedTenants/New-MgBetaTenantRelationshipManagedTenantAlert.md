@@ -872,5 +872,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Subject <String>]`: 
 
 ## RELATED LINKS
+[New-MgTenantRelationshipManagedTenantAlert](/powershell/module/Microsoft.Graph.ManagedTenants/New-MgTenantRelationshipManagedTenantAlert?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgTenantRelationshipManagedTenantAlert](/powershell/module/Microsoft.Graph.ManagedTenants/New-MgTenantRelationshipManagedTenantAlert?view=graph-powershell-v1.0)

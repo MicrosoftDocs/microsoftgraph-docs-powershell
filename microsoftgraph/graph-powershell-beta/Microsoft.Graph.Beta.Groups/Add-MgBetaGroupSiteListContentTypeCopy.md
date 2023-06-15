@@ -267,3 +267,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Add-MgGroupSiteListContentTypeCopy](/powershell/module/Microsoft.Graph.Groups/Add-MgGroupSiteListContentTypeCopy?view=graph-powershell-v1.0)

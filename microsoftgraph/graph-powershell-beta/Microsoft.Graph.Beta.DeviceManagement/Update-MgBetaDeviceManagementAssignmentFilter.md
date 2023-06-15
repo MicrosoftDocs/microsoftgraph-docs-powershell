@@ -498,5 +498,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[PayloadType <AssociatedAssignmentPayloadType?>]`: This enum represents associated assignment payload type
 
 ## RELATED LINKS
+[Update-MgDeviceManagementAssignmentFilter](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementAssignmentFilter?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgDeviceManagementAssignmentFilter](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementAssignmentFilter?view=graph-powershell-v1.0)

@@ -218,3 +218,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[New-MgBetaBetaUserTodoListExtension](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserTodoListExtension?view=graph-powershell-beta)

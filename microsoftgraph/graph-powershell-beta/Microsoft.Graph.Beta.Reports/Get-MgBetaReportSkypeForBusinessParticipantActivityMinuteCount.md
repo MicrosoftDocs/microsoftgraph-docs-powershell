@@ -155,3 +155,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+[Get-MgReportSkypeForBusinessParticipantActivityMinuteCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSkypeForBusinessParticipantActivityMinuteCount?view=graph-powershell-v1.0)

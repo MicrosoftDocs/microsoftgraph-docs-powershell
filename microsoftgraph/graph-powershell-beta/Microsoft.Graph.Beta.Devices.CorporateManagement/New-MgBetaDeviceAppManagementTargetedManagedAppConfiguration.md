@@ -526,5 +526,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[SettingInstanceTemplateId <String>]`: Setting instance template id
 
 ## RELATED LINKS
+[New-MgDeviceAppManagementTargetedManagedAppConfiguration](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementTargetedManagedAppConfiguration?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgDeviceAppManagementTargetedManagedAppConfiguration](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementTargetedManagedAppConfiguration?view=graph-powershell-v1.0)

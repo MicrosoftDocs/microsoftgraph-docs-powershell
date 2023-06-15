@@ -285,3 +285,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
 
 ## RELATED LINKS
+[New-MgEducationMeAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Education/New-MgEducationMeAssignmentSubmissionResource?view=graph-powershell-v1.0)

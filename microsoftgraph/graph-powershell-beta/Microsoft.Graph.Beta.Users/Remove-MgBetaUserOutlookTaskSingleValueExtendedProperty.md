@@ -209,6 +209,7 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgUserOutlookTaskSingleValueExtendedProperty](/powershell/module/Microsoft.Graph.Users/Remove-MgUserOutlookTaskSingleValueExtendedProperty?view=graph-powershell-v1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauseroutlooktasksinglevalueextendedproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauseroutlooktasksinglevalueextendedproperty)
 

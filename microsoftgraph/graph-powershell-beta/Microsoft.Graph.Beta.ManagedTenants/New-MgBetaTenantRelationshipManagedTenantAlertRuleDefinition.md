@@ -422,3 +422,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[DefaultSeverity <String>]`: alertSeverity
 
 ## RELATED LINKS
+[New-MgTenantRelationshipManagedTenantAlertRuleDefinition](/powershell/module/Microsoft.Graph.ManagedTenants/New-MgTenantRelationshipManagedTenantAlertRuleDefinition?view=graph-powershell-v1.0)

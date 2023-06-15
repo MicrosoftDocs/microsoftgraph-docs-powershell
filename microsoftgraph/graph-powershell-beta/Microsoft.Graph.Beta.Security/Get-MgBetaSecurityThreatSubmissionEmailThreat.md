@@ -312,3 +312,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
+[Get-MgSecurityThreatSubmissionEmailThreat](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatSubmissionEmailThreat?view=graph-powershell-v1.0)

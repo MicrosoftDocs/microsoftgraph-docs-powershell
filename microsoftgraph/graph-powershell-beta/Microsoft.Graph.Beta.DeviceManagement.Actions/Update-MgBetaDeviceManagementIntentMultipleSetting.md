@@ -273,3 +273,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ValueJson <String>]`: JSON representation of the value
 
 ## RELATED LINKS
+[Update-MgDeviceManagementIntentMultipleSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Update-MgDeviceManagementIntentMultipleSetting?view=graph-powershell-v1.0)

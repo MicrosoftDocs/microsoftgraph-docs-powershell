@@ -160,3 +160,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgPrintShareAllowedUserMailboxSetting](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintShareAllowedUserMailboxSetting?view=graph-powershell-v1.0)

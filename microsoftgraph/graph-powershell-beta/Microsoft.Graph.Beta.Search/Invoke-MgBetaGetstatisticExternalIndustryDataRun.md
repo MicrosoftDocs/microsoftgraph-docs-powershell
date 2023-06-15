@@ -114,6 +114,7 @@ INPUTOBJECT \<ISearchIdentity\>: Identity Parameter
   \[YearTimePeriodDefinitionId \<String\>\]: The unique identifier of yearTimePeriodDefinition
 
 ## RELATED LINKS
+[Invoke-MgGetstatisticExternalIndustryDataRun](/powershell/module/Microsoft.Graph.Search/Invoke-MgGetstatisticExternalIndustryDataRun?view=graph-powershell-v1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/invoke-mgbetagetstatisticexternalindustrydatarun](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/invoke-mgbetagetstatisticexternalindustrydatarun)
 

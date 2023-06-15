@@ -80,3 +80,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgReportCredentialUserRegistrationDetailCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportCredentialUserRegistrationDetailCount?view=graph-powershell-v1.0)

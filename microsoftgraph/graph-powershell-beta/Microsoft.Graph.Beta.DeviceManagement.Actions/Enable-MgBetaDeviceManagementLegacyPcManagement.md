@@ -99,3 +99,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Enable-MgDeviceManagementLegacyPcManagement](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Enable-MgDeviceManagementLegacyPcManagement?view=graph-powershell-v1.0)

@@ -5408,5 +5408,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Url <String>]`: Workforce Integration URL for callbacks from the Shifts service.
 
 ## RELATED LINKS
+[Update-MgBetaBetaTeamwork](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamwork?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaBetaTeamwork](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamwork?view=graph-powershell-beta)

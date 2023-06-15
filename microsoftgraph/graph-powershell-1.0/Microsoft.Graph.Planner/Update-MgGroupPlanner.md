@@ -442,5 +442,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Title <String>]`: Required. Title of the plan.
 
 ## RELATED LINKS
+[Update-MgBetaBetaGroupPlanner](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgBetaGroupPlanner?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaBetaGroupPlanner](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgBetaGroupPlanner?view=graph-powershell-beta)

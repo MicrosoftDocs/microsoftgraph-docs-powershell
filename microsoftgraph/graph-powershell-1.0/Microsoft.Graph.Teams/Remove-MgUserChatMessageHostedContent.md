@@ -238,3 +238,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Remove-MgBetaBetaUserChatMessageHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaUserChatMessageHostedContent?view=graph-powershell-beta)

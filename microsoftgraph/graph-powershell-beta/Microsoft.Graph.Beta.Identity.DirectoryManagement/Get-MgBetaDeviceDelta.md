@@ -190,3 +190,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgDeviceDelta](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDeviceDelta?view=graph-powershell-v1.0)

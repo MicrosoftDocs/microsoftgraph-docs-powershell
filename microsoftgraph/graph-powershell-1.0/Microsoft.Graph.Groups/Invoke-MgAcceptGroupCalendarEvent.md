@@ -283,6 +283,7 @@ security groups).
   \[ObjectId \<String\>\]: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
+[Invoke-MgBetaBetaAcceptGroupCalendarEvent](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaAcceptGroupCalendarEvent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/grant-mggroupssitespermission](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/grant-mggroupssitespermission)
 

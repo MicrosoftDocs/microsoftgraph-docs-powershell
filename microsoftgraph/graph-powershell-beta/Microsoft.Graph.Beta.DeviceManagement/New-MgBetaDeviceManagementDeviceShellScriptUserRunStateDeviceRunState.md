@@ -9784,5 +9784,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[TamperProtectionEnabled <Boolean?>]`: Indicates whether the Windows Defender tamper protection feature is enabled.
 
 ## RELATED LINKS
+[New-MgDeviceManagementDeviceShellScriptUserRunStateDeviceRunState](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementDeviceShellScriptUserRunStateDeviceRunState?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgDeviceManagementDeviceShellScriptUserRunStateDeviceRunState](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementDeviceShellScriptUserRunStateDeviceRunState?view=graph-powershell-v1.0)

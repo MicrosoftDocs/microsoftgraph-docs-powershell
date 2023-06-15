@@ -276,6 +276,7 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Update-MgUserOutlookTaskFolderTaskSingleValueExtendedProperty](/powershell/module/Microsoft.Graph.Users/Update-MgUserOutlookTaskFolderTaskSingleValueExtendedProperty?view=graph-powershell-v1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauseroutlooktaskfoldertasksinglevalueextendedproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauseroutlooktaskfoldertasksinglevalueextendedproperty)
 

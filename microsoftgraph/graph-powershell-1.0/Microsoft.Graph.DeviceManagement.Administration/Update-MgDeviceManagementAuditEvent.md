@@ -426,3 +426,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ResourceId <String>]`: Audit resource's Id.
 
 ## RELATED LINKS
+[Update-MgBetaBetaDeviceManagementAuditEvent](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementAuditEvent?view=graph-powershell-beta)

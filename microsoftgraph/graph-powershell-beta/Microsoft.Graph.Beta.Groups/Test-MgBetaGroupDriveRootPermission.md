@@ -286,3 +286,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Test-MgGroupDriveRootPermission](/powershell/module/Microsoft.Graph.Groups/Test-MgGroupDriveRootPermission?view=graph-powershell-v1.0)

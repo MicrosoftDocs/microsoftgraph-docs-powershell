@@ -1103,5 +1103,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Region <String>]`: connectorGroupRegion
 
 ## RELATED LINKS
+[New-MgOnPremisePublishingProfileConnector](/powershell/module/Microsoft.Graph.Applications/New-MgOnPremisePublishingProfileConnector?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgOnPremisePublishingProfileConnector](/powershell/module/Microsoft.Graph.Applications/New-MgOnPremisePublishingProfileConnector?view=graph-powershell-v1.0)

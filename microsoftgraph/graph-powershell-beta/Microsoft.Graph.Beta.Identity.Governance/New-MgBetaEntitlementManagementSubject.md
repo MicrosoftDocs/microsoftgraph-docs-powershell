@@ -344,3 +344,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[State <String>]`: connectedOrganizationState
 
 ## RELATED LINKS
+[New-MgEntitlementManagementSubject](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementSubject?view=graph-powershell-v1.0)

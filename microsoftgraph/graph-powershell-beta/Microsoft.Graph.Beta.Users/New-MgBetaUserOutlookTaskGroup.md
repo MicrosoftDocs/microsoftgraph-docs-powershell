@@ -424,5 +424,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Subject <String>]`: 
 
 ## RELATED LINKS
+[New-MgUserOutlookTaskGroup](/powershell/module/Microsoft.Graph.Users/New-MgUserOutlookTaskGroup?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgUserOutlookTaskGroup](/powershell/module/Microsoft.Graph.Users/New-MgUserOutlookTaskGroup?view=graph-powershell-v1.0)

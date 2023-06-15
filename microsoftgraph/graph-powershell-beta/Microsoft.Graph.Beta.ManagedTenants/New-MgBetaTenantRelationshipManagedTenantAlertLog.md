@@ -411,3 +411,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[DisplayName <String>]`: 
 
 ## RELATED LINKS
+[New-MgTenantRelationshipManagedTenantAlertLog](/powershell/module/Microsoft.Graph.ManagedTenants/New-MgTenantRelationshipManagedTenantAlertLog?view=graph-powershell-v1.0)

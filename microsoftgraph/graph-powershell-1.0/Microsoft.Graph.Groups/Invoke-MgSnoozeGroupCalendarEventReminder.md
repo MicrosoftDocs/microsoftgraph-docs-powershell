@@ -408,11 +408,15 @@ To create the parameters described below, construct a hash table containing the 
     - `[Value <String>]`: A property value.
 
 ## RELATED LINKS
+[Invoke-MgBetaBetaSnoozeGroupCalendarEventReminder](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaSnoozeGroupCalendarEventReminder?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Invoke-MgBetaBetaSnoozeGroupCalendarEventReminder](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaSnoozeGroupCalendarEventReminder?view=graph-powershell-beta)
 
 
 ## RELATED LINKS
+[Invoke-MgBetaBetaSnoozeGroupCalendarEventReminder](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaSnoozeGroupCalendarEventReminder?view=graph-powershell-beta)
 
 
 ## RELATED LINKS
+[Invoke-MgBetaBetaSnoozeGroupCalendarEventReminder](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaSnoozeGroupCalendarEventReminder?view=graph-powershell-beta)

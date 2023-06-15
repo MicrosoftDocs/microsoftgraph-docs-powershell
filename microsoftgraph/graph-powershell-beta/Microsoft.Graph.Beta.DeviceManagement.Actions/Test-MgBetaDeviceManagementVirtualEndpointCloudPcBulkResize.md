@@ -161,3 +161,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TargetServicePlanId <String>]`: 
 
 ## RELATED LINKS
+[Test-MgDeviceManagementVirtualEndpointCloudPcBulkResize](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Test-MgDeviceManagementVirtualEndpointCloudPcBulkResize?view=graph-powershell-v1.0)

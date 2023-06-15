@@ -79,3 +79,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgEducationUserCount](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUserCount?view=graph-powershell-v1.0)

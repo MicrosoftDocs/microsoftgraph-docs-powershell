@@ -1180,5 +1180,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Formula <String>]`: The formula to validate column value. For examples, see Examples of common formulas in lists
 
 ## RELATED LINKS
+[New-MgGroupSiteListColumn](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteListColumn?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgGroupSiteListColumn](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteListColumn?view=graph-powershell-v1.0)

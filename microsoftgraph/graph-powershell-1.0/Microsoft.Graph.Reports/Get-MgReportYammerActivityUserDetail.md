@@ -172,3 +172,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: Usage: userId='{userId}'
 
 ## RELATED LINKS
+[Get-MgBetaBetaReportYammerActivityUserDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportYammerActivityUserDetail?view=graph-powershell-beta)

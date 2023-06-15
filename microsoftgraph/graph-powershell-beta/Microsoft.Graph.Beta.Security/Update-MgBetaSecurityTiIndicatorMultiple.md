@@ -274,5 +274,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserAgent <String>]`: 
 
 ## RELATED LINKS
+[Update-MgSecurityTiIndicatorMultiple](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityTiIndicatorMultiple?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgSecurityTiIndicatorMultiple](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityTiIndicatorMultiple?view=graph-powershell-v1.0)

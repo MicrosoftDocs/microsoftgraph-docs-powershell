@@ -342,3 +342,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgGroupSiteOnenoteOperation](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteOnenoteOperation?view=graph-powershell-v1.0)

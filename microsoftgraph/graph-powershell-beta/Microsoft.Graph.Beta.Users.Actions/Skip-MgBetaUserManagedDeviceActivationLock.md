@@ -201,3 +201,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Skip-MgUserManagedDeviceActivationLock](/powershell/module/Microsoft.Graph.Users.Actions/Skip-MgUserManagedDeviceActivationLock?view=graph-powershell-v1.0)

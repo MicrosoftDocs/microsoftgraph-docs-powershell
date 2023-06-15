@@ -181,3 +181,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[SigningKeyId <String>]`: 
 
 ## RELATED LINKS
+[Confirm-MgInformationProtectionSignature](/powershell/module/Microsoft.Graph.Identity.SignIns/Confirm-MgInformationProtectionSignature?view=graph-powershell-v1.0)

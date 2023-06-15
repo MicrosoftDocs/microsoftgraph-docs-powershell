@@ -609,5 +609,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Parent <IMicrosoftGraphGroupPolicyCategory>]`: The category entity stores the category of a group policy definition
 
 ## RELATED LINKS
+[Update-MgDeviceManagementGroupPolicyCategory](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementGroupPolicyCategory?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgDeviceManagementGroupPolicyCategory](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementGroupPolicyCategory?view=graph-powershell-v1.0)

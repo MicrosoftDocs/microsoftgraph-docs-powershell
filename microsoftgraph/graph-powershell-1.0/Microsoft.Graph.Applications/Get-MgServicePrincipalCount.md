@@ -96,3 +96,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaBetaServicePrincipalCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalCount?view=graph-powershell-beta)

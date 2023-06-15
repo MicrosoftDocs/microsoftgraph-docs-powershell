@@ -83,3 +83,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgReportOffice365ActivationUserCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportOffice365ActivationUserCount?view=graph-powershell-v1.0)

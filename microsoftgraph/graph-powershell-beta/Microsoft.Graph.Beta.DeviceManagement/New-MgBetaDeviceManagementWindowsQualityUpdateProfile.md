@@ -315,3 +315,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[QualityUpdateRelease <String>]`: The release date to identify a quality update.
 
 ## RELATED LINKS
+[New-MgDeviceManagementWindowsQualityUpdateProfile](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementWindowsQualityUpdateProfile?view=graph-powershell-v1.0)

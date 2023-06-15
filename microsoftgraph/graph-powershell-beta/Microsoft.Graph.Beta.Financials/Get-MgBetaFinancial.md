@@ -83,3 +83,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgFinancial](/powershell/module/Microsoft.Graph.Financials/Get-MgFinancial?view=graph-powershell-v1.0)

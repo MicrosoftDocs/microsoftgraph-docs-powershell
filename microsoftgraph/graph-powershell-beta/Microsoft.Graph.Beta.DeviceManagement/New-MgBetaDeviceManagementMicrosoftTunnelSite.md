@@ -404,3 +404,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TunnelServerHealthStatus <MicrosoftTunnelServerHealthStatus?>]`: Enum of possible MicrosoftTunnelServer health status types
 
 ## RELATED LINKS
+[New-MgDeviceManagementMicrosoftTunnelSite](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementMicrosoftTunnelSite?view=graph-powershell-v1.0)

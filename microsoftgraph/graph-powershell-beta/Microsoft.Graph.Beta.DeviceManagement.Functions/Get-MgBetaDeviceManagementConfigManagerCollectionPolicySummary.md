@@ -127,3 +127,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Userid <String>]`: Usage: userid='{userid}'
 
 ## RELATED LINKS
+[Get-MgDeviceManagementConfigManagerCollectionPolicySummary](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementConfigManagerCollectionPolicySummary?view=graph-powershell-v1.0)

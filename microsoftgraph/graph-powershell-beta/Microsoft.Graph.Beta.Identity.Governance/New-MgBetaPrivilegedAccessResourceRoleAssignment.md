@@ -884,5 +884,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String>]`: The type of the subject. The value can be User, Group, and ServicePrincipal.
 
 ## RELATED LINKS
+[New-MgPrivilegedAccessResourceRoleAssignment](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgPrivilegedAccessResourceRoleAssignment?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgPrivilegedAccessResourceRoleAssignment](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgPrivilegedAccessResourceRoleAssignment?view=graph-powershell-v1.0)

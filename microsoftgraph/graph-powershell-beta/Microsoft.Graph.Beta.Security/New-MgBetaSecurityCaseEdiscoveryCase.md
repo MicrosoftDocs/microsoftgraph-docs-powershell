@@ -24394,5 +24394,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Parent <IMicrosoftGraphSecurityEdiscoveryReviewTag>]`: ediscoveryReviewTag
 
 ## RELATED LINKS
+[New-MgSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCase?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCase?view=graph-powershell-v1.0)

@@ -673,5 +673,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[SerialNumber <String>]`: Device serial number
 
 ## RELATED LINKS
+[New-MgDeviceManagementDepOnboardingSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/New-MgDeviceManagementDepOnboardingSetting?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgDeviceManagementDepOnboardingSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/New-MgDeviceManagementDepOnboardingSetting?view=graph-powershell-v1.0)

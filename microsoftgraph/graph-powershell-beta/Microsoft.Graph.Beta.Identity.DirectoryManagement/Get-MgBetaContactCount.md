@@ -95,3 +95,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgContactCount](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgContactCount?view=graph-powershell-v1.0)

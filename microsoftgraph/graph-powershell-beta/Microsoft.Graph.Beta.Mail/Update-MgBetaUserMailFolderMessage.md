@@ -1039,5 +1039,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ContentType <String>]`: bodyType
 
 ## RELATED LINKS
+[Update-MgUserMailFolderMessage](/powershell/module/Microsoft.Graph.Mail/Update-MgUserMailFolderMessage?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgUserMailFolderMessage](/powershell/module/Microsoft.Graph.Mail/Update-MgUserMailFolderMessage?view=graph-powershell-v1.0)

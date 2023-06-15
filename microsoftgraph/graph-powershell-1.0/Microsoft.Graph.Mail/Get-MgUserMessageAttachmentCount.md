@@ -132,3 +132,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaBetaUserMessageAttachmentCount](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMessageAttachmentCount?view=graph-powershell-beta)

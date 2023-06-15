@@ -368,3 +368,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VirtualNetwork <String>]`: The user experience analytics virtual network.
 
 ## RELATED LINKS
+[New-MgDeviceManagementUserExperienceAnalyticRemoteConnection](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticRemoteConnection?view=graph-powershell-v1.0)

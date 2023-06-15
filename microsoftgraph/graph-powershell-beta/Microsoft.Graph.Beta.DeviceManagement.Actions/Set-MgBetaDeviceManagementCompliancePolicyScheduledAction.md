@@ -270,3 +270,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[NotificationTemplateId <String>]`: What notification Message template to use
 
 ## RELATED LINKS
+[Set-MgDeviceManagementCompliancePolicyScheduledAction](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Set-MgDeviceManagementCompliancePolicyScheduledAction?view=graph-powershell-v1.0)

@@ -367,3 +367,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String>]`: 
 
 ## RELATED LINKS
+[New-MgRoleManagementCloudPcResourceNamespaceResourceAction](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/New-MgRoleManagementCloudPcResourceNamespaceResourceAction?view=graph-powershell-v1.0)

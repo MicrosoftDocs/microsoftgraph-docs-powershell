@@ -186,3 +186,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgPlannerPlanDelta](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerPlanDelta?view=graph-powershell-v1.0)

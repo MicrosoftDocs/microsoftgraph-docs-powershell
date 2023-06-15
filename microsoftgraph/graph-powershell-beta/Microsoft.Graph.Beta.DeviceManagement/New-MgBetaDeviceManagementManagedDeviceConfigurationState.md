@@ -497,5 +497,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserPrincipalName <String>]`: UserPrincipalName.
 
 ## RELATED LINKS
+[New-MgDeviceManagementManagedDeviceConfigurationState](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementManagedDeviceConfigurationState?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgDeviceManagementManagedDeviceConfigurationState](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementManagedDeviceConfigurationState?view=graph-powershell-v1.0)

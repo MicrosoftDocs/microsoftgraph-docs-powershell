@@ -320,3 +320,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
+[New-MgGroupTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamScheduleSchedulingGroup?view=graph-powershell-v1.0)

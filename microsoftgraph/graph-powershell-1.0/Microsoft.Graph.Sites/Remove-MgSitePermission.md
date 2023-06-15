@@ -206,3 +206,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaBetaSitePermission](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSitePermission?view=graph-powershell-beta)

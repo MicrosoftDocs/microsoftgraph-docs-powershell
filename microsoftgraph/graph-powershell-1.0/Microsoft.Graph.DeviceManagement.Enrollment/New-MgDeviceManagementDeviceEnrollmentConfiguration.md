@@ -269,3 +269,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Version <Int32?>]`: The version of the device enrollment configuration
 
 ## RELATED LINKS
+[New-MgBetaBetaDeviceManagementDeviceEnrollmentConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/New-MgBetaDeviceManagementDeviceEnrollmentConfiguration?view=graph-powershell-beta)

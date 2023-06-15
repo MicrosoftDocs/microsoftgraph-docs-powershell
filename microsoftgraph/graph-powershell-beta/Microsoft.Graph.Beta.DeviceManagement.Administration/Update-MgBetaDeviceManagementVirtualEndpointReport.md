@@ -186,3 +186,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Select <String[]>]`: The selected columns of the report.
 
 ## RELATED LINKS
+[Update-MgDeviceManagementVirtualEndpointReport](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementVirtualEndpointReport?view=graph-powershell-v1.0)

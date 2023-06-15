@@ -250,3 +250,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgBetaBetaCleanUserManagedDeviceWindowsDevice](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaCleanUserManagedDeviceWindowsDevice?view=graph-powershell-beta)

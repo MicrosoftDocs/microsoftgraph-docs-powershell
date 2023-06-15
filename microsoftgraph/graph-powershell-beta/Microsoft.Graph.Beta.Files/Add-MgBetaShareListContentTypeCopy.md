@@ -220,3 +220,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Add-MgShareListContentTypeCopy](/powershell/module/Microsoft.Graph.Files/Add-MgShareListContentTypeCopy?view=graph-powershell-v1.0)

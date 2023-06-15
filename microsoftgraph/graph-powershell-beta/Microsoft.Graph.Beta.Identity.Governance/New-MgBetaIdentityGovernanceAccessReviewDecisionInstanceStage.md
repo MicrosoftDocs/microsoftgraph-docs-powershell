@@ -667,5 +667,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[QueryType <String>]`: The type of query. Examples include MicrosoftGraph and ARM.
 
 ## RELATED LINKS
+[New-MgIdentityGovernanceAccessReviewDecisionInstanceStage](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceAccessReviewDecisionInstanceStage?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgIdentityGovernanceAccessReviewDecisionInstanceStage](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceAccessReviewDecisionInstanceStage?view=graph-powershell-v1.0)

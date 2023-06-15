@@ -79,3 +79,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBookingBusinessCount](/powershell/module/Microsoft.Graph.Bookings/Get-MgBookingBusinessCount?view=graph-powershell-v1.0)

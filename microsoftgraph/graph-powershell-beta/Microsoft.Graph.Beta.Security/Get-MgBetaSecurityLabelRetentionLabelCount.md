@@ -79,3 +79,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgSecurityLabelRetentionLabelCount](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityLabelRetentionLabelCount?view=graph-powershell-v1.0)

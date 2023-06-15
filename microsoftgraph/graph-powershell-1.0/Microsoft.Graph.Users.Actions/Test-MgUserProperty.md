@@ -230,3 +230,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[OnBehalfOfUserId <String>]`: 
 
 ## RELATED LINKS
+[Test-MgBetaBetaUserProperty](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Test-MgBetaUserProperty?view=graph-powershell-beta)

@@ -159,3 +159,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaBetaTeamMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamMessage?view=graph-powershell-beta)

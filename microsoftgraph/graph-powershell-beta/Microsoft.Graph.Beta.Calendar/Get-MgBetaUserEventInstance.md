@@ -302,3 +302,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUserEventInstance](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserEventInstance?view=graph-powershell-v1.0)

@@ -268,3 +268,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[Version <Int32?>]`: 
 
 ## RELATED LINKS
+[New-MgTenantRelationshipManagedTenantGroup](/powershell/module/Microsoft.Graph.ManagedTenants/New-MgTenantRelationshipManagedTenantGroup?view=graph-powershell-v1.0)

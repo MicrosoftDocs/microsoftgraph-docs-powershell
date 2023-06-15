@@ -514,5 +514,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[ValueType <String>]`: managementParameterValueType
 
 ## RELATED LINKS
+[Update-MgTenantRelationshipManagedTenantManagementTemplateCollection](/powershell/module/Microsoft.Graph.ManagedTenants/Update-MgTenantRelationshipManagedTenantManagementTemplateCollection?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgTenantRelationshipManagedTenantManagementTemplateCollection](/powershell/module/Microsoft.Graph.ManagedTenants/Update-MgTenantRelationshipManagedTenantManagementTemplateCollection?view=graph-powershell-v1.0)

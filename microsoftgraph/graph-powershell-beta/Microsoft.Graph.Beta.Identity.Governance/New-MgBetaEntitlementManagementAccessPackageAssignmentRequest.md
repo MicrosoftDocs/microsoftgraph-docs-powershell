@@ -15330,5 +15330,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String[]>]`: The list of credential types provided by the issuer.
 
 ## RELATED LINKS
+[New-MgEntitlementManagementAccessPackageAssignmentRequest](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementAccessPackageAssignmentRequest?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgEntitlementManagementAccessPackageAssignmentRequest](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementAccessPackageAssignmentRequest?view=graph-powershell-v1.0)

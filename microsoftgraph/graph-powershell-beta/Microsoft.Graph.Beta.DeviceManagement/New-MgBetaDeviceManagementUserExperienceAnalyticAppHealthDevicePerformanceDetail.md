@@ -264,3 +264,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EventType <String>]`: The type of the event.
 
 ## RELATED LINKS
+[New-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail?view=graph-powershell-v1.0)

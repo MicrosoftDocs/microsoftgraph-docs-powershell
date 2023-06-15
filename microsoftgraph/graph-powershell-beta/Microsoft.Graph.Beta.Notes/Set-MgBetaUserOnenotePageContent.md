@@ -188,3 +188,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Set-MgUserOnenotePageContent](/powershell/module/Microsoft.Graph.Notes/Set-MgUserOnenotePageContent?view=graph-powershell-v1.0)

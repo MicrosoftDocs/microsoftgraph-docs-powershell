@@ -148,6 +148,7 @@ INPUTOBJECT \<IMailIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaBetaUserMessageMultiValueExtendedPropertyCount](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMessageMultiValueExtendedPropertyCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermessagemultivalueextendedpropertycount](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermessagemultivalueextendedpropertycount)
 

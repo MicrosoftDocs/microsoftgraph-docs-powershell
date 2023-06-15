@@ -485,3 +485,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye). Required
 
 ## RELATED LINKS
+[New-MgSecurityHostSecurityProfile](/powershell/module/Microsoft.Graph.Security/New-MgSecurityHostSecurityProfile?view=graph-powershell-v1.0)

@@ -164,3 +164,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ServicePrincipalIds <String[]>]`: 
 
 ## RELATED LINKS
+[Invoke-MgBetaBetaDismissRiskyServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Invoke-MgBetaDismissRiskyServicePrincipal?view=graph-powershell-beta)

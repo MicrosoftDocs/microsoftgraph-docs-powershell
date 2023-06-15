@@ -203,3 +203,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Version <Int32?>]`: The version of the device enrollment configuration
 
 ## RELATED LINKS
+[New-MgDeviceManagementDeviceEnrollmentConfigurationEnrollmentNotificationConfiguration](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/New-MgDeviceManagementDeviceEnrollmentConfigurationEnrollmentNotificationConfiguration?view=graph-powershell-v1.0)

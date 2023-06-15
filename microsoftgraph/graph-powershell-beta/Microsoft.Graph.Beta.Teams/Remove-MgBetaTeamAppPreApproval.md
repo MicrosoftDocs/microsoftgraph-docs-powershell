@@ -95,3 +95,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Remove-MgTeamAppPreApproval](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamAppPreApproval?view=graph-powershell-v1.0)

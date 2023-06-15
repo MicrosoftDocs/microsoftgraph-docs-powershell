@@ -249,3 +249,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The id for the user on whom the operation is performed.
 
 ## RELATED LINKS
+[New-MgBetaBetaDataPolicyOperation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaDataPolicyOperation?view=graph-powershell-beta)

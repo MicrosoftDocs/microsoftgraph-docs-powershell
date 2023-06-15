@@ -253,3 +253,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Status <String>]`: cloudPcSnapshotStatus
 
 ## RELATED LINKS
+[New-MgDeviceManagementVirtualEndpointSnapshot](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementVirtualEndpointSnapshot?view=graph-powershell-v1.0)

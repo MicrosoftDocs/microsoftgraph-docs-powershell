@@ -463,3 +463,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String[]>]`: 
 
 ## RELATED LINKS
+[Update-MgUserProfileNote](/powershell/module/Microsoft.Graph.People/Update-MgUserProfileNote?view=graph-powershell-v1.0)

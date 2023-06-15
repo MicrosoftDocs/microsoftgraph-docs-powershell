@@ -79,3 +79,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgDeviceManagementDataSharingConsentCount](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDataSharingConsentCount?view=graph-powershell-v1.0)

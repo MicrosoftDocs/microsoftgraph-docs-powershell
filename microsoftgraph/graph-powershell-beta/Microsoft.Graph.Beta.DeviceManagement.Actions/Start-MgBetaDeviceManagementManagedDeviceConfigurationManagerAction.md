@@ -273,3 +273,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
+[Start-MgDeviceManagementManagedDeviceConfigurationManagerAction](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Start-MgDeviceManagementManagedDeviceConfigurationManagerAction?view=graph-powershell-v1.0)

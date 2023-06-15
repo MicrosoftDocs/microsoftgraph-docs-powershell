@@ -165,3 +165,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgDriveListContentTypeColumnCount](/powershell/module/Microsoft.Graph.Files/Get-MgDriveListContentTypeColumnCount?view=graph-powershell-v1.0)

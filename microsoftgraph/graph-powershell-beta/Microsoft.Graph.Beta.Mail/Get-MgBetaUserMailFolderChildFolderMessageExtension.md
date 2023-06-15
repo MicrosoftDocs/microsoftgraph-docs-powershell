@@ -320,3 +320,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUserMailFolderChildFolderMessageExtension](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMailFolderChildFolderMessageExtension?view=graph-powershell-v1.0)

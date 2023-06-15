@@ -201,6 +201,7 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgUserEventMultiValueExtendedProperty](/powershell/module/Microsoft.Graph.Calendar/Remove-MgUserEventMultiValueExtendedProperty?view=graph-powershell-v1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetausereventmultivalueextendedproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetausereventmultivalueextendedproperty)
 

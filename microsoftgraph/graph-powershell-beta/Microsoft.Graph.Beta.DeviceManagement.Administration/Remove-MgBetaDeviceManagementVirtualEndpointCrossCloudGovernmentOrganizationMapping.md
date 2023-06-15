@@ -111,3 +111,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Remove-MgDeviceManagementVirtualEndpointCrossCloudGovernmentOrganizationMapping](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Remove-MgDeviceManagementVirtualEndpointCrossCloudGovernmentOrganizationMapping?view=graph-powershell-v1.0)

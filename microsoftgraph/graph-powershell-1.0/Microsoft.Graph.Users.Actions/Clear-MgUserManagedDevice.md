@@ -304,3 +304,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Clear-MgBetaBetaUserManagedDevice](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Clear-MgBetaUserManagedDevice?view=graph-powershell-beta)

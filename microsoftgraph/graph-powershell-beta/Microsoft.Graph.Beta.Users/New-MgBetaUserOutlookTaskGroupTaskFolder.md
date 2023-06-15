@@ -475,5 +475,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Subject <String>]`: 
 
 ## RELATED LINKS
+[New-MgUserOutlookTaskGroupTaskFolder](/powershell/module/Microsoft.Graph.Users/New-MgUserOutlookTaskGroupTaskFolder?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgUserOutlookTaskGroupTaskFolder](/powershell/module/Microsoft.Graph.Users/New-MgUserOutlookTaskGroupTaskFolder?view=graph-powershell-v1.0)

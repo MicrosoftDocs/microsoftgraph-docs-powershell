@@ -293,3 +293,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UploadDateTime <DateTime?>]`: The Type of the CodeSigning Cert as Symantec Cert.
 
 ## RELATED LINKS
+[Update-MgDeviceAppManagementSymantecCodeSigningCertificate](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementSymantecCodeSigningCertificate?view=graph-powershell-v1.0)

@@ -82,3 +82,4 @@ ALIASES
 Get-MgDeviceAppMgtAndroidManagedAppProtectionCount
 
 ## RELATED LINKS
+[Get-MgDeviceAppManagementAndroidManagedAppProtectionCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementAndroidManagedAppProtectionCount?view=graph-powershell-v1.0)

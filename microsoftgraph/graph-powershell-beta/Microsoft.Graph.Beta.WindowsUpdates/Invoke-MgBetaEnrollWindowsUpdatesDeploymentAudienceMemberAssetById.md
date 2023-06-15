@@ -275,3 +275,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UpdatePolicyId <String>]`: The unique identifier of updatePolicy
 
 ## RELATED LINKS
+[Invoke-MgEnrollWindowsUpdatesDeploymentAudienceMemberAssetById](/powershell/module/Microsoft.Graph.WindowsUpdates/Invoke-MgEnrollWindowsUpdatesDeploymentAudienceMemberAssetById?view=graph-powershell-v1.0)

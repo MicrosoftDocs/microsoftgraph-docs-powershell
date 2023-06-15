@@ -191,3 +191,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgGroupSiteColumnCount](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteColumnCount?view=graph-powershell-v1.0)

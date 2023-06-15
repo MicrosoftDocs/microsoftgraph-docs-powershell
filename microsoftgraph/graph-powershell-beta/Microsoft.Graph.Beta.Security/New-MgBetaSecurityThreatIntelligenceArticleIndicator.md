@@ -165,3 +165,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[New-MgSecurityThreatIntelligenceArticleIndicator](/powershell/module/Microsoft.Graph.Security/New-MgSecurityThreatIntelligenceArticleIndicator?view=graph-powershell-v1.0)

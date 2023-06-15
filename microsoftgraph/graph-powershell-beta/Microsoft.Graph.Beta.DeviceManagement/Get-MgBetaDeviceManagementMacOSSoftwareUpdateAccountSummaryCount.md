@@ -80,3 +80,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgDeviceManagementMacOSSoftwareUpdateAccountSummaryCount](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementMacOSSoftwareUpdateAccountSummaryCount?view=graph-powershell-v1.0)

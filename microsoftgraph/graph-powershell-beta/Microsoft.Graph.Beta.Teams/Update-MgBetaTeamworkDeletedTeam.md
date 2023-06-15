@@ -9591,5 +9591,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Update-MgTeamworkDeletedTeam](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamworkDeletedTeam?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgTeamworkDeletedTeam](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamworkDeletedTeam?view=graph-powershell-v1.0)

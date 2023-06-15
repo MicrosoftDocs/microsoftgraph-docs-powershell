@@ -454,5 +454,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[TargetDirectoryName <String>]`: Name of the target directory. Must match one of the directory definitions in synchronizationSchema.
 
 ## RELATED LINKS
+[Update-MgServicePrincipalSynchronizationTemplateSchema](/powershell/module/Microsoft.Graph.Applications/Update-MgServicePrincipalSynchronizationTemplateSchema?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgServicePrincipalSynchronizationTemplateSchema](/powershell/module/Microsoft.Graph.Applications/Update-MgServicePrincipalSynchronizationTemplateSchema?view=graph-powershell-v1.0)

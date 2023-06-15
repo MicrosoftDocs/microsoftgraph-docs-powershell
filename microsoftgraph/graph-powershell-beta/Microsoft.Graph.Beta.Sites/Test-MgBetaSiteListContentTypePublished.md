@@ -179,3 +179,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Test-MgSiteListContentTypePublished](/powershell/module/Microsoft.Graph.Sites/Test-MgSiteListContentTypePublished?view=graph-powershell-v1.0)

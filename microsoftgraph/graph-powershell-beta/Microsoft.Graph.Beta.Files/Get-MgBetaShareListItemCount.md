@@ -147,6 +147,7 @@ INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgShareListItemCount](/powershell/module/Microsoft.Graph.Files/Get-MgShareListItemCount?view=graph-powershell-v1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharelistitemcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharelistitemcount)
 

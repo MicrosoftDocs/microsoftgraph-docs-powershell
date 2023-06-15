@@ -557,3 +557,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Width <Int32?>]`: 
 
 ## RELATED LINKS
+[New-MgFinancialCompanyEmployee](/powershell/module/Microsoft.Graph.Financials/New-MgFinancialCompanyEmployee?view=graph-powershell-v1.0)

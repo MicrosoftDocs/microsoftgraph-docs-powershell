@@ -352,3 +352,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TotalUserCount <Int32?>]`: The total number of users in the given managed tenant. Optional. Read-only.
 
 ## RELATED LINKS
+[New-MgTenantRelationshipManagedTenantCredentialUserRegistrationSummary](/powershell/module/Microsoft.Graph.ManagedTenants/New-MgTenantRelationshipManagedTenantCredentialUserRegistrationSummary?view=graph-powershell-v1.0)

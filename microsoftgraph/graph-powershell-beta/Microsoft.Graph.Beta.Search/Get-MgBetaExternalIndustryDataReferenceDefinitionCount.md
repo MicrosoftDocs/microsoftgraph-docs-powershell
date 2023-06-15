@@ -80,3 +80,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgExternalIndustryDataReferenceDefinitionCount](/powershell/module/Microsoft.Graph.Search/Get-MgExternalIndustryDataReferenceDefinitionCount?view=graph-powershell-v1.0)

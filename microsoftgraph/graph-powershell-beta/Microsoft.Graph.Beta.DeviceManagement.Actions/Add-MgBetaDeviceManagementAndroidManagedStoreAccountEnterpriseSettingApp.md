@@ -160,3 +160,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ProductIds <String[]>]`: 
 
 ## RELATED LINKS
+[Add-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSettingApp](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Add-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSettingApp?view=graph-powershell-v1.0)

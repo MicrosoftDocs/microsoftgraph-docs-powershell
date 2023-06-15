@@ -81,3 +81,4 @@ ALIASES
 Get-MgDeviceAppMgtManagedEBookCount
 
 ## RELATED LINKS
+[Get-MgBetaBetaDeviceAppManagementManagedEBookCount](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementManagedEBookCount?view=graph-powershell-beta)

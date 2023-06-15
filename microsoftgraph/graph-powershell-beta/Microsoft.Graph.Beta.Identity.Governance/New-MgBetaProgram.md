@@ -239,3 +239,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Status <String>]`: The life cycle status of the control.
 
 ## RELATED LINKS
+[New-MgProgram](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgProgram?view=graph-powershell-v1.0)

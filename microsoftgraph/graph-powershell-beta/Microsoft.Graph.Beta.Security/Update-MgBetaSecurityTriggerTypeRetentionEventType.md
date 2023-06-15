@@ -378,3 +378,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
+[Update-MgSecurityTriggerTypeRetentionEventType](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityTriggerTypeRetentionEventType?view=graph-powershell-v1.0)

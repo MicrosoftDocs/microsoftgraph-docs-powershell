@@ -445,5 +445,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[DataSource <IMicrosoftGraphEdiscoveryDataSource>]`: dataSource
 
 ## RELATED LINKS
+[Add-MgComplianceEdiscoveryCaseReviewSetToReviewSet](/powershell/module/Microsoft.Graph.Compliance/Add-MgComplianceEdiscoveryCaseReviewSetToReviewSet?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Add-MgComplianceEdiscoveryCaseReviewSetToReviewSet](/powershell/module/Microsoft.Graph.Compliance/Add-MgComplianceEdiscoveryCaseReviewSetToReviewSet?view=graph-powershell-v1.0)

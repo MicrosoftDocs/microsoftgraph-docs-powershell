@@ -155,3 +155,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaBetaUserListOwnedDeviceCountAsDevice](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserListOwnedDeviceCountAsDevice?view=graph-powershell-beta)

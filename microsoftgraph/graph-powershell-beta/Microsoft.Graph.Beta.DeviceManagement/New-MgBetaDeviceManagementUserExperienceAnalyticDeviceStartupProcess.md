@@ -231,3 +231,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[StartupImpactInMS <Int32?>]`: User experience analytics device startup process impact in milliseconds.
 
 ## RELATED LINKS
+[New-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess?view=graph-powershell-v1.0)

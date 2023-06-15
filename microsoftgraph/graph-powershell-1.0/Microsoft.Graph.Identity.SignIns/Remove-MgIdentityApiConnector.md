@@ -208,3 +208,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Remove-MgBetaBetaIdentityApiConnector](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityApiConnector?view=graph-powershell-beta)

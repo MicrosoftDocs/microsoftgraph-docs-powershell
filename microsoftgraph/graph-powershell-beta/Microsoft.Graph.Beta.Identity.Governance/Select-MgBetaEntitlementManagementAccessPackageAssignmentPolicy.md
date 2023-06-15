@@ -4974,5 +4974,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
 
 ## RELATED LINKS
+[Select-MgEntitlementManagementAccessPackageAssignmentPolicy](/powershell/module/Microsoft.Graph.Identity.Governance/Select-MgEntitlementManagementAccessPackageAssignmentPolicy?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Select-MgEntitlementManagementAccessPackageAssignmentPolicy](/powershell/module/Microsoft.Graph.Identity.Governance/Select-MgEntitlementManagementAccessPackageAssignmentPolicy?view=graph-powershell-v1.0)

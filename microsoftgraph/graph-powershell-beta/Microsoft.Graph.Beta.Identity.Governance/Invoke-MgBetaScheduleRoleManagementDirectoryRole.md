@@ -216,3 +216,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Invoke-MgScheduleRoleManagementDirectoryRole](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgScheduleRoleManagementDirectoryRole?view=graph-powershell-v1.0)

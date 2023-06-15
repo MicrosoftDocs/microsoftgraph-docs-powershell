@@ -371,5 +371,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
 ## RELATED LINKS
+[Update-MgDeviceManagementIntentAssignment](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementIntentAssignment?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgDeviceManagementIntentAssignment](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementIntentAssignment?view=graph-powershell-v1.0)

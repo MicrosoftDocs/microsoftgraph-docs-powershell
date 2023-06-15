@@ -609,5 +609,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[UsersCount <Int32?>]`: 
 
 ## RELATED LINKS
+[Update-MgPrivilegedApproval](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgPrivilegedApproval?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgPrivilegedApproval](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgPrivilegedApproval?view=graph-powershell-v1.0)

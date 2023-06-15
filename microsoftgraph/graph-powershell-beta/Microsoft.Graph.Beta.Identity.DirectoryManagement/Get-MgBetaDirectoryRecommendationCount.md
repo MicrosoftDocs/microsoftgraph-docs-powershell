@@ -79,3 +79,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgDirectoryRecommendationCount](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryRecommendationCount?view=graph-powershell-v1.0)

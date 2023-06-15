@@ -353,3 +353,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Subcode <Int32?>]`: The result sub-code.
 
 ## RELATED LINKS
+[New-MgComplianceEdiscoveryCaseOperation](/powershell/module/Microsoft.Graph.Compliance/New-MgComplianceEdiscoveryCaseOperation?view=graph-powershell-v1.0)

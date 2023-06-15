@@ -165,3 +165,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[StartupDateTime <DateTime?>]`: The user experience analytics device startup date time.
 
 ## RELATED LINKS
+[New-MgDeviceManagementUserExperienceAnalyticScoreHistory](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticScoreHistory?view=graph-powershell-v1.0)

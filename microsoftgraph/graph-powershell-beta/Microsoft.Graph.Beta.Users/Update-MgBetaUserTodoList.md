@@ -460,5 +460,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Title <String>]`: A brief description of the task.
 
 ## RELATED LINKS
+[Update-MgUserTodoList](/powershell/module/Microsoft.Graph.Users/Update-MgUserTodoList?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgUserTodoList](/powershell/module/Microsoft.Graph.Users/Update-MgUserTodoList?view=graph-powershell-v1.0)

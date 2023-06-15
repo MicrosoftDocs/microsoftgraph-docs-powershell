@@ -292,3 +292,4 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Update-MgBetaBetaGroupThreadPostMultiValueExtendedProperty](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroupThreadPostMultiValueExtendedProperty?view=graph-powershell-beta)

@@ -189,3 +189,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Stop-MgServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/Stop-MgServicePrincipalSynchronizationJob?view=graph-powershell-v1.0)

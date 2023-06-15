@@ -515,5 +515,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UpdateVersion <String>]`: Version of the software update
 
 ## RELATED LINKS
+[Update-MgDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary?view=graph-powershell-v1.0)

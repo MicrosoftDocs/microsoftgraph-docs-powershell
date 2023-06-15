@@ -433,5 +433,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Value <String>]`: Value for this key-value pair
 
 ## RELATED LINKS
+[Update-MgDeviceManagementAndroidManagedStoreAppConfigurationSchema](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementAndroidManagedStoreAppConfigurationSchema?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgDeviceManagementAndroidManagedStoreAppConfigurationSchema](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementAndroidManagedStoreAppConfigurationSchema?view=graph-powershell-v1.0)

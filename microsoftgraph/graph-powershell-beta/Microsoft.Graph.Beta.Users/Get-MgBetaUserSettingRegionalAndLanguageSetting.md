@@ -141,3 +141,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUserSettingRegionalAndLanguageSetting](/powershell/module/Microsoft.Graph.Users/Get-MgUserSettingRegionalAndLanguageSetting?view=graph-powershell-v1.0)

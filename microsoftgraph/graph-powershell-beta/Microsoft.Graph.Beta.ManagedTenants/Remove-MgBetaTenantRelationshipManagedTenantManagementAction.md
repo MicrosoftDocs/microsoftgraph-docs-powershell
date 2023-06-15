@@ -199,3 +199,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsProtectionStateId <String>]`: The unique identifier of windowsProtectionState
 
 ## RELATED LINKS
+[Remove-MgTenantRelationshipManagedTenantManagementAction](/powershell/module/Microsoft.Graph.ManagedTenants/Remove-MgTenantRelationshipManagedTenantManagementAction?view=graph-powershell-v1.0)

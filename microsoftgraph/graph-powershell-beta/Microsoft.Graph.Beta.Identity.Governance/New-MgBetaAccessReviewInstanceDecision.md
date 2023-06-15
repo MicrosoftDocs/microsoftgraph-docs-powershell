@@ -489,5 +489,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
 
 ## RELATED LINKS
+[New-MgAccessReviewInstanceDecision](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgAccessReviewInstanceDecision?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgAccessReviewInstanceDecision](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgAccessReviewInstanceDecision?view=graph-powershell-v1.0)

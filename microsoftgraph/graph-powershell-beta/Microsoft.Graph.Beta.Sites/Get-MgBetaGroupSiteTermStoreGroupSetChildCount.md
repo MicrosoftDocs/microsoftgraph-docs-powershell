@@ -248,3 +248,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgGroupSiteTermStoreGroupSetChildCount](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteTermStoreGroupSetChildCount?view=graph-powershell-v1.0)

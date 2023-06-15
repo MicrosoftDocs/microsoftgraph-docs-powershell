@@ -578,5 +578,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebUrl <String>]`: A URL that opens the item in the browser on the OneDrive website.
 
 ## RELATED LINKS
+[New-MgBetaBetaDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveItemPermission?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[New-MgBetaBetaDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveItemPermission?view=graph-powershell-beta)

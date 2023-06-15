@@ -79,3 +79,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgDirectoryInboundSharedUserProfileCount](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryInboundSharedUserProfileCount?view=graph-powershell-v1.0)

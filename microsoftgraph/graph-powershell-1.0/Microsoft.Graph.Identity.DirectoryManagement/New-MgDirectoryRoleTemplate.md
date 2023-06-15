@@ -193,3 +193,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[DisplayName <String>]`: The display name to set for the directory role. Read-only.
 
 ## RELATED LINKS
+[New-MgBetaBetaDirectoryRoleTemplate](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryRoleTemplate?view=graph-powershell-beta)

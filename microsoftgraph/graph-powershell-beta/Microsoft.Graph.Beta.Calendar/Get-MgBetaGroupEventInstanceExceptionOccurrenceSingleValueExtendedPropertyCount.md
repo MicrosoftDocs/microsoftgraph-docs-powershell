@@ -182,6 +182,7 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgGroupEventInstanceExceptionOccurrenceSingleValueExtendedPropertyCount](/powershell/module/Microsoft.Graph.Calendar/Get-MgGroupEventInstanceExceptionOccurrenceSingleValueExtendedPropertyCount?view=graph-powershell-v1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupeventinstanceexceptionoccurrencesinglevalueextendedpropertycount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupeventinstanceexceptionoccurrencesinglevalueextendedpropertycount)
 

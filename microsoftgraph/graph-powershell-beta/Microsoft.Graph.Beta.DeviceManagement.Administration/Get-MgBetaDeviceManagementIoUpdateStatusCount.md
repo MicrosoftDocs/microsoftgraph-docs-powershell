@@ -79,3 +79,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgDeviceManagementIoUpdateStatusCount](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementIoUpdateStatusCount?view=graph-powershell-v1.0)

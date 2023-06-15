@@ -9820,5 +9820,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[WebUrl <String>]`: The URL for the chat in Microsoft Teams. The URL should be treated as an opaque blob, and not parsed. Read-only.
 
 ## RELATED LINKS
+[Update-MgUserTeamwork](/powershell/module/Microsoft.Graph.Teams/Update-MgUserTeamwork?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgUserTeamwork](/powershell/module/Microsoft.Graph.Teams/Update-MgUserTeamwork?view=graph-powershell-v1.0)

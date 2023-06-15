@@ -246,3 +246,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EventSource <String>]`: The source of the event. Examples include: Intune, Sccm.
 
 ## RELATED LINKS
+[New-MgDeviceManagementUserExperienceAnalyticDeviceTimelineEvent](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticDeviceTimelineEvent?view=graph-powershell-v1.0)

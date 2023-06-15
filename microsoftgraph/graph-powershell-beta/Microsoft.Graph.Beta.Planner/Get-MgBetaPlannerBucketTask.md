@@ -213,3 +213,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgPlannerBucketTask](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerBucketTask?view=graph-powershell-v1.0)

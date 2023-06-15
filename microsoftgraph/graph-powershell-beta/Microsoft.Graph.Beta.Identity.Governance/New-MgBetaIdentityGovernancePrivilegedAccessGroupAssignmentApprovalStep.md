@@ -422,5 +422,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Id <String>]`: Unique identifier for the identity.
 
 ## RELATED LINKS
+[New-MgIdentityGovernancePrivilegedAccessGroupAssignmentApprovalStep](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernancePrivilegedAccessGroupAssignmentApprovalStep?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgIdentityGovernancePrivilegedAccessGroupAssignmentApprovalStep](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernancePrivilegedAccessGroupAssignmentApprovalStep?view=graph-powershell-v1.0)

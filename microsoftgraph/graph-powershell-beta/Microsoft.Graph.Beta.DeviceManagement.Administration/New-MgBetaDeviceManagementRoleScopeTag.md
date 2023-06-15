@@ -211,3 +211,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[DisplayName <String>]`: The display or friendly name of the Role Scope Tag.
 
 ## RELATED LINKS
+[New-MgDeviceManagementRoleScopeTag](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementRoleScopeTag?view=graph-powershell-v1.0)

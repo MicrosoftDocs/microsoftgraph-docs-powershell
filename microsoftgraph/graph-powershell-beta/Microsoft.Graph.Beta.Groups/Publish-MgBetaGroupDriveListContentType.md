@@ -220,3 +220,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Publish-MgGroupDriveListContentType](/powershell/module/Microsoft.Graph.Groups/Publish-MgGroupDriveListContentType?view=graph-powershell-v1.0)

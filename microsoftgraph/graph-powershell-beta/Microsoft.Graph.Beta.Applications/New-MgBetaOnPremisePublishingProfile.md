@@ -1612,5 +1612,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ResourceName <String>]`: Name of the publishedResource.
 
 ## RELATED LINKS
+[New-MgOnPremisePublishingProfile](/powershell/module/Microsoft.Graph.Applications/New-MgOnPremisePublishingProfile?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgOnPremisePublishingProfile](/powershell/module/Microsoft.Graph.Applications/New-MgOnPremisePublishingProfile?view=graph-powershell-v1.0)

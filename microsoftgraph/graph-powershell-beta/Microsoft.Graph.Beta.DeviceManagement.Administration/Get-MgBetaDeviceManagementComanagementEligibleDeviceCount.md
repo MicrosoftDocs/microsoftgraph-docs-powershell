@@ -80,3 +80,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgDeviceManagementComanagementEligibleDeviceCount](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementComanagementEligibleDeviceCount?view=graph-powershell-v1.0)

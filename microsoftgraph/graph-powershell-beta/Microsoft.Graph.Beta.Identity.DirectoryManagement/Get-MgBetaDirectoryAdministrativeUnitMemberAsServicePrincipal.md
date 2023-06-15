@@ -322,3 +322,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgDirectoryAdministrativeUnitMemberAsServicePrincipal](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryAdministrativeUnitMemberAsServicePrincipal?view=graph-powershell-v1.0)

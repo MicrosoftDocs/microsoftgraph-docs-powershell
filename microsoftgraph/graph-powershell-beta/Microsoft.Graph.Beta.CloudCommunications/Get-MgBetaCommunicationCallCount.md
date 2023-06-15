@@ -79,3 +79,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgCommunicationCallCount](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationCallCount?view=graph-powershell-v1.0)

@@ -199,3 +199,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UpdateCategory <String>]`: updateCategory
 
 ## RELATED LINKS
+[Invoke-MgEnrollWindowsUpdatesUpdatableAssetById](/powershell/module/Microsoft.Graph.WindowsUpdates/Invoke-MgEnrollWindowsUpdatesUpdatableAssetById?view=graph-powershell-v1.0)

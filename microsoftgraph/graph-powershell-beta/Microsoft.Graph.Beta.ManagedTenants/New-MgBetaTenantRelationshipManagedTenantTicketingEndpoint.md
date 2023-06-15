@@ -260,3 +260,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[PhoneNumber <String>]`: 
 
 ## RELATED LINKS
+[New-MgTenantRelationshipManagedTenantTicketingEndpoint](/powershell/module/Microsoft.Graph.ManagedTenants/New-MgTenantRelationshipManagedTenantTicketingEndpoint?view=graph-powershell-v1.0)

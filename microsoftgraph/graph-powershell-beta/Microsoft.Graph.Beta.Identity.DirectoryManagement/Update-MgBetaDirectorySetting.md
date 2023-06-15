@@ -288,3 +288,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Value <String>]`: Value of the setting.
 
 ## RELATED LINKS
+[Update-MgDirectorySetting](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectorySetting?view=graph-powershell-v1.0)

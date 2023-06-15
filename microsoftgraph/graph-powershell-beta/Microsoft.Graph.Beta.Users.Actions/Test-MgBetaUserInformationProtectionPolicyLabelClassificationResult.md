@@ -286,3 +286,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Test-MgUserInformationProtectionPolicyLabelClassificationResult](/powershell/module/Microsoft.Graph.Users.Actions/Test-MgUserInformationProtectionPolicyLabelClassificationResult?view=graph-powershell-v1.0)

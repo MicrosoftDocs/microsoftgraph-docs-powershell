@@ -325,3 +325,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[Status <String>]`: workloadActionStatus
 
 ## RELATED LINKS
+[Update-MgTenantRelationshipManagedTenantManagementActionTenantDeploymentStatus](/powershell/module/Microsoft.Graph.ManagedTenants/Update-MgTenantRelationshipManagedTenantManagementActionTenantDeploymentStatus?view=graph-powershell-v1.0)

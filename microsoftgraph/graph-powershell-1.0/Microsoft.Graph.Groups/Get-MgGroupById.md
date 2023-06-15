@@ -174,3 +174,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Types <String[]>]`: 
 
 ## RELATED LINKS
+[Get-MgBetaBetaGroupById](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupById?view=graph-powershell-beta)

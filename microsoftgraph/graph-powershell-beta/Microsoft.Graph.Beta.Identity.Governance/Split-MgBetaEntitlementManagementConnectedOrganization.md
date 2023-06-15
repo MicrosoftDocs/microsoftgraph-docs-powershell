@@ -104,3 +104,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[State <String>]`: connectedOrganizationState
 
 ## RELATED LINKS
+[Split-MgEntitlementManagementConnectedOrganization](/powershell/module/Microsoft.Graph.Identity.Governance/Split-MgEntitlementManagementConnectedOrganization?view=graph-powershell-v1.0)

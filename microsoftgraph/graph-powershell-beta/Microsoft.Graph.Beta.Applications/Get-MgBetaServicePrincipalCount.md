@@ -96,3 +96,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgServicePrincipalCount](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalCount?view=graph-powershell-v1.0)

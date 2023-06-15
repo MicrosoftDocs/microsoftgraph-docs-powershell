@@ -323,5 +323,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a UI.
 
 ## RELATED LINKS
+[Update-MgUserInformationProtectionPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgUserInformationProtectionPolicy?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgUserInformationProtectionPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgUserInformationProtectionPolicy?view=graph-powershell-v1.0)

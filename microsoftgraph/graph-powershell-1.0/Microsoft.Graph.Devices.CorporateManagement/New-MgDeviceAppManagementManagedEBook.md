@@ -444,3 +444,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserName <String>]`: User name.
 
 ## RELATED LINKS
+[New-MgBetaBetaDeviceAppManagementManagedEBook](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementManagedEBook?view=graph-powershell-beta)

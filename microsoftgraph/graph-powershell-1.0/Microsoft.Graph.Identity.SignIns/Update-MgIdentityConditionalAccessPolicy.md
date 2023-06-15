@@ -566,5 +566,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Value <Int32?>]`: The number of days or hours.
 
 ## RELATED LINKS
+[Update-MgBetaBetaIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityConditionalAccessPolicy?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaBetaIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityConditionalAccessPolicy?view=graph-powershell-beta)

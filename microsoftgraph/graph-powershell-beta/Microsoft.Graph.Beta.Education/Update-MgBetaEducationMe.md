@@ -25126,5 +25126,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[UserId <String>]`: UserId associated with this device registration record.
 
 ## RELATED LINKS
+[Update-MgEducationMe](/powershell/module/Microsoft.Graph.Education/Update-MgEducationMe?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgEducationMe](/powershell/module/Microsoft.Graph.Education/Update-MgEducationMe?view=graph-powershell-v1.0)

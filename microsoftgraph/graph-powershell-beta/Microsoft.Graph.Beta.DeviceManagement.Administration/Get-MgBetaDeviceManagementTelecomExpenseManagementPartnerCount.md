@@ -80,3 +80,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgDeviceManagementTelecomExpenseManagementPartnerCount](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementTelecomExpenseManagementPartnerCount?view=graph-powershell-v1.0)

@@ -707,3 +707,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[LastModifiedDateTime <DateTime?>]`: 
 
 ## RELATED LINKS
+[New-MgFinancialCompanyCustomer](/powershell/module/Microsoft.Graph.Financials/New-MgFinancialCompanyCustomer?view=graph-powershell-v1.0)

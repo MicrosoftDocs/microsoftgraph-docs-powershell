@@ -81,3 +81,4 @@ ALIASES
 Get-MgDeviceAppMgtMobileAppConfigurationCount
 
 ## RELATED LINKS
+[Get-MgBetaBetaDeviceAppManagementMobileAppConfigurationCount](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppConfigurationCount?view=graph-powershell-beta)

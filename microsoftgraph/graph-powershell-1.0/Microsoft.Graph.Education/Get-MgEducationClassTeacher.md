@@ -215,3 +215,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaBetaEducationClassTeacher](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassTeacher?view=graph-powershell-beta)

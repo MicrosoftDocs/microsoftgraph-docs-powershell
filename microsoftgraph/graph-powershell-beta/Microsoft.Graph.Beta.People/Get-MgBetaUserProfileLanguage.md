@@ -295,3 +295,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkPositionId <String>]`: The unique identifier of workPosition
 
 ## RELATED LINKS
+[Get-MgUserProfileLanguage](/powershell/module/Microsoft.Graph.People/Get-MgUserProfileLanguage?view=graph-powershell-v1.0)

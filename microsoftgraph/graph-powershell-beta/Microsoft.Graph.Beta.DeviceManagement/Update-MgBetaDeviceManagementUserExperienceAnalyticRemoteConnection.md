@@ -554,5 +554,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
 ## RELATED LINKS
+[Update-MgDeviceManagementUserExperienceAnalyticRemoteConnection](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementUserExperienceAnalyticRemoteConnection?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgDeviceManagementUserExperienceAnalyticRemoteConnection](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementUserExperienceAnalyticRemoteConnection?view=graph-powershell-v1.0)

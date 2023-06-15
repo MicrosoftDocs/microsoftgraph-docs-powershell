@@ -188,3 +188,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaBetaUserDriveItemListItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItemListItem?view=graph-powershell-beta)

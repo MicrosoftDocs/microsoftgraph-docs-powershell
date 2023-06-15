@@ -100,3 +100,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Enable-MgDeviceManagementDeviceHealthScriptGlobalScript](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Enable-MgDeviceManagementDeviceHealthScriptGlobalScript?view=graph-powershell-v1.0)

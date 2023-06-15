@@ -221,3 +221,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgApplicationAppManagementPolicy](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationAppManagementPolicy?view=graph-powershell-v1.0)

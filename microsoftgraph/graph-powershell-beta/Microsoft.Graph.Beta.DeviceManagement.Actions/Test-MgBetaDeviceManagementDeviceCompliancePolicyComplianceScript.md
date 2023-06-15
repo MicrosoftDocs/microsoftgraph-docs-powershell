@@ -159,3 +159,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[RulesContent <Byte[]>]`: Json of the rules.
 
 ## RELATED LINKS
+[Test-MgDeviceManagementDeviceCompliancePolicyComplianceScript](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Test-MgDeviceManagementDeviceCompliancePolicyComplianceScript?view=graph-powershell-v1.0)

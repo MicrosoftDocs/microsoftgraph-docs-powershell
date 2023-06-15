@@ -296,3 +296,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
 ## RELATED LINKS
+[Set-MgDeviceAppManagementWdacSupplementalPolicy](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Set-MgDeviceAppManagementWdacSupplementalPolicy?view=graph-powershell-v1.0)

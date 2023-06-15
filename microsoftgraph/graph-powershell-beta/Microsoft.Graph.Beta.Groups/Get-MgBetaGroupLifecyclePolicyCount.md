@@ -79,3 +79,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgGroupLifecyclePolicyCount](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupLifecyclePolicyCount?view=graph-powershell-v1.0)

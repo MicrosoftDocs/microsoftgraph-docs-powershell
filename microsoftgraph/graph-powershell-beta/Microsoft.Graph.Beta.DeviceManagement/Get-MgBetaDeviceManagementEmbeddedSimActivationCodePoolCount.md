@@ -80,3 +80,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgDeviceManagementEmbeddedSimActivationCodePoolCount](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementEmbeddedSimActivationCodePoolCount?view=graph-powershell-v1.0)

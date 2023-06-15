@@ -263,3 +263,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TopicIdentifier <String>]`: Topic Id.
 
 ## RELATED LINKS
+[Update-MgBetaBetaDeviceManagementApplePushNotificationCertificate](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementApplePushNotificationCertificate?view=graph-powershell-beta)

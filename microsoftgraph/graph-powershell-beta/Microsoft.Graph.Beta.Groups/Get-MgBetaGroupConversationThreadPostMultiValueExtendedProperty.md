@@ -367,6 +367,7 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgGroupConversationThreadPostMultiValueExtendedProperty](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupConversationThreadPostMultiValueExtendedProperty?view=graph-powershell-v1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupconversationthreadpostmultivalueextendedproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupconversationthreadpostmultivalueextendedproperty)
 

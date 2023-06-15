@@ -258,3 +258,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Set-MgGroupTeamChannelMessageHostedContent](/powershell/module/Microsoft.Graph.Teams/Set-MgGroupTeamChannelMessageHostedContent?view=graph-powershell-v1.0)

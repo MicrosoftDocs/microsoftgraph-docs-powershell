@@ -457,3 +457,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UnlicensedUsersCount <Int32?>]`: 
 
 ## RELATED LINKS
+[New-MgTenantRelationshipManagedTenantManagementTemplateCollectionTenantSummary](/powershell/module/Microsoft.Graph.ManagedTenants/New-MgTenantRelationshipManagedTenantManagementTemplateCollectionTenantSummary?view=graph-powershell-v1.0)

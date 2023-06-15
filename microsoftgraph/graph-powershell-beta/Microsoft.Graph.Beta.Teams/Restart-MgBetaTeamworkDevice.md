@@ -176,3 +176,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Restart-MgTeamworkDevice](/powershell/module/Microsoft.Graph.Teams/Restart-MgTeamworkDevice?view=graph-powershell-v1.0)

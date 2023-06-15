@@ -283,3 +283,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+[Get-MgAuditLogDirectoryAudit](/powershell/module/Microsoft.Graph.Reports/Get-MgAuditLogDirectoryAudit?view=graph-powershell-v1.0)

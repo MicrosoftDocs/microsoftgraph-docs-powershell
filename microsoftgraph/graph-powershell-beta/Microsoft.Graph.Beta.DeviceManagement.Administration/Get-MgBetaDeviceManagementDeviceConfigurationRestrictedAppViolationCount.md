@@ -80,3 +80,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgDeviceManagementDeviceConfigurationRestrictedAppViolationCount](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementDeviceConfigurationRestrictedAppViolationCount?view=graph-powershell-v1.0)

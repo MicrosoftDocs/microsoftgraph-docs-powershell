@@ -196,3 +196,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Userid <String>]`: Usage: userid='{userid}'
 
 ## RELATED LINKS
+[Get-MgDeviceManagementVirtualEndpointCloudPcConnectivityHistory](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementVirtualEndpointCloudPcConnectivityHistory?view=graph-powershell-v1.0)

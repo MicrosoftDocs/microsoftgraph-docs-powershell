@@ -449,5 +449,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ResultType <String>]`: threatAssessmentResultType
 
 ## RELATED LINKS
+[Update-MgUserInformationProtectionThreatAssessmentRequest](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgUserInformationProtectionThreatAssessmentRequest?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgUserInformationProtectionThreatAssessmentRequest](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgUserInformationProtectionThreatAssessmentRequest?view=graph-powershell-v1.0)

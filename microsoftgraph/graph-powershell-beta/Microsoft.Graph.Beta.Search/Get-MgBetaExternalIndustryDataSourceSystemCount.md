@@ -79,3 +79,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgExternalIndustryDataSourceSystemCount](/powershell/module/Microsoft.Graph.Search/Get-MgExternalIndustryDataSourceSystemCount?view=graph-powershell-v1.0)

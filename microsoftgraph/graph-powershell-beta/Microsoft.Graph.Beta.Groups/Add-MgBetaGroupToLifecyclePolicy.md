@@ -240,3 +240,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Add-MgGroupToLifecyclePolicy](/powershell/module/Microsoft.Graph.Groups/Add-MgGroupToLifecyclePolicy?view=graph-powershell-v1.0)

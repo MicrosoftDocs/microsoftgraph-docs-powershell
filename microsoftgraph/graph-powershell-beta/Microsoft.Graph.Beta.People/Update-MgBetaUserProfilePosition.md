@@ -554,5 +554,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String[]>]`: 
 
 ## RELATED LINKS
+[Update-MgUserProfilePosition](/powershell/module/Microsoft.Graph.People/Update-MgUserProfilePosition?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgUserProfilePosition](/powershell/module/Microsoft.Graph.People/Update-MgUserProfilePosition?view=graph-powershell-v1.0)

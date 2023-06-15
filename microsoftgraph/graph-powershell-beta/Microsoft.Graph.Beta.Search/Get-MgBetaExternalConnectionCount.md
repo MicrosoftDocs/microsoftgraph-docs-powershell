@@ -79,3 +79,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgExternalConnectionCount](/powershell/module/Microsoft.Graph.Search/Get-MgExternalConnectionCount?view=graph-powershell-v1.0)

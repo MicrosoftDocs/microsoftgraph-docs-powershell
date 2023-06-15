@@ -158,3 +158,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUserOnlineMeetingRegistrationCustomQuestionCount](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserOnlineMeetingRegistrationCustomQuestionCount?view=graph-powershell-v1.0)

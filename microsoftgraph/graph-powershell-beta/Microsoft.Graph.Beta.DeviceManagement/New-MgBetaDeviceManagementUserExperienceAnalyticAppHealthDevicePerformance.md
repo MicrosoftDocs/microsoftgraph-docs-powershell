@@ -351,3 +351,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ProcessedDateTime <DateTime?>]`: The date and time when the statistics were last computed.
 
 ## RELATED LINKS
+[New-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance?view=graph-powershell-v1.0)

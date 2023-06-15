@@ -9713,5 +9713,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Sets <IMicrosoftGraphTermStoreSet[]>]`: Collection of all sets available in the term store.
 
 ## RELATED LINKS
+[New-MgSecurityCaseEdiscoveryCaseLegalHoldSiteSource](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseLegalHoldSiteSource?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgSecurityCaseEdiscoveryCaseLegalHoldSiteSource](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseLegalHoldSiteSource?view=graph-powershell-v1.0)

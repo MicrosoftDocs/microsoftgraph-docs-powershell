@@ -283,3 +283,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Remove-MgGroupSiteOnenoteNotebookSectionGroupSectionPage](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSiteOnenoteNotebookSectionGroupSectionPage?view=graph-powershell-v1.0)

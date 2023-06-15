@@ -82,3 +82,4 @@ ALIASES
 Get-MgDeviceAppMgtWindowInformationProtectionDeviceRegistrationCount
 
 ## RELATED LINKS
+[Get-MgDeviceAppManagementWindowsInformationProtectionDeviceRegistrationCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementWindowsInformationProtectionDeviceRegistrationCount?view=graph-powershell-v1.0)

@@ -499,5 +499,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[SourceType <String>]`: settingSourceType
 
 ## RELATED LINKS
+[New-MgDeviceManagementManagedDeviceSecurityBaselineStateSettingState](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementManagedDeviceSecurityBaselineStateSettingState?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgDeviceManagementManagedDeviceSecurityBaselineStateSettingState](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementManagedDeviceSecurityBaselineStateSettingState?view=graph-powershell-v1.0)

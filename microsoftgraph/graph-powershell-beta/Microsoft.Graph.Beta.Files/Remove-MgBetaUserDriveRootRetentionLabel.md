@@ -196,3 +196,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgUserDriveRootRetentionLabel](/powershell/module/Microsoft.Graph.Files/Remove-MgUserDriveRootRetentionLabel?view=graph-powershell-v1.0)

@@ -114,3 +114,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Remove-MgTeamworkTeamAppSetting](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamworkTeamAppSetting?view=graph-powershell-v1.0)

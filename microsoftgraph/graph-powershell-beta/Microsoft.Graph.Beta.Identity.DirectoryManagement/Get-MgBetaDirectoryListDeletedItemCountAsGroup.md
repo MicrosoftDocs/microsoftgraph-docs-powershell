@@ -79,3 +79,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgDirectoryListDeletedItemCountAsGroup](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryListDeletedItemCountAsGroup?view=graph-powershell-v1.0)

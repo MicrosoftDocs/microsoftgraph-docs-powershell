@@ -14668,5 +14668,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebUrl <String>]`: Deep link URL of the tab instance. Read only.
 
 ## RELATED LINKS
+[New-MgTeamworkDeletedTeamChannel](/powershell/module/Microsoft.Graph.Teams/New-MgTeamworkDeletedTeamChannel?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgTeamworkDeletedTeamChannel](/powershell/module/Microsoft.Graph.Teams/New-MgTeamworkDeletedTeamChannel?view=graph-powershell-v1.0)

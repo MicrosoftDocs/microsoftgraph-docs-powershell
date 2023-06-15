@@ -79,3 +79,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaBetaSecurityIncidentCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityIncidentCount?view=graph-powershell-beta)

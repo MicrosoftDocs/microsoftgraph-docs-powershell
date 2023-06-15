@@ -236,3 +236,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgDriveItemActivity](/powershell/module/Microsoft.Graph.Files/Get-MgDriveItemActivity?view=graph-powershell-v1.0)

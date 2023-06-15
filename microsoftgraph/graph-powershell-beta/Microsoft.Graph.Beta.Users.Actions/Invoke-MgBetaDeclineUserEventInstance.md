@@ -326,3 +326,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
 
 ## RELATED LINKS
+[Invoke-MgDeclineUserEventInstance](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgDeclineUserEventInstance?view=graph-powershell-v1.0)

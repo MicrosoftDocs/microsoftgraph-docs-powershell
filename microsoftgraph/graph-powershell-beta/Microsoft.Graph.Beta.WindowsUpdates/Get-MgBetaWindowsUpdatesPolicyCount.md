@@ -81,3 +81,4 @@ ALIASES
 Get-MgBetaWuPolicyCount
 
 ## RELATED LINKS
+[Get-MgWindowsUpdatesPolicyCount](/powershell/module/Microsoft.Graph.WindowsUpdates/Get-MgWindowsUpdatesPolicyCount?view=graph-powershell-v1.0)

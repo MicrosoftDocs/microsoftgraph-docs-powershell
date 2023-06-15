@@ -299,3 +299,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Clear-MgUserChatMessageReplyReaction](/powershell/module/Microsoft.Graph.Users.Actions/Clear-MgUserChatMessageReplyReaction?view=graph-powershell-v1.0)

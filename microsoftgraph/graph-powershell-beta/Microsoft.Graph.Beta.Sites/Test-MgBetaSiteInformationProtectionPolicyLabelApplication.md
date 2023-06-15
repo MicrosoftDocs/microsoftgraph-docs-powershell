@@ -302,3 +302,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[LabelId <String>]`: The GUID of the label that should be applied to the information.
 
 ## RELATED LINKS
+[Test-MgSiteInformationProtectionPolicyLabelApplication](/powershell/module/Microsoft.Graph.Sites/Test-MgSiteInformationProtectionPolicyLabelApplication?view=graph-powershell-v1.0)

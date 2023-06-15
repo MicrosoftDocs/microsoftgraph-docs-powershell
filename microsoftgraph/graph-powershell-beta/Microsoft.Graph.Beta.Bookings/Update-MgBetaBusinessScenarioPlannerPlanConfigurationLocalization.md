@@ -275,3 +275,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[PlannerPlanConfigurationLocalizationId <String>]`: The unique identifier of plannerPlanConfigurationLocalization
 
 ## RELATED LINKS
+[Update-MgBusinessScenarioPlannerPlanConfigurationLocalization](/powershell/module/Microsoft.Graph.Bookings/Update-MgBusinessScenarioPlannerPlanConfigurationLocalization?view=graph-powershell-v1.0)

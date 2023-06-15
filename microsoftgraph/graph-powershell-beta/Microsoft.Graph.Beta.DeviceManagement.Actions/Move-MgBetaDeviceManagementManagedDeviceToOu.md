@@ -180,3 +180,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[OrganizationalUnitPath <String>]`: 
 
 ## RELATED LINKS
+[Move-MgDeviceManagementManagedDeviceToOu](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Move-MgDeviceManagementManagedDeviceToOu?view=graph-powershell-v1.0)

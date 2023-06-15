@@ -79,3 +79,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaBetaAuditLogSignInCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaAuditLogSignInCount?view=graph-powershell-beta)

@@ -641,5 +641,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Terms <IMicrosoftGraphTermStoreTerm[]>]`: All the terms under the set.
 
 ## RELATED LINKS
+[New-MgGroupSiteTermStoreSetChild](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteTermStoreSetChild?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgGroupSiteTermStoreSetChild](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteTermStoreSetChild?view=graph-powershell-v1.0)

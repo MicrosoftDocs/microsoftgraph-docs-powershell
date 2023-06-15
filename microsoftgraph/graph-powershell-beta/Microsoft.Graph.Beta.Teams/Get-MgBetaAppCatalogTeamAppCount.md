@@ -79,3 +79,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgAppCatalogTeamAppCount](/powershell/module/Microsoft.Graph.Teams/Get-MgAppCatalogTeamAppCount?view=graph-powershell-v1.0)

@@ -14437,5 +14437,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserPrincipalName <String>]`: User principle name of specific user.
 
 ## RELATED LINKS
+[New-MgDeviceManagementScript](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementScript?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgDeviceManagementScript](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementScript?view=graph-powershell-v1.0)

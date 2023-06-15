@@ -53,3 +53,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgDeviceManagementAssignmentFilterState](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementAssignmentFilterState?view=graph-powershell-v1.0)

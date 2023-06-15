@@ -338,3 +338,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[Update-MgDeviceManagementAutopilotEventPolicyStatusDetail](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Update-MgDeviceManagementAutopilotEventPolicyStatusDetail?view=graph-powershell-v1.0)

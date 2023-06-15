@@ -293,3 +293,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+[Test-MgBetaBetaGroupDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Groups/Test-MgBetaGroupDriveItemPermission?view=graph-powershell-beta)

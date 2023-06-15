@@ -34362,5 +34362,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Worksheets <IMicrosoftGraphWorkbookWorksheet[]>]`: Represents a collection of worksheets associated with the workbook. Read-only.
 
 ## RELATED LINKS
+[New-MgDriveItem](/powershell/module/Microsoft.Graph.Files/New-MgDriveItem?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgDriveItem](/powershell/module/Microsoft.Graph.Files/New-MgDriveItem?view=graph-powershell-v1.0)

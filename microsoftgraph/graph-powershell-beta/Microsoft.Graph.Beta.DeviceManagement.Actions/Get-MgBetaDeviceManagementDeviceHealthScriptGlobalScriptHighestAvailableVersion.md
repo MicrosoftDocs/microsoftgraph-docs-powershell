@@ -182,3 +182,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
+[Get-MgDeviceManagementDeviceHealthScriptGlobalScriptHighestAvailableVersion](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Get-MgDeviceManagementDeviceHealthScriptGlobalScriptHighestAvailableVersion?view=graph-powershell-v1.0)

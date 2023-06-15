@@ -389,3 +389,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TopProcesses <String>]`: 
 
 ## RELATED LINKS
+[New-MgTenantRelationshipManagedTenantDeviceHealthStatus](/powershell/module/Microsoft.Graph.ManagedTenants/New-MgTenantRelationshipManagedTenantDeviceHealthStatus?view=graph-powershell-v1.0)

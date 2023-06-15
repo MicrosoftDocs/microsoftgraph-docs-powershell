@@ -405,3 +405,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TotalAppFreezeCount <Int32?>]`: 
 
 ## RELATED LINKS
+[New-MgTenantRelationshipManagedTenantDeviceAppPerformance](/powershell/module/Microsoft.Graph.ManagedTenants/New-MgTenantRelationshipManagedTenantDeviceAppPerformance?view=graph-powershell-v1.0)

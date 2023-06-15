@@ -700,5 +700,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ParentSectionGroup <IMicrosoftGraphSectionGroup>]`: sectionGroup
 
 ## RELATED LINKS
+[Update-MgUserOnenoteNotebook](/powershell/module/Microsoft.Graph.Notes/Update-MgUserOnenoteNotebook?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgUserOnenoteNotebook](/powershell/module/Microsoft.Graph.Notes/Update-MgUserOnenoteNotebook?view=graph-powershell-v1.0)
