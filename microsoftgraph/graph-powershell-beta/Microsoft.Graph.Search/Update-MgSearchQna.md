@@ -338,7 +338,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetedVariations
-Variations of a qna for different countries or devices.
+Variations of a qna for different countries/regions or devices.
 Use when you need to show different content to users based on their device, country/region, or both.
 The date and group settings will apply to all variations.
 To construct, please use Get-Help -Online and see NOTES section for TARGETEDVARIATIONS properties and create a hash table.
