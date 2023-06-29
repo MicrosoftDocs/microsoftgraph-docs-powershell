@@ -8,6 +8,9 @@ steps:
     targetType: 'inline'
     pwsh: true
     script: |
+          git config --global user.email "timwamalwa@gmail.com"
+          git config --global user.name "Timothy Wamalwa"
+          git config --system core.longpaths true
           try{
               # Try to update the V1 module first.
               Install-Module Microsoft.Graph.Beta -AllowPreRelease -Repository PSGallery -Scope AllUsers -AcceptLicense -SkipPublisherCheck -Force -AllowClobber
