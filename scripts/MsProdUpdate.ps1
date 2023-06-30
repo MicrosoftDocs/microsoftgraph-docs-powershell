@@ -121,7 +121,7 @@ function Get-Files {
     }
     
 }
-function Get-ExternalDocs-Url {
+function Get-ExternalDocsUrl {
 
     param(
         [ValidateSet("beta", "v1.0")]
