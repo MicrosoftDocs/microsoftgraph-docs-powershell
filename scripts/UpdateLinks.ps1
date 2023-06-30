@@ -6,7 +6,7 @@ Param(
     [System.Collections.Generic.HashSet[string]]$BetaCommandGetVariantList= @(),
     [System.Collections.Generic.HashSet[string]]$V1CommandListVariantList= @(),
     [System.Collections.Generic.HashSet[string]]$BetaCommandListVariantList= @(),
-    [string] $ModuleMappingConfigPath = ("..\msgraph-sdk-powershell\config\ModulesMapping.jsonc"),
+    [string] $ModuleMappingConfigPath =(Join-Path $PSScriptRoot "..\config\ModulesMapping.jsonc"),
     [string] $SDKDocsPath = ("..\msgraph-sdk-powershell\src"),
     [string] $WorkLoadDocsPath = ("..\microsoftgraph-docs-powershell\microsoftgraph"),
     [string] $GraphDocsPath = ("..\microsoft-graph-docs")
