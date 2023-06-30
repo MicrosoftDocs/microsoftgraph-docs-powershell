@@ -134,7 +134,6 @@ function Get-ExternalDocsUrl {
         [string] $File = "..\microsoftgraph-docs-powershell\microsoftgraph\graph-powershell-v1.0\Microsoft.Graph.Users\Get-MgUser.md",
         [string] $Module = "Users"
     )
-    Write-Host "File name "$File
     if ($UriPath) {
     
         if ($OpenApiContent.openapi && $OpenApiContent.info.version) {
@@ -292,7 +291,7 @@ function WebScrapping {
 }
 Set-Location microsoftgraph-docs-powershell
 $date = Get-Date -Format "dd-MM-yyyy"
-$proposedBranch = "weekly_v2_docs_update_29-06-2023"
+$proposedBranch = "weekly_v2_docs_update_"+$date
 $exists = git branch -l $proposedBranch
 if ([string]::IsNullOrEmpty($exists)) {
     git checkout -b $proposedBranch
