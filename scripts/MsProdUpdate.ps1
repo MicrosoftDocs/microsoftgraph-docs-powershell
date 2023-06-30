@@ -15,8 +15,8 @@ Param(
 )
 function Get-GraphMapping {
     $graphMapping = @{}
-    $graphMapping.Add("v1.0", "v1.0")
     $graphMapping.Add("beta", "beta")
+    $graphMapping.Add("v1.0", "v1.0")
     return $graphMapping
 }
 function Start-Generator {
@@ -134,7 +134,7 @@ function Get-ExternalDocs-Url {
         [string] $File = "..\microsoftgraph-docs-powershell\microsoftgraph\graph-powershell-v1.0\Microsoft.Graph.Users\Get-MgUser.md",
         [string] $Module = "Users"
     )
-   
+    Write-Host "File name "$File
     if ($UriPath) {
     
         if ($OpenApiContent.openapi && $OpenApiContent.info.version) {
