@@ -79,7 +79,7 @@ function Get-Files {
         [string] $ModulePrefix = "Microsoft.Graph",
         [Hashtable] $OpenApiContent 
     )
-    $ModuleManifestFile = (Join-Path $SDKDocsPath "\$Module\$GraphProfile\Microsoft.Graph.$Module.psd1")
+    $ModuleManifestFile = (Join-Path $SDKDocsPath "\$Module\$GraphProfile\$ModulePrefix.$Module.psd1")
     $ModuleManifestFileContent = Get-Content -Path $ModuleManifestFile
     $ProfileGraph = "v1.0"
     if ($GraphProfile -eq "beta") {
