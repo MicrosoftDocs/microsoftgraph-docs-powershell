@@ -3,11 +3,11 @@
 Param(
     $ModulesToGenerate = @(),
     [string] $ModuleMappingConfigPath = (Join-Path $PSScriptRoot "../microsoftgraph/config/ModulesMapping.jsonc"),
-    [string] $SDKDocsPath = ("..\msgraph-sdk-powershell\src"),
-    [string] $SDKOpenApiPath = ("..\msgraph-sdk-powershell"),
-    [string] $WorkLoadDocsPath = ("..\microsoftgraph-docs-powershell\microsoftgraph"),
-    [string] $GraphDocsPath = ("..\microsoft-graph-docs"),
-    [string] $MissingMsProdHeaderPath = ("..\microsoftgraph-docs-powershell\missingexternaldocsurl"),
+    [string] $SDKDocsPath = (Join-Path $PSScriptRoot "../../msgraph-sdk-powershell/src"),
+    [string] $SDKOpenApiPath = (Join-Path $PSScriptRoot "../../msgraph-sdk-powershell"),
+    [string] $WorkLoadDocsPath = (Join-Path $PSScriptRoot "../microsoftgraph"),
+    [string] $GraphDocsPath = (Join-Path $PSScriptRoot "../../microsoft-graph-docs"),
+    [string] $MissingMsProdHeaderPath = (Join-Path $PSScriptRoot "../missingexternaldocsurl"),
     [hashtable]$V1CommandGetVariantList= @{},
     [hashtable]$BetaCommandGetVariantList= @{},
     [hashtable]$V1CommandListVariantList= @{},
@@ -56,8 +56,8 @@ function Get-FilesByProfile {
     $ModulesToGenerate | ForEach-Object {
         $ModuleName = $_
         $FullModuleName = "$ModulePrefix.$ModuleName"
-        $ModulePath = Join-Path $WorkLoadDocsPath "\$GraphProfilePath\$FullModuleName"
-        $OpenApiFile = Join-Path $SDKOpenApiPath "\openApiDocs\v1.0\$ModuleName.yml"
+        $ModulePath = Join-Path $WorkLoadDocsPath $GraphProfilePath $FullModuleName
+        $OpenApiFile = Join-Path $SDKOpenApiPath "openApiDocs" $GraphProfile "$ModuleName.yml"
         #test this path first before proceeding
         if (Test-Path $OpenApiFile) {
             $YamlContent = Get-Content -Path $OpenApiFile
@@ -72,14 +72,14 @@ function Get-Files {
         [ValidateSet("beta", "v1.0")]
         [string] $GraphProfile = "v1.0",
         [ValidateNotNullOrEmpty()]
-        [string] $GraphProfilePath = "..\microsoftgraph-docs-powershell\microsoftgraph\graph-powershell-v1.0\Microsoft.Graph.Users",
+        [string] $GraphProfilePath = (Join-Path $PSScriptRoot "../microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Users"),
         [ValidateNotNullOrEmpty()]
         [string] $Module = "Users",
         [ValidateNotNullOrEmpty()]
         [string] $ModulePrefix = "Microsoft.Graph",
         [Hashtable] $OpenApiContent 
     )
-    $ModuleManifestFile = (Join-Path $SDKDocsPath "\$Module\$GraphProfile\$ModulePrefix.$Module.psd1")
+    $ModuleManifestFile = (Join-Path $SDKDocsPath $Module $GraphProfile "$ModulePrefix.$Module.psd1")
     $ModuleManifestFileContent = Get-Content -Path $ModuleManifestFile
     $ProfileGraph = "v1.0"
     if ($GraphProfile -eq "beta") {
@@ -131,7 +131,7 @@ function Get-ExternalDocsUrl {
         [string] $Command = "Get-MgUser",
         [Hashtable] $OpenApiContent,
         [System.Object] $Method = "GET",
-        [string] $File = "..\microsoftgraph-docs-powershell\microsoftgraph\graph-powershell-v1.0\Microsoft.Graph.Users\Get-MgUser.md",
+        [string] $File = (Join-Path $PSScriptRoot "../microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Users/Get-MgUser.md"),
         [string] $Module = "Users"
     )
     if ($UriPath) {
@@ -247,7 +247,7 @@ function WebScrapping {
         [string] $ExternalDocUrl = "https://learn.microsoft.com/en-us/graph/api/user-get?view=graph-rest-1.0&tabs=powershell",
         [ValidateNotNullOrEmpty()]
         [string] $Command = "Get-MgUser",
-        [string] $File = "..\microsoftgraph-docs-powershell\microsoftgraph\graph-powershell-v1.0\Microsoft.Graph.Users\Get-MgUser.md"
+        [string] $File = (Join-Path $PSScriptRoot "../microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Users/Get-MgUser.md")
     ) 
     $WebResponse = Invoke-WebRequest -Uri $ExternalDocUrl
     $HtmlDom = ConvertFrom-Html $WebResponse
@@ -291,7 +291,7 @@ function WebScrapping {
 }
 Set-Location microsoftgraph-docs-powershell
 $date = Get-Date -Format "dd-MM-yyyy"
-$proposedBranch = "weekly_v2_docs_update_"+$date
+$proposedBranch = "weekly_v2_docs_update_29-06-2023"
 $exists = git branch -l $proposedBranch
 if ([string]::IsNullOrEmpty($exists)) {
     git checkout -b $proposedBranch

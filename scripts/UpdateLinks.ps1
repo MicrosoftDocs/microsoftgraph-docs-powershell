@@ -7,9 +7,9 @@ Param(
     [System.Collections.Generic.HashSet[string]]$V1CommandListVariantList= @(),
     [System.Collections.Generic.HashSet[string]]$BetaCommandListVariantList= @(),
     [string] $ModuleMappingConfigPath =(Join-Path $PSScriptRoot "../microsoftgraph/config/ModulesMapping.jsonc"),
-    [string] $SDKDocsPath = ("..\msgraph-sdk-powershell\src"),
-    [string] $WorkLoadDocsPath = ("..\microsoftgraph-docs-powershell\microsoftgraph"),
-    [string] $GraphDocsPath = ("..\microsoft-graph-docs")
+    [string] $SDKDocsPath = (Join-Path $PSScriptRoot "../../msgraph-sdk-powershell/src"),
+    [string] $WorkLoadDocsPath = (Join-Path $PSScriptRoot "../microsoftgraph"),
+    [string] $GraphDocsPath = (Join-Path $PSScriptRoot "../../microsoft-graph-docs")
 )
 
 function Start-Update {
@@ -50,7 +50,7 @@ function Get-FilesByProfile {
 function Get-Files {
     param(
         [ValidateNotNullOrEmpty()]
-        [string] $GraphProfilePath = "..\microsoftgraph-docs-powershell\microsoftgraph\graph-powershell-v1.0\Microsoft.Graph.Users",
+        [string] $GraphProfilePath = (Join-Path $PSScriptRoot "../microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Users"),
         [ValidateNotNullOrEmpty()]
         [string] $Module = "Users",
         [ValidateNotNullOrEmpty()]
