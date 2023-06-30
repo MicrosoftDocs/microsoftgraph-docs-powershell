@@ -241,7 +241,7 @@ function Extract-PathFromListVariant{
 }
 function WebScrapping {
     param(
-        [ValidateSet("v1.0-beta", "v1.0")]
+        [ValidateSet("beta", "v1.0")]
         [string] $GraphProfile = "v1.0",
         [ValidateNotNullOrEmpty()]
         [string] $ExternalDocUrl = "https://learn.microsoft.com/en-us/graph/api/user-get?view=graph-rest-1.0&tabs=powershell",
