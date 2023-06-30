@@ -201,7 +201,7 @@ foreach($Data in $DeserializedContent)
 }
 Set-Location microsoftgraph-docs-powershell
 $date = Get-Date -Format "dd-MM-yyyy"
-$proposedBranch = "weekly_v2_docs_update_" + $date
+$proposedBranch = "weekly_v2_docs_update_29-06-2023"
 $exists = git branch -l $proposedBranch
 if ([string]::IsNullOrEmpty($exists)) {
     git checkout -b $proposedBranch

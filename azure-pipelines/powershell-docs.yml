@@ -40,10 +40,10 @@ jobs:
     name: 1es-windows-ps-compute
   timeoutInMinutes: ${{ parameters.PipelineTimeout }}
   steps:
-  # - template: update-template.yml
-  #   parameters:
-  #     projectFileName: $(projectFileName)
-  #     testType: 'Execution'
+  - template: update-template.yml
+    parameters:
+      projectFileName: $(projectFileName)
+      testType: 'Execution'
 
   # - task: PowerShell@2
   #   displayName: 'Copy files from powershell sdk'
@@ -97,7 +97,7 @@ jobs:
         git config --global user.name "Timothy Wamalwa"
         cd microsoftgraph-docs-powershell
         $date = Get-Date -Format "dd-MM-yyyy"
-        $proposedBranch = "weekly_v2_docs_update_"+$date
+        $proposedBranch = "weekly_v2_docs_update_29-06-2023"
         git add .
         git commit -m "Updating help files "+$date
         git push --set-upstream "https://$(GITHUB_TOKEN)@github.com/MicrosoftDocs/microsoftgraph-docs-powershell.git" $proposedBranch
