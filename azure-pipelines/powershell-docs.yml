@@ -53,37 +53,37 @@ jobs:
       pwsh: true
       filePath: microsoftgraph-docs-powershell\scripts\FileCopy.ps1
 
-  # - task: PowerShell@2
-  #   displayName: 'Update Powershell Help'
-  #   continueOnError: false
-  #   inputs:
-  #     targetType: 'filePath'
-  #     pwsh: true
-  #     filePath: microsoftgraph-docs-powershell\microsoftgraph\UpdateHelp.ps1
+  - task: PowerShell@2
+    displayName: 'Update Powershell Help'
+    continueOnError: false
+    inputs:
+      targetType: 'filePath'
+      pwsh: true
+      filePath: microsoftgraph-docs-powershell\microsoftgraph\UpdateHelp.ps1
 
-  # - task: PowerShell@2
-  #   displayName: 'Escape disallowed html tags'
-  #   continueOnError: false
-  #   inputs:
-  #     targetType: 'filePath'
-  #     pwsh: true
-  #     filePath: microsoftgraph-docs-powershell\microsoftgraph\EscapeDisallowedHtmlTags.ps1
+  - task: PowerShell@2
+    displayName: 'Escape disallowed html tags'
+    continueOnError: false
+    inputs:
+      targetType: 'filePath'
+      pwsh: true
+      filePath: microsoftgraph-docs-powershell\microsoftgraph\EscapeDisallowedHtmlTags.ps1
 
-  # - task: PowerShell@2
-  #   displayName: 'Update metadata header'
-  #   continueOnError: false
-  #   inputs:
-  #     targetType: 'filePath'
-  #     pwsh: true
-  #     filePath: microsoftgraph-docs-powershell\scripts\MsProdUpdate.ps1
+  - task: PowerShell@2
+    displayName: 'Update metadata header'
+    continueOnError: false
+    inputs:
+      targetType: 'filePath'
+      pwsh: true
+      filePath: microsoftgraph-docs-powershell\scripts\MsProdUpdate.ps1
 
-  # - task: PowerShell@2
-  #   displayName: 'Update Links'
-  #   continueOnError: false
-  #   inputs:
-  #     targetType: 'filePath'
-  #     pwsh: true
-  #     filePath: microsoftgraph-docs-powershell\scripts\UpdateLinks.ps1  
+  - task: PowerShell@2
+    displayName: 'Update Links'
+    continueOnError: false
+    inputs:
+      targetType: 'filePath'
+      pwsh: true
+      filePath: microsoftgraph-docs-powershell\scripts\UpdateLinks.ps1  
 
   - task: PowerShell@2
     displayName: Pushing to github
@@ -97,9 +97,9 @@ jobs:
         git config --global user.name "Timothy Wamalwa"
         cd microsoftgraph-docs-powershell
         $date = Get-Date -Format "dd-MM-yyyy"
-        $proposedBranch = "File_copy_test1"
+        $proposedBranch = "weekly_v2_docs_update_$date"
         git add .
-        git commit -m "Updating help files "+$date
+        git commit -m "Updating help files $date"
         git push --set-upstream "https://$(GITHUB_TOKEN)@github.com/MicrosoftDocs/microsoftgraph-docs-powershell.git" $proposedBranch
         git status
          
