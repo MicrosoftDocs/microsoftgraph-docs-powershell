@@ -1,14 +1,14 @@
 ---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgpolicycrosstenantaccesspolicy
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicycrosstenantaccesspolicy
 schema: 2.0.0
 ---
 
 # Get-MgPolicyCrossTenantAccessPolicy
 
 ## SYNOPSIS
-The custom rules that define an access scenario when interacting with external Azure AD tenants.
+Read the properties and relationships of a crossTenantAccessPolicy object.
 
 ## SYNTAX
 
@@ -17,18 +17,16 @@ Get-MgPolicyCrossTenantAccessPolicy [-ExpandProperty <String[]>] [-Property <Str
 ```
 
 ## DESCRIPTION
-The custom rules that define an access scenario when interacting with external Azure AD tenants.
+Read the properties and relationships of a crossTenantAccessPolicy object.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgPolicyCrossTenantAccessPolicy Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-Get-MgPolicyCrossTenantAccessPolicy
 ```
 
-This example shows how to use the Get-MgPolicyCrossTenantAccessPolicy Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Get-MgPolicyCrossTenantAccessPolicy
 
 ## PARAMETERS
 
@@ -36,7 +34,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -51,7 +49,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -70,8 +68,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCrossTenantAccessPolicy
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
+

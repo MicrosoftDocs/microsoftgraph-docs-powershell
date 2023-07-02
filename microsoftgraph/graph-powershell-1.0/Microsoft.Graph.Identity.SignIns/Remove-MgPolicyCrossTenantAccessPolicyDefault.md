@@ -1,7 +1,7 @@
 ---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/remove-mgpolicycrosstenantaccesspolicydefault
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgpolicycrosstenantaccesspolicydefault
 schema: 2.0.0
 ---
 
@@ -13,7 +13,7 @@ Delete navigation property default for policies
 ## SYNTAX
 
 ```
-Remove-MgPolicyCrossTenantAccessPolicyDefault [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+Remove-MgPolicyCrossTenantAccessPolicyDefault [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -22,27 +22,28 @@ Delete navigation property default for policies
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
+```
 
 $params = @{
-	B2bCollaborationOutbound = @{
-		UsersAndGroups = @{
-			AccessType = "blocked"
-			Targets = @(
+	b2bCollaborationOutbound = @{
+		usersAndGroups = @{
+			accessType = "blocked"
+			targets = @(
 				@{
-					Target = "0be493dc-cb56-4a53-936f-9cf64410b8b0"
-					TargetType = "group"
+					target = "0be493dc-cb56-4a53-936f-9cf64410b8b0"
+					targetType = "group"
 				}
 			)
 		}
-		Applications = @{
-			AccessType = "blocked"
-			Targets = @(
+		applications = @{
+			accessType = "blocked"
+			targets = @(
 				@{
-					Target = "AllApplications"
-					TargetType = "application"
+					target = "AllApplications"
+					targetType = "application"
 				}
 			)
 		}
@@ -50,11 +51,6 @@ $params = @{
 }
 
 Update-MgPolicyCrossTenantAccessPolicyDefault -BodyParameter $params
-```
-
-This example shows how to use the Remove-MgPolicyCrossTenantAccessPolicyDefault Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -62,7 +58,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 ETag
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -77,7 +73,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -92,7 +88,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -108,7 +104,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -127,8 +123,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
+

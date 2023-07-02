@@ -1,7 +1,7 @@
 ---
 Module Name: Microsoft.Graph.Notes
-Module Guid: 7bf575ea-392b-4c6a-bdd2-22133342983f
-Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.notes
+Module Guid: 3643be63-297a-4bde-bcd3-fac1cc2f81b4
+Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.notes
 Help Version: 1.0.0.0
 Locale: en-US
 ---
@@ -12,25 +12,26 @@ Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.Notes Cmdlets
 ### [Get-MgGroupOnenoteNotebook](Get-MgGroupOnenoteNotebook.md)
-The collection of OneNote notebooks that are owned by the user or group.
-Read-only.
-Nullable.
+Retrieve the properties and relationships of a notebook object.
+
+### [Get-MgGroupOnenoteNotebookCount](Get-MgGroupOnenoteNotebookCount.md)
+Get the number of the resource
 
 ### [Get-MgGroupOnenoteNotebookSection](Get-MgGroupOnenoteNotebookSection.md)
-The sections in the notebook.
-Read-only.
-Nullable.
+Retrieve a list of onenoteSection objects from the specified notebook.
 
 ### [Get-MgGroupOnenoteNotebookSectionGroup](Get-MgGroupOnenoteNotebookSectionGroup.md)
-The section groups in the notebook.
-Read-only.
-Nullable.
+Retrieve a list of section groups from the specified notebook.
 
 ### [Get-MgGroupOnenoteOperation](Get-MgGroupOnenoteOperation.md)
-The status of OneNote operations.
-Getting an operations collection is not supported, but you can get the status of long-running operations if the Operation-Location header is returned in the response.
-Read-only.
-Nullable.
+Get the status of a long-running OneNote operation.
+This applies to operations that return the **Operation-Location** header in the response, such as `CopyNotebook`, `CopyToNotebook`, `CopyToSectionGroup`, `and CopyToSection`.
+  You can poll the Operation-Location endpoint until the `status` property returns `completed` or `failed`.
+If the status is `completed`, the `resourceLocation` property contains the resource endpoint URI.
+If the status is `failed`, the error and `@api.diagnostics` properties provide error information.
+
+### [Get-MgGroupOnenoteOperationCount](Get-MgGroupOnenoteOperationCount.md)
+Get the number of the resource
 
 ### [Get-MgGroupOnenotePage](Get-MgGroupOnenotePage.md)
 The pages in all OneNote notebooks that are owned by the user or group.
@@ -39,6 +40,9 @@ Nullable.
 
 ### [Get-MgGroupOnenotePageContent](Get-MgGroupOnenotePageContent.md)
 The page's HTML content.
+
+### [Get-MgGroupOnenotePageCount](Get-MgGroupOnenotePageCount.md)
+Get the number of the resource
 
 ### [Get-MgGroupOnenoteResource](Get-MgGroupOnenoteResource.md)
 The image and other file resources in OneNote pages.
@@ -49,20 +53,23 @@ Nullable.
 ### [Get-MgGroupOnenoteResourceContent](Get-MgGroupOnenoteResourceContent.md)
 The content stream
 
+### [Get-MgGroupOnenoteResourceCount](Get-MgGroupOnenoteResourceCount.md)
+Get the number of the resource
+
 ### [Get-MgGroupOnenoteSection](Get-MgGroupOnenoteSection.md)
-The sections in all OneNote notebooks that are owned by the user or group.
-Read-only.
-Nullable.
+Retrieve the properties and relationships of a onenoteSection object.
+
+### [Get-MgGroupOnenoteSectionCount](Get-MgGroupOnenoteSectionCount.md)
+Get the number of the resource
 
 ### [Get-MgGroupOnenoteSectionGroup](Get-MgGroupOnenoteSectionGroup.md)
-The section groups in all OneNote notebooks that are owned by the user or group.
-Read-only.
-Nullable.
+Retrieve the properties and relationships of a sectionGroup object.
+
+### [Get-MgGroupOnenoteSectionGroupCount](Get-MgGroupOnenoteSectionGroupCount.md)
+Get the number of the resource
 
 ### [Get-MgGroupOnenoteSectionGroupSection](Get-MgGroupOnenoteSectionGroupSection.md)
-The sections in the section group.
-Read-only.
-Nullable.
+Retrieve a list of onenoteSection objects from the specified section group.
 
 ### [Get-MgGroupOnenoteSectionPage](Get-MgGroupOnenoteSectionPage.md)
 The collection of pages in the section.
@@ -70,25 +77,26 @@ Read-only.
 Nullable.
 
 ### [Get-MgSiteOnenoteNotebook](Get-MgSiteOnenoteNotebook.md)
-The collection of OneNote notebooks that are owned by the user or group.
-Read-only.
-Nullable.
+Retrieve the properties and relationships of a notebook object.
+
+### [Get-MgSiteOnenoteNotebookCount](Get-MgSiteOnenoteNotebookCount.md)
+Get the number of the resource
 
 ### [Get-MgSiteOnenoteNotebookSection](Get-MgSiteOnenoteNotebookSection.md)
-The sections in the notebook.
-Read-only.
-Nullable.
+Retrieve a list of onenoteSection objects from the specified notebook.
 
 ### [Get-MgSiteOnenoteNotebookSectionGroup](Get-MgSiteOnenoteNotebookSectionGroup.md)
-The section groups in the notebook.
-Read-only.
-Nullable.
+Retrieve a list of section groups from the specified notebook.
 
 ### [Get-MgSiteOnenoteOperation](Get-MgSiteOnenoteOperation.md)
-The status of OneNote operations.
-Getting an operations collection is not supported, but you can get the status of long-running operations if the Operation-Location header is returned in the response.
-Read-only.
-Nullable.
+Get the status of a long-running OneNote operation.
+This applies to operations that return the **Operation-Location** header in the response, such as `CopyNotebook`, `CopyToNotebook`, `CopyToSectionGroup`, `and CopyToSection`.
+  You can poll the Operation-Location endpoint until the `status` property returns `completed` or `failed`.
+If the status is `completed`, the `resourceLocation` property contains the resource endpoint URI.
+If the status is `failed`, the error and `@api.diagnostics` properties provide error information.
+
+### [Get-MgSiteOnenoteOperationCount](Get-MgSiteOnenoteOperationCount.md)
+Get the number of the resource
 
 ### [Get-MgSiteOnenotePage](Get-MgSiteOnenotePage.md)
 The pages in all OneNote notebooks that are owned by the user or group.
@@ -97,6 +105,9 @@ Nullable.
 
 ### [Get-MgSiteOnenotePageContent](Get-MgSiteOnenotePageContent.md)
 The page's HTML content.
+
+### [Get-MgSiteOnenotePageCount](Get-MgSiteOnenotePageCount.md)
+Get the number of the resource
 
 ### [Get-MgSiteOnenoteResource](Get-MgSiteOnenoteResource.md)
 The image and other file resources in OneNote pages.
@@ -107,20 +118,23 @@ Nullable.
 ### [Get-MgSiteOnenoteResourceContent](Get-MgSiteOnenoteResourceContent.md)
 The content stream
 
+### [Get-MgSiteOnenoteResourceCount](Get-MgSiteOnenoteResourceCount.md)
+Get the number of the resource
+
 ### [Get-MgSiteOnenoteSection](Get-MgSiteOnenoteSection.md)
-The sections in all OneNote notebooks that are owned by the user or group.
-Read-only.
-Nullable.
+Retrieve the properties and relationships of a onenoteSection object.
+
+### [Get-MgSiteOnenoteSectionCount](Get-MgSiteOnenoteSectionCount.md)
+Get the number of the resource
 
 ### [Get-MgSiteOnenoteSectionGroup](Get-MgSiteOnenoteSectionGroup.md)
-The section groups in all OneNote notebooks that are owned by the user or group.
-Read-only.
-Nullable.
+Retrieve the properties and relationships of a sectionGroup object.
+
+### [Get-MgSiteOnenoteSectionGroupCount](Get-MgSiteOnenoteSectionGroupCount.md)
+Get the number of the resource
 
 ### [Get-MgSiteOnenoteSectionGroupSection](Get-MgSiteOnenoteSectionGroupSection.md)
-The sections in the section group.
-Read-only.
-Nullable.
+Retrieve a list of onenoteSection objects from the specified section group.
 
 ### [Get-MgSiteOnenoteSectionPage](Get-MgSiteOnenoteSectionPage.md)
 The collection of pages in the section.
@@ -128,25 +142,26 @@ Read-only.
 Nullable.
 
 ### [Get-MgUserOnenoteNotebook](Get-MgUserOnenoteNotebook.md)
-The collection of OneNote notebooks that are owned by the user or group.
-Read-only.
-Nullable.
+Retrieve the properties and relationships of a notebook object.
+
+### [Get-MgUserOnenoteNotebookCount](Get-MgUserOnenoteNotebookCount.md)
+Get the number of the resource
 
 ### [Get-MgUserOnenoteNotebookSection](Get-MgUserOnenoteNotebookSection.md)
-The sections in the notebook.
-Read-only.
-Nullable.
+Retrieve a list of onenoteSection objects from the specified notebook.
 
 ### [Get-MgUserOnenoteNotebookSectionGroup](Get-MgUserOnenoteNotebookSectionGroup.md)
-The section groups in the notebook.
-Read-only.
-Nullable.
+Retrieve a list of section groups from the specified notebook.
 
 ### [Get-MgUserOnenoteOperation](Get-MgUserOnenoteOperation.md)
-The status of OneNote operations.
-Getting an operations collection is not supported, but you can get the status of long-running operations if the Operation-Location header is returned in the response.
-Read-only.
-Nullable.
+Get the status of a long-running OneNote operation.
+This applies to operations that return the **Operation-Location** header in the response, such as `CopyNotebook`, `CopyToNotebook`, `CopyToSectionGroup`, `and CopyToSection`.
+  You can poll the Operation-Location endpoint until the `status` property returns `completed` or `failed`.
+If the status is `completed`, the `resourceLocation` property contains the resource endpoint URI.
+If the status is `failed`, the error and `@api.diagnostics` properties provide error information.
+
+### [Get-MgUserOnenoteOperationCount](Get-MgUserOnenoteOperationCount.md)
+Get the number of the resource
 
 ### [Get-MgUserOnenotePage](Get-MgUserOnenotePage.md)
 The pages in all OneNote notebooks that are owned by the user or group.
@@ -155,6 +170,9 @@ Nullable.
 
 ### [Get-MgUserOnenotePageContent](Get-MgUserOnenotePageContent.md)
 The page's HTML content.
+
+### [Get-MgUserOnenotePageCount](Get-MgUserOnenotePageCount.md)
+Get the number of the resource
 
 ### [Get-MgUserOnenoteResource](Get-MgUserOnenoteResource.md)
 The image and other file resources in OneNote pages.
@@ -165,20 +183,23 @@ Nullable.
 ### [Get-MgUserOnenoteResourceContent](Get-MgUserOnenoteResourceContent.md)
 The content stream
 
+### [Get-MgUserOnenoteResourceCount](Get-MgUserOnenoteResourceCount.md)
+Get the number of the resource
+
 ### [Get-MgUserOnenoteSection](Get-MgUserOnenoteSection.md)
-The sections in all OneNote notebooks that are owned by the user or group.
-Read-only.
-Nullable.
+Retrieve the properties and relationships of a onenoteSection object.
+
+### [Get-MgUserOnenoteSectionCount](Get-MgUserOnenoteSectionCount.md)
+Get the number of the resource
 
 ### [Get-MgUserOnenoteSectionGroup](Get-MgUserOnenoteSectionGroup.md)
-The section groups in all OneNote notebooks that are owned by the user or group.
-Read-only.
-Nullable.
+Retrieve the properties and relationships of a sectionGroup object.
+
+### [Get-MgUserOnenoteSectionGroupCount](Get-MgUserOnenoteSectionGroupCount.md)
+Get the number of the resource
 
 ### [Get-MgUserOnenoteSectionGroupSection](Get-MgUserOnenoteSectionGroupSection.md)
-The sections in the section group.
-Read-only.
-Nullable.
+Retrieve a list of onenoteSection objects from the specified section group.
 
 ### [Get-MgUserOnenoteSectionPage](Get-MgUserOnenoteSectionPage.md)
 The collection of pages in the section.
@@ -186,13 +207,13 @@ Read-only.
 Nullable.
 
 ### [New-MgGroupOnenoteNotebook](New-MgGroupOnenoteNotebook.md)
-Create new navigation property to notebooks for groups
+Create a new OneNote notebook.
 
 ### [New-MgGroupOnenoteNotebookSection](New-MgGroupOnenoteNotebookSection.md)
-Create new navigation property to sections for groups
+Create a new onenoteSection in the specified notebook.
 
 ### [New-MgGroupOnenoteNotebookSectionGroup](New-MgGroupOnenoteNotebookSectionGroup.md)
-Create new navigation property to sectionGroups for groups
+Create a new section group in the specified notebook.
 
 ### [New-MgGroupOnenotePage](New-MgGroupOnenotePage.md)
 Create new navigation property to pages for groups
@@ -204,19 +225,19 @@ Create new navigation property to sections for groups
 Create new navigation property to sectionGroups for groups
 
 ### [New-MgGroupOnenoteSectionGroupSection](New-MgGroupOnenoteSectionGroupSection.md)
-Create new navigation property to sections for groups
+Create a new onenoteSection in the specified section group.
 
 ### [New-MgGroupOnenoteSectionPage](New-MgGroupOnenoteSectionPage.md)
 Create new navigation property to pages for groups
 
 ### [New-MgSiteOnenoteNotebook](New-MgSiteOnenoteNotebook.md)
-Create new navigation property to notebooks for sites
+Create a new OneNote notebook.
 
 ### [New-MgSiteOnenoteNotebookSection](New-MgSiteOnenoteNotebookSection.md)
-Create new navigation property to sections for sites
+Create a new onenoteSection in the specified notebook.
 
 ### [New-MgSiteOnenoteNotebookSectionGroup](New-MgSiteOnenoteNotebookSectionGroup.md)
-Create new navigation property to sectionGroups for sites
+Create a new section group in the specified notebook.
 
 ### [New-MgSiteOnenotePage](New-MgSiteOnenotePage.md)
 Create new navigation property to pages for sites
@@ -228,19 +249,19 @@ Create new navigation property to sections for sites
 Create new navigation property to sectionGroups for sites
 
 ### [New-MgSiteOnenoteSectionGroupSection](New-MgSiteOnenoteSectionGroupSection.md)
-Create new navigation property to sections for sites
+Create a new onenoteSection in the specified section group.
 
 ### [New-MgSiteOnenoteSectionPage](New-MgSiteOnenoteSectionPage.md)
 Create new navigation property to pages for sites
 
 ### [New-MgUserOnenoteNotebook](New-MgUserOnenoteNotebook.md)
-Create new navigation property to notebooks for users
+Create a new OneNote notebook.
 
 ### [New-MgUserOnenoteNotebookSection](New-MgUserOnenoteNotebookSection.md)
-Create new navigation property to sections for users
+Create a new onenoteSection in the specified notebook.
 
 ### [New-MgUserOnenoteNotebookSectionGroup](New-MgUserOnenoteNotebookSectionGroup.md)
-Create new navigation property to sectionGroups for users
+Create a new section group in the specified notebook.
 
 ### [New-MgUserOnenotePage](New-MgUserOnenotePage.md)
 Create new navigation property to pages for users
@@ -252,7 +273,7 @@ Create new navigation property to sections for users
 Create new navigation property to sectionGroups for users
 
 ### [New-MgUserOnenoteSectionGroupSection](New-MgUserOnenoteSectionGroupSection.md)
-Create new navigation property to sections for users
+Create a new onenoteSection in the specified section group.
 
 ### [New-MgUserOnenoteSectionPage](New-MgUserOnenoteSectionPage.md)
 Create new navigation property to pages for users
@@ -261,7 +282,7 @@ Create new navigation property to pages for users
 Delete navigation property notebooks for groups
 
 ### [Remove-MgGroupOnenotePage](Remove-MgGroupOnenotePage.md)
-Delete navigation property pages for groups
+Delete a OneNote page.
 
 ### [Remove-MgGroupOnenoteSection](Remove-MgGroupOnenoteSection.md)
 Delete navigation property sections for groups
@@ -273,7 +294,7 @@ Delete navigation property sectionGroups for groups
 Delete navigation property notebooks for sites
 
 ### [Remove-MgSiteOnenotePage](Remove-MgSiteOnenotePage.md)
-Delete navigation property pages for sites
+Delete a OneNote page.
 
 ### [Remove-MgSiteOnenoteSection](Remove-MgSiteOnenoteSection.md)
 Delete navigation property sections for sites
@@ -285,7 +306,7 @@ Delete navigation property sectionGroups for sites
 Delete navigation property notebooks for users
 
 ### [Remove-MgUserOnenotePage](Remove-MgUserOnenotePage.md)
-Delete navigation property pages for users
+Delete a OneNote page.
 
 ### [Remove-MgUserOnenoteSection](Remove-MgUserOnenoteSection.md)
 Delete navigation property sections for users

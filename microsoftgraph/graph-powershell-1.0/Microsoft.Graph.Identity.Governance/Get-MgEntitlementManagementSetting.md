@@ -1,14 +1,14 @@
 ---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.Governance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementsetting
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementsetting
 schema: 2.0.0
 ---
 
 # Get-MgEntitlementManagementSetting
 
 ## SYNOPSIS
-The settings that control the behavior of Azure AD entitlement management.
+Retrieve the properties of an entitlementManagementSettings object.
 
 ## SYNTAX
 
@@ -17,18 +17,16 @@ Get-MgEntitlementManagementSetting [-ExpandProperty <String[]>] [-Property <Stri
 ```
 
 ## DESCRIPTION
-The settings that control the behavior of Azure AD entitlement management.
+Retrieve the properties of an entitlementManagementSettings object.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgEntitlementManagementSetting Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-Get-MgEntitlementManagementSetting
 ```
 
-This example shows how to use the Get-MgEntitlementManagementSetting Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Get-MgEntitlementManagementSetting
 
 ## PARAMETERS
 
@@ -36,7 +34,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -51,7 +49,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -70,8 +68,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEntitlementManagementSettings
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
+

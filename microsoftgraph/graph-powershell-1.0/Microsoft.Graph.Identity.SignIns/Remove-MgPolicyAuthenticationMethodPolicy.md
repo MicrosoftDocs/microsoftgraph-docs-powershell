@@ -1,7 +1,7 @@
 ---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/remove-mgpolicyauthenticationmethodpolicy
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgpolicyauthenticationmethodpolicy
 schema: 2.0.0
 ---
 
@@ -13,7 +13,7 @@ Delete navigation property authenticationMethodsPolicy for policies
 ## SYNTAX
 
 ```
-Remove-MgPolicyAuthenticationMethodPolicy [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+Remove-MgPolicyAuthenticationMethodPolicy [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -22,44 +22,30 @@ Delete navigation property authenticationMethodsPolicy for policies
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
+```
 
 $params = @{
-	"@odata.context" = "https://graph.microsoft.com/v1.0/$metadata#authenticationMethodsPolicy"
-	RegistrationEnforcement = @{
-		AuthenticationMethodsRegistrationCampaign = @{
-			SnoozeDurationInDays = 1
-			State = "enabled"
-			ExcludeTargets = @(
+	registrationEnforcement = @{
+		authenticationMethodsRegistrationCampaign = @{
+			snoozeDurationInDays = 1
+			state = "enabled"
+			excludeTargets = @(
 			)
-			IncludeTargets = @(
+			includeTargets = @(
 				@{
-					Id = "3ee3a9de-0a86-4e12-a287-9769accf1ba2"
-					TargetType = "group"
-					TargetedAuthenticationMethod = "microsoftAuthenticator"
+					id = "3ee3a9de-0a86-4e12-a287-9769accf1ba2"
+					targetType = "group"
+					targetedAuthenticationMethod = "microsoftAuthenticator"
 				}
 			)
 		}
 	}
-	AuthenticationMethodConfigurations = @(
-		@{
-			"@odata.type" = "#microsoft.graph.fido2AuthenticationMethodConfiguration"
-			Id = "Fido2"
-			State = "disabled"
-			IsSelfServiceRegistrationAllowed = $false
-			IsAttestationEnforced = $false
-		}
-	)
 }
 
 Update-MgPolicyAuthenticationMethodPolicy -BodyParameter $params
-```
-
-This example shows how to use the Remove-MgPolicyAuthenticationMethodPolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -67,7 +53,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 ETag
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -82,7 +68,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -97,7 +83,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -113,7 +99,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -132,8 +118,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
+
