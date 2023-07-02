@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The roles allowed by RBAC providers and the permissions assigned to the roles.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementExchangeRoleDefinition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Get-MgRoleManagementExchangeRoleDefinition?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -240,6 +243,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 Please use Get-Help -Online.
 
 ## RELATED LINKS
+[Get-MgBetaRoleManagementExchangeRoleDefinition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Get-MgRoleManagementExchangeRoleDefinition?view=graph-powershell-beta)
 
 [https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/get-mgrolemanagementexchangeroledefinition](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/get-mgrolemanagementexchangeroledefinition)
 

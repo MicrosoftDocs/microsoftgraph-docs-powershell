@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property inheritsPermissionsFrom in roleManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -440,3 +443,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ExcludedResourceActions <String[]>]`: Set of tasks that may not be performed on a resource. Not yet supported.
 
 ## RELATED LINKS
+[Update-MgBetaBetaRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom?view=graph-powershell-beta)

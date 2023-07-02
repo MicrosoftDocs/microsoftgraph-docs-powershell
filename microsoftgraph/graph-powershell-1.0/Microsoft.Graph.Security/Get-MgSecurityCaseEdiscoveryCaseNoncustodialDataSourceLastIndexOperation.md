@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Operation entity that represents the latest indexing for the non-custodial data source.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceLastIndexOperation](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceLastIndexOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -165,3 +168,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
+[Get-MgBetaBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceLastIndexOperation](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceLastIndexOperation?view=graph-powershell-beta)

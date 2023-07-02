@@ -13,6 +13,9 @@ Provided so that callers can get the role definition using $expand at the same t
 roleDefinition.id will be auto expanded.
 Supports $expand.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementEntitlementManagementTransitiveRoleAssignmentRoleDefinition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Get-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentRoleDefinition?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -119,6 +122,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 Please use Get-Help -Online.
 
 ## RELATED LINKS
+[Get-MgBetaRoleManagementEntitlementManagementTransitiveRoleAssignmentRoleDefinition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Get-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentRoleDefinition?view=graph-powershell-beta)
 
 [https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/get-mgrolemanagemententitlementmanagementtransitiveroleassignmentroledefinition](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/get-mgrolemanagemententitlementmanagementtransitiveroleassignmentroledefinition)
 

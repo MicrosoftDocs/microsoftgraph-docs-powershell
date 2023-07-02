@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 In PIM, read the details of a request for an active and persistent role assignment made through the unifiedRoleAssignmentScheduleRequest object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaRoleManagementDirectoryRoleAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -290,3 +293,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaBetaRoleManagementDirectoryRoleAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest?view=graph-powershell-beta)

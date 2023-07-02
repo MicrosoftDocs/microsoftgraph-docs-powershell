@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to assignments for deviceManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementDeviceEnrollmentConfigurationAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/New-MgDeviceManagementDeviceEnrollmentConfigurationAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded1 (Default)
@@ -264,3 +267,4 @@ INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[New-MgBetaDeviceManagementDeviceEnrollmentConfigurationAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/New-MgDeviceManagementDeviceEnrollmentConfigurationAssignment?view=graph-powershell-beta)

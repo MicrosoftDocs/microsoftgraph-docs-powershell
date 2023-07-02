@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a retentionEvent object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaSecurityTriggerRetentionEvent](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityTriggerRetentionEvent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -176,3 +179,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
+[Remove-MgBetaBetaSecurityTriggerRetentionEvent](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityTriggerRetentionEvent?view=graph-powershell-beta)

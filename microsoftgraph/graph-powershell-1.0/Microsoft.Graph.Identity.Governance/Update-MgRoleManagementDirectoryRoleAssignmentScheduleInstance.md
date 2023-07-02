@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property roleAssignmentScheduleInstances in roleManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaRoleManagementDirectoryRoleAssignmentScheduleInstance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstance?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -606,5 +609,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Version <String>]`: Indicates version of the role definition. Read-only when isBuiltIn is true.
 
 ## RELATED LINKS
+[Update-MgBetaBetaRoleManagementDirectoryRoleAssignmentScheduleInstance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstance?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaBetaRoleManagementDirectoryRoleAssignmentScheduleInstance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstance?view=graph-powershell-beta)

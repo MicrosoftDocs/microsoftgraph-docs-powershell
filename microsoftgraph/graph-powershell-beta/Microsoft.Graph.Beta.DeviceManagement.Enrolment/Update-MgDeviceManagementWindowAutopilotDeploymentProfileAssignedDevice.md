@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property assignedDevices in deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDevice](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Update-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDevice?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -886,8 +889,11 @@ INTENDEDDEPLOYMENTPROFILE `<IMicrosoftGraphWindowsAutopilotDeploymentProfile>`: 
   - `[RoleScopeTagIds <String[]>]`: Scope tags for the profile.
 
 ## RELATED LINKS
+[Update-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDevice](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Update-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDevice?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDevice](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Update-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDevice?view=graph-powershell-v1.0)
 
 
 ## RELATED LINKS
+[Update-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDevice](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Update-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDevice?view=graph-powershell-v1.0)

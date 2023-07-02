@@ -12,6 +12,9 @@ The collection of open extensions defined for the group.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaGroupExtension](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -310,3 +313,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+[Get-MgBetaBetaGroupExtension](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupExtension?view=graph-powershell-beta)

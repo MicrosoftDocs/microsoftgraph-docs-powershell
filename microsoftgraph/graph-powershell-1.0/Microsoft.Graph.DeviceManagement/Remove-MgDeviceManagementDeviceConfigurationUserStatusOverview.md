@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property userStatusOverview for deviceManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaDeviceManagementDeviceConfigurationUserStatusOverview](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementDeviceConfigurationUserStatusOverview?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -181,3 +184,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionNetworkLearningSummary
 
 ## RELATED LINKS
+[Remove-MgBetaBetaDeviceManagementDeviceConfigurationUserStatusOverview](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementDeviceConfigurationUserStatusOverview?view=graph-powershell-beta)

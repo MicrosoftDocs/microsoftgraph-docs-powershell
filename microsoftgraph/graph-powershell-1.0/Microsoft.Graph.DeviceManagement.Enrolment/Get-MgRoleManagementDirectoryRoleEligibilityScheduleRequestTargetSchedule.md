@@ -11,6 +11,9 @@ schema: 2.0.0
 The schedule for a role eligibility that is referenced through the targetScheduleId property.
 Supports $expand.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequestTargetSchedule](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequestTargetSchedule?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -152,3 +155,4 @@ INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequestTargetSchedule](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequestTargetSchedule?view=graph-powershell-beta)

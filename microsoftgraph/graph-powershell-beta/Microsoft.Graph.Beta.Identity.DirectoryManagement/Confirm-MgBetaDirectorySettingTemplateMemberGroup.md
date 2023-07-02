@@ -14,6 +14,9 @@ You can check up to a maximum of 20 groups per request.
 This function supports all groups provisioned in Azure AD.
 Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Confirm-MgDirectorySettingTemplateMemberGroup](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Confirm-MgDirectorySettingTemplateMemberGroup?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CheckExpanded (Default)
@@ -237,3 +240,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Confirm-MgDirectorySettingTemplateMemberGroup](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Confirm-MgDirectorySettingTemplateMemberGroup?view=graph-powershell-v1.0)

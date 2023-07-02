@@ -11,6 +11,9 @@ schema: 2.0.0
 Immediately cancel a unifiedRoleEligibilityScheduleRequest object whose status is `Granted` and have the system automatically delete the cancelled request after 30 days.
 After calling this action, the **status** of the cancelled **unifiedRoleEligibilityScheduleRequest** changes to `Revoked`.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Stop-MgBetaBetaRoleManagementEntitlementManagementRoleEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Stop-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleRequest?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Cancel (Default)
@@ -180,3 +183,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Stop-MgBetaBetaRoleManagementEntitlementManagementRoleEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Stop-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleRequest?view=graph-powershell-beta)

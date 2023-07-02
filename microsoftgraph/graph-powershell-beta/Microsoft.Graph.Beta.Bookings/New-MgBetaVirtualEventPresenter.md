@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to presenters for solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgVirtualEventPresenter](/powershell/module/Microsoft.Graph.Bookings/New-MgVirtualEventPresenter?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -292,3 +295,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TwitterProfileWebUrl <String>]`: The presenter's Twitter profile URL.
 
 ## RELATED LINKS
+[New-MgVirtualEventPresenter](/powershell/module/Microsoft.Graph.Bookings/New-MgVirtualEventPresenter?view=graph-powershell-v1.0)

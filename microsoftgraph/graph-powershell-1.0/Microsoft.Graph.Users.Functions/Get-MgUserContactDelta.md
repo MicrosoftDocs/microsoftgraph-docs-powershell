@@ -12,6 +12,9 @@ Get a set of contacts that have been added, deleted, or updated in a specified f
 A **delta** function call for contacts in a folder is similar to a GET request, except that by appropriately \napplying state tokens in one or more of these calls, \nyou can query for incremental changes in the contacts in \nthat folder.
 This allows you to maintain and synchronize a local store of a user's contacts without \nhaving to fetch the entire set of contacts from the server every time.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaUserContactDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserContactDelta?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delta (Default)
@@ -279,3 +282,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaBetaUserContactDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserContactDelta?view=graph-powershell-beta)

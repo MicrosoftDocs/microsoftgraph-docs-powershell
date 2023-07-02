@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to roleEligibilitySchedules for roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgRoleManagementEntitlementManagementRoleEligibilitySchedule](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/New-MgRoleManagementEntitlementManagementRoleEligibilitySchedule?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -494,8 +497,11 @@ SCHEDULEINFO `<IMicrosoftGraphRequestSchedule>`: requestSchedule
   - `[StartDateTime <DateTime?>]`: When the  eligible or active assignment becomes active.
 
 ## RELATED LINKS
+[New-MgRoleManagementEntitlementManagementRoleEligibilitySchedule](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/New-MgRoleManagementEntitlementManagementRoleEligibilitySchedule?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgRoleManagementEntitlementManagementRoleEligibilitySchedule](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/New-MgRoleManagementEntitlementManagementRoleEligibilitySchedule?view=graph-powershell-v1.0)
 
 
 ## RELATED LINKS
+[New-MgRoleManagementEntitlementManagementRoleEligibilitySchedule](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/New-MgRoleManagementEntitlementManagementRoleEligibilitySchedule?view=graph-powershell-v1.0)

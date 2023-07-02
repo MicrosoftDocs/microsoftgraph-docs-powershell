@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property userStatuses for deviceAppManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceAppManagementMobileAppUserStatus](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Remove-MgDeviceAppManagementMobileAppUserStatus?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -235,6 +238,7 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
   \[WindowsManagedAppProtectionId \<String\>\]: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
+[Remove-MgDeviceAppManagementMobileAppUserStatus](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Remove-MgDeviceAppManagementMobileAppUserStatus?view=graph-powershell-v1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/remove-mgbetadeviceappmanagementmobileappuserstatus](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/remove-mgbetadeviceappmanagementmobileappuserstatus)
 

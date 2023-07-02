@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property channels for teamwork
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaTeamworkDeletedTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamworkDeletedTeamChannel?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -200,3 +203,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Remove-MgBetaBetaTeamworkDeletedTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamworkDeletedTeamChannel?view=graph-powershell-beta)

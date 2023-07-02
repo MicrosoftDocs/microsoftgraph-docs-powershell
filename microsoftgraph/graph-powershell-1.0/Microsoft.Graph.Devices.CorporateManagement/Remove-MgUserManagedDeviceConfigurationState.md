@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property deviceConfigurationStates for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaUserManagedDeviceConfigurationState](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaUserManagedDeviceConfigurationState?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -218,3 +221,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
 
 ## RELATED LINKS
+[Remove-MgBetaBetaUserManagedDeviceConfigurationState](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaUserManagedDeviceConfigurationState?view=graph-powershell-beta)

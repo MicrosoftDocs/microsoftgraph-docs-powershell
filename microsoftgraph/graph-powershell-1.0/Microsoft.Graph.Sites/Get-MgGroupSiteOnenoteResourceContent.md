@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The content stream
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaGroupSiteOnenoteResourceContent](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOnenoteResourceContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -191,3 +194,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaBetaGroupSiteOnenoteResourceContent](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOnenoteResourceContent?view=graph-powershell-beta)

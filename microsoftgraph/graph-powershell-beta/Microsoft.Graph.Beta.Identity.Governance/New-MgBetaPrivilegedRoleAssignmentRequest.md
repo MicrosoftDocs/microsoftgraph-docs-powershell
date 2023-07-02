@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Add new entity to privilegedRoleAssignmentRequests
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgPrivilegedRoleAssignmentRequest](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgPrivilegedRoleAssignmentRequest?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -425,3 +428,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String>]`: The role assignment schedule type. Only Once is supported for now.
 
 ## RELATED LINKS
+[New-MgPrivilegedRoleAssignmentRequest](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgPrivilegedRoleAssignmentRequest?view=graph-powershell-v1.0)

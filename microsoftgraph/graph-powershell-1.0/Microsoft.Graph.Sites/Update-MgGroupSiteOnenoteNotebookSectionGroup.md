@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property sectionGroups in groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaGroupSiteOnenoteNotebookSectionGroup](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteOnenoteNotebookSectionGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -877,5 +880,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ParentSectionGroup <IMicrosoftGraphSectionGroup>]`: sectionGroup
 
 ## RELATED LINKS
+[Update-MgBetaBetaGroupSiteOnenoteNotebookSectionGroup](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteOnenoteNotebookSectionGroup?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaBetaGroupSiteOnenoteNotebookSectionGroup](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteOnenoteNotebookSectionGroup?view=graph-powershell-beta)

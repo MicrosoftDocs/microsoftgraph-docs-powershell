@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property inheritsPermissionsFrom in roleManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaRoleManagementDirectoryRoleDefinitionInheritPermissionFrom](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Update-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFrom?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -456,3 +459,4 @@ ROLEPERMISSIONS <IMicrosoftGraphUnifiedRolePermission\[]>: List of permissions i
   - `[ExcludedResourceActions <String[]>]`: Set of tasks that may not be performed on a resource. Not yet supported.
 
 ## RELATED LINKS
+[Update-MgBetaRoleManagementDirectoryRoleDefinitionInheritPermissionFrom](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Update-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFrom?view=graph-powershell-beta)

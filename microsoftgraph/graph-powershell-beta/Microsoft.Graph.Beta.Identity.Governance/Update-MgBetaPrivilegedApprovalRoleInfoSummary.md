@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property summary in privilegedApproval
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgPrivilegedApprovalRoleInfoSummary](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgPrivilegedApprovalRoleInfoSummary?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -370,3 +373,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Update-MgPrivilegedApprovalRoleInfoSummary](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgPrivilegedApprovalRoleInfoSummary?view=graph-powershell-v1.0)

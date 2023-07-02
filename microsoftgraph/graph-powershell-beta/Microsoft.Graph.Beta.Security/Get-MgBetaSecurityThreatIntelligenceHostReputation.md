@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the properties and relationships of a hostReputation object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceHostReputation](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostReputation?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -179,3 +182,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
+[Get-MgSecurityThreatIntelligenceHostReputation](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostReputation?view=graph-powershell-v1.0)

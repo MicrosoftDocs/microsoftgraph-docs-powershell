@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Navigation link to the terms and conditions that are assigned.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaDeviceManagementTermAndConditionAcceptanceStatusTermAndCondition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementTermAndConditionAcceptanceStatusTermAndCondition?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -155,3 +158,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TermsAndConditionsId <String>]`: The unique identifier of termsAndConditions
 
 ## RELATED LINKS
+[Get-MgBetaBetaDeviceManagementTermAndConditionAcceptanceStatusTermAndCondition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementTermAndConditionAcceptanceStatusTermAndCondition?view=graph-powershell-beta)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getOneDriveActivityUserCounts
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaReportOneDriveActivityUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOneDriveActivityUserCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -143,3 +146,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: Usage: userId='{userId}'
 
 ## RELATED LINKS
+[Get-MgBetaBetaReportOneDriveActivityUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOneDriveActivityUserCount?view=graph-powershell-beta)

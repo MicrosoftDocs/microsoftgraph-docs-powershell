@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function delta
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaContractMemberGroup](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContractMemberGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
@@ -183,3 +186,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaBetaContractMemberGroup](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContractMemberGroup?view=graph-powershell-beta)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Reports singleton
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaDeviceManagementReport](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaDeviceManagementReport?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
@@ -80,3 +83,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaBetaDeviceManagementReport](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaDeviceManagementReport?view=graph-powershell-beta)

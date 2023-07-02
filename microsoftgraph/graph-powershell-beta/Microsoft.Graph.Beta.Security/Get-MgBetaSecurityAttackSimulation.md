@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Provides tenants capability to launch a simulated and realistic phishing attack and learn from it.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityAttackSimulation](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulation?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -310,3 +313,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
+[Get-MgSecurityAttackSimulation](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulation?view=graph-powershell-v1.0)

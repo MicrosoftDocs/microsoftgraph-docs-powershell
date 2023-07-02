@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The list of troubleshooting events for this user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaUserDeviceManagementTroubleshootingEvent](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaUserDeviceManagementTroubleshootingEvent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -300,3 +303,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
 
 ## RELATED LINKS
+[Get-MgBetaBetaUserDeviceManagementTroubleshootingEvent](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaUserDeviceManagementTroubleshootingEvent?view=graph-powershell-beta)

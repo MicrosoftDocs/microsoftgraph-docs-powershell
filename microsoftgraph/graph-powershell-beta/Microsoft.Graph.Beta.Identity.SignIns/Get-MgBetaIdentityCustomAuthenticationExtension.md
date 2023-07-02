@@ -11,6 +11,9 @@ schema: 2.0.0
 Read the properties and relationships of an authenticationEventListener object.
 The **@odata.type** property in the response object indicates the type of the authenticationEventListener object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityCustomAuthenticationExtension](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityCustomAuthenticationExtension?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -331,3 +334,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Get-MgIdentityCustomAuthenticationExtension](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityCustomAuthenticationExtension?view=graph-powershell-v1.0)

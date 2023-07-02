@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property parentGroup for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupSiteTermStoreGroupSetParentGroup](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSiteTermStoreGroupSetParentGroup?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -249,3 +252,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Remove-MgGroupSiteTermStoreGroupSetParentGroup](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSiteTermStoreGroupSetParentGroup?view=graph-powershell-v1.0)

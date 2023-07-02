@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property timeOffRequests in groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaGroupTeamScheduleTimeOffRequest](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaGroupTeamScheduleTimeOffRequest?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -390,3 +393,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
+[Update-MgBetaBetaGroupTeamScheduleTimeOffRequest](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaGroupTeamScheduleTimeOffRequest?view=graph-powershell-beta)

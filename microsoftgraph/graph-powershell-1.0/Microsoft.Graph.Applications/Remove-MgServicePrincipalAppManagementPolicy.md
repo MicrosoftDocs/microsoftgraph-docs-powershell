@@ -11,6 +11,9 @@ schema: 2.0.0
 Remove an appManagementPolicy policy object from an application or service principal object.
 When you remove the appManagementPolicy, the application or service principal adopts the tenant-wide tenantAppManagementPolicy setting.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaServicePrincipalAppManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalAppManagementPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -191,3 +194,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaBetaServicePrincipalAppManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalAppManagementPolicy?view=graph-powershell-beta)

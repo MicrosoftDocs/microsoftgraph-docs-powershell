@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property lastMessagePreview in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserChatLastMessagePreview](/powershell/module/Microsoft.Graph.Teams/Update-MgUserChatLastMessagePreview?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -359,3 +362,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Update-MgUserChatLastMessagePreview](/powershell/module/Microsoft.Graph.Teams/Update-MgUserChatLastMessagePreview?view=graph-powershell-v1.0)

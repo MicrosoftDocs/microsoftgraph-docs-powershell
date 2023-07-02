@@ -11,6 +11,9 @@ schema: 2.0.0
 Detailed information for the unifiedRoleDefinition object that is referenced through the roleDefinitionId property.
 Supports $expand.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequestRoleDefinition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequestRoleDefinition?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -152,3 +155,4 @@ INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequestRoleDefinition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequestRoleDefinition?view=graph-powershell-beta)

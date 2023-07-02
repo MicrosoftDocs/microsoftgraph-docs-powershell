@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update deviceAppManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaDeviceAppManagement](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagement?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -1414,5 +1417,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessBlocked <Boolean?>]`: Boolean value that sets Windows Hello for Business as a method for signing into Windows.
 
 ## RELATED LINKS
+[Update-MgBetaBetaDeviceAppManagement](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagement?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaBetaDeviceAppManagement](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagement?view=graph-powershell-beta)

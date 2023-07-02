@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The collection of assignments for this compliance policy.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaDeviceManagementDeviceCompliancePolicyAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceCompliancePolicyAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -293,3 +296,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionNetworkLearningSummary
 
 ## RELATED LINKS
+[Get-MgBetaBetaDeviceManagementDeviceCompliancePolicyAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceCompliancePolicyAssignment?view=graph-powershell-beta)

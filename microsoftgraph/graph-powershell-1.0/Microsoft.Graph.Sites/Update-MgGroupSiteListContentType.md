@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property contentTypes in groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaGroupSiteListContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteListContentType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -1595,5 +1598,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Position <Int32?>]`: Specifies the position in which the Content Type appears in the selection UI.
 
 ## RELATED LINKS
+[Update-MgBetaBetaGroupSiteListContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteListContentType?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaBetaGroupSiteListContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteListContentType?view=graph-powershell-beta)

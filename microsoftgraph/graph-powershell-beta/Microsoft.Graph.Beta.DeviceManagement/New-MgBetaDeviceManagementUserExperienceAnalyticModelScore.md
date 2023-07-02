@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to userExperienceAnalyticsModelScores for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementUserExperienceAnalyticModelScore](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticModelScore?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -299,3 +302,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkFromAnywhereScore <Double?>]`: The user experience analytics model work from anywhere score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 ## RELATED LINKS
+[New-MgDeviceManagementUserExperienceAnalyticModelScore](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticModelScore?view=graph-powershell-v1.0)

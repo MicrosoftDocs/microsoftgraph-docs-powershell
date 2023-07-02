@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property schema in applications
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaApplicationSynchronizationTemplateSchema](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplicationSynchronizationTemplateSchema?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -443,5 +446,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[TargetDirectoryName <String>]`: 
 
 ## RELATED LINKS
+[Update-MgBetaBetaApplicationSynchronizationTemplateSchema](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplicationSynchronizationTemplateSchema?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaBetaApplicationSynchronizationTemplateSchema](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplicationSynchronizationTemplateSchema?view=graph-powershell-beta)

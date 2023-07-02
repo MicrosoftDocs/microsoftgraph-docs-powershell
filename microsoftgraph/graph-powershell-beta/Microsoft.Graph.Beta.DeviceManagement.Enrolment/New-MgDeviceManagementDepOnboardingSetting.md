@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to depOnboardingSettings for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementDepOnboardingSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/New-MgDeviceManagementDepOnboardingSetting?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -660,8 +663,11 @@ IMPORTEDAPPLEDEVICEIDENTITIES <IMicrosoftGraphImportedAppleDeviceIdentity\[]>: T
   - `[SerialNumber <String>]`: Device serial number
 
 ## RELATED LINKS
+[New-MgDeviceManagementDepOnboardingSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/New-MgDeviceManagementDepOnboardingSetting?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgDeviceManagementDepOnboardingSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/New-MgDeviceManagementDepOnboardingSetting?view=graph-powershell-v1.0)
 
 
 ## RELATED LINKS
+[New-MgDeviceManagementDepOnboardingSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/New-MgDeviceManagementDepOnboardingSetting?view=graph-powershell-v1.0)

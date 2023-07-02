@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Resource representing the roles allowed by RBAC providers and the permissions assigned to the roles.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementEntitlementManagementRoleDefinition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Get-MgRoleManagementEntitlementManagementRoleDefinition?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -285,3 +288,4 @@ INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[Get-MgBetaRoleManagementEntitlementManagementRoleDefinition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Get-MgRoleManagementEntitlementManagementRoleDefinition?view=graph-powershell-beta)

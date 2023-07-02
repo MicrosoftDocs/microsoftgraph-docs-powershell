@@ -12,6 +12,9 @@ Read-only property with details of the app-specific scope when the role eligibil
 Nullable.
 Supports $expand.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleRequestAppScope](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestAppScope?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -154,3 +157,4 @@ INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleRequestAppScope](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestAppScope?view=graph-powershell-beta)

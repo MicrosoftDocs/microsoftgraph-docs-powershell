@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Remove a [column][columndefinition] from a [site][], a [list][], or a [content type][contentType].
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaUserDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveListContentTypeColumn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -227,3 +230,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaBetaUserDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveListContentTypeColumn?view=graph-powershell-beta)

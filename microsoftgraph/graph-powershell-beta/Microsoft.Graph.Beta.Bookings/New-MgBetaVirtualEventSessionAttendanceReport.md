@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to attendanceReports for solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgVirtualEventSessionAttendanceReport](/powershell/module/Microsoft.Graph.Bookings/New-MgVirtualEventSessionAttendanceReport?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -324,3 +327,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
+[New-MgVirtualEventSessionAttendanceReport](/powershell/module/Microsoft.Graph.Bookings/New-MgVirtualEventSessionAttendanceReport?view=graph-powershell-v1.0)

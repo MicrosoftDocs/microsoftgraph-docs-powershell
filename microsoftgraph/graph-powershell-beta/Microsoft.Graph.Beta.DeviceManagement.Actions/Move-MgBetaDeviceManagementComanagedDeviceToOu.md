@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action moveDevicesToOU
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Move-MgDeviceManagementComanagedDeviceToOu](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Move-MgDeviceManagementComanagedDeviceToOu?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### MoveExpanded (Default)
@@ -177,3 +180,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[OrganizationalUnitPath <String>]`: 
 
 ## RELATED LINKS
+[Move-MgDeviceManagementComanagedDeviceToOu](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Move-MgDeviceManagementComanagedDeviceToOu?view=graph-powershell-v1.0)

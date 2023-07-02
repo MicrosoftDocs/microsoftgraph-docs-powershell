@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 List of Role assignments for this role definition.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaDeviceManagementRoleDefinitionRoleAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementRoleDefinitionRoleAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -285,3 +288,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TermsAndConditionsId <String>]`: The unique identifier of termsAndConditions
 
 ## RELATED LINKS
+[Get-MgBetaBetaDeviceManagementRoleDefinitionRoleAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementRoleDefinitionRoleAssignment?view=graph-powershell-beta)

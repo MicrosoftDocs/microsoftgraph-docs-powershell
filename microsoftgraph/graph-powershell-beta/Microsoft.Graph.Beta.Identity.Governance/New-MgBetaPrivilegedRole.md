@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Add new entity to privilegedRoles
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgPrivilegedRole](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgPrivilegedRole?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -298,3 +301,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UsersCount <Int32?>]`: 
 
 ## RELATED LINKS
+[New-MgPrivilegedRole](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgPrivilegedRole?view=graph-powershell-v1.0)

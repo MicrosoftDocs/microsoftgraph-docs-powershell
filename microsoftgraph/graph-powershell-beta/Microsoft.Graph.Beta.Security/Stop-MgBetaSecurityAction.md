@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Cancel a security operation.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Stop-MgSecurityAction](/powershell/module/Microsoft.Graph.Security/Stop-MgSecurityAction?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Cancel (Default)
@@ -190,3 +193,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
+[Stop-MgSecurityAction](/powershell/module/Microsoft.Graph.Security/Stop-MgSecurityAction?view=graph-powershell-v1.0)

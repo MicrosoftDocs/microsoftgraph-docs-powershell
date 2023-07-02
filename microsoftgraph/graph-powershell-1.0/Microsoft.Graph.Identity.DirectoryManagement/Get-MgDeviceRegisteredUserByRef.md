@@ -14,6 +14,9 @@ Read-only.
 Nullable.
 Supports $expand.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaDeviceRegisteredUserByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDeviceRegisteredUserByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
@@ -208,3 +211,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaBetaDeviceRegisteredUserByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDeviceRegisteredUserByRef?view=graph-powershell-beta)

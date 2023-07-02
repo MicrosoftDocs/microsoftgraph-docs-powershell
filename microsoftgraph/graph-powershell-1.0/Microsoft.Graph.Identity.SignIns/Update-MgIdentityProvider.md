@@ -12,6 +12,9 @@ Update the properties of the specified identity provider configured in the tenan
 Among the types of providers derived from identityProviderBase, you can currently update a socialIdentityProvider resource in Azure AD.
 In Azure AD B2C, this operation can currently update a socialIdentityProvider, or an appleManagedIdentityProvider resource.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaIdentityProvider](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityProvider?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -277,3 +280,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Update-MgBetaBetaIdentityProvider](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityProvider?view=graph-powershell-beta)

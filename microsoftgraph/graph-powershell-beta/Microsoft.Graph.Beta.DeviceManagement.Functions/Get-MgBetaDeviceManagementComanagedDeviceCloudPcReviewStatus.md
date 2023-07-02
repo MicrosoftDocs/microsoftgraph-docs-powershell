@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getCloudPcReviewStatus
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementComanagedDeviceCloudPcReviewStatus](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementComanagedDeviceCloudPcReviewStatus?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -124,3 +127,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Userid <String>]`: Usage: userid='{userid}'
 
 ## RELATED LINKS
+[Get-MgDeviceManagementComanagedDeviceCloudPcReviewStatus](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementComanagedDeviceCloudPcReviewStatus?view=graph-powershell-v1.0)

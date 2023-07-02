@@ -13,6 +13,9 @@ Read-only.
 Nullable.
 Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaServicePrincipalOwnedObject](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalOwnedObject?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -288,3 +291,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaBetaServicePrincipalOwnedObject](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalOwnedObject?view=graph-powershell-beta)

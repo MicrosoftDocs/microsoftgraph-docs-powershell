@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Requests for active role assignments to principals through PIM.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -300,3 +303,4 @@ INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest?view=graph-powershell-beta)

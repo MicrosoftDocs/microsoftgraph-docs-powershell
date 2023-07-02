@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to resourceActions for roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgRoleManagementCloudPcResourceNamespaceResourceAction](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/New-MgRoleManagementCloudPcResourceNamespaceResourceAction?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -350,3 +353,4 @@ RESOURCESCOPE `<IMicrosoftGraphUnifiedRbacResourceScope>`: unifiedRbacResourceSc
   - `[Type <String>]`: 
 
 ## RELATED LINKS
+[New-MgRoleManagementCloudPcResourceNamespaceResourceAction](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/New-MgRoleManagementCloudPcResourceNamespaceResourceAction?view=graph-powershell-v1.0)

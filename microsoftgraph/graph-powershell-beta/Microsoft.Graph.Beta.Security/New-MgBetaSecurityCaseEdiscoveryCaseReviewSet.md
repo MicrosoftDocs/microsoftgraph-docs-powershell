@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new ediscoveryReviewSet object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityCaseEdiscoveryCaseReviewSet](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseReviewSet?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -9892,5 +9895,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
 
 ## RELATED LINKS
+[New-MgSecurityCaseEdiscoveryCaseReviewSet](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseReviewSet?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgSecurityCaseEdiscoveryCaseReviewSet](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseReviewSet?view=graph-powershell-v1.0)

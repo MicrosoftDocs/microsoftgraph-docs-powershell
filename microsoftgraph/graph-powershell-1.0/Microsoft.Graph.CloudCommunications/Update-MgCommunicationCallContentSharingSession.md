@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property contentSharingSessions in communications
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaCommunicationCallContentSharingSession](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Update-MgBetaCommunicationCallContentSharingSession?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -214,3 +217,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Update-MgBetaBetaCommunicationCallContentSharingSession](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Update-MgBetaCommunicationCallContentSharingSession?view=graph-powershell-beta)

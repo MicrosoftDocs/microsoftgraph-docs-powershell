@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The collection of content types that are ancestors of this content type.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaUserDriveContentTypeBaseType](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveContentTypeBaseType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -320,3 +323,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaBetaUserDriveContentTypeBaseType](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveContentTypeBaseType?view=graph-powershell-beta)

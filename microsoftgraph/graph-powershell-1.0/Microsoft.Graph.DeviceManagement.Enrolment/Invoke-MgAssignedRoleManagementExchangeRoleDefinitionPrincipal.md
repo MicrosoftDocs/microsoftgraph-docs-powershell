@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function assignedPrincipals
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaAssignedRoleManagementExchangeRoleDefinitionPrincipal](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Invoke-MgAssignedRoleManagementExchangeRoleDefinitionPrincipal?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Assigned (Default)
@@ -235,6 +238,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 Please use Get-Help -Online.
 
 ## RELATED LINKS
+[Invoke-MgBetaAssignedRoleManagementExchangeRoleDefinitionPrincipal](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Invoke-MgAssignedRoleManagementExchangeRoleDefinitionPrincipal?view=graph-powershell-beta)
 
 [https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/invoke-mgassignedrolemanagementexchangeroledefinitionprincipal](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/invoke-mgassignedrolemanagementexchangeroledefinitionprincipal)
 

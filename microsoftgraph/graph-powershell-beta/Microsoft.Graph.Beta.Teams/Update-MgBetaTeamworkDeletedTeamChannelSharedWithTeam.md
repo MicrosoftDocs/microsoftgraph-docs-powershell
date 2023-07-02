@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property sharedWithTeams in teamwork
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgTeamworkDeletedTeamChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamworkDeletedTeamChannelSharedWithTeam?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -9726,5 +9729,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebUrl <String>]`: A hyperlink that will go to the team in the Microsoft Teams client. This is the URL that you get when you right-click a team in the Microsoft Teams client and select Get link to team. This URL should be treated as an opaque blob, and not parsed.
 
 ## RELATED LINKS
+[Update-MgTeamworkDeletedTeamChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamworkDeletedTeamChannelSharedWithTeam?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgTeamworkDeletedTeamChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamworkDeletedTeamChannelSharedWithTeam?view=graph-powershell-v1.0)

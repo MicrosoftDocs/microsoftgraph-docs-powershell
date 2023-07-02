@@ -16,6 +16,9 @@ Make sure that these requests are successful to prevent the call from timing out
 Attempting to send a request to a call that has already ended will result in a `404 Not-Found` error.
 The resources related to the call should be cleaned up on the application side.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaBetaKeepCommunicationCallAlive](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaKeepCommunicationCallAlive?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Keep (Default)
@@ -158,3 +161,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgBetaBetaKeepCommunicationCallAlive](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaKeepCommunicationCallAlive?view=graph-powershell-beta)

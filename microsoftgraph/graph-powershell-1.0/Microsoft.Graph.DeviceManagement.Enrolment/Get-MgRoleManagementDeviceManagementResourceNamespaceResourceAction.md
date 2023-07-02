@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Operations that an authorized principal are allowed to perform.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceAction](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Get-MgRoleManagementDeviceManagementResourceNamespaceResourceAction?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -257,6 +260,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 Please use Get-Help -Online.
 
 ## RELATED LINKS
+[Get-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceAction](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Get-MgRoleManagementDeviceManagementResourceNamespaceResourceAction?view=graph-powershell-beta)
 
 [https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/get-mgrolemanagementdevicemanagementresourcenamespaceresourceaction](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/get-mgrolemanagementdevicemanagementresourcenamespaceresourceaction)
 

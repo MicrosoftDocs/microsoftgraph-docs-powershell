@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Publishes a [contentType][] present in the content type hub site.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Publish-MgBetaBetaUserDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Publish-MgBetaUserDriveListContentType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Publish (Default)
@@ -194,3 +197,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Publish-MgBetaBetaUserDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Publish-MgBetaUserDriveListContentType?view=graph-powershell-beta)

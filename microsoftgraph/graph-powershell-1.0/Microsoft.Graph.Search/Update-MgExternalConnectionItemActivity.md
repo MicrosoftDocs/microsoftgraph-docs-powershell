@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property activities in external
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaExternalConnectionItemActivity](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaExternalConnectionItemActivity?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -287,3 +290,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String>]`: identityType
 
 ## RELATED LINKS
+[Update-MgBetaBetaExternalConnectionItemActivity](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaExternalConnectionItemActivity?view=graph-powershell-beta)

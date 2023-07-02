@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property submittedResources in education
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgEducationClassAssignmentSubmissionSubmittedResource](/powershell/module/Microsoft.Graph.Education/Update-MgEducationClassAssignmentSubmissionSubmittedResource?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -312,3 +315,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
 
 ## RELATED LINKS
+[Update-MgEducationClassAssignmentSubmissionSubmittedResource](/powershell/module/Microsoft.Graph.Education/Update-MgEducationClassAssignmentSubmissionSubmittedResource?view=graph-powershell-v1.0)

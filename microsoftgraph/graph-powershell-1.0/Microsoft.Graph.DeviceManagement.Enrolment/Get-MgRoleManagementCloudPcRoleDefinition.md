@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get roleDefinitions from roleManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementCloudPcRoleDefinition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Get-MgRoleManagementCloudPcRoleDefinition?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -245,6 +248,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 Please use Get-Help -Online.
 
 ## RELATED LINKS
+[Get-MgBetaRoleManagementCloudPcRoleDefinition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Get-MgRoleManagementCloudPcRoleDefinition?view=graph-powershell-beta)
 
 [https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/get-mgrolemanagementcloudpcroledefinition](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/get-mgrolemanagementcloudpcroledefinition)
 

@@ -11,6 +11,9 @@ schema: 2.0.0
 The groups, including nested groups, and directory roles that a user is a member of.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaUserTransitiveMemberOf](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTransitiveMemberOf?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -294,3 +297,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaBetaUserTransitiveMemberOf](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTransitiveMemberOf?view=graph-powershell-beta)

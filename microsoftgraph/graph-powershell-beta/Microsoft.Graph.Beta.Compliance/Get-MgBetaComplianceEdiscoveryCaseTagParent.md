@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Returns the parent tag of the specified tag.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgComplianceEdiscoveryCaseTagParent](/powershell/module/Microsoft.Graph.Compliance/Get-MgComplianceEdiscoveryCaseTagParent?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -156,3 +159,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
+[Get-MgComplianceEdiscoveryCaseTagParent](/powershell/module/Microsoft.Graph.Compliance/Get-MgComplianceEdiscoveryCaseTagParent?view=graph-powershell-v1.0)

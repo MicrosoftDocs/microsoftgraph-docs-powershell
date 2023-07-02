@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to windowsFeatureUpdateProfiles for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementWindowFeatureUpdateProfile](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/New-MgDeviceManagementWindowFeatureUpdateProfile?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -321,3 +324,4 @@ ROLLOUTSETTINGS `<IMicrosoftGraphWindowsUpdateRolloutSettings>`: A complex type 
   - `[OfferStartDateTimeInUtc <DateTime?>]`: The feature update's starting date and time to be set, update, and displayed for a feature Update profile for example: 2020-06-09T10:00:00Z.
 
 ## RELATED LINKS
+[New-MgDeviceManagementWindowFeatureUpdateProfile](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/New-MgDeviceManagementWindowFeatureUpdateProfile?view=graph-powershell-v1.0)

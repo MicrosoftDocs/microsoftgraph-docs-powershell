@@ -11,6 +11,9 @@ schema: 2.0.0
 The principal that's getting a role assignment through the request.
 Supports $expand.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestPrincipal](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestPrincipal?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -152,3 +155,4 @@ INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestPrincipal](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestPrincipal?view=graph-powershell-v1.0)

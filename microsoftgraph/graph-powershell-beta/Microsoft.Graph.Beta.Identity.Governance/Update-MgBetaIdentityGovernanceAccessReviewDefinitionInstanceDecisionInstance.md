@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property instance in identityGovernance
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgIdentityGovernanceAccessReviewDefinitionInstanceDecisionInstance](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceAccessReviewDefinitionInstanceDecisionInstance?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -1059,5 +1062,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Status <String>]`: Specifies the status of an accessReviewStage. Possible values: Initializing, NotStarted, Starting, InProgress, Completing, Completed, AutoReviewing, and AutoReviewed. Supports $orderby, and $filter (eq only). Read-only.
 
 ## RELATED LINKS
+[Update-MgIdentityGovernanceAccessReviewDefinitionInstanceDecisionInstance](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceAccessReviewDefinitionInstanceDecisionInstance?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgIdentityGovernanceAccessReviewDefinitionInstanceDecisionInstance](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceAccessReviewDefinitionInstanceDecisionInstance?view=graph-powershell-v1.0)

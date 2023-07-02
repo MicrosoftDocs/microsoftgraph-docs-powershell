@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property purchaseInvoiceLines in financials
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgFinancialCompanyPurchaseInvoiceLine](/powershell/module/Microsoft.Graph.Financials/Update-MgFinancialCompanyPurchaseInvoiceLine?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -759,3 +762,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UnitPrice <Decimal?>]`: 
 
 ## RELATED LINKS
+[Update-MgFinancialCompanyPurchaseInvoiceLine](/powershell/module/Microsoft.Graph.Financials/Update-MgFinancialCompanyPurchaseInvoiceLine?view=graph-powershell-v1.0)

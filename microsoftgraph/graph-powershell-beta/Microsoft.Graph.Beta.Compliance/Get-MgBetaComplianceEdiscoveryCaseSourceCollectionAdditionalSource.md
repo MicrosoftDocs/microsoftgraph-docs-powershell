@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Adds an additional source to the sourceCollection.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgComplianceEdiscoveryCaseSourceCollectionAdditionalSource](/powershell/module/Microsoft.Graph.Compliance/Get-MgComplianceEdiscoveryCaseSourceCollectionAdditionalSource?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -292,3 +295,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
+[Get-MgComplianceEdiscoveryCaseSourceCollectionAdditionalSource](/powershell/module/Microsoft.Graph.Compliance/Get-MgComplianceEdiscoveryCaseSourceCollectionAdditionalSource?view=graph-powershell-v1.0)

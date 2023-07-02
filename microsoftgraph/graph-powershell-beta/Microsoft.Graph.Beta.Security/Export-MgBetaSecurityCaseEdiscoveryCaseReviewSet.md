@@ -11,6 +11,9 @@ schema: 2.0.0
 Initiate an export from a **reviewSet**.
 For details, see Export documents from a review set in eDiscovery (Premium).
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Export-MgSecurityCaseEdiscoveryCaseReviewSet](/powershell/module/Microsoft.Graph.Security/Export-MgSecurityCaseEdiscoveryCaseReviewSet?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### ExportExpanded (Default)
@@ -363,3 +366,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
+[Export-MgSecurityCaseEdiscoveryCaseReviewSet](/powershell/module/Microsoft.Graph.Security/Export-MgSecurityCaseEdiscoveryCaseReviewSet?view=graph-powershell-v1.0)

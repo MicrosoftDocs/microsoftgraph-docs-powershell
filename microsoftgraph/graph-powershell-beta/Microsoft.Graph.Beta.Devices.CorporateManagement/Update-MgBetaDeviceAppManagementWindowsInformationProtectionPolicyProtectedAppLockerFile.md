@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property protectedAppLockerFiles in deviceAppManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -341,3 +344,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
+[Update-MgDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile?view=graph-powershell-v1.0)

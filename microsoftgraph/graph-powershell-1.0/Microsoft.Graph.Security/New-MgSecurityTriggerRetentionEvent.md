@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new retentionEvent object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBetaSecurityTriggerRetentionEvent](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityTriggerRetentionEvent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -448,3 +451,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[LastModifiedDateTime <DateTime?>]`: The latest date time when the retentionEventType was modified.
 
 ## RELATED LINKS
+[New-MgBetaBetaSecurityTriggerRetentionEvent](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityTriggerRetentionEvent?view=graph-powershell-beta)

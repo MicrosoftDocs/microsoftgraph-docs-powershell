@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function assignedPrincipals
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgAssignedRoleManagementCloudPcRoleDefinitionPrincipal](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Invoke-MgAssignedRoleManagementCloudPcRoleDefinitionPrincipal?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Assigned (Default)
@@ -270,3 +273,4 @@ INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[Invoke-MgAssignedRoleManagementCloudPcRoleDefinitionPrincipal](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Invoke-MgAssignedRoleManagementCloudPcRoleDefinitionPrincipal?view=graph-powershell-v1.0)

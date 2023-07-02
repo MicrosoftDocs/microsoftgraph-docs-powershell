@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to managedDevices for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBetaUserManagedDevice](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaUserManagedDevice?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -5787,5 +5790,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserType <String>]`: A string value that can be used to classify user types in your directory, such as Member and Guest. Returned only on $select. Supports $filter (eq, ne, not, in, and eq on null values). NOTE: For more information about the permissions for member and guest users, see What are the default user permissions in Azure Active Directory?
 
 ## RELATED LINKS
+[New-MgBetaBetaUserManagedDevice](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaUserManagedDevice?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[New-MgBetaBetaUserManagedDevice](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaUserManagedDevice?view=graph-powershell-beta)

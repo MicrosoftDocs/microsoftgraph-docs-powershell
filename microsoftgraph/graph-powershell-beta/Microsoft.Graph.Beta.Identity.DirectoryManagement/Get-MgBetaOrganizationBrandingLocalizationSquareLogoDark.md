@@ -12,6 +12,9 @@ A square dark version of your company logo that appears in Windows 10 out-of-box
 Allowed types are PNG or JPEG not larger than 240 x 240 pixels and not more than 10 KB in size.
 We recommend using a transparent image with no padding around the logo.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgOrganizationBrandingLocalizationSquareLogoDark](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgOrganizationBrandingLocalizationSquareLogoDark?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -182,3 +185,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgOrganizationBrandingLocalizationSquareLogoDark](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgOrganizationBrandingLocalizationSquareLogoDark?view=graph-powershell-v1.0)

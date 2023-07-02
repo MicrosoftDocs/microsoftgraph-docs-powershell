@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve a list of calendars belonging to a calendar group.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaUserCalendarGroupCalendar](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserCalendarGroupCalendar?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
@@ -196,3 +199,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaBetaUserCalendarGroupCalendar](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserCalendarGroupCalendar?view=graph-powershell-beta)

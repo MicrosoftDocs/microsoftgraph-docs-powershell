@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action assign
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaBetaDeviceAppManagementMobileApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Set-MgBetaDeviceAppManagementMobileApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AssignExpanded (Default)
@@ -253,3 +256,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
 ## RELATED LINKS
+[Set-MgBetaBetaDeviceAppManagementMobileApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Set-MgBetaDeviceAppManagementMobileApp?view=graph-powershell-beta)

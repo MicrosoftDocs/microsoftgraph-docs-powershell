@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property listItem in shares
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaShareListItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -13644,5 +13647,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
 ## RELATED LINKS
+[Update-MgBetaBetaShareListItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListItem?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaBetaShareListItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListItem?view=graph-powershell-beta)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action acquireAccessToken
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaServicePrincipalSynchronizationAccessToken](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalSynchronizationAccessToken?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AcquireExpanded (Default)
@@ -233,3 +236,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaBetaServicePrincipalSynchronizationAccessToken](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalSynchronizationAccessToken?view=graph-powershell-beta)

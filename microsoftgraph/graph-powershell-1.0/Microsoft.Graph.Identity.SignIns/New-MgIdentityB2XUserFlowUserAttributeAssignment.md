@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new identityUserFlowAttributeAssignment object in a b2xIdentityUserFlow.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBetaIdentityB2XUserFlowUserAttributeAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityB2XUserFlowUserAttributeAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -382,3 +385,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Value <String>]`: The value that is set when this item is selected.
 
 ## RELATED LINKS
+[New-MgBetaBetaIdentityB2XUserFlowUserAttributeAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityB2XUserFlowUserAttributeAssignment?view=graph-powershell-beta)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get directory from roleManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaRoleManagementDirectory](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementDirectory?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
@@ -76,3 +79,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaBetaRoleManagementDirectory](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementDirectory?view=graph-powershell-beta)

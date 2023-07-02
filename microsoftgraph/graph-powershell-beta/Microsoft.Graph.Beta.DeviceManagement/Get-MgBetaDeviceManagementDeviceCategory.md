@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The list of device categories with the tenant.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementDeviceCategory](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceCategory?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -389,5 +392,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
 ## RELATED LINKS
+[Get-MgDeviceManagementDeviceCategory](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceCategory?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Get-MgDeviceManagementDeviceCategory](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceCategory?view=graph-powershell-v1.0)

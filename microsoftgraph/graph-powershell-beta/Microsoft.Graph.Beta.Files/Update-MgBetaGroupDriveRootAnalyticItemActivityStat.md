@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property itemActivityStats in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupDriveRootAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Files/Update-MgGroupDriveRootAnalyticItemActivityStat?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -9819,5 +9822,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ActorCount <Int32?>]`: The number of distinct actors that performed the action. Read-only.
 
 ## RELATED LINKS
+[Update-MgGroupDriveRootAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Files/Update-MgGroupDriveRootAnalyticItemActivityStat?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgGroupDriveRootAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Files/Update-MgGroupDriveRootAnalyticItemActivityStat?view=graph-powershell-v1.0)

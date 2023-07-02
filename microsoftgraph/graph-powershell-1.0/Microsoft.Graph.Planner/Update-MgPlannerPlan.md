@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of a **plannerPlan** object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgBetaPlannerPlan?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -600,5 +603,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Title <String>]`: Title of the task.
 
 ## RELATED LINKS
+[Update-MgBetaBetaPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgBetaPlannerPlan?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaBetaPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgBetaPlannerPlan?view=graph-powershell-beta)

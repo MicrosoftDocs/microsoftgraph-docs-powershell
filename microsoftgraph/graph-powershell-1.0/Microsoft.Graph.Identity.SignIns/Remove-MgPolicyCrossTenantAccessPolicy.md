@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property crossTenantAccessPolicy for policies
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaPolicyCrossTenantAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyCrossTenantAccessPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
@@ -111,3 +114,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Remove-MgBetaBetaPolicyCrossTenantAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyCrossTenantAccessPolicy?view=graph-powershell-beta)

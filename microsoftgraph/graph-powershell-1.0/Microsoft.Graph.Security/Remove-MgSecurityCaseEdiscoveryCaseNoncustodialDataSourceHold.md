@@ -12,6 +12,9 @@ Start the process of removing hold from eDiscovery non-custodial data sources.
 After the operation is created, you can get the status by retrieving the `Location` parameter from the response headers.
 The location provides a URL that will return an eDiscoveryHoldOperation object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### RemoveExpanded (Default)
@@ -259,3 +262,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
+[Remove-MgBetaBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold?view=graph-powershell-beta)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update media content for the navigation property messages in users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaBetaUserMessageContent](/powershell/module/Microsoft.Graph.Beta.Mail/Set-MgBetaUserMessageContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)
@@ -199,3 +202,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Set-MgBetaBetaUserMessageContent](/powershell/module/Microsoft.Graph.Beta.Mail/Set-MgBetaUserMessageContent?view=graph-powershell-beta)

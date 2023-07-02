@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property history in identityProtection
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaRiskyUserHistory](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaRiskyUserHistory?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -492,3 +495,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Update-MgBetaBetaRiskyUserHistory](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaRiskyUserHistory?view=graph-powershell-beta)

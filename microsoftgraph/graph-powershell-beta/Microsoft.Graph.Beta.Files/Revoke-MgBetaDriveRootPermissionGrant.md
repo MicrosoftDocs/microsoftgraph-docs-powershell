@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Revoke access to a [listItem][] or [driveItem][] granted via a sharing link by removing the specified [recipient][] from the link.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Revoke-MgDriveRootPermissionGrant](/powershell/module/Microsoft.Graph.Files/Revoke-MgDriveRootPermissionGrant?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### RevokeExpanded (Default)
@@ -242,3 +245,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Revoke-MgDriveRootPermissionGrant](/powershell/module/Microsoft.Graph.Files/Revoke-MgDriveRootPermissionGrant?view=graph-powershell-v1.0)

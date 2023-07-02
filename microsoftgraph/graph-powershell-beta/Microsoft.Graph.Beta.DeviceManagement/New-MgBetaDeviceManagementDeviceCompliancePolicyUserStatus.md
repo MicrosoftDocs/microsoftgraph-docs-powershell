@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to userStatuses for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementDeviceCompliancePolicyUserStatus](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementDeviceCompliancePolicyUserStatus?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -406,5 +409,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
 ## RELATED LINKS
+[New-MgDeviceManagementDeviceCompliancePolicyUserStatus](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementDeviceCompliancePolicyUserStatus?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgDeviceManagementDeviceCompliancePolicyUserStatus](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementDeviceCompliancePolicyUserStatus?view=graph-powershell-v1.0)

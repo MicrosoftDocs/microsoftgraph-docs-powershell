@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of an adminConsentRequestPolicy object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaPolicyAdminConsentRequestPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyAdminConsentRequestPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -259,3 +262,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[QueryType <String>]`: The type of query. Examples include MicrosoftGraph and ARM.
 
 ## RELATED LINKS
+[Update-MgBetaBetaPolicyAdminConsentRequestPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyAdminConsentRequestPolicy?view=graph-powershell-beta)

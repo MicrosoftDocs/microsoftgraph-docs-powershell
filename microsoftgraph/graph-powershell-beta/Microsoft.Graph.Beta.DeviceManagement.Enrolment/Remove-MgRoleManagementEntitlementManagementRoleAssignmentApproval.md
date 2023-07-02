@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property roleAssignmentApprovals for roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgRoleManagementEntitlementManagementRoleAssignmentApproval](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Remove-MgRoleManagementEntitlementManagementRoleAssignmentApproval?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -180,3 +183,4 @@ INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[Remove-MgRoleManagementEntitlementManagementRoleAssignmentApproval](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Remove-MgRoleManagementEntitlementManagementRoleAssignmentApproval?view=graph-powershell-v1.0)

@@ -13,6 +13,9 @@ Delete user.
 After that time, they are permanently deleted.
 To learn more, see deletedItems.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUser](/powershell/module/Microsoft.Graph.Users/Remove-MgUser?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -177,3 +180,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgUser](/powershell/module/Microsoft.Graph.Users/Remove-MgUser?view=graph-powershell-v1.0)

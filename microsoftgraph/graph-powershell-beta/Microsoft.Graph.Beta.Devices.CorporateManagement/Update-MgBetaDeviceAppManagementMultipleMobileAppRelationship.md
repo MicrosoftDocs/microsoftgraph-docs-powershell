@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action updateRelationships
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceAppManagementMultipleMobileAppRelationship](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementMultipleMobileAppRelationship?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -289,3 +292,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TargetType <MobileAppRelationshipType?>]`: Indicates whether the target of a relationship is the parent or the child in the relationship.
 
 ## RELATED LINKS
+[Update-MgDeviceAppManagementMultipleMobileAppRelationship](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementMultipleMobileAppRelationship?view=graph-powershell-v1.0)

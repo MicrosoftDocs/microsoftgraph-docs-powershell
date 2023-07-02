@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action validateCredentials
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Test-MgBetaBetaApplicationSynchronizationJobCredential](/powershell/module/Microsoft.Graph.Beta.Applications/Test-MgBetaApplicationSynchronizationJobCredential?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ValidateExpanded (Default)
@@ -298,3 +301,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Test-MgBetaBetaApplicationSynchronizationJobCredential](/powershell/module/Microsoft.Graph.Beta.Applications/Test-MgBetaApplicationSynchronizationJobCredential?view=graph-powershell-beta)

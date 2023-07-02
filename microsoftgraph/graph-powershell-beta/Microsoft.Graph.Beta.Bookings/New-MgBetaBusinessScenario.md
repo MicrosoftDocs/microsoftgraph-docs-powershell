@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new businessScenario object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgBusinessScenario](/powershell/module/Microsoft.Graph.Bookings/New-MgBusinessScenario?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -620,5 +623,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[TaskTargetKind <String>]`: plannerTaskTargetKind
 
 ## RELATED LINKS
+[New-MgBusinessScenario](/powershell/module/Microsoft.Graph.Bookings/New-MgBusinessScenario?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgBusinessScenario](/powershell/module/Microsoft.Graph.Bookings/New-MgBusinessScenario?view=graph-powershell-v1.0)

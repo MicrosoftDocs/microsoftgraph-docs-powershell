@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property intents in deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementIntent](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementIntent?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -735,5 +738,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[SuccessCount <Int32?>]`: Number of succeeded users
 
 ## RELATED LINKS
+[Update-MgDeviceManagementIntent](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementIntent?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgDeviceManagementIntent](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementIntent?view=graph-powershell-v1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to metricValues for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -360,5 +363,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
 ## RELATED LINKS
+[New-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue?view=graph-powershell-v1.0)

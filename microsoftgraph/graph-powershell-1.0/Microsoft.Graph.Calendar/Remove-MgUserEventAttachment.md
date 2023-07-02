@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete an attachment from a user calendar event, mail message, or group post.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaUserEventAttachment](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaUserEventAttachment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -189,6 +192,7 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaBetaUserEventAttachment](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaUserEventAttachment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgusereventattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgusereventattachment)
 

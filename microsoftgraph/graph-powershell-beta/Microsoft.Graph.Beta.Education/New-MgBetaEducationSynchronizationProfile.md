@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to synchronizationProfiles for education
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgEducationSynchronizationProfile](/powershell/module/Microsoft.Graph.Education/New-MgEducationSynchronizationProfile?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -341,3 +344,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[StatusMessage <String>]`: Status message for the synchronization stage of the current profile.
 
 ## RELATED LINKS
+[New-MgEducationSynchronizationProfile](/powershell/module/Microsoft.Graph.Education/New-MgEducationSynchronizationProfile?view=graph-powershell-v1.0)

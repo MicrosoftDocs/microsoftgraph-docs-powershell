@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new deployment object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgWindowsUpdatesDeployment](/powershell/module/Microsoft.Graph.WindowsUpdates/New-MgWindowsUpdatesDeployment?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -368,5 +371,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[RequestedValue <String>]`: requestedDeploymentStateValue
 
 ## RELATED LINKS
+[New-MgWindowsUpdatesDeployment](/powershell/module/Microsoft.Graph.WindowsUpdates/New-MgWindowsUpdatesDeployment?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgWindowsUpdatesDeployment](/powershell/module/Microsoft.Graph.WindowsUpdates/New-MgWindowsUpdatesDeployment?view=graph-powershell-v1.0)

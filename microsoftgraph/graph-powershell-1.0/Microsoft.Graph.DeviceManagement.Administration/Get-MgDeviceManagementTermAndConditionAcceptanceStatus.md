@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The list of acceptance statuses for this T&C policy.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaDeviceManagementTermAndConditionAcceptanceStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementTermAndConditionAcceptanceStatus?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -281,3 +284,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TermsAndConditionsId <String>]`: The unique identifier of termsAndConditions
 
 ## RELATED LINKS
+[Get-MgBetaBetaDeviceManagementTermAndConditionAcceptanceStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementTermAndConditionAcceptanceStatus?view=graph-powershell-beta)

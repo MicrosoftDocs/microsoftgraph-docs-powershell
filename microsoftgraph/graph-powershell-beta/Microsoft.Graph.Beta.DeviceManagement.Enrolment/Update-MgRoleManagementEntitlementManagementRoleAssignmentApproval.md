@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property roleAssignmentApprovals in roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgRoleManagementEntitlementManagementRoleAssignmentApproval](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Update-MgRoleManagementEntitlementManagementRoleAssignmentApproval?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -272,3 +275,4 @@ STEPS <IMicrosoftGraphApprovalStep\[]>: .
   - `[Status <String>]`: The step status. Possible values: InProgress, Initializing, Completed, Expired. Read-only.
 
 ## RELATED LINKS
+[Update-MgRoleManagementEntitlementManagementRoleAssignmentApproval](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Update-MgRoleManagementEntitlementManagementRoleAssignmentApproval?view=graph-powershell-v1.0)

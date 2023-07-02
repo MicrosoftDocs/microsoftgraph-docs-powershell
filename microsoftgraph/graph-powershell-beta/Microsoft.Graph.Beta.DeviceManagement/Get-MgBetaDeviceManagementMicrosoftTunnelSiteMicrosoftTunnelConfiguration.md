@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The MicrosoftTunnelConfiguration that has been applied to this MicrosoftTunnelSite
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelConfiguration](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelConfiguration?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -262,5 +265,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
 ## RELATED LINKS
+[Get-MgDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelConfiguration](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelConfiguration?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Get-MgDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelConfiguration](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelConfiguration?view=graph-powershell-v1.0)

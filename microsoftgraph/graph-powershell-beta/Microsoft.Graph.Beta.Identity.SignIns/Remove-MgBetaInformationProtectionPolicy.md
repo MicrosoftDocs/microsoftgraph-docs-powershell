@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property policy for informationProtection
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgInformationProtectionPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgInformationProtectionPolicy?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```
@@ -112,3 +115,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Remove-MgInformationProtectionPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgInformationProtectionPolicy?view=graph-powershell-v1.0)

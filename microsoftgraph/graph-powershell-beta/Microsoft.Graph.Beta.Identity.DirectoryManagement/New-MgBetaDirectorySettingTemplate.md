@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Add new entity to directorySettingTemplates
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDirectorySettingTemplate](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectorySettingTemplate?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -226,3 +229,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String>]`: Type of the setting. Read-only.
 
 ## RELATED LINKS
+[New-MgDirectorySettingTemplate](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectorySettingTemplate?view=graph-powershell-v1.0)

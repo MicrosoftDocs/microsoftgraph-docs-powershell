@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to roleAssignmentApprovals for roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgRoleManagementDirectoryRoleAssignmentApproval](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/New-MgRoleManagementDirectoryRoleAssignmentApproval?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -173,3 +176,4 @@ STEPS <IMicrosoftGraphApprovalStep\[]>: .
   - `[Status <String>]`: The step status. Possible values: InProgress, Initializing, Completed, Expired. Read-only.
 
 ## RELATED LINKS
+[New-MgRoleManagementDirectoryRoleAssignmentApproval](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/New-MgRoleManagementDirectoryRoleAssignmentApproval?view=graph-powershell-v1.0)

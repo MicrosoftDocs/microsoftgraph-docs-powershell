@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of the default branding object specified by the organizationalBranding resource.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaOrganizationBranding](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaOrganizationBranding?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -436,3 +439,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
 ## RELATED LINKS
+[Update-MgBetaBetaOrganizationBranding](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaOrganizationBranding?view=graph-powershell-beta)

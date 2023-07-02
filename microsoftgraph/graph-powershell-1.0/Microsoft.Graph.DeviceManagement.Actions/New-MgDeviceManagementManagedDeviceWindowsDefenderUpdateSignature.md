@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action windowsDefenderUpdateSignatures
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBetaDeviceManagementManagedDeviceWindowsDefenderUpdateSignature](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/New-MgBetaDeviceManagementManagedDeviceWindowsDefenderUpdateSignature?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Update (Default)
@@ -152,3 +155,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
+[New-MgBetaBetaDeviceManagementManagedDeviceWindowsDefenderUpdateSignature](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/New-MgBetaDeviceManagementManagedDeviceWindowsDefenderUpdateSignature?view=graph-powershell-beta)

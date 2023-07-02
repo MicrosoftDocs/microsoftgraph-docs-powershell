@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The collection of Windows Defender Application Control Supplemental Policies.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementWdacSupplementalPolicy](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementWdacSupplementalPolicy?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -318,3 +321,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
+[Get-MgDeviceAppManagementWdacSupplementalPolicy](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementWdacSupplementalPolicy?view=graph-powershell-v1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the settings in a microsoftApplicationDataAccessSettings object that specify access from Microsoft applications to Microsoft 365 user data in an organization.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgOrganizationSettingMicrosoftApplicationDataAccess](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgOrganizationSettingMicrosoftApplicationDataAccess?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -266,3 +269,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Update-MgOrganizationSettingMicrosoftApplicationDataAccess](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgOrganizationSettingMicrosoftApplicationDataAccess?view=graph-powershell-v1.0)

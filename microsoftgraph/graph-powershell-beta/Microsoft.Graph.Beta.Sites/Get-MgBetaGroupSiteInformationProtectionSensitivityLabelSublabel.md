@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get sublabels from groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteInformationProtectionSensitivityLabelSublabel](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteInformationProtectionSensitivityLabelSublabel?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -348,3 +351,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgGroupSiteInformationProtectionSensitivityLabelSublabel](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteInformationProtectionSensitivityLabelSublabel?view=graph-powershell-v1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete the user synchronization policy for a partner-specific configuration.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -210,3 +213,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Remove-MgBetaBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization?view=graph-powershell-beta)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The list of assignments for this profile.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfileAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Get-MgDeviceManagementAppleUserInitiatedEnrollmentProfileAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -258,6 +261,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 Please use Get-Help -Online.
 
 ## RELATED LINKS
+[Get-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfileAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Get-MgDeviceManagementAppleUserInitiatedEnrollmentProfileAssignment?view=graph-powershell-beta)
 
 [https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/get-mgdevicemanagementappleuserinitiatedenrollmentprofileassignment](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/get-mgdevicemanagementappleuserinitiatedenrollmentprofileassignment)
 

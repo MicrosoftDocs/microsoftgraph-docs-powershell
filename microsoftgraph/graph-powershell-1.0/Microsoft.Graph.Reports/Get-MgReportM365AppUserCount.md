@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getM365AppUserCounts
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaReportM365AppUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportM365AppUserCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -142,3 +145,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: Usage: userId='{userId}'
 
 ## RELATED LINKS
+[Get-MgBetaBetaReportM365AppUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportM365AppUserCount?view=graph-powershell-beta)

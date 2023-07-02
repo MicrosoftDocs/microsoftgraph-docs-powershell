@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get appliesTo from policies
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaPolicyHomeRealmDiscoveryPolicyApplyTo](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyHomeRealmDiscoveryPolicyApplyTo?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -321,3 +324,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Get-MgBetaBetaPolicyHomeRealmDiscoveryPolicyApplyTo](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyHomeRealmDiscoveryPolicyApplyTo?view=graph-powershell-beta)

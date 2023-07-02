@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The list of directory objects associated with the recommendation.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryRecommendationImpactedResource](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryRecommendationImpactedResource?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -306,3 +309,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgDirectoryRecommendationImpactedResource](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryRecommendationImpactedResource?view=graph-powershell-v1.0)

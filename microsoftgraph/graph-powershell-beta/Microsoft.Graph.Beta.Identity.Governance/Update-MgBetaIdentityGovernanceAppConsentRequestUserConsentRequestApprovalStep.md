@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Apply approve or deny decision on an approvalStep object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStep](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStep?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -455,5 +458,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Id <String>]`: The identifier of the identity. This property is read-only.
 
 ## RELATED LINKS
+[Update-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStep](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStep?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStep](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStep?view=graph-powershell-v1.0)

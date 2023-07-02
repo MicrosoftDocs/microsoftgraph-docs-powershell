@@ -12,6 +12,9 @@ Retrieve a single chat (without its messages).
 This method supports federation.
 To access a chat, at least one chat member must belong to the tenant the request initiated from.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaUserChat](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserChat?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -298,3 +301,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgBetaBetaUserChat](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserChat?view=graph-powershell-beta)

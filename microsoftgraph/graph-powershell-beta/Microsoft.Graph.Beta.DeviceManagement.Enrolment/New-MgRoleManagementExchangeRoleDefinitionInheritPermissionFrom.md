@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to inheritsPermissionsFrom for roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgRoleManagementExchangeRoleDefinitionInheritPermissionFrom](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/New-MgRoleManagementExchangeRoleDefinitionInheritPermissionFrom?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -427,3 +430,4 @@ ROLEPERMISSIONS <IMicrosoftGraphUnifiedRolePermission\[]>: List of permissions i
   - `[ExcludedResourceActions <String[]>]`: Set of tasks that may not be performed on a resource. Not yet supported.
 
 ## RELATED LINKS
+[New-MgRoleManagementExchangeRoleDefinitionInheritPermissionFrom](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/New-MgRoleManagementExchangeRoleDefinitionInheritPermissionFrom?view=graph-powershell-v1.0)

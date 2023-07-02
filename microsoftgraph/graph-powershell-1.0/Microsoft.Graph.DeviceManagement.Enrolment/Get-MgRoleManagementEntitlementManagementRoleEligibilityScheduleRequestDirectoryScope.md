@@ -12,6 +12,9 @@ The directory object that is the scope of the role eligibility.
 Read-only.
 Supports $expand.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleRequestDirectoryScope](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestDirectoryScope?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -154,3 +157,4 @@ INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleRequestDirectoryScope](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestDirectoryScope?view=graph-powershell-beta)

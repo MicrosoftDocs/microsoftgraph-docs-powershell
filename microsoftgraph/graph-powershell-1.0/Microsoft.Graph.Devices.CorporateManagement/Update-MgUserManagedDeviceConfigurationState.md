@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property deviceConfigurationStates in users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaUserManagedDeviceConfigurationState](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaUserManagedDeviceConfigurationState?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -388,3 +391,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserPrincipalName <String>]`: UserPrincipalName.
 
 ## RELATED LINKS
+[Update-MgBetaBetaUserManagedDeviceConfigurationState](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaUserManagedDeviceConfigurationState?view=graph-powershell-beta)

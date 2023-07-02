@@ -11,6 +11,9 @@ schema: 2.0.0
 Create a new custodian object.
 After the custodian object is created, you will need to create the custodian's userSource to reference their mailbox and OneDrive for Business site.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgComplianceEdiscoveryCaseCustodian](/powershell/module/Microsoft.Graph.Compliance/New-MgComplianceEdiscoveryCaseCustodian?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -14562,5 +14565,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[SiteWebUrl <String>]`: The URL of the user's OneDrive for Business site. Read-only.
 
 ## RELATED LINKS
+[New-MgComplianceEdiscoveryCaseCustodian](/powershell/module/Microsoft.Graph.Compliance/New-MgComplianceEdiscoveryCaseCustodian?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgComplianceEdiscoveryCaseCustodian](/powershell/module/Microsoft.Graph.Compliance/New-MgComplianceEdiscoveryCaseCustodian?view=graph-powershell-v1.0)

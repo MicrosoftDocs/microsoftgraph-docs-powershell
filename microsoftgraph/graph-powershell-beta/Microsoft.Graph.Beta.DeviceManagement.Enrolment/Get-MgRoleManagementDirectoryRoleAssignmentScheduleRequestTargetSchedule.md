@@ -11,6 +11,9 @@ schema: 2.0.0
 The schedule for an eligible role assignment that is referenced through the targetScheduleId property.
 Supports $expand.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestTargetSchedule](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestTargetSchedule?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -152,3 +155,4 @@ INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestTargetSchedule](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestTargetSchedule?view=graph-powershell-v1.0)

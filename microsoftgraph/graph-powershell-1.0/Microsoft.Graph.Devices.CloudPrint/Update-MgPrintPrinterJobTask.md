@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property tasks in print
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaPrintPrinterJobTask](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgBetaPrintPrinterJobTask?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -374,3 +377,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Event <String>]`: printEvent
 
 ## RELATED LINKS
+[Update-MgBetaBetaPrintPrinterJobTask](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgBetaPrintPrinterJobTask?view=graph-powershell-beta)

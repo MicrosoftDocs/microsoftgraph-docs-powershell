@@ -11,6 +11,9 @@ schema: 2.0.0
 Remove a member from a group via the **members** navigation property.
 You can't remove a member from groups with dynamic memberships.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaGroupMemberByRef](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupMemberByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -218,3 +221,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+[Remove-MgBetaBetaGroupMemberByRef](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupMemberByRef?view=graph-powershell-beta)

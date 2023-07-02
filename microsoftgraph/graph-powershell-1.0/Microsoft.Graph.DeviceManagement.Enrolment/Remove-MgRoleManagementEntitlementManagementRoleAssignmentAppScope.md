@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property appScope for roleManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaRoleManagementEntitlementManagementRoleAssignmentAppScope](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Remove-MgRoleManagementEntitlementManagementRoleAssignmentAppScope?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -180,3 +183,4 @@ INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[Remove-MgBetaRoleManagementEntitlementManagementRoleAssignmentAppScope](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Remove-MgRoleManagementEntitlementManagementRoleAssignmentAppScope?view=graph-powershell-beta)

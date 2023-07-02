@@ -11,6 +11,9 @@ schema: 2.0.0
 As a reviewer of an access review, record a decision for an accessReviewInstanceDecisionItem that is assigned to you and that matches the principal or resource IDs specified.
 If no IDs are specified, the decisions will apply to every **accessReviewInstanceDecisionItem** for which you are the reviewer.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgRecordIdentityGovernanceAccessReviewDecisionInstanceStageDecision](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgRecordIdentityGovernanceAccessReviewDecisionInstanceStageDecision?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### RecordExpanded (Default)
@@ -375,3 +378,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Invoke-MgRecordIdentityGovernanceAccessReviewDecisionInstanceStageDecision](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgRecordIdentityGovernanceAccessReviewDecisionInstanceStageDecision?view=graph-powershell-v1.0)

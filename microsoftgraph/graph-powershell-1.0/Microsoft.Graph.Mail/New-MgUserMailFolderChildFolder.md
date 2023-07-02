@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new mailSearchFolder in the specified user's mailbox.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBetaUserMailFolderChildFolder](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMailFolderChildFolder?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -877,6 +880,7 @@ Read-only.
   \[Value \<String\>\]: A property value.
 
 ## RELATED LINKS
+[New-MgBetaBetaUserMailFolderChildFolder](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMailFolderChildFolder?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfolderchildfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfolderchildfolder)
 

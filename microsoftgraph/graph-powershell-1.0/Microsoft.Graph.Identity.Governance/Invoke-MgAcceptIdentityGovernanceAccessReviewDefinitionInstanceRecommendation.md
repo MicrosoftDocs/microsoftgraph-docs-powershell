@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Allows the acceptance of recommendations on all accessReviewInstanceDecisionItem objects that have not been reviewed on an accessReviewInstance object for which the calling user is a reviewer.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaBetaAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Accept (Default)
@@ -189,3 +192,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgBetaBetaAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation?view=graph-powershell-beta)

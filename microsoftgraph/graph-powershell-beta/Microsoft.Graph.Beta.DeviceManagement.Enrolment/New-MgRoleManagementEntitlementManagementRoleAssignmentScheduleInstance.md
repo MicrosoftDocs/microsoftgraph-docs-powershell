@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to roleAssignmentScheduleInstances for roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/New-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -514,8 +517,11 @@ ROLEDEFINITION `<IMicrosoftGraphUnifiedRoleDefinition>`: unifiedRoleDefinition
   - `[Version <String>]`: Indicates version of the unifiedRoleDefinition. Read-only when isBuiltIn is true.
 
 ## RELATED LINKS
+[New-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/New-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/New-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance?view=graph-powershell-v1.0)
 
 
 ## RELATED LINKS
+[New-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/New-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance?view=graph-powershell-v1.0)

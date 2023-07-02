@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of an ediscoveryCase object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityCaseEdiscoveryCase?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -6114,5 +6117,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Parent <IMicrosoftGraphSecurityEdiscoveryReviewTag>]`: ediscoveryReviewTag
 
 ## RELATED LINKS
+[Update-MgBetaBetaSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityCaseEdiscoveryCase?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaBetaSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityCaseEdiscoveryCase?view=graph-powershell-beta)

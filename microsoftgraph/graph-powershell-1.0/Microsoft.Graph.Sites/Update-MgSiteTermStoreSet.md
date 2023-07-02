@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of a set object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaSiteTermStoreSet](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteTermStoreSet?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -643,5 +646,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Set <IMicrosoftGraphTermStoreSet>]`: set
 
 ## RELATED LINKS
+[Update-MgBetaBetaSiteTermStoreSet](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteTermStoreSet?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaBetaSiteTermStoreSet](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteTermStoreSet?view=graph-powershell-beta)

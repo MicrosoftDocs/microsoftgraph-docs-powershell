@@ -11,6 +11,9 @@ schema: 2.0.0
 Reopen an eDiscovery case that was closed.
 For details, see Reopen a closed case.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgReopenComplianceEdiscoveryCase](/powershell/module/Microsoft.Graph.Compliance/Invoke-MgReopenComplianceEdiscoveryCase?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Reopen (Default)
@@ -151,3 +154,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
+[Invoke-MgReopenComplianceEdiscoveryCase](/powershell/module/Microsoft.Graph.Compliance/Invoke-MgReopenComplianceEdiscoveryCase?view=graph-powershell-v1.0)

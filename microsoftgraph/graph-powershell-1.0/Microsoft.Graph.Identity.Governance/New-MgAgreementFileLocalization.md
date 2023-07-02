@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to localizations for agreements
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBetaAgreementFileLocalization](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaAgreementFileLocalization?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -402,3 +405,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
 ## RELATED LINKS
+[New-MgBetaBetaAgreementFileLocalization](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaAgreementFileLocalization?view=graph-powershell-beta)

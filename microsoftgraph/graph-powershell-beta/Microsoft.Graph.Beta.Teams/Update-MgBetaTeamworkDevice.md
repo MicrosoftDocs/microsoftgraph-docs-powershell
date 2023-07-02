@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property devices in teamwork
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgTeamworkDevice](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamworkDevice?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -933,5 +936,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Status <String>]`: The current status of the async operation, for example, Queued, Scheduled, InProgress,  Successful, Cancelled, and Failed.
 
 ## RELATED LINKS
+[Update-MgTeamworkDevice](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamworkDevice?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgTeamworkDevice](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamworkDevice?view=graph-powershell-v1.0)

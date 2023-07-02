@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property deviceStatuses in deviceManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaDeviceManagementDeviceConfigurationDeviceStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementDeviceConfigurationDeviceStatus?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -345,3 +348,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionNetworkLearningSummary
 
 ## RELATED LINKS
+[Update-MgBetaBetaDeviceManagementDeviceConfigurationDeviceStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementDeviceConfigurationDeviceStatus?view=graph-powershell-beta)

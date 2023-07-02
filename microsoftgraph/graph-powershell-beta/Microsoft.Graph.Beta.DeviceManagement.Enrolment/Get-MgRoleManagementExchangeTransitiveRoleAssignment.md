@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Resource to grant access to users or groups that are transitive.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementExchangeTransitiveRoleAssignment](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Get-MgRoleManagementExchangeTransitiveRoleAssignment?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -276,3 +279,4 @@ INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[Get-MgRoleManagementExchangeTransitiveRoleAssignment](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Get-MgRoleManagementExchangeTransitiveRoleAssignment?view=graph-powershell-v1.0)

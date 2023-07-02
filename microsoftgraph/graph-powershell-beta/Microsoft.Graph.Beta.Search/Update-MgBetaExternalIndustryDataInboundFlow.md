@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of an inboundFlow object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgExternalIndustryDataInboundFlow](/powershell/module/Microsoft.Graph.Search/Update-MgExternalIndustryDataInboundFlow?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -419,5 +422,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[SortIndex <Int32?>]`: The ordering index to present the definitions within a type consistently in user interfaces.
 
 ## RELATED LINKS
+[Update-MgExternalIndustryDataInboundFlow](/powershell/module/Microsoft.Graph.Search/Update-MgExternalIndustryDataInboundFlow?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgExternalIndustryDataInboundFlow](/powershell/module/Microsoft.Graph.Search/Update-MgExternalIndustryDataInboundFlow?view=graph-powershell-v1.0)

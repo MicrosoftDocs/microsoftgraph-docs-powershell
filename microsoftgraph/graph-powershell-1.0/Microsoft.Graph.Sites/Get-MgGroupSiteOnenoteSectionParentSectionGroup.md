@@ -11,6 +11,9 @@ schema: 2.0.0
 The section group that contains the section.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaGroupSiteOnenoteSectionParentSectionGroup](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOnenoteSectionParentSectionGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -193,3 +196,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaBetaGroupSiteOnenoteSectionParentSectionGroup](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOnenoteSectionParentSectionGroup?view=graph-powershell-beta)

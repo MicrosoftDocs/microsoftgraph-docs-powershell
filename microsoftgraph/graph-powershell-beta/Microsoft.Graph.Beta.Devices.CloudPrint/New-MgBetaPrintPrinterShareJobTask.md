@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to tasks for print
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgPrintPrinterShareJobTask](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintPrinterShareJobTask?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -359,3 +362,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Event <String>]`: printEvent
 
 ## RELATED LINKS
+[New-MgPrintPrinterShareJobTask](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintPrinterShareJobTask?view=graph-powershell-v1.0)

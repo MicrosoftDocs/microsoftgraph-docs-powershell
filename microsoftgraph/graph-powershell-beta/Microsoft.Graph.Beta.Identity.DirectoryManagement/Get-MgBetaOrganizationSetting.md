@@ -14,6 +14,9 @@ Depending on the type of insights, you can get their settings by using list item
 This operation does not return microsoftApplicationDataAccessSettings.
 To get microsoftApplicationDataAccessSettings, use list microsoftApplicationDataAccessSettings.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgOrganizationSetting](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgOrganizationSetting?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -163,3 +166,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgOrganizationSetting](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgOrganizationSetting?view=graph-powershell-v1.0)

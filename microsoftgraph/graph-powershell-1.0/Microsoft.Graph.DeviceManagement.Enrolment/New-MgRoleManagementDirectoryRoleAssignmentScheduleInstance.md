@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to roleAssignmentScheduleInstances for roleManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstance](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/New-MgRoleManagementDirectoryRoleAssignmentScheduleInstance?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -513,8 +516,11 @@ ROLEDEFINITION `<IMicrosoftGraphUnifiedRoleDefinition1>`: unifiedRoleDefinition
   - `[Version <String>]`: Indicates version of the role definition. Read-only when isBuiltIn is true.
 
 ## RELATED LINKS
+[New-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstance](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/New-MgRoleManagementDirectoryRoleAssignmentScheduleInstance?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[New-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstance](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/New-MgRoleManagementDirectoryRoleAssignmentScheduleInstance?view=graph-powershell-beta)
 
 
 ## RELATED LINKS
+[New-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstance](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/New-MgRoleManagementDirectoryRoleAssignmentScheduleInstance?view=graph-powershell-beta)

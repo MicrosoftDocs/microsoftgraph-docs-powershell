@@ -12,6 +12,9 @@ The user's activities across devices.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaUserActivity](/powershell/module/Microsoft.Graph.Beta.CrossDeviceExperiences/Get-MgBetaUserActivity?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -277,3 +280,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaBetaUserActivity](/powershell/module/Microsoft.Graph.Beta.CrossDeviceExperiences/Get-MgBetaUserActivity?view=graph-powershell-beta)

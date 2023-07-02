@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The list of group assignments for the profile.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementWindowAutopilotDeploymentProfileAssignment](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Get-MgDeviceManagementWindowAutopilotDeploymentProfileAssignment?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -293,3 +296,4 @@ INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[Get-MgDeviceManagementWindowAutopilotDeploymentProfileAssignment](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Get-MgDeviceManagementWindowAutopilotDeploymentProfileAssignment?view=graph-powershell-v1.0)

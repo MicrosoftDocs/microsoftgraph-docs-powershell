@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property contacts for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaUserContactFolderContact](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Remove-MgBetaUserContactFolderContact?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -193,3 +196,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaBetaUserContactFolderContact](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Remove-MgBetaUserContactFolderContact?view=graph-powershell-beta)

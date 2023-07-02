@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function isPublished
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Test-MgBetaBetaDriveListContentTypePublished](/powershell/module/Microsoft.Graph.Beta.Files/Test-MgBetaDriveListContentTypePublished?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Is (Default)
@@ -134,3 +137,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Test-MgBetaBetaDriveListContentTypePublished](/powershell/module/Microsoft.Graph.Beta.Files/Test-MgBetaDriveListContentTypePublished?view=graph-powershell-beta)

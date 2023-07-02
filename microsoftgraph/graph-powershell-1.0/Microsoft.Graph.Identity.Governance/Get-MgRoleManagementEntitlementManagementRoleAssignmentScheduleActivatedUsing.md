@@ -12,6 +12,9 @@ If the request is from an eligible administrator to activate a role, this parame
 Otherwise, it is null.
 Supports $expand.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaRoleManagementEntitlementManagementRoleAssignmentScheduleActivatedUsing](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleActivatedUsing?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -168,3 +171,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaBetaRoleManagementEntitlementManagementRoleAssignmentScheduleActivatedUsing](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleActivatedUsing?view=graph-powershell-beta)

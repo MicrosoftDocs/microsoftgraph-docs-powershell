@@ -12,6 +12,9 @@ Retrieve the properties and relationships of a serviceUpdateMessage object.
 This operation retrieves a specified service update message for the tenant.
 The operation returns an error if the message does not exist for the tenant.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Get-MgServiceAnnouncementMessage?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -256,3 +259,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ServiceUpdateMessageId <String>]`: The unique identifier of serviceUpdateMessage
 
 ## RELATED LINKS
+[Get-MgServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Get-MgServiceAnnouncementMessage?view=graph-powershell-v1.0)

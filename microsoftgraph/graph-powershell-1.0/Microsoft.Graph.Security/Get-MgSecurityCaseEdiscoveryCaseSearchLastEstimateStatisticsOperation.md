@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the last  ediscoveryEstimateOperation objects and their properties.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -157,3 +160,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
+[Get-MgBetaBetaSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation?view=graph-powershell-beta)

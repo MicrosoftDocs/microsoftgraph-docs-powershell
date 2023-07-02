@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property me for education
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaEducationMe](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationMe?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
@@ -111,3 +114,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Remove-MgBetaBetaEducationMe](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationMe?view=graph-powershell-beta)

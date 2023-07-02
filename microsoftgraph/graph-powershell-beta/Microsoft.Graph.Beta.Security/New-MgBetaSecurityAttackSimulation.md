@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create an attack simulation campaign for a tenant.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityAttackSimulation](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAttackSimulation?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -683,5 +686,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[TrainingUpdatedProperties <IMicrosoftGraphUserTrainingContentEventInfo>]`: userTrainingContentEventInfo
 
 ## RELATED LINKS
+[New-MgSecurityAttackSimulation](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAttackSimulation?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgSecurityAttackSimulation](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAttackSimulation?view=graph-powershell-v1.0)

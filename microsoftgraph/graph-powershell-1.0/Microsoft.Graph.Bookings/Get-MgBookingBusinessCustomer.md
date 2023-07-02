@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the properties and relationships of a bookingCustomer object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaBookingBusinessCustomer](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusinessCustomer?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -278,3 +281,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
 
 ## RELATED LINKS
+[Get-MgBetaBetaBookingBusinessCustomer](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusinessCustomer?view=graph-powershell-beta)

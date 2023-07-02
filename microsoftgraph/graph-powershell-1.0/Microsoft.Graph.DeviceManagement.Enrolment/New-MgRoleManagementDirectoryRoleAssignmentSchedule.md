@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to roleAssignmentSchedules for roleManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaRoleManagementDirectoryRoleAssignmentSchedule](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/New-MgRoleManagementDirectoryRoleAssignmentSchedule?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -608,8 +611,11 @@ SCHEDULEINFO `<IMicrosoftGraphRequestSchedule>`: requestSchedule
   - `[StartDateTime <DateTime?>]`: When the  eligible or active assignment becomes active.
 
 ## RELATED LINKS
+[New-MgBetaRoleManagementDirectoryRoleAssignmentSchedule](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/New-MgRoleManagementDirectoryRoleAssignmentSchedule?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[New-MgBetaRoleManagementDirectoryRoleAssignmentSchedule](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/New-MgRoleManagementDirectoryRoleAssignmentSchedule?view=graph-powershell-beta)
 
 
 ## RELATED LINKS
+[New-MgBetaRoleManagementDirectoryRoleAssignmentSchedule](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/New-MgRoleManagementDirectoryRoleAssignmentSchedule?view=graph-powershell-beta)

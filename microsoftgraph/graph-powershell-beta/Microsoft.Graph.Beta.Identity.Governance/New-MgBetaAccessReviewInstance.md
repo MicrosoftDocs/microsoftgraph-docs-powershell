@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to instances for accessReviews
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgAccessReviewInstance](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgAccessReviewInstance?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -706,5 +709,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[RemindersEnabled <Boolean?>]`: Indicates whether sending reminder emails to reviewers is enabled.
 
 ## RELATED LINKS
+[New-MgAccessReviewInstance](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgAccessReviewInstance?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgAccessReviewInstance](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgAccessReviewInstance?view=graph-powershell-v1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action scheduleActionsForRules
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaBetaScheduleDeviceManagementDeviceCompliancePolicyActionForRule](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Invoke-MgBetaScheduleDeviceManagementDeviceCompliancePolicyActionForRule?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ScheduleExpanded (Default)
@@ -241,3 +244,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
+[Invoke-MgBetaBetaScheduleDeviceManagementDeviceCompliancePolicyActionForRule](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Invoke-MgBetaScheduleDeviceManagementDeviceCompliancePolicyActionForRule?view=graph-powershell-beta)

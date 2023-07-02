@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Windows information protection device registrations that are not MDM enrolled.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementWindowsInformationProtectionDeviceRegistration](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementWindowsInformationProtectionDeviceRegistration?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -319,3 +322,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
+[Get-MgDeviceAppManagementWindowsInformationProtectionDeviceRegistration](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementWindowsInformationProtectionDeviceRegistration?view=graph-powershell-v1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Associate a published [content type][contentType] present in a content type hub with a list of hub sites.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Join-MgBetaBetaGroupSiteListContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Beta.Groups/Join-MgBetaGroupSiteListContentTypeWithHubSite?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AssociateExpanded (Default)
@@ -306,3 +309,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+[Join-MgBetaBetaGroupSiteListContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Beta.Groups/Join-MgBetaGroupSiteListContentTypeWithHubSite?view=graph-powershell-beta)

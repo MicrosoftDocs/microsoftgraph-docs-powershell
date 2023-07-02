@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgWindowsUpdatesResourceConnectionCount](/powershell/module/Microsoft.Graph.WindowsUpdates/Get-MgWindowsUpdatesResourceConnectionCount?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```
@@ -78,3 +81,4 @@ ALIASES
 Get-MgBetaWuResourceConnectionCount
 
 ## RELATED LINKS
+[Get-MgWindowsUpdatesResourceConnectionCount](/powershell/module/Microsoft.Graph.WindowsUpdates/Get-MgWindowsUpdatesResourceConnectionCount?view=graph-powershell-v1.0)

@@ -13,6 +13,9 @@ To read a directory role or update its members, it must first be activated in th
 The Company Administrators and the implicit user directory roles (**User**, **Guest User**, and **Restricted Guest User** roles) are activated by default.
 To access and assign members to other directory roles, you must first activate it with its corresponding directory role template ID.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDirectoryRole](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryRole?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -284,3 +287,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[Id <String>]`: The identifier of the identity. This property is read-only.
 
 ## RELATED LINKS
+[New-MgDirectoryRole](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryRole?view=graph-powershell-v1.0)

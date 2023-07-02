@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update compliance
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaCompliance](/powershell/module/Microsoft.Graph.Beta.Compliance/Update-MgBetaCompliance?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -118,3 +121,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Update-MgBetaBetaCompliance](/powershell/module/Microsoft.Graph.Beta.Compliance/Update-MgBetaCompliance?view=graph-powershell-beta)

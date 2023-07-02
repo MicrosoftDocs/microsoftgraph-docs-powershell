@@ -12,6 +12,9 @@ The roleDefinition the assignment is for.
 Supports $expand.
 roleDefinition.Id will be auto expanded.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementDirectoryRoleAssignmentRoleDefinition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Get-MgRoleManagementDirectoryRoleAssignmentRoleDefinition?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -152,3 +155,4 @@ INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[Get-MgBetaRoleManagementDirectoryRoleAssignmentRoleDefinition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Get-MgRoleManagementDirectoryRoleAssignmentRoleDefinition?view=graph-powershell-beta)

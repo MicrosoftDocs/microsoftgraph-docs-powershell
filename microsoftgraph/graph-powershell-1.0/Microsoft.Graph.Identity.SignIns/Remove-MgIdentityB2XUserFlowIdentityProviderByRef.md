@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete ref of navigation property userFlowIdentityProviders for identity
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaIdentityB2XUserFlowIdentityProviderByRef](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityB2XUserFlowIdentityProviderByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -244,3 +247,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Remove-MgBetaBetaIdentityB2XUserFlowIdentityProviderByRef](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityB2XUserFlowIdentityProviderByRef?view=graph-powershell-beta)

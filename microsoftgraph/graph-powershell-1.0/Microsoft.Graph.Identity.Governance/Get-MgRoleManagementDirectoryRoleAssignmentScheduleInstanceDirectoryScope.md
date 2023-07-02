@@ -11,6 +11,9 @@ schema: 2.0.0
 The directory object that is the scope of the assignment or role eligibility.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaRoleManagementDirectoryRoleAssignmentScheduleInstanceDirectoryScope](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstanceDirectoryScope?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -166,3 +169,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaBetaRoleManagementDirectoryRoleAssignmentScheduleInstanceDirectoryScope](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstanceDirectoryScope?view=graph-powershell-beta)

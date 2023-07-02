@@ -13,6 +13,9 @@ After the access review stage stops, the stage **status** will be `Completed` an
 If there are subsequent stages that depend on the completed stage, the next stage will be created.
 The accessReviewInstanceDecisionItem objects will always reflect the last decisions recorded across all stages at that given time, regardless of the status of the stages.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Stop-MgBetaBetaIdentityGovernanceAccessReviewDefinitionInstanceStage](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Stop-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Stop (Default)
@@ -211,3 +214,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Stop-MgBetaBetaIdentityGovernanceAccessReviewDefinitionInstanceStage](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Stop-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStage?view=graph-powershell-beta)

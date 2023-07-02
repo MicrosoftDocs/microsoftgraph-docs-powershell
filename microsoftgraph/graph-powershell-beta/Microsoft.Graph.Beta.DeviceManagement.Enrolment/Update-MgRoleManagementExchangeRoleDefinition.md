@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property roleDefinitions in roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgRoleManagementExchangeRoleDefinition](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Update-MgRoleManagementExchangeRoleDefinition?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -441,3 +444,4 @@ ROLEPERMISSIONS <IMicrosoftGraphUnifiedRolePermission\[]>: List of permissions i
   - `[ExcludedResourceActions <String[]>]`: Set of tasks that may not be performed on a resource. Not yet supported.
 
 ## RELATED LINKS
+[Update-MgRoleManagementExchangeRoleDefinition](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Update-MgRoleManagementExchangeRoleDefinition?view=graph-powershell-v1.0)

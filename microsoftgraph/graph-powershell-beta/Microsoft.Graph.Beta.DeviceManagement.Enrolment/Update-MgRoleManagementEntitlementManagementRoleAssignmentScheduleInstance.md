@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property roleAssignmentScheduleInstances in roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Update-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -610,8 +613,11 @@ ROLEDEFINITION `<IMicrosoftGraphUnifiedRoleDefinition>`: unifiedRoleDefinition
   - `[Version <String>]`: Indicates version of the unifiedRoleDefinition. Read-only when isBuiltIn is true.
 
 ## RELATED LINKS
+[Update-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Update-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Update-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance?view=graph-powershell-v1.0)
 
 
 ## RELATED LINKS
+[Update-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Update-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance?view=graph-powershell-v1.0)

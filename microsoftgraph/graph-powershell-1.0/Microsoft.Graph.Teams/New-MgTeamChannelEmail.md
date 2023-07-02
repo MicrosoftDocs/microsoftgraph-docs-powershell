@@ -13,6 +13,9 @@ Microsoft Teams doesn't automatically provision an email address for a **channel
 To have Teams provision an email address, you can call **provisionEmail**, or through the Teams user interface, select **Get email address**, which triggers Teams to generate an email address if it has not already provisioned one.
 To remove the email address of a **channel**, use the removeEmail method.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBetaTeamChannelEmail](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamChannelEmail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Provision (Default)
@@ -170,3 +173,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[New-MgBetaBetaTeamChannelEmail](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamChannelEmail?view=graph-powershell-beta)

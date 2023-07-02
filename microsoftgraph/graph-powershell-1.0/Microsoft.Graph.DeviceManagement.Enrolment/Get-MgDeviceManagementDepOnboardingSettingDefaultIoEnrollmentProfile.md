@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Default iOS Enrollment Profile
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDepOnboardingSettingDefaultIoEnrollmentProfile](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Get-MgDeviceManagementDepOnboardingSettingDefaultIoEnrollmentProfile?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -113,6 +116,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 Please use Get-Help -Online.
 
 ## RELATED LINKS
+[Get-MgBetaDeviceManagementDepOnboardingSettingDefaultIoEnrollmentProfile](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Get-MgDeviceManagementDepOnboardingSettingDefaultIoEnrollmentProfile?view=graph-powershell-beta)
 
 [https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/get-mgdevicemanagementdeponboardingsettingdefaultioenrollmentprofile](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/get-mgdevicemanagementdeponboardingsettingdefaultioenrollmentprofile)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a DriveItem by using its ID or path.\nNote that deleting items using this method will move the items to the recycle bin instead of permanently deleting the item.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -197,3 +200,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaBetaDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveItem?view=graph-powershell-beta)

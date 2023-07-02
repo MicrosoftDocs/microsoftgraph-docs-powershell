@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to userExperienceAnalyticsBatteryHealthDeviceAppImpact for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementUserExperienceAnalyticBatteryHealthDeviceAppImpact](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticBatteryHealthDeviceAppImpact?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -250,3 +253,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[IsForegroundApp <Boolean?>]`: true if the user had active interaction with the app.
 
 ## RELATED LINKS
+[New-MgDeviceManagementUserExperienceAnalyticBatteryHealthDeviceAppImpact](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticBatteryHealthDeviceAppImpact?view=graph-powershell-v1.0)

@@ -11,6 +11,9 @@ schema: 2.0.0
 Collection of pages with the default content to display in a user flow for a specified language.
 This collection does not allow any kind of modification.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityB2XUserFlowLanguageDefaultPage](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2XUserFlowLanguageDefaultPage?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -364,3 +367,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Get-MgIdentityB2XUserFlowLanguageDefaultPage](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2XUserFlowLanguageDefaultPage?view=graph-powershell-v1.0)

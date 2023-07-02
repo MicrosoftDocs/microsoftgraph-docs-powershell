@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Schedules for role eligibility operations.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementDirectoryRoleEligibilitySchedule](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Get-MgRoleManagementDirectoryRoleEligibilitySchedule?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -303,3 +306,4 @@ INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[Get-MgBetaRoleManagementDirectoryRoleEligibilitySchedule](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Get-MgRoleManagementDirectoryRoleEligibilitySchedule?view=graph-powershell-beta)

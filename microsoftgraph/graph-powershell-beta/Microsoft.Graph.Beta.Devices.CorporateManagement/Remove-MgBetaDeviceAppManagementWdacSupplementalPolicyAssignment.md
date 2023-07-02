@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property assignments for deviceAppManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceAppManagementWdacSupplementalPolicyAssignment](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Remove-MgDeviceAppManagementWdacSupplementalPolicyAssignment?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -238,3 +241,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
+[Remove-MgDeviceAppManagementWdacSupplementalPolicyAssignment](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Remove-MgDeviceAppManagementWdacSupplementalPolicyAssignment?view=graph-powershell-v1.0)

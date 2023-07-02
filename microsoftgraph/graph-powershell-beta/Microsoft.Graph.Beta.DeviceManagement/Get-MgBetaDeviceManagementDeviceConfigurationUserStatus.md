@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Device configuration installation status by user.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementDeviceConfigurationUserStatus](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceConfigurationUserStatus?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -401,5 +404,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
 ## RELATED LINKS
+[Get-MgDeviceManagementDeviceConfigurationUserStatus](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceConfigurationUserStatus?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Get-MgDeviceManagementDeviceConfigurationUserStatus](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceConfigurationUserStatus?view=graph-powershell-v1.0)

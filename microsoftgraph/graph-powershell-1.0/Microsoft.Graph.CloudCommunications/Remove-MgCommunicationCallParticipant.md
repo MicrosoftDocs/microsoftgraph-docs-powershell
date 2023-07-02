@@ -14,6 +14,9 @@ This action can be done before or after the participant answers the call.
 When an active caller is removed, they are immediately dropped from the call with no pre- or post-removal notification.
 When an invited participant is removed, any outstanding add participant request is canceled.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaCommunicationCallParticipant](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Remove-MgBetaCommunicationCallParticipant?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -193,3 +196,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaBetaCommunicationCallParticipant](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Remove-MgBetaCommunicationCallParticipant?view=graph-powershell-beta)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 List of run states for the device health script across all devices
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementDeviceHealthScriptDeviceRunState](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceHealthScriptDeviceRunState?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -404,5 +407,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
 ## RELATED LINKS
+[Get-MgDeviceManagementDeviceHealthScriptDeviceRunState](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceHealthScriptDeviceRunState?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Get-MgDeviceManagementDeviceHealthScriptDeviceRunState](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceHealthScriptDeviceRunState?view=graph-powershell-v1.0)

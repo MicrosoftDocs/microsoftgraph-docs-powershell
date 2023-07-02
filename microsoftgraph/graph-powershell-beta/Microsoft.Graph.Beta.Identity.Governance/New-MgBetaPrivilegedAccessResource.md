@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to resources for privilegedAccess
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgPrivilegedAccessResource](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgPrivilegedAccessResource?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -973,5 +976,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserMemberSettings <IMicrosoftGraphGovernanceRuleSetting[]>]`: The rule settings that are evaluated when a user tries to activate his role assignment.
 
 ## RELATED LINKS
+[New-MgPrivilegedAccessResource](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgPrivilegedAccessResource?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgPrivilegedAccessResource](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgPrivilegedAccessResource?view=graph-powershell-v1.0)

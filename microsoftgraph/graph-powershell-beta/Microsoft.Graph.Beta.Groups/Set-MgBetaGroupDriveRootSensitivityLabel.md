@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action assignSensitivityLabel
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgGroupDriveRootSensitivityLabel](/powershell/module/Microsoft.Graph.Groups/Set-MgGroupDriveRootSensitivityLabel?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### AssignExpanded (Default)
@@ -301,3 +304,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Set-MgGroupDriveRootSensitivityLabel](/powershell/module/Microsoft.Graph.Groups/Set-MgGroupDriveRootSensitivityLabel?view=graph-powershell-v1.0)

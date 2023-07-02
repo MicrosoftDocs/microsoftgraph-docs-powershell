@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new userAccountInformation object in a user's profile.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserProfileAccount](/powershell/module/Microsoft.Graph.People/New-MgUserProfileAccount?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -465,3 +468,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String[]>]`: 
 
 ## RELATED LINKS
+[New-MgUserProfileAccount](/powershell/module/Microsoft.Graph.People/New-MgUserProfileAccount?view=graph-powershell-v1.0)

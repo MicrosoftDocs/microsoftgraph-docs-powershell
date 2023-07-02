@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property roleGroups for external
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgExternalIndustryDataRoleGroup](/powershell/module/Microsoft.Graph.Search/Remove-MgExternalIndustryDataRoleGroup?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -172,3 +175,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
 
 ## RELATED LINKS
+[Remove-MgExternalIndustryDataRoleGroup](/powershell/module/Microsoft.Graph.Search/Remove-MgExternalIndustryDataRoleGroup?view=graph-powershell-v1.0)

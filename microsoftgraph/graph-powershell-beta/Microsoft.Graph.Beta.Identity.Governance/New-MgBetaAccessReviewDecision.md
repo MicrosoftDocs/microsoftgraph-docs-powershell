@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to decisions for accessReviews
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgAccessReviewDecision](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgAccessReviewDecision?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -471,5 +474,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
 
 ## RELATED LINKS
+[New-MgAccessReviewDecision](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgAccessReviewDecision?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgAccessReviewDecision](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgAccessReviewDecision?view=graph-powershell-v1.0)

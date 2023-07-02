@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property messages in admin
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Update-MgBetaServiceAnnouncementMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -506,3 +509,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[IsRead <Boolean?>]`: Indicates whether the user read the message.
 
 ## RELATED LINKS
+[Update-MgBetaBetaServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Update-MgBetaServiceAnnouncementMessage?view=graph-powershell-beta)

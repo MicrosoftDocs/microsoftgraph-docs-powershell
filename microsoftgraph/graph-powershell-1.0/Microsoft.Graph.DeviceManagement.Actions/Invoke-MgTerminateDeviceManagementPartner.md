@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action terminate
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaBetaTerminateDeviceManagementPartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Invoke-MgBetaTerminateDeviceManagementPartner?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Terminate (Default)
@@ -148,3 +151,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
+[Invoke-MgBetaBetaTerminateDeviceManagementPartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Invoke-MgBetaTerminateDeviceManagementPartner?view=graph-powershell-beta)

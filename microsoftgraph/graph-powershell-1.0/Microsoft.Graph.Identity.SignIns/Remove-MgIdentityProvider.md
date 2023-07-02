@@ -12,6 +12,9 @@ Delete an identity provider resource that is of the type specified by the **id**
 Among the types of providers derived from identityProviderBase, you can currently delete a socialIdentityProvider resource in Azure AD.
 In Azure AD B2C, this operation can currently delete a socialIdentityProvider, or an appleManagedIdentityProvider resource.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaIdentityProvider](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityProvider?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -210,3 +213,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Remove-MgBetaBetaIdentityProvider](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityProvider?view=graph-powershell-beta)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Another way to input protected apps through xml files
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -301,3 +304,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
 
 ## RELATED LINKS
+[Get-MgBetaBetaDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile?view=graph-powershell-beta)

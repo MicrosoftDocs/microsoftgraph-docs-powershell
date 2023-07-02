@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The embedded SIM activation code pools created by this account.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementEmbeddedSimActivationCodePool](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementEmbeddedSimActivationCodePool?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -389,5 +392,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
 ## RELATED LINKS
+[Get-MgDeviceManagementEmbeddedSimActivationCodePool](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementEmbeddedSimActivationCodePool?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Get-MgDeviceManagementEmbeddedSimActivationCodePool](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementEmbeddedSimActivationCodePool?view=graph-powershell-v1.0)

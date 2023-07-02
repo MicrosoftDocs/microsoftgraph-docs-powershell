@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get roleAssignmentApprovals from roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementDirectoryRoleAssignmentApproval](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Get-MgRoleManagementDirectoryRoleAssignmentApproval?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -276,3 +279,4 @@ INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[Get-MgRoleManagementDirectoryRoleAssignmentApproval](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Get-MgRoleManagementDirectoryRoleAssignmentApproval?view=graph-powershell-v1.0)

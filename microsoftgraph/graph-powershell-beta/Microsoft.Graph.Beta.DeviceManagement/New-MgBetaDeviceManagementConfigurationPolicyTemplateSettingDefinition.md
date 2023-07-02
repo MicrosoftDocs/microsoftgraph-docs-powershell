@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to settingDefinitions for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementConfigurationPolicyTemplateSettingDefinition](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementConfigurationPolicyTemplateSettingDefinition?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -681,5 +684,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[SettingDefinitionId <String>]`: Setting definition id that is being referred to a setting. Applicable for reusable setting.
 
 ## RELATED LINKS
+[New-MgDeviceManagementConfigurationPolicyTemplateSettingDefinition](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementConfigurationPolicyTemplateSettingDefinition?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgDeviceManagementConfigurationPolicyTemplateSettingDefinition](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementConfigurationPolicyTemplateSettingDefinition?view=graph-powershell-v1.0)

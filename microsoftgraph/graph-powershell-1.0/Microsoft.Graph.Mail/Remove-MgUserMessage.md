@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete eventMessage.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaUserMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Remove-MgBetaUserMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -172,6 +175,7 @@ INPUTOBJECT \<IMailIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaBetaUserMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Remove-MgBetaUserMessage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermessage)
 

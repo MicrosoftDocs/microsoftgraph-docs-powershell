@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property mobileAppConfigurations in deviceAppManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaDeviceAppManagementMobileAppConfiguration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementMobileAppConfiguration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -497,5 +500,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[SuccessCount <Int32?>]`: Number of succeeded Users
 
 ## RELATED LINKS
+[Update-MgBetaBetaDeviceAppManagementMobileAppConfiguration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementMobileAppConfiguration?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaBetaDeviceAppManagementMobileAppConfiguration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementMobileAppConfiguration?view=graph-powershell-beta)

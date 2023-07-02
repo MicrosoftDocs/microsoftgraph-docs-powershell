@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to hostedContents for chats
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBetaChatMessageHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaChatMessageHostedContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -275,3 +278,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[New-MgBetaBetaChatMessageHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaChatMessageHostedContent?view=graph-powershell-beta)

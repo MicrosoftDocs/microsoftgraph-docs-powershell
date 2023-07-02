@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property policyStatusDetails for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceManagementAutopilotEventPolicyStatusDetail](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Remove-MgDeviceManagementAutopilotEventPolicyStatusDetail?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -195,3 +198,4 @@ INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[Remove-MgDeviceManagementAutopilotEventPolicyStatusDetail](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Remove-MgDeviceManagementAutopilotEventPolicyStatusDetail?view=graph-powershell-v1.0)

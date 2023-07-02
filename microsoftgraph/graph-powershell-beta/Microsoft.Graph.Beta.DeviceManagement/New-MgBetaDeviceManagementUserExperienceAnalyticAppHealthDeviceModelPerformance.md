@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to userExperienceAnalyticsAppHealthDeviceModelPerformance for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -263,3 +266,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ModelAppHealthScore <Double?>]`: The app health score of the device model. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 ## RELATED LINKS
+[New-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance?view=graph-powershell-v1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function filterByCurrentUser
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaFilterRoleManagementEntitlementManagementRoleAssignmentApprovalByCurrentUser](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Invoke-MgFilterRoleManagementEntitlementManagementRoleAssignmentApprovalByCurrentUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Filter (Default)
@@ -189,6 +192,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 Please use Get-Help -Online.
 
 ## RELATED LINKS
+[Invoke-MgBetaFilterRoleManagementEntitlementManagementRoleAssignmentApprovalByCurrentUser](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Invoke-MgFilterRoleManagementEntitlementManagementRoleAssignmentApprovalByCurrentUser?view=graph-powershell-beta)
 
 [https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/invoke-mgfilterrolemanagemententitlementmanagementroleassignmentapprovalbycurrentuser](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/invoke-mgfilterrolemanagemententitlementmanagementroleassignmentapprovalbycurrentuser)
 

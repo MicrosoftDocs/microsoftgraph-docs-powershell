@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get dailyPrintUsageSummariesByUser from reports
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportDailyPrintUsageSummaryByUser](/powershell/module/Microsoft.Graph.Reports/Get-MgReportDailyPrintUsageSummaryByUser?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -280,3 +283,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+[Get-MgReportDailyPrintUsageSummaryByUser](/powershell/module/Microsoft.Graph.Reports/Get-MgReportDailyPrintUsageSummaryByUser?view=graph-powershell-v1.0)

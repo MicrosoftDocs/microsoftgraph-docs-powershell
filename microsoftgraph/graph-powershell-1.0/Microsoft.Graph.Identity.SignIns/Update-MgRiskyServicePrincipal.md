@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property riskyServicePrincipals in identityProtection
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaRiskyServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaRiskyServicePrincipal?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -448,5 +451,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Update-MgBetaBetaRiskyServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaRiskyServicePrincipal?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaBetaRiskyServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaRiskyServicePrincipal?view=graph-powershell-beta)

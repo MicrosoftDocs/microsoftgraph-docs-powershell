@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to directories for applications
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBetaApplicationSynchronizationJobSchemaDirectory](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationSynchronizationJobSchemaDirectory?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -374,3 +377,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[SupportedApis <String[]>]`: 
 
 ## RELATED LINKS
+[New-MgBetaBetaApplicationSynchronizationJobSchemaDirectory](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationSynchronizationJobSchemaDirectory?view=graph-powershell-beta)

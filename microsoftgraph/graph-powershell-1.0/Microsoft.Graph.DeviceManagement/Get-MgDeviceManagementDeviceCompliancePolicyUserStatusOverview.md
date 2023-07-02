@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Device compliance users status overview
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaDeviceManagementDeviceCompliancePolicyUserStatusOverview](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceCompliancePolicyUserStatusOverview?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -150,3 +153,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionNetworkLearningSummary
 
 ## RELATED LINKS
+[Get-MgBetaBetaDeviceManagementDeviceCompliancePolicyUserStatusOverview](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceCompliancePolicyUserStatusOverview?view=graph-powershell-beta)

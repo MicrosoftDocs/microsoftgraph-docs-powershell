@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function filterByCurrentUser
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgFilterRoleManagementEntitlementManagementRoleAssignmentScheduleByCurrentUser](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Invoke-MgFilterRoleManagementEntitlementManagementRoleAssignmentScheduleByCurrentUser?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Filter (Default)
@@ -225,3 +228,4 @@ INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[Invoke-MgFilterRoleManagementEntitlementManagementRoleAssignmentScheduleByCurrentUser](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Invoke-MgFilterRoleManagementEntitlementManagementRoleAssignmentScheduleByCurrentUser?view=graph-powershell-v1.0)

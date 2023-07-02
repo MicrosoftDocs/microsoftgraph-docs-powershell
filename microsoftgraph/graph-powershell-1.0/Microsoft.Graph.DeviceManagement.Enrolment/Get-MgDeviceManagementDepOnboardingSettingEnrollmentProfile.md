@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The enrollment profiles.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfile](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Get-MgDeviceManagementDepOnboardingSettingEnrollmentProfile?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -255,6 +258,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 Please use Get-Help -Online.
 
 ## RELATED LINKS
+[Get-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfile](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Get-MgDeviceManagementDepOnboardingSettingEnrollmentProfile?view=graph-powershell-beta)
 
 [https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/get-mgdevicemanagementdeponboardingsettingenrollmentprofile](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/get-mgdevicemanagementdeponboardingsettingenrollmentprofile)
 

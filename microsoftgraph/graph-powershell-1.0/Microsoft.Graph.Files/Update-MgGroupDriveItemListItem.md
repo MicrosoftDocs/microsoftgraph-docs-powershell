@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property listItem in groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaGroupDriveItemListItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveItemListItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -13621,5 +13624,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
 ## RELATED LINKS
+[Update-MgBetaBetaGroupDriveItemListItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveItemListItem?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaBetaGroupDriveItemListItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveItemListItem?view=graph-powershell-beta)

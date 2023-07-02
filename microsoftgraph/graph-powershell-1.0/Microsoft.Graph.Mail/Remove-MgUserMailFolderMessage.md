@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property messages for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaUserMailFolderMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Remove-MgBetaUserMailFolderMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -196,3 +199,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaBetaUserMailFolderMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Remove-MgBetaUserMailFolderMessage?view=graph-powershell-beta)

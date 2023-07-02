@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new custodian siteSource object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgComplianceEdiscoveryCaseCustodianSiteSource](/powershell/module/Microsoft.Graph.Compliance/New-MgComplianceEdiscoveryCaseCustodianSiteSource?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -9696,5 +9699,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Sets <IMicrosoftGraphTermStoreSet[]>]`: Collection of all sets available in the term store.
 
 ## RELATED LINKS
+[New-MgComplianceEdiscoveryCaseCustodianSiteSource](/powershell/module/Microsoft.Graph.Compliance/New-MgComplianceEdiscoveryCaseCustodianSiteSource?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgComplianceEdiscoveryCaseCustodianSiteSource](/powershell/module/Microsoft.Graph.Compliance/New-MgComplianceEdiscoveryCaseCustodianSiteSource?view=graph-powershell-v1.0)

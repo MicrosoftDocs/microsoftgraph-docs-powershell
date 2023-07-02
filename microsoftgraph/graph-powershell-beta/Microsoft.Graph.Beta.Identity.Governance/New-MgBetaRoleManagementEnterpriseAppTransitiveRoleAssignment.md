@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to transitiveRoleAssignments for roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgRoleManagementEnterpriseAppTransitiveRoleAssignment](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementEnterpriseAppTransitiveRoleAssignment?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -543,5 +546,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Version <String>]`: Indicates version of the unifiedRoleDefinition. Read-only when isBuiltIn is true.
 
 ## RELATED LINKS
+[New-MgRoleManagementEnterpriseAppTransitiveRoleAssignment](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementEnterpriseAppTransitiveRoleAssignment?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgRoleManagementEnterpriseAppTransitiveRoleAssignment](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementEnterpriseAppTransitiveRoleAssignment?view=graph-powershell-v1.0)

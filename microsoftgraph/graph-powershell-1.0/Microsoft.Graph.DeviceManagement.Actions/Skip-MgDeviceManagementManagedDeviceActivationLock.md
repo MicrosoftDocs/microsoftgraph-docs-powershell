@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Bypass activation lock
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Skip-MgBetaBetaDeviceManagementManagedDeviceActivationLock](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Skip-MgBetaDeviceManagementManagedDeviceActivationLock?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Bypass (Default)
@@ -152,3 +155,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
+[Skip-MgBetaBetaDeviceManagementManagedDeviceActivationLock](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Skip-MgBetaDeviceManagementManagedDeviceActivationLock?view=graph-powershell-beta)

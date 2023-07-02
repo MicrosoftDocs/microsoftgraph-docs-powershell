@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the properties and relationships of an securescorecontrolprofile object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaSecuritySecureScoreControlProfile](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecuritySecureScoreControlProfile?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -270,3 +273,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
+[Get-MgBetaBetaSecuritySecureScoreControlProfile](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecuritySecureScoreControlProfile?view=graph-powershell-beta)

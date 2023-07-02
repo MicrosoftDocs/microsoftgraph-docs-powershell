@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property assignments for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagement](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagement?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -304,5 +307,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
 ## RELATED LINKS
+[Update-MgDeviceManagement](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagement?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgDeviceManagement](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagement?view=graph-powershell-v1.0)

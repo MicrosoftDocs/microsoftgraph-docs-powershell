@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the properties and relationships of a directoryroletemplate object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaDirectoryRoleTemplate](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryRoleTemplate?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -254,3 +257,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaBetaDirectoryRoleTemplate](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryRoleTemplate?view=graph-powershell-beta)

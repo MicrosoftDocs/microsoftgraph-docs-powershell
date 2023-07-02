@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to resourceAccessProfiles for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementResourceAccessProfile](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementResourceAccessProfile?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -279,3 +282,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Version <Int32?>]`: Version of the profile
 
 ## RELATED LINKS
+[New-MgDeviceManagementResourceAccessProfile](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementResourceAccessProfile?view=graph-powershell-v1.0)

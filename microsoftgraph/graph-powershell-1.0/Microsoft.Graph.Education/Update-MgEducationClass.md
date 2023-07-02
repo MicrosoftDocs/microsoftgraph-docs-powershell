@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of an educationClass object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaEducationClass](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationClass?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -14411,5 +14414,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[StartDate <DateTime?>]`: Start of the term.
 
 ## RELATED LINKS
+[Update-MgBetaBetaEducationClass](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationClass?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaBetaEducationClass](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationClass?view=graph-powershell-beta)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property inheritsPermissionsFrom for roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgRoleManagementDeviceManagementRoleDefinitionInheritPermissionFrom](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Remove-MgRoleManagementDeviceManagementRoleDefinitionInheritPermissionFrom?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -195,3 +198,4 @@ INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[Remove-MgRoleManagementDeviceManagementRoleDefinitionInheritPermissionFrom](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Remove-MgRoleManagementDeviceManagementRoleDefinitionInheritPermissionFrom?view=graph-powershell-v1.0)

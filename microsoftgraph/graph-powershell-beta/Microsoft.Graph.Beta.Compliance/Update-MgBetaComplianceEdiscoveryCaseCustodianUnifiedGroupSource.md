@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property unifiedGroupSources in compliance
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgComplianceEdiscoveryCaseCustodianUnifiedGroupSource](/powershell/module/Microsoft.Graph.Compliance/Update-MgComplianceEdiscoveryCaseCustodianUnifiedGroupSource?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -9727,5 +9730,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
+[Update-MgComplianceEdiscoveryCaseCustodianUnifiedGroupSource](/powershell/module/Microsoft.Graph.Compliance/Update-MgComplianceEdiscoveryCaseCustodianUnifiedGroupSource?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgComplianceEdiscoveryCaseCustodianUnifiedGroupSource](/powershell/module/Microsoft.Graph.Compliance/Update-MgComplianceEdiscoveryCaseCustodianUnifiedGroupSource?view=graph-powershell-v1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getRelatedAppStates
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementMobileAppRelatedAppState](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppRelatedAppState?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -265,6 +268,7 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
   \[WindowsManagedAppProtectionId \<String\>\]: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
+[Get-MgDeviceAppManagementMobileAppRelatedAppState](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppRelatedAppState?view=graph-powershell-v1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementmobileapprelatedappstate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementmobileapprelatedappstate)
 

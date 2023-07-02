@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to offerShiftRequests for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBetaGroupTeamScheduleOfferShiftRequest](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamScheduleOfferShiftRequest?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -367,3 +370,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
+[New-MgBetaBetaGroupTeamScheduleOfferShiftRequest](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamScheduleOfferShiftRequest?view=graph-powershell-beta)

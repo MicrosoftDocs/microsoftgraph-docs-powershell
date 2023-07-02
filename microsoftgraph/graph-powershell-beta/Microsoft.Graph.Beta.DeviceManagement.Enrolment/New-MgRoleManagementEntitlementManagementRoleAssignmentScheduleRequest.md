@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to roleAssignmentScheduleRequests for roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/New-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -859,8 +862,11 @@ TICKETINFO `<IMicrosoftGraphTicketInfo>`: ticketInfo
   - `[TicketSystem <String>]`: The description of the ticket system.
 
 ## RELATED LINKS
+[New-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/New-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/New-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest?view=graph-powershell-v1.0)
 
 
 ## RELATED LINKS
+[New-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/New-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest?view=graph-powershell-v1.0)

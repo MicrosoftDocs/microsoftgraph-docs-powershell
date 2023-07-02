@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new tokenIssuancePolicy object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBetaPolicyTokenIssuancePolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyTokenIssuancePolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -245,3 +248,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
+[New-MgBetaBetaPolicyTokenIssuancePolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyTokenIssuancePolicy?view=graph-powershell-beta)

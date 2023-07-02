@@ -11,6 +11,9 @@ schema: 2.0.0
 Retrieve a user's usage summary for a particular time period.
 For descriptions of each endpoint, see printUsageByUser.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaReportDailyPrintUsageByUser](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportDailyPrintUsageByUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -267,3 +270,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: Usage: userId='{userId}'
 
 ## RELATED LINKS
+[Get-MgBetaBetaReportDailyPrintUsageByUser](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportDailyPrintUsageByUser?view=graph-powershell-beta)

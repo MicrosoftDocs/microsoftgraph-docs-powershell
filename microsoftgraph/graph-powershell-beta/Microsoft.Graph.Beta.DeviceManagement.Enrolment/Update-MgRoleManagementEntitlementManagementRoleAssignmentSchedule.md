@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property roleAssignmentSchedules in roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgRoleManagementEntitlementManagementRoleAssignmentSchedule](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Update-MgRoleManagementEntitlementManagementRoleAssignmentSchedule?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -708,8 +711,11 @@ SCHEDULEINFO `<IMicrosoftGraphRequestSchedule>`: requestSchedule
   - `[StartDateTime <DateTime?>]`: When the  eligible or active assignment becomes active.
 
 ## RELATED LINKS
+[Update-MgRoleManagementEntitlementManagementRoleAssignmentSchedule](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Update-MgRoleManagementEntitlementManagementRoleAssignmentSchedule?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgRoleManagementEntitlementManagementRoleAssignmentSchedule](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Update-MgRoleManagementEntitlementManagementRoleAssignmentSchedule?view=graph-powershell-v1.0)
 
 
 ## RELATED LINKS
+[Update-MgRoleManagementEntitlementManagementRoleAssignmentSchedule](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Update-MgRoleManagementEntitlementManagementRoleAssignmentSchedule?view=graph-powershell-v1.0)

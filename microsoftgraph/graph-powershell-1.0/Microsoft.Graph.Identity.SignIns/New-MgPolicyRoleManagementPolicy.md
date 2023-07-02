@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to roleManagementPolicies for policies
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBetaPolicyRoleManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyRoleManagementPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -350,3 +353,4 @@ To create the parameters described below, construct a hash table containing the 
       - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
+[New-MgBetaBetaPolicyRoleManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyRoleManagementPolicy?view=graph-powershell-beta)

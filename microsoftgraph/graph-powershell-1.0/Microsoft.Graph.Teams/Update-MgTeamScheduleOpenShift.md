@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of an openShift object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamScheduleOpenShift?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -386,3 +389,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[OpenSlotCount <Int32?>]`: Count of the number of slots for the given open shift.
 
 ## RELATED LINKS
+[Update-MgBetaBetaTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamScheduleOpenShift?view=graph-powershell-beta)

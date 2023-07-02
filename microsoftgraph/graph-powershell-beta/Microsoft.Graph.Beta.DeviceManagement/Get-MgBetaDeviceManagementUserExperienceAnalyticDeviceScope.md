@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The user experience analytics device scope entity endpoint to trigger on the service to either START or STOP computing metrics data based on a device scope configuration.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementUserExperienceAnalyticDeviceScope](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticDeviceScope?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -395,5 +398,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
 ## RELATED LINKS
+[Get-MgDeviceManagementUserExperienceAnalyticDeviceScope](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticDeviceScope?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Get-MgDeviceManagementUserExperienceAnalyticDeviceScope](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticDeviceScope?view=graph-powershell-v1.0)

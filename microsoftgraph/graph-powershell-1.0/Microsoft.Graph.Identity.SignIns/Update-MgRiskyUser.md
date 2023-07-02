@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property riskyUsers in identityProtection
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaRiskyUser](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaRiskyUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -433,3 +436,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Update-MgBetaBetaRiskyUser](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaRiskyUser?view=graph-powershell-beta)

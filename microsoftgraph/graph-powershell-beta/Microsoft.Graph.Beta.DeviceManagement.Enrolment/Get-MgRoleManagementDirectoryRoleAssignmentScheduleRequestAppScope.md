@@ -12,6 +12,9 @@ Read-only property with details of the app-specific scope when the assignment is
 Nullable.
 Supports $expand.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestAppScope](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestAppScope?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -154,3 +157,4 @@ INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestAppScope](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestAppScope?view=graph-powershell-v1.0)

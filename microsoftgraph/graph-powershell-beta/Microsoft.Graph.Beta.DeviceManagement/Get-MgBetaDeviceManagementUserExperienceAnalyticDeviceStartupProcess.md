@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 User experience analytics device Startup Processes
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -390,5 +393,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
 ## RELATED LINKS
+[Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess?view=graph-powershell-v1.0)

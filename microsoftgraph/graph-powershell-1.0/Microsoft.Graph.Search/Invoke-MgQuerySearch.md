@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action query
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaBetaQuerySearch](/powershell/module/Microsoft.Graph.Beta.Search/Invoke-MgBetaQuerySearch?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### QueryExpanded (Default)
@@ -228,3 +231,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[Name <String>]`: The name of the property to sort on. Required.
 
 ## RELATED LINKS
+[Invoke-MgBetaBetaQuerySearch](/powershell/module/Microsoft.Graph.Beta.Search/Invoke-MgBetaQuerySearch?view=graph-powershell-beta)

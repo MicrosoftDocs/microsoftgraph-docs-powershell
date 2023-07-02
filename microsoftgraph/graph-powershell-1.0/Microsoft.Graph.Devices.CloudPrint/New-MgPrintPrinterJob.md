@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to jobs for print
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBetaPrintPrinterJob](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintPrinterJob?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -493,5 +496,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Event <String>]`: printEvent
 
 ## RELATED LINKS
+[New-MgBetaBetaPrintPrinterJob](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintPrinterJob?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[New-MgBetaBetaPrintPrinterJob](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintPrinterJob?view=graph-powershell-beta)

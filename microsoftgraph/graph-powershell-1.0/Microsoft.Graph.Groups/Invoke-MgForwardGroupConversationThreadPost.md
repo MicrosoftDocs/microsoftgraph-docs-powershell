@@ -11,6 +11,9 @@ schema: 2.0.0
 Forward a post to a recipient.
 You can specify both the parent conversation and thread in the request, nor, you can specify just the parent thread without the parent conversation.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaBetaForwardGroupConversationThreadPost](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaForwardGroupConversationThreadPost?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ForwardExpanded (Default)
@@ -325,3 +328,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[Name <String>]`: The display name of the person or entity.
 
 ## RELATED LINKS
+[Invoke-MgBetaBetaForwardGroupConversationThreadPost](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaForwardGroupConversationThreadPost?view=graph-powershell-beta)

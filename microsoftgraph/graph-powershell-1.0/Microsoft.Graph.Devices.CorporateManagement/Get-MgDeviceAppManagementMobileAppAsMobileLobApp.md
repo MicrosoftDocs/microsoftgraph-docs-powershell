@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the item of type microsoft.graph.mobileApp as microsoft.graph.mobileLobApp
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaDeviceAppManagementMobileAppAsMobileLobApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppAsMobileLobApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -283,3 +286,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
 
 ## RELATED LINKS
+[Get-MgBetaBetaDeviceAppManagementMobileAppAsMobileLobApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppAsMobileLobApp?view=graph-powershell-beta)

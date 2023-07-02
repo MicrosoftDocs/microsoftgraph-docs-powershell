@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property relations in groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaGroupSiteTermStoreSetChildRelation](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteTermStoreSetChildRelation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded1 (Default)
@@ -651,5 +654,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Set <IMicrosoftGraphTermStoreSet>]`: set
 
 ## RELATED LINKS
+[Update-MgBetaBetaGroupSiteTermStoreSetChildRelation](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteTermStoreSetChildRelation?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaBetaGroupSiteTermStoreSetChildRelation](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteTermStoreSetChildRelation?view=graph-powershell-beta)

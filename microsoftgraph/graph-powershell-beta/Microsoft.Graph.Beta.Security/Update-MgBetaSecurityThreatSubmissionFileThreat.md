@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property fileThreats in security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSecurityThreatSubmissionFileThreat](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityThreatSubmissionFileThreat?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -476,3 +479,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserMailboxSetting <String>]`: userMailboxSetting
 
 ## RELATED LINKS
+[Update-MgSecurityThreatSubmissionFileThreat](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityThreatSubmissionFileThreat?view=graph-powershell-v1.0)

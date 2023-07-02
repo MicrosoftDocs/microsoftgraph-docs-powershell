@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get cloudPC from roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementCloudPc](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Get-MgRoleManagementCloudPc?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```
@@ -66,3 +69,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgRoleManagementCloudPc](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Get-MgRoleManagementCloudPc?view=graph-powershell-v1.0)

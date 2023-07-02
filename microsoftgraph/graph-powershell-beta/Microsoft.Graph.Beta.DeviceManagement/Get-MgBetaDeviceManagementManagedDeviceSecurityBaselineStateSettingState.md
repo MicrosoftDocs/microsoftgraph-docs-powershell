@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The security baseline state for different settings for a device
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementManagedDeviceSecurityBaselineStateSettingState](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementManagedDeviceSecurityBaselineStateSettingState?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -422,5 +425,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
 ## RELATED LINKS
+[Get-MgDeviceManagementManagedDeviceSecurityBaselineStateSettingState](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementManagedDeviceSecurityBaselineStateSettingState?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Get-MgDeviceManagementManagedDeviceSecurityBaselineStateSettingState](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementManagedDeviceSecurityBaselineStateSettingState?view=graph-powershell-v1.0)

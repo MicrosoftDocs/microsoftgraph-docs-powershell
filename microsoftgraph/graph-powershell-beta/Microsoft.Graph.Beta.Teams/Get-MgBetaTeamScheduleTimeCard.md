@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the properties and relationships of a timeCard object by ID.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamScheduleTimeCard](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamScheduleTimeCard?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -305,3 +308,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgTeamScheduleTimeCard](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamScheduleTimeCard?view=graph-powershell-v1.0)

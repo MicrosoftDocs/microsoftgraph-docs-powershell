@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getOemWarranty
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementManagedDeviceOemWarranty](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementManagedDeviceOemWarranty?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -121,6 +124,7 @@ INPUTOBJECT \<IDeviceManagementFunctionsIdentity\>: Identity Parameter
   \[Userid \<String\>\]: Usage: userid='{userid}'
 
 ## RELATED LINKS
+[Get-MgDeviceManagementManagedDeviceOemWarranty](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementManagedDeviceOemWarranty?view=graph-powershell-v1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementmanageddeviceoemwarranty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementmanageddeviceoemwarranty)
 

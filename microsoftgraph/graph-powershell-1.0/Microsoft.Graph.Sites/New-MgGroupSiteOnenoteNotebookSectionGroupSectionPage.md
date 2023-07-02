@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to pages for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBetaGroupSiteOnenoteNotebookSectionGroupSectionPage](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteOnenoteNotebookSectionGroupSectionPage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -737,5 +740,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ParentSectionGroup <IMicrosoftGraphSectionGroup>]`: sectionGroup
 
 ## RELATED LINKS
+[New-MgBetaBetaGroupSiteOnenoteNotebookSectionGroupSectionPage](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteOnenoteNotebookSectionGroupSectionPage?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[New-MgBetaBetaGroupSiteOnenoteNotebookSectionGroupSectionPage](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteOnenoteNotebookSectionGroupSectionPage?view=graph-powershell-beta)

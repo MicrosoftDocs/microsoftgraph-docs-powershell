@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property chats for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaUserChat](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaUserChat?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -204,3 +207,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Remove-MgBetaBetaUserChat](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaUserChat?view=graph-powershell-beta)

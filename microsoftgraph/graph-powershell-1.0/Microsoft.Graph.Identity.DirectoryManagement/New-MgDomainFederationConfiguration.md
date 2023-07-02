@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new internalDomainFederation object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBetaDomainFederationConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDomainFederationConfiguration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -458,3 +461,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[LastRunDateTime <DateTime?>]`: Date and time in ISO 8601 format and in UTC time when the certificate was last updated. Read-only.
 
 ## RELATED LINKS
+[New-MgBetaBetaDomainFederationConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDomainFederationConfiguration?view=graph-powershell-beta)

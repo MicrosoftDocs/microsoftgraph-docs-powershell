@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 the entry point for the Conditional Access (CA) object model.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaIdentityConditionalAccess](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityConditionalAccess?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
@@ -76,3 +79,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaBetaIdentityConditionalAccess](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityConditionalAccess?view=graph-powershell-beta)

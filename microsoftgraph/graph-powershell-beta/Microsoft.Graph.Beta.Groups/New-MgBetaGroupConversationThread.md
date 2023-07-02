@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to threads for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupConversationThread](/powershell/module/Microsoft.Graph.Groups/New-MgGroupConversationThread?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -528,5 +531,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Name <String>]`: The display name of an entity instance.
 
 ## RELATED LINKS
+[New-MgGroupConversationThread](/powershell/module/Microsoft.Graph.Groups/New-MgGroupConversationThread?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgGroupConversationThread](/powershell/module/Microsoft.Graph.Groups/New-MgGroupConversationThread?view=graph-powershell-v1.0)

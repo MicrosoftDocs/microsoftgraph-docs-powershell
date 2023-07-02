@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action sendCustomNotificationToCompanyPortal
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Send-MgUserManagedDeviceCustomNotificationToCompanyPortal](/powershell/module/Microsoft.Graph.Users.Actions/Send-MgUserManagedDeviceCustomNotificationToCompanyPortal?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### SendExpanded (Default)
@@ -281,3 +284,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Send-MgUserManagedDeviceCustomNotificationToCompanyPortal](/powershell/module/Microsoft.Graph.Users.Actions/Send-MgUserManagedDeviceCustomNotificationToCompanyPortal?view=graph-powershell-v1.0)

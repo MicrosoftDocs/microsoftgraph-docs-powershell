@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property roleEligibilitySchedules in roleManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaRoleManagementDirectoryRoleEligibilitySchedule](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Update-MgRoleManagementDirectoryRoleEligibilitySchedule?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -587,8 +590,11 @@ SCHEDULEINFO `<IMicrosoftGraphRequestSchedule>`: requestSchedule
   - `[StartDateTime <DateTime?>]`: When the  eligible or active assignment becomes active.
 
 ## RELATED LINKS
+[Update-MgBetaRoleManagementDirectoryRoleEligibilitySchedule](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Update-MgRoleManagementDirectoryRoleEligibilitySchedule?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaRoleManagementDirectoryRoleEligibilitySchedule](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Update-MgRoleManagementDirectoryRoleEligibilitySchedule?view=graph-powershell-beta)
 
 
 ## RELATED LINKS
+[Update-MgBetaRoleManagementDirectoryRoleEligibilitySchedule](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Update-MgRoleManagementDirectoryRoleEligibilitySchedule?view=graph-powershell-beta)

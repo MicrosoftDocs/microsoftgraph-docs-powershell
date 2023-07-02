@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Deployment profile currently assigned to the Windows autopilot device.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementWindowAutopilotDeviceIdentityDeploymentProfile](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Get-MgDeviceManagementWindowAutopilotDeviceIdentityDeploymentProfile?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -113,6 +116,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 Please use Get-Help -Online.
 
 ## RELATED LINKS
+[Get-MgBetaDeviceManagementWindowAutopilotDeviceIdentityDeploymentProfile](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Get-MgDeviceManagementWindowAutopilotDeviceIdentityDeploymentProfile?view=graph-powershell-beta)
 
 [https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/get-mgdevicemanagementwindowautopilotdeviceidentitydeploymentprofile](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/get-mgdevicemanagementwindowautopilotdeviceidentitydeploymentprofile)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get print
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaPrint](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrint?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
@@ -80,3 +83,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaBetaPrint](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrint?view=graph-powershell-beta)

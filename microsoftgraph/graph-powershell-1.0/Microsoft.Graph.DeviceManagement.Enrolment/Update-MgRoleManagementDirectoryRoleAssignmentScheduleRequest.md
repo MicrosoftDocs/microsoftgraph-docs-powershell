@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property roleAssignmentScheduleRequests in roleManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Update-MgRoleManagementDirectoryRoleAssignmentScheduleRequest?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -937,8 +940,11 @@ TICKETINFO `<IMicrosoftGraphTicketInfo>`: ticketInfo
   - `[TicketSystem <String>]`: The description of the ticket system.
 
 ## RELATED LINKS
+[Update-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Update-MgRoleManagementDirectoryRoleAssignmentScheduleRequest?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Update-MgRoleManagementDirectoryRoleAssignmentScheduleRequest?view=graph-powershell-beta)
 
 
 ## RELATED LINKS
+[Update-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Update-MgRoleManagementDirectoryRoleAssignmentScheduleRequest?view=graph-powershell-beta)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to mentions for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupConversationThreadPostInReplyToMention](/powershell/module/Microsoft.Graph.Groups/New-MgGroupConversationThreadPostInReplyToMention?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -441,3 +444,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Name <String>]`: The display name of an entity instance.
 
 ## RELATED LINKS
+[New-MgGroupConversationThreadPostInReplyToMention](/powershell/module/Microsoft.Graph.Groups/New-MgGroupConversationThreadPostInReplyToMention?view=graph-powershell-v1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property microsoftTunnelServerLogCollectionResponses in deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementMicrosoftTunnelServerLogCollectionResponse](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementMicrosoftTunnelServerLogCollectionResponse?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -448,5 +451,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
 ## RELATED LINKS
+[Update-MgDeviceManagementMicrosoftTunnelServerLogCollectionResponse](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementMicrosoftTunnelServerLogCollectionResponse?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgDeviceManagementMicrosoftTunnelServerLogCollectionResponse](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementMicrosoftTunnelServerLogCollectionResponse?view=graph-powershell-v1.0)

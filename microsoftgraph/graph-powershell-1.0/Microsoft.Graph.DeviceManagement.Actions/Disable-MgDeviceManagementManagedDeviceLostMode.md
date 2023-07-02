@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Disable lost mode
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Disable-MgBetaBetaDeviceManagementManagedDeviceLostMode](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Disable-MgBetaDeviceManagementManagedDeviceLostMode?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Disable (Default)
@@ -152,3 +155,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
+[Disable-MgBetaBetaDeviceManagementManagedDeviceLostMode](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Disable-MgBetaDeviceManagementManagedDeviceLostMode?view=graph-powershell-beta)

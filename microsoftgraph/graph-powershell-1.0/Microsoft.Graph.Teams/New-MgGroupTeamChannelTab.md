@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to tabs for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBetaGroupTeamChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamChannelTab?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -371,3 +374,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ExternalId <String>]`: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
 
 ## RELATED LINKS
+[New-MgBetaBetaGroupTeamChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamChannelTab?view=graph-powershell-beta)

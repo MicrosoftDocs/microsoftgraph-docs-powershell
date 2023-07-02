@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to itemActivityStats for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupSiteAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteAnalyticItemActivityStat?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -9828,5 +9831,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ActorCount <Int32?>]`: The number of distinct actors that performed the action. Read-only.
 
 ## RELATED LINKS
+[New-MgGroupSiteAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteAnalyticItemActivityStat?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgGroupSiteAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteAnalyticItemActivityStat?view=graph-powershell-v1.0)

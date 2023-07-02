@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 To indicate which terms are related to the current term as either pinned or reused.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaGroupSiteTermStoreSetParentGroupSetTermChildRelation](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteTermStoreSetParentGroupSetTermChildRelation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -421,3 +424,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaBetaGroupSiteTermStoreSetParentGroupSetTermChildRelation](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteTermStoreSetParentGroupSetTermChildRelation?view=graph-powershell-beta)

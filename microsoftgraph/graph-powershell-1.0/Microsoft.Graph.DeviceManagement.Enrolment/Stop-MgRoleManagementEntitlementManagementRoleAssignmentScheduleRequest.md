@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action cancel
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Stop-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Stop-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Cancel (Default)
@@ -175,3 +178,4 @@ INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[Stop-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Stop-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest?view=graph-powershell-beta)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The security baseline state for different settings for a device
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserManagedDeviceSecurityBaselineStateSettingState](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgUserManagedDeviceSecurityBaselineStateSettingState?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -366,3 +369,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
+[Get-MgUserManagedDeviceSecurityBaselineStateSettingState](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgUserManagedDeviceSecurityBaselineStateSettingState?view=graph-powershell-v1.0)

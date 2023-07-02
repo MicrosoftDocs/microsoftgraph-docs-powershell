@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Column order information in a content type.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteListContentTypeColumnPosition](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteListContentTypeColumnPosition?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -367,3 +370,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgGroupSiteListContentTypeColumnPosition](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteListContentTypeColumnPosition?view=graph-powershell-v1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the list of groups that are included in a mobile app management policy.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPolicyMobileAppManagementPolicyIncludedGroupByRef](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyMobileAppManagementPolicyIncludedGroupByRef?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```
@@ -188,3 +191,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgPolicyMobileAppManagementPolicyIncludedGroupByRef](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyMobileAppManagementPolicyIncludedGroupByRef?view=graph-powershell-v1.0)

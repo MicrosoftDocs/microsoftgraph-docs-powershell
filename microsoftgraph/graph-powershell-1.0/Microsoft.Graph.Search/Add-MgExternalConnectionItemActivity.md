@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action addActivities
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Add-MgBetaBetaExternalConnectionItemActivity](/powershell/module/Microsoft.Graph.Beta.Search/Add-MgBetaExternalConnectionItemActivity?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AddExpanded (Default)
@@ -229,3 +232,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[IdentityId <String>]`: The unique identifier of identity
 
 ## RELATED LINKS
+[Add-MgBetaBetaExternalConnectionItemActivity](/powershell/module/Microsoft.Graph.Beta.Search/Add-MgBetaExternalConnectionItemActivity?view=graph-powershell-beta)

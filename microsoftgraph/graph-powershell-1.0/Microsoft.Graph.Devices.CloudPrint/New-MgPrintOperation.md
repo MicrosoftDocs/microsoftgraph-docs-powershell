@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to operations for print
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBetaPrintOperation](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -187,3 +190,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[State <String>]`: printOperationProcessingState
 
 ## RELATED LINKS
+[New-MgBetaBetaPrintOperation](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintOperation?view=graph-powershell-beta)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Data source entity for groups associated with the custodian.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -335,3 +338,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
+[Get-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource?view=graph-powershell-v1.0)

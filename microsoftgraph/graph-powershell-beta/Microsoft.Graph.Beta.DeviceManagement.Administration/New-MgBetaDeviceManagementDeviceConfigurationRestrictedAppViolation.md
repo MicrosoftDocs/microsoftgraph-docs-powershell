@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to deviceConfigurationRestrictedAppsViolations for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementDeviceConfigurationRestrictedAppViolation](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementDeviceConfigurationRestrictedAppViolation?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -298,3 +301,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[AppId <String>]`: The application or bundle identifier of the application
 
 ## RELATED LINKS
+[New-MgDeviceManagementDeviceConfigurationRestrictedAppViolation](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementDeviceConfigurationRestrictedAppViolation?view=graph-powershell-v1.0)

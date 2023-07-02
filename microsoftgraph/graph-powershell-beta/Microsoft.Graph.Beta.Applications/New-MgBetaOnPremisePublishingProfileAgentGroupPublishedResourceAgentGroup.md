@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to agentGroups for onPremisesPublishingProfiles
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgOnPremisePublishingProfileAgentGroupPublishedResourceAgentGroup](/powershell/module/Microsoft.Graph.Applications/New-MgOnPremisePublishingProfileAgentGroupPublishedResourceAgentGroup?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -392,3 +395,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ResourceName <String>]`: Name of the publishedResource.
 
 ## RELATED LINKS
+[New-MgOnPremisePublishingProfileAgentGroupPublishedResourceAgentGroup](/powershell/module/Microsoft.Graph.Applications/New-MgOnPremisePublishingProfileAgentGroupPublishedResourceAgentGroup?view=graph-powershell-v1.0)

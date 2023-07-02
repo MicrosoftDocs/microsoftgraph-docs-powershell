@@ -11,6 +11,9 @@ schema: 2.0.0
 Delete a subscription.
 For the list of resources that support subscribing to change notifications, see the table in the Permissions section.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaSubscription](/powershell/module/Microsoft.Graph.Beta.ChangeNotifications/Remove-MgBetaSubscription?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -154,3 +157,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[SubscriptionId <String>]`: The unique identifier of subscription
 
 ## RELATED LINKS
+[Remove-MgBetaBetaSubscription](/powershell/module/Microsoft.Graph.Beta.ChangeNotifications/Remove-MgBetaSubscription?view=graph-powershell-beta)

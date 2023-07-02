@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function roleSchedules
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgScheduleRoleManagementEnterpriseAppRole](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgScheduleRoleManagementEnterpriseAppRole?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Schedule (Default)
@@ -358,3 +361,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Invoke-MgScheduleRoleManagementEnterpriseAppRole](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgScheduleRoleManagementEnterpriseAppRole?view=graph-powershell-v1.0)

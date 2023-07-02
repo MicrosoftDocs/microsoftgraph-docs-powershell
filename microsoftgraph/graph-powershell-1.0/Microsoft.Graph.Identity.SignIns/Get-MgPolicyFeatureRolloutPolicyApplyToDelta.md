@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function delta
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaPolicyFeatureRolloutPolicyApplyToDelta](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyFeatureRolloutPolicyApplyToDelta?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delta (Default)
@@ -301,3 +304,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Get-MgBetaBetaPolicyFeatureRolloutPolicyApplyToDelta](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyFeatureRolloutPolicyApplyToDelta?view=graph-powershell-beta)

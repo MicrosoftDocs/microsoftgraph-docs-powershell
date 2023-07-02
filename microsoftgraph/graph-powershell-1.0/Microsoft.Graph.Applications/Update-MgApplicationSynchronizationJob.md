@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property jobs in applications
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplicationSynchronizationJob?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -593,5 +596,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Value <String>]`: Value for this key-value pair
 
 ## RELATED LINKS
+[Update-MgBetaBetaApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplicationSynchronizationJob?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaBetaApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplicationSynchronizationJob?view=graph-powershell-beta)

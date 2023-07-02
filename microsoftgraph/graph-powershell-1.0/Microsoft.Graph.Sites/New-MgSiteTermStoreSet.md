@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to sets for sites
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBetaSiteTermStoreSet](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteTermStoreSet?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -631,5 +634,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Set <IMicrosoftGraphTermStoreSet>]`: set
 
 ## RELATED LINKS
+[New-MgBetaBetaSiteTermStoreSet](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteTermStoreSet?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[New-MgBetaBetaSiteTermStoreSet](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteTermStoreSet?view=graph-powershell-beta)

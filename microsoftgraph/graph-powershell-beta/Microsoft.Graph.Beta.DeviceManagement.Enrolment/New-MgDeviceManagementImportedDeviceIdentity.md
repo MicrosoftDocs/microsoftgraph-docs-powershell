@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to importedDeviceIdentities for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementImportedDeviceIdentity](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/New-MgDeviceManagementImportedDeviceIdentity?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -263,3 +266,4 @@ BODYPARAMETER `<IMicrosoftGraphImportedDeviceIdentity>`: The importedDeviceIdent
   - `[Platform <Platform?>]`: platform
 
 ## RELATED LINKS
+[New-MgDeviceManagementImportedDeviceIdentity](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/New-MgDeviceManagementImportedDeviceIdentity?view=graph-powershell-v1.0)

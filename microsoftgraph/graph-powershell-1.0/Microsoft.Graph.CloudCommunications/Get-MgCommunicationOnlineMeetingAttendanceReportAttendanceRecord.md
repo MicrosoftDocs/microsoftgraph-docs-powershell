@@ -11,6 +11,9 @@ schema: 2.0.0
 List of attendance records of an attendance report.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecord](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecord?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -301,3 +304,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecord](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecord?view=graph-powershell-beta)

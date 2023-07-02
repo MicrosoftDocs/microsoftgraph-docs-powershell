@@ -13,6 +13,9 @@ Complete the message migration process by removing `migration mode` from a chann
 After a **completeMigration** request is made, you cannot import additional messages into the team.
 You can add members to the team after the request returns a successful response.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Complete-MgBetaBetaTeamChannelMigration](/powershell/module/Microsoft.Graph.Beta.Teams/Complete-MgBetaTeamChannelMigration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Complete (Default)
@@ -187,3 +190,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Complete-MgBetaBetaTeamChannelMigration](/powershell/module/Microsoft.Graph.Beta.Teams/Complete-MgBetaTeamChannelMigration?view=graph-powershell-beta)

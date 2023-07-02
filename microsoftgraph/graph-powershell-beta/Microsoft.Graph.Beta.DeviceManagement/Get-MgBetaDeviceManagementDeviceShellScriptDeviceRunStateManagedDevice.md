@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The managed devices that executes the device management script.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDevice](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDevice?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -277,5 +280,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
 ## RELATED LINKS
+[Get-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDevice](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDevice?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Get-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDevice](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDevice?view=graph-powershell-v1.0)

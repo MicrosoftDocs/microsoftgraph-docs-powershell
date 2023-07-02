@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get lastIndexOperation from compliance
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgComplianceEdiscoveryCaseNoncustodialDataSourceLastIndexOperation](/powershell/module/Microsoft.Graph.Compliance/Get-MgComplianceEdiscoveryCaseNoncustodialDataSourceLastIndexOperation?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -152,3 +155,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
+[Get-MgComplianceEdiscoveryCaseNoncustodialDataSourceLastIndexOperation](/powershell/module/Microsoft.Graph.Compliance/Get-MgComplianceEdiscoveryCaseNoncustodialDataSourceLastIndexOperation?view=graph-powershell-v1.0)

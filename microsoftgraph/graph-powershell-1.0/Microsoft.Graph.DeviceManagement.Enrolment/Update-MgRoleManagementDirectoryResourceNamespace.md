@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property resourceNamespaces in roleManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaRoleManagementDirectoryResourceNamespace](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Update-MgRoleManagementDirectoryResourceNamespace?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -283,3 +286,4 @@ RESOURCEACTIONS <IMicrosoftGraphUnifiedRbacResourceAction\[]>: .
   - `[ResourceScopeId <String>]`: 
 
 ## RELATED LINKS
+[Update-MgBetaRoleManagementDirectoryResourceNamespace](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Update-MgRoleManagementDirectoryResourceNamespace?view=graph-powershell-beta)

@@ -11,6 +11,9 @@ schema: 2.0.0
 The content stream of the recording of a Teams live event.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgCommunicationOnlineMeetingRecording](/powershell/module/Microsoft.Graph.CloudCommunications/Set-MgCommunicationOnlineMeetingRecording?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Set (Default)
@@ -196,3 +199,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Set-MgCommunicationOnlineMeetingRecording](/powershell/module/Microsoft.Graph.CloudCommunications/Set-MgCommunicationOnlineMeetingRecording?view=graph-powershell-v1.0)

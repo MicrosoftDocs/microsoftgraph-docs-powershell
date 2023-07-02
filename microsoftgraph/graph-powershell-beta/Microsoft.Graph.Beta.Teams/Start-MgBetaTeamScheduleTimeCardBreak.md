@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Start a break in a specific timeCard.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Start-MgTeamScheduleTimeCardBreak](/powershell/module/Microsoft.Graph.Teams/Start-MgTeamScheduleTimeCardBreak?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### StartExpanded (Default)
@@ -269,3 +272,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ContentType <String>]`: bodyType
 
 ## RELATED LINKS
+[Start-MgTeamScheduleTimeCardBreak](/powershell/module/Microsoft.Graph.Teams/Start-MgTeamScheduleTimeCardBreak?view=graph-powershell-v1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property steps in roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgRoleManagementDirectoryRoleAssignmentApprovalStep](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Update-MgRoleManagementDirectoryRoleAssignmentApprovalStep?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -376,3 +379,4 @@ REVIEWEDBY `<IMicrosoftGraphIdentity>`: identity
   - `[Id <String>]`: Unique identifier for the identity.
 
 ## RELATED LINKS
+[Update-MgRoleManagementDirectoryRoleAssignmentApprovalStep](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Update-MgRoleManagementDirectoryRoleAssignmentApprovalStep?view=graph-powershell-v1.0)

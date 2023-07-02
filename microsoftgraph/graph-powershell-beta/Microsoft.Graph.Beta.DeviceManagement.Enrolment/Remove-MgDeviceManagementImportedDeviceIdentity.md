@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property importedDeviceIdentities for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceManagementImportedDeviceIdentity](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Remove-MgDeviceManagementImportedDeviceIdentity?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -179,3 +182,4 @@ INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[Remove-MgDeviceManagementImportedDeviceIdentity](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Remove-MgDeviceManagementImportedDeviceIdentity?view=graph-powershell-v1.0)

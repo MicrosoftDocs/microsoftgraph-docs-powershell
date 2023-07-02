@@ -12,6 +12,9 @@ Get the MailTips of one or more recipients as available to the signed-in user.
 Note that by making a `POST` call to the `getMailTips` action, you can request specific types of MailTips to \nbe returned for more than one recipient at one time.
 The requested MailTips are returned in a mailTips collection.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaUserMailTip](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Get-MgBetaUserMailTip?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### GetExpanded (Default)
@@ -241,3 +244,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaBetaUserMailTip](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Get-MgBetaUserMailTip?view=graph-powershell-beta)

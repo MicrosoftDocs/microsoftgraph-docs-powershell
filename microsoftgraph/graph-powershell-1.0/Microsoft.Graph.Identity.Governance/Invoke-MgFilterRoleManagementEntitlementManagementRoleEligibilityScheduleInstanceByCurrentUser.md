@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function filterByCurrentUser
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaBetaFilterRoleManagementEntitlementManagementRoleEligibilityScheduleInstanceByCurrentUser](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaFilterRoleManagementEntitlementManagementRoleEligibilityScheduleInstanceByCurrentUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Filter (Default)
@@ -239,3 +242,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgBetaBetaFilterRoleManagementEntitlementManagementRoleEligibilityScheduleInstanceByCurrentUser](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaFilterRoleManagementEntitlementManagementRoleEligibilityScheduleInstanceByCurrentUser?view=graph-powershell-beta)

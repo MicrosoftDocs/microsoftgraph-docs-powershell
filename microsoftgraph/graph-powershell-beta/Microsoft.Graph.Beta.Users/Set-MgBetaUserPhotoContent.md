@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update media content for the navigation property photo in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgUserPhotoContent](/powershell/module/Microsoft.Graph.Users/Set-MgUserPhotoContent?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Set (Default)
@@ -221,3 +224,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Set-MgUserPhotoContent](/powershell/module/Microsoft.Graph.Users/Set-MgUserPhotoContent?view=graph-powershell-v1.0)

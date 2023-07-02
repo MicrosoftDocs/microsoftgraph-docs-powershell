@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to steps for roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgRoleManagementEntitlementManagementRoleAssignmentApprovalStep](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/New-MgRoleManagementEntitlementManagementRoleAssignmentApprovalStep?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -348,3 +351,4 @@ REVIEWEDBY `<IMicrosoftGraphIdentity>`: identity
   - `[Id <String>]`: Unique identifier for the identity.
 
 ## RELATED LINKS
+[New-MgRoleManagementEntitlementManagementRoleAssignmentApprovalStep](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/New-MgRoleManagementEntitlementManagementRoleAssignmentApprovalStep?view=graph-powershell-v1.0)

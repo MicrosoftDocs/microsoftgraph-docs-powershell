@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get triggers from security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityTrigger](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityTrigger?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```
@@ -80,3 +83,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgSecurityTrigger](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityTrigger?view=graph-powershell-v1.0)

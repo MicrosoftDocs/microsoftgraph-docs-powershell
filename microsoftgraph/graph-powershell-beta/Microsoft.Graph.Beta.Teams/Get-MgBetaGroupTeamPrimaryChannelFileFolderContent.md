@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The content stream, if the item represents a file.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupTeamPrimaryChannelFileFolderContent](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamPrimaryChannelFileFolderContent?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -160,3 +163,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgGroupTeamPrimaryChannelFileFolderContent](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamPrimaryChannelFileFolderContent?view=graph-powershell-v1.0)

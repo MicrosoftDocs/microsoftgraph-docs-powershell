@@ -13,6 +13,9 @@ This list of users is computed based on assignments, licenses, group memberships
 This property is read-only.
 Supports$expand.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUser](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUser?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -346,3 +349,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserPfxCertificateId <String>]`: The unique identifier of userPFXCertificate
 
 ## RELATED LINKS
+[Get-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUser](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUser?view=graph-powershell-v1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function filterByCurrentUser
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgFilterIdentityGovernancePrivilegedAccessGroupAssignmentApprovalByCurrentUser](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgFilterIdentityGovernancePrivilegedAccessGroupAssignmentApprovalByCurrentUser?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Filter (Default)
@@ -296,3 +299,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Invoke-MgFilterIdentityGovernancePrivilegedAccessGroupAssignmentApprovalByCurrentUser](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgFilterIdentityGovernancePrivilegedAccessGroupAssignmentApprovalByCurrentUser?view=graph-powershell-v1.0)

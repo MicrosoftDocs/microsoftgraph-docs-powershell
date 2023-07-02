@@ -13,6 +13,9 @@ Delete user.
 After that time, they are permanently deleted.
 To learn more, see deletedItems.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaUser](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -172,3 +175,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaBetaUser](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUser?view=graph-powershell-beta)

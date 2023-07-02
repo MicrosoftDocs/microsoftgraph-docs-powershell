@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get schema from applications
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaApplicationSynchronizationTemplateSchema](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationSynchronizationTemplateSchema?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -158,3 +161,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaBetaApplicationSynchronizationTemplateSchema](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationSynchronizationTemplateSchema?view=graph-powershell-beta)

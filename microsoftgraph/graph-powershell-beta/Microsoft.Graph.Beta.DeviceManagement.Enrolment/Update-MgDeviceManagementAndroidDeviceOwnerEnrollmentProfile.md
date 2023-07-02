@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property androidDeviceOwnerEnrollmentProfiles in deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementAndroidDeviceOwnerEnrollmentProfile](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Update-MgDeviceManagementAndroidDeviceOwnerEnrollmentProfile?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -595,3 +598,4 @@ QRCODEIMAGE `<IMicrosoftGraphMimeContent>`: Contains properties for a generic mi
   - `[Value <Byte[]>]`: The byte array that contains the actual content.
 
 ## RELATED LINKS
+[Update-MgDeviceManagementAndroidDeviceOwnerEnrollmentProfile](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Update-MgDeviceManagementAndroidDeviceOwnerEnrollmentProfile?view=graph-powershell-v1.0)

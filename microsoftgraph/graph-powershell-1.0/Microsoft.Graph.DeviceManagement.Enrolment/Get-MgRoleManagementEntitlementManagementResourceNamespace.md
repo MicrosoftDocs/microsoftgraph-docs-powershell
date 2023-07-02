@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get resourceNamespaces from roleManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementEntitlementManagementResourceNamespace](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Get-MgRoleManagementEntitlementManagementResourceNamespace?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -276,3 +279,4 @@ INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[Get-MgBetaRoleManagementEntitlementManagementResourceNamespace](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Get-MgRoleManagementEntitlementManagementResourceNamespace?view=graph-powershell-beta)

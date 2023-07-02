@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new industryDataConnector object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgExternalIndustryDataConnector](/powershell/module/Microsoft.Graph.Search/New-MgExternalIndustryDataConnector?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -233,3 +236,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Vendor <String>]`: The name of the vendor who supplies the source system. Maximum supported length is 100 characters.
 
 ## RELATED LINKS
+[New-MgExternalIndustryDataConnector](/powershell/module/Microsoft.Graph.Search/New-MgExternalIndustryDataConnector?view=graph-powershell-v1.0)

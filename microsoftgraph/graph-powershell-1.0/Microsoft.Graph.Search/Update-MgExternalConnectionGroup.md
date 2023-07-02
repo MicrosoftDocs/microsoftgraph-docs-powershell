@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of an externalGroup object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaExternalConnectionGroup](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaExternalConnectionGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -271,3 +274,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String>]`: identityType
 
 ## RELATED LINKS
+[Update-MgBetaBetaExternalConnectionGroup](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaExternalConnectionGroup?view=graph-powershell-beta)

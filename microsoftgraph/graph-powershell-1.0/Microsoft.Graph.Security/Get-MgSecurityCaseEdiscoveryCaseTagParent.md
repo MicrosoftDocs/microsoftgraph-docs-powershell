@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Returns the parent tag of the specified tag.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaSecurityCaseEdiscoveryCaseTagParent](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseTagParent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -164,3 +167,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
+[Get-MgBetaBetaSecurityCaseEdiscoveryCaseTagParent](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseTagParent?view=graph-powershell-beta)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action cancel
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Stop-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Stop-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Cancel (Default)
@@ -175,3 +178,4 @@ INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[Stop-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Stop-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest?view=graph-powershell-v1.0)

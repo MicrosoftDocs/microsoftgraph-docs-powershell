@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaEducationClassAssignmentResourceCount](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassAssignmentResourceCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -148,3 +151,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Get-MgBetaBetaEducationClassAssignmentResourceCount](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassAssignmentResourceCount?view=graph-powershell-beta)

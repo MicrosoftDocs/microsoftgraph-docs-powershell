@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property deviceRunStates in deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementDeviceHealthScriptDeviceRunState](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementDeviceHealthScriptDeviceRunState?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -9925,5 +9928,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[TamperProtectionEnabled <Boolean?>]`: Indicates whether the Windows Defender tamper protection feature is enabled.
 
 ## RELATED LINKS
+[Update-MgDeviceManagementDeviceHealthScriptDeviceRunState](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementDeviceHealthScriptDeviceRunState?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgDeviceManagementDeviceHealthScriptDeviceRunState](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementDeviceHealthScriptDeviceRunState?view=graph-powershell-v1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property reviewSets in compliance
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgComplianceEdiscoveryCaseReviewSet](/powershell/module/Microsoft.Graph.Compliance/Update-MgComplianceEdiscoveryCaseReviewSet?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -334,3 +337,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Query <String>]`: The query string in KQL (Keyword Query Language) query. For details, see Document metadata fields in Advanced eDiscovery.  This field maps directly to the keywords condition.  You can refine searches by using fields listed in the searchable field name paired with values; for example, subject:'Quarterly Financials' AND Date>=06/01/2016 AND Date<=07/01/2016.
 
 ## RELATED LINKS
+[Update-MgComplianceEdiscoveryCaseReviewSet](/powershell/module/Microsoft.Graph.Compliance/Update-MgComplianceEdiscoveryCaseReviewSet?view=graph-powershell-v1.0)

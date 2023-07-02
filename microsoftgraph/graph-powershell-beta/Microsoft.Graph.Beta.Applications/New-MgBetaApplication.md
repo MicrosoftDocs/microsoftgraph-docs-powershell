@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new application object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgApplication](/powershell/module/Microsoft.Graph.Applications/New-MgApplication?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -2264,5 +2267,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[RedirectUris <String[]>]`: Specifies the URLs where user tokens are sent for sign-in or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent. Only available for applications that support the PersonalMicrosoftAccount signInAudience.
 
 ## RELATED LINKS
+[New-MgApplication](/powershell/module/Microsoft.Graph.Applications/New-MgApplication?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgApplication](/powershell/module/Microsoft.Graph.Applications/New-MgApplication?view=graph-powershell-v1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The Windows autopilot device identities contained collection.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementWindowAutopilotDeviceIdentity](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Get-MgDeviceManagementWindowAutopilotDeviceIdentity?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List1 (Default)
@@ -276,3 +279,4 @@ INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[Get-MgBetaDeviceManagementWindowAutopilotDeviceIdentity](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Get-MgDeviceManagementWindowAutopilotDeviceIdentity?view=graph-powershell-beta)

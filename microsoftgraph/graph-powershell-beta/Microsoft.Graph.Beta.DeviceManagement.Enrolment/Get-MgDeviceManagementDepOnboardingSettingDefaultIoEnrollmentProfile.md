@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Default iOS Enrollment Profile
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementDepOnboardingSettingDefaultIoEnrollmentProfile](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Get-MgDeviceManagementDepOnboardingSettingDefaultIoEnrollmentProfile?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -149,3 +152,4 @@ INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[Get-MgDeviceManagementDepOnboardingSettingDefaultIoEnrollmentProfile](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Get-MgDeviceManagementDepOnboardingSettingDefaultIoEnrollmentProfile?view=graph-powershell-v1.0)

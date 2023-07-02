@@ -12,6 +12,9 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaEducationUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationUserMailboxSetting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -137,3 +140,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Get-MgBetaBetaEducationUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationUserMailboxSetting?view=graph-powershell-beta)

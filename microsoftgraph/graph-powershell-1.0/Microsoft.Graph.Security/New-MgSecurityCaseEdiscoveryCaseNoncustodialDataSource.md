@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new ediscoveryNoncustodialDataSource object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -391,3 +394,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
+[New-MgBetaBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource?view=graph-powershell-beta)

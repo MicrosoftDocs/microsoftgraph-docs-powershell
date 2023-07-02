@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of an industryDataConnector object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgExternalIndustryDataConnector](/powershell/module/Microsoft.Graph.Search/Update-MgExternalIndustryDataConnector?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -298,3 +301,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Vendor <String>]`: The name of the vendor who supplies the source system. Maximum supported length is 100 characters.
 
 ## RELATED LINKS
+[Update-MgExternalIndustryDataConnector](/powershell/module/Microsoft.Graph.Search/Update-MgExternalIndustryDataConnector?view=graph-powershell-v1.0)

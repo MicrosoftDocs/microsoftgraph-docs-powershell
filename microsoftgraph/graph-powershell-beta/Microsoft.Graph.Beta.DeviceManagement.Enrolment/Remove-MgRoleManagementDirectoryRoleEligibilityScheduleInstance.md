@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property roleEligibilityScheduleInstances for roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgRoleManagementDirectoryRoleEligibilityScheduleInstance](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Remove-MgRoleManagementDirectoryRoleEligibilityScheduleInstance?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -181,3 +184,4 @@ INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[Remove-MgRoleManagementDirectoryRoleEligibilityScheduleInstance](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Remove-MgRoleManagementDirectoryRoleEligibilityScheduleInstance?view=graph-powershell-v1.0)

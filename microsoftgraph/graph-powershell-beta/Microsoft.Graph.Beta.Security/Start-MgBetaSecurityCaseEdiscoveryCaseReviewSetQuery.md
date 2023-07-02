@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function run
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Start-MgSecurityCaseEdiscoveryCaseReviewSetQuery](/powershell/module/Microsoft.Graph.Security/Start-MgSecurityCaseEdiscoveryCaseReviewSetQuery?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Run (Default)
@@ -282,3 +285,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
+[Start-MgSecurityCaseEdiscoveryCaseReviewSetQuery](/powershell/module/Microsoft.Graph.Security/Start-MgSecurityCaseEdiscoveryCaseReviewSetQuery?view=graph-powershell-v1.0)

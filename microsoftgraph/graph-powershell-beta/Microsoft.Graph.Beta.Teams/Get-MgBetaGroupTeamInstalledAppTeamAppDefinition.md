@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The details of this version of the app.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupTeamInstalledAppTeamAppDefinition](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamInstalledAppTeamAppDefinition?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -179,3 +182,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgGroupTeamInstalledAppTeamAppDefinition](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamInstalledAppTeamAppDefinition?view=graph-powershell-v1.0)

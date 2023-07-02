@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property assignments in deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementScriptAssignment](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementScriptAssignment?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -369,5 +372,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
 ## RELATED LINKS
+[Update-MgDeviceManagementScriptAssignment](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementScriptAssignment?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgDeviceManagementScriptAssignment](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementScriptAssignment?view=graph-powershell-v1.0)

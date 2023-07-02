@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The Windows autopilot account settings.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementWindowAutopilotSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Get-MgDeviceManagementWindowAutopilotSetting?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```
@@ -67,3 +70,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgDeviceManagementWindowAutopilotSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Get-MgDeviceManagementWindowAutopilotSetting?view=graph-powershell-v1.0)

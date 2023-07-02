@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the properties and relationships of a skillproficiency object in a user's profile.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserProfileSkill](/powershell/module/Microsoft.Graph.People/Get-MgUserProfileSkill?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -292,3 +295,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkPositionId <String>]`: The unique identifier of workPosition
 
 ## RELATED LINKS
+[Get-MgUserProfileSkill](/powershell/module/Microsoft.Graph.People/Get-MgUserProfileSkill?view=graph-powershell-v1.0)

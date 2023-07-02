@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to resourceNamespaces for roleManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaRoleManagementDirectoryResourceNamespace](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/New-MgRoleManagementDirectoryResourceNamespace?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -182,3 +185,4 @@ RESOURCEACTIONS <IMicrosoftGraphUnifiedRbacResourceAction\[]>: .
   - `[ResourceScopeId <String>]`: 
 
 ## RELATED LINKS
+[New-MgBetaRoleManagementDirectoryResourceNamespace](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/New-MgRoleManagementDirectoryResourceNamespace?view=graph-powershell-beta)

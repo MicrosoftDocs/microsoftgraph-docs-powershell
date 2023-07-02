@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property extensions in devices
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaDeviceExtension](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDeviceExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -223,3 +226,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Update-MgBetaBetaDeviceExtension](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDeviceExtension?view=graph-powershell-beta)

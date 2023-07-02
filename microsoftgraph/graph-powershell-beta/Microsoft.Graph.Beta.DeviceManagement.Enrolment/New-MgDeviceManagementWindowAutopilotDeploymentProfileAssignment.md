@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to assignments for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementWindowAutopilotDeploymentProfileAssignment](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/New-MgDeviceManagementWindowAutopilotDeploymentProfileAssignment?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -277,3 +280,4 @@ TARGET `<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>`: Base type for
   - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
 ## RELATED LINKS
+[New-MgDeviceManagementWindowAutopilotDeploymentProfileAssignment](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/New-MgDeviceManagementWindowAutopilotDeploymentProfileAssignment?view=graph-powershell-v1.0)

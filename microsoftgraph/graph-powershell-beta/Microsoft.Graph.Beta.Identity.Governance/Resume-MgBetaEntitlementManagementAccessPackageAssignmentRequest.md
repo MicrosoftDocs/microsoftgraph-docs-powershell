@@ -11,6 +11,9 @@ schema: 2.0.0
 In Azure AD entitlement management, when an access package policy has been enabled to call out a custom extension and the request processing is waiting for the callback from the customer, the customer can initiate a resume action.
 It is performed on an accessPackageAssignmentRequest object whose **requestStatus** is in a `WaitingForCallback` state.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Resume-MgEntitlementManagementAccessPackageAssignmentRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Resume-MgEntitlementManagementAccessPackageAssignmentRequest?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### ResumeExpanded (Default)
@@ -337,3 +340,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Resume-MgEntitlementManagementAccessPackageAssignmentRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Resume-MgEntitlementManagementAccessPackageAssignmentRequest?view=graph-powershell-v1.0)

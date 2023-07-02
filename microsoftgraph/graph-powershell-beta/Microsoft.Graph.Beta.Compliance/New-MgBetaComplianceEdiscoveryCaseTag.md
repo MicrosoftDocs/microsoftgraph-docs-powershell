@@ -11,6 +11,9 @@ schema: 2.0.0
 Create a new tag for the specified case.
 The tags are used in review sets while reviewing content.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgComplianceEdiscoveryCaseTag](/powershell/module/Microsoft.Graph.Compliance/New-MgComplianceEdiscoveryCaseTag?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -377,3 +380,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Parent <IMicrosoftGraphEdiscoveryTag>]`: tag
 
 ## RELATED LINKS
+[New-MgComplianceEdiscoveryCaseTag](/powershell/module/Microsoft.Graph.Compliance/New-MgComplianceEdiscoveryCaseTag?view=graph-powershell-v1.0)

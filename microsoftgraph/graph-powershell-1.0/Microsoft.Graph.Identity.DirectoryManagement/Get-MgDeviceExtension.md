@@ -12,6 +12,9 @@ The collection of open extensions defined for the device.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaDeviceExtension](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDeviceExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -296,3 +299,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaBetaDeviceExtension](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDeviceExtension?view=graph-powershell-beta)

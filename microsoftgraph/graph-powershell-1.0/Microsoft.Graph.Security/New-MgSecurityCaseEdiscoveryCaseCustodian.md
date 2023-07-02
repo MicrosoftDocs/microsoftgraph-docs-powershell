@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new ediscoveryCustodian object.nAfter the custodian object is created, you will need to create the custodian's userSource to reference their mailbox and OneDrive for Business site.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBetaSecurityCaseEdiscoveryCaseCustodian](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityCaseEdiscoveryCaseCustodian?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -8267,5 +8270,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[SiteWebUrl <String>]`: The URL of the user's OneDrive for Business site. Read-only.
 
 ## RELATED LINKS
+[New-MgBetaBetaSecurityCaseEdiscoveryCaseCustodian](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityCaseEdiscoveryCaseCustodian?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[New-MgBetaBetaSecurityCaseEdiscoveryCaseCustodian](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityCaseEdiscoveryCaseCustodian?view=graph-powershell-beta)

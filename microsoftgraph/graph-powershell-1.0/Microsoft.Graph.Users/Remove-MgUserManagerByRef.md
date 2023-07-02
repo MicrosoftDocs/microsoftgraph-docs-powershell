@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Remove a user's manager.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaUserManagerByRef](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserManagerByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -162,3 +165,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaBetaUserManagerByRef](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserManagerByRef?view=graph-powershell-beta)

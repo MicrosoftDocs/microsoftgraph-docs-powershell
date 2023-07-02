@@ -11,6 +11,9 @@ schema: 2.0.0
 Run an estimate of the number of emails and documents in the eDiscovery search.
 To learn more about searches in eDiscovery, see Collect data for a case in eDiscovery (Premium).
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaBetaEstimateSecurityCaseEdiscoveryCaseSearchStatistics](/powershell/module/Microsoft.Graph.Beta.Security/Invoke-MgBetaEstimateSecurityCaseEdiscoveryCaseSearchStatistics?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Estimate (Default)
@@ -174,3 +177,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
+[Invoke-MgBetaBetaEstimateSecurityCaseEdiscoveryCaseSearchStatistics](/powershell/module/Microsoft.Graph.Beta.Security/Invoke-MgBetaEstimateSecurityCaseEdiscoveryCaseSearchStatistics?view=graph-powershell-beta)

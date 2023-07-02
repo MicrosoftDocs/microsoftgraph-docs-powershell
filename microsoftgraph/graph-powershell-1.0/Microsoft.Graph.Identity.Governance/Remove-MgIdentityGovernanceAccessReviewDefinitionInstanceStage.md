@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property stages for identityGovernance
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaIdentityGovernanceAccessReviewDefinitionInstanceStage](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -228,3 +231,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaBetaIdentityGovernanceAccessReviewDefinitionInstanceStage](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStage?view=graph-powershell-beta)

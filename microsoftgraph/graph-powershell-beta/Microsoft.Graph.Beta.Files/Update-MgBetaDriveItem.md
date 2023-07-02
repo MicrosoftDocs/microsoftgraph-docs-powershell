@@ -11,6 +11,9 @@ schema: 2.0.0
 Update the metadata for a DriveItem by ID or path.
 You can also use update to move an item to another parent by updating the item's **parentReference** property.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDriveItem](/powershell/module/Microsoft.Graph.Files/Update-MgDriveItem?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -34509,5 +34512,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Worksheets <IMicrosoftGraphWorkbookWorksheet[]>]`: Represents a collection of worksheets associated with the workbook. Read-only.
 
 ## RELATED LINKS
+[Update-MgDriveItem](/powershell/module/Microsoft.Graph.Files/Update-MgDriveItem?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgDriveItem](/powershell/module/Microsoft.Graph.Files/Update-MgDriveItem?view=graph-powershell-v1.0)

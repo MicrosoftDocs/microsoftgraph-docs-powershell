@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get roleEligibilitySchedules from roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementDirectoryRoleEligibilitySchedule](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Get-MgRoleManagementDirectoryRoleEligibilitySchedule?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -342,3 +345,4 @@ INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[Get-MgRoleManagementDirectoryRoleEligibilitySchedule](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Get-MgRoleManagementDirectoryRoleEligibilitySchedule?view=graph-powershell-v1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Remove a user as a registered user of the device.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaDeviceRegisteredUserByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDeviceRegisteredUserByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -205,3 +208,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaBetaDeviceRegisteredUserByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDeviceRegisteredUserByRef?view=graph-powershell-beta)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action importResourceActions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Import-MgBetaRoleManagementCloudPcResourceNamespaceResourceAction](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Import-MgRoleManagementCloudPcResourceNamespaceResourceAction?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ImportExpanded (Default)
@@ -206,6 +209,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 Please use Get-Help -Online.
 
 ## RELATED LINKS
+[Import-MgBetaRoleManagementCloudPcResourceNamespaceResourceAction](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Import-MgRoleManagementCloudPcResourceNamespaceResourceAction?view=graph-powershell-beta)
 
 [https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/import-mgrolemanagementcloudpcresourcenamespaceresourceaction](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/import-mgrolemanagementcloudpcresourcenamespaceresourceaction)
 

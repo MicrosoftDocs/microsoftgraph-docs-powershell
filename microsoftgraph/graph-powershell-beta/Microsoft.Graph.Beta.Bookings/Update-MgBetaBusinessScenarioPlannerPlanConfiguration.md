@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of a plannerPlanConfiguration object for a businessScenario.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgBusinessScenarioPlannerPlanConfiguration](/powershell/module/Microsoft.Graph.Bookings/Update-MgBusinessScenarioPlannerPlanConfiguration?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -379,3 +382,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[PlanTitle <String>]`: Localized title of the plan.
 
 ## RELATED LINKS
+[Update-MgBusinessScenarioPlannerPlanConfiguration](/powershell/module/Microsoft.Graph.Bookings/Update-MgBusinessScenarioPlannerPlanConfiguration?view=graph-powershell-v1.0)

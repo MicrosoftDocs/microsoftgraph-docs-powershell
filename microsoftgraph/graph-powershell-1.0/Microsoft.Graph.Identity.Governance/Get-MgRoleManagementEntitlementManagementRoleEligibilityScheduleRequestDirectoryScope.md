@@ -12,6 +12,9 @@ The directory object that is the scope of the role eligibility.
 Read-only.
 Supports $expand.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaRoleManagementEntitlementManagementRoleEligibilityScheduleRequestDirectoryScope](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleRequestDirectoryScope?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -168,3 +171,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaBetaRoleManagementEntitlementManagementRoleEligibilityScheduleRequestDirectoryScope](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleRequestDirectoryScope?view=graph-powershell-beta)

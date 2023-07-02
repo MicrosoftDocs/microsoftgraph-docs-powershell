@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgWindowsUpdatesDeploymentAudienceExclusionCount](/powershell/module/Microsoft.Graph.WindowsUpdates/Get-MgWindowsUpdatesDeploymentAudienceExclusionCount?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -131,3 +134,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UpdatePolicyId <String>]`: The unique identifier of updatePolicy
 
 ## RELATED LINKS
+[Get-MgWindowsUpdatesDeploymentAudienceExclusionCount](/powershell/module/Microsoft.Graph.WindowsUpdates/Get-MgWindowsUpdatesDeploymentAudienceExclusionCount?view=graph-powershell-v1.0)

@@ -11,6 +11,9 @@ schema: 2.0.0
 Run and generate diagnostic logs for the specified Microsoft Teams-enabled device.
 This API triggers a long-running operation used to generate logs for a device.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Start-MgTeamworkDeviceDiagnostic](/powershell/module/Microsoft.Graph.Teams/Start-MgTeamworkDeviceDiagnostic?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Run (Default)
@@ -174,3 +177,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Start-MgTeamworkDeviceDiagnostic](/powershell/module/Microsoft.Graph.Teams/Start-MgTeamworkDeviceDiagnostic?view=graph-powershell-v1.0)

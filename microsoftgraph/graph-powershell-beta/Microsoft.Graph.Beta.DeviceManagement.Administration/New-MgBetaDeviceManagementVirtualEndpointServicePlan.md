@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to servicePlans for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementVirtualEndpointServicePlan](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementVirtualEndpointServicePlan?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -281,3 +284,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VCpuCount <Int32?>]`: The number of vCPUs. Read-only.
 
 ## RELATED LINKS
+[New-MgDeviceManagementVirtualEndpointServicePlan](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementVirtualEndpointServicePlan?view=graph-powershell-v1.0)

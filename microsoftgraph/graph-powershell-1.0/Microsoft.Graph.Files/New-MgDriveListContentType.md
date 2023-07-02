@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to contentTypes for drives
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBetaDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveListContentType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -1536,5 +1539,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Position <Int32?>]`: Specifies the position in which the Content Type appears in the selection UI.
 
 ## RELATED LINKS
+[New-MgBetaBetaDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveListContentType?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[New-MgBetaBetaDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveListContentType?view=graph-powershell-beta)

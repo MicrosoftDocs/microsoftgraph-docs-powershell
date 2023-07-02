@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to reusableSettings for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementReusableSetting](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementReusableSetting?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -472,3 +475,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[SettingDefinitionId <String>]`: Setting definition id that is being referred to a setting. Applicable for reusable setting.
 
 ## RELATED LINKS
+[New-MgDeviceManagementReusableSetting](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementReusableSetting?view=graph-powershell-v1.0)

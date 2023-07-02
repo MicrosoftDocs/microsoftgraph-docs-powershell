@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action stop
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Stop-MgBetaBetaIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Stop-MgBetaIdentityGovernanceAccessReviewDefinition?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Stop (Default)
@@ -182,3 +185,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Stop-MgBetaBetaIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Stop-MgBetaIdentityGovernanceAccessReviewDefinition?view=graph-powershell-beta)

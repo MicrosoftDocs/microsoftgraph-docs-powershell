@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Request remote assistance
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Request-MgBetaBetaUserManagedDeviceRemoteAssistance](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Request-MgBetaUserManagedDeviceRemoteAssistance?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Request (Default)
@@ -186,3 +189,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Request-MgBetaBetaUserManagedDeviceRemoteAssistance](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Request-MgBetaUserManagedDeviceRemoteAssistance?view=graph-powershell-beta)

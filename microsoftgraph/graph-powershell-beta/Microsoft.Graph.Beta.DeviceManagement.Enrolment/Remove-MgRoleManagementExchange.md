@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property exchange for roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgRoleManagementExchange](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Remove-MgRoleManagementExchange?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```
@@ -97,3 +100,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Remove-MgRoleManagementExchange](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Remove-MgRoleManagementExchange?view=graph-powershell-v1.0)

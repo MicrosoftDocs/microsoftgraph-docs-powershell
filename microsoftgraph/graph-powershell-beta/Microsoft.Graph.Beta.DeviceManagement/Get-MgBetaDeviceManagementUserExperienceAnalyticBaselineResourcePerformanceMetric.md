@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The user experience analytics resource performance metrics.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementUserExperienceAnalyticBaselineResourcePerformanceMetric](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticBaselineResourcePerformanceMetric?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -263,5 +266,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
 ## RELATED LINKS
+[Get-MgDeviceManagementUserExperienceAnalyticBaselineResourcePerformanceMetric](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticBaselineResourcePerformanceMetric?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Get-MgDeviceManagementUserExperienceAnalyticBaselineResourcePerformanceMetric](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticBaselineResourcePerformanceMetric?view=graph-powershell-v1.0)

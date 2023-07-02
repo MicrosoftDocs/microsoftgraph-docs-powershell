@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieves the educationUser members of an educationClass.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaEducationClassMember](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassMember?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
@@ -210,3 +213,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaBetaEducationClassMember](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassMember?view=graph-powershell-beta)

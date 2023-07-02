@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getTopMobileApps
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementMobileAppTopMobileApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppTopMobileApp?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -281,6 +284,7 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
   \[WindowsManagedAppProtectionId \<String\>\]: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
+[Get-MgDeviceAppManagementMobileAppTopMobileApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppTopMobileApp?view=graph-powershell-v1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementmobileapptopmobileapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementmobileapptopmobileapp)
 

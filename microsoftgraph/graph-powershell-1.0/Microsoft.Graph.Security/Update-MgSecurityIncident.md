@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of an incident object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaSecurityIncident](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityIncident?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -532,5 +535,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
+[Update-MgBetaBetaSecurityIncident](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityIncident?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaBetaSecurityIncident](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityIncident?view=graph-powershell-beta)

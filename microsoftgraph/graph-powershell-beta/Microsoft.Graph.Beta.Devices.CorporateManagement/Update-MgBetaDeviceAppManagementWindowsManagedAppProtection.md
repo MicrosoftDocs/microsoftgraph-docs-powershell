@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property windowsManagedAppProtections in deviceAppManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceAppManagementWindowsManagedAppProtection](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementWindowsManagedAppProtection?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -809,5 +812,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
+[Update-MgDeviceAppManagementWindowsManagedAppProtection](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementWindowsManagedAppProtection?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgDeviceAppManagementWindowsManagedAppProtection](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementWindowsManagedAppProtection?view=graph-powershell-v1.0)

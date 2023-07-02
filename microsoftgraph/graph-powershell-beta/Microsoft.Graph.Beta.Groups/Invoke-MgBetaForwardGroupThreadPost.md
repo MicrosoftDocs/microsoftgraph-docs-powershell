@@ -11,6 +11,9 @@ schema: 2.0.0
 Forward a post to a recipient.
 You can specify both the parent conversation and thread in the request, nor, you can specify just the parent thread without the parent conversation.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgForwardGroupThreadPost](/powershell/module/Microsoft.Graph.Groups/Invoke-MgForwardGroupThreadPost?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### ForwardExpanded (Default)
@@ -316,3 +319,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[Name <String>]`: The display name of an entity instance.
 
 ## RELATED LINKS
+[Invoke-MgForwardGroupThreadPost](/powershell/module/Microsoft.Graph.Groups/Invoke-MgForwardGroupThreadPost?view=graph-powershell-v1.0)

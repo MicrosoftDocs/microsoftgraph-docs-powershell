@@ -11,6 +11,9 @@ schema: 2.0.0
 Create a delegated permission grant represented by an oAuth2PermissionGrant object.
 A delegated permission grant authorizes a client service principal (representing a client application) to access a resource service principal (representing an API), on behalf of a signed-in user, for the level of access limited by the delegated permissions which were granted.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBetaOauth2PermissionGrant](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaOauth2PermissionGrant?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -245,3 +248,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Scope <String>]`: A space-separated list of the claim values for delegated permissions which should be included in access tokens for the resource application (the API). For example, openid User.Read GroupMember.Read.All. Each claim value should match the value field of one of the delegated permissions defined by the API, listed in the oauth2PermissionScopes property of the resource service principal. Must not exceed 3850 characters in length.
 
 ## RELATED LINKS
+[New-MgBetaBetaOauth2PermissionGrant](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaOauth2PermissionGrant?view=graph-powershell-beta)

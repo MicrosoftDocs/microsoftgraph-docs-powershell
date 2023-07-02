@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get posts from groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaGroupThreadPost](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupThreadPost?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -310,3 +313,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+[Get-MgBetaBetaGroupThreadPost](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupThreadPost?view=graph-powershell-beta)

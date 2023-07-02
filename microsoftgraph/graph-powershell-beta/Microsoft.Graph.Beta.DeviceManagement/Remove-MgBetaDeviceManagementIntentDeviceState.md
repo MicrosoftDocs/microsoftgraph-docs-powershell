@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property deviceStates for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceManagementIntentDeviceState](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementIntentDeviceState?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -307,5 +310,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
 ## RELATED LINKS
+[Remove-MgDeviceManagementIntentDeviceState](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementIntentDeviceState?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Remove-MgDeviceManagementIntentDeviceState](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementIntentDeviceState?view=graph-powershell-v1.0)

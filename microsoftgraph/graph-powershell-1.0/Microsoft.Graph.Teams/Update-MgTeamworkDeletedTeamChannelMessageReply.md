@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property replies in teamwork
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaTeamworkDeletedTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamworkDeletedTeamChannelMessageReply?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -912,5 +915,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebUrl <String>]`: Read-only. Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
+[Update-MgBetaBetaTeamworkDeletedTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamworkDeletedTeamChannelMessageReply?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaBetaTeamworkDeletedTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamworkDeletedTeamChannelMessageReply?view=graph-powershell-beta)

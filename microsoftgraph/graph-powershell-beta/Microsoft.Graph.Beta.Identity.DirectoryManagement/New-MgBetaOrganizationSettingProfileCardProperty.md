@@ -12,6 +12,9 @@ Create a new profileCardProperty for an organization.
 The new property is identified by its **directoryPropertyName** property.
 For more information on adding properties to the profile card for an organization, see customize the profile card.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgOrganizationSettingProfileCardProperty](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgOrganizationSettingProfileCardProperty?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -286,3 +289,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[New-MgOrganizationSettingProfileCardProperty](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgOrganizationSettingProfileCardProperty?view=graph-powershell-v1.0)

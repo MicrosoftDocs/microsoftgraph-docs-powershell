@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get directories from servicePrincipals
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaServicePrincipalSynchronizationJobSchemaDirectory](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalSynchronizationJobSchemaDirectory?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -303,3 +306,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaBetaServicePrincipalSynchronizationJobSchemaDirectory](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalSynchronizationJobSchemaDirectory?view=graph-powershell-beta)

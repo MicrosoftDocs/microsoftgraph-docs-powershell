@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property windowsAutopilotDeviceIdentities for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceManagementWindowAutopilotDeviceIdentity](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Remove-MgDeviceManagementWindowAutopilotDeviceIdentity?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete1 (Default)
@@ -179,3 +182,4 @@ INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[Remove-MgDeviceManagementWindowAutopilotDeviceIdentity](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Remove-MgDeviceManagementWindowAutopilotDeviceIdentity?view=graph-powershell-v1.0)

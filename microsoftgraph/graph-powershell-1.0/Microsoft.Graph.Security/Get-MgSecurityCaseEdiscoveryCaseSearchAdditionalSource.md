@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Adds an additional source to the eDiscovery search.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaSecurityCaseEdiscoveryCaseSearchAdditionalSource](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseSearchAdditionalSource?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -300,3 +303,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
+[Get-MgBetaBetaSecurityCaseEdiscoveryCaseSearchAdditionalSource](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseSearchAdditionalSource?view=graph-powershell-beta)

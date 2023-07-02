@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update roleManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaRoleManagement](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Update-MgRoleManagement?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -806,8 +809,11 @@ ENTITLEMENTMANAGEMENT `<IMicrosoftGraphRbacApplication1>`: rbacApplication
   - `[RoleEligibilitySchedules <IMicrosoftGraphUnifiedRoleEligibilitySchedule[]>]`: Schedules for role eligibility operations.
 
 ## RELATED LINKS
+[Update-MgBetaRoleManagement](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Update-MgRoleManagement?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaRoleManagement](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Update-MgRoleManagement?view=graph-powershell-beta)
 
 
 ## RELATED LINKS
+[Update-MgBetaRoleManagement](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Update-MgRoleManagement?view=graph-powershell-beta)

@@ -11,6 +11,9 @@ schema: 2.0.0
 Unshare a channel with a team by deleting the corresponding sharedWithChannelTeamInfo resource.
 This operation is allowed only for channels with a **membershipType** value of `shared`.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaTeamworkDeletedTeamChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamworkDeletedTeamChannelSharedWithTeam?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -218,3 +221,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Remove-MgBetaBetaTeamworkDeletedTeamChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamworkDeletedTeamChannelSharedWithTeam?view=graph-powershell-beta)

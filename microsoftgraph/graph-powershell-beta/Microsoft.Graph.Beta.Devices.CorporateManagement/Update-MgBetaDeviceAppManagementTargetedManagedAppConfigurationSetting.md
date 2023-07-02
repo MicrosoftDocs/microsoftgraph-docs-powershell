@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property settings in deviceAppManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceAppManagementTargetedManagedAppConfigurationSetting](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementTargetedManagedAppConfigurationSetting?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -383,5 +386,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[SettingInstanceTemplateId <String>]`: Setting instance template id
 
 ## RELATED LINKS
+[Update-MgDeviceAppManagementTargetedManagedAppConfigurationSetting](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementTargetedManagedAppConfigurationSetting?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgDeviceAppManagementTargetedManagedAppConfigurationSetting](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementTargetedManagedAppConfigurationSetting?view=graph-powershell-v1.0)

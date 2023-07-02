@@ -11,6 +11,9 @@ schema: 2.0.0
 The to [term] of the relation.
 The term to which the relationship is defined.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaGroupSiteTermStoreGroupSetRelationToTerm](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteTermStoreGroupSetRelationToTerm?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -255,3 +258,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaBetaGroupSiteTermStoreGroupSetRelationToTerm](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteTermStoreGroupSetRelationToTerm?view=graph-powershell-beta)

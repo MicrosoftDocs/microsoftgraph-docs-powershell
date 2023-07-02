@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getSkypeForBusinessOrganizerActivityMinuteCounts
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaReportSkypeForBusinessOrganizerActivityMinuteCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSkypeForBusinessOrganizerActivityMinuteCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -144,3 +147,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: Usage: userId='{userId}'
 
 ## RELATED LINKS
+[Get-MgBetaBetaReportSkypeForBusinessOrganizerActivityMinuteCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSkypeForBusinessOrganizerActivityMinuteCount?view=graph-powershell-beta)

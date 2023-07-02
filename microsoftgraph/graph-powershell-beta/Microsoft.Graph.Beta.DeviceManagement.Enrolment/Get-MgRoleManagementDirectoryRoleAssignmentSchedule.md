@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get roleAssignmentSchedules from roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementDirectoryRoleAssignmentSchedule](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Get-MgRoleManagementDirectoryRoleAssignmentSchedule?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -367,3 +370,4 @@ INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[Get-MgRoleManagementDirectoryRoleAssignmentSchedule](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Get-MgRoleManagementDirectoryRoleAssignmentSchedule?view=graph-powershell-v1.0)

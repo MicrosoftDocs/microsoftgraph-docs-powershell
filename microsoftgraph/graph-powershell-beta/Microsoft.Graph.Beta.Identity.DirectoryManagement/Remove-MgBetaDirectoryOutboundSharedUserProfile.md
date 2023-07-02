@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property outboundSharedUserProfiles for directory
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDirectoryOutboundSharedUserProfile](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDirectoryOutboundSharedUserProfile?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -194,3 +197,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgDirectoryOutboundSharedUserProfile](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDirectoryOutboundSharedUserProfile?view=graph-powershell-v1.0)

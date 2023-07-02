@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get unifiedGroupSources from compliance
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgComplianceEdiscoveryCaseLegalHoldUnifiedGroupSource](/powershell/module/Microsoft.Graph.Compliance/Get-MgComplianceEdiscoveryCaseLegalHoldUnifiedGroupSource?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -299,3 +302,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
+[Get-MgComplianceEdiscoveryCaseLegalHoldUnifiedGroupSource](/powershell/module/Microsoft.Graph.Compliance/Get-MgComplianceEdiscoveryCaseLegalHoldUnifiedGroupSource?view=graph-powershell-v1.0)

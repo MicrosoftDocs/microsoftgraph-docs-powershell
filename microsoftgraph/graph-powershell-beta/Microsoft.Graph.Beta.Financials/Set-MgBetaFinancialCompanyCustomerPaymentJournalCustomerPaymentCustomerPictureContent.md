@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update content for the navigation property picture in financials
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgFinancialCompanyCustomerPaymentJournalCustomerPaymentCustomerPictureContent](/powershell/module/Microsoft.Graph.Financials/Set-MgFinancialCompanyCustomerPaymentJournalCustomerPaymentCustomerPictureContent?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Set (Default)
@@ -243,3 +246,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VendorId <String>]`: The unique identifier of vendor
 
 ## RELATED LINKS
+[Set-MgFinancialCompanyCustomerPaymentJournalCustomerPaymentCustomerPictureContent](/powershell/module/Microsoft.Graph.Financials/Set-MgFinancialCompanyCustomerPaymentJournalCustomerPaymentCustomerPictureContent?view=graph-powershell-v1.0)

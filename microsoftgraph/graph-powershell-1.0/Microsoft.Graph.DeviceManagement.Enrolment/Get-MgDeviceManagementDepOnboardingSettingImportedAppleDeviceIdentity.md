@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The imported Apple device identities.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Get-MgDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -257,6 +260,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 Please use Get-Help -Online.
 
 ## RELATED LINKS
+[Get-MgBetaDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Get-MgDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity?view=graph-powershell-beta)
 
 [https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/get-mgdevicemanagementdeponboardingsettingimportedappledeviceidentity](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/get-mgdevicemanagementdeponboardingsettingimportedappledeviceidentity)
 

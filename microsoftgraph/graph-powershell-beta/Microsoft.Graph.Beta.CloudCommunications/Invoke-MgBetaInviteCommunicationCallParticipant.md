@@ -11,6 +11,9 @@ schema: 2.0.0
 Invite participants to the active call.
 For more information about how to handle operations, see commsOperation.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgInviteCommunicationCallParticipant](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgInviteCommunicationCallParticipant?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### InviteExpanded (Default)
@@ -418,3 +421,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ReplacesCallId <String>]`: Optional. The call which the target identity is currently a part of. For peer-to-peer case, the call will be dropped once the participant is added successfully.
 
 ## RELATED LINKS
+[Invoke-MgInviteCommunicationCallParticipant](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgInviteCommunicationCallParticipant?view=graph-powershell-v1.0)

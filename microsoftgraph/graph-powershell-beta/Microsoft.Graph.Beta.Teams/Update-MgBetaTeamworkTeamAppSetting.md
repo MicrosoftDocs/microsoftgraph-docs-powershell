@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of a teamsAppSettings object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgTeamworkTeamAppSetting](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamworkTeamAppSetting?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -176,3 +179,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[IsChatResourceSpecificConsentEnabled <Boolean?>]`: Indicates whether resource-specific consent for chats/meetings has been enabled for the tenant. If true, Teams apps that are allowed in the tenant and require resource-specific permissions can be installed inside chats and meetings. If false, the installation of any Teams app that requires resource-specific permissions in a chat or a meeting will be blocked.
 
 ## RELATED LINKS
+[Update-MgTeamworkTeamAppSetting](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamworkTeamAppSetting?view=graph-powershell-v1.0)

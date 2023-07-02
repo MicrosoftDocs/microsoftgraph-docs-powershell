@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new b2xIdentityUserFlow object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBetaIdentityB2XUserFlow](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityB2XUserFlow?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -356,5 +359,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[DisplayName <String>]`: The display name of the identity provider.
 
 ## RELATED LINKS
+[New-MgBetaBetaIdentityB2XUserFlow](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityB2XUserFlow?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[New-MgBetaBetaIdentityB2XUserFlow](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityB2XUserFlow?view=graph-powershell-beta)

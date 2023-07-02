@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property roleEligibilityScheduleRequests in roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgRoleManagementDirectoryRoleEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Update-MgRoleManagementDirectoryRoleEligibilityScheduleRequest?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -826,8 +829,11 @@ TICKETINFO `<IMicrosoftGraphTicketInfo>`: ticketInfo
   - `[TicketSystem <String>]`: The description of the ticket system.
 
 ## RELATED LINKS
+[Update-MgRoleManagementDirectoryRoleEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Update-MgRoleManagementDirectoryRoleEligibilityScheduleRequest?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgRoleManagementDirectoryRoleEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Update-MgRoleManagementDirectoryRoleEligibilityScheduleRequest?view=graph-powershell-v1.0)
 
 
 ## RELATED LINKS
+[Update-MgRoleManagementDirectoryRoleEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Update-MgRoleManagementDirectoryRoleEligibilityScheduleRequest?view=graph-powershell-v1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property importedAppleDeviceIdentities for deviceManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Remove-MgDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -160,6 +163,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 Please use Get-Help -Online.
 
 ## RELATED LINKS
+[Remove-MgBetaDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Remove-MgDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity?view=graph-powershell-beta)
 
 [https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/remove-mgdevicemanagementdeponboardingsettingimportedappledeviceidentity](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/remove-mgdevicemanagementdeponboardingsettingimportedappledeviceidentity)
 

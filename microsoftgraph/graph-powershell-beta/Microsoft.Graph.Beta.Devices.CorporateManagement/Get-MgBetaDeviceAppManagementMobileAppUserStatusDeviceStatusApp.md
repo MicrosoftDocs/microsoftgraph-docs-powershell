@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The navigation link to the mobile app.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementMobileAppUserStatusDeviceStatusApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppUserStatusDeviceStatusApp?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -221,6 +224,7 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
   \[WindowsManagedAppProtectionId \<String\>\]: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
+[Get-MgDeviceAppManagementMobileAppUserStatusDeviceStatusApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppUserStatusDeviceStatusApp?view=graph-powershell-v1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementmobileappuserstatusdevicestatusapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementmobileappuserstatusdevicestatusapp)
 

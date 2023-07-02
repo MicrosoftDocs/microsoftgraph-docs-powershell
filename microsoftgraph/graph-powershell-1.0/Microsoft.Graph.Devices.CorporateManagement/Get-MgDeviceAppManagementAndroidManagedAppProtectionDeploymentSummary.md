@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Navigation property to deployment summary of the configuration.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaDeviceAppManagementAndroidManagedAppProtectionDeploymentSummary](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementAndroidManagedAppProtectionDeploymentSummary?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -156,3 +159,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
 
 ## RELATED LINKS
+[Get-MgBetaBetaDeviceAppManagementAndroidManagedAppProtectionDeploymentSummary](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementAndroidManagedAppProtectionDeploymentSummary?view=graph-powershell-beta)

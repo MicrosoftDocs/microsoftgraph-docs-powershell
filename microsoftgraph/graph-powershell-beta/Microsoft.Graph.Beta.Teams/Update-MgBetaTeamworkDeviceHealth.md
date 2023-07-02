@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property health in teamwork
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgTeamworkDeviceHealth](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamworkDeviceHealth?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -519,5 +522,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[TeamsClientSoftwareUpdateStatus <IMicrosoftGraphTeamworkSoftwareUpdateStatus>]`: teamworkSoftwareUpdateStatus
 
 ## RELATED LINKS
+[Update-MgTeamworkDeviceHealth](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamworkDeviceHealth?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgTeamworkDeviceHealth](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamworkDeviceHealth?view=graph-powershell-v1.0)

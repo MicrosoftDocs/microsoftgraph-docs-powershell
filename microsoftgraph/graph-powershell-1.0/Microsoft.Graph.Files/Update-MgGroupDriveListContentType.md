@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property contentTypes in groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaGroupDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveListContentType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -1566,5 +1569,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Position <Int32?>]`: Specifies the position in which the Content Type appears in the selection UI.
 
 ## RELATED LINKS
+[Update-MgBetaBetaGroupDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveListContentType?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaBetaGroupDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveListContentType?view=graph-powershell-beta)

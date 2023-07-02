@@ -12,6 +12,9 @@ The pages in all OneNote notebooks that are owned by the user or group.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaUserOnenotePage](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaUserOnenotePage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -283,3 +286,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaBetaUserOnenotePage](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaUserOnenotePage?view=graph-powershell-beta)

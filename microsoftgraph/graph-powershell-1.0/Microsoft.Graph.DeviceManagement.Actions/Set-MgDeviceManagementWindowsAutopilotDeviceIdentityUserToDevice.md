@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Assigns user to Autopilot devices.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaBetaDeviceManagementWindowsAutopilotDeviceIdentityUserToDevice](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Set-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityUserToDevice?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AssignExpanded (Default)
@@ -233,3 +236,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
+[Set-MgBetaBetaDeviceManagementWindowsAutopilotDeviceIdentityUserToDevice](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Set-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityUserToDevice?view=graph-powershell-beta)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getOmaSettingPlainTextValue
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaDeviceManagementDeviceConfigurationOmaSettingPlainTextValue](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Functions/Get-MgBetaDeviceManagementDeviceConfigurationOmaSettingPlainTextValue?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -117,3 +120,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[SecretReferenceValueId <String>]`: Usage: secretReferenceValueId='{secretReferenceValueId}'
 
 ## RELATED LINKS
+[Get-MgBetaBetaDeviceManagementDeviceConfigurationOmaSettingPlainTextValue](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Functions/Get-MgBetaDeviceManagementDeviceConfigurationOmaSettingPlainTextValue?view=graph-powershell-beta)

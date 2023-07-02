@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property resourceNamespaces in roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgRoleManagementEntitlementManagementResourceNamespace](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Update-MgRoleManagementEntitlementManagementResourceNamespace?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -298,3 +301,4 @@ RESOURCEACTIONS <IMicrosoftGraphUnifiedRbacResourceAction1\[]>: Operations that 
   - `[ResourceScopeId <String>]`: Not implemented.
 
 ## RELATED LINKS
+[Update-MgRoleManagementEntitlementManagementResourceNamespace](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Update-MgRoleManagementEntitlementManagementResourceNamespace?view=graph-powershell-v1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to userExperienceAnalyticsDeviceStartupHistory for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -411,3 +414,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TotalLoginTimeInMS <Int32?>]`: The user experience analytics device total login time in milliseconds.
 
 ## RELATED LINKS
+[New-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory?view=graph-powershell-v1.0)

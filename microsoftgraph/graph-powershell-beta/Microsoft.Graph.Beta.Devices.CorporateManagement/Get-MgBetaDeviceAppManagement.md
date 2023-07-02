@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get deviceAppManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagement](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagement?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```
@@ -78,3 +81,4 @@ ALIASES
 Get-MgDeviceAppMgt
 
 ## RELATED LINKS
+[Get-MgDeviceAppManagement](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagement?view=graph-powershell-v1.0)

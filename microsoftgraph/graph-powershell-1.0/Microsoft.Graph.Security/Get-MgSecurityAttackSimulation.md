@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get attackSimulation from security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaSecurityAttackSimulation](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAttackSimulation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -276,3 +279,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
+[Get-MgBetaBetaSecurityAttackSimulation](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAttackSimulation?view=graph-powershell-beta)

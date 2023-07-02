@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Add a copy of a [content type][contentType] from a [site][site] to a [list][list].
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Add-MgBetaBetaGroupSiteContentTypeCopy](/powershell/module/Microsoft.Graph.Beta.Groups/Add-MgBetaGroupSiteContentTypeCopy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AddExpanded (Default)
@@ -240,3 +243,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+[Add-MgBetaBetaGroupSiteContentTypeCopy](/powershell/module/Microsoft.Graph.Beta.Groups/Add-MgBetaGroupSiteContentTypeCopy?view=graph-powershell-beta)

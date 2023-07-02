@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property windowsAutopilotDeploymentProfiles in deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementWindowAutopilotDeploymentProfile](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Update-MgDeviceManagementWindowAutopilotDeploymentProfile?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -637,8 +640,11 @@ OUTOFBOXEXPERIENCESETTINGS `<IMicrosoftGraphOutOfBoxExperienceSettings>`: Out of
   - `[UserType <String>]`: windowsUserType
 
 ## RELATED LINKS
+[Update-MgDeviceManagementWindowAutopilotDeploymentProfile](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Update-MgDeviceManagementWindowAutopilotDeploymentProfile?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgDeviceManagementWindowAutopilotDeploymentProfile](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Update-MgDeviceManagementWindowAutopilotDeploymentProfile?view=graph-powershell-v1.0)
 
 
 ## RELATED LINKS
+[Update-MgDeviceManagementWindowAutopilotDeploymentProfile](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Update-MgDeviceManagementWindowAutopilotDeploymentProfile?view=graph-powershell-v1.0)

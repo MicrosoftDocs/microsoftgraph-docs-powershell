@@ -11,6 +11,9 @@ schema: 2.0.0
 Add multiple members in a single request to a team.
 The response provides details about which memberships could and couldn't be created.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Add-MgBetaBetaTeamChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Add-MgBetaTeamChannelMember?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AddExpanded (Default)
@@ -313,3 +316,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat.
 
 ## RELATED LINKS
+[Add-MgBetaBetaTeamChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Add-MgBetaTeamChannelMember?view=graph-powershell-beta)

@@ -11,6 +11,9 @@ schema: 2.0.0
 Create a new accessPackage object.
 The access package will be added to an existing accessPackageCatalog.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBetaEntitlementManagementAccessPackage](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaEntitlementManagementAccessPackage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -16313,5 +16316,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Visibility <String>]`: Specifies the group join policy and group content visibility for groups. Possible values are: Private, Public, or HiddenMembership. HiddenMembership can be set only for Microsoft 365 groups, when the groups are created. It can't be updated later. Other values of visibility can be updated after group creation. If visibility value is not specified during group creation on Microsoft Graph, a security group is created as Private by default and Microsoft 365 group is Public. Groups assignable to roles are always Private. See group visibility options to learn more. Returned by default. Nullable.
 
 ## RELATED LINKS
+[New-MgBetaBetaEntitlementManagementAccessPackage](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaEntitlementManagementAccessPackage?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[New-MgBetaBetaEntitlementManagementAccessPackage](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaEntitlementManagementAccessPackage?view=graph-powershell-beta)

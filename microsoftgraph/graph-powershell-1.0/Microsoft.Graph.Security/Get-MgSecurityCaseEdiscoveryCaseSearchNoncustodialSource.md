@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 noncustodialDataSource sources that are included in the eDiscovery search
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaSecurityCaseEdiscoveryCaseSearchNoncustodialSource](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseSearchNoncustodialSource?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -309,3 +312,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
+[Get-MgBetaBetaSecurityCaseEdiscoveryCaseSearchNoncustodialSource](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseSearchNoncustodialSource?view=graph-powershell-beta)

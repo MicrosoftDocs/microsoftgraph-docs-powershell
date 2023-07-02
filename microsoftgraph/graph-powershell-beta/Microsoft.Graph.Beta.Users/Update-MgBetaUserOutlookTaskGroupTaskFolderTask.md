@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property tasks in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserOutlookTaskGroupTaskFolderTask](/powershell/module/Microsoft.Graph.Users/Update-MgUserOutlookTaskGroupTaskFolderTask?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -739,5 +742,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
 
 ## RELATED LINKS
+[Update-MgUserOutlookTaskGroupTaskFolderTask](/powershell/module/Microsoft.Graph.Users/Update-MgUserOutlookTaskGroupTaskFolderTask?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgUserOutlookTaskGroupTaskFolderTask](/powershell/module/Microsoft.Graph.Users/Update-MgUserOutlookTaskGroupTaskFolderTask?view=graph-powershell-v1.0)

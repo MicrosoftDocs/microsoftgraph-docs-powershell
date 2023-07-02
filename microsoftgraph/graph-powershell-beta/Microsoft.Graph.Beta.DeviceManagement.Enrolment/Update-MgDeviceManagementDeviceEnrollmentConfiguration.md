@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property deviceEnrollmentConfigurations in deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementDeviceEnrollmentConfiguration](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Update-MgDeviceManagementDeviceEnrollmentConfiguration?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded1 (Default)
@@ -400,3 +403,4 @@ INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[Update-MgDeviceManagementDeviceEnrollmentConfiguration](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Update-MgDeviceManagementDeviceEnrollmentConfiguration?view=graph-powershell-v1.0)

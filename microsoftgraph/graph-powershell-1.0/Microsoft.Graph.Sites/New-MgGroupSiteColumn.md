@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a column for a [site][site] with a request that specifies a [columnDefinition][columnDefinition].
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBetaGroupSiteColumn](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteColumn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -1149,5 +1152,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Formula <String>]`: The formula to validate column value. For examples, see Examples of common formulas in lists.
 
 ## RELATED LINKS
+[New-MgBetaBetaGroupSiteColumn](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteColumn?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[New-MgBetaBetaGroupSiteColumn](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteColumn?view=graph-powershell-beta)

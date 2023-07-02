@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property resourceActions for roleManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaRoleManagementExchangeResourceNamespaceResourceAction](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Remove-MgRoleManagementExchangeResourceNamespaceResourceAction?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -160,6 +163,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 Please use Get-Help -Online.
 
 ## RELATED LINKS
+[Remove-MgBetaRoleManagementExchangeResourceNamespaceResourceAction](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Remove-MgRoleManagementExchangeResourceNamespaceResourceAction?view=graph-powershell-beta)
 
 [https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/remove-mgrolemanagementexchangeresourcenamespaceresourceaction](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/remove-mgrolemanagementexchangeresourcenamespaceresourceaction)
 

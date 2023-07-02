@@ -11,6 +11,9 @@ schema: 2.0.0
 A list of group members with license errors from this group-based license assignment.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupMemberWithLicenseError](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupMemberWithLicenseError?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -332,3 +335,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgGroupMemberWithLicenseError](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupMemberWithLicenseError?view=graph-powershell-v1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property deviceHealthScripts in deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementDeviceHealthScript](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementDeviceHealthScript?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -10086,5 +10089,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[RemediationSkippedDeviceCount <Int32?>]`: Number of devices for which remediation was skipped
 
 ## RELATED LINKS
+[Update-MgDeviceManagementDeviceHealthScript](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementDeviceHealthScript?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgDeviceManagementDeviceHealthScript](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementDeviceHealthScript?view=graph-powershell-v1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to derivedCredentials for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementDerivedCredential](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementDerivedCredential?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -225,3 +228,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[RenewalThresholdPercentage <Int32?>]`: The nominal percentage of time before certificate renewal is initiated by the client.
 
 ## RELATED LINKS
+[New-MgDeviceManagementDerivedCredential](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementDerivedCredential?view=graph-powershell-v1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to roleEligibilityScheduleRequests for roleManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/New-MgRoleManagementDirectoryRoleEligibilityScheduleRequest?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -751,8 +754,11 @@ TICKETINFO `<IMicrosoftGraphTicketInfo>`: ticketInfo
   - `[TicketSystem <String>]`: The description of the ticket system.
 
 ## RELATED LINKS
+[New-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/New-MgRoleManagementDirectoryRoleEligibilityScheduleRequest?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[New-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/New-MgRoleManagementDirectoryRoleEligibilityScheduleRequest?view=graph-powershell-beta)
 
 
 ## RELATED LINKS
+[New-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/New-MgRoleManagementDirectoryRoleEligibilityScheduleRequest?view=graph-powershell-beta)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function sharedWithMe
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaBetaGraphGroupDrive](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaGraphGroupDrive?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Graph (Default)
@@ -252,3 +255,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+[Invoke-MgBetaBetaGraphGroupDrive](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaGraphGroupDrive?view=graph-powershell-beta)

@@ -11,6 +11,9 @@ schema: 2.0.0
 Send an activity feed notification in scope of a chat.
 For more details about sending notifications and the requirements for doing so, see sending Teams activity notifications.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Send-MgBetaBetaUserChatActivityNotification](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Send-MgBetaUserChatActivityNotification?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### SendExpanded (Default)
@@ -464,3 +467,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebUrl <String>]`: The link the user clicks when they select the notification. Optional when source is entityUrl; required when source is text.
 
 ## RELATED LINKS
+[Send-MgBetaBetaUserChatActivityNotification](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Send-MgBetaUserChatActivityNotification?view=graph-powershell-beta)

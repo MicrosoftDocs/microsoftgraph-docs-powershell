@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action reprocess
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgEntitlementManagementAccessPackageAssignmentRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgEntitlementManagementAccessPackageAssignmentRequest?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Reprocess (Default)
@@ -15459,5 +15462,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String[]>]`: The list of credential types provided by the issuer.
 
 ## RELATED LINKS
+[Update-MgEntitlementManagementAccessPackageAssignmentRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgEntitlementManagementAccessPackageAssignmentRequest?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgEntitlementManagementAccessPackageAssignmentRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgEntitlementManagementAccessPackageAssignmentRequest?view=graph-powershell-v1.0)

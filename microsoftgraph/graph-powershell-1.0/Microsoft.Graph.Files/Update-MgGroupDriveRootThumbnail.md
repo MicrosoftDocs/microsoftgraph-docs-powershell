@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property thumbnails in groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaGroupDriveRootThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveRootThumbnail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -356,3 +359,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Width <Int32?>]`: The width of the thumbnail, in pixels.
 
 ## RELATED LINKS
+[Update-MgBetaBetaGroupDriveRootThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveRootThumbnail?view=graph-powershell-beta)

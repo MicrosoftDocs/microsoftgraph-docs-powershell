@@ -11,6 +11,9 @@ schema: 2.0.0
 Dismiss the risk of one or more riskyUser objects.
 This action sets the targeted user's risk level to none.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaBetaDismissRiskyUser](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Invoke-MgBetaDismissRiskyUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### DismissExpanded (Default)
@@ -161,3 +164,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserIds <String[]>]`: 
 
 ## RELATED LINKS
+[Invoke-MgBetaBetaDismissRiskyUser](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Invoke-MgBetaDismissRiskyUser?view=graph-powershell-beta)

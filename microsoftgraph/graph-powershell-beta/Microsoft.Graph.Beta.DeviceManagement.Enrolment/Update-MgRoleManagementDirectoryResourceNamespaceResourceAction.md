@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property resourceActions in roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgRoleManagementDirectoryResourceNamespaceResourceAction](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Update-MgRoleManagementDirectoryResourceNamespaceResourceAction?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -382,3 +385,4 @@ RESOURCESCOPE `<IMicrosoftGraphUnifiedRbacResourceScope>`: unifiedRbacResourceSc
   - `[Type <String>]`: 
 
 ## RELATED LINKS
+[Update-MgRoleManagementDirectoryResourceNamespaceResourceAction](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Update-MgRoleManagementDirectoryResourceNamespaceResourceAction?view=graph-powershell-v1.0)

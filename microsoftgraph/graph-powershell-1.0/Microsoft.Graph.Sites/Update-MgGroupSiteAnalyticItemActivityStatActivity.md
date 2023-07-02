@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property activities in groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaGroupSiteAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteAnalyticItemActivityStatActivity?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -5536,5 +5539,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Update-MgBetaBetaGroupSiteAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteAnalyticItemActivityStatActivity?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaBetaGroupSiteAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteAnalyticItemActivityStatActivity?view=graph-powershell-beta)

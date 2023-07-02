@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property offerShiftRequests in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupTeamScheduleOfferShiftRequest](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamScheduleOfferShiftRequest?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -421,3 +424,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
+[Update-MgGroupTeamScheduleOfferShiftRequest](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamScheduleOfferShiftRequest?view=graph-powershell-v1.0)

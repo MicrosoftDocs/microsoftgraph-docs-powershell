@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Archive a list of serviceUpdateMessages for the signed in user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaBetaArchiveServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Invoke-MgBetaArchiveServiceAnnouncementMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ArchiveExpanded (Default)
@@ -144,3 +147,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[MessageIds <String[]>]`: 
 
 ## RELATED LINKS
+[Invoke-MgBetaBetaArchiveServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Invoke-MgBetaArchiveServiceAnnouncementMessage?view=graph-powershell-beta)

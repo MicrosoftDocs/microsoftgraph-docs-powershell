@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property exchangeConnectors for deviceManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaDeviceManagementExchangeConnector](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Remove-MgBetaDeviceManagementExchangeConnector?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -173,3 +176,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TermsAndConditionsId <String>]`: The unique identifier of termsAndConditions
 
 ## RELATED LINKS
+[Remove-MgBetaBetaDeviceManagementExchangeConnector](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Remove-MgBetaDeviceManagementExchangeConnector?view=graph-powershell-beta)

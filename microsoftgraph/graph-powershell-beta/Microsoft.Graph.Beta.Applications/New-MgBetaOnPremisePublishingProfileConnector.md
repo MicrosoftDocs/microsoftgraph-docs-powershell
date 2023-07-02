@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to connectors for onPremisesPublishingProfiles
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgOnPremisePublishingProfileConnector](/powershell/module/Microsoft.Graph.Applications/New-MgOnPremisePublishingProfileConnector?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -1126,5 +1129,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Region <String>]`: connectorGroupRegion
 
 ## RELATED LINKS
+[New-MgOnPremisePublishingProfileConnector](/powershell/module/Microsoft.Graph.Applications/New-MgOnPremisePublishingProfileConnector?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgOnPremisePublishingProfileConnector](/powershell/module/Microsoft.Graph.Applications/New-MgOnPremisePublishingProfileConnector?view=graph-powershell-v1.0)

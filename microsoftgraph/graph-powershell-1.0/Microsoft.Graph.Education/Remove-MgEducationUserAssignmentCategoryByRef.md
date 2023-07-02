@@ -11,6 +11,9 @@ schema: 2.0.0
 Remove an educationCategory from an educationAssignment.
 Only teachers can perform this operation.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaEducationUserAssignmentCategoryByRef](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationUserAssignmentCategoryByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -216,3 +219,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Remove-MgBetaBetaEducationUserAssignmentCategoryByRef](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationUserAssignmentCategoryByRef?view=graph-powershell-beta)

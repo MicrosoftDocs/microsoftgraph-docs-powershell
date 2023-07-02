@@ -12,6 +12,9 @@ In the Azure AD access reviews feature, create a new accessReview object.
 Before making this request, the caller must have previously retrieved the list of business flow templates, to have the value of **businessFlowTemplateId** to include in the request.
 After making this request, the caller should create a programControl, to link the access review to a program.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgAccessReview](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgAccessReview?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -589,5 +592,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[RemindersEnabled <Boolean?>]`: Indicates whether sending reminder emails to reviewers is enabled.
 
 ## RELATED LINKS
+[New-MgAccessReview](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgAccessReview?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgAccessReview](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgAccessReview?view=graph-powershell-v1.0)

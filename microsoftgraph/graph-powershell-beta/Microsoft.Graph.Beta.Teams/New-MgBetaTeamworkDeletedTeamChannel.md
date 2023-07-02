@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to channels for teamwork
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgTeamworkDeletedTeamChannel](/powershell/module/Microsoft.Graph.Teams/New-MgTeamworkDeletedTeamChannel?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -14722,5 +14725,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebUrl <String>]`: Deep link URL of the tab instance. Read only.
 
 ## RELATED LINKS
+[New-MgTeamworkDeletedTeamChannel](/powershell/module/Microsoft.Graph.Teams/New-MgTeamworkDeletedTeamChannel?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgTeamworkDeletedTeamChannel](/powershell/module/Microsoft.Graph.Teams/New-MgTeamworkDeletedTeamChannel?view=graph-powershell-v1.0)

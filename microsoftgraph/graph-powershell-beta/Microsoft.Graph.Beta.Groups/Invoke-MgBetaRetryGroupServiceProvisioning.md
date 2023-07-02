@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retry the group service provisioning.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgRetryGroupServiceProvisioning](/powershell/module/Microsoft.Graph.Groups/Invoke-MgRetryGroupServiceProvisioning?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Retry (Default)
@@ -183,3 +186,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Invoke-MgRetryGroupServiceProvisioning](/powershell/module/Microsoft.Graph.Groups/Invoke-MgRetryGroupServiceProvisioning?view=graph-powershell-v1.0)

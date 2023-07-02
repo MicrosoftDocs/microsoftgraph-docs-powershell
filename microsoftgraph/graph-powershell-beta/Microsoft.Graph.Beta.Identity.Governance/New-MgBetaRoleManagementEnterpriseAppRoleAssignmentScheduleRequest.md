@@ -13,6 +13,9 @@ This operation allows both admins and users to add, remove, extend, or renew ass
 To run this request, the calling user must have multi-factor authentication (MFA) enforced, and running the query in a session in which they were challenged for MFA.
 See Enable per-user Azure AD Multi-Factor Authentication to secure sign-in events.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgRoleManagementEnterpriseAppRoleAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementEnterpriseAppRoleAssignmentScheduleRequest?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -1004,5 +1007,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[TicketSystem <String>]`: The description of the ticket system.
 
 ## RELATED LINKS
+[New-MgRoleManagementEnterpriseAppRoleAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementEnterpriseAppRoleAssignmentScheduleRequest?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgRoleManagementEnterpriseAppRoleAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementEnterpriseAppRoleAssignmentScheduleRequest?view=graph-powershell-v1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getGroupArchivedPrintJobs
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportGroupArchivedPrintJob](/powershell/module/Microsoft.Graph.Reports/Get-MgReportGroupArchivedPrintJob?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -227,3 +230,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+[Get-MgReportGroupArchivedPrintJob](/powershell/module/Microsoft.Graph.Reports/Get-MgReportGroupArchivedPrintJob?view=graph-powershell-v1.0)

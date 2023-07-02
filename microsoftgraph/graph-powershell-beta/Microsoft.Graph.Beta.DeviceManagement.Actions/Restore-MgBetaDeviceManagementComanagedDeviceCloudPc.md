@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Restore a Cloud PC device to a previous state with an Intune managed device ID.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Restore-MgDeviceManagementComanagedDeviceCloudPc](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Restore-MgDeviceManagementComanagedDeviceCloudPc?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### RestoreExpanded (Default)
@@ -261,3 +264,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
+[Restore-MgDeviceManagementComanagedDeviceCloudPc](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Restore-MgDeviceManagementComanagedDeviceCloudPc?view=graph-powershell-v1.0)

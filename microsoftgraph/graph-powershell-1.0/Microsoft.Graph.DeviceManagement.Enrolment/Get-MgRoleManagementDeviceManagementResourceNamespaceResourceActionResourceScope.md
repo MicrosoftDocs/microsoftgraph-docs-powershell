@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get resourceScope from roleManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceActionResourceScope](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Get-MgRoleManagementDeviceManagementResourceNamespaceResourceActionResourceScope?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -129,6 +132,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 Please use Get-Help -Online.
 
 ## RELATED LINKS
+[Get-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceActionResourceScope](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Get-MgRoleManagementDeviceManagementResourceNamespaceResourceActionResourceScope?view=graph-powershell-beta)
 
 [https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/get-mgrolemanagementdevicemanagementresourcenamespaceresourceactionresourcescope](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/get-mgrolemanagementdevicemanagementresourcenamespaceresourceactionresourcescope)
 

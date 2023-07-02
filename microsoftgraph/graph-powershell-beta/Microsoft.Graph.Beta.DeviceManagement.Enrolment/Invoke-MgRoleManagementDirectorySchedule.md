@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function roleSchedules
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgRoleManagementDirectorySchedule](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Invoke-MgRoleManagementDirectorySchedule?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```
@@ -203,3 +206,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Invoke-MgRoleManagementDirectorySchedule](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Invoke-MgRoleManagementDirectorySchedule?view=graph-powershell-v1.0)

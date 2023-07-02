@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property exchange in roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgRoleManagementExchange](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Update-MgRoleManagementExchange?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -375,8 +378,11 @@ TRANSITIVEROLEASSIGNMENTS <IMicrosoftGraphUnifiedRoleAssignment1\[]>: Resource t
   - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition the assignment is for. Read-only. Supports $filter (eq operator only).
 
 ## RELATED LINKS
+[Update-MgRoleManagementExchange](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Update-MgRoleManagementExchange?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgRoleManagementExchange](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Update-MgRoleManagementExchange?view=graph-powershell-v1.0)
 
 
 ## RELATED LINKS
+[Update-MgRoleManagementExchange](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Update-MgRoleManagementExchange?view=graph-powershell-v1.0)

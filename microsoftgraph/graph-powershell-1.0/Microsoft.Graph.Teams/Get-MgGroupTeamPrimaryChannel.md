@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the default channel, **General**, of a team.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaGroupTeamPrimaryChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamPrimaryChannel?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -154,3 +157,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgBetaBetaGroupTeamPrimaryChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamPrimaryChannel?view=graph-powershell-beta)

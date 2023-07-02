@@ -15,6 +15,9 @@ The admin can either provide a new password or have the system generate one.
 The user is prompted to change their password on their next sign in.
 This reset is a long-running operation and will return a **Location** header with a link where the caller can periodically check for the status of the reset operation.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Reset-MgBetaBetaUserAuthenticationMethodPassword](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Reset-MgBetaUserAuthenticationMethodPassword?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ResetExpanded (Default)
@@ -246,3 +249,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Reset-MgBetaBetaUserAuthenticationMethodPassword](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Reset-MgBetaUserAuthenticationMethodPassword?view=graph-powershell-beta)

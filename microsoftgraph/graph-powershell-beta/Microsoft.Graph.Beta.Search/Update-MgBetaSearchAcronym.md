@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of an acronym object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSearchAcronym](/powershell/module/Microsoft.Graph.Search/Update-MgSearchAcronym?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -340,3 +343,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <IMicrosoftGraphSearchIdentity>]`: identity
 
 ## RELATED LINKS
+[Update-MgSearchAcronym](/powershell/module/Microsoft.Graph.Search/Update-MgSearchAcronym?view=graph-powershell-v1.0)

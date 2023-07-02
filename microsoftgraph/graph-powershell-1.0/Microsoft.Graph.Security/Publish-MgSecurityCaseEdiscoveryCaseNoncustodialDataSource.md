@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Release the non-custodial data source from the case.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Publish-MgBetaBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource](/powershell/module/Microsoft.Graph.Beta.Security/Publish-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Release (Default)
@@ -172,3 +175,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
+[Publish-MgBetaBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource](/powershell/module/Microsoft.Graph.Beta.Security/Publish-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource?view=graph-powershell-beta)

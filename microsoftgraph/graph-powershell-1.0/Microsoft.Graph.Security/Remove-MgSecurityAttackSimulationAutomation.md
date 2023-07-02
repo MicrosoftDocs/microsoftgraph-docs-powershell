@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property simulationAutomations for security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaSecurityAttackSimulationAutomation](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityAttackSimulationAutomation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -180,3 +183,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
+[Remove-MgBetaBetaSecurityAttackSimulationAutomation](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityAttackSimulationAutomation?view=graph-powershell-beta)

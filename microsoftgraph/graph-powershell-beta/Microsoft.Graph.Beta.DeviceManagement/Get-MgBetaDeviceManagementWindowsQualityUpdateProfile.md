@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 A collection of windows quality update profiles
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementWindowsQualityUpdateProfile](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementWindowsQualityUpdateProfile?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -385,5 +388,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
 ## RELATED LINKS
+[Get-MgDeviceManagementWindowsQualityUpdateProfile](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementWindowsQualityUpdateProfile?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Get-MgDeviceManagementWindowsQualityUpdateProfile](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementWindowsQualityUpdateProfile?view=graph-powershell-v1.0)

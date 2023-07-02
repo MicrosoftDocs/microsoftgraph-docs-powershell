@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Compliance Setting State Device Summary
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -293,3 +296,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionNetworkLearningSummary
 
 ## RELATED LINKS
+[Get-MgBetaBetaDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary?view=graph-powershell-beta)

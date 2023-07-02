@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to roleAssignments for roleManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaRoleManagementEntitlementManagementRoleAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/New-MgRoleManagementEntitlementManagementRoleAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -398,3 +401,4 @@ ROLEDEFINITION `<IMicrosoftGraphUnifiedRoleDefinition1>`: unifiedRoleDefinition
   - `[Version <String>]`: Indicates version of the role definition. Read-only when isBuiltIn is true.
 
 ## RELATED LINKS
+[New-MgBetaRoleManagementEntitlementManagementRoleAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/New-MgRoleManagementEntitlementManagementRoleAssignment?view=graph-powershell-beta)

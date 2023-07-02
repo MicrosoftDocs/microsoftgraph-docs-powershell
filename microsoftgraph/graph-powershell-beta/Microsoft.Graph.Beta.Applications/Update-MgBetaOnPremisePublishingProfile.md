@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update entity in onPremisesPublishingProfiles
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgOnPremisePublishingProfile](/powershell/module/Microsoft.Graph.Applications/Update-MgOnPremisePublishingProfile?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -1728,5 +1731,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ResourceName <String>]`: Name of the publishedResource.
 
 ## RELATED LINKS
+[Update-MgOnPremisePublishingProfile](/powershell/module/Microsoft.Graph.Applications/Update-MgOnPremisePublishingProfile?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgOnPremisePublishingProfile](/powershell/module/Microsoft.Graph.Applications/Update-MgOnPremisePublishingProfile?view=graph-powershell-v1.0)

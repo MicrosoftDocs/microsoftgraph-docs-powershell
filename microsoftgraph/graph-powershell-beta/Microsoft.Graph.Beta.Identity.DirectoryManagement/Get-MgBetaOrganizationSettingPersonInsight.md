@@ -11,6 +11,9 @@ schema: 2.0.0
 Get the properties of an insightsSettings object for displaying or returning people insights in an organization.
 To learn how to customize privacy for people insights in an organization, see Customize people insights privacy.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgOrganizationSettingPersonInsight](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgOrganizationSettingPersonInsight?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -157,3 +160,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgOrganizationSettingPersonInsight](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgOrganizationSettingPersonInsight?view=graph-powershell-v1.0)

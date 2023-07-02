@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Issues a wipe operation on an app registration with specified device tag.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Clear-MgUserManagedAppRegistrationByDeviceTag](/powershell/module/Microsoft.Graph.Users.Actions/Clear-MgUserManagedAppRegistrationByDeviceTag?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### WipeExpanded1 (Default)
@@ -249,3 +252,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Clear-MgUserManagedAppRegistrationByDeviceTag](/powershell/module/Microsoft.Graph.Users.Actions/Clear-MgUserManagedAppRegistrationByDeviceTag?view=graph-powershell-v1.0)

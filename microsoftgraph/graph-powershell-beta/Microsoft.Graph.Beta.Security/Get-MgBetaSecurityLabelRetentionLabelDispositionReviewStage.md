@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Review stages during which reviewers are notified to determine whether a document must be deleted or retained.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityLabelRetentionLabelDispositionReviewStage](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityLabelRetentionLabelDispositionReviewStage?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -326,3 +329,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
+[Get-MgSecurityLabelRetentionLabelDispositionReviewStage](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityLabelRetentionLabelDispositionReviewStage?view=graph-powershell-v1.0)

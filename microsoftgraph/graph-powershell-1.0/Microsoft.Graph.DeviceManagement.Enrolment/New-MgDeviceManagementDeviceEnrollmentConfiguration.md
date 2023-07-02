@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to deviceEnrollmentConfigurations for deviceManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementDeviceEnrollmentConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/New-MgDeviceManagementDeviceEnrollmentConfiguration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded1 (Default)
@@ -287,3 +290,4 @@ BODYPARAMETER `<IMicrosoftGraphDeviceEnrollmentConfiguration1>`: The Base Class 
   - `[Version <Int32?>]`: The version of the device enrollment configuration
 
 ## RELATED LINKS
+[New-MgBetaDeviceManagementDeviceEnrollmentConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/New-MgDeviceManagementDeviceEnrollmentConfiguration?view=graph-powershell-beta)

@@ -11,6 +11,9 @@ schema: 2.0.0
 Use this API to create a new event in a calendar.
 The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBetaUserDefaultCalendarEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserDefaultCalendarEvent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -1567,5 +1570,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
 
 ## RELATED LINKS
+[New-MgBetaBetaUserDefaultCalendarEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserDefaultCalendarEvent?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[New-MgBetaBetaUserDefaultCalendarEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserDefaultCalendarEvent?view=graph-powershell-beta)

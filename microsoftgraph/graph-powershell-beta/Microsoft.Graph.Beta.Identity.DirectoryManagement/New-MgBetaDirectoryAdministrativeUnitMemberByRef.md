@@ -12,6 +12,9 @@ Use this API to add a member (user, group, or device) to an administrative unit 
 All group types can be created within an administrative unit.
 **Note:** Currently, it's only possible to add one member at a time to an administrative unit.`
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDirectoryAdministrativeUnitMemberByRef](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryAdministrativeUnitMemberByRef?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -244,3 +247,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[New-MgDirectoryAdministrativeUnitMemberByRef](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryAdministrativeUnitMemberByRef?view=graph-powershell-v1.0)

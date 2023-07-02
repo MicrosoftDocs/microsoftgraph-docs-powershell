@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property deviceManagementScripts in deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementScript](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementScript?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -14680,5 +14683,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserPrincipalName <String>]`: User principle name of specific user.
 
 ## RELATED LINKS
+[Update-MgDeviceManagementScript](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementScript?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgDeviceManagementScript](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementScript?view=graph-powershell-v1.0)

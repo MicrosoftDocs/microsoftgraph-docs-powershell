@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a group object in a term [store].
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaGroupSiteTermStoreGroup](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteTermStoreGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -253,3 +256,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaBetaGroupSiteTermStoreGroup](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteTermStoreGroup?view=graph-powershell-beta)

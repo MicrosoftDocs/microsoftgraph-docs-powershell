@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to submittedResources for education
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBetaEducationUserAssignmentSubmissionSubmittedResource](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationUserAssignmentSubmissionSubmittedResource?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -287,3 +290,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
 
 ## RELATED LINKS
+[New-MgBetaBetaEducationUserAssignmentSubmissionSubmittedResource](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationUserAssignmentSubmissionSubmittedResource?view=graph-powershell-beta)

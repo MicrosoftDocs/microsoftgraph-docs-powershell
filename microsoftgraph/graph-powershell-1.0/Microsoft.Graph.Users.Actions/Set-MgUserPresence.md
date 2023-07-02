@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Set the state of a user's presence session as an application.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaBetaUserPresence](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Set-MgBetaUserPresence?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### SetExpanded (Default)
@@ -284,3 +287,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Set-MgBetaBetaUserPresence](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Set-MgBetaUserPresence?view=graph-powershell-beta)

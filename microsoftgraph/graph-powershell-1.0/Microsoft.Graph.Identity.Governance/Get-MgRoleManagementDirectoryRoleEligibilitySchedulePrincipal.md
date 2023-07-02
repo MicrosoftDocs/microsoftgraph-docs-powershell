@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The principal that's getting a role assignment or that's eligible for a role through the request.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaRoleManagementDirectoryRoleEligibilitySchedulePrincipal](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementDirectoryRoleEligibilitySchedulePrincipal?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -162,3 +165,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaBetaRoleManagementDirectoryRoleEligibilitySchedulePrincipal](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementDirectoryRoleEligibilitySchedulePrincipal?view=graph-powershell-beta)

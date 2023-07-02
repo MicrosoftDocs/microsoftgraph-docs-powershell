@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function roleScheduleInstances
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaScheduleRoleManagementEntitlementManagement](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Invoke-MgScheduleRoleManagementEntitlementManagement?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
@@ -210,6 +213,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 Please use Get-Help -Online.
 
 ## RELATED LINKS
+[Invoke-MgBetaScheduleRoleManagementEntitlementManagement](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Invoke-MgScheduleRoleManagementEntitlementManagement?view=graph-powershell-beta)
 
 [https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/invoke-mgschedulerolemanagemententitlementmanagement](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/invoke-mgschedulerolemanagemententitlementmanagement)
 

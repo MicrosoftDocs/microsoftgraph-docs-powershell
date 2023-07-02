@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property roleAssignments in roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgRoleManagementCloudPcRoleAssignment](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Update-MgRoleManagementCloudPcRoleAssignment?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -500,8 +503,11 @@ ROLEDEFINITION `<IMicrosoftGraphUnifiedRoleDefinition>`: unifiedRoleDefinition
   - `[Version <String>]`: Indicates version of the unifiedRoleDefinition. Read-only when isBuiltIn is true.
 
 ## RELATED LINKS
+[Update-MgRoleManagementCloudPcRoleAssignment](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Update-MgRoleManagementCloudPcRoleAssignment?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgRoleManagementCloudPcRoleAssignment](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Update-MgRoleManagementCloudPcRoleAssignment?view=graph-powershell-v1.0)
 
 
 ## RELATED LINKS
+[Update-MgRoleManagementCloudPcRoleAssignment](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Update-MgRoleManagementCloudPcRoleAssignment?view=graph-powershell-v1.0)

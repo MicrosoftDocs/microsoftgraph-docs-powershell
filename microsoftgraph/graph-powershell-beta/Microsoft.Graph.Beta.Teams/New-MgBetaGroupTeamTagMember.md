@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new teamworkTagMember object in a team.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupTeamTagMember](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamTagMember?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -290,3 +293,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[New-MgGroupTeamTagMember](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamTagMember?view=graph-powershell-v1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property assignments for deviceManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaDeviceManagementDeviceConfigurationAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementDeviceConfigurationAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -196,3 +199,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionNetworkLearningSummary
 
 ## RELATED LINKS
+[Remove-MgBetaBetaDeviceManagementDeviceConfigurationAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementDeviceConfigurationAssignment?view=graph-powershell-beta)

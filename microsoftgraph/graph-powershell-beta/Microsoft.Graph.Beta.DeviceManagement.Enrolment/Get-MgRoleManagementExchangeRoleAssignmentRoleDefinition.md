@@ -13,6 +13,9 @@ Provided so that callers can get the role definition using $expand at the same t
 roleDefinition.id will be auto expanded.
 Supports $expand.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementExchangeRoleAssignmentRoleDefinition](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Get-MgRoleManagementExchangeRoleAssignmentRoleDefinition?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -154,3 +157,4 @@ INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[Get-MgRoleManagementExchangeRoleAssignmentRoleDefinition](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Get-MgRoleManagementExchangeRoleAssignmentRoleDefinition?view=graph-powershell-v1.0)

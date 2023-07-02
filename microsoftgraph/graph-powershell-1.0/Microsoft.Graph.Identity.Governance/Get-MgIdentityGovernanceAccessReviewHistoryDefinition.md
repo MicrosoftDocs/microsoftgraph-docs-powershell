@@ -12,6 +12,9 @@ Retrieve an accessReviewHistoryDefinition object by its identifier.
 All the properties of the access review history definition object are returned.
 If the definition is 30 days or older, a `404 Not Found` error is returned.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaIdentityGovernanceAccessReviewHistoryDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceAccessReviewHistoryDefinition?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -291,3 +294,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaBetaIdentityGovernanceAccessReviewHistoryDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceAccessReviewHistoryDefinition?view=graph-powershell-beta)

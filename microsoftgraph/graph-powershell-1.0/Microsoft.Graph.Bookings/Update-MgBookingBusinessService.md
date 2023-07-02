@@ -11,6 +11,9 @@ schema: 2.0.0
 Update the properties of a bookingService object in the specified bookingBusiness.
 The following are some examples you can customize for a service:n- Pricen- Typical length of an appointmentn- Remindersn- Any time buffer to set up before or finish up after the servicen- Scheduling policy parameters, such as minimum notice to book or cancel, and whether customers can select specific staff members for an appointment.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaBookingBusinessService](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaBookingBusinessService?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -632,3 +635,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TimeSlotInterval <TimeSpan?>]`: Duration of each time slot, denoted in ISO 8601 format.
 
 ## RELATED LINKS
+[Update-MgBetaBetaBookingBusinessService](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaBookingBusinessService?view=graph-powershell-beta)

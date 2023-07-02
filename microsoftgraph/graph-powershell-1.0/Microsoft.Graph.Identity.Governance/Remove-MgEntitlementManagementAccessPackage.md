@@ -11,6 +11,9 @@ schema: 2.0.0
 Delete an accessPackage object.
 You cannot delete an access package if it has any **accessPackageAssignment**.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaEntitlementManagementAccessPackage](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaEntitlementManagementAccessPackage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -192,3 +195,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaBetaEntitlementManagementAccessPackage](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaEntitlementManagementAccessPackage?view=graph-powershell-beta)

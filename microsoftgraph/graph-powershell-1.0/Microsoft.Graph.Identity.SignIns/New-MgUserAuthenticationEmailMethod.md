@@ -12,6 +12,9 @@ Set a user's emailAuthenticationMethod object.
 Email authentication is a self-service password reset method.
 A user may only have one email authentication method.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBetaUserAuthenticationEmailMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaUserAuthenticationEmailMethod?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -264,3 +267,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[New-MgBetaBetaUserAuthenticationEmailMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaUserAuthenticationEmailMethod?view=graph-powershell-beta)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Unassigns the user from an Autopilot device.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgUnassignDeviceManagementWindowsAutopilotDeviceIdentityUserFromDevice](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgUnassignDeviceManagementWindowsAutopilotDeviceIdentityUserFromDevice?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Unassign (Default)
@@ -190,3 +193,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
+[Invoke-MgUnassignDeviceManagementWindowsAutopilotDeviceIdentityUserFromDevice](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgUnassignDeviceManagementWindowsAutopilotDeviceIdentityUserFromDevice?view=graph-powershell-v1.0)

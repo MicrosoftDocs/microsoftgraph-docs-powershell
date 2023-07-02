@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of a an eDiscovery caseSettings object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgComplianceEdiscoveryCaseSetting](/powershell/module/Microsoft.Graph.Compliance/Update-MgComplianceEdiscoveryCaseSetting?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -329,3 +332,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TopicCount <Int32?>]`: To learn more, see Maximum number of themes.
 
 ## RELATED LINKS
+[Update-MgComplianceEdiscoveryCaseSetting](/powershell/module/Microsoft.Graph.Compliance/Update-MgComplianceEdiscoveryCaseSetting?view=graph-powershell-v1.0)

@@ -12,6 +12,9 @@ Read-only collection of role definitions that the given role definition inherits
 Only Azure AD built-in roles (isBuiltIn is true) support this attribute.
 Supports $expand.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -310,3 +313,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaBetaRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom?view=graph-powershell-beta)

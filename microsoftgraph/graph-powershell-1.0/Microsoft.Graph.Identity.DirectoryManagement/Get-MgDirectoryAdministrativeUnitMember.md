@@ -11,6 +11,9 @@ schema: 2.0.0
 Users and groups that are members of this administrative unit.
 Supports $expand.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaDirectoryAdministrativeUnitMember](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryAdministrativeUnitMember?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
@@ -228,3 +231,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaBetaDirectoryAdministrativeUnitMember](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryAdministrativeUnitMember?view=graph-powershell-beta)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a bookingService object in the specified bookingBusiness.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaBookingBusinessService](/powershell/module/Microsoft.Graph.Beta.Bookings/Remove-MgBetaBookingBusinessService?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -180,3 +183,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
 
 ## RELATED LINKS
+[Remove-MgBetaBetaBookingBusinessService](/powershell/module/Microsoft.Graph.Beta.Bookings/Remove-MgBetaBookingBusinessService?view=graph-powershell-beta)

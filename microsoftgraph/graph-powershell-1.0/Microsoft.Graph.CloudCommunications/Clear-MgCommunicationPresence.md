@@ -12,6 +12,9 @@ Clear the application's presence session for a user.
 If it is the user's only presence session, the user's presence will change to `Offline/Offline`.
 For details about presences sessions, see presence: setPresence.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Clear-MgBetaBetaCommunicationPresence](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Clear-MgBetaCommunicationPresence?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ClearExpanded (Default)
@@ -224,3 +227,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Clear-MgBetaBetaCommunicationPresence](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Clear-MgBetaCommunicationPresence?view=graph-powershell-beta)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action importResourceActions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Import-MgRoleManagementExchangeResourceNamespaceResourceAction](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Import-MgRoleManagementExchangeResourceNamespaceResourceAction?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### ImportExpanded (Default)
@@ -249,3 +252,4 @@ INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[Import-MgRoleManagementExchangeResourceNamespaceResourceAction](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Import-MgRoleManagementExchangeResourceNamespaceResourceAction?view=graph-powershell-v1.0)

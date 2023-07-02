@@ -13,6 +13,9 @@ Only the **reviewers** and **fallbackReviewers** properties can be updated.
 You can only add reviewers to the **fallbackReviewers** property but can't remove existing **fallbackReviewers**.
 To update an **accessReviewStage**, its **status** must be `NotStarted`, `Initializing`, or `InProgress`.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgIdentityGovernanceAccessReviewDecisionInstanceStage](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceAccessReviewDecisionInstanceStage?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -687,5 +690,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[QueryType <String>]`: The type of query. Examples include MicrosoftGraph and ARM.
 
 ## RELATED LINKS
+[Update-MgIdentityGovernanceAccessReviewDecisionInstanceStage](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceAccessReviewDecisionInstanceStage?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgIdentityGovernanceAccessReviewDecisionInstanceStage](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceAccessReviewDecisionInstanceStage?view=graph-powershell-v1.0)

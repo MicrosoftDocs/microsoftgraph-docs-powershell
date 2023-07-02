@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Disable and delete the meetingRegistration of an onlineMeeting on behalf of the organizer.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgVirtualEventWebinarSessionRegistration](/powershell/module/Microsoft.Graph.Bookings/Remove-MgVirtualEventWebinarSessionRegistration?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -189,3 +192,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
+[Remove-MgVirtualEventWebinarSessionRegistration](/powershell/module/Microsoft.Graph.Bookings/Remove-MgVirtualEventWebinarSessionRegistration?view=graph-powershell-v1.0)

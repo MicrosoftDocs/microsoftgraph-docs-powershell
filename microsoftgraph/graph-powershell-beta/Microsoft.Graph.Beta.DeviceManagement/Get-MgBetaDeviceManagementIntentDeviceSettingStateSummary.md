@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Collection of settings and their states and counts of devices that belong to corresponding state for all settings within the intent
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementIntentDeviceSettingStateSummary](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementIntentDeviceSettingStateSummary?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -405,5 +408,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
 ## RELATED LINKS
+[Get-MgDeviceManagementIntentDeviceSettingStateSummary](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementIntentDeviceSettingStateSummary?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Get-MgDeviceManagementIntentDeviceSettingStateSummary](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementIntentDeviceSettingStateSummary?view=graph-powershell-v1.0)

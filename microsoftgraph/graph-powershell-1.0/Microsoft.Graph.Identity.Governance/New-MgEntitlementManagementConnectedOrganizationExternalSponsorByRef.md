@@ -11,6 +11,9 @@ schema: 2.0.0
 Add a user or a group to the connected organization's external sponsors.
 The external sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBetaEntitlementManagementConnectedOrganizationExternalSponsorByRef](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -245,3 +248,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[New-MgBetaBetaEntitlementManagementConnectedOrganizationExternalSponsorByRef](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorByRef?view=graph-powershell-beta)

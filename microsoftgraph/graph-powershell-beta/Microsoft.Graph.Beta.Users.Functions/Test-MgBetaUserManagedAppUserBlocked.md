@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Gets the blocked state of a managed app user.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Test-MgUserManagedAppUserBlocked](/powershell/module/Microsoft.Graph.Users.Functions/Test-MgUserManagedAppUserBlocked?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Is (Default)
@@ -132,3 +135,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Test-MgUserManagedAppUserBlocked](/powershell/module/Microsoft.Graph.Users.Functions/Test-MgUserManagedAppUserBlocked?view=graph-powershell-v1.0)

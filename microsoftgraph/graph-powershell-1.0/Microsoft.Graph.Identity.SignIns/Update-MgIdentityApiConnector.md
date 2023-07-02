@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of an identityApiConnector object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaIdentityApiConnector](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityApiConnector?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -316,3 +319,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Update-MgBetaBetaIdentityApiConnector](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityApiConnector?view=graph-powershell-beta)

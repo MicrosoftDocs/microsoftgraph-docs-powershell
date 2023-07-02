@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new section in the specified section group.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupSiteOnenoteNotebookSectionGroupSection](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteOnenoteNotebookSectionGroupSection?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -810,5 +813,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[SectionsUrl <String>]`: The URL for the sections navigation property, which returns all the sections in the section group. Read-only.
 
 ## RELATED LINKS
+[New-MgGroupSiteOnenoteNotebookSectionGroupSection](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteOnenoteNotebookSectionGroupSection?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgGroupSiteOnenoteNotebookSectionGroupSection](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteOnenoteNotebookSectionGroupSection?view=graph-powershell-v1.0)

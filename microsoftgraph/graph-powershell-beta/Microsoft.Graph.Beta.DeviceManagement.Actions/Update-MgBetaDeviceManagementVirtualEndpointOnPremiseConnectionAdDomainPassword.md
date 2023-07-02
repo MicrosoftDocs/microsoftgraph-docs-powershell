@@ -11,6 +11,9 @@ schema: 2.0.0
 Update the Active Directory domain password for a cloudPcOnPremisesConnection object.
 This API is supported when the type of the **cloudPcOnPremisesConnection** object is `hybridAzureADJoin`.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementVirtualEndpointOnPremiseConnectionAdDomainPassword](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Update-MgDeviceManagementVirtualEndpointOnPremiseConnectionAdDomainPassword?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -261,3 +264,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
+[Update-MgDeviceManagementVirtualEndpointOnPremiseConnectionAdDomainPassword](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Update-MgDeviceManagementVirtualEndpointOnPremiseConnectionAdDomainPassword?view=graph-powershell-v1.0)

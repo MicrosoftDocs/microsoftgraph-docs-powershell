@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new ediscoverySearch object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBetaSecurityCaseEdiscoveryCaseSearch](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityCaseEdiscoveryCaseSearch?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -794,5 +797,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
 ## RELATED LINKS
+[New-MgBetaBetaSecurityCaseEdiscoveryCaseSearch](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityCaseEdiscoveryCaseSearch?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[New-MgBetaBetaSecurityCaseEdiscoveryCaseSearch](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityCaseEdiscoveryCaseSearch?view=graph-powershell-beta)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 A request to remove the active TeamViewer connector
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Disconnect-MgBetaBetaDeviceManagementRemoteAssistancePartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Disconnect-MgBetaDeviceManagementRemoteAssistancePartner?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Disconnect (Default)
@@ -152,3 +155,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
+[Disconnect-MgBetaBetaDeviceManagementRemoteAssistancePartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Disconnect-MgBetaDeviceManagementRemoteAssistancePartner?view=graph-powershell-beta)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update entity in directoryObjects
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaDirectoryObject](/powershell/module/Microsoft.Graph.Beta.DirectoryObjects/Update-MgBetaDirectoryObject?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -203,3 +206,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
 
 ## RELATED LINKS
+[Update-MgBetaBetaDirectoryObject](/powershell/module/Microsoft.Graph.Beta.DirectoryObjects/Update-MgBetaDirectoryObject?view=graph-powershell-beta)

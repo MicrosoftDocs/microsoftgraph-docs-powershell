@@ -11,6 +11,9 @@ schema: 2.0.0
 The schedule for an eligible role assignment that is referenced through the targetScheduleId property.
 Supports $expand.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaRoleManagementEntitlementManagementRoleAssignmentScheduleRequestTargetSchedule](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleRequestTargetSchedule?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -166,3 +169,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaBetaRoleManagementEntitlementManagementRoleAssignmentScheduleRequestTargetSchedule](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleRequestTargetSchedule?view=graph-powershell-beta)

@@ -11,6 +11,9 @@ schema: 2.0.0
 Delete a conversationMember from a channel.
 This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaGroupTeamPrimaryChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaGroupTeamPrimaryChannelMember?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -206,3 +209,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Remove-MgBetaBetaGroupTeamPrimaryChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaGroupTeamPrimaryChannelMember?view=graph-powershell-beta)

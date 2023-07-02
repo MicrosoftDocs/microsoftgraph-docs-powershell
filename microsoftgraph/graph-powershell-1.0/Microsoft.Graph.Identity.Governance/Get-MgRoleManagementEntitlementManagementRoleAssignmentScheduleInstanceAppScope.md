@@ -11,6 +11,9 @@ schema: 2.0.0
 Read-only property with details of the app-specific scope when the assignment or role eligibility is scoped to an app.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceAppScope](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceAppScope?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -166,3 +169,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaBetaRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceAppScope](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceAppScope?view=graph-powershell-beta)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property appScopes in roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgRoleManagementDeviceManagementRoleAssignmentAppScope](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Update-MgRoleManagementDeviceManagementRoleAssignmentAppScope?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -282,3 +285,4 @@ INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[Update-MgRoleManagementDeviceManagementRoleAssignmentAppScope](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Update-MgRoleManagementDeviceManagementRoleAssignmentAppScope?view=graph-powershell-v1.0)

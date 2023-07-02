@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property items in sites
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaSiteListItem](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteListItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -13635,5 +13638,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
 ## RELATED LINKS
+[Update-MgBetaBetaSiteListItem](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteListItem?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaBetaSiteListItem](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteListItem?view=graph-powershell-beta)

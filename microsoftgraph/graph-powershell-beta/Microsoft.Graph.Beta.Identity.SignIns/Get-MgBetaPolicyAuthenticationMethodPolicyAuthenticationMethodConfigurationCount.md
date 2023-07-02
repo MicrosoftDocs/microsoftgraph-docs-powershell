@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfigurationCount](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfigurationCount?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```
@@ -77,3 +80,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfigurationCount](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfigurationCount?view=graph-powershell-v1.0)

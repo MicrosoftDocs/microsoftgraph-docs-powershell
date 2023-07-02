@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property windowsInformationProtectionPolicies in deviceAppManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaDeviceAppManagementWindowsInformationProtectionPolicy](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementWindowsInformationProtectionPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -1094,5 +1097,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Resources <String[]>]`: Collection of resources
 
 ## RELATED LINKS
+[Update-MgBetaBetaDeviceAppManagementWindowsInformationProtectionPolicy](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementWindowsInformationProtectionPolicy?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaBetaDeviceAppManagementWindowsInformationProtectionPolicy](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementWindowsInformationProtectionPolicy?view=graph-powershell-beta)

@@ -11,6 +11,9 @@ schema: 2.0.0
 Details of the app specific scope when the assignment scope is app specific.
 Containment entity.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementDirectoryRoleAssignmentAppScope](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Get-MgRoleManagementDirectoryRoleAssignmentAppScope?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -150,3 +153,4 @@ INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[Get-MgRoleManagementDirectoryRoleAssignmentAppScope](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Get-MgRoleManagementDirectoryRoleAssignmentAppScope?view=graph-powershell-v1.0)

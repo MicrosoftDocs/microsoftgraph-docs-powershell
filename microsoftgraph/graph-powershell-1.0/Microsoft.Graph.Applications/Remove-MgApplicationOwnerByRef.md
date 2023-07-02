@@ -11,6 +11,9 @@ schema: 2.0.0
 Remove an owner from an application.
 As a recommended best practice, apps should have at least two owners.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaApplicationOwnerByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationOwnerByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -203,3 +206,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaBetaApplicationOwnerByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationOwnerByRef?view=graph-powershell-beta)

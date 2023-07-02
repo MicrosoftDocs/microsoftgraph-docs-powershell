@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action getMemberObjects
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgOrganizationMemberObject](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgOrganizationMemberObject?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### GetExpanded (Default)
@@ -226,3 +229,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgOrganizationMemberObject](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgOrganizationMemberObject?view=graph-powershell-v1.0)

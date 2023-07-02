@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Upgrade an app installation within a chat.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBetaUserChatInstalledApp](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Update-MgBetaUserChatInstalledApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Upgrade (Default)
@@ -194,3 +197,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Update-MgBetaBetaUserChatInstalledApp](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Update-MgBetaUserChatInstalledApp?view=graph-powershell-beta)

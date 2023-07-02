@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property columnLinks for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaGroupSiteListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteListContentTypeColumnLink?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -256,3 +259,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaBetaGroupSiteListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteListContentTypeColumnLink?view=graph-powershell-beta)

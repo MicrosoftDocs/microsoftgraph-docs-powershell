@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action getUnhealthyFirewallSummaryReport
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementReportUnhealthyFirewallSummaryReport](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Get-MgDeviceManagementReportUnhealthyFirewallSummaryReport?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### GetExpanded (Default)
@@ -306,3 +309,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Top <Int32?>]`: 
 
 ## RELATED LINKS
+[Get-MgDeviceManagementReportUnhealthyFirewallSummaryReport](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Get-MgDeviceManagementReportUnhealthyFirewallSummaryReport?view=graph-powershell-v1.0)

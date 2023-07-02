@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementManagedAppStatusCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementManagedAppStatusCount?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```
@@ -78,3 +81,4 @@ ALIASES
 Get-MgDeviceAppMgtManagedAppStatusCount
 
 ## RELATED LINKS
+[Get-MgDeviceAppManagementManagedAppStatusCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementManagedAppStatusCount?view=graph-powershell-v1.0)

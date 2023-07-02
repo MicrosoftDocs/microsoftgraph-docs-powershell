@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get deviceAppManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaDeviceAppManagement](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagement?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
@@ -78,3 +81,4 @@ ALIASES
 Get-MgDeviceAppMgt
 
 ## RELATED LINKS
+[Get-MgBetaBetaDeviceAppManagement](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagement?view=graph-powershell-beta)

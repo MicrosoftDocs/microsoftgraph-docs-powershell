@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to windowsAutopilotDeviceIdentities for deviceManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementWindowAutopilotDeviceIdentity](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/New-MgDeviceManagementWindowAutopilotDeviceIdentity?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded1 (Default)
@@ -568,3 +571,4 @@ BODYPARAMETER `<IMicrosoftGraphWindowsAutopilotDeviceIdentity1>`: The windowsAut
   - `[UserPrincipalName <String>]`: User Principal Name.
 
 ## RELATED LINKS
+[New-MgBetaDeviceManagementWindowAutopilotDeviceIdentity](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/New-MgDeviceManagementWindowAutopilotDeviceIdentity?view=graph-powershell-beta)

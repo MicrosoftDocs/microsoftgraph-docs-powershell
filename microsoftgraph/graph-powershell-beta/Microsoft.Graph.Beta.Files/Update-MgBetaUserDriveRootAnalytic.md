@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property analytics in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserDriveRootAnalytic](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveRootAnalytic?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -19038,5 +19041,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[StartDateTime <DateTime?>]`: When the interval starts. Read-only.
 
 ## RELATED LINKS
+[Update-MgUserDriveRootAnalytic](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveRootAnalytic?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgUserDriveRootAnalytic](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveRootAnalytic?view=graph-powershell-v1.0)

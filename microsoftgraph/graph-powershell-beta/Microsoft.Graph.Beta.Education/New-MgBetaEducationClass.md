@@ -14,6 +14,9 @@ When you use this API to create a class, it will add special properties to the g
 Please note that this API only creates the universal group and does not create a team.
 Microsoft Teams provides a user interface for teachers to create teams for their own classes using the groups created by this API.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgEducationClass](/powershell/module/Microsoft.Graph.Education/New-MgEducationClass?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -24877,5 +24880,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[StartDate <DateTime?>]`: Start of the term.
 
 ## RELATED LINKS
+[New-MgEducationClass](/powershell/module/Microsoft.Graph.Education/New-MgEducationClass?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgEducationClass](/powershell/module/Microsoft.Graph.Education/New-MgEducationClass?view=graph-powershell-v1.0)

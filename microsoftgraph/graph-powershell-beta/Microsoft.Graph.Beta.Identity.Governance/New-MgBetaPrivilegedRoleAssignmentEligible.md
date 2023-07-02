@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action makeEligible
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgPrivilegedRoleAssignmentEligible](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgPrivilegedRoleAssignmentEligible?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Make (Default)
@@ -216,3 +219,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[New-MgPrivilegedRoleAssignmentEligible](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgPrivilegedRoleAssignmentEligible?view=graph-powershell-v1.0)

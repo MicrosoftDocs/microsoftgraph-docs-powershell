@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property appScopes for roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgRoleManagementCloudPcRoleAssignmentAppScope](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Remove-MgRoleManagementCloudPcRoleAssignmentAppScope?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -195,3 +198,4 @@ INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[Remove-MgRoleManagementCloudPcRoleAssignmentAppScope](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Remove-MgRoleManagementCloudPcRoleAssignmentAppScope?view=graph-powershell-v1.0)

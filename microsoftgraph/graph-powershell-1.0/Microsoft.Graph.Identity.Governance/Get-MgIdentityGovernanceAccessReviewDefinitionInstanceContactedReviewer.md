@@ -13,6 +13,9 @@ While the reviewers and fallbackReviewers properties of the accessReviewSchedule
 Supports $select.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -326,3 +329,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaBetaIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer?view=graph-powershell-beta)
