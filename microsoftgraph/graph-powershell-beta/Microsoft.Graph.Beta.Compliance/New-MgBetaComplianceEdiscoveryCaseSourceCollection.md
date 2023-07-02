@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetacomplianceediscoverycasesourcecollection
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ### -ContentQuery
 The query string in KQL (Keyword Query Language) query.
 For details, see Keyword queries and search conditions for Content Search and eDiscovery.
-You can refine searches by using fields paired with values; for example, subject:'Quarterly Financials' AND Date\>=06/01/2016 AND Date\<=07/01/2016.
+You can refine searches by using fields paired with values; for example, subject:'Quarterly Financials' AND Date>=06/01/2016 AND Date<=07/01/2016.
 
 ```yaml
 Type: String

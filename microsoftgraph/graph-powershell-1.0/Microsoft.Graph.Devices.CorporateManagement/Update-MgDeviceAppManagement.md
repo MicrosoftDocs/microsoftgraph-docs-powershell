@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagement
@@ -251,7 +251,7 @@ Accept wildcard characters: False
 The locale information used to sync applications from the Microsoft Store for Business.
 Cultures that are specific to a country/region.
 The names of these cultures follow RFC 4646 (Windows Vista and later).
-The format is -\<country/regioncode2\>, where is a lowercase two-letter code derived from ISO 639-1 and \<country/regioncode2\> is an uppercase two-letter code derived from ISO 3166.
+The format is -<country/regioncode2>, where is a lowercase two-letter code derived from ISO 639-1 and <country/regioncode2> is an uppercase two-letter code derived from ISO 3166.
 For example, en-US for English (United States) is a specific culture.
 
 ```yaml

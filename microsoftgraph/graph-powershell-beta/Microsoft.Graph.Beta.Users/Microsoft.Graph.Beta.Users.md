@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.Users
 Module Guid: 312ae73b-c830-4f31-a4ce-e12279bb6306
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users
