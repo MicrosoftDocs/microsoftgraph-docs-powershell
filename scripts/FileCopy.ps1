@@ -28,6 +28,10 @@ function Start-Copy {
 		}
         Get-FilesByProfile -GraphProfile $graphProfile -GraphProfilePath $profilePath -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate 
     }
+    git config --global user.email "timwamalwa@gmail.com"
+    git config --global user.name "Timothy Wamalwa"
+    git add .
+    git commit -m "Updating files from the sdk" 
 }
 function Get-FilesByProfile{
  Param(
@@ -95,7 +99,8 @@ function Copy-Files{
 
 Set-Location microsoftgraph-docs-powershell
 $date = Get-Date -Format "dd-MM-yyyy"
-$proposedBranch = "weekly_v2_docs_update_$date"
+#$proposedBranch = "weekly_v2_docs_update_$date"
+$proposedBranch = "File_copy_test1"
 $exists = git branch -l $proposedBranch
 if ([string]::IsNullOrEmpty($exists)) {
     git checkout -b $proposedBranch
