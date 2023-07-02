@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 Module Guid: 645be35f-7f41-4995-9184-75b64f655116
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins
@@ -38,13 +38,6 @@ Get the number of the resource
 Read the properties of an identityApiConnector object.
 
 ### [Get-MgBetaIdentityApiConnectorCount](Get-MgBetaIdentityApiConnectorCount.md)
-Get the number of the resource
-
-### [Get-MgBetaIdentityAuthenticationEventFlow](Get-MgBetaIdentityAuthenticationEventFlow.md)
-Retrieve the properties and relationships of a specific authenticationEventsFlow object by ID.
-Only externalUsersSelfServiceSignupEventsFlow object types are available.
-
-### [Get-MgBetaIdentityAuthenticationEventFlowCount](Get-MgBetaIdentityAuthenticationEventFlowCount.md)
 Get the number of the resource
 
 ### [Get-MgBetaIdentityAuthenticationEventListener](Get-MgBetaIdentityAuthenticationEventListener.md)
@@ -663,14 +656,14 @@ Get media content for the navigation property policies from trustFramework
 ### [Get-MgBetaTrustFrameworkPolicyCount](Get-MgBetaTrustFrameworkPolicyCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserAuthenticationEmailMethod](Get-MgBetaUserAuthenticationEmailMethod.md)
-Retrieve a user's single email Authentication Method object.
+### [Get-MgBetaTrustFrameworkPolicyCount](Get-MgBetaTrustFrameworkPolicyCount.md)
+Get the number of the resource
 
 ### [Get-MgBetaUserAuthenticationEmailMethodCount](Get-MgBetaUserAuthenticationEmailMethodCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserAuthenticationFido2Method](Get-MgBetaUserAuthenticationFido2Method.md)
-Retrieve a user's single FIDO2 Security Key Authentication Method object.
+### [Get-MgBetaUserAuthenticationEmailMethodCount](Get-MgBetaUserAuthenticationEmailMethodCount.md)
+Get the number of the resource
 
 ### [Get-MgBetaUserAuthenticationFido2MethodCount](Get-MgBetaUserAuthenticationFido2MethodCount.md)
 Get the number of the resource
@@ -709,21 +702,20 @@ Get the number of the resource
 ### [Get-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethodDevice](Get-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethodDevice.md)
 Get device from users
 
-### [Get-MgBetaUserAuthenticationPasswordMethod](Get-MgBetaUserAuthenticationPasswordMethod.md)
-Retrieve the properties and relationships of a password authentication method object.
+### [Get-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethodDevice](Get-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethodDevice.md)
+Get device from users
 
 ### [Get-MgBetaUserAuthenticationPasswordMethodCount](Get-MgBetaUserAuthenticationPasswordMethodCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserAuthenticationPhoneMethod](Get-MgBetaUserAuthenticationPhoneMethod.md)
-Retrieve a single phoneAuthenticationMethod object.
-This method is available only for standard Azure AD and B2B users, but not B2C users.
+### [Get-MgBetaUserAuthenticationPasswordMethodCount](Get-MgBetaUserAuthenticationPasswordMethodCount.md)
+Get the number of the resource
 
 ### [Get-MgBetaUserAuthenticationPhoneMethodCount](Get-MgBetaUserAuthenticationPhoneMethodCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserAuthenticationSoftwareOathMethod](Get-MgBetaUserAuthenticationSoftwareOathMethod.md)
-Retrieve a user's single Software OATH token authentication method object and its properties.
+### [Get-MgBetaUserAuthenticationPhoneMethodCount](Get-MgBetaUserAuthenticationPhoneMethodCount.md)
+Get the number of the resource
 
 ### [Get-MgBetaUserAuthenticationSoftwareOathMethodCount](Get-MgBetaUserAuthenticationSoftwareOathMethodCount.md)
 Get the number of the resource
@@ -864,10 +856,6 @@ Add new entity to dataPolicyOperations
 
 ### [New-MgBetaIdentityApiConnector](New-MgBetaIdentityApiConnector.md)
 Create a new identityApiConnector object.
-
-### [New-MgBetaIdentityAuthenticationEventFlow](New-MgBetaIdentityAuthenticationEventFlow.md)
-Create a new authenticationEventsFlow object that is of the type specified in the request body.
-You can create only an externalUsersSelfServiceSignupEventsFlow object type.
 
 ### [New-MgBetaIdentityAuthenticationEventListener](New-MgBetaIdentityAuthenticationEventListener.md)
 Create a new authenticationEventListener object.
@@ -1102,13 +1090,8 @@ Create new navigation property to methods for users
 ### [New-MgBetaUserAuthenticationOperation](New-MgBetaUserAuthenticationOperation.md)
 Create new navigation property to operations for users
 
-### [New-MgBetaUserAuthenticationPhoneMethod](New-MgBetaUserAuthenticationPhoneMethod.md)
-Add a new phone authentication method.
-A user may only have one phone of each type, captured in the **phoneType** property.
-This means, for example, adding a `mobile` phone to a user with a preexisting `mobile` phone will fail.
-Additionally, a user must always have a `mobile` phone before adding an `alternateMobile` phone.
-Adding a phone number makes it available for use in both Azure multi-factor authentication (MFA) and self-service password reset (SSPR), if enabled.
-Additionally, if a user is enabled by policy to use SMS sign-in and a `mobile` number is added, the system will attempt to register the number for use in that system.
+### [New-MgBetaUserAuthenticationOperation](New-MgBetaUserAuthenticationOperation.md)
+Create new navigation property to operations for users
 
 ### [New-MgBetaUserAuthenticationTemporaryAccessPassMethod](New-MgBetaUserAuthenticationTemporaryAccessPassMethod.md)
 Create a new temporaryAccessPassAuthenticationMethod object on a user.
@@ -1139,10 +1122,6 @@ Delete entity from dataPolicyOperations
 
 ### [Remove-MgBetaIdentityApiConnector](Remove-MgBetaIdentityApiConnector.md)
 Deletes an identityApiConnector object.
-
-### [Remove-MgBetaIdentityAuthenticationEventFlow](Remove-MgBetaIdentityAuthenticationEventFlow.md)
-Delete a specific authenticationEventsFlow resource by ID.
-Only externalUsersSelfServiceSignupEventsFlow object types are available.
 
 ### [Remove-MgBetaIdentityAuthenticationEventListener](Remove-MgBetaIdentityAuthenticationEventListener.md)
 Deletes an authenticationEventListener object.
@@ -1420,12 +1399,8 @@ Delete navigation property operations for users
 ### [Remove-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethod](Remove-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethod.md)
 Deletes a user's Microsoft Authenticator Passwordless Phone Sign-in method object.
 
-### [Remove-MgBetaUserAuthenticationPhoneMethod](Remove-MgBetaUserAuthenticationPhoneMethod.md)
-Delete a user's phone authentication method.
-Remember that a user cannot have an `alternateMobile` number without a `mobile` number.
-If you want to remove a `mobile` number from a user that also has an `alternateMobile` number, first update the `mobile` number to the new number, then delete the `alternateMobile` number.
-If the phone number is the user's default Azure multi-factor authentication (MFA) authentication method, it cannot be deleted.
-Have the user change their default authentication method, and then delete the number.
+### [Remove-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethod](Remove-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethod.md)
+Deletes a user's Microsoft Authenticator Passwordless Phone Sign-in method object.
 
 ### [Remove-MgBetaUserAuthenticationSoftwareOathMethod](Remove-MgBetaUserAuthenticationSoftwareOathMethod.md)
 Delete a user's Software OATH token authentication method object.
@@ -1524,10 +1499,6 @@ Update entity in dataPolicyOperations
 
 ### [Update-MgBetaIdentityApiConnector](Update-MgBetaIdentityApiConnector.md)
 Update the properties of an identityApiConnector object.
-
-### [Update-MgBetaIdentityAuthenticationEventFlow](Update-MgBetaIdentityAuthenticationEventFlow.md)
-Update the properties of an authenticationEventsFlow object.
-Only the externalUsersSelfServiceSignupEventsFlow object type is supported.
 
 ### [Update-MgBetaIdentityAuthenticationEventListener](Update-MgBetaIdentityAuthenticationEventListener.md)
 Update the properties of an authenticationEventListener object.
@@ -1805,11 +1776,8 @@ Update the navigation property methods in users
 ### [Update-MgBetaUserAuthenticationOperation](Update-MgBetaUserAuthenticationOperation.md)
 Update the navigation property operations in users
 
-### [Update-MgBetaUserAuthenticationPhoneMethod](Update-MgBetaUserAuthenticationPhoneMethod.md)
-Update the phone number associated with a phone authentication method.
-You can't change a phone's type.
-To change a phone's type, add a new number of the desired type and then delete the object with the original type.
-If a user is enabled by policy to use SMS to sign in and the `mobile` number is changed, the system will attempt to register the number for use in that system.
+### [Update-MgBetaUserAuthenticationOperation](Update-MgBetaUserAuthenticationOperation.md)
+Update the navigation property operations in users
 
 ### [Update-MgBetaUserInformationProtection](Update-MgBetaUserInformationProtection.md)
 Update the navigation property informationProtection in users

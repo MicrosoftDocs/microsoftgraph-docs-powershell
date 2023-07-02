@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Security
 Module Guid: 429f7b52-cb73-4efa-9dd6-af233abb5bc1
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security
@@ -344,7 +344,7 @@ Get providerTenantSettings from security
 Get the number of the resource
 
 ### [Get-MgBetaSecuritySecureScore](Get-MgBetaSecuritySecureScore.md)
-Measurements of tenants’ security posture to help protect them from threats.
+Measurements of tenants' security posture to help protect them from threats.
 
 ### [Get-MgBetaSecuritySecureScoreControlProfile](Get-MgBetaSecuritySecureScoreControlProfile.md)
 Get secureScoreControlProfiles from security

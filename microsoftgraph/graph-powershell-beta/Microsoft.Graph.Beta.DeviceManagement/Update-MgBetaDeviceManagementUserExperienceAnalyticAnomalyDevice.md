@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementuserexperienceanalyticanomalydevice
 schema: 2.0.0
@@ -17,34 +17,30 @@ Update the navigation property userExperienceAnalyticsAnomalyDevice in deviceMan
 Update-MgBetaDeviceManagementUserExperienceAnalyticAnomalyDevice
  -UserExperienceAnalyticsAnomalyDeviceId <String> [-AdditionalProperties <Hashtable>] [-AnomalyId <String>]
  [-AnomalyOnDeviceFirstOccurrenceDateTime <DateTime>] [-AnomalyOnDeviceLatestOccurrenceDateTime <DateTime>]
- [-CorrelationGroupId <String>] [-DeviceId <String>] [-DeviceManufacturer <String>] [-DeviceModel <String>]
- [-DeviceName <String>] [-DeviceStatus <UserExperienceAnalyticsDeviceStatus>] [-Id <String>]
- [-OSName <String>] [-OSVersion <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-DeviceId <String>] [-DeviceManufacturer <String>] [-DeviceModel <String>] [-DeviceName <String>]
+ [-Id <String>] [-OSName <String>] [-OSVersion <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementUserExperienceAnalyticAnomalyDevice
  -UserExperienceAnalyticsAnomalyDeviceId <String>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAnomalyDevice> [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaDeviceManagementUserExperienceAnalyticAnomalyDevice -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAnomalyDevice> [-Confirm] [-WhatIf]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAnomalyDevice> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementUserExperienceAnalyticAnomalyDevice -InputObject <IDeviceManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-AnomalyId <String>]
- [-AnomalyOnDeviceFirstOccurrenceDateTime <DateTime>] [-AnomalyOnDeviceLatestOccurrenceDateTime <DateTime>]
- [-CorrelationGroupId <String>] [-DeviceId <String>] [-DeviceManufacturer <String>] [-DeviceModel <String>]
- [-DeviceName <String>] [-DeviceStatus <UserExperienceAnalyticsDeviceStatus>] [-Id <String>]
- [-OSName <String>] [-OSVersion <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-AnomalyId <String>] [-AnomalyOnDeviceFirstOccurrenceDateTime <DateTime>]
+ [-AnomalyOnDeviceLatestOccurrenceDateTime <DateTime>] [-DeviceId <String>] [-DeviceManufacturer <String>]
+ [-DeviceModel <String>] [-DeviceName <String>] [-Id <String>] [-OSName <String>] [-OSVersion <String>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaDeviceManagementUserExperienceAnalyticAnomalyDevice -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAnomalyDevice> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -52,14 +48,14 @@ Update the navigation property userExperienceAnalyticsAnomalyDevice in deviceMan
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -72,7 +68,7 @@ Update the navigation property userExperienceAnalyticsAnomalyDevice in deviceMan
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -87,7 +83,7 @@ Accept wildcard characters: False
 The unique identifier of the anomaly.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -102,7 +98,7 @@ Accept wildcard characters: False
 Indicates the first occurance date and time for the anomaly on the device.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -117,7 +113,7 @@ Accept wildcard characters: False
 Indicates the latest occurance date and time for the anomaly on the device.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -133,7 +129,7 @@ The user experience analytics anomaly entity contains device details.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAnomalyDevice
+Type: IMicrosoftGraphUserExperienceAnalyticsAnomalyDevice
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -144,26 +140,11 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -CorrelationGroupId
-The unique identifier of the correlation group.
-
-```yaml
-Type: System.String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -DeviceId
 The unique identifier of the device.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -178,7 +159,7 @@ Accept wildcard characters: False
 The manufacturer name of the device.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -193,7 +174,7 @@ Accept wildcard characters: False
 The model name of the device.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -208,23 +189,7 @@ Accept wildcard characters: False
 The name of the device.
 
 ```yaml
-Type: System.String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DeviceStatus
-Indicates the status of the device in the correlation group.
-Eg: Device status can be anomalous, affected, at risk.
-
-```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Support.UserExperienceAnalyticsDeviceStatus
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -240,7 +205,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -256,8 +221,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -271,7 +236,7 @@ Accept wildcard characters: False
 The name of the OS installed on the device.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -286,7 +251,7 @@ Accept wildcard characters: False
 The OS version installed on the device.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -301,8 +266,8 @@ Accept wildcard characters: False
 The unique identifier of userExperienceAnalyticsAnomalyDevice
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -316,7 +281,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -332,7 +297,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -349,13 +314,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAnomalyDevice
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAnomalyDevice
-
 ## NOTES
 
 ALIASES
@@ -518,3 +480,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

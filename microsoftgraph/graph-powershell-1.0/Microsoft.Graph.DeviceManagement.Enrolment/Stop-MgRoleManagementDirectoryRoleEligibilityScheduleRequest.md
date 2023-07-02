@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/stop-mgrolemanagementdirectoryroleeligibilityschedulerequest
@@ -12,13 +12,13 @@ Invoke action cancel
 
 ## SYNTAX
 
-### Cancel1 (Default)
+### Cancel (Default)
 ```
 Stop-MgRoleManagementDirectoryRoleEligibilityScheduleRequest -UnifiedRoleEligibilityScheduleRequestId <String>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CancelViaIdentity1
+### CancelViaIdentity
 ```
 Stop-MgRoleManagementDirectoryRoleEligibilityScheduleRequest -InputObject <IDeviceManagementEnrolmentIdentity>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -46,7 +46,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IDeviceManagementEnrolmentIdentity
-Parameter Sets: CancelViaIdentity1
+Parameter Sets: CancelViaIdentity
 Aliases:
 
 Required: True
@@ -76,7 +76,7 @@ The unique identifier of unifiedRoleEligibilityScheduleRequest
 
 ```yaml
 Type: String
-Parameter Sets: Cancel1
+Parameter Sets: Cancel
 Aliases:
 
 Required: True

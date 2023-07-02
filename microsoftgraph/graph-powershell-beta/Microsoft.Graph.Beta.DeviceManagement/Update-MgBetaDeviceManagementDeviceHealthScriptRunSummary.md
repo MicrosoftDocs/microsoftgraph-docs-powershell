@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementdevicehealthscriptrunsummary
 schema: 2.0.0
@@ -16,36 +16,36 @@ Update the navigation property runSummary in deviceManagement
 ```
 Update-MgBetaDeviceManagementDeviceHealthScriptRunSummary -DeviceHealthScriptId <String>
  [-AdditionalProperties <Hashtable>] [-DetectionScriptErrorDeviceCount <Int32>]
- [-DetectionScriptNotApplicableDeviceCount <Int32>] [-DetectionScriptPendingDeviceCount <Int32>]
- [-Id <String>] [-IssueDetectedDeviceCount <Int32>] [-IssueRemediatedCumulativeDeviceCount <Int32>]
+ [-DetectionScriptNotApplicableDeviceCount <Int32>] [-DetectionScriptPendingDeviceCount <Int32>] [-Id <String>]
+ [-IssueDetectedDeviceCount <Int32>] [-IssueRemediatedCumulativeDeviceCount <Int32>]
  [-IssueRemediatedDeviceCount <Int32>] [-IssueReoccurredDeviceCount <Int32>]
  [-LastScriptRunDateTime <DateTime>] [-NoIssueDetectedDeviceCount <Int32>]
- [-RemediationScriptErrorDeviceCount <Int32>] [-RemediationSkippedDeviceCount <Int32>] [-Confirm] [-WhatIf]
+ [-RemediationScriptErrorDeviceCount <Int32>] [-RemediationSkippedDeviceCount <Int32>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementDeviceHealthScriptRunSummary -DeviceHealthScriptId <String>
- -BodyParameter <IMicrosoftGraphDeviceHealthScriptRunSummary> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaDeviceManagementDeviceHealthScriptRunSummary -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceHealthScriptRunSummary> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceHealthScriptRunSummary> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementDeviceHealthScriptRunSummary -InputObject <IDeviceManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-DetectionScriptErrorDeviceCount <Int32>]
- [-DetectionScriptNotApplicableDeviceCount <Int32>] [-DetectionScriptPendingDeviceCount <Int32>]
- [-Id <String>] [-IssueDetectedDeviceCount <Int32>] [-IssueRemediatedCumulativeDeviceCount <Int32>]
+ [-DetectionScriptNotApplicableDeviceCount <Int32>] [-DetectionScriptPendingDeviceCount <Int32>] [-Id <String>]
+ [-IssueDetectedDeviceCount <Int32>] [-IssueRemediatedCumulativeDeviceCount <Int32>]
  [-IssueRemediatedDeviceCount <Int32>] [-IssueReoccurredDeviceCount <Int32>]
  [-LastScriptRunDateTime <DateTime>] [-NoIssueDetectedDeviceCount <Int32>]
- [-RemediationScriptErrorDeviceCount <Int32>] [-RemediationSkippedDeviceCount <Int32>] [-Confirm] [-WhatIf]
+ [-RemediationScriptErrorDeviceCount <Int32>] [-RemediationSkippedDeviceCount <Int32>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaDeviceManagementDeviceHealthScriptRunSummary -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphDeviceHealthScriptRunSummary> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -53,14 +53,14 @@ Update the navigation property runSummary in deviceManagement
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -73,7 +73,7 @@ Update the navigation property runSummary in deviceManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -89,7 +89,7 @@ Contains properties for the run summary of a device management script.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceHealthScriptRunSummary
+Type: IMicrosoftGraphDeviceHealthScriptRunSummary
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 Number of devices on which the detection script execution encountered an error and did not complete
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 Number of devices for which the detection script was not applicable
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 Number of devices which have not yet run the latest version of the device health script
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -149,8 +149,8 @@ Accept wildcard characters: False
 The unique identifier of deviceHealthScript
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -165,7 +165,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -181,8 +181,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -196,7 +196,7 @@ Accept wildcard characters: False
 Number of devices for which the detection script found an issue
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -211,7 +211,7 @@ Accept wildcard characters: False
 Number of devices that were remediated over the last 30 days
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -226,7 +226,7 @@ Accept wildcard characters: False
 Number of devices for which the remediation script was able to resolve the detected issue
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -241,7 +241,7 @@ Accept wildcard characters: False
 Number of devices for which the remediation script executed successfully but failed to resolve the detected issue
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -256,7 +256,7 @@ Accept wildcard characters: False
 Last run time for the script across all devices
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -271,7 +271,7 @@ Accept wildcard characters: False
 Number of devices for which the detection script did not find an issue and the device is healthy
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -286,7 +286,7 @@ Accept wildcard characters: False
 Number of devices for which the remediation script execution encountered an error and did not complete
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -301,7 +301,7 @@ Accept wildcard characters: False
 Number of devices for which remediation was skipped
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -316,7 +316,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -332,7 +332,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -349,13 +349,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceHealthScriptRunSummary
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceHealthScriptRunSummary
-
 ## NOTES
 
 ALIASES
@@ -518,3 +515,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

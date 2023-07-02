@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementpolicyset
 schema: 2.0.0
@@ -18,12 +18,12 @@ New-MgBetaDeviceAppManagementPolicySet [-AdditionalProperties <Hashtable>]
  [-Assignments <IMicrosoftGraphPolicySetAssignment[]>] [-CreatedDateTime <DateTime>] [-Description <String>]
  [-DisplayName <String>] [-ErrorCode <ErrorCode>] [-GuidedDeploymentTags <String[]>] [-Id <String>]
  [-Items <IMicrosoftGraphPolicySetItem[]>] [-LastModifiedDateTime <DateTime>] [-RoleScopeTags <String[]>]
- [-Status <PolicySetStatus>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Status <PolicySetStatus>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaDeviceAppManagementPolicySet -BodyParameter <IMicrosoftGraphPolicySet> [-Confirm] [-WhatIf]
+New-MgBetaDeviceAppManagementPolicySet -BodyParameter <IMicrosoftGraphPolicySet> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -32,19 +32,15 @@ Create new navigation property to policySets for deviceAppManagement
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -52,7 +48,7 @@ Create new navigation property to policySets for deviceAppManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -68,7 +64,7 @@ Assignments of the PolicySet.
 To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPolicySetAssignment[]
+Type: IMicrosoftGraphPolicySetAssignment[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -84,7 +80,7 @@ A class containing the properties used for PolicySet.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPolicySet
+Type: IMicrosoftGraphPolicySet
 Parameter Sets: Create
 Aliases:
 
@@ -99,7 +95,7 @@ Accept wildcard characters: False
 Creation time of the PolicySet.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -114,7 +110,7 @@ Accept wildcard characters: False
 Description of the PolicySet.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -129,7 +125,7 @@ Accept wildcard characters: False
 DisplayName of the PolicySet.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -144,7 +140,7 @@ Accept wildcard characters: False
 errorCode
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Support.ErrorCode
+Type: ErrorCode
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -159,7 +155,7 @@ Accept wildcard characters: False
 Tags of the guided deployment
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -175,7 +171,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -191,7 +187,7 @@ Items of the PolicySet with maximum count 100.
 To construct, see NOTES section for ITEMS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPolicySetItem[]
+Type: IMicrosoftGraphPolicySetItem[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -206,7 +202,7 @@ Accept wildcard characters: False
 Last modified time of the PolicySet.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -221,7 +217,7 @@ Accept wildcard characters: False
 RoleScopeTags of the PolicySet
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -236,7 +232,7 @@ Accept wildcard characters: False
 The enum to specify the status of PolicySet.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Support.PolicySetStatus
+Type: PolicySetStatus
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -251,7 +247,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -267,7 +263,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -284,11 +280,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPolicySet
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPolicySet
-
 ## NOTES
 
 ALIASES
@@ -349,4 +343,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[Status <PolicySetStatus?>]`: The enum to specify the status of PolicySet.
 
 ## RELATED LINKS
-

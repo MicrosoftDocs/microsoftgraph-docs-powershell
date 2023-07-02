@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityalertv2
 schema: 2.0.0
@@ -23,12 +23,12 @@ New-MgBetaSecurityAlertV2 [-ActorDisplayName <String>] [-AdditionalProperties <H
  [-LastUpdateDateTime <DateTime>] [-MitreTechniques <String[]>] [-ProviderAlertId <String>]
  [-RecommendedActions <String>] [-ResolvedDateTime <DateTime>] [-ServiceSource <String>] [-Severity <String>]
  [-Status <String>] [-SystemTags <String[]>] [-TenantId <String>] [-ThreatDisplayName <String>]
- [-ThreatFamilyName <String>] [-Title <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-ThreatFamilyName <String>] [-Title <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaSecurityAlertV2 -BodyParameter <IMicrosoftGraphSecurityAlert> [-Confirm] [-WhatIf]
+New-MgBetaSecurityAlertV2 -BodyParameter <IMicrosoftGraphSecurityAlert> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -37,19 +37,15 @@ Create new navigation property to alerts_v2 for security
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -57,7 +53,7 @@ Create new navigation property to alerts_v2 for security
 The adversary or activity group that is associated with this alert.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -72,7 +68,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -87,7 +83,7 @@ Accept wildcard characters: False
 URL for the alert page in the Microsoft 365 Defender portal.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -102,7 +98,7 @@ Accept wildcard characters: False
 Owner of the alert, or null if no owner is assigned.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -118,7 +114,7 @@ alert
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityAlert
+Type: IMicrosoftGraphSecurityAlert
 Parameter Sets: Create
 Aliases:
 
@@ -134,7 +130,7 @@ The attack kill-chain category that the alert belongs to.
 Aligned with the MITRE ATT&CK framework.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -149,7 +145,7 @@ Accept wildcard characters: False
 alertClassification
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -165,7 +161,7 @@ Array of comments created by the Security Operations (SecOps) team during the al
 To construct, see NOTES section for COMMENTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityAlertComment[]
+Type: IMicrosoftGraphSecurityAlertComment[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -180,7 +176,7 @@ Accept wildcard characters: False
 Time when Microsoft 365 Defender created the alert.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -195,7 +191,7 @@ Accept wildcard characters: False
 String value describing each alert.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -210,7 +206,7 @@ Accept wildcard characters: False
 detectionSource
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -225,7 +221,7 @@ Accept wildcard characters: False
 The ID of the detector that triggered the alert.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -240,7 +236,7 @@ Accept wildcard characters: False
 alertDetermination
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -256,7 +252,7 @@ Collection of evidence related to the alert.
 To construct, see NOTES section for EVIDENCE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityAlertEvidence[]
+Type: IMicrosoftGraphSecurityAlertEvidence[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -271,7 +267,7 @@ Accept wildcard characters: False
 The earliest activity associated with the alert.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -287,7 +283,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -302,7 +298,7 @@ Accept wildcard characters: False
 Unique identifier to represent the incident this alert resource is associated with.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -317,7 +313,7 @@ Accept wildcard characters: False
 URL for the incident page in the Microsoft 365 Defender portal.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -332,7 +328,7 @@ Accept wildcard characters: False
 The oldest activity associated with the alert.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -347,7 +343,7 @@ Accept wildcard characters: False
 Time when the alert was last updated at Microsoft 365 Defender.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -362,7 +358,7 @@ Accept wildcard characters: False
 The attack techniques, as aligned with the MITRE ATT&CK framework.
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -377,7 +373,7 @@ Accept wildcard characters: False
 The ID of the alert as it appears in the security provider product that generated the alert.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -392,7 +388,7 @@ Accept wildcard characters: False
 Recommended response and remediation actions to take in the event this alert was generated.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -407,7 +403,7 @@ Accept wildcard characters: False
 Time when the alert was resolved.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -422,7 +418,7 @@ Accept wildcard characters: False
 serviceSource
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -437,7 +433,7 @@ Accept wildcard characters: False
 alertSeverity
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -452,7 +448,7 @@ Accept wildcard characters: False
 alertStatus
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -467,7 +463,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -482,7 +478,7 @@ Accept wildcard characters: False
 The Azure Active Directory tenant the alert was created in.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -497,7 +493,7 @@ Accept wildcard characters: False
 The threat associated with this alert.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -512,7 +508,7 @@ Accept wildcard characters: False
 Threat family associated with this alert.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -527,7 +523,7 @@ Accept wildcard characters: False
 Brief identifying string value describing the alert.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -542,7 +538,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -558,7 +554,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -575,11 +571,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityAlert
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityAlert
-
 ## NOTES
 
 ALIASES
@@ -647,4 +641,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[Verdict <String>]`: evidenceVerdict
 
 ## RELATED LINKS
-

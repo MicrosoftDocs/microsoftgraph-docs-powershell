@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/publish-mgeducationclassassignment
 schema: 2.0.0
@@ -21,13 +21,13 @@ To update the properties of a published **assignment**, see update an assignment
 
 ### Publish (Default)
 ```
-Publish-MgEducationClassAssignment -EducationAssignmentId <String> -EducationClassId <String> [-Confirm]
- [-WhatIf] [<CommonParameters>]
+Publish-MgEducationClassAssignment -EducationAssignmentId <String> -EducationClassId <String> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### PublishViaIdentity
 ```
-Publish-MgEducationClassAssignment -InputObject <IEducationIdentity> [-Confirm] [-WhatIf] [<CommonParameters>]
+Publish-MgEducationClassAssignment -InputObject <IEducationIdentity> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -42,13 +42,11 @@ To update the properties of a published **assignment**, see update an assignment
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Education
 Publish-MgEducationClassAssignment -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId
 ```
-
-
 
 ## PARAMETERS
 
@@ -56,7 +54,7 @@ Publish-MgEducationClassAssignment -EducationClassId $educationClassId -Educatio
 The unique identifier of educationAssignment
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Publish
 Aliases:
 
@@ -71,7 +69,7 @@ Accept wildcard characters: False
 The unique identifier of educationClass
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Publish
 Aliases:
 
@@ -87,7 +85,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IEducationIdentity
+Type: IEducationIdentity
 Parameter Sets: PublishViaIdentity
 Aliases:
 
@@ -102,7 +100,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -118,7 +116,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -135,11 +133,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationAssignment
-
 ## NOTES
 
 ALIASES
@@ -162,4 +158,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-

@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Identity.Governance
 Module Guid: d3bc6904-20bf-48e9-a475-e04242c1c123
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance
@@ -713,10 +713,8 @@ Supports $expand.
 ### [Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRoleDefinition](Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRoleDefinition.md)
 Detailed information for the roleDefinition object that is referenced through the roleDefinitionId property.
 
-### [Get-MgUserAgreementAcceptance](Get-MgUserAgreementAcceptance.md)
-The user's terms of use acceptance statuses.
-Read-only.
-Nullable.
+### [Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRoleDefinition](Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRoleDefinition.md)
+Detailed information for the roleDefinition object that is referenced through the roleDefinitionId property.
 
 ### [Get-MgUserAgreementAcceptanceCount](Get-MgUserAgreementAcceptanceCount.md)
 Get the number of the resource

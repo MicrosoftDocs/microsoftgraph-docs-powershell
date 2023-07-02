@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 Module Guid: 9ccd4073-5b48-4f10-bf1d-f02fa42b8a54
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration
@@ -381,12 +381,6 @@ Read the properties and relationships of a cloudPcAuditEvent object.
 ### [Get-MgBetaDeviceManagementVirtualEndpointAuditEventCount](Get-MgBetaDeviceManagementVirtualEndpointAuditEventCount.md)
 Get the number of the resource
 
-### [Get-MgBetaDeviceManagementVirtualEndpointBulkAction](Get-MgBetaDeviceManagementVirtualEndpointBulkAction.md)
-Get bulkActions from deviceManagement
-
-### [Get-MgBetaDeviceManagementVirtualEndpointBulkActionCount](Get-MgBetaDeviceManagementVirtualEndpointBulkActionCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaDeviceManagementVirtualEndpointCloudPc](Get-MgBetaDeviceManagementVirtualEndpointCloudPc.md)
 Read the properties and relationships of a specific cloudPC object.
 
@@ -627,9 +621,6 @@ Create new navigation property to groupAssignments for deviceManagement
 ### [New-MgBetaDeviceManagementUserPfxCertificate](New-MgBetaDeviceManagementUserPfxCertificate.md)
 Create new navigation property to userPfxCertificates for deviceManagement
 
-### [New-MgBetaDeviceManagementVirtualEndpointBulkAction](New-MgBetaDeviceManagementVirtualEndpointBulkAction.md)
-Create new navigation property to bulkActions for deviceManagement
-
 ### [New-MgBetaDeviceManagementVirtualEndpointDeviceImage](New-MgBetaDeviceManagementVirtualEndpointDeviceImage.md)
 Create a new cloudPcDeviceImage object.
 Upload a custom OS image that you can later provision on Cloud PCs.
@@ -813,9 +804,6 @@ Delete navigation property groupAssignments for deviceManagement
 ### [Remove-MgBetaDeviceManagementUserPfxCertificate](Remove-MgBetaDeviceManagementUserPfxCertificate.md)
 Delete navigation property userPfxCertificates for deviceManagement
 
-### [Remove-MgBetaDeviceManagementVirtualEndpointBulkAction](Remove-MgBetaDeviceManagementVirtualEndpointBulkAction.md)
-Delete navigation property bulkActions for deviceManagement
-
 ### [Remove-MgBetaDeviceManagementVirtualEndpointCrossCloudGovernmentOrganizationMapping](Remove-MgBetaDeviceManagementVirtualEndpointCrossCloudGovernmentOrganizationMapping.md)
 Delete navigation property crossCloudGovernmentOrganizationMapping for deviceManagement
 
@@ -838,7 +826,7 @@ Delete navigation property organizationSettings for deviceManagement
 
 ### [Remove-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy](Remove-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy.md)
 Delete a cloudPcProvisioningPolicy object.
-You can’t delete a policy that’s in use.
+You can't delete a policy that's in use.
 
 ### [Remove-MgBetaDeviceManagementVirtualEndpointProvisioningPolicyAssignment](Remove-MgBetaDeviceManagementVirtualEndpointProvisioningPolicyAssignment.md)
 Delete navigation property assignments for deviceManagement
@@ -1010,9 +998,6 @@ Update the navigation property groupAssignments in deviceManagement
 
 ### [Update-MgBetaDeviceManagementUserPfxCertificate](Update-MgBetaDeviceManagementUserPfxCertificate.md)
 Update the navigation property userPfxCertificates in deviceManagement
-
-### [Update-MgBetaDeviceManagementVirtualEndpointBulkAction](Update-MgBetaDeviceManagementVirtualEndpointBulkAction.md)
-Update the navigation property bulkActions in deviceManagement
 
 ### [Update-MgBetaDeviceManagementVirtualEndpointCrossCloudGovernmentOrganizationMapping](Update-MgBetaDeviceManagementVirtualEndpointCrossCloudGovernmentOrganizationMapping.md)
 Update the navigation property crossCloudGovernmentOrganizationMapping in deviceManagement

@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagemententerpriseapp
 schema: 2.0.0
@@ -17,21 +17,21 @@ Create new navigation property to enterpriseApps for roleManagement
 New-MgBetaRoleManagementEnterpriseApp [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-ResourceNamespaces <IMicrosoftGraphUnifiedRbacResourceNamespace[]>]
  [-RoleAssignmentApprovals <IMicrosoftGraphApproval[]>]
- [-RoleAssignments <IMicrosoftGraphUnifiedRoleAssignment[]>]
  [-RoleAssignmentScheduleInstances <IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance[]>]
  [-RoleAssignmentScheduleRequests <IMicrosoftGraphUnifiedRoleAssignmentScheduleRequest[]>]
  [-RoleAssignmentSchedules <IMicrosoftGraphUnifiedRoleAssignmentSchedule[]>]
+ [-RoleAssignments <IMicrosoftGraphUnifiedRoleAssignment[]>]
  [-RoleDefinitions <IMicrosoftGraphUnifiedRoleDefinition[]>]
  [-RoleEligibilityScheduleInstances <IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance[]>]
  [-RoleEligibilityScheduleRequests <IMicrosoftGraphUnifiedRoleEligibilityScheduleRequest[]>]
  [-RoleEligibilitySchedules <IMicrosoftGraphUnifiedRoleEligibilitySchedule[]>]
- [-TransitiveRoleAssignments <IMicrosoftGraphUnifiedRoleAssignment[]>] [-Confirm] [-WhatIf]
+ [-TransitiveRoleAssignments <IMicrosoftGraphUnifiedRoleAssignment[]>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaRoleManagementEnterpriseApp -BodyParameter <IMicrosoftGraphRbacApplication> [-Confirm] [-WhatIf]
+New-MgBetaRoleManagementEnterpriseApp -BodyParameter <IMicrosoftGraphRbacApplication> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -40,19 +40,15 @@ Create new navigation property to enterpriseApps for roleManagement
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -60,7 +56,7 @@ Create new navigation property to enterpriseApps for roleManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -76,7 +72,7 @@ rbacApplication
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRbacApplication
+Type: IMicrosoftGraphRbacApplication
 Parameter Sets: Create
 Aliases:
 
@@ -92,7 +88,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -108,7 +104,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for RESOURCENAMESPACES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRbacResourceNamespace[]
+Type: IMicrosoftGraphUnifiedRbacResourceNamespace[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -124,7 +120,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for ROLEASSIGNMENTAPPROVALS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphApproval[]
+Type: IMicrosoftGraphApproval[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -140,7 +136,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for ROLEASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleAssignment[]
+Type: IMicrosoftGraphUnifiedRoleAssignment[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -156,7 +152,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for ROLEASSIGNMENTSCHEDULEINSTANCES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance[]
+Type: IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -172,7 +168,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for ROLEASSIGNMENTSCHEDULEREQUESTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleAssignmentScheduleRequest[]
+Type: IMicrosoftGraphUnifiedRoleAssignmentScheduleRequest[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -188,7 +184,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for ROLEASSIGNMENTSCHEDULES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleAssignmentSchedule[]
+Type: IMicrosoftGraphUnifiedRoleAssignmentSchedule[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -204,7 +200,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for ROLEDEFINITIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleDefinition[]
+Type: IMicrosoftGraphUnifiedRoleDefinition[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -220,7 +216,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for ROLEELIGIBILITYSCHEDULEINSTANCES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance[]
+Type: IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -236,7 +232,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for ROLEELIGIBILITYSCHEDULEREQUESTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleEligibilityScheduleRequest[]
+Type: IMicrosoftGraphUnifiedRoleEligibilityScheduleRequest[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -252,7 +248,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for ROLEELIGIBILITYSCHEDULES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleEligibilitySchedule[]
+Type: IMicrosoftGraphUnifiedRoleEligibilitySchedule[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -268,7 +264,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for TRANSITIVEROLEASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleAssignment[]
+Type: IMicrosoftGraphUnifiedRoleAssignment[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -283,7 +279,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -299,7 +295,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -316,11 +312,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRbacApplication
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRbacApplication
-
 ## NOTES
 
 ALIASES
@@ -1134,3 +1128,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitepagewebpartbyposition
 schema: 2.0.0
@@ -15,29 +15,29 @@ Invoke action getWebPartsByPosition
 ### GetExpanded (Default)
 ```
 Get-MgBetaSitePageWebPartByPosition -SiteId <String> -SitePageId <String> [-AdditionalProperties <Hashtable>]
- [-ColumnId <Double>] [-HorizontalSectionId <Double>] [-IsInVerticalSection] [-WebPartIndex <Double>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-ColumnId <Double>] [-HorizontalSectionId <Double>] [-IsInVerticalSection] [-WebPartIndex <Double>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgBetaSitePageWebPartByPosition -SiteId <String> -SitePageId <String>
  -BodyParameter <IPaths6RswflSitesSiteIdPagesSitepageIdMicrosoftGraphGetwebpartsbypositionPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### GetViaIdentityExpanded
+```
+Get-MgBetaSitePageWebPartByPosition -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
+ [-ColumnId <Double>] [-HorizontalSectionId <Double>] [-IsInVerticalSection] [-WebPartIndex <Double>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaSitePageWebPartByPosition -InputObject <ISitesIdentity>
  -BodyParameter <IPaths6RswflSitesSiteIdPagesSitepageIdMicrosoftGraphGetwebpartsbypositionPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### GetViaIdentityExpanded
-```
-Get-MgBetaSitePageWebPartByPosition -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
- [-ColumnId <Double>] [-HorizontalSectionId <Double>] [-IsInVerticalSection] [-WebPartIndex <Double>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -45,19 +45,15 @@ Invoke action getWebPartsByPosition
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -65,7 +61,7 @@ Invoke action getWebPartsByPosition
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: GetExpanded, GetViaIdentityExpanded
 Aliases:
 
@@ -81,7 +77,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths6RswflSitesSiteIdPagesSitepageIdMicrosoftGraphGetwebpartsbypositionPostRequestbodyContentApplicationJsonSchema
+Type: IPaths6RswflSitesSiteIdPagesSitepageIdMicrosoftGraphGetwebpartsbypositionPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Get, GetViaIdentity
 Aliases:
 
@@ -96,7 +92,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Double
+Type: Double
 Parameter Sets: GetExpanded, GetViaIdentityExpanded
 Aliases:
 
@@ -111,7 +107,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Double
+Type: Double
 Parameter Sets: GetExpanded, GetViaIdentityExpanded
 Aliases:
 
@@ -127,8 +123,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
-Parameter Sets: GetViaIdentity, GetViaIdentityExpanded
+Type: ISitesIdentity
+Parameter Sets: GetViaIdentityExpanded, GetViaIdentity
 Aliases:
 
 Required: True
@@ -142,7 +138,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: GetExpanded, GetViaIdentityExpanded
 Aliases:
 
@@ -157,8 +153,8 @@ Accept wildcard characters: False
 The unique identifier of site
 
 ```yaml
-Type: System.String
-Parameter Sets: Get, GetExpanded
+Type: String
+Parameter Sets: GetExpanded, Get
 Aliases:
 
 Required: True
@@ -172,8 +168,8 @@ Accept wildcard characters: False
 The unique identifier of sitePage
 
 ```yaml
-Type: System.String
-Parameter Sets: Get, GetExpanded
+Type: String
+Parameter Sets: GetExpanded, Get
 Aliases:
 
 Required: True
@@ -187,7 +183,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Double
+Type: Double
 Parameter Sets: GetExpanded, GetViaIdentityExpanded
 Aliases:
 
@@ -202,7 +198,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -218,7 +214,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -235,13 +231,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths6RswflSitesSiteIdPagesSitepageIdMicrosoftGraphGetwebpartsbypositionPostRequestbodyContentApplicationJsonSchema
-
 ### Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWebPart
-
 ## NOTES
 
 ALIASES
@@ -311,4 +304,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-

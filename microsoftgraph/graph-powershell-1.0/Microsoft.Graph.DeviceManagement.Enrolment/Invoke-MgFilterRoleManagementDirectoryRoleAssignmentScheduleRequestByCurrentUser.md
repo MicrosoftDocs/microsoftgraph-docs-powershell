@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/invoke-mgfilterrolemanagementdirectoryroleassignmentschedulerequestbycurrentuser
@@ -12,14 +12,14 @@ Invoke function filterByCurrentUser
 
 ## SYNTAX
 
-### Filter1 (Default)
+### Filter (Default)
 ```
 Invoke-MgFilterRoleManagementDirectoryRoleAssignmentScheduleRequestByCurrentUser -On <String> [-Count]
  [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [<CommonParameters>]
 ```
 
-### FilterViaIdentity1
+### FilterViaIdentity
 ```
 Invoke-MgFilterRoleManagementDirectoryRoleAssignmentScheduleRequestByCurrentUser
  -InputObject <IDeviceManagementEnrolmentIdentity> [-Count] [-Filter <String>] [-Property <String[]>]
@@ -69,7 +69,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IDeviceManagementEnrolmentIdentity
-Parameter Sets: FilterViaIdentity1
+Parameter Sets: FilterViaIdentity
 Aliases:
 
 Required: True
@@ -84,7 +84,7 @@ Usage: on='{on}'
 
 ```yaml
 Type: String
-Parameter Sets: Filter1
+Parameter Sets: Filter
 Aliases:
 
 Required: True
@@ -177,7 +177,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementEnrolmentIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleAssignmentScheduleRequest
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleAssignmentScheduleRequest1
 ## NOTES
 
 ALIASES
