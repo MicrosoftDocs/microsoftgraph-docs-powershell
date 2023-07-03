@@ -37,7 +37,6 @@ As a recommended best practice, service principals should have at least two owne
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Applications
-```
 
 $params = @{
 	"@odata.id" = "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
@@ -45,6 +44,20 @@ $params = @{
 
 Remove-MgServicePrincipalOwnerByRef -ServicePrincipalId $servicePrincipalId -DirectoryObjectId $directoryObjectId -BodyParameter $params
 
+```
+## PARAMETERS
+
+### EXAMPLE 1
+```powershell
+Import-Module Microsoft.Graph.Applications
+
+$params = @{
+	"@odata.id" = "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
+}
+
+Remove-MgServicePrincipalOwnerByRef -ServicePrincipalId $servicePrincipalId -DirectoryObjectId $directoryObjectId -BodyParameter $params
+
+```
 ## PARAMETERS
 
 ### -DirectoryObjectId
@@ -211,3 +224,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaBetaServicePrincipalOwnerByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalOwnerByRef?view=graph-powershell-beta)
+

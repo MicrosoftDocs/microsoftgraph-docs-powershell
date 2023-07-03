@@ -37,10 +37,19 @@ As a recommended best practice, apps should have at least two owners.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
-```
 
 Remove-MgBetaApplicationOwnerByRef -ApplicationId $applicationId -DirectoryObjectId $directoryObjectId
 
+```
+## PARAMETERS
+
+### EXAMPLE 1
+```powershell
+Import-Module Microsoft.Graph.Beta.Applications
+
+Remove-MgBetaApplicationOwnerByRef -ApplicationId $applicationId -DirectoryObjectId $directoryObjectId
+
+```
 ## PARAMETERS
 
 ### -ApplicationId
@@ -215,3 +224,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgApplicationOwnerByRef](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationOwnerByRef?view=graph-powershell-v1.0)
+

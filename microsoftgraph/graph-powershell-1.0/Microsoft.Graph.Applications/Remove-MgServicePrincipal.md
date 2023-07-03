@@ -35,10 +35,19 @@ Delete a servicePrincipal object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Applications
-```
 
 Remove-MgServicePrincipal -ServicePrincipalId $servicePrincipalId
 
+```
+## PARAMETERS
+
+### EXAMPLE 1
+```powershell
+Import-Module Microsoft.Graph.Applications
+
+Remove-MgServicePrincipal -ServicePrincipalId $servicePrincipalId
+
+```
 ## PARAMETERS
 
 ### -IfMatch
@@ -175,3 +184,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaBetaServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipal?view=graph-powershell-beta)
+

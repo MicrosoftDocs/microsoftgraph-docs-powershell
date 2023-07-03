@@ -42,10 +42,19 @@ Read a directory extension definition represented by an extensionProperty object
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
-```
 
 Get-MgBetaApplicationExtensionProperty -ApplicationId $applicationId -ExtensionPropertyId $extensionPropertyId
 
+```
+## PARAMETERS
+
+### EXAMPLE 1
+```powershell
+Import-Module Microsoft.Graph.Beta.Applications
+
+Get-MgBetaApplicationExtensionProperty -ApplicationId $applicationId -ExtensionPropertyId $extensionPropertyId
+
+```
 ## PARAMETERS
 
 ### -All
@@ -295,3 +304,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgApplicationExtensionProperty](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationExtensionProperty?view=graph-powershell-v1.0)
+

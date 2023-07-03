@@ -42,10 +42,19 @@ Get delegatedPermissionClassifications from servicePrincipals
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Applications
-```
 
 Get-MgServicePrincipalDelegatedPermissionClassification -ServicePrincipalId $servicePrincipalId
 
+```
+## PARAMETERS
+
+### EXAMPLE 1
+```powershell
+Import-Module Microsoft.Graph.Applications
+
+Get-MgServicePrincipalDelegatedPermissionClassification -ServicePrincipalId $servicePrincipalId
+
+```
 ## PARAMETERS
 
 ### -All
@@ -287,3 +296,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaBetaServicePrincipalDelegatedPermissionClassification](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalDelegatedPermissionClassification?view=graph-powershell-beta)
+

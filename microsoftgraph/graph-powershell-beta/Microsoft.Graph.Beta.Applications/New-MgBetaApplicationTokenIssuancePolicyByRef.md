@@ -47,7 +47,6 @@ Assign a tokenIssuancePolicy to an application.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
-```
 
 $params = @{
 	"@odata.id" = "https://graph.microsoft.com/v1.0/policies/tokenIssuancePolicies/cd3d9b57-0aee-4f25-8ee3-ac74ef5986a9"
@@ -55,6 +54,20 @@ $params = @{
 
 New-MgBetaApplicationTokenIssuancePolicyByRef -ApplicationId $applicationId -BodyParameter $params
 
+```
+## PARAMETERS
+
+### EXAMPLE 1
+```powershell
+Import-Module Microsoft.Graph.Beta.Applications
+
+$params = @{
+	"@odata.id" = "https://graph.microsoft.com/v1.0/policies/tokenIssuancePolicies/cd3d9b57-0aee-4f25-8ee3-ac74ef5986a9"
+}
+
+New-MgBetaApplicationTokenIssuancePolicyByRef -ApplicationId $applicationId -BodyParameter $params
+
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -236,3 +249,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgApplicationTokenIssuancePolicyByRef](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationTokenIssuancePolicyByRef?view=graph-powershell-v1.0)
+

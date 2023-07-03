@@ -35,10 +35,19 @@ Deletes an appRoleAssignment that a group has been granted.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Applications
-```
 
 Remove-MgGroupAppRoleAssignment -GroupId $groupId -AppRoleAssignmentId $appRoleAssignmentId
 
+```
+## PARAMETERS
+
+### EXAMPLE 1
+```powershell
+Import-Module Microsoft.Graph.Applications
+
+Remove-MgGroupAppRoleAssignment -GroupId $groupId -AppRoleAssignmentId $appRoleAssignmentId
+
+```
 ## PARAMETERS
 
 ### -AppRoleAssignmentId
@@ -190,3 +199,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaBetaGroupAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaGroupAppRoleAssignment?view=graph-powershell-beta)
+

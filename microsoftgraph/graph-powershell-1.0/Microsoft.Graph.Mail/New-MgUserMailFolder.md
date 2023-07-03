@@ -58,7 +58,6 @@ If you intend a new folder to be hidden, you must set the **isHidden** property 
 ### EXAMPLE 1
 ```
 Import-Module Microsoft.Graph.Mail
-```
 
 $params = @{
 	displayName = "Clutter"
@@ -67,7 +66,7 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserMailFolder -UserId $userId -BodyParameter $params
-
+```
 ## PARAMETERS
 
 ### -AdditionalProperties

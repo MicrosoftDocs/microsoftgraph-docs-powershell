@@ -51,7 +51,6 @@ Create a new directory extension definition, represented by an extensionProperty
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Applications
-```
 
 $params = @{
 	name = "jobGroup"
@@ -63,6 +62,24 @@ $params = @{
 
 New-MgApplicationExtensionProperty -ApplicationId $applicationId -BodyParameter $params
 
+```
+## PARAMETERS
+
+### EXAMPLE 1
+```powershell
+Import-Module Microsoft.Graph.Applications
+
+$params = @{
+	name = "jobGroup"
+	dataType = "String"
+	targetObjects = @(
+		"User"
+	)
+}
+
+New-MgApplicationExtensionProperty -ApplicationId $applicationId -BodyParameter $params
+
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -328,3 +345,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaBetaApplicationExtensionProperty](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationExtensionProperty?view=graph-powershell-beta)
+

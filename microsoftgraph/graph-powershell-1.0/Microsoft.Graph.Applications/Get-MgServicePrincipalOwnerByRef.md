@@ -37,10 +37,19 @@ Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count 
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Applications
-```
 
 Get-MgServicePrincipalOwner -ServicePrincipalId $servicePrincipalId
 
+```
+## PARAMETERS
+
+### EXAMPLE 1
+```powershell
+Import-Module Microsoft.Graph.Applications
+
+Get-MgServicePrincipalOwner -ServicePrincipalId $servicePrincipalId
+
+```
 ## PARAMETERS
 
 ### -All
@@ -209,3 +218,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaBetaServicePrincipalOwnerByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalOwnerByRef?view=graph-powershell-beta)
+

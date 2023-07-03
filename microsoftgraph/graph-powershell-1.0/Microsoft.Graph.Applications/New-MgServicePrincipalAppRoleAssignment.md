@@ -58,7 +58,6 @@ To grant an app role assignment to a client service principal, you need three id
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Applications
-```
 
 $params = @{
 	principalId = "9028d19c-26a9-4809-8e3f-20ff73e2d75e"
@@ -68,6 +67,22 @@ $params = @{
 
 New-MgServicePrincipalAppRoleAssignment -ServicePrincipalId $servicePrincipalId -BodyParameter $params
 
+```
+## PARAMETERS
+
+### EXAMPLE 1
+```powershell
+Import-Module Microsoft.Graph.Applications
+
+$params = @{
+	principalId = "9028d19c-26a9-4809-8e3f-20ff73e2d75e"
+	resourceId = "8fce32da-1246-437b-99cd-76d1d4677bd5"
+	appRoleId = "498476ce-e0fe-48b0-b801-37ba7e2685c6"
+}
+
+New-MgServicePrincipalAppRoleAssignment -ServicePrincipalId $servicePrincipalId -BodyParameter $params
+
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -369,3 +384,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaBetaServicePrincipalAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalAppRoleAssignment?view=graph-powershell-beta)
+
