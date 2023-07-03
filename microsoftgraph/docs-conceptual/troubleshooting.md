@@ -3,7 +3,7 @@ title: "Error handling and troubleshooting cmdlets"
 description: "Learn how to diagnose common errors in Microsoft Graph PowerShell"
 
 ms.topic: troubleshooting
-ms.date: 08/11/2022
+ms.date: 05/22/2023
 ms.author: eunicewaweru
 manager: CelesteDG
 author: msewaweru
@@ -20,36 +20,10 @@ Before troubleshooting any errors, make sure that you're running the most recent
 Get-InstalledModule
 ```
 
-The version of the `Microsoft.Graph` module should be the most recent compared to the latest release in the [PowerShell gallery](https://www.powershellgallery.com/packages/Microsoft.Graph). If your installed module isn't up to date, update it by running:
+The version of the `Microsoft.Graph` module should be the most recent compared to the latest release in the [PowerShell Gallery](https://www.powershellgallery.com/packages/Microsoft.Graph). If your installed module isn't up to date, update it by running:
 
 ```PowerShell
 Update-Module Microsoft.Graph
-```
-
-## Profile related errors
-
-By default, Microsoft Graph PowerShell commands target the v1.0 API version. Commands for APIs that are only available in beta aren't available in PowerShell by default. As a result, you might encounter an error if you run a command that isn't available in your current profile.
-
-For example, when you run a cmdlet that isn't available in your current profile, you'll get the following error. This error can also occur if the cmdlet you run doesn't exist.
-
-:::image type="content" source="images/profile-error.png" alt-text="profile-related-error"::: 
-
-To check the API version targeted by your command, run:
-
-```powershell
-Find-MgGraphCommand -Command $CommandName
-```
-
-Once you establish the right API version to target, confirm your current profile by running:
-
-```powershell
-Get-MgProfile
-```
-
-Use `Select-MgProfile` to switch between **v1.0** and **beta** versions of the API. To switch to the beta version, run:
-
-```powershell
-Select-MgProfile -Name Beta
 ```
 
 ## Authentication and authorization errors
@@ -58,7 +32,7 @@ Authorization errors can occur due to various issues. Most of these issues gener
 
 To find the permissions required for a specific cmdlet or API, use [Find-MgGraphCommand](find-mg-graph-command.md) cmdlet or the [API permissions reference](/graph/permissions-reference).
 
-When you run Connect-MgGraph, you grant consent to Microsoft Graph PowerShell permissions. Here, you specify the permissions that you require using the **-Scopes** parameter.
+When you run **Connect-MgGraph**, you grant consent to Microsoft Graph PowerShell permissions. Here, you specify the permissions that you require using the **-Scopes** parameter.
 
 For example, in the error below, the user lacks the permissions to run the New-MgServicePrincipal cmdlet.
 
