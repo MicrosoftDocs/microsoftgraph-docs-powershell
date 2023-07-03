@@ -49,15 +49,13 @@ Use this API to create a new CalendarGroup.
 ### EXAMPLE 1
 ```
 Import-Module Microsoft.Graph.Calendar
-```
 
 $params = @{
 	name = "Personal events"
 }
-
 # A UPN can also be used as -UserId.
 New-MgUserCalendarGroup -UserId $userId -BodyParameter $params
-
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
