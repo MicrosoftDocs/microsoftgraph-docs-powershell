@@ -336,7 +336,7 @@ $params = @{
 }
 
 New-MgCommunicationCall -BodyParameter $params
-
+```
 ### EXAMPLE 8
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
@@ -361,7 +361,7 @@ $params = @{
 }
 
 New-MgCommunicationCall -BodyParameter $params
-
+```
 ### EXAMPLE 9
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
@@ -406,7 +406,7 @@ $params = @{
 }
 
 New-MgCommunicationCall -BodyParameter $params
-
+```
 ### EXAMPLE 10
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
