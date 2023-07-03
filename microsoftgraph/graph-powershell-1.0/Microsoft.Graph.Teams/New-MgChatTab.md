@@ -51,7 +51,6 @@ Add (pin) a tab to the specified chat.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	displayName = "My Contoso Tab"
@@ -66,6 +65,7 @@ $params = @{
 
 New-MgChatTab -ChatId $chatId -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -366,3 +366,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaChatTab](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaChatTab?view=graph-powershell-beta)
+

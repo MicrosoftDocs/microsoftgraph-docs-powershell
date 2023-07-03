@@ -67,7 +67,6 @@ Update the navigation property tasks in planner
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Planner
-```
 
 $params = @{
 	assignments = @{
@@ -84,6 +83,7 @@ $params = @{
 
 Update-MgPlannerTask -PlannerTaskId $plannerTaskId -BodyParameter $params-If-Match W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
+```
 ## PARAMETERS
 
 ### -ActiveChecklistItemCount
@@ -745,3 +745,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaPlannerTask](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgBetaPlannerTask?view=graph-powershell-beta)
+

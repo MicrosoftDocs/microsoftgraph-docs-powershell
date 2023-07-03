@@ -54,7 +54,6 @@ An attachment can be one of the following types: All these types of attachment r
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Groups
-```
 
 $params = @{
 	Post = @{
@@ -74,10 +73,10 @@ $params = @{
 
 Invoke-MgReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
 
+```
 ### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Groups
-```
 
 $params = @{
 	Post = @{
@@ -100,10 +99,10 @@ $params = @{
 
 Invoke-MgReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
 
+```
 ### EXAMPLE 3
 ```powershell
 Import-Module Microsoft.Graph.Groups
-```
 
 $params = @{
 	Post = @{
@@ -126,6 +125,7 @@ $params = @{
 
 Invoke-MgReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -425,3 +425,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBetaReplyGroupConversationThread](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaReplyGroupConversationThread?view=graph-powershell-beta)
+

@@ -39,7 +39,6 @@ In Azure AD B2C, this operation can currently create a socialIdentityProvider, o
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	"@odata.type" = "microsoft.graph.socialIdentityProvider"
@@ -51,10 +50,10 @@ $params = @{
 
 New-MgBetaIdentityProvider -BodyParameter $params
 
+```
 ### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	"@odata.type" = "microsoft.graph.appleManagedIdentityProvider"
@@ -67,6 +66,7 @@ $params = @{
 
 New-MgBetaIdentityProvider -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -187,3 +187,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgIdentityProvider](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityProvider?view=graph-powershell-v1.0)
+

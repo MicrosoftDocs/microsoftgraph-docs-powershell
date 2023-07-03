@@ -49,10 +49,10 @@ Create new navigation property to verificationDnsRecords for domains
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Get-MgBetaDomainVerificationDnsRecord -DomainId $domainId
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -308,3 +308,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgDomainVerificationDnsRecord](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDomainVerificationDnsRecord?view=graph-powershell-v1.0)
+

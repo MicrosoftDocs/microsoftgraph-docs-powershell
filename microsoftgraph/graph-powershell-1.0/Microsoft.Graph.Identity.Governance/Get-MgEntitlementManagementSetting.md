@@ -27,10 +27,10 @@ Retrieve the properties of an entitlementManagementSettings object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Get-MgEntitlementManagementSetting
 
+```
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -77,3 +77,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaEntitlementManagementSetting](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementSetting?view=graph-powershell-beta)
+

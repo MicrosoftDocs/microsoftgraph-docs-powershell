@@ -61,24 +61,24 @@ List of channels either hosted in or shared with the team (incoming channels).
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Get-MgBetaTeamChannel -TeamId $teamId
 
+```
 ### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Get-MgBetaTeamChannel -TeamId $teamId -Filter "membershipType eq 'private'"
 
+```
 ### EXAMPLE 3
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Get-MgBetaTeamChannel -TeamId $teamId -Filter "membershipType eq 'shared'"
 
+```
 ## PARAMETERS
 
 ### -All
@@ -337,3 +337,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupTeamChannel](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamChannel?view=graph-powershell-v1.0)
+

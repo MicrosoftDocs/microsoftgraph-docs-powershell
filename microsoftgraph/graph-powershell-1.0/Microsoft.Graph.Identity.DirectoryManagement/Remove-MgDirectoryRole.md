@@ -35,10 +35,10 @@ Delete entity from directoryRoles
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Get-MgDirectoryRole -DirectoryRoleId $directoryRoleId
 
+```
 ## PARAMETERS
 
 ### -DirectoryRoleId
@@ -176,3 +176,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaDirectoryRole](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDirectoryRole?view=graph-powershell-beta)
+

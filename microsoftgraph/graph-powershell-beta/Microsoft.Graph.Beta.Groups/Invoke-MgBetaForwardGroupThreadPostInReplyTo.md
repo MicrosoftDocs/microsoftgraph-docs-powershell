@@ -53,7 +53,6 @@ You can specify both the parent conversation and thread in the request, nor, you
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
-```
 
 $params = @{
 	Comment = "comment-value"
@@ -69,6 +68,7 @@ $params = @{
 
 Invoke-MgBetaForwardGroupThreadPost -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -322,3 +322,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgForwardGroupThreadPostInReplyTo](/powershell/module/Microsoft.Graph.Groups/Invoke-MgForwardGroupThreadPostInReplyTo?view=graph-powershell-v1.0)
+

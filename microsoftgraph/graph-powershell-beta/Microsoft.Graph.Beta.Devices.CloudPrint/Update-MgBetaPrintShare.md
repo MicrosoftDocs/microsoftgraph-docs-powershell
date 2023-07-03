@@ -63,7 +63,6 @@ For example, if a physical printer device breaks, an administrator can register 
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
-```
 
 $params = @{
 	displayName = "PrinterShare Name"
@@ -73,6 +72,7 @@ $params = @{
 
 Update-MgBetaPrintShare -PrinterShareId $printerShareId -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -19449,3 +19449,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgPrintShare](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Update-MgPrintShare?view=graph-powershell-v1.0)
+

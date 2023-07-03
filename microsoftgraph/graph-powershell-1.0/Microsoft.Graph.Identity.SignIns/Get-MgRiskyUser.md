@@ -41,10 +41,10 @@ Read the properties and relationships of a riskyUser object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Get-MgRiskyUser -RiskyUserId $riskyUserId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -306,3 +306,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaRiskyUser](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaRiskyUser?view=graph-powershell-beta)
+

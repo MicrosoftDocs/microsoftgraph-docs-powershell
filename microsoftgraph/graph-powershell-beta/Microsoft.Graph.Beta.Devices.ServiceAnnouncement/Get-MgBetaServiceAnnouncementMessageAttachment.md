@@ -42,17 +42,17 @@ Read the properties and relationships of a serviceAnnouncementAttachment object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
-```
 
 Get-MgBetaServiceAnnouncementMessageAttachment -ServiceUpdateMessageId $serviceUpdateMessageId -ServiceAnnouncementAttachmentId $serviceAnnouncementAttachmentId
 
+```
 ### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
-```
 
 Get-MgBetaServiceAnnouncementMessageAttachmentContent -ServiceUpdateMessageId $serviceUpdateMessageId -ServiceAnnouncementAttachmentId $serviceAnnouncementAttachmentId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -278,3 +278,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgServiceAnnouncementMessageAttachment](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Get-MgServiceAnnouncementMessageAttachment?view=graph-powershell-v1.0)
+

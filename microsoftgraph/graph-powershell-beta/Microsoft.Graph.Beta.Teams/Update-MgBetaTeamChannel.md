@@ -59,10 +59,10 @@ Update the properties of the specified channel.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Update-MgBetaTeamChannel -TeamId $teamId -ChannelId $channelId
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -14737,3 +14737,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgTeamChannel](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamChannel?view=graph-powershell-v1.0)
+

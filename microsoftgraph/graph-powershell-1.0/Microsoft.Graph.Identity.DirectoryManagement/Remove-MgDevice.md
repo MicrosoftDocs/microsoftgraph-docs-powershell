@@ -34,10 +34,10 @@ Delete a registered device.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Remove-MgDevice -DeviceId $deviceId
 
+```
 ## PARAMETERS
 
 ### -DeviceId
@@ -175,3 +175,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaDevice](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDevice?view=graph-powershell-beta)
+

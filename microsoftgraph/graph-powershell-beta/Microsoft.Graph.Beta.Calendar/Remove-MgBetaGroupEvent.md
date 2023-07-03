@@ -35,10 +35,10 @@ Delete an event object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Calendar
-```
 
 Remove-MgBetaGroupEvent -GroupId $groupId -EventId $eventId
 
+```
 ## PARAMETERS
 
 ### -EventId
@@ -181,3 +181,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgGroupEvent](/powershell/module/Microsoft.Graph.Calendar/Remove-MgGroupEvent?view=graph-powershell-v1.0)
+

@@ -35,10 +35,10 @@ Delete entity from contacts
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Get-MgBetaContact -OrgContactId $orgContactId
 
+```
 ## PARAMETERS
 
 ### -IfMatch
@@ -191,3 +191,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgContact](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgContact?view=graph-powershell-v1.0)
+

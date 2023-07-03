@@ -63,7 +63,6 @@ See subscription for maximum length of a subscription for each resource type.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.ChangeNotifications
-```
 
 $params = @{
 	expirationDateTime = [System.DateTime]::Parse("2016-11-22T18:23:45.9356913Z")
@@ -71,6 +70,7 @@ $params = @{
 
 Update-MgSubscription -SubscriptionId $subscriptionId -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -479,3 +479,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaSubscription](/powershell/module/Microsoft.Graph.Beta.ChangeNotifications/Update-MgBetaSubscription?view=graph-powershell-beta)
+

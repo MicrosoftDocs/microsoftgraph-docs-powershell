@@ -35,10 +35,10 @@ Delete a plannerTask object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Planner
-```
 
 Remove-MgPlannerTask -PlannerTaskId $plannerTaskId-If-Match W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
+```
 ## PARAMETERS
 
 ### -IfMatch
@@ -160,3 +160,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaPlannerTask](/powershell/module/Microsoft.Graph.Beta.Planner/Remove-MgBetaPlannerTask?view=graph-powershell-beta)
+

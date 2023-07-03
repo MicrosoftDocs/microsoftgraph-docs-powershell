@@ -39,10 +39,10 @@ The external sponsors are a set of users who can approve requests on behalf of o
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 Remove-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorByRef -ConnectedOrganizationId $connectedOrganizationId -DirectoryObjectId $directoryObjectId
 
+```
 ## PARAMETERS
 
 ### -ConnectedOrganizationId
@@ -285,3 +285,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgEntitlementManagementConnectedOrganizationExternalSponsorByRef](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgEntitlementManagementConnectedOrganizationExternalSponsorByRef?view=graph-powershell-v1.0)
+

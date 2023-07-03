@@ -44,10 +44,10 @@ Read-only.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Get-MgEntitlementManagementAccessPackageIncompatibleWith -AccessPackageId $accessPackageId
 
+```
 ## PARAMETERS
 
 ### -AccessPackageId
@@ -308,3 +308,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaEntitlementManagementAccessPackageIncompatibleWith](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementAccessPackageIncompatibleWith?view=graph-powershell-beta)
+

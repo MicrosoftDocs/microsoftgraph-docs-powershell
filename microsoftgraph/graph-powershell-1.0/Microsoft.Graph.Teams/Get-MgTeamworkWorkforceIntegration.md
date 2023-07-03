@@ -42,10 +42,10 @@ Retrieve the properties and relationships of a workforceIntegration object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgTeamworkWorkforceIntegration -WorkforceIntegrationId $workforceIntegrationId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -283,3 +283,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaTeamworkWorkforceIntegration](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamworkWorkforceIntegration?view=graph-powershell-beta)
+

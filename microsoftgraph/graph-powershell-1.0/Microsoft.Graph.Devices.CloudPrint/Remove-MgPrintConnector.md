@@ -35,10 +35,10 @@ Delete (unregister) a printConnector.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Devices.CloudPrint
-```
 
 Remove-MgPrintConnector -PrintConnectorId $printConnectorId
 
+```
 ## PARAMETERS
 
 ### -IfMatch
@@ -168,3 +168,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaPrintConnector](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Remove-MgBetaPrintConnector?view=graph-powershell-beta)
+

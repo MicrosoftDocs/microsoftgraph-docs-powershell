@@ -35,10 +35,10 @@ Delete (unregister) a printer.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
-```
 
 Remove-MgBetaPrintPrinter -PrinterId $printerId
 
+```
 ## PARAMETERS
 
 ### -IfMatch
@@ -168,3 +168,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgPrintPrinter](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Remove-MgPrintPrinter?view=graph-powershell-v1.0)
+

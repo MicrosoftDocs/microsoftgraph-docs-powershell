@@ -42,10 +42,10 @@ Configure domain federation with organizations whose identity provider (IdP) sup
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Remove-MgDirectoryFederationConfiguration -IdentityProviderBaseId $identityProviderBaseId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -273,3 +273,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDirectoryFederationConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryFederationConfiguration?view=graph-powershell-beta)
+

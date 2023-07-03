@@ -48,17 +48,17 @@ Nullable.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Files
-```
 
 Get-MgDriveItemThumbnail -DriveId $driveId -DriveItemId $driveItemId
 
+```
 ### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Files
-```
 
 Get-MgDriveItemThumbnail -DriveId $driveId -DriveItemId $driveItemId -Property "c300x400_crop"
 
+```
 ## PARAMETERS
 
 ### -All
@@ -319,3 +319,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDriveItemThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItemThumbnail?view=graph-powershell-beta)
+

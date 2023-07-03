@@ -35,10 +35,10 @@ Remove a user's manager.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users
-```
 
 Remove-MgBetaUserManagerByRef -UserId $userId
 
+```
 ## PARAMETERS
 
 ### -IfMatch
@@ -173,3 +173,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgUserManagerByRef](/powershell/module/Microsoft.Graph.Users/Remove-MgUserManagerByRef?view=graph-powershell-v1.0)
+

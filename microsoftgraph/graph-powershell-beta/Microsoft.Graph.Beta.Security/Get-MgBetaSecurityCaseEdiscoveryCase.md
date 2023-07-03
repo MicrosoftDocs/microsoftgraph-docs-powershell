@@ -42,10 +42,10 @@ Read the properties and relationships of an ediscoveryCase object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 Get-MgBetaSecurityCaseEdiscoveryCase -EdiscoveryCaseId $ediscoveryCaseId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -308,3 +308,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCase?view=graph-powershell-v1.0)
+

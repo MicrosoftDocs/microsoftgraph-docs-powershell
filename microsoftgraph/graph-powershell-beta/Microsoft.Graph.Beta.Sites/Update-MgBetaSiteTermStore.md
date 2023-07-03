@@ -49,7 +49,6 @@ Update the navigation property termStore in sites
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 $params = @{
 	defaultLanguageTag = "en-US"
@@ -57,6 +56,7 @@ $params = @{
 
 Update-MgBetaSiteTermStore -SiteId $siteId -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -436,3 +436,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgSiteTermStore](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteTermStore?view=graph-powershell-v1.0)
+

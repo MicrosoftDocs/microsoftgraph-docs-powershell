@@ -35,10 +35,10 @@ Delete entity from contracts
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Get-MgContract -ContractId $contractId
 
+```
 ## PARAMETERS
 
 ### -ContractId
@@ -176,3 +176,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaContract](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaContract?view=graph-powershell-beta)
+

@@ -53,10 +53,10 @@ Create new navigation property to offerShiftRequests for groups
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgTeamScheduleOfferShiftRequest -TeamId $teamId
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -371,3 +371,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaGroupTeamScheduleOfferShiftRequest](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamScheduleOfferShiftRequest?view=graph-powershell-beta)
+

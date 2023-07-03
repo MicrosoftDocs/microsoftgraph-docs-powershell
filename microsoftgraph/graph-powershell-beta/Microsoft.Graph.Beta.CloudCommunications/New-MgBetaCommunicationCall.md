@@ -48,7 +48,6 @@ You will need to register the calling bot and go through the list of permissions
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -80,10 +79,10 @@ $params = @{
 
 New-MgBetaCommunicationCall -BodyParameter $params
 
+```
 ### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -125,10 +124,10 @@ $params = @{
 
 New-MgBetaCommunicationCall -BodyParameter $params
 
+```
 ### EXAMPLE 3
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -181,10 +180,10 @@ $params = @{
 
 New-MgBetaCommunicationCall -BodyParameter $params
 
+```
 ### EXAMPLE 4
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -237,10 +236,10 @@ $params = @{
 
 New-MgBetaCommunicationCall -BodyParameter $params
 
+```
 ### EXAMPLE 5
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -276,10 +275,10 @@ $params = @{
 
 New-MgBetaCommunicationCall -BodyParameter $params
 
+```
 ### EXAMPLE 6
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -314,10 +313,10 @@ $params = @{
 
 New-MgBetaCommunicationCall -BodyParameter $params
 
+```
 ### EXAMPLE 7
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -343,7 +342,6 @@ New-MgBetaCommunicationCall -BodyParameter $params
 ### EXAMPLE 8
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -369,7 +367,6 @@ New-MgBetaCommunicationCall -BodyParameter $params
 ### EXAMPLE 9
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -415,7 +412,6 @@ New-MgBetaCommunicationCall -BodyParameter $params
 ### EXAMPLE 10
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -459,6 +455,7 @@ $params = @{
 
 New-MgBetaCommunicationCall -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -ActiveModalities
@@ -1346,3 +1343,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/New-MgCommunicationCall?view=graph-powershell-v1.0)
+

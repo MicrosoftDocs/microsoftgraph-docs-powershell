@@ -40,10 +40,10 @@ Get a thread object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
-```
 
 Get-MgBetaGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -279,3 +279,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupThread](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupThread?view=graph-powershell-v1.0)
+

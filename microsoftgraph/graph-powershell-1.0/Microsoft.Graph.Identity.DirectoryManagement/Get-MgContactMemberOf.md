@@ -48,10 +48,10 @@ Supports $expand.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Get-MgContactMemberOf -OrgContactId $orgContactId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -310,3 +310,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaContactMemberOf](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContactMemberOf?view=graph-powershell-beta)
+

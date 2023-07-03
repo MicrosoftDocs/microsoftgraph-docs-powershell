@@ -42,10 +42,10 @@ Read the properties of an identityApiConnector object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaIdentityApiConnector -IdentityApiConnectorId $identityApiConnectorId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -326,3 +326,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgIdentityApiConnector](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityApiConnector?view=graph-powershell-v1.0)
+

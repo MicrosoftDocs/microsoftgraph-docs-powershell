@@ -47,10 +47,10 @@ Delete a term object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Sites
-```
 
 Remove-MgSiteTermStoreSetTerm -SiteId $siteId -SetId $setId -TermId $termId
 
+```
 ## PARAMETERS
 
 ### -IfMatch
@@ -250,3 +250,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaSiteTermStoreSetTerm](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteTermStoreSetTerm?view=graph-powershell-beta)
+

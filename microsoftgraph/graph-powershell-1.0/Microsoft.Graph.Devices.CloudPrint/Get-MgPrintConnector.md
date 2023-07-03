@@ -42,10 +42,10 @@ Retrieve the properties and relationships of a **printConnector** object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Devices.CloudPrint
-```
 
 Get-MgPrintConnector -PrintConnectorId $printConnectorId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -265,3 +265,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaPrintConnector](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintConnector?view=graph-powershell-beta)
+

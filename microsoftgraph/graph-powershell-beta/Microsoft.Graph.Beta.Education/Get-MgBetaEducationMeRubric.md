@@ -44,10 +44,10 @@ Only teachers and students can perform this operation.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Get-MgBetaEducationMeRubric -EducationRubricId $educationRubricId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -267,3 +267,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgEducationMeRubric](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeRubric?view=graph-powershell-v1.0)
+

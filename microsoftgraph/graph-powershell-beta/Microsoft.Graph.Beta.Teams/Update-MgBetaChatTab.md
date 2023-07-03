@@ -53,7 +53,6 @@ Update the properties of the specified tab in a chat.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	displayName = "My Contoso Tab - updated again"
@@ -61,6 +60,7 @@ $params = @{
 
 Update-MgBetaChatTab -ChatId $chatId -TeamsTabId $teamsTabId -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -471,3 +471,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgChatTab](/powershell/module/Microsoft.Graph.Teams/Update-MgChatTab?view=graph-powershell-v1.0)
+

@@ -42,10 +42,10 @@ The collection of column definitions reusable across lists under this site.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Sites
-```
 
 Get-MgSiteColumn -SiteId $siteId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -305,3 +305,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSiteColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteColumn?view=graph-powershell-beta)
+

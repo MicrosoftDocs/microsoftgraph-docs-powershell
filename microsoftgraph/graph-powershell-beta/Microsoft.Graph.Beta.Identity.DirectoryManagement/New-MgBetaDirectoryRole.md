@@ -42,7 +42,6 @@ To access and assign members to other directory roles, you must first activate i
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 $params = @{
 	roleTemplateId = "fe930be7-5e62-47db-91af-98c3a49a38b1"
@@ -50,6 +49,7 @@ $params = @{
 
 New-MgBetaDirectoryRole -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -288,3 +288,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgDirectoryRole](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryRole?view=graph-powershell-v1.0)
+

@@ -28,10 +28,10 @@ Read the properties of a tenantAppManagementPolicy object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaPolicyDefaultAppManagementPolicy
 
+```
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -78,3 +78,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgPolicyDefaultAppManagementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyDefaultAppManagementPolicy?view=graph-powershell-v1.0)
+

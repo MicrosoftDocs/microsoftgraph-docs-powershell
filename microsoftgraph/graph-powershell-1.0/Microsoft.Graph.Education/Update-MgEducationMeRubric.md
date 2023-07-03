@@ -61,7 +61,6 @@ That rubric can be retrieved using GET /education/classes/acdefc6b-2dc6-4e71-b1e
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 $params = @{
 	displayName = "Example Credit Rubric after display name patch"
@@ -69,6 +68,7 @@ $params = @{
 
 Update-MgEducationMeRubric -EducationRubricId $educationRubricId -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -399,3 +399,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaEducationMeRubric](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationMeRubric?view=graph-powershell-beta)
+

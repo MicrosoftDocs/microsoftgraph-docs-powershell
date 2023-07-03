@@ -41,10 +41,10 @@ For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayNa
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Groups
-```
 
 Get-MgGroupOwner -GroupId $groupId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -213,3 +213,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaGroupOwnerByRef](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupOwnerByRef?view=graph-powershell-beta)
+

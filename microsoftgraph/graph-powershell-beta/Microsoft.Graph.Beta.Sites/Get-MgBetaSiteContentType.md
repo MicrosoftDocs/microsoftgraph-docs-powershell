@@ -42,10 +42,10 @@ Retrieve the metadata for a [content type][contentType] in a [site][] or a [list
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 Get-MgBetaSiteContentType -SiteId $siteId -ContentTypeId $contentTypeId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -317,3 +317,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSiteContentType](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteContentType?view=graph-powershell-v1.0)
+

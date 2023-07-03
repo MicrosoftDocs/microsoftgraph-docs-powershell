@@ -37,10 +37,10 @@ Only teachers within a class can delete assignments.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 Remove-MgEducationClassAssignment -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId
 
+```
 ## PARAMETERS
 
 ### -EducationAssignmentId
@@ -182,3 +182,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationClassAssignment?view=graph-powershell-beta)
+

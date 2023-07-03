@@ -39,10 +39,10 @@ Deleting a schema extension definition does not affect accessing custom data tha
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.SchemaExtensions
-```
 
 Remove-MgBetaSchemaExtension -SchemaExtensionId $schemaExtensionId
 
+```
 ## PARAMETERS
 
 ### -IfMatch
@@ -160,3 +160,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgSchemaExtension](/powershell/module/Microsoft.Graph.SchemaExtensions/Remove-MgSchemaExtension?view=graph-powershell-v1.0)
+

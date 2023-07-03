@@ -48,17 +48,17 @@ Nullable.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 Get-MgCommunicationCallRecordSession -CallRecordId $callRecordId
 
+```
 ### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 Get-MgCommunicationCallRecordSession -CallRecordId $callRecordId -ExpandProperty "segments"
 
+```
 ## PARAMETERS
 
 ### -All
@@ -292,3 +292,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaCommunicationCallRecordSession](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationCallRecordSession?view=graph-powershell-beta)
+

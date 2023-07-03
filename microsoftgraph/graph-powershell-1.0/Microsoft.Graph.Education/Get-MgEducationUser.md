@@ -54,10 +54,10 @@ Read the properties and relationships of an educationUser object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationUser -EducationUserId $educationUserId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -275,3 +275,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaEducationUser](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationUser?view=graph-powershell-beta)
+

@@ -29,10 +29,10 @@ Get the educationClass resources owned by an educationSchool.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationSchoolClass -EducationSchoolId $educationSchoolId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -185,3 +185,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaEducationSchoolClassByRef](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationSchoolClassByRef?view=graph-powershell-beta)
+

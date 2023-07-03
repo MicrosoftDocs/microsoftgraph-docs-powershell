@@ -49,7 +49,6 @@ See the table in the Permissions section for the list of resources that support 
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
-```
 
 $params = @{
 	"@odata.type" = "Microsoft.OutlookServices.OpenTypeExtension"
@@ -66,6 +65,7 @@ $params = @{
 
 Update-MgBetaGroupThreadPostExtension -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -ExtensionId $extensionId -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -288,3 +288,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgGroupThreadPostExtension](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupThreadPostExtension?view=graph-powershell-v1.0)
+

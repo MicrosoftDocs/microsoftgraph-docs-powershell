@@ -42,17 +42,17 @@ Assignments belonging to the user.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationUserAssignment -EducationUserId $educationUserId
 
+```
 ### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationUserAssignment -EducationUserId $educationUserId -ExpandProperty "submissions"
 
+```
 ## PARAMETERS
 
 ### -All
@@ -284,3 +284,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaEducationUserAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationUserAssignment?view=graph-powershell-beta)
+

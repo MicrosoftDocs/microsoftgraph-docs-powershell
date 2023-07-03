@@ -35,10 +35,10 @@ Retrieve the properties and relationships of a **plannerAssignedToTaskBoardTaskF
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Planner
-```
 
 Get-MgPlannerTaskAssignedToTaskBoardFormat -PlannerTaskId $plannerTaskId
 
+```
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -129,3 +129,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaPlannerTaskAssignedToTaskBoardFormat](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerTaskAssignedToTaskBoardFormat?view=graph-powershell-beta)
+

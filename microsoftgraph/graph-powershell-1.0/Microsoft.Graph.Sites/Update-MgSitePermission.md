@@ -59,7 +59,6 @@ Update an application permission object on a site.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Sites
-```
 
 $params = @{
 	roles = @(
@@ -69,6 +68,7 @@ $params = @{
 
 Update-MgSitePermission -SiteId $siteId -PermissionId $permissionId -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -595,3 +595,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaSitePermission](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSitePermission?view=graph-powershell-beta)
+

@@ -79,10 +79,10 @@ Update an event object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Calendar
-```
 
 Get-MgBetaGroupEvent -GroupId $groupId -EventId $eventId
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1809,3 +1809,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgGroupEvent](/powershell/module/Microsoft.Graph.Calendar/Update-MgGroupEvent?view=graph-powershell-v1.0)
+

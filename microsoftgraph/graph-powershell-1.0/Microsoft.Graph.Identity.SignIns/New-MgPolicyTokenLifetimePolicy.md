@@ -36,7 +36,6 @@ Create a new tokenLifetimePolicy object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	definition = @(
@@ -48,6 +47,7 @@ $params = @{
 
 New-MgPolicyTokenLifetimePolicy -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -249,3 +249,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaPolicyTokenLifetimePolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyTokenLifetimePolicy?view=graph-powershell-beta)
+

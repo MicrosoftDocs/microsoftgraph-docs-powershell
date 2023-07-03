@@ -35,10 +35,10 @@ Delete entity from subscribedSkus
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Get-MgBetaSubscribedSku -SubscribedSkuId $subscribedSkuId
 
+```
 ## PARAMETERS
 
 ### -IfMatch
@@ -191,3 +191,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgSubscribedSku](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgSubscribedSku?view=graph-powershell-v1.0)
+

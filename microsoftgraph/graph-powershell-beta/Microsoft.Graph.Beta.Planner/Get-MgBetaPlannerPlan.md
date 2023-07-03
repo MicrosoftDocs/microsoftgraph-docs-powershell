@@ -42,10 +42,10 @@ Retrieve the properties and relationships of a plannerplan object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Planner
-```
 
 Get-MgBetaPlannerPlan -PlannerPlanId $plannerPlanId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -260,3 +260,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgPlannerPlan](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerPlan?view=graph-powershell-v1.0)
+

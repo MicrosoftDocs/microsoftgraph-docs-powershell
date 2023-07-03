@@ -62,10 +62,10 @@ Update the navigation property assignmentPolicies in identityGovernance
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Get-MgEntitlementManagementAssignmentPolicy -AccessPackageAssignmentPolicyId $accessPackageAssignmentPolicyId
 
+```
 ## PARAMETERS
 
 ### -AccessPackage
@@ -8589,3 +8589,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 
 ## RELATED LINKS
+

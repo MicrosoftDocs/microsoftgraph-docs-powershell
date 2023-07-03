@@ -35,7 +35,6 @@ Create a new plannerBucket object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Planner
-```
 
 $params = @{
 	name = "Advertising"
@@ -45,6 +44,7 @@ $params = @{
 
 New-MgBetaPlannerBucket -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -437,3 +437,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgPlannerBucket](/powershell/module/Microsoft.Graph.Planner/New-MgPlannerBucket?view=graph-powershell-v1.0)
+

@@ -42,10 +42,10 @@ Returns the metadata for an [item][] in a [list][].
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 Get-MgBetaSiteListItem -SiteId $siteId -ListId $listId -ListItemId $listItemId -ExpandProperty "fields"
 
+```
 ## PARAMETERS
 
 ### -All
@@ -332,3 +332,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSiteListItem](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListItem?view=graph-powershell-v1.0)
+

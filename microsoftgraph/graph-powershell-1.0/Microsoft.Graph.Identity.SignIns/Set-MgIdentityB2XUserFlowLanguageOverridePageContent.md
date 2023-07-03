@@ -36,10 +36,10 @@ Update media content for the navigation property overridesPages in identity
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Get-MgIdentityB2XUserFlowLanguageOverridePage -B2xIdentityUserFlowId $b2xIdentityUserFlowId -UserFlowLanguageConfigurationId $userFlowLanguageConfigurationId
 
+```
 ## PARAMETERS
 
 ### -B2XIdentityUserFlowId
@@ -259,3 +259,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgBetaIdentityB2XUserFlowLanguageOverridePageContent](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Set-MgBetaIdentityB2XUserFlowLanguageOverridePageContent?view=graph-powershell-beta)
+

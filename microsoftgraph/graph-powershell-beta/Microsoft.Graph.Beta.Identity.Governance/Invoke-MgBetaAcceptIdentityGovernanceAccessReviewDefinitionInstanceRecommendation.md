@@ -40,10 +40,10 @@ If there is not a recommendation on an accessReviewInstanceDecisionItem object n
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 Invoke-MgBetaAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId
 
+```
 ## PARAMETERS
 
 ### -AccessReviewInstanceId
@@ -256,3 +256,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation?view=graph-powershell-v1.0)
+

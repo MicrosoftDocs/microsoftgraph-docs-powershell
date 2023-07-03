@@ -28,10 +28,10 @@ Users in the accepted senders list can post to conversations of the group (ident
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Groups
-```
 
 Get-MgGroupAcceptedSender -GroupId $groupId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -169,3 +169,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaGroupAcceptedSenderByRef](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupAcceptedSenderByRef?view=graph-powershell-beta)
+

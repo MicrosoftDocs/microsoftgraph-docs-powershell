@@ -40,10 +40,10 @@ You can add members to the team after the request returns a successful response.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 Complete-MgTeamChannelMigration -TeamId $teamId -ChannelId $channelId
 
+```
 ## PARAMETERS
 
 ### -InputObject
@@ -176,3 +176,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Complete-MgBetaTeamPrimaryChannelMigration](/powershell/module/Microsoft.Graph.Beta.Teams/Complete-MgBetaTeamPrimaryChannelMigration?view=graph-powershell-beta)
+

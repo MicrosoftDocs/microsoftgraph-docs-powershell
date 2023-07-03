@@ -72,7 +72,6 @@ Update the properties of the default branding object specified by the organizati
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 $params = @{
 	signInPageText = "Default"
@@ -81,6 +80,7 @@ $params = @{
 
 Update-MgBetaOrganizationBranding -OrganizationId $organizationId -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -915,3 +915,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgOrganizationBranding](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgOrganizationBranding?view=graph-powershell-v1.0)
+

@@ -37,10 +37,10 @@ Once owners are assigned to a group, the last owner (a user object) of the group
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Groups
-```
 
 Remove-MgGroupOwnerByRef -GroupId $groupId -DirectoryObjectId $directoryObjectId
 
+```
 ## PARAMETERS
 
 ### -DirectoryObjectId
@@ -222,3 +222,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaGroupOwnerByRef](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupOwnerByRef?view=graph-powershell-beta)
+

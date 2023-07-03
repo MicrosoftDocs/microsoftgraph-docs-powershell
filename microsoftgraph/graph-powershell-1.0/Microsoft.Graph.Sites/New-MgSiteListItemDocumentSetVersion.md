@@ -55,7 +55,6 @@ Create a new version of a document set item in a list.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Sites
-```
 
 $params = @{
 	comment = "v1"
@@ -64,6 +63,7 @@ $params = @{
 
 New-MgSiteListItemDocumentSetVersion -SiteId $siteId -ListId $listId -ListItemId $listItemId -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -463,3 +463,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteListItemDocumentSetVersion?view=graph-powershell-beta)
+

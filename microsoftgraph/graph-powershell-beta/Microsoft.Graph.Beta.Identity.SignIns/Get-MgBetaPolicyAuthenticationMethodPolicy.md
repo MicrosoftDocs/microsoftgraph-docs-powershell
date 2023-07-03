@@ -28,10 +28,10 @@ Read the properties and relationships of an authenticationMethodsPolicy object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaPolicyAuthenticationMethodPolicy
 
+```
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -78,3 +78,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgPolicyAuthenticationMethodPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyAuthenticationMethodPolicy?view=graph-powershell-v1.0)
+

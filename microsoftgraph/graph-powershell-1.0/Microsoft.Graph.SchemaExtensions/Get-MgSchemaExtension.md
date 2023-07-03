@@ -42,10 +42,10 @@ Get schemaExtension
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.SchemaExtensions
-```
 
 Get-MgSchemaExtension -SchemaExtensionId $schemaExtensionId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -253,3 +253,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSchemaExtension](/powershell/module/Microsoft.Graph.Beta.SchemaExtensions/Get-MgBetaSchemaExtension?view=graph-powershell-beta)
+

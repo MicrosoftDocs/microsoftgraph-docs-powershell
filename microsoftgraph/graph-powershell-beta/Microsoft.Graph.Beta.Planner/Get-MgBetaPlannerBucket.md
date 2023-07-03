@@ -42,10 +42,10 @@ Retrieve the properties and relationships of a plannerBucket object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Planner
-```
 
 Get-MgBetaPlannerBucket -PlannerBucketId $plannerBucketId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -260,3 +260,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgPlannerBucket](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerBucket?view=graph-powershell-v1.0)
+

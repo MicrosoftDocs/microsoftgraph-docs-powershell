@@ -29,10 +29,10 @@ Retrieve a list of plannerBucket objects contained by a plannerPlan object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Planner
-```
 
 Get-MgBetaPlannerPlanBucket -PlannerPlanId $plannerPlanId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -230,3 +230,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgGroupPlannerPlanBucket](/powershell/module/Microsoft.Graph.Planner/Get-MgGroupPlannerPlanBucket?view=graph-powershell-v1.0)
+

@@ -77,7 +77,6 @@ Update the permissions assigned to an existing sharee or delegate, through the c
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Calendar
-```
 
 $params = @{
 	role = "write"
@@ -85,6 +84,7 @@ $params = @{
 
 Update-MgBetaUserCalendarPermission -UserId $userId -CalendarPermissionId $calendarPermissionId -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -356,3 +356,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgUserEvent](/powershell/module/Microsoft.Graph.Calendar/Update-MgUserEvent?view=graph-powershell-v1.0)
+

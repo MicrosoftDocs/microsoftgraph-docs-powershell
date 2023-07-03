@@ -47,10 +47,10 @@ Provides tenants capability to launch a simulated and realistic phishing attack 
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 Get-MgBetaSecurityAttackSimulation
 
+```
 ## PARAMETERS
 
 ### -All
@@ -314,3 +314,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSecurityAttackSimulation](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulation?view=graph-powershell-v1.0)
+

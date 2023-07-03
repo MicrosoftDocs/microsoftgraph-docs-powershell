@@ -65,7 +65,6 @@ Create a new [list][] in a [site][].
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 $params = @{
 	displayName = "Books"
@@ -88,6 +87,7 @@ $params = @{
 
 New-MgBetaSiteList -SiteId $siteId -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -Activities
@@ -29185,3 +29185,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgSiteList](/powershell/module/Microsoft.Graph.Sites/New-MgSiteList?view=graph-powershell-v1.0)
+

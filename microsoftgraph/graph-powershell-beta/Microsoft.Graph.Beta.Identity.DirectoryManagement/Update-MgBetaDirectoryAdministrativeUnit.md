@@ -54,7 +54,6 @@ Update the navigation property administrativeUnits in directory
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 $params = @{
 	displayName = "Greater Seattle District Technical Schools"
@@ -62,6 +61,7 @@ $params = @{
 
 Update-MgBetaDirectoryAdministrativeUnit -AdministrativeUnitId $administrativeUnitId -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -404,3 +404,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgDirectoryAdministrativeUnit](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryAdministrativeUnit?view=graph-powershell-v1.0)
+

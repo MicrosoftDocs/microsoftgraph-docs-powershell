@@ -46,10 +46,10 @@ Supports $expand.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Get-MgDomainVerificationDnsRecord -DomainId $domainId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -292,3 +292,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDomainVerificationDnsRecord](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDomainVerificationDnsRecord?view=graph-powershell-beta)
+

@@ -28,7 +28,6 @@ Delete navigation property authenticationFlowsPolicy for policies
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	selfServiceSignUp = @{
@@ -38,6 +37,7 @@ $params = @{
 
 Update-MgPolicyAuthenticationFlowPolicy -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -IfMatch
@@ -115,3 +115,4 @@ ALIASES
 
 ## RELATED LINKS
 [Remove-MgBetaPolicyAuthenticationFlowPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyAuthenticationFlowPolicy?view=graph-powershell-beta)
+

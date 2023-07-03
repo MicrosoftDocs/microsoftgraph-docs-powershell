@@ -53,7 +53,6 @@ Use reply thread or reply post to further post to that conversation.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
-```
 
 $params = @{
 	topic = "Take your wellness days and rest"
@@ -81,6 +80,7 @@ $params = @{
 
 New-MgBetaGroupConversation -GroupId $groupId -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -486,3 +486,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgGroupConversation](/powershell/module/Microsoft.Graph.Groups/New-MgGroupConversation?view=graph-powershell-v1.0)
+

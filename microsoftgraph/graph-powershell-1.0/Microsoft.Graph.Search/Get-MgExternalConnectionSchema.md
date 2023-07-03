@@ -35,10 +35,10 @@ Read the properties and relationships of a schema object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Search
-```
 
 Get-MgExternalConnectionSchema -ExternalConnectionId $externalConnectionId
 
+```
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -130,3 +130,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaExternalConnectionSchema](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternalConnectionSchema?view=graph-powershell-beta)
+

@@ -35,10 +35,10 @@ Uninstall an app from the personal scope of the specified user.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Remove-MgBetaUserTeamworkInstalledApp -UserId $userId -UserScopeTeamsAppInstallationId $userScopeTeamsAppInstallationId
 
+```
 ## PARAMETERS
 
 ### -IfMatch
@@ -207,3 +207,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgUserTeamworkInstalledApp](/powershell/module/Microsoft.Graph.Teams/Remove-MgUserTeamworkInstalledApp?view=graph-powershell-v1.0)
+

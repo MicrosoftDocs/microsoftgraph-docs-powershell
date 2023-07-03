@@ -44,10 +44,10 @@ Get submittedResources from education
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Get-MgBetaEducationClassAssignmentSubmissionSubmittedResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -312,3 +312,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgEducationClassAssignmentSubmissionSubmittedResource](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassAssignmentSubmissionSubmittedResource?view=graph-powershell-v1.0)
+

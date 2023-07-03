@@ -46,10 +46,10 @@ Returns the plannerPlans owned by the group.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Planner
-```
 
 Get-MgGroupPlannerPlan -GroupId $groupId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -276,3 +276,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaGroupPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaGroupPlannerPlan?view=graph-powershell-beta)
+

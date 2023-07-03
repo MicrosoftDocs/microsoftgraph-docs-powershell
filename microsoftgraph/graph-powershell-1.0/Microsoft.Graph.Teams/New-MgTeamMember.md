@@ -48,7 +48,6 @@ Add a new conversationMember to a team.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
@@ -60,10 +59,10 @@ $params = @{
 
 New-MgTeamMember -TeamId $teamId -BodyParameter $params
 
+```
 ### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
@@ -75,6 +74,7 @@ $params = @{
 
 New-MgTeamMember -TeamId $teamId -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -297,3 +297,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaTeamMember](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamMember?view=graph-powershell-beta)
+

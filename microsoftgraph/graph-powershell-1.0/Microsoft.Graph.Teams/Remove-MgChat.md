@@ -34,7 +34,6 @@ Delete entity from chats
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	topic = "Group chat title update"
@@ -42,6 +41,7 @@ $params = @{
 
 Update-MgChat -ChatId $chatId -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -ChatId
@@ -189,3 +189,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaChat](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaChat?view=graph-powershell-beta)
+

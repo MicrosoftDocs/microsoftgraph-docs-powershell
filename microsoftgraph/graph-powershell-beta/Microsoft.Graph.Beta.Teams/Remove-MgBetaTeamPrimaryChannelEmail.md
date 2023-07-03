@@ -36,10 +36,10 @@ You can remove an email address only if it was provisioned using the provisionEm
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Remove-MgBetaTeamChannelEmail -TeamId $teamId -ChannelId $channelId
 
+```
 ## PARAMETERS
 
 ### -InputObject
@@ -178,3 +178,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgTeamPrimaryChannelEmail](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamPrimaryChannelEmail?view=graph-powershell-v1.0)
+

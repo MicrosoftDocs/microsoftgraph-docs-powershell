@@ -49,10 +49,10 @@ Create new navigation property to scopedMembers for directoryRoles
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Get-MgDirectoryRoleScopedMember -DirectoryRoleId $directoryRoleId
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -269,3 +269,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaDirectoryRoleScopedMember](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryRoleScopedMember?view=graph-powershell-beta)
+

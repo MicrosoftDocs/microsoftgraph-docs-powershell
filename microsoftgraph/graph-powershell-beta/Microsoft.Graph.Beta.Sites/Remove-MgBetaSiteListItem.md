@@ -35,10 +35,10 @@ Removes an item from a [list][].
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 Remove-MgBetaSiteListItem -SiteId $siteId -ListId $listId -ListItemId $listItemId
 
+```
 ## PARAMETERS
 
 ### -IfMatch
@@ -235,3 +235,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgSiteListItem](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteListItem?view=graph-powershell-v1.0)
+

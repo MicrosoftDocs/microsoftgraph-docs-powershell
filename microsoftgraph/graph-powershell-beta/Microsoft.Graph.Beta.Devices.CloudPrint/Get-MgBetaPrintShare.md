@@ -42,17 +42,17 @@ Retrieve the properties and relationships of a printer share.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
-```
 
 Get-MgBetaPrintShare -PrinterShareId $printerShareId
 
+```
 ### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
-```
 
 Get-MgBetaPrintShare -PrinterShareId $printerShareId -Property "id,displayName,capabilities"
 
+```
 ## PARAMETERS
 
 ### -All
@@ -272,3 +272,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgPrintShare](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintShare?view=graph-powershell-v1.0)
+

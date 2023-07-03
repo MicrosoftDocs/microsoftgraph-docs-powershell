@@ -29,10 +29,10 @@ Retrieve a list of users at a school.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Get-MgBetaEducationSchoolUser -EducationSchoolId $educationSchoolId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -185,3 +185,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgEducationSchoolUserByRef](/powershell/module/Microsoft.Graph.Education/Get-MgEducationSchoolUserByRef?view=graph-powershell-v1.0)
+

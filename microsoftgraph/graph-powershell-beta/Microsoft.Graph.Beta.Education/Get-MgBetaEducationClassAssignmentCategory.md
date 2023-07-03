@@ -51,10 +51,10 @@ Only teachers, students, and applications with application permissions can perfo
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Get-MgBetaEducationClassAssignmentCategory -EducationClassId $educationClassId -EducationCategoryId $educationCategoryId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -304,3 +304,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgEducationClassAssignmentCategory](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassAssignmentCategory?view=graph-powershell-v1.0)
+

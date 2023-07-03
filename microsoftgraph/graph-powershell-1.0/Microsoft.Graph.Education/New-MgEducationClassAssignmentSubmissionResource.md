@@ -58,7 +58,6 @@ If the file doesn't exist or is not in that folder, the POST request will fail.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 $params = @{
 	resource = @{
@@ -70,10 +69,10 @@ $params = @{
 
 New-MgEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
 
+```
 ### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 $params = @{
 	resource = @{
@@ -85,10 +84,10 @@ $params = @{
 
 New-MgEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
 
+```
 ### EXAMPLE 3
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 $params = @{
 	resource = @{
@@ -100,10 +99,10 @@ $params = @{
 
 New-MgEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
 
+```
 ### EXAMPLE 4
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 $params = @{
 	resource = @{
@@ -115,10 +114,10 @@ $params = @{
 
 New-MgEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
 
+```
 ### EXAMPLE 5
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 $params = @{
 	resource = @{
@@ -130,10 +129,10 @@ $params = @{
 
 New-MgEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
 
+```
 ### EXAMPLE 6
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 $params = @{
 	resource = @{
@@ -145,6 +144,7 @@ $params = @{
 
 New-MgEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -381,3 +381,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaEducationClassAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassAssignmentSubmissionResource?view=graph-powershell-beta)
+

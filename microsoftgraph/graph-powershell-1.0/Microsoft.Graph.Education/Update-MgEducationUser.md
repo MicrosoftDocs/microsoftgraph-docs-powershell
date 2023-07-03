@@ -75,7 +75,6 @@ Update the properties of an educationUser object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 $params = @{
 	displayName = "Rogelio Cazares"
@@ -86,6 +85,7 @@ $params = @{
 
 Update-MgEducationUser -EducationUserId $educationUserId -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AccountEnabled
@@ -14799,3 +14799,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaEducationUser](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationUser?view=graph-powershell-beta)
+

@@ -54,10 +54,10 @@ Get posts from groups
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Groups
-```
 
 Get-MgGroupThreadPost -GroupId $groupId -ConversationThreadId $conversationThreadId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -314,3 +314,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaGroupThreadPost](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupThreadPost?view=graph-powershell-beta)
+

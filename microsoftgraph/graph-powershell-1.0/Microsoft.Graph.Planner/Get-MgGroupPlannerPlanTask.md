@@ -29,10 +29,10 @@ Retrieve a list of plannerTask objects associated with a plannerPlan object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Planner
-```
 
 Get-MgPlannerPlanTask -PlannerPlanId $plannerPlanId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -230,3 +230,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaGroupPlannerPlanTask](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaGroupPlannerPlanTask?view=graph-powershell-beta)
+

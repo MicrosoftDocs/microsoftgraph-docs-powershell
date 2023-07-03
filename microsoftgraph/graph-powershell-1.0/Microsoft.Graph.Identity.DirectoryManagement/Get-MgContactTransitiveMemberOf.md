@@ -46,10 +46,10 @@ Nullable.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Get-MgContactTransitiveMemberOf -OrgContactId $orgContactId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -308,3 +308,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaContactTransitiveMemberOf](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContactTransitiveMemberOf?view=graph-powershell-beta)
+

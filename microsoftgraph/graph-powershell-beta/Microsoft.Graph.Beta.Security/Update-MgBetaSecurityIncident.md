@@ -59,7 +59,6 @@ Update the properties of an incident object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 $params = @{
 	classification = "TruePositive"
@@ -71,6 +70,7 @@ $params = @{
 
 Update-MgBetaSecurityIncident -IncidentId $incidentId -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -653,3 +653,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgSecurityIncident](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityIncident?view=graph-powershell-v1.0)
+

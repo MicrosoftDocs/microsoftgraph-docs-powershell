@@ -42,10 +42,10 @@ Get a conversationMember from a team.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgTeamMember -TeamId $teamId -ConversationMemberId $conversationMemberId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -298,3 +298,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaTeamMember](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamMember?view=graph-powershell-beta)
+

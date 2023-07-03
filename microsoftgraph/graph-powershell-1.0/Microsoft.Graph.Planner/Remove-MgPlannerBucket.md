@@ -35,10 +35,10 @@ Delete **plannerBucket**.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Planner
-```
 
 Remove-MgPlannerBucket -PlannerBucketId $plannerBucketId-If-Match W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
+```
 ## PARAMETERS
 
 ### -IfMatch
@@ -160,3 +160,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaPlannerBucket](/powershell/module/Microsoft.Graph.Beta.Planner/Remove-MgBetaPlannerBucket?view=graph-powershell-beta)
+

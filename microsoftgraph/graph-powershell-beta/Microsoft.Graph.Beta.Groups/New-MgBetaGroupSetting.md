@@ -55,7 +55,6 @@ The template named `Group.Unified` can be used to configure tenant-wide Microsof
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
-```
 
 $params = @{
 	templateId = "08d542b9-071f-4e16-94b0-74abb372e3d9"
@@ -69,6 +68,7 @@ $params = @{
 
 New-MgBetaGroupSetting -GroupId $groupId -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -308,3 +308,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgGroupSetting](/powershell/module/Microsoft.Graph.Groups/New-MgGroupSetting?view=graph-powershell-v1.0)
+

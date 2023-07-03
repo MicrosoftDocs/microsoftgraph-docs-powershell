@@ -41,10 +41,10 @@ Retrieve the properties and relationships of a timeOffReason object by ID.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Get-MgBetaTeamScheduleTimeOffReason -TeamId $teamId -TimeOffReasonId $timeOffReasonId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -288,3 +288,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamScheduleTimeOffReason?view=graph-powershell-v1.0)
+

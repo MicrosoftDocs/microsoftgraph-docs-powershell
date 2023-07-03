@@ -35,10 +35,10 @@ Retrieve the properties and relationships of **plannerBucketTaskBoardTaskFormat*
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Planner
-```
 
 Get-MgPlannerTaskBucketTaskBoardFormat -PlannerTaskId $plannerTaskId
 
+```
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -129,3 +129,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaPlannerTaskBucketTaskBoardFormat](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerTaskBucketTaskBoardFormat?view=graph-powershell-beta)
+

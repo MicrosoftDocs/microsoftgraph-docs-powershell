@@ -37,10 +37,10 @@ This operation is allowed only for channels with a **membershipType** value of `
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 Remove-MgTeamChannelSharedWithTeam -TeamId $teamId -ChannelId $channelId -SharedWithChannelTeamInfoId $sharedWithChannelTeamInfoId
 
+```
 ## PARAMETERS
 
 ### -ChannelId
@@ -218,3 +218,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaTeamChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamChannelSharedWithTeam?view=graph-powershell-beta)
+

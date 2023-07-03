@@ -49,7 +49,6 @@ Update the properties and relationships of a shiftPreferences object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users
-```
 
 $params = @{
 	id = "SHPR_eeab4fb1-20e5-48ca-ad9b-98119d94bee7"
@@ -78,6 +77,7 @@ $params = @{
 
 Update-MgBetaUserSettingShiftPreference -UserId $userId -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -356,3 +356,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgUserTodoList](/powershell/module/Microsoft.Graph.Users/Update-MgUserTodoList?view=graph-powershell-v1.0)
+

@@ -35,10 +35,10 @@ Delete entity from directoryRoleTemplates
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Get-MgBetaDirectoryRoleTemplate -DirectoryRoleTemplateId $directoryRoleTemplateId
 
+```
 ## PARAMETERS
 
 ### -DirectoryRoleTemplateId
@@ -191,3 +191,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDirectoryRoleTemplate](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDirectoryRoleTemplate?view=graph-powershell-v1.0)
+

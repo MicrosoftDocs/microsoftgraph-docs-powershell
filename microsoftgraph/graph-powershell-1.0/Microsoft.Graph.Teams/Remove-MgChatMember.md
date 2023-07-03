@@ -35,10 +35,10 @@ Remove a conversationMember from a chat.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 Remove-MgChatMember -ChatId $chatId -ConversationMemberId $conversationMemberId
 
+```
 ## PARAMETERS
 
 ### -ChatId
@@ -201,3 +201,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaChatMember](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaChatMember?view=graph-powershell-beta)
+

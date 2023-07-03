@@ -42,10 +42,10 @@ Get the properties of an activityBasedTimeoutPolicy object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaPolicyActivityBasedTimeoutPolicy -ActivityBasedTimeoutPolicyId $activityBasedTimeoutPolicyId
 
+```
 ## PARAMETERS
 
 ### -ActivityBasedTimeoutPolicyId
@@ -326,3 +326,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgPolicyActivityBasedTimeoutPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyActivityBasedTimeoutPolicy?view=graph-powershell-v1.0)
+

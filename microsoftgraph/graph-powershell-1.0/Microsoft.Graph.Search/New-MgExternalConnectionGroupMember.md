@@ -47,7 +47,6 @@ Create an identity resource for a new member in an externalGroup.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Search
-```
 
 $params = @{
 	id = "e811976d-83df-4cbd-8b9b-5215b18aa874"
@@ -56,10 +55,10 @@ $params = @{
 
 New-MgExternalConnectionGroupMember -ExternalConnectionId $externalConnectionId -ExternalGroupId $externalGroupId -BodyParameter $params
 
+```
 ### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Search
-```
 
 $params = @{
 	id = "e5477431-1038-484e-bf69-1dfedb97a110"
@@ -68,10 +67,10 @@ $params = @{
 
 New-MgExternalConnectionGroupMember -ExternalConnectionId $externalConnectionId -ExternalGroupId $externalGroupId -BodyParameter $params
 
+```
 ### EXAMPLE 3
 ```powershell
 Import-Module Microsoft.Graph.Search
-```
 
 $params = @{
 	id = "1431b9c38ee647f6a"
@@ -80,6 +79,7 @@ $params = @{
 
 New-MgExternalConnectionGroupMember -ExternalConnectionId $externalConnectionId -ExternalGroupId $externalGroupId -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -255,3 +255,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaExternalConnectionGroupMember](/powershell/module/Microsoft.Graph.Beta.Search/New-MgBetaExternalConnectionGroupMember?view=graph-powershell-beta)
+

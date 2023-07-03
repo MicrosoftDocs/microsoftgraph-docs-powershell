@@ -37,10 +37,10 @@ Supports $expand.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Get-MgBetaDeviceRegisteredOwner -DeviceId $deviceId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -209,3 +209,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgDeviceRegisteredOwnerByRef](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDeviceRegisteredOwnerByRef?view=graph-powershell-v1.0)
+

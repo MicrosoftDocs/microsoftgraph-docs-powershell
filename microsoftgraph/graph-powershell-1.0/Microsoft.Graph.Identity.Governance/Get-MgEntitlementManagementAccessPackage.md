@@ -42,10 +42,10 @@ Retrieve the properties and relationships of an accessPackage object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Get-MgEntitlementManagementAccessPackage -AccessPackageId $accessPackageId
 
+```
 ## PARAMETERS
 
 ### -AccessPackageId
@@ -291,3 +291,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaEntitlementManagementAccessPackage](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementAccessPackage?view=graph-powershell-beta)
+

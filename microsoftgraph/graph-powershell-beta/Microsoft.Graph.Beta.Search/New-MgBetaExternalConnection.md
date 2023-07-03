@@ -45,7 +45,6 @@ Create a new externalConnection.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Search
-```
 
 $params = @{
 	id = "contosohr"
@@ -55,6 +54,7 @@ $params = @{
 
 New-MgBetaExternalConnection -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -ActivitySettings
@@ -601,3 +601,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgExternalConnection](/powershell/module/Microsoft.Graph.Search/New-MgExternalConnection?view=graph-powershell-v1.0)
+

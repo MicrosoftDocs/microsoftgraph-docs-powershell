@@ -55,10 +55,10 @@ Create new navigation property to history for identityProtection
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaRiskyServicePrincipalHistory -RiskyServicePrincipalId $riskyServicePrincipalId
 
+```
 ## PARAMETERS
 
 ### -AccountEnabled
@@ -532,3 +532,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgRiskyServicePrincipalHistory](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgRiskyServicePrincipalHistory?view=graph-powershell-v1.0)
+

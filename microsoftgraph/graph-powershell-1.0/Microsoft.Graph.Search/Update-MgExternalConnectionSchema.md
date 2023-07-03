@@ -49,10 +49,10 @@ Update the navigation property schema in external
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Search
-```
 
 Get-MgExternalConnectionSchema -ExternalConnectionId $externalConnectionId
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -250,3 +250,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaExternalConnectionSchema](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaExternalConnectionSchema?view=graph-powershell-beta)
+

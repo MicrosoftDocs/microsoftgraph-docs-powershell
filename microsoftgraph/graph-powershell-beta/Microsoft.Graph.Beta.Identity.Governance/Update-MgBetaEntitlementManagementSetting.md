@@ -36,7 +36,6 @@ Update an existing entitlementManagementSettings object to change one or more of
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 $params = @{
 	externalUserLifecycleAction = "None"
@@ -44,6 +43,7 @@ $params = @{
 
 Update-MgBetaEntitlementManagementSetting -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -180,3 +180,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgEntitlementManagementSetting](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgEntitlementManagementSetting?view=graph-powershell-v1.0)
+

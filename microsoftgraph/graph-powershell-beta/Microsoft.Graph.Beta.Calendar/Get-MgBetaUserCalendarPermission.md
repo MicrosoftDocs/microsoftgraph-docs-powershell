@@ -58,10 +58,10 @@ Get the specified permissions object of a user or group calendar that has been s
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Calendar
-```
 
 Get-MgBetaUserCalendarPermission -UserId $userId -CalendarPermissionId $calendarPermissionId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -279,3 +279,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserCalendarPermission](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserCalendarPermission?view=graph-powershell-v1.0)
+

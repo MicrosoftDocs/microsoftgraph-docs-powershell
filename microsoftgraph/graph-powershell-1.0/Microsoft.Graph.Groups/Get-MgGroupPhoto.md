@@ -49,10 +49,10 @@ The group's profile photo
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Groups
-```
 
 Get-MgGroupPhoto -GroupId $groupId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -279,3 +279,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaGroupPhoto](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupPhoto?view=graph-powershell-beta)
+

@@ -34,10 +34,10 @@ Create new navigation property to services for print
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
-```
 
 Get-MgBetaPrintService
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -169,3 +169,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgPrintService](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintService?view=graph-powershell-v1.0)
+

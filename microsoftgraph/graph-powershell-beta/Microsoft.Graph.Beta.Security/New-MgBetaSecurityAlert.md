@@ -51,10 +51,10 @@ Create new navigation property to alerts for security
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 Get-MgBetaSecurityAlert
 
+```
 ## PARAMETERS
 
 ### -ActivityGroupName
@@ -1095,3 +1095,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgSecurityAlert](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAlert?view=graph-powershell-v1.0)
+

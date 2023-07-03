@@ -44,7 +44,6 @@ For more information about these resources, see Set up change notifications that
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.ChangeNotifications
-```
 
 $params = @{
 	changeType = "created"
@@ -57,6 +56,7 @@ $params = @{
 
 New-MgSubscription -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -430,3 +430,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaSubscription](/powershell/module/Microsoft.Graph.Beta.ChangeNotifications/New-MgBetaSubscription?view=graph-powershell-beta)
+

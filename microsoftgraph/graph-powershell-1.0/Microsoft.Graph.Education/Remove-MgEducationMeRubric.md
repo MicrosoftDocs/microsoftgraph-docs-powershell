@@ -37,10 +37,10 @@ Only teachers can perform this operation.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 Remove-MgEducationMeRubric -EducationRubricId $educationRubricId
 
+```
 ## PARAMETERS
 
 ### -EducationRubricId
@@ -167,3 +167,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaEducationMeRubric](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationMeRubric?view=graph-powershell-beta)
+

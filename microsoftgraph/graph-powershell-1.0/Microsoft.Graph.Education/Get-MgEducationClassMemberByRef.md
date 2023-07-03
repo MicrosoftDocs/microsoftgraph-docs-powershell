@@ -29,10 +29,10 @@ Retrieves the educationUser members of an educationClass.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationClassMember -EducationClassId $educationClassId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -185,3 +185,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaEducationClassMemberByRef](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassMemberByRef?view=graph-powershell-beta)
+

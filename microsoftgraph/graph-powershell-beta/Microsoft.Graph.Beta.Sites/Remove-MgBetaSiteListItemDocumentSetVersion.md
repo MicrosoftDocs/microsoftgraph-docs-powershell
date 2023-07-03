@@ -36,10 +36,10 @@ Delete a version of a document set in a list.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 Remove-MgBetaSiteListItemDocumentSetVersion -SiteId $siteId -ListId $listId -ListItemId $listItemId -DocumentSetVersionId $documentSetVersionId
 
+```
 ## PARAMETERS
 
 ### -DocumentSetVersionId
@@ -251,3 +251,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteListItemDocumentSetVersion?view=graph-powershell-v1.0)
+

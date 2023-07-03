@@ -42,10 +42,10 @@ Retrieve the properties and relationships of a print service endpoint.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
-```
 
 Get-MgBetaPrintServiceEndpoint -PrintServiceId $printServiceId -PrintServiceEndpointId $printServiceEndpointId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -280,3 +280,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgPrintServiceEndpoint](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintServiceEndpoint?view=graph-powershell-v1.0)
+

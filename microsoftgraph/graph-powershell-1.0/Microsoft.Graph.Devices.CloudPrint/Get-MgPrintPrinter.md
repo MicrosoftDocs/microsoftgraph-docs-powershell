@@ -41,17 +41,17 @@ Retrieve the properties and relationships of a printer object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Devices.CloudPrint
-```
 
 Get-MgPrintPrinter -PrinterId $printerId
 
+```
 ### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Devices.CloudPrint
-```
 
 Get-MgPrintPrinter -PrinterId $printerId -Property "id,displayName,capabilities"
 
+```
 ## PARAMETERS
 
 ### -All
@@ -271,3 +271,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaPrintPrinter](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintPrinter?view=graph-powershell-beta)
+

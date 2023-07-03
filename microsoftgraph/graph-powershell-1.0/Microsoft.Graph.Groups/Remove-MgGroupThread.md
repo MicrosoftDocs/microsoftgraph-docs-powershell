@@ -35,10 +35,10 @@ Delete conversationThread.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Groups
-```
 
 Remove-MgGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId
 
+```
 ## PARAMETERS
 
 ### -ConversationThreadId
@@ -205,3 +205,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaGroupThread](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupThread?view=graph-powershell-beta)
+

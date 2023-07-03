@@ -53,10 +53,10 @@ Create new navigation property to timeOffRequests for groups
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Get-MgBetaTeamScheduleTimeOffRequest -TeamId $teamId
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -405,3 +405,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgGroupTeamScheduleTimeOffRequest](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamScheduleTimeOffRequest?view=graph-powershell-v1.0)
+

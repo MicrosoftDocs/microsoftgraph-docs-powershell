@@ -42,10 +42,10 @@ Retrieve the properties and relationships of the specified tab in a chat.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgChatTab -ChatId $chatId -TeamsTabId $teamsTabId -ExpandProperty "teamsApp"
 
+```
 ## PARAMETERS
 
 ### -All
@@ -298,3 +298,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaChatTab](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatTab?view=graph-powershell-beta)
+

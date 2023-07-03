@@ -42,10 +42,10 @@ Get dailyPrintUsageByUser from reports
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Reports
-```
 
 Get-MgBetaReportDailyPrintUsageByUser -PrintUsageByUserId $printUsageByUserId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -277,3 +277,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgReportDailyPrintUsageByUser](/powershell/module/Microsoft.Graph.Reports/Get-MgReportDailyPrintUsageByUser?view=graph-powershell-v1.0)
+

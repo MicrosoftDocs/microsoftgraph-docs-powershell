@@ -58,7 +58,6 @@ Create a new permission object on a site.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Sites
-```
 
 $params = @{
 	roles = @(
@@ -76,6 +75,7 @@ $params = @{
 
 New-MgSitePermission -SiteId $siteId -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -587,3 +587,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaSitePermission](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSitePermission?view=graph-powershell-beta)
+

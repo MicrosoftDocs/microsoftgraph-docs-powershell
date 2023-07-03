@@ -69,7 +69,6 @@ To update an **accessReviewInstance**, it's **status** must be `InProgress`.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 $params = @{
 	scope = @{
@@ -114,6 +113,7 @@ $params = @{
 
 Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstance -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AccessReviewInstanceId
@@ -1087,3 +1087,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgIdentityGovernanceAccessReviewDefinitionInstance](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceAccessReviewDefinitionInstance?view=graph-powershell-v1.0)
+

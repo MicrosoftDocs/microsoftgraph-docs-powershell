@@ -42,10 +42,10 @@ Read the properties and relationships of an externalItem object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Search
-```
 
 Get-MgExternalConnectionItem -ExternalConnectionId $externalConnectionId -ExternalItemId $externalItemId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -273,3 +273,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaExternalConnectionItem](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternalConnectionItem?view=graph-powershell-beta)
+

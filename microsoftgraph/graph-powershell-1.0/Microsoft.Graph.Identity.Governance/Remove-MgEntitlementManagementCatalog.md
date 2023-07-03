@@ -32,10 +32,10 @@ Delete an accessPackageCatalog.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Remove-MgEntitlementManagementCatalog -AccessPackageCatalogId $accessPackageCatalogId
 
+```
 ## PARAMETERS
 
 ### -AccessPackageCatalogId
@@ -190,3 +190,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

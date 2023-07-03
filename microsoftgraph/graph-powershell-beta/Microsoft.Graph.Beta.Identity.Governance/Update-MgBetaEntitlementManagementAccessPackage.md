@@ -61,7 +61,6 @@ Update an existing accessPackage object to change one or more of its properties,
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 $params = @{
 	displayName = "Access Package New Name"
@@ -69,6 +68,7 @@ $params = @{
 
 Update-MgBetaEntitlementManagementAccessPackage -AccessPackageId $accessPackageId -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AccessPackageAssignmentPolicies
@@ -29634,3 +29634,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgEntitlementManagementAccessPackage](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgEntitlementManagementAccessPackage?view=graph-powershell-v1.0)
+

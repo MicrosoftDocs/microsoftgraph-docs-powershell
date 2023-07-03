@@ -44,10 +44,10 @@ For descriptions of each endpoint, see printUsageByUser.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Reports
-```
 
 Get-MgReportDailyPrintUsageByUser -PrintUsageByUserId $printUsageByUserId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -271,3 +271,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaReportDailyPrintUsageByUser](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportDailyPrintUsageByUser?view=graph-powershell-beta)
+

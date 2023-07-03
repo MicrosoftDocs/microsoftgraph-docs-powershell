@@ -43,10 +43,10 @@ Clients can also inspect the configuration of the schedule.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Get-MgBetaTeamSchedule -TeamId $teamId
 
+```
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -169,3 +169,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgTeamSchedule](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamSchedule?view=graph-powershell-v1.0)
+

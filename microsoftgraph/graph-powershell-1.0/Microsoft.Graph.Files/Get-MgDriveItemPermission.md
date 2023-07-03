@@ -46,10 +46,10 @@ Callers can differentiate if the permission is inherited or not by checking the 
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Files
-```
 
 Get-MgDriveItemPermission -DriveId $driveId -DriveItemId $driveItemId -PermissionId $permissionId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -310,3 +310,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItemPermission?view=graph-powershell-beta)
+

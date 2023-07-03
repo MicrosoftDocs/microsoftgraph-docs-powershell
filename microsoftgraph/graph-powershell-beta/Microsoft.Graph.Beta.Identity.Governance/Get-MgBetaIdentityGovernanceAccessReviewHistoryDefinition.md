@@ -46,10 +46,10 @@ If the definition is 30 days or older, a `404 Not Found` error is returned.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 Get-MgBetaIdentityGovernanceAccessReviewHistoryDefinition -AccessReviewHistoryDefinitionId $accessReviewHistoryDefinitionId
 
+```
 ## PARAMETERS
 
 ### -AccessReviewHistoryDefinitionId
@@ -352,3 +352,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgIdentityGovernanceAccessReviewHistoryDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceAccessReviewHistoryDefinition?view=graph-powershell-v1.0)
+

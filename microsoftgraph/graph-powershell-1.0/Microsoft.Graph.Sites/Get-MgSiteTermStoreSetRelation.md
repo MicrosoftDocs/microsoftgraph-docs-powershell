@@ -61,10 +61,10 @@ Indicates which terms have been pinned or reused directly under the set.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Sites
-```
 
 Get-MgSiteTermStoreSetRelation -SiteId $siteId -SetId $setId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -354,3 +354,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSiteTermStoreSetRelation](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteTermStoreSetRelation?view=graph-powershell-beta)
+

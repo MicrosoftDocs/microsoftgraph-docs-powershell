@@ -50,10 +50,10 @@ Create new navigation property to submittedResources for education
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationClassAssignmentSubmissionSubmittedResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -275,3 +275,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaEducationMeAssignmentSubmissionSubmittedResource](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationMeAssignmentSubmissionSubmittedResource?view=graph-powershell-beta)
+

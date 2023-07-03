@@ -52,7 +52,6 @@ Microsoft Teams provides a user interface for teachers to create teams for their
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.educationClass"
@@ -75,6 +74,7 @@ $params = @{
 
 New-MgBetaEducationClass -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -24884,3 +24884,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgEducationClass](/powershell/module/Microsoft.Graph.Education/New-MgEducationClass?view=graph-powershell-v1.0)
+

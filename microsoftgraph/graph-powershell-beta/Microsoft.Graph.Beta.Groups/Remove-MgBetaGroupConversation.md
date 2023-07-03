@@ -35,10 +35,10 @@ Delete a conversation object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
-```
 
 Remove-MgBetaGroupConversation -GroupId $groupId -ConversationId $conversationId
 
+```
 ## PARAMETERS
 
 ### -ConversationId
@@ -214,3 +214,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgGroupConversation](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupConversation?view=graph-powershell-v1.0)
+

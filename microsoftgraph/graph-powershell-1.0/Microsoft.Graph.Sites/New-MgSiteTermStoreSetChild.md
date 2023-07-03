@@ -151,7 +151,6 @@ Create a new term object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Sites
-```
 
 $params = @{
 	labels = @(
@@ -165,6 +164,7 @@ $params = @{
 
 New-MgSiteTermStoreSetChild -SiteId $siteId -SetId $setId -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -700,3 +700,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaSiteTermStoreSetChild](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteTermStoreSetChild?view=graph-powershell-beta)
+

@@ -37,17 +37,17 @@ There are two ways to get the **id** of a **callRecord**:
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
 
 Get-MgBetaCommunicationCallRecord -CallRecordId $callRecordId
 
+```
 ### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
 
 Get-MgBetaCommunicationCallRecord -CallRecordId $callRecordId -ExpandProperty "sessions(`$expand=segments)"
 
+```
 ## PARAMETERS
 
 ### -CallRecordId
@@ -151,3 +151,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgCommunicationCallRecord](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationCallRecord?view=graph-powershell-v1.0)
+

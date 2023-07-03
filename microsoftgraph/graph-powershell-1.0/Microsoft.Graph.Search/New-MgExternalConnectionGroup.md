@@ -49,7 +49,6 @@ Create a new externalGroup object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Search
-```
 
 $params = @{
 	id = "31bea3d537902000"
@@ -59,6 +58,7 @@ $params = @{
 
 New-MgExternalConnectionGroup -ExternalConnectionId $externalConnectionId -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -261,3 +261,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaExternalConnectionGroup](/powershell/module/Microsoft.Graph.Beta.Search/New-MgBetaExternalConnectionGroup?view=graph-powershell-beta)
+

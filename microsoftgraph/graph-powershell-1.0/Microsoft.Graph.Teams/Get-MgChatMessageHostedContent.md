@@ -53,10 +53,10 @@ Retrieve the properties and relationships of chatMessageHostedContent object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgChatMessageHostedContent -ChatId $chatId -ChatMessageId $chatMessageId -ChatMessageHostedContentId $chatMessageHostedContentId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -355,3 +355,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaChatMessageHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatMessageHostedContent?view=graph-powershell-beta)
+

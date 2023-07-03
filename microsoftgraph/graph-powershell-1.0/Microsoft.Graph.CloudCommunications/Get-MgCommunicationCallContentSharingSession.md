@@ -42,10 +42,10 @@ Retrieve the properties of a contentSharingSession object in a call.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 Get-MgCommunicationCallContentSharingSession -CallId $callId -ContentSharingSessionId $contentSharingSessionId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -280,3 +280,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaCommunicationCallContentSharingSession](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationCallContentSharingSession?view=graph-powershell-beta)
+

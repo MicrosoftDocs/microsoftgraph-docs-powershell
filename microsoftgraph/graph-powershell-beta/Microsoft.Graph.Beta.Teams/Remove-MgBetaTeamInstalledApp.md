@@ -35,10 +35,10 @@ Uninstalls an app from the specified team.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Remove-MgBetaTeamInstalledApp -TeamId $teamId -TeamsAppInstallationId $teamsAppInstallationId
 
+```
 ## PARAMETERS
 
 ### -IfMatch
@@ -207,3 +207,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgTeamInstalledApp](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamInstalledApp?view=graph-powershell-v1.0)
+

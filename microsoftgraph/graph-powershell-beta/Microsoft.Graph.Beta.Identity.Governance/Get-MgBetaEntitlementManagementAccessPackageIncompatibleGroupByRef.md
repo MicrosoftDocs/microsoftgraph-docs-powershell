@@ -29,10 +29,10 @@ Retrieve a list of the group objects that have been marked as incompatible on an
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 Get-MgBetaEntitlementManagementAccessPackageIncompatibleGroup -AccessPackageId $accessPackageId
 
+```
 ## PARAMETERS
 
 ### -AccessPackageId
@@ -185,3 +185,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgEntitlementManagementAccessPackageIncompatibleGroupByRef](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackageIncompatibleGroupByRef?view=graph-powershell-v1.0)
+

@@ -49,7 +49,6 @@ This API cannot create a new chat; you must use the list chats method to retriev
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	"message@odata.bind" = "https://graph.microsoft.com/v1.0/chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/messages/1616964509832"
@@ -57,6 +56,7 @@ $params = @{
 
 New-MgChatPinnedMessage -ChatId $chatId -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -414,3 +414,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaChatPinnedMessage](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaChatPinnedMessage?view=graph-powershell-beta)
+

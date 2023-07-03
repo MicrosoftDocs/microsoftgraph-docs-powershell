@@ -65,7 +65,6 @@ Update the properties of an ediscoveryCase object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 $params = @{
 	displayName = "My Case 1 - Renamed"
@@ -74,6 +73,7 @@ $params = @{
 
 Update-MgBetaSecurityCaseEdiscoveryCase -EdiscoveryCaseId $ediscoveryCaseId -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -24610,3 +24610,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityCaseEdiscoveryCase?view=graph-powershell-v1.0)
+

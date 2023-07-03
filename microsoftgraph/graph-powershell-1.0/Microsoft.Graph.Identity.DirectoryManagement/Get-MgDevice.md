@@ -41,17 +41,17 @@ Get the properties and relationships of a device object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Get-MgDevice -DeviceId $deviceId
 
+```
 ### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Get-MgDevice -DeviceId $deviceId -Property "id,extensionAttributes"
 
+```
 ## PARAMETERS
 
 ### -All
@@ -295,3 +295,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDevice](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDevice?view=graph-powershell-beta)
+

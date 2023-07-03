@@ -62,7 +62,6 @@ Creates a new groupLifecyclePolicy.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
-```
 
 $params = @{
 	groupLifetimeInDays = 100
@@ -72,6 +71,7 @@ $params = @{
 
 New-MgBetaGroupLifecyclePolicy -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -305,3 +305,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgGroupLifecyclePolicy](/powershell/module/Microsoft.Graph.Groups/New-MgGroupLifecyclePolicy?view=graph-powershell-v1.0)
+

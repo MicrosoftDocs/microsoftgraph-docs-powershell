@@ -49,7 +49,6 @@ Add a copy of a [content type][contentType] from a [site][site] to a [list][list
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 $params = @{
 	ContentType = "https://graph.microsoft.com/v1.0/sites/{site-id}/contentTypes/0x0101"
@@ -57,6 +56,7 @@ $params = @{
 
 Add-MgBetaSiteListContentTypeCopy -SiteId $siteId -ListId $listId -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -244,3 +244,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Add-MgSiteContentTypeCopy](/powershell/module/Microsoft.Graph.Sites/Add-MgSiteContentTypeCopy?view=graph-powershell-v1.0)
+

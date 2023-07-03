@@ -61,7 +61,6 @@ Only the **roles** property can be modified this way.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Files
-```
 
 $params = @{
 	roles = @(
@@ -71,6 +70,7 @@ $params = @{
 
 Update-MgBetaDriveItemPermission -DriveId $driveId -DriveItemId $driveItemId -PermissionId $permissionId -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -600,3 +600,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgDriveItemPermission](/powershell/module/Microsoft.Graph.Files/Update-MgDriveItemPermission?view=graph-powershell-v1.0)
+

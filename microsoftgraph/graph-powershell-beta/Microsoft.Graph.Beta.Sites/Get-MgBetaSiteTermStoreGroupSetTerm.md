@@ -42,10 +42,10 @@ Read the properties and relationships of a term object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 Get-MgBetaSiteTermStoreGroupSetTerm -SiteId $siteId -GroupId $groupId -SetId $setId -TermId $termId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -347,3 +347,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSiteTermStoreGroupSetTerm](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreGroupSetTerm?view=graph-powershell-v1.0)
+

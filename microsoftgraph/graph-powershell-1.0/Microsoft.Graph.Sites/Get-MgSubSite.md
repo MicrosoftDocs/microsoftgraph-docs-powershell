@@ -42,10 +42,10 @@ The collection of the sub-sites under this site.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Sites
-```
 
 Get-MgSubSite -SiteId $siteId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -305,3 +305,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSubSite](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSubSite?view=graph-powershell-beta)
+

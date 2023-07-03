@@ -49,7 +49,6 @@ Update the navigation property groups in external
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Search
-```
 
 $params = @{
 	displayName = "Contoso Marketing"
@@ -58,6 +57,7 @@ $params = @{
 
 Update-MgBetaExternalConnectionGroup -ExternalConnectionId $externalConnectionId -ExternalGroupId $externalGroupId -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -287,3 +287,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgExternalConnectionGroup](/powershell/module/Microsoft.Graph.Search/Update-MgExternalConnectionGroup?view=graph-powershell-v1.0)
+

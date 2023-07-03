@@ -39,10 +39,10 @@ Get an event object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Calendar
-```
 
 Get-MgGroupEvent -GroupId $groupId -EventId $eventId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -244,3 +244,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaGroupEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaGroupEvent?view=graph-powershell-beta)
+

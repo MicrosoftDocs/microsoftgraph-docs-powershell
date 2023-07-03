@@ -35,10 +35,10 @@ Retrieve the chat of the specified user and Teams app.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgUserTeamworkInstalledAppChat -UserId $userId -UserScopeTeamsAppInstallationId $userScopeTeamsAppInstallationId
 
+```
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -170,3 +170,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaUserTeamworkInstalledAppChat](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserTeamworkInstalledAppChat?view=graph-powershell-beta)
+

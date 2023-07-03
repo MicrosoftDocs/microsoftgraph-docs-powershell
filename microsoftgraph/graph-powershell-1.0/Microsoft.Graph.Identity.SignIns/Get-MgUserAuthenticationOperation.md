@@ -48,10 +48,10 @@ The possible states of the long-running operation are `notStarted`, `running`, `
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Get-MgUserAuthenticationOperation -UserId $userId -LongRunningOperationId $longRunningOperationId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -328,3 +328,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaUserAuthenticationOperation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaUserAuthenticationOperation?view=graph-powershell-beta)
+

@@ -42,10 +42,10 @@ Read the properties and relationships of a riskyServicePrincipal object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaRiskyServicePrincipal -RiskyServicePrincipalId $riskyServicePrincipalId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -326,3 +326,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgRiskyServicePrincipal](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgRiskyServicePrincipal?view=graph-powershell-v1.0)
+

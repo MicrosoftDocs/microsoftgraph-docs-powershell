@@ -48,10 +48,10 @@ For example /domains/{domainId}/domainNameReferences/microsoft.graph.user and /d
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Get-MgDomainNameReference -DomainId $domainId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -294,3 +294,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDomainNameReference](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDomainNameReference?view=graph-powershell-beta)
+

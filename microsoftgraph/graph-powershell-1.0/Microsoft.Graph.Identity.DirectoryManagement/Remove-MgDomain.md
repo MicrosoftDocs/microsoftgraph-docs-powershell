@@ -34,10 +34,10 @@ Deletes a domain from a tenant.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Remove-MgDomain -DomainId $domainId
 
+```
 ## PARAMETERS
 
 ### -DomainId
@@ -175,3 +175,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaDomain](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDomain?view=graph-powershell-beta)
+

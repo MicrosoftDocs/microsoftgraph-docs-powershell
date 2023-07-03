@@ -56,17 +56,17 @@ Nullable.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgChatPinnedMessage -ChatId $chatId
 
+```
 ### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgChatPinnedMessage -ChatId $chatId -ExpandProperty "message"
 
+```
 ## PARAMETERS
 
 ### -All
@@ -320,3 +320,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaChatPinnedMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatPinnedMessage?view=graph-powershell-beta)
+

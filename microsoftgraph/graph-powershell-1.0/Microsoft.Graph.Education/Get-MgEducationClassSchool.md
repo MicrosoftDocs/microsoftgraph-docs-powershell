@@ -44,10 +44,10 @@ Nullable.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationClassSchool -EducationClassId $educationClassId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -279,3 +279,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaEducationClassSchool](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassSchool?view=graph-powershell-beta)
+

@@ -35,10 +35,10 @@ Remove a [content type][contentType] from a [list][] or a [site][].
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 Remove-MgBetaSiteContentType -SiteId $siteId -ContentTypeId $contentTypeId
 
+```
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -220,3 +220,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgSiteContentType](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteContentType?view=graph-powershell-v1.0)
+

@@ -43,10 +43,10 @@ A collection of team members who have access to the shared channel.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Get-MgBetaTeamChannelSharedWithTeamAllowedMember -TeamId $teamId -ChannelId $channelId -SharedWithChannelTeamInfoId $sharedWithChannelTeamInfoId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -320,3 +320,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgTeamPrimaryChannelSharedWithTeamAllowedMember](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamPrimaryChannelSharedWithTeamAllowedMember?view=graph-powershell-v1.0)
+

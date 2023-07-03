@@ -47,10 +47,10 @@ Retrieve properties and relationships for a [site][] resource.\nA **site** resou
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 Get-MgBetaSite -SiteId $siteId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -322,3 +322,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSite](/powershell/module/Microsoft.Graph.Sites/Get-MgSite?view=graph-powershell-v1.0)
+

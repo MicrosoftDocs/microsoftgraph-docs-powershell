@@ -35,10 +35,10 @@ Delete an externalItem object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Search
-```
 
 Remove-MgExternalConnectionItem -ExternalConnectionId $externalConnectionId -ExternalItemId $externalItemId
 
+```
 ## PARAMETERS
 
 ### -ExternalConnectionId
@@ -176,3 +176,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaExternalConnectionItem](/powershell/module/Microsoft.Graph.Beta.Search/Remove-MgBetaExternalConnectionItem?view=graph-powershell-beta)
+

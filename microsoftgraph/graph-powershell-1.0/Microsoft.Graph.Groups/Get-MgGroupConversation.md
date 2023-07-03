@@ -40,10 +40,10 @@ The group's conversations.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Groups
-```
 
 Get-MgGroupConversation -GroupId $groupId -ConversationId $conversationId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -285,3 +285,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaGroupConversation](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupConversation?view=graph-powershell-beta)
+

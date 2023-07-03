@@ -51,7 +51,6 @@ An **oAuth2PermissionGrant** can be updated to change which delegated permission
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	scope = "User.ReadBasic.All Group.ReadWrite.All"
@@ -59,6 +58,7 @@ $params = @{
 
 Update-MgBetaOauth2PermissionGrant -OAuth2PermissionGrantId $oAuth2PermissionGrantId -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -401,3 +401,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgOauth2PermissionGrant](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgOauth2PermissionGrant?view=graph-powershell-v1.0)
+

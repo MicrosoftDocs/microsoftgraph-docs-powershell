@@ -51,7 +51,6 @@ Create a new ediscoveryReviewSet object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 $params = @{
 	displayName = "My review set 2"
@@ -59,6 +58,7 @@ $params = @{
 
 New-MgBetaSecurityCaseEdiscoveryCaseReviewSet -EdiscoveryCaseId $ediscoveryCaseId -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -9899,3 +9899,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgSecurityCaseEdiscoveryCaseReviewSet](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseReviewSet?view=graph-powershell-v1.0)
+

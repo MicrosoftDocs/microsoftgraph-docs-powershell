@@ -40,10 +40,10 @@ We recommend using a transparent image with no padding around the logo.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Get-MgOrganizationBrandingLocalization -OrganizationId $organizationId
 
+```
 ## PARAMETERS
 
 ### -Data
@@ -214,3 +214,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgBetaOrganizationBrandingLocalizationBannerLogo](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Set-MgBetaOrganizationBrandingLocalizationBannerLogo?view=graph-powershell-beta)
+

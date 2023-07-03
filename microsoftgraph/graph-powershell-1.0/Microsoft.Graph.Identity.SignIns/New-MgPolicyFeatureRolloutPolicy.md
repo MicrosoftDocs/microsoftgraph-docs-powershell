@@ -37,7 +37,6 @@ Create a new featureRolloutPolicy object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	displayName = "PassthroughAuthentication rollout policy"
@@ -49,6 +48,7 @@ $params = @{
 
 New-MgPolicyFeatureRolloutPolicy -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -257,3 +257,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaPolicyFeatureRolloutPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyFeatureRolloutPolicy?view=graph-powershell-beta)
+

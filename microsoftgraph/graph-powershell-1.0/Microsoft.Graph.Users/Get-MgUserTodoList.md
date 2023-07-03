@@ -35,10 +35,10 @@ Retrieve the properties and relationships of a shiftPreferences object by ID.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Users
-```
 
 Get-MgUserSettingShiftPreference -UserId $userId
 
+```
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -137,3 +137,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaUserTodoList](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoList?view=graph-powershell-beta)
+

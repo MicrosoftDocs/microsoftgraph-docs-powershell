@@ -35,10 +35,10 @@ Delete a users's temporaryAccessPassAuthenticationMethod object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Remove-MgBetaUserAuthenticationTemporaryAccessPassMethod -UserId $userId -TemporaryAccessPassAuthenticationMethodId $temporaryAccessPassAuthenticationMethodId
 
+```
 ## PARAMETERS
 
 ### -IfMatch
@@ -244,3 +244,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgUserAuthenticationTemporaryAccessPassMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgUserAuthenticationTemporaryAccessPassMethod?view=graph-powershell-v1.0)
+

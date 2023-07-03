@@ -42,10 +42,10 @@ Classes for which the user is a teacher.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationUserTaughtClass -EducationUserId $educationUserId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -277,3 +277,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaEducationUserTaughtClass](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationUserTaughtClass?view=graph-powershell-beta)
+

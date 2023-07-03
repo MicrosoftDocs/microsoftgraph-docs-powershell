@@ -46,24 +46,24 @@ In Azure AD B2C, this operation can currently get a socialIdentityProvider, or a
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Get-MgIdentityProvider -IdentityProviderBaseId $identityProviderBaseId
 
+```
 ### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Get-MgIdentityProvider -IdentityProviderBaseId $identityProviderBaseId
 
+```
 ### EXAMPLE 3
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Get-MgIdentityProvider -IdentityProviderBaseId $identityProviderBaseId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -325,3 +325,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaIdentityProvider](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityProvider?view=graph-powershell-beta)
+

@@ -43,7 +43,6 @@ See examples of how to define a schema extension that describes a training cours
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.SchemaExtensions
-```
 
 $params = @{
 	id = "graphlearn_courses"
@@ -69,10 +68,10 @@ $params = @{
 
 New-MgSchemaExtension -BodyParameter $params
 
+```
 ### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.SchemaExtensions
-```
 
 $params = @{
 	id = "courses"
@@ -98,10 +97,10 @@ $params = @{
 
 New-MgSchemaExtension -BodyParameter $params
 
+```
 ### EXAMPLE 3
 ```powershell
 Import-Module Microsoft.Graph.SchemaExtensions
-```
 
 $params = @{
 	id = "courses"
@@ -128,6 +127,7 @@ $params = @{
 
 New-MgSchemaExtension -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -332,3 +332,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaSchemaExtension](/powershell/module/Microsoft.Graph.Beta.SchemaExtensions/New-MgBetaSchemaExtension?view=graph-powershell-beta)
+

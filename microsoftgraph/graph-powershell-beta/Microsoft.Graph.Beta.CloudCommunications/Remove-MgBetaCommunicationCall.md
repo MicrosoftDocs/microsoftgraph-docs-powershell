@@ -37,10 +37,10 @@ For group calls, this will only delete your call leg and the underlying group ca
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
 
 Remove-MgBetaCommunicationCall -CallId $callId
 
+```
 ## PARAMETERS
 
 ### -CallId
@@ -175,3 +175,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/Remove-MgCommunicationCall?view=graph-powershell-v1.0)
+

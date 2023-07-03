@@ -57,7 +57,6 @@ Note: You can also start a new thread in an existing conversation.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Groups
-```
 
 $params = @{
 	topic = "New Conversation Thread Topic"
@@ -81,6 +80,7 @@ $params = @{
 
 New-MgGroupThread -GroupId $groupId -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -500,3 +500,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaGroupThread](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupThread?view=graph-powershell-beta)
+

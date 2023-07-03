@@ -55,7 +55,6 @@ Update the properties of a term object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 $params = @{
 	labels = @(
@@ -69,6 +68,7 @@ $params = @{
 
 Update-MgBetaSiteTermStoreSetTerm -SiteId $siteId -SetId $setId -TermId $termId -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -601,3 +601,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgSiteTermStoreSetTerm](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteTermStoreSetTerm?view=graph-powershell-v1.0)
+

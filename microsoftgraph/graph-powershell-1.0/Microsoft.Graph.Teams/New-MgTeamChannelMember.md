@@ -51,7 +51,6 @@ This operation is allowed only for channels with a **membershipType** value of `
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
@@ -63,17 +62,17 @@ $params = @{
 
 New-MgTeamChannelMember -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
+```
 ### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 New-MgTeamChannelMember -TeamId $teamId -ChannelId $channelId
 
+```
 ### EXAMPLE 3
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
@@ -85,10 +84,10 @@ $params = @{
 
 New-MgTeamChannelMember -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
+```
 ### EXAMPLE 4
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
@@ -99,10 +98,10 @@ $params = @{
 
 New-MgTeamChannelMember -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
+```
 ### EXAMPLE 5
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
@@ -114,10 +113,10 @@ $params = @{
 
 New-MgTeamChannelMember -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
+```
 ### EXAMPLE 6
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
@@ -128,6 +127,7 @@ $params = @{
 
 New-MgTeamChannelMember -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -365,3 +365,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaTeamChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamChannelMember?view=graph-powershell-beta)
+

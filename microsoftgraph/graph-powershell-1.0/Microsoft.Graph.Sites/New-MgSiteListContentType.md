@@ -61,10 +61,10 @@ Create new navigation property to contentTypes for sites
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Sites
-```
 
 Get-MgSiteListContentType -SiteId $siteId -ListId $listId
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1565,3 +1565,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaSiteListContentType](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteListContentType?view=graph-powershell-beta)
+

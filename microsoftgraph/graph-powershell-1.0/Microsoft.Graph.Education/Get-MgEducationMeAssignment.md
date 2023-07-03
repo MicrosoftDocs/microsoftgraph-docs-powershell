@@ -42,10 +42,10 @@ Assignments belonging to the user.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationMeAssignment
 
+```
 ## PARAMETERS
 
 ### -All
@@ -262,3 +262,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaEducationMeAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeAssignment?view=graph-powershell-beta)
+

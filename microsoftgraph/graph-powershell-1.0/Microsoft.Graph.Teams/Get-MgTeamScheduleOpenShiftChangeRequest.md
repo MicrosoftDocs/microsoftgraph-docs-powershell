@@ -42,10 +42,10 @@ Retrieve the properties and relationships of an openShiftChangeRequest object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgTeamScheduleOpenShiftChangeRequest -TeamId $teamId -OpenShiftChangeRequestId $openShiftChangeRequestId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -298,3 +298,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaTeamScheduleOpenShiftChangeRequest](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamScheduleOpenShiftChangeRequest?view=graph-powershell-beta)
+

@@ -34,7 +34,6 @@ Delete entity from teams
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	memberSettings = @{
@@ -52,6 +51,7 @@ $params = @{
 
 Update-MgTeam -TeamId $teamId -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -IfMatch
@@ -199,3 +199,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeam?view=graph-powershell-beta)
+

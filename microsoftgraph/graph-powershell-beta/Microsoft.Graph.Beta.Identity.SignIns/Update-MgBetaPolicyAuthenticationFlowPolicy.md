@@ -39,7 +39,6 @@ The properties **id**, **type**, and **description** cannot be modified.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	selfServiceSignUp = @{
@@ -49,6 +48,7 @@ $params = @{
 
 Update-MgBetaPolicyAuthenticationFlowPolicy -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -216,3 +216,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgPolicyAuthenticationFlowPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyAuthenticationFlowPolicy?view=graph-powershell-v1.0)
+

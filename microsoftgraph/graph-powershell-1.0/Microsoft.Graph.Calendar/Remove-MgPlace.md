@@ -34,7 +34,6 @@ Delete entity from places
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Calendar
-```
 
 $params = @{
 	"@odata.type" = "microsoft.graph.room"
@@ -47,6 +46,7 @@ $params = @{
 
 Update-MgPlace -PlaceId $placeId -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -IfMatch
@@ -173,3 +173,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaPlace](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaPlace?view=graph-powershell-beta)
+

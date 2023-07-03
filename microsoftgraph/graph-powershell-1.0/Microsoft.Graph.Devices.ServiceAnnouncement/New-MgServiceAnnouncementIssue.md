@@ -39,10 +39,10 @@ Create new navigation property to issues for admin
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
-```
 
 Get-MgServiceAnnouncementIssue
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -394,3 +394,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaServiceAnnouncementIssue](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/New-MgBetaServiceAnnouncementIssue?view=graph-powershell-beta)
+

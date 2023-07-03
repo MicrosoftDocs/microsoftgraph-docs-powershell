@@ -38,10 +38,10 @@ Create new navigation property to connectedOrganizations for identityGovernance
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Get-MgEntitlementManagementConnectedOrganization
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -292,3 +292,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaEntitlementManagementConnectedOrganization](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaEntitlementManagementConnectedOrganization?view=graph-powershell-beta)
+

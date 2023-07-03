@@ -35,10 +35,10 @@ Delete the channel.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 Remove-MgTeamChannel -TeamId $teamId -ChannelId $channelId
 
+```
 ## PARAMETERS
 
 ### -ChannelId
@@ -201,3 +201,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamChannel?view=graph-powershell-beta)
+

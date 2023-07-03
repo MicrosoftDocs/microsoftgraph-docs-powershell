@@ -42,10 +42,10 @@ Retrieve the properties and relationships of a b2xIdentityUserFlow object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaIdentityB2XUserFlow -B2xIdentityUserFlowId $b2xIdentityUserFlowId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -326,3 +326,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgIdentityB2XUserFlow](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2XUserFlow?view=graph-powershell-v1.0)
+

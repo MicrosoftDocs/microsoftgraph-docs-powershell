@@ -35,10 +35,10 @@ Delete a plannerPlan object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Planner
-```
 
 Remove-MgBetaPlannerPlan -PlannerPlanId $plannerPlanId-If-Match W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
+```
 ## PARAMETERS
 
 ### -IfMatch
@@ -163,3 +163,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgPlannerPlan](/powershell/module/Microsoft.Graph.Planner/Remove-MgPlannerPlan?view=graph-powershell-v1.0)
+

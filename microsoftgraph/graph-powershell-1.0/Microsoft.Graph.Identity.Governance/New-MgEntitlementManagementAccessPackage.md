@@ -41,7 +41,6 @@ The access package will be added to an existing accessPackageCatalog.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	displayName = "sales reps"
@@ -54,6 +53,7 @@ $params = @{
 
 New-MgEntitlementManagementAccessPackage -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AccessPackagesIncompatibleWith
@@ -16320,3 +16320,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaEntitlementManagementAccessPackage](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaEntitlementManagementAccessPackage?view=graph-powershell-beta)
+

@@ -41,10 +41,10 @@ Only teachers can perform this operation.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Get-MgBetaEducationClassAssignmentDefault -EducationClassId $educationClassId
 
+```
 ## PARAMETERS
 
 ### -EducationClassId
@@ -143,3 +143,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgEducationClassAssignmentDefault](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassAssignmentDefault?view=graph-powershell-v1.0)
+

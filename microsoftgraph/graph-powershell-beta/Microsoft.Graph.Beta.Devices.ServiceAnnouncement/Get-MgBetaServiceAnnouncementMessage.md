@@ -46,10 +46,10 @@ The operation returns an error if the message does not exist for the tenant.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
-```
 
 Get-MgBetaServiceAnnouncementMessage -ServiceUpdateMessageId $serviceUpdateMessageId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -260,3 +260,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Get-MgServiceAnnouncementMessage?view=graph-powershell-v1.0)
+

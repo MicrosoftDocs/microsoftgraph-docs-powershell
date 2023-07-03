@@ -37,10 +37,10 @@ For details about how to use this API to add pull printing support to Universal 
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Devices.CloudPrint
-```
 
 Remove-MgPrintTaskDefinition -PrintTaskDefinitionId $printTaskDefinitionId
 
+```
 ## PARAMETERS
 
 ### -IfMatch
@@ -170,3 +170,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaPrintTaskDefinition](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Remove-MgBetaPrintTaskDefinition?view=graph-powershell-beta)
+

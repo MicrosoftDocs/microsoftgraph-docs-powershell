@@ -53,10 +53,10 @@ Update entity in subscribedSkus
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Get-MgSubscribedSku -SubscribedSkuId $subscribedSkuId
 
+```
 ## PARAMETERS
 
 ### -AccountId
@@ -401,3 +401,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaSubscribedSku](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaSubscribedSku?view=graph-powershell-beta)
+

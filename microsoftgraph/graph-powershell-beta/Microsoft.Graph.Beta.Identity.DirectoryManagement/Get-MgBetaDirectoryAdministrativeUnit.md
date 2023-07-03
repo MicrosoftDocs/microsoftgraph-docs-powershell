@@ -42,10 +42,10 @@ Conceptual container for user and group directory objects.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Get-MgBetaDirectoryAdministrativeUnit -AdministrativeUnitId $administrativeUnitId
 
+```
 ## PARAMETERS
 
 ### -AdministrativeUnitId
@@ -288,3 +288,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDirectoryAdministrativeUnit](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryAdministrativeUnit?view=graph-powershell-v1.0)
+

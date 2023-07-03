@@ -42,10 +42,10 @@ Retrieve the properties and relationships of contract object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Get-MgBetaContract -ContractId $contractId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -288,3 +288,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgContract](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgContract?view=graph-powershell-v1.0)
+

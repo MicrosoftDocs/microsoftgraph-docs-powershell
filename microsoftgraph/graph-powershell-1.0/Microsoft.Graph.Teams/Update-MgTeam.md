@@ -65,7 +65,6 @@ Update the properties of the specified team.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	memberSettings = @{
@@ -83,6 +82,7 @@ $params = @{
 
 Update-MgTeam -TeamId $teamId -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -16474,3 +16474,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeam?view=graph-powershell-beta)
+

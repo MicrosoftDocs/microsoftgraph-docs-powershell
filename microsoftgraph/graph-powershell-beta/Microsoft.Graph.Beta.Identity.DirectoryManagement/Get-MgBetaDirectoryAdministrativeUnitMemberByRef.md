@@ -31,17 +31,17 @@ Supports $expand.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Get-MgBetaDirectoryAdministrativeUnitMember -AdministrativeUnitId $administrativeUnitId
 
+```
 ### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Get-MgBetaDirectoryAdministrativeUnitMemberByRef -AdministrativeUnitId $administrativeUnitId
 
+```
 ## PARAMETERS
 
 ### -AdministrativeUnitId
@@ -210,3 +210,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgDirectoryAdministrativeUnitMemberByRef](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryAdministrativeUnitMemberByRef?view=graph-powershell-v1.0)
+

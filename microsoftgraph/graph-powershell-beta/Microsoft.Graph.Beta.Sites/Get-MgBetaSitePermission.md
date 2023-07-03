@@ -42,10 +42,10 @@ Retrieve the properties and relationships of a permission object on a site.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 Get-MgBetaSitePermission -SiteId $siteId -PermissionId $permissionId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -317,3 +317,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSitePermission](/powershell/module/Microsoft.Graph.Sites/Get-MgSitePermission?view=graph-powershell-v1.0)
+

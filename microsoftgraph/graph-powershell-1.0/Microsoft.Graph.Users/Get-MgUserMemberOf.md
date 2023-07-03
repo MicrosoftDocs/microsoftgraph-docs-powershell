@@ -48,10 +48,10 @@ Supports $expand.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Users
-```
 
 Get-MgUserMemberOf -UserId $userId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -302,3 +302,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaUserMemberOf](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserMemberOf?view=graph-powershell-beta)
+

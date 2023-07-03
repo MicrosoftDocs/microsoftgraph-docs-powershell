@@ -43,31 +43,31 @@ To retrieve Stream types of the default branding, for example, **bannerLogo** an
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Get-MgBetaOrganizationBranding -OrganizationId $organizationId
 
+```
 ### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Get-MgBetaOrganizationBranding -OrganizationId $organizationId
 
+```
 ### EXAMPLE 3
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Get-MgBetaOrganizationBranding -OrganizationId $organizationId
 
+```
 ### EXAMPLE 4
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Get-MgBetaOrganizationBrandingLocalizationBannerLogo -OrganizationId $organizationId -OrganizationalBrandingLocalizationId $organizationalBrandingLocalizationId
 
+```
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -189,3 +189,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgOrganizationBranding](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgOrganizationBranding?view=graph-powershell-v1.0)
+

@@ -62,7 +62,6 @@ If you're creating a private channel, you can add a maximum of 200 members.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	displayName = "Architecture Discussion"
@@ -72,10 +71,10 @@ $params = @{
 
 New-MgTeamChannel -TeamId $teamId -BodyParameter $params
 
+```
 ### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	"@odata.type" = "#Microsoft.Graph.channel"
@@ -95,10 +94,10 @@ $params = @{
 
 New-MgTeamChannel -TeamId $teamId -BodyParameter $params
 
+```
 ### EXAMPLE 3
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	"@microsoft.graph.channelCreationMode" = "migration"
@@ -109,10 +108,10 @@ $params = @{
 
 New-MgTeamChannel -TeamId $teamId -BodyParameter $params
 
+```
 ### EXAMPLE 4
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	"@odata.type" = "#Microsoft.Graph.channel"
@@ -132,10 +131,10 @@ $params = @{
 
 New-MgTeamChannel -TeamId $teamId -BodyParameter $params
 
+```
 ### EXAMPLE 5
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	displayName = "My First Shared Channel"
@@ -154,6 +153,7 @@ $params = @{
 
 New-MgTeamChannel -TeamId $teamId -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -8450,3 +8450,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamChannel?view=graph-powershell-beta)
+

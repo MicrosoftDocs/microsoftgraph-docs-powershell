@@ -35,10 +35,10 @@ Delete navigation property file for agreements
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Get-MgIdentityGovernanceTermOfUseAgreementFile -AgreementId $agreementId
 
+```
 ## PARAMETERS
 
 ### -AgreementId
@@ -194,3 +194,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaAgreementFile](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaAgreementFile?view=graph-powershell-beta)
+

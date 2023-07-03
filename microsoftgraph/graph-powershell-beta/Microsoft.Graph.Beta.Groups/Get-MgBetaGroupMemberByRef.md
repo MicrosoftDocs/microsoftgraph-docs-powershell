@@ -37,17 +37,17 @@ For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayNa
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
-```
 
 Get-MgBetaGroupMember -GroupId $groupId
 
+```
 ### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
-```
 
 Get-MgBetaGroupMember -GroupId $groupId -CountVariable CountVar -Filter "startswith(displayName, 'a')" -ConsistencyLevel eventual
 
+```
 ## PARAMETERS
 
 ### -All
@@ -216,3 +216,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgGroupMemberByRef](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupMemberByRef?view=graph-powershell-v1.0)
+

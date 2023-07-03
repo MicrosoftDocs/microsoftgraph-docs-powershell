@@ -35,10 +35,10 @@ Delete navigation property schema for external
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Search
-```
 
 Get-MgBetaExternalConnectionSchema -ExternalConnectionId $externalConnectionId
 
+```
 ## PARAMETERS
 
 ### -ExternalConnectionId
@@ -173,3 +173,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgExternalConnectionSchema](/powershell/module/Microsoft.Graph.Search/Remove-MgExternalConnectionSchema?view=graph-powershell-v1.0)
+

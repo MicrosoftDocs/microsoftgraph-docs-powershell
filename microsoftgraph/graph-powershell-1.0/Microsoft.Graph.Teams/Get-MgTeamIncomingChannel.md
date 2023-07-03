@@ -42,10 +42,10 @@ List of channels shared with the team.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgTeamIncomingChannel -TeamId $teamId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -298,3 +298,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaTeamIncomingChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamIncomingChannel?view=graph-powershell-beta)
+

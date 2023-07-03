@@ -42,10 +42,10 @@ The list of previous versions of the list item.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 Get-MgBetaSiteListItemVersion -SiteId $siteId -ListId $listId -ListItemId $listItemId -ListItemVersionId $listItemVersionId -ExpandProperty "fields"
 
+```
 ## PARAMETERS
 
 ### -All
@@ -347,3 +347,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSiteListItemVersion](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListItemVersion?view=graph-powershell-v1.0)
+

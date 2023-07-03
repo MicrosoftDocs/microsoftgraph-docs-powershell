@@ -35,10 +35,10 @@ Delete a set object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 Remove-MgBetaSiteTermStoreSet -SiteId $siteId -SetId $setId
 
+```
 ## PARAMETERS
 
 ### -IfMatch
@@ -220,3 +220,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgSiteTermStoreSet](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteTermStoreSet?view=graph-powershell-v1.0)
+

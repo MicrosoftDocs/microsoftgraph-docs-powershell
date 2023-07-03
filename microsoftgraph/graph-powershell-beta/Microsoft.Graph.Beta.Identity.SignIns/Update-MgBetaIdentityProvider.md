@@ -51,7 +51,6 @@ In Azure AD B2C, this operation can currently update a socialIdentityProvider, o
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.socialIdentityProvider"
@@ -60,10 +59,10 @@ $params = @{
 
 Update-MgBetaIdentityProvider -IdentityProviderBaseId $identityProviderBaseId -BodyParameter $params
 
+```
 ### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.socialIdentityProvider"
@@ -72,6 +71,7 @@ $params = @{
 
 Update-MgBetaIdentityProvider -IdentityProviderBaseId $identityProviderBaseId -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -300,3 +300,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgIdentityProvider](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityProvider?view=graph-powershell-v1.0)
+

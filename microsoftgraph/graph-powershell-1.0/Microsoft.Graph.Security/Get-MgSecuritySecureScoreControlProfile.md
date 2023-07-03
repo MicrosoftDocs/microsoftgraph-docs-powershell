@@ -42,10 +42,10 @@ Retrieve the properties and relationships of an securescorecontrolprofile object
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Security
-```
 
 Get-MgSecuritySecureScoreControlProfile -SecureScoreControlProfileId $secureScoreControlProfileId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -274,3 +274,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSecuritySecureScoreControlProfile](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecuritySecureScoreControlProfile?view=graph-powershell-beta)
+

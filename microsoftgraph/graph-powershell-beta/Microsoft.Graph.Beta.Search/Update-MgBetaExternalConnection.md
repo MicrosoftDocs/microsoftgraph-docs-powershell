@@ -67,7 +67,6 @@ Update the properties of an externalConnection.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Search
-```
 
 $params = @{
 	name = "Contoso HR Service Tickets"
@@ -76,6 +75,7 @@ $params = @{
 
 Update-MgBetaExternalConnection -ExternalConnectionId $externalConnectionId -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -ActivitySettings
@@ -674,3 +674,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgExternalConnection](/powershell/module/Microsoft.Graph.Search/Update-MgExternalConnection?view=graph-powershell-v1.0)
+

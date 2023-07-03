@@ -35,10 +35,10 @@ Delete an appManagementPolicy object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Remove-MgBetaPolicyAppManagementPolicy -AppManagementPolicyId $appManagementPolicyId
 
+```
 ## PARAMETERS
 
 ### -AppManagementPolicyId
@@ -229,3 +229,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgPolicyAppManagementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyAppManagementPolicy?view=graph-powershell-v1.0)
+

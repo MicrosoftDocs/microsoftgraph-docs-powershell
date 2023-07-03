@@ -35,7 +35,6 @@ Delete navigation property bucketTaskBoardFormat for planner
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Planner
-```
 
 $params = @{
 	orderHint = "A6673H Ejkl!"
@@ -43,6 +42,7 @@ $params = @{
 
 Update-MgPlannerTaskBucketTaskBoardFormat -PlannerTaskId $plannerTaskId -BodyParameter $params-If-Match W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
+```
 ## PARAMETERS
 
 ### -IfMatch
@@ -164,3 +164,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaPlannerTaskBucketTaskBoardFormat](/powershell/module/Microsoft.Graph.Beta.Planner/Remove-MgBetaPlannerTaskBucketTaskBoardFormat?view=graph-powershell-beta)
+

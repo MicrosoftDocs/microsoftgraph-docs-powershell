@@ -38,7 +38,6 @@ This operation is used to assign a user to an access package, update the assignm
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	requestType = "adminAdd"
@@ -51,10 +50,10 @@ $params = @{
 
 New-MgEntitlementManagementAssignmentRequest -BodyParameter $params
 
+```
 ### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	requestType = "adminRemove"
@@ -65,10 +64,10 @@ $params = @{
 
 New-MgEntitlementManagementAssignmentRequest -BodyParameter $params
 
+```
 ### EXAMPLE 3
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	requestType = "userAdd"
@@ -79,10 +78,10 @@ $params = @{
 
 New-MgEntitlementManagementAssignmentRequest -BodyParameter $params
 
+```
 ### EXAMPLE 4
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.accessPackageAssignmentRequest"
@@ -114,10 +113,10 @@ $params = @{
 
 New-MgEntitlementManagementAssignmentRequest -BodyParameter $params
 
+```
 ### EXAMPLE 5
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.accessPackageAssignmentRequest"
@@ -149,6 +148,7 @@ $params = @{
 
 New-MgEntitlementManagementAssignmentRequest -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AccessPackage
@@ -8591,3 +8591,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 
 ## RELATED LINKS
+

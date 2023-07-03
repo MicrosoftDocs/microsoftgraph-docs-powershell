@@ -41,10 +41,10 @@ See the table in the Permissions section for the list of resources that support 
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.ChangeNotifications
-```
 
 Get-MgBetaSubscription -SubscriptionId $subscriptionId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -177,3 +177,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSubscription](/powershell/module/Microsoft.Graph.ChangeNotifications/Get-MgSubscription?view=graph-powershell-v1.0)
+

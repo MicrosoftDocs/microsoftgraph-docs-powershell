@@ -47,10 +47,10 @@ Delete calendarPermission.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Calendar
-```
 
 Remove-MgUserCalendarPermission -UserId $userId -CalendarPermissionId $calendarPermissionId
 
+```
 ## PARAMETERS
 
 ### -CalendarId
@@ -207,3 +207,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaUserCalendarPermission](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaUserCalendarPermission?view=graph-powershell-beta)
+

@@ -51,7 +51,6 @@ The response provides details about which memberships could and couldn't be crea
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	Values = @(
@@ -73,10 +72,10 @@ $params = @{
 
 Add-MgTeamMember -TeamId $teamId -BodyParameter $params
 
+```
 ### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	Values = @(
@@ -98,10 +97,10 @@ $params = @{
 
 Add-MgTeamMember -TeamId $teamId -BodyParameter $params
 
+```
 ### EXAMPLE 3
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	Values = @(
@@ -123,6 +122,7 @@ $params = @{
 
 Add-MgTeamMember -TeamId $teamId -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -317,3 +317,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Add-MgBetaTeamChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Add-MgBetaTeamChannelMember?view=graph-powershell-beta)
+

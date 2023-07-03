@@ -42,10 +42,10 @@ Retrieve the metadata for a [bundle][] based on the unique ID of the bundle.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Files
-```
 
 Get-MgDriveItem -DriveId $driveId -DriveItemId $driveItemId -ExpandProperty "children"
 
+```
 ## PARAMETERS
 
 ### -All
@@ -291,3 +291,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItem?view=graph-powershell-beta)
+

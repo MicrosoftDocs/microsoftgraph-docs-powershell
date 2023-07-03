@@ -43,7 +43,6 @@ Create a new accessReviewScheduleDefinition object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	displayName = "Test create"
@@ -83,10 +82,10 @@ $params = @{
 
 New-MgIdentityGovernanceAccessReviewDefinition -BodyParameter $params
 
+```
 ### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	displayName = "Review inactive guests on teams"
@@ -141,10 +140,10 @@ Review our access policy for more."
 
 New-MgIdentityGovernanceAccessReviewDefinition -BodyParameter $params
 
+```
 ### EXAMPLE 3
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	displayName = "Review employee access to LinkedIn"
@@ -207,10 +206,10 @@ $params = @{
 
 New-MgIdentityGovernanceAccessReviewDefinition -BodyParameter $params
 
+```
 ### EXAMPLE 4
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	displayName = "Group Multi-stage Access Review"
@@ -282,6 +281,7 @@ $params = @{
 
 New-MgIdentityGovernanceAccessReviewDefinition -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalNotificationRecipients
@@ -875,3 +875,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceAccessReviewDefinition?view=graph-powershell-beta)
+

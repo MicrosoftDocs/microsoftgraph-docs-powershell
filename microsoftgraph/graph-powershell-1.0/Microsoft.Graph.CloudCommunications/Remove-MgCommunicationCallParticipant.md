@@ -43,17 +43,17 @@ When an invited participant is removed, any outstanding add participant request 
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 Remove-MgCommunicationCallParticipant -CallId $callId -ParticipantId $participantId
 
+```
 ### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 Remove-MgCommunicationCallParticipant -CallId $callId -ParticipantId $participantId
 
+```
 ## PARAMETERS
 
 ### -CallId
@@ -197,3 +197,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaCommunicationCallParticipant](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Remove-MgBetaCommunicationCallParticipant?view=graph-powershell-beta)
+

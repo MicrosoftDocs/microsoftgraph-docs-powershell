@@ -49,24 +49,24 @@ Create new navigation property to hostedContents for chats
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgTeamChannelMessageHostedContent -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId
 
+```
 ### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgTeamChannelMessageReplyHostedContent -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -ChatMessageId1 $chatMessageId1
 
+```
 ### EXAMPLE 3
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgChatMessageHostedContent -ChatId $chatId -ChatMessageId $chatMessageId
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -279,3 +279,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaChatMessageHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaChatMessageHostedContent?view=graph-powershell-beta)
+

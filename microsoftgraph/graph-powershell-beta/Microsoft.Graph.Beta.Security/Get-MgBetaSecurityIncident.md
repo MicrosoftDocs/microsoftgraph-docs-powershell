@@ -46,10 +46,10 @@ Microsoft 365 Defender correlates alerts with the same attack techniques or the 
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 Get-MgBetaSecurityIncident -IncidentId $incidentId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -312,3 +312,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSecurityIncident](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityIncident?view=graph-powershell-v1.0)
+

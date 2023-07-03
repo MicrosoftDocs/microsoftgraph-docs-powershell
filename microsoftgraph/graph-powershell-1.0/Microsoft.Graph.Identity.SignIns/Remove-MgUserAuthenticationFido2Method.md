@@ -35,10 +35,10 @@ Deletes a user's FIDO2 Security Key Authentication Method object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Remove-MgUserAuthenticationFido2Method -UserId $userId -Fido2AuthenticationMethodId $fido2AuthenticationMethodId
 
+```
 ## PARAMETERS
 
 ### -Fido2AuthenticationMethodId
@@ -225,3 +225,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaUserAuthenticationFido2Method](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaUserAuthenticationFido2Method?view=graph-powershell-beta)
+

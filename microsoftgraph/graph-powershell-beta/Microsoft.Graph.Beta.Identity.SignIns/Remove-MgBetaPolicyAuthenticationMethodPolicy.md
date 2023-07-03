@@ -28,7 +28,6 @@ Delete navigation property authenticationMethodsPolicy for policies
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	registrationEnforcement = @{
@@ -50,6 +49,7 @@ $params = @{
 
 Update-MgBetaPolicyAuthenticationMethodPolicy -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -IfMatch
@@ -127,3 +127,4 @@ ALIASES
 
 ## RELATED LINKS
 [Remove-MgPolicyAuthenticationMethodPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyAuthenticationMethodPolicy?view=graph-powershell-v1.0)
+

@@ -53,7 +53,6 @@ The duration of a shift cannot be less than 1 minute or longer than 24 hours.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	id = "SHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8"
@@ -95,6 +94,7 @@ $params = @{
 
 New-MgBetaTeamScheduleShift -TeamId $teamId -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -454,3 +454,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgTeamScheduleShift](/powershell/module/Microsoft.Graph.Teams/New-MgTeamScheduleShift?view=graph-powershell-v1.0)
+

@@ -38,7 +38,6 @@ Create a new workforceIntegration object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	displayName = "displayName-value"
@@ -54,6 +53,7 @@ $params = @{
 
 New-MgBetaTeamworkWorkforceIntegration -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -355,3 +355,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgTeamworkWorkforceIntegration](/powershell/module/Microsoft.Graph.Teams/New-MgTeamworkWorkforceIntegration?view=graph-powershell-v1.0)
+

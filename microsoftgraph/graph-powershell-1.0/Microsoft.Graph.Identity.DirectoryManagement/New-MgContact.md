@@ -41,24 +41,24 @@ Add new entity to contacts
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Get-MgContact
 
+```
 ### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Get-MgContact -Filter "startswith(displayName,'A')" -CountVariable CountVar -Top 1 -Sort "displayName" -ConsistencyLevel eventual
 
+```
 ### EXAMPLE 3
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Get-MgContact -Search '"displayName:wa"' -CountVariable CountVar -ConsistencyLevel eventual
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -554,3 +554,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaContact](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaContact?view=graph-powershell-beta)
+

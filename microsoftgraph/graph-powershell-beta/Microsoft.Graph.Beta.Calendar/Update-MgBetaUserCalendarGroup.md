@@ -53,7 +53,6 @@ You can identify the **room**, **workspace**, or **roomList** by specifying the 
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Calendar
-```
 
 $params = @{
 	"@odata.type" = "microsoft.graph.room"
@@ -66,6 +65,7 @@ $params = @{
 
 Update-MgBetaPlace -PlaceId $placeId -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -313,3 +313,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgUserCalendarGroup](/powershell/module/Microsoft.Graph.Calendar/Update-MgUserCalendarGroup?view=graph-powershell-v1.0)
+

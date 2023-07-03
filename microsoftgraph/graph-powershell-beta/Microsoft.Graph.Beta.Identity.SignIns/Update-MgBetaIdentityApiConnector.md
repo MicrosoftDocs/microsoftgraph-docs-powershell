@@ -49,7 +49,6 @@ Update the properties of an identityApiConnector object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	displayName = "New Test API"
@@ -63,10 +62,10 @@ $params = @{
 
 Update-MgBetaIdentityApiConnector -IdentityApiConnectorId $identityApiConnectorId -BodyParameter $params
 
+```
 ### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	authenticationConfiguration = @{
@@ -78,6 +77,7 @@ $params = @{
 
 Update-MgBetaIdentityApiConnector -IdentityApiConnectorId $identityApiConnectorId -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -339,3 +339,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgIdentityApiConnector](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityApiConnector?view=graph-powershell-v1.0)
+

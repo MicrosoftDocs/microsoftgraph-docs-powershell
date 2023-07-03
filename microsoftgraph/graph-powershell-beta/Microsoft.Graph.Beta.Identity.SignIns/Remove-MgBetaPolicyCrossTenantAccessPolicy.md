@@ -28,7 +28,6 @@ Delete navigation property crossTenantAccessPolicy for policies
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	allowedCloudEndpoints = @(
@@ -38,6 +37,7 @@ $params = @{
 
 Update-MgBetaPolicyCrossTenantAccessPolicy -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -IfMatch
@@ -115,3 +115,4 @@ ALIASES
 
 ## RELATED LINKS
 [Remove-MgPolicyCrossTenantAccessPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyCrossTenantAccessPolicy?view=graph-powershell-v1.0)
+

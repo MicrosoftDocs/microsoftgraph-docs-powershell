@@ -42,10 +42,10 @@ Retrieve the properties and relationships of a identityUserFlowAttribute object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaIdentityUserFlowAttribute -IdentityUserFlowAttributeId $identityUserFlowAttributeId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -326,3 +326,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgIdentityUserFlowAttribute](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityUserFlowAttribute?view=graph-powershell-v1.0)
+

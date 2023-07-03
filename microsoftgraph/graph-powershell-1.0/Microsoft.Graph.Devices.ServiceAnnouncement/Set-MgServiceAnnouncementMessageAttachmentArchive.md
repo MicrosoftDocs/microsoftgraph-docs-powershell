@@ -35,10 +35,10 @@ The zip file that contains all attachments for a message.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
-```
 
 Get-MgServiceAnnouncementMessage
 
+```
 ## PARAMETERS
 
 ### -Data
@@ -177,3 +177,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgBetaServiceAnnouncementMessageAttachmentArchive](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Set-MgBetaServiceAnnouncementMessageAttachmentArchive?view=graph-powershell-beta)
+

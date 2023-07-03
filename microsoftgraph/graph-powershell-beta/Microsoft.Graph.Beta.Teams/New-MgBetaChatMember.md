@@ -49,7 +49,6 @@ Add a conversationMember to a chat.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
@@ -62,10 +61,10 @@ $params = @{
 
 New-MgBetaChatMember -ChatId $chatId -BodyParameter $params
 
+```
 ### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
@@ -77,10 +76,10 @@ $params = @{
 
 New-MgBetaChatMember -ChatId $chatId -BodyParameter $params
 
+```
 ### EXAMPLE 3
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
@@ -93,10 +92,10 @@ $params = @{
 
 New-MgBetaChatMember -ChatId $chatId -BodyParameter $params
 
+```
 ### EXAMPLE 4
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
@@ -109,10 +108,10 @@ $params = @{
 
 New-MgBetaChatMember -ChatId $chatId -BodyParameter $params
 
+```
 ### EXAMPLE 5
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
@@ -124,10 +123,10 @@ $params = @{
 
 New-MgBetaChatMember -ChatId $chatId -BodyParameter $params
 
+```
 ### EXAMPLE 6
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
@@ -140,6 +139,7 @@ $params = @{
 
 New-MgBetaChatMember -ChatId $chatId -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -368,3 +368,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgChatMember](/powershell/module/Microsoft.Graph.Teams/New-MgChatMember?view=graph-powershell-v1.0)
+
