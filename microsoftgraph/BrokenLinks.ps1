@@ -16,14 +16,15 @@ function AddMissingFiles {
        $Version = $VersionExtractSplit[2]
        $FinalDestination = "$VersionExtract/$ModuleExtract"
         
-       $ModuleName = $ModuleExtract.Replace("Microsoft.Graph.", "")
+       
      
        if($Version -eq "beta"){
-        $Version = "v1.0-$Version"
+        $ModuleName = $ModuleExtract.Replace("Microsoft.Graph.Beta.", "")
        }else{
+        $ModuleName = $ModuleExtract.Replace("Microsoft.Graph.", "")
         $Version = "v$Version"
        }
-       $SdkPath = "$PowerShellSDKRepo\$ModuleName\$ModuleName\docs\$Version\$FileExtract"
+       $SdkPath = "$PowerShellSDKRepo\$ModuleName\$Version\docs\$FileExtract"
        if (-not (Test-Path $SdkPath)) {
         Write-Error "File not be found: $SdkPath."
        }
