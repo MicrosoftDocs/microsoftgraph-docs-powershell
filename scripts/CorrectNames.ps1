@@ -69,14 +69,16 @@ function Copy-Files{
         #Extract command over here
         $Command = [System.IO.Path]::GetFileNameWithoutExtension($File)
         $WrongCommandName = $Command.Replace("-Mg","-MgBetaBeta")
+        $CorrectCommandName = $WrongCommandName.Replace("-MgBetaBeta","-MgBeta")
         
         if((Get-Content -Raw -Path $File) -match $WrongCommandName){
          Write-Host "Found $WrongCommandName in $File"
+         (Get-Content $File) | 
+                Foreach-Object { $_ -replace $WrongCommandName, $CorrectCommandName}  | 
+                Out-File $File
+                }
         }
      }
-
-     
-}
 
 
 
