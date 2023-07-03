@@ -51,18 +51,16 @@ This function is transitive.
 ### EXAMPLE 1
 ```
 Import-Module Microsoft.Graph.DirectoryObjects
-```
 
 $params = @{
 	SecurityEnabledOnly = $false
 }
 
 Get-MgDirectoryObjectMemberGroup -DirectoryObjectId $directoryObjectId -BodyParameter $params
-
+```
 ### EXAMPLE 2
 ```
 Import-Module Microsoft.Graph.Users.Actions
-```
 
 $params = @{
 	SecurityEnabledOnly = $true
@@ -70,7 +68,7 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Get-MgUserMemberGroup -UserId $userId -BodyParameter $params
-
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
