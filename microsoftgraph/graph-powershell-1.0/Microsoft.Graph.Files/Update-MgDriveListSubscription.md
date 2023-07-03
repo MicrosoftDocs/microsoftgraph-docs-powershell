@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property subscriptions in drives
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBetaDriveListSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveListSubscription?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaDriveListSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveListSubscription?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -511,4 +511,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgBetaBetaDriveListSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveListSubscription?view=graph-powershell-beta)
+[Update-MgBetaDriveListSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveListSubscription?view=graph-powershell-beta)

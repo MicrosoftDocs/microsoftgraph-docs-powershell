@@ -11,7 +11,7 @@ schema: 2.0.0
 A collection of team members who have access to the shared channel.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaTeamChannelSharedWithTeamAllowedMember](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamChannelSharedWithTeamAllowedMember?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamChannelSharedWithTeamAllowedMember](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamChannelSharedWithTeamAllowedMember?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -329,4 +329,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaBetaTeamChannelSharedWithTeamAllowedMember](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamChannelSharedWithTeamAllowedMember?view=graph-powershell-beta)
+[Get-MgBetaTeamChannelSharedWithTeamAllowedMember](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamChannelSharedWithTeamAllowedMember?view=graph-powershell-beta)

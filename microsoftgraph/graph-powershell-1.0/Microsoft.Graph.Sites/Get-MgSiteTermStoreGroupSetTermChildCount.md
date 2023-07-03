@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the number of the resource
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaSiteTermStoreGroupSetTermChildCount](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteTermStoreGroupSetTermChildCount?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteTermStoreGroupSetTermChildCount](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteTermStoreGroupSetTermChildCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -236,4 +236,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaSiteTermStoreGroupSetTermChildCount](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteTermStoreGroupSetTermChildCount?view=graph-powershell-beta)
+[Get-MgBetaSiteTermStoreGroupSetTermChildCount](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteTermStoreGroupSetTermChildCount?view=graph-powershell-beta)

@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property tasks in planner
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBetaPlannerTask](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgBetaPlannerTask?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaPlannerTask](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgBetaPlannerTask?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -741,7 +741,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[OrderHint <String>]`: Hint value used to order the task on the progress view of the task board. For details about the supported format, see Using order hints in Planner.
 
 ## RELATED LINKS
-[Update-MgBetaBetaPlannerTask](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgBetaPlannerTask?view=graph-powershell-beta)
+[Update-MgBetaPlannerTask](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgBetaPlannerTask?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaBetaPlannerTask](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgBetaPlannerTask?view=graph-powershell-beta)
+[Update-MgBetaPlannerTask](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgBetaPlannerTask?view=graph-powershell-beta)

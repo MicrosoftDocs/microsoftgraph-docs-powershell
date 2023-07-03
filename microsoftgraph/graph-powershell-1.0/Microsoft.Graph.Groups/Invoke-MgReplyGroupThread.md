@@ -13,7 +13,7 @@ This operation limits the size of the attachment you can add to under 3 MB.
 An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaBetaReplyGroupThread](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaReplyGroupThread?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Invoke-MgBetaReplyGroupThread](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaReplyGroupThread?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -413,7 +413,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Value <String>]`: A property value.
 
 ## RELATED LINKS
-[Invoke-MgBetaBetaReplyGroupThread](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaReplyGroupThread?view=graph-powershell-beta)
+[Invoke-MgBetaReplyGroupThread](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaReplyGroupThread?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Invoke-MgBetaBetaReplyGroupThread](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaReplyGroupThread?view=graph-powershell-beta)
+[Invoke-MgBetaReplyGroupThread](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaReplyGroupThread?view=graph-powershell-beta)

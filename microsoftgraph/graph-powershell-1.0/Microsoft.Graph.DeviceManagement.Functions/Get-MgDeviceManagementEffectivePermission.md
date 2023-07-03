@@ -11,7 +11,7 @@ schema: 2.0.0
 Retrieves the effective permissions of the currently authenticated user
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaDeviceManagementEffectivePermission](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Functions/Get-MgBetaDeviceManagementEffectivePermission?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementEffectivePermission](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Functions/Get-MgBetaDeviceManagementEffectivePermission?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -180,4 +180,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[SecretReferenceValueId <String>]`: Usage: secretReferenceValueId='{secretReferenceValueId}'
 
 ## RELATED LINKS
-[Get-MgBetaBetaDeviceManagementEffectivePermission](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Functions/Get-MgBetaDeviceManagementEffectivePermission?view=graph-powershell-beta)
+[Get-MgBetaDeviceManagementEffectivePermission](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Functions/Get-MgBetaDeviceManagementEffectivePermission?view=graph-powershell-beta)

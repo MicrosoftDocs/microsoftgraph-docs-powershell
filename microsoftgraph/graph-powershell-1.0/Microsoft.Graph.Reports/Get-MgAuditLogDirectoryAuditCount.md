@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the number of the resource
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaAuditLogDirectoryAuditCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaAuditLogDirectoryAuditCount?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaAuditLogDirectoryAuditCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaAuditLogDirectoryAuditCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -79,4 +79,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgBetaBetaAuditLogDirectoryAuditCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaAuditLogDirectoryAuditCount?view=graph-powershell-beta)
+[Get-MgBetaAuditLogDirectoryAuditCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaAuditLogDirectoryAuditCount?view=graph-powershell-beta)

@@ -12,7 +12,7 @@ Get a team that has been shared with a specified channel.
 This operation is allowed only for channels with a **membershipType** value of `shared`.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaTeamPrimaryChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamPrimaryChannelSharedWithTeam?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamPrimaryChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamPrimaryChannelSharedWithTeam?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -315,4 +315,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaBetaTeamPrimaryChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamPrimaryChannelSharedWithTeam?view=graph-powershell-beta)
+[Get-MgBetaTeamPrimaryChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamPrimaryChannelSharedWithTeam?view=graph-powershell-beta)

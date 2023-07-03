@@ -11,7 +11,7 @@ schema: 2.0.0
 Publishes a [contentType][] present in the content type hub site.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Publish-MgBetaBetaGroupSiteContentType](/powershell/module/Microsoft.Graph.Beta.Groups/Publish-MgBetaGroupSiteContentType?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Publish-MgBetaGroupSiteContentType](/powershell/module/Microsoft.Graph.Beta.Groups/Publish-MgBetaGroupSiteContentType?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -211,4 +211,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-[Publish-MgBetaBetaGroupSiteContentType](/powershell/module/Microsoft.Graph.Beta.Groups/Publish-MgBetaGroupSiteContentType?view=graph-powershell-beta)
+[Publish-MgBetaGroupSiteContentType](/powershell/module/Microsoft.Graph.Beta.Groups/Publish-MgBetaGroupSiteContentType?view=graph-powershell-beta)

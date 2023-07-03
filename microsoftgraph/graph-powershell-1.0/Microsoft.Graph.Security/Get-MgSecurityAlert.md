@@ -11,7 +11,7 @@ schema: 2.0.0
 Retrieve the properties and relationships of an alert object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaSecurityAlert](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAlert?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityAlert](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAlert?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -279,4 +279,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
-[Get-MgBetaBetaSecurityAlert](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAlert?view=graph-powershell-beta)
+[Get-MgBetaSecurityAlert](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAlert?view=graph-powershell-beta)

@@ -11,7 +11,7 @@ schema: 2.0.0
 Remove a [column][columndefinition] from a [site][], a [list][], or a [content type][contentType].
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaBetaSiteContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteContentTypeColumn?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaSiteContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteContentTypeColumn?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -222,4 +222,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaBetaSiteContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteContentTypeColumn?view=graph-powershell-beta)
+[Remove-MgBetaSiteContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteContentTypeColumn?view=graph-powershell-beta)

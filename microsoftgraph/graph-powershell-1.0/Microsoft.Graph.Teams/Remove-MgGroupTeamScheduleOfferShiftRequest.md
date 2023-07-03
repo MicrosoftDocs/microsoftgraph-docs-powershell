@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property offerShiftRequests for groups
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaBetaGroupTeamScheduleOfferShiftRequest](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaGroupTeamScheduleOfferShiftRequest?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupTeamScheduleOfferShiftRequest](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaGroupTeamScheduleOfferShiftRequest?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -207,4 +207,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgBetaBetaGroupTeamScheduleOfferShiftRequest](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaGroupTeamScheduleOfferShiftRequest?view=graph-powershell-beta)
+[Remove-MgBetaGroupTeamScheduleOfferShiftRequest](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaGroupTeamScheduleOfferShiftRequest?view=graph-powershell-beta)

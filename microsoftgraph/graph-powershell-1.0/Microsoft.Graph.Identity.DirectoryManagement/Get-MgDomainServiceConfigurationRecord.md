@@ -13,7 +13,7 @@ Read-only, Nullable.
 Supports $expand.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaDomainServiceConfigurationRecord](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDomainServiceConfigurationRecord?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaDomainServiceConfigurationRecord](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDomainServiceConfigurationRecord?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -291,4 +291,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaDomainServiceConfigurationRecord](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDomainServiceConfigurationRecord?view=graph-powershell-beta)
+[Get-MgBetaDomainServiceConfigurationRecord](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDomainServiceConfigurationRecord?view=graph-powershell-beta)

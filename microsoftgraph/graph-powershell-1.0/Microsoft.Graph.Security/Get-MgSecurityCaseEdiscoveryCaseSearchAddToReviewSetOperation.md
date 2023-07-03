@@ -11,7 +11,7 @@ schema: 2.0.0
 Adds the results of the eDiscovery search to the specified reviewSet.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaSecurityCaseEdiscoveryCaseSearchAddToReviewSetOperation](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseSearchAddToReviewSetOperation?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityCaseEdiscoveryCaseSearchAddToReviewSetOperation](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseSearchAddToReviewSetOperation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -167,4 +167,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
-[Get-MgBetaBetaSecurityCaseEdiscoveryCaseSearchAddToReviewSetOperation](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseSearchAddToReviewSetOperation?view=graph-powershell-beta)
+[Get-MgBetaSecurityCaseEdiscoveryCaseSearchAddToReviewSetOperation](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseSearchAddToReviewSetOperation?view=graph-powershell-beta)

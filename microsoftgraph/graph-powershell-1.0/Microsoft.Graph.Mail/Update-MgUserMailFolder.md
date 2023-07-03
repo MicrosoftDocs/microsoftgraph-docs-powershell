@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property inferenceClassification in users
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBetaUserMailFolder](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgBetaUserMailFolder?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaUserMailFolder](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgBetaUserMailFolder?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -237,4 +237,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[Name <String>]`: The display name of the person or entity.
 
 ## RELATED LINKS
-[Update-MgBetaBetaUserMailFolder](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgBetaUserMailFolder?view=graph-powershell-beta)
+[Update-MgBetaUserMailFolder](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgBetaUserMailFolder?view=graph-powershell-beta)

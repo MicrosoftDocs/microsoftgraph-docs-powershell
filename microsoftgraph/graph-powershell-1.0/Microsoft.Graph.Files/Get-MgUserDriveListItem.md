@@ -11,7 +11,7 @@ schema: 2.0.0
 Returns the metadata for an [item][] in a [list][].
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaUserDriveListItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveListItem?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveListItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveListItem?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -312,4 +312,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaUserDriveListItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveListItem?view=graph-powershell-beta)
+[Get-MgBetaUserDriveListItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveListItem?view=graph-powershell-beta)

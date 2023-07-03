@@ -11,7 +11,7 @@ schema: 2.0.0
 Retrieve the properties and relationships of a plannerBucket object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaPlannerBucket](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerBucket?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaPlannerBucket](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerBucket?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -256,4 +256,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaPlannerBucket](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerBucket?view=graph-powershell-beta)
+[Get-MgBetaPlannerBucket](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerBucket?view=graph-powershell-beta)

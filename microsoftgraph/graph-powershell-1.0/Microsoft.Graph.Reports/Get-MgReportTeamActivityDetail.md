@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function getTeamsTeamActivityDetail
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaReportTeamActivityDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportTeamActivityDetail?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaReportTeamActivityDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportTeamActivityDetail?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -168,4 +168,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: Usage: userId='{userId}'
 
 ## RELATED LINKS
-[Get-MgBetaBetaReportTeamActivityDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportTeamActivityDetail?view=graph-powershell-beta)
+[Get-MgBetaReportTeamActivityDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportTeamActivityDetail?view=graph-powershell-beta)

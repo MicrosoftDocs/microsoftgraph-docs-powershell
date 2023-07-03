@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function getActivitiesByInterval
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaGroupDriveItemListItemActivityByInterval](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupDriveItemListItemActivityByInterval?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveItemListItemActivityByInterval](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupDriveItemListItemActivityByInterval?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -332,4 +332,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-[Get-MgBetaBetaGroupDriveItemListItemActivityByInterval](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupDriveItemListItemActivityByInterval?view=graph-powershell-beta)
+[Get-MgBetaGroupDriveItemListItemActivityByInterval](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupDriveItemListItemActivityByInterval?view=graph-powershell-beta)

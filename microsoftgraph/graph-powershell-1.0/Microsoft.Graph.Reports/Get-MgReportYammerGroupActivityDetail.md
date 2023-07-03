@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function getYammerGroupsActivityDetail
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaReportYammerGroupActivityDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportYammerGroupActivityDetail?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaReportYammerGroupActivityDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportYammerGroupActivityDetail?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -172,4 +172,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: Usage: userId='{userId}'
 
 ## RELATED LINKS
-[Get-MgBetaBetaReportYammerGroupActivityDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportYammerGroupActivityDetail?view=graph-powershell-beta)
+[Get-MgBetaReportYammerGroupActivityDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportYammerGroupActivityDetail?view=graph-powershell-beta)

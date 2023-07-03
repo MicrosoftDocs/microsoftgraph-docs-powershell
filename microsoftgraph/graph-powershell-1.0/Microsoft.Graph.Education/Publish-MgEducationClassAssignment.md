@@ -18,7 +18,7 @@ The state of the assignment goes back to `draft` if there is any backend failure
 To update the properties of a published **assignment**, see update an assignment.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Publish-MgBetaBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Publish-MgBetaEducationClassAssignment?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Publish-MgBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Publish-MgBetaEducationClassAssignment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -161,4 +161,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Publish-MgBetaBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Publish-MgBetaEducationClassAssignment?view=graph-powershell-beta)
+[Publish-MgBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Publish-MgBetaEducationClassAssignment?view=graph-powershell-beta)

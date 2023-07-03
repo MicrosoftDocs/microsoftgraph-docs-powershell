@@ -12,7 +12,7 @@ Activate a custodian that has been released from a case to make them part of the
 For details, see Manage custodians in an eDiscovery (Premium) case.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Initialize-MgBetaBetaSecurityCaseEdiscoveryCaseCustodian](/powershell/module/Microsoft.Graph.Beta.Security/Initialize-MgBetaSecurityCaseEdiscoveryCaseCustodian?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Initialize-MgBetaSecurityCaseEdiscoveryCaseCustodian](/powershell/module/Microsoft.Graph.Beta.Security/Initialize-MgBetaSecurityCaseEdiscoveryCaseCustodian?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -177,4 +177,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
-[Initialize-MgBetaBetaSecurityCaseEdiscoveryCaseCustodian](/powershell/module/Microsoft.Graph.Beta.Security/Initialize-MgBetaSecurityCaseEdiscoveryCaseCustodian?view=graph-powershell-beta)
+[Initialize-MgBetaSecurityCaseEdiscoveryCaseCustodian](/powershell/module/Microsoft.Graph.Beta.Security/Initialize-MgBetaSecurityCaseEdiscoveryCaseCustodian?view=graph-powershell-beta)

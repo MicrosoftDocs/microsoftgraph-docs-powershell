@@ -11,7 +11,7 @@ schema: 2.0.0
 Use this API to create a new event.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBetaGroupEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaGroupEvent?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaGroupEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaGroupEvent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -1593,7 +1593,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
 
 ## RELATED LINKS
-[New-MgBetaBetaGroupEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaGroupEvent?view=graph-powershell-beta)
+[New-MgBetaGroupEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaGroupEvent?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[New-MgBetaBetaGroupEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaGroupEvent?view=graph-powershell-beta)
+[New-MgBetaGroupEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaGroupEvent?view=graph-powershell-beta)

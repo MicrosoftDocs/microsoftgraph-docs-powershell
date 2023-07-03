@@ -11,7 +11,7 @@ schema: 2.0.0
 Add new entity to directoryRoleTemplates
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBetaDirectoryRoleTemplate](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryRoleTemplate?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaDirectoryRoleTemplate](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryRoleTemplate?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -193,4 +193,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[DisplayName <String>]`: The display name to set for the directory role. Read-only.
 
 ## RELATED LINKS
-[New-MgBetaBetaDirectoryRoleTemplate](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryRoleTemplate?view=graph-powershell-beta)
+[New-MgBetaDirectoryRoleTemplate](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryRoleTemplate?view=graph-powershell-beta)

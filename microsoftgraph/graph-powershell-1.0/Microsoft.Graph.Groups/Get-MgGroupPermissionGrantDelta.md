@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function delta
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaGroupPermissionGrantDelta](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupPermissionGrantDelta?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupPermissionGrantDelta](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupPermissionGrantDelta?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -283,4 +283,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-[Get-MgBetaBetaGroupPermissionGrantDelta](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupPermissionGrantDelta?view=graph-powershell-beta)
+[Get-MgBetaGroupPermissionGrantDelta](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupPermissionGrantDelta?view=graph-powershell-beta)

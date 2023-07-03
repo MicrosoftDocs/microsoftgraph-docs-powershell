@@ -11,7 +11,7 @@ schema: 2.0.0
 Deletes a domain from a tenant.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaBetaDomain](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDomain?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaDomain](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDomain?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -174,4 +174,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaBetaDomain](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDomain?view=graph-powershell-beta)
+[Remove-MgBetaDomain](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDomain?view=graph-powershell-beta)

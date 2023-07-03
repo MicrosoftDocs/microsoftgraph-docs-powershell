@@ -11,7 +11,7 @@ schema: 2.0.0
 Create a new timeOffReason.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBetaGroupTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamScheduleTimeOffReason?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaGroupTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamScheduleTimeOffReason?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -307,4 +307,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
-[New-MgBetaBetaGroupTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamScheduleTimeOffReason?view=graph-powershell-beta)
+[New-MgBetaGroupTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamScheduleTimeOffReason?view=graph-powershell-beta)

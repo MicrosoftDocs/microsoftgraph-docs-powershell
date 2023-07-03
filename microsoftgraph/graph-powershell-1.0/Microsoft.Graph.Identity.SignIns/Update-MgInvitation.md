@@ -11,7 +11,7 @@ schema: 2.0.0
 Update entity in invitations
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBetaInvitation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaInvitation?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaInvitation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaInvitation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -5629,7 +5629,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[MessageLanguage <String>]`: The language you want to send the default message in. If the customizedMessageBody is specified, this property is ignored, and the message is sent using the customizedMessageBody. The language format should be in ISO 639. The default is en-US.
 
 ## RELATED LINKS
-[Update-MgBetaBetaInvitation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaInvitation?view=graph-powershell-beta)
+[Update-MgBetaInvitation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaInvitation?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaBetaInvitation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaInvitation?view=graph-powershell-beta)
+[Update-MgBetaInvitation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaInvitation?view=graph-powershell-beta)

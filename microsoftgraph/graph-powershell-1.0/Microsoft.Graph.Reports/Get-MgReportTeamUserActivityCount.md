@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function getTeamsUserActivityCounts
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaReportTeamUserActivityCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportTeamUserActivityCount?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaReportTeamUserActivityCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportTeamUserActivityCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -146,4 +146,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: Usage: userId='{userId}'
 
 ## RELATED LINKS
-[Get-MgBetaBetaReportTeamUserActivityCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportTeamUserActivityCount?view=graph-powershell-beta)
+[Get-MgBetaReportTeamUserActivityCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportTeamUserActivityCount?view=graph-powershell-beta)

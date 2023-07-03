@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function getSkypeForBusinessPeerToPeerActivityCounts
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaReportSkypeForBusinessPeerToPeerActivityCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSkypeForBusinessPeerToPeerActivityCount?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaReportSkypeForBusinessPeerToPeerActivityCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSkypeForBusinessPeerToPeerActivityCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -147,4 +147,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: Usage: userId='{userId}'
 
 ## RELATED LINKS
-[Get-MgBetaBetaReportSkypeForBusinessPeerToPeerActivityCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSkypeForBusinessPeerToPeerActivityCount?view=graph-powershell-beta)
+[Get-MgBetaReportSkypeForBusinessPeerToPeerActivityCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSkypeForBusinessPeerToPeerActivityCount?view=graph-powershell-beta)

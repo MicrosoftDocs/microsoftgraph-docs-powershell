@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property bucketTaskBoardFormat for planner
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaBetaPlannerTaskBucketTaskBoardFormat](/powershell/module/Microsoft.Graph.Beta.Planner/Remove-MgBetaPlannerTaskBucketTaskBoardFormat?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaPlannerTaskBucketTaskBoardFormat](/powershell/module/Microsoft.Graph.Beta.Planner/Remove-MgBetaPlannerTaskBucketTaskBoardFormat?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -163,4 +163,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaBetaPlannerTaskBucketTaskBoardFormat](/powershell/module/Microsoft.Graph.Beta.Planner/Remove-MgBetaPlannerTaskBucketTaskBoardFormat?view=graph-powershell-beta)
+[Remove-MgBetaPlannerTaskBucketTaskBoardFormat](/powershell/module/Microsoft.Graph.Beta.Planner/Remove-MgBetaPlannerTaskBucketTaskBoardFormat?view=graph-powershell-beta)

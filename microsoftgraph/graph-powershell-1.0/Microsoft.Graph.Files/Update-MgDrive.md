@@ -11,7 +11,7 @@ schema: 2.0.0
 Unpublish a [contentType][] from a content type hub site.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBetaDrive](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDrive?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaDrive](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDrive?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -185,4 +185,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgBetaBetaDrive](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDrive?view=graph-powershell-beta)
+[Update-MgBetaDrive](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDrive?view=graph-powershell-beta)

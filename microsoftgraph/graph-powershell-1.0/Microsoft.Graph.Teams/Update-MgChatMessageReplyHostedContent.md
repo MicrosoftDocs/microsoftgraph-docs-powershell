@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property hostedContents in chats
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBetaChatMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaChatMessageReplyHostedContent?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaChatMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaChatMessageReplyHostedContent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -303,4 +303,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Update-MgBetaBetaChatMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaChatMessageReplyHostedContent?view=graph-powershell-beta)
+[Update-MgBetaChatMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaChatMessageReplyHostedContent?view=graph-powershell-beta)

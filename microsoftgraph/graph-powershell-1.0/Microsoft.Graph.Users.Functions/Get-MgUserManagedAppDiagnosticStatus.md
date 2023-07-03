@@ -11,7 +11,7 @@ schema: 2.0.0
 Gets diagnostics validation status for a given user.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaUserManagedAppDiagnosticStatus](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserManagedAppDiagnosticStatus?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaUserManagedAppDiagnosticStatus](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserManagedAppDiagnosticStatus?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -197,4 +197,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaUserManagedAppDiagnosticStatus](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserManagedAppDiagnosticStatus?view=graph-powershell-beta)
+[Get-MgBetaUserManagedAppDiagnosticStatus](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserManagedAppDiagnosticStatus?view=graph-powershell-beta)

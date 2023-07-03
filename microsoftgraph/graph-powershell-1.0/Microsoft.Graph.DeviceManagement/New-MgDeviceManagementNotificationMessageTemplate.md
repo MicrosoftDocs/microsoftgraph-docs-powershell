@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to notificationMessageTemplates for deviceManagement
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBetaDeviceManagementNotificationMessageTemplate](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementNotificationMessageTemplate?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementNotificationMessageTemplate](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementNotificationMessageTemplate?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -266,4 +266,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Subject <String>]`: The Message Template Subject.
 
 ## RELATED LINKS
-[New-MgBetaBetaDeviceManagementNotificationMessageTemplate](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementNotificationMessageTemplate?view=graph-powershell-beta)
+[New-MgBetaDeviceManagementNotificationMessageTemplate](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementNotificationMessageTemplate?view=graph-powershell-beta)

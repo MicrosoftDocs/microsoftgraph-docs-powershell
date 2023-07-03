@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property directory for roleManagement
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaBetaRoleManagementDirectory](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaRoleManagementDirectory?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaRoleManagementDirectory](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaRoleManagementDirectory?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -110,4 +110,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Remove-MgBetaBetaRoleManagementDirectory](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaRoleManagementDirectory?view=graph-powershell-beta)
+[Remove-MgBetaRoleManagementDirectory](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaRoleManagementDirectory?view=graph-powershell-beta)

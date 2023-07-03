@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property ref to userFlowIdentityProviders for identity
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBetaIdentityB2XUserFlowIdentityProviderByRef](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityB2XUserFlowIdentityProviderByRef?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaIdentityB2XUserFlowIdentityProviderByRef](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityB2XUserFlowIdentityProviderByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -265,4 +265,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[New-MgBetaBetaIdentityB2XUserFlowIdentityProviderByRef](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityB2XUserFlowIdentityProviderByRef?view=graph-powershell-beta)
+[New-MgBetaIdentityB2XUserFlowIdentityProviderByRef](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityB2XUserFlowIdentityProviderByRef?view=graph-powershell-beta)

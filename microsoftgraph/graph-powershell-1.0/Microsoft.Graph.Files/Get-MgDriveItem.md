@@ -11,7 +11,7 @@ schema: 2.0.0
 Retrieve the metadata for a [bundle][] based on the unique ID of the bundle.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItem?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItem?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -290,4 +290,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItem?view=graph-powershell-beta)
+[Get-MgBetaDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItem?view=graph-powershell-beta)

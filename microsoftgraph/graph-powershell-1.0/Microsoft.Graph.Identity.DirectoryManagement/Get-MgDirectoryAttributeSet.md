@@ -11,7 +11,7 @@ schema: 2.0.0
 Get attributeSets from directory
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaDirectoryAttributeSet](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryAttributeSet?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryAttributeSet](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryAttributeSet?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -275,4 +275,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaDirectoryAttributeSet](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryAttributeSet?view=graph-powershell-beta)
+[Get-MgBetaDirectoryAttributeSet](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryAttributeSet?view=graph-powershell-beta)

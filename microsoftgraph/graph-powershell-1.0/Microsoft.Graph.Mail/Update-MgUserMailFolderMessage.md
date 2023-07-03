@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property messages in users
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBetaUserMailFolderMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgBetaUserMailFolderMessage?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaUserMailFolderMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgBetaUserMailFolderMessage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -939,7 +939,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ContentType <String>]`: bodyType
 
 ## RELATED LINKS
-[Update-MgBetaBetaUserMailFolderMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgBetaUserMailFolderMessage?view=graph-powershell-beta)
+[Update-MgBetaUserMailFolderMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgBetaUserMailFolderMessage?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaBetaUserMailFolderMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgBetaUserMailFolderMessage?view=graph-powershell-beta)
+[Update-MgBetaUserMailFolderMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgBetaUserMailFolderMessage?view=graph-powershell-beta)

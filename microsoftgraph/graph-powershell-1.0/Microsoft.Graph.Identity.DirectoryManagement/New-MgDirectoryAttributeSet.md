@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to attributeSets for directory
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBetaDirectoryAttributeSet](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryAttributeSet?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaDirectoryAttributeSet](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryAttributeSet?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -177,4 +177,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[MaxAttributesPerSet <Int32?>]`: 
 
 ## RELATED LINKS
-[New-MgBetaBetaDirectoryAttributeSet](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryAttributeSet?view=graph-powershell-beta)
+[New-MgBetaDirectoryAttributeSet](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryAttributeSet?view=graph-powershell-beta)

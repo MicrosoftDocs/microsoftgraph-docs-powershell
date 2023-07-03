@@ -12,7 +12,7 @@ Delete or hang up an active call.
 For group calls, this will only delete your call leg and the underlying group call will still continue.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaBetaCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Remove-MgBetaCommunicationCall?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Remove-MgBetaCommunicationCall?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -168,4 +168,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaBetaCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Remove-MgBetaCommunicationCall?view=graph-powershell-beta)
+[Remove-MgBetaCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Remove-MgBetaCommunicationCall?view=graph-powershell-beta)

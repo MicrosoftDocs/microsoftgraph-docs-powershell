@@ -12,7 +12,7 @@ Create a new namedLocation object.
 Named locations can be either ipNamedLocation or countryNamedLocation objects.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBetaIdentityConditionalAccessNamedLocation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityConditionalAccessNamedLocation?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaIdentityConditionalAccessNamedLocation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityConditionalAccessNamedLocation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -238,4 +238,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents last modified date and time of the location using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
 
 ## RELATED LINKS
-[New-MgBetaBetaIdentityConditionalAccessNamedLocation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityConditionalAccessNamedLocation?view=graph-powershell-beta)
+[New-MgBetaIdentityConditionalAccessNamedLocation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityConditionalAccessNamedLocation?view=graph-powershell-beta)

@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the properties of an activityBasedTimeoutPolicy object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaPolicyActivityBasedTimeoutPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyActivityBasedTimeoutPolicy?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyActivityBasedTimeoutPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyActivityBasedTimeoutPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -306,4 +306,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgBetaBetaPolicyActivityBasedTimeoutPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyActivityBasedTimeoutPolicy?view=graph-powershell-beta)
+[Get-MgBetaPolicyActivityBasedTimeoutPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyActivityBasedTimeoutPolicy?view=graph-powershell-beta)

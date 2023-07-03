@@ -11,7 +11,7 @@ schema: 2.0.0
 The collection of content types present in this list.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaGroupSiteListContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListContentType?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteListContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListContentType?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -341,4 +341,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaGroupSiteListContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListContentType?view=graph-powershell-beta)
+[Get-MgBetaGroupSiteListContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListContentType?view=graph-powershell-beta)

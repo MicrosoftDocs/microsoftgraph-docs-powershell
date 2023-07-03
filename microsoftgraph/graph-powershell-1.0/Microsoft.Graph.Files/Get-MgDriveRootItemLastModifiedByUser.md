@@ -12,7 +12,7 @@ Identity of the user who last modified the item.
 Read-only.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaDriveRootItemLastModifiedByUser](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRootItemLastModifiedByUser?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveRootItemLastModifiedByUser](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRootItemLastModifiedByUser?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -152,4 +152,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaDriveRootItemLastModifiedByUser](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRootItemLastModifiedByUser?view=graph-powershell-beta)
+[Get-MgBetaDriveRootItemLastModifiedByUser](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRootItemLastModifiedByUser?view=graph-powershell-beta)

@@ -11,7 +11,7 @@ schema: 2.0.0
 Create a new [contentType][] in a [site][].
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBetaSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteContentType?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteContentType?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -1555,7 +1555,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Position <Int32?>]`: Specifies the position in which the Content Type appears in the selection UI.
 
 ## RELATED LINKS
-[New-MgBetaBetaSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteContentType?view=graph-powershell-beta)
+[New-MgBetaSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteContentType?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[New-MgBetaBetaSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteContentType?view=graph-powershell-beta)
+[New-MgBetaSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteContentType?view=graph-powershell-beta)

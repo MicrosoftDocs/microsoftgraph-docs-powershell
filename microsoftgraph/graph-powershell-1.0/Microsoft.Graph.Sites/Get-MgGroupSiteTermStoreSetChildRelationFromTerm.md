@@ -13,7 +13,7 @@ The term from which the relationship is defined.
 A null value would indicate the relation is directly with the [set].
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaGroupSiteTermStoreSetChildRelationFromTerm](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteTermStoreSetChildRelationFromTerm?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteTermStoreSetChildRelationFromTerm](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteTermStoreSetChildRelationFromTerm?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -301,4 +301,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaGroupSiteTermStoreSetChildRelationFromTerm](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteTermStoreSetChildRelationFromTerm?view=graph-powershell-beta)
+[Get-MgBetaGroupSiteTermStoreSetChildRelationFromTerm](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteTermStoreSetChildRelationFromTerm?view=graph-powershell-beta)

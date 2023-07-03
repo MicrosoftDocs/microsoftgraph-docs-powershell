@@ -11,7 +11,7 @@ schema: 2.0.0
 Get lastSevenDays from drives
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaDriveRootAnalyticLastSevenDay](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRootAnalyticLastSevenDay?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveRootAnalyticLastSevenDay](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRootAnalyticLastSevenDay?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -150,4 +150,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaDriveRootAnalyticLastSevenDay](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRootAnalyticLastSevenDay?view=graph-powershell-beta)
+[Get-MgBetaDriveRootAnalyticLastSevenDay](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRootAnalyticLastSevenDay?view=graph-powershell-beta)

@@ -11,7 +11,7 @@ schema: 2.0.0
 Children terms of set in term [store].
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaSiteTermStoreSetParentGroupSetChild](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteTermStoreSetParentGroupSetChild?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteTermStoreSetParentGroupSetChild](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteTermStoreSetParentGroupSetChild?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -429,4 +429,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaSiteTermStoreSetParentGroupSetChild](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteTermStoreSetParentGroupSetChild?view=graph-powershell-beta)
+[Get-MgBetaSiteTermStoreSetParentGroupSetChild](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteTermStoreSetParentGroupSetChild?view=graph-powershell-beta)

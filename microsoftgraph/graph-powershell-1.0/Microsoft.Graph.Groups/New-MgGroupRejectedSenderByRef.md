@@ -13,7 +13,7 @@ Users in the rejected senders list cannot post to conversations of the group (id
 Make sure you do not specify the same user or group in the rejected senders and accepted senders lists, otherwise you will get an error.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBetaGroupRejectedSenderByRef](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupRejectedSenderByRef?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaGroupRejectedSenderByRef](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupRejectedSenderByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -246,4 +246,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-[New-MgBetaBetaGroupRejectedSenderByRef](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupRejectedSenderByRef?view=graph-powershell-beta)
+[New-MgBetaGroupRejectedSenderByRef](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupRejectedSenderByRef?view=graph-powershell-beta)

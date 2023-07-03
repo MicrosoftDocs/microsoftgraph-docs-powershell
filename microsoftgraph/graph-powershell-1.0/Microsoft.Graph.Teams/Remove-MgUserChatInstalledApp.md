@@ -11,7 +11,7 @@ schema: 2.0.0
 Uninstall an app installed within a chat.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaBetaUserChatInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaUserChatInstalledApp?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserChatInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaUserChatInstalledApp?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -222,4 +222,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgBetaBetaUserChatInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaUserChatInstalledApp?view=graph-powershell-beta)
+[Remove-MgBetaUserChatInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaUserChatInstalledApp?view=graph-powershell-beta)

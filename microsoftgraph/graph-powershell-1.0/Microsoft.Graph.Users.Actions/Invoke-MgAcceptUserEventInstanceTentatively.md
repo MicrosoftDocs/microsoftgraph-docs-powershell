@@ -11,7 +11,7 @@ schema: 2.0.0
 Accept the specified event in a user calendar.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaBetaAcceptUserEventInstanceTentatively](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaAcceptUserEventInstanceTentatively?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Invoke-MgBetaAcceptUserEventInstanceTentatively](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaAcceptUserEventInstanceTentatively?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -267,4 +267,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBetaBetaAcceptUserEventInstanceTentatively](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaAcceptUserEventInstanceTentatively?view=graph-powershell-beta)
+[Invoke-MgBetaAcceptUserEventInstanceTentatively](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaAcceptUserEventInstanceTentatively?view=graph-powershell-beta)

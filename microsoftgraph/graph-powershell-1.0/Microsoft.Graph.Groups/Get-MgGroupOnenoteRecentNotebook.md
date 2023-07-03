@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function getRecentNotebooks
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaGroupOnenoteRecentNotebook](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupOnenoteRecentNotebook?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupOnenoteRecentNotebook](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupOnenoteRecentNotebook?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -225,4 +225,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-[Get-MgBetaBetaGroupOnenoteRecentNotebook](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupOnenoteRecentNotebook?view=graph-powershell-beta)
+[Get-MgBetaGroupOnenoteRecentNotebook](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupOnenoteRecentNotebook?view=graph-powershell-beta)

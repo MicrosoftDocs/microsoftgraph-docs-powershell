@@ -12,7 +12,7 @@ Read the properties and relationships of an organizationalBrandingLocalization o
 To retrieve a localization branding object, specify the value of **id** in the URL.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaOrganizationBrandingLocalization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaOrganizationBrandingLocalization?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaOrganizationBrandingLocalization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaOrganizationBrandingLocalization?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -296,4 +296,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaOrganizationBrandingLocalization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaOrganizationBrandingLocalization?view=graph-powershell-beta)
+[Get-MgBetaOrganizationBrandingLocalization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaOrganizationBrandingLocalization?view=graph-powershell-beta)

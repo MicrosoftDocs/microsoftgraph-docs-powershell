@@ -11,7 +11,7 @@ schema: 2.0.0
 Retrieve properties and relationships for a [site][] resource.\nA **site** resource represents a team site in SharePoint.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaSite](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSite?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaSite](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSite?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -309,4 +309,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaSite](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSite?view=graph-powershell-beta)
+[Get-MgBetaSite](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSite?view=graph-powershell-beta)

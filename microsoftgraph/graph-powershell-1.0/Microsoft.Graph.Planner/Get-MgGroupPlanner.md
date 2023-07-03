@@ -11,7 +11,7 @@ schema: 2.0.0
 Entry-point to Planner resource that might exist for a Unified Group.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaGroupPlanner](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaGroupPlanner?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupPlanner](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaGroupPlanner?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -134,4 +134,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaGroupPlanner](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaGroupPlanner?view=graph-powershell-beta)
+[Get-MgBetaGroupPlanner](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaGroupPlanner?view=graph-powershell-beta)

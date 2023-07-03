@@ -11,7 +11,7 @@ schema: 2.0.0
 Create a new [listItem][] in a [list][].
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBetaShareListItem](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaShareListItem?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaShareListItem](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaShareListItem?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -13594,7 +13594,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
 ## RELATED LINKS
-[New-MgBetaBetaShareListItem](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaShareListItem?view=graph-powershell-beta)
+[New-MgBetaShareListItem](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaShareListItem?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[New-MgBetaBetaShareListItem](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaShareListItem?view=graph-powershell-beta)
+[New-MgBetaShareListItem](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaShareListItem?view=graph-powershell-beta)

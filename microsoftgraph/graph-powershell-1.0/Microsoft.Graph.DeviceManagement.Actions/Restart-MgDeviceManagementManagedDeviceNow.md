@@ -11,7 +11,7 @@ schema: 2.0.0
 Reboot device
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Restart-MgBetaBetaDeviceManagementManagedDeviceNow](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Restart-MgBetaDeviceManagementManagedDeviceNow?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Restart-MgBetaDeviceManagementManagedDeviceNow](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Restart-MgBetaDeviceManagementManagedDeviceNow?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -155,4 +155,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
-[Restart-MgBetaBetaDeviceManagementManagedDeviceNow](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Restart-MgBetaDeviceManagementManagedDeviceNow?view=graph-powershell-beta)
+[Restart-MgBetaDeviceManagementManagedDeviceNow](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Restart-MgBetaDeviceManagementManagedDeviceNow?view=graph-powershell-beta)

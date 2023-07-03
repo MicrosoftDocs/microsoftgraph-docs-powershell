@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to incidents for security
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBetaSecurityIncident](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityIncident?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaSecurityIncident](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityIncident?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -462,4 +462,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[CreatedDateTime <DateTime?>]`: The time when the comment was submitted.
 
 ## RELATED LINKS
-[New-MgBetaBetaSecurityIncident](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityIncident?view=graph-powershell-beta)
+[New-MgBetaSecurityIncident](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityIncident?view=graph-powershell-beta)

@@ -11,7 +11,7 @@ schema: 2.0.0
 Update an existing accessReviewScheduleDefinition object to change one or more of its properties.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBetaIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceAccessReviewDefinition?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceAccessReviewDefinition?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -736,7 +736,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[StageId <String>]`: Unique identifier of the accessReviewStageSettings object. The stageId will be used by the dependsOn property to indicate the order of the stages. Required.
 
 ## RELATED LINKS
-[Update-MgBetaBetaIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceAccessReviewDefinition?view=graph-powershell-beta)
+[Update-MgBetaIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceAccessReviewDefinition?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaBetaIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceAccessReviewDefinition?view=graph-powershell-beta)
+[Update-MgBetaIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceAccessReviewDefinition?view=graph-powershell-beta)

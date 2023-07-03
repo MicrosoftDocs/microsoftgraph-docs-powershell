@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the number of the resource
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaGroupTeamTagMemberCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamTagMemberCount?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamTagMemberCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamTagMemberCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -172,4 +172,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaBetaGroupTeamTagMemberCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamTagMemberCount?view=graph-powershell-beta)
+[Get-MgBetaGroupTeamTagMemberCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamTagMemberCount?view=graph-powershell-beta)

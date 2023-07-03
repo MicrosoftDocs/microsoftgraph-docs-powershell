@@ -11,7 +11,7 @@ schema: 2.0.0
 Reauthorize a subscription when you receive a **reauthorizationRequired** challenge.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaBetaReauthorizeSubscription](/powershell/module/Microsoft.Graph.Beta.ChangeNotifications/Invoke-MgBetaReauthorizeSubscription?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Invoke-MgBetaReauthorizeSubscription](/powershell/module/Microsoft.Graph.Beta.ChangeNotifications/Invoke-MgBetaReauthorizeSubscription?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -146,4 +146,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[SubscriptionId <String>]`: The unique identifier of subscription
 
 ## RELATED LINKS
-[Invoke-MgBetaBetaReauthorizeSubscription](/powershell/module/Microsoft.Graph.Beta.ChangeNotifications/Invoke-MgBetaReauthorizeSubscription?view=graph-powershell-beta)
+[Invoke-MgBetaReauthorizeSubscription](/powershell/module/Microsoft.Graph.Beta.ChangeNotifications/Invoke-MgBetaReauthorizeSubscription?view=graph-powershell-beta)

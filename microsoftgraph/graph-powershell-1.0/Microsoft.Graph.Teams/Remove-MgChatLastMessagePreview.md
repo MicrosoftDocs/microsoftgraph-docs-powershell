@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property lastMessagePreview for chats
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaBetaChatLastMessagePreview](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaChatLastMessagePreview?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaChatLastMessagePreview](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaChatLastMessagePreview?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -188,4 +188,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgBetaBetaChatLastMessagePreview](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaChatLastMessagePreview?view=graph-powershell-beta)
+[Remove-MgBetaChatLastMessagePreview](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaChatLastMessagePreview?view=graph-powershell-beta)

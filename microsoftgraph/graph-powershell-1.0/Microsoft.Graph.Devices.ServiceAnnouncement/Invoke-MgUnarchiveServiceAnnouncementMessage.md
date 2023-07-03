@@ -11,7 +11,7 @@ schema: 2.0.0
 Unarchive a list of serviceUpdateMessages for the signed in user.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaBetaUnarchiveServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Invoke-MgBetaUnarchiveServiceAnnouncementMessage?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Invoke-MgBetaUnarchiveServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Invoke-MgBetaUnarchiveServiceAnnouncementMessage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -147,4 +147,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[MessageIds <String[]>]`: 
 
 ## RELATED LINKS
-[Invoke-MgBetaBetaUnarchiveServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Invoke-MgBetaUnarchiveServiceAnnouncementMessage?view=graph-powershell-beta)
+[Invoke-MgBetaUnarchiveServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Invoke-MgBetaUnarchiveServiceAnnouncementMessage?view=graph-powershell-beta)

@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to attendanceReports for users
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBetaUserOnlineMeetingAttendanceReport](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaUserOnlineMeetingAttendanceReport?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaUserOnlineMeetingAttendanceReport](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaUserOnlineMeetingAttendanceReport?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -321,4 +321,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgBetaBetaUserOnlineMeetingAttendanceReport](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaUserOnlineMeetingAttendanceReport?view=graph-powershell-beta)
+[New-MgBetaUserOnlineMeetingAttendanceReport](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaUserOnlineMeetingAttendanceReport?view=graph-powershell-beta)

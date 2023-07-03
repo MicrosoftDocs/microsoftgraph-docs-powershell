@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the properties of calendargroup object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBetaUserCalendarGroup](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaUserCalendarGroup?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaUserCalendarGroup](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaUserCalendarGroup?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -752,7 +752,7 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgBetaBetaUserCalendarGroup](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaUserCalendarGroup?view=graph-powershell-beta)
+[Update-MgBetaUserCalendarGroup](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaUserCalendarGroup?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mgusercalendargroup](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mgusercalendargroup)
 

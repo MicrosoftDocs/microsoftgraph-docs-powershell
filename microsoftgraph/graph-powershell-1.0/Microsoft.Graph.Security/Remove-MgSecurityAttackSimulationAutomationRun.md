@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property runs for security
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaBetaSecurityAttackSimulationAutomationRun](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityAttackSimulationAutomationRun?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityAttackSimulationAutomationRun](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityAttackSimulationAutomationRun?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -198,4 +198,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
-[Remove-MgBetaBetaSecurityAttackSimulationAutomationRun](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityAttackSimulationAutomationRun?view=graph-powershell-beta)
+[Remove-MgBetaSecurityAttackSimulationAutomationRun](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityAttackSimulationAutomationRun?view=graph-powershell-beta)

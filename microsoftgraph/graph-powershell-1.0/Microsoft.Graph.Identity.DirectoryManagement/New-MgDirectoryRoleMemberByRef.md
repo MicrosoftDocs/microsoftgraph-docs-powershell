@@ -14,7 +14,7 @@ The template ID of a built-in role is immutable and can be seen in the role desc
 For details, see Role template IDs.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBetaDirectoryRoleMemberByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryRoleMemberByRef?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaDirectoryRoleMemberByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryRoleMemberByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -232,4 +232,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgBetaBetaDirectoryRoleMemberByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryRoleMemberByRef?view=graph-powershell-beta)
+[New-MgBetaDirectoryRoleMemberByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryRoleMemberByRef?view=graph-powershell-beta)

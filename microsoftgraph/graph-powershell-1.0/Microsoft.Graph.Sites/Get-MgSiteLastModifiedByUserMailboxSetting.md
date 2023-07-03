@@ -13,7 +13,7 @@ You can get or update settings for sending automatic replies to incoming message
 Returned only on $select.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaSiteLastModifiedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteLastModifiedByUserMailboxSetting?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteLastModifiedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteLastModifiedByUserMailboxSetting?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -183,4 +183,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaSiteLastModifiedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteLastModifiedByUserMailboxSetting?view=graph-powershell-beta)
+[Get-MgBetaSiteLastModifiedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteLastModifiedByUserMailboxSetting?view=graph-powershell-beta)

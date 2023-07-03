@@ -14,7 +14,7 @@ This resource type is also the base type for the richLongRunningOperation object
 The possible states of the long-running operation are `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue` where `succeeded` and `failed` are terminal states.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaUserAuthenticationOperation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaUserAuthenticationOperation?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaUserAuthenticationOperation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaUserAuthenticationOperation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -327,4 +327,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgBetaBetaUserAuthenticationOperation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaUserAuthenticationOperation?view=graph-powershell-beta)
+[Get-MgBetaUserAuthenticationOperation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaUserAuthenticationOperation?view=graph-powershell-beta)

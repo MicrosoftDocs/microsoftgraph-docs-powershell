@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function delta
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaChatMessageDelta](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatMessageDelta?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaChatMessageDelta](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatMessageDelta?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -283,4 +283,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaBetaChatMessageDelta](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatMessageDelta?view=graph-powershell-beta)
+[Get-MgBetaChatMessageDelta](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatMessageDelta?view=graph-powershell-beta)

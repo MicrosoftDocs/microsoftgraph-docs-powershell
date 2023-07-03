@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the number of the resource
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaBookingBusinessCustomQuestionCount](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusinessCustomQuestionCount?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaBookingBusinessCustomQuestionCount](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusinessCustomQuestionCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -133,4 +133,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
 
 ## RELATED LINKS
-[Get-MgBetaBetaBookingBusinessCustomQuestionCount](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusinessCustomQuestionCount?view=graph-powershell-beta)
+[Get-MgBetaBookingBusinessCustomQuestionCount](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusinessCustomQuestionCount?view=graph-powershell-beta)

@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property history for identityProtection
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaBetaRiskyServicePrincipalHistory](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaRiskyServicePrincipalHistory?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaRiskyServicePrincipalHistory](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaRiskyServicePrincipalHistory?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -227,4 +227,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Remove-MgBetaBetaRiskyServicePrincipalHistory](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaRiskyServicePrincipalHistory?view=graph-powershell-beta)
+[Remove-MgBetaRiskyServicePrincipalHistory](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaRiskyServicePrincipalHistory?view=graph-powershell-beta)

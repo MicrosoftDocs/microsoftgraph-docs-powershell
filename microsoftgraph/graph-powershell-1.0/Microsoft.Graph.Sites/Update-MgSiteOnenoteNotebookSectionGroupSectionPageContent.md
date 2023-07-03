@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke action onenotePatchContent
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBetaSiteOnenoteNotebookSectionGroupSectionPageContent](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteOnenoteNotebookSectionGroupSectionPageContent?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaSiteOnenoteNotebookSectionGroupSectionPageContent](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteOnenoteNotebookSectionGroupSectionPageContent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -320,4 +320,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgBetaBetaSiteOnenoteNotebookSectionGroupSectionPageContent](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteOnenoteNotebookSectionGroupSectionPageContent?view=graph-powershell-beta)
+[Update-MgBetaSiteOnenoteNotebookSectionGroupSectionPageContent](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteOnenoteNotebookSectionGroupSectionPageContent?view=graph-powershell-beta)

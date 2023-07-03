@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property listItem for drives
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaBetaDriveItemListItem](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveItemListItem?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaDriveItemListItem](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveItemListItem?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -200,4 +200,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaBetaDriveItemListItem](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveItemListItem?view=graph-powershell-beta)
+[Remove-MgBetaDriveItemListItem](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveItemListItem?view=graph-powershell-beta)

@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to managedAppRegistrations for deviceAppManagement
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBetaDeviceAppManagementManagedAppRegistration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementManagedAppRegistration?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementManagedAppRegistration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementManagedAppRegistration?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -433,4 +433,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Version <String>]`: Version of the entity.
 
 ## RELATED LINKS
-[New-MgBetaBetaDeviceAppManagementManagedAppRegistration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementManagedAppRegistration?view=graph-powershell-beta)
+[New-MgBetaDeviceAppManagementManagedAppRegistration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementManagedAppRegistration?view=graph-powershell-beta)

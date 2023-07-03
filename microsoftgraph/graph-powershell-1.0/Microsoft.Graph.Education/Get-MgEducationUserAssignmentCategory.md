@@ -12,7 +12,7 @@ List all the categories associated with an assignment.
 Only teachers, students, and applications with application permissions can perform this operation.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaEducationUserAssignmentCategory](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationUserAssignmentCategory?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationUserAssignmentCategory](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationUserAssignmentCategory?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -238,4 +238,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgBetaBetaEducationUserAssignmentCategory](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationUserAssignmentCategory?view=graph-powershell-beta)
+[Get-MgBetaEducationUserAssignmentCategory](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationUserAssignmentCategory?view=graph-powershell-beta)

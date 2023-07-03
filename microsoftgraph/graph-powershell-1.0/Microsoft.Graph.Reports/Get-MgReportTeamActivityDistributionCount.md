@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function getTeamsTeamActivityDistributionCounts
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaReportTeamActivityDistributionCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportTeamActivityDistributionCount?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaReportTeamActivityDistributionCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportTeamActivityDistributionCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -142,4 +142,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: Usage: userId='{userId}'
 
 ## RELATED LINKS
-[Get-MgBetaBetaReportTeamActivityDistributionCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportTeamActivityDistributionCount?view=graph-powershell-beta)
+[Get-MgBetaReportTeamActivityDistributionCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportTeamActivityDistributionCount?view=graph-powershell-beta)

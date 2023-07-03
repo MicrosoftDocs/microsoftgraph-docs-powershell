@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to scopedMembers for directoryRoles
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBetaDirectoryRoleScopedMember](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryRoleScopedMember?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaDirectoryRoleScopedMember](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryRoleScopedMember?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -268,4 +268,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Id <String>]`: Unique identifier for the identity.
 
 ## RELATED LINKS
-[New-MgBetaBetaDirectoryRoleScopedMember](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryRoleScopedMember?view=graph-powershell-beta)
+[New-MgBetaDirectoryRoleScopedMember](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryRoleScopedMember?view=graph-powershell-beta)

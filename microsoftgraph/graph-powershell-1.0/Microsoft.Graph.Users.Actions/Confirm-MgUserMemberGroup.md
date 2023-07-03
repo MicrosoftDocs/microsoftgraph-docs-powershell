@@ -15,7 +15,7 @@ This function supports all groups provisioned in Azure AD.
 Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Confirm-MgBetaBetaUserMemberGroup](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Confirm-MgBetaUserMemberGroup?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Confirm-MgBetaUserMemberGroup](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Confirm-MgBetaUserMemberGroup?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -231,4 +231,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Confirm-MgBetaBetaUserMemberGroup](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Confirm-MgBetaUserMemberGroup?view=graph-powershell-beta)
+[Confirm-MgBetaUserMemberGroup](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Confirm-MgBetaUserMemberGroup?view=graph-powershell-beta)

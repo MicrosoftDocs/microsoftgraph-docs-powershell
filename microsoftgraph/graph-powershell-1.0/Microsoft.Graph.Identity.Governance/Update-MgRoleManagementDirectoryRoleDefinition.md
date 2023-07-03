@@ -13,7 +13,7 @@ You cannot update built-in roles.
 This feature requires an Azure AD Premium P1 or P2 license.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBetaRoleManagementDirectoryRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaRoleManagementDirectoryRoleDefinition?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaRoleManagementDirectoryRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaRoleManagementDirectoryRoleDefinition?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -428,4 +428,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ExcludedResourceActions <String[]>]`: Set of tasks that may not be performed on a resource. Not yet supported.
 
 ## RELATED LINKS
-[Update-MgBetaBetaRoleManagementDirectoryRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaRoleManagementDirectoryRoleDefinition?view=graph-powershell-beta)
+[Update-MgBetaRoleManagementDirectoryRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaRoleManagementDirectoryRoleDefinition?view=graph-powershell-beta)

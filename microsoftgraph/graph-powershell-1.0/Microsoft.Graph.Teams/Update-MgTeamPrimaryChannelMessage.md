@@ -16,7 +16,7 @@ This method does not support federation.
 Only the user in the tenant who sent the message can perform data loss prevention (DLP) updates on the specified chat message.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBetaTeamPrimaryChannelMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamPrimaryChannelMessage?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaTeamPrimaryChannelMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamPrimaryChannelMessage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -897,7 +897,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebUrl <String>]`: Read-only. Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
-[Update-MgBetaBetaTeamPrimaryChannelMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamPrimaryChannelMessage?view=graph-powershell-beta)
+[Update-MgBetaTeamPrimaryChannelMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamPrimaryChannelMessage?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaBetaTeamPrimaryChannelMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamPrimaryChannelMessage?view=graph-powershell-beta)
+[Update-MgBetaTeamPrimaryChannelMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamPrimaryChannelMessage?view=graph-powershell-beta)

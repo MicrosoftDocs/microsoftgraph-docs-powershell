@@ -14,7 +14,7 @@ See known limitations of open extensions for more information.
 The table in the Permissions section lists the resources that support open extensions.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaBetaSnoozeGroupEventReminder](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaSnoozeGroupEventReminder?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Invoke-MgBetaSnoozeGroupEventReminder](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaSnoozeGroupEventReminder?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -408,7 +408,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Value <String>]`: A property value.
 
 ## RELATED LINKS
-[Invoke-MgBetaBetaSnoozeGroupEventReminder](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaSnoozeGroupEventReminder?view=graph-powershell-beta)
+[Invoke-MgBetaSnoozeGroupEventReminder](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaSnoozeGroupEventReminder?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Invoke-MgBetaBetaSnoozeGroupEventReminder](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaSnoozeGroupEventReminder?view=graph-powershell-beta)
+[Invoke-MgBetaSnoozeGroupEventReminder](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaSnoozeGroupEventReminder?view=graph-powershell-beta)

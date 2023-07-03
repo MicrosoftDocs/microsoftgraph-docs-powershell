@@ -12,7 +12,7 @@ Update the properties of an educationOutcome object.
 Only teachers can perform this operation.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBetaEducationClassAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationClassAssignmentSubmissionOutcome?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaEducationClassAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationClassAssignmentSubmissionOutcome?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -334,4 +334,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
-[Update-MgBetaBetaEducationClassAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationClassAssignmentSubmissionOutcome?view=graph-powershell-beta)
+[Update-MgBetaEducationClassAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationClassAssignmentSubmissionOutcome?view=graph-powershell-beta)

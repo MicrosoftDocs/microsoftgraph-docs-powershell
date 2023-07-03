@@ -11,7 +11,7 @@ schema: 2.0.0
 Create a new retentionEventType object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBetaSecurityTriggerTypeRetentionEventType](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityTriggerTypeRetentionEventType?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaSecurityTriggerTypeRetentionEventType](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityTriggerTypeRetentionEventType?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -270,4 +270,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
-[New-MgBetaBetaSecurityTriggerTypeRetentionEventType](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityTriggerTypeRetentionEventType?view=graph-powershell-beta)
+[New-MgBetaSecurityTriggerTypeRetentionEventType](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityTriggerTypeRetentionEventType?view=graph-powershell-beta)

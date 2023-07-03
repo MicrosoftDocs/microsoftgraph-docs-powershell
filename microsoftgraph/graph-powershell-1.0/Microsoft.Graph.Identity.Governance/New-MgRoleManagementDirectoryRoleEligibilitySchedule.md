@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to roleEligibilitySchedules for roleManagement
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBetaRoleManagementDirectoryRoleEligibilitySchedule](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaRoleManagementDirectoryRoleEligibilitySchedule?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaRoleManagementDirectoryRoleEligibilitySchedule](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaRoleManagementDirectoryRoleEligibilitySchedule?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -495,7 +495,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[StartDateTime <DateTime?>]`: When the  eligible or active assignment becomes active.
 
 ## RELATED LINKS
-[New-MgBetaBetaRoleManagementDirectoryRoleEligibilitySchedule](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaRoleManagementDirectoryRoleEligibilitySchedule?view=graph-powershell-beta)
+[New-MgBetaRoleManagementDirectoryRoleEligibilitySchedule](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaRoleManagementDirectoryRoleEligibilitySchedule?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[New-MgBetaBetaRoleManagementDirectoryRoleEligibilitySchedule](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaRoleManagementDirectoryRoleEligibilitySchedule?view=graph-powershell-beta)
+[New-MgBetaRoleManagementDirectoryRoleEligibilitySchedule](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaRoleManagementDirectoryRoleEligibilitySchedule?view=graph-powershell-beta)

@@ -11,7 +11,7 @@ schema: 2.0.0
 Get ref of userFlowIdentityProviders from identity
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaIdentityB2XUserFlowIdentityProviderByRef](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityB2XUserFlowIdentityProviderByRef?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityB2XUserFlowIdentityProviderByRef](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityB2XUserFlowIdentityProviderByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -191,4 +191,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgBetaBetaIdentityB2XUserFlowIdentityProviderByRef](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityB2XUserFlowIdentityProviderByRef?view=graph-powershell-beta)
+[Get-MgBetaIdentityB2XUserFlowIdentityProviderByRef](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityB2XUserFlowIdentityProviderByRef?view=graph-powershell-beta)

@@ -13,7 +13,7 @@ This function is transitive.
 **Note:** Only users and role-enabled groups can be members of directory roles.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaDirectoryObjectMemberObject](/powershell/module/Microsoft.Graph.Beta.DirectoryObjects/Get-MgBetaDirectoryObjectMemberObject?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryObjectMemberObject](/powershell/module/Microsoft.Graph.Beta.DirectoryObjects/Get-MgBetaDirectoryObjectMemberObject?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -196,4 +196,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
 
 ## RELATED LINKS
-[Get-MgBetaBetaDirectoryObjectMemberObject](/powershell/module/Microsoft.Graph.Beta.DirectoryObjects/Get-MgBetaDirectoryObjectMemberObject?view=graph-powershell-beta)
+[Get-MgBetaDirectoryObjectMemberObject](/powershell/module/Microsoft.Graph.Beta.DirectoryObjects/Get-MgBetaDirectoryObjectMemberObject?view=graph-powershell-beta)

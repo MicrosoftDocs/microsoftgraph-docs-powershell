@@ -15,7 +15,7 @@ Read-only.
 Nullable.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaGroupEventInstance](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaGroupEventInstance?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupEventInstance](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaGroupEventInstance?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -304,4 +304,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaGroupEventInstance](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaGroupEventInstance?view=graph-powershell-beta)
+[Get-MgBetaGroupEventInstance](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaGroupEventInstance?view=graph-powershell-beta)

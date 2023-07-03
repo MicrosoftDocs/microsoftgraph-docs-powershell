@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property extensions for devices
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaBetaDeviceExtension](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDeviceExtension?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceExtension](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDeviceExtension?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -197,4 +197,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaBetaDeviceExtension](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDeviceExtension?view=graph-powershell-beta)
+[Remove-MgBetaDeviceExtension](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDeviceExtension?view=graph-powershell-beta)

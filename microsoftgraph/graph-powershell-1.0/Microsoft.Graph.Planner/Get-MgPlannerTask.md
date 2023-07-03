@@ -11,7 +11,7 @@ schema: 2.0.0
 Retrieve the properties and relationships of plannerTask object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaPlannerTask](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerTask?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaPlannerTask](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerTask?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -256,4 +256,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaPlannerTask](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerTask?view=graph-powershell-beta)
+[Get-MgBetaPlannerTask](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerTask?view=graph-powershell-beta)

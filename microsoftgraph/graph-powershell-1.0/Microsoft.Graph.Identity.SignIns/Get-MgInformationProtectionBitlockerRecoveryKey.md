@@ -15,7 +15,7 @@ Including the `$select` query parameter triggers an Azure AD audit of the operat
 For more information on audit logs for bitlocker recovery keys, see the KeyManagement category filter of Azure AD audit logs.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaInformationProtectionBitlockerRecoveryKey](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaInformationProtectionBitlockerRecoveryKey?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaInformationProtectionBitlockerRecoveryKey](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaInformationProtectionBitlockerRecoveryKey?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -321,4 +321,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgBetaBetaInformationProtectionBitlockerRecoveryKey](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaInformationProtectionBitlockerRecoveryKey?view=graph-powershell-beta)
+[Get-MgBetaInformationProtectionBitlockerRecoveryKey](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaInformationProtectionBitlockerRecoveryKey?view=graph-powershell-beta)

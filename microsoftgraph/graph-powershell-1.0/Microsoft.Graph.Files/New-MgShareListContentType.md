@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to contentTypes for shares
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBetaShareListContentType](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaShareListContentType?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaShareListContentType](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaShareListContentType?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -1539,7 +1539,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Position <Int32?>]`: Specifies the position in which the Content Type appears in the selection UI.
 
 ## RELATED LINKS
-[New-MgBetaBetaShareListContentType](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaShareListContentType?view=graph-powershell-beta)
+[New-MgBetaShareListContentType](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaShareListContentType?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[New-MgBetaBetaShareListContentType](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaShareListContentType?view=graph-powershell-beta)
+[New-MgBetaShareListContentType](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaShareListContentType?view=graph-powershell-beta)

@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property operations in sites
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBetaSiteListOperation](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteListOperation?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaSiteListOperation](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteListOperation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -448,4 +448,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgBetaBetaSiteListOperation](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteListOperation?view=graph-powershell-beta)
+[Update-MgBetaSiteListOperation](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteListOperation?view=graph-powershell-beta)

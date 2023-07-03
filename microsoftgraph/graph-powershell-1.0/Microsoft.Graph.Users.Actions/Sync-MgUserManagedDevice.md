@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke action syncDevice
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Sync-MgBetaBetaUserManagedDevice](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Sync-MgBetaUserManagedDevice?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Sync-MgBetaUserManagedDevice](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Sync-MgBetaUserManagedDevice?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -189,4 +189,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Sync-MgBetaBetaUserManagedDevice](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Sync-MgBetaUserManagedDevice?view=graph-powershell-beta)
+[Sync-MgBetaUserManagedDevice](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Sync-MgBetaUserManagedDevice?view=graph-powershell-beta)

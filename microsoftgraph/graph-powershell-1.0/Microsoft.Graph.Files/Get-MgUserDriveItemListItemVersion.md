@@ -11,7 +11,7 @@ schema: 2.0.0
 Retrieve the metadata for a specific version of a ListItem.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaUserDriveItemListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItemListItemVersion?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveItemListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItemListItemVersion?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -327,4 +327,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaUserDriveItemListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItemListItemVersion?view=graph-powershell-beta)
+[Get-MgBetaUserDriveItemListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItemListItemVersion?view=graph-powershell-beta)

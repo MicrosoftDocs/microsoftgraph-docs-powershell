@@ -13,7 +13,7 @@ A **delta** function call for messages in a folder is similar to a GET request, 
 This allows you to maintain and synchronize a local store of a user's messages without \nhaving to fetch the entire set of messages from the server every time.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaUserMailFolderChildFolderMessageDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserMailFolderChildFolderMessageDelta?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaUserMailFolderChildFolderMessageDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserMailFolderChildFolderMessageDelta?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -313,4 +313,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaUserMailFolderChildFolderMessageDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserMailFolderChildFolderMessageDelta?view=graph-powershell-beta)
+[Get-MgBetaUserMailFolderChildFolderMessageDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserMailFolderChildFolderMessageDelta?view=graph-powershell-beta)

@@ -11,7 +11,7 @@ schema: 2.0.0
 Update media content for the navigation property messages in users
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaBetaUserMailFolderChildFolderMessageContent](/powershell/module/Microsoft.Graph.Beta.Mail/Set-MgBetaUserMailFolderChildFolderMessageContent?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Set-MgBetaUserMailFolderChildFolderMessageContent](/powershell/module/Microsoft.Graph.Beta.Mail/Set-MgBetaUserMailFolderChildFolderMessageContent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -233,4 +233,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Set-MgBetaBetaUserMailFolderChildFolderMessageContent](/powershell/module/Microsoft.Graph.Beta.Mail/Set-MgBetaUserMailFolderChildFolderMessageContent?view=graph-powershell-beta)
+[Set-MgBetaUserMailFolderChildFolderMessageContent](/powershell/module/Microsoft.Graph.Beta.Mail/Set-MgBetaUserMailFolderChildFolderMessageContent?view=graph-powershell-beta)

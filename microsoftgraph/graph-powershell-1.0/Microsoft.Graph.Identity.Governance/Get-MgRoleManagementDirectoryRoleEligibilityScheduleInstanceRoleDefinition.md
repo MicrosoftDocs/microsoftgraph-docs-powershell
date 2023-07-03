@@ -11,7 +11,7 @@ schema: 2.0.0
 Detailed information for the roleDefinition object that is referenced through the roleDefinitionId property.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaRoleManagementDirectoryRoleEligibilityScheduleInstanceRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleInstanceRoleDefinition?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleInstanceRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleInstanceRoleDefinition?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -167,4 +167,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaRoleManagementDirectoryRoleEligibilityScheduleInstanceRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleInstanceRoleDefinition?view=graph-powershell-beta)
+[Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleInstanceRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleInstanceRoleDefinition?view=graph-powershell-beta)

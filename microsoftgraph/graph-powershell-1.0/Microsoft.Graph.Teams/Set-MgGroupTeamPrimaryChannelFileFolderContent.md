@@ -11,7 +11,7 @@ schema: 2.0.0
 The content stream, if the item represents a file.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaBetaGroupTeamPrimaryChannelFileFolderContent](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaGroupTeamPrimaryChannelFileFolderContent?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Set-MgBetaGroupTeamPrimaryChannelFileFolderContent](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaGroupTeamPrimaryChannelFileFolderContent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -188,4 +188,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Set-MgBetaBetaGroupTeamPrimaryChannelFileFolderContent](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaGroupTeamPrimaryChannelFileFolderContent?view=graph-powershell-beta)
+[Set-MgBetaGroupTeamPrimaryChannelFileFolderContent](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaGroupTeamPrimaryChannelFileFolderContent?view=graph-powershell-beta)

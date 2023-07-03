@@ -11,7 +11,7 @@ schema: 2.0.0
 Put a participant on hold and play music in the background.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Start-MgBetaBetaCommunicationCallParticipantHoldMusic](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Start-MgBetaCommunicationCallParticipantHoldMusic?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Start-MgBetaCommunicationCallParticipantHoldMusic](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Start-MgBetaCommunicationCallParticipantHoldMusic?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -244,4 +244,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Start-MgBetaBetaCommunicationCallParticipantHoldMusic](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Start-MgBetaCommunicationCallParticipantHoldMusic?view=graph-powershell-beta)
+[Start-MgBetaCommunicationCallParticipantHoldMusic](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Start-MgBetaCommunicationCallParticipantHoldMusic?view=graph-powershell-beta)

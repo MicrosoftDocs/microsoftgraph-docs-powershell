@@ -13,7 +13,7 @@ In this case, `organization` is defined as a collection of exactly one record, a
 The **ID** is also known as the **tenantId** of the organization.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBetaOrganization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaOrganization?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaOrganization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaOrganization?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -839,7 +839,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String>]`: For example, Managed.
 
 ## RELATED LINKS
-[Update-MgBetaBetaOrganization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaOrganization?view=graph-powershell-beta)
+[Update-MgBetaOrganization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaOrganization?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaBetaOrganization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaOrganization?view=graph-powershell-beta)
+[Update-MgBetaOrganization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaOrganization?view=graph-powershell-beta)

@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property onPremisesSynchronization for directory
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaBetaDirectoryOnPremiseSynchronization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDirectoryOnPremiseSynchronization?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaDirectoryOnPremiseSynchronization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDirectoryOnPremiseSynchronization?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -178,4 +178,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaBetaDirectoryOnPremiseSynchronization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDirectoryOnPremiseSynchronization?view=graph-powershell-beta)
+[Remove-MgBetaDirectoryOnPremiseSynchronization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDirectoryOnPremiseSynchronization?view=graph-powershell-beta)

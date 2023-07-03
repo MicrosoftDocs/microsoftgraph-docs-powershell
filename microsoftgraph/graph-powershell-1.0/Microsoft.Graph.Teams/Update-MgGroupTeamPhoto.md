@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property photo in groups
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBetaGroupTeamPhoto](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaGroupTeamPhoto?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupTeamPhoto](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaGroupTeamPhoto?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -260,4 +260,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Update-MgBetaBetaGroupTeamPhoto](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaGroupTeamPhoto?view=graph-powershell-beta)
+[Update-MgBetaGroupTeamPhoto](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaGroupTeamPhoto?view=graph-powershell-beta)

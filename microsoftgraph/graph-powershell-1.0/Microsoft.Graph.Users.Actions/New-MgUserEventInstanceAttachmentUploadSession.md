@@ -12,7 +12,7 @@ Create an upload session to allow your app to upload files up to the maximum fil
 To upload a file using an upload session, there are two steps:
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBetaUserEventInstanceAttachmentUploadSession](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgBetaUserEventInstanceAttachmentUploadSession?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaUserEventInstanceAttachmentUploadSession](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgBetaUserEventInstanceAttachmentUploadSession?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -262,4 +262,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Name <String>]`: The name of the item (filename and extension). Read-write.
 
 ## RELATED LINKS
-[New-MgBetaBetaUserEventInstanceAttachmentUploadSession](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgBetaUserEventInstanceAttachmentUploadSession?view=graph-powershell-beta)
+[New-MgBetaUserEventInstanceAttachmentUploadSession](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgBetaUserEventInstanceAttachmentUploadSession?view=graph-powershell-beta)

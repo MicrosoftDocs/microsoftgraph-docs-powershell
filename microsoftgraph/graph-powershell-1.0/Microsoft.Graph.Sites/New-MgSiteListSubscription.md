@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to subscriptions for sites
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBetaSiteListSubscription](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteListSubscription?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaSiteListSubscription](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteListSubscription?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -525,4 +525,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgBetaBetaSiteListSubscription](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteListSubscription?view=graph-powershell-beta)
+[New-MgBetaSiteListSubscription](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteListSubscription?view=graph-powershell-beta)

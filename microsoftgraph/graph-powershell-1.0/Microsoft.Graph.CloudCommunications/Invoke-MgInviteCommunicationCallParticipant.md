@@ -15,7 +15,7 @@ When an active caller is removed, they are immediately dropped from the call wit
 When an invited participant is removed, any outstanding add participant request is canceled.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaBetaInviteCommunicationCallParticipant](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaInviteCommunicationCallParticipant?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Invoke-MgBetaInviteCommunicationCallParticipant](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaInviteCommunicationCallParticipant?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -419,4 +419,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ReplacesCallId <String>]`: Optional. The call which the target identity is currently a part of. For peer-to-peer case, the call will be dropped once the participant is added successfully.
 
 ## RELATED LINKS
-[Invoke-MgBetaBetaInviteCommunicationCallParticipant](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaInviteCommunicationCallParticipant?view=graph-powershell-beta)
+[Invoke-MgBetaInviteCommunicationCallParticipant](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaInviteCommunicationCallParticipant?view=graph-powershell-beta)

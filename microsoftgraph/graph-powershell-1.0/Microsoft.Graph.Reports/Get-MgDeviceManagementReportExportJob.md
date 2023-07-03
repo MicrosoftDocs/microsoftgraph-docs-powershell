@@ -11,7 +11,7 @@ schema: 2.0.0
 Entity representing a job to export a report
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaDeviceManagementReportExportJob](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaDeviceManagementReportExportJob?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementReportExportJob](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaDeviceManagementReportExportJob?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -275,4 +275,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: Usage: userId='{userId}'
 
 ## RELATED LINKS
-[Get-MgBetaBetaDeviceManagementReportExportJob](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaDeviceManagementReportExportJob?view=graph-powershell-beta)
+[Get-MgBetaDeviceManagementReportExportJob](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaDeviceManagementReportExportJob?view=graph-powershell-beta)

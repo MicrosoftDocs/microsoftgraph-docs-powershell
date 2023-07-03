@@ -11,7 +11,7 @@ schema: 2.0.0
 Request remote assistance
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Request-MgBetaBetaDeviceManagementManagedDeviceRemoteAssistance](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Request-MgBetaDeviceManagementManagedDeviceRemoteAssistance?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Request-MgBetaDeviceManagementManagedDeviceRemoteAssistance](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Request-MgBetaDeviceManagementManagedDeviceRemoteAssistance?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -155,4 +155,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
-[Request-MgBetaBetaDeviceManagementManagedDeviceRemoteAssistance](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Request-MgBetaDeviceManagementManagedDeviceRemoteAssistance?view=graph-powershell-beta)
+[Request-MgBetaDeviceManagementManagedDeviceRemoteAssistance](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Request-MgBetaDeviceManagementManagedDeviceRemoteAssistance?view=graph-powershell-beta)

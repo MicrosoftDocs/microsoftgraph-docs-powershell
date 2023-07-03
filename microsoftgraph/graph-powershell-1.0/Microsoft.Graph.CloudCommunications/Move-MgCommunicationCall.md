@@ -13,7 +13,7 @@ A consultative transfer means that the transferor can inform the person they wan
 This is opposed to transfering the call directly.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Move-MgBetaBetaCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Move-MgBetaCommunicationCall?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Move-MgBetaCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Move-MgBetaCommunicationCall?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -391,4 +391,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ReplacesCallId <String>]`: Optional. The call which the target identity is currently a part of. For peer-to-peer case, the call will be dropped once the participant is added successfully.
 
 ## RELATED LINKS
-[Move-MgBetaBetaCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Move-MgBetaCommunicationCall?view=graph-powershell-beta)
+[Move-MgBetaCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Move-MgBetaCommunicationCall?view=graph-powershell-beta)

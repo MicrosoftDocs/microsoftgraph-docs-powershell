@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the properties of an authenticationMethodsPolicy object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBetaPolicyAuthenticationMethodPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyAuthenticationMethodPolicy?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaPolicyAuthenticationMethodPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyAuthenticationMethodPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -334,4 +334,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[State <String>]`: advancedConfigState
 
 ## RELATED LINKS
-[Update-MgBetaBetaPolicyAuthenticationMethodPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyAuthenticationMethodPolicy?view=graph-powershell-beta)
+[Update-MgBetaPolicyAuthenticationMethodPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyAuthenticationMethodPolicy?view=graph-powershell-beta)

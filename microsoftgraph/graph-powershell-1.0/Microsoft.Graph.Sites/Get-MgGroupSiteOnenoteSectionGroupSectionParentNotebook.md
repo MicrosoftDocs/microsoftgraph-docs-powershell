@@ -12,7 +12,7 @@ The notebook that contains the section.
 Read-only.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaGroupSiteOnenoteSectionGroupSectionParentNotebook](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOnenoteSectionGroupSectionParentNotebook?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteOnenoteSectionGroupSectionParentNotebook](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOnenoteSectionGroupSectionParentNotebook?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -212,4 +212,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaGroupSiteOnenoteSectionGroupSectionParentNotebook](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOnenoteSectionGroupSectionParentNotebook?view=graph-powershell-beta)
+[Get-MgBetaGroupSiteOnenoteSectionGroupSectionParentNotebook](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOnenoteSectionGroupSectionParentNotebook?view=graph-powershell-beta)

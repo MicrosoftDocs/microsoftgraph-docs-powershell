@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property attachmentSessions in users
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBetaUserTodoListTaskAttachmentSession](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserTodoListTaskAttachmentSession?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaUserTodoListTaskAttachmentSession](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserTodoListTaskAttachmentSession?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -306,4 +306,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgBetaBetaUserTodoListTaskAttachmentSession](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserTodoListTaskAttachmentSession?view=graph-powershell-beta)
+[Update-MgBetaUserTodoListTaskAttachmentSession](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserTodoListTaskAttachmentSession?view=graph-powershell-beta)

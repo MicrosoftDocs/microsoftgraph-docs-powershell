@@ -13,7 +13,7 @@ This is a special case of the Update method.nYour app can combine moving an item
 Items cannot be moved between Drives using this request.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBetaDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveItem?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveItem?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -17150,7 +17150,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Worksheets <IMicrosoftGraphWorkbookWorksheet[]>]`: Represents a collection of worksheets associated with the workbook. Read-only.
 
 ## RELATED LINKS
-[Update-MgBetaBetaDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveItem?view=graph-powershell-beta)
+[Update-MgBetaDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveItem?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaBetaDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveItem?view=graph-powershell-beta)
+[Update-MgBetaDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveItem?view=graph-powershell-beta)

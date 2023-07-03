@@ -11,7 +11,7 @@ schema: 2.0.0
 Follow a driveItem.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaBetaFollowGroupDriveItem](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaFollowGroupDriveItem?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Invoke-MgBetaFollowGroupDriveItem](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaFollowGroupDriveItem?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -195,4 +195,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-[Invoke-MgBetaBetaFollowGroupDriveItem](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaFollowGroupDriveItem?view=graph-powershell-beta)
+[Invoke-MgBetaFollowGroupDriveItem](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaFollowGroupDriveItem?view=graph-powershell-beta)

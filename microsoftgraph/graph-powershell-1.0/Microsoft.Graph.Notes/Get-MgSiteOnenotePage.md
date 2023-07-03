@@ -13,7 +13,7 @@ Read-only.
 Nullable.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaSiteOnenotePage](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaSiteOnenotePage?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteOnenotePage](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaSiteOnenotePage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -286,4 +286,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaSiteOnenotePage](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaSiteOnenotePage?view=graph-powershell-beta)
+[Get-MgBetaSiteOnenotePage](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaSiteOnenotePage?view=graph-powershell-beta)

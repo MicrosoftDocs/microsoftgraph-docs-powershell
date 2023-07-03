@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property roleManagementPolicies for policies
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaBetaPolicyRoleManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyRoleManagementPolicy?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaPolicyRoleManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyRoleManagementPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -216,4 +216,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Remove-MgBetaBetaPolicyRoleManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyRoleManagementPolicy?view=graph-powershell-beta)
+[Remove-MgBetaPolicyRoleManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyRoleManagementPolicy?view=graph-powershell-beta)

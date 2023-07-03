@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function getSharePointSiteUsageStorage
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaReportSharePointSiteUsageStorage](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSharePointSiteUsageStorage?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaReportSharePointSiteUsageStorage](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSharePointSiteUsageStorage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -146,4 +146,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: Usage: userId='{userId}'
 
 ## RELATED LINKS
-[Get-MgBetaBetaReportSharePointSiteUsageStorage](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSharePointSiteUsageStorage?view=graph-powershell-beta)
+[Get-MgBetaReportSharePointSiteUsageStorage](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSharePointSiteUsageStorage?view=graph-powershell-beta)

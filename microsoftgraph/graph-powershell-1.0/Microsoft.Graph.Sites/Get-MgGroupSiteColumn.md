@@ -11,7 +11,7 @@ schema: 2.0.0
 The collection of column definitions reusable across lists under this site.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaGroupSiteColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteColumn?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteColumn?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -326,4 +326,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaGroupSiteColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteColumn?view=graph-powershell-beta)
+[Get-MgBetaGroupSiteColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteColumn?view=graph-powershell-beta)

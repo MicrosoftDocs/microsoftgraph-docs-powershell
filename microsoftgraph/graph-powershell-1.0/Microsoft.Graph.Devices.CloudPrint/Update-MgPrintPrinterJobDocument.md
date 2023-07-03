@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property documents in print
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBetaPrintPrinterJobDocument](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgBetaPrintPrinterJobDocument?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaPrintPrinterJobDocument](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgBetaPrintPrinterJobDocument?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -287,4 +287,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgBetaBetaPrintPrinterJobDocument](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgBetaPrintPrinterJobDocument?view=graph-powershell-beta)
+[Update-MgBetaPrintPrinterJobDocument](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgBetaPrintPrinterJobDocument?view=graph-powershell-beta)

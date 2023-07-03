@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the number of the resource
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaUserOnlineMeetingAttendanceReportCount](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaUserOnlineMeetingAttendanceReportCount?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaUserOnlineMeetingAttendanceReportCount](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaUserOnlineMeetingAttendanceReportCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -153,4 +153,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaUserOnlineMeetingAttendanceReportCount](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaUserOnlineMeetingAttendanceReportCount?view=graph-powershell-beta)
+[Get-MgBetaUserOnlineMeetingAttendanceReportCount](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaUserOnlineMeetingAttendanceReportCount?view=graph-powershell-beta)

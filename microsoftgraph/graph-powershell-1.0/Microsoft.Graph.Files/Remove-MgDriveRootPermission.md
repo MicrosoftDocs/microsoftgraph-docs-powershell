@@ -12,7 +12,7 @@ Remove access to a DriveItem.
 Only sharing permissions that are **not** inherited can be deleted.\nThe **inheritedFrom** property must be `null`.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaBetaDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveRootPermission?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveRootPermission?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -202,4 +202,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaBetaDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveRootPermission?view=graph-powershell-beta)
+[Remove-MgBetaDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveRootPermission?view=graph-powershell-beta)

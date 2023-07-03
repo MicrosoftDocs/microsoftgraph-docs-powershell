@@ -11,7 +11,7 @@ schema: 2.0.0
 The set of subscriptions on the list.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaGroupSiteListSubscription](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListSubscription?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteListSubscription](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListSubscription?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -341,4 +341,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaGroupSiteListSubscription](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListSubscription?view=graph-powershell-beta)
+[Get-MgBetaGroupSiteListSubscription](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListSubscription?view=graph-powershell-beta)

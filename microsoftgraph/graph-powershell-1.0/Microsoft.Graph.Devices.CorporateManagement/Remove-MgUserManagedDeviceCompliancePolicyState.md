@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property deviceCompliancePolicyStates for users
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaBetaUserManagedDeviceCompliancePolicyState](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaUserManagedDeviceCompliancePolicyState?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserManagedDeviceCompliancePolicyState](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaUserManagedDeviceCompliancePolicyState?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -222,4 +222,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
 
 ## RELATED LINKS
-[Remove-MgBetaBetaUserManagedDeviceCompliancePolicyState](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaUserManagedDeviceCompliancePolicyState?view=graph-powershell-beta)
+[Remove-MgBetaUserManagedDeviceCompliancePolicyState](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaUserManagedDeviceCompliancePolicyState?view=graph-powershell-beta)

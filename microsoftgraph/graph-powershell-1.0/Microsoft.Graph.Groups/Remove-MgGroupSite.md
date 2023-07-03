@@ -11,7 +11,7 @@ schema: 2.0.0
 Unfollow a user's site or multiple sites.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaBetaGroupSite](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupSite?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupSite](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupSite?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -5422,7 +5422,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[TermStores <IMicrosoftGraphTermStore[]>]`: The collection of termStores under this site.
 
 ## RELATED LINKS
-[Remove-MgBetaBetaGroupSite](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupSite?view=graph-powershell-beta)
+[Remove-MgBetaGroupSite](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupSite?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Remove-MgBetaBetaGroupSite](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupSite?view=graph-powershell-beta)
+[Remove-MgBetaGroupSite](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupSite?view=graph-powershell-beta)

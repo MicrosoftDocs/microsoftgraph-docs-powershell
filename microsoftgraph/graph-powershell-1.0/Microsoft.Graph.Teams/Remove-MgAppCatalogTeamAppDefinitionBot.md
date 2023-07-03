@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property bot for appCatalogs
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaBetaAppCatalogTeamAppDefinitionBot](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaAppCatalogTeamAppDefinitionBot?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaAppCatalogTeamAppDefinitionBot](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaAppCatalogTeamAppDefinitionBot?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -200,4 +200,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgBetaBetaAppCatalogTeamAppDefinitionBot](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaAppCatalogTeamAppDefinitionBot?view=graph-powershell-beta)
+[Remove-MgBetaAppCatalogTeamAppDefinitionBot](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaAppCatalogTeamAppDefinitionBot?view=graph-powershell-beta)

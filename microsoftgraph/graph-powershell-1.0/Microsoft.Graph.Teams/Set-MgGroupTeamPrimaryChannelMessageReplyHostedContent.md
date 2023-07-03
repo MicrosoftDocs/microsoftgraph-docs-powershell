@@ -11,7 +11,7 @@ schema: 2.0.0
 Update media content for the navigation property hostedContents in groups
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaBetaGroupTeamPrimaryChannelMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaGroupTeamPrimaryChannelMessageReplyHostedContent?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Set-MgBetaGroupTeamPrimaryChannelMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaGroupTeamPrimaryChannelMessageReplyHostedContent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -252,4 +252,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Set-MgBetaBetaGroupTeamPrimaryChannelMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaGroupTeamPrimaryChannelMessageReplyHostedContent?view=graph-powershell-beta)
+[Set-MgBetaGroupTeamPrimaryChannelMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaGroupTeamPrimaryChannelMessageReplyHostedContent?view=graph-powershell-beta)

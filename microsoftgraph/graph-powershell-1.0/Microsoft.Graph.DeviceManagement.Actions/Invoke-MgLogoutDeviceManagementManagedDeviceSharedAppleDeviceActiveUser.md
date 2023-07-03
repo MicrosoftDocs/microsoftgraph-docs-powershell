@@ -11,7 +11,7 @@ schema: 2.0.0
 Logout shared Apple device active user
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaBetaLogoutDeviceManagementManagedDeviceSharedAppleDeviceActiveUser](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Invoke-MgBetaLogoutDeviceManagementManagedDeviceSharedAppleDeviceActiveUser?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Invoke-MgBetaLogoutDeviceManagementManagedDeviceSharedAppleDeviceActiveUser](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Invoke-MgBetaLogoutDeviceManagementManagedDeviceSharedAppleDeviceActiveUser?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -155,4 +155,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
-[Invoke-MgBetaBetaLogoutDeviceManagementManagedDeviceSharedAppleDeviceActiveUser](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Invoke-MgBetaLogoutDeviceManagementManagedDeviceSharedAppleDeviceActiveUser?view=graph-powershell-beta)
+[Invoke-MgBetaLogoutDeviceManagementManagedDeviceSharedAppleDeviceActiveUser](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Invoke-MgBetaLogoutDeviceManagementManagedDeviceSharedAppleDeviceActiveUser?view=graph-powershell-beta)

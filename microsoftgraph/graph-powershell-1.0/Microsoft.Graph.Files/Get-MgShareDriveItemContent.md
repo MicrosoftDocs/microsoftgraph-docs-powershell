@@ -11,7 +11,7 @@ schema: 2.0.0
 The content stream, if the item represents a file.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaShareDriveItemContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareDriveItemContent?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaShareDriveItemContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareDriveItemContent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -152,4 +152,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaShareDriveItemContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareDriveItemContent?view=graph-powershell-beta)
+[Get-MgBetaShareDriveItemContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareDriveItemContent?view=graph-powershell-beta)

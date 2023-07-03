@@ -12,7 +12,7 @@ Update a task definition.
 For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBetaPrintTaskDefinition](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgBetaPrintTaskDefinition?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaPrintTaskDefinition](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgBetaPrintTaskDefinition?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -312,4 +312,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[Event <String>]`: printEvent
 
 ## RELATED LINKS
-[Update-MgBetaBetaPrintTaskDefinition](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgBetaPrintTaskDefinition?view=graph-powershell-beta)
+[Update-MgBetaPrintTaskDefinition](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgBetaPrintTaskDefinition?view=graph-powershell-beta)

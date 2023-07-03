@@ -13,7 +13,7 @@ Allowed types are PNG or JPEG no larger than 240 x 240 pixels and no more than 1
 We recommend using a transparent image with no padding around the logo.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaBetaOrganizationBrandingLocalizationSquareLogo](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Set-MgBetaOrganizationBrandingLocalizationSquareLogo?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Set-MgBetaOrganizationBrandingLocalizationSquareLogo](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Set-MgBetaOrganizationBrandingLocalizationSquareLogo?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -213,4 +213,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Set-MgBetaBetaOrganizationBrandingLocalizationSquareLogo](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Set-MgBetaOrganizationBrandingLocalizationSquareLogo?view=graph-powershell-beta)
+[Set-MgBetaOrganizationBrandingLocalizationSquareLogo](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Set-MgBetaOrganizationBrandingLocalizationSquareLogo?view=graph-powershell-beta)

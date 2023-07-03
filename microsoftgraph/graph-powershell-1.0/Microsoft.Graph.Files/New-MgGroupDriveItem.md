@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to items for groups
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBetaGroupDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveItem?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaGroupDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveItem?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -17146,7 +17146,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Worksheets <IMicrosoftGraphWorkbookWorksheet[]>]`: Represents a collection of worksheets associated with the workbook. Read-only.
 
 ## RELATED LINKS
-[New-MgBetaBetaGroupDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveItem?view=graph-powershell-beta)
+[New-MgBetaGroupDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveItem?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[New-MgBetaBetaGroupDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveItem?view=graph-powershell-beta)
+[New-MgBetaGroupDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveItem?view=graph-powershell-beta)

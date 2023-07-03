@@ -13,7 +13,7 @@ A **delta** function call for contacts in a folder is similar to a GET request, 
 This allows you to maintain and synchronize a local store of a user's contacts without \nhaving to fetch the entire set of contacts from the server every time.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaUserContactFolderContactDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserContactFolderContactDelta?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaUserContactFolderContactDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserContactFolderContactDelta?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -298,4 +298,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaUserContactFolderContactDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserContactFolderContactDelta?view=graph-powershell-beta)
+[Get-MgBetaUserContactFolderContactDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserContactFolderContactDelta?view=graph-powershell-beta)

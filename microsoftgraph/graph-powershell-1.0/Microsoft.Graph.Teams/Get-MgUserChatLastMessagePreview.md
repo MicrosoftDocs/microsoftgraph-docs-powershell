@@ -13,7 +13,7 @@ Null if no messages have been sent in the chat.
 Currently, only the list chats operation supports this property.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaUserChatLastMessagePreview](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserChatLastMessagePreview?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaUserChatLastMessagePreview](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserChatLastMessagePreview?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -176,4 +176,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaBetaUserChatLastMessagePreview](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserChatLastMessagePreview?view=graph-powershell-beta)
+[Get-MgBetaUserChatLastMessagePreview](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserChatLastMessagePreview?view=graph-powershell-beta)

@@ -12,7 +12,7 @@ Entry-point to the Planner resource that might exist for a user.
 Read-only.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaUserPlanner](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaUserPlanner?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaUserPlanner](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaUserPlanner?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -136,4 +136,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaUserPlanner](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaUserPlanner?view=graph-powershell-beta)
+[Get-MgBetaUserPlanner](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaUserPlanner?view=graph-powershell-beta)

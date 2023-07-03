@@ -12,7 +12,7 @@ Get the meetingAttendanceReport for an onlineMeeting.
 Each time an online meeting ends, an attendance report will be generated for that session.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaCommunicationOnlineMeetingAttendanceReport](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationOnlineMeetingAttendanceReport?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaCommunicationOnlineMeetingAttendanceReport](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationOnlineMeetingAttendanceReport?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -287,4 +287,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaCommunicationOnlineMeetingAttendanceReport](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationOnlineMeetingAttendanceReport?view=graph-powershell-beta)
+[Get-MgBetaCommunicationOnlineMeetingAttendanceReport](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationOnlineMeetingAttendanceReport?view=graph-powershell-beta)

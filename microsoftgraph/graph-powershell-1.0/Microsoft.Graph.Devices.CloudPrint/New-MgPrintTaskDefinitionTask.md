@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to tasks for print
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBetaPrintTaskDefinitionTask](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintTaskDefinitionTask?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaPrintTaskDefinitionTask](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintTaskDefinitionTask?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -344,4 +344,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Event <String>]`: printEvent
 
 ## RELATED LINKS
-[New-MgBetaBetaPrintTaskDefinitionTask](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintTaskDefinitionTask?view=graph-powershell-beta)
+[New-MgBetaPrintTaskDefinitionTask](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintTaskDefinitionTask?view=graph-powershell-beta)

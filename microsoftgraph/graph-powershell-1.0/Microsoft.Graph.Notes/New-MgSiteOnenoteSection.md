@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to pages for sites
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBetaSiteOnenoteSection](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaSiteOnenoteSection?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaSiteOnenoteSection](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaSiteOnenoteSection?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -652,7 +652,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ParentSectionGroup <IMicrosoftGraphSectionGroup>]`: sectionGroup
 
 ## RELATED LINKS
-[New-MgBetaBetaSiteOnenoteSection](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaSiteOnenoteSection?view=graph-powershell-beta)
+[New-MgBetaSiteOnenoteSection](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaSiteOnenoteSection?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[New-MgBetaBetaSiteOnenoteSection](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaSiteOnenoteSection?view=graph-powershell-beta)
+[New-MgBetaSiteOnenoteSection](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaSiteOnenoteSection?view=graph-powershell-beta)

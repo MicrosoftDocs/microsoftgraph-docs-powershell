@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property attachments for admin
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaBetaServiceAnnouncementMessageAttachment](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Remove-MgBetaServiceAnnouncementMessageAttachment?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaServiceAnnouncementMessageAttachment](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Remove-MgBetaServiceAnnouncementMessageAttachment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -180,4 +180,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ServiceUpdateMessageId <String>]`: The unique identifier of serviceUpdateMessage
 
 ## RELATED LINKS
-[Remove-MgBetaBetaServiceAnnouncementMessageAttachment](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Remove-MgBetaServiceAnnouncementMessageAttachment?view=graph-powershell-beta)
+[Remove-MgBetaServiceAnnouncementMessageAttachment](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Remove-MgBetaServiceAnnouncementMessageAttachment?view=graph-powershell-beta)

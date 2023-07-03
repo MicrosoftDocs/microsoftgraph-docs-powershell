@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function getOneDriveUsageStorage
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaReportOneDriveUsageStorage](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOneDriveUsageStorage?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaReportOneDriveUsageStorage](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOneDriveUsageStorage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -146,4 +146,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: Usage: userId='{userId}'
 
 ## RELATED LINKS
-[Get-MgBetaBetaReportOneDriveUsageStorage](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOneDriveUsageStorage?view=graph-powershell-beta)
+[Get-MgBetaReportOneDriveUsageStorage](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOneDriveUsageStorage?view=graph-powershell-beta)

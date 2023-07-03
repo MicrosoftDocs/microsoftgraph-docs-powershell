@@ -11,7 +11,7 @@ schema: 2.0.0
 Get monthlyPrintUsageByPrinter from reports
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaReportMonthlyPrintUsageByPrinter](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportMonthlyPrintUsageByPrinter?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaReportMonthlyPrintUsageByPrinter](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportMonthlyPrintUsageByPrinter?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -268,4 +268,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: Usage: userId='{userId}'
 
 ## RELATED LINKS
-[Get-MgBetaBetaReportMonthlyPrintUsageByPrinter](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportMonthlyPrintUsageByPrinter?view=graph-powershell-beta)
+[Get-MgBetaReportMonthlyPrintUsageByPrinter](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportMonthlyPrintUsageByPrinter?view=graph-powershell-beta)

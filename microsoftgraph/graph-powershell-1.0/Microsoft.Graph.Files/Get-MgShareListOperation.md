@@ -11,7 +11,7 @@ schema: 2.0.0
 The collection of long-running operations on the list.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaShareListOperation](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListOperation?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaShareListOperation](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListOperation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -297,4 +297,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaShareListOperation](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListOperation?view=graph-powershell-beta)
+[Get-MgBetaShareListOperation](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListOperation?view=graph-powershell-beta)

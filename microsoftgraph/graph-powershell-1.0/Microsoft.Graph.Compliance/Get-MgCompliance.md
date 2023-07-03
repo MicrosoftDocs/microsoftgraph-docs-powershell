@@ -11,7 +11,7 @@ schema: 2.0.0
 Get compliance
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaCompliance](/powershell/module/Microsoft.Graph.Beta.Compliance/Get-MgBetaCompliance?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaCompliance](/powershell/module/Microsoft.Graph.Beta.Compliance/Get-MgBetaCompliance?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -83,4 +83,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgBetaBetaCompliance](/powershell/module/Microsoft.Graph.Beta.Compliance/Get-MgBetaCompliance?view=graph-powershell-beta)
+[Get-MgBetaCompliance](/powershell/module/Microsoft.Graph.Beta.Compliance/Get-MgBetaCompliance?view=graph-powershell-beta)

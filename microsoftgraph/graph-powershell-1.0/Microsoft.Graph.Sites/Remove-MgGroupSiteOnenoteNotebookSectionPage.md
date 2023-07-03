@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property pages for groups
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaBetaGroupSiteOnenoteNotebookSectionPage](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteOnenoteNotebookSectionPage?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupSiteOnenoteNotebookSectionPage](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteOnenoteNotebookSectionPage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -256,4 +256,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaBetaGroupSiteOnenoteNotebookSectionPage](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteOnenoteNotebookSectionPage?view=graph-powershell-beta)
+[Remove-MgBetaGroupSiteOnenoteNotebookSectionPage](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteOnenoteNotebookSectionPage?view=graph-powershell-beta)

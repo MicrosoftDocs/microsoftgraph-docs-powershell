@@ -11,7 +11,7 @@ schema: 2.0.0
 Upgrade an app installation within a chat.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBetaChatInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaChatInstalledApp?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaChatInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaChatInstalledApp?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -183,4 +183,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Update-MgBetaBetaChatInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaChatInstalledApp?view=graph-powershell-beta)
+[Update-MgBetaChatInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaChatInstalledApp?view=graph-powershell-beta)

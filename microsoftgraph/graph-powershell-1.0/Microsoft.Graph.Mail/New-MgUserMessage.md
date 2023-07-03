@@ -16,7 +16,7 @@ Send the draft message in a subsequent operation.
 Alternatively, send a new message in a single operation, or create a draft to forward, reply and reply-all to an existing message.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBetaUserMessage](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMessage?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaUserMessage](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMessage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -943,7 +943,7 @@ UNIQUEBODY \<IMicrosoftGraphItemBody\>: itemBody
   \[ContentType \<String\>\]: bodyType
 
 ## RELATED LINKS
-[New-MgBetaBetaUserMessage](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMessage?view=graph-powershell-beta)
+[New-MgBetaUserMessage](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMessage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermessage)
 

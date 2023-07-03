@@ -12,7 +12,7 @@ Identity of the user who last modified the item.
 Read-only.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaUserDriveItemItemLastModifiedByUser](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItemItemLastModifiedByUser?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveItemItemLastModifiedByUser](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItemItemLastModifiedByUser?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -182,4 +182,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaUserDriveItemItemLastModifiedByUser](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItemItemLastModifiedByUser?view=graph-powershell-beta)
+[Get-MgBetaUserDriveItemItemLastModifiedByUser](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItemItemLastModifiedByUser?view=graph-powershell-beta)

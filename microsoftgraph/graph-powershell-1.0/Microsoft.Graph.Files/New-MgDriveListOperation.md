@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to operations for drives
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBetaDriveListOperation](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveListOperation?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaDriveListOperation](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveListOperation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -403,4 +403,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgBetaBetaDriveListOperation](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveListOperation?view=graph-powershell-beta)
+[New-MgBetaDriveListOperation](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveListOperation?view=graph-powershell-beta)

@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property fields for users
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaBetaUserDriveListItemDocumentSetVersionField](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveListItemDocumentSetVersionField?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserDriveListItemDocumentSetVersionField](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveListItemDocumentSetVersionField?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -227,4 +227,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaBetaUserDriveListItemDocumentSetVersionField](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveListItemDocumentSetVersionField?view=graph-powershell-beta)
+[Remove-MgBetaUserDriveListItemDocumentSetVersionField](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveListItemDocumentSetVersionField?view=graph-powershell-beta)

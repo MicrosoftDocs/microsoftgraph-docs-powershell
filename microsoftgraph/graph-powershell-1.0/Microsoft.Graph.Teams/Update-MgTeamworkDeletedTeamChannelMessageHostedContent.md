@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property hostedContents in teamwork
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBetaTeamworkDeletedTeamChannelMessageHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamworkDeletedTeamChannelMessageHostedContent?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaTeamworkDeletedTeamChannelMessageHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamworkDeletedTeamChannelMessageHostedContent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -299,4 +299,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Update-MgBetaBetaTeamworkDeletedTeamChannelMessageHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamworkDeletedTeamChannelMessageHostedContent?view=graph-powershell-beta)
+[Update-MgBetaTeamworkDeletedTeamChannelMessageHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamworkDeletedTeamChannelMessageHostedContent?view=graph-powershell-beta)

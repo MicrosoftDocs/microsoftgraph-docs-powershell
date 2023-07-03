@@ -12,7 +12,7 @@ The to [term] of the relation.
 The term to which the relationship is defined.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaGroupSiteTermStoreSetParentGroupSetTermRelationToTerm](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteTermStoreSetParentGroupSetTermRelationToTerm?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteTermStoreSetParentGroupSetTermRelationToTerm](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteTermStoreSetParentGroupSetTermRelationToTerm?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -274,4 +274,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaGroupSiteTermStoreSetParentGroupSetTermRelationToTerm](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteTermStoreSetParentGroupSetTermRelationToTerm?view=graph-powershell-beta)
+[Get-MgBetaGroupSiteTermStoreSetParentGroupSetTermRelationToTerm](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteTermStoreSetParentGroupSetTermRelationToTerm?view=graph-powershell-beta)

@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the number of the resource
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaGroupOwnerCountAsUser](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupOwnerCountAsUser?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupOwnerCountAsUser](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupOwnerCountAsUser?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -177,4 +177,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-[Get-MgBetaBetaGroupOwnerCountAsUser](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupOwnerCountAsUser?view=graph-powershell-beta)
+[Get-MgBetaGroupOwnerCountAsUser](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupOwnerCountAsUser?view=graph-powershell-beta)

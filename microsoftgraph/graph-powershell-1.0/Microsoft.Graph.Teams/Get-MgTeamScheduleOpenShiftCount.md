@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the number of the resource
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaTeamScheduleOpenShiftCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamScheduleOpenShiftCount?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamScheduleOpenShiftCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamScheduleOpenShiftCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -156,4 +156,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaBetaTeamScheduleOpenShiftCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamScheduleOpenShiftCount?view=graph-powershell-beta)
+[Get-MgBetaTeamScheduleOpenShiftCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamScheduleOpenShiftCount?view=graph-powershell-beta)

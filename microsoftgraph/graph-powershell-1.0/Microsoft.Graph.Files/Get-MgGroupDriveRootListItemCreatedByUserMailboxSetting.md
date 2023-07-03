@@ -13,7 +13,7 @@ You can get or update settings for sending automatic replies to incoming message
 Returned only on $select.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaGroupDriveRootListItemCreatedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootListItemCreatedByUserMailboxSetting?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveRootListItemCreatedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootListItemCreatedByUserMailboxSetting?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -169,4 +169,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaGroupDriveRootListItemCreatedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootListItemCreatedByUserMailboxSetting?view=graph-powershell-beta)
+[Get-MgBetaGroupDriveRootListItemCreatedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootListItemCreatedByUserMailboxSetting?view=graph-powershell-beta)

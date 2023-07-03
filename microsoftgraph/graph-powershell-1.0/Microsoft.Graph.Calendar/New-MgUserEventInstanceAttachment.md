@@ -13,7 +13,7 @@ This operation limits the size of the attachment you can add to under 3 MB.
 If an organizer adds an attachment to a meeting event, the organizer can subsequently update the event to send the attachment and update the event for each attendee as well.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBetaUserEventInstanceAttachment](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserEventInstanceAttachment?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaUserEventInstanceAttachment](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserEventInstanceAttachment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -322,4 +322,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgBetaBetaUserEventInstanceAttachment](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserEventInstanceAttachment?view=graph-powershell-beta)
+[New-MgBetaUserEventInstanceAttachment](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserEventInstanceAttachment?view=graph-powershell-beta)

@@ -11,7 +11,7 @@ schema: 2.0.0
 Retrieve the properties and relationships of a notebook object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaSiteOnenoteNotebook](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaSiteOnenoteNotebook?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteOnenoteNotebook](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaSiteOnenoteNotebook?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -278,4 +278,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaSiteOnenoteNotebook](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaSiteOnenoteNotebook?view=graph-powershell-beta)
+[Get-MgBetaSiteOnenoteNotebook](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaSiteOnenoteNotebook?view=graph-powershell-beta)

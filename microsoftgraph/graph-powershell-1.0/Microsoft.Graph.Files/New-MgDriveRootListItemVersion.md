@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to versions for drives
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBetaDriveRootListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveRootListItemVersion?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaDriveRootListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveRootListItemVersion?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -315,4 +315,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VersionId <String>]`: The unique identifier for the version that is visible to the current caller. Read-only.
 
 ## RELATED LINKS
-[New-MgBetaBetaDriveRootListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveRootListItemVersion?view=graph-powershell-beta)
+[New-MgBetaDriveRootListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveRootListItemVersion?view=graph-powershell-beta)

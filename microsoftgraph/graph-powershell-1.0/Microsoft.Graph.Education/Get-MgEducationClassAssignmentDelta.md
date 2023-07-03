@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function delta
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaEducationClassAssignmentDelta](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassAssignmentDelta?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationClassAssignmentDelta](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassAssignmentDelta?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -266,4 +266,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Get-MgBetaBetaEducationClassAssignmentDelta](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassAssignmentDelta?view=graph-powershell-beta)
+[Get-MgBetaEducationClassAssignmentDelta](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassAssignmentDelta?view=graph-powershell-beta)

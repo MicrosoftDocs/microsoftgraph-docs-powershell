@@ -13,7 +13,7 @@ This action cannot be undone.
 If the printer is shared again in the future, any Windows users who had previously installed the printer will need to discover and reinstall it.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaBetaPrintShare](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Remove-MgBetaPrintShare?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaPrintShare](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Remove-MgBetaPrintShare?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -171,4 +171,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaBetaPrintShare](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Remove-MgBetaPrintShare?view=graph-powershell-beta)
+[Remove-MgBetaPrintShare](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Remove-MgBetaPrintShare?view=graph-powershell-beta)

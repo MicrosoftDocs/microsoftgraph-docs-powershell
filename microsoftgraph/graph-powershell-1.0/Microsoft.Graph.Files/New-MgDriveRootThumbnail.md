@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to thumbnails for drives
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBetaDriveRootThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveRootThumbnail?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaDriveRootThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveRootThumbnail?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -327,4 +327,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Width <Int32?>]`: The width of the thumbnail, in pixels.
 
 ## RELATED LINKS
-[New-MgBetaBetaDriveRootThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveRootThumbnail?view=graph-powershell-beta)
+[New-MgBetaDriveRootThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveRootThumbnail?view=graph-powershell-beta)

@@ -11,7 +11,7 @@ schema: 2.0.0
 Create a new section group in the specified notebook.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBetaGroupOnenoteNotebookSectionGroup](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaGroupOnenoteNotebookSectionGroup?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaGroupOnenoteNotebookSectionGroup](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaGroupOnenoteNotebookSectionGroup?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -820,7 +820,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ParentSectionGroup <IMicrosoftGraphSectionGroup>]`: sectionGroup
 
 ## RELATED LINKS
-[New-MgBetaBetaGroupOnenoteNotebookSectionGroup](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaGroupOnenoteNotebookSectionGroup?view=graph-powershell-beta)
+[New-MgBetaGroupOnenoteNotebookSectionGroup](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaGroupOnenoteNotebookSectionGroup?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[New-MgBetaBetaGroupOnenoteNotebookSectionGroup](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaGroupOnenoteNotebookSectionGroup?view=graph-powershell-beta)
+[New-MgBetaGroupOnenoteNotebookSectionGroup](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaGroupOnenoteNotebookSectionGroup?view=graph-powershell-beta)

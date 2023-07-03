@@ -13,7 +13,7 @@ Read-only.
 Nullable.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaGroupExtension](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupExtension?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupExtension](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupExtension?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -313,4 +313,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-[Get-MgBetaBetaGroupExtension](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupExtension?view=graph-powershell-beta)
+[Get-MgBetaGroupExtension](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupExtension?view=graph-powershell-beta)

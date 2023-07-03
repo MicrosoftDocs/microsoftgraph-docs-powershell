@@ -11,7 +11,7 @@ schema: 2.0.0
 Reauthorize a subscription when you receive a **reauthorizationRequired** challenge.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaBetaReauthorizeDriveListSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaReauthorizeDriveListSubscription?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Invoke-MgBetaReauthorizeDriveListSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaReauthorizeDriveListSubscription?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -185,4 +185,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBetaBetaReauthorizeDriveListSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaReauthorizeDriveListSubscription?view=graph-powershell-beta)
+[Invoke-MgBetaReauthorizeDriveListSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaReauthorizeDriveListSubscription?view=graph-powershell-beta)

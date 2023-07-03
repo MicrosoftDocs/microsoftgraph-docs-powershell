@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property analytics in drives
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBetaDriveRootAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRootAnalytic?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaDriveRootAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRootAnalytic?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -10646,7 +10646,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[StartDateTime <DateTime?>]`: When the interval starts. Read-only.
 
 ## RELATED LINKS
-[Update-MgBetaBetaDriveRootAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRootAnalytic?view=graph-powershell-beta)
+[Update-MgBetaDriveRootAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRootAnalytic?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaBetaDriveRootAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRootAnalytic?view=graph-powershell-beta)
+[Update-MgBetaDriveRootAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRootAnalytic?view=graph-powershell-beta)

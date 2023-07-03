@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the number of the resource
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaSecurityTriggerRetentionEventCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityTriggerRetentionEventCount?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityTriggerRetentionEventCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityTriggerRetentionEventCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -79,4 +79,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgBetaBetaSecurityTriggerRetentionEventCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityTriggerRetentionEventCount?view=graph-powershell-beta)
+[Get-MgBetaSecurityTriggerRetentionEventCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityTriggerRetentionEventCount?view=graph-powershell-beta)

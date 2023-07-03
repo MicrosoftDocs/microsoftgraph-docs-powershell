@@ -11,7 +11,7 @@ schema: 2.0.0
 Remove (unpin) a tab from the specified chat.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaBetaUserChatTab](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaUserChatTab?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserChatTab](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaUserChatTab?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -222,4 +222,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgBetaBetaUserChatTab](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaUserChatTab?view=graph-powershell-beta)
+[Remove-MgBetaUserChatTab](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaUserChatTab?view=graph-powershell-beta)

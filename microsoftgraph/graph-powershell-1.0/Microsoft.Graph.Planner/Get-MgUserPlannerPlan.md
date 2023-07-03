@@ -11,7 +11,7 @@ schema: 2.0.0
 Retrieve a list of **plannerplan** objects shared with a user object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaUserPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaUserPlannerPlan?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaUserPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaUserPlannerPlan?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -214,4 +214,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgBetaBetaUserPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaUserPlannerPlan?view=graph-powershell-beta)
+[Get-MgBetaUserPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaUserPlannerPlan?view=graph-powershell-beta)

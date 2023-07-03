@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property fields in users
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBetaUserDriveListItemVersionField](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveListItemVersionField?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaUserDriveListItemVersionField](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveListItemVersionField?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -259,4 +259,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgBetaBetaUserDriveListItemVersionField](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveListItemVersionField?view=graph-powershell-beta)
+[Update-MgBetaUserDriveListItemVersionField](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveListItemVersionField?view=graph-powershell-beta)

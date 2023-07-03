@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property notebooks for users
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaBetaUserOnenotePage](/powershell/module/Microsoft.Graph.Beta.Notes/Remove-MgBetaUserOnenotePage?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserOnenotePage](/powershell/module/Microsoft.Graph.Beta.Notes/Remove-MgBetaUserOnenotePage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -185,4 +185,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaBetaUserOnenotePage](/powershell/module/Microsoft.Graph.Beta.Notes/Remove-MgBetaUserOnenotePage?view=graph-powershell-beta)
+[Remove-MgBetaUserOnenotePage](/powershell/module/Microsoft.Graph.Beta.Notes/Remove-MgBetaUserOnenotePage?view=graph-powershell-beta)

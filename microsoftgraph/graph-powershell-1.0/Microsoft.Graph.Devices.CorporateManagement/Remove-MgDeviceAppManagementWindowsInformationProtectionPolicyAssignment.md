@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property assignments for deviceAppManagement
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaBetaDeviceAppManagementWindowsInformationProtectionPolicyAssignment](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyAssignment?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyAssignment](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyAssignment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -206,4 +206,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
 
 ## RELATED LINKS
-[Remove-MgBetaBetaDeviceAppManagementWindowsInformationProtectionPolicyAssignment](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyAssignment?view=graph-powershell-beta)
+[Remove-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyAssignment](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyAssignment?view=graph-powershell-beta)

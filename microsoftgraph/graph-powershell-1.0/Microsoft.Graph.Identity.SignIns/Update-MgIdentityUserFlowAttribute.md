@@ -12,7 +12,7 @@ Update the properties of a identityUserFlowAttribute object.
 Only custom user flow attributes can be updated.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBetaIdentityUserFlowAttribute](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityUserFlowAttribute?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaIdentityUserFlowAttribute](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityUserFlowAttribute?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -315,4 +315,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Update-MgBetaBetaIdentityUserFlowAttribute](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityUserFlowAttribute?view=graph-powershell-beta)
+[Update-MgBetaIdentityUserFlowAttribute](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityUserFlowAttribute?view=graph-powershell-beta)

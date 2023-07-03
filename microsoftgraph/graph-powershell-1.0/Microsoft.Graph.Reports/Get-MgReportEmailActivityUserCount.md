@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function getEmailActivityUserCounts
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaReportEmailActivityUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportEmailActivityUserCount?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaReportEmailActivityUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportEmailActivityUserCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -146,4 +146,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: Usage: userId='{userId}'
 
 ## RELATED LINKS
-[Get-MgBetaBetaReportEmailActivityUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportEmailActivityUserCount?view=graph-powershell-beta)
+[Get-MgBetaReportEmailActivityUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportEmailActivityUserCount?view=graph-powershell-beta)

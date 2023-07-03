@@ -11,7 +11,7 @@ schema: 2.0.0
 Retrieve the properties and relationships of the specified team.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeam?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeam?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -153,4 +153,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaBetaTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeam?view=graph-powershell-beta)
+[Get-MgBetaTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeam?view=graph-powershell-beta)

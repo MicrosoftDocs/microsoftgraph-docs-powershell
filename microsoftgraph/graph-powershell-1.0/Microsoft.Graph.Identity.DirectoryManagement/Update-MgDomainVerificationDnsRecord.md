@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property verificationDnsRecords in domains
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBetaDomainVerificationDnsRecord](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDomainVerificationDnsRecord?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaDomainVerificationDnsRecord](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDomainVerificationDnsRecord?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -314,4 +314,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgBetaBetaDomainVerificationDnsRecord](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDomainVerificationDnsRecord?view=graph-powershell-beta)
+[Update-MgBetaDomainVerificationDnsRecord](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDomainVerificationDnsRecord?view=graph-powershell-beta)

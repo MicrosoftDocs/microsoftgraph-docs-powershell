@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete the specified bookingCustomer object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaBetaBookingBusinessCustomer](/powershell/module/Microsoft.Graph.Beta.Bookings/Remove-MgBetaBookingBusinessCustomer?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaBookingBusinessCustomer](/powershell/module/Microsoft.Graph.Beta.Bookings/Remove-MgBetaBookingBusinessCustomer?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -183,4 +183,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
 
 ## RELATED LINKS
-[Remove-MgBetaBetaBookingBusinessCustomer](/powershell/module/Microsoft.Graph.Beta.Bookings/Remove-MgBetaBookingBusinessCustomer?view=graph-powershell-beta)
+[Remove-MgBetaBookingBusinessCustomer](/powershell/module/Microsoft.Graph.Beta.Bookings/Remove-MgBetaBookingBusinessCustomer?view=graph-powershell-beta)

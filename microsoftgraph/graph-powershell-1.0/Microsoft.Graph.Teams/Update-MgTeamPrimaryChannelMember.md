@@ -12,7 +12,7 @@ Update the role of a conversationMember in a channel.
 This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBetaTeamPrimaryChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamPrimaryChannelMember?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaTeamPrimaryChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamPrimaryChannelMember?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -298,4 +298,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Update-MgBetaBetaTeamPrimaryChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamPrimaryChannelMember?view=graph-powershell-beta)
+[Update-MgBetaTeamPrimaryChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamPrimaryChannelMember?view=graph-powershell-beta)

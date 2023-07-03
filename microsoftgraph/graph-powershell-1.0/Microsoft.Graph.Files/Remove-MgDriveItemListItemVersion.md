@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property versions for drives
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaBetaDriveItemListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveItemListItemVersion?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaDriveItemListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveItemListItemVersion?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -215,4 +215,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaBetaDriveItemListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveItemListItemVersion?view=graph-powershell-beta)
+[Remove-MgBetaDriveItemListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveItemListItemVersion?view=graph-powershell-beta)

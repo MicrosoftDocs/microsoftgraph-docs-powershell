@@ -11,7 +11,7 @@ schema: 2.0.0
 Allow applications to share screen content with the participants of a group call.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Rename-MgBetaBetaCommunicationCallScreenSharingRole](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Rename-MgBetaCommunicationCallScreenSharingRole?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Rename-MgBetaCommunicationCallScreenSharingRole](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Rename-MgBetaCommunicationCallScreenSharingRole?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -218,4 +218,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Rename-MgBetaBetaCommunicationCallScreenSharingRole](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Rename-MgBetaCommunicationCallScreenSharingRole?view=graph-powershell-beta)
+[Rename-MgBetaCommunicationCallScreenSharingRole](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Rename-MgBetaCommunicationCallScreenSharingRole?view=graph-powershell-beta)

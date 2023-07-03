@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to operations for security
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBetaSecurityCaseEdiscoveryCaseOperation](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityCaseEdiscoveryCaseOperation?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaSecurityCaseEdiscoveryCaseOperation](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityCaseEdiscoveryCaseOperation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -361,4 +361,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Subcode <Int32?>]`: The result sub-code.
 
 ## RELATED LINKS
-[New-MgBetaBetaSecurityCaseEdiscoveryCaseOperation](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityCaseEdiscoveryCaseOperation?view=graph-powershell-beta)
+[New-MgBetaSecurityCaseEdiscoveryCaseOperation](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityCaseEdiscoveryCaseOperation?view=graph-powershell-beta)

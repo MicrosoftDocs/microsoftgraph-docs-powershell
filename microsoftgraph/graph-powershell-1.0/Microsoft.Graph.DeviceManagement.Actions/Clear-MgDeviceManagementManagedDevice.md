@@ -11,7 +11,7 @@ schema: 2.0.0
 Wipe a device
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Clear-MgBetaBetaDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Clear-MgBetaDeviceManagementManagedDevice?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Clear-MgBetaDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Clear-MgBetaDeviceManagementManagedDevice?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -270,4 +270,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
-[Clear-MgBetaBetaDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Clear-MgBetaDeviceManagementManagedDevice?view=graph-powershell-beta)
+[Clear-MgBetaDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Clear-MgBetaDeviceManagementManagedDevice?view=graph-powershell-beta)

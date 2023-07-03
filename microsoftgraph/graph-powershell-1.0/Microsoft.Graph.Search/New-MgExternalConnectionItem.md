@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to items for external
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBetaExternalConnectionItem](/powershell/module/Microsoft.Graph.Beta.Search/New-MgBetaExternalConnectionItem?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaExternalConnectionItem](/powershell/module/Microsoft.Graph.Beta.Search/New-MgBetaExternalConnectionItem?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -308,4 +308,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[IdentityId <String>]`: The unique identifier of identity
 
 ## RELATED LINKS
-[New-MgBetaBetaExternalConnectionItem](/powershell/module/Microsoft.Graph.Beta.Search/New-MgBetaExternalConnectionItem?view=graph-powershell-beta)
+[New-MgBetaExternalConnectionItem](/powershell/module/Microsoft.Graph.Beta.Search/New-MgBetaExternalConnectionItem?view=graph-powershell-beta)

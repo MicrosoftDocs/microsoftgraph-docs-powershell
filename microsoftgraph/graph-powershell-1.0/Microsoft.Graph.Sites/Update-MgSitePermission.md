@@ -11,7 +11,7 @@ schema: 2.0.0
 Update an application permission object on a site.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBetaSitePermission](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSitePermission?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaSitePermission](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSitePermission?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -591,7 +591,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebUrl <String>]`: A URL that opens the item in the browser on the OneDrive website.
 
 ## RELATED LINKS
-[Update-MgBetaBetaSitePermission](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSitePermission?view=graph-powershell-beta)
+[Update-MgBetaSitePermission](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSitePermission?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaBetaSitePermission](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSitePermission?view=graph-powershell-beta)
+[Update-MgBetaSitePermission](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSitePermission?view=graph-powershell-beta)

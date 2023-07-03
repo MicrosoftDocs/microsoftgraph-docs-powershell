@@ -12,7 +12,7 @@ Close an eDiscovery case.
 For details, see Close a case.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Close-MgBetaBetaSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Beta.Security/Close-MgBetaSecurityCaseEdiscoveryCase?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Close-MgBetaSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Beta.Security/Close-MgBetaSecurityCaseEdiscoveryCase?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -162,4 +162,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
-[Close-MgBetaBetaSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Beta.Security/Close-MgBetaSecurityCaseEdiscoveryCase?view=graph-powershell-beta)
+[Close-MgBetaSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Beta.Security/Close-MgBetaSecurityCaseEdiscoveryCase?view=graph-powershell-beta)

@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property children for groups
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaBetaGroupSiteTermStoreSetTermChild](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteTermStoreSetTermChild?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupSiteTermStoreSetTermChild](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteTermStoreSetTermChild?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -286,4 +286,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaBetaGroupSiteTermStoreSetTermChild](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteTermStoreSetTermChild?view=graph-powershell-beta)
+[Remove-MgBetaGroupSiteTermStoreSetTermChild](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteTermStoreSetTermChild?view=graph-powershell-beta)

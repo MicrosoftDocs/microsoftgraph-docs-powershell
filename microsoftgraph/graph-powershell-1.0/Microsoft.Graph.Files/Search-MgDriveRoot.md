@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function search
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Search-MgBetaBetaDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Search-MgBetaDriveRoot?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Search-MgBetaDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Search-MgBetaDriveRoot?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -244,4 +244,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Search-MgBetaBetaDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Search-MgBetaDriveRoot?view=graph-powershell-beta)
+[Search-MgBetaDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Search-MgBetaDriveRoot?view=graph-powershell-beta)

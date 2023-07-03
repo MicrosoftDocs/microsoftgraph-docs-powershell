@@ -12,7 +12,7 @@ Unshare a channel with a team by deleting the corresponding sharedWithChannelTea
 This operation is allowed only for channels with a **membershipType** value of `shared`.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaBetaGroupTeamChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaGroupTeamChannelSharedWithTeam?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupTeamChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaGroupTeamChannelSharedWithTeam?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -225,4 +225,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgBetaBetaGroupTeamChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaGroupTeamChannelSharedWithTeam?view=graph-powershell-beta)
+[Remove-MgBetaGroupTeamChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaGroupTeamChannelSharedWithTeam?view=graph-powershell-beta)

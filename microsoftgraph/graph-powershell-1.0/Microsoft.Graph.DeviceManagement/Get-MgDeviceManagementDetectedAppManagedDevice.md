@@ -11,7 +11,7 @@ schema: 2.0.0
 The devices that have the discovered application installed
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaDeviceManagementDetectedAppManagedDevice](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDetectedAppManagedDevice?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDetectedAppManagedDevice](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDetectedAppManagedDevice?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -296,4 +296,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionNetworkLearningSummary
 
 ## RELATED LINKS
-[Get-MgBetaBetaDeviceManagementDetectedAppManagedDevice](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDetectedAppManagedDevice?view=graph-powershell-beta)
+[Get-MgBetaDeviceManagementDetectedAppManagedDevice](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDetectedAppManagedDevice?view=graph-powershell-beta)

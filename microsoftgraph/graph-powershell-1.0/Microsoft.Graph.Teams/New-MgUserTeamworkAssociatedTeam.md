@@ -12,7 +12,7 @@ Add (pin) a tab to the specified chat.
 \nThe corresponding app must already be installed in the chat.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBetaUserTeamworkAssociatedTeam](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaUserTeamworkAssociatedTeam?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaUserTeamworkAssociatedTeam](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaUserTeamworkAssociatedTeam?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -372,4 +372,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ExternalId <String>]`: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
 
 ## RELATED LINKS
-[New-MgBetaBetaUserTeamworkAssociatedTeam](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaUserTeamworkAssociatedTeam?view=graph-powershell-beta)
+[New-MgBetaUserTeamworkAssociatedTeam](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaUserTeamworkAssociatedTeam?view=graph-powershell-beta)

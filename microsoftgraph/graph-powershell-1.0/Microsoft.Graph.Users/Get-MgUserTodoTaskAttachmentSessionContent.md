@@ -11,7 +11,7 @@ schema: 2.0.0
 The content streams that are uploaded.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaUserTodoTaskAttachmentSessionContent](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoTaskAttachmentSessionContent?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaUserTodoTaskAttachmentSessionContent](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoTaskAttachmentSessionContent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -184,4 +184,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaUserTodoTaskAttachmentSessionContent](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoTaskAttachmentSessionContent?view=graph-powershell-beta)
+[Get-MgBetaUserTodoTaskAttachmentSessionContent](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoTaskAttachmentSessionContent?view=graph-powershell-beta)

@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete entity from organization
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaBetaOrganization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaOrganization?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaOrganization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaOrganization?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -194,4 +194,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaBetaOrganization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaOrganization?view=graph-powershell-beta)
+[Remove-MgBetaOrganization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaOrganization?view=graph-powershell-beta)

@@ -12,7 +12,7 @@ Add a member to a security or Microsoft 365 group through the **members** naviga
 The following table shows the types of members that can be added to either security groups or Microsoft 365 groups.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBetaGroupMemberByRef](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupMemberByRef?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaGroupMemberByRef](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupMemberByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -244,4 +244,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-[New-MgBetaBetaGroupMemberByRef](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupMemberByRef?view=graph-powershell-beta)
+[New-MgBetaGroupMemberByRef](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupMemberByRef?view=graph-powershell-beta)

@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property termStore for sites
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaBetaSiteTermStore](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteTermStore?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaSiteTermStore](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteTermStore?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -223,4 +223,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaBetaSiteTermStore](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteTermStore?view=graph-powershell-beta)
+[Remove-MgBetaSiteTermStore](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteTermStore?view=graph-powershell-beta)

@@ -12,7 +12,7 @@ Condition sets which are excluded in this permission grant policy.
 Automatically expanded on GET.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaPolicyPermissionGrantPolicyExclude](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyPermissionGrantPolicyExclude?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyPermissionGrantPolicyExclude](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyPermissionGrantPolicyExclude?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -346,4 +346,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgBetaBetaPolicyPermissionGrantPolicyExclude](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyPermissionGrantPolicyExclude?view=graph-powershell-beta)
+[Get-MgBetaPolicyPermissionGrantPolicyExclude](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyPermissionGrantPolicyExclude?view=graph-powershell-beta)

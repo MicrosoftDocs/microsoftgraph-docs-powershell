@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property endpoints in print
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBetaPrintServiceEndpoint](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgBetaPrintServiceEndpoint?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaPrintServiceEndpoint](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgBetaPrintServiceEndpoint?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -256,4 +256,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgBetaBetaPrintServiceEndpoint](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgBetaPrintServiceEndpoint?view=graph-powershell-beta)
+[Update-MgBetaPrintServiceEndpoint](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgBetaPrintServiceEndpoint?view=graph-powershell-beta)

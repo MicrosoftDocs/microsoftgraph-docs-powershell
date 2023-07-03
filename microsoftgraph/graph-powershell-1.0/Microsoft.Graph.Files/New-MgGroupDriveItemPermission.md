@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to permissions for groups
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBetaGroupDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveItemPermission?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaGroupDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveItemPermission?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -593,7 +593,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebUrl <String>]`: A URL that opens the item in the browser on the OneDrive website.
 
 ## RELATED LINKS
-[New-MgBetaBetaGroupDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveItemPermission?view=graph-powershell-beta)
+[New-MgBetaGroupDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveItemPermission?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[New-MgBetaBetaGroupDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveItemPermission?view=graph-powershell-beta)
+[New-MgBetaGroupDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveItemPermission?view=graph-powershell-beta)

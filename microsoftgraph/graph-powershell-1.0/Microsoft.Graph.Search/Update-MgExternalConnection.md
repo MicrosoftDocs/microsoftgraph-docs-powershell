@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the properties of an externalConnection object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBetaExternalConnection](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaExternalConnection?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaExternalConnection](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaExternalConnection?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -534,7 +534,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[ValuesJoinedBy <String>]`: binaryOperator
 
 ## RELATED LINKS
-[Update-MgBetaBetaExternalConnection](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaExternalConnection?view=graph-powershell-beta)
+[Update-MgBetaExternalConnection](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaExternalConnection?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaBetaExternalConnection](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaExternalConnection?view=graph-powershell-beta)
+[Update-MgBetaExternalConnection](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaExternalConnection?view=graph-powershell-beta)

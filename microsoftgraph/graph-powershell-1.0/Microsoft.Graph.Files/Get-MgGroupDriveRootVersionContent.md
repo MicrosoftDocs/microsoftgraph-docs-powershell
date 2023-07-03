@@ -11,7 +11,7 @@ schema: 2.0.0
 The content stream for this version of the item.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaGroupDriveRootVersionContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootVersionContent?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveRootVersionContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootVersionContent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -184,4 +184,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaGroupDriveRootVersionContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootVersionContent?view=graph-powershell-beta)
+[Get-MgBetaGroupDriveRootVersionContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootVersionContent?view=graph-powershell-beta)

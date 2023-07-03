@@ -12,7 +12,7 @@ Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaDirectoryRoleTemplateById](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryRoleTemplateById?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryRoleTemplateById](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryRoleTemplateById?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -174,4 +174,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Types <String[]>]`: 
 
 ## RELATED LINKS
-[Get-MgBetaBetaDirectoryRoleTemplateById](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryRoleTemplateById?view=graph-powershell-beta)
+[Get-MgBetaDirectoryRoleTemplateById](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryRoleTemplateById?view=graph-powershell-beta)

@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property listItem for users
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaBetaUserDriveRootListItem](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveRootListItem?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserDriveRootListItem](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveRootListItem?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -200,4 +200,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaBetaUserDriveRootListItem](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveRootListItem?view=graph-powershell-beta)
+[Remove-MgBetaUserDriveRootListItem](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveRootListItem?view=graph-powershell-beta)

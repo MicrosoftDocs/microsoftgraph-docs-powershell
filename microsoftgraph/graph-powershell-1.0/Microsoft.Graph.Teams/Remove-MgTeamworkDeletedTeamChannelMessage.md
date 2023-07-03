@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property messages for teamwork
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaBetaTeamworkDeletedTeamChannelMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamworkDeletedTeamChannelMessage?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaTeamworkDeletedTeamChannelMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamworkDeletedTeamChannelMessage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -218,4 +218,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgBetaBetaTeamworkDeletedTeamChannelMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamworkDeletedTeamChannelMessage?view=graph-powershell-beta)
+[Remove-MgBetaTeamworkDeletedTeamChannelMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamworkDeletedTeamChannelMessage?view=graph-powershell-beta)

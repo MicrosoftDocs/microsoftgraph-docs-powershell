@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete a directory object, for example, a group, user, application, or service principal.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaBetaDirectoryObject](/powershell/module/Microsoft.Graph.Beta.DirectoryObjects/Remove-MgBetaDirectoryObject?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaDirectoryObject](/powershell/module/Microsoft.Graph.Beta.DirectoryObjects/Remove-MgBetaDirectoryObject?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -155,4 +155,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
 
 ## RELATED LINKS
-[Remove-MgBetaBetaDirectoryObject](/powershell/module/Microsoft.Graph.Beta.DirectoryObjects/Remove-MgBetaDirectoryObject?view=graph-powershell-beta)
+[Remove-MgBetaDirectoryObject](/powershell/module/Microsoft.Graph.Beta.DirectoryObjects/Remove-MgBetaDirectoryObject?view=graph-powershell-beta)

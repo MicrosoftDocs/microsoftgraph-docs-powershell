@@ -12,7 +12,7 @@ Optional contact picture.
 You can get or set a photo for a contact.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaUserContactPhoto](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Get-MgBetaUserContactPhoto?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaUserContactPhoto](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Get-MgBetaUserContactPhoto?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -135,4 +135,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaUserContactPhoto](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Get-MgBetaUserContactPhoto?view=graph-powershell-beta)
+[Get-MgBetaUserContactPhoto](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Get-MgBetaUserContactPhoto?view=graph-powershell-beta)

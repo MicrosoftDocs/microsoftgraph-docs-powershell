@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the properties of the event object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBetaUserEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaUserEvent?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaUserEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaUserEvent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -1855,7 +1855,7 @@ START \<IMicrosoftGraphDateTimeZone\>: dateTimeTimeZone
 See below for more possible values.
 
 ## RELATED LINKS
-[Update-MgBetaBetaUserEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaUserEvent?view=graph-powershell-beta)
+[Update-MgBetaUserEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaUserEvent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mguserevent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mguserevent)
 

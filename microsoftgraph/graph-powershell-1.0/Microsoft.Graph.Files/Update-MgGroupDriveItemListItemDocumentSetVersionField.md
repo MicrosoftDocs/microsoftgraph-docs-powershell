@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property fields in groups
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBetaGroupDriveItemListItemDocumentSetVersionField](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveItemListItemDocumentSetVersionField?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupDriveItemListItemDocumentSetVersionField](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveItemListItemDocumentSetVersionField?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -256,4 +256,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgBetaBetaGroupDriveItemListItemDocumentSetVersionField](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveItemListItemDocumentSetVersionField?view=graph-powershell-beta)
+[Update-MgBetaGroupDriveItemListItemDocumentSetVersionField](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveItemListItemDocumentSetVersionField?view=graph-powershell-beta)

@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property reports for deviceManagement
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaBetaDeviceManagementReport](/powershell/module/Microsoft.Graph.Beta.Reports/Remove-MgBetaDeviceManagementReport?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementReport](/powershell/module/Microsoft.Graph.Beta.Reports/Remove-MgBetaDeviceManagementReport?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -114,4 +114,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Remove-MgBetaBetaDeviceManagementReport](/powershell/module/Microsoft.Graph.Beta.Reports/Remove-MgBetaDeviceManagementReport?view=graph-powershell-beta)
+[Remove-MgBetaDeviceManagementReport](/powershell/module/Microsoft.Graph.Beta.Reports/Remove-MgBetaDeviceManagementReport?view=graph-powershell-beta)

@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the number of the resource
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaDeviceAppManagementManagedAppStatusCount](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementManagedAppStatusCount?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementManagedAppStatusCount](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementManagedAppStatusCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -81,4 +81,4 @@ ALIASES
 Get-MgDeviceAppMgtManagedAppStatusCount
 
 ## RELATED LINKS
-[Get-MgBetaBetaDeviceAppManagementManagedAppStatusCount](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementManagedAppStatusCount?view=graph-powershell-beta)
+[Get-MgBetaDeviceAppManagementManagedAppStatusCount](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementManagedAppStatusCount?view=graph-powershell-beta)

@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the number of the resource
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaDriveListContentTypeCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListContentTypeCount?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveListContentTypeCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListContentTypeCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -149,4 +149,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaDriveListContentTypeCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListContentTypeCount?view=graph-powershell-beta)
+[Get-MgBetaDriveListContentTypeCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListContentTypeCount?view=graph-powershell-beta)

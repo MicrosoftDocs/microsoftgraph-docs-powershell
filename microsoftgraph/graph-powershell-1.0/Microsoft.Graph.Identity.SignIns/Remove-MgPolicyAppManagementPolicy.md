@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete an appManagementPolicy object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaBetaPolicyAppManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyAppManagementPolicy?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaPolicyAppManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyAppManagementPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -212,4 +212,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Remove-MgBetaBetaPolicyAppManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyAppManagementPolicy?view=graph-powershell-beta)
+[Remove-MgBetaPolicyAppManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyAppManagementPolicy?view=graph-powershell-beta)

@@ -11,7 +11,7 @@ schema: 2.0.0
 Exposes the driveItem that was the target of this activity.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaSiteAnalyticItemActivityStatActivityDriveItem](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteAnalyticItemActivityStatActivityDriveItem?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteAnalyticItemActivityStatActivityDriveItem](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteAnalyticItemActivityStatActivityDriveItem?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -194,4 +194,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaSiteAnalyticItemActivityStatActivityDriveItem](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteAnalyticItemActivityStatActivityDriveItem?view=graph-powershell-beta)
+[Get-MgBetaSiteAnalyticItemActivityStatActivityDriveItem](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteAnalyticItemActivityStatActivityDriveItem?view=graph-powershell-beta)

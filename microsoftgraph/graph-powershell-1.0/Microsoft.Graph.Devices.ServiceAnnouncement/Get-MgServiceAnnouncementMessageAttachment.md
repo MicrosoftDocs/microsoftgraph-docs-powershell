@@ -11,7 +11,7 @@ schema: 2.0.0
 Read the properties and relationships of a serviceAnnouncementAttachment object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaServiceAnnouncementMessageAttachment](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Get-MgBetaServiceAnnouncementMessageAttachment?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaServiceAnnouncementMessageAttachment](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Get-MgBetaServiceAnnouncementMessageAttachment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -277,4 +277,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ServiceUpdateMessageId <String>]`: The unique identifier of serviceUpdateMessage
 
 ## RELATED LINKS
-[Get-MgBetaBetaServiceAnnouncementMessageAttachment](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Get-MgBetaServiceAnnouncementMessageAttachment?view=graph-powershell-beta)
+[Get-MgBetaServiceAnnouncementMessageAttachment](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Get-MgBetaServiceAnnouncementMessageAttachment?view=graph-powershell-beta)

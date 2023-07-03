@@ -11,7 +11,7 @@ schema: 2.0.0
 Trigger an indexOperation to make a non-custodial data source and its associated data source searchable.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceIndex](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceIndex?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceIndex](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceIndex?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -175,4 +175,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
-[Update-MgBetaBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceIndex](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceIndex?view=graph-powershell-beta)
+[Update-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceIndex](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceIndex?view=graph-powershell-beta)

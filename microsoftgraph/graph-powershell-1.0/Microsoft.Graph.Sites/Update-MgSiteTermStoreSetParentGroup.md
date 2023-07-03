@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property parentGroup in sites
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBetaSiteTermStoreSetParentGroup](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteTermStoreSetParentGroup?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaSiteTermStoreSetParentGroup](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteTermStoreSetParentGroup?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -467,4 +467,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Terms <IMicrosoftGraphTermStoreTerm[]>]`: All the terms under the set.
 
 ## RELATED LINKS
-[Update-MgBetaBetaSiteTermStoreSetParentGroup](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteTermStoreSetParentGroup?view=graph-powershell-beta)
+[Update-MgBetaSiteTermStoreSetParentGroup](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteTermStoreSetParentGroup?view=graph-powershell-beta)

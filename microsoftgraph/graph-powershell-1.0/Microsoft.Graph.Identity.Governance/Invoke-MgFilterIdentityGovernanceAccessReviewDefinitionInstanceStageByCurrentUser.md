@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function filterByCurrentUser
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaBetaFilterIdentityGovernanceAccessReviewDefinitionInstanceStageByCurrentUser](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaFilterIdentityGovernanceAccessReviewDefinitionInstanceStageByCurrentUser?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Invoke-MgBetaFilterIdentityGovernanceAccessReviewDefinitionInstanceStageByCurrentUser](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaFilterIdentityGovernanceAccessReviewDefinitionInstanceStageByCurrentUser?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -277,4 +277,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBetaBetaFilterIdentityGovernanceAccessReviewDefinitionInstanceStageByCurrentUser](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaFilterIdentityGovernanceAccessReviewDefinitionInstanceStageByCurrentUser?view=graph-powershell-beta)
+[Invoke-MgBetaFilterIdentityGovernanceAccessReviewDefinitionInstanceStageByCurrentUser](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaFilterIdentityGovernanceAccessReviewDefinitionInstanceStageByCurrentUser?view=graph-powershell-beta)

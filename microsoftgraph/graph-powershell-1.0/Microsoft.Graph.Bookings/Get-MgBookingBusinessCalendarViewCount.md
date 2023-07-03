@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the number of the resource
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaBookingBusinessCalendarViewCount](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusinessCalendarViewCount?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaBookingBusinessCalendarViewCount](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusinessCalendarViewCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -133,4 +133,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
 
 ## RELATED LINKS
-[Get-MgBetaBetaBookingBusinessCalendarViewCount](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusinessCalendarViewCount?view=graph-powershell-beta)
+[Get-MgBetaBookingBusinessCalendarViewCount](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusinessCalendarViewCount?view=graph-powershell-beta)

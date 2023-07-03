@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to relations for groups
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBetaGroupSiteTermStoreSetTermRelation](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteTermStoreSetTermRelation?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaGroupSiteTermStoreSetTermRelation](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteTermStoreSetTermRelation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -560,7 +560,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Set <IMicrosoftGraphTermStoreSet>]`: set
 
 ## RELATED LINKS
-[New-MgBetaBetaGroupSiteTermStoreSetTermRelation](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteTermStoreSetTermRelation?view=graph-powershell-beta)
+[New-MgBetaGroupSiteTermStoreSetTermRelation](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteTermStoreSetTermRelation?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[New-MgBetaBetaGroupSiteTermStoreSetTermRelation](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteTermStoreSetTermRelation?view=graph-powershell-beta)
+[New-MgBetaGroupSiteTermStoreSetTermRelation](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteTermStoreSetTermRelation?view=graph-powershell-beta)

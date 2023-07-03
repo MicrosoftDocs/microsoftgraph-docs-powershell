@@ -11,7 +11,7 @@ schema: 2.0.0
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Copy-MgBetaBetaSiteOnenotePageToSection](/powershell/module/Microsoft.Graph.Beta.Sites/Copy-MgBetaSiteOnenotePageToSection?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Copy-MgBetaSiteOnenotePageToSection](/powershell/module/Microsoft.Graph.Beta.Sites/Copy-MgBetaSiteOnenotePageToSection?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -339,4 +339,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Copy-MgBetaBetaSiteOnenotePageToSection](/powershell/module/Microsoft.Graph.Beta.Sites/Copy-MgBetaSiteOnenotePageToSection?view=graph-powershell-beta)
+[Copy-MgBetaSiteOnenotePageToSection](/powershell/module/Microsoft.Graph.Beta.Sites/Copy-MgBetaSiteOnenotePageToSection?view=graph-powershell-beta)

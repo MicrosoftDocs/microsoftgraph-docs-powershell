@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to contentTypes for users
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBetaUserDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveListContentType?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaUserDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveListContentType?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -1554,7 +1554,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Position <Int32?>]`: Specifies the position in which the Content Type appears in the selection UI.
 
 ## RELATED LINKS
-[New-MgBetaBetaUserDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveListContentType?view=graph-powershell-beta)
+[New-MgBetaUserDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveListContentType?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[New-MgBetaBetaUserDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveListContentType?view=graph-powershell-beta)
+[New-MgBetaUserDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveListContentType?view=graph-powershell-beta)

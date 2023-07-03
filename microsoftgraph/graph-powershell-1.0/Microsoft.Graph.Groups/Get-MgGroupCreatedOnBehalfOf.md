@@ -13,7 +13,7 @@ NOTE: This is not set if the user is an administrator.
 Read-only.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaGroupCreatedOnBehalfOf](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupCreatedOnBehalfOf?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupCreatedOnBehalfOf](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupCreatedOnBehalfOf?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -169,4 +169,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-[Get-MgBetaBetaGroupCreatedOnBehalfOf](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupCreatedOnBehalfOf?view=graph-powershell-beta)
+[Get-MgBetaGroupCreatedOnBehalfOf](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupCreatedOnBehalfOf?view=graph-powershell-beta)

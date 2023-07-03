@@ -11,7 +11,7 @@ schema: 2.0.0
 Retrieves the list of devices with failed apps
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaUserManagedDeviceWithAppFailure](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserManagedDeviceWithAppFailure?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaUserManagedDeviceWithAppFailure](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserManagedDeviceWithAppFailure?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -197,4 +197,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaUserManagedDeviceWithAppFailure](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserManagedDeviceWithAppFailure?view=graph-powershell-beta)
+[Get-MgBetaUserManagedDeviceWithAppFailure](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserManagedDeviceWithAppFailure?view=graph-powershell-beta)

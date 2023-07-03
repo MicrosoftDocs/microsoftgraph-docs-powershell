@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the number of the resource
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaGroupEventInstanceCount](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaGroupEventInstanceCount?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupEventInstanceCount](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaGroupEventInstanceCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -134,4 +134,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaGroupEventInstanceCount](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaGroupEventInstanceCount?view=graph-powershell-beta)
+[Get-MgBetaGroupEventInstanceCount](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaGroupEventInstanceCount?view=graph-powershell-beta)

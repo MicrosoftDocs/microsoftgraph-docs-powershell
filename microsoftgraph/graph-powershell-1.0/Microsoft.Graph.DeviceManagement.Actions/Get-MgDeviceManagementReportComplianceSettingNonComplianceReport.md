@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke action getComplianceSettingNonComplianceReport
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaDeviceManagementReportComplianceSettingNonComplianceReport](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Get-MgBetaDeviceManagementReportComplianceSettingNonComplianceReport?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementReportComplianceSettingNonComplianceReport](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Get-MgBetaDeviceManagementReportComplianceSettingNonComplianceReport?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -309,4 +309,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Top <Int32?>]`: 
 
 ## RELATED LINKS
-[Get-MgBetaBetaDeviceManagementReportComplianceSettingNonComplianceReport](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Get-MgBetaDeviceManagementReportComplianceSettingNonComplianceReport?view=graph-powershell-beta)
+[Get-MgBetaDeviceManagementReportComplianceSettingNonComplianceReport](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Get-MgBetaDeviceManagementReportComplianceSettingNonComplianceReport?view=graph-powershell-beta)

@@ -11,7 +11,7 @@ schema: 2.0.0
 Specifies the event that will start the retention period for labels that use this event type when an event is created.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaSecurityTriggerRetentionEventType](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityTriggerRetentionEventType?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityTriggerRetentionEventType](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityTriggerRetentionEventType?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -148,4 +148,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
-[Get-MgBetaBetaSecurityTriggerRetentionEventType](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityTriggerRetentionEventType?view=graph-powershell-beta)
+[Get-MgBetaSecurityTriggerRetentionEventType](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityTriggerRetentionEventType?view=graph-powershell-beta)

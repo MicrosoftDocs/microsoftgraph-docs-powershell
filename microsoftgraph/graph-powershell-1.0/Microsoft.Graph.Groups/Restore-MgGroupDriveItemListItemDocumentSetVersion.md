@@ -11,7 +11,7 @@ schema: 2.0.0
 Restore a document set version.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Restore-MgBetaBetaGroupDriveItemListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Groups/Restore-MgBetaGroupDriveItemListItemDocumentSetVersion?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Restore-MgBetaGroupDriveItemListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Groups/Restore-MgBetaGroupDriveItemListItemDocumentSetVersion?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -226,4 +226,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-[Restore-MgBetaBetaGroupDriveItemListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Groups/Restore-MgBetaGroupDriveItemListItemDocumentSetVersion?view=graph-powershell-beta)
+[Restore-MgBetaGroupDriveItemListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Groups/Restore-MgBetaGroupDriveItemListItemDocumentSetVersion?view=graph-powershell-beta)

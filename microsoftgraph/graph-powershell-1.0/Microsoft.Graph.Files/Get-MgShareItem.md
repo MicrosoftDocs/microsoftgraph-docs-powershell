@@ -12,7 +12,7 @@ All driveItems contained in the sharing root.
 This collection cannot be enumerated.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaShareItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareItem?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaShareItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareItem?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -299,4 +299,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaShareItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareItem?view=graph-powershell-beta)
+[Get-MgBetaShareItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareItem?view=graph-powershell-beta)

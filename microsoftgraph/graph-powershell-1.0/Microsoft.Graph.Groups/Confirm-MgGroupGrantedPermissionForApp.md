@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke action checkGrantedPermissionsForApp
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Confirm-MgBetaBetaGroupGrantedPermissionForApp](/powershell/module/Microsoft.Graph.Beta.Groups/Confirm-MgBetaGroupGrantedPermissionForApp?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Confirm-MgBetaGroupGrantedPermissionForApp](/powershell/module/Microsoft.Graph.Beta.Groups/Confirm-MgBetaGroupGrantedPermissionForApp?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -164,4 +164,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-[Confirm-MgBetaBetaGroupGrantedPermissionForApp](/powershell/module/Microsoft.Graph.Beta.Groups/Confirm-MgBetaGroupGrantedPermissionForApp?view=graph-powershell-beta)
+[Confirm-MgBetaGroupGrantedPermissionForApp](/powershell/module/Microsoft.Graph.Beta.Groups/Confirm-MgBetaGroupGrantedPermissionForApp?view=graph-powershell-beta)

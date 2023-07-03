@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.administrativeUnit
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaContactTransitiveMemberOfAsAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContactTransitiveMemberOfAsAdministrativeUnit?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaContactTransitiveMemberOfAsAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContactTransitiveMemberOfAsAdministrativeUnit?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -306,4 +306,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaContactTransitiveMemberOfAsAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContactTransitiveMemberOfAsAdministrativeUnit?view=graph-powershell-beta)
+[Get-MgBetaContactTransitiveMemberOfAsAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContactTransitiveMemberOfAsAdministrativeUnit?view=graph-powershell-beta)

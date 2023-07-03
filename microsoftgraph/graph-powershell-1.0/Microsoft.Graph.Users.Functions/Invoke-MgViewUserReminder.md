@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function reminderView
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaBetaViewUserReminder](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Invoke-MgBetaViewUserReminder?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Invoke-MgBetaViewUserReminder](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Invoke-MgBetaViewUserReminder?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -231,4 +231,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBetaBetaViewUserReminder](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Invoke-MgBetaViewUserReminder?view=graph-powershell-beta)
+[Invoke-MgBetaViewUserReminder](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Invoke-MgBetaViewUserReminder?view=graph-powershell-beta)

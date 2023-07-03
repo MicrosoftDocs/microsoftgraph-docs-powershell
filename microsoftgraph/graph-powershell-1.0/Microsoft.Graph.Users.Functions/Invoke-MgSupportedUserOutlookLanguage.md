@@ -13,7 +13,7 @@ When setting up an Outlook client, the user selects the preferred language from 
 You can subsequently get the preferred language by \ngetting the user's mailbox settings.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaBetaSupportedUserOutlookLanguage](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Invoke-MgBetaSupportedUserOutlookLanguage?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Invoke-MgBetaSupportedUserOutlookLanguage](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Invoke-MgBetaSupportedUserOutlookLanguage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -198,4 +198,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBetaBetaSupportedUserOutlookLanguage](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Invoke-MgBetaSupportedUserOutlookLanguage?view=graph-powershell-beta)
+[Invoke-MgBetaSupportedUserOutlookLanguage](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Invoke-MgBetaSupportedUserOutlookLanguage?view=graph-powershell-beta)

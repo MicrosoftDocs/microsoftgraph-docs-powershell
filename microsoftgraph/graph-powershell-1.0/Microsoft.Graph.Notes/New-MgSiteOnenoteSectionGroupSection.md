@@ -11,7 +11,7 @@ schema: 2.0.0
 Create a new onenoteSection in the specified section group.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBetaSiteOnenoteSectionGroupSection](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaSiteOnenoteSectionGroupSection?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaSiteOnenoteSectionGroupSection](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaSiteOnenoteSectionGroupSection?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -747,7 +747,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[SectionsUrl <String>]`: The URL for the sections navigation property, which returns all the sections in the section group. Read-only.
 
 ## RELATED LINKS
-[New-MgBetaBetaSiteOnenoteSectionGroupSection](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaSiteOnenoteSectionGroupSection?view=graph-powershell-beta)
+[New-MgBetaSiteOnenoteSectionGroupSection](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaSiteOnenoteSectionGroupSection?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[New-MgBetaBetaSiteOnenoteSectionGroupSection](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaSiteOnenoteSectionGroupSection?view=graph-powershell-beta)
+[New-MgBetaSiteOnenoteSectionGroupSection](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaSiteOnenoteSectionGroupSection?view=graph-powershell-beta)

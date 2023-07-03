@@ -12,7 +12,7 @@ Delete an existing assignment.
 Only teachers within a class can delete assignments.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationClassAssignment?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationClassAssignment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -181,4 +181,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Remove-MgBetaBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationClassAssignment?view=graph-powershell-beta)
+[Remove-MgBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationClassAssignment?view=graph-powershell-beta)

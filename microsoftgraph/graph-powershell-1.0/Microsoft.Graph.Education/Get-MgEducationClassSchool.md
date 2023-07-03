@@ -12,7 +12,7 @@ All schools that this class is associated with.
 Nullable.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaEducationClassSchool](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassSchool?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationClassSchool](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassSchool?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -278,4 +278,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Get-MgBetaBetaEducationClassSchool](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassSchool?view=graph-powershell-beta)
+[Get-MgBetaEducationClassSchool](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassSchool?view=graph-powershell-beta)

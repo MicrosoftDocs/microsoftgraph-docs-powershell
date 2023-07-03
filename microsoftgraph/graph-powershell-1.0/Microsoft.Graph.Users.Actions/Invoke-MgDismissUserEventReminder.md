@@ -11,7 +11,7 @@ schema: 2.0.0
 Dismiss a reminder that has been triggered for an event in a user calendar.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaBetaDismissUserEventReminder](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaDismissUserEventReminder?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Invoke-MgBetaDismissUserEventReminder](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaDismissUserEventReminder?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -182,4 +182,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBetaBetaDismissUserEventReminder](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaDismissUserEventReminder?view=graph-powershell-beta)
+[Invoke-MgBetaDismissUserEventReminder](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaDismissUserEventReminder?view=graph-powershell-beta)

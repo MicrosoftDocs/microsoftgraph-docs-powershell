@@ -11,7 +11,7 @@ schema: 2.0.0
 Get bitlocker from informationProtection
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaInformationProtectionBitlocker](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaInformationProtectionBitlocker?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaInformationProtectionBitlocker](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaInformationProtectionBitlocker?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -83,4 +83,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgBetaBetaInformationProtectionBitlocker](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaInformationProtectionBitlocker?view=graph-powershell-beta)
+[Get-MgBetaInformationProtectionBitlocker](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaInformationProtectionBitlocker?view=graph-powershell-beta)

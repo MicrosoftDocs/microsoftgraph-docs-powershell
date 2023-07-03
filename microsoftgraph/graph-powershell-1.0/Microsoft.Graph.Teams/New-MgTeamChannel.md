@@ -14,7 +14,7 @@ This is the name that appears to the user in Microsoft Teams.
 If you're creating a private channel, you can add a maximum of 200 members.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBetaTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamChannel?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamChannel?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -8446,7 +8446,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebUrl <String>]`: Deep link URL of the tab instance. Read only.
 
 ## RELATED LINKS
-[New-MgBetaBetaTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamChannel?view=graph-powershell-beta)
+[New-MgBetaTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamChannel?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[New-MgBetaBetaTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamChannel?view=graph-powershell-beta)
+[New-MgBetaTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamChannel?view=graph-powershell-beta)

@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete an identity resource to remove the corresponding member from an externalGroup.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaBetaExternalConnectionGroupMember](/powershell/module/Microsoft.Graph.Beta.Search/Remove-MgBetaExternalConnectionGroupMember?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaExternalConnectionGroupMember](/powershell/module/Microsoft.Graph.Beta.Search/Remove-MgBetaExternalConnectionGroupMember?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -190,4 +190,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[IdentityId <String>]`: The unique identifier of identity
 
 ## RELATED LINKS
-[Remove-MgBetaBetaExternalConnectionGroupMember](/powershell/module/Microsoft.Graph.Beta.Search/Remove-MgBetaExternalConnectionGroupMember?view=graph-powershell-beta)
+[Remove-MgBetaExternalConnectionGroupMember](/powershell/module/Microsoft.Graph.Beta.Search/Remove-MgBetaExternalConnectionGroupMember?view=graph-powershell-beta)

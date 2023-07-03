@@ -13,7 +13,7 @@ This function is transitive.
 **Note:** Only users and role-enabled groups can be members of directory roles.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaGroupPermissionGrantMemberObject](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupPermissionGrantMemberObject?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupPermissionGrantMemberObject](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupPermissionGrantMemberObject?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -247,4 +247,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-[Get-MgBetaBetaGroupPermissionGrantMemberObject](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupPermissionGrantMemberObject?view=graph-powershell-beta)
+[Get-MgBetaGroupPermissionGrantMemberObject](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupPermissionGrantMemberObject?view=graph-powershell-beta)

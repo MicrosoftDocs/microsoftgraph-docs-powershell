@@ -11,7 +11,7 @@ schema: 2.0.0
 Create a new educationRubric object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBetaEducationUserRubric](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationUserRubric?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaEducationUserRubric](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationUserRubric?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -389,4 +389,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Weight <Single?>]`: If present, a numerical weight for this quality.  Weights must add up to 100.
 
 ## RELATED LINKS
-[New-MgBetaBetaEducationUserRubric](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationUserRubric?view=graph-powershell-beta)
+[New-MgBetaEducationUserRubric](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationUserRubric?view=graph-powershell-beta)

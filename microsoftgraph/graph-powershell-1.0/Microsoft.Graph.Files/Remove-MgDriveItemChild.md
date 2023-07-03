@@ -11,7 +11,7 @@ schema: 2.0.0
 Remove an item from a [bundle][].
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaBetaDriveItemChild](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveItemChild?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaDriveItemChild](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveItemChild?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -211,4 +211,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaBetaDriveItemChild](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveItemChild?view=graph-powershell-beta)
+[Remove-MgBetaDriveItemChild](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveItemChild?view=graph-powershell-beta)

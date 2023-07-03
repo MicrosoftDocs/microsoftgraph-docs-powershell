@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function getOffice365GroupsActivityGroupCounts
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaReportOffice365GroupActivityGroupCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOffice365GroupActivityGroupCount?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaReportOffice365GroupActivityGroupCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOffice365GroupActivityGroupCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -147,4 +147,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: Usage: userId='{userId}'
 
 ## RELATED LINKS
-[Get-MgBetaBetaReportOffice365GroupActivityGroupCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOffice365GroupActivityGroupCount?view=graph-powershell-beta)
+[Get-MgBetaReportOffice365GroupActivityGroupCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOffice365GroupActivityGroupCount?view=graph-powershell-beta)

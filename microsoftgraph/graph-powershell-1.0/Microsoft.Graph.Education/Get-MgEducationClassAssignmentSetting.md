@@ -11,7 +11,7 @@ schema: 2.0.0
 Specifies class-level assignments settings.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaEducationClassAssignmentSetting](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassAssignmentSetting?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationClassAssignmentSetting](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassAssignmentSetting?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -137,4 +137,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Get-MgBetaBetaEducationClassAssignmentSetting](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassAssignmentSetting?view=graph-powershell-beta)
+[Get-MgBetaEducationClassAssignmentSetting](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassAssignmentSetting?view=graph-powershell-beta)

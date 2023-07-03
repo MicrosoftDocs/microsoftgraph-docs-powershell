@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property columnLinks in sites
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBetaSiteListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteListContentTypeColumnLink?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaSiteListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteListContentTypeColumnLink?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -295,4 +295,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgBetaBetaSiteListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteListContentTypeColumnLink?view=graph-powershell-beta)
+[Update-MgBetaSiteListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteListContentTypeColumnLink?view=graph-powershell-beta)

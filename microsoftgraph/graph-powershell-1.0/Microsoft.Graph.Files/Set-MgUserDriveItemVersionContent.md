@@ -11,7 +11,7 @@ schema: 2.0.0
 The content stream for this version of the item.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaBetaUserDriveItemVersionContent](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaUserDriveItemVersionContent?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Set-MgBetaUserDriveItemVersionContent](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaUserDriveItemVersionContent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -233,4 +233,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Set-MgBetaBetaUserDriveItemVersionContent](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaUserDriveItemVersionContent?view=graph-powershell-beta)
+[Set-MgBetaUserDriveItemVersionContent](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaUserDriveItemVersionContent?view=graph-powershell-beta)

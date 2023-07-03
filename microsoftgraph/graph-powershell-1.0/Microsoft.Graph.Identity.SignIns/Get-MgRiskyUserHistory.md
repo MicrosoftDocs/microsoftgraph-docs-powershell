@@ -11,7 +11,7 @@ schema: 2.0.0
 The activity related to user risk level change
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaRiskyUserHistory](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaRiskyUserHistory?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaRiskyUserHistory](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaRiskyUserHistory?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -321,4 +321,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgBetaBetaRiskyUserHistory](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaRiskyUserHistory?view=graph-powershell-beta)
+[Get-MgBetaRiskyUserHistory](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaRiskyUserHistory?view=graph-powershell-beta)

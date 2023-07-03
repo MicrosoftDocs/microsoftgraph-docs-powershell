@@ -13,7 +13,7 @@ Nullable.
 Returns the plannerPlans owned by the group.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaGroupPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaGroupPlannerPlan?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaGroupPlannerPlan?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -275,4 +275,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaGroupPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaGroupPlannerPlan?view=graph-powershell-beta)
+[Get-MgBetaGroupPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaGroupPlannerPlan?view=graph-powershell-beta)

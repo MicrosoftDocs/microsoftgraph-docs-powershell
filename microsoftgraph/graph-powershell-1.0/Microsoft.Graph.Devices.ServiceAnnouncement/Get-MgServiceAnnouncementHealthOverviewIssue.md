@@ -11,7 +11,7 @@ schema: 2.0.0
 A collection of issues that happened on the service, with detailed information for each issue.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaServiceAnnouncementHealthOverviewIssue](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Get-MgBetaServiceAnnouncementHealthOverviewIssue?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaServiceAnnouncementHealthOverviewIssue](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Get-MgBetaServiceAnnouncementHealthOverviewIssue?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -277,4 +277,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ServiceUpdateMessageId <String>]`: The unique identifier of serviceUpdateMessage
 
 ## RELATED LINKS
-[Get-MgBetaBetaServiceAnnouncementHealthOverviewIssue](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Get-MgBetaServiceAnnouncementHealthOverviewIssue?view=graph-powershell-beta)
+[Get-MgBetaServiceAnnouncementHealthOverviewIssue](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Get-MgBetaServiceAnnouncementHealthOverviewIssue?view=graph-powershell-beta)

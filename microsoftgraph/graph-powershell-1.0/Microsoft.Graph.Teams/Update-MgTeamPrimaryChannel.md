@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property primaryChannel in teams
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBetaTeamPrimaryChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamPrimaryChannel?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaTeamPrimaryChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamPrimaryChannel?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -8352,7 +8352,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebUrl <String>]`: Deep link URL of the tab instance. Read only.
 
 ## RELATED LINKS
-[Update-MgBetaBetaTeamPrimaryChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamPrimaryChannel?view=graph-powershell-beta)
+[Update-MgBetaTeamPrimaryChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamPrimaryChannel?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaBetaTeamPrimaryChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamPrimaryChannel?view=graph-powershell-beta)
+[Update-MgBetaTeamPrimaryChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamPrimaryChannel?view=graph-powershell-beta)

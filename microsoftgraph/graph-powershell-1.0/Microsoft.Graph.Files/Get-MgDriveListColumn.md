@@ -11,7 +11,7 @@ schema: 2.0.0
 The collection of field definitions for this list.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaDriveListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListColumn?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListColumn?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -297,4 +297,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaDriveListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListColumn?view=graph-powershell-beta)
+[Get-MgBetaDriveListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListColumn?view=graph-powershell-beta)

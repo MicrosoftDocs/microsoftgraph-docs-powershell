@@ -11,7 +11,7 @@ schema: 2.0.0
 Get assignmentPolicies from identityGovernance
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaEntitlementManagementAccessPackageAssignmentPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementAccessPackageAssignmentPolicy?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaEntitlementManagementAccessPackageAssignmentPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementAccessPackageAssignmentPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -308,4 +308,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaEntitlementManagementAccessPackageAssignmentPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementAccessPackageAssignmentPolicy?view=graph-powershell-beta)
+[Get-MgBetaEntitlementManagementAccessPackageAssignmentPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementAccessPackageAssignmentPolicy?view=graph-powershell-beta)

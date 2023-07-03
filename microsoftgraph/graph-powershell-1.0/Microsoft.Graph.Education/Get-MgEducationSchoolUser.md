@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the educationUser resources associated with an educationSchool.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaEducationSchoolUser](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationSchoolUser?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationSchoolUser](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationSchoolUser?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -213,4 +213,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgBetaBetaEducationSchoolUser](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationSchoolUser?view=graph-powershell-beta)
+[Get-MgBetaEducationSchoolUser](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationSchoolUser?view=graph-powershell-beta)

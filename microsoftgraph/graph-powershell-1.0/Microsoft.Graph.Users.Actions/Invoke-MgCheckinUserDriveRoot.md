@@ -11,7 +11,7 @@ schema: 2.0.0
 Check in a checked out **driveItem** resource, which makes the version of the document available to others.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaBetaCheckinUserDriveRoot](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaCheckinUserDriveRoot?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Invoke-MgBetaCheckinUserDriveRoot](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaCheckinUserDriveRoot?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -288,4 +288,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBetaBetaCheckinUserDriveRoot](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaCheckinUserDriveRoot?view=graph-powershell-beta)
+[Invoke-MgBetaCheckinUserDriveRoot](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaCheckinUserDriveRoot?view=graph-powershell-beta)

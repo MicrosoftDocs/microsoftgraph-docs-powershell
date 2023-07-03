@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the number of the resource
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaDeviceManagementWindowsInformationProtectionAppLearningSummaryCount](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementWindowsInformationProtectionAppLearningSummaryCount?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementWindowsInformationProtectionAppLearningSummaryCount](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementWindowsInformationProtectionAppLearningSummaryCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -80,4 +80,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgBetaBetaDeviceManagementWindowsInformationProtectionAppLearningSummaryCount](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementWindowsInformationProtectionAppLearningSummaryCount?view=graph-powershell-beta)
+[Get-MgBetaDeviceManagementWindowsInformationProtectionAppLearningSummaryCount](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementWindowsInformationProtectionAppLearningSummaryCount?view=graph-powershell-beta)

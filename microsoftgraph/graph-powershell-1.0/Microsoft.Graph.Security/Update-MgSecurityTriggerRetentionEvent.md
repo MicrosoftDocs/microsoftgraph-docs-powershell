@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property retentionEvents in security
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBetaSecurityTriggerRetentionEvent](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityTriggerRetentionEvent?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaSecurityTriggerRetentionEvent](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityTriggerRetentionEvent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -525,7 +525,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[LastModifiedDateTime <DateTime?>]`: The latest date time when the retentionEventType was modified.
 
 ## RELATED LINKS
-[Update-MgBetaBetaSecurityTriggerRetentionEvent](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityTriggerRetentionEvent?view=graph-powershell-beta)
+[Update-MgBetaSecurityTriggerRetentionEvent](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityTriggerRetentionEvent?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaBetaSecurityTriggerRetentionEvent](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityTriggerRetentionEvent?view=graph-powershell-beta)
+[Update-MgBetaSecurityTriggerRetentionEvent](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityTriggerRetentionEvent?view=graph-powershell-beta)

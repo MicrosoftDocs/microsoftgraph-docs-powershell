@@ -11,7 +11,7 @@ schema: 2.0.0
 Reset a caseSettings object to the default values.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Reset-MgBetaBetaSecurityCaseEdiscoveryCaseSettingToDefault](/powershell/module/Microsoft.Graph.Beta.Security/Reset-MgBetaSecurityCaseEdiscoveryCaseSettingToDefault?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Reset-MgBetaSecurityCaseEdiscoveryCaseSettingToDefault](/powershell/module/Microsoft.Graph.Beta.Security/Reset-MgBetaSecurityCaseEdiscoveryCaseSettingToDefault?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -160,4 +160,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
-[Reset-MgBetaBetaSecurityCaseEdiscoveryCaseSettingToDefault](/powershell/module/Microsoft.Graph.Beta.Security/Reset-MgBetaSecurityCaseEdiscoveryCaseSettingToDefault?view=graph-powershell-beta)
+[Reset-MgBetaSecurityCaseEdiscoveryCaseSettingToDefault](/powershell/module/Microsoft.Graph.Beta.Security/Reset-MgBetaSecurityCaseEdiscoveryCaseSettingToDefault?view=graph-powershell-beta)

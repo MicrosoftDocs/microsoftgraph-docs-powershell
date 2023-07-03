@@ -11,7 +11,7 @@ schema: 2.0.0
 Get externalColumns from groups
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaGroupSiteExternalColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteExternalColumn?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteExternalColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteExternalColumn?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -326,4 +326,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaGroupSiteExternalColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteExternalColumn?view=graph-powershell-beta)
+[Get-MgBetaGroupSiteExternalColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteExternalColumn?view=graph-powershell-beta)

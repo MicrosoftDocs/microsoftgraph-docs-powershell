@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function isPublished
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Test-MgBetaBetaGroupSiteContentTypePublished](/powershell/module/Microsoft.Graph.Beta.Groups/Test-MgBetaGroupSiteContentTypePublished?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Test-MgBetaGroupSiteContentTypePublished](/powershell/module/Microsoft.Graph.Beta.Groups/Test-MgBetaGroupSiteContentTypePublished?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -164,4 +164,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-[Test-MgBetaBetaGroupSiteContentTypePublished](/powershell/module/Microsoft.Graph.Beta.Groups/Test-MgBetaGroupSiteContentTypePublished?view=graph-powershell-beta)
+[Test-MgBetaGroupSiteContentTypePublished](/powershell/module/Microsoft.Graph.Beta.Groups/Test-MgBetaGroupSiteContentTypePublished?view=graph-powershell-beta)

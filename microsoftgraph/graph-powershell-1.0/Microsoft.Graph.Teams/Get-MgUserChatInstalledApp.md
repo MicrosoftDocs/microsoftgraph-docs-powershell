@@ -11,7 +11,7 @@ schema: 2.0.0
 Get an app installed in a chat.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaUserChatInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserChatInstalledApp?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaUserChatInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserChatInstalledApp?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -315,4 +315,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaBetaUserChatInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserChatInstalledApp?view=graph-powershell-beta)
+[Get-MgBetaUserChatInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserChatInstalledApp?view=graph-powershell-beta)

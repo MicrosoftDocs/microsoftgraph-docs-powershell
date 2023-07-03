@@ -11,7 +11,7 @@ schema: 2.0.0
 The profile photo for the team.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaGroupTeamPhoto](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamPhoto?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamPhoto](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamPhoto?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -160,4 +160,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaBetaGroupTeamPhoto](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamPhoto?view=graph-powershell-beta)
+[Get-MgBetaGroupTeamPhoto](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamPhoto?view=graph-powershell-beta)

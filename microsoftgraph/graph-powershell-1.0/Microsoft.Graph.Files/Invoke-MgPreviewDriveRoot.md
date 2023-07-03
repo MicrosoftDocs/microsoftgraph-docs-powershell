@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke action preview
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaBetaPreviewDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaPreviewDriveRoot?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Invoke-MgBetaPreviewDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaPreviewDriveRoot?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -236,4 +236,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBetaBetaPreviewDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaPreviewDriveRoot?view=graph-powershell-beta)
+[Invoke-MgBetaPreviewDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaPreviewDriveRoot?view=graph-powershell-beta)

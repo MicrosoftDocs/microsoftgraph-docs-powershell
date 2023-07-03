@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property lastMessagePreview in chats
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBetaChatLastMessagePreview](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaChatLastMessagePreview?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaChatLastMessagePreview](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaChatLastMessagePreview?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -337,4 +337,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Update-MgBetaBetaChatLastMessagePreview](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaChatLastMessagePreview?view=graph-powershell-beta)
+[Update-MgBetaChatLastMessagePreview](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaChatLastMessagePreview?view=graph-powershell-beta)

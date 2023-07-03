@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function availableProviderTypes
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaBetaAvailableDirectoryFederationConfigurationProviderType](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Invoke-MgBetaAvailableDirectoryFederationConfigurationProviderType?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Invoke-MgBetaAvailableDirectoryFederationConfigurationProviderType](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Invoke-MgBetaAvailableDirectoryFederationConfigurationProviderType?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -129,4 +129,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Invoke-MgBetaBetaAvailableDirectoryFederationConfigurationProviderType](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Invoke-MgBetaAvailableDirectoryFederationConfigurationProviderType?view=graph-powershell-beta)
+[Invoke-MgBetaAvailableDirectoryFederationConfigurationProviderType](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Invoke-MgBetaAvailableDirectoryFederationConfigurationProviderType?view=graph-powershell-beta)

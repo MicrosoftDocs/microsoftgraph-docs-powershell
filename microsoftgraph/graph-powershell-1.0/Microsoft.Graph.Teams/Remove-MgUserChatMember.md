@@ -11,7 +11,7 @@ schema: 2.0.0
 Remove a conversationMember from a chat.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaBetaUserChatMember](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaUserChatMember?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserChatMember](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaUserChatMember?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -222,4 +222,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgBetaBetaUserChatMember](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaUserChatMember?view=graph-powershell-beta)
+[Remove-MgBetaUserChatMember](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaUserChatMember?view=graph-powershell-beta)

@@ -11,7 +11,7 @@ schema: 2.0.0
 Update a [content type][contentType].
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBetaGroupSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteContentType?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteContentType?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -1583,7 +1583,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Position <Int32?>]`: Specifies the position in which the Content Type appears in the selection UI.
 
 ## RELATED LINKS
-[Update-MgBetaBetaGroupSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteContentType?view=graph-powershell-beta)
+[Update-MgBetaGroupSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteContentType?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaBetaGroupSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteContentType?view=graph-powershell-beta)
+[Update-MgBetaGroupSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteContentType?view=graph-powershell-beta)

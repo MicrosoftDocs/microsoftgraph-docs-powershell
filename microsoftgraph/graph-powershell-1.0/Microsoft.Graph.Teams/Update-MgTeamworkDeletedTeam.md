@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property deletedTeams in teamwork
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBetaTeamworkDeletedTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamworkDeletedTeam?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaTeamworkDeletedTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamworkDeletedTeam?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -5429,7 +5429,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Update-MgBetaBetaTeamworkDeletedTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamworkDeletedTeam?view=graph-powershell-beta)
+[Update-MgBetaTeamworkDeletedTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamworkDeletedTeam?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaBetaTeamworkDeletedTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamworkDeletedTeam?view=graph-powershell-beta)
+[Update-MgBetaTeamworkDeletedTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamworkDeletedTeam?view=graph-powershell-beta)

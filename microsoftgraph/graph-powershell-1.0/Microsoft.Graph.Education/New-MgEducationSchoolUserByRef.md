@@ -11,7 +11,7 @@ schema: 2.0.0
 Add a user to a school.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBetaEducationSchoolUserByRef](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationSchoolUserByRef?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaEducationSchoolUserByRef](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationSchoolUserByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -217,4 +217,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[New-MgBetaBetaEducationSchoolUserByRef](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationSchoolUserByRef?view=graph-powershell-beta)
+[New-MgBetaEducationSchoolUserByRef](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationSchoolUserByRef?view=graph-powershell-beta)

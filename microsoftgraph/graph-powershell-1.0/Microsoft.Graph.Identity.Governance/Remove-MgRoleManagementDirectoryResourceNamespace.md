@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property resourceNamespaces for roleManagement
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaBetaRoleManagementDirectoryResourceNamespace](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaRoleManagementDirectoryResourceNamespace?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaRoleManagementDirectoryResourceNamespace](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaRoleManagementDirectoryResourceNamespace?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -196,4 +196,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaBetaRoleManagementDirectoryResourceNamespace](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaRoleManagementDirectoryResourceNamespace?view=graph-powershell-beta)
+[Remove-MgBetaRoleManagementDirectoryResourceNamespace](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaRoleManagementDirectoryResourceNamespace?view=graph-powershell-beta)

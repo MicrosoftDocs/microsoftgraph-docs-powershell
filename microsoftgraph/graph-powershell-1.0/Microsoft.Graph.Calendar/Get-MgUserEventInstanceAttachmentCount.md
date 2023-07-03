@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the number of the resource
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaUserEventInstanceAttachmentCount](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserEventInstanceAttachmentCount?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaUserEventInstanceAttachmentCount](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserEventInstanceAttachmentCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -150,4 +150,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaUserEventInstanceAttachmentCount](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserEventInstanceAttachmentCount?view=graph-powershell-beta)
+[Get-MgBetaUserEventInstanceAttachmentCount](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserEventInstanceAttachmentCount?view=graph-powershell-beta)

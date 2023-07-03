@@ -14,7 +14,7 @@ See known limitations of open extensions for more information.
 The table in the Permissions section lists the resources that support open extensions.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBetaGroupConversation](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupConversation?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaGroupConversation](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupConversation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -454,7 +454,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UniqueSenders <String[]>]`: All the users that sent a message to this thread. Returned by default.
 
 ## RELATED LINKS
-[New-MgBetaBetaGroupConversation](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupConversation?view=graph-powershell-beta)
+[New-MgBetaGroupConversation](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupConversation?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[New-MgBetaBetaGroupConversation](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupConversation?view=graph-powershell-beta)
+[New-MgBetaGroupConversation](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupConversation?view=graph-powershell-beta)

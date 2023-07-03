@@ -11,7 +11,7 @@ schema: 2.0.0
 Recover passcode
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Restore-MgBetaBetaUserManagedDevicePasscode](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Restore-MgBetaUserManagedDevicePasscode?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Restore-MgBetaUserManagedDevicePasscode](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Restore-MgBetaUserManagedDevicePasscode?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -189,4 +189,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Restore-MgBetaBetaUserManagedDevicePasscode](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Restore-MgBetaUserManagedDevicePasscode?view=graph-powershell-beta)
+[Restore-MgBetaUserManagedDevicePasscode](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Restore-MgBetaUserManagedDevicePasscode?view=graph-powershell-beta)

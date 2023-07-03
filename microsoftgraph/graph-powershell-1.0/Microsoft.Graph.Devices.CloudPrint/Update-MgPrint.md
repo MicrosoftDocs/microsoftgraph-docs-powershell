@@ -11,7 +11,7 @@ schema: 2.0.0
 Update print
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBetaPrint](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgBetaPrint?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaPrint](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgBetaPrint?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -8656,7 +8656,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[Event <String>]`: printEvent
 
 ## RELATED LINKS
-[Update-MgBetaBetaPrint](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgBetaPrint?view=graph-powershell-beta)
+[Update-MgBetaPrint](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgBetaPrint?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaBetaPrint](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgBetaPrint?view=graph-powershell-beta)
+[Update-MgBetaPrint](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgBetaPrint?view=graph-powershell-beta)

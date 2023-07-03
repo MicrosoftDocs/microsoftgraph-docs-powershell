@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property incidents for security
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaBetaSecurityIncident](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityIncident?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityIncident](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityIncident?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -179,4 +179,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
-[Remove-MgBetaBetaSecurityIncident](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityIncident?view=graph-powershell-beta)
+[Remove-MgBetaSecurityIncident](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityIncident?view=graph-powershell-beta)

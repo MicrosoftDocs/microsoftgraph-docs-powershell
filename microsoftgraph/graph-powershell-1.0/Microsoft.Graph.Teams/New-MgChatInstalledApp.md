@@ -11,7 +11,7 @@ schema: 2.0.0
 Install a teamsApp to the specified chat.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBetaChatInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaChatInstalledApp?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaChatInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaChatInstalledApp?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -333,4 +333,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Version <String>]`: The version number of the application.
 
 ## RELATED LINKS
-[New-MgBetaBetaChatInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaChatInstalledApp?view=graph-powershell-beta)
+[New-MgBetaChatInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaChatInstalledApp?view=graph-powershell-beta)

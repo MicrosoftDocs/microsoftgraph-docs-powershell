@@ -13,7 +13,7 @@ To learn more about group-based licensing, see What is group-based licensing in 
 Also see Identify and resolve license assignment problems for a group in Azure Active Directory for more details.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaBetaLicenseUser](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaLicenseUser?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Invoke-MgBetaLicenseUser](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaLicenseUser?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -153,4 +153,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBetaBetaLicenseUser](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaLicenseUser?view=graph-powershell-beta)
+[Invoke-MgBetaLicenseUser](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaLicenseUser?view=graph-powershell-beta)

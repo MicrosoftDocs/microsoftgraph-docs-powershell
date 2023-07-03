@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property contacts in users
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBetaUserContactFolderContact](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Update-MgBetaUserContactFolderContact?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaUserContactFolderContact](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Update-MgBetaUserContactFolderContact?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -999,4 +999,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Value <String>]`: A property value.
 
 ## RELATED LINKS
-[Update-MgBetaBetaUserContactFolderContact](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Update-MgBetaUserContactFolderContact?view=graph-powershell-beta)
+[Update-MgBetaUserContactFolderContact](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Update-MgBetaUserContactFolderContact?view=graph-powershell-beta)

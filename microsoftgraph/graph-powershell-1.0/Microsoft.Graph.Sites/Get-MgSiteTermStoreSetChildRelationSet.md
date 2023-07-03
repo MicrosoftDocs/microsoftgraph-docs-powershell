@@ -11,7 +11,7 @@ schema: 2.0.0
 The [set] in which the relation is relevant.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaSiteTermStoreSetChildRelationSet](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteTermStoreSetChildRelationSet?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteTermStoreSetChildRelationSet](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteTermStoreSetChildRelationSet?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -279,4 +279,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaSiteTermStoreSetChildRelationSet](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteTermStoreSetChildRelationSet?view=graph-powershell-beta)
+[Get-MgBetaSiteTermStoreSetChildRelationSet](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteTermStoreSetChildRelationSet?view=graph-powershell-beta)

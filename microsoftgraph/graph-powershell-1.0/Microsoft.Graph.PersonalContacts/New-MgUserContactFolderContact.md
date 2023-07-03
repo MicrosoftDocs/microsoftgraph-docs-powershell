@@ -11,7 +11,7 @@ schema: 2.0.0
 Add a contact to the root Contacts folder or to the \`contacts\` endpoint of another contact folder.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBetaUserContactFolderContact](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/New-MgBetaUserContactFolderContact?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaUserContactFolderContact](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/New-MgBetaUserContactFolderContact?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -1022,7 +1022,7 @@ Read-only.
   \[Value \<String\>\]: A property value.
 
 ## RELATED LINKS
-[New-MgBetaBetaUserContactFolderContact](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/New-MgBetaUserContactFolderContact?view=graph-powershell-beta)
+[New-MgBetaUserContactFolderContact](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/New-MgBetaUserContactFolderContact?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/new-mgusercontactfoldercontact](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/new-mgusercontactfoldercontact)
 

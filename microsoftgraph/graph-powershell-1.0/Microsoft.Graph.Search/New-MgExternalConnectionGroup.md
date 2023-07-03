@@ -11,7 +11,7 @@ schema: 2.0.0
 Create a new externalGroup object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBetaExternalConnectionGroup](/powershell/module/Microsoft.Graph.Beta.Search/New-MgBetaExternalConnectionGroup?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaExternalConnectionGroup](/powershell/module/Microsoft.Graph.Beta.Search/New-MgBetaExternalConnectionGroup?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -260,4 +260,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String>]`: identityType
 
 ## RELATED LINKS
-[New-MgBetaBetaExternalConnectionGroup](/powershell/module/Microsoft.Graph.Beta.Search/New-MgBetaExternalConnectionGroup?view=graph-powershell-beta)
+[New-MgBetaExternalConnectionGroup](/powershell/module/Microsoft.Graph.Beta.Search/New-MgBetaExternalConnectionGroup?view=graph-powershell-beta)

@@ -12,7 +12,7 @@ Returns a list of activities performed on the item.
 Write-only.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaExternalConnectionItemActivity](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternalConnectionItemActivity?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaExternalConnectionItemActivity](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternalConnectionItemActivity?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -292,4 +292,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[IdentityId <String>]`: The unique identifier of identity
 
 ## RELATED LINKS
-[Get-MgBetaBetaExternalConnectionItemActivity](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternalConnectionItemActivity?view=graph-powershell-beta)
+[Get-MgBetaExternalConnectionItemActivity](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternalConnectionItemActivity?view=graph-powershell-beta)

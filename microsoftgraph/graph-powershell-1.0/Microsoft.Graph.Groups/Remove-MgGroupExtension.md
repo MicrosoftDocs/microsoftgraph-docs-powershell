@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property extensions for groups
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaBetaGroupExtension](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupExtension?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupExtension](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupExtension?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -211,4 +211,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-[Remove-MgBetaBetaGroupExtension](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupExtension?view=graph-powershell-beta)
+[Remove-MgBetaGroupExtension](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupExtension?view=graph-powershell-beta)

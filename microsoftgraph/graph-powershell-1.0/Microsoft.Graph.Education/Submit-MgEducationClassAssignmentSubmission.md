@@ -16,7 +16,7 @@ The teacher will be looking at the submitted resources list for grading.
 A teacher can also submit a student's assignment on their behalf.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Submit-MgBetaBetaEducationClassAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Submit-MgBetaEducationClassAssignmentSubmission?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Submit-MgBetaEducationClassAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Submit-MgBetaEducationClassAssignmentSubmission?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -173,4 +173,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Submit-MgBetaBetaEducationClassAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Submit-MgBetaEducationClassAssignmentSubmission?view=graph-powershell-beta)
+[Submit-MgBetaEducationClassAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Submit-MgBetaEducationClassAssignmentSubmission?view=graph-powershell-beta)

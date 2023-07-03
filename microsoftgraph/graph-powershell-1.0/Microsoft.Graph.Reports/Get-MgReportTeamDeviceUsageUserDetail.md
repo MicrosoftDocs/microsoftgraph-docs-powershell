@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function getTeamsDeviceUsageUserDetail
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaReportTeamDeviceUsageUserDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportTeamDeviceUsageUserDetail?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaReportTeamDeviceUsageUserDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportTeamDeviceUsageUserDetail?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -172,4 +172,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: Usage: userId='{userId}'
 
 ## RELATED LINKS
-[Get-MgBetaBetaReportTeamDeviceUsageUserDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportTeamDeviceUsageUserDetail?view=graph-powershell-beta)
+[Get-MgBetaReportTeamDeviceUsageUserDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportTeamDeviceUsageUserDetail?view=graph-powershell-beta)

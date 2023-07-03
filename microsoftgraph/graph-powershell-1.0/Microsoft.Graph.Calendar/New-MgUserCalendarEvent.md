@@ -12,7 +12,7 @@ Use this API to create a new event in a calendar.
 The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBetaUserCalendarEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserCalendarEvent?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaUserCalendarEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserCalendarEvent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -1906,7 +1906,7 @@ START \<IMicrosoftGraphDateTimeZone\>: dateTimeTimeZone
 See below for more possible values.
 
 ## RELATED LINKS
-[New-MgBetaBetaUserCalendarEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserCalendarEvent?view=graph-powershell-beta)
+[New-MgBetaUserCalendarEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserCalendarEvent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgusercalendarevent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgusercalendarevent)
 

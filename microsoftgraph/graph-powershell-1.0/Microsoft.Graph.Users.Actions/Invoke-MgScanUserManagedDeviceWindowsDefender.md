@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke action windowsDefenderScan
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaBetaScanUserManagedDeviceWindowsDefender](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaScanUserManagedDeviceWindowsDefender?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Invoke-MgBetaScanUserManagedDeviceWindowsDefender](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaScanUserManagedDeviceWindowsDefender?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -250,4 +250,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBetaBetaScanUserManagedDeviceWindowsDefender](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaScanUserManagedDeviceWindowsDefender?view=graph-powershell-beta)
+[Invoke-MgBetaScanUserManagedDeviceWindowsDefender](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaScanUserManagedDeviceWindowsDefender?view=graph-powershell-beta)

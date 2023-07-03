@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property sets for sites
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaBetaSiteTermStoreGroupSet](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteTermStoreGroupSet?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaSiteTermStoreGroupSet](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteTermStoreGroupSet?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -256,4 +256,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaBetaSiteTermStoreGroupSet](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteTermStoreGroupSet?view=graph-powershell-beta)
+[Remove-MgBetaSiteTermStoreGroupSet](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteTermStoreGroupSet?view=graph-powershell-beta)

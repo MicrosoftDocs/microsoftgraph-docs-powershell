@@ -11,7 +11,7 @@ schema: 2.0.0
 Update media content for the navigation property photo in users
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaBetaUserContactFolderChildFolderContactPhotoContent](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Set-MgBetaUserContactFolderChildFolderContactPhotoContent?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Set-MgBetaUserContactFolderChildFolderContactPhotoContent](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Set-MgBetaUserContactFolderChildFolderContactPhotoContent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -230,4 +230,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Set-MgBetaBetaUserContactFolderChildFolderContactPhotoContent](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Set-MgBetaUserContactFolderChildFolderContactPhotoContent?view=graph-powershell-beta)
+[Set-MgBetaUserContactFolderChildFolderContactPhotoContent](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Set-MgBetaUserContactFolderChildFolderContactPhotoContent?view=graph-powershell-beta)

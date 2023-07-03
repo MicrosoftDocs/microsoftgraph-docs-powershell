@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to timeOffRequests for teams
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBetaTeamScheduleTimeOffRequest](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamScheduleTimeOffRequest?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaTeamScheduleTimeOffRequest](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamScheduleTimeOffRequest?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -370,4 +370,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
-[New-MgBetaBetaTeamScheduleTimeOffRequest](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamScheduleTimeOffRequest?view=graph-powershell-beta)
+[New-MgBetaTeamScheduleTimeOffRequest](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamScheduleTimeOffRequest?view=graph-powershell-beta)

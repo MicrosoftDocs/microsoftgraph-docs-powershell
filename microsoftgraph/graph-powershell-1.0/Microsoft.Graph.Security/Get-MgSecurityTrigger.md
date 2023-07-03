@@ -11,7 +11,7 @@ schema: 2.0.0
 Get triggers from security
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaSecurityTrigger](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityTrigger?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityTrigger](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityTrigger?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -79,4 +79,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgBetaBetaSecurityTrigger](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityTrigger?view=graph-powershell-beta)
+[Get-MgBetaSecurityTrigger](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityTrigger?view=graph-powershell-beta)

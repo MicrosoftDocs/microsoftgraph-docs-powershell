@@ -11,7 +11,7 @@ schema: 2.0.0
 Recover passcode
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Restore-MgBetaBetaDeviceManagementManagedDevicePasscode](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Restore-MgBetaDeviceManagementManagedDevicePasscode?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Restore-MgBetaDeviceManagementManagedDevicePasscode](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Restore-MgBetaDeviceManagementManagedDevicePasscode?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -155,4 +155,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
-[Restore-MgBetaBetaDeviceManagementManagedDevicePasscode](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Restore-MgBetaDeviceManagementManagedDevicePasscode?view=graph-powershell-beta)
+[Restore-MgBetaDeviceManagementManagedDevicePasscode](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Restore-MgBetaDeviceManagementManagedDevicePasscode?view=graph-powershell-beta)

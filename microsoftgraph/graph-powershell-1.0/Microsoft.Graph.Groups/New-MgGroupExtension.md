@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to extensions for groups
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBetaGroupExtension](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupExtension?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaGroupExtension](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupExtension?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -224,4 +224,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-[New-MgBetaBetaGroupExtension](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupExtension?view=graph-powershell-beta)
+[New-MgBetaGroupExtension](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupExtension?view=graph-powershell-beta)

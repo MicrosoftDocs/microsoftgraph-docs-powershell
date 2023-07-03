@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete a class from a school.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaBetaEducationSchoolClassByRef](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationSchoolClassByRef?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaEducationSchoolClassByRef](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationSchoolClassByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -201,4 +201,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Remove-MgBetaBetaEducationSchoolClassByRef](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationSchoolClassByRef?view=graph-powershell-beta)
+[Remove-MgBetaEducationSchoolClassByRef](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationSchoolClassByRef?view=graph-powershell-beta)
