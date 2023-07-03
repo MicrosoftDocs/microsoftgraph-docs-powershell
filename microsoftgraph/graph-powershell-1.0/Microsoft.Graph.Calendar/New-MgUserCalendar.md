@@ -61,15 +61,12 @@ Create a new calendar for a user.
 ### EXAMPLE 1
 ```
 Import-Module Microsoft.Graph.Calendar
-```
-
 $params = @{
 	name = "Volunteer"
 }
-
 # A UPN can also be used as -UserId.
 New-MgUserCalendar -UserId $userId -BodyParameter $params
-
+```
 ## PARAMETERS
 
 ### -AdditionalProperties

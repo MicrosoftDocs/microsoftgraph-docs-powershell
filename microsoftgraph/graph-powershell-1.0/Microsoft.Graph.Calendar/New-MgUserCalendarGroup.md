@@ -49,7 +49,6 @@ Use this API to create a new CalendarGroup.
 ### EXAMPLE 1
 ```
 Import-Module Microsoft.Graph.Calendar
-
 $params = @{
 	name = "Personal events"
 }

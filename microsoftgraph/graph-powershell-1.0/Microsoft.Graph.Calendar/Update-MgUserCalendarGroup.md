@@ -49,15 +49,12 @@ Update the properties of calendargroup object.
 ### EXAMPLE 1
 ```
 Import-Module Microsoft.Graph.Calendar
-```
-
 $params = @{
 	name = "name-value"
 }
-
 # A UPN can also be used as -UserId.
 Update-MgUserCalendarGroup -UserId $userId -CalendarGroupId $calendarGroupId -BodyParameter $params
-
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
