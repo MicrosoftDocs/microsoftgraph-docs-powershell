@@ -41,11 +41,11 @@ Get the properties and relationships of a messageRule object.
 ### EXAMPLE 1
 ```
 Import-Module Microsoft.Graph.Mail
-```
+
 
 # A UPN can also be used as -UserId.
 Get-MgUserMailFolderMessageRule -UserId $userId -MailFolderId $mailFolderId -MessageRuleId $messageRuleId
-
+```
 ## PARAMETERS
 
 ### -All

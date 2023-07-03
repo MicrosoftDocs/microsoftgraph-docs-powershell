@@ -75,7 +75,6 @@ Update the properties of a message object.
 ### EXAMPLE 1
 ```
 Import-Module Microsoft.Graph.Mail
-```
 
 $params = @{
 	subject = "subject-value"
@@ -88,7 +87,7 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Update-MgUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
-
+```
 ## PARAMETERS
 
 ### -AdditionalProperties

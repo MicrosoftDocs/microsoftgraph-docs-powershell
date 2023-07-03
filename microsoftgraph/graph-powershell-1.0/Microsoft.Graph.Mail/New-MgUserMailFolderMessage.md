@@ -75,7 +75,6 @@ Use this API to create a new Message in a mailfolder.
 ### EXAMPLE 1
 ```
 Import-Module Microsoft.Graph.Mail
-```
 
 $params = @{
 	receivedDateTime = \[System.DateTime\]::Parse("datetime-value")
@@ -91,7 +90,7 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserMailFolderMessage -UserId $userId -MailFolderId $mailFolderId -BodyParameter $params
-
+```
 ## PARAMETERS
 
 ### -AdditionalProperties

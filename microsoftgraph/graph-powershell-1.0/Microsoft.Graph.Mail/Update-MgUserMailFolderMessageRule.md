@@ -52,8 +52,6 @@ Change writable properties on a messageRule object and save the changes.
 ### EXAMPLE 1
 ```
 Import-Module Microsoft.Graph.Mail
-```
-
 $params = @{
 	displayName = "Important from partner"
 	actions = @{
@@ -63,7 +61,7 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Update-MgUserMailFolderMessageRule -UserId $userId -MailFolderId $mailFolderId -MessageRuleId $messageRuleId -BodyParameter $params
-
+```
 ## PARAMETERS
 
 ### -Actions
