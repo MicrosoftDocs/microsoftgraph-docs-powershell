@@ -23,7 +23,7 @@ resources:
      type: github
      endpoint: microsoftgraph
      name: microsoftgraph/msgraph-sdk-powershell
-     ref: dev
+     ref: v2/generation
 
    - repository: microsoft-graph-docs
      type: github
@@ -75,7 +75,15 @@ jobs:
     inputs:
       targetType: 'filePath'
       pwsh: true
-      filePath: microsoftgraph-docs-powershell\scripts\MsProdUpdate.ps1  
+      filePath: microsoftgraph-docs-powershell\scripts\MsProdUpdate.ps1
+
+  - task: PowerShell@2
+    displayName: 'Update Links'
+    continueOnError: false
+    inputs:
+      targetType: 'filePath'
+      pwsh: true
+      filePath: microsoftgraph-docs-powershell\scripts\UpdateLinks.ps1  
 
   - task: PowerShell@2
     displayName: Pushing to github
@@ -89,9 +97,9 @@ jobs:
         git config --global user.name "Timothy Wamalwa"
         cd microsoftgraph-docs-powershell
         $date = Get-Date -Format "dd-MM-yyyy"
-        $proposedBranch = "weekly_update_help_files_"+$date
+        $proposedBranch = "weekly_v2_docs_update_$date"
         git add .
-        git commit -m "Updating help files "+$date
+        git commit -m "Updating help files $date"
         git push --set-upstream "https://$(GITHUB_TOKEN)@github.com/MicrosoftDocs/microsoftgraph-docs-powershell.git" $proposedBranch
         git status
          

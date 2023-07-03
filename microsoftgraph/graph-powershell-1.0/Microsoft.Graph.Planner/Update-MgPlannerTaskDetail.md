@@ -1,7 +1,7 @@
 ---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/update-mgplannertaskdetail
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mgplannertaskdetail
 schema: 2.0.0
 ---
 
@@ -10,32 +10,35 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property details in planner
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaPlannerTaskDetail](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgBetaPlannerTaskDetail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgPlannerTaskDetail -PlannerTaskId <String> -IfMatch <String> [-AdditionalProperties <Hashtable>]
  [-Checklist <Hashtable>] [-Description <String>] [-Id <String>] [-PreviewType <String>]
- [-References <Hashtable>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-References <Hashtable>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgPlannerTaskDetail -PlannerTaskId <String> -IfMatch <String>
- -BodyParameter <IMicrosoftGraphPlannerTaskDetails> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPlannerTaskDetails> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgPlannerTaskDetail -InputObject <IPlannerIdentity> -IfMatch <String>
  [-AdditionalProperties <Hashtable>] [-Checklist <Hashtable>] [-Description <String>] [-Id <String>]
- [-PreviewType <String>] [-References <Hashtable>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PreviewType <String>] [-References <Hashtable>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgPlannerTaskDetail -InputObject <IPlannerIdentity> -IfMatch <String>
- -BodyParameter <IMicrosoftGraphPlannerTaskDetails> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPlannerTaskDetails> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -43,43 +46,42 @@ Update the navigation property details in planner
 
 ## EXAMPLES
 
-### Example 1: Using the Update-MgPlannerTaskDetail Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Planner
+
 $params = @{
-	PreviewType = "noPreview"
-	References = @{
-		"Http%3A//developer%2Emicrosoft%2Ecom" = @{
+	previewType = "noPreview"
+	references = @{
+		"http%3A//developer%2Emicrosoft%2Ecom" = @{
 			"@odata.type" = "microsoft.graph.plannerExternalReference"
-			Alias = "Documentation"
-			PreviewPriority = " !"
-			Type = "Other"
+			alias = "Documentation"
+			previewPriority = " !"
+			type = "Other"
 		}
-		"Https%3A//developer%2Emicrosoft%2Ecom/en-us/graph/graph-explorer" = @{
+		"https%3A//developer%2Emicrosoft%2Ecom/en-us/graph/graph-explorer" = @{
 			"@odata.type" = "microsoft.graph.plannerExternalReference"
-			PreviewPriority = "  !!"
+			previewPriority = "  !!"
 		}
-		"Http%3A//www%2Ebing%2Ecom" = $null
+		"http%3A//www%2Ebing%2Ecom" = $null
 	}
-	Checklist = @{
+	checklist = @{
 		"95e27074-6c4a-447a-aa24-9d718a0b86fa" = @{
 			"@odata.type" = "microsoft.graph.plannerChecklistItem"
-			Title = "Update task details"
-			IsChecked = $true
+			title = "Update task details"
+			isChecked = $true
 		}
-		"D280ed1a-9f6b-4f9c-a962-fb4d00dc50ff" = @{
+		"d280ed1a-9f6b-4f9c-a962-fb4d00dc50ff" = @{
 			"@odata.type" = "microsoft.graph.plannerChecklistItem"
-			IsChecked = $true
+			isChecked = $true
 		}
-		"A93c93c5-10a6-4167-9551-8bafa09967a7" = $null
+		"a93c93c5-10a6-4167-9551-8bafa09967a7" = $null
 	}
 }
-Update-MgPlannerTaskDetail -PlannerTaskId $plannerTaskId -BodyParameter $params
+
+Update-MgPlannerTaskDetail -PlannerTaskId $plannerTaskId -BodyParameter $params-If-Match W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
+
 ```
-
-This example shows how to use the Update-MgPlannerTaskDetail Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -99,7 +101,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 plannerTaskDetails
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPlannerTaskDetails
@@ -176,7 +178,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IPlannerIdentity
@@ -187,21 +189,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -290,7 +277,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerTaskDetails
 ## NOTES
 
 ALIASES
@@ -300,7 +287,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPlannerTaskDetails>`: plannerTaskDetails
+`BODYPARAMETER <IMicrosoftGraphPlannerTaskDetails>`: plannerTaskDetails
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Checklist <IMicrosoftGraphPlannerChecklistItems>]`: plannerChecklistItems
@@ -310,14 +297,13 @@ BODYPARAMETER `<IMicrosoftGraphPlannerTaskDetails>`: plannerTaskDetails
   - `[References <IMicrosoftGraphPlannerExternalReferences>]`: plannerExternalReferences
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
-INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
+`INPUTOBJECT <IPlannerIdentity>`: Identity Parameter
   - `[GroupId <String>]`: The unique identifier of group
   - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket
-  - `[PlannerDeltaId <String>]`: The unique identifier of plannerDelta
   - `[PlannerPlanId <String>]`: The unique identifier of plannerPlan
-  - `[PlannerRosterId <String>]`: The unique identifier of plannerRoster
-  - `[PlannerRosterMemberId <String>]`: The unique identifier of plannerRosterMember
   - `[PlannerTaskId <String>]`: The unique identifier of plannerTask
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Update-MgBetaPlannerTaskDetail](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgBetaPlannerTaskDetail?view=graph-powershell-beta)
+

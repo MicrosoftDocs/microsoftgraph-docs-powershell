@@ -1,14 +1,17 @@
 ---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/get-mggroupdriverootlistitemversion
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriverootlistitemversion
 schema: 2.0.0
 ---
 
 # Get-MgGroupDriveRootListItemVersion
 
 ## SYNOPSIS
-The list of previous versions of the list item.
+Retrieve the metadata for a specific version of a ListItem.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveRootListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootListItemVersion?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -32,9 +35,23 @@ Get-MgGroupDriveRootListItemVersion -InputObject <IFilesIdentity> [-ExpandProper
 ```
 
 ## DESCRIPTION
-The list of previous versions of the list item.
+Retrieve the metadata for a specific version of a ListItem.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -131,7 +148,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IFilesIdentity
@@ -268,7 +285,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+`INPUTOBJECT <IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType
@@ -295,3 +312,4 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaGroupDriveRootListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootListItemVersion?view=graph-powershell-beta)

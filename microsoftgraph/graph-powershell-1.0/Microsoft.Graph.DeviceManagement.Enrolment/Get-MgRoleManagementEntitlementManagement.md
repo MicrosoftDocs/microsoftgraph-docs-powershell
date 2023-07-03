@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Container for roles and assignments for entitlement management resources.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementEntitlementManagement](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Get-MgRoleManagementEntitlementManagement?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
@@ -61,9 +64,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRbacApplication1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRbacApplication
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaRoleManagementEntitlementManagement](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Get-MgRoleManagementEntitlementManagement?view=graph-powershell-beta)

@@ -1,67 +1,72 @@
 ---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgidentityprovider
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityprovider
 schema: 2.0.0
 ---
 
 # New-MgIdentityProvider
 
 ## SYNOPSIS
-Create new navigation property to identityProviders for identity
+Create an identity provider object that is of the type specified in the request body.
+Among the types of providers derived from identityProviderBase, you can currently create a socialIdentityProvider resource in Azure AD.
+In Azure AD B2C, this operation can currently create a socialIdentityProvider, or an appleManagedIdentityProvider resource.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaIdentityProvider](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityProvider?view=graph-powershell-beta)
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
 New-MgIdentityProvider [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
 New-MgIdentityProvider -BodyParameter <IMicrosoftGraphIdentityProviderBase> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create new navigation property to identityProviders for identity
+Create an identity provider object that is of the type specified in the request body.
+Among the types of providers derived from identityProviderBase, you can currently create a socialIdentityProvider resource in Azure AD.
+In Azure AD B2C, this operation can currently create a socialIdentityProvider, or an appleManagedIdentityProvider resource.
 
 ## EXAMPLES
 
-### Example 1: Using the New-MgIdentityProvider Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-$params = @{
-	"@odata.type" = "microsoft.graph.appleManagedIdentityProvider"
-	DisplayName = "Sign in with Apple"
-	DeveloperId = "UBF8T346G9"
-	ServiceId = "com.microsoft.rts.b2c.test.client"
-	KeyId = "99P6D879C4"
-	CertificateData = "******"
-}
-New-MgIdentityProvider -BodyParameter $params
-```
 
-This example shows how to use the New-MgIdentityProvider Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the New-MgIdentityProvider Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
 $params = @{
 	"@odata.type" = "microsoft.graph.socialIdentityProvider"
-	DisplayName = "Login with Amazon"
-	IdentityProviderType = "Amazon"
-	ClientId = "56433757-cadd-4135-8431-2c9e3fd68ae8"
-	ClientSecret = "000000000000"
+	displayName = "Login with Amazon"
+	identityProviderType = "Amazon"
+	clientId = "56433757-cadd-4135-8431-2c9e3fd68ae8"
+	clientSecret = "000000000000"
 }
+
 New-MgIdentityProvider -BodyParameter $params
+
 ```
+### EXAMPLE 2
+```powershell
+Import-Module Microsoft.Graph.Identity.SignIns
 
-This example shows how to use the New-MgIdentityProvider Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+$params = @{
+	"@odata.type" = "microsoft.graph.appleManagedIdentityProvider"
+	displayName = "Sign in with Apple"
+	developerId = "UBF8T346G9"
+	serviceId = "com.microsoft.rts.b2c.test.client"
+	keyId = "99P6D879C4"
+	certificateData = "******"
+}
 
+New-MgIdentityProvider -BodyParameter $params
+
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -69,7 +74,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -81,11 +86,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 identityProviderBase
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIdentityProviderBase
-Parameter Sets: Create1
+Parameter Sets: Create
 Aliases:
 
 Required: True
@@ -100,7 +105,7 @@ The display name of the identity provider.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -116,7 +121,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -175,9 +180,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphIdentityProviderBase>`: identityProviderBase
+`BODYPARAMETER <IMicrosoftGraphIdentityProviderBase>`: identityProviderBase
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DisplayName <String>]`: The display name of the identity provider.
 
 ## RELATED LINKS
+[New-MgBetaIdentityProvider](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityProvider?view=graph-powershell-beta)
+

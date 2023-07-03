@@ -1,7 +1,7 @@
 ---
 Module Name: Microsoft.Graph.Sites
-Module Guid: 32b612a3-e399-45fc-af65-cdc500c35f54
-Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites
+Module Guid: eba98241-563a-47bc-a2aa-da1f45846576
+Download Help Link: https://learn.microsoft.com/powershell/module/Microsoft.Graph.Sites
 Help Version: 1.0.0.0
 Locale: en-US
 ---
@@ -11,35 +11,83 @@ Locale: en-US
 Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.Sites Cmdlets
+### [Add-MgSite](Add-MgSite.md)
+Follow a user's site or multiple sites.
+
 ### [Add-MgSiteContentTypeCopy](Add-MgSiteContentTypeCopy.md)
-Invoke action addCopy
+Add a copy of a [content type][contentType] from a [site][site] to a [list][list].
 
 ### [Add-MgSiteContentTypeCopyFromContentTypeHub](Add-MgSiteContentTypeCopyFromContentTypeHub.md)
-Invoke action addCopyFromContentTypeHub
+Add or sync a copy of a published content type from the content type hub to a target site or a list.
+This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
+The method allows users to pull content types directly from the content type hub to a site or list.
+For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
 
 ### [Add-MgSiteListContentTypeCopy](Add-MgSiteListContentTypeCopy.md)
-Invoke action addCopy
+Add a copy of a [content type][contentType] from a [site][site] to a [list][list].
 
 ### [Add-MgSiteListContentTypeCopyFromContentTypeHub](Add-MgSiteListContentTypeCopyFromContentTypeHub.md)
-Invoke action addCopyFromContentTypeHub
+Add or sync a copy of a published content type from the content type hub to a target site or a list.
+This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
+The method allows users to pull content types directly from the content type hub to a site or list.
+For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
 
 ### [Copy-MgSiteContentTypeToDefaultContentLocation](Copy-MgSiteContentTypeToDefaultContentLocation.md)
-Invoke action copyToDefaultContentLocation
+Copy a file to a default content location in a [content type][contentType].
+The file can then be added as a default file or template via a POST operation.
 
 ### [Copy-MgSiteListContentTypeToDefaultContentLocation](Copy-MgSiteListContentTypeToDefaultContentLocation.md)
-Invoke action copyToDefaultContentLocation
+Copy a file to a default content location in a [content type][contentType].
+The file can then be added as a default file or template via a POST operation.
 
-### [Copy-MgSiteOnenoteNotebook](Copy-MgSiteOnenoteNotebook.md)
-Invoke action copyNotebook
+### [Copy-MgSiteListContentTypeToDefaultContentLocation](Copy-MgSiteListContentTypeToDefaultContentLocation.md)
+Copy a file to a default content location in a [content type][contentType].
+The file can then be added as a default file or template via a POST operation.
 
-### [Copy-MgSiteOnenotePageToSection](Copy-MgSiteOnenotePageToSection.md)
-Invoke action copyToSection
+### [Copy-MgSiteOnenoteNotebookSectionGroupSectionPageToSection](Copy-MgSiteOnenoteNotebookSectionGroupSectionPageToSection.md)
+Copy a page to a specific section.
+For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
-### [Copy-MgSiteOnenoteSectionToNotebook](Copy-MgSiteOnenoteSectionToNotebook.md)
-Invoke action copyToNotebook
+### [Copy-MgSiteOnenoteNotebookSectionGroupSectionToNotebook](Copy-MgSiteOnenoteNotebookSectionGroupSectionToNotebook.md)
+For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
-### [Copy-MgSiteOnenoteSectionToSectionGroup](Copy-MgSiteOnenoteSectionToSectionGroup.md)
-Invoke action copyToSectionGroup
+### [Copy-MgSiteOnenoteNotebookSectionGroupSectionToSectionGroup](Copy-MgSiteOnenoteNotebookSectionGroupSectionToSectionGroup.md)
+For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+
+### [Copy-MgSiteOnenoteNotebookSectionPageToSection](Copy-MgSiteOnenoteNotebookSectionPageToSection.md)
+Copy a page to a specific section.
+For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+
+### [Copy-MgSiteOnenoteNotebookSectionToNotebook](Copy-MgSiteOnenoteNotebookSectionToNotebook.md)
+For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+
+### [Copy-MgSiteOnenoteNotebookSectionToSectionGroup](Copy-MgSiteOnenoteNotebookSectionToSectionGroup.md)
+For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+
+### [Copy-MgSiteOnenoteNotebookSectionToSectionGroup](Copy-MgSiteOnenoteNotebookSectionToSectionGroup.md)
+For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+
+### [Copy-MgSiteOnenoteSectionGroupSectionPageToSection](Copy-MgSiteOnenoteSectionGroupSectionPageToSection.md)
+Copy a page to a specific section.
+For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+
+### [Copy-MgSiteOnenoteSectionGroupSectionToNotebook](Copy-MgSiteOnenoteSectionGroupSectionToNotebook.md)
+For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+
+### [Copy-MgSiteOnenoteSectionGroupSectionToSectionGroup](Copy-MgSiteOnenoteSectionGroupSectionToSectionGroup.md)
+For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+
+### [Copy-MgSiteOnenoteSectionPageToSection](Copy-MgSiteOnenoteSectionPageToSection.md)
+Copy a page to a specific section.
+For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+
+### [Copy-MgSiteOnenoteSectionPageToSection](Copy-MgSiteOnenoteSectionPageToSection.md)
+Copy a page to a specific section.
+For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+
+### [Copy-MgSiteOnenoteSectionPageToSection](Copy-MgSiteOnenoteSectionPageToSection.md)
+Copy a page to a specific section.
+For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
 ### [Get-MgGroupSite](Get-MgGroupSite.md)
 The list of SharePoint sites in this group.
@@ -54,70 +102,199 @@ Get itemActivityStats from groups
 ### [Get-MgGroupSiteAnalyticItemActivityStatActivity](Get-MgGroupSiteAnalyticItemActivityStatActivity.md)
 Exposes the itemActivities represented in this itemActivityStat resource.
 
+### [Get-MgGroupSiteAnalyticItemActivityStatActivityCount](Get-MgGroupSiteAnalyticItemActivityStatActivityCount.md)
+Get the number of the resource
+
+### [Get-MgGroupSiteAnalyticItemActivityStatActivityDriveItem](Get-MgGroupSiteAnalyticItemActivityStatActivityDriveItem.md)
+Exposes the driveItem that was the target of this activity.
+
+### [Get-MgGroupSiteAnalyticItemActivityStatActivityDriveItemContent](Get-MgGroupSiteAnalyticItemActivityStatActivityDriveItemContent.md)
+The content stream, if the item represents a file.
+
+### [Get-MgGroupSiteAnalyticItemActivityStatCount](Get-MgGroupSiteAnalyticItemActivityStatCount.md)
+Get the number of the resource
+
 ### [Get-MgGroupSiteAnalyticLastSevenDay](Get-MgGroupSiteAnalyticLastSevenDay.md)
 Get lastSevenDays from groups
 
 ### [Get-MgGroupSiteAnalyticTime](Get-MgGroupSiteAnalyticTime.md)
-Get allTime from groups
+Get [itemAnalytics][] about the views that took place under this resource.\nThe **itemAnalytics** resource is a convenient way to get activity stats for `allTime` and the `lastSevenDays`.\nFor a custom time range or interval, use the [getActivitiesByInterval][] API.
 
 ### [Get-MgGroupSiteColumn](Get-MgGroupSiteColumn.md)
 The collection of column definitions reusable across lists under this site.
 
+### [Get-MgGroupSiteColumnCount](Get-MgGroupSiteColumnCount.md)
+Get the number of the resource
+
+### [Get-MgGroupSiteColumnSourceColumn](Get-MgGroupSiteColumnSourceColumn.md)
+The source column for the content type column.
+
 ### [Get-MgGroupSiteContentType](Get-MgGroupSiteContentType.md)
-The collection of content types defined for this site.
+Retrieve the metadata for a [content type][contentType] in a [site][] or a [list][].
+
+### [Get-MgGroupSiteContentTypeBase](Get-MgGroupSiteContentTypeBase.md)
+Parent contentType from which this content type is derived.
+
+### [Get-MgGroupSiteContentTypeBaseType](Get-MgGroupSiteContentTypeBaseType.md)
+The collection of content types that are ancestors of this content type.
+
+### [Get-MgGroupSiteContentTypeBaseTypeCount](Get-MgGroupSiteContentTypeBaseTypeCount.md)
+Get the number of the resource
 
 ### [Get-MgGroupSiteContentTypeColumn](Get-MgGroupSiteContentTypeColumn.md)
-The collection of column definitions for this contentType.
+Retrieve the metadata for a [site][], a [list][], or a [contentType][] [column][columnDefinition].
+
+### [Get-MgGroupSiteContentTypeColumnCount](Get-MgGroupSiteContentTypeColumnCount.md)
+Get the number of the resource
 
 ### [Get-MgGroupSiteContentTypeColumnLink](Get-MgGroupSiteContentTypeColumnLink.md)
 The collection of columns that are required by this content type.
 
-### [Get-MgGroupSiteDrive](Get-MgGroupSiteDrive.md)
+### [Get-MgGroupSiteContentTypeColumnLinkCount](Get-MgGroupSiteContentTypeColumnLinkCount.md)
+Get the number of the resource
+
+### [Get-MgGroupSiteContentTypeColumnPosition](Get-MgGroupSiteContentTypeColumnPosition.md)
+Column order information in a content type.
+
+### [Get-MgGroupSiteContentTypeColumnPositionCount](Get-MgGroupSiteContentTypeColumnPositionCount.md)
+Get the number of the resource
+
+### [Get-MgGroupSiteContentTypeColumnSourceColumn](Get-MgGroupSiteContentTypeColumnSourceColumn.md)
+The source column for the content type column.
+
+### [Get-MgGroupSiteContentTypeCount](Get-MgGroupSiteContentTypeCount.md)
+Get the number of the resource
+
+### [Get-MgGroupSiteCount](Get-MgGroupSiteCount.md)
+Get the number of the resource
+
+### [Get-MgGroupSiteCreatedByUser](Get-MgGroupSiteCreatedByUser.md)
+Identity of the user who created the item.
+Read-only.
+
+### [Get-MgGroupSiteCreatedByUserMailboxSetting](Get-MgGroupSiteCreatedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
+
+### [Get-MgGroupSiteDefaultDrive](Get-MgGroupSiteDefaultDrive.md)
 The default drive (document library) for this site.
+
+### [Get-MgGroupSiteDrive](Get-MgGroupSiteDrive.md)
+The collection of drives (document libraries) under this site.
+
+### [Get-MgGroupSiteDriveCount](Get-MgGroupSiteDriveCount.md)
+Get the number of the resource
 
 ### [Get-MgGroupSiteExternalColumn](Get-MgGroupSiteExternalColumn.md)
 Get externalColumns from groups
+
+### [Get-MgGroupSiteExternalColumnCount](Get-MgGroupSiteExternalColumnCount.md)
+Get the number of the resource
 
 ### [Get-MgGroupSiteItem](Get-MgGroupSiteItem.md)
 Used to address any item contained in this site.
 This collection can't be enumerated.
 
+### [Get-MgGroupSiteItemCount](Get-MgGroupSiteItemCount.md)
+Get the number of the resource
+
+### [Get-MgGroupSiteItemLastModifiedByUser](Get-MgGroupSiteItemLastModifiedByUser.md)
+Identity of the user who last modified the item.
+Read-only.
+
+### [Get-MgGroupSiteItemLastModifiedByUserMailboxSetting](Get-MgGroupSiteItemLastModifiedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
+
+### [Get-MgGroupSiteLastModifiedByUser](Get-MgGroupSiteLastModifiedByUser.md)
+Identity of the user who last modified the item.
+Read-only.
+
+### [Get-MgGroupSiteLastModifiedByUserMailboxSetting](Get-MgGroupSiteLastModifiedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
+
 ### [Get-MgGroupSiteList](Get-MgGroupSiteList.md)
-The collection of lists under this site.
+Returns the metadata for a [list][].
 
 ### [Get-MgGroupSiteListColumn](Get-MgGroupSiteListColumn.md)
 The collection of field definitions for this list.
 
+### [Get-MgGroupSiteListColumnCount](Get-MgGroupSiteListColumnCount.md)
+Get the number of the resource
+
+### [Get-MgGroupSiteListColumnSourceColumn](Get-MgGroupSiteListColumnSourceColumn.md)
+The source column for the content type column.
+
 ### [Get-MgGroupSiteListContentType](Get-MgGroupSiteListContentType.md)
 The collection of content types present in this list.
 
-### [Get-MgGroupSiteListContentTypeBase](Get-MgGroupSiteListContentTypeBase.md)
-Parent contentType from which this content type is derived.
-
-### [Get-MgGroupSiteListContentTypeBaseType](Get-MgGroupSiteListContentTypeBaseType.md)
-The collection of content types that are ancestors of this content type.
-
 ### [Get-MgGroupSiteListContentTypeColumn](Get-MgGroupSiteListContentTypeColumn.md)
-The collection of column definitions for this contentType.
+Retrieve the metadata for a [site][], a [list][], or a [contentType][] [column][columnDefinition].
+
+### [Get-MgGroupSiteListContentTypeColumnCount](Get-MgGroupSiteListContentTypeColumnCount.md)
+Get the number of the resource
 
 ### [Get-MgGroupSiteListContentTypeColumnLink](Get-MgGroupSiteListContentTypeColumnLink.md)
 The collection of columns that are required by this content type.
 
+### [Get-MgGroupSiteListContentTypeColumnLinkCount](Get-MgGroupSiteListContentTypeColumnLinkCount.md)
+Get the number of the resource
+
 ### [Get-MgGroupSiteListContentTypeColumnPosition](Get-MgGroupSiteListContentTypeColumnPosition.md)
 Column order information in a content type.
+
+### [Get-MgGroupSiteListContentTypeColumnPositionCount](Get-MgGroupSiteListContentTypeColumnPositionCount.md)
+Get the number of the resource
+
+### [Get-MgGroupSiteListContentTypeColumnSourceColumn](Get-MgGroupSiteListContentTypeColumnSourceColumn.md)
+The source column for the content type column.
+
+### [Get-MgGroupSiteListContentTypeCount](Get-MgGroupSiteListContentTypeCount.md)
+Get the number of the resource
+
+### [Get-MgGroupSiteListCount](Get-MgGroupSiteListCount.md)
+Get the number of the resource
+
+### [Get-MgGroupSiteListCreatedByUser](Get-MgGroupSiteListCreatedByUser.md)
+Identity of the user who created the item.
+Read-only.
+
+### [Get-MgGroupSiteListCreatedByUserMailboxSetting](Get-MgGroupSiteListCreatedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
 
 ### [Get-MgGroupSiteListDrive](Get-MgGroupSiteListDrive.md)
 Only present on document libraries.
 Allows access to the list as a [drive][] resource with [driveItems][driveItem].
 
 ### [Get-MgGroupSiteListItem](Get-MgGroupSiteListItem.md)
-All items contained in the list.
+Returns the metadata for an [item][] in a [list][].
 
 ### [Get-MgGroupSiteListItemAnalytic](Get-MgGroupSiteListItemAnalytic.md)
 Analytics about the view activities that took place on this item.
 
+### [Get-MgGroupSiteListItemCreatedByUser](Get-MgGroupSiteListItemCreatedByUser.md)
+Identity of the user who created the item.
+Read-only.
+
+### [Get-MgGroupSiteListItemCreatedByUserMailboxSetting](Get-MgGroupSiteListItemCreatedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
+
 ### [Get-MgGroupSiteListItemDocumentSetVersion](Get-MgGroupSiteListItemDocumentSetVersion.md)
-Version information for a document set version created by a user.
+Read the properties and relationships of a documentSetVersion object.
+
+### [Get-MgGroupSiteListItemDocumentSetVersionCount](Get-MgGroupSiteListItemDocumentSetVersionCount.md)
+Get the number of the resource
+
+### [Get-MgGroupSiteListItemDocumentSetVersionField](Get-MgGroupSiteListItemDocumentSetVersionField.md)
+A collection of the fields and values for this version of the list item.
 
 ### [Get-MgGroupSiteListItemDriveItem](Get-MgGroupSiteListItemDriveItem.md)
 For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
@@ -129,7 +306,10 @@ The content stream, if the item represents a file.
 The values of the columns set on this list item.
 
 ### [Get-MgGroupSiteListItemVersion](Get-MgGroupSiteListItemVersion.md)
-The list of previous versions of the list item.
+Retrieve the metadata for a specific version of a ListItem.
+
+### [Get-MgGroupSiteListItemVersionCount](Get-MgGroupSiteListItemVersionCount.md)
+Get the number of the resource
 
 ### [Get-MgGroupSiteListItemVersionField](Get-MgGroupSiteListItemVersionField.md)
 A collection of the fields and values for this version of the list item.
@@ -137,21 +317,256 @@ A collection of the fields and values for this version of the list item.
 ### [Get-MgGroupSiteListOperation](Get-MgGroupSiteListOperation.md)
 The collection of long-running operations on the list.
 
+### [Get-MgGroupSiteListOperationCount](Get-MgGroupSiteListOperationCount.md)
+Get the number of the resource
+
 ### [Get-MgGroupSiteListSubscription](Get-MgGroupSiteListSubscription.md)
 The set of subscriptions on the list.
 
-### [Get-MgGroupSiteOperation](Get-MgGroupSiteOperation.md)
-The collection of long-running operations on the site.
+### [Get-MgGroupSiteListSubscriptionCount](Get-MgGroupSiteListSubscriptionCount.md)
+Get the number of the resource
 
-### [Get-MgGroupSitePermission](Get-MgGroupSitePermission.md)
-The permissions associated with the site.
+### [Get-MgGroupSiteOnenote](Get-MgGroupSiteOnenote.md)
+Calls the OneNote service for notebook related operations.
+
+### [Get-MgGroupSiteOnenoteNotebook](Get-MgGroupSiteOnenoteNotebook.md)
+Retrieve the properties and relationships of a notebook object.
+
+### [Get-MgGroupSiteOnenoteNotebookCount](Get-MgGroupSiteOnenoteNotebookCount.md)
+Get the number of the resource
+
+### [Get-MgGroupSiteOnenoteNotebookSection](Get-MgGroupSiteOnenoteNotebookSection.md)
+The sections in the notebook.
+Read-only.
 Nullable.
 
+### [Get-MgGroupSiteOnenoteNotebookSectionCount](Get-MgGroupSiteOnenoteNotebookSectionCount.md)
+Get the number of the resource
+
+### [Get-MgGroupSiteOnenoteNotebookSectionGroup](Get-MgGroupSiteOnenoteNotebookSectionGroup.md)
+The section groups in the notebook.
+Read-only.
+Nullable.
+
+### [Get-MgGroupSiteOnenoteNotebookSectionGroupCount](Get-MgGroupSiteOnenoteNotebookSectionGroupCount.md)
+Get the number of the resource
+
+### [Get-MgGroupSiteOnenoteNotebookSectionGroupParentNotebook](Get-MgGroupSiteOnenoteNotebookSectionGroupParentNotebook.md)
+The notebook that contains the section group.
+Read-only.
+
+### [Get-MgGroupSiteOnenoteNotebookSectionGroupParentSectionGroup](Get-MgGroupSiteOnenoteNotebookSectionGroupParentSectionGroup.md)
+The section group that contains the section group.
+Read-only.
+
+### [Get-MgGroupSiteOnenoteNotebookSectionGroupSection](Get-MgGroupSiteOnenoteNotebookSectionGroupSection.md)
+The sections in the section group.
+Read-only.
+Nullable.
+
+### [Get-MgGroupSiteOnenoteNotebookSectionGroupSectionCount](Get-MgGroupSiteOnenoteNotebookSectionGroupSectionCount.md)
+Get the number of the resource
+
+### [Get-MgGroupSiteOnenoteNotebookSectionGroupSectionPage](Get-MgGroupSiteOnenoteNotebookSectionGroupSectionPage.md)
+The collection of pages in the section.
+Read-only.
+Nullable.
+
+### [Get-MgGroupSiteOnenoteNotebookSectionGroupSectionPageContent](Get-MgGroupSiteOnenoteNotebookSectionGroupSectionPageContent.md)
+The page's HTML content.
+
+### [Get-MgGroupSiteOnenoteNotebookSectionGroupSectionPageCount](Get-MgGroupSiteOnenoteNotebookSectionGroupSectionPageCount.md)
+Get the number of the resource
+
+### [Get-MgGroupSiteOnenoteNotebookSectionGroupSectionPageParentNotebook](Get-MgGroupSiteOnenoteNotebookSectionGroupSectionPageParentNotebook.md)
+The notebook that contains the page.
+Read-only.
+
+### [Get-MgGroupSiteOnenoteNotebookSectionGroupSectionPageParentSection](Get-MgGroupSiteOnenoteNotebookSectionGroupSectionPageParentSection.md)
+The section that contains the page.
+Read-only.
+
+### [Get-MgGroupSiteOnenoteNotebookSectionGroupSectionParentNotebook](Get-MgGroupSiteOnenoteNotebookSectionGroupSectionParentNotebook.md)
+The notebook that contains the section.
+Read-only.
+
+### [Get-MgGroupSiteOnenoteNotebookSectionGroupSectionParentSectionGroup](Get-MgGroupSiteOnenoteNotebookSectionGroupSectionParentSectionGroup.md)
+The section group that contains the section.
+Read-only.
+
+### [Get-MgGroupSiteOnenoteNotebookSectionPage](Get-MgGroupSiteOnenoteNotebookSectionPage.md)
+The collection of pages in the section.
+Read-only.
+Nullable.
+
+### [Get-MgGroupSiteOnenoteNotebookSectionPageContent](Get-MgGroupSiteOnenoteNotebookSectionPageContent.md)
+The page's HTML content.
+
+### [Get-MgGroupSiteOnenoteNotebookSectionPageCount](Get-MgGroupSiteOnenoteNotebookSectionPageCount.md)
+Get the number of the resource
+
+### [Get-MgGroupSiteOnenoteNotebookSectionPageParentNotebook](Get-MgGroupSiteOnenoteNotebookSectionPageParentNotebook.md)
+The notebook that contains the page.
+Read-only.
+
+### [Get-MgGroupSiteOnenoteNotebookSectionPageParentSection](Get-MgGroupSiteOnenoteNotebookSectionPageParentSection.md)
+The section that contains the page.
+Read-only.
+
+### [Get-MgGroupSiteOnenoteNotebookSectionParentNotebook](Get-MgGroupSiteOnenoteNotebookSectionParentNotebook.md)
+The notebook that contains the section.
+Read-only.
+
+### [Get-MgGroupSiteOnenoteNotebookSectionParentSectionGroup](Get-MgGroupSiteOnenoteNotebookSectionParentSectionGroup.md)
+The section group that contains the section.
+Read-only.
+
+### [Get-MgGroupSiteOnenoteOperation](Get-MgGroupSiteOnenoteOperation.md)
+Get the status of a long-running OneNote operation.
+This applies to operations that return the **Operation-Location** header in the response, such as `CopyNotebook`, `CopyToNotebook`, `CopyToSectionGroup`, `and CopyToSection`.
+  You can poll the Operation-Location endpoint until the `status` property returns `completed` or `failed`.
+If the status is `completed`, the `resourceLocation` property contains the resource endpoint URI.
+If the status is `failed`, the error and `@api.diagnostics` properties provide error information.
+
+### [Get-MgGroupSiteOnenoteOperationCount](Get-MgGroupSiteOnenoteOperationCount.md)
+Get the number of the resource
+
+### [Get-MgGroupSiteOnenotePage](Get-MgGroupSiteOnenotePage.md)
+The pages in all OneNote notebooks that are owned by the user or group.
+Read-only.
+Nullable.
+
+### [Get-MgGroupSiteOnenotePageContent](Get-MgGroupSiteOnenotePageContent.md)
+The page's HTML content.
+
+### [Get-MgGroupSiteOnenotePageCount](Get-MgGroupSiteOnenotePageCount.md)
+Get the number of the resource
+
+### [Get-MgGroupSiteOnenotePageParentNotebook](Get-MgGroupSiteOnenotePageParentNotebook.md)
+The notebook that contains the page.
+Read-only.
+
+### [Get-MgGroupSiteOnenotePageParentSection](Get-MgGroupSiteOnenotePageParentSection.md)
+The section that contains the page.
+Read-only.
+
+### [Get-MgGroupSiteOnenoteResource](Get-MgGroupSiteOnenoteResource.md)
+The image and other file resources in OneNote pages.
+Getting a resources collection is not supported, but you can get the binary content of a specific resource.
+Read-only.
+Nullable.
+
+### [Get-MgGroupSiteOnenoteResourceContent](Get-MgGroupSiteOnenoteResourceContent.md)
+The content stream
+
+### [Get-MgGroupSiteOnenoteResourceCount](Get-MgGroupSiteOnenoteResourceCount.md)
+Get the number of the resource
+
+### [Get-MgGroupSiteOnenoteSection](Get-MgGroupSiteOnenoteSection.md)
+Retrieve the properties and relationships of a onenoteSection object.
+
+### [Get-MgGroupSiteOnenoteSectionCount](Get-MgGroupSiteOnenoteSectionCount.md)
+Get the number of the resource
+
+### [Get-MgGroupSiteOnenoteSectionGroup](Get-MgGroupSiteOnenoteSectionGroup.md)
+Retrieve the properties and relationships of a sectionGroup object.
+
+### [Get-MgGroupSiteOnenoteSectionGroupCount](Get-MgGroupSiteOnenoteSectionGroupCount.md)
+Get the number of the resource
+
+### [Get-MgGroupSiteOnenoteSectionGroupParentNotebook](Get-MgGroupSiteOnenoteSectionGroupParentNotebook.md)
+The notebook that contains the section group.
+Read-only.
+
+### [Get-MgGroupSiteOnenoteSectionGroupParentSectionGroup](Get-MgGroupSiteOnenoteSectionGroupParentSectionGroup.md)
+The section group that contains the section group.
+Read-only.
+
+### [Get-MgGroupSiteOnenoteSectionGroupSection](Get-MgGroupSiteOnenoteSectionGroupSection.md)
+The sections in the section group.
+Read-only.
+Nullable.
+
+### [Get-MgGroupSiteOnenoteSectionGroupSectionCount](Get-MgGroupSiteOnenoteSectionGroupSectionCount.md)
+Get the number of the resource
+
+### [Get-MgGroupSiteOnenoteSectionGroupSectionPage](Get-MgGroupSiteOnenoteSectionGroupSectionPage.md)
+The collection of pages in the section.
+Read-only.
+Nullable.
+
+### [Get-MgGroupSiteOnenoteSectionGroupSectionPageContent](Get-MgGroupSiteOnenoteSectionGroupSectionPageContent.md)
+The page's HTML content.
+
+### [Get-MgGroupSiteOnenoteSectionGroupSectionPageCount](Get-MgGroupSiteOnenoteSectionGroupSectionPageCount.md)
+Get the number of the resource
+
+### [Get-MgGroupSiteOnenoteSectionGroupSectionPageParentNotebook](Get-MgGroupSiteOnenoteSectionGroupSectionPageParentNotebook.md)
+The notebook that contains the page.
+Read-only.
+
+### [Get-MgGroupSiteOnenoteSectionGroupSectionPageParentSection](Get-MgGroupSiteOnenoteSectionGroupSectionPageParentSection.md)
+The section that contains the page.
+Read-only.
+
+### [Get-MgGroupSiteOnenoteSectionGroupSectionParentNotebook](Get-MgGroupSiteOnenoteSectionGroupSectionParentNotebook.md)
+The notebook that contains the section.
+Read-only.
+
+### [Get-MgGroupSiteOnenoteSectionGroupSectionParentSectionGroup](Get-MgGroupSiteOnenoteSectionGroupSectionParentSectionGroup.md)
+The section group that contains the section.
+Read-only.
+
+### [Get-MgGroupSiteOnenoteSectionPage](Get-MgGroupSiteOnenoteSectionPage.md)
+The collection of pages in the section.
+Read-only.
+Nullable.
+
+### [Get-MgGroupSiteOnenoteSectionPageContent](Get-MgGroupSiteOnenoteSectionPageContent.md)
+The page's HTML content.
+
+### [Get-MgGroupSiteOnenoteSectionPageCount](Get-MgGroupSiteOnenoteSectionPageCount.md)
+Get the number of the resource
+
+### [Get-MgGroupSiteOnenoteSectionPageParentNotebook](Get-MgGroupSiteOnenoteSectionPageParentNotebook.md)
+The notebook that contains the page.
+Read-only.
+
+### [Get-MgGroupSiteOnenoteSectionPageParentSection](Get-MgGroupSiteOnenoteSectionPageParentSection.md)
+The section that contains the page.
+Read-only.
+
+### [Get-MgGroupSiteOnenoteSectionParentNotebook](Get-MgGroupSiteOnenoteSectionParentNotebook.md)
+The notebook that contains the section.
+Read-only.
+
+### [Get-MgGroupSiteOnenoteSectionParentSectionGroup](Get-MgGroupSiteOnenoteSectionParentSectionGroup.md)
+The section group that contains the section.
+Read-only.
+
+### [Get-MgGroupSiteOperation](Get-MgGroupSiteOperation.md)
+Get the status of a rich long-running operation on a site or a list.
+
+### [Get-MgGroupSiteOperationCount](Get-MgGroupSiteOperationCount.md)
+Get the number of the resource
+
+### [Get-MgGroupSitePermission](Get-MgGroupSitePermission.md)
+Retrieve the properties and relationships of a permission object on a site.
+
+### [Get-MgGroupSitePermissionCount](Get-MgGroupSitePermissionCount.md)
+Get the number of the resource
+
 ### [Get-MgGroupSiteTermStore](Get-MgGroupSiteTermStore.md)
-The default termStore under this site.
+Read the properties and relationships of a store object.
+
+### [Get-MgGroupSiteTermStoreCount](Get-MgGroupSiteTermStoreCount.md)
+Get the number of the resource
 
 ### [Get-MgGroupSiteTermStoreGroup](Get-MgGroupSiteTermStoreGroup.md)
-Collection of all groups available in the term store.
+Read the properties and relationships of a term store group object.
+
+### [Get-MgGroupSiteTermStoreGroupCount](Get-MgGroupSiteTermStoreGroupCount.md)
+Get the number of the resource
 
 ### [Get-MgGroupSiteTermStoreGroupSet](Get-MgGroupSiteTermStoreGroupSet.md)
 All sets under the group in a term [store].
@@ -159,8 +574,14 @@ All sets under the group in a term [store].
 ### [Get-MgGroupSiteTermStoreGroupSetChild](Get-MgGroupSiteTermStoreGroupSetChild.md)
 Children terms of set in term [store].
 
+### [Get-MgGroupSiteTermStoreGroupSetChildCount](Get-MgGroupSiteTermStoreGroupSetChildCount.md)
+Get the number of the resource
+
 ### [Get-MgGroupSiteTermStoreGroupSetChildRelation](Get-MgGroupSiteTermStoreGroupSetChildRelation.md)
 To indicate which terms are related to the current term as either pinned or reused.
+
+### [Get-MgGroupSiteTermStoreGroupSetChildRelationCount](Get-MgGroupSiteTermStoreGroupSetChildRelationCount.md)
+Get the number of the resource
 
 ### [Get-MgGroupSiteTermStoreGroupSetChildRelationFromTerm](Get-MgGroupSiteTermStoreGroupSetChildRelationFromTerm.md)
 The from [term] of the relation.
@@ -177,11 +598,17 @@ The term to which the relationship is defined.
 ### [Get-MgGroupSiteTermStoreGroupSetChildSet](Get-MgGroupSiteTermStoreGroupSetChildSet.md)
 The [set] in which the term is created.
 
+### [Get-MgGroupSiteTermStoreGroupSetCount](Get-MgGroupSiteTermStoreGroupSetCount.md)
+Get the number of the resource
+
 ### [Get-MgGroupSiteTermStoreGroupSetParentGroup](Get-MgGroupSiteTermStoreGroupSetParentGroup.md)
 The parent [group] that contains the set.
 
 ### [Get-MgGroupSiteTermStoreGroupSetRelation](Get-MgGroupSiteTermStoreGroupSetRelation.md)
 Indicates which terms have been pinned or reused directly under the set.
+
+### [Get-MgGroupSiteTermStoreGroupSetRelationCount](Get-MgGroupSiteTermStoreGroupSetRelationCount.md)
+Get the number of the resource
 
 ### [Get-MgGroupSiteTermStoreGroupSetRelationFromTerm](Get-MgGroupSiteTermStoreGroupSetRelationFromTerm.md)
 The from [term] of the relation.
@@ -196,13 +623,19 @@ The to [term] of the relation.
 The term to which the relationship is defined.
 
 ### [Get-MgGroupSiteTermStoreGroupSetTerm](Get-MgGroupSiteTermStoreGroupSetTerm.md)
-All the terms under the set.
+Read the properties and relationships of a term object.
 
 ### [Get-MgGroupSiteTermStoreGroupSetTermChild](Get-MgGroupSiteTermStoreGroupSetTermChild.md)
 Children of current term.
 
+### [Get-MgGroupSiteTermStoreGroupSetTermChildCount](Get-MgGroupSiteTermStoreGroupSetTermChildCount.md)
+Get the number of the resource
+
 ### [Get-MgGroupSiteTermStoreGroupSetTermChildRelation](Get-MgGroupSiteTermStoreGroupSetTermChildRelation.md)
 To indicate which terms are related to the current term as either pinned or reused.
+
+### [Get-MgGroupSiteTermStoreGroupSetTermChildRelationCount](Get-MgGroupSiteTermStoreGroupSetTermChildRelationCount.md)
+Get the number of the resource
 
 ### [Get-MgGroupSiteTermStoreGroupSetTermChildRelationFromTerm](Get-MgGroupSiteTermStoreGroupSetTermChildRelationFromTerm.md)
 The from [term] of the relation.
@@ -219,8 +652,14 @@ The term to which the relationship is defined.
 ### [Get-MgGroupSiteTermStoreGroupSetTermChildSet](Get-MgGroupSiteTermStoreGroupSetTermChildSet.md)
 The [set] in which the term is created.
 
+### [Get-MgGroupSiteTermStoreGroupSetTermCount](Get-MgGroupSiteTermStoreGroupSetTermCount.md)
+Get the number of the resource
+
 ### [Get-MgGroupSiteTermStoreGroupSetTermRelation](Get-MgGroupSiteTermStoreGroupSetTermRelation.md)
 To indicate which terms are related to the current term as either pinned or reused.
+
+### [Get-MgGroupSiteTermStoreGroupSetTermRelationCount](Get-MgGroupSiteTermStoreGroupSetTermRelationCount.md)
+Get the number of the resource
 
 ### [Get-MgGroupSiteTermStoreGroupSetTermRelationFromTerm](Get-MgGroupSiteTermStoreGroupSetTermRelationFromTerm.md)
 The from [term] of the relation.
@@ -238,14 +677,19 @@ The term to which the relationship is defined.
 The [set] in which the term is created.
 
 ### [Get-MgGroupSiteTermStoreSet](Get-MgGroupSiteTermStoreSet.md)
-Collection of all sets available in the term store.
-This relationship can only be used to load a specific term set.
+Read the properties and relationships of a set object.
 
 ### [Get-MgGroupSiteTermStoreSetChild](Get-MgGroupSiteTermStoreSetChild.md)
 Children terms of set in term [store].
 
+### [Get-MgGroupSiteTermStoreSetChildCount](Get-MgGroupSiteTermStoreSetChildCount.md)
+Get the number of the resource
+
 ### [Get-MgGroupSiteTermStoreSetChildRelation](Get-MgGroupSiteTermStoreSetChildRelation.md)
 To indicate which terms are related to the current term as either pinned or reused.
+
+### [Get-MgGroupSiteTermStoreSetChildRelationCount](Get-MgGroupSiteTermStoreSetChildRelationCount.md)
+Get the number of the resource
 
 ### [Get-MgGroupSiteTermStoreSetChildRelationFromTerm](Get-MgGroupSiteTermStoreSetChildRelationFromTerm.md)
 The from [term] of the relation.
@@ -262,6 +706,9 @@ The term to which the relationship is defined.
 ### [Get-MgGroupSiteTermStoreSetChildSet](Get-MgGroupSiteTermStoreSetChildSet.md)
 The [set] in which the term is created.
 
+### [Get-MgGroupSiteTermStoreSetCount](Get-MgGroupSiteTermStoreSetCount.md)
+Get the number of the resource
+
 ### [Get-MgGroupSiteTermStoreSetParentGroup](Get-MgGroupSiteTermStoreSetParentGroup.md)
 The parent [group] that contains the set.
 
@@ -271,8 +718,14 @@ All sets under the group in a term [store].
 ### [Get-MgGroupSiteTermStoreSetParentGroupSetChild](Get-MgGroupSiteTermStoreSetParentGroupSetChild.md)
 Children terms of set in term [store].
 
+### [Get-MgGroupSiteTermStoreSetParentGroupSetChildCount](Get-MgGroupSiteTermStoreSetParentGroupSetChildCount.md)
+Get the number of the resource
+
 ### [Get-MgGroupSiteTermStoreSetParentGroupSetChildRelation](Get-MgGroupSiteTermStoreSetParentGroupSetChildRelation.md)
 To indicate which terms are related to the current term as either pinned or reused.
+
+### [Get-MgGroupSiteTermStoreSetParentGroupSetChildRelationCount](Get-MgGroupSiteTermStoreSetParentGroupSetChildRelationCount.md)
+Get the number of the resource
 
 ### [Get-MgGroupSiteTermStoreSetParentGroupSetChildRelationFromTerm](Get-MgGroupSiteTermStoreSetParentGroupSetChildRelationFromTerm.md)
 The from [term] of the relation.
@@ -289,8 +742,14 @@ The term to which the relationship is defined.
 ### [Get-MgGroupSiteTermStoreSetParentGroupSetChildSet](Get-MgGroupSiteTermStoreSetParentGroupSetChildSet.md)
 The [set] in which the term is created.
 
+### [Get-MgGroupSiteTermStoreSetParentGroupSetCount](Get-MgGroupSiteTermStoreSetParentGroupSetCount.md)
+Get the number of the resource
+
 ### [Get-MgGroupSiteTermStoreSetParentGroupSetRelation](Get-MgGroupSiteTermStoreSetParentGroupSetRelation.md)
 Indicates which terms have been pinned or reused directly under the set.
+
+### [Get-MgGroupSiteTermStoreSetParentGroupSetRelationCount](Get-MgGroupSiteTermStoreSetParentGroupSetRelationCount.md)
+Get the number of the resource
 
 ### [Get-MgGroupSiteTermStoreSetParentGroupSetRelationFromTerm](Get-MgGroupSiteTermStoreSetParentGroupSetRelationFromTerm.md)
 The from [term] of the relation.
@@ -305,13 +764,19 @@ The to [term] of the relation.
 The term to which the relationship is defined.
 
 ### [Get-MgGroupSiteTermStoreSetParentGroupSetTerm](Get-MgGroupSiteTermStoreSetParentGroupSetTerm.md)
-All the terms under the set.
+Read the properties and relationships of a term object.
 
 ### [Get-MgGroupSiteTermStoreSetParentGroupSetTermChild](Get-MgGroupSiteTermStoreSetParentGroupSetTermChild.md)
 Children of current term.
 
+### [Get-MgGroupSiteTermStoreSetParentGroupSetTermChildCount](Get-MgGroupSiteTermStoreSetParentGroupSetTermChildCount.md)
+Get the number of the resource
+
 ### [Get-MgGroupSiteTermStoreSetParentGroupSetTermChildRelation](Get-MgGroupSiteTermStoreSetParentGroupSetTermChildRelation.md)
 To indicate which terms are related to the current term as either pinned or reused.
+
+### [Get-MgGroupSiteTermStoreSetParentGroupSetTermChildRelationCount](Get-MgGroupSiteTermStoreSetParentGroupSetTermChildRelationCount.md)
+Get the number of the resource
 
 ### [Get-MgGroupSiteTermStoreSetParentGroupSetTermChildRelationFromTerm](Get-MgGroupSiteTermStoreSetParentGroupSetTermChildRelationFromTerm.md)
 The from [term] of the relation.
@@ -328,8 +793,14 @@ The term to which the relationship is defined.
 ### [Get-MgGroupSiteTermStoreSetParentGroupSetTermChildSet](Get-MgGroupSiteTermStoreSetParentGroupSetTermChildSet.md)
 The [set] in which the term is created.
 
+### [Get-MgGroupSiteTermStoreSetParentGroupSetTermCount](Get-MgGroupSiteTermStoreSetParentGroupSetTermCount.md)
+Get the number of the resource
+
 ### [Get-MgGroupSiteTermStoreSetParentGroupSetTermRelation](Get-MgGroupSiteTermStoreSetParentGroupSetTermRelation.md)
 To indicate which terms are related to the current term as either pinned or reused.
+
+### [Get-MgGroupSiteTermStoreSetParentGroupSetTermRelationCount](Get-MgGroupSiteTermStoreSetParentGroupSetTermRelationCount.md)
+Get the number of the resource
 
 ### [Get-MgGroupSiteTermStoreSetParentGroupSetTermRelationFromTerm](Get-MgGroupSiteTermStoreSetParentGroupSetTermRelationFromTerm.md)
 The from [term] of the relation.
@@ -349,6 +820,9 @@ The [set] in which the term is created.
 ### [Get-MgGroupSiteTermStoreSetRelation](Get-MgGroupSiteTermStoreSetRelation.md)
 Indicates which terms have been pinned or reused directly under the set.
 
+### [Get-MgGroupSiteTermStoreSetRelationCount](Get-MgGroupSiteTermStoreSetRelationCount.md)
+Get the number of the resource
+
 ### [Get-MgGroupSiteTermStoreSetRelationFromTerm](Get-MgGroupSiteTermStoreSetRelationFromTerm.md)
 The from [term] of the relation.
 The term from which the relationship is defined.
@@ -362,13 +836,19 @@ The to [term] of the relation.
 The term to which the relationship is defined.
 
 ### [Get-MgGroupSiteTermStoreSetTerm](Get-MgGroupSiteTermStoreSetTerm.md)
-All the terms under the set.
+Read the properties and relationships of a term object.
 
 ### [Get-MgGroupSiteTermStoreSetTermChild](Get-MgGroupSiteTermStoreSetTermChild.md)
 Children of current term.
 
+### [Get-MgGroupSiteTermStoreSetTermChildCount](Get-MgGroupSiteTermStoreSetTermChildCount.md)
+Get the number of the resource
+
 ### [Get-MgGroupSiteTermStoreSetTermChildRelation](Get-MgGroupSiteTermStoreSetTermChildRelation.md)
 To indicate which terms are related to the current term as either pinned or reused.
+
+### [Get-MgGroupSiteTermStoreSetTermChildRelationCount](Get-MgGroupSiteTermStoreSetTermChildRelationCount.md)
+Get the number of the resource
 
 ### [Get-MgGroupSiteTermStoreSetTermChildRelationFromTerm](Get-MgGroupSiteTermStoreSetTermChildRelationFromTerm.md)
 The from [term] of the relation.
@@ -385,8 +865,14 @@ The term to which the relationship is defined.
 ### [Get-MgGroupSiteTermStoreSetTermChildSet](Get-MgGroupSiteTermStoreSetTermChildSet.md)
 The [set] in which the term is created.
 
+### [Get-MgGroupSiteTermStoreSetTermCount](Get-MgGroupSiteTermStoreSetTermCount.md)
+Get the number of the resource
+
 ### [Get-MgGroupSiteTermStoreSetTermRelation](Get-MgGroupSiteTermStoreSetTermRelation.md)
 To indicate which terms are related to the current term as either pinned or reused.
+
+### [Get-MgGroupSiteTermStoreSetTermRelationCount](Get-MgGroupSiteTermStoreSetTermRelationCount.md)
+Get the number of the resource
 
 ### [Get-MgGroupSiteTermStoreSetTermRelationFromTerm](Get-MgGroupSiteTermStoreSetTermRelationFromTerm.md)
 The from [term] of the relation.
@@ -406,6 +892,9 @@ The [set] in which the term is created.
 ### [Get-MgGroupSubSite](Get-MgGroupSubSite.md)
 The collection of the sub-sites under this site.
 
+### [Get-MgGroupSubSiteCount](Get-MgGroupSubSiteCount.md)
+Get the number of the resource
+
 ### [Get-MgSite](Get-MgSite.md)
 Retrieve properties and relationships for a [site][] resource.\nA **site** resource represents a team site in SharePoint.
 
@@ -421,11 +910,23 @@ Get itemActivityStats from sites
 ### [Get-MgSiteAnalyticItemActivityStatActivity](Get-MgSiteAnalyticItemActivityStatActivity.md)
 Exposes the itemActivities represented in this itemActivityStat resource.
 
+### [Get-MgSiteAnalyticItemActivityStatActivityCount](Get-MgSiteAnalyticItemActivityStatActivityCount.md)
+Get the number of the resource
+
+### [Get-MgSiteAnalyticItemActivityStatActivityDriveItem](Get-MgSiteAnalyticItemActivityStatActivityDriveItem.md)
+Exposes the driveItem that was the target of this activity.
+
+### [Get-MgSiteAnalyticItemActivityStatActivityDriveItemContent](Get-MgSiteAnalyticItemActivityStatActivityDriveItemContent.md)
+The content stream, if the item represents a file.
+
+### [Get-MgSiteAnalyticItemActivityStatCount](Get-MgSiteAnalyticItemActivityStatCount.md)
+Get the number of the resource
+
 ### [Get-MgSiteAnalyticLastSevenDay](Get-MgSiteAnalyticLastSevenDay.md)
 Get lastSevenDays from sites
 
 ### [Get-MgSiteAnalyticTime](Get-MgSiteAnalyticTime.md)
-Get allTime from sites
+Get [itemAnalytics][] about the views that took place under this resource.\nThe **itemAnalytics** resource is a convenient way to get activity stats for `allTime` and the `lastSevenDays`.\nFor a custom time range or interval, use the [getActivitiesByInterval][] API.
 
 ### [Get-MgSiteApplicableContentTypeForList](Get-MgSiteApplicableContentTypeForList.md)
 Invoke function getApplicableContentTypesForList
@@ -436,17 +937,53 @@ Invoke function getByPath
 ### [Get-MgSiteColumn](Get-MgSiteColumn.md)
 The collection of column definitions reusable across lists under this site.
 
+### [Get-MgSiteColumnCount](Get-MgSiteColumnCount.md)
+Get the number of the resource
+
+### [Get-MgSiteColumnSourceColumn](Get-MgSiteColumnSourceColumn.md)
+The source column for the content type column.
+
 ### [Get-MgSiteContentType](Get-MgSiteContentType.md)
-The collection of content types defined for this site.
+Retrieve the metadata for a [content type][contentType] in a [site][] or a [list][].
+
+### [Get-MgSiteContentTypeBase](Get-MgSiteContentTypeBase.md)
+Parent contentType from which this content type is derived.
+
+### [Get-MgSiteContentTypeBaseType](Get-MgSiteContentTypeBaseType.md)
+The collection of content types that are ancestors of this content type.
+
+### [Get-MgSiteContentTypeBaseTypeCount](Get-MgSiteContentTypeBaseTypeCount.md)
+Get the number of the resource
 
 ### [Get-MgSiteContentTypeColumn](Get-MgSiteContentTypeColumn.md)
-The collection of column definitions for this contentType.
+Retrieve the metadata for a [site][], a [list][], or a [contentType][] [column][columnDefinition].
+
+### [Get-MgSiteContentTypeColumnCount](Get-MgSiteContentTypeColumnCount.md)
+Get the number of the resource
 
 ### [Get-MgSiteContentTypeColumnLink](Get-MgSiteContentTypeColumnLink.md)
 The collection of columns that are required by this content type.
 
+### [Get-MgSiteContentTypeColumnLinkCount](Get-MgSiteContentTypeColumnLinkCount.md)
+Get the number of the resource
+
+### [Get-MgSiteContentTypeColumnPosition](Get-MgSiteContentTypeColumnPosition.md)
+Column order information in a content type.
+
+### [Get-MgSiteContentTypeColumnPositionCount](Get-MgSiteContentTypeColumnPositionCount.md)
+Get the number of the resource
+
+### [Get-MgSiteContentTypeColumnSourceColumn](Get-MgSiteContentTypeColumnSourceColumn.md)
+The source column for the content type column.
+
 ### [Get-MgSiteContentTypeCompatibleHubContentType](Get-MgSiteContentTypeCompatibleHubContentType.md)
 Invoke function getCompatibleHubContentTypes
+
+### [Get-MgSiteContentTypeCount](Get-MgSiteContentTypeCount.md)
+Get the number of the resource
+
+### [Get-MgSiteCount](Get-MgSiteCount.md)
+Get the number of the resource
 
 ### [Get-MgSiteDefaultDrive](Get-MgSiteDefaultDrive.md)
 The default drive (document library) for this site.
@@ -454,42 +991,93 @@ The default drive (document library) for this site.
 ### [Get-MgSiteDrive](Get-MgSiteDrive.md)
 The collection of drives (document libraries) under this site.
 
+### [Get-MgSiteDriveCount](Get-MgSiteDriveCount.md)
+Get the number of the resource
+
 ### [Get-MgSiteExternalColumn](Get-MgSiteExternalColumn.md)
 Get externalColumns from sites
 
+### [Get-MgSiteExternalColumnCount](Get-MgSiteExternalColumnCount.md)
+Get the number of the resource
+
+### [Get-MgSiteItemLastModifiedByUser](Get-MgSiteItemLastModifiedByUser.md)
+Identity of the user who last modified the item.
+Read-only.
+
+### [Get-MgSiteItemLastModifiedByUserMailboxSetting](Get-MgSiteItemLastModifiedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
+
+### [Get-MgSiteLastModifiedByUser](Get-MgSiteLastModifiedByUser.md)
+Identity of the user who last modified the item.
+Read-only.
+
+### [Get-MgSiteLastModifiedByUserMailboxSetting](Get-MgSiteLastModifiedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
+
 ### [Get-MgSiteList](Get-MgSiteList.md)
-The collection of lists under this site.
+Returns the metadata for a [list][].
 
 ### [Get-MgSiteListColumn](Get-MgSiteListColumn.md)
 The collection of field definitions for this list.
 
+### [Get-MgSiteListColumnCount](Get-MgSiteListColumnCount.md)
+Get the number of the resource
+
+### [Get-MgSiteListColumnSourceColumn](Get-MgSiteListColumnSourceColumn.md)
+The source column for the content type column.
+
 ### [Get-MgSiteListContentType](Get-MgSiteListContentType.md)
 The collection of content types present in this list.
 
-### [Get-MgSiteListContentTypeBase](Get-MgSiteListContentTypeBase.md)
-Parent contentType from which this content type is derived.
-
-### [Get-MgSiteListContentTypeBaseType](Get-MgSiteListContentTypeBaseType.md)
-The collection of content types that are ancestors of this content type.
-
 ### [Get-MgSiteListContentTypeColumn](Get-MgSiteListContentTypeColumn.md)
-The collection of column definitions for this contentType.
+Retrieve the metadata for a [site][], a [list][], or a [contentType][] [column][columnDefinition].
+
+### [Get-MgSiteListContentTypeColumnCount](Get-MgSiteListContentTypeColumnCount.md)
+Get the number of the resource
 
 ### [Get-MgSiteListContentTypeColumnLink](Get-MgSiteListContentTypeColumnLink.md)
 The collection of columns that are required by this content type.
 
+### [Get-MgSiteListContentTypeColumnLinkCount](Get-MgSiteListContentTypeColumnLinkCount.md)
+Get the number of the resource
+
 ### [Get-MgSiteListContentTypeColumnPosition](Get-MgSiteListContentTypeColumnPosition.md)
 Column order information in a content type.
 
+### [Get-MgSiteListContentTypeColumnPositionCount](Get-MgSiteListContentTypeColumnPositionCount.md)
+Get the number of the resource
+
+### [Get-MgSiteListContentTypeColumnSourceColumn](Get-MgSiteListContentTypeColumnSourceColumn.md)
+The source column for the content type column.
+
 ### [Get-MgSiteListContentTypeCompatibleHubContentType](Get-MgSiteListContentTypeCompatibleHubContentType.md)
 Invoke function getCompatibleHubContentTypes
+
+### [Get-MgSiteListContentTypeCount](Get-MgSiteListContentTypeCount.md)
+Get the number of the resource
+
+### [Get-MgSiteListCount](Get-MgSiteListCount.md)
+Get the number of the resource
+
+### [Get-MgSiteListCreatedByUser](Get-MgSiteListCreatedByUser.md)
+Identity of the user who created the item.
+Read-only.
+
+### [Get-MgSiteListCreatedByUserMailboxSetting](Get-MgSiteListCreatedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
 
 ### [Get-MgSiteListDrive](Get-MgSiteListDrive.md)
 Only present on document libraries.
 Allows access to the list as a [drive][] resource with [driveItems][driveItem].
 
 ### [Get-MgSiteListItem](Get-MgSiteListItem.md)
-All items contained in the list.
+Returns the metadata for an [item][] in a [list][].
 
 ### [Get-MgSiteListItemActivityByInterval](Get-MgSiteListItemActivityByInterval.md)
 Invoke function getActivitiesByInterval
@@ -497,8 +1085,23 @@ Invoke function getActivitiesByInterval
 ### [Get-MgSiteListItemAnalytic](Get-MgSiteListItemAnalytic.md)
 Analytics about the view activities that took place on this item.
 
+### [Get-MgSiteListItemCreatedByUser](Get-MgSiteListItemCreatedByUser.md)
+Identity of the user who created the item.
+Read-only.
+
+### [Get-MgSiteListItemCreatedByUserMailboxSetting](Get-MgSiteListItemCreatedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
+
 ### [Get-MgSiteListItemDocumentSetVersion](Get-MgSiteListItemDocumentSetVersion.md)
-Version information for a document set version created by a user.
+Read the properties and relationships of a documentSetVersion object.
+
+### [Get-MgSiteListItemDocumentSetVersionCount](Get-MgSiteListItemDocumentSetVersionCount.md)
+Get the number of the resource
+
+### [Get-MgSiteListItemDocumentSetVersionField](Get-MgSiteListItemDocumentSetVersionField.md)
+A collection of the fields and values for this version of the list item.
 
 ### [Get-MgSiteListItemDriveItem](Get-MgSiteListItemDriveItem.md)
 For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
@@ -510,7 +1113,10 @@ The content stream, if the item represents a file.
 The values of the columns set on this list item.
 
 ### [Get-MgSiteListItemVersion](Get-MgSiteListItemVersion.md)
-The list of previous versions of the list item.
+Retrieve the metadata for a specific version of a ListItem.
+
+### [Get-MgSiteListItemVersionCount](Get-MgSiteListItemVersionCount.md)
+Get the number of the resource
 
 ### [Get-MgSiteListItemVersionField](Get-MgSiteListItemVersionField.md)
 A collection of the fields and values for this version of the list item.
@@ -518,24 +1124,38 @@ A collection of the fields and values for this version of the list item.
 ### [Get-MgSiteListOperation](Get-MgSiteListOperation.md)
 The collection of long-running operations on the list.
 
+### [Get-MgSiteListOperationCount](Get-MgSiteListOperationCount.md)
+Get the number of the resource
+
 ### [Get-MgSiteListSubscription](Get-MgSiteListSubscription.md)
 The set of subscriptions on the list.
 
-### [Get-MgSiteOnenoteNotebookFromWebUrl](Get-MgSiteOnenoteNotebookFromWebUrl.md)
-Invoke action getNotebookFromWebUrl
+### [Get-MgSiteListSubscriptionCount](Get-MgSiteListSubscriptionCount.md)
+Get the number of the resource
+
+### [Get-MgSiteListSubscriptionCount](Get-MgSiteListSubscriptionCount.md)
+Get the number of the resource
 
 ### [Get-MgSitePermission](Get-MgSitePermission.md)
-The permissions associated with the site.
-Nullable.
+Retrieve the properties and relationships of a permission object on a site.
+
+### [Get-MgSitePermissionCount](Get-MgSitePermissionCount.md)
+Get the number of the resource
 
 ### [Get-MgSiteRecentNotebook](Get-MgSiteRecentNotebook.md)
 Invoke function getRecentNotebooks
 
 ### [Get-MgSiteTermStore](Get-MgSiteTermStore.md)
-The default termStore under this site.
+Read the properties and relationships of a store object.
+
+### [Get-MgSiteTermStoreCount](Get-MgSiteTermStoreCount.md)
+Get the number of the resource
 
 ### [Get-MgSiteTermStoreGroup](Get-MgSiteTermStoreGroup.md)
-Collection of all groups available in the term store.
+Read the properties and relationships of a term store group object.
+
+### [Get-MgSiteTermStoreGroupCount](Get-MgSiteTermStoreGroupCount.md)
+Get the number of the resource
 
 ### [Get-MgSiteTermStoreGroupSet](Get-MgSiteTermStoreGroupSet.md)
 All sets under the group in a term [store].
@@ -543,8 +1163,14 @@ All sets under the group in a term [store].
 ### [Get-MgSiteTermStoreGroupSetChild](Get-MgSiteTermStoreGroupSetChild.md)
 Children terms of set in term [store].
 
+### [Get-MgSiteTermStoreGroupSetChildCount](Get-MgSiteTermStoreGroupSetChildCount.md)
+Get the number of the resource
+
 ### [Get-MgSiteTermStoreGroupSetChildRelation](Get-MgSiteTermStoreGroupSetChildRelation.md)
 To indicate which terms are related to the current term as either pinned or reused.
+
+### [Get-MgSiteTermStoreGroupSetChildRelationCount](Get-MgSiteTermStoreGroupSetChildRelationCount.md)
+Get the number of the resource
 
 ### [Get-MgSiteTermStoreGroupSetChildRelationFromTerm](Get-MgSiteTermStoreGroupSetChildRelationFromTerm.md)
 The from [term] of the relation.
@@ -561,11 +1187,17 @@ The term to which the relationship is defined.
 ### [Get-MgSiteTermStoreGroupSetChildSet](Get-MgSiteTermStoreGroupSetChildSet.md)
 The [set] in which the term is created.
 
+### [Get-MgSiteTermStoreGroupSetCount](Get-MgSiteTermStoreGroupSetCount.md)
+Get the number of the resource
+
 ### [Get-MgSiteTermStoreGroupSetParentGroup](Get-MgSiteTermStoreGroupSetParentGroup.md)
 The parent [group] that contains the set.
 
 ### [Get-MgSiteTermStoreGroupSetRelation](Get-MgSiteTermStoreGroupSetRelation.md)
 Indicates which terms have been pinned or reused directly under the set.
+
+### [Get-MgSiteTermStoreGroupSetRelationCount](Get-MgSiteTermStoreGroupSetRelationCount.md)
+Get the number of the resource
 
 ### [Get-MgSiteTermStoreGroupSetRelationFromTerm](Get-MgSiteTermStoreGroupSetRelationFromTerm.md)
 The from [term] of the relation.
@@ -580,13 +1212,19 @@ The to [term] of the relation.
 The term to which the relationship is defined.
 
 ### [Get-MgSiteTermStoreGroupSetTerm](Get-MgSiteTermStoreGroupSetTerm.md)
-All the terms under the set.
+Read the properties and relationships of a term object.
 
 ### [Get-MgSiteTermStoreGroupSetTermChild](Get-MgSiteTermStoreGroupSetTermChild.md)
 Children of current term.
 
+### [Get-MgSiteTermStoreGroupSetTermChildCount](Get-MgSiteTermStoreGroupSetTermChildCount.md)
+Get the number of the resource
+
 ### [Get-MgSiteTermStoreGroupSetTermChildRelation](Get-MgSiteTermStoreGroupSetTermChildRelation.md)
 To indicate which terms are related to the current term as either pinned or reused.
+
+### [Get-MgSiteTermStoreGroupSetTermChildRelationCount](Get-MgSiteTermStoreGroupSetTermChildRelationCount.md)
+Get the number of the resource
 
 ### [Get-MgSiteTermStoreGroupSetTermChildRelationFromTerm](Get-MgSiteTermStoreGroupSetTermChildRelationFromTerm.md)
 The from [term] of the relation.
@@ -603,8 +1241,14 @@ The term to which the relationship is defined.
 ### [Get-MgSiteTermStoreGroupSetTermChildSet](Get-MgSiteTermStoreGroupSetTermChildSet.md)
 The [set] in which the term is created.
 
+### [Get-MgSiteTermStoreGroupSetTermCount](Get-MgSiteTermStoreGroupSetTermCount.md)
+Get the number of the resource
+
 ### [Get-MgSiteTermStoreGroupSetTermRelation](Get-MgSiteTermStoreGroupSetTermRelation.md)
 To indicate which terms are related to the current term as either pinned or reused.
+
+### [Get-MgSiteTermStoreGroupSetTermRelationCount](Get-MgSiteTermStoreGroupSetTermRelationCount.md)
+Get the number of the resource
 
 ### [Get-MgSiteTermStoreGroupSetTermRelationFromTerm](Get-MgSiteTermStoreGroupSetTermRelationFromTerm.md)
 The from [term] of the relation.
@@ -622,14 +1266,19 @@ The term to which the relationship is defined.
 The [set] in which the term is created.
 
 ### [Get-MgSiteTermStoreSet](Get-MgSiteTermStoreSet.md)
-Collection of all sets available in the term store.
-This relationship can only be used to load a specific term set.
+Read the properties and relationships of a set object.
 
 ### [Get-MgSiteTermStoreSetChild](Get-MgSiteTermStoreSetChild.md)
 Children terms of set in term [store].
 
+### [Get-MgSiteTermStoreSetChildCount](Get-MgSiteTermStoreSetChildCount.md)
+Get the number of the resource
+
 ### [Get-MgSiteTermStoreSetChildRelation](Get-MgSiteTermStoreSetChildRelation.md)
 To indicate which terms are related to the current term as either pinned or reused.
+
+### [Get-MgSiteTermStoreSetChildRelationCount](Get-MgSiteTermStoreSetChildRelationCount.md)
+Get the number of the resource
 
 ### [Get-MgSiteTermStoreSetChildRelationFromTerm](Get-MgSiteTermStoreSetChildRelationFromTerm.md)
 The from [term] of the relation.
@@ -646,6 +1295,9 @@ The term to which the relationship is defined.
 ### [Get-MgSiteTermStoreSetChildSet](Get-MgSiteTermStoreSetChildSet.md)
 The [set] in which the term is created.
 
+### [Get-MgSiteTermStoreSetCount](Get-MgSiteTermStoreSetCount.md)
+Get the number of the resource
+
 ### [Get-MgSiteTermStoreSetParentGroup](Get-MgSiteTermStoreSetParentGroup.md)
 The parent [group] that contains the set.
 
@@ -655,8 +1307,14 @@ All sets under the group in a term [store].
 ### [Get-MgSiteTermStoreSetParentGroupSetChild](Get-MgSiteTermStoreSetParentGroupSetChild.md)
 Children terms of set in term [store].
 
+### [Get-MgSiteTermStoreSetParentGroupSetChildCount](Get-MgSiteTermStoreSetParentGroupSetChildCount.md)
+Get the number of the resource
+
 ### [Get-MgSiteTermStoreSetParentGroupSetChildRelation](Get-MgSiteTermStoreSetParentGroupSetChildRelation.md)
 To indicate which terms are related to the current term as either pinned or reused.
+
+### [Get-MgSiteTermStoreSetParentGroupSetChildRelationCount](Get-MgSiteTermStoreSetParentGroupSetChildRelationCount.md)
+Get the number of the resource
 
 ### [Get-MgSiteTermStoreSetParentGroupSetChildRelationFromTerm](Get-MgSiteTermStoreSetParentGroupSetChildRelationFromTerm.md)
 The from [term] of the relation.
@@ -673,8 +1331,14 @@ The term to which the relationship is defined.
 ### [Get-MgSiteTermStoreSetParentGroupSetChildSet](Get-MgSiteTermStoreSetParentGroupSetChildSet.md)
 The [set] in which the term is created.
 
+### [Get-MgSiteTermStoreSetParentGroupSetCount](Get-MgSiteTermStoreSetParentGroupSetCount.md)
+Get the number of the resource
+
 ### [Get-MgSiteTermStoreSetParentGroupSetRelation](Get-MgSiteTermStoreSetParentGroupSetRelation.md)
 Indicates which terms have been pinned or reused directly under the set.
+
+### [Get-MgSiteTermStoreSetParentGroupSetRelationCount](Get-MgSiteTermStoreSetParentGroupSetRelationCount.md)
+Get the number of the resource
 
 ### [Get-MgSiteTermStoreSetParentGroupSetRelationFromTerm](Get-MgSiteTermStoreSetParentGroupSetRelationFromTerm.md)
 The from [term] of the relation.
@@ -689,13 +1353,19 @@ The to [term] of the relation.
 The term to which the relationship is defined.
 
 ### [Get-MgSiteTermStoreSetParentGroupSetTerm](Get-MgSiteTermStoreSetParentGroupSetTerm.md)
-All the terms under the set.
+Read the properties and relationships of a term object.
 
 ### [Get-MgSiteTermStoreSetParentGroupSetTermChild](Get-MgSiteTermStoreSetParentGroupSetTermChild.md)
 Children of current term.
 
+### [Get-MgSiteTermStoreSetParentGroupSetTermChildCount](Get-MgSiteTermStoreSetParentGroupSetTermChildCount.md)
+Get the number of the resource
+
 ### [Get-MgSiteTermStoreSetParentGroupSetTermChildRelation](Get-MgSiteTermStoreSetParentGroupSetTermChildRelation.md)
 To indicate which terms are related to the current term as either pinned or reused.
+
+### [Get-MgSiteTermStoreSetParentGroupSetTermChildRelationCount](Get-MgSiteTermStoreSetParentGroupSetTermChildRelationCount.md)
+Get the number of the resource
 
 ### [Get-MgSiteTermStoreSetParentGroupSetTermChildRelationFromTerm](Get-MgSiteTermStoreSetParentGroupSetTermChildRelationFromTerm.md)
 The from [term] of the relation.
@@ -712,8 +1382,14 @@ The term to which the relationship is defined.
 ### [Get-MgSiteTermStoreSetParentGroupSetTermChildSet](Get-MgSiteTermStoreSetParentGroupSetTermChildSet.md)
 The [set] in which the term is created.
 
+### [Get-MgSiteTermStoreSetParentGroupSetTermCount](Get-MgSiteTermStoreSetParentGroupSetTermCount.md)
+Get the number of the resource
+
 ### [Get-MgSiteTermStoreSetParentGroupSetTermRelation](Get-MgSiteTermStoreSetParentGroupSetTermRelation.md)
 To indicate which terms are related to the current term as either pinned or reused.
+
+### [Get-MgSiteTermStoreSetParentGroupSetTermRelationCount](Get-MgSiteTermStoreSetParentGroupSetTermRelationCount.md)
+Get the number of the resource
 
 ### [Get-MgSiteTermStoreSetParentGroupSetTermRelationFromTerm](Get-MgSiteTermStoreSetParentGroupSetTermRelationFromTerm.md)
 The from [term] of the relation.
@@ -733,6 +1409,9 @@ The [set] in which the term is created.
 ### [Get-MgSiteTermStoreSetRelation](Get-MgSiteTermStoreSetRelation.md)
 Indicates which terms have been pinned or reused directly under the set.
 
+### [Get-MgSiteTermStoreSetRelationCount](Get-MgSiteTermStoreSetRelationCount.md)
+Get the number of the resource
+
 ### [Get-MgSiteTermStoreSetRelationFromTerm](Get-MgSiteTermStoreSetRelationFromTerm.md)
 The from [term] of the relation.
 The term from which the relationship is defined.
@@ -746,13 +1425,19 @@ The to [term] of the relation.
 The term to which the relationship is defined.
 
 ### [Get-MgSiteTermStoreSetTerm](Get-MgSiteTermStoreSetTerm.md)
-All the terms under the set.
+Read the properties and relationships of a term object.
 
 ### [Get-MgSiteTermStoreSetTermChild](Get-MgSiteTermStoreSetTermChild.md)
 Children of current term.
 
+### [Get-MgSiteTermStoreSetTermChildCount](Get-MgSiteTermStoreSetTermChildCount.md)
+Get the number of the resource
+
 ### [Get-MgSiteTermStoreSetTermChildRelation](Get-MgSiteTermStoreSetTermChildRelation.md)
 To indicate which terms are related to the current term as either pinned or reused.
+
+### [Get-MgSiteTermStoreSetTermChildRelationCount](Get-MgSiteTermStoreSetTermChildRelationCount.md)
+Get the number of the resource
 
 ### [Get-MgSiteTermStoreSetTermChildRelationFromTerm](Get-MgSiteTermStoreSetTermChildRelationFromTerm.md)
 The from [term] of the relation.
@@ -769,8 +1454,14 @@ The term to which the relationship is defined.
 ### [Get-MgSiteTermStoreSetTermChildSet](Get-MgSiteTermStoreSetTermChildSet.md)
 The [set] in which the term is created.
 
+### [Get-MgSiteTermStoreSetTermCount](Get-MgSiteTermStoreSetTermCount.md)
+Get the number of the resource
+
 ### [Get-MgSiteTermStoreSetTermRelation](Get-MgSiteTermStoreSetTermRelation.md)
 To indicate which terms are related to the current term as either pinned or reused.
+
+### [Get-MgSiteTermStoreSetTermRelationCount](Get-MgSiteTermStoreSetTermRelationCount.md)
+Get the number of the resource
 
 ### [Get-MgSiteTermStoreSetTermRelationFromTerm](Get-MgSiteTermStoreSetTermRelationFromTerm.md)
 The from [term] of the relation.
@@ -790,59 +1481,80 @@ The [set] in which the term is created.
 ### [Get-MgSubSite](Get-MgSubSite.md)
 The collection of the sub-sites under this site.
 
-### [Get-MgUserFollowedSite](Get-MgUserFollowedSite.md)
-Get followedSites from users
+### [Get-MgSubSiteCount](Get-MgSubSiteCount.md)
+Get the number of the resource
+
+### [Get-MgSubSiteCount](Get-MgSubSiteCount.md)
+Get the number of the resource
+
+### [Get-MgUserFollowedSiteCount](Get-MgUserFollowedSiteCount.md)
+Get the number of the resource
 
 ### [Grant-MgSitePermission](Grant-MgSitePermission.md)
-Invoke action grant
+Grant users access to a link represented by a [permission][].
+
+### [Invoke-MgPreviewSiteOnenoteNotebookSectionGroupSectionPage](Invoke-MgPreviewSiteOnenoteNotebookSectionGroupSectionPage.md)
+Invoke function preview
+
+### [Invoke-MgPreviewSiteOnenoteNotebookSectionPage](Invoke-MgPreviewSiteOnenoteNotebookSectionPage.md)
+Invoke function preview
 
 ### [Invoke-MgPreviewSiteOnenotePage](Invoke-MgPreviewSiteOnenotePage.md)
 Invoke function preview
 
+### [Invoke-MgPreviewSiteOnenoteSectionGroupSectionPage](Invoke-MgPreviewSiteOnenoteSectionGroupSectionPage.md)
+Invoke function preview
+
+### [Invoke-MgPreviewSiteOnenoteSectionPage](Invoke-MgPreviewSiteOnenoteSectionPage.md)
+Invoke function preview
+
 ### [Invoke-MgReauthorizeSiteListSubscription](Invoke-MgReauthorizeSiteListSubscription.md)
-Invoke action reauthorize
+Reauthorize a subscription when you receive a **reauthorizationRequired** challenge.
 
 ### [Join-MgSiteContentTypeWithHubSite](Join-MgSiteContentTypeWithHubSite.md)
-Invoke action associateWithHubSites
+Associate a published [content type][contentType] present in a content type hub with a list of hub sites.
 
 ### [Join-MgSiteListContentTypeWithHubSite](Join-MgSiteListContentTypeWithHubSite.md)
-Invoke action associateWithHubSites
+Associate a published [content type][contentType] present in a content type hub with a list of hub sites.
 
 ### [New-MgGroupSiteAnalyticItemActivityStat](New-MgGroupSiteAnalyticItemActivityStat.md)
 Create new navigation property to itemActivityStats for groups
 
+### [New-MgGroupSiteAnalyticItemActivityStatActivity](New-MgGroupSiteAnalyticItemActivityStatActivity.md)
+Create new navigation property to activities for groups
+
 ### [New-MgGroupSiteColumn](New-MgGroupSiteColumn.md)
-Create new navigation property to columns for groups
+Create a column for a [site][site] with a request that specifies a [columnDefinition][columnDefinition].
 
 ### [New-MgGroupSiteContentType](New-MgGroupSiteContentType.md)
-Create new navigation property to contentTypes for groups
+Create a new [contentType][] in a [site][].
 
 ### [New-MgGroupSiteContentTypeColumn](New-MgGroupSiteContentTypeColumn.md)
-Create new navigation property to columns for groups
+Add a column to a [content type][contentType] in a site, or a list with a request that specifies a [columnDefinition][columnDefinition].
 
 ### [New-MgGroupSiteContentTypeColumnLink](New-MgGroupSiteContentTypeColumnLink.md)
 Create new navigation property to columnLinks for groups
 
 ### [New-MgGroupSiteList](New-MgGroupSiteList.md)
-Create new navigation property to lists for groups
+Create a new [list][] in a [site][].
 
 ### [New-MgGroupSiteListColumn](New-MgGroupSiteListColumn.md)
-Create new navigation property to columns for groups
+Create a column for a [list][list] with a request that specifies a [columnDefinition][columnDefinition].
 
 ### [New-MgGroupSiteListContentType](New-MgGroupSiteListContentType.md)
 Create new navigation property to contentTypes for groups
 
 ### [New-MgGroupSiteListContentTypeColumn](New-MgGroupSiteListContentTypeColumn.md)
-Create new navigation property to columns for groups
+Add a column to a [content type][contentType] in a site, or a list with a request that specifies a [columnDefinition][columnDefinition].
 
 ### [New-MgGroupSiteListContentTypeColumnLink](New-MgGroupSiteListContentTypeColumnLink.md)
 Create new navigation property to columnLinks for groups
 
 ### [New-MgGroupSiteListItem](New-MgGroupSiteListItem.md)
-Create new navigation property to items for groups
+Create a new [listItem][] in a [list][].
 
 ### [New-MgGroupSiteListItemDocumentSetVersion](New-MgGroupSiteListItemDocumentSetVersion.md)
-Create new navigation property to documentSetVersions for groups
+Create a new version of a document set item in a list.
 
 ### [New-MgGroupSiteListItemVersion](New-MgGroupSiteListItemVersion.md)
 Create new navigation property to versions for groups
@@ -853,23 +1565,65 @@ Create new navigation property to operations for groups
 ### [New-MgGroupSiteListSubscription](New-MgGroupSiteListSubscription.md)
 Create new navigation property to subscriptions for groups
 
+### [New-MgGroupSiteOnenoteNotebook](New-MgGroupSiteOnenoteNotebook.md)
+Create a new OneNote notebook.
+
+### [New-MgGroupSiteOnenoteNotebookSection](New-MgGroupSiteOnenoteNotebookSection.md)
+Create a new onenoteSection in the specified notebook.
+
+### [New-MgGroupSiteOnenoteNotebookSectionGroup](New-MgGroupSiteOnenoteNotebookSectionGroup.md)
+Create a new section group in the specified notebook.
+
+### [New-MgGroupSiteOnenoteNotebookSectionGroupSection](New-MgGroupSiteOnenoteNotebookSectionGroupSection.md)
+Create a new onenoteSection in the specified section group.
+
+### [New-MgGroupSiteOnenoteNotebookSectionGroupSectionPage](New-MgGroupSiteOnenoteNotebookSectionGroupSectionPage.md)
+Create new navigation property to pages for groups
+
+### [New-MgGroupSiteOnenoteNotebookSectionPage](New-MgGroupSiteOnenoteNotebookSectionPage.md)
+Create new navigation property to pages for groups
+
+### [New-MgGroupSiteOnenoteOperation](New-MgGroupSiteOnenoteOperation.md)
+Create new navigation property to operations for groups
+
+### [New-MgGroupSiteOnenotePage](New-MgGroupSiteOnenotePage.md)
+Create new navigation property to pages for groups
+
+### [New-MgGroupSiteOnenoteResource](New-MgGroupSiteOnenoteResource.md)
+Create new navigation property to resources for groups
+
+### [New-MgGroupSiteOnenoteSection](New-MgGroupSiteOnenoteSection.md)
+Create new navigation property to sections for groups
+
+### [New-MgGroupSiteOnenoteSectionGroup](New-MgGroupSiteOnenoteSectionGroup.md)
+Create new navigation property to sectionGroups for groups
+
+### [New-MgGroupSiteOnenoteSectionGroupSection](New-MgGroupSiteOnenoteSectionGroupSection.md)
+Create a new onenoteSection in the specified section group.
+
+### [New-MgGroupSiteOnenoteSectionGroupSectionPage](New-MgGroupSiteOnenoteSectionGroupSectionPage.md)
+Create new navigation property to pages for groups
+
+### [New-MgGroupSiteOnenoteSectionPage](New-MgGroupSiteOnenoteSectionPage.md)
+Create new navigation property to pages for groups
+
 ### [New-MgGroupSiteOperation](New-MgGroupSiteOperation.md)
 Create new navigation property to operations for groups
 
 ### [New-MgGroupSitePermission](New-MgGroupSitePermission.md)
-Create new navigation property to permissions for groups
+Create a new permission object on a site.
 
 ### [New-MgGroupSiteTermStore](New-MgGroupSiteTermStore.md)
 Create new navigation property to termStores for groups
 
 ### [New-MgGroupSiteTermStoreGroup](New-MgGroupSiteTermStoreGroup.md)
-Create new navigation property to groups for groups
+Create a new group object in a term store.
 
 ### [New-MgGroupSiteTermStoreGroupSet](New-MgGroupSiteTermStoreGroupSet.md)
 Create new navigation property to sets for groups
 
 ### [New-MgGroupSiteTermStoreGroupSetChild](New-MgGroupSiteTermStoreGroupSetChild.md)
-Create new navigation property to children for groups
+Create a new term object.
 
 ### [New-MgGroupSiteTermStoreGroupSetChildRelation](New-MgGroupSiteTermStoreGroupSetChildRelation.md)
 Create new navigation property to relations for groups
@@ -893,7 +1647,7 @@ Create new navigation property to relations for groups
 Create new navigation property to sets for groups
 
 ### [New-MgGroupSiteTermStoreSetChild](New-MgGroupSiteTermStoreSetChild.md)
-Create new navigation property to children for groups
+Create a new term object.
 
 ### [New-MgGroupSiteTermStoreSetChildRelation](New-MgGroupSiteTermStoreSetChildRelation.md)
 Create new navigation property to relations for groups
@@ -902,7 +1656,7 @@ Create new navigation property to relations for groups
 Create new navigation property to sets for groups
 
 ### [New-MgGroupSiteTermStoreSetParentGroupSetChild](New-MgGroupSiteTermStoreSetParentGroupSetChild.md)
-Create new navigation property to children for groups
+Create a new term object.
 
 ### [New-MgGroupSiteTermStoreSetParentGroupSetChildRelation](New-MgGroupSiteTermStoreSetParentGroupSetChildRelation.md)
 Create new navigation property to relations for groups
@@ -940,38 +1694,41 @@ Create new navigation property to relations for groups
 ### [New-MgSiteAnalyticItemActivityStat](New-MgSiteAnalyticItemActivityStat.md)
 Create new navigation property to itemActivityStats for sites
 
+### [New-MgSiteAnalyticItemActivityStatActivity](New-MgSiteAnalyticItemActivityStatActivity.md)
+Create new navigation property to activities for sites
+
 ### [New-MgSiteColumn](New-MgSiteColumn.md)
-Create new navigation property to columns for sites
+Create a column for a [site][site] with a request that specifies a [columnDefinition][columnDefinition].
 
 ### [New-MgSiteContentType](New-MgSiteContentType.md)
-Create new navigation property to contentTypes for sites
+Create a new [contentType][] in a [site][].
 
 ### [New-MgSiteContentTypeColumn](New-MgSiteContentTypeColumn.md)
-Create new navigation property to columns for sites
+Add a column to a [content type][contentType] in a site, or a list with a request that specifies a [columnDefinition][columnDefinition].
 
 ### [New-MgSiteContentTypeColumnLink](New-MgSiteContentTypeColumnLink.md)
 Create new navigation property to columnLinks for sites
 
 ### [New-MgSiteList](New-MgSiteList.md)
-Create new navigation property to lists for sites
+Create a new [list][] in a [site][].
 
 ### [New-MgSiteListColumn](New-MgSiteListColumn.md)
-Create new navigation property to columns for sites
+Create a column for a [list][list] with a request that specifies a [columnDefinition][columnDefinition].
 
 ### [New-MgSiteListContentType](New-MgSiteListContentType.md)
 Create new navigation property to contentTypes for sites
 
 ### [New-MgSiteListContentTypeColumn](New-MgSiteListContentTypeColumn.md)
-Create new navigation property to columns for sites
+Add a column to a [content type][contentType] in a site, or a list with a request that specifies a [columnDefinition][columnDefinition].
 
 ### [New-MgSiteListContentTypeColumnLink](New-MgSiteListContentTypeColumnLink.md)
 Create new navigation property to columnLinks for sites
 
 ### [New-MgSiteListItem](New-MgSiteListItem.md)
-Create new navigation property to items for sites
+Create a new [listItem][] in a [list][].
 
 ### [New-MgSiteListItemDocumentSetVersion](New-MgSiteListItemDocumentSetVersion.md)
-Create new navigation property to documentSetVersions for sites
+Create a new version of a document set item in a list.
 
 ### [New-MgSiteListItemVersion](New-MgSiteListItemVersion.md)
 Create new navigation property to versions for sites
@@ -983,19 +1740,19 @@ Create new navigation property to operations for sites
 Create new navigation property to subscriptions for sites
 
 ### [New-MgSitePermission](New-MgSitePermission.md)
-Create new navigation property to permissions for sites
+Create a new permission object on a site.
 
 ### [New-MgSiteTermStore](New-MgSiteTermStore.md)
 Create new navigation property to termStores for sites
 
 ### [New-MgSiteTermStoreGroup](New-MgSiteTermStoreGroup.md)
-Create new navigation property to groups for sites
+Create a new group object in a term store.
 
 ### [New-MgSiteTermStoreGroupSet](New-MgSiteTermStoreGroupSet.md)
 Create new navigation property to sets for sites
 
 ### [New-MgSiteTermStoreGroupSetChild](New-MgSiteTermStoreGroupSetChild.md)
-Create new navigation property to children for sites
+Create a new term object.
 
 ### [New-MgSiteTermStoreGroupSetChildRelation](New-MgSiteTermStoreGroupSetChildRelation.md)
 Create new navigation property to relations for sites
@@ -1019,7 +1776,7 @@ Create new navigation property to relations for sites
 Create new navigation property to sets for sites
 
 ### [New-MgSiteTermStoreSetChild](New-MgSiteTermStoreSetChild.md)
-Create new navigation property to children for sites
+Create a new term object.
 
 ### [New-MgSiteTermStoreSetChildRelation](New-MgSiteTermStoreSetChildRelation.md)
 Create new navigation property to relations for sites
@@ -1028,7 +1785,7 @@ Create new navigation property to relations for sites
 Create new navigation property to sets for sites
 
 ### [New-MgSiteTermStoreSetParentGroupSetChild](New-MgSiteTermStoreSetParentGroupSetChild.md)
-Create new navigation property to children for sites
+Create a new term object.
 
 ### [New-MgSiteTermStoreSetParentGroupSetChildRelation](New-MgSiteTermStoreSetParentGroupSetChildRelation.md)
 Create new navigation property to relations for sites
@@ -1064,10 +1821,10 @@ Create new navigation property to relations for sites
 Create new navigation property to relations for sites
 
 ### [Publish-MgSiteContentType](Publish-MgSiteContentType.md)
-Invoke action publish
+Publishes a [contentType][] present in the content type hub site.
 
 ### [Publish-MgSiteListContentType](Publish-MgSiteListContentType.md)
-Invoke action publish
+Publishes a [contentType][] present in the content type hub site.
 
 ### [Remove-MgGroupSite](Remove-MgGroupSite.md)
 The list of SharePoint sites in this group.
@@ -1079,14 +1836,17 @@ Delete navigation property analytics for groups
 ### [Remove-MgGroupSiteAnalyticItemActivityStat](Remove-MgGroupSiteAnalyticItemActivityStat.md)
 Delete navigation property itemActivityStats for groups
 
+### [Remove-MgGroupSiteAnalyticItemActivityStatActivity](Remove-MgGroupSiteAnalyticItemActivityStatActivity.md)
+Delete navigation property activities for groups
+
 ### [Remove-MgGroupSiteColumn](Remove-MgGroupSiteColumn.md)
 Delete navigation property columns for groups
 
 ### [Remove-MgGroupSiteContentType](Remove-MgGroupSiteContentType.md)
-Delete navigation property contentTypes for groups
+Remove a [content type][contentType] from a [list][] or a [site][].
 
 ### [Remove-MgGroupSiteContentTypeColumn](Remove-MgGroupSiteContentTypeColumn.md)
-Delete navigation property columns for groups
+Remove a [column][columndefinition] from a [site][], a [list][], or a [content type][contentType].
 
 ### [Remove-MgGroupSiteContentTypeColumnLink](Remove-MgGroupSiteContentTypeColumnLink.md)
 Delete navigation property columnLinks for groups
@@ -1101,16 +1861,19 @@ Delete navigation property columns for groups
 Delete navigation property contentTypes for groups
 
 ### [Remove-MgGroupSiteListContentTypeColumn](Remove-MgGroupSiteListContentTypeColumn.md)
-Delete navigation property columns for groups
+Remove a [column][columndefinition] from a [site][], a [list][], or a [content type][contentType].
 
 ### [Remove-MgGroupSiteListContentTypeColumnLink](Remove-MgGroupSiteListContentTypeColumnLink.md)
 Delete navigation property columnLinks for groups
 
 ### [Remove-MgGroupSiteListItem](Remove-MgGroupSiteListItem.md)
-Delete navigation property items for groups
+Removes an item from a [list][].
 
 ### [Remove-MgGroupSiteListItemDocumentSetVersion](Remove-MgGroupSiteListItemDocumentSetVersion.md)
-Delete navigation property documentSetVersions for groups
+Delete a version of a document set in a list.
+
+### [Remove-MgGroupSiteListItemDocumentSetVersionField](Remove-MgGroupSiteListItemDocumentSetVersionField.md)
+Delete navigation property fields for groups
 
 ### [Remove-MgGroupSiteListItemField](Remove-MgGroupSiteListItemField.md)
 Delete navigation property fields for groups
@@ -1127,17 +1890,62 @@ Delete navigation property operations for groups
 ### [Remove-MgGroupSiteListSubscription](Remove-MgGroupSiteListSubscription.md)
 Delete navigation property subscriptions for groups
 
+### [Remove-MgGroupSiteOnenote](Remove-MgGroupSiteOnenote.md)
+Delete navigation property onenote for groups
+
+### [Remove-MgGroupSiteOnenoteNotebook](Remove-MgGroupSiteOnenoteNotebook.md)
+Delete navigation property notebooks for groups
+
+### [Remove-MgGroupSiteOnenoteNotebookSection](Remove-MgGroupSiteOnenoteNotebookSection.md)
+Delete navigation property sections for groups
+
+### [Remove-MgGroupSiteOnenoteNotebookSectionGroup](Remove-MgGroupSiteOnenoteNotebookSectionGroup.md)
+Delete navigation property sectionGroups for groups
+
+### [Remove-MgGroupSiteOnenoteNotebookSectionGroupSection](Remove-MgGroupSiteOnenoteNotebookSectionGroupSection.md)
+Delete navigation property sections for groups
+
+### [Remove-MgGroupSiteOnenoteNotebookSectionGroupSectionPage](Remove-MgGroupSiteOnenoteNotebookSectionGroupSectionPage.md)
+Delete navigation property pages for groups
+
+### [Remove-MgGroupSiteOnenoteNotebookSectionPage](Remove-MgGroupSiteOnenoteNotebookSectionPage.md)
+Delete navigation property pages for groups
+
+### [Remove-MgGroupSiteOnenoteOperation](Remove-MgGroupSiteOnenoteOperation.md)
+Delete navigation property operations for groups
+
+### [Remove-MgGroupSiteOnenotePage](Remove-MgGroupSiteOnenotePage.md)
+Delete a OneNote page.
+
+### [Remove-MgGroupSiteOnenoteResource](Remove-MgGroupSiteOnenoteResource.md)
+Delete navigation property resources for groups
+
+### [Remove-MgGroupSiteOnenoteSection](Remove-MgGroupSiteOnenoteSection.md)
+Delete navigation property sections for groups
+
+### [Remove-MgGroupSiteOnenoteSectionGroup](Remove-MgGroupSiteOnenoteSectionGroup.md)
+Delete navigation property sectionGroups for groups
+
+### [Remove-MgGroupSiteOnenoteSectionGroupSection](Remove-MgGroupSiteOnenoteSectionGroupSection.md)
+Delete navigation property sections for groups
+
+### [Remove-MgGroupSiteOnenoteSectionGroupSectionPage](Remove-MgGroupSiteOnenoteSectionGroupSectionPage.md)
+Delete navigation property pages for groups
+
+### [Remove-MgGroupSiteOnenoteSectionPage](Remove-MgGroupSiteOnenoteSectionPage.md)
+Delete navigation property pages for groups
+
 ### [Remove-MgGroupSiteOperation](Remove-MgGroupSiteOperation.md)
 Delete navigation property operations for groups
 
 ### [Remove-MgGroupSitePermission](Remove-MgGroupSitePermission.md)
-Delete navigation property permissions for groups
+Delete a permission object on a site.
 
 ### [Remove-MgGroupSiteTermStore](Remove-MgGroupSiteTermStore.md)
 Delete navigation property termStore for groups
 
 ### [Remove-MgGroupSiteTermStoreGroup](Remove-MgGroupSiteTermStoreGroup.md)
-Delete navigation property groups for groups
+Delete a group object in a term [store].
 
 ### [Remove-MgGroupSiteTermStoreGroupSet](Remove-MgGroupSiteTermStoreGroupSet.md)
 Delete navigation property sets for groups
@@ -1155,7 +1963,7 @@ Delete navigation property parentGroup for groups
 Delete navigation property relations for groups
 
 ### [Remove-MgGroupSiteTermStoreGroupSetTerm](Remove-MgGroupSiteTermStoreGroupSetTerm.md)
-Delete navigation property terms for groups
+Delete a term object.
 
 ### [Remove-MgGroupSiteTermStoreGroupSetTermChild](Remove-MgGroupSiteTermStoreGroupSetTermChild.md)
 Delete navigation property children for groups
@@ -1167,7 +1975,7 @@ Delete navigation property relations for groups
 Delete navigation property relations for groups
 
 ### [Remove-MgGroupSiteTermStoreSet](Remove-MgGroupSiteTermStoreSet.md)
-Delete navigation property sets for groups
+Delete a set object.
 
 ### [Remove-MgGroupSiteTermStoreSetChild](Remove-MgGroupSiteTermStoreSetChild.md)
 Delete navigation property children for groups
@@ -1191,7 +1999,7 @@ Delete navigation property relations for groups
 Delete navigation property relations for groups
 
 ### [Remove-MgGroupSiteTermStoreSetParentGroupSetTerm](Remove-MgGroupSiteTermStoreSetParentGroupSetTerm.md)
-Delete navigation property terms for groups
+Delete a term object.
 
 ### [Remove-MgGroupSiteTermStoreSetParentGroupSetTermChild](Remove-MgGroupSiteTermStoreSetParentGroupSetTermChild.md)
 Delete navigation property children for groups
@@ -1206,7 +2014,7 @@ Delete navigation property relations for groups
 Delete navigation property relations for groups
 
 ### [Remove-MgGroupSiteTermStoreSetTerm](Remove-MgGroupSiteTermStoreSetTerm.md)
-Delete navigation property terms for groups
+Delete a term object.
 
 ### [Remove-MgGroupSiteTermStoreSetTermChild](Remove-MgGroupSiteTermStoreSetTermChild.md)
 Delete navigation property children for groups
@@ -1223,14 +2031,17 @@ Delete navigation property analytics for sites
 ### [Remove-MgSiteAnalyticItemActivityStat](Remove-MgSiteAnalyticItemActivityStat.md)
 Delete navigation property itemActivityStats for sites
 
+### [Remove-MgSiteAnalyticItemActivityStatActivity](Remove-MgSiteAnalyticItemActivityStatActivity.md)
+Delete navigation property activities for sites
+
 ### [Remove-MgSiteColumn](Remove-MgSiteColumn.md)
 Delete navigation property columns for sites
 
 ### [Remove-MgSiteContentType](Remove-MgSiteContentType.md)
-Delete navigation property contentTypes for sites
+Remove a [content type][contentType] from a [list][] or a [site][].
 
 ### [Remove-MgSiteContentTypeColumn](Remove-MgSiteContentTypeColumn.md)
-Delete navigation property columns for sites
+Remove a [column][columndefinition] from a [site][], a [list][], or a [content type][contentType].
 
 ### [Remove-MgSiteContentTypeColumnLink](Remove-MgSiteContentTypeColumnLink.md)
 Delete navigation property columnLinks for sites
@@ -1245,16 +2056,19 @@ Delete navigation property columns for sites
 Delete navigation property contentTypes for sites
 
 ### [Remove-MgSiteListContentTypeColumn](Remove-MgSiteListContentTypeColumn.md)
-Delete navigation property columns for sites
+Remove a [column][columndefinition] from a [site][], a [list][], or a [content type][contentType].
 
 ### [Remove-MgSiteListContentTypeColumnLink](Remove-MgSiteListContentTypeColumnLink.md)
 Delete navigation property columnLinks for sites
 
 ### [Remove-MgSiteListItem](Remove-MgSiteListItem.md)
-Delete navigation property items for sites
+Removes an item from a [list][].
 
 ### [Remove-MgSiteListItemDocumentSetVersion](Remove-MgSiteListItemDocumentSetVersion.md)
-Delete navigation property documentSetVersions for sites
+Delete a version of a document set in a list.
+
+### [Remove-MgSiteListItemDocumentSetVersionField](Remove-MgSiteListItemDocumentSetVersionField.md)
+Delete navigation property fields for sites
 
 ### [Remove-MgSiteListItemField](Remove-MgSiteListItemField.md)
 Delete navigation property fields for sites
@@ -1272,13 +2086,13 @@ Delete navigation property operations for sites
 Delete navigation property subscriptions for sites
 
 ### [Remove-MgSitePermission](Remove-MgSitePermission.md)
-Delete navigation property permissions for sites
+Delete a permission object on a site.
 
 ### [Remove-MgSiteTermStore](Remove-MgSiteTermStore.md)
 Delete navigation property termStore for sites
 
 ### [Remove-MgSiteTermStoreGroup](Remove-MgSiteTermStoreGroup.md)
-Delete navigation property groups for sites
+Delete a group object in a term [store].
 
 ### [Remove-MgSiteTermStoreGroupSet](Remove-MgSiteTermStoreGroupSet.md)
 Delete navigation property sets for sites
@@ -1296,7 +2110,7 @@ Delete navigation property parentGroup for sites
 Delete navigation property relations for sites
 
 ### [Remove-MgSiteTermStoreGroupSetTerm](Remove-MgSiteTermStoreGroupSetTerm.md)
-Delete navigation property terms for sites
+Delete a term object.
 
 ### [Remove-MgSiteTermStoreGroupSetTermChild](Remove-MgSiteTermStoreGroupSetTermChild.md)
 Delete navigation property children for sites
@@ -1308,7 +2122,7 @@ Delete navigation property relations for sites
 Delete navigation property relations for sites
 
 ### [Remove-MgSiteTermStoreSet](Remove-MgSiteTermStoreSet.md)
-Delete navigation property sets for sites
+Delete a set object.
 
 ### [Remove-MgSiteTermStoreSetChild](Remove-MgSiteTermStoreSetChild.md)
 Delete navigation property children for sites
@@ -1332,7 +2146,7 @@ Delete navigation property relations for sites
 Delete navigation property relations for sites
 
 ### [Remove-MgSiteTermStoreSetParentGroupSetTerm](Remove-MgSiteTermStoreSetParentGroupSetTerm.md)
-Delete navigation property terms for sites
+Delete a term object.
 
 ### [Remove-MgSiteTermStoreSetParentGroupSetTermChild](Remove-MgSiteTermStoreSetParentGroupSetTermChild.md)
 Delete navigation property children for sites
@@ -1347,7 +2161,7 @@ Delete navigation property relations for sites
 Delete navigation property relations for sites
 
 ### [Remove-MgSiteTermStoreSetTerm](Remove-MgSiteTermStoreSetTerm.md)
-Delete navigation property terms for sites
+Delete a term object.
 
 ### [Remove-MgSiteTermStoreSetTermChild](Remove-MgSiteTermStoreSetTermChild.md)
 Delete navigation property children for sites
@@ -1359,12 +2173,37 @@ Delete navigation property relations for sites
 Delete navigation property relations for sites
 
 ### [Restore-MgSiteListItemDocumentSetVersion](Restore-MgSiteListItemDocumentSetVersion.md)
-Invoke action restore
+Restore a document set version.
 
 ### [Restore-MgSiteListItemVersion](Restore-MgSiteListItemVersion.md)
-Invoke action restoreVersion
+Restore a previous version of a ListItem to be the current version.
+This will create a new version with the contents of the previous version, but preserves all existing versions of the item.
+
+### [Set-MgGroupSiteAnalyticItemActivityStatActivityDriveItemContent](Set-MgGroupSiteAnalyticItemActivityStatActivityDriveItemContent.md)
+The content stream, if the item represents a file.
 
 ### [Set-MgGroupSiteListItemDriveItemContent](Set-MgGroupSiteListItemDriveItemContent.md)
+The content stream, if the item represents a file.
+
+### [Set-MgGroupSiteOnenoteNotebookSectionGroupSectionPageContent](Set-MgGroupSiteOnenoteNotebookSectionGroupSectionPageContent.md)
+The page's HTML content.
+
+### [Set-MgGroupSiteOnenoteNotebookSectionPageContent](Set-MgGroupSiteOnenoteNotebookSectionPageContent.md)
+The page's HTML content.
+
+### [Set-MgGroupSiteOnenotePageContent](Set-MgGroupSiteOnenotePageContent.md)
+The page's HTML content.
+
+### [Set-MgGroupSiteOnenoteResourceContent](Set-MgGroupSiteOnenoteResourceContent.md)
+The content stream
+
+### [Set-MgGroupSiteOnenoteSectionGroupSectionPageContent](Set-MgGroupSiteOnenoteSectionGroupSectionPageContent.md)
+The page's HTML content.
+
+### [Set-MgGroupSiteOnenoteSectionPageContent](Set-MgGroupSiteOnenoteSectionPageContent.md)
+The page's HTML content.
+
+### [Set-MgSiteAnalyticItemActivityStatActivityDriveItemContent](Set-MgSiteAnalyticItemActivityStatActivityDriveItemContent.md)
 The content stream, if the item represents a file.
 
 ### [Set-MgSiteListItemDriveItemContent](Set-MgSiteListItemDriveItemContent.md)
@@ -1377,10 +2216,10 @@ Invoke function isPublished
 Invoke function isPublished
 
 ### [Unpublish-MgSiteContentType](Unpublish-MgSiteContentType.md)
-Invoke action unpublish
+Unpublish a [contentType][] from a content type hub site.
 
 ### [Unpublish-MgSiteListContentType](Unpublish-MgSiteListContentType.md)
-Invoke action unpublish
+Unpublish a [contentType][] from a content type hub site.
 
 ### [Update-MgGroupSite](Update-MgGroupSite.md)
 Update the navigation property sites in groups
@@ -1391,17 +2230,26 @@ Update the navigation property analytics in groups
 ### [Update-MgGroupSiteAnalyticItemActivityStat](Update-MgGroupSiteAnalyticItemActivityStat.md)
 Update the navigation property itemActivityStats in groups
 
+### [Update-MgGroupSiteAnalyticItemActivityStatActivity](Update-MgGroupSiteAnalyticItemActivityStatActivity.md)
+Update the navigation property activities in groups
+
 ### [Update-MgGroupSiteColumn](Update-MgGroupSiteColumn.md)
 Update the navigation property columns in groups
 
 ### [Update-MgGroupSiteContentType](Update-MgGroupSiteContentType.md)
-Update the navigation property contentTypes in groups
+Update a [content type][contentType].
 
 ### [Update-MgGroupSiteContentTypeColumn](Update-MgGroupSiteContentTypeColumn.md)
 Update the navigation property columns in groups
 
 ### [Update-MgGroupSiteContentTypeColumnLink](Update-MgGroupSiteContentTypeColumnLink.md)
 Update the navigation property columnLinks in groups
+
+### [Update-MgGroupSiteCreatedByUserMailboxSetting](Update-MgGroupSiteCreatedByUserMailboxSetting.md)
+Update property mailboxSettings value.
+
+### [Update-MgGroupSiteLastModifiedByUserMailboxSetting](Update-MgGroupSiteLastModifiedByUserMailboxSetting.md)
+Update property mailboxSettings value.
 
 ### [Update-MgGroupSiteList](Update-MgGroupSiteList.md)
 Update the navigation property lists in groups
@@ -1418,14 +2266,26 @@ Update the navigation property columns in groups
 ### [Update-MgGroupSiteListContentTypeColumnLink](Update-MgGroupSiteListContentTypeColumnLink.md)
 Update the navigation property columnLinks in groups
 
+### [Update-MgGroupSiteListCreatedByUserMailboxSetting](Update-MgGroupSiteListCreatedByUserMailboxSetting.md)
+Update property mailboxSettings value.
+
 ### [Update-MgGroupSiteListItem](Update-MgGroupSiteListItem.md)
 Update the navigation property items in groups
+
+### [Update-MgGroupSiteListItemCreatedByUserMailboxSetting](Update-MgGroupSiteListItemCreatedByUserMailboxSetting.md)
+Update property mailboxSettings value.
 
 ### [Update-MgGroupSiteListItemDocumentSetVersion](Update-MgGroupSiteListItemDocumentSetVersion.md)
 Update the navigation property documentSetVersions in groups
 
-### [Update-MgGroupSiteListItemField](Update-MgGroupSiteListItemField.md)
+### [Update-MgGroupSiteListItemDocumentSetVersionField](Update-MgGroupSiteListItemDocumentSetVersionField.md)
 Update the navigation property fields in groups
+
+### [Update-MgGroupSiteListItemField](Update-MgGroupSiteListItemField.md)
+Update the properties on a **[listItem][]**.
+
+### [Update-MgGroupSiteListItemLastModifiedByUserMailboxSetting](Update-MgGroupSiteListItemLastModifiedByUserMailboxSetting.md)
+Update property mailboxSettings value.
 
 ### [Update-MgGroupSiteListItemVersion](Update-MgGroupSiteListItemVersion.md)
 Update the navigation property versions in groups
@@ -1433,20 +2293,68 @@ Update the navigation property versions in groups
 ### [Update-MgGroupSiteListItemVersionField](Update-MgGroupSiteListItemVersionField.md)
 Update the navigation property fields in groups
 
+### [Update-MgGroupSiteListLastModifiedByUserMailboxSetting](Update-MgGroupSiteListLastModifiedByUserMailboxSetting.md)
+Update property mailboxSettings value.
+
 ### [Update-MgGroupSiteListOperation](Update-MgGroupSiteListOperation.md)
 Update the navigation property operations in groups
 
 ### [Update-MgGroupSiteListSubscription](Update-MgGroupSiteListSubscription.md)
 Update the navigation property subscriptions in groups
 
+### [Update-MgGroupSiteOnenote](Update-MgGroupSiteOnenote.md)
+Update the navigation property onenote in groups
+
+### [Update-MgGroupSiteOnenoteNotebook](Update-MgGroupSiteOnenoteNotebook.md)
+Update the navigation property notebooks in groups
+
+### [Update-MgGroupSiteOnenoteNotebookSection](Update-MgGroupSiteOnenoteNotebookSection.md)
+Update the navigation property sections in groups
+
+### [Update-MgGroupSiteOnenoteNotebookSectionGroup](Update-MgGroupSiteOnenoteNotebookSectionGroup.md)
+Update the navigation property sectionGroups in groups
+
+### [Update-MgGroupSiteOnenoteNotebookSectionGroupSection](Update-MgGroupSiteOnenoteNotebookSectionGroupSection.md)
+Update the navigation property sections in groups
+
+### [Update-MgGroupSiteOnenoteNotebookSectionGroupSectionPage](Update-MgGroupSiteOnenoteNotebookSectionGroupSectionPage.md)
+Update the navigation property pages in groups
+
+### [Update-MgGroupSiteOnenoteNotebookSectionPage](Update-MgGroupSiteOnenoteNotebookSectionPage.md)
+Update the navigation property pages in groups
+
+### [Update-MgGroupSiteOnenoteOperation](Update-MgGroupSiteOnenoteOperation.md)
+Update the navigation property operations in groups
+
+### [Update-MgGroupSiteOnenotePage](Update-MgGroupSiteOnenotePage.md)
+Update the navigation property pages in groups
+
+### [Update-MgGroupSiteOnenoteResource](Update-MgGroupSiteOnenoteResource.md)
+Update the navigation property resources in groups
+
+### [Update-MgGroupSiteOnenoteSection](Update-MgGroupSiteOnenoteSection.md)
+Update the navigation property sections in groups
+
+### [Update-MgGroupSiteOnenoteSectionGroup](Update-MgGroupSiteOnenoteSectionGroup.md)
+Update the navigation property sectionGroups in groups
+
+### [Update-MgGroupSiteOnenoteSectionGroupSection](Update-MgGroupSiteOnenoteSectionGroupSection.md)
+Update the navigation property sections in groups
+
+### [Update-MgGroupSiteOnenoteSectionGroupSectionPage](Update-MgGroupSiteOnenoteSectionGroupSectionPage.md)
+Update the navigation property pages in groups
+
+### [Update-MgGroupSiteOnenoteSectionPage](Update-MgGroupSiteOnenoteSectionPage.md)
+Update the navigation property pages in groups
+
 ### [Update-MgGroupSiteOperation](Update-MgGroupSiteOperation.md)
 Update the navigation property operations in groups
 
 ### [Update-MgGroupSitePermission](Update-MgGroupSitePermission.md)
-Update the navigation property permissions in groups
+Update an application permission object on a site.
 
 ### [Update-MgGroupSiteTermStore](Update-MgGroupSiteTermStore.md)
-Update the navigation property termStore in groups
+Update the properties of a store object.
 
 ### [Update-MgGroupSiteTermStoreGroup](Update-MgGroupSiteTermStoreGroup.md)
 Update the navigation property groups in groups
@@ -1467,7 +2375,7 @@ Update the navigation property parentGroup in groups
 Update the navigation property relations in groups
 
 ### [Update-MgGroupSiteTermStoreGroupSetTerm](Update-MgGroupSiteTermStoreGroupSetTerm.md)
-Update the navigation property terms in groups
+Update the properties of a term object.
 
 ### [Update-MgGroupSiteTermStoreGroupSetTermChild](Update-MgGroupSiteTermStoreGroupSetTermChild.md)
 Update the navigation property children in groups
@@ -1479,7 +2387,7 @@ Update the navigation property relations in groups
 Update the navigation property relations in groups
 
 ### [Update-MgGroupSiteTermStoreSet](Update-MgGroupSiteTermStoreSet.md)
-Update the navigation property sets in groups
+Update the properties of a set object.
 
 ### [Update-MgGroupSiteTermStoreSetChild](Update-MgGroupSiteTermStoreSetChild.md)
 Update the navigation property children in groups
@@ -1503,7 +2411,7 @@ Update the navigation property relations in groups
 Update the navigation property relations in groups
 
 ### [Update-MgGroupSiteTermStoreSetParentGroupSetTerm](Update-MgGroupSiteTermStoreSetParentGroupSetTerm.md)
-Update the navigation property terms in groups
+Update the properties of a term object.
 
 ### [Update-MgGroupSiteTermStoreSetParentGroupSetTermChild](Update-MgGroupSiteTermStoreSetParentGroupSetTermChild.md)
 Update the navigation property children in groups
@@ -1518,7 +2426,7 @@ Update the navigation property relations in groups
 Update the navigation property relations in groups
 
 ### [Update-MgGroupSiteTermStoreSetTerm](Update-MgGroupSiteTermStoreSetTerm.md)
-Update the navigation property terms in groups
+Update the properties of a term object.
 
 ### [Update-MgGroupSiteTermStoreSetTermChild](Update-MgGroupSiteTermStoreSetTermChild.md)
 Update the navigation property children in groups
@@ -1538,11 +2446,14 @@ Update the navigation property analytics in sites
 ### [Update-MgSiteAnalyticItemActivityStat](Update-MgSiteAnalyticItemActivityStat.md)
 Update the navigation property itemActivityStats in sites
 
+### [Update-MgSiteAnalyticItemActivityStatActivity](Update-MgSiteAnalyticItemActivityStatActivity.md)
+Update the navigation property activities in sites
+
 ### [Update-MgSiteColumn](Update-MgSiteColumn.md)
 Update the navigation property columns in sites
 
 ### [Update-MgSiteContentType](Update-MgSiteContentType.md)
-Update the navigation property contentTypes in sites
+Update a [content type][contentType].
 
 ### [Update-MgSiteContentTypeColumn](Update-MgSiteContentTypeColumn.md)
 Update the navigation property columns in sites
@@ -1565,14 +2476,26 @@ Update the navigation property columns in sites
 ### [Update-MgSiteListContentTypeColumnLink](Update-MgSiteListContentTypeColumnLink.md)
 Update the navigation property columnLinks in sites
 
+### [Update-MgSiteListCreatedByUserMailboxSetting](Update-MgSiteListCreatedByUserMailboxSetting.md)
+Update property mailboxSettings value.
+
 ### [Update-MgSiteListItem](Update-MgSiteListItem.md)
 Update the navigation property items in sites
+
+### [Update-MgSiteListItemCreatedByUserMailboxSetting](Update-MgSiteListItemCreatedByUserMailboxSetting.md)
+Update property mailboxSettings value.
 
 ### [Update-MgSiteListItemDocumentSetVersion](Update-MgSiteListItemDocumentSetVersion.md)
 Update the navigation property documentSetVersions in sites
 
-### [Update-MgSiteListItemField](Update-MgSiteListItemField.md)
+### [Update-MgSiteListItemDocumentSetVersionField](Update-MgSiteListItemDocumentSetVersionField.md)
 Update the navigation property fields in sites
+
+### [Update-MgSiteListItemField](Update-MgSiteListItemField.md)
+Update the properties on a **[listItem][]**.
+
+### [Update-MgSiteListItemLastModifiedByUserMailboxSetting](Update-MgSiteListItemLastModifiedByUserMailboxSetting.md)
+Update property mailboxSettings value.
 
 ### [Update-MgSiteListItemVersion](Update-MgSiteListItemVersion.md)
 Update the navigation property versions in sites
@@ -1580,20 +2503,35 @@ Update the navigation property versions in sites
 ### [Update-MgSiteListItemVersionField](Update-MgSiteListItemVersionField.md)
 Update the navigation property fields in sites
 
+### [Update-MgSiteListLastModifiedByUserMailboxSetting](Update-MgSiteListLastModifiedByUserMailboxSetting.md)
+Update property mailboxSettings value.
+
 ### [Update-MgSiteListOperation](Update-MgSiteListOperation.md)
 Update the navigation property operations in sites
 
 ### [Update-MgSiteListSubscription](Update-MgSiteListSubscription.md)
 Update the navigation property subscriptions in sites
 
+### [Update-MgSiteOnenoteNotebookSectionGroupSectionPageContent](Update-MgSiteOnenoteNotebookSectionGroupSectionPageContent.md)
+Invoke action onenotePatchContent
+
+### [Update-MgSiteOnenoteNotebookSectionPageContent](Update-MgSiteOnenoteNotebookSectionPageContent.md)
+Invoke action onenotePatchContent
+
 ### [Update-MgSiteOnenotePageContent](Update-MgSiteOnenotePageContent.md)
 Invoke action onenotePatchContent
 
+### [Update-MgSiteOnenoteSectionGroupSectionPageContent](Update-MgSiteOnenoteSectionGroupSectionPageContent.md)
+Invoke action onenotePatchContent
+
+### [Update-MgSiteOnenoteSectionPageContent](Update-MgSiteOnenoteSectionPageContent.md)
+Invoke action onenotePatchContent
+
 ### [Update-MgSitePermission](Update-MgSitePermission.md)
-Update the navigation property permissions in sites
+Update an application permission object on a site.
 
 ### [Update-MgSiteTermStore](Update-MgSiteTermStore.md)
-Update the navigation property termStore in sites
+Update the properties of a store object.
 
 ### [Update-MgSiteTermStoreGroup](Update-MgSiteTermStoreGroup.md)
 Update the navigation property groups in sites
@@ -1614,7 +2552,7 @@ Update the navigation property parentGroup in sites
 Update the navigation property relations in sites
 
 ### [Update-MgSiteTermStoreGroupSetTerm](Update-MgSiteTermStoreGroupSetTerm.md)
-Update the navigation property terms in sites
+Update the properties of a term object.
 
 ### [Update-MgSiteTermStoreGroupSetTermChild](Update-MgSiteTermStoreGroupSetTermChild.md)
 Update the navigation property children in sites
@@ -1626,7 +2564,7 @@ Update the navigation property relations in sites
 Update the navigation property relations in sites
 
 ### [Update-MgSiteTermStoreSet](Update-MgSiteTermStoreSet.md)
-Update the navigation property sets in sites
+Update the properties of a set object.
 
 ### [Update-MgSiteTermStoreSetChild](Update-MgSiteTermStoreSetChild.md)
 Update the navigation property children in sites
@@ -1650,7 +2588,7 @@ Update the navigation property relations in sites
 Update the navigation property relations in sites
 
 ### [Update-MgSiteTermStoreSetParentGroupSetTerm](Update-MgSiteTermStoreSetParentGroupSetTerm.md)
-Update the navigation property terms in sites
+Update the properties of a term object.
 
 ### [Update-MgSiteTermStoreSetParentGroupSetTermChild](Update-MgSiteTermStoreSetParentGroupSetTermChild.md)
 Update the navigation property children in sites
@@ -1665,7 +2603,7 @@ Update the navigation property relations in sites
 Update the navigation property relations in sites
 
 ### [Update-MgSiteTermStoreSetTerm](Update-MgSiteTermStoreSetTerm.md)
-Update the navigation property terms in sites
+Update the properties of a term object.
 
 ### [Update-MgSiteTermStoreSetTermChild](Update-MgSiteTermStoreSetTermChild.md)
 Update the navigation property children in sites

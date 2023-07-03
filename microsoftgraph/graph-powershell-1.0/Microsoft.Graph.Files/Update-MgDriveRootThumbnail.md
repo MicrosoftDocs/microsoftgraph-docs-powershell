@@ -1,7 +1,7 @@
 ---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/update-mgdriverootthumbnail
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriverootthumbnail
 schema: 2.0.0
 ---
 
@@ -10,39 +10,56 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property thumbnails in drives
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDriveRootThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRootThumbnail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgDriveRootThumbnail -DriveId <String> -ThumbnailSetId <String> [-AdditionalProperties <Hashtable>]
  [-Id <String>] [-Large <IMicrosoftGraphThumbnail>] [-Medium <IMicrosoftGraphThumbnail>]
- [-Small <IMicrosoftGraphThumbnail>] [-Source <IMicrosoftGraphThumbnail>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Small <IMicrosoftGraphThumbnail>] [-Source <IMicrosoftGraphThumbnail>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDriveRootThumbnail -DriveId <String> -ThumbnailSetId <String>
- -BodyParameter <IMicrosoftGraphThumbnailSet> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphThumbnailSet> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgDriveRootThumbnail -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-Large <IMicrosoftGraphThumbnail>] [-Medium <IMicrosoftGraphThumbnail>] [-Small <IMicrosoftGraphThumbnail>]
- [-Source <IMicrosoftGraphThumbnail>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Source <IMicrosoftGraphThumbnail>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgDriveRootThumbnail -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraphThumbnailSet>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property thumbnails in drives
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -63,7 +80,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 thumbnailSet
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphThumbnailSet
@@ -110,7 +127,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IFilesIdentity
@@ -126,7 +143,7 @@ Accept wildcard characters: False
 
 ### -Large
 thumbnail
-To construct, please use Get-Help -Online and see NOTES section for LARGE properties and create a hash table.
+To construct, see NOTES section for LARGE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphThumbnail
@@ -142,7 +159,7 @@ Accept wildcard characters: False
 
 ### -Medium
 thumbnail
-To construct, please use Get-Help -Online and see NOTES section for MEDIUM properties and create a hash table.
+To construct, see NOTES section for MEDIUM properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphThumbnail
@@ -156,24 +173,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Small
 thumbnail
-To construct, please use Get-Help -Online and see NOTES section for SMALL properties and create a hash table.
+To construct, see NOTES section for SMALL properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphThumbnail
@@ -189,7 +191,7 @@ Accept wildcard characters: False
 
 ### -Source
 thumbnail
-To construct, please use Get-Help -Online and see NOTES section for SOURCE properties and create a hash table.
+To construct, see NOTES section for SOURCE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphThumbnail
@@ -258,7 +260,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphThumbnailSet
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphThumbnailSet
 ## NOTES
 
 ALIASES
@@ -268,7 +270,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphThumbnailSet>`: thumbnailSet
+`BODYPARAMETER <IMicrosoftGraphThumbnailSet>`: thumbnailSet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Large <IMicrosoftGraphThumbnail>]`: thumbnail
@@ -282,7 +284,7 @@ BODYPARAMETER `<IMicrosoftGraphThumbnailSet>`: thumbnailSet
   - `[Small <IMicrosoftGraphThumbnail>]`: thumbnail
   - `[Source <IMicrosoftGraphThumbnail>]`: thumbnail
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+`INPUTOBJECT <IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType
@@ -308,7 +310,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
 
-LARGE `<IMicrosoftGraphThumbnail>`: thumbnail
+`LARGE <IMicrosoftGraphThumbnail>`: thumbnail
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Content <Byte[]>]`: The content stream for the thumbnail.
   - `[Height <Int32?>]`: The height of the thumbnail, in pixels.
@@ -316,7 +318,7 @@ LARGE `<IMicrosoftGraphThumbnail>`: thumbnail
   - `[Url <String>]`: The URL used to fetch the thumbnail content.
   - `[Width <Int32?>]`: The width of the thumbnail, in pixels.
 
-MEDIUM `<IMicrosoftGraphThumbnail>`: thumbnail
+`MEDIUM <IMicrosoftGraphThumbnail>`: thumbnail
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Content <Byte[]>]`: The content stream for the thumbnail.
   - `[Height <Int32?>]`: The height of the thumbnail, in pixels.
@@ -324,7 +326,7 @@ MEDIUM `<IMicrosoftGraphThumbnail>`: thumbnail
   - `[Url <String>]`: The URL used to fetch the thumbnail content.
   - `[Width <Int32?>]`: The width of the thumbnail, in pixels.
 
-SMALL `<IMicrosoftGraphThumbnail>`: thumbnail
+`SMALL <IMicrosoftGraphThumbnail>`: thumbnail
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Content <Byte[]>]`: The content stream for the thumbnail.
   - `[Height <Int32?>]`: The height of the thumbnail, in pixels.
@@ -332,7 +334,7 @@ SMALL `<IMicrosoftGraphThumbnail>`: thumbnail
   - `[Url <String>]`: The URL used to fetch the thumbnail content.
   - `[Width <Int32?>]`: The width of the thumbnail, in pixels.
 
-SOURCE `<IMicrosoftGraphThumbnail>`: thumbnail
+`SOURCE <IMicrosoftGraphThumbnail>`: thumbnail
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Content <Byte[]>]`: The content stream for the thumbnail.
   - `[Height <Int32?>]`: The height of the thumbnail, in pixels.
@@ -341,3 +343,4 @@ SOURCE `<IMicrosoftGraphThumbnail>`: thumbnail
   - `[Width <Int32?>]`: The width of the thumbnail, in pixels.
 
 ## RELATED LINKS
+[Update-MgBetaDriveRootThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRootThumbnail?view=graph-powershell-beta)

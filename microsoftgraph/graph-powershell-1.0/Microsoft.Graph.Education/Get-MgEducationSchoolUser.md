@@ -1,15 +1,17 @@
 ---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/get-mgeducationschooluser
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationschooluser
 schema: 2.0.0
 ---
 
 # Get-MgEducationSchoolUser
 
 ## SYNOPSIS
-Users in the school.
-Nullable.
+Get the educationUser resources associated with an educationSchool.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationSchoolUser](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationSchoolUser?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -20,19 +22,15 @@ Get-MgEducationSchoolUser -EducationSchoolId <String> [-ExpandProperty <String[]
 ```
 
 ## DESCRIPTION
-Users in the school.
-Nullable.
+Get the educationUser resources associated with an educationSchool.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgEducationSchoolUser Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Education
 Get-MgEducationSchoolUser -EducationSchoolId $educationSchoolId
 ```
-
-This example shows how to use the Get-MgEducationSchoolUser Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -209,9 +207,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationUser1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationUser
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaEducationSchoolUser](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationSchoolUser?view=graph-powershell-beta)

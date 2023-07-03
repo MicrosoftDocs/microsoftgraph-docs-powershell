@@ -10,16 +10,19 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property conditionalAccessSettings in deviceManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementConditionalAccessSetting](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Update-MgDeviceManagementConditionalAccessSetting?view=graph-powershell-beta)
+
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### UpdateExpanded (Default)
 ```
 Update-MgDeviceManagementConditionalAccessSetting [-AdditionalProperties <Hashtable>] [-Enabled]
  [-ExcludedGroups <String[]>] [-Id <String>] [-IncludedGroups <String[]>] [-OverrideDefaultRule] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Update1
+### Update
 ```
 Update-MgDeviceManagementConditionalAccessSetting
  -BodyParameter <IMicrosoftGraphOnPremisesConditionalAccessSettings> [-PassThru] [-WhatIf] [-Confirm]
@@ -38,7 +41,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded1
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -54,7 +57,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IMicrosoftGraphOnPremisesConditionalAccessSettings
-Parameter Sets: Update1
+Parameter Sets: Update
 Aliases:
 
 Required: True
@@ -69,7 +72,7 @@ Indicates if on premises conditional access is enabled for this organization
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: UpdateExpanded1
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -85,7 +88,7 @@ All users in these groups will be exempt from the conditional access policy.
 
 ```yaml
 Type: String[]
-Parameter Sets: UpdateExpanded1
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -101,7 +104,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -117,7 +120,7 @@ All users in these groups will be required to have mobile device managed and com
 
 ```yaml
 Type: String[]
-Parameter Sets: UpdateExpanded1
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -132,7 +135,7 @@ Override the default access rule when allowing a device to ensure access is gran
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: UpdateExpanded1
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -215,3 +218,4 @@ BODYPARAMETER `<IMicrosoftGraphOnPremisesConditionalAccessSettings>`: Singleton 
   - `[OverrideDefaultRule <Boolean?>]`: Override the default access rule when allowing a device to ensure access is granted.
 
 ## RELATED LINKS
+[Update-MgBetaDeviceManagementConditionalAccessSetting](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Update-MgDeviceManagementConditionalAccessSetting?view=graph-powershell-beta)

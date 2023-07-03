@@ -1,17 +1,17 @@
 ---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/get-mgusercalendargroupcalendar
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusercalendargroupcalendar
 schema: 2.0.0
 ---
 
 # Get-MgUserCalendarGroupCalendar
 
 ## SYNOPSIS
-The calendars in the calendar group.
-Navigation property.
-Read-only.
-Nullable.
+Retrieve a list of calendars belonging to a calendar group.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserCalendarGroupCalendar](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserCalendarGroupCalendar?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -22,22 +22,16 @@ Get-MgUserCalendarGroupCalendar -CalendarGroupId <String> -UserId <String> [-Fil
 ```
 
 ## DESCRIPTION
-The calendars in the calendar group.
-Navigation property.
-Read-only.
-Nullable.
+Retrieve a list of calendars belonging to a calendar group.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgUserCalendarGroupCalendar Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Calendar
 # A UPN can also be used as -UserId.
 Get-MgUserCalendarGroupCalendar -UserId $userId -CalendarGroupId $calendarGroupId
 ```
-
-This example shows how to use the Get-MgUserCalendarGroupCalendar Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -205,3 +199,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaUserCalendarGroupCalendar](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserCalendarGroupCalendar?view=graph-powershell-beta)

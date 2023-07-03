@@ -1,7 +1,7 @@
 ---
 external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintconnector
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintconnector
 schema: 2.0.0
 ---
 
@@ -10,18 +10,21 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to connectors for print
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaPrintConnector](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintConnector?view=graph-powershell-beta)
+
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
 New-MgPrintConnector [-AdditionalProperties <Hashtable>] [-AppVersion <String>] [-DisplayName <String>]
- [-FullyQualifiedDomainName <String>] [-Id <String>] [-Location <IMicrosoftGraphPrinterLocation1>]
+ [-FullyQualifiedDomainName <String>] [-Id <String>] [-Location <IMicrosoftGraphPrinterLocation>]
  [-OperatingSystem <String>] [-RegisteredDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
-New-MgPrintConnector -BodyParameter <IMicrosoftGraphPrintConnector1> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgPrintConnector -BodyParameter <IMicrosoftGraphPrintConnector> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -29,17 +32,13 @@ Create new navigation property to connectors for print
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Devices.CloudPrint
 
 Get-MgPrintConnector
+
 ```
-
-This example shows how to use the New-MgPrintConnector Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -47,7 +46,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -62,7 +61,7 @@ The connector's version.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -74,11 +73,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 printConnector
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrintConnector1
-Parameter Sets: Create1
+Type: IMicrosoftGraphPrintConnector
+Parameter Sets: Create
 Aliases:
 
 Required: True
@@ -93,7 +92,7 @@ The name of the connector.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -108,7 +107,7 @@ The connector machine's hostname.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -124,7 +123,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -136,11 +135,11 @@ Accept wildcard characters: False
 
 ### -Location
 printerLocation
-To construct, please use Get-Help -Online and see NOTES section for LOCATION properties and create a hash table.
+To construct, see NOTES section for LOCATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrinterLocation1
-Parameter Sets: CreateExpanded1
+Type: IMicrosoftGraphPrinterLocation
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -155,7 +154,7 @@ The connector machine's operating system version.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -170,7 +169,7 @@ The DateTimeOffset when the connector was registered.
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -216,10 +215,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintConnector1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintConnector
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintConnector1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintConnector
 ## NOTES
 
 ALIASES
@@ -229,13 +228,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPrintConnector1>`: printConnector
+`BODYPARAMETER <IMicrosoftGraphPrintConnector>`: printConnector
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AppVersion <String>]`: The connector's version.
   - `[DisplayName <String>]`: The name of the connector.
   - `[FullyQualifiedDomainName <String>]`: The connector machine's hostname.
-  - `[Location <IMicrosoftGraphPrinterLocation1>]`: printerLocation
+  - `[Location <IMicrosoftGraphPrinterLocation>]`: printerLocation
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AltitudeInMeters <Int32?>]`: The altitude, in meters, that the printer is located at.
     - `[Building <String>]`: The building that the printer is located in.
@@ -257,7 +256,7 @@ BODYPARAMETER `<IMicrosoftGraphPrintConnector1>`: printConnector
   - `[OperatingSystem <String>]`: The connector machine's operating system version.
   - `[RegisteredDateTime <DateTime?>]`: The DateTimeOffset when the connector was registered.
 
-LOCATION `<IMicrosoftGraphPrinterLocation1>`: printerLocation
+`LOCATION <IMicrosoftGraphPrinterLocation>`: printerLocation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AltitudeInMeters <Int32?>]`: The altitude, in meters, that the printer is located at.
   - `[Building <String>]`: The building that the printer is located in.
@@ -278,3 +277,5 @@ LOCATION `<IMicrosoftGraphPrinterLocation1>`: printerLocation
   - `[Subunit <String[]>]`: 
 
 ## RELATED LINKS
+[New-MgBetaPrintConnector](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintConnector?view=graph-powershell-beta)
+

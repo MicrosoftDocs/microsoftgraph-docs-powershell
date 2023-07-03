@@ -10,20 +10,23 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to roleDefinitions for roleManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaRoleManagementDirectoryRoleDefinition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/New-MgRoleManagementDirectoryRoleDefinition?view=graph-powershell-beta)
+
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
-New-MgRoleManagementDirectoryRoleDefinition [-AdditionalProperties <Hashtable>] [-Description <String>]
- [-DisplayName <String>] [-Id <String>] [-InheritsPermissionsFrom <IMicrosoftGraphUnifiedRoleDefinition1[]>]
- [-IsBuiltIn] [-IsEnabled] [-ResourceScopes <String[]>]
- [-RolePermissions <IMicrosoftGraphUnifiedRolePermission[]>] [-TemplateId <String>] [-Version <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgRoleManagementDirectoryRoleDefinition [-AdditionalProperties <Hashtable>]
+ [-AllowedPrincipalTypes <String>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
+ [-InheritsPermissionsFrom <IMicrosoftGraphUnifiedRoleDefinition[]>] [-IsBuiltIn] [-IsEnabled]
+ [-ResourceScopes <String[]>] [-RolePermissions <IMicrosoftGraphUnifiedRolePermission[]>]
+ [-TemplateId <String>] [-Version <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
-New-MgRoleManagementDirectoryRoleDefinition -BodyParameter <IMicrosoftGraphUnifiedRoleDefinition1> [-WhatIf]
+New-MgRoleManagementDirectoryRoleDefinition -BodyParameter <IMicrosoftGraphUnifiedRoleDefinition> [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -60,7 +63,22 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AllowedPrincipalTypes
+allowedRolePrincipalTypes
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -75,8 +93,8 @@ unifiedRoleDefinition
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUnifiedRoleDefinition1
-Parameter Sets: Create1
+Type: IMicrosoftGraphUnifiedRoleDefinition
+Parameter Sets: Create
 Aliases:
 
 Required: True
@@ -92,7 +110,7 @@ Read-only when isBuiltIn is true.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -110,7 +128,7 @@ Supports $filter (eq, in).
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -126,7 +144,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -143,8 +161,8 @@ Supports $expand.
 To construct, please use Get-Help -Online and see NOTES section for INHERITSPERMISSIONSFROM properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUnifiedRoleDefinition1[]
-Parameter Sets: CreateExpanded1
+Type: IMicrosoftGraphUnifiedRoleDefinition[]
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -161,7 +179,7 @@ Supports $filter (eq, in).
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -178,7 +196,7 @@ Read-only when isBuiltIn is true.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -198,7 +216,7 @@ Attach scope to role assignment.
 
 ```yaml
 Type: String[]
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -216,7 +234,7 @@ To construct, please use Get-Help -Online and see NOTES section for ROLEPERMISSI
 
 ```yaml
 Type: IMicrosoftGraphUnifiedRolePermission[]
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -232,7 +250,7 @@ This identifier is typically used if one needs an identifier to be the same acro
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -248,7 +266,7 @@ Read-only when isBuiltIn is true.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -294,10 +312,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleDefinition1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleDefinition
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleDefinition1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleDefinition
 ## NOTES
 
 ALIASES
@@ -344,3 +362,4 @@ ROLEPERMISSIONS <IMicrosoftGraphUnifiedRolePermission\[]>: List of permissions i
   - `[ExcludedResourceActions <String[]>]`: Set of tasks that may not be performed on a resource. Not yet supported.
 
 ## RELATED LINKS
+[New-MgBetaRoleManagementDirectoryRoleDefinition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/New-MgRoleManagementDirectoryRoleDefinition?view=graph-powershell-beta)

@@ -1,41 +1,43 @@
 ---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.bookings/publish-mgbookingbusiness
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/publish-mgbookingbusiness
 schema: 2.0.0
 ---
 
 # Publish-MgBookingBusiness
 
 ## SYNOPSIS
-Makes the scheduling page of this business available to the general public.
+Make the scheduling page of a business available to external customers.
+Set the **isPublished** property to `true`, and the **publicUrl** property to the URL of the scheduling page.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Publish-MgBetaBookingBusiness](/powershell/module/Microsoft.Graph.Beta.Bookings/Publish-MgBetaBookingBusiness?view=graph-powershell-beta)
 
 ## SYNTAX
 
-### Publish1 (Default)
+### Publish (Default)
 ```
 Publish-MgBookingBusiness -BookingBusinessId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### PublishViaIdentity1
+### PublishViaIdentity
 ```
 Publish-MgBookingBusiness -InputObject <IBookingsIdentity> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Makes the scheduling page of this business available to the general public.
+Make the scheduling page of a business available to external customers.
+Set the **isPublished** property to `true`, and the **publicUrl** property to the URL of the scheduling page.
 
 ## EXAMPLES
 
-### Example 1: Using the Publish-MgBookingBusiness Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Bookings
 Publish-MgBookingBusiness -BookingBusinessId $bookingBusinessId
 ```
-
-This example shows how to use the Publish-MgBookingBusiness Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -44,7 +46,7 @@ The unique identifier of bookingBusiness
 
 ```yaml
 Type: String
-Parameter Sets: Publish1
+Parameter Sets: Publish
 Aliases:
 
 Required: True
@@ -56,11 +58,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IBookingsIdentity
-Parameter Sets: PublishViaIdentity1
+Parameter Sets: PublishViaIdentity
 Aliases:
 
 Required: True
@@ -134,18 +136,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+`INPUTOBJECT <IBookingsIdentity>`: Identity Parameter
   - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
   - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness
   - `[BookingCurrencyId <String>]`: The unique identifier of bookingCurrency
   - `[BookingCustomQuestionId <String>]`: The unique identifier of bookingCustomQuestion
   - `[BookingCustomerBaseId <String>]`: The unique identifier of bookingCustomerBase
-  - `[BookingCustomerId <String>]`: The unique identifier of bookingCustomer
   - `[BookingServiceId <String>]`: The unique identifier of bookingService
   - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
-  - `[BookingStaffMemberId <String>]`: The unique identifier of bookingStaffMember
-  - `[BusinessScenarioId <String>]`: The unique identifier of businessScenario
-  - `[BusinessScenarioTaskId <String>]`: The unique identifier of businessScenarioTask
-  - `[PlannerPlanConfigurationLocalizationId <String>]`: The unique identifier of plannerPlanConfigurationLocalization
 
 ## RELATED LINKS
+[Publish-MgBetaBookingBusiness](/powershell/module/Microsoft.Graph.Beta.Bookings/Publish-MgBetaBookingBusiness?view=graph-powershell-beta)

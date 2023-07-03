@@ -1,7 +1,7 @@
 ---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/get-mgusercalendarview
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusercalendarview
 schema: 2.0.0
 ---
 
@@ -12,16 +12,19 @@ The calendar view for the calendar.
 Navigation property.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserCalendarView](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserCalendarView?view=graph-powershell-beta)
+
 ## SYNTAX
 
-### List2 (Default)
+### List (Default)
 ```
 Get-MgUserCalendarView -UserId <String> -EndDateTime <String> -StartDateTime <String> [-Filter <String>]
  [-Property <String[]>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
  [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### List3
+### List1
 ```
 Get-MgUserCalendarView -UserId <String> -CalendarId <String> -EndDateTime <String> -StartDateTime <String>
  [-Filter <String>] [-Property <String[]>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
@@ -35,16 +38,13 @@ Read-only.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgUserCalendarView Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Calendar
+
 # A UPN can also be used as -UserId.
 Get-MgUserCalendarView -UserId $userId -Startdatetime "2017-01-01T19:00:00-08:00" -Enddatetime "2017-01-07T19:00:00-08:00"
 ```
-
-This example shows how to use the Get-MgUserCalendarView Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ## PARAMETERS
 
 ### -All
@@ -67,7 +67,7 @@ The unique identifier of calendar
 
 ```yaml
 Type: String
-Parameter Sets: List3
+Parameter Sets: List1
 Aliases:
 
 Required: True
@@ -237,9 +237,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEvent1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEvent
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaUserCalendarView](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserCalendarView?view=graph-powershell-beta)

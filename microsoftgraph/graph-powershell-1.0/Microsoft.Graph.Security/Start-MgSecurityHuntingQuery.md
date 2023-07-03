@@ -1,7 +1,7 @@
 ---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/start-mgsecurityhuntingquery
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/start-mgsecurityhuntingquery
 schema: 2.0.0
 ---
 
@@ -10,15 +10,18 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action runHuntingQuery
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Start-MgBetaSecurityHuntingQuery](/powershell/module/Microsoft.Graph.Beta.Security/Start-MgBetaSecurityHuntingQuery?view=graph-powershell-beta)
+
 ## SYNTAX
 
-### RunExpanded1 (Default)
+### RunExpanded (Default)
 ```
 Start-MgSecurityHuntingQuery [-AdditionalProperties <Hashtable>] [-Query <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### Run1
+### Run
 ```
 Start-MgSecurityHuntingQuery
  -BodyParameter <IPathsU5PqctSecurityMicrosoftGraphSecurityRunhuntingqueryPostRequestbodyContentApplicationJsonSchema>
@@ -30,6 +33,16 @@ Invoke action runHuntingQuery
 
 ## EXAMPLES
 
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -37,7 +50,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: RunExpanded1
+Parameter Sets: RunExpanded
 Aliases:
 
 Required: False
@@ -49,11 +62,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPathsU5PqctSecurityMicrosoftGraphSecurityRunhuntingqueryPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Run1
+Parameter Sets: Run
 Aliases:
 
 Required: True
@@ -68,7 +81,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: RunExpanded1
+Parameter Sets: RunExpanded
 Aliases:
 
 Required: False
@@ -127,8 +140,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsU5PqctSecurityMicrosoftGraphSecurityRunhuntingqueryPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsU5PqctSecurityMicrosoftGraphSecurityRunhuntingqueryPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Query <String>]`: 
 
 ## RELATED LINKS
+[Start-MgBetaSecurityHuntingQuery](/powershell/module/Microsoft.Graph.Beta.Security/Start-MgBetaSecurityHuntingQuery?view=graph-powershell-beta)

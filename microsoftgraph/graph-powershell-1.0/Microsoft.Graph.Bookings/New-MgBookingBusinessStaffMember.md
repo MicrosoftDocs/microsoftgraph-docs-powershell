@@ -1,14 +1,17 @@
 ---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.bookings/new-mgbookingbusinessstaffmember
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinessstaffmember
 schema: 2.0.0
 ---
 
 # New-MgBookingBusinessStaffMember
 
 ## SYNOPSIS
-Create new navigation property to staffMembers for solutions
+Create a new bookingStaffMember in the specified bookingBusiness.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBookingBusinessStaffMember](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaBookingBusinessStaffMember?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -37,95 +40,23 @@ New-MgBookingBusinessStaffMember -InputObject <IBookingsIdentity> -BodyParameter
 ```
 
 ## DESCRIPTION
-Create new navigation property to staffMembers for solutions
+Create a new bookingStaffMember in the specified bookingBusiness.
 
 ## EXAMPLES
 
-### Example 1: Using the New-MgBookingBusinessStaffMember Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Bookings
-$params = @{
-	"@odata.type" = "#microsoft.graph.bookingStaffMember"
-	DisplayName = "Dana Swope"
-	EmailAddress = "danas@contoso.com"
-	"Role@odata.type" = "#microsoft.graph.bookingStaffRole"
-	Role = "externalGuest"
-	TimeZone = "America/Chicago"
-	UseBusinessHours = $true
-	"WorkingHours@odata.type" = "#Collection(microsoft.graph.bookingWorkHours)"
-	WorkingHours = @(
-		@{
-			"@odata.type" = "#microsoft.graph.bookingWorkHours"
-			"Day@odata.type" = "#microsoft.graph.dayOfWeek"
-			Day = "monday"
-			"TimeSlots@odata.type" = "#Collection(microsoft.graph.bookingWorkTimeSlot)"
-			TimeSlots = @(
-				@{
-					"@odata.type" = "#microsoft.graph.bookingWorkTimeSlot"
-					EndTime = "17:00:00.0000000"
-					StartTime = "08:00:00.0000000"
-				}
-			)
-		}
-		@{
-			"@odata.type" = "#microsoft.graph.bookingWorkHours"
-			"Day@odata.type" = "#microsoft.graph.dayOfWeek"
-			Day = "tuesday"
-			"TimeSlots@odata.type" = "#Collection(microsoft.graph.bookingWorkTimeSlot)"
-			TimeSlots = @(
-				@{
-					"@odata.type" = "#microsoft.graph.bookingWorkTimeSlot"
-					EndTime = "17:00:00.0000000"
-					StartTime = "08:00:00.0000000"
-				}
-			)
-		}
-		@{
-			"@odata.type" = "#microsoft.graph.bookingWorkHours"
-			"Day@odata.type" = "#microsoft.graph.dayOfWeek"
-			Day = "wednesday"
-			"TimeSlots@odata.type" = "#Collection(microsoft.graph.bookingWorkTimeSlot)"
-			TimeSlots = @(
-				@{
-					"@odata.type" = "#microsoft.graph.bookingWorkTimeSlot"
-					EndTime = "17:00:00.0000000"
-					StartTime = "08:00:00.0000000"
-				}
-			)
-		}
-		@{
-			"@odata.type" = "#microsoft.graph.bookingWorkHours"
-			"Day@odata.type" = "#microsoft.graph.dayOfWeek"
-			Day = "thursday"
-			"TimeSlots@odata.type" = "#Collection(microsoft.graph.bookingWorkTimeSlot)"
-			TimeSlots = @(
-				@{
-					"@odata.type" = "#microsoft.graph.bookingWorkTimeSlot"
-					EndTime = "17:00:00.0000000"
-					StartTime = "08:00:00.0000000"
-				}
-			)
-		}
-		@{
-			"@odata.type" = "#microsoft.graph.bookingWorkHours"
-			"Day@odata.type" = "#microsoft.graph.dayOfWeek"
-			Day = "friday"
-			"TimeSlots@odata.type" = "#Collection(microsoft.graph.bookingWorkTimeSlot)"
-			TimeSlots = @(
-				@{
-					"@odata.type" = "#microsoft.graph.bookingWorkTimeSlot"
-					EndTime = "17:00:00.0000000"
-					StartTime = "08:00:00.0000000"
-				}
-			)
-		}
-	)
-}
-New-MgBookingBusinessStaffMember -BookingBusinessId $bookingBusinessId -BodyParameter $params
+{{ Add code here }}
 ```
 
-This example shows how to use the New-MgBookingBusinessStaffMember Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -192,7 +123,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IBookingsIdentity
@@ -256,18 +187,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+`INPUTOBJECT <IBookingsIdentity>`: Identity Parameter
   - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
   - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness
   - `[BookingCurrencyId <String>]`: The unique identifier of bookingCurrency
   - `[BookingCustomQuestionId <String>]`: The unique identifier of bookingCustomQuestion
   - `[BookingCustomerBaseId <String>]`: The unique identifier of bookingCustomerBase
-  - `[BookingCustomerId <String>]`: The unique identifier of bookingCustomer
   - `[BookingServiceId <String>]`: The unique identifier of bookingService
   - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
-  - `[BookingStaffMemberId <String>]`: The unique identifier of bookingStaffMember
-  - `[BusinessScenarioId <String>]`: The unique identifier of businessScenario
-  - `[BusinessScenarioTaskId <String>]`: The unique identifier of businessScenarioTask
-  - `[PlannerPlanConfigurationLocalizationId <String>]`: The unique identifier of plannerPlanConfigurationLocalization
 
 ## RELATED LINKS
+[New-MgBetaBookingBusinessStaffMember](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaBookingBusinessStaffMember?view=graph-powershell-beta)

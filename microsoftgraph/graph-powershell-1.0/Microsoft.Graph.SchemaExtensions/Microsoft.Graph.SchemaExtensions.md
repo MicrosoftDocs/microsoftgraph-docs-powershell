@@ -1,7 +1,7 @@
 ---
 Module Name: Microsoft.Graph.SchemaExtensions
-Module Guid: 0b0f88db-2a7a-4003-b417-665cebc86666
-Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.schemaextensions
+Module Guid: 3f19fb6b-36db-4169-bab5-983ee4b796f9
+Download Help Link: https://learn.microsoft.com/powershell/module/Microsoft.Graph.SchemaExtensions
 Help Version: 1.0.0.0
 Locale: en-US
 ---
@@ -13,6 +13,9 @@ Microsoft Graph PowerShell Cmdlets
 ## Microsoft.Graph.SchemaExtensions Cmdlets
 ### [Get-MgSchemaExtension](Get-MgSchemaExtension.md)
 Get schemaExtension
+
+### [Get-MgSchemaExtensionCount](Get-MgSchemaExtensionCount.md)
+Get the number of the resource
 
 ### [New-MgSchemaExtension](New-MgSchemaExtension.md)
 Create a new schemaExtension definition and its associated schema extension property to extend a supporting resource type.

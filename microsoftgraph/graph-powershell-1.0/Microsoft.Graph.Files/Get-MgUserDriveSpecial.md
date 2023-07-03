@@ -1,16 +1,21 @@
 ---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/get-mguserdrivespecial
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdrivespecial
 schema: 2.0.0
 ---
 
 # Get-MgUserDriveSpecial
 
 ## SYNOPSIS
-Collection of common folders available in OneDrive.
-Read-only.
-Nullable.
+Use the special collection to access a special folder by name.
+Special folders provide simple aliases to access well-known folders in OneDrive without the need to look up the folder by path (which would require localization), or reference the folder with an ID.
+If a special folder is renamed or moved to another location within the drive, this syntax will continue to find that folder.
+Special folders are automatically created the first time an application attempts to write to one, if it doesn't already exist.
+If a user deletes one, it is recreated when written to again.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveSpecial](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveSpecial?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -34,11 +39,27 @@ Get-MgUserDriveSpecial -InputObject <IFilesIdentity> [-ExpandProperty <String[]>
 ```
 
 ## DESCRIPTION
-Collection of common folders available in OneDrive.
-Read-only.
-Nullable.
+Use the special collection to access a special folder by name.
+Special folders provide simple aliases to access well-known folders in OneDrive without the need to look up the folder by path (which would require localization), or reference the folder with an ID.
+If a special folder is renamed or moved to another location within the drive, this syntax will continue to find that folder.
+Special folders are automatically created the first time an application attempts to write to one, if it doesn't already exist.
+If a user deletes one, it is recreated when written to again.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -135,7 +156,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IFilesIdentity
@@ -272,7 +293,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+`INPUTOBJECT <IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType
@@ -299,3 +320,4 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaUserDriveSpecial](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveSpecial?view=graph-powershell-beta)

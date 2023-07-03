@@ -12,6 +12,6 @@
     - name: Microsoft Graph PowerShell
       tocHref: /powershell/module/Microsoft.Graph.Applications
       topicHref: /powershell/module/Microsoft.Graph.Applications/?view=graph-powershell-1.0
-    - name: Microsoft Graph PowerShell
-      tocHref: /powershell/module/Microsoft.Graph.Applications
-      topicHref: /powershell/module/Microsoft.Graph.Applications/?view=graph-powershell-beta
+    - name: Microsoft Graph PowerShell Beta
+      tocHref: /powershell/module/Microsoft.Graph.Beta.Applications
+      topicHref: /powershell/module/Microsoft.Graph.Beta.Applications/?view=graph-powershell-beta

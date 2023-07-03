@@ -1,16 +1,17 @@
 ---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/get-mguserplannertask
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mguserplannertask
 schema: 2.0.0
 ---
 
 # Get-MgUserPlannerTask
 
 ## SYNOPSIS
-Read-only.
-Nullable.
-Returns the plannerPlans shared with the user.
+Retrieve a list of **plannertask** objects assigned to a User.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserPlannerTask](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaUserPlannerTask?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -21,21 +22,16 @@ Get-MgUserPlannerTask -UserId <String> [-ExpandProperty <String[]>] [-Filter <St
 ```
 
 ## DESCRIPTION
-Read-only.
-Nullable.
-Returns the plannerPlans shared with the user.
+Retrieve a list of **plannertask** objects assigned to a User.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgUserPlannerTask Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Planner
 # A UPN can also be used as -UserId.
 Get-MgUserPlannerTask -UserId $userId
 ```
-
-This example shows how to use the Get-MgUserPlannerTask Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -218,3 +214,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaUserPlannerTask](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaUserPlannerTask?view=graph-powershell-beta)

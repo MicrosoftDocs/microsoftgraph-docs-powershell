@@ -1,0 +1,3 @@
+Graph profile, Command, UriPath
+v1.0, Get-MgSchemaExtensionCount, /schemaExtensions/$count
+beta, Get-MgBetaSchemaExtensionCount, /schemaExtensions/$count

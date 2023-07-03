@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get roleManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagement](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Get-MgRoleManagement?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
@@ -60,9 +63,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRoleManagement
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRoleManagement1
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaRoleManagement](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Get-MgRoleManagement?view=graph-powershell-beta)

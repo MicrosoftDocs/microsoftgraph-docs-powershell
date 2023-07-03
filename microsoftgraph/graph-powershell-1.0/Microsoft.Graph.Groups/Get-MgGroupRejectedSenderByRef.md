@@ -1,15 +1,18 @@
 ---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/get-mggrouprejectedsenderbyref
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouprejectedsenderbyref
 schema: 2.0.0
 ---
 
 # Get-MgGroupRejectedSenderByRef
 
 ## SYNOPSIS
-The list of users or groups that are not allowed to create posts or calendar events in this group.
-Nullable
+Users in the rejected senders list cannot post to conversations of the group (identified in the GET request URL).
+Make sure you do not specify the same user or group in the rejected senders and accepted senders lists, otherwise you will get an error.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupRejectedSenderByRef](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupRejectedSenderByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -19,22 +22,18 @@ Get-MgGroupRejectedSenderByRef -GroupId <String> [-Filter <String>] [-Skip <Int3
 ```
 
 ## DESCRIPTION
-The list of users or groups that are not allowed to create posts or calendar events in this group.
-Nullable
+Users in the rejected senders list cannot post to conversations of the group (identified in the GET request URL).
+Make sure you do not specify the same user or group in the rejected senders and accepted senders lists, otherwise you will get an error.
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Groups
 
 Get-MgGroupRejectedSender -GroupId $groupId
+
 ```
-
-This example shows how to use the Get-MgGroupRejectedSenderByRef Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ## PARAMETERS
 
 ### -All
@@ -171,3 +170,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaGroupRejectedSenderByRef](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupRejectedSenderByRef?view=graph-powershell-beta)
+

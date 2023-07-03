@@ -1,54 +1,50 @@
 ---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/get-mguserdefaultdrive
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharesite
 schema: 2.0.0
 ---
 
-# Get-MgUserDefaultDrive
+# Get-MgShareSite
 
 ## SYNOPSIS
-The user's OneDrive.
-Read-only.
+Used to access the underlying site
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDefaultDrive](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDefaultDrive?view=graph-powershell-beta)
 
 ## SYNTAX
 
 ### Get (Default)
 ```
-Get-MgUserDefaultDrive -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgShareSite -SharedDriveItemId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgUserDefaultDrive -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgShareSite -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The user's OneDrive.
-Read-only.
+Used to access the underlying site
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgUserDefaultDrive Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Files
-Get-MgUserDefaultDrive -UserId $userId
+{{ Add code here }}
 ```
 
-This example shows how to use the Get-MgUserDefaultDrive Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+{{ Add output here }}
 
-### Example 2: Using the Get-MgUserDefaultDrive Cmdlet
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Files
-# A UPN can also be used as -UserId.
-Get-MgUserDefaultDrive -UserId $userId
+{{ Add code here }}
 ```
 
-This example shows how to use the Get-MgUserDefaultDrive Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -69,7 +65,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IFilesIdentity
@@ -98,8 +94,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -UserId
-The unique identifier of user
+### -SharedDriveItemId
+The unique identifier of sharedDriveItem
 
 ```yaml
 Type: String
@@ -121,7 +117,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDrive
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSite
 ## NOTES
 
 ALIASES
@@ -131,7 +127,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+`INPUTOBJECT <IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType
@@ -158,3 +154,4 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaUserDefaultDrive](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDefaultDrive?view=graph-powershell-beta)
