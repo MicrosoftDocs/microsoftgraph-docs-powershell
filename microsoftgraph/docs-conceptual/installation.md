@@ -5,7 +5,7 @@ description: "Learn how to install the Microsoft Graph PowerShell SDK with Power
 author: msewaweru
 manager: CelesteDG
 ms.topic: how-to
-ms.date: 04/25/2023
+ms.date: 05/17/2023
 ms.author: eunicewaweru
 ---
 
@@ -31,13 +31,15 @@ To set the execution policy, run:
 
 ## Installation
 
-Using the **Install-Module** cmdlet is the preferred installation method for the Microsoft Graph PowerShell module.
+The Microsoft Graph PowerShell SDK comes in 2 modules, Microsoft.Graph and Microsoft.Graph.Beta, that you will install separately. These modules call the Microsoft Graph v1.0 and Microsoft Graph beta endpoints, respectively. You can install the 2 modules on the same PowerShell version.
+
+Using the **Install-Module** cmdlet is the preferred installation method for the Microsoft Graph PowerShell modules.
 
 > [!NOTE]
-> Installing the main module of the SDK, Microsoft.Graph, will install all 38 sub modules. Consider only installing the necessary modules, including `Microsoft.Graph.Authentication` which is installed by default when you opt to install the sub modules individually. For a list of available Microsoft Graph modules, use `Find-Module Microsoft.Graph*`.
+> Installing the main modules of the SDK, Microsoft.Graph and Microsoft.Graph.Beta, will install all 38 sub modules for each module. Consider only installing the necessary modules, including `Microsoft.Graph.Authentication` which is installed by default when you opt to install the sub modules individually. For a list of available Microsoft Graph modules, use `Find-Module Microsoft.Graph*`.
 > Only cmdlets for the installed modules will be available for use.
 
-Run the following command to install the SDK in PowerShell Core or Windows PowerShell.
+To install the v1 module of the SDK in PowerShell Core or Windows PowerShell, run the following command.
 
 ```powershell
 Install-Module Microsoft.Graph -Scope CurrentUser
@@ -48,6 +50,15 @@ Optionally, you can change the scope of the installation using the `-Scope` para
 ```powershell
 Install-Module Microsoft.Graph -Scope AllUsers
 ```
+
+To install the beta module, run the following command.
+
+```powershell
+Install-Module Microsoft.Graph.Beta
+```
+
+> [!IMPORTANT]
+> We recommend that you always rely on Microsoft Graph v1.0 when writing scripts. Sometimes there is a need to use the beta endpoint for testing or early adoption before a feature is available in v1.0. The Microsoft Graph beta endpoint and any functionality there is still in preview status and can change. This makes the beta endpoints unreliable for production usage since it may break existing scenarios without notice.
 
 Installing the SDK in one version of PowerShell does not install it for the other. Run the installation command inside the version of PowerShell you intend to use it in.
 
@@ -80,13 +91,13 @@ Update-Module Microsoft.Graph
 First, use the following command to uninstall the main module.
 
 ```powershell
-Uninstall-Module Microsoft.Graph
+Uninstall-Module Microsoft.Graph -AllVersions
 ```
 
 Then, remove all of the dependency modules by running the following commands.
 
 ```powershell
-Get-InstalledModule Microsoft.Graph.* | %{ if($_.Name -ne "Microsoft.Graph.Authentication"){ Uninstall-Module $_.Name } }
+Get-InstalledModule Microsoft.Graph.* | ? Name -ne "Microsoft.Graph.Authentication" | Uninstall-Module
 Uninstall-Module Microsoft.Graph.Authentication
 ```
 
