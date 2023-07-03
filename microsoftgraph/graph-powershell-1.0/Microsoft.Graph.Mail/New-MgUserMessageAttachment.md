@@ -51,7 +51,6 @@ An attachment can be one of the following types: All these types of attachment r
 ### EXAMPLE 1
 ```
 Import-Module Microsoft.Graph.Mail
-```
 
 $params = @{
 	"@odata.type" = "microsoft.graph.fileAttachment"
@@ -65,6 +64,7 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgUserMessageAttachment -UserId $userId -MessageId $messageId -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -308,4 +308,5 @@ INPUTOBJECT \<IMailIdentity\>: Identity Parameter
 [New-MgBetaUserMessageAttachment](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMessageAttachment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermessageattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermessageattachment)
+
 

@@ -39,11 +39,11 @@ You can specify a mail folder by its folder ID, or by its well-known folder name
 ### EXAMPLE 1
 ```
 Import-Module Microsoft.Graph.Mail
-```
 
 # A UPN can also be used as -UserId.
 Remove-MgUserMailFolder -UserId $userId -MailFolderId $mailFolderId
 
+```
 ## PARAMETERS
 
 ### -IfMatch
@@ -182,4 +182,5 @@ INPUTOBJECT \<IMailIdentity\>: Identity Parameter
 [Remove-MgBetaUserMailFolder](/powershell/module/Microsoft.Graph.Beta.Mail/Remove-MgBetaUserMailFolder?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermailfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermailfolder)
+
 

@@ -35,11 +35,11 @@ Delete eventMessage.
 ### EXAMPLE 1
 ```
 Import-Module Microsoft.Graph.Mail
-```
 
 # A UPN can also be used as -UserId.
 Remove-MgUserMessage -UserId $userId -MessageId $messageId
 
+```
 ## PARAMETERS
 
 ### -IfMatch
@@ -178,4 +178,5 @@ INPUTOBJECT \<IMailIdentity\>: Identity Parameter
 [Remove-MgBetaUserMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Remove-MgBetaUserMessage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermessage)
+
 

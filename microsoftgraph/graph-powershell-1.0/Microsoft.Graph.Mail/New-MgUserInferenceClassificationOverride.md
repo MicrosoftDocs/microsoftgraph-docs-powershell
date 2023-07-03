@@ -53,7 +53,6 @@ Future messages from that SMTP address will be consistently classified\nas speci
 ### EXAMPLE 1
 ```
 Import-Module Microsoft.Graph.Mail
-```
 
 $params = @{
 	classifyAs = "focused"
@@ -66,6 +65,7 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgUserInferenceClassificationOverride -UserId $userId -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -253,4 +253,5 @@ SENDEREMAILADDRESS \<IMicrosoftGraphEmailAddress\>: emailAddress
 [New-MgBetaUserInferenceClassificationOverride](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserInferenceClassificationOverride?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mguserinferenceclassificationoverride](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mguserinferenceclassificationoverride)
+
 

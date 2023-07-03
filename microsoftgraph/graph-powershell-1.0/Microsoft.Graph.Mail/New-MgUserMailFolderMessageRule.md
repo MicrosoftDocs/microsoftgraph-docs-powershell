@@ -54,7 +54,6 @@ Outlook carries out those actions if an incoming message in the user's Inbox mee
 ### EXAMPLE 1
 ```
 Import-Module Microsoft.Graph.Mail
-```
 
 $params = @{
 	displayName = "From partner"
@@ -81,6 +80,7 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgUserMailFolderMessageRule -UserId $userId -MailFolderId $mailFolderId -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -Actions
@@ -523,4 +523,5 @@ INPUTOBJECT \<IMailIdentity\>: Identity Parameter
 [New-MgBetaUserMailFolderMessageRule](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMailFolderMessageRule?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfoldermessagerule](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfoldermessagerule)
+
 

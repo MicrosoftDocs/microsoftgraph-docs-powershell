@@ -69,8 +69,11 @@ function Copy-Files{
                
         #Extract command over here
         $WrongExample = "``````powershell`r`nImport-Module $Path`r`n``````"
-        $WrongExampleWithExtraSpace = "``````powershell`r`n`nImport-Module $Path`r`n``````"
+       
+        $WrongExampleWithExtraSpace = "```````r`n`Import-Module $Path`r`n``````"
         $GoodExample = "``````powershell`r`nImport-Module $Path"
+        $GoodExample2 = "```````r`n`Import-Module $Path"
+        Write-Host $WrongExample
         $WrongExampleWithRegex = "``````powershell(?s).*``````"
 
         $Endpath1 = "```````r`n## PARAMETERS"
@@ -92,17 +95,15 @@ function Copy-Files{
         $SearchBlockTest = "## EXAMPLES`nejlddjldj`n## PARAMETERS"
         $content = Get-Content -Encoding UTF8 -Raw $File
         if(($content -match $WrongExample) -or ($content -match $WrongExampleWithExtraSpace) ){
+            Write-Host $File
             if ($content -match $re) { 
                 $extractedExample = $Matches[0]
-                    $finalOutput = $extractedExample -replace $WrongExample, $GoodExample -replace $WrongExampleWithExtraSpace, $GoodExample -replace "### EXAMPLE 2", $Endpath2 -replace "## PARAMETERS", $Endpath1 -replace "### EXAMPLE 3", $Endpath3 -replace "### EXAMPLE 4", $Endpath4 -replace "### EXAMPLE 5", $Endpath5 -replace "### EXAMPLE 6", $Endpath6 -replace "### EXAMPLE 7", $Endpath7 -replace "### EXAMPLE 8", $Endpath8 -replace "### EXAMPLE 9", $Endpath9 -replace "### EXAMPLE 10", $Endpath10 -replace "### EXAMPLE 11", $Endpath11 -replace "### EXAMPLE 12", $Endpath12
+                    $finalOutput = $extractedExample -replace $WrongExample, $GoodExample -replace $WrongExampleWithExtraSpace, $GoodExample2 -replace "### EXAMPLE 2", $Endpath2 -replace "## PARAMETERS", $Endpath1 -replace "### EXAMPLE 3", $Endpath3 -replace "### EXAMPLE 4", $Endpath4 -replace "### EXAMPLE 5", $Endpath5 -replace "### EXAMPLE 6", $Endpath6 -replace "### EXAMPLE 7", $Endpath7 -replace "### EXAMPLE 8", $Endpath8 -replace "### EXAMPLE 9", $Endpath9 -replace "### EXAMPLE 10", $Endpath10 -replace "### EXAMPLE 11", $Endpath11 -replace "### EXAMPLE 12", $Endpath12
                   
                   $text = $content.ToString()
                   $text = $text.Replace($extractedExample, $finalOutput)
                     $text | Out-File $File -Encoding UTF8
-                   (Get-Content $File) | 
-                   Foreach-Object { $_ -replace '## EXAMPLES', $finalOutput}  | 
-                   Out-File $File
-                Write-Host $File
+                
                     
                   # automatic variable $Matches reflects what was captured
               }
