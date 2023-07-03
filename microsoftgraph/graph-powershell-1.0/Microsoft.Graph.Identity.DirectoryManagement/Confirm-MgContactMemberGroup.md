@@ -57,7 +57,6 @@ Because Microsoft 365 groups cannot contain other groups, membership in a Micros
 ### EXAMPLE 1
 ```
 Import-Module Microsoft.Graph.DirectoryObjects
-```
 
 $params = @{
 	GroupIds = @(
@@ -70,11 +69,10 @@ $params = @{
 }
 
 Confirm-MgDirectoryObjectMemberGroup -DirectoryObjectId $directoryObjectId -BodyParameter $params
-
+```
 ### EXAMPLE 2
 ```
 Import-Module Microsoft.Graph.Users.Actions
-```
 
 $params = @{
 	GroupIds = @(
@@ -85,7 +83,7 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Confirm-MgUserMemberGroup -UserId $userId -BodyParameter $params
-
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
