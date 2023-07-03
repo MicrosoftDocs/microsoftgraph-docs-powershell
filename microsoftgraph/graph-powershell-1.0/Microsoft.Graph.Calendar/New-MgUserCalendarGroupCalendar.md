@@ -61,7 +61,6 @@ Use this API to create a new calendar in a calendar group for a user.
 ### EXAMPLE 1
 ```
 Import-Module Microsoft.Graph.Calendar
-```
 
 $params = @{
 	name = "Marketing calendar"
@@ -69,7 +68,7 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserCalendarGroupCalendar -UserId $userId -CalendarGroupId $calendarGroupId -BodyParameter $params
-
+```
 ## PARAMETERS
 
 ### -AdditionalProperties

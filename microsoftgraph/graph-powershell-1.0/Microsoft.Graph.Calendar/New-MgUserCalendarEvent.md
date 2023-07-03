@@ -81,7 +81,6 @@ The calendar can be one for a user, or the default calendar of a Microsoft 365 g
 ### EXAMPLE 1
 ```
 Import-Module Microsoft.Graph.Calendar
-```
 
 $params = @{
 	subject = "Let's go for lunch"
@@ -114,11 +113,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserCalendarEvent -UserId $userId -CalendarId $calendarId -BodyParameter $params
-
+```
 ### EXAMPLE 2
 ```
 Import-Module Microsoft.Graph.Calendar
-```
 
 $params = @{
 	subject = "Let's go for lunch"
@@ -152,7 +150,7 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserCalendarEvent -UserId $userId -CalendarId $calendarId -BodyParameter $params
-
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
