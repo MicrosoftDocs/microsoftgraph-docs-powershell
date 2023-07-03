@@ -90,7 +90,7 @@ function Copy-Files{
                   
                   $text = $content.ToString()
                   $text = $text.Replace($extractedExample, $finalOutput)
-                    $text | Out-File $File -Encoding UTF8
+                    #$text | Out-File $File -Encoding UTF8
                 #    (Get-Content $File) | 
                 #    Foreach-Object { $_ -replace '## EXAMPLES', $finalOutput}  | 
                 #    Out-File $File
