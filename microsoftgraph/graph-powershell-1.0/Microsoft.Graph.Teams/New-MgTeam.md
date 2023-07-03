@@ -258,7 +258,7 @@ $params = @{
 }
 
 New-MgTeam -BodyParameter $params
-
+```
 ### EXAMPLE 8
 ```powershell
 Import-Module Microsoft.Graph.Teams
