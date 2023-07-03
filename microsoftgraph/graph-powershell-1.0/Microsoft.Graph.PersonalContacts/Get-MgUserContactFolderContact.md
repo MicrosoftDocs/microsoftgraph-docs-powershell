@@ -48,11 +48,11 @@ Nullable.
 ### EXAMPLE 1
 ```
 Import-Module Microsoft.Graph.PersonalContacts
-```
 
 # A UPN can also be used as -UserId.
 Get-MgUserContactFolderContact -UserId $userId -ContactFolderId $contactFolderId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -278,4 +278,5 @@ INPUTOBJECT \<IPersonalContactsIdentity\>: Identity Parameter
 [Get-MgBetaUserContactFolderContact](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Get-MgBetaUserContactFolderContact?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontactfoldercontact](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontactfoldercontact)
+
 

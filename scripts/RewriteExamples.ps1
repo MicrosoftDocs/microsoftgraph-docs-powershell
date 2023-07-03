@@ -73,7 +73,6 @@ function Copy-Files{
         $WrongExampleWithExtraSpace = "```````r`n`Import-Module $Path`r`n``````"
         $GoodExample = "``````powershell`r`nImport-Module $Path"
         $GoodExample2 = "```````r`n`Import-Module $Path"
-        Write-Host $WrongExample
         $WrongExampleWithRegex = "``````powershell(?s).*``````"
 
         $Endpath1 = "```````r`n## PARAMETERS"

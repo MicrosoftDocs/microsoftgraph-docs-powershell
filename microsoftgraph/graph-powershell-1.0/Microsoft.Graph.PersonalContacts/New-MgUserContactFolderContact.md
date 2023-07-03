@@ -73,7 +73,6 @@ Add a contact to the root Contacts folder or to the \`contacts\` endpoint of ano
 ### EXAMPLE 1
 ```
 Import-Module Microsoft.Graph.PersonalContacts
-```
 
 $params = @{
 	parentFolderId = "parentFolderId-value"
@@ -87,6 +86,7 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgUserContactFolderContact -UserId $userId -ContactFolderId $contactFolderId -BodyParameter $params
 
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1025,4 +1025,5 @@ Read-only.
 [New-MgBetaUserContactFolderContact](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/New-MgBetaUserContactFolderContact?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/new-mgusercontactfoldercontact](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/new-mgusercontactfoldercontact)
+
 

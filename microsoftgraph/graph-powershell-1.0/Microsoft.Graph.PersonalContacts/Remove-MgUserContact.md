@@ -35,11 +35,11 @@ Delete a contact.
 ### EXAMPLE 1
 ```
 Import-Module Microsoft.Graph.PersonalContacts
-```
 
 # A UPN can also be used as -UserId.
 Remove-MgUserContact -UserId $userId -ContactId $contactId
 
+```
 ## PARAMETERS
 
 ### -ContactId
@@ -175,4 +175,5 @@ INPUTOBJECT \<IPersonalContactsIdentity\>: Identity Parameter
 [Remove-MgBetaUserContact](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Remove-MgBetaUserContact?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/remove-mgusercontact](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/remove-mgusercontact)
+
 
