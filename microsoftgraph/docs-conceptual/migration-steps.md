@@ -81,7 +81,7 @@ Get-MgUser -ConsistencyLevel eventual -Count userCount -Filter "startsWith(Displ
 
 There are limitations that currently exist in Microsoft Graph PowerShell, either by design or due to some functionality that is yet to be built in.
 
-- There isn't yet an equivalent of **-SearchString** for `Get-AzureADUser` and `Get-AzureADGroup` commands. Use **-Filter** instead. For example, `Get-MgUser -Filter "DisplayName eq 'Lee Gu'"` returns the user whose display name is equal to the specified string.
+- For the equivalent of **-SearchString**, use **-Search** and **-ConsistencyLevel eventual** in all cases. Note that the query may still work without eventual .You can also use **-Filter** instead. For example, `Get-MgUser -Filter "DisplayName eq 'Lee Gu'"` returns the user whose display name is equal to the specified string.
 - You need to use hash tables to pass nested parameters. See a sample of [Nested parameters](https://github.com/microsoftgraph/msgraph-sdk-powershell/blob/dev/samples/9-Applications.ps1#L28-L43).
 - **Pro-tip**: Use the Microsoft Graph PowerShell **-ConsistencyLevel** parameter. It lets you do $count! To learn more about the **-ConsistencyLevel** parameter, see [Advanced query parameters](/graph/aad-advanced-queries).
 
