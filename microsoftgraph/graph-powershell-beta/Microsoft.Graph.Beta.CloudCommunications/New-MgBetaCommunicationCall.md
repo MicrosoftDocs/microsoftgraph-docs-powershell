@@ -338,7 +338,7 @@ $params = @{
 }
 
 New-MgBetaCommunicationCall -BodyParameter $params
-
+```
 ### EXAMPLE 8
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
@@ -363,7 +363,7 @@ $params = @{
 }
 
 New-MgBetaCommunicationCall -BodyParameter $params
-
+```
 ### EXAMPLE 9
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
@@ -408,7 +408,7 @@ $params = @{
 }
 
 New-MgBetaCommunicationCall -BodyParameter $params
-
+```
 ### EXAMPLE 10
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
