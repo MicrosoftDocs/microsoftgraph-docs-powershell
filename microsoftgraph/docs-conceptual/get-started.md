@@ -2,11 +2,11 @@
 title: "Get started with the Microsoft Graph PowerShell SDK"
 description: "Get started with the Microsoft Graph PowerShell SDK by using it perform some basic tasks."
 
-author: jasonjoh
+author: msewaweru
 manager: CelesteDG
 ms.topic: quickstart
-ms.date: 04/25/2023
-ms.author: jasonjoh
+ms.date: 05/17/2023
+ms.author: eunicewaweru
 ---
 
 # Get started with the Microsoft Graph PowerShell SDK
@@ -15,15 +15,11 @@ In this guide, you'll use the Microsoft Graph PowerShell SDK to perform some bas
 
 ## API version
 
-By default, the SDK uses the [Microsoft Graph REST API v1.0](/graph/api/overview?view=graph-rest-1.0&preserve-view=true). Cmdlets are available for the API version that is selected. You can change the profile by using the `Select-MgProfile` command.
-
-```powershell
-Select-MgProfile -Name "beta"
-```
+The SDK contains 2 modules, Microsoft.Graph and Microsoft.Graph.Beta, that call the [Microsoft Graph REST API v1.0](/graph/api/overview?view=graph-rest-1.0&preserve-view=true) and [Microsoft Graph REST API beta](/graph/api/overview?view=graph-rest-beta&preserve-view=true), respectively. Cmdlets are available for the module that is installed.
 
 ## Authentication
 
-The PowerShell SDK supports two types of authentication: delegated access, and app-only access. In this guide, you'll use delegated access to sign in as a user, grant consent to the SDK to act on your behalf, and call the Microsoft Graph.
+The PowerShell SDK supports two types of authentication: *delegated access*, and *app-only access*. In this guide, you'll use delegated access to sign in as a user, grant consent to the SDK to act on your behalf, and call the Microsoft Graph.
 
 For details on using app-only access for unattended scenarios, see [Use app-only authentication with the Microsoft Graph PowerShell SDK](app-only.md).
 
@@ -68,7 +64,7 @@ Use the `Connect-MgGraph` command to sign in with the required scopes. You'll ne
 Connect-MgGraph -Scopes "User.Read.All","Group.ReadWrite.All"
 ```
 
-The command prompts you to go to a web page to sign in using a device code. Once you've done that, the command indicates success with a `Welcome To Microsoft Graph!` message. You only need to sign in once per session.
+The command prompts you to go to a web page to sign in with your credentials. Once you've done that, the command indicates success with a `Welcome To Microsoft Graph!` message. You only need to sign in once per session.
 
 > [!TIP]
 > You can add additional permissions by repeating the `Connect-MgGraph` command with the new permission scopes.
