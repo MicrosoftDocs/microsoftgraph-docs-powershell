@@ -92,7 +92,7 @@ You may be wondering: "Can I use the PowerShell SDK to register an app, so that 
 1. Review the rest of the PowerShell output for `Connect-MgGraph` command pre-filled with the values for your app registration.
 
     > [!TIP]
-    > If the script returns an error stating `New-MgServicePrincipal : Unable to find target address`, re-run the script with the additional `-TenantId` parameter. For details, see [How to find your Azure Active Directory tenant ID](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant).
+    > If the script returns an error stating `New-MgServicePrincipal : Unable to find target address`, re-run the script with the additional `-TenantId` parameter. For details, see [How to find your Azure Active Directory tenant ID](/azure/active-directory/fundamentals/how-to-find-tenant).
 
 ---
 
