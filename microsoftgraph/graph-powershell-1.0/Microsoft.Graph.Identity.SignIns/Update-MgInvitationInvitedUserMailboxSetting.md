@@ -1,7 +1,7 @@
 ---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mginvitationinvitedusermailboxsetting
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mginvitationinvitedusermailboxsetting
 schema: 2.0.0
 ---
 
@@ -10,43 +10,56 @@ schema: 2.0.0
 ## SYNOPSIS
 Update property mailboxSettings value.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaInvitationInvitedUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaInvitationInvitedUserMailboxSetting?view=graph-powershell-beta)
+
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### UpdateExpanded (Default)
 ```
 Update-MgInvitationInvitedUserMailboxSetting -InvitationId <String> [-AdditionalProperties <Hashtable>]
  [-ArchiveFolder <String>] [-AutomaticRepliesSetting <IMicrosoftGraphAutomaticRepliesSetting>]
  [-DateFormat <String>] [-DelegateMeetingMessageDeliveryOptions <String>]
  [-Language <IMicrosoftGraphLocaleInfo>] [-TimeFormat <String>] [-TimeZone <String>] [-UserPurpose <String>]
- [-WorkingHours <IMicrosoftGraphWorkingHours>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WorkingHours <IMicrosoftGraphWorkingHours>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Update1
+### Update
 ```
 Update-MgInvitationInvitedUserMailboxSetting -InvitationId <String>
- -BodyParameter <IMicrosoftGraphMailboxSettings> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMailboxSettings> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded1
+### UpdateViaIdentityExpanded
 ```
 Update-MgInvitationInvitedUserMailboxSetting -InputObject <IIdentitySignInsIdentity>
  [-AdditionalProperties <Hashtable>] [-ArchiveFolder <String>]
  [-AutomaticRepliesSetting <IMicrosoftGraphAutomaticRepliesSetting>] [-DateFormat <String>]
  [-DelegateMeetingMessageDeliveryOptions <String>] [-Language <IMicrosoftGraphLocaleInfo>]
  [-TimeFormat <String>] [-TimeZone <String>] [-UserPurpose <String>]
- [-WorkingHours <IMicrosoftGraphWorkingHours>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WorkingHours <IMicrosoftGraphWorkingHours>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity1
+### UpdateViaIdentity
 ```
 Update-MgInvitationInvitedUserMailboxSetting -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphMailboxSettings> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMailboxSettings> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update property mailboxSettings value.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -55,7 +68,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -70,7 +83,7 @@ Folder ID of an archive folder for the user.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -82,11 +95,11 @@ Accept wildcard characters: False
 
 ### -AutomaticRepliesSetting
 automaticRepliesSetting
-To construct, please use Get-Help -Online and see NOTES section for AUTOMATICREPLIESSETTING properties and create a hash table.
+To construct, see NOTES section for AUTOMATICREPLIESSETTING properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAutomaticRepliesSetting
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -98,11 +111,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 mailboxSettings
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphMailboxSettings
-Parameter Sets: Update1, UpdateViaIdentity1
+Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -117,7 +130,7 @@ The date format for the user's mailbox.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -132,7 +145,7 @@ delegateMeetingMessageDeliveryOptions
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -144,11 +157,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IIdentitySignInsIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -163,7 +176,7 @@ The unique identifier of invitation
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -175,26 +188,11 @@ Accept wildcard characters: False
 
 ### -Language
 localeInfo
-To construct, please use Get-Help -Online and see NOTES section for LANGUAGE properties and create a hash table.
+To construct, see NOTES section for LANGUAGE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphLocaleInfo
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -209,7 +207,7 @@ The time format for the user's mailbox.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -224,7 +222,7 @@ The default time zone for the user's mailbox.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -235,11 +233,11 @@ Accept wildcard characters: False
 ```
 
 ### -UserPurpose
-.
+userPurpose
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -251,11 +249,11 @@ Accept wildcard characters: False
 
 ### -WorkingHours
 workingHours
-To construct, please use Get-Help -Online and see NOTES section for WORKINGHOURS properties and create a hash table.
+To construct, see NOTES section for WORKINGHOURS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphWorkingHours
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -305,7 +303,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMailboxSettings
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMailboxSettings
 ## NOTES
 
 ALIASES
@@ -315,7 +313,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-AUTOMATICREPLIESSETTING `<IMicrosoftGraphAutomaticRepliesSetting>`: automaticRepliesSetting
+`AUTOMATICREPLIESSETTING <IMicrosoftGraphAutomaticRepliesSetting>`: automaticRepliesSetting
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ExternalAudience <String>]`: externalAudienceScope
   - `[ExternalReplyMessage <String>]`: The automatic reply to send to the specified external audience, if Status is AlwaysEnabled or Scheduled.
@@ -327,7 +325,7 @@ AUTOMATICREPLIESSETTING `<IMicrosoftGraphAutomaticRepliesSetting>`: automaticRep
   - `[ScheduledStartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
   - `[Status <String>]`: automaticRepliesStatus
 
-BODYPARAMETER `<IMicrosoftGraphMailboxSettings>`: mailboxSettings
+`BODYPARAMETER <IMicrosoftGraphMailboxSettings>`: mailboxSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ArchiveFolder <String>]`: Folder ID of an archive folder for the user.
   - `[AutomaticRepliesSetting <IMicrosoftGraphAutomaticRepliesSetting>]`: automaticRepliesSetting
@@ -349,7 +347,7 @@ BODYPARAMETER `<IMicrosoftGraphMailboxSettings>`: mailboxSettings
     - `[Locale <String>]`: A locale representation for the user, which includes the user's preferred language and country/region. For example, 'en-us'. The language component follows 2-letter codes as defined in ISO 639-1, and the country component follows 2-letter codes as defined in ISO 3166-1 alpha-2.
   - `[TimeFormat <String>]`: The time format for the user's mailbox.
   - `[TimeZone <String>]`: The default time zone for the user's mailbox.
-  - `[UserPurpose <String>]`: 
+  - `[UserPurpose <String>]`: userPurpose
   - `[WorkingHours <IMicrosoftGraphWorkingHours>]`: workingHours
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DaysOfWeek <String[]>]`: The days of the week on which the user works.
@@ -359,19 +357,15 @@ BODYPARAMETER `<IMicrosoftGraphMailboxSettings>`: mailboxSettings
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Name <String>]`: The name of a time zone. It can be a standard time zone name such as 'Hawaii-Aleutian Standard Time', or 'Customized Time Zone' for a custom time zone.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentitySignInsIdentity>`: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: The unique identifier of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
   - `[AuthenticationContextClassReferenceId <String>]`: The unique identifier of authenticationContextClassReference
-  - `[AuthenticationEventListenerId <String>]`: The unique identifier of authenticationEventListener
   - `[AuthenticationMethodConfigurationId <String>]`: The unique identifier of authenticationMethodConfiguration
   - `[AuthenticationMethodId <String>]`: The unique identifier of authenticationMethod
   - `[AuthenticationMethodModeDetailId <String>]`: The unique identifier of authenticationMethodModeDetail
-  - `[AuthenticationMethodModes <String[]>]`: Usage: authenticationMethodModes={authenticationMethodModes}
   - `[AuthenticationStrengthPolicyId <String>]`: The unique identifier of authenticationStrengthPolicy
-  - `[AuthorizationPolicyId <String>]`: The unique identifier of authorizationPolicy
-  - `[B2CIdentityUserFlowId <String>]`: The unique identifier of b2cIdentityUserFlow
   - `[B2XIdentityUserFlowId <String>]`: The unique identifier of b2xIdentityUserFlow
   - `[BitlockerRecoveryKeyId <String>]`: The unique identifier of bitlockerRecoveryKey
   - `[CertificateBasedAuthConfigurationId <String>]`: The unique identifier of certificateBasedAuthConfiguration
@@ -379,32 +373,24 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[ConditionalAccessPolicyId <String>]`: The unique identifier of conditionalAccessPolicy
   - `[ConditionalAccessTemplateId <String>]`: The unique identifier of conditionalAccessTemplate
   - `[CrossTenantAccessPolicyConfigurationPartnerTenantId <String>]`: The unique identifier of crossTenantAccessPolicyConfigurationPartner
-  - `[CustomAuthenticationExtensionId <String>]`: The unique identifier of customAuthenticationExtension
-  - `[DataLossPreventionPolicyId <String>]`: The unique identifier of dataLossPreventionPolicy
   - `[DataPolicyOperationId <String>]`: The unique identifier of dataPolicyOperation
-  - `[DefaultUserRoleOverrideId <String>]`: The unique identifier of defaultUserRoleOverride
   - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
   - `[EmailAuthenticationMethodId <String>]`: The unique identifier of emailAuthenticationMethod
   - `[FeatureRolloutPolicyId <String>]`: The unique identifier of featureRolloutPolicy
   - `[Fido2AuthenticationMethodId <String>]`: The unique identifier of fido2AuthenticationMethod
-  - `[GroupId <String>]`: The unique identifier of group
   - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
   - `[IdentityApiConnectorId <String>]`: The unique identifier of identityApiConnector
   - `[IdentityProviderBaseId <String>]`: The unique identifier of identityProviderBase
   - `[IdentityProviderId <String>]`: The unique identifier of identityProvider
   - `[IdentityUserFlowAttributeAssignmentId <String>]`: The unique identifier of identityUserFlowAttributeAssignment
   - `[IdentityUserFlowAttributeId <String>]`: The unique identifier of identityUserFlowAttribute
-  - `[IdentityUserFlowId <String>]`: The unique identifier of identityUserFlow
-  - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
   - `[InvitationId <String>]`: The unique identifier of invitation
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
-  - `[MobilityManagementPolicyId <String>]`: The unique identifier of mobilityManagementPolicy
   - `[NamedLocationId <String>]`: The unique identifier of namedLocation
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[OrganizationId <String>]`: The unique identifier of organization
   - `[PasswordAuthenticationMethodId <String>]`: The unique identifier of passwordAuthenticationMethod
-  - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
@@ -413,10 +399,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[RiskyServicePrincipalId <String>]`: The unique identifier of riskyServicePrincipal
   - `[RiskyUserHistoryItemId <String>]`: The unique identifier of riskyUserHistoryItem
   - `[RiskyUserId <String>]`: The unique identifier of riskyUser
-  - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
-  - `[SensitivityLabelId1 <String>]`: The unique identifier of sensitivityLabel
-  - `[ServicePrincipalCreationConditionSetId <String>]`: The unique identifier of servicePrincipalCreationConditionSet
-  - `[ServicePrincipalCreationPolicyId <String>]`: The unique identifier of servicePrincipalCreationPolicy
   - `[ServicePrincipalRiskDetectionId <String>]`: The unique identifier of servicePrincipalRiskDetection
   - `[SoftwareOathAuthenticationMethodId <String>]`: The unique identifier of softwareOathAuthenticationMethod
   - `[TemporaryAccessPassAuthenticationMethodId <String>]`: The unique identifier of temporaryAccessPassAuthenticationMethod
@@ -424,8 +406,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[ThreatAssessmentResultId <String>]`: The unique identifier of threatAssessmentResult
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
-  - `[TrustFrameworkKeySetId <String>]`: The unique identifier of trustFrameworkKeySet
-  - `[TrustFrameworkPolicyId <String>]`: The unique identifier of trustFrameworkPolicy
   - `[UnifiedRoleManagementPolicyAssignmentId <String>]`: The unique identifier of unifiedRoleManagementPolicyAssignment
   - `[UnifiedRoleManagementPolicyId <String>]`: The unique identifier of unifiedRoleManagementPolicy
   - `[UnifiedRoleManagementPolicyRuleId <String>]`: The unique identifier of unifiedRoleManagementPolicyRule
@@ -434,12 +414,12 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
-LANGUAGE `<IMicrosoftGraphLocaleInfo>`: localeInfo
+`LANGUAGE <IMicrosoftGraphLocaleInfo>`: localeInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: A name representing the user's locale in natural language, for example, 'English (United States)'.
   - `[Locale <String>]`: A locale representation for the user, which includes the user's preferred language and country/region. For example, 'en-us'. The language component follows 2-letter codes as defined in ISO 639-1, and the country component follows 2-letter codes as defined in ISO 3166-1 alpha-2.
 
-WORKINGHOURS `<IMicrosoftGraphWorkingHours>`: workingHours
+`WORKINGHOURS <IMicrosoftGraphWorkingHours>`: workingHours
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DaysOfWeek <String[]>]`: The days of the week on which the user works.
   - `[EndTime <String>]`: The time of the day that the user stops working.
@@ -449,5 +429,7 @@ WORKINGHOURS `<IMicrosoftGraphWorkingHours>`: workingHours
     - `[Name <String>]`: The name of a time zone. It can be a standard time zone name such as 'Hawaii-Aleutian Standard Time', or 'Customized Time Zone' for a custom time zone.
 
 ## RELATED LINKS
+[Update-MgBetaInvitationInvitedUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaInvitationInvitedUserMailboxSetting?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaInvitationInvitedUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaInvitationInvitedUserMailboxSetting?view=graph-powershell-beta)

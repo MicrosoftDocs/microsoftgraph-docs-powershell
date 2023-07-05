@@ -1,142 +1,53 @@
 ---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/get-mguserowneddevice
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguseroutlookmastercategorycount
 schema: 2.0.0
 ---
 
-# Get-MgUserOwnedDevice
+# Get-MgUserOutlookMasterCategoryCount
 
 ## SYNOPSIS
-Devices that are owned by the user.
-Read-only.
-Nullable.
-Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
+Get the number of the resource
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserOwnedDevice](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserOwnedDevice?view=graph-powershell-beta)
 
 ## SYNTAX
 
-### List1 (Default)
+### Get (Default)
 ```
-Get-MgUserOwnedDevice -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ConsistencyLevel <String>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+Get-MgUserOutlookMasterCategoryCount -UserId <String> [-Filter <String>] [<CommonParameters>]
 ```
 
-### Get1
+### GetViaIdentity
 ```
-Get-MgUserOwnedDevice -DirectoryObjectId <String> -UserId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [-ConsistencyLevel <String>] [<CommonParameters>]
-```
-
-### GetViaIdentity1
-```
-Get-MgUserOwnedDevice -InputObject <IUsersIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ConsistencyLevel <String>] [<CommonParameters>]
+Get-MgUserOutlookMasterCategoryCount -InputObject <IUsersIdentity> [-Filter <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Devices that are owned by the user.
-Read-only.
-Nullable.
-Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
+Get the number of the resource
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgUserOwnedDevice Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Users
-# A UPN can also be used as -UserId.
-Get-MgUserOwnedDevice -UserId $userId
+{{ Add code here }}
 ```
 
-This example shows how to use the Get-MgUserOwnedDevice Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
-
-### -All
-List all pages.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: List1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ConsistencyLevel
-Indicates the requested consistency level.
-Documentation URL: https://docs.microsoft.com/graph/aad-advanced-queries
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -CountVariable
-Specifies a count of the total number of items in a collection.
-By default, this variable will be set in the global scope.
-
-```yaml
-Type: String
-Parameter Sets: List1
-Aliases: CV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DirectoryObjectId
-The unique identifier of directoryObject
-
-```yaml
-Type: String
-Parameter Sets: Get1
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ExpandProperty
-Expand related entities
-
-```yaml
-Type: String[]
-Parameter Sets: (All)
-Aliases: Expand
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -Filter
 Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -148,11 +59,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersIdentity
-Parameter Sets: GetViaIdentity1
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
@@ -162,105 +73,15 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -PageSize
-Sets the page size of results.
-
-```yaml
-Type: Int32
-Parameter Sets: List1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Property
-Select properties to be returned
-
-```yaml
-Type: String[]
-Parameter Sets: (All)
-Aliases: Select
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Search
-Search items by search phrases
-
-```yaml
-Type: String
-Parameter Sets: List1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Sort
-Order items by property values
-
-```yaml
-Type: String[]
-Parameter Sets: List1
-Aliases: OrderBy
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Top
-Show only the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List1
-Aliases: Limit
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -UserId
 The unique identifier of user
 
 ```yaml
 Type: String
-Parameter Sets: List1, Get1
+Parameter Sets: Get
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List1
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -275,7 +96,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
+### System.Int32
 ## NOTES
 
 ALIASES
@@ -285,26 +106,20 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersIdentity>`: Identity Parameter
   - `[AttachmentBaseId <String>]`: The unique identifier of attachmentBase
-  - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[AttachmentSessionId <String>]`: The unique identifier of attachmentSession
   - `[ChecklistItemId <String>]`: The unique identifier of checklistItem
   - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
   - `[LinkedResourceId <String>]`: The unique identifier of linkedResource
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
-  - `[NotificationId <String>]`: The unique identifier of notification
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[OutlookCategoryId <String>]`: The unique identifier of outlookCategory
-  - `[OutlookTaskFolderId <String>]`: The unique identifier of outlookTaskFolder
-  - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
-  - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
   - `[TodoTaskId <String>]`: The unique identifier of todoTask
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaUserOwnedDevice](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserOwnedDevice?view=graph-powershell-beta)

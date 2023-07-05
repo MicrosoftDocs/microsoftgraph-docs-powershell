@@ -1,18 +1,21 @@
 ---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mggroupteamprimarychannelmessagereplyhostedcontent
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamprimarychannelmessagereplyhostedcontent
 schema: 2.0.0
 ---
 
 # Get-MgGroupTeamPrimaryChannelMessageReplyHostedContent
 
 ## SYNOPSIS
-Content in a message hosted by Microsoft Teams - for example, images or code snippets.
+Retrieve the properties and relationships of chatMessageHostedContent object.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamPrimaryChannelMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamPrimaryChannelMessageReplyHostedContent?view=graph-powershell-beta)
 
 ## SYNTAX
 
-### List1 (Default)
+### List (Default)
 ```
 Get-MgGroupTeamPrimaryChannelMessageReplyHostedContent -ChatMessageId <String> -ChatMessageId1 <String>
  -GroupId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>]
@@ -20,69 +23,46 @@ Get-MgGroupTeamPrimaryChannelMessageReplyHostedContent -ChatMessageId <String> -
  [<CommonParameters>]
 ```
 
-### Get3
+### Get1
 ```
 Get-MgGroupTeamPrimaryChannelMessageReplyHostedContent -ChatMessageHostedContentId <String>
  -ChatMessageId <String> -ChatMessageId1 <String> -GroupId <String> -OutFile <String> [-PassThru]
  [<CommonParameters>]
 ```
 
-### Get2
+### Get
 ```
 Get-MgGroupTeamPrimaryChannelMessageReplyHostedContent -ChatMessageHostedContentId <String>
  -ChatMessageId <String> -ChatMessageId1 <String> -GroupId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity3
+### GetViaIdentity1
 ```
 Get-MgGroupTeamPrimaryChannelMessageReplyHostedContent -InputObject <ITeamsIdentity> -OutFile <String>
  [-PassThru] [<CommonParameters>]
 ```
 
-### GetViaIdentity2
+### GetViaIdentity
 ```
 Get-MgGroupTeamPrimaryChannelMessageReplyHostedContent -InputObject <ITeamsIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Content in a message hosted by Microsoft Teams - for example, images or code snippets.
+Retrieve the properties and relationships of chatMessageHostedContent object.
 
 ## EXAMPLES
 
-### Example 1: List hosted content for a channel message
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Teams
-
-Get-MgTeamChannelMessageHostedContent -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId
+{{ Add code here }}
 ```
 
-This example shows how to use the Get-MgGroupTeamPrimaryChannelMessageReplyHostedContent Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: List hosted content for reply to a channel message
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Teams
-
-Get-MgTeamChannelMessageReplyHostedContent -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -ChatMessageId1 $chatMessageId1
+{{ Add code here }}
 ```
-
-This example shows how to use the Get-MgGroupTeamPrimaryChannelMessageReplyHostedContent Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: List hosted content for message in a chat
-```powershell
-Import-Module Microsoft.Graph.Teams
-
-Get-MgChatMessageHostedContent -ChatId $chatId -ChatMessageId $chatMessageId
-```
-
-This example shows how to use the Get-MgGroupTeamPrimaryChannelMessageReplyHostedContent Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -91,7 +71,7 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -106,7 +86,7 @@ The unique identifier of chatMessageHostedContent
 
 ```yaml
 Type: String
-Parameter Sets: Get3, Get2
+Parameter Sets: Get1, Get
 Aliases:
 
 Required: True
@@ -121,7 +101,7 @@ The unique identifier of chatMessage
 
 ```yaml
 Type: String
-Parameter Sets: List1, Get3, Get2
+Parameter Sets: List, Get1, Get
 Aliases:
 
 Required: True
@@ -136,7 +116,7 @@ The unique identifier of chatMessage
 
 ```yaml
 Type: String
-Parameter Sets: List1, Get3, Get2
+Parameter Sets: List, Get1, Get
 Aliases:
 
 Required: True
@@ -152,7 +132,7 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: List
 Aliases: CV
 
 Required: False
@@ -167,7 +147,7 @@ Expand related entities
 
 ```yaml
 Type: String[]
-Parameter Sets: List1, Get2, GetViaIdentity2
+Parameter Sets: List, Get, GetViaIdentity
 Aliases: Expand
 
 Required: False
@@ -182,7 +162,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -197,7 +177,7 @@ The unique identifier of group
 
 ```yaml
 Type: String
-Parameter Sets: List1, Get3, Get2
+Parameter Sets: List, Get1, Get
 Aliases:
 
 Required: True
@@ -209,11 +189,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: GetViaIdentity3, GetViaIdentity2
+Parameter Sets: GetViaIdentity1, GetViaIdentity
 Aliases:
 
 Required: True
@@ -228,7 +208,7 @@ Path to write output file to
 
 ```yaml
 Type: String
-Parameter Sets: Get3, GetViaIdentity3
+Parameter Sets: Get1, GetViaIdentity1
 Aliases:
 
 Required: True
@@ -243,7 +223,7 @@ Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -258,7 +238,7 @@ Returns true when the command succeeds
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: Get3, GetViaIdentity3
+Parameter Sets: Get1, GetViaIdentity1
 Aliases:
 
 Required: False
@@ -273,7 +253,7 @@ Select properties to be returned
 
 ```yaml
 Type: String[]
-Parameter Sets: List1, Get2, GetViaIdentity2
+Parameter Sets: List, Get, GetViaIdentity
 Aliases: Select
 
 Required: False
@@ -288,7 +268,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -303,7 +283,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List1
+Parameter Sets: List
 Aliases: OrderBy
 
 Required: False
@@ -318,7 +298,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Parameter Sets: List
 Aliases: Limit
 
 Required: False
@@ -333,7 +313,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -362,7 +342,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat
@@ -376,24 +356,18 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[OpenShiftChangeRequestId <String>]`: The unique identifier of openShiftChangeRequest
   - `[OpenShiftId <String>]`: The unique identifier of openShift
   - `[PinnedChatMessageInfoId <String>]`: The unique identifier of pinnedChatMessageInfo
-  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SchedulingGroupId <String>]`: The unique identifier of schedulingGroup
   - `[SharedWithChannelTeamInfoId <String>]`: The unique identifier of sharedWithChannelTeamInfo
   - `[ShiftId <String>]`: The unique identifier of shift
   - `[SwapShiftsChangeRequestId <String>]`: The unique identifier of swapShiftsChangeRequest
   - `[TeamId <String>]`: The unique identifier of team
-  - `[TeamTemplateDefinitionId <String>]`: The unique identifier of teamTemplateDefinition
-  - `[TeamTemplateId <String>]`: The unique identifier of teamTemplate
   - `[TeamsAppDefinitionId <String>]`: The unique identifier of teamsAppDefinition
   - `[TeamsAppId <String>]`: The unique identifier of teamsApp
   - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
   - `[TeamsAsyncOperationId <String>]`: The unique identifier of teamsAsyncOperation
   - `[TeamsTabId <String>]`: The unique identifier of teamsTab
-  - `[TeamworkDeviceId <String>]`: The unique identifier of teamworkDevice
-  - `[TeamworkDeviceOperationId <String>]`: The unique identifier of teamworkDeviceOperation
   - `[TeamworkTagId <String>]`: The unique identifier of teamworkTag
   - `[TeamworkTagMemberId <String>]`: The unique identifier of teamworkTagMember
-  - `[TimeCardId <String>]`: The unique identifier of timeCard
   - `[TimeOffId <String>]`: The unique identifier of timeOff
   - `[TimeOffReasonId <String>]`: The unique identifier of timeOffReason
   - `[TimeOffRequestId <String>]`: The unique identifier of timeOffRequest
@@ -402,3 +376,4 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgBetaGroupTeamPrimaryChannelMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamPrimaryChannelMessageReplyHostedContent?view=graph-powershell-beta)

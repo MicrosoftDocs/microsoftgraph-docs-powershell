@@ -1,15 +1,17 @@
 ---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/get-mgeducationclassmemberbyref
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassmemberbyref
 schema: 2.0.0
 ---
 
 # Get-MgEducationClassMemberByRef
 
 ## SYNOPSIS
-All users in the class.
-Nullable.
+Retrieves the educationUser members of an educationClass.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationClassMemberByRef](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassMemberByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -20,22 +22,17 @@ Get-MgEducationClassMemberByRef -EducationClassId <String> [-Filter <String>] [-
 ```
 
 ## DESCRIPTION
-All users in the class.
-Nullable.
+Retrieves the educationUser members of an educationClass.
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationClassMember -EducationClassId $educationClassId
+
 ```
-
-This example shows how to use the Get-MgEducationClassMemberByRef Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ## PARAMETERS
 
 ### -All
@@ -187,3 +184,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaEducationClassMemberByRef](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassMemberByRef?view=graph-powershell-beta)
+

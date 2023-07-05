@@ -1,7 +1,7 @@
 ---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/invoke-mgpreviewdriveitem
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgpreviewdriveitem
 schema: 2.0.0
 ---
 
@@ -10,31 +10,34 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action preview
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaPreviewDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaPreviewDriveItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
-### PreviewExpanded1 (Default)
+### PreviewExpanded (Default)
 ```
 Invoke-MgPreviewDriveItem -DriveId <String> -DriveItemId <String> [-AdditionalProperties <Hashtable>]
  [-Page <String>] [-Zoom <Double>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Preview1
+### Preview
 ```
 Invoke-MgPreviewDriveItem -DriveId <String> -DriveItemId <String>
- -BodyParameter <IPathsGw56D1DrivesDriveIdItemsDriveitemIdMicrosoftGraphPreviewPostRequestbodyContentApplicationJsonSchema1>
+ -BodyParameter <IPathsGw56D1DrivesDriveIdItemsDriveitemIdMicrosoftGraphPreviewPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### PreviewViaIdentityExpanded1
+### PreviewViaIdentityExpanded
 ```
 Invoke-MgPreviewDriveItem -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>] [-Page <String>]
  [-Zoom <Double>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### PreviewViaIdentity1
+### PreviewViaIdentity
 ```
 Invoke-MgPreviewDriveItem -InputObject <IFilesIdentity>
- -BodyParameter <IPathsGw56D1DrivesDriveIdItemsDriveitemIdMicrosoftGraphPreviewPostRequestbodyContentApplicationJsonSchema1>
+ -BodyParameter <IPathsGw56D1DrivesDriveIdItemsDriveitemIdMicrosoftGraphPreviewPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -43,6 +46,20 @@ Invoke action preview
 
 ## EXAMPLES
 
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -50,7 +67,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: PreviewExpanded1, PreviewViaIdentityExpanded1
+Parameter Sets: PreviewExpanded, PreviewViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -62,11 +79,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsGw56D1DrivesDriveIdItemsDriveitemIdMicrosoftGraphPreviewPostRequestbodyContentApplicationJsonSchema1
-Parameter Sets: Preview1, PreviewViaIdentity1
+Type: IPathsGw56D1DrivesDriveIdItemsDriveitemIdMicrosoftGraphPreviewPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Preview, PreviewViaIdentity
 Aliases:
 
 Required: True
@@ -81,7 +98,7 @@ The unique identifier of drive
 
 ```yaml
 Type: String
-Parameter Sets: PreviewExpanded1, Preview1
+Parameter Sets: PreviewExpanded, Preview
 Aliases:
 
 Required: True
@@ -96,7 +113,7 @@ The unique identifier of driveItem
 
 ```yaml
 Type: String
-Parameter Sets: PreviewExpanded1, Preview1
+Parameter Sets: PreviewExpanded, Preview
 Aliases:
 
 Required: True
@@ -108,11 +125,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IFilesIdentity
-Parameter Sets: PreviewViaIdentityExpanded1, PreviewViaIdentity1
+Parameter Sets: PreviewViaIdentityExpanded, PreviewViaIdentity
 Aliases:
 
 Required: True
@@ -127,7 +144,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: PreviewExpanded1, PreviewViaIdentityExpanded1
+Parameter Sets: PreviewExpanded, PreviewViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -142,7 +159,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: Double
-Parameter Sets: PreviewExpanded1, PreviewViaIdentityExpanded1
+Parameter Sets: PreviewExpanded, PreviewViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -189,7 +206,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-### Microsoft.Graph.PowerShell.Models.IPathsGw56D1DrivesDriveIdItemsDriveitemIdMicrosoftGraphPreviewPostRequestbodyContentApplicationJsonSchema1
+### Microsoft.Graph.PowerShell.Models.IPathsGw56D1DrivesDriveIdItemsDriveitemIdMicrosoftGraphPreviewPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemPreviewInfo
@@ -202,12 +219,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsGw56D1DrivesDriveIdItemsDriveitemIdMicrosoftGraphPreviewPostRequestbodyContentApplicationJsonSchema1>`: .
+`BODYPARAMETER <IPathsGw56D1DrivesDriveIdItemsDriveitemIdMicrosoftGraphPreviewPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Page <String>]`: 
   - `[Zoom <Double?>]`: 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+`INPUTOBJECT <IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType
@@ -234,3 +251,4 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgBetaPreviewDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaPreviewDriveItem?view=graph-powershell-beta)

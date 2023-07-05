@@ -1,14 +1,17 @@
 ---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/invoke-mgcheckindriveroot
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgcheckindriveroot
 schema: 2.0.0
 ---
 
 # Invoke-MgCheckinDriveRoot
 
 ## SYNOPSIS
-Invoke action checkin
+Check in a checked out **driveItem** resource, which makes the version of the document available to others.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaCheckinDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaCheckinDriveRoot?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -21,7 +24,7 @@ Invoke-MgCheckinDriveRoot -DriveId <String> [-AdditionalProperties <Hashtable>] 
 ### Checkin
 ```
 Invoke-MgCheckinDriveRoot -DriveId <String>
- -BodyParameter <IPathsW65Kj4DrivesDriveIdRootMicrosoftGraphCheckinPostRequestbodyContentApplicationJsonSchema>
+ -Body <IPathsW65Kj4DrivesDriveIdRootMicrosoftGraphCheckinPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -39,9 +42,23 @@ Invoke-MgCheckinDriveRoot -InputObject <IFilesIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action checkin
+Check in a checked out **driveItem** resource, which makes the version of the document available to others.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -60,13 +77,29 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -BodyParameter
+### -Body
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
 Type: IPathsW65Kj4DrivesDriveIdRootMicrosoftGraphCheckinPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Checkin, CheckinViaIdentity
+Parameter Sets: Checkin
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -BodyParameter
+.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+```yaml
+Type: IPathsW65Kj4DrivesDriveIdRootMicrosoftGraphCheckinPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: CheckinViaIdentity
 Aliases:
 
 Required: True
@@ -123,7 +156,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IFilesIdentity
@@ -202,12 +235,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsW65Kj4DrivesDriveIdRootMicrosoftGraphCheckinPostRequestbodyContentApplicationJsonSchema>`: .
+`BODY <IPathsW65Kj4DrivesDriveIdRootMicrosoftGraphCheckinPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CheckInAs <String>]`: 
   - `[Comment <String>]`: 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+`BODYPARAMETER <IPathsW65Kj4DrivesDriveIdRootMicrosoftGraphCheckinPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[CheckInAs <String>]`: 
+  - `[Comment <String>]`: 
+
+`INPUTOBJECT <IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType
@@ -234,3 +272,4 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgBetaCheckinDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaCheckinDriveRoot?view=graph-powershell-beta)

@@ -1,7 +1,7 @@
 ---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mgteammessage
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteammessage
 schema: 2.0.0
 ---
 
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function getAllMessages
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamMessage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -21,6 +24,20 @@ Get-MgTeamMessage [-Count] [-Filter <String>] [-Property <String[]>] [-Search <S
 Invoke function getAllMessages
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -142,3 +159,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaTeamMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamMessage?view=graph-powershell-beta)

@@ -1,7 +1,7 @@
 ---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementreportdevicewithoutcompliancepolicyreport
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementreportdevicewithoutcompliancepolicyreport
 schema: 2.0.0
 ---
 
@@ -10,9 +10,12 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action getDevicesWithoutCompliancePolicyReport
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementReportDeviceWithoutCompliancePolicyReport](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Get-MgBetaDeviceManagementReportDeviceWithoutCompliancePolicyReport?view=graph-powershell-beta)
+
 ## SYNTAX
 
-### GetExpanded1 (Default)
+### GetExpanded (Default)
 ```
 Get-MgDeviceManagementReportDeviceWithoutCompliancePolicyReport -OutFile <String>
  [-AdditionalProperties <Hashtable>] [-Filter <String>] [-GroupBy <String[]>] [-Name <String>]
@@ -20,7 +23,7 @@ Get-MgDeviceManagementReportDeviceWithoutCompliancePolicyReport -OutFile <String
  [-Top <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Get1
+### Get
 ```
 Get-MgDeviceManagementReportDeviceWithoutCompliancePolicyReport -OutFile <String>
  -BodyParameter <IPaths1RxowymDevicemanagementReportsMicrosoftGraphGetdeviceswithoutcompliancepolicyreportPostRequestbodyContentApplicationJsonSchema>
@@ -32,6 +35,16 @@ Invoke action getDevicesWithoutCompliancePolicyReport
 
 ## EXAMPLES
 
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -39,7 +52,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: GetExpanded1
+Parameter Sets: GetExpanded
 Aliases:
 
 Required: False
@@ -51,11 +64,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths1RxowymDevicemanagementReportsMicrosoftGraphGetdeviceswithoutcompliancepolicyreportPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Get1
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -70,7 +83,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: GetExpanded1
+Parameter Sets: GetExpanded
 Aliases:
 
 Required: False
@@ -85,7 +98,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String[]
-Parameter Sets: GetExpanded1
+Parameter Sets: GetExpanded
 Aliases:
 
 Required: False
@@ -100,7 +113,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: GetExpanded1
+Parameter Sets: GetExpanded
 Aliases:
 
 Required: False
@@ -145,7 +158,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String[]
-Parameter Sets: GetExpanded1
+Parameter Sets: GetExpanded
 Aliases: Select
 
 Required: False
@@ -160,7 +173,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: GetExpanded1
+Parameter Sets: GetExpanded
 Aliases:
 
 Required: False
@@ -175,7 +188,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: GetExpanded1
+Parameter Sets: GetExpanded
 Aliases:
 
 Required: False
@@ -190,7 +203,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String[]
-Parameter Sets: GetExpanded1
+Parameter Sets: GetExpanded
 Aliases: OrderBy
 
 Required: False
@@ -205,7 +218,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: Int32
-Parameter Sets: GetExpanded1
+Parameter Sets: GetExpanded
 Aliases: Limit
 
 Required: False
@@ -251,7 +264,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: Int32
-Parameter Sets: GetExpanded1
+Parameter Sets: GetExpanded
 Aliases:
 
 Required: False
@@ -279,7 +292,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1RxowymDevicemanagementReportsMicrosoftGraphGetdeviceswithoutcompliancepolicyreportPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1RxowymDevicemanagementReportsMicrosoftGraphGetdeviceswithoutcompliancepolicyreportPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Filter <String>]`: 
   - `[GroupBy <String[]>]`: 
@@ -292,3 +305,4 @@ BODYPARAMETER `<IPaths1RxowymDevicemanagementReportsMicrosoftGraphGetdeviceswith
   - `[Top <Int32?>]`: 
 
 ## RELATED LINKS
+[Get-MgBetaDeviceManagementReportDeviceWithoutCompliancePolicyReport](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Get-MgBetaDeviceManagementReportDeviceWithoutCompliancePolicyReport?view=graph-powershell-beta)

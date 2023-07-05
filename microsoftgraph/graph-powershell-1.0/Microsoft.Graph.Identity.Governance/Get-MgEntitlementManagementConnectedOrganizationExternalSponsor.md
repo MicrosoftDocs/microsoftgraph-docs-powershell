@@ -1,14 +1,18 @@
 ---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementconnectedorganizationexternalsponsor
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementconnectedorganizationexternalsponsor
 schema: 2.0.0
 ---
 
 # Get-MgEntitlementManagementConnectedOrganizationExternalSponsor
 
 ## SYNOPSIS
-Get externalSponsors from identityGovernance
+Retrieve a list of a connectedOrganization's external sponsors.
+The external sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEntitlementManagementConnectedOrganizationExternalSponsor](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementConnectedOrganizationExternalSponsor?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -19,9 +23,24 @@ Get-MgEntitlementManagementConnectedOrganizationExternalSponsor -ConnectedOrgani
 ```
 
 ## DESCRIPTION
-Get externalSponsors from identityGovernance
+Retrieve a list of a connectedOrganization's external sponsors.
+The external sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -204,3 +223,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaEntitlementManagementConnectedOrganizationExternalSponsor](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementConnectedOrganizationExternalSponsor?view=graph-powershell-beta)

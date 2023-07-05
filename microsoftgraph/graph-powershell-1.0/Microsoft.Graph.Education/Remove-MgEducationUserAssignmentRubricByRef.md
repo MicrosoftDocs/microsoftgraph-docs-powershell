@@ -1,33 +1,52 @@
 ---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/remove-mgeducationuserassignmentrubricbyref
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationuserassignmentrubricbyref
 schema: 2.0.0
 ---
 
 # Remove-MgEducationUserAssignmentRubricByRef
 
 ## SYNOPSIS
-Delete ref of navigation property rubric for education
+Remove an educationRubric from an educationAssignment.
+This method does not delete the rubric itself and can only be performed by teachers.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaEducationUserAssignmentRubricByRef](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationUserAssignmentRubricByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
-### Delete1 (Default)
+### Delete (Default)
 ```
 Remove-MgEducationUserAssignmentRubricByRef -EducationAssignmentId <String> -EducationUserId <String>
  [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity1
+### DeleteViaIdentity
 ```
 Remove-MgEducationUserAssignmentRubricByRef -InputObject <IEducationIdentity> [-IfMatch <String>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete ref of navigation property rubric for education
+Remove an educationRubric from an educationAssignment.
+This method does not delete the rubric itself and can only be performed by teachers.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -36,7 +55,7 @@ The unique identifier of educationAssignment
 
 ```yaml
 Type: String
-Parameter Sets: Delete1
+Parameter Sets: Delete
 Aliases:
 
 Required: True
@@ -51,7 +70,7 @@ The unique identifier of educationUser
 
 ```yaml
 Type: String
-Parameter Sets: Delete1
+Parameter Sets: Delete
 Aliases:
 
 Required: True
@@ -78,11 +97,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IEducationIdentity
-Parameter Sets: DeleteViaIdentity1
+Parameter Sets: DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -156,7 +175,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+`INPUTOBJECT <IEducationIdentity>`: Identity Parameter
   - `[EducationAssignmentId <String>]`: The unique identifier of educationAssignment
   - `[EducationAssignmentResourceId <String>]`: The unique identifier of educationAssignmentResource
   - `[EducationCategoryId <String>]`: The unique identifier of educationCategory
@@ -166,8 +185,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationSchoolId <String>]`: The unique identifier of educationSchool
   - `[EducationSubmissionId <String>]`: The unique identifier of educationSubmission
   - `[EducationSubmissionResourceId <String>]`: The unique identifier of educationSubmissionResource
-  - `[EducationSynchronizationErrorId <String>]`: The unique identifier of educationSynchronizationError
-  - `[EducationSynchronizationProfileId <String>]`: The unique identifier of educationSynchronizationProfile
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Remove-MgBetaEducationUserAssignmentRubricByRef](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationUserAssignmentRubricByRef?view=graph-powershell-beta)

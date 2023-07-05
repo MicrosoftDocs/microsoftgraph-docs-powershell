@@ -1,14 +1,17 @@
 ---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgpolicyidentitysecuritydefaultenforcementpolicy
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyidentitysecuritydefaultenforcementpolicy
 schema: 2.0.0
 ---
 
 # Get-MgPolicyIdentitySecurityDefaultEnforcementPolicy
 
 ## SYNOPSIS
-The policy that represents the security defaults that protect against common attacks.
+Retrieve the properties of an identitySecurityDefaultsEnforcementPolicy object.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyIdentitySecurityDefaultEnforcementPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyIdentitySecurityDefaultEnforcementPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -18,19 +21,17 @@ Get-MgPolicyIdentitySecurityDefaultEnforcementPolicy [-ExpandProperty <String[]>
 ```
 
 ## DESCRIPTION
-The policy that represents the security defaults that protect against common attacks.
+Retrieve the properties of an identitySecurityDefaultsEnforcementPolicy object.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgPolicyIdentitySecurityDefaultEnforcementPolicy Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
+
 Get-MgPolicyIdentitySecurityDefaultEnforcementPolicy
+
 ```
-
-This example shows how to use the Get-MgPolicyIdentitySecurityDefaultEnforcementPolicy Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -76,3 +77,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaPolicyIdentitySecurityDefaultEnforcementPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyIdentitySecurityDefaultEnforcementPolicy?view=graph-powershell-beta)
+

@@ -1,7 +1,7 @@
 ---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/new-mgdriverootlistitemversion
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriverootlistitemversion
 schema: 2.0.0
 ---
 
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to versions for drives
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDriveRootListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveRootListItemVersion?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -44,6 +47,20 @@ Create new navigation property to versions for drives
 
 ## EXAMPLES
 
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -63,7 +80,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 listItemVersion
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphListItemVersion
@@ -125,7 +142,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IFilesIdentity
@@ -141,7 +158,7 @@ Accept wildcard characters: False
 
 ### -LastModifiedBy
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBY properties and create a hash table.
+To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet
@@ -173,7 +190,7 @@ Accept wildcard characters: False
 
 ### -Publication
 publicationFacet
-To construct, please use Get-Help -Online and see NOTES section for PUBLICATION properties and create a hash table.
+To construct, see NOTES section for PUBLICATION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPublicationFacet
@@ -237,7 +254,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphListItemVersion>`: listItemVersion
+`BODYPARAMETER <IMicrosoftGraphListItemVersion>`: listItemVersion
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -257,7 +274,7 @@ BODYPARAMETER `<IMicrosoftGraphListItemVersion>`: listItemVersion
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+`INPUTOBJECT <IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType
@@ -283,7 +300,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+`LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -292,9 +309,10 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-PUBLICATION `<IMicrosoftGraphPublicationFacet>`: publicationFacet
+`PUBLICATION <IMicrosoftGraphPublicationFacet>`: publicationFacet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Level <String>]`: The state of publication for this document. Either published or checkout. Read-only.
   - `[VersionId <String>]`: The unique identifier for the version that is visible to the current caller. Read-only.
 
 ## RELATED LINKS
+[New-MgBetaDriveRootListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveRootListItemVersion?view=graph-powershell-beta)

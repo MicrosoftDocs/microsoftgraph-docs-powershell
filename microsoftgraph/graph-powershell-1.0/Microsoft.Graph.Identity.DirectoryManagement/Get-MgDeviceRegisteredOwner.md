@@ -1,7 +1,7 @@
 ---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdeviceregisteredowner
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdeviceregisteredowner
 schema: 2.0.0
 ---
 
@@ -13,6 +13,9 @@ The registered owner is set at the time of registration.
 Read-only.
 Nullable.
 Supports $expand.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceRegisteredOwner](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDeviceRegisteredOwner?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,14 +34,11 @@ Supports $expand.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgDeviceRegisteredOwner Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 Get-MgDeviceRegisteredOwner -DeviceId $deviceId
 ```
-
-This example shows how to use the Get-MgDeviceRegisteredOwner Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -237,3 +237,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaDeviceRegisteredOwner](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDeviceRegisteredOwner?view=graph-powershell-beta)

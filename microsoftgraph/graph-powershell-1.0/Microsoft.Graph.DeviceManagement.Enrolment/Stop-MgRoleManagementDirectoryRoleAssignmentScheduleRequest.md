@@ -10,15 +10,18 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action cancel
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Stop-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Stop-MgRoleManagementDirectoryRoleAssignmentScheduleRequest?view=graph-powershell-beta)
+
 ## SYNTAX
 
-### Cancel1 (Default)
+### Cancel (Default)
 ```
 Stop-MgRoleManagementDirectoryRoleAssignmentScheduleRequest -UnifiedRoleAssignmentScheduleRequestId <String>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CancelViaIdentity1
+### CancelViaIdentity
 ```
 Stop-MgRoleManagementDirectoryRoleAssignmentScheduleRequest -InputObject <IDeviceManagementEnrolmentIdentity>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -46,7 +49,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IDeviceManagementEnrolmentIdentity
-Parameter Sets: CancelViaIdentity1
+Parameter Sets: CancelViaIdentity
 Aliases:
 
 Required: True
@@ -76,7 +79,7 @@ The unique identifier of unifiedRoleAssignmentScheduleRequest
 
 ```yaml
 Type: String
-Parameter Sets: Cancel1
+Parameter Sets: Cancel
 Aliases:
 
 Required: True
@@ -173,3 +176,4 @@ INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[Stop-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Stop-MgRoleManagementDirectoryRoleAssignmentScheduleRequest?view=graph-powershell-beta)

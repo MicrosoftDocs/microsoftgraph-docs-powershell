@@ -1,93 +1,60 @@
 ---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/new-mggroupconversationthreadpostattachmentuploadsession
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupconversationthreadpostattachment
 schema: 2.0.0
 ---
 
-# New-MgGroupConversationThreadPostAttachmentUploadSession
+# New-MgGroupConversationThreadPostAttachment
 
 ## SYNOPSIS
-Invoke action createUploadSession
+Create new navigation property to attachments for groups
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupConversationThreadPostAttachmentUploadSession](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupConversationThreadPostAttachmentUploadSession?view=graph-powershell-beta)
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
-New-MgGroupConversationThreadPostAttachmentUploadSession -ConversationId <String>
- -ConversationThreadId <String> -GroupId <String> -PostId <String> [-AdditionalProperties <Hashtable>]
- [-AttachmentItem <IMicrosoftGraphAttachmentItem>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create1
-```
-New-MgGroupConversationThreadPostAttachmentUploadSession -ConversationId <String>
- -ConversationThreadId <String> -GroupId <String> -PostId <String>
- -BodyParameter <IPaths151XiayGroupsGroupIdConversationsConversationIdThreadsConversationthreadIdPostsPostIdAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded1
-```
-New-MgGroupConversationThreadPostAttachmentUploadSession -InputObject <IGroupsIdentity>
- [-AdditionalProperties <Hashtable>] [-AttachmentItem <IMicrosoftGraphAttachmentItem>] [-WhatIf] [-Confirm]
+New-MgGroupConversationThreadPostAttachment -ConversationId <String> -ConversationThreadId <String>
+ -GroupId <String> -PostId <String> [-AdditionalProperties <Hashtable>] [-ContentType <String>] [-Id <String>]
+ [-IsInline] [-LastModifiedDateTime <DateTime>] [-Name <String>] [-Size <Int32>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### CreateViaIdentity1
+### Create
 ```
-New-MgGroupConversationThreadPostAttachmentUploadSession -InputObject <IGroupsIdentity>
- -BodyParameter <IPaths151XiayGroupsGroupIdConversationsConversationIdThreadsConversationthreadIdPostsPostIdAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgGroupConversationThreadPostAttachment -ConversationId <String> -ConversationThreadId <String>
+ -GroupId <String> -PostId <String> -BodyParameter <IMicrosoftGraphAttachment> [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgGroupConversationThreadPostAttachment -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
+ [-ContentType <String>] [-Id <String>] [-IsInline] [-LastModifiedDateTime <DateTime>] [-Name <String>]
+ [-Size <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgGroupConversationThreadPostAttachment -InputObject <IGroupsIdentity>
+ -BodyParameter <IMicrosoftGraphAttachment> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke action createUploadSession
+Create new navigation property to attachments for groups
 
 ## EXAMPLES
 
-### Example 1: Create an upload session to add a large attachment to a draft message
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Users.Actions
+Import-Module Microsoft.Graph.Groups
 
-$params = @{
-	AttachmentItem = @{
-		AttachmentType = "file"
-		Name = "flower"
-		Size = 3483322
-	}
-}
+Get-MgGroupThreadPostAttachment -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId
 
-# A UPN can also be used as -UserId.
-New-MgUserMessageAttachmentUploadSession -UserId $userId -MessageId $messageId -BodyParameter $params
 ```
-
-This example shows how to use the New-MgGroupConversationThreadPostAttachmentUploadSession Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Create an upload session to add a large in-line attachment to a draft message
-```powershell
-Import-Module Microsoft.Graph.Users.Actions
-
-$params = @{
-	AttachmentItem = @{
-		AttachmentType = "file"
-		Name = "scenary"
-		Size = 7208534
-		IsInline = $true
-		ContentId = "my_inline_picture"
-	}
-}
-
-# A UPN can also be used as -UserId.
-New-MgUserMessageAttachmentUploadSession -UserId $userId -MessageId $messageId -BodyParameter $params
-```
-
-This example shows how to use the New-MgGroupConversationThreadPostAttachmentUploadSession Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -95,23 +62,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -AttachmentItem
-attachmentItem
-To construct, please use Get-Help -Online and see NOTES section for ATTACHMENTITEM properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphAttachmentItem
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -122,12 +73,12 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+attachment
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths151XiayGroupsGroupIdConversationsConversationIdThreadsConversationthreadIdPostsPostIdAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Create1, CreateViaIdentity1
+Type: IMicrosoftGraphAttachment
+Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -137,12 +88,27 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ContentType
+The MIME type.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ConversationId
 The unique identifier of conversation
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, Create1
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -157,7 +123,7 @@ The unique identifier of conversationThread
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, Create1
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -172,7 +138,7 @@ The unique identifier of group
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, Create1
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -182,13 +148,29 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Id
+The unique idenfier for an entity.
+Read-only.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IGroupsIdentity
-Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -198,15 +180,76 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -IsInline
+true if the attachment is an inline attachment; otherwise, false.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -LastModifiedDateTime
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+
+```yaml
+Type: DateTime
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Name
+The attachment's file name.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -PostId
 The unique identifier of post
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, Create1
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Size
+The length of the attachment in bytes.
+
+```yaml
+Type: Int32
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -250,10 +293,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths151XiayGroupsGroupIdConversationsConversationIdThreadsConversationthreadIdPostsPostIdAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttachment
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUploadSession
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttachment
 ## NOTES
 
 ALIASES
@@ -263,74 +306,52 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ATTACHMENTITEM `<IMicrosoftGraphAttachmentItem>`: attachmentItem
+`BODYPARAMETER <IMicrosoftGraphAttachment>`: attachment
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AttachmentType <String>]`: attachmentType
-  - `[ContentId <String>]`: The CID or Content-Id of the attachment for referencing in case of in-line attachments using <img src='cid:contentId'> tag in HTML messages. Optional.
-  - `[ContentType <String>]`: The nature of the data in the attachment. Optional.
-  - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false. Optional.
-  - `[Name <String>]`: The display name of the attachment. This can be a descriptive string and does not have to be the actual file name. Required.
-  - `[Size <Int64?>]`: The length of the attachment in bytes. Required.
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[ContentType <String>]`: The MIME type.
+  - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
+  - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[Name <String>]`: The attachment's file name.
+  - `[Size <Int32?>]`: The length of the attachment in bytes.
 
-BODYPARAMETER `<IPaths151XiayGroupsGroupIdConversationsConversationIdThreadsConversationthreadIdPostsPostIdAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AttachmentItem <IMicrosoftGraphAttachmentItem>]`: attachmentItem
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[AttachmentType <String>]`: attachmentType
-    - `[ContentId <String>]`: The CID or Content-Id of the attachment for referencing in case of in-line attachments using <img src='cid:contentId'> tag in HTML messages. Optional.
-    - `[ContentType <String>]`: The nature of the data in the attachment. Optional.
-    - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false. Optional.
-    - `[Name <String>]`: The display name of the attachment. This can be a descriptive string and does not have to be the actual file name. Required.
-    - `[Size <Int64?>]`: The length of the attachment in bytes. Required.
-
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+`INPUTOBJECT <IGroupsIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[ConversationId <String>]`: The unique identifier of conversation
   - `[ConversationThreadId <String>]`: The unique identifier of conversationThread
   - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[DirectorySettingId <String>]`: The unique identifier of directorySetting
   - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
   - `[DriveId <String>]`: The unique identifier of drive
   - `[DriveItemId <String>]`: The unique identifier of driveItem
   - `[DriveItemVersionId <String>]`: The unique identifier of driveItemVersion
   - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
-  - `[EndpointId <String>]`: The unique identifier of endpoint
   - `[EventId <String>]`: The unique identifier of event
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[GroupId <String>]`: The unique identifier of group
   - `[GroupLifecyclePolicyId <String>]`: The unique identifier of groupLifecyclePolicy
   - `[GroupSettingId <String>]`: The unique identifier of groupSetting
-  - `[HorizontalSectionColumnId <String>]`: The unique identifier of horizontalSectionColumn
-  - `[HorizontalSectionId <String>]`: The unique identifier of horizontalSection
+  - `[GroupSettingTemplateId <String>]`: The unique identifier of groupSettingTemplate
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
   - `[Interval <String>]`: Usage: interval='{interval}'
   - `[ListId <String>]`: The unique identifier of list
-  - `[ListId1 <String>]`: Usage: listId='{listId}'
   - `[ListItemId <String>]`: The unique identifier of listItem
   - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
-  - `[MentionId <String>]`: The unique identifier of mention
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
   - `[NotebookId <String>]`: The unique identifier of notebook
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
   - `[Path <String>]`: Usage: path='{path}'
   - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket
-  - `[PlannerPlanId <String>]`: The unique identifier of plannerPlan
   - `[PostId <String>]`: The unique identifier of post
   - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
   - `[Q <String>]`: Usage: q='{q}'
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
-  - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
   - `[SiteId <String>]`: The unique identifier of site
-  - `[SitePageId <String>]`: The unique identifier of sitePage
   - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[Token <String>]`: Usage: token='{token}'
   - `[User <String>]`: Usage: User='{User}'
-  - `[UserId <String>]`: The unique identifier of user
-  - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[New-MgBetaGroupConversationThreadPostAttachmentUploadSession](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupConversationThreadPostAttachmentUploadSession?view=graph-powershell-beta)
+

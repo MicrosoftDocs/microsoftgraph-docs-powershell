@@ -1,45 +1,54 @@
 ---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/invoke-mgunsubmiteducationmeassignmentsubmission
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/invoke-mgunsubmiteducationmeassignmentsubmission
 schema: 2.0.0
 ---
 
 # Invoke-MgUnsubmitEducationMeAssignmentSubmission
 
 ## SYNOPSIS
-Invoke action unsubmit
+Indicate that a student wants to work on the submission of the assignment after it was turned in.
+Only teachers, students, and applications with application permissions can perform this operation.
+This method changes the status of the submission from `submitted` to `working`.
+During the submit process, all the resources are copied from **submittedResources** to  **workingResources**.
+The teacher will be looking at the working resources list for grading.
+A teacher can also unsubmit a student's assignment on their behalf.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaUnsubmitEducationMeAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Invoke-MgBetaUnsubmitEducationMeAssignmentSubmission?view=graph-powershell-beta)
 
 ## SYNTAX
 
-### Unsubmit1 (Default)
+### Unsubmit (Default)
 ```
 Invoke-MgUnsubmitEducationMeAssignmentSubmission -EducationAssignmentId <String>
  -EducationSubmissionId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UnsubmitViaIdentity1
+### UnsubmitViaIdentity
 ```
 Invoke-MgUnsubmitEducationMeAssignmentSubmission -InputObject <IEducationIdentity> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke action unsubmit
+Indicate that a student wants to work on the submission of the assignment after it was turned in.
+Only teachers, students, and applications with application permissions can perform this operation.
+This method changes the status of the submission from `submitted` to `working`.
+During the submit process, all the resources are copied from **submittedResources** to  **workingResources**.
+The teacher will be looking at the working resources list for grading.
+A teacher can also unsubmit a student's assignment on their behalf.
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Education
 
 Invoke-MgUnsubmitEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
+
 ```
-
-This example shows how to use the Invoke-MgUnsubmitEducationMeAssignmentSubmission Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ## PARAMETERS
 
 ### -EducationAssignmentId
@@ -47,7 +56,7 @@ The unique identifier of educationAssignment
 
 ```yaml
 Type: String
-Parameter Sets: Unsubmit1
+Parameter Sets: Unsubmit
 Aliases:
 
 Required: True
@@ -62,7 +71,7 @@ The unique identifier of educationSubmission
 
 ```yaml
 Type: String
-Parameter Sets: Unsubmit1
+Parameter Sets: Unsubmit
 Aliases:
 
 Required: True
@@ -74,11 +83,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IEducationIdentity
-Parameter Sets: UnsubmitViaIdentity1
+Parameter Sets: UnsubmitViaIdentity
 Aliases:
 
 Required: True
@@ -127,7 +136,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationSubmission1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationSubmission
 ## NOTES
 
 ALIASES
@@ -137,7 +146,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+`INPUTOBJECT <IEducationIdentity>`: Identity Parameter
   - `[EducationAssignmentId <String>]`: The unique identifier of educationAssignment
   - `[EducationAssignmentResourceId <String>]`: The unique identifier of educationAssignmentResource
   - `[EducationCategoryId <String>]`: The unique identifier of educationCategory
@@ -147,8 +156,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationSchoolId <String>]`: The unique identifier of educationSchool
   - `[EducationSubmissionId <String>]`: The unique identifier of educationSubmission
   - `[EducationSubmissionResourceId <String>]`: The unique identifier of educationSubmissionResource
-  - `[EducationSynchronizationErrorId <String>]`: The unique identifier of educationSynchronizationError
-  - `[EducationSynchronizationProfileId <String>]`: The unique identifier of educationSynchronizationProfile
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Invoke-MgBetaUnsubmitEducationMeAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Invoke-MgBetaUnsubmitEducationMeAssignmentSubmission?view=graph-powershell-beta)
+

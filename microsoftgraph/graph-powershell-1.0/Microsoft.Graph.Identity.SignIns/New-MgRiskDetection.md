@@ -1,7 +1,7 @@
 ---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgriskdetection
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgriskdetection
 schema: 2.0.0
 ---
 
@@ -10,9 +10,12 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to riskDetections for identityProtection
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaRiskDetection](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaRiskDetection?view=graph-powershell-beta)
+
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
 New-MgRiskDetection [-Activity <String>] [-ActivityDateTime <DateTime>] [-AdditionalInfo <String>]
  [-AdditionalProperties <Hashtable>] [-CorrelationId <String>] [-DetectedDateTime <DateTime>]
@@ -23,9 +26,9 @@ New-MgRiskDetection [-Activity <String>] [-ActivityDateTime <DateTime>] [-Additi
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
-New-MgRiskDetection -BodyParameter <IMicrosoftGraphRiskDetection1> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgRiskDetection -BodyParameter <IMicrosoftGraphRiskDetection> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -33,17 +36,13 @@ Create new navigation property to riskDetections for identityProtection
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgRiskDetection
+
 ```
-
-This example shows how to use the New-MgRiskDetection Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ## PARAMETERS
 
 ### -Activity
@@ -51,7 +50,7 @@ activityType
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -68,7 +67,7 @@ For example, midnight UTC on Jan 1, 2014 is look like this: 2014-01-01T00:00:00Z
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -86,7 +85,7 @@ For more information about riskReasons and possible values, see riskReasons valu
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -101,7 +100,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -113,11 +112,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 riskDetection
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRiskDetection1
-Parameter Sets: Create1
+Type: IMicrosoftGraphRiskDetection
+Parameter Sets: Create
 Aliases:
 
 Required: True
@@ -133,7 +132,7 @@ This property is null if the risk detection is not associated with a sign-in.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -150,7 +149,7 @@ For example, midnight UTC on Jan 1, 2014 looks like this: 2014-01-01T00:00:00Z
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -165,7 +164,7 @@ riskDetectionTimingType
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -181,7 +180,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -196,7 +195,7 @@ Provides the IP address of the client from where the risk occurred.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -213,7 +212,7 @@ For example, midnight UTC on Jan 1, 2014 is look like this: 2014-01-01T00:00:00Z
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -225,11 +224,11 @@ Accept wildcard characters: False
 
 ### -Location
 signInLocation
-To construct, please use Get-Help -Online and see NOTES section for LOCATION properties and create a hash table.
+To construct, see NOTES section for LOCATION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSignInLocation
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -245,7 +244,7 @@ This property is null if the risk detection is not associated with a sign-in.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -260,7 +259,7 @@ riskDetail
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -278,7 +277,7 @@ For more information about each value, see riskEventType values.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -293,7 +292,7 @@ riskLevel
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -308,7 +307,7 @@ riskState
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -324,7 +323,7 @@ For example, activeDirectory.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -339,7 +338,7 @@ tokenIssuerType
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -354,7 +353,7 @@ The user principal name (UPN) of the user.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -369,7 +368,7 @@ Unique ID of the user.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -384,7 +383,7 @@ The user principal name (UPN) of the user.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -430,10 +429,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRiskDetection1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRiskDetection
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRiskDetection1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRiskDetection
 ## NOTES
 
 ALIASES
@@ -443,7 +442,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphRiskDetection1>`: riskDetection
+`BODYPARAMETER <IMicrosoftGraphRiskDetection>`: riskDetection
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Activity <String>]`: activityType
@@ -475,7 +474,7 @@ BODYPARAMETER `<IMicrosoftGraphRiskDetection1>`: riskDetection
   - `[UserId <String>]`: Unique ID of the user.
   - `[UserPrincipalName <String>]`: The user principal name (UPN) of the user.
 
-LOCATION `<IMicrosoftGraphSignInLocation>`: signInLocation
+`LOCATION <IMicrosoftGraphSignInLocation>`: signInLocation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[City <String>]`: Provides the city where the sign-in originated. This is calculated using latitude/longitude information from the sign-in activity.
   - `[CountryOrRegion <String>]`: Provides the country code info (2 letter code) where the sign-in originated.  This is calculated using latitude/longitude information from the sign-in activity.
@@ -487,3 +486,5 @@ LOCATION `<IMicrosoftGraphSignInLocation>`: signInLocation
   - `[State <String>]`: Provides the State where the sign-in originated. This is calculated using latitude/longitude information from the sign-in activity.
 
 ## RELATED LINKS
+[New-MgBetaRiskDetection](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaRiskDetection?view=graph-powershell-beta)
+

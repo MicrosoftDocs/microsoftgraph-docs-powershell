@@ -1,18 +1,21 @@
 ---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/new-mgsitecolumn
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitecolumn
 schema: 2.0.0
 ---
 
 # New-MgSiteColumn
 
 ## SYNOPSIS
-Create new navigation property to columns for sites
+Create a column for a [site][site] with a request that specifies a [columnDefinition][columnDefinition].
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSiteColumn](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteColumn?view=graph-powershell-beta)
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
 New-MgSiteColumn -SiteId <String> [-AdditionalProperties <Hashtable>] [-Boolean <Hashtable>]
  [-Calculated <IMicrosoftGraphCalculatedColumn>] [-Choice <IMicrosoftGraphChoiceColumn>]
@@ -23,18 +26,18 @@ New-MgSiteColumn -SiteId <String> [-AdditionalProperties <Hashtable>] [-Boolean 
  [-IsReorderable] [-IsSealed] [-Lookup <IMicrosoftGraphLookupColumn>] [-Name <String>]
  [-Number <IMicrosoftGraphNumberColumn>] [-PersonOrGroup <IMicrosoftGraphPersonOrGroupColumn>]
  [-PropagateChanges] [-ReadOnly] [-Required] [-SourceColumn <IMicrosoftGraphColumnDefinition>]
- [-SourceContentType <IMicrosoftGraphContentTypeInfo>] [-Term <IMicrosoftGraphTermColumn1>]
+ [-SourceContentType <IMicrosoftGraphContentTypeInfo>] [-Term <IMicrosoftGraphTermColumn>]
  [-Text <IMicrosoftGraphTextColumn>] [-Thumbnail <Hashtable>] [-Type <String>]
  [-Validation <IMicrosoftGraphColumnValidation>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
 New-MgSiteColumn -SiteId <String> -BodyParameter <IMicrosoftGraphColumnDefinition> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded1
+### CreateViaIdentityExpanded
 ```
 New-MgSiteColumn -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>] [-Boolean <Hashtable>]
  [-Calculated <IMicrosoftGraphCalculatedColumn>] [-Choice <IMicrosoftGraphChoiceColumn>]
@@ -45,44 +48,43 @@ New-MgSiteColumn -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable
  [-IsReorderable] [-IsSealed] [-Lookup <IMicrosoftGraphLookupColumn>] [-Name <String>]
  [-Number <IMicrosoftGraphNumberColumn>] [-PersonOrGroup <IMicrosoftGraphPersonOrGroupColumn>]
  [-PropagateChanges] [-ReadOnly] [-Required] [-SourceColumn <IMicrosoftGraphColumnDefinition>]
- [-SourceContentType <IMicrosoftGraphContentTypeInfo>] [-Term <IMicrosoftGraphTermColumn1>]
+ [-SourceContentType <IMicrosoftGraphContentTypeInfo>] [-Term <IMicrosoftGraphTermColumn>]
  [-Text <IMicrosoftGraphTextColumn>] [-Thumbnail <Hashtable>] [-Type <String>]
  [-Validation <IMicrosoftGraphColumnValidation>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentity1
+### CreateViaIdentity
 ```
 New-MgSiteColumn -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphColumnDefinition> [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create new navigation property to columns for sites
+Create a column for a [site][site] with a request that specifies a [columnDefinition][columnDefinition].
 
 ## EXAMPLES
 
-### Example 1: Using the New-MgSiteColumn Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Sites
+
 $params = @{
-	Description = "test"
-	EnforceUniqueValues = $false
-	Hidden = $false
-	Indexed = $false
-	Name = "Title"
-	Text = @{
-		AllowMultipleLines = $false
-		AppendChangesToExistingText = $false
-		LinesForEditing = 0
-		MaxLength = 255
+	description = "test"
+	enforceUniqueValues = $false
+	hidden = $false
+	indexed = $false
+	name = "Title"
+	text = @{
+		allowMultipleLines = $false
+		appendChangesToExistingText = $false
+		linesForEditing = 0
+		maxLength = 255
 	}
 }
+
 New-MgSiteColumn -SiteId $siteId -BodyParameter $params
+
 ```
-
-This example shows how to use the New-MgSiteColumn Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -90,7 +92,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -102,11 +104,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 columnDefinition
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphColumnDefinition
-Parameter Sets: Create1, CreateViaIdentity1
+Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -121,7 +123,7 @@ booleanColumn
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -133,11 +135,11 @@ Accept wildcard characters: False
 
 ### -Calculated
 calculatedColumn
-To construct, please use Get-Help -Online and see NOTES section for CALCULATED properties and create a hash table.
+To construct, see NOTES section for CALCULATED properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphCalculatedColumn
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -149,11 +151,11 @@ Accept wildcard characters: False
 
 ### -Choice
 choiceColumn
-To construct, please use Get-Help -Online and see NOTES section for CHOICE properties and create a hash table.
+To construct, see NOTES section for CHOICE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphChoiceColumn
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -169,7 +171,7 @@ Helps organize related columns.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -184,7 +186,7 @@ contentApprovalStatusColumn
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -196,11 +198,11 @@ Accept wildcard characters: False
 
 ### -Currency
 currencyColumn
-To construct, please use Get-Help -Online and see NOTES section for CURRENCY properties and create a hash table.
+To construct, see NOTES section for CURRENCY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphCurrencyColumn
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -212,11 +214,11 @@ Accept wildcard characters: False
 
 ### -DateTime
 dateTimeColumn
-To construct, please use Get-Help -Online and see NOTES section for DATETIME properties and create a hash table.
+To construct, see NOTES section for DATETIME properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDateTimeColumn
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -228,11 +230,11 @@ Accept wildcard characters: False
 
 ### -DefaultValue
 defaultColumnValue
-To construct, please use Get-Help -Online and see NOTES section for DEFAULTVALUE properties and create a hash table.
+To construct, see NOTES section for DEFAULTVALUE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDefaultColumnValue
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -247,7 +249,7 @@ The user-facing description of the column.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -262,7 +264,7 @@ The user-facing name of the column.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -277,7 +279,7 @@ If true, no two list items may have the same value for this column.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -292,7 +294,7 @@ geolocationColumn
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -307,7 +309,7 @@ Specifies whether the column is displayed in the user interface.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -319,11 +321,11 @@ Accept wildcard characters: False
 
 ### -HyperlinkOrPicture
 hyperlinkOrPictureColumn
-To construct, please use Get-Help -Online and see NOTES section for HYPERLINKORPICTURE properties and create a hash table.
+To construct, see NOTES section for HYPERLINKORPICTURE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphHyperlinkOrPictureColumn
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -339,7 +341,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -354,7 +356,7 @@ Specifies whether the column values can be used for sorting and searching.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -366,11 +368,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -385,7 +387,7 @@ Indicates whether this column can be deleted.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -401,7 +403,7 @@ Read-only.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -416,7 +418,7 @@ Specifies whether the column can be changed.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -428,11 +430,11 @@ Accept wildcard characters: False
 
 ### -Lookup
 lookupColumn
-To construct, please use Get-Help -Online and see NOTES section for LOOKUP properties and create a hash table.
+To construct, see NOTES section for LOOKUP properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphLookupColumn
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -448,7 +450,7 @@ For the user-facing name, see displayName.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -460,11 +462,11 @@ Accept wildcard characters: False
 
 ### -Number
 numberColumn
-To construct, please use Get-Help -Online and see NOTES section for NUMBER properties and create a hash table.
+To construct, see NOTES section for NUMBER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphNumberColumn
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -476,11 +478,11 @@ Accept wildcard characters: False
 
 ### -PersonOrGroup
 personOrGroupColumn
-To construct, please use Get-Help -Online and see NOTES section for PERSONORGROUP properties and create a hash table.
+To construct, see NOTES section for PERSONORGROUP properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPersonOrGroupColumn
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -495,7 +497,7 @@ If 'true', changes to this column will be propagated to lists that implement the
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -510,7 +512,7 @@ Specifies whether the column values can be modified.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -525,7 +527,7 @@ Specifies whether the column value isn't optional.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -540,7 +542,7 @@ The unique identifier of site
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, Create1
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -552,11 +554,11 @@ Accept wildcard characters: False
 
 ### -SourceColumn
 columnDefinition
-To construct, please use Get-Help -Online and see NOTES section for SOURCECOLUMN properties and create a hash table.
+To construct, see NOTES section for SOURCECOLUMN properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphColumnDefinition
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -568,11 +570,11 @@ Accept wildcard characters: False
 
 ### -SourceContentType
 contentTypeInfo
-To construct, please use Get-Help -Online and see NOTES section for SOURCECONTENTTYPE properties and create a hash table.
+To construct, see NOTES section for SOURCECONTENTTYPE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphContentTypeInfo
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -584,11 +586,11 @@ Accept wildcard characters: False
 
 ### -Term
 termColumn
-To construct, please use Get-Help -Online and see NOTES section for TERM properties and create a hash table.
+To construct, see NOTES section for TERM properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTermColumn1
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: IMicrosoftGraphTermColumn
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -600,11 +602,11 @@ Accept wildcard characters: False
 
 ### -Text
 textColumn
-To construct, please use Get-Help -Online and see NOTES section for TEXT properties and create a hash table.
+To construct, see NOTES section for TEXT properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphTextColumn
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -619,7 +621,7 @@ thumbnailColumn
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -634,7 +636,7 @@ columnTypes
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -646,11 +648,11 @@ Accept wildcard characters: False
 
 ### -Validation
 columnValidation
-To construct, please use Get-Help -Online and see NOTES section for VALIDATION properties and create a hash table.
+To construct, see NOTES section for VALIDATION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphColumnValidation
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -710,7 +712,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphColumnDefinition>`: columnDefinition
+`BODYPARAMETER <IMicrosoftGraphColumnDefinition>`: columnDefinition
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Boolean <IMicrosoftGraphBooleanColumn>]`: booleanColumn
@@ -779,7 +781,7 @@ BODYPARAMETER `<IMicrosoftGraphColumnDefinition>`: columnDefinition
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The id of the content type.
     - `[Name <String>]`: The name of the content type.
-  - `[Term <IMicrosoftGraphTermColumn1>]`: termColumn
+  - `[Term <IMicrosoftGraphTermColumn>]`: termColumn
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AllowMultipleValues <Boolean?>]`: Specifies whether the column will allow more than one value.
     - `[ParentTerm <IMicrosoftGraphTermStoreTerm>]`: term
@@ -801,7 +803,7 @@ BODYPARAMETER `<IMicrosoftGraphColumnDefinition>`: columnDefinition
       - `[Relations <IMicrosoftGraphTermStoreRelation[]>]`: To indicate which terms are related to the current term as either pinned or reused.
         - `[Id <String>]`: The unique idenfier for an entity. Read-only.
         - `[FromTerm <IMicrosoftGraphTermStoreTerm>]`: term
-        - `[Relationship <String>]`: 
+        - `[Relationship <String>]`: relationType
         - `[Set <IMicrosoftGraphTermStoreSet>]`: set
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -811,14 +813,14 @@ BODYPARAMETER `<IMicrosoftGraphColumnDefinition>`: columnDefinition
           - `[LocalizedNames <IMicrosoftGraphTermStoreLocalizedName[]>]`: Name of the set for each languageTag.
             - `[LanguageTag <String>]`: The language tag for the label.
             - `[Name <String>]`: The name in the localized language.
-          - `[ParentGroup <IMicrosoftGraphTermStoreGroup1>]`: group
+          - `[ParentGroup <IMicrosoftGraphTermStoreGroup>]`: group
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: The unique idenfier for an entity. Read-only.
             - `[CreatedDateTime <DateTime?>]`: Date and time of the group creation. Read-only.
             - `[Description <String>]`: Description that gives details on the term usage.
             - `[DisplayName <String>]`: Name of the group.
             - `[ParentSiteId <String>]`: ID of the parent site of this group.
-            - `[Scope <String>]`: 
+            - `[Scope <String>]`: termGroupScope
             - `[Sets <IMicrosoftGraphTermStoreSet[]>]`: All sets under the group in a term [store].
           - `[Properties <IMicrosoftGraphKeyValue[]>]`: Custom properties for the set.
           - `[Relations <IMicrosoftGraphTermStoreRelation[]>]`: Indicates which terms have been pinned or reused directly under the set.
@@ -845,85 +847,77 @@ BODYPARAMETER `<IMicrosoftGraphColumnDefinition>`: columnDefinition
       - `[LanguageTag <String>]`: Provides the language culture-code and friendly name of the language that the displayName field has been provided in.
     - `[Formula <String>]`: The formula to validate column value. For examples, see Examples of common formulas in lists.
 
-CALCULATED `<IMicrosoftGraphCalculatedColumn>`: calculatedColumn
+`CALCULATED <IMicrosoftGraphCalculatedColumn>`: calculatedColumn
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Format <String>]`: For dateTime output types, the format of the value. Must be one of dateOnly or dateTime.
   - `[Formula <String>]`: The formula used to compute the value for this column.
   - `[OutputType <String>]`: The output type used to format values in this column. Must be one of boolean, currency, dateTime, number, or text.
 
-CHOICE `<IMicrosoftGraphChoiceColumn>`: choiceColumn
+`CHOICE <IMicrosoftGraphChoiceColumn>`: choiceColumn
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowTextEntry <Boolean?>]`: If true, allows custom values that aren't in the configured choices.
   - `[Choices <String[]>]`: The list of values available for this column.
   - `[DisplayAs <String>]`: How the choices are to be presented in the UX. Must be one of checkBoxes, dropDownMenu, or radioButtons
 
-CURRENCY `<IMicrosoftGraphCurrencyColumn>`: currencyColumn
+`CURRENCY <IMicrosoftGraphCurrencyColumn>`: currencyColumn
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Locale <String>]`: Specifies the locale from which to infer the currency symbol.
 
-DATETIME `<IMicrosoftGraphDateTimeColumn>`: dateTimeColumn
+`DATETIME <IMicrosoftGraphDateTimeColumn>`: dateTimeColumn
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayAs <String>]`: How the value should be presented in the UX. Must be one of default, friendly, or standard. See below for more details. If unspecified, treated as default.
   - `[Format <String>]`: Indicates whether the value should be presented as a date only or a date and time. Must be one of dateOnly or dateTime
 
-DEFAULTVALUE `<IMicrosoftGraphDefaultColumnValue>`: defaultColumnValue
+`DEFAULTVALUE <IMicrosoftGraphDefaultColumnValue>`: defaultColumnValue
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Formula <String>]`: The formula used to compute the default value for this column.
   - `[Value <String>]`: The direct value to use as the default value for this column.
 
-HYPERLINKORPICTURE `<IMicrosoftGraphHyperlinkOrPictureColumn>`: hyperlinkOrPictureColumn
+`HYPERLINKORPICTURE <IMicrosoftGraphHyperlinkOrPictureColumn>`: hyperlinkOrPictureColumn
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[IsPicture <Boolean?>]`: Specifies whether the display format used for URL columns is an image or a hyperlink.
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+`INPUTOBJECT <ISitesIdentity>`: Identity Parameter
   - `[BaseItemId <String>]`: The unique identifier of baseItem
-  - `[BitlockerRecoveryKeyId <String>]`: The unique identifier of bitlockerRecoveryKey
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[ContentTypeId1 <String>]`: The unique identifier of contentType
-  - `[DataLossPreventionPolicyId <String>]`: The unique identifier of dataLossPreventionPolicy
   - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
   - `[DriveId <String>]`: The unique identifier of drive
   - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
   - `[GroupId <String>]`: The unique identifier of group
   - `[GroupId1 <String>]`: The unique identifier of group
-  - `[HorizontalSectionColumnId <String>]`: The unique identifier of horizontalSectionColumn
-  - `[HorizontalSectionId <String>]`: The unique identifier of horizontalSection
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
-  - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
   - `[Interval <String>]`: Usage: interval='{interval}'
+  - `[ItemActivityId <String>]`: The unique identifier of itemActivity
   - `[ItemActivityStatId <String>]`: The unique identifier of itemActivityStat
   - `[ListId <String>]`: The unique identifier of list
-  - `[ListId1 <String>]`: Usage: listId='{listId}'
   - `[ListItemId <String>]`: The unique identifier of listItem
   - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
   - `[NotebookId <String>]`: The unique identifier of notebook
+  - `[OnenoteOperationId <String>]`: The unique identifier of onenoteOperation
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
+  - `[OnenoteResourceId <String>]`: The unique identifier of onenoteResource
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
   - `[Path <String>]`: Usage: path='{path}'
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[RelationId <String>]`: The unique identifier of relation
   - `[RichLongRunningOperationId <String>]`: The unique identifier of richLongRunningOperation
-  - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
-  - `[SensitivityLabelId1 <String>]`: The unique identifier of sensitivityLabel
+  - `[SectionGroupId <String>]`: The unique identifier of sectionGroup
+  - `[SectionGroupId1 <String>]`: The unique identifier of sectionGroup
   - `[SetId <String>]`: The unique identifier of set
   - `[SetId1 <String>]`: The unique identifier of set
   - `[SiteId <String>]`: The unique identifier of site
   - `[SiteId1 <String>]`: The unique identifier of site
-  - `[SitePageId <String>]`: The unique identifier of sitePage
   - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
   - `[StoreId <String>]`: The unique identifier of store
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
-  - `[ThreatAssessmentRequestId <String>]`: The unique identifier of threatAssessmentRequest
-  - `[ThreatAssessmentResultId <String>]`: The unique identifier of threatAssessmentResult
-  - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
-  - `[WebPartId <String>]`: The unique identifier of webPart
 
-LOOKUP `<IMicrosoftGraphLookupColumn>`: lookupColumn
+`LOOKUP <IMicrosoftGraphLookupColumn>`: lookupColumn
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowMultipleValues <Boolean?>]`: Indicates whether multiple values can be selected from the source.
   - `[AllowUnlimitedLength <Boolean?>]`: Indicates whether values in the column should be able to exceed the standard limit of 255 characters.
@@ -931,20 +925,20 @@ LOOKUP `<IMicrosoftGraphLookupColumn>`: lookupColumn
   - `[ListId <String>]`: The unique identifier of the lookup source list.
   - `[PrimaryLookupColumnId <String>]`: If specified, this column is a secondary lookup, pulling an additional field from the list item looked up by the primary lookup. Use the list item looked up by the primary as the source for the column named here.
 
-NUMBER `<IMicrosoftGraphNumberColumn>`: numberColumn
+`NUMBER <IMicrosoftGraphNumberColumn>`: numberColumn
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DecimalPlaces <String>]`: How many decimal places to display. See below for information about the possible values.
   - `[DisplayAs <String>]`: How the value should be presented in the UX. Must be one of number or percentage. If unspecified, treated as number.
   - `[Maximum <Double?>]`: The maximum permitted value.
   - `[Minimum <Double?>]`: The minimum permitted value.
 
-PERSONORGROUP `<IMicrosoftGraphPersonOrGroupColumn>`: personOrGroupColumn
+`PERSONORGROUP <IMicrosoftGraphPersonOrGroupColumn>`: personOrGroupColumn
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowMultipleSelection <Boolean?>]`: Indicates whether multiple values can be selected from the source.
   - `[ChooseFromType <String>]`: Whether to allow selection of people only, or people and groups. Must be one of peopleAndGroups or peopleOnly.
   - `[DisplayAs <String>]`: How to display the information about the person or group chosen. See below.
 
-SOURCECOLUMN `<IMicrosoftGraphColumnDefinition>`: columnDefinition
+`SOURCECOLUMN <IMicrosoftGraphColumnDefinition>`: columnDefinition
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Boolean <IMicrosoftGraphBooleanColumn>]`: booleanColumn
@@ -1013,7 +1007,7 @@ SOURCECOLUMN `<IMicrosoftGraphColumnDefinition>`: columnDefinition
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The id of the content type.
     - `[Name <String>]`: The name of the content type.
-  - `[Term <IMicrosoftGraphTermColumn1>]`: termColumn
+  - `[Term <IMicrosoftGraphTermColumn>]`: termColumn
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AllowMultipleValues <Boolean?>]`: Specifies whether the column will allow more than one value.
     - `[ParentTerm <IMicrosoftGraphTermStoreTerm>]`: term
@@ -1035,7 +1029,7 @@ SOURCECOLUMN `<IMicrosoftGraphColumnDefinition>`: columnDefinition
       - `[Relations <IMicrosoftGraphTermStoreRelation[]>]`: To indicate which terms are related to the current term as either pinned or reused.
         - `[Id <String>]`: The unique idenfier for an entity. Read-only.
         - `[FromTerm <IMicrosoftGraphTermStoreTerm>]`: term
-        - `[Relationship <String>]`: 
+        - `[Relationship <String>]`: relationType
         - `[Set <IMicrosoftGraphTermStoreSet>]`: set
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -1045,14 +1039,14 @@ SOURCECOLUMN `<IMicrosoftGraphColumnDefinition>`: columnDefinition
           - `[LocalizedNames <IMicrosoftGraphTermStoreLocalizedName[]>]`: Name of the set for each languageTag.
             - `[LanguageTag <String>]`: The language tag for the label.
             - `[Name <String>]`: The name in the localized language.
-          - `[ParentGroup <IMicrosoftGraphTermStoreGroup1>]`: group
+          - `[ParentGroup <IMicrosoftGraphTermStoreGroup>]`: group
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: The unique idenfier for an entity. Read-only.
             - `[CreatedDateTime <DateTime?>]`: Date and time of the group creation. Read-only.
             - `[Description <String>]`: Description that gives details on the term usage.
             - `[DisplayName <String>]`: Name of the group.
             - `[ParentSiteId <String>]`: ID of the parent site of this group.
-            - `[Scope <String>]`: 
+            - `[Scope <String>]`: termGroupScope
             - `[Sets <IMicrosoftGraphTermStoreSet[]>]`: All sets under the group in a term [store].
           - `[Properties <IMicrosoftGraphKeyValue[]>]`: Custom properties for the set.
           - `[Relations <IMicrosoftGraphTermStoreRelation[]>]`: Indicates which terms have been pinned or reused directly under the set.
@@ -1079,12 +1073,12 @@ SOURCECOLUMN `<IMicrosoftGraphColumnDefinition>`: columnDefinition
       - `[LanguageTag <String>]`: Provides the language culture-code and friendly name of the language that the displayName field has been provided in.
     - `[Formula <String>]`: The formula to validate column value. For examples, see Examples of common formulas in lists.
 
-SOURCECONTENTTYPE `<IMicrosoftGraphContentTypeInfo>`: contentTypeInfo
+`SOURCECONTENTTYPE <IMicrosoftGraphContentTypeInfo>`: contentTypeInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The id of the content type.
   - `[Name <String>]`: The name of the content type.
 
-TERM `<IMicrosoftGraphTermColumn1>`: termColumn
+`TERM <IMicrosoftGraphTermColumn>`: termColumn
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowMultipleValues <Boolean?>]`: Specifies whether the column will allow more than one value.
   - `[ParentTerm <IMicrosoftGraphTermStoreTerm>]`: term
@@ -1106,7 +1100,7 @@ TERM `<IMicrosoftGraphTermColumn1>`: termColumn
     - `[Relations <IMicrosoftGraphTermStoreRelation[]>]`: To indicate which terms are related to the current term as either pinned or reused.
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
       - `[FromTerm <IMicrosoftGraphTermStoreTerm>]`: term
-      - `[Relationship <String>]`: 
+      - `[Relationship <String>]`: relationType
       - `[Set <IMicrosoftGraphTermStoreSet>]`: set
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -1116,14 +1110,14 @@ TERM `<IMicrosoftGraphTermColumn1>`: termColumn
         - `[LocalizedNames <IMicrosoftGraphTermStoreLocalizedName[]>]`: Name of the set for each languageTag.
           - `[LanguageTag <String>]`: The language tag for the label.
           - `[Name <String>]`: The name in the localized language.
-        - `[ParentGroup <IMicrosoftGraphTermStoreGroup1>]`: group
+        - `[ParentGroup <IMicrosoftGraphTermStoreGroup>]`: group
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: The unique idenfier for an entity. Read-only.
           - `[CreatedDateTime <DateTime?>]`: Date and time of the group creation. Read-only.
           - `[Description <String>]`: Description that gives details on the term usage.
           - `[DisplayName <String>]`: Name of the group.
           - `[ParentSiteId <String>]`: ID of the parent site of this group.
-          - `[Scope <String>]`: 
+          - `[Scope <String>]`: termGroupScope
           - `[Sets <IMicrosoftGraphTermStoreSet[]>]`: All sets under the group in a term [store].
         - `[Properties <IMicrosoftGraphKeyValue[]>]`: Custom properties for the set.
         - `[Relations <IMicrosoftGraphTermStoreRelation[]>]`: Indicates which terms have been pinned or reused directly under the set.
@@ -1133,7 +1127,7 @@ TERM `<IMicrosoftGraphTermColumn1>`: termColumn
   - `[ShowFullyQualifiedName <Boolean?>]`: Specifies whether to display the entire term path or only the term label.
   - `[TermSet <IMicrosoftGraphTermStoreSet>]`: set
 
-TEXT `<IMicrosoftGraphTextColumn>`: textColumn
+`TEXT <IMicrosoftGraphTextColumn>`: textColumn
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowMultipleLines <Boolean?>]`: Whether to allow multiple lines of text.
   - `[AppendChangesToExistingText <Boolean?>]`: Whether updates to this column should replace existing text, or append to it.
@@ -1141,7 +1135,7 @@ TEXT `<IMicrosoftGraphTextColumn>`: textColumn
   - `[MaxLength <Int32?>]`: The maximum number of characters for the value.
   - `[TextType <String>]`: The type of text being stored. Must be one of plain or richText
 
-VALIDATION `<IMicrosoftGraphColumnValidation>`: columnValidation
+`VALIDATION <IMicrosoftGraphColumnValidation>`: columnValidation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DefaultLanguage <String>]`: Default BCP 47 language tag for the description.
   - `[Descriptions <IMicrosoftGraphDisplayNameLocalization[]>]`: Localized messages that explain what is needed for this column's value to be considered valid. User will be prompted with this message if validation fails.
@@ -1150,5 +1144,8 @@ VALIDATION `<IMicrosoftGraphColumnValidation>`: columnValidation
   - `[Formula <String>]`: The formula to validate column value. For examples, see Examples of common formulas in lists.
 
 ## RELATED LINKS
+[New-MgBetaSiteColumn](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteColumn?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[New-MgBetaSiteColumn](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteColumn?view=graph-powershell-beta)
+

@@ -1,37 +1,41 @@
 ---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/set-mguserlicense
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/set-mguserlicense
 schema: 2.0.0
 ---
 
 # Set-MgUserLicense
 
 ## SYNOPSIS
-Invoke action assignLicense
+Add or remove subscriptions for the user.
+You can also enable and disable specific plans associated with a subscription.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaUserLicense](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Set-MgBetaUserLicense?view=graph-powershell-beta)
 
 ## SYNTAX
 
-### AssignExpanded1 (Default)
+### AssignExpanded (Default)
 ```
 Set-MgUserLicense -UserId <String> [-AddLicenses <IMicrosoftGraphAssignedLicense[]>]
  [-AdditionalProperties <Hashtable>] [-RemoveLicenses <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Assign1
+### Assign
 ```
 Set-MgUserLicense -UserId <String>
  -BodyParameter <IComponents103UmuuRequestbodiesAssignlicenserequestbodyContentApplicationJsonSchema> [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
-### AssignViaIdentityExpanded1
+### AssignViaIdentityExpanded
 ```
 Set-MgUserLicense -InputObject <IUsersActionsIdentity> [-AddLicenses <IMicrosoftGraphAssignedLicense[]>]
  [-AdditionalProperties <Hashtable>] [-RemoveLicenses <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### AssignViaIdentity1
+### AssignViaIdentity
 ```
 Set-MgUserLicense -InputObject <IUsersActionsIdentity>
  -BodyParameter <IComponents103UmuuRequestbodiesAssignlicenserequestbodyContentApplicationJsonSchema> [-WhatIf]
@@ -39,13 +43,15 @@ Set-MgUserLicense -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action assignLicense
+Add or remove subscriptions for the user.
+You can also enable and disable specific plans associated with a subscription.
 
 ## EXAMPLES
 
-### Example 1: Assign a license to a user
+### EXAMPLE 1
 ```powershell
 Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
+```
 
 $EmsSku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'EMSPREMIUM'
 
@@ -54,14 +60,11 @@ Set-MgUserLicense -UserId '38955658-c844-4f59-9430-6519430ac89b' -AddLicenses @{
 Id                                   DisplayName   Mail UserPrincipalName                     UserType
 --                                   -----------   ---- -----------------                     --------
 38955658-c844-4f59-9430-6519430ac89b Bianca Pisani      BiancaP@contoso.onmicrosoft.com       Member
-```
 
-This example assigns a license from the **EMSPREMIUM** (ENTERPRISE MOBILITY + SECURITY E5) licensing plan to the unlicensed user **38955658-c844-4f59-9430-6519430ac89b**.
-For more information, see [assign licenses to users accounts with PowerShell](/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell?view=o365-worldwide).
-
-### Example 2: Assign more than one licenses to a user
+### EXAMPLE 2
 ```powershell
 Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
+```
 
 $EmsSku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'EMSPREMIUM'
 $FlowSku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'FLOW_FREE'
@@ -75,13 +78,11 @@ Set-MgUserLicense -UserId '38955658-c844-4f59-9430-6519430ac89b' -AddLicenses $a
 Id                                   DisplayName   Mail UserPrincipalName                     UserType
 --                                   -----------   ---- -----------------                     --------
 38955658-c844-4f59-9430-6519430ac89b Bianca Pisani      BiancaP@contoso.onmicrosoft.com       Member
-```
 
-This example assigns **EMSPREMIUM** and **FLOW_FREE** licenses to the user **38955658-c844-4f59-9430-6519430ac89b**.
-
-### Example 3: Assign a license to a user with some disabled plans
+### EXAMPLE 3
 ```powershell
 Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
+```
 
 $EmsSku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'EMSPREMIUM'
 $disabledPlans = $EmsSku.ServicePlans | where ServicePlanName -in ("MFA_PREMIUM", "INTUNE_A") | Select -ExpandProperty ServicePlanId
@@ -96,13 +97,11 @@ Set-MgUserLicense -UserId '38955658-c844-4f59-9430-6519430ac89b' -AddLicenses $a
 Id                                   DisplayName   Mail UserPrincipalName                     UserType
 --                                   -----------   ---- -----------------                     --------
 38955658-c844-4f59-9430-6519430ac89b Bianca Pisani      BiancaP@contoso.onmicrosoft.com       Member
-```
 
-This example assigns **EMSPREMIUM** license with the **MFA_PREMIUM** and **INTUNE_A** services turned off.
-
-### Example 4: Update a license assigned to a user to add more disabled plans leaving the user's existing disabled plans in their current state
+### EXAMPLE 4
 ```powershell
 Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
+```
 
 $EmsSku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'EMSPREMIUM'
 $userLicense = Get-MgUserLicenseDetail -UserId "38955658-c844-4f59-9430-6519430ac89b"
@@ -128,13 +127,11 @@ Set-MgUserLicense -UserId '38955658-c844-4f59-9430-6519430ac89b' -AddLicenses $a
 Id                                   DisplayName   Mail UserPrincipalName                     UserType
 --                                   -----------   ---- -----------------                     --------
 38955658-c844-4f59-9430-6519430ac89b Bianca Pisani      BiancaP@contoso.onmicrosoft.com       Member
-```
 
-This example updates the **EMSPREMIUM** license assigned to the user to add **AAD_PREMIUM_P2** and **AAD_PREMIUM** to the disabled services.
-
-### Example 5: Assign licenses to a user by copying the license assignment from another user
+### EXAMPLE 5
 ```powershell
 Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
+```
 
 Select-MgProfile -Name Beta
 $mgUser = Get-MgUser -UserId '38955658-c844-4f59-9430-6519430ac89b'
@@ -145,13 +142,11 @@ Set-MgUserLicense -UserId "82f51c98-7221-442f-8329-3faf9fe022f1" -AddLicenses $m
 Id                                   DisplayName    Mail UserPrincipalName                      UserType
 --                                   -----------    ---- -----------------                      --------
 82f51c98-7221-442f-8329-3faf9fe022f1 Mallory Cortez      MalloryC@contoso.onmicrosoft.com       Member
-```
 
-This examples copies the license assignment of user **38955658-c844-4f59-9430-6519430ac89b** and assigns it to user **82f51c98-7221-442f-8329-3faf9fe022f1**.
-
-### Example 6: Remove a license assigned to a user
+### EXAMPLE 6
 ```powershell
 Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
+```
 
 $EmsSku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'EMSPREMIUM'
 
@@ -160,9 +155,6 @@ Set-MgUserLicense -UserId "38955658-c844-4f59-9430-6519430ac89b" -AddLicenses @(
 Id                                   DisplayName   Mail UserPrincipalName                     UserType
 --                                   -----------   ---- -----------------                     --------
 38955658-c844-4f59-9430-6519430ac89b Bianca Pisani      BiancaP@contoso.onmicrosoft.com       Member
-```
-
-This example removes the **EMSPREMIUM** license assignment from the user.
 
 ## PARAMETERS
 
@@ -171,7 +163,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: AssignExpanded1, AssignViaIdentityExpanded1
+Parameter Sets: AssignExpanded, AssignViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -183,11 +175,11 @@ Accept wildcard characters: False
 
 ### -AddLicenses
 .
-To construct, please use Get-Help -Online and see NOTES section for ADDLICENSES properties and create a hash table.
+To construct, see NOTES section for ADDLICENSES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAssignedLicense[]
-Parameter Sets: AssignExpanded1, AssignViaIdentityExpanded1
+Parameter Sets: AssignExpanded, AssignViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -199,11 +191,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IComponents103UmuuRequestbodiesAssignlicenserequestbodyContentApplicationJsonSchema
-Parameter Sets: Assign1, AssignViaIdentity1
+Parameter Sets: Assign, AssignViaIdentity
 Aliases:
 
 Required: True
@@ -215,11 +207,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: AssignViaIdentityExpanded1, AssignViaIdentity1
+Parameter Sets: AssignViaIdentityExpanded, AssignViaIdentity
 Aliases:
 
 Required: True
@@ -234,7 +226,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String[]
-Parameter Sets: AssignExpanded1, AssignViaIdentityExpanded1
+Parameter Sets: AssignExpanded, AssignViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -249,7 +241,7 @@ The unique identifier of user
 
 ```yaml
 Type: String
-Parameter Sets: AssignExpanded1, Assign1
+Parameter Sets: AssignExpanded, Assign
 Aliases:
 
 Required: True
@@ -299,7 +291,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUser1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUser
 ## NOTES
 
 ALIASES
@@ -309,31 +301,24 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ADDLICENSES <IMicrosoftGraphAssignedLicense\[]>: .
+`ADDLICENSES <IMicrosoftGraphAssignedLicense[]>`: .
   - `[DisabledPlans <String[]>]`: A collection of the unique identifiers for plans that have been disabled.
   - `[SkuId <String>]`: The unique identifier for the SKU.
 
-BODYPARAMETER `<IComponents103UmuuRequestbodiesAssignlicenserequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IComponents103UmuuRequestbodiesAssignlicenserequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AddLicenses <IMicrosoftGraphAssignedLicense[]>]`: 
     - `[DisabledPlans <String[]>]`: A collection of the unique identifiers for plans that have been disabled.
     - `[SkuId <String>]`: The unique identifier for the SKU.
   - `[RemoveLicenses <String[]>]`: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
-  - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
-  - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
-  - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
+`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AuthenticationMethodId <String>]`: The unique identifier of authenticationMethod
   - `[CalendarId <String>]`: The unique identifier of calendar
   - `[ChatId <String>]`: The unique identifier of chat
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
   - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
-  - `[CloudPcId <String>]`: The unique identifier of cloudPC
   - `[ContentTypeId <String>]`: The unique identifier of contentType
-  - `[DeviceEnrollmentConfigurationId <String>]`: The unique identifier of deviceEnrollmentConfiguration
-  - `[DeviceId <String>]`: The unique identifier of device
-  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
   - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
   - `[DriveId <String>]`: The unique identifier of drive
   - `[DriveItemId <String>]`: The unique identifier of driveItem
@@ -346,17 +331,11 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
   - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
   - `[MessageId <String>]`: The unique identifier of message
-  - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
   - `[NotebookId <String>]`: The unique identifier of notebook
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
-  - `[OutlookTaskFolderId <String>]`: The unique identifier of outlookTaskFolder
-  - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
-  - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
-  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
-  - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
   - `[TodoTaskId <String>]`: The unique identifier of todoTask
@@ -364,3 +343,4 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Set-MgBetaUserLicense](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Set-MgBetaUserLicense?view=graph-powershell-beta)

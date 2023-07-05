@@ -39,9 +39,11 @@ There are three ways to allow delegated access using `Connect-MgGraph`:
     Connect-MgGraph -AccessToken $AccessToken
     ```
 
-### App-only access via client credential with a certificate
+### App-only access
 
-To use app-only access, the certificate is loaded from *Cert:\CurrentUser\My\\* when `-CertificateThumbprint` or `-CertificateName` is specified. Make sure that the certificate you're using is present in the store before calling `Connect-MgGraph`. For more info, see [Use app-only authentication with the Microsoft Graph PowerShell SDK](app-only.md).
+#### Using client credential with a certificate
+
+To use app-only access, the certificate is loaded from either *Cert:\CurrentUser\My\\* or *Cert:\LocalMachine\My\\* when `-CertificateThumbprint` or `-CertificateName` is specified. Make sure that the certificate you're using is present in either certificate store before calling `Connect-MgGraph`. For more info, see [Use app-only authentication with the Microsoft Graph PowerShell SDK](app-only.md).
 
 - Using Certificate Thumbprint:
 
@@ -63,6 +65,36 @@ To use app-only access, the certificate is loaded from *Cert:\CurrentUser\My\\* 
     ```
 
     To use a certificate stored in your machine's certificate store or another location when connecting to Microsoft Graph, specify the certificate's location.
+
+#### Using client secret credentials
+
+If you need interactions in the background, without a user to sign in, this type of grant will help you. Support for client secret credentials was added by adding **-ClientSecretCredential** parameter to **Connect-MgGraph**. See [Get-Credential](/powershell/module/microsoft.powershell.security/get-credential) on how to get or create credentials.
+
+```powershell
+$ClientSecretCredential = Get-Credential -Username "Client_Id"
+# Enter client_secret in the password prompt.
+Connect-MgGraph -TenantId "Tenant_Id" -ClientSecretCredential $ClientSecretCredential
+```
+
+#### Using managed identity
+
+A common challenge when writing automation scripts is the management of secrets, credentials, certificates, and keys used to secure communication between services. Eliminate the need to manage credentials by allowing the module to obtain access tokens for Azure resources that are protected by Azure AD. The identity is managed by the Azure platform and does not require you to provision or rotate any secrets.
+
+- System-assigned managed identity:
+
+    Uses an automatically managed identity on a service instance. The identity is tied to the lifecycle of a service instance.
+
+    ```powershell
+    Connect-MgGraph -Identity
+    ```
+
+- User-assigned managed identity:
+
+    Uses a user created managed identity as a standalone Azure resource.
+
+    ```powershell
+    Connect-MgGraph -Identity -ClientId "User_Assigned_Managed_identity_Client_Id"
+    ```
 
 ### Connecting to an environment or cloud
 
@@ -195,34 +227,6 @@ RoleManagement.ReadWrite.Directory
 User.Read
 User.ReadWrite.All
 ```
-
-## Using Get-MgProfile
-
-By default the Microsoft Graph PowerShell commands target the v1.0 API version. Commands for APIs that are only available in beta aren't available in PowerShell by default.
-
-To check your current profile, run:
-
-```powershell
-Get-MgProfile
-```
-
-```Output
-Name Description
----- -----------
-v1.0 A snapshot of the Microsoft Graph v1.0 API for the Global cloud.
-```
-
-## Using Select-MgProfile
-
-Use `Select-MgProfile` to change your target API version.
-
-To change to the beta version, run:
-
-```powershell
-Select-MgProfile -Name Beta
-```
-
-To switch back to using v1.0 API commands, specify **v1.0** for the name parameter.
 
 ## Using Invoke-MgGraphRequest
 

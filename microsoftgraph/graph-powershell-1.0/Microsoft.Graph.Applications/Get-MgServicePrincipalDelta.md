@@ -1,7 +1,7 @@
 ---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgserviceprincipaldelta
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipaldelta
 schema: 2.0.0
 ---
 
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function delta
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaServicePrincipalDelta](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalDelta?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -22,14 +25,11 @@ Invoke function delta
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgServicePrincipalDelta Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Applications
 Get-MgServicePrincipalDelta
 ```
-
-This example shows how to use the Get-MgServicePrincipalDelta Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -182,3 +182,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaBetaServicePrincipalDelta](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalDelta?view=graph-powershell-beta)

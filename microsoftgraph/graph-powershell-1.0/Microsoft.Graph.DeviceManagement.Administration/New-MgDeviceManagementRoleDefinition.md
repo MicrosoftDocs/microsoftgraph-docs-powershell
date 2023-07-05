@@ -1,7 +1,7 @@
 ---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementroledefinition
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementroledefinition
 schema: 2.0.0
 ---
 
@@ -10,16 +10,19 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to roleDefinitions for deviceManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementRoleDefinition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementRoleDefinition?view=graph-powershell-beta)
+
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
 New-MgDeviceManagementRoleDefinition [-AdditionalProperties <Hashtable>] [-Description <String>]
- [-DisplayName <String>] [-Id <String>] [-IsBuiltIn] [-RoleAssignments <IMicrosoftGraphRoleAssignment1[]>]
+ [-DisplayName <String>] [-Id <String>] [-IsBuiltIn] [-RoleAssignments <IMicrosoftGraphRoleAssignment[]>]
  [-RolePermissions <IMicrosoftGraphRolePermission[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
 New-MgDeviceManagementRoleDefinition -BodyParameter <IMicrosoftGraphRoleDefinition> [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -30,6 +33,20 @@ Create new navigation property to roleDefinitions for deviceManagement
 
 ## EXAMPLES
 
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -37,7 +54,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -55,11 +72,11 @@ There are two types of roles, built-in and custom.
 Built-in roles cannot be modified.
 Both built-in roles and custom roles must have assignments to be enforced.
 Create custom roles if you want to define a role that allows any of the available resources and role permissions to be combined into a single role.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRoleDefinition
-Parameter Sets: Create1
+Parameter Sets: Create
 Aliases:
 
 Required: True
@@ -74,7 +91,7 @@ Description of the Role definition.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -89,7 +106,7 @@ Display Name of the Role definition.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -105,7 +122,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -121,7 +138,7 @@ Set to True if it is built-in, or set to False if it is a custom role definition
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -133,11 +150,11 @@ Accept wildcard characters: False
 
 ### -RoleAssignments
 List of Role assignments for this role definition.
-To construct, please use Get-Help -Online and see NOTES section for ROLEASSIGNMENTS properties and create a hash table.
+To construct, see NOTES section for ROLEASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRoleAssignment1[]
-Parameter Sets: CreateExpanded1
+Type: IMicrosoftGraphRoleAssignment[]
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -150,11 +167,11 @@ Accept wildcard characters: False
 ### -RolePermissions
 List of Role Permissions this role is allowed to perform.
 These must match the actionName that is defined as part of the rolePermission.
-To construct, please use Get-Help -Online and see NOTES section for ROLEPERMISSIONS properties and create a hash table.
+To construct, see NOTES section for ROLEPERMISSIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRolePermission[]
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -213,13 +230,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphRoleDefinition>`: The Role Definition resource. The role definition is the foundation of role based access in Intune. The role combines an Intune resource such as a Mobile App and associated role permissions such as Create or Read for the resource. There are two types of roles, built-in and custom. Built-in roles cannot be modified. Both built-in roles and custom roles must have assignments to be enforced. Create custom roles if you want to define a role that allows any of the available resources and role permissions to be combined into a single role.
+`BODYPARAMETER <IMicrosoftGraphRoleDefinition>`: The Role Definition resource. The role definition is the foundation of role based access in Intune. The role combines an Intune resource such as a Mobile App and associated role permissions such as Create or Read for the resource. There are two types of roles, built-in and custom. Built-in roles cannot be modified. Both built-in roles and custom roles must have assignments to be enforced. Create custom roles if you want to define a role that allows any of the available resources and role permissions to be combined into a single role.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Description <String>]`: Description of the Role definition.
   - `[DisplayName <String>]`: Display Name of the Role definition.
   - `[IsBuiltIn <Boolean?>]`: Type of Role. Set to True if it is built-in, or set to False if it is a custom role definition.
-  - `[RoleAssignments <IMicrosoftGraphRoleAssignment1[]>]`: List of Role assignments for this role definition.
+  - `[RoleAssignments <IMicrosoftGraphRoleAssignment[]>]`: List of Role assignments for this role definition.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[Description <String>]`: Description of the Role Assignment.
     - `[DisplayName <String>]`: The display or friendly name of the role Assignment.
@@ -230,7 +247,7 @@ BODYPARAMETER `<IMicrosoftGraphRoleDefinition>`: The Role Definition resource. T
       - `[AllowedResourceActions <String[]>]`: Allowed Actions
       - `[NotAllowedResourceActions <String[]>]`: Not Allowed Actions.
 
-ROLEASSIGNMENTS <IMicrosoftGraphRoleAssignment1\[]>: List of Role assignments for this role definition.
+`ROLEASSIGNMENTS <IMicrosoftGraphRoleAssignment[]>`: List of Role assignments for this role definition.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Description <String>]`: Description of the Role Assignment.
   - `[DisplayName <String>]`: The display or friendly name of the role Assignment.
@@ -241,15 +258,16 @@ ROLEASSIGNMENTS <IMicrosoftGraphRoleAssignment1\[]>: List of Role assignments fo
     - `[Description <String>]`: Description of the Role definition.
     - `[DisplayName <String>]`: Display Name of the Role definition.
     - `[IsBuiltIn <Boolean?>]`: Type of Role. Set to True if it is built-in, or set to False if it is a custom role definition.
-    - `[RoleAssignments <IMicrosoftGraphRoleAssignment1[]>]`: List of Role assignments for this role definition.
+    - `[RoleAssignments <IMicrosoftGraphRoleAssignment[]>]`: List of Role assignments for this role definition.
     - `[RolePermissions <IMicrosoftGraphRolePermission[]>]`: List of Role Permissions this role is allowed to perform. These must match the actionName that is defined as part of the rolePermission.
       - `[ResourceActions <IMicrosoftGraphResourceAction[]>]`: Resource Actions each containing a set of allowed and not allowed permissions.
         - `[AllowedResourceActions <String[]>]`: Allowed Actions
         - `[NotAllowedResourceActions <String[]>]`: Not Allowed Actions.
 
-ROLEPERMISSIONS <IMicrosoftGraphRolePermission\[]>: List of Role Permissions this role is allowed to perform. These must match the actionName that is defined as part of the rolePermission.
+`ROLEPERMISSIONS <IMicrosoftGraphRolePermission[]>`: List of Role Permissions this role is allowed to perform. These must match the actionName that is defined as part of the rolePermission.
   - `[ResourceActions <IMicrosoftGraphResourceAction[]>]`: Resource Actions each containing a set of allowed and not allowed permissions.
     - `[AllowedResourceActions <String[]>]`: Allowed Actions
     - `[NotAllowedResourceActions <String[]>]`: Not Allowed Actions.
 
 ## RELATED LINKS
+[New-MgBetaDeviceManagementRoleDefinition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementRoleDefinition?view=graph-powershell-beta)

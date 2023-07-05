@@ -1,14 +1,19 @@
 ---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/new-mgeducationclassassignmentresource
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassassignmentresource
 schema: 2.0.0
 ---
 
 # New-MgEducationClassAssignmentResource
 
 ## SYNOPSIS
-Create new navigation property to resources for education
+Create an assignment resource.
+Only teachers can perform this operation.
+You can create the following types of assignment resources: Every resource has an **@odata.type** property to indicate which type of resource is being created.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaEducationClassAssignmentResource](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassAssignmentResource?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -39,112 +44,127 @@ New-MgEducationClassAssignmentResource -InputObject <IEducationIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to resources for education
+Create an assignment resource.
+Only teachers can perform this operation.
+You can create the following types of assignment resources: Every resource has an **@odata.type** property to indicate which type of resource is being created.
 
 ## EXAMPLES
 
-### Example 1: Using the New-MgEducationClassAssignmentResource Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Education
+
 $params = @{
-	DistributeForStudentWork = $false
-	Resource = @{
-		"@odata.type" = "microsoft.graph.educationExcelResource"
-		DisplayName = "Graph Doc pages.xlsx"
-		FileUrl = "https://graph.microsoft.com/v1.0/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXoOOmEQNO79QpIMPdOmY3nf/items/01QTY63RIR7PSV4JJSFJHKNPUVUWGPW4O2"
-	}
-}
-New-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
-```
-
-This example shows how to use the New-MgEducationClassAssignmentResource Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the New-MgEducationClassAssignmentResource Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Education
-$params = @{
-	DistributeForStudentWork = $false
-	Resource = @{
-		DisplayName = "article.pdf"
-		"@odata.type" = "#microsoft.graph.educationFileResource"
-	}
-}
-New-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
-```
-
-This example shows how to use the New-MgEducationClassAssignmentResource Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Using the New-MgEducationClassAssignmentResource Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Education
-$params = @{
-	DistributeForStudentWork = $false
-	Resource = @{
-		DisplayName = "Where the Wonders of Learning Never Cease | Wonderopolis"
-		Link = "https://wonderopolis.org/"
-		ThumbnailPreviewUrl = $null
+	distributeForStudentWork = $false
+	resource = @{
+		displayName = "Where the Wonders of Learning Never Cease | Wonderopolis"
+		link = "https://wonderopolis.org/"
+		thumbnailPreviewUrl = $null
 		"@odata.type" = "#microsoft.graph.educationLinkResource"
 	}
 }
+
 New-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
+
 ```
-
-This example shows how to use the New-MgEducationClassAssignmentResource Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 4: Using the New-MgEducationClassAssignmentResource Cmdlet
+### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Education
+
 $params = @{
-	DistributeForStudentWork = $false
-	Resource = @{
-		"@odata.type" = "microsoft.graph.educationMediaResource"
-		DisplayName = "homework example.PNG"
-		FileUrl = "https://graph.microsoft.com/v1.0/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXoOOmEQNO79QpIMPdOmY3nf/items/01QTY63RMUWOKAGSJZ6BHINJVKNMOOJABF"
-	}
-}
-New-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
-```
-
-This example shows how to use the New-MgEducationClassAssignmentResource Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 5: Using the New-MgEducationClassAssignmentResource Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Education
-$params = @{
-	DistributeForStudentWork = $false
-	Resource = @{
-		"@odata.type" = "microsoft.graph.educationPowerPointResource"
-		DisplayName = "state diagram.pptx"
-		FileUrl = "https://graph.microsoft.com/v1.0/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXoOOmEQNO79QpIMPdOmY3nf/items/01QTY63RN327OXRN6EVFE2Q5FRJZTN5EOJ"
-	}
-}
-New-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
-```
-
-This example shows how to use the New-MgEducationClassAssignmentResource Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 6: Using the New-MgEducationClassAssignmentResource Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Education
-$params = @{
-	DistributeForStudentWork = $false
-	Resource = @{
+	distributeForStudentWork = $false
+	resource = @{
 		"@odata.type" = "microsoft.graph.educationWordResource"
-		DisplayName = "Issues and PR in guthub.docx"
-		FileUrl = "https://graph.microsoft.com/v1.0/drives/b!DPA6q59Tw0mtgmyXRUmrQRqBZTesG-lMkl1cBmvvMeUEWrOk89nKRpUEr4ZhNYBc/items/016XPCQEELISJB7NVNVBAK7V4UIF6Q27U2"
+		displayName = "Issues and PR in guthub.docx"
+		fileUrl = "https://graph.microsoft.com/v1.0/drives/b!DPA6q59Tw0mtgmyXRUmrQRqBZTesG-lMkl1cBmvvMeUEWrOk89nKRpUEr4ZhNYBc/items/016XPCQEELISJB7NVNVBAK7V4UIF6Q27U2"
 	}
 }
+
 New-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
+
 ```
+### EXAMPLE 3
+```powershell
+Import-Module Microsoft.Graph.Education
 
-This example shows how to use the New-MgEducationClassAssignmentResource Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+$params = @{
+	distributeForStudentWork = $false
+	resource = @{
+		displayName = "article.pdf"
+		"@odata.type" = "#microsoft.graph.educationFileResource"
+	}
+}
 
+New-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
+
+```
+### EXAMPLE 4
+```powershell
+Import-Module Microsoft.Graph.Education
+
+$params = @{
+	distributeForStudentWork = $false
+	resource = @{
+		"@odata.type" = "microsoft.graph.educationExcelResource"
+		displayName = "Graph Doc pages.xlsx"
+		fileUrl = "https://graph.microsoft.com/v1.0/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXoOOmEQNO79QpIMPdOmY3nf/items/01QTY63RIR7PSV4JJSFJHKNPUVUWGPW4O2"
+	}
+}
+
+New-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
+
+```
+### EXAMPLE 5
+```powershell
+Import-Module Microsoft.Graph.Education
+
+$params = @{
+	distributeForStudentWork = $false
+	resource = @{
+		"@odata.type" = "microsoft.graph.educationPowerPointResource"
+		displayName = "state diagram.pptx"
+		fileUrl = "https://graph.microsoft.com/v1.0/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXoOOmEQNO79QpIMPdOmY3nf/items/01QTY63RN327OXRN6EVFE2Q5FRJZTN5EOJ"
+	}
+}
+
+New-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
+
+```
+### EXAMPLE 6
+```powershell
+Import-Module Microsoft.Graph.Education
+
+$params = @{
+	distributeForStudentWork = $false
+	resource = @{
+		"@odata.type" = "microsoft.graph.educationMediaResource"
+		displayName = "homework example.PNG"
+		fileUrl = "https://graph.microsoft.com/v1.0/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXoOOmEQNO79QpIMPdOmY3nf/items/01QTY63RMUWOKAGSJZ6BHINJVKNMOOJABF"
+	}
+}
+
+New-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
+
+```
+### EXAMPLE 7
+```powershell
+Import-Module Microsoft.Graph.Education
+
+$params = @{
+	distributeForStudentWork = $false
+	resource = @{
+		displayName = "Template - My Story"
+		appId = "6fbeb90c-3d55-4bd5-82c4-bfe824be4300"
+		appIconWebUrl = "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/6fbeb90c-3d55-4bd5-82c4-bfe824be4300_largeImage.png?v=2.0.2"
+		teamsEmbeddedContentUrl = "https://app.api.edu.buncee.com/player/C7B0866C9B7E485EAE21AE14DBC3FD08?embed=1&amp;render_slide_panel=1"
+		webUrl = "https://app.edu.buncee.com/buncee/C7B0866C9B7E485EAE21AE14DBC3FD08"
+		"@odata.type" = "#microsoft.graph.educationTeamsAppResource"
+	}
+}
+
+New-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
+
+```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -164,7 +184,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 educationAssignmentResource
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEducationAssignmentResource
@@ -242,7 +262,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IEducationIdentity
@@ -258,7 +278,7 @@ Accept wildcard characters: False
 
 ### -Resource
 educationResource
-To construct, please use Get-Help -Online and see NOTES section for RESOURCE properties and create a hash table.
+To construct, see NOTES section for RESOURCE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEducationResource
@@ -322,7 +342,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphEducationAssignmentResource>`: educationAssignmentResource
+`BODYPARAMETER <IMicrosoftGraphEducationAssignmentResource>`: educationAssignmentResource
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DistributeForStudentWork <Boolean?>]`: Indicates whether this resource should be copied to each student submission for modification and submission. Required
@@ -339,7 +359,7 @@ BODYPARAMETER `<IMicrosoftGraphEducationAssignmentResource>`: educationAssignmen
     - `[DisplayName <String>]`: Display name of resource.
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+`INPUTOBJECT <IEducationIdentity>`: Identity Parameter
   - `[EducationAssignmentId <String>]`: The unique identifier of educationAssignment
   - `[EducationAssignmentResourceId <String>]`: The unique identifier of educationAssignmentResource
   - `[EducationCategoryId <String>]`: The unique identifier of educationCategory
@@ -349,11 +369,9 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationSchoolId <String>]`: The unique identifier of educationSchool
   - `[EducationSubmissionId <String>]`: The unique identifier of educationSubmission
   - `[EducationSubmissionResourceId <String>]`: The unique identifier of educationSubmissionResource
-  - `[EducationSynchronizationErrorId <String>]`: The unique identifier of educationSynchronizationError
-  - `[EducationSynchronizationProfileId <String>]`: The unique identifier of educationSynchronizationProfile
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
-RESOURCE `<IMicrosoftGraphEducationResource>`: educationResource
+`RESOURCE <IMicrosoftGraphEducationResource>`: educationResource
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -367,3 +385,5 @@ RESOURCE `<IMicrosoftGraphEducationResource>`: educationResource
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
 
 ## RELATED LINKS
+[New-MgBetaEducationClassAssignmentResource](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassAssignmentResource?view=graph-powershell-beta)
+

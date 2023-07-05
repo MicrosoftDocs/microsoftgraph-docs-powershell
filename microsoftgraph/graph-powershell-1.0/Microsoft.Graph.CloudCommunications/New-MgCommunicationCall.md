@@ -1,14 +1,18 @@
 ---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcall
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcall
 schema: 2.0.0
 ---
 
 # New-MgCommunicationCall
 
 ## SYNOPSIS
-Create new navigation property to calls for communications
+Create call enables your bot to create a new outgoing peer-to-peer or group call, or join an existing meeting.
+You will need to register the calling bot and go through the list of permissions needed as mentioned below.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaCommunicationCall?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -34,183 +38,422 @@ New-MgCommunicationCall -BodyParameter <IMicrosoftGraphCall> [-WhatIf] [-Confirm
 ```
 
 ## DESCRIPTION
-Create new navigation property to calls for communications
+Create call enables your bot to create a new outgoing peer-to-peer or group call, or join an existing meeting.
+You will need to register the calling bot and go through the list of permissions needed as mentioned below.
 
 ## EXAMPLES
 
-### Example 1: Using the New-MgCommunicationCall Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
+
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
-	CallbackUri = "https://bot.contoso.com/callback"
-	Source = @{
-		"@odata.type" = "#microsoft.graph.participantInfo"
-		Identity = @{
-			"@odata.type" = "#microsoft.graph.identitySet"
-			Application = @{
-				"@odata.type" = "#microsoft.graph.identity"
-				DisplayName = "Calling Bot"
-				Id = "2891555a-92ff-42e6-80fa-6e1300c6b5c6"
-			}
-		}
-		Region = $null
-		LanguageId = $null
-	}
-	Targets = @(
+	callbackUri = "https://bot.contoso.com/callback"
+	targets = @(
 		@{
 			"@odata.type" = "#microsoft.graph.invitationParticipantInfo"
-			Identity = @{
+			identity = @{
 				"@odata.type" = "#microsoft.graph.identitySet"
-				User = @{
+				user = @{
 					"@odata.type" = "#microsoft.graph.identity"
-					DisplayName = "John"
-					Id = "112f7296-5fa4-42ca-bae8-6a692b15d4b8"
+					displayName = "John"
+					id = "112f7296-5fa4-42ca-bae8-6a692b15d4b8"
 				}
 			}
 		}
 	)
-	RequestedModalities = @(
+	requestedModalities = @(
 		"audio"
 	)
-	MediaConfig = @{
-		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
-		Blob = "<Media Session Configuration>"
+	callOptions = @{
+		"@odata.type" = "#microsoft.graph.outgoingCallOptions"
+		isContentSharingNotificationEnabled = $true
 	}
-}
-New-MgCommunicationCall -BodyParameter $params
-```
-
-This example shows how to use the New-MgCommunicationCall Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the New-MgCommunicationCall Cmdlet
-```powershell
-Import-Module Microsoft.Graph.CloudCommunications
-$params = @{
-	"@odata.type" = "#microsoft.graph.call"
-	CallbackUri = "https://bot.contoso.com/callback"
-	Targets = @(
-		@{
-			"@odata.type" = "#microsoft.graph.invitationParticipantInfo"
-			Identity = @{
-				"@odata.type" = "#microsoft.graph.identitySet"
-				User = @{
-					"@odata.type" = "#microsoft.graph.identity"
-					DisplayName = "John"
-					Id = "112f7296-5fa4-42ca-bae8-6a692b15d4b8"
-				}
-			}
-		}
-	)
-	RequestedModalities = @(
-		"audio"
-	)
-	MediaConfig = @{
+	mediaConfig = @{
 		"@odata.type" = "#microsoft.graph.serviceHostedMediaConfig"
 	}
 }
+
 New-MgCommunicationCall -BodyParameter $params
+
 ```
-
-This example shows how to use the New-MgCommunicationCall Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Using the New-MgCommunicationCall Cmdlet
+### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
+
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
-	CallbackUri = "https://bot.contoso.com/callback"
-	Source = @{
+	callbackUri = "https://bot.contoso.com/callback"
+	source = @{
 		"@odata.type" = "#microsoft.graph.participantInfo"
-		Identity = @{
+		identity = @{
 			"@odata.type" = "#microsoft.graph.identitySet"
-			ApplicationInstance = @{
+			application = @{
 				"@odata.type" = "#microsoft.graph.identity"
-				DisplayName = "Calling Bot"
-				Id = "3d913abb-aec0-4964-8fa6-3c6850c4f278"
+				displayName = "Calling Bot"
+				id = "2891555a-92ff-42e6-80fa-6e1300c6b5c6"
 			}
 		}
-		CountryCode = $null
-		EndpointType = $null
-		Region = $null
-		LanguageId = $null
+		region = $null
+		languageId = $null
 	}
-	Targets = @(
+	targets = @(
 		@{
 			"@odata.type" = "#microsoft.graph.invitationParticipantInfo"
-			Identity = @{
+			identity = @{
 				"@odata.type" = "#microsoft.graph.identitySet"
-				Phone = @{
+				user = @{
 					"@odata.type" = "#microsoft.graph.identity"
-					Id = "+12345678901"
+					displayName = "John"
+					id = "112f7296-5fa4-42ca-bae8-6a692b15d4b8"
 				}
 			}
 		}
 	)
-	RequestedModalities = @(
+	requestedModalities = @(
 		"audio"
 	)
-	MediaConfig = @{
+	mediaConfig = @{
+		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
+		blob = "&lt;Media Session Configuration&gt;"
+	}
+}
+
+New-MgCommunicationCall -BodyParameter $params
+
+```
+### EXAMPLE 3
+```powershell
+Import-Module Microsoft.Graph.CloudCommunications
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.call"
+	direction = "outgoing"
+	subject = "Create a group call with service hosted media"
+	callbackUri = "https://bot.contoso.com/callback"
+	source = @{
+		"@odata.type" = "#microsoft.graph.participantInfo"
+		identity = @{
+			"@odata.type" = "#microsoft.graph.identitySet"
+			application = @{
+				"@odata.type" = "#microsoft.graph.identity"
+				displayName = "TestBot"
+				id = "dd3885da-f9ab-486b-bfae-85de3d445555"
+			}
+		}
+	}
+	targets = @(
+		@{
+			"@odata.type" = "#microsoft.graph.invitationParticipantInfo"
+			identity = @{
+				"@odata.type" = "#microsoft.graph.identitySet"
+				user = @{
+					"@odata.type" = "#microsoft.graph.identity"
+					displayName = "user1"
+					id = "98da8a1a-1b87-452c-a713-65d3f10b5555"
+				}
+			}
+		}
+		@{
+			"@odata.type" = "#microsoft.graph.invitationParticipantInfo"
+			identity = @{
+				"@odata.type" = "#microsoft.graph.identitySet"
+				user = @{
+					"@odata.type" = "#microsoft.graph.identity"
+					displayName = "user2"
+					id = "bf5aae9a-d11d-47a8-93b1-782504c95555"
+				}
+			}
+		}
+	)
+	requestedModalities = @(
+		"audio"
+	)
+	mediaConfig = @{
+		"@odata.type" = "#microsoft.graph.serviceHostedMediaConfig"
+		removeFromDefaultAudioGroup = $false
+	}
+}
+
+New-MgCommunicationCall -BodyParameter $params
+
+```
+### EXAMPLE 4
+```powershell
+Import-Module Microsoft.Graph.CloudCommunications
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.call"
+	direction = "outgoing"
+	subject = "Create a group call with application hosted media"
+	callbackUri = "https://bot.contoso.com/callback"
+	source = @{
+		"@odata.type" = "#microsoft.graph.participantInfo"
+		identity = @{
+			"@odata.type" = "#microsoft.graph.identitySet"
+			application = @{
+				"@odata.type" = "#microsoft.graph.identity"
+				displayName = "TestBot"
+				id = "dd3885da-f9ab-486b-bfae-85de3d445555"
+			}
+		}
+	}
+	targets = @(
+		@{
+			"@odata.type" = "#microsoft.graph.invitationParticipantInfo"
+			identity = @{
+				"@odata.type" = "#microsoft.graph.identitySet"
+				user = @{
+					"@odata.type" = "#microsoft.graph.identity"
+					displayName = "user1"
+					id = "98da8a1a-1b87-452c-a713-65d3f10b5555"
+				}
+			}
+		}
+		@{
+			"@odata.type" = "#microsoft.graph.invitationParticipantInfo"
+			identity = @{
+				"@odata.type" = "#microsoft.graph.identitySet"
+				user = @{
+					"@odata.type" = "#microsoft.graph.identity"
+					displayName = "user2"
+					id = "bf5aae9a-d11d-47a8-93b1-782504c95555"
+				}
+			}
+		}
+	)
+	requestedModalities = @(
+		"audio"
+	)
+	mediaConfig = @{
+		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
+		removeFromDefaultAudioGroup = $false
+	}
+}
+
+New-MgCommunicationCall -BodyParameter $params
+
+```
+### EXAMPLE 5
+```powershell
+Import-Module Microsoft.Graph.CloudCommunications
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.call"
+	callbackUri = "https://bot.contoso.com/callback"
+	requestedModalities = @(
+		"audio"
+	)
+	mediaConfig = @{
+		"@odata.type" = "#microsoft.graph.serviceHostedMediaConfig"
+		preFetchMedia = @(
+		)
+	}
+	chatInfo = @{
+		"@odata.type" = "#microsoft.graph.chatInfo"
+		threadId = "19:meeting_Win6Ydo4wsMijFjZS00ZGVjLTk5MGUtOTRjNWY2NmNkYTFm@thread.v2"
+		messageId = "0"
+	}
+	meetingInfo = @{
+		"@odata.type" = "#microsoft.graph.organizerMeetingInfo"
+		organizer = @{
+			"@odata.type" = "#microsoft.graph.identitySet"
+			user = @{
+				"@odata.type" = "#microsoft.graph.identity"
+				id = "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96"
+				displayName = "Bob"
+				tenantId = "86dc81db-c112-4228-9222-63f3esaa1edb"
+			}
+		}
+		allowConversationWithoutHost = $true
+	}
+	tenantId = "86dc81db-c112-4228-9222-63f3esaa1edb"
+}
+
+New-MgCommunicationCall -BodyParameter $params
+
+```
+### EXAMPLE 6
+```powershell
+Import-Module Microsoft.Graph.CloudCommunications
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.call"
+	direction = "outgoing"
+	callbackUri = "https://bot.contoso.com/callback"
+	requestedModalities = @(
+		"audio"
+	)
+	mediaConfig = @{
+		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
+	}
+	chatInfo = @{
+		"@odata.type" = "#microsoft.graph.chatInfo"
+		threadId = "19:meeting_Win6Ydo4wsMijFjZS00ZGVjLTk5MGUtOTRjNWY2NmNkYTFm@thread.v2"
+		messageId = "0"
+	}
+	meetingInfo = @{
+		"@odata.type" = "#microsoft.graph.organizerMeetingInfo"
+		organizer = @{
+			"@odata.type" = "#microsoft.graph.identitySet"
+			user = @{
+				"@odata.type" = "#microsoft.graph.identity"
+				id = "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96"
+				tenantId = "aa67bd4c-8475-432d-bd41-39f255720e0a"
+				displayName = "Bob"
+			}
+		}
+		allowConversationWithoutHost = $true
+	}
+	tenantId = "aa67bd4c-8475-432d-bd41-39f255720e0a"
+}
+
+New-MgCommunicationCall -BodyParameter $params
+
+```
+### EXAMPLE 7
+```powershell
+Import-Module Microsoft.Graph.CloudCommunications
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.call"
+	callbackUri = "https://bot.contoso.com/callback"
+	requestedModalities = @(
+		"audio"
+	)
+	mediaConfig = @{
+		"@odata.type" = "#microsoft.graph.serviceHostedMediaConfig"
+		preFetchMedia = @(
+		)
+	}
+	meetingInfo = @{
+		"@odata.type" = "#microsoft.graph.joinMeetingIdMeetingInfo"
+		joinMeetingId = "1234567"
+		passcode = "psw123"
+	}
+	tenantId = "86dc81db-c112-4228-9222-63f3esaa1edb"
+}
+
+New-MgCommunicationCall -BodyParameter $params
+```
+### EXAMPLE 8
+```powershell
+Import-Module Microsoft.Graph.CloudCommunications
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.call"
+	callbackUri = "https://bot.contoso.com/callback"
+	requestedModalities = @(
+		"audio"
+	)
+	mediaConfig = @{
+		"@odata.type" = "#microsoft.graph.serviceHostedMediaConfig"
+		preFetchMedia = @(
+		)
+	}
+	meetingInfo = @{
+		"@odata.type" = "#microsoft.graph.joinMeetingIdMeetingInfo"
+		joinMeetingId = "1234567"
+		passcode = $null
+	}
+	tenantId = "86dc81db-c112-4228-9222-63f3esaa1edb"
+}
+
+New-MgCommunicationCall -BodyParameter $params
+```
+### EXAMPLE 9
+```powershell
+Import-Module Microsoft.Graph.CloudCommunications
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.call"
+	callbackUri = "https://bot.contoso.com/callback"
+	source = @{
+		"@odata.type" = "#microsoft.graph.participantInfo"
+		identity = @{
+			"@odata.type" = "#microsoft.graph.identitySet"
+			applicationInstance = @{
+				"@odata.type" = "#microsoft.graph.identity"
+				displayName = "Calling Bot"
+				id = "3d913abb-aec0-4964-8fa6-3c6850c4f278"
+			}
+		}
+		countryCode = $null
+		endpointType = $null
+		region = $null
+		languageId = $null
+	}
+	targets = @(
+		@{
+			"@odata.type" = "#microsoft.graph.invitationParticipantInfo"
+			identity = @{
+				"@odata.type" = "#microsoft.graph.identitySet"
+				phone = @{
+					"@odata.type" = "#microsoft.graph.identity"
+					id = "+12345678901"
+				}
+			}
+		}
+	)
+	requestedModalities = @(
+		"audio"
+	)
+	mediaConfig = @{
 		"@odata.type" = "#microsoft.graph.serviceHostedMediaConfig"
 	}
-	TenantId = "aa67bd4c-8475-432d-bd41-39f255720e0a"
+	tenantId = "aa67bd4c-8475-432d-bd41-39f255720e0a"
 }
+
 New-MgCommunicationCall -BodyParameter $params
 ```
-
-This example shows how to use the New-MgCommunicationCall Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 4: Using the New-MgCommunicationCall Cmdlet
+### EXAMPLE 10
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
+
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
-	CallbackUri = "https://bot.contoso.com/callback"
-	Source = @{
+	callbackUri = "https://bot.contoso.com/callback"
+	source = @{
 		"@odata.type" = "#microsoft.graph.participantInfo"
-		Identity = @{
+		identity = @{
 			"@odata.type" = "#microsoft.graph.identitySet"
-			ApplicationInstance = @{
+			applicationInstance = @{
 				"@odata.type" = "#microsoft.graph.identity"
-				DisplayName = "Calling Bot"
-				Id = "3d913abb-aec0-4964-8fa6-3c6850c4f278"
+				displayName = "Calling Bot"
+				id = "3d913abb-aec0-4964-8fa6-3c6850c4f278"
 			}
 		}
-		CountryCode = $null
-		EndpointType = $null
-		Region = $null
-		LanguageId = $null
+		countryCode = $null
+		endpointType = $null
+		region = $null
+		languageId = $null
 	}
-	Targets = @(
+	targets = @(
 		@{
 			"@odata.type" = "#microsoft.graph.invitationParticipantInfo"
-			Identity = @{
+			identity = @{
 				"@odata.type" = "#microsoft.graph.identitySet"
-				Phone = @{
+				phone = @{
 					"@odata.type" = "#microsoft.graph.identity"
-					Id = "+12345678901"
+					id = "+12345678901"
 				}
 			}
 		}
 	)
-	RequestedModalities = @(
+	requestedModalities = @(
 		"audio"
 	)
-	MediaConfig = @{
+	mediaConfig = @{
 		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
-		Blob = "<Media Session Configuration>"
+		blob = "&lt;Media Session Configuration&gt;"
 	}
-	TenantId = "aa67bd4c-8475-432d-bd41-39f255720e0a"
+	tenantId = "aa67bd4c-8475-432d-bd41-39f255720e0a"
 }
+
 New-MgCommunicationCall -BodyParameter $params
+
 ```
-
-This example shows how to use the New-MgCommunicationCall Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -230,7 +473,7 @@ Accept wildcard characters: False
 
 ### -AudioRoutingGroups
 .
-To construct, please use Get-Help -Online and see NOTES section for AUDIOROUTINGGROUPS properties and create a hash table.
+To construct, see NOTES section for AUDIOROUTINGGROUPS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAudioRoutingGroup[]
@@ -246,7 +489,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 call
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphCall
@@ -294,7 +537,7 @@ Accept wildcard characters: False
 
 ### -CallOptions
 callOptions
-To construct, please use Get-Help -Online and see NOTES section for CALLOPTIONS properties and create a hash table.
+To construct, see NOTES section for CALLOPTIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphCallOptions
@@ -311,7 +554,7 @@ Accept wildcard characters: False
 ### -CallRoutes
 The routing information on how the call was retargeted.
 Read-only.
-To construct, please use Get-Help -Online and see NOTES section for CALLROUTES properties and create a hash table.
+To construct, see NOTES section for CALLROUTES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphCallRoute[]
@@ -327,7 +570,7 @@ Accept wildcard characters: False
 
 ### -ChatInfo
 chatInfo
-To construct, please use Get-Help -Online and see NOTES section for CHATINFO properties and create a hash table.
+To construct, see NOTES section for CHATINFO properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphChatInfo
@@ -343,7 +586,7 @@ Accept wildcard characters: False
 
 ### -ContentSharingSessions
 .
-To construct, please use Get-Help -Online and see NOTES section for CONTENTSHARINGSESSIONS properties and create a hash table.
+To construct, see NOTES section for CONTENTSHARINGSESSIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphContentSharingSession[]
@@ -390,7 +633,7 @@ Accept wildcard characters: False
 
 ### -IncomingContext
 incomingContext
-To construct, please use Get-Help -Online and see NOTES section for INCOMINGCONTEXT properties and create a hash table.
+To construct, see NOTES section for INCOMINGCONTEXT properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIncomingContext
@@ -421,7 +664,7 @@ Accept wildcard characters: False
 
 ### -MediaState
 callMediaState
-To construct, please use Get-Help -Online and see NOTES section for MEDIASTATE properties and create a hash table.
+To construct, see NOTES section for MEDIASTATE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphCallMediaState
@@ -467,7 +710,7 @@ Accept wildcard characters: False
 
 ### -Operations
 .
-To construct, please use Get-Help -Online and see NOTES section for OPERATIONS properties and create a hash table.
+To construct, see NOTES section for OPERATIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphCommsOperation[]
@@ -483,7 +726,7 @@ Accept wildcard characters: False
 
 ### -Participants
 .
-To construct, please use Get-Help -Online and see NOTES section for PARTICIPANTS properties and create a hash table.
+To construct, see NOTES section for PARTICIPANTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphParticipant[]
@@ -515,7 +758,7 @@ Accept wildcard characters: False
 
 ### -ResultInfo
 resultInfo
-To construct, please use Get-Help -Online and see NOTES section for RESULTINFO properties and create a hash table.
+To construct, see NOTES section for RESULTINFO properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphResultInfo
@@ -531,7 +774,7 @@ Accept wildcard characters: False
 
 ### -Source
 participantInfo
-To construct, please use Get-Help -Online and see NOTES section for SOURCE properties and create a hash table.
+To construct, see NOTES section for SOURCE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphParticipantInfo
@@ -546,7 +789,7 @@ Accept wildcard characters: False
 ```
 
 ### -State
-.
+callState
 
 ```yaml
 Type: String
@@ -578,7 +821,7 @@ Accept wildcard characters: False
 ### -Targets
 The targets of the call.
 Required information for creating peer to peer call.
-To construct, please use Get-Help -Online and see NOTES section for TARGETS properties and create a hash table.
+To construct, see NOTES section for TARGETS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphInvitationParticipantInfo[]
@@ -609,7 +852,7 @@ Accept wildcard characters: False
 
 ### -ToneInfo
 toneInfo
-To construct, please use Get-Help -Online and see NOTES section for TONEINFO properties and create a hash table.
+To construct, see NOTES section for TONEINFO properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphToneInfo
@@ -625,7 +868,7 @@ Accept wildcard characters: False
 
 ### -Transcription
 callTranscriptionInfo
-To construct, please use Get-Help -Online and see NOTES section for TRANSCRIPTION properties and create a hash table.
+To construct, see NOTES section for TRANSCRIPTION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphCallTranscriptionInfo
@@ -688,19 +931,19 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-AUDIOROUTINGGROUPS <IMicrosoftGraphAudioRoutingGroup\[]>: .
+`AUDIOROUTINGGROUPS <IMicrosoftGraphAudioRoutingGroup[]>`: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Receivers <String[]>]`: 
-  - `[RoutingMode <String>]`: 
+  - `[RoutingMode <String>]`: routingMode
   - `[Sources <String[]>]`: 
 
-BODYPARAMETER `<IMicrosoftGraphCall>`: call
+`BODYPARAMETER <IMicrosoftGraphCall>`: call
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AudioRoutingGroups <IMicrosoftGraphAudioRoutingGroup[]>]`: 
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[Receivers <String[]>]`: 
-    - `[RoutingMode <String>]`: 
+    - `[RoutingMode <String>]`: routingMode
     - `[Sources <String[]>]`: 
   - `[CallChainId <String>]`: A unique identifier for all the participant calls in a conference or a unique identifier for two participant calls in a P2P call.  This needs to be copied over from Microsoft.Graph.Call.CallChainId.
   - `[CallOptions <IMicrosoftGraphCallOptions>]`: callOptions
@@ -765,7 +1008,7 @@ BODYPARAMETER `<IMicrosoftGraphCall>`: call
     - `[MediaStreams <IMicrosoftGraphMediaStream[]>]`: The list of media streams.
       - `[Direction <String>]`: mediaDirection
       - `[Label <String>]`: The media stream label.
-      - `[MediaType <String>]`: 
+      - `[MediaType <String>]`: modality
       - `[ServerMuted <Boolean?>]`: If the media is muted by the server.
       - `[SourceId <String>]`: The source ID.
     - `[Metadata <String>]`: A blob of data provided by the participant in the roster.
@@ -773,10 +1016,14 @@ BODYPARAMETER `<IMicrosoftGraphCall>`: call
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Initiator <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[RecordingStatus <String>]`: recordingStatus
+    - `[RestrictedExperience <IMicrosoftGraphOnlineMeetingRestricted>]`: onlineMeetingRestricted
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[ContentSharingDisabled <String>]`: onlineMeetingContentSharingDisabledReason
+      - `[VideoDisabled <String>]`: onlineMeetingVideoDisabledReason
   - `[RequestedModalities <String[]>]`: The list of requested modalities. Possible values are: unknown, audio, video, videoBasedScreenSharing, data.
   - `[ResultInfo <IMicrosoftGraphResultInfo>]`: resultInfo
   - `[Source <IMicrosoftGraphParticipantInfo>]`: participantInfo
-  - `[State <String>]`: 
+  - `[State <String>]`: callState
   - `[Subject <String>]`: The subject of the conversation.
   - `[Targets <IMicrosoftGraphInvitationParticipantInfo[]>]`: The targets of the call. Required information for creating peer to peer call.
     - `[Hidden <Boolean?>]`: Optional. Whether to hide the participant from the roster.
@@ -794,12 +1041,12 @@ BODYPARAMETER `<IMicrosoftGraphCall>`: call
     - `[LastModifiedDateTime <DateTime?>]`: The state modified time in UTC.
     - `[State <String>]`: callTranscriptionState
 
-CALLOPTIONS `<IMicrosoftGraphCallOptions>`: callOptions
+`CALLOPTIONS <IMicrosoftGraphCallOptions>`: callOptions
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[HideBotAfterEscalation <Boolean?>]`: Indicates whether to hide the app after the call is escalated.
   - `[IsContentSharingNotificationEnabled <Boolean?>]`: Indicates whether content sharing notifications should be enabled for the call.
 
-CALLROUTES <IMicrosoftGraphCallRoute\[]>: The routing information on how the call was retargeted. Read-only.
+`CALLROUTES <IMicrosoftGraphCallRoute[]>`: The routing information on how the call was retargeted. Read-only.
   - `[Final <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -811,16 +1058,16 @@ CALLROUTES <IMicrosoftGraphCallRoute\[]>: The routing information on how the cal
   - `[Original <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[RoutingType <String>]`: routingType
 
-CHATINFO `<IMicrosoftGraphChatInfo>`: chatInfo
+`CHATINFO <IMicrosoftGraphChatInfo>`: chatInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[MessageId <String>]`: The unique identifier of a message in a Microsoft Teams channel.
   - `[ReplyChainMessageId <String>]`: The ID of the reply message.
   - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
 
-CONTENTSHARINGSESSIONS <IMicrosoftGraphContentSharingSession\[]>: .
+`CONTENTSHARINGSESSIONS <IMicrosoftGraphContentSharingSession[]>`: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
-INCOMINGCONTEXT `<IMicrosoftGraphIncomingContext>`: incomingContext
+`INCOMINGCONTEXT <IMicrosoftGraphIncomingContext>`: incomingContext
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ObservedParticipantId <String>]`: The ID of the participant that is under observation. Read-only.
   - `[OnBehalfOf <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -834,11 +1081,11 @@ INCOMINGCONTEXT `<IMicrosoftGraphIncomingContext>`: incomingContext
   - `[SourceParticipantId <String>]`: The ID of the participant that triggered the incoming call. Read-only.
   - `[Transferor <IMicrosoftGraphIdentitySet>]`: identitySet
 
-MEDIASTATE `<IMicrosoftGraphCallMediaState>`: callMediaState
+`MEDIASTATE <IMicrosoftGraphCallMediaState>`: callMediaState
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Audio <String>]`: mediaState
 
-OPERATIONS <IMicrosoftGraphCommsOperation\[]>: .
+`OPERATIONS <IMicrosoftGraphCommsOperation[]>`: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ClientContext <String>]`: Unique Client Context string. Max limit is 256 chars.
   - `[ResultInfo <IMicrosoftGraphResultInfo>]`: resultInfo
@@ -848,7 +1095,7 @@ OPERATIONS <IMicrosoftGraphCommsOperation\[]>: .
     - `[Subcode <Int32?>]`: The result sub-code.
   - `[Status <String>]`: operationStatus
 
-PARTICIPANTS <IMicrosoftGraphParticipant\[]>: .
+`PARTICIPANTS <IMicrosoftGraphParticipant[]>`: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Info <IMicrosoftGraphParticipantInfo>]`: participantInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -870,7 +1117,7 @@ PARTICIPANTS <IMicrosoftGraphParticipant\[]>: .
   - `[MediaStreams <IMicrosoftGraphMediaStream[]>]`: The list of media streams.
     - `[Direction <String>]`: mediaDirection
     - `[Label <String>]`: The media stream label.
-    - `[MediaType <String>]`: 
+    - `[MediaType <String>]`: modality
     - `[ServerMuted <Boolean?>]`: If the media is muted by the server.
     - `[SourceId <String>]`: The source ID.
   - `[Metadata <String>]`: A blob of data provided by the participant in the roster.
@@ -878,14 +1125,18 @@ PARTICIPANTS <IMicrosoftGraphParticipant\[]>: .
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Initiator <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[RecordingStatus <String>]`: recordingStatus
+  - `[RestrictedExperience <IMicrosoftGraphOnlineMeetingRestricted>]`: onlineMeetingRestricted
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[ContentSharingDisabled <String>]`: onlineMeetingContentSharingDisabledReason
+    - `[VideoDisabled <String>]`: onlineMeetingVideoDisabledReason
 
-RESULTINFO `<IMicrosoftGraphResultInfo>`: resultInfo
+`RESULTINFO <IMicrosoftGraphResultInfo>`: resultInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Code <Int32?>]`: The result code.
   - `[Message <String>]`: The message.
   - `[Subcode <Int32?>]`: The result sub-code.
 
-SOURCE `<IMicrosoftGraphParticipantInfo>`: participantInfo
+`SOURCE <IMicrosoftGraphParticipantInfo>`: participantInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CountryCode <String>]`: The ISO 3166-1 Alpha-2 country code of the participant's best estimated physical location at the start of the call. Read-only.
   - `[EndpointType <String>]`: endpointType
@@ -901,7 +1152,7 @@ SOURCE `<IMicrosoftGraphParticipantInfo>`: participantInfo
   - `[ParticipantId <String>]`: The participant ID of the participant. Read-only.
   - `[Region <String>]`: The home region of the participant. This can be a country, a continent, or a larger geographic region. This does not change based on the participant's current physical location. Read-only.
 
-TARGETS <IMicrosoftGraphInvitationParticipantInfo\[]>: The targets of the call. Required information for creating peer to peer call.
+`TARGETS <IMicrosoftGraphInvitationParticipantInfo[]>`: The targets of the call. Required information for creating peer to peer call.
   - `[Hidden <Boolean?>]`: Optional. Whether to hide the participant from the roster.
   - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -915,16 +1166,19 @@ TARGETS <IMicrosoftGraphInvitationParticipantInfo\[]>: The targets of the call. 
   - `[RemoveFromDefaultAudioRoutingGroup <Boolean?>]`: Optional. Whether to remove them from the main mixer.
   - `[ReplacesCallId <String>]`: Optional. The call which the target identity is currently a part of. For peer-to-peer case, the call will be dropped once the participant is added successfully.
 
-TONEINFO `<IMicrosoftGraphToneInfo>`: toneInfo
+`TONEINFO <IMicrosoftGraphToneInfo>`: toneInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[SequenceId <Int64?>]`: An incremental identifier used for ordering DTMF events.
   - `[Tone <String>]`: tone
 
-TRANSCRIPTION `<IMicrosoftGraphCallTranscriptionInfo>`: callTranscriptionInfo
+`TRANSCRIPTION <IMicrosoftGraphCallTranscriptionInfo>`: callTranscriptionInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[LastModifiedDateTime <DateTime?>]`: The state modified time in UTC.
   - `[State <String>]`: callTranscriptionState
 
 ## RELATED LINKS
+[New-MgBetaCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaCommunicationCall?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[New-MgBetaCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaCommunicationCall?view=graph-powershell-beta)
+

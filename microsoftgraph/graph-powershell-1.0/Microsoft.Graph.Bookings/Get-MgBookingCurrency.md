@@ -1,14 +1,18 @@
 ---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.bookings/get-mgbookingcurrency
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingcurrency
 schema: 2.0.0
 ---
 
 # Get-MgBookingCurrency
 
 ## SYNOPSIS
-Get bookingCurrencies from solutions
+Get the properties of a bookingCurrency object that is available to a Microsoft Bookings business.
+Use the **id** property, which is the currency code, to specify the currency.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBookingCurrency](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingCurrency?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -32,27 +36,24 @@ Get-MgBookingCurrency -InputObject <IBookingsIdentity> [-ExpandProperty <String[
 ```
 
 ## DESCRIPTION
-Get bookingCurrencies from solutions
+Get the properties of a bookingCurrency object that is available to a Microsoft Bookings business.
+Use the **id** property, which is the currency code, to specify the currency.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgBookingCurrency Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Bookings
-Get-MgBookingCurrency -BookingCurrencyId $bookingCurrencyId
+{{ Add code here }}
 ```
 
-This example shows how to use the Get-MgBookingCurrency Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+{{ Add output here }}
 
-### Example 2: Using the Get-MgBookingCurrency Cmdlet
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Bookings
-Get-MgBookingCurrency
+{{ Add code here }}
 ```
 
-This example shows how to use the Get-MgBookingCurrency Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -134,7 +135,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IBookingsIdentity
@@ -256,18 +257,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+`INPUTOBJECT <IBookingsIdentity>`: Identity Parameter
   - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
   - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness
   - `[BookingCurrencyId <String>]`: The unique identifier of bookingCurrency
   - `[BookingCustomQuestionId <String>]`: The unique identifier of bookingCustomQuestion
   - `[BookingCustomerBaseId <String>]`: The unique identifier of bookingCustomerBase
-  - `[BookingCustomerId <String>]`: The unique identifier of bookingCustomer
   - `[BookingServiceId <String>]`: The unique identifier of bookingService
   - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
-  - `[BookingStaffMemberId <String>]`: The unique identifier of bookingStaffMember
-  - `[BusinessScenarioId <String>]`: The unique identifier of businessScenario
-  - `[BusinessScenarioTaskId <String>]`: The unique identifier of businessScenarioTask
-  - `[PlannerPlanConfigurationLocalizationId <String>]`: The unique identifier of plannerPlanConfigurationLocalization
 
 ## RELATED LINKS
+[Get-MgBetaBookingCurrency](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingCurrency?view=graph-powershell-beta)

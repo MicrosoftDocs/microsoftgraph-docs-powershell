@@ -68,8 +68,10 @@ landingContent:
     linkLists:
       - linkListType: reference 
         links:
-          - text: Cmdlet reference
+          - text: V1.0 cmdlet reference
             url: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/?view=graph-powershell-1.0
+          - text: Beta cmdlet reference
+            url: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.beta.applications/?view=graph-powershell-beta
 
 
 

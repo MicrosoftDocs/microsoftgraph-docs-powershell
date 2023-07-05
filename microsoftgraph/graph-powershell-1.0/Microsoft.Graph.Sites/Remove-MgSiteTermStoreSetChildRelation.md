@@ -1,7 +1,7 @@
 ---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/remove-mgsitetermstoresetchildrelation
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitetermstoresetchildrelation
 schema: 2.0.0
 ---
 
@@ -10,18 +10,45 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property relations for sites
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSiteTermStoreSetChildRelation](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteTermStoreSetChildRelation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete1 (Default)
 ```
-Remove-MgSiteTermStoreSetChildRelation -RelationId <String> -SetId <String> -SiteId <String> -StoreId <String>
- -TermId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgSiteTermStoreSetChildRelation -RelationId <String> -SetId <String> -SiteId <String> -TermId <String>
+ [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Delete3
+```
+Remove-MgSiteTermStoreSetChildRelation -RelationId <String> -SetId <String> -SiteId <String> -TermId <String>
+ -StoreId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Delete2
+```
+Remove-MgSiteTermStoreSetChildRelation -RelationId <String> -SetId <String> -SiteId <String> -TermId <String>
+ -TermId1 <String> -StoreId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Delete
 ```
-Remove-MgSiteTermStoreSetChildRelation -RelationId <String> -SetId <String> -SiteId <String> -StoreId <String>
- -TermId <String> -TermId1 <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgSiteTermStoreSetChildRelation -RelationId <String> -SetId <String> -SiteId <String> -TermId <String>
+ -TermId1 <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### DeleteViaIdentity3
+```
+Remove-MgSiteTermStoreSetChildRelation -InputObject <ISitesIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### DeleteViaIdentity2
+```
+Remove-MgSiteTermStoreSetChildRelation -InputObject <ISitesIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity1
@@ -40,6 +67,20 @@ Remove-MgSiteTermStoreSetChildRelation -InputObject <ISitesIdentity> [-IfMatch <
 Delete navigation property relations for sites
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -60,11 +101,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: DeleteViaIdentity1, DeleteViaIdentity
+Parameter Sets: DeleteViaIdentity3, DeleteViaIdentity2, DeleteViaIdentity1, DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -94,7 +135,7 @@ The unique identifier of relation
 
 ```yaml
 Type: String
-Parameter Sets: Delete1, Delete
+Parameter Sets: Delete1, Delete3, Delete2, Delete
 Aliases:
 
 Required: True
@@ -109,7 +150,7 @@ The unique identifier of set
 
 ```yaml
 Type: String
-Parameter Sets: Delete1, Delete
+Parameter Sets: Delete1, Delete3, Delete2, Delete
 Aliases:
 
 Required: True
@@ -124,7 +165,7 @@ The unique identifier of site
 
 ```yaml
 Type: String
-Parameter Sets: Delete1, Delete
+Parameter Sets: Delete1, Delete3, Delete2, Delete
 Aliases:
 
 Required: True
@@ -139,7 +180,7 @@ The unique identifier of store
 
 ```yaml
 Type: String
-Parameter Sets: Delete1, Delete
+Parameter Sets: Delete3, Delete2
 Aliases:
 
 Required: True
@@ -154,7 +195,7 @@ The unique identifier of term
 
 ```yaml
 Type: String
-Parameter Sets: Delete1, Delete
+Parameter Sets: Delete1, Delete3, Delete2, Delete
 Aliases:
 
 Required: True
@@ -169,7 +210,7 @@ The unique identifier of term
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Delete2, Delete
 Aliases:
 
 Required: True
@@ -228,52 +269,45 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+`INPUTOBJECT <ISitesIdentity>`: Identity Parameter
   - `[BaseItemId <String>]`: The unique identifier of baseItem
-  - `[BitlockerRecoveryKeyId <String>]`: The unique identifier of bitlockerRecoveryKey
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[ContentTypeId1 <String>]`: The unique identifier of contentType
-  - `[DataLossPreventionPolicyId <String>]`: The unique identifier of dataLossPreventionPolicy
   - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
   - `[DriveId <String>]`: The unique identifier of drive
   - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
   - `[GroupId <String>]`: The unique identifier of group
   - `[GroupId1 <String>]`: The unique identifier of group
-  - `[HorizontalSectionColumnId <String>]`: The unique identifier of horizontalSectionColumn
-  - `[HorizontalSectionId <String>]`: The unique identifier of horizontalSection
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
-  - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
   - `[Interval <String>]`: Usage: interval='{interval}'
+  - `[ItemActivityId <String>]`: The unique identifier of itemActivity
   - `[ItemActivityStatId <String>]`: The unique identifier of itemActivityStat
   - `[ListId <String>]`: The unique identifier of list
-  - `[ListId1 <String>]`: Usage: listId='{listId}'
   - `[ListItemId <String>]`: The unique identifier of listItem
   - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
   - `[NotebookId <String>]`: The unique identifier of notebook
+  - `[OnenoteOperationId <String>]`: The unique identifier of onenoteOperation
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
+  - `[OnenoteResourceId <String>]`: The unique identifier of onenoteResource
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
   - `[Path <String>]`: Usage: path='{path}'
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[RelationId <String>]`: The unique identifier of relation
   - `[RichLongRunningOperationId <String>]`: The unique identifier of richLongRunningOperation
-  - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
-  - `[SensitivityLabelId1 <String>]`: The unique identifier of sensitivityLabel
+  - `[SectionGroupId <String>]`: The unique identifier of sectionGroup
+  - `[SectionGroupId1 <String>]`: The unique identifier of sectionGroup
   - `[SetId <String>]`: The unique identifier of set
   - `[SetId1 <String>]`: The unique identifier of set
   - `[SiteId <String>]`: The unique identifier of site
   - `[SiteId1 <String>]`: The unique identifier of site
-  - `[SitePageId <String>]`: The unique identifier of sitePage
   - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
   - `[StoreId <String>]`: The unique identifier of store
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
-  - `[ThreatAssessmentRequestId <String>]`: The unique identifier of threatAssessmentRequest
-  - `[ThreatAssessmentResultId <String>]`: The unique identifier of threatAssessmentResult
-  - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
-  - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Remove-MgBetaSiteTermStoreSetChildRelation](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteTermStoreSetChildRelation?view=graph-powershell-beta)

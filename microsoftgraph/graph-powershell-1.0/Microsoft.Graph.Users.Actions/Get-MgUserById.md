@@ -1,38 +1,44 @@
 ---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/get-mguserbyid
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/get-mguserbyid
 schema: 2.0.0
 ---
 
 # Get-MgUserById
 
 ## SYNOPSIS
-Invoke action getByIds
+Return the directory objects specified in a list of IDs.
+Some common uses for this function are to:
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserById](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Get-MgBetaUserById?view=graph-powershell-beta)
 
 ## SYNTAX
 
-### GetExpanded1 (Default)
+### GetExpanded (Default)
 ```
 Get-MgUserById [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-Types <String[]>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### Get1
+### Get
 ```
 Get-MgUserById
- -BodyParameter <IPathsBjm3ZyUsersMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema1> [-WhatIf]
+ -BodyParameter <IPathsBjm3ZyUsersMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema> [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke action getByIds
+Return the directory objects specified in a list of IDs.
+Some common uses for this function are to:
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.DirectoryObjects
+```
 
 $params = @{
 	Ids = @(
@@ -49,11 +55,6 @@ $params = @{
 }
 
 Get-MgDirectoryObjectById -BodyParameter $params
-```
-
-This example shows how to use the Get-MgUserById Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -62,7 +63,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: GetExpanded1
+Parameter Sets: GetExpanded
 Aliases:
 
 Required: False
@@ -74,11 +75,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsBjm3ZyUsersMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema1
-Parameter Sets: Get1
+Type: IPathsBjm3ZyUsersMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -93,7 +94,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String[]
-Parameter Sets: GetExpanded1
+Parameter Sets: GetExpanded
 Aliases:
 
 Required: False
@@ -108,7 +109,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String[]
-Parameter Sets: GetExpanded1
+Parameter Sets: GetExpanded
 Aliases:
 
 Required: False
@@ -154,7 +155,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsBjm3ZyUsersMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema1
+### Microsoft.Graph.PowerShell.Models.IPathsBjm3ZyUsersMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
@@ -167,9 +168,10 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsBjm3ZyUsersMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema1>`: .
+`BODYPARAMETER <IPathsBjm3ZyUsersMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Ids <String[]>]`: 
   - `[Types <String[]>]`: 
 
 ## RELATED LINKS
+[Get-MgBetaUserById](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Get-MgBetaUserById?view=graph-powershell-beta)

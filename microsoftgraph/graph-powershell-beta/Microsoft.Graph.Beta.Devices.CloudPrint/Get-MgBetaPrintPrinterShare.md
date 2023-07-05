@@ -1,0 +1,314 @@
+---
+external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
+Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintprintershare
+schema: 2.0.0
+---
+
+# Get-MgBetaPrintPrinterShare
+
+## SYNOPSIS
+Get printerShares from print
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrintPrinterShare](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintPrinterShare?view=graph-powershell-v1.0)
+
+## SYNTAX
+
+### List (Default)
+```
+Get-MgBetaPrintPrinterShare [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [<CommonParameters>]
+```
+
+### Get2
+```
+Get-MgBetaPrintPrinterShare -PrinterShareId <String> -PrinterId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
+```
+
+### Get
+```
+Get-MgBetaPrintPrinterShare -PrinterShareId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
+```
+
+### List1
+```
+Get-MgBetaPrintPrinterShare -PrinterId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
+ [-All] [-CountVariable <String>] [<CommonParameters>]
+```
+
+### Get1
+```
+Get-MgBetaPrintPrinterShare -PrinterId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
+```
+
+### GetViaIdentity2
+```
+Get-MgBetaPrintPrinterShare -InputObject <IDevicesCloudPrintIdentity> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
+```
+
+### GetViaIdentity1
+```
+Get-MgBetaPrintPrinterShare -InputObject <IDevicesCloudPrintIdentity> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
+```
+
+### GetViaIdentity
+```
+Get-MgBetaPrintPrinterShare -InputObject <IDevicesCloudPrintIdentity> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
+```
+
+## DESCRIPTION
+Get printerShares from print
+
+## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
+
+Get-MgBetaPrintPrinterShare -PrinterId $printerId
+
+```
+## PARAMETERS
+
+### -All
+List all pages.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: List, List1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CountVariable
+Specifies a count of the total number of items in a collection.
+By default, this variable will be set in the global scope.
+
+```yaml
+Type: String
+Parameter Sets: List, List1
+Aliases: CV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ExpandProperty
+Expand related entities
+
+```yaml
+Type: String[]
+Parameter Sets: (All)
+Aliases: Expand
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Filter
+Filter items by property values
+
+```yaml
+Type: String
+Parameter Sets: List, List1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InputObject
+Identity Parameter
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+```yaml
+Type: IDevicesCloudPrintIdentity
+Parameter Sets: GetViaIdentity2, GetViaIdentity1, GetViaIdentity
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -PageSize
+Sets the page size of results.
+
+```yaml
+Type: Int32
+Parameter Sets: List, List1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PrinterId
+The unique identifier of printer
+
+```yaml
+Type: String
+Parameter Sets: Get2, List1, Get1
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PrinterShareId
+The unique identifier of printerShare
+
+```yaml
+Type: String
+Parameter Sets: Get2, Get
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Property
+Select properties to be returned
+
+```yaml
+Type: String[]
+Parameter Sets: (All)
+Aliases: Select
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Search
+Search items by search phrases
+
+```yaml
+Type: String
+Parameter Sets: List, List1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Sort
+Order items by property values
+
+```yaml
+Type: String[]
+Parameter Sets: List, List1
+Aliases: OrderBy
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Top
+Show only the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List, List1
+Aliases: Limit
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List, List1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
+## INPUTS
+
+### Microsoft.Graph.Beta.PowerShell.Models.IDevicesCloudPrintIdentity
+## OUTPUTS
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrinterShare
+## NOTES
+
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+`INPUTOBJECT <IDevicesCloudPrintIdentity>`: Identity Parameter
+  - `[GroupId <String>]`: The unique identifier of group
+  - `[PrintConnectorId <String>]`: The unique identifier of printConnector
+  - `[PrintDocumentId <String>]`: The unique identifier of printDocument
+  - `[PrintJobId <String>]`: The unique identifier of printJob
+  - `[PrintOperationId <String>]`: The unique identifier of printOperation
+  - `[PrintServiceEndpointId <String>]`: The unique identifier of printServiceEndpoint
+  - `[PrintServiceId <String>]`: The unique identifier of printService
+  - `[PrintTaskDefinitionId <String>]`: The unique identifier of printTaskDefinition
+  - `[PrintTaskId <String>]`: The unique identifier of printTask
+  - `[PrintTaskTriggerId <String>]`: The unique identifier of printTaskTrigger
+  - `[PrinterId <String>]`: The unique identifier of printer
+  - `[PrinterShareId <String>]`: The unique identifier of printerShare
+  - `[UserId <String>]`: The unique identifier of user
+
+## RELATED LINKS
+[Get-MgPrintPrinterShare](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintPrinterShare?view=graph-powershell-v1.0)
+

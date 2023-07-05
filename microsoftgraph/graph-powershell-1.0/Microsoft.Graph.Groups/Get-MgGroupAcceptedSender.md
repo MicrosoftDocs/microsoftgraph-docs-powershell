@@ -1,15 +1,17 @@
 ---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/get-mggroupacceptedsender
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupacceptedsender
 schema: 2.0.0
 ---
 
 # Get-MgGroupAcceptedSender
 
 ## SYNOPSIS
-The list of users or groups that are allowed to create post's or calendar events in this group.
-If this list is non-empty then only users or groups listed here are allowed to post.
+Users in the accepted senders list can post to conversations of the group (identified in the GET request URL).\nMake sure you do not specify the same user or group in the accepted senders and rejected senders lists, otherwise you will get an error.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupAcceptedSender](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupAcceptedSender?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -19,19 +21,15 @@ Get-MgGroupAcceptedSender -GroupId <String> [-Filter <String>] [-Property <Strin
 ```
 
 ## DESCRIPTION
-The list of users or groups that are allowed to create post's or calendar events in this group.
-If this list is non-empty then only users or groups listed here are allowed to post.
+Users in the accepted senders list can post to conversations of the group (identified in the GET request URL).\nMake sure you do not specify the same user or group in the accepted senders and rejected senders lists, otherwise you will get an error.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgGroupAcceptedSender Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Groups
 Get-MgGroupAcceptedSender -GroupId $groupId
 ```
-
-This example shows how to use the Get-MgGroupAcceptedSender Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -184,3 +182,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaGroupAcceptedSender](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupAcceptedSender?view=graph-powershell-beta)

@@ -62,7 +62,6 @@ function Update-GraphHelpByProfile {
         [ValidateNotNullOrEmpty()]
         $ModulesToGenerate = @()
     )
-    Select-MgProfile -Name $GraphProfile
     $ModulesToGenerate | ForEach-Object {
         $ModuleName = $_
         Update-GraphModuleHelp -GraphProfile $GraphProfile -GraphProfilePath $GraphProfilePath -Module $ModuleName -ModulePrefix $ModulePrefix
@@ -80,12 +79,17 @@ function Update-GraphModuleHelp {
         [ValidateNotNullOrEmpty()]
         [string] $ModulePrefix = "Microsoft.Graph"
     )
+    
     $moduleImportName = "$ModulePrefix.$ModuleName"
-    $moduleDocsPath = Join-Path $PSScriptRoot ".\$GraphProfilePath\$moduleImportName"
+    $Path = "$ModulePrefix.$ModuleName"
+    if($GraphProfile -eq 'beta'){
+       $moduleImportName = "$ModulePrefix.Beta.$ModuleName"
+       $Path = "$ModulePrefix.Beta.$ModuleName"
+    }
+    $moduleDocsPath = Join-Path $PSScriptRoot ".\$GraphProfilePath\$Path"
     $logsPath = Join-Path $PSScriptRoot ".\logs\$moduleImportName-$GraphProfile.txt"
 
-    Import-Module $moduleImportName -Force -Global
-    Select-MgProfile $GraphProfile
+    Import-Module $moduleImportName -RequiredVersion 2.0.0 -Force -Global
     Update-Help -ModuleDocsPath $moduleDocsPath -LogsPath $logsPath
 }
 
@@ -102,7 +106,7 @@ if ($PSEdition -ne 'Core') {
 }
 Set-Location microsoftgraph-docs-powershell
 $date = Get-Date -Format "dd-MM-yyyy"
-$proposedBranch = "weekly_update_help_files_"+$date
+$proposedBranch = "weekly_v2_docs_update_$date"
 $exists = git branch -l $proposedBranch
 if ([string]::IsNullOrEmpty($exists)) {
     git checkout -b $proposedBranch

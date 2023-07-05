@@ -1,14 +1,21 @@
 ---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/invoke-mgunarchiveteam
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgunarchiveteam
 schema: 2.0.0
 ---
 
 # Invoke-MgUnarchiveTeam
 
 ## SYNOPSIS
-Invoke action unarchive
+Restore an archived team.
+This restores users' ability to send messages and edit the team, abiding by tenant and team settings.
+Teams are archived using the archive API.
+Unarchiving is an async operation.
+A team is unarchived once the async operation completes successfully, which may occur subsequent to a response from this API.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaUnarchiveTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaUnarchiveTeam?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -23,24 +30,25 @@ Invoke-MgUnarchiveTeam -InputObject <ITeamsIdentity> [-PassThru] [-WhatIf] [-Con
 ```
 
 ## DESCRIPTION
-Invoke action unarchive
+Restore an archived team.
+This restores users' ability to send messages and edit the team, abiding by tenant and team settings.
+Teams are archived using the archive API.
+Unarchiving is an async operation.
+A team is unarchived once the async operation completes successfully, which may occur subsequent to a response from this API.
 
 ## EXAMPLES
 
-### Example 1: Using the Invoke-MgUnarchiveTeam Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
 Invoke-MgUnarchiveTeam -TeamId $teamId
 ```
 
-This example shows how to use the Invoke-MgUnarchiveTeam Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ## PARAMETERS
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ITeamsIdentity
@@ -133,7 +141,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat
@@ -147,24 +155,18 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[OpenShiftChangeRequestId <String>]`: The unique identifier of openShiftChangeRequest
   - `[OpenShiftId <String>]`: The unique identifier of openShift
   - `[PinnedChatMessageInfoId <String>]`: The unique identifier of pinnedChatMessageInfo
-  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SchedulingGroupId <String>]`: The unique identifier of schedulingGroup
   - `[SharedWithChannelTeamInfoId <String>]`: The unique identifier of sharedWithChannelTeamInfo
   - `[ShiftId <String>]`: The unique identifier of shift
   - `[SwapShiftsChangeRequestId <String>]`: The unique identifier of swapShiftsChangeRequest
   - `[TeamId <String>]`: The unique identifier of team
-  - `[TeamTemplateDefinitionId <String>]`: The unique identifier of teamTemplateDefinition
-  - `[TeamTemplateId <String>]`: The unique identifier of teamTemplate
   - `[TeamsAppDefinitionId <String>]`: The unique identifier of teamsAppDefinition
   - `[TeamsAppId <String>]`: The unique identifier of teamsApp
   - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
   - `[TeamsAsyncOperationId <String>]`: The unique identifier of teamsAsyncOperation
   - `[TeamsTabId <String>]`: The unique identifier of teamsTab
-  - `[TeamworkDeviceId <String>]`: The unique identifier of teamworkDevice
-  - `[TeamworkDeviceOperationId <String>]`: The unique identifier of teamworkDeviceOperation
   - `[TeamworkTagId <String>]`: The unique identifier of teamworkTag
   - `[TeamworkTagMemberId <String>]`: The unique identifier of teamworkTagMember
-  - `[TimeCardId <String>]`: The unique identifier of timeCard
   - `[TimeOffId <String>]`: The unique identifier of timeOff
   - `[TimeOffReasonId <String>]`: The unique identifier of timeOffReason
   - `[TimeOffRequestId <String>]`: The unique identifier of timeOffRequest
@@ -173,3 +175,4 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Invoke-MgBetaUnarchiveTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaUnarchiveTeam?view=graph-powershell-beta)

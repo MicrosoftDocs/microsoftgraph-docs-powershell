@@ -13,29 +13,29 @@ Access the default site with /sites/root.
 
 ## SYNTAX
 
-### RemoveExpanded1 (Default)
+### RemoveExpanded (Default)
 ```
-Remove-MgGroupSite -GroupId <String> [-AdditionalProperties <Hashtable>] [-Value <IMicrosoftGraphSite1[]>]
+Remove-MgGroupSite -GroupId <String> [-AdditionalProperties <Hashtable>] [-Value <IMicrosoftGraphSite[]>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Remove1
+### Remove
 ```
 Remove-MgGroupSite -GroupId <String>
- -BodyParameter <IPaths8J6HbtGroupsGroupIdSitesMicrosoftGraphRemovePostRequestbodyContentApplicationJsonSchema1>
+ -BodyParameter <IPaths8J6HbtGroupsGroupIdSitesMicrosoftGraphRemovePostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### RemoveViaIdentityExpanded1
+### RemoveViaIdentityExpanded
 ```
 Remove-MgGroupSite -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
- [-Value <IMicrosoftGraphSite1[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Value <IMicrosoftGraphSite[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### RemoveViaIdentity1
+### RemoveViaIdentity
 ```
 Remove-MgGroupSite -InputObject <IGroupsIdentity>
- -BodyParameter <IPaths8J6HbtGroupsGroupIdSitesMicrosoftGraphRemovePostRequestbodyContentApplicationJsonSchema1>
+ -BodyParameter <IPaths8J6HbtGroupsGroupIdSitesMicrosoftGraphRemovePostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -52,7 +52,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: RemoveExpanded1, RemoveViaIdentityExpanded1
+Parameter Sets: RemoveExpanded, RemoveViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -67,8 +67,8 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths8J6HbtGroupsGroupIdSitesMicrosoftGraphRemovePostRequestbodyContentApplicationJsonSchema1
-Parameter Sets: Remove1, RemoveViaIdentity1
+Type: IPaths8J6HbtGroupsGroupIdSitesMicrosoftGraphRemovePostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Remove, RemoveViaIdentity
 Aliases:
 
 Required: True
@@ -83,7 +83,7 @@ key: id of group
 
 ```yaml
 Type: String
-Parameter Sets: RemoveExpanded1, Remove1
+Parameter Sets: RemoveExpanded, Remove
 Aliases:
 
 Required: True
@@ -99,7 +99,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IGroupsIdentity
-Parameter Sets: RemoveViaIdentityExpanded1, RemoveViaIdentity1
+Parameter Sets: RemoveViaIdentityExpanded, RemoveViaIdentity
 Aliases:
 
 Required: True
@@ -114,8 +114,8 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for VALUE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSite1[]
-Parameter Sets: RemoveExpanded1, RemoveViaIdentityExpanded1
+Type: IMicrosoftGraphSite[]
+Parameter Sets: RemoveExpanded, RemoveViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -162,10 +162,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths8J6HbtGroupsGroupIdSitesMicrosoftGraphRemovePostRequestbodyContentApplicationJsonSchema1
+### Microsoft.Graph.PowerShell.Models.IPaths8J6HbtGroupsGroupIdSitesMicrosoftGraphRemovePostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSite1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSite
 ## NOTES
 
 ALIASES

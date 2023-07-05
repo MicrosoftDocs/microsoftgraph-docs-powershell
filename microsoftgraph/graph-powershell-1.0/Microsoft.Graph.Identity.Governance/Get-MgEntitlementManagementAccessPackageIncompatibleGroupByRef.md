@@ -1,14 +1,17 @@
 ---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementaccesspackageincompatiblegroupbyref
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementaccesspackageincompatiblegroupbyref
 schema: 2.0.0
 ---
 
 # Get-MgEntitlementManagementAccessPackageIncompatibleGroupByRef
 
 ## SYNOPSIS
-The groups whose members are ineligible to be assigned this access package.
+Retrieve a list of the group objects that have been marked as incompatible on an accessPackage.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -19,21 +22,17 @@ Get-MgEntitlementManagementAccessPackageIncompatibleGroupByRef -AccessPackageId 
 ```
 
 ## DESCRIPTION
-The groups whose members are ineligible to be assigned this access package.
+Retrieve a list of the group objects that have been marked as incompatible on an accessPackage.
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 
 Get-MgEntitlementManagementAccessPackageIncompatibleGroup -AccessPackageId $accessPackageId
+
 ```
-
-This example shows how to use the Get-MgEntitlementManagementAccessPackageIncompatibleGroupByRef Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ## PARAMETERS
 
 ### -AccessPackageId
@@ -185,3 +184,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef?view=graph-powershell-beta)
+

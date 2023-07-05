@@ -1,14 +1,17 @@
 ---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mgteamtag
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamtag
 schema: 2.0.0
 ---
 
 # New-MgTeamTag
 
 ## SYNOPSIS
-Create new navigation property to tags for teams
+Create a standard tag for members in a team.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaTeamTag](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamTag?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -39,21 +42,29 @@ New-MgTeamTag -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTeamw
 ```
 
 ## DESCRIPTION
-Create new navigation property to tags for teams
+Create a standard tag for members in a team.
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
-Get-MgTeamTag -TeamId $teamId
+$params = @{
+	displayName = "Finance"
+	members = @(
+		@{
+			userId = "92f6952f-61ca-4a94-8910-508a240bc167"
+		}
+		@{
+			userId = "085d800c-b86b-4bfc-a857-9371ad1caf29"
+		}
+	)
+}
+
+New-MgTeamTag -TeamId $teamId -BodyParameter $params
+
 ```
-
-This example shows how to use the New-MgTeamTag Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -73,7 +84,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 teamworkTag
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphTeamworkTag
@@ -136,7 +147,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ITeamsIdentity
@@ -167,7 +178,7 @@ Accept wildcard characters: False
 
 ### -Members
 Users assigned to the tag.
-To construct, please use Get-Help -Online and see NOTES section for MEMBERS properties and create a hash table.
+To construct, see NOTES section for MEMBERS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphTeamworkTagMember[]
@@ -288,7 +299,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphTeamworkTag>`: teamworkTag
+`BODYPARAMETER <IMicrosoftGraphTeamworkTag>`: teamworkTag
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Description <String>]`: The description of the tag as it will appear to the user in Microsoft Teams. A teamworkTag can't have more than 200 teamworkTagMembers.
@@ -302,7 +313,7 @@ BODYPARAMETER `<IMicrosoftGraphTeamworkTag>`: teamworkTag
   - `[TagType <String>]`: teamworkTagType
   - `[TeamId <String>]`: ID of the team in which the tag is defined.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat
@@ -316,24 +327,18 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[OpenShiftChangeRequestId <String>]`: The unique identifier of openShiftChangeRequest
   - `[OpenShiftId <String>]`: The unique identifier of openShift
   - `[PinnedChatMessageInfoId <String>]`: The unique identifier of pinnedChatMessageInfo
-  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SchedulingGroupId <String>]`: The unique identifier of schedulingGroup
   - `[SharedWithChannelTeamInfoId <String>]`: The unique identifier of sharedWithChannelTeamInfo
   - `[ShiftId <String>]`: The unique identifier of shift
   - `[SwapShiftsChangeRequestId <String>]`: The unique identifier of swapShiftsChangeRequest
   - `[TeamId <String>]`: The unique identifier of team
-  - `[TeamTemplateDefinitionId <String>]`: The unique identifier of teamTemplateDefinition
-  - `[TeamTemplateId <String>]`: The unique identifier of teamTemplate
   - `[TeamsAppDefinitionId <String>]`: The unique identifier of teamsAppDefinition
   - `[TeamsAppId <String>]`: The unique identifier of teamsApp
   - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
   - `[TeamsAsyncOperationId <String>]`: The unique identifier of teamsAsyncOperation
   - `[TeamsTabId <String>]`: The unique identifier of teamsTab
-  - `[TeamworkDeviceId <String>]`: The unique identifier of teamworkDevice
-  - `[TeamworkDeviceOperationId <String>]`: The unique identifier of teamworkDeviceOperation
   - `[TeamworkTagId <String>]`: The unique identifier of teamworkTag
   - `[TeamworkTagMemberId <String>]`: The unique identifier of teamworkTagMember
-  - `[TimeCardId <String>]`: The unique identifier of timeCard
   - `[TimeOffId <String>]`: The unique identifier of timeOff
   - `[TimeOffReasonId <String>]`: The unique identifier of timeOffReason
   - `[TimeOffRequestId <String>]`: The unique identifier of timeOffRequest
@@ -341,10 +346,12 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
-MEMBERS <IMicrosoftGraphTeamworkTagMember\[]>: Users assigned to the tag.
+`MEMBERS <IMicrosoftGraphTeamworkTagMember[]>`: Users assigned to the tag.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DisplayName <String>]`: The member's display name.
   - `[TenantId <String>]`: The ID of the tenant that the tag member is a part of.
   - `[UserId <String>]`: The user ID of the member.
 
 ## RELATED LINKS
+[New-MgBetaTeamTag](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamTag?view=graph-powershell-beta)
+

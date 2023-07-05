@@ -1,39 +1,44 @@
 ---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgacceptusereventtentatively
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgacceptusereventtentatively
 schema: 2.0.0
 ---
 
 # Invoke-MgAcceptUserEventTentatively
 
 ## SYNOPSIS
-Invoke action tentativelyAccept
+Tentatively accept the specified event in a user calendar.
+If the event allows proposals for new times, on responding tentative to the event, an invitee can choose to suggest an alternative time by including the **proposedNewTime** parameter.
+For more information on how to propose a time, and how to receive and accept a new time proposal, see Propose new meeting times.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaAcceptUserEventTentatively](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaAcceptUserEventTentatively?view=graph-powershell-beta)
 
 ## SYNTAX
 
-### AcceptExpanded1 (Default)
+### AcceptExpanded (Default)
 ```
 Invoke-MgAcceptUserEventTentatively -EventId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
  [-Comment <String>] [-ProposedNewTime <IMicrosoftGraphTimeSlot>] [-SendResponse] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
-### Accept1
+### Accept
 ```
 Invoke-MgAcceptUserEventTentatively -EventId <String> -UserId <String>
  -BodyParameter <IPaths1J1KpiuUsersUserIdEventsEventIdMicrosoftGraphTentativelyacceptPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### AcceptViaIdentityExpanded1
+### AcceptViaIdentityExpanded
 ```
 Invoke-MgAcceptUserEventTentatively -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
  [-Comment <String>] [-ProposedNewTime <IMicrosoftGraphTimeSlot>] [-SendResponse] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
-### AcceptViaIdentity1
+### AcceptViaIdentity
 ```
 Invoke-MgAcceptUserEventTentatively -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths1J1KpiuUsersUserIdEventsEventIdMicrosoftGraphTentativelyacceptPostRequestbodyContentApplicationJsonSchema>
@@ -41,11 +46,13 @@ Invoke-MgAcceptUserEventTentatively -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action tentativelyAccept
+Tentatively accept the specified event in a user calendar.
+If the event allows proposals for new times, on responding tentative to the event, an invitee can choose to suggest an alternative time by including the **proposedNewTime** parameter.
+For more information on how to propose a time, and how to receive and accept a new time proposal, see Propose new meeting times.
 
 ## EXAMPLES
 
-### Example 1: Using the Invoke-MgAcceptUserEventTentatively Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{
@@ -66,9 +73,6 @@ $params = @{
 Invoke-MgAcceptUserEventTentatively -UserId $userId -EventId $eventId -BodyParameter $params
 ```
 
-This example shows how to use the Invoke-MgAcceptUserEventTentatively Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -76,7 +80,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: AcceptExpanded1, AcceptViaIdentityExpanded1
+Parameter Sets: AcceptExpanded, AcceptViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -88,11 +92,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths1J1KpiuUsersUserIdEventsEventIdMicrosoftGraphTentativelyacceptPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Accept1, AcceptViaIdentity1
+Parameter Sets: Accept, AcceptViaIdentity
 Aliases:
 
 Required: True
@@ -107,7 +111,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: AcceptExpanded1, AcceptViaIdentityExpanded1
+Parameter Sets: AcceptExpanded, AcceptViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -122,7 +126,7 @@ The unique identifier of event
 
 ```yaml
 Type: String
-Parameter Sets: AcceptExpanded1, Accept1
+Parameter Sets: AcceptExpanded, Accept
 Aliases:
 
 Required: True
@@ -134,11 +138,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: AcceptViaIdentityExpanded1, AcceptViaIdentity1
+Parameter Sets: AcceptViaIdentityExpanded, AcceptViaIdentity
 Aliases:
 
 Required: True
@@ -165,11 +169,11 @@ Accept wildcard characters: False
 
 ### -ProposedNewTime
 timeSlot
-To construct, please use Get-Help -Online and see NOTES section for PROPOSEDNEWTIME properties and create a hash table.
+To construct, see NOTES section for PROPOSEDNEWTIME properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphTimeSlot
-Parameter Sets: AcceptExpanded1, AcceptViaIdentityExpanded1
+Parameter Sets: AcceptExpanded, AcceptViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -184,7 +188,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: AcceptExpanded1, AcceptViaIdentityExpanded1
+Parameter Sets: AcceptExpanded, AcceptViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -199,7 +203,7 @@ The unique identifier of user
 
 ```yaml
 Type: String
-Parameter Sets: AcceptExpanded1, Accept1
+Parameter Sets: AcceptExpanded, Accept
 Aliases:
 
 Required: True
@@ -259,7 +263,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1J1KpiuUsersUserIdEventsEventIdMicrosoftGraphTentativelyacceptPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1J1KpiuUsersUserIdEventsEventIdMicrosoftGraphTentativelyacceptPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Comment <String>]`: 
   - `[ProposedNewTime <IMicrosoftGraphTimeSlot>]`: timeSlot
@@ -271,20 +275,13 @@ BODYPARAMETER `<IPaths1J1KpiuUsersUserIdEventsEventIdMicrosoftGraphTentativelyac
     - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
   - `[SendResponse <Boolean?>]`: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
-  - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
-  - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
-  - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
+`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AuthenticationMethodId <String>]`: The unique identifier of authenticationMethod
   - `[CalendarId <String>]`: The unique identifier of calendar
   - `[ChatId <String>]`: The unique identifier of chat
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
   - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
-  - `[CloudPcId <String>]`: The unique identifier of cloudPC
   - `[ContentTypeId <String>]`: The unique identifier of contentType
-  - `[DeviceEnrollmentConfigurationId <String>]`: The unique identifier of deviceEnrollmentConfiguration
-  - `[DeviceId <String>]`: The unique identifier of device
-  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
   - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
   - `[DriveId <String>]`: The unique identifier of drive
   - `[DriveItemId <String>]`: The unique identifier of driveItem
@@ -297,24 +294,18 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
   - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
   - `[MessageId <String>]`: The unique identifier of message
-  - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
   - `[NotebookId <String>]`: The unique identifier of notebook
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
-  - `[OutlookTaskFolderId <String>]`: The unique identifier of outlookTaskFolder
-  - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
-  - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
-  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
-  - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
   - `[TodoTaskId <String>]`: The unique identifier of todoTask
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
   - `[UserId <String>]`: The unique identifier of user
 
-PROPOSEDNEWTIME `<IMicrosoftGraphTimeSlot>`: timeSlot
+`PROPOSEDNEWTIME <IMicrosoftGraphTimeSlot>`: timeSlot
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -323,3 +314,4 @@ PROPOSEDNEWTIME `<IMicrosoftGraphTimeSlot>`: timeSlot
   - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
 
 ## RELATED LINKS
+[Invoke-MgBetaAcceptUserEventTentatively](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaAcceptUserEventTentatively?view=graph-powershell-beta)

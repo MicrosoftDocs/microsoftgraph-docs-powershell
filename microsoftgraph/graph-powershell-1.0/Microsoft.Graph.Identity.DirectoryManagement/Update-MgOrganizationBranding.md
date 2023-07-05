@@ -1,67 +1,69 @@
 ---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganizationbranding
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganizationbranding
 schema: 2.0.0
 ---
 
 # Update-MgOrganizationBranding
 
 ## SYNOPSIS
-Update the navigation property branding in organization
+Update the properties of the default branding object specified by the organizationalBranding resource.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaOrganizationBranding](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaOrganizationBranding?view=graph-powershell-beta)
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### UpdateExpanded (Default)
 ```
 Update-MgOrganizationBranding -OrganizationId <String> [-AdditionalProperties <Hashtable>]
  [-BackgroundColor <String>] [-BackgroundImageInputFile <String>] [-BackgroundImageRelativeUrl <String>]
  [-BannerLogoInputFile <String>] [-BannerLogoRelativeUrl <String>] [-CdnList <String[]>] [-Id <String>]
  [-Localizations <IMicrosoftGraphOrganizationalBrandingLocalization[]>] [-SignInPageText <String>]
- [-SquareLogoInputFile <String>] [-SquareLogoRelativeUrl <String>] [-UsernameHintText <String>] [-PassThru]
+ [-SquareLogoInputFile <String>] [-SquareLogoRelativeUrl <String>] [-UsernameHintText <String>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### Update
+```
+Update-MgOrganizationBranding -OrganizationId <String> -BodyParameter <IMicrosoftGraphOrganizationalBranding>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Update1
-```
-Update-MgOrganizationBranding -OrganizationId <String> -BodyParameter <IMicrosoftGraphOrganizationalBranding>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded1
+### UpdateViaIdentityExpanded
 ```
 Update-MgOrganizationBranding -InputObject <IIdentityDirectoryManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-BackgroundColor <String>] [-BackgroundImageInputFile <String>]
  [-BackgroundImageRelativeUrl <String>] [-BannerLogoInputFile <String>] [-BannerLogoRelativeUrl <String>]
  [-CdnList <String[]>] [-Id <String>] [-Localizations <IMicrosoftGraphOrganizationalBrandingLocalization[]>]
  [-SignInPageText <String>] [-SquareLogoInputFile <String>] [-SquareLogoRelativeUrl <String>]
- [-UsernameHintText <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UsernameHintText <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity1
+### UpdateViaIdentity
 ```
 Update-MgOrganizationBranding -InputObject <IIdentityDirectoryManagementIdentity>
- -BodyParameter <IMicrosoftGraphOrganizationalBranding> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphOrganizationalBranding> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property branding in organization
+Update the properties of the default branding object specified by the organizationalBranding resource.
 
 ## EXAMPLES
 
-### Example 1: Using the Update-MgOrganizationBranding Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
+
 $params = @{
-	SignInPageText = "Default"
-	UsernameHintText = "DefaultHint"
+	signInPageText = "Default"
+	usernameHintText = "DefaultHint"
 }
+
 Update-MgOrganizationBranding -OrganizationId $organizationId -BodyParameter $params
+
 ```
-
-This example shows how to use the Update-MgOrganizationBranding Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -69,7 +71,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -86,7 +88,7 @@ Specify this in hexadecimal format, for example, white is #FFFFFF.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -103,7 +105,7 @@ A smaller image will reduce bandwidth requirements and make the page load faster
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -119,7 +121,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -136,7 +138,7 @@ We recommend using a transparent image with no padding around the logo.)
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -152,7 +154,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -164,11 +166,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 organizationalBranding
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphOrganizationalBranding
-Parameter Sets: Update1, UpdateViaIdentity1
+Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -185,7 +187,7 @@ Read-only.
 
 ```yaml
 Type: String[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -201,7 +203,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -213,11 +215,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IIdentityDirectoryManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -229,11 +231,11 @@ Accept wildcard characters: False
 
 ### -Localizations
 Add different branding based on a locale.
-To construct, please use Get-Help -Online and see NOTES section for LOCALIZATIONS properties and create a hash table.
+To construct, see NOTES section for LOCALIZATIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphOrganizationalBrandingLocalization[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -248,25 +250,10 @@ The unique identifier of organization
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -280,7 +267,7 @@ This text must be Unicode and not exceed 1024 characters.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -297,7 +284,7 @@ We recommend using a transparent image with no padding around the logo.)
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -313,7 +300,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -329,7 +316,7 @@ This text must be a Unicode, without links or code, and can't exceed 64 characte
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -379,7 +366,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOrganizationalBranding
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOrganizationalBranding
 ## NOTES
 
 ALIASES
@@ -389,7 +376,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphOrganizationalBranding>`: organizationalBranding
+`BODYPARAMETER <IMicrosoftGraphOrganizationalBranding>`: organizationalBranding
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[BackgroundColor <String>]`: Color that will appear in place of the background image in low-bandwidth connections. We recommend that you use the primary color of your banner logo or your organization color. Specify this in hexadecimal format, for example, white is #FFFFFF.
   - `[BackgroundImage <Byte[]>]`: Image that appears as the background of the sign-in page. The allowed types are PNG or JPEG not smaller than 300 KB and not larger than 1920 × 1080 pixels. A smaller image will reduce bandwidth requirements and make the page load faster.
@@ -415,43 +402,30 @@ BODYPARAMETER `<IMicrosoftGraphOrganizationalBranding>`: organizationalBranding
     - `[UsernameHintText <String>]`: String that shows as the hint in the username textbox on the sign-in screen. This text must be a Unicode, without links or code, and can't exceed 64 characters.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
-  - `[CommandId <String>]`: The unique identifier of command
   - `[ContractId <String>]`: The unique identifier of contract
   - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
   - `[DeviceId <String>]`: The unique identifier of device
   - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
   - `[DirectoryRoleId <String>]`: The unique identifier of directoryRole
   - `[DirectoryRoleTemplateId <String>]`: The unique identifier of directoryRoleTemplate
-  - `[DirectorySettingId <String>]`: The unique identifier of directorySetting
-  - `[DirectorySettingTemplateId <String>]`: The unique identifier of directorySettingTemplate
   - `[DomainDnsRecordId <String>]`: The unique identifier of domainDnsRecord
   - `[DomainId <String>]`: The unique identifier of domain
   - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[FeatureRolloutPolicyId <String>]`: The unique identifier of featureRolloutPolicy
   - `[IdentityProviderBaseId <String>]`: The unique identifier of identityProviderBase
-  - `[ImpactedResourceId <String>]`: The unique identifier of impactedResource
-  - `[InboundSharedUserProfileUserId <String>]`: The unique identifier of inboundSharedUserProfile
   - `[InternalDomainFederationId <String>]`: The unique identifier of internalDomainFederation
   - `[OnPremisesDirectorySynchronizationId <String>]`: The unique identifier of onPremisesDirectorySynchronization
   - `[OrgContactId <String>]`: The unique identifier of orgContact
   - `[OrganizationId <String>]`: The unique identifier of organization
   - `[OrganizationalBrandingLocalizationId <String>]`: The unique identifier of organizationalBrandingLocalization
-  - `[OutboundSharedUserProfileUserId <String>]`: The unique identifier of outboundSharedUserProfile
-  - `[ProfileCardPropertyId <String>]`: The unique identifier of profileCardProperty
-  - `[RecommendationId <String>]`: The unique identifier of recommendation
   - `[ScopedRoleMembershipId <String>]`: The unique identifier of scopedRoleMembership
-  - `[SharedEmailDomainId <String>]`: The unique identifier of sharedEmailDomain
-  - `[SharedEmailDomainInvitationId <String>]`: The unique identifier of sharedEmailDomainInvitation
   - `[SubscribedSkuId <String>]`: The unique identifier of subscribedSku
-  - `[TenantReferenceTenantId <String>]`: The unique identifier of tenantReference
-  - `[UsageRightId <String>]`: The unique identifier of usageRight
   - `[UserId <String>]`: The unique identifier of user
 
-LOCALIZATIONS <IMicrosoftGraphOrganizationalBrandingLocalization\[]>: Add different branding based on a locale.
+`LOCALIZATIONS <IMicrosoftGraphOrganizationalBrandingLocalization[]>`: Add different branding based on a locale.
   - `[BackgroundColor <String>]`: Color that will appear in place of the background image in low-bandwidth connections. We recommend that you use the primary color of your banner logo or your organization color. Specify this in hexadecimal format, for example, white is #FFFFFF.
   - `[BackgroundImage <Byte[]>]`: Image that appears as the background of the sign-in page. The allowed types are PNG or JPEG not smaller than 300 KB and not larger than 1920 × 1080 pixels. A smaller image will reduce bandwidth requirements and make the page load faster.
   - `[BackgroundImageRelativeUrl <String>]`: A relative URL for the backgroundImage property that is combined with a CDN base URL from the cdnList to provide the version served by a CDN. Read-only.
@@ -465,5 +439,5 @@ LOCALIZATIONS <IMicrosoftGraphOrganizationalBrandingLocalization\[]>: Add differ
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
 ## RELATED LINKS
+[Update-MgBetaOrganizationBranding](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaOrganizationBranding?view=graph-powershell-beta)
 
-## RELATED LINKS

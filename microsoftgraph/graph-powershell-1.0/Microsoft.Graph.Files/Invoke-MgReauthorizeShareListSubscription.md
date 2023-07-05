@@ -1,14 +1,17 @@
 ---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/invoke-mgreauthorizesharelistsubscription
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgreauthorizesharelistsubscription
 schema: 2.0.0
 ---
 
 # Invoke-MgReauthorizeShareListSubscription
 
 ## SYNOPSIS
-Invoke action reauthorize
+Reauthorize a subscription when you receive a **reauthorizationRequired** challenge.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaReauthorizeShareListSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaReauthorizeShareListSubscription?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -25,15 +28,29 @@ Invoke-MgReauthorizeShareListSubscription -InputObject <IFilesIdentity> [-PassTh
 ```
 
 ## DESCRIPTION
-Invoke action reauthorize
+Reauthorize a subscription when you receive a **reauthorizationRequired** challenge.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IFilesIdentity
@@ -141,7 +158,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+`INPUTOBJECT <IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType
@@ -168,3 +185,4 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgBetaReauthorizeShareListSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaReauthorizeShareListSubscription?view=graph-powershell-beta)

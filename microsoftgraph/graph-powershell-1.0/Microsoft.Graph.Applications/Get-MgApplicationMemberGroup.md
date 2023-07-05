@@ -1,134 +1,75 @@
 ---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgapplicationmembergroup
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationlogo
 schema: 2.0.0
 ---
 
-# Get-MgApplicationMemberGroup
+# Get-MgApplicationLogo
 
 ## SYNOPSIS
-Invoke action getMemberGroups
+The main logo for the application.
+Not nullable.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaApplicationMemberGroup](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationMemberGroup?view=graph-powershell-beta)
 
 ## SYNTAX
 
-### GetExpanded1 (Default)
+### Get (Default)
 ```
-Get-MgApplicationMemberGroup -ApplicationId <String> [-AdditionalProperties <Hashtable>] [-SecurityEnabledOnly]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Get1
-```
-Get-MgApplicationMemberGroup -ApplicationId <String>
- -BodyParameter <IPaths1Ezr0XyApplicationsApplicationIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Get-MgApplicationLogo -ApplicationId <String> -OutFile <String> [-PassThru] [<CommonParameters>]
 ```
 
-### GetViaIdentityExpanded1
+### GetViaIdentity
 ```
-Get-MgApplicationMemberGroup -InputObject <IApplicationsIdentity> [-AdditionalProperties <Hashtable>]
- [-SecurityEnabledOnly] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### GetViaIdentity1
-```
-Get-MgApplicationMemberGroup -InputObject <IApplicationsIdentity>
- -BodyParameter <IPaths1Ezr0XyApplicationsApplicationIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Get-MgApplicationLogo -InputObject <IApplicationsIdentity> -OutFile <String> [-PassThru] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke action getMemberGroups
+The main logo for the application.
+Not nullable.
 
 ## EXAMPLES
 
-### Example 1: Check group memberships for a directory object
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.DirectoryObjects
-
-$params = @{
-	SecurityEnabledOnly = $false
-}
-
-Get-MgDirectoryObjectMemberGroup -DirectoryObjectId $directoryObjectId -BodyParameter $params
+{{ Add code here }}
 ```
 
-This example shows how to use the Get-MgApplicationMemberGroup Cmdlet.
+{{ Add output here }}
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Check group memberships for the signed-in user
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Users.Actions
-
-$params = @{
-	SecurityEnabledOnly = $true
-}
-
-# A UPN can also be used as -UserId.
-Get-MgUserMemberGroup -UserId $userId -BodyParameter $params
+{{ Add code here }}
 ```
 
-This example shows how to use the Get-MgApplicationMemberGroup Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+{{ Add output here }}
 
 ## PARAMETERS
-
-### -AdditionalProperties
-Additional Parameters
-
-```yaml
-Type: Hashtable
-Parameter Sets: GetExpanded1, GetViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -ApplicationId
 The unique identifier of application
 
 ```yaml
 Type: String
-Parameter Sets: GetExpanded1, Get1
+Parameter Sets: Get
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -BodyParameter
-.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
-
-```yaml
-Type: IPaths1Ezr0XyApplicationsApplicationIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Get1, GetViaIdentity1
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IApplicationsIdentity
-Parameter Sets: GetViaIdentityExpanded1, GetViaIdentity1
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
@@ -138,44 +79,28 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -SecurityEnabledOnly
-.
+### -OutFile
+Path to write output file to
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: GetExpanded1, GetViaIdentityExpanded1
+Type: String
+Parameter Sets: (All)
 Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
+### -PassThru
+Returns true when the command succeeds
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Aliases:
 
 Required: False
 Position: Named
@@ -190,10 +115,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths1Ezr0XyApplicationsApplicationIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
-### System.String
+### System.Boolean
 ## NOTES
 
 ALIASES
@@ -203,18 +127,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Ezr0XyApplicationsApplicationIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[SecurityEnabledOnly <Boolean?>]`: 
-
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+`INPUTOBJECT <IApplicationsIdentity>`: Identity Parameter
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
   - `[ApplicationId <String>]`: The unique identifier of application
   - `[ApplicationTemplateId <String>]`: The unique identifier of applicationTemplate
   - `[ClaimsMappingPolicyId <String>]`: The unique identifier of claimsMappingPolicy
-  - `[ConnectorGroupId <String>]`: The unique identifier of connectorGroup
-  - `[ConnectorId <String>]`: The unique identifier of connector
   - `[DelegatedPermissionClassificationId <String>]`: The unique identifier of delegatedPermissionClassification
   - `[DirectoryDefinitionId <String>]`: The unique identifier of directoryDefinition
   - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
@@ -223,13 +141,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[FederatedIdentityCredentialId <String>]`: The unique identifier of federatedIdentityCredential
   - `[GroupId <String>]`: The unique identifier of group
   - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
-  - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
-  - `[OnPremisesAgentGroupId <String>]`: The unique identifier of onPremisesAgentGroup
-  - `[OnPremisesAgentGroupId1 <String>]`: The unique identifier of onPremisesAgentGroup
-  - `[OnPremisesAgentId <String>]`: The unique identifier of onPremisesAgent
-  - `[OnPremisesPublishingProfileId <String>]`: The unique identifier of onPremisesPublishingProfile
-  - `[PublishedResourceId <String>]`: The unique identifier of publishedResource
   - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
   - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
   - `[SynchronizationTemplateId <String>]`: The unique identifier of synchronizationTemplate
@@ -238,3 +150,4 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaBetaApplicationMemberGroup](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationMemberGroup?view=graph-powershell-beta)

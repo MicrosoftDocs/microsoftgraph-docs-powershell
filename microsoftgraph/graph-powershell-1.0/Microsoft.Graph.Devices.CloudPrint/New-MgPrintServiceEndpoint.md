@@ -1,7 +1,7 @@
 ---
 external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintserviceendpoint
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintserviceendpoint
 schema: 2.0.0
 ---
 
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to endpoints for print
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaPrintServiceEndpoint](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintServiceEndpoint?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -20,7 +23,7 @@ New-MgPrintServiceEndpoint -PrintServiceId <String> [-AdditionalProperties <Hash
 
 ### Create
 ```
-New-MgPrintServiceEndpoint -PrintServiceId <String> -BodyParameter <IMicrosoftGraphPrintServiceEndpoint1>
+New-MgPrintServiceEndpoint -PrintServiceId <String> -BodyParameter <IMicrosoftGraphPrintServiceEndpoint>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -33,7 +36,7 @@ New-MgPrintServiceEndpoint -InputObject <IDevicesCloudPrintIdentity> [-Additiona
 ### CreateViaIdentity
 ```
 New-MgPrintServiceEndpoint -InputObject <IDevicesCloudPrintIdentity>
- -BodyParameter <IMicrosoftGraphPrintServiceEndpoint1> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPrintServiceEndpoint> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -41,17 +44,13 @@ Create new navigation property to endpoints for print
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Devices.CloudPrint
 
 Get-MgPrintServiceEndpoint -PrintServiceId $printServiceId
+
 ```
-
-This example shows how to use the New-MgPrintServiceEndpoint Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -71,10 +70,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 printServiceEndpoint
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrintServiceEndpoint1
+Type: IMicrosoftGraphPrintServiceEndpoint
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -118,7 +117,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDevicesCloudPrintIdentity
@@ -199,10 +198,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintServiceEndpoint1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintServiceEndpoint
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintServiceEndpoint1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintServiceEndpoint
 ## NOTES
 
 ALIASES
@@ -212,15 +211,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPrintServiceEndpoint1>`: printServiceEndpoint
+`BODYPARAMETER <IMicrosoftGraphPrintServiceEndpoint>`: printServiceEndpoint
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DisplayName <String>]`: A human-readable display name for the endpoint.
   - `[Uri <String>]`: The URI that can be used to access the service.
 
-INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
+`INPUTOBJECT <IDevicesCloudPrintIdentity>`: Identity Parameter
   - `[GroupId <String>]`: The unique identifier of group
   - `[PrintConnectorId <String>]`: The unique identifier of printConnector
+  - `[PrintDocumentId <String>]`: The unique identifier of printDocument
+  - `[PrintJobId <String>]`: The unique identifier of printJob
   - `[PrintOperationId <String>]`: The unique identifier of printOperation
   - `[PrintServiceEndpointId <String>]`: The unique identifier of printServiceEndpoint
   - `[PrintServiceId <String>]`: The unique identifier of printService
@@ -232,3 +233,5 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[New-MgBetaPrintServiceEndpoint](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintServiceEndpoint?view=graph-powershell-beta)
+

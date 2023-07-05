@@ -10,26 +10,31 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property entitlementManagement in roleManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaRoleManagementEntitlementManagement](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Update-MgRoleManagementEntitlementManagement?view=graph-powershell-beta)
+
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### UpdateExpanded (Default)
 ```
 Update-MgRoleManagementEntitlementManagement [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-ResourceNamespaces <IMicrosoftGraphUnifiedRbacResourceNamespace[]>]
- [-RoleAssignmentScheduleInstances <IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance[]>]
- [-RoleAssignmentScheduleRequests <IMicrosoftGraphUnifiedRoleAssignmentScheduleRequest[]>]
- [-RoleAssignmentSchedules <IMicrosoftGraphUnifiedRoleAssignmentSchedule[]>]
- [-RoleAssignments <IMicrosoftGraphUnifiedRoleAssignment[]>]
- [-RoleDefinitions <IMicrosoftGraphUnifiedRoleDefinition1[]>]
- [-RoleEligibilityScheduleInstances <IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance[]>]
- [-RoleEligibilityScheduleRequests <IMicrosoftGraphUnifiedRoleEligibilityScheduleRequest[]>]
- [-RoleEligibilitySchedules <IMicrosoftGraphUnifiedRoleEligibilitySchedule[]>] [-PassThru] [-WhatIf] [-Confirm]
+ [-ResourceNamespaces <IMicrosoftGraphUnifiedRbacResourceNamespace1[]>]
+ [-RoleAssignmentApprovals <IMicrosoftGraphApproval[]>]
+ [-RoleAssignmentScheduleInstances <IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance1[]>]
+ [-RoleAssignmentScheduleRequests <IMicrosoftGraphUnifiedRoleAssignmentScheduleRequest1[]>]
+ [-RoleAssignmentSchedules <IMicrosoftGraphUnifiedRoleAssignmentSchedule1[]>]
+ [-RoleAssignments <IMicrosoftGraphUnifiedRoleAssignment1[]>]
+ [-RoleDefinitions <IMicrosoftGraphUnifiedRoleDefinition[]>]
+ [-RoleEligibilityScheduleInstances <IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance1[]>]
+ [-RoleEligibilityScheduleRequests <IMicrosoftGraphUnifiedRoleEligibilityScheduleRequest1[]>]
+ [-RoleEligibilitySchedules <IMicrosoftGraphUnifiedRoleEligibilitySchedule1[]>]
+ [-TransitiveRoleAssignments <IMicrosoftGraphUnifiedRoleAssignment1[]>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### Update1
+### Update
 ```
-Update-MgRoleManagementEntitlementManagement -BodyParameter <IMicrosoftGraphRbacApplication1> [-PassThru]
+Update-MgRoleManagementEntitlementManagement -BodyParameter <IMicrosoftGraphRbacApplication> [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -45,7 +50,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded1
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -60,8 +65,8 @@ rbacApplication
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRbacApplication1
-Parameter Sets: Update1
+Type: IMicrosoftGraphRbacApplication
+Parameter Sets: Update
 Aliases:
 
 Required: True
@@ -77,7 +82,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -107,8 +112,24 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for RESOURCENAMESPACES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUnifiedRbacResourceNamespace[]
-Parameter Sets: UpdateExpanded1
+Type: IMicrosoftGraphUnifiedRbacResourceNamespace1[]
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RoleAssignmentApprovals
+.
+To construct, please use Get-Help -Online and see NOTES section for ROLEASSIGNMENTAPPROVALS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphApproval[]
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -123,8 +144,8 @@ Resource to grant access to users or groups.
 To construct, please use Get-Help -Online and see NOTES section for ROLEASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUnifiedRoleAssignment[]
-Parameter Sets: UpdateExpanded1
+Type: IMicrosoftGraphUnifiedRoleAssignment1[]
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -139,8 +160,8 @@ Instances for active role assignments.
 To construct, please use Get-Help -Online and see NOTES section for ROLEASSIGNMENTSCHEDULEINSTANCES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance[]
-Parameter Sets: UpdateExpanded1
+Type: IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance1[]
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -155,8 +176,8 @@ Requests for active role assignments to principals through PIM.
 To construct, please use Get-Help -Online and see NOTES section for ROLEASSIGNMENTSCHEDULEREQUESTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUnifiedRoleAssignmentScheduleRequest[]
-Parameter Sets: UpdateExpanded1
+Type: IMicrosoftGraphUnifiedRoleAssignmentScheduleRequest1[]
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -171,8 +192,8 @@ Schedules for active role assignment operations.
 To construct, please use Get-Help -Online and see NOTES section for ROLEASSIGNMENTSCHEDULES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUnifiedRoleAssignmentSchedule[]
-Parameter Sets: UpdateExpanded1
+Type: IMicrosoftGraphUnifiedRoleAssignmentSchedule1[]
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -187,8 +208,8 @@ Resource representing the roles allowed by RBAC providers and the permissions as
 To construct, please use Get-Help -Online and see NOTES section for ROLEDEFINITIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUnifiedRoleDefinition1[]
-Parameter Sets: UpdateExpanded1
+Type: IMicrosoftGraphUnifiedRoleDefinition[]
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -203,8 +224,8 @@ Instances for role eligibility requests.
 To construct, please use Get-Help -Online and see NOTES section for ROLEELIGIBILITYSCHEDULEINSTANCES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance[]
-Parameter Sets: UpdateExpanded1
+Type: IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance1[]
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -219,8 +240,8 @@ Requests for role eligibilities for principals through PIM.
 To construct, please use Get-Help -Online and see NOTES section for ROLEELIGIBILITYSCHEDULEREQUESTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUnifiedRoleEligibilityScheduleRequest[]
-Parameter Sets: UpdateExpanded1
+Type: IMicrosoftGraphUnifiedRoleEligibilityScheduleRequest1[]
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -235,8 +256,24 @@ Schedules for role eligibility operations.
 To construct, please use Get-Help -Online and see NOTES section for ROLEELIGIBILITYSCHEDULES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUnifiedRoleEligibilitySchedule[]
-Parameter Sets: UpdateExpanded1
+Type: IMicrosoftGraphUnifiedRoleEligibilitySchedule1[]
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -TransitiveRoleAssignments
+.
+To construct, please use Get-Help -Online and see NOTES section for TRANSITIVEROLEASSIGNMENTS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphUnifiedRoleAssignment1[]
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -282,7 +319,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRbacApplication1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRbacApplication
 ## OUTPUTS
 
 ### System.Boolean
@@ -998,5 +1035,11 @@ ROLEELIGIBILITYSCHEDULES <IMicrosoftGraphUnifiedRoleEligibilitySchedule\[]>: Sch
     - `[StartDateTime <DateTime?>]`: When the  eligible or active assignment becomes active.
 
 ## RELATED LINKS
+[Update-MgBetaRoleManagementEntitlementManagement](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Update-MgRoleManagementEntitlementManagement?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaRoleManagementEntitlementManagement](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Update-MgRoleManagementEntitlementManagement?view=graph-powershell-beta)
+
+
+## RELATED LINKS
+[Update-MgBetaRoleManagementEntitlementManagement](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Update-MgRoleManagementEntitlementManagement?view=graph-powershell-beta)

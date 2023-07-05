@@ -1,6 +1,6 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Enrolment
+external help file: Microsoft.Graph.DeviceManagement.Enrollment-help.xml
+Module Name: Microsoft.Graph.DeviceManagement.Enrollment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/get-mgdevicemanagementdeviceenrollmentconfigurationassignment
 schema: 2.0.0
 ---
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The list of group assignments for the device configuration profile
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceEnrollmentConfigurationAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Get-MgDeviceManagementDeviceEnrollmentConfigurationAssignment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,8 +31,9 @@ Get-MgDeviceManagementDeviceEnrollmentConfigurationAssignment -DeviceEnrollmentC
 
 ### GetViaIdentity
 ```
-Get-MgDeviceManagementDeviceEnrollmentConfigurationAssignment -InputObject <IDeviceManagementEnrolmentIdentity>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgDeviceManagementDeviceEnrollmentConfigurationAssignment
+ -InputObject <IDeviceManagementEnrollmentIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -135,7 +139,7 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementEnrolmentIdentity
+Type: IDeviceManagementEnrollmentIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -241,7 +245,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementEnrolmentIdentity
+### Microsoft.Graph.PowerShell.Models.IDeviceManagementEnrollmentIdentity
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEnrollmentConfigurationAssignment
@@ -292,3 +296,4 @@ INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[Get-MgBetaDeviceManagementDeviceEnrollmentConfigurationAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Get-MgDeviceManagementDeviceEnrollmentConfigurationAssignment?view=graph-powershell-beta)

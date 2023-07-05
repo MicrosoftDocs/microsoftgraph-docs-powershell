@@ -1,16 +1,17 @@
 ---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/get-mggroupplannerplantask
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mggroupplannerplantask
 schema: 2.0.0
 ---
 
 # Get-MgGroupPlannerPlanTask
 
 ## SYNOPSIS
-Read-only.
-Nullable.
-Collection of tasks in the plan.
+Retrieve a list of plannerTask objects associated with a plannerPlan object.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupPlannerPlanTask](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaGroupPlannerPlanTask?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -21,23 +22,17 @@ Get-MgGroupPlannerPlanTask -GroupId <String> -PlannerPlanId <String> [-ExpandPro
 ```
 
 ## DESCRIPTION
-Read-only.
-Nullable.
-Collection of tasks in the plan.
+Retrieve a list of plannerTask objects associated with a plannerPlan object.
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Planner
 
 Get-MgPlannerPlanTask -PlannerPlanId $plannerPlanId
+
 ```
-
-This example shows how to use the Get-MgGroupPlannerPlanTask Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ## PARAMETERS
 
 ### -All
@@ -234,3 +229,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaGroupPlannerPlanTask](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaGroupPlannerPlanTask?view=graph-powershell-beta)
+

@@ -1,7 +1,7 @@
 ---
 external help file: Microsoft.Graph.Devices.ServiceAnnouncement-help.xml
 Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.serviceannouncement/invoke-mgreportserviceannouncementissueincident
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/invoke-mgreportserviceannouncementissueincident
 schema: 2.0.0
 ---
 
@@ -10,15 +10,18 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function incidentReport
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaReportServiceAnnouncementIssueIncident](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Invoke-MgBetaReportServiceAnnouncementIssueIncident?view=graph-powershell-beta)
+
 ## SYNTAX
 
-### Report1 (Default)
+### Report (Default)
 ```
 Invoke-MgReportServiceAnnouncementIssueIncident -ServiceHealthIssueId <String> -OutFile <String> [-PassThru]
  [<CommonParameters>]
 ```
 
-### ReportViaIdentity1
+### ReportViaIdentity
 ```
 Invoke-MgReportServiceAnnouncementIssueIncident -InputObject <IDevicesServiceAnnouncementIdentity>
  -OutFile <String> [-PassThru] [<CommonParameters>]
@@ -29,24 +32,21 @@ Invoke function incidentReport
 
 ## EXAMPLES
 
-### Example 1: Using the Invoke-MgReportServiceAnnouncementIssueIncident Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
 Invoke-MgReportServiceAnnouncementIssueIncident -ServiceHealthIssueId $serviceHealthIssueId
 ```
 
-This example shows how to use the Invoke-MgReportServiceAnnouncementIssueIncident Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ## PARAMETERS
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDevicesServiceAnnouncementIdentity
-Parameter Sets: ReportViaIdentity1
+Parameter Sets: ReportViaIdentity
 Aliases:
 
 Required: True
@@ -91,7 +91,7 @@ The unique identifier of serviceHealthIssue
 
 ```yaml
 Type: String
-Parameter Sets: Report1
+Parameter Sets: Report
 Aliases:
 
 Required: True
@@ -119,10 +119,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
+`INPUTOBJECT <IDevicesServiceAnnouncementIdentity>`: Identity Parameter
   - `[ServiceAnnouncementAttachmentId <String>]`: The unique identifier of serviceAnnouncementAttachment
   - `[ServiceHealthId <String>]`: The unique identifier of serviceHealth
   - `[ServiceHealthIssueId <String>]`: The unique identifier of serviceHealthIssue
   - `[ServiceUpdateMessageId <String>]`: The unique identifier of serviceUpdateMessage
 
 ## RELATED LINKS
+[Invoke-MgBetaReportServiceAnnouncementIssueIncident](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Invoke-MgBetaReportServiceAnnouncementIssueIncident?view=graph-powershell-beta)

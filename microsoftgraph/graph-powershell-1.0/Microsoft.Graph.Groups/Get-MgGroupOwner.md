@@ -1,7 +1,7 @@
 ---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/get-mggroupowner
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupowner
 schema: 2.0.0
 ---
 
@@ -15,6 +15,9 @@ If this property is not specified when creating a Microsoft 365 group, the calli
 Supports $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
 Supports $expand including nested $select.
 For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName).
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupOwner](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupOwner?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -35,16 +38,14 @@ For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayNa
 
 ## EXAMPLES
 
-### Example 1: Get an owner of a group
+### EXAMPLE 1
 ```powershell
 Get-MgGroupOwner -GroupId '4d5f57a1-85e0-41dd-8282-ff995ad5e1c3'
+```
 
 Id                                   DeletedDateTime
 --                                   ---------------
 5fc5c052-8774-4258-8705-0b4ab3e9a2df
-```
-
-This example gets the owner of the specified group.
 
 ## PARAMETERS
 
@@ -243,3 +244,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaGroupOwner](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupOwner?view=graph-powershell-beta)

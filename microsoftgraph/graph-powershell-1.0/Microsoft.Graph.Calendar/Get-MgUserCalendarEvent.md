@@ -1,177 +1,46 @@
 ---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/get-mgusercalendarevent
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusercalendarcount
 schema: 2.0.0
 ---
 
-# Get-MgUserCalendarEvent
+# Get-MgUserCalendarCount
 
 ## SYNOPSIS
-The events in the calendar.
-Navigation property.
-Read-only.
+Get the number of the resource
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserCalendarEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserCalendarEvent?view=graph-powershell-beta)
 
 ## SYNTAX
 
+### Get (Default)
 ```
-Get-MgUserCalendarEvent -CalendarId <String> -UserId <String> [-ExpandProperty <String[]>] [-Filter <String>]
- [-Property <String[]>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [<CommonParameters>]
+Get-MgUserCalendarCount -UserId <String> [-Filter <String>] [<CommonParameters>]
+```
+
+### GetViaIdentity
+```
+Get-MgUserCalendarCount -InputObject <ICalendarIdentity> [-Filter <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The events in the calendar.
-Navigation property.
-Read-only.
+Get the number of the resource
 
 ## EXAMPLES
 
-### Example 1: Create an event in a specific calendar
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Calendar
-
-$params = @{
-	Subject = "Let's go for lunch"
-	Body = @{
-		ContentType = "HTML"
-		Content = "Does mid month work for you?"
-	}
-	Start = @{
-		DateTime = "2019-03-15T12:00:00"
-		TimeZone = "Pacific Standard Time"
-	}
-	End = @{
-		DateTime = "2019-03-15T14:00:00"
-		TimeZone = "Pacific Standard Time"
-	}
-	Location = @{
-		DisplayName = "Harry's Bar"
-	}
-	Attendees = @(
-		@{
-			EmailAddress = @{
-				Address = "adelev@contoso.onmicrosoft.com"
-				Name = "Adele Vance"
-			}
-			Type = "required"
-		}
-	)
-	TransactionId = "7E163156-7762-4BEB-A1C6-729EA81755A7"
-}
-
-# A UPN can also be used as -UserId.
-New-MgUserCalendarEvent -UserId $userId -CalendarId $calendarId -BodyParameter $params
+{{ Add code here }}
 ```
 
-This example shows how to use the Get-MgUserCalendarEvent Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Create and enable an event as an online meeting
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Calendar
-
-$params = @{
-	Subject = "Let's go for lunch"
-	Body = @{
-		ContentType = "HTML"
-		Content = "Does next month work for you?"
-	}
-	Start = @{
-		DateTime = "2019-03-10T12:00:00"
-		TimeZone = "Pacific Standard Time"
-	}
-	End = @{
-		DateTime = "2019-03-10T14:00:00"
-		TimeZone = "Pacific Standard Time"
-	}
-	Location = @{
-		DisplayName = "Harry's Bar"
-	}
-	Attendees = @(
-		@{
-			EmailAddress = @{
-				Address = "adelev@contoso.onmicrosoft.com"
-				Name = "Adele Vance"
-			}
-			Type = "required"
-		}
-	)
-	IsOnlineMeeting = $true
-	OnlineMeetingProvider = "teamsForBusiness"
-}
-
-# A UPN can also be used as -UserId.
-New-MgUserCalendarEvent -UserId $userId -CalendarId $calendarId -BodyParameter $params
+{{ Add code here }}
 ```
-
-This example shows how to use the Get-MgUserCalendarEvent Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
-
-### -All
-List all pages.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -CalendarId
-The unique identifier of calendar
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -CountVariable
-Specifies a count of the total number of items in a collection.
-By default, this variable will be set in the global scope.
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: CV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ExpandProperty
-Expand related entities
-
-```yaml
-Type: String[]
-Parameter Sets: (All)
-Aliases: Expand
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -Filter
 Filter items by property values
@@ -188,63 +57,19 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PageSize
-Sets the page size of results.
+### -InputObject
+Identity Parameter
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Int32
-Parameter Sets: (All)
+Type: ICalendarIdentity
+Parameter Sets: GetViaIdentity
 Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Property
-Select properties to be returned
-
-```yaml
-Type: String[]
-Parameter Sets: (All)
-Aliases: Select
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Sort
-Order items by property values
-
-```yaml
-Type: String[]
-Parameter Sets: (All)
-Aliases: OrderBy
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Top
-Show only the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: (All)
-Aliases: Limit
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -253,25 +78,10 @@ The unique identifier of user
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: Get
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: (All)
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -283,11 +93,30 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEvent1
+### System.Int32
 ## NOTES
 
 ALIASES
 
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+`INPUTOBJECT <ICalendarIdentity>`: Identity Parameter
+  - `[AttachmentId <String>]`: The unique identifier of attachment
+  - `[CalendarGroupId <String>]`: The unique identifier of calendarGroup
+  - `[CalendarId <String>]`: The unique identifier of calendar
+  - `[CalendarPermissionId <String>]`: The unique identifier of calendarPermission
+  - `[EventId <String>]`: The unique identifier of event
+  - `[EventId1 <String>]`: The unique identifier of event
+  - `[ExtensionId <String>]`: The unique identifier of extension
+  - `[GroupId <String>]`: The unique identifier of group
+  - `[PlaceId <String>]`: The unique identifier of place
+  - `[UserId <String>]`: The unique identifier of user
+
 ## RELATED LINKS
+[Get-MgBetaUserCalendarEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserCalendarEvent?view=graph-powershell-beta)

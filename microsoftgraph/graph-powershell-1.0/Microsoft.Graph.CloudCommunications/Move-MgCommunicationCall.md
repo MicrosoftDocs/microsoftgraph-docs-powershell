@@ -1,14 +1,19 @@
 ---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/move-mgcommunicationcall
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/move-mgcommunicationcall
 schema: 2.0.0
 ---
 
 # Move-MgCommunicationCall
 
 ## SYNOPSIS
-Invoke action transfer
+Transfer an active peer-to-peer call or group call.
+A consultative transfer means that the transferor can inform the person they want to transfer the call to (the transferee), before the transfer is made.
+This is opposed to transfering the call directly.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Move-MgBetaCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Move-MgBetaCommunicationCall?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -41,11 +46,13 @@ Move-MgCommunicationCall -InputObject <ICloudCommunicationsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action transfer
+Transfer an active peer-to-peer call or group call.
+A consultative transfer means that the transferor can inform the person they want to transfer the call to (the transferee), before the transfer is made.
+This is opposed to transfering the call directly.
 
 ## EXAMPLES
 
-### Example 1: Using the Move-MgCommunicationCall Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
 $params = @{
@@ -62,10 +69,7 @@ $params = @{
 Move-MgCommunicationCall -CallId $callId -BodyParameter $params
 ```
 
-This example shows how to use the Move-MgCommunicationCall Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Move-MgCommunicationCall Cmdlet
+### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
 $params = @{
@@ -86,10 +90,7 @@ $params = @{
 Move-MgCommunicationCall -CallId $callId -BodyParameter $params
 ```
 
-This example shows how to use the Move-MgCommunicationCall Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Using the Move-MgCommunicationCall Cmdlet
+### EXAMPLE 3
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
 $params = @{
@@ -109,10 +110,7 @@ $params = @{
 Move-MgCommunicationCall -CallId $callId -BodyParameter $params
 ```
 
-This example shows how to use the Move-MgCommunicationCall Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 4: Using the Move-MgCommunicationCall Cmdlet
+### EXAMPLE 4
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
 $params = @{
@@ -135,10 +133,7 @@ $params = @{
 Move-MgCommunicationCall -CallId $callId -BodyParameter $params
 ```
 
-This example shows how to use the Move-MgCommunicationCall Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 5: Using the Move-MgCommunicationCall Cmdlet
+### EXAMPLE 5
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
 $params = @{
@@ -164,9 +159,6 @@ $params = @{
 Move-MgCommunicationCall -CallId $callId -BodyParameter $params
 ```
 
-This example shows how to use the Move-MgCommunicationCall Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -186,7 +178,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths4Zbm7LCommunicationsCallsCallIdMicrosoftGraphTransferPostRequestbodyContentApplicationJsonSchema
@@ -217,7 +209,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ICloudCommunicationsIdentity
@@ -248,7 +240,7 @@ Accept wildcard characters: False
 
 ### -Transferee
 participantInfo
-To construct, please use Get-Help -Online and see NOTES section for TRANSFEREE properties and create a hash table.
+To construct, see NOTES section for TRANSFEREE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphParticipantInfo
@@ -264,7 +256,7 @@ Accept wildcard characters: False
 
 ### -TransferTarget
 invitationParticipantInfo
-To construct, please use Get-Help -Online and see NOTES section for TRANSFERTARGET properties and create a hash table.
+To construct, see NOTES section for TRANSFERTARGET properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphInvitationParticipantInfo
@@ -328,7 +320,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths4Zbm7LCommunicationsCallsCallIdMicrosoftGraphTransferPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths4Zbm7LCommunicationsCallsCallIdMicrosoftGraphTransferPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[TransferTarget <IMicrosoftGraphInvitationParticipantInfo>]`: invitationParticipantInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -353,25 +345,21 @@ BODYPARAMETER `<IPaths4Zbm7LCommunicationsCallsCallIdMicrosoftGraphTransferPostR
     - `[ParticipantId <String>]`: The participant ID of the participant. Read-only.
     - `[Region <String>]`: The home region of the participant. This can be a country, a continent, or a larger geographic region. This does not change based on the participant's current physical location. Read-only.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+`INPUTOBJECT <ICloudCommunicationsIdentity>`: Identity Parameter
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
   - `[CallId <String>]`: The unique identifier of call
   - `[CallRecordId <String>]`: The unique identifier of callRecord
-  - `[CallTranscriptId <String>]`: The unique identifier of callTranscript
   - `[CommsOperationId <String>]`: The unique identifier of commsOperation
   - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
-  - `[FromDateTime <DateTime?>]`: Usage: fromDateTime={fromDateTime}
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
-  - `[MeetingRegistrationQuestionId <String>]`: The unique identifier of meetingRegistrationQuestion
   - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
   - `[ParticipantId <String>]`: The unique identifier of participant
   - `[PresenceId <String>]`: The unique identifier of presence
   - `[SessionId <String>]`: The unique identifier of session
-  - `[ToDateTime <DateTime?>]`: Usage: toDateTime={toDateTime}
   - `[UserId <String>]`: The unique identifier of user
 
-TRANSFEREE `<IMicrosoftGraphParticipantInfo>`: participantInfo
+`TRANSFEREE <IMicrosoftGraphParticipantInfo>`: participantInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CountryCode <String>]`: The ISO 3166-1 Alpha-2 country code of the participant's best estimated physical location at the start of the call. Read-only.
   - `[EndpointType <String>]`: endpointType
@@ -387,7 +375,7 @@ TRANSFEREE `<IMicrosoftGraphParticipantInfo>`: participantInfo
   - `[ParticipantId <String>]`: The participant ID of the participant. Read-only.
   - `[Region <String>]`: The home region of the participant. This can be a country, a continent, or a larger geographic region. This does not change based on the participant's current physical location. Read-only.
 
-TRANSFERTARGET `<IMicrosoftGraphInvitationParticipantInfo>`: invitationParticipantInfo
+`TRANSFERTARGET <IMicrosoftGraphInvitationParticipantInfo>`: invitationParticipantInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Hidden <Boolean?>]`: Optional. Whether to hide the participant from the roster.
   - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -403,3 +391,4 @@ TRANSFERTARGET `<IMicrosoftGraphInvitationParticipantInfo>`: invitationParticipa
   - `[ReplacesCallId <String>]`: Optional. The call which the target identity is currently a part of. For peer-to-peer case, the call will be dropped once the participant is added successfully.
 
 ## RELATED LINKS
+[Move-MgBetaCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Move-MgBetaCommunicationCall?view=graph-powershell-beta)

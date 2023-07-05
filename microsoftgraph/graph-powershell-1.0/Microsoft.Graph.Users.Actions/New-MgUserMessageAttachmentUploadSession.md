@@ -1,39 +1,49 @@
 ---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/new-mgusermessageattachmentuploadsession
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/new-mgusermessageattachmentuploadsession
 schema: 2.0.0
 ---
 
 # New-MgUserMessageAttachmentUploadSession
 
 ## SYNOPSIS
-Invoke action createUploadSession
+Create an upload session that allows an app to iteratively upload ranges of a file, so as to attach the file to the specified Outlook item.
+The item can be a message or event.
+Use this approach to attach a file if the file size is between 3 MB and 150 MB.
+To attach a file that's smaller than 3 MB, do a `POST` operation on the **attachments** navigation property of the Outlook item; see how to do this for a message or for an event.
+As part of the response, this action returns an upload URL that you can use in subsequent sequential `PUT` queries.
+Request headers for each `PUT` operation let you specify the exact range of bytes to be uploaded.
+This allows transfer to be resumed, in case the network connection is dropped during upload.
+The following are the steps to attach a file to an Outlook item using an upload session: See attach large files to Outlook messages or events for an example.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserMessageAttachmentUploadSession](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgBetaUserMessageAttachmentUploadSession?view=graph-powershell-beta)
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
 New-MgUserMessageAttachmentUploadSession -MessageId <String> -UserId <String>
  [-AdditionalProperties <Hashtable>] [-AttachmentItem <IMicrosoftGraphAttachmentItem>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
 New-MgUserMessageAttachmentUploadSession -MessageId <String> -UserId <String>
  -BodyParameter <IPaths1C56La0UsersUserIdMessagesMessageIdAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded1
+### CreateViaIdentityExpanded
 ```
 New-MgUserMessageAttachmentUploadSession -InputObject <IUsersActionsIdentity>
  [-AdditionalProperties <Hashtable>] [-AttachmentItem <IMicrosoftGraphAttachmentItem>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### CreateViaIdentity1
+### CreateViaIdentity
 ```
 New-MgUserMessageAttachmentUploadSession -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths1C56La0UsersUserIdMessagesMessageIdAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>
@@ -41,11 +51,18 @@ New-MgUserMessageAttachmentUploadSession -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action createUploadSession
+Create an upload session that allows an app to iteratively upload ranges of a file, so as to attach the file to the specified Outlook item.
+The item can be a message or event.
+Use this approach to attach a file if the file size is between 3 MB and 150 MB.
+To attach a file that's smaller than 3 MB, do a `POST` operation on the **attachments** navigation property of the Outlook item; see how to do this for a message or for an event.
+As part of the response, this action returns an upload URL that you can use in subsequent sequential `PUT` queries.
+Request headers for each `PUT` operation let you specify the exact range of bytes to be uploaded.
+This allows transfer to be resumed, in case the network connection is dropped during upload.
+The following are the steps to attach a file to an Outlook item using an upload session: See attach large files to Outlook messages or events for an example.
 
 ## EXAMPLES
 
-### Example 1: Using the New-MgUserMessageAttachmentUploadSession Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{
@@ -61,10 +78,7 @@ $params = @{
 New-MgUserMessageAttachmentUploadSession -UserId $userId -MessageId $messageId -BodyParameter $params
 ```
 
-This example shows how to use the New-MgUserMessageAttachmentUploadSession Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the New-MgUserMessageAttachmentUploadSession Cmdlet
+### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{
@@ -78,9 +92,6 @@ $params = @{
 New-MgUserMessageAttachmentUploadSession -UserId $userId -MessageId $messageId -BodyParameter $params
 ```
 
-This example shows how to use the New-MgUserMessageAttachmentUploadSession Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -88,7 +99,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -100,11 +111,11 @@ Accept wildcard characters: False
 
 ### -AttachmentItem
 attachmentItem
-To construct, please use Get-Help -Online and see NOTES section for ATTACHMENTITEM properties and create a hash table.
+To construct, see NOTES section for ATTACHMENTITEM properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAttachmentItem
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -116,11 +127,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths1C56La0UsersUserIdMessagesMessageIdAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Create1, CreateViaIdentity1
+Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -132,11 +143,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -151,7 +162,7 @@ The unique identifier of message
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, Create1
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -166,7 +177,7 @@ The unique identifier of user
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, Create1
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -226,7 +237,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ATTACHMENTITEM `<IMicrosoftGraphAttachmentItem>`: attachmentItem
+`ATTACHMENTITEM <IMicrosoftGraphAttachmentItem>`: attachmentItem
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AttachmentType <String>]`: attachmentType
   - `[ContentId <String>]`: The CID or Content-Id of the attachment for referencing in case of in-line attachments using <img src='cid:contentId'> tag in HTML messages. Optional.
@@ -235,7 +246,7 @@ ATTACHMENTITEM `<IMicrosoftGraphAttachmentItem>`: attachmentItem
   - `[Name <String>]`: The display name of the attachment. This can be a descriptive string and does not have to be the actual file name. Required.
   - `[Size <Int64?>]`: The length of the attachment in bytes. Required.
 
-BODYPARAMETER `<IPaths1C56La0UsersUserIdMessagesMessageIdAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1C56La0UsersUserIdMessagesMessageIdAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AttachmentItem <IMicrosoftGraphAttachmentItem>]`: attachmentItem
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -246,20 +257,13 @@ BODYPARAMETER `<IPaths1C56La0UsersUserIdMessagesMessageIdAttachmentsMicrosoftGra
     - `[Name <String>]`: The display name of the attachment. This can be a descriptive string and does not have to be the actual file name. Required.
     - `[Size <Int64?>]`: The length of the attachment in bytes. Required.
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
-  - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
-  - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
-  - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
+`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AuthenticationMethodId <String>]`: The unique identifier of authenticationMethod
   - `[CalendarId <String>]`: The unique identifier of calendar
   - `[ChatId <String>]`: The unique identifier of chat
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
   - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
-  - `[CloudPcId <String>]`: The unique identifier of cloudPC
   - `[ContentTypeId <String>]`: The unique identifier of contentType
-  - `[DeviceEnrollmentConfigurationId <String>]`: The unique identifier of deviceEnrollmentConfiguration
-  - `[DeviceId <String>]`: The unique identifier of device
-  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
   - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
   - `[DriveId <String>]`: The unique identifier of drive
   - `[DriveItemId <String>]`: The unique identifier of driveItem
@@ -272,17 +276,11 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
   - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
   - `[MessageId <String>]`: The unique identifier of message
-  - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
   - `[NotebookId <String>]`: The unique identifier of notebook
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
-  - `[OutlookTaskFolderId <String>]`: The unique identifier of outlookTaskFolder
-  - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
-  - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
-  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
-  - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
   - `[TodoTaskId <String>]`: The unique identifier of todoTask
@@ -290,3 +288,4 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[New-MgBetaUserMessageAttachmentUploadSession](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgBetaUserMessageAttachmentUploadSession?view=graph-powershell-beta)

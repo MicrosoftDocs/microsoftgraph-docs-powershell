@@ -1,14 +1,19 @@
 ---
 external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/get-mgusermailfolderdelta
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusermailfolderdelta
 schema: 2.0.0
 ---
 
 # Get-MgUserMailFolderDelta
 
 ## SYNOPSIS
-Invoke function delta
+Get a set of mail folders that have been added, deleted, or removed from the user's mailbox.
+A **delta** function call for mail folders in a mailbox is similar to a GET request, except that by appropriately \napplying state tokens in one or more of these calls, \nyou can query for incremental changes in the mail folders.
+This allows you to maintain and synchronize \na local store of a user's mail folders without having to fetch all the mail folders of that mailbox from the server every time.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserMailFolderDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserMailFolderDelta?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -26,9 +31,25 @@ Get-MgUserMailFolderDelta -InputObject <IUsersFunctionsIdentity> [-Filter <Strin
 ```
 
 ## DESCRIPTION
-Invoke function delta
+Get a set of mail folders that have been added, deleted, or removed from the user's mailbox.
+A **delta** function call for mail folders in a mailbox is similar to a GET request, except that by appropriately \napplying state tokens in one or more of these calls, \nyou can query for incremental changes in the mail folders.
+This allows you to maintain and synchronize \na local store of a user's mail folders without having to fetch all the mail folders of that mailbox from the server every time.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -95,7 +116,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersFunctionsIdentity
@@ -222,7 +243,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMailFolder1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMailFolder
 ## NOTES
 
 ALIASES
@@ -232,45 +253,33 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
-  - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
-  - `[AppConsentRequestId <String>]`: The unique identifier of appConsentRequest
+`INPUTOBJECT <IUsersFunctionsIdentity>`: Identity Parameter
   - `[CalendarId <String>]`: The unique identifier of calendar
   - `[ChatId <String>]`: The unique identifier of chat
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
-  - `[CloudPcId <String>]`: The unique identifier of cloudPC
   - `[ContactFolderId <String>]`: The unique identifier of contactFolder
   - `[ContactFolderId1 <String>]`: The unique identifier of contactFolder
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[DriveId <String>]`: The unique identifier of drive
   - `[DriveItemId <String>]`: The unique identifier of driveItem
-  - `[EndDateTime <String>]`: Usage: EndDateTime='{EndDateTime}'
-  - `[EndDateTime1 <String>]`: Usage: endDateTime='{endDateTime}'
+  - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
   - `[EventId <String>]`: The unique identifier of event
-  - `[GroupId <String>]`: Usage: groupId='{groupId}'
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
   - `[Interval <String>]`: Usage: interval='{interval}'
   - `[ListItemId <String>]`: The unique identifier of listItem
   - `[MailFolderId <String>]`: The unique identifier of mailFolder
   - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
-  - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
-  - `[On <String>]`: Usage: on='{on}'
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
   - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
-  - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket
-  - `[PlannerPlanId <String>]`: The unique identifier of plannerPlan
   - `[Q <String>]`: Usage: q='{q}'
-  - `[RoomList <String>]`: Usage: RoomList='{RoomList}'
-  - `[ServicePlanId <String>]`: Usage: servicePlanId='{servicePlanId}'
   - `[Skip <Int32?>]`: Usage: skip={skip}
-  - `[StartDateTime <String>]`: Usage: StartDateTime='{StartDateTime}'
-  - `[StartDateTime1 <String>]`: Usage: startDateTime='{startDateTime}'
+  - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
   - `[TimeZoneStandard <String>]`: Usage: TimeZoneStandard='{TimeZoneStandard}'
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
   - `[Token <String>]`: Usage: token='{token}'
   - `[Top <Int32?>]`: Usage: top={top}
-  - `[Upn <String>]`: Usage: upn='{upn}'
   - `[User <String>]`: Usage: User='{User}'
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaUserMailFolderDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserMailFolderDelta?view=graph-powershell-beta)

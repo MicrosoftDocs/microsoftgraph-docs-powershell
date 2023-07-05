@@ -1,7 +1,7 @@
 ---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/new-mgdrivelistcontenttype
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdrivelistcontenttype
 schema: 2.0.0
 ---
 
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to contentTypes for drives
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveListContentType?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -55,16 +58,19 @@ Create new navigation property to contentTypes for drives
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Sites
-
-Get-MgSiteListContentType -SiteId $siteId -ListId $listId
+{{ Add code here }}
 ```
 
-This example shows how to use the New-MgDriveListContentType Cmdlet.
+{{ Add output here }}
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -102,7 +108,7 @@ Accept wildcard characters: False
 
 ### -Base
 contentType
-To construct, please use Get-Help -Online and see NOTES section for BASE properties and create a hash table.
+To construct, see NOTES section for BASE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphContentType
@@ -118,7 +124,7 @@ Accept wildcard characters: False
 
 ### -BaseTypes
 The collection of content types that are ancestors of this content type.
-To construct, please use Get-Help -Online and see NOTES section for BASETYPES properties and create a hash table.
+To construct, see NOTES section for BASETYPES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphContentType[]
@@ -134,7 +140,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 contentType
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphContentType
@@ -150,7 +156,7 @@ Accept wildcard characters: False
 
 ### -ColumnLinks
 The collection of columns that are required by this content type.
-To construct, please use Get-Help -Online and see NOTES section for COLUMNLINKS properties and create a hash table.
+To construct, see NOTES section for COLUMNLINKS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphColumnLink[]
@@ -166,7 +172,7 @@ Accept wildcard characters: False
 
 ### -ColumnPositions
 Column order information in a content type.
-To construct, please use Get-Help -Online and see NOTES section for COLUMNPOSITIONS properties and create a hash table.
+To construct, see NOTES section for COLUMNPOSITIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphColumnDefinition[]
@@ -182,7 +188,7 @@ Accept wildcard characters: False
 
 ### -Columns
 The collection of column definitions for this contentType.
-To construct, please use Get-Help -Online and see NOTES section for COLUMNS properties and create a hash table.
+To construct, see NOTES section for COLUMNS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphColumnDefinition[]
@@ -213,7 +219,7 @@ Accept wildcard characters: False
 
 ### -DocumentSet
 documentSet
-To construct, please use Get-Help -Online and see NOTES section for DOCUMENTSET properties and create a hash table.
+To construct, see NOTES section for DOCUMENTSET properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDocumentSet
@@ -229,7 +235,7 @@ Accept wildcard characters: False
 
 ### -DocumentTemplate
 documentSetContent
-To construct, please use Get-Help -Online and see NOTES section for DOCUMENTTEMPLATE properties and create a hash table.
+To construct, see NOTES section for DOCUMENTTEMPLATE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDocumentSetContent
@@ -307,7 +313,7 @@ Accept wildcard characters: False
 
 ### -InheritedFrom
 itemReference
-To construct, please use Get-Help -Online and see NOTES section for INHERITEDFROM properties and create a hash table.
+To construct, see NOTES section for INHERITEDFROM properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphItemReference
@@ -323,7 +329,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IFilesIdentity
@@ -369,7 +375,7 @@ Accept wildcard characters: False
 
 ### -Order
 contentTypeOrder
-To construct, please use Get-Help -Online and see NOTES section for ORDER properties and create a hash table.
+To construct, see NOTES section for ORDER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphContentTypeOrder
@@ -494,7 +500,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BASE `<IMicrosoftGraphContentType>`: contentType
+`BASE <IMicrosoftGraphContentType>`: contentType
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AssociatedHubsUrls <String[]>]`: List of canonical URLs for hub sites with which this content type is associated to. This will contain all hub sites where this content type is queued to be enforced or is already enforced. Enforcing a content type means that the content type will be applied to the lists in the enforced sites.
@@ -593,7 +599,7 @@ BASE `<IMicrosoftGraphContentType>`: contentType
         - `[Relations <IMicrosoftGraphTermStoreRelation[]>]`: To indicate which terms are related to the current term as either pinned or reused.
           - `[Id <String>]`: The unique idenfier for an entity. Read-only.
           - `[FromTerm <IMicrosoftGraphTermStoreTerm>]`: term
-          - `[Relationship <String>]`: 
+          - `[Relationship <String>]`: relationType
           - `[Set <IMicrosoftGraphTermStoreSet>]`: set
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -610,7 +616,7 @@ BASE `<IMicrosoftGraphContentType>`: contentType
               - `[Description <String>]`: Description that gives details on the term usage.
               - `[DisplayName <String>]`: Name of the group.
               - `[ParentSiteId <String>]`: ID of the parent site of this group.
-              - `[Scope <String>]`: 
+              - `[Scope <String>]`: termGroupScope
               - `[Sets <IMicrosoftGraphTermStoreSet[]>]`: All sets under the group in a term [store].
             - `[Properties <IMicrosoftGraphKeyValue[]>]`: Custom properties for the set.
             - `[Relations <IMicrosoftGraphTermStoreRelation[]>]`: Indicates which terms have been pinned or reused directly under the set.
@@ -682,7 +688,7 @@ BASE `<IMicrosoftGraphContentType>`: contentType
   - `[ReadOnly <Boolean?>]`: If true, the content type can't be modified unless this value is first set to false.
   - `[Sealed <Boolean?>]`: If true, the content type can't be modified by users or through push-down operations. Only site collection administrators can seal or unseal content types.
 
-BASETYPES <IMicrosoftGraphContentType\[]>: The collection of content types that are ancestors of this content type.
+`BASETYPES <IMicrosoftGraphContentType[]>`: The collection of content types that are ancestors of this content type.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AssociatedHubsUrls <String[]>]`: List of canonical URLs for hub sites with which this content type is associated to. This will contain all hub sites where this content type is queued to be enforced or is already enforced. Enforcing a content type means that the content type will be applied to the lists in the enforced sites.
   - `[Base <IMicrosoftGraphContentType>]`: contentType
@@ -780,7 +786,7 @@ BASETYPES <IMicrosoftGraphContentType\[]>: The collection of content types that 
         - `[Relations <IMicrosoftGraphTermStoreRelation[]>]`: To indicate which terms are related to the current term as either pinned or reused.
           - `[Id <String>]`: The unique idenfier for an entity. Read-only.
           - `[FromTerm <IMicrosoftGraphTermStoreTerm>]`: term
-          - `[Relationship <String>]`: 
+          - `[Relationship <String>]`: relationType
           - `[Set <IMicrosoftGraphTermStoreSet>]`: set
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -797,7 +803,7 @@ BASETYPES <IMicrosoftGraphContentType\[]>: The collection of content types that 
               - `[Description <String>]`: Description that gives details on the term usage.
               - `[DisplayName <String>]`: Name of the group.
               - `[ParentSiteId <String>]`: ID of the parent site of this group.
-              - `[Scope <String>]`: 
+              - `[Scope <String>]`: termGroupScope
               - `[Sets <IMicrosoftGraphTermStoreSet[]>]`: All sets under the group in a term [store].
             - `[Properties <IMicrosoftGraphKeyValue[]>]`: Custom properties for the set.
             - `[Relations <IMicrosoftGraphTermStoreRelation[]>]`: Indicates which terms have been pinned or reused directly under the set.
@@ -869,7 +875,7 @@ BASETYPES <IMicrosoftGraphContentType\[]>: The collection of content types that 
   - `[ReadOnly <Boolean?>]`: If true, the content type can't be modified unless this value is first set to false.
   - `[Sealed <Boolean?>]`: If true, the content type can't be modified by users or through push-down operations. Only site collection administrators can seal or unseal content types.
 
-BODYPARAMETER `<IMicrosoftGraphContentType>`: contentType
+`BODYPARAMETER <IMicrosoftGraphContentType>`: contentType
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AssociatedHubsUrls <String[]>]`: List of canonical URLs for hub sites with which this content type is associated to. This will contain all hub sites where this content type is queued to be enforced or is already enforced. Enforcing a content type means that the content type will be applied to the lists in the enforced sites.
@@ -968,7 +974,7 @@ BODYPARAMETER `<IMicrosoftGraphContentType>`: contentType
         - `[Relations <IMicrosoftGraphTermStoreRelation[]>]`: To indicate which terms are related to the current term as either pinned or reused.
           - `[Id <String>]`: The unique idenfier for an entity. Read-only.
           - `[FromTerm <IMicrosoftGraphTermStoreTerm>]`: term
-          - `[Relationship <String>]`: 
+          - `[Relationship <String>]`: relationType
           - `[Set <IMicrosoftGraphTermStoreSet>]`: set
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -985,7 +991,7 @@ BODYPARAMETER `<IMicrosoftGraphContentType>`: contentType
               - `[Description <String>]`: Description that gives details on the term usage.
               - `[DisplayName <String>]`: Name of the group.
               - `[ParentSiteId <String>]`: ID of the parent site of this group.
-              - `[Scope <String>]`: 
+              - `[Scope <String>]`: termGroupScope
               - `[Sets <IMicrosoftGraphTermStoreSet[]>]`: All sets under the group in a term [store].
             - `[Properties <IMicrosoftGraphKeyValue[]>]`: Custom properties for the set.
             - `[Relations <IMicrosoftGraphTermStoreRelation[]>]`: Indicates which terms have been pinned or reused directly under the set.
@@ -1057,11 +1063,11 @@ BODYPARAMETER `<IMicrosoftGraphContentType>`: contentType
   - `[ReadOnly <Boolean?>]`: If true, the content type can't be modified unless this value is first set to false.
   - `[Sealed <Boolean?>]`: If true, the content type can't be modified by users or through push-down operations. Only site collection administrators can seal or unseal content types.
 
-COLUMNLINKS <IMicrosoftGraphColumnLink\[]>: The collection of columns that are required by this content type.
+`COLUMNLINKS <IMicrosoftGraphColumnLink[]>`: The collection of columns that are required by this content type.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Name <String>]`: The name of the column  in this content type.
 
-COLUMNPOSITIONS <IMicrosoftGraphColumnDefinition\[]>: Column order information in a content type.
+`COLUMNPOSITIONS <IMicrosoftGraphColumnDefinition[]>`: Column order information in a content type.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Boolean <IMicrosoftGraphBooleanColumn>]`: booleanColumn
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1151,7 +1157,7 @@ COLUMNPOSITIONS <IMicrosoftGraphColumnDefinition\[]>: Column order information i
       - `[Relations <IMicrosoftGraphTermStoreRelation[]>]`: To indicate which terms are related to the current term as either pinned or reused.
         - `[Id <String>]`: The unique idenfier for an entity. Read-only.
         - `[FromTerm <IMicrosoftGraphTermStoreTerm>]`: term
-        - `[Relationship <String>]`: 
+        - `[Relationship <String>]`: relationType
         - `[Set <IMicrosoftGraphTermStoreSet>]`: set
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -1168,7 +1174,7 @@ COLUMNPOSITIONS <IMicrosoftGraphColumnDefinition\[]>: Column order information i
             - `[Description <String>]`: Description that gives details on the term usage.
             - `[DisplayName <String>]`: Name of the group.
             - `[ParentSiteId <String>]`: ID of the parent site of this group.
-            - `[Scope <String>]`: 
+            - `[Scope <String>]`: termGroupScope
             - `[Sets <IMicrosoftGraphTermStoreSet[]>]`: All sets under the group in a term [store].
           - `[Properties <IMicrosoftGraphKeyValue[]>]`: Custom properties for the set.
           - `[Relations <IMicrosoftGraphTermStoreRelation[]>]`: Indicates which terms have been pinned or reused directly under the set.
@@ -1195,7 +1201,7 @@ COLUMNPOSITIONS <IMicrosoftGraphColumnDefinition\[]>: Column order information i
       - `[LanguageTag <String>]`: Provides the language culture-code and friendly name of the language that the displayName field has been provided in.
     - `[Formula <String>]`: The formula to validate column value. For examples, see Examples of common formulas in lists.
 
-COLUMNS <IMicrosoftGraphColumnDefinition\[]>: The collection of column definitions for this contentType.
+`COLUMNS <IMicrosoftGraphColumnDefinition[]>`: The collection of column definitions for this contentType.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Boolean <IMicrosoftGraphBooleanColumn>]`: booleanColumn
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1285,7 +1291,7 @@ COLUMNS <IMicrosoftGraphColumnDefinition\[]>: The collection of column definitio
       - `[Relations <IMicrosoftGraphTermStoreRelation[]>]`: To indicate which terms are related to the current term as either pinned or reused.
         - `[Id <String>]`: The unique idenfier for an entity. Read-only.
         - `[FromTerm <IMicrosoftGraphTermStoreTerm>]`: term
-        - `[Relationship <String>]`: 
+        - `[Relationship <String>]`: relationType
         - `[Set <IMicrosoftGraphTermStoreSet>]`: set
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -1302,7 +1308,7 @@ COLUMNS <IMicrosoftGraphColumnDefinition\[]>: The collection of column definitio
             - `[Description <String>]`: Description that gives details on the term usage.
             - `[DisplayName <String>]`: Name of the group.
             - `[ParentSiteId <String>]`: ID of the parent site of this group.
-            - `[Scope <String>]`: 
+            - `[Scope <String>]`: termGroupScope
             - `[Sets <IMicrosoftGraphTermStoreSet[]>]`: All sets under the group in a term [store].
           - `[Properties <IMicrosoftGraphKeyValue[]>]`: Custom properties for the set.
           - `[Relations <IMicrosoftGraphTermStoreRelation[]>]`: Indicates which terms have been pinned or reused directly under the set.
@@ -1329,7 +1335,7 @@ COLUMNS <IMicrosoftGraphColumnDefinition\[]>: The collection of column definitio
       - `[LanguageTag <String>]`: Provides the language culture-code and friendly name of the language that the displayName field has been provided in.
     - `[Formula <String>]`: The formula to validate column value. For examples, see Examples of common formulas in lists.
 
-DOCUMENTSET `<IMicrosoftGraphDocumentSet>`: documentSet
+`DOCUMENTSET <IMicrosoftGraphDocumentSet>`: documentSet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowedContentTypes <IMicrosoftGraphContentTypeInfo[]>]`: Content types allowed in document set.
     - `[Id <String>]`: The id of the content type.
@@ -1426,7 +1432,7 @@ DOCUMENTSET `<IMicrosoftGraphDocumentSet>`: documentSet
         - `[Relations <IMicrosoftGraphTermStoreRelation[]>]`: To indicate which terms are related to the current term as either pinned or reused.
           - `[Id <String>]`: The unique idenfier for an entity. Read-only.
           - `[FromTerm <IMicrosoftGraphTermStoreTerm>]`: term
-          - `[Relationship <String>]`: 
+          - `[Relationship <String>]`: relationType
           - `[Set <IMicrosoftGraphTermStoreSet>]`: set
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -1443,7 +1449,7 @@ DOCUMENTSET `<IMicrosoftGraphDocumentSet>`: documentSet
               - `[Description <String>]`: Description that gives details on the term usage.
               - `[DisplayName <String>]`: Name of the group.
               - `[ParentSiteId <String>]`: ID of the parent site of this group.
-              - `[Scope <String>]`: 
+              - `[Scope <String>]`: termGroupScope
               - `[Sets <IMicrosoftGraphTermStoreSet[]>]`: All sets under the group in a term [store].
             - `[Properties <IMicrosoftGraphKeyValue[]>]`: Custom properties for the set.
             - `[Relations <IMicrosoftGraphTermStoreRelation[]>]`: Indicates which terms have been pinned or reused directly under the set.
@@ -1473,7 +1479,7 @@ DOCUMENTSET `<IMicrosoftGraphDocumentSet>`: documentSet
   - `[WelcomePageColumns <IMicrosoftGraphColumnDefinition[]>]`: 
   - `[WelcomePageUrl <String>]`: Welcome page absolute URL.
 
-DOCUMENTTEMPLATE `<IMicrosoftGraphDocumentSetContent>`: documentSetContent
+`DOCUMENTTEMPLATE <IMicrosoftGraphDocumentSetContent>`: documentSetContent
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ContentType <IMicrosoftGraphContentTypeInfo>]`: contentTypeInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1482,7 +1488,7 @@ DOCUMENTTEMPLATE `<IMicrosoftGraphDocumentSetContent>`: documentSetContent
   - `[FileName <String>]`: Name of the file in resource folder that should be added as a default content or a template in the document set.
   - `[FolderName <String>]`: Folder name in which the file will be placed when a new document set is created in the library.
 
-INHERITEDFROM `<IMicrosoftGraphItemReference>`: itemReference
+`INHERITEDFROM <IMicrosoftGraphItemReference>`: itemReference
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DriveId <String>]`: Unique identifier of the drive instance that contains the driveItem. Only returned if the item is located in a [drive][]. Read-only.
   - `[DriveType <String>]`: Identifies the type of drive. Only returned if the item is located in a [drive][]. See [drive][] resource for values.
@@ -1501,7 +1507,7 @@ INHERITEDFROM `<IMicrosoftGraphItemReference>`: itemReference
     - `[WebId <String>]`: The unique identifier (guid) for the item's site (SPWeb).
   - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource or the parent list of the listItem resource. The value is the same as the id property of that [site][] resource. It is an opaque string that consists of three identifiers of the site. For OneDrive, this property is not populated.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+`INPUTOBJECT <IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType
@@ -1527,11 +1533,13 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
 
-ORDER `<IMicrosoftGraphContentTypeOrder>`: contentTypeOrder
+`ORDER <IMicrosoftGraphContentTypeOrder>`: contentTypeOrder
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Default <Boolean?>]`: Whether this is the default Content Type
   - `[Position <Int32?>]`: Specifies the position in which the Content Type appears in the selection UI.
 
 ## RELATED LINKS
+[New-MgBetaDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveListContentType?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[New-MgBetaDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveListContentType?view=graph-powershell-beta)

@@ -1,7 +1,7 @@
 ---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryrolemember
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryrolemember
 schema: 2.0.0
 ---
 
@@ -13,6 +13,9 @@ HTTP Methods: GET, POST, DELETE.
 Read-only.
 Nullable.
 Supports $expand.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryRoleMember](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryRoleMember?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,9 +34,10 @@ Supports $expand.
 
 ## EXAMPLES
 
-### Example 1: Get member from directory roles
+### EXAMPLE 1
 ```powershell
 Get-MgDirectoryRoleMember -DirectoryRoleId 'c6bb44c1-73cc-48a1-a73c-b6a977084948'
+```
 
 Id                                   DeletedDateTime
 --                                   ---------------
@@ -42,9 +46,6 @@ f890ceed-822a-4647-8748-73d88013ae9d
 5d5dff7a-d9cd-4bd3-a585-3d0ebbd58b69
 5fc5c052-8774-4258-8705-0b4ab3e9a2df
 7425a698-2aa8-4333-9352-04f52e3a4c9d
-```
-
-This example gets the members of a directory role.
 
 ## PARAMETERS
 
@@ -243,3 +244,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaDirectoryRoleMember](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryRoleMember?view=graph-powershell-beta)

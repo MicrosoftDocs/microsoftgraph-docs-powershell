@@ -1,7 +1,7 @@
 ---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectorycustomsecurityattributedefinition
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectorycustomsecurityattributedefinition
 schema: 2.0.0
 ---
 
@@ -10,9 +10,12 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to customSecurityAttributeDefinitions for directory
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDirectoryCustomSecurityAttributeDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryCustomSecurityAttributeDefinition?view=graph-powershell-beta)
+
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
 New-MgDirectoryCustomSecurityAttributeDefinition [-AdditionalProperties <Hashtable>]
  [-AllowedValues <IMicrosoftGraphAllowedValue[]>] [-AttributeSet <String>] [-Description <String>]
@@ -20,7 +23,7 @@ New-MgDirectoryCustomSecurityAttributeDefinition [-AdditionalProperties <Hashtab
  [-UsePreDefinedValuesOnly] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
 New-MgDirectoryCustomSecurityAttributeDefinition
  -BodyParameter <IMicrosoftGraphCustomSecurityAttributeDefinition> [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -31,6 +34,16 @@ Create new navigation property to customSecurityAttributeDefinitions for directo
 
 ## EXAMPLES
 
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -38,7 +51,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -50,11 +63,11 @@ Accept wildcard characters: False
 
 ### -AllowedValues
 .
-To construct, please use Get-Help -Online and see NOTES section for ALLOWEDVALUES properties and create a hash table.
+To construct, see NOTES section for ALLOWEDVALUES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAllowedValue[]
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -69,7 +82,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -81,11 +94,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 customSecurityAttributeDefinition
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphCustomSecurityAttributeDefinition
-Parameter Sets: Create1
+Parameter Sets: Create
 Aliases:
 
 Required: True
@@ -100,7 +113,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -116,7 +129,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -131,7 +144,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -146,7 +159,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -161,7 +174,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -176,7 +189,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -191,7 +204,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -206,7 +219,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -265,11 +278,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ALLOWEDVALUES <IMicrosoftGraphAllowedValue\[]>: .
+`ALLOWEDVALUES <IMicrosoftGraphAllowedValue[]>`: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[IsActive <Boolean?>]`: 
 
-BODYPARAMETER `<IMicrosoftGraphCustomSecurityAttributeDefinition>`: customSecurityAttributeDefinition
+`BODYPARAMETER <IMicrosoftGraphCustomSecurityAttributeDefinition>`: customSecurityAttributeDefinition
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AllowedValues <IMicrosoftGraphAllowedValue[]>]`: 
@@ -285,3 +298,4 @@ BODYPARAMETER `<IMicrosoftGraphCustomSecurityAttributeDefinition>`: customSecuri
   - `[UsePreDefinedValuesOnly <Boolean?>]`: 
 
 ## RELATED LINKS
+[New-MgBetaDirectoryCustomSecurityAttributeDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryCustomSecurityAttributeDefinition?view=graph-powershell-beta)

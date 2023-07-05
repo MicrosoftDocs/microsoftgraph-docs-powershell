@@ -1,7 +1,7 @@
 ---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/get-mggroupmemberbyref
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberbyref
 schema: 2.0.0
 ---
 
@@ -13,6 +13,9 @@ Supports the List members, Add member, and Remove member operations.
 Nullable.
 Supports $expand including nested $select.
 For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=members($select=id,userPrincipalName,displayName).
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupMemberByRef](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupMemberByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,28 +34,20 @@ For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayNa
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Groups
 
 Get-MgGroupMember -GroupId $groupId
+
 ```
-
-This example shows how to use the Get-MgGroupMemberByRef Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Code snippet
+### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Groups
 
 Get-MgGroupMember -GroupId $groupId -CountVariable CountVar -Filter "startswith(displayName, 'a')" -ConsistencyLevel eventual
+
 ```
-
-This example shows how to use the Get-MgGroupMemberByRef Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ## PARAMETERS
 
 ### -All
@@ -220,3 +215,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaGroupMemberByRef](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupMemberByRef?view=graph-powershell-beta)
+

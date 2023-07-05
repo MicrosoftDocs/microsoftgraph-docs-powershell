@@ -1,16 +1,17 @@
 ---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.bookings/get-mgbookingbusinessstaffmember
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinessstaffmember
 schema: 2.0.0
 ---
 
 # Get-MgBookingBusinessStaffMember
 
 ## SYNOPSIS
-All the staff members that provide services in this business.
-Read-only.
-Nullable.
+Get the properties and relationships of a bookingStaffMember in the specified bookingBusiness.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBookingBusinessStaffMember](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusinessStaffMember?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -34,29 +35,23 @@ Get-MgBookingBusinessStaffMember -InputObject <IBookingsIdentity> [-ExpandProper
 ```
 
 ## DESCRIPTION
-All the staff members that provide services in this business.
-Read-only.
-Nullable.
+Get the properties and relationships of a bookingStaffMember in the specified bookingBusiness.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgBookingBusinessStaffMember Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Bookings
-Get-MgBookingBusinessStaffMember -BookingBusinessId $bookingBusinessId
+{{ Add code here }}
 ```
 
-This example shows how to use the Get-MgBookingBusinessStaffMember Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+{{ Add output here }}
 
-### Example 2: Using the Get-MgBookingBusinessStaffMember Cmdlet
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Bookings
-Get-MgBookingBusinessStaffMember -BookingBusinessId $bookingBusinessId -BookingStaffMemberBaseId $bookingStaffMemberBaseId
+{{ Add code here }}
 ```
 
-This example shows how to use the Get-MgBookingBusinessStaffMember Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -153,7 +148,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IBookingsIdentity
@@ -276,18 +271,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+`INPUTOBJECT <IBookingsIdentity>`: Identity Parameter
   - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
   - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness
   - `[BookingCurrencyId <String>]`: The unique identifier of bookingCurrency
   - `[BookingCustomQuestionId <String>]`: The unique identifier of bookingCustomQuestion
   - `[BookingCustomerBaseId <String>]`: The unique identifier of bookingCustomerBase
-  - `[BookingCustomerId <String>]`: The unique identifier of bookingCustomer
   - `[BookingServiceId <String>]`: The unique identifier of bookingService
   - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
-  - `[BookingStaffMemberId <String>]`: The unique identifier of bookingStaffMember
-  - `[BusinessScenarioId <String>]`: The unique identifier of businessScenario
-  - `[BusinessScenarioTaskId <String>]`: The unique identifier of businessScenarioTask
-  - `[PlannerPlanConfigurationLocalizationId <String>]`: The unique identifier of plannerPlanConfigurationLocalization
 
 ## RELATED LINKS
+[Get-MgBetaBookingBusinessStaffMember](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusinessStaffMember?view=graph-powershell-beta)

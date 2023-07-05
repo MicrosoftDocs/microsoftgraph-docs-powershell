@@ -1,16 +1,17 @@
 ---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/get-mgplannerbuckettask
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerbuckettask
 schema: 2.0.0
 ---
 
 # Get-MgPlannerBucketTask
 
 ## SYNOPSIS
-Read-only.
-Nullable.
-The collection of tasks in the bucket.
+Retrieve a list of plannerTask objects associated to a plannerBucket object.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPlannerBucketTask](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerBucketTask?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -21,20 +22,15 @@ Get-MgPlannerBucketTask -PlannerBucketId <String> [-ExpandProperty <String[]>] [
 ```
 
 ## DESCRIPTION
-Read-only.
-Nullable.
-The collection of tasks in the bucket.
+Retrieve a list of plannerTask objects associated to a plannerBucket object.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgPlannerBucketTask Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Planner
 Get-MgPlannerBucketTask -PlannerBucketId $plannerBucketId
 ```
-
-This example shows how to use the Get-MgPlannerBucketTask Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -217,3 +213,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaPlannerBucketTask](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerBucketTask?view=graph-powershell-beta)

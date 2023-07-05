@@ -1,9 +1,8 @@
 ---
 external help file: Microsoft.Graph.DirectoryObjects-help.xml
 Module Name: Microsoft.Graph.DirectoryObjects
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.directoryobjects/update-mgdirectoryobject
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/update-mgdirectoryobject
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Update-MgDirectoryObject
@@ -11,30 +10,33 @@ ms.prod: directory-management
 ## SYNOPSIS
 Update entity in directoryObjects
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDirectoryObject](/powershell/module/Microsoft.Graph.Beta.DirectoryObjects/Update-MgBetaDirectoryObject?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgDirectoryObject -DirectoryObjectId <String> [-AdditionalProperties <Hashtable>]
- [-DeletedDateTime <DateTime>] [-Id <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DeletedDateTime <DateTime>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgDirectoryObject -DirectoryObjectId <String> -BodyParameter <IMicrosoftGraphDirectoryObject>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgDirectoryObject -DirectoryObjectId <String> -BodyParameter <IMicrosoftGraphDirectoryObject> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgDirectoryObject -InputObject <IDirectoryObjectsIdentity> [-AdditionalProperties <Hashtable>]
- [-DeletedDateTime <DateTime>] [-Id <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DeletedDateTime <DateTime>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgDirectoryObject -InputObject <IDirectoryObjectsIdentity>
- -BodyParameter <IMicrosoftGraphDirectoryObject> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDirectoryObject> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -42,17 +44,13 @@ Update entity in directoryObjects
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.DirectoryObjects
 
-Remove-MgDirectoryObject -DirectoryObjectId $directoryObjectId
+Get-MgDirectoryObject -DirectoryObjectId $directoryObjectId
+
 ```
-
-This example shows how to use the Update-MgDirectoryObject Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -72,7 +70,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 directoryObject
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDirectoryObject
@@ -135,7 +133,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDirectoryObjectsIdentity
@@ -146,21 +144,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -204,7 +187,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
 ## NOTES
 
 ALIASES
@@ -214,12 +197,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDirectoryObject>`: directoryObject
+`BODYPARAMETER <IMicrosoftGraphDirectoryObject>`: directoryObject
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
-INPUTOBJECT `<IDirectoryObjectsIdentity>`: Identity Parameter
+`INPUTOBJECT <IDirectoryObjectsIdentity>`: Identity Parameter
   - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
 
 ## RELATED LINKS
+[Update-MgBetaDirectoryObject](/powershell/module/Microsoft.Graph.Beta.DirectoryObjects/Update-MgBetaDirectoryObject?view=graph-powershell-beta)
+

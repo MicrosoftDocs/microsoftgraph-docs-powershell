@@ -1,15 +1,17 @@
 ---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgserviceprincipalclaimmappingpolicybyref
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalclaimmappingpolicybyref
 schema: 2.0.0
 ---
 
 # Get-MgServicePrincipalClaimMappingPolicyByRef
 
 ## SYNOPSIS
-The claimsMappingPolicies assigned to this service principal.
-Supports $expand.
+List the claimsMappingPolicy objects that are assigned to a servicePrincipal.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBetaServicePrincipalClaimMappingPolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalClaimMappingPolicyByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -20,22 +22,26 @@ Get-MgServicePrincipalClaimMappingPolicyByRef -ServicePrincipalId <String> [-Fil
 ```
 
 ## DESCRIPTION
-The claimsMappingPolicies assigned to this service principal.
-Supports $expand.
+List the claimsMappingPolicy objects that are assigned to a servicePrincipal.
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Applications
 
 Get-MgServicePrincipalClaimMappingPolicy -ServicePrincipalId $servicePrincipalId
+
 ```
+## PARAMETERS
 
-This example shows how to use the Get-MgServicePrincipalClaimMappingPolicyByRef Cmdlet.
+### EXAMPLE 1
+```powershell
+Import-Module Microsoft.Graph.Applications
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Get-MgServicePrincipalClaimMappingPolicy -ServicePrincipalId $servicePrincipalId
 
+```
 ## PARAMETERS
 
 ### -All
@@ -187,3 +193,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaBetaServicePrincipalClaimMappingPolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalClaimMappingPolicyByRef?view=graph-powershell-beta)
+

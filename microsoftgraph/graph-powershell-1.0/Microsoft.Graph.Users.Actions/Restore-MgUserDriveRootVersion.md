@@ -1,44 +1,45 @@
 ---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/restore-mguserdriverootversion
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/restore-mguserdriverootversion
 schema: 2.0.0
 ---
 
 # Restore-MgUserDriveRootVersion
 
 ## SYNOPSIS
-Invoke action restoreVersion
+Restore a previous version of a DriveItem to be the current version.
+This will create a new version with the contents of the previous version, but preserves all existing versions of the file.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Restore-MgBetaUserDriveRootVersion](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Restore-MgBetaUserDriveRootVersion?view=graph-powershell-beta)
 
 ## SYNTAX
 
-### Restore1 (Default)
+### Restore (Default)
 ```
 Restore-MgUserDriveRootVersion -DriveId <String> -DriveItemVersionId <String> -UserId <String> [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### RestoreViaIdentity1
+### RestoreViaIdentity
 ```
 Restore-MgUserDriveRootVersion -InputObject <IUsersActionsIdentity> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke action restoreVersion
+Restore a previous version of a DriveItem to be the current version.
+This will create a new version with the contents of the previous version, but preserves all existing versions of the file.
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Files
-
-Restore-MgDriveItemVersion -DriveId $driveId -DriveItemId $driveItemId -DriveItemVersionId $driveItemVersionId
 ```
 
-This example shows how to use the Restore-MgUserDriveRootVersion Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Restore-MgDriveItemVersion -DriveId $driveId -DriveItemId $driveItemId -DriveItemVersionId $driveItemVersionId
 
 ## PARAMETERS
 
@@ -47,7 +48,7 @@ The unique identifier of drive
 
 ```yaml
 Type: String
-Parameter Sets: Restore1
+Parameter Sets: Restore
 Aliases:
 
 Required: True
@@ -62,7 +63,7 @@ The unique identifier of driveItemVersion
 
 ```yaml
 Type: String
-Parameter Sets: Restore1
+Parameter Sets: Restore
 Aliases:
 
 Required: True
@@ -74,11 +75,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: RestoreViaIdentity1
+Parameter Sets: RestoreViaIdentity
 Aliases:
 
 Required: True
@@ -108,7 +109,7 @@ The unique identifier of user
 
 ```yaml
 Type: String
-Parameter Sets: Restore1
+Parameter Sets: Restore
 Aliases:
 
 Required: True
@@ -167,20 +168,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
-  - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
-  - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
-  - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
+`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AuthenticationMethodId <String>]`: The unique identifier of authenticationMethod
   - `[CalendarId <String>]`: The unique identifier of calendar
   - `[ChatId <String>]`: The unique identifier of chat
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
   - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
-  - `[CloudPcId <String>]`: The unique identifier of cloudPC
   - `[ContentTypeId <String>]`: The unique identifier of contentType
-  - `[DeviceEnrollmentConfigurationId <String>]`: The unique identifier of deviceEnrollmentConfiguration
-  - `[DeviceId <String>]`: The unique identifier of device
-  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
   - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
   - `[DriveId <String>]`: The unique identifier of drive
   - `[DriveItemId <String>]`: The unique identifier of driveItem
@@ -193,17 +187,11 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
   - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
   - `[MessageId <String>]`: The unique identifier of message
-  - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
   - `[NotebookId <String>]`: The unique identifier of notebook
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
-  - `[OutlookTaskFolderId <String>]`: The unique identifier of outlookTaskFolder
-  - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
-  - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
-  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
-  - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
   - `[TodoTaskId <String>]`: The unique identifier of todoTask
@@ -211,3 +199,4 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Restore-MgBetaUserDriveRootVersion](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Restore-MgBetaUserDriveRootVersion?view=graph-powershell-beta)

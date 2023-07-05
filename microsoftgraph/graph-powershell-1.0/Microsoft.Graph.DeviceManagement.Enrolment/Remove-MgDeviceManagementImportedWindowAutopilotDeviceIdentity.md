@@ -10,16 +10,19 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property importedWindowsAutopilotDeviceIdentities for deviceManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementImportedWindowAutopilotDeviceIdentity](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Remove-MgDeviceManagementImportedWindowAutopilotDeviceIdentity?view=graph-powershell-beta)
+
 ## SYNTAX
 
-### Delete (Default)
+### Delete1 (Default)
 ```
 Remove-MgDeviceManagementImportedWindowAutopilotDeviceIdentity
  -ImportedWindowsAutopilotDeviceIdentityId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### DeleteViaIdentity
+### DeleteViaIdentity1
 ```
 Remove-MgDeviceManagementImportedWindowAutopilotDeviceIdentity
  -InputObject <IDeviceManagementEnrolmentIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
@@ -53,7 +56,7 @@ The unique identifier of importedWindowsAutopilotDeviceIdentity
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Delete1
 Aliases:
 
 Required: True
@@ -69,7 +72,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IDeviceManagementEnrolmentIdentity
-Parameter Sets: DeleteViaIdentity
+Parameter Sets: DeleteViaIdentity1
 Aliases:
 
 Required: True
@@ -181,3 +184,4 @@ INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[Remove-MgBetaDeviceManagementImportedWindowAutopilotDeviceIdentity](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Remove-MgDeviceManagementImportedWindowAutopilotDeviceIdentity?view=graph-powershell-beta)

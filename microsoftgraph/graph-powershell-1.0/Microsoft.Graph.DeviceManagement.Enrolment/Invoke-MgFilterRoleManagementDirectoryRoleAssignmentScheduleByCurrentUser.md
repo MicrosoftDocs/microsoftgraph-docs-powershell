@@ -10,16 +10,19 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function filterByCurrentUser
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaFilterRoleManagementDirectoryRoleAssignmentScheduleByCurrentUser](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Invoke-MgFilterRoleManagementDirectoryRoleAssignmentScheduleByCurrentUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
-### Filter1 (Default)
+### Filter (Default)
 ```
 Invoke-MgFilterRoleManagementDirectoryRoleAssignmentScheduleByCurrentUser -On <String> [-Count]
  [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [<CommonParameters>]
 ```
 
-### FilterViaIdentity1
+### FilterViaIdentity
 ```
 Invoke-MgFilterRoleManagementDirectoryRoleAssignmentScheduleByCurrentUser
  -InputObject <IDeviceManagementEnrolmentIdentity> [-Count] [-Filter <String>] [-Property <String[]>]
@@ -69,7 +72,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IDeviceManagementEnrolmentIdentity
-Parameter Sets: FilterViaIdentity1
+Parameter Sets: FilterViaIdentity
 Aliases:
 
 Required: True
@@ -84,7 +87,7 @@ Usage: on='{on}'
 
 ```yaml
 Type: String
-Parameter Sets: Filter1
+Parameter Sets: Filter
 Aliases:
 
 Required: True
@@ -177,7 +180,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementEnrolmentIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleAssignmentSchedule
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleAssignmentSchedule1
 ## NOTES
 
 ALIASES
@@ -225,3 +228,4 @@ INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[Invoke-MgBetaFilterRoleManagementDirectoryRoleAssignmentScheduleByCurrentUser](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Invoke-MgFilterRoleManagementDirectoryRoleAssignmentScheduleByCurrentUser?view=graph-powershell-beta)

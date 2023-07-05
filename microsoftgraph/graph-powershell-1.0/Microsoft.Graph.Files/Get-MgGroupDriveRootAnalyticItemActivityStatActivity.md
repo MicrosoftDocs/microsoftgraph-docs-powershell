@@ -1,7 +1,7 @@
 ---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/get-mggroupdriverootanalyticitemactivitystatactivity
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriverootanalyticitemactivitystatactivity
 schema: 2.0.0
 ---
 
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Exposes the itemActivities represented in this itemActivityStat resource.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveRootAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootAnalyticItemActivityStatActivity?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -23,6 +26,16 @@ Get-MgGroupDriveRootAnalyticItemActivityStatActivity -DriveId <String> -GroupId 
 Exposes the itemActivities represented in this itemActivityStat resource.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -235,3 +248,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaGroupDriveRootAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootAnalyticItemActivityStatActivity?view=graph-powershell-beta)

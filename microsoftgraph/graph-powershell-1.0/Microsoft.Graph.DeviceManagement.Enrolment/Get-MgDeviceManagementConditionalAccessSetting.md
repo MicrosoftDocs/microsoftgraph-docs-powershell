@@ -1,6 +1,6 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Enrolment
+external help file: Microsoft.Graph.DeviceManagement.Enrollment-help.xml
+Module Name: Microsoft.Graph.DeviceManagement.Enrollment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/get-mgdevicemanagementconditionalaccesssetting
 schema: 2.0.0
 ---
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The Exchange on premises conditional access settings.
 On premises conditional access will require devices to be both enrolled and compliant for mail access
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementConditionalAccessSetting](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Get-MgDeviceManagementConditionalAccessSetting?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -69,3 +72,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaDeviceManagementConditionalAccessSetting](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Get-MgDeviceManagementConditionalAccessSetting?view=graph-powershell-beta)

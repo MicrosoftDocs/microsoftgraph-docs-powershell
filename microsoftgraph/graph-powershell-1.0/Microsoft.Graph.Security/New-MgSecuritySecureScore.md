@@ -1,7 +1,7 @@
 ---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/new-mgsecuritysecurescore
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritysecurescore
 schema: 2.0.0
 ---
 
@@ -10,9 +10,12 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to secureScores for security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSecuritySecureScore](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecuritySecureScore?view=graph-powershell-beta)
+
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
 New-MgSecuritySecureScore [-ActiveUserCount <Int32>] [-AdditionalProperties <Hashtable>]
  [-AverageComparativeScores <IMicrosoftGraphAverageComparativeScore[]>] [-AzureTenantId <String>]
@@ -21,7 +24,7 @@ New-MgSecuritySecureScore [-ActiveUserCount <Int32>] [-AdditionalProperties <Has
  [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
 New-MgSecuritySecureScore -BodyParameter <IMicrosoftGraphSecureScore> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -31,17 +34,13 @@ Create new navigation property to secureScores for security
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Security
 
 Get-MgSecuritySecureScore -Top 1
+
 ```
-
-This example shows how to use the New-MgSecuritySecureScore Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ## PARAMETERS
 
 ### -ActiveUserCount
@@ -49,7 +48,7 @@ Active user count of the given tenant.
 
 ```yaml
 Type: Int32
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -64,7 +63,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -76,11 +75,11 @@ Accept wildcard characters: False
 
 ### -AverageComparativeScores
 Average score by different scopes (for example, average by industry, average by seating) and control category (Identity, Data, Device, Apps, Infrastructure) within the scope.
-To construct, please use Get-Help -Online and see NOTES section for AVERAGECOMPARATIVESCORES properties and create a hash table.
+To construct, see NOTES section for AVERAGECOMPARATIVESCORES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAverageComparativeScore[]
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -95,7 +94,7 @@ GUID string for tenant ID.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -107,11 +106,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 secureScore
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSecureScore
-Parameter Sets: Create1
+Parameter Sets: Create
 Aliases:
 
 Required: True
@@ -123,11 +122,11 @@ Accept wildcard characters: False
 
 ### -ControlScores
 Contains tenant scores for a set of controls.
-To construct, please use Get-Help -Online and see NOTES section for CONTROLSCORES properties and create a hash table.
+To construct, see NOTES section for CONTROLSCORES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphControlScore[]
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -142,7 +141,7 @@ The date when the entity is created.
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -157,7 +156,7 @@ Tenant current attained score on specified date.
 
 ```yaml
 Type: Double
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -172,7 +171,7 @@ Microsoft-provided services for the tenant (for example, Exchange online, Skype,
 
 ```yaml
 Type: String[]
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -188,7 +187,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -203,7 +202,7 @@ Licensed user count of the given tenant.
 
 ```yaml
 Type: Int32
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -218,7 +217,7 @@ Tenant maximum possible score on specified date.
 
 ```yaml
 Type: Double
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -230,11 +229,11 @@ Accept wildcard characters: False
 
 ### -VendorInformation
 securityVendorInformation
-To construct, please use Get-Help -Online and see NOTES section for VENDORINFORMATION properties and create a hash table.
+To construct, see NOTES section for VENDORINFORMATION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSecurityVendorInformation
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -293,11 +292,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-AVERAGECOMPARATIVESCORES <IMicrosoftGraphAverageComparativeScore\[]>: Average score by different scopes (for example, average by industry, average by seating) and control category (Identity, Data, Device, Apps, Infrastructure) within the scope.
+`AVERAGECOMPARATIVESCORES <IMicrosoftGraphAverageComparativeScore[]>`: Average score by different scopes (for example, average by industry, average by seating) and control category (Identity, Data, Device, Apps, Infrastructure) within the scope.
   - `[AverageScore <Double?>]`: Average score within specified basis.
   - `[Basis <String>]`: Scope type. The possible values are: AllTenants, TotalSeats, IndustryTypes.
 
-BODYPARAMETER `<IMicrosoftGraphSecureScore>`: secureScore
+`BODYPARAMETER <IMicrosoftGraphSecureScore>`: secureScore
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ActiveUserCount <Int32?>]`: Active user count of the given tenant.
@@ -322,13 +321,13 @@ BODYPARAMETER `<IMicrosoftGraphSecureScore>`: secureScore
     - `[SubProvider <String>]`: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
     - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye). Required
 
-CONTROLSCORES <IMicrosoftGraphControlScore\[]>: Contains tenant scores for a set of controls.
+`CONTROLSCORES <IMicrosoftGraphControlScore[]>`: Contains tenant scores for a set of controls.
   - `[ControlCategory <String>]`: Control action category (Identity, Data, Device, Apps, Infrastructure).
   - `[ControlName <String>]`: Control unique name.
   - `[Description <String>]`: Description of the control.
   - `[Score <Double?>]`: Tenant achieved score for the control (it varies day by day depending on tenant operations on the control).
 
-VENDORINFORMATION `<IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
+`VENDORINFORMATION <IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Provider <String>]`: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
   - `[ProviderVersion <String>]`: Version of the provider or subprovider, if it exists, that generated the alert. Required
@@ -336,3 +335,5 @@ VENDORINFORMATION `<IMicrosoftGraphSecurityVendorInformation>`: securityVendorIn
   - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye). Required
 
 ## RELATED LINKS
+[New-MgBetaSecuritySecureScore](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecuritySecureScore?view=graph-powershell-beta)
+

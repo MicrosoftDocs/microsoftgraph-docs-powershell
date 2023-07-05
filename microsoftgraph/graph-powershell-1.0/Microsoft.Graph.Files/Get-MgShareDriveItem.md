@@ -1,14 +1,18 @@
 ---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/get-mgsharedriveitem
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharedriveitem
 schema: 2.0.0
 ---
 
 # Get-MgShareDriveItem
 
 ## SYNOPSIS
-Used to access the underlying driveItem
+Access a shared DriveItem or a collection of shared items by using a **shareId** or sharing URL.
+To use a sharing URL with this API, your app needs to transform the URL into a sharing token.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaShareDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareDriveItem?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -25,28 +29,25 @@ Get-MgShareDriveItem -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] 
 ```
 
 ## DESCRIPTION
-Used to access the underlying driveItem
+Access a shared DriveItem or a collection of shared items by using a **shareId** or sharing URL.
+To use a sharing URL with this API, your app needs to transform the URL into a sharing token.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgShareDriveItem Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Files
-Get-MgShareDriveItem -SharedDriveItemId $sharedDriveItemId -ExpandProperty "children"
-```
 
-This example shows how to use the Get-MgShareDriveItem Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Get-MgShareDriveItem Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Files
 Get-MgShareDriveItem -SharedDriveItemId $sharedDriveItemId
+
 ```
+### EXAMPLE 2
+```powershell
+Import-Module Microsoft.Graph.Files
 
-This example shows how to use the Get-MgShareDriveItem Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Get-MgShareDriveItem -SharedDriveItemId $sharedDriveItemId -ExpandProperty "children"
 
+```
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -66,7 +67,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IFilesIdentity
@@ -128,7 +129,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+`INPUTOBJECT <IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType
@@ -155,3 +156,5 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaShareDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareDriveItem?view=graph-powershell-beta)
+

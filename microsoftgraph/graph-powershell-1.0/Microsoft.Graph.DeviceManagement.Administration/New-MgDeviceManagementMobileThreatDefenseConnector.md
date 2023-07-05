@@ -1,7 +1,7 @@
 ---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementmobilethreatdefenseconnector
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementmobilethreatdefenseconnector
 schema: 2.0.0
 ---
 
@@ -10,9 +10,12 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to mobileThreatDefenseConnectors for deviceManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementMobileThreatDefenseConnector](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementMobileThreatDefenseConnector?view=graph-powershell-beta)
+
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
 New-MgDeviceManagementMobileThreatDefenseConnector [-AdditionalProperties <Hashtable>]
  [-AllowPartnerToCollectIosApplicationMetadata] [-AllowPartnerToCollectIosPersonalApplicationMetadata]
@@ -24,16 +27,30 @@ New-MgDeviceManagementMobileThreatDefenseConnector [-AdditionalProperties <Hasht
  [-Confirm] [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
-New-MgDeviceManagementMobileThreatDefenseConnector
- -BodyParameter <IMicrosoftGraphMobileThreatDefenseConnector1> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgDeviceManagementMobileThreatDefenseConnector -BodyParameter <IMicrosoftGraphMobileThreatDefenseConnector>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to mobileThreatDefenseConnectors for deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -42,7 +59,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -59,7 +76,7 @@ Default value is FALSE.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -76,7 +93,7 @@ Default value is FALSE.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -91,7 +108,7 @@ For Android, set whether Intune must receive data from the Mobile Threat Defense
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -106,7 +123,7 @@ For Android, set whether data from the Mobile Threat Defense partner should be u
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -124,7 +141,7 @@ Default value is FALSE.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -136,11 +153,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Entity which represents a connection to Mobile Threat Defense partner.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMobileThreatDefenseConnector1
-Parameter Sets: Create1
+Type: IMicrosoftGraphMobileThreatDefenseConnector
+Parameter Sets: Create
 Aliases:
 
 Required: True
@@ -156,7 +173,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -171,7 +188,7 @@ For IOS, set whether Intune must receive data from the Mobile Threat Defense par
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -186,7 +203,7 @@ For IOS, get or set whether data from the Mobile Threat Defense partner should b
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -204,7 +221,7 @@ Default value is FALSE.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -219,7 +236,7 @@ DateTime of last Heartbeat recieved from the Mobile Threat Defense partner
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -236,7 +253,7 @@ Default value is FALSE.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -251,7 +268,7 @@ Partner state of this tenant.
 
 ```yaml
 Type: MobileThreatPartnerTenantState
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -266,7 +283,7 @@ Get or Set days the per tenant tolerance to unresponsiveness for this partner in
 
 ```yaml
 Type: Int32
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -281,7 +298,7 @@ Get or set whether to block devices on the enabled platforms that do not meet th
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -298,7 +315,7 @@ Default value is FALSE.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -315,7 +332,7 @@ Default value is FALSE.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -361,10 +378,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileThreatDefenseConnector1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileThreatDefenseConnector
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileThreatDefenseConnector1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileThreatDefenseConnector
 ## NOTES
 
 ALIASES
@@ -374,7 +391,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphMobileThreatDefenseConnector1>`: Entity which represents a connection to Mobile Threat Defense partner.
+`BODYPARAMETER <IMicrosoftGraphMobileThreatDefenseConnector>`: Entity which represents a connection to Mobile Threat Defense partner.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AllowPartnerToCollectIosApplicationMetadata <Boolean?>]`: When TRUE, indicates the Mobile Threat Defense partner may collect metadata about installed applications from Intune for IOS devices. When FALSE, indicates the Mobile Threat Defense partner may not collect metadata about installed applications from Intune for IOS devices. Default value is FALSE.
@@ -394,3 +411,4 @@ BODYPARAMETER `<IMicrosoftGraphMobileThreatDefenseConnector1>`: Entity which rep
   - `[WindowsEnabled <Boolean?>]`: When TRUE, inidicates that data from the Mobile Threat Defense partner can be used during compliance evaluations for Windows. When FALSE, inidicates that data from the Mobile Threat Defense partner should not be used during compliance evaluations for Windows. Default value is FALSE.
 
 ## RELATED LINKS
+[New-MgBetaDeviceManagementMobileThreatDefenseConnector](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementMobileThreatDefenseConnector?view=graph-powershell-beta)

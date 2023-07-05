@@ -1,76 +1,72 @@
 ---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/invoke-mgacceptgroupcalendareventtentatively
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/grant-mggroupsitepermission
 schema: 2.0.0
 ---
 
-# Invoke-MgAcceptGroupCalendarEventTentatively
+# Grant-MgGroupSitePermission
 
 ## SYNOPSIS
-Invoke action tentativelyAccept
+Grant users access to a link represented by a [permission][].
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaAcceptGroupCalendarEventTentatively](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaAcceptGroupCalendarEventTentatively?view=graph-powershell-beta)
 
 ## SYNTAX
 
-### AcceptExpanded1 (Default)
+### GrantExpanded (Default)
 ```
-Invoke-MgAcceptGroupCalendarEventTentatively -EventId <String> -GroupId <String>
- [-AdditionalProperties <Hashtable>] [-Comment <String>] [-ProposedNewTime <IMicrosoftGraphTimeSlot>]
- [-SendResponse] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Accept1
-```
-Invoke-MgAcceptGroupCalendarEventTentatively -EventId <String> -GroupId <String>
- -BodyParameter <IPathsHz5WdfGroupsGroupIdCalendarEventsEventIdMicrosoftGraphTentativelyacceptPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Grant-MgGroupSitePermission -GroupId <String> -PermissionId <String> -SiteId <String>
+ [-AdditionalProperties <Hashtable>] [-Recipients <IMicrosoftGraphDriveRecipient[]>] [-Roles <String[]>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### AcceptViaIdentityExpanded1
+### Grant
 ```
-Invoke-MgAcceptGroupCalendarEventTentatively -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
- [-Comment <String>] [-ProposedNewTime <IMicrosoftGraphTimeSlot>] [-SendResponse] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Grant-MgGroupSitePermission -GroupId <String> -PermissionId <String> -SiteId <String>
+ -BodyParameter <IPaths1Bir9OcGroupsGroupIdSitesSiteIdPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### AcceptViaIdentity1
+### GrantViaIdentityExpanded
 ```
-Invoke-MgAcceptGroupCalendarEventTentatively -InputObject <IGroupsIdentity>
- -BodyParameter <IPathsHz5WdfGroupsGroupIdCalendarEventsEventIdMicrosoftGraphTentativelyacceptPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Grant-MgGroupSitePermission -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
+ [-Recipients <IMicrosoftGraphDriveRecipient[]>] [-Roles <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### GrantViaIdentity
+```
+Grant-MgGroupSitePermission -InputObject <IGroupsIdentity>
+ -BodyParameter <IPaths1Bir9OcGroupsGroupIdSitesSiteIdPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke action tentativelyAccept
+Grant users access to a link represented by a [permission][].
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Users.Actions
-
-$params = @{
-	Comment = "I may not be able to make this week. How about next week?"
-	SendResponse = $true
-	ProposedNewTime = @{
-		Start = @{
-			DateTime = "2019-12-02T18:00:00"
-			TimeZone = "Pacific Standard Time"
-		}
-		End = @{
-			DateTime = "2019-12-02T19:00:00"
-			TimeZone = "Pacific Standard Time"
-		}
-	}
-}
-
-# A UPN can also be used as -UserId.
-Invoke-MgAcceptUserEventTentatively -UserId $userId -EventId $eventId -BodyParameter $params
+Import-Module Microsoft.Graph.Files
 ```
 
-This example shows how to use the Invoke-MgAcceptGroupCalendarEventTentatively Cmdlet.
+$params = @{
+	Recipients = @(
+		@{
+			Email = "john@contoso.com"
+		}
+		@{
+			Email = "ryan@external.com"
+		}
+	)
+	Roles = @(
+		"read"
+	)
+}
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Grant-MgSharePermission -SharedDriveItemId $sharedDriveItemId -BodyParameter $params
 
 ## PARAMETERS
 
@@ -79,7 +75,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: AcceptExpanded1, AcceptViaIdentityExpanded1
+Parameter Sets: GrantExpanded, GrantViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -91,11 +87,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsHz5WdfGroupsGroupIdCalendarEventsEventIdMicrosoftGraphTentativelyacceptPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Accept1, AcceptViaIdentity1
+Type: IPaths1Bir9OcGroupsGroupIdSitesSiteIdPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Grant, GrantViaIdentity
 Aliases:
 
 Required: True
@@ -105,42 +101,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Comment
-.
-
-```yaml
-Type: String
-Parameter Sets: AcceptExpanded1, AcceptViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -EventId
-The unique identifier of event
-
-```yaml
-Type: String
-Parameter Sets: AcceptExpanded1, Accept1
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -GroupId
 The unique identifier of group
 
 ```yaml
 Type: String
-Parameter Sets: AcceptExpanded1, Accept1
+Parameter Sets: GrantExpanded, Grant
 Aliases:
 
 Required: True
@@ -152,11 +118,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IGroupsIdentity
-Parameter Sets: AcceptViaIdentityExpanded1, AcceptViaIdentity1
+Parameter Sets: GrantViaIdentityExpanded, GrantViaIdentity
 Aliases:
 
 Required: True
@@ -166,12 +132,28 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
+### -PermissionId
+The unique identifier of permission
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
+Type: String
+Parameter Sets: GrantExpanded, Grant
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Recipients
+.
+To construct, see NOTES section for RECIPIENTS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphDriveRecipient[]
+Parameter Sets: GrantExpanded, GrantViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -181,31 +163,30 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProposedNewTime
-timeSlot
-To construct, please use Get-Help -Online and see NOTES section for PROPOSEDNEWTIME properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphTimeSlot
-Parameter Sets: AcceptExpanded1, AcceptViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -SendResponse
+### -Roles
 .
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: AcceptExpanded1, AcceptViaIdentityExpanded1
+Type: String[]
+Parameter Sets: GrantExpanded, GrantViaIdentityExpanded
 Aliases:
 
 Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SiteId
+The unique identifier of site
+
+```yaml
+Type: String
+Parameter Sets: GrantExpanded, Grant
+Aliases:
+
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -249,10 +230,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-### Microsoft.Graph.PowerShell.Models.IPathsHz5WdfGroupsGroupIdCalendarEventsEventIdMicrosoftGraphTentativelyacceptPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.PowerShell.Models.IPaths1Bir9OcGroupsGroupIdSitesSiteIdPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPermission
 ## NOTES
 
 ALIASES
@@ -262,74 +243,55 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsHz5WdfGroupsGroupIdCalendarEventsEventIdMicrosoftGraphTentativelyacceptPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1Bir9OcGroupsGroupIdSitesSiteIdPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Comment <String>]`: 
-  - `[ProposedNewTime <IMicrosoftGraphTimeSlot>]`: timeSlot
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
-      - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
-    - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-  - `[SendResponse <Boolean?>]`: 
+  - `[Recipients <IMicrosoftGraphDriveRecipient[]>]`: 
+    - `[Alias <String>]`: The alias of the domain object, for cases where an email address is unavailable (e.g. security groups).
+    - `[Email <String>]`: The email address for the recipient, if the recipient has an associated email address.
+    - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
+  - `[Roles <String[]>]`: 
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+`INPUTOBJECT <IGroupsIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[ConversationId <String>]`: The unique identifier of conversation
   - `[ConversationThreadId <String>]`: The unique identifier of conversationThread
   - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[DirectorySettingId <String>]`: The unique identifier of directorySetting
   - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
   - `[DriveId <String>]`: The unique identifier of drive
   - `[DriveItemId <String>]`: The unique identifier of driveItem
   - `[DriveItemVersionId <String>]`: The unique identifier of driveItemVersion
   - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
-  - `[EndpointId <String>]`: The unique identifier of endpoint
   - `[EventId <String>]`: The unique identifier of event
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[GroupId <String>]`: The unique identifier of group
   - `[GroupLifecyclePolicyId <String>]`: The unique identifier of groupLifecyclePolicy
   - `[GroupSettingId <String>]`: The unique identifier of groupSetting
-  - `[HorizontalSectionColumnId <String>]`: The unique identifier of horizontalSectionColumn
-  - `[HorizontalSectionId <String>]`: The unique identifier of horizontalSection
+  - `[GroupSettingTemplateId <String>]`: The unique identifier of groupSettingTemplate
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
   - `[Interval <String>]`: Usage: interval='{interval}'
   - `[ListId <String>]`: The unique identifier of list
-  - `[ListId1 <String>]`: Usage: listId='{listId}'
   - `[ListItemId <String>]`: The unique identifier of listItem
   - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
-  - `[MentionId <String>]`: The unique identifier of mention
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
   - `[NotebookId <String>]`: The unique identifier of notebook
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
   - `[Path <String>]`: Usage: path='{path}'
   - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket
-  - `[PlannerPlanId <String>]`: The unique identifier of plannerPlan
   - `[PostId <String>]`: The unique identifier of post
   - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
   - `[Q <String>]`: Usage: q='{q}'
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
-  - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
   - `[SiteId <String>]`: The unique identifier of site
-  - `[SitePageId <String>]`: The unique identifier of sitePage
   - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[Token <String>]`: Usage: token='{token}'
   - `[User <String>]`: Usage: User='{User}'
-  - `[UserId <String>]`: The unique identifier of user
-  - `[WebPartId <String>]`: The unique identifier of webPart
 
-PROPOSEDNEWTIME `<IMicrosoftGraphTimeSlot>`: timeSlot
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
-    - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
-  - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+`RECIPIENTS <IMicrosoftGraphDriveRecipient[]>`: .
+  - `[Alias <String>]`: The alias of the domain object, for cases where an email address is unavailable (e.g. security groups).
+  - `[Email <String>]`: The email address for the recipient, if the recipient has an associated email address.
+  - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
+[Invoke-MgBetaAcceptGroupCalendarEventTentatively](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaAcceptGroupCalendarEventTentatively?view=graph-powershell-beta)

@@ -10,35 +10,38 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property resourceNamespaces in roleManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaRoleManagementDirectoryResourceNamespace](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Update-MgRoleManagementDirectoryResourceNamespace?view=graph-powershell-beta)
+
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### UpdateExpanded (Default)
 ```
 Update-MgRoleManagementDirectoryResourceNamespace -UnifiedRbacResourceNamespaceId <String>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Name <String>]
- [-ResourceActions <IMicrosoftGraphUnifiedRbacResourceAction[]>] [-PassThru] [-WhatIf] [-Confirm]
+ [-ResourceActions <IMicrosoftGraphUnifiedRbacResourceAction1[]>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### Update1
+### Update
 ```
 Update-MgRoleManagementDirectoryResourceNamespace -UnifiedRbacResourceNamespaceId <String>
- -BodyParameter <IMicrosoftGraphUnifiedRbacResourceNamespace> [-PassThru] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphUnifiedRbacResourceNamespace1> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded1
+### UpdateViaIdentityExpanded
 ```
 Update-MgRoleManagementDirectoryResourceNamespace -InputObject <IDeviceManagementEnrolmentIdentity>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Name <String>]
- [-ResourceActions <IMicrosoftGraphUnifiedRbacResourceAction[]>] [-PassThru] [-WhatIf] [-Confirm]
+ [-ResourceActions <IMicrosoftGraphUnifiedRbacResourceAction1[]>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### UpdateViaIdentity1
+### UpdateViaIdentity
 ```
 Update-MgRoleManagementDirectoryResourceNamespace -InputObject <IDeviceManagementEnrolmentIdentity>
- -BodyParameter <IMicrosoftGraphUnifiedRbacResourceNamespace> [-PassThru] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphUnifiedRbacResourceNamespace1> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -54,7 +57,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -69,8 +72,8 @@ unifiedRbacResourceNamespace
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUnifiedRbacResourceNamespace
-Parameter Sets: Update1, UpdateViaIdentity1
+Type: IMicrosoftGraphUnifiedRbacResourceNamespace1
+Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -86,7 +89,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -102,7 +105,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IDeviceManagementEnrolmentIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -147,8 +150,8 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for RESOURCEACTIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUnifiedRbacResourceAction[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: IMicrosoftGraphUnifiedRbacResourceAction1[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -163,7 +166,7 @@ The unique identifier of unifiedRbacResourceNamespace
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -210,7 +213,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementEnrolmentIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRbacResourceNamespace
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRbacResourceNamespace1
 ## OUTPUTS
 
 ### System.Boolean
@@ -283,3 +286,4 @@ RESOURCEACTIONS <IMicrosoftGraphUnifiedRbacResourceAction\[]>: .
   - `[ResourceScopeId <String>]`: 
 
 ## RELATED LINKS
+[Update-MgBetaRoleManagementDirectoryResourceNamespace](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Update-MgRoleManagementDirectoryResourceNamespace?view=graph-powershell-beta)

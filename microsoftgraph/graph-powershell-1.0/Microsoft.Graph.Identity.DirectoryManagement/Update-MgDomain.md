@@ -1,9 +1,8 @@
 ---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdomain
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdomain
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Update-MgDomain
@@ -11,9 +10,12 @@ ms.prod: directory-management
 ## SYNOPSIS
 Update the properties of domain object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDomain](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDomain?view=graph-powershell-beta)
+
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### UpdateExpanded (Default)
 ```
 Update-MgDomain -DomainId <String> [-AdditionalProperties <Hashtable>] [-AuthenticationType <String>]
  [-AvailabilityStatus <String>] [-DomainNameReferences <IMicrosoftGraphDirectoryObject[]>]
@@ -21,17 +23,17 @@ Update-MgDomain -DomainId <String> [-AdditionalProperties <Hashtable>] [-Authent
  [-IsDefault] [-IsInitial] [-IsRoot] [-IsVerified] [-Manufacturer <String>] [-Model <String>]
  [-PasswordNotificationWindowInDays <Int32>] [-PasswordValidityPeriodInDays <Int32>]
  [-ServiceConfigurationRecords <IMicrosoftGraphDomainDnsRecord[]>] [-State <IMicrosoftGraphDomainState>]
- [-SupportedServices <String[]>] [-VerificationDnsRecords <IMicrosoftGraphDomainDnsRecord[]>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SupportedServices <String[]>] [-VerificationDnsRecords <IMicrosoftGraphDomainDnsRecord[]>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
-### Update1
+### Update
 ```
-Update-MgDomain -DomainId <String> -BodyParameter <IMicrosoftGraphDomain1> [-PassThru] [-WhatIf] [-Confirm]
+Update-MgDomain -DomainId <String> -BodyParameter <IMicrosoftGraphDomain> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded1
+### UpdateViaIdentityExpanded
 ```
 Update-MgDomain -InputObject <IIdentityDirectoryManagementIdentity> [-AdditionalProperties <Hashtable>]
  [-AuthenticationType <String>] [-AvailabilityStatus <String>]
@@ -40,14 +42,14 @@ Update-MgDomain -InputObject <IIdentityDirectoryManagementIdentity> [-Additional
  [-IsDefault] [-IsInitial] [-IsRoot] [-IsVerified] [-Manufacturer <String>] [-Model <String>]
  [-PasswordNotificationWindowInDays <Int32>] [-PasswordValidityPeriodInDays <Int32>]
  [-ServiceConfigurationRecords <IMicrosoftGraphDomainDnsRecord[]>] [-State <IMicrosoftGraphDomainState>]
- [-SupportedServices <String[]>] [-VerificationDnsRecords <IMicrosoftGraphDomainDnsRecord[]>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SupportedServices <String[]>] [-VerificationDnsRecords <IMicrosoftGraphDomainDnsRecord[]>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity1
+### UpdateViaIdentity
 ```
-Update-MgDomain -InputObject <IIdentityDirectoryManagementIdentity> -BodyParameter <IMicrosoftGraphDomain1>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgDomain -InputObject <IIdentityDirectoryManagementIdentity> -BodyParameter <IMicrosoftGraphDomain>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -55,22 +57,21 @@ Update the properties of domain object.
 
 ## EXAMPLES
 
-### Example 1: Using the Update-MgDomain Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
+
 $params = @{
-	IsDefault = $true
-	SupportedServices = @(
+	isDefault = $true
+	supportedServices = @(
 		"Email"
 		"OfficeCommunicationsOnline"
 	)
 }
+
 Update-MgDomain -DomainId $domainId -BodyParameter $params
+
 ```
-
-This example shows how to use the Update-MgDomain Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -78,7 +79,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -97,7 +98,7 @@ This property is read-only and is not nullable.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -114,7 +115,7 @@ The availabilityStatus property of the domain entity in the response is either A
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -126,11 +127,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 domain
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDomain1
-Parameter Sets: Update1, UpdateViaIdentity1
+Type: IMicrosoftGraphDomain
+Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -145,7 +146,7 @@ The unique identifier of domain
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -160,11 +161,11 @@ The objects such as users and groups that reference the domain ID.
 Read-only, Nullable.
 Supports $expand and $filter by the OData type of objects returned.
 For example /domains/{domainId}/domainNameReferences/microsoft.graph.user and /domains/{domainId}/domainNameReferences/microsoft.graph.group.
-To construct, please use Get-Help -Online and see NOTES section for DOMAINNAMEREFERENCES properties and create a hash table.
+To construct, see NOTES section for DOMAINNAMEREFERENCES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDirectoryObject[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -177,11 +178,11 @@ Accept wildcard characters: False
 ### -FederationConfiguration
 Domain settings configured by a customer when federated with Azure AD.
 Supports $expand.
-To construct, please use Get-Help -Online and see NOTES section for FEDERATIONCONFIGURATION properties and create a hash table.
+To construct, see NOTES section for FEDERATIONCONFIGURATION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphInternalDomainFederation[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -197,7 +198,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -209,11 +210,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IIdentityDirectoryManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -230,7 +231,7 @@ Not nullable
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -247,7 +248,7 @@ Not nullable
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -264,7 +265,7 @@ Not nullable
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -281,7 +282,7 @@ Not nullable
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -297,7 +298,7 @@ Not nullable
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -312,7 +313,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -327,22 +328,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -358,7 +344,7 @@ If the property is not set, a default value of 14 days will be used.
 
 ```yaml
 Type: Int32
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -374,7 +360,7 @@ If the property is not set, a default value of 90 days will be used.
 
 ```yaml
 Type: Int32
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -388,11 +374,11 @@ Accept wildcard characters: False
 DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services.
 Read-only, Nullable.
 Supports $expand.
-To construct, please use Get-Help -Online and see NOTES section for SERVICECONFIGURATIONRECORDS properties and create a hash table.
+To construct, see NOTES section for SERVICECONFIGURATIONRECORDS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDomainDnsRecord[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -404,11 +390,11 @@ Accept wildcard characters: False
 
 ### -State
 domainState
-To construct, please use Get-Help -Online and see NOTES section for STATE properties and create a hash table.
+To construct, see NOTES section for STATE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDomainState
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -426,7 +412,7 @@ Not nullable.
 
 ```yaml
 Type: String[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -440,11 +426,11 @@ Accept wildcard characters: False
 DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Azure AD.
 Read-only, Nullable.
 Supports $expand.
-To construct, please use Get-Help -Online and see NOTES section for VERIFICATIONDNSRECORDS properties and create a hash table.
+To construct, see NOTES section for VERIFICATIONDNSRECORDS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDomainDnsRecord[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -491,10 +477,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDomain1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDomain
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDomain
 ## NOTES
 
 ALIASES
@@ -504,7 +490,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDomain1>`: domain
+`BODYPARAMETER <IMicrosoftGraphDomain>`: domain
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AuthenticationType <String>]`: Indicates the configured authentication type for the domain. The value is either Managed or Federated. Managed indicates a cloud managed domain where Azure AD performs user authentication. Federated indicates authentication is federated with an identity provider such as the tenant's on-premises Active Directory via Active Directory Federation Services. This property is read-only and is not nullable.
@@ -554,11 +540,11 @@ BODYPARAMETER `<IMicrosoftGraphDomain1>`: domain
   - `[SupportedServices <String[]>]`: The capabilities assigned to the domain. Can include 0, 1 or more of following values: Email, Sharepoint, EmailInternalRelayOnly, OfficeCommunicationsOnline, SharePointDefaultDomain, FullRedelegation, SharePointPublic, OrgIdAuthentication, Yammer, Intune. The values which you can add/remove using Graph API include: Email, OfficeCommunicationsOnline, Yammer. Not nullable.
   - `[VerificationDnsRecords <IMicrosoftGraphDomainDnsRecord[]>]`: DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Azure AD. Read-only, Nullable. Supports $expand.
 
-DOMAINNAMEREFERENCES <IMicrosoftGraphDirectoryObject\[]>: The objects such as users and groups that reference the domain ID. Read-only, Nullable. Supports $expand and $filter by the OData type of objects returned. For example /domains/{domainId}/domainNameReferences/microsoft.graph.user and /domains/{domainId}/domainNameReferences/microsoft.graph.group.
+`DOMAINNAMEREFERENCES <IMicrosoftGraphDirectoryObject[]>`: The objects such as users and groups that reference the domain ID. Read-only, Nullable. Supports $expand and $filter by the OData type of objects returned. For example /domains/{domainId}/domainNameReferences/microsoft.graph.user and /domains/{domainId}/domainNameReferences/microsoft.graph.group.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
-FEDERATIONCONFIGURATION <IMicrosoftGraphInternalDomainFederation\[]>: Domain settings configured by a customer when federated with Azure AD. Supports $expand.
+`FEDERATIONCONFIGURATION <IMicrosoftGraphInternalDomainFederation[]>`: Domain settings configured by a customer when federated with Azure AD. Supports $expand.
   - `[IssuerUri <String>]`: Issuer URI of the federation server.
   - `[MetadataExchangeUri <String>]`: URI of the metadata exchange endpoint used for authentication from rich client applications.
   - `[PassiveSignInUri <String>]`: URI that web-based clients are directed to when signing in to Azure Active Directory (Azure AD) services.
@@ -577,43 +563,30 @@ FEDERATIONCONFIGURATION <IMicrosoftGraphInternalDomainFederation\[]>: Domain set
     - `[CertificateUpdateResult <String>]`: Status of the last certificate update. Read-only. For a list of statuses, see certificateUpdateResult status.
     - `[LastRunDateTime <DateTime?>]`: Date and time in ISO 8601 format and in UTC time when the certificate was last updated. Read-only.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
-  - `[CommandId <String>]`: The unique identifier of command
   - `[ContractId <String>]`: The unique identifier of contract
   - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
   - `[DeviceId <String>]`: The unique identifier of device
   - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
   - `[DirectoryRoleId <String>]`: The unique identifier of directoryRole
   - `[DirectoryRoleTemplateId <String>]`: The unique identifier of directoryRoleTemplate
-  - `[DirectorySettingId <String>]`: The unique identifier of directorySetting
-  - `[DirectorySettingTemplateId <String>]`: The unique identifier of directorySettingTemplate
   - `[DomainDnsRecordId <String>]`: The unique identifier of domainDnsRecord
   - `[DomainId <String>]`: The unique identifier of domain
   - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[FeatureRolloutPolicyId <String>]`: The unique identifier of featureRolloutPolicy
   - `[IdentityProviderBaseId <String>]`: The unique identifier of identityProviderBase
-  - `[ImpactedResourceId <String>]`: The unique identifier of impactedResource
-  - `[InboundSharedUserProfileUserId <String>]`: The unique identifier of inboundSharedUserProfile
   - `[InternalDomainFederationId <String>]`: The unique identifier of internalDomainFederation
   - `[OnPremisesDirectorySynchronizationId <String>]`: The unique identifier of onPremisesDirectorySynchronization
   - `[OrgContactId <String>]`: The unique identifier of orgContact
   - `[OrganizationId <String>]`: The unique identifier of organization
   - `[OrganizationalBrandingLocalizationId <String>]`: The unique identifier of organizationalBrandingLocalization
-  - `[OutboundSharedUserProfileUserId <String>]`: The unique identifier of outboundSharedUserProfile
-  - `[ProfileCardPropertyId <String>]`: The unique identifier of profileCardProperty
-  - `[RecommendationId <String>]`: The unique identifier of recommendation
   - `[ScopedRoleMembershipId <String>]`: The unique identifier of scopedRoleMembership
-  - `[SharedEmailDomainId <String>]`: The unique identifier of sharedEmailDomain
-  - `[SharedEmailDomainInvitationId <String>]`: The unique identifier of sharedEmailDomainInvitation
   - `[SubscribedSkuId <String>]`: The unique identifier of subscribedSku
-  - `[TenantReferenceTenantId <String>]`: The unique identifier of tenantReference
-  - `[UsageRightId <String>]`: The unique identifier of usageRight
   - `[UserId <String>]`: The unique identifier of user
 
-SERVICECONFIGURATIONRECORDS <IMicrosoftGraphDomainDnsRecord\[]>: DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services. Read-only, Nullable. Supports $expand.
+`SERVICECONFIGURATIONRECORDS <IMicrosoftGraphDomainDnsRecord[]>`: DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services. Read-only, Nullable. Supports $expand.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[IsOptional <Boolean?>]`: If false, this record must be configured by the customer at the DNS host for Microsoft Online Services to operate correctly with the domain.
   - `[Label <String>]`: Value used when configuring the name of the DNS record at the DNS host.
@@ -621,13 +594,13 @@ SERVICECONFIGURATIONRECORDS <IMicrosoftGraphDomainDnsRecord\[]>: DNS records the
   - `[SupportedService <String>]`: Microsoft Online Service or feature that has a dependency on this DNS record.Can be one of the following values: null, Email, Sharepoint, EmailInternalRelayOnly, OfficeCommunicationsOnline, SharePointDefaultDomain, FullRedelegation, SharePointPublic, OrgIdAuthentication, Yammer, Intune.
   - `[Ttl <Int32?>]`: Value to use when configuring the time-to-live (ttl) property of the DNS record at the DNS host. Not nullable.
 
-STATE `<IMicrosoftGraphDomainState>`: domainState
+`STATE <IMicrosoftGraphDomainState>`: domainState
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[LastActionDateTime <DateTime?>]`: Timestamp for when the last activity occurred. The value is updated when an operation is scheduled, the asynchronous task starts, and when the operation completes.
   - `[Operation <String>]`: Type of asynchronous operation. The values can be ForceDelete or Verification
   - `[Status <String>]`: Current status of the operation.  Scheduled - Operation has been scheduled but has not started.  InProgress - Task has started and is in progress.  Failed - Operation has failed.
 
-VERIFICATIONDNSRECORDS <IMicrosoftGraphDomainDnsRecord\[]>: DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Azure AD. Read-only, Nullable. Supports $expand.
+`VERIFICATIONDNSRECORDS <IMicrosoftGraphDomainDnsRecord[]>`: DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Azure AD. Read-only, Nullable. Supports $expand.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[IsOptional <Boolean?>]`: If false, this record must be configured by the customer at the DNS host for Microsoft Online Services to operate correctly with the domain.
   - `[Label <String>]`: Value used when configuring the name of the DNS record at the DNS host.
@@ -636,5 +609,8 @@ VERIFICATIONDNSRECORDS <IMicrosoftGraphDomainDnsRecord\[]>: DNS records that the
   - `[Ttl <Int32?>]`: Value to use when configuring the time-to-live (ttl) property of the DNS record at the DNS host. Not nullable.
 
 ## RELATED LINKS
+[Update-MgBetaDomain](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDomain?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaDomain](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDomain?view=graph-powershell-beta)
+

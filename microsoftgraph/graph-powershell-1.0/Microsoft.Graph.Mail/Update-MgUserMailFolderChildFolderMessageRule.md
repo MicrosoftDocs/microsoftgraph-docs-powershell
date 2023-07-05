@@ -1,14 +1,17 @@
 ---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.mail/update-mgusermailfolderchildfoldermessagerule
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/update-mgusermailfolderchildfoldermessagerule
 schema: 2.0.0
 ---
 
 # Update-MgUserMailFolderChildFolderMessageRule
 
 ## SYNOPSIS
-Update the navigation property messageRules in users
+Change writable properties on a messageRule object and save the changes.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserMailFolderChildFolderMessageRule](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgBetaUserMailFolderChildFolderMessageRule?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -18,14 +21,14 @@ Update-MgUserMailFolderChildFolderMessageRule -MailFolderId <String> -MailFolder
  -MessageRuleId <String> -UserId <String> [-Actions <IMicrosoftGraphMessageRuleActions>]
  [-AdditionalProperties <Hashtable>] [-Conditions <IMicrosoftGraphMessageRulePredicates>]
  [-DisplayName <String>] [-Exceptions <IMicrosoftGraphMessageRulePredicates>] [-HasError] [-Id <String>]
- [-IsEnabled] [-IsReadOnly] [-Sequence <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-IsEnabled] [-IsReadOnly] [-Sequence <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgUserMailFolderChildFolderMessageRule -MailFolderId <String> -MailFolderId1 <String>
- -MessageRuleId <String> -UserId <String> -BodyParameter <IMicrosoftGraphMessageRule> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -MessageRuleId <String> -UserId <String> -BodyParameter <IMicrosoftGraphMessageRule> [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -34,25 +37,39 @@ Update-MgUserMailFolderChildFolderMessageRule -InputObject <IMailIdentity>
  [-Actions <IMicrosoftGraphMessageRuleActions>] [-AdditionalProperties <Hashtable>]
  [-Conditions <IMicrosoftGraphMessageRulePredicates>] [-DisplayName <String>]
  [-Exceptions <IMicrosoftGraphMessageRulePredicates>] [-HasError] [-Id <String>] [-IsEnabled] [-IsReadOnly]
- [-Sequence <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Sequence <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgUserMailFolderChildFolderMessageRule -InputObject <IMailIdentity>
- -BodyParameter <IMicrosoftGraphMessageRule> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMessageRule> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property messageRules in users
+Change writable properties on a messageRule object and save the changes.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
 ### -Actions
 messageRuleActions
-To construct, please use Get-Help -Online and see NOTES section for ACTIONS properties and create a hash table.
+To construct, see NOTES section for ACTIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphMessageRuleActions
@@ -83,7 +100,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 messageRule
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphMessageRule
@@ -99,7 +116,7 @@ Accept wildcard characters: False
 
 ### -Conditions
 messageRulePredicates
-To construct, please use Get-Help -Online and see NOTES section for CONDITIONS properties and create a hash table.
+To construct, see NOTES section for CONDITIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphMessageRulePredicates
@@ -130,7 +147,7 @@ Accept wildcard characters: False
 
 ### -Exceptions
 messageRulePredicates
-To construct, please use Get-Help -Online and see NOTES section for EXCEPTIONS properties and create a hash table.
+To construct, see NOTES section for EXCEPTIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphMessageRulePredicates
@@ -178,7 +195,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IMailIdentity
@@ -267,21 +284,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Sequence
 Indicates the order in which the rule is executed, among other rules.
 
@@ -352,7 +354,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMessageRule
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMessageRule
 ## NOTES
 
 ALIASES
@@ -362,7 +364,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ACTIONS `<IMicrosoftGraphMessageRuleActions>`: messageRuleActions
+`ACTIONS <IMicrosoftGraphMessageRuleActions>`: messageRuleActions
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AssignCategories <String[]>]`: A list of categories to be assigned to a message.
   - `[CopyToFolder <String>]`: The ID of a folder that a message is to be copied to.
@@ -380,7 +382,7 @@ ACTIONS `<IMicrosoftGraphMessageRuleActions>`: messageRuleActions
   - `[RedirectTo <IMicrosoftGraphRecipient[]>]`: The email addresses to which a message should be redirected.
   - `[StopProcessingRules <Boolean?>]`: Indicates whether subsequent rules should be evaluated.
 
-BODYPARAMETER `<IMicrosoftGraphMessageRule>`: messageRule
+`BODYPARAMETER <IMicrosoftGraphMessageRule>`: messageRule
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Actions <IMicrosoftGraphMessageRuleActions>]`: messageRuleActions
@@ -442,7 +444,7 @@ BODYPARAMETER `<IMicrosoftGraphMessageRule>`: messageRule
   - `[IsReadOnly <Boolean?>]`: Indicates if the rule is read-only and cannot be modified or deleted by the rules REST API.
   - `[Sequence <Int32?>]`: Indicates the order in which the rule is executed, among other rules.
 
-CONDITIONS `<IMicrosoftGraphMessageRulePredicates>`: messageRulePredicates
+`CONDITIONS <IMicrosoftGraphMessageRulePredicates>`: messageRulePredicates
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[BodyContains <String[]>]`: Represents the strings that should appear in the body of an incoming message in order for the condition or exception to apply.
   - `[BodyOrSubjectContains <String[]>]`: Represents the strings that should appear in the body or subject of an incoming message in order for the condition or exception to apply.
@@ -482,7 +484,7 @@ CONDITIONS `<IMicrosoftGraphMessageRulePredicates>`: messageRulePredicates
     - `[MaximumSize <Int32?>]`: The maximum size (in kilobytes) that an incoming message must have in order for a condition or exception to apply.
     - `[MinimumSize <Int32?>]`: The minimum size (in kilobytes) that an incoming message must have in order for a condition or exception to apply.
 
-EXCEPTIONS `<IMicrosoftGraphMessageRulePredicates>`: messageRulePredicates
+`EXCEPTIONS <IMicrosoftGraphMessageRulePredicates>`: messageRulePredicates
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[BodyContains <String[]>]`: Represents the strings that should appear in the body of an incoming message in order for the condition or exception to apply.
   - `[BodyOrSubjectContains <String[]>]`: Represents the strings that should appear in the body or subject of an incoming message in order for the condition or exception to apply.
@@ -522,20 +524,18 @@ EXCEPTIONS `<IMicrosoftGraphMessageRulePredicates>`: messageRulePredicates
     - `[MaximumSize <Int32?>]`: The maximum size (in kilobytes) that an incoming message must have in order for a condition or exception to apply.
     - `[MinimumSize <Int32?>]`: The minimum size (in kilobytes) that an incoming message must have in order for a condition or exception to apply.
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+`INPUTOBJECT <IMailIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[InferenceClassificationOverrideId <String>]`: The unique identifier of inferenceClassificationOverride
   - `[MailFolderId <String>]`: The unique identifier of mailFolder
   - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
-  - `[MentionId <String>]`: The unique identifier of mention
   - `[MessageId <String>]`: The unique identifier of message
   - `[MessageRuleId <String>]`: The unique identifier of messageRule
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
-  - `[UserConfigurationId <String>]`: The unique identifier of userConfiguration
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Update-MgBetaUserMailFolderChildFolderMessageRule](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgBetaUserMailFolderChildFolderMessageRule?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaUserMailFolderChildFolderMessageRule](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgBetaUserMailFolderChildFolderMessageRule?view=graph-powershell-beta)

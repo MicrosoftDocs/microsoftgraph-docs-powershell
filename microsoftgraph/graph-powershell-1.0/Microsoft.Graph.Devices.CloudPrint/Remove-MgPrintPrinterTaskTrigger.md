@@ -1,14 +1,17 @@
 ---
 external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/remove-mgprintprintertasktrigger
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/remove-mgprintprintertasktrigger
 schema: 2.0.0
 ---
 
 # Remove-MgPrintPrinterTaskTrigger
 
 ## SYNOPSIS
-Delete navigation property taskTriggers for print
+Delete the task trigger of a printer to prevent related print events from triggering tasks on the specified printer.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaPrintPrinterTaskTrigger](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Remove-MgBetaPrintPrinterTaskTrigger?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -25,19 +28,17 @@ Remove-MgPrintPrinterTaskTrigger -InputObject <IDevicesCloudPrintIdentity> [-IfM
 ```
 
 ## DESCRIPTION
-Delete navigation property taskTriggers for print
+Delete the task trigger of a printer to prevent related print events from triggering tasks on the specified printer.
 
 ## EXAMPLES
 
-### Example 1: Using the Remove-MgPrintPrinterTaskTrigger Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Devices.CloudPrint
+
 Remove-MgPrintPrinterTaskTrigger -PrinterId $printerId -PrintTaskTriggerId $printTaskTriggerId
+
 ```
-
-This example shows how to use the Remove-MgPrintPrinterTaskTrigger Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -57,7 +58,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDevicesCloudPrintIdentity
@@ -165,9 +166,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
+`INPUTOBJECT <IDevicesCloudPrintIdentity>`: Identity Parameter
   - `[GroupId <String>]`: The unique identifier of group
   - `[PrintConnectorId <String>]`: The unique identifier of printConnector
+  - `[PrintDocumentId <String>]`: The unique identifier of printDocument
+  - `[PrintJobId <String>]`: The unique identifier of printJob
   - `[PrintOperationId <String>]`: The unique identifier of printOperation
   - `[PrintServiceEndpointId <String>]`: The unique identifier of printServiceEndpoint
   - `[PrintServiceId <String>]`: The unique identifier of printService
@@ -179,3 +182,5 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaPrintPrinterTaskTrigger](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Remove-MgBetaPrintPrinterTaskTrigger?view=graph-powershell-beta)
+

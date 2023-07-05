@@ -1,56 +1,46 @@
 ---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/get-mgusereventattachment
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mguserdefaultcalendarevent
 schema: 2.0.0
 ---
 
-# Get-MgUserEventAttachment
+# Get-MgUserDefaultCalendarEvent
 
 ## SYNOPSIS
-The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event.
-Navigation property.
-Read-only.
-Nullable.
+Retrieve a list of events in a calendar.
+The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
+The list of events contains single instance meetings and series masters.
+To get expanded event instances, you can get the calendar view, or \nget the instances of an event.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserEventAttachment](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserEventAttachment?view=graph-powershell-beta)
 
 ## SYNTAX
 
-### List1 (Default)
 ```
-Get-MgUserEventAttachment -EventId <String> -UserId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [-Filter <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
-```
-
-### Get1
-```
-Get-MgUserEventAttachment -AttachmentId <String> -EventId <String> -UserId <String>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
-```
-
-### GetViaIdentity1
-```
-Get-MgUserEventAttachment -InputObject <ICalendarIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
+Get-MgUserDefaultCalendarEvent -UserId <String> [-ExpandProperty <String[]>] [-Filter <String>]
+ [-Property <String[]>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event.
-Navigation property.
-Read-only.
-Nullable.
+Retrieve a list of events in a calendar.
+The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
+The list of events contains single instance meetings and series masters.
+To get expanded event instances, you can get the calendar view, or \nget the instances of an event.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgUserEventAttachment Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Calendar
-# A UPN can also be used as -UserId.
-Get-MgUserEventAttachment -UserId $userId -EventId $eventId
+{{ Add code here }}
 ```
 
-This example shows how to use the Get-MgUserEventAttachment Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -59,25 +49,10 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: List1
+Parameter Sets: (All)
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -AttachmentId
-The unique identifier of attachment
-
-```yaml
-Type: String
-Parameter Sets: Get1
-Aliases:
-
-Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -90,25 +65,10 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: (All)
 Aliases: CV
 
 Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -EventId
-The unique identifier of event
-
-```yaml
-Type: String
-Parameter Sets: List1, Get1
-Aliases:
-
-Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -135,7 +95,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -145,28 +105,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
-
-```yaml
-Type: ICalendarIdentity
-Parameter Sets: GetViaIdentity1
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
 ### -PageSize
 Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -196,7 +140,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List1
+Parameter Sets: (All)
 Aliases: OrderBy
 
 Required: False
@@ -211,7 +155,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Parameter Sets: (All)
 Aliases: Limit
 
 Required: False
@@ -226,7 +170,7 @@ The unique identifier of user
 
 ```yaml
 Type: String
-Parameter Sets: List1, Get1
+Parameter Sets: (All)
 Aliases:
 
 Required: True
@@ -241,7 +185,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -256,32 +200,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttachment
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEvent
 ## NOTES
 
 ALIASES
 
-COMPLEX PARAMETER PROPERTIES
-
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
-
-
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
-  - `[AttachmentId <String>]`: The unique identifier of attachment
-  - `[CalendarGroupId <String>]`: The unique identifier of calendarGroup
-  - `[CalendarId <String>]`: The unique identifier of calendar
-  - `[CalendarPermissionId <String>]`: The unique identifier of calendarPermission
-  - `[EventId <String>]`: The unique identifier of event
-  - `[EventId1 <String>]`: The unique identifier of event
-  - `[EventId2 <String>]`: The unique identifier of event
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
-  - `[PlaceId <String>]`: The unique identifier of place
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
-  - `[UserId <String>]`: The unique identifier of user
-
 ## RELATED LINKS
+[Get-MgBetaUserEventAttachment](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserEventAttachment?view=graph-powershell-beta)

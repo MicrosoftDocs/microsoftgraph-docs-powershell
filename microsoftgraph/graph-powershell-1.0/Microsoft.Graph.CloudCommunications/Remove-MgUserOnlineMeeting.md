@@ -1,43 +1,50 @@
 ---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/remove-mguseronlinemeeting
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/remove-mgcommunicationpresence
 schema: 2.0.0
 ---
 
-# Remove-MgUserOnlineMeeting
+# Remove-MgCommunicationPresence
 
 ## SYNOPSIS
-Delete navigation property onlineMeetings for users
+Delete navigation property presences for communications
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Remove-MgBetaUserOnlineMeeting?view=graph-powershell-beta)
 
 ## SYNTAX
 
-### Delete1 (Default)
+### Delete (Default)
 ```
-Remove-MgUserOnlineMeeting -OnlineMeetingId <String> -UserId <String> [-IfMatch <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Remove-MgCommunicationPresence -PresenceId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
-### DeleteViaIdentity1
+### DeleteViaIdentity
 ```
-Remove-MgUserOnlineMeeting -InputObject <ICloudCommunicationsIdentity> [-IfMatch <String>] [-PassThru]
+Remove-MgCommunicationPresence -InputObject <ICloudCommunicationsIdentity> [-IfMatch <String>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete navigation property onlineMeetings for users
+Delete navigation property presences for communications
 
 ## EXAMPLES
 
-### Example 1: Using the Remove-MgUserOnlineMeeting Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.CloudCommunications
-# A UPN can also be used as -UserId.
-Remove-MgUserOnlineMeeting -UserId $userId -OnlineMeetingId $onlineMeetingId
+{{ Add code here }}
 ```
 
-This example shows how to use the Remove-MgUserOnlineMeeting Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -58,32 +65,17 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ICloudCommunicationsIdentity
-Parameter Sets: DeleteViaIdentity1
+Parameter Sets: DeleteViaIdentity
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -OnlineMeetingId
-The unique identifier of onlineMeeting
-
-```yaml
-Type: String
-Parameter Sets: Delete1
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -102,12 +94,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -UserId
-The unique identifier of user
+### -PresenceId
+The unique identifier of presence
 
 ```yaml
 Type: String
-Parameter Sets: Delete1
+Parameter Sets: Delete
 Aliases:
 
 Required: True
@@ -166,22 +158,19 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+`INPUTOBJECT <ICloudCommunicationsIdentity>`: Identity Parameter
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
   - `[CallId <String>]`: The unique identifier of call
   - `[CallRecordId <String>]`: The unique identifier of callRecord
-  - `[CallTranscriptId <String>]`: The unique identifier of callTranscript
   - `[CommsOperationId <String>]`: The unique identifier of commsOperation
   - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
-  - `[FromDateTime <DateTime?>]`: Usage: fromDateTime={fromDateTime}
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
-  - `[MeetingRegistrationQuestionId <String>]`: The unique identifier of meetingRegistrationQuestion
   - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
   - `[ParticipantId <String>]`: The unique identifier of participant
   - `[PresenceId <String>]`: The unique identifier of presence
   - `[SessionId <String>]`: The unique identifier of session
-  - `[ToDateTime <DateTime?>]`: Usage: toDateTime={toDateTime}
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaUserOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Remove-MgBetaUserOnlineMeeting?view=graph-powershell-beta)

@@ -1,7 +1,7 @@
 ---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.notes/get-mgsiteonenoteresource
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mgsiteonenoteresource
 schema: 2.0.0
 ---
 
@@ -12,6 +12,9 @@ The image and other file resources in OneNote pages.
 Getting a resources collection is not supported, but you can get the binary content of a specific resource.
 Read-only.
 Nullable.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteOnenoteResource](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaSiteOnenoteResource?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -35,6 +38,20 @@ Nullable.
 
 ## EXAMPLES
 
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -54,7 +71,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: INotesIdentity
@@ -131,7 +148,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<INotesIdentity>`: Identity Parameter
+`INPUTOBJECT <INotesIdentity>`: Identity Parameter
   - `[GroupId <String>]`: The unique identifier of group
   - `[NotebookId <String>]`: The unique identifier of notebook
   - `[OnenoteOperationId <String>]`: The unique identifier of onenoteOperation
@@ -143,3 +160,4 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaSiteOnenoteResource](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaSiteOnenoteResource?view=graph-powershell-beta)

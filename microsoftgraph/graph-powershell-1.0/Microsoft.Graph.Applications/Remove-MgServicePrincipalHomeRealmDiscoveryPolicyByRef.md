@@ -1,44 +1,54 @@
 ---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalhomerealmdiscoverypolicybyref
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalhomerealmdiscoverypolicybyref
 schema: 2.0.0
 ---
 
 # Remove-MgServicePrincipalHomeRealmDiscoveryPolicyByRef
 
 ## SYNOPSIS
-Delete ref of navigation property homeRealmDiscoveryPolicies for servicePrincipals
+Remove a homeRealmDiscoveryPolicy from a servicePrincipal.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBetaServicePrincipalHomeRealmDiscoveryPolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
-### Delete1 (Default)
+### Delete (Default)
 ```
 Remove-MgServicePrincipalHomeRealmDiscoveryPolicyByRef -HomeRealmDiscoveryPolicyId <String>
  -ServicePrincipalId <String> [-Id <String>] [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### DeleteViaIdentity1
+### DeleteViaIdentity
 ```
 Remove-MgServicePrincipalHomeRealmDiscoveryPolicyByRef -InputObject <IApplicationsIdentity> [-Id <String>]
  [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete ref of navigation property homeRealmDiscoveryPolicies for servicePrincipals
+Remove a homeRealmDiscoveryPolicy from a servicePrincipal.
 
 ## EXAMPLES
 
-### Example 1: Using the Remove-MgServicePrincipalHomeRealmDiscoveryPolicyByRef Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Applications
+
 Remove-MgServicePrincipalHomeRealmDiscoveryPolicyByRef -ServicePrincipalId $servicePrincipalId -HomeRealmDiscoveryPolicyId $homeRealmDiscoveryPolicyId
+
 ```
+## PARAMETERS
 
-This example shows how to use the Remove-MgServicePrincipalHomeRealmDiscoveryPolicyByRef Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### EXAMPLE 1
+```powershell
+Import-Module Microsoft.Graph.Applications
 
+Remove-MgServicePrincipalHomeRealmDiscoveryPolicyByRef -ServicePrincipalId $servicePrincipalId -HomeRealmDiscoveryPolicyId $homeRealmDiscoveryPolicyId
+
+```
 ## PARAMETERS
 
 ### -HomeRealmDiscoveryPolicyId
@@ -46,7 +56,7 @@ The unique identifier of homeRealmDiscoveryPolicy
 
 ```yaml
 Type: String
-Parameter Sets: Delete1
+Parameter Sets: Delete
 Aliases:
 
 Required: True
@@ -88,11 +98,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IApplicationsIdentity
-Parameter Sets: DeleteViaIdentity1
+Parameter Sets: DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -122,7 +132,7 @@ The unique identifier of servicePrincipal
 
 ```yaml
 Type: String
-Parameter Sets: Delete1
+Parameter Sets: Delete
 Aliases:
 
 Required: True
@@ -181,14 +191,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+`INPUTOBJECT <IApplicationsIdentity>`: Identity Parameter
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
   - `[ApplicationId <String>]`: The unique identifier of application
   - `[ApplicationTemplateId <String>]`: The unique identifier of applicationTemplate
   - `[ClaimsMappingPolicyId <String>]`: The unique identifier of claimsMappingPolicy
-  - `[ConnectorGroupId <String>]`: The unique identifier of connectorGroup
-  - `[ConnectorId <String>]`: The unique identifier of connector
   - `[DelegatedPermissionClassificationId <String>]`: The unique identifier of delegatedPermissionClassification
   - `[DirectoryDefinitionId <String>]`: The unique identifier of directoryDefinition
   - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
@@ -197,13 +205,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[FederatedIdentityCredentialId <String>]`: The unique identifier of federatedIdentityCredential
   - `[GroupId <String>]`: The unique identifier of group
   - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
-  - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
-  - `[OnPremisesAgentGroupId <String>]`: The unique identifier of onPremisesAgentGroup
-  - `[OnPremisesAgentGroupId1 <String>]`: The unique identifier of onPremisesAgentGroup
-  - `[OnPremisesAgentId <String>]`: The unique identifier of onPremisesAgent
-  - `[OnPremisesPublishingProfileId <String>]`: The unique identifier of onPremisesPublishingProfile
-  - `[PublishedResourceId <String>]`: The unique identifier of publishedResource
   - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
   - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
   - `[SynchronizationTemplateId <String>]`: The unique identifier of synchronizationTemplate
@@ -212,3 +214,5 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaBetaServicePrincipalHomeRealmDiscoveryPolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef?view=graph-powershell-beta)
+

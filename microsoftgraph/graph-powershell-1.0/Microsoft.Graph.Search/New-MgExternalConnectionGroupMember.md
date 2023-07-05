@@ -1,14 +1,17 @@
 ---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/new-mgexternalconnectiongroupmember
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnectiongroupmember
 schema: 2.0.0
 ---
 
 # New-MgExternalConnectionGroupMember
 
 ## SYNOPSIS
-Create new navigation property to members for external
+Create an identity resource for a new member in an externalGroup.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaExternalConnectionGroupMember](/powershell/module/Microsoft.Graph.Beta.Search/New-MgBetaExternalConnectionGroupMember?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -37,49 +40,46 @@ New-MgExternalConnectionGroupMember -InputObject <ISearchIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to members for external
+Create an identity resource for a new member in an externalGroup.
 
 ## EXAMPLES
 
-### Example 1: Using the New-MgExternalConnectionGroupMember Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Search
+
 $params = @{
-	Id = "e5477431-1038-484e-bf69-1dfedb97a110"
-	Type = "group"
+	id = "e811976d-83df-4cbd-8b9b-5215b18aa874"
+	type = "user"
 }
+
 New-MgExternalConnectionGroupMember -ExternalConnectionId $externalConnectionId -ExternalGroupId $externalGroupId -BodyParameter $params
+
 ```
-
-This example shows how to use the New-MgExternalConnectionGroupMember Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the New-MgExternalConnectionGroupMember Cmdlet
+### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Search
+
 $params = @{
-	Id = "e811976d-83df-4cbd-8b9b-5215b18aa874"
-	Type = "user"
+	id = "e5477431-1038-484e-bf69-1dfedb97a110"
+	type = "group"
 }
+
 New-MgExternalConnectionGroupMember -ExternalConnectionId $externalConnectionId -ExternalGroupId $externalGroupId -BodyParameter $params
+
 ```
-
-This example shows how to use the New-MgExternalConnectionGroupMember Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Using the New-MgExternalConnectionGroupMember Cmdlet
+### EXAMPLE 3
 ```powershell
 Import-Module Microsoft.Graph.Search
+
 $params = @{
-	Id = "1431b9c38ee647f6a"
-	Type = "externalGroup"
+	id = "1431b9c38ee647f6a"
+	type = "externalGroup"
 }
+
 New-MgExternalConnectionGroupMember -ExternalConnectionId $externalConnectionId -ExternalGroupId $externalGroupId -BodyParameter $params
+
 ```
-
-This example shows how to use the New-MgExternalConnectionGroupMember Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 identity
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphExternalConnectorsIdentity
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ISearchIdentity
@@ -240,29 +240,19 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphExternalConnectorsIdentity>`: identity
+`BODYPARAMETER <IMicrosoftGraphExternalConnectorsIdentity>`: identity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Type <String>]`: identityType
 
-INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
-  - `[AcronymId <String>]`: The unique identifier of acronym
-  - `[BookmarkId <String>]`: The unique identifier of bookmark
+`INPUTOBJECT <ISearchIdentity>`: Identity Parameter
   - `[ConnectionOperationId <String>]`: The unique identifier of connectionOperation
   - `[ExternalActivityId <String>]`: The unique identifier of externalActivity
   - `[ExternalConnectionId <String>]`: The unique identifier of externalConnection
   - `[ExternalGroupId <String>]`: The unique identifier of externalGroup
   - `[ExternalItemId <String>]`: The unique identifier of externalItem
   - `[IdentityId <String>]`: The unique identifier of identity
-  - `[InboundFlowId <String>]`: The unique identifier of inboundFlow
-  - `[IndustryDataConnectorId <String>]`: The unique identifier of industryDataConnector
-  - `[IndustryDataRunActivityId <String>]`: The unique identifier of industryDataRunActivity
-  - `[IndustryDataRunId <String>]`: The unique identifier of industryDataRun
-  - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
-  - `[QnaId <String>]`: The unique identifier of qna
-  - `[ReferenceDefinitionId <String>]`: The unique identifier of referenceDefinition
-  - `[RoleGroupId <String>]`: The unique identifier of roleGroup
-  - `[SourceSystemDefinitionId <String>]`: The unique identifier of sourceSystemDefinition
-  - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
 
 ## RELATED LINKS
+[New-MgBetaExternalConnectionGroupMember](/powershell/module/Microsoft.Graph.Beta.Search/New-MgBetaExternalConnectionGroupMember?view=graph-powershell-beta)
+

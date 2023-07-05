@@ -1,58 +1,64 @@
 ---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/new-mgeducationuserassignmentresource
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationuserassignmentresource
 schema: 2.0.0
 ---
 
 # New-MgEducationUserAssignmentResource
 
 ## SYNOPSIS
-Create new navigation property to resources for education
+Create an assignment resource.
+Only teachers can perform this operation.
+You can create the following types of assignment resources: Every resource has an **@odata.type** property to indicate which type of resource is being created.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaEducationUserAssignmentResource](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationUserAssignmentResource?view=graph-powershell-beta)
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
 New-MgEducationUserAssignmentResource -EducationAssignmentId <String> -EducationUserId <String>
  [-AdditionalProperties <Hashtable>] [-DistributeForStudentWork] [-Id <String>]
  [-Resource <IMicrosoftGraphEducationResource>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
 New-MgEducationUserAssignmentResource -EducationAssignmentId <String> -EducationUserId <String>
  -BodyParameter <IMicrosoftGraphEducationAssignmentResource> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded1
+### CreateViaIdentityExpanded
 ```
 New-MgEducationUserAssignmentResource -InputObject <IEducationIdentity> [-AdditionalProperties <Hashtable>]
  [-DistributeForStudentWork] [-Id <String>] [-Resource <IMicrosoftGraphEducationResource>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### CreateViaIdentity1
+### CreateViaIdentity
 ```
 New-MgEducationUserAssignmentResource -InputObject <IEducationIdentity>
  -BodyParameter <IMicrosoftGraphEducationAssignmentResource> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create new navigation property to resources for education
+Create an assignment resource.
+Only teachers can perform this operation.
+You can create the following types of assignment resources: Every resource has an **@odata.type** property to indicate which type of resource is being created.
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Education
-
-Get-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId
+{{ Add code here }}
 ```
 
-This example shows how to use the New-MgEducationUserAssignmentResource Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -61,7 +67,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -73,11 +79,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 educationAssignmentResource
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEducationAssignmentResource
-Parameter Sets: Create1, CreateViaIdentity1
+Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -93,7 +99,7 @@ Required
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -108,7 +114,7 @@ The unique identifier of educationAssignment
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, Create1
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -123,7 +129,7 @@ The unique identifier of educationUser
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, Create1
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -139,7 +145,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -151,11 +157,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IEducationIdentity
-Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -167,11 +173,11 @@ Accept wildcard characters: False
 
 ### -Resource
 educationResource
-To construct, please use Get-Help -Online and see NOTES section for RESOURCE properties and create a hash table.
+To construct, see NOTES section for RESOURCE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEducationResource
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -231,7 +237,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphEducationAssignmentResource>`: educationAssignmentResource
+`BODYPARAMETER <IMicrosoftGraphEducationAssignmentResource>`: educationAssignmentResource
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DistributeForStudentWork <Boolean?>]`: Indicates whether this resource should be copied to each student submission for modification and submission. Required
@@ -248,7 +254,7 @@ BODYPARAMETER `<IMicrosoftGraphEducationAssignmentResource>`: educationAssignmen
     - `[DisplayName <String>]`: Display name of resource.
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+`INPUTOBJECT <IEducationIdentity>`: Identity Parameter
   - `[EducationAssignmentId <String>]`: The unique identifier of educationAssignment
   - `[EducationAssignmentResourceId <String>]`: The unique identifier of educationAssignmentResource
   - `[EducationCategoryId <String>]`: The unique identifier of educationCategory
@@ -258,11 +264,9 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationSchoolId <String>]`: The unique identifier of educationSchool
   - `[EducationSubmissionId <String>]`: The unique identifier of educationSubmission
   - `[EducationSubmissionResourceId <String>]`: The unique identifier of educationSubmissionResource
-  - `[EducationSynchronizationErrorId <String>]`: The unique identifier of educationSynchronizationError
-  - `[EducationSynchronizationProfileId <String>]`: The unique identifier of educationSynchronizationProfile
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
-RESOURCE `<IMicrosoftGraphEducationResource>`: educationResource
+`RESOURCE <IMicrosoftGraphEducationResource>`: educationResource
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -276,3 +280,4 @@ RESOURCE `<IMicrosoftGraphEducationResource>`: educationResource
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
 
 ## RELATED LINKS
+[New-MgBetaEducationUserAssignmentResource](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationUserAssignmentResource?view=graph-powershell-beta)

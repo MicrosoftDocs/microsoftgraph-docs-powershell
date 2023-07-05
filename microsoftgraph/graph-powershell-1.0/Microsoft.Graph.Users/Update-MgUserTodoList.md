@@ -1,63 +1,83 @@
 ---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/update-mgusertodolist
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersettingshiftpreference
 schema: 2.0.0
 ---
 
-# Update-MgUserTodoList
+# Update-MgUserSettingShiftPreference
 
 ## SYNOPSIS
-Update the navigation property lists in users
+Update the properties and relationships of a shiftPreferences object.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserTodoList](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserTodoList?view=graph-powershell-beta)
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### UpdateExpanded (Default)
 ```
-Update-MgUserTodoList -TodoTaskListId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-DisplayName <String>] [-Extensions <IMicrosoftGraphExtension[]>] [-Id <String>] [-IsOwner] [-IsShared]
- [-Tasks <IMicrosoftGraphTodoTask[]>] [-WellknownListName <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### Update1
-```
-Update-MgUserTodoList -TodoTaskListId <String> -UserId <String> -BodyParameter <IMicrosoftGraphTodoTaskList>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgUserSettingShiftPreference -UserId <String> [-AdditionalProperties <Hashtable>]
+ [-Availability <IMicrosoftGraphShiftAvailability[]>] [-Id <String>]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded1
+### Update
 ```
-Update-MgUserTodoList -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
- [-Extensions <IMicrosoftGraphExtension[]>] [-Id <String>] [-IsOwner] [-IsShared]
- [-Tasks <IMicrosoftGraphTodoTask[]>] [-WellknownListName <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgUserSettingShiftPreference -UserId <String> -BodyParameter <IMicrosoftGraphShiftPreferences> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity1
+### UpdateViaIdentityExpanded
 ```
-Update-MgUserTodoList -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphTodoTaskList> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgUserSettingShiftPreference -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>]
+ [-Availability <IMicrosoftGraphShiftAvailability[]>] [-Id <String>]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgUserSettingShiftPreference -InputObject <IUsersIdentity>
+ -BodyParameter <IMicrosoftGraphShiftPreferences> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property lists in users
+Update the properties and relationships of a shiftPreferences object.
 
 ## EXAMPLES
 
-### Example 1: Using the Update-MgUserTodoList Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Users
+
 $params = @{
-	DisplayName = "Vacation Plan"
+	id = "SHPR_eeab4fb1-20e5-48ca-ad9b-98119d94bee7"
+	"@odata.etag" = "1a371e53-f0a6-4327-a1ee-e3c56e4b38aa"
+	availability = @(
+		@{
+			recurrence = @{
+				pattern = @{
+					type = "Weekly"
+					daysOfWeek = @(
+						"Monday"
+						"Wednesday"
+						"Friday"
+					)
+					interval = 1
+				}
+				range = @{
+					type = "noEnd"
+				}
+			}
+			timeZone = "Pacific Standard Time"
+			timeSlots = $null
+		}
+	)
 }
-# A UPN can also be used as -UserId.
-Update-MgUserTodoList -UserId $userId -TodoTaskListId $todoTaskListId -BodyParameter $params
+
+Update-MgUserSettingShiftPreference -UserId $userId -BodyParameter $params
+
 ```
-
-This example shows how to use the Update-MgUserTodoList Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -65,7 +85,23 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Availability
+Availability of the user to be scheduled for work and its recurrence pattern.
+To construct, see NOTES section for AVAILABILITY properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphShiftAvailability[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -76,12 +112,12 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-todoTaskList
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+shiftPreferences
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTodoTaskList
-Parameter Sets: Update1, UpdateViaIdentity1
+Type: IMicrosoftGraphShiftPreferences
+Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -91,45 +127,13 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -DisplayName
-The name of the task list.
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Extensions
-The collection of open extensions defined for the task list.
-Nullable.
-To construct, please use Get-Help -Online and see NOTES section for EXTENSIONS properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphExtension[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Id
 The unique idenfier for an entity.
 Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -141,11 +145,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -155,78 +159,16 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -IsOwner
-True if the user is owner of the given task list.
+### -LastModifiedBy
+identitySet
+To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: IMicrosoftGraphIdentitySet
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -IsShared
-True if the task list is shared with other users
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Tasks
-The tasks in this task list.
-Read-only.
-Nullable.
-To construct, please use Get-Help -Online and see NOTES section for TASKS properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphTodoTask[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -TodoTaskListId
-The unique identifier of todoTaskList
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
-Aliases:
-
-Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -238,25 +180,10 @@ The unique identifier of user
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -WellknownListName
-wellknownListName
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -299,11 +226,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTodoTaskList
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphShiftPreferences
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphShiftPreferences
 ## NOTES
 
 ALIASES
@@ -313,148 +240,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphTodoTaskList>`: todoTaskList
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[DisplayName <String>]`: The name of the task list.
-  - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the task list. Nullable.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[IsOwner <Boolean?>]`: True if the user is owner of the given task list.
-  - `[IsShared <Boolean?>]`: True if the task list is shared with other users
-  - `[Tasks <IMicrosoftGraphTodoTask[]>]`: The tasks in this task list. Read-only. Nullable.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-    - `[AttachmentSessions <IMicrosoftGraphAttachmentSession[]>]`: 
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-      - `[Content <Byte[]>]`: The content streams that are uploaded.
-      - `[ExpirationDateTime <DateTime?>]`: The date and time in UTC when the upload session will expire. The complete file must be uploaded before this expiration time is reached.
-      - `[NextExpectedRanges <String[]>]`: Indicates a single value {start} that represents the location in the file where the next upload should begin.
-    - `[Attachments <IMicrosoftGraphAttachmentBase[]>]`: A collection of file attachments for the task.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-      - `[ContentType <String>]`: The MIME type.
-      - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-      - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
-      - `[Size <Int32?>]`: The length of the attachment in bytes.
-    - `[Body <IMicrosoftGraphItemBody>]`: itemBody
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Content <String>]`: The content of the item.
-      - `[ContentType <String>]`: bodyType
-    - `[BodyLastModifiedDateTime <DateTime?>]`: The date and time when the task body was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
-    - `[Categories <String[]>]`: The categories associated with the task. Each category corresponds to the displayName property of an outlookCategory that the user has defined.
-    - `[ChecklistItems <IMicrosoftGraphChecklistItem[]>]`: A collection of checklistItems linked to a task.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-      - `[CheckedDateTime <DateTime?>]`: The date and time when the checklistItem was finished.
-      - `[CreatedDateTime <DateTime?>]`: The date and time when the checklistItem was created.
-      - `[DisplayName <String>]`: Field indicating the title of checklistItem.
-      - `[IsChecked <Boolean?>]`: State indicating whether the item is checked off or not.
-    - `[CompletedDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
-      - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
-    - `[CreatedDateTime <DateTime?>]`: The date and time when the task was created. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
-    - `[DueDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-    - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the task. Nullable.
-    - `[HasAttachments <Boolean?>]`: Indicates whether the task has attachments.
-    - `[Importance <String>]`: importance
-    - `[IsReminderOn <Boolean?>]`: Set to true if an alert is set to remind the user of the task.
-    - `[LastModifiedDateTime <DateTime?>]`: The date and time when the task was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
-    - `[LinkedResources <IMicrosoftGraphLinkedResource[]>]`: A collection of resources linked to the task.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-      - `[ApplicationName <String>]`: The app name of the source that sends the linkedResource.
-      - `[DisplayName <String>]`: The title of the linkedResource.
-      - `[ExternalId <String>]`: ID of the object that is associated with this task on the third-party/partner system.
-      - `[WebUrl <String>]`: Deep link to the linkedResource.
-    - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DayOfMonth <Int32?>]`: The day of the month on which the event occurs. Required if type is absoluteMonthly or absoluteYearly.
-        - `[DaysOfWeek <String[]>]`: A collection of the days of the week on which the event occurs. The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday. If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.  Required if type is weekly, relativeMonthly, or relativeYearly.
-        - `[FirstDayOfWeek <String>]`: dayOfWeek
-        - `[Index <String>]`: weekIndex
-        - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type. Required.
-        - `[Month <Int32?>]`: The month in which the event occurs.  This is a number from 1 to 12.
-        - `[Type <String>]`: recurrencePatternType
-      - `[Range <IMicrosoftGraphRecurrenceRange>]`: recurrenceRange
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[EndDate <DateTime?>]`: The date to stop applying the recurrence pattern. Depending on the recurrence pattern of the event, the last occurrence of the meeting may not be this date. Required if type is endDate.
-        - `[NumberOfOccurrences <Int32?>]`: The number of times to repeat the event. Required and must be positive if type is numbered.
-        - `[RecurrenceTimeZone <String>]`: Time zone for the startDate and endDate properties. Optional. If not specified, the time zone of the event is used.
-        - `[StartDate <DateTime?>]`: The date to start applying the recurrence pattern. The first occurrence of the meeting may be this date or later, depending on the recurrence pattern of the event. Must be the same value as the start property of the recurring event. Required.
-        - `[Type <String>]`: recurrenceRangeType
-    - `[ReminderDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-    - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-    - `[Status <String>]`: taskStatus
-    - `[Title <String>]`: A brief description of the task.
-  - `[WellknownListName <String>]`: wellknownListName
-
-EXTENSIONS <IMicrosoftGraphExtension\[]>: The collection of open extensions defined for the task list. Nullable.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
-  - `[AttachmentBaseId <String>]`: The unique identifier of attachmentBase
-  - `[AttachmentId <String>]`: The unique identifier of attachment
-  - `[AttachmentSessionId <String>]`: The unique identifier of attachmentSession
-  - `[ChecklistItemId <String>]`: The unique identifier of checklistItem
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
-  - `[LinkedResourceId <String>]`: The unique identifier of linkedResource
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
-  - `[NotificationId <String>]`: The unique identifier of notification
-  - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
-  - `[OutlookCategoryId <String>]`: The unique identifier of outlookCategory
-  - `[OutlookTaskFolderId <String>]`: The unique identifier of outlookTaskFolder
-  - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
-  - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
-  - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
-  - `[TodoTaskId <String>]`: The unique identifier of todoTask
-  - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
-  - `[UserId <String>]`: The unique identifier of user
-
-TASKS <IMicrosoftGraphTodoTask\[]>: The tasks in this task list. Read-only. Nullable.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[AttachmentSessions <IMicrosoftGraphAttachmentSession[]>]`: 
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-    - `[Content <Byte[]>]`: The content streams that are uploaded.
-    - `[ExpirationDateTime <DateTime?>]`: The date and time in UTC when the upload session will expire. The complete file must be uploaded before this expiration time is reached.
-    - `[NextExpectedRanges <String[]>]`: Indicates a single value {start} that represents the location in the file where the next upload should begin.
-  - `[Attachments <IMicrosoftGraphAttachmentBase[]>]`: A collection of file attachments for the task.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-    - `[ContentType <String>]`: The MIME type.
-    - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
-    - `[Size <Int32?>]`: The length of the attachment in bytes.
-  - `[Body <IMicrosoftGraphItemBody>]`: itemBody
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Content <String>]`: The content of the item.
-    - `[ContentType <String>]`: bodyType
-  - `[BodyLastModifiedDateTime <DateTime?>]`: The date and time when the task body was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
-  - `[Categories <String[]>]`: The categories associated with the task. Each category corresponds to the displayName property of an outlookCategory that the user has defined.
-  - `[ChecklistItems <IMicrosoftGraphChecklistItem[]>]`: A collection of checklistItems linked to a task.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-    - `[CheckedDateTime <DateTime?>]`: The date and time when the checklistItem was finished.
-    - `[CreatedDateTime <DateTime?>]`: The date and time when the checklistItem was created.
-    - `[DisplayName <String>]`: Field indicating the title of checklistItem.
-    - `[IsChecked <Boolean?>]`: State indicating whether the item is checked off or not.
-  - `[CompletedDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
-    - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
-  - `[CreatedDateTime <DateTime?>]`: The date and time when the task was created. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
-  - `[DueDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-  - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the task. Nullable.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[HasAttachments <Boolean?>]`: Indicates whether the task has attachments.
-  - `[Importance <String>]`: importance
-  - `[IsReminderOn <Boolean?>]`: Set to true if an alert is set to remind the user of the task.
-  - `[LastModifiedDateTime <DateTime?>]`: The date and time when the task was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
-  - `[LinkedResources <IMicrosoftGraphLinkedResource[]>]`: A collection of resources linked to the task.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-    - `[ApplicationName <String>]`: The app name of the source that sends the linkedResource.
-    - `[DisplayName <String>]`: The title of the linkedResource.
-    - `[ExternalId <String>]`: ID of the object that is associated with this task on the third-party/partner system.
-    - `[WebUrl <String>]`: Deep link to the linkedResource.
+`AVAILABILITY <IMicrosoftGraphShiftAvailability[]>`: Availability of the user to be scheduled for work and its recurrence pattern.
   - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
@@ -473,11 +259,70 @@ TASKS <IMicrosoftGraphTodoTask\[]>: The tasks in this task list. Read-only. Null
       - `[RecurrenceTimeZone <String>]`: Time zone for the startDate and endDate properties. Optional. If not specified, the time zone of the event is used.
       - `[StartDate <DateTime?>]`: The date to start applying the recurrence pattern. The first occurrence of the meeting may be this date or later, depending on the recurrence pattern of the event. Must be the same value as the start property of the recurring event. Required.
       - `[Type <String>]`: recurrenceRangeType
-  - `[ReminderDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-  - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-  - `[Status <String>]`: taskStatus
-  - `[Title <String>]`: A brief description of the task.
+  - `[TimeSlots <IMicrosoftGraphTimeRange[]>]`: The time slot(s) preferred by the user.
+    - `[EndTime <String>]`: End time for the time range.
+    - `[StartTime <String>]`: Start time for the time range.
+  - `[TimeZone <String>]`: Specifies the time zone for the indicated time.
+
+`BODYPARAMETER <IMicrosoftGraphShiftPreferences>`: shiftPreferences
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
+    - `[Device <IMicrosoftGraphIdentity>]`: identity
+    - `[User <IMicrosoftGraphIdentity>]`: identity
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Availability <IMicrosoftGraphShiftAvailability[]>]`: Availability of the user to be scheduled for work and its recurrence pattern.
+    - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[DayOfMonth <Int32?>]`: The day of the month on which the event occurs. Required if type is absoluteMonthly or absoluteYearly.
+        - `[DaysOfWeek <String[]>]`: A collection of the days of the week on which the event occurs. The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday. If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.  Required if type is weekly, relativeMonthly, or relativeYearly.
+        - `[FirstDayOfWeek <String>]`: dayOfWeek
+        - `[Index <String>]`: weekIndex
+        - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type. Required.
+        - `[Month <Int32?>]`: The month in which the event occurs.  This is a number from 1 to 12.
+        - `[Type <String>]`: recurrencePatternType
+      - `[Range <IMicrosoftGraphRecurrenceRange>]`: recurrenceRange
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[EndDate <DateTime?>]`: The date to stop applying the recurrence pattern. Depending on the recurrence pattern of the event, the last occurrence of the meeting may not be this date. Required if type is endDate.
+        - `[NumberOfOccurrences <Int32?>]`: The number of times to repeat the event. Required and must be positive if type is numbered.
+        - `[RecurrenceTimeZone <String>]`: Time zone for the startDate and endDate properties. Optional. If not specified, the time zone of the event is used.
+        - `[StartDate <DateTime?>]`: The date to start applying the recurrence pattern. The first occurrence of the meeting may be this date or later, depending on the recurrence pattern of the event. Must be the same value as the start property of the recurring event. Required.
+        - `[Type <String>]`: recurrenceRangeType
+    - `[TimeSlots <IMicrosoftGraphTimeRange[]>]`: The time slot(s) preferred by the user.
+      - `[EndTime <String>]`: End time for the time range.
+      - `[StartTime <String>]`: Start time for the time range.
+    - `[TimeZone <String>]`: Specifies the time zone for the indicated time.
+
+`INPUTOBJECT <IUsersIdentity>`: Identity Parameter
+  - `[AttachmentBaseId <String>]`: The unique identifier of attachmentBase
+  - `[AttachmentSessionId <String>]`: The unique identifier of attachmentSession
+  - `[ChecklistItemId <String>]`: The unique identifier of checklistItem
+  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
+  - `[ExtensionId <String>]`: The unique identifier of extension
+  - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
+  - `[LinkedResourceId <String>]`: The unique identifier of linkedResource
+  - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
+  - `[OutlookCategoryId <String>]`: The unique identifier of outlookCategory
+  - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
+  - `[TodoTaskId <String>]`: The unique identifier of todoTask
+  - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
+  - `[UserId <String>]`: The unique identifier of user
+
+`LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>`: identitySet
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Application <IMicrosoftGraphIdentity>]`: identity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity.
+  - `[Device <IMicrosoftGraphIdentity>]`: identity
+  - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
+[Update-MgBetaUserTodoList](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserTodoList?view=graph-powershell-beta)
 
-## RELATED LINKS

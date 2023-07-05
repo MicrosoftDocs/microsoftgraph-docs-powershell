@@ -1,18 +1,21 @@
 ---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgpolicyclaimmappingpolicy
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyclaimmappingpolicy
 schema: 2.0.0
 ---
 
 # New-MgPolicyClaimMappingPolicy
 
 ## SYNOPSIS
-Create new navigation property to claimsMappingPolicies for policies
+Create a new claimsMappingPolicy object.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaPolicyClaimMappingPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyClaimMappingPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
 New-MgPolicyClaimMappingPolicy [-AdditionalProperties <Hashtable>]
  [-AppliesTo <IMicrosoftGraphDirectoryObject[]>] [-Definition <String[]>] [-DeletedDateTime <DateTime>]
@@ -20,31 +23,30 @@ New-MgPolicyClaimMappingPolicy [-AdditionalProperties <Hashtable>]
  [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
 New-MgPolicyClaimMappingPolicy -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create new navigation property to claimsMappingPolicies for policies
+Create a new claimsMappingPolicy object.
 
 ## EXAMPLES
 
-### Example 1: Using the New-MgPolicyClaimMappingPolicy Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
+
 $params = @{
-	Definition = @(
+	definition = @(
 		"{"ClaimsMappingPolicy":{"Version":1,"IncludeBasicClaimSet":"true","ClaimsSchema": [{"Source":"user","ID":"userprincipalname","SamlClaimType":"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier"},{"Source":"user","ID":"givenname","SamlClaimType":"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname"},{"Source":"user","ID":"displayname","SamlClaimType":"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name"},{"Source":"user","ID":"surname","SamlClaimType":"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname"},{"Source":"user","ID":"userprincipalname","SamlClaimType":"username"}],"ClaimsTransformation":[{"ID":"CreateTermsOfService","TransformationMethod":"CreateStringClaim","InputParameters": [{"ID":"value","DataType":"string", "Value":"sandbox"}],"OutputClaims":[{"ClaimTypeReferenceId":"TOS","TransformationClaimType":"createdClaim"}]}]}}"
 	)
-	DisplayName = "Test1234"
+	displayName = "Test1234"
 }
+
 New-MgPolicyClaimMappingPolicy -BodyParameter $params
+
 ```
-
-This example shows how to use the New-MgPolicyClaimMappingPolicy Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -52,7 +54,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -64,11 +66,11 @@ Accept wildcard characters: False
 
 ### -AppliesTo
 .
-To construct, please use Get-Help -Online and see NOTES section for APPLIESTO properties and create a hash table.
+To construct, see NOTES section for APPLIESTO properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDirectoryObject[]
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -83,7 +85,7 @@ claimsMappingPolicy
 
 ```yaml
 Type: Hashtable
-Parameter Sets: Create1
+Parameter Sets: Create
 Aliases:
 
 Required: True
@@ -100,7 +102,7 @@ Required.
 
 ```yaml
 Type: String[]
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -116,7 +118,7 @@ Always null when the object hasn't been deleted.
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -132,7 +134,7 @@ Required.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -148,7 +150,7 @@ Required.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -164,7 +166,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -181,7 +183,7 @@ Optional, default value is false.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -240,8 +242,10 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-APPLIESTO <IMicrosoftGraphDirectoryObject\[]>: .
+`APPLIESTO <IMicrosoftGraphDirectoryObject[]>`: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
+[New-MgBetaPolicyClaimMappingPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyClaimMappingPolicy?view=graph-powershell-beta)
+

@@ -1,9 +1,8 @@
 ---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdevice
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdevice
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # New-MgDevice
@@ -11,19 +10,23 @@ ms.prod: directory-management
 ## SYNOPSIS
 Create and register a new device in the organization.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDevice](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDevice?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgDevice [-AccountEnabled] [-AdditionalProperties <Hashtable>]
  [-AlternativeSecurityIds <IMicrosoftGraphAlternativeSecurityId[]>] [-ApproximateLastSignInDateTime <DateTime>]
- [-ComplianceExpirationDateTime <DateTime>] [-DeletedDateTime <DateTime>] [-DeviceId <String>]
- [-DeviceMetadata <String>] [-DeviceVersion <Int32>] [-DisplayName <String>]
- [-Extensions <IMicrosoftGraphExtension[]>] [-Id <String>] [-IsCompliant] [-IsManaged] [-MdmAppId <String>]
- [-MemberOf <IMicrosoftGraphDirectoryObject[]>] [-OnPremisesLastSyncDateTime <DateTime>]
- [-OnPremisesSyncEnabled] [-OperatingSystem <String>] [-OperatingSystemVersion <String>]
- [-PhysicalIds <String[]>] [-ProfileType <String>] [-RegisteredOwners <IMicrosoftGraphDirectoryObject[]>]
- [-RegisteredUsers <IMicrosoftGraphDirectoryObject[]>] [-SystemLabels <String[]>]
+ [-ComplianceExpirationDateTime <DateTime>] [-DeletedDateTime <DateTime>] [-DeviceCategory <String>]
+ [-DeviceId <String>] [-DeviceMetadata <String>] [-DeviceOwnership <String>] [-DeviceVersion <Int32>]
+ [-DisplayName <String>] [-EnrollmentProfileName <String>] [-Extensions <IMicrosoftGraphExtension[]>]
+ [-Id <String>] [-IsCompliant] [-IsManaged] [-MdmAppId <String>] [-MemberOf <IMicrosoftGraphDirectoryObject[]>]
+ [-OnPremisesLastSyncDateTime <DateTime>] [-OnPremisesSyncEnabled] [-OperatingSystem <String>]
+ [-OperatingSystemVersion <String>] [-PhysicalIds <String[]>] [-ProfileType <String>]
+ [-RegisteredOwners <IMicrosoftGraphDirectoryObject[]>] [-RegisteredUsers <IMicrosoftGraphDirectoryObject[]>]
+ [-RegistrationDateTime <DateTime>] [-SystemLabels <String[]>]
  [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>] [-TrustType <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
@@ -38,28 +41,27 @@ Create and register a new device in the organization.
 
 ## EXAMPLES
 
-### Example 1: Using the New-MgDevice Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
+
 $params = @{
-	AccountEnabled = $false
-	AlternativeSecurityIds = @(
+	accountEnabled = $false
+	alternativeSecurityIds = @(
 		@{
-			Type = 2
-			Key = [System.Text.Encoding]::ASCII.GetBytes("base64Y3YxN2E1MWFlYw==")
+			type = 2
+			key = [System.Text.Encoding]::ASCII.GetBytes("base64Y3YxN2E1MWFlYw==")
 		}
 	)
-	DeviceId = "4c299165-6e8f-4b45-a5ba-c5d250a707ff"
-	DisplayName = "Test device"
-	OperatingSystem = "linux"
-	OperatingSystemVersion = "1"
+	deviceId = "4c299165-6e8f-4b45-a5ba-c5d250a707ff"
+	displayName = "Test device"
+	operatingSystem = "linux"
+	operatingSystemVersion = "1"
 }
+
 New-MgDevice -BodyParameter $params
+
 ```
-
-This example shows how to use the New-MgDevice Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ## PARAMETERS
 
 ### -AccountEnabled
@@ -100,7 +102,7 @@ Accept wildcard characters: False
 For internal use only.
 Not nullable.
 Supports $filter (eq, not, ge, le).
-To construct, please use Get-Help -Online and see NOTES section for ALTERNATIVESECURITYIDS properties and create a hash table.
+To construct, see NOTES section for ALTERNATIVESECURITYIDS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAlternativeSecurityId[]
@@ -134,7 +136,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 device
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDevice
@@ -182,6 +184,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -DeviceCategory
+User-defined property set by Intune to automatically add devices to groups and simplify managing devices.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -DeviceId
 Unique identifier set by Azure Device Registration Service at the time of registration.
 This is an alternate key that can be used to reference the device object.
@@ -202,6 +219,23 @@ Accept wildcard characters: False
 ### -DeviceMetadata
 For internal use only.
 Set to null.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DeviceOwnership
+Ownership of the device.
+This property is set by Intune.
+Possible values are: unknown, company, personal.
 
 ```yaml
 Type: String
@@ -247,11 +281,28 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -EnrollmentProfileName
+Enrollment profile applied to the device.
+For example, Apple Device Enrollment Profile, Device enrollment - Corporate device identifiers, or Windows Autopilot profile name.
+This property is set by Intune.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Extensions
 The collection of open extensions defined for the device.
 Read-only.
 Nullable.
-To construct, please use Get-Help -Online and see NOTES section for EXTENSIONS properties and create a hash table.
+To construct, see NOTES section for EXTENSIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphExtension[]
@@ -338,7 +389,7 @@ Groups and administrative units that this device is a member of.
 Read-only.
 Nullable.
 Supports $expand.
-To construct, please use Get-Help -Online and see NOTES section for MEMBEROF properties and create a hash table.
+To construct, see NOTES section for MEMBEROF properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDirectoryObject[]
@@ -460,7 +511,7 @@ The registered owner is set at the time of registration.
 Read-only.
 Nullable.
 Supports $expand.
-To construct, please use Get-Help -Online and see NOTES section for REGISTEREDOWNERS properties and create a hash table.
+To construct, see NOTES section for REGISTEREDOWNERS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDirectoryObject[]
@@ -480,10 +531,28 @@ For cloud joined devices and registered personal devices, registered users are s
 Read-only.
 Nullable.
 Supports $expand.
-To construct, please use Get-Help -Online and see NOTES section for REGISTEREDUSERS properties and create a hash table.
+To construct, see NOTES section for REGISTEREDUSERS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDirectoryObject[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RegistrationDateTime
+Date and time of when the device was registered.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+
+```yaml
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -514,7 +583,7 @@ Accept wildcard characters: False
 Groups and administrative units that the device is a member of.
 This operation is transitive.
 Supports $expand.
-To construct, please use Get-Help -Online and see NOTES section for TRANSITIVEMEMBEROF properties and create a hash table.
+To construct, see NOTES section for TRANSITIVEMEMBEROF properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDirectoryObject[]
@@ -595,12 +664,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ALTERNATIVESECURITYIDS <IMicrosoftGraphAlternativeSecurityId\[]>: For internal use only. Not nullable. Supports $filter (eq, not, ge, le).
+`ALTERNATIVESECURITYIDS <IMicrosoftGraphAlternativeSecurityId[]>`: For internal use only. Not nullable. Supports $filter (eq, not, ge, le).
   - `[IdentityProvider <String>]`: For internal use only
   - `[Key <Byte[]>]`: For internal use only
   - `[Type <Int32?>]`: For internal use only
 
-BODYPARAMETER `<IMicrosoftGraphDevice>`: device
+`BODYPARAMETER <IMicrosoftGraphDevice>`: device
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -611,10 +680,13 @@ BODYPARAMETER `<IMicrosoftGraphDevice>`: device
     - `[Type <Int32?>]`: For internal use only
   - `[ApproximateLastSignInDateTime <DateTime?>]`: The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only. Supports $filter (eq, ne, not, ge, le, and eq on null values) and $orderBy.
   - `[ComplianceExpirationDateTime <DateTime?>]`: The timestamp when the device is no longer deemed compliant. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+  - `[DeviceCategory <String>]`: User-defined property set by Intune to automatically add devices to groups and simplify managing devices.
   - `[DeviceId <String>]`: Unique identifier set by Azure Device Registration Service at the time of registration. This is an alternate key that can be used to reference the device object. Supports $filter (eq, ne, not, startsWith).
   - `[DeviceMetadata <String>]`: For internal use only. Set to null.
+  - `[DeviceOwnership <String>]`: Ownership of the device. This property is set by Intune. Possible values are: unknown, company, personal.
   - `[DeviceVersion <Int32?>]`: For internal use only.
   - `[DisplayName <String>]`: The display name for the device. Required. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderBy.
+  - `[EnrollmentProfileName <String>]`: Enrollment profile applied to the device. For example, Apple Device Enrollment Profile, Device enrollment - Corporate device identifiers, or Windows Autopilot profile name. This property is set by Intune.
   - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the device. Read-only. Nullable.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[IsCompliant <Boolean?>]`: true if the device complies with Mobile Device Management (MDM) policies; otherwise, false. Read-only. This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices. Supports $filter (eq, ne, not).
@@ -631,27 +703,30 @@ BODYPARAMETER `<IMicrosoftGraphDevice>`: device
   - `[ProfileType <String>]`: The profile type of the device. Possible values: RegisteredDevice (default), SecureVM, Printer, Shared, IoT.
   - `[RegisteredOwners <IMicrosoftGraphDirectoryObject[]>]`: The user that cloud joined the device or registered their personal device. The registered owner is set at the time of registration. Read-only. Nullable. Supports $expand.
   - `[RegisteredUsers <IMicrosoftGraphDirectoryObject[]>]`: Collection of registered users of the device. For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration. Read-only. Nullable. Supports $expand.
+  - `[RegistrationDateTime <DateTime?>]`: Date and time of when the device was registered. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
   - `[SystemLabels <String[]>]`: List of labels applied to the device by the system. Supports $filter (/$count eq 0, /$count ne 0).
   - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]`: Groups and administrative units that the device is a member of. This operation is transitive. Supports $expand.
   - `[TrustType <String>]`: Type of trust for the joined device. Read-only. Possible values:  Workplace (indicates bring your own personal devices), AzureAd (Cloud only joined devices), ServerAd (on-premises domain joined devices joined to Azure AD). For more details, see Introduction to device management in Azure Active Directory
 
-EXTENSIONS <IMicrosoftGraphExtension\[]>: The collection of open extensions defined for the device. Read-only. Nullable.
+`EXTENSIONS <IMicrosoftGraphExtension[]>`: The collection of open extensions defined for the device. Read-only. Nullable.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
-MEMBEROF <IMicrosoftGraphDirectoryObject\[]>: Groups and administrative units that this device is a member of. Read-only. Nullable. Supports $expand.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
-
-REGISTEREDOWNERS <IMicrosoftGraphDirectoryObject\[]>: The user that cloud joined the device or registered their personal device. The registered owner is set at the time of registration. Read-only. Nullable. Supports $expand.
+`MEMBEROF <IMicrosoftGraphDirectoryObject[]>`: Groups and administrative units that this device is a member of. Read-only. Nullable. Supports $expand.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
-REGISTEREDUSERS <IMicrosoftGraphDirectoryObject\[]>: Collection of registered users of the device. For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration. Read-only. Nullable. Supports $expand.
+`REGISTEREDOWNERS <IMicrosoftGraphDirectoryObject[]>`: The user that cloud joined the device or registered their personal device. The registered owner is set at the time of registration. Read-only. Nullable. Supports $expand.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
-TRANSITIVEMEMBEROF <IMicrosoftGraphDirectoryObject\[]>: Groups and administrative units that the device is a member of. This operation is transitive. Supports $expand.
+`REGISTEREDUSERS <IMicrosoftGraphDirectoryObject[]>`: Collection of registered users of the device. For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration. Read-only. Nullable. Supports $expand.
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
+
+`TRANSITIVEMEMBEROF <IMicrosoftGraphDirectoryObject[]>`: Groups and administrative units that the device is a member of. This operation is transitive. Supports $expand.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
+[New-MgBetaDevice](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDevice?view=graph-powershell-beta)
+

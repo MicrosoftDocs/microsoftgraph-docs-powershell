@@ -1,7 +1,7 @@
 ---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgreportmanageddeviceenrollmentfailuredetail
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmanageddeviceenrollmentfailuredetail
 schema: 2.0.0
 ---
 
@@ -10,20 +10,23 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function managedDeviceEnrollmentFailureDetails
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportManagedDeviceEnrollmentFailureDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportManagedDeviceEnrollmentFailureDetail?view=graph-powershell-beta)
+
 ## SYNTAX
 
-### Managed2 (Default)
+### Detail (Default)
 ```
 Get-MgReportManagedDeviceEnrollmentFailureDetail -OutFile <String> [-PassThru] [<CommonParameters>]
 ```
 
-### Managed3
+### Detail1
 ```
 Get-MgReportManagedDeviceEnrollmentFailureDetail -Filter <String> -Skip <Int32> -SkipToken <String>
  -Top <Int32> -OutFile <String> [-PassThru] [<CommonParameters>]
 ```
 
-### ManagedViaIdentity1
+### DetailViaIdentity
 ```
 Get-MgReportManagedDeviceEnrollmentFailureDetail -InputObject <IReportsIdentity> -OutFile <String> [-PassThru]
  [<CommonParameters>]
@@ -34,6 +37,20 @@ Invoke function managedDeviceEnrollmentFailureDetails
 
 ## EXAMPLES
 
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -Filter
@@ -41,7 +58,7 @@ Usage: filter='{filter}'
 
 ```yaml
 Type: String
-Parameter Sets: Managed3
+Parameter Sets: Detail1
 Aliases:
 
 Required: True
@@ -53,11 +70,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IReportsIdentity
-Parameter Sets: ManagedViaIdentity1
+Parameter Sets: DetailViaIdentity
 Aliases:
 
 Required: True
@@ -102,7 +119,7 @@ Usage: skipToken='{skipToken}'
 
 ```yaml
 Type: String
-Parameter Sets: Managed3
+Parameter Sets: Detail1
 Aliases:
 
 Required: True
@@ -117,7 +134,7 @@ Usage: top={top}
 
 ```yaml
 Type: Int32
-Parameter Sets: Managed3
+Parameter Sets: Detail1
 Aliases: Limit
 
 Required: True
@@ -132,7 +149,7 @@ Usage: skip={skip}
 
 ```yaml
 Type: Int32
-Parameter Sets: Managed3
+Parameter Sets: Detail1
 Aliases:
 
 Required: True
@@ -160,22 +177,16 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
-  - `[ApplicationSignInDetailedSummaryId <String>]`: The unique identifier of applicationSignInDetailedSummary
-  - `[CredentialUserRegistrationDetailsId <String>]`: The unique identifier of credentialUserRegistrationDetails
+`INPUTOBJECT <IReportsIdentity>`: Identity Parameter
   - `[Date <DateTime?>]`: Usage: date={date}
-  - `[DeviceManagementCachedReportConfigurationId <String>]`: The unique identifier of deviceManagementCachedReportConfiguration
   - `[DeviceManagementExportJobId <String>]`: The unique identifier of deviceManagementExportJob
   - `[DirectoryAuditId <String>]`: The unique identifier of directoryAudit
   - `[EndDateTime <DateTime?>]`: Usage: endDateTime={endDateTime}
   - `[Filter <String>]`: Usage: filter='{filter}'
   - `[GroupId <String>]`: Usage: groupId='{groupId}'
-  - `[IncludedUserRoles <String>]`: Usage: includedUserRoles='{includedUserRoles}'
-  - `[IncludedUserTypes <String>]`: Usage: includedUserTypes='{includedUserTypes}'
   - `[Period <String>]`: Usage: period='{period}'
   - `[PrintUsageByPrinterId <String>]`: The unique identifier of printUsageByPrinter
   - `[PrintUsageByUserId <String>]`: The unique identifier of printUsageByUser
-  - `[PrintUsageId <String>]`: The unique identifier of printUsage
   - `[PrinterId <String>]`: Usage: printerId='{printerId}'
   - `[ProvisioningObjectSummaryId <String>]`: The unique identifier of provisioningObjectSummary
   - `[SignInId <String>]`: The unique identifier of signIn
@@ -183,8 +194,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
   - `[SkipToken <String>]`: Usage: skipToken='{skipToken}'
   - `[StartDateTime <DateTime?>]`: Usage: startDateTime={startDateTime}
   - `[Top <Int32?>]`: Usage: top={top}
-  - `[UserCredentialUsageDetailsId <String>]`: The unique identifier of userCredentialUsageDetails
   - `[UserId <String>]`: Usage: userId='{userId}'
-  - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+[Get-MgBetaReportManagedDeviceEnrollmentFailureDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportManagedDeviceEnrollmentFailureDetail?view=graph-powershell-beta)

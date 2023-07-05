@@ -1,51 +1,70 @@
 ---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.notes/get-mguseronenoteoperation
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotenotebooksectiongroup
 schema: 2.0.0
 ---
 
-# Get-MgUserOnenoteOperation
+# Get-MgUserOnenoteNotebookSectionGroup
 
 ## SYNOPSIS
-The status of OneNote operations.
-Getting an operations collection is not supported, but you can get the status of long-running operations if the Operation-Location header is returned in the response.
-Read-only.
-Nullable.
+Retrieve a list of section groups from the specified notebook.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserOnenoteOperation](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaUserOnenoteOperation?view=graph-powershell-beta)
 
 ## SYNTAX
 
-### Get (Default)
 ```
-Get-MgUserOnenoteOperation -OnenoteOperationId <String> -UserId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
-```
-
-### GetViaIdentity
-```
-Get-MgUserOnenoteOperation -InputObject <INotesIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
+Get-MgUserOnenoteNotebookSectionGroup -NotebookId <String> -UserId <String> [-ExpandProperty <String[]>]
+ [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The status of OneNote operations.
-Getting an operations collection is not supported, but you can get the status of long-running operations if the Operation-Location header is returned in the response.
-Read-only.
-Nullable.
+Retrieve a list of section groups from the specified notebook.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgUserOnenoteOperation Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Notes
 # A UPN can also be used as -UserId.
-Get-MgUserOnenoteOperation -UserId $userId -OnenoteOperationId $onenoteOperationId
+Get-MgUserOnenoteNotebookSectionGroup -UserId $userId -NotebookId $notebookId
 ```
 
-This example shows how to use the Get-MgUserOnenoteOperation Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ## PARAMETERS
+
+### -All
+List all pages.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CountVariable
+Specifies a count of the total number of items in a collection.
+By default, this variable will be set in the global scope.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: CV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -ExpandProperty
 Expand related entities
@@ -62,31 +81,45 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+### -Filter
+Filter items by property values
 
 ```yaml
-Type: INotesIdentity
-Parameter Sets: GetViaIdentity
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -NotebookId
+The unique identifier of notebook
+
+```yaml
+Type: String
+Parameter Sets: (All)
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: True (ByValue)
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -OnenoteOperationId
-The unique identifier of onenoteOperation
+### -PageSize
+Sets the page size of results.
 
 ```yaml
-Type: String
-Parameter Sets: Get
+Type: Int32
+Parameter Sets: (All)
 Aliases:
 
-Required: True
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -108,15 +141,75 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Search
+Search items by search phrases
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Sort
+Order items by property values
+
+```yaml
+Type: String[]
+Parameter Sets: (All)
+Aliases: OrderBy
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Top
+Show only the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: (All)
+Aliases: Limit
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserId
 The unique identifier of user
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: (All)
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: (All)
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -128,28 +221,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.INotesIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnenoteOperation
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSectionGroup
 ## NOTES
 
 ALIASES
 
-COMPLEX PARAMETER PROPERTIES
-
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
-
-
-INPUTOBJECT `<INotesIdentity>`: Identity Parameter
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[NotebookId <String>]`: The unique identifier of notebook
-  - `[OnenoteOperationId <String>]`: The unique identifier of onenoteOperation
-  - `[OnenotePageId <String>]`: The unique identifier of onenotePage
-  - `[OnenoteResourceId <String>]`: The unique identifier of onenoteResource
-  - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
-  - `[SectionGroupId <String>]`: The unique identifier of sectionGroup
-  - `[SiteId <String>]`: The unique identifier of site
-  - `[UserId <String>]`: The unique identifier of user
-
 ## RELATED LINKS
+[Get-MgBetaUserOnenoteOperation](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaUserOnenoteOperation?view=graph-powershell-beta)

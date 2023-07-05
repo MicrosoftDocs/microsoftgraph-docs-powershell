@@ -1,37 +1,40 @@
 ---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgsnoozeusereventreminder
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgsnoozeusereventreminder
 schema: 2.0.0
 ---
 
 # Invoke-MgSnoozeUserEventReminder
 
 ## SYNOPSIS
-Invoke action snoozeReminder
+Postpone a reminder for an event in a user calendar until a new time.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaSnoozeUserEventReminder](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaSnoozeUserEventReminder?view=graph-powershell-beta)
 
 ## SYNTAX
 
-### SnoozeExpanded1 (Default)
+### SnoozeExpanded (Default)
 ```
 Invoke-MgSnoozeUserEventReminder -EventId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
  [-NewReminderTime <IMicrosoftGraphDateTimeZone>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Snooze1
+### Snooze
 ```
 Invoke-MgSnoozeUserEventReminder -EventId <String> -UserId <String>
  -BodyParameter <IPaths10X81JrUsersUserIdEventsEventIdMicrosoftGraphSnoozereminderPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### SnoozeViaIdentityExpanded1
+### SnoozeViaIdentityExpanded
 ```
 Invoke-MgSnoozeUserEventReminder -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
  [-NewReminderTime <IMicrosoftGraphDateTimeZone>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### SnoozeViaIdentity1
+### SnoozeViaIdentity
 ```
 Invoke-MgSnoozeUserEventReminder -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths10X81JrUsersUserIdEventsEventIdMicrosoftGraphSnoozereminderPostRequestbodyContentApplicationJsonSchema>
@@ -39,11 +42,11 @@ Invoke-MgSnoozeUserEventReminder -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action snoozeReminder
+Postpone a reminder for an event in a user calendar until a new time.
 
 ## EXAMPLES
 
-### Example 1: Using the Invoke-MgSnoozeUserEventReminder Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{
@@ -56,9 +59,6 @@ $params = @{
 Invoke-MgSnoozeUserEventReminder -UserId $userId -EventId $eventId -BodyParameter $params
 ```
 
-This example shows how to use the Invoke-MgSnoozeUserEventReminder Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -66,7 +66,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: SnoozeExpanded1, SnoozeViaIdentityExpanded1
+Parameter Sets: SnoozeExpanded, SnoozeViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -78,11 +78,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths10X81JrUsersUserIdEventsEventIdMicrosoftGraphSnoozereminderPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Snooze1, SnoozeViaIdentity1
+Parameter Sets: Snooze, SnoozeViaIdentity
 Aliases:
 
 Required: True
@@ -97,7 +97,7 @@ The unique identifier of event
 
 ```yaml
 Type: String
-Parameter Sets: SnoozeExpanded1, Snooze1
+Parameter Sets: SnoozeExpanded, Snooze
 Aliases:
 
 Required: True
@@ -109,11 +109,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: SnoozeViaIdentityExpanded1, SnoozeViaIdentity1
+Parameter Sets: SnoozeViaIdentityExpanded, SnoozeViaIdentity
 Aliases:
 
 Required: True
@@ -125,11 +125,11 @@ Accept wildcard characters: False
 
 ### -NewReminderTime
 dateTimeTimeZone
-To construct, please use Get-Help -Online and see NOTES section for NEWREMINDERTIME properties and create a hash table.
+To construct, see NOTES section for NEWREMINDERTIME properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDateTimeZone
-Parameter Sets: SnoozeExpanded1, SnoozeViaIdentityExpanded1
+Parameter Sets: SnoozeExpanded, SnoozeViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -159,7 +159,7 @@ The unique identifier of user
 
 ```yaml
 Type: String
-Parameter Sets: SnoozeExpanded1, Snooze1
+Parameter Sets: SnoozeExpanded, Snooze
 Aliases:
 
 Required: True
@@ -219,27 +219,20 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths10X81JrUsersUserIdEventsEventIdMicrosoftGraphSnoozereminderPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths10X81JrUsersUserIdEventsEventIdMicrosoftGraphSnoozereminderPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[NewReminderTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
     - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
-  - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
-  - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
-  - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
+`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AuthenticationMethodId <String>]`: The unique identifier of authenticationMethod
   - `[CalendarId <String>]`: The unique identifier of calendar
   - `[ChatId <String>]`: The unique identifier of chat
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
   - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
-  - `[CloudPcId <String>]`: The unique identifier of cloudPC
   - `[ContentTypeId <String>]`: The unique identifier of contentType
-  - `[DeviceEnrollmentConfigurationId <String>]`: The unique identifier of deviceEnrollmentConfiguration
-  - `[DeviceId <String>]`: The unique identifier of device
-  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
   - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
   - `[DriveId <String>]`: The unique identifier of drive
   - `[DriveItemId <String>]`: The unique identifier of driveItem
@@ -252,26 +245,21 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
   - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
   - `[MessageId <String>]`: The unique identifier of message
-  - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
   - `[NotebookId <String>]`: The unique identifier of notebook
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
-  - `[OutlookTaskFolderId <String>]`: The unique identifier of outlookTaskFolder
-  - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
-  - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
-  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
-  - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
   - `[TodoTaskId <String>]`: The unique identifier of todoTask
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
   - `[UserId <String>]`: The unique identifier of user
 
-NEWREMINDERTIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
+`NEWREMINDERTIME <IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
   - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
 
 ## RELATED LINKS
+[Invoke-MgBetaSnoozeUserEventReminder](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaSnoozeUserEventReminder?view=graph-powershell-beta)

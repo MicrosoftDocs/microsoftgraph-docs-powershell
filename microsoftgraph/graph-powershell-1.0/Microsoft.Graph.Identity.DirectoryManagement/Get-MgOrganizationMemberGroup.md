@@ -1,87 +1,55 @@
 ---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganizationmembergroup
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganizationextensioncount
 schema: 2.0.0
 ---
 
-# Get-MgOrganizationMemberGroup
+# Get-MgOrganizationExtensionCount
 
 ## SYNOPSIS
-Invoke action getMemberGroups
+Get the number of the resource
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaOrganizationMemberGroup](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaOrganizationMemberGroup?view=graph-powershell-beta)
 
 ## SYNTAX
 
-### GetExpanded1 (Default)
+### Get (Default)
 ```
-Get-MgOrganizationMemberGroup -OrganizationId <String> [-AdditionalProperties <Hashtable>]
- [-SecurityEnabledOnly] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Get1
-```
-Get-MgOrganizationMemberGroup -OrganizationId <String>
- -BodyParameter <IPathsPlvqruOrganizationIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Get-MgOrganizationExtensionCount -OrganizationId <String> [-Filter <String>] [-Search <String>]
+ [<CommonParameters>]
 ```
 
-### GetViaIdentityExpanded1
+### GetViaIdentity
 ```
-Get-MgOrganizationMemberGroup -InputObject <IIdentityDirectoryManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-SecurityEnabledOnly] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### GetViaIdentity1
-```
-Get-MgOrganizationMemberGroup -InputObject <IIdentityDirectoryManagementIdentity>
- -BodyParameter <IPathsPlvqruOrganizationIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Get-MgOrganizationExtensionCount -InputObject <IIdentityDirectoryManagementIdentity> [-Filter <String>]
+ [-Search <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke action getMemberGroups
+Get the number of the resource
 
 ## EXAMPLES
 
-### Example 1: Check group memberships for a directory object
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.DirectoryObjects
-
-$params = @{
-	SecurityEnabledOnly = $false
-}
-
-Get-MgDirectoryObjectMemberGroup -DirectoryObjectId $directoryObjectId -BodyParameter $params
+{{ Add code here }}
 ```
 
-This example shows how to use the Get-MgOrganizationMemberGroup Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Check group memberships for the signed-in user
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Users.Actions
-
-$params = @{
-	SecurityEnabledOnly = $true
-}
-
-# A UPN can also be used as -UserId.
-Get-MgUserMemberGroup -UserId $userId -BodyParameter $params
+{{ Add code here }}
 ```
-
-This example shows how to use the Get-MgOrganizationMemberGroup Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -Filter
+Filter items by property values
 
 ```yaml
-Type: Hashtable
-Parameter Sets: GetExpanded1, GetViaIdentityExpanded1
+Type: String
+Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -91,29 +59,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -BodyParameter
-.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
-
-```yaml
-Type: IPathsPlvqruOrganizationIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Get1, GetViaIdentity1
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IIdentityDirectoryManagementIdentity
-Parameter Sets: GetViaIdentityExpanded1, GetViaIdentity1
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
@@ -128,7 +80,7 @@ The unique identifier of organization
 
 ```yaml
 Type: String
-Parameter Sets: GetExpanded1, Get1
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -138,44 +90,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -SecurityEnabledOnly
-.
+### -Search
+Search items by search phrases
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: GetExpanded1, GetViaIdentityExpanded1
+Type: String
+Parameter Sets: (All)
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
 
 Required: False
 Position: Named
@@ -190,10 +111,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IPathsPlvqruOrganizationIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
-### System.String
+### System.Int32
 ## NOTES
 
 ALIASES
@@ -203,44 +123,28 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsPlvqruOrganizationIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[SecurityEnabledOnly <Boolean?>]`: 
-
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
-  - `[CommandId <String>]`: The unique identifier of command
   - `[ContractId <String>]`: The unique identifier of contract
   - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
   - `[DeviceId <String>]`: The unique identifier of device
   - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
   - `[DirectoryRoleId <String>]`: The unique identifier of directoryRole
   - `[DirectoryRoleTemplateId <String>]`: The unique identifier of directoryRoleTemplate
-  - `[DirectorySettingId <String>]`: The unique identifier of directorySetting
-  - `[DirectorySettingTemplateId <String>]`: The unique identifier of directorySettingTemplate
   - `[DomainDnsRecordId <String>]`: The unique identifier of domainDnsRecord
   - `[DomainId <String>]`: The unique identifier of domain
   - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[FeatureRolloutPolicyId <String>]`: The unique identifier of featureRolloutPolicy
   - `[IdentityProviderBaseId <String>]`: The unique identifier of identityProviderBase
-  - `[ImpactedResourceId <String>]`: The unique identifier of impactedResource
-  - `[InboundSharedUserProfileUserId <String>]`: The unique identifier of inboundSharedUserProfile
   - `[InternalDomainFederationId <String>]`: The unique identifier of internalDomainFederation
   - `[OnPremisesDirectorySynchronizationId <String>]`: The unique identifier of onPremisesDirectorySynchronization
   - `[OrgContactId <String>]`: The unique identifier of orgContact
   - `[OrganizationId <String>]`: The unique identifier of organization
   - `[OrganizationalBrandingLocalizationId <String>]`: The unique identifier of organizationalBrandingLocalization
-  - `[OutboundSharedUserProfileUserId <String>]`: The unique identifier of outboundSharedUserProfile
-  - `[ProfileCardPropertyId <String>]`: The unique identifier of profileCardProperty
-  - `[RecommendationId <String>]`: The unique identifier of recommendation
   - `[ScopedRoleMembershipId <String>]`: The unique identifier of scopedRoleMembership
-  - `[SharedEmailDomainId <String>]`: The unique identifier of sharedEmailDomain
-  - `[SharedEmailDomainInvitationId <String>]`: The unique identifier of sharedEmailDomainInvitation
   - `[SubscribedSkuId <String>]`: The unique identifier of subscribedSku
-  - `[TenantReferenceTenantId <String>]`: The unique identifier of tenantReference
-  - `[UsageRightId <String>]`: The unique identifier of usageRight
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaOrganizationMemberGroup](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaOrganizationMemberGroup?view=graph-powershell-beta)

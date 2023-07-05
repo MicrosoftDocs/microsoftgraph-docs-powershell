@@ -1,18 +1,21 @@
 ---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryadministrativeunit
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryadministrativeunit
 schema: 2.0.0
 ---
 
 # New-MgDirectoryAdministrativeUnit
 
 ## SYNOPSIS
-Create new navigation property to administrativeUnits for directory
+Use this API to create a new administrativeUnit.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDirectoryAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryAdministrativeUnit?view=graph-powershell-beta)
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
 New-MgDirectoryAdministrativeUnit [-AdditionalProperties <Hashtable>] [-DeletedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>] [-Extensions <IMicrosoftGraphExtension[]>] [-Id <String>]
@@ -20,31 +23,30 @@ New-MgDirectoryAdministrativeUnit [-AdditionalProperties <Hashtable>] [-DeletedD
  [-Visibility <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
 New-MgDirectoryAdministrativeUnit -BodyParameter <IMicrosoftGraphAdministrativeUnit> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create new navigation property to administrativeUnits for directory
+Use this API to create a new administrativeUnit.
 
 ## EXAMPLES
 
-### Example 1: Using the New-MgDirectoryAdministrativeUnit Cmdlet
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
+
 $params = @{
-	DisplayName = "Seattle District Technical Schools"
-	Description = "Seattle district technical schools administration"
-	Visibility = "HiddenMembership"
+	displayName = "Seattle District Technical Schools"
+	description = "Seattle district technical schools administration"
+	visibility = "HiddenMembership"
 }
+
 New-MgDirectoryAdministrativeUnit -BodyParameter $params
+
 ```
-
-This example shows how to use the New-MgDirectoryAdministrativeUnit Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -52,7 +54,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -64,11 +66,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 administrativeUnit
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAdministrativeUnit
-Parameter Sets: Create1
+Parameter Sets: Create
 Aliases:
 
 Required: True
@@ -84,7 +86,7 @@ Always null when the object hasn't been deleted.
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -100,7 +102,7 @@ Supports $filter (eq, ne, in, startsWith), $search.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -116,7 +118,7 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -129,11 +131,11 @@ Accept wildcard characters: False
 ### -Extensions
 The collection of open extensions defined for this administrative unit.
 Nullable.
-To construct, please use Get-Help -Online and see NOTES section for EXTENSIONS properties and create a hash table.
+To construct, see NOTES section for EXTENSIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphExtension[]
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -149,7 +151,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -162,11 +164,11 @@ Accept wildcard characters: False
 ### -Members
 Users and groups that are members of this administrative unit.
 Supports $expand.
-To construct, please use Get-Help -Online and see NOTES section for MEMBERS properties and create a hash table.
+To construct, see NOTES section for MEMBERS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDirectoryObject[]
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -178,11 +180,11 @@ Accept wildcard characters: False
 
 ### -ScopedRoleMembers
 Scoped-role members of this administrative unit.
-To construct, please use Get-Help -Online and see NOTES section for SCOPEDROLEMEMBERS properties and create a hash table.
+To construct, see NOTES section for SCOPEDROLEMEMBERS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphScopedRoleMembership[]
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -200,7 +202,7 @@ When set to HiddenMembership, only members of the administrative unit can list o
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -259,7 +261,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphAdministrativeUnit>`: administrativeUnit
+`BODYPARAMETER <IMicrosoftGraphAdministrativeUnit>`: administrativeUnit
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -280,14 +282,14 @@ BODYPARAMETER `<IMicrosoftGraphAdministrativeUnit>`: administrativeUnit
       - `[Id <String>]`: Unique identifier for the identity.
   - `[Visibility <String>]`: Controls whether the administrative unit and its members are hidden or public. Can be set to HiddenMembership. If not set (value is null), the default behavior is public. When set to HiddenMembership, only members of the administrative unit can list other members of the administrative unit.
 
-EXTENSIONS <IMicrosoftGraphExtension\[]>: The collection of open extensions defined for this administrative unit. Nullable.
+`EXTENSIONS <IMicrosoftGraphExtension[]>`: The collection of open extensions defined for this administrative unit. Nullable.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
-MEMBERS <IMicrosoftGraphDirectoryObject\[]>: Users and groups that are members of this administrative unit. Supports $expand.
+`MEMBERS <IMicrosoftGraphDirectoryObject[]>`: Users and groups that are members of this administrative unit. Supports $expand.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
-SCOPEDROLEMEMBERS <IMicrosoftGraphScopedRoleMembership\[]>: Scoped-role members of this administrative unit.
+`SCOPEDROLEMEMBERS <IMicrosoftGraphScopedRoleMembership[]>`: Scoped-role members of this administrative unit.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AdministrativeUnitId <String>]`: Unique identifier for the administrative unit that the directory role is scoped to
   - `[RoleId <String>]`: Unique identifier for the directory role that the member is in.
@@ -297,3 +299,5 @@ SCOPEDROLEMEMBERS <IMicrosoftGraphScopedRoleMembership\[]>: Scoped-role members 
     - `[Id <String>]`: Unique identifier for the identity.
 
 ## RELATED LINKS
+[New-MgBetaDirectoryAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryAdministrativeUnit?view=graph-powershell-beta)
+

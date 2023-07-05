@@ -1,7 +1,7 @@
 ---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/remove-mggroupplannerplandetail
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/remove-mggroupplannerplandetail
 schema: 2.0.0
 ---
 
@@ -10,15 +10,18 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property details for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupPlannerPlanDetail](/powershell/module/Microsoft.Graph.Beta.Planner/Remove-MgBetaGroupPlannerPlanDetail?view=graph-powershell-beta)
+
 ## SYNTAX
 
-### Delete1 (Default)
+### Delete (Default)
 ```
 Remove-MgGroupPlannerPlanDetail -GroupId <String> -PlannerPlanId <String> [-IfMatch <String>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity1
+### DeleteViaIdentity
 ```
 Remove-MgGroupPlannerPlanDetail -InputObject <IPlannerIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -29,27 +32,19 @@ Delete navigation property details for groups
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Planner
-
-$params = @{
-	SharedWith = @{
-		"6463a5ce-2119-4198-9f2a-628761df4a62" = $true
-		"D95e6152-f683-4d78-9ff5-67ad180fea4a" = $false
-	}
-	CategoryDescriptions = @{
-		Category1 = "Indoors"
-		Category3 = $null
-	}
-}
-
-Update-MgPlannerPlanDetail -PlannerPlanId $plannerPlanId -BodyParameter $params
+{{ Add code here }}
 ```
 
-This example shows how to use the Remove-MgGroupPlannerPlanDetail Cmdlet.
+{{ Add output here }}
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -58,7 +53,7 @@ The unique identifier of group
 
 ```yaml
 Type: String
-Parameter Sets: Delete1
+Parameter Sets: Delete
 Aliases:
 
 Required: True
@@ -85,11 +80,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IPlannerIdentity
-Parameter Sets: DeleteViaIdentity1
+Parameter Sets: DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -119,7 +114,7 @@ The unique identifier of plannerPlan
 
 ```yaml
 Type: String
-Parameter Sets: Delete1
+Parameter Sets: Delete
 Aliases:
 
 Required: True
@@ -178,14 +173,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
+`INPUTOBJECT <IPlannerIdentity>`: Identity Parameter
   - `[GroupId <String>]`: The unique identifier of group
   - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket
-  - `[PlannerDeltaId <String>]`: The unique identifier of plannerDelta
   - `[PlannerPlanId <String>]`: The unique identifier of plannerPlan
-  - `[PlannerRosterId <String>]`: The unique identifier of plannerRoster
-  - `[PlannerRosterMemberId <String>]`: The unique identifier of plannerRosterMember
   - `[PlannerTaskId <String>]`: The unique identifier of plannerTask
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaGroupPlannerPlanDetail](/powershell/module/Microsoft.Graph.Beta.Planner/Remove-MgBetaGroupPlannerPlanDetail?view=graph-powershell-beta)

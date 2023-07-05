@@ -1,7 +1,7 @@
 ---
 Module Name: Microsoft.Graph.People
-Module Guid: 53ae365b-f76e-4408-819b-dfcfb8e772c3
-Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.people
+Module Guid: 554758a2-54d2-4972-9ac0-342a613112b2
+Download Help Link: https://learn.microsoft.com/powershell/module/Microsoft.Graph.People
 Help Version: 1.0.0.0
 Locale: en-US
 ---
@@ -14,10 +14,14 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgUserLastSharedMethodInsight](Get-MgUserLastSharedMethodInsight.md)
 Get lastSharedMethod from users
 
-### [Get-MgUserPerson](Get-MgUserPerson.md)
-People that are relevant to the user.
-Read-only.
-Nullable.
+### [Get-MgUserLastSharedMethodInsight](Get-MgUserLastSharedMethodInsight.md)
+Get lastSharedMethod from users
+
+### [Get-MgUserPersonCount](Get-MgUserPersonCount.md)
+Get the number of the resource
+
+### [Get-MgUserSharedCountInsight](Get-MgUserSharedCountInsight.md)
+Get the number of the resource
 
 ### [Get-MgUserSharedInsight](Get-MgUserSharedInsight.md)
 Calculated relationship identifying documents shared with or by the user.
@@ -30,6 +34,9 @@ Used for navigating to the item that was shared.
 For file attachments, the type is fileAttachment.
 For linked attachments, the type is driveItem.
 
+### [Get-MgUserTrendingCountInsight](Get-MgUserTrendingCountInsight.md)
+Get the number of the resource
+
 ### [Get-MgUserTrendingInsight](Get-MgUserTrendingInsight.md)
 Calculated relationship identifying documents trending around a user.
 Trending documents are calculated based on activity of the user's closest network of people and include files stored in OneDrive for Business and SharePoint.
@@ -38,8 +45,11 @@ Trending insights help the user to discover potentially useful content that the 
 ### [Get-MgUserTrendingResourceInsight](Get-MgUserTrendingResourceInsight.md)
 Used for navigating to the trending document.
 
-### [Get-MgUserUsedInsight](Get-MgUserUsedInsight.md)
-Calculated relationship identifying the latest documents viewed or modified by a user, including OneDrive for Business and SharePoint documents, ranked by recency of use.
+### [Get-MgUserUsedCountInsight](Get-MgUserUsedCountInsight.md)
+Get the number of the resource
+
+### [Get-MgUserUsedCountInsight](Get-MgUserUsedCountInsight.md)
+Get the number of the resource
 
 ### [Get-MgUserUsedResourceInsight](Get-MgUserUsedResourceInsight.md)
 Used for navigating to the item that was used.

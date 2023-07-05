@@ -1,109 +1,52 @@
 ---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/get-mguserdrive
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharesite
 schema: 2.0.0
 ---
 
-# Get-MgUserDrive
+# Get-MgShareSite
 
 ## SYNOPSIS
-A collection of drives available for this user.
-Read-only.
+Used to access the underlying site
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDrive](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDrive?view=graph-powershell-beta)
 
 ## SYNTAX
 
-### List (Default)
+### Get (Default)
 ```
-Get-MgUserDrive -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [<CommonParameters>]
-```
-
-### Get1
-```
-Get-MgUserDrive -DriveId <String> -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgShareSite -SharedDriveItemId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### GetViaIdentity
 ```
-Get-MgUserDrive -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgShareSite -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-A collection of drives available for this user.
-Read-only.
+Used to access the underlying site
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgUserDrive Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Files
-# A UPN can also be used as -UserId.
-Get-MgUserDrive -UserId $userId
+{{ Add code here }}
 ```
 
-This example shows how to use the Get-MgUserDrive Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+{{ Add output here }}
 
-### Example 2: Using the Get-MgUserDrive Cmdlet
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Files
-Get-MgUserDrive -UserId $userId
+{{ Add code here }}
 ```
 
-This example shows how to use the Get-MgUserDrive Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+{{ Add output here }}
 
 ## PARAMETERS
-
-### -All
-List all pages.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: List
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -CountVariable
-Specifies a count of the total number of items in a collection.
-By default, this variable will be set in the global scope.
-
-```yaml
-Type: String
-Parameter Sets: List
-Aliases: CV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DriveId
-The unique identifier of drive
-
-```yaml
-Type: String
-Parameter Sets: Get1
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -ExpandProperty
 Expand related entities
@@ -120,49 +63,19 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Filter
-Filter items by property values
-
-```yaml
-Type: String
-Parameter Sets: List
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IFilesIdentity
-Parameter Sets: GetViaIdentity1
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -PageSize
-Sets the page size of results.
-
-```yaml
-Type: Int32
-Parameter Sets: List
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -181,75 +94,15 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Search
-Search items by search phrases
+### -SharedDriveItemId
+The unique identifier of sharedDriveItem
 
 ```yaml
 Type: String
-Parameter Sets: List
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Sort
-Order items by property values
-
-```yaml
-Type: String[]
-Parameter Sets: List
-Aliases: OrderBy
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Top
-Show only the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List
-Aliases: Limit
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -UserId
-The unique identifier of user
-
-```yaml
-Type: String
-Parameter Sets: List, Get1
+Parameter Sets: Get
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -264,7 +117,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDrive
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSite
 ## NOTES
 
 ALIASES
@@ -274,7 +127,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+`INPUTOBJECT <IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType
@@ -301,3 +154,4 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaUserDrive](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDrive?view=graph-powershell-beta)

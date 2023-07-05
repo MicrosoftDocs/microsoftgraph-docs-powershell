@@ -1,7 +1,7 @@
 ---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementtermandcondition
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementtermandcondition
 schema: 2.0.0
 ---
 
@@ -10,44 +10,61 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property termsAndConditions in deviceManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementTermAndCondition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementTermAndCondition?view=graph-powershell-beta)
+
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### UpdateExpanded (Default)
 ```
 Update-MgDeviceManagementTermAndCondition -TermsAndConditionsId <String> [-AcceptanceStatement <String>]
- [-AcceptanceStatuses <IMicrosoftGraphTermsAndConditionsAcceptanceStatus1[]>]
+ [-AcceptanceStatuses <IMicrosoftGraphTermsAndConditionsAcceptanceStatus[]>]
  [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphTermsAndConditionsAssignment[]>]
  [-BodyText <String>] [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
- [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Title <String>] [-Version <Int32>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Title <String>] [-Version <Int32>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
-### Update1
+### Update
 ```
 Update-MgDeviceManagementTermAndCondition -TermsAndConditionsId <String>
- -BodyParameter <IMicrosoftGraphTermsAndConditions1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphTermsAndConditions> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded1
+### UpdateViaIdentityExpanded
 ```
 Update-MgDeviceManagementTermAndCondition -InputObject <IDeviceManagementAdministrationIdentity>
- [-AcceptanceStatement <String>] [-AcceptanceStatuses <IMicrosoftGraphTermsAndConditionsAcceptanceStatus1[]>]
+ [-AcceptanceStatement <String>] [-AcceptanceStatuses <IMicrosoftGraphTermsAndConditionsAcceptanceStatus[]>]
  [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphTermsAndConditionsAssignment[]>]
  [-BodyText <String>] [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
- [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Title <String>] [-Version <Int32>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Title <String>] [-Version <Int32>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
-### UpdateViaIdentity1
+### UpdateViaIdentity
 ```
 Update-MgDeviceManagementTermAndCondition -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphTermsAndConditions1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphTermsAndConditions> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property termsAndConditions in deviceManagement
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -57,7 +74,7 @@ This is shown to the user on prompts to accept the T&C policy.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -69,11 +86,11 @@ Accept wildcard characters: False
 
 ### -AcceptanceStatuses
 The list of acceptance statuses for this T&C policy.
-To construct, please use Get-Help -Online and see NOTES section for ACCEPTANCESTATUSES properties and create a hash table.
+To construct, see NOTES section for ACCEPTANCESTATUSES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTermsAndConditionsAcceptanceStatus1[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: IMicrosoftGraphTermsAndConditionsAcceptanceStatus[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -88,7 +105,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -100,11 +117,11 @@ Accept wildcard characters: False
 
 ### -Assignments
 The list of assignments for this T&C policy.
-To construct, please use Get-Help -Online and see NOTES section for ASSIGNMENTS properties and create a hash table.
+To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphTermsAndConditionsAssignment[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -118,11 +135,11 @@ Accept wildcard characters: False
 A termsAndConditions entity represents the metadata and contents of a given Terms and Conditions (T&C) policy.
 T&C policies' contents are presented to users upon their first attempt to enroll into Intune and subsequently upon edits where an administrator has required re-acceptance.
 They enable administrators to communicate the provisions to which a user must agree in order to have devices enrolled into Intune.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTermsAndConditions1
-Parameter Sets: Update1, UpdateViaIdentity1
+Type: IMicrosoftGraphTermsAndConditions
+Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -138,7 +155,7 @@ This is shown to the user on prompts to accept the T&C policy.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -153,7 +170,7 @@ DateTime the object was created.
 
 ```yaml
 Type: DateTime
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -168,7 +185,7 @@ Administrator-supplied description of the T&C policy.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -183,7 +200,7 @@ Administrator-supplied name for the T&C policy.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -199,7 +216,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -211,11 +228,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementAdministrationIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -230,22 +247,7 @@ DateTime the object was last modified.
 
 ```yaml
 Type: DateTime
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -260,7 +262,7 @@ The unique identifier of termsAndConditions
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -276,7 +278,7 @@ This is shown to the user on prompts to accept the T&C policy.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -292,7 +294,7 @@ Incremented when an administrator makes a change to the terms and wishes to requ
 
 ```yaml
 Type: Int32
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -339,10 +341,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermsAndConditions1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermsAndConditions
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermsAndConditions
 ## NOTES
 
 ALIASES
@@ -352,15 +354,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ACCEPTANCESTATUSES <IMicrosoftGraphTermsAndConditionsAcceptanceStatus1\[]>: The list of acceptance statuses for this T&C policy.
+`ACCEPTANCESTATUSES <IMicrosoftGraphTermsAndConditionsAcceptanceStatus[]>`: The list of acceptance statuses for this T&C policy.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AcceptedDateTime <DateTime?>]`: DateTime when the terms were last accepted by the user.
   - `[AcceptedVersion <Int32?>]`: Most recent version number of the T&C accepted by the user.
-  - `[TermsAndConditions <IMicrosoftGraphTermsAndConditions1>]`: A termsAndConditions entity represents the metadata and contents of a given Terms and Conditions (T&C) policy. T&C policies' contents are presented to users upon their first attempt to enroll into Intune and subsequently upon edits where an administrator has required re-acceptance. They enable administrators to communicate the provisions to which a user must agree in order to have devices enrolled into Intune.
+  - `[TermsAndConditions <IMicrosoftGraphTermsAndConditions>]`: A termsAndConditions entity represents the metadata and contents of a given Terms and Conditions (T&C) policy. T&C policies' contents are presented to users upon their first attempt to enroll into Intune and subsequently upon edits where an administrator has required re-acceptance. They enable administrators to communicate the provisions to which a user must agree in order to have devices enrolled into Intune.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[AcceptanceStatement <String>]`: Administrator-supplied explanation of the terms and conditions, typically describing what it means to accept the terms and conditions set out in the T&C policy. This is shown to the user on prompts to accept the T&C policy.
-    - `[AcceptanceStatuses <IMicrosoftGraphTermsAndConditionsAcceptanceStatus1[]>]`: The list of acceptance statuses for this T&C policy.
+    - `[AcceptanceStatuses <IMicrosoftGraphTermsAndConditionsAcceptanceStatus[]>]`: The list of acceptance statuses for this T&C policy.
     - `[Assignments <IMicrosoftGraphTermsAndConditionsAssignment[]>]`: The list of assignments for this T&C policy.
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
       - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
@@ -375,20 +377,20 @@ ACCEPTANCESTATUSES <IMicrosoftGraphTermsAndConditionsAcceptanceStatus1\[]>: The 
   - `[UserDisplayName <String>]`: Display name of the user whose acceptance the entity represents.
   - `[UserPrincipalName <String>]`: The userPrincipalName of the User that accepted the term.
 
-ASSIGNMENTS <IMicrosoftGraphTermsAndConditionsAssignment\[]>: The list of assignments for this T&C policy.
+`ASSIGNMENTS <IMicrosoftGraphTermsAndConditionsAssignment[]>`: The list of assignments for this T&C policy.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
-BODYPARAMETER `<IMicrosoftGraphTermsAndConditions1>`: A termsAndConditions entity represents the metadata and contents of a given Terms and Conditions (T&C) policy. T&C policies' contents are presented to users upon their first attempt to enroll into Intune and subsequently upon edits where an administrator has required re-acceptance. They enable administrators to communicate the provisions to which a user must agree in order to have devices enrolled into Intune.
+`BODYPARAMETER <IMicrosoftGraphTermsAndConditions>`: A termsAndConditions entity represents the metadata and contents of a given Terms and Conditions (T&C) policy. T&C policies' contents are presented to users upon their first attempt to enroll into Intune and subsequently upon edits where an administrator has required re-acceptance. They enable administrators to communicate the provisions to which a user must agree in order to have devices enrolled into Intune.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AcceptanceStatement <String>]`: Administrator-supplied explanation of the terms and conditions, typically describing what it means to accept the terms and conditions set out in the T&C policy. This is shown to the user on prompts to accept the T&C policy.
-  - `[AcceptanceStatuses <IMicrosoftGraphTermsAndConditionsAcceptanceStatus1[]>]`: The list of acceptance statuses for this T&C policy.
+  - `[AcceptanceStatuses <IMicrosoftGraphTermsAndConditionsAcceptanceStatus[]>]`: The list of acceptance statuses for this T&C policy.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[AcceptedDateTime <DateTime?>]`: DateTime when the terms were last accepted by the user.
     - `[AcceptedVersion <Int32?>]`: Most recent version number of the T&C accepted by the user.
-    - `[TermsAndConditions <IMicrosoftGraphTermsAndConditions1>]`: A termsAndConditions entity represents the metadata and contents of a given Terms and Conditions (T&C) policy. T&C policies' contents are presented to users upon their first attempt to enroll into Intune and subsequently upon edits where an administrator has required re-acceptance. They enable administrators to communicate the provisions to which a user must agree in order to have devices enrolled into Intune.
+    - `[TermsAndConditions <IMicrosoftGraphTermsAndConditions>]`: A termsAndConditions entity represents the metadata and contents of a given Terms and Conditions (T&C) policy. T&C policies' contents are presented to users upon their first attempt to enroll into Intune and subsequently upon edits where an administrator has required re-acceptance. They enable administrators to communicate the provisions to which a user must agree in order to have devices enrolled into Intune.
     - `[UserDisplayName <String>]`: Display name of the user whose acceptance the entity represents.
     - `[UserPrincipalName <String>]`: The userPrincipalName of the User that accepted the term.
   - `[Assignments <IMicrosoftGraphTermsAndConditionsAssignment[]>]`: The list of assignments for this T&C policy.
@@ -403,63 +405,22 @@ BODYPARAMETER `<IMicrosoftGraphTermsAndConditions1>`: A termsAndConditions entit
   - `[Title <String>]`: Administrator-supplied title of the terms and conditions. This is shown to the user on prompts to accept the T&C policy.
   - `[Version <Int32?>]`: Integer indicating the current version of the terms. Incremented when an administrator makes a change to the terms and wishes to require users to re-accept the modified T&C policy.
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[AuditEventId <String>]`: The unique identifier of auditEvent
-  - `[CartToClassAssociationId <String>]`: The unique identifier of cartToClassAssociation
-  - `[CloudPcAuditEventId <String>]`: The unique identifier of cloudPcAuditEvent
-  - `[CloudPcDeviceImageId <String>]`: The unique identifier of cloudPcDeviceImage
-  - `[CloudPcExportJobId <String>]`: The unique identifier of cloudPcExportJob
-  - `[CloudPcExternalPartnerSettingId <String>]`: The unique identifier of cloudPcExternalPartnerSetting
-  - `[CloudPcGalleryImageId <String>]`: The unique identifier of cloudPcGalleryImage
-  - `[CloudPcId <String>]`: The unique identifier of cloudPC
-  - `[CloudPcOnPremisesConnectionId <String>]`: The unique identifier of cloudPcOnPremisesConnection
-  - `[CloudPcProvisioningPolicyAssignmentId <String>]`: The unique identifier of cloudPcProvisioningPolicyAssignment
-  - `[CloudPcProvisioningPolicyId <String>]`: The unique identifier of cloudPcProvisioningPolicy
-  - `[CloudPcServicePlanId <String>]`: The unique identifier of cloudPcServicePlan
-  - `[CloudPcSharedUseServicePlanId <String>]`: The unique identifier of cloudPcSharedUseServicePlan
-  - `[CloudPcSnapshotId <String>]`: The unique identifier of cloudPcSnapshot
-  - `[CloudPcSupportedRegionId <String>]`: The unique identifier of cloudPcSupportedRegion
-  - `[CloudPcUserSettingAssignmentId <String>]`: The unique identifier of cloudPcUserSettingAssignment
-  - `[CloudPcUserSettingId <String>]`: The unique identifier of cloudPcUserSetting
-  - `[ComanagementEligibleDeviceId <String>]`: The unique identifier of comanagementEligibleDevice
   - `[ComplianceManagementPartnerId <String>]`: The unique identifier of complianceManagementPartner
   - `[DeviceAndAppManagementRoleAssignmentId <String>]`: The unique identifier of deviceAndAppManagementRoleAssignment
-  - `[DeviceManagementDomainJoinConnectorId <String>]`: The unique identifier of deviceManagementDomainJoinConnector
   - `[DeviceManagementExchangeConnectorId <String>]`: The unique identifier of deviceManagementExchangeConnector
-  - `[DeviceManagementExchangeOnPremisesPolicyId <String>]`: The unique identifier of deviceManagementExchangeOnPremisesPolicy
   - `[DeviceManagementPartnerId <String>]`: The unique identifier of deviceManagementPartner
-  - `[GroupPolicyCategoryId <String>]`: The unique identifier of groupPolicyCategory
-  - `[GroupPolicyCategoryId1 <String>]`: The unique identifier of groupPolicyCategory
-  - `[GroupPolicyDefinitionFileId <String>]`: The unique identifier of groupPolicyDefinitionFile
-  - `[GroupPolicyDefinitionId <String>]`: The unique identifier of groupPolicyDefinition
-  - `[GroupPolicyMigrationReportId <String>]`: The unique identifier of groupPolicyMigrationReport
-  - `[GroupPolicyObjectFileId <String>]`: The unique identifier of groupPolicyObjectFile
-  - `[GroupPolicyOperationId <String>]`: The unique identifier of groupPolicyOperation
-  - `[GroupPolicyPresentationId <String>]`: The unique identifier of groupPolicyPresentation
-  - `[GroupPolicySettingMappingId <String>]`: The unique identifier of groupPolicySettingMapping
-  - `[GroupPolicyUploadedDefinitionFileId <String>]`: The unique identifier of groupPolicyUploadedDefinitionFile
-  - `[IntuneBrandingProfileAssignmentId <String>]`: The unique identifier of intuneBrandingProfileAssignment
-  - `[IntuneBrandingProfileId <String>]`: The unique identifier of intuneBrandingProfile
   - `[IosUpdateDeviceStatusId <String>]`: The unique identifier of iosUpdateDeviceStatus
-  - `[ManagedAllDeviceCertificateStateId <String>]`: The unique identifier of managedAllDeviceCertificateState
   - `[MobileThreatDefenseConnectorId <String>]`: The unique identifier of mobileThreatDefenseConnector
-  - `[NdesConnectorId <String>]`: The unique identifier of ndesConnector
   - `[RemoteAssistancePartnerId <String>]`: The unique identifier of remoteAssistancePartner
   - `[ResourceOperationId <String>]`: The unique identifier of resourceOperation
-  - `[RestrictedAppsViolationId <String>]`: The unique identifier of restrictedAppsViolation
   - `[RoleAssignmentId <String>]`: The unique identifier of roleAssignment
   - `[RoleDefinitionId <String>]`: The unique identifier of roleDefinition
-  - `[RoleScopeTagAutoAssignmentId <String>]`: The unique identifier of roleScopeTagAutoAssignment
-  - `[RoleScopeTagId <String>]`: The unique identifier of roleScopeTag
   - `[TelecomExpenseManagementPartnerId <String>]`: The unique identifier of telecomExpenseManagementPartner
   - `[TermsAndConditionsAcceptanceStatusId <String>]`: The unique identifier of termsAndConditionsAcceptanceStatus
   - `[TermsAndConditionsAssignmentId <String>]`: The unique identifier of termsAndConditionsAssignment
-  - `[TermsAndConditionsGroupAssignmentId <String>]`: The unique identifier of termsAndConditionsGroupAssignment
   - `[TermsAndConditionsId <String>]`: The unique identifier of termsAndConditions
-  - `[UnsupportedGroupPolicyExtensionId <String>]`: The unique identifier of unsupportedGroupPolicyExtension
-  - `[UserId <String>]`: The unique identifier of user
-  - `[UserPfxCertificateId <String>]`: The unique identifier of userPFXCertificate
 
 ## RELATED LINKS
-
-## RELATED LINKS
+[Update-MgBetaDeviceManagementTermAndCondition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementTermAndCondition?view=graph-powershell-beta)

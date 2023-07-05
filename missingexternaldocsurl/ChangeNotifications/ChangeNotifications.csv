@@ -1,0 +1,3 @@
+Graph profile, Command, UriPath
+v1.0, Invoke-MgReauthorizeSubscription, /subscriptions/{subscription-id}/reauthorize
+beta, Invoke-MgBetaReauthorizeSubscription, /subscriptions/{subscription-id}/reauthorize

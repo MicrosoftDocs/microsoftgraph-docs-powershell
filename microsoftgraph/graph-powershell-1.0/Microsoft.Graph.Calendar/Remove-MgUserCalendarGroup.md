@@ -1,44 +1,44 @@
 ---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/remove-mgusercalendargroup
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgusercalendargroup
 schema: 2.0.0
 ---
 
 # Remove-MgUserCalendarGroup
 
 ## SYNOPSIS
-Delete navigation property calendarGroups for users
+Delete a calendar group other than the default calendar group.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserCalendarGroup](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaUserCalendarGroup?view=graph-powershell-beta)
 
 ## SYNTAX
 
-### Delete1 (Default)
+### Delete (Default)
 ```
 Remove-MgUserCalendarGroup -CalendarGroupId <String> -UserId <String> [-IfMatch <String>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity1
+### DeleteViaIdentity
 ```
 Remove-MgUserCalendarGroup -InputObject <ICalendarIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete navigation property calendarGroups for users
+Delete a calendar group other than the default calendar group.
 
 ## EXAMPLES
 
-### Example 1: Using the Remove-MgUserCalendarGroup Cmdlet
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Calendar
+
 # A UPN can also be used as -UserId.
 Remove-MgUserCalendarGroup -UserId $userId -CalendarGroupId $calendarGroupId
 ```
-
-This example shows how to use the Remove-MgUserCalendarGroup Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ## PARAMETERS
 
 ### -CalendarGroupId
@@ -46,7 +46,7 @@ The unique identifier of calendarGroup
 
 ```yaml
 Type: String
-Parameter Sets: Delete1
+Parameter Sets: Delete
 Aliases:
 
 Required: True
@@ -73,11 +73,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ICalendarIdentity
-Parameter Sets: DeleteViaIdentity1
+Parameter Sets: DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -97,7 +97,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -107,7 +107,7 @@ The unique identifier of user
 
 ```yaml
 Type: String
-Parameter Sets: Delete1
+Parameter Sets: Delete
 Aliases:
 
 Required: True
@@ -158,27 +158,25 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.Boolean
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
-  - `[AttachmentId <String>]`: The unique identifier of attachment
-  - `[CalendarGroupId <String>]`: The unique identifier of calendarGroup
-  - `[CalendarId <String>]`: The unique identifier of calendar
-  - `[CalendarPermissionId <String>]`: The unique identifier of calendarPermission
-  - `[EventId <String>]`: The unique identifier of event
-  - `[EventId1 <String>]`: The unique identifier of event
-  - `[EventId2 <String>]`: The unique identifier of event
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
-  - `[PlaceId <String>]`: The unique identifier of place
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
+  \[AttachmentId \<String\>\]: The unique identifier of attachment
+  \[CalendarGroupId \<String\>\]: The unique identifier of calendarGroup
+  \[CalendarId \<String\>\]: The unique identifier of calendar
+  \[CalendarPermissionId \<String\>\]: The unique identifier of calendarPermission
+  \[EventId \<String\>\]: The unique identifier of event
+  \[EventId1 \<String\>\]: The unique identifier of event
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[PlaceId \<String\>\]: The unique identifier of place
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaUserCalendarGroup](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaUserCalendarGroup?view=graph-powershell-beta)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgusercalendargroup](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgusercalendargroup)
+

@@ -1,7 +1,7 @@
 ---
 Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
-Module Guid: 87e13c02-95ae-4b6a-ae21-0f9fc6a22dc7
-Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.serviceannouncement
+Module Guid: 944f9996-0a13-48c3-ba68-4d1e2b0e3661
+Download Help Link: https://learn.microsoft.com/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement
 Help Version: 1.0.0.0
 Locale: en-US
 ---
@@ -12,22 +12,33 @@ Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.Devices.ServiceAnnouncement Cmdlets
 ### [Get-MgServiceAnnouncementHealthOverview](Get-MgServiceAnnouncementHealthOverview.md)
-A collection of service health information for tenant.
-This property is a contained navigation property, it is nullable and readonly.
+Retrieve the properties and relationships of a serviceHealth object.
+This operation provides the health information of a specified service for a tenant.
+
+### [Get-MgServiceAnnouncementHealthOverviewCount](Get-MgServiceAnnouncementHealthOverviewCount.md)
+Get the number of the resource
 
 ### [Get-MgServiceAnnouncementHealthOverviewIssue](Get-MgServiceAnnouncementHealthOverviewIssue.md)
 A collection of issues that happened on the service, with detailed information for each issue.
 
+### [Get-MgServiceAnnouncementHealthOverviewIssueCount](Get-MgServiceAnnouncementHealthOverviewIssueCount.md)
+Get the number of the resource
+
 ### [Get-MgServiceAnnouncementIssue](Get-MgServiceAnnouncementIssue.md)
-A collection of service issues for tenant.
-This property is a contained navigation property, it is nullable and readonly.
+Retrieve the properties and relationships of a serviceHealthIssue object.
+This operation retrieves a specified service health issue for tenant.
+The operation returns an error if the issue does not exist for the tenant.
+
+### [Get-MgServiceAnnouncementIssueCount](Get-MgServiceAnnouncementIssueCount.md)
+Get the number of the resource
 
 ### [Get-MgServiceAnnouncementMessage](Get-MgServiceAnnouncementMessage.md)
-A collection of service messages for tenant.
-This property is a contained navigation property, it is nullable and readonly.
+Retrieve the properties and relationships of a serviceUpdateMessage object.
+This operation retrieves a specified service update message for the tenant.
+The operation returns an error if the message does not exist for the tenant.
 
 ### [Get-MgServiceAnnouncementMessageAttachment](Get-MgServiceAnnouncementMessageAttachment.md)
-A collection of serviceAnnouncementAttachments.
+Read the properties and relationships of a serviceAnnouncementAttachment object.
 
 ### [Get-MgServiceAnnouncementMessageAttachmentArchive](Get-MgServiceAnnouncementMessageAttachmentArchive.md)
 The zip file that contains all attachments for a message.
@@ -35,17 +46,23 @@ The zip file that contains all attachments for a message.
 ### [Get-MgServiceAnnouncementMessageAttachmentContent](Get-MgServiceAnnouncementMessageAttachmentContent.md)
 The attachment content.
 
+### [Get-MgServiceAnnouncementMessageAttachmentCount](Get-MgServiceAnnouncementMessageAttachmentCount.md)
+Get the number of the resource
+
+### [Get-MgServiceAnnouncementMessageCount](Get-MgServiceAnnouncementMessageCount.md)
+Get the number of the resource
+
 ### [Invoke-MgArchiveServiceAnnouncementMessage](Invoke-MgArchiveServiceAnnouncementMessage.md)
-Invoke action archive
+Archive a list of serviceUpdateMessages for the signed in user.
 
 ### [Invoke-MgFavoriteServiceAnnouncementMessage](Invoke-MgFavoriteServiceAnnouncementMessage.md)
-Invoke action favorite
+Change the status of a list of serviceUpdateMessages to favorite for the signed in user.
 
 ### [Invoke-MgMarkServiceAnnouncementMessageRead](Invoke-MgMarkServiceAnnouncementMessageRead.md)
-Invoke action markRead
+Mark a list of serviceUpdateMessages as **read** for the signed in user.
 
 ### [Invoke-MgMarkServiceAnnouncementMessageUnread](Invoke-MgMarkServiceAnnouncementMessageUnread.md)
-Invoke action markUnread
+Mark a list of serviceUpdateMessages as **unread** for the signed in user.
 
 ### [Invoke-MgReportServiceAnnouncementHealthOverviewIssueIncident](Invoke-MgReportServiceAnnouncementHealthOverviewIssueIncident.md)
 Invoke function incidentReport
@@ -54,10 +71,10 @@ Invoke function incidentReport
 Invoke function incidentReport
 
 ### [Invoke-MgUnarchiveServiceAnnouncementMessage](Invoke-MgUnarchiveServiceAnnouncementMessage.md)
-Invoke action unarchive
+Unarchive a list of serviceUpdateMessages for the signed in user.
 
 ### [Invoke-MgUnfavoriteServiceAnnouncementMessage](Invoke-MgUnfavoriteServiceAnnouncementMessage.md)
-Invoke action unfavorite
+Remove the favorite status of serviceUpdateMessages for the signed in user.
 
 ### [New-MgServiceAnnouncementHealthOverview](New-MgServiceAnnouncementHealthOverview.md)
 Create new navigation property to healthOverviews for admin

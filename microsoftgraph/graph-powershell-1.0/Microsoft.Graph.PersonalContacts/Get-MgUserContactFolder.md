@@ -1,84 +1,50 @@
 ---
 external help file: Microsoft.Graph.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.PersonalContacts
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.personalcontacts/get-mgusercontactfolder
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontactextensioncount
 schema: 2.0.0
 ---
 
-# Get-MgUserContactFolder
+# Get-MgUserContactExtensionCount
 
 ## SYNOPSIS
-The user's contacts folders.
-Read-only.
-Nullable.
+Get the number of the resource
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserContactFolder](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Get-MgBetaUserContactFolder?view=graph-powershell-beta)
 
 ## SYNTAX
 
-### List1 (Default)
+### Get (Default)
 ```
-Get-MgUserContactFolder -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
- [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
- [<CommonParameters>]
-```
-
-### Get
-```
-Get-MgUserContactFolder -ContactFolderId <String> -UserId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+Get-MgUserContactExtensionCount -ContactId <String> -UserId <String> [-Filter <String>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgUserContactFolder -InputObject <IPersonalContactsIdentity> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+Get-MgUserContactExtensionCount -InputObject <IPersonalContactsIdentity> [-Filter <String>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The user's contacts folders.
-Read-only.
-Nullable.
+Get the number of the resource
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgUserContactFolder Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.PersonalContacts
-# A UPN can also be used as -UserId.
-Get-MgUserContactFolder -UserId $userId -ContactFolderId $contactFolderId
+{{ Add code here }}
 ```
 
-This example shows how to use the Get-MgUserContactFolder Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Get-MgUserContactFolder Cmdlet
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.PersonalContacts
-# A UPN can also be used as -UserId.
-Get-MgUserContactFolder -UserId $userId
+{{ Add code here }}
 ```
-
-This example shows how to use the Get-MgUserContactFolder Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
-### -All
-List all pages.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: List1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ContactFolderId
-The unique identifier of contactFolder
+### -ContactId
+The unique identifier of contact
 
 ```yaml
 Type: String
@@ -92,43 +58,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -CountVariable
-Specifies a count of the total number of items in a collection.
-By default, this variable will be set in the global scope.
-
-```yaml
-Type: String
-Parameter Sets: List1
-Aliases: CV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ExpandProperty
-Expand related entities
-
-```yaml
-Type: String[]
-Parameter Sets: (All)
-Aliases: Expand
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Filter
 Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -140,7 +75,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IPersonalContactsIdentity
@@ -154,90 +89,15 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -PageSize
-Sets the page size of results.
-
-```yaml
-Type: Int32
-Parameter Sets: List1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Property
-Select properties to be returned
-
-```yaml
-Type: String[]
-Parameter Sets: (All)
-Aliases: Select
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Sort
-Order items by property values
-
-```yaml
-Type: String[]
-Parameter Sets: List1
-Aliases: OrderBy
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Top
-Show only the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List1
-Aliases: Limit
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -UserId
 The unique identifier of user
 
 ```yaml
 Type: String
-Parameter Sets: List1, Get
+Parameter Sets: Get
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List1
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -252,7 +112,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IPersonalContactsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContactFolder
+### System.Int32
 ## NOTES
 
 ALIASES
@@ -262,13 +122,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
+`INPUTOBJECT <IPersonalContactsIdentity>`: Identity Parameter
   - `[ContactFolderId <String>]`: The unique identifier of contactFolder
   - `[ContactFolderId1 <String>]`: The unique identifier of contactFolder
   - `[ContactId <String>]`: The unique identifier of contact
   - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaUserContactFolder](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Get-MgBetaUserContactFolder?view=graph-powershell-beta)

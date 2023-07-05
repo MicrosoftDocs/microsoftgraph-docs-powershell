@@ -1,52 +1,59 @@
 ---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.mail/remove-mgusermessageextension
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermessageattachment
 schema: 2.0.0
 ---
 
-# Remove-MgUserMessageExtension
+# Remove-MgUserMessageAttachment
 
 ## SYNOPSIS
-Delete navigation property extensions for users
+Delete navigation property attachments for users
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserMessageExtension](/powershell/module/Microsoft.Graph.Beta.Mail/Remove-MgBetaUserMessageExtension?view=graph-powershell-beta)
 
 ## SYNTAX
 
-### Delete1 (Default)
+### Delete (Default)
 ```
-Remove-MgUserMessageExtension -ExtensionId <String> -MessageId <String> -UserId <String> [-IfMatch <String>]
+Remove-MgUserMessageAttachment -AttachmentId <String> -MessageId <String> -UserId <String> [-IfMatch <String>]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity1
+### DeleteViaIdentity
 ```
-Remove-MgUserMessageExtension -InputObject <IMailIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Remove-MgUserMessageAttachment -InputObject <IMailIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete navigation property extensions for users
+Delete navigation property attachments for users
 
 ## EXAMPLES
 
-### Example 1: Using the Remove-MgUserMessageExtension Cmdlet
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Mail
-# A UPN can also be used as -UserId.
-Remove-MgUserMessageExtension -UserId $userId -MessageId $messageId -ExtensionId $extensionId
+{{ Add code here }}
 ```
 
-This example shows how to use the Remove-MgUserMessageExtension Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
-### -ExtensionId
-The unique identifier of extension
+### -AttachmentId
+The unique identifier of attachment
 
 ```yaml
 Type: String
-Parameter Sets: Delete1
+Parameter Sets: Delete
 Aliases:
 
 Required: True
@@ -73,11 +80,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IMailIdentity
-Parameter Sets: DeleteViaIdentity1
+Parameter Sets: DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -92,7 +99,7 @@ The unique identifier of message
 
 ```yaml
 Type: String
-Parameter Sets: Delete1
+Parameter Sets: Delete
 Aliases:
 
 Required: True
@@ -122,7 +129,7 @@ The unique identifier of user
 
 ```yaml
 Type: String
-Parameter Sets: Delete1
+Parameter Sets: Delete
 Aliases:
 
 Required: True
@@ -181,18 +188,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+`INPUTOBJECT <IMailIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[InferenceClassificationOverrideId <String>]`: The unique identifier of inferenceClassificationOverride
   - `[MailFolderId <String>]`: The unique identifier of mailFolder
   - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
-  - `[MentionId <String>]`: The unique identifier of mention
   - `[MessageId <String>]`: The unique identifier of message
   - `[MessageRuleId <String>]`: The unique identifier of messageRule
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
-  - `[UserConfigurationId <String>]`: The unique identifier of userConfiguration
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaUserMessageExtension](/powershell/module/Microsoft.Graph.Beta.Mail/Remove-MgBetaUserMessageExtension?view=graph-powershell-beta)

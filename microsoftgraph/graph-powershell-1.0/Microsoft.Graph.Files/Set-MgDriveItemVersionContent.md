@@ -1,7 +1,7 @@
 ---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/set-mgdriveitemversioncontent
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/set-mgdriveitemversioncontent
 schema: 2.0.0
 ---
 
@@ -10,18 +10,21 @@ schema: 2.0.0
 ## SYNOPSIS
 The content stream for this version of the item.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaDriveItemVersionContent](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaDriveItemVersionContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
-### Set1 (Default)
+### Set (Default)
 ```
 Set-MgDriveItemVersionContent -DriveId <String> -DriveItemId <String> -DriveItemVersionId <String>
- [-BodyParameter <Stream>] -InFile <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Data <Stream>] -InFile <String> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### SetViaIdentity1
+### SetViaIdentity
 ```
-Set-MgDriveItemVersionContent -InputObject <IFilesIdentity> [-BodyParameter <Stream>] -InFile <String>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-MgDriveItemVersionContent -InputObject <IFilesIdentity> [-Data <Stream>] -InFile <String> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -29,9 +32,23 @@ The content stream for this version of the item.
 
 ## EXAMPLES
 
+### EXAMPLE 1
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
-### -BodyParameter
+### -Data
 .
 
 ```yaml
@@ -51,7 +68,7 @@ The unique identifier of drive
 
 ```yaml
 Type: String
-Parameter Sets: Set1
+Parameter Sets: Set
 Aliases:
 
 Required: True
@@ -66,7 +83,7 @@ The unique identifier of driveItem
 
 ```yaml
 Type: String
-Parameter Sets: Set1
+Parameter Sets: Set
 Aliases:
 
 Required: True
@@ -81,7 +98,7 @@ The unique identifier of driveItemVersion
 
 ```yaml
 Type: String
-Parameter Sets: Set1
+Parameter Sets: Set
 Aliases:
 
 Required: True
@@ -110,32 +127,17 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IFilesIdentity
-Parameter Sets: SetViaIdentity1
+Parameter Sets: SetViaIdentity
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -179,7 +181,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### System.IO.Stream
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDriveItemVersion
 ## NOTES
 
 ALIASES
@@ -189,7 +191,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+`INPUTOBJECT <IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType
@@ -216,3 +218,4 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Set-MgBetaDriveItemVersionContent](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaDriveItemVersionContent?view=graph-powershell-beta)
