@@ -49,13 +49,12 @@ Adds a strong password or secret to an application.
 ### EXAMPLE 1
 ```powershell
 Connect-MgGraph -Scopes 'Application.ReadWrite.All'
-```
 
 $appObjectId = 'eaf1e531-0d58-4874-babe-b9a9f436e6c3'
 
 $passwordCred = @{
-   displayName = 'Created in PowerShell'
-   endDateTime = (Get-Date).AddMonths(6)
+displayName = 'Created in PowerShell'
+endDateTime = (Get-Date).AddMonths(6)
 }
 
 $secret = Add-MgApplicationPassword -applicationId $appObjectId -PasswordCredential $passwordCred
@@ -69,12 +68,12 @@ KeyId                : c82bb763-741b-4575-9d9d-df7e766f6999
 SecretText           : Q_e8Q~ZDWJD.bkgajbREp-VFFUayCuEk8b1hDcr9
 StartDateTime        : 26/5/2022 1:03:31 pm
 AdditionalProperties : {[@odata.context,
-                       https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.passwordCredential]}
+https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.passwordCredential]}
 
+```
 ### EXAMPLE 2
 ```powershell
 Connect-MgGraph -Scopes 'Application.ReadWrite.All'
-```
 
 $appObjectId = 'eaf1e531-0d58-4874-babe-b9a9f436e6c3'
 
@@ -82,9 +81,9 @@ $startDate = (Get-Date).AddDays(1).Date
 $endDate = $startDate.AddMonths(6)
 
 $passwordCred = @{
-   displayName = 'Created in PowerShell'
-   startDateTime = $startDate
-   endDateTime = $endDate
+displayName = 'Created in PowerShell'
+startDateTime = $startDate
+endDateTime = $endDate
 }
 
 $secret = Add-MgApplicationPassword -applicationId $appObjectId -PasswordCredential $passwordCred
@@ -98,9 +97,11 @@ KeyId                : 082bf20f-63d6-4970-bb4e-55e504f50d8b
 SecretText           : TiA8Q~Zs7ej1cGtlW0qnmuFi~JlxXTZew_tU1bGA
 StartDateTime        : 26/5/2022 2:00:00 pm
 AdditionalProperties : {[@odata.context,
-                       https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.passwordCredential]}
+https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.passwordCredential]}
 
+```
 ## PARAMETERS
+
 
 ### -AdditionalProperties
 Additional Parameters
@@ -276,3 +277,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Add-MgBetaApplicationPassword](/powershell/module/Microsoft.Graph.Beta.Applications/Add-MgBetaApplicationPassword?view=graph-powershell-beta)
+

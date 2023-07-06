@@ -40,14 +40,15 @@ To learn more, see deletedItems.
 ### EXAMPLE 1
 ```powershell
 Remove-MgBetaUser -UserId '5c442efb-5e66-484a-936a-91b6810bed14'
-```
 
+```
 ### EXAMPLE 2
 ```powershell
 Remove-MgBetaUser -UserId '3f80a75e-750b-49aa-a6b0-d9bf6df7b4c6' -Confirm
-```
 
+```
 ## PARAMETERS
+
 
 ### -IfMatch
 ETag
@@ -181,3 +182,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgUser](/powershell/module/Microsoft.Graph.Users/Remove-MgUser?view=graph-powershell-v1.0)
+

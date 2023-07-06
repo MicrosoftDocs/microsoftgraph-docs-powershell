@@ -35,13 +35,14 @@ Get deletedItems from directory
 ### EXAMPLE 1
 ```powershell
 Get-MgBetaDirectoryDeletedItem -DirectoryObjectId 'd4142c52-179b-4d31-b5b9-08940873507b'
-```
 
 Id                                   DeletedDateTime
 --                                   ---------------
 d4142c52-179b-4d31-b5b9-08940873507b 8/30/2021 7:37:37 AM
 
+```
 ## PARAMETERS
+
 
 ### -DirectoryObjectId
 The unique identifier of directoryObject
@@ -162,3 +163,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDirectoryDeletedItem](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryDeletedItem?view=graph-powershell-v1.0)
+

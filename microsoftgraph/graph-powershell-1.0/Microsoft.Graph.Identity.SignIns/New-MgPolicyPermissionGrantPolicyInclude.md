@@ -55,9 +55,8 @@ You do this by adding a permissionGrantConditionSet to the **includes** collecti
 
 ### EXAMPLE 1
 ```powershell
-Connect-MgGraph -Scopes "Policy.Read.PermissionGrant,Policy.ReadWrite.PermissionGrant"  
+Connect-MgGraph -Scopes "Policy.Read.PermissionGrant,Policy.ReadWrite.PermissionGrant"
 New-MgPolicyPermissionGrantPolicyInclude -PermissionGrantPolicyId "testtenant-sampleapp-permissions" -PermissionType "application" -ResourceApplication "00000000-0000-0000-0000-000000000000" -Permissions "00000000-0000-0000-0000-000000000000"  | fl
-```
 
 ClientApplicationIds                        : {all}
 ClientApplicationPublisherIds               : {all}
@@ -70,7 +69,9 @@ Permissions                                 : {00000000-0000-0000-0000-000000000
 ResourceApplication                         : 00000000-0000-0000-0000-000000000000
 AdditionalProperties                        : {[@odata.context, https://graph.microsoft.com/v1.0/$metadata#policies/permissionGrantPolicies('testtenant-sampleapp-permissions')/includes/$entity]}
 
+```
 ## PARAMETERS
+
 
 ### -AdditionalProperties
 Additional Parameters
@@ -403,3 +404,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaPolicyPermissionGrantPolicyInclude](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyPermissionGrantPolicyInclude?view=graph-powershell-beta)
+

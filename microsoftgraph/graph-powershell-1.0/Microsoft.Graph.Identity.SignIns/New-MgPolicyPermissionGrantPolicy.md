@@ -40,9 +40,8 @@ After creating the permission grant policy, you can add include condition sets t
 
 ### EXAMPLE 1
 ```powershell
-Connect-MgGraph -Scopes "Policy.Read.PermissionGrant,Policy.ReadWrite.PermissionGrant"  
+Connect-MgGraph -Scopes "Policy.Read.PermissionGrant,Policy.ReadWrite.PermissionGrant"
 New-MgPolicyPermissionGrantPolicy -Id "testtenant-sampleapp-permissions" -Description "Permissions for sample app in test tenant" -DisplayName "Sample app permissions" | fl
-```
 
 DeletedDateTime      :
 Description          : Permissions for sample app in test tenant
@@ -52,7 +51,9 @@ Id                   : testtenant-sampleapp-permissions
 Includes             :
 AdditionalProperties : {[@odata.context, https://graph.microsoft.com/v1.0/$metadata#policies/permissionGrantPolicies/$entity]}
 
+```
 ## PARAMETERS
+
 
 ### -AdditionalProperties
 Additional Parameters
@@ -274,3 +275,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaPolicyPermissionGrantPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyPermissionGrantPolicy?view=graph-powershell-beta)
+

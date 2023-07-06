@@ -51,7 +51,6 @@ You can also enable and disable specific plans associated with a subscription.
 ### EXAMPLE 1
 ```powershell
 Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
-```
 
 $EmsSku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'EMSPREMIUM'
 
@@ -61,17 +60,17 @@ Id                                   DisplayName   Mail UserPrincipalName       
 --                                   -----------   ---- -----------------                     --------
 38955658-c844-4f59-9430-6519430ac89b Bianca Pisani      BiancaP@contoso.onmicrosoft.com       Member
 
+```
 ### EXAMPLE 2
 ```powershell
 Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
-```
 
 $EmsSku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'EMSPREMIUM'
 $FlowSku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'FLOW_FREE'
 $addLicenses = @(
-  @{SkuId = $EmsSku.SkuId},
-  @{SkuId = $FlowSku.SkuId}
-  )
+@{SkuId = $EmsSku.SkuId},
+@{SkuId = $FlowSku.SkuId}
+)
 
 Set-MgUserLicense -UserId '38955658-c844-4f59-9430-6519430ac89b' -AddLicenses $addLicenses -RemoveLicenses @()
 
@@ -79,18 +78,18 @@ Id                                   DisplayName   Mail UserPrincipalName       
 --                                   -----------   ---- -----------------                     --------
 38955658-c844-4f59-9430-6519430ac89b Bianca Pisani      BiancaP@contoso.onmicrosoft.com       Member
 
+```
 ### EXAMPLE 3
 ```powershell
 Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
-```
 
 $EmsSku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'EMSPREMIUM'
 $disabledPlans = $EmsSku.ServicePlans | where ServicePlanName -in ("MFA_PREMIUM", "INTUNE_A") | Select -ExpandProperty ServicePlanId
 $addLicenses = @(
-  @{SkuId = $EmsSku.SkuId
-  DisabledPlans = $disabledPlans
-  }
-  )
+@{SkuId = $EmsSku.SkuId
+DisabledPlans = $disabledPlans
+}
+)
 
 Set-MgUserLicense -UserId '38955658-c844-4f59-9430-6519430ac89b' -AddLicenses $addLicenses -RemoveLicenses @()
 
@@ -98,29 +97,29 @@ Id                                   DisplayName   Mail UserPrincipalName       
 --                                   -----------   ---- -----------------                     --------
 38955658-c844-4f59-9430-6519430ac89b Bianca Pisani      BiancaP@contoso.onmicrosoft.com       Member
 
+```
 ### EXAMPLE 4
 ```powershell
 Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
-```
 
 $EmsSku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'EMSPREMIUM'
 $userLicense = Get-MgUserLicenseDetail -UserId "38955658-c844-4f59-9430-6519430ac89b"
 
 $userDisabledPlans = $userLicense.ServicePlans |
-  Where ProvisioningStatus -eq "Disabled" |
-  Select -ExpandProperty ServicePlanId
+Where ProvisioningStatus -eq "Disabled" |
+Select -ExpandProperty ServicePlanId
 
 $newDisabledPlans = $EmsSku.ServicePlans |
-  Where ServicePlanName -in ("AAD_PREMIUM_P2", "AAD_PREMIUM") |
-  Select -ExpandProperty ServicePlanId
+Where ServicePlanName -in ("AAD_PREMIUM_P2", "AAD_PREMIUM") |
+Select -ExpandProperty ServicePlanId
 
 $disabledPlans = $userDisabledPlans + $newDisabledPlans | Select -Unique
 
 $addLicenses = @(
-  @{SkuId = $EmsSku.SkuId
-  DisabledPlans = $disabledPlans
-  }
-  )
+@{SkuId = $EmsSku.SkuId
+DisabledPlans = $disabledPlans
+}
+)
 
 Set-MgUserLicense -UserId '38955658-c844-4f59-9430-6519430ac89b' -AddLicenses $addLicenses -RemoveLicenses @()
 
@@ -128,10 +127,10 @@ Id                                   DisplayName   Mail UserPrincipalName       
 --                                   -----------   ---- -----------------                     --------
 38955658-c844-4f59-9430-6519430ac89b Bianca Pisani      BiancaP@contoso.onmicrosoft.com       Member
 
+```
 ### EXAMPLE 5
 ```powershell
 Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
-```
 
 Select-MgProfile -Name Beta
 $mgUser = Get-MgUser -UserId '38955658-c844-4f59-9430-6519430ac89b'
@@ -143,10 +142,10 @@ Id                                   DisplayName    Mail UserPrincipalName      
 --                                   -----------    ---- -----------------                      --------
 82f51c98-7221-442f-8329-3faf9fe022f1 Mallory Cortez      MalloryC@contoso.onmicrosoft.com       Member
 
+```
 ### EXAMPLE 6
 ```powershell
 Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
-```
 
 $EmsSku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'EMSPREMIUM'
 
@@ -156,7 +155,9 @@ Id                                   DisplayName   Mail UserPrincipalName       
 --                                   -----------   ---- -----------------                     --------
 38955658-c844-4f59-9430-6519430ac89b Bianca Pisani      BiancaP@contoso.onmicrosoft.com       Member
 
+```
 ## PARAMETERS
+
 
 ### -AdditionalProperties
 Additional Parameters
@@ -344,3 +345,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgBetaUserLicense](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Set-MgBetaUserLicense?view=graph-powershell-beta)
+

@@ -43,7 +43,6 @@ Retrieve the properties and relationships of a servicePrincipal object.
 ```powershell
 Connect-MgGraph -Scopes 'Application.Read.All'
 Get-MgServicePrincipal
-```
 
 Id             : 304ae362-7953-4d08-8e15-aeece4d01017c
 DisplayName    : IC3 Gateway TestClone
@@ -55,23 +54,23 @@ DisplayName    : Microsoft Forms
 AppId          : 67c93110-694e-4a54-b1af-d6cd2e3b12d7
 SignInAudience : AzureADMultipleOrgs
 
+```
 ### EXAMPLE 2
 ```powershell
 Connect-MgGraph -Scopes 'Application.Read.All'
-Get-MgServicePrincipal -Filter "DisplayName eq 'Power BI Service'" | 
-  Format-List Id, DisplayName,AppId, SignInAudience
-```
+Get-MgServicePrincipal -Filter "DisplayName eq 'Power BI Service'" |
+Format-List Id, DisplayName,AppId, SignInAudience
 
 Id             : 9518fb8f-8d9e-4aae-be20-d398f9cc59ac
 DisplayName    : Power BI Service
 AppId          : 60dbf324-9702-41cc-a5fa-f8d19804b014
 SignInAudience : AzureADMultipleOrgs
 
+```
 ### EXAMPLE 3
 ```powershell
 Connect-MgGraph -Scopes 'Application.Read.All'
 Get-MgServicePrincipal -ConsistencyLevel eventual -Count spCount
-```
 
 Id                                   DisplayName                                                    AppId                                SignInAudience                     PublisherName
 --                                   -----------                                                    -----                                --------------                     -------------
@@ -80,11 +79,11 @@ Id                                   DisplayName                                
 0045f2ae-41d9-4373-98ac-3306fe51c9cf Dynamics Data Integration                                      2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b AzureADMultipleOrgs                Microsoft Services
 020ada9b-60b7-436f-8f00-22b198c2996a O365SBRM Service                                               9d06afd9-66c9-49a6-b385-ea7509332b0b AzureADMultipleOrgs                Microsoft Service
 
+```
 ### EXAMPLE 4
 ```powershell
 Connect-MgGraph -Scopes 'Application.Read.All'
 Get-MgServicePrincipal -ConsistencyLevel eventual -Count spCount -Filter "startsWith(DisplayName, 'a')" -Top 5
-```
 
 Id                                   DisplayName                       AppId                                SignInAudience      PublisherName
 --                                   -----------                       -----                                --------------      -------------
@@ -94,11 +93,11 @@ Id                                   DisplayName                       AppId    
 1b339d7a-b9ba-4328-ae3c-6f21276628c7 Azure Analysis Services           4ac7d521-0382-477b-b0f8-7e1d95f85ca2 AzureADMultipleOrgs Microsoft Services
 1d322ee1-7cf7-442a-b480-d6d4bbe6ec54 App Protection                    c6e44401-4d0a-4542-ab22-ecd4c90d28d7 AzureADMultipleOrgs Microsoft Services
 
+```
 ### EXAMPLE 5
 ```powershell
 Connect-MgGraph -Scopes 'Application.Read.All'
 Get-MgServicePrincipal -ConsistencyLevel eventual -Count spCount -Search '"DisplayName:Team"'
-```
 
 Id                                   DisplayName                                                 AppId                                SignInAudience                     PublisherName
 --                                   -----------                                                 -----                                --------------                     -------------
@@ -110,7 +109,9 @@ Id                                   DisplayName                                
 32cba72f-3403-4944-ada7-9173c8678247 App Studio for Microsoft Teams                              e1979c22-8b73-4aed-a4da-572cc4d0b832 AzureADMultipleOrgs                Microsoft Services
 349be45f-663d-428e-bdab-b4ac26393614 Microsoft Teams AuthSvc                                     a164aee5-7d0a-46bb-9404-37421d58bdf7 AzureADMultipleOrgs                Microsoft Services
 
+```
 ## PARAMETERS
+
 
 ### -All
 List all pages.
@@ -352,3 +353,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipal?view=graph-powershell-beta)
+

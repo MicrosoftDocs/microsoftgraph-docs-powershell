@@ -35,9 +35,10 @@ Delete an internalDomainFederation object.
 ### EXAMPLE 1
 ```powershell
 Remove-MgDomainFederationConfiguration -DomainId 'contoso.com' -InternalDomainFederationId '2a8ce608-bb34-473f-9e0f-f373ee4cbc5a'
-```
 
+```
 ## PARAMETERS
+
 
 ### -DomainId
 The unique identifier of domain
@@ -189,3 +190,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaDomainFederationConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDomainFederationConfiguration?view=graph-powershell-beta)
+

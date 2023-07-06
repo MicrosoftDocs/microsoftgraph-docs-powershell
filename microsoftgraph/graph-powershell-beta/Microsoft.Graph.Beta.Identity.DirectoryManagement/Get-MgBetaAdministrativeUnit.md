@@ -44,21 +44,22 @@ Since the **administrativeUnit** resource supports extensions, you can also use 
 ### EXAMPLE 1
 ```powershell
 Get-MgBetaDirectoryAdministrativeUnit
-```
 
 DeletedDateTime Id                                   Description DisplayName    Visibility
 --------------- --                                   ----------- -----------    ----------
-                416f19a5-2e01-4d15-a78c-d9028fee1ebb             Test Unit
-                d924fbd3-69c5-4cdf-b9ea-9b0badcf9c4d             East wing Unit
+416f19a5-2e01-4d15-a78c-d9028fee1ebb             Test Unit
+d924fbd3-69c5-4cdf-b9ea-9b0badcf9c4d             East wing Unit
 
+```
 ### EXAMPLE 2
 ```powershell
 {{ Add code here }}
-```
 
 {{ Add output here }}
 
+```
 ## PARAMETERS
+
 
 ### -AdministrativeUnitId
 The unique identifier of administrativeUnit
@@ -316,3 +317,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgAdministrativeUnit](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgAdministrativeUnit?view=graph-powershell-v1.0)
+
