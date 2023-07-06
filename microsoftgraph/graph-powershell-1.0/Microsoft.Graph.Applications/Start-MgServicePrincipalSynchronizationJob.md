@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke action start
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Start-MgBetaBetaServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Beta.Applications/Start-MgBetaServicePrincipalSynchronizationJob?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Start-MgBetaServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Beta.Applications/Start-MgBetaServicePrincipalSynchronizationJob?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -177,4 +177,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Start-MgBetaBetaServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Beta.Applications/Start-MgBetaServicePrincipalSynchronizationJob?view=graph-powershell-beta)
+[Start-MgBetaServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Beta.Applications/Start-MgBetaServicePrincipalSynchronizationJob?view=graph-powershell-beta)

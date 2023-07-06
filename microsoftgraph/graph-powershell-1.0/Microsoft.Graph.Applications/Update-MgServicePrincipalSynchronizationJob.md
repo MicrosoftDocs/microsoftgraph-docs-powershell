@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property jobs in servicePrincipals
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBetaServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipalSynchronizationJob?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipalSynchronizationJob?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -596,7 +596,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Value <String>]`: Value for this key-value pair
 
 ## RELATED LINKS
-[Update-MgBetaBetaServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipalSynchronizationJob?view=graph-powershell-beta)
+[Update-MgBetaServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipalSynchronizationJob?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaBetaServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipalSynchronizationJob?view=graph-powershell-beta)
+[Update-MgBetaServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipalSynchronizationJob?view=graph-powershell-beta)
