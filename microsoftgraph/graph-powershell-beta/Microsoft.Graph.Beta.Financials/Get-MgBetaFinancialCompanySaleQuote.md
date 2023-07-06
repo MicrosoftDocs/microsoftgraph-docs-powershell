@@ -37,22 +37,6 @@ Get-MgBetaFinancialCompanySaleQuote -InputObject <IFinancialsIdentity> [-ExpandP
 ## DESCRIPTION
 Get salesQuotes from financials
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -310,3 +294,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgFinancialCompanySaleQuote](/powershell/module/Microsoft.Graph.Financials/Get-MgFinancialCompanySaleQuote?view=graph-powershell-v1.0)
+

@@ -23,18 +23,6 @@ Get-MgBetaPlannerPlanDelta [-Filter <String>] [-Property <String[]>] [-Search <S
 ## DESCRIPTION
 Invoke function delta
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -187,3 +175,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgPlannerPlanDelta](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerPlanDelta?view=graph-powershell-v1.0)
+

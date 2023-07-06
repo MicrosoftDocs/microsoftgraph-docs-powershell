@@ -23,22 +23,6 @@ Remove-MgBetaIdentityContinuouAccessEvaluationPolicy [-IfMatch <String>] [-PassT
 ## DESCRIPTION
 Delete navigation property continuousAccessEvaluationPolicy for identity
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -116,3 +100,4 @@ ALIASES
 
 ## RELATED LINKS
 [Remove-MgIdentityContinuouAccessEvaluationPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityContinuouAccessEvaluationPolicy?view=graph-powershell-v1.0)
+

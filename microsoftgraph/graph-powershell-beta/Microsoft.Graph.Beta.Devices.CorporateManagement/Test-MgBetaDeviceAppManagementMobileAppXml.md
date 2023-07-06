@@ -31,18 +31,6 @@ Test-MgBetaDeviceAppManagementMobileAppXml
 ## DESCRIPTION
 Invoke action validateXml
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -148,3 +136,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Test-MgDeviceAppManagementMobileAppXml](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Test-MgDeviceAppManagementMobileAppXml?view=graph-powershell-v1.0)
+

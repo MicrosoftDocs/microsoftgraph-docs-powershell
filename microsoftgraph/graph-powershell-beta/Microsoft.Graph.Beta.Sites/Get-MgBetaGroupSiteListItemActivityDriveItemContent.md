@@ -30,18 +30,6 @@ Get-MgBetaGroupSiteListItemActivityDriveItemContent -InputObject <ISitesIdentity
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -GroupId
@@ -237,3 +225,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupSiteListItemActivityDriveItemContent](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteListItemActivityDriveItemContent?view=graph-powershell-v1.0)
+

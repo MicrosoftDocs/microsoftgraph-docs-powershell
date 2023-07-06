@@ -30,18 +30,6 @@ Get-MgDeviceManagementAuditEventAuditActivityType -InputObject <IDeviceManagemen
 ## DESCRIPTION
 Invoke function getAuditActivityTypes
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Category
@@ -177,3 +165,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDeviceManagementAuditEventAuditActivityType](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Functions/Get-MgBetaDeviceManagementAuditEventAuditActivityType?view=graph-powershell-beta)
+

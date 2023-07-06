@@ -30,22 +30,6 @@ Remove-MgBetaDirectoryOutboundSharedUserProfile -InputObject <IIdentityDirectory
 ## DESCRIPTION
 Delete navigation property outboundSharedUserProfiles for directory
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -198,3 +182,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDirectoryOutboundSharedUserProfile](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDirectoryOutboundSharedUserProfile?view=graph-powershell-v1.0)
+

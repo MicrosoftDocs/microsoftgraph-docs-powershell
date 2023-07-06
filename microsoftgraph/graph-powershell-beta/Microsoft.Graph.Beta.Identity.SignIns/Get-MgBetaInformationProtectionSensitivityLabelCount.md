@@ -22,18 +22,6 @@ Get-MgBetaInformationProtectionSensitivityLabelCount [-Filter <String>] [-Search
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -80,3 +68,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgInformationProtectionSensitivityLabelCount](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgInformationProtectionSensitivityLabelCount?view=graph-powershell-v1.0)
+

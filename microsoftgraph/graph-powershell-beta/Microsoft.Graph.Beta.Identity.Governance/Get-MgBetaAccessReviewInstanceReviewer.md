@@ -37,22 +37,6 @@ Get-MgBetaAccessReviewInstanceReviewer -InputObject <IIdentityGovernanceIdentity
 ## DESCRIPTION
 The collection of reviewers for an access review, if access review reviewerType is of type delegated.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AccessReviewId
@@ -385,3 +369,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgAccessReviewInstanceReviewer](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgAccessReviewInstanceReviewer?view=graph-powershell-v1.0)
+

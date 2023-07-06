@@ -29,22 +29,6 @@ Get-MgBetaReportYammerActivityCount -InputObject <IReportsIdentity> -OutFile <St
 ## DESCRIPTION
 Invoke function getYammerActivityCounts
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -155,3 +139,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgReportYammerActivityCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportYammerActivityCount?view=graph-powershell-v1.0)
+

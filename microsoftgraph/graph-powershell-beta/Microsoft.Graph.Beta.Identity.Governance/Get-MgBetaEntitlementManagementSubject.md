@@ -37,22 +37,6 @@ Get-MgBetaEntitlementManagementSubject -InputObject <IIdentityGovernanceIdentity
 ## DESCRIPTION
 Get subjects from identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AccessPackageSubjectId
@@ -355,3 +339,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgEntitlementManagementSubject](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementSubject?view=graph-powershell-v1.0)
+

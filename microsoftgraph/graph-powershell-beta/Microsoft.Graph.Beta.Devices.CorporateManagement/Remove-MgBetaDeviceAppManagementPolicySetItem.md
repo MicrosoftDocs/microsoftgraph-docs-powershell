@@ -30,18 +30,6 @@ Remove-MgBetaDeviceAppManagementPolicySetItem -InputObject <IDevicesCorporateMan
 ## DESCRIPTION
 Delete navigation property items for deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -239,3 +227,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDeviceAppManagementPolicySetItem](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Remove-MgDeviceAppManagementPolicySetItem?view=graph-powershell-v1.0)
+

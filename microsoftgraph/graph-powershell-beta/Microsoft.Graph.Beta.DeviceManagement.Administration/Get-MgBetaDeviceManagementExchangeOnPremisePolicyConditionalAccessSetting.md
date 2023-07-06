@@ -40,18 +40,6 @@ Get-MgBetaDeviceManagementExchangeOnPremisePolicyConditionalAccessSetting
 The Exchange on premises conditional access settings.
 On premises conditional access will require devices to be both enrolled and compliant for mail access
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DeviceManagementExchangeOnPremisesPolicyId
@@ -193,3 +181,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementExchangeOnPremisePolicyConditionalAccessSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementExchangeOnPremisePolicyConditionalAccessSetting?view=graph-powershell-v1.0)
+

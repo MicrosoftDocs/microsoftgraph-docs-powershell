@@ -30,18 +30,6 @@ Remove-MgBetaIdentityGovernanceTermsOfUseAgreementFile -InputObject <IIdentityGo
 ## DESCRIPTION
 Delete navigation property file for identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AgreementId
@@ -254,3 +242,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgIdentityGovernanceTermsOfUseAgreementFile](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgIdentityGovernanceTermsOfUseAgreementFile?view=graph-powershell-v1.0)
+

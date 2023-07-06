@@ -30,22 +30,6 @@ Remove-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFile -InputObject <IDe
 ## DESCRIPTION
 Invoke action remove
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -GroupPolicyUploadedDefinitionFileId
@@ -198,3 +182,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDeviceManagementGroupPolicyUploadedDefinitionFile](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Remove-MgDeviceManagementGroupPolicyUploadedDefinitionFile?view=graph-powershell-v1.0)
+

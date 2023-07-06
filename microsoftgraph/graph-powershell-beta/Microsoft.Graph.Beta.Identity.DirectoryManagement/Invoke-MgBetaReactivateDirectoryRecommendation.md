@@ -34,22 +34,6 @@ Reactivate a completed, dismissed, or postponed recommendation object.
 This action updates the **status** of the recommendation to `active`.
 This method only works when the **status** of the recommendation is `completedByUser`, `dismissed`, or `postponed`.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -172,3 +156,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgReactivateDirectoryRecommendation](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Invoke-MgReactivateDirectoryRecommendation?view=graph-powershell-v1.0)
+

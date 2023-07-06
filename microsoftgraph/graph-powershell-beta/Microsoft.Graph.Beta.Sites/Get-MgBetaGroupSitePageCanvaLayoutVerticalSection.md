@@ -30,18 +30,6 @@ Get-MgBetaGroupSitePageCanvaLayoutVerticalSection -InputObject <ISitesIdentity> 
 ## DESCRIPTION
 Read the properties and relationships of a verticalSection object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -207,3 +195,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupSitePageCanvaLayoutVerticalSection](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSitePageCanvaLayoutVerticalSection?view=graph-powershell-v1.0)
+

@@ -37,22 +37,6 @@ Get-MgBetaDeviceManagementComanagementEligibleDevice -InputObject <IDeviceManage
 ## DESCRIPTION
 The list of co-management eligible devices report
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -315,3 +299,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementComanagementEligibleDevice](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementComanagementEligibleDevice?view=graph-powershell-v1.0)
+

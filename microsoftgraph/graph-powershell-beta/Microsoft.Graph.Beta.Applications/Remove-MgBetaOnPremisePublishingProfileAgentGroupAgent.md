@@ -31,22 +31,6 @@ Remove-MgBetaOnPremisePublishingProfileAgentGroupAgent -InputObject <IApplicatio
 ## DESCRIPTION
 Delete navigation property agents for onPremisesPublishingProfiles
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -221,3 +205,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgOnPremisePublishingProfileAgentGroupAgent](/powershell/module/Microsoft.Graph.Applications/Remove-MgOnPremisePublishingProfileAgentGroupAgent?view=graph-powershell-v1.0)
+

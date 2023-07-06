@@ -32,18 +32,6 @@ Get-MgBetaPrintPrinterShareJobTaskTrigger -InputObject <IDevicesCloudPrintIdenti
 The printTaskTrigger that triggered this task's execution.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -172,3 +160,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgPrintPrinterShareJobTaskTrigger](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintPrinterShareJobTaskTrigger?view=graph-powershell-v1.0)
+

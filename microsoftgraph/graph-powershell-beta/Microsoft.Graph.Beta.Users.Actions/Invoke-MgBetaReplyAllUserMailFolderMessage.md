@@ -30,22 +30,6 @@ Invoke-MgBetaReenableUserManagedDevice -InputObject <IUsersActionsIdentity> [-Pa
 ## DESCRIPTION
 Invoke action reenable
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -202,3 +186,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgReplyAllUserMailFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgReplyAllUserMailFolderMessage?view=graph-powershell-v1.0)
+

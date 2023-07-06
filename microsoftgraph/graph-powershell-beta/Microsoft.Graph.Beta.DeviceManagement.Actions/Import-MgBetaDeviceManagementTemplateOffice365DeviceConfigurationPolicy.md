@@ -23,22 +23,6 @@ Import-MgBetaDeviceManagementTemplateOffice365DeviceConfigurationPolicy [-WhatIf
 ## DESCRIPTION
 Invoke action importOffice365DeviceConfigurationPolicies
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Confirm
@@ -86,3 +70,4 @@ ALIASES
 
 ## RELATED LINKS
 [Import-MgDeviceManagementTemplateOffice365DeviceConfigurationPolicy](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Import-MgDeviceManagementTemplateOffice365DeviceConfigurationPolicy?view=graph-powershell-v1.0)
+

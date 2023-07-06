@@ -35,18 +35,6 @@ New-MgBetaVirtualEventWebinar -BodyParameter <IMicrosoftGraphVirtualEventWebinar
 ## DESCRIPTION
 Create new navigation property to webinars for solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -765,3 +753,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgVirtualEventWebinar](/powershell/module/Microsoft.Graph.Bookings/New-MgVirtualEventWebinar?view=graph-powershell-v1.0)
+

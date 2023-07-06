@@ -23,22 +23,6 @@ Update-MgBetaDeviceManagementDeviceCompliancePolicyDeviceComplianceReportSummari
 ## DESCRIPTION
 Invoke action refreshDeviceComplianceReportSummarization
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -PassThru
@@ -101,3 +85,4 @@ ALIASES
 
 ## RELATED LINKS
 [Update-MgDeviceManagementDeviceCompliancePolicyDeviceComplianceReportSummarization](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Update-MgDeviceManagementDeviceCompliancePolicyDeviceComplianceReportSummarization?view=graph-powershell-v1.0)
+

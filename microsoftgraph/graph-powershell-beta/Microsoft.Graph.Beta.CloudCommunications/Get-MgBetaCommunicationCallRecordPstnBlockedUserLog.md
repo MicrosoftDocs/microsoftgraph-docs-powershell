@@ -30,18 +30,6 @@ Get-MgBetaCommunicationCallRecordPstnBlockedUserLog -InputObject <ICloudCommunic
 ## DESCRIPTION
 Invoke function getPstnBlockedUsersLog
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -205,3 +193,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgCommunicationCallRecordPstnBlockedUserLog](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationCallRecordPstnBlockedUserLog?view=graph-powershell-v1.0)
+

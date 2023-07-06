@@ -30,18 +30,6 @@ Remove-MgBetaSecurityThreatIntelligenceProfileIndicator -InputObject <ISecurityI
 ## DESCRIPTION
 Delete navigation property intelligenceProfileIndicators for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -214,3 +202,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgSecurityThreatIntelligenceProfileIndicator](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityThreatIntelligenceProfileIndicator?view=graph-powershell-v1.0)
+

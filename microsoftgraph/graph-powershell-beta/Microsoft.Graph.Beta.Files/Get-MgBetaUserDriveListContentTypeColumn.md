@@ -37,22 +37,6 @@ Get-MgBetaUserDriveListContentTypeColumn -InputObject <IFilesIdentity> [-ExpandP
 ## DESCRIPTION
 Retrieve the metadata for a [site][], [list][] or [contentType][] [column][columnDefinition].
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -328,3 +312,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveListContentTypeColumn?view=graph-powershell-v1.0)
+

@@ -32,22 +32,6 @@ Remove-MgBetaGroupTeamPrimaryChannelMember -InputObject <ITeamsIdentity> [-IfMat
 Delete a conversationMember from a channel.
 This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ConversationMemberId
@@ -216,3 +200,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgGroupTeamPrimaryChannelMember](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamPrimaryChannelMember?view=graph-powershell-v1.0)
+

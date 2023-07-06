@@ -39,22 +39,6 @@ Get-MgBetaUserMailFolderMessageMention -InputObject <IMailIdentity> [-ExpandProp
 A collection of mentions in the message, ordered by the createdDateTime from the newest to the oldest.
 By default, a GET /messages does not return this property unless you apply $expand on the property.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -301,3 +285,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserMailFolderMessageMention](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMailFolderMessageMention?view=graph-powershell-v1.0)
+

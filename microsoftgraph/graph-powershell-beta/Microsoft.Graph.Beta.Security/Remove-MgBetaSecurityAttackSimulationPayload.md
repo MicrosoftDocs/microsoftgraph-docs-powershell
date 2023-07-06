@@ -30,18 +30,6 @@ Remove-MgBetaSecurityAttackSimulationPayload -InputObject <ISecurityIdentity> [-
 ## DESCRIPTION
 Delete navigation property payloads for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -214,3 +202,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgSecurityAttackSimulationPayload](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityAttackSimulationPayload?view=graph-powershell-v1.0)
+

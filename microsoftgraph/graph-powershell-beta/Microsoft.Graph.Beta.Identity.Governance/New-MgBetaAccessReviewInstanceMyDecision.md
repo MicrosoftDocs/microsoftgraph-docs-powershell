@@ -48,22 +48,6 @@ New-MgBetaAccessReviewInstanceMyDecision -InputObject <IIdentityGovernanceIdenti
 ## DESCRIPTION
 Create new navigation property to myDecisions for accessReviews
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AccessRecommendation
@@ -493,3 +477,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgAccessReviewInstanceMyDecision](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgAccessReviewInstanceMyDecision?view=graph-powershell-v1.0)
+

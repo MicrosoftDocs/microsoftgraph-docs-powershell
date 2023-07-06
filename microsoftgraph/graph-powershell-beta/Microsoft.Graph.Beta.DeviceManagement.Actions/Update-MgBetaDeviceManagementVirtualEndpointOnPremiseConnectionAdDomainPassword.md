@@ -50,18 +50,6 @@ Update-MgBetaDeviceManagementVirtualEndpointOnPremiseConnectionAdDomainPassword
 Update the Active Directory domain password for a cloudPcOnPremisesConnection object.
 This API is supported when the type of the **cloudPcOnPremisesConnection** object is `hybridAzureADJoin`.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -265,3 +253,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgDeviceManagementVirtualEndpointOnPremiseConnectionAdDomainPassword](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Update-MgDeviceManagementVirtualEndpointOnPremiseConnectionAdDomainPassword?view=graph-powershell-v1.0)
+

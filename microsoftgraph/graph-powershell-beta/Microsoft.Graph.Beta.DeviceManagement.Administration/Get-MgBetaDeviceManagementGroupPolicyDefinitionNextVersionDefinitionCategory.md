@@ -31,22 +31,6 @@ Get-MgBetaDeviceManagementGroupPolicyDefinitionNextVersionDefinitionCategory
 ## DESCRIPTION
 The group policy category associated with the definition.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -188,3 +172,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementGroupPolicyDefinitionNextVersionDefinitionCategory](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementGroupPolicyDefinitionNextVersionDefinitionCategory?view=graph-powershell-v1.0)
+

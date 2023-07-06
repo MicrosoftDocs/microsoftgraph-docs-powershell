@@ -48,22 +48,6 @@ New-MgBetaUserMobileAppTroubleshootingEventAppLogCollectionRequest
 ## DESCRIPTION
 Create new navigation property to appLogCollectionRequests for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -345,3 +329,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest?view=graph-powershell-v1.0)
+

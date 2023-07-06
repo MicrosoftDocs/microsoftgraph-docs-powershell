@@ -22,18 +22,6 @@ Get-MgApplicationCount [-Filter <String>] [-Search <String>] -ConsistencyLevel <
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ConsistencyLevel
@@ -96,3 +84,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaApplicationCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationCount?view=graph-powershell-beta)
+

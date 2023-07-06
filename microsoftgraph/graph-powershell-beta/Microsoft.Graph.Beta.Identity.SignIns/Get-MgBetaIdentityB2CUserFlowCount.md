@@ -22,18 +22,6 @@ Get-MgBetaIdentityB2CUserFlowCount [-Filter <String>] [-Search <String>] [<Commo
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -80,3 +68,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgIdentityB2CUserFlowCount](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2CUserFlowCount?view=graph-powershell-v1.0)
+

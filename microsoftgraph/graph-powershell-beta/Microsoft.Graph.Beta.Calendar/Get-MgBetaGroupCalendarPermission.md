@@ -35,22 +35,6 @@ Get-MgBetaGroupCalendarPermission -InputObject <ICalendarIdentity> [-Property <S
 ## DESCRIPTION
 Get the specified permissions object of a user or group calendar that has been shared.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -253,3 +237,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupCalendarPermission](/powershell/module/Microsoft.Graph.Calendar/Get-MgGroupCalendarPermission?view=graph-powershell-v1.0)
+

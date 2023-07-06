@@ -30,18 +30,6 @@ New-MgBetaRoleManagementEntitlementManagementRoleAssignmentApproval -BodyParamet
 ## DESCRIPTION
 Create new navigation property to roleAssignmentApprovals for roleManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -187,3 +175,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgRoleManagementEntitlementManagementRoleAssignmentApproval](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementEntitlementManagementRoleAssignmentApproval?view=graph-powershell-v1.0)
+

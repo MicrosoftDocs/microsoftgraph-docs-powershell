@@ -46,22 +46,6 @@ New-MgBetaOnPremisePublishingProfileAgentGroupPublishedResourceAgentGroupByRef
 ## DESCRIPTION
 Create new navigation property ref to agentGroups for onPremisesPublishingProfiles
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -273,3 +257,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgOnPremisePublishingProfileAgentGroupPublishedResourceAgentGroupByRef](/powershell/module/Microsoft.Graph.Applications/New-MgOnPremisePublishingProfileAgentGroupPublishedResourceAgentGroupByRef?view=graph-powershell-v1.0)
+

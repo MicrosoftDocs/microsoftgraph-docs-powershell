@@ -46,22 +46,6 @@ Rename-MgBetaUserCloudPcUserAccountType -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Change the account type of the user on a specific Cloud PC.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -269,3 +253,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Rename-MgUserCloudPcUserAccountType](/powershell/module/Microsoft.Graph.Users.Actions/Rename-MgUserCloudPcUserAccountType?view=graph-powershell-v1.0)
+

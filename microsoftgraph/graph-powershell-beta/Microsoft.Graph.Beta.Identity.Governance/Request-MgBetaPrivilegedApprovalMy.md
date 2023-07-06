@@ -23,18 +23,6 @@ Request-MgBetaPrivilegedApprovalMy [-Count] [-Filter <String>] [-Property <Strin
 ## DESCRIPTION
 Invoke function myRequests
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -156,3 +144,4 @@ ALIASES
 
 ## RELATED LINKS
 [Request-MgPrivilegedApprovalMy](/powershell/module/Microsoft.Graph.Identity.Governance/Request-MgPrivilegedApprovalMy?view=graph-powershell-v1.0)
+

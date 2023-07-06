@@ -82,22 +82,6 @@ Update-MgBetaDriveItem -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftG
 Update the metadata for a DriveItem by ID or path.
 You can also use update to move an item to another parent by updating the item's **parentReference** property.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Activities
@@ -34516,3 +34500,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgDriveItem](/powershell/module/Microsoft.Graph.Files/Update-MgDriveItem?view=graph-powershell-v1.0)
+

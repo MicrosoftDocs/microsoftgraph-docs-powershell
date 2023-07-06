@@ -31,18 +31,6 @@ Remove-MgBetaVirtualEventSessionRegistrationRegistrant -InputObject <IBookingsId
 ## DESCRIPTION
 Delete navigation property registrants for solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -209,3 +197,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgVirtualEventSessionRegistrationRegistrant](/powershell/module/Microsoft.Graph.Bookings/Remove-MgVirtualEventSessionRegistrationRegistrant?view=graph-powershell-v1.0)
+

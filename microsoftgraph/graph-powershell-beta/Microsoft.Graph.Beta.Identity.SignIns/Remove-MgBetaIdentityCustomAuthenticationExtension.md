@@ -30,22 +30,6 @@ Remove-MgBetaIdentityCustomAuthenticationExtension -InputObject <IIdentitySignIn
 ## DESCRIPTION
 Delete a customAuthenticationExtension object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -CustomAuthenticationExtensionId
@@ -236,3 +220,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgIdentityCustomAuthenticationExtension](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityCustomAuthenticationExtension?view=graph-powershell-v1.0)
+

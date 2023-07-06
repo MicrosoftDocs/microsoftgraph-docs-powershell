@@ -29,18 +29,6 @@ Sync-MgDeviceAppManagementVppTokenLicense -InputObject <IDevicesCorporateManagem
 ## DESCRIPTION
 Syncs licenses associated with a specific appleVolumePurchaseProgramToken
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -InputObject
@@ -159,3 +147,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Sync-MgBetaDeviceAppManagementVppTokenLicense](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Sync-MgBetaDeviceAppManagementVppTokenLicense?view=graph-powershell-beta)
+

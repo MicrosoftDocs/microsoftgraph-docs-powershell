@@ -46,18 +46,6 @@ New-MgBetaGroupTeamScheduleTimeOff -InputObject <ITeamsIdentity> -BodyParameter 
 ## DESCRIPTION
 Create a new timeOff instance in a schedule.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -378,3 +366,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgGroupTeamScheduleTimeOff](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamScheduleTimeOff?view=graph-powershell-v1.0)
+

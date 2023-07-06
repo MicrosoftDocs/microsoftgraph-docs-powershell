@@ -23,22 +23,6 @@ Remove-MgBetaPolicyDirectoryRoleAccessReviewPolicy [-IfMatch <String>] [-PassThr
 ## DESCRIPTION
 Delete navigation property directoryRoleAccessReviewPolicy for policies
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -116,3 +100,4 @@ ALIASES
 
 ## RELATED LINKS
 [Remove-MgPolicyDirectoryRoleAccessReviewPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyDirectoryRoleAccessReviewPolicy?view=graph-powershell-v1.0)
+

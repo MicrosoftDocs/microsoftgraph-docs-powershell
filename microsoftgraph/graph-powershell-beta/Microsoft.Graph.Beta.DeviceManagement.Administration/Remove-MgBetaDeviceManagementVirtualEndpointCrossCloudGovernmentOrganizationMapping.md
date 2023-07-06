@@ -23,18 +23,6 @@ Remove-MgBetaDeviceManagementVirtualEndpointCrossCloudGovernmentOrganizationMapp
 ## DESCRIPTION
 Delete navigation property crossCloudGovernmentOrganizationMapping for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -112,3 +100,4 @@ ALIASES
 
 ## RELATED LINKS
 [Remove-MgDeviceManagementVirtualEndpointCrossCloudGovernmentOrganizationMapping](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Remove-MgDeviceManagementVirtualEndpointCrossCloudGovernmentOrganizationMapping?view=graph-powershell-v1.0)
+

@@ -37,22 +37,6 @@ Get-MgBetaFinancialCompanyAgedAccountReceivable -InputObject <IFinancialsIdentit
 ## DESCRIPTION
 Get agedAccountsReceivable from financials
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AgedAccountsReceivableId
@@ -310,3 +294,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgFinancialCompanyAgedAccountReceivable](/powershell/module/Microsoft.Graph.Financials/Get-MgFinancialCompanyAgedAccountReceivable?view=graph-powershell-v1.0)
+

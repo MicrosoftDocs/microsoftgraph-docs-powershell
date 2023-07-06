@@ -30,18 +30,6 @@ Invoke-MgBetaInitiateDeviceManagementComanagedDeviceMobileDeviceManagementKeyRec
 ## DESCRIPTION
 Perform MDM key recovery and TPM attestation
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -InputObject
@@ -194,3 +182,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgInitiateDeviceManagementComanagedDeviceMobileDeviceManagementKeyRecovery](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgInitiateDeviceManagementComanagedDeviceMobileDeviceManagementKeyRecovery?view=graph-powershell-v1.0)
+

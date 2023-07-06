@@ -30,22 +30,6 @@ Remove-MgCommunicationCallRecordSession -InputObject <ICloudCommunicationsIdenti
 ## DESCRIPTION
 Delete navigation property sessions for communications
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -CallRecordId
@@ -189,3 +173,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaCommunicationCallRecordSession](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Remove-MgBetaCommunicationCallRecordSession?view=graph-powershell-beta)
+

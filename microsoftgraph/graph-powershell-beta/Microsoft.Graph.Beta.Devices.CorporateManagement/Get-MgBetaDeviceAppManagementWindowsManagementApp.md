@@ -23,18 +23,6 @@ Get-MgBetaDeviceAppManagementWindowsManagementApp [-ExpandProperty <String[]>] [
 ## DESCRIPTION
 Windows management app.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -83,3 +71,4 @@ Get-MgDeviceAppMgtWindowManagementApp
 
 ## RELATED LINKS
 [Get-MgDeviceAppManagementWindowsManagementApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementWindowsManagementApp?view=graph-powershell-v1.0)
+

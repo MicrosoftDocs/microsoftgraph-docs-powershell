@@ -32,22 +32,6 @@ Invoke-MgBetaFilterEntitlementManagementAccessPackageAssignmentRequestByCurrentU
 ## DESCRIPTION
 Invoke function filterByCurrentUser
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -304,3 +288,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgFilterEntitlementManagementAccessPackageAssignmentRequestByCurrentUser](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgFilterEntitlementManagementAccessPackageAssignmentRequestByCurrentUser?view=graph-powershell-v1.0)
+

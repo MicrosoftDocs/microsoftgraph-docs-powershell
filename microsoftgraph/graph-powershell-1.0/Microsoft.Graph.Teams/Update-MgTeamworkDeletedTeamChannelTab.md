@@ -45,18 +45,6 @@ Update-MgTeamworkDeletedTeamChannelTab -InputObject <ITeamsIdentity> -BodyParame
 ## DESCRIPTION
 Update the navigation property tabs in teamwork
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -387,3 +375,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaTeamworkDeletedTeamChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamworkDeletedTeamChannelTab?view=graph-powershell-beta)
+

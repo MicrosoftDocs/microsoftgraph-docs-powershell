@@ -22,22 +22,6 @@ Disconnect-MgBetaDeviceManagementZebraFotaConnector [-WhatIf] [-Confirm] [<Commo
 ## DESCRIPTION
 Invoke action disconnect
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Confirm
@@ -85,3 +69,4 @@ ALIASES
 
 ## RELATED LINKS
 [Disconnect-MgDeviceManagementZebraFotaConnector](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Disconnect-MgDeviceManagementZebraFotaConnector?view=graph-powershell-v1.0)
+

@@ -37,22 +37,6 @@ Get-MgBetaDeviceManagementComanagedDeviceDetectedApp -InputObject <IDeviceManage
 ## DESCRIPTION
 All applications currently installed on the device
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -411,3 +395,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementComanagedDeviceDetectedApp](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementComanagedDeviceDetectedApp?view=graph-powershell-v1.0)
+

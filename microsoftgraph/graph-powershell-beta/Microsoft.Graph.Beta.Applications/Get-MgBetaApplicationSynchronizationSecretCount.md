@@ -30,18 +30,6 @@ Get-MgBetaApplicationSynchronizationSecretCount -InputObject <IApplicationsIdent
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ApplicationId
@@ -155,3 +143,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgApplicationSynchronizationSecretCount](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationSynchronizationSecretCount?view=graph-powershell-v1.0)
+

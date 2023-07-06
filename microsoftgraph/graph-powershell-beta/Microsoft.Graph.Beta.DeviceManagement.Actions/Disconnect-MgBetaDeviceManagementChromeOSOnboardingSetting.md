@@ -22,22 +22,6 @@ Disconnect-MgBetaDeviceManagementChromeOSOnboardingSetting [-WhatIf] [-Confirm] 
 ## DESCRIPTION
 Invoke action disconnect
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Confirm
@@ -85,3 +69,4 @@ ALIASES
 
 ## RELATED LINKS
 [Disconnect-MgDeviceManagementChromeOSOnboardingSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Disconnect-MgDeviceManagementChromeOSOnboardingSetting?view=graph-powershell-v1.0)
+

@@ -37,18 +37,6 @@ Get-MgBetaSitePageCanvaLayoutVerticalSectionWebpart -InputObject <ISitesIdentity
 ## DESCRIPTION
 The set of web parts in this section.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -336,3 +324,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSitePageCanvaLayoutVerticalSectionWebpart](/powershell/module/Microsoft.Graph.Sites/Get-MgSitePageCanvaLayoutVerticalSectionWebpart?view=graph-powershell-v1.0)
+

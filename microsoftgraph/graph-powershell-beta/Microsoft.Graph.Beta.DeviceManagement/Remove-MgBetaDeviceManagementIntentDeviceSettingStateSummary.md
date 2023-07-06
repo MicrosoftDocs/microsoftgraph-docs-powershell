@@ -31,22 +31,6 @@ Remove-MgBetaDeviceManagementIntentDeviceSettingStateSummary -InputObject <IDevi
 ## DESCRIPTION
 Delete navigation property deviceSettingStateSummaries for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DeviceManagementIntentDeviceSettingStateSummaryId
@@ -315,3 +299,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDeviceManagementIntentDeviceSettingStateSummary](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementIntentDeviceSettingStateSummary?view=graph-powershell-v1.0)
+

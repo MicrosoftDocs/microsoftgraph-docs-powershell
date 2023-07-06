@@ -30,22 +30,6 @@ Get-MgBetaSecuritySubjectRightsRequestFinalReport -InputObject <ISecurityIdentit
 ## DESCRIPTION
 Invoke function getFinalReport
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -187,3 +171,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSecuritySubjectRightsRequestFinalReport](/powershell/module/Microsoft.Graph.Security/Get-MgSecuritySubjectRightsRequestFinalReport?view=graph-powershell-v1.0)
+

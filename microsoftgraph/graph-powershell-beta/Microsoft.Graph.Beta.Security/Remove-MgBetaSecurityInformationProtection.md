@@ -23,22 +23,6 @@ Remove-MgBetaSecurityInformationProtection [-IfMatch <String>] [-PassThru] [-Wha
 ## DESCRIPTION
 Delete navigation property informationProtection for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -116,3 +100,4 @@ ALIASES
 
 ## RELATED LINKS
 [Remove-MgSecurityInformationProtection](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityInformationProtection?view=graph-powershell-v1.0)
+

@@ -22,18 +22,6 @@ Get-MgBetaExternalIndustryData [-ExpandProperty <String[]>] [-Property <String[]
 ## DESCRIPTION
 Get industryData from external
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -80,3 +68,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgExternalIndustryData](/powershell/module/Microsoft.Graph.Search/Get-MgExternalIndustryData?view=graph-powershell-v1.0)
+

@@ -30,22 +30,6 @@ Set-MgBetaTrustFrameworkPolicyContent -InputObject <IIdentitySignInsIdentity> [-
 ## DESCRIPTION
 Update media content for the navigation property policies in trustFramework
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Data
@@ -254,3 +238,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgTrustFrameworkPolicyContent](/powershell/module/Microsoft.Graph.Identity.SignIns/Set-MgTrustFrameworkPolicyContent?view=graph-powershell-v1.0)
+

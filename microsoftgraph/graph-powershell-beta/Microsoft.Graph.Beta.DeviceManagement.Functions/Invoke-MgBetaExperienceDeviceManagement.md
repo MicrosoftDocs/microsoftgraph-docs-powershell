@@ -22,22 +22,6 @@ Invoke-MgBetaExperienceDeviceManagement [<CommonParameters>]
 ## DESCRIPTION
 Invoke function userExperienceAnalyticsSummarizedDeviceScopes
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### CommonParameters
@@ -55,3 +39,4 @@ ALIASES
 
 ## RELATED LINKS
 [Invoke-MgExperienceDeviceManagement](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Invoke-MgExperienceDeviceManagement?view=graph-powershell-v1.0)
+

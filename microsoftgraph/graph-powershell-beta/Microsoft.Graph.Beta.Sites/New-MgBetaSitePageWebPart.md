@@ -42,18 +42,6 @@ New-MgBetaSitePageWebPart -InputObject <ISitesIdentity> -BodyParameter <Hashtabl
 ## DESCRIPTION
 Create new navigation property to webParts for sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -252,3 +240,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgSitePageWebPart](/powershell/module/Microsoft.Graph.Sites/New-MgSitePageWebPart?view=graph-powershell-v1.0)
+

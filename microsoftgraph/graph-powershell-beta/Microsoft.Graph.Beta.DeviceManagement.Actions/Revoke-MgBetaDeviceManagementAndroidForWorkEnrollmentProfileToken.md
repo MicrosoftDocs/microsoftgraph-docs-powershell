@@ -30,22 +30,6 @@ Revoke-MgBetaDeviceManagementAndroidForWorkEnrollmentProfileToken
 ## DESCRIPTION
 Invoke action revokeToken
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AndroidForWorkEnrollmentProfileId
@@ -198,3 +182,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Revoke-MgDeviceManagementAndroidForWorkEnrollmentProfileToken](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Revoke-MgDeviceManagementAndroidForWorkEnrollmentProfileToken?view=graph-powershell-v1.0)
+

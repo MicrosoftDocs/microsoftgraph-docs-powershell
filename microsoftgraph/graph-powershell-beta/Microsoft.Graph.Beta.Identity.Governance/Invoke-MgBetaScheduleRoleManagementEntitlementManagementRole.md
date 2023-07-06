@@ -25,18 +25,6 @@ Invoke-MgBetaScheduleRoleManagementEntitlementManagementRole [-AppScopeId <Strin
 ## DESCRIPTION
 Invoke function roleSchedules
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AppScopeId
@@ -218,3 +206,4 @@ ALIASES
 
 ## RELATED LINKS
 [Invoke-MgScheduleRoleManagementEntitlementManagementRole](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgScheduleRoleManagementEntitlementManagementRole?view=graph-powershell-v1.0)
+

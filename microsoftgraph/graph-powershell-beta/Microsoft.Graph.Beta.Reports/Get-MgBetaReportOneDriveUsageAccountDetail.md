@@ -40,22 +40,6 @@ Get-MgBetaReportOneDriveUsageAccountDetail -InputObject <IReportsIdentity> -OutF
 ## DESCRIPTION
 Invoke function getOneDriveUsageAccountDetail
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Date
@@ -181,3 +165,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgReportOneDriveUsageAccountDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportOneDriveUsageAccountDetail?view=graph-powershell-v1.0)
+

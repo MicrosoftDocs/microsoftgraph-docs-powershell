@@ -50,22 +50,6 @@ Update-MgBetaDirectoryImpactedResource -InputObject <IIdentityDirectoryManagemen
 ## DESCRIPTION
 Update the navigation property impactedResources in directory
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AddedDateTime
@@ -474,3 +458,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgDirectoryImpactedResource](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryImpactedResource?view=graph-powershell-v1.0)
+

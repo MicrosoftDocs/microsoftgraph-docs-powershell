@@ -32,18 +32,6 @@ Get-MgBetaRoleManagementDirectoryResourceNamespaceResourceActionResourceScope
 ## DESCRIPTION
 Get resourceScope from roleManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -240,3 +228,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgRoleManagementDirectoryResourceNamespaceResourceActionResourceScope](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryResourceNamespaceResourceActionResourceScope?view=graph-powershell-v1.0)
+

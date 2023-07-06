@@ -30,22 +30,6 @@ Remove-MgBetaIdentityGovernanceAccessReviewDecisionInstanceStage -InputObject <I
 ## DESCRIPTION
 Delete navigation property stages for identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AccessReviewInstanceDecisionItemId
@@ -273,3 +257,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgIdentityGovernanceAccessReviewDecisionInstanceStage](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgIdentityGovernanceAccessReviewDecisionInstanceStage?view=graph-powershell-v1.0)
+

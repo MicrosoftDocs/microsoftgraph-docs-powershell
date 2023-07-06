@@ -39,18 +39,6 @@ Get-MgBetaGroupSiteInformationProtectionSensitivityLabelSublabel -InputObject <I
 ## DESCRIPTION
 Get sublabels from groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -352,3 +340,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupSiteInformationProtectionSensitivityLabelSublabel](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteInformationProtectionSensitivityLabelSublabel?view=graph-powershell-v1.0)
+

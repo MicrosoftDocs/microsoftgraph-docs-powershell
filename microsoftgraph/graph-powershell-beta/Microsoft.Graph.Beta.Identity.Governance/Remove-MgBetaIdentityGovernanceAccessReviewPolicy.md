@@ -23,22 +23,6 @@ Remove-MgBetaIdentityGovernanceAccessReviewPolicy [-IfMatch <String>] [-PassThru
 ## DESCRIPTION
 Delete navigation property policy for identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -116,3 +100,4 @@ ALIASES
 
 ## RELATED LINKS
 [Remove-MgIdentityGovernanceAccessReviewPolicy](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgIdentityGovernanceAccessReviewPolicy?view=graph-powershell-v1.0)
+

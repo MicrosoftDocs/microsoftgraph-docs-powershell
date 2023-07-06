@@ -37,18 +37,6 @@ Get-MgBetaPrintPrinterJobTask -InputObject <IDevicesCloudPrintIdentity> [-Expand
 ## DESCRIPTION
 A list of printTasks that were triggered by this print job.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -298,3 +286,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgPrintPrinterJobTask](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintPrinterJobTask?view=graph-powershell-v1.0)
+

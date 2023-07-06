@@ -38,22 +38,6 @@ Get-MgBetaGroupDriveListItemDocumentSetVersion -InputObject <IFilesIdentity> [-E
 ## DESCRIPTION
 Read the properties and relationships of a documentSetVersion object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -329,3 +313,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupDriveListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveListItemDocumentSetVersion?view=graph-powershell-v1.0)
+

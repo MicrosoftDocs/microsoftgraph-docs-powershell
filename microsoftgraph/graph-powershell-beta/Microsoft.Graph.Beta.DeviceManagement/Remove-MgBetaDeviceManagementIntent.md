@@ -30,22 +30,6 @@ Remove-MgBetaDeviceManagementIntent -InputObject <IDeviceManagementIdentity> [-I
 ## DESCRIPTION
 Delete navigation property intents for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DeviceManagementIntentId
@@ -299,3 +283,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDeviceManagementIntent](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementIntent?view=graph-powershell-v1.0)
+

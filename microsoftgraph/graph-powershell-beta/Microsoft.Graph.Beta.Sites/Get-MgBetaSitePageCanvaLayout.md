@@ -30,18 +30,6 @@ Get-MgBetaSitePageCanvaLayout -InputObject <ISitesIdentity> [-ExpandProperty <St
 ## DESCRIPTION
 Indicates the layout of the content in a given SharePoint page, including horizontal sections and vertical section
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -192,3 +180,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSitePageCanvaLayout](/powershell/module/Microsoft.Graph.Sites/Get-MgSitePageCanvaLayout?view=graph-powershell-v1.0)
+

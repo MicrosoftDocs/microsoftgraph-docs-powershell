@@ -39,22 +39,6 @@ Get-MgBetaDirectoryAdministrativeUnitExtension -InputObject <IIdentityDirectoryM
 The collection of open extensions defined for this administrative unit.
 Nullable.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdministrativeUnitId
@@ -313,3 +297,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDirectoryAdministrativeUnitExtension](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryAdministrativeUnitExtension?view=graph-powershell-v1.0)
+

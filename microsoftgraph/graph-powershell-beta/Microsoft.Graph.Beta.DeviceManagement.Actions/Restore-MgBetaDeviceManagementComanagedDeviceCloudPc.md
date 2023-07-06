@@ -46,22 +46,6 @@ Restore-MgBetaDeviceManagementComanagedDeviceCloudPc -InputObject <IDeviceManage
 ## DESCRIPTION
 Restore a Cloud PC device to a previous state with an Intune managed device ID.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -265,3 +249,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Restore-MgDeviceManagementComanagedDeviceCloudPc](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Restore-MgDeviceManagementComanagedDeviceCloudPc?view=graph-powershell-v1.0)
+

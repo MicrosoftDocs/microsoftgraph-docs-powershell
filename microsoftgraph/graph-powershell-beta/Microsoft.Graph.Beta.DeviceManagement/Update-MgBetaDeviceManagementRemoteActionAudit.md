@@ -48,22 +48,6 @@ Update-MgBetaDeviceManagementRemoteActionAudit -InputObject <IDeviceManagementId
 ## DESCRIPTION
 Update the navigation property remoteActionAudits in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Action
@@ -483,3 +467,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgDeviceManagementRemoteActionAudit](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementRemoteActionAudit?view=graph-powershell-v1.0)
+

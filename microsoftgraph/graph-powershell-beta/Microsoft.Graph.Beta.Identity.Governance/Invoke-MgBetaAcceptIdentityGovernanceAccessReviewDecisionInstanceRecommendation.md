@@ -34,22 +34,6 @@ Allows the acceptance of recommendations on all accessReviewInstanceDecisionItem
 Recommendations are generated if **recommendationsEnabled** is `true` on the accessReviewScheduleDefinition object.
 If there is not a recommendation on an accessReviewInstanceDecisionItem object no decision will be recorded.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AccessReviewInstanceDecisionItemId
@@ -247,3 +231,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgAcceptIdentityGovernanceAccessReviewDecisionInstanceRecommendation](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgAcceptIdentityGovernanceAccessReviewDecisionInstanceRecommendation?view=graph-powershell-v1.0)
+

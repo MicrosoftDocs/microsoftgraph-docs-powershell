@@ -23,18 +23,6 @@ Remove-MgBetaDirectoryCertificateAuthority [-IfMatch <String>] [-PassThru] [-Wha
 ## DESCRIPTION
 Delete navigation property certificateAuthorities for directory
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -112,3 +100,4 @@ ALIASES
 
 ## RELATED LINKS
 [Remove-MgDirectoryCertificateAuthority](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDirectoryCertificateAuthority?view=graph-powershell-v1.0)
+

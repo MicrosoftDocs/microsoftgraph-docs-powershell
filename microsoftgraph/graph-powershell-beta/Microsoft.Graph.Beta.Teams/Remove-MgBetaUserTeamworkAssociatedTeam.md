@@ -30,22 +30,6 @@ Remove-MgBetaUserTeamworkAssociatedTeam -InputObject <ITeamsIdentity> [-IfMatch 
 ## DESCRIPTION
 Delete navigation property associatedTeams for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AssociatedTeamInfoId
@@ -214,3 +198,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgUserTeamworkAssociatedTeam](/powershell/module/Microsoft.Graph.Teams/Remove-MgUserTeamworkAssociatedTeam?view=graph-powershell-v1.0)
+

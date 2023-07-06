@@ -30,22 +30,6 @@ Get-MgBetaChatInstalledAppTeamAppDefinition -InputObject <ITeamsIdentity> [-Expa
 ## DESCRIPTION
 The details of this version of the app.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ChatId
@@ -183,3 +167,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgChatInstalledAppTeamAppDefinition](/powershell/module/Microsoft.Graph.Teams/Get-MgChatInstalledAppTeamAppDefinition?view=graph-powershell-v1.0)
+

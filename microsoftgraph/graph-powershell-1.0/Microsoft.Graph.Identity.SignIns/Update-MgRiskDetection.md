@@ -52,22 +52,6 @@ Update-MgRiskDetection -InputObject <IIdentitySignInsIdentity> -BodyParameter <I
 ## DESCRIPTION
 Update the navigation property riskDetections in identityProtection
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Activity
@@ -604,3 +588,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaRiskDetection](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaRiskDetection?view=graph-powershell-beta)
+

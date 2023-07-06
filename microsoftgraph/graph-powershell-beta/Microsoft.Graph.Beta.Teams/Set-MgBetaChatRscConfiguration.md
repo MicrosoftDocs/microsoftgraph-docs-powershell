@@ -23,18 +23,6 @@ Set-MgBetaChatRscConfiguration -State <MicrosoftGraphRscConfigurationState> [-Ad
 ## DESCRIPTION
 Update Chat RSC configuration for tenant.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -113,3 +101,4 @@ ALIASES
 
 ## RELATED LINKS
 [Set-MgChatRscConfiguration](/powershell/module/Microsoft.Graph.Teams/Set-MgChatRscConfiguration?view=graph-powershell-v1.0)
+

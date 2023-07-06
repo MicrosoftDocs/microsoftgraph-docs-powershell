@@ -46,18 +46,6 @@ Invoke-MgBetaMarkUserMailFolderChildFolderMessageAsNotJunk -InputObject <IUsersA
 ## DESCRIPTION
 Invoke action markAsNotJunk
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -280,3 +268,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgMarkUserMailFolderChildFolderMessageAsNotJunk](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgMarkUserMailFolderChildFolderMessageAsNotJunk?view=graph-powershell-v1.0)
+

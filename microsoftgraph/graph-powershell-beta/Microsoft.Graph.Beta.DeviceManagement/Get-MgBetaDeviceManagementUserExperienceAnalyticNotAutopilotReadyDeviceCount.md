@@ -23,18 +23,6 @@ Get-MgBetaDeviceManagementUserExperienceAnalyticNotAutopilotReadyDeviceCount [-F
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -81,3 +69,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDeviceCount](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDeviceCount?view=graph-powershell-v1.0)
+

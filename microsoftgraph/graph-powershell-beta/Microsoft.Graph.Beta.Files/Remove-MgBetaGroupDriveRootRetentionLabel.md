@@ -30,18 +30,6 @@ Remove-MgBetaGroupDriveRootRetentionLabel -InputObject <IFilesIdentity> [-IfMatc
 ## DESCRIPTION
 Delete navigation property retentionLabel for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -197,3 +185,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgGroupDriveRootRetentionLabel](/powershell/module/Microsoft.Graph.Files/Remove-MgGroupDriveRootRetentionLabel?view=graph-powershell-v1.0)
+

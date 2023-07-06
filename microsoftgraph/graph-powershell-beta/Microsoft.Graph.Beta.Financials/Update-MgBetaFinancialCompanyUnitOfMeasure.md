@@ -46,22 +46,6 @@ Update-MgBetaFinancialCompanyUnitOfMeasure -InputObject <IFinancialsIdentity>
 ## DESCRIPTION
 Update the navigation property unitsOfMeasure in financials
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -314,3 +298,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgFinancialCompanyUnitOfMeasure](/powershell/module/Microsoft.Graph.Financials/Update-MgFinancialCompanyUnitOfMeasure?view=graph-powershell-v1.0)
+

@@ -63,22 +63,6 @@ Update-MgBetaUserDriveListColumn -InputObject <IFilesIdentity> -BodyParameter <I
 ## DESCRIPTION
 Update the navigation property columns in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1158,3 +1142,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgUserDriveListColumn](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveListColumn?view=graph-powershell-v1.0)
+

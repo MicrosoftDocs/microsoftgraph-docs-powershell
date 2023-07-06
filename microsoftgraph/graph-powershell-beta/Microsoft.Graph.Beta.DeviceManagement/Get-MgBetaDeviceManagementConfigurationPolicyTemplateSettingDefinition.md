@@ -42,22 +42,6 @@ Get-MgBetaDeviceManagementConfigurationPolicyTemplateSettingDefinition -InputObj
 ## DESCRIPTION
 List of related Setting Definitions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -431,3 +415,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementConfigurationPolicyTemplateSettingDefinition](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementConfigurationPolicyTemplateSettingDefinition?view=graph-powershell-v1.0)
+

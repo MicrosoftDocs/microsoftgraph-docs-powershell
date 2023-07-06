@@ -60,18 +60,6 @@ New-MgGroupTeamChannelMessageReply -InputObject <ITeamsIdentity> -BodyParameter 
 ## DESCRIPTION
 Create a new reply to a chatMessage in a specified channel.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -902,3 +890,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaGroupTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamChannelMessageReply?view=graph-powershell-beta)
+

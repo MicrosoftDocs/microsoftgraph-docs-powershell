@@ -23,18 +23,6 @@ Get-MgBetaDirectoryObjectCount [-Filter <String>] [-Search <String>] -Consistenc
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ConsistencyLevel
@@ -97,3 +85,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgDirectoryObjectCount](/powershell/module/Microsoft.Graph.DirectoryObjects/Get-MgDirectoryObjectCount?view=graph-powershell-v1.0)
+

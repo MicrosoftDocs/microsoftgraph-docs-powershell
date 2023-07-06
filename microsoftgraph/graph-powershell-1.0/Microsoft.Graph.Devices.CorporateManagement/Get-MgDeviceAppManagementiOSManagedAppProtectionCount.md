@@ -23,18 +23,6 @@ Get-MgDeviceAppManagementiOSManagedAppProtectionCount [-Filter <String>] [-Searc
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -83,3 +71,4 @@ Get-MgDeviceAppMgtIoManagedAppProtectionCount
 
 ## RELATED LINKS
 [Get-MgBetaDeviceAppManagementiOSManagedAppProtectionCount](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementiOSManagedAppProtectionCount?view=graph-powershell-beta)
+
