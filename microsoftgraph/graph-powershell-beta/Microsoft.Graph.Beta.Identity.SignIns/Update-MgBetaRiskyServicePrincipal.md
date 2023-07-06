@@ -48,22 +48,6 @@ Update-MgBetaRiskyServicePrincipal -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Update the navigation property riskyServicePrincipals in identityProtection
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AccountEnabled
@@ -498,3 +482,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgRiskyServicePrincipal](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgRiskyServicePrincipal?view=graph-powershell-v1.0)
+

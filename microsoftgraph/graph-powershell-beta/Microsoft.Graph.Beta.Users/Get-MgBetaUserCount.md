@@ -22,18 +22,6 @@ Get-MgBetaUserCount [-Filter <String>] [-Search <String>] -ConsistencyLevel <Str
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ConsistencyLevel
@@ -96,3 +84,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgUserCount](/powershell/module/Microsoft.Graph.Users/Get-MgUserCount?view=graph-powershell-v1.0)
+

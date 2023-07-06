@@ -22,22 +22,6 @@ Get-MgBetaInformationProtection [-ExpandProperty <String[]>] [-Property <String[
 ## DESCRIPTION
 Get informationProtection
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -84,3 +68,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgInformationProtection](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgInformationProtection?view=graph-powershell-v1.0)
+

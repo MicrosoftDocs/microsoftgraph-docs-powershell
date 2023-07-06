@@ -30,18 +30,6 @@ Remove-MgBetaEducationClassAssignmentSettingGradingCategory -InputObject <IEduca
 ## DESCRIPTION
 Delete navigation property gradingCategories for education
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EducationClassId
@@ -186,3 +174,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgEducationClassAssignmentSettingGradingCategory](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationClassAssignmentSettingGradingCategory?view=graph-powershell-v1.0)
+

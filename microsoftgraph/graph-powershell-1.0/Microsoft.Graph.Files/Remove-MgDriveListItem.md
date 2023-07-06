@@ -30,22 +30,6 @@ Remove-MgDriveListItem -InputObject <IFilesIdentity> [-IfMatch <String>] [-PassT
 ## DESCRIPTION
 Removes an item from a [list][].
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -201,3 +185,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaDriveListItem](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveListItem?view=graph-powershell-beta)
+

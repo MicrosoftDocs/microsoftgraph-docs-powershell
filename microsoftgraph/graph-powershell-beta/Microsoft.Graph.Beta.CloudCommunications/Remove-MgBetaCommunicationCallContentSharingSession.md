@@ -30,22 +30,6 @@ Remove-MgBetaCommunicationCallContentSharingSession -InputObject <ICloudCommunic
 ## DESCRIPTION
 Delete navigation property contentSharingSessions for communications
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -CallId
@@ -195,3 +179,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgCommunicationCallContentSharingSession](/powershell/module/Microsoft.Graph.CloudCommunications/Remove-MgCommunicationCallContentSharingSession?view=graph-powershell-v1.0)
+

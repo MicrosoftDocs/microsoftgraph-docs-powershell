@@ -51,13 +51,14 @@ Read-only.
 ### EXAMPLE 1
 ```powershell
 Get-MgBetaUserPhoto -UserId '3bb40cd7-03fe-40b7-8a1c-a14fdf0ab5fe'
-```
 
 Id      Height Width
 --      ------ -----
 240X240 240    240
 
+```
 ## PARAMETERS
+
 
 ### -All
 List all pages.
@@ -266,3 +267,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserPhoto](/powershell/module/Microsoft.Graph.Users/Get-MgUserPhoto?view=graph-powershell-v1.0)
+

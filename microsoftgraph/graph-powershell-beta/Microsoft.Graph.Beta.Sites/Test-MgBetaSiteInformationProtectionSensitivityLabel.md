@@ -48,18 +48,6 @@ Test-MgBetaSiteInformationProtectionSensitivityLabel -InputObject <ISitesIdentit
 ## DESCRIPTION
 Invoke action evaluate
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -287,3 +275,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Test-MgSiteInformationProtectionSensitivityLabel](/powershell/module/Microsoft.Graph.Sites/Test-MgSiteInformationProtectionSensitivityLabel?view=graph-powershell-v1.0)
+

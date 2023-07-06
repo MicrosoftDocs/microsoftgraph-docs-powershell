@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property synchronization in applications
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaBetaApplicationSynchronization](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaApplicationSynchronization?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Set-MgBetaApplicationSynchronization](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaApplicationSynchronization?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -45,18 +45,6 @@ Set-MgApplicationSynchronization -InputObject <IApplicationsIdentity>
 
 ## DESCRIPTION
 Update the navigation property synchronization in applications
-
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -665,7 +653,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[Version <String>]`: 
 
 ## RELATED LINKS
-[Set-MgBetaBetaApplicationSynchronization](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaApplicationSynchronization?view=graph-powershell-beta)
+[Set-MgBetaApplicationSynchronization](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaApplicationSynchronization?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Set-MgBetaBetaApplicationSynchronization](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaApplicationSynchronization?view=graph-powershell-beta)
+[Set-MgBetaApplicationSynchronization](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaApplicationSynchronization?view=graph-powershell-beta)
+

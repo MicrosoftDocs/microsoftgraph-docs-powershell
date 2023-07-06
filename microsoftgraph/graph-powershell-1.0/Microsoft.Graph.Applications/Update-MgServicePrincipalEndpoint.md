@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property endpoints in servicePrincipals
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBetaServicePrincipalEndpoint](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipalEndpoint?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaServicePrincipalEndpoint](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipalEndpoint?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -45,22 +45,6 @@ Update-MgServicePrincipalEndpoint -InputObject <IApplicationsIdentity> -BodyPara
 
 ## DESCRIPTION
 Update the navigation property endpoints in servicePrincipals
-
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 
@@ -331,4 +315,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgBetaBetaServicePrincipalEndpoint](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipalEndpoint?view=graph-powershell-beta)
+[Update-MgBetaServicePrincipalEndpoint](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipalEndpoint?view=graph-powershell-beta)
+

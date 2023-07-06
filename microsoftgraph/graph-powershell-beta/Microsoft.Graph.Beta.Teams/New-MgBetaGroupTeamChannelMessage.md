@@ -62,18 +62,6 @@ New-MgBetaGroupTeamChannelMessage -InputObject <ITeamsIdentity> -BodyParameter <
 ## DESCRIPTION
 Send a new chatMessage in the specified channel or a chat.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -924,3 +912,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgGroupTeamChannelMessage](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamChannelMessage?view=graph-powershell-v1.0)
+

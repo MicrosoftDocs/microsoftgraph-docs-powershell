@@ -41,22 +41,6 @@ Get-MgBetaGroupEventExceptionOccurrenceInstanceAttachment -InputObject <ICalenda
 Read the properties, relationships, or raw contents of an attachment that is attached to a user event, message, Outlook task, or group post.
 An attachment can be one of the following types: All these types of attachments are derived from the attachment resource.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -319,3 +303,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupEventExceptionOccurrenceInstanceAttachment](/powershell/module/Microsoft.Graph.Calendar/Get-MgGroupEventExceptionOccurrenceInstanceAttachment?view=graph-powershell-v1.0)
+

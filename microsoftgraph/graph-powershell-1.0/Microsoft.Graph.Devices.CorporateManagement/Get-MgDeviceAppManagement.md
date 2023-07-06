@@ -22,18 +22,6 @@ Get-MgDeviceAppManagement [-ExpandProperty <String[]>] [-Property <String[]>] [<
 ## DESCRIPTION
 Get deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -82,3 +70,4 @@ Get-MgDeviceAppMgt
 
 ## RELATED LINKS
 [Get-MgBetaDeviceAppManagement](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagement?view=graph-powershell-beta)
+

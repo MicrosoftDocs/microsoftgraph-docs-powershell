@@ -43,18 +43,6 @@ Update-MgBetaGroupDriveItemListItemDocumentSetVersionField -InputObject <IFilesI
 ## DESCRIPTION
 Update the navigation property fields in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -257,3 +245,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgGroupDriveItemListItemDocumentSetVersionField](/powershell/module/Microsoft.Graph.Files/Update-MgGroupDriveItemListItemDocumentSetVersionField?view=graph-powershell-v1.0)
+

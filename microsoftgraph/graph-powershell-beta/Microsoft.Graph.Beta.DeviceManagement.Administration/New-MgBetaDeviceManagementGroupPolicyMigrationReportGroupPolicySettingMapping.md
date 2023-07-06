@@ -59,22 +59,6 @@ New-MgBetaDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping
 ## DESCRIPTION
 Create new navigation property to groupPolicySettingMappings for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -589,3 +573,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping?view=graph-powershell-v1.0)
+

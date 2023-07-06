@@ -53,18 +53,6 @@ The operation will not succeed if the **allowStudentsToAddResources** flag is no
 To create a new file-based resource, upload the file to the resources folder associated with the submission.
 If the file doesn't exist or is not in that folder, the POST request will fail.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -289,3 +277,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgEducationMeAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Education/New-MgEducationMeAssignmentSubmissionResource?view=graph-powershell-v1.0)
+

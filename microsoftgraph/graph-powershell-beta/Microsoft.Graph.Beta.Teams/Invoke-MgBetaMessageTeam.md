@@ -23,22 +23,6 @@ Invoke-MgBetaMessageTeam [-Count] [-Filter <String>] [-Property <String[]>] [-Se
 ## DESCRIPTION
 Invoke function allMessages
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -160,3 +144,4 @@ ALIASES
 
 ## RELATED LINKS
 [Invoke-MgMessageTeam](/powershell/module/Microsoft.Graph.Teams/Invoke-MgMessageTeam?view=graph-powershell-v1.0)
+

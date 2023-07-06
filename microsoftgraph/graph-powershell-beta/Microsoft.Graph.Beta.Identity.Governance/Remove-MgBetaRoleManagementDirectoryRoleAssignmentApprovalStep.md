@@ -30,18 +30,6 @@ Remove-MgBetaRoleManagementDirectoryRoleAssignmentApprovalStep -InputObject <IId
 ## DESCRIPTION
 Delete navigation property steps for roleManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ApprovalId
@@ -269,3 +257,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgRoleManagementDirectoryRoleAssignmentApprovalStep](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgRoleManagementDirectoryRoleAssignmentApprovalStep?view=graph-powershell-v1.0)
+

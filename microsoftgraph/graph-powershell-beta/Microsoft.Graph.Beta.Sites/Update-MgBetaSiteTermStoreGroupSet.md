@@ -50,22 +50,6 @@ Update-MgBetaSiteTermStoreGroupSet -InputObject <ISitesIdentity> -BodyParameter 
 ## DESCRIPTION
 Update the navigation property sets in sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -633,3 +617,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgSiteTermStoreGroupSet](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteTermStoreGroupSet?view=graph-powershell-v1.0)
+

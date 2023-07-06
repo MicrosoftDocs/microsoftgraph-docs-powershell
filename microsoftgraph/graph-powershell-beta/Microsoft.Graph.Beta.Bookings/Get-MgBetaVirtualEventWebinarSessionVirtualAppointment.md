@@ -30,18 +30,6 @@ Get-MgBetaVirtualEventWebinarSessionVirtualAppointment -InputObject <IBookingsId
 ## DESCRIPTION
 Get virtualAppointment from solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -162,3 +150,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgVirtualEventWebinarSessionVirtualAppointment](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventWebinarSessionVirtualAppointment?view=graph-powershell-v1.0)
+

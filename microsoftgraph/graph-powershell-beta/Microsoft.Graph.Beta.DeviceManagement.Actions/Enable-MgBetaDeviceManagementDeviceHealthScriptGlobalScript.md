@@ -23,22 +23,6 @@ Enable-MgBetaDeviceManagementDeviceHealthScriptGlobalScript [-PassThru] [-WhatIf
 ## DESCRIPTION
 Invoke action enableGlobalScripts
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -PassThru
@@ -101,3 +85,4 @@ ALIASES
 
 ## RELATED LINKS
 [Enable-MgDeviceManagementDeviceHealthScriptGlobalScript](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Enable-MgDeviceManagementDeviceHealthScriptGlobalScript?view=graph-powershell-v1.0)
+

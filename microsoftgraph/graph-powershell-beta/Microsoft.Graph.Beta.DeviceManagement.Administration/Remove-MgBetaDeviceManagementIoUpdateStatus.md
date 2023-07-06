@@ -30,18 +30,6 @@ Remove-MgBetaDeviceManagementIoUpdateStatus -InputObject <IDeviceManagementAdmin
 ## DESCRIPTION
 Delete navigation property iosUpdateStatuses for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -214,3 +202,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDeviceManagementIoUpdateStatus](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Remove-MgDeviceManagementIoUpdateStatus?view=graph-powershell-v1.0)
+

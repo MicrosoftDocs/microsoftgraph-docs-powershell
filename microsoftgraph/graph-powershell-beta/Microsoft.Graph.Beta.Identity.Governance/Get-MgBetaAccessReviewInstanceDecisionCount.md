@@ -30,18 +30,6 @@ Get-MgBetaAccessReviewInstanceDecisionCount -InputObject <IIdentityGovernanceIde
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessReviewId
@@ -238,3 +226,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgAccessReviewInstanceDecisionCount](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgAccessReviewInstanceDecisionCount?view=graph-powershell-v1.0)
+

@@ -32,18 +32,6 @@ Remove-MgBetaBusinessScenario -InputObject <IBookingsIdentity> [-IfMatch <String
 Delete a businessScenario object.
 The deletion of a scenario causes all data associated with the scenario to be deleted.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -BusinessScenarioId
@@ -180,3 +168,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBusinessScenario](/powershell/module/Microsoft.Graph.Bookings/Remove-MgBusinessScenario?view=graph-powershell-v1.0)
+

@@ -22,22 +22,6 @@ Sync-MgBetaDeviceManagementAndroidForWorkSettingApp [-PassThru] [-WhatIf] [-Conf
 ## DESCRIPTION
 Invoke action syncApps
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -PassThru
@@ -100,3 +84,4 @@ ALIASES
 
 ## RELATED LINKS
 [Sync-MgDeviceManagementAndroidForWorkSettingApp](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Sync-MgDeviceManagementAndroidForWorkSettingApp?view=graph-powershell-v1.0)
+

@@ -32,18 +32,6 @@ Remove-MgBetaEducationMeAssignmentGradingCategory -InputObject <IEducationIdenti
 Remove a gradingCategory from an educationAssignment.
 Only teachers can perform this operation.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EducationAssignmentId
@@ -173,3 +161,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgEducationMeAssignmentGradingCategory](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationMeAssignmentGradingCategory?view=graph-powershell-v1.0)
+

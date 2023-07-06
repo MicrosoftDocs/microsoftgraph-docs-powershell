@@ -42,22 +42,6 @@ New-MgBetaDirectoryFeatureRolloutPolicyApplyToByRef -InputObject <IIdentityDirec
 ## DESCRIPTION
 Add an appliesTo on a featureRolloutPolicy object to specify the directoryObject to which the featureRolloutPolicy should be applied.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -247,3 +231,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgDirectoryFeatureRolloutPolicyApplyToByRef](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryFeatureRolloutPolicyApplyToByRef?view=graph-powershell-v1.0)
+

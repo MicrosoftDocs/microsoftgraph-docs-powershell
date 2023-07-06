@@ -47,22 +47,6 @@ Rename-MgBetaDeviceManagementVirtualEndpointCloudPc -InputObject <IDeviceManagem
 Rename a specific Cloud PC.
 Use this API to update the **displayName** for the Cloud PC entity.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -266,3 +250,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Rename-MgDeviceManagementVirtualEndpointCloudPc](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Rename-MgDeviceManagementVirtualEndpointCloudPc?view=graph-powershell-v1.0)
+

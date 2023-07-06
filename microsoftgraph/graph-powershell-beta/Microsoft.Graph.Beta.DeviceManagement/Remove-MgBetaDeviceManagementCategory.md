@@ -30,22 +30,6 @@ Remove-MgBetaDeviceManagementCategory -InputObject <IDeviceManagementIdentity> [
 ## DESCRIPTION
 Delete navigation property categories for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DeviceManagementSettingCategoryId
@@ -299,3 +283,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDeviceManagementCategory](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementCategory?view=graph-powershell-v1.0)
+

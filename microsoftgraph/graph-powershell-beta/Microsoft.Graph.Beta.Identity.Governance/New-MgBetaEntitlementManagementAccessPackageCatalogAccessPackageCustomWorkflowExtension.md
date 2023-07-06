@@ -52,18 +52,6 @@ New-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageCustomWorkflowEx
 ## DESCRIPTION
 Create new navigation property to accessPackageCustomWorkflowExtensions for identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessPackageCatalogId
@@ -390,3 +378,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgEntitlementManagementAccessPackageCatalogAccessPackageCustomWorkflowExtension](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementAccessPackageCatalogAccessPackageCustomWorkflowExtension?view=graph-powershell-v1.0)
+

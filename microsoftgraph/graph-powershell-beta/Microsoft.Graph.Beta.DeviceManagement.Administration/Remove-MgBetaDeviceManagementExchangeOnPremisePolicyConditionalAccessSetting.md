@@ -38,18 +38,6 @@ Remove-MgBetaDeviceManagementExchangeOnPremisePolicyConditionalAccessSetting
 ## DESCRIPTION
 Delete navigation property conditionalAccessSettings for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DeviceManagementExchangeOnPremisesPolicyId
@@ -222,3 +210,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDeviceManagementExchangeOnPremisePolicyConditionalAccessSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Remove-MgDeviceManagementExchangeOnPremisePolicyConditionalAccessSetting?view=graph-powershell-v1.0)
+

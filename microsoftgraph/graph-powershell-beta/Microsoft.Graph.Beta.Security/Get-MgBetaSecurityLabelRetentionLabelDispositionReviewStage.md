@@ -37,22 +37,6 @@ Get-MgBetaSecurityLabelRetentionLabelDispositionReviewStage -InputObject <ISecur
 ## DESCRIPTION
 Review stages during which reviewers are notified to determine whether a document must be deleted or retained.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -330,3 +314,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSecurityLabelRetentionLabelDispositionReviewStage](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityLabelRetentionLabelDispositionReviewStage?view=graph-powershell-v1.0)
+

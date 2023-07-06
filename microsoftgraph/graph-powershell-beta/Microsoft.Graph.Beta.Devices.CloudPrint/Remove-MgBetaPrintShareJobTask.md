@@ -30,18 +30,6 @@ Remove-MgBetaPrintShareJobTask -InputObject <IDevicesCloudPrintIdentity> [-IfMat
 ## DESCRIPTION
 Delete navigation property tasks for print
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -201,3 +189,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgPrintShareJobTask](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Remove-MgPrintShareJobTask?view=graph-powershell-v1.0)
+

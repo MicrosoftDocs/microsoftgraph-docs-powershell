@@ -30,18 +30,6 @@ Get-MgSiteAnalyticItemActivityStatActivityDriveItem -InputObject <ISitesIdentity
 ## DESCRIPTION
 Exposes the driveItem that was the target of this activity.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -195,3 +183,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSiteAnalyticItemActivityStatActivityDriveItem](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteAnalyticItemActivityStatActivityDriveItem?view=graph-powershell-beta)
+

@@ -37,22 +37,6 @@ Get-MgBetaDeviceManagementIntentDeviceState -InputObject <IDeviceManagementIdent
 ## DESCRIPTION
 Collection of states of all devices that the intent is applied to
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -411,3 +395,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementIntentDeviceState](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementIntentDeviceState?view=graph-powershell-v1.0)
+

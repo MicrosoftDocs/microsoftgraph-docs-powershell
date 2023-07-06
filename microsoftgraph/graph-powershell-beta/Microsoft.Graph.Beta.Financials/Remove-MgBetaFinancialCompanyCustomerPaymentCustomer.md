@@ -30,22 +30,6 @@ Remove-MgBetaFinancialCompanyCustomerPaymentCustomer -InputObject <IFinancialsId
 ## DESCRIPTION
 Delete navigation property customer for financials
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -CompanyId
@@ -213,3 +197,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgFinancialCompanyCustomerPaymentCustomer](/powershell/module/Microsoft.Graph.Financials/Remove-MgFinancialCompanyCustomerPaymentCustomer?view=graph-powershell-v1.0)
+

@@ -30,18 +30,6 @@ Remove-MgBetaUserManagedDeviceHealthScriptState -InputObject <IDevicesCorporateM
 ## DESCRIPTION
 Delete navigation property deviceHealthScriptStates for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DeviceId
@@ -282,3 +270,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgUserManagedDeviceHealthScriptState](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Remove-MgUserManagedDeviceHealthScriptState?view=graph-powershell-v1.0)
+

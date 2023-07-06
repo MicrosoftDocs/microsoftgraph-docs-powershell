@@ -31,22 +31,6 @@ Remove-MgBetaTeamPrimaryChannelMessageReplyHostedContent -InputObject <ITeamsIde
 ## DESCRIPTION
 Delete navigation property hostedContents for teams
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ChatMessageHostedContentId
@@ -245,3 +229,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgTeamPrimaryChannelMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamPrimaryChannelMessageReplyHostedContent?view=graph-powershell-v1.0)
+

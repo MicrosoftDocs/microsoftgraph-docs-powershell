@@ -28,22 +28,6 @@ Get-MgBetaUserManagedDeviceOemWarranty -InputObject <IUsersFunctionsIdentity> [<
 ## DESCRIPTION
 Invoke function getOemWarranty
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -150,4 +134,5 @@ INPUTOBJECT \<IUsersFunctionsIdentity\>: Identity Parameter
 [Get-MgUserManagedDeviceOemWarranty](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserManagedDeviceOemWarranty?view=graph-powershell-v1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausermanageddeviceoemwarranty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausermanageddeviceoemwarranty)
+
 

@@ -30,22 +30,6 @@ Remove-MgBetaDriveListItemVersionField -InputObject <IFilesIdentity> [-IfMatch <
 ## DESCRIPTION
 Delete navigation property fields for drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -216,3 +200,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDriveListItemVersionField](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveListItemVersionField?view=graph-powershell-v1.0)
+

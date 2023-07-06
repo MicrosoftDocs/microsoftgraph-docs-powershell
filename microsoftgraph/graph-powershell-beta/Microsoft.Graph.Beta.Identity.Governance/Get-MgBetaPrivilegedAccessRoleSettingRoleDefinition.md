@@ -32,22 +32,6 @@ Get-MgBetaPrivilegedAccessRoleSettingRoleDefinition -InputObject <IIdentityGover
 Read-only.
 The role definition that is enforced with this role setting.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -244,3 +228,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgPrivilegedAccessRoleSettingRoleDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgPrivilegedAccessRoleSettingRoleDefinition?view=graph-powershell-v1.0)
+

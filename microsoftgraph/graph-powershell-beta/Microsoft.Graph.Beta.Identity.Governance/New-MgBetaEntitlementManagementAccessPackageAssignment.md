@@ -34,22 +34,6 @@ New-MgBetaEntitlementManagementAccessPackageAssignment -AccessPackageId <String>
 ## DESCRIPTION
 Create a new entitlement management accessPackageAssignment
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AccessPackageId
@@ -5211,3 +5195,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgEntitlementManagementAccessPackageAssignment](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementAccessPackageAssignment?view=graph-powershell-v1.0)
+

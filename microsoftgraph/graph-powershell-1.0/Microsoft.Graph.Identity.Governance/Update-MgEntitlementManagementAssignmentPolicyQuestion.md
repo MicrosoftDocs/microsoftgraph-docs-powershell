@@ -44,18 +44,6 @@ Update-MgEntitlementManagementAssignmentPolicyQuestion -InputObject <IIdentityGo
 ## DESCRIPTION
 Update the navigation property questions in identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessPackageAssignmentPolicyId
@@ -334,3 +322,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Text <String>]`: The question in the specific language. Required.
 
 ## RELATED LINKS
+

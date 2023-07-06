@@ -31,22 +31,6 @@ Remove-MgBetaDeviceManagementUserExperienceAnalyticDevicePerformance -InputObjec
 ## DESCRIPTION
 Delete navigation property userExperienceAnalyticsDevicePerformance for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -300,3 +284,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDeviceManagementUserExperienceAnalyticDevicePerformance](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementUserExperienceAnalyticDevicePerformance?view=graph-powershell-v1.0)
+

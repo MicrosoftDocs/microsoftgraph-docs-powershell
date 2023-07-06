@@ -55,22 +55,6 @@ Update-MgBetaPrivilegedAccessRoleAssignmentRequest -InputObject <IIdentityGovern
 ## DESCRIPTION
 Update the navigation property roleAssignmentRequests in privilegedAccess
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -806,3 +790,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgPrivilegedAccessRoleAssignmentRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgPrivilegedAccessRoleAssignmentRequest?view=graph-powershell-v1.0)
+

@@ -42,22 +42,6 @@ New-MgBetaDeviceManagementMicrosoftTunnelServerLogCollectionResponseDownloadUrl
 ## DESCRIPTION
 Invoke action createDownloadUrl
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -195,3 +179,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgDeviceManagementMicrosoftTunnelServerLogCollectionResponseDownloadUrl](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/New-MgDeviceManagementMicrosoftTunnelServerLogCollectionResponseDownloadUrl?view=graph-powershell-v1.0)
+

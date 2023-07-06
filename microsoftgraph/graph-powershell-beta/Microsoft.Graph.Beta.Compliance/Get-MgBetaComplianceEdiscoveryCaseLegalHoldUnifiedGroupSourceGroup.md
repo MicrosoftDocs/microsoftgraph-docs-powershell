@@ -30,22 +30,6 @@ Get-MgBetaComplianceEdiscoveryCaseLegalHoldUnifiedGroupSourceGroup -InputObject 
 ## DESCRIPTION
 The group associated with the unifiedGroupSource.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -CaseId
@@ -175,3 +159,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgComplianceEdiscoveryCaseLegalHoldUnifiedGroupSourceGroup](/powershell/module/Microsoft.Graph.Compliance/Get-MgComplianceEdiscoveryCaseLegalHoldUnifiedGroupSourceGroup?view=graph-powershell-v1.0)
+

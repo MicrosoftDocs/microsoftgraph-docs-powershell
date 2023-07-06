@@ -30,18 +30,6 @@ Get-MgBetaEducationClassAssignmentSubmissionCount -InputObject <IEducationIdenti
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EducationAssignmentId
@@ -155,3 +143,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgEducationClassAssignmentSubmissionCount](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassAssignmentSubmissionCount?view=graph-powershell-v1.0)
+

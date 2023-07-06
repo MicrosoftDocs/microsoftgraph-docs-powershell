@@ -30,22 +30,6 @@ Remove-MgBetaDeviceManagementReusableSetting -InputObject <IDeviceManagementIden
 ## DESCRIPTION
 Delete navigation property reusableSettings for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DeviceManagementConfigurationSettingDefinitionId
@@ -299,3 +283,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDeviceManagementReusableSetting](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementReusableSetting?view=graph-powershell-v1.0)
+

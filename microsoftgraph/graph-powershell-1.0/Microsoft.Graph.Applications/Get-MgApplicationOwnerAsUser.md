@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.user
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaApplicationOwnerAsUser](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationOwnerAsUser?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaApplicationOwnerAsUser](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationOwnerAsUser?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -36,18 +36,6 @@ Get-MgApplicationOwnerAsUser -InputObject <IApplicationsIdentity> [-ExpandProper
 
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.user
-
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -305,4 +293,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaApplicationOwnerAsUser](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationOwnerAsUser?view=graph-powershell-beta)
+[Get-MgBetaApplicationOwnerAsUser](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationOwnerAsUser?view=graph-powershell-beta)
+

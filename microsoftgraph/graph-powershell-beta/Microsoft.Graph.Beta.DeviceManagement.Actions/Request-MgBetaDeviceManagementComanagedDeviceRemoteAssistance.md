@@ -30,22 +30,6 @@ Request-MgBetaDeviceManagementComanagedDeviceRemoteAssistance -InputObject <IDev
 ## DESCRIPTION
 Request remote assistance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -198,3 +182,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Request-MgDeviceManagementComanagedDeviceRemoteAssistance](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Request-MgDeviceManagementComanagedDeviceRemoteAssistance?view=graph-powershell-v1.0)
+

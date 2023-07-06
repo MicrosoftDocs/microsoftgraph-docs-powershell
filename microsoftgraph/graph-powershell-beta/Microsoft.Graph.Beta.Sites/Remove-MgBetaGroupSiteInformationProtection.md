@@ -30,18 +30,6 @@ Remove-MgBetaGroupSiteInformationProtection -InputObject <ISitesIdentity> [-IfMa
 ## DESCRIPTION
 Delete navigation property informationProtection for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -GroupId
@@ -223,3 +211,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgGroupSiteInformationProtection](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSiteInformationProtection?view=graph-powershell-v1.0)
+

@@ -37,22 +37,6 @@ Get-MgBetaFinancialCompanyItem -InputObject <IFinancialsIdentity> [-ExpandProper
 ## DESCRIPTION
 Get items from financials
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -310,3 +294,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgFinancialCompanyItem](/powershell/module/Microsoft.Graph.Financials/Get-MgFinancialCompanyItem?view=graph-powershell-v1.0)
+

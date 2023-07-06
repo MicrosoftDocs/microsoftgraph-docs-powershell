@@ -23,22 +23,6 @@ Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthRuntimeDetail [-Exp
 ## DESCRIPTION
 User Experience Analytics Battery Health Runtime Details
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -85,3 +69,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgDeviceManagementUserExperienceAnalyticBatteryHealthRuntimeDetail](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticBatteryHealthRuntimeDetail?view=graph-powershell-v1.0)
+

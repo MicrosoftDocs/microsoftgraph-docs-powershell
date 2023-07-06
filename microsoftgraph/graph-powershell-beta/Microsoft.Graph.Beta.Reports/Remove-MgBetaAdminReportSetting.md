@@ -22,18 +22,6 @@ Remove-MgBetaAdminReportSetting [-IfMatch <String>] [-PassThru] [-WhatIf] [-Conf
 ## DESCRIPTION
 Delete navigation property reportSettings for admin
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -111,3 +99,4 @@ ALIASES
 
 ## RELATED LINKS
 [Remove-MgAdminReportSetting](/powershell/module/Microsoft.Graph.Reports/Remove-MgAdminReportSetting?view=graph-powershell-v1.0)
+

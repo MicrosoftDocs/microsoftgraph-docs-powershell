@@ -38,22 +38,6 @@ Get-MgBetaDeviceManagementGroupPolicyConfigurationDefinitionValue -InputObject <
 ## DESCRIPTION
 The list of enabled or disabled group policy definition values for the configuration.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -412,3 +396,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementGroupPolicyConfigurationDefinitionValue](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementGroupPolicyConfigurationDefinitionValue?view=graph-powershell-v1.0)
+

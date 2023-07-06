@@ -39,22 +39,6 @@ Get-MgBetaGroupDriveRootSubscription -InputObject <IFilesIdentity> [-ExpandPrope
 The set of subscriptions on the item.
 Only supported on the root of a drive.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -315,3 +299,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupDriveRootSubscription](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveRootSubscription?view=graph-powershell-v1.0)
+

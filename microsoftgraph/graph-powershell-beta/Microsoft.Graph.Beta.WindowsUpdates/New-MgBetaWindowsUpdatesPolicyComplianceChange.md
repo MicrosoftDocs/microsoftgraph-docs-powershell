@@ -45,18 +45,6 @@ New-MgBetaWindowsUpdatesPolicyComplianceChange -InputObject <IWindowsUpdatesIden
 ## DESCRIPTION
 Create a new contentApproval object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -381,3 +369,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgWindowsUpdatesPolicyComplianceChange](/powershell/module/Microsoft.Graph.WindowsUpdates/New-MgWindowsUpdatesPolicyComplianceChange?view=graph-powershell-v1.0)
+

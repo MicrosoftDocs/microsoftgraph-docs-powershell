@@ -30,18 +30,6 @@ Remove-MgBetaIdentityGovernanceRoleManagementAlertDefinition -InputObject <IIden
 ## DESCRIPTION
 Delete navigation property alertDefinitions for identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -254,3 +242,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgIdentityGovernanceRoleManagementAlertDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgIdentityGovernanceRoleManagementAlertDefinition?view=graph-powershell-v1.0)
+

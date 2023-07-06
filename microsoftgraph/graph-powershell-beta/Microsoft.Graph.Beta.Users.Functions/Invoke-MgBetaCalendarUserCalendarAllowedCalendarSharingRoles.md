@@ -43,22 +43,6 @@ Invoke-MgBetaCalendarUserCalendarAllowedCalendarSharingRoles -InputObject <IUser
 ## DESCRIPTION
 Invoke function allowedCalendarSharingRoles
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -CalendarId
@@ -256,3 +240,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgCalendarUserCalendarAllowedCalendarSharingRoles](/powershell/module/Microsoft.Graph.Users.Functions/Invoke-MgCalendarUserCalendarAllowedCalendarSharingRoles?view=graph-powershell-v1.0)
+

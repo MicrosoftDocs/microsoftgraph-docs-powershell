@@ -48,18 +48,6 @@ Import-MgBetaRoleManagementEnterpriseAppResourceNamespaceResourceAction
 ## DESCRIPTION
 Invoke action importResourceActions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -340,3 +328,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Import-MgRoleManagementEnterpriseAppResourceNamespaceResourceAction](/powershell/module/Microsoft.Graph.Identity.Governance/Import-MgRoleManagementEnterpriseAppResourceNamespaceResourceAction?view=graph-powershell-v1.0)
+

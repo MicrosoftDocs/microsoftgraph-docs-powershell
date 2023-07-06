@@ -30,22 +30,6 @@ Get-MgBetaUserManagedDeviceWithFailedApp -InputObject <IUsersFunctionsIdentity> 
 ## DESCRIPTION
 Retrieves the list of devices with failed or pending apps
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -213,3 +197,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserManagedDeviceWithFailedApp](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserManagedDeviceWithFailedApp?view=graph-powershell-v1.0)
+

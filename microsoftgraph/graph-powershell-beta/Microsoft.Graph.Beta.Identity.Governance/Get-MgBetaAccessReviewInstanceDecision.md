@@ -37,22 +37,6 @@ Get-MgBetaAccessReviewInstanceDecision -InputObject <IIdentityGovernanceIdentity
 ## DESCRIPTION
 The collection of decisions for this access review.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AccessReviewDecisionId
@@ -385,3 +369,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgAccessReviewInstanceDecision](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgAccessReviewInstanceDecision?view=graph-powershell-v1.0)
+

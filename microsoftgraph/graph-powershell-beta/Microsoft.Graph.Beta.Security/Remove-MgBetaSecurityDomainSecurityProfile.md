@@ -30,22 +30,6 @@ Remove-MgBetaSecurityDomainSecurityProfile -InputObject <ISecurityIdentity> [-If
 ## DESCRIPTION
 Delete navigation property domainSecurityProfiles for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DomainSecurityProfileId
@@ -218,3 +202,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgSecurityDomainSecurityProfile](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityDomainSecurityProfile?view=graph-powershell-v1.0)
+
