@@ -32,7 +32,7 @@ Delete an administrativeUnit.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Remove-MgBetaDirectoryAdministrativeUnit -AdministrativeUnitId '416f19a5-2e01-4d15-a78c-d9028fee1ebb'
 
@@ -190,4 +190,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgAdministrativeUnit](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgAdministrativeUnit?view=graph-powershell-v1.0)
+
 

@@ -37,7 +37,7 @@ Get a specific commercial subscription that an organization has acquired.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Get-MgBetaSubscribedSKU | Format-List
 ```
@@ -236,3 +236,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSubscribedSku](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgSubscribedSku?view=graph-powershell-v1.0)
+

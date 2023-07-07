@@ -25,7 +25,7 @@ Read the properties and relationships of an accessReviewPolicy object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaIdentityGovernanceAccessReviewPolicy
@@ -77,3 +77,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgIdentityGovernanceAccessReviewPolicy](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceAccessReviewPolicy?view=graph-powershell-v1.0)
+

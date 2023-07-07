@@ -54,7 +54,7 @@ To grant an app role assignment to a group, you need three identifiers: Addition
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 $appRoleAssignment = @{
   "principalId"= "f07a8d78-f18c-4c02-b339-9ebace025122"
@@ -379,3 +379,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaGroupAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupAppRoleAssignment?view=graph-powershell-beta)
+

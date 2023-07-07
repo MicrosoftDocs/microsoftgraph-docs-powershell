@@ -35,7 +35,7 @@ This operation is used to assign a user to an access package, update the assignm
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -51,7 +51,7 @@ $params = @{
 New-MgEntitlementManagementAssignmentRequest -BodyParameter $params
 
 ```
-### EXAMPLE 2
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -65,7 +65,7 @@ $params = @{
 New-MgEntitlementManagementAssignmentRequest -BodyParameter $params
 
 ```
-### EXAMPLE 3
+### Example 3
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -79,7 +79,7 @@ $params = @{
 New-MgEntitlementManagementAssignmentRequest -BodyParameter $params
 
 ```
-### EXAMPLE 4
+### Example 4
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -114,7 +114,7 @@ $params = @{
 New-MgEntitlementManagementAssignmentRequest -BodyParameter $params
 
 ```
-### EXAMPLE 5
+### Example 5
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -8591,4 +8591,5 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 
 ## RELATED LINKS
+
 

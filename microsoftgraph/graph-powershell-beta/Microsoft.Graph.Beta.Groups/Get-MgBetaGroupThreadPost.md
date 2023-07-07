@@ -55,7 +55,7 @@ Since the **post** resource supports extensions, you can also use the `GET` oper
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 Get-MgBetaGroupThreadPost -GroupId $groupId -ConversationThreadId $conversationThreadId
@@ -326,3 +326,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupThreadPost](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupThreadPost?view=graph-powershell-v1.0)
+

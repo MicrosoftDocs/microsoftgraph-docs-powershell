@@ -33,7 +33,7 @@ Set the **isPublished** property to true, and **publicUrl** property to the URL 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Bookings
 Publish-MgBetaBookingBusiness -BookingBusinessId $bookingBusinessId
@@ -160,3 +160,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Publish-MgBookingBusiness](/powershell/module/Microsoft.Graph.Bookings/Publish-MgBookingBusiness?view=graph-powershell-v1.0)
+

@@ -25,7 +25,7 @@ Invoke function getAttackSimulationRepeatOffenders
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Reports
 Get-MgBetaReportAttackSimulationRepeatOffender
@@ -122,3 +122,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgReportAttackSimulationRepeatOffender](/powershell/module/Microsoft.Graph.Reports/Get-MgReportAttackSimulationRepeatOffender?view=graph-powershell-v1.0)
+

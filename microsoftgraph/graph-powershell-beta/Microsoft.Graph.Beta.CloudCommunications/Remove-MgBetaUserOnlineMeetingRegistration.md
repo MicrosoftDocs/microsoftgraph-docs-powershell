@@ -32,14 +32,14 @@ Disable and delete the meetingRegistration of an onlineMeeting on behalf of the 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 # A UPN can also be used as -UserId.
 Remove-MgBetaUserOnlineMeetingRegistration -UserId $userId -OnlineMeetingId $onlineMeetingId
 ```
 
-### EXAMPLE 2
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 # A UPN can also be used as -UserId.
@@ -195,3 +195,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgUserOnlineMeetingRegistration](/powershell/module/Microsoft.Graph.CloudCommunications/Remove-MgUserOnlineMeetingRegistration?view=graph-powershell-v1.0)
+

@@ -192,3 +192,4 @@ INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 [Remove-MgRoleManagementDirectoryRoleDefinition](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Remove-MgRoleManagementDirectoryRoleDefinition?view=graph-powershell-v1.0)
+

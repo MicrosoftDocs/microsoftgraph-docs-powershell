@@ -46,7 +46,7 @@ The owners are a set of users or service principals who are allowed to modify th
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 $newGroupOwner =@{
   "@odata.id"= "https://graph.microsoft.com/v1.0/users/{4de19c17-6a28-4a91-86d1-f717c3c8c229}"
@@ -252,3 +252,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgGroupOwnerByRef](/powershell/module/Microsoft.Graph.Groups/New-MgGroupOwnerByRef?view=graph-powershell-v1.0)
+

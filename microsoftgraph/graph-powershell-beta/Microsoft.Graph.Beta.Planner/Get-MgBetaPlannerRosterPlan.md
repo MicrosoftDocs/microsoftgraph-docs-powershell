@@ -39,7 +39,7 @@ Retrieves the plans contained by the plannerRoster.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Planner
 Get-MgBetaPlannerRosterPlan -PlannerRosterId $plannerRosterId
@@ -274,3 +274,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgPlannerRosterPlan](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerRosterPlan?view=graph-powershell-v1.0)
+

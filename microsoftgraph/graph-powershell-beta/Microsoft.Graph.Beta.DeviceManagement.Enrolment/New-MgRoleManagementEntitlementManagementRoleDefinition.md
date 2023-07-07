@@ -366,3 +366,4 @@ ROLEPERMISSIONS <IMicrosoftGraphUnifiedRolePermission\[]>: List of permissions i
 
 ## RELATED LINKS
 [New-MgRoleManagementEntitlementManagementRoleDefinition](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/New-MgRoleManagementEntitlementManagementRoleDefinition?view=graph-powershell-v1.0)
+

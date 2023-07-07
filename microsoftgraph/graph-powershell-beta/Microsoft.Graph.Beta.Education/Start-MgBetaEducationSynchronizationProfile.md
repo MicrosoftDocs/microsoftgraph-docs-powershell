@@ -40,7 +40,7 @@ If the response contains only warnings, synchronization will start.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 Start-MgBetaEducationSynchronizationProfile -EducationSynchronizationProfileId $educationSynchronizationProfileId
@@ -145,3 +145,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Start-MgEducationSynchronizationProfile](/powershell/module/Microsoft.Graph.Education/Start-MgEducationSynchronizationProfile?view=graph-powershell-v1.0)
+

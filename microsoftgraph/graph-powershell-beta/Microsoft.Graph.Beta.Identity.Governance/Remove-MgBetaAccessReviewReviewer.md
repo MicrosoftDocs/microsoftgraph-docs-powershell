@@ -36,7 +36,7 @@ This operation is not permitted for an access review in which users review their
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Remove-MgBetaAccessReviewReviewer -AccessReviewId $accessReviewId -AccessReviewReviewerId $accessReviewReviewerId
@@ -269,3 +269,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgAccessReviewReviewer](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgAccessReviewReviewer?view=graph-powershell-v1.0)
+

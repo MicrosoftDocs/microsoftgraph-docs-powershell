@@ -52,7 +52,7 @@ For details, see Export documents from a review set in Advanced eDiscovery.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 $params = @{
@@ -325,3 +325,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Export-MgComplianceEdiscoveryCaseReviewSet](/powershell/module/Microsoft.Graph.Compliance/Export-MgComplianceEdiscoveryCaseReviewSet?view=graph-powershell-v1.0)
+

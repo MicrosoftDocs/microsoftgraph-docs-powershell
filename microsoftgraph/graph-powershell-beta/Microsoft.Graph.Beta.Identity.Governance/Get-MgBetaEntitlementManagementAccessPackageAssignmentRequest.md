@@ -51,7 +51,7 @@ In Azure AD entitlement management, retrieve the properties and relationships of
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Get-MgBetaEntitlementManagementAccessPackageAssignmentRequest | Format-List
 ```
@@ -72,7 +72,7 @@ Requestor               : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccess
 Schedule                : Microsoft.Graph.PowerShell.Models.MicrosoftGraphRequestSchedule
 AdditionalProperties    : {[@odata.context, https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackageAssignmentRequests/$entity]}
 
-### EXAMPLE 2
+### Example 2
 ```powershell
 Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All'
 Get-MgBetaEntitlementManagementAccessPackageAssignmentRequest -AccessPackageAssignmentRequestId 'c82bc0cd-4fbc-4492-8c75-54c41dc74803'| Format-List
@@ -411,3 +411,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgEntitlementManagementAccessPackageAssignmentRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackageAssignmentRequest?view=graph-powershell-v1.0)
+

@@ -26,7 +26,7 @@ Retrieve a list of section groups from the specified notebook.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Notes
 # A UPN can also be used as -UserId.
@@ -230,3 +230,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaUserOnenoteOperation](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaUserOnenoteOperation?view=graph-powershell-beta)
+

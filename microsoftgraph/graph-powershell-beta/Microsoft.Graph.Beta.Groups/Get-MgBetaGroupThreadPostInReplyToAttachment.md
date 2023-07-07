@@ -45,7 +45,7 @@ Supports $expand.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 
@@ -332,4 +332,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupThreadPostInReplyToAttachment](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupThreadPostInReplyToAttachment?view=graph-powershell-v1.0)
+
 

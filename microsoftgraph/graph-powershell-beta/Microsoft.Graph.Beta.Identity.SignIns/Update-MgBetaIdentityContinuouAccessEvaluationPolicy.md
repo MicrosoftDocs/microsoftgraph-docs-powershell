@@ -33,7 +33,7 @@ Update the properties of a continuousAccessEvaluationPolicy object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
@@ -250,3 +250,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgIdentityContinuouAccessEvaluationPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityContinuouAccessEvaluationPolicy?view=graph-powershell-v1.0)
+

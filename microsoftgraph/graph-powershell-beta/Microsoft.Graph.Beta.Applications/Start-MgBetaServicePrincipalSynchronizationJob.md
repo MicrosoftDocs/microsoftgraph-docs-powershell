@@ -40,7 +40,7 @@ Use the start job only when the job is currently paused or in quarantine.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 Start-MgBetaServicePrincipalSynchronizationJob -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId
@@ -190,3 +190,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Start-MgServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/Start-MgServicePrincipalSynchronizationJob?view=graph-powershell-v1.0)
+

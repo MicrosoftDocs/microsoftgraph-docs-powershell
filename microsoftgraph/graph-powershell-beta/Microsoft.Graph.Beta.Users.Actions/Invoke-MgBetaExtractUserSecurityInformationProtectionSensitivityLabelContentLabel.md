@@ -51,7 +51,7 @@ The contentInfo input is resolved to informationProtectionContentLabel.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
@@ -288,3 +288,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgExtractUserSecurityInformationProtectionSensitivityLabelContentLabel](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgExtractUserSecurityInformationProtectionSensitivityLabelContentLabel?view=graph-powershell-v1.0)
+

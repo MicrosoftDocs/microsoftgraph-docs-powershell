@@ -32,7 +32,7 @@ Undo soft deletion of a single chatMessage or a chat message reply in a channel 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 Undo-MgBetaUserChatMessageSoftDelete -UserId $userId -ChatId $chatId -ChatMessageId $chatMessageId
@@ -209,3 +209,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Undo-MgUserChatMessageSoftDelete](/powershell/module/Microsoft.Graph.Users.Actions/Undo-MgUserChatMessageSoftDelete?view=graph-powershell-v1.0)
+

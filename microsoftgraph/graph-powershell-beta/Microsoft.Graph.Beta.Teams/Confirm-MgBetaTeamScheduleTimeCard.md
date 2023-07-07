@@ -31,7 +31,7 @@ Confirm a specific timeCard.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Confirm-MgBetaTeamScheduleTimeCard -TeamId $teamId -TimeCardId $timeCardId
@@ -175,3 +175,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Confirm-MgTeamScheduleTimeCard](/powershell/module/Microsoft.Graph.Teams/Confirm-MgTeamScheduleTimeCard?view=graph-powershell-v1.0)
+

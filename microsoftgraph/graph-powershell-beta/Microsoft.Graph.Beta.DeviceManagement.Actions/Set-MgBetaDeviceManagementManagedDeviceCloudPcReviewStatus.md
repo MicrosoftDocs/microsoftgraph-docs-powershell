@@ -52,7 +52,7 @@ After the review is completed, use this API again to set the Cloud PC back to a 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
 $params = @{
@@ -291,3 +291,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgDeviceManagementManagedDeviceCloudPcReviewStatus](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Set-MgDeviceManagementManagedDeviceCloudPcReviewStatus?view=graph-powershell-v1.0)
+

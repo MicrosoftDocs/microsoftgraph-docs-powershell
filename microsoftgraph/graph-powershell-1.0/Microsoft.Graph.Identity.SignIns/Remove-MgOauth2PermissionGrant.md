@@ -36,7 +36,7 @@ Existing access tokens will continue to be valid for their lifetime, but new acc
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -214,4 +214,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaOauth2PermissionGrant](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaOauth2PermissionGrant?view=graph-powershell-beta)
+
 

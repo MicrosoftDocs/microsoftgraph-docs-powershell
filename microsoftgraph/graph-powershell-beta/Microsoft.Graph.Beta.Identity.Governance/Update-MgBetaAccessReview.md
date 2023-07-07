@@ -64,7 +64,7 @@ To apply the decisions to the target group or app access rights, use the apply A
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{
@@ -716,3 +716,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgAccessReview](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgAccessReview?view=graph-powershell-v1.0)
+

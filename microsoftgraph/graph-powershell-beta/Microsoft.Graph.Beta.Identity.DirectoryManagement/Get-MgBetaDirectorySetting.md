@@ -39,13 +39,13 @@ Retrieve the properties of a specific directory setting object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 Get-MgBetaDirectorySetting -DirectorySettingId $directorySettingId
 ```
 
-### EXAMPLE 2
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 Get-MgBetaDirectorySetting
@@ -278,3 +278,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDirectorySetting](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectorySetting?view=graph-powershell-v1.0)
+

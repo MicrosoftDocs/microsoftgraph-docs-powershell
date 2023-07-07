@@ -26,7 +26,7 @@ Retrieve a list of **plannertask** objects assigned to a User.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Planner
 # A UPN can also be used as -UserId.
@@ -215,3 +215,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaUserPlannerTask](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaUserPlannerTask?view=graph-powershell-beta)
+

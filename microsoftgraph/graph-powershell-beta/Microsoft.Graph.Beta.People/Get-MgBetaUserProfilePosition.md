@@ -39,14 +39,14 @@ Retrieve the properties and relationships of a workPosition object in a user's p
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 # A UPN can also be used as -UserId.
 Get-MgBetaUserProfilePosition -UserId $userId
 ```
 
-### EXAMPLE 2
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 # A UPN can also be used as -UserId.
@@ -296,3 +296,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserProfilePosition](/powershell/module/Microsoft.Graph.People/Get-MgUserProfilePosition?view=graph-powershell-v1.0)
+

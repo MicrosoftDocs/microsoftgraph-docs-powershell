@@ -96,7 +96,7 @@ Update entity in servicePrincipals
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 $ServicePrincipalUpdate =@{
   "accountEnabled" = "true"
@@ -1844,3 +1844,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipal?view=graph-powershell-beta)
+

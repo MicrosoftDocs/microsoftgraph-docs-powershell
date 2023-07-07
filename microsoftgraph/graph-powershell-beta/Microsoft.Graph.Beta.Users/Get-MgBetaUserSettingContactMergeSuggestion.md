@@ -32,7 +32,7 @@ Read the properties and relationships of a contactMergeSuggestions object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users
 # A UPN can also be used as -UserId.
@@ -142,3 +142,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserSettingContactMergeSuggestion](/powershell/module/Microsoft.Graph.Users/Get-MgUserSettingContactMergeSuggestion?view=graph-powershell-v1.0)
+

@@ -39,7 +39,7 @@ Retrieve a single permissionGrantPolicy object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Connect-MgGraph -Scopes "Policy.Read.PermissionGrant"
 Get-MgPolicyPermissionGrantPolicy | fl
@@ -65,7 +65,7 @@ https://graph.microsoft.com/beta/$metadata#policies/permissionGrantPolicies('mic
 https://graph.microsoft.com/beta/$metadata#policies/permissionGrantPolicies('microsoft-all-application-permissions-for-chat')/excludes]}
 
 ```
-### EXAMPLE 2
+### Example 2
 ```powershell
 Connect-MgGraph -Scopes "Policy.Read.PermissionGrant"
 Get-MgPolicyPermissionGrantPolicy -PermissionGrantPolicyId "microsoft-all-application-permissions" | fl
@@ -342,4 +342,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaPolicyPermissionGrantPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyPermissionGrantPolicy?view=graph-powershell-beta)
+
 

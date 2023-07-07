@@ -90,7 +90,7 @@ Update the properties of an application object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Update-MgApplication `
   -ApplicationId 'f6b30057-7095-4e2c-89f8-224149f591b7' `
@@ -1728,3 +1728,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaApplication](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplication?view=graph-powershell-beta)
+

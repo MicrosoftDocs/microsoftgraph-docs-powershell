@@ -25,7 +25,7 @@ Invoke function my
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Invoke-MgBetaMyPrivilegedRoleAssignmentRequest
@@ -152,3 +152,4 @@ ALIASES
 
 ## RELATED LINKS
 [Invoke-MgMyPrivilegedRoleAssignmentRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgMyPrivilegedRoleAssignmentRequest?view=graph-powershell-v1.0)
+

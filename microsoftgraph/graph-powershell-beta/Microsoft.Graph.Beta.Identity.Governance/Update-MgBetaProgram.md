@@ -46,7 +46,7 @@ In the Azure AD access reviews feature, update an existing program object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{
@@ -387,3 +387,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgProgram](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgProgram?view=graph-powershell-v1.0)
+

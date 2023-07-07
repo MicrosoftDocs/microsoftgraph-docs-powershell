@@ -44,7 +44,7 @@ Create new navigation property to endpoints for print
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
 
@@ -234,4 +234,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgPrintServiceEndpoint](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintServiceEndpoint?view=graph-powershell-v1.0)
+
 

@@ -32,7 +32,7 @@ Unpublish a [contentType][] from a content type hub site.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 
@@ -220,4 +220,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Unpublish-MgSiteListContentType](/powershell/module/Microsoft.Graph.Sites/Unpublish-MgSiteListContentType?view=graph-powershell-v1.0)
+
 

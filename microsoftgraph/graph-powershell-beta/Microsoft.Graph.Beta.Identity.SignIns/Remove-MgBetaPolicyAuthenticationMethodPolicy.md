@@ -25,7 +25,7 @@ Delete navigation property authenticationMethodsPolicy for policies
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -127,4 +127,5 @@ ALIASES
 
 ## RELATED LINKS
 [Remove-MgPolicyAuthenticationMethodPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyAuthenticationMethodPolicy?view=graph-powershell-v1.0)
+
 

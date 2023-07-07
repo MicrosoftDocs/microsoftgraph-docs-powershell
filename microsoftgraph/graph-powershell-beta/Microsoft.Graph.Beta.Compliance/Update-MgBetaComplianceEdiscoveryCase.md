@@ -60,7 +60,7 @@ Update the properties of a case object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 $params = @{
@@ -15070,3 +15070,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgComplianceEdiscoveryCase](/powershell/module/Microsoft.Graph.Compliance/Update-MgComplianceEdiscoveryCase?view=graph-powershell-v1.0)
+

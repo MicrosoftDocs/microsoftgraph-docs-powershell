@@ -32,7 +32,7 @@ Delete a bookingService object in the specified bookingBusiness.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Bookings
 Remove-MgBetaBookingBusinessService -BookingBusinessId $bookingBusinessId -BookingServiceId $bookingServiceId
@@ -189,3 +189,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBookingBusinessService](/powershell/module/Microsoft.Graph.Bookings/Remove-MgBookingBusinessService?view=graph-powershell-v1.0)
+

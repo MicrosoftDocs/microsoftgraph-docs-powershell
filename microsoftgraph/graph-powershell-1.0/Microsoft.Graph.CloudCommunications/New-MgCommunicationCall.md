@@ -43,7 +43,7 @@ You will need to register the calling bot and go through the list of permissions
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
 
@@ -78,7 +78,7 @@ $params = @{
 New-MgCommunicationCall -BodyParameter $params
 
 ```
-### EXAMPLE 2
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
 
@@ -123,7 +123,7 @@ $params = @{
 New-MgCommunicationCall -BodyParameter $params
 
 ```
-### EXAMPLE 3
+### Example 3
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
 
@@ -179,7 +179,7 @@ $params = @{
 New-MgCommunicationCall -BodyParameter $params
 
 ```
-### EXAMPLE 4
+### Example 4
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
 
@@ -235,7 +235,7 @@ $params = @{
 New-MgCommunicationCall -BodyParameter $params
 
 ```
-### EXAMPLE 5
+### Example 5
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
 
@@ -274,7 +274,7 @@ $params = @{
 New-MgCommunicationCall -BodyParameter $params
 
 ```
-### EXAMPLE 6
+### Example 6
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
 
@@ -312,7 +312,7 @@ $params = @{
 New-MgCommunicationCall -BodyParameter $params
 
 ```
-### EXAMPLE 7
+### Example 7
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
 
@@ -337,7 +337,7 @@ $params = @{
 
 New-MgCommunicationCall -BodyParameter $params
 ```
-### EXAMPLE 8
+### Example 8
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
 
@@ -362,7 +362,7 @@ $params = @{
 
 New-MgCommunicationCall -BodyParameter $params
 ```
-### EXAMPLE 9
+### Example 9
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
 
@@ -407,7 +407,7 @@ $params = @{
 
 New-MgCommunicationCall -BodyParameter $params
 ```
-### EXAMPLE 10
+### Example 10
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
 
@@ -1181,4 +1181,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaCommunicationCall?view=graph-powershell-beta)
+
 

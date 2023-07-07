@@ -34,7 +34,7 @@ Invoke function getCompatibleHubContentTypes
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Sites
 Get-MgSiteListContentTypeCompatibleHubContentType -SiteId $siteId -ListId $listId
@@ -253,3 +253,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSiteListContentTypeCompatibleHubContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteListContentTypeCompatibleHubContentType?view=graph-powershell-beta)
+

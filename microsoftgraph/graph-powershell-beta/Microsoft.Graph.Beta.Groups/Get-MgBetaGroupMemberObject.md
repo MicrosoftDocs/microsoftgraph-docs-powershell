@@ -46,7 +46,7 @@ Invoke action getMemberObjects
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.DirectoryObjects
 ```
@@ -238,3 +238,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupMemberObject](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupMemberObject?view=graph-powershell-v1.0)
+

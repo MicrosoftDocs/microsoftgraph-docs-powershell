@@ -39,7 +39,7 @@ Retrieve the properties of a collection of **riskDetection** objects.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Connect-MgBetaGraph -Scopes "IdentityRiskEvent.Read.All"
 Get-MgBetaRiskDetection -All | Format-Table UserDisplayName, RiskType, RiskLevel, DetectedDateTime
@@ -56,7 +56,7 @@ Jason Mayer     generic                       medium    4/23/2022 12:52:20 PM
 Alice Su        unfamiliarFeatures            low       5/2/2022 12:01:44 AM
 Alice Su        unlikelyTravel                low       5/2/2022 2:16:22 AM
 
-### EXAMPLE 2
+### Example 2
 ```powershell
 Connect-MgBetaGraph -Scopes "IdentityRiskEvent.Read.All"
 Get-MgBetaRiskDetection -Filter "UserDisplayname eq 'Jason Mayer'" | Format-Table UserDisplayName, RiskType, RiskLevel, DetectedDateTime
@@ -71,7 +71,7 @@ Jason Mayer     unfamiliarFeatures            high      4/21/2022 10:07:33 PM
 Jason Mayer     unlikelyTravel                medium    4/21/2022 10:42:04 PM
 Jason Mayer     generic                       medium    4/23/2022 12:52:20 PM
 
-### EXAMPLE 3
+### Example 3
 ```powershell
 Connect-MgBetaGraph -Scopes "IdentityRiskEvent.Read.All"
 Get-MgBetaRiskDetection -Filter "RiskType eq 'anonymizedIPAddress'" | Format-Table UserDisplayName, RiskType, RiskLevel, DetectedDateTime
@@ -83,7 +83,7 @@ Jason Mayer     anonymizedIPAddress high      4/21/2022 9:50:28 PM
 Jason Mayer     anonymizedIPAddress medium    4/19/2022 10:44:40 PM
 Alex  Su        anonymizedIPAddress high      6/9/2022 4:31:19 AM
 
-### EXAMPLE 4
+### Example 4
 ```powershell
 Connect-MgBetaGraph -Scopes "IdentityRiskEvent.Read.All"
 Get-MgBetaRiskDetection -Filter "UserDisplayName eq 'Jason Mayer' and Risklevel eq 'high'" | Format-Table UserDisplayName, RiskType, RiskLevel, DetectedDateTime
@@ -374,3 +374,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgRiskDetection](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgRiskDetection?view=graph-powershell-v1.0)
+

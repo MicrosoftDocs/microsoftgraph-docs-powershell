@@ -30,7 +30,7 @@ Invoke function getCapabilities
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
 Get-MgBetaPrintPrinterCapability -PrinterId $printerId
@@ -104,3 +104,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgPrintPrinterCapability](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintPrinterCapability?view=graph-powershell-v1.0)
+

@@ -48,7 +48,7 @@ An attachment can be one of the following types: All these types of attachment r
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```
 Import-Module Microsoft.Graph.Mail
 
@@ -308,5 +308,6 @@ INPUTOBJECT \<IMailIdentity\>: Identity Parameter
 [New-MgBetaUserMessageAttachment](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMessageAttachment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermessageattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermessageattachment)
+
 
 

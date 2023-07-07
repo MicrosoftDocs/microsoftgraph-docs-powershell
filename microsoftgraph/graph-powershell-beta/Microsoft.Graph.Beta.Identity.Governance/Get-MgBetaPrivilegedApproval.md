@@ -39,13 +39,13 @@ Get entity from privilegedApproval by key
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaPrivilegedApproval -PrivilegedApprovalId $privilegedApprovalId
 ```
 
-### EXAMPLE 2
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaPrivilegedApproval
@@ -353,3 +353,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgPrivilegedApproval](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgPrivilegedApproval?view=graph-powershell-v1.0)
+

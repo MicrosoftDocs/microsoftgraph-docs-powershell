@@ -619,3 +619,4 @@ SCHEDULEINFO `<IMicrosoftGraphRequestSchedule>`: requestSchedule
 
 ## RELATED LINKS
 [New-MgBetaRoleManagementDirectoryRoleAssignmentSchedule](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/New-MgRoleManagementDirectoryRoleAssignmentSchedule?view=graph-powershell-beta)
+

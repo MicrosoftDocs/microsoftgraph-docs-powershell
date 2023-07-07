@@ -30,7 +30,7 @@ Invoke function isPublished
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 Test-MgBetaSiteContentTypePublished -SiteId $siteId -ContentTypeId $contentTypeId
@@ -156,3 +156,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Test-MgSiteContentTypePublished](/powershell/module/Microsoft.Graph.Sites/Test-MgSiteContentTypePublished?view=graph-powershell-v1.0)
+

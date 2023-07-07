@@ -58,7 +58,7 @@ Create a new [listItem][] in a [list][].
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Sites
 
@@ -13628,4 +13628,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaSiteListItem](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteListItem?view=graph-powershell-beta)
+
 

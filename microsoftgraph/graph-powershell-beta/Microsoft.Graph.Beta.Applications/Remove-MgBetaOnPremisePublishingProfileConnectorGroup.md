@@ -35,7 +35,7 @@ All connectors and applications must be removed from the connector group before 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 Remove-MgBetaOnPremisePublishingProfileConnectorGroup -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -ConnectorGroupId $connectorGroupId
@@ -200,3 +200,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgOnPremisePublishingProfileConnectorGroup](/powershell/module/Microsoft.Graph.Applications/Remove-MgOnPremisePublishingProfileConnectorGroup?view=graph-powershell-v1.0)
+

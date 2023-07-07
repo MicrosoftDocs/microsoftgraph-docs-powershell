@@ -24,7 +24,7 @@ Retrieve the simple directory **user** that corresponds to this **educationUser*
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Education
 
@@ -77,4 +77,5 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaEducationMeUser](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeUser?view=graph-powershell-beta)
+
 

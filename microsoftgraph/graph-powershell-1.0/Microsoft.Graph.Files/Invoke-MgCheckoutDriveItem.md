@@ -31,7 +31,7 @@ Check out a **driveItem** resource to prevent others from editing the document, 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Files
 Invoke-MgCheckoutDriveItem -DriveId $driveId -DriveItemId $driveItemId
@@ -177,3 +177,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBetaCheckoutDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaCheckoutDriveItem?view=graph-powershell-beta)
+

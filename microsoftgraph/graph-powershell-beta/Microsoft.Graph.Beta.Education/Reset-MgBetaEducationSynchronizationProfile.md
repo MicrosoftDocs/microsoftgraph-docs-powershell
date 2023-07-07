@@ -32,7 +32,7 @@ Reset the sync of a specific school data synchronization profile in the tenant.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 Reset-MgBetaEducationSynchronizationProfile -EducationSynchronizationProfileId $educationSynchronizationProfileId
@@ -152,3 +152,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Reset-MgEducationSynchronizationProfile](/powershell/module/Microsoft.Graph.Education/Reset-MgEducationSynchronizationProfile?view=graph-powershell-v1.0)
+

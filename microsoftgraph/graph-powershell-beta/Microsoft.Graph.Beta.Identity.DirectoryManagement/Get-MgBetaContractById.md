@@ -35,7 +35,7 @@ Some common uses for this function are to:
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.DirectoryObjects
 ```
@@ -175,3 +175,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgContractById](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgContractById?view=graph-powershell-v1.0)
+

@@ -32,13 +32,13 @@ Read the properties and relationships of an eDiscovery caseSettings object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 Get-MgBetaComplianceEdiscoveryCaseSetting -CaseId $caseId
 ```
 
-### EXAMPLE 2
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 Get-MgBetaComplianceEdiscoveryCaseSetting -CaseId $caseId
@@ -143,3 +143,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgComplianceEdiscoveryCaseSetting](/powershell/module/Microsoft.Graph.Compliance/Get-MgComplianceEdiscoveryCaseSetting?view=graph-powershell-v1.0)
+

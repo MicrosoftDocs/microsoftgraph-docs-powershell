@@ -25,7 +25,7 @@ Invoke function getAttackSimulationTrainingUserCoverage
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Reports
 Get-MgBetaReportAttackSimulationTrainingUserCoverage
@@ -122,3 +122,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgReportAttackSimulationTrainingUserCoverage](/powershell/module/Microsoft.Graph.Reports/Get-MgReportAttackSimulationTrainingUserCoverage?view=graph-powershell-v1.0)
+

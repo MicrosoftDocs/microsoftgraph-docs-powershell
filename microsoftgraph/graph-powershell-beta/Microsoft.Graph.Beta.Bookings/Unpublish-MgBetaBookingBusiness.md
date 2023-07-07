@@ -34,7 +34,7 @@ Set the **isPublished** property to false, and **publicUrl** property to null.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Bookings
 Unpublish-MgBetaBookingBusiness -BookingBusinessId $bookingBusinessId
@@ -161,3 +161,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Unpublish-MgBookingBusiness](/powershell/module/Microsoft.Graph.Bookings/Unpublish-MgBookingBusiness?view=graph-powershell-v1.0)
+

@@ -39,7 +39,7 @@ The request will include a reference to the accessPackage that will contain this
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -79,7 +79,7 @@ $params = @{
 New-MgEntitlementManagementAssignmentPolicy -BodyParameter $params
 
 ```
-### EXAMPLE 2
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -200,7 +200,7 @@ $params = @{
 New-MgEntitlementManagementAssignmentPolicy -BodyParameter $params
 
 ```
-### EXAMPLE 3
+### Example 3
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -226,7 +226,7 @@ $params = @{
 New-MgEntitlementManagementAssignmentPolicy -BodyParameter $params
 
 ```
-### EXAMPLE 4
+### Example 4
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -8775,4 +8775,5 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 
 ## RELATED LINKS
+
 

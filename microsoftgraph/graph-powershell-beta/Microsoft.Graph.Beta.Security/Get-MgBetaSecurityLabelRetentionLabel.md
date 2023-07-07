@@ -39,13 +39,13 @@ Get retentionLabels from security
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Get-MgBetaSecurityLabelRetentionLabel -RetentionLabelId $retentionLabelId
 ```
 
-### EXAMPLE 2
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Get-MgBetaSecurityLabelRetentionLabel
@@ -313,3 +313,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSecurityLabelRetentionLabel](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityLabelRetentionLabel?view=graph-powershell-v1.0)
+

@@ -39,37 +39,37 @@ Get roleAssignments from roleManagement
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```
 Import-Module Microsoft.Graph.DeviceManagement.Enrolment
 Get-MgRoleManagementCloudPcRoleAssignment -UnifiedRoleAssignmentMultipleId $unifiedRoleAssignmentMultipleId -ExpandProperty "roleDefinition"
 ```
 
-### EXAMPLE 2
+### Example 2
 ```
 Import-Module Microsoft.Graph.DeviceManagement.Enrolment
 Get-MgRoleManagementCloudPcRoleAssignment -UnifiedRoleAssignmentMultipleId $unifiedRoleAssignmentMultipleId -ExpandProperty "roleDefinition"
 ```
 
-### EXAMPLE 3
+### Example 3
 ```
 Import-Module Microsoft.Graph.DeviceManagement.Enrolment
 Get-MgRoleManagementCloudPcRoleAssignment -UnifiedRoleAssignmentMultipleId $unifiedRoleAssignmentMultipleId
 ```
 
-### EXAMPLE 4
+### Example 4
 ```
 Import-Module Microsoft.Graph.DeviceManagement.Enrolment
 Get-MgRoleManagementCloudPcRoleAssignment -UnifiedRoleAssignmentMultipleId $unifiedRoleAssignmentMultipleId
 ```
 
-### EXAMPLE 5
+### Example 5
 ```
 Import-Module Microsoft.Graph.DeviceManagement.Enrolment
 Get-MgRoleManagementCloudPcRoleAssignment
 ```
 
-### EXAMPLE 6
+### Example 6
 ```
 Import-Module Microsoft.Graph.DeviceManagement.Enrolment
 Get-MgRoleManagementCloudPcRoleAssignment -Filter "roleDefinitionId eq 'b5c08161-a7af-481c-ace2-a20a69a48fb1'"
@@ -275,4 +275,5 @@ Please use Get-Help -Online.
 [Get-MgBetaRoleManagementCloudPcRoleAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Get-MgRoleManagementCloudPcRoleAssignment?view=graph-powershell-beta)
 
 [https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/get-mgrolemanagementcloudpcroleassignment](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/get-mgrolemanagementcloudpcroleassignment)
+
 

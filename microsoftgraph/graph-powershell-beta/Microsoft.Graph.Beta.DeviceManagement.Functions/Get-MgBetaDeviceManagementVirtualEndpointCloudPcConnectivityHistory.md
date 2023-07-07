@@ -33,7 +33,7 @@ Invoke function getCloudPcConnectivityHistory
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Functions
 Get-MgBetaDeviceManagementVirtualEndpointCloudPcConnectivityHistory -CloudPCId $cloudPCId
@@ -197,3 +197,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementVirtualEndpointCloudPcConnectivityHistory](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementVirtualEndpointCloudPcConnectivityHistory?view=graph-powershell-v1.0)
+

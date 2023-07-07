@@ -53,7 +53,7 @@ Update the properties of an itemPublication object in a user's profile.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 $params = @{
@@ -505,3 +505,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgUserProfilePublication](/powershell/module/Microsoft.Graph.People/Update-MgUserProfilePublication?view=graph-powershell-v1.0)
+

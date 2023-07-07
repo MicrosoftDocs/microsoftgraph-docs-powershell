@@ -38,7 +38,7 @@ Read-only.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Calendar
 # A UPN can also be used as -UserId.
@@ -244,3 +244,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgUserCalendarView](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserCalendarView?view=graph-powershell-v1.0)
+

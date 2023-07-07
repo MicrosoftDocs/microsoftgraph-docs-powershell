@@ -39,7 +39,7 @@ Read the properties and relationships of a connectionOperation object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Search
 
@@ -273,4 +273,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaExternalConnectionOperation](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternalConnectionOperation?view=graph-powershell-beta)
+
 

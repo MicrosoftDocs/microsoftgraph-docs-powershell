@@ -51,7 +51,7 @@ Outlook carries out those actions if an incoming message in the user's Inbox mee
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```
 Import-Module Microsoft.Graph.Mail
 
@@ -523,5 +523,6 @@ INPUTOBJECT \<IMailIdentity\>: Identity Parameter
 [New-MgBetaUserMailFolderMessageRule](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMailFolderMessageRule?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfoldermessagerule](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfoldermessagerule)
+
 
 

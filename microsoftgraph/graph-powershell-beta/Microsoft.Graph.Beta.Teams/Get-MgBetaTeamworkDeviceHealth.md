@@ -34,7 +34,7 @@ Device health is calculated based on the device configuration and other device p
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaTeamworkDeviceHealth -TeamworkDeviceId $teamworkDeviceId
@@ -162,3 +162,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgTeamworkDeviceHealth](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDeviceHealth?view=graph-powershell-v1.0)
+

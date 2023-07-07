@@ -44,7 +44,7 @@ Update the privacy settings for itemInsights and meeting hours insights of a use
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users
 $params = @{
@@ -227,3 +227,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgUserSettingItemInsight](/powershell/module/Microsoft.Graph.Users/Update-MgUserSettingItemInsight?view=graph-powershell-v1.0)
+

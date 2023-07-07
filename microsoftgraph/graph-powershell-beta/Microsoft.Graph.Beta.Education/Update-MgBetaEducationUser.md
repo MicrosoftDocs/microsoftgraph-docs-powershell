@@ -73,7 +73,7 @@ Update the relatedContact collection of an educationUser object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -25304,4 +25304,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgEducationUser](/powershell/module/Microsoft.Graph.Education/Update-MgEducationUser?view=graph-powershell-v1.0)
+
 

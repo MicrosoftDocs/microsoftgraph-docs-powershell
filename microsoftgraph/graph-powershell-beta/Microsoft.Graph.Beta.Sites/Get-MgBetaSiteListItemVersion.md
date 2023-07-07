@@ -39,7 +39,7 @@ The list of previous versions of the list item.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 
@@ -347,4 +347,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSiteListItemVersion](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListItemVersion?view=graph-powershell-v1.0)
+
 

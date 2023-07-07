@@ -40,7 +40,7 @@ After making this request, the caller should create a programControl, to link th
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{
@@ -596,3 +596,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgAccessReview](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgAccessReview?view=graph-powershell-v1.0)
+

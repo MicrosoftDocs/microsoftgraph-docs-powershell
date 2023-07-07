@@ -39,7 +39,7 @@ Get teamsApps from appCatalogs
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -289,4 +289,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgAppCatalogTeamApp](/powershell/module/Microsoft.Graph.Teams/Get-MgAppCatalogTeamApp?view=graph-powershell-v1.0)
+
 

@@ -46,7 +46,7 @@ Service principal owners can be users, the service principal itself, or other se
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 $newOwner = @{
   "@odata.id"= "https://graph.microsoft.com/v1.0/directoryObjects/8a7c50d3-fcbd-4727-a889-8ab232dfea01"
@@ -236,3 +236,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgServicePrincipalOwnerByRef](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalOwnerByRef?view=graph-powershell-v1.0)
+

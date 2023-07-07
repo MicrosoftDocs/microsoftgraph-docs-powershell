@@ -33,7 +33,7 @@ A verified domain has its **isVerified** property set to `true`.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 Invoke-MgBetaPromoteDomain -DomainId $domainId
@@ -161,3 +161,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgPromoteDomain](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Invoke-MgPromoteDomain?view=graph-powershell-v1.0)
+

@@ -39,13 +39,13 @@ Read the properties and relationships of a tag object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 Get-MgBetaComplianceEdiscoveryCaseTag -CaseId $caseId -TagId $tagId
 ```
 
-### EXAMPLE 2
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 Get-MgBetaComplianceEdiscoveryCaseTag -CaseId $caseId
@@ -286,3 +286,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgComplianceEdiscoveryCaseTag](/powershell/module/Microsoft.Graph.Compliance/Get-MgComplianceEdiscoveryCaseTag?view=graph-powershell-v1.0)
+

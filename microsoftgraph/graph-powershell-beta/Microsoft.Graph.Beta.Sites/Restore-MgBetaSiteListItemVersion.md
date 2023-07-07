@@ -32,7 +32,7 @@ Invoke action restoreVersion
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 
@@ -235,4 +235,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Restore-MgSiteListItemVersion](/powershell/module/Microsoft.Graph.Sites/Restore-MgSiteListItemVersion?view=graph-powershell-v1.0)
+
 

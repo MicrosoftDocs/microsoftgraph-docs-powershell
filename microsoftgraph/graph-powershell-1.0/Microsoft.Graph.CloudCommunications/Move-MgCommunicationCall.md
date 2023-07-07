@@ -52,7 +52,7 @@ This is opposed to transfering the call directly.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
 $params = @{
@@ -69,7 +69,7 @@ $params = @{
 Move-MgCommunicationCall -CallId $callId -BodyParameter $params
 ```
 
-### EXAMPLE 2
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
 $params = @{
@@ -90,7 +90,7 @@ $params = @{
 Move-MgCommunicationCall -CallId $callId -BodyParameter $params
 ```
 
-### EXAMPLE 3
+### Example 3
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
 $params = @{
@@ -110,7 +110,7 @@ $params = @{
 Move-MgCommunicationCall -CallId $callId -BodyParameter $params
 ```
 
-### EXAMPLE 4
+### Example 4
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
 $params = @{
@@ -133,7 +133,7 @@ $params = @{
 Move-MgCommunicationCall -CallId $callId -BodyParameter $params
 ```
 
-### EXAMPLE 5
+### Example 5
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
 $params = @{
@@ -392,3 +392,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Move-MgBetaCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Move-MgBetaCommunicationCall?view=graph-powershell-beta)
+

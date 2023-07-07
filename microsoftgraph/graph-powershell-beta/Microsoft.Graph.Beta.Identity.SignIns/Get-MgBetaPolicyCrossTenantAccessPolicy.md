@@ -25,7 +25,7 @@ Read the properties and relationships of a crossTenantAccessPolicy object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -78,4 +78,5 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgPolicyCrossTenantAccessPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyCrossTenantAccessPolicy?view=graph-powershell-v1.0)
+
 

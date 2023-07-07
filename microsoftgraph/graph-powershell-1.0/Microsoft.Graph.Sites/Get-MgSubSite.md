@@ -39,7 +39,7 @@ The collection of the sub-sites under this site.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Sites
 
@@ -305,4 +305,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSubSite](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSubSite?view=graph-powershell-beta)
+
 

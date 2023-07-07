@@ -40,13 +40,13 @@ Retrieve the properties and relationships of an accessPackageAssignmentResourceR
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaEntitlementManagementAccessPackageAssignmentResourceRole -AccessPackageAssignmentResourceRoleId $accessPackageAssignmentResourceRoleId
 ```
 
-### EXAMPLE 2
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaEntitlementManagementAccessPackageAssignmentResourceRole
@@ -354,3 +354,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgEntitlementManagementAccessPackageAssignmentResourceRole](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackageAssignmentResourceRole?view=graph-powershell-v1.0)
+

@@ -52,7 +52,7 @@ Create a new itemPublication object in a user's profile.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 $params = @{
@@ -494,3 +494,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgUserProfilePublication](/powershell/module/Microsoft.Graph.People/New-MgUserProfilePublication?view=graph-powershell-v1.0)
+

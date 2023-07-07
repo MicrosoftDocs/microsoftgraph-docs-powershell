@@ -32,7 +32,7 @@ Delete a trustFrameworkKeySet.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Remove-MgBetaTrustFrameworkKeySet -TrustFrameworkKeySetId $trustFrameworkKeySetId
@@ -228,3 +228,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgTrustFrameworkKeySet](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgTrustFrameworkKeySet?view=graph-powershell-v1.0)
+

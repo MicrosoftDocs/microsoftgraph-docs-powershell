@@ -62,7 +62,7 @@ To get properties that are _not_ returned by default, do a GET operation and spe
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 New-MgGroup -DisplayName 'Test Group' -MailEnabled:$False  -MailNickName 'testgroup' -SecurityEnabled
 
@@ -15212,4 +15212,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaGroup](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroup?view=graph-powershell-beta)
+
 

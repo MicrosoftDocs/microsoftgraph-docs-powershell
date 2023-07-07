@@ -48,7 +48,7 @@ Create a new connectorGroup.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 $params = @{
@@ -58,7 +58,7 @@ $params = @{
 New-MgBetaOnPremisePublishingProfileConnectorGroup -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -BodyParameter $params
 ```
 
-### EXAMPLE 2
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 $params = @{
@@ -1594,3 +1594,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgOnPremisePublishingProfileConnectorGroup](/powershell/module/Microsoft.Graph.Applications/New-MgOnPremisePublishingProfileConnectorGroup?view=graph-powershell-v1.0)
+

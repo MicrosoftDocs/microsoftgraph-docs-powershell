@@ -43,7 +43,7 @@ The following table lists the three scenarios where you can get an open extensio
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 
@@ -331,4 +331,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupThreadPostExtension](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupThreadPostExtension?view=graph-powershell-v1.0)
+
 

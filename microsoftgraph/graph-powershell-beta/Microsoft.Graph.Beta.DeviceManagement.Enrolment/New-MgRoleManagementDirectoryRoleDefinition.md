@@ -365,3 +365,4 @@ ROLEPERMISSIONS <IMicrosoftGraphUnifiedRolePermission\[]>: List of permissions i
 
 ## RELATED LINKS
 [New-MgRoleManagementDirectoryRoleDefinition](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/New-MgRoleManagementDirectoryRoleDefinition?view=graph-powershell-v1.0)
+

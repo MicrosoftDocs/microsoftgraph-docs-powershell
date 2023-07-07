@@ -33,13 +33,13 @@ Delete ref of navigation property userFlowIdentityProviders for identity
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Remove-MgBetaIdentityB2XUserFlowIdentityProviderByRef -B2xIdentityUserFlowId $b2xIdentityUserFlowId -IdentityProviderBaseId $identityProviderBaseId
 ```
 
-### EXAMPLE 2
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Remove-MgBetaIdentityB2XUserFlowIdentityProviderByRef -B2xIdentityUserFlowId $b2xIdentityUserFlowId -IdentityProviderBaseId $identityProviderBaseId
@@ -265,3 +265,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgIdentityB2XUserFlowIdentityProviderByRef](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityB2XUserFlowIdentityProviderByRef?view=graph-powershell-v1.0)
+

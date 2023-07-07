@@ -24,7 +24,7 @@ Get planner
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Planner
 Get-MgPlanner
@@ -76,3 +76,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaPlanner](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlanner?view=graph-powershell-beta)
+

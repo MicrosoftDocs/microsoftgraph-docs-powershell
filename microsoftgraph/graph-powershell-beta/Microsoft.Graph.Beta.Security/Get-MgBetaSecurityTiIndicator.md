@@ -39,13 +39,13 @@ Retrieve the properties and relationships of a tiIndicator object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Get-MgBetaSecurityTiIndicator -TiIndicatorId $tiIndicatorId
 ```
 
-### EXAMPLE 2
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Get-MgBetaSecurityTiIndicator
@@ -313,3 +313,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSecurityTiIndicator](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityTiIndicator?view=graph-powershell-v1.0)
+

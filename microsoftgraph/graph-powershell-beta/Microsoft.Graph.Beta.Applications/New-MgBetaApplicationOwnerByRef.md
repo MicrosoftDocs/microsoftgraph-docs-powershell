@@ -44,7 +44,7 @@ Use this API to add an owner to an application by posting to the owners collecti
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 $NewOwner = @{
  "@odata.id"= "https://graph.microsoft.com/v1.0/directoryObjects/{075b32dd-edb7-47cf-89ef-f3f733683a3f}"
@@ -234,3 +234,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgApplicationOwnerByRef](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationOwnerByRef?view=graph-powershell-v1.0)
+

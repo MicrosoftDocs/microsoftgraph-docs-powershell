@@ -48,7 +48,7 @@ Update the properties of a an eDiscovery caseSettings object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 $params = @{
@@ -72,7 +72,7 @@ $params = @{
 Update-MgBetaComplianceEdiscoveryCaseSetting -CaseId $caseId -BodyParameter $params
 ```
 
-### EXAMPLE 2
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 $params = @{
@@ -333,3 +333,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgComplianceEdiscoveryCaseSetting](/powershell/module/Microsoft.Graph.Compliance/Update-MgComplianceEdiscoveryCaseSetting?view=graph-powershell-v1.0)
+

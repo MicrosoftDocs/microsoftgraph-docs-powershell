@@ -54,7 +54,7 @@ You need to be an organizer to cancel a meeting.' This action differs from Delet
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{
@@ -259,3 +259,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Stop-MgBetaUserEventInstance](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Stop-MgBetaUserEventInstance?view=graph-powershell-beta)
+

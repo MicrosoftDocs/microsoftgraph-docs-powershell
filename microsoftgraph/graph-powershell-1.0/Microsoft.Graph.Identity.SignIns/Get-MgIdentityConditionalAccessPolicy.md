@@ -39,7 +39,7 @@ Retrieve the properties and relationships of a conditionalAccessPolicy object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Connect-MgGraph -Scopes 'Policy.Read.All'
 Get-MgIdentityConditionalAccessPolicy |Format-List
@@ -67,7 +67,7 @@ State                : enabled
 AdditionalProperties : {}
 
 ```
-### EXAMPLE 2
+### Example 2
 ```powershell
 Connect-MgGraph -Scopes 'Policy.Read.All'
 
@@ -348,4 +348,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityConditionalAccessPolicy?view=graph-powershell-beta)
+
 

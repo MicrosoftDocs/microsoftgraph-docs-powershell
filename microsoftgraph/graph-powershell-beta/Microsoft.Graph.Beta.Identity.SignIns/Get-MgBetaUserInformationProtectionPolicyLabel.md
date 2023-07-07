@@ -39,14 +39,14 @@ Retrieve the properties and relationships of an informationProtectionLabel objec
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 # A UPN can also be used as -UserId.
 Get-MgBetaUserInformationProtectionPolicyLabel -UserId $userId -InformationProtectionLabelId $informationProtectionLabelId
 ```
 
-### EXAMPLE 2
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 # A UPN can also be used as -UserId.
@@ -348,3 +348,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserInformationProtectionPolicyLabel](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgUserInformationProtectionPolicyLabel?view=graph-powershell-v1.0)
+

@@ -32,7 +32,7 @@ Delete a contact.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```
 Import-Module Microsoft.Graph.PersonalContacts
 
@@ -175,5 +175,6 @@ INPUTOBJECT \<IPersonalContactsIdentity\>: Identity Parameter
 [Remove-MgBetaUserContact](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Remove-MgBetaUserContact?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/remove-mgusercontact](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/remove-mgusercontact)
+
 
 

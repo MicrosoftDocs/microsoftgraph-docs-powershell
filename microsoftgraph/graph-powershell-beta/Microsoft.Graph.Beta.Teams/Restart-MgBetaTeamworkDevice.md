@@ -33,7 +33,7 @@ A device is restarted after the async operation completes successfully, which mi
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Restart-MgBetaTeamworkDevice -TeamworkDeviceId $teamworkDeviceId
@@ -177,3 +177,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Restart-MgTeamworkDevice](/powershell/module/Microsoft.Graph.Teams/Restart-MgTeamworkDevice?view=graph-powershell-v1.0)
+

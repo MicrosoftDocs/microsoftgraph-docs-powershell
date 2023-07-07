@@ -39,7 +39,7 @@ Details of the usage of self-service password reset and multi-factor authenticat
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Reports
 Get-MgBetaReportCredentialUserRegistrationDetail
@@ -276,3 +276,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgReportCredentialUserRegistrationDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportCredentialUserRegistrationDetail?view=graph-powershell-v1.0)
+

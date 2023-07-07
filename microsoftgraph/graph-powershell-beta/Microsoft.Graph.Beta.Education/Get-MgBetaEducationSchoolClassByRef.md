@@ -26,7 +26,7 @@ Retrieve a list of classes owned by a school.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -185,4 +185,5 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgEducationSchoolClassByRef](/powershell/module/Microsoft.Graph.Education/Get-MgEducationSchoolClassByRef?view=graph-powershell-v1.0)
+
 

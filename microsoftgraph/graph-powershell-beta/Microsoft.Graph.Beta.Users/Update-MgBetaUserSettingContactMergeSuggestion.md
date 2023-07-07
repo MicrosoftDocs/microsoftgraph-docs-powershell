@@ -44,7 +44,7 @@ Update the properties of a contactMergeSuggestions object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users
 $params = @{
@@ -227,3 +227,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgUserSettingContactMergeSuggestion](/powershell/module/Microsoft.Graph.Users/Update-MgUserSettingContactMergeSuggestion?view=graph-powershell-v1.0)
+

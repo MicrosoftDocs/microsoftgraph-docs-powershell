@@ -26,7 +26,7 @@ Retrieve a list of onenoteSection objects from the specified section group.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Notes
 # A UPN can also be used as -UserId.
@@ -230,3 +230,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaUserOnenoteSectionGroupSection](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaUserOnenoteSectionGroupSection?view=graph-powershell-beta)
+
