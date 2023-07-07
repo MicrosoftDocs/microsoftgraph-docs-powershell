@@ -30,18 +30,6 @@ Get-MgBetaGroupSiteTermStoreGroupSetParentGroup -InputObject <ISitesIdentity> [-
 ## DESCRIPTION
 The parent [group] that contains the set.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -222,3 +210,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupSiteTermStoreGroupSetParentGroup](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteTermStoreGroupSetParentGroup?view=graph-powershell-v1.0)
+

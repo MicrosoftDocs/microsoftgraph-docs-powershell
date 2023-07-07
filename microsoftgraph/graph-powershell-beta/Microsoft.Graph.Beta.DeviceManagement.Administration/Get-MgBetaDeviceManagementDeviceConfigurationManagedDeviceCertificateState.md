@@ -39,22 +39,6 @@ Get-MgBetaDeviceManagementDeviceConfigurationManagedDeviceCertificateState
 ## DESCRIPTION
 Summary of all certificates for all devices.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -317,3 +301,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementDeviceConfigurationManagedDeviceCertificateState](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementDeviceConfigurationManagedDeviceCertificateState?view=graph-powershell-v1.0)
+

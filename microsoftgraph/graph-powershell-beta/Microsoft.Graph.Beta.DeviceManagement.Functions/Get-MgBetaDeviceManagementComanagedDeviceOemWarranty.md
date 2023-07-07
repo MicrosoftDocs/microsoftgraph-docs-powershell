@@ -29,22 +29,6 @@ Get-MgBetaDeviceManagementComanagedDeviceOemWarranty -InputObject <IDeviceManage
 ## DESCRIPTION
 Invoke function getOemWarranty
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -127,4 +111,5 @@ INPUTOBJECT \<IDeviceManagementFunctionsIdentity\>: Identity Parameter
 [Get-MgDeviceManagementComanagedDeviceOemWarranty](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementComanagedDeviceOemWarranty?view=graph-powershell-v1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementcomanageddeviceoemwarranty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementcomanageddeviceoemwarranty)
+
 

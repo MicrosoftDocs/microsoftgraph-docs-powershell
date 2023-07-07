@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to directories for servicePrincipals
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBetaServicePrincipalSynchronizationTemplateSchemaDirectory](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalSynchronizationTemplateSchemaDirectory?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaServicePrincipalSynchronizationTemplateSchemaDirectory](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalSynchronizationTemplateSchemaDirectory?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -46,18 +46,6 @@ New-MgServicePrincipalSynchronizationTemplateSchemaDirectory -InputObject <IAppl
 
 ## DESCRIPTION
 Create new navigation property to directories for servicePrincipals
-
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -378,4 +366,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[SupportedApis <String[]>]`: 
 
 ## RELATED LINKS
-[New-MgBetaBetaServicePrincipalSynchronizationTemplateSchemaDirectory](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalSynchronizationTemplateSchemaDirectory?view=graph-powershell-beta)
+[New-MgBetaServicePrincipalSynchronizationTemplateSchemaDirectory](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalSynchronizationTemplateSchemaDirectory?view=graph-powershell-beta)
+

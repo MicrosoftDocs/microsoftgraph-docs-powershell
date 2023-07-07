@@ -45,18 +45,6 @@ New-MgTeamworkDeletedTeamChannelTab -InputObject <ITeamsIdentity> -BodyParameter
 ## DESCRIPTION
 Create new navigation property to tabs for teamwork
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -372,3 +360,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaTeamworkDeletedTeamChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamworkDeletedTeamChannelTab?view=graph-powershell-beta)
+

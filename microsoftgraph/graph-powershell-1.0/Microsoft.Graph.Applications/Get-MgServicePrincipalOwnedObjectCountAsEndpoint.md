@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the number of the resource
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaServicePrincipalOwnedObjectCountAsEndpoint](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalOwnedObjectCountAsEndpoint?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalOwnedObjectCountAsEndpoint](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalOwnedObjectCountAsEndpoint?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,18 +29,6 @@ Get-MgServicePrincipalOwnedObjectCountAsEndpoint -InputObject <IApplicationsIden
 
 ## DESCRIPTION
 Get the number of the resource
-
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -146,4 +134,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaServicePrincipalOwnedObjectCountAsEndpoint](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalOwnedObjectCountAsEndpoint?view=graph-powershell-beta)
+[Get-MgBetaServicePrincipalOwnedObjectCountAsEndpoint](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalOwnedObjectCountAsEndpoint?view=graph-powershell-beta)
+

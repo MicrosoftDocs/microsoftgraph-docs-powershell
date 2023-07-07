@@ -30,22 +30,6 @@ Remove-MgBetaUserOnlineMeetingVirtualAppointment -InputObject <ICloudCommunicati
 ## DESCRIPTION
 Delete navigation property virtualAppointment for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -195,3 +179,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgUserOnlineMeetingVirtualAppointment](/powershell/module/Microsoft.Graph.CloudCommunications/Remove-MgUserOnlineMeetingVirtualAppointment?view=graph-powershell-v1.0)
+

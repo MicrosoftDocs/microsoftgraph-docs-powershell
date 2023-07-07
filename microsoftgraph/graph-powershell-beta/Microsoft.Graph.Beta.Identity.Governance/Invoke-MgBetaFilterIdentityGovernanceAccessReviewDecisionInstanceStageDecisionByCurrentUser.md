@@ -33,22 +33,6 @@ Invoke-MgBetaFilterIdentityGovernanceAccessReviewDecisionInstanceStageDecisionBy
 ## DESCRIPTION
 Invoke function filterByCurrentUser
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AccessReviewInstanceDecisionItemId
@@ -335,3 +319,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgFilterIdentityGovernanceAccessReviewDecisionInstanceStageDecisionByCurrentUser](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgFilterIdentityGovernanceAccessReviewDecisionInstanceStageDecisionByCurrentUser?view=graph-powershell-v1.0)
+

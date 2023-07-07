@@ -32,22 +32,6 @@ Get-MgBetaPrintPrinterTaskTriggerDefinition -InputObject <IDevicesCloudPrintIden
 An abstract definition that will be used to create a printTask when triggered by a print event.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -161,3 +145,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgPrintPrinterTaskTriggerDefinition](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintPrinterTaskTriggerDefinition?view=graph-powershell-v1.0)
+

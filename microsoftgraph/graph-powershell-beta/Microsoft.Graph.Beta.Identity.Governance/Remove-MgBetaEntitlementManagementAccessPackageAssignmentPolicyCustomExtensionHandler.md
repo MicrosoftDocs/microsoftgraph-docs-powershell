@@ -32,22 +32,6 @@ Remove-MgBetaEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionHa
 ## DESCRIPTION
 Delete navigation property customExtensionHandlers for identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AccessPackageAssignmentPolicyId
@@ -275,3 +259,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionHandler](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionHandler?view=graph-powershell-v1.0)
+

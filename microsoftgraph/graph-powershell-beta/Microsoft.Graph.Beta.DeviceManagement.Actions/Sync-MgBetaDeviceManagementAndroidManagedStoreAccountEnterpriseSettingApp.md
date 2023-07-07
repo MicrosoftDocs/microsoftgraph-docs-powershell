@@ -23,22 +23,6 @@ Sync-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingApp [-Pass
 ## DESCRIPTION
 Invoke action syncApps
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -PassThru
@@ -101,3 +85,4 @@ ALIASES
 
 ## RELATED LINKS
 [Sync-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSettingApp](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Sync-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSettingApp?view=graph-powershell-v1.0)
+

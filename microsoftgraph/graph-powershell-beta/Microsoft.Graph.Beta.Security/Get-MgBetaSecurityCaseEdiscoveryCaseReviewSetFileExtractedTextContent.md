@@ -30,22 +30,6 @@ Get-MgBetaSecurityCaseEdiscoveryCaseReviewSetFileExtractedTextContent -InputObje
 ## DESCRIPTION
 Get extractedTextContent for the navigation property files from security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -EdiscoveryCaseId
@@ -217,3 +201,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSecurityCaseEdiscoveryCaseReviewSetFileExtractedTextContent](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseReviewSetFileExtractedTextContent?view=graph-powershell-v1.0)
+

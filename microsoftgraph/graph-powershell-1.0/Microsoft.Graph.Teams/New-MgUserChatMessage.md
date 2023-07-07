@@ -62,18 +62,6 @@ New-MgUserChatMessage -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGr
 Send a new chatMessage in the specified chat.
 This API can't create a new chat; you must use the list chats method to retrieve the ID of an existing chat before you can create a chat message.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -901,3 +889,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaUserChatMessage](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaUserChatMessage?view=graph-powershell-beta)
+

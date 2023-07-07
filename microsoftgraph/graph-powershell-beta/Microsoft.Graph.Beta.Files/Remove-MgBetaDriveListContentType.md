@@ -30,22 +30,6 @@ Remove-MgBetaDriveListContentType -InputObject <IFilesIdentity> [-IfMatch <Strin
 ## DESCRIPTION
 Delete navigation property contentTypes for drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -201,3 +185,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDriveListContentType](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveListContentType?view=graph-powershell-v1.0)
+

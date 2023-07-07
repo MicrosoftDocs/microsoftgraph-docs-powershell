@@ -47,22 +47,6 @@ Update-MgSecurityCaseEdiscoveryCaseCustodianSiteSource -InputObject <ISecurityId
 ## DESCRIPTION
 Update the navigation property siteSources in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -5540,3 +5524,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaSecurityCaseEdiscoveryCaseCustodianSiteSource](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityCaseEdiscoveryCaseCustodianSiteSource?view=graph-powershell-beta)
+

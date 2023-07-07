@@ -30,22 +30,6 @@ Revoke-MgBetaDeviceManagementComanagedDeviceAppleVppLicense -InputObject <IDevic
 ## DESCRIPTION
 Revoke all Apple Vpp licenses for a device
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -198,3 +182,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Revoke-MgDeviceManagementComanagedDeviceAppleVppLicense](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Revoke-MgDeviceManagementComanagedDeviceAppleVppLicense?view=graph-powershell-v1.0)
+

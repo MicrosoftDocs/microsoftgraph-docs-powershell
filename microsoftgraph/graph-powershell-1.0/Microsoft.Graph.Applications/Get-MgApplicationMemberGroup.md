@@ -12,7 +12,7 @@ The main logo for the application.
 Not nullable.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaApplicationMemberGroup](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationMemberGroup?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaApplicationMemberGroup](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationMemberGroup?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,22 +29,6 @@ Get-MgApplicationLogo -InputObject <IApplicationsIdentity> -OutFile <String> [-P
 ## DESCRIPTION
 The main logo for the application.
 Not nullable.
-
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 
@@ -150,4 +134,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaApplicationMemberGroup](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationMemberGroup?view=graph-powershell-beta)
+[Get-MgBetaApplicationMemberGroup](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationMemberGroup?view=graph-powershell-beta)
+

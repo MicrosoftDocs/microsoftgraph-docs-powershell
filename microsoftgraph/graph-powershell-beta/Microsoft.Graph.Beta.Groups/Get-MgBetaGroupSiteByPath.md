@@ -28,22 +28,6 @@ Get-MgBetaGroupSiteByPath -InputObject <IGroupsIdentity> [<CommonParameters>]
 ## DESCRIPTION
 Invoke function getByPath
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -GroupId
@@ -173,3 +157,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupSiteByPath](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupSiteByPath?view=graph-powershell-v1.0)
+

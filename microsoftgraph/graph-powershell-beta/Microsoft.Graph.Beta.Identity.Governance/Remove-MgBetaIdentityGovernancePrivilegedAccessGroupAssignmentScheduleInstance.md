@@ -32,18 +32,6 @@ Remove-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance
 ## DESCRIPTION
 Delete navigation property assignmentScheduleInstances for identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -256,3 +244,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance?view=graph-powershell-v1.0)
+

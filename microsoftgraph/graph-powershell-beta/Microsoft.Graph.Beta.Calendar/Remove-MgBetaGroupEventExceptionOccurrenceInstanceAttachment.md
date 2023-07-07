@@ -31,22 +31,6 @@ Remove-MgBetaGroupEventExceptionOccurrenceInstanceAttachment -InputObject <ICale
 ## DESCRIPTION
 Delete an attachment from a user calendar event, message, Outlook task, or post.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AttachmentId
@@ -234,3 +218,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgGroupEventExceptionOccurrenceInstanceAttachment](/powershell/module/Microsoft.Graph.Calendar/Remove-MgGroupEventExceptionOccurrenceInstanceAttachment?view=graph-powershell-v1.0)
+

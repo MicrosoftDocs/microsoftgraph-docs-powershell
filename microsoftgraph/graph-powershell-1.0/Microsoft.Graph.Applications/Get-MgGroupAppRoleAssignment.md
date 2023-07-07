@@ -12,7 +12,7 @@ Represents the app roles a group has been granted for an application.
 Supports $expand.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaGroupAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupAppRoleAssignment?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupAppRoleAssignment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -314,4 +314,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaGroupAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupAppRoleAssignment?view=graph-powershell-beta)
+[Get-MgBetaGroupAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupAppRoleAssignment?view=graph-powershell-beta)

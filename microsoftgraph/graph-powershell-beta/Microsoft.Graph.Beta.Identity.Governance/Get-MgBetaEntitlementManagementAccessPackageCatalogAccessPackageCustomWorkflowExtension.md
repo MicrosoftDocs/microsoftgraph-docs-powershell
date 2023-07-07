@@ -40,18 +40,6 @@ Get-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageCustomWorkflowEx
 ## DESCRIPTION
 Read the properties and relationships of an accessPackageAssignmentWorkflowExtension object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessPackageCatalogId
@@ -369,3 +357,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgEntitlementManagementAccessPackageCatalogAccessPackageCustomWorkflowExtension](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackageCatalogAccessPackageCustomWorkflowExtension?view=graph-powershell-v1.0)
+

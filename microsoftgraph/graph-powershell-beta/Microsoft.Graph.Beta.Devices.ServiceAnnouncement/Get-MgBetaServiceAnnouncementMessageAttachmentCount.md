@@ -30,18 +30,6 @@ Get-MgBetaServiceAnnouncementMessageAttachmentCount -InputObject <IDevicesServic
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -131,3 +119,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgServiceAnnouncementMessageAttachmentCount](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Get-MgServiceAnnouncementMessageAttachmentCount?view=graph-powershell-v1.0)
+

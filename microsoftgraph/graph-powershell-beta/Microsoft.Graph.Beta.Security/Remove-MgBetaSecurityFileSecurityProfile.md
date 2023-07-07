@@ -30,22 +30,6 @@ Remove-MgBetaSecurityFileSecurityProfile -InputObject <ISecurityIdentity> [-IfMa
 ## DESCRIPTION
 Delete navigation property fileSecurityProfiles for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -FileSecurityProfileId
@@ -218,3 +202,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgSecurityFileSecurityProfile](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityFileSecurityProfile?view=graph-powershell-v1.0)
+

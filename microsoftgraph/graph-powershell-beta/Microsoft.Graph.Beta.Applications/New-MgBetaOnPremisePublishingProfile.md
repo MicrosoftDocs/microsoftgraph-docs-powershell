@@ -34,22 +34,6 @@ New-MgBetaOnPremisePublishingProfile -BodyParameter <IMicrosoftGraphOnPremisesPu
 ## DESCRIPTION
 Add new entity to onPremisesPublishingProfiles
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1655,3 +1639,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgOnPremisePublishingProfile](/powershell/module/Microsoft.Graph.Applications/New-MgOnPremisePublishingProfile?view=graph-powershell-v1.0)
+

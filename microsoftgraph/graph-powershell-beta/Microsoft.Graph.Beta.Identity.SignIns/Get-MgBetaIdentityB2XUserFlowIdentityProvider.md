@@ -44,22 +44,6 @@ Get-MgBetaIdentityB2XUserFlowIdentityProvider -InputObject <IIdentitySignInsIden
 ## DESCRIPTION
 Get identityProviders from identity
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -356,3 +340,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgIdentityB2XUserFlowIdentityProvider](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2XUserFlowIdentityProvider?view=graph-powershell-v1.0)
+

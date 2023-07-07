@@ -22,18 +22,6 @@ Get-MgBetaDeviceManagementUserPfxCertificateCount [-Filter <String>] [-Search <S
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -80,3 +68,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgDeviceManagementUserPfxCertificateCount](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementUserPfxCertificateCount?view=graph-powershell-v1.0)
+

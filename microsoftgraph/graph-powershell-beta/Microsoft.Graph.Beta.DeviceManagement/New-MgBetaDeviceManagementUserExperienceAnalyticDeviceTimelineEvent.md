@@ -32,18 +32,6 @@ New-MgBetaDeviceManagementUserExperienceAnalyticDeviceTimelineEvent
 ## DESCRIPTION
 Create new navigation property to userExperienceAnalyticsDeviceTimelineEvent for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -247,3 +235,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgDeviceManagementUserExperienceAnalyticDeviceTimelineEvent](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticDeviceTimelineEvent?view=graph-powershell-v1.0)
+

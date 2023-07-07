@@ -30,22 +30,6 @@ Update-MgBetaComplianceEdiscoveryCaseNoncustodialDataSourceIndex -InputObject <I
 ## DESCRIPTION
 Invoke action updateIndex
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -CaseId
@@ -176,3 +160,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgComplianceEdiscoveryCaseNoncustodialDataSourceIndex](/powershell/module/Microsoft.Graph.Compliance/Update-MgComplianceEdiscoveryCaseNoncustodialDataSourceIndex?view=graph-powershell-v1.0)
+

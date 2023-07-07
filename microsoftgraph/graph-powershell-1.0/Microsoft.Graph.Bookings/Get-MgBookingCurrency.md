@@ -39,22 +39,6 @@ Get-MgBookingCurrency -InputObject <IBookingsIdentity> [-ExpandProperty <String[
 Get the properties of a bookingCurrency object that is available to a Microsoft Bookings business.
 Use the **id** property, which is the currency code, to specify the currency.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -268,3 +252,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaBookingCurrency](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingCurrency?view=graph-powershell-beta)
+

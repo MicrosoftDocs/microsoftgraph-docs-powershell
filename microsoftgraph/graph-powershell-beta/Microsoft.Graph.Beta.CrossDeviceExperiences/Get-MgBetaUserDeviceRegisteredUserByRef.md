@@ -32,18 +32,6 @@ Read-only.
 Nullable.
 Supports $expand.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -227,3 +215,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgUserDeviceRegisteredUserByRef](/powershell/module/Microsoft.Graph.CrossDeviceExperiences/Get-MgUserDeviceRegisteredUserByRef?view=graph-powershell-v1.0)
+

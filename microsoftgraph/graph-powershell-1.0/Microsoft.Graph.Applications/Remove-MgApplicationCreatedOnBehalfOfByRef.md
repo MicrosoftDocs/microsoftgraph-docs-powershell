@@ -32,11 +32,12 @@ Delete entity from applications
 ### Example 1: Delete an application
 ```powershell
 Remove-MgApplication -ApplicationId '1bc44759-ef10-46de-b199-40c077768fff'
-```
 
 This example deletes the specified application.
 
+```
 ## PARAMETERS
+
 
 ### -ApplicationId
 key: id of application
@@ -174,3 +175,4 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

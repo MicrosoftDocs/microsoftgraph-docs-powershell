@@ -30,18 +30,6 @@ Remove-MgBetaBusinessScenarioPlannerTaskConfiguration -InputObject <IBookingsIde
 ## DESCRIPTION
 Delete navigation property taskConfiguration for solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -BusinessScenarioId
@@ -178,3 +166,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBusinessScenarioPlannerTaskConfiguration](/powershell/module/Microsoft.Graph.Bookings/Remove-MgBusinessScenarioPlannerTaskConfiguration?view=graph-powershell-v1.0)
+

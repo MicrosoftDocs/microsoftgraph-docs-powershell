@@ -39,18 +39,6 @@ Get-MgBetaIdentityGovernanceTermsOfUseAgreementFile -InputObject <IIdentityGover
 Retrieve the details of the default file for an agreement, including the language and version information.
 The file information is specified through the agreementFile object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AgreementId
@@ -354,3 +342,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgIdentityGovernanceTermsOfUseAgreementFile](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceTermsOfUseAgreementFile?view=graph-powershell-v1.0)
+

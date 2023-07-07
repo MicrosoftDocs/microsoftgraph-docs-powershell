@@ -40,18 +40,6 @@ Get-MgDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFil
 ## DESCRIPTION
 Another way to input protected apps through xml files
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -305,3 +293,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile?view=graph-powershell-beta)
+

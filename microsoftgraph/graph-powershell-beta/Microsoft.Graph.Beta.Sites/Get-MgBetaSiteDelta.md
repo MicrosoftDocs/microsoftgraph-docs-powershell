@@ -23,22 +23,6 @@ Get-MgBetaSiteDelta [-Filter <String>] [-Property <String[]>] [-Search <String>]
 ## DESCRIPTION
 Invoke function delta
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -191,3 +175,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgSiteDelta](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteDelta?view=graph-powershell-v1.0)
+

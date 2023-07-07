@@ -31,18 +31,6 @@ Get-MgBetaSitePageCanvaLayoutHorizontalSectionColumnWebpartPositionOfWebPart -In
 ## DESCRIPTION
 Invoke action getPositionOfWebPart
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -HorizontalSectionColumnId
@@ -239,3 +227,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSitePageCanvaLayoutHorizontalSectionColumnWebpartPositionOfWebPart](/powershell/module/Microsoft.Graph.Sites/Get-MgSitePageCanvaLayoutHorizontalSectionColumnWebpartPositionOfWebPart?view=graph-powershell-v1.0)
+

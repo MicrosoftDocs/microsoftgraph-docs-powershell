@@ -32,22 +32,6 @@ Restore-MgGroupDriveItemListItemVersion -InputObject <IGroupsIdentity> [-PassThr
 Restore a previous version of a ListItem to be the current version.
 This will create a new version with the contents of the previous version, but preserves all existing versions of the item.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -229,3 +213,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Restore-MgBetaGroupDriveItemListItemVersion](/powershell/module/Microsoft.Graph.Beta.Groups/Restore-MgBetaGroupDriveItemListItemVersion?view=graph-powershell-beta)
+

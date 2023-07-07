@@ -30,18 +30,6 @@ Get-MgBetaDeviceManagementVirtualEndpointCloudPcShiftWorkCloudPcAccessState
 ## DESCRIPTION
 Invoke function getShiftWorkCloudPcAccessState
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CloudPcId
@@ -125,3 +113,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementVirtualEndpointCloudPcShiftWorkCloudPcAccessState](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementVirtualEndpointCloudPcShiftWorkCloudPcAccessState?view=graph-powershell-v1.0)
+

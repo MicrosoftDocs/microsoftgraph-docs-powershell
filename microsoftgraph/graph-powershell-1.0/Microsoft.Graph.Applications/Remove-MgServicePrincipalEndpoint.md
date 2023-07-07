@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property endpoints for servicePrincipals
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaBetaServicePrincipalEndpoint](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalEndpoint?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaServicePrincipalEndpoint](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalEndpoint?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,22 +29,6 @@ Remove-MgServicePrincipalEndpoint -InputObject <IApplicationsIdentity> [-IfMatch
 
 ## DESCRIPTION
 Delete navigation property endpoints for servicePrincipals
-
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 
@@ -196,4 +180,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaBetaServicePrincipalEndpoint](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalEndpoint?view=graph-powershell-beta)
+[Remove-MgBetaServicePrincipalEndpoint](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalEndpoint?view=graph-powershell-beta)
+

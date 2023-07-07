@@ -52,18 +52,6 @@ Update-MgBetaDeviceAppManagementMobileAppDeviceStatus -InputObject <IDevicesCorp
 ## DESCRIPTION
 Update the navigation property deviceStatuses in deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -696,4 +684,5 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
 [Update-MgDeviceAppManagementMobileAppDeviceStatus](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementMobileAppDeviceStatus?view=graph-powershell-v1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementmobileappdevicestatus](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementmobileappdevicestatus)
+
 

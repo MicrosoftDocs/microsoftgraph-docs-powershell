@@ -39,22 +39,6 @@ Get-MgBetaGroupSetting -InputObject <IGroupsIdentity> [-ExpandProperty <String[]
 Settings that can govern this group's behavior, like whether members can invite guest users to the group.
 Nullable.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -320,3 +304,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupSetting](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupSetting?view=graph-powershell-v1.0)
+

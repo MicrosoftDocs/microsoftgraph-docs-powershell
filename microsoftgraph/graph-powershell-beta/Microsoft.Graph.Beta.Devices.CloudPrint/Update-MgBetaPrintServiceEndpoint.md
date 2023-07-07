@@ -43,22 +43,6 @@ Update-MgBetaPrintServiceEndpoint -InputObject <IDevicesCloudPrintIdentity>
 ## DESCRIPTION
 Update the navigation property endpoints in print
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -257,3 +241,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgPrintServiceEndpoint](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Update-MgPrintServiceEndpoint?view=graph-powershell-v1.0)
+

@@ -30,22 +30,6 @@ Remove-MgBetaPolicyAuthorizationPolicyDefaultUserRoleOverride -InputObject <IIde
 ## DESCRIPTION
 Delete navigation property defaultUserRoleOverrides for policies
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AuthorizationPolicyId
@@ -251,3 +235,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgPolicyAuthorizationPolicyDefaultUserRoleOverride](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyAuthorizationPolicyDefaultUserRoleOverride?view=graph-powershell-v1.0)
+

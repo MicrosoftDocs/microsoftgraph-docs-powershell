@@ -23,22 +23,6 @@ Remove-MgBetaDeviceManagementVirtualEndpointReport [-IfMatch <String>] [-PassThr
 ## DESCRIPTION
 Delete navigation property reports for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -116,3 +100,4 @@ ALIASES
 
 ## RELATED LINKS
 [Remove-MgDeviceManagementVirtualEndpointReport](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Remove-MgDeviceManagementVirtualEndpointReport?view=graph-powershell-v1.0)
+

@@ -22,18 +22,6 @@ Get-MgBetaWindowsUpdatesPolicyCount [-Filter <String>] [-Search <String>] [<Comm
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -82,3 +70,4 @@ Get-MgBetaWuPolicyCount
 
 ## RELATED LINKS
 [Get-MgWindowsUpdatesPolicyCount](/powershell/module/Microsoft.Graph.WindowsUpdates/Get-MgWindowsUpdatesPolicyCount?view=graph-powershell-v1.0)
+

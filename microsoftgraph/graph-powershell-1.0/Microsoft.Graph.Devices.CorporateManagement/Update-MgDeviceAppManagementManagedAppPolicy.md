@@ -45,18 +45,6 @@ Update-MgDeviceAppManagementManagedAppPolicy -InputObject <IDevicesCorporateMana
 ## DESCRIPTION
 Update the navigation property managedAppPolicies in deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -307,3 +295,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaDeviceAppManagementManagedAppPolicy](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementManagedAppPolicy?view=graph-powershell-beta)
+

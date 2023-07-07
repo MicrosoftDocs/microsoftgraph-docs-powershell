@@ -55,11 +55,12 @@ Update the navigation property excludes in policies
 
 ### EXAMPLE 1
 ```powershell
-Connect-MgGraph -Scopes "Policy.Read.PermissionGrant,Policy.ReadWrite.PermissionGrant"  
+Connect-MgGraph -Scopes "Policy.Read.PermissionGrant,Policy.ReadWrite.PermissionGrant"
 Update-MgPolicyPermissionGrantPolicyExclude -PermissionGrantConditionSetId "33895130-8450-4a4b-a353-e2bc28d54f97" -PermissionGrantPolicyId "testtenant-sampleapp-permissions" -PermissionType "application" -ResourceApplication "00000000-0000-0000-0000-000000000000" -Permissions "00000000-0000-0000-0000-000000000000", "00000000-0000-0000-0000-000000000001"
-```
 
+```
 ## PARAMETERS
+
 
 ### -AdditionalProperties
 Additional Parameters
@@ -407,3 +408,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaPolicyPermissionGrantPolicyExclude](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyPermissionGrantPolicyExclude?view=graph-powershell-beta)
+

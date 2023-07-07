@@ -22,18 +22,6 @@ Get-MgBetaSettingCount [-Search <String>] [<CommonParameters>]
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Search
@@ -65,3 +53,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgSettingCount](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgSettingCount?view=graph-powershell-v1.0)
+

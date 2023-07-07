@@ -32,22 +32,6 @@ Get-MgBetaDeviceManagementDeviceHealthScriptDeviceRunStateManagedDevice
 ## DESCRIPTION
 The managed device on which the device health script executed
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DeviceHealthScriptDeviceStateId
@@ -285,3 +269,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDevice](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDevice?view=graph-powershell-v1.0)
+

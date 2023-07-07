@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property directories in servicePrincipals
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBetaServicePrincipalSynchronizationJobSchemaDirectory](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipalSynchronizationJobSchemaDirectory?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaServicePrincipalSynchronizationJobSchemaDirectory](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipalSynchronizationJobSchemaDirectory?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -47,18 +47,6 @@ Update-MgServicePrincipalSynchronizationJobSchemaDirectory -InputObject <IApplic
 
 ## DESCRIPTION
 Update the navigation property directories in servicePrincipals
-
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -394,4 +382,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[SupportedApis <String[]>]`: 
 
 ## RELATED LINKS
-[Update-MgBetaBetaServicePrincipalSynchronizationJobSchemaDirectory](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipalSynchronizationJobSchemaDirectory?view=graph-powershell-beta)
+[Update-MgBetaServicePrincipalSynchronizationJobSchemaDirectory](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipalSynchronizationJobSchemaDirectory?view=graph-powershell-beta)
+

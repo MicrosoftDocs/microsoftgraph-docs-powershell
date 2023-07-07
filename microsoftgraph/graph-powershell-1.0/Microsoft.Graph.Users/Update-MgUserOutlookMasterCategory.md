@@ -44,22 +44,6 @@ Update-MgUserLicenseDetail -InputObject <IUsersIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Update the navigation property licenseDetails in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -290,3 +274,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaUserOutlookMasterCategory](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserOutlookMasterCategory?view=graph-powershell-beta)
+

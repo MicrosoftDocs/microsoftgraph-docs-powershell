@@ -37,18 +37,6 @@ Get-MgBetaRoleManagementDirectoryRoleAssignmentApprovalStep -InputObject <IIdent
 ## DESCRIPTION
 Retrieve the properties of an approvalStep object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -366,3 +354,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgRoleManagementDirectoryRoleAssignmentApprovalStep](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryRoleAssignmentApprovalStep?view=graph-powershell-v1.0)
+

@@ -43,18 +43,6 @@ Update-MgBetaSitePageCanvaLayoutVerticalSectionWebpart -InputObject <ISitesIdent
 ## DESCRIPTION
 Update the navigation property webparts in sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -268,3 +256,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgSitePageCanvaLayoutVerticalSectionWebpart](/powershell/module/Microsoft.Graph.Sites/Update-MgSitePageCanvaLayoutVerticalSectionWebpart?view=graph-powershell-v1.0)
+

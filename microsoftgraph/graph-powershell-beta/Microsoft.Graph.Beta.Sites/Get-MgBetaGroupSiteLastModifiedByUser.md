@@ -42,18 +42,6 @@ Get-MgBetaGroupSiteLastModifiedByUser -InputObject <ISitesIdentity> [-ExpandProp
 ## DESCRIPTION
 Get lastModifiedByUser from groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -219,3 +207,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupSiteLastModifiedByUser](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteLastModifiedByUser?view=graph-powershell-v1.0)
+

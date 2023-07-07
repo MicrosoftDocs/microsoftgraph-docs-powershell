@@ -32,18 +32,6 @@ Get-MgBetaDeviceAppManagementMobileAppTopMobileApp -InputObject <IDevicesCorpora
 ## DESCRIPTION
 Invoke function getTopMobileApps
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -287,4 +275,5 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
 [Get-MgDeviceAppManagementMobileAppTopMobileApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppTopMobileApp?view=graph-powershell-v1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementmobileapptopmobileapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementmobileapptopmobileapp)
+
 

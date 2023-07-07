@@ -30,18 +30,6 @@ Invoke-MgBetaFinancialCompanySalesInvoice -InputObject <IFinancialsIdentity> [-P
 ## DESCRIPTION
 Invoke action post
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CompanyId
@@ -194,3 +182,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgFinancialCompanySalesInvoice](/powershell/module/Microsoft.Graph.Financials/Invoke-MgFinancialCompanySalesInvoice?view=graph-powershell-v1.0)
+

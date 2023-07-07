@@ -30,18 +30,6 @@ Get-MgDriveContentTypeBase -InputObject <IFilesIdentity> [-ExpandProperty <Strin
 ## DESCRIPTION
 Parent contentType from which this content type is derived.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -166,3 +154,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDriveContentTypeBase](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveContentTypeBase?view=graph-powershell-beta)
+

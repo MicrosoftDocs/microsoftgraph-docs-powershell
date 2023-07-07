@@ -29,18 +29,6 @@ Get-MgBetaReportFormUserActivityCount -InputObject <IReportsIdentity> -OutFile <
 ## DESCRIPTION
 Invoke function getFormsUserActivityCounts
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -InputObject
@@ -151,3 +139,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgReportFormUserActivityCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportFormUserActivityCount?view=graph-powershell-v1.0)
+

@@ -56,18 +56,6 @@ Get-MgSiteContentTypeBaseType -InputObject <ISitesIdentity> [-ExpandProperty <St
 ## DESCRIPTION
 The collection of content types that are ancestors of this content type.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -357,3 +345,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSiteContentTypeBaseType](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteContentTypeBaseType?view=graph-powershell-beta)
+

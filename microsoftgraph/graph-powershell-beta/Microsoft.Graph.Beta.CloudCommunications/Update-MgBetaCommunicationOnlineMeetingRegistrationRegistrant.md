@@ -45,18 +45,6 @@ Update-MgBetaCommunicationOnlineMeetingRegistrationRegistrant -InputObject <IClo
 ## DESCRIPTION
 Update the navigation property registrants in communications
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -245,3 +233,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgCommunicationOnlineMeetingRegistrationRegistrant](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgCommunicationOnlineMeetingRegistrationRegistrant?view=graph-powershell-v1.0)
+

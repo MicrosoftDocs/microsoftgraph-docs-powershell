@@ -30,18 +30,6 @@ Invoke-MgBetaRotateUserManagedDeviceLocalAdminPassword -InputObject <IUsersActio
 ## DESCRIPTION
 Initiates a manual rotation for the local admin password on the device
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -InputObject
@@ -198,3 +186,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgRotateUserManagedDeviceLocalAdminPassword](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgRotateUserManagedDeviceLocalAdminPassword?view=graph-powershell-v1.0)
+

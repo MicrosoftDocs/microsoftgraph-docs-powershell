@@ -23,22 +23,6 @@ Get-MgBetaDeviceManagementDeviceConfigurationIoAvailableUpdateVersion [-Count] [
 ## DESCRIPTION
 Invoke function getIosAvailableUpdateVersions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -130,3 +114,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgDeviceManagementDeviceConfigurationIoAvailableUpdateVersion](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementDeviceConfigurationIoAvailableUpdateVersion?view=graph-powershell-v1.0)
+

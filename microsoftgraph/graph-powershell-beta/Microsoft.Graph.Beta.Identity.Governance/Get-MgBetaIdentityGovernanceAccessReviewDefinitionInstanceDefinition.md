@@ -33,22 +33,6 @@ Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDefinition -InputObjec
 There is exactly one accessReviewScheduleDefinition associated with each instance.
 It is the parent schedule for the instance, where instances are created for each recurrence of a review definition and each group selected to review by the definition.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AccessReviewInstanceId
@@ -245,3 +229,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgIdentityGovernanceAccessReviewDefinitionInstanceDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceAccessReviewDefinitionInstanceDefinition?view=graph-powershell-v1.0)
+

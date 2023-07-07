@@ -2,7 +2,7 @@
 # Licensed under the MIT License.
 Param(
     $ModulesToGenerate = @(),
-    [string] $ModuleMappingConfigPath = (Join-Path $PSScriptRoot "../../msgraph-sdk-powershell/config/ModulesMapping.jsonc"),
+    [string] $ModuleMappingConfigPath = (Join-Path $PSScriptRoot "../microsoftgraph/config/ModulesMapping.jsonc"),
 	[string] $WorkLoadDocsPath =  (Join-Path $PSScriptRoot "../microsoftgraph")
 )
 function Get-GraphMapping {
@@ -59,6 +59,7 @@ function Copy-Files{
         [string] $ModulePrefix = "Microsoft.Graph"
 		
     )
+    $exampleCounter = 0
     $Path = "$ModulePrefix.$ModuleName"
     if($GraphProfile -eq 'beta'){
        $Path = "$ModulePrefix.Beta.$ModuleName"
@@ -66,15 +67,22 @@ function Copy-Files{
      $destination = Join-Path $WorkLoadDocsPath $GraphProfilePath $Path
 
      foreach ($File in Get-ChildItem $destination) {
-               
+         
         #Extract command over here
         $WrongExample = "``````powershell`r`nImport-Module $Path`r`n``````"
        
         $WrongExampleWithExtraSpace = "```````r`n`Import-Module $Path`r`n``````"
         $GoodExample = "``````powershell`r`nImport-Module $Path"
         $GoodExample2 = "```````r`n`Import-Module $Path"
-        $WrongExampleWithRegex = "``````powershell(?s).*``````"
-
+        $WrongExampleWithRegex = "``````powershell`r`nConnect-MgGraph -Scopes.*`r`n\w*-\w*`r`n``````"
+        $WrongExampleWithRegex2 = "``````powershell`r`n\w*-\w* -(\w* [a-zA-z0-9''""(){}]).*`r`n``````"
+        $WrongExampleWithRegex3 = "``````powershell`r`nConnect-MgGraph -Scopes.*`r`n\w*-\w* -(\w* [a-zA-z0-9''""(){}]).*`r`n``````"
+        $WrongExampleWithRegex4 = "``````powershell\n@{`n([^}]*\`n)}`n``````"
+        $WrongExampleWithRegex5 = "``````powershell\n@\(`n([^}]*\`n)\)`n``````"
+        $WrongExampleWithRegex6 = "``````powershell`r`n\w*-\w*`r`n``````"
+        $WrongExampleWithRegex7 = "``````powershell`r`nConnect-MgGraph -Scopes.*`r`n[a-zA-z-|].*`r`n``````"
+        $WrongExampleWithRegex8 = "``````powershell`r`nConnect-MgGraph -Scopes.*`r`n\w*-\w* -[a-zA-z,""''|].*`r`n``````"
+        $NoCodeAvailable = "Add code here"
         $Endpath1 = "```````r`n## PARAMETERS"
         $Endpath2 = "```````r`n### EXAMPLE 2"
         $Endpath3 = "```````r`n### EXAMPLE 3"
@@ -87,11 +95,9 @@ function Copy-Files{
         $Endpath10 = "```````r`n### EXAMPLE 10"
         $Endpath11 = "```````r`n### EXAMPLE 11"
         $Endpath12 = "```````r`n### EXAMPLE 12"
-        $DefaultBoilerPlate = "## EXAMPLES`r`n`n### -------------------------- EXAMPLE 1 --------------------------`r`n``````powershell`r`n{{ Add code here }}`r`n```````n`n{{ Add output here }}`r`n`n### -------------------------- EXAMPLE 2 --------------------------`r`n``````powershell`r`n{{ Add code here }}`r`n```````n`n{{ Add output here }}`r`n`n## PARAMETERS"
         $SearchBlock = "## EXAMPLES(?s).*## PARAMETERS"
         $option = [System.Text.RegularExpressions.RegexOptions]::Multiline
         $re = [regex]::new($SearchBlock, $option)
-        $SearchBlockTest = "## EXAMPLES`nejlddjldj`n## PARAMETERS"
         $content = Get-Content -Encoding UTF8 -Raw $File
         if(($content -match $WrongExample) -or ($content -match $WrongExampleWithExtraSpace) ){
             Write-Host $File
@@ -107,7 +113,54 @@ function Copy-Files{
                   # automatic variable $Matches reflects what was captured
               }
           
+        }elseif(($content -match $WrongExampleWithRegex) -or ($content -match $WrongExampleWithRegex2) -or ($content -match $WrongExampleWithRegex3) -or ($content -match $WrongExampleWithRegex4) -or ($content -match $WrongExampleWithRegex5) -or ($content -match $WrongExampleWithRegex6) -or ($content -match $WrongExampleWithRegex7) -or ($content -match $WrongExampleWithRegex8)){
+            if ($content -match $re) { 
+                $extractedExample = $Matches[0]
+                $lines =  $extractedExample.Trim().Split("`n").Trim()
+               $replacement = ""
+               for($k = 0; $k -lt $lines.Count; $k++){
+                    if($lines[$k] -match "### EXAMPLE"){
+                        $exampleCounter++
+                    }
+                }
+                
+                for($i = 0; $i -lt $lines.Count; $i++){
+                        #$replacement += $lines[$i] + "`n"
+                    if($lines[$i] -eq "``````"){
+                    #skip
+                    }else{
+                        
+                        if(-not($lines[$i] -eq "### EXAMPLE 1" -and $replacement.Contains("### EXAMPLE $exampleCounter"))){
+                            if($lines[$i] -eq "``````"){
+                            }else{
+                                $replacement += $lines[$i] + "`n"
+                            }
+                        }else{
+                            break
+                        }
+                    }
+                }
+                
+                $finalOutput = $extractedExample.Replace($extractedExample,$replacement).Replace("### EXAMPLE 2", $Endpath2).Replace("## PARAMETERS", $Endpath1).Replace("### EXAMPLE 3", $Endpath3).Replace("### EXAMPLE 4", $Endpath4).Replace("### EXAMPLE 5", $Endpath5).Replace("### EXAMPLE 6", $Endpath6).Replace("### EXAMPLE 7", $Endpath7).Replace("### EXAMPLE 8", $Endpath8).Replace("### EXAMPLE 9", $Endpath9).Replace("### EXAMPLE 10", $Endpath10).Replace("### EXAMPLE 11", $Endpath11).Replace("### EXAMPLE 12", $Endpath12)
+                Write-Host "Hand written "$File
+                $text = $content.ToString()
+                              $text = $text.Replace($extractedExample, $finalOutput)
+                                $text | Out-File $File -Encoding UTF8
+                
+            }
+        }elseif(($content -match $NoCodeAvailable)){
+            if ($content -match $re) { 
+            $extractedExample = $Matches[0]
+           
+            Write-Host $File
+            $finalOutput = $extractedExample.Replace($extractedExample,"## PARAMETERS")  
+            $text = $content.ToString()
+                          $text = $text.Replace($extractedExample, $finalOutput)
+                            $text | Out-File $File -Encoding UTF8
         }
+        
+        }
+
     }
 }
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Create a new directory extension definition, represented by an extensionProperty object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBetaApplicationExtensionProperty](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationExtensionProperty?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaApplicationExtensionProperty](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationExtensionProperty?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -344,5 +344,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgBetaBetaApplicationExtensionProperty](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationExtensionProperty?view=graph-powershell-beta)
+[New-MgBetaApplicationExtensionProperty](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationExtensionProperty?view=graph-powershell-beta)
 

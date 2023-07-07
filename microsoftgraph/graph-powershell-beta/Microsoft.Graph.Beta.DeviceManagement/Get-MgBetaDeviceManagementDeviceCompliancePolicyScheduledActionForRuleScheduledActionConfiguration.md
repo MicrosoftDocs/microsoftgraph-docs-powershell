@@ -43,22 +43,6 @@ Get-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledA
 The list of scheduled action configurations for this compliance policy.
 Compliance policy must have one and only one block scheduled action.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -432,3 +416,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration?view=graph-powershell-v1.0)
+

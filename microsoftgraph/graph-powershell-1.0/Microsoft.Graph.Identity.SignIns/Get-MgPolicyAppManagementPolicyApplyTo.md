@@ -37,18 +37,6 @@ Get-MgPolicyAppManagementPolicyApplyTo -InputObject <IIdentitySignInsIdentity> [
 ## DESCRIPTION
 Collection of applications and service principals to which the policy is applied.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -325,3 +313,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaPolicyAppManagementPolicyApplyTo](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyAppManagementPolicyApplyTo?view=graph-powershell-beta)
+

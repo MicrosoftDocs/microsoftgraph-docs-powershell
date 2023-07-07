@@ -34,18 +34,6 @@ Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentSchedulePrincipal
 References the principal that's in the scope of this membership or ownership assignment request to the group that's governed by PIM.
 Supports $expand.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -227,3 +215,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentSchedulePrincipal](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentSchedulePrincipal?view=graph-powershell-v1.0)
+

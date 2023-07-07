@@ -50,22 +50,6 @@ New-MgGroupDriveItemSubscription -InputObject <IFilesIdentity> -BodyParameter <I
 ## DESCRIPTION
 Create new navigation property to subscriptions for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -527,3 +511,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaGroupDriveItemSubscription](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveItemSubscription?view=graph-powershell-beta)
+

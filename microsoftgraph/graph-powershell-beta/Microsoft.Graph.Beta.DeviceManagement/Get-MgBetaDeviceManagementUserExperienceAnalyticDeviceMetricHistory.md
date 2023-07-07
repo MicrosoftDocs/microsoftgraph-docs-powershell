@@ -38,22 +38,6 @@ Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceMetricHistory -InputObject
 ## DESCRIPTION
 User experience analytics device metric history
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -397,3 +381,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementUserExperienceAnalyticDeviceMetricHistory](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticDeviceMetricHistory?view=graph-powershell-v1.0)
+

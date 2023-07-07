@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke action parseExpression
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaBetaParseApplicationSynchronizationTemplateSchemaExpression](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaParseApplicationSynchronizationTemplateSchemaExpression?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Invoke-MgBetaParseApplicationSynchronizationTemplateSchemaExpression](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaParseApplicationSynchronizationTemplateSchemaExpression?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -48,18 +48,6 @@ Invoke-MgParseApplicationSynchronizationTemplateSchemaExpression -InputObject <I
 
 ## DESCRIPTION
 Invoke action parseExpression
-
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -348,4 +336,5 @@ To create the parameters described below, construct a hash table containing the 
     - `[Key <String>]`: 
 
 ## RELATED LINKS
-[Invoke-MgBetaBetaParseApplicationSynchronizationTemplateSchemaExpression](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaParseApplicationSynchronizationTemplateSchemaExpression?view=graph-powershell-beta)
+[Invoke-MgBetaParseApplicationSynchronizationTemplateSchemaExpression](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaParseApplicationSynchronizationTemplateSchemaExpression?view=graph-powershell-beta)
+

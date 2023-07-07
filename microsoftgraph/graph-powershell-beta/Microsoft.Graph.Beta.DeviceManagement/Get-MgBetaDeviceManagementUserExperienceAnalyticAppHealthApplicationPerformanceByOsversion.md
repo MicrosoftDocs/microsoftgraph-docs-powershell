@@ -39,22 +39,6 @@ Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceB
 ## DESCRIPTION
 User experience analytics appHealth Application Performance by OS Version
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -398,3 +382,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion?view=graph-powershell-v1.0)
+

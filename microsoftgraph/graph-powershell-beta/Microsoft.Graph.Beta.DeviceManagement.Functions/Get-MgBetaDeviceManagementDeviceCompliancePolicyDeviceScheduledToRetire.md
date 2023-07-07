@@ -23,22 +23,6 @@ Get-MgBetaDeviceManagementDeviceCompliancePolicyDeviceScheduledToRetire [-Count]
 ## DESCRIPTION
 Invoke function getDevicesScheduledToRetire
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -130,3 +114,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgDeviceManagementDeviceCompliancePolicyDeviceScheduledToRetire](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementDeviceCompliancePolicyDeviceScheduledToRetire?view=graph-powershell-v1.0)
+

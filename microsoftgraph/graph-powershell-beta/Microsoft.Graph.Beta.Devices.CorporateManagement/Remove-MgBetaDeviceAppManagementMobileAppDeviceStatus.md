@@ -30,18 +30,6 @@ Remove-MgBetaDeviceAppManagementMobileAppDeviceStatus -InputObject <IDevicesCorp
 ## DESCRIPTION
 Delete navigation property deviceStatuses for deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -241,4 +229,5 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
 [Remove-MgDeviceAppManagementMobileAppDeviceStatus](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Remove-MgDeviceAppManagementMobileAppDeviceStatus?view=graph-powershell-v1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/remove-mgbetadeviceappmanagementmobileappdevicestatus](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/remove-mgbetadeviceappmanagementmobileappdevicestatus)
+
 

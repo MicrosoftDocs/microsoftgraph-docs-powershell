@@ -28,18 +28,6 @@ Ping-MgBetaApplicationSynchronization -InputObject <IApplicationsIdentity> [<Com
 ## DESCRIPTION
 Invoke function Ping
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ApplicationId
@@ -123,3 +111,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Ping-MgApplicationSynchronization](/powershell/module/Microsoft.Graph.Applications/Ping-MgApplicationSynchronization?view=graph-powershell-v1.0)
+

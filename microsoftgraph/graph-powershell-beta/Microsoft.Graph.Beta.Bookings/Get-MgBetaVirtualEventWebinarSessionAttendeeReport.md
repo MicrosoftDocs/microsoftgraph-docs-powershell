@@ -32,18 +32,6 @@ Get-MgBetaVirtualEventWebinarSessionAttendeeReport -InputObject <IBookingsIdenti
 The content stream of the attendee report of a Teams live event.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -InputObject
@@ -164,3 +152,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgVirtualEventWebinarSessionAttendeeReport](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventWebinarSessionAttendeeReport?view=graph-powershell-v1.0)
+

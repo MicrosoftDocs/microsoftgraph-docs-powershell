@@ -30,22 +30,6 @@ Remove-MgPrintTaskDefinitionTask -InputObject <IDevicesCloudPrintIdentity> [-IfM
 ## DESCRIPTION
 Delete navigation property tasks for print
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -190,3 +174,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaPrintTaskDefinitionTask](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Remove-MgBetaPrintTaskDefinitionTask?view=graph-powershell-beta)
+

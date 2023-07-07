@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property directories in applications
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBetaApplicationSynchronizationJobSchemaDirectory](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplicationSynchronizationJobSchemaDirectory?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaApplicationSynchronizationJobSchemaDirectory](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplicationSynchronizationJobSchemaDirectory?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -46,18 +46,6 @@ Update-MgApplicationSynchronizationJobSchemaDirectory -InputObject <IApplication
 
 ## DESCRIPTION
 Update the navigation property directories in applications
-
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -393,4 +381,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[SupportedApis <String[]>]`: 
 
 ## RELATED LINKS
-[Update-MgBetaBetaApplicationSynchronizationJobSchemaDirectory](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplicationSynchronizationJobSchemaDirectory?view=graph-powershell-beta)
+[Update-MgBetaApplicationSynchronizationJobSchemaDirectory](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplicationSynchronizationJobSchemaDirectory?view=graph-powershell-beta)
+

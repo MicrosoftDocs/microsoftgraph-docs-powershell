@@ -46,22 +46,6 @@ Update-MgBetaComplianceEdiscoveryCaseSourceCollectionAdditionalSource -InputObje
 ## DESCRIPTION
 Update the navigation property additionalSources in compliance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -326,3 +310,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgComplianceEdiscoveryCaseSourceCollectionAdditionalSource](/powershell/module/Microsoft.Graph.Compliance/Update-MgComplianceEdiscoveryCaseSourceCollectionAdditionalSource?view=graph-powershell-v1.0)
+

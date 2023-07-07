@@ -23,22 +23,6 @@ New-MgBetaDeviceManagementApplePushNotificationCertificateApplePushNotificationC
 ## DESCRIPTION
 Download Apple push notification certificate signing request
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Confirm
@@ -86,3 +70,4 @@ ALIASES
 
 ## RELATED LINKS
 [New-MgDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/New-MgDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest?view=graph-powershell-v1.0)
+

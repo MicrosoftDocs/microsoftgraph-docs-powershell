@@ -30,22 +30,6 @@ Remove-MgBetaEducationSchoolUserByRef -InputObject <IEducationIdentity> [-Id <St
 ## DESCRIPTION
 Delete a user from a school.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -EducationSchoolId
@@ -205,3 +189,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgEducationSchoolUserByRef](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationSchoolUserByRef?view=graph-powershell-v1.0)
+

@@ -32,18 +32,6 @@ Set-MgBetaVirtualEventSessionRecording -InputObject <IBookingsIdentity> [-Data <
 The content stream of the recording of a Teams live event.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Data
@@ -213,3 +201,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgVirtualEventSessionRecording](/powershell/module/Microsoft.Graph.Bookings/Set-MgVirtualEventSessionRecording?view=graph-powershell-v1.0)
+

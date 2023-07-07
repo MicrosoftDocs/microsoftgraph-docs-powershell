@@ -24,22 +24,6 @@ Get-MgBetaApplicationAppManagementPolicy -ApplicationId <String> [-ExpandPropert
 ## DESCRIPTION
 The appManagementPolicy applied to this application.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -222,3 +206,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgApplicationAppManagementPolicy](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationAppManagementPolicy?view=graph-powershell-v1.0)
+

@@ -34,18 +34,6 @@ Invoke-MgBetaScheduleRoleManagementEnterpriseApp -InputObject <IIdentityGovernan
 ## DESCRIPTION
 Invoke function roleScheduleInstances
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AppScopeId
@@ -362,3 +350,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgScheduleRoleManagementEnterpriseApp](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgScheduleRoleManagementEnterpriseApp?view=graph-powershell-v1.0)
+

@@ -22,18 +22,6 @@ Remove-MgBetaRoleManagementDirectory [-IfMatch <String>] [-PassThru] [-WhatIf] [
 ## DESCRIPTION
 Delete navigation property directory for roleManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -111,3 +99,4 @@ ALIASES
 
 ## RELATED LINKS
 [Remove-MgRoleManagementDirectory](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgRoleManagementDirectory?view=graph-powershell-v1.0)
+

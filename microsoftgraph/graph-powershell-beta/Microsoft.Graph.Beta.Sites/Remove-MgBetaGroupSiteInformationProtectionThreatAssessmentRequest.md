@@ -30,18 +30,6 @@ Remove-MgBetaGroupSiteInformationProtectionThreatAssessmentRequest -InputObject 
 ## DESCRIPTION
 Delete navigation property threatAssessmentRequests for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -GroupId
@@ -238,3 +226,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgGroupSiteInformationProtectionThreatAssessmentRequest](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSiteInformationProtectionThreatAssessmentRequest?view=graph-powershell-v1.0)
+

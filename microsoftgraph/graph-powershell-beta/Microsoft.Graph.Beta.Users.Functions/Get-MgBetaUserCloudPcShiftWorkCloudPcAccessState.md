@@ -28,18 +28,6 @@ Get-MgBetaUserCloudPcShiftWorkCloudPcAccessState -InputObject <IUsersFunctionsId
 ## DESCRIPTION
 Invoke function getShiftWorkCloudPcAccessState
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CloudPcId
@@ -147,3 +135,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserCloudPcShiftWorkCloudPcAccessState](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserCloudPcShiftWorkCloudPcAccessState?view=graph-powershell-v1.0)
+

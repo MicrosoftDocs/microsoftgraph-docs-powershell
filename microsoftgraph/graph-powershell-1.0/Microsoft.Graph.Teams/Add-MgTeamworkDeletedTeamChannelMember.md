@@ -47,18 +47,6 @@ Add-MgTeamworkDeletedTeamChannelMember -InputObject <ITeamsIdentity>
 Add multiple members in a single request to a team.
 The response provides details about which memberships could and couldn't be created.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -253,3 +241,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Add-MgBetaTeamworkDeletedTeamChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Add-MgBetaTeamworkDeletedTeamChannelMember?view=graph-powershell-beta)
+

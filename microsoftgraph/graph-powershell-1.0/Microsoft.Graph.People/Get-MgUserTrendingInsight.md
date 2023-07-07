@@ -38,22 +38,6 @@ Calculated relationship identifying documents trending around a user.
 Trending documents are calculated based on activity of the user's closest network of people and include files stored in OneDrive for Business and SharePoint.
 Trending insights help the user to discover potentially useful content that the user has access to, but has never viewed before.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -279,3 +263,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

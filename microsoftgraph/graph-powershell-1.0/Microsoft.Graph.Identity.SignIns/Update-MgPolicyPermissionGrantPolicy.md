@@ -50,11 +50,12 @@ Update properties of a  permissionGrantPolicy.
 
 ### EXAMPLE 1
 ```powershell
-Connect-MgGraph -Scopes "Policy.Read.PermissionGrant,Policy.ReadWrite.PermissionGrant"  
+Connect-MgGraph -Scopes "Policy.Read.PermissionGrant,Policy.ReadWrite.PermissionGrant"
 Update-MgPolicyPermissionGrantPolicy -PermissionGrantPolicyId "testtenant-sampleapp-permissions" -Description "Permissions for sample app in test tenant with new updates" -DisplayName "Sample app permissions with new updates"
-```
 
+```
 ## PARAMETERS
+
 
 ### -AdditionalProperties
 Additional Parameters
@@ -368,3 +369,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaPolicyPermissionGrantPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyPermissionGrantPolicy?view=graph-powershell-beta)
+

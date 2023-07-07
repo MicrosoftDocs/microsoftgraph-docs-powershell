@@ -30,18 +30,6 @@ Remove-MgBetaIdentityGovernanceTermsOfUseAgreement -InputObject <IIdentityGovern
 ## DESCRIPTION
 Delete an agreement object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AgreementId
@@ -254,3 +242,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgIdentityGovernanceTermsOfUseAgreement](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgIdentityGovernanceTermsOfUseAgreement?view=graph-powershell-v1.0)
+

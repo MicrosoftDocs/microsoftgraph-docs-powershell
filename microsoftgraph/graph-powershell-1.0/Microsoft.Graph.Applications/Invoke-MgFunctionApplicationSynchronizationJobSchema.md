@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function functions
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaBetaFunctionApplicationSynchronizationJobSchema](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaFunctionApplicationSynchronizationJobSchema?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Invoke-MgBetaFunctionApplicationSynchronizationJobSchema](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaFunctionApplicationSynchronizationJobSchema?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,18 +31,6 @@ Invoke-MgFunctionApplicationSynchronizationJobSchema -InputObject <IApplications
 
 ## DESCRIPTION
 Invoke function functions
-
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -238,4 +226,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBetaBetaFunctionApplicationSynchronizationJobSchema](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaFunctionApplicationSynchronizationJobSchema?view=graph-powershell-beta)
+[Invoke-MgBetaFunctionApplicationSynchronizationJobSchema](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaFunctionApplicationSynchronizationJobSchema?view=graph-powershell-beta)
+

@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke action pause
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Suspend-MgBetaBetaApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Beta.Applications/Suspend-MgBetaApplicationSynchronizationJob?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Suspend-MgBetaApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Beta.Applications/Suspend-MgBetaApplicationSynchronizationJob?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,18 +29,6 @@ Suspend-MgApplicationSynchronizationJob -InputObject <IApplicationsIdentity> [-P
 
 ## DESCRIPTION
 Invoke action pause
-
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -177,4 +165,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Suspend-MgBetaBetaApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Beta.Applications/Suspend-MgBetaApplicationSynchronizationJob?view=graph-powershell-beta)
+[Suspend-MgBetaApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Beta.Applications/Suspend-MgBetaApplicationSynchronizationJob?view=graph-powershell-beta)
+

@@ -31,18 +31,6 @@ Set-MgTeamworkDeletedTeamChannelMessageReplyHostedContent -InputObject <ITeamsId
 ## DESCRIPTION
 Update media content for the navigation property hostedContents in teamwork
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ChannelId
@@ -268,3 +256,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgBetaTeamworkDeletedTeamChannelMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaTeamworkDeletedTeamChannelMessageReplyHostedContent?view=graph-powershell-beta)
+

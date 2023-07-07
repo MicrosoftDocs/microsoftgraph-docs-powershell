@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property delegatedPermissionClassifications in servicePrincipals
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBetaServicePrincipalDelegatedPermissionClassification](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipalDelegatedPermissionClassification?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaServicePrincipalDelegatedPermissionClassification](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipalDelegatedPermissionClassification?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -44,22 +44,6 @@ Update-MgServicePrincipalDelegatedPermissionClassification -InputObject <IApplic
 
 ## DESCRIPTION
 Update the navigation property delegatedPermissionClassifications in servicePrincipals
-
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 
@@ -284,4 +268,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgBetaBetaServicePrincipalDelegatedPermissionClassification](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipalDelegatedPermissionClassification?view=graph-powershell-beta)
+[Update-MgBetaServicePrincipalDelegatedPermissionClassification](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipalDelegatedPermissionClassification?view=graph-powershell-beta)
+

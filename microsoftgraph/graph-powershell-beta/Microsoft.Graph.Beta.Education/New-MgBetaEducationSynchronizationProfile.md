@@ -35,22 +35,6 @@ New-MgBetaEducationSynchronizationProfile -BodyParameter <IMicrosoftGraphEducati
 ## DESCRIPTION
 Create new navigation property to synchronizationProfiles for education
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -345,3 +329,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgEducationSynchronizationProfile](/powershell/module/Microsoft.Graph.Education/New-MgEducationSynchronizationProfile?view=graph-powershell-v1.0)
+

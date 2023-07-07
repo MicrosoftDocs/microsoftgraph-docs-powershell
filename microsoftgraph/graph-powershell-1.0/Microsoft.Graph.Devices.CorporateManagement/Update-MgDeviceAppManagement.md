@@ -46,18 +46,6 @@ Update-MgDeviceAppManagement -BodyParameter <IMicrosoftGraphDeviceAppManagement>
 ## DESCRIPTION
 Update deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1421,3 +1409,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaDeviceAppManagement](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagement?view=graph-powershell-beta)
+

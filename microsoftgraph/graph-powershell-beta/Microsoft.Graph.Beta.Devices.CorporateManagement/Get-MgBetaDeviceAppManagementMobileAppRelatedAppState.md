@@ -31,18 +31,6 @@ Get-MgBetaDeviceAppManagementMobileAppRelatedAppState -InputObject <IDevicesCorp
 ## DESCRIPTION
 Invoke function getRelatedAppStates
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -271,4 +259,5 @@ INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
 [Get-MgDeviceAppManagementMobileAppRelatedAppState](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppRelatedAppState?view=graph-powershell-v1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementmobileapprelatedappstate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementmobileapprelatedappstate)
+
 

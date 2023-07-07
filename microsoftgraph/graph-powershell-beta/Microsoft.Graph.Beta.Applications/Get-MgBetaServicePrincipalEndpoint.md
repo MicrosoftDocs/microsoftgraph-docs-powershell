@@ -39,22 +39,6 @@ Get-MgBetaServicePrincipalEndpoint -InputObject <IApplicationsIdentity> [-Expand
 Endpoints available for discovery.
 Services like Sharepoint populate this property with a tenant specific SharePoint endpoints that other applications can discover and use in their experiences.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -304,3 +288,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgServicePrincipalEndpoint](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalEndpoint?view=graph-powershell-v1.0)
+

@@ -34,18 +34,6 @@ Image that appears as the background of the sign-in page.
 The allowed types are PNG or JPEG not smaller than 300 KB and not larger than 1920 × 1080 pixels.
 A smaller image will reduce bandwidth requirements and make the page load faster.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -InputObject
@@ -182,3 +170,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgOrganizationBrandingLocalizationBackgroundImage](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgOrganizationBrandingLocalizationBackgroundImage?view=graph-powershell-v1.0)
+

@@ -22,22 +22,6 @@ Get-MgBetaDeviceManagementComanagedDeviceSummary [<CommonParameters>]
 ## DESCRIPTION
 Invoke function getComanagedDevicesSummary
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### CommonParameters
@@ -54,3 +38,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgDeviceManagementComanagedDeviceSummary](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementComanagedDeviceSummary?view=graph-powershell-v1.0)
+

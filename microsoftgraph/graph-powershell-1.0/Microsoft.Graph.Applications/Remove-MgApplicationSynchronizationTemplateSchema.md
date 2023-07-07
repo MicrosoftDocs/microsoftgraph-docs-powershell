@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property schema for applications
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaBetaApplicationSynchronizationTemplateSchema](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationSynchronizationTemplateSchema?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaApplicationSynchronizationTemplateSchema](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationSynchronizationTemplateSchema?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,18 +29,6 @@ Remove-MgApplicationSynchronizationTemplateSchema -InputObject <IApplicationsIde
 
 ## DESCRIPTION
 Delete navigation property schema for applications
-
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -192,4 +180,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaBetaApplicationSynchronizationTemplateSchema](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationSynchronizationTemplateSchema?view=graph-powershell-beta)
+[Remove-MgBetaApplicationSynchronizationTemplateSchema](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationSynchronizationTemplateSchema?view=graph-powershell-beta)
+

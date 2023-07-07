@@ -42,22 +42,6 @@ Update-MgUserDriveItemListItemVersionField -InputObject <IFilesIdentity> -BodyPa
 ## DESCRIPTION
 Update the navigation property fields in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -260,3 +244,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaUserDriveItemListItemVersionField](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveItemListItemVersionField?view=graph-powershell-beta)
+

@@ -35,18 +35,6 @@ New-MgBetaPrintPrinter
 Create (register) a printer with the Universal Print service.
 This is a long-running operation and as such, it returns a printerCreateOperation that can be used to track and verify the registration of the printer.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -270,3 +258,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgPrintPrinter](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintPrinter?view=graph-powershell-v1.0)
+

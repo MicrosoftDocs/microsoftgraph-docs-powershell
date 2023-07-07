@@ -58,22 +58,6 @@ New-MgBetaGroupSitePage -InputObject <ISitesIdentity> -BodyParameter <IMicrosoft
 ## DESCRIPTION
 Create a new [sitePage][] in the site pages [list][] in a [site][].
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -14810,3 +14794,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgGroupSitePage](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSitePage?view=graph-powershell-v1.0)
+

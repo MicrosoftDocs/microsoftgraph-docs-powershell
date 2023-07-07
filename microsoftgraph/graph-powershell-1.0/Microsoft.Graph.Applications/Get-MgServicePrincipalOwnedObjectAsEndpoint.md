@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.endpoint
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaServicePrincipalOwnedObjectAsEndpoint](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalOwnedObjectAsEndpoint?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalOwnedObjectAsEndpoint](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalOwnedObjectAsEndpoint?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -36,18 +36,6 @@ Get-MgServicePrincipalOwnedObjectAsEndpoint -InputObject <IApplicationsIdentity>
 
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.endpoint
-
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -289,4 +277,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaServicePrincipalOwnedObjectAsEndpoint](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalOwnedObjectAsEndpoint?view=graph-powershell-beta)
+[Get-MgBetaServicePrincipalOwnedObjectAsEndpoint](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalOwnedObjectAsEndpoint?view=graph-powershell-beta)
+

@@ -33,22 +33,6 @@ New-MgBetaPrivilegedOperationEvent -BodyParameter <IMicrosoftGraphPrivilegedOper
 ## DESCRIPTION
 Add new entity to privilegedOperationEvents
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalInformation
@@ -377,3 +361,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgPrivilegedOperationEvent](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgPrivilegedOperationEvent?view=graph-powershell-v1.0)
+

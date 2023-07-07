@@ -50,22 +50,6 @@ New-MgBetaGroupTeamScheduleTimeCard -InputObject <ITeamsIdentity> -BodyParameter
 ## DESCRIPTION
 Create a timeCard instance in a schedule.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -501,3 +485,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgGroupTeamScheduleTimeCard](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamScheduleTimeCard?view=graph-powershell-v1.0)
+

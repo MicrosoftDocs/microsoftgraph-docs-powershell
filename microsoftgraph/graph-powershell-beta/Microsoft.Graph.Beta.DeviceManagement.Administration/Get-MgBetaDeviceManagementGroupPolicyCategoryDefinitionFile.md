@@ -31,22 +31,6 @@ Get-MgBetaDeviceManagementGroupPolicyCategoryDefinitionFile
 ## DESCRIPTION
 The id of the definition file the category came from
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -188,3 +172,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementGroupPolicyCategoryDefinitionFile](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementGroupPolicyCategoryDefinitionFile?view=graph-powershell-v1.0)
+

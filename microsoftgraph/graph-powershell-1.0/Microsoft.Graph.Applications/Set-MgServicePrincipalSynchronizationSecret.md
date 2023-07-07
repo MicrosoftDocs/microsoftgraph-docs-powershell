@@ -11,7 +11,7 @@ schema: 2.0.0
 Update property secrets value.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaBetaServicePrincipalSynchronizationSecret](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaServicePrincipalSynchronizationSecret?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Set-MgBetaServicePrincipalSynchronizationSecret](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaServicePrincipalSynchronizationSecret?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,18 +31,6 @@ Set-MgServicePrincipalSynchronizationSecret -InputObject <IApplicationsIdentity>
 
 ## DESCRIPTION
 Update property secrets value.
-
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -170,4 +158,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Set-MgBetaBetaServicePrincipalSynchronizationSecret](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaServicePrincipalSynchronizationSecret?view=graph-powershell-beta)
+[Set-MgBetaServicePrincipalSynchronizationSecret](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaServicePrincipalSynchronizationSecret?view=graph-powershell-beta)
+

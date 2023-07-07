@@ -22,22 +22,6 @@ Get-MgBetaEducationMe [-ExpandProperty <String[]>] [-Property <String[]>] [<Comm
 ## DESCRIPTION
 Get me from education
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -84,3 +68,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgEducationMe](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMe?view=graph-powershell-v1.0)
+

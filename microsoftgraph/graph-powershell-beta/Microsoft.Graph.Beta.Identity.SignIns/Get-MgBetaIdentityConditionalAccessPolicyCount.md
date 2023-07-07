@@ -22,18 +22,6 @@ Get-MgBetaIdentityConditionalAccessPolicyCount [-Filter <String>] [-Search <Stri
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -80,3 +68,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgIdentityConditionalAccessPolicyCount](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityConditionalAccessPolicyCount?view=graph-powershell-v1.0)
+

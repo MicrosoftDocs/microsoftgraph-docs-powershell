@@ -45,18 +45,6 @@ New-MgBetaGroupTeamTag -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftG
 ## DESCRIPTION
 Create a standard tag for members in the team.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -340,3 +328,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgGroupTeamTag](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamTag?view=graph-powershell-v1.0)
+

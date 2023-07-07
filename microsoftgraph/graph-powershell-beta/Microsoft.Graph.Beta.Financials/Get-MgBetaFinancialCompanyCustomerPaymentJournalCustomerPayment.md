@@ -38,22 +38,6 @@ Get-MgBetaFinancialCompanyCustomerPaymentJournalCustomerPayment -InputObject <IF
 ## DESCRIPTION
 Get customerPayments from financials
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -326,3 +310,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgFinancialCompanyCustomerPaymentJournalCustomerPayment](/powershell/module/Microsoft.Graph.Financials/Get-MgFinancialCompanyCustomerPaymentJournalCustomerPayment?view=graph-powershell-v1.0)
+

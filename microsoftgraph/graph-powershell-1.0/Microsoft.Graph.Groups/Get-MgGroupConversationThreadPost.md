@@ -49,18 +49,6 @@ Get-MgGroupConversationThreadPost -InputObject <IGroupsIdentity> [-ExpandPropert
 ## DESCRIPTION
 Get posts from groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -332,3 +320,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaGroupConversationThreadPost](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupConversationThreadPost?view=graph-powershell-beta)
+

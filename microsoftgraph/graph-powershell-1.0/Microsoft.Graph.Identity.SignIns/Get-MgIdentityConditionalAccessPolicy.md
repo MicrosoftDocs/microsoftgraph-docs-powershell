@@ -43,7 +43,6 @@ Retrieve the properties and relationships of a conditionalAccessPolicy object.
 ```powershell
 Connect-MgGraph -Scopes 'Policy.Read.All'
 Get-MgIdentityConditionalAccessPolicy |Format-List
-```
 
 Conditions           : Microsoft.Graph.PowerShell.Models.MicrosoftGraphConditionalAccessConditionSet
 CreatedDateTime      : 1/13/2022 6:35:35 AM
@@ -67,13 +66,13 @@ SessionControls      : Microsoft.Graph.PowerShell.Models.MicrosoftGraphCondition
 State                : enabled
 AdditionalProperties : {}
 
+```
 ### EXAMPLE 2
 ```powershell
 Connect-MgGraph -Scopes 'Policy.Read.All'
-```
 
-Get-MgIdentityConditionalAccessPolicy -ConditionalAccessPolicyId '5e7615b8-dbe4-4cc1-810c-26adb77a3518' | 
-  Format-List
+Get-MgIdentityConditionalAccessPolicy -ConditionalAccessPolicyId '5e7615b8-dbe4-4cc1-810c-26adb77a3518' |
+Format-List
 
 Conditions           : Microsoft.Graph.PowerShell.Models.MicrosoftGraphConditionalAccessConditionSet
 CreatedDateTime      : 1/13/2022 6:35:35 AM
@@ -86,7 +85,9 @@ SessionControls      : Microsoft.Graph.PowerShell.Models.MicrosoftGraphCondition
 State                : enabled
 AdditionalProperties : {[@odata.context, https://graph.microsoft.com/v1.0/$metadata#identity/conditionalAccess/policies/$entity]}
 
+```
 ## PARAMETERS
+
 
 ### -All
 List all pages.
@@ -347,3 +348,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityConditionalAccessPolicy?view=graph-powershell-beta)
+

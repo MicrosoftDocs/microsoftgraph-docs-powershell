@@ -24,22 +24,6 @@ Get-MgBetaUserDriveRootListItemActivity -DriveId <String> -UserId <String> [-Exp
 ## DESCRIPTION
 The list of recent activities that took place on this item.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -237,3 +221,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgUserDriveRootListItemActivity](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveRootListItemActivity?view=graph-powershell-v1.0)
+

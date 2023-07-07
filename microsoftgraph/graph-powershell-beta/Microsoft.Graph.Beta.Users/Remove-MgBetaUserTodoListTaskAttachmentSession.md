@@ -31,22 +31,6 @@ Remove-MgBetaUserTodoListTaskAttachmentSession -InputObject <IUsersIdentity> [-I
 ## DESCRIPTION
 Delete navigation property attachmentSessions for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AttachmentSessionId
@@ -226,3 +210,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgUserTodoListTaskAttachmentSession](/powershell/module/Microsoft.Graph.Users/Remove-MgUserTodoListTaskAttachmentSession?view=graph-powershell-v1.0)
+

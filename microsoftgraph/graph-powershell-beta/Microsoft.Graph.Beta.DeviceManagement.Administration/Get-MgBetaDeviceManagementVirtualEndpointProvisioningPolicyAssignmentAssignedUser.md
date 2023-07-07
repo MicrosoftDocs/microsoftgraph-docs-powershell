@@ -46,18 +46,6 @@ This list of users is computed based on assignments, licenses, group memberships
 This property is read-only.
 Supports$expand.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -350,3 +338,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUser](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUser?view=graph-powershell-v1.0)
+

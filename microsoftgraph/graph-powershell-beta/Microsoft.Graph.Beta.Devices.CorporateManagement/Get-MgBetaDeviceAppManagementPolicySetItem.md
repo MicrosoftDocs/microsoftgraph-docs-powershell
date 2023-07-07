@@ -37,18 +37,6 @@ Get-MgBetaDeviceAppManagementPolicySetItem -InputObject <IDevicesCorporateManage
 ## DESCRIPTION
 Items of the PolicySet with maximum count 100.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -336,3 +324,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceAppManagementPolicySetItem](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementPolicySetItem?view=graph-powershell-v1.0)
+

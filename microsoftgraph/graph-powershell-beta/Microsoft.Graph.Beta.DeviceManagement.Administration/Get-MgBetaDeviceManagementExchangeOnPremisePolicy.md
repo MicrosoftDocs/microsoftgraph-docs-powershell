@@ -43,18 +43,6 @@ Get-MgBetaDeviceManagementExchangeOnPremisePolicy [-ExpandProperty <String[]>] [
 ## DESCRIPTION
 The list of Exchange On Premisis policies configured by the tenant.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -317,3 +305,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementExchangeOnPremisePolicy](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementExchangeOnPremisePolicy?view=graph-powershell-v1.0)
+

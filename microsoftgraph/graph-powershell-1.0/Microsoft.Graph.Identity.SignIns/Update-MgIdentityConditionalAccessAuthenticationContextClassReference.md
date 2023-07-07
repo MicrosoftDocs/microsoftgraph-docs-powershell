@@ -45,22 +45,6 @@ Update-MgIdentityConditionalAccessAuthenticationContextClassReference -InputObje
 ## DESCRIPTION
 Update the navigation property authenticationContextClassReferences in identity
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -310,3 +294,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaIdentityConditionalAccessAuthenticationContextClassReference](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityConditionalAccessAuthenticationContextClassReference?view=graph-powershell-beta)
+

@@ -37,18 +37,6 @@ Get-MgBetaUserDeviceRegisteredOwnerAsUser -InputObject <ICrossDeviceExperiencesI
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.user
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -309,3 +297,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserDeviceRegisteredOwnerAsUser](/powershell/module/Microsoft.Graph.CrossDeviceExperiences/Get-MgUserDeviceRegisteredOwnerAsUser?view=graph-powershell-v1.0)
+

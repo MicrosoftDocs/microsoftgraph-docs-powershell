@@ -45,18 +45,6 @@ Return all IDs for the groups, administrative units, and directory roles that a 
 This function is transitive.
 **Note:** Only users and role-enabled groups can be members of directory roles.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -228,3 +216,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+

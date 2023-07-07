@@ -39,18 +39,6 @@ Get-MgBetaGroupSitePageCanvaLayoutHorizontalSectionColumnWebpart -InputObject <I
 ## DESCRIPTION
 The collection of WebParts in this column.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -383,3 +371,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupSitePageCanvaLayoutHorizontalSectionColumnWebpart](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSitePageCanvaLayoutHorizontalSectionColumnWebpart?view=graph-powershell-v1.0)
+

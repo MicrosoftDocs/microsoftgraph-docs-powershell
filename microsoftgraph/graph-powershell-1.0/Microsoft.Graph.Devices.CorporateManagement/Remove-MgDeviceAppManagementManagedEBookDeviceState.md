@@ -30,18 +30,6 @@ Remove-MgDeviceAppManagementManagedEBookDeviceState -InputObject <IDevicesCorpor
 ## DESCRIPTION
 Delete navigation property deviceStates for deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DeviceInstallStateId
@@ -205,3 +193,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaDeviceAppManagementManagedEBookDeviceState](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppManagementManagedEBookDeviceState?view=graph-powershell-beta)
+

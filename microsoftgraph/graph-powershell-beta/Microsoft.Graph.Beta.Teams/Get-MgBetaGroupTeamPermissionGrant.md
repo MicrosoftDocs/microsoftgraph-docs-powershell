@@ -37,22 +37,6 @@ Get-MgBetaGroupTeamPermissionGrant -InputObject <ITeamsIdentity> [-ExpandPropert
 ## DESCRIPTION
 A collection of permissions granted to apps to access the team.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -311,3 +295,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupTeamPermissionGrant](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamPermissionGrant?view=graph-powershell-v1.0)
+

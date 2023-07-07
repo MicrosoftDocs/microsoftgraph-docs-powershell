@@ -46,22 +46,6 @@ If the **unsubscribeEnabled** property of a message is `true`, you can use the *
 A successful **unsubscribe** action moves the message to the **Deleted Items** folder.
 The actual exclusion of the user from future mail distribution is managed by the sender.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -248,3 +232,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgUnsubscribeUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgUnsubscribeUserMailFolderChildFolderMessage?view=graph-powershell-v1.0)
+
