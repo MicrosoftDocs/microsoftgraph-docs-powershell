@@ -50,7 +50,7 @@ The duration of a shift cannot be less than 1 minute or longer than 24 hours.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -454,4 +454,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgTeamScheduleShift](/powershell/module/Microsoft.Graph.Teams/New-MgTeamScheduleShift?view=graph-powershell-v1.0)
+
 

@@ -44,7 +44,7 @@ Add a group to the list of groups that have been marked as incompatible on an ac
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -304,4 +304,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgEntitlementManagementAccessPackageIncompatibleGroupByRef](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementAccessPackageIncompatibleGroupByRef?view=graph-powershell-v1.0)
+
 

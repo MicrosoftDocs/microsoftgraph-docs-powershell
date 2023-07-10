@@ -62,7 +62,7 @@ Create a new reply to a chatMessage in a specified channel.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
@@ -906,4 +906,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamChannelMessageReply?view=graph-powershell-beta)
+
 

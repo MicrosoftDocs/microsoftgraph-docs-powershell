@@ -51,7 +51,7 @@ Get posts from groups
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Groups
 
@@ -314,4 +314,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaGroupThreadPost](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupThreadPost?view=graph-powershell-beta)
+
 

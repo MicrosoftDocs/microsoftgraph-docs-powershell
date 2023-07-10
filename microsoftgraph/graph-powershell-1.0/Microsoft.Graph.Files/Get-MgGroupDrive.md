@@ -41,7 +41,7 @@ Read-only.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Files
 Get-MgGroupDrive -GroupId $groupId
@@ -292,3 +292,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaGroupDrive](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDrive?view=graph-powershell-beta)
+

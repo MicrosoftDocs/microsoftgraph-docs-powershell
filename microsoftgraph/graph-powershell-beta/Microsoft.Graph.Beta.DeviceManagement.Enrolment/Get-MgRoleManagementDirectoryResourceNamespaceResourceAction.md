@@ -323,3 +323,4 @@ INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 [Get-MgRoleManagementDirectoryResourceNamespaceResourceAction](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Get-MgRoleManagementDirectoryResourceNamespaceResourceAction?view=graph-powershell-v1.0)
+

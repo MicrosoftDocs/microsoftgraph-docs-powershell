@@ -39,7 +39,7 @@ A collection of resources for the provider.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaPrivilegedAccessResource -PrivilegedAccessId $privilegedAccessId
@@ -362,3 +362,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgPrivilegedAccessResource](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgPrivilegedAccessResource?view=graph-powershell-v1.0)
+

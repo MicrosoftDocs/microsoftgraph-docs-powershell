@@ -50,7 +50,7 @@ You can complete this operation in the following ways:
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 $params = @{
@@ -240,3 +240,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Test-MgGroupDynamicMembership](/powershell/module/Microsoft.Graph.Groups/Test-MgGroupDynamicMembership?view=graph-powershell-v1.0)
+

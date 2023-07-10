@@ -36,7 +36,7 @@ Also, please note that the built-in default program cannot be deleted.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Remove-MgBetaProgram -ProgramId $programId
@@ -254,3 +254,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgProgram](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgProgram?view=graph-powershell-v1.0)
+

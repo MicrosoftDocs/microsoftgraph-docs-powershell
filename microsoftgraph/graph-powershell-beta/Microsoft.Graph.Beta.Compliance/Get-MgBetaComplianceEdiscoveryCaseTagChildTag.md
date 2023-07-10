@@ -39,7 +39,7 @@ Returns the tags that are a child of a tag.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 Get-MgBetaComplianceEdiscoveryCaseTagChildTag -CaseId $caseId -TagId $tagId
@@ -295,3 +295,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgComplianceEdiscoveryCaseTagChildTag](/powershell/module/Microsoft.Graph.Compliance/Get-MgComplianceEdiscoveryCaseTagChildTag?view=graph-powershell-v1.0)
+

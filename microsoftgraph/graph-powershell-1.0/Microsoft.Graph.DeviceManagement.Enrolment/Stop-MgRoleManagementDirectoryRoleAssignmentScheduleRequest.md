@@ -177,3 +177,4 @@ INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 [Stop-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Stop-MgRoleManagementDirectoryRoleAssignmentScheduleRequest?view=graph-powershell-beta)
+

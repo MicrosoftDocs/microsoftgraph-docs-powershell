@@ -38,7 +38,7 @@ A team is unarchived once the async operation completes successfully, which may 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Invoke-MgBetaUnarchiveTeam -TeamId $teamId
@@ -182,3 +182,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgUnarchiveTeam](/powershell/module/Microsoft.Graph.Teams/Invoke-MgUnarchiveTeam?view=graph-powershell-v1.0)
+

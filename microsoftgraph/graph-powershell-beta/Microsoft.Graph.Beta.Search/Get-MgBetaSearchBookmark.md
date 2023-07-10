@@ -39,13 +39,13 @@ Read the properties and relationships of a bookmark object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Search
 Get-MgBetaSearchBookmark -BookmarkId $bookmarkId
 ```
 
-### EXAMPLE 2
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Search
 Get-MgBetaSearchBookmark
@@ -275,3 +275,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSearchBookmark](/powershell/module/Microsoft.Graph.Search/Get-MgSearchBookmark?view=graph-powershell-v1.0)
+

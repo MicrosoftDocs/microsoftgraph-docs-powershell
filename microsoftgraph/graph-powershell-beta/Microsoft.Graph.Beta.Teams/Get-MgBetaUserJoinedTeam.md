@@ -26,7 +26,7 @@ Get the teams in Microsoft Teams that the user is a direct member of.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 # A UPN can also be used as -UserId.
@@ -215,3 +215,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgUserJoinedTeam](/powershell/module/Microsoft.Graph.Teams/Get-MgUserJoinedTeam?view=graph-powershell-v1.0)
+

@@ -36,7 +36,7 @@ Create a new conditionalAccessPolicy.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -78,7 +78,7 @@ $params = @{
 New-MgBetaIdentityConditionalAccessPolicy -BodyParameter $params
 
 ```
-### EXAMPLE 2
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -116,7 +116,7 @@ $params = @{
 New-MgBetaIdentityConditionalAccessPolicy -BodyParameter $params
 
 ```
-### EXAMPLE 3
+### Example 3
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -223,7 +223,7 @@ $params = @{
 New-MgBetaIdentityConditionalAccessPolicy -BodyParameter $params
 
 ```
-### EXAMPLE 4
+### Example 4
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -697,4 +697,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityConditionalAccessPolicy?view=graph-powershell-v1.0)
+
 

@@ -43,7 +43,7 @@ Nullable.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Get-MgBetaUserCreatedObject -UserId '7162fba5-6647-47a0-9d69-5837795f32e7'
 
@@ -294,4 +294,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserCreatedObject](/powershell/module/Microsoft.Graph.Users/Get-MgUserCreatedObject?view=graph-powershell-v1.0)
+
 

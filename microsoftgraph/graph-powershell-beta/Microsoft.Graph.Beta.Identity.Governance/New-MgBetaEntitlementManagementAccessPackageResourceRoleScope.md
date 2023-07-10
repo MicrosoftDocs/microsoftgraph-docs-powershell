@@ -54,7 +54,7 @@ Once you add the resource role scope to the access package, the user will receiv
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All'
 $accessPackageResource = @{
@@ -582,3 +582,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgEntitlementManagementAccessPackageResourceRoleScope](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementAccessPackageResourceRoleScope?view=graph-powershell-v1.0)
+

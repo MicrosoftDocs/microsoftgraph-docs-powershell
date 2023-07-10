@@ -39,7 +39,7 @@ Indicates which terms have been pinned or reused directly under the set.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 
@@ -347,4 +347,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSiteTermStoreGroupSetRelation](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreGroupSetRelation?view=graph-powershell-v1.0)
+
 

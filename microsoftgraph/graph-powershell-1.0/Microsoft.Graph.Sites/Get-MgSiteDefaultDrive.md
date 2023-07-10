@@ -32,7 +32,7 @@ The default drive (document library) for this site.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Sites
 Get-MgSiteDefaultDrive -SiteId $siteId
@@ -161,3 +161,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSiteDefaultDrive](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteDefaultDrive?view=graph-powershell-beta)
+

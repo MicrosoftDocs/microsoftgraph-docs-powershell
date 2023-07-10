@@ -38,7 +38,7 @@ For more details about sending notifications and the requirements for doing so, 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
@@ -74,7 +74,7 @@ $params = @{
 Send-MgBetaTeamworkActivityNotificationToRecipient -BodyParameter $params
 ```
 
-### EXAMPLE 2
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
@@ -352,3 +352,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Send-MgTeamworkActivityNotificationToRecipient](/powershell/module/Microsoft.Graph.Teams/Send-MgTeamworkActivityNotificationToRecipient?view=graph-powershell-v1.0)
+

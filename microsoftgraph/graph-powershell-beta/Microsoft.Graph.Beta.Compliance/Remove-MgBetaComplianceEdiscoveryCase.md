@@ -32,7 +32,7 @@ Delete a case object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 Remove-MgBetaComplianceEdiscoveryCase -CaseId $caseId
@@ -168,3 +168,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgComplianceEdiscoveryCase](/powershell/module/Microsoft.Graph.Compliance/Remove-MgComplianceEdiscoveryCase?view=graph-powershell-v1.0)
+

@@ -39,13 +39,13 @@ Retrieve the existing synchronization job and its properties.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 Get-MgBetaServicePrincipalSynchronizationJob -ServicePrincipalId $servicePrincipalId
 ```
 
-### EXAMPLE 2
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 Get-MgBetaServicePrincipalSynchronizationJob -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId
@@ -300,3 +300,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalSynchronizationJob?view=graph-powershell-v1.0)
+

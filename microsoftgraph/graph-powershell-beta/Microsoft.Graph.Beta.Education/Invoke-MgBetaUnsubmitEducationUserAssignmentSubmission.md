@@ -42,7 +42,7 @@ A teacher can also unsubmit a student's assignment on their behalf.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -178,4 +178,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgUnsubmitEducationUserAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Invoke-MgUnsubmitEducationUserAssignmentSubmission?view=graph-powershell-v1.0)
+
 

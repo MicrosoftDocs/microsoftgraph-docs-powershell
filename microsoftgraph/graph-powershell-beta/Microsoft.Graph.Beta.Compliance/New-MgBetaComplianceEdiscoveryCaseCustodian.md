@@ -56,7 +56,7 @@ After the custodian object is created, you will need to create the custodian's u
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 $params = @{
@@ -14569,3 +14569,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgComplianceEdiscoveryCaseCustodian](/powershell/module/Microsoft.Graph.Compliance/New-MgComplianceEdiscoveryCaseCustodian?view=graph-powershell-v1.0)
+

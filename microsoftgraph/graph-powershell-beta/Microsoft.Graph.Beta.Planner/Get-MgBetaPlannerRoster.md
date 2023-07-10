@@ -39,7 +39,7 @@ Read the properties and relationships of a plannerRoster object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Planner
 Get-MgBetaPlannerRoster -PlannerRosterId $plannerRosterId
@@ -259,3 +259,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgPlannerRoster](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerRoster?view=graph-powershell-v1.0)
+

@@ -32,7 +32,7 @@ Delete navigation property bucketTaskBoardFormat for planner
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Planner
 
@@ -167,4 +167,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgPlannerTaskBucketTaskBoardFormat](/powershell/module/Microsoft.Graph.Planner/Remove-MgPlannerTaskBucketTaskBoardFormat?view=graph-powershell-v1.0)
+
 

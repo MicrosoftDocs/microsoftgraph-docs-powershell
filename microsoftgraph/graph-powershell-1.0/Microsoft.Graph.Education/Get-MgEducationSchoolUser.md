@@ -26,7 +26,7 @@ Get the educationUser resources associated with an educationSchool.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Education
 Get-MgEducationSchoolUser -EducationSchoolId $educationSchoolId
@@ -214,3 +214,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaEducationSchoolUser](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationSchoolUser?view=graph-powershell-beta)
+

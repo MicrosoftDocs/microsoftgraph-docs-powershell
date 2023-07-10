@@ -60,7 +60,7 @@ Create a new [sitePage][] in the site pages [list][] in a [site][].
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 $params = @{
@@ -14811,3 +14811,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgSitePage](/powershell/module/Microsoft.Graph.Sites/New-MgSitePage?view=graph-powershell-v1.0)
+

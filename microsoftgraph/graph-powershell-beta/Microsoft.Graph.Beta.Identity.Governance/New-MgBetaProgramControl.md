@@ -97,7 +97,7 @@ Prior to making this request, the caller must have previously
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{
@@ -575,3 +575,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgProgramControl](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgProgramControl?view=graph-powershell-v1.0)
+

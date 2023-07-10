@@ -45,7 +45,7 @@ Supports $expand.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 Get-MgBetaDeviceMemberOf -DeviceId $deviceId
@@ -324,3 +324,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceMemberOf](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDeviceMemberOf?view=graph-powershell-v1.0)
+

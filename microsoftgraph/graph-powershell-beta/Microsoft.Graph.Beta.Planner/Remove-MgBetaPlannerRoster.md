@@ -32,7 +32,7 @@ Delete a plannerRoster object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Planner
 Remove-MgBetaPlannerRoster -PlannerRosterId $plannerRosterId
@@ -162,3 +162,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgPlannerRoster](/powershell/module/Microsoft.Graph.Planner/Remove-MgPlannerRoster?view=graph-powershell-v1.0)
+

@@ -88,7 +88,7 @@ You can optionally specify any other writable properties.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 $PasswordProfile = @{
   Password = 'xWwvJ]6NMw+bWH-d'
@@ -22716,3 +22716,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaUser](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUser?view=graph-powershell-beta)
+

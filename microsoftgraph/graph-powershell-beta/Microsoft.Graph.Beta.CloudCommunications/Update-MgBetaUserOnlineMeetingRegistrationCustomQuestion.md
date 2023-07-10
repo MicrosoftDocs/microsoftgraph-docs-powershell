@@ -48,7 +48,7 @@ Update a custom registration question associated with a meetingRegistration obje
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
@@ -316,3 +316,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgUserOnlineMeetingRegistrationCustomQuestion](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgUserOnlineMeetingRegistrationCustomQuestion?view=graph-powershell-v1.0)
+

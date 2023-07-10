@@ -39,7 +39,7 @@ The collection of drives (document libraries) under this site.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 Get-MgBetaSiteDrive -SiteId $siteId
@@ -316,3 +316,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSiteDrive](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteDrive?view=graph-powershell-v1.0)
+

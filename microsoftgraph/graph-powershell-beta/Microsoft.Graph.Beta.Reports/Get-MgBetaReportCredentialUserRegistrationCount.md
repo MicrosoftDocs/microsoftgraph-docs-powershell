@@ -25,7 +25,7 @@ Report the current state of how many users in your organization are registered f
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Reports
 Get-MgBetaReportCredentialUserRegistrationCount
@@ -152,3 +152,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgReportCredentialUserRegistrationCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportCredentialUserRegistrationCount?view=graph-powershell-v1.0)
+

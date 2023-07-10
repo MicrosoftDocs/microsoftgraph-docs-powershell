@@ -50,7 +50,7 @@ The file can then be added as a default file or template via a POST operation.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Sites
 ```
@@ -337,3 +337,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Copy-MgBetaGroupSiteContentTypeToDefaultContentLocation](/powershell/module/Microsoft.Graph.Beta.Groups/Copy-MgBetaGroupSiteContentTypeToDefaultContentLocation?view=graph-powershell-beta)
+

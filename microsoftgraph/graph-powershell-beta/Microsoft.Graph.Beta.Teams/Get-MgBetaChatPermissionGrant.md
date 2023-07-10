@@ -39,7 +39,7 @@ A collection of permissions granted to apps for the chat.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaChatPermissionGrant -ChatId $chatId
@@ -303,3 +303,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgChatPermissionGrant](/powershell/module/Microsoft.Graph.Teams/Get-MgChatPermissionGrant?view=graph-powershell-v1.0)
+

@@ -76,7 +76,7 @@ Update the properties of the event object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```
 Import-Module Microsoft.Graph.Calendar
 $params = @{
@@ -1855,4 +1855,5 @@ See below for more possible values.
 [Update-MgBetaUserEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaUserEvent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mguserevent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mguserevent)
+
 

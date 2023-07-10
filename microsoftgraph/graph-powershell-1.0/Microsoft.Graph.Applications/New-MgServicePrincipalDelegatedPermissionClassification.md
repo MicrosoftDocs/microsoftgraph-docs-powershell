@@ -46,7 +46,7 @@ Classify a delegated permission by adding a delegatedPermissionClassification to
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Applications
 
@@ -61,7 +61,7 @@ New-MgServicePrincipalDelegatedPermissionClassification -ServicePrincipalId $ser
 ```
 ## PARAMETERS
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Applications
 
@@ -283,4 +283,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaServicePrincipalDelegatedPermissionClassification](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalDelegatedPermissionClassification?view=graph-powershell-beta)
+
 

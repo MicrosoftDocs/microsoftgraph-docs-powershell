@@ -412,3 +412,4 @@ ROLEDEFINITION `<IMicrosoftGraphUnifiedRoleDefinition>`: unifiedRoleDefinition
 
 ## RELATED LINKS
 [New-MgRoleManagementDirectoryRoleEligibilityScheduleInstance](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/New-MgRoleManagementDirectoryRoleEligibilityScheduleInstance?view=graph-powershell-v1.0)
+

@@ -66,7 +66,7 @@ For more information, see the Extensions section in Known issues with Microsoft 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.SchemaExtensions
 
@@ -334,4 +334,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgSchemaExtension](/powershell/module/Microsoft.Graph.SchemaExtensions/Update-MgSchemaExtension?view=graph-powershell-v1.0)
+
 

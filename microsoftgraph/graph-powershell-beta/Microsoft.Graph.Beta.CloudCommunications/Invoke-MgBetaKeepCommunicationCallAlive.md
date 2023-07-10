@@ -43,7 +43,7 @@ The resources related to the call should be cleaned up on the application side.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 Invoke-MgBetaKeepCommunicationCallAlive -CallId $callId
@@ -168,3 +168,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgKeepCommunicationCallAlive](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgKeepCommunicationCallAlive?view=graph-powershell-v1.0)
+

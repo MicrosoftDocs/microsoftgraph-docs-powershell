@@ -25,7 +25,7 @@ Invoke function delta
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 Get-MgBetaServicePrincipalDelta
@@ -183,3 +183,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgServicePrincipalDelta](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalDelta?view=graph-powershell-v1.0)
+

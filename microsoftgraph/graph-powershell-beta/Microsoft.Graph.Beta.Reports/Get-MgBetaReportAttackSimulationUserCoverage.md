@@ -25,7 +25,7 @@ Invoke function getAttackSimulationSimulationUserCoverage
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Reports
 Get-MgBetaReportAttackSimulationUserCoverage
@@ -122,3 +122,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgReportAttackSimulationUserCoverage](/powershell/module/Microsoft.Graph.Reports/Get-MgReportAttackSimulationUserCoverage?view=graph-powershell-v1.0)
+

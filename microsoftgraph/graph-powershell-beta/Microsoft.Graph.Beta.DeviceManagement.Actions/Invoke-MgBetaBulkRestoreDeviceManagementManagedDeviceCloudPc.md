@@ -34,7 +34,7 @@ Restore multiple Cloud PC devices with a single request that includes the IDs of
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
 $params = @{
@@ -183,3 +183,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBulkRestoreDeviceManagementManagedDeviceCloudPc](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgBulkRestoreDeviceManagementManagedDeviceCloudPc?view=graph-powershell-v1.0)
+

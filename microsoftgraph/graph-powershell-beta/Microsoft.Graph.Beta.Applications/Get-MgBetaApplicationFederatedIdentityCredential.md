@@ -40,7 +40,7 @@ Read the properties and relationships of a federatedIdentityCredential object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 
@@ -49,7 +49,7 @@ Get-MgBetaApplicationFederatedIdentityCredential -ApplicationId $applicationId -
 ```
 ## PARAMETERS
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 
@@ -305,4 +305,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgApplicationFederatedIdentityCredential](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationFederatedIdentityCredential?view=graph-powershell-v1.0)
+
 

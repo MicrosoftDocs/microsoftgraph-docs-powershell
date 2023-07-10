@@ -32,7 +32,7 @@ Delete eventMessage.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```
 Import-Module Microsoft.Graph.Mail
 
@@ -178,5 +178,6 @@ INPUTOBJECT \<IMailIdentity\>: Identity Parameter
 [Remove-MgBetaUserMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Remove-MgBetaUserMessage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermessage)
+
 
 

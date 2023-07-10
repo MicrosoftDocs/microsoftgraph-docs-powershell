@@ -32,7 +32,7 @@ Removes an item from a [list][].
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Sites
 
@@ -223,4 +223,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaSiteListItem](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteListItem?view=graph-powershell-beta)
+
 

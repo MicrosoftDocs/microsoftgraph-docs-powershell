@@ -47,7 +47,7 @@ Check in a checked out **driveItem** resource, which makes the version of the do
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Files
 ```
@@ -321,3 +321,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgCheckinGroupDriveItem](/powershell/module/Microsoft.Graph.Groups/Invoke-MgCheckinGroupDriveItem?view=graph-powershell-v1.0)
+

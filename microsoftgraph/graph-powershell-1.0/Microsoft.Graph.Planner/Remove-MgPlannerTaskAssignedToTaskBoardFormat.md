@@ -32,7 +32,7 @@ Delete navigation property assignedToTaskBoardFormat for planner
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Planner
 
@@ -166,4 +166,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaPlannerTaskAssignedToTaskBoardFormat](/powershell/module/Microsoft.Graph.Beta.Planner/Remove-MgBetaPlannerTaskAssignedToTaskBoardFormat?view=graph-powershell-beta)
+
 

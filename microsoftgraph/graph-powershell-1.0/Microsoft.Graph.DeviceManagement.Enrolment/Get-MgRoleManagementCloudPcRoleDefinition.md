@@ -39,13 +39,13 @@ Get roleDefinitions from roleManagement
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```
 Import-Module Microsoft.Graph.DeviceManagement.Enrolment
 Get-MgRoleManagementCloudPcRoleDefinition -UnifiedRoleDefinitionId $unifiedRoleDefinitionId
 ```
 
-### EXAMPLE 2
+### Example 2
 ```
 Import-Module Microsoft.Graph.DeviceManagement.Enrolment
 Get-MgRoleManagementCloudPcRoleDefinition
@@ -251,4 +251,5 @@ Please use Get-Help -Online.
 [Get-MgBetaRoleManagementCloudPcRoleDefinition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Get-MgRoleManagementCloudPcRoleDefinition?view=graph-powershell-beta)
 
 [https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/get-mgrolemanagementcloudpcroledefinition](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/get-mgrolemanagementcloudpcroledefinition)
+
 

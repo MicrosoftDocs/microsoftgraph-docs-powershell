@@ -39,7 +39,7 @@ Get oauth2PermissionGrants from users
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Get-MgUserOauth2permissionGrant  -UserId 'afeb5811-0582-4188-8546-4440c2b921bd' | Format-List
 ```
@@ -286,3 +286,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaUserOauth2PermissionGrant](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserOauth2PermissionGrant?view=graph-powershell-beta)
+

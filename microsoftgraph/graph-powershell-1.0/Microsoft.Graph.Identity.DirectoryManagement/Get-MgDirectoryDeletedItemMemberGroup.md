@@ -48,7 +48,7 @@ This function is transitive.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```
 Import-Module Microsoft.Graph.DirectoryObjects
 
@@ -58,7 +58,7 @@ $params = @{
 
 Get-MgDirectoryObjectMemberGroup -DirectoryObjectId $directoryObjectId -BodyParameter $params
 ```
-### EXAMPLE 2
+### Example 2
 ```
 Import-Module Microsoft.Graph.Users.Actions
 
@@ -226,4 +226,5 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 [Get-MgBetaDirectoryDeletedItemMemberGroup](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryDeletedItemMemberGroup?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectorydeleteditemmembergroup](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectorydeleteditemmembergroup)
+
 

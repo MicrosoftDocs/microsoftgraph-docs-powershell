@@ -26,7 +26,7 @@ Retrieve a list of calendars belonging to a calendar group.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Calendar
 # A UPN can also be used as -UserId.
@@ -200,3 +200,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgUserCalendarGroupCalendar](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserCalendarGroupCalendar?view=graph-powershell-v1.0)
+

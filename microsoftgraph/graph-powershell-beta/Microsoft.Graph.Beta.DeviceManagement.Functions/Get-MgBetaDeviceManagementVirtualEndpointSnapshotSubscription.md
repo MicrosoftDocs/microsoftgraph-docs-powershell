@@ -25,7 +25,7 @@ Invoke function getSubscriptions
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Functions
 Get-MgBetaDeviceManagementVirtualEndpointSnapshotSubscription
@@ -122,3 +122,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgDeviceManagementVirtualEndpointSnapshotSubscription](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementVirtualEndpointSnapshotSubscription?view=graph-powershell-v1.0)
+

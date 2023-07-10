@@ -32,7 +32,7 @@ Delete a single chatMessage or a chat message reply in a channel or a chat.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Invoke-MgBetaSoftTeamChannelMessageDelete -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId
@@ -206,3 +206,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgSoftTeamChannelMessageDelete](/powershell/module/Microsoft.Graph.Teams/Invoke-MgSoftTeamChannelMessageDelete?view=graph-powershell-v1.0)
+

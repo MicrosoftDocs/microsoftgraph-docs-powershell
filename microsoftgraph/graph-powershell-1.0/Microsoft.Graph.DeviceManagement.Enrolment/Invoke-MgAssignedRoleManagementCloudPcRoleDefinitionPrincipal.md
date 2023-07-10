@@ -241,3 +241,4 @@ Please use Get-Help -Online.
 
 [https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/invoke-mgassignedrolemanagementcloudpcroledefinitionprincipal](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/invoke-mgassignedrolemanagementcloudpcroledefinitionprincipal)
 
+

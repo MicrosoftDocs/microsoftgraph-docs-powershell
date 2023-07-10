@@ -32,7 +32,7 @@ Get [itemAnalytics][] about the views that took place under this resource.\nThe 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Files
 Get-MgBetaDriveItemAnalytic -DriveId $driveId -DriveItemId $driveItemId
@@ -162,3 +162,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDriveItemAnalytic](/powershell/module/Microsoft.Graph.Files/Get-MgDriveItemAnalytic?view=graph-powershell-v1.0)
+

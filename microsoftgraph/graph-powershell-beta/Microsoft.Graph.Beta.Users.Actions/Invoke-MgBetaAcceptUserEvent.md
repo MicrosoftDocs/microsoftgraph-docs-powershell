@@ -46,7 +46,7 @@ Accept the specified event in a user calendar.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
@@ -280,3 +280,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgAcceptUserEvent](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgAcceptUserEvent?view=graph-powershell-v1.0)
+

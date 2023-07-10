@@ -24,7 +24,7 @@ Read the properties and relationships of an adminConsentRequestPolicy object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -77,4 +77,5 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaPolicyAdminConsentRequestPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyAdminConsentRequestPolicy?view=graph-powershell-beta)
+
 

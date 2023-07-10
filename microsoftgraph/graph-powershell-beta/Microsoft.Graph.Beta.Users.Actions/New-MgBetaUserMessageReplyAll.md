@@ -58,7 +58,7 @@ Alternatively, reply-all to a message in a single action.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
@@ -449,3 +449,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgUserMessageReplyAll](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserMessageReplyAll?view=graph-powershell-v1.0)
+

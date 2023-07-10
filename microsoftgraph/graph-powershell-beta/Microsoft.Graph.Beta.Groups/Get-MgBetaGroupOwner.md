@@ -34,7 +34,7 @@ For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayNa
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Get-MgBetaGroupOwner -GroupId '4d5f57a1-85e0-41dd-8282-ff995ad5e1c3'
 
@@ -242,4 +242,5 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgGroupOwner](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupOwner?view=graph-powershell-v1.0)
+
 

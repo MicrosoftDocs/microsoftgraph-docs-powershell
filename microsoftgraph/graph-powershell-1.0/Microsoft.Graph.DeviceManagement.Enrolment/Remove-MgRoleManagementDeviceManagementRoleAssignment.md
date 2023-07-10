@@ -32,7 +32,7 @@ Delete navigation property roleAssignments for roleManagement
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```
 Import-Module Microsoft.Graph.DeviceManagement.Enrolment
 Remove-MgRoleManagementDeviceManagementRoleAssignment -UnifiedRoleAssignmentMultipleId $unifiedRoleAssignmentMultipleId
@@ -148,4 +148,5 @@ Please use Get-Help -Online.
 [Remove-MgBetaRoleManagementDeviceManagementRoleAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Remove-MgRoleManagementDeviceManagementRoleAssignment?view=graph-powershell-beta)
 
 [https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/remove-mgrolemanagementdevicemanagementroleassignment](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/remove-mgrolemanagementdevicemanagementroleassignment)
+
 

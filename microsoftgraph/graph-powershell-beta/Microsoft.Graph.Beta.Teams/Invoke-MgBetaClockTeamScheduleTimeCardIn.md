@@ -48,7 +48,7 @@ Clock in to start a timeCard.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
@@ -276,3 +276,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgClockTeamScheduleTimeCardIn](/powershell/module/Microsoft.Graph.Teams/Invoke-MgClockTeamScheduleTimeCardIn?view=graph-powershell-v1.0)
+

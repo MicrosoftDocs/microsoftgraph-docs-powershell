@@ -48,7 +48,7 @@ Create a new custodian siteSource object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 $params = @{
@@ -9703,3 +9703,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgComplianceEdiscoveryCaseCustodianSiteSource](/powershell/module/Microsoft.Graph.Compliance/New-MgComplianceEdiscoveryCaseCustodianSiteSource?view=graph-powershell-v1.0)
+

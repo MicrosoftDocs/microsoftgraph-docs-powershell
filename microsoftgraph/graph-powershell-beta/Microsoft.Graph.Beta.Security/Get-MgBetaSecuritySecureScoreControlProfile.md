@@ -39,7 +39,7 @@ Get secureScoreControlProfiles from security
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -308,4 +308,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSecuritySecureScoreControlProfile](/powershell/module/Microsoft.Graph.Security/Get-MgSecuritySecureScoreControlProfile?view=graph-powershell-v1.0)
+
 

@@ -32,13 +32,13 @@ Retrieve the properties and relationships of a connectionQuota object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Search
 Get-MgBetaExternalConnectionQuota -ExternalConnectionId $externalConnectionId
 ```
 
-### EXAMPLE 2
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Search
 Get-MgBetaExternalConnectionQuota -ExternalConnectionId $externalConnectionId -OutFile $outFileId
@@ -147,3 +147,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgExternalConnectionQuota](/powershell/module/Microsoft.Graph.Search/Get-MgExternalConnectionQuota?view=graph-powershell-v1.0)
+

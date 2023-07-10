@@ -34,7 +34,7 @@ This will create a new version with the contents of the previous version, but pr
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Sites
 Restore-MgSiteListItemVersion -SiteId $siteId -ListId $listId -ListItemId $listItemId -ListItemVersionId $listItemVersionId
@@ -224,3 +224,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Restore-MgBetaSiteListItemVersion](/powershell/module/Microsoft.Graph.Beta.Sites/Restore-MgBetaSiteListItemVersion?view=graph-powershell-beta)
+

@@ -60,7 +60,7 @@ For example, if a physical printer device breaks, an administrator can register 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
 
@@ -19449,4 +19449,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgPrintShare](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Update-MgPrintShare?view=graph-powershell-v1.0)
+
 

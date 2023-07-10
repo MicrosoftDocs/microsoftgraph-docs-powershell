@@ -35,7 +35,7 @@ Use this API to create a new administrativeUnit.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 $params = @{
@@ -320,3 +320,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgAdministrativeUnit](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgAdministrativeUnit?view=graph-powershell-v1.0)
+

@@ -48,7 +48,7 @@ Create a new onPremisesAgentGroup object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 New-MgBetaOnPremisePublishingProfileAgentGroup -OnPremisesPublishingProfileId $onPremisesPublishingProfileId
@@ -356,3 +356,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgOnPremisePublishingProfileAgentGroup](/powershell/module/Microsoft.Graph.Applications/New-MgOnPremisePublishingProfileAgentGroup?view=graph-powershell-v1.0)
+

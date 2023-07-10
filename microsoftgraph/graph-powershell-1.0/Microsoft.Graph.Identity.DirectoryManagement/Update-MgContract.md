@@ -46,7 +46,7 @@ Update entity in contracts
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
@@ -300,4 +300,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaContract](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaContract?view=graph-powershell-beta)
+
 

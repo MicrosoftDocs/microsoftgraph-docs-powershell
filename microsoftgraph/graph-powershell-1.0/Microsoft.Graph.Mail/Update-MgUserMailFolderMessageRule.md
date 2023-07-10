@@ -49,7 +49,7 @@ Change writable properties on a messageRule object and save the changes.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```
 Import-Module Microsoft.Graph.Mail
 $params = @{
@@ -519,4 +519,5 @@ INPUTOBJECT \<IMailIdentity\>: Identity Parameter
 [Update-MgBetaUserMailFolderMessageRule](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgBetaUserMailFolderMessageRule?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/update-mgusermailfoldermessagerule](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/update-mgusermailfoldermessagerule)
+
 

@@ -32,7 +32,7 @@ Delete a directory setting.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 Remove-MgBetaDirectorySetting -DirectorySettingId $directorySettingId
@@ -190,3 +190,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDirectorySetting](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDirectorySetting?view=graph-powershell-v1.0)
+

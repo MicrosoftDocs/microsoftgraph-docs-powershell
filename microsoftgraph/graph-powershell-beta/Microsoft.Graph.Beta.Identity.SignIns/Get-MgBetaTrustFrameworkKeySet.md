@@ -39,13 +39,13 @@ Retrieve the properties and associations for a Trustframeworkkeyset.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Get-MgBetaTrustFrameworkKeySet
 ```
 
-### EXAMPLE 2
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Get-MgBetaTrustFrameworkKeySet -TrustFrameworkKeySetId $trustFrameworkKeySetId
@@ -331,3 +331,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgTrustFrameworkKeySet](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgTrustFrameworkKeySet?view=graph-powershell-v1.0)
+

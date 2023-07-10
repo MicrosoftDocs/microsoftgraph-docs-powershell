@@ -48,7 +48,7 @@ The caller doesn't have to provide a secret.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
@@ -319,3 +319,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgTrustFrameworkKeySetKey](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgTrustFrameworkKeySetKey?view=graph-powershell-v1.0)
+

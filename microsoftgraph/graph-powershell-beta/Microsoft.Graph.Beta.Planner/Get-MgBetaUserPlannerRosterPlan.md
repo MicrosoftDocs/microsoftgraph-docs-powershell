@@ -43,7 +43,7 @@ Returns the plannerPlans contained by the plannerRosters the user is a member.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Planner
 Get-MgBetaUserPlannerRosterPlan -UserId $userId
@@ -278,3 +278,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserPlannerRosterPlan](/powershell/module/Microsoft.Graph.Planner/Get-MgUserPlannerRosterPlan?view=graph-powershell-v1.0)
+

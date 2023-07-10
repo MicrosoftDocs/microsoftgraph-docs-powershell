@@ -32,7 +32,7 @@ Dismiss a reminder that has been triggered for an event in a user calendar.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 # A UPN can also be used as -UserId.
@@ -195,3 +195,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgDismissUserEventReminder](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgDismissUserEventReminder?view=graph-powershell-v1.0)
+

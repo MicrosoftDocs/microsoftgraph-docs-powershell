@@ -35,7 +35,7 @@ Create new navigation property to roleDefinitions for roleManagement
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```
 Import-Module Microsoft.Graph.DeviceManagement.Enrolment
 $params = @{
@@ -320,4 +320,5 @@ Please use Get-Help -Online.
 [New-MgBetaRoleManagementCloudPcRoleDefinition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/New-MgRoleManagementCloudPcRoleDefinition?view=graph-powershell-beta)
 
 [https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/new-mgrolemanagementcloudpcroledefinition](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/new-mgrolemanagementcloudpcroledefinition)
+
 

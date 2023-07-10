@@ -48,7 +48,7 @@ Create a new publishedResource object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 $params = @{
@@ -322,3 +322,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgOnPremisePublishingProfilePublishedResource](/powershell/module/Microsoft.Graph.Applications/New-MgOnPremisePublishingProfilePublishedResource?view=graph-powershell-v1.0)
+

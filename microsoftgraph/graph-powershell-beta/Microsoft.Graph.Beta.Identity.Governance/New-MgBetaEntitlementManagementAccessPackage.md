@@ -43,7 +43,7 @@ After the access package is created, you can then create accessPackageAssignment
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All'
 New-MgBetaEntitlementManagementAccessPackage -CatalogId '54152ecb-c65d-47f2-8a4d-ba2732de0a7b'  -DisplayName 'Marketing Campaign' | Format-list
@@ -29502,3 +29502,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgEntitlementManagementAccessPackage](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementAccessPackage?view=graph-powershell-v1.0)
+

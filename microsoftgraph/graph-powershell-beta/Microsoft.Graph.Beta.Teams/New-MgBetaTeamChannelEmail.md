@@ -36,7 +36,7 @@ To remove the email address of a **channel**, use the removeEmail method.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 New-MgBetaTeamChannelEmail -TeamId $teamId -ChannelId $channelId
@@ -180,3 +180,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgTeamChannelEmail](/powershell/module/Microsoft.Graph.Teams/New-MgTeamChannelEmail?view=graph-powershell-v1.0)
+

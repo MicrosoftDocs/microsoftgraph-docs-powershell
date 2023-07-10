@@ -24,7 +24,7 @@ Read the properties and relationships of an authenticationFlowsPolicy object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -77,4 +77,5 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaPolicyAuthenticationFlowPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyAuthenticationFlowPolicy?view=graph-powershell-beta)
+
 

@@ -52,7 +52,7 @@ Given contentInfo as an input, which includes existing content metadata key-valu
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
@@ -322,3 +322,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Test-MgUserSecurityInformationProtectionSensitivityLabelRemoval](/powershell/module/Microsoft.Graph.Users.Actions/Test-MgUserSecurityInformationProtectionSensitivityLabelRemoval?view=graph-powershell-v1.0)
+

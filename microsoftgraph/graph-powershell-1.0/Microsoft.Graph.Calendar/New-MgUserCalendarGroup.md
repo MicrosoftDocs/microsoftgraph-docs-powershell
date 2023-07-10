@@ -46,7 +46,7 @@ Use this API to create a new CalendarGroup.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```
 Import-Module Microsoft.Graph.Calendar
 $params = @{
@@ -737,4 +737,5 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
 [New-MgBetaUserCalendarGroup](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserCalendarGroup?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgusercalendargroup](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgusercalendargroup)
+
 

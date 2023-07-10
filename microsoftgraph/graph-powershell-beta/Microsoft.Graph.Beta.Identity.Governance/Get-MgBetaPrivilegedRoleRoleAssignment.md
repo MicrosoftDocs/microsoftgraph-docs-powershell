@@ -58,31 +58,31 @@ Get entity from privilegedRoleAssignments by key
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaPrivilegedRoleRoleAssignment -PrivilegedRoleAssignmentId $privilegedRoleAssignmentId
 ```
 
-### EXAMPLE 2
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaPrivilegedRoleRoleAssignment
 ```
 
-### EXAMPLE 3
+### Example 3
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaPrivilegedRoleRoleAssignment -Filter "isElevated eq true"
 ```
 
-### EXAMPLE 4
+### Example 4
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaPrivilegedRoleRoleAssignment -Filter "isElevated eq true and expirationDateTime eq null"
 ```
 
-### EXAMPLE 5
+### Example 5
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaPrivilegedRoleRoleAssignment -Filter "isElevated eq true and expirationDateTime ne null or isElevated eq false"
@@ -405,3 +405,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgPrivilegedRoleRoleAssignment](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgPrivilegedRoleRoleAssignment?view=graph-powershell-v1.0)
+

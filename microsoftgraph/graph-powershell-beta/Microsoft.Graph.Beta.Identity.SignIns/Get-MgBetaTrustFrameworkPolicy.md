@@ -39,7 +39,7 @@ Get policies from trustFramework
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Get-MgBetaTrustFrameworkPolicy
@@ -326,3 +326,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgTrustFrameworkPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgTrustFrameworkPolicy?view=graph-powershell-v1.0)
+

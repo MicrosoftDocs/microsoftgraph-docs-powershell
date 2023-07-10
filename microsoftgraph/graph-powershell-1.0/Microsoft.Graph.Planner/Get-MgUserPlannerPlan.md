@@ -26,7 +26,7 @@ Retrieve a list of **plannerplan** objects shared with a user object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Planner
 # A UPN can also be used as -UserId.
@@ -215,3 +215,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaUserPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaUserPlannerPlan?view=graph-powershell-beta)
+

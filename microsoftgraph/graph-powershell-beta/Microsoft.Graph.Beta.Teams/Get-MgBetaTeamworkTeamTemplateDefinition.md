@@ -39,7 +39,7 @@ Read the properties and relationships of a teamTemplateDefinition object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaTeamworkTeamTemplateDefinition -TeamTemplateId $teamTemplateId -TeamTemplateDefinitionId $teamTemplateDefinitionId
@@ -303,3 +303,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgTeamworkTeamTemplateDefinition](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkTeamTemplateDefinition?view=graph-powershell-v1.0)
+

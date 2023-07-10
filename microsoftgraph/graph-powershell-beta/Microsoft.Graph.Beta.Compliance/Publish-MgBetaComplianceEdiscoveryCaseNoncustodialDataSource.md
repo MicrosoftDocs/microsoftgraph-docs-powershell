@@ -32,7 +32,7 @@ Releases the non-custodial data source from the case.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 Publish-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource -CaseId $caseId -NoncustodialDataSourceId $noncustodialDataSourceId
@@ -168,3 +168,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Publish-MgComplianceEdiscoveryCaseNoncustodialDataSource](/powershell/module/Microsoft.Graph.Compliance/Publish-MgComplianceEdiscoveryCaseNoncustodialDataSource?view=graph-powershell-v1.0)
+

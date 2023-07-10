@@ -78,7 +78,7 @@ The calendar can be one for a user, or the default calendar of a Microsoft 365 g
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```
 Import-Module Microsoft.Graph.Calendar
 
@@ -114,7 +114,7 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgUserCalendarEvent -UserId $userId -CalendarId $calendarId -BodyParameter $params
 ```
-### EXAMPLE 2
+### Example 2
 ```
 Import-Module Microsoft.Graph.Calendar
 
@@ -1907,4 +1907,5 @@ See below for more possible values.
 [New-MgBetaUserCalendarEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserCalendarEvent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgusercalendarevent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgusercalendarevent)
+
 

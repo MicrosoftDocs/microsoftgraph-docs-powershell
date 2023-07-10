@@ -34,7 +34,7 @@ To learn how to customize the privacy of item insights in an organization, see C
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 Get-MgBetaOrganizationSettingItemInsight -OrganizationId $organizationId
@@ -161,3 +161,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgOrganizationSettingItemInsight](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgOrganizationSettingItemInsight?view=graph-powershell-v1.0)
+

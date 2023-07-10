@@ -40,14 +40,14 @@ Retrieve a user's single Microsoft Authenticator Passwordless Phone Sign-in meth
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 # A UPN can also be used as -UserId.
 Get-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethod -UserId $userId -PasswordlessMicrosoftAuthenticatorAuthenticationMethodId $passwordlessMicrosoftAuthenticatorAuthenticationMethodId
 ```
 
-### EXAMPLE 2
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 # A UPN can also be used as -UserId.
@@ -349,3 +349,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserAuthenticationPasswordlessMicrosoftAuthenticatorMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgUserAuthenticationPasswordlessMicrosoftAuthenticatorMethod?view=graph-powershell-v1.0)
+

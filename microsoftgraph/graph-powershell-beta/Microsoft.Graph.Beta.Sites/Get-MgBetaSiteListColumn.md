@@ -39,7 +39,7 @@ Get columns from sites
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 Get-MgBetaSiteListColumn -SiteId $siteId -ListId $listId
@@ -331,3 +331,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSiteListColumn](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListColumn?view=graph-powershell-v1.0)
+

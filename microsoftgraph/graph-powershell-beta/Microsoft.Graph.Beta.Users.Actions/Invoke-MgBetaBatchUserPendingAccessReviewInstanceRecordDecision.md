@@ -49,7 +49,7 @@ Enables reviewers to review all accessReviewInstanceDecisionItem objects in batc
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
@@ -316,3 +316,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBatchUserPendingAccessReviewInstanceRecordDecision](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgBatchUserPendingAccessReviewInstanceRecordDecision?view=graph-powershell-v1.0)
+

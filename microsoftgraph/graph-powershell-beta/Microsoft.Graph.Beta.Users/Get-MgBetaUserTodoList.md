@@ -32,7 +32,7 @@ Retrieve the properties and relationships of a shiftPreferences object by ID.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users
 
@@ -142,4 +142,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserTodoList](/powershell/module/Microsoft.Graph.Users/Get-MgUserTodoList?view=graph-powershell-v1.0)
+
 

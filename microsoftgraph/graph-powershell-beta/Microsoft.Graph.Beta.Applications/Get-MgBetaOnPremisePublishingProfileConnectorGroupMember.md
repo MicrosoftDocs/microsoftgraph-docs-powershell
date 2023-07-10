@@ -27,7 +27,7 @@ Get members from onPremisesPublishingProfiles
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 Get-MgBetaOnPremisePublishingProfileConnectorGroupMember -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -ConnectorGroupId $connectorGroupId
@@ -230,3 +230,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgOnPremisePublishingProfileConnectorGroupMember](/powershell/module/Microsoft.Graph.Applications/Get-MgOnPremisePublishingProfileConnectorGroupMember?view=graph-powershell-v1.0)
+

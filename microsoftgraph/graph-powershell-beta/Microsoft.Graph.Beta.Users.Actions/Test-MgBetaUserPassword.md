@@ -35,7 +35,7 @@ Use this action to provide real-time feedback on password strength while the use
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
@@ -147,3 +147,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Test-MgUserPassword](/powershell/module/Microsoft.Graph.Users.Actions/Test-MgUserPassword?view=graph-powershell-v1.0)
+

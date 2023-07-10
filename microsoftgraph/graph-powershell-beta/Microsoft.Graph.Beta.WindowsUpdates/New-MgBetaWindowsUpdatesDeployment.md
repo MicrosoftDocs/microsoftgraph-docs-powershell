@@ -35,7 +35,7 @@ Create a new deployment object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 $params = @{
@@ -375,3 +375,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgWindowsUpdatesDeployment](/powershell/module/Microsoft.Graph.WindowsUpdates/New-MgWindowsUpdatesDeployment?view=graph-powershell-v1.0)
+

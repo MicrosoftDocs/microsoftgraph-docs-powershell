@@ -39,7 +39,7 @@ Get entity from onPremisesPublishingProfiles by key
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 Get-MgBetaOnPremisePublishingProfile -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -ExpandProperty "publishedResources,agents,agentGroups"
@@ -279,3 +279,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgOnPremisePublishingProfile](/powershell/module/Microsoft.Graph.Applications/Get-MgOnPremisePublishingProfile?view=graph-powershell-v1.0)
+

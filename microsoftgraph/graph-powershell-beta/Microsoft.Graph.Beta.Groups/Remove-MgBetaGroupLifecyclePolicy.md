@@ -44,7 +44,7 @@ Delete a groupLifecyclePolicy.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 
@@ -226,4 +226,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgGroupLifecyclePolicy](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupLifecyclePolicy?view=graph-powershell-v1.0)
+
 

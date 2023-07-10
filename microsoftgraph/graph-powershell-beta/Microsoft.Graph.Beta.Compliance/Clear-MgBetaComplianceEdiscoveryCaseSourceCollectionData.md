@@ -40,7 +40,7 @@ For more information about purging Teams messages, see:\n- eDiscovery solution s
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 Clear-MgBetaComplianceEdiscoveryCaseSourceCollectionData -CaseId $caseId -SourceCollectionId $sourceCollectionId
@@ -176,3 +176,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Clear-MgComplianceEdiscoveryCaseSourceCollectionData](/powershell/module/Microsoft.Graph.Compliance/Clear-MgComplianceEdiscoveryCaseSourceCollectionData?view=graph-powershell-v1.0)
+

@@ -39,13 +39,13 @@ Retrieve the properties and relationships of an applicationSignInDetailedSummary
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Reports
 Get-MgBetaReportApplicationSignInDetailedSummary -ApplicationSignInDetailedSummaryId $applicationSignInDetailedSummaryId
 ```
 
-### EXAMPLE 2
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Reports
 Get-MgBetaReportApplicationSignInDetailedSummary
@@ -282,3 +282,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgReportApplicationSignInDetailedSummary](/powershell/module/Microsoft.Graph.Reports/Get-MgReportApplicationSignInDetailedSummary?view=graph-powershell-v1.0)
+

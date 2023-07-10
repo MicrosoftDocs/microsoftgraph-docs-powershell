@@ -48,7 +48,7 @@ Create a new custodian userSource object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 $params = @{
@@ -356,3 +356,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgComplianceEdiscoveryCaseCustodianUserSource](/powershell/module/Microsoft.Graph.Compliance/New-MgComplianceEdiscoveryCaseCustodianUserSource?view=graph-powershell-v1.0)
+

@@ -32,7 +32,7 @@ Remove a tokenLifetimePolicy from an application or servicePrincipal.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 
@@ -41,7 +41,7 @@ Remove-MgBetaApplicationTokenLifetimePolicyByRef -ApplicationId $applicationId -
 ```
 ## PARAMETERS
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 
@@ -222,4 +222,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgApplicationTokenLifetimePolicyByRef](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationTokenLifetimePolicyByRef?view=graph-powershell-v1.0)
+
 

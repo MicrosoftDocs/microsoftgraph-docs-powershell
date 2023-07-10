@@ -41,7 +41,7 @@ Supports $expand.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Get-MgBetaServicePrincipalAppRoleAssignment -ServicePrincipalId '0bdb123d-b8a7-4cc9-8cc2-bd17bad06f61' |  Format-List
 
@@ -338,4 +338,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgServicePrincipalAppRoleAssignment](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalAppRoleAssignment?view=graph-powershell-v1.0)
+
 

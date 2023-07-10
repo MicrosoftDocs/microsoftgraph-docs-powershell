@@ -50,7 +50,7 @@ For copy operations, you follow an asynchronous calling pattern:  First call the
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{
@@ -289,3 +289,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Copy-MgBetaUserOnenotePageToSection](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Copy-MgBetaUserOnenotePageToSection?view=graph-powershell-beta)
+

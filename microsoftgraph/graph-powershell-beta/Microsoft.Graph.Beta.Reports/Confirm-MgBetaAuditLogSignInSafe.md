@@ -37,7 +37,7 @@ For details about investigating Identity Protection risks, see How to investigat
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Reports
 $params = @{
@@ -168,3 +168,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Confirm-MgAuditLogSignInSafe](/powershell/module/Microsoft.Graph.Reports/Confirm-MgAuditLogSignInSafe?view=graph-powershell-v1.0)
+

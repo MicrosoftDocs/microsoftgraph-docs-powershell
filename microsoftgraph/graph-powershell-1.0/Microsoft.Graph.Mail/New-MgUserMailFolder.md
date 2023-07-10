@@ -55,7 +55,7 @@ If you intend a new folder to be hidden, you must set the **isHidden** property 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```
 Import-Module Microsoft.Graph.Mail
 
@@ -863,4 +863,5 @@ Read-only.
 [New-MgBetaUserMailFolder](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMailFolder?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfolder)
+
 

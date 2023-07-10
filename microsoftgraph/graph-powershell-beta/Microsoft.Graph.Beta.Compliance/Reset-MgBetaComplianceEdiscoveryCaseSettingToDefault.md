@@ -32,7 +32,7 @@ Reset a caseSettings object to the default values.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 Reset-MgBetaComplianceEdiscoveryCaseSettingToDefault -CaseId $caseId
@@ -153,3 +153,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Reset-MgComplianceEdiscoveryCaseSettingToDefault](/powershell/module/Microsoft.Graph.Compliance/Reset-MgComplianceEdiscoveryCaseSettingToDefault?view=graph-powershell-v1.0)
+

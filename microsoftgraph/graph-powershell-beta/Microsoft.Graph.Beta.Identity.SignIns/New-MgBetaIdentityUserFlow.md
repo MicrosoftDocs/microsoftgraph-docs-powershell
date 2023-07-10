@@ -32,7 +32,7 @@ Create a new userFlow object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
@@ -179,3 +179,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgIdentityUserFlow](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityUserFlow?view=graph-powershell-v1.0)
+

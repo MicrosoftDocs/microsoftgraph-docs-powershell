@@ -52,7 +52,7 @@ For more information on how to propose a time, and how to receive and accept a n
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
@@ -327,3 +327,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgAcceptUserEventTentatively](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgAcceptUserEventTentatively?view=graph-powershell-v1.0)
+

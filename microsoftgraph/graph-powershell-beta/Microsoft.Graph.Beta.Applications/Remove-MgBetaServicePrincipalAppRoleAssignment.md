@@ -36,7 +36,7 @@ Deleting an app role assignment for a service principal is equivalent to revokin
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Remove-MgBetaServicePrincipalAppRoleAssignment -AppRoleAssignmentId  'PRLbC6e4yUyMwr0XutBvYZsr7FiAW3pIqP4F9944yBc' -ServicePrincipalId '0bdb123d-b8a7-4cc9-8cc2-bd17bad06f61'
 ```
@@ -200,3 +200,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgServicePrincipalAppRoleAssignment](/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalAppRoleAssignment?view=graph-powershell-v1.0)
+

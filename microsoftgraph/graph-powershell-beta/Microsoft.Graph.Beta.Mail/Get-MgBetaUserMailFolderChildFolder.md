@@ -39,14 +39,14 @@ The collection of child folders in the mailFolder.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Mail
 # A UPN can also be used as -UserId.
 Get-MgBetaUserMailFolderChildFolder -UserId $userId -MailFolderId $mailFolderId
 ```
 
-### EXAMPLE 2
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Mail
 # A UPN can also be used as -UserId.
@@ -284,3 +284,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserMailFolderChildFolder](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMailFolderChildFolder?view=graph-powershell-v1.0)
+

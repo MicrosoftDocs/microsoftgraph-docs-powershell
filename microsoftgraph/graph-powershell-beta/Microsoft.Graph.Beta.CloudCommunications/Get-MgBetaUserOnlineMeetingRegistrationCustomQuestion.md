@@ -40,7 +40,7 @@ Get a custom registration question associated with a meetingRegistration object 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 # A UPN can also be used as -UserId.
@@ -301,3 +301,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserOnlineMeetingRegistrationCustomQuestion](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserOnlineMeetingRegistrationCustomQuestion?view=graph-powershell-v1.0)
+

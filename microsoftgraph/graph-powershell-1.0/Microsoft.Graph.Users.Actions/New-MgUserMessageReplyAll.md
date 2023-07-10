@@ -58,7 +58,7 @@ Alternatively, reply-all to a message in a single action.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 # A UPN can also be used as -UserId.
@@ -395,3 +395,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaUserMessageReplyAll](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgBetaUserMessageReplyAll?view=graph-powershell-beta)
+

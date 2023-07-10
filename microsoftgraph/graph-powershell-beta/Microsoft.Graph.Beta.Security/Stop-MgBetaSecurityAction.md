@@ -31,7 +31,7 @@ Cancel a security operation.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Stop-MgBetaSecurityAction -SecurityActionId $securityActionId
@@ -194,3 +194,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Stop-MgSecurityAction](/powershell/module/Microsoft.Graph.Security/Stop-MgSecurityAction?view=graph-powershell-v1.0)
+

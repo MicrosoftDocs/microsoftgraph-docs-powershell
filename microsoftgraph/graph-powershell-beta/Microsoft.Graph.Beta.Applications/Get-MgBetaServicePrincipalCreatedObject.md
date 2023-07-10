@@ -43,7 +43,7 @@ Nullable.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 Get-MgBetaServicePrincipalCreatedObject -ServicePrincipalId $servicePrincipalId
@@ -298,3 +298,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgServicePrincipalCreatedObject](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalCreatedObject?view=graph-powershell-v1.0)
+

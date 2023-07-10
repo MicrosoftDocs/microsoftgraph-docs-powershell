@@ -39,13 +39,13 @@ Read the properties and relationships of a fileThreatSubmission object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Get-MgBetaSecurityThreatSubmissionFileThreat -FileThreatSubmissionId $fileThreatSubmissionId
 ```
 
-### EXAMPLE 2
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Get-MgBetaSecurityThreatSubmissionFileThreat
@@ -313,3 +313,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSecurityThreatSubmissionFileThreat](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatSubmissionFileThreat?view=graph-powershell-v1.0)
+

@@ -46,7 +46,7 @@ The following table shows the types of members that can be added to either secur
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Groups
 
@@ -245,4 +245,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaGroupMemberByRef](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupMemberByRef?view=graph-powershell-beta)
+
 

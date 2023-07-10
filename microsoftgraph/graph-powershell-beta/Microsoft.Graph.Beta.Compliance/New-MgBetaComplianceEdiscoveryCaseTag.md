@@ -52,7 +52,7 @@ The tags are used in review sets while reviewing content.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 $params = @{
@@ -381,3 +381,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgComplianceEdiscoveryCaseTag](/powershell/module/Microsoft.Graph.Compliance/New-MgComplianceEdiscoveryCaseTag?view=graph-powershell-v1.0)
+

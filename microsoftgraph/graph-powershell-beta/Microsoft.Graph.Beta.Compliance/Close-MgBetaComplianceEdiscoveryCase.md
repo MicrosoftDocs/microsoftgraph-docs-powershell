@@ -33,7 +33,7 @@ For details, see Close a case.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 Close-MgBetaComplianceEdiscoveryCase -CaseId $caseId
@@ -154,3 +154,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Close-MgComplianceEdiscoveryCase](/powershell/module/Microsoft.Graph.Compliance/Close-MgComplianceEdiscoveryCase?view=graph-powershell-v1.0)
+

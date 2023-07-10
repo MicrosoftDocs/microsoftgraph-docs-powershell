@@ -34,7 +34,7 @@ To learn more about source collections (also known as searches in eDiscovery), s
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 Invoke-MgBetaEstimateComplianceEdiscoveryCaseSourceCollectionStatistics -CaseId $caseId -SourceCollectionId $sourceCollectionId
@@ -170,3 +170,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgEstimateComplianceEdiscoveryCaseSourceCollectionStatistics](/powershell/module/Microsoft.Graph.Compliance/Invoke-MgEstimateComplianceEdiscoveryCaseSourceCollectionStatistics?view=graph-powershell-v1.0)
+

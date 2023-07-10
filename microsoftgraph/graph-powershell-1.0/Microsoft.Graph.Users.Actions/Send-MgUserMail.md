@@ -56,7 +56,7 @@ To learn more about the steps involved in the backend before a mail is delivered
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{
@@ -87,7 +87,7 @@ $params = @{
 Send-MgUserMail -UserId $userId -BodyParameter $params
 ```
 
-### EXAMPLE 2
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{
@@ -118,7 +118,7 @@ $params = @{
 Send-MgUserMail -UserId $userId -BodyParameter $params
 ```
 
-### EXAMPLE 3
+### Example 3
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{
@@ -481,3 +481,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Send-MgBetaUserMail](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Send-MgBetaUserMail?view=graph-powershell-beta)
+

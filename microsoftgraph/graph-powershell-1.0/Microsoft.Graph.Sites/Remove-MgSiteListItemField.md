@@ -32,7 +32,7 @@ Delete navigation property fields for sites
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Sites
 
@@ -228,4 +228,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaSiteListItemField](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteListItemField?view=graph-powershell-beta)
+
 

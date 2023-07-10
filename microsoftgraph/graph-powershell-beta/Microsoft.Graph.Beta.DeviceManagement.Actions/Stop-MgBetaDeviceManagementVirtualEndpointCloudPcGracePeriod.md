@@ -38,7 +38,7 @@ Ending the grace period immediately deprovisions the Cloud PC without waiting th
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
 Stop-MgBetaDeviceManagementVirtualEndpointCloudPcGracePeriod -CloudPCId $cloudPCId
@@ -196,3 +196,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Stop-MgDeviceManagementVirtualEndpointCloudPcGracePeriod](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Stop-MgDeviceManagementVirtualEndpointCloudPcGracePeriod?view=graph-powershell-v1.0)
+

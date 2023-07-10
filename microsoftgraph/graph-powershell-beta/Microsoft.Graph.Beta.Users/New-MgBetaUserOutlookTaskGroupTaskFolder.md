@@ -52,7 +52,7 @@ Create an Outlook task folder under a specified outlookTaskGroup.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users
 $params = @{
@@ -479,3 +479,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgUserOutlookTaskGroupTaskFolder](/powershell/module/Microsoft.Graph.Users/New-MgUserOutlookTaskGroupTaskFolder?view=graph-powershell-v1.0)
+

@@ -44,7 +44,7 @@ The **hasMembersWithLicenseErrors** and **isArchived** properties are an excepti
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Connect-MgGraph -Scopes 'Group.Read.All'
 Get-MgGroup |
@@ -61,7 +61,7 @@ Description : Welcome to the BizDev team.
 GroupTypes  : {Unified}
 
 ```
-### EXAMPLE 2
+### Example 2
 ```powershell
 Connect-MgGraph -Scopes 'Group.Read.All'
 Get-MgGroup -Filter "DisplayName eq 'Business Development'" |
@@ -73,7 +73,7 @@ Description : Welcome to the BizDev team.
 GroupTypes  : {Unified}
 
 ```
-### EXAMPLE 3
+### Example 3
 ```powershell
 Connect-MgGraph -Scopes 'Group.Read.All'
 Get-MgGroup -ConsistencyLevel eventual -Count groupCount
@@ -91,7 +91,7 @@ Id                                   DisplayName          Description           
 {Unified}
 
 ```
-### EXAMPLE 4
+### Example 4
 ```powershell
 Connect-MgGraph -Scopes 'Group.Read.All'
 Get-MgGroup -ConsistencyLevel eventual -Count groupCount -Search '"DisplayName:Market"'
@@ -104,7 +104,7 @@ Id                                   DisplayName         Description            
 74a7bfca-7fbc-4a67-b4bb-3ef115b114f1 Sales & Marketing   This is the sales and marketing team                                   {}
 
 ```
-### EXAMPLE 5
+### Example 5
 ```powershell
 Connect-MgGraph -Scopes 'Group.Read.All'
 Get-MgGroup -ConsistencyLevel eventual -Count groupCount -Filter "startsWith(DisplayName, 'A')" -OrderBy DisplayName
@@ -374,4 +374,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroup?view=graph-powershell-beta)
+
 

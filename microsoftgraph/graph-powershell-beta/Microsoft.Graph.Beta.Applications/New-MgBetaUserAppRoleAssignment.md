@@ -50,7 +50,7 @@ To grant an app role assignment to a user, you need three identifiers:
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 New-MgBetaUserAppRoleAssignment -Userid '8a7c50d3-fcbd-4727-a889-8ab232dfea01' `
   -PrincipalId '8a7c50d3-fcbd-4727-a889-8ab232dfea01' `
@@ -360,3 +360,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgUserAppRoleAssignment](/powershell/module/Microsoft.Graph.Applications/New-MgUserAppRoleAssignment?view=graph-powershell-v1.0)
+

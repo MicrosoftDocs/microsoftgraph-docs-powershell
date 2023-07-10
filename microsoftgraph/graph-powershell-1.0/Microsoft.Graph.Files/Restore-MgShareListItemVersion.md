@@ -46,7 +46,7 @@ This will create a new version with the contents of the previous version, but pr
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Sites
 ```
@@ -208,3 +208,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Restore-MgBetaShareListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Restore-MgBetaShareListItemVersion?view=graph-powershell-beta)
+

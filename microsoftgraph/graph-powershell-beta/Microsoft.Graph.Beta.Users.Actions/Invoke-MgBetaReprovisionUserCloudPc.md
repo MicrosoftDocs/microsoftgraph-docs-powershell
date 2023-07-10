@@ -46,7 +46,7 @@ Reprovision a specific Cloud PC.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 # A UPN can also be used as -UserId.
@@ -276,3 +276,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgReprovisionUserCloudPc](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgReprovisionUserCloudPc?view=graph-powershell-v1.0)
+

@@ -43,7 +43,7 @@ Returns the plannerPlans that have been recently viewed by the user in apps that
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Planner
 # A UPN can also be used as -UserId.
@@ -279,3 +279,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserPlannerRecentPlan](/powershell/module/Microsoft.Graph.Planner/Get-MgUserPlannerRecentPlan?view=graph-powershell-v1.0)
+

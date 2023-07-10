@@ -44,7 +44,7 @@ Add groups to be included in a mobile app management policy.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
@@ -53,7 +53,7 @@ $params = @{
 New-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroupByRef -MobilityManagementPolicyId $mobilityManagementPolicyId -BodyParameter $params
 ```
 
-### EXAMPLE 2
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
@@ -289,3 +289,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgPolicyMobileDeviceManagementPolicyIncludedGroupByRef](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyMobileDeviceManagementPolicyIncludedGroupByRef?view=graph-powershell-v1.0)
+
