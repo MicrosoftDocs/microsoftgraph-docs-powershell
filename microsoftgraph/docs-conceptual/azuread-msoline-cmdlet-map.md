@@ -412,8 +412,8 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 |Get-MsolContact|[Get-MgContact](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontact?view=graph-powershell-1.0&preserve-view=true)|
 |Get-MsolDevice|[Get-MgDevice](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevice?view=graph-powershell-1.0&preserve-view=true)|
 |Get-MsolDeviceRegistrationServicePolicy|[Get-MgPolicyDeviceRegistrationPolicy](/powershell/module/microsoft.graph.identity.signins/get-mgpolicydeviceregistrationpolicy?view=graph-powershell-beta&preserve-view=true)|
-|Get-MsolDirSyncConfiguration||
-|Get-MsolDirSyncFeatures||
+|Get-MsolDirSyncConfiguration|[Get-MgDirectoryOnPremiseSynchronization](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryonpremisesynchronization?view=graph-powershell-1.0&preserve-view=true)|
+|Get-MsolDirSyncFeatures|[Get-MgDirectoryOnPremiseSynchronization](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryonpremisesynchronization?view=graph-powershell-1.0&preserve-view=true)|
 |Get-MsolDirSyncProvisioningError|[Get-MgGroup](/powershell/module/microsoft.graph.groups/get-mggroup?view=graph-powershell-1.0&preserve-view=true), [Get-MgContact](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontact?view=graph-powershell-1.0&preserve-view=true), [Get-MgUser](/powershell/module/microsoft.graph.users/get-mguser?view=graph-powershell-1.0&preserve-view=true)|
 |Get-MsolDomain|[Get-MgDomain](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomain?view=graph-powershell-1.0&preserve-view=true)|
 |Get-MsolDomainFederationSettings|[Get-MgDomainFederationConfiguration](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomainfederationconfiguration?view=graph-powershell-1.0&preserve-view=true)|
