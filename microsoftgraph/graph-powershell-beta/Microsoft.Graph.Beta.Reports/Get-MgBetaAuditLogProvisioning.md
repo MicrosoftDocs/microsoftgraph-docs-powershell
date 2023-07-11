@@ -39,13 +39,13 @@ Get provisioning from auditLogs
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Reports
 Get-MgBetaAuditLogProvisioning
 ```
 
-### EXAMPLE 2
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Reports
 Get-MgBetaAuditLogProvisioning
@@ -282,3 +282,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgAuditLogProvisioning](/powershell/module/Microsoft.Graph.Reports/Get-MgAuditLogProvisioning?view=graph-powershell-v1.0)
+

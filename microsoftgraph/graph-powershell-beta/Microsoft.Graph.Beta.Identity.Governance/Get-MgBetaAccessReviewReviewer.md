@@ -39,7 +39,7 @@ The collection of reviewers for an access review, if access review reviewerType 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaAccessReviewReviewer -AccessReviewId $accessReviewId
@@ -362,3 +362,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgAccessReviewReviewer](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgAccessReviewReviewer?view=graph-powershell-v1.0)
+

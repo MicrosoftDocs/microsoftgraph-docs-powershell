@@ -33,7 +33,7 @@ Delete a group from the list of groups included in a mobile app management polic
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Remove-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroupByRef -MobilityManagementPolicyId $mobilityManagementPolicyId -GroupId $groupId
@@ -259,3 +259,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgPolicyMobileDeviceManagementPolicyIncludedGroupByRef](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyMobileDeviceManagementPolicyIncludedGroupByRef?view=graph-powershell-v1.0)
+

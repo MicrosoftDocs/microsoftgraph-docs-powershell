@@ -39,7 +39,7 @@ A collection of permissions granted to apps to access the team.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaTeamPermissionGrant -TeamId $teamId
@@ -303,3 +303,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgTeamPermissionGrant](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamPermissionGrant?view=graph-powershell-v1.0)
+

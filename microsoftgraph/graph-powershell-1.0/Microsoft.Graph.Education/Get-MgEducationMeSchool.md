@@ -41,7 +41,7 @@ Nullable.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Education
 
@@ -264,4 +264,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaEducationMeSchool](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeSchool?view=graph-powershell-beta)
+
 

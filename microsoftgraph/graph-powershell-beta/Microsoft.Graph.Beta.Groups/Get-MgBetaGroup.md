@@ -46,7 +46,7 @@ Because the **group** resource supports extensions, you can also use the `GET` o
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Connect-MgBetaGraph -Scopes 'Group.Read.All'
 Get-MgBetaGroup | 
@@ -63,7 +63,7 @@ DisplayName : Business Development
 Description : Welcome to the BizDev team.
 GroupTypes  : {Unified}
 
-### EXAMPLE 2
+### Example 2
 ```powershell
 Connect-MgBetaGraph -Scopes 'Group.Read.All'
 Get-MgBetaGroup -Filter "DisplayName eq 'Business Development'" | 
@@ -75,7 +75,7 @@ DisplayName : Business Development
 Description : Welcome to the BizDev team.
 GroupTypes  : {Unified}
 
-### EXAMPLE 3
+### Example 3
 ```powershell
 Connect-MgBetaGraph -Scopes 'Group.Read.All'
 Get-MgBetaGroup -ConsistencyLevel eventual -Count groupCount
@@ -93,7 +93,7 @@ Id                                   DisplayName          Description           
 4d5f57a1-85e0-41dd-8282-ff995ad5e1c3 Business Development Welcome to the BizDev team.
                                           {Unified}
 
-### EXAMPLE 4
+### Example 4
 ```powershell
 Connect-MgBetaGraph -Scopes 'Group.Read.All'
 Get-MgBetaGroup -ConsistencyLevel eventual -Count groupCount -Search '"DisplayName:Market"'
@@ -106,7 +106,7 @@ Id                                   DisplayName         Description            
 300a5486-9c58-422f-97a0-d2453977bcec Marketing resources Marketing resources                                                    {}
 74a7bfca-7fbc-4a67-b4bb-3ef115b114f1 Sales & Marketing   This is the sales and marketing team                                   {}
 
-### EXAMPLE 5
+### Example 5
 ```powershell
 Connect-MgBetaGraph -Scopes 'Group.Read.All'
 Get-MgBetaGroup -ConsistencyLevel eventual -Count groupCount -Filter "startsWith(DisplayName, 'A')" -OrderBy DisplayName
@@ -384,3 +384,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroup](/powershell/module/Microsoft.Graph.Groups/Get-MgGroup?view=graph-powershell-v1.0)
+

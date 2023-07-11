@@ -24,7 +24,7 @@ Retrieve the properties of an entitlementManagementSettings object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All'
 Get-MgBetaEntitlementManagementSetting
@@ -80,3 +80,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgEntitlementManagementSetting](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementSetting?view=graph-powershell-v1.0)
+

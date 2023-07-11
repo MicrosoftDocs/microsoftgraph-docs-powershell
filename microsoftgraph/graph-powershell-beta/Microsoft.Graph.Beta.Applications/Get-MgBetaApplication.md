@@ -39,7 +39,7 @@ Get the properties and relationships of an application object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Connect-MgBetaGraph -Scopes 'Application.Read.All'
 Get-MgBetaApplication | 
@@ -52,7 +52,7 @@ AppId           : 39b09640-ec3e-44c9-b3de-f52db4e1cf66
 SignInAudience  : AzureADandPersonalMicrosoftAccount
 PublisherDomain : Contoso.com
 
-### EXAMPLE 2
+### Example 2
 ```powershell
 Connect-MgBetaGraph -Scopes 'Application.Read.All'
 Get-MgBetaApplication -Filter "AppId eq '39b09640-ec3e-44c9-b3de-f52db4e1cf66'" | 
@@ -64,7 +64,7 @@ AppId           : 39b09640-ec3e-44c9-b3de-f52db4e1cf66
 SignInAudience  : AzureADandPersonalMicrosoftAccount
 PublisherDomain : Contoso.com
 
-### EXAMPLE 3
+### Example 3
 ```powershell
 Connect-MgBetaGraph -Scopes 'Application.Read.All'
 Get-MgBetaApplication -ConsistencyLevel eventual -Count appCount
@@ -78,7 +78,7 @@ dcaa0c3a-8dfa-4b47-bc04-0edbab42043a Principal-Test App bd38ad43-6c46-4cc6-b65c-
 f6b30057-7095-4e2c-89f8-224149f591b7 Testing App        00e80963-9bc0-4147-b9e0-2ba56093e7e6 AzureADandPersonalMicrosoftAccount Contoso.com
 fe4caed6-6182-4aca-b70b-b114c5334a8a New app            641992e9-d176-4aff-a3b6-a867b3ba48c4 AzureADandPersonalMicrosoftAccount Contoso.com
 
-### EXAMPLE 4
+### Example 4
 ```powershell
 Connect-MgBetaGraph -Scopes 'Application.Read.All'
 Get-MgBetaApplication -ConsistencyLevel eventual -Count appCount -Search '"DisplayName:Test"'
@@ -89,7 +89,7 @@ Id                                   DisplayName        AppId                   
 dcaa0c3a-8dfa-4b47-bc04-0edbab42043a Principal-Test App bd38ad43-6c46-4cc6-b65c-a0db533a2a6f AzureADMyOrg                       Contoso.com
 f6b30057-7095-4e2c-89f8-224149f591b7 Testing App        00e80963-9bc0-4147-b9e0-2ba56093e7e6 AzureADandPersonalMicrosoftAccount Contoso.com
 
-### EXAMPLE 5
+### Example 5
 ```powershell
 Connect-MgBetaGraph -Scopes 'Application.Read.All'
 Get-MgBetaApplication -ConsistencyLevel eventual -Count appCount -Filter "startsWith(DisplayName, 'New')" -OrderBy DisplayName
@@ -350,3 +350,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgApplication](/powershell/module/Microsoft.Graph.Applications/Get-MgApplication?view=graph-powershell-v1.0)
+

@@ -49,7 +49,7 @@ If you want to change a group that originates on-premises, download the results 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Add-MgBetaAccessReviewDecision -AccessReviewId $accessReviewId
@@ -252,3 +252,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Add-MgAccessReviewDecision](/powershell/module/Microsoft.Graph.Identity.Governance/Add-MgAccessReviewDecision?view=graph-powershell-v1.0)
+

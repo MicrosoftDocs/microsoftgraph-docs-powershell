@@ -46,7 +46,7 @@ Adds a strong password to an application.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Connect-MgBetaGraph -Scopes 'Application.ReadWrite.All'
 
@@ -71,7 +71,7 @@ AdditionalProperties : {[@odata.context,
 https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.passwordCredential]}
 
 ```
-### EXAMPLE 2
+### Example 2
 ```powershell
 Connect-MgBetaGraph -Scopes 'Application.ReadWrite.All'
 
@@ -285,4 +285,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Add-MgApplicationPassword](/powershell/module/Microsoft.Graph.Applications/Add-MgApplicationPassword?view=graph-powershell-v1.0)
+
 

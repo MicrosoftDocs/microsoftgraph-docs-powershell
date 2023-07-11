@@ -110,7 +110,7 @@ Update the properties of a group object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 $GroupUpdate= @{
   "Description"= "This is a test group"
@@ -26166,3 +26166,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgGroup](/powershell/module/Microsoft.Graph.Groups/Update-MgGroup?view=graph-powershell-v1.0)
+

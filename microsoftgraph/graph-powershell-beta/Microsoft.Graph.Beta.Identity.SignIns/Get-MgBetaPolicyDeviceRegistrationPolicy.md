@@ -27,7 +27,7 @@ Represents deviceRegistrationPolicy quota restrictions, additional authenticatio
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Get-MgBetaPolicyDeviceRegistrationPolicy
@@ -79,3 +79,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgPolicyDeviceRegistrationPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyDeviceRegistrationPolicy?view=graph-powershell-v1.0)
+

@@ -33,7 +33,7 @@ The target object can be either a one-time access review, or an instance of a re
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Send-MgBetaAccessReviewReminder -AccessReviewId $accessReviewId
@@ -236,3 +236,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Send-MgAccessReviewReminder](/powershell/module/Microsoft.Graph.Identity.Governance/Send-MgAccessReviewReminder?view=graph-powershell-v1.0)
+

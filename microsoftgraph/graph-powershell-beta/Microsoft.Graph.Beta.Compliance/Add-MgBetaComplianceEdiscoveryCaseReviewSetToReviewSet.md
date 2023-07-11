@@ -54,7 +54,7 @@ The location provides a URL that will return a caseExportOperation.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 $params = @{
@@ -449,3 +449,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Add-MgComplianceEdiscoveryCaseReviewSetToReviewSet](/powershell/module/Microsoft.Graph.Compliance/Add-MgComplianceEdiscoveryCaseReviewSetToReviewSet?view=graph-powershell-v1.0)
+

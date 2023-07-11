@@ -50,7 +50,7 @@ Update the settings in a microsoftApplicationDataAccessSettings object that spec
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 $params = @{
@@ -270,3 +270,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgOrganizationSettingMicrosoftApplicationDataAccess](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgOrganizationSettingMicrosoftApplicationDataAccess?view=graph-powershell-v1.0)
+

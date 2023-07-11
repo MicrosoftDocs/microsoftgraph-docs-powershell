@@ -32,7 +32,7 @@ Deletes an itemAddress object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 Remove-MgBetaUserProfileAddress -UserId $userId -ItemAddressId $itemAddressId
@@ -191,3 +191,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgUserProfileAddress](/powershell/module/Microsoft.Graph.People/Remove-MgUserProfileAddress?view=graph-powershell-v1.0)
+

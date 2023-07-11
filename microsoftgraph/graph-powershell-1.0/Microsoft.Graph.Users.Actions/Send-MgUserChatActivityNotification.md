@@ -52,7 +52,7 @@ For more details about sending notifications and the requirements for doing so, 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
 ```
@@ -80,7 +80,7 @@ $params = @{
 
 Send-MgChatActivityNotification -ChatId $chatId -BodyParameter $params
 
-### EXAMPLE 2
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Teams
 ```
@@ -108,7 +108,7 @@ $params = @{
 
 Send-MgChatActivityNotification -ChatId $chatId -BodyParameter $params
 
-### EXAMPLE 3
+### Example 3
 ```powershell
 Import-Module Microsoft.Graph.Teams
 ```
@@ -136,7 +136,7 @@ $params = @{
 
 Send-MgChatActivityNotification -ChatId $chatId -BodyParameter $params
 
-### EXAMPLE 4
+### Example 4
 ```powershell
 Import-Module Microsoft.Graph.Teams
 ```
@@ -468,3 +468,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Send-MgBetaUserChatActivityNotification](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Send-MgBetaUserChatActivityNotification?view=graph-powershell-beta)
+

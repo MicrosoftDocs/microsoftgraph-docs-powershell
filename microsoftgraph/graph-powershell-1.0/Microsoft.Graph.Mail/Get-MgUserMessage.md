@@ -43,7 +43,7 @@ Nullable.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```
 Import-Module Microsoft.Graph.Mail
 
@@ -51,7 +51,7 @@ Import-Module Microsoft.Graph.Mail
 Get-MgUserMessage -UserId $userId -MessageId $messageId
 
 ```
-### EXAMPLE 2
+### Example 2
 ```
 Import-Module Microsoft.Graph.Mail
 
@@ -302,5 +302,6 @@ INPUTOBJECT \<IMailIdentity\>: Identity Parameter
 [Get-MgBetaUserMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMessage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermessage)
+
 
 

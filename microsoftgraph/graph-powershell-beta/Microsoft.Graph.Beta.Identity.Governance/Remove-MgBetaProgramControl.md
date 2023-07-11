@@ -58,7 +58,7 @@ This unlinks an access review from a program.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Remove-MgBetaProgramControl -ProgramControlId $programControlId
@@ -306,3 +306,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgProgramControl](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgProgramControl?view=graph-powershell-v1.0)
+

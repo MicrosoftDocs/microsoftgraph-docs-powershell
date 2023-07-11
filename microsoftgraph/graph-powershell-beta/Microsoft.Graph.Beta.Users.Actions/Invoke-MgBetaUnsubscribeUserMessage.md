@@ -48,7 +48,7 @@ The actual exclusion of the user from future mail distribution is managed by the
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 # A UPN can also be used as -UserId.
@@ -211,3 +211,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgUnsubscribeUserMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgUnsubscribeUserMessage?view=graph-powershell-v1.0)
+

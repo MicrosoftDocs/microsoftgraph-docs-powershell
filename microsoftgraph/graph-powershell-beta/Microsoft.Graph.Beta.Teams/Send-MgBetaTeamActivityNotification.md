@@ -52,7 +52,7 @@ For more details about sending notifications and the requirements for doing so, 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
@@ -78,7 +78,7 @@ $params = @{
 Send-MgBetaTeamActivityNotification -TeamId $teamId -BodyParameter $params
 ```
 
-### EXAMPLE 2
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
@@ -108,7 +108,7 @@ $params = @{
 Send-MgBetaTeamActivityNotification -TeamId $teamId -BodyParameter $params
 ```
 
-### EXAMPLE 3
+### Example 3
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
@@ -135,7 +135,7 @@ $params = @{
 Send-MgBetaTeamActivityNotification -TeamId $teamId -BodyParameter $params
 ```
 
-### EXAMPLE 4
+### Example 4
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
@@ -162,7 +162,7 @@ $params = @{
 Send-MgBetaTeamActivityNotification -TeamId $teamId -BodyParameter $params
 ```
 
-### EXAMPLE 5
+### Example 5
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
@@ -192,7 +192,7 @@ $params = @{
 Send-MgBetaTeamActivityNotification -TeamId $teamId -BodyParameter $params
 ```
 
-### EXAMPLE 6
+### Example 6
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
@@ -218,7 +218,7 @@ $params = @{
 Send-MgBetaTeamActivityNotification -TeamId $teamId -BodyParameter $params
 ```
 
-### EXAMPLE 7
+### Example 7
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
@@ -244,7 +244,7 @@ $params = @{
 Send-MgBetaTeamActivityNotification -TeamId $teamId -BodyParameter $params
 ```
 
-### EXAMPLE 8
+### Example 8
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
@@ -271,7 +271,7 @@ $params = @{
 Send-MgBetaTeamActivityNotification -TeamId $teamId -BodyParameter $params
 ```
 
-### EXAMPLE 9
+### Example 9
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
@@ -598,3 +598,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Send-MgTeamActivityNotification](/powershell/module/Microsoft.Graph.Teams/Send-MgTeamActivityNotification?view=graph-powershell-v1.0)
+

@@ -100,7 +100,7 @@ Update the properties of servicePrincipal object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 $ServicePrincipalUpdate =@{
   "accountEnabled" = "true"
@@ -1976,3 +1976,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgServicePrincipal](/powershell/module/Microsoft.Graph.Applications/Update-MgServicePrincipal?view=graph-powershell-v1.0)
+

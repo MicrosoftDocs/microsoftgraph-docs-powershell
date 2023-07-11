@@ -34,7 +34,7 @@ For details, see Reopen a closed case.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 Invoke-MgBetaReopenComplianceEdiscoveryCase -CaseId $caseId
@@ -155,3 +155,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgReopenComplianceEdiscoveryCase](/powershell/module/Microsoft.Graph.Compliance/Invoke-MgReopenComplianceEdiscoveryCase?view=graph-powershell-v1.0)
+

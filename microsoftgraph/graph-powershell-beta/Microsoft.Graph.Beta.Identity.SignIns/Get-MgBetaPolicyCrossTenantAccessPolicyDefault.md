@@ -27,7 +27,7 @@ This default configuration may be the service default assigned by Azure AD (**is
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -80,4 +80,5 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgPolicyCrossTenantAccessPolicyDefault](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyCrossTenantAccessPolicyDefault?view=graph-powershell-v1.0)
+
 

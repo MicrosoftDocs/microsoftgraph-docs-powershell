@@ -41,7 +41,7 @@ You can use the `Prefer: outlook.timezone` header to have all the date-related p
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 # A UPN can also be used as -UserId.
@@ -189,3 +189,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Complete-MgUserOutlookTask](/powershell/module/Microsoft.Graph.Users.Actions/Complete-MgUserOutlookTask?view=graph-powershell-v1.0)
+

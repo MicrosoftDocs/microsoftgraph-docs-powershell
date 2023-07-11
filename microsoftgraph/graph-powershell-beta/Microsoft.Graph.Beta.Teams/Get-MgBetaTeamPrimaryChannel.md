@@ -32,7 +32,7 @@ Get the default channel, **General**, of a team.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -161,4 +161,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgTeamPrimaryChannel](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamPrimaryChannel?view=graph-powershell-v1.0)
+
 

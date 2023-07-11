@@ -37,7 +37,7 @@ After the access review stops, reviewers can no longer give input, and the acces
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Stop-MgBetaAccessReview -AccessReviewId $accessReviewId
@@ -240,3 +240,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Stop-MgAccessReview](/powershell/module/Microsoft.Graph.Identity.Governance/Stop-MgAccessReview?view=graph-powershell-v1.0)
+

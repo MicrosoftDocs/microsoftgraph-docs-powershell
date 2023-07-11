@@ -39,13 +39,13 @@ Get the details of an async, long-running operation on a Microsoft Teams-enabled
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaTeamworkDeviceOperation -TeamworkDeviceId $teamworkDeviceId -TeamworkDeviceOperationId $teamworkDeviceOperationId
 ```
 
-### EXAMPLE 2
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaTeamworkDeviceOperation -TeamworkDeviceId $teamworkDeviceId
@@ -309,3 +309,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgTeamworkDeviceOperation](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDeviceOperation?view=graph-powershell-v1.0)
+

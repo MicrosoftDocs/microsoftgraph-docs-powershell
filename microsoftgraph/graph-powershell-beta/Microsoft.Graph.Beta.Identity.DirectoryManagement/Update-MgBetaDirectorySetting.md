@@ -46,7 +46,7 @@ Update the properties of a specific directory setting object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 $params = @{
@@ -291,3 +291,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgDirectorySetting](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectorySetting?view=graph-powershell-v1.0)
+

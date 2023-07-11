@@ -26,7 +26,7 @@ Retrieve a list of users at a school.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -185,4 +185,5 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgEducationSchoolUserByRef](/powershell/module/Microsoft.Graph.Education/Get-MgEducationSchoolUserByRef?view=graph-powershell-v1.0)
+
 

@@ -40,7 +40,7 @@ All errors associated with this synchronization profile.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 Get-MgBetaEducationSynchronizationProfileError -EducationSynchronizationProfileId $educationSynchronizationProfileId
@@ -280,3 +280,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgEducationSynchronizationProfileError](/powershell/module/Microsoft.Graph.Education/Get-MgEducationSynchronizationProfileError?view=graph-powershell-v1.0)
+

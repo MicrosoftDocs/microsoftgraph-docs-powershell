@@ -434,3 +434,4 @@ ROLEDEFINITION `<IMicrosoftGraphUnifiedRoleDefinition>`: unifiedRoleDefinition
 
 ## RELATED LINKS
 [New-MgRoleManagementDirectoryRoleAssignment](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/New-MgRoleManagementDirectoryRoleAssignment?view=graph-powershell-v1.0)
+

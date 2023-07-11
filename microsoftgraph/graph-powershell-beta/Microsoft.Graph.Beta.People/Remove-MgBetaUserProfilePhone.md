@@ -32,7 +32,7 @@ Delete an itemPhone object from the user's profile.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 Remove-MgBetaUserProfilePhone -UserId $userId -ItemPhoneId $itemPhoneId
@@ -191,3 +191,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgUserProfilePhone](/powershell/module/Microsoft.Graph.People/Remove-MgUserProfilePhone?view=graph-powershell-v1.0)
+

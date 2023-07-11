@@ -54,7 +54,7 @@ Update the properties of a workPosition object in a user's profile.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 $params = @{
@@ -555,3 +555,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgUserProfilePosition](/powershell/module/Microsoft.Graph.People/Update-MgUserProfilePosition?view=graph-powershell-v1.0)
+

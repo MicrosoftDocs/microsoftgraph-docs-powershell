@@ -39,13 +39,13 @@ Get the specified Teams async operation that ran or is running on a specific res
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaChatOperation -ChatId $chatId -TeamsAsyncOperationId $teamsAsyncOperationId
 ```
 
-### EXAMPLE 2
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaChatOperation -ChatId $chatId
@@ -309,3 +309,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgChatOperation](/powershell/module/Microsoft.Graph.Teams/Get-MgChatOperation?view=graph-powershell-v1.0)
+

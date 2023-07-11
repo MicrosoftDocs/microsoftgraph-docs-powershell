@@ -36,7 +36,7 @@ After that time, they are permanently deleted.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Remove-MgBetaApplication -ApplicationId '1bc44759-ef10-46de-b199-40c077768fff'
 
@@ -186,4 +186,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgApplication](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplication?view=graph-powershell-v1.0)
+
 

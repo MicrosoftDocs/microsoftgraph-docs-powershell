@@ -36,7 +36,7 @@ In this API, each meeting room and room list is represented by an emailAddress i
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Functions
 # A UPN can also be used as -UserId.
@@ -210,3 +210,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Find-MgUserRoomList](/powershell/module/Microsoft.Graph.Users.Functions/Find-MgUserRoomList?view=graph-powershell-v1.0)
+

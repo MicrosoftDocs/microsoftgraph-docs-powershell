@@ -26,7 +26,7 @@ Retrieves the educationUser members of an educationClass.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Education
 
@@ -185,4 +185,5 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaEducationClassMemberByRef](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassMemberByRef?view=graph-powershell-beta)
+
 

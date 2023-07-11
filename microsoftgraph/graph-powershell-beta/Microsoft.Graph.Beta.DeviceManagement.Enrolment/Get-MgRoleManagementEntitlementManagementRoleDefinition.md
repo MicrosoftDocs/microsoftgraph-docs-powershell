@@ -298,3 +298,4 @@ INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 [Get-MgRoleManagementEntitlementManagementRoleDefinition](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Get-MgRoleManagementEntitlementManagementRoleDefinition?view=graph-powershell-v1.0)
+

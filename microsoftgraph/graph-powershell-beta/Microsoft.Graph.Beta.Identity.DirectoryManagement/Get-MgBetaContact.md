@@ -39,7 +39,7 @@ Get the properties and relationships of an organizational contact object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Get-MgBetaContact | Format-List Id, DisplayName, Mail, MailNickname
 ```
@@ -307,3 +307,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgContact](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgContact?view=graph-powershell-v1.0)
+

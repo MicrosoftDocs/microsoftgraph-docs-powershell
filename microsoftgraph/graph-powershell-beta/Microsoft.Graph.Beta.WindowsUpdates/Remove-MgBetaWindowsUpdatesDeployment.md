@@ -32,7 +32,7 @@ Delete a deployment object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 Remove-MgBetaWindowsUpdatesDeployment -DeploymentId $deploymentId
@@ -162,3 +162,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgWindowsUpdatesDeployment](/powershell/module/Microsoft.Graph.WindowsUpdates/Remove-MgWindowsUpdatesDeployment?view=graph-powershell-v1.0)
+

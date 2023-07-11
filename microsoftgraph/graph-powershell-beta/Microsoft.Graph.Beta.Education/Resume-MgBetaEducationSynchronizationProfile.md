@@ -32,7 +32,7 @@ Resume the sync of a specific school data synchronization profile in the tenant.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 Resume-MgBetaEducationSynchronizationProfile -EducationSynchronizationProfileId $educationSynchronizationProfileId
@@ -152,3 +152,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Resume-MgEducationSynchronizationProfile](/powershell/module/Microsoft.Graph.Education/Resume-MgEducationSynchronizationProfile?view=graph-powershell-v1.0)
+

@@ -59,7 +59,7 @@ Create a new [list][] in a [site][].
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Sites
 
@@ -13990,4 +13990,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaSiteList](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteList?view=graph-powershell-beta)
+
 

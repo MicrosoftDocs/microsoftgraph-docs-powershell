@@ -65,7 +65,7 @@ The POST method always ignores the time portion of **startDateTime** and **dueDa
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users
 $params = @{
@@ -720,3 +720,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgUserOutlookTaskFolderTask](/powershell/module/Microsoft.Graph.Users/New-MgUserOutlookTaskFolderTask?view=graph-powershell-v1.0)
+

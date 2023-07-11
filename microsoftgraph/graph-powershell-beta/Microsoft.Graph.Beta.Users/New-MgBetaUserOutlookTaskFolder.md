@@ -52,7 +52,7 @@ Create a task folder in the default task group (`My Tasks`) of the user's mailbo
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users
 $params = @{
@@ -464,3 +464,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgUserOutlookTaskFolder](/powershell/module/Microsoft.Graph.Users/New-MgUserOutlookTaskFolder?view=graph-powershell-v1.0)
+

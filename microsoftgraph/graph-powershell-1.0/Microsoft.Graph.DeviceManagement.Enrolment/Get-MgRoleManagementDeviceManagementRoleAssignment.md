@@ -39,31 +39,31 @@ Get roleAssignments from roleManagement
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```
 Import-Module Microsoft.Graph.DeviceManagement.Enrolment
 Get-MgRoleManagementDeviceManagementRoleAssignment -UnifiedRoleAssignmentMultipleId $unifiedRoleAssignmentMultipleId -ExpandProperty "roleDefinition,principals,directoryScopes"
 ```
 
-### EXAMPLE 2
+### Example 2
 ```
 Import-Module Microsoft.Graph.DeviceManagement.Enrolment
 Get-MgRoleManagementDeviceManagementRoleAssignment -Filter  " principalIds/any(x:x eq '564ae70c-73d9-476b-820b-fb61eb7384b9')"  -OutFile $outFileId
 ```
 
-### EXAMPLE 3
+### Example 3
 ```
 Import-Module Microsoft.Graph.DeviceManagement.Enrolment
 Get-MgRoleManagementDeviceManagementRoleAssignment -Filter  " principalIds/any(x:x eq '564ae70c-73d9-476b-820b-fb61eb7384b9')"
 ```
 
-### EXAMPLE 4
+### Example 4
 ```
 Import-Module Microsoft.Graph.DeviceManagement.Enrolment
 Get-MgRoleManagementDeviceManagementRoleAssignment -UnifiedRoleAssignmentMultipleId $unifiedRoleAssignmentMultipleId
 ```
 
-### EXAMPLE 5
+### Example 5
 ```
 Import-Module Microsoft.Graph.DeviceManagement.Enrolment
 Get-MgRoleManagementDeviceManagementRoleAssignment -Filter "principalId eq '9e47fc6f-2d7a-464c-944e-d3dd0de522e4'"
@@ -269,4 +269,5 @@ Please use Get-Help -Online.
 [Get-MgBetaRoleManagementDeviceManagementRoleAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrolment/Get-MgRoleManagementDeviceManagementRoleAssignment?view=graph-powershell-beta)
 
 [https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/get-mgrolemanagementdevicemanagementroleassignment](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/get-mgrolemanagementdevicemanagementroleassignment)
+
 

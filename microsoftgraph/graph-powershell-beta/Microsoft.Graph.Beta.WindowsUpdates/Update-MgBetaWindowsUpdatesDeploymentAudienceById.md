@@ -56,7 +56,7 @@ You can also use the method updateAudience to update the **deploymentAudience**.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 $params = @{
@@ -301,3 +301,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgWindowsUpdatesDeploymentAudienceById](/powershell/module/Microsoft.Graph.WindowsUpdates/Update-MgWindowsUpdatesDeploymentAudienceById?view=graph-powershell-v1.0)
+

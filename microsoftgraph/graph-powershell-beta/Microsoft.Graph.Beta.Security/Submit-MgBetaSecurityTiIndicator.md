@@ -33,7 +33,7 @@ Upload multiple threat intelligence (TI) indicators in one request instead of mu
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 $params = @{
@@ -310,3 +310,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Submit-MgSecurityTiIndicator](/powershell/module/Microsoft.Graph.Security/Submit-MgSecurityTiIndicator?view=graph-powershell-v1.0)
+

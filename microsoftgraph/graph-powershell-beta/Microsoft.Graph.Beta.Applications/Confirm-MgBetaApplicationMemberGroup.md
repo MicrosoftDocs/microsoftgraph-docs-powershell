@@ -34,7 +34,7 @@ For more information, see Publisher verification.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 Clear-MgBetaApplicationVerifiedPublisher -ApplicationId $applicationId
@@ -169,3 +169,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Confirm-MgApplicationMemberGroup](/powershell/module/Microsoft.Graph.Applications/Confirm-MgApplicationMemberGroup?view=graph-powershell-v1.0)
+

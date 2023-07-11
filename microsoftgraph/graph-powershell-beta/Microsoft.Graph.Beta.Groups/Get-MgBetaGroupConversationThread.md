@@ -45,7 +45,7 @@ Nullable.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 Get-MgBetaGroupConversationThread -GroupId $groupId -ConversationId $conversationId
@@ -316,3 +316,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupConversationThread](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupConversationThread?view=graph-powershell-v1.0)
+

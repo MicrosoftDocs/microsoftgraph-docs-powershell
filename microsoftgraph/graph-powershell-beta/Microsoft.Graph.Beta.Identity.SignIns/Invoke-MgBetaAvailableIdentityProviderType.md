@@ -25,19 +25,19 @@ Invoke function availableProviderTypes
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Invoke-MgBetaAvailableIdentityProviderType
 ```
 
-### EXAMPLE 2
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Invoke-MgBetaAvailableIdentityProviderType
 ```
 
-### EXAMPLE 3
+### Example 3
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Invoke-MgBetaAvailableIdentityProviderType -OutFile $outFileId
@@ -134,3 +134,4 @@ ALIASES
 
 ## RELATED LINKS
 [Invoke-MgAvailableIdentityProviderType](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgAvailableIdentityProviderType?view=graph-powershell-v1.0)
+

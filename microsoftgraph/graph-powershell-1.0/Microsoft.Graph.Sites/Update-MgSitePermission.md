@@ -56,7 +56,7 @@ Update an application permission object on a site.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Sites
 
@@ -595,4 +595,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaSitePermission](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSitePermission?view=graph-powershell-beta)
+
 

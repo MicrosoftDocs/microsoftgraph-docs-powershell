@@ -64,7 +64,7 @@ However, you can validate both the mail nickname and the display name and receiv
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.DirectoryObjects
 ```
@@ -352,3 +352,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Test-MgPolicyFeatureRolloutPolicyApplyToProperty](/powershell/module/Microsoft.Graph.Identity.SignIns/Test-MgPolicyFeatureRolloutPolicyApplyToProperty?view=graph-powershell-v1.0)
+

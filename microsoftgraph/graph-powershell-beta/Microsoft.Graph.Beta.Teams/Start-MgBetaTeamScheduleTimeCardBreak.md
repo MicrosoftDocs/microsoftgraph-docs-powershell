@@ -46,7 +46,7 @@ Start a break in a specific timeCard.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
@@ -273,3 +273,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Start-MgTeamScheduleTimeCardBreak](/powershell/module/Microsoft.Graph.Teams/Start-MgTeamScheduleTimeCardBreak?view=graph-powershell-v1.0)
+

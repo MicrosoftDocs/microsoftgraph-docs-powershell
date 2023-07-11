@@ -60,7 +60,7 @@ If all **updatableAsset** objects are the same type, you can also use the method
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 $params = @{
@@ -317,3 +317,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgWindowsUpdatesDeploymentAudience](/powershell/module/Microsoft.Graph.WindowsUpdates/Update-MgWindowsUpdatesDeploymentAudience?view=graph-powershell-v1.0)
+

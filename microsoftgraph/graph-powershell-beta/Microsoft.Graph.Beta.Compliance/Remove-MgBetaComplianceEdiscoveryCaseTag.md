@@ -32,7 +32,7 @@ Delete a tag object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 Remove-MgBetaComplianceEdiscoveryCaseTag -CaseId $caseId -TagId $tagId -Forcedelete true
@@ -183,3 +183,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgComplianceEdiscoveryCaseTag](/powershell/module/Microsoft.Graph.Compliance/Remove-MgComplianceEdiscoveryCaseTag?view=graph-powershell-v1.0)
+

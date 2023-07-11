@@ -2689,7 +2689,7 @@ Retrieve the properties and relationships of user object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Connect-MgGraph -Scopes 'User.Read.All'
 Get-MgUser -All | Format-List  ID, DisplayName, Mail, UserPrincipalName
@@ -2705,7 +2705,7 @@ Mail              : AdeleV@contoso.com
 UserPrincipalName : AdeleV@contoso.com
 
 ```
-### EXAMPLE 2
+### Example 2
 ```powershell
 Connect-MgGraph -Scopes 'User.Read.All'
 Get-MgUser -UserId 'e4e2b110-8d4f-434f-a990-7cd63e23aed6' |
@@ -2717,7 +2717,7 @@ Mail              : Adams@contoso.com
 UserPrincipalName : Adams@contoso.com
 
 ```
-### EXAMPLE 3
+### Example 3
 ```powershell
 Connect-MgGraph -Scopes 'User.Read.All'
 Get-MgUser -Count userCount -ConsistencyLevel eventual
@@ -2733,7 +2733,7 @@ Id                                   DisplayName              Mail              
 185190a7-54f0-4892-add3-211c21327570 Debra Berger             DebraB@Contoso.com             DebraB@Contoso.com
 
 ```
-### EXAMPLE 4
+### Example 4
 ```powershell
 Connect-MgGraph -Scopes 'User.Read.All'
 Get-MgUser -ConsistencyLevel eventual -Count userCount -Filter "startsWith(DisplayName, 'a')" -Top 1
@@ -2743,7 +2743,7 @@ Id                                   DisplayName   Mail                         
 577a8b8a-ab84-4f90-a6cc-a62cd56010be Allan Deyoung AllanD@M365x814237.OnMicrosoft.com AllanD@M365x814237.OnMicrosoft.com Member
 
 ```
-### EXAMPLE 5
+### Example 5
 ```powershell
 Connect-MgGraph -Scopes 'User.Read.All'
 Get-MgUser -ConsistencyLevel eventual -Count userCount -Search '"DisplayName:Conf"'
@@ -2757,7 +2757,7 @@ Id                                   DisplayName       Mail                UserP
 a7afe08d-55b9-4c44-be94-05d17c6513f3 Conf Room Rainier Rainier@Contoso.com Rainier@Contoso.com
 
 ```
-### EXAMPLE 6
+### Example 6
 ```powershell
 Connect-MgGraph -Scopes 'User.Read.All'
 Get-MgUser -ConsistencyLevel eventual -Count userCount -Filter "startsWith(DisplayName, 'Conf')" -OrderBy UserPrincipalName
@@ -2992,4 +2992,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaUser](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUser?view=graph-powershell-beta)
+
 

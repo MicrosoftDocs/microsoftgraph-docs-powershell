@@ -58,7 +58,7 @@ Update the properties of a projectParticipation object in a user's profile.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 $params = @{
@@ -632,3 +632,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgUserProfileProject](/powershell/module/Microsoft.Graph.People/Update-MgUserProfileProject?view=graph-powershell-v1.0)
+

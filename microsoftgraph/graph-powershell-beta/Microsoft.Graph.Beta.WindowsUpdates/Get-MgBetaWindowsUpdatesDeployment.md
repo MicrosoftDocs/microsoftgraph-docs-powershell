@@ -39,13 +39,13 @@ Read the properties and relationships of a deployment object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 Get-MgBetaWindowsUpdatesDeployment -DeploymentId $deploymentId
 ```
 
-### EXAMPLE 2
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 Get-MgBetaWindowsUpdatesDeployment
@@ -265,3 +265,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgWindowsUpdatesDeployment](/powershell/module/Microsoft.Graph.WindowsUpdates/Get-MgWindowsUpdatesDeployment?view=graph-powershell-v1.0)
+

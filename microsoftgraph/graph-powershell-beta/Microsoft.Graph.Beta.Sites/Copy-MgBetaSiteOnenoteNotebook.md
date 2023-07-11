@@ -51,7 +51,7 @@ The file can then be added as a default file or template via a POST operation.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 
@@ -353,4 +353,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Copy-MgSiteOnenoteNotebook](/powershell/module/Microsoft.Graph.Sites/Copy-MgSiteOnenoteNotebook?view=graph-powershell-v1.0)
+
 

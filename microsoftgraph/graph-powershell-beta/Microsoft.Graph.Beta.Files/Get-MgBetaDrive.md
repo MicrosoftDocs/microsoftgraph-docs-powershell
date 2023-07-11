@@ -38,7 +38,7 @@ Get entity from drives by key
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Files
 Get-MgBetaDrive -DriveId $driveId
@@ -274,3 +274,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDrive](/powershell/module/Microsoft.Graph.Files/Get-MgDrive?view=graph-powershell-v1.0)
+

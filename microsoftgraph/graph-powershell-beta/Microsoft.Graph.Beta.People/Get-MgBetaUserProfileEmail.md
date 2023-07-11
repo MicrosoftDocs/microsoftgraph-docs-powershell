@@ -39,14 +39,14 @@ Retrieve the properties and relationships of an itemEmail object in a user's pro
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 # A UPN can also be used as -UserId.
 Get-MgBetaUserProfileEmail -UserId $userId
 ```
 
-### EXAMPLE 2
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 Get-MgBetaUserProfileEmail -UserId $userId -ItemEmailId $itemEmailId
@@ -295,3 +295,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserProfileEmail](/powershell/module/Microsoft.Graph.People/Get-MgUserProfileEmail?view=graph-powershell-v1.0)
+

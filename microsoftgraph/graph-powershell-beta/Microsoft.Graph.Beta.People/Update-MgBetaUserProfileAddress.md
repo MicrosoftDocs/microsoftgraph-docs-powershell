@@ -52,7 +52,7 @@ Update the properties of an itemAddress object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 $params = @{
@@ -486,3 +486,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgUserProfileAddress](/powershell/module/Microsoft.Graph.People/Update-MgUserProfileAddress?view=graph-powershell-v1.0)
+

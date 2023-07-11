@@ -32,7 +32,7 @@ Create a new plannerRoster object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Planner
 $params = @{
@@ -514,3 +514,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgPlannerRoster](/powershell/module/Microsoft.Graph.Planner/New-MgPlannerRoster?view=graph-powershell-v1.0)
+

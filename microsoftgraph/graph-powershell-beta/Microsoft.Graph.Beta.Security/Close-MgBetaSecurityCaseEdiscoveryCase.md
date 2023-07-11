@@ -34,7 +34,7 @@ For details, see Close a case.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Close-MgBetaSecurityCaseEdiscoveryCase -EdiscoveryCaseId $ediscoveryCaseId
@@ -197,3 +197,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Close-MgSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Security/Close-MgSecurityCaseEdiscoveryCase?view=graph-powershell-v1.0)
+

@@ -32,7 +32,7 @@ Restore a document set version.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 Restore-MgBetaSiteListItemDocumentSetVersion -SiteId $siteId -ListId $listId -ListItemId $listItemId -DocumentSetVersionId $documentSetVersionId
@@ -234,3 +234,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Restore-MgSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Sites/Restore-MgSiteListItemDocumentSetVersion?view=graph-powershell-v1.0)
+

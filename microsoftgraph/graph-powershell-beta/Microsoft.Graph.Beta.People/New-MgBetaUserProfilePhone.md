@@ -50,7 +50,7 @@ Use this API to create a new itemPhone object in a user's profile.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 $params = @{
@@ -440,3 +440,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgUserProfilePhone](/powershell/module/Microsoft.Graph.People/New-MgUserProfilePhone?view=graph-powershell-v1.0)
+

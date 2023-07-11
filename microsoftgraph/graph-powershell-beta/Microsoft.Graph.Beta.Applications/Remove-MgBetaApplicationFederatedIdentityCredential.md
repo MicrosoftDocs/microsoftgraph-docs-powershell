@@ -33,7 +33,7 @@ Deletes a federatedIdentityCredential object from an application.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 
@@ -42,7 +42,7 @@ Remove-MgBetaApplicationFederatedIdentityCredential -ApplicationId $applicationI
 ```
 ## PARAMETERS
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 
@@ -208,4 +208,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgApplicationFederatedIdentityCredential](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationFederatedIdentityCredential?view=graph-powershell-v1.0)
+
 

@@ -48,7 +48,7 @@ Create new navigation property to versions for sites
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 
@@ -366,4 +366,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgSiteListItemVersion](/powershell/module/Microsoft.Graph.Sites/New-MgSiteListItemVersion?view=graph-powershell-v1.0)
+
 

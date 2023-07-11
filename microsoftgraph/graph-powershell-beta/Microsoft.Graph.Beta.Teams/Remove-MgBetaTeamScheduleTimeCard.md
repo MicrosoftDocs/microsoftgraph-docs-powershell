@@ -32,7 +32,7 @@ Delete a timeCard instance in a schedule.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Remove-MgBetaTeamScheduleTimeCard -TeamId $teamId -TimeCardId $timeCardId
@@ -206,3 +206,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgTeamScheduleTimeCard](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamScheduleTimeCard?view=graph-powershell-v1.0)
+

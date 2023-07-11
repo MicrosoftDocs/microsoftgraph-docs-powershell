@@ -32,7 +32,7 @@ The following entities support extension properties:\n+ user\n+ group\n+ adminis
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.DirectoryObjects
 Get-MgDirectoryObjectAvailableExtensionProperty
@@ -140,3 +140,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[IsSyncedFromOnPremises <Boolean?>]`: 
 
 ## RELATED LINKS
+

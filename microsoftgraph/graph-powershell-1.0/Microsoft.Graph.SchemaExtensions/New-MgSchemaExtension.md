@@ -40,7 +40,7 @@ See examples of how to define a schema extension that describes a training cours
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.SchemaExtensions
 
@@ -69,7 +69,7 @@ $params = @{
 New-MgSchemaExtension -BodyParameter $params
 
 ```
-### EXAMPLE 2
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.SchemaExtensions
 
@@ -98,7 +98,7 @@ $params = @{
 New-MgSchemaExtension -BodyParameter $params
 
 ```
-### EXAMPLE 3
+### Example 3
 ```powershell
 Import-Module Microsoft.Graph.SchemaExtensions
 
@@ -332,4 +332,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaSchemaExtension](/powershell/module/Microsoft.Graph.Beta.SchemaExtensions/New-MgBetaSchemaExtension?view=graph-powershell-beta)
+
 

@@ -34,7 +34,7 @@ The response will indicate the status of the sync.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 Get-MgBetaEducationSynchronizationProfileStatus -EducationSynchronizationProfileId $educationSynchronizationProfileId
@@ -138,3 +138,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgEducationSynchronizationProfileStatus](/powershell/module/Microsoft.Graph.Education/Get-MgEducationSynchronizationProfileStatus?view=graph-powershell-v1.0)
+

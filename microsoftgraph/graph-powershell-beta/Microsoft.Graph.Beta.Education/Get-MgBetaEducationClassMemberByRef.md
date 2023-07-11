@@ -28,7 +28,7 @@ Note that if the delegated token is used, members can only be seen by other memb
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -187,4 +187,5 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgEducationClassMemberByRef](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassMemberByRef?view=graph-powershell-v1.0)
+
 

@@ -50,7 +50,7 @@ Update the properties of a connectorGroup object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 $params = @{
@@ -1602,3 +1602,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgOnPremisePublishingProfileConnectorGroup](/powershell/module/Microsoft.Graph.Applications/Update-MgOnPremisePublishingProfileConnectorGroup?view=graph-powershell-v1.0)
+

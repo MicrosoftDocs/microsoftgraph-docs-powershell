@@ -39,7 +39,7 @@ Get followedSites from users
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 # A UPN can also be used as -UserId.
@@ -317,3 +317,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserFollowedSite](/powershell/module/Microsoft.Graph.Sites/Get-MgUserFollowedSite?view=graph-powershell-v1.0)
+

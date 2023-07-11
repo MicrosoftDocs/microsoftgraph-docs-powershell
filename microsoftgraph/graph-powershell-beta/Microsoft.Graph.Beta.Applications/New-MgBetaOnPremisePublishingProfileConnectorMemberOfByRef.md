@@ -46,7 +46,7 @@ Create new navigation property ref to memberOf for onPremisesPublishingProfiles
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 $params = @{
@@ -251,3 +251,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgOnPremisePublishingProfileConnectorMemberOfByRef](/powershell/module/Microsoft.Graph.Applications/New-MgOnPremisePublishingProfileConnectorMemberOfByRef?view=graph-powershell-v1.0)
+

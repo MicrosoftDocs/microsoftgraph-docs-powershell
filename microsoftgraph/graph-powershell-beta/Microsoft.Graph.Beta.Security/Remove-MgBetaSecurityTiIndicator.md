@@ -32,7 +32,7 @@ Delete a tiIndicator object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Remove-MgBetaSecurityTiIndicator -TiIndicatorId $tiIndicatorId
@@ -210,3 +210,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgSecurityTiIndicator](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityTiIndicator?view=graph-powershell-v1.0)
+

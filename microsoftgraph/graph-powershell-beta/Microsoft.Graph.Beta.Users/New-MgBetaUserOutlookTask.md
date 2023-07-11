@@ -68,7 +68,7 @@ nYou can use the `Prefer: outlook.timezone` header to have all the date-related 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users
 $params = @{
@@ -708,3 +708,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgUserOutlookTask](/powershell/module/Microsoft.Graph.Users/New-MgUserOutlookTask?view=graph-powershell-v1.0)
+

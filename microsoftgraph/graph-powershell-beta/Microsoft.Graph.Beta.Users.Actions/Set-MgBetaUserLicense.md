@@ -54,7 +54,7 @@ To get the subscriptions available in the directory, perform a GET subscribedSku
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
 
@@ -67,7 +67,7 @@ Id                                   DisplayName   Mail UserPrincipalName       
 38955658-c844-4f59-9430-6519430ac89b Bianca Pisani      BiancaP@contoso.onmicrosoft.com       Member
 
 ```
-### EXAMPLE 2
+### Example 2
 ```powershell
 Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
 
@@ -85,7 +85,7 @@ Id                                   DisplayName   Mail UserPrincipalName       
 38955658-c844-4f59-9430-6519430ac89b Bianca Pisani      BiancaP@contoso.onmicrosoft.com       Member
 
 ```
-### EXAMPLE 3
+### Example 3
 ```powershell
 Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
 
@@ -104,7 +104,7 @@ Id                                   DisplayName   Mail UserPrincipalName       
 38955658-c844-4f59-9430-6519430ac89b Bianca Pisani      BiancaP@contoso.onmicrosoft.com       Member
 
 ```
-### EXAMPLE 4
+### Example 4
 ```powershell
 Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
 
@@ -134,7 +134,7 @@ Id                                   DisplayName   Mail UserPrincipalName       
 38955658-c844-4f59-9430-6519430ac89b Bianca Pisani      BiancaP@contoso.onmicrosoft.com       Member
 
 ```
-### EXAMPLE 5
+### Example 5
 ```powershell
 Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
 
@@ -149,7 +149,7 @@ Id                                   DisplayName    Mail UserPrincipalName      
 82f51c98-7221-442f-8329-3faf9fe022f1 Mallory Cortez      MalloryC@contoso.onmicrosoft.com       Member
 
 ```
-### EXAMPLE 6
+### Example 6
 ```powershell
 Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
 
@@ -363,4 +363,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgUserLicense](/powershell/module/Microsoft.Graph.Users.Actions/Set-MgUserLicense?view=graph-powershell-v1.0)
+
 

@@ -32,7 +32,7 @@ Invoke action restoreVersion
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 ```
@@ -194,3 +194,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Restore-MgDriveListItemVersion](/powershell/module/Microsoft.Graph.Files/Restore-MgDriveListItemVersion?view=graph-powershell-v1.0)
+
