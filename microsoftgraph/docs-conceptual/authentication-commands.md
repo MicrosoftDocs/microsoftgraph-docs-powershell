@@ -41,7 +41,7 @@ There are three ways to allow delegated access using `Connect-MgGraph`:
 
 #### Use delegated access using own App Id
 
-Follow the steps below to create custom applications that can be used to connect to Microsoft Graph PowerShell. Use this approach if you need to limit the consent permissions granted for Graph PowerShell usage.
+Follow the steps below to create custom applications that you can use to connect to Microsoft Graph PowerShell. Use this approach if you need to limit the consent permissions granted for Graph PowerShell usage.
 
 1. Go to the <a href="https://entra.microsoft.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade" target="_blank">Azure portal - App registrations</a> > **New Registration**
     1. **Name**: *Microsoft Graph PowerShell - High Privilege admin use only* (Enter a meaningful name for your application)
@@ -51,7 +51,7 @@ Follow the steps below to create custom applications that can be used to connect
         - **Uri**: http://localhost
         - Click **Create**
 
-Now you can use this app instead of the default one by connecting with:
+You can now use this app instead of the default one by connecting with:
 
 ```powershell
 Connect-MgGraph -ClientId <YOUR_NEW_APP_ID> -TenantId <YOUR_TENANT_ID>
