@@ -39,17 +39,23 @@ There are three ways to allow delegated access using `Connect-MgGraph`:
     Connect-MgGraph -AccessToken $AccessToken
     ```
 
-#### Use delegated access using own App Id
+#### Use delegated access with a custom application for Microsoft Graph PowerShell
 
-Follow the steps below to create custom applications that you can use to connect to Microsoft Graph PowerShell. Use this approach if you need to limit the consent permissions granted for Graph PowerShell usage.
+Follow the steps below to create custom applications that you can use to connect to Microsoft Graph PowerShell. Use this approach if you need to isolate and limit the consent permissions granted for Microsoft Graph PowerShell usage.
 
-1. Go to the <a href="https://entra.microsoft.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade" target="_blank">Azure portal - App registrations</a> > **New Registration**
-    1. **Name**: *Microsoft Graph PowerShell - High Privilege admin use only* (Enter a meaningful name for your application)
-    1. **Supported account types**: Accounts in this organization directory
-    1. **Redirect URI**:
+1. Go to the <a href="https://entra.microsoft.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade" target="_blank">Azure portal - App registrations</a> > **New Registration**.
+    1. Enter a **Name** for your application, for example *Microsoft Graph PowerShell - High Privilege admin use only*.
+    1. For **Supported account types**, select **Accounts in this organization directory**.
+    1. For **Redirect URI**:
         - Select **Public client/native** from the drop down
-        - **Uri**: http://localhost
-        - Click **Create**
+        - **URI value**: *http://localhost*
+    1. Select **Register**.
+    1. Go to **Enterprise applications** and select the application you just created.
+    1. Under **Manage**, select **Properties** and set **Assignment required?** to **Yes**.
+    1. Select **Save**.
+    1. Under **Manage**, select **Users and groups**.
+    1. Select **Add user/group** and add the users and groups permitted to use this application.
+    1. Once you've added all the users and groups, select **Assign**.
 
 You can now use this app instead of the default one by connecting with:
 
