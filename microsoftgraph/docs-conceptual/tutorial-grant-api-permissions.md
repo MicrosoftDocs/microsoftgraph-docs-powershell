@@ -1,6 +1,6 @@
 ---
-title: "Grant application permissions programmatically in Azure AD"
-description: "Learn how to grant and revoke app-only permissions programmatically in Azure AD using Microsoft Graph PowerShell"
+title: "Grant or revoke API permissions programmatically using Microsoft Graph PowerShell"
+description: "Learn how to grant and revoke API permissions programmatically in Azure AD using Microsoft Graph PowerShell"
 ms.topic: tutorial
 ms.date: 07/13/2023
 author: msewaweru
