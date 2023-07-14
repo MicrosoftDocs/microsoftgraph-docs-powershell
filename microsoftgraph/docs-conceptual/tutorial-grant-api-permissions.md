@@ -7,14 +7,13 @@ author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
 ms.reviewer: jawoods, phsignor
-zone_pivot_groups: grant-api-permissions 
+zone_pivot_groups: grant-api-permissions
 ---
 
 # Tutorial: Grant or revoke API permissions programmatically
 
 When you grant API permissions to a client app in Azure AD, the permission grants are recorded as objects that can be accessed, updated, or deleted like other objects. Using Microsoft Graph PowerShell cmdlets to directly create permission grants is a programmatic alternative to [interactive consent](/azure/active-directory/manage-apps/consent-and-permissions-overview). This can be useful for automation scenarios, bulk management, or other custom operations in your organization.
 
-<!-- start the grant-application-permissions zone -->
 :::zone pivot="grant-application-permissions"
 
 In this guide, you'll grant and revoke app roles that are exposed by an API to an app. App roles, also called application permissions, or direct access permissions, allow an app to call an API with its own identity.
@@ -143,9 +142,8 @@ To revoke the app roles assigned in step 3, run:
 ```powershell
 Remove-MgServicePrincipalAppRoleAssignedTo -ServicePrincipalId '22c1770d-30df-49e7-a763-f39d2ef9b369' -AppRoleAssignmentId 'DXfBIt8w50mnY_OdLvmzaUbMIDgaM6pCpU8rpQHnPf0'
 ```
+
 :::zone-end
-<!-- end the grant-application-permissions zone -->
-<!-- start the grant-delegated-permissions zone -->
 
 :::zone pivot="grant-delegated-permissions"
 
@@ -328,9 +326,7 @@ Remove-MgOauth2PermissionGrant -OAuth2PermissionGrantId 'DXfBIt8w50mnY_OdLvmzadD
 When a delegated permission grant is deleted, the access it granted is revoked. Existing access tokens will continue to be valid for their lifetime, but new access tokens will not be granted for the delegated permissions identified in the deleted oAuth2PermissionGrant.
 
 :::zone-end
-<!-- end the grant-application-permissions zone -->
 
 ## See also
 
 - [Grant or revoke API permissions using Microsoft Graph](/graph/permissions-grant-via-msgraph?tabs=http&pivots=grant-delegated-permissions)
-
