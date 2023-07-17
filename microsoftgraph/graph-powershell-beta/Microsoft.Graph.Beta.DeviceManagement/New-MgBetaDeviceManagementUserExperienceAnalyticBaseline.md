@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticbaseline
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to userExperienceAnalyticsBaselines for deviceManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementUserExperienceAnalyticBaseline](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticBaseline?view=graph-powershell-v1.0)
 
 ## SYNTAX
 
@@ -24,18 +21,34 @@ New-MgBetaDeviceManagementUserExperienceAnalyticBaseline [-AdditionalProperties 
  [-DeviceBootPerformanceMetrics <IMicrosoftGraphUserExperienceAnalyticsCategory>] [-DisplayName <String>]
  [-Id <String>] [-IsBuiltIn] [-RebootAnalyticsMetrics <IMicrosoftGraphUserExperienceAnalyticsCategory>]
  [-ResourcePerformanceMetrics <IMicrosoftGraphUserExperienceAnalyticsCategory>]
- [-WorkFromAnywhereMetrics <IMicrosoftGraphUserExperienceAnalyticsCategory>] [-WhatIf] [-Confirm]
+ [-WorkFromAnywhereMetrics <IMicrosoftGraphUserExperienceAnalyticsCategory>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementUserExperienceAnalyticBaseline
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBaseline> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBaseline> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to userExperienceAnalyticsBaselines for deviceManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -43,7 +56,7 @@ Create new navigation property to userExperienceAnalyticsBaselines for deviceMan
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -59,7 +72,7 @@ The user experience analytics category entity contains the scores and insights f
 To construct, see NOTES section for APPHEALTHMETRICS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsCategory
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsCategory
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -75,7 +88,7 @@ The user experience analytics category entity contains the scores and insights f
 To construct, see NOTES section for BATTERYHEALTHMETRICS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsCategory
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsCategory
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -91,7 +104,7 @@ The user experience analytics category entity contains the scores and insights f
 To construct, see NOTES section for BESTPRACTICESMETRICS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsCategory
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsCategory
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -107,7 +120,7 @@ The user experience analytics baseline entity contains baseline values against w
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsBaseline
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBaseline
 Parameter Sets: Create
 Aliases:
 
@@ -120,9 +133,13 @@ Accept wildcard characters: False
 
 ### -CreatedDateTime
 The date the custom baseline was created.
+The value cannot be modified and is automatically populated when the baseline is created.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
+Returned by default.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -138,7 +155,7 @@ The user experience analytics category entity contains the scores and insights f
 To construct, see NOTES section for DEVICEBOOTPERFORMANCEMETRICS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsCategory
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsCategory
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -150,10 +167,10 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-The name of the user experience analytics baseline.
+The name of the baseline.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -169,7 +186,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -181,10 +198,12 @@ Accept wildcard characters: False
 ```
 
 ### -IsBuiltIn
-Signifies if the current baseline is the commercial median baseline or a custom baseline.
+When TRUE, indicates the current baseline is the commercial median baseline.
+When FALSE, indicates it is a custom baseline.
+FALSE by default.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -200,7 +219,7 @@ The user experience analytics category entity contains the scores and insights f
 To construct, see NOTES section for REBOOTANALYTICSMETRICS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsCategory
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsCategory
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -216,7 +235,7 @@ The user experience analytics category entity contains the scores and insights f
 To construct, see NOTES section for RESOURCEPERFORMANCEMETRICS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsCategory
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsCategory
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -232,7 +251,7 @@ The user experience analytics category entity contains the scores and insights f
 To construct, see NOTES section for WORKFROMANYWHEREMETRICS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsCategory
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsCategory
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -247,7 +266,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -263,7 +282,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -280,9 +299,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBaseline
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBaseline
+
 ## NOTES
 
 ALIASES
@@ -295,40 +316,40 @@ To create the parameters described below, construct a hash table containing the 
 `APPHEALTHMETRICS <IMicrosoftGraphUserExperienceAnalyticsCategory>`: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Insights <IMicrosoftGraphUserExperienceAnalyticsInsight[]>]`: The insights for the user experience analytics category.
+  - `[Insights <IMicrosoftGraphUserExperienceAnalyticsInsight[]>]`: The insights for the category. Read-only.
     - `[InsightId <String>]`: The unique identifier of the user experience analytics insight.
     - `[Severity <UserExperienceAnalyticsInsightSeverity?>]`: Indicates severity of insights. Possible values are: None, Informational, Warning, Error.
-    - `[UserExperienceAnalyticsMetricId <String>]`: The unique identifier of the user experience analytics insight.
+    - `[UserExperienceAnalyticsMetricId <String>]`: The unique identifier of the user experience analytics metric.
     - `[Values <IMicrosoftGraphUserExperienceAnalyticsInsightValue[]>]`: The value of the user experience analytics insight.
-  - `[MetricValues <IMicrosoftGraphUserExperienceAnalyticsMetric[]>]`: The metric values for the user experience analytics category.
+  - `[MetricValues <IMicrosoftGraphUserExperienceAnalyticsMetric[]>]`: The metric values for the user experience analytics category. Read-only.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[Unit <String>]`: The unit of the user experience analytics metric.
+    - `[Unit <String>]`: The unit of the user experience analytics metric. Examples: none, percentage, count, seconds, score.
     - `[Value <Double?>]`: The value of the user experience analytics metric.
 
 `BATTERYHEALTHMETRICS <IMicrosoftGraphUserExperienceAnalyticsCategory>`: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Insights <IMicrosoftGraphUserExperienceAnalyticsInsight[]>]`: The insights for the user experience analytics category.
+  - `[Insights <IMicrosoftGraphUserExperienceAnalyticsInsight[]>]`: The insights for the category. Read-only.
     - `[InsightId <String>]`: The unique identifier of the user experience analytics insight.
     - `[Severity <UserExperienceAnalyticsInsightSeverity?>]`: Indicates severity of insights. Possible values are: None, Informational, Warning, Error.
-    - `[UserExperienceAnalyticsMetricId <String>]`: The unique identifier of the user experience analytics insight.
+    - `[UserExperienceAnalyticsMetricId <String>]`: The unique identifier of the user experience analytics metric.
     - `[Values <IMicrosoftGraphUserExperienceAnalyticsInsightValue[]>]`: The value of the user experience analytics insight.
-  - `[MetricValues <IMicrosoftGraphUserExperienceAnalyticsMetric[]>]`: The metric values for the user experience analytics category.
+  - `[MetricValues <IMicrosoftGraphUserExperienceAnalyticsMetric[]>]`: The metric values for the user experience analytics category. Read-only.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[Unit <String>]`: The unit of the user experience analytics metric.
+    - `[Unit <String>]`: The unit of the user experience analytics metric. Examples: none, percentage, count, seconds, score.
     - `[Value <Double?>]`: The value of the user experience analytics metric.
 
 `BESTPRACTICESMETRICS <IMicrosoftGraphUserExperienceAnalyticsCategory>`: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Insights <IMicrosoftGraphUserExperienceAnalyticsInsight[]>]`: The insights for the user experience analytics category.
+  - `[Insights <IMicrosoftGraphUserExperienceAnalyticsInsight[]>]`: The insights for the category. Read-only.
     - `[InsightId <String>]`: The unique identifier of the user experience analytics insight.
     - `[Severity <UserExperienceAnalyticsInsightSeverity?>]`: Indicates severity of insights. Possible values are: None, Informational, Warning, Error.
-    - `[UserExperienceAnalyticsMetricId <String>]`: The unique identifier of the user experience analytics insight.
+    - `[UserExperienceAnalyticsMetricId <String>]`: The unique identifier of the user experience analytics metric.
     - `[Values <IMicrosoftGraphUserExperienceAnalyticsInsightValue[]>]`: The value of the user experience analytics insight.
-  - `[MetricValues <IMicrosoftGraphUserExperienceAnalyticsMetric[]>]`: The metric values for the user experience analytics category.
+  - `[MetricValues <IMicrosoftGraphUserExperienceAnalyticsMetric[]>]`: The metric values for the user experience analytics category. Read-only.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[Unit <String>]`: The unit of the user experience analytics metric.
+    - `[Unit <String>]`: The unit of the user experience analytics metric. Examples: none, percentage, count, seconds, score.
     - `[Value <Double?>]`: The value of the user experience analytics metric.
 
 `BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsBaseline>`: The user experience analytics baseline entity contains baseline values against which to compare the user experience analytics scores.
@@ -337,21 +358,21 @@ To create the parameters described below, construct a hash table containing the 
   - `[AppHealthMetrics <IMicrosoftGraphUserExperienceAnalyticsCategory>]`: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[Insights <IMicrosoftGraphUserExperienceAnalyticsInsight[]>]`: The insights for the user experience analytics category.
+    - `[Insights <IMicrosoftGraphUserExperienceAnalyticsInsight[]>]`: The insights for the category. Read-only.
       - `[InsightId <String>]`: The unique identifier of the user experience analytics insight.
       - `[Severity <UserExperienceAnalyticsInsightSeverity?>]`: Indicates severity of insights. Possible values are: None, Informational, Warning, Error.
-      - `[UserExperienceAnalyticsMetricId <String>]`: The unique identifier of the user experience analytics insight.
+      - `[UserExperienceAnalyticsMetricId <String>]`: The unique identifier of the user experience analytics metric.
       - `[Values <IMicrosoftGraphUserExperienceAnalyticsInsightValue[]>]`: The value of the user experience analytics insight.
-    - `[MetricValues <IMicrosoftGraphUserExperienceAnalyticsMetric[]>]`: The metric values for the user experience analytics category.
+    - `[MetricValues <IMicrosoftGraphUserExperienceAnalyticsMetric[]>]`: The metric values for the user experience analytics category. Read-only.
       - `[Id <String>]`: The unique identifier for an entity. Read-only.
-      - `[Unit <String>]`: The unit of the user experience analytics metric.
+      - `[Unit <String>]`: The unit of the user experience analytics metric. Examples: none, percentage, count, seconds, score.
       - `[Value <Double?>]`: The value of the user experience analytics metric.
   - `[BatteryHealthMetrics <IMicrosoftGraphUserExperienceAnalyticsCategory>]`: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
   - `[BestPracticesMetrics <IMicrosoftGraphUserExperienceAnalyticsCategory>]`: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
-  - `[CreatedDateTime <DateTime?>]`: The date the custom baseline was created.
+  - `[CreatedDateTime <DateTime?>]`: The date the custom baseline was created. The value cannot be modified and is automatically populated when the baseline is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Returned by default.
   - `[DeviceBootPerformanceMetrics <IMicrosoftGraphUserExperienceAnalyticsCategory>]`: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
-  - `[DisplayName <String>]`: The name of the user experience analytics baseline.
-  - `[IsBuiltIn <Boolean?>]`: Signifies if the current baseline is the commercial median baseline or a custom baseline.
+  - `[DisplayName <String>]`: The name of the baseline.
+  - `[IsBuiltIn <Boolean?>]`: When TRUE, indicates the current baseline is the commercial median baseline. When FALSE, indicates it is a custom baseline. FALSE by default.
   - `[RebootAnalyticsMetrics <IMicrosoftGraphUserExperienceAnalyticsCategory>]`: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
   - `[ResourcePerformanceMetrics <IMicrosoftGraphUserExperienceAnalyticsCategory>]`: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
   - `[WorkFromAnywhereMetrics <IMicrosoftGraphUserExperienceAnalyticsCategory>]`: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
@@ -359,58 +380,54 @@ To create the parameters described below, construct a hash table containing the 
 `DEVICEBOOTPERFORMANCEMETRICS <IMicrosoftGraphUserExperienceAnalyticsCategory>`: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Insights <IMicrosoftGraphUserExperienceAnalyticsInsight[]>]`: The insights for the user experience analytics category.
+  - `[Insights <IMicrosoftGraphUserExperienceAnalyticsInsight[]>]`: The insights for the category. Read-only.
     - `[InsightId <String>]`: The unique identifier of the user experience analytics insight.
     - `[Severity <UserExperienceAnalyticsInsightSeverity?>]`: Indicates severity of insights. Possible values are: None, Informational, Warning, Error.
-    - `[UserExperienceAnalyticsMetricId <String>]`: The unique identifier of the user experience analytics insight.
+    - `[UserExperienceAnalyticsMetricId <String>]`: The unique identifier of the user experience analytics metric.
     - `[Values <IMicrosoftGraphUserExperienceAnalyticsInsightValue[]>]`: The value of the user experience analytics insight.
-  - `[MetricValues <IMicrosoftGraphUserExperienceAnalyticsMetric[]>]`: The metric values for the user experience analytics category.
+  - `[MetricValues <IMicrosoftGraphUserExperienceAnalyticsMetric[]>]`: The metric values for the user experience analytics category. Read-only.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[Unit <String>]`: The unit of the user experience analytics metric.
+    - `[Unit <String>]`: The unit of the user experience analytics metric. Examples: none, percentage, count, seconds, score.
     - `[Value <Double?>]`: The value of the user experience analytics metric.
 
 `REBOOTANALYTICSMETRICS <IMicrosoftGraphUserExperienceAnalyticsCategory>`: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Insights <IMicrosoftGraphUserExperienceAnalyticsInsight[]>]`: The insights for the user experience analytics category.
+  - `[Insights <IMicrosoftGraphUserExperienceAnalyticsInsight[]>]`: The insights for the category. Read-only.
     - `[InsightId <String>]`: The unique identifier of the user experience analytics insight.
     - `[Severity <UserExperienceAnalyticsInsightSeverity?>]`: Indicates severity of insights. Possible values are: None, Informational, Warning, Error.
-    - `[UserExperienceAnalyticsMetricId <String>]`: The unique identifier of the user experience analytics insight.
+    - `[UserExperienceAnalyticsMetricId <String>]`: The unique identifier of the user experience analytics metric.
     - `[Values <IMicrosoftGraphUserExperienceAnalyticsInsightValue[]>]`: The value of the user experience analytics insight.
-  - `[MetricValues <IMicrosoftGraphUserExperienceAnalyticsMetric[]>]`: The metric values for the user experience analytics category.
+  - `[MetricValues <IMicrosoftGraphUserExperienceAnalyticsMetric[]>]`: The metric values for the user experience analytics category. Read-only.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[Unit <String>]`: The unit of the user experience analytics metric.
+    - `[Unit <String>]`: The unit of the user experience analytics metric. Examples: none, percentage, count, seconds, score.
     - `[Value <Double?>]`: The value of the user experience analytics metric.
 
 `RESOURCEPERFORMANCEMETRICS <IMicrosoftGraphUserExperienceAnalyticsCategory>`: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Insights <IMicrosoftGraphUserExperienceAnalyticsInsight[]>]`: The insights for the user experience analytics category.
+  - `[Insights <IMicrosoftGraphUserExperienceAnalyticsInsight[]>]`: The insights for the category. Read-only.
     - `[InsightId <String>]`: The unique identifier of the user experience analytics insight.
     - `[Severity <UserExperienceAnalyticsInsightSeverity?>]`: Indicates severity of insights. Possible values are: None, Informational, Warning, Error.
-    - `[UserExperienceAnalyticsMetricId <String>]`: The unique identifier of the user experience analytics insight.
+    - `[UserExperienceAnalyticsMetricId <String>]`: The unique identifier of the user experience analytics metric.
     - `[Values <IMicrosoftGraphUserExperienceAnalyticsInsightValue[]>]`: The value of the user experience analytics insight.
-  - `[MetricValues <IMicrosoftGraphUserExperienceAnalyticsMetric[]>]`: The metric values for the user experience analytics category.
+  - `[MetricValues <IMicrosoftGraphUserExperienceAnalyticsMetric[]>]`: The metric values for the user experience analytics category. Read-only.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[Unit <String>]`: The unit of the user experience analytics metric.
+    - `[Unit <String>]`: The unit of the user experience analytics metric. Examples: none, percentage, count, seconds, score.
     - `[Value <Double?>]`: The value of the user experience analytics metric.
 
 `WORKFROMANYWHEREMETRICS <IMicrosoftGraphUserExperienceAnalyticsCategory>`: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Insights <IMicrosoftGraphUserExperienceAnalyticsInsight[]>]`: The insights for the user experience analytics category.
+  - `[Insights <IMicrosoftGraphUserExperienceAnalyticsInsight[]>]`: The insights for the category. Read-only.
     - `[InsightId <String>]`: The unique identifier of the user experience analytics insight.
     - `[Severity <UserExperienceAnalyticsInsightSeverity?>]`: Indicates severity of insights. Possible values are: None, Informational, Warning, Error.
-    - `[UserExperienceAnalyticsMetricId <String>]`: The unique identifier of the user experience analytics insight.
+    - `[UserExperienceAnalyticsMetricId <String>]`: The unique identifier of the user experience analytics metric.
     - `[Values <IMicrosoftGraphUserExperienceAnalyticsInsightValue[]>]`: The value of the user experience analytics insight.
-  - `[MetricValues <IMicrosoftGraphUserExperienceAnalyticsMetric[]>]`: The metric values for the user experience analytics category.
+  - `[MetricValues <IMicrosoftGraphUserExperienceAnalyticsMetric[]>]`: The metric values for the user experience analytics category. Read-only.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[Unit <String>]`: The unit of the user experience analytics metric.
+    - `[Unit <String>]`: The unit of the user experience analytics metric. Examples: none, percentage, count, seconds, score.
     - `[Value <Double?>]`: The value of the user experience analytics metric.
 
 ## RELATED LINKS
-[New-MgDeviceManagementUserExperienceAnalyticBaseline](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticBaseline?view=graph-powershell-v1.0)
-
-## RELATED LINKS
-[New-MgDeviceManagementUserExperienceAnalyticBaseline](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticBaseline?view=graph-powershell-v1.0)
 

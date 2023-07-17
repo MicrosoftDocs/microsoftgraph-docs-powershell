@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityattacksimulationpayload
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property payloads in security
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSecurityAttackSimulationPayload](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityAttackSimulationPayload?view=graph-powershell-v1.0)
 
 ## SYNTAX
 
@@ -24,13 +21,19 @@ Update-MgBetaSecurityAttackSimulationPayload -PayloadId <String> [-AdditionalPro
  [-IsCurrentEvent] [-Language <String>] [-LastModifiedBy <IMicrosoftGraphEmailIdentity>]
  [-LastModifiedDateTime <DateTime>] [-PayloadTags <String[]>] [-Platform <String>]
  [-PredictedCompromiseRate <Double>] [-SimulationAttackType <String>] [-Source <String>] [-Status <String>]
- [-Technique <String>] [-Theme <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Technique <String>] [-Theme <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaSecurityAttackSimulationPayload -PayloadId <String> -BodyParameter <IMicrosoftGraphPayload>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaSecurityAttackSimulationPayload -InputObject <ISecurityIdentity>
+ -BodyParameter <IMicrosoftGraphPayload> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -42,17 +45,27 @@ Update-MgBetaSecurityAttackSimulationPayload -InputObject <ISecurityIdentity>
  [-IsAutomated] [-IsControversial] [-IsCurrentEvent] [-Language <String>]
  [-LastModifiedBy <IMicrosoftGraphEmailIdentity>] [-LastModifiedDateTime <DateTime>] [-PayloadTags <String[]>]
  [-Platform <String>] [-PredictedCompromiseRate <Double>] [-SimulationAttackType <String>] [-Source <String>]
- [-Status <String>] [-Technique <String>] [-Theme <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaSecurityAttackSimulationPayload -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphPayload> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Status <String>] [-Technique <String>] [-Theme <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property payloads in security
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -60,7 +73,7 @@ Update the navigation property payloads in security
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -76,7 +89,7 @@ payload
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPayload
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPayload
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -91,7 +104,7 @@ Accept wildcard characters: False
 payloadBrand
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -106,7 +119,7 @@ Accept wildcard characters: False
 payloadComplexity
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -122,7 +135,7 @@ emailIdentity
 To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEmailIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEmailIdentity
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -137,7 +150,7 @@ Accept wildcard characters: False
 Date and time when the attack simulation and training campaign payload.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -152,7 +165,7 @@ Accept wildcard characters: False
 Description of the attack simulation and training campaign payload.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -168,7 +181,7 @@ payloadDetail
 To construct, see NOTES section for DETAIL properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPayloadDetail
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPayloadDetail
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -184,7 +197,7 @@ Display name of the attack simulation and training campaign payload.
 Supports $filter and $orderby.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -200,7 +213,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -215,7 +228,7 @@ Accept wildcard characters: False
 payloadIndustry
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -231,8 +244,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISecurityIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -247,7 +260,7 @@ Indicates whether the attack simulation and training campaign payload was create
 Supports $filter and $orderby.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -262,7 +275,7 @@ Accept wildcard characters: False
 Indicates whether the payload is controversial.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -277,7 +290,7 @@ Accept wildcard characters: False
 Indicates whether the payload is from any recent event.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -292,7 +305,7 @@ Accept wildcard characters: False
 Payload language.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -308,7 +321,7 @@ emailIdentity
 To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEmailIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEmailIdentity
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -325,7 +338,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -340,8 +353,8 @@ Accept wildcard characters: False
 The unique identifier of payload
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -355,7 +368,7 @@ Accept wildcard characters: False
 Free text tags for a payload.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -370,7 +383,7 @@ Accept wildcard characters: False
 payloadDeliveryPlatform
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -385,7 +398,7 @@ Accept wildcard characters: False
 Predicted probability for a payload to phish a targeted user.
 
 ```yaml
-Type: Double
+Type: System.Double
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -400,7 +413,7 @@ Accept wildcard characters: False
 simulationAttackType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -415,7 +428,7 @@ Accept wildcard characters: False
 simulationContentSource
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -430,7 +443,7 @@ Accept wildcard characters: False
 simulationContentStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -445,7 +458,7 @@ Accept wildcard characters: False
 simulationAttackTechnique
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -460,7 +473,7 @@ Accept wildcard characters: False
 payloadTheme
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -475,7 +488,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -491,7 +504,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -508,10 +521,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPayload
+
 ### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPayload
+
 ## NOTES
 
 ALIASES
@@ -593,9 +609,13 @@ To create the parameters described below, construct a hash table containing the 
   - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator
   - `[AttackSimulationOperationId <String>]`: The unique identifier of attackSimulationOperation
   - `[AuthoredNoteId <String>]`: The unique identifier of authoredNote
+  - `[AuthorityTemplateId <String>]`: The unique identifier of authorityTemplate
   - `[CaseOperationId <String>]`: The unique identifier of caseOperation
+  - `[CategoryTemplateId <String>]`: The unique identifier of categoryTemplate
+  - `[CitationTemplateId <String>]`: The unique identifier of citationTemplate
   - `[CloudAppSecurityProfileId <String>]`: The unique identifier of cloudAppSecurityProfile
   - `[DataSourceId <String>]`: The unique identifier of dataSource
+  - `[DepartmentTemplateId <String>]`: The unique identifier of departmentTemplate
   - `[DispositionReviewStageId <String>]`: The unique identifier of dispositionReviewStage
   - `[DomainSecurityProfileId <String>]`: The unique identifier of domainSecurityProfile
   - `[EdiscoveryCaseId <String>]`: The unique identifier of ediscoveryCase
@@ -610,6 +630,9 @@ To create the parameters described below, construct a hash table containing the 
   - `[EdiscoverySearchId <String>]`: The unique identifier of ediscoverySearch
   - `[EmailThreatSubmissionId <String>]`: The unique identifier of emailThreatSubmission
   - `[EmailThreatSubmissionPolicyId <String>]`: The unique identifier of emailThreatSubmissionPolicy
+  - `[EndUserNotificationDetailId <String>]`: The unique identifier of endUserNotificationDetail
+  - `[EndUserNotificationId <String>]`: The unique identifier of endUserNotification
+  - `[FilePlanReferenceTemplateId <String>]`: The unique identifier of filePlanReferenceTemplate
   - `[FileSecurityProfileId <String>]`: The unique identifier of fileSecurityProfile
   - `[FileThreatSubmissionId <String>]`: The unique identifier of fileThreatSubmission
   - `[HostComponentId <String>]`: The unique identifier of hostComponent
@@ -621,6 +644,9 @@ To create the parameters described below, construct a hash table containing the 
   - `[IncidentId <String>]`: The unique identifier of incident
   - `[IntelligenceProfileId <String>]`: The unique identifier of intelligenceProfile
   - `[IntelligenceProfileIndicatorId <String>]`: The unique identifier of intelligenceProfileIndicator
+  - `[LandingPageDetailId <String>]`: The unique identifier of landingPageDetail
+  - `[LandingPageId <String>]`: The unique identifier of landingPage
+  - `[LoginPageId <String>]`: The unique identifier of loginPage
   - `[PassiveDnsRecordId <String>]`: The unique identifier of passiveDnsRecord
   - `[PayloadId <String>]`: The unique identifier of payload
   - `[ProviderTenantSettingId <String>]`: The unique identifier of providerTenantSetting
@@ -635,8 +661,12 @@ To create the parameters described below, construct a hash table containing the 
   - `[SimulationAutomationRunId <String>]`: The unique identifier of simulationAutomationRun
   - `[SimulationId <String>]`: The unique identifier of simulation
   - `[SiteSourceId <String>]`: The unique identifier of siteSource
+  - `[SubCategoryTemplateId <String>]`: The unique identifier of subCategoryTemplate
+  - `[SubdomainId <String>]`: The unique identifier of subdomain
   - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
   - `[TiIndicatorId <String>]`: The unique identifier of tiIndicator
+  - `[TrainingId <String>]`: The unique identifier of training
+  - `[TrainingLanguageDetailId <String>]`: The unique identifier of trainingLanguageDetail
   - `[UnifiedGroupSourceId <String>]`: The unique identifier of unifiedGroupSource
   - `[UrlThreatSubmissionId <String>]`: The unique identifier of urlThreatSubmission
   - `[UserId <String>]`: The unique identifier of user
@@ -652,5 +682,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Email <String>]`: Email address of the user.
 
 ## RELATED LINKS
-[Update-MgSecurityAttackSimulationPayload](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityAttackSimulationPayload?view=graph-powershell-v1.0)
 

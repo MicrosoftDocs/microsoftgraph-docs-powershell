@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Sites
-Module Guid: 7c8a8898-d407-46e4-974d-09db29e4c1b0
+Module Guid: fe4fea0f-addd-4233-a5ce-b2769cdd6e3a
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites
 Help Version: 1.0.0.0
 Locale: en-US
@@ -21,7 +21,7 @@ Add a copy of a [content type][contentType] from a [site][site] to a [list][list
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
+For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
 
 ### [Add-MgBetaSiteListContentTypeCopy](Add-MgBetaSiteListContentTypeCopy.md)
 Add a copy of a [content type][contentType] from a [site][site] to a [list][list].
@@ -30,7 +30,7 @@ Add a copy of a [content type][contentType] from a [site][site] to a [list][list
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
+For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
 
 ### [Confirm-MgBetaSiteInformationProtectionSignature](Confirm-MgBetaSiteInformationProtectionSignature.md)
 Invoke action verifySignature
@@ -43,9 +43,10 @@ The file can then be added as a default file or template via a POST operation.
 Copy a file to a default content location in a [content type][contentType].
 The file can then be added as a default file or template via a POST operation.
 
-### [Copy-MgBetaSiteListContentTypeToDefaultContentLocation](Copy-MgBetaSiteListContentTypeToDefaultContentLocation.md)
-Copy a file to a default content location in a [content type][contentType].
-The file can then be added as a default file or template via a POST operation.
+### [Copy-MgBetaSiteOnenoteNotebook](Copy-MgBetaSiteOnenoteNotebook.md)
+Copies a notebook to the Notebooks folder in the destination Documents library.
+The folder is created if it doesn't exist.
+For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
 ### [Copy-MgBetaSiteOnenoteNotebookSectionGroupSectionPageToSection](Copy-MgBetaSiteOnenoteNotebookSectionGroupSectionPageToSection.md)
 Copy a page to a specific section.
@@ -71,9 +72,9 @@ For Copy operations, you follow an asynchronous calling pattern:  First call the
 Copies a section to a specific section group.
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
-### [Copy-MgBetaSiteOnenoteNotebookSectionToSectionGroup](Copy-MgBetaSiteOnenoteNotebookSectionToSectionGroup.md)
-Copies a section to a specific section group.
-For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+### [Copy-MgBetaSiteOnenotePageToSection](Copy-MgBetaSiteOnenotePageToSection.md)
+Copy a page to a specific section.
+For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
 ### [Copy-MgBetaSiteOnenoteSectionGroupSectionPageToSection](Copy-MgBetaSiteOnenoteSectionGroupSectionPageToSection.md)
 Copy a page to a specific section.
@@ -91,13 +92,19 @@ For Copy operations, you follow an asynchronous calling pattern:  First call the
 Copy a page to a specific section.
 For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
-### [Copy-MgBetaSiteOnenoteSectionPageToSection](Copy-MgBetaSiteOnenoteSectionPageToSection.md)
-Copy a page to a specific section.
-For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+### [Copy-MgBetaSiteOnenoteSectionToNotebook](Copy-MgBetaSiteOnenoteSectionToNotebook.md)
+Copies a section to a specific notebook.
+For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
-### [Copy-MgBetaSiteOnenoteSectionPageToSection](Copy-MgBetaSiteOnenoteSectionPageToSection.md)
-Copy a page to a specific section.
-For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+### [Copy-MgBetaSiteOnenoteSectionToSectionGroup](Copy-MgBetaSiteOnenoteSectionToSectionGroup.md)
+Copies a section to a specific section group.
+For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+
+### [Get-MgBetaAdminSharepoint](Get-MgBetaAdminSharepoint.md)
+Get sharepoint from admin
+
+### [Get-MgBetaAdminSharepointSetting](Get-MgBetaAdminSharepointSetting.md)
+Get the tenant-level settings for SharePoint and OneDrive.
 
 ### [Get-MgBetaGroupSite](Get-MgBetaGroupSite.md)
 The list of SharePoint sites in this group.
@@ -289,7 +296,7 @@ For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
 ### [Get-MgBetaGroupSiteList](Get-MgBetaGroupSiteList.md)
-Return the metadata for a [list][].
+Get the list of richLongRunningOperations associated with a list.
 
 ### [Get-MgBetaGroupSiteListActivity](Get-MgBetaGroupSiteListActivity.md)
 The recent activities that took place within this list.
@@ -1168,7 +1175,7 @@ For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
 ### [Get-MgBetaSiteList](Get-MgBetaSiteList.md)
-Return the metadata for a [list][].
+Get the list of richLongRunningOperations associated with a list.
 
 ### [Get-MgBetaSiteListActivity](Get-MgBetaSiteListActivity.md)
 The recent activities that took place within this list.
@@ -1303,7 +1310,14 @@ The set of subscriptions on the list.
 ### [Get-MgBetaSiteListSubscriptionCount](Get-MgBetaSiteListSubscriptionCount.md)
 Get the number of the resource
 
-### [Get-MgBetaSiteListSubscriptionCount](Get-MgBetaSiteListSubscriptionCount.md)
+### [Get-MgBetaSiteOnenoteNotebookFromWebUrl](Get-MgBetaSiteOnenoteNotebookFromWebUrl.md)
+Retrieve the properties and relationships of a notebook object by using its URL path.
+The location can be user notebooks on Microsoft 365, group notebooks, or SharePoint site-hosted team notebooks on Microsoft 365.
+
+### [Get-MgBetaSiteOperation](Get-MgBetaSiteOperation.md)
+Read the properties of a richLongRunningOperation object.
+
+### [Get-MgBetaSiteOperationCount](Get-MgBetaSiteOperationCount.md)
 Get the number of the resource
 
 ### [Get-MgBetaSitePage](Get-MgBetaSitePage.md)
@@ -1891,7 +1905,7 @@ Create new navigation property to operations for groups
 Create a new [sitePage][] in the site pages [list][] in a [site][].
 
 ### [New-MgBetaGroupSitePageCanvaLayoutHorizontalSection](New-MgBetaGroupSitePageCanvaLayoutHorizontalSection.md)
-Create new navigation property to horizontalSections for groups
+Create a horizontalSection object in a given sitePage.
 
 ### [New-MgBetaGroupSitePageCanvaLayoutHorizontalSectionColumn](New-MgBetaGroupSitePageCanvaLayoutHorizontalSectionColumn.md)
 Create new navigation property to columns for groups
@@ -2042,11 +2056,14 @@ Create new navigation property to operations for sites
 ### [New-MgBetaSiteListSubscription](New-MgBetaSiteListSubscription.md)
 Create new navigation property to subscriptions for sites
 
+### [New-MgBetaSiteOperation](New-MgBetaSiteOperation.md)
+Create new navigation property to operations for sites
+
 ### [New-MgBetaSitePage](New-MgBetaSitePage.md)
 Create a new [sitePage][] in the site pages [list][] in a [site][].
 
 ### [New-MgBetaSitePageCanvaLayoutHorizontalSection](New-MgBetaSitePageCanvaLayoutHorizontalSection.md)
-Create new navigation property to horizontalSections for sites
+Create a horizontalSection object in a given sitePage.
 
 ### [New-MgBetaSitePageCanvaLayoutHorizontalSectionColumn](New-MgBetaSitePageCanvaLayoutHorizontalSectionColumn.md)
 Create new navigation property to columns for sites
@@ -2146,6 +2163,12 @@ Publishes a [contentType][] present in a content type hub site.
 
 ### [Publish-MgBetaSitePage](Publish-MgBetaSitePage.md)
 Invoke action publish
+
+### [Remove-MgBetaAdminSharepoint](Remove-MgBetaAdminSharepoint.md)
+Delete navigation property sharepoint for admin
+
+### [Remove-MgBetaAdminSharepointSetting](Remove-MgBetaAdminSharepointSetting.md)
+Delete navigation property settings for admin
 
 ### [Remove-MgBetaGroupSiteAnalytic](Remove-MgBetaGroupSiteAnalytic.md)
 Delete navigation property analytics for groups
@@ -2459,6 +2482,9 @@ Delete navigation property operations for sites
 ### [Remove-MgBetaSiteListSubscription](Remove-MgBetaSiteListSubscription.md)
 Delete navigation property subscriptions for sites
 
+### [Remove-MgBetaSiteOperation](Remove-MgBetaSiteOperation.md)
+Delete navigation property operations for sites
+
 ### [Remove-MgBetaSitePage](Remove-MgBetaSitePage.md)
 Delete navigation property pages for sites
 
@@ -2651,6 +2677,12 @@ Unpublish a [contentType][] from a content type hub site.
 ### [Unpublish-MgBetaSiteListContentType](Unpublish-MgBetaSiteListContentType.md)
 Unpublish a [contentType][] from a content type hub site.
 
+### [Update-MgBetaAdminSharepoint](Update-MgBetaAdminSharepoint.md)
+Update the navigation property sharepoint in admin
+
+### [Update-MgBetaAdminSharepointSetting](Update-MgBetaAdminSharepointSetting.md)
+Update one or more tenant-level settings for SharePoint and OneDrive.
+
 ### [Update-MgBetaGroupSite](Update-MgBetaGroupSite.md)
 Update the navigation property sites in groups
 
@@ -2817,7 +2849,7 @@ Update the properties of a sitePage object.
 Update the navigation property canvasLayout in groups
 
 ### [Update-MgBetaGroupSitePageCanvaLayoutHorizontalSection](Update-MgBetaGroupSitePageCanvaLayoutHorizontalSection.md)
-Update the navigation property horizontalSections in groups
+Update the properties of a horizontalSection object.
 
 ### [Update-MgBetaGroupSitePageCanvaLayoutHorizontalSectionColumn](Update-MgBetaGroupSitePageCanvaLayoutHorizontalSectionColumn.md)
 Update the navigation property columns in groups
@@ -2826,7 +2858,9 @@ Update the navigation property columns in groups
 Update the navigation property webparts in groups
 
 ### [Update-MgBetaGroupSitePageCanvaLayoutVerticalSection](Update-MgBetaGroupSitePageCanvaLayoutVerticalSection.md)
-Update the navigation property verticalSection in groups
+Create a verticalSection object in a given sitePage.
+A sitePage can only have one vertical section.
+If a vertical section already exists, this method returns a `409 Conflict` response code.
 
 ### [Update-MgBetaGroupSitePageCanvaLayoutVerticalSectionWebpart](Update-MgBetaGroupSitePageCanvaLayoutVerticalSectionWebpart.md)
 Update the navigation property webparts in groups
@@ -3020,6 +3054,9 @@ Invoke action onenotePatchContent
 ### [Update-MgBetaSiteOnenoteSectionPageContent](Update-MgBetaSiteOnenoteSectionPageContent.md)
 Invoke action onenotePatchContent
 
+### [Update-MgBetaSiteOperation](Update-MgBetaSiteOperation.md)
+Update the navigation property operations in sites
+
 ### [Update-MgBetaSitePage](Update-MgBetaSitePage.md)
 Update the properties of a sitePage object.
 
@@ -3027,7 +3064,7 @@ Update the properties of a sitePage object.
 Update the navigation property canvasLayout in sites
 
 ### [Update-MgBetaSitePageCanvaLayoutHorizontalSection](Update-MgBetaSitePageCanvaLayoutHorizontalSection.md)
-Update the navigation property horizontalSections in sites
+Update the properties of a horizontalSection object.
 
 ### [Update-MgBetaSitePageCanvaLayoutHorizontalSectionColumn](Update-MgBetaSitePageCanvaLayoutHorizontalSectionColumn.md)
 Update the navigation property columns in sites
@@ -3036,7 +3073,9 @@ Update the navigation property columns in sites
 Update the navigation property webparts in sites
 
 ### [Update-MgBetaSitePageCanvaLayoutVerticalSection](Update-MgBetaSitePageCanvaLayoutVerticalSection.md)
-Update the navigation property verticalSection in sites
+Create a verticalSection object in a given sitePage.
+A sitePage can only have one vertical section.
+If a vertical section already exists, this method returns a `409 Conflict` response code.
 
 ### [Update-MgBetaSitePageCanvaLayoutVerticalSectionWebpart](Update-MgBetaSitePageCanvaLayoutVerticalSectionWebpart.md)
 Update the navigation property webparts in sites

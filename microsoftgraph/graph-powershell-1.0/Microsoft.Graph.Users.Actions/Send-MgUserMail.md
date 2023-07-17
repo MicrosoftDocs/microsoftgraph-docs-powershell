@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Users.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/send-mgusermail
 schema: 2.0.0
@@ -15,35 +15,32 @@ This method saves the message in the **Sent Items** folder.
 Alternatively, create a draft message to send later.
 To learn more about the steps involved in the backend before a mail is delivered to recipients, see here.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Send-MgBetaUserMail](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Send-MgBetaUserMail?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### SendExpanded (Default)
 ```
 Send-MgUserMail -UserId <String> [-AdditionalProperties <Hashtable>] [-Message <IMicrosoftGraphMessage>]
- [-SaveToSentItems] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SaveToSentItems] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Send
 ```
 Send-MgUserMail -UserId <String>
  -BodyParameter <IComponentsVsh1S1RequestbodiesSendmailrequestbodyContentApplicationJsonSchema> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### SendViaIdentityExpanded
-```
-Send-MgUserMail -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-Message <IMicrosoftGraphMessage>] [-SaveToSentItems] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### SendViaIdentity
 ```
 Send-MgUserMail -InputObject <IUsersActionsIdentity>
  -BodyParameter <IComponentsVsh1S1RequestbodiesSendmailrequestbodyContentApplicationJsonSchema> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### SendViaIdentityExpanded
+```
+Send-MgUserMail -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
+ [-Message <IMicrosoftGraphMessage>] [-SaveToSentItems] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -56,7 +53,7 @@ To learn more about the steps involved in the backend before a mail is delivered
 
 ## EXAMPLES
 
-### Example 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{
@@ -87,7 +84,9 @@ $params = @{
 Send-MgUserMail -UserId $userId -BodyParameter $params
 ```
 
-### Example 2
+
+
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{
@@ -118,7 +117,9 @@ $params = @{
 Send-MgUserMail -UserId $userId -BodyParameter $params
 ```
 
-### Example 3
+
+
+### -------------------------- EXAMPLE 3 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{
@@ -151,13 +152,15 @@ $params = @{
 Send-MgUserMail -UserId $userId -BodyParameter $params
 ```
 
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: SendExpanded, SendViaIdentityExpanded
 Aliases:
 
@@ -173,7 +176,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IComponentsVsh1S1RequestbodiesSendmailrequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IComponentsVsh1S1RequestbodiesSendmailrequestbodyContentApplicationJsonSchema
 Parameter Sets: Send, SendViaIdentity
 Aliases:
 
@@ -189,8 +192,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
-Parameter Sets: SendViaIdentityExpanded, SendViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+Parameter Sets: SendViaIdentity, SendViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -205,7 +208,7 @@ message
 To construct, see NOTES section for MESSAGE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMessage
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMessage
 Parameter Sets: SendExpanded, SendViaIdentityExpanded
 Aliases:
 
@@ -220,7 +223,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -235,7 +238,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: SendExpanded, SendViaIdentityExpanded
 Aliases:
 
@@ -250,8 +253,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: SendExpanded, Send
+Type: System.String
+Parameter Sets: Send, SendExpanded
 Aliases:
 
 Required: True
@@ -265,7 +268,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -281,7 +284,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -298,10 +301,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComponentsVsh1S1RequestbodiesSendmailrequestbodyContentApplicationJsonSchema
+
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -387,6 +393,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
   - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
   - `[ContentTypeId <String>]`: The unique identifier of contentType
+  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
   - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
   - `[DriveId <String>]`: The unique identifier of drive
   - `[DriveItemId <String>]`: The unique identifier of driveItem
@@ -477,8 +484,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebLink <String>]`: 
 
 ## RELATED LINKS
-[Send-MgBetaUserMail](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Send-MgBetaUserMail?view=graph-powershell-beta)
-
-## RELATED LINKS
-[Send-MgBetaUserMail](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Send-MgBetaUserMail?view=graph-powershell-beta)
 

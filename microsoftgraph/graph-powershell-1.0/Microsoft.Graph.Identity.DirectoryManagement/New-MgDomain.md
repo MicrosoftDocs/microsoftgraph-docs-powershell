@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdomain
 schema: 2.0.0
@@ -16,9 +16,6 @@ For example, contoso.com requires verification.
 If a root domain is verified, subdomains of the root domain are automatically verified.
 For example, subdomain.contoso.com is automatically be verified if contoso.com has been verified.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDomain](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDomain?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -29,13 +26,13 @@ New-MgDomain [-AdditionalProperties <Hashtable>] [-AuthenticationType <String>] 
  [-IsDefault] [-IsInitial] [-IsRoot] [-IsVerified] [-Manufacturer <String>] [-Model <String>]
  [-PasswordNotificationWindowInDays <Int32>] [-PasswordValidityPeriodInDays <Int32>]
  [-ServiceConfigurationRecords <IMicrosoftGraphDomainDnsRecord[]>] [-State <IMicrosoftGraphDomainState>]
- [-SupportedServices <String[]>] [-VerificationDnsRecords <IMicrosoftGraphDomainDnsRecord[]>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-SupportedServices <String[]>] [-VerificationDnsRecords <IMicrosoftGraphDomainDnsRecord[]>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDomain -BodyParameter <IMicrosoftGraphDomain> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgDomain -BodyParameter <IMicrosoftGraphDomain> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -47,13 +44,29 @@ For example, contoso.com requires verification.
 If a root domain is verified, subdomains of the root domain are automatically verified.
 For example, subdomain.contoso.com is automatically be verified if contoso.com has been verified.
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -72,7 +85,7 @@ Federated indicates authentication is federated with an identity provider such a
 This property is read-only and is not nullable.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -89,7 +102,7 @@ When the verify action is used, a domain entity is returned in the response.
 The availabilityStatus property of the domain entity in the response is either AvailableImmediately or EmailVerifiedDomainTakeoverScheduled.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -105,7 +118,7 @@ domain
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDomain
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDomain
 Parameter Sets: Create
 Aliases:
 
@@ -124,7 +137,7 @@ For example /domains/{domainId}/domainNameReferences/microsoft.graph.user and /d
 To construct, see NOTES section for DOMAINNAMEREFERENCES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -141,7 +154,7 @@ Supports $expand.
 To construct, see NOTES section for FEDERATIONCONFIGURATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphInternalDomainFederation[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInternalDomainFederation[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -157,7 +170,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -174,7 +187,7 @@ Otherwise, the value is true.
 Not nullable
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -191,7 +204,7 @@ There is only one default domain per company.
 Not nullable
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -208,7 +221,7 @@ There is only one initial domain per company.
 Not nullable
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -225,7 +238,7 @@ Otherwise, false if the domain is a subdomain or unverified.
 Not nullable
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -241,7 +254,7 @@ true if the domain has completed domain ownership verification.
 Not nullable
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -256,7 +269,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -271,7 +284,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -287,7 +300,7 @@ Specifies the number of days before a user receives notification that their pass
 If the property is not set, a default value of 14 days will be used.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -303,7 +316,7 @@ Specifies the length of time that a password is valid before it must be changed.
 If the property is not set, a default value of 90 days will be used.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -321,7 +334,7 @@ Supports $expand.
 To construct, see NOTES section for SERVICECONFIGURATIONRECORDS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDomainDnsRecord[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDomainDnsRecord[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -337,7 +350,7 @@ domainState
 To construct, see NOTES section for STATE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDomainState
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDomainState
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -355,7 +368,7 @@ The values which you can add/remove using Graph API include: Email, OfficeCommun
 Not nullable.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -373,7 +386,7 @@ Supports $expand.
 To construct, see NOTES section for VERIFICATIONDNSRECORDS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDomainDnsRecord[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDomainDnsRecord[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -388,7 +401,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -404,7 +417,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -421,9 +434,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDomain
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDomain
+
 ## NOTES
 
 ALIASES
@@ -529,8 +544,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Ttl <Int32?>]`: Value to use when configuring the time-to-live (ttl) property of the DNS record at the DNS host. Not nullable.
 
 ## RELATED LINKS
-[New-MgBetaDomain](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDomain?view=graph-powershell-beta)
-
-## RELATED LINKS
-[New-MgBetaDomain](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDomain?view=graph-powershell-beta)
 

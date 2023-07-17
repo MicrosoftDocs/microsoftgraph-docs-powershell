@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Financials-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Financials
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancial
 schema: 2.0.0
@@ -10,24 +10,37 @@ schema: 2.0.0
 ## SYNOPSIS
 Update financials
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgFinancial](/powershell/module/Microsoft.Graph.Financials/Update-MgFinancial?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaFinancial [-AdditionalProperties <Hashtable>] [-Companies <IMicrosoftGraphCompany[]>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgBetaFinancial [-AdditionalProperties <Hashtable>] [-Companies <IMicrosoftGraphCompany[]>]
+ [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaFinancial -BodyParameter <IMicrosoftGraphFinancials> [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaFinancial -BodyParameter <IMicrosoftGraphFinancials> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update financials
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -35,7 +48,7 @@ Update financials
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -51,7 +64,7 @@ financials
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphFinancials
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphFinancials
 Parameter Sets: Update
 Aliases:
 
@@ -67,7 +80,22 @@ Accept wildcard characters: False
 To construct, see NOTES section for COMPANIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCompany[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCompany[]
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Id
+.
+
+```yaml
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -82,7 +110,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -98,7 +126,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -115,9 +143,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphFinancials
+
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCompany
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphFinancials
+
 ## NOTES
 
 ALIASES
@@ -1323,8 +1353,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Vendors <IMicrosoftGraphVendor[]>]`: 
 
 ## RELATED LINKS
-[Update-MgFinancial](/powershell/module/Microsoft.Graph.Financials/Update-MgFinancial?view=graph-powershell-v1.0)
-
-## RELATED LINKS
-[Update-MgFinancial](/powershell/module/Microsoft.Graph.Financials/Update-MgFinancial?view=graph-powershell-v1.0)
 

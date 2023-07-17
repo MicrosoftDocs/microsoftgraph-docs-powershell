@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Education-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationmerubric
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new educationRubric object.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgEducationMeRubric](/powershell/module/Microsoft.Graph.Education/New-MgEducationMeRubric?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -20,12 +17,12 @@ Create a new educationRubric object.
 New-MgBetaEducationMeRubric [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-Description <IMicrosoftGraphEducationItemBody>] [-DisplayName <String>] [-Grading <Hashtable>]
  [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-Levels <IMicrosoftGraphRubricLevel[]>]
- [-Qualities <IMicrosoftGraphRubricQuality[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Qualities <IMicrosoftGraphRubricQuality[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaEducationMeRubric -BodyParameter <IMicrosoftGraphEducationRubric> [-WhatIf] [-Confirm]
+New-MgBetaEducationMeRubric -BodyParameter <IMicrosoftGraphEducationRubric> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -34,9 +31,10 @@ Create a new educationRubric object.
 
 ## EXAMPLES
 
-### Example 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
+```
 
 $params = @{
 	displayName = "Example Credit Rubric"
@@ -106,14 +104,13 @@ $params = @{
 
 New-MgBetaEducationMeRubric -BodyParameter $params
 
-```
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -129,7 +126,7 @@ educationRubric
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEducationRubric
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationRubric
 Parameter Sets: Create
 Aliases:
 
@@ -145,7 +142,7 @@ identitySet
 To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -161,7 +158,7 @@ educationItemBody
 To construct, see NOTES section for DESCRIPTION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEducationItemBody
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationItemBody
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -176,7 +173,7 @@ Accept wildcard characters: False
 The name of this rubric.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -191,7 +188,7 @@ Accept wildcard characters: False
 educationAssignmentGradeType
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -207,7 +204,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -223,7 +220,7 @@ identitySet
 To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -239,7 +236,7 @@ The collection of levels making up this rubric.
 To construct, see NOTES section for LEVELS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRubricLevel[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRubricLevel[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -255,7 +252,7 @@ The collection of qualities making up this rubric.
 To construct, see NOTES section for QUALITIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRubricQuality[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRubricQuality[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -270,7 +267,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -286,7 +283,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -303,9 +300,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationRubric
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationRubric
+
 ## NOTES
 
 ALIASES
@@ -322,8 +321,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[Description <IMicrosoftGraphEducationItemBody>]`: educationItemBody
@@ -351,8 +350,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-    - `[Id <String>]`: The identifier of the identity. This property is read-only.
+    - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
@@ -365,8 +364,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-    - `[Id <String>]`: The identifier of the identity. This property is read-only.
+    - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
@@ -392,6 +391,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Weight <Single?>]`: If present, a numerical weight for this quality.  Weights must add up to 100.
 
 ## RELATED LINKS
-[New-MgEducationMeRubric](/powershell/module/Microsoft.Graph.Education/New-MgEducationMeRubric?view=graph-powershell-v1.0)
-
 

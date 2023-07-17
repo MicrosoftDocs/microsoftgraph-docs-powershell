@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritysecurescorecontrolprofile
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update an editable **secureScoreControlProfiles** property within any integrated solution to change various properties, such as **assignedTo** or **tenantNote**.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSecuritySecureScoreControlProfile](/powershell/module/Microsoft.Graph.Security/Update-MgSecuritySecureScoreControlProfile?view=graph-powershell-v1.0)
 
 ## SYNTAX
 
@@ -24,13 +21,19 @@ Update-MgBetaSecuritySecureScoreControlProfile -SecureScoreControlProfileId <Str
  [-ImplementationCost <String>] [-LastModifiedDateTime <DateTime>] [-MaxScore <Double>] [-Rank <Int32>]
  [-Remediation <String>] [-RemediationImpact <String>] [-Service <String>] [-Threats <String[]>]
  [-Tier <String>] [-Title <String>] [-UserImpact <String>]
- [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaSecuritySecureScoreControlProfile -SecureScoreControlProfileId <String>
- -BodyParameter <IMicrosoftGraphSecureScoreControlProfile> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecureScoreControlProfile> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaSecuritySecureScoreControlProfile -InputObject <ISecurityIdentity>
+ -BodyParameter <IMicrosoftGraphSecureScoreControlProfile> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -42,13 +45,7 @@ Update-MgBetaSecuritySecureScoreControlProfile -InputObject <ISecurityIdentity> 
  [-ImplementationCost <String>] [-LastModifiedDateTime <DateTime>] [-MaxScore <Double>] [-Rank <Int32>]
  [-Remediation <String>] [-RemediationImpact <String>] [-Service <String>] [-Threats <String[]>]
  [-Tier <String>] [-Title <String>] [-UserImpact <String>]
- [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaSecuritySecureScoreControlProfile -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecureScoreControlProfile> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -56,9 +53,10 @@ Update an editable **secureScoreControlProfiles** property within any integrated
 
 ## EXAMPLES
 
-### Example 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
+```
 
 $params = @{
 	assignedTo = ""
@@ -74,10 +72,10 @@ $params = @{
 
 Update-MgBetaSecuritySecureScoreControlProfile -SecureScoreControlProfileId $secureScoreControlProfileId -BodyParameter $params
 
-```
-### Example 2
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
+```
 
 $params = @{
 	assignedTo = ""
@@ -93,14 +91,13 @@ $params = @{
 
 Update-MgBetaSecuritySecureScoreControlProfile -SecureScoreControlProfileId $secureScoreControlProfileId -BodyParameter $params
 
-```
 ## PARAMETERS
 
 ### -ActionType
 Control action type (Config, Review, Behavior).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -115,7 +112,7 @@ Accept wildcard characters: False
 URL to where the control can be actioned.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -130,7 +127,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -145,7 +142,7 @@ Accept wildcard characters: False
 GUID string for tenant ID.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -161,7 +158,7 @@ secureScoreControlProfile
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecureScoreControlProfile
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecureScoreControlProfile
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -177,7 +174,7 @@ The collection of compliance information associated with secure score control
 To construct, see NOTES section for COMPLIANCEINFORMATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphComplianceInformation[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphComplianceInformation[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -192,7 +189,7 @@ Accept wildcard characters: False
 Control action category (Account, Data, Device, Apps, Infrastructure).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -208,7 +205,7 @@ Flag to indicate where the tenant has marked a control (ignore, thirdParty, revi
 To construct, see NOTES section for CONTROLSTATEUPDATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecureScoreControlStateUpdate[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecureScoreControlStateUpdate[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -223,7 +220,7 @@ Accept wildcard characters: False
 Flag to indicate if a control is depreciated.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -239,7 +236,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -254,7 +251,7 @@ Accept wildcard characters: False
 Resource cost of implemmentating control (low, moderate, high).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -270,8 +267,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISecurityIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -285,7 +282,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -300,7 +297,7 @@ Accept wildcard characters: False
 Current obtained max score on specified date.
 
 ```yaml
-Type: Double
+Type: System.Double
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -315,7 +312,7 @@ Accept wildcard characters: False
 Microsoft's stack ranking of control.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -330,7 +327,7 @@ Accept wildcard characters: False
 Description of what the control will help remediate.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -345,7 +342,7 @@ Accept wildcard characters: False
 Description of the impact on users of the remediation.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -360,8 +357,8 @@ Accept wildcard characters: False
 The unique identifier of secureScoreControlProfile
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -375,7 +372,7 @@ Accept wildcard characters: False
 Service that owns the control (Exchange, Sharepoint, Azure AD).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -390,7 +387,7 @@ Accept wildcard characters: False
 List of threats the control mitigates (accountBreach,dataDeletion,dataExfiltration,dataSpillage,elevationOfPrivilege,maliciousInsider,passwordCracking,phishingOrWhaling,spoofing).
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -405,7 +402,7 @@ Accept wildcard characters: False
 Control tier (Core, Defense in Depth, Advanced.)
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -420,7 +417,7 @@ Accept wildcard characters: False
 Title of the control.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -435,7 +432,7 @@ Accept wildcard characters: False
 User impact of implementing control (low, moderate, high).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -451,7 +448,7 @@ securityVendorInformation
 To construct, see NOTES section for VENDORINFORMATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityVendorInformation
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityVendorInformation
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -466,7 +463,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -482,7 +479,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -499,10 +496,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecureScoreControlProfile
+
 ### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecureScoreControlProfile
+
 ## NOTES
 
 ALIASES
@@ -568,9 +568,13 @@ To create the parameters described below, construct a hash table containing the 
   - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator
   - `[AttackSimulationOperationId <String>]`: The unique identifier of attackSimulationOperation
   - `[AuthoredNoteId <String>]`: The unique identifier of authoredNote
+  - `[AuthorityTemplateId <String>]`: The unique identifier of authorityTemplate
   - `[CaseOperationId <String>]`: The unique identifier of caseOperation
+  - `[CategoryTemplateId <String>]`: The unique identifier of categoryTemplate
+  - `[CitationTemplateId <String>]`: The unique identifier of citationTemplate
   - `[CloudAppSecurityProfileId <String>]`: The unique identifier of cloudAppSecurityProfile
   - `[DataSourceId <String>]`: The unique identifier of dataSource
+  - `[DepartmentTemplateId <String>]`: The unique identifier of departmentTemplate
   - `[DispositionReviewStageId <String>]`: The unique identifier of dispositionReviewStage
   - `[DomainSecurityProfileId <String>]`: The unique identifier of domainSecurityProfile
   - `[EdiscoveryCaseId <String>]`: The unique identifier of ediscoveryCase
@@ -585,6 +589,9 @@ To create the parameters described below, construct a hash table containing the 
   - `[EdiscoverySearchId <String>]`: The unique identifier of ediscoverySearch
   - `[EmailThreatSubmissionId <String>]`: The unique identifier of emailThreatSubmission
   - `[EmailThreatSubmissionPolicyId <String>]`: The unique identifier of emailThreatSubmissionPolicy
+  - `[EndUserNotificationDetailId <String>]`: The unique identifier of endUserNotificationDetail
+  - `[EndUserNotificationId <String>]`: The unique identifier of endUserNotification
+  - `[FilePlanReferenceTemplateId <String>]`: The unique identifier of filePlanReferenceTemplate
   - `[FileSecurityProfileId <String>]`: The unique identifier of fileSecurityProfile
   - `[FileThreatSubmissionId <String>]`: The unique identifier of fileThreatSubmission
   - `[HostComponentId <String>]`: The unique identifier of hostComponent
@@ -596,6 +603,9 @@ To create the parameters described below, construct a hash table containing the 
   - `[IncidentId <String>]`: The unique identifier of incident
   - `[IntelligenceProfileId <String>]`: The unique identifier of intelligenceProfile
   - `[IntelligenceProfileIndicatorId <String>]`: The unique identifier of intelligenceProfileIndicator
+  - `[LandingPageDetailId <String>]`: The unique identifier of landingPageDetail
+  - `[LandingPageId <String>]`: The unique identifier of landingPage
+  - `[LoginPageId <String>]`: The unique identifier of loginPage
   - `[PassiveDnsRecordId <String>]`: The unique identifier of passiveDnsRecord
   - `[PayloadId <String>]`: The unique identifier of payload
   - `[ProviderTenantSettingId <String>]`: The unique identifier of providerTenantSetting
@@ -610,8 +620,12 @@ To create the parameters described below, construct a hash table containing the 
   - `[SimulationAutomationRunId <String>]`: The unique identifier of simulationAutomationRun
   - `[SimulationId <String>]`: The unique identifier of simulation
   - `[SiteSourceId <String>]`: The unique identifier of siteSource
+  - `[SubCategoryTemplateId <String>]`: The unique identifier of subCategoryTemplate
+  - `[SubdomainId <String>]`: The unique identifier of subdomain
   - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
   - `[TiIndicatorId <String>]`: The unique identifier of tiIndicator
+  - `[TrainingId <String>]`: The unique identifier of training
+  - `[TrainingLanguageDetailId <String>]`: The unique identifier of trainingLanguageDetail
   - `[UnifiedGroupSourceId <String>]`: The unique identifier of unifiedGroupSource
   - `[UrlThreatSubmissionId <String>]`: The unique identifier of urlThreatSubmission
   - `[UserId <String>]`: The unique identifier of user
@@ -628,6 +642,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye). Required
 
 ## RELATED LINKS
-[Update-MgSecuritySecureScoreControlProfile](/powershell/module/Microsoft.Graph.Security/Update-MgSecuritySecureScoreControlProfile?view=graph-powershell-v1.0)
-
 

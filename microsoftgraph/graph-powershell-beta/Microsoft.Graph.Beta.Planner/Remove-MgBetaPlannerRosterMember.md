@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Planner-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/remove-mgbetaplannerrostermember
 schema: 2.0.0
@@ -10,21 +10,18 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a plannerRosterMember object.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgPlannerRosterMember](/powershell/module/Microsoft.Graph.Planner/Remove-MgPlannerRosterMember?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Delete (Default)
 ```
 Remove-MgBetaPlannerRosterMember -PlannerRosterId <String> -PlannerRosterMemberId <String> [-IfMatch <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgBetaPlannerRosterMember -InputObject <IPlannerIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Remove-MgBetaPlannerRosterMember -InputObject <IPlannerIdentity> [-IfMatch <String>] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -32,11 +29,13 @@ Delete a plannerRosterMember object.
 
 ## EXAMPLES
 
-### Example 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Planner
 Remove-MgBetaPlannerRosterMember -PlannerRosterId $plannerRosterId -PlannerRosterMemberId $plannerRosterMemberId
 ```
+
+
 
 ## PARAMETERS
 
@@ -44,7 +43,7 @@ Remove-MgBetaPlannerRosterMember -PlannerRosterId $plannerRosterId -PlannerRoste
 ETag
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -60,7 +59,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IPlannerIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPlannerIdentity
 Parameter Sets: DeleteViaIdentity
 Aliases:
 
@@ -75,7 +74,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -90,7 +89,7 @@ Accept wildcard characters: False
 The unique identifier of plannerRoster
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delete
 Aliases:
 
@@ -105,7 +104,7 @@ Accept wildcard characters: False
 The unique identifier of plannerRosterMember
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delete
 Aliases:
 
@@ -120,7 +119,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -136,7 +135,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -153,9 +152,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPlannerIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -176,5 +177,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgPlannerRosterMember](/powershell/module/Microsoft.Graph.Planner/Remove-MgPlannerRosterMember?view=graph-powershell-v1.0)
 

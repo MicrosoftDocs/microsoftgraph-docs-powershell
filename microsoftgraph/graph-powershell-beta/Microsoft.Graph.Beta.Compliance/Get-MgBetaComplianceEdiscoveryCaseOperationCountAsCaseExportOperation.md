@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Compliance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycaseoperationcountascaseexportoperation
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get the number of the resource
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgComplianceEdiscoveryCaseOperationCountAsCaseExportOperation](/powershell/module/Microsoft.Graph.Compliance/Get-MgComplianceEdiscoveryCaseOperationCountAsCaseExportOperation?view=graph-powershell-v1.0)
 
 ## SYNTAX
 
@@ -30,13 +27,29 @@ Get-MgBetaComplianceEdiscoveryCaseOperationCountAsCaseExportOperation -InputObje
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -CaseId
 The unique identifier of case
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -51,7 +64,7 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -67,7 +80,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IComplianceIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IComplianceIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -82,7 +95,7 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -99,9 +112,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IComplianceIdentity
+
 ## OUTPUTS
 
 ### System.Int32
+
 ## NOTES
 
 ALIASES
@@ -112,6 +127,7 @@ To create the parameters described below, construct a hash table containing the 
 
 
 `INPUTOBJECT <IComplianceIdentity>`: Identity Parameter
+  - `[AuthoredNoteId <String>]`: The unique identifier of authoredNote
   - `[CaseId <String>]`: The unique identifier of case
   - `[CaseOperationId <String>]`: The unique identifier of caseOperation
   - `[CustodianId <String>]`: The unique identifier of custodian
@@ -122,11 +138,12 @@ To create the parameters described below, construct a hash table containing the 
   - `[ReviewSetQueryId <String>]`: The unique identifier of reviewSetQuery
   - `[SiteSourceId <String>]`: The unique identifier of siteSource
   - `[SourceCollectionId <String>]`: The unique identifier of sourceCollection
+  - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
   - `[TagId <String>]`: The unique identifier of tag
   - `[TagId1 <String>]`: The unique identifier of tag
   - `[UnifiedGroupSourceId <String>]`: The unique identifier of unifiedGroupSource
+  - `[UserId <String>]`: The unique identifier of user
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
-[Get-MgComplianceEdiscoveryCaseOperationCountAsCaseExportOperation](/powershell/module/Microsoft.Graph.Compliance/Get-MgComplianceEdiscoveryCaseOperationCountAsCaseExportOperation?view=graph-powershell-v1.0)
 

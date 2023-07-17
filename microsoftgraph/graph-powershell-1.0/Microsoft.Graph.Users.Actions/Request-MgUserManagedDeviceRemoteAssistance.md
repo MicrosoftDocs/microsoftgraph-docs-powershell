@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Users.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/request-mgusermanageddeviceremoteassistance
 schema: 2.0.0
@@ -10,25 +10,38 @@ schema: 2.0.0
 ## SYNOPSIS
 Request remote assistance
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Request-MgBetaUserManagedDeviceRemoteAssistance](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Request-MgBetaUserManagedDeviceRemoteAssistance?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Request (Default)
 ```
-Request-MgUserManagedDeviceRemoteAssistance -ManagedDeviceId <String> -UserId <String> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Request-MgUserManagedDeviceRemoteAssistance -ManagedDeviceId <String> -UserId <String> [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### RequestViaIdentity
 ```
-Request-MgUserManagedDeviceRemoteAssistance -InputObject <IUsersActionsIdentity> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Request-MgUserManagedDeviceRemoteAssistance -InputObject <IUsersActionsIdentity> [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Request remote assistance
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -37,7 +50,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
+Type: Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
 Parameter Sets: RequestViaIdentity
 Aliases:
 
@@ -52,7 +65,7 @@ Accept wildcard characters: False
 The unique identifier of managedDevice
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Request
 Aliases:
 
@@ -67,7 +80,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -82,7 +95,7 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Request
 Aliases:
 
@@ -97,7 +110,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -113,7 +126,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -130,9 +143,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -149,6 +164,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
   - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
   - `[ContentTypeId <String>]`: The unique identifier of contentType
+  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
   - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
   - `[DriveId <String>]`: The unique identifier of drive
   - `[DriveItemId <String>]`: The unique identifier of driveItem
@@ -173,5 +189,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Request-MgBetaUserManagedDeviceRemoteAssistance](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Request-MgBetaUserManagedDeviceRemoteAssistance?view=graph-powershell-beta)
 

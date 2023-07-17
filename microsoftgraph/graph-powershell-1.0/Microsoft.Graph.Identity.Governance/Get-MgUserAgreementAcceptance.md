@@ -1,46 +1,123 @@
 ---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.Governance
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagemententitlementmanagementroleeligibilityscheduleroledefinition
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mguseragreementacceptance
 schema: 2.0.0
 ---
 
-# Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRoleDefinition
+# Get-MgUserAgreementAcceptance
 
 ## SYNOPSIS
-Detailed information for the roleDefinition object that is referenced through the roleDefinitionId property.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserAgreementAcceptance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaUserAgreementAcceptance?view=graph-powershell-beta)
+The user's terms of use acceptance statuses.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
-### Get (Default)
+### List (Default)
 ```
-Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRoleDefinition
- -UnifiedRoleEligibilityScheduleId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
+Get-MgUserAgreementAcceptance -UserId <String> [-ExpandProperty <String[]>] [-Filter <String>]
+ [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-All]
+ [-CountVariable <String>] [-PageSize <Int32>] [<CommonParameters>]
+```
+
+### Get
+```
+Get-MgUserAgreementAcceptance -AgreementAcceptanceId <String> -UserId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRoleDefinition
- -InputObject <IIdentityGovernanceIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
+Get-MgUserAgreementAcceptance -InputObject <IIdentityGovernanceIdentity> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Detailed information for the roleDefinition object that is referenced through the roleDefinitionId property.
+The user's terms of use acceptance statuses.
+Read-only.
+Nullable.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+Import-Module Microsoft.Graph.Identity.Governance
+```
+
+# A UPN can also be used as -UserId.
+Get-MgUserAgreementAcceptance -UserId $userId
 
 ## PARAMETERS
+
+### -AgreementAcceptanceId
+The unique identifier of agreementAcceptance
+
+```yaml
+Type: System.String
+Parameter Sets: Get
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -All
+List all pages.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CountVariable
+Specifies a count of the total number of items in a collection.
+By default, this variable will be set in the global scope.
+
+```yaml
+Type: System.String
+Parameter Sets: List
+Aliases: CV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -ExpandProperty
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Filter
+Filter items by property values
+
+```yaml
+Type: System.String
+Parameter Sets: List
+Aliases:
 
 Required: False
 Position: Named
@@ -54,7 +131,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
+Type: Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -65,11 +142,26 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -PageSize
+Sets the page size of results.
+
+```yaml
+Type: System.Int32
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Property
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -80,12 +172,72 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -UnifiedRoleEligibilityScheduleId
-The unique identifier of unifiedRoleEligibilitySchedule
+### -Search
+Search items by search phrases
 
 ```yaml
-Type: String
-Parameter Sets: Get
+Type: System.String
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: System.Int32
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Sort
+Order items by property values
+
+```yaml
+Type: System.String[]
+Parameter Sets: List
+Aliases: OrderBy
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Top
+Show only the first n items
+
+```yaml
+Type: System.Int32
+Parameter Sets: List
+Aliases: Limit
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -UserId
+The unique identifier of user
+
+```yaml
+Type: System.String
+Parameter Sets: Get, List
 Aliases:
 
 Required: True
@@ -101,9 +253,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleDefinition
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAgreementAcceptance
+
 ## NOTES
 
 ALIASES
@@ -136,10 +290,21 @@ To create the parameters described below, construct a hash table containing the 
   - `[ApprovalId <String>]`: The unique identifier of approval
   - `[ApprovalStageId <String>]`: The unique identifier of approvalStage
   - `[ConnectedOrganizationId <String>]`: The unique identifier of connectedOrganization
+  - `[CustomCalloutExtensionId <String>]`: The unique identifier of customCalloutExtension
+  - `[CustomExtensionStageSettingId <String>]`: The unique identifier of customExtensionStageSetting
+  - `[CustomTaskExtensionId <String>]`: The unique identifier of customTaskExtension
   - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
+  - `[EndDateTime <DateTime?>]`: Usage: endDateTime={endDateTime}
+  - `[GovernanceInsightId <String>]`: The unique identifier of governanceInsight
   - `[GroupId <String>]`: The unique identifier of group
   - `[IncompatibleAccessPackageId <String>]`: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   - `[On <String>]`: Usage: on='{on}'
+  - `[RunId <String>]`: The unique identifier of run
+  - `[StartDateTime <DateTime?>]`: Usage: startDateTime={startDateTime}
+  - `[TaskDefinitionId <String>]`: The unique identifier of taskDefinition
+  - `[TaskId <String>]`: The unique identifier of task
+  - `[TaskProcessingResultId <String>]`: The unique identifier of taskProcessingResult
+  - `[TaskReportId <String>]`: The unique identifier of taskReport
   - `[UnifiedRbacResourceActionId <String>]`: The unique identifier of unifiedRbacResourceAction
   - `[UnifiedRbacResourceNamespaceId <String>]`: The unique identifier of unifiedRbacResourceNamespace
   - `[UnifiedRoleAssignmentId <String>]`: The unique identifier of unifiedRoleAssignment
@@ -153,7 +318,10 @@ To create the parameters described below, construct a hash table containing the 
   - `[UnifiedRoleEligibilityScheduleRequestId <String>]`: The unique identifier of unifiedRoleEligibilityScheduleRequest
   - `[UserConsentRequestId <String>]`: The unique identifier of userConsentRequest
   - `[UserId <String>]`: The unique identifier of user
+  - `[UserProcessingResultId <String>]`: The unique identifier of userProcessingResult
+  - `[WorkflowId <String>]`: The unique identifier of workflow
+  - `[WorkflowTemplateId <String>]`: The unique identifier of workflowTemplate
+  - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgBetaUserAgreementAcceptance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaUserAgreementAcceptance?view=graph-powershell-beta)
 

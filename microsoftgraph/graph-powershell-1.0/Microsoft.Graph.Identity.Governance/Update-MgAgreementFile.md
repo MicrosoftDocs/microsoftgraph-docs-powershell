@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgagreementfile
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property file in agreements
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaAgreementFile](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaAgreementFile?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -20,13 +17,19 @@ Update the navigation property file in agreements
 Update-MgAgreementFile -AgreementId <String> [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
  [-DisplayName <String>] [-FileData <IMicrosoftGraphAgreementFileData>] [-FileName <String>] [-Id <String>]
  [-IsDefault] [-IsMajorVersion] [-Language <String>]
- [-Localizations <IMicrosoftGraphAgreementFileLocalization[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Localizations <IMicrosoftGraphAgreementFileLocalization[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgAgreementFile -AgreementId <String> -BodyParameter <IMicrosoftGraphAgreementFile> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgAgreementFile -AgreementId <String> -BodyParameter <IMicrosoftGraphAgreementFile> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgAgreementFile -InputObject <IIdentityGovernanceIdentity>
+ -BodyParameter <IMicrosoftGraphAgreementFile> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -34,13 +37,7 @@ Update-MgAgreementFile -AgreementId <String> -BodyParameter <IMicrosoftGraphAgre
 Update-MgAgreementFile -InputObject <IIdentityGovernanceIdentity> [-AdditionalProperties <Hashtable>]
  [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-FileData <IMicrosoftGraphAgreementFileData>]
  [-FileName <String>] [-Id <String>] [-IsDefault] [-IsMajorVersion] [-Language <String>]
- [-Localizations <IMicrosoftGraphAgreementFileLocalization[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgAgreementFile -InputObject <IIdentityGovernanceIdentity> -BodyParameter <IMicrosoftGraphAgreementFile>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Localizations <IMicrosoftGraphAgreementFileLocalization[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -48,20 +45,20 @@ Update the navigation property file in agreements
 
 ## EXAMPLES
 
-### Example 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
+```
 
 Get-MgIdentityGovernanceTermOfUseAgreementFile -AgreementId $agreementId
 
-```
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -76,8 +73,8 @@ Accept wildcard characters: False
 The unique identifier of agreement
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -92,7 +89,7 @@ agreementFile
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAgreementFile
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAgreementFile
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -108,7 +105,7 @@ The date time representing when the file was created.The Timestamp type represen
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -124,7 +121,7 @@ Localized display name of the policy file of an agreement.
 The localized display name is shown to end users who view the agreement.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -140,7 +137,7 @@ agreementFileData
 To construct, see NOTES section for FILEDATA properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAgreementFileData
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAgreementFileData
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -156,7 +153,7 @@ Name of the agreement file (for example, TOU.pdf).
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -172,7 +169,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -188,8 +185,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -205,7 +202,7 @@ If none of the files are marked as default, the first one is treated as the defa
 Read-only.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -221,7 +218,7 @@ Indicates whether the agreement file is a major version update.
 Major version updates invalidate the agreement's acceptances on the corresponding language.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -240,7 +237,7 @@ English is en-US.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -256,7 +253,7 @@ The localized version of the terms of use agreement files attached to the agreem
 To construct, see NOTES section for LOCALIZATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAgreementFileLocalization[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAgreementFileLocalization[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -271,7 +268,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -287,7 +284,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -304,10 +301,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAgreementFile
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAgreementFile
+
 ## NOTES
 
 ALIASES
@@ -375,10 +375,21 @@ To create the parameters described below, construct a hash table containing the 
   - `[ApprovalId <String>]`: The unique identifier of approval
   - `[ApprovalStageId <String>]`: The unique identifier of approvalStage
   - `[ConnectedOrganizationId <String>]`: The unique identifier of connectedOrganization
+  - `[CustomCalloutExtensionId <String>]`: The unique identifier of customCalloutExtension
+  - `[CustomExtensionStageSettingId <String>]`: The unique identifier of customExtensionStageSetting
+  - `[CustomTaskExtensionId <String>]`: The unique identifier of customTaskExtension
   - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
+  - `[EndDateTime <DateTime?>]`: Usage: endDateTime={endDateTime}
+  - `[GovernanceInsightId <String>]`: The unique identifier of governanceInsight
   - `[GroupId <String>]`: The unique identifier of group
   - `[IncompatibleAccessPackageId <String>]`: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   - `[On <String>]`: Usage: on='{on}'
+  - `[RunId <String>]`: The unique identifier of run
+  - `[StartDateTime <DateTime?>]`: Usage: startDateTime={startDateTime}
+  - `[TaskDefinitionId <String>]`: The unique identifier of taskDefinition
+  - `[TaskId <String>]`: The unique identifier of task
+  - `[TaskProcessingResultId <String>]`: The unique identifier of taskProcessingResult
+  - `[TaskReportId <String>]`: The unique identifier of taskReport
   - `[UnifiedRbacResourceActionId <String>]`: The unique identifier of unifiedRbacResourceAction
   - `[UnifiedRbacResourceNamespaceId <String>]`: The unique identifier of unifiedRbacResourceNamespace
   - `[UnifiedRoleAssignmentId <String>]`: The unique identifier of unifiedRoleAssignment
@@ -392,6 +403,10 @@ To create the parameters described below, construct a hash table containing the 
   - `[UnifiedRoleEligibilityScheduleRequestId <String>]`: The unique identifier of unifiedRoleEligibilityScheduleRequest
   - `[UserConsentRequestId <String>]`: The unique identifier of userConsentRequest
   - `[UserId <String>]`: The unique identifier of user
+  - `[UserProcessingResultId <String>]`: The unique identifier of userProcessingResult
+  - `[WorkflowId <String>]`: The unique identifier of workflow
+  - `[WorkflowTemplateId <String>]`: The unique identifier of workflowTemplate
+  - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 `LOCALIZATIONS <IMicrosoftGraphAgreementFileLocalization[]>`: The localized version of the terms of use agreement files attached to the agreement.
   - `[CreatedDateTime <DateTime?>]`: The date time representing when the file was created.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -415,9 +430,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
 ## RELATED LINKS
-[Update-MgBetaAgreementFile](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaAgreementFile?view=graph-powershell-beta)
-
-## RELATED LINKS
-[Update-MgBetaAgreementFile](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaAgreementFile?view=graph-powershell-beta)
-
 

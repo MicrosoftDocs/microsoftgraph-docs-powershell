@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementmanagedebookinstallsummary
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property installSummary in deviceAppManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceAppManagementManagedEBookInstallSummary](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementManagedEBookInstallSummary?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -20,13 +17,19 @@ Update the navigation property installSummary in deviceAppManagement
 Update-MgBetaDeviceAppManagementManagedEBookInstallSummary -ManagedEBookId <String>
  [-AdditionalProperties <Hashtable>] [-FailedDeviceCount <Int32>] [-FailedUserCount <Int32>] [-Id <String>]
  [-InstalledDeviceCount <Int32>] [-InstalledUserCount <Int32>] [-NotInstalledDeviceCount <Int32>]
- [-NotInstalledUserCount <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-NotInstalledUserCount <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceAppManagementManagedEBookInstallSummary -ManagedEBookId <String>
- -BodyParameter <IMicrosoftGraphEBookInstallSummary> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEBookInstallSummary> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaDeviceAppManagementManagedEBookInstallSummary -InputObject <IDevicesCorporateManagementIdentity>
+ -BodyParameter <IMicrosoftGraphEBookInstallSummary> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -34,17 +37,27 @@ Update-MgBetaDeviceAppManagementManagedEBookInstallSummary -ManagedEBookId <Stri
 Update-MgBetaDeviceAppManagementManagedEBookInstallSummary -InputObject <IDevicesCorporateManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-FailedDeviceCount <Int32>] [-FailedUserCount <Int32>] [-Id <String>]
  [-InstalledDeviceCount <Int32>] [-InstalledUserCount <Int32>] [-NotInstalledDeviceCount <Int32>]
- [-NotInstalledUserCount <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaDeviceAppManagementManagedEBookInstallSummary -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphEBookInstallSummary> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-NotInstalledUserCount <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property installSummary in deviceAppManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -52,7 +65,7 @@ Update the navigation property installSummary in deviceAppManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -68,7 +81,7 @@ Contains properties for the installation summary of a book for a device.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEBookInstallSummary
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEBookInstallSummary
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -83,7 +96,7 @@ Accept wildcard characters: False
 Number of Devices that have failed to install this book.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -98,7 +111,7 @@ Accept wildcard characters: False
 Number of Users that have 1 or more device that failed to install this book.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -114,7 +127,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -130,8 +143,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDevicesCorporateManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDevicesCorporateManagementIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -145,7 +158,7 @@ Accept wildcard characters: False
 Number of Devices that have successfully installed this book.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -160,7 +173,7 @@ Accept wildcard characters: False
 Number of Users whose devices have all succeeded to install this book.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -175,8 +188,8 @@ Accept wildcard characters: False
 The unique identifier of managedEBook
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -190,7 +203,7 @@ Accept wildcard characters: False
 Number of Devices that does not have this book installed.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -205,7 +218,7 @@ Accept wildcard characters: False
 Number of Users that did not install this book.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -220,7 +233,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -236,7 +249,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -253,15 +266,18 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDevicesCorporateManagementIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEBookInstallSummary
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEBookInstallSummary
+
 ## NOTES
 
 ALIASES
 
-Update-MgDeviceAppMgtManagedEBookInstallSummary
+Update-BetaDeviceAppMgtManagedEBookInstallSummary
 
 COMPLEX PARAMETER PROPERTIES
 
@@ -345,5 +361,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
-[Update-MgDeviceAppManagementManagedEBookInstallSummary](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementManagedEBookInstallSummary?view=graph-powershell-v1.0)
 

@@ -1,32 +1,40 @@
 ---
-external help file: Microsoft.Graph.Beta.Calendar-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Calendar
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetauserdefaultcalendarevent
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetauserevent
 schema: 2.0.0
 ---
 
-# New-MgBetaUserDefaultCalendarEvent
+# New-MgBetaUserEvent
 
 ## SYNOPSIS
-Use this API to create a new event in a calendar.
-The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserEvent](/powershell/module/Microsoft.Graph.Calendar/New-MgUserEvent?view=graph-powershell-v1.0)
+Create an event in the user's default calendar or specified calendar.
+By default, the **allowNewTimeProposals** property is set to true when an event is created, which means invitees can propose a different date/time for the event.
+See Propose new meeting times for more information on how to propose a time, and how to receive and accept a new time proposal.
+You can specify the time zone for each of the start and end times of the event as part of their values, because the \n**start** and **end** properties are of dateTimeTimeZone type.
+First find the supported time zones to make sure you set only time zones that have been configured for the user's mailbox server.
+When an event is sent, the server sends invitations to all the attendees.
+**Setting the location in an event** An Exchange administrator can set up a mailbox and an email address for a resource such as a meeting room, or equipment\nlike a projector.
+Users can then invite the resource as an attendee to a meeting.
+On behalf of the resource, the server accepts or rejects\nthe meeting request based on the free/busy schedule of the resource.\nIf the server accepts a meeting for the resource, it creates an event for the meeting in the resource's calendar.
+If the meeting is rescheduled,\nthe server automatically updates the event in the resource's calendar.
+Another advantage of setting up a mailbox for a resource is to control scheduling of the resource, for example, only executives\nor their delegates can book a private meeting room.
+If you're organizing an event that involves a meeting location: Additionally, if the meeting location has been set up as a resource, or if the event involves some equipment that has been set up as a resource:
 
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaUserDefaultCalendarEvent -UserId <String> [-AdditionalProperties <Hashtable>]
- [-AllowNewTimeProposals] [-Attachments <IMicrosoftGraphAttachment[]>] [-Attendees <IMicrosoftGraphAttendee[]>]
+New-MgBetaUserEvent -UserId <String> [-AdditionalProperties <Hashtable>] [-AllowNewTimeProposals]
+ [-Attachments <IMicrosoftGraphAttachment[]>] [-Attendees <IMicrosoftGraphAttendee[]>]
  [-Body <IMicrosoftGraphItemBody>] [-BodyPreview <String>] [-Calendar <IMicrosoftGraphCalendar>]
  [-CancelledOccurrences <String[]>] [-Categories <String[]>] [-ChangeKey <String>]
  [-CreatedDateTime <DateTime>] [-End <IMicrosoftGraphDateTimeZone>]
  [-ExceptionOccurrences <IMicrosoftGraphEvent[]>] [-Extensions <IMicrosoftGraphExtension[]>] [-HasAttachments]
  [-HideAttendees] [-Id <String>] [-Importance <String>] [-Instances <IMicrosoftGraphEvent[]>] [-IsAllDay]
- [-IsCancelled] [-IsDraft] [-IsOnlineMeeting] [-IsOrganizer] [-IsReminderOn] [-LastModifiedDateTime <DateTime>]
- [-Location <IMicrosoftGraphLocation>] [-Locations <IMicrosoftGraphLocation[]>]
+ [-IsCancelled] [-IsDraft] [-IsOnlineMeeting] [-IsOrganizer] [-IsReminderOn]
+ [-LastModifiedDateTime <DateTime>] [-Location <IMicrosoftGraphLocation>]
+ [-Locations <IMicrosoftGraphLocation[]>]
  [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-OccurrenceId <String>]
  [-OnlineMeeting <IMicrosoftGraphOnlineMeetingInfo>] [-OnlineMeetingProvider <String>]
  [-OnlineMeetingUrl <String>] [-Organizer <IMicrosoftGraphRecipient>] [-OriginalEndTimeZone <String>]
@@ -35,26 +43,33 @@ New-MgBetaUserDefaultCalendarEvent -UserId <String> [-AdditionalProperties <Hash
  [-ResponseStatus <IMicrosoftGraphResponseStatus>] [-Sensitivity <String>] [-SeriesMasterId <String>]
  [-ShowAs <String>] [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]
  [-Start <IMicrosoftGraphDateTimeZone>] [-Subject <String>] [-TransactionId <String>] [-Type <String>]
- [-Uid <String>] [-WebLink <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Uid <String>] [-WebLink <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaUserDefaultCalendarEvent -UserId <String> -BodyParameter <IMicrosoftGraphEvent> [-WhatIf] [-Confirm]
+New-MgBetaUserEvent -UserId <String> -BodyParameter <IMicrosoftGraphEvent> [-Confirm] [-WhatIf]
  [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgBetaUserEvent -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGraphEvent> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgBetaUserDefaultCalendarEvent -InputObject <ICalendarIdentity> [-AdditionalProperties <Hashtable>]
- [-AllowNewTimeProposals] [-Attachments <IMicrosoftGraphAttachment[]>] [-Attendees <IMicrosoftGraphAttendee[]>]
- [-Body <IMicrosoftGraphItemBody>] [-BodyPreview <String>] [-Calendar <IMicrosoftGraphCalendar>]
- [-CancelledOccurrences <String[]>] [-Categories <String[]>] [-ChangeKey <String>]
- [-CreatedDateTime <DateTime>] [-End <IMicrosoftGraphDateTimeZone>]
+New-MgBetaUserEvent -InputObject <ICalendarIdentity> [-AdditionalProperties <Hashtable>]
+ [-AllowNewTimeProposals] [-Attachments <IMicrosoftGraphAttachment[]>]
+ [-Attendees <IMicrosoftGraphAttendee[]>] [-Body <IMicrosoftGraphItemBody>] [-BodyPreview <String>]
+ [-Calendar <IMicrosoftGraphCalendar>] [-CancelledOccurrences <String[]>] [-Categories <String[]>]
+ [-ChangeKey <String>] [-CreatedDateTime <DateTime>] [-End <IMicrosoftGraphDateTimeZone>]
  [-ExceptionOccurrences <IMicrosoftGraphEvent[]>] [-Extensions <IMicrosoftGraphExtension[]>] [-HasAttachments]
  [-HideAttendees] [-Id <String>] [-Importance <String>] [-Instances <IMicrosoftGraphEvent[]>] [-IsAllDay]
- [-IsCancelled] [-IsDraft] [-IsOnlineMeeting] [-IsOrganizer] [-IsReminderOn] [-LastModifiedDateTime <DateTime>]
- [-Location <IMicrosoftGraphLocation>] [-Locations <IMicrosoftGraphLocation[]>]
+ [-IsCancelled] [-IsDraft] [-IsOnlineMeeting] [-IsOrganizer] [-IsReminderOn]
+ [-LastModifiedDateTime <DateTime>] [-Location <IMicrosoftGraphLocation>]
+ [-Locations <IMicrosoftGraphLocation[]>]
  [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-OccurrenceId <String>]
  [-OnlineMeeting <IMicrosoftGraphOnlineMeetingInfo>] [-OnlineMeetingProvider <String>]
  [-OnlineMeetingUrl <String>] [-Organizer <IMicrosoftGraphRecipient>] [-OriginalEndTimeZone <String>]
@@ -63,18 +78,152 @@ New-MgBetaUserDefaultCalendarEvent -InputObject <ICalendarIdentity> [-Additional
  [-ResponseStatus <IMicrosoftGraphResponseStatus>] [-Sensitivity <String>] [-SeriesMasterId <String>]
  [-ShowAs <String>] [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]
  [-Start <IMicrosoftGraphDateTimeZone>] [-Subject <String>] [-TransactionId <String>] [-Type <String>]
- [-Uid <String>] [-WebLink <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgBetaUserDefaultCalendarEvent -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGraphEvent>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Uid <String>] [-WebLink <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Use this API to create a new event in a calendar.
-The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
+Create an event in the user's default calendar or specified calendar.
+By default, the **allowNewTimeProposals** property is set to true when an event is created, which means invitees can propose a different date/time for the event.
+See Propose new meeting times for more information on how to propose a time, and how to receive and accept a new time proposal.
+You can specify the time zone for each of the start and end times of the event as part of their values, because the \n**start** and **end** properties are of dateTimeTimeZone type.
+First find the supported time zones to make sure you set only time zones that have been configured for the user's mailbox server.
+When an event is sent, the server sends invitations to all the attendees.
+**Setting the location in an event** An Exchange administrator can set up a mailbox and an email address for a resource such as a meeting room, or equipment\nlike a projector.
+Users can then invite the resource as an attendee to a meeting.
+On behalf of the resource, the server accepts or rejects\nthe meeting request based on the free/busy schedule of the resource.\nIf the server accepts a meeting for the resource, it creates an event for the meeting in the resource's calendar.
+If the meeting is rescheduled,\nthe server automatically updates the event in the resource's calendar.
+Another advantage of setting up a mailbox for a resource is to control scheduling of the resource, for example, only executives\nor their delegates can book a private meeting room.
+If you're organizing an event that involves a meeting location: Additionally, if the meeting location has been set up as a resource, or if the event involves some equipment that has been set up as a resource:
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+Import-Module Microsoft.Graph.Beta.Calendar
+```
+
+$params = @{
+	subject = "Let's go for lunch"
+	body = @{
+		contentType = "HTML"
+		content = "Does noon work for you?"
+	}
+	start = @{
+		dateTime = "2017-04-15T12:00:00"
+		timeZone = "Pacific Standard Time"
+	}
+	end = @{
+		dateTime = "2017-04-15T14:00:00"
+		timeZone = "Pacific Standard Time"
+	}
+	location = @{
+		displayName = "Harry's Bar"
+	}
+	attendees = @(
+		@{
+			emailAddress = @{
+				address = "samanthab@contoso.onmicrosoft.com"
+				name = "Samantha Booth"
+			}
+			type = "required"
+		}
+	)
+	allowNewTimeProposals = $true
+	transactionId = "7E163156-7762-4BEB-A1C6-729EA81755A7"
+}
+
+# A UPN can also be used as -UserId.
+New-MgBetaUserEvent -UserId $userId -BodyParameter $params
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+Import-Module Microsoft.Graph.Beta.Calendar
+```
+
+$params = @{
+	subject = "Let's go for lunch"
+	body = @{
+		contentType = "HTML"
+		content = "Does noon time work for you?"
+	}
+	start = @{
+		dateTime = "2017-09-04T12:00:00"
+		timeZone = "Pacific Standard Time"
+	}
+	end = @{
+		dateTime = "2017-09-04T14:00:00"
+		timeZone = "Pacific Standard Time"
+	}
+	recurrence = @{
+		pattern = @{
+			type = "weekly"
+			interval = 1
+			daysOfWeek = @(
+				"Monday"
+			)
+		}
+		range = @{
+			type = "endDate"
+			startDate = "2017-09-04"
+			endDate = "2017-12-31"
+		}
+	}
+	location = @{
+		displayName = "Harry's Bar"
+	}
+	attendees = @(
+		@{
+			emailAddress = @{
+				address = "AdeleV@contoso.onmicrosoft.com"
+				name = "Adele Vance"
+			}
+			type = "required"
+		}
+	)
+	allowNewTimeProposals = $true
+}
+
+# A UPN can also be used as -UserId.
+New-MgBetaUserEvent -UserId $userId -BodyParameter $params
+
+### -------------------------- EXAMPLE 3 --------------------------
+```powershell
+Import-Module Microsoft.Graph.Beta.Calendar
+```
+
+$params = @{
+	subject = "Let's go for lunch"
+	body = @{
+		contentType = "HTML"
+		content = "Does noon work for you?"
+	}
+	start = @{
+		dateTime = "2017-04-15T12:00:00"
+		timeZone = "Pacific Standard Time"
+	}
+	end = @{
+		dateTime = "2017-04-15T14:00:00"
+		timeZone = "Pacific Standard Time"
+	}
+	location = @{
+		displayName = "Harry's Bar"
+	}
+	attendees = @(
+		@{
+			emailAddress = @{
+				address = "samanthab@contoso.onmicrosoft.com"
+				name = "Samantha Booth"
+			}
+			type = "required"
+		}
+	)
+	allowNewTimeProposals = $true
+	isOnlineMeeting = $true
+	onlineMeetingProvider = "teamsForBusiness"
+}
+
+# A UPN can also be used as -UserId.
+New-MgBetaUserEvent -UserId $userId -BodyParameter $params
 
 ## PARAMETERS
 
@@ -82,7 +231,7 @@ The calendar can be one for a user, or the default calendar of a Microsoft 365 g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -99,7 +248,7 @@ Optional.
 Default is true.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -118,7 +267,7 @@ Nullable.
 To construct, see NOTES section for ATTACHMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAttachment[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAttachment[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -134,7 +283,7 @@ The collection of attendees for the event.
 To construct, see NOTES section for ATTENDEES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAttendee[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAttendee[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -150,7 +299,7 @@ itemBody
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphItemBody
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItemBody
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -166,7 +315,7 @@ event
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEvent
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEvent
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -182,7 +331,7 @@ The preview of the message associated with the event.
 It is in text format.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -198,7 +347,7 @@ calendar
 To construct, see NOTES section for CALENDAR properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCalendar
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCalendar
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -214,7 +363,7 @@ Contains occurrenceId property values of cancelled instances in a recurring seri
 Instances in a recurring series that are cancelled are called cancelledOccurences.Returned only on $select in a Get operation which specifies the id of a series master event (that is, the seriesMasterId property value).
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -229,7 +378,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -244,7 +393,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -260,7 +409,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -276,7 +425,7 @@ dateTimeTimeZone
 To construct, see NOTES section for END properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDateTimeZone
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDateTimeZone
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -292,7 +441,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for EXCEPTIONOCCURRENCES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEvent[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEvent[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -309,7 +458,7 @@ Nullable.
 To construct, see NOTES section for EXTENSIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExtension[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphExtension[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -324,7 +473,7 @@ Accept wildcard characters: False
 Set to true if the event has attachments.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -340,7 +489,7 @@ When set to true, each attendee only sees themselves in the meeting request and 
 Default is false.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -356,7 +505,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -371,7 +520,7 @@ Accept wildcard characters: False
 importance
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -387,8 +536,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICalendarIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ICalendarIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -407,7 +556,7 @@ Nullable.
 To construct, see NOTES section for INSTANCES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEvent[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEvent[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -422,7 +571,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -437,7 +586,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -452,7 +601,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -467,7 +616,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -482,7 +631,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -497,7 +646,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -513,7 +662,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -529,7 +678,7 @@ location
 To construct, see NOTES section for LOCATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphLocation
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphLocation
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -545,7 +694,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for LOCATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphLocation[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphLocation[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -563,7 +712,7 @@ Nullable.
 To construct, see NOTES section for MULTIVALUEEXTENDEDPROPERTIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMultiValueLegacyExtendedProperty[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMultiValueLegacyExtendedProperty[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -578,7 +727,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -594,7 +743,7 @@ onlineMeetingInfo
 To construct, see NOTES section for ONLINEMEETING properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOnlineMeetingInfo
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnlineMeetingInfo
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -609,7 +758,7 @@ Accept wildcard characters: False
 onlineMeetingProviderType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -624,7 +773,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -640,7 +789,7 @@ recipient
 To construct, see NOTES section for ORGANIZER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRecipient
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRecipient
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -655,7 +804,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -670,7 +819,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -685,7 +834,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -701,7 +850,7 @@ patternedRecurrence
 To construct, see NOTES section for RECURRENCE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPatternedRecurrence
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPatternedRecurrence
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -716,7 +865,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -731,7 +880,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -747,7 +896,7 @@ responseStatus
 To construct, see NOTES section for RESPONSESTATUS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphResponseStatus
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphResponseStatus
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -762,7 +911,7 @@ Accept wildcard characters: False
 sensitivity
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -777,7 +926,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -792,7 +941,7 @@ Accept wildcard characters: False
 freeBusyStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -810,7 +959,7 @@ Nullable.
 To construct, see NOTES section for SINGLEVALUEEXTENDEDPROPERTIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSingleValueLegacyExtendedProperty[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSingleValueLegacyExtendedProperty[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -826,7 +975,7 @@ dateTimeTimeZone
 To construct, see NOTES section for START properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDateTimeZone
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDateTimeZone
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -841,7 +990,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -856,7 +1005,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -871,7 +1020,7 @@ Accept wildcard characters: False
 eventType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -886,7 +1035,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -901,8 +1050,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -916,7 +1065,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -931,7 +1080,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -947,7 +1096,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -964,10 +1113,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ICalendarIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEvent
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEvent
+
 ## NOTES
 
 ALIASES
@@ -1783,8 +1935,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
 
 ## RELATED LINKS
-[New-MgUserEvent](/powershell/module/Microsoft.Graph.Calendar/New-MgUserEvent?view=graph-powershell-v1.0)
-
-## RELATED LINKS
-[New-MgUserEvent](/powershell/module/Microsoft.Graph.Calendar/New-MgUserEvent?view=graph-powershell-v1.0)
 

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgfilteridentitygovernanceaccessreviewdefinitioninstancedecisionbycurrentuser
 schema: 2.0.0
@@ -10,17 +10,14 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function filterByCurrentUser
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaFilterIdentityGovernanceAccessReviewDefinitionInstanceDecisionByCurrentUser](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaFilterIdentityGovernanceAccessReviewDefinitionInstanceDecisionByCurrentUser?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Filter (Default)
 ```
 Invoke-MgFilterIdentityGovernanceAccessReviewDefinitionInstanceDecisionByCurrentUser
  -AccessReviewInstanceId <String> -AccessReviewScheduleDefinitionId <String> -On <String> [-Count]
- [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [<CommonParameters>]
+ [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>]
+ [-Top <Int32>] [<CommonParameters>]
 ```
 
 ### FilterViaIdentity
@@ -33,13 +30,29 @@ Invoke-MgFilterIdentityGovernanceAccessReviewDefinitionInstanceDecisionByCurrent
 ## DESCRIPTION
 Invoke function filterByCurrentUser
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AccessReviewInstanceId
 The unique identifier of accessReviewInstance
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Filter
 Aliases:
 
@@ -54,7 +67,7 @@ Accept wildcard characters: False
 The unique identifier of accessReviewScheduleDefinition
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Filter
 Aliases:
 
@@ -69,7 +82,7 @@ Accept wildcard characters: False
 Include count of items
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -84,7 +97,7 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -100,7 +113,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
+Type: Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
 Parameter Sets: FilterViaIdentity
 Aliases:
 
@@ -115,7 +128,7 @@ Accept wildcard characters: False
 Usage: on='{on}'
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Filter
 Aliases:
 
@@ -130,7 +143,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -145,7 +158,22 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: String
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: System.Int32
 Parameter Sets: (All)
 Aliases:
 
@@ -160,7 +188,7 @@ Accept wildcard characters: False
 Order items by property values
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: OrderBy
 
@@ -175,24 +203,9 @@ Accept wildcard characters: False
 Show only the first n items
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: (All)
 Aliases: Limit
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: (All)
-Aliases:
 
 Required: False
 Position: Named
@@ -207,9 +220,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessReviewInstanceDecisionItem
+
 ## NOTES
 
 ALIASES
@@ -242,10 +257,21 @@ To create the parameters described below, construct a hash table containing the 
   - `[ApprovalId <String>]`: The unique identifier of approval
   - `[ApprovalStageId <String>]`: The unique identifier of approvalStage
   - `[ConnectedOrganizationId <String>]`: The unique identifier of connectedOrganization
+  - `[CustomCalloutExtensionId <String>]`: The unique identifier of customCalloutExtension
+  - `[CustomExtensionStageSettingId <String>]`: The unique identifier of customExtensionStageSetting
+  - `[CustomTaskExtensionId <String>]`: The unique identifier of customTaskExtension
   - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
+  - `[EndDateTime <DateTime?>]`: Usage: endDateTime={endDateTime}
+  - `[GovernanceInsightId <String>]`: The unique identifier of governanceInsight
   - `[GroupId <String>]`: The unique identifier of group
   - `[IncompatibleAccessPackageId <String>]`: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   - `[On <String>]`: Usage: on='{on}'
+  - `[RunId <String>]`: The unique identifier of run
+  - `[StartDateTime <DateTime?>]`: Usage: startDateTime={startDateTime}
+  - `[TaskDefinitionId <String>]`: The unique identifier of taskDefinition
+  - `[TaskId <String>]`: The unique identifier of task
+  - `[TaskProcessingResultId <String>]`: The unique identifier of taskProcessingResult
+  - `[TaskReportId <String>]`: The unique identifier of taskReport
   - `[UnifiedRbacResourceActionId <String>]`: The unique identifier of unifiedRbacResourceAction
   - `[UnifiedRbacResourceNamespaceId <String>]`: The unique identifier of unifiedRbacResourceNamespace
   - `[UnifiedRoleAssignmentId <String>]`: The unique identifier of unifiedRoleAssignment
@@ -259,7 +285,10 @@ To create the parameters described below, construct a hash table containing the 
   - `[UnifiedRoleEligibilityScheduleRequestId <String>]`: The unique identifier of unifiedRoleEligibilityScheduleRequest
   - `[UserConsentRequestId <String>]`: The unique identifier of userConsentRequest
   - `[UserId <String>]`: The unique identifier of user
+  - `[UserProcessingResultId <String>]`: The unique identifier of userProcessingResult
+  - `[WorkflowId <String>]`: The unique identifier of workflow
+  - `[WorkflowTemplateId <String>]`: The unique identifier of workflowTemplate
+  - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Invoke-MgBetaFilterIdentityGovernanceAccessReviewDefinitionInstanceDecisionByCurrentUser](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaFilterIdentityGovernanceAccessReviewDefinitionInstanceDecisionByCurrentUser?view=graph-powershell-beta)
 

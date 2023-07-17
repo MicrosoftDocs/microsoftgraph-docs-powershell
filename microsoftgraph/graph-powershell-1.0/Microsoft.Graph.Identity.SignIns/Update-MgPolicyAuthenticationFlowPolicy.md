@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthenticationflowpolicy
 schema: 2.0.0
@@ -11,23 +11,20 @@ schema: 2.0.0
 Update the **selfServiceSignUp** property of an authenticationFlowsPolicy object.
 The properties **id**, **type**, and **description** cannot be modified.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaPolicyAuthenticationFlowPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyAuthenticationFlowPolicy?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgPolicyAuthenticationFlowPolicy [-AdditionalProperties <Hashtable>] [-Description <String>]
  [-DisplayName <String>] [-Id <String>]
- [-SelfServiceSignUp <IMicrosoftGraphSelfServiceSignUpAuthenticationFlowConfiguration>] [-WhatIf] [-Confirm]
+ [-SelfServiceSignUp <IMicrosoftGraphSelfServiceSignUpAuthenticationFlowConfiguration>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgPolicyAuthenticationFlowPolicy -BodyParameter <IMicrosoftGraphAuthenticationFlowsPolicy> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgPolicyAuthenticationFlowPolicy -BodyParameter <IMicrosoftGraphAuthenticationFlowsPolicy> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -36,9 +33,10 @@ The properties **id**, **type**, and **description** cannot be modified.
 
 ## EXAMPLES
 
-### Example 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
+```
 
 $params = @{
 	selfServiceSignUp = @{
@@ -48,14 +46,13 @@ $params = @{
 
 Update-MgPolicyAuthenticationFlowPolicy -BodyParameter $params
 
-```
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -71,7 +68,7 @@ authenticationFlowsPolicy
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAuthenticationFlowsPolicy
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthenticationFlowsPolicy
 Parameter Sets: Update
 Aliases:
 
@@ -89,7 +86,7 @@ Optional.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -107,7 +104,7 @@ Optional.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -123,7 +120,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -139,7 +136,7 @@ selfServiceSignUpAuthenticationFlowConfiguration
 To construct, see NOTES section for SELFSERVICESIGNUP properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSelfServiceSignUpAuthenticationFlowConfiguration
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSelfServiceSignUpAuthenticationFlowConfiguration
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -154,7 +151,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -170,7 +167,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -187,9 +184,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthenticationFlowsPolicy
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthenticationFlowsPolicy
+
 ## NOTES
 
 ALIASES
@@ -213,6 +212,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[IsEnabled <Boolean?>]`: Indicates whether self-service sign-up flow is enabled or disabled. The default value is false. This property is not a key. Required.
 
 ## RELATED LINKS
-[Update-MgBetaPolicyAuthenticationFlowPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyAuthenticationFlowPolicy?view=graph-powershell-beta)
-
 

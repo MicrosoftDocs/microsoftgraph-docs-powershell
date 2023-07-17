@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Teams-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaappcatalogteamappdefinitioncoloricon
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Retrieve a Teams app icon associated with a specific definition of an app.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgAppCatalogTeamAppDefinitionColorIcon](/powershell/module/Microsoft.Graph.Teams/Get-MgAppCatalogTeamAppDefinitionColorIcon?view=graph-powershell-v1.0)
 
 ## SYNTAX
 
@@ -32,17 +29,21 @@ Retrieve a Teams app icon associated with a specific definition of an app.
 
 ## EXAMPLES
 
-### Example 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaAppCatalogTeamAppDefinitionColorIcon -TeamsAppId $teamsAppId -TeamsAppDefinitionId $teamsAppDefinitionId
 ```
 
-### Example 2
+
+
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaAppCatalogTeamAppDefinitionColorIcon -TeamsAppId $teamsAppId -TeamsAppDefinitionId $teamsAppDefinitionId
 ```
+
+
 
 ## PARAMETERS
 
@@ -50,7 +51,7 @@ Get-MgBetaAppCatalogTeamAppDefinitionColorIcon -TeamsAppId $teamsAppId -TeamsApp
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -66,7 +67,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -81,7 +82,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -96,7 +97,7 @@ Accept wildcard characters: False
 The unique identifier of teamsAppDefinition
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -111,7 +112,7 @@ Accept wildcard characters: False
 The unique identifier of teamsApp
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -128,9 +129,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamsAppIcon
+
 ## NOTES
 
 ALIASES
@@ -148,6 +151,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
   - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
   - `[ConversationMemberId <String>]`: The unique identifier of conversationMember
+  - `[DeletedChatId <String>]`: The unique identifier of deletedChat
   - `[DeletedTeamId <String>]`: The unique identifier of deletedTeam
   - `[GroupId <String>]`: The unique identifier of group
   - `[OfferShiftRequestId <String>]`: The unique identifier of offerShiftRequest
@@ -180,5 +184,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgAppCatalogTeamAppDefinitionColorIcon](/powershell/module/Microsoft.Graph.Teams/Get-MgAppCatalogTeamAppDefinitionColorIcon?view=graph-powershell-v1.0)
 

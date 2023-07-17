@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementintentcategory
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property categories in deviceManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementIntentCategory](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementIntentCategory?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -21,14 +18,21 @@ Update-MgBetaDeviceManagementIntentCategory -DeviceManagementIntentId <String>
  -DeviceManagementIntentSettingCategoryId <String> [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
  [-HasRequiredSetting] [-Id <String>]
  [-SettingDefinitions <IMicrosoftGraphDeviceManagementSettingDefinition[]>]
- [-Settings <IMicrosoftGraphDeviceManagementSettingInstance[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Settings <IMicrosoftGraphDeviceManagementSettingInstance[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementIntentCategory -DeviceManagementIntentId <String>
  -DeviceManagementIntentSettingCategoryId <String>
- -BodyParameter <IMicrosoftGraphDeviceManagementIntentSettingCategory> [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphDeviceManagementIntentSettingCategory> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaDeviceManagementIntentCategory -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphDeviceManagementIntentSettingCategory> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -37,18 +41,27 @@ Update-MgBetaDeviceManagementIntentCategory -DeviceManagementIntentId <String>
 Update-MgBetaDeviceManagementIntentCategory -InputObject <IDeviceManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-HasRequiredSetting] [-Id <String>]
  [-SettingDefinitions <IMicrosoftGraphDeviceManagementSettingDefinition[]>]
- [-Settings <IMicrosoftGraphDeviceManagementSettingInstance[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaDeviceManagementIntentCategory -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceManagementIntentSettingCategory> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Settings <IMicrosoftGraphDeviceManagementSettingInstance[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property categories in deviceManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -56,7 +69,7 @@ Update the navigation property categories in deviceManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -72,7 +85,7 @@ Entity representing an intent setting category
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementIntentSettingCategory
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementIntentSettingCategory
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -87,8 +100,8 @@ Accept wildcard characters: False
 The unique identifier of deviceManagementIntent
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -102,8 +115,8 @@ Accept wildcard characters: False
 The unique identifier of deviceManagementIntentSettingCategory
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -117,7 +130,7 @@ Accept wildcard characters: False
 The category name
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -132,7 +145,7 @@ Accept wildcard characters: False
 The category contains top level required setting
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -148,7 +161,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -164,8 +177,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -180,7 +193,7 @@ The setting definitions this category contains
 To construct, see NOTES section for SETTINGDEFINITIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementSettingDefinition[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementSettingDefinition[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -196,7 +209,7 @@ The settings this category contains
 To construct, see NOTES section for SETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementSettingInstance[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementSettingInstance[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -211,7 +224,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -227,7 +240,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -244,10 +257,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementIntentSettingCategory
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementIntentSettingCategory
+
 ## NOTES
 
 ALIASES
@@ -284,10 +300,15 @@ To create the parameters described below, construct a hash table containing the 
 
 `INPUTOBJECT <IDeviceManagementIdentity>`: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
+  - `[AlertRecordId <String>]`: The unique identifier of alertRecord
+  - `[AlertRuleId <String>]`: The unique identifier of alertRule
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: The unique identifier of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: The unique identifier of androidManagedStoreAppConfigurationSchema
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
   - `[AssignmentFilterEvaluationStatusDetailsId <String>]`: The unique identifier of assignmentFilterEvaluationStatusDetails
+  - `[BrowserSharedCookieId <String>]`: The unique identifier of browserSharedCookie
+  - `[BrowserSiteId <String>]`: The unique identifier of browserSite
+  - `[BrowserSiteListId <String>]`: The unique identifier of browserSiteList
   - `[DataSharingConsentId <String>]`: The unique identifier of dataSharingConsent
   - `[DetectedAppId <String>]`: The unique identifier of detectedApp
   - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The unique identifier of deviceAndAppManagementAssignmentFilter
@@ -415,8 +436,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsInformationProtectionAppLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionAppLearningSummary
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
-  - `[WindowsQualityUpdateProfileAssignmentId <String>]`: The unique identifier of windowsQualityUpdateProfileAssignment
-  - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
 `SETTINGDEFINITIONS <IMicrosoftGraphDeviceManagementSettingDefinition[]>`: The setting definitions this category contains
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
@@ -440,8 +459,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ValueJson <String>]`: JSON representation of the value
 
 ## RELATED LINKS
-[Update-MgDeviceManagementIntentCategory](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementIntentCategory?view=graph-powershell-v1.0)
-
-## RELATED LINKS
-[Update-MgDeviceManagementIntentCategory](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementIntentCategory?view=graph-powershell-v1.0)
 

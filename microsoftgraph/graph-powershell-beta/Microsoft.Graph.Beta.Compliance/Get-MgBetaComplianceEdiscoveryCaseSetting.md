@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Compliance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasesetting
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Read the properties and relationships of an eDiscovery caseSettings object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgComplianceEdiscoveryCaseSetting](/powershell/module/Microsoft.Graph.Compliance/Get-MgComplianceEdiscoveryCaseSetting?view=graph-powershell-v1.0)
 
 ## SYNTAX
 
@@ -32,17 +29,21 @@ Read the properties and relationships of an eDiscovery caseSettings object.
 
 ## EXAMPLES
 
-### Example 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 Get-MgBetaComplianceEdiscoveryCaseSetting -CaseId $caseId
 ```
 
-### Example 2
+
+
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 Get-MgBetaComplianceEdiscoveryCaseSetting -CaseId $caseId
 ```
+
+
 
 ## PARAMETERS
 
@@ -50,7 +51,7 @@ Get-MgBetaComplianceEdiscoveryCaseSetting -CaseId $caseId
 The unique identifier of case
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -65,7 +66,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -81,7 +82,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IComplianceIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IComplianceIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -96,7 +97,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -113,9 +114,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IComplianceIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEdiscoveryCaseSettings
+
 ## NOTES
 
 ALIASES
@@ -126,6 +129,7 @@ To create the parameters described below, construct a hash table containing the 
 
 
 `INPUTOBJECT <IComplianceIdentity>`: Identity Parameter
+  - `[AuthoredNoteId <String>]`: The unique identifier of authoredNote
   - `[CaseId <String>]`: The unique identifier of case
   - `[CaseOperationId <String>]`: The unique identifier of caseOperation
   - `[CustodianId <String>]`: The unique identifier of custodian
@@ -136,11 +140,12 @@ To create the parameters described below, construct a hash table containing the 
   - `[ReviewSetQueryId <String>]`: The unique identifier of reviewSetQuery
   - `[SiteSourceId <String>]`: The unique identifier of siteSource
   - `[SourceCollectionId <String>]`: The unique identifier of sourceCollection
+  - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
   - `[TagId <String>]`: The unique identifier of tag
   - `[TagId1 <String>]`: The unique identifier of tag
   - `[UnifiedGroupSourceId <String>]`: The unique identifier of unifiedGroupSource
+  - `[UserId <String>]`: The unique identifier of user
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
-[Get-MgComplianceEdiscoveryCaseSetting](/powershell/module/Microsoft.Graph.Compliance/Get-MgComplianceEdiscoveryCaseSetting?view=graph-powershell-v1.0)
 

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintservice
 schema: 2.0.0
@@ -10,37 +10,50 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property services in print
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgPrintService](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Update-MgPrintService?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaPrintService -PrintServiceId <String> [-AdditionalProperties <Hashtable>]
- [-Endpoints <IMicrosoftGraphPrintServiceEndpoint[]>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Endpoints <IMicrosoftGraphPrintServiceEndpoint[]>] [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaPrintService -PrintServiceId <String> -BodyParameter <IMicrosoftGraphPrintService> [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaPrintService -InputObject <IDevicesCloudPrintIdentity> [-AdditionalProperties <Hashtable>]
- [-Endpoints <IMicrosoftGraphPrintServiceEndpoint[]>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaPrintService -PrintServiceId <String> -BodyParameter <IMicrosoftGraphPrintService> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaPrintService -InputObject <IDevicesCloudPrintIdentity>
- -BodyParameter <IMicrosoftGraphPrintService> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPrintService> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaPrintService -InputObject <IDevicesCloudPrintIdentity> [-AdditionalProperties <Hashtable>]
+ [-Endpoints <IMicrosoftGraphPrintServiceEndpoint[]>] [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property services in print
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -48,7 +61,7 @@ Update the navigation property services in print
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -64,7 +77,7 @@ printService
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrintService
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrintService
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -82,7 +95,7 @@ Nullable.
 To construct, see NOTES section for ENDPOINTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrintServiceEndpoint[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrintServiceEndpoint[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -98,7 +111,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -114,8 +127,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDevicesCloudPrintIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDevicesCloudPrintIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -129,8 +142,8 @@ Accept wildcard characters: False
 The unique identifier of printService
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -144,7 +157,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -160,7 +173,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -177,10 +190,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDevicesCloudPrintIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrintService
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrintService
+
 ## NOTES
 
 ALIASES
@@ -196,11 +212,13 @@ To create the parameters described below, construct a hash table containing the 
   - `[Endpoints <IMicrosoftGraphPrintServiceEndpoint[]>]`: Endpoints that can be used to access the service. Read-only. Nullable.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[DisplayName <String>]`: A human-readable display name for the endpoint.
+    - `[Name <String>]`: 
     - `[Uri <String>]`: The URI that can be used to access the service.
 
 `ENDPOINTS <IMicrosoftGraphPrintServiceEndpoint[]>`: Endpoints that can be used to access the service. Read-only. Nullable.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DisplayName <String>]`: A human-readable display name for the endpoint.
+  - `[Name <String>]`: 
   - `[Uri <String>]`: The URI that can be used to access the service.
 
 `INPUTOBJECT <IDevicesCloudPrintIdentity>`: Identity Parameter
@@ -219,5 +237,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgPrintService](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Update-MgPrintService?view=graph-powershell-v1.0)
 

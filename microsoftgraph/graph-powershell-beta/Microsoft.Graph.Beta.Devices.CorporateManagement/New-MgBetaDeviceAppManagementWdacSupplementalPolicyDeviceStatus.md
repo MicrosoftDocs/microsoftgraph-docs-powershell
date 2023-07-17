@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementwdacsupplementalpolicydevicestatus
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to deviceStatuses for deviceAppManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceAppManagementWdacSupplementalPolicyDeviceStatus](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementWdacSupplementalPolicyDeviceStatus?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -22,7 +19,7 @@ New-MgBetaDeviceAppManagementWdacSupplementalPolicyDeviceStatus
  [-DeploymentStatus <WindowsDefenderApplicationControlSupplementalPolicyStatuses>] [-DeviceId <String>]
  [-DeviceName <String>] [-Id <String>] [-LastSyncDateTime <DateTime>] [-OSDescription <String>]
  [-OSVersion <String>] [-Policy <IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicy>]
- [-PolicyVersion <String>] [-UserName <String>] [-UserPrincipalName <String>] [-WhatIf] [-Confirm]
+ [-PolicyVersion <String>] [-UserName <String>] [-UserPrincipalName <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -30,8 +27,16 @@ New-MgBetaDeviceAppManagementWdacSupplementalPolicyDeviceStatus
 ```
 New-MgBetaDeviceAppManagementWdacSupplementalPolicyDeviceStatus
  -WindowsDefenderApplicationControlSupplementalPolicyId <String>
- -BodyParameter <IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyDeploymentStatus> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyDeploymentStatus>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgBetaDeviceAppManagementWdacSupplementalPolicyDeviceStatus
+ -InputObject <IDevicesCorporateManagementIdentity>
+ -BodyParameter <IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyDeploymentStatus>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -41,20 +46,28 @@ New-MgBetaDeviceAppManagementWdacSupplementalPolicyDeviceStatus
  [-DeploymentStatus <WindowsDefenderApplicationControlSupplementalPolicyStatuses>] [-DeviceId <String>]
  [-DeviceName <String>] [-Id <String>] [-LastSyncDateTime <DateTime>] [-OSDescription <String>]
  [-OSVersion <String>] [-Policy <IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicy>]
- [-PolicyVersion <String>] [-UserName <String>] [-UserPrincipalName <String>] [-WhatIf] [-Confirm]
+ [-PolicyVersion <String>] [-UserName <String>] [-UserPrincipalName <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgBetaDeviceAppManagementWdacSupplementalPolicyDeviceStatus
- -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyDeploymentStatus> [-WhatIf]
- [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to deviceStatuses for deviceAppManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -62,7 +75,7 @@ Create new navigation property to deviceStatuses for deviceAppManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -78,7 +91,7 @@ Contains properties for the deployment state of a WindowsDefenderApplicationCont
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -93,7 +106,7 @@ Accept wildcard characters: False
 Enum values for the various WindowsDefenderApplicationControl supplemental policy deployment statuses.
 
 ```yaml
-Type: WindowsDefenderApplicationControlSupplementalPolicyStatuses
+Type: Microsoft.Graph.Beta.PowerShell.Support.WindowsDefenderApplicationControlSupplementalPolicyStatuses
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -108,7 +121,7 @@ Accept wildcard characters: False
 Device ID.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -123,7 +136,7 @@ Accept wildcard characters: False
 Device name.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -139,7 +152,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -155,8 +168,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDevicesCorporateManagementIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDevicesCorporateManagementIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -170,7 +183,7 @@ Accept wildcard characters: False
 Last sync date time.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -185,7 +198,7 @@ Accept wildcard characters: False
 Windows OS Version Description.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -200,7 +213,7 @@ Accept wildcard characters: False
 Windows OS Version.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -216,7 +229,7 @@ windowsDefenderApplicationControlSupplementalPolicy
 To construct, see NOTES section for POLICY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicy
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicy
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -231,7 +244,7 @@ Accept wildcard characters: False
 Human readable version of the WindowsDefenderApplicationControl supplemental policy.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -246,7 +259,7 @@ Accept wildcard characters: False
 The name of the user of this device.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -261,7 +274,7 @@ Accept wildcard characters: False
 User Principal Name.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -276,8 +289,8 @@ Accept wildcard characters: False
 The unique identifier of windowsDefenderApplicationControlSupplementalPolicy
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -291,7 +304,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -307,7 +320,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -324,15 +337,18 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDevicesCorporateManagementIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
+
 ## NOTES
 
 ALIASES
 
-New-MgDeviceAppMgtWdacSupplementalPolicyDeviceStatus
+New-BetaDeviceAppMgtWdacSupplementalPolicyDeviceStatus
 
 COMPLEX PARAMETER PROPERTIES
 
@@ -351,26 +367,26 @@ To create the parameters described below, construct a hash table containing the 
   - `[Policy <IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicy>]`: windowsDefenderApplicationControlSupplementalPolicy
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[Assignments <IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyAssignment[]>]`: The associated group assignments for this WindowsDefenderApplicationControl supplemental policy.
+    - `[Assignments <IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyAssignment[]>]`: The associated group assignments for the Windows Defender Application Control Supplemental Policy.
       - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
         - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
-    - `[Content <Byte[]>]`: The WindowsDefenderApplicationControl supplemental policy content in byte array format.
-    - `[ContentFileName <String>]`: The WindowsDefenderApplicationControl supplemental policy content's file name.
-    - `[CreationDateTime <DateTime?>]`: The date and time when the WindowsDefenderApplicationControl supplemental policy was uploaded.
+    - `[Content <Byte[]>]`: Indicates the content of the Windows Defender Application Control Supplemental Policy in byte array format.
+    - `[ContentFileName <String>]`: Indicates the file name associated with the content of the Windows Defender Application Control Supplemental Policy.
+    - `[CreationDateTime <DateTime?>]`: Indicates the created date and time when the Windows Defender Application Control Supplemental Policy was uploaded.
     - `[DeploySummary <IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyDeploymentSummary>]`: Contains properties for the deployment summary of a WindowsDefenderApplicationControl supplemental policy.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[DeployedDeviceCount <Int32?>]`: Number of Devices that have successfully deployed this WindowsDefenderApplicationControl supplemental policy.
       - `[FailedDeviceCount <Int32?>]`: Number of Devices that have failed to deploy this WindowsDefenderApplicationControl supplemental policy.
-    - `[Description <String>]`: The description of WindowsDefenderApplicationControl supplemental policy.
+    - `[Description <String>]`: The description of the Windows Defender Application Control Supplemental Policy.
     - `[DeviceStatuses <IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyDeploymentStatus[]>]`: The list of device deployment states for this WindowsDefenderApplicationControl supplemental policy.
-    - `[DisplayName <String>]`: The display name of WindowsDefenderApplicationControl supplemental policy.
-    - `[LastModifiedDateTime <DateTime?>]`: The date and time when the WindowsDefenderApplicationControl supplemental policy was last modified.
-    - `[RoleScopeTagIds <String[]>]`: List of Scope Tags for this WindowsDefenderApplicationControl supplemental policy entity.
-    - `[Version <String>]`: The WindowsDefenderApplicationControl supplemental policy's version.
+    - `[DisplayName <String>]`: The display name of the Windows Defender Application Control Supplemental Policy.
+    - `[LastModifiedDateTime <DateTime?>]`: Indicates the last modified date and time of the Windows Defender Application Control Supplemental Policy.
+    - `[RoleScopeTagIds <String[]>]`: List of Scope Tags for the Windows Defender Application Control Supplemental Policy entity.
+    - `[Version <String>]`: Indicates the Windows Defender Application Control Supplemental Policy's version.
   - `[PolicyVersion <String>]`: Human readable version of the WindowsDefenderApplicationControl supplemental policy.
   - `[UserName <String>]`: The name of the user of this device.
   - `[UserPrincipalName <String>]`: User Principal Name.
@@ -444,21 +460,21 @@ To create the parameters described below, construct a hash table containing the 
 `POLICY <IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicy>`: windowsDefenderApplicationControlSupplementalPolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Assignments <IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyAssignment[]>]`: The associated group assignments for this WindowsDefenderApplicationControl supplemental policy.
+  - `[Assignments <IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyAssignment[]>]`: The associated group assignments for the Windows Defender Application Control Supplemental Policy.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
       - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
-  - `[Content <Byte[]>]`: The WindowsDefenderApplicationControl supplemental policy content in byte array format.
-  - `[ContentFileName <String>]`: The WindowsDefenderApplicationControl supplemental policy content's file name.
-  - `[CreationDateTime <DateTime?>]`: The date and time when the WindowsDefenderApplicationControl supplemental policy was uploaded.
+  - `[Content <Byte[]>]`: Indicates the content of the Windows Defender Application Control Supplemental Policy in byte array format.
+  - `[ContentFileName <String>]`: Indicates the file name associated with the content of the Windows Defender Application Control Supplemental Policy.
+  - `[CreationDateTime <DateTime?>]`: Indicates the created date and time when the Windows Defender Application Control Supplemental Policy was uploaded.
   - `[DeploySummary <IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyDeploymentSummary>]`: Contains properties for the deployment summary of a WindowsDefenderApplicationControl supplemental policy.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[DeployedDeviceCount <Int32?>]`: Number of Devices that have successfully deployed this WindowsDefenderApplicationControl supplemental policy.
     - `[FailedDeviceCount <Int32?>]`: Number of Devices that have failed to deploy this WindowsDefenderApplicationControl supplemental policy.
-  - `[Description <String>]`: The description of WindowsDefenderApplicationControl supplemental policy.
+  - `[Description <String>]`: The description of the Windows Defender Application Control Supplemental Policy.
   - `[DeviceStatuses <IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyDeploymentStatus[]>]`: The list of device deployment states for this WindowsDefenderApplicationControl supplemental policy.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[DeploymentStatus <WindowsDefenderApplicationControlSupplementalPolicyStatuses?>]`: Enum values for the various WindowsDefenderApplicationControl supplemental policy deployment statuses.
@@ -471,14 +487,10 @@ To create the parameters described below, construct a hash table containing the 
     - `[PolicyVersion <String>]`: Human readable version of the WindowsDefenderApplicationControl supplemental policy.
     - `[UserName <String>]`: The name of the user of this device.
     - `[UserPrincipalName <String>]`: User Principal Name.
-  - `[DisplayName <String>]`: The display name of WindowsDefenderApplicationControl supplemental policy.
-  - `[LastModifiedDateTime <DateTime?>]`: The date and time when the WindowsDefenderApplicationControl supplemental policy was last modified.
-  - `[RoleScopeTagIds <String[]>]`: List of Scope Tags for this WindowsDefenderApplicationControl supplemental policy entity.
-  - `[Version <String>]`: The WindowsDefenderApplicationControl supplemental policy's version.
+  - `[DisplayName <String>]`: The display name of the Windows Defender Application Control Supplemental Policy.
+  - `[LastModifiedDateTime <DateTime?>]`: Indicates the last modified date and time of the Windows Defender Application Control Supplemental Policy.
+  - `[RoleScopeTagIds <String[]>]`: List of Scope Tags for the Windows Defender Application Control Supplemental Policy entity.
+  - `[Version <String>]`: Indicates the Windows Defender Application Control Supplemental Policy's version.
 
 ## RELATED LINKS
-[New-MgDeviceAppManagementWdacSupplementalPolicyDeviceStatus](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementWdacSupplementalPolicyDeviceStatus?view=graph-powershell-v1.0)
-
-## RELATED LINKS
-[New-MgDeviceAppManagementWdacSupplementalPolicyDeviceStatus](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementWdacSupplementalPolicyDeviceStatus?view=graph-powershell-v1.0)
 

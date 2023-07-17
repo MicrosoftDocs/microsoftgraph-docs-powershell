@@ -1,48 +1,63 @@
 ---
-external help file: Microsoft.Graph.Groups-help.xml
+external help file:
 Module Name: Microsoft.Graph.Groups
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/copy-mggroupdriveroot
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/copy-mggrouponenotesectiontonotebook
 schema: 2.0.0
 ---
 
-# Copy-MgGroupDriveRoot
+# Copy-MgGroupOnenoteSectionToNotebook
 
 ## SYNOPSIS
-Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Copy-MgBetaGroupOnenoteSectionToNotebook](/powershell/module/Microsoft.Graph.Beta.Groups/Copy-MgBetaGroupOnenoteSectionToNotebook?view=graph-powershell-beta)
+For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
 ## SYNTAX
 
 ### CopyExpanded (Default)
 ```
-Copy-MgGroupDriveRoot -DriveId <String> -GroupId <String> [-AdditionalProperties <Hashtable>] [-Name <String>]
- [-ParentReference <IMicrosoftGraphItemReference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Copy-MgGroupOnenoteSectionToNotebook -GroupId <String> -OnenoteSectionId <String>
+ [-AdditionalProperties <Hashtable>] [-GroupId1 <String>] [-Id <String>] [-RenameAs <String>]
+ [-SiteCollectionId <String>] [-SiteId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Copy
 ```
-Copy-MgGroupDriveRoot -DriveId <String> -GroupId <String>
- -BodyParameter <IPaths1Yti2G4GroupsGroupIdDrivesDriveIdRootMicrosoftGraphCopyPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CopyViaIdentityExpanded
-```
-Copy-MgGroupDriveRoot -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>] [-Name <String>]
- [-ParentReference <IMicrosoftGraphItemReference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Copy-MgGroupOnenoteSectionToNotebook -GroupId <String> -OnenoteSectionId <String>
+ -BodyParameter <IPaths1Pi7DraGroupsGroupIdOnenoteSectionsOnenotesectionIdMicrosoftGraphCopytonotebookPostRequestbodyContentApplicationJsonSchema>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CopyViaIdentity
 ```
-Copy-MgGroupDriveRoot -InputObject <IGroupsIdentity>
- -BodyParameter <IPaths1Yti2G4GroupsGroupIdDrivesDriveIdRootMicrosoftGraphCopyPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Copy-MgGroupOnenoteSectionToNotebook -InputObject <IGroupsIdentity>
+ -BodyParameter <IPaths1Pi7DraGroupsGroupIdOnenoteSectionsOnenotesectionIdMicrosoftGraphCopytonotebookPostRequestbodyContentApplicationJsonSchema>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CopyViaIdentityExpanded
+```
+Copy-MgGroupOnenoteSectionToNotebook -InputObject <IGroupsIdentity> [-GroupId <String>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-RenameAs <String>] [-SiteCollectionId <String>]
+ [-SiteId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name.
+For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+Import-Module Microsoft.Graph.Users.Actions
+```
+
+$params = @{
+	Id = "id-value"
+	GroupId = "groupId-value"
+	RenameAs = "renameAs-value"
+}
+
+# A UPN can also be used as -UserId.
+Copy-MgUserOnenoteSectionToNotebook -UserId $userId -OnenoteSectionId $onenoteSectionId -BodyParameter $params
 
 ## PARAMETERS
 
@@ -50,7 +65,7 @@ Asynchronously creates a copy of an [driveItem][item-resource] (including any ch
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
 Aliases:
 
@@ -66,7 +81,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Yti2G4GroupsGroupIdDrivesDriveIdRootMicrosoftGraphCopyPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPaths1Pi7DraGroupsGroupIdOnenoteSectionsOnenotesectionIdMicrosoftGraphCopytonotebookPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Copy, CopyViaIdentity
 Aliases:
 
@@ -77,12 +92,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -DriveId
-The unique identifier of drive
+### -GroupId
+The unique identifier of group
 
 ```yaml
-Type: String
-Parameter Sets: CopyExpanded, Copy
+Type: System.String
+Parameter Sets: Copy, CopyExpanded, CopyViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -92,15 +107,30 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -GroupId
-The unique identifier of group
+### -GroupId1
+.
 
 ```yaml
-Type: String
-Parameter Sets: CopyExpanded, Copy
+Type: System.String
+Parameter Sets: CopyExpanded
 Aliases:
 
-Required: True
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Id
+.
+
+```yaml
+Type: System.String
+Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -112,8 +142,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IGroupsIdentity
-Parameter Sets: CopyViaIdentityExpanded, CopyViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+Parameter Sets: CopyViaIdentity, CopyViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -123,11 +153,26 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Name
+### -OnenoteSectionId
+The unique identifier of onenoteSection
+
+```yaml
+Type: System.String
+Parameter Sets: Copy, CopyExpanded
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RenameAs
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
 Aliases:
 
@@ -138,12 +183,26 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ParentReference
-itemReference
-To construct, see NOTES section for PARENTREFERENCE properties and create a hash table.
+### -SiteCollectionId
+.
 
 ```yaml
-Type: IMicrosoftGraphItemReference
+Type: System.String
+Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SiteId
+.
+
+```yaml
+Type: System.String
 Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
 Aliases:
 
@@ -158,7 +217,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -174,7 +233,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -191,10 +250,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths1Yti2G4GroupsGroupIdDrivesDriveIdRootMicrosoftGraphCopyPostRequestbodyContentApplicationJsonSchema
+
+### Microsoft.Graph.PowerShell.Models.IPaths1Pi7DraGroupsGroupIdOnenoteSectionsOnenotesectionIdMicrosoftGraphCopytonotebookPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDriveItem
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnenoteOperation
+
 ## NOTES
 
 ALIASES
@@ -204,27 +266,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-`BODYPARAMETER <IPaths1Yti2G4GroupsGroupIdDrivesDriveIdRootMicrosoftGraphCopyPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1Pi7DraGroupsGroupIdOnenoteSectionsOnenotesectionIdMicrosoftGraphCopytonotebookPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Name <String>]`: 
-  - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DriveId <String>]`: Unique identifier of the drive instance that contains the driveItem. Only returned if the item is located in a [drive][]. Read-only.
-    - `[DriveType <String>]`: Identifies the type of drive. Only returned if the item is located in a [drive][]. See [drive][] resource for values.
-    - `[Id <String>]`: Unique identifier of the driveItem in the drive or a listItem in a list. Read-only.
-    - `[Name <String>]`: The name of the item being referenced. Read-only.
-    - `[Path <String>]`: Path that can be used to navigate to the item. Read-only.
-    - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the [Shares][] API.
-    - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[ListId <String>]`: The unique identifier (guid) for the item's list in SharePoint.
-      - `[ListItemId <String>]`: An integer identifier for the item within the containing list.
-      - `[ListItemUniqueId <String>]`: The unique identifier (guid) for the item within OneDrive for Business or a SharePoint site.
-      - `[SiteId <String>]`: The unique identifier (guid) for the item's site collection (SPSite).
-      - `[SiteUrl <String>]`: The SharePoint URL for the site that contains the item.
-      - `[TenantId <String>]`: The unique identifier (guid) for the tenancy.
-      - `[WebId <String>]`: The unique identifier (guid) for the item's site (SPWeb).
-    - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource or the parent list of the listItem resource. The value is the same as the id property of that [site][] resource. It is an opaque string that consists of three identifiers of the site. For OneDrive, this property is not populated.
+  - `[GroupId <String>]`: 
+  - `[Id <String>]`: 
+  - `[RenameAs <String>]`: 
+  - `[SiteCollectionId <String>]`: 
+  - `[SiteId <String>]`: 
 
 `INPUTOBJECT <IGroupsIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
@@ -263,25 +311,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[Token <String>]`: Usage: token='{token}'
   - `[User <String>]`: Usage: User='{User}'
 
-`PARENTREFERENCE <IMicrosoftGraphItemReference>`: itemReference
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DriveId <String>]`: Unique identifier of the drive instance that contains the driveItem. Only returned if the item is located in a [drive][]. Read-only.
-  - `[DriveType <String>]`: Identifies the type of drive. Only returned if the item is located in a [drive][]. See [drive][] resource for values.
-  - `[Id <String>]`: Unique identifier of the driveItem in the drive or a listItem in a list. Read-only.
-  - `[Name <String>]`: The name of the item being referenced. Read-only.
-  - `[Path <String>]`: Path that can be used to navigate to the item. Read-only.
-  - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the [Shares][] API.
-  - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[ListId <String>]`: The unique identifier (guid) for the item's list in SharePoint.
-    - `[ListItemId <String>]`: An integer identifier for the item within the containing list.
-    - `[ListItemUniqueId <String>]`: The unique identifier (guid) for the item within OneDrive for Business or a SharePoint site.
-    - `[SiteId <String>]`: The unique identifier (guid) for the item's site collection (SPSite).
-    - `[SiteUrl <String>]`: The SharePoint URL for the site that contains the item.
-    - `[TenantId <String>]`: The unique identifier (guid) for the tenancy.
-    - `[WebId <String>]`: The unique identifier (guid) for the item's site (SPWeb).
-  - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource or the parent list of the listItem resource. The value is the same as the id property of that [site][] resource. It is an opaque string that consists of three identifiers of the site. For OneDrive, this property is not populated.
-
 ## RELATED LINKS
-[Copy-MgBetaGroupOnenoteSectionToNotebook](/powershell/module/Microsoft.Graph.Beta.Groups/Copy-MgBetaGroupOnenoteSectionToNotebook?view=graph-powershell-beta)
 

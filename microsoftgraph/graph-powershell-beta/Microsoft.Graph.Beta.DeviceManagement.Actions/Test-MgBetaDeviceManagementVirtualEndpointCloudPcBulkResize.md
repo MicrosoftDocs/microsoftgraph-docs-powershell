@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/test-mgbetadevicemanagementvirtualendpointcloudpcbulkresize
 schema: 2.0.0
@@ -8,28 +8,41 @@ schema: 2.0.0
 # Test-MgBetaDeviceManagementVirtualEndpointCloudPcBulkResize
 
 ## SYNOPSIS
-Invoke action validateBulkResize
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Test-MgDeviceManagementVirtualEndpointCloudPcBulkResize](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Test-MgDeviceManagementVirtualEndpointCloudPcBulkResize?view=graph-powershell-v1.0)
+Validate that a set of cloudPC devices meet the requirements to be bulk resized.
 
 ## SYNTAX
 
 ### ValidateExpanded (Default)
 ```
 Test-MgBetaDeviceManagementVirtualEndpointCloudPcBulkResize [-AdditionalProperties <Hashtable>]
- [-CloudPcIds <String[]>] [-TargetServicePlanId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-CloudPcIds <String[]>] [-TargetServicePlanId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Validate
 ```
 Test-MgBetaDeviceManagementVirtualEndpointCloudPcBulkResize
  -BodyParameter <IPathsLvwgawDevicemanagementVirtualendpointCloudpcsMicrosoftGraphValidatebulkresizePostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke action validateBulkResize
+Validate that a set of cloudPC devices meet the requirements to be bulk resized.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -37,7 +50,7 @@ Invoke action validateBulkResize
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: ValidateExpanded
 Aliases:
 
@@ -53,7 +66,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsLvwgawDevicemanagementVirtualendpointCloudpcsMicrosoftGraphValidatebulkresizePostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsLvwgawDevicemanagementVirtualendpointCloudpcsMicrosoftGraphValidatebulkresizePostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Validate
 Aliases:
 
@@ -68,7 +81,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: ValidateExpanded
 Aliases:
 
@@ -83,7 +96,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: ValidateExpanded
 Aliases:
 
@@ -98,7 +111,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -114,7 +127,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -131,9 +144,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsLvwgawDevicemanagementVirtualendpointCloudpcsMicrosoftGraphValidatebulkresizePostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcResizeValidationResult
+
 ## NOTES
 
 ALIASES
@@ -149,5 +164,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TargetServicePlanId <String>]`: 
 
 ## RELATED LINKS
-[Test-MgDeviceManagementVirtualEndpointCloudPcBulkResize](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Test-MgDeviceManagementVirtualEndpointCloudPcBulkResize?view=graph-powershell-v1.0)
 

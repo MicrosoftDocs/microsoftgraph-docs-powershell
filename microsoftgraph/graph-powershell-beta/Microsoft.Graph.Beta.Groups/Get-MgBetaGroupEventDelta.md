@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Groups-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupeventdelta
 schema: 2.0.0
@@ -17,22 +17,20 @@ The initial call is a full synchronization, and every subsequent **delta** call 
 This allows you to maintain and synchronize a local store of events in the specified calendar, without having to fetch all the events of that calendar from the server every time.
 The following table lists the differences between the **delta** function on events and the **delta** function on a **calendarView** in a calendar.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupEventDelta](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupEventDelta?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Delta (Default)
 ```
-Get-MgBetaGroupEventDelta -GroupId <String> [-Filter <String>] [-Property <String[]>] [-Search <String>]
- [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
- [<CommonParameters>]
+Get-MgBetaGroupEventDelta -GroupId <String> -EndDateTime <String> -StartDateTime <String> [-Filter <String>]
+ [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-All]
+ [-CountVariable <String>] [-PageSize <Int32>] [<CommonParameters>]
 ```
 
 ### DeltaViaIdentity
 ```
-Get-MgBetaGroupEventDelta -InputObject <IGroupsIdentity> [-Filter <String>] [-Property <String[]>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-Count] [<CommonParameters>]
+Get-MgBetaGroupEventDelta -InputObject <IGroupsIdentity> -EndDateTime <String> -StartDateTime <String>
+ [-Count] [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>]
+ [-Top <Int32>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -45,13 +43,29 @@ The initial call is a full synchronization, and every subsequent **delta** call 
 This allows you to maintain and synchronize a local store of events in the specified calendar, without having to fetch all the events of that calendar from the server every time.
 The following table lists the differences between the **delta** function on events and the **delta** function on a **calendarView** in a calendar.
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -All
 List all pages.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: Delta
 Aliases:
 
@@ -66,7 +80,7 @@ Accept wildcard characters: False
 Include count of items
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: DeltaViaIdentity
 Aliases:
 
@@ -82,7 +96,7 @@ Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delta
 Aliases: CV
 
@@ -93,11 +107,27 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -EndDateTime
+The end date and time of the time range in the function, represented in ISO 8601 format.
+For example, 2019-11-08T20:00:00-08:00
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Filter
 Filter items by property values
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -112,7 +142,7 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delta
 Aliases:
 
@@ -128,7 +158,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IGroupsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
 Parameter Sets: DeltaViaIdentity
 Aliases:
 
@@ -143,7 +173,7 @@ Accept wildcard characters: False
 Sets the page size of results.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: Delta
 Aliases:
 
@@ -158,7 +188,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -173,7 +203,22 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: String
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: System.Int32
 Parameter Sets: (All)
 Aliases:
 
@@ -188,7 +233,7 @@ Accept wildcard characters: False
 Order items by property values
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: OrderBy
 
@@ -199,28 +244,29 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Top
-Show only the first n items
+### -StartDateTime
+The start date and time of the time range in the function, represented in ISO 8601 format.
+For example, 2019-11-08T20:00:00-08:00
 
 ```yaml
-Type: Int32
+Type: System.String
 Parameter Sets: (All)
-Aliases: Limit
+Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Skip
-Skip the first n items
+### -Top
+Show only the first n items
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: (All)
-Aliases:
+Aliases: Limit
 
 Required: False
 Position: Named
@@ -235,9 +281,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEvent
+
 ## NOTES
 
 ALIASES
@@ -294,5 +342,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgGroupEventDelta](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupEventDelta?view=graph-powershell-v1.0)
 

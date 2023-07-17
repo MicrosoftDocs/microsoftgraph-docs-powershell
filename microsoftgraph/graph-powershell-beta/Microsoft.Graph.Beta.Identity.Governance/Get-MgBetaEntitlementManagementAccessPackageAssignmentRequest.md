@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageassignmentrequest
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 In Azure AD entitlement management, retrieve the properties and relationships of an  accessPackageAssignmentRequest object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementAccessPackageAssignmentRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackageAssignmentRequest?view=graph-powershell-v1.0)
 
 ## SYNTAX
 
@@ -35,15 +32,16 @@ Get-MgBetaEntitlementManagementAccessPackageAssignmentRequest -InputObject <IIde
 
 ### List
 ```
-Get-MgBetaEntitlementManagementAccessPackageAssignmentRequest [-ExpandProperty <String[]>]
- [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+Get-MgBetaEntitlementManagementAccessPackageAssignmentRequest [-ExpandProperty <String[]>] [-Filter <String>]
+ [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-All]
+ [-CountVariable <String>] [-PageSize <Int32>] [<CommonParameters>]
 ```
 
 ### ListByAccessPackageId
 ```
-Get-MgBetaEntitlementManagementAccessPackageAssignmentRequest [-ExpandProperty <String[]>]
- [-Property <String[]>] [-Sort <String[]>] [-Top <Int32>] -AccessPackageId <String> [-All] [<CommonParameters>]
+Get-MgBetaEntitlementManagementAccessPackageAssignmentRequest -AccessPackageId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [-Sort <String[]>] [-Top <Int32>] [-All]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -51,7 +49,7 @@ In Azure AD entitlement management, retrieve the properties and relationships of
 
 ## EXAMPLES
 
-### Example 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Get-MgBetaEntitlementManagementAccessPackageAssignmentRequest | Format-List
 ```
@@ -72,7 +70,7 @@ Requestor               : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccess
 Schedule                : Microsoft.Graph.PowerShell.Models.MicrosoftGraphRequestSchedule
 AdditionalProperties    : {[@odata.context, https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackageAssignmentRequests/$entity]}
 
-### Example 2
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All'
 Get-MgBetaEntitlementManagementAccessPackageAssignmentRequest -AccessPackageAssignmentRequestId 'c82bc0cd-4fbc-4492-8c75-54c41dc74803'| Format-List
@@ -100,7 +98,7 @@ AdditionalProperties    : {[@odata.context, https://graph.microsoft.com/beta/$me
 The unique identifier of accessPackageAssignmentRequest
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -115,7 +113,7 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: ListByAccessPackageId
 Aliases:
 
@@ -130,8 +128,8 @@ Accept wildcard characters: False
 List all pages.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: ListAll, List, ListByAccessPackageId
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: List, ListAll, ListByAccessPackageId
 Aliases:
 
 Required: False
@@ -146,7 +144,7 @@ Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: List
 Aliases: CV
 
@@ -161,7 +159,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -176,7 +174,7 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: List
 Aliases:
 
@@ -192,7 +190,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -207,7 +205,7 @@ Accept wildcard characters: False
 Sets the page size of results.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: List
 Aliases:
 
@@ -222,7 +220,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -237,7 +235,22 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: String
+Type: System.String
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: System.Int32
 Parameter Sets: List
 Aliases:
 
@@ -252,8 +265,8 @@ Accept wildcard characters: False
 Order items by property values
 
 ```yaml
-Type: String[]
-Parameter Sets: ListAll, List, ListByAccessPackageId
+Type: System.String[]
+Parameter Sets: List, ListAll, ListByAccessPackageId
 Aliases: OrderBy
 
 Required: False
@@ -267,24 +280,9 @@ Accept wildcard characters: False
 Show only the first n items
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: List, ListByAccessPackageId
 Aliases: Limit
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List
-Aliases:
 
 Required: False
 Position: Named
@@ -299,9 +297,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessPackageAssignmentRequest
+
 ## NOTES
 
 ALIASES
@@ -410,5 +410,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgEntitlementManagementAccessPackageAssignmentRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackageAssignmentRequest?view=graph-powershell-v1.0)
 

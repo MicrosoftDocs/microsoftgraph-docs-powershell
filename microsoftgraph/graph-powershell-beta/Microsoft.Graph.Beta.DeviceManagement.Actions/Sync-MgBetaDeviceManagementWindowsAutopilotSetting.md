@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/sync-mgbetadevicemanagementwindowsautopilotsetting
 schema: 2.0.0
@@ -13,13 +13,10 @@ If the sync successful, this action returns a 204 No Content response code.
 If a sync is already in progress, the action returns a 409 Conflict response code.
 If this sync action is called within 10 minutes of the previous sync, the action returns a 429 Too Many Requests response code.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Sync-MgDeviceManagementWindowsAutopilotSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Sync-MgDeviceManagementWindowsAutopilotSetting?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ```
-Sync-MgBetaDeviceManagementWindowsAutopilotSetting [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Sync-MgBetaDeviceManagementWindowsAutopilotSetting [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -28,13 +25,29 @@ If the sync successful, this action returns a 204 No Content response code.
 If a sync is already in progress, the action returns a 409 Conflict response code.
 If this sync action is called within 10 minutes of the previous sync, the action returns a 429 Too Many Requests response code.
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -PassThru
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -49,7 +62,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -65,7 +78,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -84,10 +97,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
-[Sync-MgDeviceManagementWindowsAutopilotSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Sync-MgDeviceManagementWindowsAutopilotSetting?view=graph-powershell-v1.0)
 

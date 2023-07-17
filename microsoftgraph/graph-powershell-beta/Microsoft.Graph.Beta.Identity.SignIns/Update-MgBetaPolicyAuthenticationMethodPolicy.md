@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthenticationmethodpolicy
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of an authenticationMethodsPolicy object.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgPolicyAuthenticationMethodPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyAuthenticationMethodPolicy?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -22,14 +19,15 @@ Update-MgBetaPolicyAuthenticationMethodPolicy [-AdditionalProperties <Hashtable>
  [-Description <String>] [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
  [-PolicyMigrationState <String>] [-PolicyVersion <String>] [-ReconfirmationInDays <Int32>]
  [-RegistrationEnforcement <IMicrosoftGraphRegistrationEnforcement>]
- [-SystemCredentialPreferences <IMicrosoftGraphSystemCredentialPreferences>] [-WhatIf] [-Confirm]
+ [-ReportSuspiciousActivitySettings <IMicrosoftGraphReportSuspiciousActivitySettings>]
+ [-SystemCredentialPreferences <IMicrosoftGraphSystemCredentialPreferences>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaPolicyAuthenticationMethodPolicy -BodyParameter <IMicrosoftGraphAuthenticationMethodsPolicy>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -37,9 +35,10 @@ Update the properties of an authenticationMethodsPolicy object.
 
 ## EXAMPLES
 
-### Example 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 $params = @{
 	registrationEnforcement = @{
@@ -61,14 +60,13 @@ $params = @{
 
 Update-MgBetaPolicyAuthenticationMethodPolicy -BodyParameter $params
 
-```
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -85,7 +83,7 @@ Automatically expanded on GET /policies/authenticationMethodsPolicy.
 To construct, see NOTES section for AUTHENTICATIONMETHODCONFIGURATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAuthenticationMethodConfiguration[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthenticationMethodConfiguration[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -101,7 +99,7 @@ authenticationMethodsPolicy
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAuthenticationMethodsPolicy
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthenticationMethodsPolicy
 Parameter Sets: Update
 Aliases:
 
@@ -116,7 +114,7 @@ Accept wildcard characters: False
 A description of the policy.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -131,7 +129,7 @@ Accept wildcard characters: False
 The name of the policy.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -147,7 +145,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -162,7 +160,7 @@ Accept wildcard characters: False
 The date and time of the last update to the policy.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -177,7 +175,7 @@ Accept wildcard characters: False
 authenticationMethodsPolicyMigrationState
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -192,7 +190,7 @@ Accept wildcard characters: False
 The version of the policy in use.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -207,7 +205,7 @@ Accept wildcard characters: False
 Days before the user will be asked to reconfirm their method.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -223,7 +221,23 @@ registrationEnforcement
 To construct, see NOTES section for REGISTRATIONENFORCEMENT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRegistrationEnforcement
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRegistrationEnforcement
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ReportSuspiciousActivitySettings
+reportSuspiciousActivitySettings
+To construct, see NOTES section for REPORTSUSPICIOUSACTIVITYSETTINGS properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphReportSuspiciousActivitySettings
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -239,7 +253,7 @@ systemCredentialPreferences
 To construct, see NOTES section for SYSTEMCREDENTIALPREFERENCES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSystemCredentialPreferences
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSystemCredentialPreferences
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -254,7 +268,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -270,7 +284,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -287,9 +301,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthenticationMethodsPolicy
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthenticationMethodsPolicy
+
 ## NOTES
 
 ALIASES
@@ -330,14 +346,20 @@ To create the parameters described below, construct a hash table containing the 
         - `[Id <String>]`: The object identifier of an Azure AD user or group.
         - `[TargetType <String>]`: authenticationMethodTargetType
         - `[TargetedAuthenticationMethod <String>]`: The authentication method that the user is prompted to register. The value must be microsoftAuthenticator.
-      - `[SnoozeDurationInDays <Int32?>]`: Specifies the number of days that the user sees a prompt again if they select 'Not now' and snoozes the prompt. Minimum 0 days. Maximum: 14 days. If the value is '0' - The user is prompted during every MFA attempt.
+      - `[SnoozeDurationInDays <Int32?>]`: Specifies the number of days that the user sees a prompt again if they select 'Not now' and snoozes the prompt. Minimum 0 days. Maximum: 14 days. If the value is '0' – The user is prompted during every MFA attempt.
       - `[State <String>]`: advancedConfigState
+  - `[ReportSuspiciousActivitySettings <IMicrosoftGraphReportSuspiciousActivitySettings>]`: reportSuspiciousActivitySettings
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[IncludeTarget <IMicrosoftGraphIncludeTarget>]`: includeTarget
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The ID of the entity targeted.
+      - `[TargetType <String>]`: authenticationMethodTargetType
+    - `[State <String>]`: advancedConfigState
+    - `[VoiceReportingCode <Int32?>]`: Specifies the number the user will enter on their phone to report the MFA prompt as suspicious.
   - `[SystemCredentialPreferences <IMicrosoftGraphSystemCredentialPreferences>]`: systemCredentialPreferences
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ExcludeTargets <IMicrosoftGraphExcludeTarget[]>]`: Users and groups excluded from the preferred authentication method experience of the system.
     - `[IncludeTargets <IMicrosoftGraphIncludeTarget[]>]`: Users and groups included in the preferred authentication method experience of the system.
-      - `[Id <String>]`: The ID of the entity targeted.
-      - `[TargetType <String>]`: authenticationMethodTargetType
     - `[State <String>]`: advancedConfigState
 
 `REGISTRATIONENFORCEMENT <IMicrosoftGraphRegistrationEnforcement>`: registrationEnforcement
@@ -351,8 +373,17 @@ To create the parameters described below, construct a hash table containing the 
       - `[Id <String>]`: The object identifier of an Azure AD user or group.
       - `[TargetType <String>]`: authenticationMethodTargetType
       - `[TargetedAuthenticationMethod <String>]`: The authentication method that the user is prompted to register. The value must be microsoftAuthenticator.
-    - `[SnoozeDurationInDays <Int32?>]`: Specifies the number of days that the user sees a prompt again if they select 'Not now' and snoozes the prompt. Minimum 0 days. Maximum: 14 days. If the value is '0' - The user is prompted during every MFA attempt.
+    - `[SnoozeDurationInDays <Int32?>]`: Specifies the number of days that the user sees a prompt again if they select 'Not now' and snoozes the prompt. Minimum 0 days. Maximum: 14 days. If the value is '0' – The user is prompted during every MFA attempt.
     - `[State <String>]`: advancedConfigState
+
+`REPORTSUSPICIOUSACTIVITYSETTINGS <IMicrosoftGraphReportSuspiciousActivitySettings>`: reportSuspiciousActivitySettings
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[IncludeTarget <IMicrosoftGraphIncludeTarget>]`: includeTarget
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The ID of the entity targeted.
+    - `[TargetType <String>]`: authenticationMethodTargetType
+  - `[State <String>]`: advancedConfigState
+  - `[VoiceReportingCode <Int32?>]`: Specifies the number the user will enter on their phone to report the MFA prompt as suspicious.
 
 `SYSTEMCREDENTIALPREFERENCES <IMicrosoftGraphSystemCredentialPreferences>`: systemCredentialPreferences
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -365,6 +396,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[State <String>]`: advancedConfigState
 
 ## RELATED LINKS
-[Update-MgPolicyAuthenticationMethodPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyAuthenticationMethodPolicy?view=graph-powershell-v1.0)
-
 

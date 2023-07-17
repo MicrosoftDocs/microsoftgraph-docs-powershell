@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyexternalidentitypolicy
 schema: 2.0.0
@@ -10,13 +10,11 @@ schema: 2.0.0
 ## SYNOPSIS
 Read the properties and relationships of the tenant-wide externalIdentitiesPolicy object that controls whether external users can leave an Azure AD tenant via self-service controls.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgPolicyExternalIdentityPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyExternalIdentityPolicy?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ```
-Get-MgBetaPolicyExternalIdentityPolicy [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaPolicyExternalIdentityPolicy [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -24,11 +22,13 @@ Read the properties and relationships of the tenant-wide externalIdentitiesPolic
 
 ## EXAMPLES
 
-### Example 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Get-MgBetaPolicyExternalIdentityPolicy
 ```
+
+
 
 ## PARAMETERS
 
@@ -36,7 +36,7 @@ Get-MgBetaPolicyExternalIdentityPolicy
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -51,7 +51,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -70,10 +70,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphExternalIdentitiesPolicy
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
-[Get-MgPolicyExternalIdentityPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyExternalIdentityPolicy?view=graph-powershell-v1.0)
 

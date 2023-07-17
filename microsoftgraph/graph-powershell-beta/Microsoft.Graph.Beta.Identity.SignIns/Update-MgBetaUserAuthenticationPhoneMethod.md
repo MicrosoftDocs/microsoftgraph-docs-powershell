@@ -1,50 +1,66 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetauserauthenticationoperation
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetauserauthenticationphonemethod
 schema: 2.0.0
 ---
 
-# Update-MgBetaUserAuthenticationOperation
+# Update-MgBetaUserAuthenticationPhoneMethod
 
 ## SYNOPSIS
-Update the navigation property operations in users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserAuthenticationPhoneMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgUserAuthenticationPhoneMethod?view=graph-powershell-v1.0)
+Update the phone number associated with a phone authentication method.
+You can't change a phone's type.
+To change a phone's type, add a new number of the desired type and then delete the object with the original type.
+If a user is enabled by policy to use SMS to sign in and the `mobile` number is changed, the system will attempt to register the number for use in that system.
 
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaUserAuthenticationOperation -LongRunningOperationId <String> -UserId <String>
- [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Id <String>]
- [-LastActionDateTime <DateTime>] [-ResourceLocation <String>] [-Status <String>] [-StatusDetail <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaUserAuthenticationPhoneMethod -PhoneAuthenticationMethodId <String> -UserId <String>
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-PhoneNumber <String>] [-PhoneType <String>]
+ [-SmsSignInState <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaUserAuthenticationOperation -LongRunningOperationId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphLongRunningOperation> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaUserAuthenticationOperation -InputObject <IIdentitySignInsIdentity>
- [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Id <String>]
- [-LastActionDateTime <DateTime>] [-ResourceLocation <String>] [-Status <String>] [-StatusDetail <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaUserAuthenticationPhoneMethod -PhoneAuthenticationMethodId <String> -UserId <String>
+ -BodyParameter <IMicrosoftGraphPhoneAuthenticationMethod> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgBetaUserAuthenticationOperation -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphLongRunningOperation> [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaUserAuthenticationPhoneMethod -InputObject <IIdentitySignInsIdentity>
+ -BodyParameter <IMicrosoftGraphPhoneAuthenticationMethod> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaUserAuthenticationPhoneMethod -InputObject <IIdentitySignInsIdentity>
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-PhoneNumber <String>] [-PhoneType <String>]
+ [-SmsSignInState <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property operations in users
+Update the phone number associated with a phone authentication method.
+You can't change a phone's type.
+To change a phone's type, add a new number of the desired type and then delete the object with the original type.
+If a user is enabled by policy to use SMS to sign in and the `mobile` number is changed, the system will attempt to register the number for use in that system.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
+
+$params = @{
+	phoneNumber = "+1 2065555554"
+	phoneType = "mobile"
+}
+
+# A UPN can also be used as -UserId.
+Update-MgBetaUserAuthenticationPhoneMethod -UserId $userId -PhoneAuthenticationMethodId $phoneAuthenticationMethodId -BodyParameter $params
 
 ## PARAMETERS
 
@@ -52,7 +68,7 @@ Update the navigation property operations in users
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -64,11 +80,11 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-longRunningOperation
+phoneAuthenticationMethod
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphLongRunningOperation
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPhoneAuthenticationMethod
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -79,29 +95,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -CreatedDateTime
-The start time of the operation.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-
-```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Id
 The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -117,8 +116,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentitySignInsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -128,29 +127,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -LastActionDateTime
-The time of the last action in the operation.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+### -PhoneAuthenticationMethodId
+The unique identifier of phoneAuthenticationMethod
 
 ```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -LongRunningOperationId
-The unique identifier of longRunningOperation
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -160,11 +142,14 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ResourceLocation
-URI of the resource that the operation is performed on.
+### -PhoneNumber
+The phone number to text or call for authentication.
+Phone numbers use the format '+\<country code\> \<number\>x\<extension\>', with extension optional.
+For example, +1 5555551234 or +1 5555551234x123 are valid.
+Numbers are rejected when creating/updating if they do not match the required format.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -175,11 +160,11 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Status
-longRunningOperationStatus
+### -PhoneType
+authenticationPhoneType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -190,11 +175,11 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -StatusDetail
-Details about the status of the operation.
+### -SmsSignInState
+authenticationMethodSignInState
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -209,8 +194,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -224,7 +209,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -240,7 +225,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -257,10 +242,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphLongRunningOperation
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPhoneAuthenticationMethod
+
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphLongRunningOperation
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPhoneAuthenticationMethod
+
 ## NOTES
 
 ALIASES
@@ -270,14 +258,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-`BODYPARAMETER <IMicrosoftGraphLongRunningOperation>`: longRunningOperation
+`BODYPARAMETER <IMicrosoftGraphPhoneAuthenticationMethod>`: phoneAuthenticationMethod
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[CreatedDateTime <DateTime?>]`: The start time of the operation. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[LastActionDateTime <DateTime?>]`: The time of the last action in the operation. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[ResourceLocation <String>]`: URI of the resource that the operation is performed on.
-  - `[Status <String>]`: longRunningOperationStatus
-  - `[StatusDetail <String>]`: Details about the status of the operation.
+  - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+<country code> <number>x<extension>', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
+  - `[PhoneType <String>]`: authenticationPhoneType
+  - `[SmsSignInState <String>]`: authenticationMethodSignInState
 
 `INPUTOBJECT <IIdentitySignInsIdentity>`: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: The unique identifier of activityBasedTimeoutPolicy
@@ -356,5 +342,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Update-MgUserAuthenticationPhoneMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgUserAuthenticationPhoneMethod?view=graph-powershell-v1.0)
 

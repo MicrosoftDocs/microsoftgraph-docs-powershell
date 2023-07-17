@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Search-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydatarolegroup
 schema: 2.0.0
@@ -10,26 +10,39 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to roleGroups for external
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgExternalIndustryDataRoleGroup](/powershell/module/Microsoft.Graph.Search/New-MgExternalIndustryDataRoleGroup?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgBetaExternalIndustryDataRoleGroup [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
- [-Id <String>] [-Roles <IMicrosoftGraphIndustryDataRoleReferenceValue[]>] [-WhatIf] [-Confirm]
+ [-Id <String>] [-Roles <IMicrosoftGraphIndustryDataRoleReferenceValue[]>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaExternalIndustryDataRoleGroup -BodyParameter <IMicrosoftGraphIndustryDataRoleGroup> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaExternalIndustryDataRoleGroup -BodyParameter <IMicrosoftGraphIndustryDataRoleGroup> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to roleGroups for external
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -37,7 +50,7 @@ Create new navigation property to roleGroups for external
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -53,7 +66,7 @@ roleGroup
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIndustryDataRoleGroup
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIndustryDataRoleGroup
 Parameter Sets: Create
 Aliases:
 
@@ -68,7 +81,7 @@ Accept wildcard characters: False
 The name of the role group.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -84,7 +97,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -100,7 +113,7 @@ The set of roles included in the role group.
 To construct, see NOTES section for ROLES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIndustryDataRoleReferenceValue[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIndustryDataRoleReferenceValue[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -115,7 +128,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -131,7 +144,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -148,9 +161,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIndustryDataRoleGroup
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIndustryDataRoleGroup
+
 ## NOTES
 
 ALIASES
@@ -185,5 +200,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[SortIndex <Int32?>]`: The ordering index to present the definitions within a type consistently in user interfaces.
 
 ## RELATED LINKS
-[New-MgExternalIndustryDataRoleGroup](/powershell/module/Microsoft.Graph.Search/New-MgExternalIndustryDataRoleGroup?view=graph-powershell-v1.0)
 

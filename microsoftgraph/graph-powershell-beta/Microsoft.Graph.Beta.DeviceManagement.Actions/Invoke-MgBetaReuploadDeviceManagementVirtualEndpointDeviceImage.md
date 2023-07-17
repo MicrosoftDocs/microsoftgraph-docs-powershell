@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetareuploaddevicemanagementvirtualendpointdeviceimage
 schema: 2.0.0
@@ -10,21 +10,18 @@ schema: 2.0.0
 ## SYNOPSIS
 Reupload a cloudPcDeviceImage object that failed to upload.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgReuploadDeviceManagementVirtualEndpointDeviceImage](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgReuploadDeviceManagementVirtualEndpointDeviceImage?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Reupload (Default)
 ```
 Invoke-MgBetaReuploadDeviceManagementVirtualEndpointDeviceImage -CloudPcDeviceImageId <String> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### ReuploadViaIdentity
 ```
-Invoke-MgBetaReuploadDeviceManagementVirtualEndpointDeviceImage -InputObject <IDeviceManagementActionsIdentity>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgBetaReuploadDeviceManagementVirtualEndpointDeviceImage
+ -InputObject <IDeviceManagementActionsIdentity> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -32,11 +29,13 @@ Reupload a cloudPcDeviceImage object that failed to upload.
 
 ## EXAMPLES
 
-### Example 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
 Invoke-MgBetaReuploadDeviceManagementVirtualEndpointDeviceImage -CloudPcDeviceImageId $cloudPcDeviceImageId
 ```
+
+
 
 ## PARAMETERS
 
@@ -44,7 +43,7 @@ Invoke-MgBetaReuploadDeviceManagementVirtualEndpointDeviceImage -CloudPcDeviceIm
 The unique identifier of cloudPcDeviceImage
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Reupload
 Aliases:
 
@@ -60,7 +59,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementActionsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
 Parameter Sets: ReuploadViaIdentity
 Aliases:
 
@@ -75,7 +74,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -90,7 +89,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -106,7 +105,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -123,9 +122,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -189,5 +190,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
-[Invoke-MgReuploadDeviceManagementVirtualEndpointDeviceImage](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgReuploadDeviceManagementVirtualEndpointDeviceImage?view=graph-powershell-v1.0)
 

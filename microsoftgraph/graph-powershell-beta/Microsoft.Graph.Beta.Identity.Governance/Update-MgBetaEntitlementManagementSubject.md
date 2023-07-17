@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementsubject
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property subjects in identityGovernance
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgEntitlementManagementSubject](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgEntitlementManagementSubject?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -21,13 +18,19 @@ Update-MgBetaEntitlementManagementSubject -AccessPackageSubjectId <String> [-Add
  [-AltSecId <String>] [-ConnectedOrganization <IMicrosoftGraphConnectedOrganization>]
  [-ConnectedOrganizationId <String>] [-DisplayName <String>] [-Email <String>] [-Id <String>]
  [-ObjectId <String>] [-OnPremisesSecurityIdentifier <String>] [-PrincipalName <String>]
- [-SubjectLifecycle <String>] [-Type <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SubjectLifecycle <String>] [-Type <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaEntitlementManagementSubject -AccessPackageSubjectId <String>
- -BodyParameter <IMicrosoftGraphAccessPackageSubject> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessPackageSubject> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaEntitlementManagementSubject -InputObject <IIdentityGovernanceIdentity>
+ -BodyParameter <IMicrosoftGraphAccessPackageSubject> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -37,17 +40,27 @@ Update-MgBetaEntitlementManagementSubject -InputObject <IIdentityGovernanceIdent
  [-ConnectedOrganization <IMicrosoftGraphConnectedOrganization>] [-ConnectedOrganizationId <String>]
  [-DisplayName <String>] [-Email <String>] [-Id <String>] [-ObjectId <String>]
  [-OnPremisesSecurityIdentifier <String>] [-PrincipalName <String>] [-SubjectLifecycle <String>]
- [-Type <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaEntitlementManagementSubject -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAccessPackageSubject> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Type <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property subjects in identityGovernance
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -55,8 +68,8 @@ Update the navigation property subjects in identityGovernance
 The unique identifier of accessPackageSubject
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -70,7 +83,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -82,10 +95,10 @@ Accept wildcard characters: False
 ```
 
 ### -AltSecId
-.
+Not Supported.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -101,7 +114,7 @@ accessPackageSubject
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageSubject
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessPackageSubject
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -117,7 +130,7 @@ connectedOrganization
 To construct, see NOTES section for CONNECTEDORGANIZATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphConnectedOrganization
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConnectedOrganization
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -132,7 +145,7 @@ Accept wildcard characters: False
 The identifier of the connected organization of the subject.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -147,7 +160,7 @@ Accept wildcard characters: False
 The display name of the subject.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -162,7 +175,7 @@ Accept wildcard characters: False
 The email address of the subject.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -178,7 +191,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -194,8 +207,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -208,9 +221,10 @@ Accept wildcard characters: False
 ### -ObjectId
 The object identifier of the subject.
 null if the subject is not yet a user in the tenant.
+Alternate key.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -225,7 +239,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -240,7 +254,7 @@ Accept wildcard characters: False
 The principal name, if known, of the subject.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -255,7 +269,7 @@ Accept wildcard characters: False
 accessPackageSubjectLifecycle
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -270,7 +284,7 @@ Accept wildcard characters: False
 The resource type of the subject.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -285,7 +299,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -301,7 +315,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -318,10 +332,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessPackageSubject
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessPackageSubject
+
 ## NOTES
 
 ALIASES
@@ -334,7 +351,7 @@ To create the parameters described below, construct a hash table containing the 
 `BODYPARAMETER <IMicrosoftGraphAccessPackageSubject>`: accessPackageSubject
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[AltSecId <String>]`: 
+  - `[AltSecId <String>]`: Not Supported.
   - `[ConnectedOrganization <IMicrosoftGraphConnectedOrganization>]`: connectedOrganization
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
@@ -353,7 +370,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ConnectedOrganizationId <String>]`: The identifier of the connected organization of the subject.
   - `[DisplayName <String>]`: The display name of the subject.
   - `[Email <String>]`: The email address of the subject.
-  - `[ObjectId <String>]`: The object identifier of the subject. null if the subject is not yet a user in the tenant.
+  - `[ObjectId <String>]`: The object identifier of the subject. null if the subject is not yet a user in the tenant. Alternate key.
   - `[OnPremisesSecurityIdentifier <String>]`: 
   - `[PrincipalName <String>]`: The principal name, if known, of the subject.
   - `[SubjectLifecycle <String>]`: accessPackageSubjectLifecycle
@@ -474,8 +491,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Update-MgEntitlementManagementSubject](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgEntitlementManagementSubject?view=graph-powershell-v1.0)
-
-## RELATED LINKS
-[Update-MgEntitlementManagementSubject](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgEntitlementManagementSubject?view=graph-powershell-v1.0)
 

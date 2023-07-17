@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthenticationmethodpolicy
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of an authenticationMethodsPolicy object.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaPolicyAuthenticationMethodPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyAuthenticationMethodPolicy?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -21,13 +18,13 @@ Update-MgPolicyAuthenticationMethodPolicy [-AdditionalProperties <Hashtable>]
  [-AuthenticationMethodConfigurations <IMicrosoftGraphAuthenticationMethodConfiguration[]>]
  [-Description <String>] [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
  [-PolicyMigrationState <String>] [-PolicyVersion <String>] [-ReconfirmationInDays <Int32>]
- [-RegistrationEnforcement <IMicrosoftGraphRegistrationEnforcement>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-RegistrationEnforcement <IMicrosoftGraphRegistrationEnforcement>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgPolicyAuthenticationMethodPolicy -BodyParameter <IMicrosoftGraphAuthenticationMethodsPolicy> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgPolicyAuthenticationMethodPolicy -BodyParameter <IMicrosoftGraphAuthenticationMethodsPolicy>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -35,9 +32,10 @@ Update the properties of an authenticationMethodsPolicy object.
 
 ## EXAMPLES
 
-### Example 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
+```
 
 $params = @{
 	registrationEnforcement = @{
@@ -59,14 +57,13 @@ $params = @{
 
 Update-MgPolicyAuthenticationMethodPolicy -BodyParameter $params
 
-```
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -83,7 +80,7 @@ Automatically expanded on GET /policies/authenticationMethodsPolicy.
 To construct, see NOTES section for AUTHENTICATIONMETHODCONFIGURATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAuthenticationMethodConfiguration[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthenticationMethodConfiguration[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -99,7 +96,7 @@ authenticationMethodsPolicy
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAuthenticationMethodsPolicy
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthenticationMethodsPolicy
 Parameter Sets: Update
 Aliases:
 
@@ -115,7 +112,7 @@ A description of the policy.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -131,7 +128,7 @@ The name of the policy.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -147,7 +144,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -163,7 +160,7 @@ The date and time of the last update to the policy.
 Read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -178,7 +175,7 @@ Accept wildcard characters: False
 authenticationMethodsPolicyMigrationState
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -194,7 +191,7 @@ The version of the policy in use.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -209,7 +206,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -225,7 +222,7 @@ registrationEnforcement
 To construct, see NOTES section for REGISTRATIONENFORCEMENT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRegistrationEnforcement
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRegistrationEnforcement
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -240,7 +237,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -256,7 +253,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -273,9 +270,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthenticationMethodsPolicy
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthenticationMethodsPolicy
+
 ## NOTES
 
 ALIASES
@@ -334,6 +333,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[State <String>]`: advancedConfigState
 
 ## RELATED LINKS
-[Update-MgBetaPolicyAuthenticationMethodPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyAuthenticationMethodPolicy?view=graph-powershell-beta)
-
 

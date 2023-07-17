@@ -1,126 +1,72 @@
 ---
-external help file: Microsoft.Graph.Groups-help.xml
+external help file:
 Module Name: Microsoft.Graph.Groups
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgreplygroupthreadpostinreplyto
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgsnoozegroupcalendareventreminder
 schema: 2.0.0
 ---
 
-# Invoke-MgReplyGroupThreadPostInReplyTo
+# Invoke-MgSnoozeGroupCalendarEventReminder
 
 ## SYNOPSIS
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-See known limitations of open extensions for more information.
-The table in the Permissions section lists the resources that support open extensions.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaSnoozeGroupCalendarEventReminder](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaSnoozeGroupCalendarEventReminder?view=graph-powershell-beta)
+Postpone a reminder for an event in a user calendar until a new time.
 
 ## SYNTAX
 
-### ReplyExpanded (Default)
+### SnoozeExpanded (Default)
 ```
-Invoke-MgReplyGroupThreadPostInReplyTo -ConversationThreadId <String> -GroupId <String> -PostId <String>
- [-AdditionalProperties <Hashtable>] [-Post <IMicrosoftGraphPost>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### Reply
-```
-Invoke-MgReplyGroupThreadPostInReplyTo -ConversationThreadId <String> -GroupId <String> -PostId <String>
- -BodyParameter <IPaths1EjehpoGroupsGroupIdThreadsConversationthreadIdPostsPostIdInreplytoMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgSnoozeGroupCalendarEventReminder -EventId <String> -GroupId <String>
+ [-AdditionalProperties <Hashtable>] [-NewReminderTime <IMicrosoftGraphDateTimeZone>] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
-### ReplyViaIdentityExpanded
+### Snooze
 ```
-Invoke-MgReplyGroupThreadPostInReplyTo -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
- [-Post <IMicrosoftGraphPost>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgSnoozeGroupCalendarEventReminder -EventId <String> -GroupId <String>
+ -BodyParameter <IPathsLo9YtuGroupsGroupIdCalendarEventsEventIdMicrosoftGraphSnoozereminderPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### ReplyViaIdentity
+### SnoozeViaIdentity
 ```
-Invoke-MgReplyGroupThreadPostInReplyTo -InputObject <IGroupsIdentity>
- -BodyParameter <IPaths1EjehpoGroupsGroupIdThreadsConversationthreadIdPostsPostIdInreplytoMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgSnoozeGroupCalendarEventReminder -InputObject <IGroupsIdentity>
+ -BodyParameter <IPathsLo9YtuGroupsGroupIdCalendarEventsEventIdMicrosoftGraphSnoozereminderPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### SnoozeViaIdentityExpanded
+```
+Invoke-MgSnoozeGroupCalendarEventReminder -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
+ [-NewReminderTime <IMicrosoftGraphDateTimeZone>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-See known limitations of open extensions for more information.
-The table in the Permissions section lists the resources that support open extensions.
+Postpone a reminder for an event in a user calendar until a new time.
 
 ## EXAMPLES
 
-### Example 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Groups
+Import-Module Microsoft.Graph.Users.Actions
+```
 
 $params = @{
-	Post = @{
-		Body = @{
-			ContentType = ""
-			Content = "content-value"
-		}
-		ReceivedDateTime = [System.DateTime]::Parse("datetime-value")
-		HasAttachments = $true
-		From = @{
-			EmailAddress = @{
-				Name = "name-value"
-				Address = "address-value"
-			}
-		}
-		Sender = @{
-			EmailAddress = @{
-				Name = "name-value"
-				Address = "address-value"
-			}
-		}
-		ConversationThreadId = "conversationThreadId-value"
-		NewParticipants = @(
-			@{
-				EmailAddress = @{
-					Name = "name-value"
-					Address = "address-value"
-				}
-			}
-		)
-		ConversationId = "conversationId-value"
-		CreatedDateTime = [System.DateTime]::Parse("datetime-value")
-		LastModifiedDateTime = [System.DateTime]::Parse("datetime-value")
-		ChangeKey = "changeKey-value"
-		Categories = @(
-			"categories-value"
-		)
-		Id = "id-value"
-		InReplyTo = @{
-		}
-		Attachments = @(
-			@{
-				"@odata.type" = "#microsoft.graph.fileAttachment"
-				LastModifiedDateTime = [System.DateTime]::Parse("datetime-value")
-				Name = "name-value"
-				ContentType = "contentType-value"
-				Size = 99
-				IsInline = $true
-				Id = "id-value"
-			}
-		)
+	NewReminderTime = @{
+		DateTime = "dateTime-value"
+		TimeZone = "timeZone-value"
 	}
 }
 
-Invoke-MgReplyGroupThreadPost -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -BodyParameter $params
+# A UPN can also be used as -UserId.
+Invoke-MgSnoozeUserEventReminder -UserId $userId -EventId $eventId -BodyParameter $params
 
-```
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: ReplyExpanded, ReplyViaIdentityExpanded
+Type: System.Collections.Hashtable
+Parameter Sets: SnoozeExpanded, SnoozeViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -135,8 +81,8 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1EjehpoGroupsGroupIdThreadsConversationthreadIdPostsPostIdInreplytoMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Reply, ReplyViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IPathsLo9YtuGroupsGroupIdCalendarEventsEventIdMicrosoftGraphSnoozereminderPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Snooze, SnoozeViaIdentity
 Aliases:
 
 Required: True
@@ -146,12 +92,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ConversationThreadId
-The unique identifier of conversationThread
+### -EventId
+The unique identifier of event
 
 ```yaml
-Type: String
-Parameter Sets: ReplyExpanded, Reply
+Type: System.String
+Parameter Sets: Snooze, SnoozeExpanded
 Aliases:
 
 Required: True
@@ -165,8 +111,8 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: String
-Parameter Sets: ReplyExpanded, Reply
+Type: System.String
+Parameter Sets: Snooze, SnoozeExpanded
 Aliases:
 
 Required: True
@@ -181,8 +127,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IGroupsIdentity
-Parameter Sets: ReplyViaIdentityExpanded, ReplyViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+Parameter Sets: SnoozeViaIdentity, SnoozeViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -192,11 +138,27 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -NewReminderTime
+dateTimeTimeZone
+To construct, see NOTES section for NEWREMINDERTIME properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDateTimeZone
+Parameter Sets: SnoozeExpanded, SnoozeViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -PassThru
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -207,42 +169,11 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Post
-post
-To construct, see NOTES section for POST properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphPost
-Parameter Sets: ReplyExpanded, ReplyViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PostId
-The unique identifier of post
-
-```yaml
-Type: String
-Parameter Sets: ReplyExpanded, Reply
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -258,7 +189,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -275,10 +206,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths1EjehpoGroupsGroupIdThreadsConversationthreadIdPostsPostIdInreplytoMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema
+
+### Microsoft.Graph.PowerShell.Models.IPathsLo9YtuGroupsGroupIdCalendarEventsEventIdMicrosoftGraphSnoozereminderPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -288,47 +222,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-`BODYPARAMETER <IPaths1EjehpoGroupsGroupIdThreadsConversationthreadIdPostsPostIdInreplytoMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsLo9YtuGroupsGroupIdCalendarEventsEventIdMicrosoftGraphSnoozereminderPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Post <IMicrosoftGraphPost>]`: post
+  - `[NewReminderTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Categories <String[]>]`: The categories associated with the item
-    - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
-    - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-    - `[Attachments <IMicrosoftGraphAttachment[]>]`: Read-only. Nullable. Supports $expand.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-      - `[ContentType <String>]`: The MIME type.
-      - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
-      - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-      - `[Name <String>]`: The attachment's file name.
-      - `[Size <Int32?>]`: The length of the attachment in bytes.
-    - `[Body <IMicrosoftGraphItemBody>]`: itemBody
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Content <String>]`: The content of the item.
-      - `[ContentType <String>]`: bodyType
-    - `[ConversationId <String>]`: Unique ID of the conversation. Read-only.
-    - `[ConversationThreadId <String>]`: Unique ID of the conversation thread. Read-only.
-    - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the post. Read-only. Nullable. Supports $expand.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-    - `[From <IMicrosoftGraphRecipient>]`: recipient
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Address <String>]`: The email address of the person or entity.
-        - `[Name <String>]`: The display name of the person or entity.
-    - `[HasAttachments <Boolean?>]`: Indicates whether the post has at least one attachment. This is a default property.
-    - `[InReplyTo <IMicrosoftGraphPost>]`: post
-    - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the post. Read-only. Nullable.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-      - `[Value <String[]>]`: A collection of property values.
-    - `[NewParticipants <IMicrosoftGraphRecipient[]>]`: Conversation participants that were added to the thread as part of this post.
-    - `[ReceivedDateTime <DateTime?>]`: Specifies when the post was received. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[Sender <IMicrosoftGraphRecipient>]`: recipient
-    - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the post. Read-only. Nullable.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-      - `[Value <String>]`: A property value.
+    - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
+    - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
 
 `INPUTOBJECT <IGroupsIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
@@ -367,50 +266,10 @@ To create the parameters described below, construct a hash table containing the 
   - `[Token <String>]`: Usage: token='{token}'
   - `[User <String>]`: Usage: User='{User}'
 
-`POST <IMicrosoftGraphPost>`: post
+`NEWREMINDERTIME <IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Categories <String[]>]`: The categories associated with the item
-  - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
-  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[Attachments <IMicrosoftGraphAttachment[]>]`: Read-only. Nullable. Supports $expand.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-    - `[ContentType <String>]`: The MIME type.
-    - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
-    - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[Name <String>]`: The attachment's file name.
-    - `[Size <Int32?>]`: The length of the attachment in bytes.
-  - `[Body <IMicrosoftGraphItemBody>]`: itemBody
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Content <String>]`: The content of the item.
-    - `[ContentType <String>]`: bodyType
-  - `[ConversationId <String>]`: Unique ID of the conversation. Read-only.
-  - `[ConversationThreadId <String>]`: Unique ID of the conversation thread. Read-only.
-  - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the post. Read-only. Nullable. Supports $expand.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[From <IMicrosoftGraphRecipient>]`: recipient
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Address <String>]`: The email address of the person or entity.
-      - `[Name <String>]`: The display name of the person or entity.
-  - `[HasAttachments <Boolean?>]`: Indicates whether the post has at least one attachment. This is a default property.
-  - `[InReplyTo <IMicrosoftGraphPost>]`: post
-  - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the post. Read-only. Nullable.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-    - `[Value <String[]>]`: A collection of property values.
-  - `[NewParticipants <IMicrosoftGraphRecipient[]>]`: Conversation participants that were added to the thread as part of this post.
-  - `[ReceivedDateTime <DateTime?>]`: Specifies when the post was received. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[Sender <IMicrosoftGraphRecipient>]`: recipient
-  - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the post. Read-only. Nullable.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-    - `[Value <String>]`: A property value.
+  - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
+  - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
 
 ## RELATED LINKS
-[Invoke-MgBetaSnoozeGroupCalendarEventReminder](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaSnoozeGroupCalendarEventReminder?view=graph-powershell-beta)
-
-## RELATED LINKS
-[Invoke-MgBetaSnoozeGroupCalendarEventReminder](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaSnoozeGroupCalendarEventReminder?view=graph-powershell-beta)
-
 

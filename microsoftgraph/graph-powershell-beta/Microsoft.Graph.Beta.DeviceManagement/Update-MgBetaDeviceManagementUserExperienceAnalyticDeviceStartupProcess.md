@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementuserexperienceanalyticdevicestartupprocess
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property userExperienceAnalyticsDeviceStartupProcesses in deviceManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -20,14 +17,22 @@ Update the navigation property userExperienceAnalyticsDeviceStartupProcesses in 
 Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcess
  -UserExperienceAnalyticsDeviceStartupProcessId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-ManagedDeviceId <String>] [-ProcessName <String>] [-ProductName <String>] [-Publisher <String>]
- [-StartupImpactInMS <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-StartupImpactInMS <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcess
  -UserExperienceAnalyticsDeviceStartupProcessId <String>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcess> [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcess> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcess
+ -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcess> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -36,19 +41,27 @@ Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcess
 Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcess
  -InputObject <IDeviceManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-ManagedDeviceId <String>] [-ProcessName <String>] [-ProductName <String>] [-Publisher <String>]
- [-StartupImpactInMS <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcess
- -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcess> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-StartupImpactInMS <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property userExperienceAnalyticsDeviceStartupProcesses in deviceManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -56,7 +69,7 @@ Update the navigation property userExperienceAnalyticsDeviceStartupProcesses in 
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -72,7 +85,7 @@ The user experience analytics device startup process details.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcess
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcess
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -88,7 +101,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -104,8 +117,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -116,10 +129,12 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedDeviceId
-The user experience analytics device id.
+The Intune device id of the device.
+Supports: $select, $OrderBy.
+Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -131,10 +146,13 @@ Accept wildcard characters: False
 ```
 
 ### -ProcessName
-User experience analytics device startup process name.
+The name of the process.
+Examples: outlook, excel.
+Supports: $select, $OrderBy.
+Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -146,10 +164,13 @@ Accept wildcard characters: False
 ```
 
 ### -ProductName
-The user experience analytics device startup process product name.
+The product name of the process.
+Examples: Microsoft Outlook, Microsoft Excel.
+Supports: $select, $OrderBy.
+Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -161,10 +182,13 @@ Accept wildcard characters: False
 ```
 
 ### -Publisher
-The User experience analytics device startup process publisher.
+The publisher of the process.
+Examples: Microsoft Corporation, Contoso Corp.
+Supports: $select, $OrderBy.
+Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -176,10 +200,12 @@ Accept wildcard characters: False
 ```
 
 ### -StartupImpactInMS
-User experience analytics device startup process impact in milliseconds.
+The impact of startup process on device boot time in milliseconds.
+Supports: $select, $OrderBy.
+Read-only.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -194,8 +220,8 @@ Accept wildcard characters: False
 The unique identifier of userExperienceAnalyticsDeviceStartupProcess
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -209,7 +235,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -225,7 +251,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -242,10 +268,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcess
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcess
+
 ## NOTES
 
 ALIASES
@@ -258,18 +287,23 @@ To create the parameters described below, construct a hash table containing the 
 `BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcess>`: The user experience analytics device startup process details.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[ManagedDeviceId <String>]`: The user experience analytics device id.
-  - `[ProcessName <String>]`: User experience analytics device startup process name.
-  - `[ProductName <String>]`: The user experience analytics device startup process product name.
-  - `[Publisher <String>]`: The User experience analytics device startup process publisher.
-  - `[StartupImpactInMS <Int32?>]`: User experience analytics device startup process impact in milliseconds.
+  - `[ManagedDeviceId <String>]`: The Intune device id of the device. Supports: $select, $OrderBy. Read-only.
+  - `[ProcessName <String>]`: The name of the process. Examples: outlook, excel. Supports: $select, $OrderBy. Read-only.
+  - `[ProductName <String>]`: The product name of the process. Examples: Microsoft Outlook, Microsoft Excel. Supports: $select, $OrderBy. Read-only.
+  - `[Publisher <String>]`: The publisher of the process. Examples: Microsoft Corporation, Contoso Corp. Supports: $select, $OrderBy. Read-only.
+  - `[StartupImpactInMS <Int32?>]`: The impact of startup process on device boot time in milliseconds. Supports: $select, $OrderBy. Read-only.
 
 `INPUTOBJECT <IDeviceManagementIdentity>`: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
+  - `[AlertRecordId <String>]`: The unique identifier of alertRecord
+  - `[AlertRuleId <String>]`: The unique identifier of alertRule
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: The unique identifier of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: The unique identifier of androidManagedStoreAppConfigurationSchema
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
   - `[AssignmentFilterEvaluationStatusDetailsId <String>]`: The unique identifier of assignmentFilterEvaluationStatusDetails
+  - `[BrowserSharedCookieId <String>]`: The unique identifier of browserSharedCookie
+  - `[BrowserSiteId <String>]`: The unique identifier of browserSite
+  - `[BrowserSiteListId <String>]`: The unique identifier of browserSiteList
   - `[DataSharingConsentId <String>]`: The unique identifier of dataSharingConsent
   - `[DetectedAppId <String>]`: The unique identifier of detectedApp
   - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The unique identifier of deviceAndAppManagementAssignmentFilter
@@ -397,12 +431,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsInformationProtectionAppLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionAppLearningSummary
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
-  - `[WindowsQualityUpdateProfileAssignmentId <String>]`: The unique identifier of windowsQualityUpdateProfileAssignment
-  - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
 ## RELATED LINKS
-[Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess?view=graph-powershell-v1.0)
-
-## RELATED LINKS
-[Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess?view=graph-powershell-v1.0)
 
